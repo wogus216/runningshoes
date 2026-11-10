@@ -64,14 +64,11 @@ export const septemberEvents: MarathonEvent[] = [
       ],
       verifiedAt: '2026-08-27',
     },
-    lastVerified: '2026-08-27',
+    lastVerified: '2026-11-11',
     description:
       '시화호 남안 대부도에서 열리는 안산시체육회·경기일보 주최 대회. 안산포도축제와 연계되며 기념품으로 쌀 3kg과 소비쿠폰을 제공합니다(5km 제외). 선착순 6,000명 결제 완료자 기준으로 마감되며, 제한시간은 하프 3시간·10km 2시간·5km 1시간. 5km는 기록칩이 제공되지 않습니다.',
     courseInfo: {
-      terrain: '평지',
-      difficulty: '중급',
-      courseDescription:
-        '대부바다향기테마파크 출발 → 대부도 내륙 도로 왕복. 시화호 풍광을 배경으로 하지만 코스 자체는 대부도 내륙이며 시화방조제·조력발전소 구간은 포함되지 않습니다.',
+      courseDescription: '대부바다향기테마파크 출발 → 대부도 내륙 도로 왕복. 시화호 풍광을 배경으로 하지만 코스 자체는 대부도 내륙이며 시화방조제·조력발전소 구간은 포함되지 않습니다.',
     },
     raceInfo: {
       entryFees: [
@@ -80,6 +77,19 @@ export const septemberEvents: MarathonEvent[] = [
         { distance: '5K', fee: 25000 },
       ],
       startTime: '09:00',
+      timeLimits: [
+        { distance: '하프', hours: 3, minutes: 0 },
+        { distance: '10K', hours: 2, minutes: 0 },
+        { distance: '5K', hours: 1, minutes: 0 },
+      ],
+    },
+    factCheck: {
+      checkedAt: '2026-11-11',
+      sources: [
+        { title: '2026 공식 종목·참가비·5K 기록칩 제외', url: 'https://ansanrun.com/new_sub01/page01.php' },
+        { title: '공식 FAQ 제한시간·출발시각', url: 'https://ansanrun.com/' },
+      ],
+      note: '요강은 하프·10K 각 4만원, 5K 2만5천 원과 09:00 출발을 안내합니다. 첫 화면의 전 종목 기록측정 문구와 달리 상세 요강·FAQ는 5K 칩 제외라고 명시해 상세 조건을 따릅니다. 출처 없는 중급·평지 등급은 철회했습니다. 기념품 원본·디자인 확인일은 기존 별도 확인일을 유지합니다.',
     },
   },
   {
@@ -210,13 +220,11 @@ export const septemberEvents: MarathonEvent[] = [
     distances: ['하프', '10K', '5K'],
     status: '대회종료',
     isMajor: false,
-    website: 'http://www.gomarathon.co.kr/',
+    website: 'https://www.gangdong.go.kr/web/newportal/press/15189',
     description:
-      '서울 강동구 암사동 유적에서 출발해 한강을 달리는 20회차 대회. 전 종목 참가비 30,000원에 초경량 러닝자켓을 제공해 가성비로 알려져 있습니다. 총 2,800명(강동구민 1,000·일반 1,800) 선착순으로 6월 11일 접수 마감됐습니다.',
+      '강동구육상연맹이 주관하고 강동구가 후원한 2026년 9월 20일 대회입니다. 서울 암사동 유적과 암사초록길·한강을 잇는 하프·10K·5K 달리기·걷기를 운영했으며 참가비는 3만원이었습니다. 강동구민 모집은 6월 8일, 일반 모집은 6월 11일 시작으로, 6월 11일을 접수 마감일로 적었던 문구를 정정했습니다.',
     courseInfo: {
-      terrain: '평지',
-      difficulty: '초보자',
-      courseDescription: '암사동 유적 출발 한강변 평지 코스. 교통통제 없는 구간 위주.',
+      courseDescription: '강동구 공식 공고는 서울 암사동 유적에서 암사초록길로 한강에 진입하고, 광나루·잠실 한강공원 구간을 이용한다고 안내했습니다. 공고상 교통 통제 없이 운영하도록 계획한 경로입니다.',
     },
     raceInfo: {
       entryFees: [
@@ -224,8 +232,17 @@ export const septemberEvents: MarathonEvent[] = [
         { distance: '10K', fee: 30000 },
         { distance: '5K', fee: 30000 },
       ],
-      startTime: '09:00',
     },
+    registrationStart: '2026-06-08',
+    registrationNote: '강동구 2026 공고: 구민 1,000명은 6월 8일 10시부터, 일반 1,800명은 6월 11일 10시부터 선착순 모집. 공고에 최종 마감일은 명시하지 않았습니다.',
+    factCheck: {
+      checkedAt: '2026-11-11',
+      sources: [
+        { title: '강동구 2026 모집·종목·코스 공식 공고', url: 'https://www.gangdong.go.kr/web/newportal/press/15189' },
+      ],
+      note: '대회 홈페이지 gomarathon.co.kr은 이번 접속에서 인증서 오류로 읽지 못해 강동구 보존 공고로 연결합니다. 6월 11일은 일반 모집 시작일입니다. 근거를 확정하지 못한 초보자 등급·평지·최종 09:00 출발·러닝자켓 단정은 표시하지 않습니다.',
+    },
+    lastVerified: '2026-11-11',
   },
   {
     id: "mudo-run-gyeongju-2026",
@@ -447,25 +464,34 @@ export const septemberEvents: MarathonEvent[] = [
       images: [{ src: '/images/marathon/ganghwa-beach-marathon-2026/kit-1.webp', alt: '2026 강화해변마라톤 공식 기념품 안내' }],
       verifiedAt: '2026-08-27',
     },
-    lastVerified: '2026-08-27',
+    lastVerified: '2026-11-11',
     description:
-      '강화함상공원을 출발해 강화 해변을 달리는 바다 조망 코스. 선착순 3,500명 소규모 대회로 커플런(10K)·가족런(5K) 종목을 운영합니다. 접수 6/10(수) 14시 시작, 선착순 마감.',
-    courseInfo: {
-      terrain: '평지',
-      difficulty: '초보자',
-      certification: '없음',
-      courseDescription: '강화함상공원 출발 해변 평지 코스. 바다를 보며 달리는 가족 친화형.',
-    },
+      '인천일보가 주최한 2026년 9월 13일 대회로 강화함상공원에서 08:30 출발했습니다. 하프·10K는 각 4만5천 원, 5K는 4만원이었고, 커플런 10K는 2인 1팀 8만원, 가족런 5K는 1인 3만5천 원으로 과금 단위가 다릅니다. 3,500명은 선착순 모집 인원입니다.',
+    courseInfo: { courseDescription: '강화함상공원을 기점으로 종목별 하프·10K·5K 코스도를 공식 홈페이지에서 제공합니다. 이 페이지의 출처 없는 초보자·평지 등급은 철회했습니다.' },
     raceInfo: {
       entryFees: [
         { distance: '하프', fee: 45000 },
         { distance: '10K', fee: 45000 },
         { distance: '5K', fee: 40000 },
-        { distance: '커플런(10K)', fee: 40000 },
-        { distance: '가족런(5K)', fee: 35000 },
+        { distance: '커플런(10K·2인 1팀)', fee: 80000 },
+        { distance: '가족런(5K·1인)', fee: 35000 },
       ],
-      expectedParticipants: 3500,
       startTime: '08:30',
+      timeLimits: [
+        { distance: '하프', hours: 3, minutes: 0 },
+        { distance: '10K', hours: 2, minutes: 0 },
+        { distance: '5K', hours: 1, minutes: 0 },
+      ],
+      aidInterval: '공식 유의사항: 매 5km 급수, 하프 15km 영양 간식 안내',
+    },
+    logistics: { parking: '공식 유의사항은 주차공간이 협소하므로 대중교통 이용을 권고합니다.' },
+    factCheck: {
+      checkedAt: '2026-11-11',
+      sources: [
+        { title: '2026 공식 종목·참가비·모집 안내', url: 'https://ganghwamarathon.co.kr/' },
+        { title: '공식 제한시간·급수·교통 유의사항', url: 'https://ganghwamarathon.co.kr/precaution.php' },
+      ],
+      note: '커플런 가격을 1인 환산가 4만원만으로 표기하지 않고 실제 2인 팀 결제금액 8만원으로 정정했습니다. 가족런은 1인 금액입니다. 5K는 기록칩·온라인 기록증 제공에서 제외됐으며, 모집 인원과 실제 완주 인원은 구분합니다. 기념품 사진 확인일은 별도입니다.',
     },
   },
   {
@@ -534,7 +560,7 @@ export const septemberEvents: MarathonEvent[] = [
     distances: ['하프', '10K', '5K'],
     status: '대회종료',
     isMajor: false,
-    website: 'http://kdjrun.kr/',
+    website: 'https://kdjrun.kr/',
     registrationEnd: '2026-08-30',
     registrationNote:
       '접수 종료 — 공식 접수기간은 8월 30일까지였습니다. 기념품 택배 수령지 변경도 8월 16일로 이미 마감됐습니다(공식 홈 2026-08-31 확인)',
@@ -544,15 +570,9 @@ export const septemberEvents: MarathonEvent[] = [
       images: [{ src: '/images/marathon/kimdaejung-peace-marathon-2026/kit-1.webp', alt: '2026 김대중평화마라톤 공식 기념품 안내' }],
       verifiedAt: '2026-08-27',
     },
-    lastVerified: '2026-08-27',
+    lastVerified: '2026-11-11',
     description:
-      '김대중재단이 주최하는 평화·인권 테마 시민 마라톤. 뚝섬 한강공원 수변무대에서 하프·10km·5km 종목이 오전 8시에 출발합니다. 접수는 8월 30일까지.',
-    courseInfo: {
-      terrain: '평지',
-      difficulty: '초보자',
-      certification: '없음',
-      courseDescription: '뚝섬 한강공원 출발 한강 수변 평지 코스(하프/10K/5K).',
-    },
+      '김대중재단이 주최한 2026년 9월 6일 대회로, 뚝섬 한강공원 수변무대에서 하프·10K·5K를 운영했습니다. 참가비는 전 종목 5만원이며, 9월 3일 최종 출발 공지는 하프 08:00부터 종목·그룹별로 순차 출발하도록 안내했습니다.',
     raceInfo: {
       entryFees: [
         { distance: '하프', fee: 50000 },
@@ -560,6 +580,16 @@ export const septemberEvents: MarathonEvent[] = [
         { distance: '5K', fee: 50000 },
       ],
       startTime: '08:00',
+    },
+    logistics: { bagStorage: true },
+    factCheck: {
+      checkedAt: '2026-11-11',
+      sources: [
+        { title: '공식 2026 이미지 요강·전 종목 참가비', url: 'https://kdjrun.kr/info/' },
+        { title: '9월 3일 최종 종목·그룹 출발시간', url: 'https://kdjrun.kr/community/view.asp?cates=notice&idx=839' },
+        { title: '공식 참가자 유의사항·물품보관', url: 'https://kdjrun.kr/info/notice.asp' },
+      ],
+      note: '공식 이미지 원본을 판독했습니다. 하프 A/B 08:00·08:02, 10K A/B/C 08:05·08:07·08:09, 5K A/B 08:12·08:14 안내이며 현장 변동 가능성이 명시돼 있습니다. 출처 없는 초보자·평지 등급은 철회했고 컷오프·고도는 확정하지 않았습니다.',
     },
   },
   {
@@ -639,25 +669,19 @@ export const septemberEvents: MarathonEvent[] = [
       images: [{ src: '/images/marathon/incheon-songdo-half-marathon-2026/kit-1.webp', alt: '2026 인천 송도 하프마라톤 공식 기념품 안내' }],
       verifiedAt: '2026-08-27',
     },
-    lastVerified: '2026-08-30',
+    lastVerified: '2026-11-11',
     description:
-      '인천대 송도캠퍼스 정문에서 출발하는 대규모 국제 하프마라톤. 결제완료순 1만 5천 명으로 마감되며, 하프는 만 18세 이상만 참가할 수 있습니다. 오전 8시 출발, 접수는 7월 8일~8월 7일.',
+      '경인일보가 주최·주관한 2026년 9월 20일 대회입니다. 국립인천대학교 송도캠퍼스 정문(동문) 앞에서 08:00 출발했으며 하프·10K는 각 5만5천 원, 5K는 5만원이었습니다. 15,000명은 결제완료순 모집 기준입니다. 공식 홈페이지의 8월 7일은 환불 기한으로, 접수 마감일로 단정하지 않습니다.',
     courseInfo: {
-      terrain: '평지',
-      difficulty: '초보자',
-      certification: '없음',
       gpx: {
         file: '/data/gpx/incheon-songdo-half-marathon-2026.gpx',
         source: 'reconstructed',
         verifiedAt: '2026-08-30',
-        sourceNote:
-          '공식 "코스안내 및 교통통제안내"가 표로 밝힌 통제 지점 여섯 곳과 공식이 붙인 반환 순서(1·2·3차)만 취해 OSM 보행 도로망 위에서 새로 이었다',
+        sourceNote: '공식 "코스안내 및 교통통제안내"가 표로 밝힌 통제 지점 여섯 곳과 공식이 붙인 반환 순서(1·2·3차)만 취해 OSM 보행 도로망 위에서 새로 이었다',
         sourceUrl: 'https://songdorun.net/control.php',
-        caveat:
-          '공식은 통제 지점의 이름과 반환 순서(1·2·3차)까지만 밝혔고, 지점 사이를 어느 길로 잇는지는 공개하지 않았습니다. 반환점을 각각 왕복하는 구조로 잡은 것은 추론이며 근거는 세 가지입니다 — 그렇게 이었을 때 거리가 하프 공인 거리와 0.8% 차이로 맞고(다른 구조는 크게 모자랍니다), 공식이 반환에 순번을 붙였으며, 왕복이면 두 번 지나는 캠핑장·잭니클라우스의 통제 시간이 실제로 가장 길거나 늦게까지 잡혀 있습니다. 그래도 추정이므로 실제 주로와 다를 수 있습니다.',
+        caveat: '공식은 통제 지점의 이름과 반환 순서(1·2·3차)까지만 밝혔고, 지점 사이를 어느 길로 잇는지는 공개하지 않았습니다. 반환점을 각각 왕복하는 구조로 잡은 것은 추론이며 근거는 세 가지입니다 — 그렇게 이었을 때 거리가 하프 공인 거리와 0.8% 차이로 맞고(다른 구조는 크게 모자랍니다), 공식이 반환에 순번을 붙였으며, 왕복이면 두 번 지나는 캠핑장·잭니클라우스의 통제 시간이 실제로 가장 길거나 늦게까지 잡혀 있습니다. 그래도 추정이므로 실제 주로와 다를 수 있습니다.',
       },
-      courseDescription:
-        '세 종목 모두 인천대 송도캠퍼스 정문(동문) 앞에서 출발해 같은 자리로 돌아옵니다. 공식 교통통제 안내가 밝힌 코스 지점은 인천대학교 정문도로(출발)·홈플러스 사거리(1차 반환)·송도국제캠핑장 사거리·해양극지연구소(2차 반환)·잭니클라우스 사거리·아트센터 사거리(3차 반환) 여섯 곳입니다. 통제 시간이 구간마다 달라 1차 반환 쪽이 07:30~09:30으로 가장 먼저 풀리고, 잭니클라우스·아트센터 쪽은 08:50~10:40으로 늦게까지 잡혀 있습니다. 공식 코스도는 종목별 이미지 지도로 게시돼 있으며 고저도·급수 정보는 미게시입니다(2026-08-30 공식 코스·교통통제 안내 확인).',
+      courseDescription: '세 종목 모두 인천대 송도캠퍼스 정문(동문) 앞에서 출발해 같은 자리로 돌아옵니다. 공식 교통통제 안내가 밝힌 코스 지점은 인천대학교 정문도로(출발)·홈플러스 사거리(1차 반환)·송도국제캠핑장 사거리·해양극지연구소(2차 반환)·잭니클라우스 사거리·아트센터 사거리(3차 반환) 여섯 곳입니다. 통제 시간이 구간마다 달라 1차 반환 쪽이 07:30~09:30으로 가장 먼저 풀리고, 잭니클라우스·아트센터 쪽은 08:50~10:40으로 늦게까지 잡혀 있습니다. 공식 코스도는 종목별 이미지 지도로 게시돼 있으며 고저도·급수 정보는 미게시입니다(2026-08-30 공식 코스·교통통제 안내 확인).',
     },
     raceInfo: {
       entryFees: [
@@ -665,8 +689,22 @@ export const septemberEvents: MarathonEvent[] = [
         { distance: '10K', fee: 55000 },
         { distance: '5K', fee: 50000 },
       ],
-      expectedParticipants: 15000,
       startTime: '08:00',
+      timeLimits: [
+        { distance: '하프', hours: 3, minutes: 0 },
+        { distance: '10K', hours: 2, minutes: 0 },
+        { distance: '5K', hours: 1, minutes: 0 },
+      ],
+      aidInterval: '공식 유의사항: 매 5km 급수, 하프 15km 영양 간식 안내',
+    },
+    factCheck: {
+      checkedAt: '2026-11-11',
+      sources: [
+        { title: '2026 공식 참가비·모집·환불 기한', url: 'https://songdorun.net/' },
+        { title: '공식 제한시간·급수·5K 기록칩 제외', url: 'https://songdorun.net/precaution.php' },
+        { title: '공식 교통통제 지점·시각', url: 'https://songdorun.net/control.php' },
+      ],
+      note: '8월 7일을 접수 마감일로 사용했던 설명을 철회했습니다. 공식 유의사항의 제한시간·급수를 추가했으며, 기존 지도는 공식 GPX가 아닌 추정 경로라는 고지를 유지합니다. 추정 지도에서 고도·초보자 등급을 계산하지 않았습니다. 기념품 사진 확인일은 별도입니다.',
     },
   },
 ];

@@ -305,10 +305,8 @@ export const octoberEvents: MarathonEvent[] = [
     registrationNote: "공식 안내는 3월 18일 17시 접수 시작, 20K 일반 접수 3월 20일 17시, 선착순 예정 마감 7월 31일이다. 실제 종목별 매진 시각은 미확인이다. 10월 2일 배번·엑스포는 종목 페이지에서 10~20시로 안내하며 이전 18시 표기를 바로잡았다. 다음 회차 조건은 별도 확인한다.",
     description: "10월 2~4일 제주 일정은 지났다. 공식 게시값은 100M 148km/상승 5,000m, 100K 104km/4,000m, 60K 60km/1,400m, 20K 20km/508m다. 참가 Index는 60K에 20K 이상·100K에 50K 이상·100M에 100K 이상을 요구하며 20K는 면제하되 계정이 필요하다. Running Stones와 본대회 출전 보장은 별개다.",
     courseInfo: {
-      "terrain": "산악",
-      "difficulty": "상급",
-      "elevationGain": 5000,
-      "courseDescription": "공식 게시 거리·누적 상승은 100M 148km/5,000m·100K 104km/4,000m·60K 60km/1,400m·20K 20km/508m다. 앞 두 종목은 제주월드컵경기장, 뒤 두 종목은 가시리 출발이다. 출발은 10월 2일 21시/3일 05시/08시/10시, 최대 허용시간은 37/29/15/4시간이다. 실제 개인 GPS나 현장 변경을 인증하는 값은 아니다. 각 종목 장비 목록은 별도로 확인한다."
+      terrain: '산악',
+      courseDescription: '공식 게시 거리·누적 상승은 100M 148km/5,000m·100K 104km/4,000m·60K 60km/1,400m·20K 20km/508m다. 앞 두 종목은 제주월드컵경기장, 뒤 두 종목은 가시리 출발이다. 출발은 10월 2일 21시/3일 05시/08시/10시, 최대 허용시간은 37/29/15/4시간이다. 실제 개인 GPS나 현장 변경을 인증하는 값은 아니다. 각 종목 장비 목록은 별도로 확인한다.',
     },
     raceInfo: {
       "timeLimits": [
@@ -336,6 +334,16 @@ export const octoberEvents: MarathonEvent[] = [
       "startTime": "21:00"
     },
     postRaceNote: "대회 종료 뒤 개인 완주 결과·Index·Running Stones 반영 완료는 미조회다. 일반 규정 페이지의 예전 연도·폴 설명보다 2026 종목별 페이지를 함께 읽어야 하며 해당 페이지는 스틱 사용 금지다. https://transjeju.utmb.world/races/Jeju100M 및 https://transjeju.utmb.world/races/Jeju20K",
+    factCheck: {
+      checkedAt: '2026-11-11',
+      sources: [
+        { title: '공식 2026 Trans100M 종목', url: 'https://transjeju.utmb.world/races/Jeju100M' },
+        { title: '공식 2026 Trans100K 종목', url: 'https://transjeju.utmb.world/races/Jeju100K' },
+        { title: '공식 2026 Trans60K 종목', url: 'https://transjeju.utmb.world/races/Jeju70K' },
+        { title: '공식 2026 Trans20K 종목', url: 'https://transjeju.utmb.world/races/Jeju20K' },
+      ],
+      note: '11월 10일 확보한 공식 2026 종목 원문과 다시 대조했습니다. 5,000m 상승은 100M(148km)의 안내값이며 전 종목 공통 고도가 아닙니다. 종목별 수치는 코스 설명에 구분해 남기고, 출처 없는 상급 등급과 공통 5,000m 표시는 철회했습니다.',
+    },
   },
   {
     id: "andong-marathon-2026",
@@ -397,8 +405,7 @@ export const octoberEvents: MarathonEvent[] = [
     lastVerified: "2026-11-10",
     description: "10월 4일 안동마라톤의 풀·하프·10km·5km 일정은 지났다. 10월 6일 공식 공지는 5km 칩·공식 기록 미제공과 샤라웃 사진 원본 유료 구매를 안내한다. 8월 18일 최종 접수 마감 공지가 있으며 10,000명은 모집 계획이다. 근거를 확정하지 못한 획득고도 700m와 국내 최고 난도 표현은 제외했다.",
     courseInfo: {
-      "certification": "KAF",
-      "courseDescription": "공식 요강은 안동시민운동장 07시 집결·08시 출발 계획이다. 획득고도 700m와 국내 최상급 난도는 공식 측정 기준을 이번에 확정하지 못해 제외했다. 계측·사진은 10월 6일 후속 공지를 따른다. 세부 고저도와 개인 GPS는 별도 확인 대상이다."
+      courseDescription: '공식 요강은 안동시민운동장 07시 집결·08시 출발 계획이다. 획득고도 700m와 국내 최상급 난도는 공식 측정 기준을 이번에 확정하지 못해 제외했다. 계측·사진은 10월 6일 후속 공지를 따른다. 세부 고저도와 개인 GPS는 별도 확인 대상이다.',
     },
     raceInfo: {
       "entryFees": [

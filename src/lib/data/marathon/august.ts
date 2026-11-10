@@ -68,20 +68,14 @@ export const augustEvents: MarathonEvent[] = [
     name: '2026 안양천 달빛 나이트런',
     date: '2026-08-15',
     month: '8월',
-    location: '신정교 하부 영롱이 억새구장 (서울 양천구)',
+    location: '신정교 하부 영롱이 억새구장 (서울 안양천)',
     region: '서울',
     distances: ['10K', '5K'],
     status: '대회종료',
     isMajor: false,
     website: 'https://moonnightrun.kr/',
     description:
-      '안양천 신정교 하부에서 열리는 여름 야간 러닝 대회. 5km·10km 전 종목 기록측정을 제공하며 해질녘 18시 30분에 출발합니다. 접수는 8월 6일까지.',
-    courseInfo: {
-      terrain: '평지',
-      difficulty: '초보자',
-      certification: '없음',
-      courseDescription: '안양천 수변 평지 야간 코스(10K/5K). 야간 러닝이라 야광 소품 권장.',
-    },
+      '대한이에스지협회가 주최·주관한 2026년 8월 15일 야간 대회입니다. 신정교 하부 영롱이 억새구장에서 18:30 출발, 10K·5K 참가비 각 5만원과 전 종목 기록측정을 공식 홈페이지에서 확인했습니다. 현재 공식 홈페이지는 대회 종료를 안내합니다.',
     raceInfo: {
       entryFees: [
         { distance: '10K', fee: 50000 },
@@ -89,6 +83,15 @@ export const augustEvents: MarathonEvent[] = [
       ],
       startTime: '18:30',
     },
+    registrationEnd: '2026-08-06',
+    factCheck: {
+      checkedAt: '2026-11-11',
+      sources: [
+        { title: '2026 공식 개최·참가비·종료 안내', url: 'https://moonnightrun.kr/' },
+      ],
+      note: '2026년 8월 개최분입니다. 초보자·평지 등급과 야광 소품 권장 문구는 근거를 확정하지 못해 표시하지 않습니다. 종목별 고도와 컷오프도 이번 원문에서 확인하지 못했습니다.',
+    },
+    lastVerified: '2026-11-11',
   },
   {
     id: 'incheon-night-race-2026',
@@ -145,14 +148,11 @@ export const augustEvents: MarathonEvent[] = [
       items: ['기념 티셔츠', '완주메달', '기록증(하프·10km·5km)', '간식(빵·음료)'],
       verifiedAt: '2026-08-27',
     },
-    lastVerified: '2026-08-27',
+    lastVerified: '2026-11-11',
     description:
-      '여의도 한강공원 물빛광장에서 출발하는 도심 하프마라톤. 하프·10km·5km 전 종목 기록측정과 기념 티셔츠·메달을 제공하며 오전 8시에 출발합니다. 접수는 8월 23일까지.',
+      '국민성공시대가 주최·주관한 2026년 8월 30일 대회입니다. 여의도 한강공원 물빛광장에서 하프·10K·5K를 운영했으며 참가비는 종목별 각 5만원이었습니다. 공식 출발시간은 하프 08:00·10K 08:30·5K 08:50으로 구분됩니다.',
     courseInfo: {
-      terrain: '평지',
-      difficulty: '초보자',
-      certification: '없음',
-      courseDescription: '여의도 한강공원 출발 한강 수변 평지 코스(하프/10K/5K).',
+      courseDescription: '공식 홈페이지는 여의도 한강공원 물빛광장 출발과 종목별 코스 안내를 제공하며 코스 변경 가능성을 고지합니다. 종목별 지도·최종 현장 운영과 구분해 확인하세요.',
     },
     raceInfo: {
       entryFees: [
@@ -161,6 +161,13 @@ export const augustEvents: MarathonEvent[] = [
         { distance: '5K', fee: 50000 },
       ],
       startTime: '08:00',
+    },
+    factCheck: {
+      checkedAt: '2026-11-11',
+      sources: [
+        { title: '공식 2026 종목별 출발·참가비 안내', url: 'https://seoulhalfrun.kr/' },
+      ],
+      note: '2026년 8월 30일 개최분입니다. 난이도 등급·전 구간 평지·고도·컷오프는 이번 원문에서 확정하지 못했습니다. 기념품 확인일은 기존 별도 확인일을 유지하며 차기 회차에 그대로 적용하지 않습니다.',
     },
   },
 ];
