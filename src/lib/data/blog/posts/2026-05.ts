@@ -3834,350 +3834,76 @@ export const posts_2026_05: BlogPost[] = [
 `,
   },
   {
-    id: 'tempo-run-training-guide-korea',
-    slug: 'tempo-run-training-guide-korea',
-    title: '템포런 완전 정복 | 젖산 역치 페이스 = 10K 기록 +5~10초, 80~90% HRmax, 20~40분 지속주 — 한국 아마추어 러너 기준 적용 매뉴얼',
-    description: '템포런(Tempo Run)은 젖산 역치 페이스에서 20~40분 또는 6~12km를 유지하는 훈련입니다. 강도는 최대 심박수의 80~90%, 페이스는 본인 10K 기록보다 5~10초 느리게. LSD와 인터벌 사이를 채우는 핵심 훈련으로 마라톤 완주 기록 단축의 80%를 책임집니다.',
-    thumbnail: '/images/blog/tempo-run-training-guide-korea.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-05-16',
-    category: 'guide' as const,
-    readingTime: 9,
-    tags: ['템포런', 'Tempo Run', '젖산 역치', '훈련법', '마라톤 훈련', '심박수', '페이스', '러닝 가이드', 'LT 페이스'],
+    id: "tempo-run-training-guide-korea",
+    slug: "tempo-run-training-guide-korea",
+    title: "템포런 — 10km 페이스 공식보다 먼저 확인할 강도와 총량",
+    description: "10km 페이스에 고정 초를 더하거나 최대심박 비율을 모든 러너의 역치로 쓰지 않습니다. 계획의 강도 기준·지속시간·다음날 부담을 확인하는 가이드입니다.",
+    thumbnail: "/images/blog/verified-tempo-run-training-guide-korea-20261110.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-05-16",
+    category: "guide",
+    readingTime: 6,
+    tags: [
+      "템포런",
+      "Tempo Run",
+      "젖산 역치",
+      "훈련법",
+      "마라톤 훈련",
+      "심박수",
+      "페이스",
+      "러닝 가이드",
+      "LT 페이스"
+    ],
     content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>템포런 = 젖산 역치 페이스 지속주</strong> — 본인 <strong>10K 최고기록 페이스 +5~10초</strong>, 심박수 80~90% HRmax, 20~40분 또는 6~12km</li>
-    <li>LSD(여유 조깅)와 인터벌(전력 질주) 사이를 채우는 <strong>"힘들지만 버틸 수 있는" 강도</strong> — 마라톤 완주 기록 단축의 80%를 책임지는 핵심 훈련</li>
-    <li>주 1회 충분, 빌드업 사이클에서 거리 또는 시간을 점진적으로 늘리는 게 정석 — 매번 PR 욕심 내다 부상 직행하는 가장 흔한 실수</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">🏃</span>
-  <div class="callout-body">
-    <p class="callout-title">왜 지금 템포런 글을 쓰는가</p>
-    <p>2027 서울마라톤·춘마·경주마라톤 등 가을~봄 풀코스 시즌이 다가오면서 "LSD는 알겠는데 그다음은?"이라는 질문이 늘고 있습니다. RIFE 러닝라이프(@runninglife_korea)가 5월 15일 템포런 가이드를 게시한 것도 같은 맥락. 본 글은 해당 게시물 + 한국 아마추어 러너 기준 적용 매뉴얼 + 댓글에서 나온 디테일까지 종합한 정리본입니다.</p>
-  </div>
-</div>
-
-<h2>템포런이 정확히 뭔가</h2>
-
-<p><strong>템포런(Tempo Run)은 젖산 역치(Lactate Threshold, LT) 페이스에서 일정 시간 또는 거리를 유지하는 훈련</strong>입니다. 젖산 역치란 운동 강도가 올라가면서 근육에 젖산이 쌓이기 시작하는 임계점 — 이 구간을 자주 자극할수록 몸이 더 빠른 페이스에서도 젖산을 처리해내는 능력을 키웁니다.</p>
-
-<p>쉽게 말하면 <strong>"숨은 차지만 1단어씩 말은 할 수 있는 페이스"</strong>입니다. 옆 사람과 긴 대화는 어렵지만 "오케이", "더 가자" 같은 짧은 단어는 가능한 정도.</p>
-
-<h2>페이스 — 본인 10K 기록 +5~10초가 정답</h2>
-
-<div class="callout warning">
-  <span class="callout-icon">⏱️</span>
-  <div class="callout-body">
-    <p class="callout-title">템포 페이스 공식 (한국 아마추어 표준)</p>
-    <p><strong>본인 10K 최고기록 평균 페이스 + 5~10초/km</strong><br/>예: 10K 최고기록 50:00(5:00/km) → 템포 페이스 5:05~5:10/km</p>
-  </div>
-</div>
-
-<p>RIFE 게시물 댓글에서 한 러너가 정확히 짚었는데, "목표 페이스가 아닌 현재 본인 10K TT 기록 페이스 +10초"라는 표현이 더 정확합니다. <strong>목표 페이스가 아니라 현재 본인 실력 기준 페이스</strong>가 핵심 — 목표 페이스로 템포런을 하면 거의 인터벌 강도가 되어 회복 불능 상태에 빠집니다.</p>
-
-<table>
-  <thead>
-    <tr><th>본인 10K 기록</th><th>10K 평균 페이스</th><th>템포 페이스 (10K +5~10초)</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>40:00 (Sub-40)</td><td>4:00/km</td><td>4:05~4:10/km</td></tr>
-    <tr><td>45:00</td><td>4:30/km</td><td>4:35~4:40/km</td></tr>
-    <tr><td>50:00</td><td>5:00/km</td><td>5:05~5:10/km</td></tr>
-    <tr><td>55:00</td><td>5:30/km</td><td>5:35~5:40/km</td></tr>
-    <tr><td>60:00 (Sub-60)</td><td>6:00/km</td><td>6:05~6:10/km</td></tr>
-  </tbody>
-</table>
-
-<h2>강도 — 심박수 80~90% HRmax</h2>
-
-<p>페이스가 GPS 오차나 신호 끊김으로 부정확할 때 더 신뢰할 만한 지표가 심박수입니다. 템포 강도는 <strong>최대 심박수의 80~90% 구간</strong>이며, 5존 시스템에서는 <strong>Zone 4 영역</strong>에 해당합니다.</p>
-
-<table>
-  <thead>
-    <tr><th>최대 심박수</th><th>80% HRmax</th><th>90% HRmax</th><th>템포 목표 구간</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>180 bpm (40대~)</td><td>144</td><td>162</td><td>144~162</td></tr>
-    <tr><td>190 bpm (30대)</td><td>152</td><td>171</td><td>152~171</td></tr>
-    <tr><td>200 bpm (20대)</td><td>160</td><td>180</td><td>160~180</td></tr>
-  </tbody>
-</table>
-
-<p>가민·코로스·애플워치 등에서 본인 최대 심박수가 정확히 측정됐는지 먼저 확인하세요. <strong>"220 - 나이"</strong> 공식은 오차가 ±10~15bpm로 크기 때문에, 가능하면 한 번 풀 인터벌이나 5K TT에서 실측한 값을 기준으로 잡는 게 정확합니다.</p>
-
-<h2>시간·거리 — 20~40분 또는 6~12km</h2>
-
-<p>템포런 1회 분량은 <strong>20분에서 40분 사이</strong>가 표준입니다. 거리로 환산하면 약 6~12km. 빌드업 사이클에서 한 번에 늘리지 말고 다음 단계로 점진적 증가:</p>
-
-<ul>
-  <li><strong>입문(1~2개월):</strong> 20분 또는 5~6km</li>
-  <li><strong>적응(3~4개월):</strong> 25~30분 또는 7~8km</li>
-  <li><strong>심화(5~6개월):</strong> 35~40분 또는 10~12km</li>
-  <li><strong>마라톤 빌드업 피크:</strong> 마라톤 페이스 또는 약간 빠른 페이스로 60분 (메디오 템포)</li>
-</ul>
-
-<h2>1회 세션 구성 — 워밍업·메인·쿨다운</h2>
-
-<ol>
-  <li><strong>워밍업 (10~15분):</strong> 6:30~7:00/km 페이스 조깅 + 5분 다이내믹 스트레칭 + 100m 가속주 3~4회</li>
-  <li><strong>메인 템포 (20~40분):</strong> 본인 템포 페이스로 지속주. 페이스 변동 ±5초 이내 유지</li>
-  <li><strong>쿨다운 (10분):</strong> 7:00~7:30/km 회복 조깅 + 정적 스트레칭</li>
-</ol>
-
-<p>총 시간 약 45~70분. 평일 저녁에 충분히 가능한 분량이고, 풀코스 빌드업 사이클에서 <strong>주 1회</strong>가 표준입니다.</p>
-
-<h2>흔한 실수 4가지</h2>
-
-<div class="callout warning">
-  <span class="callout-icon">❌</span>
-  <div class="callout-body">
-    <p class="callout-title">템포런에서 가장 자주 하는 실수</p>
-    <ol>
-      <li><strong>목표 페이스로 달리기:</strong> 현재 실력보다 빠른 페이스 = 사실상 인터벌. 회복 1주일 필요 + 부상 위험</li>
-      <li><strong>매번 PR 욕심:</strong> 템포런은 PR 잡는 훈련이 아니라 페이스 유지력 키우는 훈련. <strong>같은 페이스에서 더 오래 가능해지는 것</strong>이 진보</li>
-      <li><strong>워밍업 없이 시작:</strong> 추운 날 + 워밍업 부족 = 종아리·아킬레스 직격탄. 10~15분 워밍업은 비협상 사항</li>
-      <li><strong>주 2회 이상:</strong> 회복 시간 부족 → 누적 피로 → 페이스 저하 → 부상. <strong>주 1회로 충분</strong>, 주 2회는 엘리트급에서나 가능</li>
-    </ol>
-  </div>
-</div>
-
-<h2>한국 러너 FAQ</h2>
-
-<h3>Q. LSD와 템포런 중 뭐가 더 중요?</h3>
-<p>둘 다 필요합니다. LSD는 유산소 베이스 구축(주 50~70% 분량), 템포런은 그 베이스를 더 빠른 페이스에서 활용 가능하게 만드는 훈련. 비유하면 LSD는 연료탱크 크기 키우기, 템포런은 그 연료를 더 빠르게 태우는 엔진 튜닝. <a href="/blog/lsd-training-beginner-guide-korea">LSD 훈련 입문자 가이드 →</a></p>
-
-<h3>Q. 초보(연 1~2번 10K)도 템포런 해야 하나요?</h3>
-<p>주 1회 이상 안정적으로 LSD를 30~40분 가능한 단계가 된 후가 적기입니다. 통상 러닝 시작 후 3~6개월. 그 이전엔 일관된 베이스 만들기에 집중하고, 템포런은 첫 풀코스·하프 빌드업 시작 시점에 도입하면 됩니다.</p>
-
-<h3>Q. 신발 추천?</h3>
-<p>템포런은 카본 슈퍼슈즈 쓰는 단계가 아닙니다. <strong>슈퍼 트레이너</strong> 카테고리 — 반발력 좋고 내구성 있는 데일리 트레이너가 정답:</p>
-<ul>
-  <li><a href="/shoes/asics-superblast-3">Asics Superblast 3</a> — 템포·롱런 양용으로 가장 많이 추천되는 슈퍼 트레이너</li>
-  <li><a href="/shoes/asics-magic-speed-5">Asics Magic Speed 5</a> — 카본 플레이트 있지만 데일리 가능한 가성비</li>
-  <li><a href="/shoes/saucony-endorphin-speed-5">Saucony Endorphin Speed 5</a> — 페블엑스 폼 + 나일론 플레이트 조합</li>
-</ul>
-
-<h2>주 1회 템포런 12주 빌드업 예시</h2>
-
-<table>
-  <thead>
-    <tr><th>주차</th><th>분량</th><th>페이스 (10K 50:00 기준)</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>1~2주</td><td>20분 또는 4km</td><td>5:10/km</td></tr>
-    <tr><td>3~4주</td><td>25분 또는 5km</td><td>5:10/km</td></tr>
-    <tr><td>5~6주</td><td>30분 또는 6km</td><td>5:05/km</td></tr>
-    <tr><td>7~8주</td><td>35분 또는 7km</td><td>5:05/km</td></tr>
-    <tr><td>9~10주</td><td>40분 또는 8km</td><td>5:00/km</td></tr>
-    <tr><td>11~12주</td><td>40분 + 1km 빠른 마무리</td><td>5:00/km → 4:50</td></tr>
-  </tbody>
-</table>
-
-<h2>관련 글</h2>
-
-<ul>
-  <li><a href="/blog/lsd-training-beginner-guide-korea">LSD 훈련 입문자 가이드 — 천천히 달리기부터</a></li>
-  <li><a href="/blog/marathon-pacing-mental-strategy-guide">마라톤 전략 — 5km부터 풀코스까지 거리별 페이스 & 멘탈 가이드</a></li>
-  <li><a href="/blog/running-shoe-terminology-guide">러닝화 용어 사전 — 스택·드롭·에너지 리턴 1분 정리</a></li>
-</ul>
-
-<p><small>출처: RIFE 러닝라이프(@runninglife_korea) 2026-05-15 게시물 "TEMPO RUN 그거 왜 해야 되는데?" + Jack Daniels Running Formula(2014) + Pfitzinger Advanced Marathoning 페이스 기준. 본 글의 페이스 환산표·심박수 표는 한국 아마추어 러너 평균 데이터 기반 추정치로, 개인별 ±5초/km 편차 가능.</small></p>
+<p><strong>2026-11-10 근거 재확인.</strong> 연구의 대상·측정 결과와 개인 훈련에 적용할 질문을 구분했습니다.</p><h2>템포런이라는 이름보다 훈련의 목적과 강도 기준을 확인하세요</h2><p>템포런은 훈련 계획마다 가리키는 강도와 구성이 다를 수 있습니다. 이 글에서는 편한 달리기보다 높은 강도를 조절하며 이어가는 훈련을 설명하되, 한 단어를 모든 사람의 정확한 젖산역치로 정의하지 않습니다.</p><p>10km 기록에 몇 초를 더한 페이스, 최대심박의 일정 비율, 정해진 지속시간이 서로 같은 자극을 보장하지는 않습니다. 최근 기록이 어떤 조건에서 나왔는지, 오늘 피로와 날씨가 어떤지도 함께 봐야 합니다.</p><div class="table-wrap"><table><thead><tr><th scope="col">기준으로 삼는 정보</th><th scope="col">확인할 한계</th></tr></thead><tbody><tr><td>최근 10km 기록</td><td>당시 코스·날씨·전력 여부가 현재와 같은가?</td></tr><tr><td>시계의 심박 구간</td><td>구간 설정에 쓴 최대심박·역치와 체계가 무엇인가?</td></tr><tr><td>호흡·노력감</td><td>숫자를 지키느라 예상보다 훨씬 힘들어지는가?</td></tr><tr><td>지속 또는 반복 구성</td><td>빠르게 달린 시간 외에 휴식·총량도 기록했는가?</td></tr></tbody></table></div><h2>역치 훈련 논문이 자동으로 내 템포 페이스를 정해 주지는 않습니다</h2><p>2023년 노르웨이식 모델 고찰은 엘리트 중거리·장거리 선수의 젖산 측정과 강도 조절 사례를 설명합니다. 측정 조건을 가진 특정 모델이며, 기록만 넣으면 모든 러너의 역치가 계산된다는 자료가 아닙니다.</p><p>2024년 질적 연구도 여러 종목의 성공적인 코치들이 강도를 어떻게 조절했는지를 다룹니다. 이를 처음 템포런을 하는 개인에게 동일한 심박 비율·지속시간을 적용한 검증으로 옮기지 않았습니다.</p><h2>시계의 같은 숫자도 확인한 체계가 다르면 뜻이 달라집니다</h2><p>세 구간 체계와 더 세분한 구간 체계는 이름이 같아도 경계가 다를 수 있습니다. 심박 구간의 라벨, 검사에서 본 역치, 그날의 대화·노력감은 각각 어떤 정보를 주는지 구분하세요.</p><p>CDC의 대화법은 상대적 운동강도의 간단한 관찰 도구입니다. 대화가 어려워졌다는 사실을 참고할 수 있지만 그것만으로 정확한 역치 도달이나 특정 젖산 농도를 확정할 수는 없습니다.</p><h2>처음 계획에서 남겨 둘 조절 항목</h2><p>평소 편한 주행이 안정적으로 이어지는지, 이번 주에 다른 강한 훈련이나 긴 주행이 있는지부터 살펴보세요. 속도·지속시간·반복 수를 모두 동시에 늘리면 어떤 변화가 부담을 만들었는지 보기 어렵습니다.</p><p>목표 숫자를 채우는 동안 강도가 예상과 달라지면 속도·시간을 낮추거나 그날 계획을 바꿀 수 있도록 정해 두세요. 이 글은 누구나 20~40분을 연속으로 달려야 한다는 고정 메뉴를 제시하지 않습니다.</p><h2>훈련이 맞았는지 확인할 기록</h2><p>그날 페이스와 심박 외에 호흡·노력감의 변화, 반복 사이 회복, 마친 뒤와 다음날의 피로를 기록할 수 있습니다. 시계가 붙인 ‘역치’라는 이름만으로 계획이 적절했다고 결론 내리지는 마세요.</p><p>더 많은 고강도 시간을 채우는 것이 항상 다음 기록 향상으로 이어진다고 보장할 수 없습니다. 노르웨이식 훈련을 참고하려면 <a href="/blog/nsm-norwegian-singles-method-training">엘리트 모델과 NSM의 차이</a>도 함께 확인하세요.</p><h2>확인한 원문</h2><ul><li><a href="https://www.mdpi.com/1660-4601/20/5/3782" target="_blank" rel="noopener noreferrer">2023 노르웨이식 역치 훈련 고찰</a> — 엘리트 모델·개별 측정과 근거 한계.</li><li><a href="https://link.springer.com/article/10.1007/s40279-024-02067-4" target="_blank" rel="noopener noreferrer">2024 노르웨이 지구력 훈련 연구</a> — 여러 종목 코치들의 질적 자료와 강도 조절.</li><li><a href="https://www.cdc.gov/physical-activity-basics/measuring/index.html" target="_blank" rel="noopener noreferrer">CDC 상대적 운동강도·대화법</a> — 상대적 강도 관찰이며 개인 역치 검사는 아님.</li></ul>
 `,
+    updatedAt: "2026-11-10",
+    faqs: [
+      {
+        "question": "10km 기록에 5~10초를 더하면 템포 페이스인가요?",
+        "answer": "그 공식이 모든 사람의 역치를 정해 주지는 않습니다. 기록의 조건·개인 강도 기준·당일 반응을 함께 확인해야 합니다."
+      },
+      {
+        "question": "최대심박의 같은 비율이면 모두 같은 역치인가요?",
+        "answer": "고정 비율과 개인의 측정 역치를 같은 것으로 확정하지 않습니다. 구간 설정 방식과 측정 조건을 확인할 필요가 있습니다."
+      }
+    ],
   },
   {
-    id: 'nsm-norwegian-singles-method-training',
-    slug: 'nsm-norwegian-singles-method-training',
-    title: 'NSM 노르웨이식 훈련법 완전 가이드 | 잉에브릭센 형제가 만든 Sub-T 더블 트레숄드 — 강도 낮추고 볼륨 늘려 부상 없이 PR 깨는 법',
-    description: 'NSM(Norwegian Singles Method)은 노르웨이 잉에브릭센 형제가 정립한 훈련법으로, 강도는 Z3 후반~Z4(Sub-Threshold)로 낮추고 빈도와 볼륨을 늘리는 게 핵심입니다. 부상 부담 줄이며 페이스 유지력을 끌어올리는 가성비 전략 — 인터벌이 부담되고 LSD만으론 아쉬운 중급 러너에게 최적.',
-    thumbnail: '/images/blog/nsm-norwegian-singles-method-training.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-05-16',
-    category: 'guide' as const,
-    readingTime: 10,
-    tags: ['NSM', '노르웨이식 훈련법', 'Norwegian Singles Method', '잉에브릭센', 'Sub-Threshold', '젖산 역치', '더블 트레숄드', '훈련법', '마라톤 훈련'],
+    id: "nsm-norwegian-singles-method-training",
+    slug: "nsm-norwegian-singles-method-training",
+    title: "NSM·노르웨이식 훈련 — 엘리트 모델과 단일 세션 응용의 차이",
+    description: "더블 역치 모델과 NSM을 같은 검증으로 취급하지 않습니다. 원문의 역사·대상·강도 측정과 한계를 확인하고 부상 없는 기록 향상 보증을 제거했습니다.",
+    thumbnail: "/images/blog/verified-nsm-norwegian-singles-method-training-20261110.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-05-16",
+    category: "guide",
+    readingTime: 6,
+    tags: [
+      "NSM",
+      "노르웨이식 훈련법",
+      "Norwegian Singles Method",
+      "잉에브릭센",
+      "Sub-Threshold",
+      "젖산 역치",
+      "더블 트레숄드",
+      "훈련법",
+      "마라톤 훈련"
+    ],
     content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>NSM = Norwegian Singles Method</strong> — 잉에브릭센 형제가 정립한 훈련법, 강도를 <strong>Z3 후반~Z4(Sub-Threshold)</strong>로 낮추고 빈도·볼륨을 늘리는 전략</li>
-    <li>전력 인터벌 대신 <strong>"몸이 완전히 무너지기 전 멈추는" Sub-T 반복</strong> — 부상 부담 ↓, 젖산 처리 능력 ↑, 페이스 유지력 ↑</li>
-    <li><strong>인터벌이 부담스럽고 LSD만으론 아쉬운 중급 러너에게 최적</strong> — 풀코스 PR 단축 가성비 1위 훈련법</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">🇳🇴</span>
-  <div class="callout-body">
-    <p class="callout-title">왜 지금 NSM 글을 쓰는가</p>
-    <p>잉에브릭센 형제(Jakob·Henrik·Filip Ingebrigtsen)가 1500m·5000m·하프마라톤 세계 무대를 휩쓸며 NSM이 글로벌 트렌드로 자리잡았습니다. 한국 러닝 커뮤니티에서도 2024~2025년부터 "노르웨이식"이 회자됐고, RIFE 러닝라이프(@runninglife_korea)가 5월 14일 NSM 가이드를 게시하면서 본격 대중화 단계에 진입했습니다. 본 글은 RIFE 게시물 + 코치 학술 자료 + 한국 아마추어 적용 매뉴얼을 종합한 정리본입니다.</p>
-  </div>
-</div>
-
-<h2>NSM이 뭐고 왜 다른가</h2>
-
-<p>NSM은 <strong>강도를 낮추고 빈도와 볼륨을 늘리는</strong> 노르웨이식 러닝 훈련법입니다. 전통적인 인터벌(VO2 max 95~100% 강도로 전력 질주)과 본질적으로 다른 접근:</p>
-
-<table>
-  <thead>
-    <tr><th>구분</th><th>전통 인터벌</th><th>NSM (Sub-T)</th></tr>
-  </thead>
-  <tbody>
-    <tr><td><strong>강도</strong></td><td>VO2 max 95~100% (Z5)</td><td>Sub-Threshold (Z3 후반~Z4)</td></tr>
-    <tr><td><strong>1회 부담</strong></td><td>매우 큼 (회복 2~3일)</td><td>작음 (다음 날 또 가능)</td></tr>
-    <tr><td><strong>주간 빈도</strong></td><td>1회</td><td>2~3회</td></tr>
-    <tr><td><strong>장기 효과</strong></td><td>VO2 max 향상</td><td>젖산 처리·페이스 유지력</td></tr>
-    <tr><td><strong>부상 위험</strong></td><td>높음</td><td>낮음</td></tr>
-  </tbody>
-</table>
-
-<p>핵심 차이는 <strong>"몸이 완전히 무너지기 전 훈련을 마무리하는 것"</strong>. 전력 질주가 아니라 "지속 가능한 빠름"의 누적이 NSM의 본질입니다.</p>
-
-<h2>강도 존(Zone) 이해 — Z3·Z4·Sub-T가 정확히 뭔가</h2>
-
-<table>
-  <thead>
-    <tr><th>존</th><th>심박수 % HRmax</th><th>호흡·대화</th><th>주관적 노력 (RPE)</th></tr>
-  </thead>
-  <tbody>
-    <tr><td><strong>Z2 (LSD)</strong></td><td>60~70%</td><td>긴 대화 가능</td><td>3~4 / 10</td></tr>
-    <tr><td><strong>Z3 (마라톤 페이스)</strong></td><td>70~80%</td><td>짧은 대화 가능</td><td>5~6 / 10</td></tr>
-    <tr><td><strong>Z3 후반~Z4 (Sub-T)</strong></td><td><strong>80~88%</strong></td><td><strong>단어 단위</strong></td><td><strong>6~7 / 10</strong></td></tr>
-    <tr><td><strong>Z4 후반 (LT/템포)</strong></td><td>88~92%</td><td>거의 대화 불가</td><td>7~8 / 10</td></tr>
-    <tr><td><strong>Z5 (VO2 max)</strong></td><td>92~100%</td><td>대화 불가</td><td>9~10 / 10</td></tr>
-  </tbody>
-</table>
-
-<p>NSM 핵심 구간은 <strong>Z3 후반~Z4 (Sub-Threshold)</strong>입니다. 젖산 역치 바로 아래 — "힘들지만 무너지지는 않는" 구간. <a href="/blog/tempo-run-training-guide-korea">전통 템포런(Z4 후반)</a>보다 한 단계 낮은 강도라는 점이 중요합니다.</p>
-
-<h2>대표 NSM 1주 루틴 — 더블 트레숄드 방식</h2>
-
-<p>잉에브릭센 형제의 시그니처는 <strong>더블 트레숄드(Double Threshold) Day</strong> — 하루에 Sub-T 세션을 오전·오후 2회 분할 수행. 다만 아마추어 러너에게는 부담이 크기 때문에, RIFE 게시물 기준 한국 일반 러너용 단순화 1주 루틴을 제안합니다.</p>
-
-<table>
-  <thead>
-    <tr><th>요일</th><th>훈련</th><th>분량·강도</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>월</td><td>회복 조깅</td><td>30~40분 Z2 (6:30~7:00/km)</td></tr>
-    <tr><td><strong>화</strong></td><td><strong>NSM 세션 1</strong></td><td><strong>2km × 5~6세트, 세트간 1분 휴식, Z3 후반~Z4 (4:50~5:00/km)</strong></td></tr>
-    <tr><td>수</td><td>회복 조깅</td><td>40~50분 Z2</td></tr>
-    <tr><td><strong>목</strong></td><td><strong>NSM 세션 2</strong></td><td><strong>1km × 8~10세트, 세트간 30초~1분, Z4 (4:40~4:50/km)</strong></td></tr>
-    <tr><td>금</td><td>휴식 또는 회복 조깅</td><td>30분 Z2 또는 OFF</td></tr>
-    <tr><td>토</td><td>LSD (장거리)</td><td>90~120분 Z2 (6:00~6:30/km)</td></tr>
-    <tr><td>일</td><td>가볍게 또는 휴식</td><td>30~40분 Z2 또는 OFF</td></tr>
-  </tbody>
-</table>
-
-<p><small>※ 위 페이스는 본인 10K 기록 50:00(5:00/km) 기준 예시. 본인 기록에 맞춰 ±10~20초 조정 필요.</small></p>
-
-<h2>NSM 세션 진행 핵심 4가지</h2>
-
-<div class="callout success">
-  <span class="callout-icon">✅</span>
-  <div class="callout-body">
-    <p class="callout-title">NSM이 인터벌과 결정적으로 다른 4가지</p>
-    <ol>
-      <li><strong>"무너지기 전 멈춘다":</strong> 마지막 세트에 토할 것 같으면 NSM이 아니라 인터벌. 80% 페이스 유지 가능한 선에서 멈추는 게 정답</li>
-      <li><strong>세트 사이 휴식은 짧게:</strong> 30초~1분 정도. 완전 회복 X — 적당한 피로 누적 유지가 핵심</li>
-      <li><strong>심박수 모니터링 필수:</strong> 페이스만 보면 후반 가속해서 Z5 진입 위험. 가민·코로스 등으로 <strong>88~90% HRmax 상한 설정</strong></li>
-      <li><strong>주 2회까지만:</strong> 주 3회는 잉에브릭센 같은 엘리트급. 한국 아마추어는 화·목 2회로 충분 (몸이 적응한 후 3회 시도 가능)</li>
-    </ol>
-  </div>
-</div>
-
-<h2>NSM이 잘 맞는 러너 vs 안 맞는 러너</h2>
-
-<table>
-  <thead>
-    <tr><th>잘 맞는 러너</th><th>안 맞는 러너</th></tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>인터벌이 부담스러운 중급자</td>
-      <td>러닝 시작 6개월 미만 입문자</td>
-    </tr>
-    <tr>
-      <td>LSD만 해서 페이스가 안 오르는 러너</td>
-      <td>부상 회복 직후 (1~3개월)</td>
-    </tr>
-    <tr>
-      <td>풀코스 PR 5~10분 단축이 목표</td>
-      <td>주 3회 이하만 가능한 시간 부족 러너</td>
-    </tr>
-    <tr>
-      <td>심박계 사용에 익숙한 러너</td>
-      <td>5K 첫 도전 단계</td>
-    </tr>
-    <tr>
-      <td>주 4~5회 러닝 가능한 시간 여유</td>
-      <td>스피드 폭발력이 목표인 단거리 러너</td>
-    </tr>
-  </tbody>
-</table>
-
-<p><strong>입문자라면 NSM 이전에 LSD 베이스부터</strong>. <a href="/blog/lsd-training-beginner-guide-korea">LSD 훈련 입문자 가이드 →</a></p>
-
-<h2>한국 러너 FAQ</h2>
-
-<h3>Q. NSM과 템포런의 차이는?</h3>
-<p>강도가 다릅니다. 전통 템포런은 <strong>Z4 후반(80~90% HRmax)</strong>에서 한 번에 20~40분 지속주, NSM은 <strong>Z3 후반~Z4(80~88%)</strong>에서 짧은 세트를 여러 번 반복. 즉 NSM이 약간 더 낮은 강도 + 분할 형식. <a href="/blog/tempo-run-training-guide-korea">템포런 완전 정복 →</a></p>
-
-<h3>Q. 주간 총 거리는 얼마나 되나?</h3>
-<p>위 1주 루틴 예시 기준 약 55~70km/주. 풀코스 빌드업 사이클 피크 주에는 80~90km까지 늘릴 수 있습니다. 인터벌 위주 훈련(40~50km/주)보다 절대 거리가 큰 게 NSM의 특징.</p>
-
-<h3>Q. NSM에 맞는 신발은?</h3>
-<p>NSM은 주간 볼륨이 큰 훈련법이라 <strong>내구성·완충·반발 균형이 좋은 데일리 트레이너 또는 슈퍼 트레이너</strong>가 핵심. 카본 슈퍼슈즈는 NSM 세션엔 안 어울립니다(레이스용).</p>
-
-<ul>
-  <li><strong>NSM 세션용 (Sub-T 페이스):</strong>
-    <ul>
-      <li><a href="/shoes/asics-superblast-3">Asics Superblast 3</a> — 슈퍼 트레이너 카테고리 1위, 템포·NSM·롱런 모두 가능</li>
-      <li><a href="/shoes/asics-magic-speed-5">Asics Magic Speed 5</a> — 카본 플레이트 있지만 데일리 가능, 페이스 트레이닝용</li>
-      <li><a href="/shoes/saucony-endorphin-speed-5">Saucony Endorphin Speed 5</a> — 페블엑스 폼 + 나일론 플레이트</li>
-    </ul>
-  </li>
-  <li><strong>LSD·회복 조깅용:</strong>
-    <ul>
-      <li><a href="/shoes/asics-gel-nimbus-28">Asics Gel-Nimbus 28</a> — 맥시멀 쿠셔닝, 회복일 부담 최소</li>
-      <li><a href="/shoes/hoka-clifton-10">Hoka Clifton 10</a> — 가벼운 데일리 트레이너</li>
-      <li><a href="/shoes/new-balance-1080-v15">New Balance 1080 v15</a> — Fresh Foam X, 폼 부드러움</li>
-    </ul>
-  </li>
-</ul>
-
-<h3>Q. 평발·무릎 약한데 가능?</h3>
-<p>NSM은 강도가 낮은 편이라 인터벌보다 평발·무릎 부담이 적습니다. 다만 <strong>주간 볼륨이 늘어나는 만큼 신발 선택이 중요</strong> — 안정화 또는 맥시멀 쿠셔닝 권장. <a href="/blog/knee-pain-running-shoes">무릎 통증 러너용 신발 가이드 →</a></p>
-
-<h2>NSM 도입 8주 빌드업</h2>
-
-<table>
-  <thead>
-    <tr><th>주차</th><th>NSM 세션 분량</th><th>주간 총 거리</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>1~2주</td><td>주 1회 (2km × 3세트)</td><td>40km</td></tr>
-    <tr><td>3~4주</td><td>주 1회 (2km × 4세트)</td><td>50km</td></tr>
-    <tr><td>5~6주</td><td>주 2회 (2km × 4세트 + 1km × 6세트)</td><td>60km</td></tr>
-    <tr><td>7~8주</td><td>주 2회 (2km × 5세트 + 1km × 8세트)</td><td>70km</td></tr>
-  </tbody>
-</table>
-
-<h2>관련 글</h2>
-
-<ul>
-  <li><a href="/blog/tempo-run-training-guide-korea">템포런 완전 정복 — 젖산 역치 페이스 매뉴얼</a></li>
-  <li><a href="/blog/lsd-training-beginner-guide-korea">LSD 훈련 입문자 가이드</a></li>
-  <li><a href="/blog/marathon-pacing-mental-strategy-guide">마라톤 전략 — 5km부터 풀코스까지 거리별 페이스 & 멘탈 가이드</a></li>
-  <li><a href="/blog/knee-pain-running-shoes">무릎 통증 러너용 신발 가이드</a></li>
-</ul>
-
-<p><small>출처: RIFE 러닝라이프(@runninglife_korea) 2026-05-14 게시물 "NSM 훈련법" + Casado et al., "Training Periodization, Methods, Intensity Distribution, and Volume in Highly Trained and Elite Distance Runners"(2022) + Marius Bakken NSM Public Notes(2020~). 본 글의 페이스 환산표·주간 루틴은 한국 아마추어 러너 평균 데이터 기반 예시로, 개인별 적용은 본인 심박수·회복 능력에 따라 조정 필요.</small></p>
+<p><strong>2026-11-10 근거 재확인.</strong> 연구의 대상·측정 결과와 개인 훈련에 적용할 질문을 구분했습니다.</p><h2>NSM과 노르웨이 엘리트의 더블 역치는 같은 계획이 아닙니다</h2><p>온라인에서 NSM·Norwegian Singles Method라고 부르는 단일 세션 중심 응용을, 하루 두 번 역치 훈련을 쓰는 엘리트 모델과 동일한 검증 대상으로 취급하지 않습니다. 여기서 확인한 원문은 주로 노르웨이 엘리트 모델과 코치들의 훈련 방식입니다.</p><p>이 원문들만으로 특정 NSM 주간표가 일반 러너에게 더 안전하거나 개인 최고기록을 보장한다고 주장할 수 없습니다. 훈련 이름보다 실제 강도·주간 총량·회복 조건을 확인하는 것이 먼저입니다.</p><div class="table-wrap"><table><thead><tr><th scope="col">구분</th><th scope="col">확인한 내용</th><th scope="col">바로 결론 내릴 수 없는 것</th></tr></thead><tbody><tr><td>2023 모델 고찰</td><td>젖산 측정으로 강도를 조절한 엘리트 사례</td><td>NSM이 다른 방법보다 우월하다는 비교 결과</td></tr><tr><td>2024 코치 연구</td><td>여러 종목 남성 코치 12명의 질적 자료</td><td>한국 취미 러너의 부상 감소·기록 향상 보증</td></tr><tr><td>단일 세션 응용</td><td>원 모델과 구성이 다르면 별도 적용 문제</td><td>횟수만 줄이면 안전성도 검증 완료</td></tr></tbody></table></div><h2>한 가족이 처음 만든 비법으로 설명하기 어렵습니다</h2><p>2023년 고찰은 Marius Bakken이 1990년대 후반부터 자신의 훈련에서 시도한 접근과 이후 노르웨이 지도 환경의 연결을 설명합니다. 이를 잉에브릭센 형제만의 발명이라고 단정하지 않았습니다.</p><p>해당 고찰은 세계 수준의 1, 500m·5, 000m 선수 훈련 모델을 다룹니다. 저자들은 당시 통제된 효과 검증 연구가 없다고 밝혔고, 마라톤으로의 적용도 별도 문제로 남겼습니다.</p><h2>따라 할 숫자보다 먼저 볼 것은 강도를 통제한 조건입니다</h2><p>원문 모델에는 개인 반응을 측정하며 과도한 강도로 치우치지 않게 조절하는 과정이 있습니다. 선수의 젖산 수치나 킬로미터당 페이스를 측정 조건 없이 가져오면 같은 훈련이라고 보기 어렵습니다.</p><p>강도 체계도 구분해야 합니다. 3구간과 더 세분한 체계에서 같은 구간 번호가 같은 의미를 갖지는 않습니다. 이 글은 특정 mmol/L, 최대심박 비율, 고정 페이스를 일반 러너 모두의 목표로 제시하지 않습니다.</p><h2>내 계획에 응용하기 전에 물어볼 질문</h2><p>이미 하고 있는 편한 주행·긴 주행·빠른 훈련이 얼마나 되는지, 새로운 세션이 더해지면 주간 총량이 어떻게 바뀌는지 적어 보세요. 기존 훈련에 이름만 바꾼 역치 세션을 계속 더하면 부담도 함께 늘 수 있습니다.</p><p>훈련 경험과 강도 조절 수단이 다른데 엘리트의 주간 거리·더블 세션부터 복제할 이유는 없습니다. ‘싱글’이라는 이름도 자동으로 쉬운 훈련이라는 뜻은 아닙니다. 속도·시간·빈도와 실제 반응을 함께 평가해야 합니다.</p><h2>이 자료로 할 수 있는 판단</h2><p>가져올 수 있는 질문은 오늘 강도가 목표보다 높아지는지, 훈련을 반복할 만큼 회복하는지, 기록과 반응을 보고 계획을 바꾸는지입니다. 특정 상표처럼 붙은 훈련 이름만으로 결과를 판단할 수는 없습니다.</p><p>이 글은 NSM의 효과가 없다고 판정하지도 않습니다. 확인한 두 원문이 직접 답한 범위와 아직 답하지 못한 범위를 구분합니다. 일반 템포런의 강도 기준은 <a href="/blog/tempo-run-training-guide-korea">템포런 계획 가이드</a>에서 이어 볼 수 있습니다.</p><h2>확인한 원문</h2><ul><li><a href="https://www.mdpi.com/1660-4601/20/5/3782" target="_blank" rel="noopener noreferrer">2023 노르웨이식 젖산 기반 역치 훈련 고찰</a> — 모델의 역사·엘리트 사례·통제 연구 부재와 마라톤 적용 한계.</li><li><a href="https://link.springer.com/article/10.1007/s40279-024-02067-4" target="_blank" rel="noopener noreferrer">2024 노르웨이 지구력 훈련 연구</a> — 남성 코치 12명의 질적 자료. NSM 비교 시험이나 일반 러너 임상시험 아님.</li></ul>
 `,
+    updatedAt: "2026-11-10",
+    faqs: [
+      {
+        "question": "잉에브릭센 형제가 만든 훈련인가요?",
+        "answer": "확인한 2023 고찰은 Marius Bakken의 1990년대 후반 시도와 노르웨이 지도 환경의 연결을 설명합니다. 형제만의 발명으로 단정하지 않습니다."
+      },
+      {
+        "question": "싱글로 바꾸면 누구나 안전하게 기록이 좋아지나요?",
+        "answer": "확인한 원문은 특정 NSM 계획의 일반 러너 대상 우월성·부상 감소를 직접 검증하지 않았습니다. 구성과 개인 조건이 다르면 적용 근거도 따로 봐야 합니다."
+      }
+    ],
   },
   {
     id: '2027-seoul-marathon-group-criteria',
@@ -4470,178 +4196,41 @@ export const posts_2026_05: BlogPost[] = [
 `,
   },
   {
-    id: 'lsd-training-beginner-guide-korea',
-    slug: 'lsd-training-beginner-guide-korea',
-    title: 'LSD 훈련법 입문자 완벽 가이드 | "조금만 뛰어도 숨차다"면 페이스부터 잘못 — Zone 2 심박·대화 페이스·주 1회 루틴',
-    description: 'LSD(Long Slow Distance)는 빠르게 뛰기 위한 훈련이 아닌 오래 버틸 몸을 만드는 기초 체력 훈련입니다. Zone 2 심박존·대화 가능 페이스·시간 기준 시작·주 1회 루틴까지 — 초보 러너가 후반부 체력 급락에서 벗어나는 가장 빠른 길.',
-    thumbnail: '/images/blog/lsd-training-beginner-guide-korea.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-05-14',
-    category: 'guide' as const,
-    readingTime: 9,
-    tags: ['LSD', 'LSD 훈련', 'Long Slow Distance', 'Zone 2', '심박존', '러닝 훈련', '러닝 입문', '러닝 기초', '베이스 빌딩', '유산소'],
+    id: "lsd-training-beginner-guide-korea",
+    slug: "lsd-training-beginner-guide-korea",
+    title: "LSD 훈련 — 초보 러너가 거리보다 먼저 정할 강도·부담·동선",
+    description: "누구나 90분·고정 Zone 2·매주 10% 증가라는 처방을 피하고, 익숙한 주행과 다음날 반응으로 긴 저강도 달리기를 계획하는 질문을 정리했습니다.",
+    thumbnail: "/images/blog/verified-lsd-training-beginner-guide-korea-20261110.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-05-14",
+    category: "guide",
+    readingTime: 6,
+    tags: [
+      "LSD",
+      "LSD 훈련",
+      "Long Slow Distance",
+      "Zone 2",
+      "심박존",
+      "러닝 훈련",
+      "러닝 입문",
+      "러닝 기초",
+      "베이스 빌딩",
+      "유산소"
+    ],
     content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>LSD = Long Slow Distance</strong> — 길게·천천히·편하게 달리는 유산소 지구력 훈련. 빠르게 뛰는 게 아니라 <strong>오래 버틸 수 있는 몸</strong>을 만듭니다</li>
-    <li>핵심: <strong>대화 가능한 페이스 + Zone 2 심박존</strong> 유지. 처음엔 거리 아닌 <strong>시간(30~60분)</strong> 기준으로 시작</li>
-    <li>"조금만 뛰어도 숨차다 / 후반부 체력 급락"이라면 인터벌·페이스런이 부족한 게 아니라 <strong>LSD 베이스가 부족</strong>한 것 — 주 1회 LSD부터 6주만 해도 변화 체감</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">🏃</span>
-  <div class="callout-body">
-    <p class="callout-title">왜 입문자일수록 LSD가 더 중요한가</p>
-    <p>입문자가 빠지기 쉬운 함정: "더 빨리 뛰면 실력 늘겠지" → 매번 힘들게 뛰다 무릎·아킬레스 부상. 실제로는 <strong>주 훈련의 70~80%를 편한 페이스로 채워야</strong> 몸이 모세혈관·미토콘드리아·근건을 발달시키며 천천히 강해집니다. 엘리트 마라토너들도 훈련의 80%는 LSD입니다.</p>
-  </div>
-</div>
-
-<h2>LSD가 정확히 뭐냐</h2>
-
-<table>
-  <thead>
-    <tr><th>요소</th><th>의미</th></tr>
-  </thead>
-  <tbody>
-    <tr><td><strong>L · Long</strong></td><td>길게 — 30분 ~ 2시간+ (수준에 따라)</td></tr>
-    <tr><td><strong>S · Slow</strong></td><td>천천히 — 평소 5K 페이스보다 1~2분/km 느리게</td></tr>
-    <tr><td><strong>D · Distance</strong></td><td>오래 달리기 (장거리) — 초반 의도는 거리보다 "버틴 시간"</td></tr>
-  </tbody>
-</table>
-
-<p>한 줄로: <strong>"옆 사람과 대화하면서도 가능한 페이스로 30분~1시간 이상 멈추지 않고 뛰는 것"</strong>이 LSD입니다.</p>
-
-<h2>핵심 5가지 원칙 (RIFE WIKI 정리 기반)</h2>
-
-<h3>① 대화 가능한 페이스 유지</h3>
-
-<p>가장 단순하고 정확한 강도 가늠법 — <strong>Talk Test</strong>. 옆 사람에게 "오늘 날씨 좋네요, 어디까지 갔다 오실 거예요?" 정도 문장이 끊김 없이 나오면 LSD 페이스. 한 단어씩 끊겨 나오면 너무 빠른 겁니다.</p>
-
-<h3>② Zone 2 심박존 권장</h3>
-
-<table>
-  <thead>
-    <tr><th>심박존</th><th>%MHR</th><th>느낌</th><th>용도</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>Zone 1</td><td>50~60%</td><td>걷거나 매우 느린 조깅</td><td>회복 / 쿨다운</td></tr>
-    <tr><td><strong>Zone 2</strong></td><td><strong>60~70%</strong></td><td><strong>대화 가능, 약간 호흡 가빠짐</strong></td><td><strong>LSD / 베이스 빌딩</strong></td></tr>
-    <tr><td>Zone 3</td><td>70~80%</td><td>대화 짧게만 가능</td><td>템포런 / 마라톤 페이스</td></tr>
-    <tr><td>Zone 4</td><td>80~90%</td><td>대화 불가, 호흡 거침</td><td>인터벌 / 10K 페이스</td></tr>
-    <tr><td>Zone 5</td><td>90~100%</td><td>최대 노력, 1~5분만 가능</td><td>스프린트 / VO2max</td></tr>
-  </tbody>
-</table>
-
-<p><strong>최대심박수(MHR) 간단 추정:</strong> 220 - 나이. 예) 35세 → MHR 약 185. Zone 2는 185 × 0.6~0.7 = <strong>111~130bpm</strong>.</p>
-
-<p>가민·애플워치·폴라 등 시계가 있다면 자동 측정. 없다면 손목·목 동맥 6초 측정 × 10 = bpm.</p>
-
-<h3>③ 처음엔 거리보다 "시간" 기준</h3>
-
-<p>"오늘 10km 뛰어야지" 가 아니라 "오늘 45분 뛰어야지". 페이스를 천천히 유지해야 하는데 거리 목표가 있으면 자꾸 빠르게 가게 됩니다. 시간 기준으로 시작 → 8~12주 후 거리 기준으로 전환.</p>
-
-<table>
-  <thead>
-    <tr><th>러닝 경험</th><th>첫 LSD 시간</th><th>4~8주 후 목표</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>완전 입문 (5K 첫 완주 전)</td><td>30분 (걷기 섞어도 OK)</td><td>45~60분 연속</td></tr>
-    <tr><td>5K 완주 경험</td><td>40~50분</td><td>70~90분</td></tr>
-    <tr><td>10K 완주 경험</td><td>60~75분</td><td>90~120분</td></tr>
-    <tr><td>하프 완주 경험</td><td>90~110분</td><td>120~150분</td></tr>
-  </tbody>
-</table>
-
-<h3>④ 주 1회 LSD + 나머지는 짧은 조깅·회복런</h3>
-
-<p>입문 러너 표준 주간 구성:</p>
-
-<ul>
-  <li><strong>주 1회 LSD</strong> — 보통 주말 (긴 시간 확보 쉬움)</li>
-  <li><strong>주 2회 짧은 베이스런</strong> — 평일 30~40분, 역시 Zone 2 페이스</li>
-  <li><strong>주 1회 회복런 또는 휴식</strong></li>
-</ul>
-
-<p>중급 이상이면 여기에 인터벌·템포런 1회 추가. <strong>입문~중급 단계에서는 LSD가 곧 핵심 훈련</strong>이고, 빠른 훈련은 보조입니다.</p>
-
-<h3>⑤ 기록보다 "리듬·유지 시간"</h3>
-
-<p>LSD에서는 페이스 기록을 보지 마세요. 보면 자꾸 "어 이거 너무 느리지 않나" 싶어 빨라집니다. 시계 화면을 시간/심박만 보이게 설정하고, 페이스는 끝나고 확인. <strong>일정한 호흡 리듬으로 멈추지 않고 끝까지 갔는가</strong>가 성공 기준.</p>
-
-<h2>한국 러너 입문자의 흔한 실수 3가지</h2>
-
-<h3>실수 1: LSD인데 자꾸 빨라진다</h3>
-
-<p>특히 한강공원·올림픽공원처럼 다른 러너 많은 곳에서 흔합니다. 옆 러너 추월하고 싶은 본능 → 페이스 1분/km 빨라짐 → 후반 30분에 폭망. <strong>해결:</strong> 시계 알람 설정 (심박 130bpm 초과 시 진동) 또는 의도적으로 가장 느린 구간을 골라 뛰기.</p>
-
-<h3>실수 2: 매번 같은 코스 같은 거리</h3>
-
-<p>한강 잠수교~반포 5km 왕복만 반복하면 거리 늘리기 어렵습니다. <strong>해결:</strong> 시간 기준으로 새 코스 개척. 30분 → 다음 주 35분 → 그 다음 주 40분 식으로 10%씩 점진 증가.</p>
-
-<h3>실수 3: 신발이 LSD와 안 맞음</h3>
-
-<p>레이싱화나 매우 가벼운 트레이너로 LSD 뛰면 후반부 다리·발 피로 폭증. LSD에는 <strong>충분한 쿠셔닝 + 안정성</strong>이 우선. 추천 카테고리:</p>
-
-<ul>
-  <li><strong>입문~중급 LSD 데일리 — <a href="/shoes/hoka-clifton-10">호카 클리프턴 10</a>:</strong> 부드러운 착지, 발볼 표준~넓음 친화적, km당 250~300원 가성비</li>
-  <li><strong>장시간 LSD·발 부담 큰 러너 — <a href="/shoes/asics-gel-nimbus-28">아식스 님버스 28</a>:</strong> 최상위 쿠셔닝, 평발 안정성, 90분+ LSD에서 무릎·발목 보호</li>
-  <li><strong>균형형 LSD — <a href="/shoes/new-balance-1080-v15">NB 1080 v15</a>:</strong> 토박스 73.2mm(RunRepeat 실측, 랩 평균 수준)에 남성 2E·4E 와이드가 있어 한국 발 친화적, 쿠셔닝 + 적당한 반응성</li>
-  <li><strong>레이스 페이스 가까운 LSD — <a href="/shoes/nike-pegasus-42">나이키 페가수스 42</a>:</strong> 데일리 트레이너, 좀 더 가볍게 가고 싶을 때</li>
-</ul>
-
-<h2>6주 LSD 입문 프로그램 (5K 완주자 기준)</h2>
-
-<table>
-  <thead>
-    <tr><th>주차</th><th>주말 LSD</th><th>평일 베이스런</th><th>목표</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>1주</td><td>40분 (걷기 포함)</td><td>30분 × 2회</td><td>Zone 2 감각 익히기</td></tr>
-    <tr><td>2주</td><td>45분 연속</td><td>30분 × 2회</td><td>대화 페이스 유지</td></tr>
-    <tr><td>3주</td><td>50분 연속</td><td>35분 × 2회</td><td>걷기 없이 완주</td></tr>
-    <tr><td>4주</td><td>55분 연속</td><td>35분 × 2회</td><td>심박 130bpm 이내 유지</td></tr>
-    <tr><td>5주</td><td>65분 연속</td><td>40분 × 2회</td><td>1시간 벽 돌파</td></tr>
-    <tr><td>6주</td><td>75분 또는 12km</td><td>40분 × 2회</td><td>거리 기준 전환 시작</td></tr>
-  </tbody>
-</table>
-
-<div class="callout warning">
-  <span class="callout-icon">📈</span>
-  <div class="callout-body">
-    <p class="callout-title">10% 규칙</p>
-    <p>주간 총 러닝 거리(또는 시간)는 <strong>전주 대비 10% 이상 늘리지 말기</strong>. 부상의 가장 큰 원인은 갑작스러운 거리 증가. 6주차 75분이면 7주차는 80~82분이 안전 상한.</p>
-  </div>
-</div>
-
-<h2>LSD 후 회복 — 다음 LSD까지 무엇을 할까</h2>
-
-<ul>
-  <li><strong>당일:</strong> 단백질 + 탄수화물 30분 내 섭취. 가벼운 정적 스트레칭 10~15분</li>
-  <li><strong>다음날:</strong> 휴식 또는 매우 가벼운 회복 조깅 20~30분 (Zone 1)</li>
-  <li><strong>2~3일차:</strong> 30~40분 베이스런 (Zone 2)</li>
-  <li><strong>4~5일차:</strong> 인터벌·언덕 등 빠른 훈련 (있다면)</li>
-  <li><strong>6일차:</strong> 가벼운 조깅 또는 휴식</li>
-  <li><strong>7일차:</strong> 다음 LSD</li>
-</ul>
-
-<h2>LSD 다음 단계 — 언제 페이스런·인터벌 추가하나</h2>
-
-<p>다음 조건 모두 충족 시:</p>
-
-<ol>
-  <li>주 1회 LSD 90분 또는 12km 이상 무리 없이 가능</li>
-  <li>주간 총 거리 30km+ 4주 연속 무부상</li>
-  <li>10K 완주 경험 있고 다음 목표가 하프 또는 마라톤</li>
-</ol>
-
-<p>그때 LSD 유지 + 주 1회 페이스런 / 격주 인터벌 추가. 마라톤 페이스 가이드는 <a href="/blog/marathon-pacing-mental-strategy-guide">마라톤 전략 — 5km부터 풀코스까지</a>에서 확인하세요.</p>
-
-<p>대회 준비 중이라면 <a href="/blog/first-running-shoe-guide-2026">2026 초보 러너 첫 러닝화 추천 TOP 8</a> + <a href="/recommend">1분 러닝화 추천</a>으로 LSD에 맞는 신발 후보를 잡는 게 우선입니다.</p>
-
-<p><small>출처: @runninglife_korea RIFE WIKI 2026-05-13 게시물 / Daniels Running Formula(Jack Daniels) / Hansons Marathon Method / 작성일 2026년 5월 14일 기준. 개인 심박존은 안정시 심박·체력 수준에 따라 다르며, 정확한 측정은 운동부하검사(GXT) 또는 락테이트 테스트 필요.</small></p>
+<p><strong>2026-11-10 근거 재확인.</strong> 연구의 대상·측정 결과와 개인 훈련에 적용할 질문을 구분했습니다.</p><h2>LSD를 시작할 때 먼저 정할 것은 가장 긴 거리보다 목적입니다</h2><p>이 글에서 LSD는 비교적 낮은 강도로 길게 이어가는 달리기를 뜻합니다. 여기서 ‘길다’는 내 평소 주행에 비추어 정할 항목입니다. 처음 시작한 러너와 이미 장거리에 익숙한 러너에게 같은 90분·20km를 권하지 않습니다.</p><p>계획의 출발점은 최근 편하게 마친 주행 시간, 주간 주행량, 끝난 뒤와 다음날의 반응입니다. 주말 한 번의 긴 달리기를 늘리면서 다른 훈련까지 동시에 늘리면 무엇이 부담을 만들었는지 구분하기 어려워집니다.</p><div class="table-wrap"><table><thead><tr><th scope="col">계획 전에 적을 것</th><th scope="col">계획에 반영할 질문</th></tr></thead><tbody><tr><td>최근 익숙한 주행</td><td>중간에 무리하지 않고 끝난 길이는 어느 정도였나?</td></tr><tr><td>주간 일정</td><td>긴 주행 앞뒤에 빠른 훈련·수면 부족이 겹치는가?</td></tr><tr><td>노력감·대화·조건</td><td>속도가 같아도 더위·언덕에서 강도가 달라지는가?</td></tr><tr><td>주행 뒤·다음날 반응</td><td>예상보다 피로가 남으면 다음 계획을 줄일 여지가 있는가?</td></tr></tbody></table></div><h2>편하게 말할 수 있다는 것과 정확한 Zone 2는 다릅니다</h2><p>CDC의 대화법은 체력에 따른 상대적 운동 강도를 가늠하는 방법입니다. 대화가 가능한지 관찰하는 데 쓸 수 있지만, 그것만으로 개인의 젖산역치나 시계의 특정 심박 구간을 직접 측정한 것은 아닙니다.</p><p>훈련 강도를 3개 구간으로 나누는 체계와 더 세분한 체계는 숫자가 같아도 뜻이 다를 수 있습니다. 시계의 Zone 2라는 이름을 모든 논문의 같은 강도로 읽지 말고, 사용한 체계와 기준을 확인하세요.</p><h2>엘리트의 긴 저강도 훈련에서 가져올 것과 가져오지 않을 것</h2><p>2024년 노르웨이 지구력 훈련 연구는 성공적인 남성 코치 12명의 자료와 면담을 분석한 질적 연구입니다. 여러 종목에서 많은 저강도 훈련을 사용한 방식과 코치들의 판단을 설명합니다.</p><p>이는 한국의 초보 러너에게 정해진 장거리 시간이나 증가율을 적용해 효과·안전을 입증한 시험이 아닙니다. 관찰한 엘리트 주간 거리와 훈련 시간을 그대로 복제하거나 매주 10% 증가가 누구에게나 안전하다는 규칙으로 바꾸지 않았습니다.</p><h2>거리보다 되돌릴 수 있는 계획부터</h2><p>익숙한 구간으로 돌아오거나 일찍 마칠 수 있는 동선을 고르면 당일 반응에 맞춰 길이를 조절하기 쉽습니다. 긴 주행의 목표를 세웠어도 호흡·불편·피로가 예상과 다르면 계획을 다시 판단할 여지를 남겨 두세요.</p><p>이번 주에 길이를 늘렸다면 그 주의 빠른 훈련까지 자동으로 늘려야 할 이유는 없습니다. 같은 페이스를 지키는 일보다 해당 주행이 주간 전체에서 차지하는 부담을 확인하는 것이 이 글의 목적입니다.</p><h2>마친 뒤에 계획을 평가하는 방법</h2><p>거리와 평균 페이스 외에 실제 소요시간, 대화·노력감 변화, 노면·경사, 다음날 피로를 남겨 보세요. 한 번 완주했다는 사실만으로 다음 주에도 더 늘릴 준비가 끝났다고 볼 수는 없습니다.</p><p>회복을 우선하는 날에는 긴 달리기의 성취보다 부담을 낮추는 선택이 목적에 맞을 수 있습니다. <a href="/blog/recovery-run-vs-lsd-guide-2026">회복런과 LSD의 차이</a>를 함께 보고, 개인 일정은 최근 훈련과 반응에 맞춰 정하세요.</p><h2>확인한 원문</h2><ul><li><a href="https://www.cdc.gov/physical-activity-basics/measuring/index.html" target="_blank" rel="noopener noreferrer">CDC 상대적 운동강도·대화법</a> — 대화법의 범위와 개인 체력 차이.</li><li><a href="https://link.springer.com/article/10.1007/s40279-024-02067-4" target="_blank" rel="noopener noreferrer">2024 노르웨이 지구력 훈련 연구</a> — 남성 코치 12명·여러 종목의 질적 자료. 초보자 장거리 처방 시험 아님.</li><li><a href="https://www.mdpi.com/1660-4601/20/5/3782" target="_blank" rel="noopener noreferrer">2023 노르웨이식 역치 훈련 고찰</a> — 서로 다른 강도 구간 체계와 엘리트 모델의 적용 한계.</li></ul>
 `,
+    updatedAt: "2026-11-10",
+    faqs: [
+      {
+        "question": "LSD는 무조건 90분 이상 달려야 하나요?",
+        "answer": "확인한 자료는 모든 초보자에게 같은 최소 시간을 입증하지 않습니다. 최근 익숙한 주행과 주간 부담에 비추어 계획할 항목입니다."
+      },
+      {
+        "question": "대화가 되면 정확히 Zone 2인가요?",
+        "answer": "대화법은 상대적 강도를 가늠하는 도구입니다. 개인 역치나 시계의 특정 심박 구간을 직접 측정한 결과는 아닙니다."
+      }
+    ],
   },
   {
     id: '2026-garmin-forerunner-70-170-korea',
