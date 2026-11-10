@@ -1623,7 +1623,7 @@ export const posts_2026_07: BlogPost[] = [
   {
     id: "running-shoes-recommend-by-price-2026",
     slug: "running-shoes-recommend-by-price-2026",
-    seoTitle: "러닝화 추천 2026 — 10·15·20만원대 가성비부터 카본까지",
+
     title: "러닝화 가격대별 비교 — 한국 상품 가격·폭·핏·반품 조건 확인",
     description: "한국 정확 상품의 확인 가격 예시를 조건과 함께 비교합니다. 정가·할인·표시가격을 구분하고 추정 수명 비용·고정 페이스·부상 예방 순위는 쓰지 않았습니다.",
     thumbnail: "/images/blog/verified-budget-selection-guide-20261110.webp",

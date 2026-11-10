@@ -940,7 +940,7 @@ export const posts_2026_05: BlogPost[] = [
   {
     id: "asics-superblast-2-vs-3-comparison",
     slug: "asics-superblast-2-vs-3-comparison",
-    seoTitle: "아식스 슈퍼블라스트 2 vs 3 비교 — 쿠션·발볼·가격 차이",
+
     title: "슈퍼블라스트2 vs3 —두 폼·스택·앞코·전환, 상위 등급 없이 비교",
     description: "2의FF TURBO+·FF BLAST PLUS ECO와3의FF LEAP·FF BLAST PLUS를 구분합니다. 한국 와이드·현재 가격·체감 차이를 단정하지 않습니다.",
     thumbnail: "/images/shoes/asics/superblast2/1.webp",
@@ -1699,7 +1699,7 @@ export const posts_2026_05: BlogPost[] = [
   {
     id: "2026-nike-alphafly-4-prototype",
     slug: "2026-nike-alphafly-4-prototype",
-    seoTitle: "나이키 알파플라이 4 출시일·가격 — 한국 정가 349,000원 공개, 10월 29일 확대 발매",
+
     title: "알파플라이 4 한국 출시·가격 — 10/29 런치 확인, 품번별 현재 상태",
     description: "한국 두 품번의 10/29 오전 10시 디지털 런치를 확인했습니다. 정가 349,000원, 기존 색상 품절·신규 색상 출시 예정과 미확인 판매 조건을 구분합니다.",
     thumbnail: "/images/shoes/nike/alphafly4/side.webp",

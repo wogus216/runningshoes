@@ -1402,7 +1402,7 @@ export const posts_2026_06: BlogPost[] = [
   {
     id: "asics-running-shoes-lineup-tier-guide-2026",
     slug: "asics-running-shoes-lineup-tier-guide-2026",
-    seoTitle: "아식스 러닝화 계급도 2026 — 입문·쿠션·안정화·카본 라인업",
+
     title: "아식스 러닝화 라인업 — 세대·폼·판·핏으로 비교하기",
     description: "아식스 정확 모델 11종의 구조와 원문을 비교합니다. 부상 예방 순위·고정 페이스·수명 비용을 빼고 한국 구매 규격·핏·세대의 확인 범위를 정리했습니다.",
     thumbnail: "/images/blog/verified-asics-lineup-guide-20261110.webp",
