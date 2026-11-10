@@ -6,6 +6,8 @@ export const shoe: Shoe = {
     slug: "nike-zoom-fly-6",
     brand: "Nike",
     name: "줌 플라이 6",
+  imageCaption: "zoom fly 6 사진(FN8454-001 · Black/Light Smoke Grey/White)은 Nike 공식 상품 갤러리와 모델·색상·구도를 대조했습니다. 사진 품번을 한국 판매 규격·가격으로 읽지 마세요.",
+  imageSource: {"title":"Nike 공식 상품 갤러리","url":"https://www.nike.com/t/zoom-fly-6-mens-road-racing-shoes-wn2ALjkm/FN8454-001"},
     image: "/images/shoes/nike/zoomfly6/1.webp",
     images: [
       "/images/shoes/nike/zoomfly6/1.webp",

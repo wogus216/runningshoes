@@ -7,6 +7,8 @@ export const shoe: Shoe = {
   brand: 'Nike',
   name: '페가수스 플러스 2',
   category: '데일리',
+  imageCaption: "pegasus plus 2 사진(IM2541-600 · 플래시 크림슨/블랙/라이트 스모크 그레이/메탈릭 실버)은 Nike 공식 상품 갤러리와 모델·색상·구도를 대조했습니다. 사진 품번을 한국 판매 규격·가격으로 읽지 마세요.",
+  imageSource: {"title":"Nike 공식 상품 갤러리","url":"https://www.nike.com/kr/t/나이키-페가수스-플러스-2-남성-로드-러닝화-k7TxLWJb/IM2541-600"},
   image: '/images/shoes/nike/pegasus-plus-2/side.webp',
   description: '훈련용 ZoomX · 전족 전폭 Air Zoom1개 구조의 페가수스 플러스 2. RunRepeat 실험실 검체 247g·37.7/27.3mm. 한국 현재 정가 미확인.',
   oneliner: '훈련용 ZoomX · 전족 전폭 Air Zoom1개 · 247g (RunRepeat 실험실 검체)',

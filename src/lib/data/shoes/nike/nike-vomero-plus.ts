@@ -6,6 +6,8 @@ export const shoe: Shoe = {
     slug: "nike-vomero-plus",
     brand: "Nike",
     name: "보메로 플러스",
+  imageCaption: "vomero plus 사진(HV8150-002 · 블랙/쿨 그레이/메탈릭 다크 그레이/화이트)은 Nike 공식 상품 갤러리와 모델·색상·구도를 대조했습니다. 사진 품번을 한국 판매 규격·가격으로 읽지 마세요.",
+  imageSource: {"title":"Nike 공식 상품 갤러리","url":"https://www.nike.com/kr/t/나이키-보메로-플러스-남성-로드-러닝화-SUmL0LYm/HV8150-002"},
     image: "/images/shoes/nike/vomero-plus/side.webp",
     images: [
       "/images/shoes/nike/vomero-plus/side.webp",

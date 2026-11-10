@@ -6,6 +6,8 @@ export const shoe: Shoe = {
     slug: "nike-structure-26",
     brand: "Nike",
     name: "스트럭처 26",
+  imageCaption: "structure 26 사진(HJ1102-119 · White/Blue Hero/Pure Platinum/Black)은 Nike 공개 상품 데이터와 모델·색상·구도를 대조했습니다. 사진 품번을 한국 판매 규격·가격으로 읽지 마세요.",
+  imageSource: {"title":"Nike 공식 공개 상품 데이터","url":"https://api.nike.com/product_feed/threads/v3/?filter=marketplace%28US%29&filter=language%28en%29&filter=channelId%28d9a5bc42-4b9c-4976-858a-f159cf99c647%29&filter=productInfo.merchProduct.styleCode%28HJ1102%29&count=100"},
     image: "/images/shoes/nike/structure26/side.webp",
     images: [
       "/images/shoes/nike/structure26/side.webp",

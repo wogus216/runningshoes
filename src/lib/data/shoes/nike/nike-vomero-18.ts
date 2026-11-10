@@ -6,6 +6,8 @@ export const shoe: Shoe = {
     slug: "nike-vomero-18",
     brand: "Nike",
     name: "보메로 18",
+  imageCaption: "vomero 18 사진(HM6803-101 · 서밋 화이트/코코넛 밀크/코코넛 밀크/블랙)은 Nike 공식 상품 갤러리와 모델·색상·구도를 대조했습니다. 사진 품번을 한국 판매 규격·가격으로 읽지 마세요.",
+  imageSource: {"title":"Nike 공식 상품 갤러리","url":"https://www.nike.com/kr/t/나이키-보메로-18-남성-로드-러닝화-sUlilE2b/HM6803-101"},
     image: "/images/shoes/nike/vomero18/side.webp",
     images: [
       "/images/shoes/nike/vomero18/side.webp",

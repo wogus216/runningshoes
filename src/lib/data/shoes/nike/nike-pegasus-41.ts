@@ -6,6 +6,8 @@ export const shoe: Shoe = {
     slug: "nike-pegasus-41",
     brand: "Nike",
     name: "페가수스 41",
+  imageCaption: "pegasus 41 사진(FD2722-016 · 블랙/토파즈 골드/브라이트 크림슨)은 Nike 공식 상품 갤러리와 모델·색상·구도를 대조했습니다. 사진 품번을 한국 판매 규격·가격으로 읽지 마세요.",
+  imageSource: {"title":"Nike 공식 상품 갤러리","url":"https://www.nike.com/kr/t/나이키-페가수스-41-남성-로드-러닝화-KJOKMFFd/FD2722-016"},
     image: "/images/shoes/nike/pegasus41/side.webp",
     images: [
       "/images/shoes/nike/pegasus41/side.webp",

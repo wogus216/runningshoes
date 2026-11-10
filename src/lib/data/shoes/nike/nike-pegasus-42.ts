@@ -6,6 +6,8 @@ export const shoe: Shoe = {
     slug: "nike-pegasus-42",
     brand: "Nike",
     name: "페가수스 42",
+  imageCaption: "페가수스 42 사진은 Believe in the Run 착화 리뷰에 실린 자료입니다. 촬영된 실물의 정확한 품번은 확인되지 않았습니다. 한국 공식 판매 색상·규격과 구분하세요.",
+  imageSource: {"title":"Believe in the Run 착화 리뷰","url":"https://believeintherun.com/shoe-reviews/nike-pegasus-42-review/"},
     image: "/images/shoes/nike/pegasus42/side.webp",
     images: [
       "/images/shoes/nike/pegasus42/side.webp",

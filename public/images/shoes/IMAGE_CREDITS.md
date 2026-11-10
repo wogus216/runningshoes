@@ -454,3 +454,28 @@ Horizon8의 기존 BOA 다이얼 신발 사진 5장은 공식 WAVE HORIZON 8과 
 | mizuno-wave-sky-9 | J1GC250201 · Baritone Blue/Citrus/Capri Bre | [원문](https://emea.mizuno.com/eu/en/wave-sky-9/J1GC250201.html) |
 
 파일명 front/back/top/outsole과 실제 촬영 구도가 다른 기존 파일이 있습니다. 화면은 공통 이미지 번호로 표시하며 위 식별은 실제 사진과 원본을 대조한 범위입니다. 해외 사진의 품번을 한국 판매·폭·가격·임상 효과로 대입하지 않습니다. 촬영자·이용 허가의 일괄 확인이 아닙니다.
+
+## 2026-11-11 Nike 16종 사진 출처 대조
+
+기존 58개 사진은 모델·색상·구도를 원문 사진과 대조해 유지했습니다. 아래 사진 품번은 사진 식별에만 사용합니다. 공개 상품 데이터의 해외 기록은 한국 현재 판매 옵션의 근거가 아닙니다. 페가수스 42 사진은 리뷰 매체 사진이며 실물 품번을 확인하지 못했습니다.
+
+| 모델 | 사진 식별 | 출처 |
+|---|---|---|
+| nike-acg-zegama-trail | HV8113-200 · Cream II/Safety Orange/Light Orewood Brown | [공식 공개 상품 데이터](https://api.nike.com/product_feed/threads/v3/?filter=marketplace%28US%29&filter=language%28en%29&filter=channelId%28d9a5bc42-4b9c-4976-858a-f159cf99c647%29&filter=productInfo.merchProduct.styleCode%28HV8113%29&count=100) |
+| nike-alphafly-3 | FD8311-101 · White/Pure Platinum/Obsidian Mist/Gridiron | [공식 공개 상품 데이터](https://api.nike.com/product_feed/threads/v3/?filter=marketplace%28US%29&filter=language%28en%29&filter=channelId%28d9a5bc42-4b9c-4976-858a-f159cf99c647%29&filter=productInfo.merchProduct.styleColor%28FD8311-101%29&count=100) |
+| nike-pegasus-41 | FD2722-016 · 블랙/토파즈 골드/브라이트 크림슨 | [공식 상품 갤러리](https://www.nike.com/kr/t/나이키-페가수스-41-남성-로드-러닝화-KJOKMFFd/FD2722-016) |
+| nike-pegasus-42 | 실물 품번 미확인 | [착화 리뷰](https://believeintherun.com/shoe-reviews/nike-pegasus-42-review/) |
+| nike-pegasus-plus-2 | IM2541-600 · 플래시 크림슨/블랙/라이트 스모크 그레이/메탈릭 실버 | [공식 상품 갤러리](https://www.nike.com/kr/t/나이키-페가수스-플러스-2-남성-로드-러닝화-k7TxLWJb/IM2541-600) |
+| nike-pegasus-plus | FQ7262-103 · White/Bright Crimson/Topaz Gold/Black | [공식 공개 상품 데이터](https://api.nike.com/product_feed/threads/v3/?filter=marketplace%28US%29&filter=language%28en%29&filter=channelId%28d9a5bc42-4b9c-4976-858a-f159cf99c647%29&filter=productInfo.merchProduct.styleColor%28FQ7262-103%29&count=100) |
+| nike-pegasus-premium | HQ2592-005 · 블랙/메탈릭 실버/블랙 | [공식 상품 갤러리](https://www.nike.com/kr/t/나이키-페가수스-프리미엄-남성-로드-러닝화-rqFZ3AUC/HQ2592-005) |
+| nike-rival-fly-4 | FV6040-401 · Obsidian/Persian Violet/Green Abyss/White | [공식 공개 상품 데이터](https://api.nike.com/product_feed/threads/v3/?filter=marketplace%28US%29&filter=language%28en%29&filter=channelId%28d9a5bc42-4b9c-4976-858a-f159cf99c647%29&filter=productInfo.merchProduct.styleCode%28FV6040%29&count=100) |
+| nike-streakfly-2 | HF6416-401 · Obsidian/Persian Violet/Green Abyss/White | [공식 공개 상품 데이터](https://api.nike.com/product_feed/threads/v3/?filter=marketplace%28US%29&filter=language%28en%29&filter=channelId%28d9a5bc42-4b9c-4976-858a-f159cf99c647%29&filter=productInfo.merchProduct.styleCode%28HF6416%29&count=100) |
+| nike-structure-26 | HJ1102-119 · White/Blue Hero/Pure Platinum/Black | [공식 공개 상품 데이터](https://api.nike.com/product_feed/threads/v3/?filter=marketplace%28US%29&filter=language%28en%29&filter=channelId%28d9a5bc42-4b9c-4976-858a-f159cf99c647%29&filter=productInfo.merchProduct.styleCode%28HJ1102%29&count=100) |
+| nike-ultrafly | IR7317-001 · Black/Vegas Gold/Dark Smoke Grey | [공식 상품 갤러리](https://www.nike.com/jp/en/t/acg-ultrafly-trail-trail-racing-shoes-Rnkddhm5/IR7317-001) |
+| nike-vaporfly-4 | HF6414-100 · White/Obsidian Mist/Pure Platinum/Gridiron | [공식 공개 상품 데이터](https://api.nike.com/product_feed/threads/v3/?filter=marketplace%28US%29&filter=language%28en%29&filter=channelId%28d9a5bc42-4b9c-4976-858a-f159cf99c647%29&filter=productInfo.merchProduct.styleColor%28HF6414-100%29&count=100) |
+| nike-vomero-18 | HM6803-101 · 서밋 화이트/코코넛 밀크/코코넛 밀크/블랙 | [공식 상품 갤러리](https://www.nike.com/kr/t/나이키-보메로-18-남성-로드-러닝화-sUlilE2b/HM6803-101) |
+| nike-vomero-plus | HV8150-002 · 블랙/쿨 그레이/메탈릭 다크 그레이/화이트 | [공식 상품 갤러리](https://www.nike.com/kr/t/나이키-보메로-플러스-남성-로드-러닝화-SUmL0LYm/HV8150-002) |
+| nike-vomero-premium | HQ2050-001 · Black/Anthracite/Volt/Iron Grey | [공식 공개 상품 데이터](https://api.nike.com/product_feed/threads/v3/?filter=marketplace%28US%29&filter=language%28en%29&filter=channelId%28d9a5bc42-4b9c-4976-858a-f159cf99c647%29&filter=productInfo.merchProduct.styleColor%28HQ2050-001%29&count=100) |
+| nike-zoom-fly-6 | FN8454-001 · Black/Light Smoke Grey/White | [공식 상품 갤러리](https://www.nike.com/t/zoom-fly-6-mens-road-racing-shoes-wn2ALjkm/FN8454-001) |
+
+사진 원촬영자·이용 허가, 신발 전체 스펙·현재 가격·재고는 이 사진 대조의 확인 범위가 아닙니다.

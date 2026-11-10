@@ -6,6 +6,8 @@ export const shoe: Shoe = {
     slug: "nike-pegasus-premium",
     brand: "Nike",
     name: "페가수스 프리미엄",
+  imageCaption: "pegasus premium 사진(HQ2592-005 · 블랙/메탈릭 실버/블랙)은 Nike 공식 상품 갤러리와 모델·색상·구도를 대조했습니다. 사진 품번을 한국 판매 규격·가격으로 읽지 마세요.",
+  imageSource: {"title":"Nike 공식 상품 갤러리","url":"https://www.nike.com/kr/t/나이키-페가수스-프리미엄-남성-로드-러닝화-rqFZ3AUC/HQ2592-005"},
     image: "/images/shoes/nike/pegasus-premium/side.webp",
     images: [
       "/images/shoes/nike/pegasus-premium/side.webp",

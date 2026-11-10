@@ -6,6 +6,8 @@ export const shoe: Shoe = {
     slug: "nike-ultrafly",
     brand: "Nike",
     name: "울트라플라이",
+  imageCaption: "ultrafly 사진(IR7317-001 · Black/Vegas Gold/Dark Smoke Grey)은 Nike 공식 상품 갤러리와 모델·색상·구도를 대조했습니다. 사진 품번을 한국 판매 규격·가격으로 읽지 마세요.",
+  imageSource: {"title":"Nike 공식 상품 갤러리","url":"https://www.nike.com/jp/en/t/acg-ultrafly-trail-trail-racing-shoes-Rnkddhm5/IR7317-001"},
     image: "/images/shoes/nike/ultrafly/side.webp",
     category: "트레일",
     description: "2023초대 전장 ZoomX · 중족 분기 카본 · Vibram Litebase 구조의 울트라플라이. RunRepeat 실험실 검체 299g·36.6/24.8mm. 한국 현재 정가 미확인.",
