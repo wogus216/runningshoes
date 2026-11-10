@@ -1566,139 +1566,39 @@ export const posts_2026_08: BlogPost[] = [
 `,
   },
   {
-    id: 'trail-running-shoes-lineup-tier-guide-2026',
-    slug: 'trail-running-shoes-lineup-tier-guide-2026',
-    title: '트레일 러닝화 계급도 2026 — 근교 산책로부터 카본 레이싱까지 한 장 정리 | 브랜드 7곳 15종 가격·무게 비교',
-    description:
-      '트레일 러닝화 15종을 근교·입문 / 올라운드 / 쿠션·울트라 / 카본 레이싱 4단으로 정리했습니다. 아식스 젤 벤처 10(8.9만원)부터 살로몬 S/LAB 펄사 4(34만원)까지 가격·무게 비교표와 함께, 트레일화가 로드화·등산화와 뭐가 다른지, 처음 사는 사람은 어느 단부터 시작하면 되는지 정리했습니다.',
-    thumbnail: '/images/blog/trail-running-shoes-lineup-tier-guide-2026.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-08-19',
-    category: 'guide' as const,
-    readingTime: 11,
-    tags: ['트레일러닝화 계급도', '트레일화', '트레일러닝화 추천', '트레일러닝 입문', '트레일화 등산화 차이', '스피드고트', '살로몬 펄사', '히에로', '페레그린'],
+    id: "trail-running-shoes-lineup-tier-guide-2026",
+    slug: "trail-running-shoes-lineup-tier-guide-2026",
+    title: "트레일 러닝화15종 선택 가이드 —노면·판 구조·앞코·고정을 비교하기",
+    description: "최상급 계급·가격 사다리를 정정하고15종의 확인 구조와 실측을 비교합니다. 일반 펄사는 미확인, S/LAB4는 비카본, 스피드 울트라는 정확2세대로 구분했습니다.",
+    thumbnail: "/images/shoes/saucony/peregrine16/side.jpg",
+    author: "산초 에디터",
+    publishedAt: "2026-08-19",
+    category: "guide",
+    readingTime: 12,
+    tags: [
+      "트레일화",
+      "노면",
+      "핏",
+      "원문 대조"
+    ],
     faqs: [
       {
-        question: '트레일화와 등산화는 뭐가 다른가요?',
-        answer:
-          '가장 큰 차이는 무게와 굽힘입니다. 등산화는 발목을 잡아주고 밑창이 단단해 무거운 배낭을 메고 천천히 걷는 데 맞춰져 있습니다. 트레일 러닝화는 250~330g대로 훨씬 가볍고 앞발이 굽어 달릴 수 있게 설계됐습니다. 대신 발목 지지가 없어 무거운 짐을 메고 장시간 걷기에는 불리합니다. 북한산·관악산 같은 근교 산을 달릴 목적이면 트레일화, 종주 산행이면 등산화 쪽입니다.',
+        "question": "접지계수가 가장 높으면 제일 안전한가요?",
+        "answer": "시험 표면·위치와 실제 바위·뿌리·진흙이 다릅니다. 코스 전체 안전 순위로 바꾸지 않습니다."
       },
       {
-        question: '흙길만 달리는데 트레일화가 꼭 필요한가요?',
-        answer:
-          '평탄한 흙길이나 잘 정비된 둘레길이라면 로드화로도 충분합니다. 트레일화가 값을 하는 구간은 젖은 바위·낙엽·자갈처럼 미끄럽거나 발바닥을 찌르는 노면입니다. 러그(밑창 돌기)가 깊어 접지력이 좋고, 모델에 따라 락플레이트가 들어가 돌 충격을 막아줍니다. 근교 흙길 위주라면 굳이 서두를 필요가 없고, 산에 자주 갈 계획이 생겼을 때 사는 편이 낫습니다.',
+        "question": "와이드 표시가 있으면 넓은 발에 맞나요?",
+        "answer": "판매 폭 규격과 개인 길이·높이·고정은 다릅니다. 현재 한국SKU·실제규격을 확인할 수 있습니다."
       },
       {
-        question: '처음이면 어느 단부터 사야 하나요?',
-        answer:
-          '근교·입문 단으로 충분합니다. 카본 레이싱 단(29만~34만원)은 울트라 대회나 기술적인 산악 코스를 상정한 신발이라, 주말에 북한산을 달리는 단계에서는 성능을 쓸 일이 없고 내구성도 레이싱에 맞춰져 있습니다. 올라운드 단은 산에 정기적으로 다니기 시작한 뒤에 넘어가도 늦지 않습니다.',
-      },
+        "question": "수명km로 가성비를 비교해도 되나요?",
+        "answer": "국소 마모 시험·짧은 착화 경험에서 검증된 공통 수명을 만들 수 없어km당 비용 비교를 제거했습니다."
+      }
     ],
     content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>트레일화는 근교·입문 → 올라운드 → 쿠션·울트라 → 카본 레이싱 4단</strong>으로 갈립니다. 가격대는 8.9만~34만원.</li>
-    <li><strong>비싸다고 좋은 게 아닙니다</strong> — 카본 레이싱 단은 울트라 대회·기술 지형용이라, 근교 산책로 위주라면 성능을 다 쓰지 못합니다.</li>
-    <li><strong>처음이면 무조건 저단부터</strong> — 젤 벤처 10이나 살로몬 펄사로 시작해도 북한산·관악산급 코스는 충분히 커버됩니다.</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">⛰️</span>
-  <div class="callout-body">
-    <p class="callout-title">이 글의 역할 — 트레일화 계급도 한 장</p>
-    <p>브랜드 계급도를 아디다스부터 라이닝까지 10편 만드는 동안 정작 <strong>트레일</strong>은 비워뒀습니다. 이 글은 브랜드를 넘나들며 <strong>가격·무게로 트레일화 전체를 한눈에</strong> 줄 세운 지도예요. 처음 트레일에 입문하는 분은 <a href="/blog/trail-running-appeal-beginner-guide-2026">트레일 러닝 입문 가이드</a>를 함께 보면 좋습니다.</p>
-  </div>
-</div>
-
-<h2>1. 트레일화가 로드화와 뭐가 다른가</h2>
-
-<p>"트레일화"는 흙·자갈·바위 같은 비포장 노면(trail)을 달리기 위한 러닝화입니다. 겉보기엔 로드화와 비슷해도 세 군데가 다르게 설계됩니다.</p>
-
-<ul>
-  <li><strong>아웃솔 러그</strong> — 밑창에 돌기(러그)가 깊게 박혀 있어 흙·낙엽·젖은 바위에서 미끄러지지 않게 잡아줍니다. 로드화의 평평한 밑창으로는 힘을 못 씁니다.</li>
-  <li><strong>락플레이트</strong> — 미드솔 안에 얇은 보호판을 넣어 뾰족한 돌을 밟아도 발바닥까지 충격이 직접 전해지지 않게 막습니다. 모든 모델에 들어가는 건 아니고, 험한 지형을 겨냥한 모델일수록 흔합니다.</li>
-  <li><strong>토캡</strong> — 앞코를 단단하게 감싸 돌부리에 발가락을 부딪혀도 다치지 않게 보호합니다.</li>
-</ul>
-
-<p>여기에 어퍼도 방수·내마모 소재를 많이 쓰고 접지력을 최우선에 두다 보니, 같은 체급이어도 로드화보다 대체로 무겁고 굳건한 느낌입니다.</p>
-
-<h2>2. 등산화와는 뭐가 다른가</h2>
-
-<p>"트레일화 등산화 차이"는 실제로 많이 검색되는 질문입니다. 둘 다 산에서 신는다는 공통점 때문에 헷갈리기 쉽지만, 목적 자체가 다릅니다.</p>
-
-<table>
-  <thead>
-    <tr><th>항목</th><th>트레일 러닝화</th><th>등산화</th></tr>
-  </thead>
-  <tbody>
-    <tr><td><strong>무게</strong></td><td>250~330g대</td><td>대부분 400g 이상 (미드컷·하이컷은 더 무거움)</td></tr>
-    <tr><td><strong>발목 지지</strong></td><td>로우컷, 지지 없음 — 빠르게 움직이는 걸음에 맞춤</td><td>미드컷·하이컷으로 발목을 감싸 무거운 배낭에도 버팀</td></tr>
-    <tr><td><strong>밑창 굽힘</strong></td><td>앞발이 부드럽게 굽어 달리는 동작에 맞음</td><td>단단해 굽힘이 적은 대신, 울퉁불퉁한 바위 위에서도 편평하게 딛는 안정감</td></tr>
-    <tr><td><strong>목적</strong></td><td>근교 산·트레일을 빠르게 달리는 코스</td><td>무거운 짐을 메고 오래 걷는 종주 산행</td></tr>
-  </tbody>
-</table>
-
-<p>정리하면, <strong>달리는 게 목적이면 트레일화, 무거운 배낭을 메고 오래 걷는 게 목적이면 등산화</strong>입니다. 북한산·관악산 같은 근교 산을 가볍게 달릴 계획이라면 트레일화 쪽이 맞고, 지리산 종주처럼 여러 날 짐을 메고 걷는다면 등산화가 낫습니다.</p>
-
-<h2>3. 트레일 러닝화 계급도 — 15종 한눈에</h2>
-
-<p>브랜드 7곳(아식스·호카·살로몬·아디다스·뉴발란스·나이키·써코니)의 트레일화 15종을 가격·무게 기준 4단으로 줄 세우면 이렇습니다.</p>
-
-<table>
-  <thead>
-    <tr><th>단</th><th>모델</th><th>가격</th><th>무게</th><th>이럴 때</th></tr>
-  </thead>
-  <tbody>
-    <tr><td rowspan="3">근교·입문</td><td><a href="/shoes/asics-gel-venture-10"><strong>아식스 젤 벤처 10</strong></a></td><td>8.9만</td><td>322g</td><td>흙길·산책로 위주 첫 트레일화, 와이드·워터프루프 옵션</td></tr>
-    <tr><td><a href="/shoes/saucony-peregrine-16"><strong>써코니 페레그린 16</strong></a></td><td>17.9만</td><td>278g</td><td>록플레이트·Vibram Megagrip을 갖춘 써코니 트레일 표준, 와이드 옵션</td></tr>
-    <tr><td><a href="/shoes/salomon-pulsar"><strong>살로몬 펄사</strong></a></td><td>21만</td><td>290g</td><td>일상 훈련부터 업템포까지 커버하는 데일리 트레이너</td></tr>
-    <tr><td rowspan="4">올라운드</td><td><a href="/shoes/hoka-speedgoat-6"><strong>호카 스피드고트 6</strong></a></td><td>20.5만</td><td>278g</td><td>젖은 바위부터 급경사까지, 와이드·GTX 방수까지 있는 만능형</td></tr>
-    <tr><td><a href="/shoes/hoka-speedgoat-7"><strong>호카 스피드고트 7</strong></a></td><td>21.9만</td><td>281g</td><td>스피드고트 6의 반발력 강화판, 게이터 부착 루프 추가</td></tr>
-    <tr><td><a href="/shoes/adidas-terrex-agravic-4"><strong>아디다스 테렉스 아그라빅 4</strong></a></td><td>16.9만</td><td>283g</td><td>진흙·테크니컬 지형 최상위권 그립, 트레이닝부터 울트라까지</td></tr>
-    <tr><td><a href="/shoes/asics-metafuji-trail"><strong>아식스 메타후지 트레일</strong></a></td><td>27.9만</td><td>258g</td><td>카본 플레이트로 평탄·로드-트레일 혼합 구간 빠른 반발력</td></tr>
-    <tr><td rowspan="4">쿠션·울트라</td><td><a href="/shoes/new-balance-hierro-v9"><strong>뉴발란스 히에로 v9</strong></a></td><td>18.9만</td><td>309g</td><td>자갈길·로드투트레일 완만한 지형의 장거리, 쿠션+안정</td></tr>
-    <tr><td><a href="/shoes/salomon-ultra-glide-4"><strong>살로몬 울트라 글라이드 4</strong></a></td><td>23만</td><td>295g</td><td>50~100km 울트라 장거리 맥스 쿠션, 와이드 옵션</td></tr>
-    <tr><td><a href="/shoes/nike-acg-zegama-trail"><strong>나이키 ACG 제가마 트레일</strong></a></td><td>21.9만</td><td>306g</td><td>맥시멀 쿠션 울트라 트레일, 넓은 중족부</td></tr>
-    <tr><td><a href="/shoes/saucony-xodus-ultra-4"><strong>써코니 엑소더스 울트라 4</strong></a></td><td>21.9만</td><td>309g</td><td>PWRRUN PB 슈퍼폼 맥스 쿠션, 울트라 거리용 상위 모델</td></tr>
-    <tr><td rowspan="4">카본 레이싱</td><td><a href="/shoes/hoka-tecton-x-3"><strong>호카 테크톤 X 3</strong></a></td><td>33.9만</td><td>275g</td><td>듀얼 카본 플레이트 + PEBA, 울트라 트레일 레이스용</td></tr>
-    <tr><td><a href="/shoes/nike-ultrafly"><strong>나이키 울트라플라이</strong></a></td><td>29.9만</td><td>299g</td><td>완만한 비포장·파이어로드에서 빠른 라이드, 넓은 토박스</td></tr>
-    <tr><td><a href="/shoes/salomon-s-lab-pulsar-4"><strong>살로몬 S/LAB 펄사 4</strong></a></td><td>34만</td><td>247g</td><td>20~80km 기술 트레일·VK·스카이러닝 엘리트 레이서</td></tr>
-    <tr><td><a href="/shoes/adidas-terrex-agravic-speed-ultra"><strong>아디다스 아그라빅 스피드 울트라 2</strong></a></td><td>28.9만</td><td>269g</td><td>완만~중간 트레일 레이스, 측정 드롭 0.1mm(아디다스 표기 8mm)의 전족·미드풋 착지형</td></tr>
-  </tbody>
-</table>
-
-<p>※ 가격은 한국 공식가, 무게는 데이터베이스 실측 기준입니다. 발볼·드롭 상세는 각 모델 상세 페이지에 있습니다.</p>
-
-<h2>4. 단별로 — 어떤 러너·어떤 산에 맞나</h2>
-
-<h3>근교·입문 (8.9만~21만원)</h3>
-<p>산에 처음 다니거나 근교 흙길·둘레길 위주로 달릴 계획이면 이 단으로 충분합니다. <a href="/shoes/asics-gel-venture-10">젤 벤처 10</a>은 8.9만원대 가격에 워터프루프·와이드(4E) 옵션까지 갖춰 부담 없는 첫 켤레이고, <a href="/shoes/salomon-pulsar">살로몬 펄사</a>는 Opti FOAM Evo 미드솔로 쿠션과 반응성의 균형이 좋아 일상 훈련부터 업템포까지 한 켤레로 쓸 수 있습니다. 그 사이를 메우는 <a href="/shoes/saucony-peregrine-16">써코니 페레그린 16</a>은 17.9만원에 록플레이트와 Vibram Megagrip을 함께 갖춰, 젤 벤처 10보다 험한 노면까지 감당하면서도 20만원 선을 넘지 않는 자리입니다. 278g(RunRepeat 실측)으로 이 단에서 가장 가볍고 와이드 옵션도 국내에 들어옵니다.</p>
-
-<h3>올라운드 (16.9만~27.9만원)</h3>
-<p>산에 정기적으로 다니기 시작했다면 이 단이 기준점입니다. <a href="/shoes/hoka-speedgoat-6">스피드고트 6</a>은 Vibram Megagrip 그립으로 젖은 바위부터 급경사까지 대응하는 베스트셀러이고, <a href="/shoes/hoka-speedgoat-7">스피드고트 7</a>은 반발력을 끌어올린 후속작입니다. <a href="/shoes/adidas-terrex-agravic-4">테렉스 아그라빅 4</a>는 진흙·테크니컬 지형에서 최상위권 그립을, <a href="/shoes/asics-metafuji-trail">메타후지 트레일</a>은 카본 플레이트로 평탄한 로드-트레일 혼합 구간에서 빠른 반발력을 냅니다. 이 넷을 정면으로 비교한 글이 <a href="/blog/speedgoat-6-vs-pulsar-vs-metafuji-trail-2026">스피드고트 6 vs 펄사 vs 메타후지</a>입니다.</p>
-
-<h3>쿠션·울트라 (18.9만~23만원)</h3>
-<p>장거리·울트라 지향이면 이 단을 봅니다. <a href="/shoes/new-balance-hierro-v9">히에로 v9</a>은 자갈길·로드투트레일처럼 완만한 지형의 장거리에 특화된 쿠션+안정 성격이고, <a href="/shoes/salomon-ultra-glide-4">울트라 글라이드 4</a>는 41mm 스택의 맥스 쿠션으로 50~100km 울트라 장거리를 겨냥합니다. <a href="/shoes/nike-acg-zegama-trail">ACG 제가마 트레일</a>은 중족부가 넓은(실측 96.9mm) 맥시멀 쿠션 울트라 트레일화입니다. <a href="/shoes/saucony-xodus-ultra-4">써코니 엑소더스 울트라 4</a>는 PWRRUN PB 슈퍼폼을 전작보다 8% 늘리고 그 둘레를 단단한 PWRRUN 프레임으로 감싼 구조라, 맥스 쿠션이면서도 옆으로 흔들리는 느낌을 줄인 쪽입니다. 다만 309g으로 무겁고 국내 와이드 옵션은 없습니다. 살로몬 라인 안에서 펄사·울트라 글라이드·S/LAB 펄사가 어떻게 갈리는지는 <a href="/blog/salomon-pulsar-vs-ultra-glide-vs-s-lab-trail-2026">살로몬 3종 비교</a>에 정리돼 있습니다.</p>
-
-<h3>카본 레이싱 (28.9만~34만원)</h3>
-<p>이 단은 대회·기술 지형용입니다. <a href="/shoes/hoka-tecton-x-3">테크톤 X 3</a>은 듀얼 카본 플레이트와 PEBA 폼으로 울트라 트레일 레이스에 특화됐고, <a href="/shoes/nike-ultrafly">울트라플라이</a>는 완만한 비포장·파이어로드에서 빠른 라이드를 냅니다. <a href="/shoes/salomon-s-lab-pulsar-4">S/LAB 펄사 4</a>는 247g 최경량으로 20~80km 기술 트레일·VK·스카이러닝처럼 빠르고 험한 코스를 겨냥한 엘리트 레이서이고, <a href="/shoes/adidas-terrex-agravic-speed-ultra">아그라빅 스피드 울트라 2</a>는 아디다스 표기 8mm 드롭과 달리 RunRepeat 측정 드롭이 0.1mm(힐 30.7mm)인 전족·미드풋 착지형으로, 완만~중간 트레일 레이스에서 빠릅니다. 카본 트레일화 3종을 나란히 놓고 본 글은 <a href="/blog/tecton-x-3-vs-ultrafly-vs-s-lab-pulsar-carbon-trail-2026">테크톤 X 3 vs 울트라플라이 vs S/LAB 펄사</a>입니다.</p>
-
-<h2>5. 처음 사는 사람에게</h2>
-
-<p>근교 산책로·둘레길 위주로 트레일을 시작한다면 <strong>근교·입문 단으로 충분</strong>합니다. 카본 레이싱 단(28.9만~34만원)은 울트라 대회나 기술적인 산악 코스를 상정한 신발이라, 주말에 근교 산을 달리는 단계에서는 성능을 쓸 일이 거의 없고 가격만 부담이 됩니다. 올라운드 단은 산에 다니는 빈도가 늘어난 뒤, 카본 레이싱 단은 실제로 울트라 대회나 기술 지형에 나설 계획이 생겼을 때 넘어가도 늦지 않습니다.</p>
-
-<h2>한 걸음 더</h2>
-
-<ul>
-  <li>⛰️ 트레일 러닝화 베스트 → <a href="/best/trail">트레일 러닝화 추천</a></li>
-  <li>🏁 트레일 입문이 처음이라면 → <a href="/blog/trail-running-appeal-beginner-guide-2026">트레일 러닝 입문 가이드</a></li>
-  <li>🟦 다른 브랜드 계급도 → <a href="/blog/running-shoes-tier-chart-2026"><strong>11개 브랜드 한 장 보기</strong></a> · <a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026">뉴발란스</a> · <a href="/blog/nike-running-shoes-lineup-tier-guide-2026">나이키</a> · <a href="/blog/asics-running-shoes-lineup-tier-guide-2026">아식스</a> · <a href="/blog/hoka-running-shoes-lineup-tier-guide-2026">호카</a> · <a href="/blog/adidas-running-shoes-lineup-tier-guide-2026">아디다스</a></li>
-</ul>
-
-<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 2026-08-19 기준 한국 공식 판매가와 신발 데이터베이스 실측 자료를 토대로 작성했습니다. 라인업·가격·발볼 옵션은 시즌마다 바뀔 수 있으니 구매 전 각 모델 상세 페이지와 공식몰에서 최신 정보를 확인하세요.</p>
+<p><strong>2026-11-10 원문 대조 업데이트.</strong> 기존 가격·성능 사다리와 지형별 최안전 순위에서 확인하지 못한 단정을 정정했습니다. 제품 전체 인증이나 자체 착화 후기가 아닙니다.</p><h2>이 표에서 비교할 수 있는 것</h2><p>15종을 가격이나 목표 거리로 줄 세우던 표를 구조·실제핏 비교로 바꿨습니다. 비싼 신발이 모든 코스에서 더 안전하거나 더 긴 거리를 편하게 달리게 해 준다는 근거는 확인하지 못했습니다.</p><p>S/LAB 펄사4는 카본이 없고, 초대 울트라플라이는 중족 분기형 카본입니다. ACG 제가마는 록플레이트가 없다는 RR 설명을 확인했습니다. 이런 구조 차이를 고무 이름·가격과 구분해서 보세요.</p><figure><img src="/images/shoes/saucony/peregrine16/side.jpg" alt="페레그린16 — 플라스틱 보호판과 다른 트레일 구조를 비교" loading="lazy"/><figcaption>페레그린16 — 플라스틱 보호판과 다른 트레일 구조를 비교</figcaption></figure><div class="table-wrap"><table><thead><tr><th>모델</th><th>무게 · 공시 출처 별도 표기</th><th>스택·드롭 · 공시 출처 별도 표기</th><th>힐/전족 SA</th><th>힐/전족 리턴</th></tr></thead><tbody><tr><td>젤 벤처10</td><td>322g</td><td>35.3/23.3mm · 12mm</td><td>105/79</td><td>52.8/52.7%</td></tr><tr><td>페레그린16</td><td>278g</td><td>31.7/26.9mm · 4.8mm</td><td>124/106</td><td>58.1/64.5%</td></tr><tr><td>일반 펄사</td><td>미확인</td><td>미확인</td><td>미확인</td><td>미확인</td></tr><tr><td>스피드고트6</td><td>278g</td><td>32.1/27.2mm · 4.9mm</td><td>124/107</td><td>48/53.5%</td></tr><tr><td>스피드고트7</td><td>281g</td><td>37.7/30.3mm · 7.4mm</td><td>131/116</td><td>54.4/60.4%</td></tr><tr><td>아그라빅4</td><td>283g</td><td>32.6/23.5mm · 9.1mm</td><td>122/102</td><td>50.3/55.2%</td></tr><tr><td>메타후지 트레일</td><td>258g</td><td>44.7/34.4mm · 10.3mm</td><td>153/122</td><td>59.7/65.4%</td></tr><tr><td>히에로v9</td><td>309g</td><td>37.3/33.1mm · 4.2mm</td><td>131/124</td><td>61.9/61.4%</td></tr><tr><td>울트라 글라이드4</td><td>295g</td><td>38.6/31.1mm · 7.5mm</td><td>122/121</td><td>47.6/51.6%</td></tr><tr><td>ACG 제가마</td><td>306g</td><td>31.2/27.5mm · 3.7mm</td><td>130/106</td><td>64.5/63.5%</td></tr><tr><td>엑소더스 울트라4</td><td>312g</td><td>37.6/31.1mm · 6.5mm</td><td>127/127</td><td>64.9/72.4%</td></tr><tr><td>테크톤X3</td><td>275g</td><td>37.8/30.9mm · 6.9mm</td><td>139/120</td><td>69.9/70.2%</td></tr><tr><td>초대 울트라플라이</td><td>299g</td><td>36.6/24.8mm · 11.8mm</td><td>134/91</td><td>66.2/68.5%</td></tr><tr><td>S/LAB 펄사4</td><td>247g</td><td>32.6/25.5mm · 7.1mm</td><td>133/112</td><td>47.7/57.6%</td></tr><tr><td>아그라빅 스피드 울트라2</td><td>269g</td><td>30.7/30.6mm · 0.1mm</td><td>123/131</td><td>64.5/70.2%</td></tr></tbody></table></div><p>표의 값은 RunRepeat 검체 또는 별도 표시한 DOR 소개 공시입니다. DOR 소개는 독립 실측이 아닙니다. 일반 정책은 남성 US9지만 개별 라벨·폭·보정 여부는 미확인입니다. 공시와 동일한 검체로 단정하지 않습니다. SA는 충격흡수, 리턴은 시험에서 반환된 에너지 비율이며 부드러움·개인 기록·임상 보호를 뜻하지 않습니다. HA는 구방식, AC는 별도 경도 척도여서 환산하지 않습니다. <a href="https://runrepeat.com/testing-methodology" target="_blank" rel="noopener noreferrer">RunRepeat 측정법</a></p><h2>먼저 정할 것은 거리 숫자보다 실제 노면과 고정</h2><p>주요 구간이 정비된 길인지, 불규칙 바위·뿌리·느슨한 경사인지와 젖은 구간이 있는지 확인하세요. 고무 이름이나 콘크리트 마찰계수 하나가 실제 코스 전체의 접지를 보장하지 않습니다.</p><p>같은 표준 검체의 엄지 너비도 전체 발 적합성을 결정하지 않습니다. 평소 양말에서 길이·발톱 위 높이·중족 끈 조임·힐 고정, 내리막의 앞쪽 밀림과 회전 때 움직임을 살펴볼 수 있습니다.</p><p>카본 판·플라스틱 록플레이트·보호 메시·높은 폼 사이드월은 서로 다른 구조입니다. 판이 없는 모델을 자동으로 위험하다고 하거나 카본이 있으면 더 높은 실력 단계라고 나누지 않습니다.</p><h2>젤 벤처10</h2><p>RR 기본형의 비플레이트 구조. 방수형·다른 세대의 구조를 이 검체에 전용하지 않습니다.</p><p>RR 내부 최광폭 92.7mm·엄지 67.5mm·높이 30.6mm는 서로 다른 위치입니다. 한국 기본형의 현재 와이드 SKU와 문자 폭 코드는 미확인입니다.</p><p><a href="https://runrepeat.com/asics-gel-venture-10" target="_blank" rel="noopener noreferrer">정확 모델 RR 원문</a></p><h2>페레그린16</h2><p>전족의 가벼운 플라스틱 록플레이트는 카본이 아닙니다. Vibram Megagrip과 플레이트 존재만으로 모든 바위·진흙 접지를 보장하지 않습니다.</p><p>RR 내부 최광폭 96.9mm·엄지 70.3mm·높이 27.4mm입니다. 한국 여성·와이드의 치수로 직접 대입하지 말고 실제 길이·발가락 위 공간·힐 고정을 확인하세요.</p><p><a href="https://runrepeat.com/saucony-peregrine-16" target="_blank" rel="noopener noreferrer">정확 모델 RR 원문</a></p><h2>일반 펄사</h2><p>정확 일반 Pulsar의 폼·플레이트·공시 사양은 미확인입니다. Pulsar Trail·Trail Pro2·S/LAB Pulsar4의 구조를 대입하지 않습니다.</p><p>정확 모델의 내부 치수·한국 폭 옵션은 미확인입니다. 실제 상품명·코드와 앞코 높이·길이·중족 고정을 확인하세요. 반 사이즈 다운을 일괄 권하지 않습니다.</p><p>정확 일반 펄사의 독립 랩·상품 원문은 미확인입니다. 다른 Pulsar 계열 수치를 대입하지 않았습니다.</p><h2>스피드고트6</h2><p>전장 카본 플레이트 없음. 단단한 폼·내부 섀시의 고정력을 임상 교정 효과로 바꾸지 않습니다.</p><p>RR 내부 최광폭95.6mm·엄지73mm·높이26.1mm입니다. 해외Normal/Wide/X-Wide 메타가 한국 현재 옵션을 보장하지 않습니다.</p><p><a href="https://runrepeat.com/hoka-speedgoat-6" target="_blank" rel="noopener noreferrer">정확 모델 RR 원문</a></p><h2>스피드고트7</h2><p>RR은 록 플레이트가 없는 구조로 설명합니다. 게이터 연결을 방수·설상 접지 인증으로 해석하지 않습니다.</p><p>RR 내부 최광폭94.8mm·엄지71.4mm·높이28.2mm입니다. 호주 공식의 반업 안내와 RR 반사이즈 작게 투표를 모든 발에 통하는 처방으로 만들지 않습니다. 실제 규격의 너비·길이·고정을 따로 확인하세요.</p><p><a href="https://runrepeat.com/hoka-speedgoat-7" target="_blank" rel="noopener noreferrer">정확 모델 RR 원문</a></p><h2>아그라빅4</h2><p>한국 공식 정확4 문단은 돌·암석 대응 메시 층을 명시합니다. RR의 단단한 록 플레이트 없음 표와 구분하며 메시를 카본·경질 록 플레이트로 부르지 않습니다.</p><p>RR 내부 최광폭97.9mm·엄지73mm·높이25.9mm입니다. 테이퍼·고정과 내려갈 때 앞코 접촉을 실제 규격에서 확인하세요. 한국 현재 와이드·전체 발볼 적합은 미확인입니다.</p><p><a href="https://runrepeat.com/adidas-terrex-agravic-4" target="_blank" rel="noopener noreferrer">정확 모델 RR 원문</a></p><h2>메타후지 트레일</h2><p>분기형 전장 카본과 ASICSGRIP을 사용합니다. 폼 전체가 FF Turbo인 것은 아니며 주층 FF Blast+의 RR 경도는 30.2AC입니다.</p><p>RR 내부 최광폭 94mm·엄지 69.6mm·높이 24.5mm입니다. 낮은 볼륨·앞코 보강재와 힐 카운터의 접촉을 실제 규격·양말에서 확인하세요.</p><p><a href="https://runrepeat.com/asics-metafuji-trail" target="_blank" rel="noopener noreferrer">정확 모델 RR 원문</a></p><h2>히에로v9</h2><p>DOR roundup은 록 플레이트가 없는 구조로 설명합니다. 쿠션·Toe Protect를 모든 돌·암반의 보호 보장으로 읽지 않습니다.</p><p>RR 내부 최광폭94.7mm·엄지73.4mm·높이26.7mm입니다. 미국 남성D/2E/4E·여성B/D/2E 표시는 한국 현재 폭 판매가 아닙니다. 미국정사이즈안내·RR반사이즈작게 투표·David의 여유 체감은 조건이 다릅니다.</p><p><a href="https://runrepeat.com/new-balance-fresh-foam-x-hierro-v9" target="_blank" rel="noopener noreferrer">정확 모델 RR 원문</a></p><h2>울트라 글라이드4</h2><p>정확 4세대 RR 비교표는 플레이트가 없다고 명시합니다. relieveSPHERE 형상과 높은 사이드월이 임상 보호 효과를 증명하지 않습니다.</p><p>RR 내부 최광폭 94mm·엄지 71.4mm·높이 28.8mm입니다. Wide 상품 제목을 확인했지만 표준형 검체 치수로 와이드의 실제 너비를 계산하지 않습니다.</p><p><a href="https://runrepeat.com/salomon-ultra-glide-4" target="_blank" rel="noopener noreferrer">정확 모델 RR 원문</a></p><h2>ACG 제가마</h2><p>RR은 록플레이트가없다고명시합니다. 기존전족록플레이트표기를정정합니다. 기본비방수ACG제가마와GTX·Hike를구분합니다.</p><p>RR 내부최광폭96.9mm·엄지72.8mm·높이28.8mm이며96.9mm를중족부너비로잘못부르지않습니다. 한국현재와이드·전체발적합은미확인입니다.</p><p><a href="https://runrepeat.com/nike-acg-zegama-trail" target="_blank" rel="noopener noreferrer">정확 모델 RR 원문</a></p><h2>엑소더스 울트라4</h2><p>RR은 록플레이트·카본 플레이트가 없다고 명시합니다. 폼 프레임과 Vibram의 구조를 임상 보호 효과로 바꾸지 않습니다.</p><p>RR 내부 최광폭 96.6mm·엄지 71.6mm·높이 24.5mm입니다. 한국 여성·와이드의 치수로 직접 대입하지 말고 실제 길이·발가락 위 공간·힐 고정을 확인하세요.</p><p><a href="https://runrepeat.com/saucony-xodus-ultra-4" target="_blank" rel="noopener noreferrer">정확 모델 RR 원문</a></p><h2>테크톤X3</h2><p>윙렛이 달린 병렬 카본 섬유 플레이트입니다. HOKA 호주 공식의 이중 PEBA·MATRYX·Vibram Megagrip Litebase와 구분해 읽습니다. 니트 게이터는 방수 인증이 아닙니다.</p><p>RR 내부 최광폭92.2mm·엄지73.1mm·높이26.4mm와 외부 플랫폼117mm는 다른 위치입니다. 한국 현재 와이드·개인 사이즈는 미확인입니다.</p><p><a href="https://runrepeat.com/hoka-tecton-x-3" target="_blank" rel="noopener noreferrer">정확 모델 RR 원문</a></p><h2>초대 울트라플라이</h2><p>RR은 중족의분기형카본이며 전장이아니라고명시합니다. 전장ZoomX폼이 전장카본을뜻하지않습니다. DOR카본Flyplate명칭과구분합니다.</p><p>RR 내부최광폭95.8mm·엄지76.7mm·높이24.5mm입니다. 넓은엄지부위와낮은볼륨을함께확인하세요. RR글로벌여성Wide메타와비교표Normal표기가달라한국와이드보장으로쓰지않습니다.</p><p><a href="https://runrepeat.com/nike-ultrafly" target="_blank" rel="noopener noreferrer">정확 모델 RR 원문</a></p><h2>S/LAB 펄사4</h2><p>RR은 카본과 록플레이트가 없다고 명시합니다. DOR의 얇은 보호 필름 설명을 카본으로 바꾸지 않습니다.</p><p>RR 내부 최광폭 94.9mm·엄지 74mm·높이 31mm입니다. DOR의 밀착 체감과 합쳐 모든 넓은 발에 적합하다고 판정하지 않습니다.</p><p><a href="https://runrepeat.com/salomon-s-lab-pulsar-4" target="_blank" rel="noopener noreferrer">정확 모델 RR 원문</a></p><h2>아그라빅 스피드 울트라2</h2><p>RR은 X자 TPE EnergyRods, RTR 프리뷰는 Pebax 플라스틱이라고 설명합니다. RTR 본문 일부의 carbon plate 표현과 상충하고 한국 공식은 소재를 밝히지 않아 탄소 소재 판정은 미확인입니다.</p><p>RR 내부 최광폭 94.4mm·엄지 69.6mm·높이 27.3mm입니다. 넓은 외부 전족 바닥이 넓은 내부 앞코를 뜻하지 않습니다. 실제 규격에서 힐 고정과 급회전 전환을 확인하세요.</p><p><a href="https://runrepeat.com/uk/adidas-terrex-agravic-speed-ultra-2" target="_blank" rel="noopener noreferrer">정확 모델 RR 원문</a></p><h2>공시·한국 판매 정보의 한계</h2><p>표는 RR 검체를 중심으로 하고 별도 소개 공시가 있으면 구분합니다. 아그라빅 스피드 울트라는 현재 상세페이지의 실제 제품명인2세대 자료를 사용했으며 초대 값으로 바꾸지 않습니다. 일반 펄사는 정확 원문을 확보하지 못해 수치를 비웠습니다.</p><p>한국 가격·폭·재고는 모델별 확인 상품·시점에 한정됩니다. 캐시의 와이드·일반 옵션이나 재입고 알림창을 현재 구매 가능한 전사이즈 재고로 쓰지 않습니다. 가격으로 입문·중급·상급 단계를 정하거나 일정 거리에서 통증이 줄어든다는 보장도 하지 않습니다.</p><h2>구매 전에 실제로 확인할 것</h2><p>평소 양말·인솔로 앞쪽 길이와 발톱 위 공간, 끈을 조였을 때 발등 압박, 힐 고정과 칼라 마찰을 확인하세요. 발볼 너비 하나로 전체 핏을 결정하지 않습니다. 교환·반품 조건도 먼저 확인할 수 있습니다.</p><p>트레일에서는 자신의 주요 노면과 오르막·내리막·방향 전환에서 고정과 전환을 살펴야 합니다. 젖은 콘크리트 시험 하나가 바위·진흙 접지를 보장하지 않습니다. 통증·저림을 견뎌야 한다는 규칙이나 모델별 질환 예방 효과는 이번 자료로 확인하지 못했습니다.</p><h2>확인한 원문과 접근 범위</h2><ul><li><a href="https://asics.co.kr/goods/search?search_text=%EC%A0%A4%20%EB%B2%A4%EC%B3%90%2010" target="_blank" rel="noopener noreferrer">ASICS 한국 기본형 검색 확인 범위</a> — 기본형 현재 상품 조건 미확인. 여성 방수형과 구분.</li><li><a href="https://asics.co.kr/goods/search?search_text=%EC%A0%A4%20%EB%B2%A4%EC%B2%98%2010" target="_blank" rel="noopener noreferrer">ASICS 한국 기본형 검색 확인 범위</a> — 기본형 현재 상품 조건 미확인. 여성 방수형과 구분.</li><li><a href="https://asics.co.kr/goods/search?search_text=%EB%B2%A4%EC%B3%90" target="_blank" rel="noopener noreferrer">ASICS 한국 기본형 검색 확인 범위</a> — 기본형 현재 상품 조건 미확인. 여성 방수형과 구분.</li><li><a href="https://runrepeat.com/asics-gel-venture-10" target="_blank" rel="noopener noreferrer">젤 벤처10 RR 원문</a> — 정확 모델 검체. 제조사 공시와 분리.</li><li><a href="https://saucony.co.kr/category/%ED%8E%98%EB%A0%88%EA%B7%B8%EB%A6%B0/158/" target="_blank" rel="noopener noreferrer">한국 공식 kr-peregrine-list</a> — opened_original_cached_body; 여성S11066-130/남성와이드S21067-101 정가179000,할인161100. 할인공시2026-09-28~10-26으로 조사일 이전 종료;현재할인으로 쓰지않음.</li><li><a href="https://saucony.co.kr/product/detail.html?cate_no=158&amp;display_group=1&amp;product_no=212" target="_blank" rel="noopener noreferrer">한국 공식 kr-peregrine-w</a> — opened_original_cached_body; 여성AQUA/CITRON,S11066-130,발볼 M(일반),179000/161100,옵션220~255. 구매/품절동시템플릿;실시간활성미검증.</li><li><a href="https://www.roadtrailrun.com/2025/12/saucony-peregrine16-review-vibram-and.html" target="_blank" rel="noopener noreferrer">RTR 정확 모델 착화</a> — 실제 테스터·사이즈·노면을 구분한 개인 의견; DOR리뷰가 아님.</li><li><a href="https://runrepeat.com/saucony-peregrine-16" target="_blank" rel="noopener noreferrer">페레그린16 RR 원문</a> — 정확 모델 검체. 제조사 공시와 분리.</li><li><a href="https://salomon.co.kr/collections/sal_men_ftw_trailrunning" target="_blank" rel="noopener noreferrer">한국 남성 트레일 목록</a> — 목록 원문 확인. 정확 일반 Pulsar 상품 두 후보는 404로 미확인. 현행 전체 판매 부재를 뜻하지 않음.</li><li><a href="https://linktr.ee/hoka_korea" target="_blank" rel="noopener noreferrer">HOKA 한국 공식 연결 범위</a> — 공식 트레일 스토어로 연결됐으나 상품은 robots 차단. 한국 가격·폭 미확인.</li><li><a href="https://nz.hoka.com/products/m-speedgoat-6-1147791-bblc-bblc" target="_blank" rel="noopener noreferrer">HOKA 해외 공식 동세대</a> — 해외 공시이며 한국 가격·재고 근거 아님.</li><li><a href="https://runrepeat.com/hoka-speedgoat-6" target="_blank" rel="noopener noreferrer">스피드고트6 RR 원문</a> — 정확 모델 검체. 제조사 공시와 분리.</li><li><a href="https://www.doctorsofrunning.com/hoka-speedgoat-6-review-2024/" target="_blank" rel="noopener noreferrer">스피드고트6 DOR 원문</a> — 소개 공시·실제 착화 사이즈·개인의견 구분.</li><li><a href="https://au.hoka.com/products/speedgoat-7-1171928-alvb-alvb" target="_blank" rel="noopener noreferrer">HOKA 해외 공식 동세대</a> — 해외 공시이며 한국 가격·재고 근거 아님.</li><li><a href="https://runrepeat.com/hoka-speedgoat-7" target="_blank" rel="noopener noreferrer">스피드고트7 RR 원문</a> — 정확 모델 검체. 제조사 공시와 분리.</li><li><a href="https://www.adidas.co.kr/%ED%85%8C%EB%A0%89%EC%8A%A4-%EC%95%84%EA%B7%B8%EB%9D%BC%EB%B9%85-4-%ED%8A%B8%EB%A0%88%EC%9D%BC%EB%9F%AC%EB%8B%9D%ED%99%94/KJ8870.html" target="_blank" rel="noopener noreferrer">한국 공식 캐시 KJ8870 · 남성</a> — 표시 정가 169000원·표시 판매가 169000원. 도구 캐시 2 days; 현재 가격·폭·선택 재고 미확인.</li><li><a href="https://www.adidas.co.kr/%ED%85%8C%EB%A0%89%EC%8A%A4-%EC%95%84%EA%B7%B8%EB%9D%BC%EB%B9%85-4-%ED%8A%B8%EB%A0%88%EC%9D%BC-%EB%9F%AC%EB%8B%9D%ED%99%94/KJ3786.html" target="_blank" rel="noopener noreferrer">한국 공식 캐시 KJ3786 · 남성</a> — 표시 정가 169000원·표시 판매가 118300원. 도구 캐시 today; 현재 가격·폭·선택 재고 미확인.</li><li><a href="https://www.adidas.co.kr/%ED%85%8C%EB%A0%89%EC%8A%A4-%EC%95%84%EA%B7%B8%EB%9D%BC%EB%B9%85-4-%ED%8A%B8%EB%A0%88%EC%9D%BC%EB%9F%AC%EB%8B%9D%ED%99%94/KJ1292.html" target="_blank" rel="noopener noreferrer">한국 공식 캐시 KJ1292 · Women</a> — 표시 정가 169000원·표시 판매가 135200원. 도구 캐시 2 months; 현재 가격·폭·선택 재고 미확인.</li><li><a href="https://www.adidas.co.kr/agravic" target="_blank" rel="noopener noreferrer">adidas 한국 아그라빅4 정확 문단</a> — 돌·암석 대응 메시 층. 경질 록 플레이트와 구분.</li><li><a href="https://runrepeat.com/adidas-terrex-agravic-4" target="_blank" rel="noopener noreferrer">아그라빅4 RR 원문</a> — 정확 모델 검체. 제조사 공시와 분리.</li><li><a href="https://www.asics.co.kr/c/sports_trail_running" target="_blank" rel="noopener noreferrer">한국 공식 트레일 목록</a> — 정확 초대 상품 검색 후보만 확인, 열린 페이지는 추적 iframe 한 줄로 제품 원문 미확보. 2세대 대입 안 함.</li><li><a href="https://runrepeat.com/asics-metafuji-trail" target="_blank" rel="noopener noreferrer">메타후지 트레일 RR 원문</a> — 정확 모델 검체. 제조사 공시와 분리.</li><li><a href="https://www.doctorsofrunning.com/asics-metafuji-trail-review-2025/" target="_blank" rel="noopener noreferrer">메타후지 트레일 DOR 원문</a> — 소개 공시·실제 착화 사이즈·개인의견 구분.</li><li><a href="https://www.nbkorea.com/" target="_blank" rel="noopener noreferrer">뉴발란스 한국 공식 접근 범위</a> — 실운영 www/pay 원문 접근 실패. 검색 후보SKU·QA서버값 미채택.</li><li><a href="https://www.newbalance.com/pd/fresh-foam-x-hierro-v9/MTHIERV9-50176.html?dwvar_MTHIERV9-50176_style=MHIER51M" target="_blank" rel="noopener noreferrer">미국 공식 남성</a> — 310g·약4mm·러그6mm 주장·해외 폭. 한국 가격 근거 아님.</li><li><a href="https://www.newbalance.com/pd/fresh-foam-x-hierro-v9/WTHIERV9-50177.html?dwvar_WTHIERV9-50177_style=WHIER2RF" target="_blank" rel="noopener noreferrer">미국 공식 여성</a> — 253g·약4mm·해외 폭. 한국 판매 미확인.</li><li><a href="https://runrepeat.com/new-balance-fresh-foam-x-hierro-v9" target="_blank" rel="noopener noreferrer">히에로v9 RR 원문</a> — 정확 모델 검체. 제조사 공시와 분리.</li><li><a href="https://www.doctorsofrunning.com/monday-shakeout-spring-2025-trail-shoe/" target="_blank" rel="noopener noreferrer">히에로v9 DOR 원문</a> — 소개 공시·실제 착화 사이즈·개인의견 구분.</li><li><a href="https://salomon.co.kr/products/l49141200" target="_blank" rel="noopener noreferrer">한국 공식 L49141200</a> — 캐시 last week; 단일 표시 가격은 명시적 MSRP 확인과 다름. 현재 선택 재고·가격 미확인.</li><li><a href="https://salomon.co.kr/products/l49149200" target="_blank" rel="noopener noreferrer">한국 공식 L49149200</a> — 캐시 2 weeks ago; 단일 표시 가격은 명시적 MSRP 확인과 다름. 현재 선택 재고·가격 미확인.</li><li><a href="https://salomon.co.kr/products/l49216200" target="_blank" rel="noopener noreferrer">한국 공식 L49216200</a> — 캐시 yesterday; 단일 표시 가격은 명시적 MSRP 확인과 다름. 현재 선택 재고·가격 미확인.</li><li><a href="https://runrepeat.com/salomon-ultra-glide-4" target="_blank" rel="noopener noreferrer">울트라 글라이드4 RR 원문</a> — 정확 모델 검체. 제조사 공시와 분리.</li><li><a href="https://www.doctorsofrunning.com/salomon-ultra-glide-4-review-2026/" target="_blank" rel="noopener noreferrer">울트라 글라이드4 DOR 원문</a> — 소개 공시·실제 착화 사이즈·개인의견 구분.</li><li><a href="https://www.nike.com/kr/t/acg-%EC%A0%9C%EA%B0%80%EB%A7%88-%ED%8A%B8%EB%A0%88%EC%9D%BC-%EB%82%A8%EC%84%B1-%ED%8A%B8%EB%A0%88%EC%9D%BC-%EB%9F%AC%EB%8B%9D%ED%99%94-tD6siwGz/HV8113-400" target="_blank" rel="noopener noreferrer">한국 공식 캐시 HV8113-400 · men</a> — 표시 정가 219000원. 도구 캐시 last month; 현재 가격·선택 재고 미확인.</li><li><a href="https://www.nike.com/kr/t/acg-%EC%A0%9C%EA%B0%80%EB%A7%88-%ED%8A%B8%EB%A0%88%EC%9D%BC-%EB%82%A8%EC%84%B1-%ED%8A%B8%EB%A0%88%EC%9D%BC-%EB%9F%AC%EB%8B%9D%ED%99%94-tD6siwGz/HV8113-103" target="_blank" rel="noopener noreferrer">한국 공식 캐시 HV8113-103 · men</a> — 표시 정가 219000원. 도구 캐시 last week; 현재 가격·선택 재고 미확인.</li><li><a href="https://www.nike.com/kr/t/acg-%EC%A0%9C%EA%B0%80%EB%A7%88-%ED%8A%B8%EB%A0%88%EC%9D%BC-%EC%97%AC%EC%84%B1-%ED%8A%B8%EB%A0%88%EC%9D%BC-%EB%9F%AC%EB%8B%9D%ED%99%94-brBlZXrH/HV8115-500" target="_blank" rel="noopener noreferrer">한국 공식 캐시 HV8115-500 · women</a> — 표시 정가 219000원. 도구 캐시 2 months ago; 현재 가격·선택 재고 미확인.</li><li><a href="https://runrepeat.com/nike-acg-zegama-trail" target="_blank" rel="noopener noreferrer">ACG 제가마 RR 원문</a> — 정확 모델 검체. 제조사 공시와 분리.</li><li><a href="https://saucony.co.kr/category/season-off/217/" target="_blank" rel="noopener noreferrer">한국 공식 kr-saucony-sale</a> — opened_original_cached_body; 남성XodusUltra4 KODIAK/WINE S21032-245,219000. 리스트다른상품할인기간은이상품에대입하지않음.</li><li><a href="https://saucony.co.kr/product/%EB%82%A8%EC%84%B1-%EC%97%91%EC%86%8C%EB%8D%94%EC%8A%A4-%EC%9A%B8%ED%8A%B8%EB%9D%BC-4-kodiakwine/139/" target="_blank" rel="noopener noreferrer">한국 공식 kr-xodus-m</a> — opened_original_cached_body; 남성S21032-245,219000/219000,M(일반). 사이즈250~290 5mm단위와300.공식전용표기;여성상품존재여부는별도미확인.</li><li><a href="https://www.roadtrailrun.com/2025/05/saucony-xodus-ultra-4-review-3.html" target="_blank" rel="noopener noreferrer">RTR 정확 모델 착화</a> — 실제 테스터·사이즈·노면을 구분한 개인 의견; DOR리뷰가 아님.</li><li><a href="https://runrepeat.com/saucony-xodus-ultra-4" target="_blank" rel="noopener noreferrer">엑소더스 울트라4 RR 원문</a> — 정확 모델 검체. 제조사 공시와 분리.</li><li><a href="https://au.hoka.com/products/m-tecton-x-3-1155112-bhkb-bhkb" target="_blank" rel="noopener noreferrer">HOKA 해외 공식 동세대</a> — 해외 공시이며 한국 가격·재고 근거 아님.</li><li><a href="https://www.doctorsofrunning.com/hoka-rocket-x-trail-review-2025/" target="_blank" rel="noopener noreferrer">DOR 비교 문장 한정</a> — Rocket X Trail 리뷰 중 Matt의 명시적 텍톤X3 비교만. 독립 리뷰·검체 사이즈 미확인.</li><li><a href="https://runrepeat.com/hoka-tecton-x-3" target="_blank" rel="noopener noreferrer">테크톤X3 RR 원문</a> — 정확 모델 검체. 제조사 공시와 분리.</li><li><a href="https://www.nike.com/kr/" target="_blank" rel="noopener noreferrer">한국초대상품검색범위</a> — 정확DX1978상품미확인. ACG후속값대입안함.</li><li><a href="https://runrepeat.com/nike-ultrafly" target="_blank" rel="noopener noreferrer">초대 울트라플라이 RR 원문</a> — 정확 모델 검체. 제조사 공시와 분리.</li><li><a href="https://www.doctorsofrunning.com/nike-ultrafly-review-2023/" target="_blank" rel="noopener noreferrer">초대 울트라플라이 DOR 원문</a> — 소개 공시·실제 착화 사이즈·개인의견 구분.</li><li><a href="https://salomon.co.kr/products/l47770300" target="_blank" rel="noopener noreferrer">한국 공식 L47770300</a> — 캐시 today; 단일 표시 가격은 명시적 MSRP 확인과 다름. 현재 선택 재고·가격 미확인.</li><li><a href="https://runrepeat.com/salomon-s-lab-pulsar-4" target="_blank" rel="noopener noreferrer">S/LAB 펄사4 RR 원문</a> — 정확 모델 검체. 제조사 공시와 분리.</li><li><a href="https://www.doctorsofrunning.com/monday-shakeout-summer-2025-trail-shoe/" target="_blank" rel="noopener noreferrer">S/LAB 펄사4 DOR 원문</a> — 소개 공시·실제 착화 사이즈·개인의견 구분.</li><li><a href="https://www.adidas.co.kr/%ED%85%8C%EB%A0%89%EC%8A%A4-%EC%95%84%EA%B7%B8%EB%9D%BC%EB%B9%85-%EC%8A%A4%ED%94%BC%EB%93%9C-%EC%9A%B8%ED%8A%B8%EB%9D%BC-2-%ED%8A%B8%EB%A0%88%EC%9D%BC-%EB%9F%AC%EB%8B%9D%ED%99%94/JQ4019.html" target="_blank" rel="noopener noreferrer">kr-JQ4019</a> — original_opened_cached_web_and_indexed_body; 남성JQ4019 정상289000/open173400(-40%),index202300(-30%)충돌.열린사이즈AAA;index세부Regular·269g·43/35·8mm.</li><li><a href="https://www.adidas.co.kr/%ED%85%8C%EB%A0%89%EC%8A%A4-%EC%95%84%EA%B7%B8%EB%9D%BC%EB%B9%85-%EC%8A%A4%ED%94%BC%EB%93%9C-%EC%9A%B8%ED%8A%B8%EB%9D%BC-2-%ED%8A%B8%EB%A0%88%EC%9D%BC%EB%9F%AC%EB%8B%9D%ED%99%94/JR9100.html" target="_blank" rel="noopener noreferrer">kr-JR9100</a> — original_opened_cached_web_and_indexed_body; 남성JR9100 정상289000/231200,openAAA·cart,index품절.세부Regular·269g·43/35·8mm는indexed본문.</li><li><a href="https://www.adidas.co.kr/%ED%85%8C%EB%A0%89%EC%8A%A4-%EC%95%84%EA%B7%B8%EB%9D%BC%EB%B9%85-%EC%8A%A4%ED%94%BC%EB%93%9C-%EC%9A%B8%ED%8A%B8%EB%9D%BC-2-m/JS3534.html" target="_blank" rel="noopener noreferrer">kr-JS3534</a> — original_opened_cached_web; 남성JS3534 CloudWhite/CoreBlack/SemiImpactOrange 정상289000/202300·AAA옵션.</li><li><a href="https://www.adidas.co.kr/%ED%85%8C%EB%A0%89%EC%8A%A4-%EC%95%84%EA%B7%B8%EB%9D%BC%EB%B9%85-%EC%8A%A4%ED%94%BC%EB%93%9C-%EC%9A%B8%ED%8A%B8%EB%9D%BC-2-w/JR9110.html" target="_blank" rel="noopener noreferrer">kr-JR9110</a> — original_opened_cached_web; 여성JR9110 White 정상289000/202300·AAA옵션. W는여성모델구분이며wide근거아님.</li><li><a href="https://www.adidas.co.kr/%ED%85%8C%EB%A0%89%EC%8A%A4-%EC%95%84%EA%B7%B8%EB%9D%BC%EB%B9%85-%EC%8A%A4%ED%94%BC%EB%93%9C-%EC%9A%B8%ED%8A%B8%EB%9D%BC-2-%ED%8A%B8%EB%A0%88%EC%9D%BC-%EB%9F%AC%EB%8B%9D%ED%99%94/KI9369.html" target="_blank" rel="noopener noreferrer">kr-KI9369</a> — original_opened_cached_web; 정확2세대남성KI9369 단일가격299000·AAA옵션;생일/신규/레벨업쿠폰불가.세부스펙본문미추출.</li><li><a href="https://www.doctorsofrunning.com/best-adidas-running-shoes-buyers-guide/" target="_blank" rel="noopener noreferrer">dor-guide-partial</a> — indexed_original_body_after_403; 정확 Terrex Agravic Speed Ultra2를 ultra trail racing·Speed2보다 approachable하다고 짧게 소개. 개별 fit/측정 없음.</li><li><a href="https://www.roadtrailrun.com/2026/02/adidas-terrex-agravic-speed-ultra-2.html" target="_blank" rel="noopener noreferrer">rtr-ultra2-review</a> — original_opened_web; 2026-02-02, Dom Layfield/Zachary Russell/Jeff Valliere/Jen Schmidt/Adam Glueck 실착. 무상제공 검체, 사이즈별 무게·38/30mm Stats·일부 carbon 표현 충돌.</li><li><a href="https://www.roadtrailrun.com/2025/11/adidas-terrex-2026-previews-agravic.html" target="_blank" rel="noopener noreferrer">rtr-ultra2-preview</a> — original_opened_web; 2025-11-22 SamWinebaum prototypecolor검체;PebaxplasticEnergyRods·44/36mm·256gUS8.5표와EU41⅓/US9라벨본문상충.</li><li><a href="https://runrepeat.com/uk/adidas-terrex-agravic-speed-ultra-2" target="_blank" rel="noopener noreferrer">아그라빅 스피드 울트라2 RR 원문</a> — 정확 모델 검체. 제조사 공시와 분리.</li></ul>
 `,
+    updatedAt: "2026-11-10",
   },
   {
     id: 'incheon-marathon-2026-site-open',

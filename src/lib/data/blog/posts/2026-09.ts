@@ -4675,142 +4675,72 @@ export const posts_2026_09: BlogPost[] = [
     updatedAt: "2026-11-09",
   },
   {
-    id: 'saucony-peregrine-16-review',
-    slug: 'saucony-peregrine-16-review',
-    title: '써코니 페레그린 16 후기 | Vibram Megagrip 채용 — 드롭 4mm의 민첩한 트레일 표준',
-    description:
-      '페레그린 16은 아웃솔을 Vibram Megagrip + 트랙션 러그로 전면 교체해 젖은 바위·진흙 접지력이 크게 개선됐습니다. 스택 32/28mm·드롭 4mm로 낮고 평평해, 기술적인 지형에서 발밑 감각이 살아 있습니다. 179,000원(2026-10-20 공식몰 기준 할인 없음). 울트라 거리라면 엑소더스 울트라 4가 더 맞습니다.',
-    thumbnail: '/images/blog/saucony-peregrine-16-review.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-09-11',
-    category: 'review' as const,
-    readingTime: 7,
-    tags: ['써코니 페레그린16', '트레일 러닝화', 'Vibram Megagrip', '기술적 지형'],
+    id: "saucony-peregrine-16-review",
+    slug: "saucony-peregrine-16-review",
+    title: "페레그린16 리뷰 —플라스틱 록플레이트·앞코·노면, 만능 그립으로 읽지 않기",
+    description: "278g·드롭4.8mm 검체와 RTR JeffUS10 착화를 정리합니다. 러그3.5/4mm·젖은 시험 범위·한국 와이드 캐시와 현재 가격을 나눕니다.",
+    thumbnail: "/images/shoes/saucony/peregrine16/side.jpg",
+    author: "산초 에디터",
+    publishedAt: "2026-09-11",
+    category: "review",
+    readingTime: 8,
+    tags: [
+      "페레그린16",
+      "원문 대조",
+      "핏"
+    ],
     content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>아웃솔을 Vibram Megagrip으로 전면 교체</strong> — 젖은 바위처럼 미끄러운 노면에서 접지가 눈에 띄게 좋아졌습니다</li>
-    <li><strong>러그 높이는 5mm→4mm로 낮아졌지만 고무 그립이 올라가 손해가 없습니다</strong></li>
-    <li><strong>2026-10-20 써코니코리아 공식몰 기준 정가 179,000원, 할인 없음</strong>입니다. 8월 중순(2026-08-15 기준)의 20% 할인가 143,200원은 이때 적용되지 않았습니다</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">👟</span>
-  <div class="callout-body">
-    <p class="callout-title">한 줄 결론</p>
-    <p><strong>바위·나무뿌리가 많은 기술적 트레일을 자주 달리는 러너</strong>에게 맞는 민첩한 표준 트레일화입니다. 50km 이상 울트라 거리라면 <a href="/shoes/saucony-xodus-ultra-4">엑소더스 울트라 4</a>를 보세요.</p>
-  </div>
-</div>
-
-<h2>16세대 변화는 아웃솔에 집중</h2>
-<p>전 세대까지의 자체 러버에서 <strong>Vibram Megagrip + 트랙션 러그</strong>로 바뀌면서, 젖은 바위처럼 미끄러운 노면에서의 접지가 눈에 띄게 좋아졌다는 평이 일관됩니다. 러그 높이는 5mm에서 4mm로 오히려 낮아졌는데, 고무 자체의 그립이 올라가 오르막·내리막 모두에서 손해가 없다는 것이 리뷰들의 공통된 평가입니다.</p>
-
-<h2>엑소더스 울트라 4와 비교 — 거리로 갈린다</h2>
-<p>써코니 트레일 두 갈래의 기준은 거리입니다. 페레그린 16(179,000원)은 낮고 민첩한 표준 트레일화이고, <a href="/shoes/saucony-xodus-ultra-4">엑소더스 울트라 4</a>(219,000원)는 스택과 쿠션이 더 두껍습니다. 하프~30km 수준의 산길이 주력이면 페레그린이 가볍고 값도 저렴하며, 2026-10-20 공식몰 기준 둘 다 할인 없는 정가라 가격 차이는 4만 원입니다.</p>
-
-<h2>발볼·적응 — 한국 러너가 궁금해할 것들</h2>
-<ul>
-  <li><strong>"발볼 넓은데 괜찮나요?"</strong> — 국내 공식몰에 와이드 옵션이 함께 유통됩니다</li>
-  <li><strong>"로드화만 신다가 넘어가도 되나요?"</strong> — 로드 데일리는 보통 드롭 8~10mm인데 이 신발은 4mm라, 종아리·아킬레스 부하가 늘어납니다. 첫 몇 회는 거리를 절반으로 줄여 적응하세요</li>
-  <li><strong>"무릎 괜찮나요?"</strong> — 부상 예방 등급이 족저근막염·무릎 good입니다. 아킬레스건·신 스플린트는 caution(주의)이니 적응 기간이 중요합니다</li>
-</ul>
-
-<h2>가격 대비 가치</h2>
-<p>정가는 179,000원이고 2026-10-20 써코니코리아 공식몰 기준 할인은 없습니다. 2026-08-15 기준으로는 국내 유통 2종 전량이 20% 할인된 143,200원이었지만, 10월 확인 때는 정가로 돌아와 있었습니다. 600km 기준 km당 약 298원(정가 기준)입니다.</p>
-
-<h2>누구에게 맞을까</h2>
-<ul>
-  <li><strong>바위·나무뿌리가 많은 기술적 트레일을 자주 달리는 러너</strong></li>
-  <li><strong>젖은 노면·계곡 구간에서 접지력이 최우선인 러너</strong></li>
-  <li>반대로 <strong>울트라 거리 위주라면</strong> <a href="/shoes/saucony-xodus-ultra-4">엑소더스 울트라 4</a>가 낫습니다</li>
-</ul>
-
-<h2>마무리</h2>
-<p>페레그린 16은 "무난한 트레일 표준"이 Vibram Megagrip으로 약점을 지운 세대입니다. 낮은 스택과 드롭이라는 정체성은 그대로 유지하면서, 접지력이라는 가장 실질적인 부분이 좋아졌습니다.</p>
+<p><strong>2026-11-10 원문 대조 업데이트.</strong> 제조사 공시·실험실 검체·개인 착화 의견과 한국 상품 캐시를 구분합니다. 자체 착화 후기가 아닌 원문 기반 분석입니다.</p><h2>먼저 볼 차이</h2><p>페레그린16은 전족 플라스틱 록플레이트와 Vibram Megagrip을 확인한 모델입니다. 젖은 콘크리트0.72를 바위·진흙·업다운 모두에서 손해가 없다는 보장으로 바꾸지 않습니다.</p><p>RR의 엄지70.3mm와 Jeff의 조금 여유 있는 앞코 체감은 다른 발·검체 조건입니다. 실제 규격에서 발가락 위 접촉·힐 고정·방향 전환이 편한지 볼 수 있습니다.</p><figure><img src="/images/shoes/saucony/peregrine16/side.jpg" alt="페레그린16 — 전족 플라스틱 판과 실제 앞코·힐 고정을 확인" loading="lazy"/><figcaption>페레그린16 — 전족 플라스틱 판과 실제 앞코·힐 고정을 확인</figcaption></figure><div class="table-wrap"><table><thead><tr><th>모델</th><th>무게 · 공시 출처 별도 표기</th><th>스택·드롭 · 공시 출처 별도 표기</th><th>힐/전족 SA</th><th>힐/전족 리턴</th></tr></thead><tbody><tr><td>페레그린16</td><td>278g</td><td>31.7/26.9mm · 4.8mm</td><td>124/106</td><td>58.1/64.5%</td></tr></tbody></table></div><p>표의 값은 RunRepeat 검체 또는 별도 표시한 DOR 소개 공시입니다. DOR 소개는 독립 실측이 아닙니다. 일반 정책은 남성 US9지만 개별 라벨·폭·보정 여부는 미확인입니다. 공시와 동일한 검체로 단정하지 않습니다. SA는 충격흡수, 리턴은 시험에서 반환된 에너지 비율이며 부드러움·개인 기록·임상 보호를 뜻하지 않습니다. HA는 구방식, AC는 별도 경도 척도여서 환산하지 않습니다. <a href="https://runrepeat.com/testing-methodology" target="_blank" rel="noopener noreferrer">RunRepeat 측정법</a></p><h2>록플레이트가 있는지와 접지가 좋은지는 다른 질문</h2><p>전족 플라스틱 보호판은 카본 추진판이 아닙니다. 밑창 재료와 판의 존재만으로 모든 한국 산의 안전 순위를 정할 수 없습니다. Jeff의 초기 시험도 정식 젖은 조건은 부족했습니다.</p><p>여성M·남성 와이드 한국 캐시가 있지만 숫자 폭 규격과 현재 선택 재고는 미확인입니다.161,100원 할인의 종료일은10월26일이므로 현재 할인으로 안내하지 않습니다.600km 수명·종아리 적응 기간 처방도 제거했습니다.</p><h2>페레그린16 — 핏과 주행에서 갈리는 지점</h2><p>전족의 가벼운 플라스틱 록플레이트는 카본이 아닙니다. Vibram Megagrip과 플레이트 존재만으로 모든 바위·진흙 접지를 보장하지 않습니다.</p><p>RR 내부 최광폭 96.9mm·엄지 70.3mm·높이 27.4mm입니다. 한국 여성·와이드의 치수로 직접 대입하지 말고 실제 길이·발가락 위 공간·힐 고정을 확인하세요.</p><p>정확 DOR 리뷰는 미확인입니다. RTR Jeff Valliere의 실제 남성US10 검체는301g이며 정사이즈·조금 여유 있는 앞코와 좋은 고정, 부드럽지만 예측 가능한 폼을 느꼈습니다. 볼더 바위·느슨한 경사·일부 눈/얼음의 초기 시험이고 정식 젖은 조건 시험은 부족했습니다. 젖은 바위 호평의 관찰과 예측을 구분합니다.</p><h2>페레그린16 — 공시·한국 판매 확인 범위</h2><p>RR278g·31.7/26.9mm·4.8mm와 RR 재전재 브랜드271/239g(기준 사이즈 미확인)·32/28mm·4mm, RTR소개32/28/4와 실제US10 301g을 나눕니다.</p><p>한국 공식 캐시: S11066-130 women M(일반) 정가179,000원·판매캐시179,000원; S21067-101 men 와이드 정가179,000원·판매캐시179,000원. 현재 가격·폭별 선택 재고는 미확인입니다. 명시WIDE·와이드를2E/4E로 바꾸지 않고 옵션 목록·장바구니를 현재 재고로 쓰지 않습니다. 할인161,100원은 종료일2026-10-26인 캐시이므로 현재 할인가로 안내하지 않습니다.</p><p>RR 엄지70.3mm·사이즈 투표와 Jeff의 여유 있는 앞코·정사이즈 체감은 다른 조건입니다. 러그RR3.5mm·RTR4mm를 구분합니다.0.5mm 국소 마모를600km로 바꾸거나0.72 콘크리트 접지로 오르내림 손해 없음·아킬레스 적응 기간을 보장하지 않습니다.</p><h2>구매 전에 실제로 확인할 것</h2><p>평소 양말·인솔로 앞쪽 길이와 발톱 위 공간, 끈을 조였을 때 발등 압박, 힐 고정과 칼라 마찰을 확인하세요. 발볼 너비 하나로 전체 핏을 결정하지 않습니다. 교환·반품 조건도 먼저 확인할 수 있습니다.</p><p>트레일에서는 자신의 주요 노면과 오르막·내리막·방향 전환에서 고정과 전환을 살펴야 합니다. 젖은 콘크리트 시험 하나가 바위·진흙 접지를 보장하지 않습니다. 통증·저림을 견뎌야 한다는 규칙이나 모델별 질환 예방 효과는 이번 자료로 확인하지 못했습니다.</p><h2>확인한 원문과 접근 범위</h2><ul><li><a href="https://saucony.co.kr/category/%ED%8E%98%EB%A0%88%EA%B7%B8%EB%A6%B0/158/" target="_blank" rel="noopener noreferrer">한국 공식 kr-peregrine-list</a> — opened_original_cached_body; 여성S11066-130/남성와이드S21067-101 정가179000,할인161100. 할인공시2026-09-28~10-26으로 조사일 이전 종료;현재할인으로 쓰지않음.</li><li><a href="https://saucony.co.kr/product/detail.html?cate_no=158&amp;display_group=1&amp;product_no=212" target="_blank" rel="noopener noreferrer">한국 공식 kr-peregrine-w</a> — opened_original_cached_body; 여성AQUA/CITRON,S11066-130,발볼 M(일반),179000/161100,옵션220~255. 구매/품절동시템플릿;실시간활성미검증.</li><li><a href="https://www.roadtrailrun.com/2025/12/saucony-peregrine16-review-vibram-and.html" target="_blank" rel="noopener noreferrer">RTR 정확 모델 착화</a> — 실제 테스터·사이즈·노면을 구분한 개인 의견; DOR리뷰가 아님.</li><li><a href="https://runrepeat.com/saucony-peregrine-16" target="_blank" rel="noopener noreferrer">페레그린16 RR 원문</a> — 정확 모델 검체. 제조사 공시와 분리.</li></ul>
 `,
     faqs: [
       {
-        question: '페레그린 16과 엑소더스 울트라 4, 뭘 사야 하나요?',
-        answer:
-          '거리로 결정하세요. 하프~30km 수준의 산길이 주력이면 페레그린 16이 가볍고 저렴합니다. 50km 이상 울트라 거리를 준비한다면 스택이 더 높은 엑소더스 울트라 4가 후반 충격 누적에 유리합니다.',
+        "question": "록플레이트면 카본화인가요?",
+        "answer": "아닙니다. 전족 플라스틱 보호판과 카본 레이싱판은 다릅니다."
       },
       {
-        question: '로드화만 신다가 이 신발로 넘어가도 되나요?',
-        answer:
-          '가능하지만 적응 기간이 필요합니다. 로드 데일리(드롭 8~10mm)보다 드롭이 4mm로 낮아 종아리·아킬레스에 걸리는 부하가 늘어납니다. 첫 몇 회는 거리를 절반으로 줄이는 것을 권합니다.',
+        "question": "젖은 바위에서도 무조건 좋나요?",
+        "answer": "콘크리트 시험과 실제 바위는 다릅니다. 확인한 Jeff의 정식 젖은 조건 시험은 부족했습니다."
       },
+      {
+        "question": "지금161,100원인가요?",
+        "answer": "해당 할인은10월26일 종료 캐시로 확인돼 현재 할인가로 쓰지 않습니다."
+      }
     ],
+    updatedAt: "2026-11-10",
   },
   {
-    id: 'saucony-xodus-ultra-4-review',
-    slug: 'saucony-xodus-ultra-4-review',
-    title: '써코니 엑소더스 울트라 4 후기 | PWRRUN PB 8% 증량 — 50km 이상을 덜 아프게 완주하는 트레일화',
-    description:
-      '엑소더스 울트라 4는 PWRRUN PB 슈퍼폼을 전작보다 8% 늘리고 그 둘레를 PWRRUN 프레임으로 감싼 맥스쿠션 트레일화입니다. 스택 36/30mm로 페레그린 16보다 두껍고, 풀커버 Vibram Megagrip으로 접지도 확실합니다. 219,000원, 309g. 카본 레이서 같은 튐은 없지만 애초에 그 목적의 신발이 아닙니다.',
-    thumbnail: '/images/blog/saucony-xodus-ultra-4-review.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-09-11',
-    category: 'review' as const,
-    readingTime: 7,
-    tags: ['써코니 엑소더스울트라4', '울트라 트레일', 'PWRRUN PB', '맥스쿠션 트레일'],
+    id: "saucony-xodus-ultra-4-review",
+    slug: "saucony-xodus-ultra-4-review",
+    title: "엑소더스 울트라4 리뷰 —312g·두 폼, 긴 주행보다 먼저 볼 하강 고정·배수",
+    description: "RR312g과 소개309g을 구분합니다. RTR Jen·Jeff의 다른 하강·끈 경험,24.5mm 앞코 높이·느린 배수와 한국 상품 캐시를 정리합니다.",
+    thumbnail: "/images/shoes/saucony/xodusultra4/side.jpg",
+    author: "산초 에디터",
+    publishedAt: "2026-09-11",
+    category: "review",
+    readingTime: 8,
+    tags: [
+      "엑소더스 울트라4",
+      "원문 대조",
+      "핏"
+    ],
     content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>PWRRUN PB 슈퍼폼을 전작 대비 8% 증량</strong>하고 둘레를 PWRRUN 프레임으로 감싸 반발과 안정성을 동시에 챙겼습니다</li>
-    <li><strong>스택 36/30mm — <a href="/shoes/saucony-peregrine-16">페레그린 16</a>(32/28mm)보다 두껍고</strong> 울트라 거리 후반 충격을 더 흡수합니다</li>
-    <li><strong>309g으로 가볍지 않습니다.</strong> 카본 레이서 같은 튐은 없고, 목적 자체가 다릅니다</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">👟</span>
-  <div class="callout-body">
-    <p class="callout-title">한 줄 결론</p>
-    <p><strong>50km 이상 울트라 트레일을 준비하는 러너</strong>에게 맞습니다. 기록보다 "발이 덜 아프게 완주하는 것"이 목적인 신발입니다.</p>
-  </div>
-</div>
-
-<h2>슈퍼폼을 트레일에서, 흔들리지 않게</h2>
-<p>설계 의도는 "슈퍼폼을 트레일에서 쓰되 흔들리지 않게"입니다. PWRRUN PB는 원래 엔돌핀 라인의 레이싱 폼인데, 트레일에서 이걸 그대로 쓰면 불규칙한 노면에서 발이 흔들립니다. 그래서 코어에만 PB를 넣고 둘레를 단단한 PWRRUN 프레임으로 감쌌습니다. 결과적으로 36/30mm 스택에서도 안정감이 유지되고, 울트라 거리에서 발 피로가 확실히 덜합니다.</p>
-
-<h2>페레그린 16과 비교 — 거리와 가격으로 갈린다</h2>
-<p>30g대 무게 차이(브랜드 공식 271g vs 309g, RunRepeat 실측 278g vs 312g)는 장시간에서 체감되지만, 반대로 50km 이상에서는 스택 4mm 차이가 후반 충격 누적을 크게 좌우합니다. 가격도 변수입니다 — <a href="/shoes/saucony-peregrine-16">페레그린 16</a>은 179,000원, 엑소더스 울트라 4는 219,000원으로 2026-10-20 공식몰 기준 둘 다 정가이며 4만 원 차이입니다. <strong>30km 이하가 주력이면 페레그린, 그 이상이면 엑소더스</strong>로 보는 게 단순하고 정확합니다.</p>
-
-<h2>발볼·적응 — 한국 러너가 궁금해할 것들</h2>
-<ul>
-  <li><strong>"발볼 넓은데 괜찮나요?"</strong> — 토박스가 RunRepeat 실측 71.6mm(트레일 평균 74.3mm)로 좁은 편이고 국내 와이드 옵션이 없습니다</li>
-  <li><strong>"로드화만 신다가 넘어가도 되나요?"</strong> — 드롭 6mm로 페레그린 16(4mm)보다 2mm 높아 로드화에서 넘어오기가 조금 수월합니다</li>
-  <li><strong>"무릎 괜찮나요?"</strong> — 부상 예방 등급이 족저근막염·무릎 excellent(최상위)입니다</li>
-</ul>
-
-<h2>가격 대비 가치</h2>
-<p>219,000원, 700km 기준 km당 약 313원으로 트레일화 중 내구성이 상위권입니다. 다만 30km 이하 거리라면 4만 원 저렴한 페레그린 16(179,000원)이 더 합리적입니다.</p>
-
-<h2>누구에게 맞을까</h2>
-<ul>
-  <li><strong>50km 이상 울트라 트레일을 준비하는 러너</strong></li>
-  <li><strong>장시간 산행·트레일에서 발 피로가 누적되는 러너</strong></li>
-  <li>반대로 <strong>30km 이하 위주이거나 가벼운 트레일화를 원한다면</strong> <a href="/shoes/saucony-peregrine-16">페레그린 16</a>이 낫습니다</li>
-</ul>
-
-<h2>마무리</h2>
-<p>엑소더스 울트라 4는 빠른 트레일화가 아니라 "오래 버티는" 트레일화입니다. 무게라는 확실한 대가를 치르지만, 그 대가로 얻는 건 50km 이상에서의 발 피로 감소입니다. 목적에 맞게 거리를 재고 선택하면 실패할 이유가 없는 신발입니다.</p>
+<p><strong>2026-11-10 원문 대조 업데이트.</strong> 제조사 공시·실험실 검체·개인 착화 의견과 한국 상품 캐시를 구분합니다. 자체 착화 후기가 아닌 원문 기반 분석입니다.</p><h2>먼저 볼 차이</h2><p>PWRRUN PB 코어와 PWRRUN 프레임은 확인한 구조입니다. 이를50km 이상을 덜 아프게 완주하는 보장으로 바꾸지 않습니다. 개인의 실제 고정과 전환이 먼저입니다.</p><p>Jen은 고정이 좋았지만 Jeff는 급경사 하강에서 앞쪽으로 밀렸습니다. 긴 거리용이라는 이름보다 내리막에서 발이 움직이는지, 물을 건넌 뒤 배수가 필요한지를 구체적으로 볼 수 있습니다.</p><figure><img src="/images/shoes/saucony/xodusultra4/side.jpg" alt="엑소더스 울트라4 — 급경사 고정·끈·배수 조건을 확인" loading="lazy"/><figcaption>엑소더스 울트라4 — 급경사 고정·끈·배수 조건을 확인</figcaption></figure><div class="table-wrap"><table><thead><tr><th>모델</th><th>무게 · 공시 출처 별도 표기</th><th>스택·드롭 · 공시 출처 별도 표기</th><th>힐/전족 SA</th><th>힐/전족 리턴</th></tr></thead><tbody><tr><td>엑소더스 울트라4</td><td>312g</td><td>37.6/31.1mm · 6.5mm</td><td>127/127</td><td>64.9/72.4%</td></tr></tbody></table></div><p>표의 값은 RunRepeat 검체 또는 별도 표시한 DOR 소개 공시입니다. DOR 소개는 독립 실측이 아닙니다. 일반 정책은 남성 US9지만 개별 라벨·폭·보정 여부는 미확인입니다. 공시와 동일한 검체로 단정하지 않습니다. SA는 충격흡수, 리턴은 시험에서 반환된 에너지 비율이며 부드러움·개인 기록·임상 보호를 뜻하지 않습니다. HA는 구방식, AC는 별도 경도 척도여서 환산하지 않습니다. <a href="https://runrepeat.com/testing-methodology" target="_blank" rel="noopener noreferrer">RunRepeat 측정법</a></p><h2>시험한 거리와 보장하는 거리를 구분</h2><p>Jen의65마일·최대4.5시간과 Jeff의 약40마일은 개인 시험입니다. 제품700km 수명이나 모든 러너의50km 통증 감소 근거가 아닙니다. 끈 풀림도 매듭 조건에 따라 두 사람의 의견이 달랐습니다.</p><p>RR 실제 무게는312g이며309g은 브랜드 재전재 소개입니다.30km 이하면 페레그린·50km 이상이면 엑소더스라는 고정 거리표와 현재4만원 가격 차이·한국 와이드 부재를 정정했습니다.</p><h2>엑소더스 울트라4 — 핏과 주행에서 갈리는 지점</h2><p>RR은 록플레이트·카본 플레이트가 없다고 명시합니다. 폼 프레임과 Vibram의 구조를 임상 보호 효과로 바꾸지 않습니다.</p><p>RR 내부 최광폭 96.6mm·엄지 71.6mm·높이 24.5mm입니다. 한국 여성·와이드의 치수로 직접 대입하지 말고 실제 길이·발가락 위 공간·힐 고정을 확인하세요.</p><p>정확 DOR 리뷰는 미확인입니다. RTR Jen(여성US8.5·283g·저볼륨 발)은 정사이즈와 미끄러짐 없는 고정, 편한 반응을 느꼈으나 하천 뒤 배수가 느리고 끈이 풀렸습니다. Western States 코스에서3회65마일·최대4.5시간은 개인 시험입니다. Jeff는 편한 여유에도 급경사 하강에서 앞으로 밀렸고 강한 이중/삼중 매듭에서는 끈 문제가 없었습니다. Jeff 사이즈는 미확인입니다.</p><h2>엑소더스 울트라4 — 공시·한국 판매 확인 범위</h2><p>RR312g·37.6/31.1mm·6.5mm와 재전재 브랜드309/277g(기준 사이즈 미확인)·36/30mm·6mm, RTR소개36/30/6을 나눕니다. 기존309g을 RR실측으로 부르지 않습니다.</p><p>한국 공식 캐시: S21032-245 men M(일반) 정가219,000원·판매캐시219,000원. 현재 가격·폭별 선택 재고는 미확인입니다. 명시WIDE·와이드를2E/4E로 바꾸지 않고 옵션 목록·장바구니를 현재 재고로 쓰지 않습니다.</p><p>RR 높이24.5mm와 Jen의 고정·Jeff의 하강 슬립은 다른 발·검체 조건입니다. RR3.5mm·RTR4mm 러그도 나눕니다. PB8%증량·50km 이상 덜 아픈 완주·30km 기준 추천·700km·현재 한국 와이드 부재를 이번 원문으로 보장하지 않습니다.</p><h2>구매 전에 실제로 확인할 것</h2><p>평소 양말·인솔로 앞쪽 길이와 발톱 위 공간, 끈을 조였을 때 발등 압박, 힐 고정과 칼라 마찰을 확인하세요. 발볼 너비 하나로 전체 핏을 결정하지 않습니다. 교환·반품 조건도 먼저 확인할 수 있습니다.</p><p>트레일에서는 자신의 주요 노면과 오르막·내리막·방향 전환에서 고정과 전환을 살펴야 합니다. 젖은 콘크리트 시험 하나가 바위·진흙 접지를 보장하지 않습니다. 통증·저림을 견뎌야 한다는 규칙이나 모델별 질환 예방 효과는 이번 자료로 확인하지 못했습니다.</p><h2>확인한 원문과 접근 범위</h2><ul><li><a href="https://saucony.co.kr/category/season-off/217/" target="_blank" rel="noopener noreferrer">한국 공식 kr-saucony-sale</a> — opened_original_cached_body; 남성XodusUltra4 KODIAK/WINE S21032-245,219000. 리스트다른상품할인기간은이상품에대입하지않음.</li><li><a href="https://saucony.co.kr/product/%EB%82%A8%EC%84%B1-%EC%97%91%EC%86%8C%EB%8D%94%EC%8A%A4-%EC%9A%B8%ED%8A%B8%EB%9D%BC-4-kodiakwine/139/" target="_blank" rel="noopener noreferrer">한국 공식 kr-xodus-m</a> — opened_original_cached_body; 남성S21032-245,219000/219000,M(일반). 사이즈250~290 5mm단위와300.공식전용표기;여성상품존재여부는별도미확인.</li><li><a href="https://www.roadtrailrun.com/2025/05/saucony-xodus-ultra-4-review-3.html" target="_blank" rel="noopener noreferrer">RTR 정확 모델 착화</a> — 실제 테스터·사이즈·노면을 구분한 개인 의견; DOR리뷰가 아님.</li><li><a href="https://runrepeat.com/saucony-xodus-ultra-4" target="_blank" rel="noopener noreferrer">엑소더스 울트라4 RR 원문</a> — 정확 모델 검체. 제조사 공시와 분리.</li></ul>
 `,
     faqs: [
       {
-        question: '엑소더스 울트라 4와 페레그린 16, 뭘 사야 하나요?',
-        answer:
-          '거리가 기준입니다. 30km 이하 산길이 주력이면 가볍고 4만 원 저렴한 페레그린 16, 50km 이상 울트라 트레일이 목표면 스택이 두꺼운 엑소더스 울트라 4가 후반 피로 관리에 유리합니다.',
+        "question": "실측309g인가요?",
+        "answer": "RR 검체는312g입니다.309g은 기준 사이즈가 미확인인 브랜드 재전재 소개와 구분합니다."
       },
       {
-        question: '이 신발로 빠르게 뛸 수 있나요?',
-        answer:
-          '카본 레이서 같은 반발은 없습니다. 309g의 무게와 안정성 중심 설계라 속도보다 장시간 완주를 목표로 하는 신발입니다.',
+        "question": "50km 넘으면 덜 아픈가요?",
+        "answer": "개인 시험 거리가 모든 러너의 통증 감소를 입증하지 않습니다."
       },
+      {
+        "question": "페레그린과 거리로 나누면 되나요?",
+        "answer": "고정 거리만으로 배정할 근거는 없습니다. 실제 앞코·하강 고정·로커·노면을 비교할 수 있습니다."
+      }
     ],
+    updatedAt: "2026-11-10",
   },
   {
     id: "mizuno-hyperwarp-elite-review",

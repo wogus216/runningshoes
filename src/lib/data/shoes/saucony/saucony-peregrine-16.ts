@@ -1,128 +1,143 @@
 import type { Shoe } from '@/types/shoe';
 
+// 원문 재확인:2026-11-10. 확인 범위와 한계는 verification 참조.
 export const shoe: Shoe = {
   id: 'saucony-peregrine-16',
   slug: 'saucony-peregrine-16',
   brand: 'Saucony',
   name: '페레그린 16',
   image: '/images/shoes/saucony/peregrine16/side.jpg',
-  images: ['/images/shoes/saucony/peregrine16/side.jpg'],
+  images: [
+    '/images/shoes/saucony/peregrine16/side.jpg',
+  ],
   category: '트레일',
   rating: 4.5,
-  status: 'new',
-  price: 179000,
-  description:
-    '써코니 트레일의 표준 모델. 16세대에서 아웃솔이 Vibram Megagrip으로 바뀌면서 젖은 바위·진흙 접지력이 크게 개선됐고, PWRRUN 폼이 소폭 부드러워지며 스택도 1mm씩 올랐습니다.',
-  oneliner: 'Vibram Megagrip 채용 — 드롭 4mm의 민첩한 트레일 표준',
-  editorComment:
-    '페레그린 16의 변화는 아웃솔에 집중돼 있습니다. 전 세대까지의 자체 러버에서 Vibram Megagrip + 트랙션 러그로 바뀌면서, 젖은 바위처럼 미끄러운 노면에서의 접지가 눈에 띄게 좋아졌다는 평이 일관됩니다. RunRepeat 실측 기준 러그 깊이는 15세대의 4.7mm에서 3.5mm로 오히려 낮아졌는데, 접지력 계수(CoF) 0.72로 트레일화 평균(0.67)을 웃돌아 고무 자체의 그립이 올라가 오르막·내리막 모두에서 손해가 없다는 것이 실측으로도 확인됩니다.\n\n성격은 "민첩한 트레일화"입니다. RunRepeat 실측 스택은 힐 31.7mm·전족 26.9mm(브랜드 공식 32/28mm와 거의 일치), 드롭은 4.8mm(브랜드 표기 4mm)로 낮고 평평해, 기술적인 바위·나무뿌리 구간에서 발밑 감각이 살아 있습니다. 충격흡수는 SA 힐 124·전족 106으로 트레일화 평균(122 SA)과 비슷한 수준이고, 에너지 리턴은 58.1%/64.5%로 평균(59.6%)을 살짝 웃돕니다. 미드솔 경도는 31.3 AC로 15세대(31.6 AC)와 거의 같아 쿠셔닝감은 세대 간 큰 변화가 없습니다. 반대로 울트라 거리의 충격 누적을 견디는 용도라면 스택이 더 높은 엑소더스 울트라 4(36/30mm) 쪽이 맞습니다.\n\n사이즈·구매 가이드: 국내 공식몰에 와이드 옵션이 함께 유통됩니다. RunRepeat 실측 토박스 너비는 70.3mm로 트레일화 평균(74.3mm)보다 4.0mm 좁고 RunRepeat도 "테이퍼드(좁아지는) 토박스"를 단점으로 꼽았습니다 — 발볼이 넓은 러너는 매장 착화를 권합니다. 아웃솔 마모는 0.5mm로 15세대 대비 거의 절반(내구성 실측 최상위권)이지만, 토박스 내구성은 5점 만점에 2점(평균 3.1점)으로 상대적으로 약한 편입니다. 드롭 4mm대는 로드화(보통 8~10mm)에서 넘어오면 종아리·아킬레스 부하가 확실히 다르니, 첫 몇 회는 거리를 줄여 적응하세요. 2026-10-20 기준 국내 공식몰 2종(남성 와이드·여성) 모두 정가 179,000원이며 할인은 없습니다.',
-  tags: ['트레일', '비브람', '경량', '기술적 지형'],
-
+  description: 'PWRRUN EVA · PWRRUN+ 인솔 · 전족 플라스틱 Rock Plate 구조의 페레그린 16. RunRepeat 실험실 검체 278g·31.7/26.9mm. 한국 현재 정가 미확인.',
+  oneliner: 'PWRRUN EVA · PWRRUN+ 인솔 · 전족 플라스틱 Rock Plate · 278g (RunRepeat 실험실 검체)',
+  editorComment: '2026-11-10 원문 재확인. 한국 공식 캐시: S11066-130 women M(일반) 정가179,000원·판매캐시179,000원; S21067-101 men 와이드 정가179,000원·판매캐시179,000원. 현재 가격·폭별 선택 재고는 미확인입니다. 명시WIDE·와이드를2E/4E로 바꾸지 않고 옵션 목록·장바구니를 현재 재고로 쓰지 않습니다. 할인161,100원은 종료일2026-10-26인 캐시이므로 현재 할인가로 안내하지 않습니다. RR278g·31.7/26.9mm·4.8mm와 RR 재전재 브랜드271/239g(기준 사이즈 미확인)·32/28mm·4mm, RTR소개32/28/4와 실제US10 301g을 나눕니다. RR 엄지70.3mm·사이즈 투표와 Jeff의 여유 있는 앞코·정사이즈 체감은 다른 조건입니다. 러그RR3.5mm·RTR4mm를 구분합니다.0.5mm 국소 마모를600km로 바꾸거나0.72 콘크리트 접지로 오르내림 손해 없음·아킬레스 적응 기간을 보장하지 않습니다. 정확 DOR 리뷰는 미확인입니다. RTR Jeff Valliere의 실제 남성US10 검체는301g이며 정사이즈·조금 여유 있는 앞코와 좋은 고정, 부드럽지만 예측 가능한 폼을 느꼈습니다. 볼더 바위·느슨한 경사·일부 눈/얼음의 초기 시험이고 정식 젖은 조건 시험은 부족했습니다. 젖은 바위 호평의 관찰과 예측을 구분합니다. RR 내부 최광폭 96.9mm·엄지 70.3mm·높이 27.4mm입니다. 한국 여성·와이드의 치수로 직접 대입하지 말고 실제 길이·발가락 위 공간·힐 고정을 확인하세요. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
+  tags: [
+    '트레일',
+    '비브람',
+    '경량',
+    '기술적 지형',
+  ],
   specs: {
     weight: 278,
     cushioning: 8,
     responsiveness: 7,
     stability: 7,
     drop: 4.8,
-    durability: 600,
   },
-
   biomechanics: {
-    stackHeight: { heel: 31.7, forefoot: 26.9 },
+    stackHeight: {
+      heel: 31.7,
+      forefoot: 26.9,
+    },
     drop: 4.8,
     carbonPlate: false,
-    plateType: null,
-    midsoleType: 'PWRRUN (16세대에서 소폭 소프트화) + 록플레이트',
-    optimalPace: '5:30-8:00 min/km (트레일 기준)',
+    plateType: 'Forefoot plastic rock plate',
+    midsoleType: 'PWRRUN EVA · PWRRUN+ 인솔 · 전족 플라스틱 Rock Plate',
   },
-
-  injuryPrevention: {
-    plantarFasciitis: 'good',
-    achillesTendinopathy: 'caution',
-    kneeIssues: 'good',
-    shinSplints: 'caution',
-  },
-
   koreanFootFit: {
     toBoxWidth: 'narrow',
-    flatFootCompatibility: 'good',
-    wideOptions: true,
     winterCompatibility: 'excellent',
     summerCompatibility: 'good',
   },
-
   priceAnalysis: {
-    msrp: 179000,
-    streetPrice: 143200,
-    costPerKm: 298,
     valueRating: 8,
     priceTier: 'mid',
-    alternatives: ['saucony-xodus-ultra-4', 'hoka-speedgoat-7', 'salomon-ultra-glide-4'],
-    valueAdvantages: [
-      'Vibram Megagrip 채용 — 젖은 노면 접지력이 세대 최대 개선점',
-      '와이드 옵션 국내 유통',
-      '국내 정가 179,000원 (2026-10-20 공식몰 확인, 할인 없음)',
-      '드롭 4mm의 낮고 평평한 구성 — 기술적 지형에서 발밑 감각 유지',
+    alternatives: [
+      'saucony-xodus-ultra-4',
+      'hoka-speedgoat-7',
+      'salomon-ultra-glide-4',
     ],
   },
-
   targetUsers: {
     recommended: [
-      '바위·나무뿌리가 많은 기술적 트레일을 자주 달리는 러너',
-      '젖은 노면·계곡 구간에서 접지력이 최우선인 러너',
-      '낮은 드롭의 지면 감각을 선호하는 트레일 러너',
-      '발볼이 넓어 트레일화 와이드가 필요한 러너',
+      '실제 규격·주요 노면에서 고정과 전환을 비교하려는 러너',
+      '공시·검체·리뷰어의 노면과 발형 조건을 구분하려는 러너',
     ],
     notRecommended: [
-      '울트라 거리 위주 러너 (스택 32mm — 엑소더스 울트라 4 권장)',
-      '로드 위주 러너 (러그가 아스팔트에서 불필요하게 닳음)',
-      '드롭 8mm 이상에 적응된 러너 (4mm — 종아리 부하 증가)',
-      '최대 쿠션을 원하는 러너',
+      '시착·주행에서 압박·마찰·불편한 전환이 남는 경우',
+      '콘크리트 시험을 모든 바위·진흙 안전으로 읽는 경우',
     ],
   },
-
   features: [
-    '아웃솔을 Vibram Megagrip + 트랙션 러그로 전면 교체 — 16세대 핵심 변화',
-    'RunRepeat 실측 러그 깊이 4.7mm → 3.5mm로 낮아졌으나 접지력(CoF 0.72)은 트레일화 평균(0.67) 상회',
-    'RunRepeat 실측 스택 힐 31.7mm·전족 26.9mm(브랜드 공식 32/28mm), 미드솔 경도 31.3 AC로 전작과 거의 동일',
-    '드롭 4.8mm(RunRepeat 실측, 브랜드 표기 4mm) — 써코니 라인 중 가장 낮은 축',
-    '국내 179,000원 · 와이드 옵션 유통(2026-10-20 공식몰 확인)',
-    '충격흡수 힐 124 SA (RunRepeat 실측)',
-    '에너지 리턴 전족부 64.5% (RunRepeat 실측)',
+    'PWRRUN EVA · PWRRUN+ 인솔 · 전족 플라스틱 Rock Plate',
+    '278g · 31.7/26.9mm · 드롭 4.8mm (RunRepeat 실험실 검체)',
+    '전족의 가벼운 플라스틱 록플레이트는 카본이 아닙니다. Vibram Megagrip과 플레이트 존재만으로 모든 바위·진흙 접지를 보장하지 않습니다.',
+    'RR 내부 최광폭 96.9mm·엄지 70.3mm·높이 27.4mm입니다. 한국 여성·와이드의 치수로 직접 대입하지 말고 실제 길이·발가락 위 공간·힐 고정을 확인하세요.',
   ],
-
   reviews: [
     {
-      userType: '에디터 분석',
-      rating: 88,
-      text: '페레그린은 오랫동안 "무난한 트레일 표준"이었는데, 16세대에서 Vibram Megagrip을 얻으면서 약점이던 젖은 노면 접지가 정리됐습니다. RunRepeat 실측으로 러그 깊이는 4.7mm에서 3.5mm로 낮아졌지만 접지력 계수(CoF)는 0.72로 트레일화 평균(0.67)을 웃돌아, 낮아진 러그에도 그립이 개선됐다는 평가가 실측으로 뒷받침됩니다. 스택은 힐 31.7mm·전족 26.9mm(브랜드 공식 32/28mm)로 여전히 낮은 편이고 드롭도 4.8mm라, 성격은 "푹신하게 오래"보다 "발밑을 읽으며 민첩하게" 쪽입니다. 충격흡수(SA 힐 124)와 에너지 리턴(58.1%/64.5%)은 트레일화 평균과 비슷하거나 소폭 상회하는 수준입니다. 기술적 지형에서 이 구성이 강점이 되지만, 장시간 충격 누적에는 불리하니 울트라 거리는 다른 모델을 보는 편이 낫습니다. 아웃솔 마모는 0.5mm로 15세대 대비 거의 절반이라 내구성은 뛰어나지만, 토박스 내구성은 2/5(평균 3.1)로 상대적으로 약합니다.',
+      userType: '원문 기반 에디터 분석',
+      source: 'editor',
+      sourceUrl: 'https://runrepeat.com/saucony-peregrine-16',
+      text: 'RR278g·31.7/26.9mm·4.8mm와 RR 재전재 브랜드271/239g(기준 사이즈 미확인)·32/28mm·4mm, RTR소개32/28/4와 실제US10 301g을 나눕니다. RR 엄지70.3mm·사이즈 투표와 Jeff의 여유 있는 앞코·정사이즈 체감은 다른 조건입니다. 러그RR3.5mm·RTR4mm를 구분합니다.0.5mm 국소 마모를600km로 바꾸거나0.72 콘크리트 접지로 오르내림 손해 없음·아킬레스 적응 기간을 보장하지 않습니다.',
     },
     {
-      userType: '엑소더스 울트라 4와 비교 — 거리로 갈린다',
-      text: '써코니 트레일 두 갈래의 기준은 거리입니다. 페레그린 16(179,000원)은 낮고 민첩한 표준 트레일화이고, 엑소더스 울트라 4(219,000원)는 이름 그대로 울트라 거리용으로 스택과 쿠션이 더 두껍습니다. 하프~30km 수준의 산길이 주력이면 페레그린이 가볍고 값도 4만 원 저렴합니다. 50km 이상, 특히 후반부 충격 누적이 부담되는 거리라면 엑소더스 쪽입니다. 2026-10-20 공식몰 기준 둘 다 할인 없이 정가라 가격 차이는 4만 원입니다.',
-    },
-    {
-      userType: '로드 러너의 트레일 입문 조언',
-      text: '로드화만 신다가 트레일로 넘어올 때 가장 크게 체감되는 것이 드롭입니다. 로드 데일리는 보통 8~10mm인데 페레그린 16은 4mm라, 뒤꿈치가 낮아진 만큼 종아리와 아킬레스에 걸리는 부하가 늘어납니다. 첫 몇 회는 거리를 절반으로 줄여 적응 기간을 두세요. 반대로 익숙해지면 낮은 드롭이 불규칙한 노면에서 발목 흔들림을 줄여주는 장점으로 바뀝니다. 러그가 있는 아웃솔은 아스팔트에서 빨리 닳으니, 접근 구간이 긴 코스라면 산 입구에서 갈아신는 운용도 고려할 만합니다.',
+      userType: '외부 착화 의견 요약 · Road Trail Run',
+      source: 'editor',
+      sourceUrl: 'https://www.roadtrailrun.com/2025/12/saucony-peregrine16-review-vibram-and.html',
+      text: '정확 DOR 리뷰는 미확인입니다. RTR Jeff Valliere의 실제 남성US10 검체는301g이며 정사이즈·조금 여유 있는 앞코와 좋은 고정, 부드럽지만 예측 가능한 폼을 느꼈습니다. 볼더 바위·느슨한 경사·일부 눈/얼음의 초기 시험이고 정식 젖은 조건 시험은 부족했습니다. 젖은 바위 호평의 관찰과 예측을 구분합니다.',
     },
   ],
-
   detailedSpecs: {
-    weight: '278g (RunRepeat 실측 US M9) · 브랜드 공식 271g(남성)/239g(여성)',
-    stackHeight: '힐 31.7mm / 포어풋 26.9mm (RunRepeat 실측) · 브랜드 공식 32/28mm',
-    drop: '4.8mm (RunRepeat 실측) · 브랜드 공식 4mm',
-    midsole: 'PWRRUN (16세대에서 소폭 소프트화, 경도 31.3 AC — RunRepeat 실측)',
-    plate: '록플레이트 (돌 보호)',
-    outsole: 'Vibram Megagrip + 트랙션 러그 3.5mm(RunRepeat 실측, 15세대 4.7mm) · 접지력 CoF 0.72 · 마모 0.5mm',
-    upper: '트레일용 메쉬 · 토박스 내구성 2/5(RunRepeat, 평균 3.1)',
-    width: '좁은 편 — RunRepeat 실측 토박스 70.3mm(트레일 평균 74.3mm), 랩: "Saucony has retained the same tapered toebox shape" · 와이드 옵션 국내 유통(남성 와이드, 2026-10-20 확인)',
-    durability: '600km+ (아웃솔 마모 0.5mm — RunRepeat 실측, 15세대 대비 절반)',
-    price: '179,000원 (2026-10-20 써코니코리아 공식몰 확인, 할인 없음)',
-    costPerKm: '약 ₩298/km (600km, 정가 기준)',
-    footType: '중립 / 트레일',
-    landingPattern: '미드풋 중심',
+    weight: '278g (RunRepeat 실험실 검체). RR278g·31.7/26.9mm·4.8mm와 RR 재전재 브랜드271/239g(기준 사이즈 미확인)·32/28mm·4mm, RTR소개32/28/4와 실제US10 301g을 나눕니다.',
+    stackHeight: '31.7/26.9mm (RunRepeat 실험실 검체, 힐/전족부). 출처별 다른 공시는 무게 항목 참조.',
+    drop: '4.8mm (RunRepeat 실험실 검체). RR278g·31.7/26.9mm·4.8mm와 RR 재전재 브랜드271/239g(기준 사이즈 미확인)·32/28mm·4mm, RTR소개32/28/4와 실제US10 301g을 나눕니다.',
+    midsole: 'PWRRUN EVA · PWRRUN+ 인솔 · 전족 플라스틱 Rock Plate. 주폼 31.3AC, 힐/전족부 SA 124/106·에너지 리턴 58.1/64.5%. RR 엄지70.3mm·사이즈 투표와 Jeff의 여유 있는 앞코·정사이즈 체감은 다른 조건입니다. 러그RR3.5mm·RTR4mm를 구분합니다.0.5mm 국소 마모를600km로 바꾸거나0.72 콘크리트 접지로 오르내림 손해 없음·아킬레스 적응 기간을 보장하지 않습니다.',
+    plate: '전족의 가벼운 플라스틱 록플레이트는 카본이 아닙니다. Vibram Megagrip과 플레이트 존재만으로 모든 바위·진흙 접지를 보장하지 않습니다.',
+    width: 'RR 내부 최광폭 96.9mm·엄지 부위 70.3mm·높이 27.4mm. RR 내부 최광폭 96.9mm·엄지 70.3mm·높이 27.4mm입니다. 한국 여성·와이드의 치수로 직접 대입하지 말고 실제 길이·발가락 위 공간·힐 고정을 확인하세요.',
+    durability: '검증된 공통 수명 km 미확인. 국소 마모·짧은 착화 후기를 주행 수명으로 환산하지 않습니다.',
+    price: '한국 공식 캐시: S11066-130 women M(일반) 정가179,000원·판매캐시179,000원; S21067-101 men 와이드 정가179,000원·판매캐시179,000원. 현재 가격·폭별 선택 재고는 미확인입니다. 명시WIDE·와이드를2E/4E로 바꾸지 않고 옵션 목록·장바구니를 현재 재고로 쓰지 않습니다. 할인161,100원은 종료일2026-10-26인 캐시이므로 현재 할인가로 안내하지 않습니다.',
   },
-
-  similarShoes: ['saucony-xodus-ultra-4', 'hoka-speedgoat-7', 'adidas-terrex-agravic-4'],
-  purchaseLinks: [{ store: '네이버', url: 'https://search.shopping.naver.com/search/all?query=써코니+페레그린+16' }],
+  similarShoes: [
+    'saucony-xodus-ultra-4',
+    'hoka-speedgoat-7',
+    'adidas-terrex-agravic-4',
+  ],
+  purchaseLinks: [
+    {
+      store: '네이버',
+      url: 'https://search.shopping.naver.com/search/all?query=써코니+페레그린+16',
+    },
+  ],
+  verification: {
+    checkedAt: '2026-11-10',
+    scope: '한국 상품 조건, 해외 실험실·제조사 공시와 외부 착화 의견의 확인 범위를 구분했습니다. 제품 전체 검증 완료 표지가 아닙니다.',
+    sources: [
+      {
+        label: '한국 공식 kr-peregrine-list',
+        url: 'https://saucony.co.kr/category/%ED%8E%98%EB%A0%88%EA%B7%B8%EB%A6%B0/158/',
+        note: 'opened_original_cached_body; 여성S11066-130/남성와이드S21067-101 정가179000,할인161100. 할인공시2026-09-28~10-26으로 조사일 이전 종료;현재할인으로 쓰지않음.',
+      },
+      {
+        label: '한국 공식 kr-peregrine-w',
+        url: 'https://saucony.co.kr/product/detail.html?cate_no=158&display_group=1&product_no=212',
+        note: 'opened_original_cached_body; 여성AQUA/CITRON,S11066-130,발볼 M(일반),179000/161100,옵션220~255. 구매/품절동시템플릿;실시간활성미검증.',
+      },
+      {
+        label: 'RTR 정확 모델 착화',
+        url: 'https://www.roadtrailrun.com/2025/12/saucony-peregrine16-review-vibram-and.html',
+        note: '실제 테스터·사이즈·노면을 구분한 개인 의견; DOR리뷰가 아님.',
+      },
+      {
+        label: 'RunRepeat 동세대 실험실 원문',
+        url: 'https://runrepeat.com/saucony-peregrine-16',
+        note: '공시 일반 검체 정책은 남성 US9. 실제 검체 라벨·폭 미확인. 278g·31.7/26.9mm·4.8mm. RR 엄지70.3mm·사이즈 투표와 Jeff의 여유 있는 앞코·정사이즈 체감은 다른 조건입니다. 러그RR3.5mm·RTR4mm를 구분합니다.0.5mm 국소 마모를600km로 바꾸거나0.72 콘크리트 접지로 오르내림 손해 없음·아킬레스 적응 기간을 보장하지 않습니다.',
+      },
+      {
+        label: 'RunRepeat 측정법',
+        url: 'https://runrepeat.com/testing-methodology',
+        note: 'AC·HA·HC, SA·에너지 리턴, BR·구방식1~5와 내부/외부 폭을 구분합니다. 일반 정책은 개별 라벨 확인과 다릅니다.',
+      },
+    ],
+    limitations: [
+      '모델별 임상 예방·치료 등급, 공통 최적 페이스·주행 수명·km당 비용은 미확인으로 제거했습니다.',
+      '에디터 평점·1~10점·발볼 및 계절 분류·구매 링크는 모든 항목을 새로 검증한 수치나 임상 효과가 아닙니다.',
+      '판매 조건은 확인한 상품·시점에 한정합니다. 미확인을 미출시·단종·전국 재고 없음으로 해석하지 않습니다.',
+      '정확한 동세대 DOR 개별 착화 리뷰 미확인. 다른 세대로 대체하지 않음.',
+    ],
+  },
 };
