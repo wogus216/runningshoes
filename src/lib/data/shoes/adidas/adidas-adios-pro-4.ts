@@ -6,6 +6,8 @@ export const shoe: Shoe = {
     slug: "adidas-adios-pro-4",
     brand: "Adidas",
     name: "아디제로 아디오스 프로 4",
+  imageCaption: "adios pro 4 사진(JR1094 · Cloud White / Core Black / Silver Metallic)은 아디다스 공식 상품 갤러리와 모델·색상·구도를 대조했습니다. 사진 품번을 한국 판매 규격·가격으로 읽지 마세요.",
+  imageSource: {"title":"아디다스 공식 상품 갤러리","url":"https://www.adidas.com/kw/en/adizero-adios-pro-4-shoes/JR1094.html"},
     image: "/images/shoes/adidas/adiospro4/adiospro1.webp",
     images: [
       "/images/shoes/adidas/adiospro4/adiospro1.webp",

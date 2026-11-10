@@ -6,6 +6,8 @@ export const shoe: Shoe = {
     slug: "adidas-adios-pro-5",
     brand: "Adidas",
     name: "아디제로 아디오스 프로 5",
+  imageCaption: "adios pro 5 사진(KI8294 · Solar Turbo / Core Black / Lucid Red)은 아디다스 공식 상품 갤러리와 모델·색상·구도를 대조했습니다. 사진 품번을 한국 판매 규격·가격으로 읽지 마세요.",
+  imageSource: {"title":"아디다스 공식 상품 갤러리","url":"https://www.adidas.co.kr/아디제로-아디오스-프로-5-러닝화/KI8294.html"},
     image: "/images/shoes/adidas/adiospro5/side.webp",
     images: [
       "/images/shoes/adidas/adiospro5/side.webp"

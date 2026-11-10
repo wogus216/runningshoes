@@ -6,10 +6,11 @@ export const shoe: Shoe = {
     slug: "adidas-supernova-rise-3",
     brand: "Adidas",
     name: "슈퍼노바 라이즈 3",
+  imageCaption: "supernova rise 3 사진(JP8689 · Aurora Onix / Silver Metallic / Lucid Orange)은 아디다스 공식 상품 갤러리와 모델·색상·구도를 대조했습니다. 사진 품번을 한국 판매 규격·가격으로 읽지 마세요.",
+  imageSource: {"title":"아디다스 공식 상품 갤러리","url":"https://www.adidas.de/en/supernova-rise-3-running-shoes/JP8689.html"},
     image: "/images/shoes/adidas/supernovarise3/main.webp",
     images: [
       "/images/shoes/adidas/supernovarise3/main.webp",
-      "/images/shoes/adidas/supernovarise3/supernova2.webp"
     ],
     category: "쿠션화",
     description: "Dreamstrike+ · Primeweave · LIGHTTRAXION 구조의 슈퍼노바 라이즈 3. RunRepeat 실험실 검체 264g·35/27.2mm. 한국 현재 정가 미확인.",

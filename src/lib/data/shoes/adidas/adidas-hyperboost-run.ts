@@ -6,6 +6,8 @@ export const shoe: Shoe = {
     slug: "adidas-hyperboost-run",
     brand: "Adidas",
     name: "하이퍼부스트 런",
+  imageCaption: "hyperboost run 사진(IH9467 · Cloud White / Core Black / Core Black)은 아디다스 공식 상품 갤러리와 모델·색상·구도를 대조했습니다. 사진 품번을 한국 판매 규격·가격으로 읽지 마세요.",
+  imageSource: {"title":"아디다스 공식 상품 갤러리","url":"https://www.adidas.com/qa/en/hyperboost-run-hyperboost-pro-running-shoes/IH9467.html"},
     image: "/images/shoes/adidas/hyperboost-run/side.webp",
     images: [
       "/images/shoes/adidas/hyperboost-run/side.webp",

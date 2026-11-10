@@ -6,9 +6,10 @@ export const shoe: Shoe = {
     slug: "adidas-adizero-sl2",
     brand: "Adidas",
     name: "아디제로 SL2",
-    image: "/images/shoes/adidas/adizerosl2.webp",
+  imageCaption: "adizero sl2 사진은 RunRepeat 실험실 검체와 대조했습니다. 검체의 정확한 상품 품번은 확인되지 않았으며 한국 판매 색상·규격과 구분하세요.",
+  imageSource: {"title":"RunRepeat 실험실 리뷰","url":"https://runrepeat.com/adidas-adizero-sl2"},
+    image: "/images/shoes/adidas/adizerosl2/side.webp",
     images: [
-      "/images/shoes/adidas/adizerosl2.webp",
       "/images/shoes/adidas/adizerosl2/side.webp",
       "/images/shoes/adidas/adizerosl2/back.webp"
     ],

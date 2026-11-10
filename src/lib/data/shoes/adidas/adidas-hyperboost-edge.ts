@@ -6,11 +6,12 @@ export const shoe: Shoe = {
     slug: "adidas-hyperboost-edge",
     brand: "Adidas",
     name: "하이퍼부스트 엣지",
+  imageCaption: "하이퍼부스트 엣지 갤러리의 측면 사진은 RunRepeat 실험실 검체, 사선 사진은 아디다스 공식 보도자료 사진입니다. 실물 사진의 정확한 품번은 확인되지 않았습니다.",
+  imageSource: {"title":"RunRepeat 실험실 리뷰","url":"https://runrepeat.com/adidas-hyperboost-edge"},
     image: "/images/shoes/adidas/hyperboost-edge/side.webp",
     images: [
       "/images/shoes/adidas/hyperboost-edge/side.webp",
-      "/images/shoes/adidas/hyperboost-edge/angle.webp",
-      "/images/shoes/adidas/hyperboost-edge/back.webp"
+      "/images/shoes/adidas/hyperboost-edge/official-press-713906-angle.jpg",
     ],
     category: "데일리",
     description: "Hyperboost Pro · Primeweave · LIGHTTRAXION 구조의 하이퍼부스트 엣지. RunRepeat 실험실 검체 247g·44.6/38.1mm. 한국 현재 정가 미확인.",
@@ -163,6 +164,11 @@ export const shoe: Shoe = {
           "label": "Doctors of Running 동세대 원문",
           "url": "https://www.doctorsofrunning.com/adidas-hyperboost-edge-review-2026/",
           "note": "글로벌 공식255g은 남성8.5(사이즈 체계 미명시), 힐45mm·드롭6mm입니다. DOR255g(남성8.5체계미명시)/268g(남성10실측)·45/39mm·6mm, RR247g·44.6/38.1mm·6.5mm는 다른 조건입니다. 2026-03-05 발표·글로벌03-17 출시이며 한국03-23 출시는 이번 범위에서 미확인입니다."
+        },
+        {
+          "label": "adidas 공식 보도자료 사진",
+          "url": "https://news.adidas.com/global/hyperboost-edge/s/cd59c81c-33ce-4c88-93aa-a5b7ef89ae74",
+          "note": "갤러리의 사선 사진 출처. 실물 품번·현재 한국 상품 옵션 증거 아님."
         },
         {
           "label": "RunRepeat 측정법",

@@ -6,14 +6,14 @@ export const shoe: Shoe = {
     slug: "adidas-adizero-evo-sl",
     brand: "Adidas",
     name: "아디제로 Evo SL",
+  imageCaption: "아디제로 EVO SL 사진은 아디다스 공식 여성 상품 JH6208(Cloud White / Core Black)과 대조했습니다. 갤러리에는 제품 사진과 신발을 착용한 근접 사진이 있으며 캠페인 인물 사진 두 장은 제외했습니다. 한국 판매 규격과 구분하세요.",
+  imageSource: {"title":"아디다스 공식 상품 갤러리","url":"https://www.adidas.com/kw/en/adizero-evo-sl-shoes/JH6208.html"},
     image: "/images/shoes/adidas/evosl/side.webp",
     images: [
       "/images/shoes/adidas/evosl/side.webp",
       "/images/shoes/adidas/evosl/angle.webp",
-      "/images/shoes/adidas/evosl/back.webp",
       "/images/shoes/adidas/evosl/outsole.webp",
       "/images/shoes/adidas/evosl/top.webp",
-      "/images/shoes/adidas/evosl/detail.webp"
     ],
     category: "데일리",
     price: 209000,

@@ -6,6 +6,8 @@ export const shoe: Shoe = {
   slug: 'adidas-terrex-agravic-4',
   brand: 'Adidas',
   name: '테렉스 아그라빅 4',
+  imageCaption: "terrex agravic 4 사진(KJ8872 · Cloud White / Core Black / Semi Impact Orange)은 아디다스 공식 상품 갤러리와 모델·색상·구도를 대조했습니다. 사진 품번을 한국 판매 규격·가격으로 읽지 마세요.",
+  imageSource: {"title":"아디다스 공식 상품 갤러리","url":"https://www.adidas.at/terrex-agravic-4-trail-running-schuh/KJ8872.html"},
   image: '/images/shoes/adidas/agravic4/side.webp',
   category: '트레일',
   description: 'LIGHTSTRIKE · Continental 아웃솔 · 중창 메시 층 구조의 테렉스 아그라빅 4. RunRepeat 실험실 검체 283g·32.6/23.5mm. 한국 현재 정가 미확인.',

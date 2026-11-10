@@ -495,3 +495,22 @@ Horizon8의 기존 BOA 다이얼 신발 사진 5장은 공식 WAVE HORIZON 8과 
 | hoka-speedgoat-6 | 실물 품번 미확인 | [원문](https://believeintherun.com/shoe-reviews/hoka-speedgoat-6-review/) |
 
 가비오타 6 상단 사진만 공식 와이드 상품 갤러리에서 대조했습니다. 마하 X 3은 여성 사진 품번입니다. 사진 출처는 현재 한국 판매 옵션·가격·핏·촬영권리의 근거가 아닙니다.
+
+## 2026-11-11 Adidas 10종 사진 출처 대조
+
+기존 사진 30개 중 25개는 정확한 원본과 대조했습니다. 출처 미확인 사진 5개는 대표 이미지나 갤러리에서 제외했습니다. EVO SL의 캠페인 인물 사진 두 장도 제품 갤러리에서 제외했습니다. SL2·슈퍼노바 라이즈2는 확인된 실험실 측면 사진으로 대표 이미지를 바꿨고, 관련 블로그 사진을 함께 수정했습니다. 하이퍼부스트 엣지에는 공식 보도자료 사진 원본을 한 장 추가했습니다.
+
+| 모델 | 사진 식별 | 출처 |
+|---|---|---|
+| adidas-adios-pro-4 | JR1094 | [공식 상품 갤러리](https://www.adidas.com/kw/en/adizero-adios-pro-4-shoes/JR1094.html) |
+| adidas-adios-pro-5 | KI8294 | [공식 상품 갤러리](https://www.adidas.co.kr/아디제로-아디오스-프로-5-러닝화/KI8294.html) |
+| adidas-adizero-evo-sl | JH6208 | [공식 상품 갤러리](https://www.adidas.com/kw/en/adizero-evo-sl-shoes/JH6208.html) |
+| adidas-adizero-sl2 | 실물 품번 미확인 | [실험실 리뷰](https://runrepeat.com/adidas-adizero-sl2) |
+| adidas-boston-13 | JR4791 | [공식 상품 갤러리](https://www.adidas.com/om/en/adizero-boston-13-eqt-shoes/JR4791.html) |
+| adidas-hyperboost-edge | 실물 품번 미확인 | [실험실 리뷰](https://runrepeat.com/adidas-hyperboost-edge) |
+| adidas-hyperboost-run | IH9467 | [공식 상품 갤러리](https://www.adidas.com/qa/en/hyperboost-run-hyperboost-pro-running-shoes/IH9467.html) |
+| adidas-supernova-rise-2 | 실물 품번 미확인 | [실험실 리뷰](https://runrepeat.com/adidas-supernova-rise-2) |
+| adidas-supernova-rise-3 | JP8689 | [공식 상품 갤러리](https://www.adidas.de/en/supernova-rise-3-running-shoes/JP8689.html) |
+| adidas-terrex-agravic-4 | KJ8872 | [공식 상품 갤러리](https://www.adidas.at/terrex-agravic-4-trail-running-schuh/KJ8872.html) |
+
+하이퍼부스트 엣지의 [공식 보도자료 사선 사진](https://news.adidas.com/global/hyperboost-edge/s/cd59c81c-33ce-4c88-93aa-a5b7ef89ae74)은 별도 원본입니다. EVO SL의 JH6208은 여성 사진 품번입니다. 해외 사진 품번을 한국 판매 옵션·가격·재고 근거로 쓰지 않습니다. 촬영자·이용 허가와 제품 전체 스펙은 사진 대조 범위 밖입니다.
