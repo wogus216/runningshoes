@@ -6,6 +6,8 @@ export const shoe: Shoe = {
     slug: "hoka-arahi-8",
     brand: "Hoka",
     name: "아라히 8",
+  imageCaption: "arahi 8 사진(1168690-BWHT · Black / White)은 HOKA 공식 상품 갤러리와 모델·색상·구도를 대조했습니다. 사진 품번을 한국 판매 규격·가격으로 읽지 마세요.",
+  imageSource: {"title":"HOKA 공식 상품 갤러리","url":"https://au.hoka.com/products/m-arahi-8-1168690-bwht-bwht"},
     image: "/images/shoes/hoka/arahi8/side.webp",
     images: [
       "/images/shoes/hoka/arahi8/side.webp",

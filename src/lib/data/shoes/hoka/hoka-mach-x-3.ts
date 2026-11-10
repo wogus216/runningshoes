@@ -6,6 +6,8 @@ export const shoe: Shoe = {
   slug: 'hoka-mach-x-3',
   brand: 'Hoka',
   name: '마하 X 3',
+  imageCaption: "마하 X 3 사진은 공식 여성 상품 1168721-WNL(White / Neon Lime)과 대조했습니다. 사진을 남성 상품의 규격·색상 증거로 읽지 마세요.",
+  imageSource: {"title":"HOKA 공식 상품 갤러리","url":"https://au.hoka.com/products/w-mach-x-3-1168721-wnl-wnl"},
   image: '/images/shoes/hoka/machX3/side.webp',
   images: [
     '/images/shoes/hoka/machX3/side.webp',

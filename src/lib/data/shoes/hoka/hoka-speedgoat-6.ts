@@ -6,6 +6,8 @@ export const shoe: Shoe = {
     slug: "hoka-speedgoat-6",
     brand: "Hoka",
     name: "스피드고트 6",
+  imageCaption: "스피드고트 6 사진은 Believe in the Run 착화 리뷰의 현장 사진입니다. 정확한 사진 품번·공식 색상명은 확인되지 않았습니다.",
+  imageSource: {"title":"Believe in the Run 착화 리뷰","url":"https://believeintherun.com/shoe-reviews/hoka-speedgoat-6-review/"},
     image: "/images/shoes/hoka/speedgoat6/side.webp",
     images: [
       "/images/shoes/hoka/speedgoat6/side.webp",

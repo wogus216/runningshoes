@@ -6,6 +6,8 @@ export const shoe: Shoe = {
     slug: "hoka-mach-6",
     brand: "Hoka",
     name: "마하 6",
+  imageCaption: "mach 6 사진(1147790-WNL · White / Neon Lime)은 HOKA 공식 상품 갤러리와 모델·색상·구도를 대조했습니다. 사진 품번을 한국 판매 규격·가격으로 읽지 마세요.",
+  imageSource: {"title":"HOKA 공식 상품 갤러리","url":"https://cl.hoka.com/p/hoka-mach-6-hombre-white-neon-lime/"},
     image: "/images/shoes/hoka/mach6/side.webp",
     images: [
       "/images/shoes/hoka/mach6/side.webp",

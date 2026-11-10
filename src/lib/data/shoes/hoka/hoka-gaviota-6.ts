@@ -6,6 +6,8 @@ export const shoe: Shoe = {
   slug: 'hoka-gaviota-6',
   brand: 'Hoka',
   name: '가비오타 6',
+  imageCaption: "가비오타 6 사진은 Black/Black 제품 사진입니다. 측면·사선·밑창은 1171932-BBLC, 상단 사진은 공식 와이드 상품 1171934-BBLC와 대조했습니다. 사진만으로 실물 폭이나 한국 판매 옵션을 확정할 수 없습니다.",
+  imageSource: {"title":"HOKA 공식 상품 갤러리","url":"https://au.hoka.com/products/m-gaviota-6-1171932-bblc-bblc"},
   image: '/images/shoes/hoka/gaviota6/side.webp',
   images: [
     '/images/shoes/hoka/gaviota6/side.webp',

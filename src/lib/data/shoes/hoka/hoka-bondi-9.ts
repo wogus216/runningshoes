@@ -6,11 +6,12 @@ export const shoe: Shoe = {
     slug: "hoka-bondi-9",
     brand: "Hoka",
     name: "본디 9",
+  imageCaption: "본디 9 사진은 공식 여성 상품 1162012-FTCL(Frost / Cielo Blue)과 대조했습니다. 출처가 불명확한 기존 위쪽 사진은 갤러리에서 제외했습니다. 한국 판매 폭·규격과 구분하세요.",
+  imageSource: {"title":"HOKA 공식 상품 갤러리","url":"https://au.hoka.com/products/w-bondi-9-1162012-ftcl-ftcl"},
     image: "/images/shoes/hoka/bondi9/side.webp",
     images: [
       "/images/shoes/hoka/bondi9/side.webp",
       "/images/shoes/hoka/bondi9/front.webp",
-      "/images/shoes/hoka/bondi9/back.webp",
       "/images/shoes/hoka/bondi9/outsole.webp"
     ],
     category: "쿠션화",

@@ -479,3 +479,19 @@ Horizon8의 기존 BOA 다이얼 신발 사진 5장은 공식 WAVE HORIZON 8과 
 | nike-zoom-fly-6 | FN8454-001 · Black/Light Smoke Grey/White | [공식 상품 갤러리](https://www.nike.com/t/zoom-fly-6-mens-road-racing-shoes-wn2ALjkm/FN8454-001) |
 
 사진 원촬영자·이용 허가, 신발 전체 스펙·현재 가격·재고는 이 사진 대조의 확인 범위가 아닙니다.
+
+## 2026-11-11 HOKA 7종 사진 출처 대조
+
+현재 갤러리에 남긴 26장 중 23장은 공식 상품 사진, 스피드고트 6의 3장은 독립 리뷰 현장 사진과 대조했습니다. 본디 9의 기존 `back.webp`는 같은 제품·색상으로 보이지만 정확한 원본 구도를 확인하지 못해 갤러리 참조를 제외했습니다. 기존 파일은 보존했습니다.
+
+| 모델 | 사진 식별 | 출처 |
+|---|---|---|
+| hoka-arahi-8 | 1168690-BWHT | [원문](https://au.hoka.com/products/m-arahi-8-1168690-bwht-bwht) |
+| hoka-bondi-9 | 1162012-FTCL | [원문](https://au.hoka.com/products/w-bondi-9-1162012-ftcl-ftcl) |
+| hoka-clifton-10 | 1162030-SCCV | [원문](https://au.hoka.com/products/m-clifton-10-1162030-sccv-sccv) |
+| hoka-gaviota-6 | 1171932-BBLC / 1171934-BBLC (Wide page, top-view match only) | [원문](https://au.hoka.com/products/m-gaviota-6-1171932-bblc-bblc) |
+| hoka-mach-6 | 1147790-WNL | [원문](https://cl.hoka.com/p/hoka-mach-6-hombre-white-neon-lime/) |
+| hoka-mach-x-3 | 1168721-WNL | [원문](https://au.hoka.com/products/w-mach-x-3-1168721-wnl-wnl) |
+| hoka-speedgoat-6 | 실물 품번 미확인 | [원문](https://believeintherun.com/shoe-reviews/hoka-speedgoat-6-review/) |
+
+가비오타 6 상단 사진만 공식 와이드 상품 갤러리에서 대조했습니다. 마하 X 3은 여성 사진 품번입니다. 사진 출처는 현재 한국 판매 옵션·가격·핏·촬영권리의 근거가 아닙니다.
