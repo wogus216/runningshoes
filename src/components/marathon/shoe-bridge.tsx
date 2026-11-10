@@ -8,7 +8,7 @@ import { img } from '@/lib/image';
 
 type ShoeBridgeProps = {
   distances: string[];
-  eventName: string;
+  eventName?: string;
   excludeSlugs?: string[];
 };
 
@@ -49,8 +49,8 @@ function analyzeDistances(distances: string[]): DistanceProfile {
 
 // 대회 거리 → 추천 신발 카테고리 (최장 거리 우선)
 function shoeCategoriesFor(p: DistanceProfile): string[] {
-  if (p.hasTrail) return ['트레일', '쿠션화'];
-  if (p.hasUltra) return ['쿠션화', '트레일'];
+  if (p.hasTrail) return ['트레일'];
+  if (p.hasUltra) return ['쿠션화', '데일리'];
   // 풀코스에 '데일리'를 3순위로 둔다 — 앞의 둘만으로는 15만원 미만이 아예 없어
   // 완주용 밴드가 빈 채로 렌더됐다(2026-08-23 실측: 풀코스 포함 31개 대회가 그랬다).
   // 서브3급이 아닌 대다수 완주 목표 참가자에게 데일리 트레이너는 표준 선택지다.
@@ -86,11 +86,11 @@ const PRICE_BANDS = [
   { min: 260_000, max: Infinity, slots: 1 },
 ] as const;
 
-/** 가격대가 곧 목적이다 — 카드에 붙여 "완주냐 기록이냐"를 먼저 읽히게 한다 */
-export function purposeLabel(price: number): string {
-  if (price < 190_000) return '입문·완주';
-  if (price < 260_000) return '주력';
-  return '기록 도전';
+/** 표시 가격 구간만 안내하며 러너 수준이나 기록 적합성으로 환산하지 않는다. */
+export function priceBandLabel(price: number): string {
+  if (price < 190_000) return '19만원 미만';
+  if (price < 260_000) return '19~26만원 미만';
+  return '26만원 이상';
 }
 
 /**
@@ -114,7 +114,6 @@ function pickShoes(categories: string[], excludeSlugs: string[] = []): PricedSho
         (x, y) =>
           Number(usedCats.has(x.category)) - Number(usedCats.has(y.category)) ||
           categories.indexOf(x.category) - categories.indexOf(y.category) ||
-          (y.rating ?? 0) - (x.rating ?? 0) ||
           x.price - y.price,
       )
       .slice(0, n);
@@ -133,11 +132,12 @@ function pickShoes(categories: string[], excludeSlugs: string[] = []): PricedSho
   }
   for (let i = 0; i < deficit; i++) take(0, Infinity, 1); // 빈 밴드만큼 전체에서 보충
 
-  // 싼 것부터 — 참가자 대다수의 목표는 기록이 아니라 완주다
+  // 표시 가격 오름차순이며 성능·적합성 순위가 아니다
   return picked.sort((x, y) => x.price - y.price).slice(0, 4);
 }
 
 function hubsFor(p: DistanceProfile): Hub[] {
+  if (p.hasTrail) return [{ label: '러닝화 전체 비교', href: '/shoes' }];
   const hubs: Hub[] = [];
   if (p.hasMarathon) hubs.push({ label: '풀마라톤 러닝화', href: '/best/marathon' });
   if (p.hasHalf) hubs.push({ label: '하프마라톤 러닝화', href: '/best/half-marathon' });
@@ -172,11 +172,11 @@ export function MarathonShoeBridge({ distances, eventName, excludeSlugs = [] }: 
       <div className="mb-4">
         <h2 className="text-lg font-bold text-primary flex items-center gap-2">
           <Footprints className="h-5 w-5 text-sky-700" />
-          {eventName} 준비용 러닝화 추천
+          {eventName ? `${eventName} 관련 러닝화 비교` : '러닝화 비교'}
         </h2>
         <p className="mt-1 text-sm text-secondary">
-          이 대회 거리에 맞춰 <strong className="font-semibold text-primary">가격대별로</strong> 골랐습니다.
-          완주가 목표면 위쪽부터, 기록을 노리면 아래쪽을 보세요.
+          카테고리와 표시 가격을 기준으로 모았습니다.
+          착화감과 주로 적합성은 모델별 상세 정보에서 확인하세요.
         </p>
       </div>
 
@@ -205,8 +205,7 @@ export function MarathonShoeBridge({ distances, eventName, excludeSlugs = [] }: 
                 >
                   {s.category}
                 </span>
-                {/* 가격대 = 목적. 카테고리(신발 성격)만으로는 "나한테 맞나"가 안 읽힌다 */}
-                <span className="ml-1.5 text-[11px] text-tertiary">{purposeLabel(s.price)}</span>
+                <span className="ml-1.5 text-[11px] text-tertiary">{priceBandLabel(s.price)}</span>
                 <div className="mt-0.5 truncate font-semibold text-primary transition group-hover:text-accent">
                   {s.brand} {s.name}
                 </div>
@@ -261,7 +260,7 @@ export function MarathonShoeBridge({ distances, eventName, excludeSlugs = [] }: 
 
       {hubs.length > 0 && (
         <div className="mt-5 flex flex-wrap items-center gap-x-4 gap-y-1.5 border-t border-border pt-3 text-xs">
-          <span className="text-tertiary">거리별 전체 추천:</span>
+          <span className="text-tertiary">분류별 러닝화 더 보기:</span>
           {hubs.map((h) => (
             <Link key={h.href} href={h.href as never} className="font-medium text-sky-700 hover:underline">
               {h.label}

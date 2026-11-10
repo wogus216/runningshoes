@@ -16,6 +16,7 @@ import { FaqSection } from '@/components/blog/faq-section';
 import { AdSlot } from '@/components/ads/ad-slot';
 import { splitContentAtMidH2 } from '@/lib/blog/split-content';
 import { MarathonShoeBridge } from '@/components/marathon/shoe-bridge';
+import { getMarathonEventById } from '@/lib/data/marathon';
 import { extractShoeSlugs, SHOE_LINK_BRIDGE_THRESHOLD } from '@/lib/blog/shoe-links';
 import { img, withCdnImages } from '@/lib/image';
 import { RaceActionStrip } from '@/components/blog/race/race-action-strip';
@@ -23,16 +24,6 @@ import { RaceFactGrid } from '@/components/blog/race/race-fact-grid';
 import { RaceHighlights } from '@/components/blog/race/race-highlights';
 import { RaceElevation } from '@/components/blog/race/race-elevation';
 import { RunningCardPromo } from '@/components/running-card-promo';
-
-// 블로그 대회 글 제목에서 거리 추론 (신발/젤 CTA 매핑용)
-function inferRaceDistances(title: string): string[] {
-  const d: string[] = [];
-  if (/트레일|스카이|울트라|100\s?[kK]|50\s?[kK]/.test(title)) d.push('트레일');
-  if (/풀코스|풀마라톤|마라톤/.test(title)) d.push('풀코스');
-  if (/하프/.test(title)) d.push('하프');
-  if (/10\s?[kK]|10km/.test(title)) d.push('10K');
-  return d.length ? d : ['풀코스', '하프', '10K'];
-}
 
 type BlogPostPageProps = {
   params: Promise<{
@@ -310,11 +301,12 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
           const isRacePost = Boolean(post.raceMeta) || titleHasRace;
           // 3개 이상이면 맥락 큐레이션이라 브릿지가 끼어들지 않는다
           if (!isRacePost || shoeSlugs.length >= SHOE_LINK_BRIDGE_THRESHOLD || post.category === 'review') return null;
+          const linkedRace = post.raceMeta?.marathonId ? getMarathonEventById(post.raceMeta.marathonId) : undefined;
+          if (linkedRace?.scheduleUnverified) return null;
           return (
             <div className="mt-10">
               <MarathonShoeBridge
-                distances={inferRaceDistances(post.title)}
-                eventName="이 대회"
+                distances={linkedRace?.distances ?? []}
                 excludeSlugs={shoeSlugs}
               />
             </div>

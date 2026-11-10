@@ -152,7 +152,7 @@ const distanceDescriptions: Record<string, string> = {
   '하프': '21.0975km - 하프 마라톤',
   '10K': '10km',
   '5K': '5km',
-  '울트라': '50km 이상 울트라마라톤',
+  '울트라': '풀마라톤 42.195km를 넘는 거리',
   '트레일': '산악/비포장 트레일 코스',
 };
 
@@ -484,13 +484,20 @@ export default async function MarathonDetailPage({ params }: MarathonDetailPageP
               >
                 <span className="text-lg font-bold">{distance}</span>
                 <p className="text-sm mt-1 opacity-80">{distanceDescriptions[distance]}</p>
+                {distance === '울트라' && (
+                  <a href="https://worldathletics.org/news/news/ultrarunning-introduction" target="_blank" rel="noopener noreferrer" className="mt-1 inline-block text-xs underline underline-offset-2">
+                    거리 용어 기준 · World Athletics
+                  </a>
+                )}
               </div>
             ))}
           </div>
         </div>
 
         {/* 대회 준비용 러닝화 브릿지 */}
-        <MarathonShoeBridge distances={event.distances} eventName={event.name} />
+        {!event.scheduleUnverified && (
+          <MarathonShoeBridge distances={event.distances} eventName={event.name} />
+        )}
 
         {/* 본문 중간 광고 — raceInfo/courseInfo 있는(콘텐츠 충분한) 대회만 노출 (얇은 페이지 광고과다 정책 회피) */}
         {(event.raceInfo || event.courseInfo) && (
