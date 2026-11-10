@@ -5116,182 +5116,41 @@ export const posts_2026_05: BlogPost[] = [
 `,
   },
   {
-    id: '2026-nike-alphafly-4-prototype',
-    slug: '2026-nike-alphafly-4-prototype',
-    seoTitle: '나이키 알파플라이 4 출시일·가격 — 한국 정가 349,000원 공개, 10월 29일 확대 발매',
-    title: '나이키 알파플라이 4 출시일·가격 | 9/17 선행·10/29 확대 발매, 한국 정가 349,000원(10/29 남·여 품절 표기) — 프로토타입 예측과의 대조',
-    description: '알파플라이 4는 2026년 9월 17일 공식 발표와 함께 한정 선행 발매됐고 확대 발매는 10월 29일, 글로벌 정가는 $280입니다. 한국은 10월 23일 나이키 코리아에 정가 349,000원 "출시 예정"으로 올라왔고, 10월 29일 확인한 남·여 상품 페이지는 "품절"로 바뀌어 있었습니다(판매 시작 여부는 확인되지 않음). 나이키는 9월 30일 알파플라이 4·에이펙스(2027년 1월)·스우시플라이(2027년 2월 중국·봄 글로벌)를 "위계가 아닌 선택지"로 묶어 발표했습니다. 아래는 5월 프로토타입 단계의 예측이 공식 발표와 어떻게 갈렸는지의 기록이며, 확정 스펙은 별도 글로 안내합니다.',
-    thumbnail: '/images/blog/2026-nike-alphafly-4-prototype.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-05-12',
-    updatedAt: '2026-10-23',
-    category: 'news' as const,
-    readingTime: 8,
-    tags: ['나이키', 'Nike', 'AlphaFly 4', '알파플라이 4', '슈퍼슈즈', '카본화', '보스턴 마라톤', 'ZoomX', '러닝화 발매'],
+    id: "2026-nike-alphafly-4-prototype",
+    slug: "2026-nike-alphafly-4-prototype",
+    seoTitle: "나이키 알파플라이 4 출시일·가격 — 한국 정가 349,000원 공개, 10월 29일 확대 발매",
+    title: "알파플라이 4 한국 출시·가격 — 10/29 런치 확인, 품번별 현재 상태",
+    description: "한국 두 품번의 10/29 오전 10시 디지털 런치를 확인했습니다. 정가 349,000원, 기존 색상 품절·신규 색상 출시 예정과 미확인 판매 조건을 구분합니다.",
+    thumbnail: "/images/shoes/nike/alphafly4/side.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-05-12",
+    updatedAt: "2026-11-10",
+    category: "news",
+    readingTime: 6,
+    tags: [
+      "나이키",
+      "알파플라이 4",
+      "한국 출시",
+      "349000원",
+      "품번"
+    ],
     content: `
-<div class="callout info">
-  <span class="callout-icon">📌</span>
-  <div class="callout-body">
-    <p class="callout-title">지금 기준 정리 (2026년 10월 23일)</p>
-    <p><strong>알파플라이 4는 9월 17일 공식 발표와 함께 한정 선행 발매됐고, 확대 발매는 10월 29일, 글로벌 정가는 $280입니다.</strong> 한국은 10월 23일 나이키 코리아에 남녀 모두 <strong>정가 349,000원 "출시 예정"</strong>으로 올라왔고, 10월 29일 확인한 남·여 상품 페이지는 "품절"로 바뀌어 있었습니다(판매 시작 여부는 확인되지 않음). 미국과 달리 한국 정가는 알파플라이 3(339,000원)보다 1만원 높습니다. 나이키는 9월 30일 알파플라이 4·에이펙스(2027년 1월)·스우시플라이(2027년 2월 중국·봄 글로벌)를 "레이스 데이 시스템"으로 묶어 발표하면서, 레이싱화를 <strong>위계가 아니라 선택지</strong>로 설계했다고 밝혔습니다. 확정 스펙은 <a href="/blog/nike-alphafly-4-official-specs-2026">알파플라이 4 공식 스펙 정리</a>에, 에이펙스는 <a href="/blog/nike-apex-announcement-super-shoe-baseline-2026">에이펙스 공개 글</a>에 있습니다. 아래는 5월 프로토타입 단계에서 쓴 예측 기록입니다.</p>
-  </div>
-</div>
-
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li>나이키 <strong>알파플라이 4 프로토타입</strong>이 2026 보스턴 마라톤에서 Charles Hicks의 <strong>미국 남자 역대 2위</strong>를 만들며 정체 노출 — World Athletics 등록 코드 <strong>Nike-Dev 16141</strong></li>
-    <li><strong>2026-09-17 갱신 — 아래 예측 중 넷이 빗나갔습니다.</strong> 실제 출시는 11월이 아닌 <strong>9/17 선행·10/29 확대</strong>, 드롭은 4~6mm가 아닌 <strong>8mm 유지</strong>, 정가는 $285~330이 아닌 <strong>$280</strong>, Air Zoom은 연속형이 아닌 <strong>전족부 듀얼 유닛 유지</strong>였습니다. 확정된 공식 스펙과 한국 출시 상황은 <a href="/blog/nike-alphafly-4-official-specs-2026">알파플라이 4 공식 확정 정리</a>에서 보세요</li>
-    <li>핵심 변화: <strong>드롭 4-6mm로 하향</strong> + 전족부 ZoomX 증량 + <strong>듀얼 Air Zoom 유닛 + 연속형 바텀</strong>(힐~전족부 갭 제거) + 카본 플레이트 신지오메트리</li>
-    <li>정식 출시는 <strong>2026년 11월 시카고 마라톤 직전</strong> 예상. 같은 해 발매된 <a href="/blog/2026-adidas-adios-pro-evo-3-korea-release">아디오스 프로 에보 3</a>(97g)와의 슈퍼슈즈 4파전 본격화</li>
-  </ul>
-</div>
-
-<div class="callout warning">
-  <span class="callout-icon">📅</span>
-  <div class="callout-body">
-    <p class="callout-title">8/10 기준 출시일 현황 — 나이키 공식 발표는 아직 없습니다 (지난 기록 — 9월 17일 공식 발표됨)</p>
-    <p>2026년 8월 10일 현재까지 나이키의 <strong>공식 출시일 발표는 나오지 않았습니다</strong>. 11월 시카고 마라톤 직전이라는 시점은 알파플라이 1~3의 전례(주요 메이저 직전 공개)와 프로토타입 배포 단계에서 추정한 것이지 확정이 아닙니다. 다만 World Athletics 승인 리스트의 <strong>Nike-Dev 16141은 2026년 10월 1일 만료</strong> 예정이라, 그 전후로 정식 모델명 등록이나 발표가 나올 가능성이 있습니다. 확정 발표가 나오는 대로 이 글을 갱신하겠습니다.</p>
-  </div>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">🏃</span>
-  <div class="callout-body">
-    <p class="callout-title">"Nike-Dev 16141"가 의미하는 것</p>
-    <p>나이키가 World Athletics 공식 승인 신발 리스트에 새 코드(Nike-Dev 16141)를 등록했다는 건, <strong>"이미 엘리트 레이스에서 합법적으로 사용할 수 있는 단계"</strong>로 개발이 진척됐다는 뜻입니다. 보통 정식 발매 6~9개월 전 단계. 아디다스가 아디오스 프로 에보 3로 서브2를 만든 직후, 나이키의 본격 반격이 시작됐다는 신호입니다.</p>
-  </div>
-</div>
-
-<h2>발견 경위 — 보스턴 마라톤 2위가 만든 화제</h2>
-
-<p>2026년 4월 21일 보스턴 마라톤. 미국 마라톤의 신예 <strong>Charles Hicks가 미국 남자 역대 2위</strong>로 결승선을 끊었습니다. 그가 신은 신발은 <a href="/shoes/nike-alphafly-3">알파플라이 3</a>도 <a href="/shoes/nike-vaporfly-4">베이퍼플라이 4</a>도 아닌, 처음 보는 흰색·그레이 톤의 프로토타입.</p>
-
-<p>곧이어 World Athletics 승인 신발 리스트가 업데이트되면서 정체가 드러났습니다 — <strong>Nike-Dev 16141</strong>. 같은 시기 케냐의 Faith Kipyegon(여자 1,500m 세계기록), 미국의 Grant Fisher(트랙 챔피언), Mary Ngugi-Cooper도 같은 신발을 신은 모습이 포착되었습니다. <strong>나이키 엘리트 풀에 베타 모델이 광범위하게 배포된 상태</strong>입니다.</p>
-
-<h2>알파플라이 3 → 4 핵심 변화 4가지</h2>
-
-<h3>① 드롭 8mm → 4-6mm</h3>
-
-<p>알파플라이 3의 8mm 드롭을 4-6mm 수준으로 낮춰 <strong>"더 평평한 신발"</strong>로 가는 방향. 이건 단순한 수치 변경이 아니라 미드솔 구조의 본질적 재설계입니다. 드롭이 낮아지면 전족부에 더 두꺼운 폼을 박을 수 있어 World Athletics 40mm 상한 내에서 <strong>더 큰 에너지 저장소</strong>를 만들 수 있습니다.</p>
-
-<h3>② 전족부 ZoomX 폼 증량 + 신 포뮬러</h3>
-
-<p>알파플라이 3에서도 ZoomX는 업계 최고 에너지 리턴 폼 중 하나로 평가됐는데, 4세대에서는 <strong>새 포뮬러 + 전족부 적층량 증가</strong>로 전족부 추진력을 강화합니다. 마라톤 후반(30km 이후)의 다리 무너짐을 줄이는 핵심 변화로 평가됩니다.</p>
-
-<h3>③ 듀얼 Air Zoom + 연속형 바텀 유닛</h3>
-
-<p>알파플라이 3까지는 힐과 전족부 Air Zoom 유닛 사이에 <strong>물리적 갭</strong>이 있었습니다(미드풋 부분). 4세대에서는 이 갭을 없애고 <strong>힐~전족부가 하나의 연속 바텀 유닛</strong>으로 연결됩니다. 결과는 보행 사이클의 미드풋 전환 단계에서 에너지 손실 감소 + 더 부드러운 롤링.</p>
-
-<h3>④ 카본 플레이트 지오메트리 변경 + 와이드 미드풋</h3>
-
-<p>Flyplate(카본 플레이트)의 위치·곡률이 재설계되고, 미드풋이 더 넓어집니다. 이는 <strong>안정성 향상</strong>을 노린 변화로, 알파플라이 3의 미드풋 흔들림 불만(특히 마라톤 후반)을 직접 겨냥한 개선입니다.</p>
-
-<h2>알파플라이 3 vs 4 — 알려진 정보 비교</h2>
-
-<table>
-  <thead>
-    <tr><th>항목</th><th>알파플라이 3 (현행)</th><th>알파플라이 4 (예상)</th></tr>
-  </thead>
-  <tbody>
-    <tr><td><strong>무게</strong></td><td>218g (US M10, 나이키 공식)</td><td>208g (US M10) — 확정</td></tr>
-    <tr><td><strong>드롭</strong></td><td>8mm</td><td>4-6mm 예상 → <strong>8mm 유지 확정</strong></td></tr>
-    <tr><td><strong>미드솔</strong></td><td>ZoomX (기존 포뮬러)</td><td><strong>ZoomX 신 포뮬러</strong></td></tr>
-    <tr><td><strong>Air Zoom 유닛</strong></td><td>힐+전족부 분리</td><td><strong>연속형 바텀 (갭 제거)</strong></td></tr>
-    <tr><td><strong>카본 플레이트</strong></td><td>Flyplate (기존)</td><td>지오메트리 변경</td></tr>
-    <tr><td><strong>미드풋</strong></td><td>표준</td><td><strong>와이드 (안정성 강화)</strong></td></tr>
-    <tr><td><strong>WA 코드</strong></td><td>공개됨</td><td>Nike-Dev 16141</td></tr>
-    <tr><td><strong>글로벌 출시</strong></td><td>2024년 1월</td><td>2026년 11월 시카고 마라톤 직전 예상</td></tr>
-    <tr><td><strong>글로벌 정가</strong></td><td>$285</td><td>$285~330 예상</td></tr>
-  </tbody>
-</table>
-
-<h2>2026 슈퍼슈즈 4파전 구도</h2>
-
-<p>지난 12개월 동안 메이저 브랜드들이 차세대 슈퍼슈즈를 모두 갱신했거나 갱신 진행 중입니다. <strong>2026년은 슈퍼슈즈 역사상 가장 경쟁이 치열한 해</strong>로 기록될 전망입니다.</p>
-
-<table>
-  <thead>
-    <tr><th>모델</th><th>무게</th><th>출시</th><th>한국가</th><th>포지션</th></tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="/blog/2026-adidas-adios-pro-evo-3-korea-release">아디다스 아디오스 프로 에보 3</a></td>
-      <td><strong>97g</strong></td>
-      <td>2026.11.2 한국 앱 발매</td>
-      <td>59만 9,000원</td>
-      <td>업계 최경량, 1~2회 레이스 전용</td>
-    </tr>
-    <tr>
-      <td><strong>나이키 알파플라이 4</strong></td>
-      <td>경량화 예상</td>
-      <td>2026.11 예상</td>
-      <td>40만원대 추정</td>
-      <td>풀코스 30km+ 안정성</td>
-    </tr>
-    <tr>
-      <td><a href="/shoes/nike-vaporfly-4">나이키 베이퍼플라이 4</a></td>
-      <td>166g</td>
-      <td>2025.3</td>
-      <td>30.9만원</td>
-      <td>대중적 PB 도전 표준</td>
-    </tr>
-    <tr>
-      <td><a href="/shoes/asics-metaspeed-sky-plus">아식스 메타스피드 스카이+</a></td>
-      <td>159g</td>
-      <td>2025</td>
-      <td>약 29만원</td>
-      <td>가성비 슈퍼슈즈</td>
-    </tr>
-    <tr>
-      <td><a href="/shoes/saucony-endorphin-elite-2">서코니 엔돌핀 엘리트 2</a></td>
-      <td>195g</td>
-      <td>2025</td>
-      <td>약 32만원</td>
-      <td>발볼 넓음, 한국 친화적</td>
-    </tr>
-  </tbody>
-</table>
-
-<h2>한국 러너 관점 — 알파플라이 4를 기다려야 하나</h2>
-
-<h3>✅ 기다릴 가치가 있는 사람</h3>
-
-<ul>
-  <li><strong>가을 풀코스(춘천·서울·JTBC) PB 도전</strong> — 11월 시카고 직전 출시면 한국 가을 마라톤(10월 중순~11월)과 시기 겹침. 메인 PB 신발로 적합</li>
-  <li><strong>알파플라이 3의 미드풋 흔들림이 거슬렸던 러너</strong> — 와이드 미드풋 + 연속형 바텀으로 안정성 직접 개선</li>
-  <li><strong>30km 이후 다리 무너짐이 문제였던 러너</strong> — 전족부 ZoomX 증량은 마라톤 후반 추진력 보강을 노린 변화</li>
-  <li><strong>"가장 최신 슈퍼슈즈"를 신고 싶은 컬렉터·러너</strong></li>
-</ul>
-
-<h3>❌ 안 기다려도 되는 사람</h3>
-
-<ul>
-  <li><strong>봄 마라톤(5~6월) PB 도전 러너</strong> — 출시 시점이 가을 이후. 지금 필요한 신발이면 베이퍼플라이 4가 정답</li>
-  <li><strong>서브3 이상 페이스 러너</strong> — 알파플라이 시리즈의 강점(30km+ 안정성)이 발휘되는 페이스는 서브3 이하. 그 이상이면 베이퍼플라이 4가 더 가성비 좋음</li>
-  <li><strong>발볼 넓은 한국 러너</strong> — 와이드 미드풋이라도 알파플라이 시리즈의 토박스는 통상 narrow~standard. 발볼 큰 러너는 시착이 필수입니다. 비교 대상인 <a href="/shoes/saucony-endorphin-elite-2">엔돌핀 엘리트 2</a>도 토박스 실측 71.0mm에 RunRepeat가 "tapered toebox"를 지적한 좁은 쪽이라 더 안전하다고 말하기 어렵습니다</li>
-  <li><strong>예산 30만원 이하</strong> — 정식 출시가 40만원대 추정. <a href="/shoes/asics-metaspeed-sky-plus">메타스피드 스카이+</a> 또는 <a href="/shoes/adidas-adizero-evo-sl">에보 SL</a>(15만원대)이 합리적</li>
-</ul>
-
-<h2>요약 — 가을 PB 시즌 액션 플랜</h2>
-
-<ol>
-  <li><strong>지금 (5월):</strong> 봄 대회용은 <a href="/shoes/nike-vaporfly-4">베이퍼플라이 4</a> 또는 <a href="/shoes/adidas-adios-pro-4">아디오스 프로 4</a>로 진행</li>
-  <li><strong>여름 (6~8월):</strong> 가을 PB 도전을 위한 베이스 + 인터벌 빌드업. 신발은 <a href="/shoes/asics-superblast-2">슈퍼블라스트 2</a> 같은 슈퍼 트레이너로 훈련</li>
-  <li><strong>가을 초 (9~10월):</strong> 알파플라이 4 한국 출시 공지 모니터링 — 나이키 SNKRS 앱 + 나이키 한국 공식 채널</li>
-  <li><strong>가을 마라톤 (10월 중순~11월):</strong> 알파플라이 4 또는 기존 슈퍼슈즈 중 본인 페이스·발에 맞는 모델로 결정</li>
-</ol>
-
-<div class="callout success">
-  <span class="callout-icon">🏃</span>
-  <div class="callout-body">
-    <p class="callout-title">카본화 입문이 막막하다면</p>
-    <p>카본 플레이트 슈퍼슈즈는 부상 위험과 비용이 모두 큰 카테고리입니다. 본인 발볼·체중·페이스에 맞는 후보를 좁히고 싶다면 <a href="/recommend">맞춤 러닝화 추천</a>을 활용하세요. 한국 카본화 전반 비교는 <a href="/blog/carbon-plate-running-shoes-lineup-tier-guide-2026">카본 플레이트 러닝화 완벽 비교</a>, 발볼 넓은 러너는 <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국인을 위한 러닝화 추천 TOP 10</a>도 참고.</p>
-  </div>
-</div>
-
-<p><small>출처: Sneaker News / Sole Retriever / Gear Patrol / Marathon Handbook / Sundried / World Marathoner / 작성일 2026년 5월 12일 기준 / 무게·스택·가격·출시일 등 미공개 항목은 나이키 공식 발표 시 본 글 업데이트 예정.</small></p>
+<p><strong>2026-11-10 업데이트.</strong> 확인한 상품·시점과 남은 확인 사항을 함께 적었습니다.</p><h2>한국에서 확인한 일정은 두 품번의 10월 29일 런치</h2><p>한국 남성 IU4686-002·여성 IZ9609-002의 공식 상품 자료는 2026년 10월 29일 오전 10시 디지털 런치 시작과 종료 상태를 함께 표시합니다. 과거 ‘출시 예정’ 안내를 지금도 기다려야 하는 일정처럼 유지하지 않습니다.</p><p>다만 이 기록은 정확한 두 품번의 런치입니다. 한국에서 알파플라이 4가 처음 판매된 날인지, 9월 17일 글로벌 선행 판매가 한국에도 있었는지까지 확인한 것은 아닙니다. 공식 글로벌 발표의 9월 17일 선행·10월 29일 확대 일정과 한국 개별 상품의 근거를 구분했습니다.</p><figure><img src="/images/shoes/nike/alphafly4/side.webp" alt="나이키 알파플라이 4 남성 IU4686-002 공식 측면" loading="lazy"/><figcaption>Nike 공식 IU4686-002 사진. 개발 시제품의 사진으로 해석하지 않습니다.</figcaption></figure><div class="table-wrap"><table><thead><tr><th scope="col">한국 상품</th><th scope="col">품번</th><th scope="col">정가·표시가격</th><th scope="col">11/10 온라인 공시</th></tr></thead><tbody><tr><td>남성 씨 글래스/레이저 크림슨/팬텀/버건디 애쉬</td><td>IU4686-002</td><td>349,000원</td><td>품절·종료된 런치</td></tr><tr><td>여성 씨 글래스/레이저 크림슨/팬텀/버건디 애쉬</td><td>IZ9609-002</td><td>349,000원</td><td>품절·종료된 런치</td></tr><tr><td>남성 토탈 오렌지/하이퍼 크림슨/보르도/버건디 애쉬</td><td>IM5546-800</td><td>349,000원</td><td>출시 예정·알림 받기</td></tr><tr><td>여성 하이퍼 핑크/푸크시아 블라스트/브라이트 크림슨/블랙</td><td>IM5547-600</td><td>349,000원</td><td>출시 예정·알림 받기</td></tr></tbody></table></div><h2>지금은 모델 전체보다 색상·성별 품번을 보세요</h2><p>11월 10일 확인한 기존 씨 글래스 계열 두 품번은 품절로, 신규 남성 IM5546-800과 여성 IM5547-600은 출시 예정·알림 받기로 표시됩니다. 새 색상의 날짜·시각은 이번 원문에서 확인하지 못했습니다. 하나의 상태를 모든 색상에 적용할 수 없습니다.</p><p>네 품번 모두 정가와 확인 당시 표시가격은 349,000원이며 할인율은 0으로 표시됩니다. 쿠폰 제외 안내도 있습니다. 현재 매장 재고·결제 가능한 수량은 확인하지 않았으므로 구매 직전 원하는 규격의 조건을 다시 보세요.</p><h2>앱 전용·드로우라고 적기 전에</h2><p>확인한 한국 자료는 디지털 런치였다는 점을 보여 주지만 앱 전용·SNKRS 전용·드로우 또는 선착순이라는 소비자용 설명은 확보하지 못했습니다. 시스템 내부 판매방식 코드를 임의로 번역해 신청법을 만들지 않았습니다.</p><p>품절 상품의 사이즈 목록이 일부 남아 있어도 구매 가능한 재고라는 뜻은 아닙니다. 신규 색상의 사이즈 목록도 실제 선택·결제 가능 여부와 구분해야 합니다. 알림을 신청해도 구매 권한이나 재고를 보장받는 것으로 해석하지 마세요.</p><h2>구매 판단은 감량 예측보다 실제 조건에서</h2><p>현재 확인된 구조는 ZoomX LT와 기존 ZoomX, 카본 섬유 Flyplate, 전족부 Air Zoom 2개입니다. 과거 프로토타입 사진을 근거로 썼던 연속형 Air Zoom·4~6mm 드롭·11월 확정 출시 등의 예측을 현재 사양으로 남기지 않았습니다.</p><p>RunRepeat의 실제 남성 US9 검체는 190g·39/32.8mm·실측 드롭 6.2mm입니다. 한국 제조사 공시의 무게·8mm 드롭과는 조건이 다릅니다. 측정 조건별 차이와 핏 질문은 <a href="/blog/nike-alphafly-4-official-specs-2026">알파플라이 4 공식·실측 비교</a>에서 확인할 수 있습니다. 특정 기록대에만 효과가 있거나 30km 이후 다리를 보호한다는 근거로 확대하지 않습니다.</p><h2>결제 전 확인할 네 가지</h2><p>원하는 성별·색상 품번, 실제 선택 가능한 길이와 폭, 최종 가격·교환 조건, 평소 양말·인솔에서의 앞코·발등·힐 고정을 확인하세요. 한국 문자 폭 라벨은 이번 상품에서 확인하지 못했습니다.</p><p>새 색상을 기다릴지는 현재 신발과 대회 일정에 맞춰 판단하면 됩니다. 해외 출시일이나 다른 색상의 품절만 보고 한국 입고일을 예상하지 말고 정확 상품 알림과 공지를 확인하세요.</p><h2>확인한 원문</h2><ul><li><a href="https://www.nike.com/kr/t/%EB%82%98%EC%9D%B4%ED%82%A4-%EC%95%8C%ED%8C%8C%ED%94%8C%EB%9D%BC%EC%9D%B4-4-%EB%82%A8%EC%84%B1-%EB%A1%9C%EB%93%9C-%EB%A0%88%EC%9D%B4%EC%8B%B1%ED%99%94-MjzZW7jo/IU4686-002" target="_blank" rel="noopener noreferrer">Nike 한국 IU4686-002</a> — 정가·현재 온라인 공시와 정확 상품의 런치 정보. 실제 결제·전국 재고는 별도.</li><li><a href="https://www.nike.com/kr/t/%EB%82%98%EC%9D%B4%ED%82%A4-%EC%95%8C%ED%8C%8C%ED%94%8C%EB%9D%BC%EC%9D%B4-4-%EC%97%AC%EC%84%B1-%EB%A1%9C%EB%93%9C-%EB%A0%88%EC%9D%B4%EC%8B%B1%ED%99%94-1af9ax1E/IZ9609-002" target="_blank" rel="noopener noreferrer">Nike 한국 IZ9609-002</a> — 정가·현재 온라인 공시와 정확 상품의 런치 정보. 실제 결제·전국 재고는 별도.</li><li><a href="https://www.nike.com/kr/t/%EB%82%98%EC%9D%B4%ED%82%A4-%EC%95%8C%ED%8C%8C%ED%94%8C%EB%9D%BC%EC%9D%B4-4-%EB%82%A8%EC%84%B1-%EB%A1%9C%EB%93%9C-%EB%A0%88%EC%9D%B4%EC%8B%B1%ED%99%94-BxYAEFvI/IM5546-800" target="_blank" rel="noopener noreferrer">Nike 한국 IM5546-800</a> — 정가·현재 온라인 공시와 정확 상품의 런치 정보. 실제 결제·전국 재고는 별도.</li><li><a href="https://www.nike.com/kr/t/%EB%82%98%EC%9D%B4%ED%82%A4-%EC%95%8C%ED%8C%8C%ED%94%8C%EB%9D%BC%EC%9D%B4-4-%EC%97%AC%EC%84%B1-%EB%A1%9C%EB%93%9C-%EB%A0%88%EC%9D%B4%EC%8B%B1%ED%99%94-k8OU59AI/IM5547-600" target="_blank" rel="noopener noreferrer">Nike 한국 IM5547-600</a> — 정가·현재 온라인 공시와 정확 상품의 런치 정보. 실제 결제·전국 재고는 별도.</li><li><a href="https://www.nike.com/kr/a/nike-alphafly-4-release-info" target="_blank" rel="noopener noreferrer">Nike 출시 정보</a> — 글로벌 일정과 시장별 차이. 한국 날짜는 개별 상품으로 별도 대조.</li><li><a href="https://runrepeat.com/nike-alphafly-4" target="_blank" rel="noopener noreferrer">RunRepeat 알파플라이 4</a> — 11/8 공개 원문. US9 검체와 한국 상품 공시를 구분.</li></ul>
 `,
+    faqs: [
+      {
+        "question": "한국 출시일이 10월 29일인가요?",
+        "answer": "한국 IU4686-002·IZ9609-002의 10/29 오전 10시 런치와 종료 상태를 확인했습니다. 모델의 최초 한국 판매일이나 9/17 한국 판매 여부까지 확인한 것은 아닙니다."
+      },
+      {
+        "question": "한국 가격은 얼마인가요?",
+        "answer": "11/10 확인한 네 한국 품번 모두 정가·표시가격 349,000원입니다. 결제 조건·쿠폰·현재 재고는 구매 시점 다시 확인하세요."
+      },
+      {
+        "question": "지금 전부 품절인가요?",
+        "answer": "기존 두 -002 품번은 품절, 신규 IM5546-800·IM5547-600은 출시 예정으로 표시됩니다. 전국 매장 재고와 새 색상 출시일은 미확인입니다."
+      }
+    ],
   },
   {
     id: '2030-seoul-marathon-100th-dongma-chip',
