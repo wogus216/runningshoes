@@ -6,6 +6,8 @@ export const shoe: Shoe = {
     slug: "diadora-atomo-star",
     brand: "Diadora",
     name: "아토모 스타",
+    imageCaption: "아토모스타 BLACK 사진입니다. 디아도라 한국 공식 상품 갤러리(상품번호 5699)와 대조했습니다.",
+    imageSource: { title: "디아도라 한국 공식 상품 갤러리", url: "https://diadorakorea.com/product/detail.html?product_no=5699" },
     image: "/images/shoes/diadora/atomo-star/side.webp",
     images: [
       "/images/shoes/diadora/atomo-star/side.webp",

@@ -6,6 +6,8 @@ export const shoe: Shoe = {
     slug: "diadora-nucleo-2",
     brand: "Diadora",
     name: "누클레오 2",
+    imageCaption: "누클레오 2 WHITE 사진입니다. 디아도라 한국 공식 상품 갤러리(상품번호 5194)와 대조했습니다.",
+    imageSource: { title: "디아도라 한국 공식 상품 갤러리", url: "https://diadorakorea.com/product/detail.html?product_no=5194" },
     image: "/images/shoes/diadora/nucleo-2/side.webp",
     images: [
       "/images/shoes/diadora/nucleo-2/side.webp",

@@ -6,6 +6,8 @@ export const shoe: Shoe = {
   slug: 'merrell-agility-peak-6',
   brand: 'Merrell',
   name: '어질리티 피크 6',
+  imageCaption: "어질리티 피크 6 남성 BLACK 사진입니다. 머렐 한국 공식 상품 갤러리(상품번호 2891)와 대조했습니다. 와이드 등 다른 옵션의 사진과 구분하세요.",
+  imageSource: { title: "머렐 한국 공식 상품 갤러리", url: "https://merrellkorea.co.kr/product/detail.html?product_no=2891" },
   image: '/images/shoes/merrell/agility-peak-6/side.webp',
   images: [
     '/images/shoes/merrell/agility-peak-6/side.webp',

@@ -6,6 +6,8 @@ export const shoe: Shoe = {
   slug: 'merrell-mtl-speedarc-peak',
   brand: 'Merrell',
   name: 'MTL 스피드아크 피크',
+  imageCaption: "MTL 스피드아크 피크 공용 BLACK 사진입니다. 머렐 한국 공식 상품 갤러리(상품번호 3071)와 대조했습니다.",
+  imageSource: { title: "머렐 한국 공식 상품 갤러리", url: "https://merrellkorea.co.kr/product/detail.html?product_no=3071" },
   image: '/images/shoes/merrell/mtl-speedarc-peak/side.webp',
   images: [
     '/images/shoes/merrell/mtl-speedarc-peak/side.webp',

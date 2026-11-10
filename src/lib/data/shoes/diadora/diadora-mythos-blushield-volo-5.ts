@@ -6,6 +6,8 @@ export const shoe: Shoe = {
     slug: "diadora-mythos-blushield-volo-5",
     brand: "Diadora",
     name: "미토스 블루실드 볼로 5",
+    imageCaption: "미토스 블루실드 볼로 5 ORANGE 사진입니다. 디아도라 한국 공식 상품 갤러리(상품번호 4617)와 대조했습니다.",
+    imageSource: { title: "디아도라 한국 공식 상품 갤러리", url: "https://diadorakorea.com/product/detail.html?product_no=4617" },
     image: "/images/shoes/diadora/mythos-blushield-volo-5/side.webp",
     images: [
       "/images/shoes/diadora/mythos-blushield-volo-5/side.webp",

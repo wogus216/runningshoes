@@ -6,6 +6,8 @@ export const shoe: Shoe = {
   slug: 'merrell-trail-glove-8',
   brand: 'Merrell',
   name: '트레일 글러브 8',
+  imageCaption: "트레일 글러브 8 남성 BLACK 사진입니다. 머렐 한국 공식 상품 갤러리(상품번호 2904)와 대조했습니다.",
+  imageSource: { title: "머렐 한국 공식 상품 갤러리", url: "https://merrellkorea.co.kr/product/detail.html?product_no=2904" },
   image: '/images/shoes/merrell/trail-glove-8/side.webp',
   images: [
     '/images/shoes/merrell/trail-glove-8/side.webp',
