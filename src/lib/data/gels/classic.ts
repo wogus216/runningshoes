@@ -200,7 +200,7 @@ export const classicGels: Gel[] = [
     tags: [
       "제품 표시 확인"
     ],
-    image: "/images/gels/yanggang/main.webp",
+    image: "/images/gels/yanggang/crown-chestnut-official-20261111.jpg",
     nutritionFacts: {},
     carbScience: {
       "transporterProfile": "정확한 제품의 원료·배합 표시와 연구 조건을 함께 확인하세요.",
@@ -245,13 +245,13 @@ export const classicGels: Gel[] = [
       "up-energy-gel"
     ],
     verification: {
-      "checkedAt": "2026-11-10",
-      "scope": "성분 표시의 기존 부분 재확인과 사진 변형 대조. 사진 출처가 미확인인 항목·현재 국내 포장·선택 옵션·판매 상태와 제품 전체 효과의 검증 완료 표지가 아닙니다.",
+      "checkedAt": "2026-11-11",
+      "scope": "기존 성분 표시의 부분 확인과 2026-11-11 사진 출처 대조입니다. 현재 모든 국내 포장·선택 옵션·판매 상태와 제품 전체 효과를 인증하지 않습니다.",
       "notes": [
         "현재 항목은 특정 제조사·제품번호가 없는 식품군입니다.50g·130kcal·탄수화물35g·카페인0mg을 대표값으로 확정할 수 없습니다.",
         "실제 구매한 제품의1개 중량·탄수화물·알레르기 표시와 훈련 중 섭취 반응을 확인하세요.",
         "일반 보급 지침은 양갱과 전문젤의 흡수율·위장 우열을 직접 시험한 자료가 아닙니다.",
-        "기존 사진의 원출처는 이번에 확정하지 못했습니다. 현재 모든 제품의 동일 포장·성분 근거로 쓰지 않습니다."
+        "2026-11-11 크라운 공식 밤양갱 사진으로 예시를 바꿨습니다. 이 특정 제품의 표시를 양갱 식품군 전체의 영양·중량·알레르기 기준으로 적용하지 않습니다."
       ],
       "sources": [
         {
@@ -261,7 +261,8 @@ export const classicGels: Gel[] = [
         }
       ]
     },
-    imageCaption: "사진은 팥·밤 양갱 한 제품의 예시입니다. 양갱 전체의 영양·중량 기준이 아닙니다.",
+    imageCaption: "크라운 공식 밤양갱 사진을 식품군의 한 제품 예시로 사용했습니다. 다른 제조사·팥/밤·포장과 구분하며 양갱 전체의 영양·중량 기준으로 쓰지 않습니다.",
+    imageSource: {"title":"크라운 공식 밤양갱 이미지 출처","url":"https://www.crown.co.kr/product/view?idx=114"},
     isProductCategory: true,
   },
   {
