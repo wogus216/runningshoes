@@ -11,6 +11,15 @@
         ],
         "createdAt": "2026-09-21T07:06:26.552Z",
         "reason": "Agent: semantic editorial callouts and race-fact items use accent borders to communicate hierarchy, not decorative card tabs"
+      },
+      {
+        "rule": "side-tab",
+        "value": "*",
+        "files": [
+          "src/components/detail/at-a-glance.tsx"
+        ],
+        "createdAt": "2026-11-10T01:35:33.743Z",
+        "reason": "Agent triage under user hook scope policy: git blame attributes the unchanged summary-card accent at line58 to e19209a6 (2026-05-12); current work audits factual content, and the user hook explicitly prohibits treating pre-existing findings as regressions or broadening scope. Preserve this existing summary accent; waiver limited to side-tab in this file."
       }
     ]
   }
