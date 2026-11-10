@@ -427,6 +427,7 @@ function ComparePageContent() {
       {/* 비교 결과 */}
       {selectedShoes.length >= 2 && (
         <>
+          {selectedShoes.every(shoe => shoe.specs?.cushioning !== undefined && shoe.specs.responsiveness !== undefined && shoe.specs.stability !== undefined) ? (
           <section className="rounded-[4px] border border-[var(--accent-line)] bg-white/84 p-5 backdrop-blur md:p-6">
             <div className="mb-6">
               <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-sky-700">Radar View</p>
@@ -434,6 +435,7 @@ function ComparePageContent() {
             </div>
             <CompareRadarChart shoes={selectedShoes} />
           </section>
+          ) : null}
 
           <section className="rounded-[4px] border border-[var(--accent-line)] bg-white/84 p-5 backdrop-blur md:p-6">
             <div className="mb-6">

@@ -26,9 +26,6 @@ export const shoe: Shoe = {
   ],
   specs: {
     weight: 252,
-    cushioning: 8,
-    responsiveness: 8,
-    stability: 7,
     drop: 8.2,
   },
   biomechanics: {
@@ -42,7 +39,6 @@ export const shoe: Shoe = {
     midsoleType: 'FF TURBO+ 상부 · FF BLAST PLUS ECO 하부 · 비플레이트',
   },
   koreanFootFit: {
-    toBoxWidth: 'standard',
   },
   targetUsers: {
     recommended: [

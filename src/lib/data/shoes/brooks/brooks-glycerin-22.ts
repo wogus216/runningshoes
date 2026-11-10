@@ -22,9 +22,6 @@ export const shoe: Shoe = {
   editorComment: '2026-11-09 원문 재확인. 한국 공식 원문 남성MEDIUM1104451D097/1104451D175·WIDE1104452E020 정가209,000원 확인. 여성WIDE1204341D151은 약1년 전 원문이어서 현재판매·재고와 구분합니다. 현재 할인·재고는 미확인입니다. DOR 소개 남성289g(US9)·여성258g(US8),39/29mm·드롭10mm. David실제US9.5, RR293g·38.5/28.2mm·10.3mm를 구분. RR과 DOR은 DNA Tuned의 큰셀·작은셀 위치를 다르게 설명합니다.30.0AC·보조37.6AC의 측정값만으로 밀도배치를 확정하지 않습니다. DOR의 David은 US9.5에서 길이가 맞고 힐·중족부가 고정되며 앞쪽에 여유가 있다고 느꼈습니다. Bach은 GTS보다 유연하고 부드럽다고 봤습니다. 기본형에 GuideRails가 있다고 설명하지 않으며 개인의 평발착화 선호를 임상등급으로 바꾸지 않습니다. 한국 남성MEDIUM·WIDE 원문을 확인했지만 여성현재상품은 미확인입니다. RR 엄지높이23.6mm와 DOR의 넓게느껴진 앞쪽 의견은 다른조건입니다. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
   specs: {
     weight: 293,
-    cushioning: 8,
-    responsiveness: 7,
-    stability: 7,
     drop: 10.3,
   },
   biomechanics: {
@@ -37,7 +34,6 @@ export const shoe: Shoe = {
     midsoleType: '질소 주입 DNA Tuned',
   },
   koreanFootFit: {
-    toBoxWidth: 'standard',
     wideOptions: true,
   },
   targetUsers: {

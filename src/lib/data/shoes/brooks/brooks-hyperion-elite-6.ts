@@ -25,9 +25,6 @@ export const shoe: Shoe = {
   ],
   specs: {
     weight: 193,
-    cushioning: 10,
-    responsiveness: 10,
-    stability: 6,
     drop: 10.6,
   },
   biomechanics: {
@@ -41,7 +38,6 @@ export const shoe: Shoe = {
     midsoleType: 'DNA Gold PEBA · 전장 SpeedVault+ 카본',
   },
   koreanFootFit: {
-    toBoxWidth: 'narrow',
   },
   targetUsers: {
     recommended: [

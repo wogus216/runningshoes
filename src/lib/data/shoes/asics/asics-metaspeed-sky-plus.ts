@@ -26,9 +26,6 @@ export const shoe: Shoe = {
   ],
   specs: {
     weight: 205,
-    cushioning: 8,
-    responsiveness: 9,
-    stability: 6,
     drop: 2.7,
   },
   biomechanics: {
@@ -42,7 +39,6 @@ export const shoe: Shoe = {
     midsoleType: 'FF BLAST TURBO · 상부 평판형 카본 (2022 Sky+)',
   },
   koreanFootFit: {
-    toBoxWidth: 'standard',
   },
   targetUsers: {
     recommended: [

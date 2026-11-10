@@ -27,9 +27,6 @@ export const shoe: Shoe = {
   ],
   specs: {
     weight: 298,
-    cushioning: 8,
-    responsiveness: 7,
-    stability: 9,
     drop: 8.5,
   },
   biomechanics: {
@@ -43,7 +40,6 @@ export const shoe: Shoe = {
     midsoleType: 'FF BLAST MAX + FF BLAST PLUS 프레임 · FluidSupport · 힐 PureGEL',
   },
   koreanFootFit: {
-    toBoxWidth: 'standard',
     wideOptions: true,
   },
   targetUsers: {

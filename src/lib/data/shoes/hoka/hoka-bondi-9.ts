@@ -23,9 +23,6 @@ export const shoe: Shoe = {
   ],
   specs: {
     weight: 303,
-    cushioning: 9,
-    responsiveness: 7,
-    stability: 8,
     drop: 9.1,
   },
   biomechanics: {
@@ -39,7 +36,6 @@ export const shoe: Shoe = {
     midsoleType: 'Supercritical EVA',
   },
   koreanFootFit: {
-    toBoxWidth: 'narrow',
   },
   targetUsers: {
     recommended: [

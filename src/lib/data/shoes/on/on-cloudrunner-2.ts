@@ -25,9 +25,6 @@ export const shoe: Shoe = {
   ],
   specs: {
     weight: 275,
-    cushioning: 8,
-    responsiveness: 7,
-    stability: 8,
     drop: 8.5,
   },
   biomechanics: {
@@ -41,7 +38,6 @@ export const shoe: Shoe = {
     midsoleType: 'Helion · CloudTec · 힐클립·사이드월 · Speedboard 없음',
   },
   koreanFootFit: {
-    toBoxWidth: 'standard',
   },
   priceAnalysis: {
     priceTier: 'mid',

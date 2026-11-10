@@ -19,9 +19,6 @@ export const shoe: Shoe = {
   ],
   specs: {
     weight: 232,
-    cushioning: 8,
-    responsiveness: 9,
-    stability: 6,
     drop: 8,
   },
   biomechanics: {
@@ -35,7 +32,6 @@ export const shoe: Shoe = {
     midsoleType: 'PWRRUN PBX 비즈 PEBA · 나일론 날개 플레이트',
   },
   koreanFootFit: {
-    toBoxWidth: 'standard',
   },
   targetUsers: {
     recommended: [

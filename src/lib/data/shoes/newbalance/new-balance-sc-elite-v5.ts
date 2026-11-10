@@ -25,9 +25,6 @@ export const shoe: Shoe = {
   ],
   specs: {
     weight: 198,
-    cushioning: 9,
-    responsiveness: 9,
-    stability: 6,
     drop: 10.7,
   },
   biomechanics: {
@@ -51,7 +48,6 @@ export const shoe: Shoe = {
     price: "뉴발란스 실운영 한국 공식 검색에서 현재 V6만 9개 확인돼 V5의 현행정가·판매 SKU·성별·폭·재고는 미확인입니다. V6가격과 QA·개발호스트 캐시를 V5현재 상품 증거로 사용하지 않습니다. 미노출을 단종 확정으로 해석하지 않습니다.",
   },
   koreanFootFit: {
-    toBoxWidth: 'standard',
   },
   priceAnalysis: {
     priceTier: 'super-premium',

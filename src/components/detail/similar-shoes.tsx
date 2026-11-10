@@ -268,22 +268,22 @@ export const SimilarShoes = memo(function SimilarShoes({ currentShoe, similarSho
                 <tr className="border-b border-[color:var(--border-soft)]">
                   <td className="py-2.5 pr-4 text-tertiary">쿠셔닝</td>
                   <td className="text-center py-2.5 px-3">
-                    <SpecBar value={(currentShoe.specs?.cushioning || 5) * 10} />
+                    {currentShoe.specs?.cushioning !== undefined ? <SpecBar value={currentShoe.specs.cushioning * 10} /> : <span className="text-tertiary">미평가</span>}
                   </td>
                   {selectedShoes.map((shoe) => (
                     <td key={shoe.slug} className="text-center py-2.5 px-3">
-                      <SpecBar value={(shoe.specs?.cushioning || 5) * 10} />
+                      {shoe.specs?.cushioning !== undefined ? <SpecBar value={shoe.specs.cushioning * 10} /> : <span className="text-tertiary">미평가</span>}
                     </td>
                   ))}
                 </tr>
                 <tr className="border-b border-[color:var(--border-soft)]">
                   <td className="py-2.5 pr-4 text-tertiary">안정성</td>
                   <td className="text-center py-2.5 px-3">
-                    <SpecBar value={(currentShoe.specs?.stability || 5) * 10} color="green" />
+                    {currentShoe.specs?.stability !== undefined ? <SpecBar value={currentShoe.specs.stability * 10} color="green" /> : <span className="text-tertiary">미평가</span>}
                   </td>
                   {selectedShoes.map((shoe) => (
                     <td key={shoe.slug} className="text-center py-2.5 px-3">
-                      <SpecBar value={(shoe.specs?.stability || 5) * 10} color="green" />
+                      {shoe.specs?.stability !== undefined ? <SpecBar value={shoe.specs.stability * 10} color="green" /> : <span className="text-tertiary">미평가</span>}
                     </td>
                   ))}
                 </tr>
@@ -335,6 +335,7 @@ function ToeboxBadge({ width }: { width?: string }) {
     standard: { text: '표준', color: 'text-primary' },
     wide: { text: '넓음', color: 'text-sky-700' },
   };
-  const info = labels[width || 'standard'] || labels.standard;
+  const info = width ? labels[width] : undefined;
+  if (!info) return <span className="text-tertiary">미확인</span>;
   return <span className={info.color}>{info.text}</span>;
 }

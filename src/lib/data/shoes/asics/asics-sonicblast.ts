@@ -28,9 +28,6 @@ export const shoe: Shoe = {
   ],
   specs: {
     weight: 255,
-    cushioning: 9,
-    responsiveness: 8,
-    stability: 5,
     drop: 9,
   },
   biomechanics: {
@@ -44,7 +41,6 @@ export const shoe: Shoe = {
     midsoleType: 'FF TURBO SQUARED 상층 + FF BLAST MAX 하층 · Pebax ASTROPLATE',
   },
   koreanFootFit: {
-    toBoxWidth: 'narrow',
   },
   targetUsers: {
     recommended: [

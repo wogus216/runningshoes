@@ -28,9 +28,6 @@ export const shoe: Shoe = {
   ],
   specs: {
     weight: 255,
-    cushioning: 9,
-    responsiveness: 8,
-    stability: 6,
     drop: 6.4,
   },
   biomechanics: {
@@ -54,7 +51,6 @@ export const shoe: Shoe = {
     price: '한국 남성2E NBPFGF701Y·4E NBPFGF701J, 여성D NBPFGF702O 정가209,000원. 확인한 대표SKU 기준.',
   },
   koreanFootFit: {
-    toBoxWidth: 'standard',
     wideOptions: true,
   },
   priceAnalysis: {

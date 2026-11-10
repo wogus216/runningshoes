@@ -24,9 +24,6 @@ export const shoe: Shoe = {
   ],
   specs: {
     weight: 296,
-    cushioning: 8,
-    responsiveness: 7,
-    stability: 9,
     drop: 10.1,
   },
   biomechanics: {
@@ -40,7 +37,6 @@ export const shoe: Shoe = {
     midsoleType: '풀 렝스 ReactX · 중족부 지지 랩',
   },
   koreanFootFit: {
-    toBoxWidth: 'standard',
     wideOptions: true,
   },
   targetUsers: {

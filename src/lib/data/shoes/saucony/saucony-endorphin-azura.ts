@@ -26,9 +26,6 @@ export const shoe: Shoe = {
   ],
   specs: {
     weight: 241,
-    cushioning: 8,
-    responsiveness: 9,
-    stability: 6,
     drop: 8,
   },
   biomechanics: {
@@ -42,7 +39,6 @@ export const shoe: Shoe = {
     midsoleType: 'PWRRUN PB 비즈 PEBA · SPEEDROLL · 플레이트 없음',
   },
   koreanFootFit: {
-    toBoxWidth: 'standard',
   },
   targetUsers: {
     recommended: [

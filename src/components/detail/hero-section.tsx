@@ -37,7 +37,9 @@ export function HeroSection({ shoe, brandTechnologyUrl }: HeroSectionProps) {
       ? { label: '발볼 여유', value: '넓음' }
       : koreanFootFit?.toBoxWidth === 'narrow'
       ? { label: '발볼 주의', value: '좁음' }
-      : { label: '기본 핏', value: '표준' };
+      : koreanFootFit?.toBoxWidth === 'standard'
+      ? { label: '기본 핏', value: '표준' }
+      : { label: '폭 옵션', value: koreanFootFit?.wideOptions === true ? '와이드 확인' : '시착 확인' };
 
   const summaryCards: { label: string; value: string; unit: string }[] = [
     {

@@ -27,9 +27,6 @@ export const shoe: Shoe = {
   ],
   specs: {
     weight: 200,
-    cushioning: 8,
-    responsiveness: 8,
-    stability: 6,
     drop: 5.5,
   },
   biomechanics: {
@@ -43,7 +40,6 @@ export const shoe: Shoe = {
     midsoleType: 'ENERZY XP · 카본 혼합 나일론 판재(DOR)',
   },
   koreanFootFit: {
-    toBoxWidth: 'standard',
   },
   targetUsers: {
     recommended: [

@@ -28,9 +28,6 @@ export const shoe: Shoe = {
   ],
   specs: {
     weight: 137,
-    cushioning: 5,
-    responsiveness: 10,
-    stability: 4,
     drop: 3,
   },
   biomechanics: {
@@ -44,7 +41,6 @@ export const shoe: Shoe = {
     midsoleType: 'ENERZY XP · 전장 카본 · 낮고 완만한 로커',
   },
   koreanFootFit: {
-    toBoxWidth: 'narrow',
   },
   targetUsers: {
     recommended: [

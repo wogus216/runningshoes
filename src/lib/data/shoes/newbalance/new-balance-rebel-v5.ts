@@ -26,9 +26,6 @@ export const shoe: Shoe = {
   ],
   specs: {
     weight: 220,
-    cushioning: 9,
-    responsiveness: 8,
-    stability: 6,
     drop: 6.3,
   },
   biomechanics: {
@@ -52,7 +49,6 @@ export const shoe: Shoe = {
     price: "한국 실운영 공식 여성 D NBPFGF723K Black·남성 2E NBPFGF722L Black 정가 219,000원. 여성 230/235/240/250mm 선택 가능,225/245/255mm 품절이었고 확인한남성색 250~290mm 는 모두품절이었습니다. 남성 D·여성 B의 현재 상품은 미확인입니다. SCRebelV1과 섞지 않습니다.",
   },
   koreanFootFit: {
-    toBoxWidth: 'wide',
     wideOptions: true,
   },
   priceAnalysis: {

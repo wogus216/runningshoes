@@ -22,9 +22,6 @@ export const shoe: Shoe = {
   editorComment: '2026-11-09 원문 재확인. 한국 공식 원문 남성MEDIUM1104461D090 정가209,000원 확인. 남성WIDE·여성 상품은 원문 접근 실패로현재 SKU·가격·재고 미확인입니다. 확인 문서의 현재 할인·사이즈별 재고도 미확인입니다. DOR 소개 남성303g(US9)·여성266g(US8),39/29mm·드롭10mm. RR305g·37.8/27.7mm·10.1mm와 구분. RR33.7AC와 보조폼40.3AC는 다른 측정입니다. 정확한 해부학적 폼 경계는 미확인이며 무게·주행감·보호 효과로 환산하지않습니다. DOR의 Matt과 Bach은 US10에서 낮은 앞쪽 볼륨과 초기 압박을 느꼈습니다. Matt은 내측 힐·중족부지지를 강하게, Bach은 중심으로 모이는 균형감으로 느껴 의견이 갈립니다. RR의 미묘한안정장치라는 설명과 같은 임상 등급으로 합치지 않습니다. 미디얼 포스트 같다는 체감을 전통포스트 재료 구조로 확정하지않습니다. 한국 남성MEDIUM 원문만 확인했으며 와이드현재 판매를확정하지않습니다. RR내부95.6/73.2/26.4mm는 실제 한국 와이드 치수가 아닙니다. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
   specs: {
     weight: 305,
-    cushioning: 8,
-    responsiveness: 7,
-    stability: 9,
     drop: 10.1,
   },
   biomechanics: {
@@ -37,7 +34,6 @@ export const shoe: Shoe = {
     midsoleType: '질소 주입 DNA Tuned · GuideRails',
   },
   koreanFootFit: {
-    toBoxWidth: 'standard',
   },
   targetUsers: {
     recommended: [

@@ -23,9 +23,6 @@ export const shoe: Shoe = {
   ],
   specs: {
     weight: 257,
-    cushioning: 8,
-    responsiveness: 8,
-    stability: 8,
     drop: 9.5,
   },
   biomechanics: {
@@ -39,7 +36,6 @@ export const shoe: Shoe = {
     midsoleType: 'Dreamstrike+ · 폼 Support Rods · 비카본',
   },
   koreanFootFit: {
-    toBoxWidth: 'wide',
   },
   targetUsers: {
     recommended: [

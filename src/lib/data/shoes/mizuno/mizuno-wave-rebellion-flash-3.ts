@@ -25,9 +25,6 @@ export const shoe: Shoe = {
   ],
   specs: {
     weight: 244,
-    cushioning: 10,
-    responsiveness: 8,
-    stability: 6,
     drop: 7.5,
   },
   biomechanics: {
@@ -41,7 +38,6 @@ export const shoe: Shoe = {
     midsoleType: 'Enerzy XP TPEE 위층 · Enerzy NXT EVA 아래층 · 유리섬유 나일론',
   },
   koreanFootFit: {
-    toBoxWidth: 'narrow',
   },
   targetUsers: {
     recommended: [

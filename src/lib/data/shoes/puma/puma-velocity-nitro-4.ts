@@ -26,9 +26,6 @@ export const shoe: Shoe = {
   ],
   specs: {
     weight: 224,
-    cushioning: 8,
-    responsiveness: 9,
-    stability: 7,
     drop: 9.7,
   },
   biomechanics: {
@@ -42,7 +39,6 @@ export const shoe: Shoe = {
     midsoleType: '전장 단일 NITROFOAM · PUMAGRIP',
   },
   koreanFootFit: {
-    toBoxWidth: 'narrow',
   },
   targetUsers: {
     recommended: [

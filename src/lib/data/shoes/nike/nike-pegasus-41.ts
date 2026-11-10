@@ -24,9 +24,6 @@ export const shoe: Shoe = {
   ],
   specs: {
     weight: 281,
-    cushioning: 8,
-    responsiveness: 7,
-    stability: 8,
     drop: 11.4,
   },
   biomechanics: {
@@ -40,7 +37,6 @@ export const shoe: Shoe = {
     midsoleType: 'ReactX · 힐/전족부 Air Zoom 유닛',
   },
   koreanFootFit: {
-    toBoxWidth: 'narrow',
   },
   targetUsers: {
     recommended: [

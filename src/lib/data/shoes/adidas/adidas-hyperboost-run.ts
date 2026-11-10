@@ -27,9 +27,6 @@ export const shoe: Shoe = {
   ],
   specs: {
     weight: 247,
-    cushioning: 9,
-    responsiveness: 9,
-    stability: 6,
     drop: 6.8,
   },
   biomechanics: {
@@ -43,7 +40,6 @@ export const shoe: Shoe = {
     midsoleType: 'Hyperboost Pro · Continental 전족 패치 + LIGHTTRAXION',
   },
   koreanFootFit: {
-    toBoxWidth: 'standard',
   },
   targetUsers: {
     recommended: [

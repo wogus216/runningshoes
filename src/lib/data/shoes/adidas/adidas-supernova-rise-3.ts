@@ -22,9 +22,6 @@ export const shoe: Shoe = {
   ],
   specs: {
     weight: 264,
-    cushioning: 9,
-    responsiveness: 7,
-    stability: 7,
     drop: 7.8,
   },
   biomechanics: {
@@ -38,7 +35,6 @@ export const shoe: Shoe = {
     midsoleType: 'Dreamstrike+ · Primeweave · LIGHTTRAXION',
   },
   koreanFootFit: {
-    toBoxWidth: 'standard',
   },
   targetUsers: {
     recommended: [

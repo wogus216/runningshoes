@@ -29,9 +29,6 @@ export const shoe: Shoe = {
   ],
   "specs": {
     "weight": 249,
-    "cushioning": 9,
-    "responsiveness": 8,
-    "stability": 6,
     "drop": 7.1
   },
   "biomechanics": {
@@ -45,7 +42,6 @@ export const shoe: Shoe = {
     "midsoleType": "FF BLAST MAX + 전족부 FF TURBO²"
   },
   "koreanFootFit": {
-    "toBoxWidth": "narrow",
     "wideOptions": true
   },
   "targetUsers": {

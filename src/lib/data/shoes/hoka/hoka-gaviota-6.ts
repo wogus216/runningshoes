@@ -23,9 +23,6 @@ export const shoe: Shoe = {
   ],
   specs: {
     weight: 283,
-    cushioning: 8,
-    responsiveness: 6,
-    stability: 10,
     drop: 7.3,
   },
   biomechanics: {
@@ -39,7 +36,6 @@ export const shoe: Shoe = {
     midsoleType: 'CMEVA · H-Frame',
   },
   koreanFootFit: {
-    toBoxWidth: 'wide',
   },
   targetUsers: {
     recommended: [

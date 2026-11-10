@@ -21,9 +21,6 @@ export const shoe: Shoe = {
   ],
   specs: {
     weight: 306,
-    cushioning: 9,
-    responsiveness: 6,
-    stability: 9,
     drop: 10,
   },
   biomechanics: {
@@ -37,7 +34,6 @@ export const shoe: Shoe = {
     midsoleType: '질소 주입 DNA TUNED · GuideRails',
   },
   koreanFootFit: {
-    toBoxWidth: 'standard',
   },
   targetUsers: {
     recommended: [

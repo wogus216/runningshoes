@@ -247,9 +247,9 @@ describe("쿠션 가점은 느린·회복 용도에 비추천인 신발에 주�
     return found?.rawScore;
   };
 
-  it("쿠션 10 신발에 '느린 회복 러닝 비추천'이 적히면 48점 차이가 난다(가점 28: 규칙 22·25의 +8, +10, 규칙 9의 +10 + 감점 20: 규칙 14-1)", () => {
+  it("느린 회복 비추천 문구는 편집 감점으로 반영하고 미검증 쿠션 가점은 주지 않는다", () => {
     const base = shoes.find(
-      (s) => s.specs?.cushioning === 10 && s.category === "쿠션화" && !s.targetUsers?.notRecommended.some((t) => UNSUITED.test(t)),
+      (s) => s.specs && s.price && s.category === "쿠션화" && !s.targetUsers?.notRecommended.some((t) => UNSUITED.test(t)),
     );
     expect(base).toBeDefined();
     const flagged = { ...base!, targetUsers: { ...base!.targetUsers!, notRecommended: ["느린 회복 러닝"] } };
@@ -257,11 +257,11 @@ describe("쿠션 가점은 느린·회복 용도에 비추천인 신발에 주�
     const withoutBonus = rawScoreOf(flagged);
     expect(withBonus).toBeDefined();
     expect(withoutBonus).toBeDefined();
-    expect(withBonus! - withoutBonus!).toBe(48);
+    expect(withBonus! - withoutBonus!).toBe(20);
   });
 
   it("레이싱 카테고리 신발은 느린 페이스여도 쿠션 가점을 받지 않는다", () => {
-    const source = shoes.find((s) => s.category === "레이싱" && (s.specs?.cushioning ?? 0) >= 9);
+    const source = shoes.find((s) => s.category === "레이싱" && s.specs);
     expect(source).toBeDefined();
     // 가격 필터와 독립적으로 쿠션 가점을 검사하는 테스트 입력값이다.
     const racer = { ...source!, price: 300000 };
@@ -279,10 +279,10 @@ describe("회복 쿠션 가점은 느린·회복 용도에 비추천인 신발�
   const UNSUITED = /느린|천천|회복|조깅|이지|리커버리|LSD/;
   const rawScoreOf = (shoe: (typeof shoes)[number], profile: UserProfile) => recommendShoes([shoe], profile)[0]?.rawScore;
 
-  it("회복 목적: 쿠션 8↑ 신발에 '느린 회복 러닝 비추천'이 적히면 30점 차이가 난다(규칙 9 가점 10 + 규칙 14-1 감점 20)", () => {
+  it("회복 목적의 비추천 문구만 반영하고 미검증 쿠션 가점은 사용하지 않는다", () => {
     const profile: UserProfile = { ...baseProfile, experience: "intermediate", weeklyDistance: "medium", purpose: "recovery", budget: "high", targetPace: "medium" };
     const base = shoes.find(
-      (s) => s.specs?.cushioning === 8 && s.category !== "레이싱" && !s.targetUsers?.notRecommended.some((t) => UNSUITED.test(t)),
+      (s) => s.specs && s.price && s.category !== "레이싱" && !s.targetUsers?.notRecommended.some((t) => UNSUITED.test(t)),
     );
     expect(base).toBeDefined();
     const flagged = { ...base!, targetUsers: { ...base!.targetUsers!, notRecommended: ["느린 회복 러닝"] } };
@@ -290,7 +290,7 @@ describe("회복 쿠션 가점은 느린·회복 용도에 비추천인 신발�
     const withoutBonus = rawScoreOf(flagged, profile);
     expect(withBonus).toBeDefined();
     expect(withoutBonus).toBeDefined();
-    expect(withBonus! - withoutBonus!).toBe(30);
+    expect(withBonus! - withoutBonus!).toBe(20);
   });
 });
 
@@ -324,7 +324,7 @@ describe("느린 페이스에서 느린·회복 러닝 비추천 신발은 감�
     expect(withBonus).toBeDefined();
     expect(withoutBonus).toBeDefined();
     // 규칙 9 가점(+10)과 규칙 14-1 감점(-20)이 함께 빠지고 더해진다
-    expect(withBonus! - withoutBonus!).toBe(30);
+    expect(withBonus! - withoutBonus!).toBe(20);
   });
 
   it("레이싱 목적이면 감점하지 않는다", () => {

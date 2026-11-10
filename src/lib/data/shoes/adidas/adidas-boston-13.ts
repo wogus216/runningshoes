@@ -24,9 +24,6 @@ export const shoe: Shoe = {
   ],
   specs: {
     weight: 254,
-    cushioning: 8,
-    responsiveness: 8,
-    stability: 8,
     drop: 6,
   },
   biomechanics: {
@@ -40,7 +37,6 @@ export const shoe: Shoe = {
     midsoleType: 'Lightstrike Pro + Lightstrike 2.0',
   },
   koreanFootFit: {
-    toBoxWidth: 'narrow',
     wideOptions: false,
   },
   targetUsers: {

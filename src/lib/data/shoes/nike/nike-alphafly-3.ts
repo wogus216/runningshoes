@@ -25,9 +25,6 @@ export const shoe: Shoe = {
   ],
   specs: {
     weight: 201,
-    cushioning: 9,
-    responsiveness: 9,
-    stability: 6,
     drop: 8.5,
   },
   biomechanics: {
@@ -41,7 +38,6 @@ export const shoe: Shoe = {
     midsoleType: '연속 ZoomX · 전장 카본 Flyplate · 전족 Air Zoom pods',
   },
   koreanFootFit: {
-    toBoxWidth: 'wide',
   },
   targetUsers: {
     recommended: [

@@ -25,9 +25,6 @@ export const shoe: Shoe = {
   ],
   specs: {
     weight: 289,
-    cushioning: 9,
-    responsiveness: 8,
-    stability: 7,
     drop: 9.6,
   },
   biomechanics: {
@@ -41,7 +38,6 @@ export const shoe: Shoe = {
     midsoleType: '전장 ZoomX 폼',
   },
   koreanFootFit: {
-    toBoxWidth: 'narrow',
     wideOptions: true,
   },
   targetUsers: {

@@ -41,7 +41,7 @@ export type RecommendedShoe = CardShoe & {
   matchWarnings: string[];
   detailedReason?: string;  // 상세 추천 이유
   comparisonToAvg?: {       // 평균 대비 스펙 비교
-    cushioning: number;
+    cushioning?: number;
     weight: number;
     durability?: number;
   };
@@ -172,22 +172,12 @@ export function recommendShoes(shoes: CardShoe[], profile: UserProfile): Recomme
       /^(입문|초보)(?:\s*러너|자)?$/.test(text.trim())
     )) continue;
 
-    // 2. 발볼 너비 체크
-    if (shoe.koreanFootFit?.toBoxWidth) {
-      if (profile.footWidth === 'wide' && shoe.koreanFootFit.toBoxWidth === 'narrow') {
-        if (shoe.koreanFootFit.wideOptions) {
-          score += 5;
-          reasons.push('와이드 옵션 제공');
-        } else {
-          continue; // 넓은 발에 좁은 일반판만 있는 모델은 제외
-        }
-      } else if (profile.footWidth === shoe.koreanFootFit.toBoxWidth) {
-        score += 15;
-        reasons.push('발볼 너비 적합');
-      } else if (shoe.koreanFootFit.wideOptions && profile.footWidth === 'wide') {
-        score += 10;
-        reasons.push('와이드 옵션 제공');
-      }
+    if (profile.footWidth === 'wide' && shoe.koreanFootFit?.wideOptions !== true) continue;
+
+    // 한국에서 확인한 와이드 옵션을 우선 비교한다. 개인의 맞음·내부 폭을 보장하지 않는다.
+    if (profile.footWidth === 'wide' && shoe.koreanFootFit?.wideOptions === true) {
+      score += 10;
+      reasons.push('한국 와이드 옵션 확인');
     }
 
     // 5. 경험 수준에 따른 추천 매칭 (키워드 + 카테고리 직접 매핑)
@@ -245,12 +235,6 @@ export function recommendShoes(shoes: CardShoe[], profile: UserProfile): Recomme
       reasons.push('카본 플레이트 탑재');
     }
 
-    // 9. 회복 목적이면 쿠셔닝 가점
-    if (profile.purpose === 'recovery' && shoe.specs.cushioning >= 8 && !unsuitedForSlowRuns(shoe)) {
-      score += 10;
-      reasons.push('높은 쿠셔닝');
-    }
-
     /*
      * 10-b. 주간 거리에 어울리는 카테고리 (low·medium 도 결과에 반영된다)
      *
@@ -296,9 +280,6 @@ export function recommendShoes(shoes: CardShoe[], profile: UserProfile): Recomme
         if (shoe.specs.weight && shoe.specs.weight < 220) {
           score += 8;
         }
-        if (shoe.specs.responsiveness && shoe.specs.responsiveness >= 8) {
-          score += 8;
-        }
       }
     }
 
@@ -326,32 +307,9 @@ export function recommendShoes(shoes: CardShoe[], profile: UserProfile): Recomme
         score += 25;
         reasons.push('상급자에 적합한 레이싱화');
       }
-      if (shoe.specs.responsiveness && shoe.specs.responsiveness >= 8) {
-        score += 8;
-        reasons.push('높은 반응성');
-      }
       if (shoe.biomechanics?.carbonPlate) {
         score += 8;
         reasons.push('카본 플레이트 탑재');
-      }
-    }
-
-    // 16. 반응성 점수 (목적별)
-    if (shoe.specs.responsiveness) {
-      if (profile.purpose === 'racing' && shoe.specs.responsiveness >= 8) {
-        score += 10;
-        reasons.push('뛰어난 반응성');
-      } else if (profile.purpose === 'recovery' && shoe.specs.responsiveness <= 5) {
-        score += 5;
-        reasons.push('회복에 적합한 부드러운 착지감');
-      }
-    }
-
-    // 18. 쿠셔닝 보너스 (입문자/회복)
-    if (shoe.specs.cushioning >= 8) {
-      if (profile.experience === 'beginner') {
-        score += 5;
-        reasons.push('입문자에게 좋은 쿠셔닝');
       }
     }
 
@@ -361,12 +319,6 @@ export function recommendShoes(shoes: CardShoe[], profile: UserProfile): Recomme
         score += 10;
         reasons.push('엘리트 레이싱 스펙');
       }
-    }
-
-    // 22. 맥스 쿠셔닝 보너스 (회복/느린 페이스 + 높은 쿠셔닝)
-    if ((profile.purpose === 'recovery' || profile.targetPace === 'slow') && shoe.specs.cushioning >= 9 && !unsuitedForSlowRuns(shoe)) {
-      score += 8;
-      reasons.push('최상급 쿠셔닝');
     }
 
     /*
@@ -384,18 +336,6 @@ export function recommendShoes(shoes: CardShoe[], profile: UserProfile): Recomme
         score += Math.round(savingsRatio * 6);
         reasons.push('예산 대비 효율적');
       }
-    }
-
-    // 25. 최고 쿠셔닝(10) 특별 보너스
-    if (shoe.specs.cushioning === 10 && !unsuitedForSlowRuns(shoe) && (profile.purpose === 'recovery' || profile.targetPace === 'slow' || (profile.experience === 'beginner' && profile.weeklyDistance === 'low'))) {
-      score += 10;
-      reasons.push('최상급 쿠셔닝');
-    }
-
-    // 26. 카본 레이싱 + 높은 안정성 조합 (안정적 레이싱 니치)
-    if (shoe.biomechanics?.carbonPlate && shoe.specs.stability >= 7 && profile.purpose === 'racing') {
-      score += 6;
-      reasons.push('안정적인 카본 레이싱');
     }
 
     // 점수가 양수인 신발만 추천
@@ -433,7 +373,6 @@ export function recommendShoes(shoes: CardShoe[], profile: UserProfile): Recomme
 
   // ‘추천 신발 평균’은 실제 결과에 나온 신발을 기준으로 한다.
   const avgSpecs = {
-    cushioning: result.reduce((sum, r) => sum + r.specs!.cushioning, 0) / result.length,
     weight: result.reduce((sum, r) => sum + r.specs!.weight, 0) / result.length,
     durability: (() => {
       const known = result.flatMap(r => r.specs?.durability === undefined ? [] : [r.specs.durability]);
@@ -442,7 +381,6 @@ export function recommendShoes(shoes: CardShoe[], profile: UserProfile): Recomme
   };
   return result.map(r => {
     const comparisonToAvg = {
-      cushioning: Math.round(r.specs!.cushioning - avgSpecs.cushioning),
       weight: Math.round(r.specs!.weight - avgSpecs.weight),
       durability: r.specs!.durability !== undefined && avgSpecs.durability !== undefined
         ? Math.round(r.specs!.durability - avgSpecs.durability) : undefined,
@@ -455,7 +393,7 @@ export function recommendShoes(shoes: CardShoe[], profile: UserProfile): Recomme
 function generateDetailedReason(
   shoe: RecommendedShoe,
   profile: UserProfile,
-  comparison: { cushioning: number; weight: number; durability?: number }
+  comparison: { cushioning?: number; weight: number; durability?: number }
 ): string {
   const parts: string[] = [];
 
@@ -471,9 +409,6 @@ function generateDetailedReason(
 
   // 스펙 비교 설명
   const specComparisons: string[] = [];
-  if (comparison.cushioning > 0) {
-    specComparisons.push(`쿠셔닝이 추천 평균보다 ${comparison.cushioning}점 높습니다`);
-  }
   if (comparison.weight < -10) {
     specComparisons.push(`무게가 추천 평균보다 ${Math.abs(comparison.weight)}g 가볍습니다`);
   }

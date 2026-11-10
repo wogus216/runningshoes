@@ -27,9 +27,6 @@ export const shoe: Shoe = {
   ],
   specs: {
     weight: 285,
-    cushioning: 8,
-    responsiveness: 10,
-    stability: 6,
     drop: 6.9,
   },
   biomechanics: {
@@ -43,7 +40,6 @@ export const shoe: Shoe = {
     midsoleType: 'IncrediRUN 상층 + PWRRUN 하층 · 약3/4 카본',
   },
   koreanFootFit: {
-    toBoxWidth: 'narrow',
   },
   targetUsers: {
     recommended: [

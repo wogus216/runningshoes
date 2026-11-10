@@ -25,9 +25,6 @@ export const shoe: Shoe = {
   ],
   specs: {
     weight: 278,
-    cushioning: 9,
-    responsiveness: 7,
-    stability: 7,
     drop: 7.3,
   },
   biomechanics: {
@@ -51,7 +48,6 @@ export const shoe: Shoe = {
     price: "한국 실운영 검색 0건·남녀카테고리미노출이지만 관련카드에는 여성 B NBPFGS162B 정가 249,000원·할인 174,300원이 표시됐습니다. 대상상품상세는 빈화면이어서 현재 판매·확정 SKU·폭·재고·정가 필드는 미확인으로 둡니다. QA·pay캐시 가격과사이즈를 현재확인값으로 쓰지 않으며 검색 0건을 전체 미판매로 단정하지 않습니다.",
   },
   koreanFootFit: {
-    toBoxWidth: 'standard',
   },
   priceAnalysis: {
     priceTier: 'premium',

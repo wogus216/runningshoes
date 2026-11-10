@@ -24,9 +24,6 @@ export const shoe: Shoe = {
   ],
   specs: {
     weight: 275,
-    cushioning: 9,
-    responsiveness: 7,
-    stability: 7,
     drop: 12.4,
   },
   biomechanics: {
@@ -40,7 +37,6 @@ export const shoe: Shoe = {
     midsoleType: 'CMEVA · 로커',
   },
   koreanFootFit: {
-    toBoxWidth: 'standard',
   },
   targetUsers: {
     recommended: [

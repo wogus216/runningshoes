@@ -108,15 +108,15 @@ export type SimilarShoeInfo = {
   image?: string;
   price?: number;
   specs?: {
-    cushioning: number;
+    cushioning?: number;
     weight: number;
-    stability: number;
+    stability?: number;
   };
   priceAnalysis?: {
     valueRating?: number;
   };
   koreanFootFit?: {
-    toBoxWidth: string;
+    toBoxWidth?: string;
   };
 };
 

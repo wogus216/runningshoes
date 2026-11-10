@@ -25,9 +25,6 @@ export const shoe: Shoe = {
   ],
   specs: {
     weight: 201,
-    cushioning: 8,
-    responsiveness: 9,
-    stability: 5,
     drop: 3.2,
   },
   biomechanics: {
@@ -41,7 +38,6 @@ export const shoe: Shoe = {
     midsoleType: '초대 Helion HF · Bounceboard 드롭인 폼 · 카본 Speedboard',
   },
   koreanFootFit: {
-    toBoxWidth: 'standard',
   },
   priceAnalysis: {
     priceTier: 'super-premium',

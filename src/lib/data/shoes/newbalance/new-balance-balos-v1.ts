@@ -25,9 +25,6 @@ export const shoe: Shoe = {
   ],
   specs: {
     weight: 247,
-    cushioning: 10,
-    responsiveness: 7,
-    stability: 5,
     drop: 5.9,
   },
   biomechanics: {
@@ -41,7 +38,6 @@ export const shoe: Shoe = {
     midsoleType: 'Fresh Foam X 혼합 폼 · 큰 로커 · 부분 고무 밑창',
   },
   koreanFootFit: {
-    toBoxWidth: 'standard',
   },
   targetUsers: {
     recommended: [

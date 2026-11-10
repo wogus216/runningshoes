@@ -21,9 +21,6 @@ export const shoe: Shoe = {
   editorComment: '2026-11-09 원문 재확인. 한국 남성 Medium1104641D162·Wide1104642E078 정가179,000원. 공식 원문은 캐시 응답이라 실시간 재고·할인가는 미확인. DOR 소개306g(남성US9/여성10.5)·39/33mm·드롭6mm. 한국 공식 상품의 현재 무게·스택·드롭을 직접 확인한 것은 아님. RunRepeat 실측 303g,힐/전족부 38.5/31.2mm·드롭7.3mm입니다.  DOR의 Matt은 US10에서 여유 있는 메쉬와 인솔 공간, 쉬운 러닝의 전환을 평가했지만 무게·낮은 반응과 움직이는 혀를 주의점으로 들었습니다.30마일의 마모 관찰에서700km 공통 수명을 만들지 않습니다. 한국 남성Medium·Wide 상품 확인. 여성 한국 상품과 실시간 사이즈별 재고는 미확인입니다. 표의 내부 치수는 해외 실험실 검체 기준입니다. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
   specs: {
     weight: 303,
-    cushioning: 8,
-    responsiveness: 6,
-    stability: 7,
     drop: 7.3,
   },
   biomechanics: {
@@ -36,7 +33,6 @@ export const shoe: Shoe = {
     midsoleType: '질소 주입 DNA LOFT v3',
   },
   koreanFootFit: {
-    toBoxWidth: 'standard',
     wideOptions: true,
   },
   targetUsers: {

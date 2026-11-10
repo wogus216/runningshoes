@@ -19,9 +19,6 @@ export const shoe: Shoe = {
   ],
   specs: {
     weight: 283,
-    cushioning: 8,
-    responsiveness: 7,
-    stability: 7,
     drop: 9.1,
   },
   biomechanics: {
@@ -35,7 +32,6 @@ export const shoe: Shoe = {
     midsoleType: 'LIGHTSTRIKE · Continental 아웃솔 · 중창 메시 층',
   },
   koreanFootFit: {
-    toBoxWidth: 'standard',
   },
   targetUsers: {
     recommended: [

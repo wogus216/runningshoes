@@ -26,9 +26,6 @@ export const shoe: Shoe = {
   ],
   specs: {
     weight: 128,
-    cushioning: 7,
-    responsiveness: 10,
-    stability: 5,
     drop: 3.7,
   },
   biomechanics: {
@@ -42,7 +39,6 @@ export const shoe: Shoe = {
     midsoleType: 'ZoomX · 컷아웃 전장 카본 Flyplate',
   },
   koreanFootFit: {
-    toBoxWidth: 'narrow',
   },
   targetUsers: {
     recommended: [

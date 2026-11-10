@@ -25,9 +25,6 @@ export const shoe: Shoe = {
   ],
   specs: {
     weight: 286,
-    cushioning: 8,
-    responsiveness: 6,
-    stability: 8,
     drop: 12.9,
   },
   biomechanics: {
@@ -40,7 +37,6 @@ export const shoe: Shoe = {
     midsoleType: 'ENERZY 본체 · 힐 ENERZY NXT · Wave plate',
   },
   koreanFootFit: {
-    toBoxWidth: 'standard',
     wideOptions: true,
   },
   targetUsers: {

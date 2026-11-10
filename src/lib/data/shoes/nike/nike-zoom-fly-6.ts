@@ -27,9 +27,6 @@ export const shoe: Shoe = {
   ],
   "specs": {
     "weight": 248,
-    "cushioning": 9,
-    "responsiveness": 8,
-    "stability": 7,
     "drop": 9.6
   },
   "biomechanics": {
@@ -43,7 +40,6 @@ export const shoe: Shoe = {
     "midsoleType": "ZoomX + SR-02 (하부 명칭 DOR 기준)"
   },
   "koreanFootFit": {
-    "toBoxWidth": "narrow",
   },
   "targetUsers": {
     "recommended": [

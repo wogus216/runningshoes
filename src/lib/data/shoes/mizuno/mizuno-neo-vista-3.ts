@@ -21,9 +21,6 @@ export const shoe: Shoe = {
   ],
   specs: {
     weight: 266,
-    cushioning: 10,
-    responsiveness: 7,
-    stability: 5,
     drop: 8.5,
   },
   biomechanics: {
@@ -37,7 +34,6 @@ export const shoe: Shoe = {
     plateType: 'split glass-fiber-infused nylon Wave Plate (DOR)',
   },
   koreanFootFit: {
-    toBoxWidth: 'standard',
   },
   targetUsers: {
     recommended: [

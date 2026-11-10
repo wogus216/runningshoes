@@ -27,9 +27,6 @@ export const shoe: Shoe = {
   ],
   specs: {
     weight: 210,
-    cushioning: 2,
-    responsiveness: 6,
-    stability: 3,
     drop: 0,
   },
   biomechanics: {
@@ -43,7 +40,6 @@ export const shoe: Shoe = {
     midsoleType: '얇은 FloatPro EVA · Vibram TC5+ · 제로드롭',
   },
   koreanFootFit: {
-    toBoxWidth: 'wide',
   },
   targetUsers: {
     recommended: [

@@ -26,9 +26,6 @@ export const shoe: Shoe = {
   ],
   specs: {
     weight: 210,
-    cushioning: 6,
-    responsiveness: 10,
-    stability: 7,
     drop: 8,
   },
   biomechanics: {
@@ -42,7 +39,6 @@ export const shoe: Shoe = {
     midsoleType: 'FF BLAST TURBO · V형 전방 하향 카본 (2022 Edge+)',
   },
   koreanFootFit: {
-    toBoxWidth: 'standard',
   },
   targetUsers: {
     recommended: [

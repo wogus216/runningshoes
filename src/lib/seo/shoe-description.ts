@@ -11,7 +11,7 @@ export function shoeDescription(shoe: DescriptionShoe, brandLabel: string): stri
     shoe.price ? `정가 ${shoe.price.toLocaleString('ko-KR')}원` : null,
     shoe.category ? `${shoe.category} 러닝화` : null,
   ].filter(Boolean);
-  const details = `${parts.join(' · ')} — 사이즈·장단점·추천 대상까지 한국 러너 후기`;
+  const details = `${parts.join(' · ')} — 공식·외부 자료와 착화 확인 항목`;
   const budget = 160 - details.length - 3;
   if (!shoe.description || budget < 15) return details;
 
@@ -27,5 +27,5 @@ export function shoeDescription(shoe: DescriptionShoe, brandLabel: string): stri
       summary = `${space > 0 ? cut.slice(0, space) : cut}…`;
     }
   }
-  return `${[parts[0], summary, ...parts.slice(1)].join(' · ')} — 사이즈·장단점·추천 대상까지 한국 러너 후기`;
+  return `${[parts[0], summary, ...parts.slice(1)].join(' · ')} — 공식·외부 자료와 착화 확인 항목`;
 }

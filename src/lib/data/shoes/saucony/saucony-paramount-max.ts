@@ -22,9 +22,6 @@ export const shoe: Shoe = {
   ],
   specs: {
     weight: 272,
-    cushioning: 10,
-    responsiveness: 10,
-    stability: 6,
     drop: 5.7,
   },
   biomechanics: {
@@ -38,7 +35,6 @@ export const shoe: Shoe = {
     midsoleType: 'IncrediRUN · 플레이트 없음 · 두꺼운 풋베드',
   },
   koreanFootFit: {
-    toBoxWidth: 'narrow',
   },
   priceAnalysis: {
     priceTier: 'premium',

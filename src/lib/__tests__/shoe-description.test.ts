@@ -4,13 +4,14 @@ import { shoe as kayano } from '../data/shoes/asics/asics-gel-kayano-33';
 import { getShoes } from '../data/shoes';
 
 describe('신발 검색 설명', () => {
-  it('긴 소개 뒤의 무게·발볼·가격을 자르지 않는다', () => {
+  it('긴 소개에서도 확인한 무게·가격은 남기고 미확인 핏은 만들지 않는다', () => {
     const description = shoeDescription(kayano, '아식스');
     expect(description).toContain('아식스 젤 카야노 33');
     expect(description).toContain('무게 298g');
-    expect(description).toContain('발볼 표준');
+    expect(description).not.toContain('발볼 표준');
+    expect(description).not.toContain('후기');
     expect(description).toContain('정가 199,000원');
-    expect(description.endsWith('한국 러너 후기')).toBe(true);
+    expect(description.endsWith('공식·외부 자료와 착화 확인 항목')).toBe(true);
     expect(description.length).toBeLessThanOrEqual(160);
   });
 

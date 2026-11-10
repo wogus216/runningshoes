@@ -25,9 +25,6 @@ export const shoe: Shoe = {
   ],
   specs: {
     weight: 271,
-    cushioning: 8,
-    responsiveness: 6,
-    stability: 6,
     drop: 4.1,
   },
   biomechanics: {
@@ -41,7 +38,6 @@ export const shoe: Shoe = {
     midsoleType: 'Helion HF(PEBA) 위층 · Helion(EVA) 아래층 · Speedboard',
   },
   koreanFootFit: {
-    toBoxWidth: 'wide',
   },
   targetUsers: {
     recommended: [

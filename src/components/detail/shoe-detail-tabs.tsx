@@ -1,8 +1,6 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
-import dynamic from 'next/dynamic';
-import { QuickSpecs } from '@/components/detail/quick-specs';
+import { useState } from 'react';
 import { DetailedSpecs } from '@/components/detail/detailed-specs';
 import { BiomechanicsAnalysis } from '@/components/detail/biomechanics-analysis';
 import { InjuryPrevention } from '@/components/detail/injury-prevention';
@@ -17,27 +15,6 @@ import { cn } from '@/lib/utils';
 import type { Shoe } from '@/types/shoe';
 import type { SimilarShoeInfo } from '@/lib/data/shoes';
 import { getShoeDurability } from '@/lib/durability';
-
-// Recharts가 무거워서 dynamic import로 분리 (에러 처리 포함)
-const SpecRadarChart = dynamic(
-  () => import('@/components/detail/spec-radar-chart')
-    .then(mod => ({ default: mod.SpecRadarChart }))
-    .catch(() => ({
-      default: () => (
-        <div className="h-[300px] flex items-center justify-center text-tertiary">
-          차트를 불러올 수 없습니다
-        </div>
-      )
-    })),
-  {
-    loading: () => (
-      <div className="h-[300px] flex items-center justify-center text-tertiary">
-        차트 로딩 중...
-      </div>
-    ),
-    ssr: false,
-  }
-);
 
 type ShoeDetailTabsProps = {
   shoe: Shoe;
@@ -70,26 +47,9 @@ type TabId = typeof tabs[number]['id'];
 
 export function ShoeDetailTabs({ shoe, similarShoesData, resolvedAlternatives }: ShoeDetailTabsProps) {
   const [activeTab, setActiveTab] = useState<TabId>('specs');
-  const [chartReady, setChartReady] = useState(false);
-  const chartRef = useRef<HTMLDivElement>(null);
   // 내구성 범위·근거 등급은 한 번만 계산해 스펙/가격 탭이 같은 값을 쓰게 한다
   const durability = getShoeDurability(shoe);
 
-  useEffect(() => {
-    const target = chartRef.current;
-    if (!target || typeof IntersectionObserver === 'undefined') {
-      setChartReady(true);
-      return;
-    }
-    const observer = new IntersectionObserver(([entry]) => {
-      if (entry.isIntersecting) {
-        setChartReady(true);
-        observer.disconnect();
-      }
-    }, { rootMargin: '240px' });
-    observer.observe(target);
-    return () => observer.disconnect();
-  }, []);
 
   return (
     <div className="space-y-5">
@@ -118,28 +78,6 @@ export function ShoeDetailTabs({ shoe, similarShoesData, resolvedAlternatives }:
 
       <div className="space-y-4">
         <div className={activeTab === 'specs' ? '' : 'hidden'}>
-          {shoe.specs && (
-            <div className="border border-border bg-white p-5 md:p-6">
-              <QuickSpecs specs={shoe.specs} koreanFootFit={shoe.koreanFootFit} durability={durability} />
-            </div>
-          )}
-          {shoe.specs && (
-            <div className="border border-border bg-white p-5 md:p-6">
-              <div className="mb-5">
-                <p className="text-[11px] font-semibold uppercase tracking-[0.26em] text-sky-700">Spec Chart</p>
-                <h2 className="mt-2 text-2xl font-black tracking-tight text-slate-950">숫자로 보는 성향</h2>
-              </div>
-              <div ref={chartRef} className="min-h-[300px]">
-                {chartReady && (
-                  <SpecRadarChart
-                    specs={shoe.specs}
-                    priceValueRating={shoe.priceAnalysis?.valueRating}
-                    shoeName={shoe.name}
-                  />
-                )}
-              </div>
-            </div>
-          )}
           {shoe.detailedSpecs && (
             <div className="border border-border bg-white p-5 md:p-6">
               <DetailedSpecs specs={shoe.detailedSpecs} showVerifiedConditions={Boolean(shoe.verification)} />

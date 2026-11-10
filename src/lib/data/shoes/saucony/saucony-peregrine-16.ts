@@ -22,9 +22,6 @@ export const shoe: Shoe = {
   ],
   specs: {
     weight: 278,
-    cushioning: 8,
-    responsiveness: 7,
-    stability: 7,
     drop: 4.8,
   },
   biomechanics: {
@@ -38,7 +35,6 @@ export const shoe: Shoe = {
     midsoleType: 'PWRRUN EVA · PWRRUN+ 인솔 · 전족 플라스틱 Rock Plate',
   },
   koreanFootFit: {
-    toBoxWidth: 'narrow',
   },
   priceAnalysis: {
     priceTier: 'mid',

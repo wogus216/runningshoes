@@ -25,9 +25,6 @@ export const shoe: Shoe = {
   ],
   specs: {
     weight: 268,
-    cushioning: 8,
-    responsiveness: 7,
-    stability: 7,
     drop: 10.1,
   },
   biomechanics: {
@@ -41,7 +38,6 @@ export const shoe: Shoe = {
     midsoleType: 'NITROFOAM 이중 밀도 · 카본 PWRPLATE',
   },
   koreanFootFit: {
-    toBoxWidth: 'narrow',
   },
   targetUsers: {
     recommended: [

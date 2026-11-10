@@ -28,9 +28,6 @@ export const shoe: Shoe = {
   ],
   specs: {
     weight: 129,
-    cushioning: 10,
-    responsiveness: 10,
-    stability: 3,
     drop: 9.8,
   },
   biomechanics: {
@@ -44,7 +41,6 @@ export const shoe: Shoe = {
     midsoleType: 'FF LEAP · 약3/4 카본 · MATRYX 어퍼',
   },
   koreanFootFit: {
-    toBoxWidth: 'narrow',
   },
   targetUsers: {
     recommended: [

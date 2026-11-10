@@ -27,9 +27,6 @@ export const shoe: Shoe = {
   ],
   specs: {
     weight: 207,
-    cushioning: 10,
-    responsiveness: 10,
-    stability: 5,
     drop: 8.8,
   },
   biomechanics: {
@@ -53,7 +50,6 @@ export const shoe: Shoe = {
     price: '한국 공식 캐시: 공식403·정확 상품 원문 미확인. 현재 가격·선택 재고는 미확인입니다. 판매캐시와 현재 결제가는 다를 수 있으며 글로벌 폭을 한국 판매 증거로 쓰지 않습니다.',
   },
   koreanFootFit: {
-    toBoxWidth: 'narrow',
   },
   priceAnalysis: {
     priceTier: 'premium',

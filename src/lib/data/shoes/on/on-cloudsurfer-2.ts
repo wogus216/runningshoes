@@ -26,9 +26,6 @@ export const shoe: Shoe = {
   ],
   specs: {
     weight: 254,
-    cushioning: 8,
-    responsiveness: 6,
-    stability: 6,
     drop: 10.4,
   },
   biomechanics: {
@@ -42,7 +39,6 @@ export const shoe: Shoe = {
     midsoleType: 'Helion · CloudTec Phase · Speedboard 없음',
   },
   koreanFootFit: {
-    toBoxWidth: 'standard',
   },
   priceAnalysis: {
     msrp: 199000,

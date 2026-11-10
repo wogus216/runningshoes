@@ -25,9 +25,6 @@ export const shoe: Shoe = {
   ],
   specs: {
     weight: 295,
-    cushioning: 8,
-    responsiveness: 8,
-    stability: 9,
     drop: 9.3,
   },
   biomechanics: {
@@ -53,7 +50,6 @@ export const shoe: Shoe = {
     price: '남성 한국 공식가 미확인. 여성D 연관상품 정가179,000원만 확인; 해당 상품 링크 구매 불가 응답 (2026-11-09)',
   },
   koreanFootFit: {
-    toBoxWidth: 'standard',
   },
   priceAnalysis: {
     priceTier: 'mid',

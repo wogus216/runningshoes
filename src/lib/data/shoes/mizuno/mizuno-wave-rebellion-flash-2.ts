@@ -25,9 +25,6 @@ export const shoe: Shoe = {
   ],
   specs: {
     weight: 239,
-    cushioning: 9,
-    responsiveness: 7,
-    stability: 5,
     drop: 2.9,
   },
   biomechanics: {
@@ -41,7 +38,6 @@ export const shoe: Shoe = {
     midsoleType: 'Enerzy Lite+ PEBA 위층 · Enerzy 아래층 · 유리섬유 Wave',
   },
   koreanFootFit: {
-    toBoxWidth: 'standard',
   },
   targetUsers: {
     recommended: [

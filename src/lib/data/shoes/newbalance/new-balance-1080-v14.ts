@@ -25,9 +25,6 @@ export const shoe: Shoe = {
   ],
   specs: {
     weight: 285,
-    cushioning: 9,
-    responsiveness: 7,
-    stability: 7,
     drop: 4.2,
   },
   biomechanics: {
@@ -51,7 +48,6 @@ export const shoe: Shoe = {
     price: '한국 공식1080 V14 검색에서 상품을 확인하지 못해 현재 정가·성별·폭·SKU·재고는 미확인입니다. 과거 QA 호스트의199,000원·남성2E 자료를 현재 운영 상품 증거로 사용하지 않습니다.',
   },
   koreanFootFit: {
-    toBoxWidth: 'narrow',
   },
   priceAnalysis: {
     priceTier: 'premium',

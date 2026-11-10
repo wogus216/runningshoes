@@ -23,9 +23,6 @@ export const shoe: Shoe = {
   ],
   specs: {
     weight: 306,
-    cushioning: 8,
-    responsiveness: 7,
-    stability: 6,
     drop: 3.7,
   },
   biomechanics: {
@@ -39,7 +36,6 @@ export const shoe: Shoe = {
     midsoleType: '2026 ACG ZoomX위층 · Cushlon3.0아래층 · Vibram',
   },
   koreanFootFit: {
-    toBoxWidth: 'standard',
   },
   targetUsers: {
     recommended: [

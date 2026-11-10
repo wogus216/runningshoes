@@ -35,13 +35,13 @@ function FitItem({ title, subtitle, status, statusColor }: FitItemProps) {
 }
 
 // 토박스 너비에 따른 상태
-function getToeboxStatus(width: ToBoxWidth): { text: string; color: 'positive' | 'warning' | 'primary' } {
+function getToeboxStatus(width?: ToBoxWidth): { text: string; color: 'positive' | 'warning' | 'primary' } {
   const config: Record<ToBoxWidth, { text: string; color: 'positive' | 'warning' | 'primary' }> = {
     narrow: { text: '좁음', color: 'warning' },
     standard: { text: '표준', color: 'primary' },
     wide: { text: '넓음', color: 'positive' },
   };
-  return config[width];
+  return width ? config[width] : { text: '분류 미확인', color: 'primary' };
 }
 
 // 적합성 레벨에 따른 상태
@@ -64,13 +64,13 @@ export function KoreanFootFit({ koreanFootFit, shoeName, brand }: KoreanFootFitP
     ? { text: '있음', color: 'positive' as const }
     : { text: '확인 필요', color: 'primary' as const };
 
-  const getNote = (): string => '너비 등급은 개인 착화나 사이즈를 보장하지 않습니다. 판매 성별·사이즈·폭 옵션을 확인하고 직접 신어보세요.';
+  const getNote = (): string => '신발 내부 실측 너비는 개인 착화나 사이즈를 보장하지 않습니다. 판매 성별·사이즈·폭 옵션을 확인하고 직접 신어보세요.';
 
   return (
     <section className="space-y-6">
       <div className="space-y-2 border-b-2 border-primary pb-4">
         <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-slate-500">Korean Fit</p>
-        <h2 className="text-3xl font-black tracking-tight text-slate-950">한국 러너 기준 핏</h2>
+        <h2 className="text-3xl font-black tracking-tight text-slate-950">핏과 폭 옵션</h2>
         <p className="text-[15.5px] leading-relaxed text-slate-600">{brand} {shoeName}의 발볼과 확인한 폭 옵션을 살펴보세요.</p>
       </div>
 

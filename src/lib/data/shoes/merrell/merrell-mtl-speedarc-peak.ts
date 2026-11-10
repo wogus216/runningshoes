@@ -27,9 +27,6 @@ export const shoe: Shoe = {
   ],
   specs: {
     weight: 303,
-    cushioning: 8,
-    responsiveness: 7,
-    stability: 6,
     drop: 10.9,
   },
   biomechanics: {
@@ -43,7 +40,6 @@ export const shoe: Shoe = {
     midsoleType: '위층 FloatPro Infinity PEBA · 아래 FloatPro · 3/4 포크형 카본',
   },
   koreanFootFit: {
-    toBoxWidth: 'narrow',
   },
   targetUsers: {
     recommended: [

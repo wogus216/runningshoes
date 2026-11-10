@@ -28,9 +28,6 @@ export const shoe: Shoe = {
   ],
   "specs": {
     "weight": 235,
-    "cushioning": 10,
-    "responsiveness": 8,
-    "stability": 6,
     "drop": 8.1
   },
   "biomechanics": {
@@ -44,7 +41,6 @@ export const shoe: Shoe = {
     "midsoleType": "FF LEAP + FF BLAST PLUS"
   },
   "koreanFootFit": {
-    "toBoxWidth": "narrow",
   },
   "targetUsers": {
     "recommended": [

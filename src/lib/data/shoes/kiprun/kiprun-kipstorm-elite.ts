@@ -26,9 +26,6 @@ export const shoe: Shoe = {
   ],
   specs: {
     weight: 218,
-    cushioning: 9,
-    responsiveness: 9,
-    stability: 6,
     drop: 6.7,
   },
   biomechanics: {
@@ -42,7 +39,6 @@ export const shoe: Shoe = {
     midsoleType: 'Fastech+ 위층 PEBA · 아래층 ATPU · 카본 판',
   },
   koreanFootFit: {
-    toBoxWidth: 'narrow',
   },
   targetUsers: {
     recommended: [

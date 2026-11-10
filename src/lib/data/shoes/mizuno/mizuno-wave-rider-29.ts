@@ -25,9 +25,6 @@ export const shoe: Shoe = {
   ],
   specs: {
     weight: 258,
-    cushioning: 9,
-    responsiveness: 7,
-    stability: 7,
     drop: 8.3,
   },
   biomechanics: {
@@ -41,7 +38,6 @@ export const shoe: Shoe = {
     plateType: 'Pebax heel/midfoot Wave',
   },
   koreanFootFit: {
-    toBoxWidth: 'wide',
   },
   targetUsers: {
     recommended: [

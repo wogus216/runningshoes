@@ -26,9 +26,6 @@ export const shoe: Shoe = {
   ],
   specs: {
     weight: 301,
-    cushioning: 8,
-    responsiveness: 7,
-    stability: 6,
     drop: 6.4,
   },
   biomechanics: {
@@ -42,7 +39,6 @@ export const shoe: Shoe = {
     midsoleType: 'Helion 이중 밀도 · 3층 CloudTec · 나일론 혼합 Speedboard',
   },
   koreanFootFit: {
-    toBoxWidth: 'standard',
   },
   priceAnalysis: {
     msrp: 229000,

@@ -26,9 +26,6 @@ export const shoe: Shoe = {
   ],
   specs: {
     weight: 275,
-    cushioning: 8,
-    responsiveness: 9,
-    stability: 6,
     drop: 6.9,
   },
   biomechanics: {
@@ -42,7 +39,6 @@ export const shoe: Shoe = {
     midsoleType: '이중 PEBA · 병렬 윙렛 카본 · MATRYX · Vibram',
   },
   koreanFootFit: {
-    toBoxWidth: 'narrow',
   },
   targetUsers: {
     recommended: [

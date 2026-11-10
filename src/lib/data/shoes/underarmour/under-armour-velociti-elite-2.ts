@@ -27,9 +27,6 @@ export const shoe: Shoe = {
   ],
   specs: {
     weight: 257,
-    cushioning: 8,
-    responsiveness: 9,
-    stability: 5,
     drop: 6,
   },
   biomechanics: {
@@ -43,7 +40,6 @@ export const shoe: Shoe = {
     midsoleType: '위층 PEBAX · 아래층 EVA Flow · 전장 카본',
   },
   koreanFootFit: {
-    toBoxWidth: 'standard',
   },
   targetUsers: {
     recommended: [

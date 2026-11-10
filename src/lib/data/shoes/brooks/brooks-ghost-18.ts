@@ -25,9 +25,6 @@ export const shoe: Shoe = {
   ],
   specs: {
     weight: 289,
-    cushioning: 8,
-    responsiveness: 7,
-    stability: 7,
     drop: 12.2,
   },
   biomechanics: {
@@ -41,7 +38,6 @@ export const shoe: Shoe = {
     midsoleType: 'DNA Loft v3 · 비플레이트 중립형',
   },
   koreanFootFit: {
-    toBoxWidth: 'narrow',
   },
   priceAnalysis: {
     priceTier: 'budget',

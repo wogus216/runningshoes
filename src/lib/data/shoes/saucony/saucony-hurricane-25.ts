@@ -25,9 +25,6 @@ export const shoe: Shoe = {
   ],
   specs: {
     weight: 286,
-    cushioning: 10,
-    responsiveness: 9,
-    stability: 9,
     drop: 7.1,
   },
   biomechanics: {
@@ -41,7 +38,6 @@ export const shoe: Shoe = {
     midsoleType: 'PWRRUN PB 코어 · PWRRUN 프레임 · CenterPath',
   },
   koreanFootFit: {
-    toBoxWidth: 'standard',
     wideOptions: true,
   },
   targetUsers: {

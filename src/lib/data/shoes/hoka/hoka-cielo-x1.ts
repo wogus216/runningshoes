@@ -23,9 +23,6 @@ export const shoe: Shoe = {
   ],
   specs: {
     weight: 249,
-    cushioning: 10,
-    responsiveness: 10,
-    stability: 5,
     drop: 9.5,
   },
   biomechanics: {
@@ -39,7 +36,6 @@ export const shoe: Shoe = {
     midsoleType: '초대 2024 X1 이중 밀도 PEBA · 날개형 카본 · 강한 로커',
   },
   koreanFootFit: {
-    toBoxWidth: 'narrow',
   },
   targetUsers: {
     recommended: [

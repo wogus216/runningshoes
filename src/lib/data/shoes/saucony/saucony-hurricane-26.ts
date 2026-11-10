@@ -25,9 +25,6 @@ export const shoe: Shoe = {
   ],
   specs: {
     weight: 272,
-    cushioning: 9,
-    responsiveness: 10,
-    stability: 8,
     drop: 5.9,
   },
   biomechanics: {
@@ -41,7 +38,6 @@ export const shoe: Shoe = {
     midsoleType: 'IncrediLUX ATPU 위층 · PWRRUN EVA 프레임 · CenterPath',
   },
   koreanFootFit: {
-    toBoxWidth: 'standard',
   },
   priceAnalysis: {
     priceTier: 'premium',

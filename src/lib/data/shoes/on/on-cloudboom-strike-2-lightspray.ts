@@ -28,9 +28,6 @@ export const shoe: Shoe = {
   ],
   specs: {
     weight: 167,
-    cushioning: 10,
-    responsiveness: 10,
-    stability: 6,
     drop: 2.7,
   },
   biomechanics: {
@@ -44,7 +41,6 @@ export const shoe: Shoe = {
     midsoleType: 'LightSpray 무끈 어퍼 · Helion HF 두 층 · 카본 Speedboard',
   },
   koreanFootFit: {
-    toBoxWidth: 'narrow',
   },
   priceAnalysis: {
     priceTier: 'super-premium',

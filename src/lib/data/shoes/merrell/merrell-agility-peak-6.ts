@@ -27,13 +27,9 @@ export const shoe: Shoe = {
   ],
   specs: {
     weight: 278,
-    cushioning: 7,
-    responsiveness: 6,
-    stability: 7,
     drop: 11.5,
   },
   koreanFootFit: {
-    toBoxWidth: 'narrow',
   },
   targetUsers: {
     recommended: [

@@ -19,9 +19,6 @@ export const shoe: Shoe = {
   ],
   specs: {
     weight: 299,
-    cushioning: 8,
-    responsiveness: 8,
-    stability: 4,
     drop: 11.8,
   },
   biomechanics: {
@@ -35,7 +32,6 @@ export const shoe: Shoe = {
     midsoleType: '2023초대 전장 ZoomX · 중족 분기 카본 · Vibram Litebase',
   },
   koreanFootFit: {
-    toBoxWidth: 'wide',
   },
   targetUsers: {
     recommended: [

@@ -162,17 +162,6 @@ export const ResultCard = memo(function ResultCard({ shoe, rank }: ResultCardPro
                   </p>
                   <div className="grid gap-2 sm:grid-cols-3">
                     <div className="flex items-center gap-1 text-xs">
-                      {getComparisonIcon(shoe.comparisonToAvg.cushioning)}
-                      <span className="text-secondary">쿠셔닝</span>
-                      <span className={cn(
-                        "font-medium",
-                        shoe.comparisonToAvg.cushioning > 0 ? "text-sky-700" :
-                        shoe.comparisonToAvg.cushioning < 0 ? "text-negative" : "text-tertiary"
-                      )}>
-                        {getComparisonText(shoe.comparisonToAvg.cushioning, '')}
-                      </span>
-                    </div>
-                    <div className="flex items-center gap-1 text-xs">
                       {getComparisonIcon(shoe.comparisonToAvg.weight, true)}
                       <span className="text-secondary">무게</span>
                       <span className={cn(
@@ -199,8 +188,8 @@ export const ResultCard = memo(function ResultCard({ shoe, rank }: ResultCardPro
           <p className="break-words text-sm font-bold text-primary sm:text-base">{shoe.specs?.weight}g</p>
         </div>
         <div className="text-center">
-          <p className="text-xs text-tertiary">쿠셔닝</p>
-          <p className="break-words text-sm font-bold text-primary sm:text-base">{shoe.specs?.cushioning}/10</p>
+          <p className="text-xs text-tertiary">드롭</p>
+          <p className="break-words text-sm font-bold text-primary sm:text-base">{shoe.specs?.drop}mm</p>
         </div>
         <div className="text-center">
           <p className="text-xs text-tertiary">내구성 (추정)</p>

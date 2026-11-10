@@ -64,12 +64,11 @@ const questions: Question[] = [
   },
   {
     id: 'footWidth',
-    title: '발볼 너비는 어떤가요?',
-    description: '발볼 너비를 선택해주세요',
+    title: '와이드 옵션이 필요한가요?',
+    description: '와이드 선택 시 한국 판매 폭 옵션을 확인한 모델을 모읍니다. 실제 착화는 별도로 확인하세요.',
     options: [
-      { value: 'narrow', label: '좁음', description: '발볼이 좁은 편' },
-      { value: 'standard', label: '표준', description: '보통 너비' },
-      { value: 'wide', label: '넓음', description: '발볼이 넓은 편' },
+      { value: 'standard', label: '전체 폭 옵션 비교', description: '일반 모델부터 비교할게요' },
+      { value: 'wide', label: '와이드 확인 제품', description: '한국 판매 폭 옵션을 확인한 모델만' },
     ],
   },
   {

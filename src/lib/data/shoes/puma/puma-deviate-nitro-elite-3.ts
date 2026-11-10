@@ -25,9 +25,6 @@ export const shoe: Shoe = {
   ],
   specs: {
     weight: 204,
-    cushioning: 9,
-    responsiveness: 10,
-    stability: 6,
     drop: 10.6,
   },
   biomechanics: {
@@ -41,7 +38,6 @@ export const shoe: Shoe = {
     midsoleType: 'NITRO Elite 이중 밀도 · 카본 PWRPLATE',
   },
   koreanFootFit: {
-    toBoxWidth: 'narrow',
   },
   targetUsers: {
     recommended: [

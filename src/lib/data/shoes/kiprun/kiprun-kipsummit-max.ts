@@ -27,9 +27,6 @@ export const shoe: Shoe = {
   ],
   specs: {
     weight: 275,
-    cushioning: 8,
-    responsiveness: 9,
-    stability: 8,
     drop: 8.1,
   },
   biomechanics: {
@@ -43,7 +40,6 @@ export const shoe: Shoe = {
     midsoleType: 'ATPU Fastech+ · Vibram Megagrip · 판 없는 구조',
   },
   koreanFootFit: {
-    toBoxWidth: 'narrow',
   },
   targetUsers: {
     recommended: [

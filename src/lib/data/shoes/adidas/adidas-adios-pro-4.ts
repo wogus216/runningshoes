@@ -25,9 +25,6 @@ export const shoe: Shoe = {
   ],
   specs: {
     weight: 200,
-    cushioning: 9,
-    responsiveness: 10,
-    stability: 6,
     drop: 8.1,
   },
   biomechanics: {
@@ -41,7 +38,6 @@ export const shoe: Shoe = {
     midsoleType: '이중 Lightstrike Pro · 카본 함유 EnergyRods 2.0',
   },
   koreanFootFit: {
-    toBoxWidth: 'narrow',
   },
   targetUsers: {
     recommended: [

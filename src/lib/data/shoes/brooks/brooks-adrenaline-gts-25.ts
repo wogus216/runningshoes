@@ -21,9 +21,6 @@ export const shoe: Shoe = {
   editorComment: '2026-11-09 원문 재확인. 한국 공식 원문에서 남성 MEDIUM 1104541D033·WIDE 1104542E020·SUPER WIDE 1104544E020, 여성 MEDIUM 1204431B020 정가189,000원 확인. 현재 할인·재고는 미확인. DOR 소개 남성301g(US9)·여성269g(US8),37/27mm·드롭10mm. 실제 Matt 착화 US10과 표제 공시 조건을 구분.  DOR의 Matt은 US10에서 길이가 맞고 앞쪽이 좁아지는 보통 폭이라 평가했으며 따뜻한 어퍼·움직이는 혀·카운터 압박을 지적했습니다. 쉬운 러닝에 활용했으나 반응성은 낮게 느꼈습니다. GuideRails를 전통 미디얼 포스트로 확정하지 않습니다. 한국 남성 MEDIUM·2E·4E와 여성 MEDIUM 상품 확인. 여성 와이드의 정확SKU·재고는 미확인. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
   specs: {
     weight: 295,
-    cushioning: 8,
-    responsiveness: 7,
-    stability: 9,
     drop: 10.2,
   },
   biomechanics: {
@@ -36,7 +33,6 @@ export const shoe: Shoe = {
     midsoleType: '질소 주입 DNA LOFT v3 · GuideRails',
   },
   koreanFootFit: {
-    toBoxWidth: 'standard',
     wideOptions: true,
   },
   targetUsers: {

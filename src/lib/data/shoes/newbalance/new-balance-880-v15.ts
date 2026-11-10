@@ -25,9 +25,6 @@ export const shoe: Shoe = {
   ],
   specs: {
     weight: 286,
-    cushioning: 8,
-    responsiveness: 7,
-    stability: 8,
     drop: 4.3,
   },
   biomechanics: {
@@ -51,7 +48,6 @@ export const shoe: Shoe = {
     price: '한국 공식 검색에서880V15를 찾지 못했고 기존 후보 상품경로는 판매준비/오픈예정 안내로 돌아옵니다. 현재 한국 정가·성별·폭·재고는 미확인입니다. 검색캐시189,000원을 현재 정가로 채택하지 않습니다.',
   },
   koreanFootFit: {
-    toBoxWidth: 'standard',
   },
   priceAnalysis: {
     priceTier: 'mid',

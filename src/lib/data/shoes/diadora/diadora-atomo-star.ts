@@ -26,9 +26,6 @@ export const shoe: Shoe = {
   ],
   specs: {
     weight: 268,
-    cushioning: 9,
-    responsiveness: 7,
-    stability: 7,
     drop: 7.8,
   },
   biomechanics: {
@@ -42,7 +39,6 @@ export const shoe: Shoe = {
     midsoleType: 'ANIMA N2 질소 발포 EVA · DDATTIVO 인솔',
   },
   koreanFootFit: {
-    toBoxWidth: 'narrow',
   },
   targetUsers: {
     recommended: [

@@ -27,7 +27,7 @@ export interface InjuryPreventionData {
 }
 
 export interface KoreanFootFit {
-  toBoxWidth: ToBoxWidth;
+  toBoxWidth?: ToBoxWidth;
   /** @deprecated 모델별 임상 근거 없음. 표시·추천 점수에 사용하지 않는다. */
   flatFootCompatibility?: CompatibilityLevel;
   wideOptions?: boolean;
@@ -78,9 +78,9 @@ export interface RelatedPost {
 
 export interface ShoeSpecs {
   weight: number;       // g
-  cushioning: number;   // 1-10
-  responsiveness: number; // 1-10
-  stability: number;    // 1-10
+  cushioning?: number;   // 1-10
+  responsiveness?: number; // 1-10
+  stability?: number;    // 1-10
   drop: number;         // mm
   durability?: number;  // 출처 있는 예상 km만; 미확인은 비운다
 }

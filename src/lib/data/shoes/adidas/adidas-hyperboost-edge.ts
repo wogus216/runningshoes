@@ -25,9 +25,6 @@ export const shoe: Shoe = {
   ],
   specs: {
     weight: 247,
-    cushioning: 10,
-    responsiveness: 9,
-    stability: 5,
     drop: 6.5,
   },
   biomechanics: {
@@ -41,7 +38,6 @@ export const shoe: Shoe = {
     midsoleType: 'Hyperboost Pro · Primeweave · LIGHTTRAXION',
   },
   koreanFootFit: {
-    toBoxWidth: 'narrow',
   },
   targetUsers: {
     recommended: [

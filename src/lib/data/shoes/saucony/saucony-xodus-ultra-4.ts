@@ -22,9 +22,6 @@ export const shoe: Shoe = {
   ],
   specs: {
     weight: 312,
-    cushioning: 8,
-    responsiveness: 9,
-    stability: 7,
     drop: 6.5,
   },
   biomechanics: {
@@ -38,7 +35,6 @@ export const shoe: Shoe = {
     midsoleType: 'PWRRUN PB 코어 · PWRRUN EVA 프레임 · Vibram',
   },
   koreanFootFit: {
-    toBoxWidth: 'narrow',
   },
   priceAnalysis: {
     priceTier: 'premium',

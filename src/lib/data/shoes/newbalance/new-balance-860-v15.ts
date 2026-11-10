@@ -26,9 +26,6 @@ export const shoe: Shoe = {
   ],
   specs: {
     weight: 332,
-    cushioning: 8,
-    responsiveness: 8,
-    stability: 9,
     drop: 7.6,
   },
   biomechanics: {
@@ -54,7 +51,6 @@ export const shoe: Shoe = {
     price: '189,000원 (한국 남성2E·4E, 여성D 정가, 2026-11-09)',
   },
   koreanFootFit: {
-    toBoxWidth: 'standard',
     wideOptions: true,
   },
   priceAnalysis: {

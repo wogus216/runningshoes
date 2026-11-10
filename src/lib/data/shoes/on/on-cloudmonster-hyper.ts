@@ -25,9 +25,6 @@ export const shoe: Shoe = {
   ],
   specs: {
     weight: 258,
-    cushioning: 8,
-    responsiveness: 7,
-    stability: 6,
     drop: 6.7,
   },
   biomechanics: {
@@ -41,7 +38,6 @@ export const shoe: Shoe = {
     midsoleType: '초대 Helion HF(PEBA/Pebax) · Helion · CloudTec',
   },
   koreanFootFit: {
-    toBoxWidth: 'standard',
   },
   priceAnalysis: {
     priceTier: 'premium',
