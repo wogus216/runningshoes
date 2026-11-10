@@ -1,8 +1,8 @@
 # Image Credits / 이미지 출처
 
-All product images used in this project are sourced from official brand websites for informational and review purposes only.
+This file records image sources by asset or model where a source is available. Sources include brand product pages and review publications; the brand homepage list below does not verify the origin of every image.
 
-본 프로젝트에 사용된 모든 제품 이미지는 정보 제공 및 리뷰 목적으로 각 브랜드의 공식 웹사이트에서 가져왔습니다.
+확인 가능한 이미지 출처를 모델·파일 단위로 기록합니다. 브랜드 상품 페이지와 전문 리뷰 매체의 사진이 포함되며, 아래 브랜드 홈페이지 목록만으로 모든 이미지의 개별 원본이 확인된 것은 아닙니다.
 
 ## Image Sources / 이미지 출처
 
@@ -111,9 +111,9 @@ All product images used in this project are sourced from official brand websites
 - Date: 2026-05-29
 - Images: 1 (`side`)
 
-All trademarks, logos, and images are the property of their respective owners. These images are used under fair use for educational and informational purposes related to running shoe reviews and comparisons.
+All trademarks, logos, and images belong to their respective owners. Source records below describe collection history and do not establish a single permission basis for all assets.
 
-모든 상표, 로고, 이미지는 각 소유자의 재산입니다. 이 이미지들은 러닝화 리뷰 및 비교와 관련된 교육적, 정보 제공 목적의 공정 사용 원칙에 따라 사용됩니다.
+상표·로고·이미지의 권리는 각 소유자에게 있습니다. 출처 기록은 수집 이력을 설명하며, 모든 파일에 같은 이용 조건이 적용된다고 단정하지 않습니다.
 
 If you are a copyright holder and believe your content has been used inappropriately, please contact us for removal.
 
@@ -352,3 +352,24 @@ If you are a copyright holder and believe your content has been used inappropria
 - Processing: @imgly/background-removal-node(medium) 배경제거 + 여백 트림 후 800px WebP q85
 - Date: 2026-10-20
 - Images: 5 (side=_01 외측, angle=_02, top=_05, back=_06, outsole=_D02)
+
+
+## 2026-11-11 갤러리 출처 재확인
+
+아래는 현재 페이지의 갤러리·캡션과 대조한 범위입니다. 앞선 수집 기록과 현재 사용 파일이 다를 경우 이 목록과 페이지 캡션을 함께 확인합니다. 모델 전체 사양·한국 판매 재고를 확인했다는 의미는 아닙니다.
+
+On 4종은 11월 11일 확인한 공식 품번의 현재 갤러리입니다. Nike·Adidas·Hoka 4종은 기존 원문 대조 결과를 현재 갤러리에 연결했습니다. New Balance 3종은 세대 확인용 공식 참고 자료이며, 현재 파일의 정확한 색상 품번·성별·폭·최초 촬영 출처는 미확인입니다.
+
+| 모델 | 확인 범위와 한계 | 출처 | 현재 파일 |
+|---|---|---|---|
+| Nike 알파플라이 4 | 알파플라이 4 남성 상용 모델 IU4686-002의 측면 사진입니다. 한국 판매 색상·사이즈·품번은 별도로 확인하세요. | [Nike 공식 상품 갤러리](https://www.nike.com/t/alphafly-4-mens-road-racing-shoes-EC33rkiZ) | `/images/shoes/nike/alphafly4/side.webp` |
+| Adidas 테렉스 아그라빅 스피드 울트라 2 | 테렉스 아그라빅 스피드 울트라 2 사진(HQ5066)입니다. 세대·품번을 구매할 옵션과 구분하세요. | [디자인 대조: adidas 공식 상품](https://www.adidas.com/us/terrex-agravic-speed-ultra-2-trail-running-shoes/HQ5066.html) | `/images/shoes/adidas/agravicspeedultra/side.webp` |
+| New Balance 1080 V15 | 1080v15 참고 사진입니다. 사진 속 제품의 정확한 품번·성별·폭은 미확인이므로 구매할 옵션과 구분하세요. | [세대 확인: New Balance 공식 자료](https://www.newbalance.com/pd/1080v15/M10808E0-D-11.html) | `/images/shoes/newbalance/1080v15/side2.webp`<br>`/images/shoes/newbalance/1080v15/side.webp`<br>`/images/shoes/newbalance/1080v15/back.webp`<br>`/images/shoes/newbalance/1080v15/angle.webp`<br>`/images/shoes/newbalance/1080v15/top.webp`<br>`/images/shoes/newbalance/1080v15/outsole.webp` |
+| New Balance 1080 V14 | 1080v14 참고 사진입니다. 사진 속 제품의 정확한 품번·성별·폭은 미확인이므로 구매할 옵션과 구분하세요. | [세대 확인: New Balance 공식 자료](https://store.newbalance.co.jp/press/2024/p-67892) | `/images/shoes/newbalance/1080v14/side.webp`<br>`/images/shoes/newbalance/1080v14/front.webp`<br>`/images/shoes/newbalance/1080v14/back.webp`<br>`/images/shoes/newbalance/1080v14/top.webp`<br>`/images/shoes/newbalance/1080v14/outsole.webp` |
+| New Balance SC Elite V6 | SuperComp Elite v6 참고 사진입니다. 사진 속 제품의 정확한 품번·성별·폭은 미확인이므로 구매할 옵션과 구분하세요. | [세대 확인: New Balance 공식 자료](https://store.newbalance.co.jp/press/2026/p-73276) | `/images/shoes/newbalance/scelitev6/side.webp`<br>`/images/shoes/newbalance/scelitev6/front.webp`<br>`/images/shoes/newbalance/scelitev6/back.webp`<br>`/images/shoes/newbalance/scelitev6/angle.webp`<br>`/images/shoes/newbalance/scelitev6/outsole.webp` |
+| Hoka 로켓 X 3 | 로켓 X 3 사진(1168724-WBLC)입니다. 다른 세대·품번·색상 사진과 구분하세요. | [디자인 대조: HOKA 공식 상품](https://vn.hoka.com/en/products/giay-chay-bo-unisex-hoka-rocket-x-3-1168724-wblc-white-bl) | `/images/shoes/hoka/rocketX3/side.webp`<br>`/images/shoes/hoka/rocketX3/front.webp`<br>`/images/shoes/hoka/rocketX3/top.webp`<br>`/images/shoes/hoka/rocketX3/outsole.webp` |
+| Hoka 씨엘로 X1 | 2024년 출시된 씨엘로 X1 사진(1147910-CSSL)입니다. 구매할 제품의 세대·품번과 구분하세요. | [HOKA 공식 원본 사진 · 1147910-CSSL](https://dms.deckers.com/hoka/image/upload/1147910-CSSL_1.png) | `/images/shoes/hoka/cielox1/side.webp` |
+| On 클라우드러너 3 | On 공식 사진: 남성 Black / Black (3MG10071043). 다른 색상·성별·폭 옵션의 사진과 구분하세요. | [On 공식 상품 갤러리](https://www.on.com/ko-kr/products/cloudrunner-3-m-3mg1007/mens/black-black-shoes-3MG10071043) | `/images/shoes/on/cloudrunner3/official-3mg10071043-side.webp`<br>`/images/shoes/on/cloudrunner3/official-3mg10071043-top.webp` |
+| On 클라우드서퍼 맥스 | On 공식 사진: 남성 Dust / Ivory (3MF30434287). 다른 색상·성별·폭 옵션의 사진과 구분하세요. | [On 공식 상품 갤러리](https://www.on.com/ko-kr/products/cloudsurfer-max-m-3mf3043/mens/dust-ivory-shoes-3MF30434287) | `/images/shoes/on/cloudsurfermax/official-3mf30434287-side.webp`<br>`/images/shoes/on/cloudsurfermax/official-3mf30434287-top.webp` |
+| On 클라우드몬스터 3 | On 공식 사진: 남성 Black / Ivory (3MG10051430). 다른 색상·성별·폭 옵션의 사진과 구분하세요. | [On 공식 상품 갤러리](https://www.on.com/ko-kr/products/cloudmonster-3-m-3mg1005/mens/black-ivory-shoes-3MG10051430) | `/images/shoes/on/cloudmonster3/official-3mg10051430-side.webp`<br>`/images/shoes/on/cloudmonster3/official-3mg10051430-top.webp` |
+| On 클라우드러너 3 맥스 | On 공식 사진: 남성 White / Verdite (3MG30205363). 다른 색상·성별·폭 옵션의 사진과 구분하세요. | [On 공식 상품 갤러리](https://www.on.com/ko-kr/products/cloudrunner-3-max-m-3mg3020/mens/white-verdite-shoes-3MG30205363) | `/images/shoes/on/cloudrunner3max/official-3mg30205363-side.webp`<br>`/images/shoes/on/cloudrunner3max/official-3mg30205363-top.webp`<br>`/images/shoes/on/cloudrunner3max/official-3mg30205363-outsole.webp` |
