@@ -8,7 +8,7 @@ export function shoeDescription(shoe: DescriptionShoe, brandLabel: string): stri
     `${brandLabel} ${shoe.name}`,
     shoe.specs?.weight ? `무게 ${shoe.specs.weight}g` : null,
     shoe.koreanFootFit?.toBoxWidth ? footWidth[shoe.koreanFootFit.toBoxWidth] : null,
-    shoe.price ? `정가 ${shoe.price.toLocaleString('ko-KR')}원` : null,
+    shoe.price ? `확인 가격 ${shoe.price.toLocaleString('ko-KR')}원` : null,
     shoe.category ? `${shoe.category} 러닝화` : null,
   ].filter(Boolean);
   const details = `${parts.join(' · ')} — 공식·외부 자료와 착화 확인 항목`;

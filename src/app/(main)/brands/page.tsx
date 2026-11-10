@@ -66,7 +66,7 @@ export default function BrandsIndexPage() {
           러닝화 브랜드 전체 비교
         </h1>
         <p className="text-secondary leading-relaxed max-w-3xl">
-          10개 주요 러닝화 브랜드의 라인업, 핵심 기술, 한국 러너 적합성을 한눈에 비교하세요. 각 브랜드 페이지에서 전체 모델 목록과 카테고리별 추천을 확인할 수 있습니다.
+          사이트에 수록된 {BRAND_COUNT}개 브랜드의 등록 모델과 기술 정보를 확인하세요. 브랜드의 전체 현행 라인업이나 개인 적합성 순위를 뜻하지 않습니다.
         </p>
       </header>
 
@@ -106,7 +106,7 @@ export default function BrandsIndexPage() {
           브랜드보다 본인 발에 맞는 신발이 먼저
         </h2>
         <p className="text-sm text-secondary mb-3">
-          브랜드 충성도보다 본인의 발 특성, 부상 이력, 러닝 목적에 맞는 신발을 고르는 게 중요합니다. 발볼·아치·예산을 입력하면 {shoes.length}개 신발 중 최적 매칭을 찾아드립니다.
+          러닝 목적, 한국 와이드 옵션 필요 여부, 예산으로 {shoes.length}개 등록 모델에서 비교 후보를 좁힐 수 있습니다. 후보의 개별 출처와 실제 착화감을 확인하세요.
         </p>
         <Link
           href="/recommend"

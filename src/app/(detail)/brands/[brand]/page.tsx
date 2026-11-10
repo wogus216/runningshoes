@@ -30,8 +30,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   const count = getCompleteShoesByBrand(brand.name).length;
 
-  const title = `${brand.name} 러닝화 전체 비교 — ${count}개 모델 분석 | ${brand.nameKo ?? ''}`;
-  const description = `${brand.name}(${brand.nameKo ?? ''})의 러닝화 ${count}개 모델을 카테고리별로 정리. 핵심 기술, 가성비, 한국 러너 적합성까지 한눈에 비교합니다.`;
+  const title = `${brand.name} 러닝화 비교 — 등록 ${count}개 모델 | ${brand.nameKo ?? ''}`;
+  const description = `사이트에 등록된 ${brand.name}(${brand.nameKo ?? ''})의 비교 모델 ${count}개를 카테고리별로 정리했습니다. 제품별 구조·확인 가격·폭 옵션과 출처를 확인하세요.`;
 
   return {
     title,
@@ -86,7 +86,7 @@ export default async function BrandDetailPage({ params }: PageProps) {
   const itemListJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'ItemList',
-    name: `${brand.name} 러닝화 전체`,
+    name: `${brand.name} 등록 러닝화 비교`,
     url: `${SITE_URL}/brands/${brand.id}`,
     numberOfItems: brandShoes.length,
     itemListElement: brandShoes.slice(0, 20).map((s, i) => ({

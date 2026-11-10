@@ -10,15 +10,15 @@ export type RecommendationProcessProps = {
 };
 
 const STEPS = [
-  '러닝 경험과 주간 거리를 확인합니다.',
-  '선택한 발볼 분류와 폭 옵션 정보를 비교합니다.',
+  '주로 달릴 노면과 러닝 목적을 확인합니다.',
+  '한국 와이드 옵션이 필요한지 확인합니다.',
   '러닝 목적과 예산에 맞춰 후보를 줄입니다.',
 ];
 
 const ROLES = [
   { badge: 'PURPOSE', title: '러닝 용도', desc: '주로 달릴 노면과 훈련 목적에 맞는 후보 비교', lead: true },
-  { badge: 'FIT', title: '착화 확인', desc: '너비 분류와 폭 옵션을 참고하고 실제 착화로 확인', lead: false },
-  { badge: 'BUDGET', title: '예산 상한', desc: '확인된 한국 정가가 선택한 예산 안에 있는지 확인', lead: false },
+  { badge: 'FIT', title: '착화 확인', desc: '한국 와이드 옵션을 확인한 후보와 실제 착화 비교', lead: false },
+  { badge: 'BUDGET', title: '예산 상한', desc: '확인한 한국 가격이 선택한 예산 상한 안에 있는지 확인', lead: false },
 ];
 
 export function RecommendationProcess({ questionCount, minutes }: RecommendationProcessProps) {

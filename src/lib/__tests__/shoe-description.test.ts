@@ -10,7 +10,7 @@ describe('신발 검색 설명', () => {
     expect(description).toContain('무게 298g');
     expect(description).not.toContain('발볼 표준');
     expect(description).not.toContain('후기');
-    expect(description).toContain('정가 199,000원');
+    expect(description).toContain('확인 가격 199,000원');
     expect(description.endsWith('공식·외부 자료와 착화 확인 항목')).toBe(true);
     expect(description.length).toBeLessThanOrEqual(160);
   });
@@ -21,7 +21,7 @@ describe('신발 검색 설명', () => {
       expect(description.length, shoe.slug).toBeLessThanOrEqual(160);
       expect(description, shoe.slug).toContain(shoe.name);
       if (shoe.specs?.weight) expect(description, shoe.slug).toContain(`무게 ${shoe.specs.weight}g`);
-      if (shoe.price) expect(description, shoe.slug).toContain(`정가 ${shoe.price.toLocaleString('ko-KR')}원`);
+      if (shoe.price) expect(description, shoe.slug).toContain(`확인 가격 ${shoe.price.toLocaleString('ko-KR')}원`);
     }
   });
 });

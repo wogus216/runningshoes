@@ -144,7 +144,7 @@ function MobileCompareCard({ shoe, onRemove }: { shoe: Shoe; onRemove?: (id: str
               </div>
               <div className="rounded-[4px] border border-sky-100 bg-white p-2 text-center">
                 <p className="text-xs text-slate-500">카본</p>
-                <p className="font-semibold text-sm">{shoe.biomechanics?.carbonPlate ? '있음' : '없음'}</p>
+                <p className="font-semibold text-sm">{shoe.biomechanics?.carbonPlate === undefined ? '미확인' : shoe.biomechanics.carbonPlate ? '있음' : '없음'}</p>
               </div>
               <div className="rounded-[4px] border border-sky-100 bg-white p-2 text-center">
                 <p className="text-xs text-slate-500">가성비</p>

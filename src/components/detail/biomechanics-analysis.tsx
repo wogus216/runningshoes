@@ -89,9 +89,11 @@ export function BiomechanicsAnalysis({ biomechanics }: BiomechanicsAnalysisProps
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <BiomechCard
           title="카본 보강 구조"
-          value={biomechanics.carbonPlate ? "있음" : "없음"}
+          value={biomechanics.carbonPlate === undefined ? "미확인" : biomechanics.carbonPlate ? "있음" : "없음"}
           description={
-            biomechanics.carbonPlate
+            biomechanics.carbonPlate === undefined
+              ? "이 모델의 카본 보강 유무를 확인하지 못했습니다. 다른 모델이나 같은 폼 이름으로 추정하지 않습니다."
+              : biomechanics.carbonPlate
               ? "이 항목은 로드와 판형 플레이트를 구분하지 않습니다. 형태·소재는 상세 스펙을 확인하고, 이 값만으로 에너지 리턴이나 기록 향상을 판정하지 마세요."
               : "다른 소재의 로드·플레이트나 생크도 없다는 뜻은 아닙니다. 확인한 구성과 출처는 상세 스펙을 확인하세요."
           }
