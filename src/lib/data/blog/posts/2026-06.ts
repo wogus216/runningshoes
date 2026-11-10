@@ -4834,91 +4834,56 @@ export const posts_2026_06: BlogPost[] = [
 `,
   },
   {
-    id: '2026-garmin-run-korea-medal-race-package',
-    slug: '2026-garmin-run-korea-medal-race-package',
-    title: '2026 가민런 코리아 메달·레이스 패키지 공개 | 포러너 스페셜팩 6/23 오픈 — 참가 기념품·스폰서 기프트·접수 일정',
-    description: '2026 가민런 코리아가 10K·HALF 완주 메달과 참가자 레이스 패키지를 공개했습니다. 6월 23일 포러너 170/70 스페셜팩 오픈, 7월 1~3일 본접수(래플), 7월 7일 당첨자 발표로 이어지는 접수 일정과 HDEX·콘티넨탈·샥즈·아미노바이탈 공식 파트너 기프트까지 정리했습니다.',
-    thumbnail: '/images/blog/2026-garmin-run-korea-medal-race-package.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-06-05',
-    category: 'news' as const,
-    readingTime: 6,
-    tags: ['가민런 코리아', '가민런 메달', '레이스 패키지', '가민 포러너', '마라톤 기념품', '가민런 접수', '포러너 170', '래플 추첨'],
+    id: "2026-garmin-run-korea-medal-race-package",
+    slug: "2026-garmin-run-korea-medal-race-package",
+    title: "2026 가민런 레이스팩 확인: 하프 싱글렛·10K 티셔츠와 완주 후 메달 구분",
+    description: "사전 기념품과 현장 완주 기념품이 다릅니다. 하프는 HDEX 싱글렛, 10K는 티셔츠이며 지정 의류 착용이 필수입니다. 스폰서 로고가 전원 경품 지급을 뜻하지 않는다는 점도 정리했습니다.",
+    thumbnail: "/images/blog/verified-2026-garmin-run-korea-medal-race-package-20261110.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-06-05",
+    category: "news",
+    readingTime: 4,
+    tags: [
+      "가민런 코리아",
+      "레이스팩",
+      "완주 메달",
+      "HDEX",
+      "기념품",
+      "지급 조건"
+    ],
     event: {
-      name: '2026 가민런 코리아 (Garmin Run Korea)',
-      startDate: '2026-11-15',
-      location: { name: '고양종합운동장', address: '경기 고양시' },
-      organizer: '가민코리아 · 러너블',
-      url: 'https://discover.garmin.com/ko-KR/event/2026/garmin-run/',
+      "name": "2026 가민런 코리아 (Garmin Run Korea)",
+      "startDate": "2026-11-15",
+      "location": {
+        "name": "고양종합운동장",
+        "address": "경기 고양시"
+      },
+      "organizer": "가민코리아 · 러너블",
+      "url": "https://discover.garmin.com/ko-KR/event/2026/garmin-run/"
     },
-    content: `
-<div class="deadline-strip">⏰ <strong>(9/30 갱신) 러너블의 추가접수 공지 기한인 9월 30일(수) 17시가 지났습니다.</strong> 별도 연장·재오픈 여부는 <a href="/blog/garmin-run-korea-additional-registration">가민런 추가접수 글</a>과 러너블 상품 페이지에서 확인하세요.</div>
-
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li>2026 가민런 코리아가 <strong>10K·HALF 완주 메달</strong>과 <strong>참가자 레이스 패키지(기념품)</strong>를 공개했습니다 — "다음 도전을 기념할 메달"</li>
-    <li>접수는 <strong>6/23 포러너 170/70 스페셜팩 오픈</strong> → <strong>7/1~7/3 본접수(래플)</strong> → <strong>7/7 당첨자 발표</strong> 순서로 진행됩니다</li>
-    <li>공식 파트너 <strong>HDEX·콘티넨탈타이어·샥즈·아미노바이탈</strong>의 기프트도 함께 제공됩니다. 11월 15일 고양종합운동장</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">🏅</span>
-  <div class="callout-body">
-    <p class="callout-title">메달부터 공개 — "당신의 다음 도전을 기념할"</p>
-    <p>가민코리아가 대회 5개월 전부터 <strong>완주 메달 디자인</strong>을 먼저 공개했습니다. 10K부터 HALF 마라톤까지, 종목별로 다음 도전을 기념하는 메달이죠. 가민런 코리아는 작년 첫 대회 때 <strong>각인 메달·기록 포스터 같은 프리미엄 완주 경험</strong>으로 화제가 됐던 만큼, 올해 메달에도 관심이 쏠립니다. <em>(실제 메달은 공개 이미지와 다를 수 있습니다.)</em></p>
-  </div>
-</div>
-
-<h2>참가자 레이스 패키지 — 무엇이 들어있나</h2>
-<p>가민은 "목표를 정했다면 준비도 달라져야 한다"며 참가자에게 제공되는 <strong>특별 레이스 패키지</strong>를 공개했습니다. 구체 구성품은 대회가 가까워지며 확정되지만, 공식 파트너 라인업을 보면 어떤 기프트가 함께할지 짐작할 수 있습니다.</p>
-<table>
-  <thead>
-    <tr><th>공식 파트너</th><th>분야</th></tr>
-  </thead>
-  <tbody>
-    <tr><td><strong>HDEX(에이치덱스)</strong></td><td>스포츠·러닝 용품</td></tr>
-    <tr><td><strong>콘티넨탈타이어</strong></td><td>타이어(고무·접지 기술) — 러닝화 아웃솔 협업으로도 친숙</td></tr>
-    <tr><td><strong>샥즈(Shokz)</strong></td><td>골전도 러닝 이어폰</td></tr>
-    <tr><td><strong>아미노바이탈</strong></td><td>아미노산·러닝 보충제</td></tr>
-  </tbody>
-</table>
-<p><em>※ 레이스 패키지 구성품·디자인은 예고 없이 변경될 수 있습니다.</em></p>
-
-<h2>접수 일정 — 6/23 포러너 스페셜팩부터</h2>
-<p>이번 대회의 핵심은 <strong>3단계 접수</strong>입니다. 특히 <strong>가민 워치가 포함된 스페셜팩</strong>이 본접수보다 먼저 열립니다.</p>
-<table>
-  <thead>
-    <tr><th>일정</th><th>내용</th></tr>
-  </thead>
-  <tbody>
-    <tr><td><strong>6/23 (화)</strong></td><td><strong>포러너 170/70 스페셜팩</strong> 오픈 — 워치 포함 패키지</td></tr>
-    <tr><td><strong>7/1 (수) ~ 7/3 (금)</strong></td><td><strong>본 접수 신청 (래플/추첨)</strong></td></tr>
-    <tr><td><strong>7/7 (화)</strong></td><td>본 접수 <strong>당첨자 발표</strong></td></tr>
-  </tbody>
-</table>
-<p>가민 입문 워치 <strong>포러너 70/170</strong>은 올해 새로 출시된 모델로, 스페셜팩은 "워치 + 대회 참가"를 묶은 구성입니다. 워치 자체가 궁금하다면 → <a href="/blog/2026-garmin-forerunner-70-170-korea">가민 포러너 70·170 출시 정리</a></p>
-
-<div class="callout warning">
-  <span class="callout-icon">🎟️</span>
-  <div class="callout-body">
-    <p class="callout-title">접수 전략 — 스페셜팩 vs 래플</p>
-    <p>워치까지 새로 장만할 생각이라면 <strong>6/23 스페셜팩</strong>이 참가를 확정 짓는 가장 빠른 길입니다. 워치가 이미 있다면 <strong>7/1~7/3 래플</strong>에 신청하세요. 래플은 선착순이 아니라 <strong>기간 내 신청만 하면 추첨</strong> 대상이 되므로 서버와 싸울 필요는 없지만, <strong>신청 마감(7/3)</strong>을 놓치면 끝입니다. 작년 "2분컷"의 인기를 생각하면 경쟁률은 높을 전망입니다.</p>
-  </div>
-</div>
-
-<h2>대회 한눈에</h2>
-<ul>
-  <li><strong>일정</strong>: 2026년 11월 15일 (일)</li>
-  <li><strong>장소</strong>: 고양종합운동장</li>
-  <li><strong>종목</strong>: HALF, 10K</li>
-  <li><strong>공식 파트너</strong>: HDEX · 콘티넨탈타이어 · 샥즈 · 아미노바이탈</li>
-</ul>
-<p>일정·코스·규모 등 대회 전반의 자세한 정리는 → <a href="/blog/2026-garmin-run-korea-half-marathon">2026 가민런 코리아 일정·접수·코스 총정리</a>에서 확인하세요. 다른 가을 대회와 함께 일정을 짜려면 → <a href="/marathon">마라톤 캘린더</a></p>
-
-<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 메달·레이스 패키지·접수 일정은 가민코리아 공식 채널(@garmin_korea) 공개 정보 기준이며, 구성품·일정은 변경될 수 있으니 신청 전 공식 채널을 한 번 더 확인하세요.</p>
-`,
+    content: `<p><small>2026년 11월 10일 주최·공식 접수처의 공개 원문 대조. 일정과 운영 계획은 실제 개인 참가 확정·배송 완료와 구분합니다.</small></p>
+<p>11월 15일 대회를 앞두고 받은 레이스팩을 확인할 때는 <strong>사전 지급품과 완주 후 현장 지급품</strong>을 먼저 나누자. <a href="https://discover.garmin.com/ko-KR/event/2026/garmin-run/racepackage/" target="_blank" rel="noopener noreferrer">가민 공식 기념품 페이지</a>에 종목별 의류와 스폰서 물품이 구체적으로 안내돼 있다. 예전 글의 ‘구성은 앞으로 공개’라는 설명을 현재 안내로 바꿨다.</p>
+<h2>하프와 10K 의류가 다르다</h2><table><thead><tr><th>종목</th><th>가민 사전 기념품 안내</th></tr></thead><tbody><tr><td>21K 하프</td><td>HDEX 싱글렛·기능성 썬캡·기능성 팔토시</td></tr><tr><td>10K</td><td>HDEX 티셔츠·기능성 썬캡·기능성 팔토시</td></tr></tbody></table><p><a href="https://runable.me/product/19627?comp=18962" target="_blank" rel="noopener noreferrer">러너블 상품 FAQ</a>와 공식 페이지는 대회 의류의 현장 필수 착용을 안내한다. 받은 사이즈·종목별 의류가 신청 내역과 맞는지 대회 전에 확인해야 한다. 잘못 온 물품을 현장에서 반드시 교환해 준다는 안내는 이번 공개 자료에서 확인하지 못했다.</p>
+<h2>메달은 사전 택배가 아니라 완주 후</h2><p>주최는 메달을 <strong>대회 현장에서 완주 후 제공</strong>한다고 안내한다. 사전 봉투에 메달이 없다는 이유만으로 배송 누락으로 단정하면 안 된다. 공식 이미지는 예시이며 지급품·디자인이 바뀔 수 있다는 조건도 함께 적혀 있다.</p><p>과거 대회의 메달 각인·기록 포스터 경험을 2026 모든 참가자의 기본 혜택으로 이어 쓰지 않았다. 이번 메달 디자인과 특정 추가 서비스는 별도 조건이므로 최종 참가 안내를 확인해야 한다.</p>
+<h2>스폰서 패키지와 시상품은 다르다</h2><p>공식 사전 스폰서 물품에는 배번호, 아미노바이탈 제품, 런드리서핑 트래블팩이 적혀 있다. 현장 완주 물품에는 아미노바이탈 구연산, 웅진식품 음료, 네이처밸리 바·리유저블백, 후르츠 거셔스가 안내된다. 이는 제공 계획이며 개인별 실제 수령 완료를 확인한 목록은 아니다.</p>
+<p><a href="https://runable.me/comp/18962" target="_blank" rel="noopener noreferrer">접수처 대회 화면</a>의 협찬사에 샥즈·콘티넨탈타이어 등 이름이 있다고 해서 모든 참가자에게 이어폰·고가 경품을 준다고 해석하면 안 된다. 경품·시상품과 참가자 기본 지급품을 구분하자. 상품 FAQ의 HDEX 시상품은 수상자 대상 온라인몰 적립금 조건이며 일반 참가자에게 주는 현금이 아니다.</p>
+<h2>받은 물품과 문의 내용을 짧게 정리</h2><p>배번호의 참가자·종목·그룹, 의류 종류·사이즈, 실제 받은 사전 물품을 확인하자. 문의할 때 신청 내역과 누락·오배송 항목을 나누면 상황을 설명하기 쉽다. 개인정보·주문번호는 공식 문의 경로에 전달하고 공개 댓글에 올릴 필요는 없다.</p><p><a href="https://discover.garmin.com/ko-KR/event/2026/garmin-run/faq/" target="_blank" rel="noopener noreferrer">배송 FAQ</a>는 레이스팩을 10월 말부터 순차 배송할 예정이라고 안내한다. 이 날짜만으로 전원 배송 완료를 단정하지 않는다. 추가 물품 구매나 스페셜팩 접수도 현재 열려 있다는 뜻이 아니며, 접수처 공개 대회 화면은 마감 표시다.</p>
+<h2>자주 묻는 질문</h2><h3>하프와 10K 모두 같은 티셔츠인가요?</h3><p>공식 안내는 하프 HDEX 싱글렛, 10K HDEX 티셔츠로 구분합니다. 기능성 썬캡·팔토시는 두 종목의 사전 기념품에 적혀 있습니다.</p><h3>택배에 메달이 없으면 누락인가요?</h3><p>주최는 완주 메달을 현장에서 완주 후 제공한다고 안내합니다. 사전 택배 물품과 구분해야 합니다.</p><h3>스폰서가 샥즈면 전원 이어폰을 받나요?</h3><p>협찬사 이름과 참가자 기본 지급품은 다릅니다. 공식 기념품 목록·시상 조건을 확인해야 하며 협찬 로고만으로 전원 고가 경품을 보장할 수 없습니다.</p>`,
+    updatedAt: "2026-11-10",
+    faqs: [
+      {
+        "question": "하프와 10K 모두 같은 티셔츠인가요?",
+        "answer": "공식 안내는 하프 HDEX 싱글렛, 10K HDEX 티셔츠로 구분합니다. 기능성 썬캡·팔토시는 두 종목의 사전 기념품에 적혀 있습니다."
+      },
+      {
+        "question": "택배에 메달이 없으면 누락인가요?",
+        "answer": "주최는 완주 메달을 현장에서 완주 후 제공한다고 안내합니다. 사전 택배 물품과 구분해야 합니다."
+      },
+      {
+        "question": "스폰서가 샥즈면 전원 이어폰을 받나요?",
+        "answer": "협찬사 이름과 참가자 기본 지급품은 다릅니다. 공식 기념품 목록·시상 조건을 확인해야 하며 협찬 로고만으로 전원 고가 경품을 보장할 수 없습니다."
+      }
+    ],
   },
   {
     id: 'lotte-world-tower-skyrun-tower-running-guide',
@@ -5755,134 +5720,56 @@ export const posts_2026_06: BlogPost[] = [
 `,
   },
   {
-    id: '2026-garmin-run-korea-half-marathon',
-    slug: '2026-garmin-run-korea-half-marathon',
-    title: '2026 가민런 코리아, 하프 신설 + 1만 2천명 확대 | "접수 2분컷" 대회가 돌아온다 — 일정·접수·코스 총정리',
-    description: '작년 3,000명 정원이 접수 2분 만에 마감된 가민런 코리아가 2026년 약 1만 2천명 규모로 확대 개최됩니다. 기존 10K에 더해 하프코스 신설, 2026년 11월 15일 고양종합운동장, 7월 1~3일 래플(추첨) 접수. 가민 워치 연계 데이터 러닝 대회의 일정·접수 방식·코스·준비 팁을 한 번에 정리.',
-    thumbnail: '/images/blog/2026-garmin-run-korea-half-marathon.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-06-01',
-    updatedAt: '2026-06-29',
-    category: 'news' as const,
-    readingTime: 8,
-    tags: ['가민런', '가민런 코리아', '2026 가민런', '하프마라톤', '고양 마라톤', '가민 워치', '마라톤 접수', '래플 추첨', '데이터 러닝'],
+    id: "2026-garmin-run-korea-half-marathon",
+    slug: "2026-garmin-run-korea-half-marathon",
+    title: "2026 가민런 코리아 참가 전: 11월 15일 집결·배번호 그룹·지정 의류 확인",
+    description: "고양종합운동장 하프·10K 일정입니다. 하프 07시·10K 07시20분 집결 안내와 최종 배번호 그룹, 현장 필수 착용 의류를 확인하세요. 현재 러너블 공개 대회 페이지는 접수 마감 표시입니다.",
+    thumbnail: "/images/blog/verified-2026-garmin-run-korea-half-marathon-20261110.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-06-01",
+    updatedAt: "2026-11-10",
+    category: "news",
+    readingTime: 4,
+    tags: [
+      "가민런 코리아",
+      "고양 러닝",
+      "하프마라톤",
+      "10K",
+      "출발 그룹",
+      "대회 준비"
+    ],
     event: {
-      name: '2026 가민런 코리아 (Garmin Run Korea)',
-      startDate: '2026-11-15',
-      location: { name: '고양종합운동장', address: '경기 고양시' },
-      organizer: '가민코리아 · 러너블',
-      url: 'https://discover.garmin.com/ko-KR/event/2026/garmin-run/',
+      "name": "2026 가민런 코리아 (Garmin Run Korea)",
+      "startDate": "2026-11-15",
+      "location": {
+        "name": "고양종합운동장",
+        "address": "경기 고양시"
+      },
+      "organizer": "가민코리아 · 러너블",
+      "url": "https://discover.garmin.com/ko-KR/event/2026/garmin-run/"
     },
-    content: `
-<div class="deadline-strip">⏰ <strong>(9/30 갱신) 러너블의 추가접수 공지 기한인 9월 30일(수) 17시가 지났습니다.</strong> 별도 연장·재오픈 여부는 <a href="/blog/garmin-run-korea-additional-registration">가민런 추가접수 글</a>과 러너블 상품 페이지에서 확인하세요.</div>
-
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>2026 가민런 코리아</strong>가 <strong>2026년 11월 15일 고양종합운동장</strong>에서 약 <strong>1만 2천명 규모</strong>로 확대 개최됩니다(작년 3,000명)</li>
-    <li>올해 최대 변화는 <strong>하프코스(21.1km) 신설</strong> — 기존 10K에 더해 더 많은 러너가 참가할 수 있게 됐습니다</li>
-    <li>접수는 <strong>7월 1~3일 신청 → 7월 7일 발표</strong>의 <strong>래플(추첨)</strong> 방식. 작년처럼 선착순 "2분컷"이 아니라 추첨이라 부담이 줄었습니다</li>
-  </ul>
-</div>
-
-<div class="callout success">
-  <span class="callout-icon">🔔</span>
-  <div class="callout-body">
-    <p class="callout-title">[업데이트] 본접수가 7월 1일(수) 14:00 시작됩니다</p>
-    <p>가민 코리아 공식 발표(6/25) 기준 본접수 일정이 확정됐습니다 — <strong>접수 7/1(수) 14:00 ~ 7/3(금) 17:00, 당첨자 발표 7/7(화) 14:00 이후, 결제 마감 7/9(목) 16:00</strong>. 래플(추첨)이라 접수 기간 내 신청만 하면 되지만, <strong>7/3 17시 마감</strong>과 <strong>당첨 시 7/9 16시 결제 마감</strong>을 놓치면 무효입니다. 신청은 러너블 플랫폼에서 진행되며, HALF·10K 두 종목으로 운영됩니다.</p>
-  </div>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">⌚</span>
-  <div class="callout-body">
-    <p class="callout-title">"접수 2분컷" 대회가 뭐길래</p>
-    <p>가민런 코리아는 GPS 워치 브랜드 <strong>가민(Garmin)</strong>이 주최하는 데이터 기반 러닝 대회입니다. <strong>2025년 첫 대회(하남)</strong> 때 정원 3,000명이 <strong>접수 시작 약 2분 만에 전량 마감</strong>되며 화제가 됐죠. 소규모 정원 + 각인 메달·기록 포스터 같은 프리미엄 경험 + 가민 워치 연계 혜택이 인기 요인이었습니다. 그 대회가 2026년 <strong>4배 규모로 확대 + 하프 신설</strong>로 돌아옵니다.</p>
-  </div>
-</div>
-
-<h2>2026 가민런 코리아 한눈에</h2>
-
-<table>
-  <thead>
-    <tr><th>항목</th><th>내용</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>대회일</td><td><strong>2026년 11월 15일(일)</strong></td></tr>
-    <tr><td>장소</td><td><strong>고양종합운동장</strong></td></tr>
-    <tr><td>규모</td><td>약 1만 2천명 (작년 3,000명 → 4배 확대)</td></tr>
-    <tr><td>코스</td><td><strong>하프(21.1km) 신설</strong> + 10K</td></tr>
-    <tr><td>접수 신청</td><td><strong>7월 1일(수) 14:00 ~ 7월 3일(금) 17:00</strong></td></tr>
-    <tr><td>당첨 발표</td><td>7월 7일(화) 14:00 이후</td></tr>
-    <tr><td>결제 마감</td><td>7월 9일(목) 16:00</td></tr>
-    <tr><td>접수 방식</td><td><strong>래플(추첨)</strong></td></tr>
-  </tbody>
-</table>
-
-<p class="caption">일정·코스 정보는 주최 측 공지 및 러닝 정보 채널 기준입니다. 참가비·정원 세부 배분 등 일부 항목은 공식 접수 페이지 오픈 시 확정되니, 신청 전 가민 공식 채널을 한 번 더 확인하세요.</p>
-
-<h2>가장 큰 변화 ① — 하프코스 신설</h2>
-
-<p>그동안 가민런은 10K·5K 중심이라 "하프를 뛰고 싶다"는 수요가 많았습니다. 2026년 <strong>하프코스(21.1km)가 새로 생기면서</strong>, 풀코스는 아직 부담스럽지만 10K는 넘어선 중급 러너들이 도전하기 좋아졌습니다. 11월 중순 개최라 <strong>가을~초겨울 시즌 하프 도전</strong>으로 일정을 잡기에도 적당합니다.</p>
-
-<h2>가장 큰 변화 ② — 선착순 대신 래플(추첨)</h2>
-
-<p>작년의 "2분컷" 선착순 트라우마를 의식한 듯, 2026년은 <strong>래플(추첨) 방식</strong>입니다. <strong>7월 1~3일 사이 신청</strong>해두면 <strong>7월 7일 당첨자를 발표</strong>합니다. 접수창 오픈 순간 서버와 싸울 필요가 없어졌지만, 인기가 높은 만큼 <strong>경쟁률은 높을 것</strong>으로 보입니다. 신청 기간을 놓치지 않는 게 핵심입니다.</p>
-
-<div class="callout tip">
-  <span class="callout-icon">📅</span>
-  <div class="callout-body">
-    <p class="callout-title">접수 캘린더에 미리 등록</p>
-    <p><strong>7월 1일(신청 시작)</strong>과 <strong>7월 7일(발표)</strong>을 미리 알림으로 등록해두세요. 래플은 신청만 해두면 되니 선착순처럼 긴장할 필요는 없지만, <strong>신청 마감(7/3)</strong>을 놓치면 끝입니다. 다른 가을 대회와 일정이 겹치는지도 함께 확인하세요.</p>
-  </div>
-</div>
-
-<h2>가민런만의 특징 — "데이터로 달리는" 대회</h2>
-
-<p>가민런은 단순 완주 대회가 아니라 <strong>가민의 'Beat Yesterday'(어제의 나를 이긴다) 철학</strong>을 담은 데이터 러닝 대회입니다. 2025년 1회 기준으로 다음과 같은 경험을 제공했습니다(2026년 세부는 변동 가능).</p>
-
-<ul>
-  <li><strong>기록 각인 메달·기록 포스터</strong> — 완주 후 개인 기록이 새겨진 메달과 포토월</li>
-  <li><strong>가민 워치 체험 부스</strong> — 최신 포러너 등 직접 착용 체험</li>
-  <li><strong>페이스별 스타트 그룹</strong> — 기록 제출 시 그룹을 나눠 기록 도전 환경 제공</li>
-  <li><strong>기능성 기념품</strong> — 한정 기능성 티셔츠, 완주 기념품 패키지</li>
-</ul>
-
-<p>한국은 가민 글로벌 데이터에서 주간 평균·최장 러닝 거리 모두 세계 최상위권일 만큼 러닝 열기가 뜨거운데, 그 흐름과 잘 맞는 대회입니다.</p>
-
-<h2>하프 첫 도전이라면 — 지금부터 준비</h2>
-
-<p>11월 대회면 7월 발표 후 <strong>약 4개월</strong>의 준비 기간이 있습니다. 하프가 처음이라면 지금부터 거리를 차근차근 늘리는 게 안전합니다.</p>
-
-<ul>
-  <li><strong>주력 훈련</strong>: 천천히 오래 달리는 LSD로 기초 지구력부터. <a href="/blog/lsd-training-beginner-guide-korea">초보 LSD 훈련 가이드</a></li>
-  <li><strong>페이스 전략</strong>: 하프는 페이스 배분이 완주를 좌우합니다. <a href="/blog/marathon-pacing-mental-strategy-guide">마라톤 페이싱·멘탈 전략</a></li>
-  <li><strong>여름 훈련</strong>: 7~9월 무더위·장마 대비. <a href="/blog/rainy-season-running-guide-korea">장마철 러닝 가이드</a></li>
-  <li><strong>신발 준비</strong>: 하프 완주용 데일리·쿠션화 선택. <a href="/recommend">1분 러닝화 추천</a>으로 본인 조건에 맞는 후보 찾기</li>
-</ul>
-
-<div class="callout tip">
-  <span class="callout-icon">🏃</span>
-  <div class="callout-body">
-    <p class="callout-title">다른 가을 대회도 함께 보기</p>
-    <p>가민런 추첨에서 떨어지더라도 가을엔 대회가 많습니다. <a href="/blog/2026-chuncheon-marathon-registration-guide">춘천마라톤</a> 등 가을 대표 대회 일정을 함께 확인해 플랜 B를 준비해두세요. 마라톤 일정은 <a href="/marathon">마라톤 캘린더</a>에서 한눈에 볼 수 있습니다.</p>
-  </div>
-</div>
-
-<h2>FAQ</h2>
-
-<h3>Q. 접수는 선착순인가요?</h3>
-<p>아닙니다. <strong>2026년은 래플(추첨)</strong> 방식입니다. <strong>7월 1~3일</strong> 사이에 신청하면 <strong>7월 7일</strong> 당첨자를 발표합니다. 작년의 "2분컷" 선착순과 달리 접수창 오픈 순간 경쟁할 필요는 없지만, 신청 기간(7/3 마감)은 꼭 지켜야 합니다.</p>
-
-<h3>Q. 하프코스가 새로 생긴 게 맞나요?</h3>
-<p>네. 2026년 가장 큰 변화가 <strong>하프(21.1km) 신설</strong>입니다. 기존 10K에 더해 하프가 추가돼 중급 러너의 선택지가 넓어졌습니다. 코스 세부는 공식 접수 페이지에서 확정 발표될 예정입니다.</p>
-
-<h3>Q. 가민 워치가 없어도 참가할 수 있나요?</h3>
-<p>네, 워치 보유와 무관하게 참가할 수 있습니다. 다만 가민런은 데이터 러닝 콘셉트라 GPS 워치가 있으면 기록·페이스 관리가 더 즐겁습니다. 현장 부스에서 가민 워치를 체험할 수도 있습니다.</p>
-
-<h3>Q. 대회까지 4개월, 하프 준비 어떻게 시작하죠?</h3>
-<p>지금 10K를 무리 없이 뛴다면 <strong>주 1회 LSD로 거리를 5~10%씩 점진적으로 늘리는 것</strong>부터 시작하세요. 무더위·장마가 겹치는 시기라 수분·페이스 관리가 중요합니다. <a href="/blog/lsd-training-beginner-guide-korea">LSD 훈련 가이드</a>와 <a href="/blog/marathon-pacing-mental-strategy-guide">페이싱 전략</a>을 참고하세요.</p>
-`,
+    content: `<p><small>2026년 11월 10일 주최·공식 접수처의 공개 원문 대조. 일정과 운영 계획은 실제 개인 참가 확정·배송 완료와 구분합니다.</small></p>
+<p>2026 가민런 코리아는 <strong>11월 15일 고양종합운동장, 하프와 10K</strong> 일정이다. <a href="https://runable.me/comp/18962" target="_blank" rel="noopener noreferrer">공식 접수처 러너블</a>의 현재 공개 대회 화면은 접수 마감으로 표시된다. 옛 추첨 신청 안내를 지금도 참가할 수 있는 경로처럼 소개하지 않고, 기존 참가자가 출발 전에 확인할 조건을 모았다.</p>
+<h2>하프와 10K의 집결·출발은 다르다</h2><table><thead><tr><th>종목</th><th>공식 러너블 채널의 집결 안내</th><th>출발 안내</th></tr></thead><tbody><tr><td>하프</td><td>07:00</td><td>08:00</td></tr><tr><td>10K</td><td>07:20</td><td>08:20</td></tr></tbody></table><p><a href="https://pf.kakao.com/_UBlJb" target="_blank" rel="noopener noreferrer">러너블 공식 채널</a>의 종목별 안내다. 러너블 대회 화면의 전체 운영 08:00~14:00를 10K의 개인 출발 시각이나 제한시간으로 읽으면 안 된다. 대회 직전 받은 문자·배번호·최종 운영 안내에 변경이 있으면 함께 대조하자.</p>
+<h2>신청 때 고른 그룹과 최종 배번호는 다를 수 있다</h2><p><a href="https://discover.garmin.com/ko-KR/event/2026/garmin-run/faq/" target="_blank" rel="noopener noreferrer">가민 공식 FAQ</a>는 예상 완주 목표 시간으로 그룹을 배정하지만 최종 그룹이 신청 때 선택과 달라질 수 있다고 명시한다. 하프는 A~D, 10K는 A~C 그룹을 안내한다. 다른 사람의 목표 시간이나 예전 신청 화면을 근거로 앞 그룹에 합류하기보다 실제 배번호의 종목·그룹을 확인해야 한다.</p>
+<p><a href="https://discover.garmin.com/ko-KR/event/2026/garmin-run/information/" target="_blank" rel="noopener noreferrer">공식 대회 정보</a>의 참가 가능 기준은 하프 2시간30분 이내·10K 1시간30분 이내 완주다. 이는 참가자가 준비해야 할 조건이며 모든 사람에게 여유롭다는 평가가 아니다. 구간별 통제·회송은 현장 운영진 안내를 따라야 한다. 개인 목표 기록·시계 예측값이 현장 운영 시간을 늘려주지는 않는다.</p>
+<h2>배번호만 챙기지 말고 지정 의류도</h2><p><a href="https://discover.garmin.com/ko-KR/event/2026/garmin-run/racepackage/" target="_blank" rel="noopener noreferrer">공식 기념품 안내</a>와 <a href="https://runable.me/product/19627?comp=18962" target="_blank" rel="noopener noreferrer">러너블 상품 FAQ</a>는 대회 싱글렛·티셔츠의 현장 필수 착용을 안내한다. 하프 사전 의류는 HDEX 싱글렛, 10K는 HDEX 티셔츠다. 평소 좋아하는 다른 상의만 준비해도 된다고 안내할 수 없다. 추위에 대비할 개인 보온품과 출발 때 착용할 지정 의류를 구분해 준비하자.</p>
+<h2>짐·교통은 최신 코스 안내에서 확인</h2><p><a href="https://discover.garmin.com/ko-KR/event/2026/garmin-run/route/" target="_blank" rel="noopener noreferrer">공식 코스·교통통제 메뉴</a>에 종목별 지도가 있다. 집결지까지 오는 길과 출발 대기선까지 이동하는 시간을 함께 계산해야 한다. 공개 이미지가 있다는 사실만으로 임의의 누적고도·구간별 페이스·급수 위치를 만들지 않았다.</p><p>배송 문의는 러너블의 본인 결제 내역과 받은 물품을 대조해 공식 문의 경로로 확인하자. FAQ의 ‘10월 말부터 순차 배송 예정’은 전원 수령 완료라는 뜻이 아니다. 개인 참가 승인·배송·출발 그룹을 이번 글에서 대신 조회한 것은 아니다.</p>
+<h2>자주 묻는 질문</h2><h3>모든 종목이 08시에 출발하나요?</h3><p>공식 러너블 채널은 하프 07:00 집결·08:00 출발, 10K 07:20 집결·08:20 출발로 안내했습니다. 최종 문자·현장 운영 변경도 함께 확인해야 합니다.</p><h3>신청할 때 고른 그룹에 서면 되나요?</h3><p>가민 FAQ는 최종 그룹이 신청 때 선택한 그룹과 달라질 수 있다고 설명합니다. 실제 배번호의 종목·그룹을 확인하세요.</p><h3>개인 러닝복만 입고 참가해도 되나요?</h3><p>공식 기념품 페이지와 러너블 FAQ는 대회 싱글렛·티셔츠의 현장 필수 착용을 안내합니다. 하프와 10K의 지급 의류도 구분해야 합니다.</p>`,
+    faqs: [
+      {
+        "question": "모든 종목이 08시에 출발하나요?",
+        "answer": "공식 러너블 채널은 하프 07:00 집결·08:00 출발, 10K 07:20 집결·08:20 출발로 안내했습니다. 최종 문자·현장 운영 변경도 함께 확인해야 합니다."
+      },
+      {
+        "question": "신청할 때 고른 그룹에 서면 되나요?",
+        "answer": "가민 FAQ는 최종 그룹이 신청 때 선택한 그룹과 달라질 수 있다고 설명합니다. 실제 배번호의 종목·그룹을 확인하세요."
+      },
+      {
+        "question": "개인 러닝복만 입고 참가해도 되나요?",
+        "answer": "공식 기념품 페이지와 러너블 FAQ는 대회 싱글렛·티셔츠의 현장 필수 착용을 안내합니다. 하프와 10K의 지급 의류도 구분해야 합니다."
+      }
+    ],
   },
   {
     id: "li-ning-red-hare-9-ultra-budget-supertrainer",

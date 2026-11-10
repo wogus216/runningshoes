@@ -438,50 +438,85 @@ export const octoberEvents: MarathonEvent[] = [
     },
   },
   {
-    id: 'busan-sea-marathon-2026',
-    name: '성우하이텍 2026 부산바다마라톤',
-    date: '2026-10-25',
-    month: '10월',
-    location: '해운대 벡스코 야외광장 (부산)',
-    region: '부산',
-    distances: ['15K', '10K', '5K'],
-    status: '대회종료',
+    id: "busan-sea-marathon-2026",
+    name: "성우하이텍 2026 부산바다마라톤",
+    date: "2026-10-25",
+    month: "10월",
+    location: "해운대 벡스코 야외광장 (부산)",
+    region: "부산",
+    distances: [
+      "15K",
+      "10K",
+      "5K"
+    ],
+    status: "대회종료",
     isMajor: false,
-    website: 'https://marathon.busan.com',
-    registrationStart: '2026-07-28',
-    registrationNote:
-      '접수 마감 — 정원 12,000명 선착순으로 받아 8월 3일 전 종목 마감됐고(공식 공지 8/3), 환불·취소분으로 9월 2일(수) 10시 선착순 추가 접수(신청 후 환불 불가)를 열었습니다. 2026-10-20 공식 참가신청 페이지는 "모든 코스 접수가 마감"으로 안내합니다(추가 접수가 언제 닫혔는지는 공지에 없음)',
+    website: "https://busan.wizrun.com/",
+    registrationStart: "2026-07-28",
+    registrationNote: "접수 마감 — 정원 12, 000명 선착순으로 받아 8월 3일 전 종목 마감됐고(공식 공지 8/3), 환불·취소분으로 9월 2일(수) 10시 선착순 추가 접수(신청 후 환불 불가)를 열었습니다. 2026-10-20 공식 참가신청 페이지는 \"모든 코스 접수가 마감\"으로 안내합니다(추가 접수가 언제 닫혔는지는 공지에 없음)",
     raceKit: {
-      items: ['공식 기념 티셔츠(흡한속건, XS~2XL)', '기념 양말', '기념 반다나(부산일보 창간 80주년)', '배번호', '기록칩(15km·10km, 5km 제외)', '완주메달', '완주 간식·음료'],
-      images: [
-        { src: '/images/marathon/busan-sea-marathon-2026/kit-1.webp', alt: '2026 부산바다마라톤 공식 기념품 안내' },
-        { src: '/images/marathon/busan-sea-marathon-2026/kit-2.webp', alt: '2026 부산바다마라톤 공식 기념 티셔츠' },
+      "items": [
+        "공식 기념 티셔츠(흡한속건, XS~2XL)",
+        "기념 양말",
+        "기념 반다나(부산일보 창간 80주년)",
+        "배번호",
+        "기록칩(15km·10km, 5km 제외)",
+        "완주메달",
+        "완주 간식·음료"
       ],
-      verifiedAt: '2026-08-27',
+      "images": [
+        {
+          "src": "/images/marathon/busan-sea-marathon-2026/kit-1.webp",
+          "alt": "2026 부산바다마라톤 공식 기념품 안내"
+        },
+        {
+          "src": "/images/marathon/busan-sea-marathon-2026/kit-2.webp",
+          "alt": "2026 부산바다마라톤 공식 기념 티셔츠"
+        }
+      ],
+      "verifiedAt": "2026-08-27"
     },
-    lastVerified: '2026-10-20',
-    description:
-      '평소 보행이 금지된 광안대교 상층부를 달리는 부산일보사 주최 대회. 벡스코 야외광장에 07:30 집결한 뒤 07:50부터 광안대교 상층부 출발지점으로 이동해 종목별로 출발합니다. 15km·10km 로드레이스와 5km 건강달리기 3개 종목으로 총 12,000명 선착순(15km 2,000·10km 6,500·5km 3,500)이며, 참가비는 15km 70,000원·10km 60,000원·5km 50,000원입니다(골스튜디오 패키지 선택 시 각 +39,000원). 접수는 7월 28일 오후 8시에 열려 8월 3일 전 종목 선착순 마감됐고, 9월 2일 취소분 추가 접수까지 끝나 지금은 신청할 수 없습니다(공식 참가신청 페이지 2026-10-20 확인). 신청 후 72시간 안에 결제하지 않으면 자동 취소되며, 기념품·배번호는 10월 16일 발송 예정입니다. 교통통제 최소화를 위해 제한시간을 엄격히 적용합니다(15km 2시간 20분·10km 1시간 40분·5km 1시간 20분).',
+    lastVerified: "2026-11-10",
+    description: "10월 25일 부산바다마라톤 뒤 10월 27일 사무국이 공식기록실 업데이트와 연대별 시상 공지를 안내했다. 공식 FAQ는 현장 시상과 공식 기록 모두 건타임 기준이라고 설명하며 5km는 기록칩 미제공 부문이다. 15km·10km·5km 모집 계획 12, 000명을 실제 참가·완주 인원으로 확정하지 않았다. 12월6일 부산브릿지 풀·10km와는 다른 대회다.",
     courseInfo: {
-      terrain: '평지',
-      difficulty: '초보자',
-      courseDescription:
-        '광안대교 상층부를 달리는 것이 핵심입니다. 자동차 전용도로라 대회일에만 러너에게 열리며, 바다 위 교량 구간이라 그늘이 없고 해풍이 변수입니다. 큰 오르막은 없지만 교량 진입·진출부에 완만한 경사가 있습니다.',
+      "courseDescription": "벡스코 야외광장07:30집결 뒤07:50 광안대교 상층부 출발지점으로 이동하는 운영 안내였다. 종목별 출발은15km08:40·10km08:20·5km09:00으로,집결·이동·출발을 구분한다. 구간별 고도·경사나 초보 완주 용이성을 이번에 검증한 것은 아니다."
     },
     raceInfo: {
-      entryFees: [
-        { distance: '15K', fee: 70000 },
-        { distance: '10K', fee: 60000 },
-        { distance: '5K', fee: 50000 },
+      "entryFees": [
+        {
+          "distance": "15K",
+          "fee": 70000
+        },
+        {
+          "distance": "10K",
+          "fee": 60000
+        },
+        {
+          "distance": "5K",
+          "fee": 50000
+        }
       ],
-      timeLimits: [
-        { distance: '15K', hours: 2, minutes: 20 },
-        { distance: '10K', hours: 1, minutes: 40 },
-        { distance: '5K', hours: 1, minutes: 20 },
+      "timeLimits": [
+        {
+          "distance": "15K",
+          "hours": 2,
+          "minutes": 20
+        },
+        {
+          "distance": "10K",
+          "hours": 1,
+          "minutes": 40
+        },
+        {
+          "distance": "5K",
+          "hours": 1,
+          "minutes": 20
+        }
       ],
-      expectedParticipants: 12000,
-      startTime: '08:20',
+      "expectedParticipants": 12000,
+      "startTime": "08:20"
     },
+    postRaceNote: "10월27일 공식기록실 업데이트 공지 https://busan.wizrun.com/notice/notice17/view/159?stx=&sty= 에 스마트칩 기록조회 연결이 있다. 공식 기록·현장 시상은 건타임 안내, 5km는 기록칩 제외. 개인 기록과 연대별 입상 공지·실제 시상 완료는 구분한다. 사무국 051-461-4046·평일 10:00~17:00(점심 12:00~13:00).",
   },
   {
     id: "seoul-race-2026",

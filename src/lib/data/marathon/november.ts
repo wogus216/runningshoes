@@ -969,42 +969,64 @@ export const novemberEvents: MarathonEvent[] = [
     },
   },
   {
-    id: 'garmin-run-korea-2026',
-    name: '2026 가민런 코리아 (Garmin Run Korea)',
-    date: '2026-11-15',
-    month: '11월',
-    location: '고양종합운동장 (경기 고양시)',
-    region: '경기',
-    distances: ['하프', '10K'],
-    status: '마감',
+    id: "garmin-run-korea-2026",
+    name: "2026 가민런 코리아 (Garmin Run Korea)",
+    date: "2026-11-15",
+    month: "11월",
+    location: "고양종합운동장 (경기 고양시)",
+    region: "경기",
+    distances: [
+      "하프",
+      "10K"
+    ],
+    status: "마감",
     isMajor: true,
-    website: 'https://discover.garmin.com/ko-KR/event/2026/garmin-run/',
-    description:
-      '가민이 주최하는 브랜드 러닝 이벤트로, 2026년 1만 2천 명 규모로 대폭 확대됐습니다(하프 8,500명·10K 3,500명). 본접수는 선착순이 아니라 추첨이었습니다 — 7월 1일 14시부터 3일 17시까지 신청받아 7일 14시에 당첨자를 발표했고, 9일 16시까지 참가비를 결제해야 자리가 확정되는 방식이었습니다. 이와 별개로 포러너 스페셜 패키지가 6월 23일~7월 10일 선착순으로 열렸습니다. 참가 자격은 하프가 만 18세 이상(2008년 11월 15일 이전 출생)·2시간 30분 이내 완주, 10K가 만 14세 이상(2012년 11월 15일 이전 출생)·1시간 30분 이내 완주로 컷오프가 걸려 있습니다. 2022~2027년 월드 시리즈 13개 도시 중 10개를 완주하면 18K 도금 커스텀 메달을 주는 시리즈의 한국 라운드입니다.',
+    website: "https://discover.garmin.com/ko-KR/event/2026/garmin-run/",
+    description: "11월 15일 고양종합운동장 하프·10K 일정. 러너블 공식 채널 안내는 하프 07:00 집결·08:00 출발, 10K 07:20 집결·08:20 출발이다. 11월 10일 공개 러너블 대회 화면은 접수 마감 표시이며 본인 참가 확정은 마이페이지 결제 내역에서 확인해야 한다. 신청 당시 선택 그룹과 최종 배번호 그룹은 다를 수 있고 하프 HDEX 싱글렛·10K HDEX 티셔츠는 현장 필수 착용 안내다.",
     courseInfo: {
-      terrain: '평지',
-      difficulty: '중급',
-      courseDescription:
-        '고양종합운동장에서 출발해 같은 자리로 돌아오는 순환 코스입니다. 하프는 고양체육관사거리를 지나 일산호수공원 옆을 끼고 남동쪽으로 내려간 뒤 신평IC 삼거리와 신평IC에서 반환해 되돌아옵니다. 10K는 고양체육관사거리와 일산호수공원 옆을 지나 호수공원 남동쪽에서 한 번 반환해 같은 길로 돌아오는 코스입니다(2026-10-20 공식 코스도 확인).',
-      isLoopCourse: true,
+      "courseDescription": "고양종합운동장 하프·10K 종목의 공식 코스·교통통제 이미지는 https://discover.garmin.com/ko-KR/event/2026/garmin-run/route/ 에서 확인한다. 이번 재대조는 참가·접수·지정 의류·그룹 조건 범위이며 정확한 종목별 경로·누적고도·구간별 급수 위치를 재인증한 것은 아니다."
     },
     raceInfo: {
-      entryFees: [
-        { distance: '하프', fee: 80000 },
-        { distance: '10K', fee: 60000 },
+      "entryFees": [
+        {
+          "distance": "하프",
+          "fee": 80000
+        },
+        {
+          "distance": "10K",
+          "fee": 60000
+        }
       ],
-      timeLimits: [
-        { distance: '하프', hours: 2, minutes: 30 },
-        { distance: '10K', hours: 1, minutes: 30 },
+      "timeLimits": [
+        {
+          "distance": "하프",
+          "hours": 2,
+          "minutes": 30
+        },
+        {
+          "distance": "10K",
+          "hours": 1,
+          "minutes": 30
+        }
       ],
-      expectedParticipants: 12000,
-      startTime: '하프 08:00 / 10K 08:20',
+      "expectedParticipants": 12000,
+      "startTime": "하프 08:00 / 10K 08:20"
     },
-    registrationStart: '2026-10-20',
-    registrationEnd: '2026-10-22',
-    registrationNote:
-      '**접수 마감 — FINAL 추가접수(10월 20일 14시~22일 17시)가 끝났습니다.** 2026-10-23 러너블 대회 페이지에 열린 접수 상품이 없고, 남은 추가접수 상품은 "접수 마감" 버튼이 비활성입니다. 당시 안내: 공식 접수처 러너블(runable.me)의 "2026 GARMIN RUN KOREA FINAL 추가접수" 상품으로, 하프 80,000원·10K 60,000원(포러너 포함 패키지 별도)이며 정보수정·참가취소 기한도 10월 22일 17시입니다. 러너블은 "접수일정은 상황에 따라 조기 종료될 수 있습니다"라고 안내하고, 선착순 여부와 정원은 표기하지 않았습니다(2026-10-20 10시 확인 — 이때는 "14:00 접수 시작" 대기 상태). 앞선 9월 추가접수(9/3 14시~9/30)와 7월 본접수 추첨은 끝났습니다.',
-    lastVerified: '2026-10-23',
+    registrationStart: "2026-10-20",
+    registrationEnd: "2026-10-22",
+    registrationNote: "11/10 공식 접수처 https://runable.me/comp/18962 공개 화면의 접수 마감 표시를 재대조했다. 남은 옛 신청 버튼·상품 목록을 현재 새 판매로 해석하지 않는다. 본접수·스페셜팩·추가접수의 취소·정보 수정 조건은 자신이 구매한 정확한 상품을 확인해야 한다. 레이스팩10월 말 순차 배송 예정은 전원 수령 완료가 아니다.",
+    lastVerified: "2026-11-10",
+    raceKit: {
+      "items": [
+        "하프 HDEX 싱글렛 /10K HDEX 티셔츠(사전 안내·현장 필수 착용)",
+        "기능성 썬캡·팔토시(사전 안내)",
+        "배번호·아미노바이탈 제품·런드리서핑 트래블팩(사전 안내)",
+        "완주 메달(현장 완주 후 안내)",
+        "아미노바이탈 구연산·음료·간식·리유저블백(완주 기념품 안내)"
+      ],
+      "pending": "공식 기념품은 구성·디자인 변경 가능. 스폰서 로고가 전원 고가 경품 지급을 뜻하지 않으며 개인 실제 배송·수령 완료는 미확인.",
+      "verifiedAt": "2026-11-10"
+    },
   },
   {
     id: 'gochang-dolmen-marathon-2026',
