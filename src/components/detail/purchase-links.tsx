@@ -39,12 +39,13 @@ const ALLOWED_PURCHASE_DOMAINS = [
   // 226ERS High Energy 처럼 네이버·쿠팡 어디에도 취급처가 없는 수입 젤의 유일한 국내 경로.
   // 화이트리스트에 없으면 링크가 경고 없이 걸러지므로, 새 판매처를 쓸 때는 여기부터 확인할 것.
   'lotteon.com',
+  'on.com', 'diadorakorea.com', 'decathlon.co.kr', 'underarmour.co.kr',
 ];
 
 function isValidPurchaseUrl(url: string): boolean {
   try {
     const parsed = new URL(url);
-    return ALLOWED_PURCHASE_DOMAINS.some(domain => parsed.hostname === domain || parsed.hostname.endsWith('.' + domain));
+    return parsed.protocol === 'https:' && ALLOWED_PURCHASE_DOMAINS.some(domain => parsed.hostname === domain || parsed.hostname.endsWith('.' + domain));
   } catch {
     return false;
   }
@@ -55,7 +56,9 @@ export function PurchaseLinks({ purchaseLinks, shoeName, brand, msrp, id }: Purc
     return null;
   }
 
-  const validLinks = purchaseLinks.filter((link) => isValidPurchaseUrl(link.url));
+  const validLinks = purchaseLinks
+    .filter((link) => isValidPurchaseUrl(link.url))
+    .map(link => ({ ...link, price: link.priceCheckedAt ? link.price : undefined }));
   if (validLinks.length === 0) return null;
 
   // 최저가 식별
@@ -91,12 +94,12 @@ export function PurchaseLinks({ purchaseLinks, shoeName, brand, msrp, id }: Purc
         <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-slate-500">Where To Buy</p>
         <h2 className="flex items-center gap-3 text-2xl font-black tracking-tight text-slate-950">
           <ExternalLink className="h-6 w-6 text-stone-600" />
-          {hasComparison ? '스토어별 최저가 비교' : '구매처 바로가기'}
+          {hasComparison ? '확인한 판매처 가격 비교' : '구매처 바로가기'}
         </h2>
         <p className="text-[15.5px] leading-relaxed text-slate-600">
           {hasComparison
-            ? `${brand} ${shoeName}의 ${validLinks.length}개 스토어 가격을 한눈에 비교하세요.`
-            : `${brand} ${shoeName}을(를) 판매 스토어에서 바로 만나보세요. 가격은 스토어에서 최종 확인하세요.`}
+            ? `${brand} ${shoeName}의 기록된 판매처 표시 가격을 비교합니다. 각 확인일과 상품 옵션을 함께 보세요.`
+            : `${brand} ${shoeName}의 판매처 정보를 확인하세요. 상품명·버전·폭과 현재 가격·재고는 판매처에서 확인하세요.`}
         </p>
       </div>
 
@@ -115,7 +118,7 @@ export function PurchaseLinks({ purchaseLinks, shoeName, brand, msrp, id }: Purc
             <div>
               <div className="inline-flex items-center gap-1.5 rounded-[3px] bg-positive px-3 py-1 text-[11px] font-bold uppercase tracking-wider text-white">
                 <Sparkles className="h-3 w-3" />
-                최저가
+                확인 가격 중 최저
               </div>
               <p className="mt-3 text-xs uppercase tracking-wide text-positive font-semibold">
                 {cheapestLink.store} {cheapestLink.isOfficial ? '공식몰' : ''}
@@ -126,7 +129,7 @@ export function PurchaseLinks({ purchaseLinks, shoeName, brand, msrp, id }: Purc
               {savings > 0 && (
                 <p className="mt-1 flex items-center gap-1 text-sm text-positive font-semibold">
                   <TrendingDown className="h-4 w-4" />
-                  정가 대비 <span className="font-mono tabular-nums">{savings.toLocaleString()}원 ({savingsPct}%)</span> 절약
+                  표시 정가와 <span className="font-mono tabular-nums">{savings.toLocaleString()}원 ({savingsPct}%)</span> 차이
                 </p>
               )}
             </div>
@@ -167,8 +170,9 @@ export function PurchaseLinks({ purchaseLinks, shoeName, brand, msrp, id }: Purc
                       )}
                     </p>
                     <p className="font-mono text-xs tabular-nums text-tertiary">
-                      {link.price ? `${link.price.toLocaleString()}원` : '스토어에서 구매하기'}
+                      {link.price !== undefined ? `${link.price.toLocaleString()}원 · ${link.priceCheckedAt} 확인` : '현재 가격·옵션 확인'}
                     </p>
+                    {link.note ? <p className="mt-1 text-xs leading-relaxed text-secondary">{link.note}</p> : null}
                   </div>
                 </div>
                 <span className="inline-flex shrink-0 items-center gap-1.5 rounded bg-slate-950 px-4 py-2 text-sm font-bold text-white transition group-hover:bg-slate-800">
@@ -217,7 +221,7 @@ export function PurchaseLinks({ purchaseLinks, shoeName, brand, msrp, id }: Purc
                       )}
                       {isCheapest && (
                         <span className="text-[10px] bg-positive text-white px-1.5 py-0.5 rounded-[3px] font-semibold">
-                          최저가
+                          확인 가격 중 최저
                         </span>
                       )}
                     </div>
@@ -225,6 +229,7 @@ export function PurchaseLinks({ purchaseLinks, shoeName, brand, msrp, id }: Purc
                       {link.price ? (
                         <span className={`font-mono font-bold tabular-nums ${isCheapest ? 'text-positive' : 'text-slate-950'}`}>
                           {link.price.toLocaleString()}원
+                          <span className="block text-xs font-normal text-tertiary">{link.priceCheckedAt} 확인</span>
                         </span>
                       ) : (
                         <span className="text-xs text-tertiary">가격 확인</span>
@@ -245,7 +250,7 @@ export function PurchaseLinks({ purchaseLinks, shoeName, brand, msrp, id }: Purc
         <p className="mb-2 font-semibold text-slate-700">구매 전 확인</p>
         <ul className="space-y-1">
           <li>- 가격은 수시로 변동됩니다. 실제 판매가는 각 스토어에서 확인하세요.</li>
-          <li>- 정품 여부는 판매처 보증 기준이며 본 사이트는 책임지지 않습니다.</li>
+          <li>- 모델 버전·성별·폭·품번과 반품·보증 조건을 구매 전 확인하세요.</li>
           <li>- 사이즈가 걱정이라면 매장 착화 후 온라인 주문을 권장합니다.</li>
         </ul>
       </div>

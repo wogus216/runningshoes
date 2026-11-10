@@ -69,6 +69,8 @@ export interface PurchaseLink {
   url: string;
   price?: number;      // 해당 스토어 가격 (선택)
   isOfficial?: boolean; // 공식 스토어 여부
+  priceCheckedAt?: string; // 해당 URL·옵션의 표시 가격을 직접 읽은 날짜
+  note?: string; // 모델·성별·폭·옵션을 고를 때 필요한 확인 조건
 }
 
 export interface RelatedPost {

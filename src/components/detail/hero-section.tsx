@@ -185,6 +185,9 @@ export function HeroSection({ shoe, brandTechnologyUrl }: HeroSectionProps) {
                   )}
                 </div>
               )}
+              {Array.from(new Set(sortedPurchaseLinks.flatMap(link => link.note ? [link.note] : []))).map(note => (
+                <p key={note} className="text-xs leading-relaxed text-secondary">{note}</p>
+              ))}
               <div className="flex flex-col gap-2 sm:flex-row">
                 <AddToCompareButton shoe={shoe} className="min-h-[48px] justify-center" />
                 <SaveButton slug={shoe.slug ?? ''} variant="full" className="min-h-[48px]" />
