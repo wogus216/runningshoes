@@ -264,37 +264,40 @@ export const marchEvents: MarathonEvent[] = [
   // --- 2027 시즌 (해외) ---
   // 참가료를 entryFees에 넣지 않는 이유는 february.ts 주석 참고(JSON-LD가 KRW 하드코딩).
   {
-    id: 'tokyo-marathon-2027',
-    name: '도쿄 마라톤 2027',
-    date: '2027-03-07',
-    month: '3월',
-    location: '도쿄도청 출발 → 도쿄역 앞 교코도리 도착',
-    region: '도쿄',
-    distances: ['풀코스'],
-    status: '마감',
+    id: "tokyo-marathon-2027",
+    name: "도쿄 마라톤 2027",
+    date: "2027-03-07",
+    month: "3월",
+    location: "도쿄도청 출발 → 도쿄역 앞 교코도리 도착",
+    region: "도쿄",
+    distances: [
+      "풀코스"
+    ],
+    status: "마감",
     isMajor: true,
-    website: 'https://www.marathon.tokyo/',
-    registrationNote:
-      '접수 종료 — 일반 접수(General Entry)는 8월 28일(금) 17시(JST)에 마감됐습니다. 당락은 9월 18일(금) 발표됐고 당첨자 참가비 납부 기간은 9월 18일~30일이었으며, 이 기간을 넘기면 당첨이 취소되는 조건이었습니다. 해외 ONE TOKYO GLOBAL 회원 접수는 이보다 이른 8월 13일에 이미 닫혔습니다(공식 2026-08-31 확인)',
-    description:
-      '제20회 기념대회로 정원이 40,000명으로 늘었고 10.7km는 마라톤에 통합돼 폐지됐다. 세계 6대 마라톤 중 유일한 아시아 대회. 한국 거주자 참가료는 230 USD(사무수수료·소비세 포함, 짐 보관 희망 시 ¥1,200 별도)이고 일반 접수는 2026년 8월 14일 11시~28일 17시(JST), 추첨 결과는 9월 18일 발표(참가비 납부 9/18~9/30). 접수 첫날 신청이 정원을 넘겨 추첨 실시가 공식 확정됐으나 선착순이 아니므로 마감 전 응모하면 조건은 동일하다. 참가자격은 대회일 기준 만 19세 이상이면서 6시간 30분 이내 완주 가능한 사람이다. 20주년 기념으로 듀오 팀(2인 1팀, 별도 이메일 신청) 부문이 신설됐고 완주 메달은 지름 100mm 프리미엄 에디션이다.',
+    website: "https://www.marathon.tokyo/",
+    registrationNote: "일반 접수 8월 28일 17시 JST·당첨자 납부 9월 30일 17시 종료. 해외 ONE TOKYO GLOBAL 회원은 별도 선행 창구였으며 일본 밖 거주자는 영어 일반 접수를 이용했다. 2027년 3월 4·5일 10:00~20:30·6일 10:00~17:30 도쿄 빅사이트 남전시장 본인 수령, 당일 수령 없음(11/10 공식 요강·FAQ 대조).",
+    description: "2027년 3월 7일 대회. 정원 40,000명, 해외 참가비 US$230(참가비·사무수수료·세금 포함), 짐 보관은 신청 때 선택한 러너에게 US$12 추가·별도 납부 절차. 일반 자격은 만 19세 이상·6시간 30분 내 완주 가능이며 운영은 09:10~16:10 신호총 기준 7시간으로 중간 관문을 적용한다. 일반 응모·당첨자 납부는 종료됐다.",
     courseInfo: {
-      terrain: '평지',
-      difficulty: '중급',
-      certification: 'AIMS',
-      courseDescription:
-        '고지대인 신주쿠 도쿄도청에서 출발해 도쿄역 방향으로 내려가는 구조라 평탄하고 빠른 코스라는 평이 정착돼 있다. 스이도바시·우에노히로코지·칸다·니혼바시·아사쿠사 카미나리몬·료고쿠·몬젠나카초·긴자·다마치·히비야를 지난다. 일본육상경기연맹·AIMS·월드 애슬레틱스 공인 코스.',
+      "certification": "AIMS",
+      "courseDescription": "도쿄도청 출발, 스이도바시·우에노히로코지·칸다·니혼바시·아사쿠사·료고쿠·몬젠나카초·긴자·다마치·히비야를 거쳐 도쿄역 앞 교코도리 도착. 공식 요강은 일본육상경기연맹·AIMS·세계육상연맹 공인 코스로 안내한다."
     },
     raceInfo: {
-      timeLimits: [{ distance: '풀코스', hours: 7, minutes: 0 }],
-      expectedParticipants: 40000,
-      startTime: '09:10',
+      "timeLimits": [
+        {
+          "distance": "풀코스",
+          "hours": 7,
+          "minutes": 0
+        }
+      ],
+      "expectedParticipants": 40000,
+      "startTime": "09:10"
     },
     logistics: {
-      bagStorage: true,
+      "bagStorage": true
     },
-    registrationStart: '2026-08-14',
-    registrationEnd: '2026-08-28',
-    lastVerified: '2026-10-20',
+    registrationStart: "2026-08-14",
+    registrationEnd: "2026-08-28",
+    lastVerified: "2026-11-10",
   },
 ];

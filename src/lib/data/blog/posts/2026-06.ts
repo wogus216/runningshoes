@@ -1,5 +1,4 @@
 import { BlogPost } from '@/types/blog';
-import { MAJOR_DEADLINES, md } from '../major-deadlines';
 
 export const posts_2026_06: BlogPost[] = [
   {
@@ -1879,144 +1878,69 @@ export const posts_2026_06: BlogPost[] = [
     updatedAt: "2026-11-10",
   },
   {
-    id: 'london-marathon-2027-registration-guide',
-    slug: 'london-marathon-2027-registration-guide',
-    title: '런던마라톤 2027 — 발롯 결과 발표(7월 초)·사상 첫 이틀 개최 확정 | 133만 신청 역대 최다, 자선 경로·참가비 £225 한국 러너 가이드',
-    description: '2027 런던마라톤이 4월 24~25일 사상 첫 이틀에 걸쳐 열립니다. 일반 추첨(2026-05-01 마감)에 역대 최다 1,338,544명이 몰렸고, 결과는 7월 초부터 배치별로 이메일·참가 계정에 통보됩니다. 발롯을 놓쳤다면 자선(£2,000~2,800)이 현실 경로. 평지 빠른 코스라 PB·메이저 데뷔에 우호적, 영국 ETA(£20)·참가비 £225까지 한국 러너 기준으로 정리했습니다.',
-    thumbnail: '/images/blog/london-marathon-2027-registration-guide.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-06-13',
-    updatedAt: '2026-07-03',
+    id: "london-marathon-2027-registration-guide",
+    slug: "london-marathon-2027-registration-guide",
+    title: "2027 런던마라톤 신청 이후: 배정 날짜·7월 납부 마감·국제 참가비 £275",
+    description: "발롯 결과는 7월 9일, 참가 확정 기한은 7월 31일 16시 BST였습니다. 이틀 개최여도 개인은 하루만 뛰며 배정 날짜 변경이 안 됩니다. 현행 국제 참가비와 공식 대안을 확인합니다.",
+    thumbnail: "/images/blog/verified-london-marathon-2027-registration-guide-20261110.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-06-13",
+    updatedAt: "2026-11-10",
     event: {
-      name: '런던마라톤 2027 (이틀 개최)',
-      startDate: '2027-04-24',
-      endDate: '2027-04-25',
-      location: { name: '런던 (그리니치 출발)', address: '영국 런던' },
-      organizer: 'London Marathon Events',
-      url: 'https://www.londonmarathonevents.co.uk/',
+      "name": "2027 Double TCS London Marathon",
+      "startDate": "2027-04-24",
+      "endDate": "2027-04-25",
+      "location": {
+        "name": "London",
+        "address": "London, United Kingdom"
+      },
+      "organizer": "London Marathon Events",
+      "url": "https://www.londonmarathonevents.co.uk/london-marathon/2027-tcs-london-marathon-double-faqs"
     },
-    category: 'news' as const,
-    readingTime: 9,
-    tags: ['런던마라톤', '런던마라톤 2027', '세계 6대 마라톤', '메이저 마라톤', '마라톤 발롯', '자선 마라톤', '영국 ETA', '평지 PB', '식스스타', '마라톤 추첨'],
-    content: `
-<div class="deadline-strip">2027 런던마라톤 발롯 결과는 <strong>7월 초부터 배치별 순차 이메일로 발송됐습니다</strong>(단일 발표일이 없는 방식이라 시점이 사람마다 달랐습니다). 메일을 못 받았더라도 <strong>참가 계정에서 당락을 확인할 수 있습니다.</strong> 2027 대회는 사상 처음으로 <strong>4월 24~25일 이틀</strong>에 걸쳐 열립니다. 발롯을 놓쳤거나 떨어졌다면 <strong>자선(charity) 슬롯</strong>이 현실적인 잔여 경로입니다 — 단체별로 모금액과 마감이 제각각이라 개별 확인이 필요합니다.</div>
-
-<div class="tldr">
-  <h2>3줄 요약</h2>
-  <ul>
-    <li><strong>2027 대회는 사상 첫 이틀 개최 — 4월 24일(토)·25일(일).</strong> 당첨자는 두 날 중 하나에 무작위 배정됩니다. 일반 추첨 접수는 2026년 5월 1일 마감됐고, 결과는 <strong>7월 초부터 배치별로</strong> 이메일·참가 계정에 통보됩니다.</li>
-    <li><strong>지금 들어갈 길은 자선(charity) 슬롯.</strong> 단체별로 다르지만 대체로 모금 약정 <strong>£2,000~£2,800대</strong>를 받는 조건입니다. 발롯을 놓쳤거나 떨어졌다면 차기(2028) 발롯을 기다리는 게 일반적입니다.</li>
-    <li><strong>국제 러너 참가비 £225</strong>(탄소상쇄 포함, 약 39~40만원). 코스는 큰 오르막 없는 <strong>평지·빠른 코스</strong>라 PB와 6대 메이저 데뷔에 우호적입니다. 한국 여권은 영국 <strong>ETA(£20)</strong>가 필수입니다.</li>
-  </ul>
-</div>
-
-<div class="callout warning">
-  <strong>마감·금액 먼저 체크하세요.</strong> 2027 일반 추첨 접수는 끝났습니다(2026-05-01 마감). 또 영국 입국 전자여행허가 ETA 요금이 <strong>2026년 4월 8일부로 £16에서 £20로 인상</strong>됐습니다. 과거 자료에 £16으로 적힌 경우가 많으니 현재 기준 £20로 준비하세요.
-</div>
-
-<h2>1. 2027 런던마라톤, 지금 어디까지 왔나</h2>
-<p>런던마라톤은 도쿄·보스턴·시카고·뉴욕·베를린과 함께 세계 6대 메이저(Abbott World Marathon Majors) 중 하나입니다. 2027년 대회는 <strong>사상 처음으로 이틀에 걸쳐</strong> 열립니다 — <strong>4월 24일(토)·25일(일)</strong>. 당첨자는 두 날 중 하나에 무작위로 배정되고, 배정되지 않은 날에는 버추얼(가상) 완주 옵션이 주어집니다. 일반 러너가 가장 먼저 노리는 길은 무작위 추첨인 <strong>일반 발롯(ballot)</strong>인데, 2027 대회용 발롯 접수창은 <strong>2026년 4월 24일에 열려 5월 1일에 마감</strong>됐습니다.</p>
-<p>지금(7월 초)은 <strong>결과가 발표되기 시작한 기간</strong>입니다. 공식 안내는 신청자에게 <strong>7월 초부터 배치별로 순차 이메일</strong>을 보내며, 단일 발표일 없이 참가 계정(엔트리 어카운트)에서도 당락을 확인할 수 있습니다. 합격 통보에는 참가비 결제 안내가, 미당첨 통보에는 차기 안내가 함께 옵니다. 발롯은 이름 그대로 <strong>완전 무작위 추첨</strong>이라, 떨어졌다고 실력이 부족한 게 아니라는 뜻이기도 합니다.</p>
-<p>런던 발롯은 세계에서 가장 경쟁이 치열한 마라톤 추첨으로 꼽힙니다. <strong>2027 대회 발롯에는 역대 최다인 1,338,544명(약 133만 명)</strong>이 몰린 것으로 공식 발표됐습니다. 직전 2026 대회(약 113만 명) 기록을 다시 넘어선 수치로, 당첨 확률은 그만큼 낮습니다. "130만 명 넘게 신청하는 추첨"이라는 감각을 가져가면 충분합니다.</p>
-
-<h2>2. 발롯을 놓쳤다면 — 자선(charity) 잔여 경로</h2>
-<p>접수창을 놓쳤거나 추첨에서 떨어졌을 때, 한국 러너에게 현실적으로 남는 길은 <strong>자선단체(charity) 슬롯</strong>입니다. 자선단체가 확보한 출전권을 받는 대신, 그 단체를 위해 일정 금액 이상을 모금하겠다고 약정하는 방식입니다.</p>
-<p>모금 최소액은 <strong>단체마다 다릅니다</strong>. 공식적으로 정해진 단일 최소액은 없고, 확인되는 사례는 대체로 <strong>£2,000~£2,800대</strong>에 분포합니다. 일부 단체는 여기에 별도 등록비(예: £125 안팎)를 추가로 받기도 합니다.</p>
-
-<table>
-  <thead>
-    <tr><th>자선단체(예시)</th><th>최소 모금 약정</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>The Royal Parks</td><td>£2,000</td></tr>
-    <tr><td>GOSH / Tommy's</td><td>£2,500</td></tr>
-    <tr><td>Acorns</td><td>£2,600</td></tr>
-    <tr><td>Guy's Cancer</td><td>£2,750</td></tr>
-    <tr><td>Save the Children</td><td>£2,800 (+ 등록비 약 £125)</td></tr>
-  </tbody>
-</table>
-<p>위 금액은 어디까지나 예시이며, 단체별로 매년 바뀝니다. 자선 슬롯은 좋은 일에 기여하면서 출전권을 얻는 길이지만, 모금 약정은 <strong>실제로 채워야 하는 책임</strong>이라는 점을 분명히 이해하고 신청하세요. 미달 시 본인이 부담해야 하는 경우가 많습니다.</p>
-
-<h2>3. GFA·Championship — 한국 러너에겐 사실상 비해당</h2>
-<p>런던에는 기록으로 들어가는 트랙도 있습니다. 하지만 결론부터 말하면 <strong>대부분의 한국 러너에게는 현실 경로가 아닙니다</strong>. 영국 거주자·영국 육상 클럽 회원 중심으로 설계돼 있기 때문입니다.</p>
-<ul>
-  <li><strong>Good for Age(GFA):</strong> 연령대별 기준 기록을 충족하면 우선 신청 자격을 주는 제도입니다. 2027 대회 창은 공식상 <strong>"가을(autumn)에 발표"</strong> 상태로, 정확한 접수 일정과 기준은 아직 확정 공개되지 않았습니다. 아래는 <strong>2026 기준 참고치</strong>입니다.</li>
-  <li><strong>Championship Entry:</strong> 남자 <strong>sub 2:38:00</strong>, 여자 <strong>sub 3:10:00</strong>에 더해 <strong>영국 육상(UK Athletics) 소속 클럽 회원</strong> 요건이 붙습니다. 한국 일반 러너에게는 정보 차원의 언급일 뿐입니다.</li>
-</ul>
-
-<table>
-  <thead>
-    <tr><th>연령대 (Good for Age, 2026 참고)</th><th>남자</th><th>여자</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>18–39세</td><td>sub 2:52</td><td>sub 3:38</td></tr>
-    <tr><td>40–44세</td><td>sub 2:57</td><td>sub 3:43</td></tr>
-    <tr><td>45–49세</td><td>sub 3:02</td><td>sub 3:46</td></tr>
-    <tr><td>50–54세</td><td>sub 3:07</td><td>sub 3:53</td></tr>
-    <tr><td>55–59세</td><td>sub 3:12</td><td>sub 3:58</td></tr>
-    <tr><td>60–64세</td><td>sub 3:34</td><td>sub 4:23</td></tr>
-  </tbody>
-</table>
-<p>정리하면, 한국에서 출발하는 러너의 현실적인 두 갈래는 <strong>발롯</strong> 아니면 <strong>자선</strong>입니다. 기록 트랙은 "혹시 영국 클럽에 적을 둘 일이 있다면" 정도로만 기억해 두세요.</p>
-
-<h2>4. 참가비·결과 발표 — 숫자로 정리</h2>
-<p>2027 런던마라톤의 핵심 일정과 비용을 한 표로 모았습니다. 환율은 £1 ≈ 1,750원 근사로 잡은 어림값이며, 실제 결제 시점 환율에 따라 달라집니다.</p>
-
-<table>
-  <thead>
-    <tr><th>항목</th><th>내용</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>대회일</td><td><strong>2027년 4월 24일(토)·25일(일) — 사상 첫 이틀 개최</strong></td></tr>
-    <tr><td>일반 발롯 접수창</td><td>2026-04-24 ~ 05-01 (마감, 역대 최다 1,338,544명)</td></tr>
-    <tr><td>발롯 결과 발표</td><td>2026년 7월 초부터 배치별 (이메일·참가 계정)</td></tr>
-    <tr><td>국제 러너 참가비</td><td>£225 (탄소상쇄 포함) ≈ 약 39~40만원</td></tr>
-    <tr><td>자선 슬롯 모금 약정</td><td>대체로 £2,000~£2,800대 (단체별 상이)</td></tr>
-    <tr><td>코스 성격</td><td>평지·빠른 코스 (큰 오르막 없음)</td></tr>
-  </tbody>
-</table>
-
-<div class="callout info">
-  <strong>한 줄 메모.</strong> 2028 대회 발롯이 언제 열릴지는 아직 공식 발표가 없습니다. 다만 직전 패턴은 대회 직후인 봄에 다음 발롯을 여는 흐름이었습니다. <strong>단정은 금물</strong>이지만, 발롯을 노린다면 2027년 4월 말~5월쯤 런던마라톤 공식 채널을 다시 확인하는 습관을 들여 두세요.
-</div>
-
-<h2>5. 코스 — 평지·빠른 코스라는 진짜 의미</h2>
-<p>런던 코스는 <strong>그리니치/블랙히스에서 출발</strong>합니다. 초반은 살짝 내리막으로 흐르고, 약 10km 부근에서 범선 <strong>컷티사크(Cutty Sark)</strong>를 지납니다. 중간 지점에서 상징적인 <strong>타워브리지</strong>를 건너고, 이후 카나리워프와 아일오브독스의 빌딩 숲을 지나 임뱅크먼트를 따라 도심으로 들어옵니다. 마지막은 버킹엄궁 앞 <strong>더몰(The Mall)</strong>에서 피니시합니다.</p>
-<p>"평지·빠른 코스(flat & fast)"라는 평판은 과장이 아닙니다. 전 구간에 걸쳐 큰 오르막이 없고, 그나마 가장 까다로운 구간이 타워브리지 진입부 정도입니다. 그래서 <strong>PB(개인 최고기록) 도전</strong>이나 <strong>6대 메이저 첫 데뷔</strong>에 특히 우호적입니다. 첫 메이저 메달을 어느 대회로 시작할지 고민이라면, 런던은 "코스가 발목을 잡지 않는" 안정적인 선택지입니다. 6대 메이저 메달 도전을 큰 그림으로 그리고 있다면 <a href="/blog/six-star-medal-challenge-korea-guide">식스 스타 메달 챌린지 가이드</a>를 함께 읽어 보세요. 코스 난이도 비교가 궁금하다면 <a href="/blog/race-distance-difficulty-guide-2026">거리·난이도 가이드</a>도 참고가 됩니다.</p>
-
-<h2>6. 한국에서 출발하는 러너를 위한 체크리스트</h2>
-<p>인천에서 떠나는 러너 기준으로, 항공·시차·입국 서류·신발까지 실무적인 부분을 정리합니다.</p>
-<ul>
-  <li><strong>항공편(인천 → 런던 히드로):</strong> 직항 기준 약 <strong>13시간 30분~15시간</strong>(평균 약 14시간 30분). 4월 말 대회라 봄 성수기와 겹치는 만큼 항공권은 일찍 잡을수록 유리합니다.</li>
-  <li><strong>시차:</strong> 대회 시기(4월)에는 영국이 서머타임(BST)을 적용해 <strong>한국이 런던보다 8시간 빠릅니다</strong>. 도착 후 며칠은 시차 적응에 쓰고, 대회 당일 컨디션을 맞추는 게 좋습니다.</li>
-  <li><strong>영국 ETA(전자여행허가) 필수:</strong> 한국 여권 소지자는 <strong>2025년 1월 8일부터 ETA 의무</strong> 대상입니다(이후 전면 시행). 요금은 <strong>2026년 4월 8일부로 £16에서 £20로 인상</strong>됐으니 현재 기준 <strong>£20</strong>로 준비하세요. 유효기간은 2년, 단기 방문(최대 6개월)에 적용됩니다. 발급은 입국 전 미리 신청해 두는 게 안전합니다.</li>
-  <li><strong>결제 수단:</strong> 참가비·자선 모금 결제는 한국 발급 해외결제 가능 카드로 진행하면 됩니다. 환율과 해외결제 수수료를 감안해 한도와 잔액을 미리 확인하세요.</li>
-</ul>
-<p>ETA 신청 절차, 솅겐(유럽 본토 무비자)과의 차이, 여권 잔여기간 같은 서류 디테일은 매번 헷갈리는 부분입니다. 이 부분은 <a href="/blog/overseas-marathon-travel-checklist-korea">해외 마라톤 원정 준비 매뉴얼</a>에 한 번에 정리해 뒀으니, 출발 전 체크리스트로 활용하세요. 참고로 같은 배치로 함께 다루는 <a href="/blog/berlin-marathon-2026-guide">베를린마라톤</a>은 독일(솅겐 무비자, ETIAS는 2026년 현재 아직 미시행)이라 입국 서류 요건이 영국과 다릅니다 — 두 대회를 함께 노린다면 서류 준비를 분리해서 챙기세요.</p>
-<p><strong>신발은?</strong> 평지·빠른 코스이고 풀코스 PB를 노리기 좋은 무대인 만큼, 카본 플레이트 레이싱화를 진지하게 고려할 가치가 있습니다. 대표적으로 <a href="/shoes/nike-alphafly-3">나이키 알파플라이 3</a>가 풀코스 PB 도전에 자주 거론됩니다. 다만 슈퍼슈즈는 충분한 적응 주행을 거친 뒤 대회에 투입하는 게 안전합니다.</p>
-
-<div class="major-next">
-  <h2>다음 단계</h2>
-  <div class="cards">
-    <a class="card" href="/blog/berlin-marathon-2026-guide">
-      <h3>베를린마라톤 2026 가이드</h3>
-      <p>세계에서 가장 빠른 코스로 통하는 또 하나의 메이저. 독일 입국(솅겐 무비자)과 접수 경로를 정리했습니다.</p>
-    </a>
-    <a class="card" href="/blog/new-york-marathon-2026-registration-guide">
-      <h3>뉴욕마라톤 2026 등록 가이드</h3>
-      <p>추첨·자선·기록 보장까지, 또 다른 6대 메이저의 신청 경로를 한국 러너 시점으로 풀었습니다.</p>
-    </a>
-    <a class="card" href="/blog/overseas-marathon-travel-checklist-korea">
-      <h3>해외 마라톤 원정 매뉴얼</h3>
-      <p>영국 ETA·솅겐·항공·시차·결제까지. 인천 출발 러너를 위한 출국 전 종합 체크리스트.</p>
-    </a>
-  </div>
-</div>
-
-<p>🗺️ 6대 메이저 전체 비교와 "어디부터 갈까"가 궁금하다면 <a href="/blog/world-marathon-majors-guide-2026">세계 6대 마라톤 완전정복</a>에서 한눈에 보세요.</p>
-
-<p class="disclaimer">본 글의 일정·요금·기준은 2026년 6월 기준 공식 정보와 다수 교차검증을 바탕으로 정리했으며, 향후 대회 운영 측 발표에 따라 변경될 수 있습니다. 발롯 당락은 무작위 추첨으로 결정되며 당첨률은 보장되지 않습니다. 자선 슬롯의 모금 약정 금액, 2027 GFA·자선 접수 일정, 2028 발롯 일정은 단체·연도별로 달라지므로 신청 전 반드시 런던마라톤 공식 및 각 단체 채널에서 최신 정보를 확인하세요. 입국 서류(ETA 등)는 출발 전 영국 정부 공식 안내를 우선합니다.</p>
-`,
+    category: "news",
+    readingTime: 5,
+    tags: [
+      "런던마라톤",
+      "런던마라톤 2027",
+      "메이저 마라톤",
+      "마라톤 발롯",
+      "자선 마라톤",
+      "식스스타",
+      "마라톤 추첨",
+      "월드 마라톤 메이저스"
+    ],
+    content: `<p><small>2026년 11월 10일 주최·공식 신청처 원문 기준. 개인 당첨·납부 상태는 본인 계정에서 확인하세요.</small></p>
+<p>2027 런던은 4월 24·25일 두 날에 열린다. 먼저 확인할 것은 <strong>내 출전일과 참가 확정 여부</strong>다. <a href="https://www.londonmarathonevents.co.uk/london-marathon/2027-tcs-london-marathon-double-faqs" target="_blank" rel="noopener noreferrer">Double 공식 FAQ</a>는 참가자 한 명이 현장 대회를 뛰는 날은 하루이며 배정 날짜를 바꿀 수 없다고 안내한다. 함께 신청한 친구와 날짜가 다를 수도 있어 숙소·이동을 같은 일정으로 확정하기 전에 각자의 배정을 대조해야 한다.</p>
+<h2>발롯 결과를 받는 일과 참가를 확정하는 일</h2>
+<p><a href="https://www.londonmarathonevents.co.uk/ballot" target="_blank" rel="noopener noreferrer">공식 발롯 안내</a>에 따르면 결과는 2026년 7월 9일 발송됐고 당첨자는 7월 31일 16:00 BST까지 정보를 확인해 출전을 확보해야 했다. 한국시간으로는 8월 1일 00:00이라는 시차 계산이다. 지금은 이 기한이 지났다. FAQ는 발롯을 다시 열지 않는다고 설명한다.</p>
+<p>확정 메일은 Let's Do This에서 오며, 메일이 안 보이면 해당 계정에서 등록 상태를 확인하는 경로를 제시한다. 오래된 ‘7월 초 발표 예정’ 문구만 보고 계속 기다리거나, 결과 메일 한 통을 최종 확정으로 간주하지 말자.</p>
+<h2>해외 참가비와 다른 경로의 비용</h2>
+<p>현재 발롯 페이지의 국제 참가비는 <strong>£275</strong>이며 국제 이동에 대한 탄소 상쇄 비용을 포함한다고 적혀 있다. 기존 글의 £225를 이 현행 안내로 갱신했다. 이는 국제 발롯 참가비로, 자선 모금액이나 여행 패키지 전체 가격을 뜻하지 않는다.</p>
+<p>발롯을 놓친 참가자에게 공식은 자선 경로를 안내한다. <a href="https://www.londonmarathonevents.co.uk/london-marathon/international-participants" target="_blank" rel="noopener noreferrer">공식 국제 여행사 목록</a>도 별도 경로다. 각 단체의 선발·모금 조건과 여행사의 참가권 포함 여부·판매 가능 물량은 개별 확인 대상이다. 목록에 있다는 이유만으로 한국 거주자의 신청 승인이나 현재 빈자리를 보장할 수 없다.</p>
+<h2>토요일과 일요일의 종료 안내가 다르다</h2>
+<p>Double FAQ는 토요일 결승선 종료를 17:30으로, 일요일 Green Park의 보조 결승선 종료를 23:59:59로 안내한다. 토요일 최대 완주 가능 시간은 7시간 45분으로 설명한다. 토요일 09:00·일요일 09:30 출발은 아직 예상 시각이라는 표현이므로 확정 출발 시각으로 저장하지 말자.</p>
+<p>친구와 다른 날에 배정됐다고 서로 배번을 바꾸는 것도 금지다. 관전 동행 일정은 각자의 배정일, 배번호 수령 안내, 출발 웨이브가 확인된 뒤 나눠 잡는 편이 판단하기 쉽다. Running Show 하루 추가 운영은 FAQ상 검토 단계이므로 최종 수령 일정이 나오면 다시 확인해야 한다.</p>
+<h2>지금 확인할 순서</h2><ol><li>본인 등록 계정에서 출전일·확정 상태를 확인한다.</li><li>기한 내 절차를 마쳤는지 메일·납부 기록을 대조한다.</li><li>아직 참가권이 없다면 공식 자선·여행 경로에서 선발과 총비용 조건을 먼저 읽는다.</li><li>출발 예상 시각과 확정 참가자 안내를 구분해 이동 계획을 세운다.</li></ol>
+<p>2027의 이틀 형식은 해당 연도에 한정한 발표다. 2028에도 같다고 전제하거나 전체 예정 참가자 수로 개인 당첨 확률을 계산하지 않는다.</p>
+<h2>자주 묻는 질문</h2><h3>두 날 모두 현장에서 뛸 수 있나요?</h3><p>개인은 배정된 하루만 참가합니다. 공식 FAQ는 날짜 변경과 다른 참가자와의 배번 교환을 허용하지 않습니다.</p><h3>아직 발롯 결과를 기다려야 하나요?</h3><p>공식은 7월 9일 결과 발송, 7월 31일 16:00 BST 참가 확정 기한을 안내합니다. 지금은 기한이 지났으며 본인 등록 계정에서 확정 상태를 확인해야 합니다.</p><h3>국제 참가비는 £225인가요?</h3><p>11월 10일 대조한 현행 발롯 안내는 £275이며 국제 이동 탄소 상쇄 비용을 포함합니다. 자선·여행 패키지 총액과는 다릅니다.</p><h3>출발 시각도 확정됐나요?</h3><p>공식 FAQ의 토요일 09:00·일요일 09:30은 예상 시각입니다. 본인 웨이브와 최종 참가자 안내를 다시 확인해야 합니다.</p>`,
+    faqs: [
+      {
+        "question": "두 날 모두 현장에서 뛸 수 있나요?",
+        "answer": "개인은 배정된 하루만 참가합니다. 공식 FAQ는 날짜 변경과 다른 참가자와의 배번 교환을 허용하지 않습니다."
+      },
+      {
+        "question": "아직 발롯 결과를 기다려야 하나요?",
+        "answer": "공식은 7월 9일 결과 발송, 7월 31일 16:00 BST 참가 확정 기한을 안내합니다. 지금은 기한이 지났으며 본인 등록 계정에서 확정 상태를 확인해야 합니다."
+      },
+      {
+        "question": "국제 참가비는 £225인가요?",
+        "answer": "11월 10일 대조한 현행 발롯 안내는 £275이며 국제 이동 탄소 상쇄 비용을 포함합니다. 자선·여행 패키지 총액과는 다릅니다."
+      },
+      {
+        "question": "출발 시각도 확정됐나요?",
+        "answer": "공식 FAQ의 토요일 09:00·일요일 09:30은 예상 시각입니다. 본인 웨이브와 최종 참가자 안내를 다시 확인해야 합니다."
+      }
+    ],
   },
   {
     id: "berlin-marathon-2026-guide",
@@ -2551,123 +2475,62 @@ export const posts_2026_06: BlogPost[] = [
 `,
   },
   {
-    id: 'sydney-marathon-2026-registration-guide',
-    slug: 'sydney-marathon-2026-registration-guide',
-    title: '시드니마라톤 2026 신청 가이드 (대회 종료) — 2027 추첨은 9월 29일 | PB보다 식스스타·하버브리지 경관 코스',
-    description: '2026 시드니마라톤은 8월 30일에 끝났습니다. 다음 사이클인 2027 일반추첨이 한국시각 9월 29일(화) 오전 9시에 열립니다 — 최신 정보는 2027 추첨 가이드에서 보세요. 이 글은 2026 사이클의 신청 경로(자선·공식 여행 패키지) 기록이며, 자선 모금 구조와 인천 직항 10시간·시차·호주 ETA, 시드니가 PB 코스가 아닌 이유(누적 +313m)는 2027에도 그대로 적용됩니다.',
-    thumbnail: '/images/blog/sydney-marathon-2026-registration-guide.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-06-13',
-    updatedAt: '2026-09-01',
+    id: "sydney-marathon-2026-registration-guide",
+    slug: "sydney-marathon-2026-registration-guide",
+    title: "2026 시드니마라톤 종료 후: 내 결과 조회와 2027 신청 안내를 나눠 보기",
+    description: "8월 30일 열린 2026 대회 결과는 공식 계측 사이트에서 확인합니다. 남자 고베나 2:04:42·여자 젭치르치르 2:18:31. 2027 추첨 결과·요금·참가권은 다음 연도 안내로 구분합니다.",
+    thumbnail: "/images/blog/verified-sydney-marathon-2026-registration-guide-20261110.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-06-13",
+    updatedAt: "2026-11-10",
     event: {
-      name: '시드니마라톤 2026',
-      startDate: '2026-08-30',
-      location: { name: '시드니 (밀슨스포인트 출발)', address: '호주 시드니' },
-      organizer: 'TCS Sydney Marathon',
-      url: 'https://sydneymarathon.com/',
+      "name": "TCS Sydney Marathon 2026",
+      "startDate": "2026-08-30",
+      "location": {
+        "name": "Sydney",
+        "address": "Sydney, NSW, Australia"
+      },
+      "organizer": "TCS Sydney Marathon",
+      "url": "https://www.multisportaustralia.com.au/races/sydney-marathon-2026"
     },
-    category: 'news' as const,
-    readingTime: 8,
-    tags: ['시드니마라톤', '시드니마라톤 2026', '세계 7대 마라톤', '메이저 마라톤', '식스스타', '마라톤 해외원정', '자선 마라톤', '하버브리지', '마라톤 추첨', '해외 마라톤 신청'],
-    content: `
-<div class="deadline-strip"><span class="dl-badge">🏁 대회 종료</span><span class="dl-text"><strong>2026 시드니마라톤은 8월 30일(일)에 끝났습니다.</strong> 다음은 2027 — 일반추첨은 <strong>한국시각 9월 29일(화) 오전 9시 ~ 10월 19일(월) 오전 8시</strong>에 진행돼 마감됐고(응모 무료·무작위 추첨), 결과는 <strong>11월 3일</strong> 통보됩니다. 최신 정보는 <a href="/blog/sydney-marathon-2027-registration-guide"><strong>시드니마라톤 2027 추첨 가이드</strong></a>를 보세요.</span></div>
-
-<div class="callout info">
-  <span class="callout-icon">📌</span>
-  <div class="callout-body">
-    <p class="callout-title">이 글은 2026 사이클의 기록입니다</p>
-    <p>아래 내용은 2026년 6월 시점에 "추첨이 끝난 뒤 남은 경로"를 정리한 것이고, <strong>그 대회는 이미 치러졌습니다.</strong> 지금 신청할 수 있는 것은 2027 대회(2027년 8월 29일)이며 <strong>일반추첨은 10월 19일 마감돼 11월 3일 결과 통보를 기다리는 중입니다</strong> — 추첨 일정과 낙첨 후 자선·여행 경로는 <a href="/blog/sydney-marathon-2027-registration-guide">2027 추첨 가이드</a>를 확인하세요. 다만 이 글의 <strong>코스 성격(누적 +313m·PB 코스가 아닌 이유), 인천 직항 10시간·시차·호주 ETA, 자선 경로의 비용 구조</strong>는 2027에도 그대로 적용되므로 원정 준비용으로는 여전히 유효합니다.</p>
-  </div>
-</div>
-
-<div class="tldr"><span class="tldr-label">3줄 요약</span><ul><li><strong>일반추첨은 끝났다.</strong> 2025-10-17 마감·2025-10-29 결과 발표 완료. 남은 합법 경로는 공식 자선과 공식 여행 패키지 2가지뿐.</li><li><strong>막차는 "마감일"이 아니라 "자리 소진".</strong> 자선·패키지 모두 통일된 마감일이 공식 발표되지 않았고, 일부 자선은 이미 "마감(CLOSED)" 표기 — 서두를수록 유리.</li><li><strong>시드니는 PB 코스가 아니다.</strong> 누적 상승 +313m, 하버브리지·옥스퍼드 스트리트 두 오르막. 기록보다 식스스타 메달·경관이 목적인 대회.</li></ul></div>
-
-<div class="callout warning"><span class="callout-icon">⚠️</span><div class="callout-body"><p class="callout-title">먼저 알아둘 것 — "당첨률" 같은 수치는 공식에 없습니다</p><p>2026 시드니마라톤은 Abbott World Marathon Majors의 7번째 메이저(2025년 합류)입니다. 일반추첨(public ballot)은 무작위 추첨이었고 이미 마감됐습니다. 인터넷에 떠도는 "당첨 확률 몇 %" 류 수치는 공식 근거가 없으니 의사결정 기준으로 삼지 마세요. 이 글은 공식 페이지에서 확인된 사실만 정리했고, 자선 모금액·환율은 변동분이라 "약·범위"로만 적었습니다.</p></div></div>
-
-<h2>1. 일반추첨은 끝났다 — 지금 남은 두 갈래</h2>
-
-<p>2026 시드니마라톤은 <strong>2026년 8월 30일(일)</strong> 열립니다. 예상 참가 규모 약 40,000명으로 호주 최대 마라톤이죠. 문제는 가장 쉬운 진입로였던 일반추첨이 닫혔다는 점입니다.</p>
-
-<p>일반추첨은 2025-09-24 시작해 <strong>2025-10-17 23:59(AEST)에 마감</strong>됐고, 결과는 <strong>2025-10-29</strong>에 발표됐습니다. 공식 안내도 못을 박았습니다 — <em>"추첨이 마감된 지금, 공식 여행 패키지는 출전권을 확보할 단 두 가지 남은 방법 중 하나입니다."</em></p>
-
-<p>즉 지금 한국에서 정식으로 배번을 받는 길은 다음 둘뿐입니다.</p>
-
-<table>
-<thead><tr><th>경로</th><th>한국에서 신청</th><th>대략적 비용 성격</th><th>마감</th></tr></thead>
-<tbody>
-<tr><td><strong>① 공식 국제 자선(Charity)</strong></td><td>가능</td><td>등록비 + 최소 모금액(자선마다 상이, USD/GBP 청구 多)</td><td>통일 마감일 미발표 — 선착순 소진형</td></tr>
-<tr><td><strong>② 공식 여행 패키지</strong></td><td>가능</td><td>보장 배번 + 숙박 + 현지지원 묶음(가격 공식 미발표)</td><td>좌석 소진 시 마감</td></tr>
-</tbody>
-</table>
-
-<p>두 경로 다 "정해진 마감일"보다 <strong>자리가 먼저 없어지는</strong> 구조입니다. 막차라는 표현이 과장이 아니라, 실제로 일부 자선은 이미 신청을 닫았습니다.</p>
-
-<h2>2. ① 공식 자선 — 한국에서 바로 신청 가능</h2>
-
-<p>공식 국제 자선 페이지는 미국·영국·아일랜드·뉴질랜드 등 해외 자선 단체를 묶어 <strong>USD/GBP 모금 티어제</strong>로 운영합니다. 최소 모금액은 티어별로 나뉘는데, 확인된 기준은 대략 이렇습니다.</p>
-
-<table>
-<thead><tr><th>티어</th><th>최소 모금액(국제 자선)</th></tr></thead>
-<tbody>
-<tr><td>Platinum</td><td>USD $3,000 / £1,800 부터</td></tr>
-<tr><td>Gold</td><td>USD $6,000 / £2,000</td></tr>
-<tr><td>Silver</td><td>USD $3,000~5,000 / £1,800~2,500</td></tr>
-<tr><td>Bronze·Listed</td><td>USD $3,000~10,000 / £1,800~3,500</td></tr>
-</tbody>
-</table>
-
-<p>구체적인 예로, 영국 <strong>Save the Children UK</strong>는 등록비 <strong>£50 + 최소 모금 £1,500</strong> 구조입니다(국제 러너 참가 제한 명시 없음, 다만 "빨리 마감된다"는 안내가 붙어 있습니다). 그 외 Garvan·Lifeline Bondi·Can Too 같은 단체는 보통 AUD $3,000~5,000 수준이지만, 이들은 <strong>호주 국내 자선</strong>이라 한국 러너는 위의 국제 자선 페이지를 통하는 편이 깔끔합니다.</p>
-
-<div class="callout info"><span class="callout-icon">💡</span><div class="callout-body"><p class="callout-title">금액 감 잡기 (환율은 근사·범위로만)</p><p>2026년 6월 기준 1 GBP ≈ 1,700~1,800원, 1 USD ≈ 1,350~1,400원 선입니다. 영국 자선의 £1,500 모금이면 대략 <strong>250만~270만 원</strong>, 국제 자선 USD $3,000 티어면 대략 <strong>400만~420만 원</strong> 수준이라고 보면 됩니다. 모금액은 "기부로 채워 넣는 목표치"라서 본인 모금 활동으로 일부 충당이 가능하다는 점도 함께 고려하세요.</p></div></div>
-
-<h2>3. ② 공식 여행 패키지 — 배번이 "보장"되는 길</h2>
-
-<p>추첨 마감 후 공식이 직접 언급한 "남은 두 경로" 중 다른 하나가 공식 여행 패키지입니다. 보장 배번에 숙박과 현지 지원을 묶은 상품으로, 대표 오퍼레이터는 <strong>Marathon Tours & Travel</strong>입니다. 오세아니아·동아시아 지역 오피스를 운영하고 공식 페이지에 70여 개국 100곳 이상의 여행 파트너가 명시돼 있어, 한국에서도 글로벌 패키지 형태로 접근할 수 있습니다.</p>
-
-<div class="callout warning"><span class="callout-icon">⚠️</span><div class="callout-body"><p class="callout-title">패키지 가격은 공식에 없습니다 — 견적은 직접</p><p>패키지 가격·보증금·예약 마감일은 공식 페이지에 공개돼 있지 않습니다. 본문에 특정 금액을 적지 않는 이유이기도 합니다. 정확한 비용은 오퍼레이터에 직접 견적을 요청하세요. 자선이 "모금으로 채우는 부담", 패키지가 "확정 비용으로 한 번에 묶는 안심"이라고 성격을 나눠 생각하면 선택이 쉬워집니다.</p></div></div>
-
-<h2>4. 코스 — 기록 노리는 대회가 아니다</h2>
-
-<p>시드니마라톤을 "PB용"으로 잡으면 실망합니다. 출발은 North Sydney, 초반에 <strong>하버브리지</strong>를 건너고 마지막은 <strong>오페라하우스</strong> 앞에서 끝나는 세계적 경관 코스인 대신, 고저차가 만만치 않습니다.</p>
-
-<table>
-<thead><tr><th>항목</th><th>수치</th></tr></thead>
-<tbody>
-<tr><td>대회일</td><td>2026-08-30(일)</td></tr>
-<tr><td>예상 규모</td><td>약 40,000명 (호주 최대)</td></tr>
-<tr><td>누적 상승 / 하강</td><td>+313m / −396m (순 −83m)</td></tr>
-<tr><td>주요 오르막</td><td>초반 하버브리지 + 후반 옥스퍼드 스트리트</td></tr>
-</tbody>
-</table>
-
-<p>2025년 코스 개편으로 달링하버·피어몬트 구간의 급커브와 U턴이 빠지면서 이전보다 빠르고 직선화됐지만, 공식·가이드 모두 여전히 기록 코스로는 권하지 않습니다. 정리하면 <strong>"기록은 베를린·시카고에서, 시드니는 경관과 식스스타 메달을 위해"</strong>가 정직한 포지셔닝입니다.</p>
-
-<div class="callout info"><span class="callout-icon">👟</span><div class="callout-body"><p class="callout-title">시드니용 카본화는 "평지 PB용"과 결이 다르다</p><p>롤링·오르막이 섞인 시드니 코스에는, 순수 평지 PB용으로 극단적으로 세팅된 신발보다 <strong>업힐·언듈레이팅 대응이 안정적인 카본화</strong>가 맞습니다. 그래서 시드니는 <a href="/shoes/on-cloudboom-strike">온 클라우드붐 스트라이크</a>처럼 균형 잡힌 카본화를 추천합니다. 반대로 평지 PB 코스인 시카고라면 더 공격적인 세팅이 어울리죠(아래 분기 CTA 참고).</p></div></div>
-
-<h2>5. 한국 러너 실전 — 항공·시차·신청 실수·환율</h2>
-
-<p>해외 메이저는 "신청"보다 "준비물 디테일"에서 사고가 납니다. 시드니용 고정 체크리스트입니다.</p>
-
-<table>
-<thead><tr><th>항목</th><th>내용</th></tr></thead>
-<tbody>
-<tr><td>✈️ 항공</td><td>인천(ICN) → 시드니(SYD) <strong>직항 약 10시간 20~35분</strong>(대한항공 등). 야간 출발편이 많아 현지 아침 도착.</td></tr>
-<tr><td>🕐 시차</td><td>8월 말은 호주 표준시(AEST) → 서울보다 <strong>+1시간</strong>. (서머타임은 10월 시작이라 8월 대회엔 적용 안 됨 — +2로 적힌 자료는 무시.)</td></tr>
-<tr><td>🛂 입국</td><td>한국 여권은 무비자 입국이 아니라 <strong>ETA(전자여행허가) 사전 발급 필수</strong>. 호주 ETA 앱으로 신청, 최대 3개월 체류.</td></tr>
-<tr><td>📝 신청 실수</td><td>자선·패키지 모두 <strong>여권 영문 성명을 정확히</strong> 입력. 결제는 <strong>해외결제 가능 카드(Visa/Master)</strong>로, 일부 자선은 GBP/USD로 청구돼 원화 환산·해외수수료가 붙음.</td></tr>
-</tbody>
-</table>
-
-<div class="callout warning"><span class="callout-icon">💳</span><div class="callout-body"><p class="callout-title">가장 흔한 사고: 영문명·해외카드</p><p>여권과 한 글자라도 다른 영문 이름은 현지 배번 수령에서 문제가 됩니다. 신청 폼에 적는 성명은 반드시 여권과 100% 일치시키세요. 그리고 자선 모금은 GBP/£·USD/$로 청구되는 경우가 많아, 해외결제가 막힌 카드면 결제 자체가 안 됩니다. 출발 전 카드 해외결제 활성화 여부를 먼저 확인하세요. 참가비(추첨 당첨 시)는 약 AUD $330 수준으로 알려져 있는데(공식 명시가 아닌 2차 출처·추정), 1 AUD ≈ 1,070~1,100원으로 보면 대략 35만~36만 원 선입니다.</p></div></div>
-
-<div class="major-next"><p class="mn-title">다음 메이저로 — 분기해서 결정하세요</p><div class="mn-grid"><a class="mn-card" href="/blog/tokyo-marathon-2027-registration-guide"><span class="mn-emoji">🗼</span><div class="mn-label">도쿄마라톤 2027</div><div class="mn-desc">가깝고 평지, 첫 메이저로 최적. 추첨·접수 일정 정리</div></a><a class="mn-card" href="/blog/chicago-marathon-2026-registration-guide"><span class="mn-emoji">🌆</span><div class="mn-label">시카고마라톤 2026</div><div class="mn-desc">평지 PB 끝판왕. 기록 노린다면 시드니 대신 여기</div></a><a class="mn-card" href="/shoes/on-cloudboom-strike"><span class="mn-emoji">👟</span><div class="mn-label">온 클라우드붐 스트라이크</div><div class="mn-desc">시드니 오르막·롤링에 맞는 균형형 카본화</div></a></div></div>
-
-<p>코스 난이도가 감이 안 잡힌다면 <a href="/blog/race-distance-difficulty-guide-2026">거리별 난이도 가이드</a>로 내 수준을 먼저 점검하고, 국내외 다른 대회 일정은 <a href="/marathon">마라톤 캘린더</a>에서 확인하세요.</p>
-
-<p>🗺️ 6대 메이저 전체 비교와 "어디부터 갈까"가 궁금하다면 <a href="/blog/world-marathon-majors-guide-2026">세계 6대 마라톤 완전정복</a>에서 한눈에 보세요.</p>
-
-<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본문의 일정(추첨 마감 2025-10-17·결과 2025-10-29)과 대회일(2026-08-30)은 공식 발표 기준입니다. 자선 단체별 최소 모금액·등록비, 여행 패키지 가격·보증금·예약 마감일은 단체/오퍼레이터마다 다르고 일부는 공식 미발표라 본문에 단정하지 않았습니다 — 신청 전 반드시 각 단체·오퍼레이터 공식 페이지에서 최신 금액과 마감을 확인하세요. 참가비(약 AUD $330)는 2차 출처 기반 추정치이며, 환율(AUD≈1,070~1,100원 / GBP≈1,700~1,800원 / USD≈1,350~1,400원)은 2026년 6월 기준 근사 범위로 변동될 수 있습니다.</p>
-`,
+    category: "news",
+    readingTime: 5,
+    tags: [
+      "시드니마라톤",
+      "시드니마라톤 2026",
+      "공식 결과",
+      "기록 조회",
+      "월드 마라톤 메이저스"
+    ],
+    content: `<p><small>2026년 11월 10일 주최·공식 신청처 원문 기준. 개인 당첨·납부 상태는 본인 계정에서 확인하세요.</small></p>
+<p>2026 시드니마라톤은 8월 30일에 열렸다. 이 주소는 이제 과거 대회의 결과를 찾는 데 쓰고, 다음 대회 참가 조건은 <a href="/blog/sydney-marathon-2027-registration-guide">2027 시드니 추첨 이후 안내</a>로 나눠 보자. 기존 글의 ‘2026 참가권을 지금 구할 수 있다’는 권유와 2026 조건이 내년에도 그대로 적용된다는 설명을 갱신했다.</p>
+<h2>본인 결과는 공식 계측 페이지에서</h2><p>주최가 연결한 <a href="https://www.multisportaustralia.com.au/races/sydney-marathon-2026" target="_blank" rel="noopener noreferrer">MultiSport Australia 2026 결과</a>에는 풀마라톤·휠체어·듀오·미니마라톤이 나뉘어 있다. 먼저 자신이 참가한 종목을 고른 뒤 배번호와 이름으로 결과를 찾자. 다른 종목의 순위나 시간과 섞으면 같은 대회 주말의 다른 결과를 가져올 수 있다.</p>
+<p>페이지의 종합·성별·연령대 분류와 Gun Time·Net Time 등의 열도 확인하자. 표시된 분류가 다른 두 순위를 그대로 비교하거나 앱의 GPS 완주 시각을 공식 계측 결과로 대체하지 않는 것이 좋다. 이 글은 독자 개인의 결과를 조회하거나 수정한 기록은 아니다.</p>
+<h2>남녀 상위 3명: 최종 결과표 대조</h2><table><thead><tr><th>부문</th><th>선수</th><th>기록</th></tr></thead><tbody><tr><td>남자 1</td><td>Addisu Gobena</td><td>2:04:42</td></tr><tr><td>남자 2</td><td>Chimdessa Debele</td><td>2:04:46</td></tr><tr><td>남자 3</td><td>Tebello Ramakongoana</td><td>2:04:57</td></tr><tr><td>여자 1</td><td>Peres Jepchirchir</td><td>2:18:31</td></tr><tr><td>여자 2</td><td>Irine Cheptai</td><td>2:22:11</td></tr><tr><td>여자 3</td><td>Shure Demise</td><td>2:22:33</td></tr></tbody></table>
+<p><a href="https://worldathletics.org/competition/calendar-results/results/7235579" target="_blank" rel="noopener noreferrer">세계육상연맹 최종 결과</a>와 공식 계측 표가 같은 기록을 제시한다. 남자 1·2위 차이는 4초다. 경기 보고의 문장·임시 표시가 결과표와 다를 때는 최종 표를 먼저 대조하자.</p>
+<p><a href="https://www.tcssydneymarathon.com/post/three-records-fall-as-tcs-sydney-marathon-with-the-fastest-marathon-ever-run-on-australian-soil" target="_blank" rel="noopener noreferrer">주최 결과 발표</a>는 고베나가 이전 2:06:06에서 1분 24초 줄인 코스기록, 젭치르치르는 이전 여자 코스기록 2:18:22보다 9초 느린 우승이라고 설명한다. 남녀 우승 기록이 모두 코스기록이라는 요약은 맞지 않는다.</p>
+<h2>올해 완주와 다음 해 참가권은 별개</h2><p>다음 대회일은 2027년 8월 29일이다. <a href="https://www.tcssydneymarathon.com/sign-up" target="_blank" rel="noopener noreferrer">2027 공식 추첨 안내</a>의 응모는 10월 19일 마감됐고 결과·청구 안내일은 11월 3일이었다. 2026 완주증이 있다고 누구나 2027 출전권을 받은 것으로 간주하지 말자. 별도 이월·보장 경로가 있다면 해당 자격과 신청 절차를 확인해야 한다.</p>
+<p>2026 코스의 누적고도, 당시 자선 비용, 항공편·입국 서류를 다음 해에도 그대로 유효하다고 묶지 않았다. 해외 원정 준비는 대회 연도와 출전권 상태를 먼저 확정한 뒤 참가자 안내·여행 조건을 각각 확인하는 순서가 혼동을 줄인다.</p>
+<h2>남겨둘 기록</h2><ul><li>공식 결과 주소와 본인 종목·배번호.</li><li>공식 완주증과 원래 기록 파일.</li><li>다음 대회 신청 번호·확정 메일·납부 내역.</li></ul><p>지난 완주 기록을 보관하는 일과 새 참가권을 확보하는 일을 나누면, 과거 신청 페이지를 현재 판매 안내로 오해하는 일을 줄일 수 있다.</p>
+<h2>자주 묻는 질문</h2><h3>2026 참가권을 지금 살 수 있나요?</h3><p>2026 대회는 8월 30일 개최된 과거 대회입니다. 이 글은 결과 조회용이며 다음 연도 참가 조건은 2027 안내를 확인해야 합니다.</p><h3>남자 2위는 2:04:45인가요, 2:04:46인가요?</h3><p>공식 계측 표와 세계육상연맹 최종 결과는 2:04:46입니다. 우승 2:04:42와의 차이는 4초입니다.</p><h3>여자 우승도 코스기록인가요?</h3><p>2:18:31 우승이며 주최가 제시한 이전 코스기록 2:18:22보다 9초 느립니다. 남자 우승 고베나의 2:04:42는 코스기록입니다.</p><h3>2026 완주하면 자동으로 2027에 출전하나요?</h3><p>일반적인 자동 출전권으로 확인하지 않았습니다. 다음 대회는 본인 추첨·이월·별도 보장 경로의 자격과 확정 절차를 확인해야 합니다.</p>`,
+    faqs: [
+      {
+        "question": "2026 참가권을 지금 살 수 있나요?",
+        "answer": "2026 대회는 8월 30일 개최된 과거 대회입니다. 이 글은 결과 조회용이며 다음 연도 참가 조건은 2027 안내를 확인해야 합니다."
+      },
+      {
+        "question": "남자 2위는 2:04:45인가요, 2:04:46인가요?",
+        "answer": "공식 계측 표와 세계육상연맹 최종 결과는 2:04:46입니다. 우승 2:04:42와의 차이는 4초입니다."
+      },
+      {
+        "question": "여자 우승도 코스기록인가요?",
+        "answer": "2:18:31 우승이며 주최가 제시한 이전 코스기록 2:18:22보다 9초 느립니다. 남자 우승 고베나의 2:04:42는 코스기록입니다."
+      },
+      {
+        "question": "2026 완주하면 자동으로 2027에 출전하나요?",
+        "answer": "일반적인 자동 출전권으로 확인하지 않았습니다. 다음 대회는 본인 추첨·이월·별도 보장 경로의 자격과 확정 절차를 확인해야 합니다."
+      }
+    ],
   },
   {
     id: 'chicago-marathon-2026-registration-guide',
@@ -2772,216 +2635,70 @@ export const posts_2026_06: BlogPost[] = [
 `,
   },
   {
-    id: 'tokyo-marathon-2027-registration-guide',
-    slug: 'tokyo-marathon-2027-registration-guide',
-    title: '도쿄마라톤 2027 추첨 마감 — 결과는 9월 18일, 참가비 납부는 9/30 종료 | 교토 해외 접수도 마감',
-    description: '도쿄마라톤 2027 일반추첨이 8월 28일(금) 17시(JST)에 마감됐습니다. 결과 통보일(9월 18일)이 지났고, 당첨자의 참가비 납부도 9월 30일 17시(JST)에 종료됐습니다 — 해외 USD 230·국내 ¥19,800(짐 보관 ¥1,200 별도). 오픈 4시간 만에 정원 4만 명을 넘겨 추첨이 확정됐던 대회입니다. 대안으로 꼽히던 교토 마라톤 2027의 해외 러너 접수(선착순 3,000명)도 9월 30일에 종료됐습니다. 20주년 100mm 프리미엄 완주 메달과 듀오 팀 신설까지 공식 기준으로 정리했습니다.',
-    thumbnail: '/images/blog/tokyo-marathon-2027-registration-guide.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-06-13',
-    updatedAt: '2026-10-01',
+    id: "tokyo-marathon-2027-registration-guide",
+    slug: "tokyo-marathon-2027-registration-guide",
+    title: "2027 도쿄마라톤 신청 이후: 일반 추첨 마감·US$230·본인 배번호 수령",
+    description: "일반 추첨은 8월 28일, 당첨자 납부는 9월 30일 종료됐습니다. 해외 거주자도 영어 일반 접수를 이용했고 ONE TOKYO GLOBAL 회원 창구와는 달랐습니다. 3월 4~6일 본인 수령을 준비하세요.",
+    thumbnail: "/images/blog/verified-tokyo-marathon-2027-registration-guide-20261110.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-06-13",
+    updatedAt: "2026-11-10",
     event: {
-      name: '도쿄마라톤 2027',
-      startDate: '2027-03-07',
-      location: { name: '도쿄 (도쿄도청 출발)', address: '일본 도쿄' },
-      organizer: '도쿄마라톤재단',
-      url: 'https://www.marathon.tokyo/',
+      "name": "Tokyo Marathon 2027",
+      "startDate": "2027-03-07",
+      "location": {
+        "name": "Tokyo",
+        "address": "Tokyo, Japan"
+      },
+      "organizer": "Tokyo Marathon Foundation",
+      "url": "https://www.marathon.tokyo/en/participants/guideline/"
     },
-    category: 'news' as const,
-    readingTime: 10,
-    tags: ['도쿄마라톤', '도쿄마라톤 2027', '도쿄마라톤 접수', '도쿄마라톤 추첨', '세계 6대 마라톤', '메이저 마라톤', '마라톤 해외원정', '자선 마라톤', 'One Tokyo', '도쿄마라톤 신청', '식스스타', '러닝 버킷리스트'],
-    content: `
-<div class="deadline-strip">
-  <span class="dl-badge">📬 결과 통보일 지남</span>
-  <span class="dl-text">도쿄마라톤 2027 일반추첨은 <strong>${md(MAJOR_DEADLINES.tokyo2027.ballot.close)} 17시(JST)에 마감</strong>됐고, 공식 결과 통보일(<strong>${MAJOR_DEADLINES.tokyo2027.ballot.resultMonth}</strong>)도 지났습니다. 참가비 납부도 <strong>${md(MAJOR_DEADLINES.tokyo2027.ballot.feePayBy)} 17시(JST)에 종료</strong>됐고 기한 내 미납분은 자리가 소멸됐습니다. 공식 뉴스에 추가 모집 공지는 아직 없습니다(10/1 확인).</span>
-</div>
-
-<div class="callout warning">
-  <span class="callout-icon">📌</span>
-  <div class="callout-body">
-    <p class="callout-title">신청 창은 닫혔습니다 — 지금 이 글로 할 수 있는 것</p>
-    <p><strong>2027 도쿄에 새로 응모할 방법은 없습니다.</strong> 이 글은 이제 두 가지 용도로 남습니다. 첫째, <strong>이미 응모한 사람</strong>에게는 ${MAJOR_DEADLINES.tokyo2027.ballot.resultMonth} 결과 확인과 <strong>${md(MAJOR_DEADLINES.tokyo2027.ballot.feePayBy)} 결제 기한</strong>이 남은 일정입니다 — 당첨되고도 기한을 넘기면 자리가 사라집니다. 둘째, <strong>2028 사이클을 노리는 사람</strong>에게는 이 대회의 접수 구조(8월 중순 오픈·2주 창·무료 응모·당첨 후 결제)가 그대로 반복될 가능성이 높은 참고 자료입니다.</p>
-  </div>
-</div>
-
-<div class="callout tip">
-  <span class="callout-icon">🇯🇵</span>
-  <div class="callout-body">
-    <p class="callout-title">같은 겨울 메이저 — 교토 해외 러너 접수는 9월 30일에 종료</p>
-    <p>같은 겨울 시즌의 <a href="/blog/kyoto-marathon-entry-guide">교토 마라톤 2027</a>은 해외 거주자 몫 3,000명을 <strong>선착순</strong>으로 받았고 해외 러너 접수는 <strong>9월 30일 17시(JST)에 종료</strong>됐습니다(공식 영문 사이트 10/1 확인, 신청 페이지 closed). 도쿄 결과를 보고 넣으려던 분에게는 이미 닫힌 경로입니다.</p>
-  </div>
-</div>
-
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>2027 도쿄의 모든 신청 경로가 닫혔습니다</strong> — 일반추첨 ${md(MAJOR_DEADLINES.tokyo2027.ballot.close)} 마감, 자선 ${md(MAJOR_DEADLINES.tokyo2027.charity.close)}, One Tokyo Global ${md(MAJOR_DEADLINES.tokyo2027.oneTokyoGlobal.close)}. 대회일은 ${MAJOR_DEADLINES.tokyo2027.raceDate.replace(/-/g, '.')}이고, 새로 들어갈 방법은 남아 있지 않습니다.</li>
-    <li><strong>응모한 사람의 일정은 둘이었고 모두 지났습니다</strong> — ${MAJOR_DEADLINES.tokyo2027.ballot.resultMonth} My Entry에서 결과 발표, 당첨 시 <strong>${md(MAJOR_DEADLINES.tokyo2027.ballot.feePayFrom)}~${md(MAJOR_DEADLINES.tokyo2027.ballot.feePayBy)} 참가비 납부(종료)</strong>. 금액은 해외 러너 <strong>USD ${MAJOR_DEADLINES.tokyo2027.ballot.feeOverseasUsd}</strong>(국내 ¥${MAJOR_DEADLINES.tokyo2027.ballot.feeDomesticJpy.toLocaleString()})이고, <strong>기한을 넘긴 당첨은 자리가 사라졌습니다.</strong></li>
-    <li><strong>경쟁률의 감을 남겨둡니다</strong> — 오픈 당일 이미 정원 ${MAJOR_DEADLINES.tokyo2027.ballot.fieldSize.toLocaleString()}명을 넘겨 추첨이 확정됐습니다. 다만 선착순이 아니어서 마감 전에 넣기만 하면 조건이 같았습니다. <strong>2028 사이클도 같은 구조라면 오픈 날 서두를 이유는 없습니다</strong> — 8월 중순 오픈에 2주 창이었다는 점만 기억해두면 됩니다.</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">🗼</span>
-  <div class="callout-body">
-    <p class="callout-title">왜 첫 메이저로 도쿄를 추천할까</p>
-    <p>세계 6대(2025년 시드니 합류로 7대) 마라톤은 대부분 비행 10시간 이상·시차 적응이 필요합니다. 도쿄는 다릅니다 — <strong>인천에서 약 2시간, 한일 시차 0(KST=JST)</strong>이라 시차 적응이 필요 없고, 코스도 도쿄도청에서 긴자·도쿄역으로 이어지는 <strong>평지 고속 코스</strong>라 기록도 잘 나옵니다. "메이저 데뷔전"으로 부담이 가장 적은 대회죠. 2027년은 <strong>20주년</strong> 대회이기도 합니다.</p>
-  </div>
-</div>
-
-<h2>3가지 길 중 지금 열려 있는 건 하나</h2>
-
-<p>도쿄마라톤에 들어가는 경로는 셋이지만 신청 창이 각각 다르게 열리고 닫힙니다. 오늘 기준 상태는 이렇습니다.</p>
-
-<table>
-  <thead>
-    <tr><th>경로</th><th>신청 기간</th><th>비용</th><th>현재 상태</th></tr>
-  </thead>
-  <tbody>
-    <tr><td><strong>일반 추첨(무료 응모)</strong></td><td>${md(MAJOR_DEADLINES.tokyo2027.ballot.open)} 11시~${md(MAJOR_DEADLINES.tokyo2027.ballot.close)} 17시(JST)</td><td>응모 무료 · 당첨 시 참가비만</td><td><strong>마감</strong> — 결과 ${MAJOR_DEADLINES.tokyo2027.ballot.resultMonth}</td></tr>
-    <tr><td><strong>One Tokyo Global</strong></td><td>${md(MAJOR_DEADLINES.tokyo2027.oneTokyoGlobal.open)}~${md(MAJOR_DEADLINES.tokyo2027.oneTokyoGlobal.close)}</td><td>연회비 ¥3만 + 당첨 시 참가비</td><td>마감 — 결과 9/1 발표</td></tr>
-    <tr><td><strong>자선(RUN with HEART)</strong></td><td>${md(MAJOR_DEADLINES.tokyo2027.charity.open)}~${md(MAJOR_DEADLINES.tokyo2027.charity.close)}</td><td>기부 ¥10만~ <strong>+ 참가비 별도</strong></td><td>마감 — 기부금 납부만 ${md(MAJOR_DEADLINES.tokyo2027.charity.donatePayBy)}까지</td></tr>
-  </tbody>
-</table>
-
-<p>세 경로는 <strong>동시 신청이 안 됩니다</strong>. 다만 지금은 고민할 것도 없이 <strong>일반 추첨 하나</strong>만 남았습니다. 아래 자선·One Tokyo Global 설명은 <strong>2028 대회를 노리는 러너를 위한 참고</strong>로 남겨둡니다 — 두 경로 모두 매년 비슷한 시기(자선 6월 말, OTG 7월 말)에 열리므로, 내년에 "확실히 가고 싶다"면 지금부터 계획해야 하는 경로입니다.</p>
-
-<div class="callout warning">
-  <span class="callout-icon">⏳</span>
-  <div class="callout-body">
-    <p class="callout-title">서두를 필요가 없습니다 — 선착순이 아닙니다</p>
-    <p>접수가 열린 ${md(MAJOR_DEADLINES.tokyo2027.ballot.open)} 오전 11시(JST)로부터 몇 시간 만에 <strong>신청자가 정원 ${MAJOR_DEADLINES.tokyo2027.ballot.fieldSize.toLocaleString()}명을 넘겨 추첨 실시가 공식 확정</strong>됐습니다. 그런데 이건 나쁜 소식이 아닙니다 — 도쿄마라톤 일반접수는 <strong>처음부터 선착순이 아니라 추첨</strong>이라, 정원 초과는 예정된 수순입니다.</p>
-    <p>공식 공지도 같은 얘기를 합니다: <em>"접수 직후에는 접속이 몰려 사이트가 느릴 수 있습니다. 선착순으로 접수하지 않으니 나중에 다시 접속해 주세요."</em> <strong>${md(MAJOR_DEADLINES.tokyo2027.ballot.close)} 17시 전에 넣기만 하면 당첨 확률은 동일합니다.</strong> 오픈 첫날 광클할 이유가 없다는 뜻입니다.</p>
-  </div>
-</div>
-
-<h2>자선 루트의 진실 — "¥10만이 참가비"가 아닙니다 <small>(2027은 마감 · 2028 대비용)</small></h2>
-
-<div class="callout warning">
-  <span class="callout-icon">💸</span>
-  <div class="callout-body">
-    <p class="callout-title">한국 러너가 가장 많이 하는 오해 2가지</p>
-    <ul>
-      <li><strong>기부금 ¥10만은 참가비가 아니라 별도</strong> — 자선 출전권은 <strong>최소 기부 ¥10만(${MAJOR_DEADLINES.tokyo2027.charity.minDonationKrwApprox}) + 참가비(해외 러너 별도 납부)</strong>를 모두 냅니다. 실부담은 <strong>총 130만 원 이상</strong>으로 잡아야 현실적입니다.</li>
-      <li><strong>${MAJOR_DEADLINES.tokyo2027.charity.charities}개 자선단체 중 일부는 일본 거주자만</strong> 받습니다. 한국에서 신청한다면 <strong>각 단체의 해외 거주자 수락 여부를 먼저 확인</strong>해야 합니다(전체가 해외 OK가 아님).</li>
-    </ul>
-  </div>
-</div>
-
-<p>그래도 자선의 장점은 분명합니다 — <strong>추첨 운에 기대지 않고 출전권을 확보</strong>할 수 있다는 것. 2027 대회는 ${md(MAJOR_DEADLINES.tokyo2027.charity.open)}에 열려 ${md(MAJOR_DEADLINES.tokyo2027.charity.close)}에 이미 마감됐고, 지금은 선정된 러너의 기부금 납부만 ${md(MAJOR_DEADLINES.tokyo2027.charity.donatePayBy)}까지 남아 있습니다. <strong>추첨에 기대지 않고 확실히 가고 싶다면 2028 대회를 겨냥해 내년 6월 말을 노려야 합니다</strong> — 매년 이 시기에 열립니다.</p>
-
-<h2>지금 해야 할 것 — 일반 추첨 응모 (${md(MAJOR_DEADLINES.tokyo2027.ballot.close)} 마감)</h2>
-
-<p>응모 자체는 <strong>무료</strong>입니다. ${md(MAJOR_DEADLINES.tokyo2027.ballot.open)} 11시부터 ${md(MAJOR_DEADLINES.tokyo2027.ballot.close)} 17시(JST, 한국시간과 동일)까지 넣고, 당첨되면 그때 참가비를 냅니다. 6월에 이 글을 처음 쓸 때는 2027 참가비가 미발표였는데, <strong>이제 공식 요강에 확정됐습니다.</strong></p>
-
-<table>
-  <thead>
-    <tr><th>항목</th><th>내용</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>응모 기간</td><td>${md(MAJOR_DEADLINES.tokyo2027.ballot.open)} 11:00 ~ ${md(MAJOR_DEADLINES.tokyo2027.ballot.close)} 17:00 (JST)</td></tr>
-    <tr><td>참가비</td><td>해외 <strong>USD ${MAJOR_DEADLINES.tokyo2027.ballot.feeOverseasUsd}</strong> / 국내 ¥${MAJOR_DEADLINES.tokyo2027.ballot.feeDomesticJpy.toLocaleString()} <small>(사무수수료·소비세 포함)</small></td></tr>
-    <tr><td>짐 보관</td><td>희망 시 <strong>¥${MAJOR_DEADLINES.tokyo2027.ballot.baggageFeeJpy.toLocaleString()} 별도</strong> — 참가비 결제 후 따로 결제해야 합니다</td></tr>
-    <tr><td>결과 발표</td><td>${MAJOR_DEADLINES.tokyo2027.ballot.resultMonth} · My Entry에서 확인</td></tr>
-    <tr><td>참가비 납부</td><td>${md(MAJOR_DEADLINES.tokyo2027.ballot.feePayFrom)} 11:00 ~ ${md(MAJOR_DEADLINES.tokyo2027.ballot.feePayBy)} 17:00 (JST)</td></tr>
-    <tr><td>참가 자격</td><td>대회일 기준 만 19세 이상 · <strong>6시간 30분 내 완주 가능한 사람</strong> (대회 제한시간은 7시간)</td></tr>
-    <tr><td>정원</td><td>${MAJOR_DEADLINES.tokyo2027.ballot.fieldSize.toLocaleString()}명 (20주년 기념 확대)</td></tr>
-  </tbody>
-</table>
-
-<p>놓치기 쉬운 두 가지가 있습니다. 하나는 <strong>짐 보관이 유료</strong>라는 것 — 참가비에 포함이 아니라 ¥1,200을 따로 결제해야 합니다. 다른 하나는 <strong>당첨 후 납부 기간이 열흘 남짓</strong>(${md(MAJOR_DEADLINES.tokyo2027.ballot.feePayFrom)}~${md(MAJOR_DEADLINES.tokyo2027.ballot.feePayBy)})이었다는 것입니다. 이 기간은 9월 30일에 끝났고, 넘긴 당첨은 무효입니다. 내년 같은 시즌에 응모한다면 <strong>발표일에 My Entry에 직접 들어가 확인</strong>하는 습관이 안전합니다(메일이 누락될 수 있습니다).</p>
-
-<p>단점은 <strong>경쟁률</strong>입니다. 오픈 당일 정원이 찬 데서 보듯 메이저 중에서도 인기가 높습니다. "올해 안 되면 내년에 또" 식으로 여러 해 도전할 생각이라면, 선행 추첨과 연속 미당첨 보장 제도가 있는 <strong>One Tokyo Global</strong>(연회비 ¥3만)을 다음 사이클에 고려할 만합니다. 단, 이 제도도 <strong>당첨 보장이 아니라 '특별 추첨 자격'</strong>이라는 점을 오해하면 안 됩니다. 참고로 세미엘리트·One Tokyo Global에서 떨어진 사람도 <strong>일반 추첨에 다시 응모할 수 있습니다</strong>(중복 불이익 없음).</p>
-
-<h2>한국에서 넣는다면 — 어느 사이트로 응모하나</h2>
-
-<p>여기가 이번 사이클에서 가장 확인이 필요한 지점입니다. 도쿄마라톤 공식 FAQ는 이렇게 안내합니다 — <strong>"해외 거주자는 국적을 불문하고 영어 사이트에서 엔트리해 주십시오."</strong> 그런데 그 영어 사이트 창구인 <strong>ONE TOKYO GLOBAL 멤버 엔트리는 ${md(MAJOR_DEADLINES.tokyo2027.oneTokyoGlobal.close)} 17시에 이미 마감</strong>됐습니다.</p>
-
-<p>지금 열려 있는 일반 응모는 공식 모집요강상 <strong>거주지 제한 문구가 없고</strong>, 참가비도 국내 ¥${MAJOR_DEADLINES.tokyo2027.ballot.feeDomesticJpy.toLocaleString()}과 해외 USD ${MAJOR_DEADLINES.tokyo2027.ballot.feeOverseasUsd}이 나란히 고시돼 해외 결제 경로 자체는 존재합니다. 다만 이 창구 안내는 "국내 사이트에서 엔트리한 사람 중 도쿄도 거주자"를 대상으로 한 도민 추첨을 포함하는 구조로 쓰여 있고, <strong>해외 거주자가 이 일반 응모에 넣을 수 있다는 명시는 없습니다</strong>.</p>
-
-<div class="callout warning">
-  <span class="callout-icon">❓</span>
-  <div class="callout-body">
-    <p class="callout-title">확인된 것과 불명확한 것을 갈라 둡니다</p>
-    <ul>
-      <li><strong>확인된 사실</strong> — 해외 거주자 전용 창구(영어 사이트·GLOBAL)는 ${md(MAJOR_DEADLINES.tokyo2027.oneTokyoGlobal.close)}에 종료. 일반 응모는 ${md(MAJOR_DEADLINES.tokyo2027.ballot.close)} 17시까지 열려 있고, 요강에 거주지 제한 문구는 없다.</li>
-      <li><strong>불명확한 것</strong> — 한국 거주자가 지금 열린 일반 응모에 넣어도 유효한지. 공식 문서에 가부가 명시돼 있지 않습니다.</li>
-      <li><strong>권하는 행동</strong> — 추측으로 진행하지 말고 <strong>공식 문의로 확인한 뒤 응모</strong>하세요. 이 글은 "된다/안 된다"를 단정하지 않습니다. 확인되지 않았기 때문입니다.</li>
-    </ul>
-  </div>
-</div>
-
-<p>확실하게 출전권을 잡는 쪽을 원한다면 남은 길은 <strong>공식 투어 슬롯</strong>입니다. 도쿄마라톤은 <strong>킨키니혼투어리스트(近畿日本ツーリスト)와 그와 파트너십을 맺은 여행사에만</strong> 출전권을 포함한 투어 판매를 허용합니다. 개인 응모보다 비용은 크게 올라가지만 추첨 운에 걸리지 않습니다. 반대로 "다음엔 제대로 준비하겠다"면, 해외 거주자 창구가 <strong>7월 말에 열려 8월 중순에 닫힌다</strong>는 이번 사이클 일정을 기억해 두세요 — 일반 응모보다 2주 먼저 닫힙니다.</p>
-
-<h2>추첨은 한 번이 아니라 3단계다</h2>
-
-<p>정원을 넘기면 추첨인데, 도쿄마라톤은 <strong>우선순위가 붙은 3단계 추첨</strong>을 돌립니다. 앞 단계가 먼저 자리를 가져간 뒤 남은 자리를 두고 일반 추첨이 이뤄지는 구조라, 어느 칸에 속하는지가 당락에 직결됩니다.</p>
-
-<table>
-  <thead><tr><th>순서</th><th>대상</th><th>결과 발표</th></tr></thead>
-  <tbody>
-    <tr><td>①</td><td>ONE TOKYO "3대회 연속 낙선" 멤버 챌린지</td><td>9/11</td></tr>
-    <tr><td>②</td><td>도민 추첨 — 도쿄도 거주자, 정원 1,000명</td><td>9/16</td></tr>
-    <tr><td>③</td><td><strong>일반 추첨</strong> — 위에 해당하지 않는 나머지</td><td>${MAJOR_DEADLINES.tokyo2027.ballot.resultMonth}</td></tr>
-  </tbody>
-</table>
-
-<p>한국 러너는 ①②에 해당하지 않으므로 <strong>③ 일반 추첨</strong>이 실제 경쟁 무대입니다. 위 두 단계가 먼저 빠져나간다는 점을 감안하면, 체감 경쟁률은 단순 "응모자 대 정원"보다 빡빡하다고 보는 편이 맞습니다.</p>
-
-<h2>20주년이라 달라지는 것들</h2>
-
-<p>2027년은 도쿄마라톤 <strong>20회째</strong> 대회입니다. 기념 대회라 평년과 다른 항목이 몇 가지 확정됐습니다.</p>
-
-<ul>
-  <li><strong>정원 4만 명</strong> — 역대 최대 규모로 늘었습니다. 그만큼 추첨 문도 조금 넓어진 셈입니다(대신 10.7km 종목은 마라톤에 통합돼 없어졌습니다)</li>
-  <li><strong>프리미엄 완주 메달</strong> — 지름 <strong>100mm</strong> 특별 에디션입니다. 앞면에 '20' 그래픽, 뒷면에는 코스를 따라 지나는 도쿄 랜드마크가 새겨집니다. 완주자에게만 주어집니다</li>
-  <li><strong>듀오 팀(Duo Team) 부문 신설</strong> — 러너(Pusher)가 전용 버기에 탄 파트너(Rider)를 밀며 함께 뛰는 2인 1팀 종목입니다. <strong>신청 방법이 다릅니다</strong> — 온라인 폼이 아니라 접수 기간 안에 <code>tmf_duo@tokyo42195.org</code>로 연락해야 합니다</li>
-  <li><strong>장애인·휠체어 부문</strong>이 일반접수 안에 함께 열립니다</li>
-  <li><strong>"완주율 100% 지원" 프로젝트</strong> — 참가자에게 WWS(Workout Well-being Scorer)를 제공합니다. PC·스마트폰 카메라로 얼굴을 30초쯤 촬영하면 심박·스트레스 같은 지표를 추정해 컨디션 관리를 돕는 서비스입니다</li>
-</ul>
-
-<h2>한국 러너 신청 체크리스트</h2>
-
-<p>${md(MAJOR_DEADLINES.tokyo2027.ballot.close)} 마감 전에 확인할 것들입니다. 시차가 0이라 JST 시각을 그대로 한국시간으로 읽으면 됩니다.</p>
-
-<ul>
-  <li><strong>여권 영문명과 100% 일치</strong> — 신청 시 영문 이름을 여권과 다르게 적으면 입국·확인에서 문제가 됩니다.</li>
-  <li><strong>해외 결제 카드 준비</strong> — 결제는 신용카드/지정 온라인 결제만. 완료 후 <strong>환불·이름 변경·양도 불가</strong>입니다.</li>
-  <li><strong>My Entry 계정을 먼저 만들 것</strong> — 응모도 결과 확인도 전부 My Entry(myentry.onetokyo.org)에서 이뤄집니다. 계정 생성부터 하다 마감에 쫓기지 마세요.</li>
-  <li><strong>발표일에는 직접 들어가서 확인</strong> — 당첨 통보 메일이 스팸으로 가거나 누락될 수 있습니다. 이번 시즌 납부 기한(${md(MAJOR_DEADLINES.tokyo2027.ballot.feePayBy)})은 이미 지났고, 놓친 당첨은 무효였습니다.</li>
-  <li><strong>짐 보관은 별도 결제</strong> — ¥${MAJOR_DEADLINES.tokyo2027.ballot.baggageFeeJpy.toLocaleString()}이 참가비에 포함돼 있지 않습니다. 필요하면 참가비 결제 후 따로 신청하세요.</li>
-  <li><strong>환율은 변동分 감안</strong> — 참가비 USD ${MAJOR_DEADLINES.tokyo2027.ballot.feeOverseasUsd}는 달러 표기라 결제 시점 환율이 그대로 반영됩니다.</li>
-  <li><strong>거리부터 확정</strong> — 첫 풀코스라면 무리하지 말고 <a href="/blog/race-distance-difficulty-guide-2026">거리별 난이도 가이드</a>로 내 수준을 먼저 점검하세요.</li>
-  <li><strong>신발</strong> — 평지 고속 코스라 PB를 노린다면 카본 슈퍼슈즈가 유리합니다(아래 추천).</li>
-</ul>
-
-<div class="major-next">
-  <p class="mn-title">🏁 도쿄 다음 한 걸음 — 당신의 방향은?</p>
-  <div class="mn-grid">
-    <a class="mn-card" href="/shoes/asics-metaspeed-sky-plus">
-      <span class="mn-emoji">👟</span>
-      <div class="mn-label">도쿄 평지엔 이 카본화</div>
-      <div class="mn-desc">고속 평지 코스용 아식스 메타스피드 스카이+</div>
-    </a>
-    <a class="mn-card" href="/blog/sydney-marathon-2026-registration-guide">
-      <span class="mn-emoji">🌉</span>
-      <div class="mn-label">시드니마라톤 2026</div>
-      <div class="mn-desc">7번째 메이저, 식스스타·하버브리지 경관 코스</div>
-    </a>
-    <a class="mn-card" href="/blog/chicago-marathon-2026-registration-guide">
-      <span class="mn-emoji">🌆</span>
-      <div class="mn-label">시카고마라톤 2026</div>
-      <div class="mn-desc">세계 최속 평지 — PB 노린다면 여기</div>
-    </a>
-  </div>
-</div>
-
-<p style="font-size:0.9em;color:#475569;margin-top:1.5em;">※ 보스턴(BQ 기록)·런던·뉴욕·베를린 등 나머지 메이저 도전 가이드도 순차 공개할 예정입니다. 첫 풀코스라면 <a href="/blog/race-distance-difficulty-guide-2026">거리별 난이도 가이드</a>, 국내 대회는 <a href="/marathon">마라톤 캘린더</a>에서 함께 일정을 짜보세요.</p>
-
-<p>🗺️ 6대 메이저 전체 비교와 "어디부터 갈까"가 궁금하다면 <a href="/blog/world-marathon-majors-guide-2026">세계 6대 마라톤 완전정복</a>에서 한눈에 보세요.</p>
-
-<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 2026-06-13 최초 작성, <strong>2026-08-14 갱신 · 2026-08-15 재갱신</strong>. 8-15 추가분은 공식 모집요강의 응모 자격·추첨 방식과 공식 FAQ의 해외 거주자 안내를 재확인한 내용입니다 — 해외 거주자 창구(영어 사이트·ONE TOKYO GLOBAL) 8/13 종료, 추첨 3단계 구조(연속낙선 9/11 · 도민 9/16 · 일반 9/18), 투어 출전권의 공식 판매 경로. <strong>한국 거주자가 지금 열린 일반 응모에 넣을 수 있는지는 공식에 명시가 없어 단정하지 않았습니다</strong> — 진행 전 공식 문의로 확인하세요. 갱신분은 도쿄마라톤 공식 사이트(marathon.tokyo)를 직접 확인한 내용입니다 — 일반접수 오픈 공지(8/14 11:00 게시)와 정원 초과·추첨 실시 공지(같은 날 15:19 게시), 접수 일정 페이지(경로별 기간·결과 발표·납부 기간), 대회 요강(정원 40,000명·참가비 국내 ¥19,800/해외 USD 230·짐 보관 ¥1,200·참가 자격·제한시간). 20주년 완주 메달 사양(100mm, 앞면 '20' 그래픽·뒷면 도쿄 랜드마크)은 공식 발표를 정리한 인스타그램 @runner_iffu 2026-08-12 게시물 기준입니다. 자선 단체별 해외 거주자 수락 여부는 단체마다 다르므로 개별 확인이 필요합니다. 신청 전 공식에서 최종 확인하세요.</p>
-`,
+    category: "news",
+    readingTime: 5,
+    tags: [
+      "도쿄마라톤",
+      "도쿄마라톤 2027",
+      "도쿄마라톤 접수",
+      "도쿄마라톤 추첨",
+      "메이저 마라톤",
+      "마라톤 해외원정",
+      "자선 마라톤",
+      "One Tokyo",
+      "도쿄마라톤 신청",
+      "식스스타",
+      "러닝 버킷리스트",
+      "월드 마라톤 메이저스"
+    ],
+    content: `<p><small>2026년 11월 10일 주최·공식 신청처 원문 기준. 개인 당첨·납부 상태는 본인 계정에서 확인하세요.</small></p>
+<p>2027 도쿄마라톤은 3월 7일이다. <a href="https://www.marathon.tokyo/en/participants/guideline/" target="_blank" rel="noopener noreferrer">공식 참가 요강</a>의 일반 엔트리는 2026년 8월 14일 11:00~28일 17:00 JST에 진행됐다. 해외 ONE TOKYO GLOBAL 회원 접수는 7월 31일~8월 13일의 별도 창구였다. 회원 접수가 끝났다는 이유로 해외 거주자의 일반 접수 자체가 불명확했다고 설명하면 잘못된 안내가 된다.</p>
+<h2>한국 거주자도 영어 사이트로 일반 접수</h2><p><a href="https://www.marathon.tokyo/en/faq/" target="_blank" rel="noopener noreferrer">공식 FAQ</a>는 국적과 관계없이 일본 밖에 살면 영어 사이트를 이용하라고 안내한다. 거주지 기준과 회원 전용 선행 접수를 구분해야 한다. 이 일반 응모와 납부 기간은 지금 모두 지났다.</p>
+<p><a href="https://www.marathon.tokyo/en/news/detail/news_20260911105140.html" target="_blank" rel="noopener noreferrer">9월 11일 일반 추첨 결과 공지</a>는 결과 확인일을 9월 18일, 당첨자 납부를 9월 18일 11:00~30일 17:00 JST로 제시한다. 기한 내 납부하지 않으면 출전권이 무효가 되는 조건이었다. 이메일만이 아니라 본인 My Entry에서 확인하는 방식이다. 신청서 제출·당첨·납부 완료를 따로 확인하자.</p>
+<h2>US$230와 짐 보관 US$12</h2><p>해외 참가비는 <strong>US$230</strong>으로 참가비·사무수수료·세금을 포함한다. 짐 보관은 선택 서비스이며 <strong>US$12</strong>가 추가되고 참가비 납부 뒤 별도 납부 절차를 안내한다. 기존의 1,200엔 표기와 혼동하지 말자. FAQ는 짐 보관을 신청 때 선택한 러너만 이용할 수 있다고 설명한다.</p>
+<p>일반 참가자격의 ‘6시간 30분 내 완주 가능’과 전체 운영의 ‘09:10~16:10, 신호총 기준 7시간’은 다른 항목이다. 중간 관문과 개인 웨이브가 있어 자신의 출발 후 정확히 7시간을 쓸 수 있다는 보장으로 읽지 말자.</p>
+<h2>배번호를 받으려면 전날까지 도쿄에 있어야 한다</h2>
+<table><thead><tr><th>본인 수령일</th><th>시간(JST=한국시간)</th></tr></thead><tbody><tr><td>2027년 3월 4·5일</td><td>10:00~20:30</td></tr><tr><td>3월 6일</td><td>10:00~17:30</td></tr></tbody></table>
+<p>FAQ의 장소는 도쿄 빅사이트 남전시장이다. 러너가 본인 등록을 마쳐야 하고 대회 당일 수령은 없다. 신원 확인에는 여권을 제시하며 배번호 교환 문서는 이메일 첨부가 아닌 My Entry에서 내려받는 방식으로 안내한다. 수령 마감에 맞춰 도착하는 항공편보다, 공항에서 전시장까지 이동 시간을 포함해 판단해야 한다.</p>
+<h2>2월 참가자 가이드에서 다시 볼 것</h2><p>FAQ는 2027년 2월 중순 참가자 가이드에서 액체 반입, 짐 찾는 위치, 만남 장소 등의 세부 정보를 안내할 예정이라고 적고 있다. 지난 대회 허용 물품을 2027 규정으로 복사하지 말자. 출발도 지정된 코랄·웨이브를 따라야 하므로 친구와 다른 그룹이라고 임의로 바꾸면 안 된다.</p>
+<p>공식 숙박 예약 안내가 있다는 사실과 참가권을 포함한 상품인지는 별개다. 현재 판매 중인 출전권을 이 글에서 확인한 것은 아니며, 마감된 일반 접수를 새로 신청하도록 권하지 않는다.</p>
+<h2>자주 묻는 질문</h2><h3>해외 거주자는 8월 13일 이후 일반 접수가 안 됐나요?</h3><p>8월 13일은 ONE TOKYO GLOBAL 회원 등 선행 창구 마감입니다. 일반 엔트리는 8월 14~28일 별도로 진행됐고 해외 거주자는 공식 FAQ상 영어 사이트를 이용합니다.</p><h3>짐 보관은 기본 포함인가요?</h3><p>해외 참가비 US$230과 별도로 US$12 선택 서비스입니다. 공식은 신청 때 선택한 러너가 이용하고 참가비 납부 뒤 별도 납부 절차를 거친다고 안내합니다.</p><h3>대회 당일 배번호를 받을 수 있나요?</h3><p>당일 수령은 없습니다. 3월 4·5일 10:00~20:30 또는 6일 10:00~17:30 도쿄 빅사이트 남전시장에서 본인 수령해야 합니다.</p><h3>완주 제한은 6시간 30분인가요, 7시간인가요?</h3><p>일반 참가자격은 6시간 30분 내 완주 가능이며 운영은 09:10~16:10 신호총 기준 7시간입니다. 개인 웨이브와 중간 관문 조건을 함께 확인해야 합니다.</p>`,
+    faqs: [
+      {
+        "question": "해외 거주자는 8월 13일 이후 일반 접수가 안 됐나요?",
+        "answer": "8월 13일은 ONE TOKYO GLOBAL 회원 등 선행 창구 마감입니다. 일반 엔트리는 8월 14~28일 별도로 진행됐고 해외 거주자는 공식 FAQ상 영어 사이트를 이용합니다."
+      },
+      {
+        "question": "짐 보관은 기본 포함인가요?",
+        "answer": "해외 참가비 US$230과 별도로 US$12 선택 서비스입니다. 공식은 신청 때 선택한 러너가 이용하고 참가비 납부 뒤 별도 납부 절차를 거친다고 안내합니다."
+      },
+      {
+        "question": "대회 당일 배번호를 받을 수 있나요?",
+        "answer": "당일 수령은 없습니다. 3월 4·5일 10:00~20:30 또는 6일 10:00~17:30 도쿄 빅사이트 남전시장에서 본인 수령해야 합니다."
+      },
+      {
+        "question": "완주 제한은 6시간 30분인가요, 7시간인가요?",
+        "answer": "일반 참가자격은 6시간 30분 내 완주 가능이며 운영은 09:10~16:10 신호총 기준 7시간입니다. 개인 웨이브와 중간 관문 조건을 함께 확인해야 합니다."
+      }
+    ],
   },
   {
     id: 'garmin-run-club-grc-busan-expansion-2026',

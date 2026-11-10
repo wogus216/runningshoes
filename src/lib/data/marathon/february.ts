@@ -13,76 +13,80 @@ import type { MarathonEvent } from '@/types/marathon';
  */
 export const februaryEvents: MarathonEvent[] = [
   {
-    id: 'kyoto-marathon-2027',
-    name: '교토 마라톤 2027',
-    date: '2027-02-21',
-    month: '2월',
-    location: '타케비시 스타디움 교토(니시쿄고쿠) 출발 → 헤이안진구 앞 도착',
-    region: '교토',
-    distances: ['풀코스'],
-    status: '마감',
+    id: "kyoto-marathon-2027",
+    name: "교토 마라톤 2027",
+    date: "2027-02-21",
+    month: "2월",
+    location: "타케비시 스타디움 교토(니시쿄고쿠) 출발 → 헤이안진구 앞 도착",
+    region: "교토",
+    distances: [
+      "풀코스"
+    ],
+    status: "마감",
     isMajor: true,
-    website: 'https://kyoto-marathon.com/',
-    description:
-      '세계문화유산 7곳을 지나는 코스. 한국 거주자는 해외 러너 쿼터(3,000명) 대상이며 선착순이라 신청하면 확정된다. 참가비 35,000엔, 신청은 JTB스포츠스테이션. 접수 후 취소·환불은 불가.',
+    website: "https://kyoto-marathon.com/",
+    description: "2027년 2월 21일 09시 출발. 해외 거주자 3,000명 선착순 모집은 2026년 9월 30일 17시 JST에 종료됐다. 해외 참가비 35,000엔. 2월 19·20일 미야코메세에서 신분증 원본을 제시해 본인 수령하며 당일·대리 수령은 불가.",
     courseInfo: {
-      terrain: '혼합',
-      difficulty: '중급',
-      elevationGain: 75,
-      certification: 'AIMS',
-      courseDescription:
-        '아라시야마·도게츠교를 지나 가쓰라가와 강변을 달리고 사가노·히로사와노이케를 통과한다. 전반 아라시야마~금각사 구간에 잔잔한 오르내림이 이어지고, 30km 이후(특히 38km 부근 이마데가와도리 오르막)가 최대 난소로 꼽힌다. 코스에 비포장 강변 구간이 포함돼 우천 시 주행이 어려울 수 있다.',
+      "certification": "AIMS",
+      "courseDescription": "타케비시 스타디움 교토에서 헤이안진구 앞까지 세계문화유산 7곳을 지나는 코스. 공식 요강은 비포장 강변이 포함돼 비가 오면 달리기 어려울 수 있다고 안내한다."
     },
     raceInfo: {
-      timeLimits: [{ distance: '풀코스', hours: 6, minutes: 0 }],
-      expectedParticipants: 16000,
-      startTime: '09:00',
+      "timeLimits": [
+        {
+          "distance": "풀코스",
+          "hours": 6,
+          "minutes": 0
+        }
+      ],
+      "startTime": "09:00"
     },
     logistics: {
-      bagStorage: true,
+      "bagStorage": true
     },
     raceKit: {
-      items: [
-        '참가상 타월(대회 당일 출전자 전원, 러너 접수처가 아니라 당일 지급)',
-        '완주 메달·메달 리본(완주자)',
-        '오리지널 후로시키(보자기) — 러너 접수를 마친 해외 러너 한정',
+      "items": [
+        "참가상 타월(대회 당일 출전자 전원, 러너 접수처가 아니라 당일 지급)",
+        "완주 메달·메달 리본(완주자)",
+        "오리지널 후로시키(보자기) — 러너 접수를 마친 해외 러너 한정"
       ],
-      pending:
-        '선택 구매 기념품(신청 때만 주문 가능)으로 오리지널 넥게이터 2,500엔·오리지널 마이컵 1,200엔이 있었습니다. 배번호 등은 대회 전 이틀(2027년 2월 19일 13:30~20:00, 20일 10:30~19:00, 일본시간=한국시간 동일) 교토 미야코메세에서 본인이 신분증 원본을 들고 직접 받아야 하며, 대회 당일 수령과 대리 수령은 안 됩니다.',
-      verifiedAt: '2026-10-20',
+      "pending": "선택 구매 기념품(신청 때만 주문 가능)으로 오리지널 넥게이터 2,500엔·오리지널 마이컵 1,200엔이 있었습니다. 배번호 등은 대회 전 이틀(2027년 2월 19일 13:30~20:00, 20일 10:30~19:00, 일본시간=한국시간 동일) 교토 미야코메세에서 본인이 신분증 원본을 들고 직접 받아야 하며, 대회 당일 수령과 대리 수령은 안 됩니다.",
+      "verifiedAt": "2026-11-10"
     },
-    registrationStart: '2026-07-16',
-    registrationEnd: '2026-09-30',
-    lastVerified: '2026-10-20',
+    registrationStart: "2026-07-16",
+    registrationEnd: "2026-09-30",
+    lastVerified: "2026-11-10",
+    registrationNote: "11/10 공식 영문 접수 마감 확인. 09:00~15:00 신호총 기준 6시간이며 중간 관문이 있다. 신청 후 개인 사정 변경·취소·환불 불가와 대회 전체 취소 규정은 구분해 확인.",
   },
   {
-    id: 'osaka-marathon-2027',
-    name: '오사카 마라톤 2027',
-    date: '2027-02-28',
-    month: '2월',
-    location: '오사카부청 앞 출발 → 오사카성 공원 도착',
-    region: '오사카',
-    distances: ['풀코스'],
-    status: '마감',
+    id: "osaka-marathon-2027",
+    name: "오사카 마라톤 2027",
+    date: "2027-02-28",
+    month: "2월",
+    location: "오사카부청 앞 출발 → 오사카성 공원 도착",
+    region: "오사카",
+    distances: [
+      "풀코스"
+    ],
+    status: "마감",
     isMajor: true,
-    website: 'https://www.osaka-marathon.com/',
-    registrationNote:
-      '접수 종료 — 일반 응모는 8월 28일(금) 17시(JST)에 마감됐고, 추첨 결과는 9월 28일(월) 이메일로 발송됐습니다. 해외(JTB 스포츠 스테이션) 당첨자 결제 기한 10월 19일(월) 23:59(JST)도 지났습니다(JTB 2026-09-29 확인). 자선 러너 접수도 종료됐고(공식 2026-10-20 공지), 같은 날 공식 공지 목록에 추가 당선 안내는 없습니다',
-    description:
-      '제15회 대회. 한국 거주자는 JTB스포츠스테이션에서 신청하며, 참가료 145 USD에 필수 자선모금 10 USD와 수수료 11%가 붙어 실제 결제액은 약 172 USD. 정원 초과로 추첨했고 결과는 2026년 9월 28일 이메일로 발송됐다. 해외 당첨자 결제 기한은 10월 19일 23:59(일본시간)였다. 일반 접수가 닫힌 뒤 열려 있던 자선 러너(국내외 합계 1,000명 선착순, 참가비 145 USD·기부 485 USD) 접수도 10월 19일 17시(일본시간) 기한 이후 종료됐다(공식 2026-10-20 공지).',
+    website: "https://jtbsports.jp/en/detail/nays3",
+    registrationNote: "해외 JTB 일반 신청은 8월 28일 17시 JST 마감. 결과는 9월 28일 대표자에게 발송, 당첨자 납부는 10월 19일 23:59 종료. 그룹은 대표자가 결과를 전달·납부한다. 2027년 2월 26일 11:00~19:00·27일 10:00~18:00 INTEX 6호관 본인 수령, 당일·대리 수령 불가(11/10 JTB 공개 안내 대조).",
+    description: "2월 28일 09:15 첫 웨이브, 16:15 종료. 해외 개인 US$145·그룹 1인 US$150에 최소 자선기부 US$10과 해외 사무수수료 11%가 추가된다. 개인 최소 구성 (145+10)×1.11=US$172.05는 산술 예시이며 선택 상품·추가 기부·카드 수수료로 실제 부담은 달라진다. 일반 신청·납부 기한은 종료됐다.",
     courseInfo: {
-      terrain: '평지',
-      difficulty: '중급',
-      certification: 'AIMS',
-      courseDescription:
-        '오사카의 메인 스트리트를 관통한다. 미도스지, 난바·도톤보리, 교세라돔 오사카, 나카노시마를 지나 오사카성 공원에서 끝난다.',
+      "courseDescription": "오사카부청 앞에서 출발해 오사카성 공원에서 끝나는 풀마라톤 코스. 본인 웨이브와 관문은 최종 참가자 안내에서 확인한다."
     },
     raceInfo: {
-      timeLimits: [{ distance: '풀코스', hours: 7, minutes: 0 }],
-      expectedParticipants: 31970,
+      "timeLimits": [
+        {
+          "distance": "풀코스",
+          "hours": 7,
+          "minutes": 0
+        }
+      ],
+      "startTime": "09:15"
     },
-    registrationStart: '2026-07-28',
-    registrationEnd: '2026-08-28',
-    lastVerified: '2026-10-20',
+    registrationStart: "2026-07-28",
+    registrationEnd: "2026-08-28",
+    lastVerified: "2026-11-10",
   },
 ];
