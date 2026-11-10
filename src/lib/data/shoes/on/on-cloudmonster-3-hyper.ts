@@ -6,10 +6,11 @@ export const shoe: Shoe = {
   slug: 'on-cloudmonster-3-hyper',
   brand: 'On',
   name: '클라우드몬스터 3 하이퍼',
+  imageCaption: "클라우드몬스터 3 하이퍼 사진은 On 공식 상품 갤러리 3MG10064906(Lily )의 모델·색상·구도와 대조했습니다. 사진 품번을 한국 현재 판매 규격·가격으로 읽지 마세요. 다른 색상 Glacier | Black의 기존 측면 사진 한 장은 갤러리에서 제외했습니다.",
+  imageSource: {"title":"On 공식 상품 갤러리","url":"https://www.on.com/en-kr/products/cloudmonster-3-hyper-3mg1006/mens/lily-limelight-shoes-3MG10064906"},
   image: '/images/shoes/on/cloudmonster3hyper/side.webp',
   images: [
     '/images/shoes/on/cloudmonster3hyper/side.webp',
-    '/images/shoes/on/cloudmonster3hyper/front.webp',
     '/images/shoes/on/cloudmonster3hyper/back.webp',
     '/images/shoes/on/cloudmonster3hyper/top.webp',
     '/images/shoes/on/cloudmonster3hyper/angle.webp',

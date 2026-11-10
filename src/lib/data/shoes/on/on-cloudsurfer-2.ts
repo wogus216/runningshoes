@@ -6,7 +6,9 @@ export const shoe: Shoe = {
     slug: "on-cloudsurfer-2",
     brand: "On",
     name: "클라우드서퍼 2",
-    image: "/images/shoes/on/cloudsurfer2.webp",
+  imageCaption: "클라우드서퍼 2 사진은 On 공식 상품 갤러리 3MF10121043(Black )의 모델·색상·구도와 대조했습니다. 사진 품번을 한국 현재 판매 규격·가격으로 읽지 마세요.",
+  imageSource: {"title":"On 공식 상품 갤러리","url":"https://www.on.com/ko-kr/products/cloudsurfer-2-3mf1012/mens/black-black-shoes-3MF10121043"},
+    image: "/images/shoes/on/cloudsurfer2/side.webp",
     images: [
       "/images/shoes/on/cloudsurfer2/side.webp",
       "/images/shoes/on/cloudsurfer2/front.webp",

@@ -6,7 +6,9 @@ export const shoe: Shoe = {
   slug: 'on-cloudmonster-hyper',
   brand: 'On',
   name: '클라우드몬스터 하이퍼',
-  image: '/images/shoes/on/cloudmonster_Hyper.webp',
+  imageCaption: "클라우드몬스터 하이퍼 사진은 On 공식 상품 갤러리 3ME10134323(Fade )의 모델·색상·구도와 대조했습니다. 사진 품번을 한국 현재 판매 규격·가격으로 읽지 마세요.",
+  imageSource: {"title":"On 공식 상품 갤러리","url":"https://www.on.com/en-us/products/cloudmonster-hyper-m-3me1013/mens/fade-lime-shoes-3ME10134323"},
+  image: '/images/shoes/on/cloudmonsterhyper/side.webp',
   images: [
     '/images/shoes/on/cloudmonsterhyper/side.webp',
     '/images/shoes/on/cloudmonsterhyper/front.webp',

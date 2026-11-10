@@ -6,6 +6,8 @@ export const shoe: Shoe = {
     slug: "on-cloudboom-strike-2-lightspray",
     brand: "On",
     name: "라이트스프레이 클라우드붐 스트라이크 2",
+  imageCaption: "라이트스프레이 클라우드붐 스트라이크 2 사진은 On 공식 LightSpray 모델 3UG30022929(White ) 갤러리와 대조했습니다. 일반 클라우드붐 스트라이크 제품 사진·사양과 혼동하지 마세요.",
+  imageSource: {"title":"On 공식 상품 갤러리","url":"https://www.on.com/ko-kr/products/cloudboom-strike-2-ls-u-3ug3002/unisex/white-lime-shoes-3UG30022929"},
     image: "/images/shoes/on/cloudboomstrike2ls/side.webp",
     images: [
       "/images/shoes/on/cloudboomstrike2ls/side.webp",

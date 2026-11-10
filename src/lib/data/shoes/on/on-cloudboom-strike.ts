@@ -6,6 +6,8 @@ export const shoe: Shoe = {
     slug: "on-cloudboom-strike",
     brand: "On",
     name: "클라우드붐 스트라이크",
+  imageCaption: "클라우드붐 스트라이크 사진은 On 공식 상품 갤러리 3ME30483195(White )의 모델·색상·구도와 대조했습니다. 사진 품번을 한국 현재 판매 규격·가격으로 읽지 마세요.",
+  imageSource: {"title":"On 공식 상품 갤러리","url":"https://www.on.com/ko-kr/products/cloudboom-strike-3me3048/mens/white-horizon-shoes-3ME30483195"},
     image: "/images/shoes/on/cloudboomStrike.webp",
     images: [
       "/images/shoes/on/cloudboomstrike/side.webp",

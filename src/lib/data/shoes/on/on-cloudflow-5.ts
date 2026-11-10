@@ -6,6 +6,8 @@ export const shoe: Shoe = {
     slug: "on-cloudflow-5",
     brand: "On",
     name: "클라우드플로우 5",
+  imageCaption: "클라우드플로우 5 사진은 On 공식 여성 상품 3WF10092929(White ) 갤러리와 대조했습니다. 이 사진을 남성 상품의 폭·규격 근거로 읽지 마세요.",
+  imageSource: {"title":"On 공식 상품 갤러리","url":"https://www.on.com/ko-kr/products/cloudflow-5-w-3wf1009/womens/white-lime-shoes-3WF10092929"},
     image: "/images/shoes/on/cloudflow5.webp",
     images: [
       "/images/shoes/on/cloudflow5/side.webp",

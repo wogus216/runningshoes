@@ -537,3 +537,21 @@ Horizon8의 기존 BOA 다이얼 신발 사진 5장은 공식 WAVE HORIZON 8과 
 | asics-megablast | 1013A170-500 · EDO PURPLE/BLACK | [원문](https://www.asics.com/ph/en-ph/megablast/p/1013A170-500.html) |
 
 노바블라스트 5·카야노 32의 사진은 TOKYO 색상 상품입니다. GEL-VENTURE 10은 공식 색상명 미확인입니다. 사진 식별은 현재 한국 판매·가격·제품 전체 사양·촬영권리의 인증이 아닙니다.
+
+## 2026-11-11 On 9종 사진 출처 대조
+
+기존 51장을 공식 상품 갤러리의 품번·색상·실제 구도와 대조했습니다. Cloudrunner 2, Cloudmonster Hyper, Cloudsurfer 2의 대표 이미지는 갤러리와 다른 색상이어서 같은 품번의 기존 측면 사진으로 바꿨습니다. Cloudrunner 2 기존 대표 이미지의 정확한 미디어 원본은 확인하지 못했습니다. Cloudmonster 3 Hyper의 다른 색상 측면 사진 한 장은 갤러리 참조에서 제외했습니다. 기존 파일 자체는 보존했습니다.
+
+| 모델 | 현재 갤러리 사진 품번·색상 | 공식 출처 |
+|---|---|---|
+| on-cloudboom-strike | 3ME30483195 · White  | [원문](https://www.on.com/ko-kr/products/cloudboom-strike-3me3048/mens/white-horizon-shoes-3ME30483195) |
+| on-cloudmonster-3-hyper-lightspray | 3UG10014670 · Black  | [원문](https://www.on.com/ko-kr/products/cloudmonster-3-hyper-ls-u-3ug1001/unisex/black-apollo-shoes-3UG10014670) |
+| on-cloudrunner-2 | 3ME10140264 · Eclipse  | [원문](https://www.on.com/en-dk/products/cloudrunner-2-m-3me1014/mens/eclipse-black-shoes-3ME10140264) |
+| on-cloudmonster-hyper | 3ME10134323 · Fade  | [원문](https://www.on.com/en-us/products/cloudmonster-hyper-m-3me1013/mens/fade-lime-shoes-3ME10134323) |
+| on-cloudflow-5 | 3WF10092929 · White  | [원문](https://www.on.com/ko-kr/products/cloudflow-5-w-3wf1009/womens/white-lime-shoes-3WF10092929) |
+| on-cloudboom-strike-2-lightspray | 3UG30022929 · White  | [원문](https://www.on.com/ko-kr/products/cloudboom-strike-2-ls-u-3ug3002/unisex/white-lime-shoes-3UG30022929) |
+| on-cloudsurfer-2 | 3MF10121043 · Black  | [원문](https://www.on.com/ko-kr/products/cloudsurfer-2-3mf1012/mens/black-black-shoes-3MF10121043) |
+| on-cloudmonster-2 | 3ME10121043 · Black  | [원문](https://www.on.com/en-us/products/cloudmonster-2-m-3me1012/mens/black-black-shoes-3ME10121043) |
+| on-cloudmonster-3-hyper | 3MG10064906 · Lily  | [원문](https://www.on.com/en-kr/products/cloudmonster-3-hyper-3mg1006/mens/lily-limelight-shoes-3MG10064906) |
+
+기존 front/back/top/outsole 파일명과 실제 촬영 구도가 다른 컷이 있습니다. 화면에서는 사진 번호만 사용합니다. 해외 상품 사진은 한국 판매·가격·폭·재고·촬영권리의 근거가 아닙니다.

@@ -7,6 +7,8 @@ export const shoe: Shoe = {
     noindex: true,
     brand: "On",
     name: "클라우드몬스터 3 하이퍼 라이트스프레이",
+  imageCaption: "클라우드몬스터 3 하이퍼 라이트스프레이 사진은 On 공식 상품 갤러리 3UG10014670(Black )의 모델·색상·구도와 대조했습니다. 사진 품번을 한국 현재 판매 규격·가격으로 읽지 마세요.",
+  imageSource: {"title":"On 공식 상품 갤러리","url":"https://www.on.com/ko-kr/products/cloudmonster-3-hyper-ls-u-3ug1001/unisex/black-apollo-shoes-3UG10014670"},
     image: "/images/shoes/on/cloudmonster3hyperls/side.webp",
     images: [
       "/images/shoes/on/cloudmonster3hyperls/side.webp",

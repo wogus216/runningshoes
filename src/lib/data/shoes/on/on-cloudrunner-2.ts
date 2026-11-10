@@ -6,7 +6,9 @@ export const shoe: Shoe = {
     slug: "on-cloudrunner-2",
     brand: "On",
     name: "클라우드러너 2",
-    image: "/images/shoes/on/cloudrunner2.webp",
+  imageCaption: "클라우드러너 2 사진은 On 공식 상품 갤러리 3ME10140264(Eclipse )의 모델·색상·구도와 대조했습니다. 사진 품번을 한국 현재 판매 규격·가격으로 읽지 마세요.",
+  imageSource: {"title":"On 공식 상품 갤러리","url":"https://www.on.com/en-dk/products/cloudrunner-2-m-3me1014/mens/eclipse-black-shoes-3ME10140264"},
+    image: "/images/shoes/on/cloudrunner2/side.webp",
     images: [
       "/images/shoes/on/cloudrunner2/side.webp",
       "/images/shoes/on/cloudrunner2/front.webp",
