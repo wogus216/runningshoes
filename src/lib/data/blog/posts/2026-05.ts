@@ -284,551 +284,145 @@ export const posts_2026_05: BlogPost[] = [
     ],
   },
   {
-    id: 'daejeon-unique-running-courses-7',
-    slug: 'daejeon-unique-running-courses-7',
-    title: '대전 달리기 좋은 곳 7선 | 대전 러닝 코스 — 계족산 황톳길 맨발런부터 대청호 둘레까지',
-    description: '계족산 황톳길 맨발 러닝부터 갑천 도심 하천, 대청호 오백리길, 장태산 메타세쿼이아 숲까지 대전에서 달리기 좋은 러닝 코스 7곳을 거리·난이도·시간대·러닝화 추천까지 정리. 계족산·갑천·대청호·한밭수목원·보문산·장태산·유등천 각 코스별 출발지·노면·주의점 가이드.',
-    thumbnail: '/images/blog/daejeon-unique-running-courses-7.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-05-29',
-    updatedAt: '2026-08-19',
-    category: 'guide' as const,
-    readingTime: 11,
-    tags: ['대전 달리기', '대전 러닝코스', '대전 러닝 코스', '이색 러닝', '계족산 황톳길', '맨발 러닝', '갑천', '대청호 오백리길', '한밭수목원', '보문산', '장태산 메타세쿼이아', '대전 마라톤'],
-    content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>대전은 황톳길·3대 하천·호수·숲을 결합한 중부권 러닝 거점</strong> — 특히 계족산 황톳길(14.5km 맨발 황토)은 전국에서 찾는 대전만의 이색 코스</li>
-    <li>갑천·유등천·대전천 3대 하천이 도심을 흐르고, 대청호·장태산·보문산이 외곽을 둘러싼 <strong>"숲의 도시"</strong></li>
-    <li>각 코스별 <strong>출발지·거리·노면·시간대·주의점 + 어울리는 러닝화 카테고리</strong>까지 한 번에 정리</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">🌲</span>
-  <div class="callout-body">
-    <p class="callout-title">대전 러닝만의 매력</p>
-    <p><strong>대전에서 달리기 좋은 곳</strong>을 찾는다면 황톳길부터 호수까지 선택지가 다양합니다. 대전은 <strong>황톳길(계족산)·도심 하천(갑천·유등천·대전천)·호수(대청호)·숲(장태산·한밭수목원)·산(보문산)</strong>이 어우러진 중부권 도시입니다. 무엇보다 <strong>계족산 황톳길</strong>은 14.5km 임도에 황토를 깔아 맨발로 걷고 뛰는 전국적 명소로, 다른 도시엔 없는 대전만의 시그니처 코스. 도심엔 3대 하천이 흘러 평지 러닝이 풍부하고, 외곽 대청호·장태산은 숲과 호수 트레일을 제공합니다. 본인 발 특성·부상 이력에 맞는 러닝화 후보는 <a href="/recommend">1분 러닝화 추천</a>에서 받을 수 있습니다.</p>
-  </div>
-</div>
-
-<h2>한눈에 비교</h2>
-
-<table>
-  <thead>
-    <tr><th>#</th><th>코스</th><th>거리</th><th>난이도</th><th>특이점</th><th>추천 시간대</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>1</td><td><strong>계족산 황톳길</strong></td><td>약 14.5km (임도 순환)</td><td>중 (완만 임도)</td><td>맨발 황토 + 편백숲 — 대전 시그니처</td><td>맑은 날 오전</td></tr>
-    <tr><td>2</td><td><strong>갑천 둔치</strong></td><td>5~15km (도심 종주)</td><td>하 (평지)</td><td>도심 관통 하천 — 대전의 한강</td><td>새벽·야간</td></tr>
-    <tr><td>3</td><td><strong>대청호 오백리길</strong></td><td>5~12km (구간 선택)</td><td>중 (트레일)</td><td>호수 둘레 + 전망</td><td>맑은 날 오전</td></tr>
-    <tr><td>4</td><td><strong>한밭수목원 + 엑스포시민광장</strong></td><td>약 3~5km</td><td>하 (평지)</td><td>국내 최대 도심 수목원 + 분수</td><td>평일 새벽·저녁</td></tr>
-    <tr><td>5</td><td><strong>보문산</strong></td><td>약 4~7km</td><td>중 (오르막)</td><td>도심 근접 산 + 전망대</td><td>맑은 날 오전</td></tr>
-    <tr><td>6</td><td><strong>장태산자연휴양림</strong></td><td>약 4~6km</td><td>하~중</td><td>메타세쿼이아 숲 + 스카이워크</td><td>오전·한낮(숲 그늘)</td></tr>
-    <tr><td>7</td><td><strong>유등천·대전천 둔치</strong></td><td>5~10km</td><td>하 (평지)</td><td>도심 하천 + 합류부</td><td>새벽·야간</td></tr>
-  </tbody>
-</table>
-
-<h2>1. 계족산 황톳길 — 맨발로 달리는 대전 시그니처</h2>
-
-<p><strong>출발지</strong>: 계족산 장동산림욕장 입구 (대덕구, 버스·차량)<br>
-<strong>거리</strong>: 약 14.5km (임도 순환)<br>
-<strong>노면</strong>: 황토 + 임도 흙길<br>
-<strong>추천 시간대</strong>: 맑은 날 오전 (비 온 직후 제외)</p>
-
-<p>계족산 황톳길은 <strong>14.5km 임도에 황토를 깔아 맨발로 걷고 뛰는</strong> 전국적 명소로, 대전을 대표하는 이색 코스입니다. 편백숲과 어우러진 황톳길을 맨발로 밟는 경험은 다른 도시에선 할 수 없는 대전만의 것. 산소길·둘레길과 연결돼 거리를 조절할 수 있습니다.</p>
-
-<p><strong>이 코스의 매력</strong>: 맨발 황토 러닝이라는 독보적 경험 + 편백 피톤치드. 황토가 발 충격을 부드럽게 받아주지만, <strong>맨발은 부상·이물질 위험</strong>이 있으니 처음엔 걷기부터, 발 상태를 보며 천천히. 비 온 직후엔 질척이고 미끄러워 피하세요. 입구에 세족장이 있습니다.</p>
-
-<p><strong>어울리는 러닝화</strong>: 맨발 체험이 핵심이라 신발을 벗는 구간이 많지만, 신고 뛴다면 <strong>가벼운 트레일화나 배수 좋은 신발</strong>. <a href="/shoes/asics-gel-venture-10">젤 벤처 10</a> 같은 가성비 트레일화가 무난합니다. 맨발 입문은 무리하지 말고 짧게 시작하세요.</p>
-
-<h2>2. 갑천 둔치 — 대전의 한강, 도심 관통 하천</h2>
-
-<p><strong>출발지</strong>: 한밭대교·갑천대교 등 도심 다리마다 진입<br>
-<strong>거리</strong>: 5~15km (도심 종주, 거리 자유)<br>
-<strong>노면</strong>: 우레탄 산책로 + 자전거도로<br>
-<strong>추천 시간대</strong>: 새벽·야간</p>
-
-<p>갑천은 대전 서부를 관통하는 하천으로, <strong>둔산·엑스포 일대를 흐르는 대전 러너의 홈 그라운드</strong>입니다. 둔치를 따라 산책로·자전거도로가 길게 이어져 거리 조절이 자유롭고, 신호 없이 5km부터 15km LSD까지 소화할 수 있습니다.</p>
-
-<p><strong>이 코스의 매력</strong>: 접근성 최고 + 거리 무제한 + 신호 없는 평지. 한밭수목원·엑스포광장과 가까워 도심 러닝의 중심입니다. 여름엔 그늘이 적으니 새벽·야간을 권합니다.</p>
-
-<p><strong>어울리는 러닝화</strong>: 평지 장거리 LSD. <a href="/shoes/new-balance-1080-v15">NB 1080 v15</a>·<a href="/shoes/asics-gel-nimbus-28">님버스 28</a> 같은 맥스 쿠션, 또는 <a href="/shoes/saucony-ride-19">라이드 19</a> 같은 데일리.</p>
-
-<h2>3. 대청호 오백리길 — 호수 둘레 트레일</h2>
-
-<p><strong>출발지</strong>: 대청호 인근 구간별 입구 (동구·대덕구, 차량)<br>
-<strong>거리</strong>: 5~12km (구간 선택)<br>
-<strong>노면</strong>: 흙길 + 데크 + 일부 임도·아스팔트<br>
-<strong>추천 시간대</strong>: 맑은 날 오전</p>
-
-<p>대청호 오백리길은 <strong>충청권 식수원인 대청호 둘레</strong>를 잇는 트레일로, 호수와 숲을 끼고 달리는 풍경이 일품입니다. 전체는 길지만 구간을 끊어 5~12km로 조절할 수 있어 트레일 입문~중급 모두 즐길 수 있습니다.</p>
-
-<p><strong>이 코스의 매력</strong>: 도심에서 멀지 않은 호수 트레일. 물안개 낀 새벽·단풍철이 특히 아름답습니다. 다만 <strong>흙길·데크·오르막</strong>이 섞여 일반 데일리화로는 한계가 있고, 일부 구간은 한적하니 단독 야간 러닝은 피하세요.</p>
-
-<p><strong>어울리는 러닝화</strong>: 트레일 + 안정성. <a href="/shoes/adidas-terrex-agravic-4">테렉스 아그라빅 4</a>·<a href="/shoes/asics-gel-venture-10">젤 벤처 10</a> 같은 트레일화. 신발 선택은 <a href="/blog/2026-best-trail-running-shoes">2026 트레일 러닝화 베스트</a> 참고.</p>
-
-<h2>4. 한밭수목원 + 엑스포시민광장 — 도심 속 국내 최대 수목원</h2>
-
-<p><strong>출발지</strong>: 대전 지하철 1호선 정부청사역·시청역 (도보 10분)<br>
-<strong>거리</strong>: 약 3~5km (수목원 + 광장 루프)<br>
-<strong>노면</strong>: 우레탄 + 아스팔트 산책로<br>
-<strong>추천 시간대</strong>: 평일 새벽·저녁</p>
-
-<p>한밭수목원은 <strong>국내 최대 규모의 도심 인공 수목원</strong>으로, 둔산 도심 한복판에 있습니다. 엑스포시민광장·갑천과 연결돼 평탄한 산책로 루프를 달릴 수 있고, 나무가 많아 그늘이 풍부합니다.</p>
-
-<p><strong>이 코스의 매력</strong>: 신호 없는 도심 수목원 평지 + 풍부한 그늘 + 사계절 풍경. 무릎 부담이 적고 접근성이 좋아 입문·회복 러닝에 적합. 엑스포광장 분수와 야간 조명도 운치를 더합니다.</p>
-
-<p><strong>어울리는 러닝화</strong>: 다목적 데일리. <a href="/shoes/nike-pegasus-42">페가수스 42</a>·<a href="/shoes/saucony-ride-19">라이드 19</a>. 인터벌을 섞는다면 <a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a> 같은 슈퍼트레이너.</p>
-
-<h2>5. 보문산 — 도심 근접 산 트레일</h2>
-
-<p><strong>출발지</strong>: 대전 중구 보문산공원 입구 (버스·차량)<br>
-<strong>거리</strong>: 약 4~7km (둘레·전망대 코스)<br>
-<strong>노면</strong>: 흙길 + 돌계단 + 임도<br>
-<strong>추천 시간대</strong>: 맑은 날 오전</p>
-
-<p>보문산은 대전 도심 남쪽에 바로 붙은 산으로, <strong>보운대(전망대)와 둘레길</strong>을 따라 트레일 러닝이 가능합니다. 전망대에서는 대전 시가지가 한눈에 들어오고, 도심에서 가까워 산악 러닝 입문에 적합합니다.</p>
-
-<p><strong>이 코스의 매력</strong>: 도심 근접 산 트레일 + 시가지 전망. 다만 <strong>흙길·돌계단·오르막</strong>이 섞여 일반 데일리화로는 한계가 있고, 우천 후엔 미끄럽습니다. 입문자는 무리한 정상보다 둘레·전망대 코스를 권합니다.</p>
-
-<p><strong>어울리는 러닝화</strong>: 트레일 입문~중급. <a href="/shoes/asics-gel-venture-10">젤 벤처 10</a>(가성비)·<a href="/shoes/adidas-terrex-agravic-4">테렉스 아그라빅 4</a>(접지력). 일반 데일리·카본화는 비추.</p>
-
-<h2>6. 장태산자연휴양림 — 메타세쿼이아 숲길</h2>
-
-<p><strong>출발지</strong>: 장태산자연휴양림 (서구, 차량)<br>
-<strong>거리</strong>: 약 4~6km (숲길·둘레)<br>
-<strong>노면</strong>: 흙길 + 데크 + 완만한 임도<br>
-<strong>추천 시간대</strong>: 오전·한낮 (숲 그늘)</p>
-
-<p>장태산자연휴양림은 <strong>하늘로 쭉 뻗은 메타세쿼이아 숲</strong>으로 유명한 곳으로, 스카이워크와 어우러진 숲길이 매력적입니다. 비교적 완만해 트레일 입문자도 부담 없이 숲의 정취를 즐기며 달릴 수 있습니다.</p>
-
-<p><strong>이 코스의 매력</strong>: 이국적인 메타세쿼이아 숲 러닝 + 피톤치드. 숲 그늘 덕에 한낮에도 시원하고, 가을 단풍이 특히 아름답습니다. 데크·흙길이 섞여 미끄럼에 주의하고, 휴양림 운영 시간을 확인하세요.</p>
-
-<p><strong>어울리는 러닝화</strong>: 완만 숲길 + 약간의 데크. <a href="/shoes/hoka-clifton-10">호카 클리프턴 10</a>·<a href="/shoes/on-cloudmonster-3">클라우드몬스터 3</a> 같은 쿠션 데일리도 무난합니다.</p>
-
-<h2>7. 유등천·대전천 둔치 — 도심 하천과 합류부</h2>
-
-<p><strong>출발지</strong>: 유등천·대전천 도심 다리마다 진입<br>
-<strong>거리</strong>: 5~10km<br>
-<strong>노면</strong>: 우레탄 산책로 + 자전거도로<br>
-<strong>추천 시간대</strong>: 새벽·야간</p>
-
-<p>유등천과 대전천은 대전 도심 남부·중심을 흐르는 하천으로, 갑천과 함께 <strong>대전 3대 하천</strong>을 이룹니다. 둔산 위주의 갑천과 달리 원도심·중구 쪽 러너에게 가까운 평지 코스이며, 세 하천이 만나는 합류부까지 연결됩니다.</p>
-
-<p><strong>이 코스의 매력</strong>: 원도심 접근성 + 신호 없는 평지 + 거리 조절. 갑천보다 한적한 구간이 많아 차분한 러닝에 좋습니다. 여름엔 그늘이 적으니 새벽·야간을 권합니다.</p>
-
-<p><strong>어울리는 러닝화</strong>: 평지 데일리. <a href="/shoes/nike-pegasus-41">페가수스 41</a>·<a href="/shoes/saucony-ride-19">사우코니 라이드 19</a> 같은 통기성 좋은 데일리화.</p>
-
-<h2>본인 대전 거주지·목적별 추천 코스</h2>
-
-<ul>
-  <li><strong>둔산·서구 거주</strong>: <strong>갑천 둔치</strong>(도심 하천 LSD) + <strong>한밭수목원</strong>(평지 루프)</li>
-  <li><strong>중구·원도심 거주</strong>: <strong>유등천·대전천</strong>(도심 하천) 또는 <strong>보문산</strong>(도심 산)</li>
-  <li><strong>대덕구·동구 거주</strong>: <strong>계족산 황톳길</strong>(맨발 이색) 또는 <strong>대청호 오백리길</strong>(호수 트레일)</li>
-  <li><strong>이색 경험·힐링</strong>: <strong>계족산 황톳길</strong>(맨발 황토) · <strong>장태산</strong>(메타세쿼이아 숲)</li>
-  <li><strong>트레일 입문</strong>: <strong>보문산</strong>(도심 근접) → <strong>대청호 오백리길</strong>(호수 트레일)</li>
-</ul>
-
-<h2>이런 코스 뛸 때 필요한 러닝화 카테고리</h2>
-
-<ul>
-  <li><strong>평지 하천·수목원 (갑천·유등천·한밭)</strong>: 가성비 데일리 + 통기성. <a href="/blog/saucony-ride-18-vs-19-comparison">사우코니 라이드 18 vs 19 비교</a> · <a href="/blog/nike-pegasus-41-vs-42-comparison">페가수스 41 vs 42 비교</a></li>
-  <li><strong>하천 LSD·맥스 쿠션</strong>: <a href="/blog/new-balance-1080-v14-vs-v15-comparison">NB 1080 v14 vs v15 비교</a></li>
-  <li><strong>산·호수 트레일 (보문산·대청호·계족산)</strong>: 접지력·안정성 트레일화. <a href="/blog/2026-best-trail-running-shoes">2026 트레일 러닝화 베스트 7</a> — 코스 난이도별 선택 가이드</li>
-  <li><strong>숲 힐링런 (장태산)</strong>: 쿠션 데일리 또는 가벼운 트레일. <a href="/blog/on-cloudmonster-2-vs-3-comparison">클라우드몬스터 2 vs 3 비교</a></li>
-</ul>
-
-<h2>대전 러닝 — 황톳길 맨발런과 러닝 여행</h2>
-
-<div class="callout tip">
-  <span class="callout-icon">🦶</span>
-  <div class="callout-body">
-    <p class="callout-title">계족산 황톳길, 맨발 러닝 안전하게 즐기는 법</p>
-    <p>대전의 시그니처 <strong>계족산 황톳길</strong>은 맨발 경험이 핵심입니다. ① 처음엔 <strong>걷기부터</strong> 시작해 발바닥을 적응시키고, ② 유리·돌 등 이물질에 주의하며, ③ 비 온 직후는 미끄러우니 피하고, ④ 끝나면 입구 <strong>세족장</strong>에서 발을 씻으세요. 당뇨 등으로 발 감각이 둔한 분은 맨발을 피하는 게 안전합니다. KTX·SRT로 서울에서 약 1시간이라 주말 러닝 여행도 좋습니다 — 계족산 황톳길 + 대청호를 묶어보세요. 다른 지역 코스가 궁금하다면 <a href="/blog/seoul-unique-running-courses-7">서울</a>·<a href="/blog/busan-unique-running-courses-7">부산</a>·<a href="/blog/incheon-unique-running-courses-7">인천</a>·<a href="/blog/daegu-unique-running-courses-7">대구</a>·<a href="/blog/jeju-unique-running-courses-7">제주 달리기 좋은 곳 7선</a>도 함께 보세요.</p>
-  </div>
-</div>
-
-<h2>FAQ</h2>
-
-<h3>Q. 계족산 황톳길은 정말 맨발로 뛰어야 하나요?</h3>
-<p>맨발이 핵심 경험이지만 필수는 아닙니다. 처음엔 걷기로 발을 적응시키고, 부담되면 가벼운 신발이나 아쿠아슈즈를 신어도 됩니다. 황토가 충격을 부드럽게 받아주지만 이물질·미끄럼 위험이 있으니 무리하지 말고, 발 감각이 둔한 기저질환자는 신발 착용을 권합니다.</p>
-
-<h3>Q. 대전에서 야간 러닝하기 좋은 곳은?</h3>
-<p><strong>갑천 둔치</strong>가 1순위입니다. 도심 구간은 조명이 있어 야간 LSD에 좋고 거리 조절이 자유롭습니다. <strong>한밭수목원·엑스포광장</strong> 일대도 조명이 있어 평지 야간 러닝에 적합합니다. 반면 계족산·대청호·보문산·장태산은 야간에 어둡고 위험하니 낮·오전에 뛰세요.</p>
-
-<h3>Q. 보문산·대청호 트레일은 어떤 신발이 필요한가요?</h3>
-<p>흙길·돌길·오르막이 섞여 일반 도로화로는 미끄럽습니다. <strong>접지력 좋은 트레일화</strong>가 필요하고, 입문은 <a href="/shoes/asics-gel-venture-10">젤 벤처 10</a>, 본격 코스는 <a href="/shoes/adidas-terrex-agravic-4">아그라빅 4</a>를 권합니다. 자세한 선택은 <a href="/blog/2026-best-trail-running-shoes">트레일 러닝화 베스트</a>를 참고하세요.</p>
-
-<h3>Q. 대전 마라톤 대회는 어떤 게 있나요?</h3>
-<p>대전 3대 하천(갑천·유등천·대전천) 둔치를 활용한 도심 마라톤들이 열립니다. 대부분 평지라 기록 도전에 유리하며, 일정은 매년 변동되니 공식 접수 채널에서 확인하세요. 본인 목적(완주·기록)에 맞는 러닝화는 <a href="/recommend">1분 러닝화 추천</a>으로 후보를 좁힐 수 있습니다.</p>
-`,
+    id: "daejeon-unique-running-courses-7",
+    slug: "daejeon-unique-running-courses-7",
+    title: "대전 러닝 계획: 갑천 이동과 한밭수목원 관람·휴원을 나누기",
+    description: "한밭수목원은 11~3월 관람 07~19시·입장 마감 18시이며 동원·서원 휴원일이 다릅니다. 10월 17일 한시 폐쇄를 현재 폐쇄로 오해하지 않고, 갑천과 수목원 내부의 이용 조건을 구분합니다.",
+    thumbnail: "/images/blog/verified-daejeon-unique-running-courses-7-20261110.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-05-29",
+    updatedAt: "2026-11-10",
+    category: "guide",
+    readingTime: 4,
+    tags: [
+      "대전 달리기",
+      "대전 러닝코스",
+      "대전 러닝 코스",
+      "이색 러닝",
+      "계족산 황톳길",
+      "맨발 러닝",
+      "갑천",
+      "대청호 오백리길",
+      "한밭수목원",
+      "보문산",
+      "장태산 메타세쿼이아",
+      "대전 마라톤"
+    ],
+    content: `<p><small>2026년 11월 10일 공개 원문 대조. 동선 제안은 편집자의 계획 예시이며 실제 답사·측량 결과가 아닙니다.</small></p>
+<p>갑천에서 달린 뒤 한밭수목원을 둘러볼 계획이라면 두 공간의 이용 조건을 나눠 보자. 하천길이 이어진다고 수목원 내부도 같은 시간에 통과할 수 있는 것은 아니다. 오늘 방문할 구역과 돌아올 지점을 먼저 정해야 한다.</p>
+<h2>11월은 동절기 시간표와 입장 마감 확인</h2><p><a href="https://www.daejeon.go.kr/gar/contentsHtmlView.do?menuSeq=8024" target="_blank" rel="noopener noreferrer">한밭수목원 현재 이용안내</a>는 동·서원 동절기 11~3월 입장 07:00~18:00·관람 07:00~19:00으로 적는다. 하절기는 4~10월 입장 05:00~20:00·관람 05:00~21:00이다. 예전 공지의 계절 구분을 현재 시간표로 반복하지 않았다.</p><p>동원과 열대식물원은 월요일, 서원은 화요일 휴원이며 공휴일과 겹칠 때 정상 개원 조건이 있다. 열대식물원의 입장·관람시간도 별도다. 다른 구역의 시간표를 복사해 적용하지 말자.</p>
+<h2>서원 임시 폐쇄 공지는 10월 17일 특정 시간</h2><p><a href="https://www.daejeon.go.kr/gar/board/boardNormalView.do?boardId=normal_0084&amp;menuSeq=8033&amp;ntatcSeq=1524162527" target="_blank" rel="noopener noreferrer">10월 8일 게시된 서원 폐쇄 공지</a>는 행사 드론 퍼포먼스에 따라 10월 17일 16:00~21:00 서원 전체의 진입·통행을 제한한다고 안내했다. 지나간 한시 통제로, 현재 계속 닫혀 있다는 공지가 아니다.</p><p>반대로 이 공지가 과거라고 해서 오늘 모든 구역이 열린다는 보장도 없다. <a href="https://daejeon.go.kr/gar/index.do" target="_blank" rel="noopener noreferrer">수목원 최신 공지 목록</a>에서 방문일에 적용되는 운영 변경을 확인하고, 정기 휴원·행사성 통제를 구분하자.</p>
+<h2>갑천 보행과 수목원 관람을 분리한 동선</h2><p><a href="https://www.daejeon.go.kr/riv/rivContentsHtmlView.do?menuSeq=628" target="_blank" rel="noopener noreferrer">대전시 하천 안내</a>는 갑천·유등천·대전천의 산책·자전거 시설과 주변 공원을 소개한다. 각 하천의 시설 길이는 전체 현황이며 출발점에서 돌아오는 내 러닝 루프의 길이는 아니다.</p><p>하천에서 운동을 마치고 허용된 진입로로 수목원을 관람하는 계획을 제안한다. 수목원은 지정 관찰로 이용과 생물 보호를 명시하므로 식재 구역을 가로질러 훈련 거리를 줄이는 동선은 권하지 않는다. 내부 러닝 허용 여부를 이번 관광 자료로 확정한 것은 아니다.</p>
+<h2>운동 뒤 시설은 별도 예약·운영 확인</h2><p>공공 공간의 무료 입장과 샤워·탈의·보관 서비스는 다른 항목이다. 화장실 표시만으로 샤워를 할 수 있다고 안내하지 않았다. 필요한 시설을 실제로 확인한 뒤 복귀 계획에 넣어야 한다.</p><p>계족산 맨발길이나 대청호 전체를 같은 난도로 추천했던 설명도 이번 확인 범위에서 제외했다. 피톤치드나 맨발 달리기의 부상 예방 효과를 장소 소개만으로 보장하지 않는다.</p>
+<h2>자주 묻는 질문</h2><h3>한밭수목원은 11월에도 새벽 5시에 열리나요?</h3><p>현재 이용안내는 11~3월 동·서원 입장 07시~18시·관람 07시~19시로 구분합니다. 하절기 시간표와 다릅니다.</p><h3>서원이 지금도 임시 폐쇄인가요?</h3><p>확인한 공지는 10월 17일 16~21시 한시 통제입니다. 현재 계속 폐쇄된다는 뜻은 아니며 방문일 공지를 따로 확인해야 합니다.</p><h3>갑천에서 바로 수목원을 달려 통과해도 되나요?</h3><p>하천과 수목원은 이용 조건이 다릅니다. 수목원의 지정 관찰로·휴원·현장 규정을 확인해야 하며 전 구역 러닝 허용을 인증하지 않았습니다.</p>`,
+    faqs: [
+      {
+        "question": "한밭수목원은 11월에도 새벽 5시에 열리나요?",
+        "answer": "현재 이용안내는 11~3월 동·서원 입장 07시~18시·관람 07시~19시로 구분합니다. 하절기 시간표와 다릅니다."
+      },
+      {
+        "question": "서원이 지금도 임시 폐쇄인가요?",
+        "answer": "확인한 공지는 10월 17일 16~21시 한시 통제입니다. 현재 계속 폐쇄된다는 뜻은 아니며 방문일 공지를 따로 확인해야 합니다."
+      },
+      {
+        "question": "갑천에서 바로 수목원을 달려 통과해도 되나요?",
+        "answer": "하천과 수목원은 이용 조건이 다릅니다. 수목원의 지정 관찰로·휴원·현장 규정을 확인해야 하며 전 구역 러닝 허용을 인증하지 않았습니다."
+      }
+    ],
   },
   {
-    id: 'jeju-unique-running-courses-7',
-    slug: 'jeju-unique-running-courses-7',
-    title: '제주 달리기 좋은 곳 7선 | 제주도 러닝 코스 — 올레길 해안 절경부터 새별오름 억새까지',
-    description: '제주올레 해안 트레일부터 사려니숲, 협재 에메랄드 해변, 새별오름까지 제주에서 달리기 좋은 러닝 코스 7곳을 거리·난이도·시간대·러닝화 추천까지 정리. 올레 7코스·사려니숲길·협재해변·용두암 해안도로·함덕 서우봉·새별오름·한라산 둘레길 가이드. 러닝 여행자 필독.',
-    thumbnail: '/images/blog/jeju-unique-running-courses-7.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-05-29',
-    updatedAt: '2026-08-19',
-    category: 'guide' as const,
-    readingTime: 11,
-    tags: ['제주 달리기', '제주 러닝코스', '제주 러닝 코스', '이색 러닝', '제주올레', '사려니숲길', '협재해변', '용두암 해안도로', '새별오름', '한라산 둘레길', '러닝 여행', '제주 마라톤'],
-    content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>제주는 바다·숲·오름·해안도로를 한 섬에 결합한 러닝 여행의 끝판왕</strong> — 올레길 해안 절경, 사려니 삼나무숲, 협재 에메랄드 해변, 새별오름 억새 등 육지엔 없는 풍경</li>
-    <li>관광과 러닝을 묶기 좋은 시즌 명소 — 다만 <strong>바람·현무암 돌길·변덕스러운 날씨</strong>가 변수라 코스·신발 선택이 중요</li>
-    <li>각 코스별 <strong>출발지·거리·노면·시간대·주의점 + 어울리는 러닝화 카테고리</strong>까지 한 번에 정리</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">🌊</span>
-  <div class="callout-body">
-    <p class="callout-title">제주 러닝만의 매력</p>
-    <p><strong>제주에서 달리기 좋은 곳</strong>을 찾는다면 제주도 곳곳이 코스가 됩니다. 제주는 <strong>해안(올레·협재·함덕)·숲(사려니·한라산 둘레)·오름(새별·서우봉)·해안도로(용두암~이호)</strong>가 섬 곳곳에 흩어진 러닝 여행지입니다. 에메랄드빛 바다를 끼고 달리다 삼나무 숲으로 들어가고, 억새 가득한 오름을 오르는 경험은 제주에서만 가능. 다만 <strong>바람이 강하고 현무암 돌길·흙길이 많으며 날씨가 자주 바뀌어</strong> 육지 도시 러닝보다 코스·신발·시간대 선택이 더 중요합니다. 본인 발 특성·부상 이력에 맞는 러닝화 후보는 <a href="/recommend">1분 러닝화 추천</a>에서 받을 수 있습니다.</p>
-  </div>
-</div>
-
-<h2>한눈에 비교</h2>
-
-<table>
-  <thead>
-    <tr><th>#</th><th>코스</th><th>거리</th><th>난이도</th><th>특이점</th><th>추천 시간대</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>1</td><td><strong>제주올레 7코스 (외돌개~월평)</strong></td><td>약 15km (구간 분할 가능)</td><td>중 (해안 트레일)</td><td>해안 절벽 + 외돌개 + 돌길</td><td>맑은 날 오전</td></tr>
-    <tr><td>2</td><td><strong>사려니숲길</strong></td><td>약 10km (왕복 조절)</td><td>하~중 (평탄 흙길)</td><td>삼나무 숲 힐링 트레일</td><td>오전·한낮(숲 그늘)</td></tr>
-    <tr><td>3</td><td><strong>협재·금능 해변</strong></td><td>5~8km</td><td>하 (평지)</td><td>에메랄드 바다 + 비양도 뷰</td><td>새벽·해질녘</td></tr>
-    <tr><td>4</td><td><strong>용두암~이호테우 해안도로</strong></td><td>5~9km</td><td>하 (평지)</td><td>제주시 해안 + 말등대 + 일몰</td><td>해질녘·야간</td></tr>
-    <tr><td>5</td><td><strong>함덕해변 + 서우봉</strong></td><td>5~7km (해변+오름)</td><td>하~중</td><td>해변 + 오름 둘레 전망</td><td>새벽·오전</td></tr>
-    <tr><td>6</td><td><strong>새별오름</strong></td><td>약 1.8km 둘레 (확장)</td><td>중 (오르막)</td><td>억새 화산 언덕 + 전망</td><td>맑은 날 오전·해질녘</td></tr>
-    <tr><td>7</td><td><strong>한라산 둘레길 (동백길 등)</strong></td><td>약 7~10km</td><td>중상</td><td>원시림 숲 트레일</td><td>맑은 날 오전</td></tr>
-  </tbody>
-</table>
-
-<h2>1. 제주올레 7코스 — 외돌개에서 만나는 해안 절경 트레일</h2>
-
-<p><strong>출발지</strong>: 외돌개 (서귀포 시내 인근, 버스·차량)<br>
-<strong>거리</strong>: 약 15km (구간 분할 가능)<br>
-<strong>노면</strong>: 해안 흙길 + 돌길 + 일부 데크·아스팔트<br>
-<strong>추천 시간대</strong>: 맑은 날 오전</p>
-
-<p>제주올레 중에서도 손꼽히는 해안 절경 코스. <strong>외돌개·돔베낭길·서건도</strong>를 거치며 서귀포 해안 절벽과 바다를 끼고 달립니다. 전 구간 트레일에 가깝고 풍경이 압도적이라, 제주 러닝 여행의 하이라이트로 꼽힙니다.</p>
-
-<p><strong>이 코스의 매력</strong>: 한국 최고 수준의 해안 트레일 풍경. 다만 <strong>돌길·흙길·계단이 섞여</strong> 일반 도로화로는 발이 배기고 미끄럽습니다. 15km 전체가 부담되면 외돌개~돔베낭길 구간만 짧게 끊어 뛰어도 좋습니다.</p>
-
-<p><strong>어울리는 러닝화</strong>: 접지력 있는 트레일화 또는 안정성 데일리. <a href="/shoes/asics-gel-venture-10">젤 벤처 10</a> 같은 가성비 트레일화나 <a href="/shoes/adidas-terrex-agravic-4">테렉스 아그라빅 4</a>. 신발 선택은 <a href="/blog/2026-best-trail-running-shoes">2026 트레일 러닝화 베스트</a> 참고.</p>
-
-<h2>2. 사려니숲길 — 삼나무 숲 힐링 트레일</h2>
-
-<p><strong>출발지</strong>: 사려니숲길 입구 (비자림로, 버스·차량)<br>
-<strong>거리</strong>: 약 10km (왕복·구간 조절 가능)<br>
-<strong>노면</strong>: 평탄 흙길 + 화산송이(스코리아)<br>
-<strong>추천 시간대</strong>: 오전·한낮 (숲 그늘)</p>
-
-<p>사려니숲길은 <strong>쭉 뻗은 삼나무·편백 숲</strong>을 따라 이어지는 평탄한 트레일. 비교적 완만하고 노면이 부드러워 트레일 입문자도 부담 없이 달릴 수 있고, 숲 그늘 덕에 한낮에도 시원합니다.</p>
-
-<p><strong>이 코스의 매력</strong>: 평탄한 숲 트레일이라 진입 장벽이 낮고, 피톤치드 가득한 힐링 러닝. 화산송이(붉은 흙) 노면이 무릎 충격을 덜어줍니다. 다만 비 온 뒤엔 질척이고, 일부 구간은 통제될 수 있으니 개방 여부를 확인하세요.</p>
-
-<p><strong>어울리는 러닝화</strong>: 평탄 흙길 + 약간의 쿠션. <a href="/shoes/hoka-clifton-10">호카 클리프턴 10</a>·<a href="/shoes/on-cloudmonster-3">클라우드몬스터 3</a> 같은 쿠션 데일리도 무난하고, 비 온 뒤엔 <a href="/shoes/asics-gel-venture-10">젤 벤처 10</a> 같은 트레일화.</p>
-
-<h2>3. 협재·금능 해변 — 에메랄드 바다와 비양도</h2>
-
-<p><strong>출발지</strong>: 협재해수욕장 (한림, 버스·차량)<br>
-<strong>거리</strong>: 5~8km (협재~금능 해변 연결)<br>
-<strong>노면</strong>: 해변 산책로 + 일부 모래·아스팔트<br>
-<strong>추천 시간대</strong>: 새벽·해질녘</p>
-
-<p>협재·금능은 <strong>제주에서 가장 에메랄드빛이 선명한 해변</strong>으로, 비양도를 배경으로 달리는 풍경이 일품입니다. 해변을 잇는 산책로가 평탄해 가벼운 러닝과 인증샷에 좋습니다.</p>
-
-<p><strong>이 코스의 매력</strong>: 에메랄드 바다 + 비양도 뷰의 평지 러닝. 새벽·노을 시간대가 특히 아름답습니다. 단 모래 구간은 발이 빠지니 단단한 산책로 위주로, 바람이 강한 날은 체감이 크게 떨어집니다.</p>
-
-<p><strong>어울리는 러닝화</strong>: 평지 + 통기성. <a href="/shoes/nike-pegasus-41">페가수스 41</a>·<a href="/shoes/saucony-ride-19">사우코니 라이드 19</a> 같은 통기성 좋은 데일리화.</p>
-
-<h2>4. 용두암~이호테우 해안도로 — 제주시 일몰 러닝</h2>
-
-<p><strong>출발지</strong>: 용두암 (제주시, 공항 근접·버스)<br>
-<strong>거리</strong>: 5~9km (해안도로 따라)<br>
-<strong>노면</strong>: 해안 아스팔트 + 보행로<br>
-<strong>추천 시간대</strong>: 해질녘·야간 (일몰·조명)</p>
-
-<p>제주시 용두암에서 이호테우해변까지 이어지는 <strong>해안도로</strong>는 평탄하고 접근성이 좋아 제주시 러너의 데일리 코스입니다. 이호테우의 <strong>말 모양 등대</strong>와 일몰이 명물.</p>
-
-<p><strong>이 코스의 매력</strong>: 평지 해안도로 + 일몰 + 공항 근접. <strong>제주 여행 첫날·마지막날 공항 근처에서 가볍게</strong> 뛰기 좋습니다. 야간엔 조명이 있어 비교적 안전하나, 차도 인접 구간은 주의하세요.</p>
-
-<p><strong>어울리는 러닝화</strong>: 평지 데일리 + 야간 시인성. <a href="/shoes/nike-pegasus-42">페가수스 42</a>·<a href="/shoes/saucony-ride-19">라이드 19</a> 같은 데일리화.</p>
-
-<h2>5. 함덕해변 + 서우봉 — 해변과 오름을 한 번에</h2>
-
-<p><strong>출발지</strong>: 함덕해수욕장 (제주시 동부, 버스·차량)<br>
-<strong>거리</strong>: 5~7km (해변 + 서우봉 둘레)<br>
-<strong>노면</strong>: 해변 산책로 + 오름 흙길·계단<br>
-<strong>추천 시간대</strong>: 새벽·오전</p>
-
-<p>함덕해변의 에메랄드 바다와 바로 옆 <strong>서우봉 오름</strong>을 묶은 코스. 평탄한 해변을 달리다 서우봉 둘레길로 올라 함덕 전경과 바다를 내려다보는 구성이 매력적입니다.</p>
-
-<p><strong>이 코스의 매력</strong>: 해변(평지)과 오름(오르막)을 한 번에. 서우봉 정상에서 보는 함덕 바다가 압권입니다. 오름 구간은 흙길·계단이라 미끄럼에 주의하고, 봄철엔 유채꽃이 더해집니다.</p>
-
-<p><strong>어울리는 러닝화</strong>: 평지 + 오름 결합. <a href="/shoes/asics-gel-nimbus-28">님버스 28</a>·<a href="/shoes/new-balance-1080-v15">NB 1080 v15</a> 같은 맥스 쿠션, 오름 흙길이 많으면 <a href="/shoes/asics-gel-venture-10">젤 벤처 10</a>.</p>
-
-<h2>6. 새별오름 — 억새로 뒤덮인 화산 언덕</h2>
-
-<p><strong>출발지</strong>: 새별오름 주차장 (제주 서부, 차량)<br>
-<strong>거리</strong>: 약 1.8km 둘레 (인근 확장 가능)<br>
-<strong>노면</strong>: 흙길 + 잔디 + 가파른 오르막<br>
-<strong>추천 시간대</strong>: 맑은 날 오전·해질녘</p>
-
-<p>새별오름은 <strong>억새로 유명한 제주 대표 오름</strong>으로, 가을 억새철엔 전국에서 찾는 명소입니다. 둘레는 짧지만 가파른 오르막이 있어 짧고 강한 언덕 훈련에 좋고, 정상 전망이 일품입니다.</p>
-
-<p><strong>이 코스의 매력</strong>: 제주 특유의 화산 오름 + 억새 풍경. 거리는 짧아도 경사가 가팔라 <strong>힐 트레이닝·인터벌</strong> 효과가 큽니다. 다만 잔디·흙 경사라 우천 후 매우 미끄럽고, 바람이 강하니 주의하세요.</p>
-
-<p><strong>어울리는 러닝화</strong>: 가파른 오르막 + 흙·잔디 그립. <a href="/shoes/adidas-terrex-agravic-4">테렉스 아그라빅 4</a> 같은 접지력 좋은 트레일화. 일반 데일리화는 미끄러워 위험합니다.</p>
-
-<h2>7. 한라산 둘레길 — 원시림 숲 트레일</h2>
-
-<p><strong>출발지</strong>: 둘레길 구간별 입구 (동백길 등, 차량)<br>
-<strong>거리</strong>: 약 7~10km (구간별)<br>
-<strong>노면</strong>: 흙길 + 돌길 + 임도<br>
-<strong>추천 시간대</strong>: 맑은 날 오전</p>
-
-<p>한라산 둘레길은 <strong>한라산 중산간을 수평으로 잇는 원시림 트레일</strong>로, 정상 등반과 달리 완만하게 숲을 즐길 수 있습니다(동백길·수악길 등). 깊은 숲의 고요함과 제주 특유의 식생이 매력입니다.</p>
-
-<p><strong>이 코스의 매력</strong>: 본격 숲 트레일 + 원시림. 다만 <strong>돌길·흙길·고도차</strong>가 있어 그립과 발 보호가 중요하고, 통신·날씨 변화에 대비해야 합니다. 일부 구간은 통제되니 개방 여부와 일몰 시간을 반드시 확인하세요.</p>
-
-<p><strong>어울리는 러닝화</strong>: 접지력·안정성 좋은 트레일화. <a href="/shoes/adidas-terrex-agravic-4">테렉스 아그라빅 4</a>·<a href="/shoes/hoka-tecton-x-3">테크톤 X 3</a> 같은 본격 트레일화. <a href="/blog/2026-best-trail-running-shoes">트레일 러닝화 베스트</a>에서 코스별 선택을 확인하세요.</p>
-
-<h2>목적별 추천 코스</h2>
-
-<ul>
-  <li><strong>제주 여행 첫날·공항 근처</strong>: <strong>용두암~이호테우 해안도로</strong> — 평지 일몰 러닝</li>
-  <li><strong>인증샷·에메랄드 바다</strong>: <strong>협재·금능 해변</strong> 또는 <strong>함덕 + 서우봉</strong></li>
-  <li><strong>힐링·숲</strong>: <strong>사려니숲길</strong>(평탄) 또는 <strong>한라산 둘레길</strong>(본격)</li>
-  <li><strong>해안 절경 트레일</strong>: <strong>제주올레 7코스</strong> — 제주 러닝의 하이라이트</li>
-  <li><strong>짧고 강한 언덕 훈련</strong>: <strong>새별오름</strong> — 억새 + 경사</li>
-</ul>
-
-<h2>이런 코스 뛸 때 필요한 러닝화 카테고리</h2>
-
-<ul>
-  <li><strong>평지 해변·해안도로 (협재·용두암·함덕)</strong>: 가성비 데일리 + 통기성. <a href="/blog/saucony-ride-18-vs-19-comparison">사우코니 라이드 18 vs 19 비교</a> · <a href="/blog/nike-pegasus-41-vs-42-comparison">페가수스 41 vs 42 비교</a></li>
-  <li><strong>해변 LSD·맥스 쿠션</strong>: <a href="/blog/new-balance-1080-v14-vs-v15-comparison">NB 1080 v14 vs v15 비교</a></li>
-  <li><strong>올레·오름·한라산 둘레 트레일 (돌길·흙길)</strong>: 접지력·안정성 트레일화. <a href="/blog/2026-best-trail-running-shoes">2026 트레일 러닝화 베스트 7</a> — 코스 난이도별 선택 가이드</li>
-  <li><strong>숲 힐링런 (사려니)</strong>: 쿠션 데일리 또는 가벼운 트레일. <a href="/blog/on-cloudmonster-2-vs-3-comparison">클라우드몬스터 2 vs 3 비교</a></li>
-</ul>
-
-<h2>제주 러닝 여행 — 비행기로 떠나는 러닝</h2>
-
-<div class="callout tip">
-  <span class="callout-icon">✈️</span>
-  <div class="callout-body">
-    <p class="callout-title">러닝 여행지로 제주를 200% 즐기는 법</p>
-    <p>제주는 <strong>관광과 러닝을 묶기 가장 좋은 국내 여행지</strong>입니다. ① 도착 첫날·마지막날은 <strong>용두암~이호테우 해안도로</strong>(공항 근접)에서 가볍게, ② 본 러닝은 <strong>올레 7코스·협재 해변</strong>, ③ 힐링은 <strong>사려니숲길</strong>, ④ 짧고 강하게는 <strong>새별오름</strong>으로 묶으면 완벽한 러닝 여행이 됩니다. 단 <strong>제주는 바람·날씨가 변덕스러우니</strong> 윈드재킷과 여벌, 트레일 코스용 신발을 챙기세요. 다른 지역 코스가 궁금하다면 <a href="/blog/seoul-unique-running-courses-7">서울</a>·<a href="/blog/busan-unique-running-courses-7">부산</a>·<a href="/blog/incheon-unique-running-courses-7">인천</a>·<a href="/blog/daegu-unique-running-courses-7">대구 달리기 좋은 곳 7선</a>도 함께 보세요.</p>
-  </div>
-</div>
-
-<h2>FAQ</h2>
-
-<h3>Q. 제주 러닝과 육지 도시 러닝의 차이는?</h3>
-<p>제주는 도심 하천·공원 위주의 육지 도시와 달리 <strong>해안 트레일(올레)·오름·삼나무숲·해안도로</strong>가 중심입니다. 관광과 묶기 좋은 대신, <strong>바람이 강하고 현무암 돌길·흙길이 많으며 날씨가 자주 바뀌어</strong> 트레일 대응 신발과 날씨 대비가 더 중요합니다.</p>
-
-<h3>Q. 제주 여행 가서 가볍게 뛸 만한 곳은?</h3>
-<p>공항과 가까운 <strong>용두암~이호테우 해안도로</strong>가 1순위입니다. 평지에 접근성이 좋아 여행 첫날·마지막날 가볍게 뛰기 좋고, 일몰이 아름답습니다. 에메랄드 바다를 원하면 <strong>협재·금능 해변</strong>도 평탄해 부담 없습니다.</p>
-
-<h3>Q. 올레길·오름은 어떤 신발이 필요한가요?</h3>
-<p>올레길과 오름은 현무암 돌길·흙길·경사가 많아 일반 도로화로는 미끄럽고 발이 배깁니다. <strong>접지력 좋은 트레일화</strong>가 필요하며, 입문은 <a href="/shoes/asics-gel-venture-10">젤 벤처 10</a>, 본격 코스는 <a href="/shoes/adidas-terrex-agravic-4">아그라빅 4</a>·<a href="/shoes/hoka-tecton-x-3">테크톤 X 3</a>를 권합니다. 자세한 선택은 <a href="/blog/2026-best-trail-running-shoes">트레일 러닝화 베스트</a>를 참고하세요.</p>
-
-<h3>Q. 제주 마라톤 대회는 어떤 게 있나요?</h3>
-<p>제주국제관광마라톤 등 해안·중산간 경관을 활용한 대회들이 열립니다. 바닷바람과 업다운이 변수라 페이스 관리가 중요하며, 일정은 매년 변동되니 공식 접수 채널에서 확인하세요. 본인 목적(완주·기록)에 맞는 러닝화는 <a href="/recommend">1분 러닝화 추천</a>으로 후보를 좁힐 수 있습니다.</p>
-`,
+    id: "jeju-unique-running-courses-7",
+    slug: "jeju-unique-running-courses-7",
+    title: "제주 숲길 러닝 계획: 사려니숲길·사려니오름·물찻오름 구분",
+    description: "비슷한 이름이어도 입구와 개방 조건이 다릅니다. 사려니숲길의 탐방시간·반환과 사려니오름의 예약·계절 제한, 물찻오름 출입 제한을 구분해 동선을 계획합니다.",
+    thumbnail: "/images/blog/verified-jeju-unique-running-courses-7-20261110.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-05-29",
+    updatedAt: "2026-11-10",
+    category: "guide",
+    readingTime: 4,
+    tags: [
+      "제주 달리기",
+      "제주 러닝코스",
+      "제주 러닝 코스",
+      "이색 러닝",
+      "제주올레",
+      "사려니숲길",
+      "협재해변",
+      "용두암 해안도로",
+      "새별오름",
+      "한라산 둘레길",
+      "러닝 여행",
+      "제주 마라톤"
+    ],
+    content: `<p><small>2026년 11월 10일 공개 원문 대조. 동선 제안은 편집자의 계획 예시이며 실제 답사·측량 결과가 아닙니다.</small></p>
+<p>제주 숲길을 달릴 계획이라면 ‘사려니’라는 이름만으로 목적지를 저장하지 말자. 일반 사려니숲길과 한남시험림의 사려니오름, 중간의 물찻오름은 입구·예약·개방 조건이 다르다. 관광 탐방 안내가 곧 전 구간 러닝 허용을 뜻하는 것도 아니다.</p>
+<h2>사려니숲길: 약 10km는 숲길의 범위</h2><p><a href="https://m.visitjeju.net/kr/detail/view?contentsid=CONT_000000000500281&amp;menuId=DOM_000001718004000000" target="_blank" rel="noopener noreferrer">비짓제주 사려니숲길 안내</a>는 비자림로에서 물찻오름 입구 부근을 지나 붉은오름 입구까지 이어지는 약 10km의 길로 설명한다. 운영 안내는 09:00~17:00, 17시까지 퇴장 조건이며 기상 악화 때 일부 또는 전 구간이 통제될 수 있다.</p><p>약 10km를 주차장에서 시작해 돌아오는 왕복 거리로 적용하면 안 된다. 어느 입구로 들어가 어디서 반환할지, 반대 입구로 나올 경우 어떻게 돌아올지 먼저 정하자. 관광 안내의 도보 소요시간도 내 러닝 시간으로 환산하지 않는다.</p>
+<h2>주차와 대중교통에 따라 입구가 달라진다</h2><p>비짓제주는 비자림로변 입구 주변의 별도 주차공간이 없다고 설명하고, 자가용 이용 시 남조로변 붉은오름 입구 쪽 주차장을 안내한다. 물찻오름 입구 부근에서 되돌아오는 동선도 소개한다.</p><p>대중교통 이용은 양쪽 입구 접근과 복귀편을 따로 확인할 사항이다. 지도에 가까운 입구가 보여도 도로변에 임의 주차하는 계획으로 바꾸지 말자. 실제 현장 통제·주차 가능 여부는 방문일 안내가 우선이다.</p>
+<h2>물찻오름과 사려니오름은 자유로운 연결 구간이 아니다</h2><p>숲길 안내는 물찻오름이 자연환경 보호를 위해 평소 출입 제한이며 행사 때 예약제로 한시 개방될 수 있다고 적는다. 숲길을 걷다가 입구를 만났다는 이유로 오름까지 자유롭게 연결하지 않는다.</p><p><a href="https://m.visitjeju.net/kr/detail/view?contentsid=CONT_000000000500279" target="_blank" rel="noopener noreferrer">비짓제주 사려니오름 안내</a>는 별도의 예약 탐방과 매년 5월 16일~10월 31일 이용, 월·화 휴무를 설명한다. 11월 1일~5월 15일은 탐방 불가 기간으로 안내한다. 일반 숲길의 연중 운영을 이 오름에 적용하지 말자.</p>
+<h2>탐방 정보로 준비하되 달리기 조건은 현장에서 확인</h2><p>입구와 반환점, 퇴장시간, 걷기로 바꿀 구간을 정하는 계획을 제안한다. 노면과 통행 규정은 구간마다 확인해야 하며, 이름에 숲길이 있다고 일괄적으로 초보자 코스나 부상 예방 코스로 분류하지 않았다.</p><p>이 글은 공개된 두 시설 안내를 구분한 자료다. 제주올레·한라산·다른 오름의 현재 통제나 샤워·짐 보관까지 검증한 것은 아니다. 별도 코스를 추가할 때는 그 운영처의 최신 정보를 다시 확인해야 한다.</p>
+<h2>자주 묻는 질문</h2><h3>사려니숲길에서 사려니오름까지 자유롭게 이어 갈 수 있나요?</h3><p>두 장소는 별도 안내가 적용됩니다. 사려니오름은 예약과 이용기간·휴무 조건이 있어 일반 숲길과 같은 개방으로 볼 수 없습니다.</p><h3>11월에도 사려니오름 탐방이 가능한가요?</h3><p>비짓제주 오름 안내는 11월 1일~5월 15일 탐방 불가 기간으로 적습니다. 일반 사려니숲길의 연중 운영 안내와 구분해야 합니다.</p><h3>물찻오름은 언제나 올라갈 수 있나요?</h3><p>숲길 공식 안내는 물찻오름의 평소 출입 제한과 행사 기간 예약제 한시 개방 가능성을 설명합니다. 임의로 연결하지 말고 현재 통제를 확인해야 합니다.</p>`,
+    faqs: [
+      {
+        "question": "사려니숲길에서 사려니오름까지 자유롭게 이어 갈 수 있나요?",
+        "answer": "두 장소는 별도 안내가 적용됩니다. 사려니오름은 예약과 이용기간·휴무 조건이 있어 일반 숲길과 같은 개방으로 볼 수 없습니다."
+      },
+      {
+        "question": "11월에도 사려니오름 탐방이 가능한가요?",
+        "answer": "비짓제주 오름 안내는 11월 1일~5월 15일 탐방 불가 기간으로 적습니다. 일반 사려니숲길의 연중 운영 안내와 구분해야 합니다."
+      },
+      {
+        "question": "물찻오름은 언제나 올라갈 수 있나요?",
+        "answer": "숲길 공식 안내는 물찻오름의 평소 출입 제한과 행사 기간 예약제 한시 개방 가능성을 설명합니다. 임의로 연결하지 말고 현재 통제를 확인해야 합니다."
+      }
+    ],
   },
   {
-    id: 'daegu-unique-running-courses-7',
-    slug: 'daegu-unique-running-courses-7',
-    title: '대구 달리기 좋은 곳 7선 | 대구 러닝 코스 — 수성못 야경부터 팔공산 트레일까지',
-    description: '수성못 야간 러닝부터 신천 도심 하천, 팔공산 트레일까지 대구에서 달리기 좋은 러닝 코스 7곳을 거리·난이도·시간대·러닝화 추천까지 정리. 수성못·신천·금호강 아양기찻길·두류공원·앞산·팔공산·달성습지 각 코스별 출발지·노면·주의점 가이드. 분지 폭염 대비 야간 러닝 팁 포함.',
-    thumbnail: '/images/blog/daegu-unique-running-courses-7.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-05-29',
-    updatedAt: '2026-08-19',
-    category: 'guide' as const,
-    readingTime: 11,
-    tags: ['대구 달리기', '대구 러닝코스', '대구 러닝 코스', '이색 러닝', '수성못', '신천 둔치', '금호강 아양기찻길', '두류공원', '앞산', '팔공산 트레일', '달성습지', '대구 마라톤'],
-    content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>대구는 호수·도심하천·강·산을 분지 안에 결합한 러닝 도시</strong> — 수성못 야경, 신천 도심 종주, 팔공산 단풍 트레일, 달성습지 등 내륙 도시만의 풍경</li>
-    <li>분지 지형이라 <strong>여름 폭염("대프리카")이 변수</strong> — 7~8월은 수성못·신천 야간 러닝, 산 코스는 이른 오전이 정답</li>
-    <li>각 코스별 <strong>출발지·거리·노면·시간대·주의점 + 어울리는 러닝화 카테고리</strong>까지 한 번에 정리</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">🏞️</span>
-  <div class="callout-body">
-    <p class="callout-title">대구 러닝만의 매력</p>
-    <p><strong>대구에서 달리기 좋은 곳</strong>을 찾는다면 호수부터 강까지 선택지가 다양합니다. 대구는 분지 지형의 내륙 도시로 <strong>호수(수성못)·도심 하천(신천)·강(금호강·낙동강)·산(앞산·팔공산)·습지(달성)</strong>가 시가지를 둘러싸고 있습니다. 바다는 없지만 도심을 남북으로 관통하는 <strong>신천</strong>이 서울의 한강 같은 역할을 하고, 수성못 야경과 팔공산 단풍은 대구를 대표하는 러닝 풍경입니다. 다만 분지라 <strong>여름 폭염이 전국 최고 수준</strong>이라, 시즌과 시간대 선택이 다른 도시보다 더 중요합니다. 본인 발 특성·부상 이력에 맞는 러닝화 후보는 <a href="/recommend">1분 러닝화 추천</a>에서 받을 수 있습니다.</p>
-  </div>
-</div>
-
-<h2>한눈에 비교</h2>
-
-<table>
-  <thead>
-    <tr><th>#</th><th>코스</th><th>거리</th><th>난이도</th><th>특이점</th><th>추천 시간대</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>1</td><td><strong>수성못</strong></td><td>약 2km 둘레 (확장 5km)</td><td>하 (평지)</td><td>호수 야경 + 음악분수 + 카페</td><td>여름 저녁 8~10PM</td></tr>
-    <tr><td>2</td><td><strong>신천 둔치</strong></td><td>5~15km (도심 종주)</td><td>하 (평지)</td><td>도심 관통 하천 — 대구의 한강</td><td>새벽·야간</td></tr>
-    <tr><td>3</td><td><strong>금호강 아양기찻길 + 동촌유원지</strong></td><td>5~8km</td><td>하 (평지)</td><td>옛 철교 보행교 + 강변</td><td>새벽·해질녘</td></tr>
-    <tr><td>4</td><td><strong>두류공원 + 83타워</strong></td><td>약 3~4km 루프</td><td>하 (완만)</td><td>도심 대공원 + 83타워 야경</td><td>평일 새벽·저녁</td></tr>
-    <tr><td>5</td><td><strong>앞산 고산골</strong></td><td>약 4~6km</td><td>중 (오르막)</td><td>도심 근접 산 + 전망대</td><td>맑은 날 오전</td></tr>
-    <tr><td>6</td><td><strong>팔공산 둘레길</strong></td><td>약 6~8km</td><td>중상</td><td>본격 산악 트레일 + 단풍</td><td>맑은 날 오전</td></tr>
-    <tr><td>7</td><td><strong>달성습지 + 화원유원지</strong></td><td>5~9km</td><td>하 (평지)</td><td>낙동강·금호강 합류 습지 + 데크</td><td>새벽·저녁 노을</td></tr>
-  </tbody>
-</table>
-
-<h2>1. 수성못 — 대구 야경 1순위 호수 러닝</h2>
-
-<p><strong>출발지</strong>: 대구 지하철 2호선 수성못역 → 수성못 (도보 5분)<br>
-<strong>거리</strong>: 약 2km 둘레 (인근 보행로 연결 시 5km까지)<br>
-<strong>노면</strong>: 우레탄 산책로 + 데크<br>
-<strong>추천 시간대</strong>: 여름 저녁 8~10PM (음악분수·야경 시간)</p>
-
-<p>수성못은 대구를 대표하는 호수 명소. 둘레 약 2km의 평탄한 산책로를 따라 <strong>야간 조명과 음악분수, 호반 카페</strong>가 어우러져 대구 야경 러닝 1순위입니다. 둘레가 짧아 여러 바퀴 돌거나 인근 들안길·수성유원지로 확장하면 5km까지 가능.</p>
-
-<p><strong>이 코스의 매력</strong>: 신호 없는 호수 루프 + 야경 + 카페. 분지 폭염이 심한 여름엔 해가 진 뒤 시원해지는 저녁 시간대가 최적이고, 야간 조명 덕에 안전합니다. 평지라 페이스·인터벌 훈련에도 좋습니다.</p>
-
-<p><strong>어울리는 러닝화</strong>: 평지 + 통기성 + 야간 시인성. <a href="/shoes/saucony-ride-19">사우코니 라이드 19</a>·<a href="/shoes/nike-pegasus-41">페가수스 41</a> 같은 통기성 좋은 데일리화.</p>
-
-<h2>2. 신천 둔치 — 대구의 한강, 도심 관통 하천</h2>
-
-<p><strong>출발지</strong>: 수성교·대봉교·신천교 등 도심 다리마다 진입 (지하철 접근 다양)<br>
-<strong>거리</strong>: 5~15km (도심 종주, 거리 자유 조절)<br>
-<strong>노면</strong>: 우레탄 산책로 + 자전거도로 + 아스팔트<br>
-<strong>추천 시간대</strong>: 새벽·야간 (여름 폭염 회피)</p>
-
-<p>신천은 대구 도심을 남북으로 관통하는 하천으로, <strong>서울의 한강 같은 대구 러너의 홈 그라운드</strong>입니다. 둔치를 따라 산책로·자전거도로가 길게 이어져 거리 조절이 자유롭고, 신호 없이 5km부터 15km LSD까지 소화할 수 있습니다.</p>
-
-<p><strong>이 코스의 매력</strong>: 접근성 최고 + 거리 무제한 + 신호 없는 평지. 대구 어디서든 가까운 다리로 진입 가능해 데일리 러닝의 중심입니다. 단 <strong>여름 폭염엔 새벽·야간이 필수</strong>이고, 그늘이 적어 한낮은 피하세요.</p>
-
-<p><strong>어울리는 러닝화</strong>: 평지 장거리 LSD. <a href="/shoes/new-balance-1080-v15">NB 1080 v15</a>·<a href="/shoes/asics-gel-nimbus-28">님버스 28</a> 같은 맥스 쿠션, 또는 <a href="/shoes/saucony-ride-19">라이드 19</a> 같은 데일리.</p>
-
-<h2>3. 금호강 아양기찻길 + 동촌유원지 — 옛 철교와 강변</h2>
-
-<p><strong>출발지</strong>: 대구 지하철 1호선 아양교역·동촌역<br>
-<strong>거리</strong>: 5~8km (강변 + 유원지 연결)<br>
-<strong>노면</strong>: 강변 산책로 + 보행교 + 일부 흙길<br>
-<strong>추천 시간대</strong>: 새벽·해질녘</p>
-
-<p>금호강을 가로지르는 <strong>아양기찻길(옛 동촌역 철교를 개조한 보행교)</strong>과 동촌유원지를 잇는 강변 코스. 옛 철길의 정취와 금호강 풍경이 어우러져 도심 하천(신천)과는 또 다른 강변 분위기를 줍니다.</p>
-
-<p><strong>이 코스의 매력</strong>: 옛 철교 + 강변 + 유원지의 여유로운 분위기. 평지라 부담 없고, 동촌유원지 쪽으로 거리를 늘릴 수 있습니다. 강바람이 있어 여름에도 신천보다 체감이 조금 낫습니다.</p>
-
-<p><strong>어울리는 러닝화</strong>: 평지 + 약간의 흙길. <a href="/shoes/hoka-clifton-10">호카 클리프턴 10</a>·<a href="/shoes/on-cloudmonster-3">클라우드몬스터 3</a> 같은 강한 록커 + 쿠션.</p>
-
-<h2>4. 두류공원 + 83타워 — 도심 대공원과 야경</h2>
-
-<p><strong>출발지</strong>: 대구 지하철 2호선 두류역·감삼역 (도보 7분)<br>
-<strong>거리</strong>: 약 3~4km 루프<br>
-<strong>노면</strong>: 우레탄 + 아스팔트 산책로<br>
-<strong>추천 시간대</strong>: 평일 새벽·저녁</p>
-
-<p>두류공원은 이월드와 <strong>83타워(우방타워)</strong>를 품은 도심 대형공원. 평탄한 산책로 루프가 잘 정비돼 있고, 야간엔 83타워 조명이 배경이 되어 도심 야경 러닝을 즐길 수 있습니다.</p>
-
-<p><strong>이 코스의 매력</strong>: 신호 없는 도심 공원 루프 + 83타워 야경 + 그늘. 나무가 많아 여름에도 신천보다 그늘이 많고, 가족 단위 방문객이 많아 새벽·평일이 한적합니다.</p>
-
-<p><strong>어울리는 러닝화</strong>: 다목적 데일리. <a href="/shoes/nike-pegasus-42">페가수스 42</a>·<a href="/shoes/saucony-ride-19">라이드 19</a>. 인터벌을 섞는다면 <a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a> 같은 슈퍼트레이너.</p>
-
-<h2>5. 앞산 고산골 — 도심 근접 산 트레일</h2>
-
-<p><strong>출발지</strong>: 대구 지하철 1호선 안지랑역·현충로역 → 앞산공원·고산골 (도보 15분~버스)<br>
-<strong>거리</strong>: 약 4~6km (둘레·전망대 코스)<br>
-<strong>노면</strong>: 흙길 + 돌계단 + 일부 임도<br>
-<strong>추천 시간대</strong>: 맑은 날 오전</p>
-
-<p>앞산은 대구 도심 남쪽에 바로 붙은 산으로, <strong>고산골·앞산공원을 통해 접근하는 트레일</strong>이 잘 나 있습니다. 전망대에서는 대구 시가지가 한눈에 들어오고, 도심에서 지하철로 닿는 산악 러닝 입문 코스로 적합합니다.</p>
-
-<p><strong>이 코스의 매력</strong>: 지하철로 닿는 도심 근접 트레일. 다만 <strong>흙길·돌계단·오르막</strong>이 섞여 일반 데일리화로는 한계가 있고, 우천 후엔 미끄럽습니다. 트레일 입문자는 무리한 정상 코스보다 둘레·전망대 코스를 권합니다.</p>
-
-<p><strong>어울리는 러닝화</strong>: 트레일 입문. 일반 데일리는 부적합. <a href="/shoes/asics-gel-venture-10">젤 벤처 10</a> 같은 가성비 트레일화로 시작하거나, 접지력 좋은 <a href="/shoes/adidas-terrex-agravic-4">테렉스 아그라빅 4</a>. 트레일화 선택은 <a href="/blog/2026-best-trail-running-shoes">2026 트레일 러닝화 베스트</a> 참고.</p>
-
-<h2>6. 팔공산 둘레길 — 본격 산악 트레일과 단풍</h2>
-
-<p><strong>출발지</strong>: 시내에서 버스 (동화사·갓바위 방면)<br>
-<strong>거리</strong>: 약 6~8km (둘레길 구간)<br>
-<strong>노면</strong>: 흙길 + 돌길 + 임도<br>
-<strong>추천 시간대</strong>: 맑은 날 오전 (가을 단풍철 인기)</p>
-
-<p>팔공산은 대구를 대표하는 명산으로, <strong>동화사·갓바위와 둘레길</strong>을 따라 본격 산악 트레일을 즐길 수 있습니다. 특히 가을 단풍철엔 전국에서 찾는 명소. 앞산보다 규모가 크고 기술적이라 산악 러닝 경험자에게 적합합니다.</p>
-
-<p><strong>이 코스의 매력</strong>: 대구 최고의 산악 트레일 + 단풍. 다만 <strong>거친 돌길·임도·고도차</strong>가 있어 그립과 발 보호가 중요하고, 일반 데일리화·카본화는 절대 비추. 충분한 물과 행동식, 일몰 시간을 반드시 확인하세요.</p>
-
-<p><strong>어울리는 러닝화</strong>: 접지력·안정성 좋은 트레일화. <a href="/shoes/adidas-terrex-agravic-4">테렉스 아그라빅 4</a>(Continental 그립)·<a href="/shoes/hoka-tecton-x-3">테크톤 X 3</a>(Vibram + 쿠션) 같은 본격 트레일화. <a href="/blog/2026-best-trail-running-shoes">트레일 러닝화 베스트</a>에서 코스별 선택을 확인하세요.</p>
-
-<h2>7. 달성습지 + 화원유원지 — 두 강이 만나는 습지</h2>
-
-<p><strong>출발지</strong>: 화원유원지·사문진나루터 (차량·버스)<br>
-<strong>거리</strong>: 5~9km (습지 데크 + 강변)<br>
-<strong>노면</strong>: 목재 데크 + 흙길 + 강변 산책로<br>
-<strong>추천 시간대</strong>: 새벽·저녁 노을</p>
-
-<p>달성습지는 <strong>낙동강과 금호강이 만나는 합류부의 대규모 습지</strong>로, 맹꽁이 서식지이자 철새 도래지입니다. 화원유원지·사문진나루터와 연결돼 강변과 습지를 함께 달릴 수 있는 대구의 이색 코스입니다.</p>
-
-<p><strong>이 코스의 매력</strong>: 도심에서 보기 힘든 습지·강 합류 풍경. 노을 시간대가 특히 아름답습니다. 다만 <strong>목재 데크·흙길이 섞여</strong> 미끄럼에 주의해야 하고, 일부 구간은 한적하니 야간 단독 러닝은 피하세요.</p>
-
-<p><strong>어울리는 러닝화</strong>: 평지 + 데크·흙길 약간. <a href="/shoes/asics-gel-kayano-32">카야노 32</a>·<a href="/shoes/on-cloudmonster-3">클라우드몬스터 3</a> 같은 안정성 있는 신발.</p>
-
-<h2>본인 대구 거주지·목적별 추천 코스</h2>
-
-<ul>
-  <li><strong>수성구 거주</strong>: <strong>수성못</strong>(야간 평지) — 야경 + 페이스 러닝</li>
-  <li><strong>도심(중구·남구) 거주</strong>: <strong>신천 둔치</strong> — 거리 무제한 LSD, 대구의 한강</li>
-  <li><strong>동구·동촌 거주</strong>: <strong>금호강 아양기찻길</strong> — 옛 철교 + 강변</li>
-  <li><strong>서구·달서구 거주</strong>: <strong>두류공원 + 83타워</strong>(도심 공원) 또는 <strong>달성습지</strong>(이색 습지)</li>
-  <li><strong>트레일 입문</strong>: <strong>앞산 고산골</strong> — 지하철로 닿는 도심 근접 산</li>
-  <li><strong>산악 러닝 경험자</strong>: <strong>팔공산 둘레길</strong> — 본격 트레일 + 단풍 (트레일화 필수)</li>
-</ul>
-
-<h2>이런 코스 뛸 때 필요한 러닝화 카테고리</h2>
-
-<ul>
-  <li><strong>평지 호수·하천 (수성못·신천·두류)</strong>: 가성비 데일리 + 통기성. <a href="/blog/saucony-ride-18-vs-19-comparison">사우코니 라이드 18 vs 19 비교</a> · <a href="/blog/nike-pegasus-41-vs-42-comparison">페가수스 41 vs 42 비교</a></li>
-  <li><strong>강변 LSD (신천·금호강·달성)</strong>: 맥스 쿠션. <a href="/blog/new-balance-1080-v14-vs-v15-comparison">NB 1080 v14 vs v15 비교</a></li>
-  <li><strong>산 트레일 (앞산·팔공산)</strong>: 접지력·안정성 트레일화. <a href="/blog/2026-best-trail-running-shoes">2026 트레일 러닝화 베스트 7</a> — 코스 난이도별 선택 가이드</li>
-  <li><strong>인터벌·페이스 (수성못·두류 루프)</strong>: 슈퍼트레이너. <a href="/blog/asics-superblast-2-vs-3-comparison">슈퍼블라스트 2 vs 3 비교</a></li>
-</ul>
-
-<h2>대구 러닝 — 폭염 대비와 러닝 여행</h2>
-
-<div class="callout tip">
-  <span class="callout-icon">🌡️</span>
-  <div class="callout-body">
-    <p class="callout-title">"대프리카" 폭염, 대구에서 안전하게 뛰는 법</p>
-    <p>대구는 분지 지형이라 <strong>여름 폭염이 전국 최고 수준</strong>입니다. ① 7~8월 한낮(11~16시) 러닝은 피하고 <strong>새벽·야간</strong>으로, ② 평지는 <strong>수성못·신천 야간</strong>(조명 있는 코스), 산은 <strong>이른 오전</strong>으로, ③ 수분·전해질을 평소보다 넉넉히 챙기세요. KTX로 서울에서 약 1시간 50분이라 주말 러닝 여행도 가능 — 수성못 야경 + 팔공산 단풍을 묶으면 좋습니다. 다른 지역 코스가 궁금하다면 <a href="/blog/seoul-unique-running-courses-7">서울</a>·<a href="/blog/busan-unique-running-courses-7">부산</a>·<a href="/blog/incheon-unique-running-courses-7">인천 달리기 좋은 곳 7선</a>도 함께 보세요.</p>
-  </div>
-</div>
-
-<h2>FAQ</h2>
-
-<h3>Q. 대구 러닝과 다른 도시의 차이는?</h3>
-<p>대구는 바다가 없는 분지 내륙 도시라, 서울처럼 <strong>도심 하천(신천)</strong>이 러닝 중심이고 수성못·팔공산 같은 호수·산이 더해집니다. 가장 큰 변수는 <strong>여름 폭염</strong> — 분지 지형 탓에 전국에서 가장 더워 시즌·시간대 선택이 다른 도시보다 중요합니다.</p>
-
-<h3>Q. 대구에서 야간 러닝하기 좋은 곳은?</h3>
-<p><strong>수성못</strong>이 1순위입니다. 호수 둘레 조명과 음악분수가 있어 야경이 뛰어나고 평지라 안전합니다. <strong>신천 둔치</strong>도 도심 구간은 조명이 있어 야간 LSD에 좋습니다. 반면 앞산·팔공산·달성습지는 야간에 어둡고 위험하니 낮·이른 오전에 뛰세요.</p>
-
-<h3>Q. 팔공산·앞산 트레일은 어떤 신발이 필요한가요?</h3>
-<p>일반 도로화로는 위험합니다. 흙길·돌길·오르막이 섞여 <strong>접지력 좋은 트레일화</strong>가 필요하고, 입문은 <a href="/shoes/asics-gel-venture-10">젤 벤처 10</a> 같은 가성비 모델, 본격 산악은 <a href="/shoes/adidas-terrex-agravic-4">아그라빅 4</a>·<a href="/shoes/hoka-tecton-x-3">테크톤 X 3</a>를 권합니다. 자세한 선택은 <a href="/blog/2026-best-trail-running-shoes">트레일 러닝화 베스트</a>를 참고하세요.</p>
-
-<h3>Q. 대구 마라톤 대회는 어떤 게 있나요?</h3>
-<p>대구국제마라톤을 비롯해 신천·강변 코스를 활용한 도심 대회들이 열립니다. 대부분 평지라 기록 도전에 유리하며, 일정은 매년 변동되니 공식 접수 채널에서 확인하세요. 본인 목적(완주·기록)에 맞는 러닝화는 <a href="/recommend">1분 러닝화 추천</a>으로 후보를 좁힐 수 있습니다.</p>
-`,
+    id: "daegu-unique-running-courses-7",
+    slug: "daegu-unique-running-courses-7",
+    title: "대구 러닝 장소 비교: 수성못 둘레와 두류공원, 길이·고도 기준 구분",
+    description: "수성못의 호수 둘레 2,020m와 두류공원의 해발고도는 개인 러닝 거리·획득고도와 다릅니다. 호숫가 짧은 동선과 공원 내부 이동을 비교하고 분수·관람시설 운영을 따로 확인합니다.",
+    thumbnail: "/images/blog/verified-daegu-unique-running-courses-7-20261110.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-05-29",
+    updatedAt: "2026-11-10",
+    category: "guide",
+    readingTime: 4,
+    tags: [
+      "대구 달리기",
+      "대구 러닝코스",
+      "대구 러닝 코스",
+      "이색 러닝",
+      "수성못",
+      "신천 둔치",
+      "금호강 아양기찻길",
+      "두류공원",
+      "앞산",
+      "팔공산 트레일",
+      "달성습지",
+      "대구 마라톤"
+    ],
+    content: `<p><small>2026년 11월 10일 공개 원문 대조. 동선 제안은 편집자의 계획 예시이며 실제 답사·측량 결과가 아닙니다.</small></p>
+<p>대구에서 초행 러닝 장소를 찾는다면 수성못과 두류공원을 같은 평지 루프로 보지 말자. 호수 둘레를 따라 움직이는 계획과 공원 안에서 구간을 고르는 계획은 거리와 높낮이를 확인하는 방법부터 다르다.</p>
+<h2>수성못: 호수 둘레 2,020m와 내 GPS 거리</h2><p><a href="https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=68482" target="_blank" rel="noopener noreferrer">한국관광공사 수성못유원지 안내</a>는 호수 둘레를 2,020m로 설명한다. 이는 진입로·다리·우회·내가 선택한 보행 동선까지 포함한 러닝 실측값은 아니다. 몇 바퀴를 돌면 정확히 10km가 된다고 단정하지 않았다.</p><p>처음에는 출발 지점을 저장하고 현장 지도에서 실제 통행 동선을 확인하자. 사진을 찍거나 쉬는 관람객과 동선이 겹칠 수 있으므로 반복 주행할 범위와 걷기로 바꿀 지점을 먼저 정하는 계획을 제안한다.</p>
+<h2>호수 개방과 분수·주변 시설 운영은 별개</h2><p>관광공사는 수성못을 상시 개방으로 안내하지만 음악분수는 5~10월 운영으로 설명한다. 따라서 11월 야간 러닝 계획에 분수 공연을 확정 일정으로 넣으면 안 된다. 실제 공연·미디어아트 시간은 운영처의 최신 안내를 확인할 사항이다.</p><p>화장실과 주차 정보가 샤워·탈의·무료 보관을 뜻하지는 않는다. 운동 뒤 다른 약속이 있다면 씻거나 갈아입을 실제 시설을 별도로 확인하자.</p>
+<h2>두류공원: 해발고도와 누적 상승은 다른 숫자</h2><p><a href="https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=89045" target="_blank" rel="noopener noreferrer">관광공사 두류공원 안내</a>는 두류산·금봉산 일대 공원과 순환도로, 체육·관람시설을 소개한다. 설명에 나온 해발 135m를 공원 러닝의 획득고도 135m로 옮기지 않았다. 한 지점의 높이와 이동 중 오르막을 누적한 값은 다르다.</p><p>공원 안에서 어떤 길을 고르느냐에 따라 언덕·우회·진입 거리가 달라진다. 산책 구간과 체육시설·관람시설의 출입을 나누어 계획하고 현장 표지를 확인하자. 공원 전체의 러닝 난도나 모든 시설의 24시간 운영을 보장하지 않는다.</p>
+<h2>내 목적에 맞는 범위를 정하기</h2><table><thead><tr><th>목적</th><th>계획 예시</th><th>확인할 것</th></tr></thead><tbody><tr><td>짧게 같은 지점으로 복귀</td><td>수성못 주변에서 통행 가능한 범위 선택</td><td>진입·혼잡·실제 반복 거리</td></tr><tr><td>공원 풍경과 언덕을 함께 보기</td><td>두류공원에서 구간별 왕복</td><td>노면·계단·반환 지점</td></tr><tr><td>운동 뒤 관광시설 방문</td><td>러닝과 관람 일정을 분리</td><td>시설별 입장·운영·요금</td></tr></tbody></table><p>위 선택은 편집 제안이며 현장 답사 기록은 아니다. 신천·팔공산 등 다른 장소의 개방이나 대회 코스 공인을 이번 두 안내로 대신하지 않았다.</p>
+<h2>자주 묻는 질문</h2><h3>수성못 5바퀴면 정확히 10km인가요?</h3><p>관광공사의 2,020m는 호수 둘레 설명입니다. 실제로 고른 보행 동선과 진입·우회가 포함된 GPS 거리는 따로 확인해야 합니다.</p><h3>11월에도 음악분수를 볼 수 있나요?</h3><p>확인한 관광 안내는 5~10월 운영으로 설명합니다. 11월 공연을 확정하지 않고 최신 운영 공지를 확인해야 합니다.</p><h3>두류공원 획득고도가 135m인가요?</h3><p>해발고도와 이동 중 누적 상승은 다른 수치입니다. 관광 안내의 높이를 개인 러닝 획득고도로 바꾸지 않았습니다.</p>`,
+    faqs: [
+      {
+        "question": "수성못 5바퀴면 정확히 10km인가요?",
+        "answer": "관광공사의 2,020m는 호수 둘레 설명입니다. 실제로 고른 보행 동선과 진입·우회가 포함된 GPS 거리는 따로 확인해야 합니다."
+      },
+      {
+        "question": "11월에도 음악분수를 볼 수 있나요?",
+        "answer": "확인한 관광 안내는 5~10월 운영으로 설명합니다. 11월 공연을 확정하지 않고 최신 운영 공지를 확인해야 합니다."
+      },
+      {
+        "question": "두류공원 획득고도가 135m인가요?",
+        "answer": "해발고도와 이동 중 누적 상승은 다른 수치입니다. 관광 안내의 높이를 개인 러닝 획득고도로 바꾸지 않았습니다."
+      }
+    ],
   },
   {
     id: "running-breathing-guide-korea",
@@ -1079,424 +673,98 @@ export const posts_2026_05: BlogPost[] = [
 `,
   },
   {
-    id: 'incheon-unique-running-courses-7',
-    slug: 'incheon-unique-running-courses-7',
-    title: '인천 달리기 좋은 곳 7선 | 인천 러닝 코스 — 송도 센트럴파크부터 영종도 비행기 일몰까지',
-    description: '송도 센트럴파크 수로 야간 러닝부터 소래습지 갯벌, 영종도 해변 일몰까지 인천에서 달리기 좋은 러닝 코스 7곳을 거리·난이도·시간대·러닝화 추천까지 정리. 송도·월미도+차이나타운·소래습지·청라호수공원·영종도·계양산·인천대공원 각 코스별 출발지·노면·주의점 가이드.',
-    thumbnail: '/images/blog/incheon-unique-running-courses-7.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-05-28',
-    updatedAt: '2026-08-19',
-    category: 'guide' as const,
-    readingTime: 11,
-    tags: ['인천 달리기', '인천 러닝코스', '인천 러닝 코스', '이색 러닝', '송도 센트럴파크', '월미도 차이나타운', '소래습지생태공원', '청라호수공원', '영종도 해변', '계양산 둘레길', '인천대공원', '인천 마라톤'],
-    content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>인천은 바다·갯벌·호수·개항장·국제도시를 한 도시에 결합한 이색 러닝 도시</strong> — 송도 인공수로 야경, 소래 갯벌·염전, 영종도 비행기 일몰, 차이나타운 개항장 등 다른 도시에는 없는 풍경의 코스</li>
-    <li>7개 코스 모두 <strong>인천지하철·공항철도·수인분당선 접근 + 평지·완만 위주</strong> — 인천 거주 러너뿐 아니라 수도권 주말 러닝 여행, 공항 이용 전후 러닝까지 가능</li>
-    <li>각 코스별 <strong>출발지·거리·노면·시간대·주의점 + 어울리는 러닝화 카테고리</strong>까지 한 번에 정리</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">✈️</span>
-  <div class="callout-body">
-    <p class="callout-title">인천 러닝만의 매력</p>
-    <p><strong>인천에서 달리기 좋은 곳</strong>을 찾는다면 바다부터 개항장까지 선택지가 다양합니다. 인천은 서해안 항구·개항 도시로 <strong>바다(영종도·월미도)·갯벌·염전(소래)·호수(청라·송도)·계획도시 수로(송도 센트럴파크)·산(계양산)·개항장 근대건축(차이나타운·자유공원)</strong>이 모두 있습니다. 인공수로를 따라 뛰다 5km 안에 갯벌·염전을 만나고, 영종도에서는 머리 위로 비행기가 뜨고 지는 풍경을 보며 뛰는 곳은 한국에서 인천이 유일. 수도권 지하철·공항철도로 접근이 쉬워 <strong>주말 러닝 여행지·해외여행 전후 러닝</strong>으로도 좋습니다. 본인 발 특성·부상 이력에 맞는 러닝화 후보는 <a href="/recommend">1분 러닝화 추천</a>에서 받을 수 있습니다.</p>
-  </div>
-</div>
-
-<h2>한눈에 비교</h2>
-
-<table>
-  <thead>
-    <tr><th>#</th><th>코스</th><th>거리</th><th>난이도</th><th>특이점</th><th>추천 시간대</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>1</td><td><strong>송도 센트럴파크 수로</strong></td><td>5~7km</td><td>하 (평지)</td><td>인공수로 + 마천루 야경 + 수상택시</td><td>여름 저녁 8~10PM</td></tr>
-    <tr><td>2</td><td><strong>월미도 + 차이나타운 + 자유공원</strong></td><td>5~6km (결합)</td><td>하~중</td><td>해안산책로 + 개항장 근대건축</td><td>새벽 6AM·해질녘</td></tr>
-    <tr><td>3</td><td><strong>소래습지생태공원 + 소래포구</strong></td><td>5~8km</td><td>하 (평지)</td><td>갯벌 + 폐염전 + 습지 데크길</td><td>새벽·저녁 노을</td></tr>
-    <tr><td>4</td><td><strong>청라호수공원</strong></td><td>약 4.3km 둘레</td><td>하 (평지)</td><td>국내 최대급 호수 + 음악분수</td><td>평일 새벽·저녁</td></tr>
-    <tr><td>5</td><td><strong>영종도 마시안·을왕리 해변</strong></td><td>5~8km</td><td>하</td><td>서해 일몰 + 갯벌 + 비행기 이착륙</td><td>맑은 날 해질녘</td></tr>
-    <tr><td>6</td><td><strong>계양산 둘레길</strong></td><td>약 6~7km</td><td>중상</td><td>인천 최고봉 + 산성 + 트레일</td><td>맑은 날 오전</td></tr>
-    <tr><td>7</td><td><strong>인천대공원</strong></td><td>약 4~5km 둘레</td><td>하</td><td>도심 호수 + 벚꽃길 + 수목원</td><td>평일 새벽·주말 오전</td></tr>
-  </tbody>
-</table>
-
-<h2>1. 송도 센트럴파크 수로 — 인천 야경 1순위 계획도시 러닝</h2>
-
-<p><strong>출발지</strong>: 인천1호선 센트럴파크역 3번 출구 → 센트럴파크 (도보 3분)<br>
-<strong>거리</strong>: 5~7km (수로 둘레 약 1.8km + 주변 보행로 확장)<br>
-<strong>노면</strong>: 아스팔트 + 우레탄 보행로 + 데크<br>
-<strong>추천 시간대</strong>: 여름 저녁 8~10PM (마천루 조명 점등 시간)</p>
-
-<p>송도 센트럴파크는 바닷물을 끌어들인 <strong>국내 유일의 해수 인공수로</strong>를 따라 조성된 도심 공원. 양옆으로 <strong>송도국제도시의 마천루(동북아무역타워·G타워 등)</strong>가 둘러싸 야간 조명이 환상적입니다. 수로 둘레만 약 1.8km라 주변 보행로·캐널워크까지 연결하면 5~7km까지 평지로 확장 가능.</p>
-
-<p><strong>이 코스의 매력</strong>: 마천루 야경 + 수상택시·카누가 떠 있는 이국적 풍경 + 잘 정비된 평지 보행로. 인천에서 가장 "도시적인" 러닝 명소이며, 야간 인증샷 1순위. 노면이 평탄하고 신호가 적어 페이스 유지하기 좋습니다.</p>
-
-<p><strong>어울리는 러닝화</strong>: 평지 + 통기성 + 야간 시인성. <a href="/shoes/saucony-ride-18">사우코니 라이드 18</a>·<a href="/shoes/nike-pegasus-41">페가수스 41</a> 같은 통기성 좋은 데일리화.</p>
-
-<h2>2. 월미도 + 차이나타운 + 자유공원 — 바다 + 개항장 근대건축</h2>
-
-<p><strong>출발지</strong>: 수인분당선·1호선 인천역 1번 출구 → 차이나타운 입구 (도보 2분)<br>
-<strong>거리</strong>: 5~6km (월미문화의거리 해안산책로 + 차이나타운 + 자유공원 결합)<br>
-<strong>노면</strong>: 해안 보행로 + 보도블록 + 자유공원 오르막<br>
-<strong>추천 시간대</strong>: 새벽 6AM·해질녘 (인파 적고 바다 조망)</p>
-
-<p>인천역에서 출발해 <strong>차이나타운 → 자유공원 → 월미문화의거리 해안산책로</strong>로 이어지는 개항장 코스. 1883년 개항한 인천의 역사가 응축된 곳으로, 근대 건축물과 중국풍 거리, 자유공원에서 내려다보는 항구 전경이 색다릅니다.</p>
-
-<p><strong>이 코스의 매력</strong>: 바다 + 역사 + 이국적 거리를 한 번에. 자유공원은 짧지만 완만한 오르막이라 항구 뷰를 얻을 수 있고, 월미도 해안산책로는 평지라 회복 조깅에 좋습니다. 단, 차이나타운은 관광객이 많아 <strong>이른 새벽·평일</strong>을 권장.</p>
-
-<p><strong>어울리는 러닝화</strong>: 평지 + 약간의 오르막 + 보도블록. <a href="/shoes/hoka-clifton-10">호카 클리프턴 10</a>·<a href="/shoes/on-cloudmonster-3">클라우드몬스터 3</a> 같은 강한 록커 + 쿠션. 인파 구간은 페이스보다 회복 조깅으로.</p>
-
-<h2>3. 소래습지생태공원 + 소래포구 — 갯벌·폐염전·습지 데크길</h2>
-
-<p><strong>출발지</strong>: 수인분당선 소래포구역 2번 출구 → 소래습지생태공원 (도보 10분)<br>
-<strong>거리</strong>: 5~8km (습지 데크길 + 폐염전 둘레 + 소래포구 연결)<br>
-<strong>노면</strong>: 흙길 + 목재 데크 + 일부 비포장<br>
-<strong>추천 시간대</strong>: 새벽·저녁 노을 (갯벌 반영 + 철새)</p>
-
-<p>소래습지생태공원은 <strong>폐염전을 복원한 갯벌·습지 생태공원</strong>. 옛 소금창고와 풍차, 갯골을 따라 데크길이 이어지고, 썰물 때 드러나는 갯벌과 철새가 도심에서 보기 힘든 풍경을 만듭니다. 바로 옆 소래포구 어시장과 연결해 거리를 늘릴 수 있습니다.</p>
-
-<p><strong>이 코스의 매력</strong>: 한국 러닝 코스 중 가장 독특한 갯벌·염전 풍경. 노을 시간대 갯골에 반사되는 빛이 압권. 다만 <strong>목재 데크·흙길·비포장이 섞여</strong> 미끄럼·요철에 주의해야 하고, 해무가 끼면 시야가 짧아집니다.</p>
-
-<p><strong>어울리는 러닝화</strong>: 약간의 흙길·데크 + 안정성. <a href="/shoes/asics-gel-kayano-32">카야노 32</a>·<a href="/shoes/on-cloudmonster-3">클라우드몬스터 3</a> 같은 접지력·안정성 있는 신발. 얇은 카본 슈즈는 데크·비포장에 비추.</p>
-
-<h2>4. 청라호수공원 — 국내 최대급 호수 둘레 평지</h2>
-
-<p><strong>출발지</strong>: 공항철도 청라국제도시역 → 버스 환승 (또는 차량)<br>
-<strong>거리</strong>: 약 4.3km (호수 둘레 한 바퀴)<br>
-<strong>노면</strong>: 우레탄 산책로 + 데크<br>
-<strong>추천 시간대</strong>: 평일 새벽·저녁 (분수 가동 시간 확인)</p>
-
-<p>청라호수공원은 <strong>국내 최대급 도심 호수공원</strong> 중 하나로, 호수 둘레를 따라 약 4.3km의 평탄한 산책로가 한 바퀴로 이어집니다. 거리가 딱 떨어져 <strong>랩 카운트·페이스 훈련</strong>에 좋고, 야간 음악분수와 조명이 운치를 더합니다.</p>
-
-<p><strong>이 코스의 매력</strong>: 신호 없는 한 바퀴 4.3km 루프라 인터벌·템포 러닝에 최적. 노면이 부드럽고 평탄해 무릎 부담이 적습니다. 청라국제도시 계획도시라 산책로 정비 상태가 우수.</p>
-
-<p><strong>어울리는 러닝화</strong>: 평지 루프 + 페이스 훈련. <a href="/shoes/saucony-endorphin-speed-5">엔돌핀 스피드 5</a>·<a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a> 같은 슈퍼트레이너로 템포·인터벌, 또는 <a href="/shoes/saucony-ride-19">라이드 19</a> 같은 데일리로 LSD.</p>
-
-<h2>5. 영종도 마시안·을왕리 해변 — 서해 일몰 + 머리 위 비행기</h2>
-
-<p><strong>출발지</strong>: 공항철도 운서역 → 버스·차량 (을왕리·마시안 해변)<br>
-<strong>거리</strong>: 5~8km (해변 + 갯벌 + 해안도로)<br>
-<strong>노면</strong>: 모래 + 갯벌 + 해안 아스팔트<br>
-<strong>추천 시간대</strong>: 맑은 날 해질녘 (서해 일몰 명소)</p>
-
-<p>영종도 마시안·을왕리 해변은 <strong>서해 일몰 명소</strong>이자, 인천공항이 가까워 <strong>이착륙하는 비행기가 머리 위로 지나가는 풍경</strong>이 특별합니다. 썰물 때 드러나는 넓은 갯벌을 따라 평지 러닝이 가능하고, 해안도로로 거리를 늘릴 수 있습니다.</p>
-
-<p><strong>이 코스의 매력</strong>: 노을 + 비행기 + 갯벌이라는 인천 특유의 조합. <strong>해외여행 전후 공항 근처에서 러닝</strong>하기 좋습니다. 단, 모래·갯벌 구간은 발이 빠지므로 단단한 해안도로 위주로 코스를 잡는 것이 페이스 유지에 유리.</p>
-
-<p><strong>어울리는 러닝화</strong>: 모래·갯벌 대비 안정성 + 맥스 쿠션. <a href="/shoes/asics-gel-nimbus-28">님버스 28</a>·<a href="/shoes/new-balance-1080-v15">NB 1080 v15</a> 같은 부드러운 맥스 쿠션. 모래 구간은 무리하지 말고 해안도로 위주로.</p>
-
-<h2>6. 계양산 둘레길 — 인천 최고봉 산성 트레일</h2>
-
-<p><strong>출발지</strong>: 인천1호선 계산역 → 계양산 입구 (도보 15분)<br>
-<strong>거리</strong>: 약 6~7km (둘레길 기준, 정상 코스는 별도)<br>
-<strong>노면</strong>: 흙길 + 돌계단 + 일부 임도<br>
-<strong>추천 시간대</strong>: 맑은 날 오전 (시야 + 인파 전)</p>
-
-<p>계양산은 <strong>해발 395m로 인천에서 가장 높은 산</strong>. 계양산성과 둘레길을 따라 트레일 러닝이 가능하며, 정상에서는 인천 시가지와 한강 하구가 한눈에 들어옵니다. 도심 한복판에서 본격 산악 러닝을 즐길 수 있는 드문 코스.</p>
-
-<p><strong>이 코스의 매력</strong>: 지하철로 닿는 산악 트레일. 다만 <strong>흙길·돌계단·오르막</strong>이 섞여 일반 데일리화로는 한계가 있고, 우천 후엔 미끄럽습니다. 트레일 입문자는 둘레길 위주로, 무리한 정상 코스는 피하세요.</p>
-
-<p><strong>어울리는 러닝화</strong>: 트레일 입문 또는 접지력 좋은 안정화. 일반 데일리는 부적합. <a href="/shoes/asics-gel-kayano-32">카야노 32</a> 정도가 데일리 중에선 가장 적합하나, 본격 트레일은 트레일 전용화 권장. 카본 슈즈는 절대 비추.</p>
-
-<h2>7. 인천대공원 — 도심 호수 + 벚꽃길 + 수목원</h2>
-
-<p><strong>출발지</strong>: 인천1호선 인천대공원역 2번 출구 → 공원 입구 (도보 5분)<br>
-<strong>거리</strong>: 약 4~5km (호수 + 벚꽃길 + 수목원 둘레)<br>
-<strong>노면</strong>: 우레탄 + 아스팔트 산책로<br>
-<strong>추천 시간대</strong>: 평일 새벽·주말 오전</p>
-
-<p>인천대공원은 <strong>호수·벚꽃길·수목원·캠핑장을 갖춘 대형 도심 공원</strong>. 봄철 벚꽃터널이 유명하고, 평탄한 산책로가 잘 연결돼 인천 동남부 러너들의 홈 코스입니다. 가족 단위 방문객이 많아 한적함을 원하면 새벽·평일을 권장.</p>
-
-<p><strong>이 코스의 매력</strong>: 신호 없는 평지 공원 루프 + 사계절 풍경(봄 벚꽃, 가을 단풍). 무릎 부담이 적고 접근성이 좋아 입문·회복 러닝에 적합. 트랙·운동시설도 함께 있어 다목적입니다.</p>
-
-<p><strong>어울리는 러닝화</strong>: 다목적 데일리. <a href="/shoes/nike-pegasus-42">페가수스 42</a>·<a href="/shoes/saucony-ride-19">라이드 19</a> 같은 데일리화면 충분. 인터벌을 섞는다면 <a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a> 같은 슈퍼트레이너.</p>
-
-<h2>본인 인천 거주지·목적별 추천 코스</h2>
-
-<ul>
-  <li><strong>송도·연수 거주</strong>: <strong>송도 센트럴파크 수로</strong>(야간 평지) — 마천루 야경 + 페이스 러닝</li>
-  <li><strong>중구·동구(개항장) 거주</strong>: <strong>월미도 + 차이나타운 + 자유공원</strong> — 바다 + 역사 + 회복 조깅</li>
-  <li><strong>남동구·논현 거주</strong>: <strong>소래습지생태공원</strong>(이색 갯벌) 또는 <strong>인천대공원</strong>(평지 루프)</li>
-  <li><strong>서구·청라 거주</strong>: <strong>청라호수공원</strong> — 4.3km 루프로 인터벌·템포 훈련</li>
-  <li><strong>영종·운서 거주 / 공항 이용 전후</strong>: <strong>영종도 마시안·을왕리 해변</strong> — 일몰 + 비행기 + 갯벌</li>
-  <li><strong>계양·부평 거주 / 트레일 입문</strong>: <strong>계양산 둘레길</strong> — 산악 트레일 (트레일화 권장)</li>
-</ul>
-
-<h2>이런 코스 뛸 때 필요한 러닝화 카테고리</h2>
-
-<ul>
-  <li><strong>평지 도심·호수 (송도·청라·인천대공원)</strong>: 가성비 데일리 + 통기성. <a href="/blog/saucony-ride-18-vs-19-comparison">사우코니 라이드 18 vs 19 비교</a> · <a href="/blog/nike-pegasus-41-vs-42-comparison">페가수스 41 vs 42 비교</a></li>
-  <li><strong>갯벌·습지·트레일 (소래·계양산)</strong>: 안정성·접지력. <a href="/blog/asics-kayano-32-vs-33-comparison">카야노 32 vs 33 비교</a> · <a href="/blog/on-cloudmonster-2-vs-3-comparison">클라우드몬스터 2 vs 3 비교</a></li>
-  <li><strong>해변 LSD (영종도)</strong>: 맥스 쿠션. <a href="/blog/new-balance-1080-v14-vs-v15-comparison">NB 1080 v14 vs v15 비교</a></li>
-  <li><strong>인터벌·페이스 (청라호수 4.3km 루프)</strong>: 슈퍼트레이너 또는 가성비 카본. <a href="/blog/asics-superblast-2-vs-3-comparison">슈퍼블라스트 2 vs 3 비교</a> · <a href="/blog/asics-magic-speed-4-vs-5-comparison">매직스피드 4 vs 5 비교</a></li>
-</ul>
-
-<h2>인천 러닝 여행 — 공항 이용 전후, 수도권 주말 러닝</h2>
-
-<div class="callout tip">
-  <span class="callout-icon">🛫</span>
-  <div class="callout-body">
-    <p class="callout-title">해외여행 전후·수도권 주말, 인천에서 뛰는 법</p>
-    <p>인천은 <strong>공항철도·인천지하철로 접근이 쉬워</strong> 여행 전후 러닝지로 좋습니다. ① 출국 전날 또는 귀국 당일 <strong>영종도 마시안·을왕리 해변</strong>에서 일몰·비행기 러닝, ② 수도권 거주자는 주말 오전 <strong>송도 센트럴파크 → 캐널워크 카페</strong> 코스, ③ 역사·문화를 곁들이려면 <strong>차이나타운 + 자유공원 + 월미도</strong> 한 바퀴를 추천. 다른 지역 코스가 궁금하다면 <a href="/blog/seoul-unique-running-courses-7">서울 달리기 좋은 곳 7선</a>·<a href="/blog/busan-unique-running-courses-7">부산 달리기 좋은 곳 7선</a>도 함께 보세요.</p>
-  </div>
-</div>
-
-<h2>FAQ</h2>
-
-<h3>Q. 인천 러닝과 서울 러닝의 차이는?</h3>
-<p>서울이 한강 본류 중심의 평지·도심 러닝이라면, 인천은 <strong>서해 갯벌·염전(소래), 계획도시 인공수로(송도), 공항·해변(영종도), 개항장 역사(차이나타운)</strong>로 풍경의 결이 다릅니다. 같은 수도권이지만 "바다와 갯벌"을 끼고 뛸 수 있다는 점이 인천만의 차별점입니다.</p>
-
-<h3>Q. 인천에서 야간 러닝하기 좋은 곳은?</h3>
-<p><strong>송도 센트럴파크 수로</strong>가 1순위입니다. 마천루 조명과 수로가 어우러져 야경이 뛰어나고, 평지에 신호가 적어 안전합니다. <strong>청라호수공원</strong>도 음악분수·조명이 있어 야간 평지 러닝에 좋습니다. 단, 영종도 해변과 계양산은 야간에 어둡고 위험하니 낮·해질녘에 뛰세요.</p>
-
-<h3>Q. 갯벌·습지 코스(소래)를 뛸 때 주의할 점은?</h3>
-<p>목재 데크와 흙길·비포장이 섞여 있어 <strong>접지력 있는 안정화</strong>가 좋고, 우천 후나 해무 낀 날은 미끄럼·시야 저하에 주의하세요. 썰물·밀물 시간을 확인하면 갯벌 풍경을 제대로 즐길 수 있습니다. 얇은 카본 레이싱화는 데크·비포장에 부적합합니다.</p>
-
-<h3>Q. 인천 마라톤 대회는 어떤 게 있나요?</h3>
-<p>송도국제도시 일대에서 열리는 도심 마라톤과 영종도·청라 일대 대회 등이 있으며, 코스 대부분이 평지라 기록 도전에 유리합니다. 대회 일정은 매년 변동되니 공식 접수 채널에서 최신 정보를 확인하세요. 본인 목적(완주·기록)에 맞는 러닝화는 <a href="/recommend">1분 러닝화 추천</a>으로 후보를 좁힐 수 있습니다.</p>
-`,
+    id: "incheon-unique-running-courses-7",
+    slug: "incheon-unique-running-courses-7",
+    title: "인천 러닝 동선: 송도 센트럴파크·소래습지와 계절 시설 구분",
+    description: "센트럴파크는 송도공원 전체와 다르며, 소래습지의 산책로·전시관·족욕장도 운영 조건이 다릅니다. 공원 면적을 러닝 거리로 환산하지 않고 출발·반환과 부대시설 이용을 나눠 계획합니다.",
+    thumbnail: "/images/blog/verified-incheon-unique-running-courses-7-20261110.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-05-28",
+    updatedAt: "2026-11-10",
+    category: "guide",
+    readingTime: 4,
+    tags: [
+      "인천 달리기",
+      "인천 러닝코스",
+      "인천 러닝 코스",
+      "이색 러닝",
+      "송도 센트럴파크",
+      "월미도 차이나타운",
+      "소래습지생태공원",
+      "청라호수공원",
+      "영종도 해변",
+      "계양산 둘레길",
+      "인천대공원",
+      "인천 마라톤"
+    ],
+    content: `<p><small>2026년 11월 10일 공개 원문 대조. 동선 제안은 편집자의 계획 예시이며 실제 답사·측량 결과가 아닙니다.</small></p>
+<p>인천에서 도시 수변과 습지 풍경 중 어디를 달릴지 고르려면 정확한 공원 이름부터 저장하자. 송도공원 전체와 센트럴파크는 같은 범위가 아니며, 소래습지생태공원의 부대시설도 각각 운영 조건이 다르다.</p>
+<h2>센트럴파크: 송도의 여러 공원 중 한 곳</h2><p><a href="https://www.insiseol.or.kr/main/introduce/facility/park_songdo.jsp" target="_blank" rel="noopener noreferrer">인천시설공단 송도공원 현황</a>은 센트럴파크·해돋이공원·미추홀공원 등을 구분한다. 센트럴파크에는 산책정원·보트하우스·초지원 등이 소개돼 있다. 어느 공원의 시설인지 구분하지 않고 ‘송도 한 바퀴’로 묶지 않았다.</p><p>센트럴파크 안에서 시작해 같은 지점으로 돌아올지, 다른 공원으로 이동할지 먼저 정하자. 공식 면적은 개인의 러닝 거리나 연속 주행 가능한 루프를 뜻하지 않는다. 수상레저·관람시설의 이용 조건도 보행 동선과 별개다.</p>
+<h2>소래습지: 탐방로와 생태 관찰 구역 구분</h2><p><a href="https://www.incheon.go.kr/park/park010301" target="_blank" rel="noopener noreferrer">인천시 소래습지생태공원 안내</a>는 습지·염전·전시관·관찰대·산책로와 쉼터를 소개한다. 자연 관찰 구역을 가로지르는 지름길을 만들기보다 현장 표지에서 허용된 탐방 범위를 확인해야 한다.</p><p>조망 지점에서는 걷고, 통행 가능한 구간에서 짧게 왕복하는 계획을 제안한다. 실제 답사나 러닝 허용 확인을 마친 코스는 아니다. 전시관은 공원 야외 동선과 관람시간·휴관 조건이 달라 별도 확인해야 한다.</p>
+<h2>족욕장은 공원과 같은 시간에 열리지 않는다</h2><p><a href="https://www.incheon.go.kr/park/park010303" target="_blank" rel="noopener noreferrer">인천시 해수족욕장 운영 안내</a>는 3월~11월 중순, 10:00~17:00·월요일 휴장과 기상 악화 때 운영 중단을 안내한다. 이용요금은 무료지만 새벽·밤에 공원에 왔다고 사용할 수 있는 시설은 아니다.</p><p>‘11월 중순’은 정확한 금년도 마지막 영업 날짜를 확정한 표현이 아니다. 당일 운영 여부는 공지의 문의처 032-435-7082·435-7076으로 확인할 사항이다. 족욕장을 샤워·탈의 시설로 안내하거나 달린 뒤 회복 효과를 보장하지 않는다.</p>
+<h2>방문 순서는 출발점·반환점·정리 장소</h2><p>선택한 공원의 정확한 입구를 저장하고 돌아올 지점을 정하자. 같은 장소라도 데크·보행로·관찰 구역과 차량 진입 동선이 어떻게 연결되는지 확인한 뒤 거리를 잡는 편이 낫다.</p><p>운동 뒤 씻기·갈아입기·짐 보관이 필요하면 해당 시설의 실제 조건을 별도로 확인하자. 기존에 함께 소개했던 영종도 해변·계양산 등 다른 권역의 현재 개방과 무료 시설까지 이번 원문으로 검증한 것은 아니다.</p>
+<h2>자주 묻는 질문</h2><h3>송도공원과 센트럴파크는 같은 곳인가요?</h3><p>인천시설공단은 여러 송도공원을 구분하며 센트럴파크는 그중 한 공원입니다. 이용할 공원과 출발 입구를 정확히 정해야 합니다.</p><h3>소래습지 족욕장은 새벽에도 열리나요?</h3><p>공식 안내는 10시~17시 운영·월요일 휴장과 계절·기상 제한을 적습니다. 공원 방문과 시설 이용시간은 별개입니다.</p><h3>11월에 족욕장을 꼭 이용할 수 있나요?</h3><p>안내는 11월 중순까지로 적지만 금년도 정확한 종료일이나 당일 개장을 보장하지는 않습니다. 운영처에 현재 상태를 확인해야 합니다.</p>`,
+    faqs: [
+      {
+        "question": "송도공원과 센트럴파크는 같은 곳인가요?",
+        "answer": "인천시설공단은 여러 송도공원을 구분하며 센트럴파크는 그중 한 공원입니다. 이용할 공원과 출발 입구를 정확히 정해야 합니다."
+      },
+      {
+        "question": "소래습지 족욕장은 새벽에도 열리나요?",
+        "answer": "공식 안내는 10시~17시 운영·월요일 휴장과 계절·기상 제한을 적습니다. 공원 방문과 시설 이용시간은 별개입니다."
+      },
+      {
+        "question": "11월에 족욕장을 꼭 이용할 수 있나요?",
+        "answer": "안내는 11월 중순까지로 적지만 금년도 정확한 종료일이나 당일 개장을 보장하지는 않습니다. 운영처에 현재 상태를 확인해야 합니다."
+      }
+    ],
   },
   {
-    id: 'busan-unique-running-courses-7',
-    slug: 'busan-unique-running-courses-7',
-    title: '부산 달리기 좋은 곳 7선 | 부산 러닝 코스 — 광안리 야경부터 이기대 절벽까지',
-    description: '광안리 야간 러닝부터 이기대 갈맷길까지, 부산에서 달리기 좋은 러닝 코스 7곳을 거리·난이도·시간대·러닝화 추천까지 정리. 광안리·해운대·이기대·태종대·을숙도·송정·부산시민공원 각 코스별 출발지·노면·주의점 가이드.',
-    thumbnail: '/images/blog/busan-unique-running-courses-7.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-05-25',
-    updatedAt: '2026-08-19',
-    category: 'guide' as const,
-    readingTime: 11,
-    tags: ['부산 달리기', '부산 러닝코스', '부산 러닝 코스', '이색 러닝', '광안리 야간', '해운대 미포철도길', '이기대 갈맷길', '태종대', '을숙도', '송정 해변', '부산시민공원', '부산 마라톤'],
-    content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>부산은 바다·산·강·도심을 5km 이내에 결합한 러닝 천국</strong> — 광안리 야간, 이기대 절벽, 미포철도길, 태종대 등 서울에는 없는 풍경의 코스</li>
-    <li>7개 코스 모두 <strong>대중교통 접근 + 평지·완만 위주</strong> — 부산 거주 러너뿐 아니라 KTX로 주말 러닝 여행 가능</li>
-    <li>각 코스별 <strong>출발지·거리·노면·시간대·주의점 + 어울리는 러닝화 카테고리</strong>까지 한 번에 정리</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">🌊</span>
-  <div class="callout-body">
-    <p class="callout-title">부산 러닝만의 매력</p>
-    <p><strong>부산에서 달리기 좋은 곳</strong>을 찾는다면 바다부터 산까지 선택지가 넘칩니다. 부산은 한반도 동남쪽 항구도시로 <strong>바다(해운대·광안리·송정)·강(낙동강·수영강)·산(금정산·이기대·태종대)·도심(시민공원)</strong>이 5km 이내에 결합돼 있습니다. 같은 도시에서 해안·산악·강변·도심 풍경을 모두 경험할 수 있는 곳은 한국에서 부산이 유일. KTX로 서울에서 2시간 30분이라 <strong>주말 러닝 여행지로도 인기</strong>입니다. 본인 발 특성·부상 이력에 맞는 러닝화 후보는 <a href="/recommend">1분 러닝화 추천</a>에서 받을 수 있습니다.</p>
-  </div>
-</div>
-
-<h2>한눈에 비교</h2>
-
-<table>
-  <thead>
-    <tr><th>#</th><th>코스</th><th>거리</th><th>난이도</th><th>특이점</th><th>추천 시간대</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>1</td><td><strong>광안리 + 광안대교 야간</strong></td><td>5~7km</td><td>하 (평지)</td><td>광안대교 조명 + 해변 + 카페</td><td>여름 저녁 8~10PM</td></tr>
-    <tr><td>2</td><td><strong>해운대 + 동백섬 + 미포철도길</strong></td><td>6~9km (결합)</td><td>하~중</td><td>해변 + 옛 동해남부선 철도 부지</td><td>새벽 6AM·해질녘</td></tr>
-    <tr><td>3</td><td><strong>이기대 갈맷길 (2코스)</strong></td><td>약 4.7km</td><td>중상</td><td>해안 절벽 + 트레일</td><td>맑은 날 오전</td></tr>
-    <tr><td>4</td><td><strong>태종대 둘레길</strong></td><td>약 5km</td><td>중 (오르막 있음)</td><td>영도 절벽 + 등대 + 자갈마당</td><td>주말 오전 (인파 전)</td></tr>
-    <tr><td>5</td><td><strong>을숙도 + 낙동강 하구</strong></td><td>5~10km</td><td>하 (평지)</td><td>강변 자전거도로 + 철새</td><td>새벽·저녁 노을</td></tr>
-    <tr><td>6</td><td><strong>송정 해변 + 동백섬</strong></td><td>5~8km</td><td>하</td><td>한적한 해변 + 서핑 풍경</td><td>새벽 6~7AM</td></tr>
-    <tr><td>7</td><td><strong>부산시민공원</strong></td><td>약 3.5km 둘레</td><td>하</td><td>도심 한복판 공원 + 트랙</td><td>평일 새벽·저녁</td></tr>
-  </tbody>
-</table>
-
-<h2>1. 광안리 + 광안대교 야간 러닝 — 부산 야경 1순위</h2>
-
-<p><strong>출발지</strong>: 광안역 5번 출구 → 광안리 해변 (도보 8분)<br>
-<strong>거리</strong>: 5~7km (왕복 + 민락수변공원 연결)<br>
-<strong>노면</strong>: 아스팔트 + 일부 보도블록 + 해변 보행로<br>
-<strong>추천 시간대</strong>: 여름 저녁 8~10PM (광안대교 조명 풀가동 시간)</p>
-
-<p>광안리 해변은 부산 야경 1순위 코스. <strong>광안대교(다이아몬드 브리지) 조명</strong>이 환상적이고, 해변 산책로가 잘 정비돼 있어 평지 러닝에 최적. 광안리 → 민락수변공원 연결로 7km까지 확장 가능.</p>
-
-<p><strong>이 코스의 매력</strong>: 광안대교 야간 조명 + 부산 시민들이 즐기는 해변 분위기 + 카페·맛집 풍부. 인스타 인증샷 명소 1순위. 매년 10월 <strong>부산불꽃축제</strong> 시기엔 글로벌 러닝 명소로 부상.</p>
-
-<p><strong>주의점</strong>: 주말·여름 저녁은 인파 많아 빠른 페이스 어려움. 페이스 훈련은 새벽 6AM 추천. 8월 부산 폭염·습도는 야간이 유일한 선택지.</p>
-
-<p><strong>어울리는 러닝화</strong>: 평지 + 통기성 + 야간 시인성. <a href="/shoes/saucony-ride-18">사우코니 라이드 18</a>·<a href="/shoes/nike-pegasus-41">페가수스 41</a> 같은 통기성 좋은 데일리화.</p>
-
-<h2>2. 해운대 + 동백섬 + 미포철도길 — 해변 + 옛 철도 부지</h2>
-
-<p><strong>출발지</strong>: 해운대역 5번 출구 → 해운대 해변 (도보 7분)<br>
-<strong>거리</strong>: 6~9km (해운대 → 동백섬 → 미포철도길 결합)<br>
-<strong>노면</strong>: 아스팔트 + 해변 보행로 + 옛 철도 부지 흙길<br>
-<strong>추천 시간대</strong>: 새벽 6AM (인파 전) · 해질녘 (노을)</p>
-
-<p>해운대 해변을 따라 동백섬을 한 바퀴 돈 다음 <strong>미포철도길(옛 동해남부선)</strong>로 이어지는 결합 코스. 미포철도길은 2013년 폐선된 동해남부선을 산책로로 재활용한 곳으로, <strong>바다와 나란히 달리는 옛 철도 부지의 운치</strong>가 특별합니다.</p>
-
-<p><strong>이 코스의 매력</strong>: 해운대 해변 + 누리마루 APEC하우스(동백섬) + 미포철도길 결합. 부산 대표 풍경 3개를 한 번에. 봄 벚꽃, 여름 해변, 가을 노을, 겨울 일출 모두 좋음.</p>
-
-<p><strong>주의점</strong>: 미포철도길은 좁고 일부 흙길이라 빠른 페이스 어려움. 주말 인파 많음. 새벽이나 평일 아침 추천.</p>
-
-<p><strong>어울리는 러닝화</strong>: 평지 + 약간의 흙길. <a href="/shoes/hoka-clifton-10">호카 클리프턴 10</a>·<a href="/shoes/on-cloudmonster-3">클라우드몬스터 3</a> 같은 강한 록커 + 안정성. 카본 슈즈는 미포철도길에 비추.</p>
-
-<h2>3. 이기대 갈맷길 (2코스) — 해안 절벽 트레일 러닝</h2>
-
-<p><strong>출발지</strong>: 경성대·부경대역 5번 출구 → 동생말 (버스 20분)<br>
-<strong>거리</strong>: 약 4.7km (이기대 어울마당 → 오륙도 해맞이공원)<br>
-<strong>노면</strong>: 흙길 + 나무 데크 + 일부 계단<br>
-<strong>추천 시간대</strong>: 맑은 날 오전 (오륙도·대마도 시야 확보)</p>
-
-<p>부산 갈맷길 9코스 중 가장 인기 있는 <strong>이기대 갈맷길 2코스</strong>. 동해안 끝자락 절벽 위 트레일로, 한쪽은 광안대교·해운대 풍경, 다른 한쪽은 절벽 아래 바다. <strong>한국 도시에서 가장 드라마틱한 해안 트레일</strong>.</p>
-
-<p><strong>이 코스의 매력</strong>: 오륙도 해맞이공원 도착점에서 일본 대마도까지 보임 (맑은 날). 절벽·바위·해안 식물의 다양한 풍경. 부산 갈맷길 인증 챌린지 가능.</p>
-
-<p><strong>주의점</strong>: 트레일 코스라 일반 데일리화는 미끄러울 수 있음. <strong>비 직후 흙길 미끄러움·낙석 주의</strong>. 단독 러닝보다 2인 이상 동행 권장. 가족·아이와는 비추 (절벽).</p>
-
-<p><strong>어울리는 러닝화</strong>: 트레일 입문. 일반 데일리는 부적합. <strong>접지력 좋은 안정화</strong> 또는 트레일 전용 신발. <a href="/shoes/asics-gel-kayano-32">카야노 32</a>·<a href="/shoes/on-cloudmonster-3">클라우드몬스터 3</a> 정도가 데일리 중에선 가장 적합.</p>
-
-<h2>4. 태종대 둘레길 — 영도 절벽 + 등대 + 자갈마당</h2>
-
-<p><strong>출발지</strong>: 남포역 6번 출구 → 태종대 입구 (버스 30분)<br>
-<strong>거리</strong>: 약 5km (태종대 순환로)<br>
-<strong>노면</strong>: 아스팔트 (전 구간 차량 통제, 전기차만 다님)<br>
-<strong>추천 시간대</strong>: 주말 오전 9~10AM (인파 전)</p>
-
-<p>영도구 끝자락 태종대 자연공원. <strong>전 구간 차량 통제(전기 다누비 열차만 다님)</strong>라 차 걱정 없이 뛸 수 있고, 약 5km 순환로가 절벽·등대·자갈마당·전망대를 두루 지나갑니다.</p>
-
-<p><strong>이 코스의 매력</strong>: 태종대 등대 + 자갈마당(자연 자갈 해변) + 영도 절벽 + 대마도 시야. 부산 영도구 사람들의 새벽 러닝 명소. 봄 벚꽃 시즌엔 특별히 좋음.</p>
-
-<p><strong>주의점</strong>: 일부 구간 가파른 오르막 있음. 무릎 약한 러너는 워킹 권장. 태종대 자체 입장료는 무료지만 다누비 열차는 유료(왕복 4,000원).</p>
-
-<p><strong>어울리는 러닝화</strong>: 오르막 + 평지 결합. <a href="/shoes/asics-gel-nimbus-28">님버스 28</a>·<a href="/shoes/new-balance-1080-v15">NB 1080 v15</a> 같은 맥스 쿠션이 무릎 보호에 좋음.</p>
-
-<h2>5. 을숙도 + 낙동강 하구 — 강변 + 철새 자전거도로</h2>
-
-<p><strong>출발지</strong>: 하단역 1번 출구 → 을숙도대교 (도보 10분)<br>
-<strong>거리</strong>: 5~10km (을숙도 생태공원 + 낙동강 자전거도로)<br>
-<strong>노면</strong>: 아스팔트 + 일부 흙길<br>
-<strong>추천 시간대</strong>: 새벽 · 저녁 노을 (철새 관찰)</p>
-
-<p>낙동강 하구에 위치한 <strong>을숙도</strong>는 한국 최대 철새 도래지 중 하나로, 평일 새벽엔 자전거·러너가 만나는 한적한 강변 코스. 부산 해변 코스의 정반대 매력 — <strong>물·새·갈대의 자연 풍경</strong>.</p>
-
-<p><strong>이 코스의 매력</strong>: 도심 해변 코스에 지쳤다면 정반대의 자연 휴식 코스. 낙동강 자전거도로는 양산·김해까지 이어져 LSD 훈련 가능 (왕복 20km+ 가능). 저녁 노을이 절경.</p>
-
-<p><strong>주의점</strong>: 일부 구간 가로등 부족 (야간 러닝 시 헤드램프 권장). 자전거 속도 빠른 곳도 있어 차선 분리 주의. 겨울철 철새 보호 구역 일부 출입 제한.</p>
-
-<p><strong>어울리는 러닝화</strong>: 평지 장거리 LSD. <a href="/shoes/new-balance-1080-v15">NB 1080 v15</a>·<a href="/shoes/asics-gel-nimbus-28">님버스 28</a>·<a href="/shoes/saucony-ride-19">라이드 19</a> 같은 부드러운 쿠션이 좋음.</p>
-
-<h2>6. 송정 해변 + 동백섬 — 한적한 해변과 서핑 풍경</h2>
-
-<p><strong>출발지</strong>: 송정역(동해선) 출구 → 송정 해변 (도보 8분)<br>
-<strong>거리</strong>: 5~8km (송정 해변 + 동백섬 결합)<br>
-<strong>노면</strong>: 해변 보행로 + 아스팔트<br>
-<strong>추천 시간대</strong>: 새벽 6~7AM · 평일 오전</p>
-
-<p>송정 해변은 해운대·광안리보다 한적한 부산의 두 번째 해변. <strong>서핑 명소</strong>로도 유명해 새벽 서퍼들의 활기찬 모습을 볼 수 있는 곳. 송정 해변 끝 동백섬과 결합하면 5~8km 코스 완성.</p>
-
-<p><strong>이 코스의 매력</strong>: 해운대보다 한적해서 페이스 유지 좋고, <strong>서핑하는 사람들 풍경</strong>이 색다른 동기부여. 송정역(동해선)으로 부산 시내에서 접근 편리.</p>
-
-<p><strong>주의점</strong>: 해변 보행로는 발 빠질 수 있어 모래 직접 진입은 비추. 동백섬 둘레길 일부는 흙길.</p>
-
-<p><strong>어울리는 러닝화</strong>: 평지 + 한적함. <a href="/shoes/saucony-ride-18">라이드 18</a>·<a href="/shoes/nike-pegasus-41">페가수스 41</a> 같은 가벼운 데일리화면 충분.</p>
-
-<h2>7. 부산시민공원 — 도심 한복판 광활한 공원</h2>
-
-<p><strong>출발지</strong>: 부전역 또는 시민공원역 (도보 5분)<br>
-<strong>거리</strong>: 약 3.5km 둘레 + 내부 산책로 (총 5~7km)<br>
-<strong>노면</strong>: 아스팔트 + 우레탄 트랙 + 잔디<br>
-<strong>추천 시간대</strong>: 평일 새벽·저녁</p>
-
-<p>부산진구 한복판 옛 미군 기지 부지를 재개발한 도심 공원. <strong>약 47만평 규모로 부산 최대 도시공원</strong>. 시민들의 러닝·산책·운동 명소로 부산 거주 러너들의 평일 데일리 코스.</p>
-
-<p><strong>이 코스의 매력</strong>: 우레탄 트랙 구간 있어 인터벌 훈련 가능. 카페·편의시설 풍부. 강북·강남 어디서든 부전역으로 30분 이내 접근.</p>
-
-<p><strong>주의점</strong>: 주말 가족 단위 많아 빠른 페이스 어려움. 새벽이나 평일 저녁 추천.</p>
-
-<p><strong>어울리는 러닝화</strong>: 다목적 데일리. <a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a>·<a href="/shoes/saucony-endorphin-speed-5">엔돌핀 스피드 5</a> 같은 슈퍼트레이너로 인터벌 훈련도 가능.</p>
-
-<h2>본인 부산 거주지·목적별 추천 코스</h2>
-
-<table>
-  <thead>
-    <tr><th>거주지</th><th>이지런</th><th>LSD (15km+)</th><th>인터벌·페이스 훈련</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>해운대·송정</td><td>해운대 해변</td><td>해운대 + 미포철도길 + 송정 결합</td><td>해운대 해변 왕복</td></tr>
-    <tr><td>광안리·수영</td><td>광안리 야간</td><td>광안리 + 민락수변 + 수영강 결합</td><td>광안리 해변 왕복</td></tr>
-    <tr><td>남구·이기대</td><td>경성대 부근</td><td>이기대 + 오륙도 갈맷길</td><td>이기대 절벽 반복 (힐 트레이닝)</td></tr>
-    <tr><td>영도</td><td>태종대 둘레길</td><td>태종대 + 영도 해안로 결합</td><td>태종대 오르막 반복</td></tr>
-    <tr><td>사하·서구</td><td>을숙도 산책로</td><td>을숙도 + 낙동강 자전거도로 (왕복 20km+)</td><td>을숙도 직선 구간 (트랙 대체)</td></tr>
-    <tr><td>부산진·동래</td><td>부산시민공원</td><td>시민공원 + 수영강 결합</td><td>시민공원 우레탄 트랙</td></tr>
-  </tbody>
-</table>
-
-<h2>이런 코스 뛸 때 필요한 러닝화 카테고리</h2>
-
-<ul>
-  <li><strong>평지 해변 (광안리·해운대·송정)</strong>: 가성비 데일리 + 통기성. <a href="/blog/saucony-ride-18-vs-19-comparison">사우코니 라이드 18 vs 19 비교</a> · <a href="/blog/nike-pegasus-41-vs-42-comparison">페가수스 41 vs 42 비교</a></li>
-  <li><strong>트레일·절벽 (이기대·태종대)</strong>: 안정성·접지력. <a href="/blog/asics-kayano-32-vs-33-comparison">카야노 32 vs 33 비교</a> · <a href="/blog/on-cloudmonster-2-vs-3-comparison">클라우드몬스터 2 vs 3 비교</a></li>
-  <li><strong>강변 LSD (을숙도)</strong>: 맥스 쿠션. <a href="/blog/new-balance-1080-v14-vs-v15-comparison">NB 1080 v14 vs v15 비교</a></li>
-  <li><strong>인터벌·페이스 (부산시민공원 트랙)</strong>: 슈퍼트레이너 또는 가성비 카본. <a href="/blog/asics-superblast-2-vs-3-comparison">슈퍼블라스트 2 vs 3 비교</a> · <a href="/blog/asics-magic-speed-4-vs-5-comparison">매직스피드 4 vs 5 비교</a></li>
-</ul>
-
-<h2>부산 러닝 여행 — KTX로 주말 러닝 가는 분에게</h2>
-
-<div class="callout info">
-  <span class="callout-icon">🚄</span>
-  <div class="callout-body">
-    <p class="callout-title">서울에서 KTX 2시간 30분, 1박 2일 러닝 여행 추천 코스</p>
-    <ul>
-      <li><strong>1일차 오후 도착 → 광안리 야간 러닝</strong> (해변 + 광안대교 조명) — 저녁 광안리 횟집·맛집</li>
-      <li><strong>2일차 새벽 → 이기대 갈맷길</strong> (오륙도 일출 → 광안대교 풍경) — 오전 카페</li>
-      <li><strong>2일차 오전 → 해운대 + 미포철도길</strong> (해변 + 옛 철도 부지) — 점심 후 KTX 복귀</li>
-    </ul>
-    <p>총 약 20~25km 러닝 + 부산 대표 풍경 3개. 한 주 훈련량을 부산 러닝 여행으로 채우는 패턴이 한국 러닝 커뮤니티에서 인기.</p>
-  </div>
-</div>
-
-<h2>FAQ</h2>
-
-<h3>Q. 부산 러닝과 서울 러닝의 차이는?</h3>
-<p>서울은 한강 중심의 평지 코스가 압도적, 부산은 <strong>바다·산·강·도심을 5km 이내에 결합</strong>한 다양성이 강점. 같은 1주일에 해변·트레일·강변·도심 코스 모두 경험 가능한 도시는 한국에서 부산뿐. 단 부산은 여름 폭염·습도가 서울보다 심해 새벽·야간 러닝 비중이 더 큽니다.</p>
-
-<h3>Q. 부산 마라톤 대회는 어떤 게 있나요?</h3>
-<p>주요 대회: <strong>부산 비치 울트라마라톤</strong>(여름 해변 야간), <strong>부산 마라톤</strong>(가을), <strong>이기대 갈맷길 트레일</strong>, <strong>해운대 마라톤</strong>(봄). 부산 거주가 아니어도 KTX로 1박 2일 참가 가능. <a href="/marathon">전체 마라톤 일정 →</a></p>
-
-<h3>Q. 8월 부산 여름에 뛸 만한가요?</h3>
-<p>낮 30도 후반 + 습도 80%+로 한국에서 가장 힘든 러닝 환경. <strong>새벽 5~6AM 또는 저녁 8~9PM 이후</strong>만 안전. 광안리·해운대 야간 러닝이 사실상 유일한 선택지. 8월엔 LSD보다 짧은 이지런 위주 권장.</p>
-
-<h3>Q. 이기대 갈맷길 안전한가요?</h3>
-<p>맑은 날 + 낮 시간대는 안전. <strong>비 직후·야간·단독 러닝은 비추</strong>. 절벽·바위 미끄러움 + 낙석 위험. 2인 이상 동행, 트레일 신발 또는 접지력 좋은 안정화 신발 권장. 무릎 약한 러너는 절벽 구간만 워킹.</p>
-
-<h3>Q. 가족·아이와 함께 갈 만한 코스는?</h3>
-<p>부산시민공원·광안리 해변·송정 해변·을숙도 생태공원이 가장 가족 친화적 (시설·화장실·카페 풍부). 해운대 동백섬 둘레도 OK. <strong>이기대·태종대 절벽 구간은 아이와 비추</strong>.</p>
-
-<h3>Q. 부산 러닝 클럽이나 동호회가 있나요?</h3>
-<p>부산 거주 러너 인스타·네이버 카페로 검색하면 광안리·해운대·시민공원 기반 정규 모임 많음. 매주 토요일 오전 광안리 그룹런이 가장 활발. 부산 마라톤 대회 시즌(9~11월)엔 페이스 메이커 모임도 활발.</p>
-
-<h2>결론 — 부산은 한국 러너의 두 번째 본진</h2>
-
-<div class="callout success">
-  <span class="callout-icon">🏃</span>
-  <div class="callout-body">
-    <p class="callout-title">서울에서 KTX 2시간 30분, 부산은 그만한 가치가 있는 러닝 도시</p>
-    <p>부산은 단순한 "지방 도시"가 아니라 한국에서 <strong>가장 다양한 러닝 환경</strong>을 가진 곳입니다. 광안리 야경 + 이기대 절벽 + 미포철도길 + 을숙도 강변 — 같은 도시에서 이만큼 풍경이 다른 코스를 만나기 어렵습니다.</p>
-    <p>부산 거주 러너라면 위 7개 코스 중 본인 거주지에서 가까운 1~2개를 평일 데일리로 + 주말은 다른 동네 코스로 변화 주는 패턴이 좋고, 타지 거주자라면 <strong>1박 2일 러닝 여행 + 부산 마라톤 참가</strong>로 한 번에 잡는 것이 효율적.</p>
-    <p>서울 이색 코스는 <a href="/blog/seoul-unique-running-courses-7">서울 이색 러닝 코스 7선 가이드</a>에서, 본인 발 특성·부상 이력에 맞춘 러닝화 후보는 <a href="/recommend">1분 러닝화 추천</a>에서 받을 수 있습니다.</p>
-  </div>
-</div>
-
-<h2>관련 글</h2>
-
-<ul>
-  <li><a href="/blog/seoul-unique-running-courses-7">서울 이색 러닝 코스 7선 — 한강 외 명소 정리</a></li>
-  <li><a href="/blog/yeouido-sweet-potato-gps-art-run">여의도 고구마 런 — GPS 아트 러닝 가이드</a></li>
-  <li><a href="/blog/marathon-pacing-mental-strategy-guide">마라톤 페이싱·멘탈 전략 가이드</a></li>
-  <li><a href="/blog/first-running-shoe-guide-2026">첫 러닝화 고르는 법 2026</a></li>
-  <li><a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너 추천 신발</a></li>
-</ul>
-
-<p><small>출처: 부산광역시 갈맷길·태종대 자연공원 공식 자료 + 부산 러닝 커뮤니티(인스타·네이버 카페) 인기 코스 분석. 코스 정보는 시기·날씨에 따라 변동될 수 있으니 방문 전 공원 운영시간·갈맷길 통행 가능 여부 확인 권장. 거리는 GPS 측정값 기준이며 출발 지점에 따라 ±0.5km 변동 가능.</small></p>
-`,
+    id: "busan-unique-running-courses-7",
+    slug: "busan-unique-running-courses-7",
+    title: "부산 해안 러닝 계획: 송정·해운대와 광안리·이기대, 구간 경계 확인",
+    description: "갈맷길 2-1과 2-2는 민락교를 경계로 나뉘는 도보 코스입니다. 공식 12km·11.4km와 도보 소요시간을 구분하고, 짧은 해변 왕복과 해안 탐방의 복귀 방법을 따로 계획합니다.",
+    thumbnail: "/images/blog/verified-busan-unique-running-courses-7-20261110.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-05-25",
+    updatedAt: "2026-11-10",
+    category: "guide",
+    readingTime: 4,
+    tags: [
+      "부산 달리기",
+      "부산 러닝코스",
+      "부산 러닝 코스",
+      "이색 러닝",
+      "광안리 야간",
+      "해운대 미포철도길",
+      "이기대 갈맷길",
+      "태종대",
+      "을숙도",
+      "송정 해변",
+      "부산시민공원",
+      "부산 마라톤"
+    ],
+    content: `<p><small>2026년 11월 10일 공개 원문 대조. 동선 제안은 편집자의 계획 예시이며 실제 답사·측량 결과가 아닙니다.</small></p>
+<p>부산 해안에서 달릴 구간을 고를 때 ‘광안리·해운대·송정·동백섬’을 한 장소처럼 연결하지 말자. 공식 갈맷길의 구간 경계를 보면 이동 규모와 복귀 계획을 판단하기 쉽다. 아래는 도보 안내를 활용한 계획 자료이며 실제 러닝 답사나 공인 코스 측량은 아니다.</p>
+<h2>2-1구간: 송정에서 해운대·동백섬을 지나 민락교</h2><p><a href="https://www.busan.go.kr/galmaetgil/tour0201" target="_blank" rel="noopener noreferrer">부산시 갈맷길 2-1구간</a>은 송정해수욕장~민락교 12km·도보 4시간으로 안내한다. 중간 인증 지점은 동백섬 전망데크다. 송정과 동백섬은 같은 해변 안의 짧은 연결이 아니므로 내 출발점을 먼저 정해야 한다.</p><p>전체를 갈 계획이 아니라면 현장에서 통행 가능한 해변 구간을 확인해 짧게 왕복하는 방식을 제안한다. 부분 구간의 길이나 진입 거리를 더해 새 실측값을 만들지 않았다. 해변열차 시설과 보행 동선도 구분하자.</p>
+<h2>2-2구간: 광안리와 이기대는 다른 주행 조건</h2><p><a href="https://www.busan.go.kr/galmaetgil/tour0202" target="_blank" rel="noopener noreferrer">부산시 갈맷길 2-2구간</a>은 민락교~광안리~동생말~이기대 어울마당~오륙도 진입데크를 11.4km·도보 4시간, 공식 난도 ‘중’으로 적는다. 도심 해변과 해안 탐방 구간이 이어지는 구조다.</p><p>이 난도는 해당 도보 코스 분류이지 모든 러너의 완주 능력 평가가 아니다. 현장 사정에 따라 코스가 바뀔 수 있다는 조건도 있다. 광안리에서 시작했다고 해안 끝까지 같은 노면·같은 페이스가 가능하다고 가정하지 않는다.</p>
+<h2>광안대교를 보는 것과 다리 위를 달리는 것은 별개</h2><p>공식 코스 설명에는 광안대교 야경과 주변 경관이 등장하지만 2-2의 통과 지점은 민락교·광안리·이기대 쪽이다. 야경을 감상하는 동선을 다리 차도 위 상시 러닝으로 바꾸어 안내하지 않는다.</p><p>관광시설·전망 데크의 입장시간과 보행로 출입 조건도 따로 확인하자. 특히 관람객이 모이는 지점은 걷기로 나누는 계획이 가능하다. 전 구간 야간 조명이나 무중단 주행을 보장한 것은 아니다.</p>
+<h2>긴 구간은 복귀편과 중간 종료 지점부터</h2><p><a href="https://www.busan.go.kr/galmaetgil/info0204" target="_blank" rel="noopener noreferrer">부산시 갈맷길 이용 FAQ</a>는 장거리·산행 구간 탐방 전에 기상·복장·돌아오는 교통편을 확인하도록 안내한다. 편도 종점까지 간 뒤 출발지로 돌아오는 시간과 거리는 별도로 계획해야 한다.</p><p>짧은 왕복인지, 한 구간 편도인지, 관람 위주인지 목적을 먼저 고르자. 공식 화장실 정보는 샤워·보관 제공과 다르며, 도보 4시간을 개인의 러닝 완주시간으로 환산하지 않았다. 당일 통제와 실제 이용 시설을 확인한 뒤 계획에 넣어야 한다.</p>
+<h2>자주 묻는 질문</h2><h3>송정과 동백섬은 바로 붙은 해변 코스인가요?</h3><p>공식 2-1은 송정~해운대·동백섬~민락교를 잇는 12km 도보 코스입니다. 송정과 동백섬을 같은 짧은 해변 구간처럼 안내하지 않았습니다.</p><h3>갈맷길 2-2는 몇 km인가요?</h3><p>부산시 상세 안내는 민락교~오륙도 진입데크 구간을 11.4km·도보 4시간으로 적습니다. 개인 진입·이탈과 러닝 시간은 별도입니다.</p><h3>광안대교 위를 평소에도 달리는 코스인가요?</h3><p>확인한 공식 동선은 광안대교 야경을 보는 광안리·이기대 쪽입니다. 다리 차도 위 상시 러닝 허용을 안내한 자료가 아닙니다.</p>`,
+    faqs: [
+      {
+        "question": "송정과 동백섬은 바로 붙은 해변 코스인가요?",
+        "answer": "공식 2-1은 송정~해운대·동백섬~민락교를 잇는 12km 도보 코스입니다. 송정과 동백섬을 같은 짧은 해변 구간처럼 안내하지 않았습니다."
+      },
+      {
+        "question": "갈맷길 2-2는 몇 km인가요?",
+        "answer": "부산시 상세 안내는 민락교~오륙도 진입데크 구간을 11.4km·도보 4시간으로 적습니다. 개인 진입·이탈과 러닝 시간은 별도입니다."
+      },
+      {
+        "question": "광안대교 위를 평소에도 달리는 코스인가요?",
+        "answer": "확인한 공식 동선은 광안대교 야경을 보는 광안리·이기대 쪽입니다. 다리 차도 위 상시 러닝 허용을 안내한 자료가 아닙니다."
+      }
+    ],
   },
   {
     id: 'yeouido-sweet-potato-gps-art-run',
