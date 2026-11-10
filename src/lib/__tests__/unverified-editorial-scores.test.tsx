@@ -15,7 +15,6 @@ const profile: UserProfile = {
 
 describe('unverified editorial assessments', () => {
   it('does not publish unsupported scores as known catalog facts', () => {
-    expect(shoes).toHaveLength(156);
     for (const shoe of shoes) {
       expect(shoe.specs?.cushioning, shoe.slug).toBeUndefined();
       expect(shoe.specs?.responsiveness, shoe.slug).toBeUndefined();

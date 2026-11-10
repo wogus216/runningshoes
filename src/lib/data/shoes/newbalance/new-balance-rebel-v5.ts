@@ -98,7 +98,8 @@ export const shoe: Shoe = {
     purchaseLinks: [
       {
         "store": "쿠팡",
-        "url": "https://link.coupang.com/a/g5YR0Aqh3Y"
+        "url": "https://link.coupang.com/a/g5YR0Aqh3Y",
+        "note": "2026-11-10 연결 상품의 모델명·선택 정보를 대조했습니다. 사이즈·폭·구성·최종 가격과 현재 재고는 판매처에서 확인하세요."
       }
     ],
     verification: {

@@ -11,7 +11,8 @@ describe('purchase evidence rendering', () => {
       const official = shoe.purchaseLinks!.find(link => link.isOfficial)!;
       const output = renderToStaticMarkup(React.createElement(PurchaseLinks, { purchaseLinks: [official], shoeName: shoe.name, brand: shoe.brand }));
       expect(output, slug).toContain(new URL(official.url).hostname);
-      expect(output, slug).toContain('2026-11-10 확인');
+      expect(official.priceCheckedAt, slug).toMatch(/^\d{4}-\d{2}-\d{2}$/);
+      expect(output, slug).toContain(`${official.priceCheckedAt} 확인`);
       expect(output, slug).not.toContain('undefined');
     }
   });
