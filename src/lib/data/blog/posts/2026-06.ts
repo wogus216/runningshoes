@@ -1985,168 +1985,55 @@ export const posts_2026_06: BlogPost[] = [
     ],
   },
   {
-    id: 'new-york-marathon-2026-registration-guide',
-    slug: 'new-york-marathon-2026-registration-guide',
-    title: '뉴욕시티마라톤 2026 신청 — 추첨 마감 후 남은 길(자선) + 5개 자치구 50주년 | 타임퀄·9+1·참가비, 인천 14시간 원정',
-    description: '2026 뉴욕시티마라톤(11/1)은 일반 추첨이 끝났습니다(24만+ 지원). 지금 한국 러너가 노릴 현실 경로는 공식 자선(최소 모금 $3,000~), 9+1·타임퀄은 다음 사이클용. 5개 자치구 50주년 난코스, 참가비·타임퀄 기준표, 인천 14시간·시차 14시간·ESTA까지 정리했습니다.',
-    thumbnail: '/images/blog/new-york-marathon-2026-registration-guide.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-06-13',
+    id: "new-york-marathon-2026-registration-guide",
+    slug: "new-york-marathon-2026-registration-guide",
+    title: "뉴욕마라톤 2026 참가 후와 2027준비: 공식 결과·추첨 미정·9+1연도 구분",
+    description: "2026대회는 11월 1일 열렸고 공식 결과 조회가 연결돼 있습니다.2027추첨 날짜는 미발표,2027년 9+1프로그램은 2028출전권을 목표로 하며 패스 추첨제가 도입됩니다. 자선·투어도 해당 연도 공지를 확인하세요.",
+    thumbnail: "/images/blog/verified-new-york-marathon-2026-registration-guide-20261110.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-06-13",
     event: {
-      name: '뉴욕시티마라톤 2026',
-      startDate: '2026-11-01',
-      location: { name: '뉴욕 (스태튼아일랜드 출발)', address: '미국 뉴욕' },
-      organizer: 'New York Road Runners',
-      url: 'https://www.nyrr.org/tcsnycmarathon',
+      "name": "뉴욕시티마라톤 2026",
+      "startDate": "2026-11-01",
+      "location": {
+        "name": "뉴욕 (스태튼아일랜드 출발)",
+        "address": "미국 뉴욕"
+      },
+      "organizer": "New York Road Runners",
+      "url": "https://www.nyrr.org/tcsnycmarathon"
     },
-    category: 'news' as const,
-    readingTime: 9,
-    tags: ['뉴욕시티마라톤', '뉴욕마라톤 2026', '세계 6대 마라톤', '메이저 마라톤', '마라톤 해외원정', '자선 마라톤', '식스스타', '5개 자치구', '마라톤 추첨', 'NYRR'],
-    content: `
-<div class="deadline-strip">
-  <p><strong>2026 일반 추첨은 이미 마감(2026년 2월 25일 접수 종료, 3월 4일 발표).</strong> 2026년 6월 현재 한국 러너가 노릴 수 있는 현실 경로는 <strong>공식 자선(charity)</strong> 정도이며, 나머지는 <strong>2027 사이클</strong> 준비용입니다.</p>
-</div>
-
-<div class="tldr">
-  <p><strong>3줄 요약</strong></p>
-  <ul>
-    <li><strong>대회일</strong>: 2026년 11월 1일(일) — 5개 자치구 코스 완성 <strong>50주년</strong>. 인천 출발 기준 가장 도전적인 메이저 중 하나입니다.</li>
-    <li><strong>일반 추첨은 끝났습니다</strong>(2026년 2월 4~25일 접수, 3월 4일 발표, 역대 최다 24만+ 지원). 지금 노릴 수 있는 건 <strong>공식 자선</strong>, 나머지(9+1·타임 퀄리파이어)는 <strong>다음 사이클</strong> 대비용입니다.</li>
-    <li>한국 러너 변수: <strong>ESTA·약 14시간 비행·14시간 시차·쌀쌀한 11월 초</strong>. 그리고 다리·언덕 많은 코스라 <strong>기록보다 경험·식스스타</strong>로 접근하는 게 맞습니다.</li>
-  </ul>
-</div>
-
-<div class="callout warning">
-  <p><strong>2026 일반 추첨은 종료됐습니다.</strong> 이 글은 "지금(2026년 6월) 시점에서 뉴욕을 노리는 한국 러너"를 위해 <em>① 아직 열려 있을 수 있는 경로</em>와 <em>② 다음 시즌을 위한 캘린더</em>를 함께 정리합니다. 모든 금액·날짜는 NYRR(nyrr.org) 공식 발표 기준이며 변동 가능성이 있어, 신청 직전 공식 페이지 재확인을 권합니다.</p>
-</div>
-
-<h2>1. 핵심 한 장 요약 — 뉴욕시티마라톤 2026</h2>
-<p>뉴욕시티마라톤은 세계 6대 메이저(Abbott World Marathon Majors) 중 가장 큰 규모를 자랑하는 대회입니다. 2026년은 1976년 5개 자치구 전 구간 코스가 완성된 지 <strong>50주년</strong>이 되는 해로, NYRR은 연중 기념 프로그램과 역대 최다 규모의 공식 자선 파트너(<strong>670개 이상</strong>)를 발표했습니다. "식스스타(6 Majors)"를 모으는 한국 러너에게는 마지막 퍼즐로 자주 꼽히는 대회입니다.</p>
-
-<table>
-  <thead>
-    <tr><th>항목</th><th>내용</th><th>신뢰도</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>대회일</td><td>2026년 11월 1일(일)</td><td>확정</td></tr>
-    <tr><td>주최</td><td>New York Road Runners(NYRR)</td><td>확정</td></tr>
-    <tr><td>코스</td><td>5개 자치구(스태튼아일랜드→브루클린→퀸스→맨해튼→브롱크스→맨해튼), 베라자노-내로스 브리지 출발</td><td>확정</td></tr>
-    <tr><td>일반 추첨 접수</td><td>2026년 2월 4~25일 (<strong>마감됨</strong>)</td><td>확정</td></tr>
-    <tr><td>추첨 발표</td><td>2026년 3월 4일</td><td>확정</td></tr>
-    <tr><td>지원자 수</td><td>역대 최다 24만+ 건</td><td>확정</td></tr>
-    <tr><td>당첨자 등록 마감</td><td>2026년 9월 8일(개별 등록 링크 사용 기한)</td><td>확정</td></tr>
-    <tr><td>50주년 특이사항</td><td>공식 자선 파트너 670개+(역대 최다), 연중 기념 프로그램</td><td>확정</td></tr>
-  </tbody>
-</table>
-
-<div class="callout info">
-  <p><strong>거리 감각이 헷갈린다면</strong> 먼저 <a href="/blog/race-distance-difficulty-guide-2026">대회 거리별 난이도 가이드</a>로 풀코스 준비 상태를 점검하세요. 뉴욕은 다리 경사와 후반 1번가·5번가 언덕 때문에 "기록용"보다 "경험용" 코스로 분류됩니다.</p>
-</div>
-
-<h2>2. 지금(2026년 6월) 신청 가능한 경로는?</h2>
-<p>결론부터 말하면, <strong>일반 추첨과 타임 퀄리파이어 클레임 창은 모두 닫혔습니다</strong>(둘 다 2026년 2월에 마감). 6월 현재 한국 러너가 현실적으로 2026 대회 출전을 노릴 수 있는 거의 유일한 경로는 <strong>공식 자선(Official Charity) 모금 출전</strong>입니다. 나머지는 <strong>2027 이후를 위한 준비</strong>로 이해해야 합니다.</p>
-
-<h3>① 공식 자선(Charity) — 6월 시점에 가장 현실적</h3>
-<p>NYRR 공식 자선 파트너에 모금 약정을 하면 추첨과 무관하게 보장 출전권을 받습니다. 단, "기부"가 아니라 <strong>본인이 모금해서 채워야 하는 최소 모금액</strong>이 있고, 미달 시 본인 카드로 충당되는 구조라 부담이 큽니다.</p>
-<table>
-  <thead>
-    <tr><th>구분</th><th>내용</th><th>신뢰도</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>최소 모금액</td><td>단체별 상이. NYRR 규정상 <strong>Bronze 최소 $3,000 / Silver 최소 $3,500</strong> 이상. 실제 단체는 보통 $3,500~$6,500+로 설정</td><td>확정(규정)</td></tr>
-    <tr><td>모금 마감</td><td>2026년 10월 15일까지 최소 모금액 달성(단체별로 더 이른 마감 있음)</td><td>확정</td></tr>
-    <tr><td>신청처</td><td>각 자선 단체 페이지에서 직접 신청(NYRR이 아니라 단체에 지원)</td><td>확정</td></tr>
-    <tr><td>잔여 자리</td><td>인기 단체는 조기 마감. 6월 시점 잔여 여부는 단체별 확인 필요</td><td>추정</td></tr>
-  </tbody>
-</table>
-<p>한국 러너 주의: 모금은 보통 미국 기부 플랫폼 기반이라 <strong>해외 후원자 모집이 쉽지 않습니다</strong>. $3,500을 원화로 환산하면 대략 480만 원 안팎(환율에 따라 변동). 현실적으로는 "참가비 + 자기 부담 기부"로 접근하는 한국 원정러가 많습니다.</p>
-
-<h3>② 9+1 프로그램 — 다음 사이클(2027 출전권)용</h3>
-<p>NYRR 회원이 <strong>당해 연도에 NYRR 인증 대회 9개 완주 + 자원봉사(또는 추가 1개) 1회</strong>를 채우면 다음 해 대회 보장 출전권을 얻습니다. 2026년에 9+1을 완성하면 <strong>2027 대회</strong> 출전권이 됩니다. 다만 NYRR 대회 대부분이 뉴욕 현지에서 열려, 한국 거주 러너에게는 사실상 현지 체류자용 경로입니다.</p>
-
-<h3>③ 타임 퀄리파이어(기록 출전) — 이미 마감, 2027 대비</h3>
-<p>기록 기준을 충족하면 보장 출전권을 받지만, <strong>2026 클레임 창은 2월 4~25일로 종료</strong>됐습니다. 핵심 변수: NYRR은 신청자가 몰리면 <strong>상위 일부만</strong> 받습니다. 2026의 경우 비(非)NYRR 풀코스 타임 퀄리파이어는 <strong>상위 10%</strong>만 수용해, 기준보다 약 <strong>22분 52초 더 빨라야</strong> 실제 출전이 가능했습니다. 즉 "기준 통과 = 출전 보장"이 아닙니다.</p>
-<table>
-  <thead>
-    <tr><th>연령대</th><th>남성 풀코스</th><th>여성 풀코스</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>18–34</td><td>2:53:00</td><td>3:13:00</td></tr>
-    <tr><td>35–39</td><td>2:55:00</td><td>3:15:00</td></tr>
-    <tr><td>40–44</td><td>2:58:00</td><td>3:26:00</td></tr>
-    <tr><td>45–49</td><td>3:05:00</td><td>3:38:00</td></tr>
-    <tr><td>50–54</td><td>3:14:00</td><td>3:51:00</td></tr>
-    <tr><td>55–59</td><td>3:23:00</td><td>4:10:00</td></tr>
-    <tr><td>60–64</td><td>3:34:00</td><td>4:27:00</td></tr>
-    <tr><td>65–69</td><td>3:45:00</td><td>4:50:00</td></tr>
-    <tr><td>70–74</td><td>4:10:00</td><td>5:30:00</td></tr>
-    <tr><td>75–79</td><td>4:30:00</td><td>6:00:00</td></tr>
-    <tr><td>80+</td><td>4:55:00</td><td>6:35:00</td></tr>
-  </tbody>
-</table>
-<p class="caption">기록 인정 창: 2025년 1월 1일 이후 인증 대회. 논바이너리 기준은 여성 기준과 동일. (NYRR 공식)</p>
-
-<h3>④ 국제 투어 오퍼레이터 — 패키지형 보장 출전</h3>
-<p>NYRR과 계약된 해외 공식 여행사를 통하면 <strong>출전권 + 항공·숙박 패키지</strong>로 참가할 수 있습니다. 추첨에 의존하지 않는 장점이 있지만 가격이 비싸고, 한국발 패키지는 종류가 제한적입니다. 가격·잔여는 업체별로 천차만별이라 여기서 단정하지 않습니다(추정·미발표 영역).</p>
-
-<h2>3. 참가비 — 회원/비회원/국제</h2>
-<table>
-  <thead>
-    <tr><th>구분</th><th>금액(USD)</th><th>신뢰도</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>NYRR 회원</td><td>$255 + 처리수수료 $11</td><td>확정</td></tr>
-    <tr><td>비회원(국제 러너 포함)</td><td>$315 + 처리수수료 $11</td><td>확정</td></tr>
-    <tr><td>자선/투어 경로</td><td>위 참가비와 별도로 <strong>모금액·패키지 비용</strong>이 추가</td><td>확정</td></tr>
-  </tbody>
-</table>
-<p>국제 러너(비미국 거주자)도 <strong>참가비 구조는 동일</strong>합니다($315 비회원 기준). 환율에 따라 비회원 참가비는 대략 45만 원 안팎(처리수수료 포함, 근사치)입니다. 자선 경로를 택하면 여기에 최소 모금액(480만 원~)이 더해집니다.</p>
-
-<h2>4. 코스 — "기록보다 경험"인 이유</h2>
-<p>뉴욕 코스는 평탄한 베를린·시카고와 정반대입니다. 출발하자마자 <strong>베라자노-내로스 브리지</strong>의 가파른 오르막을 만나고, 5개 자치구를 잇는 다리들에서 경사·바람·노면 변화가 반복됩니다. 후반 맨해튼 1번가의 긴 직선 오르막과 센트럴파크 진입 전 5번가 언덕이 다리를 무너뜨리는 구간으로 악명 높습니다. 그래서 PB를 노리는 대회라기보다 <strong>5개 자치구를 관통하며 식스스타를 채우는 경험형 코스</strong>로 보는 게 맞습니다.</p>
-<table>
-  <thead>
-    <tr><th>자치구</th><th>특징</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>스태튼아일랜드(출발)</td><td>베라자노 다리 오르막 — 초반 페이스 과욕 금물</td></tr>
-    <tr><td>브루클린</td><td>가장 긴 구간, 관중 응원 절정</td></tr>
-    <tr><td>퀸스 → 맨해튼</td><td>퀸스보로 다리(조용한 오르막) 뒤 1번가 함성</td></tr>
-    <tr><td>브롱크스 → 맨해튼</td><td>심리적 저점 구간, 다시 5번가 언덕</td></tr>
-    <tr><td>센트럴파크(피니시)</td><td>마지막 굴곡 — 끝까지 평지가 아님</td></tr>
-  </tbody>
-</table>
-<p>이런 코스 특성상 신발 선택이 갈립니다. 다리 경사·후반 근피로를 감안하면 무조건 최상위 레이싱화보다, 안정성과 쿠션을 갖춘 카본화가 합리적인 경우가 많습니다. 입문~중급 러너라면 <a href="/shoes/nike-vaporfly-4">나이키 베이퍼플라이 4</a>, 기록을 노린다면 <a href="/shoes/saucony-endorphin-elite-2">사코니 엔돌핀 엘리트 2</a>나 <a href="/shoes/asics-metaspeed-sky-plus">아식스 메타스피드 스카이+</a>를 비교해 보세요(개인 발·페이스에 따라 다름).</p>
-
-<h2>5. 한국 러너 체크리스트 — 인천 출발 기준</h2>
-<table>
-  <thead>
-    <tr><th>항목</th><th>내용</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>입국 서류</td><td><strong>ESTA</strong>(전자여행허가) 사전 승인 필수. 한국 여권(비자면제 프로그램 대상). 출발 최소 며칠 전 신청 권장</td></tr>
-    <tr><td>항공</td><td>인천(ICN) → 뉴욕 JFK 또는 뉴어크(EWR) 직항 약 14시간</td></tr>
-    <tr><td>시차</td><td>11월 미 동부는 EST(서머타임 종료 후). 한국이 약 <strong>14시간 빠름</strong> — 도착 후 시차 적응에 며칠 필요</td></tr>
-    <tr><td>날씨</td><td>11월 초 뉴욕은 쌀쌀(아침 한 자릿수~10도 안팎 흔함). 출발 전 대기 방한 의류 필수</td></tr>
-    <tr><td>결제</td><td>한국 신용카드 해외결제 가능 여부·한도 사전 확인(참가비·모금·현지 비용)</td></tr>
-    <tr><td>일정</td><td>레이스 전날 엑스포 패킷 픽업 필수 — 도착 일정을 금~토에 여유 있게</td></tr>
-  </tbody>
-</table>
-<p>해외 원정의 항공·숙소·시차 적응·환전·짐 싸기까지 한 번에 점검하려면 <a href="/blog/overseas-marathon-travel-checklist-korea">해외 마라톤 원정 체크리스트</a>를 그대로 따라가면 됩니다. ESTA·14시간 비행·결제 같은 변수는 뉴욕에도 동일하게 적용됩니다.</p>
-
-<div class="major-next">
-  <h2>다음 단계 — 당신의 상황은?</h2>
-  <ul>
-    <li><strong>"2026년에 꼭 뛰고 싶다"</strong> → 6월 시점 현실 경로는 <strong>공식 자선</strong>뿐. 관심 단체 페이지에서 잔여·최소 모금액을 직접 확인하고, <a href="/blog/overseas-marathon-travel-checklist-korea">해외 원정 매뉴얼</a>로 항공·숙소·ESTA를 동시에 준비하세요.</li>
-    <li><strong>"기록으로 보장 출전"</strong> → 위 타임 퀄리파이어 표를 목표로. 단 상위 일부만 수용되므로 <strong>기준보다 한참 빠르게</strong> 준비해야 합니다. <a href="/blog/boston-marathon-2027-bq-guide">보스턴 BQ 가이드</a>의 기록 전략이 그대로 도움이 됩니다.</li>
-    <li><strong>"다른 메이저도 비교 중"</strong> → 비교적 추첨 문이 넓은 <a href="/blog/tokyo-marathon-2027-registration-guide">도쿄</a>, 접수가 더 열려 있는 <a href="/blog/chicago-marathon-2026-registration-guide">시카고</a>, 남반구 시즌의 <a href="/blog/sydney-marathon-2026-registration-guide">시드니</a>를 함께 검토하세요. 전체 일정은 <a href="/marathon">마라톤 캘린더</a>에서.</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <p><strong>면책</strong>: 본 글의 날짜·금액·정원은 NYRR(nyrr.org) 및 공식 발표 기준으로 작성됐으며, 2026년 6월 시점 정보입니다. 자선 단체별 모금액·마감, 투어 패키지 가격, 향후 사이클 접수일은 변동될 수 있으니 <strong>신청 직전 공식 페이지에서 반드시 재확인</strong>하세요. 당첨률·결과를 단정하지 않습니다. 환율 환산은 근사치입니다.</p>
-<p>🗺️ 6대 메이저 전체 비교와 "어디부터 갈까"가 궁금하다면 <a href="/blog/world-marathon-majors-guide-2026">세계 6대 마라톤 완전정복</a>에서 한눈에 보세요.</p>
-`,
+    category: "news",
+    readingTime: 4,
+    tags: [
+      "뉴욕마라톤",
+      "NYRR",
+      "2026결과",
+      "2027추첨",
+      "9+1패스",
+      "출전 연도"
+    ],
+    content: `<p><small>2026년 11월 10일 공식 원문 대조. 행사 연도·신청·결제·증빙·실제 참가를 나눠 확인합니다.</small></p>
+<p>2026뉴욕마라톤은 11월 1일 일정이 끝났고 <a href="https://prod.nyrr.org/races-and-events/2026/2026-tcs-new-york-city-marathon" target="_blank" rel="noopener noreferrer">NYRR공식 대회 페이지</a>와 <a href="https://prod.nyrr.org/tcsnycmarathon/race-results" target="_blank" rel="noopener noreferrer">공식 결과 안내</a>에 2026결과 조회가 연결돼 있다. 지금도 2026자선 참가권을 찾으라고 안내하던 예전 글을 참가 후·다음 연도 확인 자료로 바꿨다.</p>
+<h2>2026기록은 공식 결과에서</h2><p>결과 연결은 <a href="https://results.nyrr.org/event/M2026/finishers" target="_blank" rel="noopener noreferrer">NYRR2026완주자 결과</a>다. 연도·종목·이름·배번호를 확인하자. 이번에 독자의 개인 결과·모든 완주자 수를 대신 조회한 것은 아니다. 시계의 운동 기록과 공식 결과의 출발·구간·최종 시간을 나눠 보고, 문제는 공식 결과 문의 경로에 확인해야 한다.</p><p>사진이나 참가자 앱 화면만으로 최종 자격·실격을 판정하지 않는다. 제출받는 다른 대회가 요구하는 공식 증빙 형식도 별도로 읽어야 한다.</p>
+<h2>2027일반 추첨: 날짜를 기다리는 단계</h2><p><a href="https://prod.nyrr.org/tcsnycmarathon/run-in-2027" target="_blank" rel="noopener noreferrer">NYRR Run in2027</a>는 일반 추첨 신청 날짜를 추후 발표한다고 안내한다. <a href="https://prod.nyrr.org/tcsnycmarathon/the-drawing" target="_blank" rel="noopener noreferrer">기존 Drawing페이지</a>에 남은 2월4~25일·3월 4일 추첨은 2026사이클이다. 그대로 2027날짜로 옮기면 안 된다.</p><p>같은 2027안내는 공식 자선 파트너를 2027봄, 국제 투어 오퍼레이터를 2027초 발표 예정으로 적는다. 한국 거주자가 이용할 수 있는 업체·실제 참가권 재고·모금 조건을 이번에 확인한 것은 아니다. 현재 모든 자선·투어 경로가 구매 가능하다고 안내하지 않는다.</p>
+<h2>9+1은 프로그램 연도와 출전 연도가 다르다</h2><table><thead><tr><th>활동 연도</th><th>목표 출전 연도</th><th>현재 공식 조건의 핵심</th></tr></thead><tbody><tr><td>2026년 9+1</td><td>2027뉴욕마라톤</td><td>대상9경기+봉사1회·연말 회원 자격</td></tr><tr><td>2027년 9+1패스</td><td>2028뉴욕마라톤</td><td>패스 자격 추첨 도입 후 프로그램 수행</td></tr></tbody></table><p><a href="https://prod.nyrr.org/tcsnycmarathon/9-1-guaranteed-entry" target="_blank" rel="noopener noreferrer">9+1공식 안내</a>는 2027프로그램부터 회원 대상 자격 추첨을 도입한다고 설명한다. 추첨 신청은 2026년 9월17~29일, 추첨 10월 1일로 이미 지났고 선정자는US$99를 내고 패스를 얻는 방식이었다. 무료인 것은 자격 추첨 신청이며, 패스·각 경기·향후 마라톤 참가비가 전부 무료라는 뜻은 아니다.</p><p>2027패스 보유자는 2027년에 대상9경기·봉사1회·연말 회원 자격을 충족해 2028의 유료 보장 출전 자격을 얻는 구조다.2026프로그램으로 2027출전을 준비하던 러너의 기존 조건은 바뀌지 않는다고 명시한다. 한국에서 짧게 한 번 방문하면 조건이 자동 완료된다는 안내가 아니다.</p>
+<h2>확정 출전과 여행 예약을 나누자</h2><p>2026참가비·타임퀄 표·과거 당첨률·항공시간을 다음 연도 확정 정보로 재사용하지 않았다. 본인의 출전 자격 확보·공식 등록·결제와 항공·숙소 예약은 별도 확인 항목이다. 결과·9+1충족·회원 상태를 이 글에서 대신 확인한 것은 아니다.</p>
+<h2>자주 묻는 질문</h2><h3>일반 추첨 2월4~25일이 2027일정인가요?</h3><p>공식 Drawing페이지의 해당 날짜는 2026사이클입니다. Run in2027은 날짜를 추후 발표한다고 안내하므로 그대로 다음 해 날짜로 쓰면 안 됩니다.</p><h3>2027년 9+1을 마치면 2027뉴욕을 뛰나요?</h3><p>2027프로그램은 2028대회 유료 보장 출전 자격을 목표로 합니다.2026프로그램이 2027출전을 목표로 하는 기존 조건과 구분해야 합니다.</p><h3>9+1패스도 무료인가요?</h3><p>무료인 것은 자격 추첨 신청입니다. 공식은 선정자의 패스 요금US$99를 안내하고 이후 경기·목표 마라톤 참가비까지 무료라고 설명하지 않습니다.</p>`,
+    updatedAt: "2026-11-10",
+    faqs: [
+      {
+        "question": "일반 추첨 2월4~25일이 2027일정인가요?",
+        "answer": "공식 Drawing페이지의 해당 날짜는 2026사이클입니다. Run in2027은 날짜를 추후 발표한다고 안내하므로 그대로 다음 해 날짜로 쓰면 안 됩니다."
+      },
+      {
+        "question": "2027년 9+1을 마치면 2027뉴욕을 뛰나요?",
+        "answer": "2027프로그램은 2028대회 유료 보장 출전 자격을 목표로 합니다.2026프로그램이 2027출전을 목표로 하는 기존 조건과 구분해야 합니다."
+      },
+      {
+        "question": "9+1패스도 무료인가요?",
+        "answer": "무료인 것은 자격 추첨 신청입니다. 공식은 선정자의 패스 요금US$99를 안내하고 이후 경기·목표 마라톤 참가비까지 무료라고 설명하지 않습니다."
+      }
+    ],
   },
   {
     id: "six-star-medal-challenge-korea-guide",
@@ -2518,106 +2405,54 @@ export const posts_2026_06: BlogPost[] = [
     ],
   },
   {
-    id: 'chicago-marathon-2026-registration-guide',
-    slug: 'chicago-marathon-2026-registration-guide',
-    title: '시카고마라톤 2026 가이드 | 대회 종료·결과 확인·2027 접수 안내',
-    description: '2026 시카고마라톤은 10월 11일 종료됐습니다. 공식 결과와 지원이 마감된 2027 대회 안내로 연결하고, 2026년 참가 경로·비용과 원정 준비 정보를 기록으로 보존했습니다. 아래 2026년 접수 일정은 현재 신청 조건이 아닙니다.',
-    thumbnail: '/images/blog/chicago-marathon-2026-registration-guide.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-06-13',
-    updatedAt: '2026-10-12',
+    id: "chicago-marathon-2026-registration-guide",
+    slug: "chicago-marathon-2026-registration-guide",
+    title: "시카고마라톤 2026참가 후: 공식 결과와 2027승인·결제 기한 구분",
+    description: "2026대회 결과는 해당 연도 공식 조회에서 확인하세요.2027보장 참가 승인자는 11월 10일미 중부23:59, 추첨 당첨자는 12월 15일미 중부23:59까지 결제해야 합니다. 결과·결제·투어 시작을 나눠 정리했습니다.",
+    thumbnail: "/images/blog/verified-chicago-marathon-2026-registration-guide-20261110.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-06-13",
+    updatedAt: "2026-11-10",
     event: {
-      name: '시카고마라톤 2026',
-      startDate: '2026-10-11',
-      location: { name: '시카고 (그랜트파크)', address: '미국 시카고' },
-      organizer: 'Bank of America Chicago Marathon',
-      url: 'https://www.chicagomarathon.com/',
+      "name": "시카고마라톤 2026",
+      "startDate": "2026-10-11",
+      "location": {
+        "name": "시카고 (그랜트파크)",
+        "address": "미국 시카고"
+      },
+      "organizer": "Bank of America Chicago Marathon",
+      "url": "https://www.chicagomarathon.com/"
     },
-    category: 'news' as const,
-    readingTime: 8,
-    tags: ['시카고마라톤', '시카고마라톤 2026', '세계 6대 마라톤', '메이저 마라톤', 'PB 마라톤', '마라톤 해외원정', '자선 마라톤', '식스스타', '마라톤 세계기록', '해외 마라톤 신청'],
-    content: `
-<div class="deadline-strip"><span class="dl-badge">📢 2027 지원 마감</span><span class="dl-text">2026 대회(10월 11일)는 종료됐습니다. <strong>2027 대회(2027년 10월 10일) 일반 지원은 한국시간 10월 30일(금) 새벽 4시에 마감됐고 추첨 결과는 12월 8일입니다</strong> — 남은 자선·투어 경로와 기록 기준표는 <a href="/blog/chicago-marathon-2027-application-guide">시카고마라톤 2027 접수 가이드</a>에 정리했습니다.</span></div>
-
-<div class="tldr"><span class="tldr-label">3줄 요약</span><ul>
-<li><strong>2026 대회는 종료됐습니다.</strong> 우승 기록과 개인 결과 조회는 <a href="/blog/chicago-marathon-2026-results">2026 결과 정리</a>에서 확인하세요.</li>
-<li><strong>2027 신청은 진행 중입니다.</strong> 추첨·기록 보장 신청 마감은 한국시간 10월 30일 새벽 4시입니다.</li>
-<li><strong>아래 2026년 자선·투어 일정과 비용은 지난 자료입니다.</strong> 다음 대회 조건은 <a href="/blog/chicago-marathon-2027-application-guide">2027 접수 가이드</a>를 보세요.</li>
-</ul></div>
-
-<div class="callout warning"><span class="callout-icon">⚠️</span><div class="callout-body"><p class="callout-title">2026년 참가 안내는 기록용입니다</p><p>대회와 참가 신청이 모두 종료됐습니다. 아래 자선·투어 일정과 비용을 2027년에 그대로 적용하면 안 됩니다. 새로운 신청은 공식 Apply 페이지와 2027 접수 가이드를 확인하세요.</p></div></div>
-
-<h2>시카고마라톤이 'PB 성지'로 불리는 이유</h2>
-<p>월드 메이저 가운데 시카고는 <strong>기록을 노리는 러너의 코스</strong>로 통합니다. 도심을 가로지르되 고저차가 거의 없는 평지 위주 코스라, 페이스를 일정하게 끌고 가기에 더없이 좋거든요. 켈빈 킵텀이 2023년 당시 남자 세계기록 2:00:35를 세운 코스이기도 합니다. 시카고 29개 동네를 도는 길에 약 150만 명의 관중이 늘어서니, 후반부에 다리가 풀릴 때 밀어주는 응원의 힘도 만만치 않고요.</p>
-<p>규모도 압도적입니다. 2025년에는 역대 최다인 54,351명이 완주했고 120개국 이상이 참가했어요. 2026년 실제 참가·완주 인원은 공식 집계로 확인해야 하며 전년도 인원을 그대로 적용할 수 없습니다.</p>
-
-<h2>2026년 당시 참가 경로 — 자선 vs 투어 (모두 종료)</h2>
-<p>2026년 일반 추첨 마감 후 자선·공식 투어가 별도 참가 경로로 안내됐습니다. 아래는 당시 조건입니다.</p>
-
-<table>
-<thead><tr><th>구분</th><th>국제 자선(Charity)</th><th>투어 오퍼레이터</th></tr></thead>
-<tbody>
-<tr><td>신청 마감</td><td><strong>2026년 9월 15일(화)</strong> 또는 정원 소진 시</td><td><strong>2026년 8월 16일(일)</strong></td></tr>
-<tr><td>출전 보장</td><td>보장</td><td>보장</td></tr>
-<tr><td>추가 비용</td><td>최소 모금 <strong>$2,200</strong> (단체에 따라 더 높을 수 있음)</td><td>배번+호텔+현지 지원 묶음 가격(업체별 상이)</td></tr>
-<tr><td>참가비 포함 여부</td><td>참가비와 <strong>별개</strong>로 모금액 부담</td><td>대개 패키지에 배번 포함</td></tr>
-<tr><td>한국 러너 적합성</td><td>영문 모금 페이지 운영, 해외 거주자 가능</td><td>⚠️ 한국 공인 파트너 유무 사전 확인 필요</td></tr>
-</tbody>
-</table>
-
-<div class="callout info"><span class="callout-icon">💡</span><div class="callout-body"><p class="callout-title">자선 모금액은 '추가 비용'입니다</p><p>자선 엔트리의 최소 모금 $2,200(약 330만~340만 원)는 아래에서 설명할 참가비와 <strong>별도</strong>입니다. 일부 단체는 추첨 탈락 후 신청 시 $3,000을 요구하기도 해요. 결제 전 해당 자선단체 영문 모금 페이지에서 최소 금액을 반드시 확인하세요.</p></div></div>
-
-<p>투어 오퍼레이터는 국제 러너를 위한 배번+숙박+현지 지원 패키지입니다. 다만 <strong>모든 나라에 공인 시카고마라톤 투어 파트너가 있는 건 아닙니다.</strong> 한국 공인 파트너의 구체적인 업체명은 공식 발표되지 않았으니, 특정 업체 광고에 현혹되지 말고 신청 직전 공식 사이트(chicagomarathon.com)에서 한국 파트너 유무를 직접 확인하는 게 안전합니다.</p>
-
-<h2>참가비와 일정 — 숫자로 정리</h2>
-<p>참가비는 거주 국가에 따라 다릅니다. 한국 러너는 비(非)미국 거주자 요금이 적용돼요.</p>
-
-<table>
-<thead><tr><th>항목</th><th>내용</th></tr></thead>
-<tbody>
-<tr><td>대회일</td><td><strong>2026년 10월 11일(일)</strong></td></tr>
-<tr><td>참가비(미국 거주자)</td><td>$250 (USD)</td></tr>
-<tr><td>참가비(한국 등 비미국)</td><td><strong>$260</strong> (USD, 약 39만~40만 원)</td></tr>
-<tr><td>환불</td><td>불가, 별도 처리수수료 부과</td></tr>
-<tr><td>투어 패키지 마감</td><td>2026년 8월 16일(일)</td></tr>
-<tr><td>자선 엔트리 마감</td><td>2026년 9월 15일(화)</td></tr>
-</tbody>
-</table>
-
-<p>참가비는 모두 USD이며 환불이 안 됩니다. 자선으로 들어가면 이 참가비에 더해 모금액까지 부담해야 한다는 점, 다시 한번 짚어둡니다.</p>
-
-<h2>한국 러너 실전 체크리스트 — 항공·시차·결제</h2>
-<p>해외 메이저는 '배번 확보'가 절반, '현지 도착과 컨디션 관리'가 나머지 절반입니다. 인천에서 출발하는 한국 러너 기준으로 꼭 챙길 것들을 정리했어요.</p>
-
-<table>
-<thead><tr><th>항목</th><th>내용</th></tr></thead>
-<tbody>
-<tr><td>항공</td><td>인천(ICN)→시카고 오헤어(ORD) <strong>직항</strong> 운항(대한항공·에어프레미아·유나이티드·델타·티웨이 등)</td></tr>
-<tr><td>비행시간</td><td>직항 약 <strong>13시간 30분</strong></td></tr>
-<tr><td>시차</td><td>한국이 시카고보다 <strong>약 14시간 빠름</strong>(중부시간)</td></tr>
-<tr><td>입국 요건</td><td><strong>ESTA(전자여행허가) 필수</strong> — 전자여권 + 출발 전 승인 시 무비자 최대 90일 관광 체류</td></tr>
-<tr><td>환율 근사</td><td>2026년 6월 기준 <strong>$1 ≈ 1,500~1,530원</strong>(변동)</td></tr>
-</tbody>
-</table>
-
-<div class="callout warning"><span class="callout-icon">⚠️</span><div class="callout-body"><p class="callout-title">신청할 때 가장 많이 하는 실수 두 가지</p><p><strong>① 영문 이름 불일치</strong> — 신청서의 영문 이름은 <strong>여권 영문 표기와 정확히 일치</strong>해야 합니다. 한 글자라도 다르면 현지 배번 수령이나 입국에서 문제가 생길 수 있어요. <strong>② 카드 문제</strong> — 참가비와 모금은 USD 결제이니 <strong>해외결제 가능 카드(VISA/Master 등)</strong>를 준비하고, 카드 유효기간이 대회 시점(2026년 10월) 이후인지 미리 확인하세요.</p></div></div>
-
-<p>시차가 14시간이라 도착 후 첫 이틀은 몸이 한밤중에 깨곤 합니다. 가능하면 대회 3~4일 전 도착해 햇빛을 충분히 쬐며 리듬을 맞추는 걸 추천해요. 시카고는 10월이면 아침 기온이 쌀쌀하니 출발 대기용 겉옷(버려도 되는 옷)도 챙기면 좋습니다.</p>
-
-<h2>평지 PB 코스에 맞는 카본화는?</h2>
-<p>시카고는 고저차가 거의 없는 만큼, <strong>일정한 페이스를 길게 유지할 때 에너지 리턴이 좋은 카본화</strong>가 잘 맞습니다. 기록을 노리고 평지를 밀어붙이는 코스라면 <a href="/shoes/adidas-adios-pro-4">아디다스 아디오스 프로 4</a>처럼 반발력과 추진력이 강한 레이싱화가 제격이에요. 다만 슈퍼슈즈는 충분한 적응 주행 없이 풀코스에 바로 투입하면 종아리·발바닥에 부담이 옵니다. 대회 전 몇 차례 템포런으로 발에 길들인 뒤 출전하세요.</p>
-<p>풀코스 자체가 처음이라면 배번부터 덜컥 잡기 전에 <a href="/blog/race-distance-difficulty-guide-2026">거리별 난이도 가이드</a>로 내 수준을 먼저 점검하는 걸 권합니다. 국내외 대회 일정은 <a href="/marathon">마라톤 일정 페이지</a>에서 함께 확인할 수 있어요.</p>
-
-<div class="major-next"><p class="mn-title">다음 목적지를 정해보세요</p><div class="mn-grid">
-<a class="mn-card" href="/blog/tokyo-marathon-2027-registration-guide"><span class="mn-emoji">🗼</span><div class="mn-label">도쿄마라톤 2027</div><div class="mn-desc">아시아 유일 메이저, 가까운 직항·시차 1시간</div></a>
-<a class="mn-card" href="/blog/sydney-marathon-2026-registration-guide"><span class="mn-emoji">🌉</span><div class="mn-label">시드니마라톤 2026</div><div class="mn-desc">막내 메이저, 남반구 봄에 달리는 항만 코스</div></a>
-<a class="mn-card" href="/shoes/adidas-adios-pro-4"><span class="mn-emoji">👟</span><div class="mn-label">아디다스 아디오스 프로 4</div><div class="mn-desc">평지 PB 사냥용 카본 레이싱화</div></a>
-</div></div>
-
-<p>🗺️ 6대 메이저 전체 비교와 "어디부터 갈까"가 궁금하다면 <a href="/blog/world-marathon-majors-guide-2026">세계 6대 마라톤 완전정복</a>에서 한눈에 보세요.</p>
-
-<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 위 일정·금액은 시카고마라톤 공식 발표(2026년 6월 기준)를 근거로 정리했으며, 참가비·모금액은 모두 USD이고 환율(약 1,500~1,530원/$)은 결제 시점에 따라 달라집니다. 자선 최소 모금액·투어 파트너·정확한 정원 등 세부 사항은 변경될 수 있으니 신청 직전 공식 사이트(chicagomarathon.com)에서 반드시 재확인하세요. 한국 공인 투어 오퍼레이터의 구체 업체명은 공식 미발표 상태입니다.</p>
-`,
+    category: "news",
+    readingTime: 4,
+    tags: [
+      "시카고마라톤",
+      "2026결과",
+      "2027결제",
+      "보장 참가",
+      "추첨 결과"
+    ],
+    content: `<p><small>2026년 11월 10일 공식 원문 대조. 행사 연도·신청·결제·증빙·실제 참가를 나눠 확인합니다.</small></p>
+<p>2026시카고마라톤은 10월 11일 열렸다. 지금은 2026접수가 더 열려 있는 대회가 아니다. <a href="https://www.chicagomarathon.com/results/" target="_blank" rel="noopener noreferrer">대회 공식 결과 안내</a>에서 연도를 확인하고 자신의 기록을 찾아야 한다.2027추첨 신청·승인·결제 조건은 별도의 절차다.</p>
+<h2>2026우승과 개인 결과를 구분</h2><p><a href="https://worldathletics.org/news/report/feysa-kipruto-2026-chicago-marathon" target="_blank" rel="noopener noreferrer">세계육상연맹 10월 11일 결과 보고</a>는 남자 아모스 키프루토2:01:09, 여자 하위 페이사2:13:33우승을 기록한다. 엘리트 성적을 일반 참가자의 실제 경험·PB보장 근거로 사용하지 않는다.</p><p>공식 결과 화면은 자신이 참가한 연도·종목·배번호·이름을 대조해야 한다. 개인GPS의 거리·자동 멈춤 시간과 칩 결과는 서로 다를 수 있어 값의 차이만으로 오류 원인을 확정하지 않는다. 전체 전원 결과를 이번에 확인한 것은 아니다.</p>
+<h2>2027보장 참가 승인자의 결제 마감이 더 이르다</h2><p><a href="https://www.chicagomarathon.com/apply/" target="_blank" rel="noopener noreferrer">2027공식 신청 안내</a>는 보장 참가 신청의 심사 승인 뒤 <strong>11월 10일 23:59미국 중부시간까지</strong> 결제·등록을 마쳐야 한다고 명시한다. 한국시간 환산은 <strong>11월 11일 14:59</strong>다. 추첨 지원자의 12월결제 기한과 섞으면 승인받은 자리를 놓칠 수 있다.</p><p>한국시간은 해당 날짜의America/Chicago시차를 적용한 계산이다. 자기 계정의 승인·미결제·마감 알림은 직접 확인해야 하며, 이 글에서 개인 상태를 조회하지 않았다.</p>
+<h2>추첨 지원자는 12월 8일 결과·15일 결제</h2><p>2027일반 지원은 10월 29일 14:00미국 중부시간에 끝났다. 추첨 결과는 12월 8일 이메일 안내, 선정자는 12월 15일 23:59미국 중부시간까지 결제·등록 조건이다. 후자의 한국시간은 12월 16일 14:59다.</p><p>이메일 도착과 등록 완료는 별개다. 중복 신청으로 확률이 높아진다는 안내도 없고, 개별 당첨·결제 성공을 보장하지 않는다.</p>
+<h2>자선·투어는 현황과 비용을 따로</h2><p>신청 메인은 일부 공식 자선 팀의 자리를 안내하고, 공식 투어 경로 시작은 12월 8일로 적는다. 업체의 상담·대기 접수와 실제 대회 참가권 확정을 나눠야 한다. 현재 한국 업체의 실제 재고나 총 여행비를 확인한 추천 목록은 아니다.</p><p>상세 비용·모금·자격 조건은 <a href="/blog/chicago-marathon-2027-application-guide">2027시카고 신청 가이드</a>에서 확인하되, 개인 주문·결제 마감도 함께 읽자. 예전USD가격·환율·‘아시아 유일’·평지PB보장 등 오래된 비교 문구를 남기지 않았다.</p>
+<h2>자주 묻는 질문</h2><h3>보장 참가 승인자도 12월까지 결제하면 되나요?</h3><p>공식은 승인받은 보장 참가자의 결제 마감을 11월 10일 23:59미국 중부시간으로 안내합니다. 한국시간 환산은 11월 11일 14:59이며 추첨 당첨자의 12월마감과 다릅니다.</p><h3>추첨 결과가 오면 등록이 끝인가요?</h3><p>선정자는 12월 15일 23:59미국 중부시간까지 결제·등록을 완료해야 합니다. 한국시간 환산은 12월 16일 14:59입니다.</p><h3>투어 참가권도 현재 모두 구매할 수 있나요?</h3><p>신청 메인은 공식 투어 경로를 12월 8일부터 안내합니다. 업체 상담·대기 접수와 실제 참가권 확정은 별도이며 현재 재고는 확인하지 않았습니다.</p>`,
+    faqs: [
+      {
+        "question": "보장 참가 승인자도 12월까지 결제하면 되나요?",
+        "answer": "공식은 승인받은 보장 참가자의 결제 마감을 11월 10일 23:59미국 중부시간으로 안내합니다. 한국시간 환산은 11월 11일 14:59이며 추첨 당첨자의 12월마감과 다릅니다."
+      },
+      {
+        "question": "추첨 결과가 오면 등록이 끝인가요?",
+        "answer": "선정자는 12월 15일 23:59미국 중부시간까지 결제·등록을 완료해야 합니다. 한국시간 환산은 12월 16일 14:59입니다."
+      },
+      {
+        "question": "투어 참가권도 현재 모두 구매할 수 있나요?",
+        "answer": "신청 메인은 공식 투어 경로를 12월 8일부터 안내합니다. 업체 상담·대기 접수와 실제 참가권 확정은 별도이며 현재 재고는 확인하지 않았습니다."
+      }
+    ],
   },
   {
     id: "tokyo-marathon-2027-registration-guide",
@@ -2933,138 +2768,46 @@ export const posts_2026_06: BlogPost[] = [
 `,
   },
   {
-    id: '2026-second-half-marathon-schedule-korea',
-    slug: '2026-second-half-marathon-schedule-korea',
-    title: '2026 하반기 마라톤 완전정복 — 9월 공주백제부터 12월 부산까지 | 가을 PB 시즌 대회·접수일·참가비·광클 생존 팁 총정리',
-    description: '가을은 마라톤 PB 시즌입니다. 2026년 하반기(9~12월) 한국 주요 마라톤을 월별 캘린더로 정리했습니다. 공주백제·경주국제·춘천·안동·JTBC서울·MBN서울·인천·부산까지 — 대회일, 접수일, 참가비, 코스 난이도, 그리고 인기 대회 조기 매진을 뚫는 접수 광클 팁까지 한 번에. 거리별·목적별로 어떤 대회를 골라야 하는지도 정리했습니다.',
-    thumbnail: '/images/blog/2026-second-half-marathon-schedule-korea.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-06-11',
-    category: 'news' as const,
-    readingTime: 12,
-    tags: ['하반기 마라톤', '2026 마라톤 일정', '가을 마라톤', '춘천마라톤', '경주국제마라톤', 'JTBC 서울마라톤', 'MBN 서울마라톤', '인천마라톤', '부산국제마라톤', '마라톤 접수'],
-    content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>가을이 마라톤 PB 시즌인 이유</strong>는 명확합니다 — 10~15도의 서늘한 기온, 낮은 습도, 그리고 혹서기 훈련의 효과가 가을 레이스에서 터지기 때문. 세계 6대 메이저 중 4개가 가을에 열립니다.</li>
-    <li>2026 하반기 핵심 일정: <strong>9/20 공주백제 · 10/17 경주국제 · 10/25(추정) 춘천 · 11/1 JTBC서울 · 11/15 MBN서울 · 11/22 인천 · 12/6 부산</strong>. 풀코스 도전이면 10월 춘천·경주·안동이 격전지입니다.</li>
-    <li>인기 대회는 <strong>접수 광클이 곧 참가</strong>. 춘천 풀코스는 5분 내 마감 전례, 동아 계열은 동마클럽 우선접수, JTBC는 추첨제 — 대회마다 접수 방식이 달라 미리 알아야 뚫립니다.</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">🍂</span>
-  <div class="callout-body">
-    <p class="callout-title">왜 가을에 PB가 쏟아질까 — 데이터로 보는 '가을 = 마라톤 시즌'</p>
-    <p>가을이 기록 시즌인 데는 세 가지 이유가 있습니다. <strong>① 기온</strong> — 10~15도 환경에서는 체온을 식히는 데 쓰일 에너지가 근육 산소 공급에 집중돼, 32도 폭염 대비 풀코스 기록이 평균 10~15분 빨라지는 것으로 알려져 있습니다. <strong>② 습도</strong> — 가을 맑은 날의 낮은 습도는 땀 증발 효율을 높여 체온 조절을 쉽게 합니다. <strong>③ 훈련 시너지</strong> — 7~8월 혹서기에 쌓은 심폐·근지구력이 서늘한 가을에 비로소 기록으로 터집니다("여름 훈련, 가을 기록"). 베를린·시카고·뉴욕 등 세계 메이저가 가을에 몰린 것도 같은 이유죠. 여름 훈련 안전은 <a href="/blog/hot-weather-summer-running-safety-guide-korea">폭염 러닝 안전 가이드</a>를 참고하세요.</p>
-  </div>
-</div>
-
-<h2>2026 하반기 마라톤 캘린더 한눈에</h2>
-
-<table>
-  <thead>
-    <tr><th>날짜</th><th>대회</th><th>지역</th><th>종목</th><th>접수</th><th>상태</th></tr>
-  </thead>
-  <tbody>
-    <tr><td><strong>9/13</strong></td><td>강화해변마라톤</td><td>인천</td><td>하프·10K·5K·커플·가족런</td><td>6/10~ 선착순</td><td>확정·신규</td></tr>
-    <tr><td><strong>9/20</strong></td><td>공주백제마라톤</td><td>충남</td><td>풀·32K·하프·10K·5K</td><td>마감(5/21)</td><td>확정</td></tr>
-    <tr><td><strong>10/4</strong></td><td>안동마라톤</td><td>경북</td><td>풀·하프·10K·5K</td><td>마감(5/31)</td><td>확정·난코스</td></tr>
-    <tr><td><strong>10/11</strong></td><td>서울레이스</td><td>서울</td><td>하프·10K</td><td>마감(5/27)</td><td>확정·도심</td></tr>
-    <tr><td><strong>10/17</strong></td><td>경주국제마라톤</td><td>경북</td><td>풀·하프·10K</td><td>마감(5/26)</td><td>확정</td></tr>
-    <tr><td><strong>10/25</strong></td><td>조선일보 춘천마라톤</td><td>강원</td><td>풀·10K</td><td>풀 7/14·10K 7/16</td><td>확정</td></tr>
-    <tr><td><strong>11/1</strong></td><td>JTBC 서울마라톤</td><td>서울</td><td>풀·10K</td><td>추첨 마감(4월)</td><td>확정</td></tr>
-    <tr><td><strong>11/15</strong></td><td>MBN 서울마라톤</td><td>서울</td><td>하프·10K</td><td>우선 6/22·일반 6/25~26</td><td>확정</td></tr>
-    <tr><td><strong>11/15</strong></td><td>손기정평화마라톤</td><td>경기 고양</td><td>풀·하프·10K</td><td>9월 예상</td><td>일정 미발표</td></tr>
-    <tr><td><strong>11/22</strong></td><td>인천마라톤(제2회)</td><td>인천</td><td>풀·10K·5K</td><td>추후 공개</td><td>날짜 확정</td></tr>
-    <tr><td><strong>12/6</strong></td><td>부산브릿지마라톤(구 부산국제마라톤)</td><td>부산</td><td>풀·10K</td><td>8/24 10시 선착순</td><td>확정</td></tr>
-  </tbody>
-</table>
-
-<p>월별로 더 자세히 보면 다음과 같습니다. 전체 일정과 코스·참가비는 <a href="/marathon">마라톤 일정 페이지</a>에서 계속 업데이트하고 있습니다.</p>
-
-<h2>9월 — 가을 시즌 개막</h2>
-
-<p>여름 더위가 한풀 꺾이는 9월은 시즌 워밍업 구간입니다. 대표 주자는 <strong>9/20 공주백제마라톤</strong> — 동아 계열 가을 시즌 개막전으로, 금강변 평지 풀코스에 <strong>32K 옵션</strong>을 따로 둔 게 특징입니다. 풀코스 본 시즌(10월)을 앞두고 거리감을 점검하기 좋아 인기가 많죠. 참가비는 풀·하프·10K 공통 7만 원대, 이미 본접수(5/21)는 마감됐습니다.</p>
-
-<p>바다를 보며 달리고 싶다면 <strong>9/13 강화해변마라톤(제26회)</strong>도 새로 접수를 열었습니다. 강화함상공원을 출발하는 해변 코스로 선착순 3,500명 소규모이고, <strong>커플런(10K)·가족런(5K)</strong> 같은 가족 친화 종목이 특징입니다(Half·10K 4.5만 원, 6/10 14시부터 선착순). 그 밖에 9/5 철원DMZ평화마라톤, 9/5 순천만울트라(100km), 9/20 가평자라섬 등 지역·테마 대회가 가을 문을 엽니다.</p>
-
-<h2>10월 — 풀코스 격전지 (춘천·경주·안동)</h2>
-
-<p>10월은 한 해 마라톤의 심장입니다. 풀코스 PB를 노린다면 이 달에 집중하세요.</p>
-
-<ul>
-  <li><strong>10/25(일) 9시 조선일보 춘천마라톤 — 올해 80주년</strong>. "가을의 전설", 1946년 시작된 의암호 단풍 코스가 압권입니다. 다만 <strong>25km 지점 오르막</strong>이 후반 페이스의 변수죠. 6/11 공식 발표 기준 <strong>신청은 풀코스 7/14(화) 14시·10K 7/16(목) 14시 선착순</strong>, 참가비는 <strong>풀 15만 원·10K 10만 원</strong>입니다. 풀코스는 역대 빠르게 마감되니 접수일 광클이 필수예요(결제는 풀 7/20~21·10K 7/22~23). 춘천 코스를 미리 즐기고 싶다면 <a href="/blog/chuncheon-unique-running-courses-7">춘천 달리기 좋은 곳 7선</a>도 참고하세요.</li>
-  <li><strong>10/17 경주국제마라톤</strong> — 동아일보 주최, World Athletics 엘리트 라벨. 첨성대·황룡사지 등 신라 유적을 지나는 평지 코스라 PB 친화적입니다. 풀 일반 7만 원/매니아 6만 원, 총 1.6만 명 규모.</li>
-  <li><strong>10/4 안동마라톤</strong> — 획득고도 700m+의 국내 최상급 난코스. 1만 명 선착순이 며칠 만에 조기 마감될 만큼 마니아층이 두텁습니다. "기록보다 도전"을 원하는 러너용.</li>
-</ul>
-
-<div class="callout info">
-  <span class="callout-icon">🏆</span>
-  <div class="callout-body">
-    <p class="callout-title">춘천 80주년 우선 트랙 — 일반접수(7/14) 전에 먼저 열립니다</p>
-    <p>올해 창설 80주년을 맞아 춘천마라톤은 일반접수에 앞서 우선 트랙을 여럿 운영합니다.</p>
-    <ul>
-      <li><strong>명예의 전당 헌액 예정자(Full 9회 완주자)</strong> — 전원 신청·결제 가능. 기간 <strong>6/16(화) 10시 ~ 6/19(금) 18시</strong> ('참가신청 &gt; 명예의 전당 헌액 예정자 신청' 메뉴).</li>
-      <li><strong>조선멤버십 얼리버드</strong> — 조선멤버십 연간 구독자 대상 선착순 1,000명(풀 700·10K 300). 신청 <strong>6/23(화) 14시</strong>, 결제 6/24~26. 80주년 기념 자켓을 증정하며, 사전신청권이 '3분 마감'될 만큼 경쟁이 치열합니다.</li>
-      <li><strong>Full 5~8회 완주자</strong> — 구글폼 응모 후 추첨. 응모 <strong>6/29(월)~7/1(수)</strong> → 당첨자 발표·신청·결제 <strong>7/6(월)~7/9(목)</strong>.</li>
-    </ul>
-    <p>해당되는 자격·구독이 있다면 일반 선착순(7/14~)을 기다리지 말고 우선 트랙을 먼저 노리는 게 유리합니다. 자세한 방법은 공식 홈페이지(chuncheonmarathon.com) 공지사항을 확인하세요.</p>
-  </div>
-</div>
-
-<h2>11월 — 도심 마라톤 풍년</h2>
-
-<p>11월은 서울·수도권 도심 대회가 몰리는 달입니다.</p>
-
-<ul>
-  <li><strong>11/1 JTBC 서울마라톤</strong> — 국내 최대 규모 가을 풀코스. 상암→여의도→잠실 코스로, <strong>추첨제</strong>라 4월에 이미 접수가 끝났습니다(카카오 러너스 카드 소지자 대상). 풀 15만 원.</li>
-  <li><strong>11/15(일) 7시 30분 MBN 서울마라톤</strong> — 하프는 광화문광장에서 잠실까지 일직선, 10K는 잠실종합운동장 루프 도심 코스(풀코스 없음, 총 3만 명·TV 생중계). 참가비 하프 10만 원·10K 7만 원으로 확정됐고 접수가 임박했습니다: <strong>우선신청 6/22(월) 10시~6/23(화)</strong>(선셋마라톤·슈퍼히어로런 신청자·매경PLUS 구독자 한정), <strong>하프 일반 6/25(목) 14시·10K 일반 6/26(금) 14시</strong>. 지금 바로 챙겨야 할 대회입니다. 자세한 코스는 <a href="/blog/2026-mbn-seoul-marathon-registration">MBN 서울마라톤 접수 정리</a>를 보세요.</li>
-  <li><strong>11/22 인천마라톤(제2회)</strong> — 인천 최초·유일 공식 풀코스. 2026년엔 <strong>청라하늘대교(바다 위 러닝) 코스를 추진 중</strong>이며 풀코스 정원을 8천 명으로 확대합니다. 접수·참가비는 추후 순차 공개 예정. 상세는 <a href="/blog/2026-incheon-marathon">2026 인천마라톤 정리</a> 참고.</li>
-  <li><strong>11/15(추정) 손기정평화마라톤</strong> — 고양 제2자유로를 통제하는 약 2만 명 규모 대회. 선착순이라 9월 접수 오픈 시 조기 마감되니 알림 설정 필수.</li>
-</ul>
-
-<h2>12월 — 시즌 피날레, 부산</h2>
-
-<p>한 해를 닫는 <strong>12/6 부산브릿지마라톤(구 부산국제마라톤)</strong>은 대한육상연맹 공인 부산 최대 풀코스입니다. 광안대교·부산항대교·남항대교를 모두 건너는 트리플 브릿지 코스로 재편됐고, 접수는 8월 24일(월) 10시부터 선착순입니다 — 자격요건(공식기록증 4:30 이내)과 코스 상세는 <a href="/blog/busan-bridge-marathon-2026">부산브릿지마라톤 접수 가이드</a>에 정리했습니다. (날짜는 일부 사이트가 12/1로 표기하지만, 공식 기준 <strong>12/6</strong>이 정확합니다.)</p>
-
-<h2>접수 광클 생존 가이드 — 인기 대회는 이렇게 뚫는다</h2>
-
-<div class="callout warning">
-  <span class="callout-icon">⏱️</span>
-  <div class="callout-body">
-    <p class="callout-title">대회마다 접수 방식이 다릅니다 — 미리 알아야 들어갑니다</p>
-    <ul>
-      <li><strong>동아 계열(경주·공주·서울동아)</strong> — <strong>동마클럽(dongma.club) 유료 멤버십</strong>은 일반접수보다 약 1주일 먼저 '우선접수'가 열립니다. 인기 대회는 우선접수에서 사실상 마감되니, 메이저 출전 계획이 있으면 멤버십이 사실상 필수.</li>
-      <li><strong>춘천마라톤(선착순)</strong> — 풀코스 5분 내 마감 전례. 접수일 당일 오후 2시 전에 <strong>로그인·결제 정보를 미리 세팅</strong>하고 대기하세요.</li>
-      <li><strong>JTBC 서울(추첨제)</strong> — 카카오 러너스 카드 소지자만 응모 가능. 4월 접수라 <strong>연초에 카드를 미리 발급</strong>해두는 게 선결 조건.</li>
-      <li><strong>손기정평화·인천</strong> — 9월·미정 오픈. 공식 채널·인스타 알림을 켜두고 오픈 즉시 신청.</li>
-      <li><strong>공통</strong> — 신청 직전 카드사 문자 인증 지연으로 마감되는 사례가 잦습니다. <strong>회원가입·결제카드 등록을 미리</strong> 끝내두세요.</li>
-    </ul>
-  </div>
-</div>
-
-<h2>거리·목적별로 어떤 대회를 고를까</h2>
-
-<table>
-  <thead>
-    <tr><th>목표</th><th>추천 대회</th><th>이유</th></tr>
-  </thead>
-  <tbody>
-    <tr><td><strong>풀코스 PB</strong></td><td>경주국제(10/17)</td><td>유적지 통과 평지, 기록 친화적</td></tr>
-    <tr><td><strong>가을 단풍 풀코스</strong></td><td>춘천(10/25)</td><td>의암호 단풍, 80주년의 명성</td></tr>
-    <tr><td><strong>도전·난코스</strong></td><td>안동(10/4)</td><td>획득고도 700m+ 국내 최상급</td></tr>
-    <tr><td><strong>첫 풀코스 / 대규모 축제</strong></td><td>JTBC서울(11/1)</td><td>국내 최대 규모, 도심 분위기</td></tr>
-    <tr><td><strong>하프·10K 도심런</strong></td><td>MBN서울(11/15)</td><td>광화문~잠실 일직선, 접근성 ↑</td></tr>
-    <tr><td><strong>이색 코스</strong></td><td>인천(11/22)</td><td>청라하늘대교 바다 위 러닝 추진</td></tr>
-  </tbody>
-</table>
-
-<p>처음 풀코스나 하프에 도전한다면 <a href="/blog/race-distance-difficulty-guide-2026">거리별 난이도 가이드</a>로 내 수준에 맞는 거리를 먼저 정하고, 대회 당일 기록 측정이 헷갈린다면 <a href="/blog/race-timing-chip-net-gross-time-guide-2026">기록칩·넷타임/그로스타임 정리</a>를 미리 읽어두면 좋습니다. 전체 월별 일정은 <a href="/marathon">마라톤 캘린더</a>에서 계속 확인할 수 있습니다.</p>
-
-<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 일정은 2026-06-11 기준이며, 공식 미발표 대회(손기정·부산 등)의 날짜·접수·참가비는 추정 또는 잠정 정보입니다. 반드시 각 대회 공식 홈페이지에서 최종 확인하세요. (글감: @runninglife_korea 하반기 대회 일정 정리 + 공식 소스 교차검증, 2026-06)</p>
-`,
+    id: "2026-second-half-marathon-schedule-korea",
+    slug: "2026-second-half-marathon-schedule-korea",
+    title: "2026하반기 마라톤 현황: 종료 대회 결과와11~12월 참가 준비8곳",
+    description: "공주·경주·춘천·JTBC는 접수 예고 대신 결과·후속 공지를, MBN·손기정·인천·부산브릿지는 기존 참가자 준비를 확인할 시점입니다.계획 인원·마감·현재 재고와 필수 절차를 구분한 공식 확인표입니다.",
+    thumbnail: "/images/blog/verified-2026-second-half-marathon-schedule-korea-20261110.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-06-11",
+    category: "news",
+    readingTime: 4,
+    tags: [
+      "2026하반기 마라톤",
+      "대회 후 안내",
+      "11월 마라톤",
+      "12월 마라톤",
+      "참가 준비",
+      "공식 확인"
+    ],
+    content: `<p><small>2026년 11월 10일 공식 원문 대조. 행사 연도·신청·결제·증빙·실제 참가를 나눠 확인합니다.</small></p>
+<p>2026년 하반기 대회를 정리할 때 9월접수 예고와 11월참가자 안내를 같은 시제로 쓰면 혼란스럽다.11월 10일 기준 공식 원문을 대조한 8곳을 종료 후 확인과다가올 일정으로 나눴다. 모든 국내 대회를 망라한 목록이나 현재 새 참가권 재고를 확인한 표는 아니다.</p>
+<h2>종료된 네 대회: 접수보다 기록·물품 문의</h2><table><thead><tr><th>2026대회·일정</th><th>현재 확인할 단계</th></tr></thead><tbody><tr><td>공주백제 9월 20일</td><td>공식 기록증·종목별 결과, 지난 종이 기록증 기한 구분</td></tr><tr><td>경주국제 10월 17일</td><td>기록 조회와 지난 종이 기록증 신청 기한 구분</td></tr><tr><td>춘천 10월 25일</td><td>기록 조정 문의 11월 5일과 배송정보 변경 11월 12일 구분</td></tr><tr><td>JTBC서울 11월 1일</td><td>참고 기록 문의 11월 20일, 최종 순위 11월 27일 예정</td></tr></tbody></table><p><a href="https://www.gongjumarathon.com/29" target="_blank" rel="noopener noreferrer">공주 공식 홈</a>, <a href="https://www.gyeongjumarathon.com/38" target="_blank" rel="noopener noreferrer">경주 공식 홈</a>, <a href="https://marathon.chosun.com/" target="_blank" rel="noopener noreferrer">춘천 공식 홈</a>, <a href="https://marathon.jtbc.com/17/?bmode=view&amp;idx=175403224" target="_blank" rel="noopener noreferrer">JTBC기록 공지</a>의 대회명·연도를 확인하자. 실제 개인 수령·수정·시상 완료는 공개 일정만으로 확인되지 않는다. 춘천의 기록 문의 마감과 배송 정보 수정 기한을 바꾸어 쓰면 안 된다.</p>
+<h2>11~12월 네 대회: 기존 참가자 준비 항목</h2><table><thead><tr><th>2026일정</th><th>종목·핵심 준비</th></tr></thead><tbody><tr><td>11월 15일 MBN서울</td><td>하프·10km, 종목별 집결지·하프 짐06:50접수 마감</td></tr><tr><td>11월 15일 손기정평화</td><td>풀·하프·10km·6km, 문산 셔틀·민통선 촬영 제한</td></tr><tr><td>11월 22일 인천</td><td>풀·10km·5km, 풀 기록증 최종 제출·배번호 그룹 확인</td></tr><tr><td>12월 6일 부산브릿지</td><td>풀·10km, 공식 풀 기록 자격·필수정보·이른 출발 이동</td></tr></tbody></table><p><a href="https://www.mbn-seoulmarathon.com/" target="_blank" rel="noopener noreferrer">MBN공식 안내</a>의 하프 물품보관은06:00~06:50, 차량 출발이07:00이다.하프 광화문 출발·잠실 도착과 10km잠실 집결을 구분하자. 하프가 전부 직선·평지라는 판단이나 임의의 관문 시각을 만들지 않았다.</p>
+<p><a href="https://son.wizrun.com/info6" target="_blank" rel="noopener noreferrer">손기정 공식 교통 안내</a>의 문산역→임진각 셔틀은07:10~09:20, 귀환12:30~15:30안내다. 10km제한시간은 공식 요강과유의사항에 1시간30분·2시간으로 상충해 최종 확인 대상이다. 민통선 촬영 제한과배번호 조건도 읽어야 한다.</p>
+<p><a href="https://www.incheonmarathon.or.kr/notice/?bmode=view&amp;idx=175309993" target="_blank" rel="noopener noreferrer">인천 추가접수·기록 제출 공지</a>의 풀 기록 제출 기한은 10월 30일 16:00으로 지났다. 현재 회원 전용 실제 판매·재고는 미확인이다. <a href="https://busanmarathon.com/" target="_blank" rel="noopener noreferrer">부산브릿지 공식 홈</a>의 대회는풀07:30·10km08:00출발 안내이며 10월 30일 18:00추가접수 기한이 지났다. 구체 준비는 각 대회 최종 공지와 개인 신청 내역으로 확인해야 한다.</p>
+<h2>‘가을이면PB’ 대신 본인 조건을</h2><p>계절 이름만으로 당일 기온·습도·바람·개인 기록 향상을 보장할 수 없다. 이 표는그날의 기상 예보나 구간별 페이스 처방이 아니다. 대회별 집결·배정 그룹·통제·급수·몸 상태를 확인하고 현장 운영 안내를 따르는 데 쓰자.</p><p>모집 인원은 실제 완주자 수와 다르다. 취소분·추가접수는새 공지가 있어야 확인할 수 있고, 다음 연도 일정·가격은 2026안내를 자동으로 이어 쓰지 않는다.</p>
+<h2>자주 묻는 질문</h2><h3>이 표의 대회에 지금도 신청할 수 있나요?</h3><p>실제 잔여 수량·회원 전용 결제 상태를 확인한 표는 아닙니다. 지난 모집 기한과 공식 공지, 기존 참가자의 준비 항목을 구분했습니다.</p><h3>춘천 기록 문의도 11월 12일까지인가요?</h3><p>공식 후속 안내의 기록 조정 문의는 11월 5일까지였고 배송정보 변경은 11월 12일까지로 구분됩니다. 기한의 목적을 확인해야 합니다.</p><h3>MBN하프 짐은07시까지 맡기나요?</h3><p>공식 보관 접수는06:00~06:50이며 차량 출발이07:00입니다. 종목별 출발지·보관·수령을 나눠 확인해야 합니다.</p>`,
+    updatedAt: "2026-11-10",
+    faqs: [
+      {
+        "question": "이 표의 대회에 지금도 신청할 수 있나요?",
+        "answer": "실제 잔여 수량·회원 전용 결제 상태를 확인한 표는 아닙니다. 지난 모집 기한과 공식 공지, 기존 참가자의 준비 항목을 구분했습니다."
+      },
+      {
+        "question": "춘천 기록 문의도 11월 12일까지인가요?",
+        "answer": "공식 후속 안내의 기록 조정 문의는 11월 5일까지였고 배송정보 변경은 11월 12일까지로 구분됩니다. 기한의 목적을 확인해야 합니다."
+      },
+      {
+        "question": "MBN하프 짐은07시까지 맡기나요?",
+        "answer": "공식 보관 접수는06:00~06:50이며 차량 출발이07:00입니다. 종목별 출발지·보관·수령을 나눠 확인해야 합니다."
+      }
+    ],
   },
   {
     id: "adidas-supernova-rise-2-vs-3-comparison",

@@ -199,36 +199,53 @@ export const septemberEvents: MarathonEvent[] = [
     },
   },
   {
-    id: 'mudo-run-gyeongju-2026',
-    name: '2026 무한도전 RUN in 경주',
-    date: '2026-09-19',
-    month: '9월',
-    location: '경주시민운동장',
-    region: '경북',
-    distances: ['하프', '10K'],
-    status: '대회종료',
+    id: "mudo-run-gyeongju-2026",
+    name: "2026 무한도전 RUN in 경주",
+    date: "2026-09-19",
+    month: "9월",
+    location: "경주시민운동장",
+    region: "경북",
+    distances: [
+      "하프",
+      "10K"
+    ],
+    status: "대회종료",
     isMajor: true,
-    website: 'https://www.coupangplay.com/promotion/2026-Mudorun-Gyeongju',
-    registrationStart: '2026-07-30',
-    registrationEnd: '2026-08-09',
-    registrationNote:
-      '쿠팡플레이 단독 접수(7/30~8/9)·카카오톡 선물하기(~8/17) 모두 종료. 매진 후 추가 티켓이 간헐적으로 열린 이력이 있어 참가를 원하면 쿠팡플레이 공지 확인 권장(2026-08-27 확인)',
-    description:
-      '무한도전 런 하반기 대회. 오후 4시 30분 출발, 노을 지는 경주 옛길을 달리는 선셋 레이스로 콘셉트는 보물찾기 — 포졸과 도적. 올해 하프가 처음 신설돼 하프·10K 두 종목으로 열립니다. 참가비 하프 119,900원·10K 99,900원. 접수는 쿠팡플레이 단독(7/30~8/9, 카카오톡 선물하기 ~8/17)으로 진행돼 종료됐습니다.',
+    website: "https://www.coupangplay.com/promotion/2026-Mudorun-Gyeongju",
+    registrationStart: "2026-09-03",
+    registrationEnd: "2026-09-10",
+    registrationNote: "공식 페이지는 예매 종료를 표시한다. 남아 있는 2차 취소 티켓 기간은 9월 3일 16:00~9월 10일 23:59였고 해당 구매자는 당일 레이스팩 현장 수령 조건이었다. 과거 취소 티켓 공지가 현재 판매·다음 회차 접수를 뜻하지 않는다.",
+    description: "9월 19일 경주시민운동장 15:30 집결·16:30 출발 계획의 하프·10K 대회. 공식은 최초 출발부터 하프 2시간 30분·10K 1시간 30분 제한을 명시했다. 실제 이용자 정보 등록과 취소 티켓의 현장 수령, 사전 신청 셔틀 조건을 구매 내역과 구분해야 한다. 실제 개인 기록·전원 물품 수령은 이번에 조회하지 않았다.",
     courseInfo: {
-      terrain: '평지',
-      difficulty: '초보자',
-      courseDescription:
-        '주최 측 보도자료 기준 10K는 경주시민운동장 출발 → 동궁과 월지 → 첨성대 → 교촌마을 → 천마총 → 시민운동장 복귀, 하프는 여기에 대릉원~보문관광단지 초입 구간이 더해집니다. "고저차를 최소화한 평탄한 도심·수변 주로"로 소개됐으며, 공식 코스도·고저도는 미게시 상태입니다(2026-08-27 기준).',
+      "courseDescription": "공식은 경주시민운동장 출발·첨성대 경유의 하프·10km 두 코스와 각각의 약도를 공개했다. 세부 고도·모든 경유지·난이도는 이번 텍스트 대조 범위 밖이며 현장 운영에 따라 변경될 수 있다는 조건이었다."
     },
     raceInfo: {
-      entryFees: [
-        { distance: '하프', fee: 119900 },
-        { distance: '10K', fee: 99900 },
+      "entryFees": [
+        {
+          "distance": "하프",
+          "fee": 119900
+        },
+        {
+          "distance": "10K",
+          "fee": 99900
+        }
       ],
-      startTime: '16:30',
+      "startTime": "16:30",
+      "timeLimits": [
+        {
+          "distance": "하프",
+          "hours": 2,
+          "minutes": 30
+        },
+        {
+          "distance": "10K",
+          "hours": 1,
+          "minutes": 30
+        }
+      ]
     },
-    lastVerified: '2026-08-27',
+    lastVerified: "2026-11-10",
+    postRaceNote: "9월 3~10일 2차 취소 티켓 구매자는 레이스팩 사전 배송 없이 현장 수령 조건이었다. 참가정보와 배번호·신분증을 대조하고 개인 계측 기록과 최초 출발 기준 운영 제한을 구분한다. 과거 KTX경주역 셔틀은 사전 신청 필수로 현재 운행 정보가 아니다. 공식 https://www.coupangplay.com/promotion/2026-Mudorun-Gyeongju",
   },
   {
     id: "gongju-baekje-marathon-2026",
