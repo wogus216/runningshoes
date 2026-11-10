@@ -6,11 +6,13 @@ export const shoe: Shoe = {
   slug: 'saucony-guide-18',
   brand: 'Saucony',
   name: '가이드 18',
-  image: '/images/shoes/saucony/guide18.webp',
+  imageCaption: "가이드 18 대표 사진은 써코니 공식 Ivory 색상 S20998-102입니다. 남은 갤러리 사진은 밝은 색상과 외관을 대조했으나 원본 URL은 미확인입니다. 사진 품번은 한국 현재 판매 조건을 뜻하지 않습니다.",
+  imageSource: {"title":"써코니 공식 상품 갤러리","url":"https://www.saucony.com/UK/en_GB/guide-18/59947M.html?dwvar_59947M_color=S20998-102"},
+  image: "/images/shoes/saucony/guide18/official-side.webp",
   images: [
-    '/images/shoes/saucony/guide18/side.webp',
-    '/images/shoes/saucony/guide18/top.webp',
-    '/images/shoes/saucony/guide18/outsole.webp',
+    "/images/shoes/saucony/guide18/official-side.webp",
+    "/images/shoes/saucony/guide18/top.webp",
+    "/images/shoes/saucony/guide18/outsole.webp"
   ],
   category: '안정화',
   description: 'PWRRUN · CenterPath 구조의 가이드 18. 실험실 278g·힐/전족부 36/27.7mm. 한국 현재 정가 미확인.',

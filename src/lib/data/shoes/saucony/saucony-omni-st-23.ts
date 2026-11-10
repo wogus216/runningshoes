@@ -6,6 +6,8 @@ export const shoe: Shoe = {
   slug: 'saucony-omni-st-23',
   brand: 'Saucony',
   name: '옴니 ST 23',
+  imageCaption: "옴니 ST 23 사진은 써코니 공식 WHITE/ONYX 상품 사진과 대조했습니다. 사진은 여성용 색상입니다. 사진 품번은 한국 현재 판매 조건을 뜻하지 않습니다.",
+  imageSource: {"title":"써코니 공식 상품 갤러리","url":"https://www.saucony.co.kr/product/detail.html?product_no=286"},
   image: '/images/shoes/saucony/omnist23/side.jpg',
   images: [
     '/images/shoes/saucony/omnist23/side.jpg',

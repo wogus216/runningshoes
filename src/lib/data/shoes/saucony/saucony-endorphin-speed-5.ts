@@ -6,11 +6,12 @@ export const shoe: Shoe = {
     slug: "saucony-endorphin-speed-5",
     brand: "Saucony",
     name: "엔돌핀 스피드 5",
+  imageCaption: "엔돌핀 스피드 5 사진은 써코니 코리아 BLACK/WHITE 상품 사진과 대조했습니다. 다른 색상과 원본 미확인 갤러리 사진은 제외했습니다.",
+  imageSource: {"title":"써코니 코리아 상품 갤러리","url":"https://www.saucony.co.kr/product/detail.html?product_no=216"},
     image: "/images/shoes/saucony/endorphin_speed5.webp",
     images: [
-      "/images/shoes/saucony/endorphinspeed5/side.webp",
-      "/images/shoes/saucony/endorphinspeed5/top.webp"
-    ],
+    "/images/shoes/saucony/endorphin_speed5.webp"
+  ],
     category: "데일리",
     price: 219000,
     description: "PWRRUN PB 미드솔을 쓰는 엔돌핀 스피드 5. 한국 공식 정가 219,000원. 남녀 M(일반)·W(와이드) 상품을 확인했습니다. W를 근거 없이 2E/D로 바꾸지 않습니다.",

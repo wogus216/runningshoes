@@ -6,6 +6,8 @@ export const shoe: Shoe = {
   slug: 'saucony-peregrine-16',
   brand: 'Saucony',
   name: '페레그린 16',
+  imageCaption: "페레그린 16 사진은 써코니 공식 CARBON/BLACK 상품 사진과 대조했습니다. 사진은 남성 와이드 품번입니다. 사진 품번은 한국 현재 판매 조건을 뜻하지 않습니다.",
+  imageSource: {"title":"써코니 공식 상품 갤러리","url":"https://www.saucony.co.kr/product/detail.html?product_no=211"},
   image: '/images/shoes/saucony/peregrine16/side.jpg',
   images: [
     '/images/shoes/saucony/peregrine16/side.jpg',

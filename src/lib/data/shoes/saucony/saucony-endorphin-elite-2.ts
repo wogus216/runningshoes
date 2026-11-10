@@ -6,7 +6,9 @@ export const shoe: Shoe = {
   slug: 'saucony-endorphin-elite-2',
   brand: 'Saucony',
   name: '엔돌핀 엘리트 2',
-  image: '/images/shoes/saucony/endorphin_elite2.webp',
+  imageCaption: "엔돌핀 엘리트 2 사진은 써코니 코리아 WHITE/MUTANT 상품 갤러리와 대조했습니다. 이전 목록 대표 사진은 다른 색상이어서 갤러리와 통일했습니다. 사진 품번은 현재 재고를 뜻하지 않습니다.",
+  imageSource: {"title":"써코니 코리아 상품 갤러리","url":"https://www.saucony.co.kr/product/detail.html?product_no=92"},
+  image: "/images/shoes/saucony/endorphinelite2/side.webp",
   images: [
     '/images/shoes/saucony/endorphinelite2/side.webp',
     '/images/shoes/saucony/endorphinelite2/top.webp',

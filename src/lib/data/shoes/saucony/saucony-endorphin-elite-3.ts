@@ -6,6 +6,7 @@ export const shoe: Shoe = {
   slug: 'saucony-endorphin-elite-3',
   brand: 'Saucony',
   name: '엔돌핀 엘리트 3',
+  imageCaption: "엔돌핀 엘리트 3 사진의 현 파일 원본 경로와 색상 품번은 아직 확인되지 않았습니다. 사진만으로 판매 규격·재고를 판단하지 마세요.",
   image: '/images/shoes/saucony/endorphinelite3/side.webp',
   images: [
     '/images/shoes/saucony/endorphinelite3/side.webp',

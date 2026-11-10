@@ -6,6 +6,8 @@ export const shoe: Shoe = {
   slug: 'saucony-paramount-max',
   brand: 'Saucony',
   name: '파라마운트 맥스',
+  imageCaption: "파라마운트 맥스 사진은 써코니 공식 SILVER/CINDER 상품 사진과 대조했습니다. 사진은 여성용 색상입니다. 사진 품번은 한국 현재 판매 조건을 뜻하지 않습니다.",
+  imageSource: {"title":"써코니 공식 상품 갤러리","url":"https://www.saucony.co.kr/product/detail.html?product_no=497"},
   image: '/images/shoes/saucony/paramountmax/side.jpg',
   images: [
     '/images/shoes/saucony/paramountmax/side.jpg',

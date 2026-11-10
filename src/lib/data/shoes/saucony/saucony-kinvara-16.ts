@@ -6,7 +6,9 @@ export const shoe: Shoe = {
     slug: "saucony-kinvara-16",
     brand: "Saucony",
     name: "킨바라 16",
-    image: "/images/shoes/saucony/kinvara16.webp",
+  imageCaption: "킨바라 16 사진은 써코니 코리아 CLOUD/STORM 상품 갤러리와 대조했습니다. 이전 목록 대표 사진은 다른 색상이어서 갤러리와 통일했습니다. 사진 품번은 현재 재고를 뜻하지 않습니다.",
+  imageSource: {"title":"써코니 코리아 상품 갤러리","url":"https://www.saucony.co.kr/product/detail.html?product_no=181"},
+    image: "/images/shoes/saucony/kinvara16/side.webp",
     images: [
       "/images/shoes/saucony/kinvara16/side.webp",
       "/images/shoes/saucony/kinvara16/top.webp",

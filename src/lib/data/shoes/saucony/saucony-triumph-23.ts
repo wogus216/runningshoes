@@ -6,7 +6,9 @@ export const shoe: Shoe = {
     slug: "saucony-triumph-23",
     brand: "Saucony",
     name: "트라이엄프 23",
-    image: "/images/shoes/saucony/triumph23.webp",
+  imageCaption: "트라이엄프 23 사진은 써코니 코리아 WHITE/CLOUD 상품 갤러리와 대조했습니다. 이전 목록 대표 사진은 다른 색상이어서 갤러리와 통일했습니다. 사진 품번은 현재 재고를 뜻하지 않습니다.",
+  imageSource: {"title":"써코니 코리아 상품 갤러리","url":"https://www.saucony.co.kr/product/detail.html?product_no=161"},
+    image: "/images/shoes/saucony/triumph23/side.webp",
     images: [
       "/images/shoes/saucony/triumph23/side.webp",
       "/images/shoes/saucony/triumph23/top.webp",

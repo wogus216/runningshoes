@@ -6,6 +6,7 @@ export const shoe: Shoe = {
   slug: 'saucony-hurricane-26',
   brand: 'Saucony',
   name: '허리케인 26',
+  imageCaption: "허리케인 26 사진의 현 파일 원본 경로와 색상 품번은 아직 확인되지 않았습니다. 사진만으로 판매 규격·재고를 판단하지 마세요.",
   image: '/images/shoes/saucony/hurricane26/side.webp',
   images: [
     '/images/shoes/saucony/hurricane26/side.webp',
