@@ -1,277 +1,290 @@
 import type { Fabric } from '@/types/fabric';
 
 // 성능 지표·시험 규격 — 수치가 존재하는 자리와, 아무도 공개하지 않는 자리
-// 근거: docs/references/apparel-fabric-research.md (B-1 · B-2 · B-3 · E-1c · E-2)
+// 근거: docs/references/apparel-fabric-provenance.md (B-1 · B-2 · B-3 · E-1c · E-2)
 
 export const metricFabrics: Fabric[] = [
   {
-    id: 'ret-iso-11092',
-    slug: 'ret-iso-11092',
-    type: 'metric',
-    name: '증발저항 Ret (ISO 11092)',
-    nameEn: 'Water-vapour resistance, ISO 11092',
-    summary: '땀이 원단을 통과하는 어려움을 재는 국제규격. 조사한 러닝복 판매 페이지에서는 이 수치가 확인되지 않았다.',
-    intro:
-      '"통기성이 좋다"를 숫자로 만들면 Ret입니다. 원단이 수증기를 얼마나 막는지를 재는 값이고, 낮을수록 잘 통과시킵니다. ' +
-      '국제규격도 있고 시험 장비도 있습니다. **그런데 러닝복 판매 페이지에서 이 숫자를 본 적이 있으신가요?** 조사한 브랜드·판매 페이지에서는 표기 사례를 찾지 못했습니다.',
-    claims: [
-      {
-        text:
-          '현행 규격은 ISO 11092:2026입니다. 2026년 5월 발행, 제3판, 17쪽, ISO/TC 38 소관입니다. 이전 판인 ISO 11092:2014는 폐지(Withdrawn)됐습니다.',
-        grade: 'A',
-        source: 'ISO 공식 규격 페이지',
-        sourceUrl: 'https://www.iso.org/standard/85998.html',
-        caveat: '"ISO 11092:2014"로 연도를 박아 인용하면 폐지된 판을 가리키게 됩니다.',
-      },
-      {
-        text:
-          '규격 스스로가 이 시험을 쾌적성 등급으로 바꿔 읽지 말라고 적어 뒀습니다. 3판 초록의 문장은 이렇습니다 — ' +
-          '"The test conditions used in this document are not intended to represent specific comfort situations, and performance specifications in relation to physiological comfort are not stated." ' +
-          '(이 문서의 시험 조건은 특정 쾌적 상황을 나타내려는 것이 아니며, 생리적 쾌적성에 관한 성능 사양을 제시하지 않는다.)',
-        grade: 'A',
-        source: 'ISO 11092:2026, Abstract',
-        sourceUrl: 'https://www.iso.org/standard/85998.html',
-        caveat: '2014년판 초록에는 이 문장이 없습니다. 3판에서 추가됐습니다. 규격 본문은 유료이나 초록은 무료로 공개됩니다.',
-      },
-      {
-        text:
-          '따라서 "Ret 6 미만 = 매우 우수" 같은 등급표는 ISO 규격의 내용이 아닙니다. Hohenstein 계열의 상업적 등급 체계이며, 규격 문구인 것처럼 쓰면 틀립니다.',
-        grade: 'A',
-        source: 'ISO 11092:2026 원문 대조',
-        sourceUrl: 'https://www.iso.org/standard/85998.html',
-      },
-      {
-        text:
-          '측정 방식 자체에도 한계가 있습니다. ISO 11092는 정상상태 시험이라 실제 착용만큼 섬유별 차이를 잡아내지 못합니다. 미국 NC State가 이 문제 때문에 ASTM F3628을 새로 만들었습니다.',
-        grade: 'A',
-        source: 'ASTM F3628 제정 배경 문서',
-        sourceUrl: 'https://store.astm.org/f3628-23.html',
-      },
-    ],
-    measurements: [
-      { label: '규격 번호', value: 'ISO 11092:2026', note: '2014년판은 폐지' },
-      { label: '단위', value: 'm²·Pa/W', note: '증발저항 Ret' },
-      { label: '열저항 단위', value: 'm²·K/W', note: 'Rct' },
-      { label: '러닝복 표기 사례', value: '조사 표본 0건', note: '확인한 브랜드·판매 페이지 범위' },
-    ],
-    misconceptions: [
-      {
-        myth: '논문에 나온 Ret 값을 특정 브랜드 원단의 성능으로 쓸 수 있다.',
-        reality:
-          '쓸 수 없습니다. 논문 시료는 시판 제품이 아닙니다. "폴리에스터 니트 Ret 1.4~1.9"는 물성 경향으로 쓸 수 있지만 "Dri-FIT의 Ret은 1.43"으로 쓰면 거짓입니다. ' +
-          '같은 싱글저지끼리도 문헌 표에서 2.3배까지 차이가 납니다.',
-        source: 'Özkan 2023 등 문헌 대조',
-      },
-    ],
-    unknowns: [
-      '방풍성과 통기성의 정량적 상충 관계를 겨울 운동 조건에서 측정한 논문을 찾지 못했습니다.',
-      '높은 습도에서 원단 간 차이가 사라지는 교차점은 논리적 귀결일 뿐 실측이 아닙니다.',
-      '규격 본문(17쪽)은 유료라 열람하지 못했습니다. 이 페이지의 인용은 전부 무료 공개된 초록 범위입니다.',
-    ],
-    related: ['gore-tex-infinium', 'polyester', 'kca-running-jacket-2025', 'air-permeability-iso-9237'],
-    updatedAt: '2026-09-23',
-    keywords: ['Ret', 'ISO 11092', '증발저항', '원단 통기성', '투습도'],
-  },
+  "id": "ret-iso-11092",
+  "slug": "ret-iso-11092",
+  "type": "metric",
+  "name": "증발저항 Ret (ISO 11092)",
+  "nameEn": "Water-vapour resistance, ISO 11092",
+  "summary": "열저항·수증기 저항을 정상상태에서 재는 규격입니다. 공기투과도나 모든 상황의 쾌적성 점수와 다릅니다.",
+  "intro": "Ret는 수증기 이동에 대한 저항을 나타냅니다. 공기의 통과와 액체 땀의 이동은 다른 시험이며, 공개된 규격 소개만으로 특정 상표의 Ret값이나 쾌적성 등급을 만들 수 없습니다.",
+  "claims": [
+    {
+      "text": "2026년11월 확인한 ISO 공식 페이지는 ISO11092:2026을2026년5월 발행한 제3판으로 안내합니다. 의류용 원단·필름·폼·여러 층 등의 정상상태 열저항과 수증기 저항 시험을 다룹니다.",
+      "grade": "A",
+      "source": "ISO11092:2026 공식 공개 소개·초록",
+      "sourceUrl": "https://www.iso.org/standard/85998.html"
+    },
+    {
+      "text": "공개 초록은 시험 조건이 특정 쾌적 상황을 대표하지 않으며 생리적 쾌적성의 성능 사양을 제시하지 않는다고 설명합니다. 따라서 한 Ret값만으로 모든 러너의 체감 등급을 확정하지 않습니다.",
+      "grade": "A",
+      "source": "ISO11092:2026 공개 초록",
+      "sourceUrl": "https://www.iso.org/standard/85998.html"
+    },
+    {
+      "text": "ASTM F3628-24 공식 소개는 발한·건조 단계의 수분 이동과 증발에 따른 냉각 에너지를 별도로 다룹니다. 정상상태 증발저항과 이 시험을 같은 값으로 합치지 않습니다.",
+      "grade": "A",
+      "source": "ASTM F3628-24 공식 공개 소개",
+      "sourceUrl": "https://store.astm.org/f3628-24.html",
+      "caveat": "유료 전문을 열람한 것은 아닙니다. 기존23판 링크 대신 공식 목록의24판을 확인했습니다."
+    }
+  ],
+  "unknowns": [
+    "유료 규격 전문과 개별 브랜드 제품 성적서를 열람하지 않았습니다.",
+    "2014년판을 사용한 과거 논문은 당시 시험판을 그대로 밝혀 인용해야 하며 오늘 규격의 시험을 했다고 바꾸지 않습니다."
+  ],
+  "related": [
+    "gore-tex-infinium",
+    "polyester",
+    "kca-running-jacket-2025",
+    "air-permeability-iso-9237"
+  ],
+  "updatedAt": "2026-11-10",
+  "keywords": [
+    "Ret",
+    "ISO 11092",
+    "증발저항",
+    "원단 통기성",
+    "투습도"
+  ],
+  "measurements": [
+    {
+      "label": "현재 확인 판",
+      "value": "ISO11092:2026",
+      "note": "제3판·2026-05 발행"
+    },
+    {
+      "label": "수증기 저항",
+      "value": "Ret",
+      "note": "공기투과·액체수분 시험과 구분"
+    }
+  ],
+  "misconceptions": [
+    {
+      "myth": "논문의 일반 원단 Ret값을 Dri-FIT 전체 값으로 쓸 수 있다.",
+      "reality": "정확 시료와 시험 조건이 같은지 확인해야 합니다. 다른 논문의 원단을 상표 전체의 성적서로 옮길 근거는 없습니다.",
+      "source": "ISO 시험 범위와 시료 구분",
+      "sourceUrl": "https://www.iso.org/standard/85998.html"
+    }
+  ]
+},
 
   {
-    id: 'upf',
-    slug: 'upf',
-    type: 'metric',
-    name: 'UPF 자외선 차단지수',
-    nameEn: 'UPF (Ultraviolet Protection Factor)',
-    summary: '조사 범위에서 러닝복에 가장 일관되게 표기된 성능 수치. 규격이 있어 제품 비교에 활용할 수 있다.',
-    intro:
-      '이 섹션 전체를 관통하는 결론은 "브랜드가 수치를 잘 공개하지 않는다"입니다. 조사 범위에서는 **UPF가 가장 일관된 예외였습니다.** ' +
-      '자외선 차단지수는 여름 러닝복에 널리 표기되고, 등급 체계가 규격으로 정해져 있어 제품 간 비교가 실제로 가능합니다.',
-    claims: [
-      {
-        text:
-          'UPF는 AS/NZS 4399(호주·뉴질랜드 규격) 또는 KS K 0850으로 측정하며, 15 / 30 / 50 / 50+ 등급으로 표기됩니다.',
-        grade: 'A',
-        source: 'AS/NZS 4399, KS K 0850 규격 체계',
-      },
-      {
-        text:
-          '러닝 의류에서 소비자에게 가장 일관되게 공개된 성능 수치는 확인한 범위에서 UPF였습니다. GSM·공기투과도·Ret·건조속도·발수는 조사한 브랜드·판매 페이지에서 표기 사례를 찾지 못했습니다.',
-        grade: 'S',
-        source: '자체 조사 — 브랜드 공식 기술 페이지 및 한국 판매 페이지, 2026-09-04',
-      },
-      {
-        text:
-          '젝시믹스는 상품 상세 페이지에 KOTITI 공인시험성적서를 이미지로 공개하며, 여기에 UPF 실측치가 포함됩니다. 조성(%)은 끝내 공개하지 않으면서 시험성적서는 공개하는 구조입니다.',
-        grade: 'A',
-        source: '자체 확인 — 젝시믹스 상품 상세 페이지 KOTITI 성적서 2개 SKU, 2026-09-04',
-        sourceUrl: 'https://www.musinsa.com/products/5277661',
-        caveat:
-          '재현 확인은 2개 SKU에서만 했습니다. 다른 브랜드 4곳은 각 1개 SKU만 열람해 성적서가 없음을 확인했으므로, "젝시믹스만 그렇다"고 단정하지 않습니다.',
-      },
-    ],
-    measurements: [
-      { label: '규격', value: 'AS/NZS 4399 · KS K 0850' },
-      { label: '등급', value: '15 / 30 / 50 / 50+' },
-      { label: '러닝복 표기', value: '널리 표기됨', note: '다른 지표는 조사 표본에서 확인되지 않음' },
-    ],
-    unknowns: [
-      'UPF 등급이 세탁·마모 후 얼마나 유지되는지에 대한 브랜드 공개 데이터는 확보하지 못했습니다.',
-      '젖은 상태에서 UPF가 어떻게 변하는지도 확인하지 못했습니다.',
-    ],
-    related: ['wicking-ommc', 'polyester'],
-    updatedAt: '2026-09-23',
-    keywords: ['UPF', '자외선 차단', '여름 러닝복', '기능성 의류 자외선'],
-  },
+  "id": "upf",
+  "slug": "upf",
+  "type": "metric",
+  "name": "UPF 자외선 차단지수",
+  "nameEn": "UPF (Ultraviolet Protection Factor)",
+  "summary": "의복·원단의 자외선 차단을 시험하는 지수입니다. 호주 현행 기준 안내와 개별 제품 시험을 구분합니다.",
+  "intro": "호주 방사선방호청 ARPANSA는 원단의 UPF를 실험으로 확인하고 제품을 표시하는 절차를 안내합니다. UPF가 높다는 사실만으로 시원함·흡한속건·옷이 덮지 않는 부위의 보호를 보장하지 않습니다.",
+  "claims": [
+    {
+      "text": "ARPANSA 안내는15를 최소 보호,30을 양호,50·50+를 우수 보호로 구분합니다. 이는 해당 기준의 분류이며 모든 국가의 의류 시험을 하나의 동일 규격으로 합친 것은 아닙니다.",
+      "grade": "A",
+      "source": "ARPANSA 공식 의복·원단 시험 안내",
+      "sourceUrl": "https://www.arpansa.gov.au/our-services/testing-and-calibration/ultraviolet-radiation-testing/fabric-testing"
+    },
+    {
+      "text": "ARPANSA는 AS4399에 따른 시험을 안내합니다. 기존 AS/NZS4399와 KS K0850을 판·목적 확인 없이 같은 현행 표시 체계로 묶은 표현은 수정했습니다.",
+      "grade": "A",
+      "source": "ARPANSA 공식 의복 시험·기준 안내",
+      "sourceUrl": "https://www.arpansa.gov.au/our-services/testing-and-calibration/ultraviolet-radiation-testing/fabric-testing"
+    },
+    {
+      "text": "공식 선택 안내는 조직 밀도·구조 등 여러 조건이 차단에 영향을 주며 옷이 덮는 부위도 중요하다고 설명합니다. UPF라벨만으로 전체 피부의 보호가 끝나는 것은 아닙니다.",
+      "grade": "A",
+      "source": "ARPANSA 공식 의복 자외선 보호 안내",
+      "sourceUrl": "https://www.arpansa.gov.au/understanding-radiation/radiation-sources/more-radiation-sources/sun-protection-clothing"
+    }
+  ],
+  "unknowns": [
+    "이번에는 개별 러닝복 KOTITI 성적서의 현재 제품·시료 동일성을 재검증하지 않아 특정 상품의 최신 UPF로 남기지 않았습니다.",
+    "국내 KS규격의 현행 전문·각 상품의 세탁·젖음·신장 조건별 결과는 확인하지 않았습니다."
+  ],
+  "related": [
+    "wicking-ommc",
+    "polyester"
+  ],
+  "updatedAt": "2026-11-10",
+  "keywords": [
+    "UPF",
+    "자외선 차단",
+    "여름 러닝복",
+    "기능성 의류 자외선"
+  ],
+  "measurements": [
+    {
+      "label": "ARPANSA 안내 분류",
+      "value": "15 / 30 / 50·50+",
+      "note": "최소 / 양호 / 우수"
+    }
+  ]
+},
 
   {
-    id: 'wicking-ommc',
-    slug: 'wicking-ommc',
-    type: 'metric',
-    name: '흡한속건은 어떻게 재는가 (AATCC TM195 · ISO 17617)',
-    nameEn: 'Liquid Moisture Management, AATCC TM195',
-    summary: '"흡한속건"에는 실제 시험 규격이 있다. 브랜드는 그 결과를 공개하지 않고, 공공기관은 공개한다.',
-    intro:
-      '"흡한속건"은 마케팅 문구처럼 들리지만 측정 규격이 실재합니다. 액체수분관리성 시험(MMT)은 물이 원단에서 퍼지고 통과하는 과정을 여러 지표로 나눠 재고, ' +
-      '종합 등급인 OMMC를 1~5급으로 냅니다. **문제는 브랜드가 이 결과를 내놓지 않는다는 것입니다.**',
-    claims: [
-      {
-        text:
-          '액체수분관리성은 AATCC TM195(MMT)로 측정하며 OMMC 1~5급으로 표기합니다. 건조속도는 ISO 17617(= KS K ISO 17617)로 별도 측정합니다.',
-        grade: 'A',
-        source: 'AATCC TM195, ISO 17617 규격 체계',
-        sourceUrl: 'https://www.iso.org/standard/60156.html',
-      },
-      {
-        text:
-          '이 지표들은 브랜드 표기 사례가 없는 반면, 한국소비자원 시험 결과에는 등급으로 공개됩니다. 즉 수치가 없는 게 아니라 **판매자가 아니라 공공기관 쪽에 있습니다.**',
-        grade: 'S',
-        source: '자체 조사 — 브랜드 공식 문서 대조 + 한국소비자원 시험 결과, 2026-09-04',
-      },
-      {
-        text:
-          '정량 수치를 대는 쪽은 브랜드가 아니라 소재 공급사입니다. Pertex Quantum · Salomon AdvancedSkin Dry · HeiQ Smart Temp · UA Iso-Chill · 37.5는 숫자를 냅니다. ' +
-          'Nike · adidas · lululemon · Brooks · New Balance · ASICS는 정성 표현뿐입니다.',
-        grade: 'S',
-        source: '각 소재 공급사 공식 기술 자료',
-        caveat: '37.5와 Iso-Chill의 수치는 자체 시험이며 프로토콜과 표본수가 공개되지 않았습니다. 인용 시 "브랜드 자체 시험"을 병기해야 합니다.',
-      },
-      {
-        text:
-          '접촉냉감(Qmax)은 JIS L 1927로 측정하며 0.100 W/cm² 이상이면 냉감으로 봅니다. 러닝복에서는 문구만 쓰이고 수치는 대개 표기되지 않습니다.',
-        grade: 'A',
-        source: 'JIS L 1927 부속서 B 참고기준 — 한국소비자원 스포츠 티셔츠 시험',
-        sourceUrl: 'https://www.kca.go.kr/kca/sub.do?menukey=5293&mode=view&no=1003341998',
-      },
-    ],
-    measurements: [
-      { label: '액체수분관리', value: 'AATCC TM195 (MMT)', note: 'OMMC 1~5급' },
-      { label: '건조속도', value: 'ISO 17617 = KS K ISO 17617' },
-      { label: '공기투과도', value: 'ISO 9237 = KS K ISO 9237', note: 'L/m²/s' },
-      { label: '단위면적당 질량', value: 'ISO 3801', note: 'g/m² (GSM)' },
-      { label: '발수(스프레이)', value: 'ISO 4920 = KS K ISO 4920', note: '0~5급' },
-      { label: '접촉냉감', value: 'JIS L 1927', note: '0.100 W/cm² 이상 = 냉감' },
-    ],
-    misconceptions: [
-      {
-        myth: '흡한속건은 정해진 기준이 없는 마케팅 용어다.',
-        reality:
-          '규격은 있습니다. AATCC TM195·ISO 17617·ISO 9237 등이 각각 다른 국면을 잽니다. 없는 것은 기준이 아니라 **브랜드가 그 결과를 공개할 의무**입니다.',
-        source: '규격 체계 대조',
-      },
-    ],
-    unknowns: [
-      'AATCC·ASTM 규격 전문은 유료라 열람하지 못했습니다. 이 페이지는 규격 번호와 단위·등급 체계까지만 다룹니다.',
-      '한국 시험기관 3사의 자체 자료실에서는 공개된 러닝복 제품별 시험 데이터를 찾지 못했습니다. 다만 젝시믹스 상품 페이지에서는 KOTITI 성적서 이미지가 확인됐습니다.',
-      '해외 소비자기관의 러닝 의류 시험은 일부 존재하지만, 무료로 제품별 원측정값까지 공개한 자료는 확인 범위에서 홋카이도립 소비생활센터 자료뿐이었습니다.',
-    ],
-    related: ['ret-iso-11092', 'upf', 'kca-running-jacket-2025'],
-    relatedPosts: ['hot-weather-summer-running-safety-guide-korea', 'summer-breathable-running-shoes-2026'],
-    updatedAt: '2026-09-23',
-    keywords: ['흡한속건', 'AATCC TM195', 'OMMC', '건조속도', '접촉냉감', 'Qmax'],
-  },
+  "id": "wicking-ommc",
+  "slug": "wicking-ommc",
+  "type": "metric",
+  "name": "흡한속건은 어떻게 재는가 (AATCC TM195 · ISO 17617)",
+  "nameEn": "Liquid Moisture Management, AATCC TM195",
+  "summary": "액체 땀 이동·건조속도·접촉냉감은 다른 시험입니다. OMMC 자체 값과1~5급 분류도 구분합니다.",
+  "intro": "흡한속건이라는 문구를 보았다면 무엇을 어떻게 시험했는지 확인하세요. 액체 수분의 이동과 수분이 마르는 속도, 수증기 저항을 한 가지 점수로 합치지 않습니다.",
+  "claims": [
+    {
+      "text": "AATCC TM195 공식 공개 소개는 편물·직물·부직포의 액체 수분 관리 특성을 측정·평가·분류하는 시험이라고 설명합니다. 공개 소개만으로 모든 상표의 합격선이나 실제 제품 결과를 정할 수 없습니다.",
+      "grade": "A",
+      "source": "AATCC TM195 공식 공개 소개",
+      "sourceUrl": "https://members.aatcc.org/store/tm195/591/"
+    },
+    {
+      "text": "2025년 Vasile 연구는 MMT로 젖음 시간·확산·흡수 등을 측정하고 OMMC를 계산한 뒤 지표를1~5급으로 분류했습니다. OMMC 지수 자체와1~5급 등급을 같은 숫자로 쓰지 않습니다.",
+      "grade": "A",
+      "source": "Vasile et al., Materials2025 — 시험 방법2.2.2",
+      "sourceUrl": "https://www.mdpi.com/1996-1944/18/8/1859",
+      "caveat": "18종 작업복용 니트 시료의 시험입니다. 러닝복 모든 상표의 공통 성적서가 아닙니다."
+    },
+    {
+      "text": "ISO17617:2014는 원단의 수분 건조 성질을 다루며2025년 재검토 확인으로 현행 안내됩니다. 느슨한 섬유나 실 자체의 건조속도 시험에는 적합하지 않다고 명시합니다.",
+      "grade": "A",
+      "source": "ISO17617 공식 공개 소개",
+      "sourceUrl": "https://www.iso.org/standard/60156.html"
+    },
+    {
+      "text": "2022년 소비자원 티셔츠 안내는 JIS L1927 부속서B의0.100W/cm²를 해외 참고 냉감 기준으로 사용했습니다. 이를 모든 원단·시험 조건에 적용되는 보편적 합격선으로 확대하지 않습니다.",
+      "grade": "A",
+      "source": "한국소비자원2022 스포츠 티셔츠 공식 안내",
+      "sourceUrl": "https://www.kca.go.kr/kca/sub.do?menukey=5293&mode=view&no=1003341998"
+    }
+  ],
+  "unknowns": [
+    "AATCC·ISO 유료 전문과 모든 제품의 시험성적서는 이번에 열람하지 않았습니다.",
+    "브랜드가 수치를 절대 공개하지 않는다거나 공개 의무가 없다는 포괄적 단정은 이번 근거 범위에서 제외했습니다."
+  ],
+  "related": [
+    "ret-iso-11092",
+    "upf",
+    "kca-running-jacket-2025"
+  ],
+  "relatedPosts": [
+    "hot-weather-summer-running-safety-guide-korea",
+    "summer-breathable-running-shoes-2026"
+  ],
+  "updatedAt": "2026-11-10",
+  "keywords": [
+    "흡한속건",
+    "AATCC TM195",
+    "OMMC",
+    "건조속도",
+    "접촉냉감",
+    "Qmax"
+  ],
+  "measurements": [
+    {
+      "label": "액체수분 관리",
+      "value": "AATCC TM195",
+      "note": "OMMC 지수와 등급은 구분"
+    },
+    {
+      "label": "수분 건조 성질",
+      "value": "ISO17617:2014",
+      "note": "2025년 재검토 확인"
+    },
+    {
+      "label": "접촉냉감",
+      "value": "별도 조건의 시험",
+      "note": "액체 땀 이동·증발저항과 다름"
+    }
+  ],
+  "misconceptions": [
+    {
+      "myth": "흡한속건이라는 말 하나면 건조·투습·냉감까지 같은 시험으로 검증됐다.",
+      "reality": "측정 대상과 시료·세탁·온도·습도 조건을 나누어 보세요. TM195와 건조속도 규격은 다른 성질을 다룹니다.",
+      "source": "AATCC TM195와 ISO17617 공개 소개",
+      "sourceUrl": "https://members.aatcc.org/store/tm195/591/"
+    }
+  ]
+},
   {
-    id: 'air-permeability-iso-9237',
-    slug: 'air-permeability-iso-9237',
-    type: 'metric',
-    name: '공기투과도 (ISO 9237)',
-    nameEn: 'Air Permeability (ISO 9237)',
-    summary: '바람막이의 "통기성"을 재는 규격. 높을수록 땀(수증기)은 잘 빠지지만 바람 부는 날엔 덜 따뜻하다 — 한국소비자원이 밝힌 상반 관계다.',
-    intro:
-      '러닝 재킷 설명의 "통기성"은 대개 말로만 적혀 있지만, 원단이 공기를 얼마나 통과시키는지는 국제규격 **ISO 9237**(한국 채택본 KS K ISO 9237)로 잴 수 있습니다. ' +
-      '한국소비자원도 러닝 재킷 8종을 이 규격으로 시험했습니다. 다만 브랜드 상품 페이지에서 이 수치를 본 적은 이번 조사 범위에서 없습니다.',
-    claims: [
-      {
-        text:
-          'ISO 9237:1995 「Textiles — Determination of the permeability of fabrics to air」는 1995년 6월 발행됐고, 2023년 재검토에서 확인돼 현행입니다. 공기를 통과시키는 대부분의 원단에 쓰는 측정법입니다.',
-        grade: 'A',
-        source: 'ISO 공식 규격 페이지 — ISO 9237:1995 (2026-10-08 확인)',
-        sourceUrl: 'https://www.iso.org/standard/16869.html',
-      },
-      {
-        text:
-          '한국소비자원 러닝 재킷 시험(2025-11-05)은 공기투과도를 **원단 기준으로 KS K ISO 9237**에 따라 시험했습니다. 결과는 ★ 3단계 등급으로 공개됐습니다.',
-        grade: 'A',
-        source: '한국소비자원 보도자료 PDF (2025-11-05) — 주요 시험항목 표',
-        sourceUrl: 'https://www.kca.go.kr/home/sub.do?menukey=4002&mode=view&no=1003952123',
-      },
-      {
-        text:
-          '한국소비자원은 "공기투과도가 높으면 내부의 수증기를 잘 배출할 수 있는 장점이 있지만, 바람이 많이 부는 환경에서는 상대적으로 체온유지성이 떨어지는 특성이 있다"고 적고, 두 기능을 상반 관계로 봤습니다.',
-        grade: 'A',
-        source: '한국소비자원 보도자료 PDF (2025-11-05)',
-        sourceUrl: 'https://www.kca.go.kr/home/sub.do?menukey=4002&mode=view&no=1003952123',
-      },
-      {
-        text:
-          'Vasile 등(2025)은 ISO 9237:1995에 따라 100 Pa 압력차·20 cm² 시험 면적으로 피부에 닿는 니트 18종을 쟀고, 공기투과도가 138 mm/s에서 1,382 mm/s까지 **약 10배** 차이 났습니다.',
-        grade: 'A',
-        source: 'Vasile et al., Materials 18(8):1859, 2025 (CC BY)',
-        sourceUrl: 'https://doi.org/10.3390/ma18081859',
-        caveat: '시료는 작업복·베이스레이어용 티셔츠 13종과 폴로 5종이며 시판 러닝복 비교가 아닙니다. 같은 티셔츠용 니트라도 통기 폭이 이만큼 넓다는 사실까지만 옮깁니다.',
-      },
-      {
-        text:
-          'Özkan 등(2023)은 건강한 남성 장거리 러너 10명을 27℃·습도 45% 실험실에서 트레드밀로 달리게 하고 티셔츠 5종을 비교했습니다(원단 공기투과도는 EN ISO 9237, 100 Pa). 공기투과도가 높고 열저항이 낮은 **텐셀 싱글저지·폴리에스터 메시**에서 옷 안 온도·습도가 낮게 나타났습니다.',
-        grade: 'A',
-        source: 'Özkan et al., Scientific Reports 13:14883, 2023 (CC BY 4.0)',
-        sourceUrl: 'https://doi.org/10.1038/s41598-023-42085-2',
-        caveat: '피험자 10명의 실험실 결과이고, 통계적으로 유의한 온도 차이는 텐셀 싱글저지에서 확인됐습니다. 열저항도 함께 달라 공기투과도 하나만의 효과로 분리한 실험은 아닙니다.',
-      },
-      {
-        text:
-          '조사 범위에서 러닝복 상품 페이지에 공기투과도 수치를 적은 브랜드는 찾지 못했습니다. 같은 페이지들에서 무게(GSM)·UPF·혼용률은 적은 곳이 있었습니다.',
-        grade: 'S',
-        source: '자체 조사 — Norrøna·Path Projects·Rab·Janji·Patagonia·Nike 상품 페이지 직접 열람 (2026-09-04)',
-        caveat: '6개 브랜드 표본입니다. "어느 브랜드도 공개하지 않는다"는 전칭이 아니라 확인한 범위의 결과입니다.',
-      },
-    ],
-    measurements: [
-      { label: '규격', value: 'ISO 9237:1995 = KS K ISO 9237', note: '2023년 재확인, 현행' },
-      { label: '단위', value: 'L/m²/s 또는 mm/s', note: '1 L/m²/s = 1 mm/s 로 같은 값' },
-      { label: '논문 시험 조건', value: '100 Pa 압력차', note: 'Vasile 2025 · Özkan 2023' },
-      { label: '한국소비자원 공개 방식', value: '★ 3단계 등급', note: '원측정값 비공개' },
-    ],
-    misconceptions: [
-      {
-        myth: '공기투과도가 높은 재킷일수록 좋은 재킷이다.',
-        reality:
-          '한국소비자원은 공기투과도와 체온유지성을 상반되는 기능으로 봤습니다. 보온이 중요하면 체온유지성이 좋은 쪽을, 땀(수증기) 배출이 중요하면 공기투과도가 높은 쪽을 고르라는 것이 소비자원의 안내입니다. 우열이 아니라 용도의 문제입니다.',
-        source: '한국소비자원 보도자료 PDF (2025-11-05)',
-        sourceUrl: 'https://www.kca.go.kr/home/sub.do?menukey=4002&mode=view&no=1003952123',
-      },
-      {
-        myth: '공기가 잘 통하는 원단이 땀 증발도 그만큼 잘 된다 — 같은 지표다.',
-        reality:
-          '다른 규격으로 재는 다른 값입니다. 공기투과도는 ISO 9237, 땀(수증기) 증발 저항 Ret는 ISO 11092로 잽니다. Özkan 등(2023) 표 1에서 폴리에스터 91%·스판덱스 9% 싱글저지는 **공기투과도가 5종 중 가장 낮았지만 증발저항도 가장 낮았습니다**(낮을수록 수증기가 잘 빠짐). 두 순위는 일치하지 않습니다.',
-        source: 'Özkan et al., Scientific Reports 13:14883, 2023 — Table 1',
-        sourceUrl: 'https://doi.org/10.1038/s41598-023-42085-2',
-      },
-    ],
-    unknowns: [
-      '한국소비자원 재킷 시험의 원측정값(L/m²/s)과 시험 압력차는 보도자료에서 확인하지 못했습니다 — ★ 등급만 공개됐습니다.',
-      'ISO 9237 원문은 유료라 규격이 정한 압력차·시험 면적을 직접 확인하지 못했습니다. 위의 100 Pa는 두 논문이 쓴 조건입니다.',
-      '원단 공기투과도가 완성된 재킷의 실제 환기(지퍼·통풍구·핏)와 어떻게 이어지는지 정량 자료는 찾지 못했습니다.',
-    ],
-    related: ['kca-running-jacket-2025', 'ret-iso-11092', 'wicking-ommc', 'gore-tex-infinium'],
-    relatedPosts: ['fall-marathon-race-day-checklist-2026', 'hot-weather-summer-running-safety-guide-korea'],
-    updatedAt: '2026-10-08',
-    keywords: ['공기투과도', '통기성', 'ISO 9237', 'KS K ISO 9237', '바람막이 통기성', '러닝 재킷 통기성'],
-  },
+  "id": "air-permeability-iso-9237",
+  "slug": "air-permeability-iso-9237",
+  "type": "metric",
+  "name": "공기투과도 (ISO 9237)",
+  "nameEn": "Air Permeability (ISO 9237)",
+  "summary": "정해진 압력에서 원단을 통과하는 공기를 재는 규격입니다. 높은 값이 언제나 더 좋은 재킷이라는 뜻은 아닙니다.",
+  "intro": "바람의 통과와 수증기 저항은 다른 값입니다. 공기투과 수치를 비교하려면 시험 압력·면적·단위를 맞추고, 재킷을 입을 바람·기온·운동 조건을 함께 보아야 합니다.",
+  "claims": [
+    {
+      "text": "ISO9237:1995 공식 소개는 대부분의 공기 투과성 원단·부직포 등의 측정법을 설명하고2023년 재검토에서 확인되어 현행이라고 안내합니다.",
+      "grade": "A",
+      "source": "ISO9237 공식 공개 소개",
+      "sourceUrl": "https://www.iso.org/standard/16869.html"
+    },
+    {
+      "text": "소비자원2025년 재킷 시험은 원단 공기투과도를 KS K ISO9237로 시험했습니다. 이 시험에서는 뉴발란스·아디다스·젝시믹스의 정확 세 제품이★★★이고 나머지 다섯은★★입니다.",
+      "grade": "A",
+      "source": "한국소비자원2025 러닝 재킷 PDF7·9·19쪽",
+      "sourceUrl": "https://www.kca.go.kr/home/board/download.do?menukey=4002&fno=10048804&bid=00000013&did=1003952123",
+      "caveat": "브랜드 전체 순위나 백분율의 차이를 뜻하지 않습니다."
+    },
+    {
+      "text": "Vasile2025는 작업복용 니트18종을100Pa·20cm² 조건으로 비교해138~1,382mm/s 범위를 보고했습니다. 같은 섬유 이름만으로 동일 공기투과도를 기대할 수 없는 시료별 비교입니다.",
+      "grade": "A",
+      "source": "Vasile et al., Materials2025 — 방법·결과",
+      "sourceUrl": "https://www.mdpi.com/1996-1944/18/8/1859"
+    },
+    {
+      "text": "소비자원은 이 재킷 시험의 체온유지·공기투과 특성을 함께 보고 용도에 맞게 선택하도록 안내합니다. 이는 공기투과도와 수증기 저항이 같은 지표라는 뜻은 아닙니다.",
+      "grade": "A",
+      "source": "한국소비자원2025 재킷 구매 안내",
+      "sourceUrl": "https://www.kca.go.kr/home/board/download.do?menukey=4002&fno=10048804&bid=00000013&did=1003952123"
+    }
+  ],
+  "unknowns": [
+    "규격 유료 전문과 모든 시판 러닝복의 공기투과 수치는 확인하지 않았습니다.",
+    "시험 압력·면적·단위가 다른 숫자를 그대로 순위로 묶지 않습니다."
+  ],
+  "related": [
+    "kca-running-jacket-2025",
+    "ret-iso-11092",
+    "wicking-ommc",
+    "gore-tex-infinium"
+  ],
+  "relatedPosts": [
+    "fall-marathon-race-day-checklist-2026",
+    "hot-weather-summer-running-safety-guide-korea"
+  ],
+  "updatedAt": "2026-11-10",
+  "keywords": [
+    "공기투과도",
+    "통기성",
+    "ISO 9237",
+    "KS K ISO 9237",
+    "바람막이 통기성",
+    "러닝 재킷 통기성"
+  ],
+  "measurements": [
+    {
+      "label": "확인 규격",
+      "value": "ISO9237:1995",
+      "note": "2023년 확인·현행 안내"
+    },
+    {
+      "label": "연구 시료 조건",
+      "value": "100Pa·20cm²",
+      "note": "Vasile2025의18종 작업복 니트"
+    }
+  ],
+  "misconceptions": [
+    {
+      "myth": "공기투과도가 높은 재킷이 모든 계절에 더 좋다.",
+      "reality": "바람과 보온·운동 중 열 배출의 필요가 다릅니다. 시험 등급을 실제 착용 환경과 함께 보세요.",
+      "source": "한국소비자원2025 구매 안내",
+      "sourceUrl": "https://www.kca.go.kr/home/board/download.do?menukey=4002&fno=10048804&bid=00000013&did=1003952123"
+    }
+  ]
+},
 ];
