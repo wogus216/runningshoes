@@ -1362,155 +1362,60 @@ export const posts_2026_05: BlogPost[] = [
 `,
   },
   {
-    id: '2026-descente-awaken-ekiden-race',
-    slug: '2026-descente-awaken-ekiden-race',
-    title: '데센테 어웨이큰 에키덴 레이스 D-37 | 6/22~23 용산 전쟁기념관 지하 주차장 야간 릴레이 — 240명 무료, 추첨 선정, 5/25 마감',
-    description: '데센테 러닝이 6월 22~23일 용산 전쟁기념관 지하 주차장에서 어웨이큰 에키덴 레이스를 개최합니다. 일반 240명 모집(추첨 선정), 참가비 무료, 남 2인·여 2인·혼성 4인 릴레이 3개 부문. 5월 25일 마감. 일본식 도로 릴레이 포맷 + 도심 지하 야간이라는 독특한 컨셉.',
-    thumbnail: '/images/blog/2026-descente-awaken-ekiden-race.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-05-16',
-    category: 'news' as const,
-    readingTime: 7,
-    tags: ['데센테', 'Descente', '어웨이큰 에키덴', 'Awaken Ekiden', '에키덴', '릴레이 마라톤', '용산 전쟁기념관', '야간 러닝', '도심 러닝', '러닝 크루'],
+    id: "2026-descente-awaken-ekiden-race",
+    slug: "2026-descente-awaken-ekiden-race",
+    title: "데상트 어웨이큰 에키덴 2026 — 주자당 300m·팀 선발·대여화 조건 바로잡기",
+    description: "공식 모집·FAQ 이미지로 실제 코스와 선정 방식을 대조했습니다. 주자당 300m, 참가 이유·팀 구성 선발, 5월 29일 결과 안내와 필수 대여화 착용을 확인했습니다.",
+    thumbnail: "/images/blog/verified-2026-descente-awaken-ekiden-race-20261110.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-05-16",
+    category: "news",
+    readingTime: 5,
+    tags: [
+      "데센테",
+      "Descente",
+      "어웨이큰 에키덴",
+      "Awaken Ekiden",
+      "에키덴",
+      "릴레이 마라톤",
+      "용산 전쟁기념관",
+      "야간 러닝",
+      "도심 러닝",
+      "러닝 크루"
+    ],
     content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>데센테 어웨이큰 에키덴 레이스</strong> — 6월 22일(월)~23일(화) 20:00~22:00, <strong>용산 전쟁기념관 지하 주차장</strong> 야간 진행</li>
-    <li><strong>일반 부문 240명 무료 + 추첨 선정</strong>, 남 2인 릴레이 / 여 2인 릴레이 / 혼성 4인 릴레이(남2·여2) 3개 부문</li>
-    <li>접수: <strong>2026년 5월 11일~5월 25일(월)</strong> — D-9, 데센테러닝(@descenterunning) 채널 통해 신청</li>
-  </ul>
-</div>
+<p><strong>2026년 11월 10일 원문 대조.</strong> 확인한 공지의 시점과 현재 제공 여부를 구분했습니다. 방문·참여·관람 후기는 아닙니다.</p>
 
-<div class="callout info">
-  <span class="callout-icon">🌃</span>
-  <div class="callout-body">
-    <p class="callout-title">"지하 주차장 야간 에키덴" 컨셉이 핵심</p>
-    <p>데센테 러닝이 5월 4일 공식 발표한 신규 레이스로, 한국에서는 흔치 않은 <strong>일본식 에키덴(駅伝) 릴레이 포맷</strong> + <strong>용산 전쟁기념관 지하 주차장 야간 진행</strong>이라는 독특한 컨셉입니다. 일반인 추첨 240명 + 사전 초청 크루 9개 팀으로 구성된 양일 진행 이벤트.</p>
-  </div>
-</div>
-
-<h2>에키덴(駅伝)이 정확히 뭔가</h2>
-
-<p><strong>에키덴(駅伝, Ekiden)</strong>은 일본에서 발상한 도로 릴레이 마라톤 포맷입니다. 1917년 도카이도(東海道) 첫 개최 이후 일본 운동 문화의 상징이 됐고, 매년 1월 1일 도쿄~하코네 왕복 217.1km를 10명이 이어 달리는 <strong>하코네 에키덴(箱根駅伝)</strong>이 대표적입니다.</p>
-
-<ul>
-  <li><strong>구조:</strong> 1개 팀(보통 2~10명)이 구간을 나눠 이어달리는 릴레이</li>
-  <li><strong>특징:</strong> 개인 PR보다 <strong>팀 합산 기록</strong>이 핵심 — 동료 신뢰·바통(襷, 다스키) 전달이 중요</li>
-  <li><strong>한국 상황:</strong> 한강 에키덴·잠스트 에키덴 등 산발적으로 개최되지만 메이저급 정착은 미흡 — 데센테 어웨이큰 에키덴이 그 공백을 노린 포지셔닝</li>
-</ul>
-
-<h2>일반 참가 부문 — 5/25 마감</h2>
-
-<table>
-  <thead>
-    <tr><th>항목</th><th>내용</th></tr>
-  </thead>
-  <tbody>
-    <tr><td><strong>대회 일시</strong></td><td>2026년 <strong>6월 22일(월) 20:00~22:00</strong></td></tr>
-    <tr><td><strong>장소</strong></td><td><strong>용산 전쟁기념관 지하 주차장</strong></td></tr>
-    <tr><td><strong>참가비</strong></td><td><strong>무료</strong></td></tr>
-    <tr><td><strong>참가 인원</strong></td><td>총 240명</td></tr>
-    <tr><td><strong>부문</strong></td><td>남자 2인 릴레이 / 여자 2인 릴레이 / 혼성 4인 릴레이(남2·여2)</td></tr>
-    <tr><td><strong>모집 기간</strong></td><td>2026년 <strong>5월 11일(월) ~ 5월 25일(월)</strong></td></tr>
-    <tr><td><strong>선정 방식</strong></td><td>신청 기간 내 접수된 팀을 대상으로 <strong>운영 기준에 따라 추첨 선정</strong></td></tr>
-    <tr><td><strong>접수 채널</strong></td><td>데센테 러닝(@descenterunning) 공식 채널</td></tr>
-  </tbody>
-</table>
-
-<h2>크루 초청 부문 — 9개 크루 사전 초청</h2>
-
-<table>
-  <thead>
-    <tr><th>항목</th><th>내용</th></tr>
-  </thead>
-  <tbody>
-    <tr><td><strong>대회 일시</strong></td><td>2026년 <strong>6월 23일(화) 20:00~22:00</strong></td></tr>
-    <tr><td><strong>장소</strong></td><td>용산 전쟁기념관 지하 주차장 (일반 부문과 동일)</td></tr>
-    <tr><td><strong>진행 방식</strong></td><td>9개 러닝 크루 사전 초청 진행</td></tr>
-    <tr><td><strong>참가 방법</strong></td><td><strong>모집 없음</strong> — 사전 초청된 러닝 크루 한정</td></tr>
-  </tbody>
-</table>
-
-<p>크루 초청 부문은 일반 모집과 별개로, 데센테 측이 사전 초청한 9개 러닝 크루를 대상으로 진행됩니다. 일반 러너가 신청할 수 있는 부문은 <strong>6/22 일반 참가 부문 240명</strong>뿐입니다.</p>
-
-<h2>왜 "지하 주차장 야간"인가</h2>
-
-<p>한국에서 처음 시도되는 컨셉이라 호기심을 끄는 포인트. 도심 도로 폐쇄 없이 안정적 코스 확보가 가능하고, 야간 + 조명 + 음악 등 페스티벌형 연출에 유리합니다. 일본 도쿄·오사카에서 진행된 유사 형식 야간 에키덴 이벤트와 같은 흐름:</p>
-
-<ul>
-  <li><strong>코스:</strong> 지하 주차장 내 일정 거리 루프 (정확한 거리·구간 미공개 — 대회 접수 전까지 순차 공개 예정)</li>
-  <li><strong>분위기:</strong> 조명·음악 연출 가능, 도심 한복판 야간 러닝이라는 비주얼 임팩트</li>
-  <li><strong>날씨:</strong> 6월 말 한국 야외 야간 = 25~28℃ 습도 높음. 지하 주차장은 상대적으로 시원함</li>
-  <li><strong>접근성:</strong> 삼각지역(4·6호선)·이태원역(6호선) 도보권. 야간 진행이라 직장인 참가 용이</li>
-</ul>
-
-<h2>이런 러너에게 추천</h2>
-
-<div class="callout success">
-  <span class="callout-icon">✅</span>
-  <div class="callout-body">
-    <p class="callout-title">데센테 어웨이큰 에키덴이 어울리는 사람</p>
-    <ol>
-      <li><strong>러닝 크루·메이트 있는 러너:</strong> 2인·4인 팀 구성이 필수. 평소 같이 뛰는 사람과 한 팀 구성</li>
-      <li><strong>에키덴 포맷 처음 경험하는 러너:</strong> 한국에서 흔치 않은 릴레이 마라톤 경험 가치</li>
-      <li><strong>참가비 0원에 신상 데센테 굿즈 노리는 러너:</strong> 무료 + 데센테 후원 → 굿즈·기념품 기대치 ↑</li>
-      <li><strong>지하 야간 러닝 비주얼·콘텐츠가 좋은 러너:</strong> 인스타그램 콘텐츠 가치 큼</li>
-      <li><strong>직장인 평일 야간 가능:</strong> 월요일 20:00 시작 — 퇴근 후 참가 가능</li>
-    </ol>
-  </div>
-</div>
-
-<h2>이런 러너에게는 비추</h2>
-
-<ul>
-  <li><strong>혼자 뛰는 러너:</strong> 2~4인 팀 구성 필수. 팀 못 구하면 신청 자체 불가</li>
-  <li><strong>월요일 평일 야간 어려운 사람:</strong> 6/22(월) 20:00 시작 — 다음 날 화요일 출근 부담</li>
-  <li><strong>지하 환기·공기 민감한 러너:</strong> 지하 주차장 = 환기 제한적, 호흡기 민감자 주의</li>
-  <li><strong>개인 PR 목표 러너:</strong> 릴레이 포맷 + 추첨 선정 = PR 도전엔 부적합</li>
-</ul>
-
-<h2>릴레이용 신발 추천</h2>
-
-<p>에키덴은 1인당 거리가 짧고(추정 2~5km 구간) 빠른 페이스 유지가 핵심 — <strong>레이싱 슈즈 또는 슈퍼 트레이너</strong>가 정답입니다. 카본 슈퍼슈즈로 잠깐 빠르게 + 회복 + 다시 출전 사이클이 어울림.</p>
-
-<ul>
-  <li><strong>레이싱(2~5km 짧은 구간 + 전력):</strong>
-    <ul>
-      <li><a href="/shoes/nike-vaporfly-4">Nike Vaporfly 4</a> — 짧은 구간 폭발력</li>
-      <li><a href="/shoes/adidas-adios-pro-4">Adidas Adios Pro 4</a> — 라이트스트라이크 프로 + 카본</li>
-      <li><a href="/shoes/saucony-endorphin-pro-5">Saucony Endorphin Pro 5</a></li>
-    </ul>
-  </li>
-  <li><strong>슈퍼 트레이너(편하면서 빠른 페이스):</strong>
-    <ul>
-      <li><a href="/shoes/asics-superblast-3">Asics Superblast 3</a> — 카본 없이 가볍고 반발 좋음</li>
-      <li><a href="/shoes/asics-magic-speed-5">Asics Magic Speed 5</a> — 카본 + 데일리 가능</li>
-      <li><a href="/shoes/saucony-endorphin-speed-5">Saucony Endorphin Speed 5</a></li>
-    </ul>
-  </li>
-</ul>
-
-<h2>D-9 신청 행동 가이드</h2>
-
-<ol>
-  <li><strong>D-9 (5/16):</strong> 팀원 2명(또는 혼성 부문은 4명) 미리 컨택. 부문 결정 (남2/여2/혼성4)</li>
-  <li><strong>D-5 (5/20):</strong> 데센테러닝(@descenterunning) 공식 채널 접수 링크 확인. 팀명·연락처·SNS 등 사전 준비</li>
-  <li><strong>D-Day 신청 마감 (5/25 월):</strong> 마감 직전 트래픽 피하기 위해 D-3~D-2 사이 접수 완료</li>
-  <li><strong>D+10 ~ D+15 (6/4~6/9 추정):</strong> 추첨 결과 발표 (정확 일정은 데센테 후속 공지)</li>
-  <li><strong>D-Day (6/22 월 20:00):</strong> 용산 전쟁기념관 지하 주차장. 18:30~19:00 도착, 팀 체크인</li>
-</ol>
-
-<h2>관련 6월 도심 러닝 이벤트</h2>
-
-<ul>
-  <li><a href="/blog/2026-bogwangjung-suyuk-run">보광정 수육런 D-14</a> — 5/30 토 8AM 남산 펀런</li>
-  <li><a href="/blog/2026-seoul-race">2026 서울 레이스</a> — 가을 도심 대회</li>
-  <li><a href="/blog/2027-seoul-marathon-domestic-registration-guide">2027 서울마라톤 국내 참가자 신청 D-2</a> — 본격 마라톤 시즌 준비</li>
-</ul>
-
-<p><small>출처: 러너스나우(@runners_now) 2026-05-04 게시물 + 데센테러닝(@descenterunning) 공식 공지. 세부 운영 방식·코스 거리·참가 신청 링크는 대회 접수 전까지 순차 공개 예정. 최신 정보는 @descenterunning 채널에서 확인 필수.</small></p>
+<h2>2~5km 추정 대신 주자당 300m</h2>
+<p><a href="https://dk-on.com/event/detail/317298" target="_blank" rel="noopener noreferrer">데상트 공식 행사</a>의 코스 이미지는 용산 전쟁기념관 지하 1층 주차장, 1 LAP 300m, 각 주자 300m를 달려 팀 누적 기록을 측정하는 타임트라이얼로 설명합니다. 기존 글의 ‘정확한 거리 미공개·1인당 2~5km 추정’과 그 거리로 정당화한 신발 추천을 수정했습니다.</p>
+<p>일반부는 6월 22일, 초청 크루 부문은 6월 23일로 안내된 종료 일정입니다. 이 장소가 평소에도 누구나 달릴 수 있는 개방 러닝 코스라는 뜻은 아닙니다. 차량 운행·환기·기온을 실제 조사하지 않고 지하라 선선하다거나 어떤 신발이 정답이라고 단정하지 않습니다.</p>
+<h2>일반부는 추첨이 아니라 팀 정보로 선발</h2>
+<table><thead><tr><th>부문</th><th>팀 구성</th><th>모집 계획</th></tr></thead><tbody><tr><td>남자</td><td>2인</td><td>40팀</td></tr><tr><td>여자</td><td>2인</td><td>40팀</td></tr><tr><td>혼성</td><td>남2·여2, 총4인</td><td>20팀</td></tr></tbody></table>
+<p>팀 수와 구성을 합하면 총 100팀·240명입니다. 공식 안내는 팀별 참가 이유와 구성 정보를 바탕으로 선정한다고 적습니다. 참가비는 무료지만, 무료 행사라는 이유로 무작위 추첨이라고 설명하지 않습니다. 모집 계획을 실제 전원 참가·완주 인원으로 바꾸지도 않습니다.</p>
+<h2>팀 대표 한 명이 신청하면 끝나는 방식이 아닙니다</h2>
+<p><a href="https://dk-on.com/event/detail/317597" target="_blank" rel="noopener noreferrer">공식 FAQ</a>는 팀원 전원이 본인 명의 DK 회원으로 로그인해 개별 신청해야 한다고 안내합니다. 모집 마감은 5월 25일, 결과는 5월 29일 DK 온라인스토어 카카오톡 플러스친구 메시지 후 전화로 참여를 확정하는 계획입니다. 기존의 6월 4~9일 추정 발표일은 제외했습니다.</p>
+<p>지금 회원 가입이나 개인 참가 내역을 조회한 것은 아닙니다. 다음 회차가 있더라도 같은 계정·선정·통보 방식이 유지된다고 보장하지 않습니다.</p>
+<h2>20~22시라는 한 줄보다 체크인·시상까지</h2>
+<p>공식 일반부 계획은 체크인 19:00~19:50, 남자 경기 20:00~20:30, 여자 20:30~21:00, 혼성 21:15~21:50, 시상 21:55~22:20입니다. 경기 시작 전에 체크인을 마쳐야 하고, 시상까지 참여하면 22시보다 늦게 끝나는 일정입니다. 개인 참가자의 실제 종료 시각을 보장하는 표는 아닙니다.</p>
+<h2>신발은 대여 착용과 증정을 구분</h2>
+<p>공식 안내는 주최 측 기념 티셔츠와 트라이얼용 델타프로 EXP V3 착용을 필수로 설명합니다. 따라서 기존 글처럼 다른 브랜드 레이싱화를 준비하면 된다는 추천은 참가 조건과 맞지 않습니다. 대여화를 신는 체험과 모든 참가자에게 신발 소유권이 주어지는 혜택도 구분합니다.</p>
+<p>초청 크루 수는 초기 공식 모집 이미지의 8개와 이후 보도에서 소개된 수가 달라, 여기서는 일반 참가 100팀의 모집 구조와 구분했습니다. 대회가 한국 첫 시도라는 주장, 현장 공기·회복 효과·기념품의 현금 가치도 확인 없이 덧붙이지 않습니다.</p>
+<p>다음 릴레이 행사에서도 1인 거리와 팀 거리, 선발 기준, 팀원별 신청, 대여품 반납·착용 조건을 먼저 읽으세요. 하프나 풀코스 경험만으로 300m 릴레이 참가 조건이 같다고 볼 수 없습니다.</p>
+<h2>자주 묻는 질문</h2>
+<h3>일반부는 무작위 추첨으로 선정했나요?</h3><p>공식 모집 안내는 팀별 참가 이유와 구성 정보를 바탕으로 선정한다고 설명합니다. 100팀·240명은 모집 계획이며 추첨이라고 바꾸어 쓰지 않습니다.</p>
+<h3>개인 러닝화를 준비하면 되나요?</h3><p>2026 공식 안내는 주최 측 기념 티셔츠와 트라이얼용 델타프로 EXP V3 착용을 필수로 설명합니다. 대여 착용을 전원 신발 증정과 혼동하지 않아야 합니다.</p>
 `,
+    updatedAt: "2026-11-10",
+    faqs: [
+      {
+        "question": "일반부는 무작위 추첨으로 선정했나요?",
+        "answer": "공식 모집 안내는 팀별 참가 이유와 구성 정보를 바탕으로 선정한다고 설명합니다. 100팀·240명은 모집 계획이며 추첨이라고 바꾸어 쓰지 않습니다."
+      },
+      {
+        "question": "개인 러닝화를 준비하면 되나요?",
+        "answer": "2026 공식 안내는 주최 측 기념 티셔츠와 트라이얼용 델타프로 EXP V3 착용을 필수로 설명합니다. 대여 착용을 전원 신발 증정과 혼동하지 않아야 합니다."
+      }
+    ],
   },
   {
     id: "2027-seoul-marathon-gold-package",

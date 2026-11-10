@@ -2299,83 +2299,56 @@ export const posts_2026_06: BlogPost[] = [
     ],
   },
   {
-    id: 'garmin-run-club-grc-busan-expansion-2026',
-    slug: 'garmin-run-club-grc-busan-expansion-2026',
-    title: '가민런클럽(GRC), 부산·울산·대전으로 확대 | 서울 밖 러너도 가민 러닝 커뮤니티에 — 포러너 70/170과 함께',
-    description: '가민의 러닝 커뮤니티 "가민런클럽(GRC)"이 2022년 이후 처음으로 서울 밖 — 부산·울산·대전으로 활동을 넓힙니다. 포러너 70/170 출시와 세트로 발표된 생태계 전략이죠. GRC가 뭔지, 부산 러너는 어떻게 참여하는지(해운대 브랜드샵·가민 스포츠 앱), 그리고 "가민런 코리아 대회"와 무엇이 다른지 정리했습니다.',
-    thumbnail: '/images/blog/garmin-run-club-grc-busan-expansion-2026.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-06-12',
-    category: 'news' as const,
-    readingTime: 7,
-    tags: ['가민런클럽', 'GRC', 'Garmin Run Club', '가민', '포러너 70', '포러너 170', '부산 러닝', '해운대', '러닝 크루', '러닝 커뮤니티'],
+    id: "garmin-run-club-grc-busan-expansion-2026",
+    slug: "garmin-run-club-grc-busan-expansion-2026",
+    title: "가민런클럽 지역 확대 — 부산·울산·대전 계획과 실제 모집 확인법",
+    description: "가민은 5월 공식 발표에서 GRC의 부산·울산·대전 확대 계획을 안내했습니다. 계획 발표와 현재 모집·무료 참여·제품 구매 조건을 구분하고, 러닝 커뮤니티와 가민런 대회 참가권을 섞지 않습니다.",
+    thumbnail: "/images/blog/verified-garmin-run-club-grc-busan-expansion-2026-20261110.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-06-12",
+    category: "news",
+    readingTime: 5,
+    tags: [
+      "가민런클럽",
+      "GRC",
+      "Garmin Run Club",
+      "가민",
+      "포러너 70",
+      "포러너 170",
+      "부산 러닝",
+      "해운대",
+      "러닝 크루",
+      "러닝 커뮤니티"
+    ],
     content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>GRC가 서울을 벗어납니다</strong> — 가민의 러닝 커뮤니티 "가민런클럽(GRC)"이 2022년 이후 줄곧 서울 중심이었는데, 2026년 <strong>부산·울산·대전</strong>으로 활동 범위를 넓힙니다.</li>
-    <li><strong>포러너 70/170과 세트</strong> — 5월 20일 출시한 입문~중급 워치 포러너 70(39.9만)·170(47.9만)과 함께 발표된 생태계 전략입니다. "워치 + 함께 달릴 커뮤니티"를 묶는 거죠.</li>
-    <li><strong>부산 러너 실전 팁</strong> — 오프라인 세션 일정은 아직 미발표지만, <strong>가민 스포츠 앱의 GRC 온라인 코스는 이미 무료</strong>이고, 해운대 브랜드샵(@garmin_haeundae)을 팔로우하면 부산 세션 공고를 가장 빨리 받습니다.</li>
-  </ul>
-</div>
+<p><strong>2026년 11월 10일 원문 대조.</strong> 확인한 공지의 시점과 현재 제공 여부를 구분했습니다. 방문·참여·관람 후기는 아닙니다.</p>
 
-<div class="callout info">
-  <span class="callout-icon">🏃</span>
-  <div class="callout-body">
-    <p class="callout-title">먼저 정리 — GRC는 "대회"가 아니라 "러닝 커뮤니티"입니다</p>
-    <p>"가민런"이라는 이름 때문에 헷갈리기 쉽지만, <strong>가민런클럽(GRC)</strong>은 가민이 운영하는 <strong>러너 훈련 커뮤니티</strong>입니다. 매년 11월 고양에서 열리는 <strong>가민런 코리아(대회)</strong>와는 완전히 별개예요. GRC는 "함께 훈련하고 성장하는 모임", 가민런 코리아는 "하루짜리 레이스"입니다. 이 글은 <strong>커뮤니티(GRC)의 지역 확대</strong> 소식입니다.</p>
-  </div>
-</div>
-
-<h2>GRC란 — 가민의 러닝 사이언스 기반 커뮤니티</h2>
-
-<p><strong>가민런클럽(Garmin Run Club, GRC)</strong>은 가민코리아가 2022년부터 운영해 온 러너 전용 커뮤니티로, 아시아 8개국에서 돌아갑니다. 구조는 <strong>온라인 + 오프라인 투 트랙</strong>입니다.</p>
-
-<ul>
-  <li><strong>온라인</strong> — 가민 스포츠 앱에서 <strong>무료</strong>로 참여하는 학기제(봄/가을) 훈련 프로그램. 누구나 지금도 가능합니다.</li>
-  <li><strong>오프라인</strong> — 8~10주 단위 <strong>기수제 선발 프로그램</strong>. 풀코스 완주·10K PB·페이서 육성 같은 목표별로 운영되고, 단체로 서울신문 하프·JTBC 서울마라톤 등에 참가해 왔습니다. 선발 인원에게는 가민 워치·참가권 같은 혜택이 주어졌죠.</li>
-</ul>
-
-<h2>2026, 처음으로 서울 밖으로 — 부산·울산·대전</h2>
-
-<p>그동안 오프라인 GRC는 사실상 <strong>서울 러너의 전유물</strong>이었습니다. 그런데 2026년 5월 가민이 <strong>"GRC를 부산·울산·대전 등 주요 지역으로 확대한다"</strong>고 공식 발표했습니다. 입문자 러닝 세션과 대학 러닝리그 협업 프로그램을 새 거점에 도입한다는 계획이죠. 지방 러너에게는 <strong>"드디어 내 지역에서도"</strong>라는 반가운 소식입니다.</p>
-
-<h2>왜 지금 — 포러너 70/170과 함께</h2>
-
-<p>이 확대는 <strong>포러너 70/170 출시(5/20)</strong>와 세트로 발표됐습니다. 우연이 아니라 전략이에요. 입문~중급용 워치로 새 러너를 끌어들이고(<a href="/blog/2026-garmin-forerunner-70-170-korea">포러너 70·170 한국 출시</a> 참고), 동시에 <strong>그들이 함께 달릴 커뮤니티(GRC)</strong>를 지역까지 깔아주는 — "기기 + 커뮤니티"를 묶는 생태계 전략입니다. Training Readiness·Running Power 같은 기능으로 측정하고, GRC에서 함께 훈련하는 그림이죠.</p>
-
-<h2>부산 러너는 어떻게 참여할까</h2>
-
-<div class="callout warning">
-  <span class="callout-icon">📍</span>
-  <div class="callout-body">
-    <p class="callout-title">오프라인 세션 일정은 아직 미발표 — 지금 할 수 있는 것</p>
-    <ul>
-      <li><strong>가민 스포츠 앱 GRC 온라인 코스</strong> — 지역 확대와 무관하게 <strong>이미 무료로 참여</strong> 가능. 부산이든 어디든 지금 시작할 수 있습니다.</li>
-      <li><strong>해운대 브랜드샵 팔로우</strong> — 부산 거점이 될 가민 브랜드샵 해운대점(@garmin_haeundae)을 팔로우하면 부산 GRC 세션·런 행사 공고를 가장 빨리 받습니다.</li>
-      <li><strong>가민코리아 공식(@garminkorea)</strong> — 오프라인 기수 모집은 보통 여기 공고됩니다. 부산·울산·대전 모집 일정은 추후 발표 예정.</li>
-    </ul>
-  </div>
-</div>
-
-<h2>헷갈리지 말자 — GRC vs 가민런 코리아</h2>
-
-<table>
-  <thead>
-    <tr><th>구분</th><th>가민런클럽(GRC)</th><th>가민런 코리아</th></tr>
-  </thead>
-  <tbody>
-    <tr><td><strong>성격</strong></td><td>러닝 훈련 커뮤니티</td><td>일일 러닝 대회</td></tr>
-    <tr><td><strong>기간</strong></td><td>8~10주 프로그램(기수제)</td><td>하루 레이스</td></tr>
-    <tr><td><strong>2026</strong></td><td>부산·울산·대전 확대</td><td>11/15 고양종합운동장</td></tr>
-    <tr><td><strong>참가비</strong></td><td>온라인 무료 / 오프라인 선발(혜택)</td><td>하프 8만·10K 6만(추첨)</td></tr>
-  </tbody>
-</table>
-
-<p>대회로 한판 뛰고 싶다면 <a href="/blog/2026-garmin-run-korea-half-marathon">2026 가민런 코리아(하프 신설)</a>를, 꾸준히 함께 훈련하고 싶다면 GRC를 보면 됩니다. 둘 다 가민 생태계지만 쓰임이 달라요. 가을 시즌 다른 대회까지 함께 계획한다면 <a href="/blog/2026-second-half-marathon-schedule-korea">2026 하반기 마라톤 완전정복</a>도 참고하세요.</p>
-
-<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 2026-06-12 기준이며, GRC 부산·울산·대전 오프라인 세션의 구체적 일정·장소·모집은 미발표 상태입니다(확대 계획만 발표). 최신 정보는 가민코리아 공식 채널에서 확인하세요. (출처: 가민 한국 공식 보도자료, STN스포츠 등)</p>
+<h2>공식적으로 확인한 것은 지역 확대 계획</h2>
+<p><a href="https://www.garmin.com/ko-KR/newsroom/press-release/news-2026-may-forerunner-70-170/" target="_blank" rel="noopener noreferrer">가민 한국 5월 13일 발표</a>는 가민 런 클럽(GRC)을 기존 서울 중심에서 부산·울산·대전 등으로 확대하고 입문자 세션과 러너블 대학러닝리그 협업을 선보일 예정이라고 설명합니다. 지역 러너가 가까운 곳에서 함께 훈련할 기회를 늘리겠다는 발표입니다.</p>
+<p>이 발표에는 각 도시의 현재 모집 링크, 정기 요일·집결 장소·인원·비용이 모두 담겨 있지 않습니다. 따라서 계획을 이미 모든 도시에서 매주 진행 중인 프로그램으로 쓰거나, 반대로 11월까지 아무 세션도 발표되지 않았다고 단정하지 않습니다. 이번에 현재 열린 회차를 확정하지 못했다는 범위를 남깁니다.</p>
+<h2>워치 출시 소식과 커뮤니티 신청은 다른 절차</h2>
+<p>같은 자료는 포러너 70·170 시리즈의 5월 20일 한국 구매 가능 일정과 출시 권장가를 안내했습니다. 함께 발표됐다는 이유만으로 워치를 사면 GRC에 자동 합격하거나, 해당 모델 보유자만 참여할 수 있다고 해석하면 안 됩니다. 실제 세션의 신청 자격을 확인해야 합니다.</p>
+<p>또 GRC라는 커뮤니티 이름과 가민런 코리아 대회 참가권은 구분합니다. 모임에 신청했는지 대회에 접수했는지, 훈련 프로그램에 참가권이 포함되는지 각각 확인하세요. 워치 가격·기능은 <a href="/blog/2026-garmin-forerunner-70-170-korea">포러너 출시 안내</a>에서 별도로 다룹니다.</p>
+<h2>지역 모집 공지에서 확인할 표</h2>
+<table><thead><tr><th>항목</th><th>신청 전에 필요한 내용</th></tr></thead><tbody><tr><td>도시·회차</td><td>날짜·모집 기한·대기자 운영</td></tr><tr><td>참가 자격</td><td>연령·경험·기기 또는 앱 조건</td></tr><tr><td>시간·동선</td><td>집결 시각·정확한 장소·활동시간·종료 장소</td></tr><tr><td>훈련 구성</td><td>거리·페이스 그룹·걷기 전환·중도 종료 절차</td></tr><tr><td>비용·혜택</td><td>유료 여부·대여 제품·반납·참가권 포함 범위</td></tr><tr><td>연락·동의</td><td>확정 안내 방식·취소·촬영·개인정보 조건</td></tr></tbody></table>
+<p>이 표는 실제 모집 공지의 확정 규칙이 아니라 신청 비교를 위한 편집 체크리스트입니다. 현재 운영 소식은 <a href="https://www.garmin.com/ko-KR/newsroom/" target="_blank" rel="noopener noreferrer">가민 한국 프레스룸</a>과 공식 채널의 해당 회차 원문에서 대조하세요. 특정 매장을 가장 빠른 정보원이나 확정 거점으로 보장하지 않습니다.</p>
+<h2>기존 글에서 제외한 약속</h2>
+<p>공개 원문으로 재확정하지 못한 ‘온라인 과정은 누구나 지금 무료’, 모든 기수 8~10주, 참여자 전원 워치·참가권, 아시아 국가 수 등의 일반화는 제외했습니다. 다음 모임을 고를 때는 브랜드 이름보다 현재 본인에게 맞는 시간·페이스·신청 조건을 확인하는 편이 유용합니다.</p>
+<h2>자주 묻는 질문</h2>
+<h3>부산·울산·대전에서 지금 바로 신청할 수 있나요?</h3><p>5월 발표의 확대 계획은 확인했습니다. 현재 열린 도시별 회차와 신청 가능 상태는 이번에 확정하지 못했으며, 해당 회차의 모집 공지가 필요합니다.</p>
+<h3>가민 워치를 사면 클럽이나 대회에 자동 참가하나요?</h3><p>그런 조건을 확인하지 못했습니다. 제품 구매, GRC 프로그램 신청, 가민런 대회 접수는 각각의 규정을 확인해야 합니다.</p>
 `,
+    updatedAt: "2026-11-10",
+    faqs: [
+      {
+        "question": "부산·울산·대전에서 지금 바로 신청할 수 있나요?",
+        "answer": "5월 발표의 확대 계획은 확인했습니다. 현재 열린 도시별 회차와 신청 가능 상태는 이번에 확정하지 못했으며, 해당 회차의 모집 공지가 필요합니다."
+      },
+      {
+        "question": "가민 워치를 사면 클럽이나 대회에 자동 참가하나요?",
+        "answer": "그런 조건을 확인하지 못했습니다. 제품 구매, GRC 프로그램 신청, 가민런 대회 접수는 각각의 규정을 확인해야 합니다."
+      }
+    ],
   },
   {
     id: "gangnam-international-peace-marathon-2026",
