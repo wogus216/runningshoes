@@ -2,92 +2,40 @@ import type { BlogPost } from '@/types/blog';
 
 export const posts_2026_10: BlogPost[] = [
   {
-    id: 'adidas-satisfy-adios-pro-evo-2-korea-2026',
-    slug: 'adidas-satisfy-adios-pro-evo-2-korea-2026',
-    title: '아디다스 새티스파이 에보 2·아디오스 한국 발매 | 799,000원 드로우 10/31 10:30 마감, 일반판보다 20만원',
-    description: '아디다스×새티스파이 2차 협업이 10월 31일 한국에 나옵니다. 아디오스 프로 에보 2는 799,000원으로 CONFIRMED 앱 드로우가 오전 10시 30분에 끝나고, 아디오스는 369,000원입니다. 일반판과의 20만원 차이로 달라지는 점과 에보 3 비교를 정리했습니다.',
-    thumbnail: '/images/blog/adidas-satisfy-adios-pro-evo-2-korea-2026.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-10-30',
-    category: 'news' as const,
-    readingTime: 4,
-    tags: ['아디다스 새티스파이', '아디오스 프로 에보 2', '아디오스 9', 'CONFIRMED 드로우', '아디오스 프로 에보 3', '레이싱화', '러닝화 콜라보'],
+    id: "adidas-satisfy-adios-pro-evo-2-korea-2026",
+    slug: "adidas-satisfy-adios-pro-evo-2-korea-2026",
+    title: "SATISFY 에보 2 KH6636 — 799,000원 표시·148g 공시와 밑창 변화",
+    description: "정확 협업판의 EnergyRods·전체 Continental 밑창과 한국 상품 표시가격을 확인했습니다. 일반형 랩·다른 협업 모델·현재 드로우와 재고를 분리합니다.",
+    thumbnail: "/images/blog/verified-adidas-satisfy-adios-pro-evo-2-20261110.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-10-30",
+    category: "news",
+    readingTime: 6,
+    tags: [
+      "아디다스",
+      "SATISFY",
+      "아디오스 프로 에보 2",
+      "KH6636",
+      "한국 가격"
+    ],
     faqs: [
-      { question: '에보 2 새티스파이 드로우는 언제까지인가요?', answer: '아디다스 코리아 공식 인스타그램 기준 CONFIRMED 앱에서 10월 31일(토) 오전 10시 30분까지 참여할 수 있습니다. 발매 달력에는 같은 날 오전 11시로 올라 있습니다. 당첨 발표 시각과 결제 기한은 확인하지 못했습니다.' },
-      { question: '일반판 에보 2와 무엇이 다른가요?', answer: '밑창입니다. SideRun에 따르면 일반판은 전족부와 힐 옆면에 얇은 고무만 있는데 새티스파이판은 밑창 전체가 컨티넨탈 고무입니다. 폼과 탄소 로드, 스택은 같다고 적었습니다. 한국가는 일반판 599,000원보다 20만원 높은 799,000원입니다.' },
-      { question: '아디오스 새티스파이는 어떤 신발인가요?', answer: '새티스파이 공식 설명으로 Adios 9을 고쳐 트랙 훈련과 10K까지 쓰도록 만든 신발입니다. 탄소 로드 없이 Lightstrike Pro 미드솔과 나일론 섕크를 쓰고 무게는 172g(US 9)입니다. 한국가는 369,000원으로 아디오스 9 일반판 169,000원보다 20만원 높습니다.' },
-      { question: '에보 3와 고민된다면요?', answer: '기록이 목적이면 에보 3를 먼저 보는 편이 맞습니다. 11월 2일 아디다스 앱 발매로 공식몰 표기 599,000원이고 무게는 97g(US M9)입니다. 다만 토박스가 65.9mm로 좁은 편이고 밑창 고무를 크게 줄인 신발이라, 밑창 전체에 고무를 두른 새티스파이 에보 2와 성격이 다릅니다.' },
+      {
+        "question": "한국 가격과 지금 구매 가능 여부는요?",
+        "answer": "공식 상품 안내 표시가격은 799,000원입니다. 현재 선택 가능한 사이즈·결제 재고와 정확한 한국 드로우 시간은 미확인입니다."
+      },
+      {
+        "question": "일반 에보 2와 무게·그립이 같나요?",
+        "answer": "정확 협업판은 US9 148g·밑창 전체 Continental로 공시합니다. 일반형 실측·접지·수명을 같은 결과로 전용하지 않았습니다."
+      },
+      {
+        "question": "다른 SATISFY 아디오스도 같은 모델인가요?",
+        "answer": "KH6679 아디오스와 KH6636 프로 에보 2는 다른 모델입니다. 이 글은 KH6636만 다룹니다."
+      }
     ],
     content: `
-<div class="callout warning">
-  <span class="callout-icon">⏰</span>
-  <div class="callout-body">
-    <p class="callout-title">에보 2 새티스파이 드로우는 10월 31일(토) 오전 10시 30분에 끝납니다</p>
-    <p>아디다스 CONFIRMED 앱 전용이고, 발매 달력에는 같은 날 오전 11시로 올라 있습니다(2026-10-30 확인).</p>
-  </div>
-</div>
-
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>아디다스와 러닝 브랜드 새티스파이의 2차 협업화 2종이 10월 31일 한국에 나옵니다.</strong> 마라톤용 아디오스 프로 에보 2는 799,000원, 트랙·10K용 아디오스는 369,000원입니다</li>
-    <li><strong>두 켤레 모두 일반판보다 20만원 비쌉니다.</strong> 에보 2에서 그 돈으로 달라지는 기능은 밑창 전체를 덮은 컨티넨탈 고무이고, 폼과 미드솔 속 탄소 막대는 그대로입니다</li>
-    <li><strong>기록이 목적이면 이틀 뒤를 먼저 보세요.</strong> 서브2를 만든 에보 3가 11월 2일 599,000원으로 한국 아디다스 앱에 올라 있습니다</li>
-  </ul>
-</div>
-
-<h2>가격과 구매 경로</h2>
-<table>
-  <thead><tr><th>모델</th><th>한국가</th><th>일반판</th><th>미국가</th></tr></thead>
-  <tbody>
-    <tr><td><strong>에보 2 새티스파이</strong></td><td>799,000원</td><td>599,000원</td><td>$600</td></tr>
-    <tr><td><strong>아디오스 새티스파이</strong></td><td>369,000원</td><td>169,000원</td><td>$160</td></tr>
-  </tbody>
-</table>
-<ul>
-  <li><strong>에보 2 새티스파이(KH6636):</strong> 아디오스 프로 에보 2의 협업판입니다. CONFIRMED 앱 드로우가 10월 31일 오전 10시 30분까지이고, 발매 달력의 일정은 같은 날 오전 11시입니다.</li>
-  <li><strong>아디오스 새티스파이(KH6679, 남·여):</strong> 일반판 비교 대상은 아디오스 9입니다. 아디다스에서는 CONFIRMED 앱 전용이고, 카시나에 10월 30일 기준 D-1로 등재돼 있으며, Kith Seoul은 10월 31일부터 판매한다고 안내합니다.</li>
-</ul>
-<p>일반판과의 차이, 곧 <strong>콜라보 값은 두 모델 모두 정확히 20만원</strong>입니다.</p>
-<p>한국가를 미국가로 나누면 에보 2는 달러당 약 1,332원, 아디오스는 약 2,306원입니다(환율이 아니라 단순 나눗셈입니다). 해외 판매처를 살펴볼 생각이라면 아디오스 쪽 격차가 더 큽니다. 배송비와 관세는 별도입니다.</p>
-<p>아디다스 코리아 에보 2 상품 페이지에는 "10월 23일 출시 예정"이 남아 있지만, 발매 달력과 공식 인스타그램은 10월 31일입니다. 이 글은 10월 31일을 기준으로 씁니다.</p>
-
-<h2>에보 2 새티스파이 — 콜라보 값으로 바뀌는 건 밑창입니다</h2>
-<p>SideRun에 따르면 일반판 에보 2는 전족부와 힐 옆면에 얇은 고무만 있습니다. 새티스파이판은 <strong>에보 2 최초로 밑창 전체가 컨티넨탈 고무</strong>입니다. 새티스파이 공식 페이지도 같은 내용을 적었습니다.</p>
-<p>나머지는 그대로라는 것이 SideRun의 정리입니다. 풀렝스 Lightstrike Pro Evo 폼, 힐 39mm·전족부 36mm, 드롭 3mm, 탄소를 넣은 Energy Rods 2.0, 신발 길이 60% 지점에서 올라가는 로커입니다. 새티스파이 공식 무게는 148g(US 9)이고 색상은 Silver Met 하나입니다.</p>
-<p>고무가 늘면 접지와 마모에는 유리할 가능성이 있고 무게에는 불리합니다. 일반판과의 무게 차이는 같은 기준의 측정값을 찾지 못했습니다.</p>
-
-<h2>아디오스 새티스파이 — 트랙과 10K 이하를 위한 신발</h2>
-<p>새티스파이는 이 신발을 Adios 9을 고쳐 트랙 훈련과 10K까지 쓰도록 만들었다고 설명합니다. 탄소 로드 없이 Lightstrike Pro 미드솔과 미드풋 나일론 섕크를 쓰고, 밑창은 Continental Lighttraxion GCPU입니다. 프로 라인 밖 로드화로는 처음 <a href="/shoes/adidas-adios-pro-5">아디오스 프로 5</a>의 Lightlock 2.0 어퍼와 톱니 신발끈을 달았습니다.</p>
-<p>공식 무게는 172g(US 9), 색상은 Tech Earth와 Easy Blue입니다. 두꺼운 폼과 로드가 없는 쪽이라 풀코스 쿠션을 기대하고 고를 신발은 아닙니다. 힐 플랩 아래에 STAY POSSESSED 문구가 들어갑니다.</p>
-
-<h2>이틀 뒤 에보 3까지 놓고 고르면</h2>
-<table>
-  <thead><tr><th>항목</th><th>에보 2 새티스파이</th><th><a href="/blog/2026-adidas-adios-pro-evo-3-korea-release">에보 3</a></th></tr></thead>
-  <tbody>
-    <tr><td>한국가</td><td>799,000원</td><td>599,000원 (10/30 공식몰 표기)</td></tr>
-    <tr><td>무게</td><td>148g (US 9)</td><td>97g (US M9)</td></tr>
-    <tr><td>구조</td><td>Energy Rods 2.0</td><td>EnergyRim</td></tr>
-    <tr><td>밑창</td><td>전체 컨티넨탈</td><td>전족부만 컨티넨탈, 힐 아웃솔 없음</td></tr>
-    <tr><td>판매</td><td>CONFIRMED 앱 드로우, 10/31</td><td>아디다스 앱, 11/2 오전 11시</td></tr>
-  </tbody>
-</table>
-<p>기록 장비로만 보면 더 가볍고 20만원 싼 에보 3가 먼저입니다. 다만 에보 3는 토박스가 65.9mm로 좁은 편이고 와이드가 없습니다. 새티스파이 에보 2를 고를 이유는 디자인과 밑창 전체 고무입니다. 판단 기준은 콜라보 값 20만원을 디자인에 낼지입니다.</p>
-
-<div class="callout warning">
-  <span class="callout-icon">⚠️</span>
-  <div class="callout-body">
-    <p class="callout-title">확인하지 못한 것 (2026-10-30 기준)</p>
-    <ul>
-      <li>CONFIRMED 앱 안의 드로우 규칙, 당첨 발표 시각, 결제 기한</li>
-      <li>아디오스 새티스파이의 판매 시작 시각, 한국 사이즈 구간과 수량</li>
-      <li>두 모델의 토박스 등 랩 실측 — 이 글의 스펙은 새티스파이 공식과 SideRun 표기입니다</li>
-    </ul>
-  </div>
-</div>
-
-<p><small>출처: 아디다스 코리아 <a href="https://www.adidas.co.kr/adizero-adios-pro-evo2-satisfy/KH6636.html" target="_blank" rel="noopener noreferrer">에보 2 새티스파이</a>·<a href="https://www.adidas.co.kr/adizero-adios-satisfy-m/KH6679.html" target="_blank" rel="noopener noreferrer">아디오스 새티스파이</a>·<a href="https://www.adidas.co.kr/adizero-adios-pro-evo-2/JR7259.html" target="_blank" rel="noopener noreferrer">일반판 에보 2</a> 상품 페이지와 <a href="https://www.adidas.co.kr/release-dates" target="_blank" rel="noopener noreferrer">발매 달력</a>, <a href="https://www.instagram.com/adidaskr/p/DfB89uQkUwx/" target="_blank" rel="noopener noreferrer">@adidaskr 드로우 안내</a>, <a href="https://satisfyrunning.com/pages/adidas-satisfy" target="_blank" rel="noopener noreferrer">새티스파이 공식 협업 페이지</a>, 아디다스 미국 공식몰, <a href="https://www.kasina.co.kr/discover/82071" target="_blank" rel="noopener noreferrer">카시나</a>, <a href="https://kr.kith.com/blogs/kith-footwear-news/adizero-adios-adizero-adios-pro-evo-2-satisfy" target="_blank" rel="noopener noreferrer">Kith</a>, <a href="https://www.siderun.com/blog/adidas-satisfy-collaboration" target="_blank" rel="noopener noreferrer">SideRun</a>(모두 2026-10-30 확인).</small></p>
+<p><strong>2026-11-10 원문 대조 업데이트.</strong> 제조사 공시·판매점 안내·개인 착화 의견을 구분했습니다. 자체 착화 후기는 아닙니다.</p><h2>일반 에보 2와 구분할 가장 큰 지점</h2><p>SATISFY 에보 2 KH6636은 정확 협업판 원문에서 US9 148g·39/36mm·드롭 3mm와 밑창 전체 Continental 고무를 확인했습니다. 일반 에보 2의 실측·밑창·무게를 협업판 데이터로 옮기지 않습니다.</p><p>한국 공식 상품 안내는 799,000원을 표시합니다. 다만 현재 선택 가능한 사이즈·결제 재고·정확한 한국 드로우 시간은 재확인하지 못했습니다. 지나간 응모를 지금 진행 중이라고 쓰거나 전 색상 품절이라고 정하지 않았습니다.</p><figure><img src="/images/blog/verified-adidas-satisfy-adios-pro-evo-2-20261110.webp" alt="아디다스 SATISFY 아디오스 프로 에보 2 KH6636 공식 사진" loading="lazy"/><figcaption>한국 KH6636 상품에 연결된 Silver 협업판 공식 사진. 일반 에보 2·에보 3·다른 SATISFY 아디오스와 구분합니다.</figcaption></figure><div class="table-wrap"><table><thead><tr><th scope="col">확인 항목</th><th scope="col">정확 SATISFY 협업판</th><th scope="col">출처·한계</th></tr></thead><tbody><tr><td>한국 표시가격</td><td>799,000원</td><td>공식 상품 안내. 현재 결제 가능 재고는 미확인</td></tr><tr><td>무게</td><td>148g(US9)</td><td>SATISFY 공시. 독립 계량 아님</td></tr><tr><td>스택·드롭</td><td>39/36mm ·3mm</td><td>정확 협업판 제조사 공시</td></tr><tr><td>판·폼</td><td>전장 carbon-infused EnergyRods 2.0 ·LIGHTSTRIKE PRO EVO</td><td>에보 3 ENERGYRIM과 다른 구조</td></tr><tr><td>밑창</td><td>밑창 전체 Continental 고무</td><td>일반 에보 2의 분사 고무를 바꿨다는 제조사 설명</td></tr><tr><td>정확 독립 랩·개별 착화</td><td>이번 범위에서 확보하지 못함</td><td>일반형 리뷰를 대신 붙이지 않음</td></tr></tbody></table></div><h2>고무가 달라졌다면 무엇을 확인해야 하나요?</h2><p>고무 범위와 소재의 차이는 확인할 수 있지만, 그 자체로 모든 젖은 노면에서 더 안전하거나 수명이 더 길다고 보장할 수는 없습니다. 정확 협업판의 독립 접지·마모 시험은 이번 범위에서 확보하지 못했습니다.</p><p>제조사는 좁은 핏이라고 설명하고 한국 상품은 평소 사이즈를 권장합니다. 둘 다 제조사 안내이며 자신의 앞코 길이·엄지·발등·힐 고정이 편하다는 개인 착화 근거와 구분해야 합니다.</p><h2>799,000원을 비교할 때 남겨 둘 조건</h2><p>일반형·다른 협업 모델의 한국 가격을 같은 시점·판매 조건으로 재확인하지 못해 “정확히 20만원 더 비싸다”는 비교표를 유지하지 않았습니다. 해외 표시가를 원화로 환산해 한국의 웃돈이나 가성비를 계산하지도 않습니다.</p><p>한국 상품 안내의 쿠폰 제한과 포인트 상품권 조건은 구매 시 다시 확인하세요. 표시가격·가격 정책과 현재 장바구니에 담아 결제 가능한지는 별개입니다.</p><h2>이 글에서 다루는 정확 범위</h2><p>KH6636 SATISFY 에보 2를 다룹니다. KH6679 아디오스 협업판은 다른 모델이며, 이 글의 무게·폼·스택을 적용하지 않습니다. 한국 과거 드로우·발매 시각과 현재 재고를 확인하지 못한 항목은 일정표에서 단정하지 않았습니다.</p><h2>확인한 원문</h2><ul><li><a href="https://www.adidas.co.kr/adizero-adios-pro-evo2-satisfy/KH6636.html" target="_blank" rel="noopener noreferrer">아디다스 한국 정확 KH6636</a> — 표시가격 799,000원과 상품별 구매 조건. 현재 재고는 미확인.</li><li><a href="https://satisfyrunning.com/products/adizero-adios-pro-evo-2-silver-met" target="_blank" rel="noopener noreferrer">SATISFY 정확 협업판 상품</a> — US9 공시 무게·스택·EnergyRods·밑창·제조사 핏 설명.</li><li><a href="https://satisfyrunning.com/pages/adidas-satisfy" target="_blank" rel="noopener noreferrer">SATISFY 아디다스 협업 안내</a> — 일반형과 협업판의 변경 설명.</li><li><a href="https://www.adidas.co.kr/release-dates" target="_blank" rel="noopener noreferrer">아디다스 한국 발매 달력</a> — 현재 확인 범위. 과거 한국 출시·드로우 시각을 재확인한 근거는 아님.</li></ul>
 `,
+    updatedAt: "2026-11-10",
   },
   {
     id: 'jeju-10km-marathon',

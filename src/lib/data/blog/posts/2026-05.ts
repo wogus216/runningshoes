@@ -8696,205 +8696,38 @@ export const posts_2026_05: BlogPost[] = [
   {
     id: "2026-adidas-adios-pro-evo-3-korea-release",
     slug: "2026-adidas-adios-pro-evo-3-korea-release",
-    title: "아디다스 아디오스 프로 에보 3 한국 발매 11월 2일 | 599,000원·앱 전용, 97g 서브2 신발",
-    description: "런던 마라톤에서 공인 첫 서브2(1:59:30)를 만든 신발이 11월 2일(월) 오전 11시 한국 아디다스 앱에서 나옵니다. 공식몰 표기 599,000원, 미국 $500입니다. 97g 구조와 사도 되는 사람, 구매 전 확인할 점을 정리했습니다.",
-    thumbnail: "/images/blog/2026-adidas-adios-pro-evo-3-korea-release.webp",
+    title: "아디오스 프로 에보 3 — 97g 공시·99g 검체, 한국 구매 조건 확인",
+    description: "한국 가격·발매 시각의 확인 범위를 다시 정리했습니다. ENERGYRIM과 공식·독립 검체의 무게·스택 차이, 좁은 앞코와 힐 전환을 구분합니다.",
+    thumbnail: "/images/blog/verified-adidas-adios-pro-evo-3-20261110.webp",
     author: "산초 에디터",
     publishedAt: "2026-05-02",
-    updatedAt: "2026-10-30",
+    updatedAt: "2026-11-10",
     category: "news",
-    readingTime: 8,
+    readingTime: 6,
     tags: [
       "아디다스",
       "아디오스 프로 에보 3",
-      "에보 3 발매",
-      "카본화",
-      "슈퍼슈즈",
-      "서브2",
-      "런던마라톤",
-      "세계신기록"
+      "ENERGYRIM",
+      "한국 구매",
+      "핏"
     ],
     content: `
-<div class="callout warning">
-  <span class="callout-icon">⚠️</span>
-  <div class="callout-body">
-    <p class="callout-title">한국 발매 11월 2일(월) 오전 11시 — 아디다스 앱 전용</p>
-    <p>아디다스 코리아 공식몰 상품 페이지와 발매 달력에 <strong>599,000원, 11월 2일 오전 11시 출시 예정</strong>으로 올라 있습니다(품번 KH7678, 2026-10-30 확인). 아디다스 앱에서만 살 수 있고 할인 쿠폰·바우처는 적용되지 않습니다. 선착순인지 드로우인지는 상품 페이지에 적혀 있지 않습니다.</p>
-  </div>
-</div>
-
-<h2>일단 무슨 일이 있었나 — 4월 26일 런던</h2>
-
-<p>2026년 4월 26일 런던 마라톤. 케냐의 사바스티안 사웨가 <strong>1시간 59분 30초</strong>로 결승선을 끊었습니다. 인류 사상 <strong>공인 레이스 첫 서브2</strong>이자 마라톤 세계신기록. 2위 요미프 케젤차(에티오피아)도 1:59:41로 서브2를 달성했습니다. 두 명이 같은 레이스에서 2시간 벽을 깬 첫 사례입니다.</p>
-
-<p>그리고 둘 다 같은 신발을 신었습니다. <strong>아디다스 아디제로 아디오스 프로 에보 3 (Adizero Adios Pro Evo 3)</strong>. 이 글에서는 그 신발이 정확히 무엇인지, 한국에서 어떻게 살 수 있는지, 그리고 정말 살 만한 신발인지 정리합니다.</p>
-
-<h2>599,000원을 어떻게 읽을까</h2>
-
-<p>이 글은 5월에 한국 정가를 74만원 이상으로 추정했습니다. 틀린 추정이었습니다. 공식몰 표기는 <strong>599,000원</strong>으로, 일반판 에보 2의 한국가 599,000원과 같습니다.</p>
-
-<p>구매 직전에 한 번 더 확인하세요. 미국 공식몰 가격 $500으로 나누면 달러당 약 1,198원인데, 이틀 먼저 나오는 <a href="/blog/adidas-satisfy-adios-pro-evo-2-korea-2026">에보 2 새티스파이</a>는 $600에 799,000원으로 약 1,332원입니다(환율이 아니라 단순 나눗셈입니다). 신모델 가격이 구모델과 같아서, 발매 전에 표기가 바뀔 가능성을 배제하지 못합니다. <strong>결제 화면의 최종 금액</strong>을 기준으로 판단하세요. 5월 래플의 실제 판매가는 확인하지 못했습니다.</p>
-
-<h2>한 눈에 보는 에보 3</h2>
-
-<table>
-  <thead>
-    <tr><th>항목</th><th>내용</th></tr>
-  </thead>
-  <tbody>
-    <tr><td><strong>공식명</strong></td><td>Adidas Adizero Adios Pro Evo 3</td></tr>
-    <tr><td><strong>글로벌 출시</strong></td><td>2026년 4월 25일 (런던 마라톤 전날 한정 출시)</td></tr>
-    <tr><td><strong>한국 출시</strong></td><td>5월 앱 래플(5/4 응모·5/7 발표) → <strong>11월 2일(월) 오전 11시 아디다스 앱 발매</strong></td></tr>
-    <tr><td><strong>글로벌 정가</strong></td><td>$500 / €500</td></tr>
-    <tr><td><strong>한국 정가</strong></td><td><strong>599,000원</strong> (2026-10-30 공식몰 표기, 일반판 에보 2와 같은 가격)</td></tr>
-    <tr><td><strong>품번·컬러</strong></td><td>KH7678 · White</td></tr>
-    <tr><td><strong>무게</strong></td><td><strong>97g (US M9)</strong> — 업계 최초 서브-100g 마라톤 레이서</td></tr>
-    <tr><td><strong>스택</strong></td><td>힐 39mm / 전족부 36mm (World Athletics 40mm 규제 이내)</td></tr>
-    <tr><td><strong>드롭</strong></td><td>3mm (실측 5.9mm)</td></tr>
-    <tr><td><strong>예상 마일리지</strong></td><td>약 100km — 1~2회 레이스용 소모품</td></tr>
-  </tbody>
-</table>
-
-<h2>97g가 어떻게 가능했나 — 카본 플레이트를 버린 신발</h2>
-
-<p>지난 몇 년 슈퍼슈즈 경쟁의 핵심은 "더 두꺼운 폼 + 더 단단한 카본 플레이트"였습니다. 그런데 이 조합은 무게의 한계가 있었어요. Vaporfly 4도 166g, Alphafly 3는 201g입니다(둘 다 RunRepeat 절단 실측).</p>
-
-<p>아디다스가 에보 3에서 한 일은 <strong>카본 플레이트를 통째로 버린 것</strong>입니다.</p>
-
-<ul>
-  <li><strong>EnergyRim:</strong> 전통 카본 플레이트나 Energy Rods(에보 1·2의 5개 카본 로드) 대신, U자형 외부 림(perimeter)이 신발 둘레를 따라 강성을 잡아줍니다. 전족부에는 외부 블레이드 2개만 추가.</li>
-  <li><strong>Lightstrike Pro EVO:</strong> 신규 폼. 기존 Lightstrike Pro 대비 50% 경량, 에너지 리턴 11% 향상.</li>
-  <li><strong>힐 아웃솔 제거:</strong> 가벼움을 위한 극단적 선택. 전족부에만 Continental 러버 유지.</li>
-  <li><strong>새로운 어퍼:</strong> 카이트서핑 세일 소재에서 영감받은 초경량 직조.</li>
-</ul>
-
-<p>결과는 97g + 에너지 리턴 80.2%(전족부, RunRepeat 실측). 무게는 절반인데 에너지 리턴은 오히려 상위권입니다.</p>
-
-<h2>한국에서 어떻게 사나 — 11월 2일 아디다스 앱</h2>
-
-<table>
-  <thead>
-    <tr><th>경로</th><th>현실성</th></tr>
-  </thead>
-  <tbody>
-    <tr><td><strong>① 아디다스 앱 (11/2 오전 11시)</strong></td><td>공식 경로, 599,000원. 쿠폰·바우처 제외. 판매 방식과 수량은 미공개</td></tr>
-    <tr><td><strong>② 해외 직구 (adidas.com)</strong></td><td>미국 공식몰에 $500 표기(10/30 확인). 재고와 한국 배송 여부는 확인하지 못했고 관세·배송비가 더해집니다</td></tr>
-    <tr><td><strong>③ 리셀 (KREAM, StockX)</strong></td><td>출시 초 해외 리셀가 4,000달러+ 보고됨. 공식 발매 전에 웃돈을 주고 살 이유가 적습니다</td></tr>
-  </tbody>
-</table>
-
-<div class="callout info">
-  <span class="callout-icon">ℹ️</span>
-  <div class="callout-body">
-    <p class="callout-title">발매 전 체크</p>
-    <p>① 아디다스 앱 설치·로그인 ② 결제 수단(카드)과 배송 주소 등록 ③ 사이즈 결정 — 토박스가 65.9mm로 좁은 편이고 와이드 옵션이 없습니다 ④ 오전 11시 전에 앱에서 상품 페이지를 열어 두기.</p>
-  </div>
-</div>
-
-<h2>그래서 살 만한가 — 한국 러너 관점 냉정한 평가</h2>
-
-<h3>✅ 사도 되는 사람</h3>
-
-<ul>
-  <li><strong>서브2:30~서브3:00 페이스 마라토너</strong> — 한 번의 레이스에 모든 걸 거는 경우</li>
-  <li><strong>이미 훈련용 신발 따로 보유한 러너</strong> (예: <a href="/shoes/adidas-adios-pro-4">아디오스 프로 4</a>를 일상으로 신고 에보 3를 레이스 전용으로)</li>
-  <li><strong>주요 목표 대회를 위해 59만 9,000원 투자가 부담스럽지 않은 러너</strong> — 춘천·서울·JTBC 같은 1년 한 번의 메이저 PB 도전</li>
-  <li><strong>"세계신기록 신발"의 상징성을 원하는 컬렉터</strong></li>
-</ul>
-
-<h3>❌ 안 사도 되는 (사실 사면 안 되는) 사람</h3>
-
-<ul>
-  <li><strong>서브4 이상 페이스 러너</strong> — 4시간 넘게 신발이 버텨주지 않을 가능성. 마지막 10km 발 통증 위험</li>
-  <li><strong>발볼 넓은 한국 러너</strong> — 토박스 폭이 <strong>65.9mm</strong>로 좁음(narrow) 분류. 와이드 옵션 없음. 풀코스 후반 새끼발가락 통증 거의 확실</li>
-  <li><strong>훈련화 겸용을 원하는 러너</strong> — 마일리지 100km면 한 달이면 끝. km당 약 6,000원의 소모품</li>
-  <li><strong>처음 카본화를 경험하는 러너</strong> — 드롭 3mm + 극강 로커가 아킬레스/종아리 부하 증가시킴. <a href="/shoes/saucony-endorphin-pro-4">엔돌핀 프로 4</a>나 <a href="/shoes/asics-magic-speed-4">매직 스피드 4</a>로 카본 적응 후 도전 권장</li>
-</ul>
-
-<div class="callout warning">
-  <span class="callout-icon">⚠️</span>
-  <div class="callout-body">
-    <p class="callout-title">비교 가격·개인 기록 단정 부분 정정</p>
-    <p>2026-11-09 확인한 베이퍼플라이 4 한국 상품은 남성 IM8203-001 정가 319,000원·여성 HF6412-102 정가 309,000원입니다. 서로 다른 상품의 가격을 하나로 묶은 비교와 개인의 분당 기록 차이·보편 수명 비율은 철회했습니다. 에보 3를 포함한 이 글 나머지 내용은 별도 재검증이 남아 있습니다.</p>
-  </div>
-</div>
-
-<h2>다른 슈퍼슈즈와 비교</h2>
-
-<table>
-  <thead>
-    <tr><th>모델</th><th>무게</th><th>한국가</th><th>마일리지</th><th>특징</th></tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>에보 3</strong></td>
-      <td>97g</td>
-      <td>599,000원</td>
-      <td>~100km</td>
-      <td>업계 최경량, 1~2회 레이스용</td>
-    </tr>
-    <tr>
-      <td><a href="/shoes/nike-vaporfly-4">Vaporfly 4</a></td>
-      <td>166g</td>
-      <td>309,000원</td>
-      <td>~400km</td>
-      <td>대중적 PB 도전 표준</td>
-    </tr>
-    <tr>
-      <td><a href="/shoes/nike-alphafly-3">Alphafly 3</a></td>
-      <td>201g</td>
-      <td>339,000원</td>
-      <td>~500km</td>
-      <td>쿠션·안정성 우위, 풀코스 후반 강함</td>
-    </tr>
-    <tr>
-      <td><a href="/shoes/asics-metaspeed-sky-plus">메타스피드 스카이+</a></td>
-      <td>205g</td>
-      <td>329,000원</td>
-      <td>~400km</td>
-      <td>가성비 슈퍼슈즈, 한국 인기 모델</td>
-    </tr>
-    <tr>
-      <td><a href="/shoes/saucony-endorphin-elite-2">엔돌핀 엘리트 2</a></td>
-      <td>197g</td>
-      <td>339,000원</td>
-      <td>~500km</td>
-      <td>토박스 넓음, 한국 발에 유리</td>
-    </tr>
-  </tbody>
-</table>
-
-<h2>전작 에보 1·2 흐름 정리</h2>
-
-<ul>
-  <li><strong>에보 1 (2024):</strong> 약 138g. Energy Rods 2.0 + Lightstrike Pro. $500 한정 발매로 "1회용 슈퍼슈즈" 카테고리 개척</li>
-  <li><strong>에보 2 (2025):</strong> 약 139g. 에너지 리턴 5% 향상, 전족부 스택 3mm 증가. 미세 개선에 그쳤다는 평가</li>
-  <li><strong>에보 3 (2026):</strong> <strong>97g + EnergyRim 구조</strong>. 카본 플레이트를 버리는 근본적 구조 변경. 결과 → 런던 세계신기록</li>
-</ul>
-
-<p>한 가지 흥미로운 점: 아디다스 자체 발표로 에보 3는 에보 2 대비 러닝 효율 1.6% 향상. 마라톤 풀코스에서 1.6%는 약 <strong>2분 차이</strong>입니다. 사웨가 1:59:30으로 끊은 게 우연이 아니라는 얘기죠.</p>
-
-<h2>요약 — 사야 하나, 말아야 하나</h2>
-
-<p>저는 산초 에디터로서 두 가지 결론으로 정리합니다.</p>
-
-<ol>
-  <li><strong>살 생각이면 11월 2일 오전 11시 전에 앱을 준비하세요.</strong> 판매 방식이 공개되지 않았으니 시각에 맞춰 상품 페이지를 먼저 확인하는 편이 안전합니다.</li>
-  <li><strong>다음 목표 대회가 중요한 PB 도전 + 서브3:30 페이스 + 발볼 표준</strong>이면 진지하게 고려할 가치가 있습니다. 그 외에는 <a href="/best/racing">기존 카본화</a>로 충분합니다.</li>
-</ol>
-
-<p>본인의 발볼·체중·페이스에 맞는 카본화 선택이 막막하다면 <a href="/recommend">1분 러닝화 추천</a>을 활용해 후보를 좁혀보세요.</p>
-
-<div class="callout success">
-  <span class="callout-icon">🏃</span>
-  <div class="callout-body">
-    <p class="callout-title">같은 주에 나오는 다른 아디다스 레이서</p>
-    <p>10월 31일에는 에보 2 새티스파이가 799,000원에 나옵니다. 에보 3와 놓고 무엇이 다른지는 <a href="/blog/adidas-satisfy-adios-pro-evo-2-korea-2026">새티스파이 협업 정리 글</a>에서 비교했습니다.</p>
-  </div>
-</div>
-
-<p><small>출처: 아디다스 코리아 공식몰 상품 페이지·발매 달력, 아디다스 미국 공식몰(2026-10-30 확인) / 아디다스 공식 보도자료 / World Athletics / Road Trail Run / RunRepeat / The Run Testers / GQ Korea / 한국경제 / WWD / 최초 작성 2026년 5월 2일, 2026년 10월 30일 갱신 / 다른 신발의 무게·가격은 이 사이트 신발 DB 기준입니다. 한국 가격과 발매 시각은 아디다스 코리아 표기에 따라 바뀔 수 있습니다.</small></p>
+<p><strong>2026-11-10 원문 대조 업데이트.</strong> 제조사 공시·판매점 안내·개인 착화 의견을 구분했습니다. 자체 착화 후기는 아닙니다.</p><h2>가벼움과 구매 조건을 따로 보기</h2><p>에보 3는 제조사가 UK8.5 검체 평균 97g으로 발표한 모델입니다. RunRepeat의 별도 검체는 99g입니다. 두 숫자를 같은 한국 규격 한 켤레의 오차라고 해석하거나 모든 구매 규격이 100g 미만이라고 단정하지 않습니다.</p><p>한국 캠페인은 에보 3와 KH7678 구매 연결을 확인할 수 있지만, 이번 원문 대조에서는 한국 가격 599,000원과 11월 2일 실제 판매 시각을 다시 확인하지 못했습니다. 과거 출시 예정 안내를 지금 구매 가능하다는 설명으로 유지하지 않았습니다.</p><figure><img src="/images/blog/verified-adidas-adios-pro-evo-3-20261110.webp" alt="아디다스 아디오스 프로 에보 3 공식 발표 사진" loading="lazy"/><figcaption>2026년 4월 23일 제조사 에보 3 발표 사진. 한국 판매 규격·RunRepeat 검체와 동일한 한 켤레라는 뜻은 아닙니다.</figcaption></figure><div class="table-wrap"><table><thead><tr><th scope="col">항목</th><th scope="col">제조사 발표</th><th scope="col">RunRepeat 별도 검체</th></tr></thead><tbody><tr><td>무게</td><td>97g ·UK8.5 검체 평균</td><td>99g ·개별 라벨·폭 미확인</td></tr><tr><td>스택·드롭</td><td>4/23 발표 39/36mm ·3mm</td><td>38.1/32.2mm ·5.9mm</td></tr><tr><td>보강 구조</td><td>탄소 일체형 주변 ENERGYRIM</td><td>U형 ENERGYRIM 절개 설명</td></tr><tr><td>폼</td><td>LIGHTSTRIKE PRO EVO</td><td>같은 상표명과 개인 주행감은 별도</td></tr><tr><td>내부 최광폭/엄지/높이</td><td>치수 미확인</td><td>89.3/65.9/29.9mm</td></tr></tbody></table></div><h2>에너지로드와 같은 판으로 묶지 않기</h2><p>에보 3의 ENERGYRIM은 신발 주변을 따라가는 보강 구조입니다. 기존 EnergyRods나 일반 중앙 전장 플레이트와 같은 형태라고 쓰지 않았습니다. 정확 구조의 전환이 자신에게 맞는지는 무게나 카본 유무 하나로 정할 수 없습니다.</p><p>제조사 발표의 전작 대비 리턴 11%·러닝 이코노미 1.6% 개선은 상대 비교 주장입니다. RunRepeat의 절대 리턴이나 개인 마라톤 기록 개선율로 바꾸지 않습니다. 전체 신발 경량화와 폼 자체 경량화도 다른 수치입니다.</p><h2>발볼보다 좁아지는 앞코와 힐 전환까지 확인</h2><p>RunRepeat는 좁은 핏·부드러운 폼·강한 롤링, 힐 착지에서 불안정하게 느낀 점을 적었습니다. 내부 최광폭 89.3mm와 엄지 부위 65.9mm는 측정 위치가 다르고 한국 다른 규격의 치수도 아닙니다.</p><p>DOR 구매 가이드와 RTR 소개·분석은 구조 설명에 참고했지만, 정확 모델을 실제로 달려 본 개인 후기처럼 소개하지 않았습니다. 초기 국소 마모 시험을 모든 러너의 수명이나 km당 비용으로 환산하지도 않습니다.</p><h2>공식 발표끼리 다른 스택은 그대로 남기기</h2><p>4월 23일 제품 발표는 39/36mm·3mm, 4월 26일 런던 후속 발표는 39/33mm·6mm를 표기합니다. 어느 쪽을 오탈자나 이전 세대라고 확인한 근거는 없어 차이를 남겼습니다. RunRepeat의 38.1/32.2mm·5.9mm도 별도 검체 실측입니다.</p><p>구매 전에는 한국 정확 상품의 가격·폭·반품 조건과 실제 선택 가능한 사이즈를 확인해야 합니다. 현재 발매 달력에서 과거 카드가 안 보인다는 사실로 미출시·단종·전국 품절을 판정하지 않았습니다.</p><h2>확인한 원문</h2><ul><li><a href="https://news.adidas.com/home-of-innovation/running/adidas-unveils-its-first-sub-100-gram-supershoe--the-adizero-adios-pro-evo-3/s/ded7b6a2-952a-4246-b675-4129f78787c4" target="_blank" rel="noopener noreferrer">아디다스 4월 23일 제품 발표</a> — UK8.5 평균 무게·ENERGYRIM·공시 조건.</li><li><a href="https://news.adidas.com/running/two-adidas-athletes-sabastian-sawe-and-yomif-kejelcha-break-the-sub-2-hour-marathon-barrier-in-the-r/s/d4be4eac-a3b8-47d5-835f-9cbd685638ca" target="_blank" rel="noopener noreferrer">아디다스 4월 26일 후속 발표</a> — 39/33mm·6mm 표기를 앞선 발표와 구분.</li><li><a href="https://runrepeat.com/adidas-adizero-adios-pro-evo-3" target="_blank" rel="noopener noreferrer">RunRepeat 정확 에보 3</a> — 독립 검체 99g·절개 치수·내부 치수. 한국 규격으로 전용하지 않음.</li><li><a href="https://www.adidas.co.kr/go/campaign/faster-fastest-adizero" target="_blank" rel="noopener noreferrer">아디다스 한국 캠페인</a> — 정확 모델 구매 연결. 현재 가격·재고 확인은 아님.</li><li><a href="https://www.roadtrailrun.com/2026/04/adidas-adizero-adios-pro-evo-3.html" target="_blank" rel="noopener noreferrer">Road Trail Run 소개·분석</a> — 브리핑 기반 분석. 개인 실착 시험으로 소개하지 않음.</li><li><a href="https://www.doctorsofrunning.com/best-adidas-running-shoes-buyers-guide/" target="_blank" rel="noopener noreferrer">Doctors of Running 아디다스 가이드</a> — 구조 요약. 정확 모델 개별 착화 후기는 아님.</li></ul>
 `,
+    faqs: [
+      {
+        "question": "한국 가격이 599,000원인가요?",
+        "answer": "과거 안내에 있던 가격을 이번 정확 한국 상품 원문에서 재확인하지 못했습니다. 현재 결제 가격·판매 방식·재고는 미확인입니다."
+      },
+      {
+        "question": "97g인가요 99g인가요?",
+        "answer": "제조사는 UK8.5 검체 평균 97g, RunRepeat 별도 검체는 99g입니다. 같은 규격의 한 켤레를 두 번 잰 값으로 합치지 않습니다."
+      },
+      {
+        "question": "리턴 11% 개선이면 기록도 그만큼 좋아지나요?",
+        "answer": "제조사 상대 비교와 개인 기록은 다른 결과입니다. 공개 독립 시험의 동일 조건으로 확인한 개선율이 아닙니다."
+      }
+    ],
   },
   {
     id: '2026-chuncheon-marathon-registration-guide',
