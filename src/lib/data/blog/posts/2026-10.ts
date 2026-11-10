@@ -212,79 +212,40 @@ export const posts_2026_10: BlogPost[] = [
     updatedAt: "2026-11-10",
   },
   {
-    id: 'puma-foreverrun-nitro-3-review-korea-price',
-    slug: 'puma-foreverrun-nitro-3-review-korea-price',
-    title: '푸마 포에버런 나이트로 3 한국 가격 199,000원 | 와이드 따로 있는 안정 데일리 — 첫 리뷰 정리',
-    description: '푸마 포에버런 나이트로 3는 한국 공식몰에서 199,000원에 판매 중이고 남녀 와이드가 별도 상품으로 올라 있습니다(2026-10-30 확인). Doctors of Running 첫 리뷰(10월 26일)의 스택 40/32mm·드롭 8mm·약 238~280g 기준 무게, 가이드 구조와 "전작보다 무겁다"는 단점을 정리했습니다.',
-    thumbnail: '/images/blog/puma-foreverrun-nitro-3-review-korea-price.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-10-30',
-    category: 'news' as const,
-    readingTime: 4,
-    tags: ['포에버런 나이트로 3', '푸마 포에버런', '푸마 신상', '안정화 러닝화', '와이드 러닝화', '가벼운 안정화', '푸마 코리아'],
+    id: "puma-foreverrun-nitro-3-review-korea-price",
+    slug: "puma-foreverrun-nitro-3-review-korea-price",
+    title: "포에버런 나이트로 3 — 한국 정가·할인 표시·와이드와 앞코 볼륨 확인",
+    description: "한국 남녀 기본·Wide 네 상품의 정가 199,000원과 확인 당시 159,200원 표시를 구분했습니다. 제조사 무게·스택과 Matt의 실제 착화 조건을 정리합니다.",
+    thumbnail: "/images/blog/verified-puma-foreverrun-nitro-3-20261110.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-10-30",
+    category: "news",
+    readingTime: 6,
+    tags: [
+      "푸마",
+      "포에버런 나이트로 3",
+      "와이드",
+      "한국 가격",
+      "핏"
+    ],
     faqs: [
-      { question: '포에버런 나이트로 3 한국 가격은 얼마인가요?', answer: '푸마 코리아 공식몰에서 남녀 모두 199,000원이고 와이드 상품도 같은 199,000원입니다(2026-10-30 검색 결과 확인). 일부 색상은 온라인 단독으로 표기돼 있습니다. 출시일은 공식몰에서 확인하지 못했습니다.' },
-      { question: '와이드 버전이 있나요?', answer: '있습니다. 푸마 코리아 공식몰 검색 결과에 "포에버런 나이트로 3 와이드"가 남성·여성 각각 별도 상품으로 올라 있습니다. 와이드의 실제 폭 수치는 확인하지 못했습니다.' },
-      { question: '어떤 러너에게 맞나요?', answer: 'Doctors of Running은 가이던스형 마일드 안정 데일리 트레이닝화로 분류했습니다. 신발 전체에 중심을 잡아 주는 유도가 있지만 강하지 않고, 앞발이 넓고 볼륨이 낮은 어퍼라 보통~약간 넓은 발에 맞는다고 했습니다. 단점은 안쪽 엄지발가락 쪽 약한 쓸림과 이전 모델보다 무거워진 점입니다.' },
-      { question: '발볼 넓은 러너는 와이드를 사야 하나요?', answer: '리뷰어는 표준 폭이 보통~약간 넓은 발에 맞는다고 했습니다. 발볼이 확실히 넓다면 와이드가 별도로 있으니 매장에서 두 폭을 비교하는 편이 안전합니다. 한국 러너의 발볼에 대한 리뷰어 평가는 없습니다.' },
+      {
+        "question": "한국 가격이 199,000원인가요?",
+        "answer": "확인한 네 상품의 정가는 199,000원이며 2026-11-10에는 159,200원 인하 표시도 함께 있었습니다. 현재 가격·결제 재고는 다시 확인하세요."
+      },
+      {
+        "question": "와이드가 있나요?",
+        "answer": "한국 남성 313702_01·여성 313703_01 Wide 상품을 확인했습니다. 숫자 폭·현재 사이즈별 재고는 별도 확인이 필요합니다."
+      },
+      {
+        "question": "발볼이 넓으면 편한가요?",
+        "answer": "Matt는 앞발 여유와 낮은 볼륨·안쪽 앞코 쓸림을 함께 적었습니다. 구매 규격의 폭·높이·힐 고정을 실제로 비교하는 편이 좋습니다."
+      }
     ],
     content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>한국 공식몰에서 199,000원에 판매 중입니다.</strong> 푸마 코리아 검색에서 남성·여성 표준 폭과 와이드가 따로 올라 있고(10월 30일 확인), 출시일은 확인되지 않습니다</li>
-    <li><strong>"가이던스형 마일드 안정 데일리"입니다.</strong> Doctors of Running(10월 26일)은 스택 40/32mm·드롭 8mm, 2겹 나이트로 폼과 넓은 바닥·힐 클립으로 중심을 잡아 주되 강하게 밀지 않는 구조로 봤습니다</li>
-    <li><strong>단점은 무게와 쓸림입니다.</strong> 이전 모델보다 무거워졌고 안쪽 엄지발가락 쪽에서 약한 쓸림이 있었으며, 폼의 반발은 푸마 다른 트레이너만큼 통통하지 않다고 적었습니다</li>
-  </ul>
-</div>
-
-<h2>한국 판매 — 확인한 것과 못 한 것</h2>
-<p>2026년 10월 30일 푸마 코리아 공식몰에서 "포에버런"을 검색하면 포에버런 나이트로 3가 남성·여성 표준 폭과 와이드로 나뉘어 나옵니다. 가격은 전부 199,000원이고, 남성 일부 색상은 온라인 단독으로 표기돼 있습니다. 같은 검색에서 포에버런 나이트로 2 와이드는 139,300원(30% 할인)으로 올라 있어 이전 세대가 정리되는 중으로 보입니다(추정).</p>
-<p>출시일과 와이드의 폭 수치는 공식몰 검색 결과에서 확인하지 못했습니다.</p>
-
-<h2>리뷰에서 확인되는 것</h2>
-
-<div class="table-wrap">
-<table>
-  <thead><tr><th>항목</th><th>포에버런 나이트로 3 (Doctors of Running)</th></tr></thead>
-  <tbody>
-    <tr><td>분류</td><td>가이던스형 마일드 안정 데일리 트레이닝화</td></tr>
-    <tr><td>무게</td><td>남성 US 9 9.9oz(약 281g, 비교란에는 9.7oz) · 여성 US 8 8.4oz(238g)</td></tr>
-    <tr><td>스택·드롭</td><td>힐 40mm / 포어풋 32mm · 드롭 8mm</td></tr>
-    <tr><td>미드솔</td><td>전 구간 나이트로 폼, 2겹(안쪽은 부드럽고 바깥쪽은 단단) · 넓은 바닥과 힐 클립으로 구성된 런 가이드 시스템</td></tr>
-    <tr><td>핏</td><td>정사이즈, 앞발은 넓고 볼륨이 낮음, 힐은 보통 폭. 보통~약간 넓은 발에 맞음</td></tr>
-    <tr><td>미국 가격</td><td>$149.95 (Running Warehouse)</td></tr>
-  </tbody>
-</table>
-</div>
-
-<p>안정성은 신발 전체에 걸친 "중심은 잡되 강하지 않은" 유도입니다. 힐은 중간 정도의 안정 요구에도 맞을 수 있지만 미드풋과 포어풋은 약한 안정 요구에 맞는다고 했습니다. 등급은 핏 A-, 퍼포먼스 B+, 안정성 A-, 가치 A-, 본인 적합도 A-, 디자인 A-입니다.</p>
-
-<div class="callout warning">
-  <span class="callout-icon">⚠️</span>
-  <div class="callout-body">
-    <p class="callout-title">리뷰 안에서도 엇갈리는 것</p>
-    <ul>
-      <li>리뷰는 장점으로 "통통한 미드솔"을 꼽지만 본문에서는 폼이 다른 푸마 트레이너의 나이트로 폼만큼 통통하지는 않다고 적습니다</li>
-      <li>무게는 9.9oz와 9.7oz가 한 페이지에 함께 있고, 자체 측정인지 표기인지는 밝혀져 있지 않습니다</li>
-      <li>RunRepeat 랩 실측은 확인하지 못했습니다</li>
-    </ul>
-  </div>
-</div>
-
-<h2>누구에게 어울리나</h2>
-<p>중심을 잡아 주는 유도를 원하지만 단단한 안정화는 부담스러운 러너가 대상입니다. 이 사이트에 등록된 같은 푸마의 <a href="/shoes/puma-velocity-nitro-5">벨로시티 나이트로 5</a>는 중립 데일리이고, 안정 데일리 쪽은 <a href="/shoes/brooks-glycerin-gts-23">브룩스 글리세린 GTS 23</a>이 있습니다(306g으로 더 무겁습니다). 포에버런 나이트로 3는 아직 사이트 DB에 없어 랩 수치로 나란히 비교할 수는 없습니다.</p>
-
-<div class="faq">
-  <h2>자주 묻는 질문</h2>
-  <details><summary>포에버런 나이트로 3 한국 가격은 얼마인가요?</summary><p>푸마 코리아 공식몰에서 남녀 모두 199,000원, 와이드도 199,000원입니다(2026-10-30 검색 결과). 출시일은 확인하지 못했습니다.</p></details>
-  <details><summary>와이드 버전이 있나요?</summary><p>있습니다. 공식몰 검색에 남성·여성 와이드가 별도 상품으로 올라 있습니다. 폭 수치는 확인하지 못했습니다.</p></details>
-  <details><summary>어떤 러너에게 맞나요?</summary><p>가이던스형 마일드 안정 데일리로, 보통~약간 넓은 발에 맞는다고 리뷰어가 평가했습니다. 단점은 이전 모델보다 무겁고 안쪽 엄지발가락 쪽이 약간 쓸린다는 점입니다.</p></details>
-  <details><summary>발볼 넓은 러너는 와이드를 사야 하나요?</summary><p>표준 폭은 보통~약간 넓은 발에 맞는다고 했습니다. 확실히 넓다면 매장에서 두 폭을 비교하세요.</p></details>
-</div>
-
-<p><small>출처: Doctors of Running "Puma ForeverRun Nitro 3 Review (2026)"(Matt Klein, 2026-10-26, 2026-10-30 확인), 푸마 코리아 공식몰 검색 "foreverrun"(kr.puma.com, 2026-10-30 확인).</small></p>
+<p><strong>2026-11-10 원문 대조 업데이트.</strong> 제조사 공시·판매점 안내·개인 착화 의견을 구분했습니다. 자체 착화 후기는 아닙니다.</p><h2>가이던스를 원한다면, 앞코 볼륨도 함께 보기</h2><p>포에버런 나이트로 3는 이중 밀도 NITROFOAM·RUNGUIDE·TPU 힐 구조를 사용하는 데일리 모델입니다. 이 구조가 자신에게 자연스러운 굴림과 고정을 주는지 확인할 수 있습니다. 평발이나 부상 이력만으로 누구에게나 맞는 모델로 정하지는 않습니다.</p><p>DOR Matt Klein은 부드러운 전환과 고정을 좋아했지만, 안쪽 엄지 부위가 초기에 쓸렸다고 적었습니다. 앞발 폭에 여유가 느껴져도 낮은 볼륨과 앞코 테이퍼가 별도로 영향을 줄 수 있다는 구매 전 질문이 남습니다.</p><figure><img src="/images/blog/verified-puma-foreverrun-nitro-3-20261110.webp" alt="푸마 포에버런 나이트로 3 남성 312942_06" loading="lazy"/><figcaption>푸마 한국 남성 312942_06 공식 사진. 여성·Wide·DOR 착화 검체와 구분합니다.</figcaption></figure><h2>한국 가격: 정가와 확인 당시 할인 표시를 구분</h2><p>2026년 11월 10일 아래 네 공식 상품은 정가 199,000원과 159,200원의 가격 인하 표시를 함께 확인했습니다. 모든 색상·미표시 규격에 같은 가격이 적용된다는 뜻은 아니며, 결제 가능한 재고는 확인하지 않았습니다.</p><div class="table-wrap"><table><thead><tr><th scope="col">상품</th><th scope="col">품번</th><th scope="col">정가</th><th scope="col">확인 당시 표시가격</th></tr></thead><tbody><tr><td>남성 기본 상품</td><td>312942_06</td><td>199,000원</td><td>159,200원(20% 인하 표시)</td></tr><tr><td>여성 기본 상품</td><td>312943_07</td><td>199,000원</td><td>159,200원(20% 인하 표시)</td></tr><tr><td>남성 Wide</td><td>313702_01</td><td>199,000원</td><td>159,200원(20% 인하 표시)</td></tr><tr><td>여성 Wide</td><td>313703_01</td><td>199,000원</td><td>159,200원(20% 인하 표시)</td></tr></tbody></table></div><h2>270g과 DOR 무게를 같은 조건으로 비교하지 않기</h2><p>한국 공식 공시는 남성 270mm 기준 270g, 여성 235mm 기준 220g입니다. 미국 공식의 290g은 기준 사이즈가 미확인입니다. DOR 소개에는 남성 US9 9.9oz와 여성 US8 238g이 적혀 있고, 남성 g 칸은 비어 있습니다. 남성 무게를 새 g 실측처럼 환산해 채우지 않았습니다.</p><p>스택은 한국·미국 공식 38/30mm, DOR 소개 40/32mm로 다릅니다. 모두 공시·소개 조건이며 독립 랩 절개 실측으로 바꾸지 않습니다. 드롭 공시는 8mm입니다. 정확 3세대의 독립 랩 SA·리턴·내부 젤 치수는 이번 범위에서 확보하지 못했습니다.</p><h2>Matt의 착화에서 얻을 수 있는 구체적인 질문</h2><p>Matt의 실제 착화는 남성 US10/JP28입니다. 그는 정사이즈라고 느꼈으며 평소 유럽·영국 표기와 검체 라벨 표기가 달랐다고 남겼습니다. 숫자 표기만으로 한국 규격까지 자동 대응시키지 말고 구매처의 사이즈표를 확인하세요.</p><p>Matt는 중족·앞발의 낮은 볼륨과 안쪽 앞코 쓸림, 본인에게 잘 맞는 힐을 함께 설명했습니다. 90마일 사용 후 패딩 관찰은 개인의 사용 경험이며 제품 전체 수명이나 모든 러너의 아킬레스 보호 효과가 아닙니다. 리뷰 안의 긍정적인 반응성 표현도 다른 푸마 모델 대비 체감과 구분해서 읽을 수 있습니다.</p><h2>기본형·Wide를 매장에서 비교할 때</h2><p>한국 공식몰에는 남녀 Wide가 별도 품번으로 있습니다. 다만 기본 상품명에 숫자·문자 폭이 명시되지 않아 해외 Regular의 폭과 자동으로 같다고 하지 않았습니다.</p><p>평소 양말·인솔로 앞코 윗공간과 안쪽 엄지, 끈을 조일 때의 발등, 걸어서 돌 때 힐이 밀리는지 비교하세요. 앞볼이 넓다는 인상이나 안정화 분류 하나가 모든 발에 맞는다는 근거는 아닙니다.</p><h2>확인한 원문</h2><ul><li><a href="https://kr.puma.com/kr/ko/pd/foreverrun-nitro-3/312942.html?dwvar_312942_color=06" target="_blank" rel="noopener noreferrer">푸마 한국 312942_06</a> — 정가·가격 인하 표시·공시 조건 확인. 현재 결제 재고 보장 아님.</li><li><a href="https://kr.puma.com/kr/ko/pd/foreverrun-nitro-3-wns/312943.html?dwvar_312943_color=07" target="_blank" rel="noopener noreferrer">푸마 한국 312943_07</a> — 정가·가격 인하 표시·공시 조건 확인. 현재 결제 재고 보장 아님.</li><li><a href="https://kr.puma.com/kr/ko/pd/foreverrun-nitro-3-wide/313702.html" target="_blank" rel="noopener noreferrer">푸마 한국 313702_01</a> — 정가·가격 인하 표시·공시 조건 확인. 현재 결제 재고 보장 아님.</li><li><a href="https://kr.puma.com/kr/ko/pd/foreverrun-nitro-3-wide-wns/313703.html" target="_blank" rel="noopener noreferrer">푸마 한국 313703_01</a> — 정가·가격 인하 표시·공시 조건 확인. 현재 결제 재고 보장 아님.</li><li><a href="https://us.puma.com/us/en/pd/foreverrun-nitro-3-running-shoes-men/312942.html" target="_blank" rel="noopener noreferrer">푸마 미국 정확 3세대 상품</a> — 38/30mm·8mm 및 별도 무게 공시. 한국 규격과 구분.</li><li><a href="https://www.doctorsofrunning.com/puma-foreverrun-nitro-3-review/" target="_blank" rel="noopener noreferrer">Doctors of Running Matt Klein 착화</a> — 2026년 10월 26일 리뷰. 개인 착화·90마일 관찰이며 독립 랩·임상 비교가 아님.</li></ul>
 `,
+    updatedAt: "2026-11-10",
   },
   {
     id: 'hwangyoungjo-road-race',
@@ -479,99 +440,40 @@ export const posts_2026_10: BlogPost[] = [
 `,
   },
   {
-    id: 'puma-fast-rb-nitro-elite-2-not-race-legal-2026',
-    slug: 'puma-fast-rb-nitro-elite-2-not-race-legal-2026',
-    title: '푸마 FAST-RB NITRO Elite 2 | 대회에서 못 뛰는 레이싱화를 왜 만들까 — 이중 카본 플레이트·250g, 한국 공식몰엔 아직 없다',
-    description: '푸마가 10월 28일 한정 출시한 FAST-RB NITRO Elite 2는 푸마 스스로 세계육상연맹 규정에 맞지 않는다고 밝힌 신발입니다. 두 장을 붙인 카본 플레이트, 250g(UK 8), 드롭 8mm, 권장 수명 320km, 해외 정가 $350 — 1세대 스택 58mm와 무엇이 같고 다른지, 한국에서 살 수 있는지(2026-10-29 kr.puma.com 검색 결과 없음)를 공식 자료로 정리했습니다.',
-    thumbnail: '/images/blog/puma-fast-rb-nitro-elite-2-not-race-legal-2026.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-10-29',
-    category: 'news' as const,
-    readingTime: 5,
-    tags: ['푸마 FAST-RB', '푸마 나이트로 엘리트', '카본화', '레이싱화', '세계육상연맹 규정', '신상 러닝화', '이중 카본 플레이트'],
+    id: "puma-fast-rb-nitro-elite-2-not-race-legal-2026",
+    slug: "puma-fast-rb-nitro-elite-2-not-race-legal-2026",
+    title: "FAST-RB NITRO Elite 2 — 국내 출시 안내·스택 공시와 대회 규정 확인",
+    description: "온유어마크 429,000원 출시 공지와 유럽 공식 스택 47mm/55mm를 확인했습니다. 제조사의 경기 비적합 발표와 WA 규정 적용 범위, 미확인 독립 랩·현재 재고를 구분합니다.",
+    thumbnail: "/images/blog/verified-puma-fast-rb-nitro-elite-2-20261110.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-10-29",
+    category: "news",
+    readingTime: 6,
+    tags: [
+      "푸마",
+      "FAST-RB NITRO Elite 2",
+      "대회 규정",
+      "한국 출시",
+      "원문 대조"
+    ],
     content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>FAST-RB 2는 푸마가 "세계육상연맹 기준으로는 규정에 맞지 않는다"고 직접 밝힌 신발입니다.</strong> 이름의 RB는 규칙을 깬다(rule-breaking)는 뜻이고, 공인 대회에서는 신을 수 없습니다</li>
-    <li><strong>두 장의 카본 플레이트를 붙인 스프링보드 구조, 250g(UK 8 기준), 드롭 8mm, 권장 수명 약 320km.</strong> 해외 정가는 미국 $350이고 10월 28일 푸마닷컴과 일부 매장에서 한정 수량으로 풀렸습니다</li>
-    <li><strong>한국에서는 확인되지 않습니다.</strong> 10월 29일 푸마 코리아 공식몰에서 FAST-RB를 검색하면 결과가 없고, 국내 판매가·출시일을 알리는 푸마 코리아 공식 자료도 찾지 못했습니다</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">🧪</span>
-  <div class="callout-body">
-    <p class="callout-title">한 줄로 — 레이스용이 아니라 "규정 밖 신발"</p>
-    <p>이 글에서 <strong>규정 밖 신발</strong>은 성능은 겨루되 공인 대회 기록으로는 인정받지 못하는 신발을 뜻합니다. 기록을 노리는 대회 신발을 찾는다면 규정 안에서 만든 <a href="/shoes/puma-fast-r-nitro-elite-3">FAST-R NITRO Elite 3</a>나 <a href="/blog/carbon-plate-shoes-guide-2026">카본화 가이드</a>의 후보를 보는 편이 맞습니다.</p>
-  </div>
-</div>
-
-<h2>무엇이 규정을 벗어났나</h2>
-<p>세계육상연맹은 로드 레이싱화의 미드솔 두께를 40mm 이하로 제한합니다(규정 해설은 <a href="/blog/running-shoe-trends-2026-eva-replacement">슈퍼폼 트렌드 글</a> 참고). 푸마가 2024년 8월 1세대를 공개한 보도자료는 이렇게 적었습니다 — 58mm의 NITROFOAM Elite를 쓰고, 이는 규정보다 18mm 높으며, 폼 사이에 카본 플레이트(PWRPLATE) 세 장을 끼웠고, 1,000켤레만 팔았다는 것입니다.</p>
-<p>2세대는 구조를 단순하게 바꿨다고 푸마가 설명합니다. 이번에도 브랜드가 "세계육상연맹 기준으로 합법이 아니다"라고 인정했다고 영국 육상 전문지 Athletics Weekly가 전했습니다. <strong>2세대의 스택 높이는 내가 확인한 공식 자료·기사에 나와 있지 않아 불명입니다</strong> — 1세대의 58mm를 2세대에 그대로 적용할 수 없습니다.</p>
-
-<h2>스펙 — 확인된 것과 아닌 것</h2>
-<div class="table-wrap">
-<table>
-  <thead><tr><th>항목</th><th>FAST-RB NITRO Elite 2</th><th>출처</th></tr></thead>
-  <tbody>
-    <tr><td>출시</td><td>2026-10-28, 한정 수량(푸마닷컴·일부 매장)</td><td>Athletics Weekly</td></tr>
-    <tr><td>가격</td><td>미국 $350 · 유럽 €350</td><td>us.puma.com(10/29 확인) · Athletics Weekly</td></tr>
-    <tr><td>무게</td><td>250g(UK 8) / 206g(UK 4.5)</td><td>Athletics Weekly</td></tr>
-    <tr><td>드롭</td><td>8mm</td><td>Athletics Weekly</td></tr>
-    <tr><td>권장 수명</td><td>약 320km(200마일)</td><td>Athletics Weekly</td></tr>
-    <tr><td>미드솔·플레이트</td><td>NITROFOAM ELITE + 융합된 이중 카본 PWRPLATE</td><td>us.puma.com · Athletics Weekly</td></tr>
-    <tr><td>어퍼·아웃솔</td><td>ULTRAWEAVE · PUMAGRIP</td><td>Athletics Weekly</td></tr>
-    <tr><td>스택 높이</td><td><strong>불명</strong></td><td>—</td></tr>
-    <tr><td>한국 판매가·출시일</td><td><strong>불명</strong></td><td>kr.puma.com 검색 결과 없음(10/29)</td></tr>
-  </tbody>
-</table>
-</div>
-<p>무게는 사이즈 기준이 둘 적혀 있어 같은 신발의 숫자입니다. UK 8은 250g, UK 4.5는 206g으로 사이즈가 작아질수록 가벼워집니다. 다른 신발의 무게와 견줄 때는 어느 사이즈 기준인지부터 맞춰야 합니다.</p>
-
-<h2>이중 플레이트가 하는 일 — 푸마의 주장</h2>
-<p>푸마는 두 장의 카본 플레이트가 붙어 <strong>스프링보드 같은 구조</strong>를 만들고, 업데이트한 NITROFOAM ELITE가 푸마 테스트 기준 가장 높은 에너지 리턴을 냈다고 설명합니다. 푸마 혁신 담당 부사장 로맹 지라르는 "푸마 시험에서 기록한 가장 높은 에너지 리턴"이라고 말했습니다. 이 수치는 <strong>푸마 자체 시험이고 독립 랩 측정이 아닙니다.</strong> RunRepeat 같은 독립 측정이 올라오기 전에는 에너지 리턴을 다른 신발과 숫자로 견줄 수 없습니다.</p>
-<p>Athletics Weekly는 첫 달리기에서 "스프링 같은 느낌이 아주 뚜렷하고, 생김새에 비해 달리기 쉬웠다"고 적었습니다. 이 글의 근거는 그 한 줄뿐이고, 같은 기사는 제휴 링크가 포함된 글이라고 밝히고 있습니다.</p>
-
-<h2>일반 러너가 알아둘 점</h2>
-<ul>
-  <li><strong>공인 대회 기록용으로 쓸 수 없습니다.</strong> 푸마도 인정한 부분입니다. 대회 참가 규정에서 신발 제한을 두는 곳이라면 신기 전에 주최 측 규정을 확인해야 합니다</li>
-  <li><strong>수명이 짧게 잡혀 있습니다.</strong> 권장 320km는 한 시즌 내내 신는 신발보다 집중해서 쓰는 단기 신발에 가까운 길이입니다. 이 수치도 브랜드 안내를 전한 기사 기준입니다</li>
-  <li><strong>한국에서는 정식 구매 경로가 확인되지 않습니다.</strong> 1세대 때 푸마가 밝힌 판매 지역은 미국·영국·중부 유럽·북유럽·태국·일본·중국·호주였고 한국은 없었습니다. 2세대도 이번에 한국 공식 판매 발표를 찾지 못했습니다. 해외 직구나 리셀로 사면 사이즈 교환과 보증이 어렵다는 점은 일반적인 위험입니다</li>
-</ul>
-
-<div class="callout warning">
-  <span class="callout-icon">⚠️</span>
-  <div class="callout-body">
-    <p class="callout-title">확인하지 못한 것</p>
-    <p>2세대 스택 높이와 독립 랩 수치, 한국 판매 여부·가격은 확인하지 못했습니다. 푸마 코리아가 국내 판매를 발표하면 이 글을 갱신합니다.</p>
-  </div>
-</div>
-
-<div class="faq">
-  <div class="faq-item">
-    <p class="faq-q">Q. 대회에서 신어도 되나요?</p>
-    <p class="faq-a">A. 푸마가 세계육상연맹 기준으로 합법이 아니라고 밝힌 신발입니다. 공인 기록을 노리는 대회에서는 쓰지 마세요. 일반 참가 대회라도 주최 측 규정은 따로 확인해야 합니다.</p>
-  </div>
-  <div class="faq-item">
-    <p class="faq-q">Q. 초보가 신어도 되나요?</p>
-    <p class="faq-a">A. 권장 수명 320km, 정가 $350, 한정 수량이라는 점에서 입문용으로는 맞지 않습니다. 이 신발에 대한 독립 측정이 아직 없어 안정성·발볼 적합성도 판단할 근거가 없습니다.</p>
-  </div>
-  <div class="faq-item">
-    <p class="faq-q">Q. 1세대와 같은 신발인가요?</p>
-    <p class="faq-a">A. 같은 계보지만 다른 신발입니다. 1세대는 58mm 스택에 플레이트 세 장, 레이스 없는 어퍼였고 2세대는 이중 플레이트에 ULTRAWEAVE 어퍼로 바뀌었습니다. 2세대 스택은 불명이라 높이를 견줄 수 없습니다.</p>
-  </div>
-</div>
-
-<h2>확인한 출처</h2>
-<ul>
-<li><a href="https://us.puma.com/us/en/pd/fast-rb-nitro-elite-2-mens-laced-running-shoes/314984" target="_blank" rel="noopener noreferrer">PUMA US 상품 페이지</a>: 정가 $350, NITROFOAM ELITE·이중 PWRPLATE 설명(2026-10-29 확인).</li>
-<li><a href="https://athleticsweekly.com/performance/products/puma-fast-rb-nitro-elite-2-pushing-the-boundaries-of-speed-1040013786/" target="_blank" rel="noopener noreferrer">Athletics Weekly(2026-10-23)</a>: 출시일·무게·드롭·수명·"규정 밖" 인정. 제휴 링크가 포함된 기사.</li>
-<li><a href="https://about.puma.com/en/newsroom/product-and-brand-news/2024/27-08-2024-puma-unveils-rb-nitrotm-elite" target="_blank" rel="noopener noreferrer">PUMA 뉴스룸 2024-08-27</a>: 1세대 58mm·플레이트 세 장·1,000켤레·판매 지역.</li>
-<li>푸마 코리아 공식몰(kr.puma.com) 검색 "FAST-RB": 2026-10-29 결과 없음.</li>
-</ul>
+<p><strong>2026-11-10 원문 대조 업데이트.</strong> 제조사 공시·판매점 안내·개인 착화 의견을 구분했습니다. 자체 착화 후기는 아닙니다.</p><h2>기록용 대회 신발을 찾는다면 먼저 규정을 확인</h2><p>푸마는 FAST-RB NITRO Elite 2를 경기 규정에 맞지 않는 모델이라고 명시했습니다. 두 장을 융합한 PWRPLATE·NITROFOAM ELITE를 사용하는 설계와 별개로, 규정이 적용되는 로드 경기의 기록용 선택으로 소개하기 어렵습니다.</p><p>일반 참가·산악·트레일을 포함한 모든 행사에 동일한 금지가 적용된다고 확대하지는 않았습니다. 자신의 참가 부문과 대회 주최 측 규정, 기록·시상 인정 조건을 먼저 확인해야 합니다.</p><figure><img src="/images/blog/verified-puma-fast-rb-nitro-elite-2-20261110.webp" alt="푸마 FAST-RB NITRO Elite 2 314984_04" loading="lazy"/><figcaption>푸마 유럽 314984_04 공식 상품 사진. FAST-R Elite나 1세대 FAST-RB와 구분합니다.</figcaption></figure><h2>국내 구매 경로가 없다는 과거 설명을 갱신</h2><p>온유어마크 자체 출시 공지는 2026년 10월 28일 온라인 오전 10시·경복궁/부산/수원 매장 낮 12시, 429,000원을 안내합니다. 국내 판매점의 발표가 있어 “한국 구매 경로가 없다”는 설명은 더 이상 유지하지 않습니다.</p><p>429,000원은 해당 판매점의 출시 안내 가격입니다. 푸마 코리아의 정확 상품 정가나 현재 장바구니 가격으로 이름을 바꾸지 않았으며, 현재 사이즈별 재고도 미확인입니다.</p><div class="table-wrap"><table><thead><tr><th scope="col">항목</th><th scope="col">확인한 내용</th><th scope="col">출처·한계</th></tr></thead><tbody><tr><td>정확 모델</td><td>FAST-RB NITRO Elite 2 Laced ·314984_04</td><td>유럽 제조사 상품</td></tr><tr><td>무게</td><td>250g(UK8)·206g(UK4.5)</td><td>제조사 발표. 독립 실측 아님</td></tr><tr><td>스택·드롭</td><td>원문 스택 표기 47mm/55mm ·드롭 8mm</td><td>유럽 공식. 스택 두 숫자에 앞·뒤 라벨이 없어 순서를 확정하지 않음</td></tr><tr><td>판·폼·어퍼</td><td>융합한 카본 PWRPLATE 두 장·NITROFOAM ELITE·ULTRAWEAVE</td><td>제조사 구조 설명</td></tr><tr><td>출시 안내 가격</td><td>한국 판매점 429,000원 ·유럽 상품 €349.95</td><td>가격 출처·시점이 다르며 원화 환산 비교 아님</td></tr><tr><td>정확 2세대 독립 랩·착화</td><td>이번 범위에서는 확보하지 못함</td><td>다른 FAST-R·1세대 수치를 채워 넣지 않음</td></tr></tbody></table></div><h2>WA 규정은 어디에 적용되나요?</h2><p>2026년 4월 20일 시행 규정은 World Rankings Competitions와 그 참가자 등에 적용됩니다. 해당 로드 경기의 최대 밑창 두께는 40mm이며 비스파이크화의 강성 구조 수·배치에도 제한이 있습니다. 제조사의 두 판·높은 스택 공시와 비적합 발표를 함께 읽어야 합니다.</p><p>규정 3.3은 산악·트레일 등 특정 종목의 두께·구조 요건 적용을 달리합니다. 이를 근거로 이 신발이 모든 트레일에 적합하다거나 일반 참가자는 무조건 신어도 된다고 결론내리지 않았습니다. 개별 대회 사용 가능 여부는 그 대회의 규정으로 확인해야 합니다. 별도의 이 모델 WA 심사 결정문은 이번 범위에서 확인하지 못했습니다.</p><h2>최고 효율·수명 숫자를 그대로 구매 기준으로 삼지 않기</h2><p>최고 효율·최고 리턴이라는 표현은 푸마 내부 시험 주장입니다. 공개된 독립 시험의 조건·효과 크기와 개인 기록 개선율로 확인한 것은 아닙니다.</p><p>제조사 보도자료의 수명 320km와 유럽 상품의 300km도 서로 다릅니다. 둘 중 하나를 검증된 교체 시점으로 채택하지 않았습니다. 구매할 때에는 현재 규격·반품 조건과 실제 용도를 함께 확인하세요.</p><h2>확인한 원문</h2><ul><li><a href="https://mediahub.puma.com/articles/puma-unveils-fast-rb-nitrotm-elite-2-marking-a-new-frontier-in-speed" target="_blank" rel="noopener noreferrer">푸마 2026년 10월 23일 발표</a> — 구조·공시 무게·출시 일정·경기 비적합·내부 시험 주장.</li><li><a href="https://eu.puma.com/de/en/pd/fast-rb-nitro-elite-2-laced-running-shoes/314984.html" target="_blank" rel="noopener noreferrer">푸마 유럽 정확 314984_04 상품</a> — 스택 원문 47mm/55mm·드롭 8mm. 앞뒤 순서와 독립 실측을 구분.</li><li><a href="https://oymrunning.cafe24api.com/article/launching-calendar/8/16224/" target="_blank" rel="noopener noreferrer">온유어마크 자체 출시 공지</a> — 10월 28일·429,000원 안내. 제조사 한국 정가·현재 재고와 구분.</li><li><a href="https://worldathletics.org/download/download?filename=61b09e88-36c9-4782-8563-2adce1e15ff0.pdf&amp;urlslug=C2.1A+%E2%80%93+Athletic+Shoe+Regulations+(effective+from+20+April+2026)" target="_blank" rel="noopener noreferrer">World Athletics 신발 규정</a> — 2026년 4월 20일 시행. 적용 범위·구조·로드 두께와 종목 예외 확인.</li></ul>
 `,
+    updatedAt: "2026-11-10",
+    faqs: [
+      {
+        "question": "한국에서 판매한 적이 없나요?",
+        "answer": "온유어마크 자체 공지가 2026-10-28 출시·429,000원을 안내합니다. 현재 재고와 푸마 코리아 정가는 별도 확인 대상입니다."
+      },
+      {
+        "question": "2세대 스택은 아직 미공개인가요?",
+        "answer": "유럽 공식 상품은 47mm/55mm·드롭 8mm를 표시합니다. 두 스택 숫자의 앞뒤 라벨은 없어 원문 순서를 유지했고 독립 실측으로 쓰지 않았습니다."
+      },
+      {
+        "question": "어떤 대회든 무조건 금지인가요?",
+        "answer": "제조사는 경기 비적합이라고 명시합니다. WA 적용 경기·참가 부문 및 주최 규정을 확인해야 하며 모든 일반 행사·종목을 같은 규칙으로 단정하지 않았습니다."
+      }
+    ],
   },
   {
     id: "hoka-bondi-9-vs-saucony-triumph-24-max-cushion-2026",
