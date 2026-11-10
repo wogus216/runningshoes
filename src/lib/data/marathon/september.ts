@@ -231,50 +231,86 @@ export const septemberEvents: MarathonEvent[] = [
     lastVerified: '2026-08-27',
   },
   {
-    id: 'gongju-baekje-marathon-2026',
-    name: '2026 공주백제마라톤',
-    date: '2026-09-20',
-    month: '9월',
-    location: '공주시민운동장 (금강변)',
-    region: '충남',
-    distances: ['풀코스', '하프', '10K'],
-    status: '대회종료',
+    id: "gongju-baekje-marathon-2026",
+    name: "2026 공주백제마라톤",
+    date: "2026-09-20",
+    month: "9월",
+    location: "공주시민운동장",
+    region: "충남",
+    distances: [
+      "풀코스",
+      "하프",
+      "10K"
+    ],
+    status: "대회종료",
     isMajor: true,
-    website: 'https://www.gongjumarathon.com/',
-    description:
-      '동마 시리즈 가을 시즌 개막전. 금강변 평지 풀코스에 32K 옵션이 있어 가을 풀코스 준비용으로 인기입니다. 우선접수 5월 11일에 이어 5월 21일 본접수를 시작해 선착순 마감됐으며, 접수처인 동마클럽에서 현재 품절 상태입니다. 정원은 네 종목 합쳐 12,000명이고, 취소·환불은 7월 31일 17시까지 가능합니다. 동마클럽 매니아 회원은 종목별로 1만 원 싼 참가비가 적용되는 대신 티셔츠를 받지 않습니다.',
+    website: "https://www.gongjumarathon.com/",
+    description: "9월 20일 08:00 개최한 2026 대회. 공식 요강은 풀·32.195km·하프·10km 네 종목이며 일반/매니아 요금은 풀·32.195km 70,000/60,000원, 하프 60,000/50,000원, 10km 50,000/40,000원이었다. 매니아는 티셔츠 미지급. 9월 22일 검수 완료 공지는 스마트칩 동아 기록실에서 공식 기록증을 확인하도록 안내한다.",
     courseInfo: {
-      terrain: '평지',
-      difficulty: '중급',
-      certification: 'KAF',
-      courseDescription:
-        '공주시민운동장에서 출발해 같은 자리로 돌아오는 금강변 코스로, 무령왕릉·공산성·공주보 일대를 지납니다. 공식 홈페이지에 풀/32K·하프·10K 코스맵과 풀코스 고도 프로파일이 모두 공개돼 있습니다. 다만 출발·골인 지점 배치도는 "2026 버전으로 추후 업데이트 예정"으로 안내돼 있어 현재 게시분은 이전 연도 기준입니다.',
+      "courseDescription": "공주시민운동장을 대회장으로 하는 풀·32.195km·하프·10km 대회. 거리·제한시간은 2026 공식 요강을 기준으로 보며 다음 시즌 코스와 난이도는 별도 확인한다."
     },
     raceInfo: {
-      entryFees: [
-        { distance: '풀코스', fee: 70000 },
-        { distance: '32K', fee: 70000 },
-        { distance: '하프', fee: 60000 },
-        { distance: '10K', fee: 50000 },
+      "entryFees": [
+        {
+          "distance": "풀코스",
+          "fee": 70000
+        },
+        {
+          "distance": "32K",
+          "fee": 70000
+        },
+        {
+          "distance": "하프",
+          "fee": 60000
+        },
+        {
+          "distance": "10K",
+          "fee": 50000
+        }
       ],
-      expectedParticipants: 12000,
-      startTime: '08:00',
+      "expectedParticipants": 12000,
+      "startTime": "08:00",
+      "timeLimits": [
+        {
+          "distance": "풀코스",
+          "hours": 5,
+          "minutes": 0
+        },
+        {
+          "distance": "32.195km",
+          "hours": 4,
+          "minutes": 0
+        },
+        {
+          "distance": "하프",
+          "hours": 2,
+          "minutes": 30
+        },
+        {
+          "distance": "10K",
+          "hours": 1,
+          "minutes": 30
+        }
+      ]
     },
     raceKit: {
-      items: ['티셔츠(아디다스)', '완주메달', '배번호'],
-      images: [
-        {
-          src: '/images/marathon/gongju-baekje-marathon-2026/kit-1.webp',
-          alt: '2026 공주백제마라톤 완주메달 — 공식 예시 이미지(이름·기록·색상 등 변경 가능 고지)',
-        },
+      "items": [
+        "티셔츠(아디다스)",
+        "완주메달",
+        "배번호"
       ],
-      pending: '배번호 디자인은 부문·그룹별 예시만 공개(2026-09-09 확인), 실제 배번호는 참가자 개별 지급 시 확정',
-      verifiedAt: '2026-09-09',
+      "images": [
+        {
+          "src": "/images/marathon/gongju-baekje-marathon-2026/kit-1.webp",
+          "alt": "2026 공주백제마라톤 완주메달 — 공식 예시 이미지(이름·기록·색상 등 변경 가능 고지)"
+        }
+      ],
+      "pending": "배번호 디자인은 부문·그룹별 예시만 공개(2026-09-09 확인), 실제 배번호는 참가자 개별 지급 시 확정",
+      "verifiedAt": "2026-09-09"
     },
-    registrationStart: '2026-05-21',
-    registrationNote:
-      '우선접수 5월 11일(월) 10시~5월 15일(금) 15시, 본접수 5월 21일(목) 19시부터 선착순 마감 — 마감일 미고지. 정원 12,000명이 모두 소진돼 접수처(동마클럽)에서 품절 상태입니다.',
-    lastVerified: '2026-08-29',
+    registrationStart: "2026-05-21",
+    postRaceNote: "2026 대회 종료. 종이기록증 신청은 10월 14일 14:00까지로 기한 경과. 국내 주소만 우편 발송하며 재발송 불가, 신청 뒤 주소 변경은 사무국 문의 조건이다(11/10 공식 9/22·10/7 공지 대조).",
+    lastVerified: "2026-11-10",
   },
   {
     id: 'cheorwon-dmz-peace-marathon-2026',

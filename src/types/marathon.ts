@@ -178,6 +178,8 @@ export interface MarathonEvent {
    * 확인 안 한 것은 다르다.
    */
   registrationNote?: string;
+  /** 대회 종료 후 확인한 기록·기록증 등 후속 안내. 지난 접수 메모와 구분한다. */
+  postRaceNote?: string;
   /** status를 마지막으로 확인한 날 'YYYY-MM-DD'. 대회 상세에만 노출한다 */
   lastVerified?: string;
   /**

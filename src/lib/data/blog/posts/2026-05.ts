@@ -4833,746 +4833,123 @@ export const posts_2026_05: BlogPost[] = [
     ],
   },
   {
-    id: '2026-seoul-race',
-    slug: '2026-seoul-race',
-    title: '2026 서울레이스 접수 시작 | 10/11 청계광장 도심 하프·10K — 본접수 5/27 오픈, 선착순 마감 임박',
-    description: '2026 서울레이스(SEOUL RACE) 본접수가 5월 27일(수) 시작됐습니다(하프 19시·10K 21시 dongma.club). 10월 11일 청계광장 출발, 종로·숭례문·시청·청계천·DDP 통과 도심 평지 하프·10K. 작년 하프 5분 내 마감 — 이미 마감됐을 수 있으니 dongma.club에서 잔여·취소표 확인. 풀코스 없는 도심 페스티벌형 마라톤.',
-    thumbnail: '/images/blog/2026-seoul-race.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-05-09',
-    updatedAt: '2026-05-28',
-    category: 'news' as const,
-    readingTime: 7,
-    tags: ['서울레이스', 'Seoul Race', '서울 마라톤', '도심 마라톤', '동마클럽', '하프마라톤', '청계광장', '대회 일정'],
+    id: "2026-seoul-race",
+    slug: "2026-seoul-race",
+    title: "2026 서울레이스 종료 후: 스마트칩 기록 확인·공식 기록증과 주최 후속 공지",
+    description: "10월 11일 하프·11km 대회는 종료됐습니다. 기존 10km 안내를 바로잡고 스마트칩 기록 조회와 공식 기록증 제공 계획, 주최 후속 공지를 구분합니다.",
+    thumbnail: "/images/blog/verified-2026-seoul-race-20261110.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-05-09",
+    updatedAt: "2026-11-10",
+    category: "news",
+    readingTime: 5,
+    tags: [
+      "서울레이스",
+      "Seoul Race",
+      "서울 마라톤",
+      "도심 마라톤",
+      "동마클럽",
+      "하프마라톤",
+      "청계광장",
+      "대회 일정"
+    ],
     event: {
-      name: '2026 서울레이스 (SEOUL RACE)',
-      startDate: '2026-10-11T08:00:00+09:00',
-      location: {
-        name: '청계광장 앞 세종대로 → 무교로 골인',
-        address: '서울특별시 종로구 청계광장 앞 세종대로',
+      "name": "2026 SEOUL RACE",
+      "startDate": "2026-10-11",
+      "location": {
+        "name": "서울",
+        "address": "서울특별시"
       },
-      organizer: '동아일보 (동마클럽)',
-      url: 'https://www.seoul-race.co.kr/',
-      offers: [
-        { name: '하프마라톤 (5/27 19시 본접수)', priceKrw: 70000, availabilityEnds: '2026-06-30', url: 'https://dongma.club/' },
-        { name: '10K (5/27 21시 본접수)', priceKrw: 60000, availabilityEnds: '2026-06-30', url: 'https://dongma.club/' },
-      ],
+      "organizer": "서울레이스 조직위원회",
+      "url": "https://www.seoul-race.co.kr/"
     },
     faqs: [
       {
-        question: '서울레이스가 서울마라톤이랑 뭐가 다른가요?',
-        answer: '서울마라톤(매년 3월, 풀코스 중심)이 도시 전체를 관통하는 본격 풀코스 대회라면, 서울레이스(매년 10월)는 풀코스 없이 도심 하프·10K만 운영하는 가을 도심 페스티벌입니다. 출발이 광화문이 아니라 청계광장이고, 코스도 청계천·종로·을지로·DDP를 잇는 도심 순환형이라 풀 마라톤보다 짧고 입문 친화적입니다. 운영은 둘 다 동마클럽(동아일보)이 합니다.',
+        "question": "2026 접수는 지금도 가능한가요?",
+        "answer": "10월 11일 개최된 과거 대회입니다. 지난 판매 공지를 현재 접수 창구로 안내하지 않습니다."
       },
       {
-        question: '5월 27일 하프 19시·10K 21시가 무슨 뜻인가요?',
-        answer: '같은 날 두 종목의 접수 오픈 시각이 시간 분리됐다는 뜻입니다. 하프(8,500명)는 19시 정각에, 10K(4,000명)는 21시 정각에 dongma.club에서 동시 선착순 시작합니다. 한 사람이 둘 다 도전하려면 두 시간대 모두 PC 앞에 앉아 있어야 합니다. 작년 하프는 오픈 5분 내 마감됐으니 결제 수단 등록·시계 동기화는 두 시간대 모두 미리 해두세요.',
+        "question": "사진에 DNF가 나오면 최종 실격인가요?",
+        "answer": "주최의 당시 포토존 안내는 기록 조회가 안 되면 DNF가 표출될 수 있다고 설명합니다. 사진 표기만으로 최종 판정을 내리지 말고 본인 공식 결과와 사무국에 확인해야 합니다."
       },
       {
-        question: '하프 70,000원, 10K 60,000원이 좀 비싼 거 아닌가요?',
-        answer: '동마 시리즈 다른 대회(공주백제 하프 50K·10K 40K, 경주국제 하프 50K·10K 40K)보다 2만원 정도 비쌉니다. 이유는 ① 서울 도심 코스 운영 비용(교통통제·경찰·구조 인력), ② PUMA 협찬 공식 티셔츠 + 완주 메달, ③ DDP·청계광장 등 랜드마크 사용료. 서울 도심에서 하프 뛰는 경험과 PUMA 티셔츠 가치를 더하면 가성비는 합리적이라는 평가가 다수입니다.',
+        "question": "기록증은 모두 발급 완료됐나요?",
+        "answer": "공식 공지의 1주일 이내 제공은 계획입니다. 이번 대조로 모든 참가자의 발급 완료를 확인하지 않았으며 본인 결과에서 현재 상태를 확인해야 합니다."
       },
       {
-        question: '도심 코스에 어떤 신발이 좋나요?',
-        answer: '청계광장~종로~을지로~청계천~DDP 100% 아스팔트 평지 코스라 ① 하프 PB 도전 → 카본 플레이트 레이싱화(아디오스 프로 4·베이퍼플라이 4·메타스피드 에지) ② 하프 안전 완주 → 슈퍼 트레이너(슈퍼블라스트 2·페가수스 플러스) ③ 10K 가벼운 페이스 → 데일리 트레이너(페가수스 42·1080 v15)가 정답입니다. 평지라 안정화는 굳이 필요 없고, 발볼 넓다면 와이드 옵션 정식 출시된 모델 우선.',
-      },
-      {
-        question: '같은 주말에 경주국제마라톤도 있는데 어디 가야 하나요?',
-        answer: '서울레이스 10월 11일(일), 경주국제마라톤 10월 17일(토) — 한 주 차이입니다. 둘 다 도전은 권장하지 않으며 (회복 시간 부족) 성격에 따라 갈라야 합니다. ① 서울에서 도심 하프·10K 페스티벌 분위기 + 풀코스 부담 없이 → 서울레이스. ② 풀코스 PB 도전 + 신라 유적 코스 + 1박2일 관광 → 경주국제마라톤. 동마 멤버십 가입자라면 둘 다 우선접수 가능하지만 한쪽만 선택하는 게 현실적입니다.',
-      },
+        "question": "2027 접수 일정도 같나요?",
+        "answer": "이번에 2027 확정 모집 조건을 확인하지 않았습니다. 2026 접수 시각·가격·코스를 자동 적용하지 않습니다."
+      }
     ],
-    content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li>2026 서울레이스 — 2026년 10월 11일(일) 청계광장 출발 → 종로·숭례문·시청·청계천·DDP 통과 → 무교로 골인 도심 평지 코스</li>
-    <li>본접수 <strong>5월 27일(수) 시작됨</strong> (하프 19시·10K 21시 dongma.club) — 하프는 작년 5분 내 마감, <strong>이미 마감됐을 수 있어 잔여·취소표 확인 필수</strong></li>
-    <li>풀코스 없는 도심 하프·10K 전용 — <strong>동마 시리즈 유일 가을 도심 페스티벌형</strong>, 작년 12,800명 역대 최다</li>
-  </ul>
-</div>
-
-<div class="callout warning">
-  <span class="callout-icon">🔥</span>
-  <div class="callout-body">
-    <p class="callout-title">본접수 시작됨 (5/27 오픈) — 선착순 마감 임박, 잔여부터 확인</p>
-    <p>하프(8,500명)는 5/27 19시, 10K(4,000명)는 21시에 오픈됐습니다. 작년 하프가 오픈 5분 내 마감됐던 만큼 <strong>이미 마감됐을 가능성이 높습니다</strong>. 참가를 원한다면 dongma.club에서 <strong>잔여 슬롯·취소표 여부</strong>를 먼저 확인하세요. 취소표는 대회 전까지 간헐적으로 풀리니 알림을 켜두는 것도 방법입니다. <em>(이 글은 2026-05-28 기준으로 업데이트됐습니다.)</em></p>
-  </div>
-</div>
-
-<h2>핵심 정보 한눈에</h2>
-
-<div class="stat-grid">
-  <div class="stat-card accent">
-    <span class="stat-label">대회일</span>
-    <span class="stat-value">10/11 (일)</span>
-    <span class="stat-sub">청계광장 출발</span>
-  </div>
-  <div class="stat-card">
-    <span class="stat-label">하프 접수</span>
-    <span class="stat-value">5/27 19시</span>
-    <span class="stat-sub">정원 8,500명</span>
-  </div>
-  <div class="stat-card">
-    <span class="stat-label">10K 접수</span>
-    <span class="stat-value">5/27 21시</span>
-    <span class="stat-sub">정원 4,000명</span>
-  </div>
-  <div class="stat-card">
-    <span class="stat-label">2025 참가</span>
-    <span class="stat-value">12,800명</span>
-    <span class="stat-sub">역대 최다</span>
-  </div>
-</div>
-
-<h2>접수부터 대회까지 타임라인</h2>
-
-<div class="timeline">
-  <div class="timeline-item active">
-    <span class="timeline-date">2026.05.27 (수) 19시 — 접수 시작됨</span>
-    <span class="timeline-title">하프마라톤 본접수 시작</span>
-    <p class="timeline-desc">정원 8,500명 선착순 — 작년 5분 내 마감, 현재 잔여·취소표 확인 (dongma.club)</p>
-  </div>
-  <div class="timeline-item">
-    <span class="timeline-date">2026.05.27 (수) 21시</span>
-    <span class="timeline-title">10K 본접수 시작 (같은 날 2시간 후)</span>
-    <p class="timeline-desc">정원 4,000명 선착순 — 하프 도전한 사람도 다시 PC 앞으로</p>
-  </div>
-  <div class="timeline-item">
-    <span class="timeline-date">2026.09 중후반</span>
-    <span class="timeline-title">레이스팩 안내·교통통제 공지</span>
-    <p class="timeline-desc">PUMA 티셔츠 사이즈 확인, 청계광장 일대 통제 시간 발표</p>
-  </div>
-  <div class="timeline-item">
-    <span class="timeline-date">2026.10.11 (일)</span>
-    <span class="timeline-title">대회 당일 — 청계광장 7시 집결, 8시 출발(추정)</span>
-    <p class="timeline-desc">10월 둘째 주 서울 평균 10-15도, 강수 적은 쾌청 시즌</p>
-  </div>
-</div>
-
-<h2>종목별 참가비·정원 (2025년 기준)</h2>
-
-<table>
-  <thead>
-    <tr><th>종목</th><th>거리</th><th>참가비</th><th>정원</th><th>제한시간</th></tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>하프마라톤</strong></td>
-      <td>21.0975km</td>
-      <td>70,000원</td>
-      <td>8,500명</td>
-      <td>2시간 30분</td>
-    </tr>
-    <tr>
-      <td>10K</td>
-      <td>10km</td>
-      <td>60,000원</td>
-      <td>4,000명</td>
-      <td>1시간 40분</td>
-    </tr>
-  </tbody>
-</table>
-
-<div class="callout info">
-  <span class="callout-icon">ℹ️</span>
-  <div class="callout-body">
-    <p class="callout-title">왜 70,000원? — 도심 코스 + PUMA 협찬</p>
-    <p>서울레이스 하프 70,000원은 동마 다른 대회(공주백제·경주국제 하프 50,000원)보다 2만원 비쌉니다. 이유: ① <strong>서울 도심 교통통제 비용</strong>(경찰·구조 인력·DDP/청계광장 사용료), ② <strong>PUMA 공식 티셔츠</strong>(시중 4-5만원 가치), ③ 완주 메달 + 도심 페스티벌 운영. 도심 하프 경험 + PUMA 티셔츠를 합치면 가성비는 합리적이라는 평가가 많습니다.</p>
-  </div>
-</div>
-
-<h2>코스 — 서울 도심 랜드마크 21.0975km</h2>
-
-<p>출발은 <strong>청계광장 앞 세종대로</strong>, 도착은 <strong>무교로</strong>(청계광장 인근)로 사실상 같은 지점에서 시작·종료합니다. 도심 평지 100% 아스팔트 코스로, 평소 차량 전용 도로를 달리는 색다른 경험이 핵심 매력입니다.</p>
-
-<table>
-  <thead>
-    <tr><th>구간</th><th>통과 랜드마크</th></tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>출발 (Start)</strong></td>
-      <td>청계광장 앞 세종대로 → 종로1가</td>
-    </tr>
-    <tr>
-      <td>0-5km</td>
-      <td>종로1가 → 동대문역 → DDP 인근</td>
-    </tr>
-    <tr>
-      <td>5-10km</td>
-      <td>세종대로 사거리 → 숭례문 → 한국은행</td>
-    </tr>
-    <tr>
-      <td>10-15km</td>
-      <td>시청삼거리 → 을지로3가역 → 청계천 인근</td>
-    </tr>
-    <tr>
-      <td>15-21km</td>
-      <td>청계천 → DDP → 무교로 골인</td>
-    </tr>
-  </tbody>
-</table>
-
-<div class="callout tip">
-  <span class="callout-icon">🏛</span>
-  <div class="callout-body">
-    <p class="callout-title">평지 코스 + 가을 최적 기온 = 하프 PB 도전 적기</p>
-    <p>서울 도심은 고도 변화가 거의 없고 10월 둘째 주 평균 기온 10-15도로 하프 마라톤 최적 환경입니다. 다만 출발 직후 종로1가 좁은 구간 정체와 5km까지의 페이스 욕심이 함정 — 첫 5km는 의도적으로 천천히, 5-15km에서 페이스 끌어올리는 전략이 정석입니다. <a href="/blog/marathon-pacing-mental-strategy-guide">마라톤 페이싱 전략</a> 참고.</p>
-  </div>
-</div>
-
-<h2>동마 가을 시리즈 내 서울레이스의 포지션</h2>
-
-<p>동마클럽이 운영하는 가을 대회는 4개. 서울레이스는 그중 유일하게 <strong>풀코스 없이 도심 하프·10K만 운영하는 페스티벌형</strong>입니다.</p>
-
-<table>
-  <thead>
-    <tr><th>대회</th><th>일자</th><th>종목</th><th>코스 성격</th><th>관련 글</th></tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>2026 공주백제마라톤</td>
-      <td>9/20 (일)</td>
-      <td>풀·32K·하프·10K·5K</td>
-      <td>금강변 평지 입문 풀코스</td>
-      <td><a href="/blog/2026-gongju-baekje-marathon">D-4 우선접수</a></td>
-    </tr>
-    <tr>
-      <td><strong>2026 서울레이스</strong></td>
-      <td><strong>10/11 (일)</strong></td>
-      <td><strong>하프·10K</strong></td>
-      <td><strong>서울 도심 평지 페스티벌</strong></td>
-      <td><strong>이 글</strong></td>
-    </tr>
-    <tr>
-      <td>2026 경주국제마라톤</td>
-      <td>10/17 (토)</td>
-      <td>풀·하프·10K</td>
-      <td>신라 유적 코스 / 엘리트 라벨</td>
-      <td><a href="/blog/2026-gyeongju-international-marathon">D-17 접수</a></td>
-    </tr>
-    <tr>
-      <td>2027 서울마라톤</td>
-      <td>2027.3.21 (일)</td>
-      <td>풀·10K</td>
-      <td>서울 도심 풀코스 (플래티넘)</td>
-      <td><a href="/blog/2027-seoul-marathon-priority-d10">D-10 우선접수</a></td>
-    </tr>
-  </tbody>
-</table>
-
-<div class="callout info">
-  <span class="callout-icon">⚖️</span>
-  <div class="callout-body">
-    <p class="callout-title">서울레이스 vs 경주국제 — 한 주 차이 선택 가이드</p>
-    <p>10/11 서울레이스와 10/17 경주국제는 일주일 차이라 둘 다 뛰는 건 회복상 부담이 큽니다. 선택 기준: ① <strong>풀코스 PB 도전 + 1박2일 관광 + 신라 유적</strong> → 경주, ② <strong>서울에서 도심 하프 페스티벌 + 풀코스 부담 없이 + 당일치기</strong> → 서울레이스. 둘 다 도전한다면 서울레이스 10K(가벼운 페이스) + 경주 풀(메인) 조합이 그나마 현실적.</p>
-  </div>
-</div>
-
-<h2>10월 서울 도심 — 어떤 신발을 신을까</h2>
-
-<p>100% 아스팔트 평지 + 10-15도 + 하프 또는 10K 환경에서는 종목·목표별로 추천이 갈립니다.</p>
-
-<table>
-  <thead>
-    <tr><th>종목 / 목표</th><th>추천 카테고리</th><th>예시 모델</th></tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>하프 PB 도전 (Sub-1:30~1:45)</strong></td>
-      <td>카본 플레이트 레이싱화</td>
-      <td>아디다스 아디오스 프로 4, 나이키 베이퍼플라이 4, ASICS 메타스피드 에지 파리</td>
-    </tr>
-    <tr>
-      <td><strong>하프 안전 완주 (1:45~2:30)</strong></td>
-      <td>슈퍼 트레이너</td>
-      <td><a href="/shoes/asics-superblast-2">슈퍼블라스트 2</a>, <a href="/shoes/nike-pegasus-plus">페가수스 플러스</a>, <a href="/shoes/hoka-mach-x-3">호카 마하 X 3</a></td>
-    </tr>
-    <tr>
-      <td><strong>10K (PB 도전)</strong></td>
-      <td>경량 카본 또는 슈퍼 트레이너</td>
-      <td><a href="/shoes/nike-zoom-fly-6">줌 플라이 6</a>, <a href="/shoes/asics-superblast-2">슈퍼블라스트 2</a></td>
-    </tr>
-    <tr>
-      <td><strong>10K (즐기는 페이스)</strong></td>
-      <td>쿠션 데일리 트레이너</td>
-      <td><a href="/shoes/nike-pegasus-42">페가수스 42</a>, <a href="/shoes/new-balance-1080-v15">1080 v15</a>, GT-2000 14</td>
-    </tr>
-  </tbody>
-</table>
-
-<p>발볼이 넓다면 와이드 옵션이 정식 출시된 페가수스 42·1080 v15·GT-2000 14 우선. <a href="/recommend">맞춤 신발 추천</a>에서 본인 발에 맞는 모델 1분 안에 확인할 수 있습니다.</p>
-
-<h2>접수 실전 노하우 — 5분 컷 마감 대비</h2>
-
-<div class="callout tip">
-  <span class="callout-icon">⚡</span>
-  <div class="callout-body">
-    <p class="callout-title">마감됐다면 — 취소표 노리기 체크리스트 (취소표도 선착순)</p>
-    <ol style="margin-top:8px;">
-      <li><strong>동마클럽 회원가입·로그인</strong> — 마이페이지 진입 가능 상태로 유지</li>
-      <li><strong>유선랜 PC + 모바일 동시 접속</strong> — 트래픽 폭주 대비 백업</li>
-      <li><strong>결제 수단 2가지 등록</strong> — 카드 + 카카오/네이버페이</li>
-      <li><strong>브라우저 자동입력</strong> — 이름·생년월일·연락처·주소 모두 저장</li>
-      <li><strong>취소표 알림 설정</strong> — 마감 후 풀리는 잔여를 놓치지 않도록</li>
-      <li><strong>시계 동기화</strong> — <code>time.navyism.com</code> (취소표가 정시에 풀릴 때 1초 차이가 갈림)</li>
-      <li><strong>접속 페이지 사전 로딩</strong> — dongma.club 접수 페이지 → 새로고침 대기</li>
-    </ol>
-  </div>
-</div>
-
-<h2>교통 — 대중교통 강력 권장</h2>
-
-<table>
-  <thead>
-    <tr><th>지하철</th><th>역</th><th>도보</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>1·2호선</td><td>시청역</td><td>1-2분 (서울광장 인접)</td></tr>
-    <tr><td>5호선</td><td>광화문역</td><td>2분 (청계광장 인접)</td></tr>
-    <tr><td>1호선</td><td>종각역</td><td>3분 (종로 방면)</td></tr>
-  </tbody>
-</table>
-
-<div class="callout warning">
-  <span class="callout-icon">🚇</span>
-  <div class="callout-body">
-    <p class="callout-title">자가용 절대 비추천</p>
-    <p>대회 당일 청계광장·세종대로·을지로·DDP 일대 전 구간 차량 통제됩니다. 자가용은 진입조차 불가능. 8시 출발에 맞추려면 7시 이전 도착이 안전한데, 시청역·광화문역 첫차(5:30~) 이용으로 충분합니다. 경기·인천 거주자는 광역버스 이용 가능.</p>
-  </div>
-</div>
-
-<h2>2025년 대회 돌아보기</h2>
-
-<p>2025년 서울레이스는 <strong>참가자 12,800명, 하프 9,100명 역대 최다</strong>를 기록하며 가을 도심 마라톤의 대표 주자로 자리 잡았습니다(12,800명은 네이트 스포츠 보도 기준). 참가 전에 알아둘 점:</p>
-
-<ul>
-  <li>10월에 열리는 서울 도심 평지 하프·10K 코스</li>
-  <li>평소 차량 도로인 종로·숭례문·시청·청계천·DDP를 통제하고 달리는 도심 순환형 코스</li>
-  <li>PUMA 협찬 공식 티셔츠 + 완주 메달 제공</li>
-  <li>작년 하프는 오픈 5분 내 마감 — 결제 수단 등록 등 접수 준비를 미리 해 둘 것</li>
-</ul>
-
-<h2>접수 체크리스트</h2>
-
-<div class="cta-box">
-  <h3>신청·취소표 대비 체크리스트</h3>
-  <ul>
-    <li>✅ <strong>잔여·취소표 확인</strong> — dongma.club에서 종목별 마감 여부부터 확인</li>
-    <li>✅ <strong>동마클럽 회원가입</strong> — dongma.club, 마이페이지 진입 가능 확인</li>
-    <li>✅ <strong>참가 종목 결정</strong> — 하프(70K) / 10K(60K) / 둘 다</li>
-    <li>✅ <strong>결제 수단 등록</strong> — 카드 + 간편결제</li>
-    <li>✅ <strong>취소표 알림 설정</strong> — 마감됐다면 대회 전까지 모니터링</li>
-    <li>✅ <strong>러닝화 결정</strong> — 도심 평지 + PB 도전이라면 카본, 안전 완주는 슈퍼 트레이너. <a href="/recommend">맞춤 추천</a></li>
-    <li>📱 <strong>접수 사이트</strong>: <a href="https://dongma.club/" target="_blank" rel="noopener">dongma.club</a> · 공식 <a href="https://www.seoul-race.co.kr/" target="_blank" rel="noopener">seoul-race.co.kr</a></li>
-  </ul>
-</div>
-
-<p class="text-sm text-gray-500 mt-8">
-※ 데이터 출처: <a href="https://www.seoul-race.co.kr/" target="_blank" rel="noopener">서울레이스 공식</a>, <a href="https://dongma.club/" target="_blank" rel="noopener">동마클럽</a>, <a href="https://www.instagram.com/dongmaclub/p/DXyYzWVD0ut/" target="_blank" rel="noopener">@dongmaclub 5월 캘린더</a>, runningwikii(2025년 코스·참가비), sports.news.nate.com(2025년 12,800명 보도). 2026년 참가비·정원·집결 시간은 5월 27일 본접수와 함께 dongma.club·seoul-race.co.kr에 게시됐습니다. 잔여·취소표 여부는 dongma.club에서 실시간 확인하세요.
-</p>
-`,
+    content: `<p><small>2026년 11월 10일 주최 원문 대조. 2026 개최·후속 절차와 다음 연도 모집을 구분합니다.</small></p>
+<p>2026 서울레이스는 10월 11일에 열렸다. <a href="https://www.seoul-race.co.kr/57/?bmode=view&amp;idx=175053827" target="_blank" rel="noopener noreferrer">주최의 당일 종료 게시물</a>을 확인했고, 지난 5월의 ‘접수 시작·마감 임박’ 안내는 대회 후 확인할 내용으로 갱신했다. 지금 필요한 것은 참가권 구매보다 본인 기록과 주최 후속 공지를 확인하는 일이다.</p>
+<p><a href="https://www.seoul-race.co.kr/63" target="_blank" rel="noopener noreferrer">공식 유의사항</a>의 종목은 하프·11km입니다. 기존 글의 10km 표기를 바로잡았습니다. 출발 안내도 07:30부터 순차 출발이므로 08:00 일괄 출발로 저장하지 않습니다.</p><h2>기록 조회와 기록증 발급은 서로 다른 단계</h2><p><a href="https://www.seoul-race.co.kr/57/?bmode=view&amp;idx=175037029" target="_blank" rel="noopener noreferrer">10월 10일 공식 기록증 일정 공지</a>는 스마트칩에서 기록을 조회하도록 안내한다. 당시 포토존에서 기록이 조회되지 않으면 DNF가 표시될 수 있다고 설명했는데, 사진 한 장의 표기만으로 개인의 최종 기록 판정을 내릴 수 있다는 뜻은 아니다.</p>
+<p>같은 공지는 대회 후 기록 검증을 거쳐 1주일 이내 공식 기록증을 제공하고 다운로드가 가능해지면 다시 알릴 예정이라고 적었다. 이것은 당시의 제공 계획이다. 모든 참가자의 발급 완료를 확인한 자료로 바꾸지 않았으므로, 본인 결과에서 현재 기록증 버튼·기록 상태를 확인해야 한다.</p>
+<ol><li><a href="https://smartchip.co.kr/" target="_blank" rel="noopener noreferrer">스마트칩</a>에 접속해 해당 연도 서울레이스 결과를 찾는다.</li><li>본인 배번호·종목·이름이 맞는지 확인한다.</li><li>최종 기록과 기록증 제공 여부를 각각 확인한다.</li><li>기록이 다르거나 누락됐다면 신청 정보·배번호·보유 기록을 정리해 공식 문의 경로를 이용한다.</li></ol>
+<h2>10월 12일 후속 공지</h2><p><a href="https://www.seoul-race.co.kr/57/?bmode=view&amp;idx=175066898" target="_blank" rel="noopener noreferrer">조직위원회의 10월 12일 공지</a>는 대회 중 하프 참가자에게 응급상황이 발생했고 의료기관 이송·치료 뒤 사망했다는 사실을 알렸다. 이 글에서는 고인의 신원이나 원인·책임에 관한 확인되지 않은 내용을 덧붙이지 않는다. 참가자는 <a href="https://www.seoul-race.co.kr/57/" target="_blank" rel="noopener noreferrer">주최 공지 목록</a>에서 후속 안내를 함께 확인할 수 있다.</p>
+<h2>내년을 준비할 때 다시 확인할 것</h2><p>2026 접수 시각·가격·그룹·코스가 다음 시즌에도 유지된다는 보장은 없다. 기존 글에 붙어 있던 판매 기한·상품 가격을 현재 구매 가능한 참가권처럼 표시하지 않는다. 다음 연도에 관심이 있다면 요강의 연도와 종목, 실제 접수 상품을 다시 대조해야 한다.</p>
+<p>2026 기록은 본인 완주 기록으로 보관하고, 다음 대회 그룹 배정이나 참가자격으로 사용할 때는 그 대회가 요구하는 거리·기간·공인 조건을 따로 읽자. 특정 대회 완주증이 모든 대회에 자동 인정된다는 뜻은 아니다.</p>
+<h2>자주 묻는 질문</h2><h3>2026 접수는 지금도 가능한가요?</h3><p>10월 11일 개최된 과거 대회입니다. 지난 판매 공지를 현재 접수 창구로 안내하지 않습니다.</p><h3>사진에 DNF가 나오면 최종 실격인가요?</h3><p>주최의 당시 포토존 안내는 기록 조회가 안 되면 DNF가 표출될 수 있다고 설명합니다. 사진 표기만으로 최종 판정을 내리지 말고 본인 공식 결과와 사무국에 확인해야 합니다.</p><h3>기록증은 모두 발급 완료됐나요?</h3><p>공식 공지의 1주일 이내 제공은 계획입니다. 이번 대조로 모든 참가자의 발급 완료를 확인하지 않았으며 본인 결과에서 현재 상태를 확인해야 합니다.</p><h3>2027 접수 일정도 같나요?</h3><p>이번에 2027 확정 모집 조건을 확인하지 않았습니다. 2026 접수 시각·가격·코스를 자동 적용하지 않습니다.</p>`,
   },
   {
-    id: '2026-gyeongju-international-marathon',
-    slug: '2026-gyeongju-international-marathon',
-    title: '2026 경주국제마라톤 접수 진행 중 | 10/17 신라 유적 코스 + World Athletics 엘리트 라벨 — 본접수 5/26 오픈',
-    description: '동아일보 2026 경주국제마라톤(10/17 토) 본접수가 5월 26일(화) 19시 시작됐습니다(dongma.club). 첨성대·대릉원·동궁과월지 통과, 총 획득고도 146m 완만 코스, 23.5~33km 내리막 기록 단축 구간. 2025년 World Athletics 엘리트 라벨 승격(국내 유일) + 정원 약 1.6만명 — 동마 3대장 가을 시즌 완결편. 선착순이라 잔여 여부 확인 권장.',
-    thumbnail: '/images/blog/2026-gyeongju-international-marathon.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-05-09',
-    updatedAt: '2026-05-28',
-    category: 'news' as const,
-    readingTime: 8,
-    tags: ['경주국제마라톤', '경주 마라톤', '경상북도 마라톤', '동마클럽', '신라 마라톤', '유네스코 마라톤', 'World Athletics 엘리트 라벨', '대회 일정'],
+    id: "2026-gyeongju-international-marathon",
+    slug: "2026-gyeongju-international-marathon",
+    title: "2026 경주국제마라톤 종료 후: 공식 기록 조회·종이기록증 마감·부문 구분",
+    description: "10월 17일 풀·하프·10km 대회 이후 기록은 스마트칩 동아 기록실에서 확인합니다. 종이기록증 신청은 10월 27일 17시 종료됐고 국내 주소·재발송 제한이 있었습니다.",
+    thumbnail: "/images/blog/verified-2026-gyeongju-international-marathon-20261110.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-05-09",
+    updatedAt: "2026-11-10",
+    category: "news",
+    readingTime: 5,
+    tags: [
+      "경주국제마라톤",
+      "경주 마라톤",
+      "경상북도 마라톤",
+      "동마클럽",
+      "신라 마라톤",
+      "대회 일정",
+      "공식 기록",
+      "기록증"
+    ],
     event: {
-      name: '동아일보 2026 경주국제마라톤대회',
-      startDate: '2026-10-17T08:00:00+09:00',
-      location: {
-        name: '경주시민운동장',
-        address: '경상북도 경주시 시민운동장 일원',
+      "name": "2026 경주국제마라톤",
+      "startDate": "2026-10-17",
+      "location": {
+        "name": "경주시민운동장",
+        "address": "경상북도 경주시"
       },
-      organizer: '동아일보 (동마클럽) · 경주시·경상북도',
-      url: 'https://www.gyeongjumarathon.com/',
-      offers: [
-        { name: '풀코스 (42.195km)', priceKrw: 60000, availabilityEnds: '2026-06-30', url: 'https://dongma.club/' },
-        { name: '하프코스 (21.0975km)', priceKrw: 50000, availabilityEnds: '2026-06-30', url: 'https://dongma.club/' },
-        { name: '10K', priceKrw: 40000, availabilityEnds: '2026-06-30', url: 'https://dongma.club/' },
-      ],
+      "organizer": "경상북도·경주시·대한육상연맹·동아일보",
+      "url": "https://www.gyeongjumarathon.com/38"
     },
     faqs: [
       {
-        question: '5월 26일 19시가 멤버십 우선접수인가요, 본접수인가요?',
-        answer: '2026년은 5월 26일(화) 19시가 dongma.club 본접수 시작으로 공식 공지됐습니다(선착순). 동마 멤버십 우선접수가 그 이전에 별도로 진행됐을 수 있으나, 일반 러너 기준 핵심 일정은 5/26 본접수입니다. 현재는 접수가 시작된 상태이므로, 신청을 원한다면 dongma.club에서 종목별 잔여·취소표 여부를 먼저 확인하세요.',
+        "question": "공식 기록은 어디서 찾나요?",
+        "answer": "스마트칩의 동아 기록실에서 2026 경주마라톤을 선택한 뒤 배번호나 이름으로 조회하라는 주최 안내가 있습니다."
       },
       {
-        question: '경주국제마라톤이 World Athletics 엘리트 라벨이라는 게 무슨 의미인가요?',
-        answer: '2025년에 World Athletics(세계육상연맹) 엘리트 라벨로 승격됐고, 이는 국내 지방 대회 중 유일한 등급입니다. 등급 순서는 라벨 → 엘리트 → 골드 → 플래티넘이며, 서울마라톤(플래티넘)·대구마라톤(골드)에 이어 한국 3번째 국제 공인 마라톤입니다. 엘리트 라벨 승격은 코스 정확성·안전·해외 엘리트 선수 초청·공식 페이서·도핑 검사 등 국제 기준을 충족했다는 의미로, 풀코스 기록을 국제 공인 기록으로 인정받을 수 있습니다.',
+        "question": "종이기록증은 지금 신청할 수 있나요?",
+        "answer": "공식 신청 기한은 10월 27일 17:00로 지났습니다. 예외 접수가 가능하다고 이번에 확인하지 않았습니다."
       },
       {
-        question: '코스에 불국사도 포함되나요?',
-        answer: '아쉽게도 코스에는 불국사·석굴암이 포함되지 않습니다. 코스는 경주시민운동장에서 출발해 시내 순환 후 동일 지점 골인 구조로, 5~16km 구간에 첨성대·대릉원·천마총·동궁과월지를 연속 통과합니다. 불국사·석굴암은 시내에서 차로 20분 거리 외곽이라 별도 통과는 안 됩니다. 대회 전날 또는 완주 후 1박2일 관광으로 방문하는 게 정석입니다.',
+        "question": "기록증 주소를 직접 바꿀 수 있나요?",
+        "answer": "종이기록증 공지는 신청 후 직접 주소 수정이 안 되며 사무국에 연락해야 한다고 안내합니다. 국내 주소만 발송하고 재발송은 하지 않는 조건입니다."
       },
       {
-        question: '코스 난이도는 어느 정도인가요?',
-        answer: '동마 3대장 중 가장 쉬운 편입니다. 총 획득고도 146m로 공주백제(평지)와 안동(700m+) 사이 난이도이며, 16~24km 구간 북천 오르막(약 30m 상승)이 유일한 관문입니다. 23.5~33km 구간은 완만한 내리막으로 기록 단축 황금 구간이며, 36~42km 마무리는 잔잔한 낙타등이 반복됩니다. 10월 중순 경주 평균 17~19도로 마라톤 최적 조건이라 풀코스 PB 도전에 매우 유리합니다.',
-      },
-      {
-        question: '마라톤 + 경주 관광 1박 2일 일정은 어떻게 짜나요?',
-        answer: '추천 일정: ① 토요일 오전 KTX 신경주역 도착 → 점심 황남빵·교리김밥 → 오후 불국사·석굴암 관람 → 저녁 동궁과월지(안압지) 야경 → 경주 시내 숙박. ② 일요일 새벽 경주시민운동장 집결 → 8시 출발 → 풀코스 완주(목표 4-5시간) → 점심 회복식(경주 한정식) → 오후 KTX 복귀. 첨성대·대릉원은 코스 위에서 직접 통과하며 관람할 수 있어 별도 일정이 필요 없습니다.',
-      },
+        "question": "풀코스 참가비는 6만원이었나요?",
+        "answer": "공식 개요는 일반 70,000원·매니아 60,000원으로 나눕니다. 매니아는 티셔츠 미지급 조건이며 2026 당시 요강 기록입니다."
+      }
     ],
-    content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li>동아일보 2026 경주국제마라톤 — 2026년 10월 17일(토) 경주시민운동장 출발, 풀·하프·10K 3종목, 정원 약 15,000명 (2025년 역대 최대)</li>
-    <li><strong>본접수 5월 26일(화) 19시 dongma.club에서 시작됨</strong> — 선착순 진행 중, 정원 빠르게 차므로 잔여·취소표 확인 권장</li>
-    <li><strong>World Athletics 엘리트 라벨</strong>(2025 승격, 국내 유일 지방 대회) + 첨성대·대릉원·동궁과월지 코스 통과 — 동마 3대장 가을 완결편</li>
-  </ul>
-</div>
-
-<div class="callout warning">
-  <span class="callout-icon">🔥</span>
-  <div class="callout-body">
-    <p class="callout-title">본접수 시작됨 (5/26 19시 오픈) — 선착순, 잔여부터 확인</p>
-    <p>경주국제마라톤은 2025년 정원이 빠르게 채워졌고, 2026 본접수는 5월 26일(화) 19시 dongma.club에서 시작됐습니다. 풀·하프·10K 합산 정원이 크지만 인기 종목은 조기 마감될 수 있으니, 참가를 원한다면 <strong>dongma.club에서 잔여 슬롯·취소표 여부를 먼저 확인</strong>하세요. <em>(이 글은 2026-05-28 기준으로 업데이트됐습니다.)</em></p>
-  </div>
-</div>
-
-<h2>핵심 정보 한눈에</h2>
-
-<div class="stat-grid">
-  <div class="stat-card accent">
-    <span class="stat-label">대회일</span>
-    <span class="stat-value">10/17 (토)</span>
-    <span class="stat-sub">경주시민운동장</span>
-  </div>
-  <div class="stat-card">
-    <span class="stat-label">접수 시작</span>
-    <span class="stat-value">5/26 (화)</span>
-    <span class="stat-sub">19시 / dongma.club</span>
-  </div>
-  <div class="stat-card">
-    <span class="stat-label">정원</span>
-    <span class="stat-value">15,000명</span>
-    <span class="stat-sub">2025 역대 최대</span>
-  </div>
-  <div class="stat-card">
-    <span class="stat-label">국제 공인</span>
-    <span class="stat-value">엘리트 라벨</span>
-    <span class="stat-sub">국내 유일 지방 대회</span>
-  </div>
-</div>
-
-<h2>접수부터 대회까지 타임라인</h2>
-
-<div class="timeline">
-  <div class="timeline-item active">
-    <span class="timeline-date">2026.05.26 (화) 19시 — 접수 시작됨</span>
-    <span class="timeline-title">본접수 시작 (dongma.club)</span>
-    <p class="timeline-desc">선착순 진행 중 — 현재 잔여·취소표 여부 확인</p>
-  </div>
-  <div class="timeline-item">
-    <span class="timeline-date">2026.06 ~ 09 (대회 전까지)</span>
-    <span class="timeline-title">취소표·잔여 슬롯 간헐 오픈</span>
-    <p class="timeline-desc">본접수 마감 후에도 취소표가 간헐적으로 풀립니다 — dongma.club 알림을 켜고 모니터링</p>
-  </div>
-  <div class="timeline-item">
-    <span class="timeline-date">2026.09 중후반</span>
-    <span class="timeline-title">레이스팩 안내·교통통제 공지</span>
-    <p class="timeline-desc">기념품, 셔틀버스 운영, 코스 통제 시간 공식 발표</p>
-  </div>
-  <div class="timeline-item">
-    <span class="timeline-date">2026.10.17 (토)</span>
-    <span class="timeline-title">대회 당일 — 경주시민운동장 7~7:30 집결, 8시 출발(추정)</span>
-    <p class="timeline-desc">10월 중순 경주 평균 17-19도, 최저 12도 — 마라톤 최적 조건</p>
-  </div>
-</div>
-
-<h2>종목별 참가비 (2025년 기준)</h2>
-
-<table>
-  <thead>
-    <tr><th>종목</th><th>거리</th><th>참가비 (2025 기준)</th></tr>
-  </thead>
-  <tbody>
-    <tr><td><strong>풀코스</strong></td><td>42.195km</td><td>60,000원</td></tr>
-    <tr><td>하프코스</td><td>21.0975km</td><td>50,000원</td></tr>
-    <tr><td>10K</td><td>10km</td><td>40,000원</td></tr>
-  </tbody>
-</table>
-
-<div class="callout info">
-  <span class="callout-icon">ℹ️</span>
-  <div class="callout-body">
-    <p class="callout-title">2026 공식 참가비는 5/26 접수 오픈 시 확정</p>
-    <p>위 금액은 2025년 기준입니다. 2026년 본접수가 5월 26일 시작되며 정식 참가비·정원이 dongma.club·gyeongjumarathon.com에 게시됐으니, 신청 전 공식 페이지에서 최신 금액을 확인하세요. (2026년은 종목별로 1만원 안팎 인상된 것으로 보도됩니다.)</p>
-  </div>
-</div>
-
-<h2>왜 경주국제마라톤이 특별한가 — 동마 3대장 완결편</h2>
-
-<p>동마클럽이 운영하는 가을 시리즈 3개 대회 중 경주국제는 <strong>가장 늦게 열리는 가을 마라톤이자, 국제 위상이 가장 높은 대회</strong>입니다. 핵심 차별 포인트:</p>
-
-<table>
-  <thead>
-    <tr><th>차별 포인트</th><th>경주국제마라톤</th></tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>국제 공인 등급</strong></td>
-      <td>World Athletics <strong>엘리트 라벨</strong> (2025 승격, 국내 유일 지방 대회)</td>
-    </tr>
-    <tr>
-      <td><strong>코스 위 유적지</strong></td>
-      <td>첨성대·대릉원·천마총·동궁과월지·오릉 — 신라 천년고도 직접 통과</td>
-    </tr>
-    <tr>
-      <td><strong>코스 난이도</strong></td>
-      <td>총 획득고도 146m, 완만 — 풀코스 PB 도전에 적합</td>
-    </tr>
-    <tr>
-      <td><strong>날씨</strong></td>
-      <td>10월 중순 경주 평균 17-19도 — 마라톤 최적 조건</td>
-    </tr>
-    <tr>
-      <td><strong>참가 규모</strong></td>
-      <td>15,000명 (2025 역대 최대) — 동마 시리즈 최대</td>
-    </tr>
-    <tr>
-      <td><strong>관광 시너지</strong></td>
-      <td>불국사·석굴암 + 황남빵·동궁과월지 야경 1박2일 황금 코스</td>
-    </tr>
-  </tbody>
-</table>
-
-<h2>World Athletics 엘리트 라벨이라는 의미</h2>
-
-<p>2025년 경주국제마라톤은 <strong>World Athletics 엘리트 라벨</strong>로 승격됐습니다. 등급 순서는 다음과 같습니다.</p>
-
-<table>
-  <thead>
-    <tr><th>등급</th><th>한국 사례</th><th>주요 조건</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>플래티넘 (최상위)</td><td>서울마라톤</td><td>해외 엘리트 30+, 경기 운영 최상급</td></tr>
-    <tr><td>골드</td><td>대구마라톤</td><td>해외 엘리트 20+, 도핑·페이서 정식</td></tr>
-    <tr><td><strong>엘리트</strong></td><td><strong>경주국제마라톤</strong></td><td>국제 공인 코스, 정식 페이서·도핑</td></tr>
-    <tr><td>라벨</td><td>(다수 도시 대회)</td><td>기본 국제 인증</td></tr>
-  </tbody>
-</table>
-
-<div class="callout tip">
-  <span class="callout-icon">💡</span>
-  <div class="callout-body">
-    <p class="callout-title">엘리트 라벨에서 풀코스 기록의 가치</p>
-    <p>엘리트 라벨 이상에서 달성한 풀코스 기록은 World Athletics 공식 기록으로 인정됩니다. 보스턴마라톤 자격 기록(BQ)이나 다른 메이저 마라톤 신청 시 활용 가능. <strong>2027 서울마라톤 풀코스 그룹 배정용 기록증</strong>으로도 인정됩니다.</p>
-  </div>
-</div>
-
-<h2>코스 — 신라 천년고도 위를 달리는 42.195km</h2>
-
-<p>코스는 경주시민운동장에서 출발해 시내 순환 후 동일 지점 골인 구조입니다. 구간별 특징:</p>
-
-<table>
-  <thead>
-    <tr><th>구간</th><th>특성</th><th>공략 포인트</th></tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>0-5km</strong></td>
-      <td>경주시민운동장 → 시내 진입, 평지</td>
-      <td>오버페이스 금지, 페이스 안정화</td>
-    </tr>
-    <tr>
-      <td><strong>5-16km</strong> ⭐</td>
-      <td>유적지 황금 구간 — 첨성대·대릉원·천마총·동궁과월지 연속 통과</td>
-      <td>풍경 즐기되 페이스 일정 유지</td>
-    </tr>
-    <tr>
-      <td><strong>16-24km</strong></td>
-      <td>북천 오르막 — 약 30m 상승, 코스 최난구간</td>
-      <td>심박 80% 이하, 짧은 보폭으로 효율</td>
-    </tr>
-    <tr>
-      <td><strong>23.5-33km</strong> 🏆</td>
-      <td>완만한 내리막 — 기록 단축 황금 구간</td>
-      <td>페이스 끌어올리기 적기, 다리 회복</td>
-    </tr>
-    <tr>
-      <td><strong>33-42km</strong></td>
-      <td>잔잔한 낙타등 반복, 마무리</td>
-      <td>젤·소금 알약 비축, 의지력 게임</td>
-    </tr>
-  </tbody>
-</table>
-
-<div class="callout info">
-  <span class="callout-icon">🏛</span>
-  <div class="callout-body">
-    <p class="callout-title">코스에 없는 것 — 불국사·석굴암</p>
-    <p>경주의 대표 유적인 불국사·석굴암은 코스에서 통과하지 않습니다. 시내에서 차로 20분 거리 외곽이라 별도 일정이 필요합니다. <strong>대회 전날 도착하면 오후 시간에 불국사·석굴암 → 저녁 동궁과월지 야경</strong> 코스가 정석. 완주 후 일정 여유가 있다면 일요일 오전에 다녀와도 OK.</p>
-  </div>
-</div>
-
-<h2>10월 경주 — 어떤 신발을 신을까</h2>
-
-<p>총 획득고도 146m + 23.5-33km 내리막 + 17-19도 + 아스팔트 시내 코스 — 한 마디로 <strong>풀코스 PB 도전에 가장 좋은 환경</strong>입니다. 종목별·목적별 추천:</p>
-
-<table>
-  <thead>
-    <tr><th>종목 / 목표</th><th>추천 카테고리</th><th>예시 모델</th></tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>풀 PB 도전 (Sub-3:00~3:30)</strong></td>
-      <td>카본 플레이트 레이싱화</td>
-      <td>아디다스 아디오스 프로 4, 나이키 베이퍼플라이 4, ASICS 메타스피드 에지 파리</td>
-    </tr>
-    <tr>
-      <td><strong>풀 안전 완주 (4:00~5:00)</strong></td>
-      <td>슈퍼 트레이너 (쿠션+가벼움)</td>
-      <td><a href="/shoes/asics-superblast-2">ASICS 슈퍼블라스트 2</a>, <a href="/shoes/nike-pegasus-plus">나이키 페가수스 플러스</a></td>
-    </tr>
-    <tr>
-      <td><strong>하프 (안정 페이스)</strong></td>
-      <td>경량 카본 또는 슈퍼 트레이너</td>
-      <td><a href="/shoes/nike-zoom-fly-6">줌 플라이 6</a>, <a href="/shoes/hoka-mach-x-3">호카 마하 X 3</a></td>
-    </tr>
-    <tr>
-      <td><strong>10K (즐기는 페이스)</strong></td>
-      <td>쿠션 데일리 트레이너</td>
-      <td><a href="/shoes/nike-pegasus-42">페가수스 42</a>, <a href="/shoes/new-balance-1080-v15">1080 v15</a>, GT-2000 14</td>
-    </tr>
-  </tbody>
-</table>
-
-<div class="callout tip">
-  <span class="callout-icon">⛰</span>
-  <div class="callout-body">
-    <p class="callout-title">23.5-33km 내리막 대비 — 힐 쿠셔닝 우선</p>
-    <p>경주국제마라톤의 황금 구간(23.5-33km 내리막)에서는 페이스를 끌어올리되, 동시에 무릎과 종아리에 충격이 누적됩니다. 카본 플레이트화 중에서도 <strong>힐 쿠셔닝이 충분한 모델</strong>(아디오스 프로·메타스피드 에지)이 알파플라이·베이퍼플라이보다 안전합니다. 풀코스 후반 30km 이후 경련 위험을 줄이는 핵심.</p>
-  </div>
-</div>
-
-<h2>교통·숙박 — 경주는 KTX보다 시내 접근성이 핵심</h2>
-
-<table>
-  <thead>
-    <tr><th>수단</th><th>경로</th><th>소요 시간</th></tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>KTX (빠름)</strong></td>
-      <td>서울역 → 신경주역(건천읍) → 시내버스·택시 20-30분</td>
-      <td>약 2시간 10분 + α</td>
-    </tr>
-    <tr>
-      <td><strong>고속버스 (편함)</strong></td>
-      <td>서울 경부 → 경주 시외터미널 → 대회장 택시 10분</td>
-      <td>약 3시간 30분</td>
-    </tr>
-    <tr>
-      <td>자가용</td>
-      <td>경부고속도로 → 경주IC</td>
-      <td>약 4시간 (대회 당일 통제)</td>
-    </tr>
-  </tbody>
-</table>
-
-<div class="callout warning">
-  <span class="callout-icon">🚄</span>
-  <div class="callout-body">
-    <p class="callout-title">신경주역은 시내가 아니라 건천읍</p>
-    <p>KTX 신경주역은 건천읍 외곽에 있어 경주 시내까지 추가 이동(20-30분)이 필요합니다. 가성비를 따진다면 <strong>고속버스가 사실상 더 편할 수 있습니다</strong> — 시외터미널이 시내 한가운데 있어 대회장·숙소 접근성이 좋습니다. 대회 당일 셔틀버스는 운영되지만 조기 마감되니 사전 신청 확인 필수.</p>
-  </div>
-</div>
-
-<h2>경주 1박 2일 마라톤 + 관광 추천 일정</h2>
-
-<table>
-  <thead>
-    <tr><th>시점</th><th>일정</th></tr>
-  </thead>
-  <tbody>
-    <tr><td><strong>토요일 오전</strong></td><td>KTX 신경주역 도착 → 시내 이동 → 점심 (황남빵·교리김밥)</td></tr>
-    <tr><td>토요일 오후</td><td>불국사·석굴암 (외곽 30분 거리)</td></tr>
-    <tr><td>토요일 저녁</td><td>동궁과월지(안압지) 야경 → 경주 시내 한정식 → 호텔 체크인 (경주 시내 도보권)</td></tr>
-    <tr><td><strong>일요일 새벽</strong></td><td>06:00 기상 → 체조·간단한 식사 → 경주시민운동장 집결 (도보·셔틀)</td></tr>
-    <tr><td>일요일 오전</td><td>08:00 출발 → 풀코스 완주 (목표 4-5시간)</td></tr>
-    <tr><td>일요일 오후</td><td>회복식 → 황남빵 선물 → KTX 복귀</td></tr>
-  </tbody>
-</table>
-
-<h2>2025년 대회 후기</h2>
-
-<p>2025년 경주국제마라톤은 <strong>역대 최대 15,000명</strong>이 참가하며 World Athletics 엘리트 라벨 첫 해를 기념했습니다. 풀코스 우승은 아일랜드 퍼갈 커틴이 차지했고, APEC 정상회의 시점과 겹쳐 국제 관광 효과까지 누렸습니다.</p>
-
-<ul>
-  <li>"평지에 가까운 코스 + 가을 최적 기온 = PB 잘 나오는 마라톤"</li>
-  <li>"23.5-33km 내리막 구간에서 페이스 끌어올리기 황금 시간"</li>
-  <li>"첨성대·대릉원 통과할 때 풍경에 압도, 페이스 까먹지 말 것"</li>
-  <li>"동궁과월지 야경 + 황남빵 선물 = 가족 단위 만족도 최상"</li>
-  <li>"불국사 미통과는 아쉽지만 전날 다녀오면 충분"</li>
-</ul>
-
-<h2>5월 동마 4개 대회 캘린더 — 이번 시즌 종합</h2>
-
-<p>경주국제마라톤은 동마 가을 시리즈의 <strong>마지막 퍼즐</strong>입니다. 4개 대회 모두 5월에 접수가 열리니 시즌 전체 일정으로 잡으면 효율적:</p>
-
-<table>
-  <thead>
-    <tr><th>대회</th><th>대회일</th><th>접수일</th><th>관련 글</th></tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>2027 서울마라톤</td>
-      <td>2027.03.21</td>
-      <td>우선 5/18~22 / 본 6/1~3</td>
-      <td><a href="/blog/2027-seoul-marathon-priority-d10">우선접수 D-10 가이드</a></td>
-    </tr>
-    <tr>
-      <td>2026 공주백제마라톤</td>
-      <td>2026.09.20</td>
-      <td>우선 5/11~15 / 본 5/21</td>
-      <td><a href="/blog/2026-gongju-baekje-marathon">평지 입문 풀코스</a></td>
-    </tr>
-    <tr>
-      <td>2026 서울레이스 (하프·10K)</td>
-      <td>2026.10.11</td>
-      <td>본접수 5/27 19시·21시</td>
-      <td>(별도 발행 예정)</td>
-    </tr>
-    <tr>
-      <td><strong>2026 경주국제마라톤</strong></td>
-      <td><strong>2026.10.17</strong></td>
-      <td><strong>접수 5/26 19시</strong></td>
-      <td><strong>이 글</strong></td>
-    </tr>
-  </tbody>
-</table>
-
-<p>10월 17일에는 같은 날 충북 청주에서 <a href="/blog/2026-daecheongho-marathon">청원생명쌀 대청호마라톤</a>도 열립니다. 경주(엘리트 라벨, 풀 PB 도전)와 대청호(가성비, 10km·5km 입문)는 성격이 완전히 달라서 동시에 도전 가능한 옵션입니다.</p>
-
-<h2>접수 체크리스트</h2>
-
-<div class="cta-box">
-  <h3>접수 진행 중 — 신청·잔여 확인 체크리스트</h3>
-  <ul>
-    <li>✅ <strong>잔여 슬롯·취소표 확인</strong> — dongma.club에서 종목별 마감 여부부터 확인</li>
-    <li>✅ <strong>동마클럽 회원가입·로그인</strong> — dongma.club 마이페이지 접속 가능 상태</li>
-    <li>✅ <strong>결제 수단 등록</strong> — 카드 + 카카오/네이버페이</li>
-    <li>✅ <strong>취소표 알림 설정</strong> — 마감됐다면 대회 전까지 풀리는 취소표 모니터링</li>
-    <li>✅ <strong>전날 경주 숙박 예약</strong> — 가을 단풍 + APEC 후 관광 붐, 빠른 마감</li>
-    <li>✅ <strong>러닝화 결정</strong> — PB 도전이라면 카본 레이싱화 6-8주 전 길들이기, <a href="/recommend">맞춤 추천</a> 활용</li>
-    <li>📱 <strong>접수 사이트</strong>: <a href="https://dongma.club/" target="_blank" rel="noopener">dongma.club</a> · 공식 <a href="https://www.gyeongjumarathon.com/" target="_blank" rel="noopener">gyeongjumarathon.com</a></li>
-  </ul>
-</div>
-
-<p class="text-sm text-gray-500 mt-8">
-※ 데이터 출처: <a href="https://www.gyeongjumarathon.com/" target="_blank" rel="noopener">경주국제마라톤 공식</a>, <a href="https://dongma.club/" target="_blank" rel="noopener">동마클럽</a>, <a href="https://www.instagram.com/dongmaclub/p/DXyYzWVD0ut/" target="_blank" rel="noopener">@dongmaclub 5월 캘린더</a>, runningwikii(2025년 참가비·코스), 한국육상연맹·sports.news.nate.com(2025 대회 보도). 2026년 본접수(5/26 시작)·참가비·정원은 dongma.club·gyeongjumarathon.com 공식 공지로 확정됐으니, 신청 전 최신 정보를 확인하세요.
-</p>
-`,
+    content: `<p><small>2026년 11월 10일 주최 원문 대조. 2026 개최·후속 절차와 다음 연도 모집을 구분합니다.</small></p>
+<p>2026 경주국제마라톤은 10월 17일 경주시민운동장 일원에서 진행한 대회다. <a href="https://www.gyeongjumarathon.com/38" target="_blank" rel="noopener noreferrer">공식 개요</a>의 종목은 풀·하프·10km다. 지난 접수 글은 지금 필요한 기록 확인과 기록증 후속 절차로 갱신했다.</p>
+<h2>내 기록은 동아 기록실의 2026 경주에서</h2><p><a href="https://www.gyeongjumarathon.com/52/?bmode=view&amp;idx=175164500" target="_blank" rel="noopener noreferrer">10월 19일 주최 기록 확인 안내</a>는 스마트칩에서 동아 기록실을 누르고 ‘2026 경주마라톤’을 고른 뒤 배번호 또는 이름으로 검색하도록 안내한다. 같은 계측 사이트에 여러 대회가 있어 연도·대회명·종목을 먼저 확인하는 것이 좋다.</p>
+<ol><li><a href="https://smartchip.co.kr/main.html" target="_blank" rel="noopener noreferrer">스마트칩</a>의 동아 기록실로 이동한다.</li><li>2026 경주마라톤을 선택한다.</li><li>이름 또는 배번호로 본인 기록을 확인한다.</li><li>보관할 기록증·결과의 종목과 기록을 다시 대조한다.</li></ol>
+<h2>종이기록증은 자동 배송이 아닌 별도 신청이었다</h2><p><a href="https://www.gyeongjumarathon.com/52/?bmode=view&amp;idx=175204250" target="_blank" rel="noopener noreferrer">10월 21일 종이기록증 공지</a>의 신청 기간은 10월 21~27일 17:00이었다. 동마클럽 참가접수의 종이기록증 신청에서 코스·이름·배번호를 입력하는 절차였으며 현재 이 기한은 지났다.</p>
+<p>해당 안내는 국내 주소로만 우편 발송하고 재발송은 하지 않는다고 적었다. 신청 후 주소를 직접 바꿀 수 없어 변경이 필요하면 사무국에 연락해야 한다. 실격·중도포기·기록 문제 등으로 발급 대상이 아니면 종이기록증을 받을 수 없다는 조건도 함께 있다.</p>
+<h2>국제부 순위와 마스터스 시상 자격을 구분</h2><p><a href="https://www.gyeongjumarathon.com/52/?bmode=view&amp;idx=175135989" target="_blank" rel="noopener noreferrer">10월 17일 마스터스 시상 대상 공지</a>는 마스터스 시상을 대한민국 국적 참가자로 한정하고 외국 국적 참가자는 제외한다고 안내한다. 이는 해당 대회 해당 부문의 시상 조건이다. 일반적인 완주 기록 조회 가능 여부나 다른 대회의 국적 규정으로 확대해 읽을 내용은 아니다.</p>
+<h2>당시 요금도 일반·매니아가 달랐다</h2><p>공식 개요 이미지의 일반/매니아 요금은 풀 70,000/60,000원, 하프 60,000/50,000원, 10km 50,000/40,000원이다. 매니아에는 티셔츠를 지급하지 않는다는 조건이 붙었다. 기존 글의 낮은 요금만 보고 모든 참가자에게 같은 가격·구성이었다고 오해하지 않도록 구분한다. 이 표기는 2026 요강 기록이며 지금 판매하는 티켓 가격이 아니다.</p>
+<p>다음 시즌을 기다린다면 2026의 코스·접수 시각·기념품을 복사하기보다 새 요강을 확인하자. 기록증은 보관하되 다른 대회에 제출할 때는 그 대회의 인정 기간·종목 조건을 따로 읽어야 한다.</p>
+<h2>자주 묻는 질문</h2><h3>공식 기록은 어디서 찾나요?</h3><p>스마트칩의 동아 기록실에서 2026 경주마라톤을 선택한 뒤 배번호나 이름으로 조회하라는 주최 안내가 있습니다.</p><h3>종이기록증은 지금 신청할 수 있나요?</h3><p>공식 신청 기한은 10월 27일 17:00로 지났습니다. 예외 접수가 가능하다고 이번에 확인하지 않았습니다.</p><h3>기록증 주소를 직접 바꿀 수 있나요?</h3><p>종이기록증 공지는 신청 후 직접 주소 수정이 안 되며 사무국에 연락해야 한다고 안내합니다. 국내 주소만 발송하고 재발송은 하지 않는 조건입니다.</p><h3>풀코스 참가비는 6만원이었나요?</h3><p>공식 개요는 일반 70,000원·매니아 60,000원으로 나눕니다. 매니아는 티셔츠 미지급 조건이며 2026 당시 요강 기록입니다.</p>`,
   },
   {
     id: "2027-seoul-marathon-priority-d10",
@@ -6289,297 +5666,64 @@ export const posts_2026_05: BlogPost[] = [
 `,
   },
   {
-    id: '2026-gongju-baekje-marathon',
-    slug: '2026-gongju-baekje-marathon',
-    title: '2026 공주백제마라톤 우선접수 D-4 | 9월 20일 금강변 평지 풀코스, 동마클럽 멤버십 5/11 오픈',
-    description: '2026 공주백제마라톤 동마클럽 우선접수가 5월 11일(월) 시작됩니다. 9월 20일(일) 공주시민운동장 출발, 금강변 백제큰길 왕복 평지 코스. 풀·32K·하프·10K·5K 5종목, 유네스코 세계유산 공산성·무령왕릉 인근 통과. 본접수는 5월 21일 — 동마 가을 입문 풀코스 정답.',
-    thumbnail: '/images/blog/2026-gongju-baekje-marathon.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-05-07',
-    category: 'news' as const,
-    readingTime: 7,
-    tags: ['공주백제마라톤', '공주백제 마라톤', '동마클럽', '동아마라톤', '가을 마라톤', '풀코스 입문', '금강 마라톤', '대회 일정'],
+    id: "2026-gongju-baekje-marathon",
+    slug: "2026-gongju-baekje-marathon",
+    title: "2026 공주백제마라톤 종료 후: 공식 기록증·종이 신청 마감과 32.195km 구분",
+    description: "공식 요강은 풀·32.195km·하프·10km이며 5km는 없습니다. 9월 22일부터 공식 기록증 확인 안내가 있고 종이 신청은 10월 14일 14시 종료됐습니다. 일반/매니아 요금도 구분합니다.",
+    thumbnail: "/images/blog/verified-2026-gongju-baekje-marathon-20261110.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-05-07",
+    category: "news",
+    readingTime: 5,
+    tags: [
+      "공주백제마라톤",
+      "공주백제 마라톤",
+      "동마클럽",
+      "동아마라톤",
+      "가을 마라톤",
+      "대회 일정",
+      "32.195km",
+      "공식 기록증"
+    ],
     event: {
-      name: '2026 공주백제마라톤',
-      startDate: '2026-09-20T08:00:00+09:00',
-      location: {
-        name: '공주시민운동장',
-        address: '충청남도 공주시',
+      "name": "2026 공주백제마라톤",
+      "startDate": "2026-09-20",
+      "location": {
+        "name": "공주시민운동장",
+        "address": "충청남도 공주시"
       },
-      organizer: '동아일보 (동마클럽)',
-      url: 'https://dongma.club/',
-      offers: [
-        { name: '풀코스 (42.195km)', priceKrw: 60000, availabilityEnds: '2026-05-21', url: 'https://dongma.club/' },
-        { name: '32K', priceKrw: 60000, availabilityEnds: '2026-05-21', url: 'https://dongma.club/' },
-        { name: '하프 (21.0975km)', priceKrw: 40000, availabilityEnds: '2026-05-21', url: 'https://dongma.club/' },
-        { name: '10K', priceKrw: 40000, availabilityEnds: '2026-05-21', url: 'https://dongma.club/' },
-        { name: '5K', priceKrw: 20000, availabilityEnds: '2026-05-21', url: 'https://dongma.club/' },
-      ],
+      "organizer": "동아마라톤 조직위원회",
+      "url": "https://www.gongjumarathon.com/29"
     },
     faqs: [
       {
-        question: '우선접수랑 본접수가 뭐가 다른가요?',
-        answer: '우선접수(5월 11~15일)는 동아마라톤 멤버십(동마클럽) 가입자만 신청 가능하며, 본접수(5월 21일~ 선착순) 전에 자리를 먼저 확보할 수 있습니다. 멤버십은 연회비 15만원으로 공주백제·경주국제마라톤 참가권 + 2027 서울마라톤 우선신청권이 모두 포함되어, 1년에 동마 시리즈 3대회를 다 뛸 계획이라면 본접수 단발 결제보다 가성비가 좋습니다.',
+        "question": "공주에 5km가 있었나요?",
+        "answer": "이번에 대조한 2026 공식 요강은 풀·32.195km·하프·10km 네 종목입니다. 기존 글의 5km 안내를 바로잡았습니다."
       },
       {
-        question: '풀코스 첫 도전인데 공주백제 괜찮나요?',
-        answer: '동마 시리즈 중 가장 입문 친화적입니다. 금강변 백제큰길 왕복 평지 코스로 누적 고도가 매우 낮아 기록 단축에 유리하며, 풀코스 제한시간이 5시간으로 넉넉합니다. 9월 20일 충남 평균 기온 20-24도로 가을 풀코스 입문 적기입니다. 단, 9월 중순은 아직 따뜻할 수 있으니 초반 페이스 관리와 보급 전략이 중요합니다.',
+        "question": "32K를 풀코스 기록으로 제출해도 되나요?",
+        "answer": "요강의 거리는 32.195km로 풀 42.195km와 다릅니다. 제출 대상 대회가 어떤 거리 기록을 인정하는지 별도로 확인해야 합니다."
       },
       {
-        question: '서울에서 공주까지 어떻게 가나요?',
-        answer: 'KTX(호남선) 서울역·용산역에서 공주역까지 약 1시간 15분, 공주역에서 대회장까지 차로 25분입니다. 자가용은 대회 당일 조기 만차 빈번하므로 비추천이며, 전날 공주 시내 숙박이 가장 안전합니다. 셔틀버스 운영 여부는 대회 2주 전 dongma.club 공지를 확인하세요.',
+        "question": "공식 기록증은 어디서 받나요?",
+        "answer": "주최는 9월 22일 검수 완료를 알렸습니다. 스마트칩 동아 기록실의 2026 공주백제마라톤에서 배번호를 입력하고 기록증 버튼을 이용합니다."
       },
       {
-        question: '32K 종목은 왜 있나요?',
-        answer: '풀코스(42.195km) 직전 단계의 LSD(장거리 지구력) 훈련 또는 가을 풀코스 시즌 막바지 컨디셔닝용으로 기획된 종목입니다. 동마 시리즈 특유의 옵션으로, "풀은 부담스럽지만 하프(21km)는 짧다"는 중간 러너에게 유용합니다. 참가비는 풀과 동일(60,000원, 멤버십 50,000원)입니다.',
-      },
-      {
-        question: '어떤 러닝화를 신어야 하나요?',
-        answer: '금강변 평지 아스팔트 + 9월 중순 20-25도 환경에 따라 두 갈래로 나뉩니다. ① 풀코스 PB 도전 → 카본 플레이트 레이싱화 (아디다스 아디오스 프로 4, 나이키 베이퍼플라이 4 등). ② 입문·완주 목적 → 쿠션 데일리 트레이너 (아식스 GT-2000 14, 뉴발란스 1080 v15, 나이키 페가수스 42). 평지 코스라 안정화는 굳이 필요 없으며, 발볼 넓다면 와이드 옵션이 있는 모델 권장.',
-      },
+        "question": "종이기록증 신청은 계속 열려 있나요?",
+        "answer": "안내된 기한은 10월 14일 14:00로 종료됐습니다. 온라인 기록 조회와 종이 신청을 구분하며 기한 후 신규 신청은 확인하지 않았습니다."
+      }
     ],
-    content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li>2026년 9월 20일(일) 공주시민운동장 출발 — 금강변 백제큰길 왕복 평지 코스, 풀·32K·하프·10K·5K 5종목</li>
-    <li>우선접수 <strong>5월 11일(월) ~ 5월 15일(금)</strong> 동마클럽 멤버십 전용 → 본접수 <strong>5월 21일(목)</strong> 오픈 선착순 (정원 약 12,000명)</li>
-    <li>유네스코 세계문화유산 <strong>공산성·무령왕릉 인근 통과</strong>, 동마 시리즈 중 가장 입문 친화적 풀코스 — 가을 PB 도전 + 백제 고도 관광 동시 가능</li>
-  </ul>
-</div>
-
-<div class="callout warning">
-  <span class="callout-icon">⚠️</span>
-  <div class="callout-body">
-    <p class="callout-title">우선접수 D-4 — 5월 11일(월) 오픈</p>
-    <p>동마클럽 멤버십(연회비 15만원) 가입자는 본접수 전인 <strong>5월 11일(월) ~ 5월 15일(금)</strong>에 우선 신청 가능합니다. 멤버십에는 공주백제·경주국제 참가권과 2027 서울마라톤 우선신청권이 포함돼 있어, 동마 가을 시리즈를 다 뛰려면 단발 결제보다 멤버십이 유리합니다. 본접수는 5월 21일(목) 오픈, 정원 약 12,000명 선착순으로 작년 풀코스는 조기 마감됐습니다.</p>
-  </div>
-</div>
-
-<h2>핵심 정보 한눈에</h2>
-
-<div class="stat-grid">
-  <div class="stat-card accent">
-    <span class="stat-label">대회일</span>
-    <span class="stat-value">9/20 (일)</span>
-    <span class="stat-sub">2026 가을</span>
-  </div>
-  <div class="stat-card">
-    <span class="stat-label">풀코스 42.195km</span>
-    <span class="stat-value">60,000원</span>
-    <span class="stat-sub">제한시간 5시간</span>
-  </div>
-  <div class="stat-card">
-    <span class="stat-label">코스 특징</span>
-    <span class="stat-value">금강변 평지</span>
-    <span class="stat-sub">고도차 거의 없음</span>
-  </div>
-  <div class="stat-card">
-    <span class="stat-label">우선접수</span>
-    <span class="stat-value">5/11 ~ 5/15</span>
-    <span class="stat-sub">멤버십 전용</span>
-  </div>
-</div>
-
-<h2>접수부터 대회까지 타임라인</h2>
-
-<div class="timeline">
-  <div class="timeline-item active">
-    <span class="timeline-date">2026.05.11 (월) — D-4</span>
-    <span class="timeline-title">우선접수 시작 (멤버십 전용)</span>
-    <p class="timeline-desc">동마클럽 멤버십 가입자 대상 — 5일간 운영, 전 종목 신청 가능</p>
-  </div>
-  <div class="timeline-item">
-    <span class="timeline-date">2026.05.15 (금)</span>
-    <span class="timeline-title">우선접수 마감</span>
-    <p class="timeline-desc">멤버십 자리 확보 마지막 기회</p>
-  </div>
-  <div class="timeline-item">
-    <span class="timeline-date">2026.05.21 (목)</span>
-    <span class="timeline-title">본접수 오픈 (일반 선착순)</span>
-    <p class="timeline-desc">dongma.club에서 일반 신청 시작 — 풀·32K 종목은 빠르게 마감 예상</p>
-  </div>
-  <div class="timeline-item">
-    <span class="timeline-date">2026.09 초중순</span>
-    <span class="timeline-title">레이스팩 안내·교통통제 공지</span>
-    <p class="timeline-desc">기념품 수령, 셔틀버스, 교통통제 시간 공식 발표</p>
-  </div>
-  <div class="timeline-item">
-    <span class="timeline-date">2026.09.20 (일)</span>
-    <span class="timeline-title">대회 당일 — 공주시민운동장</span>
-    <p class="timeline-desc">금강변 백제큰길 왕복 코스, 충남 9월 평균 20-24도</p>
-  </div>
-</div>
-
-<h2>종목별 참가비 (2025년 기준 — 2026년 동일 추정)</h2>
-
-<table>
-  <thead>
-    <tr><th>종목</th><th>거리</th><th>일반</th><th>멤버십</th><th>제한시간</th></tr>
-  </thead>
-  <tbody>
-    <tr><td><strong>풀코스</strong></td><td>42.195km</td><td>60,000원</td><td>50,000원</td><td>5시간</td></tr>
-    <tr><td>32K</td><td>32km</td><td>60,000원</td><td>50,000원</td><td>4시간</td></tr>
-    <tr><td>하프</td><td>21.0975km</td><td>40,000원</td><td>30,000원</td><td>—</td></tr>
-    <tr><td>10K</td><td>10km</td><td>40,000원</td><td>30,000원</td><td>—</td></tr>
-    <tr><td>5K</td><td>5km</td><td>20,000원</td><td>10,000원</td><td>—</td></tr>
-  </tbody>
-</table>
-
-<div class="callout info">
-  <span class="callout-icon">ℹ️</span>
-  <div class="callout-body">
-    <p class="callout-title">참가비는 2025년 기준 — 2026년 공식 발표 전</p>
-    <p>위 금액은 2025년 공주백제마라톤 기준으로, 2026년 정식 공지는 5월 11일 우선접수 오픈 시 dongma.club에 게시됩니다. 일반적으로 동마 시리즈는 전년 대비 변동 없거나 5,000~10,000원 인상이 있을 수 있습니다.</p>
-  </div>
-</div>
-
-<h2>왜 공주백제가 풀코스 입문에 좋은가</h2>
-
-<p>동마클럽이 운영하는 가을 시리즈 3개 대회(서울국제·공주백제·경주국제) 중 <strong>공주백제는 가장 입문자 친화적인 풀코스</strong>로 평가됩니다. 이유는 세 가지입니다.</p>
-
-<table>
-  <thead>
-    <tr><th>특징</th><th>공주백제</th><th>일반 도시 마라톤</th></tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>코스 고도</strong></td>
-      <td>금강변 평지, 누적 고도 거의 없음</td>
-      <td>도심 굴곡 있음 (서울국제 잠실 일대 약 50m)</td>
-    </tr>
-    <tr>
-      <td><strong>풀 제한시간</strong></td>
-      <td>5시간 (넉넉)</td>
-      <td>4-5시간 (대회 따라)</td>
-    </tr>
-    <tr>
-      <td><strong>참가 규모</strong></td>
-      <td>약 12,000명 (혼잡 적음)</td>
-      <td>30,000명+ (출발 정체)</td>
-    </tr>
-    <tr>
-      <td><strong>지역 매력</strong></td>
-      <td>유네스코 백제 고도, 가을 단풍</td>
-      <td>도심 풍경 중심</td>
-    </tr>
-  </tbody>
-</table>
-
-<h2>코스 매력 — 백제 1500년 위에서 달린다</h2>
-
-<p>공주는 <strong>475년 백제의 두 번째 수도(웅진)</strong>로, 무령왕릉을 품은 송산리 고분군과 공산성이 2015년 유네스코 세계문화유산으로 등재된 곳입니다. 코스는 공주시민운동장에서 출발해 금강변 백제큰길을 따라 왕복하며, 공산성 성벽과 무령왕릉 인근을 지나갑니다.</p>
-
-<ul>
-  <li><strong>금강 수변 풍경</strong> — 9월 중순 가을 초입의 단풍과 강변 풍경, 사진 찍기 좋은 구간 다수</li>
-  <li><strong>공산성 통과</strong> — 백제·고려·조선 3시대를 관통하는 토석성. 16km/26km 인근 지점에서 좌측 시야</li>
-  <li><strong>무령왕릉 인근</strong> — 백제 25대 왕 무령왕의 무덤. 코스 중간 보급 포인트와 가까움</li>
-  <li><strong>도심 통과 구간</strong> — 공주 시내 약 5km 구간 교통통제, 시민 응원 활발</li>
-</ul>
-
-<div class="callout tip">
-  <span class="callout-icon">💡</span>
-  <div class="callout-body">
-    <p class="callout-title">기록 단축 도전자에게 좋은 이유</p>
-    <p>금강변 평지 코스는 강풍만 없으면 사실상 무굴곡입니다. 9월 20일 충남 평균 기온이 20-24도로 다소 따뜻한 편이지만, 출발 시간(보통 8시) 기준 18-20도로 시작해 풀코스 종료 시점까지 25도 안쪽이라 기록 도전 환경으로는 합격선입니다. <a href="/blog/marathon-pacing-mental-strategy-guide">마라톤 페이싱 전략</a>을 미리 잡고 입장하세요.</p>
-  </div>
-</div>
-
-<h2>9월 공주 — 어떤 신발을 신을까</h2>
-
-<p>금강변 평지 + 20-25도 + 5시간 제한이라는 조건에서 신발 선택은 <strong>"기록 도전 vs 안전 완주"</strong> 두 갈래로 나뉩니다.</p>
-
-<table>
-  <thead>
-    <tr><th>목표</th><th>추천 카테고리</th><th>예시 모델</th></tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>풀 PB 도전 (Sub-3:30~4:00)</strong></td>
-      <td>카본 플레이트 레이싱화</td>
-      <td>아디다스 아디오스 프로 4, 나이키 베이퍼플라이 4, ASICS 메타스피드 에지 파리</td>
-    </tr>
-    <tr>
-      <td><strong>완주 목표 입문 (4:30~5:00)</strong></td>
-      <td>쿠션 데일리 트레이너</td>
-      <td>ASICS GT-2000 14, <a href="/shoes/new-balance-1080-v15">뉴발란스 1080 v15</a>, <a href="/shoes/nike-pegasus-42">나이키 페가수스 42</a></td>
-    </tr>
-    <tr>
-      <td><strong>32K 훈련용 LSD</strong></td>
-      <td>맥시멀 쿠션</td>
-      <td><a href="/shoes/hoka-clifton-10">호카 클리프턴 10</a>, <a href="/shoes/asics-novablast-5">ASICS 노바블라스트 5</a></td>
-    </tr>
-    <tr>
-      <td><strong>하프·10K (가벼운 페이스)</strong></td>
-      <td>경량 슈퍼 트레이너</td>
-      <td><a href="/shoes/nike-pegasus-plus">나이키 페가수스 플러스</a>, <a href="/shoes/nike-zoom-fly-6">줌 플라이 6</a></td>
-    </tr>
-  </tbody>
-</table>
-
-<p>발볼이 넓다면 와이드 옵션이 있는 모델을 우선하세요 (페가수스 42·1080 v15·GT-2000 14는 한국 와이드 SKU 정식 출시). <a href="/recommend">맞춤 신발 추천</a>에서 본인 발 특성에 맞는 모델을 1분 안에 확인할 수 있습니다.</p>
-
-<h2>교통·숙박 가이드</h2>
-
-<table>
-  <thead>
-    <tr><th>수단</th><th>경로</th><th>소요 시간</th></tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>KTX (권장)</strong></td>
-      <td>서울역·용산역 → 공주역 (호남선) → 대회장 차로 25분</td>
-      <td>약 1시간 40분</td>
-    </tr>
-    <tr>
-      <td>고속버스</td>
-      <td>서울 경부터미널 → 공주종합버스터미널 → 택시 10분</td>
-      <td>약 1시간 40분</td>
-    </tr>
-    <tr>
-      <td>자가용</td>
-      <td>경부고속도로 → 천안논산고속도로 → 공주IC</td>
-      <td>약 2시간 (대회 당일 통제)</td>
-    </tr>
-  </tbody>
-</table>
-
-<div class="callout warning">
-  <span class="callout-icon">🚗</span>
-  <div class="callout-body">
-    <p class="callout-title">자가용보다 KTX + 전날 숙박</p>
-    <p>대회 당일 공주시민운동장 인근 주차장은 새벽 6시 전 만차됩니다. KTX로 당일 오전 도착도 가능하지만, 풀코스 출발(8시 추정) 시간을 고려하면 <strong>전날 공주 시내 숙박</strong>이 가장 안전합니다. 공주 시내 호텔·게스트하우스는 대회 한 달 전부터 빠르게 마감되니 접수 확정 직후 예약하세요.</p>
-  </div>
-</div>
-
-<h2>2025년 대회로 본 분위기</h2>
-
-<p>2025년 공주백제마라톤에는 <strong>참가자 약 1만 명</strong>이 모였습니다. 참가 전에 알아둘 점:</p>
-
-<ul>
-  <li>금강변 백제큰길 왕복 평지 코스에 풀코스 제한시간 5시간 — 첫 풀코스 완주를 노리기 좋은 조건</li>
-  <li>유네스코 세계문화유산 공산성·무령왕릉 인근을 지나 관광을 겸하기 좋음</li>
-  <li>대회 후 공주 한옥마을·공산성 관광 일정을 붙이면 1박 2일 일정 완성</li>
-</ul>
-
-<h2>접수 체크리스트</h2>
-
-<div class="cta-box">
-  <h3>5월 11일(월) 우선접수 전 준비할 것</h3>
-  <ul>
-    <li>✅ <strong>동마클럽 멤버십</strong> 가입 여부 확인 (연회비 15만원, 가을 3대회 + 2027 서울 우선권)</li>
-    <li>✅ <strong>참가 종목 결정</strong> — 풀(60,000원) / 32K(60,000원) / 하프(40,000원) / 10K(40,000원) / 5K(20,000원)</li>
-    <li>✅ <strong>본인 기록 확인</strong> (풀코스 5시간 컷오프 통과 가능 여부)</li>
-    <li>✅ <strong>전날 숙박 예약</strong> — 공주 시내 호텔·게스트하우스 (접수 확정 후 즉시)</li>
-    <li>✅ <strong>러닝화 결정</strong> — <a href="/recommend">1분 추천</a>으로 본인 발에 맞는 모델 확인</li>
-    <li>📱 <strong>접수 사이트</strong>: <a href="https://dongma.club/" target="_blank" rel="noopener">dongma.club</a></li>
-  </ul>
-</div>
-
-<p class="text-sm text-gray-500 mt-8">
-※ 데이터 출처: <a href="https://dongma.club/" target="_blank" rel="noopener">동마클럽 공식</a>, <a href="https://www.instagram.com/dongmaclub/p/DXyYzWVD0ut/" target="_blank" rel="noopener">@dongmaclub 5월 접수 캘린더</a>, runningwikii(2025년 참가비·정원 기준). 2026년 공식 참가비·셔틀·정원은 5월 11일 우선접수 오픈 시점 dongma.club 공지로 최종 확인하세요.
-</p>
-`,
+    content: `<p><small>2026년 11월 10일 주최 원문 대조. 2026 개최·후속 절차와 다음 연도 모집을 구분합니다.</small></p>
+<p>2026 공주백제마라톤은 9월 20일 08:00 공주시민운동장에서 출발한 대회다. <a href="https://www.gongjumarathon.com/29" target="_blank" rel="noopener noreferrer">공식 요강 이미지</a>를 다시 읽어 기존의 종목·요금을 바로잡았다. 종목은 풀 42.195km·32.195km·하프 21.0975km·10km이며, 이 요강에 5km는 없다.</p>
+<h2>32.195km는 풀마라톤 완주 기록과 다르다</h2><p>명칭에 ‘32K’라고 적어도 요강의 정확한 거리는 32.195km다. 완주 거리가 다르면 다른 대회의 풀코스 기록 제출 자격과도 달라질 수 있다. 기록증을 제출할 곳의 인정 거리와 기간을 먼저 확인하자.</p>
+<h2>일반과 매니아의 요금·구성이 달랐다</h2><table><thead><tr><th>2026 종목</th><th>일반</th><th>매니아</th></tr></thead><tbody><tr><td>풀·32.195km</td><td>70,000원</td><td>60,000원</td></tr><tr><td>하프</td><td>60,000원</td><td>50,000원</td></tr><tr><td>10km</td><td>50,000원</td><td>40,000원</td></tr></tbody></table><p>매니아 참가자에게는 티셔츠를 지급하지 않는 조건이었다. 낮은 가격만 떼어 기본 참가비로 적으면 구성이 같다고 오해할 수 있다. 이는 지난 대회 요강이며 다음 연도 가격·기념품을 보장하지 않는다.</p>
+<h2>공식 기록증은 스마트칩 동아 기록실</h2><p><a href="https://www.gongjumarathon.com/45/?bmode=view&amp;idx=174634912" target="_blank" rel="noopener noreferrer">9월 22일 주최 공지</a>는 기록 검수가 끝나 공식 기록증을 확인할 수 있다고 안내했다. 스마트칩 → 동아 기록실 → 2026 공주백제마라톤 → 배번호 입력 → 기록증 버튼 순서다. 본인 종목·배번호·이름을 대조한 뒤 보관하자.</p>
+<p>그 공지는 이후 부정 참가가 확인되면 기록과 기록증이 취소될 수 있다는 조건도 명시했다. 화면에서 다운로드했다는 사실만으로 어떤 상황에서도 기록이 유지된다는 보장은 아니다.</p>
+<h2>종이기록증 신청과 온라인 조회는 다른 절차</h2><p><a href="https://www.gongjumarathon.com/45/?bmode=view&amp;idx=174999305" target="_blank" rel="noopener noreferrer">10월 7일 종이기록증 공지</a>의 신청은 10월 14일 14:00까지였다. 동마클럽에 로그인해 이름·배번호를 입력하는 방식이었고 현재 기한은 지났다. 온라인에서 기록을 보는 것과 종이 우편물을 별도 신청한 것을 구분해야 한다.</p>
+<p>종이는 국내 주소로만 발송하고 재발송하지 않는다고 안내한다. 신청 후 주소를 임의 수정할 수 없어 변경이 필요하면 사무국에 연락해야 했다. 실제 배송 완료일이나 기한 후 새 신청 허용 여부는 이번 원문 대조로 확인하지 않았다.</p>
+<h2>다음 시즌을 준비한다면</h2><p>공주의 2026 코스를 모든 러너에게 쉬운 평지·입문 완주 보장 코스로 표현하지 않는다. 다음 요강이 나오면 거리·운영 시간·기념품을 다시 확인하고, 자신의 기록증에는 어떤 거리와 종목이 적혀 있는지 먼저 보관해 두자.</p>
+<h2>자주 묻는 질문</h2><h3>공주에 5km가 있었나요?</h3><p>이번에 대조한 2026 공식 요강은 풀·32.195km·하프·10km 네 종목입니다. 기존 글의 5km 안내를 바로잡았습니다.</p><h3>32K를 풀코스 기록으로 제출해도 되나요?</h3><p>요강의 거리는 32.195km로 풀 42.195km와 다릅니다. 제출 대상 대회가 어떤 거리 기록을 인정하는지 별도로 확인해야 합니다.</p><h3>공식 기록증은 어디서 받나요?</h3><p>주최는 9월 22일 검수 완료를 알렸습니다. 스마트칩 동아 기록실의 2026 공주백제마라톤에서 배번호를 입력하고 기록증 버튼을 이용합니다.</p><h3>종이기록증 신청은 계속 열려 있나요?</h3><p>안내된 기한은 10월 14일 14:00로 종료됐습니다. 온라인 기록 조회와 종이 신청을 구분하며 기한 후 신규 신청은 확인하지 않았습니다.</p>`,
+    updatedAt: "2026-11-10",
   },
   {
     id: "nike-pegasus-42-review",
@@ -6971,214 +6115,64 @@ export const posts_2026_05: BlogPost[] = [
     ],
   },
   {
-    id: '2026-chuncheon-marathon-registration-guide',
-    slug: '2026-chuncheon-marathon-registration-guide',
-    title: '2026 춘천마라톤(80주년) 접수 총정리 | 풀코스 7/14·10K 7/16 광클 전략과 코스 분석',
-    description: '국내 최고 PB 친화 코스로 꼽히는 조선일보 춘천마라톤, 창설 80주년입니다. 일반접수는 풀코스 7월 14일(화)·10K 7월 16일(목) 14시 선착순, 참가비 풀 15만·10K 10만 원. 멤버십 얼리버드·완주자 특별접수부터 광클 전략·25km 오르막·교통/숙박·신발 선택까지 완전 가이드.',
-    thumbnail: '/images/blog/2026-chuncheon-marathon-registration-guide.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-05-02',
-    updatedAt: '2026-09-02',
-    category: 'news' as const,
-    readingTime: 8,
-    tags: ['춘천마라톤', '조선일보 춘천마라톤', '춘천마라톤 추가접수', '풀코스', 'PB 도전', '가을 마라톤', '대회 일정'],
-    content: `
-<div class="callout warning">
-  <span class="callout-icon">🍂</span>
-  <div class="callout-body">
-    <p class="callout-title">본접수는 끝났지만 추가접수가 열립니다 — 풀 9/8, 10K 9/9</p>
-    <p>이 글이 다루는 <strong>7월 본접수(풀 7/14·10K 7/16)는 모두 마감</strong>됐습니다. 다만 미결제분과 취소분으로 <strong>추가 참가신청</strong>이 열립니다 — 풀코스 <strong>9월 8일(화) 14시</strong>, 10km <strong>9월 9일(수) 14시</strong> 선착순이고 <strong>결제는 9월 10일(목) 10~18시 하루뿐</strong>입니다(공식 공지 2026-09-02). 일정과 함정은 <a href="/blog/chuncheon-marathon-additional-registration"><strong>춘천마라톤 추가접수 정리</strong></a>에 따로 적어뒀습니다. 아래 본문의 <strong>코스 분석·페이스 전략·대회장 접근</strong>은 그대로 유효합니다.</p>
-  </div>
-</div>
-
-<h2>춘천마라톤이 뭐길래</h2>
-
-<p>1946년 창설된 국내 최고(最古) 마라톤 중 하나. 의암호 수변 AIMS 국제공인 코스에서 매년 10월 마지막 주 일요일 열립니다. <strong>"춘마는 뛰어야 진짜 러너"</strong>라는 말이 있을 정도로 국내 마라톤 커뮤니티에서 가장 상징적인 가을 대회입니다.</p>
-
-<p>이 대회가 특별한 이유 세 가지:</p>
-
-<ul>
-  <li><strong>PB 친화적 평탄 코스</strong> — 의암호 따라 도는 흐름이 자연스럽고 고저차가 작음</li>
-  <li><strong>10월 말 서늘한 기온</strong> — 풀코스 페이스 유지에 이상적</li>
-  <li><strong>의암호 단풍 절경</strong> — 풍경이 좋아 심리적 페이스 유지에도 도움</li>
-</ul>
-
-<p>국내 메이저 풀코스(서울·JTBC·춘천) 중 PB 도전에 가장 자주 추천되는 대회가 춘천입니다.</p>
-
-<h2>2026 접수 일정 — 5단계 트랙 (창설 80주년)</h2>
-
-<p>80주년을 맞아 일반접수에 앞서 우선 트랙이 여럿 운영됩니다. 본인이 우선 트랙 대상이라면 일반 광클을 기다릴 필요가 없습니다.</p>
-
-<table>
-  <thead>
-    <tr><th>트랙</th><th>대상</th><th>일정</th></tr>
-  </thead>
-  <tbody>
-    <tr><td><strong>명예의 전당 헌액 예정자</strong></td><td>풀코스 9회 완주자</td><td>신청·결제 6/16(화)~6/19(금)</td></tr>
-    <tr><td><strong>조선멤버십 얼리버드</strong></td><td>조선멤버십 연간 구독자 (선착순 1,000명: 풀 700·10K 300)</td><td>신청 6/23(화) 14시 · 결제 6/24~26 · 80주년 기념 자켓 증정</td></tr>
-    <tr><td><strong>완주자 특별접수</strong></td><td>풀코스 5~8회 완주자 (추첨)</td><td>응모 6/29~7/1 · 당첨 결제 7/6~7/9</td></tr>
-    <tr><td><strong>일반접수 — 풀코스</strong></td><td>누구나 (선착순)</td><td><strong>7/14(화) 14:00</strong></td></tr>
-    <tr><td><strong>일반접수 — 10K</strong></td><td>누구나 (선착순)</td><td><strong>7/16(목) 14:00</strong></td></tr>
-  </tbody>
-</table>
-
-<table>
-  <thead>
-    <tr><th>종목</th><th>참가비</th><th>컷오프</th></tr>
-  </thead>
-  <tbody>
-    <tr><td><strong>풀코스 (42.195km)</strong></td><td>150,000원</td><td>5시간 30분</td></tr>
-    <tr><td><strong>10K</strong></td><td>100,000원</td><td>1시간 30분</td></tr>
-  </tbody>
-</table>
-
-<p class="caption">※ 2025년 대비 참가비가 인상됐습니다 — 풀코스 100,000→150,000원, 10K 80,000→100,000원. 풀코스 제한시간 5시간 30분은 2025년과 동일합니다.</p>
-
-<div class="callout info">
-  <span class="callout-icon">ℹ️</span>
-  <div class="callout-body">
-    <p class="callout-title">신청과 결제는 분리 운영</p>
-    <p>춘천마라톤은 신청(선착순)과 결제가 별도로 이루어집니다. 일반접수 결제 기한은 풀코스 7/20~21·10K 7/22~23경으로, 기한 내 미입금 시 자격이 자동 소멸합니다. <strong>2025년부터 단체 신청은 폐지</strong>되어 모두 개인 접수입니다.</p>
-  </div>
-</div>
-
-<p>풀코스는 만 18세 이상(대회일 기준), 10K는 연령 제한 없습니다. 조선일보 정기 구독자 본인은 결제 시 <strong>10% 할인</strong>이 적용되며, 대리신청·타인 적용은 불가합니다.</p>
-
-<h2>광클 D-Day 전 준비 — 7단계 체크리스트</h2>
-
-<p>풀코스 접수는 매년 오픈 후 수분 내 마감됩니다. 시간이 아니라 <strong>초 단위 경쟁</strong>이라고 보면 됩니다.</p>
-
-<div class="callout tip">
-  <span class="callout-icon">💡</span>
-  <div class="callout-body">
-    <p class="callout-title">접수 전날까지 끝낼 7가지</p>
-    <p>① 공식 홈페이지(chuncheonmarathon.com) 회원가입 ② 개인정보·비상연락처 사전 입력 ③ 카드 결제 한도 확인(10만원 이상 가능) ④ <strong>유선랜 연결 PC 준비</strong> — 모바일보다 압도적 안정 ⑤ 브라우저 캐시 삭제, 불필요한 탭 모두 닫기 ⑥ 자동 입력 저장으로 입력 시간 단축 ⑦ <code>time.navyism.com</code>으로 시계 동기화</p>
-  </div>
-</div>
-
-<p>당일 13시 50분에는 로그인 상태로 대기하세요. 평소엔 5분 일찍 들어가도 충분하지만, 춘마 같은 빅 이벤트는 트래픽 폭주로 로그인 자체가 안 되는 경우가 종종 발생합니다.</p>
-
-<p>접수 성공 후 <strong>결제 기한(일반 풀코스 7/20~21경)</strong>은 캘린더에 알람 설정해두세요. 신청만 하고 결제 깜빡해서 자격 잃는 사례가 매년 반복됩니다.</p>
-
-<h2>코스 분석 — 의암호 한 바퀴</h2>
-
-<p>출발 후 의암호 서쪽 수변길을 따라 신매대교까지 내려갔다가 반환, 귀로에서 서상대교·춘천댐 쪽으로 진행하는 구조입니다. 전반적으로 평탄하지만 <strong>오르막이 3구간 집중</strong>됩니다.</p>
-
-<table>
-  <thead>
-    <tr><th>구간</th><th>특징</th></tr>
-  </thead>
-  <tbody>
-    <tr><td><strong>0~5km</strong></td><td>출발 직후 삼천사거리까지 완만한 오르막. 무리하지 말 것</td></tr>
-    <tr><td><strong>약 17km</strong></td><td>강원애니고 방향 약 300m 단거리 오르막. 짧지만 가파름</td></tr>
-    <tr><td><strong>25~30km</strong></td><td>서상대교·춘천댐 구간 — <strong>가장 가파르고 체력 최저점과 겹침</strong>. 매년 기권자 최다 발생</td></tr>
-  </tbody>
-</table>
-
-<div class="callout warning">
-  <span class="callout-icon">⚠️</span>
-  <div class="callout-body">
-    <p class="callout-title">초반 의암호 풍경에 오버페이스 주의</p>
-    <p>춘천 풀코스에서 가장 흔한 실패 패턴: 0~15km 구간 풍경에 들떠 목표보다 빠르게 달리고, 25km 댐 구간에서 무너집니다. 처음 20km는 목표 페이스보다 5~10초 느리게, 안정 페이스를 유지하는 게 정석입니다.</p>
-  </div>
-</div>
-
-<h2>교통과 숙박 — 접수와 동시에 예약</h2>
-
-<h3>공식 셔틀버스 (왕복 2만원)</h3>
-
-<p>서울 4개 거점에서 새벽 6시 일제 출발, 귀가편은 오후 2시 30분~4시 만차순 출발입니다. 공식 홈페이지 사전 예약 필수이며 매년 조기 마감.</p>
-
-<ul>
-  <li>시청역 2번 출구</li>
-  <li>잠실역 6번 출구</li>
-  <li>신도림역 1번 출구</li>
-  <li>사당역 12번 출구</li>
-</ul>
-
-<h3>ITX 청춘 (강력 추천)</h3>
-
-<table>
-  <thead>
-    <tr><th>출발역</th><th>소요 시간</th><th>요금</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>용산역 → 춘천역</td><td>74~80분</td><td>9,800원</td></tr>
-    <tr><td>청량리역 → 춘천역</td><td>58~64분</td><td>7,100원</td></tr>
-  </tbody>
-</table>
-
-<p>대회 당일 오전 5시 30분 이전 출발 권장. 주말 좌석은 빠른 매진 — <strong>대회 접수 직후 기차표도 함께 예매</strong>하세요. 춘천역에서 대회장(공지천 의암공원)까지는 도보 20분 또는 택시 5~10분.</p>
-
-<h3>숙박 — 전날 1박 강력 권장</h3>
-
-<p>당일치기는 셔틀(새벽 6시) 또는 ITX(새벽 5시 30분) 출발이라 체력 소모가 큽니다. 풀코스 PB가 목표라면 무조건 전날 숙박이 유리합니다.</p>
-
-<ul>
-  <li>공지천 인근(더잭슨나인스호텔, 에스턴호텔, 호텔공지천): 도보 5~10분 — 최적</li>
-  <li>대회 시즌 9월부터 만실 시작 — 접수 성공 즉시 예약 필수</li>
-  <li>저녁 메뉴는 익숙한 한식 카보로딩 권장. 처음 가는 닭갈비집은 모험 금물</li>
-</ul>
-
-<div class="callout warning">
-  <span class="callout-icon">⚠️</span>
-  <div class="callout-body">
-    <p class="callout-title">자가용은 비추천</p>
-    <p>대회 당일 오전 7시~오후 3시 30분 교통통제. 자가용 이용 시 새벽 5시 이전 도착해야 하며, 공지천 공영주차장(약 50대)은 조기 만차됩니다.</p>
-  </div>
-</div>
-
-<h2>풀코스 신발 선택 — 평탄 PB 코스에 맞춰</h2>
-
-<p>춘천 풀코스는 평탄·서늘 조건이 갖춰져 카본 플레이트 레이싱화가 가장 빛을 발하는 환경입니다. 다만 본인 페이스에 맞는 선택이 중요합니다.</p>
-
-<ul>
-  <li><strong>서브3 (목표 4:15/km 이하):</strong> 카본 슈퍼슈즈 — <a href="/best/racing">레이싱화 추천</a>에서 비교</li>
-  <li><strong>서브4 (목표 5:40/km):</strong> 카본화 또는 슈퍼트레이너. 30km 이후 쿠션 유지가 관건</li>
-  <li><strong>완주 목표 (5시간 내외):</strong> 쿠션 든든한 데일리 트레이너가 안전 — <a href="/best/max-cushion">맥스 쿠션 신발</a></li>
-  <li><strong>처음 풀코스 도전:</strong> 카본화 신지 마세요. 페이스 유지 + 부상 방지가 우선 — <a href="/best/daily-trainer">데일리 트레이너 추천</a></li>
-</ul>
-
-<p>레이스용 신발은 <strong>대회 6~8주 전 구입</strong>해 40~60km 정도 길들이고 출전하세요. 본인 발에 맞는 신발을 빠르게 좁히려면 <a href="/recommend">1분 러닝화 추천</a>을 활용해보세요.</p>
-
-<h2>훈련 일정 — 지금부터 약 18주</h2>
-
-<p>10월 25일 대회 기준, <strong>16~20주 빌드업이 표준</strong>입니다. 지금(6월 하순)부터 시작하면 약 18주 — 기초 체력부터 차근차근 쌓기 좋은 시점입니다.</p>
-
-<ul>
-  <li><strong>5~7월 (기초기):</strong> 주 30~50km, LSD 위주로 베이스 구축</li>
-  <li><strong>8~9월 (강화기):</strong> 인터벌·템포런 추가, 주 50~70km</li>
-  <li><strong>10월 초중순 (피크):</strong> 32~35km 장거리 1회 필수</li>
-  <li><strong>대회 2주 전 (테이퍼링):</strong> 거리 절반으로 감소, 회복 우선</li>
-</ul>
-
-<p>풀코스 후반(20km+) 에너지 보충 전략은 <a href="/gels">에너지젤 가이드</a>에서 확인하세요.</p>
-
-<h2>접수 마감 후 대안</h2>
-
-<p>풀코스는 매년 분 단위로 마감되므로 광클 실패 가능성이 적지 않습니다. 실패 시 대안:</p>
-
-<ul>
-  <li><strong>공식 인스타 추가접수 공지 모니터링</strong> — 결제 기한 내 미납자가 발생하면 추가 오픈하는 경우 있음</li>
-  <li><strong>10K로 종목 변경</strong> — 7/16(목) 접수 오픈, 풀코스보다 경쟁 덜함</li>
-  <li><strong>JTBC 서울마라톤 (11월 1일)</strong> — 추첨제이지만 도시형 코스라는 다른 매력</li>
-  <li><strong>경주국제마라톤 (10월 17일)</strong> — 동마클럽 계열 메이저 대회. 자세한 일정은 <a href="/blog/2026-dongma-halfyear-marathon-schedule">2026 하반기 동마 대회 접수 일정</a>에서</li>
-</ul>
-
-<div class="callout success">
-  <span class="callout-icon">🍂</span>
-  <div class="callout-body">
-    <p class="callout-title">춘마는 PB 도전과 가을 여행을 함께</p>
-    <p>대회 자체도 좋지만, 가족·친구와 함께 1박 2일 춘천 여행 코스로 묶으면 추억까지 남습니다. 의암호 단풍, 닭갈비, 카페 — 풀코스 완주 후 보상으로 더할 나위 없죠.</p>
-  </div>
-</div>
-
-<p>주최 측 문의: 02-724-6333~6336</p>
-
-<p>국내 다른 가을 마라톤도 함께 검토하시려면 <a href="/marathon">2026 마라톤 캘린더</a>에서 월별로 비교해보세요.</p>
-
-<p><small>출처: 춘천마라톤 공식 홈페이지 <a href="https://www.chuncheonmarathon.com/" rel="noopener noreferrer">chuncheonmarathon.com</a> · 조선일보 보도 / 작성 2026년 5월 2일 · 접수 일정·참가비 갱신 2026년 6월 22일(6/11 공식 발표 반영). 트랙별 정원·결제 기한은 공식 공지로 최종 확인하세요.</small></p>
-`,
+    id: "2026-chuncheon-marathon-registration-guide",
+    slug: "2026-chuncheon-marathon-registration-guide",
+    title: "2026 춘천마라톤 종료 후: 임시·확정 기록과 기록증 주소 수정 11월 12일",
+    description: "10월 25일 대회 이후 사무국은 임시기록·확정기록 절차를 안내했습니다. 기록 점검 요청 기한은 11월 5일, 기록증 배송 주소·연락처 수정은 11월 12일까지로 서로 다릅니다.",
+    thumbnail: "/images/blog/verified-2026-chuncheon-marathon-registration-guide-20261110.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-05-02",
+    updatedAt: "2026-11-10",
+    category: "news",
+    readingTime: 5,
+    tags: [
+      "춘천마라톤",
+      "조선일보 춘천마라톤",
+      "춘천마라톤 추가접수",
+      "풀코스",
+      "가을 마라톤",
+      "대회 일정",
+      "기록증",
+      "배송지 변경"
+    ],
+    content: `<p><small>2026년 11월 10일 주최 원문 대조. 2026 개최·후속 절차와 다음 연도 모집을 구분합니다.</small></p>
+<p>2026 춘천마라톤은 10월 25일 대회다. 지금 확인할 것은 지난 여름 선착순 접수보다 <strong>본인 기록의 상태와 기록증을 받을 주소</strong>다. <a href="https://board.chosun.com/nbrd/bbs/view_cached.html?b_bbs_id=10005&amp;num=109" target="_blank" rel="noopener noreferrer">10월 26일 사무국 공지</a>는 이 두 가지 기한을 따로 안내한다.</p>
+<h2>11월 12일까지 기록증 주소·연락처 확인</h2><p>사무국은 최종 확정 기록을 정리한 뒤 신청 때 기재한 주소로 기록증을 보낼 예정이며, 주소·연락처가 바뀌었다면 <strong>11월 12일까지 사무국에 수정 요청</strong>하라고 안내했다. 11월 10일 기준 아직 남은 후속 기한이다. 택배·우편물이 이미 모두 발송됐다고 확인한 것은 아니다.</p>
+<p>예전 참가 취소·환불 기간과 이 기록증 배송 정보 수정 기한은 목적이 다르다. 여름 공지의 개인정보 변경 종료 문구만 보고 배송지 확인까지 포기하지 말고, 더 나중에 나온 기록증 공지를 확인하자. 이 글이 대신 주소를 변경하거나 개인 신청을 조회한 것은 아니다.</p>
+<h2>임시 조회에 나와도 공식 인정 기록은 아닐 수 있다</h2><p>공지는 <a href="http://myresult.co.kr/176" target="_blank" rel="noopener noreferrer">마라톤의 모든 기록의 춘천 조회 페이지</a>에서 당시 임시기록을 볼 수 있지만, 그룹 이탈·체크포인트 미확인 등 비정상 기록도 포함될 수 있다고 설명한다. 확인·조정이 필요한 참가자는 11월 5일까지 사무국에 연락하도록 했으며 이 기한은 지났다.</p>
+<p>그 뒤 계측팀 점검을 거쳐 대회 홈페이지에서 최종 기록·순위를 올릴 예정이라고 했으므로, 현재 보이는 개인 결과가 어느 단계인지 확인하자. 11월 10일에 모든 참가자의 기록이 확정됐다고 이 글에서 단정하지 않는다.</p>
+<h2>공식 인정 제한시간과 내 GPS 기록</h2><p>같은 공지는 풀 5시간 30분·10km 1시간 30분 이내만 공식기록으로 인정하고, 제한 초과·그룹 이탈·비정상 기록은 공식 기록·기록증·순위에서 제외한다고 설명한다. 개인 시계의 완주 기록이나 현장 통과 사실과 대회가 인정한 결과를 구분해야 한다.</p>
+<h2>10km 시상과 일반 완주증 발송도 별도</h2><p><a href="https://board.chosun.com/nbrd/bbs/view_cached.html?b_bbs_id=10005&amp;num=110" target="_blank" rel="noopener noreferrer">11월 5일 10km 시상자 공지</a>는 대상자 상장·트로피를 참가 신청 주소로 11월 중 발송할 예정이라고 안내한다. 모든 완주자 기록증의 발송 완료일을 뜻하는 공지는 아니다. 문의할 때 종목·배번호와 어떤 물품인지 함께 정리하면 확인 대상이 명확하다.</p>
+<p><a href="https://www.chuncheonmarathon.com/" target="_blank" rel="noopener noreferrer">대회 홈페이지</a>와 <a href="https://board.chosun.com/nbrd/bbs/list.html?b_bbs_id=10005" target="_blank" rel="noopener noreferrer">공식 공지 목록</a>에서 최신 후속 안내를 확인하자. 주최의 주소 수정 안내는 11월 12일이라는 날짜만 제시해 임의의 마감 시각을 덧붙이지 않았다. 다음 연도 접수 일정은 2026의 7월 날짜를 복사해 예고하지 않는다.</p>
+<h2>자주 묻는 질문</h2><h3>주소는 언제까지 바꿀 수 있나요?</h3><p>10월 26일 공지는 기록증 배송 주소·연락처 수정 요청 기한을 11월 12일까지로 안내합니다. 정확한 마감 시각은 기재하지 않았습니다.</p><h3>기록 수정 요청도 11월 12일까지인가요?</h3><p>기록 확인·조정 요청은 11월 5일까지였고 배송 정보 수정은 11월 12일까지입니다. 목적과 기한이 다릅니다.</p><h3>조회되면 모두 공식 완주인가요?</h3><p>당시 임시 조회에는 비정상 기록도 포함될 수 있다는 안내입니다. 풀 5시간 30분·10km 1시간 30분과 그룹·체크포인트 조건 등을 거쳐 공식 인정 여부를 확인해야 합니다.</p><h3>기록증이 이미 다 발송됐나요?</h3><p>공지는 최종 기록 정리 뒤 발송 예정이라고 설명합니다. 11월 10일 모든 기록증의 발송 완료는 이번 대조로 확인하지 않았습니다.</p>`,
+    faqs: [
+      {
+        "question": "주소는 언제까지 바꿀 수 있나요?",
+        "answer": "10월 26일 공지는 기록증 배송 주소·연락처 수정 요청 기한을 11월 12일까지로 안내합니다. 정확한 마감 시각은 기재하지 않았습니다."
+      },
+      {
+        "question": "기록 수정 요청도 11월 12일까지인가요?",
+        "answer": "기록 확인·조정 요청은 11월 5일까지였고 배송 정보 수정은 11월 12일까지입니다. 목적과 기한이 다릅니다."
+      },
+      {
+        "question": "조회되면 모두 공식 완주인가요?",
+        "answer": "당시 임시 조회에는 비정상 기록도 포함될 수 있다는 안내입니다. 풀 5시간 30분·10km 1시간 30분과 그룹·체크포인트 조건 등을 거쳐 공식 인정 여부를 확인해야 합니다."
+      },
+      {
+        "question": "기록증이 이미 다 발송됐나요?",
+        "answer": "공지는 최종 기록 정리 뒤 발송 예정이라고 설명합니다. 11월 10일 모든 기록증의 발송 완료는 이번 대조로 확인하지 않았습니다."
+      }
+    ],
+    event: {
+      "name": "2026 춘천마라톤",
+      "startDate": "2026-10-25",
+      "location": {
+        "name": "춘천 공지천교",
+        "address": "강원특별자치도 춘천시"
+      },
+      "organizer": "조선일보·춘천시·스포츠조선·대한육상연맹",
+      "url": "https://www.chuncheonmarathon.com/"
+    },
   },
   {
     id: '2026-anyangcheon-rose-marathon',

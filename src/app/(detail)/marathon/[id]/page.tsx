@@ -425,6 +425,15 @@ export default async function MarathonDetailPage({ params }: MarathonDetailPageP
               </div>
             )}
           </dl>
+          {event.postRaceNote && (
+            <div className="mt-4 space-y-1 text-sm leading-relaxed">
+              <p className="font-medium text-primary">대회 후 안내</p>
+              <p className="text-secondary">{event.postRaceNote}</p>
+              {event.lastVerified && (
+                <p className="text-xs text-tertiary">{formatDateKo(event.lastVerified)} 확인 기준</p>
+              )}
+            </div>
+          )}
           {/*
             status 를 마지막으로 확인한 날. 대회 status·참가비는 시간이 지나면 자동으로
             틀려지는 값이라, 언제 기준인지 없이 '접수중'만 보이면 그 자체가 오해를 만든다.

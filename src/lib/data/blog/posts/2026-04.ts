@@ -311,128 +311,55 @@ export const posts_2026_04: BlogPost[] = [
 `,
   },
   {
-    id: '2026-dongma-halfyear-marathon-schedule',
-    slug: '2026-dongma-halfyear-marathon-schedule',
-    title: '2026 하반기 동마 대회 접수 일정 총정리 | 서울레이스·공주백제·경주국제마라톤',
-    description: '동마클럽이 공개한 2026 하반기 3대 마라톤 대회 접수 일정을 정리했습니다. 우선 접수(5/11~15)와 본접수(선착순) 날짜, 대회별 준비 팁까지 한눈에 확인하세요.',
-    thumbnail: '/images/blog/2026-dongma-halfyear-marathon-schedule.webp',
-    content: `
-<div class="callout warning">
-  <span class="callout-icon">⚠️</span>
-  <div class="callout-body">
-    <p class="callout-title">선착순 마감 주의</p>
-    <p>본접수는 선착순으로 마감됩니다. 특히 경주·서울레이스는 인기 대회라 오픈 직후 수분 내 마감된 전례가 있습니다. 접수 시간을 달력에 미리 저장해두세요.</p>
-  </div>
-</div>
-
-<h2>2026 하반기 동마 대회 3종 한눈에 보기</h2>
-
-<p>동마클럽(@dongmaclub)이 2026 하반기 주요 마라톤 대회 접수 일정을 공식 발표했습니다. 이번 하반기는 <strong>공주백제마라톤</strong>, <strong>경주국제마라톤</strong>, <strong>서울레이스</strong> 3개 대회가 예정되어 있으며, 5월부터 접수가 시작됩니다.</p>
-
-<table>
-  <thead>
-    <tr>
-      <th>대회명</th>
-      <th>대회 일자</th>
-      <th>본접수 시작</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>공주백제마라톤</strong></td>
-      <td>9월 20일 (일)</td>
-      <td>5월 21일(목) 19시</td>
-    </tr>
-    <tr>
-      <td><strong>서울레이스</strong></td>
-      <td>10월 11일 (일)</td>
-      <td>5월 27일(수) 하프 19시 / 10K 21시</td>
-    </tr>
-    <tr>
-      <td><strong>경주국제마라톤</strong></td>
-      <td>10월 17일 (토)</td>
-      <td>5월 26일(화) 19시</td>
-    </tr>
-  </tbody>
-</table>
-
-<h2>접수 일정 상세 안내</h2>
-
-<h3>1단계 — 우선 접수 (5월 11일 ~ 15일)</h3>
-
-<p>일반 본접수보다 먼저 신청할 수 있는 <strong>우선 접수 기간</strong>이 있습니다. 해당되는 분들은 놓치지 마세요.</p>
-
-<ul>
-  <li><strong>기간:</strong> 5월 11일(월) 10시 ~ 5월 15일(금) 15시</li>
-  <li><strong>접수처:</strong> 동마클럽 홈페이지 (dongma.club)</li>
-  <li><strong>서울레이스 우선 접수 대상:</strong> 2025 서울레이스 동마크루</li>
-  <li><strong>공주백제·경주국제 우선 접수 대상:</strong> 2026 동아마라톤 멤버십 가입자</li>
-</ul>
-
-<div class="callout info">
-  <span class="callout-icon">ℹ️</span>
-  <div class="callout-body">
-    <p class="callout-title">동아마라톤 멤버십이란?</p>
-    <p>동마클럽에서 운영하는 멤버십으로 가입 시 하반기 대회 우선 접수 혜택을 받을 수 있습니다. 아직 미가입이라면 우선 접수 전 확인해두세요.</p>
-  </div>
-</div>
-
-<h3>2단계 — 본접수 (선착순)</h3>
-
-<p>우선 접수 대상이 아니라면 본접수를 노려야 합니다. <strong>선착순</strong>이므로 시간을 정확히 맞춰 접속하는 것이 중요합니다.</p>
-
-<ul>
-  <li><strong>공주백제마라톤:</strong> 5월 21일(목) 19시</li>
-  <li><strong>경주국제마라톤:</strong> 5월 26일(화) 19시</li>
-  <li><strong>서울레이스 하프:</strong> 5월 27일(수) 19시</li>
-  <li><strong>서울레이스 10K:</strong> 5월 27일(수) 21시</li>
-</ul>
-
-<div class="callout tip">
-  <span class="callout-icon">💡</span>
-  <div class="callout-body">
-    <p class="callout-title">선착순 접수 꿀팁</p>
-    <p>접수 10분 전에 동마클럽 홈페이지에 미리 로그인해두세요. 결제 수단도 미리 등록해두면 접수 속도가 훨씬 빨라집니다. 모바일보다 PC 접속이 상대적으로 안정적입니다.</p>
-  </div>
-</div>
-
-<h2>대회별 특징 & 러닝화 추천</h2>
-
-<h3>공주백제마라톤 (9월 20일)</h3>
-<p>9월 초가을에 열리는 대회로, 충남 공주 금강변을 코스로 합니다. 가을 초입이라 기온이 아직 높을 수 있어 <strong>통기성</strong>과 <strong>쿠셔닝</strong>이 중요합니다. 금강 둔치 코스는 비교적 평탄하여 기록을 노리기 좋습니다.</p>
-
-<h3>서울레이스 (10월 11일)</h3>
-<p>서울 도심을 달리는 도시형 마라톤. 하프(21.1km)와 10K 두 종목으로 나뉘어 진행됩니다. 서울 시내 복잡한 노면 특성상 <strong>안정성</strong>이 좋은 러닝화가 유리합니다.</p>
-
-<h3>경주국제마라톤 (10월 17일)</h3>
-<p>역사 도시 경주를 달리는 국제 마라톤. 10월 중순이라 날씨가 쾌적하고 코스가 아름다워 PB(개인 최고 기록)를 노리기에 좋은 대회입니다. 비교적 평탄한 코스로 카본 플레이트 러닝화 효과를 제대로 볼 수 있습니다.</p>
-
-<h2>하반기 대회를 앞둔 지금, 준비할 것들</h2>
-
-<p>접수만큼 중요한 것이 훈련과 장비 준비입니다. 5월 접수 후 대회까지 넉넉한 준비 기간이 있으니 지금부터 차근차근 준비해보세요.</p>
-
-<ul>
-  <li><strong>훈련 계획:</strong> 대회 12~16주 전부터 본격적인 빌드업 시작</li>
-  <li><strong>러닝화 선택:</strong> 새 러닝화는 대회 6~8주 전에 구입해 길들이기 필요</li>
-  <li><strong>영양 전략:</strong> 하프 이상 거리는 에너지젤 등 보충식 계획 필수</li>
-  <li><strong>숙박·이동:</strong> 지방 대회(공주·경주)는 전날 이동 및 숙박 예약 권장</li>
-</ul>
-
-<div class="callout success">
-  <span class="callout-icon">🏃</span>
-  <div class="callout-body">
-    <p class="callout-title">추가 공지 예정</p>
-    <p>2027 서울마라톤 접수 일정도 곧 발표될 예정입니다. 동마클럽(@dongmaclub) 인스타그램과 홈페이지를 즐겨찾기해두면 빠르게 확인할 수 있습니다.</p>
-  </div>
-</div>
-
-<p>하반기 대회 접수 관련 추가 공지는 각 대회 공식 인스타그램(@seoulrace, @gongju_marathon, @gyeongju__marathon)과 동마클럽 홈페이지에서 확인하실 수 있습니다.</p>
-`,
-    author: '산초 에디터',
-    publishedAt: '2026-04-16',
-    category: 'news' as const,
-    tags: ['마라톤', '대회 일정', '서울레이스', '공주백제마라톤', '경주국제마라톤', '동아마라톤', '하반기 대회'],
+    id: "2026-dongma-halfyear-marathon-schedule",
+    slug: "2026-dongma-halfyear-marathon-schedule",
+    title: "2026 하반기 동마 대회 일정 기록: 공주·서울레이스·경주 종료 후 결과 찾기",
+    description: "공주 9월 20일·서울레이스 10월 11일·경주 10월 17일 대회는 종료됐습니다. 세 대회의 결과 조회와 종이기록증 절차·기한을 구분해 정리하고 2027 접수로 자동 이월하지 않습니다.",
+    thumbnail: "/images/blog/verified-2026-dongma-halfyear-marathon-schedule-20261110.webp",
+    content: `<p><small>2026년 11월 10일 주최 원문 대조. 2026 개최·후속 절차와 다음 연도 모집을 구분합니다.</small></p>
+<p>2026 하반기 동마 계열 세 대회는 모두 종료됐다. 지난 접수 캘린더를 계속 ‘신청 가능’ 목록으로 쓰는 대신, 어느 대회의 결과를 어디서 확인하고 어떤 기록증 절차가 있었는지 한 표로 정리했다.</p>
+<h2>대회일과 대회 후 확인 경로</h2><table><thead><tr><th>대회</th><th>2026 개최일</th><th>후속 원문</th></tr></thead><tbody><tr><td>공주백제마라톤</td><td>9월 20일</td><td><a href="https://www.gongjumarathon.com/45/?bmode=view&amp;idx=174634912" target="_blank" rel="noopener noreferrer">9/22 공식 기록증 안내</a></td></tr><tr><td>서울레이스</td><td>10월 11일</td><td><a href="https://www.seoul-race.co.kr/57/?bmode=view&amp;idx=175037029" target="_blank" rel="noopener noreferrer">10/10 기록증 제공 계획</a></td></tr><tr><td>경주국제마라톤</td><td>10월 17일</td><td><a href="https://www.gyeongjumarathon.com/52/?bmode=view&amp;idx=175164500" target="_blank" rel="noopener noreferrer">10/19 공식 기록 확인</a></td></tr></tbody></table>
+<p>대회일은 공주·경주 공식 개요와 서울레이스 당일 주최 게시물을 대조했다. 모두 2026 일정이며 2027 모집 달력이 아니다. <a href="https://www.gongjumarathon.com/29" target="_blank" rel="noopener noreferrer">공주 공식 요강</a>의 32.195km와 <a href="https://www.gyeongjumarathon.com/38" target="_blank" rel="noopener noreferrer">경주 공식 요강</a>의 풀·하프·10km처럼, 같은 시리즈 안내 안에서도 종목이 다르다.</p>
+<h2>같은 스마트칩에서도 대회와 연도를 먼저</h2><p>공주와 경주 공지는 스마트칩 동아 기록실에서 해당 대회를 고르도록 안내한다. 서울레이스도 스마트칩 조회 경로를 제시한다. 검색에서 이름이 같아 보여도 대회·연도·종목·배번호를 함께 확인해야 본인 결과를 정확히 찾을 수 있다.</p>
+<p>확정 여부도 다르다. 공주는 9월 22일 검수가 끝나 공식 기록증을 확인할 수 있다고 발표했다. 서울레이스의 10월 10일 공지는 대회 뒤 1주일 이내 제공하겠다는 계획이었으며, 그 일정만으로 실제 전체 발급 완료를 확정할 수 없다. 경주는 10월 19일 공식 기록 확인 방법을 공지했다.</p>
+<h2>종이기록증 신청은 온라인 조회와 별개</h2><table><thead><tr><th>대회</th><th>종이 신청 기한</th><th>주요 조건</th></tr></thead><tbody><tr><td>공주</td><td>10월 14일 14:00</td><td>국내 주소만, 재발송 불가</td></tr><tr><td>경주</td><td>10월 27일 17:00</td><td>국내 주소만, 재발송 불가</td></tr></tbody></table>
+<p>각각 <a href="https://www.gongjumarathon.com/45/?bmode=view&amp;idx=174999305" target="_blank" rel="noopener noreferrer">공주 10월 7일 공지</a>와 <a href="https://www.gyeongjumarathon.com/52/?bmode=view&amp;idx=175204250" target="_blank" rel="noopener noreferrer">경주 10월 21일 공지</a> 기준이며 두 기한은 지났다. 신청 후 주소를 직접 고치는 대신 사무국에 연락해야 한다는 조건도 있다. 온라인 기록증을 조회했다고 종이 우편물이 자동 신청된 것은 아니다.</p>
+<h2>다음 시즌으로 가져갈 것은 기록과 확인 습관</h2><p>2026의 가격·회원 우선 접수·기념품·종목이 다음 해에도 같다는 보장은 없다. 특히 같은 금액처럼 보여도 일반·매니아 구성 차이가 있으니 실제 선택 상품을 읽어야 한다. 특정 기록증을 다른 대회에 제출할 때는 거리와 인정 기간도 그 대회의 새 요강으로 확인하자.</p>
+<ul><li><a href="/blog/2026-gongju-baekje-marathon">공주: 종목·요금·공식 기록증</a></li><li><a href="/blog/2026-seoul-race">서울레이스: 기록 확인과 후속 공지</a></li><li><a href="/blog/2026-gyeongju-international-marathon">경주: 공식 기록·종이 신청 조건</a></li></ul>
+<p>지난 신청 페이지가 남아 있다는 사실과 현재 판매 중이라는 상태를 나눠 보면, 종료된 대회 링크를 따라가다 다시 신청하려는 혼동을 줄일 수 있다.</p>
+<h2>자주 묻는 질문</h2><h3>이 글은 현재 신청할 수 있는 대회 목록인가요?</h3><p>공주 9월 20일·서울레이스 10월 11일·경주 10월 17일에 개최된 2026 일정 기록입니다. 현재 접수 목록이나 2027 확정 일정으로 쓰지 않습니다.</p><h3>온라인 기록을 보면 종이기록증도 오나요?</h3><p>공주·경주는 별도 종이 신청 절차가 있었고 각각 10월 14일 14:00·27일 17:00에 기한이 끝났습니다. 온라인 조회와 다릅니다.</p><h3>세 대회 모두 기록증 발급 완료인가요?</h3><p>공지의 의미가 다릅니다. 공주는 검수 완료, 서울레이스는 대회 후 제공 계획, 경주는 공식 조회 방법을 안내했습니다. 전체 개인 발급 완료를 한꺼번에 단정하지 않습니다.</p><h3>다음 해 접수도 같은 달인가요?</h3><p>2027 확정 접수 기간은 이번 대조로 확인하지 않았습니다. 2026 회원·상품·접수 날짜를 다음 해 일정으로 복사하지 않습니다.</p>`,
+    author: "산초 에디터",
+    publishedAt: "2026-04-16",
+    category: "news",
+    tags: [
+      "마라톤",
+      "2026 대회 기록",
+      "서울레이스",
+      "공주백제마라톤",
+      "경주국제마라톤",
+      "공식 기록증",
+      "동아마라톤"
+    ],
     readingTime: 5,
     featured: false,
+    updatedAt: "2026-11-10",
+    faqs: [
+      {
+        "question": "이 글은 현재 신청할 수 있는 대회 목록인가요?",
+        "answer": "공주 9월 20일·서울레이스 10월 11일·경주 10월 17일에 개최된 2026 일정 기록입니다. 현재 접수 목록이나 2027 확정 일정으로 쓰지 않습니다."
+      },
+      {
+        "question": "온라인 기록을 보면 종이기록증도 오나요?",
+        "answer": "공주·경주는 별도 종이 신청 절차가 있었고 각각 10월 14일 14:00·27일 17:00에 기한이 끝났습니다. 온라인 조회와 다릅니다."
+      },
+      {
+        "question": "세 대회 모두 기록증 발급 완료인가요?",
+        "answer": "공지의 의미가 다릅니다. 공주는 검수 완료, 서울레이스는 대회 후 제공 계획, 경주는 공식 조회 방법을 안내했습니다. 전체 개인 발급 완료를 한꺼번에 단정하지 않습니다."
+      },
+      {
+        "question": "다음 해 접수도 같은 달인가요?",
+        "answer": "2027 확정 접수 기간은 이번 대조로 확인하지 않았습니다. 2026 회원·상품·접수 날짜를 다음 해 일정으로 복사하지 않습니다."
+      }
+    ],
   },
 ];
