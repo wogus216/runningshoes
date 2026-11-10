@@ -8181,216 +8181,64 @@ export const posts_2026_05: BlogPost[] = [
 `,
   },
   {
-    id: '2026-seoul-open-marathon-registration',
-    slug: '2026-seoul-open-marathon-registration',
-    title: '2026 서울 오픈 마라톤 | 10월 5일(월) 광화문 출발 · 접수 5월 10일 마감',
-    description: '광화문광장에서 출발하는 2026 서울 오픈 마라톤(10월 5일 월요일) 접수가 5월 10일까지입니다. 하프 8만원, 10km 6만원, 페이스메이커 운영. 도심 평탄 코스를 노리는 가을 PB 도전자에게 대안.',
-    thumbnail: '/images/blog/2026-seoul-open-marathon-registration.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-05-04',
-    updatedAt: '2026-10-24',
-    category: 'news' as const,
-    readingTime: 5,
-    tags: ['서울 오픈 마라톤', '광화문 마라톤', '서울 도심 마라톤', '하프마라톤', '가을 마라톤', '대회 일정'],
+    id: "2026-seoul-open-marathon-registration",
+    slug: "2026-seoul-open-marathon-registration",
+    title: "서울오픈마라톤 환불 후속 — 계좌 확인11/12·처리 약속11/20",
+    description: "공식 새 환불 지연·계좌 입력 공지를 확인했습니다. 대상자·카드/계좌 절차와 사무국의11/20완료 약속을 실제 개인별 환급 완료와 구분합니다.",
+    thumbnail: "/images/blog/verified-2026-seoul-open-marathon-registration-20261110.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-05-04",
+    updatedAt: "2026-11-10",
+    category: "news",
+    readingTime: 6,
+    tags: [
+      "서울 오픈 마라톤",
+      "광화문 마라톤",
+      "서울 도심 마라톤",
+      "하프마라톤",
+      "가을 마라톤",
+      "대회 일정"
+    ],
     event: {
-      name: '2026 서울 오픈 마라톤 대회',
-      startDate: '2026-10-05T07:30:00+09:00',
-      location: {
-        name: '광화문광장 앞 대로변',
-        address: '서울특별시 종로구 세종대로',
+      "name": "2026 서울 오픈 마라톤 대회",
+      "startDate": "2026-10-05T07:30:00+09:00",
+      "location": {
+        "name": "광화문광장 앞 대로변",
+        "address": "서울특별시 종로구 세종대로"
       },
-      organizer: '서울오픈마라톤 조직위원회',
-      url: 'https://seoulopen.or.kr',
-      offers: [
-        { name: '하프 (21.0975km)', priceKrw: 80000, availabilityEnds: '2026-05-10', url: 'https://seoulopen.or.kr/sub/register.php' },
-        { name: '10K', priceKrw: 60000, availabilityEnds: '2026-05-10', url: 'https://seoulopen.or.kr/sub/register.php' },
-      ],
+      "organizer": "서울오픈마라톤 조직위원회",
+      "url": "https://seoulopen.or.kr",
+      "offers": [
+        {
+          "name": "하프 (21.0975km)",
+          "priceKrw": 80000,
+          "availabilityEnds": "2026-05-10",
+          "url": "https://seoulopen.or.kr/sub/register.php"
+        },
+        {
+          "name": "10K",
+          "priceKrw": 60000,
+          "availabilityEnds": "2026-05-10",
+          "url": "https://seoulopen.or.kr/sub/register.php"
+        }
+      ]
     },
     faqs: [
       {
-        question: '참가비는 얼마인가요?',
-        answer: '하프(21.0975km) 80,000원, 10K 60,000원입니다. 두 종목 모두 2026년 5월 10일(일)까지 선착순 접수입니다.',
+        "question": "환불은 다 끝났나요?",
+        "answer": "사무국은 새 지연 공지에서 늦어도11/20처리 완료를 약속했습니다. 실제 개인별 취소·입금 완료를 이 글에서 확인한 것은 아닙니다."
       },
       {
-        question: '풀코스(42.195km) 종목도 있나요?',
-        answer: '아니요, 2026 서울 오픈 마라톤은 하프와 10K 두 종목만 운영합니다. 가을 풀코스가 목표라면 같은 10월에 열리는 춘천마라톤(10/25 예상)이나 JTBC 서울마라톤(11월)을 검토하세요.',
+        "question": "11월12일까지 모두 계좌를 내야 하나요?",
+        "answer": "최신 요청은 환불 대상자 중 계좌 정보가 없어 보류된 참가자에 대한 안내입니다. 본인 해당 여부와 공식 경로를 사무국에서 확인하세요."
       },
       {
-        question: '10월 5일이 평일(월요일)인데 대회가 가능한가요?',
-        answer: '평일 대회입니다. 개천절(10/3 토요일) 연휴 직후라 임시공휴일 지정 여부가 변수입니다. 출근 러너는 휴무 조정이 필요하며, 정확한 공휴일 정보는 정부 발표를 확인하세요.',
-      },
-      {
-        question: '발볼이 넓은 한국 러너에게 추천할 신발이 있나요?',
-        answer: '평탄 도심 코스라 신발 선택 폭이 넓습니다. 하프 PB 도전이라면 카본 레이싱화, 안전 완주는 데일리 트레이너가 적합합니다. 본인 발볼·체중에 맞는 신발은 1분 러닝화 추천 페이지에서 확인할 수 있습니다.',
-      },
-      {
-        question: '컷오프 시간은 어떻게 되나요?',
-        answer: '2026년 5월 4일 기준 공식 사이트에 컷오프 시간이 명시되어 있지 않습니다. 정확한 정보는 대회 직전 공식 안내문 또는 070-7766-1238로 문의하세요.',
-      },
-      {
-        question: '주차 가능한가요?',
-        answer: '광화문광장 인근은 대회 당일 교통 통제 가능성이 큽니다. 자가용보다는 지하철 5호선 광화문역 등 대중교통 이용을 권장합니다. 정확한 교통 통제 안내는 대회 직전 공식 사이트에서 공지됩니다.',
-      },
+        "question": "새 대회일은 정해졌나요?",
+        "answer": "11/10확인한 공지 범위에서 새 날짜 확정 원문은 확보하지 못했습니다. 원래10/5를 개최 완료로 쓰지 않습니다."
+      }
     ],
     content: `
-<div class="callout warning">
-  <span class="callout-icon">🚨</span>
-  <div class="callout-body">
-    <p class="callout-title">[2026-10-24 확인] 대회 일정 연기 — 새 날짜 미정</p>
-    <p>10월 5일 개최 예정이던 2026 서울 오픈 마라톤이 <strong>일정 연기</strong>로 공지됐습니다. 공식 홈페이지 공지(<a href="https://seoulopen.or.kr/bbs/board.php?bo_table=id_noticeNew2026&wr_id=48" rel="noopener noreferrer">seoulopen.or.kr</a>)에 새 일정은 10월 24일에도 없고 "개별 안내 예정"으로만 적혀 있습니다. 연기 사유도 공식 공지에는 명시돼 있지 않아 불명입니다. 이미 접수한 러너의 <strong>환불 접수(2026년 9월 21일~10월 23일)는 마감</strong>됐고, 마감 후 무통장 입금은 영업일 3~5일, 카드 취소는 약 7일 안에 처리된다고 안내합니다(<a href="https://seoulopen.or.kr/bbs/board.php?bo_table=id_noticeNew2026&wr_id=52" rel="noopener noreferrer">환불 진행 상황 공지</a>). 환불하지 않고 등록을 유지한 러너에게는 확정된 새 대회의 선등록 링크를 우선 제공한다고 밝혔습니다. 아래 본문은 연기 이전(5월 접수 시점) 기준 정보이며, 새 날짜가 확정되면 갱신하겠습니다.</p>
-  </div>
-</div>
-
-<div class="tldr">
-  <span class="tldr-label">3줄 요약 (연기 이전 기준)</span>
-  <ul>
-    <li>2026년 10월 5일(월) 광화문광장 앞 출발 → 무교로 도착, 하프·10K 평탄 도심 코스 — 이 일정은 연기됨(새 날짜 미정)</li>
-    <li>접수 마감 5월 10일(일) 선착순, 하프 80,000원 · 10K 60,000원</li>
-    <li>풀코스 없음 — 풀이 목표라면 춘천(10/25 예상), 도심 분위기·페이스메이커 운영을 원하면 이 대회</li>
-  </ul>
-</div>
-
-<h2>핵심 정보 한눈에 (연기 이전 기준)</h2>
-
-<div class="stat-grid">
-  <div class="stat-card accent">
-    <span class="stat-label">대회일</span>
-    <span class="stat-value">10/5 (월)</span>
-    <span class="stat-sub">오전 7:30 출발</span>
-  </div>
-  <div class="stat-card">
-    <span class="stat-label">하프 21.0975km</span>
-    <span class="stat-value">80,000원</span>
-    <span class="stat-sub">만 18세 이상</span>
-  </div>
-  <div class="stat-card">
-    <span class="stat-label">10K</span>
-    <span class="stat-value">60,000원</span>
-    <span class="stat-sub">연령 제한 없음</span>
-  </div>
-  <div class="stat-card">
-    <span class="stat-label">접수 마감</span>
-    <span class="stat-value">5/10 (일)</span>
-    <span class="stat-sub">선착순</span>
-  </div>
-</div>
-
-<h2>접수부터 대회까지 타임라인</h2>
-
-<div class="timeline">
-  <div class="timeline-item done">
-    <span class="timeline-date">2026.04.23 (목)</span>
-    <span class="timeline-title">접수 시작</span>
-    <p class="timeline-desc">seoulopen.or.kr에서 선착순 접수 오픈</p>
-  </div>
-  <div class="timeline-item active">
-    <span class="timeline-date">2026.05.10 (일)</span>
-    <span class="timeline-title">접수 마감</span>
-    <p class="timeline-desc">정원 도달 시 조기 마감 가능. 결정은 이번 주 안에</p>
-  </div>
-  <div class="timeline-item">
-    <span class="timeline-date">2026.09 말</span>
-    <span class="timeline-title">레이스 키트 수령 안내</span>
-    <p class="timeline-desc">대회 약 1주 전 공식 안내문 발송 (출발·집결 시각 최종 확정)</p>
-  </div>
-  <div class="timeline-item">
-    <span class="timeline-date">2026.10.05 (월)</span>
-    <span class="timeline-title">대회 당일 — 광화문광장 출발 7:30</span>
-    <p class="timeline-desc">개천절(10/3 토) 연휴 직후 평일. 임시공휴일 지정 여부 확인 필수</p>
-  </div>
-</div>
-
-<h2>대회 기본 정보</h2>
-
-<table>
-  <thead>
-    <tr><th>항목</th><th>내용</th></tr>
-  </thead>
-  <tbody>
-    <tr><td><strong>대회명</strong></td><td>2026 서울 오픈 마라톤 대회</td></tr>
-    <tr><td><strong>장소</strong></td><td>광화문광장 앞 대로변 출발 → 무교로 도착 (예정)</td></tr>
-    <tr><td><strong>주최</strong></td><td>서울오픈마라톤 조직위원회 · (사)한국체육개발원</td></tr>
-    <tr><td><strong>접수처</strong></td><td><a href="https://seoulopen.or.kr/sub/register.php" rel="noopener noreferrer">seoulopen.or.kr</a></td></tr>
-    <tr><td><strong>문의</strong></td><td>070-7766-1238 / somarathon@naver.com</td></tr>
-  </tbody>
-</table>
-
-<div class="callout info">
-  <span class="callout-icon">ℹ️</span>
-  <div class="callout-body">
-    <p class="callout-title">컷오프·정원·교통통제 안내는 공식 사이트 확인</p>
-    <p>현재(5월 4일 기준) 컷오프 시간, 종목별 정원, 교통통제 상세 안내가 공식 사이트에 별도 명시돼 있지 않습니다. 정확한 사항은 대회 직전 <a href="https://seoulopen.or.kr" rel="noopener noreferrer">공식 홈페이지</a> 또는 070-7766-1238로 문의하세요.</p>
-  </div>
-</div>
-
-<h2>광화문 도심 코스 — 가을 도시 러닝의 매력</h2>
-
-<p>국내 가을 마라톤 중 <strong>광화문광장에서 출발하는 대회</strong>는 흔하지 않습니다. 서울 오픈 마라톤의 가장 큰 매력은 도심 한복판 출발 — 경복궁·청계천·시청을 배경으로 달리는 경험입니다.</p>
-
-<ul>
-  <li><strong>출발지:</strong> 광화문광장 앞 대로변 (지하철 5호선 광화문역 도보 1분)</li>
-  <li><strong>도착지:</strong> 무교로 (도착 후 시청·청계천 산책 가능)</li>
-  <li><strong>지형:</strong> 서울 도심 평탄 코스 (구체적 언덕 정보 미공개)</li>
-  <li><strong>페이스메이커:</strong> 광화문 페이싱팀 운영 예정 — 초보 러너에게 유리</li>
-</ul>
-
-<h2>이 대회는 누구에게 잘 맞나</h2>
-
-<div class="pros-cons">
-  <div class="pros">
-    <div class="pros-title">✓ 이런 러너에게 추천</div>
-    <ul>
-      <li><strong>가을 첫 하프 도전자</strong> — 평탄 도심 코스 + 페이스메이커 운영으로 부담 적음</li>
-      <li><strong>춘천마라톤 광클 실패</strong> — 같은 10월 초 도심 대회로 가을 시즌 대안</li>
-      <li><strong>서울 거주 러너</strong> — 셔틀·숙박 부담 없이 당일 참가 가능</li>
-      <li><strong>도심 러닝 사진</strong>을 좋아하는 러너 — 광화문 출발 인증샷</li>
-    </ul>
-  </div>
-  <div class="cons">
-    <div class="cons-title">✕ 이런 러너에겐 비추</div>
-    <ul>
-      <li><strong>풀코스가 목표</strong> — 풀 종목 없음. <a href="/blog/2026-chuncheon-marathon-registration-guide">춘천마라톤(10/25 예상)</a> 우선</li>
-      <li><strong>10월 5일(월) 출근 러너</strong> — 평일 대회, 임시공휴일 지정 여부 확인 필수</li>
-      <li><strong>경치 풍부한 자연 코스 선호</strong> — 의암호·강변 같은 자연 풍경 없음</li>
-    </ul>
-  </div>
-</div>
-
-<h2>10월 가을 도심 마라톤 신발 선택</h2>
-
-<p>10월 초 서울 평년 기온은 오전 15~20℃ 수준으로 러닝 최적기. 광화문~무교로 도심 평탄 코스라 신발 선택 폭이 넓습니다.</p>
-
-<ul>
-  <li><strong>하프 PB 도전 (1:30 미만):</strong> 카본 플레이트 레이싱화. <a href="/best/racing">레이싱화 추천</a></li>
-  <li><strong>하프 안전 완주 (1:30~2:30):</strong> 슈퍼트레이너·데일리 트레이너. <a href="/best/daily-trainer">데일리 트레이너 추천</a></li>
-  <li><strong>10K 가벼운 참가:</strong> 평소 신는 데일리화면 충분</li>
-</ul>
-
-<p>본인 페이스·발 특성에 맞는 추천이 필요하면 <a href="/recommend">1분 러닝화 추천</a>을 활용해보세요.</p>
-
-<h2>접수 전 체크리스트</h2>
-
-<ul>
-  <li>참가 종목 결정 (하프/10K)</li>
-  <li>10월 5일(월) 일정 확인 — 평일 대회</li>
-  <li>seoulopen.or.kr 회원가입 및 신청서 작성</li>
-  <li>참가비 결제</li>
-  <li>대회 1주일 전 공식 안내문 재확인 (출발·집결 시각, 교통통제)</li>
-</ul>
-
-<div class="callout success">
-  <span class="callout-icon">🏃</span>
-  <div class="callout-body">
-    <p class="callout-title">가을 시즌 다른 대회와 비교 검토</p>
-    <p>같은 10월에 열리는 가을 메이저 대회를 함께 검토해보세요 — 동마클럽 계열 <a href="/blog/2026-dongma-halfyear-marathon-schedule">2026 하반기 동마 대회</a>(서울레이스 10/11, 경주국제 10/17), <a href="/blog/2026-chuncheon-marathon-registration-guide">춘천마라톤(10/25 예상)</a>. 본인 목표(완주/PB/풀/하프)에 맞춰 1~2개 선택이 정석입니다.</p>
-  </div>
-</div>
-
-<p>주최 측 문의: 070-7766-1238 / somarathon@naver.com</p>
-
-<p>국내 다른 가을 대회를 찾고 있다면 <a href="/marathon">2026 마라톤 캘린더</a>에서 월별로 비교할 수 있습니다.</p>
-
-<p><small>출처: 서울오픈마라톤 공식 홈페이지 <a href="https://seoulopen.or.kr" rel="noopener noreferrer">seoulopen.or.kr</a> · 마라톤GO 대회 정보 / 작성일 2026년 5월 4일 기준 / 코스·출발 시각·교통통제는 주최 측 사정에 따라 변경될 수 있으며, 대회 직전 공식 공지를 재확인하시기 바랍니다.</small></p>
+<p><strong>2026-11-10 공식 안내 대조.</strong> 접수·운영 공지와 확인하지 못한 개인 처리 결과를 구분했습니다.</p><h2>대회는 일정 변경 상태,새 개최일은 미확인</h2><p>공식 일정 변경 공지는 새 날짜와 운영 방식을 참가자에게 개별 안내할 예정이라고 적습니다.11월10일 확인한 공지 목록에서 새 개최일 확정 원문은 확보하지 못했습니다. 원래10월5일을 이미 개최된 날짜로 안내하지 않습니다.</p><p>현재 참가자에게 필요한 정보는 예전 접수 요령보다 환불 진행과 누락된 정보 확인입니다. 아래는11월10일 공식 공개 원문을 대조한 것이며 본인 결제·입금 내역을 대신 조회한 결과는 아닙니다.</p><div class="table-wrap"><table><thead><tr><th scope="col">공식 공지</th><th scope="col">확인한 내용</th><th scope="col">실제 참가자가 확인할 것</th></tr></thead><tbody><tr><td>환불 진행 현황(55번)</td><td>카드 취소 처리는 완료됐다고 사무국 안내·실제 반영은 카드사별 차이</td><td>본인 카드 결제/취소 내역</td></tr><tr><td>지연·변경 일정(56번)</td><td>10/23이전 신청 우선·이후 신청 순차 처리·늦어도11/20완료 약속</td><td>개인별 실제 입금·취소 완료는 별도</td></tr><tr><td>환불 계좌 입력 요청(57번)</td><td>계좌 미입력으로 보류된 대상자에게11/12까지 정보 접수 요청</td><td>본인이 해당하는지 공식 신청 내역·사무국 확인</td></tr></tbody></table></div><h2>11월20일은 사무국의 완료 약속입니다</h2><p>새 지연 공지는 앞선 일정대로 처리가 끝나지 않았다고 설명하고,모든 환불 신청자를 늦어도11월20일까지 처리하겠다고 안내합니다.10월23일까지 신청한 건을 우선 분류하고 그 이후 신청 건을 순차 처리한다는 설명입니다.</p><p>이를 이미 환불이 끝났다는 확인이나 개인별 입금 보장으로 바꾸지 않았습니다. 과거 공지의 마감 후3~5일·약7일 안내만 남겨 두면 현재 지연 상황을 놓치므로 새 공지와 구분해 읽어야 합니다.</p><h2>계좌 정보가 빠진 대상자는11월12일 안내 확인</h2><p>최신 계좌 입력 요청은 환불 대상자로 확인됐지만 계좌 정보가 없는 참가자를 대상으로11월12일까지 공식 홈페이지 환불 신청 또는 공식 카카오톡 채널로 정보를 접수하도록 안내합니다. 모든 참가자가 새로 계좌를 제출해야 한다는 뜻으로 확대하지 않습니다.</p><p>공지 본문에는 홈페이지·카카오톡 링크를 넣으라는 편집 흔적도 남아 있습니다. 이 글은 임의 주소를 만들어 주지 않고 공식 공지와 사이트의 실제 메뉴·문의 경로를 연결합니다. 개인정보·계좌는 주최 측 공식 경로에서 본인 필요 범위만 확인·제출하세요.</p><h2>카드와 계좌이체의 실제 처리 결과를 나눠 보기</h2><p>55번 공지는 카드 취소 처리가 완료됐다고 사무국이 설명하지만 카드 이용 내역 반영까지는 별도 시간이 걸릴 수 있다고 안내합니다. 계좌이체 환불과 전체 환불 완료를 같은 상태로 합치지 않았습니다.</p><p>아직 금액이 확인되지 않는다면 본인 신청 내역과 결제수단의 취소·입금 상태를 공식 사무국에 문의할 근거로 준비하세요. 이 글은 개인 거래를 확인하지 않았고 새 개최일·연기 사유를 추측하지 않습니다.</p><h2>확인한 원문</h2><ul><li><a href="https://seoulopen.or.kr/bbs/board.php?bo_table=id_noticeNew2026&amp;wr_id=48" target="_blank" rel="noopener noreferrer">공식 일정 변경·환불 안내</a> — 새 일정 개별 안내 예정. 새 개최일 확정 근거 아님.</li><li><a href="https://seoulopen.or.kr/bbs/board.php?bo_table=id_noticeNew2026&amp;wr_id=55" target="_blank" rel="noopener noreferrer">공식 환불 진행 현황</a> — 카드 취소 처리와 실제 환급 반영 구분.</li><li><a href="https://seoulopen.or.kr/bbs/board.php?bo_table=id_noticeNew2026&amp;wr_id=56" target="_blank" rel="noopener noreferrer">공식 환불 지연·변경 일정</a> — 11/20까지 처리 약속. 실제 개인별 완료 미확인.</li><li><a href="https://seoulopen.or.kr/bbs/board.php?bo_table=id_noticeNew2026&amp;wr_id=57" target="_blank" rel="noopener noreferrer">공식 환불 계좌 입력 요청</a> — 계좌 미입력 대상자11/12기한. 실제 공식 메뉴·문의 경로 확인.</li><li><a href="https://seoulopen.or.kr/bbs/board.php?bo_table=id_noticeNew2026" target="_blank" rel="noopener noreferrer">공식 공지 목록</a> — 11/10라이브 원문 확인. 캐시 목록보다 최신2건 추가 확인.</li></ul>
 `,
   },
   {

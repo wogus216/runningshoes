@@ -2,28 +2,38 @@ import type { MarathonEvent } from '@/types/marathon';
 
 export const marchEvents: MarathonEvent[] = [
   {
-    id: 'bucheon-international-10km-road-race-2027',
-    name: '2027 부천국제 10km 로드레이스',
-    date: '2027-03-07',
-    month: '3월',
-    location: '부천시청 집결 · 부천중앙공원~심곡천 일원',
-    region: '경기',
-    distances: ['10K'],
-    status: '접수예정',
-    isMajor: false,
-    website: 'https://bskrun.co.kr/',
-    registrationStart: '2026-11-10',
-    registrationEnd: '2027-01-06',
-    registrationNote:
-      '공식 홈은 2026년 11월 10일(화) 오후 2시 오픈을 안내합니다. 10km와 3.5km 건강달리기를 운영하며 전체 선착순 10,000명입니다. 참가비 금액은 11월 8일 공식 요강에서 확인되지 않았습니다. 접수 표는 2027년 1월 6일 16시 마감이지만 환불 상세에는 1월 8일 16시, 하단 환불 문단에는 1월 6일 16시, 기록증 문단에는 1월 23일이 적혀 있어 최종 기한은 사무국에 확인해야 합니다. 10km 출발 그룹 배정은 대회일 기준 3년 이내 공식 기록증으로 하며, JPG·PNG 500KB 이하 파일을 신청 후 업로드합니다. 기록증이 없으면 하위 그룹 자동 배정입니다.',
-    lastVerified: '2026-11-08',
-    description:
-      '부천시육상연맹·한국실업육상연맹·경기일보가 주최하는 10km·3.5km 건강달리기 대회입니다. 부천시청 집결, 부천중앙공원~심곡천 일원에서 2027년 3월 7일 08시 출발 예정입니다. 10km는 공식 기록에 따라 S~E 그룹을 배정하며 상위 그룹으로 임의 이동해 출발할 수 없습니다. 참가비 금액과 일부 최종 제출·환불 기한은 공식 안내 확인이 필요합니다.',
-    raceInfo: {
-      expectedParticipants: 10000,
-      startTime: '08:00',
-    },
-  },
+  "id": "bucheon-international-10km-road-race-2027",
+  "name": "2027 부천국제 10km 로드레이스",
+  "date": "2027-03-07",
+  "month": "3월",
+  "location": "부천시청 집결 · 부천중앙공원~심곡천 일원",
+  "region": "경기",
+  "distances": [
+    "10K"
+  ],
+  "status": "접수예정",
+  "isMajor": false,
+  "website": "https://bskrun.co.kr/",
+  "registrationStart": "2026-11-10",
+  "registrationEnd": "2027-01-06",
+  "registrationNote": "11/10 대조한 공식 요강 원문 캐시에서 10km50,000원·3.5km40,000원을 확인했습니다. 공식 홈의11/10 14시 개시 예고와 실제 접수·결제 가능 여부는 구분하며 이번 확인은 개시 전입니다. 요강 접수·기록증 마감은2027/1/6 16시,환불/정보변경 일부 문단은1/8 16시로 달라 사무국 확인이 필요합니다. 10km그룹용 기록증은 대회일 기준3년 이내 JPG·PNG500KB이하이며 미보유자는 하위그룹 배정 안내입니다.",
+  "lastVerified": "2026-11-10",
+  "description": "부천시체육회·한국실업육상연맹·경기일보 주최로 안내되는 2027년3월7일08시 예정 10km·3.5km 건강달리기 대회입니다. 부천시청 집결·중앙공원~심곡천 일원,전체10,000명 선착순 안내입니다. 11/10 대조한 요강 표시 참가비는10km5만원·3.5km4만원입니다. 출발그룹은 공식기록증으로 배정하며,반환·정확 코스·환불 기한은 최종 안내를 확인하세요. 실제 접수 개시·현재 결제 조건·잔여 정원은 미확인입니다.",
+  "raceInfo": {
+    "expectedParticipants": 10000,
+    "startTime": "08:00",
+    "entryFees": [
+      {
+        "distance": "10K",
+        "fee": 50000
+      },
+      {
+        "distance": "3.5km 건강달리기",
+        "fee": 40000
+      }
+    ]
+  }
+},
   {
     id: 'gumi-marathon-2026',
     name: '2026 구미 박정희 마라톤',

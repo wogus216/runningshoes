@@ -4978,101 +4978,54 @@ export const posts_2026_06: BlogPost[] = [
 `,
   },
   {
-    id: '2026-incheon-marathon',
-    slug: '2026-incheon-marathon',
-    title: '바다 위 청라하늘대교를 달린다 — 2026 인천마라톤(제2회) | 11/22 인천 첫 풀코스, 코스·2025 1회 총정리',
-    description: '인천시·대한육상연맹이 주최하는 인천 최초 풀코스 대회 \'인천마라톤\'이 11월 22일(일) 제2회로 열립니다. 2026년엔 청라하늘대교 위를 달리는 편도 코스(바다 위 러닝)가 확정됐고, 풀코스 정원도 8천 명으로 확대됐죠. 접수는 9월 7일 14시에 시작됐고 풀코스는 기록증 제출자만 신청할 수 있습니다. 2만 명 규모·해외 엘리트 초청의 이 공식 시 대회 일정·코스·참가비·접수 정보와 2025 제1회 결과를 정리했습니다.',
-    thumbnail: '/images/blog/2026-incheon-marathon.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-06-08',
-    updatedAt: '2026-09-27',
-    category: 'news' as const,
+    id: "2026-incheon-marathon",
+    slug: "2026-incheon-marathon",
+    title: "2026 인천마라톤 준비 — 출발지·10:50 컷오프·종목별 그룹",
+    description: "공식 최신 컷오프·풀코스 그룹·10K 자율 그룹·5K 반환점 변경을 대조했습니다. 출발지·도착지가 다른 풀코스의 이동 준비를 정리합니다.",
+    thumbnail: "/images/blog/verified-2026-incheon-marathon-20261110.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-06-08",
+    updatedAt: "2026-11-10",
+    category: "news",
     readingTime: 6,
     event: {
-      name: '2026 인천마라톤 (제2회)',
-      startDate: '2026-11-22',
-      location: { name: '인천아시아드주경기장', address: '인천광역시 서구 봉수대로 806' },
-      organizer: '인천광역시·대한육상연맹',
-      url: 'http://www.incheonmarathon.or.kr/',
+      "name": "2026 인천마라톤 (제2회)",
+      "startDate": "2026-11-22",
+      "location": {
+        "name": "인천아시아드주경기장",
+        "address": "인천광역시 서구 봉수대로 806"
+      },
+      "organizer": "인천광역시·대한육상연맹",
+      "url": "http://www.incheonmarathon.or.kr/"
     },
-    tags: ['인천마라톤', '인천 마라톤', '풀코스 마라톤', '청라하늘대교', '11월 마라톤', '러닝 대회', '인천 러닝', '가을 마라톤', '마라톤 접수'],
+    tags: [
+      "인천마라톤",
+      "인천 마라톤",
+      "풀코스 마라톤",
+      "청라하늘대교",
+      "11월 마라톤",
+      "러닝 대회",
+      "인천 러닝",
+      "가을 마라톤",
+      "마라톤 접수"
+    ],
     content: `
-<div class="deadline-strip">🔁 <strong>이 글은 6월에 쓴 개요입니다.</strong> 접수는 <strong>9월 7일(월) 14시에 시작돼 9월 27일 확인 시 품절로 끝났고</strong>, <strong>추가접수는 10월 27일(화) 14시에 시작됐습니다</strong>(공식 공지, 10월 29일 확인) — 공식 홈페이지에서 로그인 후 온라인으로 접수하고 <strong>추가 접수 후에는 취소·환불과 부문·티셔츠 사이즈·배송지 변경이 모두 불가</strong>합니다. 풀코스 추가 참가자의 기록증 제출은 10월 30일(금) 16시까지입니다. 지금 남은 정원과 마감 시점은 확인하지 못했습니다. <strong>풀코스는 기록증 제출자만 신청할 수 있습니다</strong>(풀 4:59:59 또는 하프 2:09:59). 9월 3일 공개된 공식 코스도로 청라하늘대교 통과와 <strong>운서역 출발</strong>이 확정됐습니다 — 아래 6월 시점의 "유력안"과 방향이 반대입니다. 확정된 코스·제한시간·급수는 <a href="/blog/incheon-marathon-2026-site-open">인천마라톤 코스도 공개 — 청라하늘대교 확정, 풀코스는 기록증 제출자만</a> 글과 <a href="/marathon/incheon-marathon-2026">마라톤 캘린더</a>에서 확인하세요.</div>
-
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>2026 인천마라톤(제2회)이 11월 22일(일) 개최</strong> — 인천시·대한육상연맹이 주최하는 <strong>인천 최초·유일의 공식 풀코스 마라톤</strong>입니다</li>
-    <li>2026년 최대 변화는 <strong>청라하늘대교 위를 달리는 편도 코스</strong> — 바다 위를 달리는 국내에서 보기 드문 교량 러닝이 차별점입니다(2026-09-03 공식 코스도로 확정)</li>
-    <li>2만 명 규모(풀코스 8천 명으로 확대)·해외 엘리트 초청의 <strong>"역대급" 공식 시 대회</strong>. 접수는 <strong>9월 7일(월) 14시에 시작됐습니다</strong></li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">🌊</span>
-  <div class="callout-body">
-    <p class="callout-title">바다 위 다리를 달리는 마라톤</p>
-    <p>인천은 <strong>1923년 경인역전경주·1959년 국제마라톤</strong>의 출발지로 한국 마라톤의 발상지로 꼽히지만, 정작 인천을 대표하는 공식 풀코스 대회는 없었습니다. 그 공백을 2025년 출범한 <strong>인천마라톤</strong>이 채웠죠. 2026년 제2회는 <strong>청라하늘대교(영종~청라 연결 교량) 위를 달리는 편도 코스</strong> 도입을 검토 중이라, "바다 위 러닝"이라는 독특한 경험으로 주목받고 있습니다.</p>
-  </div>
-</div>
-
-<h2>핵심 정보 한눈에</h2>
-<table>
-  <tbody>
-    <tr><td><strong>대회일</strong></td><td>2026년 11월 22일(일) — 확정</td></tr>
-    <tr><td><strong>종목</strong></td><td>풀코스(42.195km, 8천 명) · 10K · 5K</td></tr>
-    <tr><td><strong>출발</strong></td><td>인천아시아드주경기장 (인천 서구)</td></tr>
-    <tr><td><strong>규모</strong></td><td>약 2만 명 (해외 엘리트 초청 포함)</td></tr>
-    <tr><td><strong>주최</strong></td><td>인천광역시 · 대한육상연맹</td></tr>
-  </tbody>
-</table>
-
-<h2>청라하늘대교 편도 코스 (2026-09-03 확정)</h2>
-<p>2025년 1회 대회는 문학경기장 기점 반환 코스였는데, <strong>2026년은 청라하늘대교를 통과하는 편도 코스</strong>로 바뀌었습니다. 9월 3일 공식 코스도가 공개되면서 방향까지 확정됐습니다.</p>
-<ul>
-  <li><strong>확정 코스(풀)</strong>: <strong>영종구 운서역</strong> 출발 → 영종 내 왕복 → <strong>청라하늘대교</strong> → 청라국제도시역 방면 왕복 → 크리스털 삼거리 → <strong>인천아시아드 주경기장</strong> 도착</li>
-  <li><strong>특징</strong>: 서해 해안 경관과 도심을 잇는, 국내에 드문 <strong>교량 위 러닝</strong>. 세계육상연맹 공인은 "(예정)" 표기</li>
-  <li><strong>10K·5K</strong>: 아시아드주경기장 출발·도착 왕복 코스</li>
-</ul>
-<p class="caption">※ 2026-04 언론 보도 단계에서 거론되던 "아시아드주경기장 출발 → 영종 씨사이드파크 도착" 방향은 확정 코스와 <strong>반대</strong>였습니다. 이 글의 6월 원문도 그 검토안을 옮겨 적었기에 위 항목을 확정 코스로 고쳤습니다. 공식은 코스도에 "코스는 추후 변경될 수 있습니다"를 함께 적었습니다.</p>
-
-<h2>2025 제1회 돌아보기</h2>
-<p>2025년 첫 대회는 <strong>2만 명, 해외 8개국 엘리트 70명</strong>이 참가하며 성황리에 출범했습니다. 남자부는 에티오피아의 <strong>게르바 베아타 디바바(2:06:52)</strong>, 여자부는 루마니아의 조안 첼리모 멜리(2:22:57)가 우승했죠. 광역자치단체 공식 풀코스 대회로는 대구마라톤에 이은 두 번째로, <strong>시비 20억 원</strong>이 투입된 인천시의 대표 마라톤 포지셔닝이 분명합니다.</p>
-
-<h2>접수·참가비</h2>
-<ul>
-  <li><strong>접수</strong>: <strong>9월 7일(월) 14시</strong> 개시 — <strong>9월 27일 확인 시 참가권 품절로 접수 종료</strong>(마감 공지 없음). 공식 사이트 incheonmarathon.or.kr</li>
-  <li><strong>참가비</strong>: 풀 80,000원 / 10K 50,000원 / 5K 30,000원 — <em>공식 대회소개 표 확정</em></li>
-  <li><strong>풀코스 참가 자격</strong>: 만 18세 이상 + 기록증 제출(2024.1.1~2026.10.19 대회의 풀 4:59:59 또는 하프 2:09:59 이내). 런카이브 제출, 미제출 시 자동 환불</li>
-  <li><strong>완주 기념품</strong>: 완주 메달 + 기능성 티셔츠 + 온라인 기록증 + 기록칩(풀·10K)</li>
-  <li><strong>상금</strong>: 국내부 총 8,600만 원(1위 1,500만 원), 해외부 36만 달러</li>
-</ul>
-
-<div class="callout warning">
-  <span class="callout-icon">📌</span>
-  <div class="callout-body">
-    <p class="callout-title">참가 전 체크 — 미확정 정보 & 대회 혼동 주의</p>
-    <ul>
-      <li><strong>코스·참가비·접수일은 2026-09-04 기준 공식 확정</strong>으로 갱신했습니다. 다만 기념품 구성과 시상 내역은 공식 홈에서 아직 COMING SOON이고, 코스도에도 "변경될 수 있음"이 병기돼 있으니 신청 전 공식 사이트를 확인하세요</li>
-      <li><strong>대회 혼동 주의</strong> — 봄에 열리는 <strong>인천국제하프마라톤</strong>(3월, 문학경기장, 26년 역사)과는 <strong>완전히 별개 대회</strong>입니다. 이 글의 인천마라톤은 2025년 신설된 풀코스 대회(or.kr)예요</li>
-      <li>대중교통(인천1호선) 접근이 편리하니 차량 통제를 감안해 지하철 이용을 권합니다</li>
-    </ul>
-  </div>
-</div>
-
-<h2>다른 인천·가을 대회와 함께</h2>
-<ul>
-  <li>같은 인천이라도 성격이 다릅니다 — <a href="/blog/2026-disney-run-incheon-virtual-run">디즈니런 2026 인천</a>(10/24 테마런), <a href="/blog/2026-songdo-lee-bongju-marathon">송도 이봉주 마라톤</a>(6/28 송도)</li>
-  <li>11월 서울 대회를 함께 보려면 → <a href="/blog/2026-mbn-seoul-marathon-registration">MBN 서울마라톤</a>(11/15 광화문→잠실)</li>
-  <li>인천에서 평소 뛸 코스가 궁금하다면 → <a href="/blog/incheon-unique-running-courses-7">인천 달리기 좋은 곳 7선</a></li>
-</ul>
-<p>가을 대회 전체 일정은 <a href="/marathon">마라톤 캘린더</a>에서 한 번에 확인하세요.</p>
-
-<h2>마무리</h2>
-<p>2026 인천마라톤은 <strong>"인천을 대표하는 첫 풀코스 대회의 2년 차"</strong>이자, <strong>바다 위 청라하늘대교를 달리는 특별한 경험</strong>을 예고하는 대회입니다. 인천 러너에겐 홈 대회, 외지 러너에겐 색다른 코스로 매력적이죠. 핵심은 <strong>11/22 일정을 기억하고 7월 접수 오픈을 놓치지 않는 것</strong>. 확정 코스·참가비는 공식 발표 시 다시 확인하세요. 🏃</p>
-
-<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 인천시 공식 발표와 경향신문·인천in 등 언론 보도, 2025년 제1회 대회 자료를 종합해 2026-06-08에 쓴 개요이며, 코스·참가비·접수·참가 자격은 2026-09-04에 공식 홈페이지(코스안내·유의사항·대회소개 표)를 직접 확인해 갱신했습니다. 기념품 구성과 시상 내역은 그 시점에도 공식 미공개였고, 신청 전 공식 사이트(incheonmarathon.or.kr)를 다시 확인하세요. 봄의 인천국제하프마라톤과는 별개 대회입니다. (글감: @runninglife_korea, 2026-06-08)</p>
+<p><strong>2026-11-10 공식 안내 대조.</strong> 접수·운영 공지와 확인하지 못한 개인 처리 결과를 구분했습니다.</p><h2>풀코스는 출발지와 골인지가 다릅니다</h2><p>공식 대회 소개는2026년11월22일 일요일08:00 대회를 안내합니다. 풀코스는 운서역 일원 출발·인천아시아드주경기장 도착,10km·5km는 주경기장 출발·도착입니다. 동행인과 같은 장소로 가는지부터 본인 종목에 맞춰 확인하세요.</p><p>풀코스는 공식 컷오프 지도에서 청라하늘대교를 건너 육지 쪽 주경기장으로 이어집니다. 이 글은 공식 지도와 공지로 동선을 설명하며 실제 측량·고도 분석·현재 현장 답사를 했다는 뜻은 아닙니다.</p><figure><img src="/images/blog/verified-incheon-cutoff-map-20261110.webp" alt="2026 인천마라톤 공식 풀코스 컷오프 지도" loading="lazy"/><figcaption>공식11/10 확인 공지의 지도. 운서역 출발·주경기장 도착과 청라하늘대교 서쪽 컷오프 표시.</figcaption></figure><h2>청라하늘대교 서쪽 진입,10시50분을 따로 보세요</h2><p>공식 컷오프 공지는 청라하늘대교(서) 진입 지점의 컷오프를10시50분으로 안내합니다. 이는 각자의 출발 후 경과시간으로 표시한 값이 아니라 공지에 적힌 시각입니다. 총 제한시간만 보고 이 지점의 통제 시각을 놓치지 않도록 확인하세요.</p><p>공식은 컷오프 이후 코스 내 주행을 제한하고 안전요원의 안내에 따라 회송버스로 이동하도록 안내합니다. 배정 그룹별 실제 출발시각과 공지에 없는 지점 거리를 임의로 넣어 모든 참가자의 필수 페이스를 계산하지 않았습니다.</p><figure><img src="/images/blog/verified-incheon-cutoff-detail-20261110.webp" alt="청라하늘대교 서쪽 진입 컷오프 위치 공식 이미지" loading="lazy"/><figcaption>진입 도로의 참가자 진행 방향과10시50분 표기. 공식 최종 안내를 함께 확인하세요.</figcaption></figure><h2>풀코스 배정과10km 자율 그룹 운영은 다릅니다</h2><p>풀코스 최신 공지는 제출한 풀·하프 기록증으로 그룹을 배정했다고 안내하며 배번호에서 본인 그룹을 확인하도록 합니다. S와 A의3시간 경계 등 공지상 구간이 맞닿거나 겹치는 부분은 이 글에서 새 기준으로 정리하지 않았습니다.</p><p>10km는 별도 배정 절차 없이 A/B/C 대기 구역에서 본인 목표에 맞춰 자율 참여하는 공지입니다. 목표는 A50분 이내·B1시간10분 이내·C1시간30분 이내입니다. 풀코스처럼 모든10km 참가자에게 배정 그룹이 있다고 안내하지 않습니다.</p><h2>5km 최종 동선도 다시 확인</h2><p>5km 최종 공지는 주경기장 일원 출발·도착과 가정 보금자리 버스정류장(초은고 방면) 반환점 추가를 안내합니다. 과거의 코스 설명만 보고 가기보다 최종 지도를 확인하세요.</p><p>현재 실제 도로 통제·현장 동선·개인 이동시간을 실시간으로 확인한 것은 아닙니다. 교통·물품·기념품의 추가 안내는 공식 공지와 본인 배번호 안내를 기준으로 준비하면 됩니다. 기념품 구성은 <a href="/blog/incheon-marathon-2026-race-kit-by-distance">종목별 사전·완주 물품</a>에서 따로 정리했습니다.</p><h2>확인한 원문</h2><ul><li><a href="https://www.incheonmarathon.or.kr/" target="_blank" rel="noopener noreferrer">공식 대회 소개</a> — 11/22·08시·거리별 출발/도착·참가비.</li><li><a href="https://www.incheonmarathon.or.kr/notice/?bmode=view&amp;idx=175542578" target="_blank" rel="noopener noreferrer">공식 컷오프 공지</a> — 청라하늘대교(서) 진입10:50·회송 안내·지도.</li><li><a href="https://www.incheonmarathon.or.kr/notice/?bmode=view&amp;idx=175542516" target="_blank" rel="noopener noreferrer">공식 풀코스 그룹 배정</a> — 배번호의 실제 배정 확인. 경계 구간은 임의 수정하지 않음.</li><li><a href="https://www.incheonmarathon.or.kr/notice/?bmode=view&amp;idx=175345884" target="_blank" rel="noopener noreferrer">공식10K 그룹 운영</a> — 별도 배정 없음·자율 대기구역·목표 시간.</li><li><a href="https://www.incheonmarathon.or.kr/notice/?bmode=view&amp;idx=175404798" target="_blank" rel="noopener noreferrer">공식5K 최종 코스</a> — 반환점 추가·최종 동선 확인.</li></ul>
 `,
+    faqs: [
+      {
+        "question": "풀코스도 주경기장에서 출발하나요?",
+        "answer": "풀코스는 운서역 일원 출발·인천아시아드주경기장 도착입니다.10km·5km는 주경기장 출발/도착으로 구분됩니다."
+      },
+      {
+        "question": "컷오프는 언제·어디인가요?",
+        "answer": "공식 공지는 청라하늘대교 서쪽 진입 지점10시50분을 안내합니다. 개인의 출발 후 경과시간이나 거리별 페이스로 임의 환산하지 않았습니다."
+      },
+      {
+        "question": "10km도 그룹이 배정되나요?",
+        "answer": "최신10K공지는 별도 배정 없이A/B/C구역을 목표에 맞춰 선택하는 자율 운영을 안내합니다."
+      }
+    ],
   },
   {
     id: '2026-mbn-seoul-marathon-registration',

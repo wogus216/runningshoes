@@ -314,34 +314,37 @@ export const octoberEvents: MarathonEvent[] = [
     },
   },
   {
-    id: 'seoul-open-marathon-2026',
-    name: '2026 서울 오픈 마라톤',
-    date: '2026-10-05',
-    month: '10월',
-    location: '광화문광장 앞 대로변',
-    region: '서울',
-    distances: ['하프', '10K'],
-    status: '마감',
-    postponed: true,
-    isMajor: false,
-    website: 'https://seoulopen.or.kr/',
-    description:
-      '⚠️ [2026-09-21] 10월 5일 개최 예정이던 일정이 연기됐습니다. 공식 공지(seoulopen.or.kr)에 새 날짜는 아직 없고 "개별 안내 예정"만 기재돼 있습니다(2026-10-24 재확인). 연기 사유는 공식 미기재로 불명. 기접수자 환불 접수는 9/21~10/23으로 마감됐고, 마감 후 무통장 입금은 영업일 3~5일·카드 취소는 약 7일 안에 처리된다고 안내합니다. 환불하지 않고 등록을 유지한 참가자에게는 새 대회의 선등록 링크를 먼저 준다고 밝혔습니다. 광화문 출발 도심 하프·10K, 본접수 5/10 마감됨(연기 이전 정보).',
-    registrationNote: '일정 연기 — 새 날짜 미정(개별 안내 예정), 환불 접수 9/21~10/23 마감',
-    lastVerified: '2026-10-24',
-    courseInfo: {
-      terrain: '평지',
-      difficulty: '중급',
-      certification: '없음',
-    },
-    raceInfo: {
-      entryFees: [
-        { distance: '하프', fee: 80000 },
-        { distance: '10K', fee: 60000 },
-      ],
-      startTime: '07:30',
-    },
-  },
+  "id": "seoul-open-marathon-2026",
+  "name": "2026 서울 오픈 마라톤",
+  "date": "2026-10-05",
+  "month": "10월",
+  "location": "광화문광장 앞 대로변",
+  "region": "서울",
+  "distances": [
+    "하프",
+    "10K"
+  ],
+  "status": "마감",
+  "postponed": true,
+  "isMajor": false,
+  "website": "https://seoulopen.or.kr/",
+  "description": "10월5일 예정 대회는 공식 일정 변경 안내 상태입니다. 11/10 공개 공지 목록에서 새 개최일 확정 원문은 확보하지 못했습니다. 새 환불 지연 공지는10/23이전 신청 우선·이후 신청 순차 처리와 늦어도11/20완료를 약속하며 계좌 미입력으로 보류된 대상자는11/12까지 정보 접수를 요청합니다. 카드취소 처리 안내와 실제 카드 반영·계좌 환급은 구분하며 개인 거래 완료를 확인한 것은 아닙니다.",
+  "registrationNote": "일정 변경·새 개최일 확정 미확인. 11/10 공식 최신56·57번 공지는 환불 지연과 늦어도11/20처리 완료 약속,계좌 정보 미입력 대상자의11/12입력 요청을 안내합니다. 사무국의 약속과 실제 개인별 취소·입금 완료는 다릅니다. 본인 대상 여부와 신청 내역은 공식 홈페이지·문의 경로에서 확인하세요.",
+  "lastVerified": "2026-11-10",
+  "raceInfo": {
+    "entryFees": [
+      {
+        "distance": "하프",
+        "fee": 80000
+      },
+      {
+        "distance": "10K",
+        "fee": 60000
+      }
+    ],
+    "startTime": "07:30"
+  }
+},
   {
     id: 'gyeongpo-marathon-2026',
     name: '2026 경포마라톤',
