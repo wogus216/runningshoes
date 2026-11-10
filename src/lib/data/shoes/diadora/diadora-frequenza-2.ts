@@ -1,7 +1,6 @@
 import type { Shoe } from '@/types/shoe';
 
-// 2026-10-20 등록 — 출처: 디아도라 한국 공식몰(diadorakorea.com) 상품 5646·5168 판매가,
-// RunRepeat 랩 리뷰(runrepeat.com/diadora-frequenza-2, 2025-12-29, 남성 US 9 시료). 점수는 랩 수치를 문서 C절 매핑에 대입.
+// 원문 재확인:2026-11-10. 확인 범위와 한계는 verification 참조.
 export const shoe: Shoe = {
   id: 'diadora-frequenza-2',
   slug: 'diadora-frequenza-2',
@@ -16,116 +15,124 @@ export const shoe: Shoe = {
   ],
   category: '데일리',
   rating: 4,
-  status: 'new',
-  price: 259000,
-  description:
-    '227g으로 가벼운 디아도라의 데일리 트레이너. ANIMA N2 폼이 경도 11.8 HA로 매우 부드럽고 힐 충격흡수가 161 SA로 높지만, 실측 드롭이 11.8mm로 커서 뒤꿈치 착지 러너에게 맞춰진 신발입니다. 토박스는 71.6mm로 좁은 편. 한국 공식몰 정가 259,000원.',
-  oneliner: '227g·11.8 HA 초연질 — 뒤꿈치 착지형 경량 데일리',
-  editorComment:
-    '"가볍고 푹신한 데일리 하나로 조깅부터 템포까지"를 원하는 러너에게 수치상 가능성이 있는 신발입니다. RunRepeat 랩에서 227g(남성 US 9)으로 가볍고, ANIMA N2 폼 경도가 11.8 HA로 랩 평균의 절반 수준이라 매우 부드럽습니다. 반발은 힐 59.4%·전족부 62.7%로 데일리용으로 무난한 수준이고, RunRepeat는 이지런·롱런·템포를 한 켤레로 소화하려는 뒤꿈치 착지 러너에게 맞다고 봤습니다.\n\n성격을 가르는 건 드롭입니다. 공칭 8mm지만 실측은 11.8mm(힐 36.5mm / 전족부 24.7mm)라, 충격흡수가 힐 161 SA인 데 비해 전족부는 113 SA로 평범합니다. 뒤꿈치로 착지하면 아주 푹신하고, 앞발 착지라면 평범한 쿠션으로 느껴질 수 있는 구조입니다. 플랫폼이 좁아 안정성은 낮은 편입니다.\n\n사이즈·구매 가이드: 토박스 폭 71.6mm(RunRepeat 평균 73.2mm)에 RunRepeat가 "narrow, tapered toebox"라고 적어 발볼 넓은 한국 러너에겐 불리하고, 한국 공식몰에 와이드 버전은 없습니다. 정가 259,000원은 반발이 더 높다고 RunRepeat가 짚은 마하 6(185,000원)·아디제로 Evo SL(209,000원)보다 높습니다.',
-  tags: ['데일리', '경량', '템포 겸용', '뒤꿈치 착지', '고드롭'],
-
+  description: 'ANIMA N2 질소 발포 EVA 구조의 프리퀀자 2. RunRepeat 실험실 검체 227g·36.5/24.7mm. 한국 현재 정가 미확인.',
+  oneliner: 'ANIMA N2 질소 발포 EVA · 227g (RunRepeat 실험실 검체)',
+  editorComment: '2026-11-10 원문 재확인. 한국 공식 캐시: D5151RRN05BLL 성별 명시 미확인 정가259,000원·할인캐시109,000원; D5151RRN15WHT 성별 명시 미확인 정가259,000원·할인캐시109,000원; D5152RRN15PKL women 정가259,000원·할인캐시129,000원. 현재 가격·폭·선택 재고는 미확인입니다. 공통SOLD OUT·장바구니·사이즈 목록을 현재 재고로 보지 않습니다. SKU숫자로 성별을 추정하지 않습니다. RR227g·36.5/24.7mm·11.8mm와 재전재 브랜드230/201g(기준 사이즈 미확인)·36/28mm·8mm를 구분합니다. 한국 공시 무게·전체 스택은 미확인입니다. 11.8HA는 구방식이며AC 미확인입니다. 드롭11.8mm와 경도11.8HA는 다른 단위의 값입니다.23.9mm 앞코 높이를 확인하고550km·한국 와이드 없음·고정 페이스 처방을 제거했습니다. 정확 Frequenza2의 DOR 개별 착화 리뷰는 미확인입니다. 검색에서 찾은3세대의 개인 의견을2에 옮기지 않습니다. 랩 수치만으로 모든 힐 착지 러너가 편하다고 보장하지 않습니다. RR 내부 최광폭 93.8mm·엄지 71.6mm·높이 23.9mm입니다. 다른 위치인 외부 바닥 폭과 구분하고 실제 규격·양말에서 고정을 확인하세요. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
+  tags: [
+    '데일리',
+    '경량',
+    '템포 겸용',
+    '뒤꿈치 착지',
+    '고드롭',
+  ],
   specs: {
     weight: 227,
     cushioning: 10,
     responsiveness: 7,
     stability: 5,
-    drop: 12,
-    durability: 550,
+    drop: 11.8,
   },
-
-  biomechanics: {
-    stackHeight: { heel: 36.5, forefoot: 24.7 },
-    drop: 12,
-    carbonPlate: false,
-    plateType: null,
-    midsoleType: 'ANIMA N2 (질소 주입 EVA)',
-    optimalPace: '4:45-7:00 min/km (이지런~템포)',
-  },
-
-  injuryPrevention: {
-    plantarFasciitis: 'good',
-    achillesTendinopathy: 'good',
-    kneeIssues: 'caution',
-    shinSplints: 'good',
-  },
-
   koreanFootFit: {
     toBoxWidth: 'narrow',
-    flatFootCompatibility: 'poor',
-    wideOptions: false,
     winterCompatibility: 'good',
     summerCompatibility: 'fair',
   },
-
   targetUsers: {
     recommended: [
-      '이지런·롱런·템포를 한 켤레로 돌리려는 뒤꿈치 착지 러너',
-      '230g 안팎의 가벼운 데일리를 찾는 러너',
-      '아주 부드러운 쿠션을 선호하는 러너',
-      '발볼이 좁은 러너',
+      '실제 규격에서 낮은 앞코·중족·힐 고정을 비교하려는 러너',
+      '공시·랩·개인 체감과 원문 상충을 구분하려는 러너',
     ],
     notRecommended: [
-      '발볼이 넓은 러너 (토박스 71.6mm, 와이드 없음)',
-      '평발·과내전으로 지지가 필요한 러너 (좁은 플랫폼, 안정성 낮음)',
-      '저드롭을 선호하는 앞발 착지 러너 (실측 드롭 11.8mm)',
+      '시착에서 압박·마찰·불편한 전환이 남는 경우',
+      '국소 마모·개인 경험을 공통 수명·임상 효과로 읽는 경우',
     ],
   },
-
   features: [
-    'ANIMA N2 미드솔 — 경도 11.8 HA, 반발 힐 59.4% / 전족부 62.7% (RunRepeat)',
-    '227g (남성 US 9 실측)',
-    '힐 36.5mm / 전족부 24.7mm, 실측 드롭 11.8mm',
-    'Duratech 5000 부분 고무 아웃솔 — 마모 0.7mm, 두께 2.8mm',
-    '에너지 리턴 전족부 62.7% (RunRepeat 실측)',
+    'ANIMA N2 질소 발포 EVA',
+    '227g · 36.5/24.7mm · 드롭 11.8mm (RunRepeat 실험실 검체)',
+    '정확2의 별도 플레이트 유무·재료는 이번 원문에서 미확인입니다. 초대·3세대 구조로 채우지 않습니다.',
+    'RR 내부 최광폭 93.8mm·엄지 71.6mm·높이 23.9mm입니다. 다른 위치인 외부 바닥 폭과 구분하고 실제 규격·양말에서 고정을 확인하세요.',
   ],
-
   priceAnalysis: {
-    msrp: 259000,
-    costPerKm: 471,
     valueRating: 5,
     priceTier: 'premium',
-    alternatives: ['hoka-mach-6', 'adidas-adizero-evo-sl'],
-    valueAdvantages: [
-      '227g으로 같은 가격대 데일리 중 가벼운 편',
-      '힐 충격흡수 161 SA — 뒤꿈치 착지 시 쿠션이 큼',
-      '노출 폼이 넓은데도 아웃솔 마모 0.7mm로 양호',
+    alternatives: [
+      'hoka-mach-6',
+      'adidas-adizero-evo-sl',
     ],
   },
-
   detailedSpecs: {
-    weight: '227g (RunRepeat 실측, 남성 US 9) / 브랜드 공칭 230g',
-    stackHeight: '힐 36.5mm / 전족부 24.7mm (RunRepeat 실측) — 브랜드 공칭 36/28mm',
-    drop: '11.8mm (실측) — 브랜드 공칭 8mm',
-    midsole: 'ANIMA N2 (질소 주입 EVA) — 경도 11.8 HA, 충격흡수 힐 161 SA / 전족부 113 SA',
-    plate: '없음',
-    outsole: 'Duratech 5000 부분 고무 + 노출 폼, 두께 2.8mm, 마모 0.7mm',
-    upper: '경량 메시, 혀 패딩 1.5mm',
-    width: '좁음 — 토박스 폭 71.6mm·높이 23.9mm (RunRepeat, 남성 US 9). RunRepeat: "the narrow, tapered toebox is a real limitation"',
-    durability: '450~650km — 고무 마모는 적지만 노출 폼 면적이 넓음',
-    price: '₩259,000 (2026-10-20 디아도라 한국 공식몰 확인)',
-    costPerKm: '약 ₩471/km (내구성 범위 중간값 기준)',
-    footType: '중립 발',
-    landingPattern: 'RFS (RunRepeat 표기)',
+    weight: '227g (RunRepeat 실험실 검체). RR227g·36.5/24.7mm·11.8mm와 재전재 브랜드230/201g(기준 사이즈 미확인)·36/28mm·8mm를 구분합니다. 한국 공시 무게·전체 스택은 미확인입니다.',
+    stackHeight: '36.5/24.7mm (RunRepeat 실험실 검체, 힐/전족부). 출처별 다른 공시는 무게 항목 참조.',
+    drop: '11.8mm (RunRepeat 실험실 검체). RR227g·36.5/24.7mm·11.8mm와 재전재 브랜드230/201g(기준 사이즈 미확인)·36/28mm·8mm를 구분합니다. 한국 공시 무게·전체 스택은 미확인입니다.',
+    midsole: 'ANIMA N2 질소 발포 EVA. 폼 경도 11.8 HA (구방식), AC 미확인. 힐/전족부 SA 161/113·에너지 리턴 59.4/62.7%. 11.8HA는 구방식이며AC 미확인입니다. 드롭11.8mm와 경도11.8HA는 다른 단위의 값입니다.23.9mm 앞코 높이를 확인하고550km·한국 와이드 없음·고정 페이스 처방을 제거했습니다.',
+    plate: '정확2의 별도 플레이트 유무·재료는 이번 원문에서 미확인입니다. 초대·3세대 구조로 채우지 않습니다.',
+    width: 'RR 내부 최광폭 93.8mm·엄지 부위 71.6mm·높이 23.9mm. RR 내부 최광폭 93.8mm·엄지 71.6mm·높이 23.9mm입니다. 다른 위치인 외부 바닥 폭과 구분하고 실제 규격·양말에서 고정을 확인하세요.',
+    durability: '검증된 공통 수명 km 미확인. 국소 마모·짧은 착화 후기를 주행 수명으로 환산하지 않습니다.',
+    price: '한국 공식 캐시: D5151RRN05BLL 성별 명시 미확인 정가259,000원·할인캐시109,000원; D5151RRN15WHT 성별 명시 미확인 정가259,000원·할인캐시109,000원; D5152RRN15PKL women 정가259,000원·할인캐시129,000원. 현재 가격·폭·선택 재고는 미확인입니다. 공통SOLD OUT·장바구니·사이즈 목록을 현재 재고로 보지 않습니다. SKU숫자로 성별을 추정하지 않습니다.',
   },
-
   reviews: [
     {
-      userType: '예상 적합 — 한 켤레로 조깅과 템포를 함께 하는 뒤꿈치 착지 러너',
-      text: '227g으로 가볍고 반발이 60% 안팎이라, 평소 조깅 페이스와 주 1회 템포를 한 켤레로 오가려는 경우에 맞는 수치입니다. 실측 드롭 11.8mm에 힐 충격흡수가 161 SA라 뒤꿈치로 착지할 때 쿠션이 가장 크게 작동하는 구조입니다. 다만 플랫폼이 좁고 폼이 매우 부드러워(11.8 HA) 코너나 피로한 후반에는 흔들림이 생길 수 있습니다.',
+      userType: '원문 기반 에디터 분석',
+      source: 'editor',
+      sourceUrl: 'https://runrepeat.com/diadora-frequenza-2',
+      text: 'RR227g·36.5/24.7mm·11.8mm와 재전재 브랜드230/201g(기준 사이즈 미확인)·36/28mm·8mm를 구분합니다. 한국 공시 무게·전체 스택은 미확인입니다. 11.8HA는 구방식이며AC 미확인입니다. 드롭11.8mm와 경도11.8HA는 다른 단위의 값입니다.23.9mm 앞코 높이를 확인하고550km·한국 와이드 없음·고정 페이스 처방을 제거했습니다.',
     },
     {
-      userType: '예상 적합 — 무릎 부담이 걱정되는 과내전 러너',
-      text: '이 조건에는 맞지 않을 가능성이 높습니다. RunRepeat는 안정성이 제한적이라고 평가했고(안정성 58점, 비틀림 강성 3/5로 랩 평균 3.6 아래, 중립 러너에게만 권장), 아주 부드러운 폼과 좁은 플랫폼 조합은 발이 안쪽으로 무너지는 러너에게 지지를 주지 못합니다. 같은 브랜드에서 지지를 원한다면 미토스 블루실드 볼로 5, 다른 브랜드라면 안정화 카테고리를 보는 편이 맞습니다.',
-    },
-    {
-      userType: '예상 적합 — 아웃솔 마모가 적은 가벼운 데일리를 찾는 러너',
-      text: 'RunRepeat 랩에서 아웃솔 마모가 0.7mm로 랩 평균 1.1mm보다 적고 전족부 접지 0.63으로 평균 0.53을 웃돌아, 마모와 미끄러짐이 걱정인 가벼운 데일리 러너에게 맞을 가능성이 있습니다. 토박스 내구성은 3/5(평균 2.6)로 무난하고 통기성은 3/5(평균 3.6)로 평균 아래라 더운 날 장거리에서는 발이 더울 수 있습니다. 토박스 폭 71.6mm가 평균 73.2mm보다 좁아 발볼이 넓다면 시착이 먼저입니다.',
+      userType: '원문 기반 확인 범위 · 착화 후기 미확인',
+      source: 'editor',
+      sourceUrl: 'https://runrepeat.com/diadora-frequenza-2',
+      text: '정확 Frequenza2의 DOR 개별 착화 리뷰는 미확인입니다. 검색에서 찾은3세대의 개인 의견을2에 옮기지 않습니다. 랩 수치만으로 모든 힐 착지 러너가 편하다고 보장하지 않습니다.',
     },
   ],
-
-  similarShoes: ['hoka-mach-6', 'adidas-adizero-evo-sl', 'adidas-supernova-rise-2'],
+  similarShoes: [
+    'hoka-mach-6',
+    'adidas-adizero-evo-sl',
+    'adidas-supernova-rise-2',
+  ],
   purchaseLinks: [
-    { store: '디아도라 공식몰', url: 'https://www.diadorakorea.com/product/detail.html?product_no=5646', price: 259000, isOfficial: true },
+    {
+      store: '디아도라 공식몰',
+      url: 'https://www.diadorakorea.com/product/detail.html?product_no=5646',
+      price: 259000,
+      isOfficial: true,
+    },
   ],
+  verification: {
+    checkedAt: '2026-11-10',
+    scope: '한국 상품 조건, 해외 실험실·제조사 공시와 외부 착화 의견의 확인 범위를 구분했습니다. 제품 전체 검증 완료 표지가 아닙니다.',
+    sources: [
+      {
+        label: '한국 공식 kr-running',
+        url: 'https://diadorakorea.com/project/%EB%9F%AC%EB%8B%9D%ED%99%94/615/',
+        note: 'opened_original_cached_body; 정확 모델명별 SKU·판매가·할인판매가와 여성 별도 상품 확인. 리스트 전반 SOLD OUT 표시는 캐시 템플릿이며 현재 재고 판정에 사용하지 않음.',
+      },
+      {
+        label: '한국 공식 kr-shoes',
+        url: 'https://diadorakorea.com/project/shoes/459/',
+        note: 'opened_original_cached_body; Volo5 ORANGE/WHITE 및 여성 WHITE, Frequenza2 여성 PINK의 코드와 정가·할인가 확인. footer는 하이라이트브랜즈의 Diadora 라이선스 공식몰임을 명시.',
+      },
+      {
+        label: '한국 공식 kr-freq-blue',
+        url: 'https://diadorakorea.com/product/%ED%94%84%EB%A6%AC%ED%80%80%EC%9E%90-2-blue/4426/category/615/display/1/',
+        note: 'opened_original_cached_body; D5151RRN05BLL,259000/109000. 표기 사이즈250,255,260,265,270,275,280,290. 장바구니·바로구매·SOLD OUT 동시 추출, 실제 선택 활성화 확인 불가.',
+      },
+      {
+        label: 'RunRepeat 동세대 실험실 원문',
+        url: 'https://runrepeat.com/diadora-frequenza-2',
+        note: '공시 일반 검체 정책은 남성 US9. 실제 검체 라벨·폭 미확인. 227g·36.5/24.7mm·11.8mm. 11.8HA는 구방식이며AC 미확인입니다. 드롭11.8mm와 경도11.8HA는 다른 단위의 값입니다.23.9mm 앞코 높이를 확인하고550km·한국 와이드 없음·고정 페이스 처방을 제거했습니다.',
+      },
+      {
+        label: 'RunRepeat 측정법',
+        url: 'https://runrepeat.com/testing-methodology',
+        note: 'AC·HA·HC, SA·에너지 리턴, BR·구방식1~5와 내부/외부 폭을 구분합니다. 일반 정책은 개별 라벨 확인과 다릅니다.',
+      },
+    ],
+    limitations: [
+      '모델별 임상 예방·치료 등급, 공통 최적 페이스·주행 수명·km당 비용은 미확인으로 제거했습니다.',
+      '에디터 평점·1~10점·발볼 및 계절 분류·구매 링크는 모든 항목을 새로 검증한 수치나 임상 효과가 아닙니다.',
+      '판매 조건은 확인한 상품·시점에 한정합니다. 미확인을 미출시·단종·전국 재고 없음으로 해석하지 않습니다.',
+      '정확한 동세대 DOR 개별 착화 리뷰 미확인. 다른 세대로 대체하지 않음.',
+    ],
+  },
 };

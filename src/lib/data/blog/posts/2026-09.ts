@@ -4492,86 +4492,38 @@ export const posts_2026_09: BlogPost[] = [
     updatedAt: "2026-11-10",
   },
   {
-    id: 'saucony-omni-st-23-review',
-    slug: 'saucony-omni-st-23-review',
-    title: '써코니 옴니 ST 23 후기 | TPU 스태빌리티 프레임 — "유도"가 아니라 "지지"',
-    description:
-      '옴니 ST 23은 써코니가 직접 "최상급 프리미엄 안정화"로 부르는 유일한 현행 모델입니다. 가이드 19가 미드솔 형상으로 발을 유도한다면, 옴니 ST 23은 두 폼 층 사이에 TPU 프레임을 물리적으로 끼워 미드풋을 직접 받칩니다. 199,000원, 국내 유통 4종 중 3종이 와이드입니다.',
-    thumbnail: '/images/blog/saucony-omni-st-23-review.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-09-11',
-    category: 'review' as const,
-    readingTime: 7,
-    tags: ['써코니 옴니ST23', '안정화', '과내전', 'TPU 프레임'],
+    id: "saucony-omni-st-23-review",
+    slug: "saucony-omni-st-23-review",
+    title: "옴니ST23 리뷰 —TPU 프레임과 힐 고정, 폼 설명 상충을 남겨 비교하기",
+    description: "DOR 소개286g·40/32mm와 실제MattUS10 착화를 나눕니다. 한국PB+HG/DOR전장PB·프레임, M/W캐시와 임상 교정·500km 단정 정정을 정리합니다.",
+    thumbnail: "/images/shoes/saucony/omnist23/side.jpg",
+    author: "산초 에디터",
+    publishedAt: "2026-09-11",
+    category: "review",
+    readingTime: 8,
+    tags: [
+      "옴니ST23",
+      "원문 대조",
+      "핏"
+    ],
     content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>써코니가 직접 "최상급 프리미엄 안정화"로 부르는 유일한 현행 모델</strong>입니다</li>
-    <li><strong>TPU 스태빌리티 프레임이 두 폼 층 사이에서 미드풋을 물리적으로 받칩니다</strong> — <a href="/shoes/saucony-guide-19">가이드 19</a>의 유도형과는 다른 방식입니다</li>
-    <li><strong>국내 유통 4종 중 3종이 와이드입니다.</strong> 대부분 모델이 표준 위주로 풀리는 것과 정반대 구성입니다</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">👟</span>
-  <div class="callout-body">
-    <p class="callout-title">한 줄 결론</p>
-    <p><strong>과내전이 뚜렷하고 가이드 19로는 지지가 부족했던 러너</strong>에게 맞습니다. 중립 러너에게는 불필요한 지지가 이물감으로 느껴질 수 있습니다.</p>
-  </div>
-</div>
-
-<h2>"유도"가 아니라 "지지"</h2>
-<p><a href="/shoes/saucony-guide-19">가이드 19</a>의 CENTERPATH가 미드솔 형상과 넓은 베이스로 발이 가운데 경로를 지나도록 유도하는 방식이라면, <strong>옴니 ST 23은 PWRRUN PB와 PWRRUN 사이에 TPU 프레임을 물리적으로 끼워 미드풋을 직접 받칩니다.</strong> 그래서 과내전이 뚜렷한 러너에게는 확실히 체감되지만, 지지가 필요 없는 러너에게는 이물감으로 남습니다. 286g의 무게도 이 구조의 대가입니다.</p>
-
-<h2>가이드 19와 비교 — 강도와 드롭이 갈린다</h2>
-<div class="table-wrap">
-<table>
-  <thead><tr><th>항목</th><th>가이드 19</th><th>옴니 ST 23</th></tr></thead>
-  <tbody>
-    <tr><td>무게</td><td>298g <small>(RunRepeat 실측, 남성 US 9)</small></td><td>286g <small>(브랜드 공식, 남성 US 9)</small></td></tr>
-    <tr><td>스택(힐/전족)</td><td>37.4/31.4mm <small>(RunRepeat 실측)</small></td><td>40/32mm <small>(브랜드 공식)</small></td></tr>
-    <tr><td>드롭</td><td>6mm <small>(공식·실측 동일)</small></td><td><strong>8mm</strong> <small>(브랜드 공식)</small></td></tr>
-    <tr><td>지지 방식</td><td>유도형(CENTERPATH)</td><td><strong>직접형(TPU 프레임)</strong></td></tr>
-  </tbody>
-</table>
-</div>
-<p><small>무게·스택은 두 신발의 측정 주체가 다릅니다. 가이드 19는 RunRepeat 실측이고(매체별 무게 표기는 275~298g으로 갈립니다), 옴니 ST 23은 써코니 공식 표기입니다. 이 표의 그램·mm 차이를 빼서 우열을 정하지 않는 편이 맞습니다.</small></p>
-<p>가이드에서 옴니로 옮기면 발밑이 두꺼워지고 뒤꿈치가 높아지는 두 변화를 동시에 받는 셈이라, <strong>첫 주는 거리를 줄여 적응하는 편이 안전합니다.</strong></p>
-
-<h2>발볼·부상 — 한국 러너가 궁금해할 것들</h2>
-<ul>
-  <li><strong>"발볼 넓은데 괜찮나요?"</strong> — 국내 공식몰 유통 4개 컬러웨이 중 3개가 와이드라, 발볼 넓은 평발 러너에게 오히려 접근성이 좋습니다. 반대로 표준 폭 특정 색을 원한다면 선택지가 사실상 하나입니다</li>
-  <li><strong>"무릎 괜찮나요?"</strong> — 부상 예방 등급이 족저근막염·무릎 excellent(최상위)입니다</li>
-  <li><strong>"평발인데 신어도 되나요?"</strong> — 평발 호환성이 excellent입니다. 신발 안쪽 뒤꿈치가 유독 빨리 닳는 러너에게도 맞습니다</li>
-</ul>
-
-<h2>가격 대비 가치</h2>
-<p>199,000원은 <a href="/shoes/asics-gel-kayano-32">카야노 32</a>(199,000원)와 동일 가격대에서 다른 지지 방식을 원하는 러너에게 선택지가 됩니다. 500km 기준 km당 약 398원입니다.</p>
-
-<h2>누구에게 맞을까</h2>
-<ul>
-  <li><strong>과내전(과회내전)이 뚜렷한 러너</strong></li>
-  <li><strong>가이드 19로는 지지가 부족하다고 느낀 러너</strong></li>
-  <li><strong>평발 + 넓은 발볼로 와이드 안정화를 찾는 러너</strong></li>
-  <li>반대로 <strong>중립 러너</strong>라면 불필요한 지지가 이물감이 될 수 있습니다</li>
-</ul>
-
-<h2>마무리</h2>
-<p>옴니 ST 23은 써코니 안정화 중 가장 개입이 직접적인 모델입니다. "가이드"로만 써코니 안정화를 알고 있었다면 이 신발의 존재 자체가 새로운 선택지이고, TPU 프레임의 물리적 지지가 필요한 정도의 과내전이라면 정확한 답이 됩니다.</p>
+<p><strong>2026-11-10 원문 대조 업데이트.</strong> 제조사 공시·실험실 검체·개인 착화 의견과 한국 상품 캐시를 구분합니다. 자체 착화 후기가 아닌 원문 기반 분석입니다.</p><h2>먼저 볼 차이</h2><p>옴니의TPU 프레임 개입은 확인했지만 ‘가이드는 유도·옴니는 더 강한 교정’이라는 의학적 단계표를 뒷받침하지 않습니다. 실제 움직임에서 지지가 편한지와 힐 고정이 먼저입니다.</p><p>Matt는 매번 끈을 다시 조여야 할 정도로 힐이 여유 있다고 적었습니다. 와이드 상품이 있다는 사실만으로 모든 넓은 발이 안전하게 맞는다고 정할 수 없습니다.</p><figure><img src="/images/shoes/saucony/omnist23/side.jpg" alt="옴니ST23 — 프레임 개입과 실제 힐 고정을 함께 확인" loading="lazy"/><figcaption>옴니ST23 — 프레임 개입과 실제 힐 고정을 함께 확인</figcaption></figure><div class="table-wrap"><table><thead><tr><th>모델</th><th>무게 · 공시 출처 별도 표기</th><th>스택·드롭 · 공시 출처 별도 표기</th><th>힐/전족 SA</th><th>힐/전족 리턴</th></tr></thead><tbody><tr><td>saucony-omni-st-23</td><td>286g (DOR 소개)</td><td>40/32mm · 8mm (DOR 소개)</td><td>미확인/미확인</td><td>미확인/미확인%</td></tr></tbody></table></div><p>표의 값은 RunRepeat 검체 또는 별도 표시한 DOR 소개 공시입니다. DOR 소개는 독립 실측이 아닙니다. 일반 정책은 남성 US9지만 개별 라벨·폭·보정 여부는 미확인입니다. 공시와 동일한 검체로 단정하지 않습니다. SA는 충격흡수, 리턴은 시험에서 반환된 에너지 비율이며 부드러움·개인 기록·임상 보호를 뜻하지 않습니다. HA는 구방식, AC는 별도 경도 척도여서 환산하지 않습니다. <a href="https://runrepeat.com/testing-methodology" target="_blank" rel="noopener noreferrer">RunRepeat 측정법</a></p><h2>PB+HG와 전장PB 설명을 억지로 맞추지 않습니다</h2><p>한국 공식은PB+HG 두 폼, DOR은 전장PB와 큰TPU 프레임을 설명합니다. 어느 한쪽을100%정답으로 고르거나 기존PWRRUN 하층 설명을 반복하지 않습니다. 정확RR 절단 랩은 미확인입니다.</p><p>M/W 확인 SKU는 표본입니다. 국내 전체4종 중3종 와이드·할인 없음·유일한 최상급 안정화라는 전수·현재성 주장은 이번 표본으로 입증하지 못했습니다. 소개8mm와 가이드6mm 차이만으로 첫 주 거리를 줄여야 안전하다는 처방도 제거했습니다.</p><h2>옴니ST23 — 핏과 주행에서 갈리는 지점</h2><p>한국 공식은 PB+HG 두 폼을, DOR은 전장PB와 큰TPU 지지 프레임을 설명합니다. 불완전·상충하는 폼 설명을100%PB/HG·PWRRUN하층으로 단정하지 않습니다. 프레임과 카본 레이싱판은 별개이며 별도 플레이트 유무는 미확인입니다.</p><p>정확 모델의 독립 내부 치수는 미확인입니다. 실제 상품에서 앞코 높이·길이·발등과 힐 고정을 확인하세요.</p><p>DOR Matt(남성US10)는 조금 넓지만 테이퍼·오버레이가 있는 정사이즈와 느슨한 힐 때문에 매번 끈을 다시 조였다고 적었습니다. 두꺼운 거싯 혀와 힐/중족TPU프레임·더 유연한 앞발의 부드러운 탄성을 이지·롱런·일부 업템포에서 즐겼습니다.70마일은 제품 수명이 아닙니다.</p><h2>옴니ST23 — 공시·한국 판매 확인 범위</h2><p>DOR 소개286g(남성US9)/252g(여성US8)·40/32mm·8mm와 실제테스터US10을 구분합니다. 정확 RR 랩은 미확인이고 소개를 한국 공식·독립 실측으로 쓰지 않습니다.</p><p>한국 공식 캐시: Men S21072-101 M(일반) 표시199,000원; Men S21073-103 W(와이드) 표시199,000원; Women S11073-100 W(와이드) 표시199,000원. 현재 가격·선택 재고·숫자 폭 규격은 미확인입니다. 일반 사이즈 환산표·공통2E/4E 내비게이션·장바구니 버튼을 정확 모델 재고나 폭 증거로 쓰지 않습니다.</p><p>한국M/W와 DOR 미확인 폭 검체를 같은 규격으로 보지 않습니다. 과내전 최상급·첫 주 거리 감소 처방·500km·할인 없음·국내4종 전수라는 단정을 이번 표본으로 반복하지 않습니다.</p><h2>구매 전에 실제로 확인할 것</h2><p>평소 양말·인솔로 앞쪽 길이와 발톱 위 공간, 끈을 조였을 때 발등 압박, 힐 고정과 칼라 마찰을 확인하세요. 발볼 너비 하나로 전체 핏을 결정하지 않습니다. 교환·반품 조건도 먼저 확인할 수 있습니다.</p><p>트레일에서는 자신의 주요 노면과 오르막·내리막·방향 전환에서 고정과 전환을 살펴야 합니다. 젖은 콘크리트 시험 하나가 바위·진흙 접지를 보장하지 않습니다. 통증·저림을 견뎌야 한다는 규칙이나 모델별 질환 예방 효과는 이번 자료로 확인하지 못했습니다.</p><h2>확인한 원문과 접근 범위</h2><ul><li><a href="https://www.saucony.co.kr/product/detail.html?cate_no=226&amp;display_group=1&amp;product_no=289" target="_blank" rel="noopener noreferrer">한국 공식 S21072-101</a> — 캐시 5 days ago; M/W숫자규격·현재선택재고 미확인.</li><li><a href="https://saucony.co.kr/product/detail.html?cate_no=173&amp;display_group=1&amp;product_no=288" target="_blank" rel="noopener noreferrer">한국 공식 S21073-103</a> — 캐시 today; M/W숫자규격·현재선택재고 미확인.</li><li><a href="https://saucony.co.kr/product/여성-옴니-st-23-와이드-blacksilver/287/" target="_blank" rel="noopener noreferrer">한국 공식 S11073-100</a> — 캐시 2 months ago; M/W숫자규격·현재선택재고 미확인.</li><li><a href="https://www.doctorsofrunning.com/saucony-omni-23-st-review-2026/" target="_blank" rel="noopener noreferrer">옴니ST23 DOR 원문</a> — 소개 공시·실제 착화 사이즈·개인의견 구분.</li></ul>
 `,
     faqs: [
       {
-        question: '옴니 ST 23과 카야노 32, 뭘 사야 하나요?',
-        answer:
-          '둘 다 199,000원대 최상급 안정화입니다. 옴니 ST 23은 TPU 프레임의 직접적인 지지가 특징이고, 카야노는 검증된 단계적 가이드 방식입니다. 매장에서 착화 후 어느 쪽 지지 방식이 편한지 비교해보는 것을 권합니다.',
+        "question": "폼이PB와PWRRUN인가요?",
+        "answer": "새로 확인한 한국PB+HG와DOR전장PB 설명이 상충합니다. 정확 조합을 하나로 확정하지 않습니다."
       },
       {
-        question: '중립 러너도 신을 수 있나요?',
-        answer:
-          '권장하지 않습니다. TPU 프레임이 미드풋을 물리적으로 받치는 구조라 지지가 필요 없는 중립 러너에게는 이물감으로 느껴질 수 있습니다.',
+        "question": "가이드보다 평발 교정이 강한가요?",
+        "answer": "모델별 임상 교정 우위를 확인하지 못해 단계별 처방을 제거했습니다."
       },
+      {
+        "question": "500km 쓸 수 있나요?",
+        "answer": "70마일 개인 시험을 공통500km 수명으로 환산할 근거를 확인하지 못했습니다."
+      }
     ],
+    updatedAt: "2026-11-10",
   },
   {
     id: "saucony-hurricane-26-review",
@@ -5161,100 +5113,38 @@ export const posts_2026_09: BlogPost[] = [
     updatedAt: "2026-11-09",
   },
   {
-    id: 'saucony-paramount-max-review',
-    slug: 'saucony-paramount-max-review',
-    title: '써코니 파라마운트 맥스 후기 | 302g, 호카 본디 9와 같은 체급 — 회복주 전용으로 정확히 그은 선',
-    description:
-      '파라마운트 맥스는 써코니가 "브랜드 역사상 가장 풍부한 쿠셔닝"이라고 소개한 맥시멀 쿠션화입니다. 엔돌핀 엘리트에 쓰던 incrediRUN을 데일리용으로 조정해 미드솔 전체와 인솔까지 풀렝스로 깔았고, 스택은 RunRepeat 실측 힐 42.1mm·전족 36.4mm(브랜드 공식 43/37mm), 무게는 브랜드 공식 302g으로 호카 본디 9(303g)와 비슷하게 표기되지만 실측은 272g입니다. 트라이엄프 24와 어떻게 다른지, 어떤 러너에게 맞는지 랩 수치로 정리했습니다.',
-    thumbnail: '/images/blog/saucony-paramount-max-review.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-09-11',
-    category: 'review' as const,
-    readingTime: 7,
-    tags: ['써코니 파라마운트 맥스', 'incrediRUN', '맥시멀 쿠션', '회복주 러닝화', '장거리 러닝화'],
+    id: "saucony-paramount-max-review",
+    slug: "saucony-paramount-max-review",
+    title: "파라마운트 맥스 리뷰 — 큰 바닥·부드러운 폼도 안정감은 사람마다 다르다",
+    description: "Matt는 stable-neutral, Andrea는 큰 불안정을 겪었다는 같은글 주석을 남깁니다. 272g검체·US10실측286g·소개302g, 엄지70.4mm를 구분합니다.",
+    thumbnail: "/images/shoes/saucony/paramountmax/side.jpg",
+    author: "산초 에디터",
+    publishedAt: "2026-09-11",
+    category: "review",
+    readingTime: 8,
+    tags: [
+      "파라마운트 맥스",
+      "원문 대조",
+      "핏"
+    ],
     content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>브랜드 공식 302g — 호카 본디 9(303g)와 비슷한 표기 무게</strong>지만 RunRepeat 실측은 272g입니다. 같은 브랜드 <a href="/shoes/saucony-triumph-24">트라이엄프 24</a>(실측 258g)보다 14g 무겁습니다</li>
-    <li><strong>엔돌핀 엘리트 계열 incrediRUN 폼을 데일리용으로 조정해 풀렝스로 깔았습니다.</strong> RunRepeat 실측 힐 42.1mm·전족 36.4mm(브랜드 공식 43/37mm)로 앞뒤가 모두 두툼한 구성입니다</li>
-    <li><strong>충격흡수는 실측 상위권, 토박스는 좁습니다.</strong> RunRepeat 실측 충격흡수 힐 165 SA·전족부 147 SA(평균 131 SA)로 조깅·회복주·장거리에 강점이지만, 토박스가 70.4mm(평균 73.2mm)로 좁고 와이드 옵션이 없습니다</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">👟</span>
-  <div class="callout-body">
-    <p class="callout-title">한 줄 결론</p>
-    <p><strong>회복주·장거리 전용 쿠션화</strong>를 찾는 러너에게 맞는 신발입니다. 토박스가 실측 70.4mm로 좁고 와이드 옵션이 없어 발볼이 넓다면 시착이 필요하고, 템포·인터벌 비중이 크다면 <a href="/shoes/saucony-endorphin-trainer">엔돌핀 트레이너</a> 같은 신발과 함께 비교해 보세요.</p>
-  </div>
-</div>
-
-<h2>파라마운트 맥스, 어떤 신발인가</h2>
-<p>파라마운트 맥스는 써코니가 <strong>"브랜드 역사상 가장 풍부한 쿠셔닝"</strong>이라는 표현을 직접 쓴 2026년 신작입니다. 엔돌핀 엘리트에 들어가던 <strong>incrediRUN</strong> 폼을 데일리용으로 살짝 단단하고 내구성 있게 조정해 미드솔 전체에 풀렝스로 깔았고, 인솔에도 같은 폼을 썼습니다. 카본 플레이트는 없습니다 — 반발력을 플레이트가 아니라 폼 자체와 두께로 냅니다.</p>
-
-<h2>무게·스택 — 브랜드 공식 302g, 실측 272g</h2>
-<div class="table-wrap">
-<table>
-  <thead><tr><th>모델</th><th>힐/전족 스택</th><th>드롭</th><th>무게</th><th>가격</th></tr></thead>
-  <tbody>
-    <tr><td><strong>파라마운트 맥스</strong></td><td>42.1/36.4mm(실측)</td><td>5.7mm(실측)</td><td><strong>272g</strong>(실측, 공식 302g)</td><td>259,000원</td></tr>
-    <tr><td><a href="/shoes/hoka-bondi-9">호카 본디 9</a></td><td>-</td><td>-</td><td>303g</td><td>-</td></tr>
-    <tr><td><a href="/shoes/saucony-triumph-24">트라이엄프 24</a></td><td>41.6/33.6mm(실측)</td><td>8.0mm(실측)</td><td>258g(실측)</td><td>209,000원</td></tr>
-    <tr><td><a href="/shoes/saucony-hurricane-26">허리케인 26</a>(안정화)</td><td>38.3/32.4mm(실측)</td><td>5.9mm(실측)</td><td>272g(실측)</td><td>209,000원</td></tr>
-  </tbody>
-</table>
-</div>
-<p>맥시멀 쿠션화 카테고리에서 <strong>"제일 무거운 축"의 대표 격이 호카 본디 9</strong>인데, 파라마운트 맥스는 브랜드 공식 무게(302g)로는 본디 9와 1g 차이지만 RunRepeat 실측은 272g입니다. 같은 써코니 라인업 안에서는 트라이엄프 24(실측 258g)보다 14g 무겁고 가격은 5만 원 위입니다. "써코니에서 제일 푹신한 것"을 찾는다면 답이 둘로 갈립니다 — <strong>실측 힐 스택은 42.1mm vs 41.6mm로 비슷하지만 전족부가 2.8mm 차이(36.4mm vs 33.6mm)이고 드롭도 파라마운트 맥스가 낮습니다(5.7mm vs 8.0mm)</strong>. 뒤꿈치 착지 습관이 강하고 가벼운 걸 원하면 트라이엄프, 발 전체로 착지하며 최대한의 발밑 두께를 원하면 파라마운트 맥스입니다.</p>
-
-<h2>발볼·부상 — 한국 러너가 궁금해할 것들</h2>
-<ul>
-  <li><strong>"발볼 넓은데 괜찮나요?"</strong> — RunRepeat 실측 토박스가 70.4mm(평균 73.2mm)로 좁은 편이라 발볼 넓은 러너에게는 불리합니다. 전족부 미드솔 폭은 129.7mm로 넓지만 국내 공식 와이드 옵션도 없어 시착이 필요합니다</li>
-  <li><strong>"무릎 괜찮나요?"</strong> — 부상 예방 등급이 족저근막염·무릎·신 스플린트 전부 excellent(최상위), 아킬레스건도 good입니다. 두꺼운 쿠션이 충격을 흡수하는 방향으로 설계됐습니다</li>
-  <li><strong>"평발인데 신어도 되나요?"</strong> — 안정성 점수 6/10에 넓은 베이스·높은 사이드월·분할 설계 미드솔이 있어, 맥시멀 쿠션치고는 흔들림이 적다는 평가가 일관됩니다. 다만 전용 안정화 신발은 아니라 과내전이 심하다면 <a href="/shoes/saucony-hurricane-26">허리케인 26</a> 같은 안정화 쪽을 함께 고려하세요</li>
-  <li><strong>"초보도 신을 수 있나요?"</strong> — 두꺼운 쿠션과 넓은 플랫폼이 착지 충격에 관대해 무난합니다. 다만 실측 272g(브랜드 공식 302g)으로 가벼운 신발은 아닙니다</li>
-</ul>
-
-<h2>실측으로 본 쿠션·반발·아웃솔</h2>
-<p>RunRepeat 실측으로 충격흡수는 힐 165 SA·전족부 147 SA(평균 131 SA), 에너지 리턴은 힐 72.7%·전족부 80.3%, 경도는 28.3 AC(평균 35.4 AC)로 <strong>부드러우면서 반발도 큰 편</strong>입니다. RunRepeat은 여러 페이스에서의 활용도도 좋게 평가했습니다("versatility across different paces"). 그래도 주 용도는 조깅·회복주·장거리이고, 빠른 훈련 비중이 크다면 <a href="/shoes/saucony-endorphin-trainer">엔돌핀 트레이너</a>를 따로 두는 것도 방법입니다. 아웃솔 마모는 실측 0.8mm(평균 1.1mm)로 평균보다 적었고, 접지력은 CoF 0.50(평균 0.53)으로 평균보다 약간 낮습니다.</p>
-
-<h2>가격 대비 가치</h2>
-<p>정가 259,000원(2026-08-15 써코니코리아 공식몰 확인, 할인 없음), 550km 기준 <strong>km당 약 471원</strong>입니다. 같은 브랜드 내에서 5만 원 저렴한 <a href="/shoes/saucony-triumph-24">트라이엄프 24</a>가 있지만, 하위 호환이 아니라 성격이 다른 신발입니다 — 실측 전족부가 2.8mm 얇고(33.6mm vs 36.4mm) 드롭이 8.0mm로 더 커서 두께감보다는 경량을 우선한 구성입니다. "가장 두꺼운 발밑 감각"을 원한다면 파라마운트 맥스 쪽이 정확한 선택이고, 아웃솔 마모도 실측 0.8mm(평균 1.1mm)로 평균보다 적었습니다.</p>
-
-<h2>누구에게 맞을까</h2>
-<ul>
-  <li><strong>회복주·장거리 전용 쿠션화를 찾는 러너</strong> — 이 신발이 잘하는 딱 그 역할입니다</li>
-  <li><strong>무릎·정강이 부담이 커 최대 쿠션이 필요한 러너</strong> — 부상 예방 등급 전부 최상위권</li>
-  <li><strong>2시간 이상 장시간 러닝을 자주 하는 러너</strong> — 두꺼운 발밑이 후반부 피로를 줄여줍니다</li>
-  <li>반대로 <strong>템포·인터벌까지 한 켤레로 겸하려 하거나, 가벼운 신발을 원하거나, 가성비를 우선한다면</strong> 트라이엄프 24나 엔돌핀 트레이너를 먼저 보세요</li>
-</ul>
-<p>비슷한 맥시멀 쿠션화를 더 비교하고 싶다면 <a href="/best/max-cushion">맥스 쿠션 러닝화 추천</a>에서 확인할 수 있습니다.</p>
-
-<h2>마무리</h2>
-<p>파라마운트 맥스는 써코니가 "가장 푹신한 신발"이라는 타이틀을 정확히 겨냥해 만든 모델입니다. 실측 힐 42.1mm·전족 36.4mm의 두께, 엔돌핀 엘리트 계열 폼의 데일리 튜닝이라는 조합은 회복주·장거리에서 확실한 강점이 됩니다. 다만 토박스가 좁고(실측 70.4mm) 와이드 옵션이 없다는 점을 분명히 알고 사야 하는 신발입니다 — 용도를 좁게 잡을수록 만족도가 높습니다.</p>
+<p><strong>2026-11-10 원문 대조 업데이트.</strong> 제조사 공시·실험실 검체·개인 착화 의견과 한국 상품 캐시를 구분합니다. 자체 착화 후기가 아닌 원문 기반 분석입니다.</p><h2>먼저 볼 차이</h2><p>같은DOR 글 안에서도 안정감이 갈립니다. Matt는 안정적인 중립 느낌을 적었지만 Andrea는 부드럽고 예측 어려운 바운스에서 큰 문제를 겪었다는 편집 주석이 있습니다. 넓은 바닥만으로 이 차이를 지우지 않습니다.</p><p>외부 전족129.7mm는 신발 바닥입니다. 발이 들어가는 엄지 부위는70.4mm로, 큰 바닥과 넓은 앞코는 같은 말이 아닙니다. 실제 규격에서 앞코 높이·칼라·중족 고정을 확인하세요.</p><figure><img src="/images/shoes/saucony/paramountmax/side.jpg" alt="파라마운트 맥스 — 큰 바닥과 내부 앞코·개인 안정감은 별개" loading="lazy"/><figcaption>파라마운트 맥스 — 큰 바닥과 내부 앞코·개인 안정감은 별개</figcaption></figure><div class="table-wrap"><table><thead><tr><th>모델</th><th>무게 · 공시 출처 별도 표기</th><th>스택·드롭 · 공시 출처 별도 표기</th><th>힐/전족 SA</th><th>힐/전족 리턴</th></tr></thead><tbody><tr><td>saucony-paramount-max</td><td>272g</td><td>42.1/36.4mm · 5.7mm</td><td>165/147</td><td>72.7/80.3%</td></tr></tbody></table></div><p>표의 값은 RunRepeat 검체 또는 별도 표시한 DOR 소개 공시입니다. DOR 소개는 독립 실측이 아닙니다. 일반 정책은 남성 US9지만 개별 라벨·폭·보정 여부는 미확인입니다. 공시와 동일한 검체로 단정하지 않습니다. SA는 충격흡수, 리턴은 시험에서 반환된 에너지 비율이며 부드러움·개인 기록·임상 보호를 뜻하지 않습니다. HA는 구방식, AC는 별도 경도 척도여서 환산하지 않습니다. <a href="https://runrepeat.com/testing-methodology" target="_blank" rel="noopener noreferrer">RunRepeat 측정법</a></p><h2>302g과272g을 같은 신발의30g 감량으로 읽지 않기</h2><p>302g은DOR 남성US9 소개,286g은Matt의 실제US10,272g은RR 검체입니다. 서로 다른 조건을 섞어 감량·사이즈 보정을 계산하지 않습니다. 같은 방식으로 측정한 수치와 공시를 구분합니다.</p><p>Matt의 힐리프트·인솔 시험은 개인 경험입니다. 같은 액세서리가 모든 러너의 통증이나 안정감을 해결한다는 뜻은 아닙니다.40마일 노출폼 스침이나 고무 마모0.8mm를550km 수명으로 바꾸지 않습니다.</p><p>회복주 전용·템포 금지·가장 푹신한 정답·한국 와이드 없음·현재 할인 없음이라는 과거 결론은 이번 원문 범위에 맞춰 정정했습니다.</p><h2>파라마운트 맥스 — 핏과 주행에서 갈리는 지점</h2><p>RR은 TPEE IncrediRUN·플레이트 없음과 두꺼운 같은 폼 풋베드를 설명합니다. 외부 바닥129.7/108.9mm를 내부 발볼로 바꾸지 않습니다.</p><p>RR 내부 최광폭 97.5mm·엄지 70.4mm·높이 26.3mm입니다. 다른 위치인 외부 바닥 폭과 구분하고 실제 규격·양말에서 고정을 확인하세요.</p><p>DOR Matt(남성US10·실제286g)는 넓고 둥근 앞발이지만 낮은 볼륨·오른쪽 힐록 필요와 초기 칼라 자극, 부드러운 바운스·이지롱런과 stable-neutral 체감을 적었습니다. 그러나 같은 글 편집 주석은 Andrea도 시험했고 부드럽고 예측 어려운 바운스에서 큰 안정감 문제를 겪었다고 명시합니다. Andrea 사이즈·별도핏 상세는 미확인입니다.</p><h2>파라마운트 맥스 — 공시·한국 판매 확인 범위</h2><p>DOR 소개302g(남성US9)/250g(여성US8)·43/37mm·6mm와 Matt 실제US10 286g, RR272g·42.1/36.4mm·5.7mm를 나눕니다. RR 재전재 남성272g도 소개302g과 별도입니다.</p><p>한국 공식 캐시: Men S101162-1010 M(일반) 표시259,000원; Men S101162-1009 M(일반) 표시259,000원; Women S101168-1008 M(일반) 표시259,000원; Women S101168-1010 M(일반) 표시259,000원. 현재 가격·선택 재고·숫자 폭 규격은 미확인입니다. 일반 사이즈 환산표·공통2E/4E 내비게이션·장바구니 버튼을 정확 모델 재고나 폭 증거로 쓰지 않습니다.</p><p>Matt의 넉넉한 앞발 체감과 RR 엄지70.4mm·높이26.3mm는 다릅니다. 두 테스터 안정감 상충을 지워 모두에게 가장 푹신·안정이라고 보장하지 않습니다.1/5 구방식 통기는BR이 아니며550km·인솔교체의 치료 효과·한국 와이드 부재를 제거했습니다.</p><h2>구매 전에 실제로 확인할 것</h2><p>평소 양말·인솔로 앞쪽 길이와 발톱 위 공간, 끈을 조였을 때 발등 압박, 힐 고정과 칼라 마찰을 확인하세요. 발볼 너비 하나로 전체 핏을 결정하지 않습니다. 교환·반품 조건도 먼저 확인할 수 있습니다.</p><p>트레일에서는 자신의 주요 노면과 오르막·내리막·방향 전환에서 고정과 전환을 살펴야 합니다. 젖은 콘크리트 시험 하나가 바위·진흙 접지를 보장하지 않습니다. 통증·저림을 견뎌야 한다는 규칙이나 모델별 질환 예방 효과는 이번 자료로 확인하지 못했습니다.</p><h2>확인한 원문과 접근 범위</h2><ul><li><a href="https://saucony.co.kr/product/detail.html?cate_no=232&amp;display_group=1&amp;product_no=499" target="_blank" rel="noopener noreferrer">한국 공식 S101162-1010</a> — 캐시 6 days ago; M/W숫자규격·현재선택재고 미확인.</li><li><a href="https://saucony.co.kr/product/new-남성-파라마운트-맥스-whitemulti/500/category/42/display/1/" target="_blank" rel="noopener noreferrer">한국 공식 S101162-1009</a> — 캐시 last week; M/W숫자규격·현재선택재고 미확인.</li><li><a href="https://saucony.co.kr/product/detail.html?cate_no=233&amp;display_group=1&amp;product_no=497" target="_blank" rel="noopener noreferrer">한국 공식 S101168-1008</a> — 캐시 2 weeks ago; M/W숫자규격·현재선택재고 미확인.</li><li><a href="https://saucony.co.kr/product/detail.html?cate_no=232&amp;display_group=1&amp;product_no=498" target="_blank" rel="noopener noreferrer">한국 공식 S101168-1010</a> — 캐시 3 weeks ago; M/W숫자규격·현재선택재고 미확인.</li><li><a href="https://www.runrepeat.com/saucony-paramount-max" target="_blank" rel="noopener noreferrer">파라마운트 맥스 RR 원문</a> — 정확 모델 검체. 제조사 공시와 분리.</li><li><a href="https://www.doctorsofrunning.com/saucony-paramount-max-review-2026/" target="_blank" rel="noopener noreferrer">파라마운트 맥스 DOR 원문</a> — 소개 공시·실제 착화 사이즈·개인의견 구분.</li></ul>
 `,
     faqs: [
       {
-        question: '파라마운트 맥스와 트라이엄프 24, 뭘 사야 하나요?',
-        answer:
-          '"써코니에서 제일 푹신한 것"의 답이 둘로 갈립니다. RunRepeat 실측 힐 스택은 42.1mm vs 41.6mm로 비슷하지만 전족부가 파라마운트 맥스 36.4mm, 트라이엄프 24 33.6mm로 2.8mm 차이입니다. 드롭은 5.7mm vs 8.0mm로 파라마운트 맥스가 낮고, 무게는 실측 272g vs 258g으로 14g 차이입니다. 가격은 259,000원 vs 209,000원. 뒤꿈치 착지 습관이 강하고 가벼운 걸 원하면 트라이엄프, 발 전체로 착지하며 최대한의 발밑 두께를 원하면 파라마운트 맥스입니다.',
+        "question": "넓은 바닥이라 모두 안정적인가요?",
+        "answer": "같은글에서Matt는 안정적으로, Andrea는 크게 불안정하게 느꼈습니다. 개인 차이를 지워 보장하지 않습니다."
       },
       {
-        question: '파라마운트 맥스가 정말 호카 본디 9만큼 무거운가요?',
-        answer:
-          '표기 무게로는 비슷합니다. 파라마운트 맥스 브랜드 공식 302g과 호카 본디 9 303g은 1g 차이입니다. 다만 RunRepeat 실측(남성 US 9)은 272g으로, 공식 표기보다 30g 가볍게 측정됐습니다.',
+        "question": "무게가302g인가요272g인가요?",
+        "answer": "DOR US9소개302g·Matt US10실측286g·RR272g을 따로 읽습니다."
       },
       {
-        question: '파라마운트 맥스, 평발인데 괜찮을까요?',
-        answer:
-          '안정성 점수가 6/10으로 중간 수준이고, 넓은 베이스와 높은 사이드월 덕에 맥시멀 쿠션치고는 흔들림이 적다는 평가가 나옵니다. 다만 전용 안정화 신발은 아니라서 과내전이 심한 편이라면 써코니 허리케인 26 같은 안정화 러닝화를 함께 고려하는 것을 권합니다.',
-      },
-      {
-        question: '이 신발로 인터벌이나 템포런도 할 수 있나요?',
-        answer:
-          '주 용도는 아닙니다. RunRepeat은 여러 페이스에서의 활용도를 좋게 평가했고 전족부 에너지 리턴도 80.3%(실측)로 높지만, 실측 272g의 맥시멀 쿠션화라 조깅·회복주·장거리에 맞춰진 신발입니다. 빠른 훈련 비중이 크다면 엔돌핀 트레이너나 엔돌핀 스피드 같은 신발을 함께 보는 것을 권합니다.',
-      },
+        "question": "인솔을 바꾸면 안정감이 해결되나요?",
+        "answer": "개인 액세서리 시험이 모든 러너의 안정감·치료 효과를 입증하지 않습니다."
+      }
     ],
+    updatedAt: "2026-11-10",
   },
   {
     id: 'paris-marathon-2027-lottery-guide',

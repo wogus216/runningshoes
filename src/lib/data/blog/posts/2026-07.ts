@@ -2257,72 +2257,38 @@ export const posts_2026_07: BlogPost[] = [
     updatedAt: "2026-11-10",
   },
   {
-    id: 'saucony-paramount-max-preview-2026',
-    slug: 'saucony-paramount-max-preview-2026',
-    title: '써코니 파라마운트 맥스란 | 카본 없이 레이싱 폼만 넣은 신개념 슈퍼트레이너 (한국 259,000원)',
-    description:
-      '써코니가 7월 1일 미국에서 출시한 파라마운트 맥스는 엔돌핀 엘리트 3에 쓰이는 IncrediRUN 폼을 카본 플레이트 없이 데일리 트레이너에 그대로 넣은 신규 라인입니다. 브랜드 공식 43mm 힐 스택(RunRepeat 실측 42.1mm)의 맥스쿠션에 레이싱급 반발력을 얹어 "이지런·회복런 전용 슈퍼트레이너"로 포지셔닝했습니다. 한국 공식몰에는 259,000원으로 등재돼 있습니다(2026-10-20 확인) — 확인된 스펙과 리뷰를 정리했습니다.',
-    thumbnail: '/images/blog/saucony-paramount-max-preview-2026.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-07-14',
-    category: 'review' as const,
-    readingTime: 6,
-    tags: ['써코니 파라마운트 맥스', '슈퍼트레이너', 'IncrediRUN', '맥스쿠션', '신상 러닝화', '써코니'],
+    id: "saucony-paramount-max-preview-2026",
+    slug: "saucony-paramount-max-preview-2026",
+    title: "파라마운트 맥스 구조 분석 —카본 없이 IncrediRUN, 한국SKU와 확인 공백",
+    description: "플레이트 없는 폼·두꺼운 풋베드와 실제 앞코를 정리합니다. 한국 M상품 캐시259,000원과 현재 재고, 17%단단함 주장·임상 회복 보장을 구분합니다.",
+    thumbnail: "/images/shoes/saucony/paramountmax/side.jpg",
+    author: "산초 에디터",
+    publishedAt: "2026-07-14",
+    category: "review",
+    readingTime: 8,
+    tags: [
+      "파라마운트 맥스",
+      "원문 대조",
+      "핏"
+    ],
     content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>써코니가 7월 1일 미국에 새 라인 "파라마운트 맥스"를 출시</strong> — 가격 $199.95, 힐 43mm/전족 37mm의 맥스쿠션</li>
-    <li><strong>엔돌핀 엘리트 3와 같은 IncrediRUN 폼을 풀렝스로 넣되 카본 플레이트는 없는 "논-플레이트 슈퍼트레이너"</strong>입니다 — 레이싱 폼을 매일 신는 트레이너에 옮긴 셈이죠</li>
-    <li><strong>작성 당시엔 한국 공식 사이트(saucony.co.kr)에 없었지만, 현재는 259,000원으로 등재돼 있습니다</strong>(2026-10-20 확인)</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">👀</span>
-  <div class="callout-body">
-    <p class="callout-title">확인된 사실 — 공식 스펙</p>
-    <p>파라마운트 맥스는 써코니 공식 사이트를 통해 <strong>2026년 7월 1일 미국에서 출시</strong>됐습니다. 가격은 <strong>$199.95</strong>, 무게는 남성 302g(US 9)·여성 250g(US 8), <strong>힐 스택 43mm·전족 37mm·드롭 6mm</strong>로 상당한 맥스쿠션입니다. 미드솔은 <a href="/shoes/saucony-endorphin-elite-3">엔돌핀 엘리트 3</a>에 쓰이는 슈퍼크리티컬 TPEE 폼 IncrediRUN을 <strong>풀렝스로 채택하되, 일상 훈련 내구성을 위해 약 17% 더 단단하게(firmer) 튜닝</strong>했습니다. 카본 플레이트는 없습니다. 이후 게시된 <strong>RunRepeat 랩 실측은 무게 272g(US 9)·힐 42.1mm/전족 36.4mm·드롭 5.7mm·토박스 70.4mm(평균 73.2mm, 좁음)</strong>이고, 한국 공식몰에는 259,000원으로 등재돼 있으며 국내 와이드 옵션은 없습니다(2026-10-20 확인).</p>
-  </div>
-</div>
-
-<h2>파라마운트 맥스, 왜 주목할 만한가</h2>
-<p>이 사이트에서 이미 다룬 <a href="/blog/superblast-3-vs-evo-sl-vs-mach-6-super-trainer-2026">슈퍼트레이너 3파전(슈퍼블라스트 3 vs 에보 SL vs 마하 6)</a>은 "카본 플레이트 없이 레이싱급 폼만 데일리 트레이너에 넣은" 카테고리를 다뤘습니다. 파라마운트 맥스는 여기에 합류하는 새 진입자인데, 성격이 좀 다릅니다. 기존 3파전이 반응성·균형 중심이었다면, <strong>파라마운트 맥스는 힐 스택 43mm(브랜드 공식, RunRepeat 실측 42.1mm)의 "맥스쿠션 회복 전용"</strong>에 가깝습니다. Believe in the Run의 리뷰 제목부터가 <strong>"매일 IncrediRUN 폼을 신을 수 있을까? 파라마운트 맥스는 그렇다고 답한다"</strong>입니다 — 레이싱 전용 폼을 얼마나 순화해서 일상화에 옮겼는지가 핵심 메시지인 셈이죠.</p>
-
-<h2>엔돌핀 라인과는 다른, 완전히 새로운 라인</h2>
-<p>파라마운트 맥스는 <a href="/blog/saucony-endorphin-lineup-2026-guide">엔돌핀 스피드5·프로5·엘리트3</a>의 후속이나 파생 모델이 아닙니다. <strong>폼 소재만 엔돌핀 엘리트 3와 공유할 뿐, "파라마운트"라는 완전히 별도의 신규 라인</strong>으로 신설됐습니다. 엔돌핀 라인이 카본·너브 플레이트 기반의 레이싱-투-데일리 스펙트럼을 담당한다면, 파라마운트 맥스는 <strong>"레이싱 폼만 가져오고 플레이트는 뺀" 맥스쿠션 전용 라인</strong>으로 이해하면 됩니다.</p>
-
-<h2>Believe in the Run 리뷰 — 장단점</h2>
-<div class="table-wrap">
-<table>
-  <thead><tr><th>구분</th><th>내용</th></tr></thead>
-  <tbody>
-    <tr><td><strong>종합</strong></td><td>신 Tier 시스템 B Tier (Design C · Value C · Performance B)</td></tr>
-    <tr><td><strong>장점</strong></td><td>마시멜로처럼 부드러운 쿠셔닝, 넓은 플랫폼의 안정적인 라이드, 회복런·이지런에 최적, 가벼운 무게 대비 우수한 쿠셔닝감</td></tr>
-    <tr><td><strong>단점</strong></td><td>벌키한 디자인, 짧은 양말 착용 시 힐 자극, 매우 넓은 핏(호불호), 10마일(약 16km) 이상 빠른 페이스에서는 피로도 증가</td></tr>
-    <tr><td><strong>추천 대상</strong></td><td>극도의 편안함을 원하는 러너, 발볼 넓은 러너, 회복 전용화가 필요한 러너</td></tr>
-    <tr><td><strong>비추천 대상</strong></td><td>다목적 신발을 원하는 러너, 미니멀 디자인 선호자, 빠른 페이스 위주로 뛰는 러너</td></tr>
-  </tbody>
-</table>
-</div>
-<p><small>※ 위 표는 Believe in the Run 리뷰어의 평가입니다. 핏은 RunRepeat 실측 토박스가 70.4mm(평균 73.2mm)로 좁은 편이고 국내 와이드 옵션도 없으니, 발볼이 넓다면 시착을 권합니다.</small></p>
-
-<h2>한국 출시는?</h2>
-<p>이 글 작성 시점(7/14)엔 <strong>saucony.co.kr에 파라마운트 맥스가 등재되지 않았고</strong>, 국내 러닝 커뮤니티·쇼핑몰 검색에서도 관련 언급을 찾지 못했습니다. 이후 2026-10-20 확인 때는 <strong>한국 공식몰에 259,000원</strong>(할인 없음, 국내 와이드 옵션 없음)으로 올라와 있었습니다. 같은 성격의 다른 신발과 비교하고 싶다면 <a href="/blog/superblast-3-vs-evo-sl-vs-mach-6-super-trainer-2026">슈퍼트레이너 3파전</a>에서 비교한 모델들이 현실적인 대안입니다.</p>
-
-<div class="callout warning">
-  <span class="callout-icon">⚠️</span>
-  <div class="callout-body">
-    <p class="callout-title">정보성 프리뷰 — 작성 시점 기준 한국 미출시</p>
-    <p>파라마운트 맥스는 이 글 작성 시점엔 <strong>한국 공식 출시가 확인되지 않은 모델</strong>이었습니다. 이후 한국 공식몰 259,000원 등재가 확인돼(2026-10-20) 신발 데이터베이스에 추가했습니다. RunRepeat 정량 랩 데이터는 이후 게시돼 충격흡수 힐 165 SA, 경도 28.3 AC, 토박스 70.4mm로 나왔습니다.</p>
-  </div>
-</div>
-
-<h2>마무리</h2>
-<p>파라마운트 맥스는 "레이싱 폼을 일상화로"라는 최근 트렌드의 연장선에 있는 흥미로운 시도입니다. 작성 당시엔 국내 출시가 불확실했지만 지금은 한국 공식몰에 259,000원으로 등재돼 있으니(2026-10-20 확인), 구매를 고민한다면 같은 성격의 <a href="/blog/superblast-3-vs-evo-sl-vs-mach-6-super-trainer-2026">슈퍼블라스트 3·에보 SL·마하 6</a> 쪽과 함께 비교해 보는 걸 권합니다.</p>
-
-<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 써코니 공식 발표(2026-07-01)와 Believe in the Run 리뷰를 바탕으로 한 정보성 프리뷰입니다. 한국 정가(259,000원)와 RunRepeat 정량 랩 데이터는 2026-10-20 확인 기준으로 반영했습니다. (작성 2026-07-14)</p>
+<p><strong>2026-11-10 원문 대조 업데이트.</strong> 제조사 공시·실험실 검체·개인 착화 의견과 한국 상품 캐시를 구분합니다. 자체 착화 후기가 아닌 원문 기반 분석입니다.</p><h2>먼저 볼 차이</h2><p>파라마운트 맥스에서 확인한 차이는 카본 없이IncrediRUN 폼과 두꺼운 같은폼 풋베드를 사용하는 구조입니다. 레이싱 폼을 넣었다고 레이스 기록이나 회복 효과가 보장되지는 않습니다.</p><p>7월1일 미국 출시 예정 문구를 현재 미래형으로 반복하지 않습니다. 이번 자료로 정확 출시일·17%더 단단한 배합 변화율을 새로 대조하지 못해 그 수치 대신 정확 모델의 현행 랩과 한국 확인SKU를 중심으로 바꿨습니다.</p><figure><img src="/images/shoes/saucony/paramountmax/side.jpg" alt="파라마운트 맥스 — 플레이트 없는 구조와 두꺼운 풋베드" loading="lazy"/><figcaption>파라마운트 맥스 — 플레이트 없는 구조와 두꺼운 풋베드</figcaption></figure><div class="table-wrap"><table><thead><tr><th>모델</th><th>무게 · 공시 출처 별도 표기</th><th>스택·드롭 · 공시 출처 별도 표기</th><th>힐/전족 SA</th><th>힐/전족 리턴</th></tr></thead><tbody><tr><td>saucony-paramount-max</td><td>272g</td><td>42.1/36.4mm · 5.7mm</td><td>165/147</td><td>72.7/80.3%</td></tr></tbody></table></div><p>표의 값은 RunRepeat 검체 또는 별도 표시한 DOR 소개 공시입니다. DOR 소개는 독립 실측이 아닙니다. 일반 정책은 남성 US9지만 개별 라벨·폭·보정 여부는 미확인입니다. 공시와 동일한 검체로 단정하지 않습니다. SA는 충격흡수, 리턴은 시험에서 반환된 에너지 비율이며 부드러움·개인 기록·임상 보호를 뜻하지 않습니다. HA는 구방식, AC는 별도 경도 척도여서 환산하지 않습니다. <a href="https://runrepeat.com/testing-methodology" target="_blank" rel="noopener noreferrer">RunRepeat 측정법</a></p><h2>구매에서 확인할 것은 가격 사다리보다 실제 핏</h2><p>한국 남녀M 표본4SKU와259,000원 캐시는 확인했지만 전체 국내 폭·현재 할인·결제재고는 미확인입니다. 트라이엄프보다5만원이면 더 푹신하다는 구매 결론으로 묶지 않습니다.</p><p>평소 양말·인솔에서 엄지 위 공간·힐 고정과 칼라 접촉, 부드러운 폼이 본인 방향 전환에 맞는지 확인하세요. Matt와 Andrea의 서로 다른 안정감 경험은 이런 확인이 필요한 구체적 이유입니다.</p><h2>파라마운트 맥스 — 핏과 주행에서 갈리는 지점</h2><p>RR은 TPEE IncrediRUN·플레이트 없음과 두꺼운 같은 폼 풋베드를 설명합니다. 외부 바닥129.7/108.9mm를 내부 발볼로 바꾸지 않습니다.</p><p>RR 내부 최광폭 97.5mm·엄지 70.4mm·높이 26.3mm입니다. 다른 위치인 외부 바닥 폭과 구분하고 실제 규격·양말에서 고정을 확인하세요.</p><p>DOR Matt(남성US10·실제286g)는 넓고 둥근 앞발이지만 낮은 볼륨·오른쪽 힐록 필요와 초기 칼라 자극, 부드러운 바운스·이지롱런과 stable-neutral 체감을 적었습니다. 그러나 같은 글 편집 주석은 Andrea도 시험했고 부드럽고 예측 어려운 바운스에서 큰 안정감 문제를 겪었다고 명시합니다. Andrea 사이즈·별도핏 상세는 미확인입니다.</p><h2>파라마운트 맥스 — 공시·한국 판매 확인 범위</h2><p>DOR 소개302g(남성US9)/250g(여성US8)·43/37mm·6mm와 Matt 실제US10 286g, RR272g·42.1/36.4mm·5.7mm를 나눕니다. RR 재전재 남성272g도 소개302g과 별도입니다.</p><p>한국 공식 캐시: Men S101162-1010 M(일반) 표시259,000원; Men S101162-1009 M(일반) 표시259,000원; Women S101168-1008 M(일반) 표시259,000원; Women S101168-1010 M(일반) 표시259,000원. 현재 가격·선택 재고·숫자 폭 규격은 미확인입니다. 일반 사이즈 환산표·공통2E/4E 내비게이션·장바구니 버튼을 정확 모델 재고나 폭 증거로 쓰지 않습니다.</p><p>Matt의 넉넉한 앞발 체감과 RR 엄지70.4mm·높이26.3mm는 다릅니다. 두 테스터 안정감 상충을 지워 모두에게 가장 푹신·안정이라고 보장하지 않습니다.1/5 구방식 통기는BR이 아니며550km·인솔교체의 치료 효과·한국 와이드 부재를 제거했습니다.</p><h2>구매 전에 실제로 확인할 것</h2><p>평소 양말·인솔로 앞쪽 길이와 발톱 위 공간, 끈을 조였을 때 발등 압박, 힐 고정과 칼라 마찰을 확인하세요. 발볼 너비 하나로 전체 핏을 결정하지 않습니다. 교환·반품 조건도 먼저 확인할 수 있습니다.</p><p>트레일에서는 자신의 주요 노면과 오르막·내리막·방향 전환에서 고정과 전환을 살펴야 합니다. 젖은 콘크리트 시험 하나가 바위·진흙 접지를 보장하지 않습니다. 통증·저림을 견뎌야 한다는 규칙이나 모델별 질환 예방 효과는 이번 자료로 확인하지 못했습니다.</p><h2>확인한 원문과 접근 범위</h2><ul><li><a href="https://saucony.co.kr/product/detail.html?cate_no=232&amp;display_group=1&amp;product_no=499" target="_blank" rel="noopener noreferrer">한국 공식 S101162-1010</a> — 캐시 6 days ago; M/W숫자규격·현재선택재고 미확인.</li><li><a href="https://saucony.co.kr/product/new-남성-파라마운트-맥스-whitemulti/500/category/42/display/1/" target="_blank" rel="noopener noreferrer">한국 공식 S101162-1009</a> — 캐시 last week; M/W숫자규격·현재선택재고 미확인.</li><li><a href="https://saucony.co.kr/product/detail.html?cate_no=233&amp;display_group=1&amp;product_no=497" target="_blank" rel="noopener noreferrer">한국 공식 S101168-1008</a> — 캐시 2 weeks ago; M/W숫자규격·현재선택재고 미확인.</li><li><a href="https://saucony.co.kr/product/detail.html?cate_no=232&amp;display_group=1&amp;product_no=498" target="_blank" rel="noopener noreferrer">한국 공식 S101168-1010</a> — 캐시 3 weeks ago; M/W숫자규격·현재선택재고 미확인.</li><li><a href="https://www.runrepeat.com/saucony-paramount-max" target="_blank" rel="noopener noreferrer">파라마운트 맥스 RR 원문</a> — 정확 모델 검체. 제조사 공시와 분리.</li><li><a href="https://www.doctorsofrunning.com/saucony-paramount-max-review-2026/" target="_blank" rel="noopener noreferrer">파라마운트 맥스 DOR 원문</a> — 소개 공시·실제 착화 사이즈·개인의견 구분.</li></ul>
 `,
+    updatedAt: "2026-11-10",
+    faqs: [
+      {
+        "question": "카본 없는 엔돌핀 엘리트와 같은가요?",
+        "answer": "같은 폼 명칭이 정확 배합·형상·개인 체감의 동일성을 보장하지 않습니다."
+      },
+      {
+        "question": "17%더 단단한 게 확인됐나요?",
+        "answer": "이번 정확 원문 대조로 해당 비교시험 조건을 확인하지 못해 확정 수치로 반복하지 않습니다."
+      },
+      {
+        "question": "한국 출시가 안 됐나요?",
+        "answer": "정확 남녀 한국SKU 문서는 확인했습니다. 현재 가격·재고·전체 폭은 별도로 미확인입니다."
+      }
+    ],
   },
   {
     id: 'asics-blazeblast-preview-2026',

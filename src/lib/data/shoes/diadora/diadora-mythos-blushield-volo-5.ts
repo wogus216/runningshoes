@@ -1,8 +1,6 @@
 import type { Shoe } from '@/types/shoe';
 
-// 2026-10-20 등록 — 출처: 디아도라 한국 공식몰(diadorakorea.com) 상품 4617·4619·5186 판매가,
-// RunRepeat 랩 리뷰(runrepeat.com/diadora-mythos-blushield-volo-5, 2025-12-31, 남성 US 9 시료),
-// 디아도라 공식 테크 페이지(diadora.com/en/kr/tecnology-running)의 Blushield 설명. 점수는 랩 수치를 문서 C절 매핑에 대입.
+// 원문 재확인:2026-11-10. 확인 범위와 한계는 verification 참조.
 export const shoe: Shoe = {
   id: 'diadora-mythos-blushield-volo-5',
   slug: 'diadora-mythos-blushield-volo-5',
@@ -17,116 +15,119 @@ export const shoe: Shoe = {
   ],
   category: '안정화',
   rating: 4,
-  status: 'new',
-  price: 229000,
-  description:
-    '디아도라의 Blushield 지지 구조를 넣은 안정화 데일리. RunRepeat 안정성 평가가 높고 아웃솔이 두꺼워(3.8mm) 내구성이 좋지만, 반발은 힐 42.8%로 낮고 실측 드롭이 11.2mm로 큽니다. 토박스 71.0mm로 좁은 편. 한국 공식몰 정가 229,000원.',
-  oneliner: '거슬리지 않는 지지의 Blushield 안정화 — 반발은 낮고 드롭은 높다',
-  editorComment:
-    '"평발인데 딱딱하게 받치는 안정화는 싫다"는 러너에게 고려해 볼 만한 성격입니다. RunRepeat는 Blushield 구조가 "거슬리지 않는(non-intrusive) 지지"를 준다고 평가했고, 비틀림 강성이 높은 반면 앞뒤로는 잘 휘어 자연스러운 착지감이라고 적었습니다. 충격흡수는 힐 137 SA·전족부 106 SA, 경도 20.0 HA로 지지 중심의 균형형 세팅입니다. 아웃솔은 Duratech 5000 고무를 3.8mm 두께로 깔아 마모가 0.8mm에 그쳤습니다.\n\n아쉬운 점은 분명합니다. 반발이 힐 42.8%·전족부 47.4%로 데일리 평균에 크게 못 미쳐 RunRepeat가 "지루한 라이드"를 단점으로 꼽았고, 실측 드롭이 11.2mm(공칭 10mm)로 높아 저드롭 선호 러너에겐 맞지 않습니다. 무게는 281g으로 안정화로는 무난하지만, 어퍼(토박스) 내구성은 낮게 나왔습니다.\n\n사이즈·구매 가이드: 토박스 폭 71.0mm(RunRepeat 평균 73.2mm)로 RunRepeat가 "best for narrow feet"라고 정리했고, 한국 공식몰에 와이드 버전은 없습니다. 발볼 넓은 평발 러너라면 와이드가 있는 안정화가 우선입니다. 정가 229,000원은 우리 DB의 가이드 19(179,000원)·아라히 8(199,000원)보다 높습니다.',
-  tags: ['안정화', '데일리', 'Blushield', '뒤꿈치 착지', '내구성'],
-
+  description: 'ANIMA EVA · Blushield 구조 · DDATTIVO 인솔 구조의 미토스 블루실드 볼로 5. RunRepeat 실험실 검체 281g·40/28.8mm. 한국 현재 정가 미확인.',
+  oneliner: 'ANIMA EVA · Blushield 구조 · DDATTIVO 인솔 · 281g (RunRepeat 실험실 검체)',
+  editorComment: '2026-11-10 원문 재확인. 한국 공식 캐시: D5151RRN04WHT 성별 명시 미확인 정가229,000원·할인캐시149,000원; D5152RRN14WHT women 정가229,000원·할인캐시149,000원; D5151RRN04ORS 성별 명시 미확인 정가229,000원·할인캐시149,000원; D5151RRN10BLS 성별 명시 미확인 정가229,000원·할인캐시149,000원; D5151RRN11BGS 성별 명시 미확인 정가229,000원·할인캐시149,000원. 현재 가격·폭·선택 재고는 미확인입니다. 공통SOLD OUT·장바구니·사이즈 목록을 현재 재고로 보지 않습니다. SKU숫자로 성별을 추정하지 않습니다. RR281g·40/28.8mm·11.2mm와 재전재 브랜드295/258g(기준 사이즈 미확인)·36/26mm·10mm를 나눕니다. 같은 RR 본문은 브랜드8mm라고도 써 원문 내부가 상충합니다. 20HA는 구방식이며AC 미확인입니다. 국소 고무 마모0.8mm와 어퍼 시험을600km 수명으로 바꾸지 않습니다. 한국 와이드 부재·평발 최적·고정 페이스·공통 비용을 제거했습니다. 정확 Volo5의 DOR 개별 리뷰는 미확인입니다. Vigore3·Blushield6의 의견을 대입하지 않습니다. RR 구조 평가를 평발 치료·보호 등급으로 바꾸지 않습니다. RR 내부 최광폭 94.1mm·엄지 71mm·높이 23.5mm입니다. 다른 위치인 외부 바닥 폭과 구분하고 실제 규격·양말에서 고정을 확인하세요. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
+  tags: [
+    '안정화',
+    '데일리',
+    'Blushield',
+    '뒤꿈치 착지',
+    '내구성',
+  ],
   specs: {
     weight: 281,
     cushioning: 8,
     responsiveness: 6,
     stability: 8,
-    drop: 11,
-    durability: 600,
+    drop: 11.2,
   },
-
-  biomechanics: {
-    stackHeight: { heel: 40.0, forefoot: 28.8 },
-    drop: 11,
-    carbonPlate: false,
-    plateType: null,
-    midsoleType: 'ANIMA (EVA) + Blushield 지지 구조',
-    optimalPace: '5:30-7:30 min/km (이지·스테디런)',
-  },
-
-  injuryPrevention: {
-    plantarFasciitis: 'good',
-    achillesTendinopathy: 'good',
-    kneeIssues: 'good',
-    shinSplints: 'good',
-  },
-
   koreanFootFit: {
     toBoxWidth: 'narrow',
-    flatFootCompatibility: 'good',
-    wideOptions: false,
     winterCompatibility: 'good',
     summerCompatibility: 'fair',
   },
-
   targetUsers: {
     recommended: [
-      '가벼운 지지가 필요한 뒤꿈치 착지 러너',
-      '강한 아치 지지보다 자연스러운 안정감을 원하는 평발·과내전 러너',
-      '아웃솔 내구성을 중시하는 러너',
+      '실제 규격에서 낮은 앞코·중족·힐 고정을 비교하려는 러너',
+      '공시·랩·개인 체감과 원문 상충을 구분하려는 러너',
     ],
     notRecommended: [
-      '반발감 있는 라이드를 원하는 러너 (반발 42.8~47.4%)',
-      '저드롭을 선호하는 러너 (실측 드롭 11.2mm)',
-      '발볼이 넓은 러너 (토박스 71.0mm, 와이드 없음)',
+      '시착에서 압박·마찰·불편한 전환이 남는 경우',
+      '국소 마모·개인 경험을 공통 수명·임상 효과로 읽는 경우',
     ],
   },
-
   features: [
-    'Blushield 지지 구조 — 발 모양에 맞춘 모르포 베이스 + 충격 완충 코어 (디아도라 공식)',
-    'ANIMA 미드솔 — 충격흡수 힐 137 SA / 전족부 106 SA, 경도 20.0 HA (RunRepeat)',
-    '힐 40.0mm / 전족부 28.8mm, 실측 드롭 11.2mm',
-    'Duratech 5000 아웃솔 — 고무 두께 3.8mm, 마모 0.8mm',
-    'DDATTIVO 인솔 — 힐 쪽 두꺼운 쿠션 블록(최대 7.9mm)',
-    '에너지 리턴 전족부 47.4% (RunRepeat 실측)',
+    'ANIMA EVA · Blushield 구조 · DDATTIVO 인솔',
+    '281g · 40/28.8mm · 드롭 11.2mm (RunRepeat 실험실 검체)',
+    'Blushield 구조가 별도 카본 플레이트를 뜻하지 않습니다. 정확 플레이트 유무·소재는 미확인입니다. 전족 Flexoft와 후족 Duratech5000을 구분합니다.',
+    'RR 내부 최광폭 94.1mm·엄지 71mm·높이 23.5mm입니다. 다른 위치인 외부 바닥 폭과 구분하고 실제 규격·양말에서 고정을 확인하세요.',
   ],
-
   priceAnalysis: {
-    msrp: 229000,
-    costPerKm: 382,
     valueRating: 5,
     priceTier: 'premium',
-    alternatives: ['saucony-guide-19', 'hoka-arahi-8'],
-    valueAdvantages: [
-      'RunRepeat 안정성 89점 — 지지가 거슬리지 않는 평가',
-      '3.8mm 두꺼운 고무로 아웃솔 마모 0.8mm',
-      '전족부 미드솔 폭 110.8mm로 안정화치고 날렵한 플랫폼',
+    alternatives: [
+      'saucony-guide-19',
+      'hoka-arahi-8',
     ],
   },
-
   detailedSpecs: {
-    weight: '281g (RunRepeat 실측, 남성 US 9) / 브랜드 공칭 295g',
-    stackHeight: '힐 40.0mm / 전족부 28.8mm (RunRepeat 실측, 전족부 일부는 Blushield 구조 높이) — 브랜드 공칭 36/26mm',
-    drop: '11.2mm (실측) — 브랜드 공칭 10mm',
-    midsole: 'ANIMA (EVA) + Blushield — 경도 20.0 HA, 반발 힐 42.8% / 전족부 47.4%',
-    plate: '없음 (Blushield 지지 구조)',
-    outsole: 'Duratech 5000 고무, 두께 3.8mm, 마모 0.8mm',
-    upper: '프리미엄 메시 어퍼, 혀 패딩 1.5mm — 토박스 내구성은 RunRepeat "Bad"',
-    width: '좁음 — 실내 폭 94.1mm·토박스 폭 71.0mm·높이 23.5mm (RunRepeat, 남성 US 9). RunRepeat: "it is, again, best for narrow feet"',
-    durability: '500~700km — 아웃솔은 우수, 어퍼 토박스 내구성이 약점',
-    price: '₩229,000 (2026-10-20 디아도라 한국 공식몰 확인)',
-    costPerKm: '약 ₩382/km (내구성 범위 중간값 기준)',
-    footType: '중립 ~ 과내전',
-    landingPattern: 'RFS (RunRepeat 표기)',
+    weight: '281g (RunRepeat 실험실 검체). RR281g·40/28.8mm·11.2mm와 재전재 브랜드295/258g(기준 사이즈 미확인)·36/26mm·10mm를 나눕니다. 같은 RR 본문은 브랜드8mm라고도 써 원문 내부가 상충합니다.',
+    stackHeight: '40/28.8mm (RunRepeat 실험실 검체, 힐/전족부). 출처별 다른 공시는 무게 항목 참조.',
+    drop: '11.2mm (RunRepeat 실험실 검체). RR281g·40/28.8mm·11.2mm와 재전재 브랜드295/258g(기준 사이즈 미확인)·36/26mm·10mm를 나눕니다. 같은 RR 본문은 브랜드8mm라고도 써 원문 내부가 상충합니다.',
+    midsole: 'ANIMA EVA · Blushield 구조 · DDATTIVO 인솔. 폼 경도 20 HA (구방식), AC 미확인. 힐/전족부 SA 137/106·에너지 리턴 42.8/47.4%. 20HA는 구방식이며AC 미확인입니다. 국소 고무 마모0.8mm와 어퍼 시험을600km 수명으로 바꾸지 않습니다. 한국 와이드 부재·평발 최적·고정 페이스·공통 비용을 제거했습니다.',
+    plate: 'Blushield 구조가 별도 카본 플레이트를 뜻하지 않습니다. 정확 플레이트 유무·소재는 미확인입니다. 전족 Flexoft와 후족 Duratech5000을 구분합니다.',
+    width: 'RR 내부 최광폭 94.1mm·엄지 부위 71mm·높이 23.5mm. RR 내부 최광폭 94.1mm·엄지 71mm·높이 23.5mm입니다. 다른 위치인 외부 바닥 폭과 구분하고 실제 규격·양말에서 고정을 확인하세요.',
+    durability: '검증된 공통 수명 km 미확인. 국소 마모·짧은 착화 후기를 주행 수명으로 환산하지 않습니다.',
+    price: '한국 공식 캐시: D5151RRN04WHT 성별 명시 미확인 정가229,000원·할인캐시149,000원; D5152RRN14WHT women 정가229,000원·할인캐시149,000원; D5151RRN04ORS 성별 명시 미확인 정가229,000원·할인캐시149,000원; D5151RRN10BLS 성별 명시 미확인 정가229,000원·할인캐시149,000원; D5151RRN11BGS 성별 명시 미확인 정가229,000원·할인캐시149,000원. 현재 가격·폭·선택 재고는 미확인입니다. 공통SOLD OUT·장바구니·사이즈 목록을 현재 재고로 보지 않습니다. SKU숫자로 성별을 추정하지 않습니다.',
   },
-
   reviews: [
     {
-      userType: '예상 적합 — 강한 아치 지지가 불편했던 가벼운 과내전 러너',
-      text: '딱딱한 메디얼 포스트 같은 강한 교정보다 자연스러운 안정감을 원한다면 맞을 가능성이 있습니다. RunRepeat 안정성 평가가 89점으로 높으면서도 지지가 거슬리지 않는다고 평가됐고, 앞뒤로는 유연해 착지감이 자연스러운 편입니다. 다만 반발이 40%대라 페이스를 올리는 날에는 둔하게 느껴질 수 있어, 이지·스테디런 전용으로 두는 운용이 맞습니다.',
+      userType: '원문 기반 에디터 분석',
+      source: 'editor',
+      sourceUrl: 'https://runrepeat.com/diadora-mythos-blushield-volo-5',
+      text: 'RR281g·40/28.8mm·11.2mm와 재전재 브랜드295/258g(기준 사이즈 미확인)·36/26mm·10mm를 나눕니다. 같은 RR 본문은 브랜드8mm라고도 써 원문 내부가 상충합니다. 20HA는 구방식이며AC 미확인입니다. 국소 고무 마모0.8mm와 어퍼 시험을600km 수명으로 바꾸지 않습니다. 한국 와이드 부재·평발 최적·고정 페이스·공통 비용을 제거했습니다.',
     },
     {
-      userType: '예상 적합 — 발볼 넓은 평발 러너',
-      text: '이 조건에는 신중해야 합니다. 지지 구조 자체는 평발 러너에게 도움이 되는 방향이지만, 토박스 폭이 71.0mm로 평균보다 좁고 높이도 23.5mm로 낮아 발볼 넓은 발에는 앞쪽 압박이 생길 수 있습니다. 한국 공식몰에 와이드도 없으므로, 와이드가 있는 다른 안정화와 비교해 보고 시착 후 결정하는 편이 안전합니다.',
-    },
-    {
-      userType: '예상 적합 — 한 켤레를 오래 신으며 이지런 위주로 달리는 러너',
-      text: 'RunRepeat 랩에서 아웃솔(Duratech 5000)이 0.8mm만 닳았고 전족부 접지 0.61로 젖은 콘크리트에서도 안정적이어서, 마모와 미끄러짐이 걱정인 이지런 러너에게 맞을 가능성이 있습니다. 반면 토박스 내구성은 1/5로 갑피가 마찰에 약해 오래 신으면 앞쪽이 먼저 상할 수 있고, 281g에 반발이 낮아 빠른 훈련용으로는 맞지 않습니다.',
+      userType: '원문 기반 확인 범위 · 착화 후기 미확인',
+      source: 'editor',
+      sourceUrl: 'https://runrepeat.com/diadora-mythos-blushield-volo-5',
+      text: '정확 Volo5의 DOR 개별 리뷰는 미확인입니다. Vigore3·Blushield6의 의견을 대입하지 않습니다. RR 구조 평가를 평발 치료·보호 등급으로 바꾸지 않습니다.',
     },
   ],
-
-  similarShoes: ['saucony-guide-19', 'hoka-arahi-8', 'asics-gel-kayano-33'],
+  similarShoes: [
+    'saucony-guide-19',
+    'hoka-arahi-8',
+    'asics-gel-kayano-33',
+  ],
   purchaseLinks: [
-    { store: '디아도라 공식몰', url: 'https://www.diadorakorea.com/product/detail.html?product_no=4617', price: 229000, isOfficial: true },
+    {
+      store: '디아도라 공식몰',
+      url: 'https://www.diadorakorea.com/product/detail.html?product_no=4617',
+      price: 229000,
+      isOfficial: true,
+    },
   ],
+  verification: {
+    checkedAt: '2026-11-10',
+    scope: '한국 상품 조건, 해외 실험실·제조사 공시와 외부 착화 의견의 확인 범위를 구분했습니다. 제품 전체 검증 완료 표지가 아닙니다.',
+    sources: [
+      {
+        label: '한국 공식 kr-running',
+        url: 'https://diadorakorea.com/project/%EB%9F%AC%EB%8B%9D%ED%99%94/615/',
+        note: 'opened_original_cached_body; 정확 모델명별 SKU·판매가·할인판매가와 여성 별도 상품 확인. 리스트 전반 SOLD OUT 표시는 캐시 템플릿이며 현재 재고 판정에 사용하지 않음.',
+      },
+      {
+        label: '한국 공식 kr-shoes',
+        url: 'https://diadorakorea.com/project/shoes/459/',
+        note: 'opened_original_cached_body; Volo5 ORANGE/WHITE 및 여성 WHITE, Frequenza2 여성 PINK의 코드와 정가·할인가 확인. footer는 하이라이트브랜즈의 Diadora 라이선스 공식몰임을 명시.',
+      },
+      {
+        label: 'RunRepeat 동세대 실험실 원문',
+        url: 'https://runrepeat.com/diadora-mythos-blushield-volo-5',
+        note: '공시 일반 검체 정책은 남성 US9. 실제 검체 라벨·폭 미확인. 281g·40/28.8mm·11.2mm. 20HA는 구방식이며AC 미확인입니다. 국소 고무 마모0.8mm와 어퍼 시험을600km 수명으로 바꾸지 않습니다. 한국 와이드 부재·평발 최적·고정 페이스·공통 비용을 제거했습니다.',
+      },
+      {
+        label: 'RunRepeat 측정법',
+        url: 'https://runrepeat.com/testing-methodology',
+        note: 'AC·HA·HC, SA·에너지 리턴, BR·구방식1~5와 내부/외부 폭을 구분합니다. 일반 정책은 개별 라벨 확인과 다릅니다.',
+      },
+    ],
+    limitations: [
+      '모델별 임상 예방·치료 등급, 공통 최적 페이스·주행 수명·km당 비용은 미확인으로 제거했습니다.',
+      '에디터 평점·1~10점·발볼 및 계절 분류·구매 링크는 모든 항목을 새로 검증한 수치나 임상 효과가 아닙니다.',
+      '판매 조건은 확인한 상품·시점에 한정합니다. 미확인을 미출시·단종·전국 재고 없음으로 해석하지 않습니다.',
+      '정확한 동세대 DOR 개별 착화 리뷰 미확인. 다른 세대로 대체하지 않음.',
+    ],
+  },
 };

@@ -183,8 +183,16 @@ describe("추천 조건과 결과의 일관성", () => {
   });
 
   it("미검증 부상 등급을 바꾸거나 삭제해도 가감점·제외가 일어나지 않는다", () => {
-    const source = shoes.find(s => s.specs && s.price && s.injuryPrevention)!;
     const profile: UserProfile = { ...baseProfile, injuries: ['kneeIssues'], budget: 'high' };
+    // 실제 DB에서 미검증 부상 등급을 지워도 이 회귀 검증은 계속 필요하다.
+    // 현재 추천 가능한 후보에 테스트 전용 등급을 붙여 순위에 영향이 없는지 본다.
+    const source = {
+      ...recommendShoes(shoes, profile)[0],
+      injuryPrevention: {
+        plantarFasciitis: 'good' as const, achillesTendinopathy: 'good' as const,
+        kneeIssues: 'good' as const, shinSplints: 'good' as const,
+      },
+    };
     const withoutGrade = { ...source, injuryPrevention: undefined };
     const expected = recommendShoes([withoutGrade], profile)[0];
     expect(expected).toBeDefined();

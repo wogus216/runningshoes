@@ -1,7 +1,6 @@
 import type { Shoe } from '@/types/shoe';
 
-// 2026-10-20 등록 — 출처: 디아도라 한국 공식몰(diadorakorea.com, 하이라이트브랜즈 운영) 상품 5699·6469 등 판매가,
-// RunRepeat 랩 리뷰(runrepeat.com/diadora-atomo-star, 2025-08-10, 남성 US 9 시료). 점수는 랩 수치를 문서 C절 매핑에 대입.
+// 원문 재확인:2026-11-10. 확인 범위와 한계는 verification 참조.
 export const shoe: Shoe = {
   id: 'diadora-atomo-star',
   slug: 'diadora-atomo-star',
@@ -16,116 +15,138 @@ export const shoe: Shoe = {
   ],
   category: '쿠션화',
   rating: 4,
-  status: 'new',
-  price: 299000,
-  description:
-    '이탈리아에서 만드는 디아도라의 맥스 쿠션 트레이너. 힐 39.9mm 스택에 질소 주입 EVA 폼 ANIMA N2를 깔아 충격흡수(힐 149 SA)는 최상위권이지만, 반발은 50%대 중반이고 토박스가 70.8mm로 좁습니다. 한국 공식몰 정가 299,000원.',
-  oneliner: '힐 149 SA의 이탈리아산 맥스 쿠션 — 대신 토박스 70.8mm로 좁다',
-  editorComment:
-    '"오래 달려도 발바닥이 편한 신발"을 찾는 질문에 수치로는 강하게 답하는 신발입니다. RunRepeat 랩에서 충격흡수가 힐 149 SA·전족부 125 SA로 측정돼 측정 신발 중 상위권이고, 경도 14.0 HA로 평균보다 부드럽습니다. 힐 스택 39.9mm에 268g이라 같은 두께의 쿠션화 중 무거운 편은 아닙니다. Duratech 5000 아웃솔은 마모 테스트에서 0.4mm만 깎여 내구성이 좋은 쪽입니다.\n\n대신 반발은 힐 53.9%·전족부 57.4%로, RunRepeat가 "가격에 비해 부족하다"고 평가한 수준이라 템포·인터벌용은 아닙니다. 회복주·2시간 이상 이지 롱런에 맞는 성격입니다.\n\n사이즈·구매 가이드: 이 신발의 가장 큰 변수는 발볼입니다. 토박스 폭 70.8mm(RunRepeat 평균 73.2mm), 토박스 높이 22.5mm로 RunRepeat가 "측정한 것 중 가장 타이트한 축"이라고 적었고, 와이드 버전은 한국 공식몰에 없습니다. 발볼 넓은 한국 러너는 반드시 신어 보고 고르세요. 정가 299,000원은 우리 DB의 비슷한 쿠션량 신발(노바블라스트 5 169,000원, 발로스 V1 259,000원)보다 높습니다.',
-  tags: ['쿠션화', '맥스쿠션', '회복주', '롱런', '이탈리아 생산'],
-
+  description: 'ANIMA N2 질소 발포 EVA · DDATTIVO 인솔 구조의 아토모 스타. RunRepeat 실험실 검체 268g·39.9/32.1mm. 한국 현재 정가 미확인.',
+  oneliner: 'ANIMA N2 질소 발포 EVA · DDATTIVO 인솔 · 268g (RunRepeat 실험실 검체)',
+  editorComment: '2026-11-10 원문 재확인. 한국 공식 캐시: D5153RRN01RDS 성별 명시 미확인 정가299,000원·할인캐시199,000원; D5153RRN01BLK 성별 명시 미확인 정가299,000원·할인캐시284,050원; D6353RRN01BLS 성별 명시 미확인 정가299,000원·할인캐시284,050원; D6153RRN01BLK 성별 명시 미확인 정가299,000원·할인캐시209,300원. 현재 가격·폭·선택 재고는 미확인입니다. 공통SOLD OUT·장바구니·사이즈 목록을 현재 재고로 보지 않습니다. SKU숫자로 성별을 추정하지 않습니다. DOR 소개275g(남성US9)/210g(여성US8)·46/40mm·6mm, RR 재전재 브랜드40/34mm·6mm와 실제268g·39.9/32.1mm·7.8mm를 나눕니다. 14HA는 구방식이며AC는 미확인입니다. RR의 적응 불필요와 Matt의 적응 경험은 다릅니다.0.4mm 국소 마모를650km로 바꾸지 않으며2시간 이상 회복주 처방·한국 와이드 부재를 제거했습니다. DOR 직접403 뒤 원문 캐시에서 Matt는 낮고 좁은 앞발·강한 토가드의 초기 압박과 여유 있어 미끄러지는 힐, 레이스락 필요성을 적었습니다.25~30마일 뒤 앞쪽이 편해졌다는 것은 개인 관찰로 모두의 적응 규칙이 아닙니다. 실제 검체 사이즈는 미확인입니다. RR 내부 최광폭 89.4mm·엄지 70.8mm·높이 22.5mm입니다. 다른 위치인 외부 바닥 폭과 구분하고 실제 규격·양말에서 고정을 확인하세요. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
+  tags: [
+    '쿠션화',
+    '맥스쿠션',
+    '회복주',
+    '롱런',
+    '이탈리아 생산',
+  ],
   specs: {
     weight: 268,
     cushioning: 9,
     responsiveness: 7,
     stability: 7,
-    drop: 8,
-    durability: 650,
+    drop: 7.8,
   },
-
   biomechanics: {
-    stackHeight: { heel: 39.9, forefoot: 32.1 },
-    drop: 8,
+    stackHeight: {
+      heel: 39.9,
+      forefoot: 32.1,
+    },
+    drop: 7.8,
     carbonPlate: false,
     plateType: null,
-    midsoleType: 'ANIMA N2 (질소 주입 EVA)',
-    optimalPace: '5:30-7:30 min/km (이지·롱런·회복주)',
+    midsoleType: 'ANIMA N2 질소 발포 EVA · DDATTIVO 인솔',
   },
-
-  injuryPrevention: {
-    plantarFasciitis: 'good',
-    achillesTendinopathy: 'good',
-    kneeIssues: 'good',
-    shinSplints: 'good',
-  },
-
   koreanFootFit: {
     toBoxWidth: 'narrow',
-    flatFootCompatibility: 'fair',
-    wideOptions: false,
     winterCompatibility: 'good',
     summerCompatibility: 'fair',
   },
-
   targetUsers: {
     recommended: [
-      '회복주·이지 롱런용 맥스 쿠션을 찾는 러너',
-      '발볼이 좁거나 발등이 낮은 러너',
-      '아웃솔 내구성을 중시하는 러너',
+      '실제 규격에서 낮은 앞코·중족·힐 고정을 비교하려는 러너',
+      '공시·랩·개인 체감과 원문 상충을 구분하려는 러너',
     ],
     notRecommended: [
-      '발볼이 넓은 러너 (토박스 70.8mm, 와이드 없음)',
-      '템포·인터벌 겸용 신발을 찾는 러너 (반발 53.9~57.4%)',
-      '30만 원 가까운 예산이 부담인 러너',
+      '시착에서 압박·마찰·불편한 전환이 남는 경우',
+      '국소 마모·개인 경험을 공통 수명·임상 효과로 읽는 경우',
     ],
   },
-
   features: [
-    'ANIMA N2 미드솔 — 충격흡수 힐 149 SA·전족부 125 SA (RunRepeat)',
-    '힐 39.9mm / 전족부 32.1mm 스택, 실측 드롭 7.8mm',
-    'Duratech 5000 아웃솔 — 마모 0.4mm, 고무 두께 3.5mm',
-    'DDATTIVO 인솔(힐 7.5mm) · 혀 패딩 11.0mm',
-    '이탈리아 생산 (RunRepeat "Made in Italy")',
-    '에너지 리턴 전족부 57.4% (RunRepeat 실측)',
+    'ANIMA N2 질소 발포 EVA · DDATTIVO 인솔',
+    '268g · 39.9/32.1mm · 드롭 7.8mm (RunRepeat 실험실 검체)',
+    '플레이트 없는 구조입니다. 큰 로커와 사이드월의 가이드 체감이 질환 교정·회복을 입증하지 않습니다.',
+    'RR 내부 최광폭 89.4mm·엄지 70.8mm·높이 22.5mm입니다. 다른 위치인 외부 바닥 폭과 구분하고 실제 규격·양말에서 고정을 확인하세요.',
   ],
-
   priceAnalysis: {
-    msrp: 299000,
-    costPerKm: 460,
     valueRating: 4,
     priceTier: 'premium',
-    alternatives: ['asics-novablast-5', 'new-balance-balos-v1'],
-    valueAdvantages: [
-      '충격흡수 힐 149 SA — 측정 신발 중 상위권 (RunRepeat)',
-      '아웃솔 마모 0.4mm로 내구성이 좋은 편',
-      '스택 39.9mm 대비 268g으로 두께 대비 가벼운 편',
+    alternatives: [
+      'asics-novablast-5',
+      'new-balance-balos-v1',
     ],
   },
-
   detailedSpecs: {
-    weight: '268g (RunRepeat 실측, 남성 US 9) / 브랜드 공칭 275g',
-    stackHeight: '힐 39.9mm / 전족부 32.1mm (RunRepeat 실측) — 브랜드 공칭 40/34mm',
-    drop: '7.8mm (실측) — 브랜드 공칭 6mm',
-    midsole: 'ANIMA N2 (질소 주입 EVA) — 경도 14.0 HA, 반발 힐 53.9% / 전족부 57.4%',
-    plate: '없음',
-    outsole: 'Duratech 5000 고무, 두께 3.5mm, 마모 0.4mm (RunRepeat 드레멜 테스트)',
-    upper: '하드 오버레이가 있는 레트로 디자인 어퍼, 혀 패딩 11.0mm',
-    width: '좁음 — 토박스 폭 70.8mm·높이 22.5mm (RunRepeat, 남성 US 9). RunRepeat: "The snug fit of the Atomo Star extends into the toebox"',
-    durability: '550~750km — 아웃솔 마모 0.4mm로 우수, 힐 패딩 내구성은 RunRepeat "Bad"',
-    price: '₩299,000 (2026-10-20 디아도라 한국 공식몰 확인)',
-    costPerKm: '약 ₩460/km (내구성 범위 중간값 기준)',
-    footType: '중립 발',
-    landingPattern: 'MFS/FFS (RunRepeat 표기) — 힐 로커가 있어 RFS 전환도 부드러운 편',
+    weight: '268g (RunRepeat 실험실 검체). DOR 소개275g(남성US9)/210g(여성US8)·46/40mm·6mm, RR 재전재 브랜드40/34mm·6mm와 실제268g·39.9/32.1mm·7.8mm를 나눕니다.',
+    stackHeight: '39.9/32.1mm (RunRepeat 실험실 검체, 힐/전족부). 출처별 다른 공시는 무게 항목 참조.',
+    drop: '7.8mm (RunRepeat 실험실 검체). DOR 소개275g(남성US9)/210g(여성US8)·46/40mm·6mm, RR 재전재 브랜드40/34mm·6mm와 실제268g·39.9/32.1mm·7.8mm를 나눕니다.',
+    midsole: 'ANIMA N2 질소 발포 EVA · DDATTIVO 인솔. 폼 경도 14 HA (구방식), AC 미확인. 힐/전족부 SA 149/125·에너지 리턴 53.9/57.4%. 14HA는 구방식이며AC는 미확인입니다. RR의 적응 불필요와 Matt의 적응 경험은 다릅니다.0.4mm 국소 마모를650km로 바꾸지 않으며2시간 이상 회복주 처방·한국 와이드 부재를 제거했습니다.',
+    plate: '플레이트 없는 구조입니다. 큰 로커와 사이드월의 가이드 체감이 질환 교정·회복을 입증하지 않습니다.',
+    width: 'RR 내부 최광폭 89.4mm·엄지 부위 70.8mm·높이 22.5mm. RR 내부 최광폭 89.4mm·엄지 70.8mm·높이 22.5mm입니다. 다른 위치인 외부 바닥 폭과 구분하고 실제 규격·양말에서 고정을 확인하세요.',
+    durability: '검증된 공통 수명 km 미확인. 국소 마모·짧은 착화 후기를 주행 수명으로 환산하지 않습니다.',
+    price: '한국 공식 캐시: D5153RRN01RDS 성별 명시 미확인 정가299,000원·할인캐시199,000원; D5153RRN01BLK 성별 명시 미확인 정가299,000원·할인캐시284,050원; D6353RRN01BLS 성별 명시 미확인 정가299,000원·할인캐시284,050원; D6153RRN01BLK 성별 명시 미확인 정가299,000원·할인캐시209,300원. 현재 가격·폭·선택 재고는 미확인입니다. 공통SOLD OUT·장바구니·사이즈 목록을 현재 재고로 보지 않습니다. SKU숫자로 성별을 추정하지 않습니다.',
   },
-
   reviews: [
     {
-      userType: '예상 적합 — 강훈련 다음 날 회복주를 뛰는 러너',
-      text: '충격흡수가 힐 149 SA·전족부 125 SA로 높고 경도 14.0 HA로 부드러워, 다리가 무거운 날 천천히 뛰는 회복주에 맞는 수치입니다. 힐 쪽 로커가 일찍 시작돼 착지 후 굴러가는 전환이 부드러운 구조입니다. 반발이 50%대 중반이라 페이스를 올리면 밀어주는 느낌은 약할 가능성이 높으니, 빠른 훈련용 신발은 따로 두는 편이 맞습니다.',
+      userType: '원문 기반 에디터 분석',
+      source: 'editor',
+      sourceUrl: 'https://runrepeat.com/diadora-atomo-star',
+      text: 'DOR 소개275g(남성US9)/210g(여성US8)·46/40mm·6mm, RR 재전재 브랜드40/34mm·6mm와 실제268g·39.9/32.1mm·7.8mm를 나눕니다. 14HA는 구방식이며AC는 미확인입니다. RR의 적응 불필요와 Matt의 적응 경험은 다릅니다.0.4mm 국소 마모를650km로 바꾸지 않으며2시간 이상 회복주 처방·한국 와이드 부재를 제거했습니다.',
     },
     {
-      userType: '예상 적합 — 발볼이 좁은 장거리 이지런 러너',
-      text: '토박스 폭 70.8mm, 높이 22.5mm로 앞쪽 공간이 좁은 편이라, 다른 신발에서 앞발이 노는 게 불편했던 좁은 발에는 잘 맞을 수 있습니다. 혀 패딩이 11.0mm로 두껍고 인솔도 힐 7.5mm라 발등과 뒤꿈치를 감싸는 쪽입니다. 반대로 발볼이 넓거나 발가락이 높은 발이라면 2시간 넘는 롱런에서 앞쪽 압박이 생길 수 있고 와이드 선택지도 없어, 구매 전 시착이 필수입니다.',
-    },
-    {
-      userType: '예상 적합 — 아웃솔 마모가 적은 쿠션화를 오래 신으려는 러너',
-      text: 'RunRepeat 랩에서 아웃솔 마모가 0.4mm로 랩 평균 1.1mm의 절반에도 못 미쳐, 아웃솔 수명을 중시하는 러너에게 맞을 가능성이 있습니다. 토박스 내구성은 3/5로 무난하지만 통기성도 3/5라 가장 더운 날에는 발이 더울 수 있다고 랩이 지적했습니다. 접지 계수는 0.50으로 랩 평균 0.53보다 약간 낮고, 268g은 랩 평균 261g보다 7g 무거운 수준입니다. 랩의 단점 목록에는 에너지 리턴 부족과 높은 가격이 함께 올라 있습니다.',
+      userType: '외부 착화 의견 요약 · Doctors of Running',
+      source: 'editor',
+      sourceUrl: 'https://www.doctorsofrunning.com/diadora-atomo-star-review-2025/',
+      text: 'DOR 직접403 뒤 원문 캐시에서 Matt는 낮고 좁은 앞발·강한 토가드의 초기 압박과 여유 있어 미끄러지는 힐, 레이스락 필요성을 적었습니다.25~30마일 뒤 앞쪽이 편해졌다는 것은 개인 관찰로 모두의 적응 규칙이 아닙니다. 실제 검체 사이즈는 미확인입니다.',
     },
   ],
-
-  similarShoes: ['new-balance-balos-v1', 'asics-novablast-5', 'nike-vomero-premium'],
+  similarShoes: [
+    'new-balance-balos-v1',
+    'asics-novablast-5',
+    'nike-vomero-premium',
+  ],
   purchaseLinks: [
-    { store: '디아도라 공식몰', url: 'https://www.diadorakorea.com/product/detail.html?product_no=5699', price: 299000, isOfficial: true },
+    {
+      store: '디아도라 공식몰',
+      url: 'https://www.diadorakorea.com/product/detail.html?product_no=5699',
+      price: 299000,
+      isOfficial: true,
+    },
   ],
+  verification: {
+    checkedAt: '2026-11-10',
+    scope: '한국 상품 조건, 해외 실험실·제조사 공시와 외부 착화 의견의 확인 범위를 구분했습니다. 제품 전체 검증 완료 표지가 아닙니다.',
+    sources: [
+      {
+        label: '한국 공식 kr-running',
+        url: 'https://diadorakorea.com/project/%EB%9F%AC%EB%8B%9D%ED%99%94/615/',
+        note: 'opened_original_cached_body; 정확 모델명별 SKU·판매가·할인판매가와 여성 별도 상품 확인. 리스트 전반 SOLD OUT 표시는 캐시 템플릿이며 현재 재고 판정에 사용하지 않음.',
+      },
+      {
+        label: '한국 공식 kr-118',
+        url: 'https://www.diadorakorea.com/product/list.html?cate_no=118',
+        note: 'opened_original_cached_body; Atomo Star BLUE D6353RRN01BLS 299000/284050. 협업 DROMO 상품은 별도 변형으로 제외.',
+      },
+      {
+        label: '한국 공식 kr-182',
+        url: 'https://diadorakorea.com/product/list.html?cate_no=182',
+        note: 'opened_original_cached_body; 동일 Atomo Star BLUE 299000/284050. BLACK D6153RRN01BLK 299000/209300. 현재 가격·재고는 미검증.',
+      },
+      {
+        label: 'RunRepeat 동세대 실험실 원문',
+        url: 'https://runrepeat.com/diadora-atomo-star',
+        note: '공시 일반 검체 정책은 남성 US9. 실제 검체 라벨·폭 미확인. 268g·39.9/32.1mm·7.8mm. 14HA는 구방식이며AC는 미확인입니다. RR의 적응 불필요와 Matt의 적응 경험은 다릅니다.0.4mm 국소 마모를650km로 바꾸지 않으며2시간 이상 회복주 처방·한국 와이드 부재를 제거했습니다.',
+      },
+      {
+        label: 'Doctors of Running 동세대 원문',
+        url: 'https://www.doctorsofrunning.com/diadora-atomo-star-review-2025/',
+        note: 'DOR 소개275g(남성US9)/210g(여성US8)·46/40mm·6mm, RR 재전재 브랜드40/34mm·6mm와 실제268g·39.9/32.1mm·7.8mm를 나눕니다.',
+      },
+      {
+        label: 'RunRepeat 측정법',
+        url: 'https://runrepeat.com/testing-methodology',
+        note: 'AC·HA·HC, SA·에너지 리턴, BR·구방식1~5와 내부/외부 폭을 구분합니다. 일반 정책은 개별 라벨 확인과 다릅니다.',
+      },
+    ],
+    limitations: [
+      '모델별 임상 예방·치료 등급, 공통 최적 페이스·주행 수명·km당 비용은 미확인으로 제거했습니다.',
+      '에디터 평점·1~10점·발볼 및 계절 분류·구매 링크는 모든 항목을 새로 검증한 수치나 임상 효과가 아닙니다.',
+      '판매 조건은 확인한 상품·시점에 한정합니다. 미확인을 미출시·단종·전국 재고 없음으로 해석하지 않습니다.',
+    ],
+  },
 };

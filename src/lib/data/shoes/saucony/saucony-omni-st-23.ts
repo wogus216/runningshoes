@@ -1,126 +1,131 @@
 import type { Shoe } from '@/types/shoe';
 
+// 원문 재확인:2026-11-10. 확인 범위와 한계는 verification 참조.
 export const shoe: Shoe = {
   id: 'saucony-omni-st-23',
   slug: 'saucony-omni-st-23',
   brand: 'Saucony',
   name: '옴니 ST 23',
   image: '/images/shoes/saucony/omnist23/side.jpg',
-  images: ['/images/shoes/saucony/omnist23/side.jpg'],
+  images: [
+    '/images/shoes/saucony/omnist23/side.jpg',
+  ],
   category: '안정화',
   rating: 4.4,
-  status: 'new',
-  price: 199000,
-  description:
-    '써코니가 직접 "최상급 프리미엄 안정화"로 부르는 2026년 현행 모델. PWRRUN PB 상단과 단단한 PWRRUN 하단 사이에 TPU 스태빌리티 프레임을 끼워 미드풋 지지 아치를 만든, 과내전 러너용 플래그십입니다.',
-  oneliner: 'TPU 스태빌리티 프레임 + PEBA 듀얼 폼 — 써코니 안정화의 최상위',
-  editorComment:
-    '써코니 안정화를 "가이드"로만 알고 있었다면 갱신이 필요합니다. 옴니 ST 23은 브랜드가 상품 설명에서 직접 "과내전 러너를 위해 설계된 최상급 프리미엄 안정화"라고 부르는 유일한 현행 모델이고, 써코니 미국 사이트의 Stability 카테고리에도 이 모델이 올라 있습니다. 구조가 가이드와 다릅니다 — 가이드 19가 CENTERPATH로 발의 경로를 "유도"한다면, 옴니 ST 23은 두 폼 층 사이에 TPU 프레임을 물리적으로 끼워 미드풋을 받칩니다. 그만큼 지지가 직접적이고, 286g으로 써코니 로드 라인 중 무거운 축입니다.\n\n주의할 점은 드롭입니다. 가이드 19가 6mm인데 옴니 ST 23은 8mm라, 가이드에서 갈아타면 뒤꿈치가 2mm 높아집니다. 종아리·아킬레스 쪽 감각이 달라질 수 있으니 첫 주는 거리를 줄여 적응하세요.\n\n사이즈·구매 가이드: 국내 공식몰 유통 물량이 4개 컬러웨이뿐인데 그중 3개가 와이드라, 발볼이 넓은 평발 러너에게는 오히려 구하기 쉬운 구성입니다. 정가 199,000원, 500km 기준 km당 약 398원. 같은 최상급 안정화로는 젤 카야노 32·아드레날린 GTS 25가 대안입니다.',
-  tags: ['안정화', '과내전', '프리미엄', '평발'],
-
+  description: 'PWRRUN PB · TPU 지지 프레임 · 폼 설명 상충 구조의 옴니 ST 23. DOR 소개 공시 · 독립 랩 미확인 286g·40/32mm. 한국 현재 정가 미확인.',
+  oneliner: 'PWRRUN PB · TPU 지지 프레임 · 폼 설명 상충 · 286g (DOR 소개 공시 · 독립 랩 미확인)',
+  editorComment: '2026-11-10 원문 재확인. 한국 공식 캐시: Men S21072-101 M(일반) 표시199,000원; Men S21073-103 W(와이드) 표시199,000원; Women S11073-100 W(와이드) 표시199,000원. 현재 가격·선택 재고·숫자 폭 규격은 미확인입니다. 일반 사이즈 환산표·공통2E/4E 내비게이션·장바구니 버튼을 정확 모델 재고나 폭 증거로 쓰지 않습니다. DOR 소개286g(남성US9)/252g(여성US8)·40/32mm·8mm와 실제테스터US10을 구분합니다. 정확 RR 랩은 미확인이고 소개를 한국 공식·독립 실측으로 쓰지 않습니다. 한국M/W와 DOR 미확인 폭 검체를 같은 규격으로 보지 않습니다. 과내전 최상급·첫 주 거리 감소 처방·500km·할인 없음·국내4종 전수라는 단정을 이번 표본으로 반복하지 않습니다. DOR Matt(남성US10)는 조금 넓지만 테이퍼·오버레이가 있는 정사이즈와 느슨한 힐 때문에 매번 끈을 다시 조였다고 적었습니다. 두꺼운 거싯 혀와 힐/중족TPU프레임·더 유연한 앞발의 부드러운 탄성을 이지·롱런·일부 업템포에서 즐겼습니다.70마일은 제품 수명이 아닙니다. 정확 모델의 독립 내부 치수는 미확인입니다. 실제 상품에서 앞코 높이·길이·발등과 힐 고정을 확인하세요. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
+  tags: [
+    '안정화',
+    '프리미엄',
+  ],
   specs: {
     weight: 286,
     cushioning: 8,
     responsiveness: 6,
     stability: 9,
     drop: 8,
-    durability: 500,
   },
-
-  biomechanics: {
-    stackHeight: { heel: 40, forefoot: 32 },
-    drop: 8,
-    carbonPlate: false,
-    plateType: null,
-    midsoleType: 'PWRRUN PB + PWRRUN + TPU 스태빌리티 프레임',
-    optimalPace: '5:30-7:30 min/km',
-  },
-
-  injuryPrevention: {
-    plantarFasciitis: 'excellent',
-    achillesTendinopathy: 'caution',
-    kneeIssues: 'excellent',
-    shinSplints: 'good',
-  },
-
   koreanFootFit: {
     toBoxWidth: 'standard',
-    flatFootCompatibility: 'excellent',
-    wideOptions: true,
     winterCompatibility: 'good',
     summerCompatibility: 'fair',
   },
-
   priceAnalysis: {
-    msrp: 199000,
-    streetPrice: 199000,
-    costPerKm: 398,
     valueRating: 7,
     priceTier: 'premium',
-    alternatives: ['saucony-guide-19', 'saucony-hurricane-26', 'asics-gel-kayano-32'],
-    valueAdvantages: [
-      '브랜드가 직접 "최상급 프리미엄 안정화"로 표기하는 유일한 현행 모델',
-      'TPU 스태빌리티 프레임 — 유도형이 아닌 직접 지지 구조',
-      '국내 유통 4종 중 3종이 와이드 — 넓은 발볼 접근성이 좋음',
-      '카야노 32(199,000원)와 동일 가격대에서 선택지 제공',
+    alternatives: [
+      'saucony-guide-19',
+      'saucony-hurricane-26',
+      'asics-gel-kayano-32',
     ],
   },
-
   targetUsers: {
     recommended: [
-      '과내전(과회내전)이 뚜렷한 러너',
-      '가이드 19로는 지지가 부족하다고 느낀 러너',
-      '신발 안쪽 뒤꿈치가 유독 빨리 닳는 러너',
-      '평발 + 넓은 발볼로 와이드 안정화를 찾는 러너',
+      '실제 규격에서 낮은 앞코·중족·힐 고정을 비교하려는 러너',
+      '공시·랩·개인 체감과 원문 상충을 구분하려는 러너',
     ],
     notRecommended: [
-      '중립 러너 (불필요한 지지로 이물감)',
-      '가벼운 신발을 원하는 러너 (286g)',
-      '낮은 드롭에 익숙한 러너 (8mm)',
-      '컬러 선택지를 중시하는 러너 (국내 4종뿐)',
+      '시착에서 압박·마찰·불편한 전환이 남는 경우',
+      '국소 마모·개인 경험을 공통 수명·임상 효과로 읽는 경우',
     ],
   },
-
   features: [
-    '써코니 공식 "최상급 프리미엄 안정화" — Stability 카테고리 등재 모델',
-    'TPU 스태빌리티 프레임이 두 폼 층 사이에서 미드풋 지지 아치 형성',
-    'PWRRUN PB(PEBA) 상단 + 단단한 PWRRUN 하단 듀얼 폼',
-    '스택 40/32mm · 드롭 8mm — 가이드 19(6mm)보다 2mm 높음',
-    '국내 정가 199,000원 · 유통 4종 중 3종이 와이드',
+    'PWRRUN PB · TPU 지지 프레임 · 폼 설명 상충',
+    '286g · 40/32mm · 드롭 8mm (DOR 소개 공시 · 독립 랩 미확인)',
+    '한국 공식은 PB+HG 두 폼을, DOR은 전장PB와 큰TPU 지지 프레임을 설명합니다. 불완전·상충하는 폼 설명을100%PB/HG·PWRRUN하층으로 단정하지 않습니다. 프레임과 카본 레이싱판은 별개이며 별도 플레이트 유무는 미확인입니다.',
+    '정확 모델의 독립 내부 치수는 미확인입니다. 실제 상품에서 앞코 높이·길이·발등과 힐 고정을 확인하세요.',
   ],
-
   reviews: [
     {
-      userType: '에디터 분석',
-      rating: 86,
-      text: '옴니 ST 23의 성격은 "유도"가 아니라 "지지"입니다. 가이드 19의 CENTERPATH가 미드솔 형상과 넓은 베이스로 발이 가운데 경로를 지나도록 유도하는 방식이라면, 옴니 ST 23은 PWRRUN PB와 PWRRUN 사이에 TPU 프레임을 물리적으로 끼워 미드풋을 직접 받칩니다. 그래서 과내전이 뚜렷한 러너에게는 확실히 체감되지만, 지지가 필요 없는 러너에게는 이물감으로 남습니다. 286g의 무게도 이 구조의 대가입니다. PEBA 계열 폼을 상단에 써서 예전 최상급 안정화들처럼 딱딱하지는 않다는 점이 2026년형의 개선점입니다.',
+      userType: '원문 기반 에디터 분석',
+      source: 'editor',
+      sourceUrl: 'https://www.doctorsofrunning.com/saucony-omni-23-st-review-2026/',
+      text: 'DOR 소개286g(남성US9)/252g(여성US8)·40/32mm·8mm와 실제테스터US10을 구분합니다. 정확 RR 랩은 미확인이고 소개를 한국 공식·독립 실측으로 쓰지 않습니다. 한국M/W와 DOR 미확인 폭 검체를 같은 규격으로 보지 않습니다. 과내전 최상급·첫 주 거리 감소 처방·500km·할인 없음·국내4종 전수라는 단정을 이번 표본으로 반복하지 않습니다.',
     },
     {
-      userType: '가이드 19와 비교 — 강도와 드롭이 갈린다',
-      text: '같은 써코니 안정화 계열이지만 겨냥하는 발이 다릅니다. 브랜드 설명 기준 가이드 19는 "약내전 러너에게도" 편안한 데일리이고, 옴니 ST 23은 "과내전 러너를 위한" 최상급입니다. 수치로도 갈립니다 — 브랜드 표기로 가이드 19가 275g·35/29mm·드롭 6mm, 옴니 ST 23이 286g·40/32mm·드롭 8mm입니다(가이드 19의 RunRepeat 실측은 298g). 표기 기준으로 옴니가 11g 무겁고 스택은 5mm 높으며 뒤꿈치가 2mm 더 들립니다. 가이드에서 옴니로 옮기면 발밑이 두꺼워지고 뒤꿈치가 높아지는 두 변화를 동시에 받는 셈이라, 첫 주는 거리를 줄여 적응하는 편이 안전합니다.',
-    },
-    {
-      userType: '발볼·유통 적합성 — 와이드가 오히려 흔하다',
-      text: '국내 공식몰 기준 옴니 ST 23은 4개 컬러웨이가 유통되는데 그중 3개가 와이드입니다(2026-10-20 재확인). 대부분의 모델이 표준 폭 위주로 풀리고 와이드가 소수인 것과 정반대 구성이라, 발볼 넓은 평발 러너에게는 접근성이 좋습니다. 반대로 표준 폭에 특정 색을 원한다면 선택지가 사실상 하나입니다. 지지력은 필요한데 발볼까지 넓다면 가이드 19의 엑스트라 와이드와 함께 놓고 비교해볼 만합니다.',
+      userType: '외부 착화 의견 요약 · Doctors of Running',
+      source: 'editor',
+      sourceUrl: 'https://www.doctorsofrunning.com/saucony-omni-23-st-review-2026/',
+      text: 'DOR Matt(남성US10)는 조금 넓지만 테이퍼·오버레이가 있는 정사이즈와 느슨한 힐 때문에 매번 끈을 다시 조였다고 적었습니다. 두꺼운 거싯 혀와 힐/중족TPU프레임·더 유연한 앞발의 부드러운 탄성을 이지·롱런·일부 업템포에서 즐겼습니다.70마일은 제품 수명이 아닙니다.',
     },
   ],
-
   detailedSpecs: {
-    weight: '286g (남성 US 9) / 252g (여성 US 8) — 브랜드 공식',
-    stackHeight: '힐 40mm / 포어풋 32mm (브랜드 공식)',
-    drop: '8mm (브랜드 공식)',
-    midsole: 'PWRRUN PB(상단) + PWRRUN(하단) + TPU 스태빌리티 프레임',
-    plate: '없음 (TPU 지지 프레임은 플레이트가 아닌 안정화 구조)',
-    outsole: '러버 아웃솔',
-    upper: '엔지니어드 메쉬',
-    width: '표준 · 와이드 — 국내 유통 4종 중 3종이 와이드',
-    durability: '500km+',
-    price: '199,000원 (2026-10-20 써코니코리아 공식몰 확인, 할인 없음)',
-    costPerKm: '약 ₩398/km (500km 기준)',
-    footType: '과내전(과회내전) / 평발',
-    landingPattern: '힐스트라이크 중심',
+    weight: '286g (DOR 소개 공시 · 독립 랩 미확인). DOR 소개286g(남성US9)/252g(여성US8)·40/32mm·8mm와 실제테스터US10을 구분합니다. 정확 RR 랩은 미확인이고 소개를 한국 공식·독립 실측으로 쓰지 않습니다.',
+    stackHeight: '40/32mm (DOR 소개 공시 · 독립 랩 미확인, 힐/전족부). 출처별 다른 공시는 무게 항목 참조.',
+    drop: '8mm (DOR 소개 공시 · 독립 랩 미확인). DOR 소개286g(남성US9)/252g(여성US8)·40/32mm·8mm와 실제테스터US10을 구분합니다. 정확 RR 랩은 미확인이고 소개를 한국 공식·독립 실측으로 쓰지 않습니다.',
+    midsole: 'PWRRUN PB · TPU 지지 프레임 · 폼 설명 상충. 독립 랩 SA·에너지 리턴·AC/HA 미확인. 한국M/W와 DOR 미확인 폭 검체를 같은 규격으로 보지 않습니다. 과내전 최상급·첫 주 거리 감소 처방·500km·할인 없음·국내4종 전수라는 단정을 이번 표본으로 반복하지 않습니다.',
+    plate: '한국 공식은 PB+HG 두 폼을, DOR은 전장PB와 큰TPU 지지 프레임을 설명합니다. 불완전·상충하는 폼 설명을100%PB/HG·PWRRUN하층으로 단정하지 않습니다. 프레임과 카본 레이싱판은 별개이며 별도 플레이트 유무는 미확인입니다.',
+    width: '동세대 독립 랩 내부 치수 미확인. 정확 모델의 독립 내부 치수는 미확인입니다. 실제 상품에서 앞코 높이·길이·발등과 힐 고정을 확인하세요.',
+    durability: '검증된 공통 수명 km 미확인. 국소 마모·짧은 착화 후기를 주행 수명으로 환산하지 않습니다.',
+    price: '한국 공식 캐시: Men S21072-101 M(일반) 표시199,000원; Men S21073-103 W(와이드) 표시199,000원; Women S11073-100 W(와이드) 표시199,000원. 현재 가격·선택 재고·숫자 폭 규격은 미확인입니다. 일반 사이즈 환산표·공통2E/4E 내비게이션·장바구니 버튼을 정확 모델 재고나 폭 증거로 쓰지 않습니다.',
   },
-
-  similarShoes: ['saucony-guide-19', 'saucony-hurricane-26', 'asics-gel-kayano-32'],
-  purchaseLinks: [{ store: '네이버', url: 'https://search.shopping.naver.com/search/all?query=써코니+옴니+ST+23' }],
+  similarShoes: [
+    'saucony-guide-19',
+    'saucony-hurricane-26',
+    'asics-gel-kayano-32',
+  ],
+  purchaseLinks: [
+    {
+      store: '네이버',
+      url: 'https://search.shopping.naver.com/search/all?query=써코니+옴니+ST+23',
+    },
+  ],
+  verification: {
+    checkedAt: '2026-11-10',
+    scope: '한국 상품 조건, 해외 실험실·제조사 공시와 외부 착화 의견의 확인 범위를 구분했습니다. 제품 전체 검증 완료 표지가 아닙니다.',
+    sources: [
+      {
+        label: '한국 공식 S21072-101',
+        url: 'https://www.saucony.co.kr/product/detail.html?cate_no=226&display_group=1&product_no=289',
+        note: '캐시 5 days ago; M/W숫자규격·현재선택재고 미확인.',
+      },
+      {
+        label: '한국 공식 S21073-103',
+        url: 'https://saucony.co.kr/product/detail.html?cate_no=173&display_group=1&product_no=288',
+        note: '캐시 today; M/W숫자규격·현재선택재고 미확인.',
+      },
+      {
+        label: '한국 공식 S11073-100',
+        url: 'https://saucony.co.kr/product/여성-옴니-st-23-와이드-blacksilver/287/',
+        note: '캐시 2 months ago; M/W숫자규격·현재선택재고 미확인.',
+      },
+      {
+        label: 'Doctors of Running 동세대 원문',
+        url: 'https://www.doctorsofrunning.com/saucony-omni-23-st-review-2026/',
+        note: 'DOR 소개286g(남성US9)/252g(여성US8)·40/32mm·8mm와 실제테스터US10을 구분합니다. 정확 RR 랩은 미확인이고 소개를 한국 공식·독립 실측으로 쓰지 않습니다.',
+      },
+      {
+        label: 'RunRepeat 측정법',
+        url: 'https://runrepeat.com/testing-methodology',
+        note: 'AC·HA·HC, SA·에너지 리턴, BR·구방식1~5와 내부/외부 폭을 구분합니다. 일반 정책은 개별 라벨 확인과 다릅니다.',
+      },
+    ],
+    limitations: [
+      '모델별 임상 예방·치료 등급, 공통 최적 페이스·주행 수명·km당 비용은 미확인으로 제거했습니다.',
+      '에디터 평점·1~10점·발볼 및 계절 분류·구매 링크는 모든 항목을 새로 검증한 수치나 임상 효과가 아닙니다.',
+      '판매 조건은 확인한 상품·시점에 한정합니다. 미확인을 미출시·단종·전국 재고 없음으로 해석하지 않습니다.',
+      '동세대 독립 실험실 자료 미확인. 제조사 공시와 DOR 소개를 독립 실측으로 표시하지 않음.',
+    ],
+  },
 };
