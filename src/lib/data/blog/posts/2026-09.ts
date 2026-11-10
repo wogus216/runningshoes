@@ -2,127 +2,37 @@ import type { BlogPost } from '@/types/blog';
 
 export const posts_2026_09: BlogPost[] = [
   {
-    id: 'skechers-aero-burst-slip-ins-review-2026',
-    slug: 'skechers-aero-burst-slip-ins-review-2026',
-    title:
-      '스케쳐스 에어로 버스트 슬립인스 리뷰 | 21만 9천 원, 발볼 넓은 러너도 괜찮을까?',
-    description:
-      '스케쳐스 에어로 버스트 슬립인스는 219,000원짜리 맥스쿠션 러닝화입니다. 협찬 착화 후기와 RunRepeat·Doctors of Running 실측을 나눠 보고, 발볼·무게·러닝 페이스별로 살 만한지 정리했습니다.',
-    thumbnail: '/images/blog/skechers-aero-burst-slip-ins-review-2026.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-09-30',
-    updatedAt: '2026-09-30',
-    category: 'review' as const,
-    readingTime: 6,
-    tags: ['스케쳐스 에어로 버스트', '에어로 버스트 슬립인스', '스케쳐스 러닝화', '맥스쿠션 러닝화', '발볼 넓은 러닝화', '러닝화 리뷰'],
+    id: "skechers-aero-burst-slip-ins-review-2026",
+    slug: "skechers-aero-burst-slip-ins-review-2026",
+    title: "에어로 버스트 슬립인스 — 21만9천원·hands-free 구조, 일반형 랩과 구분하기",
+    description: "정확 Slip-ins 한국 남녀 상품·무게·별도 뒤꿈치 구조를 확인했습니다. 일반 Aero Burst의 RR·DOR·RTR 수치를 전용하지 않았습니다.",
+    thumbnail: "/images/blog/verified-skechers-aero-burst-slip-ins-20261110.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-09-30",
+    updatedAt: "2026-11-10",
+    category: "review",
+    readingTime: 8,
+    tags: [
+      "에어로 버스트 슬립인스",
+      "핏",
+      "원문 대조"
+    ],
     faqs: [
       {
-        question: '에어로 버스트 슬립인스는 안정화인가요?',
-        answer:
-          '높고 넓은 바닥과 아치핏 인솔이 안정적인 느낌을 줄 수 있지만, Doctors of Running은 일반형을 맥스쿠션 중립화로 분류합니다. 과내전을 교정하는 안정화라고 단정하기 어렵고, 안정화가 필요하다면 매장에서 직접 걸어 보고 고르세요.',
+        "question": "발볼 넓은 러너도 괜찮나요?",
+        "answer": "정확 Slip-ins의 내부 너비·한국 숫자 폭과 개별 착화 원문은 미확인입니다. 실제 발등·앞코 높이·힐 고정을 확인하세요."
       },
       {
-        question: '발볼 넓은 한국 러너도 신을 수 있나요?',
-        answer:
-          '협찬 게시물 작성자는 넉넉하다고 적었지만, RunRepeat의 일반형 실측 토박스 너비는 70.7mm로 같은 랩 평균 73.2mm보다 좁았고 Doctors of Running도 넓은 발은 먼저 신어 보라고 권합니다. 슬립인스 모델의 별도 토박스 실측은 확인되지 않았으니, 후기 하나만 보고 넓다고 판단하지 말고 시착을 권합니다.',
+        "question": "실측312g인가요?",
+        "answer": "312g은 일반형 DOR 소개입니다. Slip-ins는 한국 공시 남성270mm345g·여성230mm265g으로 구분합니다."
       },
       {
-        question: '장거리나 빠른 페이스에도 잘 맞나요?',
-        answer:
-          '높은 쿠션과 로커 구조는 편한 조깅과 롱런에 어울립니다. 다만 Doctors of Running과 Believe in the Run 모두 무게감을 단점으로 들었고, 속도를 올릴 때 반응이 둔해질 수 있다고 평가했습니다. 가벼운 템포런용 한 켤레를 찾는다면 다른 모델과 비교해 보세요.',
-      },
-      {
-        question: '슬립인스 가격은 얼마인가요?',
-        answer:
-          '2026년 9월 30일 스케쳐스 코리아 공식몰 기준 일반형은 209,000원, 슬립인스는 219,000원입니다. 색상과 사이즈별 재고 및 판매가는 구매 전에 공식몰에서 다시 확인하세요.',
-      },
+        "question": "신기 편하면 달릴 때도 편한가요?",
+        "answer": "hands-free 진입 기능과 실제 주행 고정·전환은 별개로 확인해야 합니다."
+      }
     ],
     content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>일반형 209,000원, 슬립인스 219,000원</strong> — 스케쳐스 코리아 공식몰에서 판매하는 높은 쿠션의 러닝화입니다</li>
-    <li><strong>편한 조깅·롱런용에 가까운 중립화</strong> — 브랜드는 아치핏과 넓은 바닥을 강조하지만, 전문가 리뷰는 과내전 교정 안정화가 아니라 맥스쿠션 중립화로 분류합니다</li>
-    <li><strong>발볼은 꼭 신어 보고 판단하세요</strong> — 협찬 후기는 넉넉하다고 했지만, RunRepeat 일반형 실측 토박스는 70.7mm로 평균보다 좁았습니다. 슬립인스 별도 실측은 없습니다</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">🎯</span>
-  <div class="callout-body">
-    <p class="callout-title">한 줄 결론</p>
-    <p>에어로 버스트 슬립인스는 <strong>신고 벗기 편한 높은 쿠션의 데일리 러닝화</strong>를 찾는 사람에게 후보가 됩니다. 다만 219,000원에 300g대 무게이고, 발볼이 넓은 러너에게 잘 맞는다는 실측 근거는 없습니다. 구매 전 착화가 우선입니다.</p>
-  </div>
-</div>
-
-<p>스케쳐스가 워킹화 브랜드라는 인상을 바꿀 만한 러닝화가 나왔습니다. <strong>에어로 버스트</strong>는 Hyper Burst ICE 미드솔, H형 카본 인퓨즈드 플레이트, Goodyear 아웃솔을 넣은 높은 쿠션의 트레이너입니다. 이 글은 그중 뒤꿈치 고정 장치를 적용한 <strong>슬립인스 모델</strong>이 궁금한 러너를 위해 국내 가격과 공개된 실측·리뷰를 구분해 살펴봅니다.</p>
-
-<p>먼저 자료의 범위를 분명히 할게요. 인스타그램 @daily__dear의 글은 <strong>#제품제공</strong> 표시가 있는 착화 후기입니다. 산초 에디터가 제품을 직접 테스트한 리뷰가 아니며, 후기와 외부 랩 테스트는 서로 다른 신발 버전과 조건에서 나온 자료입니다. 아래에서 협찬 후기는 작성자 경험으로, RunRepeat·Doctors of Running 수치는 일반형 리뷰로 구분합니다.</p>
-
-<h2>가격은 슬립인스 219,000원, 일반형은 209,000원</h2>
-
-<table>
-  <thead><tr><th>항목</th><th>확인한 내용</th></tr></thead>
-  <tbody>
-    <tr><td>한국 공식가</td><td>일반형 209,000원 · 슬립인스 219,000원</td></tr>
-    <tr><td>브랜드 공개 스택·드롭</td><td>힐 42mm · 앞발 36mm · 드롭 6mm</td></tr>
-    <tr><td>미드솔·아웃솔</td><td>Hyper Burst ICE · Goodyear Performance Outsole</td></tr>
-    <tr><td>구조</td><td>H형 카본 인퓨즈드 플레이트 · Hyper Arc 로커</td></tr>
-    <tr><td>무게 참고</td><td>브랜드 미국 페이지: 슬립인스 337g (남성 US 9) · 협찬 후기: 364g (280mm, 개인 측정)</td></tr>
-    <tr><td>RunRepeat 일반형 실측</td><td>322g · 힐 SA 145 · 에너지 리턴 60.3% · 토박스 70.7mm</td></tr>
-  </tbody>
-</table>
-
-<p><small>브랜드 스펙·가격: <a href="https://www.skecherskorea.co.kr/product/SP0MRCFY111" rel="noopener noreferrer">스케쳐스 코리아 에어로 버스트 슬립인스</a>, <a href="https://www.skecherskorea.co.kr/product/SP0MRCFX113" rel="noopener noreferrer">일반형 상품 페이지</a> (2026-09-30 확인). 슬립인스 무게: <a href="https://www.skechers.com/skechers-slip-ins-aero-burst/246215_BKW.html" rel="noopener noreferrer">스케쳐스 미국 공식 페이지</a> (남성 US 9 기준). 랩 수치: <a href="https://runrepeat.com/skechers-aero-burst" rel="noopener noreferrer">RunRepeat 에어로 버스트 리뷰</a>. 세 무게는 사이즈와 측정 조건, 신발 버전이 달라 서로 직접 비교할 수 없습니다.</small></p>
-
-<h2>편한 조깅과 롱런에 맞춘 높은 쿠션</h2>
-
-<p>RunRepeat가 일반형에서 측정한 힐 충격흡수는 145 SA로 해당 랩 평균 131보다 높았습니다. 힐 스택은 41.7mm, 앞발은 32.9mm였고, 힐 에너지 리턴은 60.3%입니다. 이 조합은 빠른 턴오버를 돕는 경량화보다 <strong>높은 폼과 로커로 편한 페이스를 이어 가는 맥스쿠션 트레이너</strong> 쪽에 가깝습니다.</p>
-
-<p>Doctors of Running도 편한 일상 러닝과 롱런에 쓸 수 있는 신발로 평가했습니다. 다만 페이스를 높이면 무게가 느껴지고, 빠른 구간에서 반응이 평평해진다고 지적했습니다. Believe in the Run 리뷰 역시 초반의 탄성과 넉넉한 착화감을 장점으로 꼽는 한편 무겁다는 점을 아쉬움으로 남겼습니다. 두 리뷰 모두 브랜드가 제품을 제공했다고 공개했습니다.</p>
-
-<p>따라서 주 2~3회 편한 조깅, 회복런, 롱런에 쓸 푹신한 신발을 찾는다면 후보로 볼 수 있습니다. 인터벌이나 템포런에서 가벼운 반발을 기대하거나, 한 켤레로 훈련 전부를 해결하고 싶다면 무게와 페이스 한계를 먼저 고려하세요.</p>
-
-<h2>“발볼 넉넉” 후기는 있지만, 넓은 발에 맞는다고 단정할 수는 없습니다</h2>
-
-<p>글감이 된 인스타그램 게시물은 280mm 착화에서 발볼과 발등이 넉넉했다고 전합니다. 하지만 RunRepeat의 일반형 토박스 실측은 <strong>70.7mm</strong>로 같은 랩 평균 73.2mm보다 좁았습니다. Doctors of Running도 토박스가 특별히 넓지는 않다며 발볼이 넓은 러너는 구매 전에 신어 보라고 권합니다.</p>
-
-<p>이 차이를 어느 한쪽이 틀렸다고 볼 수는 없습니다. 발 모양과 사이즈, 끈 조임, 신발 버전이 다르고, 공개 랩 데이터는 슬립인스가 아닌 일반형 기준입니다. 그래서 “한국인 발볼에도 넉넉하다”는 결론은 아직 근거가 부족합니다. 앞발이 넓거나 발등이 높은 편이라면 양발을 신어 보고, 조깅할 때 발가락이 밀리거나 뒤꿈치가 뜨지 않는지도 확인하세요.</p>
-
-<h2>안정감은 있지만, 교정용 안정화와는 다릅니다</h2>
-
-<p>높은 미드솔과 로커, 아치핏 인솔, 앞발 플레이트가 발을 받쳐 주는 느낌을 줄 수 있습니다. 다만 Doctors of Running은 에어로 버스트를 <strong>맥스쿠션 중립 트레이너</strong>로 분류합니다. 앞발 플레이트와 측벽이 높은 폼을 어느 정도 잡아 주지만, 중족부가 좁아 안정화 카테고리까지는 아니라는 설명입니다.</p>
-
-<p>아치핏이라는 이름만으로 평발이나 과내전에 필요한 지지력을 보장한다고 생각하면 곤란합니다. 안정화가 필요하거나 특정 부상 이력이 있다면 이 모델 하나로 해결하려 하지 말고, 전문점에서 달리는 동작과 착화감을 확인해 주세요.</p>
-
-<h2>누구에게 추천할까?</h2>
-
-<ul>
-  <li><strong>후보로 볼 만한 러너</strong> — 높은 쿠션과 로커가 편하고, 신고 벗기 쉬운 구조가 필요하며, 주로 편한 페이스로 달리는 사람</li>
-  <li><strong>먼저 신어 볼 러너</strong> — 앞발이 넓거나 발등이 높고, 발에 맞는 신발을 찾기 어려운 사람</li>
-  <li><strong>다른 유형을 찾을 러너</strong> — 가벼운 템포화, 빠른 반응, 과내전 교정 목적의 안정화가 필요한 사람</li>
-</ul>
-
-<p>비슷한 가격대의 쿠션화를 함께 보고 싶다면 <a href="/shoes/saucony-triumph-23">써코니 트라이엄프 23</a>, <a href="/shoes/asics-gel-nimbus-28">아식스 젤 님버스 28</a>, <a href="/shoes/hoka-bondi-9">호카 본디 9</a>의 실측과 착화 성향도 비교해 보세요. 무게와 폼 성격, 발볼은 모델마다 다르니 가격만으로 고르기보다 실제 발에 맞는지를 먼저 확인하는 편이 좋습니다.</p>
-
-<div class="callout warning">
-  <span class="callout-icon">⚠️</span>
-  <div class="callout-body">
-    <p class="callout-title">이 글의 수치가 적용되는 범위</p>
-    <p>RunRepeat의 무게·쿠션·토박스 수치는 일반형 에어로 버스트의 랩 테스트입니다. 슬립인스 모델의 별도 실측은 확인하지 못했습니다. 한국 착화 후기는 제품 제공을 받은 작성자의 경험이며, 모든 발에 같은 핏을 보장하지 않습니다.</p>
-  </div>
-</div>
-
-<h2>자주 묻는 질문</h2>
-
-<div class="faq">
-  <div class="faq-item"><p class="faq-q">에어로 버스트 슬립인스는 안정화인가요?</p><p class="faq-a">브랜드는 아치핏과 높은 바닥 구조를 강조하지만, Doctors of Running은 일반형을 맥스쿠션 중립화로 분류합니다. 교정용 안정화가 필요하다면 직접 신어 보고 판단하세요.</p></div>
-  <div class="faq-item"><p class="faq-q">발볼 넓은 러너도 괜찮나요?</p><p class="faq-a">협찬 후기는 넉넉하다고 했지만, 일반형의 RunRepeat 토박스는 70.7mm로 같은 랩 평균 73.2mm보다 좁습니다. 슬립인스 실측은 없어, 발볼이 넓다면 시착이 필요합니다.</p></div>
-  <div class="faq-item"><p class="faq-q">빠른 러닝에도 쓸 수 있나요?</p><p class="faq-a">가벼운 조깅과 롱런에 더 어울립니다. 외부 리뷰는 무게가 느껴지고 페이스를 높일 때 반응이 둔해진다고 평가했습니다.</p></div>
-  <div class="faq-item"><p class="faq-q">한국 가격은 얼마인가요?</p><p class="faq-a">2026년 9월 30일 공식몰 기준 일반형은 209,000원, 슬립인스는 219,000원입니다. 재고와 판매가는 바뀔 수 있으니 구매 전에 공식몰을 확인하세요.</p></div>
-</div>
-
-<p><small>출처: 스케쳐스 코리아 공식 상품 페이지(가격·구조·스택·드롭, 2026-09-30 확인) · RunRepeat 에어로 버스트 일반형 랩 테스트(무게·충격흡수·에너지 리턴·토박스) · Doctors of Running 및 Believe in the Run 일반형 리뷰(두 리뷰 모두 제품 제공 사실 공개) · @daily__dear 협찬 착화 후기(<a href="https://www.instagram.com/daily__dear/p/Dd4Bqr0kiv9/" rel="noopener noreferrer">원문, #제품제공</a>). 썸네일: 스케쳐스 코리아 공식 상품 이미지. 작성 2026년 9월 30일.</small></p>
+<p><strong>2026-11-10 원문 대조 업데이트.</strong> 11월9~10일 확인한 정확 모델 자료를 바탕으로 공시·검체·개인 착화 의견을 나눴습니다. 자체 착화 후기는 아닙니다.</p><h2>선택에서 먼저 볼 차이</h2><p>손을 쓰지 않고 신는 기능은 제조사의 별도 뒤꿈치·내부 설계를 확인한 구조입니다. 그러나 신고 벗기 편한 것과 달릴 때 발등·힐 고정이 맞는 것은 다른 질문입니다.</p><p>한국 남성 270mm 345g과 여성 230mm 265g은 서로 다른 공시 검체입니다. 일반 Aero Burst의 312g이나 RR 치수를 Slip-ins의 실측·발볼 근거로 넣지 않았습니다.</p><figure><img src="/images/blog/verified-skechers-aero-burst-slip-ins-20261110.webp" alt="에어로 버스트 슬립인스 제품 자료 이미지" loading="lazy"/><figcaption>한국 남성 Slip-ins SP0MRCGY102 공식 사진. 일반형 Aero Burst 랩 검체가 아닙니다.</figcaption></figure><div class="table-wrap"><table><thead><tr><th>모델</th><th>무게·측정 조건</th><th>힐/전족 스택 · 드롭</th><th>힐/전족 SA</th><th>힐/전족 리턴</th><th>내부 최광폭/엄지/높이</th></tr></thead><tbody><tr><td>에어로 버스트 슬립인스</td><td>345g · 한국 제조사 남성270mm 공시 · 독립 랩 미확인</td><td>42/36mm · 6mm</td><td>미확인/미확인</td><td>미확인/미확인%</td><td>미확인/미확인/미확인mm</td></tr></tbody></table></div><h2>표를 읽는 범위</h2><p>RR 검체와 별도 표시한 DOR 소개 공시는 다른 자료입니다. DOR 소개를 독립 랩 실측으로 표시하지 않습니다. RR 일반 정책은 남성 US9지만 개별 라벨·폭·보정 여부는 미확인이고, 실제 검체 조건이 밝혀진 경우는 본문에 남겼습니다.</p><p>SA·리턴·정적 드롭은 개인의 통증·기록·동작 중 드롭을 입증하지 않습니다. 내부 너비·높이와 한국 다른 성별·와이드 치수도 다릅니다. 미확인은 0으로 채우지 않았습니다. <a href="https://runrepeat.com/testing-methodology" target="_blank" rel="noopener noreferrer">RR 측정법</a></p><h2>슬립인스에 일반형 리뷰를 붙이면 안 되는 이유</h2><p>제조사 2025년 8월 발표는 Slip-ins를 위해 뒤꿈치 카운터와 내부를 다시 설계했다고 설명합니다. 일반형 리뷰에서 좋거나 불편했다고 느낀 앞코·열감·힐 들림을 정확 Slip-ins의 경험으로 옮길 수 없습니다.</p><p>공식 남녀 상품은 공개 표시가격 219,000원으로 확인했습니다. 회원등급 할인은 별도 조건이며 현재 모든 규격의 재고를 확인한 것은 아닙니다. Arch Fit·APMA 명칭도 모델별 질환 치료 등급으로 쓰지 않았습니다.</p><h2>에어로 버스트 슬립인스의 구조·공시</h2><p>Hyper Burst ICE(TPEE) · 카본 함유 H형 판 · Hyper Arc · Heel Pillow</p><p>제조사는 카본 함유 H형 판과 별도로 설계한 Slip-ins 뒤꿈치·내부 구조를 설명합니다. 일반 Aero Burst와 같은 착화·무게·랩 결과라고 가정하지 않습니다.</p><p>한국 공시는 남성 270mm 약 345g, 여성 230mm 약 265g,42/36mm·드롭 6mm입니다. 일반 Aero Burst의 312g·43/37mm나 RR값을 Slip-ins 실측으로 옮기지 않습니다.</p><h2>에어로 버스트 슬립인스의 실제 착화에서 갈린 점</h2><p>정확 Slip-ins의 RR 독립 랩과 DOR·RTR 착화 원문은 이번 범위에서 확보하지 못했습니다. 일반형 Nathan·RTR다인 리뷰는 다른 뒤꿈치·어퍼의 모델로, 그 편안함·열감·힐 들림을 Slip-ins 경험으로 쓰지 않습니다.</p><p>한국 확인 상품의 숫자 폭과 내부 젤 치수는 미확인입니다. hands-free 진입과 실제 달릴 때의 힐 고정·발등 압박·앞코 높이는 별개로 확인할 수 있습니다.</p><h2>에어로 버스트 슬립인스에서 함께 남긴 한계</h2><p>APMA 채택·Arch Fit 명칭은 질환 치료·임상 보호 등급이 아닙니다. 손을 쓰지 않고 신는 기능이 모든 발의 주행 고정을 보장하지 않습니다. 일반형 자료를 넣은 가짜 랩 점수·수명·페이스 기준을 만들지 않았습니다.</p><h2>에어로 버스트 슬립인스의 한국 판매 확인 범위</h2><p>2026-11-10 한국 공식 상품 안내: 남성SP0MRCGY102·여성SP0WRCGX021 공개 표시가격 219,000원. 회원등급 가격은 별도 조건이며 상품 안내의 사이즈 목록만으로 현재 재고를 보장할 수 없습니다.</p><h2>매장에서 비교할 질문</h2><p>평소 양말·인솔로 앞쪽 길이와 발톱 위 높이, 끈을 조일 때 발등 압박, 걷고 돌 때 힐 고정과 칼라 마찰을 확인하세요. 앞볼이 넓다는 인상만으로 앞코 전체 높이나 중족 공간까지 맞는다고 가정하지 않습니다.</p><p>몇 분/km면 무조건 이 모델, 몇 km부터 통증이 줄어든다는 공통 경계는 이 자료에서 확인하지 못했습니다. 평발·부상 이력만으로 모델을 처방하거나 국소 마모를 공통 수명으로 환산하지 않았습니다.</p><h2>확인한 원문·상품 조건</h2><ul><li><a href="https://www.skecherskorea.co.kr/product/SP0MRCGY102" target="_blank" rel="noopener noreferrer">한국 공식 남성Slip-ins SP0MRCGY102</a> — 공식 상품 안내에 남성 270mm 기준으로 표기돼 있습니다.</li><li><a href="https://www.skecherskorea.co.kr/product/SP0WRCGX021" target="_blank" rel="noopener noreferrer">한국 공식 여성Slip-ins SP0WRCGX021</a> — 공식 상품 안내의 여성 230mm 공시입니다. 남성 검체와 구분했습니다.</li><li><a href="https://d1io3yog0oux5.cloudfront.net/_11baea9931b799f90bcaaea8283ca53e/skx/news/2025-08-07_Runners_Go_Hands_Free_With_New_Skechers_AERO_676.pdf" target="_blank" rel="noopener noreferrer">제조사2025-08-07 Slip-ins 별도 설계 발표</a> — 일반형과다른뒤꿈치·내부설계 원문.</li></ul>
 `,
   },
   {

@@ -667,126 +667,35 @@ export const posts_2026_06: BlogPost[] = [
     ],
   },
   {
-    id: 'hoka-clifton-11-vs-10-comparison',
-    slug: 'hoka-clifton-11-vs-10-comparison',
-    title: '호카 클리프톤 11 vs 10 비교 | 7/1 출시 — 폼·스택 그대로, 어퍼만 바뀐 신형 살 이유 있나',
-    description: '7월 1일 출시되는 호카 클리프톤 11, 클리프톤 10과 뭐가 다를까요? 결론부터 — 미드솔 폼(CMEVA)·스택(42/34mm)·드롭(8mm)·라스트가 전부 동일하고 어퍼(엔지니어드 메시)와 삭라이너(3D 프린트)만 바뀐 \'evolution\'입니다. 할인 시작한 클리프톤 10을 사도 충분한지, 한국 발볼·예산 기준으로 정리했습니다.',
-    thumbnail: '/images/blog/hoka-clifton-11-vs-10-comparison.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-06-25',
-    category: 'review' as const,
+    id: "hoka-clifton-11-vs-10-comparison",
+    slug: "hoka-clifton-11-vs-10-comparison",
+    title: "클리프톤10 vs11 — 어퍼만 바뀌었다고 보기 전에 실측·인솔·고정 비교",
+    description: "두 세대 CMEVA와 RR검체·새 인솔·혀·로커를 구분합니다. 공식8mm와 다른 실측 드롭, 한국 가격·폭·재고의 한계를 정리했습니다.",
+    thumbnail: "/images/blog/verified-hoka-clifton-11-20261110.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-06-25",
+    category: "review",
     readingTime: 8,
-    tags: ['클리프톤 11', '클리프톤 10', '호카 클리프톤', '데일리 트레이너', '신상 러닝화', '러닝화 비교'],
+    tags: [
+      "클리프톤11",
+      "클리프톤10",
+      "핏",
+      "원문 대조"
+    ],
     content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>클리프톤 11(7/1 출시)은 클리프톤 10의 '마이너 업데이트'</strong>입니다. 미드솔 폼(CMEVA)·스택(42/34mm)·드롭(8mm)·라스트가 전부 그대로고, 바뀐 건 <strong>어퍼와 삭라이너</strong>뿐입니다</li>
-    <li>어퍼가 자카드 니트 → <strong>엔지니어드 메시</strong>로, 삭라이너가 <strong>3D 프린트 오픈셀</strong>로 바뀌어 착화감이 조금 더 부드러워졌습니다. 가격도 $154.95로 동일</li>
-    <li><strong>발밑 느낌(쿠션·반발)은 사실상 같습니다.</strong> 새 착화감이 끌리면 11, 가성비라면 할인 시작한 10이 합리적입니다. 더 통통 튀는 라이드를 원하면 같은 날 나온 클리프톤 프로를 보세요</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">🔄</span>
-  <div class="callout-body">
-    <p class="callout-title">'레볼루션'이 아니라 '에볼루션'</p>
-    <p>호카가 클리프톤 11을 <strong>2026년 7월 1일</strong> 출시합니다. 그런데 이번엔 미드솔을 손대지 않았습니다. 폼·스택·드롭·핏이 <a href="/shoes/hoka-clifton-10">클리프톤 10</a>과 완전히 같고, <strong>어퍼와 삭라이너만 새로 다듬은 tune-up</strong>입니다. 그래서 핵심 질문은 "11이 10보다 얼마나 좋아졌나"가 아니라 <strong>"굳이 신형을 살 이유가 있나"</strong>가 됩니다. 아직 출시 전이라 아래 수치는 <strong>호카 공식 발표 + 클리프톤 10 실측·리뷰 기준</strong>이며, 정량 랩(RunRepeat)·한국 정가는 출시 후 업데이트합니다.</p>
-  </div>
-</div>
-
-<h2>스펙 한눈 비교</h2>
-<table>
-  <thead><tr><th>항목</th><th>클리프톤 11</th><th>클리프톤 10</th></tr></thead>
-  <tbody>
-    <tr><td>출시</td><td>2026-07-01</td><td>2025 (현행)</td></tr>
-    <tr><td><strong>미드솔 폼</strong></td><td>CMEVA</td><td><strong>CMEVA (동일)</strong></td></tr>
-    <tr><td>힐 / 전족 스택</td><td>42 / 34mm</td><td><strong>42 / 34mm (동일)</strong></td></tr>
-    <tr><td>드롭</td><td>8mm</td><td><strong>8mm (동일)</strong></td></tr>
-    <tr><td>무게(M9)</td><td>공식 약 280g<br>(핸즈온 실측 258g 보고)</td><td>약 275g</td></tr>
-    <tr><td><strong>어퍼</strong></td><td><strong>엔지니어드 메시 (신규)</strong></td><td>자카드 니트</td></tr>
-    <tr><td><strong>삭라이너</strong></td><td><strong>3D 프린트 오픈셀 (신규)</strong></td><td>일반</td></tr>
-    <tr><td>토박스 / 와이드</td><td>넓은 핏 / 와이드·X와이드</td><td>넓은 핏 / 와이드</td></tr>
-    <tr><td>가격(US)</td><td>$154.95</td><td>$154.95 (동일)</td></tr>
-    <tr><td>한국 정가</td><td>약 199,000원 (추정)</td><td>199,000원</td></tr>
-  </tbody>
-</table>
-<p class="caption">※ 클리프톤 11은 출시 전이라 RunRepeat 정량 랩(SA·에너지 리턴·실측 스택)은 미게시입니다. 스택·드롭·무게는 호카 공식 표기이며, RunRepeat 클리프톤 10 실측은 힐 44.4mm·드롭 12.4mm로 공식 표기와 측정 기준이 다릅니다. 한국 정가는 클리프톤 10 동가($155 동결) 기준 추정입니다.</p>
-
-<h2>실제로 바뀐 것 — 어퍼와 삭라이너</h2>
-<p>미드솔이 그대로이니 차이는 <strong>발등과 발바닥에 닿는 부분</strong>에 몰려 있습니다.</p>
-<ul>
-  <li><strong>어퍼: 자카드 니트 → 엔지니어드 메시</strong> — 클리프톤 10의 니트보다 더 부드럽고 발에 즉시 순응하는 소재로 바뀌었습니다. 후족부 패딩이 강화됐고 반사 디테일이 추가됐죠. 핸즈온 리뷰들은 "최근 클리프톤 라인 중 가장 좋은 착화감"이라고 평합니다</li>
-  <li><strong>삭라이너: 3D 프린트 오픈셀 구조</strong> — 발바닥에 닿는 깔창이 새로워져 쿠션감이 소폭 올라가고 수분 배출이 개선됐습니다. 체감은 크지 않지만 '조금 더 폭신하고 쾌적한 발밑'이라고 보면 됩니다</li>
-</ul>
-<p>즉 클리프톤 11의 개선은 <strong>'타는 느낌(라이드)'이 아니라 '신는 느낌(핏)'</strong>에 있습니다.</p>
-
-<h2>폼이 그대로라는 게 무슨 뜻인가</h2>
-<p>가장 중요한 포인트입니다. 미드솔이 <strong>CMEVA로 동일</strong>하기 때문에 <strong>쿠션의 양, 반발력, 무릎 충격 흡수가 클리프톤 10과 사실상 같습니다.</strong> 클리프톤 10은 부드럽고 든든한 쿠션이 장점이지만, 에너지 리턴(약 52%)이 요즘 PEBA·질소 발포 폼을 쓴 경쟁작(65%+)보다 낮아 <strong>'통통 튀는 반발'은 약한</strong> 편입니다. 클리프톤 11도 이 성격을 그대로 물려받습니다.</p>
-<p>그래서 판단은 단순해집니다 — <strong>폼은 같고 어퍼만 바뀐 업데이트라, 할인이 시작된 클리프톤 10을 사는 게 더 합리적일 수 있습니다.</strong> 신형 프리미엄을 주고 살 만큼의 성능 도약은 아니라는 뜻입니다. 호카 라인업 전체에서 클리프톤이 어떤 위치인지는 <a href="/blog/hoka-running-shoes-lineup-tier-guide-2026">호카 러닝화 계급도</a>에서 확인할 수 있습니다.</p>
-
-<div class="callout warning">
-  <span class="callout-icon">⚖️</span>
-  <div class="callout-body">
-    <p class="callout-title">무게는 소스마다 다릅니다</p>
-    <p>클리프톤 11 무게는 출시 전이라 출처별로 엇갈립니다. <strong>공식 스펙시트·리테일러는 약 280g</strong>(전작과 비슷하거나 소폭 증가)으로 표기하는 반면, 한 핸즈온 리뷰(저울 실측)는 <strong>258g</strong>으로 약 6% 가볍다고 보고했습니다. 측정 기준·샘플 차이일 뿐 서로 모순은 아닙니다. 무게가 구매의 핵심이라면 출시 후 공식 페이지·RunRepeat 실측을 한 번 더 확인하세요.</p>
-  </div>
-</div>
-
-<h2>누가 11을 사고, 누가 10을 사야 하나</h2>
-<table>
-  <thead><tr><th>이런 분</th><th>추천</th></tr></thead>
-  <tbody>
-    <tr><td>지금 새로 입문화를 처음 사는 분</td><td><strong>클리프톤 11</strong> — 어차피 비슷한 값이면 최신 어퍼·삭라이너</td></tr>
-    <tr><td>가성비 우선 / 클리프톤 10 할인 발견</td><td><strong>클리프톤 10</strong> — 라이드 동일, 신형 대비 저렴</td></tr>
-    <tr><td>니트 어퍼가 답답했던 분</td><td><strong>클리프톤 11</strong> — 엔지니어드 메시로 통기·순응성 개선</td></tr>
-    <tr><td>더 통통 튀는 반발을 원하는 분</td><td><strong>클리프톤 프로</strong>(아래 참고) 또는 다른 반발형 데일리</td></tr>
-  </tbody>
-</table>
-
-<div class="callout tip">
-  <span class="callout-icon">🚀</span>
-  <div class="callout-body">
-    <p class="callout-title">업템포가 당긴다면 — 같은 날 나온 '클리프톤 프로'</p>
-    <p>호카는 클리프톤 11과 함께 <strong>클리프톤 프로($165)</strong>를 같은 시기에 냈습니다. 클리프톤 11과 스택·드롭·라스트는 같지만 <strong>미드솔에 반발형 ProGlide+(초임계 EVA)를 얹어</strong> 더 경쾌하게 굴러갑니다. '클리프톤의 편안함 + 조금 더 빠른 라이드'를 원하면 프로가 답입니다. 11과 프로의 차이·해외 리뷰는 <a href="/blog/hoka-clifton-pro-preview-2026">클리프톤 프로 미리보기</a>에, 같은 7월 신상인 아식스 노바블라스트 6와 어떻게 갈리는지는 <a href="/blog/asics-novablast-6-vs-hoka-clifton-pro-2026">노바블라스트 6 vs 클리프톤 프로</a>에서 정리했습니다.</p>
-  </div>
-</div>
-
-<h2>한국 러너 관점 — 발볼·가격</h2>
-<p>클리프톤 11은 클리프톤 10과 <strong>동일한 라스트</strong>를 써서 핏 성격이 같습니다. 호카 클리프톤은 본래 <strong>넓고 여유로운 토박스</strong>로 발볼 넓은 한국 러너에게 잘 맞는 편이고, <strong>와이드·엑스와이드 옵션</strong>까지 제공돼 발볼 걱정이 큰 분도 선택지가 있습니다. 발볼이 넓다면 처음부터 와이드를 고려하세요.</p>
-<p>가격은 미국 정가가 $154.95로 전작과 같아, 한국 정가도 <strong>클리프톤 10과 같은 199,000원 안팎</strong>으로 책정될 가능성이 높습니다(출시 전 추정). 정가가 같다면 신형/구형 선택은 결국 <strong>'할인 폭'</strong> 싸움입니다. 클리프톤 10이 세일에 들어가면 라이드가 동일한 만큼 가성비에서 앞섭니다. 무릎 보호 중심의 맥시멀 쿠션이 목적이라면 <a href="/blog/max-cushion-running-shoes-knee-protection-2026">맥스 쿠션 러닝화 가이드</a>도 함께 참고하세요.</p>
-
-<h2>결론</h2>
-<p>클리프톤 11은 <strong>'더 좋아진 신발'이라기보다 '더 다듬어진 같은 신발'</strong>입니다. 부드러운 쿠션과 넓은 핏으로 입문·회복주·장시간 서 있는 일상에 두루 좋은 클리프톤의 강점은 그대로고, 어퍼·삭라이너가 한 단계 세련돼졌습니다. <strong>새 착화감과 최신형이 끌리면 11, 한 푼이라도 아끼고 싶고 라이드만 같으면 된다면 할인된 10</strong> — 둘 다 합리적인 선택입니다. 본인 발·예산에 맞는 데일리 후보를 빠르게 좁히려면 <a href="/recommend">1분 러닝화 추천</a>이나 <a href="/best/daily-trainer">데일리 트레이너 추천</a>을 활용해보세요.</p>
-
-<h2>FAQ</h2>
-
-<h3>Q. 클리프톤 11과 10, 발밑 느낌이 정말 같나요?</h3>
-<p>네, 사실상 같습니다. 미드솔 폼(CMEVA)·스택·드롭이 동일해 쿠션의 양과 반발, 무릎 충격 흡수가 거의 차이 없습니다. 다른 건 어퍼(엔지니어드 메시)와 삭라이너(3D 프린트)로 인한 '신는 느낌'이지 '타는 느낌'이 아닙니다.</p>
-
-<h3>Q. 그럼 굳이 11을 살 필요가 없나요?</h3>
-<p>가격이 같다면 새로 사는 입장에선 최신 어퍼의 11이 무난합니다. 다만 클리프톤 10이 세일에 들어갔다면, 라이드가 동일한 만큼 할인된 10이 가성비에서 앞섭니다. 여러 해외 리뷰어도 "할인된 10이 합리적"이라고 평합니다.</p>
-
-<h3>Q. 더 반발력 있는 호카 데일리를 원하면요?</h3>
-<p>같은 날 출시된 클리프톤 프로($165)가 반발형 ProGlide+ 폼을 써서 더 경쾌합니다. 또는 마하 6처럼 더 빠른 데일리를 보세요. 클리프톤 11/10은 '부드러운 쿠션' 쪽이라 업템포·반발 위주 러너에겐 다소 물렁하게 느껴질 수 있습니다.</p>
-
-<h3>Q. 발볼이 넓은데 괜찮을까요?</h3>
-<p>클리프톤은 토박스가 넓고 여유로운 편이라 발볼 넓은 한국 러너에게 잘 맞습니다. 11도 10과 같은 라스트를 써서 동일하며, 와이드·엑스와이드 옵션까지 있어 발볼이 많이 넓다면 와이드를 선택하면 됩니다.</p>
+<p><strong>2026-11-10 원문 대조 업데이트.</strong> 11월9~10일 확인한 정확 모델 자료를 바탕으로 공시·검체·개인 착화 의견을 나눴습니다. 자체 착화 후기는 아닙니다.</p><h2>선택에서 먼저 볼 차이</h2><p>두 세대 모두 CMEVA라는 이름을 쓰더라도 측정 스택·어퍼·인솔·혀·고정과 실제 주행감은 따로 봐야 합니다. 폼·스택이 그대로이고 어퍼만 바뀌었다는 단일 설명을 정정했습니다.</p><p>11세대 Matt의 낮은 볼륨·테이퍼·두꺼운 비거싯 혀와 RTR의 넉넉한 앞쪽 체감은 서로 다른 발·규격입니다. 신형이라는 이유로 가격·편안함의 승자를 정하지 않았습니다.</p><figure><img src="/images/blog/verified-hoka-clifton-11-20261110.webp" alt="클리프톤11 제품 자료 이미지" loading="lazy"/><figcaption>호주 남성 Clifton11 1176572-BNNY 공식 사진. 한국SKU·폭·촬영 규격은 미확인입니다.</figcaption></figure><div class="table-wrap"><table><thead><tr><th>모델</th><th>무게·측정 조건</th><th>힐/전족 스택 · 드롭</th><th>힐/전족 SA</th><th>힐/전족 리턴</th><th>내부 최광폭/엄지/높이</th></tr></thead><tbody><tr><td>클리프톤11</td><td>266g · RR 검체</td><td>41.4/29.7mm · 11.7mm</td><td>146/117</td><td>46.8/50.1%</td><td>94.7/70.9/27.4mm</td></tr><tr><td>클리프톤10</td><td>275g · RR 검체</td><td>44.4/32mm · 12.4mm</td><td>147/122</td><td>52.3/57.2%</td><td>97.2/73.1/27.3mm</td></tr></tbody></table></div><h2>표를 읽는 범위</h2><p>RR 검체와 별도 표시한 DOR 소개 공시는 다른 자료입니다. DOR 소개를 독립 랩 실측으로 표시하지 않습니다. RR 일반 정책은 남성 US9지만 개별 라벨·폭·보정 여부는 미확인이고, 실제 검체 조건이 밝혀진 경우는 본문에 남겼습니다.</p><p>SA·리턴·정적 드롭은 개인의 통증·기록·동작 중 드롭을 입증하지 않습니다. 내부 너비·높이와 한국 다른 성별·와이드 치수도 다릅니다. 미확인은 0으로 채우지 않았습니다. <a href="https://runrepeat.com/testing-methodology" target="_blank" rel="noopener noreferrer">RR 측정법</a></p><h2>공시 드롭과 RR 검체를 같은 값으로 만들지 않기</h2><p>Clifton11 RR41.4/29.7mm·11.7mm는 공식 8mm·DOR43/35mm·8mm와 다릅니다.10세대도 원문에 적은 실측·공시 조건을 유지합니다. 실제 주행 중 드롭이나 종아리 반응을 계산하지 않았습니다.</p><p>한국 정확 상품·현재 가격·폭은 두 세대의 확인 범위에 한정됩니다. 해외 Wide·X-Wide 폭 옵션이 한국 모든 성별·규격의 재고를 뜻하지 않고, 한국 상품 미확인을 미출시로 바꾸지 않습니다.</p><h2>클리프톤11의 구조·공시</h2><p>CMEVA · 새 인솔 · Smooth MetaRocker · 후족 Active Foot Frame</p><p>후족 프레임·CMEVA와 새 인솔을 구분합니다. 판 유무를 상품명만으로 채우지 않습니다.</p><p>RR266g·41.4/29.7mm·11.7mm, 호주공식 283g(사이즈 미확인)·8mm, DOR 소개 261g(남US9)/227g(여US8)·43/35mm·8mm와 RTR소개 280g(남US9)/232g(여US8)·42/34mm·8mm를 구분합니다.</p><h2>클리프톤11의 실제 착화에서 갈린 점</h2><p>DOR Matt Klein(실제 남성US10)은 정사이즈·보통~약간 조이는 낮은 볼륨·앞코 테이퍼, 두꺼운 비거싯 혀와 좋은 힐 고정을 느꼈습니다. 초반 투박한 힐이 더 매끄러워졌지만 반응은 낮게 느꼈습니다. RTR Peter·Courtney·Zachary의 실제 규격은 미확인이고 Courtney는 앞쪽 여유와 힐 고정을 좋아했습니다. 소개검체US11 291g/여US9 242g은 개인별귀속미확인입니다.</p><p>RR 내부 최광폭/엄지/높이 94.7/70.9/27.4mm는 한국 다른 성별·와이드 치수가 아닙니다. 실제 앞쪽 길이·발톱 위 높이·중족 압박·힐 고정을 비교하세요.</p><h2>클리프톤11에서 함께 남긴 한계</h2><p>BR93·건조 62%와 개인 여름 체감을 구분하고, DOR80마일 관찰과 RR0.9mm 국소 마모를 공통 수명으로 바꾸지 않습니다. DOR의PRO4mm더높다는 문장과 소개 43/35대 46/38의 3mm차이도 산술상 다릅니다.</p><h2>클리프톤11의 한국 판매 확인 범위</h2><p>한국 정확Clifton 상품의 가격·SKU·폭·현재 재고는 공식gateway406·연결스토어 429 등으로 미확인입니다. 검색·접근 실패를 한국미출시·단종으로 해석하지 않고 해외 가격·폭을 한국에 대입하지 않습니다.</p><h2>클리프톤10의 구조·공시</h2><p>CMEVA · 로커</p><p>판 구조나 지지 장치를 질환별 보호 등급으로 바꾸지 않습니다.</p><p>DOR 표제 남성 278g(US10으로표기)·여성 227g(US8),드롭 8mm·스택미공시. RR275g·44.4/32.0mm·드롭 12.4mm와 구분.</p><h2>클리프톤10의 실제 착화에서 갈린 점</h2><p>DOR의 Matt(US10)과 David(US9.5)은 길이는 맞지만 타이트하고 낮은볼륨이라 느꼈습니다. Matt은 패딩이 눌린 뒤 카운터를 더 의식했고 David은 힐 고정을 좋게 봤습니다. 약간 단단한 데일리 주행감·로커·사이드월을 설명하며, Matt의 초기 발목자극이나 30마일 마모를 모델전체 부상효과·수명으로 바꾸지 않습니다.</p><p>한국 와이드 현재SKU는 미확인입니다. RR 내부최광폭 97.2mm·엄지 73.1mm·높이 27.3mm는 DOR의 낮은볼륨 체감과 다른 종류의 정보입니다.</p><h2>클리프톤10에서 함께 남긴 한계</h2><p>RR 힐 외부플랫폼 폭은 본문 97.8mm·표 94.5mm로 충돌해 해당 수치는 채택하지 않습니다.</p><h2>클리프톤10의 한국 판매 확인 범위</h2><p>호카 코리아 공식 연결 스토어의 정확검색에서 현재 클리프톤 10 상품을 찾지 못했습니다. 현재 한국 정가·성별·폭·SKU·재고는 미확인이며 단종·국내 미출시로 해석하지 않습니다.</p><h2>매장에서 비교할 질문</h2><p>평소 양말·인솔로 앞쪽 길이와 발톱 위 높이, 끈을 조일 때 발등 압박, 걷고 돌 때 힐 고정과 칼라 마찰을 확인하세요. 앞볼이 넓다는 인상만으로 앞코 전체 높이나 중족 공간까지 맞는다고 가정하지 않습니다.</p><p>몇 분/km면 무조건 이 모델, 몇 km부터 통증이 줄어든다는 공통 경계는 이 자료에서 확인하지 못했습니다. 평발·부상 이력만으로 모델을 처방하거나 국소 마모를 공통 수명으로 환산하지 않았습니다.</p><h2>확인한 원문·상품 조건</h2><ul><li><a href="https://runrepeat.com/hoka-clifton-11" target="_blank" rel="noopener noreferrer">클리프톤11 RR 정확 모델</a> — 실험실 검체·공시를 구분.</li><li><a href="https://www.doctorsofrunning.com/hoka-clifton-11-review/" target="_blank" rel="noopener noreferrer">클리프톤11 DOR 착화 원문</a> — 실제 리뷰어·규격의 개인 의견.</li><li><a href="https://au.hoka.com/products/clifton-11-1176572-bnny-bnny" target="_blank" rel="noopener noreferrer">호카 호주 Clifton11 남성 상품 안내</a> — 1176572-BNNY, 무게 283g·드롭 8mm 공시. 무게 기준 사이즈는 미확인입니다.</li><li><a href="https://au.hoka.com/blog/which-clifton-suits-you" target="_blank" rel="noopener noreferrer">호카 호주 Clifton11·PRO 비교 안내</a> — 두 모델의 폼·로커·어퍼 설명입니다. 해외 폭 옵션을 한국 재고로 해석하지 않았습니다.</li><li><a href="https://www.hoka.com/ko-kr/" target="_blank" rel="noopener noreferrer">호카 한국 공식 사이트</a> — 현재 정확한 한국 상품·가격은 확인하지 못했습니다.</li><li><a href="https://www.hoka.com/ko/kr/" target="_blank" rel="noopener noreferrer">호카 한국어 공식 페이지</a> — 현재 정확한 한국 상품·가격은 확인하지 못했습니다.</li><li><a href="https://brand.naver.com/hoka" target="_blank" rel="noopener noreferrer">호카 한국 공식 연결 스토어</a> — 현재 정확한 상품·가격·재고는 확인하지 못했습니다.</li><li><a href="https://www.roadtrailrun.com/2026/07/hoka-clifton-pro-and-clifton-11.html?m=0" target="_blank" rel="noopener noreferrer">Road Trail Run Clifton11·PRO 비교 착화</a> — Peter Stuart·Courtney Kelly·Zachary Russell의 개인 의견입니다. 테스터별 발·규격과 소개 수치를 구분했습니다.</li><li><a href="https://runrepeat.com/hoka-clifton-10" target="_blank" rel="noopener noreferrer">클리프톤10 RR 정확 모델</a> — 실험실 검체·공시를 구분.</li><li><a href="https://www.doctorsofrunning.com/hoka-clifton-10-review-2025/" target="_blank" rel="noopener noreferrer">클리프톤10 DOR 착화 원문</a> — 실제 리뷰어·규격의 개인 의견.</li><li><a href="https://linktr.ee/hoka_korea" target="_blank" rel="noopener noreferrer">호카 코리아 공식 연결</a> — 공식연결스토어 확인</li><li><a href="https://brand.naver.com/hoka/search?q=%ED%81%B4%EB%A6%AC%ED%94%84%ED%86%A4%2010" target="_blank" rel="noopener noreferrer">한국 공식 스토어 검색 범위</a> — 현재정가·SKU미확인. 전체미판매와 구분.</li></ul>
 `,
     faqs: [
       {
-        question: '호카 클리프톤 11과 클리프톤 10의 차이는 무엇인가요?',
-        answer: '미드솔 폼(CMEVA)·스택(42/34mm)·드롭(8mm)·라스트가 전부 동일합니다. 바뀐 것은 어퍼(자카드 니트 → 엔지니어드 메시)와 삭라이너(3D 프린트 오픈셀)뿐입니다. 즉 발밑 느낌(쿠션·반발)은 사실상 같고 착화감만 조금 더 부드러워진 마이너 업데이트입니다.',
+        "question": "어퍼만 바뀌었나요?",
+        "answer": "동일CMEVA 명칭과 별개로 실측·인솔·혀·고정·전환의 변화를 함께 비교해야 합니다."
       },
       {
-        question: '클리프톤 11이 출시되면 클리프톤 10을 사면 안 되나요?',
-        answer: '아닙니다. 라이드가 동일하므로 클리프톤 10이 할인에 들어가면 오히려 가성비에서 앞섭니다. 여러 해외 리뷰어도 "어퍼만 바뀐 업데이트라 할인된 클리프톤 10이 합리적일 수 있다"고 평가합니다. 새 착화감과 최신형을 원하면 11, 가성비라면 10입니다.',
-      },
-      {
-        question: '클리프톤 11과 클리프톤 프로는 뭐가 다른가요?',
-        answer: '같은 날 출시된 클리프톤 프로($165)는 클리프톤 11과 스택·드롭·라스트는 같지만 미드솔에 반발형 ProGlide+(초임계 EVA)를 써서 더 경쾌하게 굴러갑니다. 클리프톤 11은 기존 CMEVA 폼의 부드러운 쿠션 성격이라, 더 빠르고 통통 튀는 라이드를 원하면 프로가 적합합니다.',
-      },
+        "question": "드롭은 둘 다8mm인가요?",
+        "answer": "제조사 공시와 RR 정적 검체 차이를 본문에서 출처별로 구분합니다."
+      }
     ],
+    updatedAt: "2026-11-10",
   },
   {
     id: '2026-trans-jeju-utmb-registration',
@@ -1071,79 +980,35 @@ export const posts_2026_06: BlogPost[] = [
     ],
   },
   {
-    id: 'asics-novablast-6-vs-hoka-clifton-pro-2026',
-    slug: 'asics-novablast-6-vs-hoka-clifton-pro-2026',
-    title: '아식스 노바블라스트 6 vs 호카 클리프톤 프로 | 7월 신상 데일리 정면승부 — 노바6 가벼운 반발 vs 클프로 넓은 토박스·롤링',
-    description:
-      '7월 데일리 트레이너 신상 둘의 맞대결입니다. 노바블라스트 6(글로벌 7/1·한국 7/9 출시)와 호카 클리프톤 프로(7/9 출시 발표). 외신 T3가 "호카가 노바블라스트를 겨냥해 만든 신발"이라 콕 집을 만큼 정면승부 구도죠. 스택·드롭은 거의 같지만 폼 성격이 갈립니다 — 노바6는 전족 FF Turbo Squared(ATPU) 반발과 약 30g 가벼운 무게, 클프로는 클리프톤10 라스트의 넓은 토박스·와이드 옵션·MetaRocker 롤링. 한국 발볼·예산 기준으로 누가 뭘 골라야 하는지 정리했습니다.',
-    thumbnail: '/images/blog/asics-novablast-6-vs-hoka-clifton-pro-2026.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-06-23',
-    category: 'review' as const,
+    id: "asics-novablast-6-vs-hoka-clifton-pro-2026",
+    slug: "asics-novablast-6-vs-hoka-clifton-pro-2026",
+    title: "노바블라스트6 vs 클리프톤 PRO — 전족 반응·로커·앞코·고정을 비교",
+    description: "가벼운 반발·넓은 토박스를 공통 결론으로 만들지 않습니다. 두 모델 RR검체·실제 리뷰·한국 상품 조건을 정확히 나눴습니다.",
+    thumbnail: "/images/blog/verified-hoka-clifton-pro-20261110.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-06-23",
+    category: "review",
     readingTime: 8,
-    tags: ['노바블라스트 6', '클리프톤 프로', '호카 클리프톤', '데일리 트레이너', '신상 러닝화', '러닝화 비교'],
+    tags: [
+      "초대 클리프톤 PRO",
+      "노바블라스트6",
+      "핏",
+      "원문 대조"
+    ],
     content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>7월 데일리 신상 맞대결</strong> — 노바블라스트 6(글로벌 7/1·한국 7/9 출시)와 호카 클리프톤 프로(7/9 출시 발표)가 비슷한 시기에 나온 맞수입니다. 외신은 "호카가 노바블라스트를 겨냥한 신발"로 봅니다</li>
-    <li>공식 스택(41.5/33.5 vs 42/34mm)·드롭(8mm)은 사실상 동일 — <strong>차이는 폼</strong>입니다. 노바6는 전족 FF Turbo Squared(ATPU) 반발, 클프로는 ProGlide+(슈퍼크리티컬 EVA) 롤링</li>
-    <li><strong>가볍고 통통 튀는 반발이면 노바6, 넓은 발볼·와이드·부드러운 롤링이면 클프로</strong>. 노바6가 약 30g 가볍고 $10 저렴합니다</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">🥊</span>
-  <div class="callout-body">
-    <p class="callout-title">왜 이 둘을 나란히 놓나</p>
-    <p>호카가 클리프톤 라인을 둘로 쪼갰습니다. 기존 <a href="/shoes/hoka-clifton-10">클리프톤</a>(부드러운 데일리·CMEVA)은 그대로 두고, 반발 폼을 얹은 <strong>클리프톤 프로</strong>를 새로 냈죠. 외신 T3는 이를 두고 <strong>"호카가 아식스 노바블라스트를 겨냥해 만든 신발"</strong>이라고 못 박았습니다. 즉 둘은 같은 자리를 노리는 <strong>'반응형 고스택 데일리 트레이너'</strong> 경쟁작입니다. 작성 시점(2026-06-23)엔 둘 다 출시 전이라 아래 수치는 <strong>제조사 공식 발표 + 전작·리뷰 기준 추정</strong>이었습니다. 노바블라스트 6은 이후 한국 출시(7/9)와 RunRepeat 랩 실측 게시로 정가·실측을 괄호에 반영했습니다(2026-10-23 기준). 클리프톤 프로 수치는 작성 당시 그대로입니다.</p>
-  </div>
-</div>
-
-<h2>스펙 한눈 비교</h2>
-<table>
-  <thead><tr><th>항목</th><th>아식스 노바블라스트 6</th><th>호카 클리프톤 프로</th></tr></thead>
-  <tbody>
-    <tr><td>출시(글로벌)</td><td>2026-07-01</td><td>2026-07-09</td></tr>
-    <tr><td>힐 / 전족 스택</td><td>41.5 / 33.5mm (공식 · RunRepeat 실측 39.2 / 32.1mm)</td><td>42 / 34mm (공식)</td></tr>
-    <tr><td>드롭</td><td>8mm (공식 · 실측 7.1mm)</td><td>8mm (공식)</td></tr>
-    <tr><td>무게(M9)</td><td><strong>253g</strong> (공식 · 실측 249g)</td><td>약 282g (추정)</td></tr>
-    <tr><td><strong>미드솔 폼</strong></td><td>FF Blast Max + <strong>FF Turbo Squared(전족, ATPU)</strong></td><td><strong>ProGlide+</strong>(슈퍼크리티컬 EVA)</td></tr>
-    <tr><td>플레이트</td><td>없음</td><td>없음</td></tr>
-    <tr><td>로커</td><td>완만한 가이던스</td><td><strong>공격적 MetaRocker</strong></td></tr>
-    <tr><td>토박스 / 와이드</td><td>좁음(출시 후 RunRepeat 실측 71.0mm, 힐 폭 85mm) / 와이드 없음</td><td><strong>넓음(클리프톤10 라스트) / 와이드 옵션 ○</strong></td></tr>
-    <tr><td>가격</td><td><strong>179,000원</strong> (한국 확정 · $155)</td><td>$165 (한국 21~22만 추정)</td></tr>
-  </tbody>
-</table>
-<p class="caption">※ 작성 시점(2026-06-23)엔 두 신발 모두 출시 전이었습니다. 노바블라스트 6은 출시 후 게시된 RunRepeat 랩 실측(남성 US 9)을 괄호에 넣었고, 두 신발 비교는 같은 기준인 공식 표기끼리 했습니다(2026-10-23 기준). 클리프톤 프로 무게는 사이즈 기준을 M9로 환산한 추정치(외신 실측 296g·M10)입니다.</p>
-
-<h2>가장 큰 차이 — 폼</h2>
-<p>스택과 드롭이 같으니 <strong>발밑 느낌은 폼이 결정</strong>합니다. 노바블라스트 6은 힐에 FF Blast Max(폴리올레핀)를 두고 <strong>전족부에 FF Turbo Squared</strong>를 처음 넣었습니다. FF Turbo Squared는 아식스 상위 폼(<a href="/shoes/asics-megablast">메가블라스트</a> 계열)에 쓰인 ATPU 기반으로, PEBA에 가까운 <strong>통통 튀는 반발(pop)</strong>이 특징입니다. 전작 5의 약점이던 '힐-전족 전환 끊김'을 정조준한 설계죠. 더 자세한 변경점은 <a href="/blog/asics-novablast-6-preview-2026">노바블라스트 6 미리보기</a>에 정리해 뒀습니다.</p>
-<p>클리프톤 프로는 <strong>ProGlide+</strong>라는 슈퍼크리티컬 EVA를 씁니다. 일반 클리프톤의 CMEVA보다 가볍고 탄성이 살아 있어 "클리프톤 이름값보다 훨씬 경쾌하다"(Believe in the Run)는 평을 받았습니다. 다만 <strong>EVA 계열이라 ATPU·PEBA급 에너지 리턴까지는 못 간다</strong>는 게 공통된 지적입니다. 대신 <strong>공격적인 MetaRocker</strong>로 발이 자연스럽게 굴러가는 부드러운 전환을 만듭니다. 정리하면 <strong>노바6는 '튕기는 반발', 클프로는 '굴러가는 롤링'</strong>입니다.</p>
-
-<h2>발볼·핏 — 한국 러너의 핵심</h2>
-<p>한국 러너에게 가장 갈리는 지점은 <strong>토박스</strong>입니다. 노바블라스트 6은 좁은 편입니다. 출시 후 RunRepeat 실측 토박스가 71.0mm로 랩 평균(73.2mm)보다 2.2mm 좁았고, 랩 본문도 앞코가 좁아지는 "tapered" 형태라고 적었습니다. 6세대에서 <strong>힐 폭도 90→85mm로 약간 좁아졌습니다</strong>(와이드 옵션 없음). 발볼이 넓다면 시착이 필수입니다.</p>
-<p>반면 클리프톤 프로는 발볼 넓은 호카 유저에게 익숙한 <strong>클리프톤10 라스트를 그대로 쓰고 와이드(2E) 옵션도 제공</strong>합니다. 발볼이 넓거나 체중이 좀 나가는 러너, 장거리 이지런 위주라면 클프로 쪽이 편안합니다. 발볼 기준으로 더 넓은 선택지가 필요하면 <a href="/best/wide-toebox">발볼 넓은 러너 추천</a>도 참고하세요.</p>
-
-<h2>무게·가격 — 노바6가 우위</h2>
-<p>무게는 <strong>노바6가 약 30g 가볍습니다</strong>(M9 공식 253g vs 추정 282g, 노바6 출시 후 RunRepeat 실측은 249g). 30g이면 가벼운 템포·업템포에서 체감되는 차이입니다. 가격도 노바6가 $155로 클프로($165)보다 $10 쌉니다. <strong>노바6 한국 정가는 179,000원으로 확정</strong>됐고(7/9 출시), 클프로는 작성 시점(2026-06-23) 한국가 미확정(클리프톤10 199,000원 기준 21~22만 원대 예상)이었습니다. <strong>가볍고 저렴한 쪽은 명확히 노바6</strong>입니다.</p>
-
-<h2>누가 뭘 골라야 하나</h2>
-<ul>
-  <li><strong>노바블라스트 6</strong> — 가볍고 통통 튀는 반발을 원하는 러너, 조깅~가벼운 템포를 한 켤레로 굴리는 만능화가 필요한 러너, 예산을 아끼고 싶은 러너. 표준~약간 좁은 발에 맞습니다</li>
-  <li><strong>클리프톤 프로</strong> — 발볼이 넓거나 와이드가 필요한 러너, 체중이 좀 나가거나 장거리 이지런·LSD 위주인 러너, 호카 특유의 부드러운 롤링을 좋아하는 러너</li>
-  <li><strong>둘 다 애매하면</strong> — "가벼운 반발 vs 넓은 안정감"이 결정 기준입니다. 반발·경쾌함이면 노바6, 편안함·롤링이면 클프로. 더 넓은 데일리 후보는 <a href="/best/daily-trainer">데일리 트레이너 추천</a>, 푹신함 우선이면 <a href="/best/max-cushion">맥스 쿠션 추천</a>에서 비교해 보세요</li>
-</ul>
-<p>같은 아식스 FF Blast 계열로는 <a href="/shoes/asics-novablast-5">노바블라스트 5</a>(세일 시 여전히 좋은 선택), 한 단계 위 쿠션은 <a href="/shoes/asics-gel-nimbus-28">님버스 28</a>도 함께 보면 좋습니다.</p>
-
-<div class="callout warning">
-  <span class="callout-icon">⚠️</span>
-  <div class="callout-body">
-    <p class="callout-title">출시 전 작성 — 클리프톤 프로는 추정 주의</p>
-    <p>본 글은 <strong>두 신발 출시 전</strong>(2026-06-23) 작성했습니다. 노바블라스트 6은 한국 정가(179,000원)와 RunRepeat 랩 실측을 반영했습니다(2026-10-23 기준). 클리프톤 프로의 스펙·한국가는 작성 당시 제조사 공식 발표 + 전작·해외 리뷰(Believe in the Run·The Running Channel) 기준 추정 그대로이며, 무게는 M9 기준으로 환산했습니다.</p>
-  </div>
-</div>
+<p><strong>2026-11-10 원문 대조 업데이트.</strong> 11월9~10일 확인한 정확 모델 자료를 바탕으로 공시·검체·개인 착화 의견을 나눴습니다. 자체 착화 후기는 아닙니다.</p><h2>선택에서 먼저 볼 차이</h2><p>노바 6의 FF BLAST MAX·전족 FF TURBO²와 PRO의 ProGlide/PROGLIDE+·로커를 구분합니다. 전족 리턴과 전체 주행감·힐 전환은 서로 다른 정보입니다.</p><p>PRO의 최광폭 97.1mm와 엄지 70.3mm·높이 26.5mm는 서로 다른 위치입니다. 넓은 토박스 한마디로 모든 발의 중족·힐 고정을 보장하지 않습니다.</p><figure><img src="/images/blog/verified-hoka-clifton-pro-20261110.webp" alt="초대 클리프톤 PRO 제품 자료 이미지" loading="lazy"/><figcaption>Clifton PRO 해외 남성 제조사 자료 사진. 한국 판매 규격·RR 검체와 구분합니다.</figcaption></figure><div class="table-wrap"><table><thead><tr><th>모델</th><th>무게·측정 조건</th><th>힐/전족 스택 · 드롭</th><th>힐/전족 SA</th><th>힐/전족 리턴</th><th>내부 최광폭/엄지/높이</th></tr></thead><tbody><tr><td>초대 클리프톤 PRO</td><td>264g · RR 검체</td><td>43.2/32.8mm · 10.4mm</td><td>143/128</td><td>53.6/58.5%</td><td>97.1/70.3/26.5mm</td></tr><tr><td>노바블라스트6</td><td>249g · RR 검체</td><td>39.2/32.1mm · 7.1mm</td><td>143/130</td><td>55.4/69.1%</td><td>94.8/71/미확인mm</td></tr></tbody></table></div><h2>표를 읽는 범위</h2><p>RR 검체와 별도 표시한 DOR 소개 공시는 다른 자료입니다. DOR 소개를 독립 랩 실측으로 표시하지 않습니다. RR 일반 정책은 남성 US9지만 개별 라벨·폭·보정 여부는 미확인이고, 실제 검체 조건이 밝혀진 경우는 본문에 남겼습니다.</p><p>SA·리턴·정적 드롭은 개인의 통증·기록·동작 중 드롭을 입증하지 않습니다. 내부 너비·높이와 한국 다른 성별·와이드 치수도 다릅니다. 미확인은 0으로 채우지 않았습니다. <a href="https://runrepeat.com/testing-methodology" target="_blank" rel="noopener noreferrer">RR 측정법</a></p><h2>구매 전에 비교할 위치를 좁히기</h2><p>현재 신발에서 앞코 윗면·중족·힐 중 어디가 불편한지 기록한 뒤 해당 규격에서 비교해 보세요. PRO 리뷰어의 혀·힐 고정 차이와 노바 6의 전족·힐 반응 차이가 구체적인 확인 질문이 될 수 있습니다.</p><p>노바 6은 확인한 한국 남성 일반·2E 상품 조건을 구분하고 PRO는 한국 정확 상품이 미확인입니다. 해외 가격을 원화로 환산하거나 미확인을 국내 미출시로 표현하지 않았습니다.</p><h2>초대 클리프톤 PRO의 구조·공시</h2><p>ProGlide™/PROGLIDE+ · 초임계 EVA(리뷰 설명) · 비플레이트 로커</p><p>DOR은 판이 없는 PROGLIDE+ 초임계EVA로 설명합니다. 호주 제조사의ProGlide™와 리뷰의PROGLIDE+ 명칭 차이를 별도 폼·배합으로 단정하지 않습니다.</p><p>RR264g·43.2/32.8mm·10.4mm, DOR소개 266g(남US9)/230g(여US8)·46/38mm·8mm, RTR소개 296g(남US9)/242g(여US8)·42/34mm·8mm를 구분합니다. 호주 공식 무게는N/A로 RR값을 공식값으로 부르지 않습니다.</p><h2>초대 클리프톤 PRO의 실제 착화에서 갈린 점</h2><p>DOR Andrea Myers(여성US9.5·30마일)는 정사이즈·엄지 길이 여유·조이는 중족, 단단한 플랫폼·완만한 늦은 로커와 가속 시 부피감을 느꼈습니다. 여름 열감에도 젖은 도로 접지는 만족했습니다. Matt의PRO비교 규격은 미확인이고 더여유·단단한반응을 느꼈습니다. RTR Courtney는 혀·봉제의 발등 자극, Zachary는 자극없고더붙는핏으로 의견이 달랐습니다.</p><p>RR 내부 최광폭/엄지/높이 97.1/70.3/26.5mm는 한국 다른 성별·와이드 치수가 아닙니다. 실제 앞쪽 길이·발톱 위 높이·중족 압박·힐 고정을 비교하세요.</p><h2>초대 클리프톤 PRO에서 함께 남긴 한계</h2><p>RTR Matt Kolat의US12/UK11/EU46 2E 317g검체는 느슨한 힐·안정·소음·마모를 지적했습니다.2E를 4E로 바꾸거나 외부 바닥 126/92/95mm를 내부 치수로 쓰지 않습니다. BR106은%가 아니며 Andrea의 더운 체감을 반박하지 않습니다. RR부분거싯/RTR전체거싯 표현도 나눕니다.</p><h2>초대 클리프톤 PRO의 한국 판매 확인 범위</h2><p>한국 정확Clifton 상품의 가격·SKU·폭·현재 재고는 공식gateway406·연결스토어 429 등으로 미확인입니다. 검색·접근 실패를 한국미출시·단종으로 해석하지 않고 해외 가격·폭을 한국에 대입하지 않습니다.</p><h2>노바블라스트6의 구조·공시</h2><p>FF BLAST MAX + 전족부 FF TURBO²</p><p>전장 카본 플레이트 없음</p><p>41.5/33.5mm · 8mm (DOR·RTR의 남성 공시 사양 소개; RR 실측과 구분)</p><h2>노바블라스트6의 실제 착화에서 갈린 점</h2><p>전족부 FF TURBO²의 반응성과 뒤꿈치의 전환감은 다르게 평가됩니다. DOR은 뒤꿈치 반응과 전환을 아쉬워했고, RTR 리뷰어의 전체 승차감 의견도 갈립니다.</p><p>남성 일반·2E 상품을 확인했습니다. 여성 일반 상품도 확인했으나 여성 와이드는 미확인입니다.</p><h2>노바블라스트6의 한국 판매 확인 범위</h2><p>한국 공식 정가 179,000원. 남성 일반 1011C243.250 / 남성 2E 1011C242.002 / 여성 일반 1012C008.250.</p><h2>매장에서 비교할 질문</h2><p>평소 양말·인솔로 앞쪽 길이와 발톱 위 높이, 끈을 조일 때 발등 압박, 걷고 돌 때 힐 고정과 칼라 마찰을 확인하세요. 앞볼이 넓다는 인상만으로 앞코 전체 높이나 중족 공간까지 맞는다고 가정하지 않습니다.</p><p>몇 분/km면 무조건 이 모델, 몇 km부터 통증이 줄어든다는 공통 경계는 이 자료에서 확인하지 못했습니다. 평발·부상 이력만으로 모델을 처방하거나 국소 마모를 공통 수명으로 환산하지 않았습니다.</p><h2>확인한 원문·상품 조건</h2><ul><li><a href="https://runrepeat.com/hoka-clifton-pro" target="_blank" rel="noopener noreferrer">초대 클리프톤 PRO RR 정확 모델</a> — 실험실 검체·공시를 구분.</li><li><a href="https://www.doctorsofrunning.com/hoka-clifton-pro-review/" target="_blank" rel="noopener noreferrer">초대 클리프톤 PRO DOR 착화 원문</a> — 실제 리뷰어·규격의 개인 의견.</li><li><a href="https://au.hoka.com/products/clifton-pro-1176510-cmcgr-cmcgr" target="_blank" rel="noopener noreferrer">호카 호주 Clifton PRO 남성 상품 안내</a> — 1176510-CMCGR, 드롭 8mm. 무게는 기재되지 않았습니다. 한국 판매 조건과 구분합니다.</li><li><a href="https://au.hoka.com/blog/which-clifton-suits-you" target="_blank" rel="noopener noreferrer">호카 호주 Clifton11·PRO 비교 안내</a> — 두 모델의 폼·로커·어퍼 설명입니다. 해외 폭 옵션을 한국 재고로 해석하지 않았습니다.</li><li><a href="https://www.hoka.com/ko-kr/" target="_blank" rel="noopener noreferrer">호카 한국 공식 사이트</a> — 현재 정확한 한국 상품·가격은 확인하지 못했습니다.</li><li><a href="https://www.hoka.com/ko/kr/" target="_blank" rel="noopener noreferrer">호카 한국어 공식 페이지</a> — 현재 정확한 한국 상품·가격은 확인하지 못했습니다.</li><li><a href="https://brand.naver.com/hoka" target="_blank" rel="noopener noreferrer">호카 한국 공식 연결 스토어</a> — 현재 정확한 상품·가격·재고는 확인하지 못했습니다.</li><li><a href="https://www.roadtrailrun.com/2026/07/hoka-clifton-pro-and-clifton-11.html?m=0" target="_blank" rel="noopener noreferrer">Road Trail Run Clifton11·PRO 비교 착화</a> — Peter Stuart·Courtney Kelly·Zachary Russell의 개인 의견입니다. 테스터별 발·규격과 소개 수치를 구분했습니다.</li><li><a href="https://www.roadtrailrun.com/2026/07/matts-hoka-clifton-pro-2e-wide-review.html" target="_blank" rel="noopener noreferrer">Road Trail Run Clifton PRO 2E 착화</a> — Matt Kolat의 US12 2E 검체 317g. 외부 플랫폼 너비와 내부 젤 치수는 다른 측정입니다.</li><li><a href="https://runrepeat.com/asics-novablast-6" target="_blank" rel="noopener noreferrer">노바블라스트6 RR 정확 모델</a> — 실험실 검체·공시를 구분.</li><li><a href="https://www.doctorsofrunning.com/asics-novablast-6-review-2026/" target="_blank" rel="noopener noreferrer">노바블라스트6 DOR 착화 원문</a> — 실제 리뷰어·규격의 개인 의견.</li></ul><ul><li><a href="https://www.asics.co.kr/p/AKR_112630211-002" target="_blank" rel="noopener noreferrer">노바블라스트6 한국 공식 확인 상품</a> — 본문 SKU·가격 확인 시점과 현재 선택 재고를 구분.</li></ul>
 `,
+    updatedAt: "2026-11-10",
+    faqs: [
+      {
+        "question": "PRO가 발볼 넓은 러너에게 더 낫나요?",
+        "answer": "최광폭·엄지·높이·중족 고정은 달라 실제 규격을 확인해야 합니다."
+      },
+      {
+        "question": "노바6가 더 빠른가요?",
+        "answer": "위치별 리턴·검체 무게만으로 개인의 기록 순위를 정하지 않습니다."
+      }
+    ],
   },
   {
     id: '2026-run-seoul-run-registration',

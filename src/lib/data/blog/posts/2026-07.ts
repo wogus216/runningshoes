@@ -199,78 +199,38 @@ export const posts_2026_07: BlogPost[] = [
     ],
   },
   {
-    id: 'salomon-genesis-2-preview-2026',
-    slug: 'salomon-genesis-2-preview-2026',
-    title: '살로몬 제네시스 2 미리보기 | 8월 1일 글로벌 출시 — RTR 가치 점수 만점, 토박스가 넓어졌다',
-    description:
-      '살로몬의 데일리 트레일 트레이너 제네시스 2가 8월 1일 글로벌 발매됩니다($150, S/Lab판 $200). 첫 리뷰인 Road Trail Run이 9.5/10에 가치 항목 만점을 줬고, 전작의 아쉬움이던 토박스가 눈에 띄게 넓어졌습니다. 전작 제네시스 1은 한국 공식몰에서 248,000원에 판매 중 — 2의 한국 등록은 아직입니다. 펄사·울트라글라이드 4와 어디가 다른지, 발볼 관점에서 무엇이 좋아졌는지 정리했습니다.',
-    thumbnail: '/images/blog/salomon-genesis-2-preview-2026.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-07-29',
-    category: 'review' as const,
+    id: "salomon-genesis-2-preview-2026",
+    slug: "salomon-genesis-2-preview-2026",
+    title: "일반 제네시스2 확인 자료 — Matryx·낮은 볼륨·하강 고정, S/LAB과 구분",
+    description: "RR 남성US9 검체와 RTR JeffUS10의312g·50마일 관찰을 분리합니다. 한국 표준·와이드 캐시와 현재 가격·재고도 나눴습니다.",
+    thumbnail: "/images/blog/verified-salomon-genesis-2-20261110.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-07-29",
+    category: "review",
     readingTime: 8,
-    tags: ['살로몬 제네시스 2', '살로몬', '트레일 러닝화', 'Matryx', '신상 러닝화', 'S/Lab'],
+    tags: [
+      "일반 제네시스2",
+      "핏",
+      "원문 대조"
+    ],
     content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>제네시스 2는 8월 1일 글로벌 발매</strong>($150·272g·스택 34/26mm·4mm 러그). 첫 리뷰인 Road Trail Run이 <strong>9.5/10, 가치 항목 10/10 만점</strong>을 주며 "어떤 지형이든 커버하는 원퀴버 트레일화"라고 평가했습니다</li>
-    <li>발볼 관점 신호가 좋습니다 — 전작 대비 <strong>토박스가 눈에 띄게 넓어졌다</strong>는 게 RTR이 꼽은 핵심 개선입니다(전작 실측 75.6mm도 준수한 편이었습니다). activeCHASSIS를 미드솔에 통합해 안정성도 강화됐습니다</li>
-    <li>한국 공식몰에는 <strong>전작 제네시스 1이 248,000원에 현행 판매 중</strong>이고, 제네시스 2는 아직 미등록입니다. 한국 정가·출시일이 나오면 이 글을 갱신합니다</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <p>제네시스는 살로몬의 <strong>데일리 트레일 트레이너</strong> 라인입니다 — 근교 산 스피드런의 <a href="/shoes/salomon-pulsar">펄사</a>, 장거리 쿠션의 <a href="/shoes/salomon-ultra-glide-4">울트라글라이드 4</a>, 엘리트 레이싱의 <a href="/shoes/salomon-s-lab-pulsar-4">S/LAB 펄사 4</a> 사이에서 "매일 신는 만능 한 켤레"를 맡는 자리입니다. 살로몬 트레일 라인 정리는 <a href="/blog/salomon-pulsar-vs-ultra-glide-vs-s-lab-trail-2026">살로몬 3종 비교</a>에서 다뤘습니다.</p>
-</div>
-
-<h2>스펙 — 전작과 나란히 보기</h2>
-<table>
-  <thead><tr><th>항목</th><th>제네시스 1 <em>(실측)</em></th><th>제네시스 2 <em>(공식)</em></th></tr></thead>
-  <tbody>
-    <tr><td>무게</td><td>282g</td><td>272g (공식) / RTR 샘플 실측은 US10 기준 312g</td></tr>
-    <tr><td>스택 (힐/전족)</td><td>33.5 / 24.5mm</td><td>34 / 26mm</td></tr>
-    <tr><td>드롭</td><td>9.0mm (실측)</td><td>8mm (공식)</td></tr>
-    <tr><td>미드솔</td><td>optiFOAM</td><td>optiFOAM 신형 배합 + <strong>activeCHASSIS 통합</strong></td></tr>
-    <tr><td>어퍼</td><td>Matryx (통기 4/5)</td><td>Matryx 재작업 — <strong>토박스 확장</strong></td></tr>
-    <tr><td>아웃솔</td><td>All-Terrain Contagrip, 4mm 러그</td><td>동일 컴파운드, 러그를 더 넓고 간격 있게 재배치</td></tr>
-    <tr><td>에너지 리턴</td><td>55.6% (실측)</td><td>미게시</td></tr>
-    <tr><td>토박스</td><td>75.6mm (실측)</td><td>미게시 — "눈에 띄게 넓어짐" (RTR)</td></tr>
-    <tr><td>가격</td><td>한국 248,000원 (현행)</td><td>$150 · 한국 미정</td></tr>
-  </tbody>
-</table>
-<p><small>※ 제네시스 1은 RunRepeat 랩 실측(종합 92/100), 제네시스 2는 살로몬 공식 발표 기준입니다. 측정 기준이 달라 드롭 9.0→8mm를 "드롭이 낮아졌다"고 단정할 수는 없습니다.</small></p>
-
-<h2>무엇이 바뀌었나</h2>
-<p><strong>① 토박스가 넓어졌습니다.</strong> RTR 리뷰어 Jeff Valliere가 꼽은 첫 번째 변화입니다. 살로몬은 전통적으로 발을 감싸는 좁은 핏의 브랜드라 발볼 넓은 한국 러너에게 진입 장벽이 있었는데, 전작도 실측 75.6mm로 트레일화 중 준수했던 토박스를 한 번 더 넓혔습니다. 실측 mm는 랩 게시를 기다려야 하지만 방향 자체가 반갑습니다.</p>
-<p><strong>② activeCHASSIS가 미드솔과 한 몸이 됐습니다.</strong> 살로몬 고유의 지지 구조물인 activeCHASSIS를 외측은 접착 삽입, 내측은 몰드 일체형으로 미드솔에 통합했습니다. 험지에서 발목이 꺾이는 걸 플랫폼 차원에서 잡아주는 설계로, RTR은 "테크니컬 지형에서 오히려 이 신발을 집게 된다"고 썼습니다.</p>
-<p><strong>③ 러그 재배치.</strong> 4mm 러그 깊이는 유지하되 더 넓고 간격 있게 배치해 진흙 배출과 다양한 지형 대응을 노렸습니다. 대신 무게는 전작 대비 21g 늘었습니다 — 이번 개편의 유일한 후퇴입니다.</p>
-
-<h2>S/Lab 제네시스 2와의 차이</h2>
-<p>같은 날 나오는 <strong>S/Lab 제네시스 2($200)</strong>는 레이싱 특화판입니다. 케블라 코팅 Matryx Micro 어퍼 + 일체형 게이터, 듀얼덴시티 optiFOAM², 더 낮은 스택(31/25mm)·6mm 드롭·4.5mm 러그로 정밀한 산악 레이스에 맞춰져 있습니다. 해외 리뷰(Trail &amp; Kale)의 정리가 실용적입니다 — <em>"완만한 트레일이 주 무대라면 일반판이 같은 역할을 더 싸게 해준다."</em> 대회 출전이 아니라면 $50 프리미엄은 필수가 아닙니다.</p>
-
-<h2>한국은 언제?</h2>
-<p>살로몬코리아 공식몰(salomon.co.kr)에는 <strong>제네시스 1이 248,000원에 현행 판매 중</strong>이고, S/LAB 제네시스(278,000원)·GTX 파생판까지 제네시스 컬렉션이 통째로 들어와 있습니다. 라인 자체가 한국에 정착해 있다는 뜻이라, 2의 국내 등록 가능성은 구조적으로 열려 있습니다. 다만 7월 29일 현재 제네시스 2는 미등록이고 한국 출시일·정가 공식 정보도 없습니다 — 확정되면 이 글과 신발 DB를 갱신하겠습니다.</p>
-<p>가을 트레일 시즌이 머지않았습니다. 10월 초 <a href="/blog/2026-trans-jeju-utmb-registration">트랜스제주 by UTMB</a>(접수 7/31 마감)를 준비 중이라면, 현재 한국에서 바로 구할 수 있는 선택지는 <a href="/blog/speedgoat-6-vs-pulsar-vs-metafuji-trail-2026">스피드고트 6 vs 펄사 vs 메타후지 3파전</a>에서 비교해 두세요.</p>
-
-<div class="callout warning">
-  <p><strong>확정되지 않은 것들</strong> — ① <strong>한국 출시일·정가 미발표</strong>(공식몰 미등록 확인, 2026-07-29) ② <strong>RunRepeat 랩 미게시</strong>: 제네시스 2의 에너지 리턴·토박스 실측·경도는 아직 없으며 본문 수치는 공식 발표와 RTR 리뷰 기준입니다 ③ 무게는 공식 272g과 RTR 샘플 실측(US10, 312g)의 차이가 커서 사이즈별 확인이 필요합니다. 이 때문에 신발 DB 등록은 한국 출시 확정 후로 보류합니다.</p>
-</div>
-
-<div class="faq">
-  <h2>자주 묻는 질문</h2>
-  <h3>펄사·울트라글라이드 4가 있는데 제네시스 2가 필요한가요?</h3>
-  <p>포지션이 다릅니다. 펄사는 가볍고 빠른 근교 산용, 울트라글라이드 4는 장거리 쿠션용입니다. 제네시스는 그 사이의 "매일 신는 만능"으로, 바위 많은 테크니컬 구간까지 한 켤레로 커버하려는 러너에게 맞습니다. RTR도 울트라글라이드 4와 비교해 "장거리 쿠션은 UG4, 테크니컬 지형은 제네시스 2"로 정리했습니다.</p>
-  <h3>발볼이 넓은데 살로몬 신어도 되나요?</h3>
-  <p>살로몬은 전반적으로 좁은 핏 브랜드지만 제네시스 라인은 예외에 가깝습니다. 전작 실측 75.6mm는 표준~와이드 경계였고, 2는 여기서 더 넓어졌다는 평가입니다. 다만 실측 게시 전이니 온라인 구매라면 전작 기준 반 사이즈 업을 고려하세요.</p>
-  <h3>트레일 입문자가 첫 신발로 사도 되나요?</h3>
-  <p>성격상 적합합니다. 다만 한국 미출시 상태라 지금 사려면 직구뿐인데, 트레일화는 핏 실패 리스크가 커서 입문자에게 직구를 권하지 않습니다. 국내에서 시착 가능한 선택지부터 보는 게 안전합니다.</p>
-  <h3>S/Lab판을 살 이유가 있나요?</h3>
-  <p>산악 레이스에 출전하고, 테크니컬 하강에서의 정밀한 발놀림에 $50을 더 낼 의향이 있다면요. 훈련 중심이라면 일반판으로 충분하다는 게 해외 리뷰의 공통 결론입니다.</p>
-</div>
-
-<p><small>※ 스펙·발매일은 살로몬 공식 발표(리뷰 매체 교차 인용) 기준, 평가는 Road Trail Run 리뷰(2026-07-25, 9.5/10)와 Trail &amp; Kale S/Lab 리뷰를 종합했습니다. 제네시스 1 수치는 RunRepeat 랩 실측(92/100), 한국 판매가는 살로몬코리아 공식몰 확인(2026-07-29) 기준입니다. 살로몬 공식 사이트(salomon.com)는 봇 차단으로 직접 확인이 불가해 공식 스펙은 복수 매체 교차로 검증했습니다. 한국 출시·랩 게시 시 갱신합니다. (작성 2026-07-29)</small></p>
+<p><strong>2026-11-10 원문 대조 업데이트.</strong> 11월9~10일 확인한 정확 모델 자료를 바탕으로 공시·검체·개인 착화 의견을 나눴습니다. 자체 착화 후기는 아닙니다.</p><h2>선택에서 먼저 볼 차이</h2><p>일반 Genesis2를 S/LAB Genesis2와 구분했습니다. optiFOAM EVA·Matryx·activeCHASSIS·Quicklace와 정확 모델의 RR·RTR 자료를 정리합니다.</p><p>Jeff에게 전작보다 앞코가 여유 있었다는 의견과 RR의 낮은 앞코 볼륨은 모순으로 지워 버릴 정보가 아닙니다. 실제 테스터의 발·규격과 구매할 한국 와이드 조건이 다릅니다.</p><figure><img src="/images/blog/verified-salomon-genesis-2-20261110.webp" alt="일반 제네시스2 제품 자료 이미지" loading="lazy"/><figcaption>한국 일반 Genesis2 L45474200 공식 사진. S/LAB·와이드·RR 검체와 구분합니다.</figcaption></figure><div class="table-wrap"><table><thead><tr><th>모델</th><th>무게·측정 조건</th><th>힐/전족 스택 · 드롭</th><th>힐/전족 SA</th><th>힐/전족 리턴</th><th>내부 최광폭/엄지/높이</th></tr></thead><tbody><tr><td>일반 제네시스2</td><td>286g · RR 검체</td><td>32.7/24.0mm · 8.7mm</td><td>106/94</td><td>49.5/51.9%</td><td>94.5/71.6/25.7mm</td></tr></tbody></table></div><h2>표를 읽는 범위</h2><p>RR 검체와 별도 표시한 DOR 소개 공시는 다른 자료입니다. DOR 소개를 독립 랩 실측으로 표시하지 않습니다. RR 일반 정책은 남성 US9지만 개별 라벨·폭·보정 여부는 미확인이고, 실제 검체 조건이 밝혀진 경우는 본문에 남겼습니다.</p><p>SA·리턴·정적 드롭은 개인의 통증·기록·동작 중 드롭을 입증하지 않습니다. 내부 너비·높이와 한국 다른 성별·와이드 치수도 다릅니다. 미확인은 0으로 채우지 않았습니다. <a href="https://runrepeat.com/testing-methodology" target="_blank" rel="noopener noreferrer">RR 측정법</a></p><h2>기술 지형에서 무엇을 확인할 수 있나요?</h2><p>Jeff는 바위 지형의 고정·핸들링을 좋아했지만 느슨한 급경사 자갈·풀에서는 더 날카롭고 깊은 러그를 원했습니다. 이 경험을 한국 모든 산에서의 만능 접지로 바꾸지 않았습니다.</p><p>RR의 낮은 에너지 리턴과 Jeff의 주관적 반응성도 다른 정보입니다.50마일 뒤의 적은 마모로 공통 수명km를 만들지 않습니다. RTR의 8월 1일 예정은 한국 실제 판매 시작일의 근거로 사용하지 않았습니다.</p><h2>일반 제네시스2의 구조·공시</h2><p>optiFOAM EVA · Matryx · activeCHASSIS · Quicklace</p><p>activeCHASSIS 구조는 확인했지만 판 유무·소재를 이번 원문에서 확정하지 못했습니다.</p><p>RR 실제 남성 US9 검체 286g·32.7/24.0mm·8.7mm, 한국 공시 281g(사이즈 미확인)·33.5/25.5mm·8mm, RTR Jeff 남성US10/EU44 실제 312g·소개 34/26mm·8mm를 구분합니다.</p><h2>일반 제네시스2의 실제 착화에서 갈린 점</h2><p>정확 DOR 원문은 미회수입니다. RTR Jeff Valliere(남성US10/EU44·좁고 낮은 볼륨의 발)는 정사이즈·전작보다 여유 있는 앞코와 좋은 고정, 단단하지만 보호감 있는 주행을 느꼈습니다. 기술적 바위 지형을 좋아했지만 가파른 느슨한 자갈·풀에서는 더 깊고 날카로운 러그를 원했습니다. 약 50마일의 마모 관찰은 수명이 아닙니다.</p><p>RR 내부 최광폭/엄지/높이 94.5/71.6/25.7mm는 한국 와이드의 치수가 아닙니다. 실제 길이·발톱 위 높이·하강 고정·중족 압박을 확인하세요.</p><h2>일반 제네시스2에서 함께 남긴 한계</h2><p>RR 낮은 리턴 49.5/51.9%와 Jeff의 반응성 체감은 다른 지표입니다. 일반 Genesis2를 S/LAB Genesis2와 혼용하지 않습니다. RTR의 8월 1일 예정은 한국 실제 출시일 근거가 아닙니다.</p><h2>일반 제네시스2의 한국 판매 확인 범위</h2><p>한국 공식 캐시: L45474200 men (matching US official men product/color; KR title has no explicit gender) Standard 표시 250,000원; L49309200 women Standard 표시 250,000원; L45388500 성별미확인 Wide 표시 250,000원. 현재 가격·선택 재고·최종 결제는 미확인입니다.</p><h2>매장에서 비교할 질문</h2><p>평소 양말·인솔로 앞쪽 길이와 발톱 위 높이, 끈을 조일 때 발등 압박, 걷고 돌 때 힐 고정과 칼라 마찰을 확인하세요. 앞볼이 넓다는 인상만으로 앞코 전체 높이나 중족 공간까지 맞는다고 가정하지 않습니다.</p><p>몇 분/km면 무조건 이 모델, 몇 km부터 통증이 줄어든다는 공통 경계는 이 자료에서 확인하지 못했습니다. 평발·부상 이력만으로 모델을 처방하거나 국소 마모를 공통 수명으로 환산하지 않았습니다.</p><h2>확인한 원문·상품 조건</h2><ul><li><a href="https://runrepeat.com/salomon-genesis-2" target="_blank" rel="noopener noreferrer">일반 제네시스2 RR 정확 모델</a> — 실험실 검체·공시를 구분.</li><li><a href="https://salomon.co.kr/products/l45474200" target="_blank" rel="noopener noreferrer">한국 공식 확인 L45474200</a> — 검색에 보존된 공식 상품의 성별·폭 조건입니다. 현재 선택 가능한 재고는 미확인입니다.</li><li><a href="https://salomon.co.kr/products/l49309200" target="_blank" rel="noopener noreferrer">한국 공식 확인 L49309200</a> — 검색에 보존된 공식 상품의 성별·폭 조건입니다. 현재 선택 가능한 재고는 미확인입니다.</li><li><a href="https://salomon.co.kr/products/l45388500" target="_blank" rel="noopener noreferrer">한국 공식 확인 L45388500</a> — 검색에 보존된 공식 상품의 성별·폭 조건입니다. 현재 선택 가능한 재고는 미확인입니다.</li><li><a href="https://www.roadtrailrun.com/2026/07/salomon-genesis-2-review-5-comparisons.html?amp=1" target="_blank" rel="noopener noreferrer">RTR 정확 모델 착화</a> — 실제 테스터·규격·노면 조건을 본문에서 구분.</li></ul>
 `,
+    updatedAt: "2026-11-10",
+    faqs: [
+      {
+        "question": "S/LAB Genesis2와 같은가요?",
+        "answer": "일반형과 별도 제품으로 구분했습니다."
+      },
+      {
+        "question": "와이드가 있으니 발볼은 해결되나요?",
+        "answer": "한국 와이드 상품과 표준 해외 검체·개인 체감은 달라 실제 규격을 확인해야 합니다."
+      },
+      {
+        "question": "현재25만원인가요?",
+        "answer": "정확 한국 상품 캐시에250,000원이 표시됐지만 라이브GET429여서 현재 가격·선택 재고는 별도 확인이 필요합니다."
+      }
+    ],
   },
   {
     id: 'bio-based-running-shoe-foam-sugarcane-castor-2026',
@@ -1752,117 +1712,38 @@ export const posts_2026_07: BlogPost[] = [
 `,
   },
   {
-    id: 'brooks-cascadia-20-preview-2026',
-    slug: 'brooks-cascadia-20-preview-2026',
-    title: '브룩스 캐스캐디아 20 미리보기 | 20년 만에 폼 갈아엎고 비브람 신었다 — 글로벌 8/1 출시, 한국은?',
-    description:
-      '트레일 스테디셀러 브룩스 캐스캐디아가 20세대에서 미드솔 폼을 DNA Loft v3에서 DNA Flash v2(질소 주입)로 바꾸고 비브람 메가그립을 얹었습니다. 힐 38/전족 32mm·드롭 6mm·306g·$160으로 8월 1일 글로벌 출시, BITR A Tier. 전작 대비 변경점, 해외 리뷰 평가, 스피드고트 7·히에로 v9 등 경쟁 트레일화와의 위치를 한국 러너 관점으로 정리했습니다.',
-    author: '산초 에디터',
-    publishedAt: '2026-07-19',
-    category: 'review' as const,
-    readingTime: 7,
-    thumbnail: '/images/blog/brooks-cascadia-20-preview-2026.webp',
-    tags: ['브룩스', '캐스캐디아', '캐스캐디아 20', '트레일 러닝화', 'DNA Flash', '비브람 메가그립', '신상 프리뷰'],
+    id: "brooks-cascadia-20-preview-2026",
+    slug: "brooks-cascadia-20-preview-2026",
+    title: "캐스캐디아20 확인 자료 — DNA FLASH v2·Vibram·앞코·회전 고정",
+    description: "298g·8.8mm RR 검체와 DOR·RTR의 다른 규격·핏 의견을 구분합니다. 한국2E 사진·캐시 표시가격199,000원과 현재 조건도 나눴습니다.",
+    author: "산초 에디터",
+    publishedAt: "2026-07-19",
+    category: "review",
+    readingTime: 8,
+    thumbnail: "/images/blog/verified-brooks-cascadia-20-20261110.webp",
+    tags: [
+      "캐스캐디아20",
+      "핏",
+      "원문 대조"
+    ],
     faqs: [
       {
-        question: '캐스캐디아 20은 한국에 언제 나오나요?',
-        answer:
-          '2026년 7월 19일 기준 한국 출시일·정가는 공식 발표되지 않았습니다. 글로벌 출시는 8월 1일($160)이며, 브룩스러닝 코리아 공식몰(brooksrunning.co.kr)은 운영 중이지만 아직 캐스캐디아 20이 등재되지 않았고 국내 유통에는 구버전(15·17 등)만 보입니다. 전작들의 한국 정가가 15만 원대였던 점을 감안하면 16만~18만 원대가 예상되지만 확정치는 아닙니다. 공식 등재 시 이 글을 갱신하겠습니다.',
+        "question": "한국 와이드가 있나요?",
+        "answer": "확인한 남성2E1104892E099 상품이 있습니다. 현재 규격별 선택 재고·여성 한국SKU는 미확인입니다."
       },
       {
-        question: '스피드고트랑 뭐가 다른가요?',
-        answer:
-          '호카 스피드고트가 두툼한 맥시멀 쿠션으로 밀어붙이는 "만능 쿠션 트레일화"라면, 캐스캐디아 20은 힐 38/전족 32mm로 스택이 더 낮고 드롭 6mm로 지면 감각이 좋은 균형형입니다. 둘 다 비브람 메가그립을 쓰지만, 캐스캐디아는 로드와 트레일을 오가는 다재다능함과 장거리 안정성에 강점이 있습니다.',
+        "question": "199,000원이 공식 정가인가요?",
+        "answer": "확인한 공식 캐시 상품 표시가격이며 정가·할인 라벨을 정확히 구분하지 못해 현재 정가로 확정하지 않습니다."
       },
       {
-        question: '트레일 초보인데 신어도 되나요?',
-        answer:
-          '네, 오히려 입문에 무난한 성격입니다. 극단적인 바위·기술 지형 전용이 아니라 임도·흙길·자갈처럼 일반적인 트레일과 로드가 섞인 코스에 최적화돼 있고, 편안함과 안정성의 균형이 좋다는 평가입니다. 다만 험준한 암반 코스를 자주 탄다면 더 공격적인 러그의 신발이 낫습니다.',
-      },
-      {
-        question: '발볼 넓은 편인데 괜찮을까요?',
-        answer:
-          '캐스캐디아 20은 전작보다 플랫폼을 약간 좁혀 기술적인 발놀림을 개선했다고 알려졌습니다. 발볼이 넓다면 착화가 필요합니다. 비교 후보인 나이키 <a href="/shoes/nike-acg-zegama-trail">ACG 제가마 트레일</a>은 RunRepeat 실측 토박스 72.8mm로 트레일 평균(74.3mm)보다 좁고, 살로몬 <a href="/shoes/salomon-ultra-glide-4">울트라 글라이드 4</a>는 표준 버전이 71.4mm로 좁아 발볼이 넓다면 와이드 버전을 보는 편이 맞습니다.',
-      },
+        "question": "앞볼이 넓은 신발인가요?",
+        "answer": "RR·DOR·RTR의 발·규격·폭이 달라 의견이 갈립니다. 실제 구매 규격의 앞코·힐 고정을 확인하세요."
+      }
     ],
     content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li>트레일 스테디셀러 <strong>브룩스 캐스캐디아</strong>가 20세대에서 미드솔 폼을 <strong>DNA Loft v3 → DNA Flash v2</strong>(질소 주입)로 교체하고 <strong>비브람 메가그립</strong>을 얹었습니다</li>
-    <li>힐 38 / 전족 32mm · <strong>드롭 6mm</strong> · 306g(US M9) · <strong>$160</strong>으로 <strong>8월 1일 글로벌 출시</strong>, Believe in the Run <strong>A Tier</strong> 평가</li>
-    <li><strong>한국 출시일·정가는 아직 미확정</strong> — 브룩스 대표 트레일화의 20주년인데 국내는 조용합니다. 지금은 미리보기 타이밍입니다</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">🏔️</span>
-  <div class="callout-body">
-    <p class="callout-title">왜 지금 주목하나</p>
-    <p>캐스캐디아는 2005년 첫 출시 이후 20년을 이어온 브룩스의 대표 트레일 러닝화입니다. 스무 번째 세대에서 가장 큰 변화는 <strong>미드솔 폼 전면 교체</strong>. 기존 DNA Loft v3 대신 질소를 주입한 <strong>DNA Flash v2</strong>를 넣어 반응성을 끌어올렸고, 아웃솔도 브룩스 자체 고무에서 신뢰도 높은 <strong>비브람 메가그립</strong>으로 바꿨습니다. "폼과 밑창을 동시에 갈아엎은" 세대라 전작 사용자에게도 체감 차이가 클 전망입니다.</p>
-  </div>
-</div>
-
-<h2>스펙 한눈에 보기</h2>
-
-<div class="table-wrap">
-<table>
-  <thead>
-    <tr><th>항목</th><th>캐스캐디아 20</th><th>비고</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>카테고리</td><td>트레일 (올터레인 데일리)</td><td>로드+트레일 혼합·울트라</td></tr>
-    <tr><td>무게</td><td>306g (US M9) / 275g (US W8)</td><td>해외 리뷰 실측</td></tr>
-    <tr><td>스택 (힐/전족)</td><td>38mm / 32mm</td><td>드롭 6mm</td></tr>
-    <tr><td>미드솔</td><td>DNA Flash v2 (질소 주입)</td><td>전작 DNA Loft v3에서 변경</td></tr>
-    <tr><td>아웃솔</td><td>비브람 메가그립 · 4mm 러그</td><td>지그재그 패턴</td></tr>
-    <tr><td>가격</td><td>$160 (약 22만 원 상당)</td><td>한국 정가 미확정</td></tr>
-    <tr><td>출시</td><td>글로벌 2026년 8월 1일</td><td>한국 출시일 미발표</td></tr>
-  </tbody>
-</table>
-</div>
-
-<h2>전작(캐스캐디아 19) 대비 무엇이 바뀌었나</h2>
-
-<ul>
-  <li><strong>미드솔 폼 교체</strong> — DNA Loft v3 → <strong>DNA Flash v2</strong>. 질소 주입 폼으로 바뀌면서 "이전보다 반응성이 좋아졌다"는 평가입니다.</li>
-  <li><strong>아웃솔 신뢰도 상승</strong> — 비브람 메가그립(4mm 러그) 채택으로 "그립력이 크게 향상"됐습니다.</li>
-  <li><strong>통기성 개선</strong> — 텅(설포)을 얇게 만들어 통풍이 좋아졌습니다.</li>
-  <li><strong>플랫폼 살짝 좁힘</strong> — 바닥면을 약간 좁혀 기술적인 지형에서의 발놀림을 개선, 전반적으로 "더 가볍고 민첩"해졌다는 총평입니다.</li>
-</ul>
-
-<h2>해외 리뷰 평가 요약</h2>
-
-<p>Believe in the Run은 캐스캐디아 20에 <strong>A Tier</strong>(Design B / Value A / Performance B)를 매겼습니다. 정리하면:</p>
-
-<ul>
-  <li>👍 <strong>장점</strong> — 비브람 아웃솔의 그립, DNA Flash v2의 향상된 반응성, 편안함과 안정성의 균형, 121마일(약 195km) 울트라 테스트에서도 물집·핫스팟 없는 내구·핏, 다양한 지형을 아우르는 다재다능함</li>
-  <li>👎 <strong>단점</strong> — 경쟁 모델 대비 "재미 요소" 부족, 평범한 컬러웨이·디자인, 극단적 기술 지형에서는 제한적, 노출된 아웃솔 일부가 초기 마모를 보임</li>
-</ul>
-
-<p>한마디로 <strong>"화려하진 않지만 믿고 오래 신는 올라운더"</strong>라는 성격이 20세대에서도 그대로 유지됐다는 평가입니다.</p>
-
-<h2>한국 러너 관점 — 어떤 러너에게 맞나</h2>
-
-<p>캐스캐디아 20은 <strong>임도·흙길·자갈길에 로드 구간이 섞인 일반적인 트레일</strong>과 <strong>울트라(장거리)</strong>에 강점이 있습니다. 반대로 험준한 암반·기술 지형 전용을 찾는다면 더 공격적인 러그의 신발이 낫습니다. 국내 대표 트레일화들과 견줘 위치를 보면:</p>
-
-<ul>
-  <li><strong>vs 호카 <a href="/shoes/hoka-speedgoat-7">스피드고트 7</a></strong> — 스피드고트가 맥시멀 쿠션의 만능형이라면, 캐스캐디아는 스택이 더 낮고(38/32mm) 드롭 6mm로 <strong>지면 감각·안정성</strong>이 좋은 균형형입니다.</li>
-  <li><strong>vs 뉴발 <a href="/shoes/new-balance-hierro-v9">히에로 v9</a></strong> — 둘 다 "로드에서 트레일로" 넘어가는 데일리 쿠션 트레일화라 가장 직접적인 경쟁입니다. 러그·폼 성향으로 갈립니다.</li>
-  <li><strong>vs 살로몬 <a href="/shoes/salomon-ultra-glide-4">울트라 글라이드 4</a></strong> — 울트라·와이드 지향 쿠션 트레일화. 장거리 편안함을 최우선한다면 함께 봐야 할 대안입니다.</li>
-  <li><strong>발볼</strong> — 캐스캐디아 20은 플랫폼을 약간 좁힌 세대라, 발볼이 넉넉한 편을 원하면 착화가 필요합니다. 나이키 <a href="/shoes/nike-acg-zegama-trail">ACG 제가마 트레일</a>도 토박스가 실측 72.8mm로 트레일 평균보다 좁아 발볼 대안으로는 약합니다.</li>
-</ul>
-
-<div class="callout warning">
-  <span class="callout-icon">⚠️</span>
-  <div class="callout-body">
-    <p class="callout-title">이 글의 한계 (미확정 사항)</p>
-    <p>본문의 무게·스택·평가는 <strong>해외 리뷰(Believe in the Run·Road Trail Run) 기준</strong>이며, <strong>한국 출시일과 정가는 공식 발표되지 않았습니다.</strong> RunRepeat 랩 데이터(충격흡수·에너지 리턴 등)도 아직 미게시 상태입니다. 국내 정가·랩 수치가 확정되면 이 글과 스펙을 갱신하겠습니다.</p>
-  </div>
-</div>
-
-<p><small>출처: Believe in the Run 캐스캐디아 20 리뷰(2026-07-16), Road Trail Run 멀티테스터 리뷰, 브룩스러닝 코리아 공식몰. 스펙·평가는 해외 리뷰 실측 기준이며 한국 출시 정보는 미확정입니다.</small></p>
+<p><strong>2026-11-10 원문 대조 업데이트.</strong> 11월9~10일 확인한 정확 모델 자료를 바탕으로 공시·검체·개인 착화 의견을 나눴습니다. 자체 착화 후기는 아닙니다.</p><h2>선택에서 먼저 볼 차이</h2><p>DNA FLASH v2와 Vibram Megagrip을 확인했지만, 고무 이름·폭 하나로 모든 노면의 안전·편안함을 정하지 않았습니다. RR 검체는 판 없는 단일 밀도 폼으로 설명합니다.</p><p>DOR David에게는 앞쪽이 조금 여유 있고 급회전에서 미끄러짐이 있었고, RR·RTR의 다른 테스터에게는 앞쪽이 좁게 느껴졌습니다. 한국 2E 상품은 별도 폭 조건입니다.</p><figure><img src="/images/blog/verified-brooks-cascadia-20-20261110.webp" alt="캐스캐디아20 제품 자료 이미지" loading="lazy"/><figcaption>한국 남성2E WIDE 나이트라이프1104892E099 비GTX 공식 사진. RR 내부 치수를 이2E에 대입하지 않습니다.</figcaption></figure><div class="table-wrap"><table><thead><tr><th>모델</th><th>무게·측정 조건</th><th>힐/전족 스택 · 드롭</th><th>힐/전족 SA</th><th>힐/전족 리턴</th><th>내부 최광폭/엄지/높이</th></tr></thead><tbody><tr><td>캐스캐디아20</td><td>298g · RR 검체</td><td>37.9/29.1mm · 8.8mm</td><td>136/121</td><td>58.0/59.8%</td><td>93.7/70.6/26.4mm</td></tr></tbody></table></div><h2>표를 읽는 범위</h2><p>RR 검체와 별도 표시한 DOR 소개 공시는 다른 자료입니다. DOR 소개를 독립 랩 실측으로 표시하지 않습니다. RR 일반 정책은 남성 US9지만 개별 라벨·폭·보정 여부는 미확인이고, 실제 검체 조건이 밝혀진 경우는 본문에 남겼습니다.</p><p>SA·리턴·정적 드롭은 개인의 통증·기록·동작 중 드롭을 입증하지 않습니다. 내부 너비·높이와 한국 다른 성별·와이드 치수도 다릅니다. 미확인은 0으로 채우지 않았습니다. <a href="https://runrepeat.com/testing-methodology" target="_blank" rel="noopener noreferrer">RR 측정법</a></p><h2>비방수 기본형·한국2E·해외 검체를 분리</h2><p>본문 사진은 한국 남성 2E 나이트라이프 1104892E099의 비GTX 상품입니다. RR 검체의 내부 93.7/70.6/26.4mm를 이 2E 상품의 치수라고 부르지 않았습니다.</p><p>RR37.9/29.1mm·8.8mm와 DOR39/33mm·6mm, RTR38/32mm·6mm는 다른 출처입니다. RTR 본문의 4mm 산술 오기를 채택하지 않았습니다. 초기 마모·개인 접지 만족으로 모든 코스·공통 수명을 보장하지 않습니다.</p><h2>캐스캐디아20의 구조·공시</h2><p>단일 밀도 DNA FLASH v2 · Vibram Megagrip</p><p>RR 절개 검체는 판이 없는 단일 밀도 폼으로 설명합니다. 예전 TrailAdapt 판을 현재 모델에 자동 대입하지 않습니다.</p><p>RR298g·37.9/29.1mm·8.8mm, DOR 소개 306g(남성US9)/258g(여성US8)·39/33mm·6mm, RTR 소개 38/32mm·6mm를 구분합니다. 실제 RR 라벨·폭은 미확인입니다.</p><h2>캐스캐디아20의 실제 착화에서 갈린 점</h2><p>DOR David Salas(실제 남성US9.5)는 쉬운 러닝·하이킹의 편안함과 약간 여유 있는 중족·앞발을 느꼈지만 급회전에서 조금 밀리고 무게를 느꼈습니다. RTR Jeff·Allison은 전작보다 앞쪽이 좁게, 낮은 볼륨의 발인 Jen은 공간이 있다고 느꼈습니다. Jen의 여성US8.5 외부 바닥 115/80/95mm는 내부 젤 치수가 아닙니다.</p><p>RR 내부 최광폭/엄지/높이 93.7/70.6/26.4mm는 한국 와이드의 치수가 아닙니다. 실제 길이·발톱 위 높이·하강 고정·중족 압박을 확인하세요.</p><h2>캐스캐디아20에서 함께 남긴 한계</h2><p>RR의 밀착되는 앞코와 DOR의 여유 있는 체감·RTR의 서로 다른 핏 의견을 모두 남깁니다. RTR 본문 38/32mm를 4mm 드롭이라고 적은 산술 오기는 채택하지 않았습니다. RR 마모·RTR 초기 내구성 체감을 공통 수명이나 모든 노면 접지 보장으로 바꾸지 않습니다.</p><h2>캐스캐디아20의 한국 판매 확인 범위</h2><p>한국 공식 캐시: 1104892E099 men Wide2E 표시 199,000원. 현재 가격·선택 재고·최종 결제는 미확인입니다.199,000원은 캐시 상품 표시 가격으로 정가·할인 구분 라벨은 미확인입니다. 사이즈 선택기 255~300mm와 고시정보 250~295mm도 다릅니다.</p><h2>매장에서 비교할 질문</h2><p>평소 양말·인솔로 앞쪽 길이와 발톱 위 높이, 끈을 조일 때 발등 압박, 걷고 돌 때 힐 고정과 칼라 마찰을 확인하세요. 앞볼이 넓다는 인상만으로 앞코 전체 높이나 중족 공간까지 맞는다고 가정하지 않습니다.</p><p>몇 분/km면 무조건 이 모델, 몇 km부터 통증이 줄어든다는 공통 경계는 이 자료에서 확인하지 못했습니다. 평발·부상 이력만으로 모델을 처방하거나 국소 마모를 공통 수명으로 환산하지 않았습니다.</p><h2>확인한 원문·상품 조건</h2><ul><li><a href="https://runrepeat.com/brooks-cascadia-20" target="_blank" rel="noopener noreferrer">캐스캐디아20 RR 정확 모델</a> — 실험실 검체·공시를 구분.</li><li><a href="https://www.doctorsofrunning.com/brooks-cascadia-20-review/" target="_blank" rel="noopener noreferrer">캐스캐디아20 DOR 착화 원문</a> — 실제 리뷰어·규격의 개인 의견.</li><li><a href="https://brooksrunning.co.kr/product/detail.html?product_no=976" target="_blank" rel="noopener noreferrer">한국 공식 확인 1104892E099</a> — 검색에 보존된 공식 상품의 성별·폭 조건입니다. 현재 선택 가능한 재고는 미확인입니다.</li><li><a href="https://www.roadtrailrun.com/2026/05/brooks-cascadia-20-review-major-foam.html?amp=1" target="_blank" rel="noopener noreferrer">RTR 정확 모델 착화</a> — 실제 테스터·규격·노면 조건을 본문에서 구분.</li></ul>
 `,
+    updatedAt: "2026-11-10",
   },
   {
     id: '2026-mudo-run-gyeongju',
@@ -2176,88 +2057,38 @@ export const posts_2026_07: BlogPost[] = [
     ],
   },
   {
-    id: 'asics-blazeblast-preview-2026',
-    slug: 'asics-blazeblast-preview-2026',
-    title: '아식스 블레이즈블라스트 프리뷰 | 8월 출시 신규 트레일 프랜차이즈 — 노바블라스트가 트레일로',
-    description:
-      '아식스가 7월 1일 새 트레일 러닝화 프랜차이즈 "블레이즈블라스트"를 공식 발표했습니다. 노바블라스트와 같은 FF 블라스트 맥스 쿠셔닝에 전족부 트램폴린 포드, ASICSGrip 2.5mm 러그를 얹어 "로드에서 트레일로 넘어가는" 입문~중급 러너를 정조준한 모델입니다. 8월 1일 글로벌 출시, 가격 $150. 한국 출시는 아직 미확정이라 확인된 사실과 추정을 구분해 정리했습니다.',
-    thumbnail: '/images/blog/asics-blazeblast-preview-2026.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-07-14',
-    category: 'review' as const,
-    readingTime: 6,
-    tags: ['아식스 블레이즈블라스트', '트레일 러닝화', '노바블라스트', 'FF 블라스트', '신상 러닝화', '트레일 입문'],
+    id: "asics-blazeblast-preview-2026",
+    slug: "asics-blazeblast-preview-2026",
+    title: "초대 블레이즈블라스트 — FF BLAST MAX·전족 pod·도로와 흙길의 조건",
+    description: "RR264g·42.1/34.9mm·7.2mm와 공시252g·8mm를 구분합니다. 정확 한국 캐시 가격·얕은 러그·우븐·접지 시험 범위를 정리했습니다.",
+    thumbnail: "/images/blog/verified-asics-blazeblast-20261110.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-07-14",
+    category: "review",
+    readingTime: 8,
+    tags: [
+      "초대 블레이즈블라스트",
+      "핏",
+      "원문 대조"
+    ],
     content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>아식스가 신규 트레일 프랜차이즈 "블레이즈블라스트"를 7월 1일 공식 발표</strong> — 8월 1일 글로벌 출시, 가격 $150</li>
-    <li>노바블라스트와 같은 <strong>FF 블라스트 맥스 쿠셔닝 + 전족부 트램폴린 포드</strong>를 얹은 "로드-투-트레일" 입문화 — 아식스 트레일 라인업의 빈틈(가성비 벤처10과 카본 레이서 메타후지 트레일 사이)을 채우는 포지션</li>
-    <li>한국 출시일·정가는 <strong>아직 미확정</strong>. 스택 40mm·드롭 8mm·3가지 컬러 확인, 와이드 사이즈는 없음</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">👀</span>
-  <div class="callout-body">
-    <p class="callout-title">8월 1일 출시 — 무엇이 확인됐나</p>
-    <p>아식스가 2026년 7월 1일, 완전히 새로운 트레일 러닝화 프랜차이즈 <strong>"블레이즈블라스트(BLAZEBLAST™)"</strong>를 공식 프레스룸을 통해 발표했습니다. 글로벌 출시는 <strong>8월 1일, 가격은 $150</strong>입니다. 공식 발표문은 이 신발을 "road-to-trail 전환자를 위해 설계된, 성능을 타협하지 않은 접근 가능한 트레일 경험"이라고 소개합니다. 미드솔은 아식스 최상위 쿠셔닝인 <strong>FF 블라스트 맥스 + 전족부 트램폴린 포드</strong>, 아웃솔은 <strong>ASICSGrip 2.5mm 러그</strong>입니다. 다만 이 글 작성 시점 기준 <strong>한국 출시일·정가는 확인되지 않았고</strong>(asics.co.kr 미등재), 무게·스택 등 세부 스펙 다수도 브랜드 공식 자료가 아닌 해외 프리뷰 매체의 실측 추정치입니다 — 아래에서 확인된 사실과 추정을 구분해 표기했습니다.</p>
-  </div>
-</div>
-
-<h2>블레이즈블라스트, 어떤 신발인가</h2>
-<p>아식스는 이미 트레일 러닝화를 두 종류 보유하고 있습니다. 8만 9천원대 가성비 입문화 <a href="/shoes/asics-gel-venture-10">젤 벤처 10</a>과, 27만 9천원대 풀 카본 플레이트 레이서 <a href="/shoes/asics-metafuji-trail">메타후지 트레일</a>이죠. 블레이즈블라스트는 이 둘의 <strong>가운데 지점</strong>을 노립니다. 벤처10처럼 저렴한 입문화도, 메타후지처럼 카본 레이서도 아닌 — <strong>로드 러너가 처음 트레일에 발을 들일 때 신을 "쿠션 좋은 만능 트레이너"</strong> 포지션입니다.</p>
-<p>핵심은 데일리 쿠션화 <a href="/shoes/asics-novablast-6">노바블라스트 6</a>과 같은 <strong>FF 블라스트 맥스 폼</strong>을 트레일화에 그대로 가져왔다는 점입니다. 여기에 전족부 트램폴린 포드로 반발력을 더하고, 접지력을 위해 ASICSGrip 2.5mm 러그를 달았습니다. 해외 프리뷰 매체(RunToTheFinish)는 이를 "전체적으로 새로운 신발"이라 평하면서도, "노바블라스트와 비슷한 느낌일 것으로 예상했지만 보도된 무게가 오히려 더 가볍다"고 언급합니다 — 트레일화 특유의 낮은 지면감을 위해 쿠션을 일부 덜어냈을 가능성을 시사하는 대목입니다.</p>
-
-<h2>확인된 스펙 vs 추정 스펙</h2>
-<table>
-  <thead><tr><th>항목</th><th>수치</th><th>출처</th></tr></thead>
-  <tbody>
-    <tr><td>가격</td><td>$150</td><td>아식스 공식 발표 (확정)</td></tr>
-    <tr><td>글로벌 출시일</td><td>2026년 8월 1일</td><td>아식스 공식 발표 (확정)</td></tr>
-    <tr><td>미드솔</td><td>FF 블라스트 맥스 + 전족부 트램폴린 포드</td><td>아식스 공식 발표 (확정)</td></tr>
-    <tr><td>아웃솔</td><td>ASICSGrip, 2.5mm 러그</td><td>아식스 공식 발표 (확정)</td></tr>
-    <tr><td>무게</td><td>남성 약 252g / 여성 약 221g</td><td>해외 프리뷰 매체 실측 (추정)</td></tr>
-    <tr><td>스택 높이</td><td>약 40mm</td><td>해외 프리뷰 매체 실측 (추정, 힐/전족 구분 미공개)</td></tr>
-    <tr><td>드롭</td><td>8mm</td><td>해외 프리뷰 매체 실측 (추정)</td></tr>
-    <tr><td>컬러웨이</td><td>3가지</td><td>해외 프리뷰 매체 (추정)</td></tr>
-    <tr><td>와이드 사이즈</td><td>미제공</td><td>해외 프리뷰 매체 (추정)</td></tr>
-    <tr><td>한국 출시일·정가</td><td>미확정</td><td>-</td></tr>
-  </tbody>
-</table>
-<p class="caption">※ RunRepeat 등 정량 랩 테스트(SA·에너지 리턴·토박스 너비)는 출시 전이라 아직 없습니다. 출시 후 게시되면 업데이트합니다.</p>
-
-<h2>누구에게 맞을까</h2>
-<ul>
-  <li><strong>로드만 뛰다가 트레일에 처음 도전하는 러너</strong> — 익숙한 노바블라스트 쿠셔닝을 그대로 가져가면서 접지력만 더한 구성이라 진입 장벽이 낮습니다</li>
-  <li><strong>완만한 임도·둘레길 위주로 달리는 러너</strong> — 해외 프리뷰는 "매우 기술적인 트레일에는 맞지 않는다"고 명시합니다. 암릉·급경사 코스보다는 흙길·자갈길에 적합해 보입니다</li>
-  <li><strong>발볼 넓은 러너는 주의</strong> — 와이드 사이즈가 없는 것으로 파악돼, 발볼이 넓다면 한국 출시 후 반드시 시착을 권합니다</li>
-  <li><strong>극한 산악·기술 지형 러너</strong> — 이런 경우엔 카본 플레이트로 반발력을 높인 <a href="/shoes/asics-metafuji-trail">메타후지 트레일</a>이 더 맞는 선택입니다</li>
-</ul>
-
-<div class="callout warning">
-  <span class="callout-icon">⚠️</span>
-  <div class="callout-body">
-    <p class="callout-title">출시 전 미리보기 — 한국 출시 미확정</p>
-    <p>본 글은 <strong>2026년 7월 1일 아식스 공식 발표(글로벌 8월 1일 출시)</strong>를 바탕으로 한 출시 전 프리뷰입니다. 아직 한국 공식 사이트(asics.co.kr)에 등재되지 않아 <strong>한국 출시 여부·시기·정가 모두 미확정</strong>입니다. 참고로 최근 발매된 같은 FF 블라스트 계열의 <a href="/blog/asics-novablast-6-preview-2026">노바블라스트 6</a>은 글로벌 $155에 한국 정가 179,000원이었는데, 블레이즈블라스트는 이보다 저렴한 $150이라 한국 출시 시 17만원대가 유력해 보이나 이는 어디까지나 참고용 추정입니다. 무게·스택·드롭 등 세부 스펙도 브랜드 공식 자료가 아닌 해외 매체 실측 기준이라 오차가 있을 수 있습니다. 한국 출시가 확정되면 정식 리뷰로 갱신하겠습니다.</p>
-  </div>
-</div>
-
-<div class="faq">
-  <h2>자주 묻는 질문</h2>
-  <p class="faq-q">Q. 블레이즈블라스트가 아식스의 첫 트레일화인가요?</p>
-  <p class="faq-a">A. 아닙니다. 아식스는 이미 가성비 입문화 <a href="/shoes/asics-gel-venture-10">젤 벤처 10</a>(8만 9천원)과 카본 레이서 <a href="/shoes/asics-metafuji-trail">메타후지 트레일</a>(27만 9천원)을 보유하고 있습니다. 블레이즈블라스트는 이 둘의 중간, 즉 "쿠션 좋은 로드-투-트레일 입문 트레이너" 자리를 채우는 세 번째 라인입니다.</p>
-  <p class="faq-q">Q. 노바블라스트와 실제로 비슷한가요?</p>
-  <p class="faq-a">A. 같은 FF 블라스트 맥스 쿠셔닝을 쓴다는 점은 같지만, 해외 프리뷰에 따르면 무게는 오히려 더 가볍다고 보도됐습니다. 트레일화답게 지면감을 살리기 위해 쿠션을 일부 덜어낸 구성으로 추정됩니다. 실측 리뷰가 나오기 전까지는 참고용으로만 보시길 권합니다.</p>
-  <p class="faq-q">Q. 한국에서 언제 살 수 있나요?</p>
-  <p class="faq-a">A. 아직 확인되지 않았습니다. asics.co.kr에 등재되는 대로 이 글을 갱신할 예정입니다.</p>
-</div>
-
-<h2>마무리</h2>
-<p>블레이즈블라스트는 "카본 레이서도, 저가 입문화도 아닌" 아식스 트레일 라인업의 빈틈을 겨냥한 신제품입니다. 로드에서 트레일로 넘어가고 싶은 러너에게 익숙한 쿠셔닝을 그대로 제공한다는 점이 매력이지만, 아직 한국 출시가 확정되지 않아 실물을 신어보려면 시간이 더 필요합니다. 트레일 러닝이 처음이라면 <a href="/blog/trail-running-appeal-beginner-guide-2026">트레일 러닝 입문 가이드</a>를 먼저 보시고, 지금 바로 살 수 있는 트레일화가 궁금하다면 <a href="/best/trail">트레일 러닝화 추천</a>에서 비교해보세요.</p>
-
-<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 아식스 공식 프레스릴리스(2026-07-01)와 해외 프리뷰 매체(RunToTheFinish)를 바탕으로 한 출시 전 미리보기입니다. 한국 출시일·정가와 정량 랩 데이터는 미확정 상태로, 확인되는 대로 업데이트합니다. (작성 2026-07-14)</p>
+<p><strong>2026-11-10 원문 대조 업데이트.</strong> 11월9~10일 확인한 정확 모델 자료를 바탕으로 공시·검체·개인 착화 의견을 나눴습니다. 자체 착화 후기는 아닙니다.</p><h2>선택에서 먼저 볼 차이</h2><p>초대 BLAZEBLAST를 노바블라스트가 그대로 트레일로 바뀐 신발이라고 설명하지 않았습니다. FF BLAST MAX·전족 pod·우븐·ASICSGRIP과 얕은 러그의 정확 모델 자료를 확인했습니다.</p><p>높은 스택·SA나 젖은 콘크리트 마찰계수만으로 모든 산길의 안전을 정하지 않습니다. 실제 주요 노면과 앞코 높이·어퍼 열감·고정을 함께 볼 수 있습니다.</p><figure><img src="/images/blog/verified-asics-blazeblast-20261110.webp" alt="초대 블레이즈블라스트 제품 자료 이미지" loading="lazy"/><figcaption>미국 남성 Standard 1011C276-001 공식 사진. 한국 폭·촬영 규격은 미확인입니다.</figcaption></figure><div class="table-wrap"><table><thead><tr><th>모델</th><th>무게·측정 조건</th><th>힐/전족 스택 · 드롭</th><th>힐/전족 SA</th><th>힐/전족 리턴</th><th>내부 최광폭/엄지/높이</th></tr></thead><tbody><tr><td>초대 블레이즈블라스트</td><td>264g · RR 검체</td><td>42.1/34.9mm · 7.2mm</td><td>151/131</td><td>58.7/63.3%</td><td>96/71.7/25.4mm</td></tr></tbody></table></div><h2>표를 읽는 범위</h2><p>RR 검체와 별도 표시한 DOR 소개 공시는 다른 자료입니다. DOR 소개를 독립 랩 실측으로 표시하지 않습니다. RR 일반 정책은 남성 US9지만 개별 라벨·폭·보정 여부는 미확인이고, 실제 검체 조건이 밝혀진 경우는 본문에 남겼습니다.</p><p>SA·리턴·정적 드롭은 개인의 통증·기록·동작 중 드롭을 입증하지 않습니다. 내부 너비·높이와 한국 다른 성별·와이드 치수도 다릅니다. 미확인은 0으로 채우지 않았습니다. <a href="https://runrepeat.com/testing-methodology" target="_blank" rel="noopener noreferrer">RR 측정법</a></p><h2>공식 글로벌 일정과 한국 실제 상태를 구분</h2><p>제조사 글로벌 발표의 8월 1일 출시 공시는 한국 실제 판매 시작 시각이 아닙니다. 검색에 보존된 한국 남성 1011C276.001 공식 안내에 179,000원·252g이 표시됐지만 공식 페이지가 대기 화면으로 연결되어 현재 가격·재고는 확인하지 못했습니다.</p><p>RR의 2.3mm와 공식 2.5mm 러그를 구분합니다. 폼 폴리머·판·록플레이트 유무는 미확인으로 남겼고 다른 BLAST모델의 구조나 착화 의견을 옮기지 않았습니다.</p><h2>초대 블레이즈블라스트의 구조·공시</h2><p>FF BLAST MAX · 전족 pod · 우븐 · ASICSGRIP</p><p>제조사 FF BLAST MAX·전족 trampoline pod를 확인했습니다. 폼의 정확 폴리머와 판·록플레이트 유무는 미확인입니다.</p><p>RR264g·42.1/34.9mm·7.2mm, 한국·미국 공시 252g(기준 사이즈 미확인)·8mm와 RR 재전재 브랜드 258g·42/34mm·8mm를 구분합니다.</p><h2>초대 블레이즈블라스트의 실제 착화에서 갈린 점</h2><p>정확 모델 DOR·RTR 착화 원문은 이번 범위에서 확인하지 못했습니다. 다른 BLAST모델의 착화를 옮기지 않습니다.</p><p>RR 내부 최광폭/엄지/높이 96/71.7/25.4mm는 한국 다른 성별·와이드 치수가 아닙니다. 실제 앞쪽 길이·발톱 위 높이·중족 압박·힐 고정을 비교하세요.</p><h2>초대 블레이즈블라스트에서 함께 남긴 한계</h2><p>공식 러그 2.5mm·RR2.3mm는 출처가 다릅니다. 젖은 콘크리트CoF1.06은 바위·진흙 전체 안전이 아니며, 구방식 통기 2/5는BR과 다릅니다. 검색에 보존된 상품 목록에서 정확한 품번이 확인되지 않은 189,000원은 정확 상품 179,000원을 덮어쓰지 않습니다.</p><h2>초대 블레이즈블라스트의 한국 판매 확인 범위</h2><p>검색에 보존된 한국 남성 1011C276.001 공식 안내의 표시가격 179,000원·252g(사이즈 미확인). 여성 카테고리 179,000원은 정확한 품번은 미확인입니다. 공식 페이지가 대기 화면으로 연결되어 현재 가격·재고는 확인하지 못했습니다. 현재 가격·선택재고는 미확인입니다.</p><h2>매장에서 비교할 질문</h2><p>평소 양말·인솔로 앞쪽 길이와 발톱 위 높이, 끈을 조일 때 발등 압박, 걷고 돌 때 힐 고정과 칼라 마찰을 확인하세요. 앞볼이 넓다는 인상만으로 앞코 전체 높이나 중족 공간까지 맞는다고 가정하지 않습니다.</p><p>몇 분/km면 무조건 이 모델, 몇 km부터 통증이 줄어든다는 공통 경계는 이 자료에서 확인하지 못했습니다. 평발·부상 이력만으로 모델을 처방하거나 국소 마모를 공통 수명으로 환산하지 않았습니다.</p><h2>확인한 원문·상품 조건</h2><ul><li><a href="https://runrepeat.com/asics-blazeblast" target="_blank" rel="noopener noreferrer">초대 블레이즈블라스트 RR 정확 모델</a> — 실험실 검체·공시를 구분.</li><li><a href="https://corp.asics.com/en/press/article/asics-introduces-all-new-trail-running-franchise-say-hello-to-blazeblasttm-shoe" target="_blank" rel="noopener noreferrer">아식스 BLAZEBLAST 공식 발표</a> — 2026년 7월 1일 발표. 글로벌 출시 예정일과 한국 실제 판매 시작일은 구분했습니다.</li><li><a href="https://www.asics.com/us/en-us/blazeblast/p/ANA_1011C276-001.html" target="_blank" rel="noopener noreferrer">아식스 미국 남성 상품 안내</a> — 1011C276-001, 무게 252g·드롭 8mm 공시. 무게 기준 사이즈는 미확인입니다.</li><li><a href="https://www.asics.co.kr/p/22517" target="_blank" rel="noopener noreferrer">아식스 한국 남성 상품 안내</a> — 검색에 보존된 1011C276.001 공식 안내의 표시가격은 179,000원입니다. 현재 가격·재고는 확인하지 못했습니다.</li><li><a href="https://www.asics.co.kr/c/sports_trail_running" target="_blank" rel="noopener noreferrer">아식스 한국 트레일 상품 목록</a> — 검색에 보존된 목록의 남녀 표시가격·색상 안내입니다. 현재 선택 가능한 재고를 뜻하지 않습니다.</li><li><a href="https://images.asics.com/is/image/asics/1011C276_001_SL_LT_GLB?$sfcc-product$=" target="_blank" rel="noopener noreferrer">정확 해외 제조사 사진 1011C276-001</a> — 해외 남성 상품 자료 사진. 한국SKU·촬영 규격·RR 실제 검체 동일성을 보장하지 않음.</li></ul>
 `,
+    updatedAt: "2026-11-10",
+    faqs: [
+      {
+        "question": "RR 랩이 없나요?",
+        "answer": "11월1일 게시된 정확 초대 랩을 확인했습니다. 공시와 검체는 구분합니다."
+      },
+      {
+        "question": "현재 한국179,000원인가요?",
+        "answer": "정확 남성 상품 캐시 표시가격입니다. 실시간 가격·선택 재고는 대기셸로 확인하지 못했습니다."
+      },
+      {
+        "question": "콘크리트1.06이면 모든 산에서 잘 잡나요?",
+        "answer": "정해진 젖은 콘크리트 시험과 실제 바위·진흙·뿌리는 다른 조건입니다."
+      }
+    ],
   },
   {
     id: "nike-acg-zegama-trail-review-2026",
@@ -2443,98 +2274,38 @@ export const posts_2026_07: BlogPost[] = [
 `,
   },
   {
-    id: 'hoka-clifton-pro-preview-2026',
-    slug: 'hoka-clifton-pro-preview-2026',
-    title: '호카 클리프톤 프로 미리보기 | 7/9 글로벌 출시 — 클리프톤 11과 뭐가 다른가 (ProGlide+ 반발 폼, 한국은 아직 무소식)',
-    description:
-      '호카가 클리프톤 라인을 둘로 쪼갰습니다. 컴포트에 집중한 클리프톤 11은 그대로 두고, 반발형 ProGlide+ 폼과 더 공격적인 MetaRocker를 얹은 상위 라인 클리프톤 프로를 2026년 7월 9일 글로벌 출시($165)했습니다. Believe in the Run·Road Trail Run 리뷰를 종합해 11과 실제로 뭐가 달라졌는지, 그리고 정작 한국은 왜 아직 출시 소식이 없는지 정리했습니다.',
-    thumbnail: '/images/blog/hoka-clifton-pro-preview-2026.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-07-09',
-    category: 'review' as const,
-    readingTime: 7,
-    tags: ['호카 클리프톤 프로', '클리프톤 프로', '호카 클리프톤', '데일리 트레이너', '신상 러닝화'],
+    id: "hoka-clifton-pro-preview-2026",
+    slug: "hoka-clifton-pro-preview-2026",
+    title: "초대 클리프톤 PRO — ProGlide·로커·중족 고정,11의 상위 등급으로 보지 않기",
+    description: "RR264g·10.4mm와 DOR·RTR 공시를 구분합니다. 실제 리뷰어의 여름 열감·혀·고정 차이와 한국 정확 상품 미확인을 정리했습니다.",
+    thumbnail: "/images/blog/verified-hoka-clifton-pro-20261110.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-07-09",
+    category: "review",
+    readingTime: 8,
+    tags: [
+      "초대 클리프톤 PRO",
+      "핏",
+      "원문 대조"
+    ],
     content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>호카 클리프톤 프로가 2026년 7월 9일 글로벌 출시</strong>됐습니다($165). 기존 <a href="/blog/hoka-clifton-11-vs-10-comparison">클리프톤 11</a>은 그대로 두고, 반발형 <strong>ProGlide+ 폼</strong>을 얹은 상위 라인을 새로 냈습니다</li>
-    <li>해외 리뷰(Believe in the Run·Road Trail Run) 종합 평가는 <strong>Tier B</strong> — 반발감·롤링은 좋아졌지만 무게가 늘고(+16g) "Pro"라는 이름값 대비 퍼포먼스는 아쉽다는 것이 두 매체의 공통 지적입니다</li>
-    <li><strong>정작 한국은 출시 당일인 지금까지 정식 발매 소식이 없습니다.</strong> 한국 정가·출시일이 미확정인 상태라, 신발 DB 등록은 보류하고 확정되는 대로 갱신하겠습니다</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">🍴</span>
-  <div class="callout-body">
-    <p class="callout-title">클리프톤이 둘로 갈라졌다</p>
-    <p>호카는 지난 7월 1일 <a href="/blog/hoka-clifton-11-vs-10-comparison">클리프톤 11</a>을 냈습니다. 어퍼만 다듬고 폼(CMEVA)은 그대로인 '에볼루션'이었죠. 그런데 딱 일주일 뒤인 <strong>7월 9일, 완전히 다른 성격의 클리프톤 프로</strong>를 별도로 출시했습니다. 11을 대체하는 게 아니라 <strong>"컴포트 클리프톤 + 퍼포먼스 클리프톤"으로 라인을 투트랙 분리</strong>한 겁니다. 외신은 이를 두고 "호카가 아식스 <a href="/blog/asics-novablast-6-vs-hoka-clifton-pro-2026">노바블라스트</a>를 겨냥해 만든 신발"이라 평했습니다 — 반발형 고스택 데일리 자리를 정면으로 노린다는 뜻이죠.</p>
-  </div>
-</div>
-
-<h2>스펙 비교 — 클리프톤 11 vs 클리프톤 프로</h2>
-<table>
-  <thead><tr><th>항목</th><th>클리프톤 11</th><th>클리프톤 프로</th></tr></thead>
-  <tbody>
-    <tr><td>출시(글로벌)</td><td>2026-07-01</td><td>2026-07-09</td></tr>
-    <tr><td>가격(US)</td><td>$154.95</td><td><strong>$165</strong></td></tr>
-    <tr><td>힐 / 전족 스택</td><td>42 / 34mm</td><td>42 / 34mm (동일)</td></tr>
-    <tr><td>드롭</td><td>8mm</td><td>8mm (동일)</td></tr>
-    <tr><td>무게(M 실측)</td><td>280g</td><td><strong>296g</strong> (+16g)</td></tr>
-    <tr><td>미드솔 폼</td><td>CMEVA</td><td><strong>ProGlide+ (초임계 EVA)</strong></td></tr>
-    <tr><td>로커</td><td>일반</td><td><strong>공격적 MetaRocker</strong></td></tr>
-    <tr><td>어퍼</td><td>엔지니어드 메시</td><td>거셋 텅 (일부 "짧다" 지적)</td></tr>
-    <tr><td>해외 리뷰 평점</td><td>8.4~8.65/10 (RTR)</td><td>8.7~9.2/10 (RTR) · Tier B (BITR)</td></tr>
-    <tr><td>한국 출시</td><td>7월 초 이어짐(정가 미확정)</td><td><strong>미확인</strong>(정가·출시일 모두 미정)</td></tr>
-  </tbody>
-</table>
-<p class="caption">※ 무게는 Believe in the Run·Road Trail Run 실측(남성 기준) 교차확인. RunRepeat 정량 랩(SA·에너지 리턴·토박스 mm)은 두 모델 모두 출시 직후라 아직 미게시입니다.</p>
-
-<h2>실제로 뭐가 달라졌나 — 폼과 로커</h2>
-<p>스택·드롭이 똑같으니 차이는 <strong>발밑에서 느껴지는 성격</strong>에 있습니다. 클리프톤 11은 클리프톤 10과 동일한 <strong>CMEVA</strong> 폼을 그대로 씁니다. 클리프톤 프로는 여기에 <strong>ProGlide+라는 초임계(supercritical) EVA</strong>를 얹었는데, 일반 EVA보다 밀도가 낮고 반발이 살아 있어 "클리프톤 이름값보다 훨씬 경쾌하다"는 평(Believe in the Run)을 받습니다.</p>
-<p>여기에 <strong>더 공격적인 MetaRocker</strong> 지오메트리를 더해 힐→토 전환이 빠르게 굴러가도록 설계했습니다. Road Trail Run 멀티테스터 리뷰는 클리프톤 11을 <strong>"미드풋 스트라이커의 데일리 컴포트용"</strong>, 클리프톤 프로를 <strong>"숙련자·전족 스트라이커의 빠른 페이스 훈련용"</strong>으로 구분합니다. 다만 두 리뷰 모두 <strong>"여전히 EVA 계열이라 PEBA·ATPU급 에너지 리턴까지는 못 간다"</strong>고 공통으로 지적합니다 — 이름은 '프로'지만 카본 레이서나 노바블라스트의 ATPU 폼 같은 수준의 반발은 아니라는 뜻입니다.</p>
-
-<h2>해외 리뷰 종합 — 반발은 좋아졌지만 이름값엔 아쉬움</h2>
-<p>Believe in the Run은 클리프톤 프로에 <strong>Tier B</strong>(Design A · Value A · Performance B)를 매겼습니다.</p>
-<ul>
-  <li><strong>장점</strong> — ProGlide+의 통통 튀는 반발감, 공격적 MetaRocker의 부드러운 전환, 클리프톤 10과 동일한 정사이즈 착화감, 스택 대비 합리적인 무게, 내구성 좋은 아웃솔, $165라는 상대적으로 합리적인 가격</li>
-  <li><strong>단점</strong> — 여전히 EVA 계열(PEBA·TPEE·ATPU 아님), "Pro"라는 이름값 대비 아쉬운 퍼포먼스, 진짜 레이스데이 트레이너와는 체감 차이가 큼, 장거리에서는 반발력이 처짐, 클리프톤 11 대비 차별화가 크지 않다는 지적</li>
-</ul>
-<p>Road Trail Run은 두 모델 모두에 <strong>"약간 무겁다"</strong>는 공통 평을 남겼고, 클리프톤 프로의 거셋 텅에 대해 <strong>"일부 테스터는 텅이 짧아 발등이 눌린다"</strong>고 지적했습니다. 종합하면 <strong>"클리프톤보다 확실히 경쾌해졌지만, 이름이 주는 기대(카본 레이서급 반발)까지는 아니다"</strong>가 두 리뷰의 공통 결론입니다.</p>
-
-<div class="callout warning">
-  <span class="callout-icon">🇰🇷</span>
-  <div class="callout-body">
-    <p class="callout-title">한국은 왜 아직 조용한가</p>
-    <p>클리프톤 10·11은 출시와 거의 동시에 국내 언론·리테일러가 다뤘습니다. 그런데 클리프톤 프로는 <strong>출시 당일(7/9) 기준으로 hoka.com/ko-kr, 러너스클럽, 굿러너, 네이버쇼핑 어디에도 등록이 없습니다.</strong> 조용히 시차를 두고 들어올 가능성은 있지만, 클리프톤 11 때와 뚜렷이 다른 패턴입니다. <strong>본 글은 신상 출시 직후 작성으로 한국 정가·출시일이 확정되지 않은 상태</strong>이며, 위 수치는 해외 실측·리뷰 기준입니다. 확정 소식이 나오면 갱신하고, 신발 DB에도 그때 정식 등록하겠습니다.</p>
-  </div>
-</div>
-
-<h2>클리프톤 11 vs 프로, 뭘 골라야 하나</h2>
-<ul>
-  <li><strong>클리프톤 11</strong> — 무릎·발 편한 조깅·회복주 위주라면 이쪽입니다. 부드러운 CMEVA 쿠션과 넓은 핏, 와이드·엑스와이드까지 그대로입니다</li>
-  <li><strong>클리프톤 프로</strong> — 데일리인데 업템포도 소화하고 싶다면 이쪽입니다. 다만 카본 레이서급 반발을 기대하면 실망할 수 있습니다 — '클리프톤보다 경쾌한 데일리' 정도로 기대치를 맞추세요</li>
-  <li><strong>둘 다 애매하다면</strong> — 같은 시기 나온 <a href="/blog/asics-novablast-6-vs-hoka-clifton-pro-2026">노바블라스트 6</a>도 비슷한 자리를 노리는 경쟁작입니다. 노바6는 한국 정가(179,000원)가 이미 확정됐고 더 가볍다는 점에서, 한국 출시가 불투명한 클리프톤 프로를 기다리기보다 지금 살 수 있는 선택지가 필요하다면 노바6 쪽이 현실적입니다. 데일리 트레이너 전체 후보는 <a href="/best/daily-trainer">데일리 트레이너 추천</a>에서 비교해 보세요</li>
-</ul>
-
-<h2>FAQ</h2>
-<div class="faq">
-  <div class="faq-item">
-    <p class="faq-q">Q. 클리프톤 프로가 클리프톤 11을 대체하나요?</p>
-    <p class="faq-a">A. 아니요. 호카는 두 모델을 <strong>동시에 병행 판매</strong>합니다. 11은 컴포트 중심 기존 라인을 유지하고, 프로는 반발감을 더한 상위 라인으로 별도 추가된 겁니다. 라인업 구조가 궁금하면 <a href="/blog/hoka-running-shoes-lineup-tier-guide-2026">호카 러닝화 계급도</a>를 참고하세요.</p>
-  </div>
-  <div class="faq-item">
-    <p class="faq-q">Q. 한국 정가는 얼마나 될까요?</p>
-    <p class="faq-a">A. 아직 확정된 정보가 없습니다. 미국 정가($165)가 클리프톤 11($154.95)보다 약 6% 높은 점을 감안하면, 클리프톤 11의 한국 예상가(약 19만원대)보다 조금 높은 20만원대 초반이 될 가능성이 있지만 <strong>공식 발표 전까지는 추정</strong>일 뿐입니다.</p>
-  </div>
-  <div class="faq-item">
-    <p class="faq-q">Q. 무릎이 안 좋은데 클리프톤 프로가 맞을까요?</p>
-    <p class="faq-a">A. 스택·드롭은 클리프톤 11과 동일해 쿠션 볼륨 자체는 충분합니다. 다만 반발형 폼이라 클리프톤 특유의 '푹신하게 눌러주는' 느낌보다는 살짝 단단하게 튕겨주는 감각입니다. 무릎 보호가 최우선이면 <a href="/blog/max-cushion-running-shoes-knee-protection-2026">맥스 쿠션 러닝화 가이드</a>에서 더 부드러운 옵션도 함께 비교해 보세요.</p>
-  </div>
-</div>
-
-<p><small>출처: Believe in the Run(believeintherun.com) 클리프톤 프로 리뷰 · Road Trail Run(roadtrailrun.com) 클리프톤 11·프로 멀티테스터 비교 · HOKA 공식 발표. 작성 2026년 7월 9일(글로벌 출시 당일) 기준이며, RunRepeat 정량 랩과 한국 출시 정보가 나오는 대로 갱신합니다.</small></p>
+<p><strong>2026-11-10 원문 대조 업데이트.</strong> 11월9~10일 확인한 정확 모델 자료를 바탕으로 공시·검체·개인 착화 의견을 나눴습니다. 자체 착화 후기는 아닙니다.</p><h2>선택에서 먼저 볼 차이</h2><p>PRO는 Clifton11과 별도 모델입니다. PRO라는 이름만으로 모든 러너에게 더 빠르거나 더 편한 상위 등급이라고 정하지 않습니다.</p><p>호주 제조사 본문은 ProGlide™, 제품 사진에는 PROGLIDE+, 리뷰에는 PROGLIDE+ 초임계EVA로 표기돼 있습니다. 표기 차이를 별도 폼 배합으로 추정하지 않았습니다.</p><figure><img src="/images/blog/verified-hoka-clifton-pro-20261110.webp" alt="초대 클리프톤 PRO 제품 자료 이미지" loading="lazy"/><figcaption>호주 남성 Clifton PRO1176510-CMCGR 공식 사진. 한국SKU·폭·촬영 규격은 미확인입니다.</figcaption></figure><div class="table-wrap"><table><thead><tr><th>모델</th><th>무게·측정 조건</th><th>힐/전족 스택 · 드롭</th><th>힐/전족 SA</th><th>힐/전족 리턴</th><th>내부 최광폭/엄지/높이</th></tr></thead><tbody><tr><td>초대 클리프톤 PRO</td><td>264g · RR 검체</td><td>43.2/32.8mm · 10.4mm</td><td>143/128</td><td>53.6/58.5%</td><td>97.1/70.3/26.5mm</td></tr></tbody></table></div><h2>표를 읽는 범위</h2><p>RR 검체와 별도 표시한 DOR 소개 공시는 다른 자료입니다. DOR 소개를 독립 랩 실측으로 표시하지 않습니다. RR 일반 정책은 남성 US9지만 개별 라벨·폭·보정 여부는 미확인이고, 실제 검체 조건이 밝혀진 경우는 본문에 남겼습니다.</p><p>SA·리턴·정적 드롭은 개인의 통증·기록·동작 중 드롭을 입증하지 않습니다. 내부 너비·높이와 한국 다른 성별·와이드 치수도 다릅니다. 미확인은 0으로 채우지 않았습니다. <a href="https://runrepeat.com/testing-methodology" target="_blank" rel="noopener noreferrer">RR 측정법</a></p><h2>PRO에서 실제로 갈린 지점</h2><p>Andrea는 단단하고 완만한 늦은 로커·가속 시 부피감을, Matt의 비교 문구는 더 단단하고 반응 좋은 체감을 적었습니다. RTR 안에서도 혀 자극·중족 밀착 의견이 달랐습니다.</p><p>RR BR106은 106%가 아니며 여름에 덥다는 Andrea의 경험을 반박하는 값도 아닙니다.2E US12 검체를 시험한 Matt Kolat의 느슨한 힐·안정·소음·마모 의견도 일반형 RR 검체와 구분했습니다.</p><h2>초대 클리프톤 PRO의 구조·공시</h2><p>ProGlide™/PROGLIDE+ · 초임계 EVA(리뷰 설명) · 비플레이트 로커</p><p>DOR은 판이 없는 PROGLIDE+ 초임계EVA로 설명합니다. 호주 제조사의ProGlide™와 리뷰의PROGLIDE+ 명칭 차이를 별도 폼·배합으로 단정하지 않습니다.</p><p>RR264g·43.2/32.8mm·10.4mm, DOR소개 266g(남US9)/230g(여US8)·46/38mm·8mm, RTR소개 296g(남US9)/242g(여US8)·42/34mm·8mm를 구분합니다. 호주 공식 무게는N/A로 RR값을 공식값으로 부르지 않습니다.</p><h2>초대 클리프톤 PRO의 실제 착화에서 갈린 점</h2><p>DOR Andrea Myers(여성US9.5·30마일)는 정사이즈·엄지 길이 여유·조이는 중족, 단단한 플랫폼·완만한 늦은 로커와 가속 시 부피감을 느꼈습니다. 여름 열감에도 젖은 도로 접지는 만족했습니다. Matt의PRO비교 규격은 미확인이고 더여유·단단한반응을 느꼈습니다. RTR Courtney는 혀·봉제의 발등 자극, Zachary는 자극없고더붙는핏으로 의견이 달랐습니다.</p><p>RR 내부 최광폭/엄지/높이 97.1/70.3/26.5mm는 한국 다른 성별·와이드 치수가 아닙니다. 실제 앞쪽 길이·발톱 위 높이·중족 압박·힐 고정을 비교하세요.</p><h2>초대 클리프톤 PRO에서 함께 남긴 한계</h2><p>RTR Matt Kolat의US12/UK11/EU46 2E 317g검체는 느슨한 힐·안정·소음·마모를 지적했습니다.2E를 4E로 바꾸거나 외부 바닥 126/92/95mm를 내부 치수로 쓰지 않습니다. BR106은%가 아니며 Andrea의 더운 체감을 반박하지 않습니다. RR부분거싯/RTR전체거싯 표현도 나눕니다.</p><h2>초대 클리프톤 PRO의 한국 판매 확인 범위</h2><p>한국 정확Clifton 상품의 가격·SKU·폭·현재 재고는 공식gateway406·연결스토어 429 등으로 미확인입니다. 검색·접근 실패를 한국미출시·단종으로 해석하지 않고 해외 가격·폭을 한국에 대입하지 않습니다.</p><h2>매장에서 비교할 질문</h2><p>평소 양말·인솔로 앞쪽 길이와 발톱 위 높이, 끈을 조일 때 발등 압박, 걷고 돌 때 힐 고정과 칼라 마찰을 확인하세요. 앞볼이 넓다는 인상만으로 앞코 전체 높이나 중족 공간까지 맞는다고 가정하지 않습니다.</p><p>몇 분/km면 무조건 이 모델, 몇 km부터 통증이 줄어든다는 공통 경계는 이 자료에서 확인하지 못했습니다. 평발·부상 이력만으로 모델을 처방하거나 국소 마모를 공통 수명으로 환산하지 않았습니다.</p><h2>확인한 원문·상품 조건</h2><ul><li><a href="https://runrepeat.com/hoka-clifton-pro" target="_blank" rel="noopener noreferrer">초대 클리프톤 PRO RR 정확 모델</a> — 실험실 검체·공시를 구분.</li><li><a href="https://www.doctorsofrunning.com/hoka-clifton-pro-review/" target="_blank" rel="noopener noreferrer">초대 클리프톤 PRO DOR 착화 원문</a> — 실제 리뷰어·규격의 개인 의견.</li><li><a href="https://au.hoka.com/products/clifton-pro-1176510-cmcgr-cmcgr" target="_blank" rel="noopener noreferrer">호카 호주 Clifton PRO 남성 상품 안내</a> — 1176510-CMCGR, 드롭 8mm. 무게는 기재되지 않았습니다. 한국 판매 조건과 구분합니다.</li><li><a href="https://au.hoka.com/blog/which-clifton-suits-you" target="_blank" rel="noopener noreferrer">호카 호주 Clifton11·PRO 비교 안내</a> — 두 모델의 폼·로커·어퍼 설명입니다. 해외 폭 옵션을 한국 재고로 해석하지 않았습니다.</li><li><a href="https://www.hoka.com/ko-kr/" target="_blank" rel="noopener noreferrer">호카 한국 공식 사이트</a> — 현재 정확한 한국 상품·가격은 확인하지 못했습니다.</li><li><a href="https://www.hoka.com/ko/kr/" target="_blank" rel="noopener noreferrer">호카 한국어 공식 페이지</a> — 현재 정확한 한국 상품·가격은 확인하지 못했습니다.</li><li><a href="https://brand.naver.com/hoka" target="_blank" rel="noopener noreferrer">호카 한국 공식 연결 스토어</a> — 현재 정확한 상품·가격·재고는 확인하지 못했습니다.</li><li><a href="https://www.roadtrailrun.com/2026/07/hoka-clifton-pro-and-clifton-11.html?m=0" target="_blank" rel="noopener noreferrer">Road Trail Run Clifton11·PRO 비교 착화</a> — Peter Stuart·Courtney Kelly·Zachary Russell의 개인 의견입니다. 테스터별 발·규격과 소개 수치를 구분했습니다.</li><li><a href="https://www.roadtrailrun.com/2026/07/matts-hoka-clifton-pro-2e-wide-review.html" target="_blank" rel="noopener noreferrer">Road Trail Run Clifton PRO 2E 착화</a> — Matt Kolat의 US12 2E 검체 317g. 외부 플랫폼 너비와 내부 젤 치수는 다른 측정입니다.</li></ul>
 `,
+    updatedAt: "2026-11-10",
+    faqs: [
+      {
+        "question": "한국 출시가 안 됐나요?",
+        "answer": "정확 한국 상품에 접근하지 못해 미확인인 것이며 미출시·단종으로 단정하지 않습니다."
+      },
+      {
+        "question": "PRO가 더 빠른가요?",
+        "answer": "폼·로커 구조와 개인의 전환 체감이 달라 공통 기록 향상을 보장하지 않습니다."
+      },
+      {
+        "question": "2E가4E급인가요?",
+        "answer": "검토한2E 표본의 폭 라벨을 유지하며 다른 숫자 폭으로 바꾸지 않습니다."
+      }
+    ],
   },
   {
     id: "asics-novablast-5-vs-6-comparison-2026",
