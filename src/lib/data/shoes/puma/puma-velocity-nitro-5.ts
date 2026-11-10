@@ -6,6 +6,8 @@ export const shoe: Shoe = {
   slug: 'puma-velocity-nitro-5',
   brand: 'Puma',
   name: '벨로시티 나이트로 5',
+  imageCaption: "벨로시티 나이트로 5 PUMA White / Ultra Red 사진(312944-05)입니다. 푸마 한국 공식 상품 갤러리와 대조했습니다. 구매할 색상·성별·폭 옵션을 구분하세요.",
+  imageSource: {"title":"PUMA 한국 공식 상품 갤러리","url":"https://kr.puma.com/kr/ko/pd/velocity-nitro-5/312944.html?dwvar_312944_color=05"},
   image: '/images/shoes/puma/velocitynitro5/side.webp',
   images: [
     '/images/shoes/puma/velocitynitro5/side.webp',

@@ -404,3 +404,9 @@ On 4종은 11월 11일 확인한 공식 품번의 현재 갤러리입니다. Nik
 | under-armour-infinite-elite-2 | 3028169-001 | [공식 측면 원본](https://underarmour.scene7.com/is/image/Underarmour/3028169-001_DEFAULT?wid=1600&fmt=png-alpha) | 5 |
 
 ASICS 뷰는 SR_RT_GLB·SB_FR_GLB·SB_BK_GLB·SB_FL_GLB·SB_BT_GLB·SB_TP_GLB, HOKA 뷰는 1·3·5·4·7, Under Armour 뷰는 DEFAULT·A·PAIR·TOE·SOLE을 해당 파일과 대조했습니다. 이전 수집 기록의 가공 이력은 유지합니다.
+
+## 2026-11-11 PUMA 흰색 제품 사진 2종 재대조
+
+- 디비에이트 나이트로 퓨어: [한국 공식 313904-01 갤러리](https://kr.puma.com/kr/ko/pd/deviate-pure-nitro/313904.html?dwvar_313904_color=01), PUMA White / PUMA Silver. 기존 `front.webp`는 제품 대신 “Picture coming soon” 안내가 담겨 있어 갤러리 참조를 제거했습니다. `official-313904-01-pair.jpg`는 해당 공식 갤러리의 페어 사진 원본을 가공 없이 복사한 파일입니다. 기존 side·back·angle·outsole 파일은 각각 공식 sv01·bv·sv02·sv04 사진과 대조했습니다. 파일명 outsole은 기존 이름이며 sv04는 사선 사진입니다.
+- 벨로시티 나이트로5: [한국 공식 312944-05 갤러리](https://kr.puma.com/kr/ko/pd/velocity-nitro-5/312944.html?dwvar_312944_color=05), PUMA White / Ultra Red. 기존 side·angle·top·detail 4장은 각각 sv01·sv04·sv02·sv03 사진과 대조했습니다. top 파일은 위·밑창 페어 사진입니다.
+- 사진 대조는 해당 색상의 이미지 식별 범위이며 현재 선택 재고·가격·한국 폭 옵션의 인증이 아닙니다.

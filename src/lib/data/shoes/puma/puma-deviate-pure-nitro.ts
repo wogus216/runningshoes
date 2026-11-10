@@ -6,10 +6,12 @@ export const shoe: Shoe = {
     slug: "puma-deviate-pure-nitro",
     brand: "Puma",
     name: "디비에이트 나이트로 퓨어",
+    imageCaption: "디비에이트 나이트로 퓨어 PUMA White / PUMA Silver 사진(313904-01)입니다. 푸마 한국 공식 상품 갤러리와 대조했습니다. 구매할 색상·성별·폭 옵션을 구분하세요.",
+    imageSource: {"title":"PUMA 한국 공식 상품 갤러리","url":"https://kr.puma.com/kr/ko/pd/deviate-pure-nitro/313904.html?dwvar_313904_color=01"},
     image: "/images/shoes/puma/deviate-pure-nitro/side.webp",
     images: [
       "/images/shoes/puma/deviate-pure-nitro/side.webp",
-      "/images/shoes/puma/deviate-pure-nitro/front.webp",
+      "/images/shoes/puma/deviate-pure-nitro/official-313904-01-pair.jpg",
       "/images/shoes/puma/deviate-pure-nitro/back.webp",
       "/images/shoes/puma/deviate-pure-nitro/angle.webp",
       "/images/shoes/puma/deviate-pure-nitro/outsole.webp"
