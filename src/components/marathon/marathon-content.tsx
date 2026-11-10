@@ -71,7 +71,7 @@ export function MarathonContent({ events, buildDate }: MarathonContentProps) {
             key={band.id}
             band={band}
             today={today}
-            defaultOpen={band.id === 'open' || band.id === 'upcoming'}
+            defaultOpen={band.id === 'open' || band.id === 'upcoming' || band.id === 'checking'}
             note={band.id === 'open' ? VERIFY_NOTE : undefined}
           />
         ))

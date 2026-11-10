@@ -37,20 +37,20 @@ export function generateMetadata(): Metadata {
 
 export default function MarathonPage() {
   const events = getMarathonEvents();
-  const majorEvents = getMajorEvents();
+  const majorEvents = getMajorEvents().filter((event) => !event.scheduleUnverified);
   // 빌드 시점 날짜. 클라이언트가 마운트 후 진짜 오늘로 다시 계산한다.
   const buildDate = localIsoDate();
 
   // 히어로 지표 — 전부 데이터에서 산출한다(하드코딩 금지)
   const bands = groupIntoBands(events, buildDate);
   const openCount = bands.find((b) => b.id === 'open')?.events.length ?? 0;
-  const thisMonth = events.filter((e) => e.date >= buildDate && e.date.slice(0, 7) === buildDate.slice(0, 7)).length;
+  const thisMonth = events.filter((e) => !e.scheduleUnverified && e.date >= buildDate && e.date.slice(0, 7) === buildDate.slice(0, 7)).length;
   const nextMonthKey = (() => {
     const d = new Date(`${buildDate}T00:00:00Z`);
     d.setUTCMonth(d.getUTCMonth() + 1);
     return `${d.getUTCFullYear()}-${String(d.getUTCMonth() + 1).padStart(2, '0')}`;
   })();
-  const nextMonth = events.filter((e) => e.date.slice(0, 7) === nextMonthKey).length;
+  const nextMonth = events.filter((e) => !e.scheduleUnverified && e.date.slice(0, 7) === nextMonthKey).length;
 
   const marathonStats = [
     { label: '접수중', value: `${openCount}` },
@@ -72,6 +72,7 @@ export default function MarathonPage() {
     registrationStart: event.registrationStart,
     registrationEnd: event.registrationEnd,
     postponed: event.postponed,
+    scheduleUnverified: event.scheduleUnverified,
   }));
 
   // JSON-LD: 메이저 대회 SportsEvent + Offers

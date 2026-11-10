@@ -14,7 +14,7 @@ import type { MarathonListEvent } from '@/types/marathon';
  * 클라이언트(진짜 오늘) 양쪽에서 같은 함수를 쓸 수 있게 한다.
  */
 
-export type BandId = 'open' | 'upcoming' | 'closed' | 'past';
+export type BandId = 'open' | 'upcoming' | 'closed' | 'checking' | 'past';
 
 export type Band = {
   id: BandId;
@@ -26,6 +26,7 @@ const BAND_ORDER: { id: BandId; label: string }[] = [
   { id: 'open', label: '지금 접수중' },
   { id: 'upcoming', label: '곧 열림' },
   { id: 'closed', label: '접수 마감 · 대회는 열림' },
+  { id: 'checking', label: '일정 확인 필요' },
   { id: 'past', label: '지난 대회' },
 ];
 
@@ -41,10 +42,10 @@ export function daysUntil(dateStr: string, today: string): number {
 
 /**
  * 대회일이 지났는가 — 밴드와 validate 가 같은 판정을 쓴다.
- * 연기(postponed)는 date 가 원래 일정이라 지나도 '지난 대회'가 아니다.
+ * 연기(postponed)·공식 일정 미대조는 날짜가 지나도 '지난 대회'로 확정하지 않는다.
  */
-export function isPast(event: Pick<MarathonListEvent, 'date' | 'postponed'>, today: string): boolean {
-  return event.date < today && !event.postponed;
+export function isPast(event: Pick<MarathonListEvent, 'date' | 'postponed' | 'scheduleUnverified'>, today: string): boolean {
+  return event.date < today && !event.postponed && !event.scheduleUnverified;
 }
 
 /**
@@ -53,6 +54,7 @@ export function isPast(event: Pick<MarathonListEvent, 'date' | 'postponed'>, tod
  * 2026-10-23 전까지 목록 행은 status 원문을 그대로 찍어 "접수 마감" 밴드 안에 "접수중" 행이 생겼다(가민런).
  */
 export function displayStatusOf(event: MarathonListEvent, today: string): string {
+  if (event.scheduleUnverified) return '일정 확인 필요';
   if (event.postponed) return '일정 연기';
   if (bandOf(event, today) === 'closed' && (event.status === '접수중' || event.status === '접수예정')) return '마감';
   return event.status;
@@ -60,6 +62,7 @@ export function displayStatusOf(event: MarathonListEvent, today: string): string
 
 /** 목록 행 상태 칸 — 마감 전이면 D-day, 아니면 displayStatusOf. */
 export function rowStateLabel(event: MarathonListEvent, today: string): { text: string; dday: boolean } {
+  if (event.scheduleUnverified) return { text: '일정 확인 필요', dday: false };
   if (event.postponed) return { text: '일정 연기', dday: false };
   if (event.registrationEnd) {
     const left = daysUntil(event.registrationEnd, today);
@@ -69,15 +72,17 @@ export function rowStateLabel(event: MarathonListEvent, today: string): { text: 
 }
 
 /** 대회일 배지 — 'D-N' · '오늘 개최' · '대회 종료'. 연기면 표시하지 않는다(null). */
-export function raceDayBadge(event: Pick<MarathonListEvent, 'date' | 'postponed'>, today: string): { kind: 'dday' | 'today' | 'past'; text: string } | null {
+export function raceDayBadge(event: Pick<MarathonListEvent, 'date' | 'postponed' | 'scheduleUnverified'>, today: string): { kind: 'dday' | 'today' | 'past'; text: string } | null {
+  if (event.scheduleUnverified) return null;
   const left = daysUntil(event.date, today);
   if (left > 0) return { kind: 'dday', text: `D-${left}` };
   if (left === 0) return { kind: 'today', text: '오늘 개최' };
   return event.postponed ? null : { kind: 'past', text: '대회 종료' };
 }
 
-/** 판정 순서가 곧 우선순위다 — past를 먼저 걸러낸 뒤 접수 기간, 마지막이 수동 status. */
+/** 일정 미대조를 구분한 뒤 past, 접수 기간, 수동 status 순으로 판정한다. */
 export function bandOf(event: MarathonListEvent, today: string): BandId {
+  if (event.scheduleUnverified) return 'checking';
   // 1. 지난 대회 — 날짜만 본다. 유일하게 100% 자동 판정되는 밴드다.
   //    단 연기(새 날짜 미정)는 원래 날짜가 지나도 past가 아니다 — 접수 기간·status로 내려간다.
   if (isPast(event, today)) return 'past';
@@ -101,10 +106,10 @@ export function bandOf(event: MarathonListEvent, today: string): BandId {
   }
 }
 
-/** 4개 밴드를 항상 같은 순서로 반환한다. 비어 있어도 자리를 지킨다(호출자가 숨김을 결정). */
+/** 기존 4개 밴드와, 대상이 있을 때만 확인 필요 밴드를 반환한다. */
 export function groupIntoBands(events: readonly MarathonListEvent[], today: string): Band[] {
   const buckets: Record<BandId, MarathonListEvent[]> = {
-    open: [], upcoming: [], closed: [], past: [],
+    open: [], upcoming: [], closed: [], checking: [], past: [],
   };
   for (const e of events) buckets[bandOf(e, today)].push(e);
 
@@ -112,5 +117,7 @@ export function groupIntoBands(events: readonly MarathonListEvent[], today: stri
     buckets[id].sort((a, b) => a.date.localeCompare(b.date));
   }
 
-  return BAND_ORDER.map(({ id, label }) => ({ id, label, events: buckets[id] }));
+  return BAND_ORDER
+    .filter(({ id }) => id !== 'checking' || buckets.checking.length > 0)
+    .map(({ id, label }) => ({ id, label, events: buckets[id] }));
 }

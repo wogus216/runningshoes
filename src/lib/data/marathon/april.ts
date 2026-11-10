@@ -53,14 +53,24 @@ export const aprilEvents: MarathonEvent[] = [
   {
     id: 'jeju-ultra-2026',
     name: '제25회 제주 국제울트라마라톤',
-    date: '2026-04-04',
-    month: '4월',
-    location: '제주',
+    date: '2026-11-07',
+    month: '11월',
+    location: '제주 탑동공원 출발 · 보존 요강 기준',
     region: '제주',
     distances: ['울트라'],
     status: '대회종료',
     isMajor: false,
-    description: '200K/100K/50K 울트라마라톤',
+    description: '7월 6일 개인 블로그에 보존된 제25회 요강은 2026년 11월 7~8일 제주 도로 울트라를 안내한다. 기존 4월 4일 일정을 그대로 종료된 대회로 소개하지 않도록 참고 날짜를 수정했으며, 공식 원문·최종 변경·실제 개최 여부 대조는 미완료다. 보존본은 200km·100km·50km 도로 종목을 구분하며, 종전 4월 안내에 섞였던 트레일 종목을 11월 확정 종목으로 옮기지 않았다.',
+    scheduleUnverified: true,
+    factCheck: {
+      checkedAt: '2026-11-11',
+      sources: [
+        { title: '7월 6일 개인 블로그의 KUMF 요강 보존본 · 공식 직접 확인 아님', url: 'https://blog.naver.com/tiffany9/224338261042' },
+        { title: '러닝온 11월 일정 소개 · 2차 자료', url: 'https://runningon.co.kr/races/jeju-international-ultra-2026' },
+      ],
+      note: '공식 일정 확인을 완료한 대회가 아니다. 7월 6일 보존본은 4월 4일 취소와 11월 7일 재공지를 설명하고 요강 본문도 11월 7~8일로 적혀 있다. 원문 KUMF의 HTTPS 연결은 실패했으며 보존본의 현재성·누락 여부는 검증하지 못했다. 참고 날짜·종목만 재정리하고 요금·출발 시각·컷오프·참가 자격·숙박 할인·완주 집계는 확정값으로 추가하지 않았다. 일정이 지난 사실과 실제 개최 여부를 구분한다.',
+    },
+    lastVerified: '2026-11-11',
   },
   {
     id: 'gunsan-saemangeum-2026',

@@ -61,9 +61,9 @@ export async function generateMetadata({ params }: MarathonDetailPageProps): Pro
     .trim();
   const shortPlace = event.location.replace(/\s*\([^)]*\)\s*$/, '');
   // 연기(새 날짜 미정)면 원래 날짜를 제목에 걸지 않는다 — 그날 열리는 대회처럼 읽힌다
-  const dateOnly = event.postponed ? '일정 연기' : shortDate.replace(/\s*\([일월화수목금토]\)/, '');
+  const dateOnly = event.scheduleUnverified ? '일정 확인 필요' : event.postponed ? '일정 연기' : shortDate.replace(/\s*\([일월화수목금토]\)/, '');
   const acceptsEntry = event.status === '접수중' || event.status === '접수예정';
-  const intentKeywords = acceptsEntry ? '접수·참가비·코스' : '코스·참가비·기념품';
+  const intentKeywords = event.scheduleUnverified ? '일정·자료 확인 현황' : acceptsEntry ? '접수·참가비·코스' : '코스·참가비·기념품';
   // 사이트명은 app/layout.tsx 의 title.template(`%s | ${SITE_NAME}`)이 붙인다 — 여기서 또 붙이면 두 번 나온다.
   // 그 9자(" | 러닝의 모든것")까지 합쳐 60자 안에 들어가야 SERP 에서 안 잘린다.
   const titleHead = `${shortName} ${intentKeywords}`;
@@ -75,24 +75,26 @@ export async function generateMetadata({ params }: MarathonDetailPageProps): Pro
   // 그 자리에 난이도·출발시각 같은 스펙을 넣으면 "지금 신청할 수 있나"라는 질문에
   // 답하지 못한 채 잘린다 — 접수 상태를 먼저 놓고, 대회 고유 설명이 그 뒤를 잇게 한다.
   // 대회명은 title 이 이미 말한다. 스니펫에서 반복하면 155자 중 20~30자를 그대로 버린다.
-  const descParts = event.postponed
+  const descParts = event.scheduleUnverified
+    ? [`공식 일정 미확인. 참고 일정 ${shortDate}. 최종 변경·실제 개최 여부는 확인되지 않았습니다.`]
+    : event.postponed
     ? [`일정 연기 — 새 날짜 미정(원래 ${shortDate}). ${event.location}. ${event.distances.join('·')}.`]
     : [`${shortDate} ${event.location}. ${event.distances.join('·')}.`];
-  if (event.status === '접수중') {
+  if (!event.scheduleUnverified && event.status === '접수중') {
     descParts.push(
       event.registrationEnd
         ? `접수중 (${formatDateKo(event.registrationEnd, { weekday: true })} 마감).`
         : '접수중 (마감일 없이 선착순).',
     );
-  } else if (event.status === '접수예정') {
+  } else if (!event.scheduleUnverified && event.status === '접수예정') {
     descParts.push(
       event.registrationStart ? `접수 ${formatDateKo(event.registrationStart, { weekday: true })} 시작.` : '접수 예정.',
     );
-  } else if (event.status === '마감') {
+  } else if (!event.scheduleUnverified && event.status === '마감') {
     descParts.push('접수 마감.');
   }
   // "~"는 "부터"로 읽히므로 배열 첫 항목(대개 풀코스=최고가)이 아니라 최저가를 쓴다
-  const fees = event.raceInfo?.entryFees;
+  const fees = event.scheduleUnverified ? undefined : event.raceInfo?.entryFees;
   if (fees?.length) {
     descParts.push(`참가비 ${formatFee(Math.min(...fees.map((f) => f.fee)))}~.`);
   }
@@ -174,10 +176,11 @@ export default async function MarathonDetailPage({ params }: MarathonDetailPageP
     date: event.date,
     status: event.status,
     postponed: event.postponed,
+    scheduleUnverified: event.scheduleUnverified,
     registrationStart: event.registrationStart,
     registrationEnd: event.registrationEnd,
   };
-  const feeText = feeSummary(event.raceInfo?.entryFees);
+  const feeText = event.scheduleUnverified ? '' : feeSummary(event.raceInfo?.entryFees);
   const sentences = splitSentences(event.description);
 
   // 접수 마감 판정은 목록 밴드(bands.ts)와 같은 규칙 — **날짜가 수동 status를 이긴다.**
@@ -270,9 +273,11 @@ export default async function MarathonDetailPage({ params }: MarathonDetailPageP
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      {!event.scheduleUnverified && (
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      )}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
-      {faqJsonLd && (
+      {!event.scheduleUnverified && faqJsonLd && (
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       )}
 
@@ -313,7 +318,7 @@ export default async function MarathonDetailPage({ params }: MarathonDetailPageP
           <dl className="grid gap-2.5 text-secondary sm:grid-cols-2">
             <div className="flex items-center gap-2">
               <Calendar className="h-5 w-5 shrink-0 text-sky-700" />
-              <span className="font-medium text-primary">{formatDateKo(event.date, { weekday: true })}{event.postponed && ' → 일정 연기(새 날짜 미정)'}</span>
+              <span className="font-medium text-primary">{event.scheduleUnverified && '참고 일정 · '}{formatDateKo(event.date, { weekday: true })}{event.postponed && ' → 일정 연기(새 날짜 미정)'}</span>
             </div>
             <div className="flex items-center gap-2">
               <MapPin className="h-5 w-5 shrink-0 text-sky-700" />
@@ -332,7 +337,7 @@ export default async function MarathonDetailPage({ params }: MarathonDetailPageP
               </div>
             )}
             {/* 마감된 대회에서 '시작'만 단독으로 남으면 접수 예정처럼 읽힌다 — 마감이면 아래 '접수 마감' 줄로 대신한다 */}
-            {event.registrationStart && !registrationClosed && (
+            {!event.scheduleUnverified && event.registrationStart && !registrationClosed && (
               <div className="flex items-center gap-2">
                 <FileText className="h-5 w-5 shrink-0 text-sky-700" />
                 <span>
@@ -354,7 +359,7 @@ export default async function MarathonDetailPage({ params }: MarathonDetailPageP
               registrationNote 에 공식 표기를 그대로 담아 '미확인' 대신 보여준다.
               확인했는데 날짜가 없는 것과 확인 안 한 것은 다른 상태다.
             */}
-            {!registrationClosed && (event.status === '접수중' || event.status === '접수예정') && (
+            {!event.scheduleUnverified && !registrationClosed && (event.status === '접수중' || event.status === '접수예정') && (
               <div className="flex items-start gap-2">
                 <Timer className="mt-0.5 h-5 w-5 shrink-0 text-sky-700" />
                 {event.registrationEnd ? (
@@ -453,7 +458,7 @@ export default async function MarathonDetailPage({ params }: MarathonDetailPageP
           )}
           {event.factCheck && (
             <div className="mt-4 space-y-2 text-sm leading-relaxed text-secondary">
-              <p className="font-medium text-primary">정보 확인 · {formatDateKo(event.factCheck.checkedAt)}</p>
+              <p className="font-medium text-primary">{event.scheduleUnverified ? '자료 점검' : '정보 확인'} · {formatDateKo(event.factCheck.checkedAt)}</p>
               {event.factCheck.note && <p>{event.factCheck.note}</p>}
               <ul className="space-y-1">
                 {event.factCheck.sources.map((source) => (
@@ -512,7 +517,7 @@ export default async function MarathonDetailPage({ params }: MarathonDetailPageP
             </div>
             <div className="rounded-[4px] bg-surface p-3">
               <dt className="text-xs text-secondary mb-1">대회 일시</dt>
-              <dd className="font-medium text-primary">{formatDateKo(event.date, { weekday: true })}{event.postponed && ' → 일정 연기(새 날짜 미정)'}</dd>
+              <dd className="font-medium text-primary">{event.scheduleUnverified && '참고 일정 · '}{formatDateKo(event.date, { weekday: true })}{event.postponed && ' → 일정 연기(새 날짜 미정)'}</dd>
             </div>
             <div className="rounded-[4px] bg-surface p-3">
               <dt className="text-xs text-secondary mb-1">접수 상태</dt>
@@ -521,7 +526,7 @@ export default async function MarathonDetailPage({ params }: MarathonDetailPageP
               </dd>
               {event.lastVerified && (
                 <p className="mt-1.5 text-[11px] leading-snug text-secondary">
-                  {event.lastVerified.replace(/-/g, '.')} 확인 · 신청 전 공식 페이지에서 다시 확인하세요.
+                  {event.lastVerified.replace(/-/g, '.')} {event.scheduleUnverified ? '자료 점검 · 공식 일정 미확인' : '확인 · 신청 전 공식 페이지에서 다시 확인하세요.'}
                 </p>
               )}
             </div>

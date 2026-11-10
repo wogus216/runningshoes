@@ -21,6 +21,7 @@ const STATUS_STYLES: Record<string, string> = {
   '마감': 'bg-slate-400 text-white',
   '대회종료': 'bg-slate-200 text-slate-600',
   '일정 연기': 'bg-amber-100 text-amber-700',
+  '일정 확인 필요': 'bg-amber-100 text-amber-700',
 };
 
 const DAY_STYLES = {
@@ -45,7 +46,7 @@ export function RaceStatusBadge({ event, buildDate, size = 'md' }: { event: Live
   return <span className={`${box} ${STATUS_STYLES[status] ?? ''}`}>{status}</span>;
 }
 
-export function RaceDayBadge({ event, buildDate }: { event: Pick<MarathonListEvent, 'date' | 'postponed'>; buildDate: string }) {
+export function RaceDayBadge({ event, buildDate }: { event: Pick<MarathonListEvent, 'date' | 'postponed' | 'scheduleUnverified'>; buildDate: string }) {
   const today = useLiveToday(buildDate);
   const badge = raceDayBadge(event, today);
   if (!badge) return null;

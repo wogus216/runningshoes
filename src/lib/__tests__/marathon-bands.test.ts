@@ -121,3 +121,29 @@ describe('raceDayBadge', () => {
     expect(raceDayBadge({ date: '2026-07-30', postponed: true }, TODAY)).toBeNull();
   });
 });
+
+
+describe('공식 일정 대조 미완료', () => {
+  it('원문 미대조 일정은 과거·오늘·미래 모두 확인 필요로 표시한다', () => {
+    for (const date of ['2026-07-31', TODAY, '2026-09-01']) {
+      const e = ev({ date, scheduleUnverified: true, status: '대회종료' });
+      expect(displayStatusOf(e, TODAY)).toBe('일정 확인 필요');
+      expect(raceDayBadge(e, TODAY)).toBeNull();
+    }
+  });
+
+  it('접수 날짜가 있어도 확인되지 않은 모집을 D-day나 접수중으로 표시하지 않는다', () => {
+    const e = ev({ scheduleUnverified: true, registrationEnd: '2026-08-05', status: '접수중' });
+    expect(rowStateLabel(e, TODAY)).toEqual({ text: '일정 확인 필요', dday: false });
+    expect(bandOf(e, TODAY)).toBe('checking');
+  });
+
+  it('확인 필요 그룹은 다른 네 그룹과 섞이지 않고 URL을 보존한다', () => {
+    const pending = ev({ id: 'unverified', date: '2026-07-31', scheduleUnverified: true });
+    const normal = ev({ id: 'verified', date: '2026-09-01' });
+    const bands = groupIntoBands([pending, normal], TODAY);
+    expect(bands.find(b => b.id === 'checking')?.events.map(e => e.id)).toEqual(['unverified']);
+    expect(bands.find(b => b.id === 'open')?.events.map(e => e.id)).toEqual(['verified']);
+    expect(bands.flatMap(b => b.events).map(e => e.id).sort()).toEqual(['unverified', 'verified']);
+  });
+});
