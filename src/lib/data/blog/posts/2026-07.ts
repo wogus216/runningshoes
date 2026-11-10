@@ -1407,101 +1407,38 @@ export const posts_2026_07: BlogPost[] = [
 `,
   },
   {
-    id: 'new-balance-sc-rebel-preview-2026',
-    slug: 'new-balance-sc-rebel-preview-2026',
-    title: '뉴발란스 SC 레벨 한국 출시 확정 — 8월 22일 오전 11시·259,000원 | RTR 9.99/10에 BITR "역대 최고 NB"까지, 그런데 발볼이 걸린다',
-    description:
-      '뉴발란스 SC 레벨(SuperComp Rebel)의 한국 출시가 확정됐습니다 — 8월 22일(토) 오전 11시, 발매가 259,000원(공식 218g·40/36mm·드롭 4mm, RunRepeat 실측 207g·38.3/29.5mm·드롭 8.8mm). 8월 13일부터는 런허브 여의도에서 체험도 가능합니다. Road Trail Run 9.99/10에 이어 Believe in the Run도 A Tier와 함께 "역대 최고의 뉴발란스 러닝화"라는 평을 냈고, SC 트레이너 v3를 사실상 대체하는 자리입니다. 런유어웨이 10K 패키지(참가권 포함 259,000원)와 단독 구매 중 뭐가 이득인지 계산이 섰습니다 — RTR·Doctors of Running 두 곳이 갑피가 좁다고 지적했지만, 출시일에 확인해 보니 국내에 와이드 2E가 함께 나왔습니다(2026-08-22 갱신).',
-    thumbnail: '/images/blog/new-balance-sc-rebel-preview-2026.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-07-23',
-    updatedAt: '2026-10-23',
-    category: 'review' as const,
+    id: "new-balance-sc-rebel-preview-2026",
+    slug: "new-balance-sc-rebel-preview-2026",
+    title: "SC 레벨 구조 분석 — Rebelv5와 별개, 지면 쪽 판·폼 조성·앞코 확인",
+    description: "SuperComp Rebel의207g 검체와 Matt의 실제 착화를 정리합니다. carbon-infused/full carbon-fibre 상충, 폴리머 추측과 한국 현재 판매 미확인을 구분합니다.",
+    thumbnail: "/images/shoes/newbalance/screbel/side.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-07-23",
+    updatedAt: "2026-11-10",
+    category: "review",
     readingTime: 8,
-    tags: ['뉴발란스 SC 레벨', 'SC Rebel', 'Infinion 폼', 'Energy Arc', '슈퍼 트레이너', '신상 러닝화'],
+    tags: [
+      "SC 레벨",
+      "원문 대조",
+      "핏"
+    ],
     content: `
-<div class="deadline-strip">👟 <strong>(8/12 갱신) 한국 출시 확정 — 8월 22일(토) 오전 11시, 발매가 259,000원.</strong> 8월 13일(목)부터 <strong>런허브 여의도</strong>에서 실물 체험이 가능합니다. 발볼이 걱정이라면 출시 전 체험이 답입니다.</div>
-
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>SC 레벨 한국 출시가 8월 22일(토) 오전 11시·259,000원으로 확정</strong>됐습니다(공식 218g·스택 40/36mm·드롭 4mm, RunRepeat 실측 207g·38.3/29.5mm·드롭 8.8mm). 새 Infinion 폼에 지면 높이에 깔린 <strong>Energy Arc 플레이트</strong>를 얹은 "훈련·레이스 겸용" 슈퍼 트레이너입니다</li>
-    <li>해외 리뷰가 <strong>이례적으로 높습니다</strong> — Road Trail Run 멀티 테스터가 9.99/10, 9.5/10을 줬고, Believe in the Run은 <strong>"역대 최고의 뉴발란스 러닝화"</strong>라는 표현까지 썼습니다. 포지션상 <strong><a href="/shoes/new-balance-sc-trainer-v3">SC 트레이너 v3</a>를 대체</strong>합니다(RunRepeat 실측 278g → 207g, 71g 경량화)</li>
-    <li>발목을 잡던 건 <strong>갑피 폭</strong>이었습니다. RTR·DOR <strong>두 곳 모두</strong> "좁다"고 지적했는데, <strong>(8/22 갱신)</strong> 국내 출시분에 <strong>남성 2E 와이드</strong>가 포함된 것이 확인됐습니다. 발볼이 넓다면 처음부터 2E를 보면 됩니다</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <p>뉴발란스가 7월 21일 <a href="/blog/new-balance-sc-elite-v6-preview-2026">SC 엘리트 v6</a>와 함께 발표한 신모델입니다. 엘리트 v6가 레이스데이 전용이라면, SC 레벨은 <strong>같은 기술을 훈련까지 끌고 내려온 쪽</strong>입니다. 이름이 비슷한 기존 <a href="/shoes/new-balance-rebel-v5">퓨얼셀 레벨 v5</a>(경량 데일리)와는 <strong>완전히 다른 라인</strong>이니 혼동하지 마세요.</p>
-</div>
-
-<h2>공식 스펙</h2>
-<table>
-  <thead><tr><th>항목</th><th>SC 레벨 (v1)</th></tr></thead>
-  <tbody>
-    <tr><td>무게</td><td><strong>218g</strong> (남 US 9.5) / 174g (여 US 7)</td></tr>
-    <tr><td>스택</td><td>힐 40mm / 전족 36mm</td></tr>
-    <tr><td>드롭</td><td>4mm <em>(DOR "체감은 5~6mm에 가깝다")</em></td></tr>
-    <tr><td>미드솔</td><td>Infinion 폼 (반응성 강화 버전)</td></tr>
-    <tr><td>플레이트</td><td>Energy Arc — <strong>폼에 묻히지 않고 지면 쪽에 배치</strong></td></tr>
-    <tr><td>아웃솔</td><td>CPU(캐스트 폴리우레탄) — 러버보다 내구성 우위</td></tr>
-    <tr><td>가격 / 발매</td><td><strong>한국 259,000원 · 8월 22일(토) 오전 11시</strong> <em>(8/12 확정)</em> · 글로벌 $190(RTR)~$200(공식·BITR)</td></tr>
-  </tbody>
-</table>
-
-<h2>첫 리뷰 점수가 심상치 않습니다</h2>
-<p>Road Trail Run의 멀티 테스터 리뷰에서 Peter가 <strong>9.99/10</strong>, Sam이 <strong>9.5/10</strong>(주행 9.6·핏 9.4·가치 9.5)을 매겼습니다. 10점 만점에 9.99는 러닝화 리뷰에서 사실상 보기 힘든 숫자입니다. 테스터들이 공통적으로 짚은 건 <strong>"플레이트가 딱딱하게 튀지 않으면서 확실히 밀어준다"</strong>는 점이었습니다.</p>
-<p><em>(7/29 갱신)</em> 여기에 Believe in the Run 리뷰가 더해졌습니다. Tier는 <strong>Design A · Performance A · Value B</strong> — 그리고 리뷰어 Thomas가 던진 문장이 화제입니다. <em>"역대 최고의 뉴발란스 러닝화? 의문의 여지가 없다(Best New Balance running shoe of all time? No question)."</em> 워크아웃·이지런·롱런을 한 켤레로 다 해결하는 <strong>"원퀴버(one-quiver) 슈즈"</strong>라는 총평 맥락에서 나온 말입니다. BITR이 Value에만 B를 준 이유는 가격입니다 — 폼과 주행은 압도적인데 <strong>어퍼 메시가 $200 가격표 대비 저렴하게 느껴진다</strong>는 지적이었습니다. 비교 대상으로는 <a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a>·<a href="/shoes/adidas-hyperboost-edge">하이퍼부스트 엣지</a> 같은 $200 슈퍼 트레이너급을 꼽았습니다.</p>
-<p>비결은 Energy Arc 플레이트의 위치로 보입니다. 보통 카본 플레이트는 폼 사이에 끼워 넣는데, SC 레벨은 <strong>플레이트를 지면 쪽에 깔고</strong> 뒤쪽은 미드풋을 잡아주는 역할, 앞쪽은 추진 역할로 나눴습니다. 덕분에 폼이 물러도 플랫폼이 무너지지 않는다는 게 테스터들의 설명입니다. RTR의 표현을 그대로 옮기면 <em>"빠른 페이스에서 그냥 웅웅거린다(HUMS)"</em> 정도가 되겠네요.</p>
-<p>Doctors of Running의 평가는 조금 더 차분합니다. <strong>템포와 긴 인터벌</strong>에서 가장 좋고, 짧고 폭발적인 스피드 훈련에는 덜 맞는다고 봤습니다. 미드풋에 살짝 튀어나온 부분이 있어 초반에는 전환이 어색하게 느껴질 수 있다는 지적도 있습니다. 다만 마일리지가 쌓일수록 폼이 부드러워지며 반발이 살아난다는 평이라, 첫 인상만으로 판단할 신발은 아닌 듯합니다.</p>
-
-<h2>SC 트레이너 v3의 자리를 가져갑니다</h2>
-<p>이번 발표에서 가장 실질적인 변화는 여기입니다. RTR 테스터들은 SC 레벨이 <strong>SC 트레이너 v3를 대체한다</strong>고 못 박았습니다. 트레이너 v3를 두고 <em>"훨씬 무겁고 굼떴다"</em>고 평가했죠. 실제로 무게 차이가 큽니다.</p>
-<table>
-  <thead><tr><th>모델</th><th>무게</th><th>스택(힐/전족)</th><th>드롭</th><th>성격</th></tr></thead>
-  <tbody>
-    <tr><td><strong>SC 레벨</strong> (신규)</td><td><strong>207g</strong></td><td>38 / 30mm</td><td>9mm</td><td>훈련·레이스 겸용</td></tr>
-    <tr><td><a href="/shoes/new-balance-sc-trainer-v3">SC 트레이너 v3</a></td><td>278g</td><td>37 / 30mm</td><td>7mm</td><td>쿠션 트레이너 <em>(대체 대상)</em></td></tr>
-    <tr><td><a href="/shoes/new-balance-rebel-v5">퓨얼셀 레벨 v5</a></td><td>220g</td><td>33 / 27mm</td><td>6mm</td><td>경량 데일리 (플레이트 없음)</td></tr>
-    <tr><td><a href="/shoes/new-balance-sc-elite-v5">SC 엘리트 v5</a></td><td>198g</td><td>39 / 29mm</td><td>11mm</td><td>카본 레이서</td></tr>
-  </tbody>
-</table>
-<p>표를 보면 SC 레벨의 위치가 분명해집니다. <strong>레벨 v5보다 오히려 가벼운데(207g vs 220g) 힐 스택은 5mm 더 높습니다.</strong> 즉 "가벼운데 더 두껍다"가 이 신발의 핵심입니다. 레이싱화인 엘리트 v5와도 무게 차이가 9g에 불과하고요.</p>
-<p>정리하면 <strong>레벨 v5는 유연하고 말랑한 무플레이트 데일리, SC 레벨은 단단하고 굴러가는 플레이트 트레이너</strong>입니다. 이름이 같은 계보라고 업그레이드판으로 생각하면 안 됩니다. 뉴발란스 라인 전체 정리는 <a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026">뉴발란스 러닝화 계급도</a>에서 다뤘습니다.</p>
-
-<h2>발볼 — 여기서 갈립니다</h2>
-<p>우리 사이트에서 가장 중요하게 보는 축인데, 이번엔 신호가 좋지 않습니다. <strong>두 매체가 독립적으로 같은 지적</strong>을 했습니다.</p>
-<ul>
-  <li>RTR — 단점 항목에 <strong>"갑피가 좁아 발볼 넓거나 발등 높은 발에는 부적합"</strong>을 명시</li>
-  <li>DOR — <strong>"토박스가 좁아지는 형태(tapered)에 타이트한 핏"</strong>, 발등 볼륨이 큰 발은 피하라고 권고</li>
-  <li>DOR은 <strong>깔창(오소틱) 사용자에게도 비추천</strong>합니다 — 갑피 볼륨이 부족해 깔창을 넣을 여유가 없다는 이유입니다</li>
-  <li><em>(7/29 갱신)</em> 다만 BITR은 <strong>"정사이즈, 락다운 안정적, 쓸림 없음"</strong>으로 폭 문제를 따로 지적하지 않았습니다 — 리뷰어 간 온도차가 있으니, 발볼이 넓다면 더더욱 시착이 답입니다</li>
-</ul>
-<p>비교 대상이 있습니다. 같은 뉴발란스 <a href="/blog/new-balance-sc-elite-v5-review">SC 엘리트 v5</a>는 토박스 실측 74.5mm로 <strong>"발볼 넓어도 신을 수 있는 드문 슈퍼슈즈"</strong>라는 평가를 받았습니다. 다만 와이드는 미국 등 일부 시장에만 있고(RunRepeat), 한국 공식몰에는 2026-10-23 기준 후속 V6만 등재돼 있습니다. DOR도 두 신발을 비교하며 <em>"엘리트 v5는 갑피가 대단히 편안한 반면 SC 레벨은 좁다"</em>고 했습니다. 같은 브랜드 안에서도 성격이 갈리는 셈이죠.</p>
-<p><strong>따라서 발볼이 넓다면 SC 레벨은 온라인 선구매 대상이 아닙니다.</strong> 발볼이 보통이거나 좁은 편이고 발등이 낮다면, 오히려 "딱 감기는 핏"이 장점이 될 수 있습니다. DOR이 <em>"엘리트 v6가 너무 공격적이라 느끼는 러너에게 좋을 수 있다 — 핏만 맞는다면"</em>이라고 단서를 단 이유입니다.</p>
-
-<h2>한국 출시 확정 — 8월 22일(토) 오전 11시, 259,000원 <em>(8/12 갱신)</em></h2>
-<p>기다리던 숫자가 나왔습니다. <strong>한국 발매가 259,000원, 출시는 8월 22일(토) 오전 11시</strong>입니다. 이 글 초판에서 "트레이너 v3(249,000원)와 레벨 v5(189,000원) 사이 어딘가"로 추정했는데, 대체 대상인 트레이너 v3보다 1만원 높은 가격으로 확정됐습니다. 출시에 앞서 <strong>8월 13일(목)부터 런허브 여의도 매장에서 체험</strong>이 가능합니다 — 아래 발볼 이슈 때문에라도, 살 생각이 있다면 체험을 먼저 잡는 걸 권합니다.</p>
-<p>정가가 나오면서 <a href="/blog/nb-run-your-way-seoul-10k-2026">런유어웨이 서울 10K</a> 패키지의 계산도 끝났습니다. <strong>SC 레벨 패키지(8월 21일 매장 선착순)가 259,000원 — 신발 단독 정가와 같은 값에 10K 참가권(80,000원 상당)이 얹혀 있는 구조</strong>입니다. 대회에 나갈 생각이 조금이라도 있다면 패키지가 명백히 이득이고, 신발만 원하면 하루 뒤 8월 22일 일반 발매를 노리면 됩니다.</p>
-
-<div class="callout warning">
-  <p><strong>확정되지 않은 것들</strong> — ① <strong>RunRepeat 랩 데이터는 이후 게시됐습니다</strong>(2026-10-23 기준 신발 DB): 충격흡수 힐 168 SA, 에너지 리턴 힐 72.7%·전족 78.4%, 토박스 71.2mm(랩 평균 73.2mm, 랩 본문 "tapered shape … very snug fit"). 본문의 RTR·DOR 발볼 평가와 같은 방향입니다 ② <strong>와이드는 2026-08-22 국내 출시로 2E 제공이 확인됐습니다</strong>(발행 시점엔 미확인이었습니다). 한국 정가·출시일은 확정됐습니다(8/22 오전 11시·259,000원).</p>
-</div>
-
-<div class="faq">
-  <h2>자주 묻는 질문</h2>
-  <h3>레벨 v5를 잘 신고 있는데 갈아탈 만한가요?</h3>
-  <p>성격이 다른 신발이라 "업그레이드"로 접근하면 실망할 수 있습니다. 레벨 v5의 유연하고 말랑한 느낌이 좋아서 신는 거라면 SC 레벨은 오히려 단단하게 느껴질 겁니다. 반대로 "레벨은 좋은데 장거리에서 쿠션이 아쉽다"였다면 힐 스택이 5mm가량 높은 SC 레벨이 답이 될 수 있습니다. 다만 레벨 v5보다 갑피가 확실히 좁으니 시착은 필수입니다.</p>
-  <h3>초보도 신을 수 있나요?</h3>
-  <p>권하지 않습니다. 플레이트가 들어간 38mm대 스택(RunRepeat 실측 힐 38.3mm, 드롭은 브랜드 표기 4mm·실측 8.8mm)이라, 러닝 경험이 쌓이지 않은 상태에서는 종아리·아킬레스 부담이 큽니다. DOR도 걷기나 오래 서 있는 용도로는 부적합하다고 했습니다. 입문 단계라면 쿠션 데일리부터 시작하는 편이 안전합니다.</p>
-  <h3>마라톤 레이스에 신어도 되나요?</h3>
-  <p>가능합니다. RTR은 <strong>"엘리트가 아닌 마라토너에게 $190은 영리한 선택"</strong>이라고 평가했습니다. 카본 레이서보다 저렴하면서 훈련에도 쓸 수 있으니까요. 다만 서브3 근처의 기록 목표라면 여전히 <a href="/shoes/new-balance-sc-elite-v5">SC 엘리트</a> 계열이 우선입니다.</p>
-  <h3>발볼이 넓은데 와이드 나오나요?</h3>
-  <p>나옵니다. 2026년 8월 22일 한국 출시와 함께 뉴발란스 코리아에 공식 상품명 <strong>SC Rebel V1</strong>로 남성 D·<strong>남성 2E</strong>·여성 D 총 8개 SKU가 올라왔고 가격은 모두 259,000원입니다. SC 엘리트 v5·SC 트레이너 v3의 와이드는 해외 판매분에서만 확인됩니다(한국 공식몰 2026-10-23 기준 두 모델 모두 미등재). 스펙 전체는 <a href="/shoes/new-balance-sc-rebel">SC 레벨 상세 페이지</a>에 정리해뒀습니다.</p>
-</div>
-
-<p><small>※ 스펙·발매일·가격은 뉴발란스 공식 발표(2026-07-21) 기준이며, 평가는 Road Trail Run 멀티 테스터 리뷰, Doctors of Running 리뷰, Believe in the Run 리뷰(2026-07)를 종합했습니다. 무게 218g은 공식 수치이고 RTR 실측은 212g입니다. 가격은 RTR $190·공식/BITR $200으로 표기가 갈리고, 발매 일자도 소스별로 8/6·8/20이 갈려 "8월"로만 적습니다. 한국 출시일(8/22 토 오전 11시)·발매가(259,000원)·런허브 여의도 체험(8/13~)은 뉴발란스 인스타그램 공지(2026-08-12 확인) 기준입니다. 와이드 2E 제공과 8개 SKU 구성은 뉴발란스 코리아 온라인스토어에서 2026-08-22 직접 확인했습니다. RunRepeat 랩 데이터는 같은 날 기준 미게시였고, 이후 게시된 실측을 2026-10-23에 반영했습니다. 형제 모델 스펙은 본 사이트 신발 DB 기준입니다. (작성 2026-07-23 · 갱신 2026-07-29 BITR A Tier 반영 · 2026-08-12 한국 출시일·가격 확정 반영 · 2026-08-22 와이드 2E 확인·신발 DB 등록 · 2026-10-23 랩 실측·형제 모델 한국 판매 현황 반영)</small></p>
+<p><strong>2026-11-10 원문 대조 업데이트.</strong> 제조사 공시·실험실 검체·개인 착화 의견과 한국 상품 캐시를 구분합니다. 자체 착화 후기가 아닌 원문 기반 분석입니다.</p><h2>먼저 볼 차이</h2><p>정확 제품명은 미국 공식에서 확인한 SuperComp Rebel입니다. Rebelv5의 단순 업그레이드로 보고 무플레이트 훈련화의 동작을 기대하면 다른 구조를 만나게 됩니다.</p><p>판을 지면 쪽에 둔 형상과 정확 재료는 다른 질문입니다. RR은 carbon-infused를 full carbon-fibre와 구분하지만 DOR은 전장 carbon-fibre라고 적어 상충을 남겼습니다.</p><figure><img src="/images/shoes/newbalance/screbel/side.webp" alt="SuperComp Rebel — Rebelv5와 별개인 지면 쪽 판 구조" loading="lazy"/><figcaption>SuperComp Rebel — Rebelv5와 별개인 지면 쪽 판 구조</figcaption></figure><div class="table-wrap"><table><thead><tr><th>모델</th><th>무게 · 공시 출처 별도 표기</th><th>스택·드롭 · 공시 출처 별도 표기</th><th>힐/전족 SA</th><th>힐/전족 리턴</th></tr></thead><tbody><tr><td>new-balance-sc-rebel</td><td>207g</td><td>38.3/29.5mm · 8.8mm</td><td>168/119</td><td>72.7/78.4%</td></tr></tbody></table></div><p>표의 값은 RunRepeat 검체 또는 별도 표시한 DOR 소개 공시입니다. DOR 소개는 독립 실측이 아닙니다. 일반 정책은 남성 US9지만 개별 라벨·폭·보정 여부는 미확인입니다. 공시와 동일한 검체로 단정하지 않습니다. SA는 충격흡수, 리턴은 시험에서 반환된 에너지 비율이며 부드러움·개인 기록·임상 보호를 뜻하지 않습니다. HA는 구방식, AC는 별도 경도 척도여서 환산하지 않습니다. <a href="https://runrepeat.com/testing-methodology" target="_blank" rel="noopener noreferrer">RunRepeat 측정법</a></p><h2>칭찬 점수보다 본인의 중족 전환을 확인</h2><p>Matt는 추가 중족 구조를 좋아했지만 중족 돌출을 어색하게도 느꼈습니다. 낮고 테이퍼진 앞코·이른 로커가 실제 규격에서 편한지 확인할 수 있습니다. 팀원의 익명 의견을 별도 검체 테스트로 세지 않습니다.</p><p>RTR9.99점·BITR 역대 최고·SC트레이너를 완전히 대체한다는 결론은 이번 검증의 근거로 반복하지 않습니다. 미국 공식222g/9.5M·공시4mm와 실제207g·8.8mm의 조건을 구분합니다.</p><h2>SC 레벨 — 핏과 주행에서 갈리는 지점</h2><p>정확 SuperComp Rebel은 Rebelv5와 별개입니다. RR은 carbon-infused판을 full carbon-fibre와 구분하지만 DOR은 전장 carbon-fibre라고 적었습니다. 탄소 포함 구조와 정확 섬유·복합재 조성·길이는 별개로 읽고 원문 상충을 남깁니다.</p><p>RR 내부 최광폭 94.1mm·엄지 71.2mm·높이 24.8mm입니다. 너비 하나로 발등·길이·힐 고정이나 한국 와이드 적합을 보장하지 않습니다. 실제 규격·양말에서 접촉과 전환을 확인하세요.</p><p>DOR Matt(남성US10)는 낮고 테이퍼진 레이스 같은 정사이즈 핏·좋은 거싯 고정, 튀는 힐·어색한 중족 돌출·이른 전족 구름을 적었습니다.35마일 동안 다용도 훈련과 추가 중족 구조를 좋아했지만 팀원들의 다른 핏에는 실제 사이즈가 없어 임의로 채우지 않습니다.</p><h2>SC 레벨 — 공시·한국 판매 확인 범위</h2><p>미국 공식222g(남성9.5M)·4mm, DOR 소개218g(남성US9.5)/174g(여성US7)·40/36mm·4mm와 RR207g·38.3/29.5mm·8.8mm를 구분합니다. 같은 검체의 감량·개인 체감 드롭으로 고정하지 않습니다.</p><p>한국 공식 캐시: 공식403·정확 상품 원문 미확인. 현재 가격·선택 재고는 미확인입니다. 판매캐시와 현재 결제가는 다를 수 있으며 글로벌 폭을 한국 판매 증거로 쓰지 않습니다.</p><p>미국 공식은 Infinion과 propulsion plate만 명시합니다. RR A-TPU와 DOR의 TPEE/EVA 같다는 추측을 합쳐 조성을 확정하지 않습니다. 한국259,000원·2E 발매·8월22일 출시·450km·미확인 매체9.99점·입문자 금지 보장을 반복하지 않습니다.</p><h2>구매 전에 실제로 확인할 것</h2><p>평소 양말·인솔로 앞쪽 길이와 발톱 위 공간, 끈을 조였을 때 발등 압박, 힐 고정과 칼라 마찰을 확인하세요. 발볼 너비 하나로 전체 핏을 결정하지 않습니다. 교환·반품 조건도 먼저 확인할 수 있습니다.</p><p>트레일에서는 자신의 주요 노면과 오르막·내리막·방향 전환에서 고정과 전환을 살펴야 합니다. 젖은 콘크리트 시험 하나가 바위·진흙 접지를 보장하지 않습니다. 통증·저림을 견뎌야 한다는 규칙이나 모델별 질환 예방 효과는 이번 자료로 확인하지 못했습니다.</p><h2>확인한 원문과 접근 범위</h2><ul><li><a href="https://www.nbkorea.com/" target="_blank" rel="noopener noreferrer">한국 공식 확인 실패 범위</a> — 403. 정확한국가격·SKU·와이드·선택재고 미확인.</li><li><a href="https://www.newbalance.com/pd/supercomp-rebel/MREBX9S5-2E-115.html" target="_blank" rel="noopener noreferrer">미국 공식 SuperComp Rebel</a> — Official read does not specify TPEE/A-TPU or carbon-infused/full carbon-fibre. US membership/add-to-bag text not KR stock. USD price not converted.</li><li><a href="https://runrepeat.com/new-balance-super-comp-rebel" target="_blank" rel="noopener noreferrer">SC 레벨 RR 원문</a> — 정확 모델 검체. 제조사 공시와 분리.</li><li><a href="https://www.doctorsofrunning.com/new-balance-supercomp-rebel-review/" target="_blank" rel="noopener noreferrer">SC 레벨 DOR 원문</a> — 소개 공시·실제 착화 사이즈·개인의견 구분.</li></ul>
 `,
+    faqs: [
+      {
+        "question": "Rebelv5 업그레이드인가요?",
+        "answer": "별개 모델입니다. 정확 SuperComp Rebel의 구조·검체를 확인하고v5 수치를 전용하지 않습니다."
+      },
+      {
+        "question": "판은100% 카본인가요?",
+        "answer": "RR carbon-infused와DOR full carbon-fibre가 상충하고 미국 공식은 정확 재료를 밝히지 않아 조성을 확정하지 않습니다."
+      },
+      {
+        "question": "Infinion 조성은 확인됐나요?",
+        "answer": "RR A-TPU와DOR의 TPEE/EVA 같다는 추측이 다릅니다. 제조사 명칭을 정확 화학 조성으로 바꾸지 않습니다."
+      }
+    ],
   },
   {
     id: "adidas-hyperboost-edge-review-2026",
@@ -1767,112 +1704,38 @@ export const posts_2026_07: BlogPost[] = [
 `,
   },
   {
-    id: 'new-balance-sc-elite-v6-preview-2026',
-    slug: 'new-balance-sc-elite-v6-preview-2026',
-    title: '뉴발란스 SC 엘리트 v6 미리보기 | 8/6 글로벌 출시 — 새 Infinion 폼·190g 경량화, "발볼 슈퍼슈즈" 자리는 지킬까',
-    description:
-      '뉴발란스가 7월 21일 SC 엘리트 v6를 공식 발표했습니다. 8월 6일 글로벌 발매($275), 미드솔은 FuelCell 대신 Infinion 폼 표기, RunRepeat 실측 무게 190g으로 v5(실측 198g)보다 8g 가벼워졌습니다. 관건은 발볼 — v5의 74.5mm 토박스는 "발볼 넓어도 신는 드문 슈퍼슈즈"라는 정체성이었는데, 첫 시착 리뷰는 플랫폼이 v5보다 좁아졌다는 신호를 보냅니다. 확정 스펙·첫 시착 평가에 이후 나온 실측 토박스(71.4mm)와 한국 정가(389,000원)까지 정리했습니다.',
-    thumbnail: '/images/blog/new-balance-sc-elite-v6-preview-2026.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-07-22',
-    updatedAt: '2026-10-23',
-    category: 'review' as const,
-    readingTime: 7,
-    tags: ['뉴발란스 SC 엘리트 v6', 'SC Elite V6', 'Infinion 폼', '카본 슈퍼슈즈', '신상 러닝화', '마라톤 레이싱화'],
+    id: "new-balance-sc-elite-v6-preview-2026",
+    slug: "new-balance-sc-elite-v6-preview-2026",
+    title: "SC 엘리트v6 업데이트 —190g·측정 위치, Infinion 소재와 앞코 의견의 차이",
+    description: "공시8mm·실측13.9mm의 위치 차이를 설명합니다. RR A-TPU/DOR TPEE 상충과 리뷰어별 실제 사이즈, 한국 가격·2E 미확인을 남겼습니다.",
+    thumbnail: "/images/shoes/newbalance/scelitev6/side.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-07-22",
+    updatedAt: "2026-11-10",
+    category: "review",
+    readingTime: 8,
+    tags: [
+      "SC 엘리트v6",
+      "원문 대조",
+      "핏"
+    ],
     content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>뉴발란스가 7월 21일 SC 엘리트 v6를 공식 발표</strong> — 8월 6일 글로벌 발매($275)이며, 데일리 트레이너 신모델 SC 레벨(8/20 발매·$190)과 "훈련+레이스데이 패키지"로 함께 나옵니다</li>
-    <li>미드솔이 <strong>Infinion 폼</strong>(뉴발란스 "가장 가벼운 폼")으로 표기되고 RunRepeat 실측 무게 <strong>190g</strong>(첫 시착 실측은 180g) — v5 실측 198g보다 8g 가벼워졌습니다. 카본 플레이트도 재설계</li>
-    <li>관건은 <strong>발볼</strong> — v5의 74.5mm 토박스는 "발볼 넓어도 신는 슈퍼슈즈"라는 정체성이었는데, 첫 시착 리뷰는 <strong>"플랫폼이 v5보다 좁다"</strong>고 말했고, 이후 나온 RunRepeat 실측 토박스도 <strong>71.4mm</strong>로 v5(74.5mm)보다 좁았습니다(2026-10-23 기준). 발볼이 넓다면 한국 공식몰의 <strong>v6 남성 2E</strong>를 시착해 보세요(v5는 한국 공식몰 미등재)</li>
-  </ul>
-</div>
-
-<div class="callout success">
-  <span class="callout-icon">🔔</span>
-  <div class="callout-body">
-    <p class="callout-title">[업데이트 9/27·10/23] 국내 출시 — 정가 389,000원, 남성 2E 추가 확인</p>
-    <p>뉴발란스코리아 공식몰에 SC 엘리트 v6(남성, D)가 <strong>389,000원</strong>에 올라와 있습니다(2026년 9월 27일 확인). v5 정가 319,000원보다 7만 원 올랐습니다. 9월 27일엔 폭 옵션이 D 하나뿐이었는데, 10월 20일 재확인 때는 <strong>남성 D·2E·여성 D</strong>가 올라와 있었습니다(신발 DB 기준). 이 글이 기다리던 토박스 실측도 나왔습니다 — RunRepeat 기준 <strong>71.4mm</strong>로 v5의 74.5mm보다 약 3mm 좁아졌고, RunRepeat는 전체 핏이 매우 타이트하고 반 치수 작게 나온다고 평가했습니다. "발볼 넓어도 신는 슈퍼슈즈" 자리는 v6가 이어받지 못했습니다. 실측 전체는 <a href="/shoes/new-balance-sc-elite-v6">SC 엘리트 v6 상세</a>에 정리했고, 아래 본문은 출시 전(7월 22일) 작성한 내용입니다.</p>
-  </div>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">👀</span>
-  <div class="callout-body">
-    <p class="callout-title">7월 21일 공식 발표 — 8월 6일 글로벌 발매 (7/22 작성 시점)</p>
-    <p>이 글은 <strong>뉴발란스 공식 프레스릴리스(7/21)와 Road Trail Run 첫 시착 리뷰(7/21)</strong>를 원문 대조해 정리한 출시 전 프리뷰입니다. 작성 시점엔 출시 전이라 RunRepeat 정량 랩이 미게시였고 한국 공식몰에도 리스팅이 없었습니다. 이후 게시된 실측과 국내 출시 정보는 위 업데이트와 아래 표에 반영했습니다(2026-10-23).</p>
-  </div>
-</div>
-
-<h2>SC 엘리트, 어떤 신발이었나</h2>
-<p><a href="/shoes/new-balance-sc-elite-v5">SC 엘리트 v5</a>는 "가장 빠른 슈퍼슈즈"가 아니라 <strong>"발볼 넓어도 신을 수 있는 카본 슈퍼슈즈"</strong>로 자리를 잡은 신발입니다. 토박스 74.5mm는 <a href="/shoes/nike-vaporfly-4">베이퍼플라이</a>(73.2mm)보다 넓고 <a href="/shoes/nike-alphafly-3">알파플라이</a>(75.3mm)와는 비슷한 수준이라, 레이스 후반 발가락 눌림이 고민인 한국 러너에게 유력한 선택지였죠. 와이드 옵션까지 있는 슈퍼슈즈는 지금도 드뭅니다. 자세한 이야기는 <a href="/blog/new-balance-sc-elite-v5-review">v5 후기</a>에서 정리했습니다.</p>
-<p>그 후속작이 공식 발표됐습니다. 트라이애슬론 세계챔피언 알렉스 이(Alex Yee)와 미국 마라톤 기록 보유자 에밀리 시슨이 개발에 참여했고 — 참고로 이가 발렌시아에서 세운 PB 2:06:38은 <strong>v5를 신고</strong> 달린 기록입니다 — v6는 8월 6일 뉴발란스닷컴과 리테일 매장에서 글로벌 발매됩니다.</p>
-
-<h2>v5 → v6, 무엇이 달라지나</h2>
-<table>
-  <thead><tr><th>항목</th><th>SC 엘리트 v5 (실측)</th><th>SC 엘리트 v6 (실측, 괄호는 공식)</th><th>변경</th></tr></thead>
-  <tbody>
-    <tr><td>무게</td><td>198g</td><td><strong>190g</strong> (첫 시착 실측 180g/M8.5)</td><td>-8g 경량 (실측끼리)</td></tr>
-    <tr><td>미드솔</td><td>FuelCell (100% PEBA)</td><td><strong>Infinion 폼(신규 표기)</strong></td><td>폼 이름 교체</td></tr>
-    <tr><td>스택</td><td>힐 39.3 / 전족 28.6mm</td><td>힐 38.5 / 전족 24.6mm (공식 40 / 32mm)</td><td>실측으로는 전족부 4.0mm 얇아짐 (공식 표기만 두꺼워짐)</td></tr>
-    <tr><td>드롭</td><td>10.7mm (실측) / 8mm (공식)</td><td>13.9mm (공식 8mm)</td><td>공식 기준 동일 · 실측 +3.2mm</td></tr>
-    <tr><td>플레이트</td><td>카본 (Energy Arc)</td><td>재설계 카본 — 강성·추진력 강화</td><td>구조 개편</td></tr>
-    <tr><td>어퍼</td><td>메시</td><td>반투명 메시 + FANTOMFIT</td><td>신규</td></tr>
-    <tr><td>가격</td><td>₩319,000 (한국 정가)</td><td>$275 / 한국 ₩389,000</td><td>+7만 원</td></tr>
-  </tbody>
-</table>
-<p><small>※ 무게·스택·드롭은 두 모델 모두 RunRepeat 실측(남성 US 9)끼리 비교했고, v6의 괄호 안은 뉴발란스 공식 표기입니다(v6 실측은 2026-10-23 반영, 신발 DB 기준). v6 실측 토박스는 71.4mm, 에너지 리턴은 힐 75.3%·전족 79.4%입니다.</small></p>
-
-<h2>Infinion 폼 — 이름이 바뀌었다, 성분은 아직 물음표</h2>
-<p>이번 세대의 가장 큰 이야깃거리는 미드솔입니다. v5까지의 SC 엘리트는 <strong>FuelCell(100% PEBA)</strong>이 정체성이었는데, v6의 공식 스펙에는 폼이 <strong>Infinion</strong>으로 표기됩니다. 뉴발란스는 "우리의 가장 가벼운 폼"이라며 에너지 리턴과 반응성 강화를 내세우고요. 다만 짚어둘 것 — 제품명은 여전히 "FuelCell SuperComp Elite v6"이고, 공식 릴리스가 "FuelCell 폼을 Infinion이 대체했다"고 명시적으로 서술하지는 않습니다. 폼의 화학 성분도 공식 미공개입니다(첫 시착 리뷰어는 TPEE 또는 A-TPU 계열로 추정하며, 발밑 감각이 <a href="/shoes/adidas-adios-pro-4">아디오스 프로 4</a>의 폼에 가깝다고 표현했습니다).</p>
-<p>플레이트는 발 뒤쪽에서는 발에 가깝게 붙고 미드풋 앞에서 급격히 내려가 하부 미드솔과 닿지 않는 <strong>Energy Arc 구조를 재설계</strong>해, 강성을 키우면서도 앞으로 굴러가는 전환은 부드럽게 유지하는 방향입니다.</p>
-
-<h2>첫 시착 리뷰가 말하는 것</h2>
-<p>발표 당일 나온 Road Trail Run의 첫 시착 평가를 요약하면 이렇습니다:</p>
-<ul>
-  <li><strong>실측 180g(US M8.5)</strong> — v5 대비 약 20g 가볍고, 폼은 더 에너제틱하며 전환이 쉬워졌다</li>
-  <li>극단적인 지오메트리 없이 <strong>안정적이고 일관된 마라톤 지향 라이드</strong> — 5K~10K 스피드보다 하프·풀 페이스에 맞는 성격</li>
-  <li>핏은 표준~좁은 발 기준 정사이즈, 토박스는 "레이스 핏 치고는 적당히 넓은(moderately broad)" 수준</li>
-</ul>
-<p>정리하면 "더 가볍고 더 잘 굴러가는 v5"라는 방향성인데, 발볼에 대해서는 다음 섹션의 신호를 함께 봐야 합니다.</p>
-
-<h2>발볼 넓은 러너는 여기를 보세요</h2>
-<p>v5를 선택한 이유의 8할이 발볼이었던 러너에게 중요한 대목입니다. 첫 시착 리뷰의 플랫폼(바닥면) 실측은 <strong>힐 75 / 미드풋 60 / 전족부 110mm로, 리뷰어가 "v5보다 좁은 플랫폼"이라고 명시</strong>했습니다. 단, 이것은 바닥 폭이지 발이 실제로 느끼는 <strong>토박스 내부 폭(v5의 74.5mm에 해당하는 수치)이 아니며</strong>, v6의 내부 폭은 작성 시점(7/22)엔 어느 소스에도 없었습니다. 이후 게시된 RunRepeat 실측은 <strong>71.4mm로 v5보다 3.1mm 좁았습니다</strong>(2026-10-23 기준).</p>
-<p>그래서 지금(2026-10-23) 기준 판단은 이렇습니다. <strong>발볼이 넓다면 한국 공식몰의 v6 남성 2E를 시착하는 쪽이 현실적입니다.</strong> v5는 한국 공식몰에 없고, 와이드도 미국 등 일부 시장에만 있어 판매처마다 확인해야 합니다. 발볼 기준 신발 고르기는 <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너 가이드</a>를 참고하세요. 반대로 발볼이 표준이라면, 8g 경량화(실측끼리)와 새 폼은 충분히 기대할 만한 업그레이드입니다.</p>
-
-<h2>함께 나온 SC 레벨 — "훈련용 짝꿍"</h2>
-<p>이번 발표의 또 하나 포인트는 <strong>SC 레벨(SuperComp Rebel)</strong>이라는 신규 데일리 트레이너가 같은 Infinion 폼을 얹고 함께 나온다는 것입니다(8/20 발매·$190·공식 218g·스택 40/36·드롭 4mm). "레이스는 엘리트 v6, 훈련은 SC 레벨"이라는 패키지 전략인데, 기존 <a href="/shoes/new-balance-rebel-v5">퓨얼셀 레벨 v5</a>(경량 데일리)와는 이름만 비슷한 별개 라인이니 혼동하지 마세요. 슈퍼트레이너 포지션이라는 점에서는 <a href="/shoes/new-balance-sc-trainer-v3">SC 트레이너 v3</a>의 자리와 겹치는데, 라인 정리가 어떻게 될지는 지켜볼 부분입니다.</p>
-
-<h2>한국 출시는 언제쯤</h2>
-<p>뉴발란스코리아 공식몰에는 7/22 확인 당시 v6 리스팅이 없었습니다. 이후 9월 27일 확인 때 <strong>389,000원</strong>에 올라왔고, 10월 20일 재확인 때는 남성 D·2E·여성 D가 있었습니다(신발 DB 기준). v5 정가 319,000원보다 7만 원 높습니다.</p>
-
-<div class="callout warning">
-  <span class="callout-icon">⚠️</span>
-  <div class="callout-body">
-    <p class="callout-title">이 글의 확정/미확정 구분</p>
-    <p>확정: 글로벌 발매일(8/6)·$275·공식 스펙(190g·40/32·드롭 8)·Infinion 폼 표기·SC 레벨 동시 발매. 이후 확정(2026-10-23 기준 신발 DB): <strong>한국 정가 389,000원</strong>, RunRepeat 실측 190g·토박스 71.4mm·에너지 리턴 힐 75.3%·전족 79.4%. 미확정: 폼 성분.</p>
-  </div>
-</div>
-
-<h2>자주 묻는 질문</h2>
-<div class="faq">
-  <div class="faq-item">
-    <p class="faq-q">Q. v5를 갖고 있는데 v6로 갈아탈 만한가요?</p>
-    <p class="faq-a">A. 변경점은 <strong>경량화(실측 -8g) + 새 폼 + 플레이트 재설계</strong>로 방향은 좋습니다. 다만 RunRepeat 실측 토박스가 71.4mm로 v5(74.5mm)보다 3.1mm 좁아져(2026-10-23 기준), 발볼 때문에 v5를 골랐다면 같은 여유는 기대하기 어렵습니다. 갈아탄다면 남성 2E 시착을 권합니다.</p>
-  </div>
-  <div class="faq-item">
-    <p class="faq-q">Q. 발볼이 넓은데 v6를 기다릴까요, v5를 살까요?</p>
-    <p class="faq-a">A. 2026-10-23 기준으로는 <strong>v6 남성 2E 시착</strong>이 현실적입니다. v6 실측 토박스(71.4mm)는 v5(74.5mm)보다 좁지만 한국 공식몰에 남성 2E가 있고, v5는 한국 공식몰에 없으며 와이드도 미국 등 일부 시장에만 있습니다. v5를 판매처에서 구할 수 있다면 <a href="/blog/new-balance-sc-elite-v5-review">v5 후기</a>에서 실측 근거를 확인하세요.</p>
-  </div>
-  <div class="faq-item">
-    <p class="faq-q">Q. 첫 카본화 후보로 어떤가요?</p>
-    <p class="faq-a">A. SC 엘리트 라인은 안정적인 라이드 덕에 카본 입문 후보로 자주 꼽힙니다. 다만 30만원대 레이스 전용화라는 점은 같으니, 입문 관점의 비교는 <a href="/blog/carbon-plate-shoes-guide-2026">카본 플레이트 러닝화 가이드</a>와 <a href="/shoes/asics-metaspeed-sky-plus">메타스피드 스카이+</a> 같은 대안까지 함께 보고 정하세요.</p>
-  </div>
-</div>
-
-<p><small>출처: 뉴발란스 공식 뉴스룸 프레스릴리스(2026-07-21) · Road Trail Run 첫 시착 리뷰(2026-07-21) · House of Heat 발매일 보도(2026-07-21) · 국내 언론 하반기 출시 계획 보도(2026-03) · SC 엘리트 v5 수치는 RunRepeat 랩 실측. 작성 2026년 7월 22일 · 갱신 2026-09-27(한국 정가) · 2026-10-23(v6 RunRepeat 실측·남성 2E·v5 한국 판매 현황, 신발 DB 기준).</small></p>
+<p><strong>2026-11-10 원문 대조 업데이트.</strong> 제조사 공시·실험실 검체·개인 착화 의견과 한국 상품 캐시를 구분합니다. 자체 착화 후기가 아닌 원문 기반 분석입니다.</p><h2>먼저 볼 차이</h2><p>Infinion이라는 이름은 같아도 정확 폴리머 설명은 RR과 DOR이 다릅니다. 제조사의 정확 모델 조성을 확보하기 전까지 A-TPU·TPEE 중 하나를 정답으로 선택하지 않습니다.</p><p>RR 전족24.6mm는 지정75% 위치이고 공시32mm는 다른 위치와 관계된다는 RR 설명을 남깁니다. 공시 드롭8mm와 정적 실측13.9mm를 합쳐 개인 주행 중 체감으로 고정하지 않습니다.</p><figure><img src="/images/shoes/newbalance/scelitev6/side.webp" alt="SC 엘리트v6 — 지정 측정 위치와 실제 앞코·고정을 구분" loading="lazy"/><figcaption>SC 엘리트v6 — 지정 측정 위치와 실제 앞코·고정을 구분</figcaption></figure><div class="table-wrap"><table><thead><tr><th>모델</th><th>무게 · 공시 출처 별도 표기</th><th>스택·드롭 · 공시 출처 별도 표기</th><th>힐/전족 SA</th><th>힐/전족 리턴</th></tr></thead><tbody><tr><td>new-balance-sc-elite-v6</td><td>190g</td><td>38.5/24.6mm · 13.9mm</td><td>148/101</td><td>75.3/79.4%</td></tr></tbody></table></div><p>표의 값은 RunRepeat 검체 또는 별도 표시한 DOR 소개 공시입니다. DOR 소개는 독립 실측이 아닙니다. 일반 정책은 남성 US9지만 개별 라벨·폭·보정 여부는 미확인입니다. 공시와 동일한 검체로 단정하지 않습니다. SA는 충격흡수, 리턴은 시험에서 반환된 에너지 비율이며 부드러움·개인 기록·임상 보호를 뜻하지 않습니다. HA는 구방식, AC는 별도 경도 척도여서 환산하지 않습니다. <a href="https://runrepeat.com/testing-methodology" target="_blank" rel="noopener noreferrer">RunRepeat 측정법</a></p><h2>좁은 실측과 편한 앞코 경험을 함께 읽기</h2><p>Andrea 여성US9.5는 발가락 압박 없이 편했고 Matt 남성US10은 외측 테이퍼와 낮은 볼륨을 느꼈습니다. 실제 발형·검체가 다른 의견이므로 모든 넓은 발에 적합·부적합하다고 합치지 않습니다.</p><p>한국 공식403·정확 상품 미확보로 현재389,000원·남성2E 판매·전작의 단종 여부는 미확인입니다. 과거8월 글로벌 예고나 미확인 최초180g 체험을 현재 한국 판매 확정으로 반복하지 않습니다.</p><h2>SC 엘리트v6 — 핏과 주행에서 갈리는 지점</h2><p>카본과 Infinion은 확인했지만 폴리머는 RR A-TPU·DOR TPEE가 상충해 확정하지 않습니다. 다른 Infinion 제품의 조성을 그대로 대입하지 않습니다.</p><p>RR 내부 최광폭 90.7mm·엄지 71.4mm·높이 26.8mm입니다. 너비 하나로 발등·길이·힐 고정이나 한국 와이드 적합을 보장하지 않습니다. 실제 규격·양말에서 접촉과 전환을 확인하세요.</p><p>DOR 직접403 뒤 원문 캐시를 확인했습니다. Andrea(여성US9.5)는 정사이즈의 편한 앞코·유연한 메시와 고정을 좋아했으나 혀 접힘에 주의했습니다. Matt(남성US10)는 낮고 밀착된 외측 테이퍼가 조금 짧게 느껴졌고 좁은 힐/중족에 더 많은 안정감이 필요했습니다. 두 사람의 반응성 선호가 모든 발의 적합을 뜻하지 않습니다.</p><h2>SC 엘리트v6 — 공시·한국 판매 확인 범위</h2><p>DOR 소개190g(남성US9.5)/155g(여성US7)·40/32mm·8mm와 RR190g·38.5/24.6mm·13.9mm를 나눕니다. 같은190g을 동일 실제 사이즈로 보지 않습니다. RR은 공시32mm가 중족에 가까운 위치이고 지정 전족75% 위치는24.6mm라고 설명합니다.</p><p>한국 공식 캐시: 공식403·정확 상품 원문 미확인. 현재 가격·폭·선택 재고는 미확인입니다. 캐시 수량·알림·장바구니 버튼을 현재 재고로 쓰지 않습니다.</p><p>한국 공식403·정확 상품 미확보로389,000원·국내2E 현재 판매를 확정하지 않습니다. RR 좁은 검체·투표와 Andrea의 편한 앞코는 조건이 다릅니다.13.9mm 정적 드롭을 주행 중 체감으로 고정하지 않고300km 수명·v5대비 모든 개인의 기록 향상 보장을 제거했습니다.</p><h2>구매 전에 실제로 확인할 것</h2><p>평소 양말·인솔로 앞쪽 길이와 발톱 위 공간, 끈을 조였을 때 발등 압박, 힐 고정과 칼라 마찰을 확인하세요. 발볼 너비 하나로 전체 핏을 결정하지 않습니다. 교환·반품 조건도 먼저 확인할 수 있습니다.</p><p>트레일에서는 자신의 주요 노면과 오르막·내리막·방향 전환에서 고정과 전환을 살펴야 합니다. 젖은 콘크리트 시험 하나가 바위·진흙 접지를 보장하지 않습니다. 통증·저림을 견뎌야 한다는 규칙이나 모델별 질환 예방 효과는 이번 자료로 확인하지 못했습니다.</p><h2>확인한 원문과 접근 범위</h2><ul><li><a href="https://www.nbkorea.com/" target="_blank" rel="noopener noreferrer">한국 공식 확인 실패 범위</a> — 403. 정확한국가격·SKU·와이드·선택재고 미확인.</li><li><a href="https://runrepeat.com/new-balance-super-comp-elite-v-6" target="_blank" rel="noopener noreferrer">SC 엘리트v6 RR 원문</a> — 정확 모델 검체. 제조사 공시와 분리.</li><li><a href="https://www.doctorsofrunning.com/new-balance-supercomp-elite-v6-review/" target="_blank" rel="noopener noreferrer">SC 엘리트v6 DOR 원문</a> — 소개 공시·실제 착화 사이즈·개인의견 구분.</li></ul>
 `,
+    faqs: [
+      {
+        "question": "Infinion은 TPEE인가요?",
+        "answer": "RR A-TPU와DOR TPEE 설명이 상충합니다. 정확 제조사 조성을 확보하지 못해 폴리머는 미확인입니다."
+      },
+      {
+        "question": "전족24.6mm인가요32mm인가요?",
+        "answer": "RR 지정75% 위치 실측24.6mm와 공시32mm는 위치·방식이 다릅니다. 같은 조건으로 합치지 않습니다."
+      },
+      {
+        "question": "한국2E가 현재 있나요?",
+        "answer": "정확 한국 상품 원문을 확보하지 못해 현재 가격·폭·선택 재고는 미확인입니다."
+      }
+    ],
   },
   {
     id: 'siheung-half-marathon-2026',
@@ -4249,104 +4112,42 @@ export const posts_2026_07: BlogPost[] = [
     ],
   },
   {
-    id: 'on-cloudboom-strike-2-preview-2026',
-    slug: 'on-cloudboom-strike-2-preview-2026',
-    title: 'On 클라우드붐 스트라이크 2 국내 출시 | 7/30 발매 · 329,000원 — 1과 무엇이 달라졌나 (CloudTec Sphere·191g)',
-    description:
-      'On의 최상위 카본 레이서 클라우드붐 스트라이크 2가 2026년 7월 30일 한국에 정식 발매됐습니다. 국내 정가는 전작과 같은 329,000원, 라이트스프레이 버전은 419,000원입니다. 글로벌 정가는 전작 $280에서 $250로 내렸지만 국내가는 동결됐습니다. 핵심 변화는 구름 포드를 재설계한 CloudTec Sphere 쿠션과 15% 가벼워진 Helion HF 폼으로 201g → 191g까지 내려간 무게입니다. 전작 1과의 차이, 국내 가격·판매처, 알파플라이·베이퍼플라이 대비 위치를 정리했습니다.',
-    thumbnail: '/images/blog/on-cloudboom-strike-2-preview-2026.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-07-02',
-    updatedAt: '2026-07-30',
-    category: 'review' as const,
-    readingTime: 8,
-    tags: ['On 클라우드붐 스트라이크 2', '클라우드붐 스트라이크', 'CloudTec Sphere', '카본 레이싱', '슈퍼슈즈', '신상 러닝화', '국내 발매'],
+    id: "on-cloudboom-strike-2-preview-2026",
+    slug: "on-cloudboom-strike-2-preview-2026",
+    title: "일반 클라우드붐 스트라이크2 —191g 공시·메시 어퍼, 라이트스프레이와 구분하기",
+    description: "일반형191g은 사이즈 미공시, DOR200g은US9 소개값입니다. 글로벌7월30일 출시와 한국 특정SKU 문서·현재 결제재고를 나누고 LS2의 랩·1.6%를 전용하지 않습니다.",
+    thumbnail: "/images/blog/on-cloudboom-strike-2-official-20261110.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-07-02",
+    updatedAt: "2026-11-10",
+    category: "review",
+    readingTime: 7,
+    tags: [
+      "클라우드붐 스트라이크2",
+      "온",
+      "일반형",
+      "검체 조건"
+    ],
     content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>클라우드붐 스트라이크 2가 7월 30일 한국 정식 발매</strong> — 글로벌과 같은 날 국내 출시됐습니다. On의 최상위 카본 마라톤 레이서로, 파리 올림픽에서 화제였던 슈퍼슈즈의 2세대입니다</li>
-    <li>핵심 변화는 <strong>CloudTec Sphere 쿠션 재설계 + Helion HF 폼 15% 경량화</strong> — 무게가 전작 201g에서 <strong>191g</strong>으로 내려가고, 곡선형 카본 Speedboard가 더 가볍고 단단해졌습니다</li>
-    <li>국내 정가 <strong>329,000원</strong>(라이트스프레이 버전 419,000원)으로 <strong>전작과 동결</strong> — 다만 글로벌 정가는 전작 $280에서 <strong>$250</strong>로 내렸습니다. 인상이 없다는 건 다행이지만, 글로벌 인하폭이 국내가에는 반영되지 않은 셈입니다</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">👀</span>
-  <div class="callout-body">
-    <p class="callout-title">오늘(7/30) 국내 발매 — 가격과 변경점 정리</p>
-    <p>클라우드붐 스트라이크는 On 라인업의 <strong>최상위 카본 레이서</strong>로, <a href="/shoes/nike-alphafly-3">알파플라이</a>·<a href="/shoes/asics-metaspeed-sky-plus">메타스피드</a>와 같은 급에서 겨루는 슈퍼슈즈입니다. 2세대는 <strong>2026년 7월 30일 글로벌·한국 동시 발매</strong>됐고, 국내 정가는 <strong>329,000원</strong>(라이트스프레이 클라우드붐 스트라이크 2는 419,000원)입니다. On 공식 온·오프라인 매장과 굿러너컴퍼니 등 지정 판매처에서 구매할 수 있습니다. 다만 출시 직후라 RunRepeat 정량 랩은 미게시 상태 — 아래 스택·에너지 리턴 등 <strong>랩 수치는 On 공식 발표 변경점 + 스트라이크 1 실측 기준 추정</strong>이며, 정식 랩이 나오면 갱신합니다.</p>
-  </div>
-</div>
-
-<h2>클라우드붐 스트라이크, 어떤 신발인가</h2>
-<p>클라우드붐 스트라이크는 On의 <strong>Helion HF(Pebax 계열) 슈퍼폼 + 풀렝스 카본 Speedboard</strong>를 얹은 마라톤 레이싱화입니다. On의 시그니처인 <strong>CloudTec(바닥의 구름 포드)</strong>가 착지 충격을 흡수하고, 카본 플레이트가 추진력을 만드는 구조죠. 전작 1은 <a href="/shoes/on-cloudboom-strike">상세 페이지</a>에서 정리했듯 <strong>72.1% 에너지 리턴 + 201g 경량</strong>에, 특히 <strong>겨울 경화율 6%</strong>(추운 날씨에도 폼이 거의 굳지 않음)로 한국 겨울 마라톤에서 강점을 보였습니다. 어퍼를 로봇이 분사해 성형하는 <strong>LightSpray</strong> 버전은 2024 파리 올림픽 마라톤에서 화제가 되기도 했죠.</p>
-<p>다만 1은 <strong>3.2mm 극단적 로우드롭</strong>이라 미드풋·앞발 착지 러너 전용이었고, 와이드 옵션이 없어 발볼 넓은 한국 러너에게는 도전적인 핏이었습니다. 2세대가 이 부분을 어떻게 손봤는지가 관전 포인트입니다.</p>
-
-<h2>1 → 2, 무엇이 달라지나</h2>
-<table>
-  <thead><tr><th>항목</th><th>스트라이크 1 (실측)</th><th>스트라이크 2 (공식)</th><th>변경</th></tr></thead>
-  <tbody>
-    <tr><td>무게</td><td>201g</td><td><strong>191g</strong>(공식) / 200g(RTR 실측)</td><td>공식 -10g, 실측은 거의 동일</td></tr>
-    <tr><td>스택(힐/전족)</td><td>38.1 / 34.9mm(랩 실측)</td><td><strong>40 / 35mm</strong>(RTR 측정)</td><td>힐 소폭 증가</td></tr>
-    <tr><td>드롭</td><td>3.2mm(랩 실측) / 4mm(공식)</td><td><strong>5mm</strong>(공식)</td><td>측정 기준 상이</td></tr>
-    <tr><td>미드솔</td><td>Helion HF</td><td><strong>Helion HF (폼 약 15% 경량화)</strong></td><td>같은 폼, 밀도 개선</td></tr>
-    <tr><td>쿠션 구조</td><td>CloudTec</td><td><strong>CloudTec Sphere(신규)</strong></td><td>구름 포드 재설계</td></tr>
-    <tr><td>플레이트</td><td>카본 Speedboard</td><td>카본 Speedboard(강성↑·경량화)</td><td>추진력 강화</td></tr>
-    <tr><td>가격(글로벌)</td><td>$280</td><td>$250</td><td>-$30 인하</td></tr>
-    <tr><td>한국가</td><td>₩329,000</td><td><strong>₩329,000</strong></td><td>동결</td></tr>
-  </tbody>
-</table>
-<p><small>※ 스트라이크 2는 아직 RunRepeat 랩(절단 테스트) 미게시 상태로, 위 수치는 On 공식 발표와 Road Trail Run 리뷰 측정치입니다. <strong>스트라이크 1의 값은 RunRepeat 랩 실측이라 측정 주체가 달라 세대 간 직접 비교에는 주의가 필요합니다</strong>(랩은 공식 스펙보다 드롭이 낮게 나오는 경향이 있습니다 — 1도 공식 4mm였지만 랩 실측은 3.2mm였습니다). 에너지 리턴 등 정량 수치는 랩 게시 후 갱신합니다.</small></p>
-
-<h2>핵심은 CloudTec Sphere</h2>
-<p>이번 세대의 진짜 이야깃거리는 <strong>CloudTec Sphere</strong>입니다. On의 정체성인 바닥 구름 포드(CloudTec)를 <strong>구(球)형 구조로 재설계</strong>해, 착지 시 충격을 더 균일하게 눌러주고 반발 방향을 앞으로 모으는 것이 목표라고 On은 설명합니다. 여기에 미드솔 폼(Helion HF)을 약 15% 가볍게 만들어, 스택은 유지하면서 무게만 덜어낸 것이 이번 경량화의 핵심입니다.</p>
-<p>쉽게 말하면 <strong>"쿠션 감각은 지키면서 더 가볍고, 밀어주는 힘은 더 또렷하게"</strong>가 2세대의 지향점입니다. 카본 Speedboard도 강성을 높여, 후반부 지친 다리에서도 추진력이 덜 무너지도록 손봤습니다. 다만 이런 주장은 <strong>제조사 자체 발표</strong>이므로, 실제 체감은 RunRepeat·전문 리뷰의 정량 검증이 나온 뒤 다시 짚겠습니다.</p>
-
-<h2>출시 직후 첫 실주행 리뷰는 어땠나</h2>
-<p>발매에 맞춰 <strong>Road Trail Run</strong>이 실주행 리뷰를 공개했습니다(종합 8.93/10). 아직 한 매체의 평가이고 랩 검증 전이지만, 방향성은 참고할 만합니다.</p>
-<ul>
-  <li><strong>좋았던 점</strong> — 레이싱화치고 <strong>안정적</strong>이고, 단단하면서 제어가 쉽다는 평. 어퍼가 가볍고 통기성이 좋으며, 아웃솔이 <strong>젖은 노면에서도 접지력이 좋다</strong>는 점이 언급됐습니다. 장마·소나기가 잦은 한국 여름 레이스에서 의미 있는 대목입니다.</li>
-  <li><strong>아쉬운 점</strong> — 뒤꿈치가 노출된 미드솔 폼에 쓸리며 <strong>삐걱거리는 소음</strong>이 난다는 지적, 그리고 <strong>최고 속도용은 아니고 마라톤 페이스에서 더 낫다</strong>는 평가입니다. 장거리 후 발이 뻐근했다는 언급도 있었습니다.</li>
-  <li><strong>정리하면</strong> — 5K~10K를 최고 속도로 밀어붙이는 성격보다 <strong>풀코스 페이스를 안정적으로 유지하는 쪽</strong>에 가깝습니다. 전작이 "극단적 반발력"으로 평가받았던 것과 비교하면 성격이 다소 차분해진 셈이라, 1의 통통 튀는 느낌을 좋아했다면 시착이 필요합니다.</li>
-</ul>
-
-<h2>한국 러너가 주목할 점</h2>
-<ul>
-  <li><strong>가격</strong> — 국내 정가 <strong>329,000원</strong>으로 전작과 같습니다. <a href="/shoes/nike-alphafly-3">알파플라이 3</a>(33만 9천원)보다 1만원가량 저렴한 포지션을 그대로 유지합니다. 글로벌 정가는 전작 $280에서 $250로 내렸는데 국내가는 그대로라, 환율·유통 구조를 감안해도 국내 러너가 인하 혜택을 보지는 못했습니다. 라이트스프레이 클라우드붐 스트라이크 2는 <strong>419,000원</strong>으로 국내 정식 유통됩니다.</li>
-  <li><strong>발볼 — 이번 세대에서 가장 반가운 변화</strong>. 1은 토박스 73.4mm(RunRepeat 실측, 랩 평균 73.2mm)로 표준이지만 <strong>와이드 옵션이 없어</strong> 발볼 넓은 러너에게는 부담이었는데, 출시 직후 나온 Road Trail Run 리뷰는 2의 토박스를 <strong>"roomy(넉넉하다)"</strong>고 평가하며 <strong>"레이싱화 평균보다 패딩이 넉넉해 발볼 넓은 러너에게 적합"</strong>이라고 명시했습니다. 발볼 때문에 On 레이서를 포기했던 한국 러너라면 다시 신어볼 이유가 생긴 셈입니다. 단 같은 리뷰가 <strong>미드풋 고정을 위해 끈을 꽤 조여야 한다</strong>고 지적했으니, 발등이 낮다면 착화 확인은 필요합니다. 발볼이 넓다면 <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너 가이드</a>도 함께 참고하세요.</li>
-  <li><strong>착지 유형</strong> — 클라우드붐 스트라이크는 로우드롭 설계라 <strong>미드풋·앞발 착지 러너에 최적</strong>입니다. 힐(뒤꿈치) 착지가 강한 러너는 아킬레스·종아리 부담이 커질 수 있어, 슈퍼슈즈 입문이라면 오히려 <a href="/shoes/nike-vaporfly-4">베이퍼플라이 4</a>처럼 힐 착지 관용도가 높은 모델이 무난합니다.</li>
-  <li><strong>용도</strong> — 300km 안팎 내구성의 <strong>레이스·포인트 훈련 전용</strong> 슈퍼슈즈입니다. 데일리 조깅까지 한 켤레로 굴리려는 목적이면 맞지 않습니다.</li>
-</ul>
-
-<h2>카본 레이서, 뭐랑 비교하면 되나</h2>
-<p>같은 값대(30만원 초중반~30만원 후반)에서 겨루는 슈퍼슈즈들과 성격이 다릅니다. 내 주법·거리에 맞춰 고르세요.</p>
-<ul>
-  <li><a href="/shoes/nike-alphafly-3">나이키 알파플라이 3</a> — 에너지 리턴 힐 74.9%, 힐~미드풋 착지 관용. 풀코스 PB 정면 승부.</li>
-  <li><a href="/shoes/nike-vaporfly-4">나이키 베이퍼플라이 4</a> — 가볍고 날렵, 하프~풀 밸런스. 슈퍼슈즈 입문에 무난.</li>
-  <li><a href="/shoes/adidas-adios-pro-4">아디다스 아디오스 프로 4</a> — EnergyRods(카본 막대)로 자연스러운 롤링, 장거리 안정.</li>
-  <li><a href="/shoes/asics-metaspeed-sky-plus">아식스 메타스피드 스카이+</a> — 스트라이드(보폭)형 러너용, 토박스 넉넉해 한국 발볼 친화.</li>
-  <li><a href="/shoes/saucony-endorphin-elite-3">써코니 엔돌핀 엘리트 3</a> — 최근 출시된 포크형 카본 레이서, 토박스는 71.8mm로 좁은 편(RunRepeat "heavily tapered").</li>
-</ul>
-<p>On 라인업 전체에서 클라우드붐 스트라이크가 어디에 위치하는지는 <a href="/blog/on-running-shoes-lineup-tier-guide-2026">온 러닝화 계급도</a>에서 한눈에 볼 수 있고, 데일리 On 슈퍼폼이 궁금하다면 <a href="/blog/on-cloudmonster-2-vs-3-comparison">클라우드몬스터 2 vs 3</a>도 함께 참고하세요.</p>
-
-<h2>자주 묻는 질문</h2>
-<div class="faq">
-  <div class="faq-item">
-    <p class="faq-q">Q. 스트라이크 1을 이미 갖고 있는데 2로 갈아탈 만한가요?</p>
-    <p class="faq-a">A. 출시 당일이라 단정은 이릅니다. 확정된 변경은 <strong>약 10g 경량화 + 카본 강성 강화 + CloudTec Sphere</strong>인데, 이는 세대 교체치고 큰 폭은 아닙니다. 1의 겨울 경화율 6%·72% 리턴에 만족했다면 무리해서 바꿀 이유는 적고, 랩·실주행 리뷰가 나온 뒤 판단해도 늦지 않습니다. 오히려 지금은 전작 <a href="/shoes/on-cloudboom-strike">스트라이크 1</a>의 재고 할인을 노리는 편이 실속 있을 수 있습니다.</p>
-  </div>
-  <div class="faq-item">
-    <p class="faq-q">Q. 슈퍼슈즈가 처음인데 첫 카본화로 괜찮을까요?</p>
-    <p class="faq-a">A. 전작 1은 로우드롭 + 미드풋 착지 특화라 입문용으로 까다로웠는데, <strong>2는 평가가 달라졌습니다</strong>. Road Trail Run은 2를 두고 "레이싱화치고 안정적"이라며 <strong>카본화 입문자에게도 권할 만하다</strong>고 봤습니다. 다만 이는 한 매체의 초기 평가이고, 여전히 5mm 로우드롭이라 힐 착지가 강한 러너는 아킬레스·종아리 부담을 확인해야 합니다. 더 안전하게 가려면 <a href="/shoes/nike-vaporfly-4">베이퍼플라이 4</a>나 <a href="/shoes/asics-metaspeed-sky-plus">메타스피드 스카이+</a>가 무난하고, 카본화 입문 주의사항은 <a href="/blog/carbon-plate-shoes-guide-2026">카본 플레이트 러닝화 가이드</a>를 참고하세요.</p>
-  </div>
-  <div class="faq-item">
-    <p class="faq-q">Q. 한국 가격은 얼마이고 어디서 살 수 있나요?</p>
-    <p class="faq-a">A. 국내 정가는 <strong>329,000원</strong>, 라이트스프레이 클라우드붐 스트라이크 2는 <strong>419,000원</strong>입니다. 2026년 7월 30일부터 On 공식 온·오프라인 매장과 굿러너컴퍼니 같은 지정 판매처에서 판매됩니다. 출시 초기에는 컬러웨이가 2종(WHITE/LIME, VERDITE/ACONITE)으로 제한적이라, 사이즈가 빠지기 전에 확인해보시는 편이 좋습니다.</p>
-  </div>
-</div>
-
-<p><small>출처: On 공식 프레스룸(press.on-running.com) 클라우드붐 스트라이크 2 발표(정가 $250·191g·드롭 5mm) · 국내 발매 정보 시선뉴스 2026-07-30 보도 · 국내 판매가 굿러너컴퍼니(On 공식 취급점) 판매 페이지 확인 · 실주행 평가·측정치 Road Trail Run 클라우드붐 스트라이크 2 리뷰(2026-07) · 전작 $280 정가 Doctors of Running·Believe in the Run 리뷰 · 클라우드붐 스트라이크 1 RunRepeat 랩 실측 · 작성 2026년 7월 2일, <strong>2026년 7월 30일 국내 발매 확정·국내가·첫 실주행 리뷰 반영해 갱신</strong>. 스트라이크 2의 스택·에너지 리턴 등 정량 수치는 랩 테스트 게시 후 갱신 예정입니다.</small></p>
+<p><strong>2026-11-10 정확 일반형 원문 업데이트.</strong> 일반 스트라이크2와 라이트스프레이LS2·초대를 구분했습니다. 자체 착화 후기가 아닌 원문 기반 분석입니다.</p><h2>먼저 볼 차이</h2><p>일반형3UG3005는 끈이 있는open-weave 메시 어퍼입니다. 라이트스프레이3UG3002의 끈 없는 분사 어퍼와 다른 모델입니다. LS2의167g 랩·힐/전족 수치를 일반형에 대입하지 않습니다.</p><p>공식191g은 한쪽 무게이며 기준 사이즈 미공시입니다. DOR200g은 남성US9 소개값으로, Matt의 실제 남성US10 검체를 잰 값이라고 확인하지 못했습니다. 기존 초대201g 실측에서191g 공시를 빼10g 감량이라고 비교한 썸네일은 교체했습니다.</p><figure><img src="/images/blog/on-cloudboom-strike-2-official-20261110.webp" alt="On 한국 공식 일반 스트라이크2 Aconite | Verdite ·3UG30056138 제품 사진" loading="lazy"/><figcaption>On 한국 공식 일반 스트라이크2 Aconite | Verdite ·3UG30056138 제품 사진</figcaption></figure><div class="table-wrap"><table><thead><tr><th>확인 항목</th><th>자료와 조건</th></tr></thead><tbody><tr><td>한국 상품</td><td>3UG30056138·유니섹스·Regular·일반 끈</td></tr><tr><td>제조사 무게·드롭</td><td>한쪽191g·기준 사이즈 미공시·5mm</td></tr><tr><td>DOR 소개</td><td>200g(남성US9)/178g(여성US8)·40/35mm·5mm</td></tr><tr><td>실제 DOR 테스터</td><td>Matt·남성US10·45 hard miles·실제 검체g값 미확인</td></tr><tr><td>정확 일반형 RR</td><td>독립 랩·SA·리턴·내부 치수 미확인</td></tr><tr><td>한국 표시 가격</td><td>읽은 공식 문서329,000원·출시MSRP 레이블/현재 결제 조건 미확인</td></tr></tbody></table></div><h2>Matt가 확인한 앞코와 뒤쪽 접촉</h2><p>Matt는 정사이즈 길이·넓고 덜 좁아지는 앞발이지만 낮은 볼륨, 보통 중족 폭과 앞쪽1/3 거싯 혀를 적었습니다. 힐 카운터·탭은 본인 아킬레스 부위에 압박이 있어 양말이 필요했습니다. 이 경험은 질환 유발·예방의 인과관계를 뜻하지 않습니다.</p><p>중간 정도 부드러움·완만한 탄성과 매우 뻣뻣한 중족/전족이 공존했다고 봤습니다. 본인은 긴 업템포·템포를 좋아했지만 짧은 강한 주행은 답답했고 좁은 힐/중족 때문에 긴 경주의 안정감에는 한계가 있었습니다.45마일 뒤 눈에 띄는 밑창 마모 없음은 개인 관찰이지 제품 수명km 보장이 아닙니다.</p><h2>출시일과15%·1.6%의 적용 대상을 나눕니다</h2><p>6월26일 공식techsheet와7월30일 당일 캠페인은 글로벌2026-07-30출시를 뒷받침합니다. 한국 현지 동일일 발매일은 미확인이므로 국내7월30일 확정이라고 쓰지 않습니다. 현재 공식 한국 특정SKU 문서는 확인했지만 사이즈별 결제재고·전체 색상 판매는 별도입니다.</p><p>공식15%는 새Helion HF 폼 소재의 경량화 주장입니다. 신발 전체15% 감량이나 개인 기록 향상으로 바꾸지 않습니다.1.6% 러닝이코노미 문구는 공식 문맥이LS2를 가리켜 일반형에 적용하지 않습니다.</p><p>일반형은 곡선 카본Speedboard·두 밀도Helion HF·CloudTecSphere·탈착식 위 미드솔을 사용합니다. 정확 일반형RR 랩을 찾지 못한 것은 미게시 확정이 아니며 초대나LS2 값으로 빈칸을 채우지 않습니다.</p><h2>구매 전에 실제로 확인할 것</h2><p>평소 양말·인솔로 앞쪽 길이와 발톱 위 공간, 끈을 조였을 때 발등 압박, 힐 고정과 칼라 마찰을 확인하세요. 발볼 너비 하나로 전체 핏을 결정하지 않습니다. 교환·반품 조건도 먼저 확인할 수 있습니다.</p><p>트레일에서는 자신의 주요 노면과 오르막·내리막·방향 전환에서 고정과 전환을 살펴야 합니다. 젖은 콘크리트 시험 하나가 바위·진흙 접지를 보장하지 않습니다. 통증·저림을 견뎌야 한다는 규칙이나 모델별 질환 예방 효과는 이번 자료로 확인하지 못했습니다.</p><h2>확인한 원문·공식 사진</h2><ul><li><a href="https://www.on.com/ko-kr/products/cloudboom-strike-2-u-3ug3005/unisex/aconite-verdite-shoes-3UG30056138" target="_blank" rel="noopener noreferrer">한국 정확SKU·공식 제품 사진</a></li><li><a href="https://press.on-running.com/on-cloudboom-strike-2" target="_blank" rel="noopener noreferrer">공식 일반형FW26 techsheet</a></li><li><a href="https://press.on-running.com/on-introduces-race-for-the-feeling-the-first-global-campaign-under-its-new-run-on-clouds-brand-platform" target="_blank" rel="noopener noreferrer">7월30일 글로벌 캠페인</a></li><li><a href="https://press.on-running.com/on-unveils-next-generation-of-cloudboom-marathon-racing-shoes-powered-by-new-cloudtec-sphere-technology" target="_blank" rel="noopener noreferrer">일반형/LS2 구분·1.6% 적용대상</a></li><li><a href="https://www.doctorsofrunning.com/on-cloudboom-strike-2-review/" target="_blank" rel="noopener noreferrer">DOR 정확 일반형 Matt 착화</a></li></ul>
 `,
+    faqs: [
+      {
+        "question": "191g이US9 실측인가요?",
+        "answer": "제조사의 한쪽 공시이며 기준 사이즈는 미확인입니다. DOR200g은 남성US9 소개값이고 Matt의 실제US10 무게는 미확인입니다."
+      },
+      {
+        "question": "라이트스프레이와 같은 모델인가요?",
+        "answer": "일반형은 끈·open-weave 메시, LS2는 끈 없는 분사 어퍼입니다. 정확 모델의 랩·리뷰를 섞지 않습니다."
+      },
+      {
+        "question": "15% 가벼워졌나요?",
+        "answer": "공식15%는 폼 소재 경량화 주장입니다. 전체 신발15% 감량이나 개인 성능 향상률로 바꾸지 않습니다."
+      },
+      {
+        "question": "한국7월30일 출시가 확실한가요?",
+        "answer": "공식 자료로 글로벌7월30일 출시는 확인했지만 한국 현지 동일일 발매는 미확인입니다."
+      }
+    ],
   },
 ];

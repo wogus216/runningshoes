@@ -1,5 +1,6 @@
 import type { Shoe } from '@/types/shoe';
 
+// 원문 재확인:2026-11-10. 확인 범위와 한계는 verification 참조.
 export const shoe: Shoe = {
   id: 'puma-fast-r-nitro-elite-3',
   slug: 'puma-fast-r-nitro-elite-3',
@@ -15,21 +16,21 @@ export const shoe: Shoe = {
   ],
   category: '레이싱',
   rating: 4,
-  price: 379000,
-  description: '푸마의 마라톤 특화 슈퍼슈즈로, 최대 스택(40mm)과 카본 플레이트로 장거리 레이스에 최적화되어 있습니다.',
-  oneliner: '173g 초경량 + 80%+ 리턴, 알파플라이에 도전하는 푸마의 최종 무기',
-  editorComment: '173g이라는 무게는 알파플라이 3(201g, 같은 RunRepeat 실측 기준)보다 28g 가볍고, 80% 이상 에너지 리턴은 슈퍼슈즈 시장 최상위권입니다. 37만 9천원은 알파플라이 3(₩339,000)보다 4만원 비싸지만, 순수 무게와 에너지 리턴 수치에서 앞섭니다. 익스텐디드 디자인의 PWRPLATE 카본이 마라톤 후반부까지 추진력을 유지시키고, 1.5mm PumaGrip 아웃솔이 최소한의 무게로 접지력을 확보합니다. 스니그한 레이싱 핏(RunRepeat "we discovered a snug fit")은 이 신발이 레이스데이 전용임을 보여 주며, 발볼이 넓다면 시착을 권합니다. 카본 이점 자체는 개인차가 크니(Knopp et al. 2023, 러닝 이코노미 ±11%p) 본인 페이스에서 검증 후 결전에 투입하세요.\n\n사이즈·구매 가이드: 토박스는 RunRepeat 랩 72.3mm로 평균(73.2mm)에 가까운 표준(standard)이지만 전체 핏이 스니그하고 와이드 옵션이 없으므로, 발볼이 넓으면 착화 테스트를 먼저 하세요. 379,000원 ÷ 250km = km당 약 1,516원이므로 서브3 목표 레이스 전용으로만 사용하세요. 접근성이 더 좋은 대안으로는 메타스피드 엣지+, 발볼 여유를 원하면 SC Elite V5를 비교해보세요.',
-  tags: ['마라톤', '카본 플레이트', '맥시멀 스택'],
-
+  description: 'NITRO Elite A-TPU · 돌출형 전장 카본 PWRPLATE 구조의 패스트알 나이트로 엘리트 3. RunRepeat 실험실 검체 173g·38.5/30.2mm. 한국 현재 정가 미확인.',
+  oneliner: 'NITRO Elite A-TPU · 돌출형 전장 카본 PWRPLATE · 173g (RunRepeat 실험실 검체)',
+  editorComment: '2026-11-10 원문 재확인. 한국 공식 캐시: 성별 미확인 312060_15 폭 미확인 정가379,000원·판매캐시379,000원; 성별 미확인 312060_03 폭 미확인 정가379,000원·판매캐시379,000원; Women 312061_13 폭 미확인 정가379,000원·판매캐시379,000원. 현재 가격·선택 재고는 미확인입니다. 판매캐시와 현재 결제가는 다를 수 있으며 글로벌 폭을 한국 판매 증거로 쓰지 않습니다. 한국170g(UK8)·40/32mm, DOR 소개170g(남성US9)/147g(여성US8)·39/31mm·8mm와 RR173g·38.5/30.2mm·8.3mm를 나눕니다. 여성 한국PDP의170g/UK8 복제 문구를 여성 실제 검체로 보지 않습니다. RR 국소 마모3.1mm·두께1.5mm를 원문대로 남겨 오타 교정이나250km 수명으로 바꾸지 않습니다. Matt와 Andrea의 형상 적합·반업 차이를 모두의 규칙으로 합치지 않으며 서브3 전용·마라톤 후반 추진 보장을 제거했습니다. DOR Matt(남성US10)는 정사이즈의 낮은 볼륨·약간 늘어나는 Ultraweave를 느꼈지만 내측 힐/중족 유도가 맞지 않았고30마일에 전족 마모를 적었습니다. Andrea는 평소여성US9.5에서10으로 올려 편하게 맞았고 본인의 외측 중족 착지에 형상이 잘 맞았습니다.25마일의 돌 눌림은 있었지만 당시 고무 마모는 없었고 최장10마일로 풀마라톤 시험은 아닙니다. RR 내부 최광폭 92.9mm·엄지 72.3mm·높이 26.3mm입니다. 너비 하나로 발등·길이·힐 고정이나 한국 와이드 적합을 보장하지 않습니다. 실제 규격·양말에서 접촉과 전환을 확인하세요. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
+  tags: [
+    '마라톤',
+    '카본 플레이트',
+    '맥시멀 스택',
+  ],
   specs: {
     weight: 173,
     cushioning: 9,
     responsiveness: 10,
     stability: 6,
-    drop: 8,
-    durability: 250,
+    drop: 8.3,
   },
-
   biomechanics: {
     stackHeight: {
       heel: 38.5,
@@ -37,77 +38,116 @@ export const shoe: Shoe = {
     },
     drop: 8.3,
     carbonPlate: true,
-    plateType: 'curved',
-    midsoleType: 'Nitro Elite (A-TPU)',
-    optimalPace: '3:00-4:30 min/km',
+    plateType: 'Carbon Speedboard/PWRPLATE/EnergyArc',
+    midsoleType: 'NITRO Elite A-TPU · 돌출형 전장 카본 PWRPLATE',
   },
-
-  injuryPrevention: {
-    plantarFasciitis: 'caution',
-    achillesTendinopathy: 'caution',
-    kneeIssues: 'caution',
-    shinSplints: 'good',
-  },
-
   koreanFootFit: {
     toBoxWidth: 'standard',
-    flatFootCompatibility: 'poor',
-    wideOptions: false,
     winterCompatibility: 'poor',
     summerCompatibility: 'excellent',
   },
-
   targetUsers: {
-    recommended: ['풀 마라톤 레이스', '엘리트 러너', '장거리 레이싱', '서브-3 목표'],
-    notRecommended: ['입문 러너', '짧은 거리', '일상 훈련', '넓은 발볼'],
+    recommended: [
+      '실제 규격에서 앞코·힐 고정과 전환을 비교하려는 러너',
+      '공시·실측·개인 체감의 조건을 구분하려는 러너',
+    ],
+    notRecommended: [
+      '시착에서 압박·마찰·불편한 전환이 남는 경우',
+      '짧은 시험과 광고를 수명·개인 기록·임상 효과로 읽는 경우',
+    ],
   },
-
-  features: ['Nitro Elite 폼', '카본 플레이트', '40mm 맥시멀 스택', '마라톤 특화', '충격흡수 힐 148 SA (RunRepeat 실측)'],
-
+  features: [
+    'NITRO Elite A-TPU · 돌출형 전장 카본 PWRPLATE',
+    '173g · 38.5/30.2mm · 드롭 8.3mm (RunRepeat 실험실 검체)',
+    '한국은 앞코 너머로 돌출된 전장 카본 PWRPLATE, RR/DOR은 A-TPU 폼과 분리된 힐/전족 구조를 설명합니다. 제조사·소규모 연구의 개선율을 모두의 기록 향상 보장으로 해석하지 않습니다.',
+    'RR 내부 최광폭 92.9mm·엄지 72.3mm·높이 26.3mm입니다. 너비 하나로 발등·길이·힐 고정이나 한국 와이드 적합을 보장하지 않습니다. 실제 규격·양말에서 접촉과 전환을 확인하세요.',
+  ],
   priceAnalysis: {
-    msrp: 379000,
-    streetPrice: 260000,
-    costPerKm: 1516,
     valueRating: 5,
     priceTier: 'super-premium',
-    alternatives: ['nike-alphafly-3', 'asics-metaspeed-edge-plus', 'new-balance-sc-elite-v5'],
+    alternatives: [
+      'nike-alphafly-3',
+      'asics-metaspeed-edge-plus',
+      'new-balance-sc-elite-v5',
+    ],
   },
-
   reviews: [
     {
-        userType: '계절 적합성 — 봄가을 레이스 한정',
-        text: '기온이 성능을 크게 좌우하는 모델입니다. RunRepeat 저온 테스트 경도 변화가 2%로 작아, 계절에 따른 폼 변화는 크지 않습니다. 봄·가을 대회가 주력이라면 강점이 살아나고, 겨울 레이스를 노린다면 저온 경화율이 낮은 모델을 따로 봐야 합니다. 173g으로 최상위 레이서 중에서도 가벼운 축이고, 힐 38.5mm 스택이라 30km 이후 충격 흡수도 확보돼 있습니다. 전체 핏이 스니그하고 와이드가 없어 발볼이 넓다면 시착이 필요합니다. 379,000원·예상 수명 200~300km(추정) 기준 km당 약 1,260~1,900원입니다.',
-      },
-    {
-      userType: '에디터 분석',
-      rating: 89,
-      text: '푸마 최상위 풀 마라톤 레이싱화입니다. 173g으로 알파플라이 3(201g, 같은 RunRepeat 실측 기준)보다 28g 가볍고, 80% 이상의 에너지 리턴으로 최고 수준의 반발력을 제공합니다. 379,000원으로 알파플라이 3(339,000원)보다 4만원 비싸지만 순수 무게에서 확실히 우위입니다. 8.3mm 드롭에 38.5mm 힐 스택으로 전방 착지 러너에게 최적화된 설계입니다. 토박스 폭은 랩 72.3mm로 평균에 가깝지만 전체 핏이 스니그한 편이라(RunRepeat) 발볼 넓은 러너는 착화 테스트를 꼭 해보세요. 250km 내구성으로 km당 약 1,516원의 가성비는 순수 레이스 전용이라는 점을 감안하면 납득 가능합니다. 평발이나 무릎 부상 이력이 있는 러너보다는 서브3:00을 목표로 하는 엘리트 러너의 풀 마라톤 레이스용으로 추천합니다.',
+      userType: '원문 기반 에디터 분석',
+      source: 'editor',
+      sourceUrl: 'https://runrepeat.com/puma-fast-r-nitro-elite-3',
+      text: '한국170g(UK8)·40/32mm, DOR 소개170g(남성US9)/147g(여성US8)·39/31mm·8mm와 RR173g·38.5/30.2mm·8.3mm를 나눕니다. 여성 한국PDP의170g/UK8 복제 문구를 여성 실제 검체로 보지 않습니다. RR 국소 마모3.1mm·두께1.5mm를 원문대로 남겨 오타 교정이나250km 수명으로 바꾸지 않습니다. Matt와 Andrea의 형상 적합·반업 차이를 모두의 규칙으로 합치지 않으며 서브3 전용·마라톤 후반 추진 보장을 제거했습니다.',
     },
     {
-        userType: '예상 적합 — 대회 전용 장비를 마련하려는 서브3:30 전후 러너',
-        text: '훈련화와 별개로 대회 전용 장비를 두려는 서브3:30 전후 러너를 겨냥한 모델입니다. 173g의 무게에 힐 38.5mm 스택이라 30km 이후 누적되는 다리 피로를 줄이는 쪽으로 설계됐습니다. 다만 379,000원·예상 수명 200~300km(추정) 기준 km당 약 1,260~1,900원으로 이 등급에서도 비용 부담이 큰 편이라, 일상 훈련까지 겸하는 용도로는 맞지 않습니다. 토박스는 랩 72.3mm로 평균 수준이지만 전체 핏이 스니그하고 와이드 옵션이 없어, 발볼이 넓다면 시착이 사실상 필수입니다.',
-      },
+      userType: '외부 착화 의견 요약 · Doctors of Running',
+      source: 'editor',
+      sourceUrl: 'https://www.doctorsofrunning.com/puma-fast-r-nitro-elite-3-review-2025/',
+      text: 'DOR Matt(남성US10)는 정사이즈의 낮은 볼륨·약간 늘어나는 Ultraweave를 느꼈지만 내측 힐/중족 유도가 맞지 않았고30마일에 전족 마모를 적었습니다. Andrea는 평소여성US9.5에서10으로 올려 편하게 맞았고 본인의 외측 중족 착지에 형상이 잘 맞았습니다.25마일의 돌 눌림은 있었지만 당시 고무 마모는 없었고 최장10마일로 풀마라톤 시험은 아닙니다.',
+    },
   ],
-
   detailedSpecs: {
-    weight: '173g (남성 US 9 기준, Lab 측정)',
-    stackHeight: '힐 38.5mm / 포어풋 30.2mm (Lab 측정)',
-    drop: '8.3mm (Lab 측정)',
-    midsole: 'Nitro Elite (A-TPU, RunRepeat 실측 에너지 리턴 힐 80.4%·전족부 82.6%)',
-    plate: 'PWRPLATE 카본 (익스텐디드 디자인)',
-    outsole: 'PumaGrip 러버 (1.5mm)',
-    upper: 'Ultraweave 메쉬 (4/5 통기성)',
-    width: '표준 (레이싱 핏) — RunRepeat 랩 토박스 72.3mm(평균 73.2mm보다 0.9mm 좁음, 랩 본문 "only by a small margin"). 전체 핏은 snug이나 "far from an ultra-narrow"',
-    durability: '250km (레이싱 전용)',
-    price: '₩379,000 (MSRP) / 세일 시 ₩260,000~',
-    costPerKm: '약 ₩1,516/km (250km 기준)',
-    footType: '스니그한 레이싱 핏 (RunRepeat: 토박스 72.3mm는 평균에 가깝지만 전체 핏은 좁은 편)',
-    landingPattern: '전방 착지 (풀 마라톤 레이싱)',
+    weight: '173g (RunRepeat 실험실 검체). 한국170g(UK8)·40/32mm, DOR 소개170g(남성US9)/147g(여성US8)·39/31mm·8mm와 RR173g·38.5/30.2mm·8.3mm를 나눕니다. 여성 한국PDP의170g/UK8 복제 문구를 여성 실제 검체로 보지 않습니다.',
+    stackHeight: '38.5/30.2mm (RunRepeat 실험실 검체, 힐/전족부). 출처별 다른 공시는 무게 항목 참조.',
+    drop: '8.3mm (RunRepeat 실험실 검체). 한국170g(UK8)·40/32mm, DOR 소개170g(남성US9)/147g(여성US8)·39/31mm·8mm와 RR173g·38.5/30.2mm·8.3mm를 나눕니다. 여성 한국PDP의170g/UK8 복제 문구를 여성 실제 검체로 보지 않습니다.',
+    midsole: 'NITRO Elite A-TPU · 돌출형 전장 카본 PWRPLATE. 주폼 36.1AC, 힐/전족부 SA 148/124·에너지 리턴 80.4/82.6%. RR 국소 마모3.1mm·두께1.5mm를 원문대로 남겨 오타 교정이나250km 수명으로 바꾸지 않습니다. Matt와 Andrea의 형상 적합·반업 차이를 모두의 규칙으로 합치지 않으며 서브3 전용·마라톤 후반 추진 보장을 제거했습니다.',
+    plate: '한국은 앞코 너머로 돌출된 전장 카본 PWRPLATE, RR/DOR은 A-TPU 폼과 분리된 힐/전족 구조를 설명합니다. 제조사·소규모 연구의 개선율을 모두의 기록 향상 보장으로 해석하지 않습니다.',
+    width: 'RR 내부 최광폭 92.9mm·엄지 부위 72.3mm·높이 26.3mm. RR 내부 최광폭 92.9mm·엄지 72.3mm·높이 26.3mm입니다. 너비 하나로 발등·길이·힐 고정이나 한국 와이드 적합을 보장하지 않습니다. 실제 규격·양말에서 접촉과 전환을 확인하세요.',
+    durability: '검증된 공통 수명 km 미확인. 국소 마모·짧은 착화 후기를 주행 수명으로 환산하지 않습니다.',
+    price: '한국 공식 캐시: 성별 미확인 312060_15 폭 미확인 정가379,000원·판매캐시379,000원; 성별 미확인 312060_03 폭 미확인 정가379,000원·판매캐시379,000원; Women 312061_13 폭 미확인 정가379,000원·판매캐시379,000원. 현재 가격·선택 재고는 미확인입니다. 판매캐시와 현재 결제가는 다를 수 있으며 글로벌 폭을 한국 판매 증거로 쓰지 않습니다.',
   },
-
-  similarShoes: ['nike-alphafly-3', 'asics-metaspeed-edge-plus', 'new-balance-sc-elite-v5', 'saucony-endorphin-elite-2'],
-  relatedPosts: [
-    { slug: 'running-shoe-plate-guide-2026', title: '플레이트 완전 해설 — 카본·유리섬유·나일론' },
+  similarShoes: [
+    'nike-alphafly-3',
+    'asics-metaspeed-edge-plus',
+    'new-balance-sc-elite-v5',
+    'saucony-endorphin-elite-2',
   ],
-  purchaseLinks: [],
+  relatedPosts: [
+    {
+      slug: 'running-shoe-plate-guide-2026',
+      title: '플레이트 완전 해설 — 카본·유리섬유·나일론',
+    },
+  ],
+  purchaseLinks: [
+  ],
+  verification: {
+    checkedAt: '2026-11-10',
+    scope: '한국 상품 조건, 해외 실험실·제조사 공시와 외부 착화 의견의 확인 범위를 구분했습니다. 제품 전체 검증 완료 표지가 아닙니다.',
+    sources: [
+      {
+        label: '한국 공식 312060_15',
+        url: 'https://kr.puma.com/kr/ko/pd/패스트알-나이트로-엘리트-3-%3Cbr%3Efast-r-nitro-elite-3/312060.html?dwvar_312060_color=15',
+        note: '캐시 last week; 현재가격·선택재고 미확인.',
+      },
+      {
+        label: '한국 공식 312060_03',
+        url: 'https://kr.puma.com/kr/ko/pd/패스트알-나이트로-엘리트-3-%3Cbr%3Efast-r-nitro-elite-3/312060.html?dwvar_312060_color=03&dwvar_312060_size=0190',
+        note: '캐시 last month; 현재가격·선택재고 미확인.',
+      },
+      {
+        label: '한국 공식 312061_13',
+        url: 'https://kr.puma.com/kr/ko/pd/패스트알-나이트로-엘리트-3-우먼스-%3Cbr%3Efast-r-nitro-elite-3-wns/312061.html?dwvar_312061_color=13',
+        note: '캐시 last month; 현재가격·선택재고 미확인.',
+      },
+      {
+        label: 'RunRepeat 동세대 실험실 원문',
+        url: 'https://runrepeat.com/puma-fast-r-nitro-elite-3',
+        note: '공시 일반 검체 정책은 남성 US9. 실제 검체 라벨·폭 미확인. 173g·38.5/30.2mm·8.3mm. RR 국소 마모3.1mm·두께1.5mm를 원문대로 남겨 오타 교정이나250km 수명으로 바꾸지 않습니다. Matt와 Andrea의 형상 적합·반업 차이를 모두의 규칙으로 합치지 않으며 서브3 전용·마라톤 후반 추진 보장을 제거했습니다.',
+      },
+      {
+        label: 'Doctors of Running 동세대 원문',
+        url: 'https://www.doctorsofrunning.com/puma-fast-r-nitro-elite-3-review-2025/',
+        note: '한국170g(UK8)·40/32mm, DOR 소개170g(남성US9)/147g(여성US8)·39/31mm·8mm와 RR173g·38.5/30.2mm·8.3mm를 나눕니다. 여성 한국PDP의170g/UK8 복제 문구를 여성 실제 검체로 보지 않습니다.',
+      },
+      {
+        label: 'RunRepeat 측정법',
+        url: 'https://runrepeat.com/testing-methodology',
+        note: 'AC·HA·HC, SA·에너지 리턴, BR·구방식1~5와 내부/외부 폭을 구분합니다. 일반 정책은 개별 라벨 확인과 다릅니다.',
+      },
+    ],
+    limitations: [
+      '모델별 임상 예방·치료 등급, 공통 최적 페이스·주행 수명·km당 비용은 미확인으로 제거했습니다.',
+      '에디터 평점·1~10점·발볼 및 계절 분류·구매 링크는 모든 항목을 새로 검증한 수치나 임상 효과가 아닙니다.',
+      '판매 조건은 확인한 상품·시점에 한정합니다. 미확인을 미출시·단종·전국 재고 없음으로 해석하지 않습니다.',
+    ],
+  },
 };

@@ -3909,70 +3909,38 @@ export const posts_2026_09: BlogPost[] = [
     updatedAt: "2026-11-10",
   },
   {
-    id: 'puma-fast-r-nitro-elite-3-review',
-    slug: 'puma-fast-r-nitro-elite-3-review',
-    title: '푸마 패스트알 나이트로 엘리트 3 후기 | 173g, 알파플라이보다 28g 가벼운 서브3 전용 무기',
-    description:
-      '패스트알 나이트로 엘리트 3는 173g으로 알파플라이 3(201g)보다 28g 가볍습니다(둘 다 랩 실측, 남성 US 9). RunRepeat 실측 종합 92점(Superb)으로 이 사이트가 리뷰한 신발 중 최상위권 점수입니다. 379,000원, 250km 내구성으로 순수 서브3 레이스데이 전용 무기라는 포지션이 명확합니다. 다만 RunRepeat은 안정성이 극도로 낮다는 점을 함께 짚었습니다.',
-    thumbnail: '/images/blog/puma-fast-r-nitro-elite-3-review.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-09-11',
-    category: 'review' as const,
-    readingTime: 7,
-    tags: ['푸마 패스트알 나이트로 엘리트3', '카본 레이싱화', '마라톤 슈퍼슈즈', '서브3'],
+    id: "puma-fast-r-nitro-elite-3-review",
+    slug: "puma-fast-r-nitro-elite-3-review",
+    title: "패스트알 엘리트3 리뷰 —173g·돌출 카본, 내 착지·코너에도 맞을까?",
+    description: "높은 검체 리턴과 Matt·Andrea의 다른 형상 적합을 정리합니다. 서브3 전용·250km·마라톤 후반 추진 보장을 정정하고 실제 앞코·전환을 확인합니다.",
+    thumbnail: "/images/shoes/puma/fAST-R_NITROElite3.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-09-11",
+    category: "review",
+    readingTime: 8,
+    tags: [
+      "패스트알 엘리트3",
+      "원문 대조",
+      "핏"
+    ],
     content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>173g — 알파플라이 3(201g)보다 28g 가볍습니다(둘 다 랩 실측, 남성 US 9).</strong> RunRepeat 실측 종합 92점(Superb)을 받았습니다</li>
-    <li><strong>379,000원으로 이 사이트 신발 중 최고가권</strong>입니다. 250km 내구성이라 km당 약 1,516원 — 순수 레이스 전용 운용이 전제입니다</li>
-    <li><strong>RunRepeat이 안정성을 "극도로 낮다"고 짚었습니다.</strong> 공격적인 반발력의 대가로, 레이스 경험이 충분한 러너를 대상으로 합니다</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">👟</span>
-  <div class="callout-body">
-    <p class="callout-title">한 줄 결론</p>
-    <p><strong>서브3:00 전후를 노리는 엘리트~상급 러너의 풀 마라톤 전용 무기</strong>입니다. 대회 전용 장비로 하나 마련하려는 게 아니라면, 같은 브랜드의 <a href="/shoes/puma-deviate-nitro-elite-4">디비에이트 나이트로 엘리트 4</a>가 접근하기 쉬운 대안입니다.</p>
-  </div>
-</div>
-
-<h2>173g, 왜 이 숫자가 중요한가</h2>
-<p>173g은 <a href="/shoes/nike-alphafly-3">알파플라이 3</a>(201g)보다 28g 가볍습니다. 두 값 모두 남성 US 9 랩 실측이라 같은 기준입니다(알파플라이 3의 나이키 공식 표기는 280mm 기준 218g). RunRepeat이 신발을 직접 실측해 매긴 종합 점수는 <strong>92점(Superb)</strong>으로, 이 사이트가 다뤄온 신발들 사이에서도 최상위권입니다. RunRepeat은 이 신발을 "실험적인 플레이트 설계와 최첨단 폼으로 뛰어난 성능을 제공"한다고 평가하면서도, <strong>안정성이 극도로 낮다는 점을 동시에 지적</strong>했습니다. 힐 38.5mm·전족 30.2mm 스택에 익스텐디드 PWRPLATE 카본이 마라톤 후반부까지 추진력을 유지시키는 구조입니다.</p>
-
-<h2>발볼·계절 — 한국 러너가 주의할 것들</h2>
-<ul>
-  <li><strong>"발볼 넓은데 괜찮나요?"</strong> — 토박스는 72.3mm로 평균(73.2mm)에 가깝지만 전체 핏이 스니그한 레이싱 핏(RunRepeat)이고 와이드 옵션이 없습니다. 발볼이 넓다면 매장 착화를 먼저 하세요</li>
-  <li><strong>"겨울에도 신을 수 있나요?"</strong> — 겨울 호환성이 poor입니다. A-TPU 계열 폼이 저온에서 경화되는 경향이 있어, 영하권 대회가 주력이라면 감안해야 합니다</li>
-  <li><strong>"안정성이 낮다는 게 어느 정도인가요?"</strong> — RunRepeat이 별도로 짚을 만큼 낮은 수준입니다. 레이스 경험이 부족하거나 착지가 불안정한 러너에게는 부상 위험이 있으니, 충분한 카본화 적응 훈련 후 투입하는 것을 권합니다</li>
-</ul>
-
-<h2>가격 대비 가치 — 4만원 비싸지만 28g 가볍다</h2>
-<p>379,000원은 알파플라이 3(339,000원)보다 4만원 비싸지만, 순수 무게에서 확실히 앞섭니다. 250km 내구성 기준 km당 약 1,516원으로 이 사이트가 다룬 레이싱화 중 가장 비싼 운용 비용입니다 — <strong>서브3:00을 목표로 하는 레이스 당일에만 신는다는 전제가 아니면 가성비를 논하기 어려운 신발</strong>입니다. 접근성을 원한다면 <a href="/shoes/asics-metaspeed-edge-plus">메타스피드 엣지+</a>나 발볼 여유가 있는 <a href="/shoes/new-balance-sc-elite-v5">SC 엘리트 V5</a>를 비교해보세요.</p>
-
-<h2>누구에게 맞을까</h2>
-<ul>
-  <li><strong>서브3:00 전후 목표의 엘리트~상급 러너</strong> — 이 신발이 설계된 정확한 대상입니다</li>
-  <li><strong>풀 마라톤 대회 전용 장비를 따로 마련하려는 러너</strong> — 훈련화와 분리 운용이 전제입니다</li>
-  <li>반대로 <strong>대회 경험이 적거나 착지가 불안정한 러너, 짧은 거리 위주로 뛰는 러너</strong>라면 안정성 낮은 이 신발보다 <a href="/shoes/puma-deviate-nitro-elite-4">엘리트 4</a> 같은 접근성 있는 카본화가 낫습니다</li>
-</ul>
-
-<h2>마무리</h2>
-<p>패스트알 나이트로 엘리트 3는 푸마가 낼 수 있는 최상위 무게·반발력을 그대로 밀어붙인 신발입니다. RunRepeat의 92점(Superb)이 그 성능을 뒷받침하지만, 같은 리뷰가 짚은 낮은 안정성은 이 신발이 아무에게나 맞는 게 아니라는 뜻이기도 합니다. 서브3:00을 실제로 노리는 레이스가 있을 때만 꺼내는 무기로 접근하는 게 맞습니다.</p>
+<p><strong>2026-11-10 원문 대조 업데이트.</strong> 제조사 공시·실험실 검체·개인 착화 의견과 한국 상품 캐시를 구분합니다. 자체 착화 후기가 아닌 원문 기반 분석입니다.</p><h2>먼저 볼 차이</h2><p>RR173g·힐/전족 리턴80.4/82.6%는 검체의 값입니다. 이를 서브3 러너만의 전용 무기나 개인 기록 향상률로 바꾸지 않습니다.</p><p>같은 분리형 폼·돌출 카본에도 Matt는 내측 유도가 맞지 않았고 Andrea는 본인의 외측 중족 착지에 형상이 맞았습니다. 실제 동작에서 전환이 편한지가 더 구체적인 질문입니다.</p><figure><img src="/images/shoes/puma/fAST-R_NITROElite3.webp" alt="패스트알 엘리트3 — 분리형 폼·돌출 카본과 실제 전환" loading="lazy"/><figcaption>패스트알 엘리트3 — 분리형 폼·돌출 카본과 실제 전환</figcaption></figure><div class="table-wrap"><table><thead><tr><th>모델</th><th>무게 · 공시 출처 별도 표기</th><th>스택·드롭 · 공시 출처 별도 표기</th><th>힐/전족 SA</th><th>힐/전족 리턴</th></tr></thead><tbody><tr><td>puma-fast-r-nitro-elite-3</td><td>173g</td><td>38.5/30.2mm · 8.3mm</td><td>148/124</td><td>80.4/82.6%</td></tr></tbody></table></div><p>표의 값은 RunRepeat 검체 또는 별도 표시한 DOR 소개 공시입니다. DOR 소개는 독립 실측이 아닙니다. 일반 정책은 남성 US9지만 개별 라벨·폭·보정 여부는 미확인입니다. 공시와 동일한 검체로 단정하지 않습니다. SA는 충격흡수, 리턴은 시험에서 반환된 에너지 비율이며 부드러움·개인 기록·임상 보호를 뜻하지 않습니다. HA는 구방식, AC는 별도 경도 척도여서 환산하지 않습니다. <a href="https://runrepeat.com/testing-methodology" target="_blank" rel="noopener noreferrer">RunRepeat 측정법</a></p><h2>풀마라톤 후반 검증으로 확대하지 않기</h2><p>Andrea의 최장 주행은10마일입니다.25마일 누적 시험과 좋은 전환을 풀마라톤 후반 추진력 유지의 입증으로 확대하지 않습니다. Matt의30마일 마모와도 사용 조건이 다릅니다.</p><p>RR 마모3.1mm·국소 고무 두께1.5mm는 원문대로 남겼습니다. 둘 중 하나를 오타로 고치거나250km 수명·km당1,516원으로 환산하지 않습니다. 한국 현재 할인·와이드 전체 부재도 미확인입니다.</p><h2>패스트알 엘리트3 — 핏과 주행에서 갈리는 지점</h2><p>한국은 앞코 너머로 돌출된 전장 카본 PWRPLATE, RR/DOR은 A-TPU 폼과 분리된 힐/전족 구조를 설명합니다. 제조사·소규모 연구의 개선율을 모두의 기록 향상 보장으로 해석하지 않습니다.</p><p>RR 내부 최광폭 92.9mm·엄지 72.3mm·높이 26.3mm입니다. 너비 하나로 발등·길이·힐 고정이나 한국 와이드 적합을 보장하지 않습니다. 실제 규격·양말에서 접촉과 전환을 확인하세요.</p><p>DOR Matt(남성US10)는 정사이즈의 낮은 볼륨·약간 늘어나는 Ultraweave를 느꼈지만 내측 힐/중족 유도가 맞지 않았고30마일에 전족 마모를 적었습니다. Andrea는 평소여성US9.5에서10으로 올려 편하게 맞았고 본인의 외측 중족 착지에 형상이 잘 맞았습니다.25마일의 돌 눌림은 있었지만 당시 고무 마모는 없었고 최장10마일로 풀마라톤 시험은 아닙니다.</p><h2>패스트알 엘리트3 — 공시·한국 판매 확인 범위</h2><p>한국170g(UK8)·40/32mm, DOR 소개170g(남성US9)/147g(여성US8)·39/31mm·8mm와 RR173g·38.5/30.2mm·8.3mm를 나눕니다. 여성 한국PDP의170g/UK8 복제 문구를 여성 실제 검체로 보지 않습니다.</p><p>한국 공식 캐시: 성별 미확인 312060_15 폭 미확인 정가379,000원·판매캐시379,000원; 성별 미확인 312060_03 폭 미확인 정가379,000원·판매캐시379,000원; Women 312061_13 폭 미확인 정가379,000원·판매캐시379,000원. 현재 가격·선택 재고는 미확인입니다. 판매캐시와 현재 결제가는 다를 수 있으며 글로벌 폭을 한국 판매 증거로 쓰지 않습니다.</p><p>RR 국소 마모3.1mm·두께1.5mm를 원문대로 남겨 오타 교정이나250km 수명으로 바꾸지 않습니다. Matt와 Andrea의 형상 적합·반업 차이를 모두의 규칙으로 합치지 않으며 서브3 전용·마라톤 후반 추진 보장을 제거했습니다.</p><h2>구매 전에 실제로 확인할 것</h2><p>평소 양말·인솔로 앞쪽 길이와 발톱 위 공간, 끈을 조였을 때 발등 압박, 힐 고정과 칼라 마찰을 확인하세요. 발볼 너비 하나로 전체 핏을 결정하지 않습니다. 교환·반품 조건도 먼저 확인할 수 있습니다.</p><p>트레일에서는 자신의 주요 노면과 오르막·내리막·방향 전환에서 고정과 전환을 살펴야 합니다. 젖은 콘크리트 시험 하나가 바위·진흙 접지를 보장하지 않습니다. 통증·저림을 견뎌야 한다는 규칙이나 모델별 질환 예방 효과는 이번 자료로 확인하지 못했습니다.</p><h2>확인한 원문과 접근 범위</h2><ul><li><a href="https://kr.puma.com/kr/ko/pd/패스트알-나이트로-엘리트-3-%3Cbr%3Efast-r-nitro-elite-3/312060.html?dwvar_312060_color=15" target="_blank" rel="noopener noreferrer">한국 공식 312060_15</a> — 캐시 last week; 현재가격·선택재고 미확인.</li><li><a href="https://kr.puma.com/kr/ko/pd/패스트알-나이트로-엘리트-3-%3Cbr%3Efast-r-nitro-elite-3/312060.html?dwvar_312060_color=03&amp;dwvar_312060_size=0190" target="_blank" rel="noopener noreferrer">한국 공식 312060_03</a> — 캐시 last month; 현재가격·선택재고 미확인.</li><li><a href="https://kr.puma.com/kr/ko/pd/패스트알-나이트로-엘리트-3-우먼스-%3Cbr%3Efast-r-nitro-elite-3-wns/312061.html?dwvar_312061_color=13" target="_blank" rel="noopener noreferrer">한국 공식 312061_13</a> — 캐시 last month; 현재가격·선택재고 미확인.</li><li><a href="https://runrepeat.com/puma-fast-r-nitro-elite-3" target="_blank" rel="noopener noreferrer">패스트알 엘리트3 RR 원문</a> — 정확 모델 검체. 제조사 공시와 분리.</li><li><a href="https://www.doctorsofrunning.com/puma-fast-r-nitro-elite-3-review-2025/" target="_blank" rel="noopener noreferrer">패스트알 엘리트3 DOR 원문</a> — 소개 공시·실제 착화 사이즈·개인의견 구분.</li></ul>
 `,
     faqs: [
       {
-        question: '알파플라이 3 대신 이걸 사도 되나요?',
-        answer:
-          '무게(173g vs 201g, 둘 다 랩 실측 남성 US 9)만 보면 우위지만 가격이 4만원 비싸고 안정성이 RunRepeat 기준으로도 낮게 평가됐습니다. 카본화 효과는 개인차가 크므로, 가능하면 매장에서 착화 후 결정하는 것을 권합니다.',
+        "question": "서브3 전용인가요?",
+        "answer": "목표 기록으로 사용자를 제한할 근거를 확인하지 못했습니다. 본인의 고정·전환을 확인할 수 있습니다."
       },
       {
-        question: '이 신발로 일상 훈련도 할 수 있나요?',
-        answer:
-          '권장하지 않습니다. 내구성 250km에 km당 약 1,516원으로 운용 비용이 높고, 안정성도 낮아 레이스 당일 전용으로 설계됐습니다. 훈련은 별도 신발로 운용하는 것이 맞습니다.',
+        "question": "마라톤 후반까지 추진력이 유지되나요?",
+        "answer": "확인한 리뷰에서 그런 보장을 입증하지 못했습니다. Andrea의 최장 주행은10마일입니다."
       },
+      {
+        "question": "고무 마모가 두께보다 큰데 오타인가요?",
+        "answer": "RR은3.1mm·1.5mm를 함께 표시합니다. 임의 교정하거나 공통 수명으로 환산하지 않습니다."
+      }
     ],
+    updatedAt: "2026-11-10",
   },
   {
     id: "puma-deviate-nitro-elite-3-review",

@@ -1,5 +1,6 @@
 import type { Shoe } from '@/types/shoe';
 
+// 원문 재확인:2026-11-10. 확인 범위와 한계는 verification 참조.
 export const shoe: Shoe = {
   id: 'new-balance-sc-rebel',
   slug: 'new-balance-sc-rebel',
@@ -16,131 +17,147 @@ export const shoe: Shoe = {
   ],
   category: '레이싱',
   rating: 5,
-  price: 259000,
-  description:
-    '뉴발란스가 SC 트레이너 v3를 대체하며 내놓은 슈퍼 트레이너입니다. 새 Infinion 폼에 지면 쪽으로 내린 Energy Arc 플레이트를 얹어 207g(RunRepeat 실측)·힐 스택 38.3mm(실측)를 동시에 잡았고, 훈련과 레이스를 한 켤레로 소화하는 자리를 노립니다.',
-  oneliner: '207g(실측)에 힐 38mm, 와이드 2E까지 나온 슈퍼 트레이너',
-  editorComment:
-    '2026-08-22 한국 출시(259,000원)에 맞춰 등록했고, 이후 게시된 RunRepeat 랩 실측으로 무게·스택·드롭·토박스를 갱신했습니다. 실측은 207g, 힐 38.3mm/포어풋 29.5mm, 드롭 8.8mm(브랜드 표기 4mm), 충격흡수 힐 168 SA, 에너지 리턴 힐 72.7%·전족 78.4%, 토박스 71.2mm입니다. 쿠션·반응성 점수는 2026-10-20 개정 매핑표에 따라 랩 수치(힐 168 SA, 전족 에너지 리턴 78.4%)로 재산정했고, 나머지 성향 점수는 등록 당시 해외 리뷰 3곳의 주행 평가를 옮긴 판단입니다.\n\n이 신발의 설계 핵심은 플레이트 위치입니다. 보통 플레이트는 폼 사이에 끼우는데 SC 레벨은 Energy Arc를 지면 쪽에 깔아 뒤쪽은 미드풋을 잡고 앞쪽은 추진을 담당하게 나눴습니다. Road Trail Run 멀티 테스터가 9.99/10과 9.5/10을, Believe in the Run이 A Tier와 함께 "역대 최고의 뉴발란스 러닝화"라는 표현을 쓴 근거가 여기 있습니다 — 폼이 물러도 플랫폼이 무너지지 않는다는 평가입니다.\n\n포지션은 SC 트레이너 v3의 대체입니다. RunRepeat 실측 기준 278g에서 207g으로 71g을 덜어냈고, 힐 스택은 36.8mm에서 38.3mm로 올렸습니다. 이름이 비슷한 퓨얼셀 레벨 v5(220g·33/27mm·무플레이트)와는 계보가 다릅니다 — 레벨 v5가 유연하고 말랑한 데일리라면 이쪽은 단단하게 굴러가는 플레이트 트레이너라, 업그레이드판으로 접근하면 어긋납니다.\n\n사이즈·구매 가이드: Road Trail Run과 Doctors of Running 두 곳이 독립적으로 갑피가 좁다고 지적했고, RunRepeat 실측 토박스도 71.2mm(랩 평균 73.2mm)로 "tapered shape… very snug fit"이라는 평가입니다. 다만 국내 출시분에 남성 2E 와이드가 함께 나왔으므로, 발볼이 넓다면 처음부터 2E를 보는 편이 낫습니다. 브랜드 표기 드롭은 4mm지만 RunRepeat 실측은 8.8mm라 저드롭 신발로 보기는 어렵습니다. 다만 38mm대 스택에 플레이트가 들어간 구성이라 발목 안정성은 데일리화보다 낮고, DOR은 걷기나 오래 서 있는 용도로는 부적합하다고 했습니다. 입문 단계에는 권하지 않습니다.',
-  tags: ['레이싱', '슈퍼 트레이너', 'Energy Arc', 'Infinion'],
-
+  description: 'SuperComp Rebel · Infinion · 지면 쪽 EnergyARC 구조의 SC Rebel V1. RunRepeat 실험실 검체 207g·38.3/29.5mm. 한국 현재 정가 미확인.',
+  oneliner: 'SuperComp Rebel · Infinion · 지면 쪽 EnergyARC · 207g (RunRepeat 실험실 검체)',
+  editorComment: '2026-11-10 원문 재확인. 한국 공식 캐시: 공식403·정확 상품 원문 미확인. 현재 가격·선택 재고는 미확인입니다. 판매캐시와 현재 결제가는 다를 수 있으며 글로벌 폭을 한국 판매 증거로 쓰지 않습니다. 미국 공식222g(남성9.5M)·4mm, DOR 소개218g(남성US9.5)/174g(여성US7)·40/36mm·4mm와 RR207g·38.3/29.5mm·8.8mm를 구분합니다. 같은 검체의 감량·개인 체감 드롭으로 고정하지 않습니다. 미국 공식은 Infinion과 propulsion plate만 명시합니다. RR A-TPU와 DOR의 TPEE/EVA 같다는 추측을 합쳐 조성을 확정하지 않습니다. 한국259,000원·2E 발매·8월22일 출시·450km·미확인 매체9.99점·입문자 금지 보장을 반복하지 않습니다. DOR Matt(남성US10)는 낮고 테이퍼진 레이스 같은 정사이즈 핏·좋은 거싯 고정, 튀는 힐·어색한 중족 돌출·이른 전족 구름을 적었습니다.35마일 동안 다용도 훈련과 추가 중족 구조를 좋아했지만 팀원들의 다른 핏에는 실제 사이즈가 없어 임의로 채우지 않습니다. RR 내부 최광폭 94.1mm·엄지 71.2mm·높이 24.8mm입니다. 너비 하나로 발등·길이·힐 고정이나 한국 와이드 적합을 보장하지 않습니다. 실제 규격·양말에서 접촉과 전환을 확인하세요. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
+  tags: [
+    '레이싱',
+    '슈퍼 트레이너',
+    'Energy Arc',
+    'Infinion',
+  ],
   specs: {
     weight: 207,
     cushioning: 10,
     responsiveness: 10,
     stability: 5,
-    drop: 9,
-    durability: 450,
+    drop: 8.8,
   },
-
   biomechanics: {
     stackHeight: {
-      heel: 38,
-      forefoot: 30,
+      heel: 38.3,
+      forefoot: 29.5,
     },
     drop: 8.8,
     carbonPlate: true,
-    plateType: 'curved',
-    midsoleType: 'Infinion 폼 + Energy Arc 플레이트 (지면 쪽 배치)',
-    optimalPace: '3:50-5:00 min/km',
+    plateType: 'Carbon-containing EnergyARC; material descriptions conflict',
+    midsoleType: 'SuperComp Rebel · Infinion · 지면 쪽 EnergyARC',
   },
-
   detailedSpecs: {
-    weight: '207g (RunRepeat 실측, US 9) / 브랜드 표기 218g (남성 US 9.5)·174g (여성 US 7)',
-    stackHeight: '힐 38.3mm / 포어풋 29.5mm (RunRepeat 실측) / 브랜드 표기 40/36mm',
-    drop: '8.8mm (RunRepeat 실측) / 4mm (브랜드 공식) — Doctors of Running도 "체감은 5~6mm에 가깝다"고 평가',
-    midsole: 'Infinion 폼 (반응성 강화 버전)',
-    plate: 'Energy Arc — 폼 사이가 아니라 지면 쪽에 배치',
-    outsole: '고무 아웃솔 (마모 실측 미게시)',
-    upper: '경량 엔지니어드 메쉬',
-    width: '남성 D / 남성 2E(와이드) / 여성 D — 뉴발란스 코리아 2026-08-22 확인. 토박스 71.2mm(RunRepeat 평균 73.2mm보다 2.0mm 좁음)로 수치 차이는 작으나 랩 본문이 "tapered shape (71.2 mm) that creates a very snug fit"이라고 평가',
-    durability: '400~500km (추정 — 랩 마모 측정 미게시)',
-    price: '259,000원',
-    costPerKm: '약 ₩576/km (450km 기준)',
-    footType: '중립',
-    landingPattern: '중족부/전족부 착지',
+    weight: '207g (RunRepeat 실험실 검체). 미국 공식222g(남성9.5M)·4mm, DOR 소개218g(남성US9.5)/174g(여성US7)·40/36mm·4mm와 RR207g·38.3/29.5mm·8.8mm를 구분합니다. 같은 검체의 감량·개인 체감 드롭으로 고정하지 않습니다.',
+    stackHeight: '38.3/29.5mm (RunRepeat 실험실 검체, 힐/전족부). 출처별 다른 공시는 무게 항목 참조.',
+    drop: '8.8mm (RunRepeat 실험실 검체). 미국 공식222g(남성9.5M)·4mm, DOR 소개218g(남성US9.5)/174g(여성US7)·40/36mm·4mm와 RR207g·38.3/29.5mm·8.8mm를 구분합니다. 같은 검체의 감량·개인 체감 드롭으로 고정하지 않습니다.',
+    midsole: 'SuperComp Rebel · Infinion · 지면 쪽 EnergyARC. 주폼 31AC, 힐/전족부 SA 168/119·에너지 리턴 72.7/78.4%. 미국 공식은 Infinion과 propulsion plate만 명시합니다. RR A-TPU와 DOR의 TPEE/EVA 같다는 추측을 합쳐 조성을 확정하지 않습니다. 한국259,000원·2E 발매·8월22일 출시·450km·미확인 매체9.99점·입문자 금지 보장을 반복하지 않습니다.',
+    plate: '정확 SuperComp Rebel은 Rebelv5와 별개입니다. RR은 carbon-infused판을 full carbon-fibre와 구분하지만 DOR은 전장 carbon-fibre라고 적었습니다. 탄소 포함 구조와 정확 섬유·복합재 조성·길이는 별개로 읽고 원문 상충을 남깁니다.',
+    width: 'RR 내부 최광폭 94.1mm·엄지 부위 71.2mm·높이 24.8mm. RR 내부 최광폭 94.1mm·엄지 71.2mm·높이 24.8mm입니다. 너비 하나로 발등·길이·힐 고정이나 한국 와이드 적합을 보장하지 않습니다. 실제 규격·양말에서 접촉과 전환을 확인하세요.',
+    durability: '검증된 공통 수명 km 미확인. 국소 마모·짧은 착화 후기를 주행 수명으로 환산하지 않습니다.',
+    price: '한국 공식 캐시: 공식403·정확 상품 원문 미확인. 현재 가격·선택 재고는 미확인입니다. 판매캐시와 현재 결제가는 다를 수 있으며 글로벌 폭을 한국 판매 증거로 쓰지 않습니다.',
   },
-
-  injuryPrevention: {
-    plantarFasciitis: 'caution',
-    achillesTendinopathy: 'caution',
-    kneeIssues: 'good',
-    shinSplints: 'good',
-  },
-
   koreanFootFit: {
     toBoxWidth: 'narrow',
-    flatFootCompatibility: 'poor',
-    wideOptions: true,
     winterCompatibility: 'fair',
     summerCompatibility: 'good',
   },
-
   priceAnalysis: {
-    msrp: 259000,
-    streetPrice: 259000,
-    costPerKm: 576,
     valueRating: 8,
     priceTier: 'premium',
-    alternatives: ['asics-superblast-3', 'adidas-hyperboost-edge', 'new-balance-sc-trainer-v3'],
-    valueAdvantages: [
-      'SC 트레이너 v3 대비 71g 경량화(RunRepeat 실측 278g → 207g)',
-      '같은 값의 슈퍼블라스트 3보다 21g 가벼움(공식 무게 218g vs 239g)',
-      '슈퍼 트레이너 중 드물게 와이드(2E) 제공',
-      '훈련·레이스 겸용이라 신발 한 켤레로 커버되는 범위가 넓음',
+    alternatives: [
+      'asics-superblast-3',
+      'adidas-hyperboost-edge',
+      'new-balance-sc-trainer-v3',
     ],
   },
-
   targetUsers: {
     recommended: [
-      '훈련과 레이스를 한 켤레로 해결하고 싶은 러너',
-      '슈퍼 트레이너를 원하지만 240g대가 무겁게 느껴지던 러너',
-      'SC 트레이너 v3에서 갈아탈 뉴발란스 사용자',
-      '발볼이 넓어 슈퍼 트레이너 선택지가 없던 러너(2E 한정)',
+      '실제 규격에서 앞코·힐 고정과 전환을 비교하려는 러너',
+      '공시·실측·개인 체감의 조건을 구분하려는 러너',
     ],
     notRecommended: [
-      '러닝 경험이 짧은 입문 러너',
-      '아킬레스·종아리 부상 이력이 있는 러너',
-      '과내전이 뚜렷해 안정화가 필요한 러너',
-      '걷기나 장시간 서 있는 용도를 겸하려는 경우',
+      '시착에서 압박·마찰·불편한 전환이 남는 경우',
+      '짧은 시험과 광고를 수명·개인 기록·임상 효과로 읽는 경우',
     ],
   },
-
   features: [
-    '207g(실측)에 힐 38.3mm — 경량과 스택을 동시에 잡은 구성',
-    'Energy Arc 플레이트를 지면 쪽에 배치해 플랫폼 붕괴 억제',
-    'Infinion 폼 (반응성 강화 버전)',
-    'Road Trail Run 9.99/10 · 9.5/10, Believe in the Run A Tier',
-    'SC 트레이너 v3 대비 71g 경량화(실측)',
-    '국내 남성 2E 와이드 출시',
+    'SuperComp Rebel · Infinion · 지면 쪽 EnergyARC',
+    '207g · 38.3/29.5mm · 드롭 8.8mm (RunRepeat 실험실 검체)',
+    '정확 SuperComp Rebel은 Rebelv5와 별개입니다. RR은 carbon-infused판을 full carbon-fibre와 구분하지만 DOR은 전장 carbon-fibre라고 적었습니다. 탄소 포함 구조와 정확 섬유·복합재 조성·길이는 별개로 읽고 원문 상충을 남깁니다.',
+    'RR 내부 최광폭 94.1mm·엄지 71.2mm·높이 24.8mm입니다. 너비 하나로 발등·길이·힐 고정이나 한국 와이드 적합을 보장하지 않습니다. 실제 규격·양말에서 접촉과 전환을 확인하세요.',
   ],
-
   reviews: [
     {
-      userType: '에디터 분석',
-      rating: 88,
-      text: '슈퍼 트레이너에서 가장 흔한 타협은 "스택을 올리면 무거워진다"인데, SC 레벨은 힐 38.3mm(실측)를 얹고 207g(실측)에 머뭅니다. 공식 무게로 같은 259,000원인 슈퍼블라스트 3(239g)보다 21g 가볍고, RunRepeat 실측으로 대체 대상인 SC 트레이너 v3(278g)보다 71g 가볍습니다. 설계상 눈에 띄는 선택은 Energy Arc 플레이트를 폼 사이가 아니라 지면 쪽에 깐 것으로, 해외 테스터들은 "플레이트가 딱딱하게 튀지 않으면서 밀어준다"는 표현으로 이 구조를 평가했습니다. RunRepeat 실측으로는 충격흡수 힐 168 SA, 에너지 리턴 힐 72.7%·전족 78.4%로 쿠션과 반발 모두 상위권입니다. 판단이 필요한 지점은 둘입니다 — 브랜드 표기 드롭은 4mm지만 실측 8.8mm라 표기만 보고 저드롭으로 판단하면 어긋나고, 갑피가 좁다는 지적이 독립된 두 매체에서 나왔으며 실측 토박스도 71.2mm로 좁습니다. 후자는 국내에 2E가 함께 나오면서 해소 경로가 생겼습니다.',
+      userType: '원문 기반 에디터 분석',
+      source: 'editor',
+      sourceUrl: 'https://runrepeat.com/new-balance-super-comp-rebel',
+      text: '미국 공식222g(남성9.5M)·4mm, DOR 소개218g(남성US9.5)/174g(여성US7)·40/36mm·4mm와 RR207g·38.3/29.5mm·8.8mm를 구분합니다. 같은 검체의 감량·개인 체감 드롭으로 고정하지 않습니다. 미국 공식은 Infinion과 propulsion plate만 명시합니다. RR A-TPU와 DOR의 TPEE/EVA 같다는 추측을 합쳐 조성을 확정하지 않습니다. 한국259,000원·2E 발매·8월22일 출시·450km·미확인 매체9.99점·입문자 금지 보장을 반복하지 않습니다.',
     },
     {
-      userType: '예상 적합 — 훈련과 레이스를 한 켤레로 묶고 싶은 러너',
-      text: '주 4~5회 달리면서 템포와 대회를 같은 신발로 소화하려는 경우에 맞을 가능성이 있습니다. 207g(실측)의 무게는 레이싱화 영역에 가깝고(SC 엘리트 v5 실측이 198g입니다) 힐 38.3mm 스택은 장거리 훈련을 버티는 쪽이라, 두 용도의 간극이 좁습니다. 적정 페이스는 3분 50초~5분/km 구간으로 잡히고, 그보다 느린 조깅에서는 플레이트가 주는 이점이 크지 않습니다. 내구성은 400~500km로 추정하는데 랩 마모 측정이 아직 없어 확정값이 아닙니다 — 레이스 전용으로 아끼기보다 훈련에 섞어 쓰는 운용을 전제로 계산하는 편이 현실적입니다.',
-    },
-    {
-      userType: '예상 부적합 — 높은 스택·플레이트에 적응하지 않은 러너',
-      text: '브랜드는 드롭 4mm로 표기하지만 RunRepeat 실측은 8.8mm라, 저드롭 적응 부담은 표기만큼 크지 않습니다. 대신 힐 38.3mm 스택에 Energy Arc 플레이트가 더해진 구성이라 데일리화보다 발목이 덜 안정적이고 전족부 추진 방식도 다릅니다. 플레이트 신발 경험 없이 곧바로 주력으로 쓰면 초반 몇 주에 종아리·발목에 낯선 부하가 생길 수 있습니다. 아킬레스건염이나 족저근막염 이력이 있다면 이 신발을 주력으로 두는 선택은 권하기 어렵고, 굳이 쓴다면 주 1~2회 포인트 훈련으로 제한하는 편이 안전합니다. Doctors of Running은 걷기나 오래 서 있는 용도로는 부적합하다고 명시했습니다.',
-    },
-    {
-      userType: '발볼 관점 — 좁다는 지적과 2E라는 답',
-      text: 'Road Trail Run과 Doctors of Running 두 곳이 독립적으로 갑피가 좁다고 평가했습니다. RunRepeat 실측 토박스도 71.2mm로 랩 평균(73.2mm)보다 좁고 "tapered shape… very snug fit"으로 평가돼, 주관 평가와 수치가 같은 방향입니다. 실질적으로 중요한 변화는 국내 출시분에 남성 2E 와이드가 포함됐다는 것으로, 발볼 때문에 슈퍼 트레이너 선택지가 좁았던 경우 후보에 넣을 수 있게 됐습니다. 같은 뉴발란스 SC 엘리트 v5가 토박스 74.5mm 실측으로 넓은 축이었던 것과 달리 이 모델은 71.2mm로 좁은 축이므로, D 표준폭을 신는 러너도 시착을 거치는 편이 안전합니다.',
+      userType: '외부 착화 의견 요약 · Doctors of Running',
+      source: 'editor',
+      sourceUrl: 'https://www.doctorsofrunning.com/new-balance-supercomp-rebel-review/',
+      text: 'DOR Matt(남성US10)는 낮고 테이퍼진 레이스 같은 정사이즈 핏·좋은 거싯 고정, 튀는 힐·어색한 중족 돌출·이른 전족 구름을 적었습니다.35마일 동안 다용도 훈련과 추가 중족 구조를 좋아했지만 팀원들의 다른 핏에는 실제 사이즈가 없어 임의로 채우지 않습니다.',
     },
   ],
-
-  similarShoes: ['asics-superblast-3', 'adidas-hyperboost-edge', 'new-balance-sc-trainer-v3'],
+  similarShoes: [
+    'asics-superblast-3',
+    'adidas-hyperboost-edge',
+    'new-balance-sc-trainer-v3',
+  ],
   relatedPosts: [
-    { slug: 'new-balance-sc-rebel-vs-asics-superblast-3-super-trainer-2026', title: 'SC 레벨 vs 슈퍼블라스트 3 — 같은 값 슈퍼 트레이너' },
-    { slug: 'new-balance-sc-rebel-korea-launch-2026', title: 'SC 레벨 한국 출시 — 구매 경로 정리' },
-    { slug: 'new-balance-sc-rebel-preview-2026', title: 'SC 레벨 프리뷰 — 해외 리뷰가 이례적으로 높은 이유' },
-    { slug: 'new-balance-running-shoes-lineup-tier-guide-2026', title: '뉴발란스 러닝화 라인업 — 모델·세대·폭' },
-    { slug: 'running-shoe-plate-guide-2026', title: '플레이트 완전 해설 — 카본·유리섬유·나일론' },
+    {
+      slug: 'new-balance-sc-rebel-vs-asics-superblast-3-super-trainer-2026',
+      title: 'SC 레벨 vs 슈퍼블라스트 3 — 같은 값 슈퍼 트레이너',
+    },
+    {
+      slug: 'new-balance-sc-rebel-korea-launch-2026',
+      title: 'SC 레벨 한국 출시 — 구매 경로 정리',
+    },
+    {
+      slug: 'new-balance-sc-rebel-preview-2026',
+      title: 'SC 레벨 프리뷰 — 해외 리뷰가 이례적으로 높은 이유',
+    },
+    {
+      slug: 'new-balance-running-shoes-lineup-tier-guide-2026',
+      title: '뉴발란스 러닝화 라인업 — 모델·세대·폭',
+    },
+    {
+      slug: 'running-shoe-plate-guide-2026',
+      title: '플레이트 완전 해설 — 카본·유리섬유·나일론',
+    },
   ],
+  verification: {
+    checkedAt: '2026-11-10',
+    scope: '한국 상품 조건, 해외 실험실·제조사 공시와 외부 착화 의견의 확인 범위를 구분했습니다. 제품 전체 검증 완료 표지가 아닙니다.',
+    sources: [
+      {
+        label: '한국 공식 확인 실패 범위',
+        url: 'https://www.nbkorea.com/',
+        note: '403. 정확한국가격·SKU·와이드·선택재고 미확인.',
+      },
+      {
+        label: '미국 공식 SuperComp Rebel',
+        url: 'https://www.newbalance.com/pd/supercomp-rebel/MREBX9S5-2E-115.html',
+        note: 'Official read does not specify TPEE/A-TPU or carbon-infused/full carbon-fibre. US membership/add-to-bag text not KR stock. USD price not converted.',
+      },
+      {
+        label: 'RunRepeat 동세대 실험실 원문',
+        url: 'https://runrepeat.com/new-balance-super-comp-rebel',
+        note: '공시 일반 검체 정책은 남성 US9. 실제 검체 라벨·폭 미확인. 207g·38.3/29.5mm·8.8mm. 미국 공식은 Infinion과 propulsion plate만 명시합니다. RR A-TPU와 DOR의 TPEE/EVA 같다는 추측을 합쳐 조성을 확정하지 않습니다. 한국259,000원·2E 발매·8월22일 출시·450km·미확인 매체9.99점·입문자 금지 보장을 반복하지 않습니다.',
+      },
+      {
+        label: 'Doctors of Running 동세대 원문',
+        url: 'https://www.doctorsofrunning.com/new-balance-supercomp-rebel-review/',
+        note: '미국 공식222g(남성9.5M)·4mm, DOR 소개218g(남성US9.5)/174g(여성US7)·40/36mm·4mm와 RR207g·38.3/29.5mm·8.8mm를 구분합니다. 같은 검체의 감량·개인 체감 드롭으로 고정하지 않습니다.',
+      },
+      {
+        label: 'RunRepeat 측정법',
+        url: 'https://runrepeat.com/testing-methodology',
+        note: 'AC·HA·HC, SA·에너지 리턴, BR·구방식1~5와 내부/외부 폭을 구분합니다. 일반 정책은 개별 라벨 확인과 다릅니다.',
+      },
+    ],
+    limitations: [
+      '모델별 임상 예방·치료 등급, 공통 최적 페이스·주행 수명·km당 비용은 미확인으로 제거했습니다.',
+      '에디터 평점·1~10점·발볼 및 계절 분류·구매 링크는 모든 항목을 새로 검증한 수치나 임상 효과가 아닙니다.',
+      '판매 조건은 확인한 상품·시점에 한정합니다. 미확인을 미출시·단종·전국 재고 없음으로 해석하지 않습니다.',
+    ],
+  },
 };

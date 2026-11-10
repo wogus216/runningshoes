@@ -1182,124 +1182,38 @@ export const posts_2026_08: BlogPost[] = [
 `,
   },
   {
-    id: 'new-balance-sc-rebel-vs-asics-superblast-3-super-trainer-2026',
-    slug: 'new-balance-sc-rebel-vs-asics-superblast-3-super-trainer-2026',
-    title: 'SC 레벨 vs 슈퍼블라스트 3 — 같은 259,000원, 정반대 해법 | 플레이트로 밀 것인가, 폼으로 받칠 것인가',
-    description:
-      '뉴발란스 SC 레벨(SC Rebel V1)이 8월 22일 한국에 풀리면서 아식스 슈퍼블라스트 3와 정가가 259,000원으로 똑같아졌습니다. 그런데 설계는 정반대입니다 — SC 레벨은 공식 218g·스택 40mm·드롭 4mm에 Energy Arc 플레이트를 넣은 "플레이트 해법", 슈퍼블라스트 3는 공식 239g·스택 46.5mm·드롭 8mm에 플레이트가 아예 없는 "폼 해법"입니다. 공식 수치로는 무게 21g, 스택 6.5mm, 드롭 4mm가 한꺼번에 갈리지만, RunRepeat 실측으로는 SC 레벨 드롭이 8.8mm라 드롭 차이는 표기만큼 크지 않습니다. 여기에 발볼이 결정타로 붙습니다 — 좁다는 평을 받은 SC 레벨엔 와이드 2E가 있고, 토박스가 랩 평균보다 좁게 측정된 슈퍼블라스트 3엔 와이드가 없습니다. 두 신발의 실측값과 한국 러너 관점 선택 기준을 정리했습니다.',
-    thumbnail: '/images/blog/new-balance-sc-rebel-vs-asics-superblast-3-super-trainer-2026.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-08-22',
-    category: 'review' as const,
-    readingTime: 9,
-    tags: ['SC 레벨', 'SC Rebel', '슈퍼블라스트 3', '슈퍼트레이너', '러닝화 비교', '뉴발란스', '아식스', '25만원대 러닝화'],
+    id: "new-balance-sc-rebel-vs-asics-superblast-3-super-trainer-2026",
+    slug: "new-balance-sc-rebel-vs-asics-superblast-3-super-trainer-2026",
+    title: "SC 레벨 vs 슈퍼블라스트3 — 지면 쪽 판과 고스택 폼, 실제 고정·전환 비교",
+    description: "같은값·유일2E라는 전제를 정정했습니다. SC 레벨의 재료 상충·좁은 앞코·중족 돌출, 슈퍼블라스트3의 플레이트 없는 구조를 구분합니다.",
+    thumbnail: "/images/shoes/newbalance/screbel/side.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-08-22",
+    category: "review",
+    readingTime: 8,
+    tags: [
+      "SC 레벨",
+      "원문 대조",
+      "핏"
+    ],
     content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>정가가 259,000원으로 똑같습니다.</strong> 그런데 훈련과 레이스를 한 켤레로 묶는 "슈퍼 트레이너"라는 같은 목표를 <strong>정반대로 풀었습니다</strong> — <a href="/shoes/new-balance-sc-rebel">SC 레벨</a>은 플레이트를 넣어 <strong>가볍고 낮게</strong>(공식 218g·40mm), <a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a>는 플레이트를 빼고 <strong>두껍고 무겁게</strong>(239g·46.5mm) 갔습니다</li>
-    <li><strong>드롭은 표기상 두 배 차이</strong>입니다(공식 4mm vs 8mm). 그런데 RunRepeat 실측으로는 SC 레벨 드롭이 8.8mm라, 표기만 보고 저드롭 신발로 판단하면 어긋납니다</li>
-    <li><strong>발볼에서 결론이 뒤집힙니다.</strong> 해외 리뷰가 "좁다"고 지적한 쪽은 SC 레벨인데, 정작 <strong>와이드(2E)가 있는 것도 SC 레벨</strong>입니다. 슈퍼블라스트 3도 RunRepeat 실측 토박스 71.6mm로 좁은 편인데 와이드가 없습니다 — 발볼이 넓다면 선택지가 사실상 하나입니다</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">👟</span>
-  <div class="callout-body">
-    <p class="callout-title">한 줄 결론</p>
-    <p><strong>대회에서도 신을 생각이면 SC 레벨</strong>, <strong>훈련량을 받아내는 게 우선이면 슈퍼블라스트 3</strong>입니다. 207g(실측)은 레이싱화 영역(<a href="/shoes/new-balance-sc-elite-v5">SC 엘리트 v5</a>가 198g입니다)에 발을 걸치고 있고, 46.5mm 스택은 롱런 뒤 다리에 남는 걸 줄이는 쪽입니다. 다만 <strong>발볼이 넓으면 이 비교는 성립하지 않습니다</strong> — 와이드가 있는 SC 레벨 2E가 유일한 답입니다. SC 레벨 구매 경로는 <a href="/blog/new-balance-sc-rebel-korea-launch-2026">한국 출시 정리</a>, 해외 평가 배경은 <a href="/blog/new-balance-sc-rebel-preview-2026">프리뷰</a>에 있습니다.</p>
-  </div>
-</div>
-
-<h2>두 켤레 한눈에 보기</h2>
-
-<p>표를 보기 전에 하나만 짚습니다. <strong>스택이 높다고 더 좋은 게 아니고, 플레이트가 있다고 더 빠른 것도 아닙니다.</strong> 둘은 같은 문제 — "훈련을 버틸 만큼 두꺼우면서 레이스에 쓸 만큼 가볍게" — 를 서로 다른 재료로 풀었을 뿐입니다. 이 글에서는 편의상 SC 레벨의 방식을 <strong>플레이트 해법</strong>, 슈퍼블라스트 3의 방식을 <strong>폼 해법</strong>이라고 부르겠습니다.</p>
-
-<table>
-  <thead>
-    <tr><th>항목</th><th>SC 레벨 (SC Rebel V1)</th><th>슈퍼블라스트 3</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>가격</td><td>259,000원</td><td>259,000원</td></tr>
-    <tr><td>무게</td><td><strong>218g</strong> <small>(RunRepeat 실측 207g · RTR 실측 212g)</small></td><td>239g <small>(RunRepeat 실측 235g)</small></td></tr>
-    <tr><td>스택 (힐/전족)</td><td>40 / 36mm <small>(실측 38.3 / 29.5mm)</small></td><td><strong>46.5 / 38.5mm</strong> <small>(실측 45.8 / 37.7mm)</small></td></tr>
-    <tr><td>드롭</td><td><strong>4mm</strong> <small>(실측 8.8mm)</small></td><td>8mm <small>(실측 8.1mm)</small></td></tr>
-    <tr><td>미드솔</td><td>Infinion</td><td>FF LEAP + FF BLAST PLUS</td></tr>
-    <tr><td>플레이트</td><td><strong>Energy Arc</strong> <small>(지면 쪽 배치)</small></td><td><strong>없음</strong></td></tr>
-    <tr><td>쿠션 / 반발</td><td>10 / <strong>10</strong></td><td>10 / 8</td></tr>
-    <tr><td>안정성</td><td>5</td><td>6</td></tr>
-    <tr><td>발볼 / 와이드</td><td>좁은 편(71.2mm) / <strong>2E 있음</strong></td><td>좁은 편(71.6mm) / <strong>없음</strong></td></tr>
-    <tr><td>내구 · km당</td><td>400~500km <small>(추정)</small> · 약 576원</td><td><strong>500~600km</strong> · 약 471원</td></tr>
-    <tr><td>적정 페이스</td><td>3:50~5:00 /km</td><td>4:00~5:30 /km</td></tr>
-  </tbody>
-</table>
-
-<p><small>무게·스택·드롭의 큰 숫자는 두 모델 모두 공식 표기(SC 레벨은 뉴발란스 공식 발표)이고, 괄호 안 "실측"은 RunRepeat 랩 실측(남성 US 9)입니다. 같은 기준끼리 비교하세요. 가격·와이드 구성은 뉴발란스 코리아 온라인스토어(2026-08-22 확인) 기준입니다. RunRepeat 랩 측정치는 이 글 작성 시점엔 두 모델 모두 없었고, 이후 게시된 값을 2026-10-23에 반영했습니다(신발 DB 기준). 표의 쿠션·반발·안정성 점수는 본 사이트 신발 DB의 1~10 평가이며, SC 레벨의 쿠션·반발은 2026-10-20 RunRepeat 실측 기준으로 재산정된 값입니다. SC 레벨의 내구는 랩 마모 측정 전이라 추정입니다.</small></p>
-
-<h2>SC 레벨 — 플레이트를 바닥에 깔아 무게를 벌었다</h2>
-
-<p>이 신발에서 가장 특이한 선택은 플레이트의 <strong>위치</strong>입니다. 보통 플레이트는 폼 사이에 끼워 넣는데, SC 레벨은 Energy Arc를 <strong>지면 쪽</strong>에 깔았습니다. 뒤쪽은 미드풋을 잡아주고 앞쪽은 밀어주는 식으로 역할을 나눈 구조입니다. Road Trail Run 멀티 테스터가 9.99/10과 9.5/10을 매기고 Believe in the Run이 A Tier와 함께 "역대 최고의 뉴발란스 러닝화"라는 표현을 쓴 이유가 여기 있습니다 — 폼이 물러도 플랫폼이 무너지지 않는다는 평가입니다. 플레이트 자체가 어떻게 작동하는지는 <a href="/blog/running-shoe-plate-guide-2026">플레이트 완전 해설</a>에 정리해뒀습니다.</p>
-
-<p>그 결과가 <strong>207g</strong>(RunRepeat 실측)입니다. 힐 스택 38.3mm(실측)를 얹고도 이 무게라, 훈련화보다는 레이싱화 쪽에 발을 걸칩니다. 같은 뉴발란스 카본 레이서 SC 엘리트 v5가 198g이니 차이가 9g에 불과합니다. 대체 대상인 <a href="/shoes/new-balance-sc-trainer-v3">SC 트레이너 v3</a>(278g)와 비교하면 71g이 빠졌습니다.</p>
-
-<p>약점은 둘입니다. 첫째, <strong>38mm대 스택에 플레이트</strong>가 더해진 구성이라 종아리·아킬레스 부하가 실재합니다(브랜드 표기 드롭은 4mm지만 RunRepeat 실측은 8.8mm라 저드롭 부담은 표기보다 작습니다). 플레이트 신발 경험 없이 곧바로 넘어오면 초반 몇 주가 뻐근할 수 있고, 아킬레스건염 이력이 있으면 주력으로 두기 어렵습니다. 둘째, <strong>내구가 아직 미지수</strong>입니다. 랩 마모 측정이 없어 400~500km로 추정할 뿐이고, 이 값이면 km당 약 576원으로 슈퍼블라스트 3보다 비쌉니다.</p>
-
-<p><strong>✅ 이런 분께</strong> — 훈련과 대회를 한 켤레로 묶고 싶은 러너, 슈퍼 트레이너의 240g대가 둔하게 느껴지던 러너, SC 트레이너 v3에서 갈아탈 뉴발란스 사용자, 그리고 <strong>발볼이 넓어 슈퍼 트레이너 선택지가 없던 러너(2E 한정)</strong>.</p>
-
-<h2>슈퍼블라스트 3 — 플레이트 없이 46.5mm로 받친다</h2>
-
-<p>이쪽은 반대로 갔습니다. 플레이트를 아예 넣지 않고 <strong>FF LEAP + FF BLAST PLUS</strong> 두 겹의 폼으로 46.5mm를 쌓았습니다. 스택이 공식 기준 6.5mm 더 높으니 20km를 넘긴 뒤 다리에 쌓이는 피로가 확실히 덜하고, 우리 DB 기준 쿠션 점수도 만점(10)입니다. 대신 무게가 공식 239g으로 21g 무겁습니다.</p>
-
-<p>플레이트가 없다는 게 곧 "느리다"는 뜻은 아닙니다. 반발 점수는 8로 SC 레벨(10)보다 낮지만, 적정 페이스는 4:00~5:30으로 겹칩니다. 차이는 <strong>추진의 성격</strong>입니다 — 플레이트가 굴려주는 느낌이 아니라 폼이 눌렸다 튀어나오는 느낌에 가깝습니다. 같은 무플레이트 계열인 <a href="/shoes/adidas-hyperboost-edge">하이퍼부스트 엣지</a>와의 대결은 <a href="/blog/adidas-hyperboost-edge-vs-asics-superblast-3-super-trainer-2026">별도 글</a>에서 다뤘습니다.</p>
-
-<p>실용적인 강점은 <strong>내구</strong>입니다. 500~600km로 km당 약 471원이라, SC 레벨보다 100원 이상 쌉니다. 훈련 주력으로 쓸 신발에서 이 차이는 누적됩니다. 부상 관점에서도 8mm 드롭 덕에 아킬레스 부담이 낮은 쪽(우리 DB 평가 excellent)이라, 저드롭이 부담스러운 러너에게 안전한 선택입니다.</p>
-
-<p>약점은 <strong>와이드가 없다</strong>는 것입니다. 토박스도 RunRepeat 실측 71.6mm로 랩 평균(73.2mm)보다 좁아, 발볼이 확실히 넓으면 대안이 없습니다.</p>
-
-<p><strong>✅ 이런 분께</strong> — 주간 거리가 많아 훈련량을 받아낼 쿠션이 우선인 러너, 저드롭이 부담스러운 러너, 롱런과 마라톤 페이스런을 한 켤레로 소화하려는 러너, km당 비용을 따지는 러너.</p>
-
-<h2>내게 맞는 건?</h2>
-
-<ul>
-  <li><strong>발볼이 넓다</strong> → <a href="/shoes/new-balance-sc-rebel">SC 레벨 2E</a>. 둘 다 좁은 편이지만 와이드는 SC 레벨에만 있습니다. 슈퍼블라스트 3는 표준폭 단일이라 이 조건에서 후보가 못 됩니다</li>
-  <li><strong>이 신발로 대회도 뛴다</strong> → SC 레벨. 207g(실측)은 레이싱화 영역이고 플레이트가 후반 추진을 돕습니다</li>
-  <li><strong>주간 거리가 많다 / 롱런 비중이 크다</strong> → 슈퍼블라스트 3. 46.5mm 스택과 500~600km 내구가 훈련 부하를 받아냅니다</li>
-  <li><strong>아킬레스·종아리가 약하거나 플레이트 신발이 처음</strong> → 슈퍼블라스트 3. SC 레벨은 드롭이 표기 4mm·실측 8.8mm라, 변수는 드롭보다 높은 스택과 플레이트 조합입니다</li>
-  <li><strong>km당 비용을 따진다</strong> → 슈퍼블라스트 3(약 471원). SC 레벨은 약 576원이고 그마저 추정치입니다</li>
-  <li><strong>데일리 조깅이 주 용도</strong> → 둘 다 과합니다. 플레이트도 46mm 스택도 조깅 페이스에서는 이점이 크지 않습니다. <a href="/shoes/new-balance-rebel-v5">퓨얼셀 레벨 v5</a> 같은 경량 데일리가 맞습니다</li>
-</ul>
-
-<div class="callout warning">
-  <span class="callout-icon">⚠️</span>
-  <div class="callout-body">
-    <p class="callout-title">이름이 비슷해서 생기는 오해</p>
-    <p><strong>SC 레벨과 퓨얼셀 레벨 v5는 다른 계보입니다.</strong> 레벨 v5는 220g·33/27mm·<strong>무플레이트</strong>의 유연한 경량 데일리이고, SC 레벨은 207g·38.3/29.5mm(RunRepeat 실측)·플레이트가 들어간 슈퍼 트레이너입니다. 무게는 SC 레벨이 13g 가볍고 힐 스택이 5mm가량 높으며 성격이 반대라, "레벨의 업그레이드"로 생각하고 사면 어긋납니다. 뉴발란스 라인 전체 정리는 <a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026">계급도</a>에 있습니다.</p>
-  </div>
-</div>
-
-<h2>자주 묻는 질문</h2>
-
-<div class="faq">
-  <div class="faq-item">
-    <p class="faq-q">Q. 두 모델의 랩 데이터는 나왔나요?</p>
-    <p class="faq-a">A. 나왔습니다. RunRepeat이 신발을 반으로 잘라 측정하는 계측값이 이 글 작성(8/22) 이후 두 모델 모두 게시됐습니다(2026-10-23 기준 신발 DB). SC 레벨은 207g·힐 충격흡수 168 SA·에너지 리턴 힐 72.7%·전족 78.4%·토박스 71.2mm, 슈퍼블라스트 3는 235g·전족 에너지 리턴 67.5%·토박스 71.6mm입니다. 무게는 실측끼리 28g 차이입니다.</p>
-  </div>
-  <div class="faq-item">
-    <p class="faq-q">Q. SC 레벨이 좁다는데 2E면 괜찮나요?</p>
-    <p class="faq-a">A. "좁다"는 평가는 Road Trail Run과 Doctors of Running이 <strong>표준폭(D)</strong>을 신고 남긴 주관적 소감이고, 이후 나온 RunRepeat 실측 토박스도 71.2mm(랩 평균 73.2mm)로 랩 본문이 "very snug fit"이라고 적었습니다(2026-10-23 기준). 2E는 그보다 한 단계 넓은 규격이므로 표준폭에서 느낀 압박은 상당 부분 해소될 가능성이 높습니다. 다만 2E 실측은 없어 단정하기 어렵고, 높은 스택·플레이트 조합은 착화감 편차도 크니 가능하면 신어보고 결정하는 편이 안전합니다.</p>
-  </div>
-  <div class="faq-item">
-    <p class="faq-q">Q. 슈퍼블라스트 3가 더 무거운데 쿠션 점수는 어떻게 되나요?</p>
-    <p class="faq-a">A. 우리 DB 쿠션 점수는 두 모델 모두 10으로 같습니다. 무게와 쿠션은 대체로 같이 움직입니다. 폼을 더 쌓으면 충격을 더 흡수하지만 그만큼 무거워집니다. 슈퍼블라스트 3는 46.5mm를 쌓아 쿠션을 가져가고 239g을 받아들인 쪽이고, SC 레벨은 40mm로 낮추고 플레이트로 추진을 보태 218g을 지킨 쪽입니다. 공식 수치 기준으로 21g과 6.5mm를 맞바꾼 셈이라 어느 쪽이 우월한 게 아니라 용도의 문제입니다.</p>
-  </div>
-  <div class="faq-item">
-    <p class="faq-q">Q. 첫 슈퍼 트레이너로는 어느 쪽이 낫나요?</p>
-    <p class="faq-a">A. 슈퍼블라스트 3입니다. 8mm 드롭이라 기존 데일리에서 넘어올 때 적응 부담이 적고, 플레이트가 없어 페이스를 강제하지 않습니다. SC 레벨의 높은 스택 + 플레이트 조합(드롭은 표기 4mm·실측 8.8mm)은 어느 정도 주력이 쌓인 뒤가 안전합니다. 참고로 둘 다 입문용 첫 러닝화로는 적합하지 않습니다 — 슈퍼 트레이너는 이미 훈련 루틴이 있는 러너를 전제로 한 카테고리입니다.</p>
-  </div>
-</div>
-
-<p><small>출처: 뉴발란스 공식 발표(SC 레벨 스펙, 2026-07-21) · 뉴발란스 코리아 온라인스토어(SC Rebel V1 가격·8개 SKU·2E 구성, 2026-08-22 확인) · Road Trail Run 멀티 테스터 리뷰 · Doctors of Running 리뷰 · Believe in the Run 리뷰(이상 2026-07) · 아식스 공식 및 본 사이트 신발 DB(슈퍼블라스트 3). 한국 공식가 기준. 두 모델의 RunRepeat 랩 측정치는 작성 시점엔 미게시였고, 이후 게시된 값을 2026-10-23에 반영했습니다(신발 DB 기준). 작성 2026년 8월 22일.</small></p>
+<p><strong>2026-11-10 원문 대조 업데이트.</strong> 제조사 공시·실험실 검체·개인 착화 의견과 한국 상품 캐시를 구분합니다. 자체 착화 후기가 아닌 원문 기반 분석입니다.</p><h2>먼저 볼 차이</h2><p>같은 가격에서 어느 쪽이 낫다는 비교는SC 레벨 현재 한국 가격이 확인되지 않아 보류합니다. 비교할 수 있는 것은 지면 쪽 판을 둔SC 레벨과 플레이트 없는 슈퍼블라스트3의 구조 차이입니다.</p><p>실제 고정과 로커가 내 동작에 맞는지, 긴 주행에서 어느 쪽이 편한지는 개별 확인이 필요합니다. 레이스면SC·훈련량이면SB라는 고정 배정이나 발볼만으로 유일한 답을 정하지 않습니다.</p><figure><img src="/images/shoes/newbalance/screbel/side.webp" alt="SC 레벨 — 슈퍼블라스트3와 실제 중족 고정·전환을 비교" loading="lazy"/><figcaption>SC 레벨 — 슈퍼블라스트3와 실제 중족 고정·전환을 비교</figcaption></figure><div class="table-wrap"><table><thead><tr><th>모델</th><th>무게 · 공시 출처 별도 표기</th><th>스택·드롭 · 공시 출처 별도 표기</th><th>힐/전족 SA</th><th>힐/전족 리턴</th></tr></thead><tbody><tr><td>new-balance-sc-rebel</td><td>207g</td><td>38.3/29.5mm · 8.8mm</td><td>168/119</td><td>72.7/78.4%</td></tr></tbody></table></div><p>표의 값은 RunRepeat 검체 또는 별도 표시한 DOR 소개 공시입니다. DOR 소개는 독립 실측이 아닙니다. 일반 정책은 남성 US9지만 개별 라벨·폭·보정 여부는 미확인입니다. 공시와 동일한 검체로 단정하지 않습니다. SA는 충격흡수, 리턴은 시험에서 반환된 에너지 비율이며 부드러움·개인 기록·임상 보호를 뜻하지 않습니다. HA는 구방식, AC는 별도 경도 척도여서 환산하지 않습니다. <a href="https://runrepeat.com/testing-methodology" target="_blank" rel="noopener noreferrer">RunRepeat 측정법</a></p><h2>슈퍼블라스트3는 별도 구조의 비교 후보</h2><p>11월 앞선 원문 대조에서 확인한 슈퍼블라스트3는 플레이트 없는 고스택 구조입니다. SC 레벨의 지면 쪽 판·컴팩트한 바닥과 다르게 전환될 수 있어, 같은 러너의 실제 규격·주로에서 비교할 부분입니다. 높은 스택이 롱런 뒤 피로를 줄인다는 보장으로 바꾸지 않습니다.</p><p>SC 레벨의 한국 현재 가격·2E가 미확인이므로 둘 다259,000원·넓은 발은SC 레벨이 유일한 답이라는 기존 결론은 유지할 수 없습니다. 슈퍼블라스트3의 글로벌 기본 폭을 한국 현재 와이드 부재의 증거로 쓰지도 않습니다.</p><p><a href="https://runrepeat.com/asics-superblast-3" target="_blank" rel="noopener noreferrer">슈퍼블라스트3 RR 원문</a></p><h2>SC 레벨 — 핏과 주행에서 갈리는 지점</h2><p>정확 SuperComp Rebel은 Rebelv5와 별개입니다. RR은 carbon-infused판을 full carbon-fibre와 구분하지만 DOR은 전장 carbon-fibre라고 적었습니다. 탄소 포함 구조와 정확 섬유·복합재 조성·길이는 별개로 읽고 원문 상충을 남깁니다.</p><p>RR 내부 최광폭 94.1mm·엄지 71.2mm·높이 24.8mm입니다. 너비 하나로 발등·길이·힐 고정이나 한국 와이드 적합을 보장하지 않습니다. 실제 규격·양말에서 접촉과 전환을 확인하세요.</p><p>DOR Matt(남성US10)는 낮고 테이퍼진 레이스 같은 정사이즈 핏·좋은 거싯 고정, 튀는 힐·어색한 중족 돌출·이른 전족 구름을 적었습니다.35마일 동안 다용도 훈련과 추가 중족 구조를 좋아했지만 팀원들의 다른 핏에는 실제 사이즈가 없어 임의로 채우지 않습니다.</p><h2>SC 레벨 — 공시·한국 판매 확인 범위</h2><p>미국 공식222g(남성9.5M)·4mm, DOR 소개218g(남성US9.5)/174g(여성US7)·40/36mm·4mm와 RR207g·38.3/29.5mm·8.8mm를 구분합니다. 같은 검체의 감량·개인 체감 드롭으로 고정하지 않습니다.</p><p>한국 공식 캐시: 공식403·정확 상품 원문 미확인. 현재 가격·선택 재고는 미확인입니다. 판매캐시와 현재 결제가는 다를 수 있으며 글로벌 폭을 한국 판매 증거로 쓰지 않습니다.</p><p>미국 공식은 Infinion과 propulsion plate만 명시합니다. RR A-TPU와 DOR의 TPEE/EVA 같다는 추측을 합쳐 조성을 확정하지 않습니다. 한국259,000원·2E 발매·8월22일 출시·450km·미확인 매체9.99점·입문자 금지 보장을 반복하지 않습니다.</p><h2>구매 전에 실제로 확인할 것</h2><p>평소 양말·인솔로 앞쪽 길이와 발톱 위 공간, 끈을 조였을 때 발등 압박, 힐 고정과 칼라 마찰을 확인하세요. 발볼 너비 하나로 전체 핏을 결정하지 않습니다. 교환·반품 조건도 먼저 확인할 수 있습니다.</p><p>트레일에서는 자신의 주요 노면과 오르막·내리막·방향 전환에서 고정과 전환을 살펴야 합니다. 젖은 콘크리트 시험 하나가 바위·진흙 접지를 보장하지 않습니다. 통증·저림을 견뎌야 한다는 규칙이나 모델별 질환 예방 효과는 이번 자료로 확인하지 못했습니다.</p><h2>확인한 원문과 접근 범위</h2><ul><li><a href="https://www.nbkorea.com/" target="_blank" rel="noopener noreferrer">한국 공식 확인 실패 범위</a> — 403. 정확한국가격·SKU·와이드·선택재고 미확인.</li><li><a href="https://www.newbalance.com/pd/supercomp-rebel/MREBX9S5-2E-115.html" target="_blank" rel="noopener noreferrer">미국 공식 SuperComp Rebel</a> — Official read does not specify TPEE/A-TPU or carbon-infused/full carbon-fibre. US membership/add-to-bag text not KR stock. USD price not converted.</li><li><a href="https://runrepeat.com/new-balance-super-comp-rebel" target="_blank" rel="noopener noreferrer">SC 레벨 RR 원문</a> — 정확 모델 검체. 제조사 공시와 분리.</li><li><a href="https://www.doctorsofrunning.com/new-balance-supercomp-rebel-review/" target="_blank" rel="noopener noreferrer">SC 레벨 DOR 원문</a> — 소개 공시·실제 착화 사이즈·개인의견 구분.</li></ul>
 `,
+    updatedAt: "2026-11-10",
+    faqs: [
+      {
+        "question": "같은259,000원인가요?",
+        "answer": "SC 레벨의 한국 현재 정확 가격을 확보하지 못해 같은값으로 고정하지 않습니다."
+      },
+      {
+        "question": "넓은 발은SC2E가 유일한가요?",
+        "answer": "현재 한국2E와 상대 모델 전체 폭을 확정하지 못했고 개인 핏도 너비 하나로 정할 수 없습니다."
+      },
+      {
+        "question": "SB3가 롱런 피로를 더 줄이나요?",
+        "answer": "고스택 구조가 개인 피로 감소를 보장하지 않습니다. 실제 규격·주행에서 전환과 고정을 비교할 수 있습니다."
+      }
+    ],
   },
   {
     id: 'kyoto-marathon-entry-guide',
@@ -2319,115 +2233,37 @@ export const posts_2026_08: BlogPost[] = [
 `,
   },
   {
-    id: 'new-balance-sc-rebel-korea-launch-2026',
-    slug: 'new-balance-sc-rebel-korea-launch-2026',
-    title: '뉴발란스 SC 레벨 한국 출시 — 259,000원에 와이드 2E까지 나왔다 | 공식명 SC Rebel V1, 8개 SKU 전 사이즈 동일가',
-    description:
-      '"역대 최고의 뉴발란스"(BITR)라는 평까지 나온 SC 레벨(SuperComp Rebel)이 8월 22일(토) 오전 11시 259,000원으로 한국에 풀렸습니다. 출시일에 확인해 보니 공식 상품명은 "SC Rebel V1"이고, 남성 D·남성 2E·여성 D 총 8개 SKU가 전부 같은 값입니다 — 해외 리뷰 두 곳이 지적한 좁은 갑피에 대해 와이드 2E라는 답이 함께 나온 셈입니다. 앞서 8/20 쉐이크아웃런·8/21 SC 레벨 패키지(둘 다 259,000원에 런유어웨이 10K 참가권 포함 = 참가권이 사실상 무료)가 먼저 열렸고, 런허브 여의도 체험은 8/13부터 진행 중입니다. 구매 경로와 발볼별 선택 기준을 정리했습니다.',
-    thumbnail: '/images/blog/new-balance-sc-rebel-korea-launch-2026.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-08-12',
-    updatedAt: '2026-08-22',
-    category: 'news' as const,
-    readingTime: 6,
-    tags: ['뉴발란스 SC 레벨', 'SC Rebel', 'SC 레벨 출시일', '뉴발란스 신발', '슈퍼 트레이너', '신상 러닝화', '런허브 여의도', '러닝화 출시'],
+    id: "new-balance-sc-rebel-korea-launch-2026",
+    slug: "new-balance-sc-rebel-korea-launch-2026",
+    title: "SC 레벨 한국 구매 정보 갱신 — 현재 가격·2E·런허브 체험은 재확인 필요",
+    description: "과거8월 패키지·런허브 체험·전사이즈 동일가를 현재 혜택으로 안내하지 않습니다. 정확 한국 상품 원문 접근 실패와 미국 공식 제품 정체·독립 랩을 구분합니다.",
+    thumbnail: "/images/shoes/newbalance/screbel/side.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-08-12",
+    updatedAt: "2026-11-10",
+    category: "news",
+    readingTime: 8,
+    tags: [
+      "SC 레벨",
+      "원문 대조",
+      "핏"
+    ],
     faqs: [
       {
-        question: 'SC 레벨은 언제, 어디서 살 수 있나요?',
-        answer:
-          '단독 발매는 2026년 8월 22일(토) 오전 11시, 발매가 259,000원입니다. 그보다 먼저 손에 넣는 경로가 둘 있습니다 — 8월 20일(목) 쉐이크아웃런 패키지와 8월 21일(금) SC 레벨 패키지(둘 다 런유어웨이 10K 참가권 포함, 매장 선착순 259,000원)입니다. 실물은 8월 13일(목)부터 런허브 여의도에서 체험할 수 있습니다.',
+        "question": "지금도259,000원에2E가 있나요?",
+        "answer": "한국 정확 상품 원문 접근에 실패해 현재 가격·폭·선택 재고는 미확인입니다."
       },
       {
-        question: '패키지와 단독 구매 중 뭐가 이득인가요?',
-        answer:
-          '대회에 나갈 생각이 조금이라도 있다면 패키지입니다. 패키지 가격(259,000원)이 신발 단독 발매가와 정확히 같아서, 런유어웨이 10K 참가권(80,000원 상당)이 사실상 무료로 얹히는 구조입니다. 8/20 쉐이크아웃런 패키지는 같은 값에 대회 전날 행사 참가까지 포함되니 시간이 되면 가장 알찬 구성입니다. 신발만 원하면 8/22 단독 발매를 기다리면 됩니다.',
+        "question": "런허브 체험이 계속되나요?",
+        "answer": "현재 운영을 확인하지 못해 계속 진행 중이라는 안내를 제거했습니다."
       },
       {
-        question: '왜 화제가 된 신발인가요?',
-        answer:
-          '해외 첫 리뷰 점수가 이례적으로 높습니다. Road Trail Run 테스터가 9.99/10을 줬고, Believe in the Run은 "역대 최고의 뉴발란스 러닝화"라는 표현을 썼습니다. 207g(RunRepeat 실측)에 힐 스택 38.3mm(실측, 브랜드 표기 40/36mm), 새 Infinion 폼과 지면 쪽에 깔린 Energy Arc 플레이트로 훈련과 레이스를 한 켤레로 커버하는 슈퍼 트레이너 포지션이며, SC 트레이너 v3를 사실상 대체합니다.',
-      },
-      {
-        question: '발볼이 넓은데 온라인으로 바로 사도 될까요?',
-        answer:
-          '표준폭(D)이라면 권하지 않습니다 — Road Trail Run과 Doctors of Running 두 곳이 독립적으로 갑피가 좁다고 지적했습니다. 다만 8월 22일 출시와 함께 뉴발란스 코리아에 남성 2E 와이드가 함께 올라온 것을 확인했으므로, 발볼이 넓다면 2E를 고르면 됩니다. 그래도 고스택·플레이트 조합이라 착화감 편차가 크니 런허브 여의도 체험을 거치는 편이 안전합니다. 발볼이 보통이거나 좁다면 D 표준폭의 딱 감기는 핏이 오히려 장점이 될 수 있습니다.',
-      },
+        "question": "8월 패키지가 아직 혜택인가요?",
+        "answer": "현재 구매 가능한 패키지·참가권 조건을 확인하지 못해 현행 혜택으로 안내하지 않습니다."
+      }
     ],
     content: `
-<div class="deadline-strip">👟 <strong>발매됨 — 8월 22일(토) 오전 11시 · 259,000원.</strong> 공식 상품명은 <strong>SC Rebel V1</strong>이고 남성 D·<strong>남성 2E(와이드)</strong>·여성 D <strong>8개 SKU가 전부 같은 값</strong>입니다. 좁다는 평이 걸렸다면 2E가 답입니다. 런허브 여의도 체험도 계속 진행 중입니다.</div>
-
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>한국 출시 확정 — 8월 22일(토) 오전 11시, 259,000원.</strong> 대체 대상인 <a href="/shoes/new-balance-sc-trainer-v3">SC 트레이너 v3</a>(249,000원)보다 1만원 높은 가격입니다</li>
-    <li>사는 경로는 셋: <strong>8/20 쉐이크아웃런 패키지 → 8/21 SC 레벨 패키지 → 8/22 단독 발매.</strong> 패키지 두 개는 <strong>신발 단독가와 같은 259,000원에 런유어웨이 10K 참가권(8만원 상당)이 얹힌 구성</strong>이라, 대회 갈 생각이 있으면 명백히 이득입니다</li>
-    <li><strong>8월 13일(목)부터 런허브 여의도에서 체험</strong> — 해외 리뷰 두 곳이 갑피가 좁다고 지적한 신발이라, 특히 발볼 넓은 러너는 체험 후 구매가 정답입니다</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <p><strong>이 글은 출시·구매 정보 편입니다.</strong> 스펙 상세, RTR 9.99/10·BITR "역대 최고 NB" 평가의 맥락, 형제 모델(레벨 v5·SC 엘리트) 비교는 <a href="/blog/new-balance-sc-rebel-preview-2026">SC 레벨 프리뷰</a>에서 깊게 다뤘습니다. 대회 자체가 궁금하면 <a href="/blog/nb-run-your-way-seoul-10k-2026">런유어웨이 서울 10K 글</a>을 보세요.</p>
-</div>
-
-<h2>확정된 출시 정보</h2>
-
-<table>
-  <thead>
-    <tr><th>항목</th><th>내용</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>모델</td><td>뉴발란스 SC 레벨 (SuperComp Rebel) — 슈퍼 트레이너 라인 신규</td></tr>
-    <tr><td>단독 발매</td><td><strong>2026년 8월 22일(토) 오전 11시</strong></td></tr>
-    <tr><td>발매가</td><td><strong>259,000원</strong> (글로벌 $190~200)</td></tr>
-    <tr><td>핵심 스펙</td><td>207g(실측) · 스택 38.3/29.5mm(실측) · 드롭 8.8mm(실측, 브랜드 4mm) · Infinion 폼 + Energy Arc 플레이트</td></tr>
-    <tr><td>체험</td><td><strong>8월 13일(목)부터 런허브 여의도</strong></td></tr>
-    <tr><td>선공개 경로</td><td>런유어웨이 패키지 — 8/20(목) 쉐이크아웃런 패키지 · 8/21(금) SC 레벨 패키지, 매장 선착순</td></tr>
-  </tbody>
-</table>
-
-<h2>사는 경로 셋 — 계산은 이미 끝났다</h2>
-
-<p>이 출시의 재미있는 지점은 가격표가 하나로 통일돼 있다는 겁니다. <strong>전부 259,000원.</strong> 차이는 뭐가 얹혀 있느냐뿐입니다.</p>
-
-<table>
-  <thead>
-    <tr><th>경로</th><th>날짜</th><th>구성 (전부 259,000원)</th><th>이런 사람에게</th></tr>
-  </thead>
-  <tbody>
-    <tr><td><strong>① 쉐이크아웃런 패키지</strong></td><td>8/20(목) 매장 선착순</td><td>신발 + 10K 참가권 + 대회 전날 쉐이크아웃런(10/3)</td><td>대회도 행사도 다 즐길 사람 — 같은 값에 가장 많이 받는 구성</td></tr>
-    <tr><td><strong>② SC 레벨 패키지</strong></td><td>8/21(금) 매장 선착순</td><td>신발 + 10K 참가권</td><td>대회는 나가되 전날 행사까진 무리인 사람</td></tr>
-    <tr><td><strong>③ 단독 발매</strong></td><td>8/22(토) 11:00</td><td>신발만</td><td>신발만 필요한 사람</td></tr>
-  </tbody>
-</table>
-
-<p>정리하면 — <strong>패키지 = 신발 단독가에 참가권(8만원 상당)이 공짜로 얹힌 구조</strong>입니다. 10월 4일 여의도에서 10K를 뛸 의향이 조금이라도 있다면 ①이나 ②가 계산상 명백히 우위입니다. 단, 매장 선착순(사실상 오픈런)이라는 비용이 붙고, 패키지 구매자는 온라인 래플 당첨과 중복될 수 없었던 구조였다는 점은 <a href="/blog/nb-run-your-way-seoul-10k-2026">런유어웨이 글</a>에서 정리한 대로입니다.</p>
-
-<h2>왜 "체험 먼저"인가 — 이 신발의 유일한 물음표</h2>
-
-<p>주행 평가는 논쟁이 별로 없습니다. RTR 9.99/10, BITR "역대 최고의 뉴발란스" — 폼과 플레이트에 대한 이견은 찾기 어렵습니다. 물음표는 하나, <strong>갑피 폭</strong>입니다.</p>
-
-<ul>
-  <li>RTR — "갑피가 좁아 발볼 넓거나 발등 높은 발에는 부적합" 명시</li>
-  <li>DOR — "토박스가 좁아지는 형태에 타이트한 핏", 깔창 사용자 비추천</li>
-  <li>BITR — "정사이즈, 락다운 안정적" (온도차 존재)</li>
-  <li><strong>와이드 2E 나왔습니다 (8/22 확인)</strong> — 출시일에 뉴발란스 코리아 온라인스토어를 확인하니 공식 상품명이 <strong>"SC Rebel V1"</strong>이고 <strong>남성 D·남성 2E·여성 D 총 8개 SKU</strong>가 전부 259,000원으로 올라와 있습니다. 위의 "좁다"는 지적은 표준폭(D) 기준 평가이므로, <strong>발볼이 넓다면 처음부터 2E를 보면 됩니다.</strong> SC 트레이너 v3·엘리트 v5에 이어 이번에도 와이드가 빠지지 않았습니다</li>
-</ul>
-
-<p>발볼 넓은 한국 러너 비중을 생각하면, 출시 전 열리는 <strong>런허브 여의도 체험(8/13~)</strong>은 사실상 이 신발의 필수 코스입니다. 259,000원짜리 온라인 도박 대신 열흘 먼저 발을 넣어볼 수 있으니까요. 신어보고 판단 기준이 필요하면 <a href="/blog/new-balance-sc-rebel-preview-2026">프리뷰의 발볼 섹션</a>을 읽고 가세요 — 어느 부위가 조이면 걸러야 하는지 정리돼 있습니다.</p>
-
-<h2>누구에게 맞는 신발인가 — 30초 판정</h2>
-
-<ul>
-  <li><strong>사야 할 사람</strong> — 템포·인터벌·롱런을 한 켤레로 해결하고 싶은 중급 이상 러너, <a href="/shoes/new-balance-sc-trainer-v3">SC 트레이너 v3</a>에서 넘어갈 타이밍인 사람, 카본 레이서까진 부담스러운 마라토너</li>
-    <li><strong>다시 생각할 사람</strong> — 발볼 넓거나 발등 높은 러너(체험 필수), <a href="/shoes/new-balance-rebel-v5">레벨 v5</a>의 말랑한 감각이 좋아서 신는 사람(성격이 다른 신발입니다), 러닝 입문자(플레이트가 들어간 38mm대 고스택은 종아리·발목 부담이 큽니다)</li>
-  <li><strong>뉴발란스 라인에서의 위치</strong>가 궁금하면 <a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026">뉴발란스 러닝화 계급도</a>에서 전체 그림을 확인하세요</li>
-</ul>
-
-<div class="callout warning">
-  <p><strong>아직 확정되지 않은 것들</strong> — 와이드 옵션 여부, RunRepeat 랩 실측(충격흡수·에너지 리턴·토박스 mm), 온라인/오프라인 발매 채널 세부는 2026년 8월 12일 기준 미공개입니다. 판매처·수량 정보는 뉴발란스코리아 공식 채널에서 발매 직전 확인하세요.</p>
-</div>
-
-<p><small>출처: 뉴발란스 인스타그램 출시 공지(2026-08-12 확인 — 출시일·가격·런허브 여의도 체험) · 뉴발란스 공식 발표(2026-07-21, 스펙) · Road Trail Run·Believe in the Run·Doctors of Running 리뷰(2026-07) · 런유어웨이 패키지 구성은 공식 접수 안내 기준. 랩 실측·와이드 옵션 확정 시 갱신합니다.</small></p>
+<p><strong>2026-11-10 원문 대조 업데이트.</strong> 제조사 공시·실험실 검체·개인 착화 의견과 한국 상품 캐시를 구분합니다. 자체 착화 후기가 아닌 원문 기반 분석입니다.</p><h2>먼저 볼 차이</h2><p>이번 확인에서 한국 공식 홈·발매 일정은403으로 원문을 확보하지 못했습니다. 과거8월22일·259,000원·8개SKU·런허브 체험을 현재 구매 혜택으로 반복하지 않습니다. 그렇다고 한국 미출시·단종을 뜻하는 것도 아닙니다.</p><p>현재 구매 판단에는 판매처의 정확 상품코드·성별·폭·실제 선택 사이즈와 행사 종료일 확인이 필요합니다. 미국D/2E 선택지가 한국 현재 판매를 증명하지는 않습니다.</p><figure><img src="/images/shoes/newbalance/screbel/side.webp" alt="SC 레벨 — 현재 한국 판매·폭과 과거 행사 안내를 구분" loading="lazy"/><figcaption>SC 레벨 — 현재 한국 판매·폭과 과거 행사 안내를 구분</figcaption></figure><div class="table-wrap"><table><thead><tr><th>모델</th><th>무게 · 공시 출처 별도 표기</th><th>스택·드롭 · 공시 출처 별도 표기</th><th>힐/전족 SA</th><th>힐/전족 리턴</th></tr></thead><tbody><tr><td>new-balance-sc-rebel</td><td>207g</td><td>38.3/29.5mm · 8.8mm</td><td>168/119</td><td>72.7/78.4%</td></tr></tbody></table></div><p>표의 값은 RunRepeat 검체 또는 별도 표시한 DOR 소개 공시입니다. DOR 소개는 독립 실측이 아닙니다. 일반 정책은 남성 US9지만 개별 라벨·폭·보정 여부는 미확인입니다. 공시와 동일한 검체로 단정하지 않습니다. SA는 충격흡수, 리턴은 시험에서 반환된 에너지 비율이며 부드러움·개인 기록·임상 보호를 뜻하지 않습니다. HA는 구방식, AC는 별도 경도 척도여서 환산하지 않습니다. <a href="https://runrepeat.com/testing-methodology" target="_blank" rel="noopener noreferrer">RunRepeat 측정법</a></p><h2>8월 패키지를 지금도 명백한 이득이라고 쓰지 않습니다</h2><p>8월20/21일 패키지와 대회 참가권·당시 체험 안내는 현재 유효한 행사로 확인하지 못했습니다. 신규 참가나 구매 결정을 돕는 현행 혜택처럼 안내하던 문구를 제거했습니다.</p><p>한국 가격이 미확인이므로SC트레이너보다1만원 비싸다는 비교도 현재 구매가 차이로 고정하지 않습니다. 발볼이 넓다면2E가 무조건 답이라는 결론보다 실제 앞코 높이·길이·고정을 확인할 수 있습니다.</p><h2>SC 레벨 — 핏과 주행에서 갈리는 지점</h2><p>정확 SuperComp Rebel은 Rebelv5와 별개입니다. RR은 carbon-infused판을 full carbon-fibre와 구분하지만 DOR은 전장 carbon-fibre라고 적었습니다. 탄소 포함 구조와 정확 섬유·복합재 조성·길이는 별개로 읽고 원문 상충을 남깁니다.</p><p>RR 내부 최광폭 94.1mm·엄지 71.2mm·높이 24.8mm입니다. 너비 하나로 발등·길이·힐 고정이나 한국 와이드 적합을 보장하지 않습니다. 실제 규격·양말에서 접촉과 전환을 확인하세요.</p><p>DOR Matt(남성US10)는 낮고 테이퍼진 레이스 같은 정사이즈 핏·좋은 거싯 고정, 튀는 힐·어색한 중족 돌출·이른 전족 구름을 적었습니다.35마일 동안 다용도 훈련과 추가 중족 구조를 좋아했지만 팀원들의 다른 핏에는 실제 사이즈가 없어 임의로 채우지 않습니다.</p><h2>SC 레벨 — 공시·한국 판매 확인 범위</h2><p>미국 공식222g(남성9.5M)·4mm, DOR 소개218g(남성US9.5)/174g(여성US7)·40/36mm·4mm와 RR207g·38.3/29.5mm·8.8mm를 구분합니다. 같은 검체의 감량·개인 체감 드롭으로 고정하지 않습니다.</p><p>한국 공식 캐시: 공식403·정확 상품 원문 미확인. 현재 가격·선택 재고는 미확인입니다. 판매캐시와 현재 결제가는 다를 수 있으며 글로벌 폭을 한국 판매 증거로 쓰지 않습니다.</p><p>미국 공식은 Infinion과 propulsion plate만 명시합니다. RR A-TPU와 DOR의 TPEE/EVA 같다는 추측을 합쳐 조성을 확정하지 않습니다. 한국259,000원·2E 발매·8월22일 출시·450km·미확인 매체9.99점·입문자 금지 보장을 반복하지 않습니다.</p><h2>구매 전에 실제로 확인할 것</h2><p>평소 양말·인솔로 앞쪽 길이와 발톱 위 공간, 끈을 조였을 때 발등 압박, 힐 고정과 칼라 마찰을 확인하세요. 발볼 너비 하나로 전체 핏을 결정하지 않습니다. 교환·반품 조건도 먼저 확인할 수 있습니다.</p><p>트레일에서는 자신의 주요 노면과 오르막·내리막·방향 전환에서 고정과 전환을 살펴야 합니다. 젖은 콘크리트 시험 하나가 바위·진흙 접지를 보장하지 않습니다. 통증·저림을 견뎌야 한다는 규칙이나 모델별 질환 예방 효과는 이번 자료로 확인하지 못했습니다.</p><h2>확인한 원문과 접근 범위</h2><ul><li><a href="https://www.nbkorea.com/" target="_blank" rel="noopener noreferrer">한국 공식 확인 실패 범위</a> — 403. 정확한국가격·SKU·와이드·선택재고 미확인.</li><li><a href="https://www.newbalance.com/pd/supercomp-rebel/MREBX9S5-2E-115.html" target="_blank" rel="noopener noreferrer">미국 공식 SuperComp Rebel</a> — Official read does not specify TPEE/A-TPU or carbon-infused/full carbon-fibre. US membership/add-to-bag text not KR stock. USD price not converted.</li><li><a href="https://runrepeat.com/new-balance-super-comp-rebel" target="_blank" rel="noopener noreferrer">SC 레벨 RR 원문</a> — 정확 모델 검체. 제조사 공시와 분리.</li><li><a href="https://www.doctorsofrunning.com/new-balance-supercomp-rebel-review/" target="_blank" rel="noopener noreferrer">SC 레벨 DOR 원문</a> — 소개 공시·실제 착화 사이즈·개인의견 구분.</li></ul>
 `,
   },
   {

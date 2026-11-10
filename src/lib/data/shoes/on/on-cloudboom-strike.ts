@@ -1,5 +1,6 @@
 import type { Shoe } from '@/types/shoe';
 
+// 원문 재확인:2026-11-10. 확인 범위와 한계는 verification 참조.
 export const shoe: Shoe = {
   id: 'on-cloudboom-strike',
   slug: 'on-cloudboom-strike',
@@ -15,100 +16,140 @@ export const shoe: Shoe = {
   ],
   category: '레이싱',
   rating: 5,
-  price: 329000,
-  description: 'On의 최상위 레이싱화로, 카본 Speedboard와 Helion HF 슈퍼폼으로 마라톤과 하프 마라톤에서 최고의 퍼포먼스를 제공합니다.',
-  oneliner: '72.1% 리턴 + 겨울 6% 경화, 사계절 레이싱 가능한 슈퍼슈즈',
-  editorComment: '겨울 경화율 6%는 슈퍼슈즈 시장에서 압도적 1위 수치로, 한국의 추운 겨울 마라톤에서도 성능 저하 없이 레이싱할 수 있습니다. 힐 72.1% 에너지 리턴은 알파플라이 3(힐 74.9%)에 못 미치지만, 32만 9천원으로 1만원 저렴하고 0.62 트랙션은 슈퍼슈즈 중 최고 수준의 그립력입니다. 201g 초경량에 3.2mm 극단적 로우드롭은 미드풋/포어풋 착지에 특화된 설계라, 힐스트라이커가 신으면 아킬레스건에 과부하가 걸립니다. 와이드 옵션 부재로 발볼 넓은 한국 러너에게는 도전적인 핏입니다. Helion HF도 PEBA 계열의 숙명은 공유합니다 — 2024년 발표된 연구의 450km 마모 실험에서 PEBA는 에너지 리턴 −24.6%(EVA는 −10.5%). 겨울 경화율 6%라는 강점을 살리려면 겨울 대회 결전용으로 아껴 신는 운용이 최적입니다.\n\n사이즈·구매 가이드: 토박스가 표준이나 On은 와이드 옵션이 없으니 발볼 넓은 러너는 반드시 매장에서 착화하세요. 300km 기준 km당 약 1,097원으로 레이싱화 특성상 대회 전용으로 관리하는 것이 현명합니다. 알파플라이 3(에너지 리턴 우위)나 아디오스 프로 4(중간 가격대)와 성능을 비교해 보세요.',
-  tags: ['레이싱', '마라톤', '카본'],
+  description: '초대 Helion HF · Bounceboard 드롭인 폼 · 카본 Speedboard 구조의 클라우드붐 스트라이크. RunRepeat 실험실 검체 201g·38.1/34.9mm. 한국 현재 정가 미확인.',
+  oneliner: '초대 Helion HF · Bounceboard 드롭인 폼 · 카본 Speedboard · 201g (RunRepeat 실험실 검체)',
+  editorComment: '2026-11-10 원문 재확인. 한국 공식 캐시: men 3ME3048 Regular / 레귤러 표시329,000원; women 3WE30474836 Regular / 레귤러 표시329,000원. 현재 가격·폭·선택 재고는 미확인입니다. 캐시 수량·알림·장바구니 버튼을 현재 재고로 쓰지 않습니다. 한국 남성210g·여성194g(기준 사이즈 미공시)·4mm, DOR 소개215g(남성US9)/187g(여성US8)·39.5/35.5mm·4mm와 RR201g·38.1/34.9mm·3.2mm를 나눕니다. 34.2AC는 카본 위 Pebax 드롭인 폼이며 하층 경도는 미확인입니다. 힐 인솔두께6.6mm를 전족 동일 두께로 보지 않습니다. 겨울 경화율 최저·성능 저하 없음·힐 착지 아킬레스 손상·300km와 다른 PEBA 실험의 수명 전용을 제거했습니다. DOR 직접403 뒤 원문 캐시를 확인했습니다. David(남성US9.5)는 낮고 밀착되는 앞발/중족에 비해 힐이 여유 있어 회전·경사에서 움직였고 앞발 탄성은 좋아도 후족 안정감은 부족했습니다. Nathan은 바운스와 좁은 힐/중족의 흔들림, Andrea는 불편한 어퍼·접히는 혀와 좋은 전족 바운스를 적었습니다. Nathan·Andrea 실제 사이즈는 미확인입니다. RR 내부 최광폭 95.6mm·엄지 73.4mm·높이 27.2mm입니다. 너비 하나로 발등·길이·힐 고정이나 한국 와이드 적합을 보장하지 않습니다. 실제 규격·양말에서 접촉과 전환을 확인하세요. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
+  tags: [
+    '레이싱',
+    '마라톤',
+    '카본',
+  ],
   specs: {
     weight: 201,
     cushioning: 8,
     responsiveness: 9,
     stability: 5,
     drop: 3.2,
-    durability: 300,
   },
   biomechanics: {
-    stackHeight: { heel: 38.1, forefoot: 34.9 },
+    stackHeight: {
+      heel: 38.1,
+      forefoot: 34.9,
+    },
     drop: 3.2,
     carbonPlate: true,
-    plateType: 'curved',
-    midsoleType: 'Helion HF',
-    optimalPace: '3:30-4:30 min/km',
-  },
-  injuryPrevention: {
-    plantarFasciitis: 'caution',
-    achillesTendinopathy: 'caution',
-    kneeIssues: 'caution',
-    shinSplints: 'caution',
+    plateType: 'Carbon Speedboard/PWRPLATE/EnergyArc',
+    midsoleType: '초대 Helion HF · Bounceboard 드롭인 폼 · 카본 Speedboard',
   },
   koreanFootFit: {
     toBoxWidth: 'standard',
-    flatFootCompatibility: 'poor',
-    wideOptions: false,
     winterCompatibility: 'excellent',
     summerCompatibility: 'good',
   },
   priceAnalysis: {
-    msrp: 329000,
-    streetPrice: 329000,
-    costPerKm: 1097,
     valueRating: 7,
     priceTier: 'super-premium',
-    alternatives: ['nike-alphafly-3', 'adidas-adios-pro-4', 'asics-metaspeed-sky-plus'],
-    valueAdvantages: ['72.1% 에너지 리턴 (최상위급)', '201g 경량', '뛰어난 그립력 (0.62)', '겨울 성능 우수 (6% 변화)'],
+    alternatives: [
+      'nike-alphafly-3',
+      'adidas-adios-pro-4',
+      'asics-metaspeed-sky-plus',
+    ],
   },
   targetUsers: {
-    recommended: ['미드풋/앞발 착지 러너', '마라톤/하프 레이싱용', 'On 팬으로 슈퍼슈즈 원하는 러너', '5K~마라톤 전 거리 레이서'],
-    notRecommended: ['뒤꿈치 착지 러너', '안정성이 필요한 러너', '넓은 발폭 러너', '가성비를 중시하는 러너'],
+    recommended: [
+      '실제 규격에서 앞코·힐 고정과 전환을 비교하려는 러너',
+      '공시·실측·개인 체감의 조건을 구분하려는 러너',
+    ],
+    notRecommended: [
+      '시착에서 압박·마찰·불편한 전환이 남는 경우',
+      '짧은 시험과 광고를 수명·개인 기록·임상 효과로 읽는 경우',
+    ],
   },
   features: [
-    '힐 139 SA 충격흡수 + 72.1% 에너지 리턴 (RunRepeat Lab Test)',
-    '전족부 127 SA + 73.4% 에너지 리턴 - 슈퍼슈즈급 성능',
-    '201g 경량으로 38.1mm 스택 대비 뛰어난 경량화',
-    '3.2mm 로우드롭 - 미드풋/앞발 착지에 최적화',
-    '풀렝스 카본 플레이트 + Pebax Helion HF 폼',
-    '트랙션 0.62 - 슈퍼슈즈 중 최상위 그립력',
-    '겨울 성능 6% 변화 - Pebax 폼 특유의 온도 안정성',
-    '에너지 리턴 전족부 73.4% (RunRepeat 실측)',
+    '초대 Helion HF · Bounceboard 드롭인 폼 · 카본 Speedboard',
+    '201g · 38.1/34.9mm · 드롭 3.2mm (RunRepeat 실험실 검체)',
+    '한국 원문은 스푼형100% 카본 Speedboard를 설명합니다. 구조적 쿠션 부품인 Bounceboard를 일반 인솔로 교체해도 같은 착화감이 유지된다고 가정하지 않습니다.',
+    'RR 내부 최광폭 95.6mm·엄지 73.4mm·높이 27.2mm입니다. 너비 하나로 발등·길이·힐 고정이나 한국 와이드 적합을 보장하지 않습니다. 실제 규격·양말에서 접촉과 전환을 확인하세요.',
   ],
   reviews: [
     {
-      userType: '에디터 분석',
-      rating: 92,
-      text: '서브3:30~서브3 목표 마라토너 중 On 팬을 위한 슈퍼슈즈입니다. 32만 9천원으로 알파플라이(33만 9천원)보다 1만원 저렴하면서 72.1% 에너지 리턴으로 최상위급 반발력을 제공합니다. 201g 초경량에 0.62 트랙션으로 그립력도 최상위급이며, 겨울에 6%만 단단해져 사계절 레이싱 가능합니다. 이전 모델 대비 핏이 넓어졌지만 와이드 옵션은 없어 발볼 넓은 한국 러너는 반드시 착화 테스트가 필요합니다. 3.2mm 로우드롭은 미드풋/앞발 착지 러너 전용이며, 힐스트라이커나 평발 러너는 아킬레스건 적응 기간이 필요합니다. 300km 내구성이라 km당 약 1,097원은 비싸지만 알파플라이 대비 1만원 저렴한 가격과 사계절 경화율 6%는 한국 겨울 마라톤에서 진가를 발휘합니다.',
+      userType: '원문 기반 에디터 분석',
+      source: 'editor',
+      sourceUrl: 'https://runrepeat.com/on-cloudboom-strike',
+      text: '한국 남성210g·여성194g(기준 사이즈 미공시)·4mm, DOR 소개215g(남성US9)/187g(여성US8)·39.5/35.5mm·4mm와 RR201g·38.1/34.9mm·3.2mm를 나눕니다. 34.2AC는 카본 위 Pebax 드롭인 폼이며 하층 경도는 미확인입니다. 힐 인솔두께6.6mm를 전족 동일 두께로 보지 않습니다. 겨울 경화율 최저·성능 저하 없음·힐 착지 아킬레스 손상·300km와 다른 PEBA 실험의 수명 전용을 제거했습니다.',
     },
     {
-        userType: '예상 적합 — 겨울·우천 레이스',
-        text: '이 모델의 차별점은 기온과 노면 조건입니다. 저온 경화율이 6%로 DB 내 최저 수준이라, 영하권 레이스에서도 폼이 굳지 않고 반발이 유지됩니다. 겨울·초봄 대회 비중이 큰 국내 일정에서 실질적인 이점입니다. 아웃솔 그립도 0.62로 높아 비 온 뒤 젖은 아스팔트에서 미끄러짐이 적습니다. 201g의 무게에 카본 Speedboard로 30km 이후 추진도 유지되고, 에너지 리턴 72.1%입니다. 슈퍼슈즈치고 토박스가 넉넉한 편이라 발볼 부담이 덜하지만, 3.2mm의 낮은 드롭이라 발볼보다 발가락 길이 여유를 우선 확인하세요. 알파플라이 3보다 1만원 낮은 가격대입니다.',
-      },
-    {
-        userType: '적합성 경계 — 로우드롭 적응이 전제',
-        text: '3.2mm의 낮은 드롭이 이 모델의 성격을 결정합니다. 미드풋 착지에는 자연스럽고 에너지 리턴 72.1%가 푸시오프에서 작동하지만, 드롭이 높은 신발에 익숙하다면 아킬레스와 종아리에 부하가 실려 적응 기간이 필요합니다. 평발 성향이면 이 부담이 더 커질 수 있습니다. 스택은 38.1mm로 레이서치고 충분한 편이라 충격 흡수는 확보돼 있습니다. 토박스가 빡빡해 표준 발볼도 반 치수 업을 검토해야 하고, 와이드 옵션은 없습니다. 알파플라이 3보다 1만원 낮은 가격대이며, 예상 수명 250~350km(추정) 기준 km당 약 940~1,320원입니다.',
-      },
+      userType: '외부 착화 의견 요약 · Doctors of Running',
+      source: 'editor',
+      sourceUrl: 'https://www.doctorsofrunning.com/on-cloudboom-strike-review-2024-their/',
+      text: 'DOR 직접403 뒤 원문 캐시를 확인했습니다. David(남성US9.5)는 낮고 밀착되는 앞발/중족에 비해 힐이 여유 있어 회전·경사에서 움직였고 앞발 탄성은 좋아도 후족 안정감은 부족했습니다. Nathan은 바운스와 좁은 힐/중족의 흔들림, Andrea는 불편한 어퍼·접히는 혀와 좋은 전족 바운스를 적었습니다. Nathan·Andrea 실제 사이즈는 미확인입니다.',
+    },
   ],
-
   detailedSpecs: {
-    weight: '210g (On 한국 공식몰 표기, 남성) / 201g (남성 US 9 실측)',
-    stackHeight: '힐 38.1mm / 포어풋 34.9mm',
-    drop: '3.2mm (RunRepeat 실측) / 4mm (On 공식)',
-    midsole: 'Helion HF (Pebax)',
-    plate: '카본 Speedboard (풀 렝스)',
-    outsole: 'CloudTec 러버',
-    upper: '초경량 메쉬',
-    width: '표준 — 토박스 73.4mm(RunRepeat 실측, 엄지 부위·US 9; 같은 랩 평균 73.2mm보다 0.2mm 넓음), 최대폭 95.6mm(평균 95.2mm). 랩 본문 "much roomier than before", "similar to many daily trainers". On 한국 공식몰(2026-10-20) 레귤러만 — 와이드 없음',
-    durability: '300km (레이싱 전용)',
-    price: '₩329,000 (MSRP)',
-    costPerKm: '약 ₩1,097/km (300km 기준)',
-    footType: '표준~좁은 발볼 / 엘리트 러너',
-    landingPattern: '미드풋~전방 착지 (로우드롭)',
+    weight: '201g (RunRepeat 실험실 검체). 한국 남성210g·여성194g(기준 사이즈 미공시)·4mm, DOR 소개215g(남성US9)/187g(여성US8)·39.5/35.5mm·4mm와 RR201g·38.1/34.9mm·3.2mm를 나눕니다.',
+    stackHeight: '38.1/34.9mm (RunRepeat 실험실 검체, 힐/전족부). 출처별 다른 공시는 무게 항목 참조.',
+    drop: '3.2mm (RunRepeat 실험실 검체). 한국 남성210g·여성194g(기준 사이즈 미공시)·4mm, DOR 소개215g(남성US9)/187g(여성US8)·39.5/35.5mm·4mm와 RR201g·38.1/34.9mm·3.2mm를 나눕니다.',
+    midsole: '초대 Helion HF · Bounceboard 드롭인 폼 · 카본 Speedboard. 주폼 34.2AC, 힐/전족부 SA 139/127·에너지 리턴 72.1/73.4%. 34.2AC는 카본 위 Pebax 드롭인 폼이며 하층 경도는 미확인입니다. 힐 인솔두께6.6mm를 전족 동일 두께로 보지 않습니다. 겨울 경화율 최저·성능 저하 없음·힐 착지 아킬레스 손상·300km와 다른 PEBA 실험의 수명 전용을 제거했습니다.',
+    plate: '한국 원문은 스푼형100% 카본 Speedboard를 설명합니다. 구조적 쿠션 부품인 Bounceboard를 일반 인솔로 교체해도 같은 착화감이 유지된다고 가정하지 않습니다.',
+    width: 'RR 내부 최광폭 95.6mm·엄지 부위 73.4mm·높이 27.2mm. RR 내부 최광폭 95.6mm·엄지 73.4mm·높이 27.2mm입니다. 너비 하나로 발등·길이·힐 고정이나 한국 와이드 적합을 보장하지 않습니다. 실제 규격·양말에서 접촉과 전환을 확인하세요.',
+    durability: '검증된 공통 수명 km 미확인. 국소 마모·짧은 착화 후기를 주행 수명으로 환산하지 않습니다.',
+    price: '한국 공식 캐시: men 3ME3048 Regular / 레귤러 표시329,000원; women 3WE30474836 Regular / 레귤러 표시329,000원. 현재 가격·폭·선택 재고는 미확인입니다. 캐시 수량·알림·장바구니 버튼을 현재 재고로 쓰지 않습니다.',
   },
-
-  similarShoes: ['nike-alphafly-3', 'adidas-adios-pro-4', 'asics-metaspeed-sky-plus'],
-  relatedPosts: [
-    { slug: 'running-shoe-plate-guide-2026', title: '플레이트 완전 해설 — 카본·유리섬유·나일론' },
-    { slug: 'bio-based-running-shoe-foam-sugarcane-castor-2026', title: '사탕수수·피마자 폼 — 바이오 러닝화 추적' },
+  similarShoes: [
+    'nike-alphafly-3',
+    'adidas-adios-pro-4',
+    'asics-metaspeed-sky-plus',
   ],
-  // 네이버 링크 제거(2026-10-23 점검) — 커넥트 발급 내역에서 링크 비활성(SALE/disabled)
-  purchaseLinks: [{ store: '쿠팡', url: 'https://link.coupang.com/a/g5Y2WD3Rhk' }],
+  relatedPosts: [
+    {
+      slug: 'running-shoe-plate-guide-2026',
+      title: '플레이트 완전 해설 — 카본·유리섬유·나일론',
+    },
+    {
+      slug: 'bio-based-running-shoe-foam-sugarcane-castor-2026',
+      title: '사탕수수·피마자 폼 — 바이오 러닝화 추적',
+    },
+  ],
+  purchaseLinks: [
+    {
+      store: '쿠팡',
+      url: 'https://link.coupang.com/a/g5Y2WD3Rhk',
+    },
+  ],
+  verification: {
+    checkedAt: '2026-11-10',
+    scope: '한국 상품 조건, 해외 실험실·제조사 공시와 외부 착화 의견의 확인 범위를 구분했습니다. 제품 전체 검증 완료 표지가 아닙니다.',
+    sources: [
+      {
+        label: '한국 공식 3ME3048',
+        url: 'https://www.on.com/ko-kr/products/cloudboom-strike-3me3048/mens',
+        note: 'original_opened_cached_web; 현재가격·선택재고 미확인.',
+      },
+      {
+        label: '한국 공식 3WE30474836',
+        url: 'https://www.on.com/ko-kr/products/cloudboom-strike-3we3047/womens/sunstone-white-shoes-3WE30474836',
+        note: 'original_opened_cached_web_redirect; 현재가격·선택재고 미확인.',
+      },
+      {
+        label: 'RunRepeat 동세대 실험실 원문',
+        url: 'https://runrepeat.com/on-cloudboom-strike',
+        note: '공시 일반 검체 정책은 남성 US9. 실제 검체 라벨·폭 미확인. 201g·38.1/34.9mm·3.2mm. 34.2AC는 카본 위 Pebax 드롭인 폼이며 하층 경도는 미확인입니다. 힐 인솔두께6.6mm를 전족 동일 두께로 보지 않습니다. 겨울 경화율 최저·성능 저하 없음·힐 착지 아킬레스 손상·300km와 다른 PEBA 실험의 수명 전용을 제거했습니다.',
+      },
+      {
+        label: 'Doctors of Running 동세대 원문',
+        url: 'https://www.doctorsofrunning.com/on-cloudboom-strike-review-2024-their/',
+        note: '한국 남성210g·여성194g(기준 사이즈 미공시)·4mm, DOR 소개215g(남성US9)/187g(여성US8)·39.5/35.5mm·4mm와 RR201g·38.1/34.9mm·3.2mm를 나눕니다.',
+      },
+      {
+        label: 'RunRepeat 측정법',
+        url: 'https://runrepeat.com/testing-methodology',
+        note: 'AC·HA·HC, SA·에너지 리턴, BR·구방식1~5와 내부/외부 폭을 구분합니다. 일반 정책은 개별 라벨 확인과 다릅니다.',
+      },
+    ],
+    limitations: [
+      '모델별 임상 예방·치료 등급, 공통 최적 페이스·주행 수명·km당 비용은 미확인으로 제거했습니다.',
+      '에디터 평점·1~10점·발볼 및 계절 분류·구매 링크는 모든 항목을 새로 검증한 수치나 임상 효과가 아닙니다.',
+      '판매 조건은 확인한 상품·시점에 한정합니다. 미확인을 미출시·단종·전국 재고 없음으로 해석하지 않습니다.',
+    ],
+  },
 };

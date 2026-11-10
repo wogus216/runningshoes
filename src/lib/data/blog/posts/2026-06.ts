@@ -7141,115 +7141,38 @@ export const posts_2026_06: BlogPost[] = [
     ],
   },
   {
-    id: 'on-cloudsurfer-max-review-2026',
-    slug: 'on-cloudsurfer-max-review-2026',
-    title: '이름만 \'Max\'? — On 클라우드서퍼 맥스 리뷰 | 단단한 안정형 데일리의 진실 + 클라우드서퍼 2와 2만원 차이',
-    description: '온(On)의 맥스쿠션 데일리화 클라우드서퍼 맥스. 그런데 RunRepeat 랩 수치와 해외 리뷰 점수(BITR B티어·RTR 8.5·DOR B+)를 보면 "이름만 Max"에 가깝습니다 — 에너지 리턴은 역대 최저권이고, 일반 클라우드서퍼 2와 힐 스택·경도가 거의 같은데 2만 원 더 비싸죠. 단단한 안정형 데일리로서의 진짜 가치와 한계, 레이싱 루프 결함, 발볼·평발 적합성까지 솔직하게 정리했습니다.',
-    thumbnail: '/images/blog/on-cloudsurfer-max-review-2026.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-06-08',
-    category: 'review' as const,
-    readingTime: 7,
-    tags: ['온', 'On', '클라우드서퍼 맥스', '클라우드서퍼 2', '맥스쿠션', '데일리 쿠션화', 'CloudTec Phase', 'easy run', '회복런', '안정화'],
+    id: "on-cloudsurfer-max-review-2026",
+    slug: "on-cloudsurfer-max-review-2026",
+    title: "클라우드서퍼 맥스 리뷰 — 단단한 로커와 얇은 혀, Max 이름보다 실제 고정",
+    description: "292g·37.3/29.4mm 검체와 David의 선호를 정리합니다. 모두의 실망·평발 지지·2만원 프리미엄 단정 대신 앞코·혀 압박·전환을 확인합니다.",
+    thumbnail: "/images/shoes/on/cloudsurfermax/side.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-06-08",
+    category: "review",
+    readingTime: 8,
+    tags: [
+      "클라우드서퍼 맥스",
+      "원문 대조",
+      "핏"
+    ],
     content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li>클라우드서퍼 맥스는 이름과 달리 <strong>폭신한 맥스쿠션이 아니라 "단단하고 안정적인" 데일리화</strong> — 에너지 리턴이 48%로 역대 최저권이라 반발감을 기대하면 실망합니다</li>
-    <li>가장 큰 함정은 <strong>일반 <a href="/shoes/on-cloudsurfer-2">클라우드서퍼 2</a>와 힐 스택·경도가 거의 같은데 2만 원 비싸고 토박스는 오히려 더 좁다</strong>는 점 — "Max 프리미엄"의 근거가 약합니다</li>
-    <li>그럼에도 <strong>넓은 플랫폼의 안정성·접지력·평발 지지력</strong>은 분명한 강점. "단단하고 안정적인 회복런·일상 겸용"을 원하는 러너에겐 맞습니다</li>
-  </ul>
-</div>
-
-<div class="callout warning">
-  <span class="callout-icon">🤔</span>
-  <div class="callout-body">
-    <p class="callout-title">"Max"인데 폭신하지 않다?</p>
-    <p>온이 드디어 <strong>맥스쿠션 데일리화</strong> <a href="/shoes/on-cloudsurfer-max">클라우드서퍼 맥스</a>를 내놨습니다. 이름만 보면 호카 본디나 뉴발 1080처럼 구름 위를 걷는 폭신함을 기대하게 되죠. 그런데 해외 전문 리뷰(BITR·Road Trail Run·Doctors of Running)와 RunRepeat 랩 데이터는 한목소리로 <strong>"이름만 Max"</strong>라고 평합니다. 왜 그런지, 그리고 그럼에도 누구에게 맞는지 솔직하게 짚어보겠습니다.</p>
-  </div>
-</div>
-
-<h2>클라우드서퍼 맥스, 어떤 신발인가</h2>
-<p>온의 <strong>CloudTec Phase</strong>(압축되며 굴러가는 파드 구조)에 Helion 폼을 얹은 데일리 트레이너입니다. 힐 37.3mm / 전족 29.4mm 스택, 292g, 충격흡수(SA) 141로 <strong>보호력은 충분</strong>합니다. 전작 클라우드이클립스의 소음 나던 외부 스피드보드를 없애 라이드를 정리했고, 어퍼 품질은 최상급이라는 평이 많습니다.</p>
-<p>문제는 그 다음입니다.</p>
-
-<h2>"Max"라는 이름의 함정</h2>
-<ul>
-  <li><strong>에너지 리턴 48% — RunRepeat 역대 최저권</strong>. "바운스 대비 가격이 최악"이라는 혹평까지 나옵니다. 톡 쏘는 반발과는 거리가 멉니다</li>
-  <li><strong>경도 43.8 AC로 단단</strong> — '맥스쿠션'의 푹신하게 꺼지는 느낌이 없습니다. 진짜 맥스쿠션을 기대하면 실망합니다</li>
-  <li><strong>292g 무게</strong> — 빠른 페이스에선 둔하게 느껴집니다</li>
-</ul>
-<p>즉 클라우드서퍼 맥스는 "폭신한 맥스쿠션"이 아니라 <strong>"단단하고 묵직한 안정형 데일리"</strong>로 이해해야 합니다. 호카 본디 9 같은 포지션을 노렸지만 실제 감촉은 더 단단하죠.</p>
-
-<h2>핵심 — 클라우드서퍼 2와 뭐가 다른가</h2>
-<p>가장 냉정하게 따져볼 부분입니다. 같은 클라우드서퍼 라인의 일반 <a href="/shoes/on-cloudsurfer-2">클라우드서퍼 2</a>와 비교하면:</p>
-<table>
-  <thead>
-    <tr><th></th><th>클라우드서퍼 맥스</th><th>클라우드서퍼 2</th></tr>
-  </thead>
-  <tbody>
-    <tr><td><strong>가격</strong></td><td>219,000원</td><td>199,000원</td></tr>
-    <tr><td><strong>힐 스택</strong></td><td>37.3mm</td><td>37.5mm (거의 동일)</td></tr>
-    <tr><td><strong>경도</strong></td><td>43.8 AC</td><td>43.8 AC (동일)</td></tr>
-    <tr><td><strong>에너지 리턴</strong></td><td>48%</td><td>52% (Max가 더 낮음)</td></tr>
-    <tr><td><strong>토박스</strong></td><td>71.4mm</td><td>73.5mm (Max가 더 좁음)</td></tr>
-    <tr><td><strong>무게</strong></td><td>292g</td><td>254g (Max가 38g 무거움)</td></tr>
-  </tbody>
-</table>
-<p>충격적이게도 <strong>"Max"가 힐 쿠션은 거의 같고, 에너지 리턴은 더 낮고, 토박스는 더 좁고, 38g 무거운데 2만 원 비쌉니다.</strong> 수치로만 보면 2만 원 프리미엄의 근거가 약합니다. 전족부 쿠션(+20 SA)과 약간의 안정감 정도가 Max의 차별점입니다.</p>
-
-<div class="callout warning">
-  <span class="callout-icon">⚠️</span>
-  <div class="callout-body">
-    <p class="callout-title">사기 전 알아야 할 단점</p>
-    <ul>
-      <li><strong>레이싱 루프 결함</strong> — 끈을 잡아주는 패브릭 루프가 미끄러운 끈을 못 잡아 <strong>주행 중 풀린다</strong>는 지적이 많습니다. 끈도 과도하게 길어 걸릴 수 있습니다</li>
-      <li><strong>통기성 부족</strong> — 어퍼가 좋아 보여도 실제 환기는 약해, 한여름 한강 러닝엔 더울 수 있습니다</li>
-      <li><strong>와이드 옵션 없음 + 좁은 토박스</strong> — 71.4mm(RunRepeat 실측)로 랩 평균 73.2mm보다 좁은 편. 발볼 넓은 한국 러너는 실착이 필수입니다</li>
-      <li><strong>가격</strong> — 21만 9천원은 단단한 데일리화로는 프리미엄. 가성비는 약합니다</li>
-    </ul>
-  </div>
-</div>
-
-<h2>그럼에도, 강점은 분명하다</h2>
-<ul>
-  <li><strong>안정성</strong> — 넓은 힐 플랫폼(95mm)과 단단한 폼으로 발이 안정적으로 잡힙니다. 평발·경미한 과내전 러너에게 지지력이 좋습니다(DPT 평가 B+)</li>
-  <li><strong>접지력</strong> — 젖은 보도블록에서도 미끄럼이 적습니다</li>
-  <li><strong>무릎 보호</strong> — SA 141 충격흡수로 무릎 부담이 적어 회복런·장거리 easy run에 적합합니다</li>
-  <li><strong>일상 겸용</strong> — 단단하고 안정적이라 하루 종일 걷는 날 신어도 편합니다</li>
-</ul>
-
-<h2>살까, 말까 — 경쟁자와 함께</h2>
-<div class="callout info">
-  <span class="callout-icon">🎯</span>
-  <div class="callout-body">
-    <p class="callout-title">이렇게 정리됩니다</p>
-    <ul>
-      <li><strong>맞는 사람</strong>: "단단하고 안정적인" 회복런·일상 겸용 데일리를 원하고, 온 디자인을 좋아하며, 평발 지지가 필요한 러너</li>
-      <li><strong>맞지 않는 사람</strong>: 폭신한 맥스쿠션을 기대하는 러너, 빠른 반발을 원하는 러너, 발볼 넓은 러너, 가성비 최우선 러너</li>
-      <li><strong>대안</strong>: 같은 돈이면 일반 <a href="/shoes/on-cloudsurfer-2">클라우드서퍼 2</a>(2만 원 싸고 토박스 넓음)가 더 합리적일 수 있고, <strong>진짜 폭신한 맥스쿠션</strong>은 <a href="/shoes/new-balance-1080-v15">뉴발란스 1080</a>·<a href="/shoes/asics-gel-nimbus-28">아식스 님버스 28</a>이, 가벼운 데일리는 <a href="/shoes/hoka-clifton-10">호카 클리프턴 10</a>이 앞섭니다</li>
-    </ul>
-  </div>
-</div>
-
-<h2>자주 묻는 질문</h2>
-<h3>Q. 맥스쿠션이라 무릎에 좋나요?</h3>
-<p>SA 141 충격흡수로 <strong>무릎 보호엔 충분</strong>합니다. 단 "폭신하게 꺼지는" 쿠션이 아니라 "단단하게 받쳐주는" 보호라는 점을 기대치에 반영하세요.</p>
-
-<h3>Q. 그냥 클라우드서퍼 2 사는 게 낫나요?</h3>
-<p>대부분의 경우 <strong>그렇습니다</strong>. 힐 쿠션이 거의 같고, 토박스가 넓고, 가볍고, 2만 원 싸거든요. Max는 전족부 쿠션과 약간의 안정감을 더 원할 때만 의미가 있습니다.</p>
-
-<h3>Q. 발볼 넓은데 괜찮나요?</h3>
-<p>토박스가 71.4mm로 <strong>랩 평균(73.2mm)보다 좁은 편</strong>이고 와이드도 없습니다. 발볼 넓은 러너는 비추천이며, 꼭 신으려면 매장 착화가 필수입니다.</p>
-
-<h3>Q. 러닝 입문용으로 사도 되나요?</h3>
-<p>안정적이라 회복·가벼운 조깅엔 무난하지만, 21만 9천원 가격과 "Max 기대치"를 생각하면 입문용으로 최선은 아닙니다. <a href="/blog/first-running-shoe-guide-2026">첫 러닝화 가이드</a>를 먼저 보고 결정하세요.</p>
-
-<h2>마무리</h2>
-<p>클라우드서퍼 맥스는 <strong>나쁜 신발은 아니지만, "Max"라는 이름이 만든 기대와 실제가 어긋나는</strong> 신발입니다. 폭신함 대신 단단함, 반발 대신 안정. 그 성격을 알고 "안정적인 회복런·일상화"로 받아들이면 만족스럽지만, 폭신한 맥스쿠션을 기대하고 사면 실망합니다. 그리고 무엇보다 <strong>2만 원 싼 <a href="/shoes/on-cloudsurfer-2">클라우드서퍼 2</a>와 진지하게 저울질</strong>해 볼 것을 권합니다. 이름값보다 내 발과 용도에 맞는지가 먼저니까요.</p>
-
-<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 On 공식 자료와 RunRepeat·Believe in the Run·Road Trail Run·Doctors of Running 리뷰를 종합한 내용입니다. 무게·스택·내구성 수치는 측정 기준에 따라 차이가 있을 수 있습니다. 가격은 On 한국 공식(2026-06 기준)이며 변동될 수 있습니다.</p>
+<p><strong>2026-11-10 원문 대조 업데이트.</strong> 제조사 공시·실험실 검체·개인 착화 의견과 한국 상품 캐시를 구분합니다. 자체 착화 후기가 아닌 원문 기반 분석입니다.</p><h2>먼저 볼 차이</h2><p>David는 폼이 많이 압축되지 않는 단단한 로커를 좋아했습니다. 반응성이 낮고 누군가에게 너무 단단할 수 있다는 단서를 함께 남겼습니다. 이를 해외 리뷰 모두가 실망했다는 결론으로 합치지 않습니다.</p><p>앞발MTP 부근은 여유 있어도 앞끝은 빠르게 좁아지고 혀는 얇습니다. 실제 규격에서 끈 조임·혀 압박·발가락 위 공간을 확인할 수 있습니다.</p><figure><img src="/images/shoes/on/cloudsurfermax/side.webp" alt="클라우드서퍼 맥스 — 로커 선호와 얇은 혀 압박을 함께 확인" loading="lazy"/><figcaption>클라우드서퍼 맥스 — 로커 선호와 얇은 혀 압박을 함께 확인</figcaption></figure><div class="table-wrap"><table><thead><tr><th>모델</th><th>무게 · 공시 출처 별도 표기</th><th>스택·드롭 · 공시 출처 별도 표기</th><th>힐/전족 SA</th><th>힐/전족 리턴</th></tr></thead><tbody><tr><td>on-cloudsurfer-max</td><td>292g</td><td>37.3/29.4mm · 7.9mm</td><td>141/120</td><td>48.3/49.4%</td></tr></tbody></table></div><p>표의 값은 RunRepeat 검체 또는 별도 표시한 DOR 소개 공시입니다. DOR 소개는 독립 실측이 아닙니다. 일반 정책은 남성 US9지만 개별 라벨·폭·보정 여부는 미확인입니다. 공시와 동일한 검체로 단정하지 않습니다. SA는 충격흡수, 리턴은 시험에서 반환된 에너지 비율이며 부드러움·개인 기록·임상 보호를 뜻하지 않습니다. HA는 구방식, AC는 별도 경도 척도여서 환산하지 않습니다. <a href="https://runrepeat.com/testing-methodology" target="_blank" rel="noopener noreferrer">RunRepeat 측정법</a></p><h2>Max가 값을 못한다는 결론을 재검토했습니다</h2><p>일반 서퍼2와의 현재2만원 차이, 미확인 BITR/RTR/DOR 점수와 최저권 순위를 이번 검증의 근거로 반복하지 않습니다. 현재 한국 가격과 서퍼2의 비교 조건을 같은 시점으로 확보하지 못했습니다.</p><p>플레이트 없는 구조가 평발 지지·회복 효과를 증명하지 않습니다. 500km와 km당438원, 한국 와이드 부재도 미확인으로 정정했습니다.</p><h2>클라우드서퍼 맥스 — 핏과 주행에서 갈리는 지점</h2><p>플레이트·Speedboard 없는 구조입니다. 단단한 로커와 사이드월을 임상 지지 효과로 바꾸지 않습니다.</p><p>RR 내부 최광폭 96.1mm·엄지 71.4mm·높이 26.2mm입니다. 너비 하나로 발등·길이·힐 고정이나 한국 와이드 적합을 보장하지 않습니다. 실제 규격·양말에서 접촉과 전환을 확인하세요.</p><p>DOR 원문은 직접403 뒤 원문 캐시로 확인했습니다. David(남성US9.5)는 보통 힐/중족과 MTP 부근 여유·빠른 앞코 테이퍼, 얇은 혀의 끈 압박을 적었습니다. 압축이 적은 단단한 로커는 자신이 좋아했으나 반응성은 낮고 다른 러너에게 너무 단단할 수도 있다고 봤습니다.</p><h2>클라우드서퍼 맥스 — 공시·한국 판매 확인 범위</h2><p>한국 남성292g·여성262g은 기준 사이즈 미공시·6mm입니다. DOR 소개292g(남성US9)·6mm와 RR292g·37.3/29.4mm·7.9mm를 구분합니다.</p><p>한국 공식 캐시: men 3MF30434287 Regular / 레귤러 표시219,000원; women 3WF3022 Regular / 레귤러 표시219,000원. 현재 가격·폭·선택 재고는 미확인입니다. 캐시 수량·알림·장바구니 버튼을 현재 재고로 쓰지 않습니다.</p><p>RR43.8AC·리턴48.3/49.4%와 한국의 soft Helion 광고는 다른 종류의 근거입니다. Max가 모두에게 불필요·평발 지지 보장·한국 와이드 없음·500km·미확인 매체 점수 단정을 제거했습니다.</p><h2>구매 전에 실제로 확인할 것</h2><p>평소 양말·인솔로 앞쪽 길이와 발톱 위 공간, 끈을 조였을 때 발등 압박, 힐 고정과 칼라 마찰을 확인하세요. 발볼 너비 하나로 전체 핏을 결정하지 않습니다. 교환·반품 조건도 먼저 확인할 수 있습니다.</p><p>트레일에서는 자신의 주요 노면과 오르막·내리막·방향 전환에서 고정과 전환을 살펴야 합니다. 젖은 콘크리트 시험 하나가 바위·진흙 접지를 보장하지 않습니다. 통증·저림을 견뎌야 한다는 규칙이나 모델별 질환 예방 효과는 이번 자료로 확인하지 못했습니다.</p><h2>확인한 원문과 접근 범위</h2><ul><li><a href="https://www.on.com/ko-kr/products/cloudsurfer-max-m-3mf3043/mens/dust-ivory-shoes-3MF30434287" target="_blank" rel="noopener noreferrer">한국 공식 3MF30434287</a> — original_opened_cached_web; 현재가격·선택재고 미확인.</li><li><a href="https://www.on.com/ko-kr/products/cloudsurfer-max-w-3wf3022/womens/" target="_blank" rel="noopener noreferrer">한국 공식 3WF3022</a> — original_opened_cached_web; 현재가격·선택재고 미확인.</li><li><a href="https://runrepeat.com/on-cloudsurfer-max" target="_blank" rel="noopener noreferrer">클라우드서퍼 맥스 RR 원문</a> — 정확 모델 검체. 제조사 공시와 분리.</li><li><a href="https://www.doctorsofrunning.com/on-cloudsurfer-max-review-2025/" target="_blank" rel="noopener noreferrer">클라우드서퍼 맥스 DOR 원문</a> — 소개 공시·실제 착화 사이즈·개인의견 구분.</li></ul>
 `,
+    updatedAt: "2026-11-10",
+    faqs: [
+      {
+        "question": "이름만 Max라는 평가가 공통인가요?",
+        "answer": "확인한 David는 단단한 로커를 선호했습니다. 개인 의견을 모두의 실망으로 합치지 않습니다."
+      },
+      {
+        "question": "평발 회복런에 좋은가요?",
+        "answer": "모델별 임상 지지·회복 효과를 확인하지 못했습니다. 실제 고정·전환을 볼 수 있습니다."
+      },
+      {
+        "question": "한국에는 와이드가 없나요?",
+        "answer": "Regular 캐시는 확인했지만 전체 한국 현재 폭의 부재를 증명하지 않습니다."
+      }
+    ],
   },
   {
     id: "on-cloudmonster-3-review-2026",
@@ -7895,78 +7818,38 @@ export const posts_2026_06: BlogPost[] = [
     ],
   },
   {
-    id: 'puma-deviate-pure-nitro-review',
-    slug: 'puma-deviate-pure-nitro-review',
-    title: '푸마 디비에이트 나이트로 퓨어 리뷰 | 카본 뺀 100% PEBA 슈퍼폼 — 18.9만원 무플레이트 트레이너의 정체',
-    description: '푸마가 디비에이트 나이트로 4에서 카본 PWRPLATE를 덜어낸 "퓨어" 버전을 6월 출시했습니다. 100% PEBA NITROFOAM 단일 폼으로 220g 경량을 달성한 무플레이트 슈퍼폼 트레이너. 디비4와 무엇이 다른지, 누구에게 맞는지, 18만 9천원 가성비는 어떤지를 한국 러너 관점에서 정리했습니다.',
-    thumbnail: '/images/blog/puma-deviate-pure-nitro-review.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-06-05',
-    category: 'review' as const,
-    readingTime: 7,
-    tags: ['푸마 디비에이트 퓨어', '디비에이트 나이트로 퓨어', '무플레이트 슈퍼폼', 'PEBA 러닝화', '푸마 나이트로', '데일리 트레이너', '슈퍼트레이너'],
+    id: "puma-deviate-pure-nitro-review",
+    slug: "puma-deviate-pure-nitro-review",
+    title: "디비에이트 나이트로 퓨어 —215g 실측·PEBA, 넓이보다 낮은 앞코 확인",
+    description: "정확 퓨어 RR 랩과100마일 DOR 착화를 반영했습니다. 전작 추정·650km 수명·겨울 성능 보장을 정정하고23.3mm 앞코 높이와 고정을 설명합니다.",
+    thumbnail: "/images/shoes/puma/deviate-pure-nitro/side.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-06-05",
+    category: "review",
+    readingTime: 8,
+    tags: [
+      "나이트로 퓨어",
+      "원문 대조",
+      "핏"
+    ],
     content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li>디비에이트 나이트로 퓨어는 <strong>디비에이트 나이트로 4에서 카본 PWRPLATE를 뺀 "플레이트 없는" 버전</strong> — 100% PEBA 단일 폼으로 <strong>220g</strong> 경량을 달성했습니다(2026년 6월 출시)</li>
-    <li>플레이트 특유의 경직감 없이 <strong>유연하고 부드러운 라이드</strong>로, 데일리 러닝부터 스피드 훈련까지 한 켤레로 소화하는 만능 트레이너입니다</li>
-    <li><strong>18만 9천원</strong>으로 디비4(₩219,000)보다 3만원 저렴 — Road Trail Run이 9.5/10을 줄 만큼 "슈퍼슈즈만큼 가볍고 비싸지 않다"는 평입니다</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">👟</span>
-  <div class="callout-body">
-    <p class="callout-title">"카본을 뺀다"는 역발상</p>
-    <p>요즘 러닝화 트렌드는 카본 플레이트를 넣는 방향입니다. 그런데 푸마는 인기 슈퍼트레이너 <a href="/shoes/puma-deviate-nitro-4">디비에이트 나이트로 4</a>에서 <strong>오히려 카본 플레이트를 덜어낸</strong> '퓨어' 버전을 내놨습니다. 대신 미드솔을 <strong>100% PEBA NITROFOAM 단일 폼</strong>으로 채워, 플레이트의 튕기는 느낌 대신 <strong>폼 본연의 부드럽고 유연한 반발</strong>을 살렸죠. "스피드를 더 쉽게(speed made accessible)"가 푸마의 설명입니다.</p>
-  </div>
-</div>
-
-<div class="callout warning">
-  <span class="callout-icon">🧪</span>
-  <div class="callout-body">
-    <p class="callout-title">신상 데이터 안내</p>
-    <p>작성 시점(2026-06-05)엔 <strong>RunRepeat 랩 테스트가 미게시</strong>라 일부 수치를 형제 모델 <a href="/shoes/puma-deviate-nitro-4">디비에이트 나이트로 4</a> 기준으로 추정했습니다. 이후 RunRepeat이 2026-09-21 랩 테스트를 게시해, <a href="/shoes/puma-deviate-pure-nitro">상세 페이지</a>의 추정치는 실측값(215g, 스택 37.2/27.6mm, 드롭 9.6mm, 토박스 74.0mm)으로 교체됐습니다. 아래 비교표의 무게·스택·드롭은 디비4와 같은 기준으로 비교하려고 브랜드 공식값을 썼습니다(2026-10-23 기준).</p>
-  </div>
-</div>
-
-<h2>디비4 vs 퓨어 — 무엇이 다른가</h2>
-<table>
-  <thead>
-    <tr><th>항목</th><th>디비에이트 나이트로 4</th><th>디비에이트 나이트로 <strong>퓨어</strong></th></tr>
-  </thead>
-  <tbody>
-    <tr><td>플레이트</td><td>카본 합성 PWRPLATE</td><td><strong>없음</strong></td></tr>
-    <tr><td>미드솔 폼</td><td>듀얼 레이어 (PEBAX + PEBA)</td><td><strong>100% PEBA 단일</strong></td></tr>
-    <tr><td>무게 (공식, UK 8)</td><td>250g</td><td><strong>220g (-30g)</strong></td></tr>
-    <tr><td>스택 / 드롭 (공식)</td><td>38 / 30mm · 8mm</td><td>38 / 30mm · 8mm (동일)</td></tr>
-    <tr><td>라이드</td><td>탄탄하고 추진력 있는</td><td><strong>유연하고 부드러운</strong></td></tr>
-    <tr><td>가격</td><td>₩219,000</td><td><strong>₩189,000</strong></td></tr>
-    <tr><td>성격</td><td>업템포·레이싱 지향</td><td><strong>데일리 + 스피드 만능</strong></td></tr>
-  </tbody>
-</table>
-<p>공식 스택·드롭은 같지만(RunRepeat 실측은 디비4 33.6/26.6mm·7.0mm, 퓨어 37.2/27.6mm·9.6mm로 다르게 나왔습니다), <strong>플레이트 유무와 폼 구성</strong>에서 성격이 갈립니다. 퓨어는 더 가볍고 유연하며, 디비4는 더 단단하고 추진력이 있습니다.</p>
-
-<h2>누구에게 맞을까</h2>
-<ul>
-  <li><strong>✅ 추천</strong>: 카본 플레이트의 경직감이 부담스러운 러너, 데일리부터 템포까지 한 켤레로 쓰고 싶은 러너, 가벼운 슈퍼폼을 합리적 가격에 원하는 러너</li>
-  <li><strong>❌ 비추천</strong>: 탄탄하고 직접적인 피드백을 좋아하면 <a href="/shoes/puma-deviate-nitro-4">디비4</a>, 바닥감 명확한 레이싱화를 원하면 카본 레이서가 낫습니다</li>
-</ul>
-<p>"플레이트 없는 슈퍼폼 트레이너"라는 점에서 <a href="/shoes/hoka-mach-6">호카 마하 6</a>, <a href="/shoes/saucony-ride-19">사우코니 라이드 19</a>와 같은 결입니다. 카본 플레이트가 정말 필요한지 고민된다면 → <a href="/blog/carbon-plate-running-shoes-lineup-tier-guide-2026">카본 플레이트 러닝화 완벽 비교</a></p>
-
-<h2>한국 러너 관점</h2>
-<ul>
-  <li><strong>가격</strong>: 18만 9천원에 내구 추정 650km(RunRepeat 아웃솔 마모 0.7mm 반영) 기준 km당 약 291원. 슈퍼폼 트레이너 중 가성비가 좋습니다.</li>
-  <li><strong>발볼</strong>: 토박스는 RunRepeat 실측 74.0mm로 <strong>표준</strong>(랩 평균 73.2mm)이고, <strong>와이드 옵션은 없습니다</strong>(푸마 코리아 공식몰은 일반 폭만 판매). 발볼 넓은 러너는 매장 착화를 권합니다.</li>
-  <li><strong>여름</strong>: 통기성 좋은 경량 메쉬라 더운 날 데일리로 제격입니다 → <a href="/blog/summer-breathable-running-shoes-2026">여름 통기성 러닝화 TOP 10</a></li>
-</ul>
-
-<h2>한 줄 결론</h2>
-<p>디비에이트 나이트로 퓨어는 "카본이 답"이라는 흐름에 <strong>"좋은 폼이면 플레이트 없이도 충분하다"</strong>고 답하는 신발입니다. 가볍고 부드럽고 비싸지 않은, <strong>매일 신기 좋은 슈퍼폼 트레이너</strong>를 찾는다면 유력한 후보입니다. 자세한 스펙·추천 대상은 <a href="/shoes/puma-deviate-pure-nitro">디비에이트 나이트로 퓨어 상세 페이지</a>에서 확인하세요.</p>
-
-<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 스펙·가격은 푸마 공식(kr.puma.com)과 Road Trail Run 등 해외 리뷰를 종합했고, 토박스·실측 스택·내구 추정은 RunRepeat 랩 테스트(2026-09-21 게시) 기준입니다. (작성 2026-06-05 · 갱신 2026-10-23)</p>
+<p><strong>2026-11-10 원문 대조 업데이트.</strong> 제조사 공시·실험실 검체·개인 착화 의견과 한국 상품 캐시를 구분합니다. 자체 착화 후기가 아닌 원문 기반 분석입니다.</p><h2>먼저 볼 차이</h2><p>정확 퓨어의 독립 랩은 확인했습니다. 더 이상 디비4의 값을 퓨어 추정치로 사용하지 않습니다. 한국은100% PEBA·플레이트 없음을 명시합니다.</p><p>엄지 너비74mm라도 높이는23.3mm입니다. 넓이만 보고 모든 발이 편하다고 정하지 말고 발가락 위 접촉과 중족 고정을 확인할 수 있습니다.</p><figure><img src="/images/shoes/puma/deviate-pure-nitro/side.webp" alt="나이트로 퓨어 — 플레이트 없는 폼과 낮은 앞코를 확인" loading="lazy"/><figcaption>나이트로 퓨어 — 플레이트 없는 폼과 낮은 앞코를 확인</figcaption></figure><div class="table-wrap"><table><thead><tr><th>모델</th><th>무게 · 공시 출처 별도 표기</th><th>스택·드롭 · 공시 출처 별도 표기</th><th>힐/전족 SA</th><th>힐/전족 리턴</th></tr></thead><tbody><tr><td>puma-deviate-pure-nitro</td><td>215g</td><td>37.2/27.6mm · 9.6mm</td><td>141/112</td><td>68.9/72.9%</td></tr></tbody></table></div><p>표의 값은 RunRepeat 검체 또는 별도 표시한 DOR 소개 공시입니다. DOR 소개는 독립 실측이 아닙니다. 일반 정책은 남성 US9지만 개별 라벨·폭·보정 여부는 미확인입니다. 공시와 동일한 검체로 단정하지 않습니다. SA는 충격흡수, 리턴은 시험에서 반환된 에너지 비율이며 부드러움·개인 기록·임상 보호를 뜻하지 않습니다. HA는 구방식, AC는 별도 경도 척도여서 환산하지 않습니다. <a href="https://runrepeat.com/testing-methodology" target="_blank" rel="noopener noreferrer">RunRepeat 측정법</a></p><h2>플레이트가 없어도 초기 강성은 느껴질 수 있습니다</h2><p>Matt는 초기에는 뻣뻣했고 이후 매끄러워졌다고 적었습니다. 모든 러너가 즉시 유연하고 말랑하게 느낀다고 보장하지 않습니다.100마일 주행은 그의 시험 범위이며 제품 수명이 아닙니다.</p><p>DOR 소개37/29mm에 표 드롭9mm·본문8mm가 함께 있어 원문 상충을 남깁니다. 국소 고무 마모0.7mm를650km로 바꾸거나 저온 경도 변화2%로 겨울 성능이 그대로라고 보장하지 않습니다.</p><h2>나이트로 퓨어 — 핏과 주행에서 갈리는 지점</h2><p>한국 공식과 RR은 플레이트가 없다고 명시합니다. 전체 카본 부재와 중족 보강 구조를 혼동하지 않으며 이번 정확 원문으로 섕크의 재료·길이를 확정하지 않습니다.</p><p>RR 내부 최광폭 95.3mm·엄지 74mm·높이 23.3mm입니다. 너비 하나로 발등·길이·힐 고정이나 한국 와이드 적합을 보장하지 않습니다. 실제 규격·양말에서 접촉과 전환을 확인하세요.</p><p>DOR Matt(남성US10)는 낮고 테이퍼진 앞코와 늘어나는 메시·좋은 거싯 고정을 적었고 양말을 선호했습니다. 초기 뻣뻣함 뒤 전환은 매끄러워졌지만 매우 튀는 폼보다는 균형 있는 느낌이었고 데일리·훈련을 즐겼으나 레이스 선택은 아니었습니다.100마일은 개인 시험 거리입니다.</p><h2>나이트로 퓨어 — 공시·한국 판매 확인 범위</h2><p>한국220g(270mm)/180g(235mm)·38/30mm·8mm, DOR 소개213g(남성US9)/187g(여성US8)·37/29mm·표9mm와 RR215g·37.2/27.6mm·9.6mm를 나눕니다. DOR37-29는8이지만 표9·본문8의 차이를 임의 교정하지 않습니다.</p><p>한국 공식 캐시: Men 313904_22 폭 미확인 정가189,000원·판매캐시189,000원; Men 313904_23 폭 미확인 정가189,000원·판매캐시189,000원; Women 313905_02 폭 미확인 정가189,000원·판매캐시189,000원. 현재 가격·선택 재고는 미확인입니다. 판매캐시와 현재 결제가는 다를 수 있으며 글로벌 폭을 한국 판매 증거로 쓰지 않습니다.</p><p>74mm 엄지 너비와23.3mm 높이를 함께 봅니다. 저온 경도 변화2%를 겨울 성능 보장으로 바꾸지 않습니다. 한국 현재 와이드 부재·650km·km당291원·디비4보다 무조건 가성비 우위를 철회했습니다.</p><h2>구매 전에 실제로 확인할 것</h2><p>평소 양말·인솔로 앞쪽 길이와 발톱 위 공간, 끈을 조였을 때 발등 압박, 힐 고정과 칼라 마찰을 확인하세요. 발볼 너비 하나로 전체 핏을 결정하지 않습니다. 교환·반품 조건도 먼저 확인할 수 있습니다.</p><p>트레일에서는 자신의 주요 노면과 오르막·내리막·방향 전환에서 고정과 전환을 살펴야 합니다. 젖은 콘크리트 시험 하나가 바위·진흙 접지를 보장하지 않습니다. 통증·저림을 견뎌야 한다는 규칙이나 모델별 질환 예방 효과는 이번 자료로 확인하지 못했습니다.</p><h2>확인한 원문과 접근 범위</h2><ul><li><a href="https://kr.puma.com/kr/ko/pd/디비에이트-나이트로-퓨어-%3Cbr%3Edeviate-pure-nitro/313904.html?dwvar_313904_color=22" target="_blank" rel="noopener noreferrer">한국 공식 313904_22</a> — 캐시 2 weeks ago; 현재가격·선택재고 미확인.</li><li><a href="https://kr.puma.com/kr/ko/pd/디비에이트-나이트로-퓨어-%3Cbr%3Edeviate-pure-nitro/313904.html?dwvar_313904_color=23" target="_blank" rel="noopener noreferrer">한국 공식 313904_23</a> — 캐시 3 weeks ago; 현재가격·선택재고 미확인.</li><li><a href="https://kr.puma.com/kr/ko/pd/디비에이트-나이트로-퓨어-우먼스-%3Cbr%3Edeviate-pure-nitro-wns/313905.html?dwvar_313905_color=02" target="_blank" rel="noopener noreferrer">한국 공식 313905_02</a> — 캐시 5 months ago; 현재가격·선택재고 미확인.</li><li><a href="https://www.runrepeat.com/puma-deviate-pure-nitro" target="_blank" rel="noopener noreferrer">나이트로 퓨어 RR 원문</a> — 정확 모델 검체. 제조사 공시와 분리.</li><li><a href="https://www.doctorsofrunning.com/puma-deviate-pure-nitro-review-2026/" target="_blank" rel="noopener noreferrer">나이트로 퓨어 DOR 원문</a> — 소개 공시·실제 착화 사이즈·개인의견 구분.</li></ul>
 `,
+    updatedAt: "2026-11-10",
+    faqs: [
+      {
+        "question": "아직 디비4 수치로 추정한 글인가요?",
+        "answer": "아닙니다. 정확 퓨어 RR 원문을 확인해 대체했고 DOR 실제 테스트 조건도 반영했습니다."
+      },
+      {
+        "question": "650km 쓸 수 있나요?",
+        "answer": "국소 마모를 검증된 공통 수명으로 환산할 근거를 확보하지 못해 제거했습니다."
+      },
+      {
+        "question": "겨울 성능이 그대로인가요?",
+        "answer": "저온 경도 시험 하나가 겨울 개인 착화·성능·접지를 보장하지 않습니다."
+      }
+    ],
   },
   {
     id: 'chuncheon-unique-running-courses-7',
