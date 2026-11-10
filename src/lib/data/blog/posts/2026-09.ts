@@ -1455,120 +1455,57 @@ export const posts_2026_09: BlogPost[] = [
     updatedAt: "2026-11-10",
   },
   {
-    id: 'mount-to-coast-korea-launch',
-    slug: 'mount-to-coast-korea-launch',
-    title:
-      '마운트투코스트(Mount to Coast) 한국 상륙 — 서촌 플래그십 오픈, 9월 20일까지 공동구매 | 랩 데이터가 아직 어디에도 없는 신생 브랜드',
-    description:
-      '2022년 프로토타입 개발 후 2023년 ISPO Award를 수상한 퍼포먼스 러닝화 브랜드 Mount to Coast가 한국에 정식 상륙했습니다. 서울 종로구 서촌에 플래그십 스토어를 열었고 온라인 스토어(mounttocoast.co.kr)도 함께 오픈, 9월 20일(일)까지 런업TV 공동구매가 진행됩니다. C1(슈퍼트레이너)·H1(로드투트레일)·T1(롱디스턴스 트레일) 세 라인업에 가격은 199,000~239,000원입니다. 다만 무게·드롭·스택 높이 같은 랩 실측 데이터는 한국·글로벌 공식몰과 RunRepeat 어디에도 아직 게시되지 않았습니다.',
-    thumbnail: '/images/blog/mount-to-coast-korea-launch.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-09-10',
-    category: 'news' as const,
+    id: "mount-to-coast-korea-launch",
+    slug: "mount-to-coast-korea-launch",
+    title: "마운트투코스트 한국 판매 확인 — C1·H1 가격과 공개된 랩 데이터 바로잡기",
+    description: "마운트투코스트 C1·H1은 독립 랩 리뷰가 공개돼 있습니다. 국내 모델별 가격과 C1의 제조사·실측 스택 차이, 폼의 제조사 주장과 보장되지 않는 수명을 구분해 기존 안내를 수정했습니다.",
+    thumbnail: "/images/blog/verified-mount-to-coast-korea-launch-20261110.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-09-10",
+    category: "news",
     readingTime: 6,
     tags: [
-      '마운트투코스트',
-      'Mount to Coast',
-      '마운트투코스트 한국',
-      '서촌 러닝화',
-      '신생 러닝화 브랜드',
-      '러닝화 브랜드 런칭',
-      '공동구매',
-      'TUNEDFIT',
+      "마운트투코스트",
+      "Mount to Coast",
+      "마운트투코스트 한국",
+      "서촌 러닝화",
+      "신생 러닝화 브랜드",
+      "러닝화 브랜드 런칭",
+      "공동구매",
+      "TUNEDFIT"
     ],
     faqs: [
       {
-        question: '이 브랜드는 국내에서 처음 보는데, 신뢰할 만한가요?',
-        answer:
-          '한국에는 이번이 첫 진출이지만 글로벌 공식몰(mounttocoast.com) 기준 제품별로 수백 개의 소비자 리뷰가 쌓여 있어 완전히 무명은 아닙니다. 2022년 프로토타입 개발, 2023년 ISPO Award 수상 이력도 있습니다. 다만 RunRepeat 같은 제3자 랩 테스트 기관에는 아직 등록돼 있지 않아, 무게·드롭·쿠셔닝 실측치는 이 글을 쓰는 시점까지 확인할 방법이 없습니다.',
+        "question": "마운트투코스트는 아직 독립 랩 리뷰가 없나요?",
+        "answer": "현재 RunRepeat의 C1·H1 시험 원문이 공개돼 있습니다. 기존 글의 미등재·랩 데이터 없음 설명을 수정했으며 제조사 표기와 실측값을 따로 제시합니다."
       },
       {
-        question: 'C1·H1·T1은 각각 어떤 라인업인가요?',
-        answer:
-          '공식 분류 기준 C1은 "Super Trainer"(로드 데일리), H1은 "Road-to-Trail"(로드-트레일 겸용), T1은 "Long-distance Trail"(장거리 트레일)입니다. 국내 온라인 스토어에는 C1과 H1이 먼저 올라와 있고, T1은 글로벌 사이트 기준 라인업입니다.',
-      },
-      {
-        question: 'LightCELL과 CircleCELL은 같은 기술인가요?',
-        answer:
-          '다른 기술입니다. 브랜드 공식 기술 페이지 기준 LightCELL은 "EVA보다 50% 가볍고 에너지 리턴 45% 향상"에 초점을 맞춘 초임계 발포 폼이고, CircleCELL은 "재활용 유기 폐기물을 포함한 100% 재생 원료"로 만든 친환경·고내구성 폼입니다. 국내에 먼저 들어온 C1(Men White) 제품 페이지에는 CircleCELL 폼이 명시돼 있고, LightCELL은 브랜드 소개 문구에 언급된 별도 기술입니다 — 국내 출시 라인업 중 어떤 모델에 LightCELL이 쓰였는지는 이 글을 쓰는 시점까지 확인되지 않았습니다.',
-      },
-      {
-        question: '한국에서 신발 실측 데이터는 언제 나오나요?',
-        answer:
-          '아직 예정이 없습니다. 랩 실측치(무게·드롭·스택 높이·경도)가 공개되거나 RunRepeat 같은 기관이 테스트를 게시하면 이 글과 별도로 상세 리뷰를 다룰 예정입니다.',
-      },
+        "question": "제조사가 말하는 폼 수명만큼 무조건 신을 수 있나요?",
+        "answer": "폼 비교 문구를 개인의 보장 주행거리로 바꿀 수 없습니다. 신발 전체의 손상·사용 환경·착용 변화는 별도로 확인해야 합니다."
+      }
     ],
     content: `
-<div class="callout info">
-  <span class="callout-icon">🏔️</span>
-  <div class="callout-body">
-    <p class="callout-title">2022년 프로토타입, 2023년 ISPO Award — 그리고 이번 주 한국 상륙</p>
-    <p>Mount to Coast는 장거리 러닝에 뿌리를 둔 퍼포먼스 러닝화 브랜드로, 2022년 프로토타입 개발을 거쳐 2023년 ISPO Award를 수상하며 이름을 알렸습니다. 슬로건은 "For runners who transcend distance(거리를 초월하는 러너들을 위해)" — 빨리 달리는 신발보다 더 오래 달릴 수 있는 신발을 지향한다고 밝히고 있습니다.</p>
-  </div>
-</div>
+<p><strong>2026년 11월 10일 원문 대조.</strong> 제조사 표기·외부 시험·편집 제안을 구분했습니다. 직접 착용·방문한 후기는 아닙니다.</p>
 
-<p>서울 종로구 서촌(자하문로10길 25, 경복궁역 4번출구 도보 8분)에 <strong>플래그십 스토어</strong>가 문을 열었고, 온라인 스토어(<a href="https://mounttocoast.co.kr" target="_blank" rel="noopener noreferrer">mounttocoast.co.kr</a>)도 함께 오픈했습니다. <strong>9월 20일(일)까지 런업TV 공동구매 이벤트</strong>가 온라인 스토어를 통해 진행됩니다.</p>
-
-<h2>라인업 — C1·H1·T1</h2>
-
-<table>
-  <thead>
-    <tr><th>라인업</th><th>분류</th><th>가격</th></tr>
-  </thead>
-  <tbody>
-    <tr><td><strong>C1</strong></td><td>Men's / Women's Super Trainer (로드 데일리)</td><td>239,000원</td></tr>
-    <tr><td><strong>H1</strong></td><td>Men's Road-to-Trail (로드-트레일 겸용)</td><td>199,000원</td></tr>
-    <tr><td><strong>T1</strong></td><td>Long-distance Trail (장거리 트레일, 글로벌 라인업)</td><td>-</td></tr>
-  </tbody>
-</table>
-
-<p>국내 온라인 스토어에는 C1(화이트·블랙·울트라바이올렛)과 H1(조슈아 트리)이 먼저 올라와 있습니다. C1 사이즈는 250~300mm 11개 사이즈로 나옵니다.</p>
-
-<h2>두 가지 미드솔 폼 — LightCELL과 CircleCELL은 다른 기술입니다</h2>
-
-<p>브랜드 소개 문구는 "EVA보다 50% 가볍고 45% 높은 에너지 리턴을 제공하는 LightCELL™ 기술"을 내세웁니다. 그런데 국내에 먼저 들어온 <strong>C1 제품 페이지에는 LightCELL이 아니라 CircleCELL 폼</strong>이 명시돼 있습니다. 브랜드 공식 기술 페이지를 확인해보니 이 둘은 같은 기술의 다른 이름이 아니라 <strong>별개의 폼</strong>이었습니다.</p>
-
-<table>
-  <thead>
-    <tr><th>기술명</th><th>초점</th><th>설명</th></tr>
-  </thead>
-  <tbody>
-    <tr><td><strong>LightCELL™</strong></td><td>경량·반발력</td><td>질소를 주입한 초임계 발포 폼. EVA 대비 50% 가볍고 에너지 리턴 45% 향상</td></tr>
-    <tr><td><strong>CircleCELL™</strong></td><td>친환경·내구성</td><td>재활용 유기 폐기물 등 100% 재생 원료. PEBA급 에너지 리턴에 PEBA 대비 거의 2배 수명</td></tr>
-    <tr><td>JETCELL™</td><td>반발력</td><td>자동차 보호 필름에 쓰이는 폴리머에서 착안, PEBA 대비 2배 반발력(참고용 — 국내 출시 라인업 적용 여부 미확인)</td></tr>
-  </tbody>
-</table>
-
-<p>즉 국내에서 먼저 살 수 있는 C1은 CircleCELL 폼 제품이고, LightCELL이 국내 라인업 중 어디에 쓰였는지는 이 글을 쓰는 시점까지 확인되지 않았습니다. 갑피 쪽에서는 <strong>TUNEDFIT 듀얼 레이싱 시스템</strong>이 공통으로 언급됩니다 — 전족부와 중족부 레이스를 독립적으로 조절해 장거리 러닝에서 발이 붓는 불편을 줄이는 구조라고 브랜드는 설명합니다.</p>
-
-<div class="callout warning">
-  <span class="callout-icon">⚠️</span>
-  <div class="callout-body">
-    <p class="callout-title">랩 실측 데이터가 아직 없습니다</p>
-    <p><strong>무게, 드롭(heel-to-toe drop), 스택 높이, 경도 같은 실측 스펙이 한국·글로벌 공식몰 어디에도 게시돼 있지 않습니다.</strong> RunRepeat에서도 제품 페이지·브랜드 페이지 모두 검색되지 않아, 제3자 랩 테스트 역시 아직 없는 것으로 보입니다. 이 사이트는 랩 데이터가 없는 신발에 점수나 평점을 매기지 않으므로, 이 글에는 스펙 비교표나 별점을 넣지 않았습니다. 실측 데이터가 공개되면 별도 상세 리뷰로 다룰 예정입니다.</p>
-  </div>
-</div>
-
-<h2>지금까지 확인된 것</h2>
-
-<table>
-  <thead>
-    <tr><th>항목</th><th>내용</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>브랜드 연혁</td><td>2022년 프로토타입 개발 · 2023년 ISPO Award 수상</td></tr>
-    <tr><td>국내 진출</td><td>서촌 플래그십 스토어 + 온라인 스토어(mounttocoast.co.kr) 오픈</td></tr>
-    <tr><td>플래그십 위치</td><td>서울 종로구 자하문로10길 25 (경복궁역 4번출구 도보 8분)</td></tr>
-    <tr><td>공동구매</td><td>런업TV 공동구매, ~9월 20일(일), 온라인 스토어</td></tr>
-    <tr><td>라인업</td><td>C1(슈퍼트레이너) · H1(로드투트레일) · T1(롱디스턴스 트레일)</td></tr>
-    <tr><td>가격</td><td>C1 239,000원 · H1 199,000원</td></tr>
-    <tr><td>특징 기술</td><td>TUNEDFIT 듀얼 레이싱 · LightCELL·CircleCELL·JETCELL 폼(모델별 적용 상이)</td></tr>
-    <tr><td>랩 실측 스펙</td><td>미공개 (RunRepeat 등재 없음)</td></tr>
-  </tbody>
-</table>
-
-<p><small>출처: 인스타그램 계정 currererunners 게시물(2026-09-10 확인) — 브랜드 소개·기술 설명·플래그십 위치·공동구매 일정. Mount to Coast 한국 공식몰 mounttocoast.co.kr(2026-09-10 확인) — 국내 판매 제품(C1·H1)·가격·사이즈·모델번호. Mount to Coast 글로벌 공식몰 mounttocoast.com(2026-09-10 확인) — 라인업 구성(C1·H1·T1)·가격(USD)·리뷰 수. 글로벌 공식몰 기술 페이지(2026-09-10 확인) — LightCELL·CircleCELL·JETCELL 각 기술 설명. RunRepeat(2026-09-10 확인) — 제품·브랜드 페이지 모두 미등재.</small></p>
+<h2>‘랩 데이터가 없다’는 기존 안내를 수정합니다</h2>
+<p>현재 <a href="https://runrepeat.com/mount-to-coast-c-1" target="_blank" rel="noopener noreferrer">RunRepeat C1 시험</a>과 <a href="https://runrepeat.com/mount-to-coast-h-1" target="_blank" rel="noopener noreferrer">H1 시험</a>이 공개돼 있습니다. 기존 글은 브랜드·제품 리뷰가 없다고 설명했지만, 현재 확인되는 원문과 맞지 않아 수정했습니다. 제조사 공개 스펙과 외부 시험값은 각각의 조건으로 읽어야 합니다.</p>
+<h2>국내 판매 금액과 라인업</h2>
+<table><thead><tr><th>모델</th><th>국내 페이지의 분류</th><th>확인한 표시 가격</th></tr></thead><tbody><tr><td>C1</td><td>Super Trainer</td><td>239,000원</td></tr><tr><td>H1</td><td>Road-to-Trail</td><td>199,000원</td></tr><tr><td>T1</td><td>Trail</td><td>249,000원</td></tr><tr><td>M1</td><td>Trail</td><td>269,000원</td></tr></tbody></table>
+<p>원문은 <a href="https://mounttocoast.co.kr/product/c1-men-white/15/category/1/display/2/" target="_blank" rel="noopener noreferrer">국내 C1 White</a>, <a href="https://mounttocoast.co.kr/product/h1-men-joshua-tree/9/category/1/display/2/" target="_blank" rel="noopener noreferrer">국내 H1 Joshua Tree</a>, <a href="https://mounttocoast.co.kr/category/Spotlighted/24/" target="_blank" rel="noopener noreferrer">국내 라인업 목록</a>입니다. 표시 가격은 실제 사이즈별 재고·할인 적용·배송비를 보장하지 않습니다. 달러 가격을 원화로 환산해 국내 정가로 쓰지 않았습니다.</p>
+<h2>C1은 같은 모델에서도 공식과 실측을 구분</h2>
+<table><thead><tr><th>C1 항목</th><th>제조사 글로벌 표기</th><th>RunRepeat 시험</th></tr></thead><tbody><tr><td>무게</td><td>267g, US M9</td><td>272g</td></tr><tr><td>뒤꿈치 / 앞꿈치 스택</td><td>42 / 36mm</td><td>40.7 / 33.2mm</td></tr><tr><td>드롭</td><td>6mm</td><td>7.5mm</td></tr></tbody></table>
+<p><a href="https://mounttocoast.com/products/c1" target="_blank" rel="noopener noreferrer">제조사 C1 상세</a>와 외부 시험은 표기·측정 방식이 달라 같은 수치로 합치지 않았습니다. 한 켤레의 시험값만으로 모든 사이즈·생산분이 동일하다고 보장하지 않습니다. RunRepeat는 C1을 브랜드의 슈퍼트레이너 표현보다 편한 일상 주행에 가까운 모델로 평가합니다. 이는 해당 리뷰어의 판단이며 이 사이트의 착용 평가나 별점이 아닙니다.</p>
+<p>H1은 RunRepeat가 러그 깊이 1.9mm, 토박스 폭 70.1mm를 보고합니다. 로드·가벼운 트레일의 혼합 용도와 어려운 산악 지형을 구분하고, 같은 브랜드라 모든 모델의 발볼이 동일하다고 가정하지 않는 데 참고할 수 있습니다. 이 수치를 한국인 발 전체의 적합성 점수로 환산하지 않습니다.</p>
+<h2>LightCELL과 CircleCELL, 기술 주장도 조건을 남기기</h2>
+<p><a href="https://mounttocoast.com/pages/technology" target="_blank" rel="noopener noreferrer">공식 기술 소개</a>는 LightCELL의 EVA 대비 경량·에너지 리턴을 제조사 비교로 설명하고, C1은 CircleCELL과 고무화 EVA의 이중 구조로 소개합니다. 서로 다른 폼 이름을 같은 재료처럼 합치지 않습니다. CircleCELL의 재생 가능 원료 설명도 모든 원료가 같은 종류의 재활용 폐기물이라는 뜻으로 바꾸지 않습니다.</p>
+<p>폼의 ‘PEBA 대비 수명’ 같은 제조사 비교 문구는 개인이 몇 km를 달릴 수 있다는 보장 수명이 아닙니다. 시험 조건과 실제 신발 전체의 손상은 별도입니다. 근거 없는 고정 교체 거리·부상 예방 점수를 이 글에 붙이지 않습니다.</p>
+<h2>방문·구매 전 남길 확인</h2>
+<p>9월 공동구매 안내는 기간이 지난 소식입니다. 현재 혜택으로 반복하지 않습니다. 서촌 방문 주소·영업시간·시착 재고도 이번에 새로 확정하지 못했으며, 사이트 하단의 사업장 주소를 매장 위치로 간주하지 않습니다. 최종 구매 전 국내 제품 코드·사이즈·반품 조건을 함께 확인하세요.</p>
+<h2>자주 묻는 질문</h2>
+<h3>마운트투코스트는 아직 독립 랩 리뷰가 없나요?</h3><p>현재 RunRepeat의 C1·H1 시험 원문이 공개돼 있습니다. 기존 글의 미등재·랩 데이터 없음 설명을 수정했으며 제조사 표기와 실측값을 따로 제시합니다.</p>
+<h3>제조사가 말하는 폼 수명만큼 무조건 신을 수 있나요?</h3><p>폼 비교 문구를 개인의 보장 주행거리로 바꿀 수 없습니다. 신발 전체의 손상·사용 환경·착용 변화는 별도로 확인해야 합니다.</p>
 `,
+    updatedAt: "2026-11-10",
   },
   {
     id: "suunto-yupster-ultra-run-challenge-2026",

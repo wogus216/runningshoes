@@ -1955,207 +1955,55 @@ export const posts_2026_10: BlogPost[] = [
     updatedAt: "2026-11-10",
   },
   {
-    id: 'running-socks-guide-fiber-composition-2026',
-    slug: 'running-socks-guide-fiber-composition-2026',
-    title: '러닝 양말 추천 2026 | 22종 공식 혼용률로 본 4갈래 — "면 금지"는 반만 맞다',
-    description: '국내에서 파는 러닝 양말 22종(나이키·아식스·뉴발란스·브룩스·데상트·데카트론·인진지·타비오·삭스업·스마트울·단터프·쿠팡 상위 국내 제품)의 공식 혼용률을 모아 섬유 성질별로 다시 계산했습니다. 나일론·폴리에스터·면 혼방·메리노 4갈래로 갈리고, 쿠팡 상위 국내 제품은 면 70%였습니다. 소재로 알 수 있는 것과 없는 것을 나눠, 땀·물집·겨울·조이는 핏 상황별로 고르는 법을 정리했습니다.',
-    thumbnail: '/images/blog/running-socks-guide-fiber-composition-2026.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-10-09',
-    category: 'guide' as const,
-    readingTime: 9,
-    tags: ['러닝 양말 추천', '러닝 양말', '마라톤 양말', '발가락양말', '메리노 양말', '쿨맥스 양말', '러닝 양말 소재'],
+    id: "running-socks-guide-fiber-composition-2026",
+    slug: "running-socks-guide-fiber-composition-2026",
+    title: "러닝 양말 고르는 법 — 혼용률·사이즈·편직을 함께 읽는 실제 원문 예시",
+    description: "혼용률만으로 물집 예방·압박·건조 성능을 순위 매길 수 없습니다. 사이즈별 타비오 표기 차이와 데상트 상품 고시, 폴리에스터 원단 실험을 대조해 구매 확인 방법으로 다시 정리했습니다.",
+    thumbnail: "/images/blog/verified-running-socks-guide-fiber-composition-2026-20261110.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-10-09",
+    category: "guide",
+    readingTime: 6,
+    tags: [
+      "러닝 양말 추천",
+      "러닝 양말",
+      "마라톤 양말",
+      "발가락양말",
+      "메리노 양말",
+      "쿨맥스 양말",
+      "러닝 양말 소재"
+    ],
     faqs: [
-      { question: '러닝 양말은 면이 들어가면 안 되나요?', answer: '면은 폴리에스터보다 물을 훨씬 많이 머금는 섬유입니다(수분율 면 7.3% vs 폴리에스터 0.3%). 그래서 면 100% 양말을 피하라는 조언에는 근거가 있습니다. 다만 이번에 모은 러닝 양말 중 혼용률 비율이 공개된 21종에서 6종이 면을 18~70% 섞었고(나머지 1종은 비율 없이 면을 표기), 혼방 비율에 따라 실제로 얼마나 더 젖고 물집이 느는지 잰 자료는 찾지 못했습니다. 땀이 많고 물집이 잦다면 면·울 0% 쪽부터 시작하는 것이 소재 성향상 안전한 선택입니다.' },
-      { question: '메리노 양말은 여름에도 신나요?', answer: '울은 섬유 중 수분율이 가장 높아 땀을 섬유 안에 머금는 쪽입니다. 동시에 피부에 젖은 느낌을 줄 수 있다는 연구 정리도 있습니다. 여름 장거리에 맞는지 잰 자료는 이번 조사 범위에 없었습니다. 이번 22종 중 메리노는 스마트울(울 56%)·단터프(울 50%) 2종이고, 정가가 38,000~53,000원으로 가장 비싼 축입니다.' },
-      { question: '발가락양말은 왜 신나요?', answer: '발가락이 서로 닿는 면을 원단으로 나누는 구조입니다. 이번 22종 중 인진지 2종·타비오 2종·뉴발란스 1종이 발가락양말이었습니다. 물집 예방 효과를 같은 조건에서 비교한 시험 자료는 이번 조사에서 찾지 못해, 이 글은 구조와 소재만 비교했습니다.' },
-      { question: '비싼 러닝 양말이 더 좋은가요?', answer: '가격과 성능을 같은 기준으로 잰 자료가 없어 단정할 수 없습니다. 이번 22종의 1켤레 가격은 1,650원(쿠팡 판매가)부터 53,000원(정가)까지 30배 넘게 차이 났습니다. 비싼 쪽은 대체로 메리노·발가락양말·특수 기능을 내세운 제품입니다. 혼용률은 가격과 상관없이 모두 공개돼 있으니 원하는 소재 성향부터 정하고 가격을 비교하는 순서를 권합니다.' },
-      { question: '이 글의 양말을 직접 신어 보고 쓴 건가요?', answer: '아닙니다. 이 사이트는 착용 테스트를 하지 않습니다. 모든 수치는 한국 공식 판매처에 표기된 혼용률·가격·길이·두께 표기를 2026년 10월 8일 직접 확인해 옮긴 것이고, 섬유 성질은 동료심사 논문을 근거로 했습니다.' },
+      {
+        "question": "신축 섬유가 10% 넘으면 압박이 강한가요?",
+        "answer": "혼용률만으로 실제 압박 강도를 확정할 수 없습니다. 편직·두께·크기와 착용한 상태를 함께 확인해야 하며 비율을 압박압처럼 쓰지 않습니다."
+      },
+      {
+        "question": "러닝 양말에 면이 있으면 잘못된 제품인가요?",
+        "answer": "공식 러닝 상품에도 면 혼방이 확인됩니다. 면 포함 여부만으로 물집이나 건조 성능을 단정하지 않고 품번·사이즈·구조와 자신의 사용 조건을 함께 확인합니다."
+      }
     ],
     content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>고르는 기준은 혼용률 하나면 됩니다.</strong> 땀·물집이 걱정이면 면·울 0%(나일론·폴리에스터 위주), 겨울 새벽엔 울 50%대 메리노, 발을 꽉 잡아 주는 핏을 원하면 신축 섬유 10% 이상.</li>
-    <li><strong>'러닝 양말'이라는 이름이 면 없음을 보장하지 않습니다.</strong> 비율이 공개된 21종 중 6종이 면을 18~70% 섞었고, 쿠팡 '러닝양말' 상위 국내 제품은 면 70%였습니다.</li>
-    <li>착용 테스트 없이 공식 혼용률로 본 <strong>소재 성향</strong>이지 성능 순위가 아닙니다. 1켤레 가격은 1,650원(쿠팡 판매가)부터 53,000원(정가)까지 갈립니다.</li>
-  </ul>
-</div>
+<p><strong>2026년 11월 10일 원문 대조.</strong> 제조사 표기·외부 시험·편집 제안을 구분했습니다. 직접 착용·방문한 후기는 아닙니다.</p>
 
-<p>"양말이 절반이다." <a href="/blog/running-foot-care-blisters-toenails-2026">물집·발톱 가이드</a>와 <a href="/blog/fall-marathon-race-day-checklist-2026">가을 마라톤 준비물</a>에서 이렇게 적었지만, 정작 어떤 양말을 고를지는 쓰지 않았습니다. 양말에는 러닝화 같은 랩 실측이 없는 대신 <strong>법으로 표기해야 하는 숫자</strong>가 하나 있습니다. 어떤 섬유가 몇 %씩 들어갔는지 적은 <strong>혼용률</strong>입니다. 국내에서 파는 러닝 양말 22종의 혼용률을 2026년 10월 8일 공식 판매처에서 모아, 섬유 성질에 따라 4갈래로 묶었습니다.</p>
-
-<h2>내 상황부터 — 어느 갈래를 볼까</h2>
-<ul>
-  <li><strong>땀이 많고 물집이 잦다 → ①·②</strong> 면·울 0%인 합성섬유 갈래부터 보세요. 발가락 사이 물집이 잦다면 발가락양말이 구조상 대안인데, 면이 없는 건 ②의 인진지 2종이고 타비오·뉴발란스 발가락양말은 ③ 면 혼방입니다. 물집이 생기는 원인은 <a href="/blog/running-foot-care-blisters-toenails-2026">물집·발톱 가이드</a>에 있습니다.</li>
-  <li><strong>겨울 새벽 러닝 → ④</strong> 울 50%대 메리노(스마트울·단터프)가 성향상 맞습니다. 다만 한국 겨울 조건에서 잰 자료는 아닙니다.</li>
-  <li><strong>발을 꽉 잡아 주는 핏 → 신축 섬유 10% 이상</strong> 삭스업 컴프레션(15%)·어텐션 드라이 PRO(10%)가 가장 높고, 타비오 레이싱 런(1%)·뉴발란스 발가락양말(2%)이 가장 낮습니다.</li>
-  <li><strong>여러 켤레 돌려 신을 가성비 → ①</strong> 공식몰 정가 기준 가장 싼 건 데카트론 런 500(1켤레 2,650원, 나일론 94%)입니다.</li>
-  <li><strong>대회 당일 얇은 양말</strong> '얇다'고 공식 표기한 건 데카트론 파인 런 900(①)과 타비오 레이싱 런 프로(③, "기존보다 얇게") 정도였습니다. 신어 보지 않은 양말을 대회 날 처음 쓰지 않는 것이 <a href="/blog/fall-marathon-race-day-checklist-2026">준비물 체크리스트</a>의 원칙입니다.</li>
-</ul>
-<p>같은 갈래 안에서 어느 제품이 더 나은지는 판단하지 않았습니다. 혼용률로는 순위를 매길 수 없기 때문입니다(아래 '혼용률로 알 수 있는 것과 없는 것').</p>
-
-<h2>러닝 양말 22종 혼용률 지도 — 4갈래</h2>
-<p>판매처가 표기한 혼용률을 그대로 옮겨 갈래별로 나눴습니다(숫자는 %, 원문으로 검산할 수 있습니다). 가격은 1켤레 기준 정가이고 묶음은 켤레 수로 나눴습니다. <strong>신축</strong>은 폴리우레탄·스판덱스·엘라스테인·라이크라(같은 계열의 다른 이름), <strong>PP</strong>는 폴리프로필렌입니다.</p>
-<p>구매 버튼은 네이버 쇼핑 커넥트나 쿠팡에서 같은 모델을 확인한 12종에만 달았습니다(브랜드 제품은 판매가가 공식 정가의 50~115%인 것만). 나머지 10종은 두 곳에서 같은 모델을 확인하지 못해 링크가 없을 뿐, <strong>링크가 있는 제품이 더 좋은 제품이라는 뜻은 아닙니다.</strong></p>
-
-<h3>① 나일론 위주 (8종) — 나일론 50~94%, 면·울 0%</h3>
-<p>가장 많은 갈래이고 가격 폭도 가장 넓습니다. 갈래 안에서 갈리는 건 <strong>신축 섬유 비율</strong>입니다.</p>
-<table>
-  <thead><tr><th>제품 · 길이·두께 표기</th><th>1켤레 · 혼용률</th></tr></thead>
-  <tbody>
-    <tr><td><strong>데카트론 런 500</strong><br><small>2켤레 묶음 · 중목 · 두께 표기 없음</small></td><td>2,650원<br><small>나일론 94 · 신축 6</small></td></tr>
-    <tr><td><strong>데카트론 파인 런 900</strong><br><small>중목 · 얇음</small></td><td>11,900원<br><small>나일론 94 · 신축 6</small></td></tr>
-    <tr><td><strong>브룩스 고스트 크루 삭스</strong><br><small>크루 · 쿠션 강화형</small></td><td>19,900원<br><small>나일론 58 · 폴리에스터 37 · 신축 5</small></td></tr>
-    <tr><td><strong>나이키 런 라이트웨이트 크루</strong><br><small>크루 · 라이트웨이트</small></td><td>25,000원<br><small>나일론 50 · 폴리에스터 45 · 신축 5</small></td></tr>
-    <tr><td><strong>삭스업 컴프레션 러닝 크루</strong><br><small>크루 · 앞코·뒤꿈치 쿠션</small></td><td>26,000원<br><small>나일론 85 · 신축 15</small></td></tr>
-    <tr><td><strong>아식스 퍼포먼스 런 삭스 크루</strong><br><small>크루 · 두께 표기 없음</small></td><td>27,000원<br><small>나일론 87 · PP 10 · 신축 3</small></td></tr>
-    <tr><td><strong>삭스업 어텐션 드라이 PRO</strong><br><small>크루 · 앞코·뒤꿈치 쿠션</small></td><td>33,000원<br><small>나일론 56 · PP 30 · 신축 10 · 미끄럼 방지사 4</small></td></tr>
-    <tr><td><strong>아식스 메타스피드 크루 삭스 2.0</strong><br><small>크루 · 두께 표기 없음</small></td><td>35,000원<br><small>나일론 81 · PP 11 · 폴리에스터 2 · 신축 6</small></td></tr>
-  </tbody>
-</table>
-<div class="affiliate-cta">
-  <p class="affiliate-cta-label">바로 구매 — ① 갈래</p>
-  <div class="affiliate-cta-buttons">
-    <a href="https://naver.me/xcgBUIua" class="affiliate-btn naver" target="_blank" rel="nofollow sponsored noopener">
-      <span class="affiliate-btn-store">네이버</span>
-      <span class="affiliate-btn-product">삭스업 컴프레션 러닝 크루 →</span>
-    </a>
-    <a href="https://naver.me/5XcyEHYd" class="affiliate-btn naver" target="_blank" rel="nofollow sponsored noopener">
-      <span class="affiliate-btn-store">네이버</span>
-      <span class="affiliate-btn-product">삭스업 어텐션 드라이 PRO →</span>
-    </a>
-    <a href="https://link.coupang.com/a/hG9MclhCMK" class="affiliate-btn coupang" target="_blank" rel="nofollow sponsored noopener">
-      <span class="affiliate-btn-store">쿠팡</span>
-      <span class="affiliate-btn-product">나이키 런 라이트웨이트 크루 →</span>
-    </a>
-    <a href="https://link.coupang.com/a/hG9MKQfldI" class="affiliate-btn coupang" target="_blank" rel="nofollow sponsored noopener">
-      <span class="affiliate-btn-store">쿠팡</span>
-      <span class="affiliate-btn-product">아식스 퍼포먼스 런 삭스 크루 →</span>
-    </a>
-  </div>
-  <p class="affiliate-disclosure">광고 표기: 네이버 링크는 네이버 브랜드 커넥트 추적 코드가 포함되며, 일정 수수료를 받을 수 있습니다(판매처 삭스업 공식 스토어). 이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다. 가격은 바뀔 수 있습니다.</p>
-</div>
-
-<h3>② 폴리에스터 위주 (5종) — 폴리에스터 70~96%, 면·울 0%</h3>
-<p>인진지 2종의 폴리에스터는 <a href="/fabrics/coolmax">COOLMAX</a>로 표기돼 있습니다. COOLMAX는 대개 폴리에스터로 만드는 섬유 브랜드이고, 공식 문서는 성능 수치를 공개하지 않습니다.</p>
-<table>
-  <thead><tr><th>제품 · 길이·두께 표기</th><th>1켤레 · 혼용률</th></tr></thead>
-  <tbody>
-    <tr><td><strong>인진지 러너 미니크루</strong> (발가락양말)<br><small>미니크루 · 두께 표기 없음</small></td><td>14,800원<br><small>폴리에스터(COOLMAX) 70 · 나일론 25 · 신축 5</small></td></tr>
-    <tr><td><strong>인진지 러너 세미크루</strong> (발가락양말)<br><small>세미크루 · "3겹 원사"</small></td><td>15,500원<br><small>폴리에스터(COOLMAX) 75 · 나일론 20 · 신축 5</small></td></tr>
-    <tr><td><strong>데상트 러닝 크루 삭스</strong><br><small>크루 · 발바닥 쿠션</small></td><td>16,000원<br><small>폴리에스터 96 · 신축 4</small></td></tr>
-    <tr><td><strong>데상트 델타 아치서포트 크루</strong><br><small>크루 · 발가락·뒤꿈치 쿠션</small></td><td>16,000원<br><small>폴리에스터 96 · 신축 4</small></td></tr>
-    <tr><td><strong>나이키 런 미드웨이트 크루</strong><br><small>크루 · 미드웨이트</small></td><td>19,000원<br><small>폴리에스터 93 · 신축 7</small></td></tr>
-  </tbody>
-</table>
-<div class="affiliate-cta">
-  <p class="affiliate-cta-label">바로 구매 — ② 갈래</p>
-  <div class="affiliate-cta-buttons">
-    <a href="https://naver.me/xxoNbCRb" class="affiliate-btn naver" target="_blank" rel="nofollow sponsored noopener">
-      <span class="affiliate-btn-store">네이버</span>
-      <span class="affiliate-btn-product">인진지 러너 세미크루 (발가락) →</span>
-    </a>
-    <a href="https://naver.me/GFshvMC1" class="affiliate-btn naver" target="_blank" rel="nofollow sponsored noopener">
-      <span class="affiliate-btn-store">네이버</span>
-      <span class="affiliate-btn-product">인진지 러너 미니크루 (발가락) →</span>
-    </a>
-  </div>
-  <p class="affiliate-disclosure">광고 표기: 위 링크는 네이버 브랜드 커넥트 추적 코드가 포함되며, 일정 수수료를 받을 수 있습니다. 판매처는 아웃도어 판매점 에어마운틴이고 가격은 바뀔 수 있습니다.</p>
-</div>
-
-<h3>③ 면 혼방 (7종) — 면 18~70%</h3>
-<p>면 비율이 낮은 순서입니다. 타비오 2종은 면과 함께 리오셀(텐셀 계열)도 섞었습니다. 왜 이 갈래를 따로 봐야 하는지는 바로 아래 "면 금지는 반만 맞다"에 있습니다.</p>
-<table>
-  <thead><tr><th>제품 · 길이·두께 표기</th><th>1켤레 · 혼용률</th></tr></thead>
-  <tbody>
-    <tr><td><strong>타비오 레이싱 런 프로</strong> (발가락양말)<br><small>"기존보다 얇게" · 길이 표기 없음</small></td><td>38,000원<br><small>나일론 40 · 폴리에스터 28 · 면 18 · 리오셀 8 · 신축 6</small></td></tr>
-    <tr><td><strong>브룩스 아드레날린 삭스</strong><br><small>길이·두께 표기 없음</small></td><td>12,900원<br><small>폴리에스터 74 · 면 22 · 신축 4</small></td></tr>
-    <tr><td><strong>뉴발란스 드라이쿨 논슬립 크루</strong><br><small>크루 · 두께 표기 없음 · 면은 바닥면에 사용(공식 표기)</small></td><td>19,900원<br><small>폴리에스터 55 · 면 42 · 신축 3</small></td></tr>
-    <tr><td><strong>타비오 레이싱 런</strong> (발가락양말)<br><small>길이·두께 표기 없음</small></td><td>32,000원<br><small>면 44 · 폴리에스터 35 · 리오셀 12 · 나일론 7 · 신축 1 (공식 표기 합계 99)</small></td></tr>
-    <tr><td><strong>뉴발란스 러닝 발가락양말</strong><br><small>길이·두께 표기 없음</small></td><td>19,900원<br><small>면 49 · 폴리에스터 48 · 신축 2 · 나일론 1</small></td></tr>
-    <tr><td><strong>탑브로 러닝 중목 쿠션</strong><br><small>6켤레 묶음 · 쿠팡 '러닝양말' 3위 · 중목 · 쿠션</small></td><td>1,650원*<br><small>면 70 · 폴리에스터·나일론 27(합산 표기) · 신축 3</small></td></tr>
-    <tr><td><strong>라이프모아 삼중 쿠션 장목</strong><br><small>7켤레 묶음 · 쿠팡 '러닝양말' 4위 · 장목 · 삼중 쿠션</small></td><td>약 2,257원*<br><small>비율 미표기 — "폴리에스터, 면, 스판덱스"</small></td></tr>
-  </tbody>
-</table>
-<p class="caption">*쿠팡 상품은 표시 할인 전 가격 대신 2026년 10월 8일 판매가를 켤레 수로 나눴습니다.</p>
-<div class="affiliate-cta">
-  <p class="affiliate-cta-label">바로 구매 — ③ 갈래</p>
-  <div class="affiliate-cta-buttons">
-    <a href="https://link.coupang.com/a/hG9NWlvexw" class="affiliate-btn coupang" target="_blank" rel="nofollow sponsored noopener">
-      <span class="affiliate-btn-store">쿠팡</span>
-      <span class="affiliate-btn-product">타비오 레이싱 런 프로 (발가락) →</span>
-    </a>
-    <a href="https://link.coupang.com/a/hG9NkqlL88" class="affiliate-btn coupang" target="_blank" rel="nofollow sponsored noopener">
-      <span class="affiliate-btn-store">쿠팡</span>
-      <span class="affiliate-btn-product">타비오 레이싱 런 (발가락) →</span>
-    </a>
-    <a href="https://link.coupang.com/a/hG9OvABlQa" class="affiliate-btn coupang" target="_blank" rel="nofollow sponsored noopener">
-      <span class="affiliate-btn-store">쿠팡</span>
-      <span class="affiliate-btn-product">탑브로 러닝 중목 쿠션 6켤레 →</span>
-    </a>
-    <a href="https://link.coupang.com/a/hG9O7iQD2O" class="affiliate-btn coupang" target="_blank" rel="nofollow sponsored noopener">
-      <span class="affiliate-btn-store">쿠팡</span>
-      <span class="affiliate-btn-product">라이프모아 삼중 쿠션 장목 7켤레 →</span>
-    </a>
-  </div>
-  <p class="affiliate-disclosure">광고 표기: 이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다. 쿠팡 판매가는 바뀔 수 있습니다.</p>
-</div>
-
-<h3>④ 메리노 (2종) — 울 50~56%</h3>
-<p>나머지는 대부분 나일론이고, 정가 38,000~53,000원으로 22종 중 가장 비쌉니다. 울은 땀을 섬유 안에 흡수하는 쪽이라 ①·② 합성섬유 양말과 성향이 정반대입니다. 울이 젖었을 때 열을 내는 성질(흡습발열)과, 관련 연구 상당수가 울 업계 지원을 받았다는 사실은 <a href="/fabrics/merino-wool">메리노 울 원단 해설</a>에 정리했습니다.</p>
-<table>
-  <thead><tr><th>제품 · 길이·두께 표기</th><th>1켤레 · 혼용률</th></tr></thead>
-  <tbody>
-    <tr><td><strong>단터프 런 쿼터</strong><br><small>쿼터 · 초경량+쿠션</small></td><td>38,000원<br><small>메리노 울 50 · 나일론 45 · 신축 5</small></td></tr>
-    <tr><td><strong>스마트울 애슬리트 에디션 런 크루</strong><br><small>크루 · 부분 쿠션 · 확인 당일 37,000원 할인 판매</small></td><td>53,000원<br><small>메리노 울 56 · 나일론 41(재생 나일론 29 포함) · 신축 3</small></td></tr>
-  </tbody>
-</table>
-<div class="affiliate-cta">
-  <p class="affiliate-cta-label">바로 구매 — ④ 갈래</p>
-  <div class="affiliate-cta-buttons">
-    <a href="https://naver.me/Fz8ijJpA" class="affiliate-btn naver" target="_blank" rel="nofollow sponsored noopener">
-      <span class="affiliate-btn-store">네이버</span>
-      <span class="affiliate-btn-product">스마트울 애슬리트 에디션 런 크루 →</span>
-    </a>
-    <a href="https://link.coupang.com/a/hG9KcuUKwm" class="affiliate-btn coupang" target="_blank" rel="nofollow sponsored noopener">
-      <span class="affiliate-btn-store">쿠팡</span>
-      <span class="affiliate-btn-product">단터프 런 쿼터 →</span>
-    </a>
-  </div>
-  <p class="affiliate-disclosure">광고 표기: 네이버 링크는 네이버 브랜드 커넥트 추적 코드가 포함되며, 일정 수수료를 받을 수 있습니다(판매처 아웃도어 판매점 고캠프). 이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다. 가격은 바뀔 수 있습니다.</p>
-</div>
-
-<h2>"면 금지"는 반만 맞다</h2>
-<p>러닝 양말 조언에서 가장 흔한 말이 "면 양말은 피하라"입니다. 면은 폴리에스터보다 물을 약 24배 더 머금는 섬유라, <strong>면 100% 양말을 피하라는 조언에는 근거가 있습니다.</strong></p>
-<p>그런데 위 ③ 갈래처럼 비율이 공개된 21종 중 <strong>6종이 면을 18~70% 섞은 러닝 양말</strong>이었습니다. 러닝 브랜드인 뉴발란스·브룩스, 레이싱 양말을 내세운 타비오도 포함되고, 쿠팡 '러닝양말' 상위 국내 제품 탑브로는 <strong>면 70%</strong>였습니다. '러닝 양말'이라는 이름만으로는 면이 없다고 볼 수 없다는 뜻입니다. 다만 면 혼방 비율에 따라 실제로 얼마나 더 젖고 물집이 느는지 잰 자료는 찾지 못해, 혼방이 나쁘다고 단정하지는 않습니다. 땀이 많다면 상세페이지의 혼용률을 먼저 확인하는 습관이면 충분합니다.</p>
-
-<h2>혼용률로 알 수 있는 것과 없는 것</h2>
-<p>4갈래는 섬유가 공기 중 수분을 얼마나 흡수하는지를 나타내는 <strong>수분율</strong>로 나눴습니다.</p>
-<ul>
-  <li><a href="/fabrics/polyester">폴리에스터</a> <strong>0.3%</strong>, 면 <strong>7.3%</strong>(Abdul-Bari 외, 2020). 리오셀(텐셀 계열)은 약 <strong>11%</strong>입니다(Islam 외, 2023 리뷰).</li>
-  <li><a href="/fabrics/merino-wool">울</a>은 섬유 가운데 수분율이 가장 높고, 수분을 흡수하면 피부에 젖은 느낌을 줄 수 있다고 정리돼 있습니다(Nasrin 외, 2023 리뷰).</li>
-  <li><a href="/fabrics/nylon">나일론</a>과 폴리프로필렌의 수분율은 1차 자료로 확인하지 못했습니다. 그래서 나일론은 따로 갈래를 두고, 성질은 단정하지 않았습니다.</li>
-</ul>
-<p>하지만 <strong>혼용률만으로는 성능 순위를 매길 수 없습니다.</strong></p>
-<ul>
-  <li><strong>편직 구조가 결과를 바꿉니다.</strong> 당뇨 양말 연구를 모은 체계적 문헌고찰에서 파일(테리) 편직 양말이 싱글저지 편직 양말보다 두껍고 무겁고 수분을 더 머금었습니다(Venkatraman 외, 2026).</li>
-  <li><strong>가공이 결과를 바꿉니다.</strong> 같은 폴리에스터 원단이 친수 처리 전에는 물이 퍼지는 데 312초, 처리 후에는 68초가 걸렸습니다(Pauly 외, 2025). 혼용률에는 이런 가공이 드러나지 않습니다.</li>
-  <li><strong>두께·쿠션 표기가 없는 제품이 많습니다.</strong> 위 표의 '두께 표기 없음'이 그 경우입니다. 같은 혼용률이라도 두께가 다르면 신는 느낌이 달라집니다.</li>
-  <li><strong>근거 없이 적힌 수치는 회사 주장으로만 옮깁니다.</strong> 데상트 "충격을 30% 이상 흡수", 삭스업 "면보다 56배 빠른 땀 배출", 타비오 "한쪽 무게 약 30% 감소"는 시험 조건이나 근거가 상세페이지에 없었습니다.</li>
-</ul>
-
-<div class="callout warning"><strong>조사 범위와 한계</strong> — 2026년 10월 8일, 한국 공식 판매처(브랜드 공식몰·공식 수입원)와 쿠팡 '러닝양말' 검색 상위 국내 제품의 상품정보 고시에서 혼용률·가격·길이·두께 표기를 옮겼습니다. 대상은 러닝화 브랜드 6곳, 양말 전문·메리노 브랜드 5곳, 쿠팡 상위 국내 브랜드 2곳입니다. 쿠팡 순위는 기본 정렬('쿠팡 랭킹순', 기준 비공개)이고 광고 표시 상품은 뺐습니다. 쿠팡 검색 1위 미즈노 플레이 더블 쿠션은 상품 페이지에서 혼용률을 찾지 못해 표에서 뺐습니다. <strong>착용 테스트·자체 시험은 하지 않았습니다.</strong> 가격과 재고는 할인·품절로 바뀝니다. 인진지 한국 공식 스토어 제품은 상세 이미지에 '제조국 대한민국'으로 적힌 국내 생산품이고 미국 본사와의 관계는 확인하지 못했습니다. 스마트울 판매처가 공식 수입원인지는 추정 단계입니다. 나이키는 '스파크' 라인을 한국 공식몰에서 찾지 못해 현재 판매 중인 '런' 라인으로 대신했고, 런 미드웨이트의 혼용률은 그래픽 색상 상품에서 확인한 값입니다.</div>
-
-<h2>출처와 확인 범위</h2>
-<ul>
-  <li>혼용률·가격·길이·두께: 나이키 코리아·아식스코리아·뉴발란스 코리아(nbkorea.com)·브룩스러닝 코리아·데상트(DK 온라인스토어)·데카트론 코리아·인진지코리아 공식 스토어·타비오 한국 공식 총판·삭스업 공식몰·스마트울 한국 판매처·단터프 공식 수입원(호상사) 상품 페이지, 쿠팡 상품정보 고시 — 2026년 10월 8일 확인. 일부는 상세 이미지에서 판독했습니다.</li>
-  <li><a href="https://doi.org/10.1177/0040517520914411" target="_blank" rel="noopener noreferrer">Abdul-Bari 외 (2020), Textile Research Journal</a> — 폴리에스터 0.3%·면 7.3% 수분율.</li>
-  <li><a href="https://doi.org/10.3390/textiles3040024" target="_blank" rel="noopener noreferrer">Islam, Golovin, Dolez (2023), Textiles 3(4)</a> — 리오셀 수분율 약 11%. CC BY.</li>
-  <li><a href="https://doi.org/10.3390/textiles3030022" target="_blank" rel="noopener noreferrer">Nasrin 외 (2023), Textiles 3(3)</a> — 울의 수분율과 젖은 느낌. CC BY.</li>
-  <li><a href="https://doi.org/10.1002/dmrr.70138" target="_blank" rel="noopener noreferrer">Venkatraman 외 (2026), Diabetes/Metabolism Research and Reviews 42</a> — 파일(테리) 편직 양말과 싱글저지 양말 비교.</li>
-  <li><a href="https://doi.org/10.3390/fib13080103" target="_blank" rel="noopener noreferrer">Pauly 외 (2025), Fibers 13(8):103</a> — 같은 폴리에스터 원단의 친수 처리 전후 312초 vs 68초. CC BY 4.0.</li>
-</ul>
+<h2>혼용률은 시작점이지 성능 점수가 아닙니다</h2>
+<p>같은 이름의 러닝 양말도 사이즈·품번·입고 시기별 혼용률이 다를 수 있습니다. 먼저 원문에서 구매할 품번과 사이즈를 맞추세요. 합성섬유 비중이나 신축 섬유 10% 같은 숫자만으로 건조 속도·압박 강도·물집 발생률을 확정하지 않습니다.</p>
+<h2>실제로 다시 읽은 세 상품 표기</h2>
+<table><thead><tr><th>공식 페이지의 제품·사이즈</th><th>게시된 혼용률</th><th>읽을 때 주의</th></tr></thead><tbody><tr><td>Tabio Racing Run 071120035, 21~23cm</td><td>면44·폴리에스터35·재생섬유13·나일론7·폴리우레탄1%</td><td>일본 공식 상품의 해당 사이즈</td></tr><tr><td>Tabio Racing Run 072121046, 29~31cm</td><td>면44·폴리에스터35·재생섬유12·나일론8·폴리우레탄1%</td><td>같은 제품군이어도 세부 비율이 다름</td></tr><tr><td>데상트 러닝 크루 SR123RSO14</td><td>폴리에스터96·폴리우레탄4%</td><td>공식 고시의 색상별 표기·입고 차이 확인</td></tr></tbody></table>
+<p>출처는 <a href="https://tabio.com/products/071120035" target="_blank" rel="noopener noreferrer">Tabio 21~23cm</a>, <a href="https://tabio.com/products/072121046" target="_blank" rel="noopener noreferrer">Tabio 29~31cm</a>, <a href="https://m.dk-on.com/product/SR123RSO14/PNK0" target="_blank" rel="noopener noreferrer">DK 공식 상품 고시</a>입니다. Tabio의 재생섬유는 원문의 데오셀 표기를 요약한 것이며 임의로 국내 다른 상품의 리오셀 함량과 같다고 간주하지 않습니다. 일본 가격을 환산해 한국 판매가로 넣지 않았습니다.</p>
+<p>두 Tabio 예시는 모두 합계 100%입니다. 기존 표의 99%를 보고 특정 섬유를 임의로 1% 올리는 방식으로 맞추지 않았습니다. 동일한 국내 유통 품번과 사이즈가 확인되지 않으면 이 일본 표기를 국내 전 제품의 성분으로 확정할 수도 없습니다. DK도 입고 시기와 실제 라벨을 대조하라고 명시합니다.</p>
+<h2>빨리 마르는지는 편직 구조와 시험 조건도 봅니다</h2>
+<p><a href="https://www.mdpi.com/2079-6439/13/8/103" target="_blank" rel="noopener noreferrer">Pauly 등의 2025년 원단 실험</a>은 폴리에스터 단일저지 원단 8종에서 실과 편직 구조에 따른 물 퍼짐·건조 차이를 관찰합니다. 원료가 같은 폴리에스터여도 결과가 달랐다는 점이 핵심입니다. 이는 원단 실험이며 위 완제품 양말들의 물집 예방 효과나 성능 순위를 시험한 자료는 아닙니다.</p>
+<p>공기 중 수분율, 젖은 원단의 흡수량, 땀의 이동, 실제 건조시간은 서로 다른 측정입니다. 면의 수분율을 폴리에스터와 나눈 값만으로 ‘러닝 중 24배 더 젖는다’거나 ‘면 혼방이면 물집이 생긴다’고 설명하지 않습니다. 신축 섬유 비율 역시 실제 압박압을 뜻하지 않습니다.</p>
+<h2>사는 순서: 라벨 다음 실제 신발 안에서 확인</h2>
+<ol><li><strong>품번·사이즈·색상:</strong> 구매 페이지와 소재 라벨의 대상이 같은지 확인합니다.</li><li><strong>형태:</strong> 길이·두께·발바닥 쿠션·발가락 분리·봉제선 위치를 확인합니다.</li><li><strong>평소 신발과 조합:</strong> 양말 주름, 발가락 압박, 뒤꿈치 밀림, 발목 밴드 눌림을 살핍니다. 편안함은 개인 확인 사항입니다.</li><li><strong>익숙한 짧은 러닝에서 비교:</strong> 거리·신발·환경을 비슷하게 두고 젖는 느낌과 마찰 부위를 메모합니다. 대회 날 새 양말을 처음 쓰는 선택은 피하는 편집 제안입니다.</li><li><strong>세탁:</strong> 완제품 라벨의 세탁·건조 방법을 따릅니다. 모든 소재에 같은 고온 건조 조건을 적용하지 않습니다.</li></ol>
+<h2>기존 22종 표와 구매 링크의 처리</h2>
+<p>22종의 현재 동일 품번·한국 유통 모델·가격·재고를 모두 재확정하지 못했습니다. 따라서 이번에는 이를 검증된 최신 추천표나 최저가 순위로 유지하지 않고, 직접 다시 읽은 원문 예시와 고르는 절차로 바꿨습니다. 기존 제휴 구매 링크도 이 표의 근거와 혼동되지 않도록 본문에서 제외했습니다. 이번 예시는 착용 시험·비교 순위·임상적 예방 보장을 제공하지 않습니다.</p>
+<h2>자주 묻는 질문</h2>
+<h3>신축 섬유가 10% 넘으면 압박이 강한가요?</h3><p>혼용률만으로 실제 압박 강도를 확정할 수 없습니다. 편직·두께·크기와 착용한 상태를 함께 확인해야 하며 비율을 압박압처럼 쓰지 않습니다.</p>
+<h3>러닝 양말에 면이 있으면 잘못된 제품인가요?</h3><p>공식 러닝 상품에도 면 혼방이 확인됩니다. 면 포함 여부만으로 물집이나 건조 성능을 단정하지 않고 품번·사이즈·구조와 자신의 사용 조건을 함께 확인합니다.</p>
 `,
+    updatedAt: "2026-11-10",
   },
   {
     id: "asics-gel-slowcush-korea-launch-2026",
