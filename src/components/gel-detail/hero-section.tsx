@@ -56,7 +56,7 @@ export function HeroSection({ gel }: HeroSectionProps) {
     <section className="section-card border border-[var(--accent-line)] bg-white/88 p-4 md:p-6 lg:p-8">
       <div className="grid md:grid-cols-2 gap-4 md:gap-6 lg:gap-10">
         {/* 이미지 */}
-        <div className="flex items-center justify-center rounded-[4px] bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.98),rgba(226,240,252,0.92))] p-6 md:p-8">
+        <figure className="flex flex-col items-center justify-center rounded-[4px] bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.98),rgba(226,240,252,0.92))] p-6 md:p-8">
           {gel.image ? (
             <Image
               src={img(gel.image)}
@@ -71,7 +71,17 @@ export function HeroSection({ gel }: HeroSectionProps) {
               <Zap className="w-16 h-16 opacity-20" />
             </div>
           )}
-        </div>
+          {gel.imageCaption && (
+            <figcaption className="mt-4 text-xs leading-relaxed text-secondary">
+              {gel.imageCaption}
+              {gel.imageSource && (
+                <a href={gel.imageSource.url} target="_blank" rel="noopener noreferrer" className="ml-1 underline">
+                  {gel.imageSource.title}
+                </a>
+              )}
+            </figcaption>
+          )}
+        </figure>
 
         {/* 젤 정보 */}
         <div className="flex flex-col justify-center">
@@ -125,8 +135,8 @@ export function HeroSection({ gel }: HeroSectionProps) {
           {gel.purchaseLinks && gel.purchaseLinks.length > 0 && (
             <div className="flex flex-wrap gap-2 mb-4">
               {gel.purchaseLinks.map((link, i) => (
+                <div key={i} className="max-w-sm">
                 <a
-                  key={i}
                   href={link.url}
                   target="_blank"
                   rel="noopener noreferrer nofollow"
@@ -135,6 +145,8 @@ export function HeroSection({ gel }: HeroSectionProps) {
                   {link.store}에서 구매
                   <ExternalLink className="w-3.5 h-3.5" />
                 </a>
+                {link.note && <p className="mt-1 text-xs leading-relaxed text-secondary">{link.note}</p>}
+                </div>
               ))}
             </div>
           )}

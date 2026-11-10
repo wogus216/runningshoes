@@ -142,7 +142,7 @@ export default async function GelDetailPage({ params }: GelDetailPageProps) {
     '@type': 'Product',
     'name': `${gel.brand} ${gel.name}`,
     'description': gel.description,
-    'image': `${SITE_URL}${gel.image || DEFAULT_OG_IMAGE}`,
+    'image': gel.image ? `${SITE_URL}${gel.image}` : DEFAULT_OG_IMAGE,
     'brand': {
       '@type': 'Brand',
       'name': gel.brand,
@@ -159,7 +159,7 @@ export default async function GelDetailPage({ params }: GelDetailPageProps) {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(productJsonLd) }} />
+      {!gel.isProductCategory && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(productJsonLd) }} />}
 
       <div className="space-y-4">
         {/* 브레드크럼 */}

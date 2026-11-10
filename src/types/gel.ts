@@ -97,6 +97,8 @@ export interface PurchaseLink {
   store: string;
   url: string;
   price?: number;
+  priceCheckedAt?: string;
+  note?: string;
   isOfficial?: boolean;
 }
 
@@ -109,6 +111,9 @@ export interface Gel {
   rating?: number;             // 1-5
   image?: string;
   images?: string[];
+  imageCaption?: string;
+  imageSource?: { title: string; url: string };
+  isProductCategory?: boolean;
   price?: number;             // 개당 가격 (원)
 
   // 기본 설명
