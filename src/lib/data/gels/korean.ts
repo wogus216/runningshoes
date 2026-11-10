@@ -6,7 +6,7 @@ export const koreanGels: Gel[] = [
     slug: "up-energy-gel",
     brand: "UP",
     name: "얼티밋 포텐셜",
-    category: "스테디셀러",
+    category: "젤 제품",
     description: "UP 공식몰은 40g 러닝에너지젤을 카페인형과 프리형으로 구분합니다. 제품명과 포장을 먼저 확인해야 합니다.",
     tags: [
       "제품 표시 확인"
@@ -97,7 +97,7 @@ export const koreanGels: Gel[] = [
     slug: "aminovital-amino-shot",
     brand: "아미노바이탈",
     name: "아미노샷",
-    category: "스테디셀러",
+    category: "젤 제품",
     description: "아미노샷 43g과 퍼펙트에너지 45g은 성분이 다른 제품입니다. 현재 항목의 정확한 국내 포장부터 확인해야 합니다.",
     tags: [
       "제품 표시 확인"
@@ -186,7 +186,7 @@ export const koreanGels: Gel[] = [
     slug: "enup-power-gel",
     brand: "엔업",
     name: "En-up 파워젤",
-    category: "스테디셀러",
+    category: "젤 제품",
     description: "엔업 파워젤은 정확한 맛과 포장의 원료·영양성분 확인이 필요한 45g 제품군입니다. 팔라티노스만 들어간 제품으로 단정하지 않습니다.",
     tags: [
       "제품 표시 확인"
@@ -269,7 +269,7 @@ export const koreanGels: Gel[] = [
     slug: "magon-energy-gel",
     brand: "마그온",
     name: "Mag-on 에너지젤",
-    category: "스테디셀러",
+    category: "젤 제품",
     description: "Mag-on 에나지젤은 제조사 표시상 41g에 120kcal·탄수화물30g·마그네슘50mg인 제품군입니다. 카페인·염분은 맛마다 다릅니다.",
     tags: [
       "제품 표시 확인"

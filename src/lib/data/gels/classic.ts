@@ -6,7 +6,7 @@ export const classicGels: Gel[] = [
     slug: "gu-roctane-energy-gel",
     brand: "GU",
     name: "Roctane Energy Gel",
-    category: "가성비",
+    category: "젤 제품",
     description: "GU Roctane은 공식 소개상 100kcal 제품군입니다. 탄수화물·나트륨·카페인은 맛별 표시를 확인해야 합니다.",
     tags: [
       "제품 표시 확인"
@@ -101,7 +101,7 @@ export const classicGels: Gel[] = [
     slug: "kolon-perfect-power-gel",
     brand: "코오롱제약",
     name: "퍼펙트 파워젤",
-    category: "가성비",
+    category: "젤 제품",
     description: "공식 청포도40g 제품 표시는 탄수화물25g·나트륨10mg입니다. 꿀홍삼·아이스블루의 성분을 이 값으로 통일하지 마세요.",
     tags: [
       "제품 표시 확인"
@@ -195,7 +195,7 @@ export const classicGels: Gel[] = [
     slug: "k-yanggang",
     brand: "K-양갱",
     name: "양갱 (팥/밤)",
-    category: "가성비",
+    category: "식품군",
     description: "양갱은 제조사·팥/밤·중량에 따라 표시가 다른 식품입니다. 특정 제품이 정해지지 않은 이 항목에 대표 영양 수치를 적용하지 않습니다.",
     tags: [
       "제품 표시 확인"
@@ -269,7 +269,7 @@ export const classicGels: Gel[] = [
     slug: "yohemite-energy-gel",
     brand: "요헤미티",
     name: "에너지 젤 파워젤",
-    category: "가성비",
+    category: "젤 제품",
     description: "요헤미티 기본 에너지젤은 공식몰에서 메이플 수액 기반·무카페인으로 안내합니다. 카페인110 제품과 구분하세요.",
     tags: [
       "제품 표시 확인"
@@ -369,7 +369,7 @@ export const classicGels: Gel[] = [
     slug: "onyourmark-energy-gel",
     brand: "온유어마크",
     name: "에너지젤",
-    category: "가성비",
+    category: "젤 제품",
     description: "온유어마크 공식 안내는 에너지젤1박스10포·무카페인으로 표시합니다. 현재 맛·포장의 영양표 대조가 더 필요합니다.",
     tags: [
       "제품 표시 확인"
@@ -467,7 +467,7 @@ export const classicGels: Gel[] = [
     slug: "sportsix-energy-gel",
     brand: "스포식스",
     name: "에너지젤",
-    category: "가성비",
+    category: "젤 제품",
     description: "뉴케어 스포식스 기본 에너지젤은45g 제품군입니다. 제조사는 카페인이 포함된다고 안내하므로 무카페인 제품으로 취급하지 마세요.",
     tags: [
       "제품 표시 확인"

@@ -2,7 +2,7 @@
 // 에너지 젤 타입 정의
 // ============================================
 
-export type GelCategory = '프리미엄' | '스테디셀러' | '가성비';
+export type GelCategory = '젤 제품' | '식품군';
 export type GelType = 'hydrogel' | 'isotonic' | 'standard' | 'natural' | 'solid' | 'unknown';
 export type GILevel = 'excellent' | 'good' | 'moderate' | 'poor' | 'unknown';
 export type OsmolalityBasis = 'measured' | 'estimated' | 'brand_claim' | 'unknown';
@@ -201,7 +201,7 @@ export type SimilarGelInfo = {
 // 상수
 // ============================================
 
-export const gelCategoryOrder: GelCategory[] = ['프리미엄', '스테디셀러', '가성비'];
+export const gelCategoryOrder: GelCategory[] = ['젤 제품', '식품군'];
 
 export const gelBrandList = [
   'Maurten',

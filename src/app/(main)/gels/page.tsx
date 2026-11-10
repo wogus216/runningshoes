@@ -9,20 +9,21 @@ import { img } from '@/lib/image';
 export function generateMetadata(): Metadata {
   // 종수는 데이터에서 산출한다 — 메타에 카운트를 하드코딩하면 젤이 늘고 줄 때 조용히 틀려진다
   const count = getGels().length;
+  const productCount = getGels().filter((gel) => !gel.isProductCategory).length;
+  const categoryCount = count - productCount;
 
   return {
     // 사이트명은 app/layout.tsx 의 title.template(`%s | ${SITE_NAME}`)이 붙인다 — 여기서 또 붙이면 두 번 나온다
-    title: '에너지 젤 리뷰 | 마라톤 에너지 젤 비교 분석',
-    description: `마라톤·러닝용 에너지 젤 ${count}종 비교 분석. Maurten, SiS, GU, 양갱까지 프리미엄·스테디셀러·가성비 3개 카테고리. 위장 안정성, 탄수화물 과학, 가성비 기준으로 한국 러너 관점에서 평가.`,
+    title: '에너지 젤·보급식 정보 | 제품 표시와 변형 비교',
+    description: `젤 제품 ${productCount}종과 식품군 안내 ${categoryCount}개를 구분해 소개합니다. 제품별 성분 표시·맛·카페인 변형·사진 출처와 확인하지 못한 항목을 상세 페이지에서 확인하세요.`,
     keywords: '에너지 젤, 마라톤 에너지 젤, 에너지 젤 추천, 에너지 젤 비교, 양갱, Maurten, GU, SiS, 마라톤 보급식, 위장 안정성',
     alternates: { canonical: '/gels' },
   };
 }
 
 const categoryDescriptions: Record<string, { emoji: string; desc: string }> = {
-  '프리미엄': { emoji: '🏆', desc: '기록 경신을 위한 최첨단 에너지 젤' },
-  '스테디셀러': { emoji: '⭐', desc: '한국 러너들이 검증한 인기 제품' },
-  '가성비': { emoji: '💰', desc: '훈련과 입문에 최적인 가격대' },
+  '젤 제품': { emoji: '🧴', desc: '제품별 성분 표시·맛·용량·카페인 변형을 구분하세요.' },
+  '식품군': { emoji: '🍽️', desc: '특정 제조사·제품이 정해지지 않은 안내입니다. 실제 구매한 제품의 표시를 확인하세요.' },
 };
 
 export default function GelsPage() {
@@ -32,26 +33,14 @@ export default function GelsPage() {
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'ItemList',
-    name: '마라톤 에너지 젤 비교 분석',
-    description: `마라톤·러닝용 에너지 젤 ${allGels.length}종 비교 분석`,
+    name: '에너지 젤·보급식 정보 목록',
+    description: '젤 제품별 정보와 식품군 안내의 상세 페이지 목록',
     numberOfItems: allGels.length,
     itemListElement: allGels.map((gel, index) => ({
       '@type': 'ListItem',
       position: index + 1,
-      item: {
-        '@type': 'Product',
-        name: `${gel.brand} ${gel.name}`,
-        description: gel.description,
-        url: `${SITE_URL}/gels/${gel.slug}`,
-        image: gel.image ? `${SITE_URL}${gel.image}` : undefined,
-        brand: { '@type': 'Brand', name: gel.brand },
-        offers: {
-          '@type': 'Offer',
-          priceCurrency: 'KRW',
-          price: gel.price,
-          availability: 'https://schema.org/InStock',
-        },
-      },
+      name: `${gel.brand} ${gel.name}`,
+      url: `${SITE_URL}/gels/${gel.slug}`,
     })),
   };
 
@@ -65,10 +54,11 @@ export default function GelsPage() {
       {/* 헤더 */}
       <div className="text-center py-8">
         <h1 className="text-3xl md:text-4xl font-bold text-primary mb-3">
-          에너지 젤 리뷰
+          에너지 젤·보급식 정보
         </h1>
         <p className="text-secondary max-w-2xl mx-auto">
-          마라톤·러닝용 에너지 젤 {allGels.length}종을 탄수화물 과학, 위장 안정성, 한국 러너 관점에서 분석했습니다.
+          젤 제품 {allGels.filter((gel) => !gel.isProductCategory).length}종과 식품군 안내를 구분했습니다.
+          제품별 성분·사진의 출처와 변형, 확인하지 못한 항목은 상세 페이지에서 확인하세요.
         </p>
       </div>
 

@@ -3,7 +3,7 @@ import { premiumGels } from './premium';
 import { koreanGels } from './korean';
 import { classicGels } from './classic';
 
-export const gelCategoryOrder: GelCategory[] = ['프리미엄', '스테디셀러', '가성비'];
+export const gelCategoryOrder: GelCategory[] = ['젤 제품', '식품군'];
 
 export const gels: Gel[] = [
   ...premiumGels,

@@ -6,7 +6,7 @@ export const premiumGels: Gel[] = [
     slug: "maurten-gel-100",
     brand: "Maurten",
     name: "Gel 100",
-    category: "프리미엄",
+    category: "젤 제품",
     description: "글로벌 Gel 100은 40g 한 포에 탄수화물 25g을 담은 제품입니다. Gel 100 Caf 100과 구분해 확인하세요.",
     tags: [
       "제품 표시 확인"
@@ -104,7 +104,7 @@ export const premiumGels: Gel[] = [
     slug: "sis-beta-fuel",
     brand: "SiS",
     name: "Beta Fuel",
-    category: "프리미엄",
+    category: "젤 제품",
     description: "SiS BETA Fuel은 한 포 탄수화물 40g과 말토덱스트린:과당 1:0.8을 안내하는 제품군입니다. 전해질·카페인 변형의 표시를 별도로 확인하세요.",
     tags: [
       "제품 표시 확인"
@@ -201,7 +201,7 @@ export const premiumGels: Gel[] = [
     slug: "226ers-high-energy",
     brand: "226ERS",
     name: "High Energy Gel",
-    category: "프리미엄",
+    category: "젤 제품",
     description: "HIGH ENERGY GEL 76g은 제조사가 한 포 탄수화물 50g을 안내하는 제품군입니다. XS 45g·카페인·BCAA·SALTY 변형은 구분해야 합니다.",
     tags: [
       "제품 표시 확인"
