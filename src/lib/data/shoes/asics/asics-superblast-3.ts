@@ -6,6 +6,8 @@ export const shoe: Shoe = {
     slug: "asics-superblast-3",
     brand: "Asics",
     name: "슈퍼블라스트 3",
+    imageCaption: "슈퍼블라스트 3 공식 제품 사진(1013A177-400)입니다. 사진의 품번·색상과 구매할 성별·폭·옵션을 구분하세요.",
+    imageSource: {"title":"ASICS 공식 원본 사진","url":"https://images.asics.com/is/image/asics/1013A177_400_SR_RT_GLB?wid=1040&hei=1040&fmt=png-alpha"},
     image: "/images/shoes/asics/superblast3/side.webp",
     images: [
       "/images/shoes/asics/superblast3/side.webp",

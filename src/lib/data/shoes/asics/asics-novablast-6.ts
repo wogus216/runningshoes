@@ -6,6 +6,8 @@ export const shoe: Shoe = {
     slug: "asics-novablast-6",
     brand: "Asics",
     name: "노바블라스트 6",
+    imageCaption: "노바블라스트 6 공식 제품 사진(1011C243-250)입니다. 사진의 품번·색상과 구매할 성별·폭·옵션을 구분하세요.",
+    imageSource: {"title":"ASICS 공식 원본 사진","url":"https://images.asics.com/is/image/asics/1011C243_250_SR_RT_GLB?wid=1040&hei=1040&fmt=png-alpha"},
     image: "/images/shoes/asics/novablast6/side.webp",
     images: [
       "/images/shoes/asics/novablast6/side.webp",

@@ -6,7 +6,9 @@ export const shoe: Shoe = {
   slug: 'asics-gel-nimbus-28',
   brand: 'Asics',
   name: '젤 님버스 28',
-  image: '/images/shoes/asics/gel_Nimbus28.webp',
+  imageCaption: "젤 님버스 28 공식 제품 사진(1011C127-100)입니다. 사진의 품번·색상과 구매할 성별·폭·옵션을 구분하세요.",
+  imageSource: {"title":"ASICS 공식 원본 사진","url":"https://images.asics.com/is/image/asics/1011C127_100_SR_RT_GLB?wid=1040&hei=1040&fmt=png-alpha"},
+  image: '/images/shoes/asics/nimbus28/side.webp',
   images: [
     '/images/shoes/asics/nimbus28/side.webp',
     '/images/shoes/asics/nimbus28/front.webp',

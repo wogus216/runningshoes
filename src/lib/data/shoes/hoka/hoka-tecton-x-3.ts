@@ -6,6 +6,8 @@ export const shoe: Shoe = {
   slug: 'hoka-tecton-x-3',
   brand: 'Hoka',
   name: '테크톤 X 3',
+  imageCaption: "테크톤 X 3 공식 제품 사진(1155112-BHKB)입니다. 사진의 품번·색상과 구매할 성별·폭·옵션을 구분하세요.",
+  imageSource: {"title":"HOKA 공식 원본 사진","url":"https://dms.deckers.com/hoka/image/upload/1155112-BHKB_1.png"},
   image: '/images/shoes/hoka/tectonx3/side.webp',
   images: [
     '/images/shoes/hoka/tectonx3/side.webp',

@@ -6,6 +6,8 @@ export const shoe: Shoe = {
     slug: "hoka-speedgoat-7",
     brand: "Hoka",
     name: "스피드고트 7",
+    imageCaption: "스피드고트 7 공식 제품 사진(1171928-FNTN)입니다. 사진의 품번·색상과 구매할 성별·폭·옵션을 구분하세요.",
+    imageSource: {"title":"HOKA 공식 원본 사진","url":"https://dms.deckers.com/hoka/image/upload/1171928-FNTN_1.png"},
     image: "/images/shoes/hoka/speedgoat7/side.webp",
     images: [
       "/images/shoes/hoka/speedgoat7/side.webp",

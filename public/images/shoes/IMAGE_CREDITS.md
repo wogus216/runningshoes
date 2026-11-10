@@ -387,3 +387,20 @@ On 4종은 11월 11일 확인한 공식 품번의 현재 갤러리입니다. Nik
 | 어질리티 피크 6 남성 BLACK | [상품 2891](https://merrellkorea.co.kr/product/detail.html?product_no=2891) | `/images/shoes/merrell/agility-peak-6/side.webp`, `/images/shoes/merrell/agility-peak-6/angle.webp`, `/images/shoes/merrell/agility-peak-6/back.webp`, `/images/shoes/merrell/agility-peak-6/top.webp`, `/images/shoes/merrell/agility-peak-6/outsole.webp` |
 | 트레일 글러브 8 남성 BLACK | [상품 2904](https://merrellkorea.co.kr/product/detail.html?product_no=2904) | `/images/shoes/merrell/trail-glove-8/side.webp`, `/images/shoes/merrell/trail-glove-8/angle.webp`, `/images/shoes/merrell/trail-glove-8/back.webp`, `/images/shoes/merrell/trail-glove-8/top.webp`, `/images/shoes/merrell/trail-glove-8/outsole.webp` |
 | MTL 스피드아크 피크 공용 BLACK | [상품 3071](https://merrellkorea.co.kr/product/detail.html?product_no=3071) | `/images/shoes/merrell/mtl-speedarc-peak/side.webp`, `/images/shoes/merrell/mtl-speedarc-peak/angle.webp`, `/images/shoes/merrell/mtl-speedarc-peak/back.webp`, `/images/shoes/merrell/mtl-speedarc-peak/top.webp`, `/images/shoes/merrell/mtl-speedarc-peak/outsole.webp` |
+
+## 2026-11-11 ASICS·HOKA·Under Armour 8종 공식 이미지 재대조
+
+기존 사진 41장을 공식 CDN의 동일 품번·각도 사진과 대조했습니다. 아래 품번은 사진의 식별 기준이며 현재 한국 판매 옵션·가격·재고의 근거가 아닙니다. 젤 님버스28 대표 사진과 관련 블로그 1편은 출처가 대조된 `nimbus28/side.webp`로 통일했습니다. 이미지 파일 자체는 변경하지 않았습니다.
+
+| 모델 | 사진 품번 | 공식 원본 | 대조 파일 수 |
+|---|---|---|---|
+| asics-gel-kayano-33 | 1011C167-100 | [공식 측면 원본](https://images.asics.com/is/image/asics/1011C167_100_SR_RT_GLB?wid=1040&hei=1040&fmt=png-alpha) | 5 |
+| asics-gel-nimbus-28 | 1011C127-100 | [공식 측면 원본](https://images.asics.com/is/image/asics/1011C127_100_SR_RT_GLB?wid=1040&hei=1040&fmt=png-alpha) | 5 |
+| asics-novablast-6 | 1011C243-250 | [공식 측면 원본](https://images.asics.com/is/image/asics/1011C243_250_SR_RT_GLB?wid=1040&hei=1040&fmt=png-alpha) | 5 |
+| asics-superblast-3 | 1013A177-400 | [공식 측면 원본](https://images.asics.com/is/image/asics/1013A177_400_SR_RT_GLB?wid=1040&hei=1040&fmt=png-alpha) | 6 |
+| hoka-speedgoat-7 | 1171928-FNTN | [공식 측면 원본](https://dms.deckers.com/hoka/image/upload/1171928-FNTN_1.png) | 5 |
+| hoka-tecton-x-3 | 1155112-BHKB | [공식 측면 원본](https://dms.deckers.com/hoka/image/upload/1155112-BHKB_1.png) | 5 |
+| under-armour-velociti-elite-2 | 3027205-102 | [공식 측면 원본](https://underarmour.scene7.com/is/image/Underarmour/3027205-102_DEFAULT?wid=1600&fmt=png-alpha) | 5 |
+| under-armour-infinite-elite-2 | 3028169-001 | [공식 측면 원본](https://underarmour.scene7.com/is/image/Underarmour/3028169-001_DEFAULT?wid=1600&fmt=png-alpha) | 5 |
+
+ASICS 뷰는 SR_RT_GLB·SB_FR_GLB·SB_BK_GLB·SB_FL_GLB·SB_BT_GLB·SB_TP_GLB, HOKA 뷰는 1·3·5·4·7, Under Armour 뷰는 DEFAULT·A·PAIR·TOE·SOLE을 해당 파일과 대조했습니다. 이전 수집 기록의 가공 이력은 유지합니다.

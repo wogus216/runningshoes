@@ -6,6 +6,8 @@ export const shoe: Shoe = {
   slug: 'asics-gel-kayano-33',
   brand: 'Asics',
   name: '젤 카야노 33',
+  imageCaption: "젤 카야노 33 공식 제품 사진(1011C167-100)입니다. 사진의 품번·색상과 구매할 성별·폭·옵션을 구분하세요.",
+  imageSource: {"title":"ASICS 공식 원본 사진","url":"https://images.asics.com/is/image/asics/1011C167_100_SR_RT_GLB?wid=1040&hei=1040&fmt=png-alpha"},
   image: '/images/shoes/asics/kayano33/side.webp',
   images: [
     '/images/shoes/asics/kayano33/side.webp',

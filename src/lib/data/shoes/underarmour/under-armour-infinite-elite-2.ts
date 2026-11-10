@@ -6,6 +6,8 @@ export const shoe: Shoe = {
     slug: "under-armour-infinite-elite-2",
     brand: "Under Armour",
     name: "인피니트 엘리트 2",
+    imageCaption: "인피니트 엘리트 2 공식 제품 사진(3028169-001)입니다. 사진의 품번·색상과 구매할 성별·폭·옵션을 구분하세요.",
+    imageSource: {"title":"Under Armour 공식 원본 사진","url":"https://underarmour.scene7.com/is/image/Underarmour/3028169-001_DEFAULT?wid=1600&fmt=png-alpha"},
     image: "/images/shoes/underarmour/infinite-elite-2/side.webp",
     images: [
       "/images/shoes/underarmour/infinite-elite-2/side.webp",
