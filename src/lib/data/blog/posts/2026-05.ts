@@ -6538,305 +6538,40 @@ export const posts_2026_05: BlogPost[] = [
 `,
   },
   {
-    id: '2026-heavy-runner-running-shoes',
-    slug: '2026-heavy-runner-running-shoes',
-    title: '2026 과체중 러너를 위한 러닝화 추천 TOP 10 | 80kg+ 러너의 무릎·발목을 지키는 쿠션·안정성·내구성 기준',
-    description: '체중 80kg 이상 러너는 착지 충격이 체중의 3~5배까지 올라가 일반 러너용 신발로는 부상 위험이 높습니다. 95종 러닝화 DB에서 ① 스택 36mm 이상 충분한 쿠션, ② 안정화 또는 넓은 베이스, ③ 600km 이상 내구성을 갖춘 10종을 가격대별·체형별로 정리했습니다. Bondi 9·Glycerin Max부터 가성비 860 v15까지.',
-    thumbnail: '/images/blog/2026-heavy-runner-running-shoes.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-05-11',
-    category: 'guide' as const,
-    readingTime: 12,
-    tags: ['과체중 러너', '러닝화 추천', '쿠션화', '안정화', '무릎 보호', '발목 보호', '맥스 쿠션', '가이드'],
+    id: "2026-heavy-runner-running-shoes",
+    slug: "2026-heavy-runner-running-shoes",
+    title: "체중이 많이 나가는 러너의 신발 선택 —80kg 순위보다 쿠션·고정·불편 위치",
+    description: "체중80kg을 신발 처방 기준으로 삼지 않습니다.848명 쿠션 연구의 대상·무거운 하위그룹 결과와 실제 구매 확인 질문을 구분했습니다.",
+    thumbnail: "/images/shoes/asics/gel_Nimbus28.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-05-11",
+    category: "guide",
+    readingTime: 7,
+    tags: [
+      "러닝화 선택",
+      "체중",
+      "쿠션",
+      "핏",
+      "연구 범위"
+    ],
     content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li>체중 80kg+ 러너의 착지 충격은 체중의 3~5배(240~400kg) — <strong>일반 러너용 220~260g 경량화는 부상 직행</strong></li>
-    <li>선택 기준 3가지: ① <strong>힐 스택 36mm 이상</strong> 쿠션, ② <strong>안정화/넓은 베이스</strong> 또는 가이드레일, ③ <strong>아웃솔 600km+</strong> 내구성</li>
-    <li>1순위 추천: <a href="/shoes/hoka-bondi-9">Hoka Bondi 9</a>·<a href="/shoes/brooks-glycerin-max-2">Glycerin Max 2</a>·<a href="/shoes/asics-gel-nimbus-28">Nimbus 28</a> — 가성비는 <a href="/shoes/new-balance-860-v15">NB 860 v15</a></li>
-  </ul>
-</div>
-
-<div class="callout warning">
-  <span class="callout-icon">⚠️</span>
-  <div class="callout-body">
-    <p class="callout-title">먼저 — 이 글의 "과체중" 정의</p>
-    <p>이 글은 의학적 비만이 아니라 <strong>러닝 기준 체중 부담군</strong>을 다룹니다. 남성 80kg+ / 여성 65kg+ 또는 BMI 25 이상이면서 러닝을 시작하거나 주간 30km 이상 뛰는 분이 대상입니다. 본인 체중이 작더라도 무릎 통증·족저근막염 이력이 있다면 같은 기준으로 신발을 골라야 합니다.</p>
-  </div>
-</div>
-
-<h2>왜 과체중 러너는 신발이 다른 기준이어야 하나</h2>
-
-<p>러닝 중 한 발이 지면에 닿는 순간, <strong>충격력은 체중의 3~5배까지</strong> 올라갑니다. 일반 조깅 페이스(6:00/km)에서도 80kg 러너의 한 걸음 충격은 240~400kg. 이게 1km에 평균 1,400~1,600번 반복됩니다. 같은 거리를 뛰어도 60kg 러너 대비 누적 충격은 33% 이상 큽니다.</p>
-
-<p>이 차이가 신발에서 가장 먼저 드러나는 게 <strong>미드솔 압축률</strong>입니다. 일반 220g 경량 트레이너의 미드솔은 60kg 러너에게는 적절한 반발을 주지만, 80kg+ 러너에게는 <strong>바닥까지 눌려(bottoming out)</strong> 쿠션 기능을 잃습니다. 충격이 무릎·정강이·족저근막에 직접 전달돼 부상으로 이어집니다.</p>
-
-<h3>과체중 러너용 신발 3대 선택 기준</h3>
-
-<table>
-  <thead>
-    <tr><th>기준</th><th>최소값</th><th>이유</th></tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>힐 스택 높이</strong></td>
-      <td>36mm 이상 (가능하면 40mm+)</td>
-      <td>두꺼운 폼이 바닥까지 눌리는 걸 막아 쿠션 기능을 유지. 일반 트레이너 28~32mm로는 부족</td>
-    </tr>
-    <tr>
-      <td><strong>안정성 / 베이스 폭</strong></td>
-      <td>안정화(가이드레일) 또는 베이스 112mm+</td>
-      <td>체중이 클수록 측면 흔들림이 커지고 발목 염좌·과내전 위험 증가. 넓은 베이스가 좌우 안정을 잡아줌</td>
-    </tr>
-    <tr>
-      <td><strong>아웃솔 내구성</strong></td>
-      <td>600km 이상</td>
-      <td>체중 비례로 미드솔·아웃솔 마모가 가속. 일반 400~500km 신발은 300km에서 쿠션 사망</td>
-    </tr>
-  </tbody>
-</table>
-
-<div class="callout info">
-  <span class="callout-icon">💡</span>
-  <div class="callout-body">
-    <p class="callout-title">카본 플레이트 슈퍼슈즈는 추천하지 않습니다</p>
-    <p>Vaporfly·Adios Pro 같은 카본화는 ① 폼이 너무 부드러워 80kg+ 체중에서 바닥까지 눌리고, ② 마일리지 400km(레이서는 100km)로 가성비가 나쁘고, ③ 강한 로커가 아킬레스 부하를 증가시킵니다. 과체중 러너가 카본화로 입문하면 <strong>족저근막염·아킬레스건염 발병률이 2배 이상</strong>이라는 보고가 있습니다.</p>
-  </div>
-</div>
-
-<h2>가격대별 TOP 10 — 과체중 러너 우선순위 순</h2>
-
-<div class="stat-grid">
-  <div class="stat-card accent">
-    <span class="stat-label">맥스 쿠션 1순위</span>
-    <span class="stat-value">Bondi 9</span>
-    <span class="stat-sub">229,000원 / 303g</span>
-  </div>
-  <div class="stat-card">
-    <span class="stat-label">최강 쿠션</span>
-    <span class="stat-value">Glycerin Max 2</span>
-    <span class="stat-sub">249,000원 / 318g</span>
-  </div>
-  <div class="stat-card">
-    <span class="stat-label">균형형 1위</span>
-    <span class="stat-value">Nimbus 28</span>
-    <span class="stat-sub">199,000원 / 281g</span>
-  </div>
-  <div class="stat-card">
-    <span class="stat-label">안정화 1위</span>
-    <span class="stat-value">Kayano 32</span>
-    <span class="stat-sub">199,000원 / 295g</span>
-  </div>
-</div>
-
-<h3>1위. <a href="/shoes/hoka-bondi-9">Hoka Bondi 9</a> — 과체중 러너의 정답</h3>
-
-<p><strong>가격 229,000원 · 무게 303g · 힐 스택 43mm · 평점 5.0</strong></p>
-
-<p>호카가 처음부터 "맥스 쿠션 카테고리"를 만든 모델의 9세대. 힐 스택 43mm + 메타로커 지오메트리가 체중을 분산시켜 <strong>80~100kg 러너에게도 무릎 충격을 최소화</strong>합니다. 전작 대비 SuperCritical EVA 폼으로 업그레이드되어 무거웠던 쿠션감이 더 부드러워졌습니다.</p>
-
-<ul>
-  <li><strong>적합:</strong> 체중 80kg+ 입문~중급, 무릎 통증 이력, 7:00~6:00/km 데일리 페이스</li>
-  <li><strong>주의:</strong> 토박스 표준(73mm) — 발볼 매우 넓으면 와이드(2E) 권장</li>
-</ul>
-
-<h3>2위. <a href="/shoes/brooks-glycerin-max-2">Brooks Glycerin Max 2</a> — 최대 쿠션 + 흔들림 방지</h3>
-
-<p><strong>가격 249,000원 · 무게 318g · 평점 4.0</strong></p>
-
-<p>Glycerin 시리즈 최상위. DNA Tuned 폼(<strong>힐 12% 더 부드럽고 / 전족부 25% 더 반응적</strong>인 듀얼 셀 구조)이 과체중 러너의 두 가지 니즈를 동시에 만족시킵니다. 318g으로 무겁지만 그만큼 안정적이며, 베이스가 넓어 측면 흔들림이 거의 없습니다.</p>
-
-<ul>
-  <li><strong>적합:</strong> 체중 85kg+, 장거리(15km+) 추천, 발에 안정감을 원하는 러너</li>
-  <li><strong>주의:</strong> 가격 부담, 빠른 페이스(5:00/km 이하)에는 적합하지 않음</li>
-</ul>
-
-<h3>3위. <a href="/shoes/asics-gel-nimbus-28">Asics Gel-Nimbus 28</a> — 균형형 1위</h3>
-
-<p><strong>가격 199,000원 · 무게 281g · 평점 4.5</strong></p>
-
-<p>FF Blast Max 미드솔 + PureGel 힐 인서트의 조합. <strong>맥스 쿠션 중 가장 가볍고(281g)</strong> 한국 러너 베스트셀러. 토박스가 73mm로 표준이라 발볼 보통 러너에게 무난하고, 와이드(2E) 옵션도 정식 출시.</p>
-
-<ul>
-  <li><strong>적합:</strong> 체중 75~95kg, 데일리부터 하프마라톤까지 다목적, 가성비 우선</li>
-  <li><strong>주의:</strong> 안정성은 중성(neutral) — 심한 과내전이면 카야노 32로</li>
-</ul>
-
-<h3>4위. <a href="/shoes/asics-gel-kayano-32">Asics Gel-Kayano 32</a> — 안정화 1순위</h3>
-
-<p><strong>가격 199,000원 · 무게 295g · 안정화 · 평점 4.0</strong></p>
-
-<p>과체중 + 평발 + 과내전 트리플 조합 러너에게 최우선. 4D Guidance System이 발이 안쪽으로 무너지는 걸 잡아주고, FF Blast Plus Eco 폼이 충분한 쿠션을 제공합니다. 같은 199,000원에 안정화 카테고리에서는 거의 무적.</p>
-
-<ul>
-  <li><strong>적합:</strong> 체중 80kg+ + 평발/과내전, 발목 안쪽으로 굴러가는 러너, 부상 이력 多</li>
-  <li><strong>주의:</strong> 295g으로 묵직 — 가벼운 신발 좋아하면 다른 옵션</li>
-</ul>
-
-<h3>5위. <a href="/shoes/new-balance-1080-v15">New Balance 1080 v15</a> — 와이드 옵션 최강</h3>
-
-<p><strong>가격 209,000원 · 무게 261g · 힐 스택 40mm · 평점 4.9</strong></p>
-
-<p>v14 대비 약 24g 경량화(285→261g)에도 힐 스택은 40mm 유지. Infinion(질소 주입 슈퍼크리티컬 폼)이 가벼우면서도 충분한 쿠션 제공. <strong>2E·4E 와이드 옵션이 정식 출시</strong>되는 거의 유일한 맥스 쿠션이라 발볼 넓은 한국 러너 1순위.</p>
-
-<ul>
-  <li><strong>적합:</strong> 체중 75~90kg + 발볼 넓음, 가벼운 쿠션화를 원하는 러너</li>
-  <li><strong>주의:</strong> 안정성 6/10 — 과내전이면 860 v15가 정답</li>
-</ul>
-
-<h3>6위. <a href="/shoes/brooks-glycerin-22">Brooks Glycerin 22</a> — 가성비 쿠션화</h3>
-
-<p><strong>가격 209,000원 · 무게 293g · 평점 5.0</strong></p>
-
-<p>Glycerin Max 2의 동생 모델. 같은 DNA Loft v3 폼을 사용하면서 4만원 저렴. 318g→293g으로 더 가볍고, 쿠션감은 90% 이상 유지됩니다. <strong>처음 과체중 러너용 신발을 사보는 러너</strong>에게 진입 부담이 가장 낮은 선택지.</p>
-
-<ul>
-  <li><strong>적합:</strong> 첫 쿠션화 입문, 체중 75~85kg, 주 3~4회 데일리</li>
-  <li><strong>주의:</strong> Glycerin Max 2 대비 안정감 약간 떨어짐 — 흔들리는 느낌 있으면 GTS(안정화 버전)로</li>
-</ul>
-
-<h3>7위. <a href="/shoes/saucony-triumph-23">Saucony Triumph 23</a> — 슈퍼크리티컬 폼 최경량</h3>
-
-<p><strong>가격 199,000원 · 무게 272g · 평점 4.0</strong></p>
-
-<p>PWRRUN PB 슈퍼크리티컬 폼이 <strong>맥스 쿠션 중에서도 반발력이 좋은 편</strong>. 272g으로 이 카테고리에서 가벼운 편이라 6:00/km 페이스도 부담 없이 소화합니다. 와이드 옵션 정식 출시.</p>
-
-<ul>
-  <li><strong>적합:</strong> 체중 75~85kg + 페이스도 챙기고 싶은 러너, 하프마라톤 도전</li>
-  <li><strong>주의:</strong> 쿠션감은 Bondi·Glycerin Max보다 얇음 — 100% 푹신함 우선이면 다른 선택</li>
-</ul>
-
-<h3>8위. <a href="/shoes/on-cloudmonster-3">On Cloudmonster 3</a> — 디자인 + 클라우드텍 폼</h3>
-
-<p><strong>가격 229,000원 · 무게 295g · 평점 4.5</strong></p>
-
-<p>On의 시그니처 CloudTec 폼 14개가 큰 사이즈로 적용된 모델. <strong>탱탱한 반발과 푹신한 쿠션이 동시에</strong> 느껴지는 독특한 착화감. 일상화 디자인으로도 좋아 출퇴근 겸용으로 한 켤레로 쓰기 좋습니다.</p>
-
-<ul>
-  <li><strong>적합:</strong> 체중 75~90kg, 출퇴근 + 러닝 겸용, 패션도 신경 쓰는 러너</li>
-  <li><strong>주의:</strong> On 특유의 빈 공간(클라우드)이 작은 돌 끼이는 경우 있음, 평발에는 비추</li>
-</ul>
-
-<h3>9위. <a href="/shoes/mizuno-wave-sky-9">Mizuno Wave Sky 9</a> — 안정형 쿠션</h3>
-
-<p><strong>가격 189,000원 · 평점 4.0</strong></p>
-
-<p>Mizuno Enerzy 폼 + Wave 플레이트가 만드는 <strong>"부드럽지만 흔들리지 않는"</strong> 착화감. 미즈노 특유의 안정감이 과체중 러너의 측면 흔들림을 잘 잡아줍니다. 가격이 18만원대로 합리적.</p>
-
-<ul>
-  <li><strong>적합:</strong> 체중 80kg+ + 평발·과내전 약간, 한국 마라톤 대회에서 자주 보이는 미즈노 라인업 좋아하는 러너</li>
-  <li><strong>주의:</strong> 토박스 좁은 편(RunRepeat 랩 70.4mm) — 발볼 넓으면 와이드 버전 선택</li>
-</ul>
-
-<h3>10위. <a href="/shoes/new-balance-860-v15">New Balance 860 v15</a> — 가성비 안정화</h3>
-
-<p><strong>가격 189,000원 · 무게 330g · 안정화 · 평점 4.5</strong></p>
-
-<p>안정화 카테고리에서 <strong>가성비 최강</strong>. 330g으로 무거운 편이지만 그만큼 묵직한 안정성을 제공. 한쪽 사이드에 Stability Plane이 적용돼 평발 러너의 안쪽 무너짐을 잡습니다. 4E 와이드 옵션 출시.</p>
-
-<ul>
-  <li><strong>적합:</strong> 체중 85kg+ + 평발 + 발볼 넓음 + 예산 20만원 이하</li>
-  <li><strong>주의:</strong> 330g은 진짜 무겁습니다 — 입문 단계가 아니라면 페이스 트레이닝용으로는 부적합</li>
-</ul>
-
-<h2>한눈에 비교</h2>
-
-<table>
-  <thead>
-    <tr><th>순위</th><th>모델</th><th>가격</th><th>무게</th><th>스택</th><th>카테고리</th><th>와이드</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>1</td><td><strong>Hoka Bondi 9</strong></td><td>229,000원</td><td>303g</td><td>43mm</td><td>쿠션화</td><td>2E</td></tr>
-    <tr><td>2</td><td><strong>Glycerin Max 2</strong></td><td>249,000원</td><td>318g</td><td>43mm</td><td>쿠션화</td><td>없음</td></tr>
-    <tr><td>3</td><td><strong>Nimbus 28</strong></td><td>199,000원</td><td>278g</td><td>39.5mm</td><td>쿠션화</td><td>2E</td></tr>
-    <tr><td>4</td><td><strong>Kayano 32</strong></td><td>199,000원</td><td>295g</td><td>40mm</td><td>안정화</td><td>2E</td></tr>
-    <tr><td>5</td><td><strong>NB 1080 v15</strong></td><td>209,000원</td><td>255g</td><td>37mm</td><td>쿠션화</td><td>2E·4E</td></tr>
-    <tr><td>6</td><td><strong>Glycerin 22</strong></td><td>209,000원</td><td>293g</td><td>38mm</td><td>쿠션화</td><td>2E</td></tr>
-    <tr><td>7</td><td><strong>Triumph 23</strong></td><td>199,000원</td><td>272g</td><td>37mm</td><td>쿠션화</td><td>2E</td></tr>
-    <tr><td>8</td><td><strong>Cloudmonster 3</strong></td><td>229,000원</td><td>295g</td><td>34mm</td><td>쿠션화</td><td>없음</td></tr>
-    <tr><td>9</td><td><strong>Wave Sky 9</strong></td><td>189,000원</td><td>295g</td><td>40mm</td><td>쿠션화</td><td>2E</td></tr>
-    <tr><td>10</td><td><strong>NB 860 v15</strong></td><td>189,000원</td><td>332g</td><td>40mm</td><td>안정화</td><td>2E·4E</td></tr>
-  </tbody>
-</table>
-
-<h2>본인 상황별 최종 추천</h2>
-
-<table>
-  <thead>
-    <tr><th>이런 러너라면</th><th>1순위 추천</th><th>2순위</th></tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>입문 + 체중 80~90kg + 발볼 보통</strong></td>
-      <td>Hoka Bondi 9</td>
-      <td>Asics Nimbus 28</td>
-    </tr>
-    <tr>
-      <td><strong>체중 90kg+ + 무릎 통증 이력</strong></td>
-      <td>Brooks Glycerin Max 2</td>
-      <td>Hoka Bondi 9</td>
-    </tr>
-    <tr>
-      <td><strong>평발 + 과내전 + 체중 80kg+</strong></td>
-      <td>Asics Gel-Kayano 32</td>
-      <td>NB 860 v15</td>
-    </tr>
-    <tr>
-      <td><strong>발볼 넓은 한국 러너</strong></td>
-      <td>NB 1080 v15 (4E)</td>
-      <td>NB 860 v15 (4E)</td>
-    </tr>
-    <tr>
-      <td><strong>예산 20만원 이하</strong></td>
-      <td>Mizuno Wave Sky 9</td>
-      <td>NB 860 v15</td>
-    </tr>
-    <tr>
-      <td><strong>출퇴근 + 러닝 1켤레</strong></td>
-      <td>On Cloudmonster 3</td>
-      <td>Asics Nimbus 28</td>
-    </tr>
-  </tbody>
-</table>
-
-<h2>구매 전 체크리스트</h2>
-
-<div class="callout success">
-  <span class="callout-icon">✅</span>
-  <div class="callout-body">
-    <p class="callout-title">신발 사기 전 5가지 확인</p>
-    <ol>
-      <li><strong>본인 발볼 측정</strong> — 자 들고 평발 위로 가장 넓은 부분 측정. 100mm+면 와이드 옵션 필수</li>
-      <li><strong>평발 여부 확인</strong> — 젖은 발로 종이에 발자국. 안쪽 아치가 안 나오면 평발 → 안정화 카테고리</li>
-      <li><strong>오후 5시 이후 신어보기</strong> — 발이 가장 부어 있는 시간. 매장 방문 시간 조절</li>
-      <li><strong>러닝 양말 신고 신어보기</strong> — 평소 신는 양말 두께로 핏 확인. 사이즈 0.5 차이가 결과를 좌우</li>
-      <li><strong>30일 환불 정책 확인</strong> — 호카·브룩스·아식스는 30일 시범 착화 후 환불 가능 매장 있음</li>
-    </ol>
-  </div>
-</div>
-
-<h2>1켤레로 시작한다면</h2>
-
-<p>10종 다 보면 결정이 더 어렵죠. 산초 에디터 결론은 두 가지로 압축합니다.</p>
-
-<ol>
-  <li><strong>첫 신발이고 발볼 보통이면 → <a href="/shoes/hoka-bondi-9">Hoka Bondi 9</a> 229,000원.</strong> 맥스 쿠션 카테고리의 정답 — 힐 SA 146 충격흡수에 41mm 힐 스택, 123.2mm 광폭 플랫폼(RunRepeat 실측).</li>
-  <li><strong>평발 + 발볼 넓은 한국 러너면 → <a href="/shoes/asics-gel-kayano-32">Asics Gel-Kayano 32 (와이드)</a> 199,000원.</strong> 평발·과내전 + 한국인 발 모두 잡는 거의 유일한 글로벌 안정화.</li>
-</ol>
-
-<p>본인 발에 맞는 신발을 1분 진단으로 좁혀보고 싶다면 <a href="/recommend">맞춤 러닝화 추천</a>을 활용하세요. 발볼 넓은 한국인 전용 가이드는 <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국인을 위한 러닝화 추천 TOP 10</a>, 무릎 통증 있다면 <a href="/blog/knee-pain-running-shoes">무릎 통증 러너를 위한 러닝화 선택법</a>도 함께 참고.</p>
-
-<div class="callout info">
-  <span class="callout-icon">🏃</span>
-  <div class="callout-body">
-    <p class="callout-title">러닝 + 체중 감량을 동시에 노린다면</p>
-    <p>과체중 상태에서 무리한 러닝은 부상 직행입니다. 시작은 <strong>걷기 5분 + 조깅 1분</strong> 반복 10세트로 잡고, 주 3회·30분 페이스 6:30~7:30/km를 8주간 유지한 뒤 거리를 늘리세요. 신발은 위 추천 중 하나만 사고, 같은 신발을 한 달에 100km 이상 신지 마세요. 미드솔 회복 시간이 필요합니다.</p>
-  </div>
-</div>
-
-<p><small>출처: 95종 러닝화 자체 DB / @runninglife_korea / RunRepeat 랩 데이터 / Doctors of Running / Believe in the Run / 호카·브룩스·아식스·뉴발란스 한국 공식 사이트 / 작성일 2026년 5월 11일 기준 / 가격은 공식 MSRP이며 세일가는 별도.</small></p>
+<p><strong>2026-11-10 원문 대조 업데이트.</strong> 연구가 다룬 대상·시험 조건과 에디터의 구매 확인 질문을 구분했습니다. 질환별 신발 처방이나 자체 착화 후기가 아닙니다.</p><figure><img src="/images/shoes/asics/gel_Nimbus28.webp" alt="젤 님버스28 제품 자료 이미지. 특정 체중의 최적 모델이라는 뜻은 아닙니다." loading="lazy"/><figcaption>젤 님버스28 제품 자료 이미지. 특정 체중의 최적 모델이라는 뜻은 아닙니다.</figcaption></figure><h2>80kg 이상이면 이 신발이라는 표를 쓰지 않는 이유</h2><p>체중만으로 쿠션 점수·안정화 여부·최소 스택·수명을 정할 근거를 확인하지 못했습니다. 같은 체중이어도 발 길이·높이, 신발 규격과 실제 주행에서 느끼는 불편 위치가 다를 수 있습니다.</p><p>이 글은 무릎·발목을 지키는 TOP10 대신, 제품 구조와 구매 전에 확인할 문제를 정리합니다. 높은 SA나 두꺼운 미드솔을 모델별 임상 보호 등급으로 바꾸지 않습니다.</p><h2>848명 연구가 실제로 비교한 것</h2><p>2020년 발표된 무작위 연구는 건강한 러너848명에게 형태가 비슷하고 쿠션 강성이 다른 두 시제품을 배정해6개월 관찰했습니다. 남녀 표본의 중앙값78.2kg·62.8kg으로 가벼운/무거운 그룹을 나눴습니다. 모든 사람에게80kg이라는 처방 경계를 제안한 연구가 아닙니다.</p><p>전체에서는 단단한 신발 쪽 부상 위험이 높았지만 무거운 하위그룹의 추정치는 불확실했습니다. 따라서 “체중이 많을수록 더 부드러운 특정 최신 모델이 부상을 예방한다”는 결론으로 바꾸지 않았습니다. <a href="https://journals.sagepub.com/doi/10.1177/0363546519892578" target="_blank" rel="noopener noreferrer">연구 초록 원문</a></p><div class="table-wrap"><table><thead><tr><th>확인할 것</th><th>매장·제품 원문에서 볼 질문</th><th>확인되지 않은 해석</th></tr></thead><tbody><tr><td>쿠션</td><td>힐·전족 수치와 실제 발밑 감각이 각각 어떤가요?</td><td>SA가 높으면 내 무릎을 보호한다</td></tr><tr><td>고정</td><td>끈을 조였을 때 힐이 뜨거나 발등을 누르나요?</td><td>바닥이 넓으면 발 전체가 맞는다</td></tr><tr><td>전환</td><td>걷고 달릴 때 로커·힐 전환이 편한가요?</td><td>일정 체중이면 특정 드롭이 안전하다</td></tr><tr><td>내구성</td><td>국소 마모 시험과 실제 사용 관찰을 구분했나요?</td><td>체중별 수명km를 정확히 계산한다</td></tr><tr><td>구매 조건</td><td>정확 성별·폭·규격과 반품 조건을 확인했나요?</td><td>다른 성별 표준 검체가 한국 와이드와 같다</td></tr></tbody></table></div><h2>상품을 비교할 때 기록할 네 가지</h2><p>평소 양말·인솔에서 앞쪽 길이와 발톱 위 높이, 중족 압박, 힐 고정, 움직일 때 불편한 위치를 적어 보세요. 같은 매장·조건에서 후보를 바꾸면 어떤 차이를 느꼈는지 설명하기 쉽습니다. 이는 착화 비교를 위한 질문이며 치료 효과를 측정하는 검사는 아닙니다.</p><p>현재 쓰는 신발이 불편하다면 불편이 생기는 위치와 시작 시점을 먼저 구분하세요. 신발 가격·스택을 올리는 것만으로 해결된다고 가정하거나 압박·통증을 참아 길들이라는 고정 거리를 제안하지 않습니다.</p><h2>왜 최신 신발을 부상 예방 순위로 세우지 않았나요?</h2><p>Cochrane의2022년 검토는 신발 유형별 부상 예방 효과의 상당 부분이 불확실하거나 낮은 확실성이라고 정리했습니다. 검색은2021년6월까지이며2026년 모델별 처방 근거가 아닙니다. <a href="https://www.cochrane.org/evidence/CD013368_running-shoes-preventing-lower-limb-running-injuries-adults" target="_blank" rel="noopener noreferrer">검토 원문</a></p><h2>확인한 원문과 적용 범위</h2><ul><li><a href="https://journals.sagepub.com/doi/10.1177/0363546519892578" target="_blank" rel="noopener noreferrer">Malisoux 등2020 쿠션·체중 연구</a> — 시제품2종·건강한 러너848명·6개월; 최신 모델 순위나80kg 기준이 아님.</li><li><a href="https://www.cochrane.org/evidence/CD013368_running-shoes-preventing-lower-limb-running-injuries-adults" target="_blank" rel="noopener noreferrer">Cochrane 신발·부상 검토</a> — 12연구·11,240명; 비교별 확실성과 군인 연구 범위 구분.</li><li><a href="https://runrepeat.com/testing-methodology" target="_blank" rel="noopener noreferrer">RunRepeat 측정법</a> — SA·스택·국소 마모의 측정과 임상 효과를 구분.</li></ul>
 `,
+    updatedAt: "2026-11-10",
+    faqs: [
+      {
+        "question": "80kg이면 맥스쿠션이 필수인가요?",
+        "answer": "특정 체중으로 스택·쿠션 점수를 처방할 근거를 이번 자료에서 확인하지 못했습니다."
+      },
+      {
+        "question": "쿠션이 높은 신발은 부상을 막나요?",
+        "answer": "실험실 흡수와 개인의 부상 예방은 다른 결과입니다. 연구 대상·비교 조건을 함께 봐야 합니다."
+      },
+      {
+        "question": "체중이 많으면 수명이 절반인가요?",
+        "answer": "모델별 검증된 공통 수명과 체중별 감소율을 확보하지 못해 계산하지 않았습니다."
+      }
+    ],
   },
   {
     id: '2026-seoul-race',
