@@ -11,7 +11,6 @@ export const shoe: Shoe = {
     '/images/shoes/saucony/triumph24/side.jpg',
   ],
   category: '쿠션화',
-  rating: 4.6,
   description: 'IncrediLUX ATPU · 넓은 바닥과 완만한 로커 구조의 트라이엄프 24. RunRepeat 실험실 검체 258g·41.6/33.6mm. 한국 현재 정가 미확인.',
   oneliner: 'IncrediLUX ATPU · 넓은 바닥과 완만한 로커 · 258g (RunRepeat 실험실 검체)',
   editorComment: '2026-11-10 원문 재확인. 한국 공식 캐시: men S100997-1017 M(일반) 정가209,000원·할인캐시188,100원; men S101894-1003 W(와이드) 정가209,000원; women S100994-1002 W(와이드) 정가209,000원. 현재 가격·폭별 선택 재고는 미확인입니다. 옵션 목록·장바구니·품절 문구를 현재 전체 재고로 해석하지 않습니다. 한국 무게·전체 스택 공시가 없는 제품은 해외 소개로 채우지 않습니다. DOR 소개250g(남성 US9)/216g(여성 US8)·43/33mm·10mm와 RR258g·41.6/33.6mm·8mm를 구분합니다. David의 여유 있는 앞발·아주 부드러운 체감과 RR 내부93.4/71.4mm·37.5AC는 다른 조건입니다. 저온 경도 변화7%를 겨울 보호 보장으로 해석하지 않습니다. 11%폼 증량·모든 사이즈 감량·650km·질환별 우위 단정을 이번 원문으로 갱신하지 않습니다. DOR 직접403 이후 검색에 노출된 원문 캐시를 확인했습니다. DOR David(남성 US9.5)는 정사이즈·보통 힐/중족과 조금 넓은 앞발·좋은 고정을 적었습니다. 아주 부드럽지만 로커와 넓은 바닥 덕분에 본인 달리기에는 불안정 문제가 없었고 걷기·서기는 부드러움 선호에 따라 갈릴 수 있다고 했습니다. RR 내부 최광폭 93.4mm·엄지 71.4mm·높이 26.1mm입니다. 전체 발 적합성이나 한국 와이드 규격으로 바꾸지 말고 실제 길이·높이·고정을 함께 확인하세요. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
@@ -30,11 +29,8 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'narrow',
-    winterCompatibility: 'excellent',
-    summerCompatibility: 'good',
   },
   priceAnalysis: {
-    valueRating: 7,
     priceTier: 'premium',
     alternatives: [
       'saucony-triumph-23',

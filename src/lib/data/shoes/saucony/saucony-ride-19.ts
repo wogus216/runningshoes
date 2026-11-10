@@ -15,7 +15,6 @@ export const shoe: Shoe = {
     '/images/shoes/saucony/ride19/back.webp',
   ],
   category: '입문화',
-  rating: 4,
   price: 179000,
   description: '재배합 PWRRUN+ (eTPU) · 비플레이트 구조의 라이드 19. RunRepeat 실험실 검체 278g·38.7/30.2mm. 한국 확인 가격 179,000원.',
   oneliner: '재배합 PWRRUN+ (eTPU) · 비플레이트 · 278g (RunRepeat 실험실 검체)',
@@ -45,8 +44,6 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'standard',
-    winterCompatibility: 'good',
-    summerCompatibility: 'good',
     wideOptions: true,
   },
   targetUsers: {
@@ -67,7 +64,6 @@ export const shoe: Shoe = {
   ],
   priceAnalysis: {
     msrp: 179000,
-    valueRating: 8,
     priceTier: 'mid',
     alternatives: [
       'nike-pegasus-41',

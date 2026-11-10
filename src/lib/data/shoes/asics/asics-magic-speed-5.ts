@@ -15,7 +15,6 @@ export const shoe: Shoe = {
     '/images/shoes/asics/magicspeed5/back.webp',
   ],
   category: '레이싱',
-  rating: 4.5,
   price: 209000,
   description: 'FF LEAP 상층 + FF BLAST PLUS 하층 · 분기형 카본 보강 구조의 매직스피드 5. RunRepeat 실험실 검체 201g·35.3/26.6mm. 한국 확인 가격 209,000원.',
   oneliner: 'FF LEAP 상층 + FF BLAST PLUS 하층 · 분기형 카본 보강 · 201g (RunRepeat 실험실 검체)',
@@ -44,8 +43,6 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'standard',
-    winterCompatibility: 'fair',
-    summerCompatibility: 'good',
     wideOptions: true,
   },
   targetUsers: {
@@ -66,7 +63,6 @@ export const shoe: Shoe = {
   ],
   priceAnalysis: {
     msrp: 209000,
-    valueRating: 8,
     priceTier: 'premium',
     alternatives: [
       'nike-zoom-fly-6',

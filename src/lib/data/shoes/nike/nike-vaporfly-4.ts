@@ -14,7 +14,6 @@ export const shoe: Shoe = {
     '/images/shoes/nike/vaporfly4/pair.webp',
   ],
   category: '레이싱',
-  rating: 5,
   price: 319000,
   description: "ZoomX · 전장 카본 Flyplate 구조의 베이퍼플라이 4. 실험실 166g·힐/전족부 34.1/25.5mm. 한국 확인 정가 319,000원.",
   oneliner: '166g 실험실 무게 · ZoomX · 전장 카본 Flyplate',
@@ -44,8 +43,6 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'standard',
-    winterCompatibility: 'fair',
-    summerCompatibility: 'good',
   },
   targetUsers: {
     recommended: [
@@ -65,7 +62,6 @@ export const shoe: Shoe = {
   ],
   priceAnalysis: {
     msrp: 319000,
-    valueRating: 7,
     priceTier: 'super-premium',
     alternatives: [
       'nike-alphafly-3',

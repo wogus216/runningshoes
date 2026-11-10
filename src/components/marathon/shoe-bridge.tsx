@@ -114,7 +114,7 @@ function pickShoes(categories: string[], excludeSlugs: string[] = []): PricedSho
         (x, y) =>
           Number(usedCats.has(x.category)) - Number(usedCats.has(y.category)) ||
           categories.indexOf(x.category) - categories.indexOf(y.category) ||
-          y.rating - x.rating ||
+          (y.rating ?? 0) - (x.rating ?? 0) ||
           x.price - y.price,
       )
       .slice(0, n);

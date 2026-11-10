@@ -8,7 +8,6 @@ export const shoe: Shoe = {
   name: '울트라플라이',
   image: '/images/shoes/nike/ultrafly/side.webp',
   category: '트레일',
-  rating: 4,
   description: '2023초대 전장 ZoomX · 중족 분기 카본 · Vibram Litebase 구조의 울트라플라이. RunRepeat 실험실 검체 299g·36.6/24.8mm. 한국 현재 정가 미확인.',
   oneliner: '2023초대 전장 ZoomX · 중족 분기 카본 · Vibram Litebase · 299g (RunRepeat 실험실 검체)',
   editorComment: "2026-11-10 원문 재확인. 초대 DX1978계열의한국현행상품을확보하지못해현재 가격·SKU·폭·재고는미확인입니다. 후속 ACG Ultrafly HF5668은다른모델이어서대입하지않습니다. 기존 299,000원발매가를현재공식가로쓰지않습니다. DOR 소개 300g(남성 US10)/249g(여성 US8)·38.5/30mm·8.5mm, RR 브랜드 286/249g(사이즈미확인)·38/29.5mm·8.5mm, 실제 299g·36.6/24.8mm·11.8mm 입니다. 현행 RR9.8HA 는구방식이며 AC 미확인입니다.3mm 러그·국소마모 0.7mm·45마일개인경험을 450km수명으로환산하지 않습니다.20km이후앞발피로·한국산악일괄 금지·넓은발적합·첫 ZoomX트레일이라는단정을철회합니다. 접지계수는미확인입니다. DOR Matt(남성 US10)은정사이즈·넓지만낮은전족,보통~밀착중족·힐과끈으로해결된초기힐 슬립을적었습니다. 도로·정비된길·중간난도트레일의전환은좋았지만빠른지속주에서무게와느슨한연한노면의러그한계를느꼈습니다. 현지건조조건으로진흙은시험하지않았습니다. RR 내부 최광폭 95.8mm·엄지 76.7mm·높이 24.5mm 입니다. 넓은엄지부위와낮은 볼륨을함께확인하세요. RR 글로벌여성 Wide메타와비교표 Normal표기가달라한국 와이드보장으로쓰지않습니다. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.",
@@ -37,8 +36,6 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'wide',
-    winterCompatibility: 'good',
-    summerCompatibility: 'good',
   },
   targetUsers: {
     recommended: [
@@ -57,7 +54,6 @@ export const shoe: Shoe = {
     "RR 내부 최광폭 95.8mm·엄지 76.7mm·높이 24.5mm 입니다. 넓은엄지부위와낮은 볼륨을함께확인하세요. RR 글로벌여성 Wide메타와비교표 Normal표기가달라한국 와이드보장으로쓰지않습니다.",
   ],
   priceAnalysis: {
-    valueRating: 5,
     priceTier: 'super-premium',
     alternatives: [
       'hoka-tecton-x-3',

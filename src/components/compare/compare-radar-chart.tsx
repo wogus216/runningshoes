@@ -13,7 +13,7 @@ const CENTER = CHART_SIZE / 2;
 const RADIUS = 150;
 const LEVELS = 5;
 
-const metrics = [
+const candidateMetrics = [
   { key: 'cushioning', label: '쿠셔닝' },
   { key: 'responsiveness', label: '반응성' },
   { key: 'stability', label: '안정성' },
@@ -37,6 +37,12 @@ function polarToCartesian(angle: number, radius: number): { x: number; y: number
 }
 
 export function CompareRadarChart({ shoes }: CompareRadarChartProps) {
+  // 공통으로 확인된 축만 표시한다. 빈값을 5점·300km로 채우지 않는다.
+  const metrics = useMemo(() => candidateMetrics.filter(metric => shoes.length > 0 && shoes.every(shoe => {
+    if (metric.key === 'value') return shoe.priceAnalysis?.valueRating !== undefined;
+    if (metric.key === 'durability') return getShoeDurability(shoe) !== null;
+    return typeof shoe.specs?.[metric.key as keyof typeof shoe.specs] === 'number';
+  })), [shoes]);
   const angleStep = 360 / metrics.length;
 
   // 각 신발의 데이터 포인트 계산
@@ -44,14 +50,14 @@ export function CompareRadarChart({ shoes }: CompareRadarChartProps) {
     return shoes.map((shoe, idx) => {
       const values = metrics.map(metric => {
         if (metric.key === 'value') {
-          return (shoe.priceAnalysis?.valueRating || 5) / 10;
+          return shoe.priceAnalysis!.valueRating! / 10;
         }
         if (metric.key === 'durability') {
           // 내구성은 추정 범위의 중앙값을 600km 기준으로 정규화
-          return Math.min((getShoeDurability(shoe)?.mid ?? 300) / 600, 1);
+          return Math.min(getShoeDurability(shoe)!.mid / 600, 1);
         }
         const value = shoe.specs?.[metric.key as keyof typeof shoe.specs];
-        return typeof value === 'number' ? value / 10 : 0.5;
+        return typeof value === 'number' ? value / 10 : 0;
       });
 
       const points = values.map((value, i) => {
@@ -66,7 +72,7 @@ export function CompareRadarChart({ shoes }: CompareRadarChartProps) {
         color: colors[idx % colors.length],
       };
     });
-  }, [shoes, angleStep]);
+  }, [shoes, angleStep, metrics]);
 
   // 배경 그리드 레벨
   const gridLevels = Array.from({ length: LEVELS }, (_, i) => {
@@ -89,6 +95,8 @@ export function CompareRadarChart({ shoes }: CompareRadarChartProps) {
     const pos = polarToCartesian(idx * angleStep, RADIUS + 30);
     return { ...metric, x: pos.x, y: pos.y };
   });
+
+  if (metrics.length < 3) return null;
 
   return (
     <div className="flex flex-col lg:flex-row items-center gap-8">

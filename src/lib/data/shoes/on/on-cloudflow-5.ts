@@ -15,7 +15,6 @@ export const shoe: Shoe = {
     '/images/shoes/on/cloudflow5/outsole.webp',
   ],
   category: '데일리',
-  rating: 4,
   description: 'Helion HF(PEBA) 위층 · Helion(EVA) 아래층 · Speedboard 구조의 클라우드플로우 5. RunRepeat 실험실 검체 271g·32.8/28.7mm. 한국 현재 정가 미확인.',
   oneliner: 'Helion HF(PEBA) 위층 · Helion(EVA) 아래층 · Speedboard · 271g (RunRepeat 실험실 검체)',
   editorComment: '2026-11-09 원문 재확인. 2026-11-09 한국 공식 여성 White/Lime 3WF10092929 Regular의 표시 판매가219,000원을 실시간 확인했습니다. 정가 명칭은 미확인이므로 MSRP로 확정하지 않습니다. JP22/22.5/23/24/24.5/25/25.5/26 사이즈는 당시 잔여 표시가 있었고23.5/26.5/27/27.5/28은 알림 대상이었습니다. 남성 현재 상품·와이드는 미확인입니다. 결제 재고 보장은 아닙니다. 한국 현행 여성231g(사이즈 미확인)·8mm와 과거 캐시278g, 미국 남성278g(사이즈 미확인)·8mm, RTR 소개 약278g(남성US9)·36/28mm·8mm, RR 브랜드269/221g(사이즈 미확인)·34/28mm·6mm를 구분합니다. RR 검체는271g·32.8/28.7mm·4.1mm입니다. RR 본문은48.3에 HA/ShoreA를 쓰지만 현행 표는48.3AC·보조51.5AC로 단위가 상충해 변환하지 않습니다. 보조폼 위치는 미확인입니다. 구방식 통기2/5와 RTR의 좋은 통기 체감도 다른 정보입니다. 4분대만 작동·6분 조깅 금지·450km·무릎 caution과 교정 효과는 철회했습니다. 정확5의 DOR 개별 리뷰는 미확인입니다. 보완 원문 Road Trail Run에서 Peter Stuart(남성US11 검체299.8g)는 길이·편안함은 맞지만 느릴 때 단단하고 무거우며 빠르게 달릴 때 탄성을 느꼈습니다. Courtney Kelly(여성US9 검체248g)는 중족 밀착·앞코 신축, 끈으로 개선된 힐 슬립을 적었고 느리거나 빨라도 반응성이 아쉬웠습니다. 서로의 경험을 공통 페이스 규칙으로 합치지 않습니다. RR 내부 최광폭92.7mm·엄지77.2mm·높이24.5mm로 부위별 형태가 다릅니다. 엄지 쪽77.2mm를 전체 발볼 여유나 한국 와이드 판매 보장으로 바꾸지 않습니다. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
@@ -43,8 +42,6 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'wide',
-    winterCompatibility: 'good',
-    summerCompatibility: 'good',
   },
   targetUsers: {
     recommended: [
@@ -63,7 +60,6 @@ export const shoe: Shoe = {
     'RR 내부 최광폭92.7mm·엄지77.2mm·높이24.5mm로 부위별 형태가 다릅니다. 엄지 쪽77.2mm를 전체 발볼 여유나 한국 와이드 판매 보장으로 바꾸지 않습니다.',
   ],
   priceAnalysis: {
-    valueRating: 6,
     priceTier: 'premium',
     alternatives: [
       'saucony-kinvara-16',

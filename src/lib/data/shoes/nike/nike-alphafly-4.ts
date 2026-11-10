@@ -12,7 +12,6 @@ export const shoe: Shoe = {
   ],
   category: '레이싱',
   price: 349000,
-  rating: 0,
   noindex: true,
   description: 'ZoomX LT + ZoomX · 카본 Flyplate · 전족 Air Zoom2개 구조의 알파플라이 4. RunRepeat 실험실 검체 190g·39/32.8mm. 한국 확인 정가 349,000원.',
   oneliner: 'ZoomX LT + ZoomX · 카본 Flyplate · 전족 Air Zoom2개 · 190g (RunRepeat 실험실 검체)',

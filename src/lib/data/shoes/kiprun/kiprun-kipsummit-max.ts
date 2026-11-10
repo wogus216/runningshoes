@@ -15,7 +15,6 @@ export const shoe: Shoe = {
     '/images/shoes/kiprun/kipsummit-max/outsole.webp',
   ],
   category: '트레일',
-  rating: 4,
   description: 'ATPU Fastech+ · Vibram Megagrip · 판 없는 구조 구조의 킵서밋 맥스. RunRepeat 실험실 검체 275g·35.5/27.4mm. 한국 현재 정가 미확인.',
   oneliner: 'ATPU Fastech+ · Vibram Megagrip · 판 없는 구조 · 275g (RunRepeat 실험실 검체)',
   editorComment: '2026-11-10 원문 재확인. 한국 정확 모델의 상품·정가·폭·현재 재고는 미확인입니다. 미확인을 한국 미출시·단종으로 단정하지 않습니다. RR 275g·35.5/27.4mm·8.1mm, 영국 공시 268g(원문 size8, 체계 미확인)·드롭 6mm, DOR 소개 39/33mm·6mm를 구분합니다. DOR 남성 US9 무게는 10.1oz만 있고 g는 비어 있어 환산하지 않았습니다. 영국 반 사이즈 업 조언과 Matt·RR 이용자 투표의 정사이즈 의견은 조건이 다릅니다. DOR의 부드러운 체감은 RR 43.6AC와 같은 척도가 아닙니다. 500km 수명이나 기술 지형 안전 점수로 바꾸지 않습니다. DOR Quick Evaluation의 Matt Klein은 실제 남성 US10에서 정사이즈·낮은 볼륨과 테이퍼, 두꺼운 거싯의 발등 압박을 느꼈습니다. 부드럽고 탄성 있는 평탄한 흙길·내리막 체감과 기술적인 급오르막·진흙의 한계, 따뜻한 어퍼도 개인 의견입니다. 정식 다인 리뷰나 임상 평가로 확대하지 않습니다. RR 내부 최광폭 93.3mm·엄지 69mm·높이 24.2mm입니다. 실제 길이·발톱 위 높이·중족 압박·힐 고정을 확인하세요. 한국 다른 성별·폭의 치수로 직접 대입하지 않습니다. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
@@ -45,8 +44,6 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'narrow',
-    winterCompatibility: 'excellent',
-    summerCompatibility: 'good',
   },
   targetUsers: {
     recommended: [
@@ -64,7 +61,6 @@ export const shoe: Shoe = {
     'RR 내부 최광폭 93.3mm·엄지 69mm·높이 24.2mm입니다. 실제 길이·발톱 위 높이·중족 압박·힐 고정을 확인하세요. 한국 다른 성별·폭의 치수로 직접 대입하지 않습니다.',
   ],
   priceAnalysis: {
-    valueRating: 9,
     priceTier: 'mid',
     alternatives: [
       'saucony-peregrine-16',

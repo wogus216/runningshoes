@@ -15,7 +15,6 @@ export const shoe: Shoe = {
     '/images/shoes/puma/fastrnitroelite3/outsole.webp',
   ],
   category: '레이싱',
-  rating: 4,
   description: 'NITRO Elite A-TPU · 돌출형 전장 카본 PWRPLATE 구조의 패스트알 나이트로 엘리트 3. RunRepeat 실험실 검체 173g·38.5/30.2mm. 한국 현재 정가 미확인.',
   oneliner: 'NITRO Elite A-TPU · 돌출형 전장 카본 PWRPLATE · 173g (RunRepeat 실험실 검체)',
   editorComment: '2026-11-10 원문 재확인. 한국 공식 캐시: 성별 미확인 312060_15 폭 미확인 정가379,000원·판매캐시379,000원; 성별 미확인 312060_03 폭 미확인 정가379,000원·판매캐시379,000원; Women 312061_13 폭 미확인 정가379,000원·판매캐시379,000원. 현재 가격·선택 재고는 미확인입니다. 판매캐시와 현재 결제가는 다를 수 있으며 글로벌 폭을 한국 판매 증거로 쓰지 않습니다. 한국170g(UK8)·40/32mm, DOR 소개170g(남성US9)/147g(여성US8)·39/31mm·8mm와 RR173g·38.5/30.2mm·8.3mm를 나눕니다. 여성 한국PDP의170g/UK8 복제 문구를 여성 실제 검체로 보지 않습니다. RR 국소 마모3.1mm·두께1.5mm를 원문대로 남겨 오타 교정이나250km 수명으로 바꾸지 않습니다. Matt와 Andrea의 형상 적합·반업 차이를 모두의 규칙으로 합치지 않으며 서브3 전용·마라톤 후반 추진 보장을 제거했습니다. DOR Matt(남성US10)는 정사이즈의 낮은 볼륨·약간 늘어나는 Ultraweave를 느꼈지만 내측 힐/중족 유도가 맞지 않았고30마일에 전족 마모를 적었습니다. Andrea는 평소여성US9.5에서10으로 올려 편하게 맞았고 본인의 외측 중족 착지에 형상이 잘 맞았습니다.25마일의 돌 눌림은 있었지만 당시 고무 마모는 없었고 최장10마일로 풀마라톤 시험은 아닙니다. RR 내부 최광폭 92.9mm·엄지 72.3mm·높이 26.3mm입니다. 너비 하나로 발등·길이·힐 고정이나 한국 와이드 적합을 보장하지 않습니다. 실제 규격·양말에서 접촉과 전환을 확인하세요. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
@@ -43,8 +42,6 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'standard',
-    winterCompatibility: 'poor',
-    summerCompatibility: 'excellent',
   },
   targetUsers: {
     recommended: [
@@ -63,7 +60,6 @@ export const shoe: Shoe = {
     'RR 내부 최광폭 92.9mm·엄지 72.3mm·높이 26.3mm입니다. 너비 하나로 발등·길이·힐 고정이나 한국 와이드 적합을 보장하지 않습니다. 실제 규격·양말에서 접촉과 전환을 확인하세요.',
   ],
   priceAnalysis: {
-    valueRating: 5,
     priceTier: 'super-premium',
     alternatives: [
       'nike-alphafly-3',

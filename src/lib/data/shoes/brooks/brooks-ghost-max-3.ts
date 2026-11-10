@@ -15,7 +15,6 @@ export const shoe: Shoe = {
     '/images/shoes/brooks/ghostmax3/outsole.webp',
   ],
   category: '쿠션화',
-  rating: 5,
   price: 179000,
   description: '질소 주입 DNA LOFT v3 구조의 고스트 맥스 3. 한국 남성 Medium1104641D162·Wide1104642E078 정가179,000원. 공식 원문은 캐시 응답이라 실시간 재고·할인가는 미확인.',
   oneliner: '303g 실험실 무게 · 질소 주입 DNA LOFT v3',
@@ -38,8 +37,6 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'standard',
-    winterCompatibility: 'good',
-    summerCompatibility: 'fair',
     wideOptions: true,
   },
   targetUsers: {
@@ -60,7 +57,6 @@ export const shoe: Shoe = {
   ],
   priceAnalysis: {
     msrp: 179000,
-    valueRating: 8,
     priceTier: 'mid',
     alternatives: [
       'hoka-bondi-9',

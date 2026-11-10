@@ -12,7 +12,6 @@ export const shoe: Shoe = {
     '/images/shoes/lining/red-hare-9/angle.webp',
   ],
   category: '입문화',
-  rating: 4,
   description: '정확 일반형 소재·사양 미확인. 정확 일반형의 무게·스택·드롭·독립 랩 수치는 미확인입니다.',
   oneliner: '정확 일반형 소재·사양 미확인',
   tags: [
@@ -40,7 +39,6 @@ export const shoe: Shoe = {
     '정확 일반형의 판 유무·폼·아웃솔 원문 사양은 미확인입니다. Ultra·Pro 사양을 대입하지 않습니다.',
   ],
   priceAnalysis: {
-    valueRating: 9,
     priceTier: 'budget',
     alternatives: [
       'hoka-clifton-10',

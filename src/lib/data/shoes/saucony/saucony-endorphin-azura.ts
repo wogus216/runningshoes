@@ -15,7 +15,6 @@ export const shoe: Shoe = {
     '/images/shoes/saucony/endorphinazura/back.webp',
   ],
   category: '데일리',
-  rating: 4,
   description: 'PWRRUN PB 비즈 PEBA · SPEEDROLL · 플레이트 없음 구조의 엔돌핀 아주라. RunRepeat 실험실 검체 241g·40.7/32.7mm. 한국 현재 정가 미확인.',
   oneliner: 'PWRRUN PB 비즈 PEBA · SPEEDROLL · 플레이트 없음 · 241g (RunRepeat 실험실 검체)',
   editorComment: '2026-11-10 원문 재확인. 한국 공식 캐시: men S101329-1041 M(일반) 정가189,000원; women S11070-124 M(일반) 정가189,000원. 현재 가격·폭별 선택 재고는 미확인입니다. 옵션 목록·장바구니·품절 문구를 현재 전체 재고로 해석하지 않습니다. 한국 무게·전체 스택 공시가 없는 제품은 해외 소개로 채우지 않습니다. DOR 소개240g(남성 US9)/212g(여성 US8)·40/32mm·8mm와 RR241g·40.7/32.7mm·8mm를 구분합니다. 한국 남성240g·여성212g은 기준 사이즈 미공시이고 여성8.5oz표기는 DOR7.5oz와 달라 g값만 그대로 남깁니다. David의 다용도 선호와 Andrea의 단단함·로커 불호를 합쳐 모두에게 편한 데일리라고 정하지 않습니다. BLACK/QUARTZ 170,100원은 검색 캐시 할인이며 열린 캐시와 다르고 현재 가격은 미확인입니다. 반업 일괄 권장·와이드 부재·600km·무릎 보호를 제거했습니다. DOR 직접403 이후 검색에 노출된 원문 캐시를 확인했습니다. DOR David(남성 US9.5)는 정사이즈·보통 폭과 조금 넓은 앞발, 자극 없는 힐을 느끼고 단단한 폼과 늦은 로커를 다용도로 좋아했지만 느린 움직임은 덜 매끄러웠습니다. Andrea는 길이 때문에 반 사이즈 올렸어도 내측 뒤쪽 사이드월과 강한 토스프링이 불편해 짧은 이지런에만 받아들였습니다. Andrea 실제 숫자 사이즈는 미확인입니다. RR 내부 최광폭 94mm·엄지 72.2mm·높이 28.3mm입니다. 전체 발 적합성이나 한국 와이드 규격으로 바꾸지 말고 실제 길이·높이·고정을 함께 확인하세요. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
@@ -44,8 +43,6 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'standard',
-    winterCompatibility: 'good',
-    summerCompatibility: 'good',
   },
   targetUsers: {
     recommended: [
@@ -64,7 +61,6 @@ export const shoe: Shoe = {
     'RR 내부 최광폭 94mm·엄지 72.2mm·높이 28.3mm입니다. 전체 발 적합성이나 한국 와이드 규격으로 바꾸지 말고 실제 길이·높이·고정을 함께 확인하세요.',
   ],
   priceAnalysis: {
-    valueRating: 8,
     priceTier: 'mid',
     alternatives: [
       'adidas-adizero-evo-sl',

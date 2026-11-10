@@ -11,7 +11,6 @@ export const shoe: Shoe = {
     '/images/shoes/saucony/peregrine16/side.jpg',
   ],
   category: '트레일',
-  rating: 4.5,
   description: 'PWRRUN EVA · PWRRUN+ 인솔 · 전족 플라스틱 Rock Plate 구조의 페레그린 16. RunRepeat 실험실 검체 278g·31.7/26.9mm. 한국 공식 확인 정가 179,000원 (2026-11-10).',
   oneliner: 'PWRRUN EVA · PWRRUN+ 인솔 · 전족 플라스틱 Rock Plate · 278g (RunRepeat 실험실 검체)',
   editorComment: '2026-11-10 원문 재확인. 2026-11-10 09:41~09:44 KST 한국 공식 HTTP 원문 확인: S11066-130 (women·M(일반)) 정가 179,000원·표시 판매/할인가 179,000원; S21067-101 (men·W(와이드)) 정가 179,000원·표시 판매/할인가 179,000원. 정가는 소비자가 필드 기준입니다. 옵션 선택·최종 결제·규격별 재고는 미확인입니다. 쿠폰을 임의 차감하지 않습니다. RR278g·31.7/26.9mm·4.8mm와 RR 재전재 브랜드271/239g(기준 사이즈 미확인)·32/28mm·4mm, RTR소개32/28/4와 실제US10 301g을 나눕니다. RR 엄지70.3mm·사이즈 투표와 Jeff의 여유 있는 앞코·정사이즈 체감은 다른 조건입니다. 러그RR3.5mm·RTR4mm를 구분합니다.0.5mm 국소 마모를600km로 바꾸거나0.72 콘크리트 접지로 오르내림 손해 없음·아킬레스 적응 기간을 보장하지 않습니다. 정확 DOR 리뷰는 미확인입니다. RTR Jeff Valliere의 실제 남성US10 검체는301g이며 정사이즈·조금 여유 있는 앞코와 좋은 고정, 부드럽지만 예측 가능한 폼을 느꼈습니다. 볼더 바위·느슨한 경사·일부 눈/얼음의 초기 시험이고 정식 젖은 조건 시험은 부족했습니다. 젖은 바위 호평의 관찰과 예측을 구분합니다. RR 내부 최광폭 96.9mm·엄지 70.3mm·높이 27.4mm입니다. 한국 여성·와이드의 치수로 직접 대입하지 말고 실제 길이·발가락 위 공간·힐 고정을 확인하세요. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
@@ -40,11 +39,8 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'narrow',
-    winterCompatibility: 'excellent',
-    summerCompatibility: 'good',
   },
   priceAnalysis: {
-    valueRating: 8,
     priceTier: 'mid',
     alternatives: [
       'saucony-xodus-ultra-4',

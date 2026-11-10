@@ -15,7 +15,6 @@ export const shoe: Shoe = {
     '/images/shoes/asics/metaspeedray/back.webp',
   ],
   category: '레이싱',
-  rating: 5,
   price: 439000,
   description: 'FF LEAP · 약3/4 카본 · MATRYX 어퍼 구조의 메타스피드 레이. RunRepeat 실험실 검체 129g·39.8/30mm. 한국 확인 가격 439,000원.',
   oneliner: 'FF LEAP · 약3/4 카본 · MATRYX 어퍼 · 129g (RunRepeat 실험실 검체)',
@@ -46,8 +45,6 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'narrow',
-    winterCompatibility: 'fair',
-    summerCompatibility: 'excellent',
   },
   targetUsers: {
     recommended: [
@@ -67,7 +64,6 @@ export const shoe: Shoe = {
   ],
   priceAnalysis: {
     msrp: 439000,
-    valueRating: 5,
     priceTier: 'super-premium',
     alternatives: [
       'asics-metaspeed-sky-plus',

@@ -15,7 +15,6 @@ export const shoe: Shoe = {
     '/images/shoes/mizuno/waverebellionflash3/outsole.webp',
   ],
   category: '레이싱',
-  rating: 4,
   description: 'Enerzy XP TPEE 위층 · Enerzy NXT EVA 아래층 · 유리섬유 나일론 구조의 웨이브 리벨리온 플래시 3. RunRepeat 실험실 검체 244g·40/32.5mm. 한국 현재 정가 미확인.',
   oneliner: 'Enerzy XP TPEE 위층 · Enerzy NXT EVA 아래층 · 유리섬유 나일론 · 244g (RunRepeat 실험실 검체)',
   editorComment: '2026-11-10 원문 재확인. 한국 공식 캐시: J1GC251701 성별 표기 미확인 폭 미확인 소비자가199,000원·판매캐시159,200원. 현재 가격·폭별 선택 재고는 미확인입니다. 공통 SOLD OUT 템플릿과 장바구니 버튼을 실제 재고로 보지 않으며 검색 미발견을 단종·미출시로 단정하지 않습니다. DOR 소개 남성8.6oz(US9)/여성7.1oz(US8)·37.5/34.5mm·3mm, RR244g·40/32.5mm·7.5mm를 구분합니다. DOR의 비어 있는g값을 oz환산으로 채우지 않습니다. 11.5HA는 구방식이며 AC 미확인입니다. RR 전족 본문32.6mm·표32.5mm, 브랜드8.6g 이상값을 구분합니다. Matt·Andrea의 젖은 접지 체감과 콘크리트0.61을 합쳐 만능 접지를 보장하지 않습니다. 물집은 개인 관찰로 유병률·질환 등급이 아니며500km·힐 착지 금지를 제거했습니다. DOR Matt는 남성US10/10.5 중10.5가 평소10처럼 맞았고 짧은 테이퍼·얇은 혀의 끈 압박을 적었습니다. 이지·템포의 바운스는 좋았으나 외측 플레어가 안쪽으로 밀었고 젖은 접지는 보통이었습니다. Andrea는 여성US9.5/10을 신었지만 기울어진 칼라의 아킬레스 부위 물집으로5마일+8마일 주행 뒤 시험을 중단했습니다. 바운스와 젖은 접지는 좋게 느꼈습니다. RR 내부 최광폭 92.3mm·엄지 70.2mm·높이 25.6mm입니다. 다른 위치인 외부 바닥 폭과 구분하고 실제 규격에서 길이·높이·고정을 확인하세요. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
@@ -43,8 +42,6 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'narrow',
-    winterCompatibility: 'fair',
-    summerCompatibility: 'good',
   },
   targetUsers: {
     recommended: [
@@ -63,7 +60,6 @@ export const shoe: Shoe = {
     'RR 내부 최광폭 92.3mm·엄지 70.2mm·높이 25.6mm입니다. 다른 위치인 외부 바닥 폭과 구분하고 실제 규격에서 길이·높이·고정을 확인하세요.',
   ],
   priceAnalysis: {
-    valueRating: 7,
     priceTier: 'premium',
     alternatives: [
       'saucony-endorphin-speed-5',

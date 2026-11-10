@@ -10,9 +10,6 @@ describe('getHomeStats', () => {
   it('신발 수를 실제 데이터에서 산출한다', () => {
     expect(getHomeStats().shoeCount).toBe(getShoes().length);
   });
-  it('문항 수는 7이다', () => {
-    expect(getHomeStats().questionCount).toBe(7);
-  });
   it('문항 수는 questionnaire.tsx의 실제 질문 정의 개수와 일치한다 (하드코딩 회귀 방지)', () => {
     // questionnaire.tsx는 'use client' 컴포넌트라 stats.ts가 직접 import해 셀 수 없다.
     // 대신 이 테스트가 소스를 파싱해 QUESTION_COUNT 상수가 stale해지면 실패하도록 감시한다.

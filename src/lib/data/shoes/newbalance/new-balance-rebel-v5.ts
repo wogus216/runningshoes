@@ -15,7 +15,6 @@ export const shoe: Shoe = {
     '/images/shoes/newbalance/rebelv5/outsole.webp',
   ],
   category: '데일리',
-  rating: 4,
   price: 219000,
   description: "PEBA·EVA FuelCell 블렌드 · 비플레이트 구조의 레벨 V5. 실험실 220g·힐/전족부 33/26.7mm. 한국 확인 정가 219,000원.",
   oneliner: '220g 실험실 무게 · PEBA·EVA FuelCell 블렌드 · 비플레이트',
@@ -54,13 +53,10 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'wide',
-    winterCompatibility: 'good',
-    summerCompatibility: 'fair',
     wideOptions: true,
   },
   priceAnalysis: {
     msrp: 219000,
-    valueRating: 8,
     priceTier: 'mid',
     alternatives: [
       'saucony-kinvara-16',

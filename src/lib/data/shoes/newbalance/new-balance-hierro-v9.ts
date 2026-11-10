@@ -14,7 +14,6 @@ export const shoe: Shoe = {
     '/images/shoes/newbalance/hierrov9/outsole.webp',
   ],
   category: '트레일',
-  rating: 4.3,
   description: 'Fresh Foam X 이중 밀도 · Vibram Megagrip · Toe Protect 구조의 히에로 v9. RunRepeat 실험실 검체 309g·37.3/33.1mm. 한국 현재 정가 미확인.',
   oneliner: 'Fresh Foam X 이중 밀도 · Vibram Megagrip · Toe Protect · 309g (RunRepeat 실험실 검체)',
   editorComment: '2026-11-10 원문 재확인. 뉴발란스 한국 실운영 상품 페이지가403·캐시 미스로 열리지 않아 현재 정가·SKU·성별·폭·재고를 미확인으로 남깁니다. 검색 후보나 QA서버값을 공식 판매 사실로 채택하지 않았습니다. 기존189,000원·한국D/B만 판매·7/9 신컬러 확정은 이번 원문으로 재확인하지 못했습니다. 미국 공식 남성310g/여성253g(사이즈 미확인)·드롭약4mm, RR 브랜드33/29mm·4mm·297/234g(사이즈 미확인), RR실측309g·37.3/33.1mm·4.2mm를 구분합니다. 기존 공식42/38mm 확정은 철회합니다. 미국 공식6mm 러그와 RR실측3.3mm, DOR이 재인용한 유통사4.5mm는 다릅니다.4.5mm를 직접 재확인한 실측으로 승격하지 않습니다. 현행RR29.7AC는 기존14.6HA와 직접 비교하지 않습니다.0.9mm 마모·힐패딩5/5는600km 수명이 아닙니다. 저드롭으로 힐 착지 러너의 아킬레스 위험·평발 보호를 확정하지 않습니다. DOR 봄 트레일 roundup의 정확v9 문단에서 David는 여유 있는 전족·볼륨과 니트 고정, 부드러운 로커·이중 밀도 쿠션을 선호했고 무게·평범한 반발을 지적했습니다. 검체 사이즈는 미공시이며 독립 전체 리뷰로 표시하지 않습니다. 도로 접근 혼합·하이킹 활용 의견을 개인 경험으로 남깁니다. RR 내부 최광폭94.7mm·엄지73.4mm·높이26.7mm입니다. 미국 남성D/2E/4E·여성B/D/2E 표시는 한국 현재 폭 판매가 아닙니다. 미국정사이즈안내·RR반사이즈작게 투표·David의 여유 체감은 조건이 다릅니다. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
@@ -44,8 +43,6 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'standard',
-    winterCompatibility: 'fair',
-    summerCompatibility: 'fair',
   },
   targetUsers: {
     recommended: [
@@ -64,7 +61,6 @@ export const shoe: Shoe = {
     'RR 내부 최광폭94.7mm·엄지73.4mm·높이26.7mm입니다. 미국 남성D/2E/4E·여성B/D/2E 표시는 한국 현재 폭 판매가 아닙니다. 미국정사이즈안내·RR반사이즈작게 투표·David의 여유 체감은 조건이 다릅니다.',
   ],
   priceAnalysis: {
-    valueRating: 8,
     priceTier: 'mid',
     alternatives: [
       'hoka-speedgoat-6',

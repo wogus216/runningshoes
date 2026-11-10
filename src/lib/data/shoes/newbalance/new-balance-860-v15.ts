@@ -15,7 +15,6 @@ export const shoe: Shoe = {
     '/images/shoes/newbalance/860v15/angle.webp',
   ],
   category: '안정화',
-  rating: 4.5,
   price: 189000,
   description: '이중경도 Fresh Foam X와 3/4 New EVA 필름 지지 구조를 쓰는 안정화. 한국 남성2E·4E와 여성D 정가189,000원을 확인했습니다.',
   oneliner: '860 v15: 한국 남성2E·4E, 여성D를 확인한 데일리 안정화',
@@ -57,12 +56,9 @@ export const shoe: Shoe = {
   koreanFootFit: {
     toBoxWidth: 'standard',
     wideOptions: true,
-    winterCompatibility: 'good',
-    summerCompatibility: 'good',
   },
   priceAnalysis: {
     msrp: 189000,
-    valueRating: 8,
     priceTier: 'mid',
     alternatives: [
       'asics-gel-kayano-32',

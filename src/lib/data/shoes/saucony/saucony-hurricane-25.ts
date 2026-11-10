@@ -13,7 +13,6 @@ export const shoe: Shoe = {
     '/images/shoes/saucony/hurricane25/outsole.webp',
   ],
   category: '안정화',
-  rating: 4,
   price: 199000,
   description: 'PWRRUN PB 코어 · PWRRUN 프레임 · CenterPath 구조의 허리케인 25. 실험실 286g·힐/전족부 40.2/33.1mm. 한국 확인 정가199,000원.',
   oneliner: '286g 실험실 무게 · PWRRUN PB 코어 · PWRRUN 프레임 · CenterPath',
@@ -43,8 +42,6 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'standard',
-    winterCompatibility: 'good',
-    summerCompatibility: 'good',
     wideOptions: true,
   },
   targetUsers: {
@@ -65,7 +62,6 @@ export const shoe: Shoe = {
   ],
   priceAnalysis: {
     msrp: 199000,
-    valueRating: 7,
     priceTier: 'premium',
     alternatives: [
       'asics-gel-kayano-32',

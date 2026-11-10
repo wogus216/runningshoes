@@ -15,7 +15,6 @@ export const shoe: Shoe = {
     '/images/shoes/on/cloudmonsterhyper/outsole.webp',
   ],
   category: '쿠션화',
-  rating: 4.5,
   description: '초대 Helion HF(PEBA/Pebax) · Helion · CloudTec 구조의 클라우드몬스터 하이퍼. RunRepeat 실험실 검체 258g·39.7/33mm. 한국 현재 정가 미확인.',
   oneliner: '초대 Helion HF(PEBA/Pebax) · Helion · CloudTec · 258g (RunRepeat 실험실 검체)',
   editorComment: '2026-11-09 원문 재확인. 초대 한국 남녀 상품 URL이 목록으로 연결되어 현재 가격·SKU·폭·재고 미확인입니다. 기존259,000원·와이드 없음 확정과 맥스쿠션 회복 효과를 현재 사실로 쓰지 않습니다. RR 브랜드37/31mm·6mm·남성255g/여성221g, 미국 공식265g은 기준 사이즈 미확인입니다. DOR44/38mm·6mm, 남성272g/9.3oz의 내부 단위 불일치와 여성212g/7.5oz를 그대로 구분합니다. RR은258g·39.7/33mm·6.7mm입니다. 주폼34.9AC는 흰 Helion HF 영역이고 보조52.3AC의 정확 위치는 미확인입니다. PEBA계 Helion HF와 더 단단한 Helion 외곽·아래층을 구분합니다. 이전 세대가 아닌 별도 Cloudmonster2와의 34g 차이를 자동 성능 개선으로 읽지 않습니다. 450km·4:30~5:30 전용·힐 착지 무릎 위험·임상 회복 보장은 철회합니다. DOR Matt(남성US10)은 약간 길고 힐이 단단하며 전족 전환이 늦어 기대보다 덜 튄다고 느꼈습니다. David(남성US9.5)는 조금 길어도 고정이 좋았지만 낮은 양말에서 칼라 마찰을 느꼈습니다. Andrea(여성US9.5)는 앞코·고정이 좋고 칼라 마찰은 없었으며 본인의 중족 착지에서 탄성을 느꼈지만 빠르게 달릴 때 안쪽 전족 저항을 느꼈습니다. RR 내부 최광폭97.9mm·엄지73.3mm·높이26.6mm입니다. 엄지 부위 너비만으로 발 전체가 넓다고 하거나 모든 러너의 반업을 정하지 않습니다. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
@@ -43,11 +42,8 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'standard',
-    winterCompatibility: 'good',
-    summerCompatibility: 'good',
   },
   priceAnalysis: {
-    valueRating: 5,
     priceTier: 'premium',
     alternatives: [
       'saucony-endorphin-speed-5',

@@ -8,7 +8,6 @@ export const shoe: Shoe = {
   name: '클라우드러너 3 맥스',
   image: '/images/shoes/on/cloudrunner3/side.webp',
   category: '안정화',
-  rating: 4.4,
   description: "Helion HF위층 · Helion아래층 · CloudTec·힐클립 구조. 한국공식남성공시, 기준 사이즈미공시 330g·드롭 8mm, 독립 랩·스택·한국 현재 가격은 미확인입니다.",
   oneliner: "Helion HF위층 · Helion아래층 · CloudTec·힐클립 · 330g (한국공식남성공시, 기준 사이즈미공시)",
   editorComment: "2026-11-10 원문 재확인. 한국캐시남성 3MG30205363·여성 3WG30165363 Regular표시가격 219,000원, 공시남성 330g/여성 275g(사이즈미공시)·8mm 입니다. 현재 가격·와이드·선택재고는미확인입니다. 정확 Runner3Max의독립 랩·스택·내부치수·SA·리턴·경도는미확인입니다. 기존 38/30mm 제 3자실측·600km수명·해외 306g 기준을검증된현재수치로반복하지않습니다. 남성 330g·여성 275g 과다른모델랩무게를동일사이즈라고계산하지않습니다. 기존 600km·km당 365원·체중부담/평발/과내전보호·중립러너금지를철회합니다. Helion HF이름만으로정확배합·기본형과완전히같은지지효과를확정하지 않습니다. 정확 Max의 DOR 개별리뷰는미확인입니다. 기본 Runner3의 David주행·핏을 Max의체감으로옮기지않습니다. ‘쿠션등급높음’이임상보호·장거리완주효과를증명하지않습니다. 한국캐시 Regular·정사이즈는제조사안내이며현재 와이드부재·개인의발적합 보장이아닙니다. 실제규격에서힐클립압박·앞코·발등고정을확인하세요. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.",
@@ -26,11 +25,8 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'standard',
-    winterCompatibility: 'good',
-    summerCompatibility: 'fair',
   },
   priceAnalysis: {
-    valueRating: 7,
     priceTier: 'premium',
     alternatives: [
       'on-cloudrunner-3',

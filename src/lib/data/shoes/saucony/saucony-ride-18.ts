@@ -13,7 +13,6 @@ export const shoe: Shoe = {
     '/images/shoes/saucony/ride18/outsole.webp',
   ],
   category: '입문화',
-  rating: 4,
   description: 'PWRRUN+ 비즈TPU · PWRRUN+ 인솔 구조의 라이드 18. RunRepeat 실험실 검체 255g·35/26.6mm. 한국 현재 정가 미확인.',
   oneliner: 'PWRRUN+ 비즈TPU · PWRRUN+ 인솔 · 255g (RunRepeat 실험실 검체)',
   editorComment: '2026-11-10 원문 재확인. 한국 공식 캐시: women S11001-105 와이드 (상품명) 정가159,000원·할인캐시103,350원. 현재 가격·폭별 선택 재고는 미확인입니다. 옵션 목록·장바구니·품절 문구를 현재 전체 재고로 해석하지 않습니다. 한국 무게·전체 스택 공시가 없는 제품은 해외 소개로 채우지 않습니다. 여성 와이드 검색 원문만 확인했고 현재 URL은 홈으로 이동합니다. 남성·다른 폭의 부재나 단종을 뜻하지 않습니다. DOR 소개 274g(남성 US9)/232g(여성 US8)·37/29mm·8mm와 RR255g·35/26.6mm·8.4mm를 구분합니다. RR 재전재 브랜드269g은 사이즈 미확인입니다. 현행 원문에서 전족 SA와 힐/전족 리턴은 미확인입니다. 기존 54% 리턴을 반복하지 않습니다. 41.3AC와 구방식 HA는 환산하지 않습니다. 통기성 구방식5/5로 여름 과열 없음·한국 전천후를 보장하지 않고 600km·km당비용·질환별 보호를 제거했습니다. DOR 직접403 이후 검색에 노출된 원문 캐시를 확인했습니다. DOR Matt(남성 US10)는 앞발 측면의 낮은 볼륨·초기 테이퍼와 느껴지는 힐 카운터, 어색한 내측 힐 전환을 적었습니다. David(남성 US9.5)는 약간의 앞코 측면 압박은 있었지만 카운터 패딩은 괜찮았고 완만한 로커·균형 있는 전환을 좋아했습니다. RR 내부 최광폭 94.4mm·엄지 73mm·높이 32mm입니다. 전체 발 적합성이나 한국 와이드 규격으로 바꾸지 말고 실제 길이·높이·고정을 함께 확인하세요. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
@@ -41,8 +40,6 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'standard',
-    winterCompatibility: 'good',
-    summerCompatibility: 'good',
   },
   targetUsers: {
     recommended: [
@@ -61,7 +58,6 @@ export const shoe: Shoe = {
     'RR 내부 최광폭 94.4mm·엄지 73mm·높이 32mm입니다. 전체 발 적합성이나 한국 와이드 규격으로 바꾸지 말고 실제 길이·높이·고정을 함께 확인하세요.',
   ],
   priceAnalysis: {
-    valueRating: 8,
     priceTier: 'mid',
     alternatives: [
       'asics-gel-nimbus-28',

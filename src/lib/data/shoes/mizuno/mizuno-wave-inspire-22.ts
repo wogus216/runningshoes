@@ -11,7 +11,6 @@ export const shoe: Shoe = {
     '/images/shoes/mizuno/waveinspire22/side.webp',
   ],
   category: '안정화',
-  rating: 4,
   price: 169000,
   description: '질소 주입 ENERZY NXT · 힐~중족 Wave Plate 구조의 웨이브 인스파이어 22. RunRepeat 실험실 검체 280g·36.6/29mm. 한국 확인 가격 169,000원.',
   oneliner: '질소 주입 ENERZY NXT · 힐~중족 Wave Plate · 280g (RunRepeat 실험실 검체)',
@@ -40,8 +39,6 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'standard',
-    winterCompatibility: 'good',
-    summerCompatibility: 'good',
     wideOptions: true,
   },
   targetUsers: {
@@ -56,7 +53,6 @@ export const shoe: Shoe = {
   },
   priceAnalysis: {
     msrp: 169000,
-    valueRating: 8,
     priceTier: 'mid',
     alternatives: [
       'mizuno-wave-inspire-21',

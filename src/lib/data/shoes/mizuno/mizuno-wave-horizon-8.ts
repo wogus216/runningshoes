@@ -15,7 +15,6 @@ export const shoe: Shoe = {
     '/images/shoes/mizuno/wavehorizon8/outsole.webp',
   ],
   category: '안정화',
-  rating: 4,
   description: 'Enerzy NXT 위층 · Enerzy 아래층 · 내측 고무월·폼 Wave 구조의 웨이브 호라이즌 8. DOR 소개 공시 · 독립 랩 미확인 323g·42/34mm. 한국 현재 정가 미확인.',
   oneliner: 'Enerzy NXT 위층 · Enerzy 아래층 · 내측 고무월·폼 Wave · 323g (DOR 소개 공시 · 독립 랩 미확인)',
   editorComment: '2026-11-10 원문 재확인. 한국 공식 캐시: J1GC253102 성별 표기 미확인 SW (raw variant only) 소비자가179,000원·판매캐시179,000원; J1GC253154 성별 표기 미확인 SW (raw variant only) 소비자가179,000원·판매캐시179,000원. 현재 가격·폭별 선택 재고는 미확인입니다. 공통 SOLD OUT 템플릿과 장바구니 버튼을 실제 재고로 보지 않으며 검색 미발견을 단종·미출시로 단정하지 않습니다. 323g(남성 US9)/275g(여성 US8)·42/34mm·8mm는 DOR 소개 공시입니다. 정확8 RR 독립 랩은 미확인으로 전작 수치나 소개를 랩 실측으로 바꾸지 않습니다. 한국 SW를 임의로2E/4E로 변환하지 않습니다. EVA450km 실험의 다른 신발 결과로 이 모델900km를 보장한 설명과 심한 과내전 해법·6~8분/km 처방·교정 등급을 제거했습니다. DOR Matt(남성 US10)는 넓고 높은 앞발·테이퍼, 빠른 회전의 약간 움직임과 단단한 둥근 카운터를 적었습니다. 부드럽지만 무겁고 힐이 조금 거칠어 이지·롱런을 선호했습니다. Bach(남성 US9.5)는 힐록으로 고정이 좋아지고 데일리·롱런·스트라이드를 즐겼습니다. 한국SW상품과 이들의 미확인 폭 검체를 같은 규격으로 보지 않습니다. 정확 모델 독립 랩 내부 치수는 미확인입니다. 한국 폭 규격·발가락 위 공간·중족·힐 고정을 실제 상품에서 확인하세요. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
@@ -32,8 +31,6 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'wide',
-    winterCompatibility: 'good',
-    summerCompatibility: 'good',
   },
   targetUsers: {
     recommended: [
@@ -52,7 +49,6 @@ export const shoe: Shoe = {
     '정확 모델 독립 랩 내부 치수는 미확인입니다. 한국 폭 규격·발가락 위 공간·중족·힐 고정을 실제 상품에서 확인하세요.',
   ],
   priceAnalysis: {
-    valueRating: 8,
     priceTier: 'premium',
     alternatives: [
       'brooks-adrenaline-gts-25',

@@ -16,7 +16,6 @@ export const shoe: Shoe = {
     '/images/shoes/newbalance/screbel/top.webp',
   ],
   category: '레이싱',
-  rating: 5,
   description: 'SuperComp Rebel · Infinion · 지면 쪽 EnergyARC 구조의 SC Rebel V1. RunRepeat 실험실 검체 207g·38.3/29.5mm. 한국 현재 정가 미확인.',
   oneliner: 'SuperComp Rebel · Infinion · 지면 쪽 EnergyARC · 207g (RunRepeat 실험실 검체)',
   editorComment: '2026-11-10 원문 재확인. 한국 공식 캐시: 공식403·정확 상품 원문 미확인. 현재 가격·선택 재고는 미확인입니다. 판매캐시와 현재 결제가는 다를 수 있으며 글로벌 폭을 한국 판매 증거로 쓰지 않습니다. 미국 공식222g(남성9.5M)·4mm, DOR 소개218g(남성US9.5)/174g(여성US7)·40/36mm·4mm와 RR207g·38.3/29.5mm·8.8mm를 구분합니다. 같은 검체의 감량·개인 체감 드롭으로 고정하지 않습니다. 미국 공식은 Infinion과 propulsion plate만 명시합니다. RR A-TPU와 DOR의 TPEE/EVA 같다는 추측을 합쳐 조성을 확정하지 않습니다. 한국259,000원·2E 발매·8월22일 출시·450km·미확인 매체9.99점·입문자 금지 보장을 반복하지 않습니다. DOR Matt(남성US10)는 낮고 테이퍼진 레이스 같은 정사이즈 핏·좋은 거싯 고정, 튀는 힐·어색한 중족 돌출·이른 전족 구름을 적었습니다.35마일 동안 다용도 훈련과 추가 중족 구조를 좋아했지만 팀원들의 다른 핏에는 실제 사이즈가 없어 임의로 채우지 않습니다. RR 내부 최광폭 94.1mm·엄지 71.2mm·높이 24.8mm입니다. 너비 하나로 발등·길이·힐 고정이나 한국 와이드 적합을 보장하지 않습니다. 실제 규격·양말에서 접촉과 전환을 확인하세요. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
@@ -55,11 +54,8 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'narrow',
-    winterCompatibility: 'fair',
-    summerCompatibility: 'good',
   },
   priceAnalysis: {
-    valueRating: 8,
     priceTier: 'premium',
     alternatives: [
       'asics-superblast-3',

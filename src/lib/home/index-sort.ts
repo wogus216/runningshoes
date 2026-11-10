@@ -11,7 +11,7 @@ export const DEFAULT_QUOTA: Record<string, number> = {
  * (Array#sort는 안정 정렬이라 0을 반환하면 입력 순서가 보존됨) — 어떤 경우에도 NaN 비교가
  * 발생하지 않아 결과가 결정적이다.
  */
-export function balancedByCategory<T extends { category: string; rating: number; price?: number }>(
+export function balancedByCategory<T extends { category: string; rating?: number; price?: number }>(
   shoes: readonly T[],
   quota: Record<string, number> = DEFAULT_QUOTA,
 ): T[] {
@@ -20,7 +20,7 @@ export function balancedByCategory<T extends { category: string; rating: number;
     const picked = shoes
       .filter((s) => s.category === category)
       .sort((a, b) => {
-        const byRating = b.rating - a.rating;
+        const byRating = (b.rating ?? 0) - (a.rating ?? 0);
         if (byRating !== 0) return byRating;
         if (a.price === undefined && b.price === undefined) return 0;
         if (a.price === undefined) return 1;

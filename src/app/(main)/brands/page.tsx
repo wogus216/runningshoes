@@ -29,13 +29,8 @@ export default function BrandsIndexPage() {
     .map((b) => {
       const brandShoes = getCompleteShoesByBrand(b.name);
       const techCount = b.technologies.length;
-      const avgValue =
-        brandShoes.length > 0
-          ? brandShoes.reduce(
-              (acc, s) => acc + (s.priceAnalysis?.valueRating ?? 0),
-              0,
-            ) / brandShoes.length
-          : 0;
+      const knownValues = brandShoes.flatMap(shoe => shoe.priceAnalysis?.valueRating === undefined ? [] : [shoe.priceAnalysis.valueRating]);
+      const avgValue = knownValues.length ? knownValues.reduce((sum, value) => sum + value, 0) / knownValues.length : undefined;
       return {
         brand: b,
         count: brandShoes.length,
@@ -99,9 +94,7 @@ export default function BrandsIndexPage() {
               <div className="flex flex-wrap gap-3 mt-4 text-xs text-tertiary">
                 <span>모델 {count}개</span>
                 <span>기술 {techCount}개</span>
-                {avgValue > 0 && (
-                  <span>평균 가성비 {avgValue.toFixed(1)}/10</span>
-                )}
+                {avgValue !== undefined ? <span>평균 가성비 {avgValue.toFixed(1)}/10</span> : null}
               </div>
             </Link>
           </li>

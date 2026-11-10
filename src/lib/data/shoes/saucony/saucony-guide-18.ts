@@ -13,7 +13,6 @@ export const shoe: Shoe = {
     '/images/shoes/saucony/guide18/outsole.webp',
   ],
   category: '안정화',
-  rating: 4,
   description: 'PWRRUN · CenterPath 구조의 가이드 18. 실험실 278g·힐/전족부 36/27.7mm. 한국 현재 정가 미확인.',
   oneliner: '278g 실험실 무게 · PWRRUN · CenterPath',
   editorComment: '2026-11-09 원문 재확인. 한국 공식 가이드18 검색에서 정확한18세대 상품을 찾지 못해 현재 정가·성별·폭·SKU·재고는 미확인입니다. 검색된19세대의 가격·폭을18에 적용하지 않으며 단종·미출시로 판단하지 않습니다. DOR 소개 남성272g(US9)·여성245g(US8),35/29mm·드롭6mm. RR278g·36.0/27.7mm·8.3mm와 조건을 구분합니다. RR 원문은 인솔 인쇄8mm와 제조사 확인6mm도 함께 기록합니다. RR의 인솔 PWRRUN PB/Pebax 재료 설명은 한국 제조사 원문 사양으로 재확인하지 못했습니다. 메인폼 PWRRUN과 인솔 재료를 혼동하지 않습니다. DOR의 Matt(US10)은 대체로 길이가 맞지만 앞쪽 테이퍼·낮은 전방 볼륨으로 새끼발가락 압박과 토가드 마찰을 느꼈고 Bach(US9.5)은 보통 폭과 좋은 중족 고정을 느꼈습니다. 넓은 바닥·측벽의 CenterPath이며 전통 미디얼 포스트로 설명하지 않습니다. Matt의 젖은 노면 미끄러짐과 RR 접지시험은 다른 조건입니다. 한국 와이드 현재SKU는 미확인입니다. RR 내부 최광폭96.3mm·엄지73.6mm·높이34.3mm를 개인 발등 압박 부재로 해석하지 않습니다. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
@@ -41,8 +40,6 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'standard',
-    winterCompatibility: 'good',
-    summerCompatibility: 'good',
   },
   targetUsers: {
     recommended: [
@@ -61,7 +58,6 @@ export const shoe: Shoe = {
     '한국 와이드 현재SKU는 미확인입니다. RR 내부 최광폭96.3mm·엄지73.6mm·높이34.3mm를 개인 발등 압박 부재로 해석하지 않습니다.',
   ],
   priceAnalysis: {
-    valueRating: 8,
     priceTier: 'mid',
     alternatives: [
       'asics-gel-kayano-32',

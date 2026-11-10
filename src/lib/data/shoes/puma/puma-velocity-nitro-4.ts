@@ -15,7 +15,6 @@ export const shoe: Shoe = {
     '/images/shoes/puma/velocitynitro4/outsole.webp',
   ],
   category: '입문화',
-  rating: 5,
   price: 179000,
   description: '전장 단일 NITROFOAM · PUMAGRIP 구조의 벨로시티 나이트로 4. 실험실 224g·힐/전족부 33.7/24mm. 한국 확인 정가179,000원.',
   oneliner: '224g 실험실 무게 · 전장 단일 NITROFOAM · PUMAGRIP',
@@ -44,8 +43,6 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'narrow',
-    winterCompatibility: 'good',
-    summerCompatibility: 'excellent',
   },
   targetUsers: {
     recommended: [
@@ -65,7 +62,6 @@ export const shoe: Shoe = {
   ],
   priceAnalysis: {
     msrp: 179000,
-    valueRating: 10,
     priceTier: 'mid',
     alternatives: [
       'nike-pegasus-41',

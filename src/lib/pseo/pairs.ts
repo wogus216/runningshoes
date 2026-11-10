@@ -8,7 +8,86 @@ export type ShoePair = {
   category: string;
 };
 
-const TOP_PER_CATEGORY = 10; // 10C2=45 → 6 categories × 45 = 270 pairs max
+// 기존 비교 URL의 대상 풀을 고정한다. 선정은 성능 순위·추천 점수를 뜻하지 않는다.
+const COMPARISON_POOL: Record<string, readonly string[]> = {
+  "입문화": [
+    "puma-velocity-nitro-4",
+    "brooks-ghost-17",
+    "hoka-clifton-10",
+    "nike-pegasus-41",
+    "brooks-ghost-18",
+    "nike-pegasus-premium",
+    "adidas-supernova-rise-2",
+    "new-balance-880-v15",
+    "nike-pegasus-42",
+    "puma-velocity-nitro-5",
+    "saucony-ride-19"
+  ],
+  "데일리": [
+    "adidas-adizero-evo-sl",
+    "adidas-boston-13",
+    "asics-novablast-5",
+    "puma-deviate-pure-nitro",
+    "saucony-endorphin-speed-5",
+    "adidas-hyperboost-run",
+    "asics-novablast-6",
+    "nike-pegasus-plus",
+    "adidas-adizero-sl2",
+    "hoka-mach-6"
+  ],
+  "쿠션화": [
+    "adidas-supernova-rise-3",
+    "asics-megablast",
+    "brooks-ghost-max-3",
+    "hoka-mach-x-3",
+    "new-balance-1080-v14",
+    "new-balance-sc-trainer-v3",
+    "nike-vomero-18",
+    "new-balance-1080-v15",
+    "brooks-ghost-max-4",
+    "puma-deviate-nitro-4",
+    "brooks-glycerin-22",
+    "hoka-bondi-9",
+    "nike-vomero-plus"
+  ],
+  "안정화": [
+    "hoka-arahi-8",
+    "brooks-glycerin-gts-22",
+    "mizuno-wave-inspire-21",
+    "nike-structure-26",
+    "new-balance-860-v15",
+    "brooks-adrenaline-gts-25",
+    "mizuno-wave-horizon-8",
+    "mizuno-wave-inspire-22",
+    "new-balance-860-v14",
+    "saucony-guide-18",
+    "asics-gel-kayano-33"
+  ],
+  "레이싱": [
+    "asics-superblast-2",
+    "asics-superblast-3",
+    "new-balance-sc-rebel",
+    "nike-zoom-fly-6",
+    "puma-deviate-nitro-elite-3",
+    "puma-deviate-nitro-elite-4",
+    "asics-magic-speed-5",
+    "adidas-adios-pro-4",
+    "asics-magic-speed-4",
+    "asics-metaspeed-edge-plus"
+  ],
+  "트레일": [
+    "asics-gel-venture-10",
+    "kiprun-kipsummit-max",
+    "hoka-speedgoat-6",
+    "nike-acg-zegama-trail",
+    "saucony-peregrine-16",
+    "new-balance-hierro-v9",
+    "mizuno-neo-daichi-10",
+    "adidas-terrex-agravic-4",
+    "hoka-speedgoat-7",
+    "saucony-xodus-ultra-4"
+  ]
+};
 
 /** 미확인 스택을 비워도 기존 비교 URL은 유지한다. 표는 생체역학 미확인 값을 처리한다. */
 export function hasComparisonData(shoe: Shoe): boolean {
@@ -149,22 +228,9 @@ function topShoesByCategory(): Map<string, Shoe[]> {
     if (!m.has(s.category)) m.set(s.category, []);
     m.get(s.category)!.push(s);
   }
-  m.forEach((list, k) => {
-    list.sort((a, b) => {
-      const av = a.priceAnalysis?.valueRating ?? 0;
-      const bv = b.priceAnalysis?.valueRating ?? 0;
-      const ar = a.rating ?? 0;
-      const br = b.rating ?? 0;
-      // 동점이면 slug로 갈라 빌드마다 순서가 흔들리지 않게 한다
-      return br + bv - (ar + av) || a.slug.localeCompare(b.slug);
-    });
-
-    const picked = list.slice(0, TOP_PER_CATEGORY);
-    const inPool = new Set(picked.map((s) => s.slug));
-    for (const s of list) {
-      if (PINNED_SHOES.includes(s.slug) && !inPool.has(s.slug)) picked.push(s);
-    }
-    m.set(k, picked);
+  m.forEach((list, category) => {
+    const pool = new Set(COMPARISON_POOL[category] ?? []);
+    m.set(category, list.filter(shoe => pool.has(shoe.slug)));
   });
   return m;
 }

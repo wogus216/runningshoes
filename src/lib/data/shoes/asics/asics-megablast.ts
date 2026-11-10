@@ -15,7 +15,6 @@ export const shoe: Shoe = {
     '/images/shoes/asics/megablast/5.webp',
   ],
   category: '쿠션화',
-  rating: 5,
   price: 299000,
   description: 'FF Turbo² · 비플레이트 로커 구조의 메가블라스트. 실험실 218g·힐/전족부 45.1/35.2mm. 한국 확인 정가299,000원.',
   oneliner: '218g 실험실 무게 · FF Turbo² · 비플레이트 로커',
@@ -45,8 +44,6 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'standard',
-    winterCompatibility: 'good',
-    summerCompatibility: 'good',
   },
   targetUsers: {
     recommended: [
@@ -66,7 +63,6 @@ export const shoe: Shoe = {
   ],
   priceAnalysis: {
     msrp: 299000,
-    valueRating: 8,
     priceTier: 'premium',
     alternatives: [
       'hoka-bondi-9',

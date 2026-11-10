@@ -15,7 +15,6 @@ export const shoe: Shoe = {
     '/images/shoes/on/cloudsurfermax/angle.webp',
   ],
   category: '쿠션화',
-  rating: 4,
   description: 'Helion · 두 층 CloudTec Phase 구조의 클라우드서퍼 맥스. RunRepeat 실험실 검체 292g·37.3/29.4mm. 한국 현재 정가 미확인.',
   oneliner: 'Helion · 두 층 CloudTec Phase · 292g (RunRepeat 실험실 검체)',
   editorComment: '2026-11-10 원문 재확인. 한국 공식 캐시: men 3MF30434287 Regular / 레귤러 표시219,000원; women 3WF3022 Regular / 레귤러 표시219,000원. 현재 가격·폭·선택 재고는 미확인입니다. 캐시 수량·알림·장바구니 버튼을 현재 재고로 쓰지 않습니다. 한국 남성292g·여성262g은 기준 사이즈 미공시·6mm입니다. DOR 소개292g(남성US9)·6mm와 RR292g·37.3/29.4mm·7.9mm를 구분합니다. RR43.8AC·리턴48.3/49.4%와 한국의 soft Helion 광고는 다른 종류의 근거입니다. Max가 모두에게 불필요·평발 지지 보장·한국 와이드 없음·500km·미확인 매체 점수 단정을 제거했습니다. DOR 원문은 직접403 뒤 원문 캐시로 확인했습니다. David(남성US9.5)는 보통 힐/중족과 MTP 부근 여유·빠른 앞코 테이퍼, 얇은 혀의 끈 압박을 적었습니다. 압축이 적은 단단한 로커는 자신이 좋아했으나 반응성은 낮고 다른 러너에게 너무 단단할 수도 있다고 봤습니다. RR 내부 최광폭 96.1mm·엄지 71.4mm·높이 26.2mm입니다. 너비 하나로 발등·길이·힐 고정이나 한국 와이드 적합을 보장하지 않습니다. 실제 규격·양말에서 접촉과 전환을 확인하세요. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
@@ -43,11 +42,8 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'narrow',
-    winterCompatibility: 'good',
-    summerCompatibility: 'fair',
   },
   priceAnalysis: {
-    valueRating: 6,
     priceTier: 'premium',
     alternatives: [
       'asics-gel-nimbus-28',

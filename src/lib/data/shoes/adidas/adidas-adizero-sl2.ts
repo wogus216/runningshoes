@@ -13,7 +13,6 @@ export const shoe: Shoe = {
     '/images/shoes/adidas/adizerosl2/back.webp',
   ],
   category: '데일리',
-  rating: 4,
   price: 149000,
   description: 'Lightstrike 2.0 외피 · 전장 Lightstrike Pro 인서트 · 비플레이트 구조의 아디제로 SL2. 실험실 245g·힐/전족부 34.9/26.7mm. 한국 확인 정가149,000원.',
   oneliner: '245g 실험실 무게 · Lightstrike 2.0 외피 · 전장 Lightstrike Pro 인서트 · 비플레이트',
@@ -42,8 +41,6 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'standard',
-    winterCompatibility: 'fair',
-    summerCompatibility: 'good',
     wideOptions: true,
   },
   targetUsers: {
@@ -64,7 +61,6 @@ export const shoe: Shoe = {
   ],
   priceAnalysis: {
     msrp: 149000,
-    valueRating: 8,
     priceTier: 'mid',
     alternatives: [
       'nike-rival-fly-4',

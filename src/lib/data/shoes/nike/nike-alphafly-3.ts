@@ -14,7 +14,6 @@ export const shoe: Shoe = {
     '/images/shoes/nike/alphafly3/pair.webp',
   ],
   category: '레이싱',
-  rating: 5,
   description: '연속 ZoomX · 전장 카본 Flyplate · 전족 Air Zoom pods 구조의 알파플라이 3. 실험실 201g·힐/전족부 38.1/29.6mm. 한국 현재 정가 미확인.',
   oneliner: '201g 실험실 무게 · 연속 ZoomX · 전장 카본 Flyplate · 전족 Air Zoom pods',
   editorComment: "2026-11-09 원문 재확인. 한국 남성 FD8311-003·여성 FD8315-105 후보 URL 은 web404·Aside구매불가 안내로 현재 정가·성별별판매 SKU·폭·재고는 미확인입니다. 해당 URL 실패를 모델전체 단종·미출시로 해석하지 않으며 다른 SKU 현재 판매는 별도입니다. RR Proto검체 실측 201g·38.1/29.6mm·드롭 8.5mm. DOR 소개 198g(남성 US9)·174g(여성 US8),40/32mm·8mm 는 한국현재공시로 대입하지 않습니다. 일반 US9정책과 실제검체 SKU·폭 확인은 다릅니다. RR 하부 ZoomX34.5AC·상부 47.2AC 는 서로 다른 층입니다. 다른신발의 450km연구를 이 모델 200km수명으로 옮기지 않습니다. 원형 Vaporfly4% 절개연구도 이 모델 의 폼단독효과 증명이 아닙니다. 기록개선·무릎보호·공통최적 페이스 보장을 철회합니다. DOR Matt(남성 US10)은 약간 짧음과 초기 토가드 쓸림·끈 압박, Andrea(여성 US9.5)는 짧은 길이·발톱 멍과 아치 측벽을 느꼈습니다. David(남성 US9.5)는 약간 길게 느껴 사이징 의견이 갈렸습니다. Andrea는 젖은 길 접지가 문제없었지만 David는 고무 없는 중족부에서 미끄러짐을 보고했습니다. 개인 경험을 공통 반 사이즈 업·Sub3전용·느린페이스 역효과로 합치지 않습니다. 한국 와이드 현재 SKU 는 미확인입니다. RR 내부 최광폭 93.3mm·엄지 75.3mm·높이 33.7mm 와 리뷰어가 느낀 낮은 볼륨은 다른 검체·측정·개인 조건입니다. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.",
@@ -43,8 +42,6 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'wide',
-    winterCompatibility: 'poor',
-    summerCompatibility: 'fair',
   },
   targetUsers: {
     recommended: [
@@ -63,7 +60,6 @@ export const shoe: Shoe = {
     "한국 와이드 현재 SKU 는 미확인입니다. RR 내부 최광폭 93.3mm·엄지 75.3mm·높이 33.7mm 와 리뷰어가 느낀 낮은 볼륨은 다른 검체·측정·개인 조건입니다.",
   ],
   priceAnalysis: {
-    valueRating: 6,
     priceTier: 'super-premium',
     alternatives: [
       'adidas-adios-pro-4',

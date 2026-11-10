@@ -13,7 +13,6 @@ export const shoe: Shoe = {
     '/images/shoes/saucony/kinvara16/outsole.webp',
   ],
   category: '데일리',
-  rating: 4,
   price: 159000,
   description: 'PWRRUN · 비플레이트 · 낮은 드롭 구조의 킨바라 16. RunRepeat 실험실 검체 207g·28/23.5mm. 한국 확인 가격 159,000원.',
   oneliner: 'PWRRUN · 비플레이트 · 낮은 드롭 · 207g (RunRepeat 실험실 검체)',
@@ -43,8 +42,6 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'narrow',
-    winterCompatibility: 'fair',
-    summerCompatibility: 'good',
   },
   targetUsers: {
     recommended: [
@@ -64,7 +61,6 @@ export const shoe: Shoe = {
   ],
   priceAnalysis: {
     msrp: 159000,
-    valueRating: 7,
     priceTier: 'mid',
     alternatives: [
       'nike-pegasus-41',

@@ -8,7 +8,6 @@ export const shoe: Shoe = {
   name: '테렉스 아그라빅 4',
   image: '/images/shoes/adidas/agravic4/side.webp',
   category: '트레일',
-  rating: 4.5,
   description: 'LIGHTSTRIKE · Continental 아웃솔 · 중창 메시 층 구조의 테렉스 아그라빅 4. RunRepeat 실험실 검체 283g·32.6/23.5mm. 한국 현재 정가 미확인.',
   oneliner: 'LIGHTSTRIKE · Continental 아웃솔 · 중창 메시 층 · 283g (RunRepeat 실험실 검체)',
   editorComment: '2026-11-09 원문 재확인. 한국 공식 캐시는 남성KJ8870 169,000원, KJ3786 169,000원·할인118,300원, 여성KJ1292 169,000원·할인135,200원입니다. 여성은2개월전·9월종료 프로모션이어서 현재혜택으로 쓰지 않습니다. 현재 가격·폭·선택 재고는 미확인입니다. RR 브랜드35/27mm·8mm·남성277g/여성231g(사이즈 미확인), 실제 RR283g·32.6/23.5mm·9.1mm를 구분합니다. 한국공식 검체 무게·사이즈 조건은 미확인입니다. LIGHTSTRIKE를 LightstrikePro로 바꾸지 않습니다. 국소 아웃솔마모0.5mm·갑피1/5·힐패딩2/5는 서로 다른 부위 시험이며550km 수명은 아닙니다. 구방식 통기1/5를 한국 특정 계절의 금지 규칙으로 만들지 않습니다. 기존 젖은 흙·진흙 안전 보장과 임상등급·고정페이스를 철회했습니다. 정확한 아그라빅4 DOR 개별 리뷰를 이번 범위에서 확보하지 못했습니다. 다른 Speed·Ultra·Flow의 체감을 채우지 않았습니다. RR은3.1mm 러그를 덜 기술적인 지형 중심으로 설명하지만 젖은 콘크리트 계수0.70을 바위·진흙 접지 보장으로 확대하지 않습니다. RR 내부 최광폭97.9mm·엄지73mm·높이25.9mm입니다. 테이퍼·고정과 내려갈 때 앞코 접촉을 실제 규격에서 확인하세요. 한국 현재 와이드·전체 발볼 적합은 미확인입니다. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
@@ -37,8 +36,6 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'standard',
-    winterCompatibility: 'good',
-    summerCompatibility: 'good',
   },
   targetUsers: {
     recommended: [
@@ -57,7 +54,6 @@ export const shoe: Shoe = {
     'RR 내부 최광폭97.9mm·엄지73mm·높이25.9mm입니다. 테이퍼·고정과 내려갈 때 앞코 접촉을 실제 규격에서 확인하세요. 한국 현재 와이드·전체 발볼 적합은 미확인입니다.',
   ],
   priceAnalysis: {
-    valueRating: 7,
     priceTier: 'premium',
     alternatives: [
       'asics-metafuji-trail',

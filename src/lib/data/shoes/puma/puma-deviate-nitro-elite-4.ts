@@ -15,7 +15,6 @@ export const shoe: Shoe = {
     '/images/shoes/puma/deviatenitroelite4/detail.webp',
   ],
   category: '레이싱',
-  rating: 5,
   description: 'NITROFOAM ELITE(A-TPU, RR 귀속) · 카본 PWRPLATE 구조의 디비에이트 나이트로 엘리트 4. RunRepeat 실험실 검체 173g·37.2/28.3mm. 한국 현재 정가 미확인.',
   oneliner: 'NITROFOAM ELITE(A-TPU, RR 귀속) · 카본 PWRPLATE · 173g (RunRepeat 실험실 검체)',
   editorComment: '2026-11-10 원문 재확인. 한국 공식 캐시는 312127_05 정가289,000원·표시260,100원, 312128_03 정가289,000원·표시289,000원입니다. 현재 가격·선택재고·폭은 미확인입니다. AP를 와이드로 해석하지 않으며 캐시 품절을 현재 전국 품절로 쓰지 않습니다. 한국남성170g(UK8)·40/32mm·8mm, DOR170g(남성US9)/147g(여성US8)·38/30mm·8mm, RR브랜드177/154g(사이즈 미확인)·40/32mm·8mm, RR173g·37.2/28.3mm·8.9mm를 구분합니다. DOR 인솔 비분리와 RR 분리 가능 표가 충돌합니다. 힐 카운터 자극도 개인별로 달랐습니다.400km 공식 권장 문구가 있어도 검증된 개인 수명이 아니며 km당722원·착지 전용·정사이즈 보장은 철회합니다. DOR 정확 리뷰는 직접403이어서 검색엔진에 보존된 원문 본문 확인 범위입니다. Matt(남성US10)은 정사이즈·전족 여유에도 얇은 힐 카운터 자극과 낮은 강도에서 좁은 중족의 흔들림을 느꼈습니다. Andrea(여성US9.5)는 앞코·힐 고정이 편했지만 본인의 중족 착지와 전족 형상이 맞지 않았습니다. 두 경험을 모든 착지 유형의 금지로 바꾸지 않습니다. RR 내부 최광폭93.6mm·엄지74.8mm·높이26.5mm입니다. 한국 현재 와이드·문자 폭은 미확인이고 개인의 길이·발등·힐 고정을 별도로 확인합니다. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
@@ -43,8 +42,6 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'standard',
-    winterCompatibility: 'fair',
-    summerCompatibility: 'excellent',
   },
   targetUsers: {
     recommended: [
@@ -63,7 +60,6 @@ export const shoe: Shoe = {
     'RR 내부 최광폭93.6mm·엄지74.8mm·높이26.5mm입니다. 한국 현재 와이드·문자 폭은 미확인이고 개인의 길이·발등·힐 고정을 별도로 확인합니다.',
   ],
   priceAnalysis: {
-    valueRating: 8,
     priceTier: 'premium',
     alternatives: [
       'nike-alphafly-3',

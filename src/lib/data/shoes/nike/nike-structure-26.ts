@@ -14,7 +14,6 @@ export const shoe: Shoe = {
     '/images/shoes/nike/structure26/pair.webp',
   ],
   category: '안정화',
-  rating: 4,
   price: 169000,
   description: '풀 렝스 ReactX · 중족부 지지 랩 구조의 스트럭처 26. 실험실 296g·힐/전족부 36.1/26mm. 한국 확인 정가169,000원.',
   oneliner: '296g 실험실 무게 · 풀 렝스 ReactX · 중족부 지지 랩',
@@ -42,8 +41,6 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'standard',
-    winterCompatibility: 'good',
-    summerCompatibility: 'fair',
     wideOptions: true,
   },
   targetUsers: {
@@ -64,7 +61,6 @@ export const shoe: Shoe = {
   ],
   priceAnalysis: {
     msrp: 169000,
-    valueRating: 9,
     priceTier: 'mid',
     alternatives: [
       'asics-gel-kayano-32',

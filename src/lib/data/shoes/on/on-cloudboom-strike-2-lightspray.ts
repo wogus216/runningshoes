@@ -16,7 +16,6 @@ export const shoe: Shoe = {
     '/images/shoes/on/cloudboomstrike2ls/outsole.webp',
   ],
   category: '레이싱',
-  rating: 4.5,
   description: 'LightSpray 무끈 어퍼 · Helion HF 두 층 · 카본 Speedboard 구조의 라이트스프레이 클라우드붐 스트라이크 2. RunRepeat 실험실 검체 167g·36.1/33.4mm. 한국 현재 정가 미확인.',
   oneliner: 'LightSpray 무끈 어퍼 · Helion HF 두 층 · 카본 Speedboard · 167g (RunRepeat 실험실 검체)',
   editorComment: '2026-11-10 원문 재확인. 한국 공식 캐시: unisex 3UG30022929 Regular / 레귤러 표시419,000원; unisex 3UG30025363 Regular / 레귤러 표시419,000원. 현재 가격·폭·선택 재고는 미확인입니다. 캐시 수량·알림·장바구니 버튼을 현재 재고로 쓰지 않습니다. 한국158g(기준 사이즈 미공시)·5mm와 RR167g·36.1/33.4mm·2.7mm를 구분합니다. RR 재전재 브랜드40/35mm도 지정 위치의 실제36.1/33.4mm와 별도입니다. 현행 열린 RR 전족 리턴76.2%는 확인했지만 힐은 미확인입니다. 위치 불명 본문76%·스페인 검색 캐시 힐76%를 현행 힐 실측으로 승격하지 않습니다. 30.3AC는 판 아래·36AC는 위 드롭인입니다. 인솔 표false·본문탈착드롭인이 상충하고 원인은 미확인입니다.300km·젖은 대회 보장·힐 착지 금지를 제거했습니다. 정확 LightSpray Strike2의 DOR 개별 착화 리뷰는 미확인입니다. 찾은 DOR Strike2는 메시 어퍼·남성US9 200g의 일반형으로 확인해 제외했습니다. 다른 모델의 Matt 의견을 LS 실착으로 소개하지 않습니다. RR 내부 최광폭 91.5mm·엄지 69mm·높이 33.1mm입니다. 너비 하나로 발등·길이·힐 고정이나 한국 와이드 적합을 보장하지 않습니다. 실제 규격·양말에서 접촉과 전환을 확인하세요. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
@@ -46,11 +45,8 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'narrow',
-    winterCompatibility: 'excellent',
-    summerCompatibility: 'excellent',
   },
   priceAnalysis: {
-    valueRating: 4,
     priceTier: 'super-premium',
     alternatives: [
       'nike-alphafly-3',

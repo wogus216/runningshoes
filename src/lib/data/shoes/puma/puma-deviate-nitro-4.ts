@@ -15,7 +15,6 @@ export const shoe: Shoe = {
     '/images/shoes/puma/deviatenitro4/top.webp',
   ],
   category: '쿠션화',
-  rating: 4.5,
   price: 219000,
   description: '두 NITRO 층 · 카본 합성 PWRPLATE · PUMAGRIP 구조의 디비에이트 나이트로 4. RunRepeat 실험실 검체 247g·33.6/26.6mm. 한국 확인 가격 219,000원.',
   oneliner: '두 NITRO 층 · 카본 합성 PWRPLATE · PUMAGRIP · 247g (RunRepeat 실험실 검체)',
@@ -45,8 +44,6 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'narrow',
-    winterCompatibility: 'good',
-    summerCompatibility: 'excellent',
   },
   targetUsers: {
     recommended: [
@@ -66,7 +63,6 @@ export const shoe: Shoe = {
   ],
   priceAnalysis: {
     msrp: 219000,
-    valueRating: 8,
     priceTier: 'high',
     alternatives: [
       'saucony-endorphin-speed-5',

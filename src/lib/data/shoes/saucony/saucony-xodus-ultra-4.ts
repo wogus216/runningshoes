@@ -11,7 +11,6 @@ export const shoe: Shoe = {
     '/images/shoes/saucony/xodusultra4/side.jpg',
   ],
   category: '트레일',
-  rating: 4.4,
   description: 'PWRRUN PB 코어 · PWRRUN EVA 프레임 · Vibram 구조의 엑소더스 울트라 4. RunRepeat 실험실 검체 312g·37.6/31.1mm. 한국 공식 확인 정가 219,000원 (2026-11-10).',
   oneliner: 'PWRRUN PB 코어 · PWRRUN EVA 프레임 · Vibram · 312g (RunRepeat 실험실 검체)',
   editorComment: '2026-11-10 원문 재확인. 2026-11-10 09:41~09:44 KST 한국 공식 HTTP 원문 확인: S21032-245 (men·M(일반)) 정가 219,000원·표시 판매/할인가 153,300원. 정가는 소비자가 필드 기준입니다. 옵션 선택·최종 결제·규격별 재고는 미확인입니다. 쿠폰을 임의 차감하지 않습니다. HTML 할인 필드 153,300원과 JSON-LD Offer 219,000원은 다르므로 정가 219,000원과 구분합니다. 최종 결제가는 미확인입니다. RR312g·37.6/31.1mm·6.5mm와 재전재 브랜드309/277g(기준 사이즈 미확인)·36/30mm·6mm, RTR소개36/30/6을 나눕니다. 기존309g을 RR실측으로 부르지 않습니다. RR 높이24.5mm와 Jen의 고정·Jeff의 하강 슬립은 다른 발·검체 조건입니다. RR3.5mm·RTR4mm 러그도 나눕니다. PB8%증량·50km 이상 덜 아픈 완주·30km 기준 추천·700km·현재 한국 와이드 부재를 이번 원문으로 보장하지 않습니다. 정확 DOR 리뷰는 미확인입니다. RTR Jen(여성US8.5·283g·저볼륨 발)은 정사이즈와 미끄러짐 없는 고정, 편한 반응을 느꼈으나 하천 뒤 배수가 느리고 끈이 풀렸습니다. Western States 코스에서3회65마일·최대4.5시간은 개인 시험입니다. Jeff는 편한 여유에도 급경사 하강에서 앞으로 밀렸고 강한 이중/삼중 매듭에서는 끈 문제가 없었습니다. Jeff 사이즈는 미확인입니다. RR 내부 최광폭 96.6mm·엄지 71.6mm·높이 24.5mm입니다. 한국 여성·와이드의 치수로 직접 대입하지 말고 실제 길이·발가락 위 공간·힐 고정을 확인하세요. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
@@ -40,11 +39,8 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'narrow',
-    winterCompatibility: 'excellent',
-    summerCompatibility: 'fair',
   },
   priceAnalysis: {
-    valueRating: 7,
     priceTier: 'premium',
     alternatives: [
       'saucony-peregrine-16',

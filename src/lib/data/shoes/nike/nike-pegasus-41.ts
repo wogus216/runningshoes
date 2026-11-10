@@ -14,7 +14,6 @@ export const shoe: Shoe = {
     '/images/shoes/nike/pegasus41/pair.webp',
   ],
   category: '입문화',
-  rating: 4,
   price: 159000,
   description: 'ReactX · 힐/전족부 Air Zoom 유닛 구조의 페가수스 41. 실험실 281g·힐/전족부 33.6/22.2mm. 한국 확인 정가159,000원.',
   oneliner: '281g 실험실 무게 · ReactX · 힐/전족부 Air Zoom 유닛',
@@ -42,8 +41,6 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'narrow',
-    winterCompatibility: 'good',
-    summerCompatibility: 'fair',
   },
   targetUsers: {
     recommended: [
@@ -63,7 +60,6 @@ export const shoe: Shoe = {
   ],
   priceAnalysis: {
     msrp: 159000,
-    valueRating: 9,
     priceTier: 'mid',
     alternatives: [
       'asics-gel-nimbus-28',

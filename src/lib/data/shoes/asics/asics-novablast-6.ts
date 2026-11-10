@@ -15,7 +15,6 @@ export const shoe: Shoe = {
     "/images/shoes/asics/novablast6/outsole.webp"
   ],
   "category": "데일리",
-  "rating": 4.5,
   "status": "new",
   "price": 179000,
   "description": "FF BLAST MAX + 전족부 FF TURBO² 미드솔을 쓰는 노바블라스트 6. 한국 공식 정가 179,000원. 남성 일반 1011C243.250 / 남성 2E 1011C242.002 / 여성 일반 1012C008.250.",
@@ -47,8 +46,6 @@ export const shoe: Shoe = {
   },
   "koreanFootFit": {
     "toBoxWidth": "narrow",
-    "winterCompatibility": "excellent",
-    "summerCompatibility": "good",
     "wideOptions": true
   },
   "targetUsers": {
@@ -69,7 +66,6 @@ export const shoe: Shoe = {
   ],
   "priceAnalysis": {
     "msrp": 179000,
-    "valueRating": 8,
     "priceTier": "mid",
     "alternatives": [
       "asics-novablast-5",

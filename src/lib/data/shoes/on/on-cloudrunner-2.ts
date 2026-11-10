@@ -15,7 +15,6 @@ export const shoe: Shoe = {
     '/images/shoes/on/cloudrunner2/outsole.webp',
   ],
   category: '입문화',
-  rating: 4,
   description: 'Helion · CloudTec · 힐클립·사이드월 · Speedboard 없음 구조의 클라우드러너 2. 실험실 275g·힐/전족부 33.6/25.1mm. 한국 현재 정가 미확인.',
   oneliner: '275g 실험실 무게 · Helion · CloudTec · 힐클립·사이드월 · Speedboard 없음',
   editorComment: '2026-11-09 원문 재확인. 한국 공식 클라우드러너2 기본형 후보URL이 한국shop으로 이동해 현재 정가·성별·폭·SKU·재고를 확인하지 못했습니다. 검색에서 찾지 못한 것은 단종·국내 미판매 확정이 아닙니다. 클라우드러너3와2 Waterproof의 가격을 대체 사용하지 않습니다. DOR 소개 남성277g(US9)·여성240g(US8),39/29mm·드롭10mm. RR275g·33.6/25.1mm·8.5mm와 큰 차이가 있어 출처를 구분합니다. RR SA 본문은 힐·전족부를 뒤집어 적었으나 요약표·실제 선택기는 힐126/전족부98로 일치해 이 값을 채택합니다. DOR의 가벼운 안정성 분류와 RR의 중립~가벼운 안정성 표현은 임상 교정 등급이 아닙니다. 기존 단종 확정·500km 교체 보장은 철회합니다. DOR의 Matt(남성US10)은 처음 길게 느꼈지만 길들임 후 길이가 맞았고 앞발·힐은 넓고 중족부 볼륨은 낮다고 평가했습니다. 힐 고정에 조임이 필요했고 단단한 일상 주행·보행 성격으로 느꼈습니다. David의FIT 문단 첫 모델명이 Cloudmonster2로 잘못 쓰여 해당 착화감의 모델 귀속이 모호하므로 확정 요약에 쓰지 않습니다. 한국 와이드 현재SKU는 미확인입니다. RR 내부 최광폭94.6mm·엄지72.4mm·높이27.5mm와 리뷰어의 넉넉한 느낌은 다른 개념입니다. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
@@ -43,11 +42,8 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'standard',
-    winterCompatibility: 'good',
-    summerCompatibility: 'good',
   },
   priceAnalysis: {
-    valueRating: 7,
     priceTier: 'mid',
     alternatives: [
       'asics-gel-kayano-32',

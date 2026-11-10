@@ -253,9 +253,9 @@ export function EnhancedCompareTable({ shoes, onRemove }: EnhancedCompareTablePr
             />
             <CompareRow
               label="평점"
-              values={shoes.map(s => s.rating)}
+              values={shoes.map(s => s.rating ?? '미평가')}
               highlight="max"
-              format={v => `${v} / 5`}
+              format={v => typeof v === 'number' ? `${v} / 5` : v}
             />
 
             {/* 스펙 */}

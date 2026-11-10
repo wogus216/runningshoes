@@ -13,7 +13,6 @@ export const shoe: Shoe = {
     '/images/shoes/adidas/hyperboost-edge/back.webp',
   ],
   category: '데일리',
-  rating: 4,
   description: 'Hyperboost Pro · Primeweave · LIGHTTRAXION 구조의 하이퍼부스트 엣지. RunRepeat 실험실 검체 247g·44.6/38.1mm. 한국 현재 정가 미확인.',
   oneliner: 'Hyperboost Pro · Primeweave · LIGHTTRAXION · 247g (RunRepeat 실험실 검체)',
   editorComment: '2026-11-09 원문 재확인. 한국 공식 캐시에서 남성KI1913·여성LA2185 249,000원, 남성KH5376·여성KH5379 259,000원이 표시됐습니다. 캐시시점은당일~2주이며 현재 정가·선택 규격·폭·재고는 미확인입니다. 단일249,000원과 와이드 없음으로 일반화하지 않습니다. 글로벌 공식255g은 남성8.5(사이즈 체계 미명시), 힐45mm·드롭6mm입니다. DOR255g(남성8.5체계미명시)/268g(남성10실측)·45/39mm·6mm, RR247g·44.6/38.1mm·6.5mm는 다른 조건입니다. 2026-03-05 발표·글로벌03-17 출시이며 한국03-23 출시는 이번 범위에서 미확인입니다. 공식73%는60명 선호 조사 중 리턴을 선호한 비율,77%는 더 부드럽다고 느낀 비율이며 RR힐73.6% 리턴과 다른 통계입니다. 제조사 Q&A는 LightstrikePro 배합·Boost 공정을 언급하지만 정확 고분자는 미공개이고 RR의 PEBA계 설명과 구분합니다. RR BR62·건조47%와 David의 통기 체감, 반거싯 표와 Matt의 전장 거싯 설명도 다릅니다. 700km·겨울최고·힐착지 일괄금지·검증완료 확정은 철회합니다. DOR Matt(남성US10)은 낮은 볼륨·단단한 어퍼, 편한 뒤쪽 갑피에도 거친 힐 전환·개인 정강이 불편과 늦은 전족 로커를 느끼며 업템포를 선호했습니다. David(남성US9.5)는 타이트한 중족·여유 있는 전족과 높은 칼라의 발목 쓸림, 이른 전족 로커를 느끼며 일상·롱런을 선호했습니다. 모두 같은 불편을 겪었다고 합치지 않습니다. RR 내부 최광폭97.4mm·엄지71.4mm·높이24.8mm입니다. 앞쪽 테이퍼와 낮은 볼륨, 실제 칼라 접촉을 따로 확인하세요. 한국 현재 와이드·D 단일 확정은 미확인입니다. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
@@ -43,8 +42,6 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'narrow',
-    winterCompatibility: 'excellent',
-    summerCompatibility: 'poor',
   },
   targetUsers: {
     recommended: [
@@ -63,7 +60,6 @@ export const shoe: Shoe = {
     'RR 내부 최광폭97.4mm·엄지71.4mm·높이24.8mm입니다. 앞쪽 테이퍼와 낮은 볼륨, 실제 칼라 접촉을 따로 확인하세요. 한국 현재 와이드·D 단일 확정은 미확인입니다.',
   ],
   priceAnalysis: {
-    valueRating: 6,
     priceTier: 'premium',
     alternatives: [
       'asics-superblast-3',

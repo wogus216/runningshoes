@@ -15,7 +15,6 @@ export const shoe: Shoe = {
     '/images/shoes/brooks/glyceringts22/outsole.webp',
   ],
   category: '안정화',
-  rating: 5,
   status: 'featured',
   price: 209000,
   description: '질소 주입 DNA Tuned · GuideRails 구조의 글리세린 GTS 22. 실험실 305g·힐/전족부 37.8/27.7mm. 한국 확인 정가209,000원.',
@@ -39,8 +38,6 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'standard',
-    winterCompatibility: 'good',
-    summerCompatibility: 'fair',
   },
   targetUsers: {
     recommended: [
@@ -60,7 +57,6 @@ export const shoe: Shoe = {
   ],
   priceAnalysis: {
     msrp: 209000,
-    valueRating: 8,
     priceTier: 'premium',
     alternatives: [
       'asics-gel-kayano-32',

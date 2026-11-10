@@ -14,7 +14,6 @@ export const shoe: Shoe = {
     '/images/shoes/asics/metafujitrail/outsole.webp',
   ],
   category: '트레일',
-  rating: 4,
   description: 'FF Turbo 위층 + FF Blast+ 주층 · 분기형 전장 카본 구조의 메타후지 트레일. RunRepeat 실험실 검체 258g·44.7/34.4mm. 한국 현재 정가 미확인.',
   oneliner: 'FF Turbo 위층 + FF Blast+ 주층 · 분기형 전장 카본 · 258g (RunRepeat 실험실 검체)',
   editorComment: '2026-11-10 원문 재확인. 정확 초대 한국 상품은 검색 후보만 있고 본문 추출이 되지 않아 현재 한국 가격·SKU·폭·재고는 미확인입니다. Metafuji Trail2의 319,000원을 초대에 대입하지 않습니다. RR 실측 258g·44.7/34.4mm·10.3mm와 DOR 소개 261g(유니섹스 남성 US9/여성 US10.5)·44/39mm·5mm를 구분합니다. 실제 DOR 테스터 Matt는 남성 US10입니다. RR의 평탄한 울트라 제안과 Matt의 긴 주행 불편을 나란히 둡니다. 리턴 59.7/65.4%·젖은 콘크리트 0.80은 개인 편안함이나 진흙 접지 보장이 아닙니다. 아웃솔 마모 1.2mm·두께 1.1mm는 원문대로 보존하며 수명으로 환산하지 않습니다. 10km·하프·2시간 한계나 발목 염좌 위험 등급은 철회합니다. DOR Matt(남성 US10)는 앞코가 낮고 좁아 짧게 느껴지고 힐 카운터·맨발 내피 마찰이 불편했습니다. 정비된 빠른 트레일에서 강성과 스냅은 좋았지만 오르막 앞발 불편·느리거나 긴 주행의 불편, 기술 구간에서 좁은 힐/중족의 불안정을 적었습니다. 개인 경험을 임상 위험이나 모두의 거리 제한으로 확대하지 않습니다. RR 내부 최광폭 94mm·엄지 69.6mm·높이 24.5mm입니다. 낮은 볼륨·앞코 보강재와 힐 카운터의 접촉을 실제 규격·양말에서 확인하세요. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
@@ -43,8 +42,6 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'narrow',
-    winterCompatibility: 'good',
-    summerCompatibility: 'good',
   },
   targetUsers: {
     recommended: [
@@ -63,7 +60,6 @@ export const shoe: Shoe = {
     'RR 내부 최광폭 94mm·엄지 69.6mm·높이 24.5mm입니다. 낮은 볼륨·앞코 보강재와 힐 카운터의 접촉을 실제 규격·양말에서 확인하세요.',
   ],
   priceAnalysis: {
-    valueRating: 6,
     priceTier: 'super-premium',
     alternatives: [
       'hoka-tecton-x-3',

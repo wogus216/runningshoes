@@ -15,7 +15,6 @@ export const shoe: Shoe = {
     '/images/shoes/brooks/adrenalinegts25/outsole.webp',
   ],
   category: '안정화',
-  rating: 4,
   price: 189000,
   description: '질소 주입 DNA LOFT v3 · GuideRails 구조의 아드레날린 GTS 25. 실험실 295g·힐/전족부 36.1/25.9mm. 한국 확인 정가189,000원.',
   oneliner: '295g 실험실 무게 · 질소 주입 DNA LOFT v3 · GuideRails',
@@ -38,8 +37,6 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'standard',
-    winterCompatibility: 'good',
-    summerCompatibility: 'fair',
     wideOptions: true,
   },
   targetUsers: {
@@ -60,7 +57,6 @@ export const shoe: Shoe = {
   ],
   priceAnalysis: {
     msrp: 189000,
-    valueRating: 8,
     priceTier: 'mid',
     alternatives: [
       'asics-gel-kayano-32',

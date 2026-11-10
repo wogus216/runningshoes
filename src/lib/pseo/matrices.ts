@@ -201,18 +201,18 @@ function priceEntries(): MatrixEntry[] {
   return tiers.map(({ slug, limit, label }) => ({
     slug,
     group: 'price' as const,
-    h1: `${label} 가성비 러닝화 추천`,
-    metaTitle: `${label} 러닝화 추천 | 가성비 TOP`,
-    metaDescription: `${label} 예산으로 살 수 있는 가성비 최고 러닝화. 한국 공식 사이트 정가 기준, 가성비 점수 8/10 이상 우선.`,
-    intro: `예산이 제한적일 때 가장 중요한 건 가격 대비 가치입니다. ${label}로 살 수 있는 러닝화 중 km당 비용, 내구성, 한국 러너 적합성을 모두 고려해 추천했습니다. 가격은 한국 공식 사이트 MSRP 기준이며, 실제 구매는 시즌 할인을 활용하면 더 저렴합니다.`,
+    h1: `${label} 러닝화 가격 비교`,
+    metaTitle: `${label} 러닝화 비교 | 확인 가격별 모델`,
+    metaDescription: `${label} 조건에 해당하는 러닝화를 확인 가격으로 비교합니다. 점수 순위 대신 제품별 가격의 확인 조건·구조·핏을 함께 살펴보세요.`,
+    intro: `사이트에서 확인한 한국 가격이 ${label}인 모델을 모았습니다. 가격은 해당 상품·확인 시점의 조건이며 현재 할인·재고를 보장하지 않습니다. 근거가 없는 가성비 점수·수명과 km당 비용을 선정 기준으로 사용하지 않습니다. 제품별 출처와 실제 구매 조건을 확인하세요.`,
     faq: [
       {
         q: '왜 해외 직구 가격이 아닌 한국 공식 정가인가요?',
-        a: '직구 가격은 환율·관세·배송비에 따라 변동이 크고 A/S가 어렵습니다. 한국 공식 정가를 기준으로 하되, 실제 구매 시 네이버 쇼핑·ABC마트 등에서 시즌 할인을 비교하세요.',
+        a: '외화 환산·배송비·세금·판매처 조건을 한국 정가와 같은 값으로 취급하지 않기 위해서입니다. 확인한 국내 상품과 시점의 가격이며 할인·재고·교환 및 보증 조건은 실제 판매처에서 다시 확인하세요.',
       },
       {
         q: '저렴한 신발이 부상 위험이 더 높나요?',
-        a: '아닙니다. 가격과 부상 예방은 직접적 상관관계가 없습니다. 비싼 카본화가 오히려 부상 위험이 높다는 연구도 있습니다. 본인 발 특성에 맞는 신발이 가장 안전합니다.',
+        a: '가격만으로 개인의 부상 위험이나 예방 효과를 판정할 수 없습니다. 이 목록은 가격 조건을 모은 비교이며 질환별 안전 순위나 치료용 추천이 아닙니다.',
       },
     ],
     filter: (s) => hasMinimumData(s) && (s.price ?? Infinity) <= limit,
@@ -320,11 +320,11 @@ function brandCategoryEntries(): MatrixEntry[] {
         h1: `${brand} ${category} 러닝화 추천 TOP`,
         metaTitle: `${brand} ${category} 러닝화 추천 | Best ${brand} ${categoryEnglish[category]}`,
         metaDescription: `${brand}의 ${category} 러닝화 라인업을 한국 러너 관점에서 비교 분석. 토박스, 가성비, 제품 구조까지 비교.`,
-        intro: `${brand}는 ${category} 카테고리에서 ${matches.length}개 모델을 운영합니다. 같은 브랜드 안에서도 모델별로 토박스, 쿠셔닝, 가격대가 크게 다르므로 본인 러닝 목적과 발 특성에 맞는 선택이 중요합니다. 아래는 RunRepeat 랩 데이터와 한국 러너 적합성을 종합한 비교입니다.`,
+        intro: `${brand}는 ${category} 카테고리에서 ${matches.length}개 모델을 운영합니다. 같은 브랜드 안에서도 모델별로 토박스, 쿠셔닝, 가격대가 크게 다르므로 본인 러닝 목적과 발 특성에 맞는 선택이 중요합니다. 모델별로 확인한 공식·외부 자료와 미확인 항목을 상세 페이지에서 구분해 읽으세요.`,
         faq: [
           {
             q: `${brand} ${category} 라인 중 입문자에게 가장 무난한 모델은?`,
-            a: `상위 추천 리스트에서 가성비 점수가 가장 높고 토박스가 표준 이상인 모델을 선택하세요. 본문 표를 참고하면 한눈에 비교할 수 있습니다.`,
+            a: `목록 순서나 미확인 점수로 개인 적합성을 판정하지 않습니다. 용도·확인 가격·해당 모델의 폭 옵션과 실제 착화감을 비교하세요. 모든 모델의 실험실 수치나 한국 유통 조건이 확인된 것은 아닙니다.`,
           },
         ],
         filter: (s) => s.brand === brand && s.category === category && hasMinimumData(s),
@@ -372,11 +372,5 @@ export const BEST_PAGE_SHOE_LIMIT = 12;
 export function getMatrixShoes(entry: MatrixEntry): Shoe[] {
   return allShoes
     .filter(entry.filter)
-    .sort((a, b) => {
-      const av = a.priceAnalysis?.valueRating ?? 0;
-      const bv = b.priceAnalysis?.valueRating ?? 0;
-      if (bv !== av) return bv - av;
-      return (b.rating ?? 0) - (a.rating ?? 0);
-    });
+    .sort((a, b) => (a.price ?? Infinity) - (b.price ?? Infinity) || a.slug.localeCompare(b.slug));
 }
-

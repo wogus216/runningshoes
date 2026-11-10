@@ -16,7 +16,6 @@ export const shoe: Shoe = {
     '/images/shoes/adidas/hyperboost-run/detail.webp',
   ],
   category: '데일리',
-  rating: 4.5,
   description: 'Hyperboost Pro · Continental 전족 패치 + LIGHTTRAXION 구조의 하이퍼부스트 런. RunRepeat 실험실 검체 247g·38.6/31.8mm. 한국 현재 정가 미확인.',
   oneliner: 'Hyperboost Pro · Continental 전족 패치 + LIGHTTRAXION · 247g (RunRepeat 실험실 검체)',
   editorComment: '2026-11-10 원문 재확인. 한국 남성 IH9467·여성 HQ7711 공식 캐시는 219,000원을 표시했습니다. 별도 MSRP 레이블과 현재 가격·폭·선택 재고는 미확인입니다. 사이즈 AAA 표시나 장바구니 버튼을 재고 증거로 쓰지 않습니다. RR 실측 247g·38.6/31.8mm·6.8mm, RR에 재전재된 브랜드 공시 248/222g(기준 사이즈 미확인)·38/32mm·6mm를 구분합니다. 힐/전족 SA 147/133과 리턴 71.6/72.8%는 검체 시험입니다. BR54·건조38%는 겨울 전천후 보장이 아니며, 젖은 콘크리트 접지계수 0.68은 젖은 바위 시험이 아닙니다. 전족 Continental 패치와 LIGHTTRAXION GCPU를 전체 고무 밑창으로 뭉뚱그리지 않습니다. 500km 수명·평발 금지·Edge의 어퍼 문제를 해결했다는 단정을 철회합니다. 정확한 Hyperboost Run의 DOR 착화 리뷰를 이번 범위에서 찾지 못했습니다. Hyperboost Edge의 착화 의견을 대입하지 않습니다. RR 내부 최광폭 96.9mm·엄지 부위 73.6mm·높이 23.7mm입니다. 발볼 수치만 보지 말고 발가락 위 높이와 중족 고정을 함께 확인하세요. 한국 현재 와이드는 미확인입니다. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
@@ -45,8 +44,6 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'standard',
-    winterCompatibility: 'excellent',
-    summerCompatibility: 'poor',
   },
   targetUsers: {
     recommended: [
@@ -65,7 +62,6 @@ export const shoe: Shoe = {
     'RR 내부 최광폭 96.9mm·엄지 부위 73.6mm·높이 23.7mm입니다. 발볼 수치만 보지 말고 발가락 위 높이와 중족 고정을 함께 확인하세요. 한국 현재 와이드는 미확인입니다.',
   ],
   priceAnalysis: {
-    valueRating: 8,
     priceTier: 'premium',
     alternatives: [
       'adidas-adizero-evo-sl',

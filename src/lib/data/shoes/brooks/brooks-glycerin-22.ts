@@ -15,7 +15,6 @@ export const shoe: Shoe = {
     '/images/shoes/brooks/glycerin22/outsole.webp',
   ],
   category: '쿠션화',
-  rating: 5,
   status: 'featured',
   price: 209000,
   description: '질소 주입 DNA Tuned 구조의 글리세린 22. 실험실 293g·힐/전족부 38.5/28.2mm. 한국 확인 정가209,000원.',
@@ -39,8 +38,6 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'standard',
-    winterCompatibility: 'good',
-    summerCompatibility: 'fair',
     wideOptions: true,
   },
   targetUsers: {
@@ -61,7 +58,6 @@ export const shoe: Shoe = {
   ],
   priceAnalysis: {
     msrp: 209000,
-    valueRating: 7,
     priceTier: 'premium',
     alternatives: [
       'asics-gel-nimbus-28',

@@ -15,7 +15,6 @@ export const shoe: Shoe = {
     '/images/shoes/salomon/pulsar/outsole.webp',
   ],
   category: '트레일',
-  rating: 4.3,
   description: '일반 Pulsar의 정확 원문 사양은 미확인입니다. 다른 Pulsar 계열 수치를 대입하지 않습니다.',
   oneliner: '일반 Pulsar · 무게·드롭·폼·가격 미확인',
   editorComment: '2026-11-10 원문 재확인. 한국 L47887800·L49230100 검색 후보는 있었지만 상품 원문이 404여서 가격·상품코드·폭·재고를 확정하지 않았습니다. 검색 후보 210,000원을 확인된 한국 정가로 사용하지 않습니다. 정확 일반 Pulsar의 무게·전체 스택·드롭·내부 폭·독립 랩 자료는 미확인입니다. 기존 290g·29/23mm·6mm를 검증된 값으로 반복하지 않습니다. 500km 수명·40km 한계·Sense Ride의 단종 후계라는 기존 설명을 입증하지 못해 제거했습니다. 원문 미확인을 단종·미출시·전국 재고 없음으로 해석하지 않습니다. 정확 일반 Pulsar의 DOR 리뷰를 찾지 못했습니다. Trail Pro2·S/LAB Pulsar4의 개인 착화 의견을 가져오지 않습니다. 정확 모델의 내부 치수·한국 폭 옵션은 미확인입니다. 실제 상품명·코드와 앞코 높이·길이·중족 고정을 확인하세요. 반 사이즈 다운을 일괄 권하지 않습니다. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
@@ -35,7 +34,6 @@ export const shoe: Shoe = {
     '정확 모델의 내부 치수·한국 폭 옵션은 미확인입니다. 실제 상품명·코드와 앞코 높이·길이·중족 고정을 확인하세요. 반 사이즈 다운을 일괄 권하지 않습니다.',
   ],
   priceAnalysis: {
-    valueRating: 7,
     priceTier: 'premium',
     alternatives: [
       'hoka-speedgoat-6',

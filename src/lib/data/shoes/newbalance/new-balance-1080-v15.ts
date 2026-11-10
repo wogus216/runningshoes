@@ -16,7 +16,6 @@ export const shoe: Shoe = {
     '/images/shoes/newbalance/1080v15/outsole.webp',
   ],
   category: '쿠션화',
-  rating: 4.9,
   price: 209000,
   description: 'Infinion 슈퍼크리티컬 폼 구조의 1080 V15. 한국 남성2E NBPFGF701Y·4E NBPFGF701J, 여성D NBPFGF702O 정가209,000원. 확인한 대표SKU 기준.',
   oneliner: '255g 실험실 무게 · Infinion 슈퍼크리티컬 폼',
@@ -56,13 +55,10 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'standard',
-    winterCompatibility: 'good',
-    summerCompatibility: 'excellent',
     wideOptions: true,
   },
   priceAnalysis: {
     msrp: 209000,
-    valueRating: 8,
     priceTier: 'premium',
     alternatives: [
       'asics-gel-nimbus-28',

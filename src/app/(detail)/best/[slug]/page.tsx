@@ -148,7 +148,8 @@ export default async function BestPage({ params }: PageProps) {
       ) : (<>
       <section>
         <h2 className="text-xl font-semibold text-primary mb-4">추천 TOP {shoes.length}</h2>
-        <ol className="space-y-4">
+        <p className="mb-4 text-sm text-secondary">확인 가격이 낮은 순서의 비교 목록입니다. 성능·개인 적합성 순위가 아닙니다.</p>
+      <ol className="space-y-4">
           {shoes.map((shoe, idx) => (
             <li
               key={shoe.slug}

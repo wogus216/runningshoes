@@ -11,7 +11,6 @@ export const shoe: Shoe = {
     '/images/shoes/nike/zegama-trail/side.webp',
   ],
   category: '트레일',
-  rating: 4.5,
   description: '2026 ACG ZoomX위층 · Cushlon3.0아래층 · Vibram 구조의 ACG 제가마 트레일. RunRepeat 실험실 검체 306g·31.2/27.5mm. 한국 현재 정가 미확인.',
   oneliner: '2026 ACG ZoomX위층 · Cushlon3.0아래층 · Vibram · 306g (RunRepeat 실험실 검체)',
   editorComment: "2026-11-10 원문 재확인. 한국공식캐시는남성 HV8113-400 정가 219,000원·할인 197,100원, HV8113-103 정가 219,000원·해당색품절문구, 여성 HV8115-500 정가 219,000원입니다. 지난주~2개월캐시이며현재 가격·폭·선택재고는미확인입니다. 공시남성 338g(280mm)·여성 271g(250mm)·4mm 를구분합니다. RR 브랜드 315/271g(사이즈미확인)·38/34mm·4mm, RR306g·31.2/27.5mm·3.7mm 입니다. 한국전체스택은원문미확인입니다. 공시 338g 과실측 306g 은같은사이즈검체로확인한차이가아닙니다. ZoomX28AC 와 Cushlon3.0 55.9AC 는다른층입니다.100%ZoomX로쓰지않습니다.3.9mm 러그·젖은콘크리트 0.81은젖은바위·진흙접지보장이아닙니다.500km·4mm 드롭의아킬레스금지·수주적응처방·세계최고완성도는철회합니다. 정확한현행 ACG제가마의 DOR 리뷰를이번범위에서찾지못했습니다. 이전제가마·Hike의핏과주행을옮기지않습니다. 국소마모와리턴을울트라후반편안함·개인회복효과로바꾸지않습니다. RR 내부 최광폭 96.9mm·엄지 72.8mm·높이 28.8mm 이며 96.9mm 를중족부너비로잘못부르지않습니다. 한국 현재 와이드·전체발적합은미확인입니다. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.",
@@ -41,8 +40,6 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'standard',
-    winterCompatibility: 'good',
-    summerCompatibility: 'good',
   },
   targetUsers: {
     recommended: [
@@ -61,7 +58,6 @@ export const shoe: Shoe = {
     "RR 내부 최광폭 96.9mm·엄지 72.8mm·높이 28.8mm 이며 96.9mm 를중족부너비로잘못부르지않습니다. 한국 현재 와이드·전체발적합은미확인입니다.",
   ],
   priceAnalysis: {
-    valueRating: 8,
     priceTier: 'premium',
     alternatives: [
       'hoka-speedgoat-6',

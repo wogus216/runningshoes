@@ -13,7 +13,6 @@ export const shoe: Shoe = {
     '/images/shoes/saucony/endorphinelite3/top.webp',
   ],
   category: '레이싱',
-  rating: 5,
   description: 'IncrediRUN · 분기·슬롯형 카본 구조의 엔돌핀 엘리트 3. RunRepeat 실험실 검체 210g·39.8/34.1mm. 한국 현재 정가 미확인.',
   oneliner: 'IncrediRUN · 분기·슬롯형 카본 · 210g (RunRepeat 실험실 검체)',
   editorComment: '2026-11-10 원문 재확인. 한국 공식 캐시: unisex S100981-1021 M(일반) 정가369,000원. 현재 가격·폭별 선택 재고는 미확인입니다. 옵션 목록·장바구니·품절 문구를 현재 전체 재고로 해석하지 않습니다. 한국 무게·전체 스택 공시가 없는 제품은 해외 소개로 채우지 않습니다. DOR 소개207g(남성 US9)/184g(여성 US8)·39.5/31.5mm·8mm와 RR210g·39.8/34.1mm·5.7mm, 한국204g(기준 사이즈 미공시)을 구분합니다. DOR 인솔 비분리와 RR 분리 가능은 상충합니다. RR 늦은 로커와 Andrea의 이른 로커 체감도 나눕니다. non-Newtonian은 제조사 주장으로 귀속하며 임상 물성이 아닙니다. 힐 카운터 부재만으로 아킬레스·하글런드에 최선이라고 보장하지 않습니다. DOR 직접403 이후 검색에 노출된 원문 캐시를 확인했습니다. DOR Matt(남성 US10·실측223g)는 조금 밀착되지만 늘어나는 어퍼와 바운스를 좋아했으나 회전 때 미끄러짐·제어 한계를 적었습니다. Andrea는 반 사이즈 올려 편한 사각형 앞코·힐 고정을 느꼈지만 빠른 코너에서 튕겨 나가는 듯했습니다. Andrea의 실제 숫자 사이즈는 미확인입니다. RR 내부 최광폭 93.8mm·엄지 71.8mm·높이 27.5mm입니다. 전체 발 적합성이나 한국 와이드 규격으로 바꾸지 말고 실제 길이·높이·고정을 함께 확인하세요. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
@@ -43,8 +42,6 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'narrow',
-    winterCompatibility: 'fair',
-    summerCompatibility: 'good',
   },
   targetUsers: {
     recommended: [
@@ -63,7 +60,6 @@ export const shoe: Shoe = {
     'RR 내부 최광폭 93.8mm·엄지 71.8mm·높이 27.5mm입니다. 전체 발 적합성이나 한국 와이드 규격으로 바꾸지 말고 실제 길이·높이·고정을 함께 확인하세요.',
   ],
   priceAnalysis: {
-    valueRating: 5,
     priceTier: 'super-premium',
     alternatives: [
       'nike-alphafly-3',

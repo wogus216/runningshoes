@@ -15,7 +15,6 @@ export const shoe: Shoe = {
     '/images/shoes/saucony/endorphintrainer/outsole.webp',
   ],
   category: '쿠션화',
-  rating: 4,
   price: 219000,
   description: 'IncrediRUN 상층 + PWRRUN 하층 · 약3/4 카본 구조의 엔돌핀 트레이너. RunRepeat 실험실 검체 285g·38.9/32mm. 한국 확인 가격 219,000원.',
   oneliner: 'IncrediRUN 상층 + PWRRUN 하층 · 약3/4 카본 · 285g (RunRepeat 실험실 검체)',
@@ -45,8 +44,6 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'narrow',
-    winterCompatibility: 'good',
-    summerCompatibility: 'good',
   },
   targetUsers: {
     recommended: [
@@ -66,7 +63,6 @@ export const shoe: Shoe = {
   ],
   priceAnalysis: {
     msrp: 219000,
-    valueRating: 7,
     priceTier: 'premium',
     alternatives: [
       'nike-zoom-fly-6',

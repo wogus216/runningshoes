@@ -73,19 +73,19 @@ export const ResultCard = memo(function ResultCard({ shoe, rank }: ResultCardPro
         </div>
 
         <div className="min-w-0 text-left sm:text-right">
-          <div className="flex items-center gap-0.5">
+          {shoe.rating !== undefined ? <div className="flex items-center gap-0.5">
             {Array.from({ length: 5 }).map((_, i) => (
               <Star
                 key={i}
                 className={cn(
                   "h-3.5 w-3.5",
-                  i < Math.round(shoe.rating)
+                  i < Math.round(shoe.rating!)
                     ? "fill-warning stroke-warning"
                     : "stroke-border"
                 )}
               />
             ))}
-          </div>
+          </div> : null}
           {shoe.price && (
             <p className="mt-1 whitespace-nowrap text-lg font-bold text-primary">
               ₩{shoe.price.toLocaleString()}

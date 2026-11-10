@@ -11,7 +11,6 @@ export const shoe: Shoe = {
     '/images/shoes/saucony/paramountmax/side.jpg',
   ],
   category: '쿠션화',
-  rating: 4.4,
   description: 'IncrediRUN · 플레이트 없음 · 두꺼운 풋베드 구조의 파라마운트 맥스. RunRepeat 실험실 검체 272g·42.1/36.4mm. 한국 현재 정가 미확인.',
   oneliner: 'IncrediRUN · 플레이트 없음 · 두꺼운 풋베드 · 272g (RunRepeat 실험실 검체)',
   editorComment: '2026-11-10 원문 재확인. 한국 공식 캐시: Men S101162-1010 M(일반) 표시259,000원; Men S101162-1009 M(일반) 표시259,000원; Women S101168-1008 M(일반) 표시259,000원; Women S101168-1010 M(일반) 표시259,000원. 현재 가격·선택 재고·숫자 폭 규격은 미확인입니다. 일반 사이즈 환산표·공통2E/4E 내비게이션·장바구니 버튼을 정확 모델 재고나 폭 증거로 쓰지 않습니다. DOR 소개302g(남성US9)/250g(여성US8)·43/37mm·6mm와 Matt 실제US10 286g, RR272g·42.1/36.4mm·5.7mm를 나눕니다. RR 재전재 남성272g도 소개302g과 별도입니다. Matt의 넉넉한 앞발 체감과 RR 엄지70.4mm·높이26.3mm는 다릅니다. 두 테스터 안정감 상충을 지워 모두에게 가장 푹신·안정이라고 보장하지 않습니다.1/5 구방식 통기는BR이 아니며550km·인솔교체의 치료 효과·한국 와이드 부재를 제거했습니다. DOR Matt(남성US10·실제286g)는 넓고 둥근 앞발이지만 낮은 볼륨·오른쪽 힐록 필요와 초기 칼라 자극, 부드러운 바운스·이지롱런과 stable-neutral 체감을 적었습니다. 그러나 같은 글 편집 주석은 Andrea도 시험했고 부드럽고 예측 어려운 바운스에서 큰 안정감 문제를 겪었다고 명시합니다. Andrea 사이즈·별도핏 상세는 미확인입니다. RR 내부 최광폭 97.5mm·엄지 70.4mm·높이 26.3mm입니다. 다른 위치인 외부 바닥 폭과 구분하고 실제 규격·양말에서 고정을 확인하세요. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
@@ -40,11 +39,8 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'narrow',
-    winterCompatibility: 'good',
-    summerCompatibility: 'fair',
   },
   priceAnalysis: {
-    valueRating: 6,
     priceTier: 'premium',
     alternatives: [
       'saucony-triumph-24',

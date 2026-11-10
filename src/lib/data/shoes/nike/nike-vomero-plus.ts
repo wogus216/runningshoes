@@ -14,7 +14,6 @@ export const shoe: Shoe = {
     '/images/shoes/nike/vomero-plus/pair.webp',
   ],
   category: '쿠션화',
-  rating: 5,
   price: 219000,
   description: '전장 ZoomX 폼 구조의 보메로 플러스. 실험실 289g·힐/전족부 42.3/32.7mm. 한국 확인 정가219,000원.',
   oneliner: '289g 실험실 무게 · 전장 ZoomX 폼',
@@ -43,8 +42,6 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'narrow',
-    winterCompatibility: 'good',
-    summerCompatibility: 'fair',
     wideOptions: true,
   },
   targetUsers: {
@@ -65,7 +62,6 @@ export const shoe: Shoe = {
   ],
   priceAnalysis: {
     msrp: 219000,
-    valueRating: 7,
     priceTier: 'premium',
     alternatives: [
       'hoka-bondi-9',

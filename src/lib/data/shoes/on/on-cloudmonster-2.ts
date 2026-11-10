@@ -15,7 +15,6 @@ export const shoe: Shoe = {
     '/images/shoes/on/cloudmonster2/outsole.webp',
   ],
   category: '쿠션화',
-  rating: 4.5,
   description: '이중 밀도 Helion · CloudTec · Speedboard 구조의 클라우드몬스터 2. RunRepeat 실험실 검체 292g·37.9/31.3mm. 한국 현재 정가 미확인.',
   oneliner: '이중 밀도 Helion · CloudTec · Speedboard · 292g (RunRepeat 실험실 검체)',
   editorComment: '2026-11-09 원문 재확인. 한국 남녀 상품 URL이 목록으로 연결되어 현재 정가·SKU·문자 폭·재고를 확인하지 못했습니다. 해외 Normal/Wide 메타로 한국 판매를 확정하거나 단종으로 단정하지 않습니다. RR 브랜드 메타35/29mm·6mm·남성295g/여성229g은 기준 사이즈 미확인입니다. 미국 공식300g(사이즈 미확인)·6mm, DOR 남성US9 10.4oz/여성US8 8.1oz·6mm와 RR292g·37.9/31.3mm·6.6mm를 구분합니다. 일반 Helion을 Helion HF로 적었던 기존 표기를 정정했습니다. 주폼49.6AC는 아래층이고 보조61.1AC 위치는 미확인입니다. 구방식 통기2/5와 David의 통기 체감은 다른 정보입니다. 500km 수명·6분30초 경계·관절 보호 확정·평발 부하 분산은 입증되지 않아 제거했습니다. DOR Matt(남성US10)은 넓고 볼륨 있는 힐, 얇은 혀와 끈의 발등 압박·거싯 마찰을 느꼈습니다. David(남성US9.5)는 여유 있는 전족과 끈 조임이 필요했지만 혀가 압박을 막아 줬다고 적었습니다. 단단한 쿠션이라는 공통 인상에도 전족 유연성·통기 체감은 달랐습니다. RR 내부 최광폭98.5mm·엄지74.5mm·높이25.3mm는 한국 와이드 검체라고 확인한 값이 아닙니다. 넓은 부분의 너비와 낮은 발등·힐 고정을 함께 확인하세요. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
@@ -43,11 +42,8 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'standard',
-    winterCompatibility: 'good',
-    summerCompatibility: 'good',
   },
   priceAnalysis: {
-    valueRating: 6,
     priceTier: 'premium',
     alternatives: [
       'hoka-bondi-9',

@@ -27,7 +27,7 @@ function getComfortScore(specs: ShoeSpecs): number {
   return Math.min(10, Math.round(base * 10) / 10);
 }
 
-export function SpecRadarChart({ specs, priceValueRating = 7, shoeName }: SpecRadarChartProps) {
+export function SpecRadarChart({ specs, priceValueRating, shoeName }: SpecRadarChartProps) {
   const lightnessScore = getLightnessScore(specs.weight);
   const comfortScore = getComfortScore(specs);
 
@@ -56,7 +56,7 @@ export function SpecRadarChart({ specs, priceValueRating = 7, shoeName }: SpecRa
       subject: '가성비',
       value: priceValueRating,
     },
-  ];
+  ].filter(item => item.value !== undefined);
 
   return (
     <section className="space-y-6">
@@ -88,7 +88,7 @@ export function SpecRadarChart({ specs, priceValueRating = 7, shoeName }: SpecRa
         </div>
 
         <p className="text-center text-sm text-gray-500 mt-4">
-          * 6가지 핵심 항목을 10점 만점으로 평가했습니다
+          * 산정 값이 있는 편집 평가만 표시합니다. 실측 단위와 구분하세요.
         </p>
       </div>
     </section>

@@ -12,7 +12,6 @@ export const shoe: Shoe = {
     '/images/shoes/brooks/glycerinmax2/top.webp',
   ],
   category: '쿠션화',
-  rating: 4,
   price: 249000,
   description: '질소 주입 DNA Tuned · 로커 구조의 글리세린 맥스 2. 실험실 318g·힐/전족부 45.4/37.3mm. 한국 확인 정가249,000원.',
   oneliner: '318g 실험실 무게 · 질소 주입 DNA Tuned · 로커',
@@ -42,8 +41,6 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'standard',
-    winterCompatibility: 'good',
-    summerCompatibility: 'fair',
   },
   targetUsers: {
     recommended: [
@@ -63,7 +60,6 @@ export const shoe: Shoe = {
   ],
   priceAnalysis: {
     msrp: 249000,
-    valueRating: 6,
     priceTier: 'premium',
     alternatives: [
       'hoka-bondi-9',

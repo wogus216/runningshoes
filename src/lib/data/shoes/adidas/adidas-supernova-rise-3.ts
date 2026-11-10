@@ -12,7 +12,6 @@ export const shoe: Shoe = {
     '/images/shoes/adidas/supernovarise3/supernova2.webp',
   ],
   category: '쿠션화',
-  rating: 5,
   description: 'Dreamstrike+ · Primeweave · LIGHTTRAXION 구조의 슈퍼노바 라이즈 3. RunRepeat 실험실 검체 264g·35/27.2mm. 한국 현재 정가 미확인.',
   oneliner: 'Dreamstrike+ · Primeweave · LIGHTTRAXION · 264g (RunRepeat 실험실 검체)',
   editorComment: '2026-11-09 원문 재확인. 한국 공식 캐시에서 남성KI3616 169,000원, 여성KK1203 159,000원·할인111,300원을 확인했습니다. 현재 가격·선택 재고·폭은 미확인입니다. 기존JQ5953 와이드 판매·모두159,000원 확정을 반복하지 않습니다. 앱 추가 혜택은 최종 적용가 미확인입니다. DOR 남성US9 264g·36/28mm·8mm, RR 브랜드남성264g/여성238g(사이즈 미확인)·36/28mm·8mm, 실제 RR264g·35/27.2mm·7.8mm를 구분합니다. 한국 검색 요약의230g·7mm는 열린 본문에서 재확인되지 않아 채택하지 않았습니다. Dreamstrike+의 PEBA계 조성은 RR 설명으로 귀속하며 한국 공식의 화학 분석으로 제시하지 않습니다. 기존 Supercritical EVA·Adiwear 표기는 이번 RR의 PEBA계·LIGHTTRAXION과 달라 정정했습니다. DOR 요약의 Solution3 이름 오기는 다른 모델 정보를 옮길 근거가 아닙니다. 힐 패딩1/5·국소마모0.8mm는650km 수명·부상복귀 보호를 입증하지 않습니다. DOR Matt(남성US10)은 정사이즈·넓은 듯한 전족이지만 토가드와 낮은 볼륨·짧은 끈을 지적했습니다. 패딩·거싯 고정과 이지·롱런을 선호했으나 빠른 템포에서는 반응이 느리고 젖은 도로 일부에서 미끄러졌다고 적었습니다. 이는 젖은 콘크리트 랩 계수0.94와 조건이 다른 개인 경험입니다. RR 내부 최광폭97.6mm·엄지74.5mm·높이29mm입니다. RR 약간 작게라는 투표와 Matt의 정사이즈 경험은 다른 정보입니다. 현재 한국 와이드 SKU는 미확인입니다. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
@@ -40,8 +39,6 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'standard',
-    winterCompatibility: 'good',
-    summerCompatibility: 'good',
   },
   targetUsers: {
     recommended: [
@@ -60,7 +57,6 @@ export const shoe: Shoe = {
     'RR 내부 최광폭97.6mm·엄지74.5mm·높이29mm입니다. RR 약간 작게라는 투표와 Matt의 정사이즈 경험은 다른 정보입니다. 현재 한국 와이드 SKU는 미확인입니다.',
   ],
   priceAnalysis: {
-    valueRating: 8,
     priceTier: 'mid',
     alternatives: [
       'hoka-clifton-10',

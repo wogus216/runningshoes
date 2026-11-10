@@ -45,14 +45,14 @@ function getToeboxStatus(width: ToBoxWidth): { text: string; color: 'positive' |
 }
 
 // 적합성 레벨에 따른 상태
-function getCompatibilityStatus(level: CompatibilityLevel): { text: string; color: 'positive' | 'warning' | 'primary' } {
+function getCompatibilityStatus(level?: CompatibilityLevel): { text: string; color: 'positive' | 'warning' | 'primary' } {
   const config: Record<CompatibilityLevel, { text: string; color: 'positive' | 'warning' | 'primary' }> = {
     excellent: { text: '우수', color: 'positive' },
     good: { text: '좋음', color: 'positive' },
     fair: { text: '보통', color: 'primary' },
     poor: { text: '미흡', color: 'warning' },
   };
-  return config[level];
+  return level ? config[level] : { text: '평가 근거 미확인', color: 'primary' };
 }
 
 export function KoreanFootFit({ koreanFootFit, shoeName, brand }: KoreanFootFitProps) {
@@ -71,7 +71,7 @@ export function KoreanFootFit({ koreanFootFit, shoeName, brand }: KoreanFootFitP
       <div className="space-y-2 border-b-2 border-primary pb-4">
         <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-slate-500">Korean Fit</p>
         <h2 className="text-3xl font-black tracking-tight text-slate-950">한국 러너 기준 핏</h2>
-        <p className="text-[15.5px] leading-relaxed text-slate-600">{brand} {shoeName}가 발볼과 계절감에서 어떻게 느껴질지 중심만 남겼습니다.</p>
+        <p className="text-[15.5px] leading-relaxed text-slate-600">{brand} {shoeName}의 발볼과 확인한 폭 옵션을 살펴보세요.</p>
       </div>
 
       <div className="grid md:grid-cols-2 gap-4">
@@ -88,12 +88,12 @@ export function KoreanFootFit({ koreanFootFit, shoeName, brand }: KoreanFootFitP
             status={wideOptions.text}
             statusColor={wideOptions.color}
           />
-          <FitItem
+          {koreanFootFit.winterCompatibility ? <FitItem
             title="겨울 적합성"
             subtitle="에디터 평가 · 방수 여부 별도 확인"
             status={winter.text}
             statusColor={winter.color}
-          />
+          /> : null}
         </div>
 
         <div className="rounded border border-border bg-[var(--accent-soft)] p-5">

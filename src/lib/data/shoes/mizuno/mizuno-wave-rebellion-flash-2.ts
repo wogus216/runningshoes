@@ -15,7 +15,6 @@ export const shoe: Shoe = {
     '/images/shoes/mizuno/waverebellionflash2/outsole.webp',
   ],
   category: '레이싱',
-  rating: 4,
   description: 'Enerzy Lite+ PEBA 위층 · Enerzy 아래층 · 유리섬유 Wave 구조의 웨이브 리벨리온 플래시 2. RunRepeat 실험실 검체 239g·35.2/32.3mm. 한국 현재 정가 미확인.',
   oneliner: 'Enerzy Lite+ PEBA 위층 · Enerzy 아래층 · 유리섬유 Wave · 239g (RunRepeat 실험실 검체)',
   editorComment: '2026-11-10 원문 재확인. 한국 공식 캐시: J1GC243501 성별 표기 미확인 폭 미확인 소비자가189,000원·판매캐시151,200원. 현재 가격·폭별 선택 재고는 미확인입니다. 공통 SOLD OUT 템플릿과 장바구니 버튼을 실제 재고로 보지 않으며 검색 미발견을 단종·미출시로 단정하지 않습니다. DOR 소개243g(남성 US9)·35/34.5mm·0.5mm와 RR239g·35.2/32.3mm·2.9mm를 구분합니다. 강한 베벨 때문에 지정 힐 위치와 중족 최대 높이를 섞지 않습니다. 14.8HA는 구방식이며 AC 미확인입니다. 54.9/59.6% 리턴과 바운시한 개인 체감은 다른 정보입니다. 5.5cm 토스프링을 전족 스택으로 쓰지 않습니다. 힐 착지 금지·아킬레스 손상 보장·2주 적응 처방·600km 수명을 제거했습니다. DOR Matt(남성 US10)는 짧고 낮아지는 앞코와 얇은 혀 때문에 끈 조절이 필요했고 앞쪽 착지의 전환을 선호했습니다. David는 밀착 고정과 리듬을 좋아했지만 회전·흙길은 덜 편했고 실제 사이즈는 미확인입니다. Andrea는 여성US9.5를 반품하고US10으로 길이·폭을 해결했으며 이지·업템포 롱런은 좋았으나 더 빠른 강도의 반응은 덜했습니다. RR 내부 최광폭 94.8mm·엄지 73.3mm·높이 27.4mm입니다. 다른 위치인 외부 바닥 폭과 구분하고 실제 규격에서 길이·높이·고정을 확인하세요. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
@@ -43,8 +42,6 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'standard',
-    winterCompatibility: 'fair',
-    summerCompatibility: 'good',
   },
   targetUsers: {
     recommended: [
@@ -63,7 +60,6 @@ export const shoe: Shoe = {
     'RR 내부 최광폭 94.8mm·엄지 73.3mm·높이 27.4mm입니다. 다른 위치인 외부 바닥 폭과 구분하고 실제 규격에서 길이·높이·고정을 확인하세요.',
   ],
   priceAnalysis: {
-    valueRating: 7,
     priceTier: 'premium',
     alternatives: [
       'saucony-endorphin-speed-5',

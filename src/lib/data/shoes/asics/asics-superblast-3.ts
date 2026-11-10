@@ -16,7 +16,6 @@ export const shoe: Shoe = {
     "/images/shoes/asics/superblast3/top.webp"
   ],
   "category": "레이싱",
-  "rating": 5,
   "price": 259000,
   "description": "FF LEAP + FF BLAST PLUS 미드솔을 쓰는 슈퍼블라스트 3. 한국 유니섹스 1013A177.101 정가 259,000원. 로그인 전 폭·사이즈별 재고는 확인 못함.",
   "oneliner": "235g 실험실 무게 · FF LEAP + FF BLAST PLUS",
@@ -46,8 +45,6 @@ export const shoe: Shoe = {
   },
   "koreanFootFit": {
     "toBoxWidth": "narrow",
-    "winterCompatibility": "good",
-    "summerCompatibility": "good"
   },
   "targetUsers": {
     "recommended": [
@@ -67,7 +64,6 @@ export const shoe: Shoe = {
   ],
   "priceAnalysis": {
     "msrp": 259000,
-    "valueRating": 8,
     "priceTier": "premium",
     "alternatives": [
       "new-balance-sc-trainer-v3",

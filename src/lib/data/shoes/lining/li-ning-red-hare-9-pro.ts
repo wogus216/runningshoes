@@ -15,7 +15,6 @@ export const shoe: Shoe = {
     '/images/shoes/lining/red-hare-9-pro/outsole.webp',
   ],
   category: '데일리',
-  rating: 4.5,
   description: 'BOOM 초임계 미드솔 · BoomFiber 어퍼 · GCR. 정확 Pro의 무게·스택·드롭·독립 랩 수치는 미확인입니다.',
   oneliner: 'BOOM 초임계 미드솔 · BoomFiber 어퍼 · GCR',
   tags: [
@@ -43,7 +42,6 @@ export const shoe: Shoe = {
     '제조사 공시에서 판 유무·소재를 확인하지 못했습니다.',
   ],
   priceAnalysis: {
-    valueRating: 9,
     priceTier: 'mid',
     alternatives: [
       'hoka-mach-6',

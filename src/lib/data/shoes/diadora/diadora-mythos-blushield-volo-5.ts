@@ -14,7 +14,6 @@ export const shoe: Shoe = {
     '/images/shoes/diadora/mythos-blushield-volo-5/outsole.webp',
   ],
   category: '안정화',
-  rating: 4,
   description: 'ANIMA EVA · Blushield 구조 · DDATTIVO 인솔 구조의 미토스 블루실드 볼로 5. RunRepeat 실험실 검체 281g·40/28.8mm. 한국 현재 정가 미확인.',
   oneliner: 'ANIMA EVA · Blushield 구조 · DDATTIVO 인솔 · 281g (RunRepeat 실험실 검체)',
   editorComment: '2026-11-10 원문 재확인. 한국 공식 캐시: D5151RRN04WHT 성별 명시 미확인 정가229,000원·할인캐시149,000원; D5152RRN14WHT women 정가229,000원·할인캐시149,000원; D5151RRN04ORS 성별 명시 미확인 정가229,000원·할인캐시149,000원; D5151RRN10BLS 성별 명시 미확인 정가229,000원·할인캐시149,000원; D5151RRN11BGS 성별 명시 미확인 정가229,000원·할인캐시149,000원. 현재 가격·폭·선택 재고는 미확인입니다. 공통SOLD OUT·장바구니·사이즈 목록을 현재 재고로 보지 않습니다. SKU숫자로 성별을 추정하지 않습니다. RR281g·40/28.8mm·11.2mm와 재전재 브랜드295/258g(기준 사이즈 미확인)·36/26mm·10mm를 나눕니다. 같은 RR 본문은 브랜드8mm라고도 써 원문 내부가 상충합니다. 20HA는 구방식이며AC 미확인입니다. 국소 고무 마모0.8mm와 어퍼 시험을600km 수명으로 바꾸지 않습니다. 한국 와이드 부재·평발 최적·고정 페이스·공통 비용을 제거했습니다. 정확 Volo5의 DOR 개별 리뷰는 미확인입니다. Vigore3·Blushield6의 의견을 대입하지 않습니다. RR 구조 평가를 평발 치료·보호 등급으로 바꾸지 않습니다. RR 내부 최광폭 94.1mm·엄지 71mm·높이 23.5mm입니다. 다른 위치인 외부 바닥 폭과 구분하고 실제 규격·양말에서 고정을 확인하세요. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
@@ -34,8 +33,6 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'narrow',
-    winterCompatibility: 'good',
-    summerCompatibility: 'fair',
   },
   targetUsers: {
     recommended: [
@@ -54,7 +51,6 @@ export const shoe: Shoe = {
     'RR 내부 최광폭 94.1mm·엄지 71mm·높이 23.5mm입니다. 다른 위치인 외부 바닥 폭과 구분하고 실제 규격·양말에서 고정을 확인하세요.',
   ],
   priceAnalysis: {
-    valueRating: 5,
     priceTier: 'premium',
     alternatives: [
       'saucony-guide-19',

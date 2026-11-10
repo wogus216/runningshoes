@@ -15,7 +15,6 @@ export const shoe: Shoe = {
     '/images/shoes/asics/novablast5/5.webp',
   ],
   category: '데일리',
-  rating: 5,
   description: 'FF BLAST MAX · 비플레이트 구조의 노바블라스트 5. 실험실 254g·힐/전족부 40.9/33.5mm. 한국 현재 정가 미확인.',
   oneliner: '254g 실험실 무게 · FF BLAST MAX · 비플레이트',
   editorComment: '2026-11-09 원문 재확인. 한국 브랜드 검색에서 노바블라스트5 상품을 확인하지 못했습니다. SSF 아식스코리아 기존 상품도 현재 판매중 아님으로 표시돼 현재 정가·성별·폭·SKU·재고는 미확인입니다. 검색캐시169,000원을 현행 정가로 채택하지 않습니다. DOR 소개 남성255g(US9)·41.5/33.5mm, 여성225g(US8)·40.5/32.5mm, 드롭8mm. RR254g·40.9/33.5mm·7.4mm와 구분합니다.  DOR의 Matt(남성US10)은 길이가 맞고 약간 넓지만 낮은 볼륨, 바깥쪽 앞코 테이퍼와 양말이 필요한 거친 메쉬를 언급했습니다. Andrea(여성US9.5)도 길이가 맞았으나 전작보다 단단하고 바운시하다고 느꼈고, Matt은 전작보다 부드럽다고 느껴 의견이 갈립니다. 개인의 주행감·접지 체감을 임상 등급으로 바꾸지 않습니다. 한국 와이드 현재SKU는 미확인입니다. RR 내부 최광폭97.5mm·엄지74.4mm·높이27.2mm를 개인의 발볼과 대입하지 않습니다. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
@@ -44,8 +43,6 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'standard',
-    winterCompatibility: 'good',
-    summerCompatibility: 'poor',
   },
   targetUsers: {
     recommended: [
@@ -64,7 +61,6 @@ export const shoe: Shoe = {
     '한국 와이드 현재SKU는 미확인입니다. RR 내부 최광폭97.5mm·엄지74.4mm·높이27.2mm를 개인의 발볼과 대입하지 않습니다.',
   ],
   priceAnalysis: {
-    valueRating: 9,
     priceTier: 'mid',
     alternatives: [
       'nike-pegasus-41',

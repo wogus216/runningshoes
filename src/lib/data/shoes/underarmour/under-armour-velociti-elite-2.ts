@@ -15,7 +15,6 @@ export const shoe: Shoe = {
     '/images/shoes/underarmour/velociti-elite-2/outsole.webp',
   ],
   category: '레이싱',
-  rating: 4,
   description: '위층 PEBAX · 아래층 EVA Flow · 전장 카본 구조의 벨로시티 엘리트 2. RunRepeat 실험실 검체 257g·37.9/31.9mm. 한국 현재 정가 미확인.',
   oneliner: '위층 PEBAX · 아래층 EVA Flow · 전장 카본 · 257g (RunRepeat 실험실 검체)',
   editorComment: '2026-11-10 원문 재확인. 한국 공식 캐시: 3027205 Unisex 레귤러 정가 299,000원·판매 209,300원. 현재 가격과 선택 재고는 미확인입니다. 레귤러를 D/2E로 바꾸거나 정적 사이즈 목록을 재고로 사용하지 않습니다. RR 257g·37.9/31.9mm·6mm, 한국 공시 232.47g(사이즈 미확인)·8mm, DOR 소개 232g(남성 US9/여성10.5)·39.5/37.5mm·2mm를 구분합니다. DOR 스택은 온라인 자료 추정이라고 명시해 자체 실측으로 표시하지 않습니다. 구방식 21.5HA를 AC로 바꾸지 않습니다. DOR 거싯 있음·RR 없음, 한국 360도 반사·RR 반사 없음은 확인한 설명이 다릅니다. RR 국소 마모 6.2mm와 Matt의 30마일 미미한 마모는 다른 시험으로 250km 수명을 만들 수 없습니다. DOR Matt Klein의 실제 남성 US10 검체는 9.3oz이며 30마일 시험입니다. 둥글고 여유 있는 앞코와 낮은 볼륨·타이트한 중족/힐, 단단하고 낮은 드롭 체감을 기록했습니다. 본인에게 인터벌이 더 맞았다는 의견이며 초기 종아리 통증은 모든 러너의 위험 근거가 아닙니다. RR 내부 최광폭 94.9mm·엄지 74mm·높이 24.9mm입니다. 실제 길이·발톱 위 높이·중족 압박·힐 고정을 확인하세요. 한국 다른 성별·폭의 치수로 직접 대입하지 않습니다. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
@@ -45,8 +44,6 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'standard',
-    winterCompatibility: 'fair',
-    summerCompatibility: 'excellent',
   },
   targetUsers: {
     recommended: [
@@ -64,7 +61,6 @@ export const shoe: Shoe = {
     'RR 내부 최광폭 94.9mm·엄지 74mm·높이 24.9mm입니다. 실제 길이·발톱 위 높이·중족 압박·힐 고정을 확인하세요. 한국 다른 성별·폭의 치수로 직접 대입하지 않습니다.',
   ],
   priceAnalysis: {
-    valueRating: 5,
     priceTier: 'super-premium',
     alternatives: [
       'saucony-endorphin-pro-4',

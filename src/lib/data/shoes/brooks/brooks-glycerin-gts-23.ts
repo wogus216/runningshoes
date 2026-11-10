@@ -11,7 +11,6 @@ export const shoe: Shoe = {
     '/images/shoes/brooks/glyceringts23/side.webp',
   ],
   category: '안정화',
-  rating: 4,
   description: '질소 주입 DNA TUNED · GuideRails 구조의 글리세린 GTS 23. DOR 소개 공시 — 독립 랩 실측 아님 306g·38/28mm. 한국 현재 정가 미확인.',
   oneliner: '질소 주입 DNA TUNED · GuideRails · 306g (DOR 소개 공시 — 독립 랩 실측 아님)',
   editorComment: '2026-11-09 원문 재확인. 한국 공식몰 실시간 연결 실패로 현재 정가·판매 SKU·폭·재고는 미확인입니다. 공식 원본 과거 캐시는 209,000원과 남성 D·2E·4E, 여성 B·D 상품을 보여 주지만 현재 판매 확정으로 승격하지 않습니다. 표시용 무게·스택·드롭은 DOR 헤더의 남성 US9 306g·38/28mm·10mm입니다. 같은 원문의 다른 출처 칸은 38/30mm·8mm이고 본문도 8mm에 가깝다고 적어 충돌합니다. 미국 제조사 현재 원문은 311.8g(사이즈 미표기)·8mm입니다. 어느 값도 RR 실측으로 표기하지 않습니다. 정확한 GTS23 RunRepeat 페이지는 미확인입니다. 제조사는 질소 주입 DNA TUNED로 설명하고 DOR는 EVA라고 표현해 소재 분석 결과와 구분합니다. 700km 수명·질환별 excellent 등급·와이드 전제 사이징은 철회합니다. DOR Matt(남성 US10)은 길이가 짧고 토가드의 엄지 압박·두꺼운 혀의 발등 압박과 혀 이동을 느꼈습니다. Bach(남성 US9.5)은 길이·볼륨과 혀는 괜찮았지만 엄지 옆 마찰을 느꼈습니다. 두 사람은 가이드레일과 자신의 발 움직임이 맞지 않아 정강이 자극을 보고했습니다. 이를 모든 평발 러너의 위험이나 예방 효과로 일반화하지 않습니다. 정확한 GTS23의 내부 최광폭·엄지 너비·높이는 미확인입니다. 일반 글리세린23의 치수·SA·리턴으로 채우지 않았습니다. 한국 현재 와이드 SKU도 미확인입니다. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
@@ -39,8 +38,6 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'standard',
-    winterCompatibility: 'good',
-    summerCompatibility: 'fair',
   },
   targetUsers: {
     recommended: [
@@ -53,7 +50,6 @@ export const shoe: Shoe = {
     ],
   },
   priceAnalysis: {
-    valueRating: 7,
     priceTier: 'premium',
     alternatives: [
       'brooks-glycerin-gts-22',

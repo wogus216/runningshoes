@@ -15,7 +15,6 @@ export const shoe: Shoe = {
     '/images/shoes/asics/kayano33/outsole.webp',
   ],
   category: '안정화',
-  rating: 4,
   price: 199000,
   description: 'FF BLAST MAX + FF BLAST PLUS 프레임 · FluidSupport · 힐 PureGEL 구조의 젤 카야노 33. 한국 남성 일반1011C167.100·2E1011C227.001·4E1011C229.100, 여성D1012B992.001 정가199,000원. 다른 색상·사이즈 재고는 별도 확인.',
   oneliner: '298g 실험실 무게 · FF BLAST MAX + FF BLAST PLUS 프레임 · FluidSupport · 힐 PureGEL',
@@ -45,8 +44,6 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'standard',
-    winterCompatibility: 'good',
-    summerCompatibility: 'fair',
     wideOptions: true,
   },
   targetUsers: {
@@ -67,7 +64,6 @@ export const shoe: Shoe = {
   ],
   priceAnalysis: {
     msrp: 199000,
-    valueRating: 7,
     priceTier: 'premium',
     alternatives: [
       'asics-gel-kayano-32',

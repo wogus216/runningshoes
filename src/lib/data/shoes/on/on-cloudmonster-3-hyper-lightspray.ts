@@ -15,7 +15,6 @@ export const shoe: Shoe = {
     '/images/shoes/on/cloudmonster3hyperls/angle.webp',
   ],
   category: '쿠션화',
-  rating: 4.5,
   description: "LightSpray끈없는어퍼 · Helion HF위층·Helion아래층 구조. 한국공식공시, 기준 사이즈미공시 205g·드롭 6mm, 독립 랩·스택·한국 현재 가격은 미확인입니다.",
   oneliner: "LightSpray끈없는어퍼 · Helion HF위층·Helion아래층 · 205g (한국공식공시, 기준 사이즈미공시)",
   editorComment: "2026-11-10 원문 재확인. 한국공식캐시유니섹스 3UG10014837 Regular표시가격 319,000원·한짝 205g(사이즈미공시)·6mm 입니다. 전용 Elite Run Sock High Hyper동봉표시를확인했지만임상보호효과·양말필수규칙은아닙니다. 현재 가격·선택재고·한국 와이드는미확인입니다. 정확 LS모델의독립 랩·스택·내부치수·SA·리턴·경도는미확인입니다. 기존 45/39mm·실측 210g·US8.5기준·기본형과동일성능확정은철회했습니다. 경량공시 205g 을기본형공시 253g·일반 Cloudmonster3와비교해개인감량·동일성능을보장하지않습니다.480~640km·최상위통기/안정·30km피로보장·족저근막금지·아킬레스보호필수를철회합니다. 정확 LS개별 DOR 리뷰는미확인입니다. 기본 3Hyper리뷰의 LS언급을별도 LS착화검증으로승격하지않았습니다. 한국캐시 Regular·정사이즈는제조사안내입니다. 끈없는어퍼의압박·길이·힐 고정을실제규격에서확인하세요. 기본형내부폭으로 LS핏을계산하지않습니다. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.",
@@ -34,11 +33,8 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'standard',
-    winterCompatibility: 'fair',
-    summerCompatibility: 'excellent',
   },
   priceAnalysis: {
-    valueRating: 5,
     priceTier: 'super-premium',
     alternatives: [
       'on-cloudmonster-3-hyper',

@@ -12,7 +12,6 @@ export const shoe: Shoe = {
     "/images/shoes/saucony/endorphinspeed5/top.webp"
   ],
   "category": "데일리",
-  "rating": 5,
   "price": 219000,
   "description": "PWRRUN PB 미드솔을 쓰는 엔돌핀 스피드 5. 한국 공식 정가 219,000원. 남녀 M(일반)·W(와이드) 상품을 확인했습니다. W를 근거 없이 2E/D로 바꾸지 않습니다.",
   "oneliner": "241g 실험실 무게 · PWRRUN PB",
@@ -42,8 +41,6 @@ export const shoe: Shoe = {
   },
   "koreanFootFit": {
     "toBoxWidth": "standard",
-    "winterCompatibility": "good",
-    "summerCompatibility": "good",
     "wideOptions": true
   },
   "targetUsers": {
@@ -64,7 +61,6 @@ export const shoe: Shoe = {
   ],
   "priceAnalysis": {
     "msrp": 219000,
-    "valueRating": 8,
     "priceTier": "premium",
     "alternatives": [
       "nike-pegasus-plus",

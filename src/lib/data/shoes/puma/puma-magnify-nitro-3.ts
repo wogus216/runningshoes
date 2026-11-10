@@ -15,7 +15,6 @@ export const shoe: Shoe = {
     '/images/shoes/puma/magnifynitro3/outsole.webp',
   ],
   category: '쿠션화',
-  rating: 4,
   description: '전장 NITROFOAM(PEBA, RR/DOR 귀속) · 니트·PWRTAPE 구조의 매그니파이 나이트로 3. RunRepeat 실험실 검체 261g·37.4/25.9mm. 한국 현재 정가 미확인.',
   oneliner: '전장 NITROFOAM(PEBA, RR/DOR 귀속) · 니트·PWRTAPE · 261g (RunRepeat 실험실 검체)',
   editorComment: '2026-11-10 원문 재확인. 한국 공식 캐시는 311046_01 정가199,000원·표시127,360원, 311047_01 정가199,000원·표시159,200원입니다. 현재 가격·선택재고·폭은 미확인입니다. AP를 와이드로 해석하지 않으며 캐시 품절을 현재 전국 품절로 쓰지 않습니다. 한국260g(UK8)·40/30mm·10mm, DOR264g(남성US9)/227g(여성US8)·40/30mm·10mm, RR261g·37.4/25.9mm·11.5mm입니다. 남녀 한국 페이지의 동일UK8 문구를 여성검체라고 해석하지 않습니다. RR본문이SA136/99를energy return이라 부른 문장과 실제ER65.2/73.6%를 구분합니다. SA와 리턴은 다른 시험입니다. 구방식 통기5/5와 David의 더운 니트 체감, 갑피5/5·아웃솔1.3mm마모도 다른 정보입니다. 부상예방 전항목최상위·평발 회복·500km·모든 한국 발 적합 보장은 철회합니다. DOR 직접 원문403 후 검색엔진 원문 캐시 확인 범위입니다. Matt(남성US10)은 정사이즈지만 전체 밀착·빠른 측면 테이퍼·거친 내피와 둔한 힐을 적었습니다. David(남성US9.5)는 처음 밀착이 완화됐고 여유 있는 전족·편한 니트·자연스러운 전환을 느꼈지만 통기는 더 원했습니다. 서로의 볼륨·전환 체감을 하나로 합치지 않습니다. RR 내부 최광폭96mm·엄지72.3mm·높이26mm입니다. 한국 현재 와이드·문자 폭은 미확인이고 개인의 길이·발등·힐 고정을 별도로 확인합니다. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
@@ -33,8 +32,6 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'standard',
-    winterCompatibility: 'good',
-    summerCompatibility: 'excellent',
   },
   targetUsers: {
     recommended: [
@@ -53,7 +50,6 @@ export const shoe: Shoe = {
     'RR 내부 최광폭96mm·엄지72.3mm·높이26mm입니다. 한국 현재 와이드·문자 폭은 미확인이고 개인의 길이·발등·힐 고정을 별도로 확인합니다.',
   ],
   priceAnalysis: {
-    valueRating: 7,
     priceTier: 'mid',
     alternatives: [
       'hoka-bondi-9',

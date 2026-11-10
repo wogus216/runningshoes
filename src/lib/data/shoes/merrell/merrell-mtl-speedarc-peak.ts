@@ -15,7 +15,6 @@ export const shoe: Shoe = {
     '/images/shoes/merrell/mtl-speedarc-peak/outsole.webp',
   ],
   category: '트레일',
-  rating: 4,
   description: '위층 FloatPro Infinity PEBA · 아래 FloatPro · 3/4 포크형 카본 구조의 MTL 스피드아크 피크. RunRepeat 실험실 검체 303g·37/26.1mm. 한국 공식 확인 정가 339,000원 (2026-11-10).',
   oneliner: '위층 FloatPro Infinity PEBA · 아래 FloatPro · 3/4 포크형 카본 · 303g (RunRepeat 실험실 검체)',
   editorComment: '2026-11-10 원문 재확인. 2026-11-10 09:41~09:44 KST 한국 공식 HTTP 원문 확인: M26A1-ULC300FLD (unisex·폭 미확인) 정가 339,000원·표시 판매/할인가 339,000원; M26A1-ULC301BLK (unisex·폭 미확인) 정가 339,000원·표시 판매/할인가 339,000원. 정가는 소비자가 필드 기준입니다. 옵션 선택·최종 결제·규격별 재고는 미확인입니다. 쿠폰을 임의 차감하지 않습니다. RR303g·37/26.1mm·10.9mm와 재전재 브랜드305/278g(기준 사이즈 미확인)·32/26mm·6mm를 나눕니다. 한국 확인 문서의 무게·전체 스택 공시는 미확인입니다. 34.8AC는 위층PEBA 값이고 하층 경도는 미확인입니다. 접지계수1.02는 젖은 콘크리트 시험으로 바위·진흙·젖은뿌리 최상위 보장이 아닙니다. BR79·건조65%도 실제 더운 산행에서의 편안함 보장이 아니며450km·와이드 부재·모든 기록 향상을 제거했습니다. 정확 Speedarc Peak의 DOR·RTR 개별 착화 리뷰는 미확인입니다. 브랜드 주장과 랩 수치를 개인 트레일 레이스·여름 산행 경험처럼 소개하지 않습니다. 다른 Speedarc모델의 리뷰를 옮기지 않습니다. RR 내부 최광폭 94mm·엄지 72.6mm·높이 26.2mm입니다. 한국 여성·와이드의 치수로 직접 대입하지 말고 실제 길이·발가락 위 공간·힐 고정을 확인하세요. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
@@ -45,8 +44,6 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'narrow',
-    winterCompatibility: 'good',
-    summerCompatibility: 'excellent',
   },
   targetUsers: {
     recommended: [
@@ -65,7 +62,6 @@ export const shoe: Shoe = {
     'RR 내부 최광폭 94mm·엄지 72.6mm·높이 26.2mm입니다. 한국 여성·와이드의 치수로 직접 대입하지 말고 실제 길이·발가락 위 공간·힐 고정을 확인하세요.',
   ],
   priceAnalysis: {
-    valueRating: 5,
     priceTier: 'super-premium',
     alternatives: [
       'hoka-tecton-x-3',

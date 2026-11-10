@@ -14,7 +14,6 @@ export const shoe: Shoe = {
     '/images/shoes/kiprun/kipstorm-elite/outsole.webp',
   ],
   category: '레이싱',
-  rating: 4,
   description: 'Fastech+ 위층 PEBA · 아래층 ATPU · 카본 판 구조의 킵스톰 엘리트. RunRepeat 실험실 검체 218g·38.1/31.4mm. 한국 현재 정가 미확인.',
   oneliner: 'Fastech+ 위층 PEBA · 아래층 ATPU · 카본 판 · 218g (RunRepeat 실험실 검체)',
   editorComment: '2026-11-10 원문 재확인. 한국 정확 모델의 상품·정가·폭·현재 재고는 미확인입니다. 미확인을 한국 미출시·단종으로 단정하지 않습니다. RR 218g·38.1/31.4mm·6.7mm와 영국 공시 215g(사이즈 미확인)·39/34mm·5mm는 조건이 다릅니다. 34.5AC는 위층 PEBA의 경도입니다. 냉간 절대 경도·7% 변화율·350km 수명·기록 향상은 확인하지 못했습니다. 외부 힐 바닥 폭 81.6mm를 내부 공간으로 쓰지 않습니다. 정확 모델의 DOR 개별 착화 리뷰는 이번 범위에서 확인하지 못했습니다. RR 수치와 제조사 설명을 자체 착화 경험처럼 쓰지 않습니다. RR 내부 최광폭 95.6mm·엄지 69.7mm·높이 26.8mm입니다. 실제 길이·발톱 위 높이·중족 압박·힐 고정을 확인하세요. 한국 다른 성별·폭의 치수로 직접 대입하지 않습니다. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
@@ -44,8 +43,6 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'narrow',
-    winterCompatibility: 'excellent',
-    summerCompatibility: 'fair',
   },
   targetUsers: {
     recommended: [
@@ -63,7 +60,6 @@ export const shoe: Shoe = {
     'RR 내부 최광폭 95.6mm·엄지 69.7mm·높이 26.8mm입니다. 실제 길이·발톱 위 높이·중족 압박·힐 고정을 확인하세요. 한국 다른 성별·폭의 치수로 직접 대입하지 않습니다.',
   ],
   priceAnalysis: {
-    valueRating: 8,
     priceTier: 'premium',
     alternatives: [
       'saucony-endorphin-pro-4',

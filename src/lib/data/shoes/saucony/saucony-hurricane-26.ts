@@ -15,7 +15,6 @@ export const shoe: Shoe = {
     '/images/shoes/saucony/hurricane26/top.webp',
   ],
   category: '안정화',
-  rating: 4.5,
   description: 'IncrediLUX ATPU 위층 · PWRRUN EVA 프레임 · CenterPath 구조의 허리케인 26. RunRepeat 실험실 검체 272g·38.3/32.4mm. 한국 현재 정가 미확인.',
   oneliner: 'IncrediLUX ATPU 위층 · PWRRUN EVA 프레임 · CenterPath · 272g (RunRepeat 실험실 검체)',
   editorComment: '2026-11-10 원문 재확인. 한국 공식 캐시: men S101098-1004 M(일반) 정가209,000원; men S101102-1003 W(와이드) 정가209,000원; women S101106-1009 None 정가209,000원; women S101110-1004 와이드 (상품명) 정가209,000원. 현재 가격·폭별 선택 재고는 미확인입니다. 옵션 목록·장바구니·품절 문구를 현재 전체 재고로 해석하지 않습니다. 한국 무게·전체 스택 공시가 없는 제품은 해외 소개로 채우지 않습니다. DOR 소개 262g(남성 US9)/232g(여성 US8)·41/35mm·6mm, RR272g·38.3/32.4mm·5.9mm, Matt 실제US10 272g을 나눕니다. 같은272g이어도 동일 검체 조건이 아닙니다. RR 굽힘 본문17.2N·표17.4N의 상충을 보존합니다. 넓은 플랫폼·내측 유도 체감이 평발 교정·질환 보호를 입증하지 않습니다. 70마일 경험과 국소 마모를600km 수명으로 환산하지 않습니다. DOR 직접403 이후 검색에 노출된 원문 캐시를 확인했습니다. DOR Matt(남성 US10)는 낮은 발등·앞코 테이퍼와 좋은 힐 고정, 로커의 반응성·내측 웨지가 만드는 바깥쪽 유도를 느꼈습니다. 실제 자신의 US10 무게는272g이고70마일은 개인 시험 거리입니다. Bach는 부드러운 탄성과 프레임을 느꼈지만 걷기는 좋아하지 않았습니다. Bach 실제 사이즈는 미확인입니다. RR 내부 최광폭 95.3mm·엄지 72.2mm·높이 27.4mm입니다. 전체 발 적합성이나 한국 와이드 규격으로 바꾸지 말고 실제 길이·높이·고정을 함께 확인하세요. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
@@ -43,11 +42,8 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'standard',
-    winterCompatibility: 'good',
-    summerCompatibility: 'good',
   },
   priceAnalysis: {
-    valueRating: 6,
     priceTier: 'premium',
     alternatives: [
       'saucony-hurricane-25',

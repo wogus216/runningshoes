@@ -13,7 +13,6 @@ export const shoe: Shoe = {
     '/images/shoes/adidas/adiospro4/adiospro3.webp',
   ],
   category: '레이싱',
-  rating: 5,
   price: 299000,
   description: '이중 Lightstrike Pro · 카본 함유 EnergyRods 2.0 구조의 아디제로 아디오스 프로 4. 실험실 200g·힐/전족부 36.6/28.5mm. 한국 확인 정가299,000원.',
   oneliner: '200g 실험실 무게 · 이중 Lightstrike Pro · 카본 함유 EnergyRods 2.0',
@@ -43,8 +42,6 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'narrow',
-    winterCompatibility: 'fair',
-    summerCompatibility: 'good',
   },
   targetUsers: {
     recommended: [
@@ -64,7 +61,6 @@ export const shoe: Shoe = {
   ],
   priceAnalysis: {
     msrp: 299000,
-    valueRating: 7,
     priceTier: 'super-premium',
     alternatives: [
       'nike-alphafly-3',

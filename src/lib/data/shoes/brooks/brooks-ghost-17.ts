@@ -15,7 +15,6 @@ export const shoe: Shoe = {
     '/images/shoes/brooks/ghost17/outsole.webp',
   ],
   category: '입문화',
-  rating: 5,
   status: 'featured',
   description: 'DNA LOFT v3 · 유연한 전족 · 비플레이트 구조의 고스트 17. RunRepeat 실험실 검체 289g·36.2/25.8mm. 한국 현재 정가 미확인.',
   oneliner: 'DNA LOFT v3 · 유연한 전족 · 비플레이트 · 289g (RunRepeat 실험실 검체)',
@@ -39,8 +38,6 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'narrow',
-    winterCompatibility: 'fair',
-    summerCompatibility: 'fair',
   },
   targetUsers: {
     recommended: [
@@ -59,7 +56,6 @@ export const shoe: Shoe = {
     "RR 내부 최광폭 95.2mm·엄지 69.6mm·높이 24.8mm 는 한국 와이드 검체라고 확인된 값이 아닙니다. 남성 2E·여성 D 과거상품이 있어도 현재 판매·개인 사이즈 보장은 아닙니다.",
   ],
   priceAnalysis: {
-    valueRating: 9,
     priceTier: 'mid',
     alternatives: [
       'asics-gel-nimbus-28',

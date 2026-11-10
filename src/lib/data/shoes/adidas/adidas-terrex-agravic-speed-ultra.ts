@@ -8,7 +8,6 @@ export const shoe: Shoe = {
   name: '테렉스 아그라빅 스피드 울트라 2',
   image: '/images/shoes/adidas/agravicspeedultra/side.webp',
   category: '트레일',
-  rating: 4,
   description: '2세대 Lightstrike Pro · X자 EnergyRods · Continental 구조의 테렉스 아그라빅 스피드 울트라 2. RunRepeat 실험실 검체 269g·30.7/30.6mm. 한국 현재 정가 미확인.',
   oneliner: '2세대 Lightstrike Pro · X자 EnergyRods · Continental · 269g (RunRepeat 실험실 검체)',
   editorComment: '2026-11-10 원문 재확인. 정확한 2세대 한국 캐시에서 JQ4019·JR9100·JS3534·여성 JR9110 정가 289,000원, KI9369 단일 가격 299,000원을 구분했습니다. JQ4019 할인은 열린 캐시 173,400원·검색 캐시 202,300원으로 달랐습니다. 현재 가격·선택 재고·폭은 미확인이고 W는 여성 구분입니다. 한국 269g(기준 사이즈 미확인)·43/35mm·8mm 세부 공시는 검색에 노출된 원문 범위입니다. RR 정확 2세대 269g·30.7/30.6mm·0.1mm입니다. 강한 힐 로커 때문에 공시 중족 높이와 12% 위치의 힐 측정이 다르다는 RR 설명을 남깁니다. RTR 소개 38/30mm·8mm, 프리뷰 44/36mm·8mm를 별도로 읽습니다. 초대 259g 자료를 대입하지 않습니다. 정적 실측 드롭 0.1mm를 주행 중 평평한 제로드롭 체감이나 임상 적응 기간으로 바꾸지 않습니다. 33.7AC의 정확 폴리머 조성은 미확인입니다. 2.9mm 러그·젖은 콘크리트 0.86은 진흙·바위 보장이 아니고 국소 마모 0.5mm를 400km 수명으로 환산하지 않습니다. 정확 2세대 DOR 개별 리뷰는 미확인입니다. RTR 다인 리뷰에서 Dom·Zachary는 강한 로커와 좁은 힐의 기술 구간 부담, Jeff는 여유 있는 앞코와 추가 고정 필요성을 적었습니다. Jen의 실제 여성 US8.5는 255g이며 약간 큰 길이·낮은 발 볼륨에서 힐/중족 여유를 느꼈습니다. 다른 리뷰어의 실제 사이즈는 미확인이며 이 의견은 DOR 리뷰가 아닙니다. RR 내부 최광폭 94.4mm·엄지 69.6mm·높이 27.3mm입니다. 넓은 외부 전족 바닥이 넓은 내부 앞코를 뜻하지 않습니다. 실제 규격에서 힐 고정과 급회전 전환을 확인하세요. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
@@ -27,8 +26,6 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'narrow',
-    winterCompatibility: 'good',
-    summerCompatibility: 'good',
   },
   targetUsers: {
     recommended: [
@@ -47,7 +44,6 @@ export const shoe: Shoe = {
     'RR 내부 최광폭 94.4mm·엄지 69.6mm·높이 27.3mm입니다. 넓은 외부 전족 바닥이 넓은 내부 앞코를 뜻하지 않습니다. 실제 규격에서 힐 고정과 급회전 전환을 확인하세요.',
   ],
   priceAnalysis: {
-    valueRating: 6,
     priceTier: 'super-premium',
     alternatives: [
       'asics-metafuji-trail',

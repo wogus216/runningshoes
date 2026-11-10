@@ -15,7 +15,6 @@ export const shoe: Shoe = {
     '/images/shoes/puma/magmaxnitro2/outsole.webp',
   ],
   category: '쿠션화',
-  rating: 4,
   description: 'NITROFOAM · 높은 로커 · PUMAGRIP 구조의 매그맥스 나이트로 2. RunRepeat 실험실 검체 269g·45.5/35mm. 한국 현재 정가 미확인.',
   oneliner: 'NITROFOAM · 높은 로커 · PUMAGRIP · 269g (RunRepeat 실험실 검체)',
   editorComment: '2026-11-10 원문 재확인. 한국 공식 캐시는 312125_01 정가239,000원·표시152,960원, 312126_01 정가239,000원·표시191,200원입니다. 현재 가격·선택재고·폭은 미확인입니다. AP를 와이드로 해석하지 않으며 캐시 품절을 현재 전국 품절로 쓰지 않습니다. 한국275g(UK8)·46/38mm·8mm, DOR266g(남성US9)/232g(여성US8)·46/38mm·8mm, RR269g·45.5/35mm·10.5mm입니다. 여성 한국 페이지의 동일275g 문구를 여성US8 실측으로 바꾸지 않습니다. RR리턴50.1/54.6%와 Andrea의 탄성 선호는 다른 정보입니다. 넓은 외부 바닥122.9/96.7mm를 내부93.4/70.4mm나 중족여유로 바꾸지 않습니다. 여성 요청color02와 응답312126_01이 달라 캐시응답SKU대로 남겼습니다.500km·레이서와동일폼·한국와이드 없음 확정·회복 효과 보장은 철회합니다. DOR 직접 원문403 후 검색엔진 원문 캐시 확인 범위입니다. Andrea(여성US9.5)는 다른Puma보다 여유 있는 앞코·볼륨, 좁은 중족과 좋은 힐 고정·두꺼운 혀를 편하게 느꼈습니다. 부드럽게 구르는 반응과 중앙 고정을 선호해 쉬운 주행에 사용했습니다. 공시8mm보다 낮게 느꼈다는 경험은 실측10.5mm를 대체하지 않습니다. RR 내부 최광폭93.4mm·엄지70.4mm·높이29.3mm입니다. 한국 현재 와이드·문자 폭은 미확인이고 개인의 길이·발등·힐 고정을 별도로 확인합니다. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
@@ -43,8 +42,6 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'narrow',
-    winterCompatibility: 'good',
-    summerCompatibility: 'excellent',
   },
   targetUsers: {
     recommended: [
@@ -63,7 +60,6 @@ export const shoe: Shoe = {
     'RR 내부 최광폭93.4mm·엄지70.4mm·높이29.3mm입니다. 한국 현재 와이드·문자 폭은 미확인이고 개인의 길이·발등·힐 고정을 별도로 확인합니다.',
   ],
   priceAnalysis: {
-    valueRating: 8,
     priceTier: 'mid',
     alternatives: [
       'nike-vomero-18',

@@ -15,7 +15,6 @@ export const shoe: Shoe = {
     '/images/shoes/brooks/hyperionmax3/outsole.webp',
   ],
   category: '쿠션화',
-  rating: 5,
   description: 'DNA GOLD(PEBA) + DNA FLASH v2 · SpeedVault 구조의 하이페리온 맥스 3. RunRepeat 실험실 검체 283g·45.6/35mm. 한국 현재 정가 미확인.',
   oneliner: 'DNA GOLD(PEBA) + DNA FLASH v2 · SpeedVault · 283g (RunRepeat 실험실 검체)',
   editorComment: '2026-11-09 원문 재확인. 한국 공식몰 실시간 연결 실패로 현재 정가·판매 SKU·폭·재고는 미확인입니다. 과거 원본 캐시에는 219,000원과 남성 아웃렛 175,200원이 표시됐지만 현재 가격으로 확정하지 않습니다. 여성 캐시는 5개월 전 자료입니다. 영국 제조사는 6mm·280.7g(사이즈 미표기), RR 브랜드 메타는 46/40mm·6mm, DOR 소개는 45/37mm·8mm·280g(남성 US9/여성 US10.5)입니다. RR 실측 45.6/35.0mm·10.6mm와 구분합니다. 25.7AC 주폼과 40.1AC 보조폼은 층별 수치입니다. 제조사의 100% PEBA는 DNA GOLD를 꾸미는 설명으로 전체 중창이 모두 PEBA라는 뜻은 아닙니다. 저온 변화 17%를 한국 사계절 동일한 주행감으로, 마모 0.9mm를 700km 수명으로 해석하지 않습니다. DOR Matt(남성 US10)은 정사이즈·밀착되는 낮은 볼륨과 좋은 고정, 약간의 앞발 신축성을 느꼈습니다. 반면 Andrea(여성 US9.5)는 힐 패딩이 발을 앞으로 밀고 앞코가 낮으며 메시가 뻣뻣하고 혀가 접혀 자극됐다고 적었습니다. Matt의 여러 훈련 활용과 Andrea의 무게·핏 불편을 하나의 공통 용도로 합치지 않습니다. Matt의 후경골근 부담 경험도 임상 등급이 아닙니다. 한국 현재 와이드 SKU는 미확인입니다. RR 내부 최광폭 94.9mm·엄지 72.6mm·높이 25.0mm를 모든 발의 장거리 무압박 보장으로 쓰지 않습니다. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
@@ -38,8 +37,6 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'standard',
-    winterCompatibility: 'good',
-    summerCompatibility: 'fair',
   },
   targetUsers: {
     recommended: [
@@ -58,7 +55,6 @@ export const shoe: Shoe = {
     '한국 현재 와이드 SKU는 미확인입니다. RR 내부 최광폭 94.9mm·엄지 72.6mm·높이 25.0mm를 모든 발의 장거리 무압박 보장으로 쓰지 않습니다.',
   ],
   priceAnalysis: {
-    valueRating: 7,
     priceTier: 'premium',
     alternatives: [
       'asics-superblast-2',

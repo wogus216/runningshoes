@@ -15,7 +15,6 @@ export const shoe: Shoe = {
     '/images/shoes/asics/superblast2/5.webp',
   ],
   category: '레이싱',
-  rating: 5,
   description: 'FF TURBO+ 상부 · FF BLAST PLUS ECO 하부 · 비플레이트 구조의 슈퍼블라스트 2. 실험실 252g·힐/전족부 42.8/34.6mm. 한국 현재 정가 미확인.',
   oneliner: '252g 실험실 무게 · FF TURBO+ 상부 · FF BLAST PLUS ECO 하부 · 비플레이트',
   editorComment: '2026-11-09 원문 재확인. 한국 공식 슈퍼블라스트2 검색에서 상품을 찾지 못해 현재 정가·성별·폭·SKU·재고는 미확인입니다. 검색 부재를 단종·국내 미출시로 해석하지 않습니다. DOR 소개249g(남성US9/여성US10.5),45/37mm·드롭8mm. RR252g은 측정에 사용한 왼발 값이며 오른발8.55oz·왼발8.90oz 차이가 보고돼 양발 평균으로 사용하지 않습니다. RR 주폼35.2AC·보조폼41.0AC는 다른 측정입니다. 하부는FF BLAST PLUS ECO이며 원형 슈퍼블라스트의 폼 이름과 혼용하지 않습니다. DOR의 Matt(US10)은 길이가 대체로 맞지만 앞쪽 테이퍼·혀 접힘·카운터·거친 메쉬를 언급했고 David(US9.5)은 길들이기 후 고정이 나아졌다고 느꼈습니다. 두 리뷰어는 플레이트 없이 단단한 구조와 앞쪽 반응을 평가했습니다. RR의 PEBA 계열 화학 설명은 리뷰 출처의 설명이며 한국 제조사의 신규 확인으로 바꾸지 않습니다. 한국 와이드 현재SKU는 미확인입니다. RR 내부 최광폭94.7mm·엄지72.3mm·높이27.7mm를 외부 바닥 폭과 구분하세요. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
@@ -44,8 +43,6 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'standard',
-    winterCompatibility: 'good',
-    summerCompatibility: 'poor',
   },
   targetUsers: {
     recommended: [
@@ -64,7 +61,6 @@ export const shoe: Shoe = {
     '한국 와이드 현재SKU는 미확인입니다. RR 내부 최광폭94.7mm·엄지72.3mm·높이27.7mm를 외부 바닥 폭과 구분하세요.',
   ],
   priceAnalysis: {
-    valueRating: 8,
     priceTier: 'premium',
     alternatives: [
       'nike-zoom-fly-6',

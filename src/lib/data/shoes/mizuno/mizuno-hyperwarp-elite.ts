@@ -15,7 +15,6 @@ export const shoe: Shoe = {
     '/images/shoes/mizuno/hyperwarpelit/back.webp',
   ],
   category: '레이싱',
-  rating: 5,
   price: 279000,
   description: 'ENERZY XP 이중층 · 전장 카본 구조의 하이퍼워프 엘리트. 한국 제조사 공시·270mm 한쪽 (독립 실측 아님) 170g·38/34.5mm. 한국 확인 가격 279,000원.',
   oneliner: 'ENERZY XP 이중층 · 전장 카본 · 170g (한국 제조사 공시·270mm 한쪽 (독립 실측 아님))',
@@ -46,8 +45,6 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'narrow',
-    winterCompatibility: 'fair',
-    summerCompatibility: 'excellent',
   },
   targetUsers: {
     recommended: [
@@ -67,7 +64,6 @@ export const shoe: Shoe = {
   ],
   priceAnalysis: {
     msrp: 279000,
-    valueRating: 6,
     priceTier: 'super-premium',
     alternatives: [
       'nike-vaporfly-4',

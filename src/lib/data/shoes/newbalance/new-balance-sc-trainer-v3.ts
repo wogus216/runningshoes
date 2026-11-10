@@ -15,7 +15,6 @@ export const shoe: Shoe = {
     '/images/shoes/newbalance/sctrainerv3/outsole.webp',
   ],
   category: '쿠션화',
-  rating: 5,
   description: 'PEBA·EVA FuelCell 블렌드 · Energy Arc 카본 · 중앙 void 구조의 SC Trainer V3. 실험실 278g·힐/전족부 36.8/29.5mm. 한국 현재 정가 미확인.',
   oneliner: '278g 실험실 무게 · PEBA·EVA FuelCell 블렌드 · Energy Arc 카본 · 중앙 void',
   editorComment: "2026-11-09 원문 재확인. 한국 실운영 검색 0건·남녀카테고리미노출이지만 관련카드에는 여성 B NBPFGS162B 정가 249,000원·할인 174,300원이 표시됐습니다. 대상상품상세는 빈화면이어서 현재 판매·확정 SKU·폭·재고·정가 필드는 미확인으로 둡니다. QA·pay캐시 가격과사이즈를 현재확인값으로 쓰지 않으며 검색 0건을 전체 미판매로 단정하지 않습니다. DOR 소개 261g(남성 US9.5)·209g(여성 US7),40/34mm·6mm. RR278g·36.8/29.5mm·7.3mm 와 RR 브랜드메타 41/35mm·6mm·278/232g 도 각각구분합니다. RR 은 폼을 20%PEBA·80%EVA로 설명하며 제조사의 새 배합 확인과 구분합니다. 주폼 21.8AC·보조 27.5AC 와리뷰어의단단한 주행감은다릅니다. 다른 폼 450km실험을 이 모델 500km수명이나 EVA블렌드 우위 증명으로 쓰지 않습니다. DOR Nathan(남성 US9.5,평소 9)은 반업 후 공간은 편했지만 길이가 약간 길다고 느꼈습니다. Andrea(여성 US9.5)는 정사이즈에서도 낮은 앞코로 엄지발톱 통증·중족의 느슨함을 느꼈고, David(남성 US9.5)는 충분한 볼륨·고정과 긴 주행을 선호했습니다. byline은 Matt이지만 실제 본문의 Nathan·Andrea·David 의견을 Matt의 착화 경험으로 만들지 않습니다. 한국 현재 와이드 SKU 는 미확인입니다. RR 내부 최광폭 95.9mm·엄지 73.5mm·높이 25.9mm 는 한국 와이드의 치수가 아니며 인솔·양말 포함 고정을 확인하세요. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.",
@@ -53,11 +52,8 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'standard',
-    winterCompatibility: 'good',
-    summerCompatibility: 'fair',
   },
   priceAnalysis: {
-    valueRating: 8,
     priceTier: 'premium',
     alternatives: [
       'saucony-endorphin-speed-5',

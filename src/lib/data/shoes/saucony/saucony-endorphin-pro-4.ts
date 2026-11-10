@@ -13,7 +13,6 @@ export const shoe: Shoe = {
     '/images/shoes/saucony/endorphinpro4/outsole.webp',
   ],
   category: '레이싱',
-  rating: 5,
   price: 269000,
   description: 'PWRRUN HG 상층 · PWRRUN PB 하층 · S자 카본 플레이트 구조의 엔돌핀 프로 4. 실험실 220g·힐/전족부 38.1/28.6mm. 한국 확인 정가269,000원.',
   oneliner: '220g 실험실 무게 · PWRRUN HG 상층 · PWRRUN PB 하층 · S자 카본 플레이트',
@@ -43,8 +42,6 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'standard',
-    winterCompatibility: 'fair',
-    summerCompatibility: 'good',
   },
   targetUsers: {
     recommended: [
@@ -64,7 +61,6 @@ export const shoe: Shoe = {
   ],
   priceAnalysis: {
     msrp: 269000,
-    valueRating: 6,
     priceTier: 'premium',
     alternatives: [
       'nike-alphafly-3',

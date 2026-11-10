@@ -14,7 +14,6 @@ export const shoe: Shoe = {
     '/images/shoes/diadora/frequenza-2/outsole.webp',
   ],
   category: '데일리',
-  rating: 4,
   description: 'ANIMA N2 질소 발포 EVA 구조의 프리퀀자 2. RunRepeat 실험실 검체 227g·36.5/24.7mm. 한국 현재 정가 미확인.',
   oneliner: 'ANIMA N2 질소 발포 EVA · 227g (RunRepeat 실험실 검체)',
   editorComment: '2026-11-10 원문 재확인. 한국 공식 캐시: D5151RRN05BLL 성별 명시 미확인 정가259,000원·할인캐시109,000원; D5151RRN15WHT 성별 명시 미확인 정가259,000원·할인캐시109,000원; D5152RRN15PKL women 정가259,000원·할인캐시129,000원. 현재 가격·폭·선택 재고는 미확인입니다. 공통SOLD OUT·장바구니·사이즈 목록을 현재 재고로 보지 않습니다. SKU숫자로 성별을 추정하지 않습니다. RR227g·36.5/24.7mm·11.8mm와 재전재 브랜드230/201g(기준 사이즈 미확인)·36/28mm·8mm를 구분합니다. 한국 공시 무게·전체 스택은 미확인입니다. 11.8HA는 구방식이며AC 미확인입니다. 드롭11.8mm와 경도11.8HA는 다른 단위의 값입니다.23.9mm 앞코 높이를 확인하고550km·한국 와이드 없음·고정 페이스 처방을 제거했습니다. 정확 Frequenza2의 DOR 개별 착화 리뷰는 미확인입니다. 검색에서 찾은3세대의 개인 의견을2에 옮기지 않습니다. 랩 수치만으로 모든 힐 착지 러너가 편하다고 보장하지 않습니다. RR 내부 최광폭 93.8mm·엄지 71.6mm·높이 23.9mm입니다. 다른 위치인 외부 바닥 폭과 구분하고 실제 규격·양말에서 고정을 확인하세요. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
@@ -34,8 +33,6 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'narrow',
-    winterCompatibility: 'good',
-    summerCompatibility: 'fair',
   },
   targetUsers: {
     recommended: [
@@ -54,7 +51,6 @@ export const shoe: Shoe = {
     'RR 내부 최광폭 93.8mm·엄지 71.6mm·높이 23.9mm입니다. 다른 위치인 외부 바닥 폭과 구분하고 실제 규격·양말에서 고정을 확인하세요.',
   ],
   priceAnalysis: {
-    valueRating: 5,
     priceTier: 'premium',
     alternatives: [
       'hoka-mach-6',

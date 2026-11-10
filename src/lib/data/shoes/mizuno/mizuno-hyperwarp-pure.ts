@@ -15,7 +15,6 @@ export const shoe: Shoe = {
     '/images/shoes/mizuno/hyperwarppure/back.webp',
   ],
   category: '레이싱',
-  rating: 5,
   price: 309000,
   description: 'ENERZY XP · 전장 카본 · 낮고 완만한 로커 구조의 하이퍼워프 퓨어. 한국 제조사 공시·270mm 한쪽 (독립 실측 아님) 137g·34.5/31.5mm. 한국 확인 가격 309,000원.',
   oneliner: 'ENERZY XP · 전장 카본 · 낮고 완만한 로커 · 137g (한국 제조사 공시·270mm 한쪽 (독립 실측 아님))',
@@ -46,8 +45,6 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'narrow',
-    winterCompatibility: 'fair',
-    summerCompatibility: 'excellent',
   },
   targetUsers: {
     recommended: [
@@ -67,7 +64,6 @@ export const shoe: Shoe = {
   ],
   priceAnalysis: {
     msrp: 309000,
-    valueRating: 5,
     priceTier: 'super-premium',
     alternatives: [
       'nike-vaporfly-4',

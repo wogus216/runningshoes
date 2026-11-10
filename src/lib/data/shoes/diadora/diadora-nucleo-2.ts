@@ -14,7 +14,6 @@ export const shoe: Shoe = {
     '/images/shoes/diadora/nucleo-2/outsole.webp',
   ],
   category: '데일리',
-  rating: 4,
   description: 'ANIMA EVA · DDATTIVO 인솔 구조의 누클레오 2. RunRepeat 실험실 검체 276g·38.7/30.7mm. 한국 현재 정가 미확인.',
   oneliner: 'ANIMA EVA · DDATTIVO 인솔 · 276g (RunRepeat 실험실 검체)',
   editorComment: '2026-11-10 원문 재확인. 한국 공식 캐시: D5151RRN16BLK 성별 명시 미확인 정가219,000원·할인캐시153,300원; D5151RRN06WHT 성별 명시 미확인 정가219,000원·할인캐시129,000원; D5151RRN16WHT 성별 명시 미확인 정가219,000원·할인캐시153,300원; D5151RRN12YLS 성별 명시 미확인 정가219,000원·할인캐시149,000원; D5152RRN16BLK women 정가219,000원·할인캐시129,000원; D5152RRN24PKS women 정가219,000원·할인캐시149,000원. 현재 가격·폭·선택 재고는 미확인입니다. 공통SOLD OUT·장바구니·사이즈 목록을 현재 재고로 보지 않습니다. SKU숫자로 성별을 추정하지 않습니다. DOR 소개280g(남성US9)·35/30mm·5mm, RR 재전재 브랜드275/221g(사이즈 미확인)·38/33mm·5mm와 실제276g·38.7/30.7mm·8mm를 나눕니다. 17.9HA는 구방식이며AC 미확인입니다. 내부 최광폭97.5mm와 엄지72mm는 위치가 다릅니다. stable-neutral 체감은 평발 교정 효과가 아니며600km·질소 발포 아님 확정·가격대별 우위를 제거했습니다. DOR Bach는 핏 본문에서 남성US9.5를 적었지만 같은 글 프로필 평소사이즈는10입니다. 실제 착화 본문9.5를 보존합니다. 슬림하고 약간 낮은 앞발·테이퍼·단단히 고정되는 힐, 편한 착지와 약한 추진·둔한 힐 전환을 적었습니다.20마일은 개인 시험 거리입니다. RR 내부 최광폭 97.5mm·엄지 72mm·높이 25.6mm입니다. 다른 위치인 외부 바닥 폭과 구분하고 실제 규격·양말에서 고정을 확인하세요. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
@@ -33,8 +32,6 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'narrow',
-    winterCompatibility: 'good',
-    summerCompatibility: 'fair',
   },
   targetUsers: {
     recommended: [
@@ -53,7 +50,6 @@ export const shoe: Shoe = {
     'RR 내부 최광폭 97.5mm·엄지 72mm·높이 25.6mm입니다. 다른 위치인 외부 바닥 폭과 구분하고 실제 규격·양말에서 고정을 확인하세요.',
   ],
   priceAnalysis: {
-    valueRating: 5,
     priceTier: 'premium',
     alternatives: [
       'adidas-supernova-rise-2',

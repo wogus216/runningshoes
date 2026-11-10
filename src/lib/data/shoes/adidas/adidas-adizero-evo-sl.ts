@@ -16,7 +16,6 @@ export const shoe: Shoe = {
     '/images/shoes/adidas/evosl/detail.webp',
   ],
   category: '데일리',
-  rating: 5,
   price: 209000,
   description: '전장 Lightstrike Pro와 중족부 플라스틱 생크를 쓰는 뉴트럴 데일리 트레이너. 기본 메쉬 JP7149 기준 한국 공식 정가 209,000원.',
   oneliner: '기본 메쉬 Evo SL: 223g 실험실 무게와 전장 Lightstrike Pro',
@@ -47,8 +46,6 @@ export const shoe: Shoe = {
   koreanFootFit: {
     toBoxWidth: 'narrow',
     wideOptions: false,
-    winterCompatibility: 'fair',
-    summerCompatibility: 'good',
   },
   targetUsers: {
     recommended: [
@@ -69,7 +66,6 @@ export const shoe: Shoe = {
   ],
   priceAnalysis: {
     msrp: 209000,
-    valueRating: 10,
     priceTier: 'mid',
     alternatives: [
       'new-balance-rebel-v5',

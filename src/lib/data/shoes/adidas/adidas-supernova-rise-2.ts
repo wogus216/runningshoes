@@ -12,7 +12,6 @@ export const shoe: Shoe = {
     '/images/shoes/adidas/supernovarise2/side.webp',
   ],
   category: '입문화',
-  rating: 4,
   price: 159000,
   description: 'Dreamstrike+ · 폼 Support Rods · 비카본 구조의 슈퍼노바 라이즈 2. 실험실 257g·힐/전족부 33.5/24mm. 한국 확인 정가159,000원.',
   oneliner: '257g 실험실 무게 · Dreamstrike+ · 폼 Support Rods · 비카본',
@@ -41,8 +40,6 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'wide',
-    winterCompatibility: 'good',
-    summerCompatibility: 'good',
   },
   targetUsers: {
     recommended: [
@@ -62,7 +59,6 @@ export const shoe: Shoe = {
   ],
   priceAnalysis: {
     msrp: 159000,
-    valueRating: 8,
     priceTier: 'mid',
     alternatives: [
       'nike-pegasus-premium',

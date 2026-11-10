@@ -15,7 +15,6 @@ export const shoe: Shoe = {
     '/images/shoes/nike/pegasus42/outsole.webp',
   ],
   category: '입문화',
-  rating: 4,
   description: 'ReactX · 전장 곡선 Air Zoom · 비플레이트 구조의 페가수스 42. RunRepeat 실험실 검체 286g·36/22mm. 한국 현재 정가 미확인.',
   oneliner: 'ReactX · 전장 곡선 Air Zoom · 비플레이트 · 286g (RunRepeat 실험실 검체)',
   editorComment: "2026-11-09 원문 재확인. 한국 공식 캐시에는 남성 IB1873-003·IM8332-100,여성 IB1881-007,남성와이드 IR1228-001·여성와이드 IH1847-100 정가 169,000원이 표시됐습니다. 자료는지난주~지난달 캐시여서 현재 가격·판매규격·재고는 미확인입니다. 와이드의 2E/4E문자와 실제폭증가는 미확인이고 둘레 6.35mm 설명을 내부너비 증가로 옮기지 않습니다. 한국 공시남성약 300g(280mm)·여성 243g(250mm),드롭 10mm 입니다. RR 브랜드 37/27mm·10mm·297/243g(기준 사이즈미확인),RR286g·36/22mm·14mm 를 구분합니다. 실제검체라벨·보정적용 여부는 미확인입니다. 제조사의 41대비 에너지리턴최소 15% 개선 주장은 비교시험조건 미확인입니다. RR 힐 57.1/전족 61.2% 와 측정조건이 다르므로 제조사주장이 입증·반박됐다고 단정하지 않습니다. SA를 부드러움·무릎보호로,국소마모 0.8mm 를 600km수명으로 바꾸지 않습니다. 일반 US9무게정책에는 드문 US8/8.5의 US9환산예외가 있어 실제라벨 미확인을 남깁니다. 정확한 페가수스 42의 DOR 개별 착화 리뷰는 이번 검색에서 확인하지 못했습니다. Plus2의 비교문구를 42의 착화 경험으로 채우지 않았습니다. 기존 5~13km상한·하프이상비추천·주 100km금지와 임상보호 등급은 확인한 원문에서 공통 기준으로 입증되지 않아 철회했습니다. RR 내부 최광폭 96.5mm·엄지 72.3mm·높이 27.0mm 는 한국 와이드 검체라고 확인되지 않았습니다. 과거와이드상품을 모든 4E발의 안전보장으로 쓰지 않습니다. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.",
@@ -45,8 +44,6 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'narrow',
-    winterCompatibility: 'good',
-    summerCompatibility: 'fair',
   },
   targetUsers: {
     recommended: [
@@ -65,7 +62,6 @@ export const shoe: Shoe = {
     "RR 내부 최광폭 96.5mm·엄지 72.3mm·높이 27.0mm 는 한국 와이드 검체라고 확인되지 않았습니다. 과거와이드상품을 모든 4E발의 안전보장으로 쓰지 않습니다.",
   ],
   priceAnalysis: {
-    valueRating: 8,
     priceTier: 'mid',
     alternatives: [
       'nike-pegasus-41',

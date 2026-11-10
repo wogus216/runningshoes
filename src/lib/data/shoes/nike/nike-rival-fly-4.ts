@@ -14,7 +14,6 @@ export const shoe: Shoe = {
     '/images/shoes/nike/rivalfly4/pair.webp',
   ],
   category: '데일리',
-  rating: 4,
   description: "Cushlon3.0 · 전족 Air Zoom · 나일론중족섕크 구조. 공시 258g(280mm)·드롭 8mm 이며 독립 랩·스택·한국 현재 가격은 미확인입니다.",
   oneliner: "Cushlon3.0 · 전족 Air Zoom · 나일론중족섕크 · 258g (Nike 한국 공시 280mm·DOR 공시와구분 (독립 랩미확인))",
   editorComment: "2026-11-09 원문 재확인. 한국공식 2주전캐시에서 FV6040-402정가 129,000원·판매 116,100원,IO8267-100정가 139,000원·판매 118,100원을확인했습니다. 현재 가격·선택사이즈·재고·성별·문자폭과와이드 SKU 는미확인입니다. 사이즈목록으로남녀공용·판매가능을단정하지 않습니다. 한국 공시 258g(280mm)·8mm,DOR 소개 258g(남성 US10)·8mm 입니다. 실제 DOR 리뷰어는 US9.5를신었으며숫자가같아도같은 검체라고보지않습니다. 검증된스택·RR 독립 랩은미확인입니다. 기존 236g·26/16mm·10mm 확정을철회했습니다. RR 후보 4URL·정확 모델검색에서독립 랩을확보하지못해 SA·리턴·경도·스택을다른 Nike모델로채우지않습니다. DOR 의 EVA같은느낌은화학분석이아니며공식명칭은 Cushlon3.0입니다. 기존 450km수명·3km이후부담·고정페이스·질환등급은철회합니다. DOR David(남성 US9.5)는길이는 맞고밀착되는퍼포먼스핏,부위별폭은보통이며볼륨은괜찮고끈·코너 고정이좋았다고 적었습니다. 앞발폭은더원했습니다. 단단하고지면감각이있는전환으로본인의트랙인터벌·짧은도로훈련을선호했지만이를모든 러너의 10km상한·입문자금지로확대하지않습니다. 동세대내부 최광폭·엄지너비·높이·한국 현재 와이드 SKU 는미확인입니다. 좁은발만가능·넓은발일괄 금지·반업필수라는조건을만들지않습니다. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.",
@@ -32,8 +31,6 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'narrow',
-    winterCompatibility: 'fair',
-    summerCompatibility: 'fair',
   },
   targetUsers: {
     recommended: [
@@ -52,7 +49,6 @@ export const shoe: Shoe = {
     "동세대내부 최광폭·엄지너비·높이·한국 현재 와이드 SKU 는미확인입니다. 좁은발만가능·넓은발일괄 금지·반업필수라는조건을만들지않습니다.",
   ],
   priceAnalysis: {
-    valueRating: 8,
     priceTier: 'budget',
     alternatives: [
       'asics-magic-speed-4',

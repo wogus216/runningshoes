@@ -14,7 +14,6 @@ export const shoe: Shoe = {
     '/images/shoes/hoka/arahi8/outsole.webp',
   ],
   category: '안정화',
-  rating: 5,
   description: 'CMEVA · H-Frame 구조의 아라히 8. 실험실 259g·힐/전족부 39.4/28.1mm. 한국 현재 정가 미확인.',
   oneliner: '259g 실험실 무게 · CMEVA · H-Frame',
   editorComment: '2026-11-09 원문 재확인. 한국 공식 연결 스토어의 정확 모델명 검색에서 상품을 찾지 못해 현재 정가·성별·폭·SKU는 미확인입니다. 검색 결과만으로 단종·국내 미출시라고 판단하지 않습니다. DOR 소개 남성264g(US9)·여성218g(US8),41/33mm·드롭8mm. RR 실측11.3mm와 분리.  DOR의 Matt은 US10에서 길이가 맞고 전작보다 여유 있는 어퍼를 느꼈지만 앞코 테이퍼·따뜻한 어퍼·혀 움직임·힐 카운터 자극과 투박한 힐 전환을 지적했습니다. RR의 카운터 편안함·마모 시험 의견과 개인 착화는 다릅니다. 전작 J-Frame을 대체한 H-Frame이며 슈퍼크리티컬 폼으로 확정하지 않습니다. 한국 와이드·X-Wide 상품의 현재SKU는 확인하지 못했습니다. 해외 폭 표기를 국내 판매로 옮기지 않습니다. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
@@ -42,8 +41,6 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'standard',
-    winterCompatibility: 'good',
-    summerCompatibility: 'fair',
   },
   targetUsers: {
     recommended: [
@@ -62,7 +59,6 @@ export const shoe: Shoe = {
     '한국 와이드·X-Wide 상품의 현재SKU는 확인하지 못했습니다. 해외 폭 표기를 국내 판매로 옮기지 않습니다.',
   ],
   priceAnalysis: {
-    valueRating: 9,
     priceTier: 'mid',
     alternatives: [
       'asics-gel-kayano-32',

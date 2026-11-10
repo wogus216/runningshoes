@@ -15,7 +15,6 @@ export const shoe: Shoe = {
     '/images/shoes/asics/metaspeedge/5.webp',
   ],
   category: '레이싱',
-  rating: 5,
   description: '2022 Edge+의 FF BLAST TURBO·V형 카본 구조. DOR 소개39/31mm·드롭8mm이며 독립 랩 실측과 한국 현재 정가는 미확인입니다.',
   oneliner: '2022 Edge+ · FF BLAST TURBO · 전방으로 낮아지는 V형 카본',
   editorComment: '2026-11-09 원문 재확인. 한국 검색결과는Tokyo만 확인돼2022 Edge+의 현재 가격·SKU·성별·폭·재고는 미확인입니다. RunRepeat 후보URL은404로 동세대 랩을 확보하지 못했습니다. DOR 소개는39/31mm·8mm, 남성US9의7.4oz이며 약210g은 이 온스 공시의 환산·반올림 값으로 실측이 아닙니다. 2022제조사 원문은 FF BLAST TURBO와 전방으로 낮아지는 V형 카본을 설명합니다. 기존33/25mm·208g·FFTurbo+ 확정과180이상케이던스 선택 규칙·풀코스 비추천을 철회합니다. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
@@ -44,8 +43,6 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'standard',
-    winterCompatibility: 'fair',
-    summerCompatibility: 'poor',
   },
   targetUsers: {
     recommended: [
@@ -64,7 +61,6 @@ export const shoe: Shoe = {
     '한국 현재 정가·폭·SKU와 해외 독립 랩 수치는 미확인',
   ],
   priceAnalysis: {
-    valueRating: 7,
     priceTier: 'super-premium',
     alternatives: [
       'nike-alphafly-3',

@@ -13,7 +13,6 @@ export const shoe: Shoe = {
     '/images/shoes/brooks/hyperionelite6/detail.webp',
   ],
   category: '레이싱',
-  rating: 4,
   description: 'DNA Gold PEBA · 전장 SpeedVault+ 카본 구조의 하이페리온 엘리트 6. RunRepeat 실험실 검체 193g·39.9/29.3mm. 한국 현재 정가 미확인.',
   oneliner: 'DNA Gold PEBA · 전장 SpeedVault+ 카본 · 193g (RunRepeat 실험실 검체)',
   editorComment: '2026-11-10 원문 재확인. 한국 공식 캐시: 정확 모델 상품 원문은 공식 홈502·타임아웃과 검색 미발견으로 확보하지 못함. 현재 가격·폭별 선택 재고는 미확인입니다. 공통 SOLD OUT 템플릿과 장바구니 버튼을 실제 재고로 보지 않으며 검색 미발견을 단종·미출시로 단정하지 않습니다. DOR 소개192g(남성 US9)/172g(여성 US8)·40/33mm·7mm와 RR193g·39.9/29.3mm·10.6mm를 구분합니다. 테스터 실제US10.5를 소개US9와 섞지 않습니다. DOR 인솔 비분리와 RR 분리 가능은 상충합니다. 거싯도 RR표 양측부분·본문안쪽만·DOR없음이 다릅니다. 저온 변화4%를 겨울 레이스 성능 보장으로 해석하지 않으며300km·한국319,000원 현재가·미확인 매체 점수를 반복하지 않습니다. DOR Matt는 자신의 브룩스 남성US10.5(타브랜드 보통10)를 신었습니다. 앞코 테이퍼 뒤 공간은 여유 있으나 끈 조임·얇은 혀 압박·칼라 마찰이 있어 양말을 선호했습니다. 부드러운 폼과 매우 뻣뻣한 카본·로커의 지속주행은 좋았으나 짧은 빠른 세션은 너무 단단했고 자갈에서 노출 폼 손상을 적었습니다.40마일은 개인 시험 거리입니다. RR 내부 최광폭 93.3mm·엄지 70.3mm·높이 27.7mm입니다. 다른 위치인 외부 바닥 폭과 구분하고 실제 규격에서 길이·높이·고정을 확인하세요. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
@@ -43,8 +42,6 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'narrow',
-    winterCompatibility: 'good',
-    summerCompatibility: 'good',
   },
   targetUsers: {
     recommended: [
@@ -57,7 +54,6 @@ export const shoe: Shoe = {
     ],
   },
   priceAnalysis: {
-    valueRating: 5,
     priceTier: 'super-premium',
     alternatives: [
       'brooks-hyperion-elite-5',

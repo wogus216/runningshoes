@@ -15,7 +15,6 @@ export const shoe: Shoe = {
     '/images/shoes/on/cloudrunner3/angle.webp',
   ],
   category: '안정화',
-  rating: 4,
   description: 'Helion · CloudTec · 비대칭힐클립 구조의 클라우드러너 3. RunRepeat 실험실 검체 298g·36.8/28.7mm. 한국 현재 정가 미확인.',
   oneliner: 'Helion · CloudTec · 비대칭힐클립 · 298g (RunRepeat 실험실 검체)',
   editorComment: "2026-11-10 원문 재확인. 한국캐시남성 3MG10071043·여성 3WG10050924 Regular표시가격 199,000원, 공시 311/250g(사이즈미공시)·8mm 입니다. 현재 가격·한국 와이드·선택재고는미확인입니다. 캐시목록을현재재고로승격하지않습니다. DOR317g 은 David남성 US9.5홈스케일·31/23mm·8mm(스택측정법미명시), RR 브랜드 295/250g(사이즈미확인)·37/29mm·8mm, 실제 298g·36.8/28.7mm·8.1mm 입니다. RR BR52·건조 47% 와 David의좋은통기체감은시험이다릅니다.0.6mm 국소마모를 600km·On최저 km당비용으로바꾸지않습니다. 안정화분류만으로과내전·평발·관절보호를보장하지않습니다. DOR David(남성 US9.5)는정사이즈·약간넓은중족/전족과높은볼륨·편한고정을느꼈고힐 슬립은없었습니다. 이지주행·걷기전환은좋았지만단단한 Helion의낮은반발과무게를아쉬워했습니다. 가이던스평가는후족에집중되고중족/전족은더중립적이라는개인의견이며임상교정효과가아닙니다. RR 내부 최광폭 95.5mm·엄지 71mm·높이 25.2mm 입니다. David의여유있는전족·높은볼륨과치수는조건이다릅니다. 한국 와이드없음·평발입문전용은확정하지 않습니다. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.",
@@ -33,11 +32,8 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'standard',
-    winterCompatibility: 'good',
-    summerCompatibility: 'good',
   },
   priceAnalysis: {
-    valueRating: 7,
     priceTier: 'premium',
     alternatives: [
       'asics-gel-kayano-32',

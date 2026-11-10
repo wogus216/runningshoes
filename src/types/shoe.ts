@@ -31,7 +31,7 @@ export interface KoreanFootFit {
   /** @deprecated 모델별 임상 근거 없음. 표시·추천 점수에 사용하지 않는다. */
   flatFootCompatibility?: CompatibilityLevel;
   wideOptions?: boolean;
-  winterCompatibility: CompatibilityLevel;
+  winterCompatibility?: CompatibilityLevel;
   summerCompatibility?: CompatibilityLevel;
 }
 
@@ -45,7 +45,7 @@ export interface PriceAnalysis {
   streetPrice?: number;
   /** ₩/km — 정가÷specs.durability. 정가가 없으면 비운다 */
   costPerKm?: number;
-  valueRating: number;    // 1-10
+  valueRating?: number;   // 산정 근거·조건이 있는 편집 평가만
   priceTier: PriceTier;
   alternatives: string[]; // similar price alternatives
   valueAdvantages?: string[]; // 가격 대비 장점 (브랜드별 맞춤)
@@ -112,7 +112,7 @@ export interface Shoe {
   brand: string;
   name: string;
   category: string;
-  rating: number;
+  rating?: number; // 산정 근거·조건이 있는 편집 평가만
   image?: string;
   images?: string[];  // 여러 이미지 (슬라이더용)
   status?: ShoeStatus;

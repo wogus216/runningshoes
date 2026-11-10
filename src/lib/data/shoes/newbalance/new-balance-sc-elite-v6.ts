@@ -15,7 +15,6 @@ export const shoe: Shoe = {
     '/images/shoes/newbalance/scelitev6/outsole.webp',
   ],
   category: '레이싱',
-  rating: 4.5,
   description: 'Infinion · Energy Arc 카본 · FANTOMFIT 구조의 SC Elite V6. RunRepeat 실험실 검체 190g·38.5/24.6mm. 한국 현재 정가 미확인.',
   oneliner: 'Infinion · Energy Arc 카본 · FANTOMFIT · 190g (RunRepeat 실험실 검체)',
   editorComment: '2026-11-10 원문 재확인. 한국 공식 캐시: 공식403·정확 상품 원문 미확인. 현재 가격·폭·선택 재고는 미확인입니다. 캐시 수량·알림·장바구니 버튼을 현재 재고로 쓰지 않습니다. DOR 소개190g(남성US9.5)/155g(여성US7)·40/32mm·8mm와 RR190g·38.5/24.6mm·13.9mm를 나눕니다. 같은190g을 동일 실제 사이즈로 보지 않습니다. RR은 공시32mm가 중족에 가까운 위치이고 지정 전족75% 위치는24.6mm라고 설명합니다. 한국 공식403·정확 상품 미확보로389,000원·국내2E 현재 판매를 확정하지 않습니다. RR 좁은 검체·투표와 Andrea의 편한 앞코는 조건이 다릅니다.13.9mm 정적 드롭을 주행 중 체감으로 고정하지 않고300km 수명·v5대비 모든 개인의 기록 향상 보장을 제거했습니다. DOR 직접403 뒤 원문 캐시를 확인했습니다. Andrea(여성US9.5)는 정사이즈의 편한 앞코·유연한 메시와 고정을 좋아했으나 혀 접힘에 주의했습니다. Matt(남성US10)는 낮고 밀착된 외측 테이퍼가 조금 짧게 느껴졌고 좁은 힐/중족에 더 많은 안정감이 필요했습니다. 두 사람의 반응성 선호가 모든 발의 적합을 뜻하지 않습니다. RR 내부 최광폭 90.7mm·엄지 71.4mm·높이 26.8mm입니다. 너비 하나로 발등·길이·힐 고정이나 한국 와이드 적합을 보장하지 않습니다. 실제 규격·양말에서 접촉과 전환을 확인하세요. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
@@ -38,8 +37,6 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'narrow',
-    winterCompatibility: 'good',
-    summerCompatibility: 'excellent',
   },
   targetUsers: {
     recommended: [
@@ -58,7 +55,6 @@ export const shoe: Shoe = {
     'RR 내부 최광폭 90.7mm·엄지 71.4mm·높이 26.8mm입니다. 너비 하나로 발등·길이·힐 고정이나 한국 와이드 적합을 보장하지 않습니다. 실제 규격·양말에서 접촉과 전환을 확인하세요.',
   ],
   priceAnalysis: {
-    valueRating: 5,
     priceTier: 'super-premium',
     alternatives: [
       'nike-alphafly-3',

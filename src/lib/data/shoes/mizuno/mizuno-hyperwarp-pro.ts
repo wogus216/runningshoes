@@ -15,7 +15,6 @@ export const shoe: Shoe = {
     '/images/shoes/mizuno/hyperwarppro/back.webp',
   ],
   category: '레이싱',
-  rating: 4,
   price: 249000,
   description: 'ENERZY XP · 카본 혼합 나일론 판재(DOR) 구조의 하이퍼워프 프로. 한국 제조사 공시·270mm 한쪽 (독립 실측 아님) 200g·39/33.5mm. 한국 확인 가격 249,000원.',
   oneliner: 'ENERZY XP · 카본 혼합 나일론 판재(DOR) · 200g (한국 제조사 공시·270mm 한쪽 (독립 실측 아님))',
@@ -45,8 +44,6 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'standard',
-    winterCompatibility: 'good',
-    summerCompatibility: 'good',
   },
   targetUsers: {
     recommended: [
@@ -66,7 +63,6 @@ export const shoe: Shoe = {
   ],
   priceAnalysis: {
     msrp: 249000,
-    valueRating: 7,
     priceTier: 'super-premium',
     alternatives: [
       'hoka-mach-x-3',

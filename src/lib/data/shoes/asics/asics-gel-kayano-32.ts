@@ -15,7 +15,6 @@ export const shoe: Shoe = {
     '/images/shoes/asics/kayano32/5.webp',
   ],
   category: '안정화',
-  rating: 4,
   description: 'FF BLAST PLUS 계열 · PureGEL · 4D Guidance System 구조의 젤 카야노 32. 실험실 295g·힐/전족부 39.9/30.6mm. 한국 현재 정가 미확인.',
   oneliner: '295g 실험실 무게 · FF BLAST PLUS 계열 · PureGEL · 4D Guidance System',
   editorComment: '2026-11-09 원문 재확인. 한국 브랜드 사이트에서 현재 정가·폭·SKU를 확인하지 못했습니다. 아식스코리아 본사 판매자 SSG·SSF 원문에112530101-102/-101·판매가199,000원이 있으나 명시 MSRP와 실시간 재고는 미확인입니다. DOR 소개 남성298g(US9)·여성255g(US8),40/32mm·드롭8mm. Matt 실제US10·314g과 RR295g·9.3mm를 구분.  DOR의 Matt은 US10에서 길이는 맞지만30/31보다 타이트한 니트, 패딩된 단단한 카운터, 단단한 앞쪽과 더 매끄러운 힐 전환을 느꼈습니다. RR의 젖은 콘크리트 접지시험과 Matt의 젖은 보도 미끄러짐 의견은 다른 조건입니다. 전통 미디얼 포스트로 설명하지 않습니다. 한국 와이드·X-Wide의 현재SKU는 미확인입니다. RR 내부최광폭96.6mm·엄지73.9mm·높이27.5mm를 개인핏과 구분하세요. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
@@ -44,8 +43,6 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'standard',
-    winterCompatibility: 'excellent',
-    summerCompatibility: 'poor',
   },
   targetUsers: {
     recommended: [
@@ -64,7 +61,6 @@ export const shoe: Shoe = {
     '한국 와이드·X-Wide의 현재SKU는 미확인입니다. RR 내부최광폭96.6mm·엄지73.9mm·높이27.5mm를 개인핏과 구분하세요.',
   ],
   priceAnalysis: {
-    valueRating: 7,
     priceTier: 'premium',
     alternatives: [
       'brooks-adrenaline-gts-25',

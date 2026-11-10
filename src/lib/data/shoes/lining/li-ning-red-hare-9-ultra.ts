@@ -15,7 +15,6 @@ export const shoe: Shoe = {
     '/images/shoes/lining/red-hare-9-ultra/outsole.webp',
   ],
   category: '쿠션화',
-  rating: 4.5,
   description: '3층 폼 · Super BOOM Capsule · 중족 비틀림 판 구조의 레드헤어 9 울트라. RTR EU43/US9.5 검체 246.2g·47/42mm. 한국 현재 정가 미확인.',
   oneliner: '3층 폼 · Super BOOM Capsule · 중족 비틀림 판 · 246.2g (RTR EU43/US9.5 검체)',
   tags: [
@@ -51,7 +50,6 @@ export const shoe: Shoe = {
     '실제 신을 규격에서 앞쪽 길이·높이·거싯 압박·힐 고정을 확인하세요. 독립 랩 내부 너비·높이는 미확인이며 한 테스터의 좁은 체감을 한국인 전체 발볼 등급으로 바꾸지 않습니다.',
   ],
   priceAnalysis: {
-    valueRating: 9,
     priceTier: 'mid',
     alternatives: [
       'asics-superblast-3',

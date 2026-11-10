@@ -15,7 +15,6 @@ export const shoe: Shoe = {
     '/images/shoes/hoka/tectonx3/outsole.webp',
   ],
   category: '트레일',
-  rating: 4.5,
   description: '이중 PEBA · 병렬 윙렛 카본 · MATRYX · Vibram 구조의 테크톤 X 3. RunRepeat 실험실 검체 275g·37.8/30.9mm. 한국 현재 정가 미확인.',
   oneliner: '이중 PEBA · 병렬 윙렛 카본 · MATRYX · Vibram · 275g (RunRepeat 실험실 검체)',
   editorComment: '2026-11-10 원문 재확인. 한국 공식 연결 스토어에서 정확 상품 본문을 확보하지 못해 현행 정가·SKU·성별·폭·선택 재고는 미확인입니다. 해외 와이드나 유통가를 한국 공식 정보로 대입하지 않으며 검색 실패를 단종·전국 품절로 해석하지 않습니다. 기존339,000원 리셀러값을 한국 공식 정가로 쓰지 않습니다. 호주 공식 남성283g(사이즈 미확인)·5mm, RR 브랜드40/35mm·5mm·292/244g(사이즈 미확인), 실제275g·37.8/30.9mm·6.9mm를 구분합니다. 현행 RR 원문 경도는16.0HA(구방식 ShoreA)이며 AC는 미확인입니다. 아웃솔88HC와 다르며 변환하지 않습니다.4mm 러그·국소마모0.5mm·리턴69.9/70.2%를450~550km 수명·50/100km 피로 감소·만능 접지로 바꾸지 않습니다. 어퍼 밀림 일괄 보장·급경사 금지·폴 필수는 확인한 범위에서 입증하지 못했습니다. DOR 텍톤X3 독립 리뷰는 미확인입니다. Rocket X Trail 원문의 명시적 비교 문장에서 Matt은 텍톤X3 어퍼가 짧고 표기보다 무겁게 느껴져 자신에게 맞지 않았다고 적었습니다. 이 비교의 텍톤 검체 사이즈는 미확인이고 Rocket의 수치·주행을 옮기지 않았습니다. RR 내부 최광폭92.2mm·엄지73.1mm·높이26.4mm와 외부 플랫폼117mm는 다른 위치입니다. 한국 현재 와이드·개인 사이즈는 미확인입니다. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
@@ -44,8 +43,6 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'narrow',
-    winterCompatibility: 'good',
-    summerCompatibility: 'good',
   },
   targetUsers: {
     recommended: [
@@ -64,7 +61,6 @@ export const shoe: Shoe = {
     'RR 내부 최광폭92.2mm·엄지73.1mm·높이26.4mm와 외부 플랫폼117mm는 다른 위치입니다. 한국 현재 와이드·개인 사이즈는 미확인입니다.',
   ],
   priceAnalysis: {
-    valueRating: 6,
     priceTier: 'super-premium',
     alternatives: [
       'asics-metafuji-trail',

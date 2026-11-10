@@ -11,7 +11,7 @@ describe('buildVerdicts', () => {
     for (const { a, b } of sample) {
       const labels = buildVerdicts(a, b).map((v) => v.label);
       expect(labels).toContain('가벼움');
-      if (a.price !== undefined && b.price !== undefined) expect(labels).toContain('가성비');
+      if (a.price !== undefined && b.price !== undefined && a.priceAnalysis?.valueRating !== undefined && b.priceAnalysis?.valueRating !== undefined) expect(labels).toContain('가성비');
       else expect(labels).not.toContain('가성비');
       expect(new Set(labels).size).toBe(labels.length);
     }
@@ -26,7 +26,7 @@ describe('buildVerdicts', () => {
 
   it('가격은 만원 단위로 표기한다', () => {
     const { a, b } = pairs.find((p) => p.a.price && p.b.price)!;
-    const value = buildVerdicts(a, b).find((v) => v.label === '가성비')!;
+    const value = buildVerdicts({ ...a, priceAnalysis: { ...a.priceAnalysis!, valueRating: 9 } }, { ...b, priceAnalysis: { ...b.priceAnalysis!, valueRating: 7 } }).find((v) => v.label === '가성비')!;
     expect(value.reason).toMatch(/\d+만원 vs \d+만원/);
   });
 });

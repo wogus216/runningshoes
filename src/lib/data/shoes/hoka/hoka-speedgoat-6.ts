@@ -13,7 +13,6 @@ export const shoe: Shoe = {
     '/images/shoes/hoka/speedgoat6/outsole.webp',
   ],
   category: '트레일',
-  rating: 4.5,
   description: 'CMEVA · 내부 섀시 · Vibram Megagrip Traction Lug 구조의 스피드고트 6. RunRepeat 실험실 검체 278g·32.1/27.2mm. 한국 현재 정가 미확인.',
   oneliner: 'CMEVA · 내부 섀시 · Vibram Megagrip Traction Lug · 278g (RunRepeat 실험실 검체)',
   editorComment: '2026-11-10 원문 재확인. 한국 공식 연결 스토어에서 정확 상품 본문을 확보하지 못해 현행 정가·SKU·성별·폭·선택 재고는 미확인입니다. 해외 와이드나 유통가를 한국 공식 정보로 대입하지 않으며 검색 실패를 단종·전국 품절로 해석하지 않습니다. 기존205,000원·GTX229,000원·와이드 동일가 확정을 철회합니다. 일반 비방수6의 값을 GTX에 대입하지 않습니다. HOKA 뉴질랜드 남성278g(사이즈 미확인)·5mm, DOR 소개283g(남성US9)/244g(여성US8)·37/32mm·5mm, RR 브랜드남성40/35mm·여성38/33mm·5mm·277/232g(사이즈 미확인)과 실제278g·32.1/27.2mm·4.9mm를 구분합니다. RR 주폼40.6AC·구방식 비틀림5/5·통기2/5는 다른 시험 단위입니다. 러그4mm·국소마모1.4mm를 모든 젖은 바위·진흙·급경사의 안전이나500km 수명으로 환산하지 않습니다. DOR 개인 고정력 평가는 임상A등급이 아닙니다. 무릎 보호·평발 부하 분산·장거리 피로 감소 보장을 철회했습니다. DOR David(남성US9.5)는 정사이즈·보통 힐과 중족, 약간 여유 있는 전족을 느꼈습니다. 낮아진 볼륨과 내부 섀시의 고정, 완만한 로커·기술 지형에서 접지를 선호했지만 짧고 얕은 혀 때문에 끈 조절이 필요했습니다. RR 약간 작게라는 투표와 개인 정사이즈 경험은 구분합니다. RR 내부 최광폭95.6mm·엄지73mm·높이26.1mm입니다. 해외Normal/Wide/X-Wide 메타가 한국 현재 옵션을 보장하지 않습니다. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
@@ -42,8 +41,6 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'narrow',
-    winterCompatibility: 'good',
-    summerCompatibility: 'good',
   },
   targetUsers: {
     recommended: [
@@ -62,7 +59,6 @@ export const shoe: Shoe = {
     'RR 내부 최광폭95.6mm·엄지73mm·높이26.1mm입니다. 해외Normal/Wide/X-Wide 메타가 한국 현재 옵션을 보장하지 않습니다.',
   ],
   priceAnalysis: {
-    valueRating: 8,
     priceTier: 'premium',
     alternatives: [
       'adidas-terrex-agravic-4',

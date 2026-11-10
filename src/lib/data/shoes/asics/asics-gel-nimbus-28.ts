@@ -15,7 +15,6 @@ export const shoe: Shoe = {
     '/images/shoes/asics/nimbus28/outsole.webp',
   ],
   category: '쿠션화',
-  rating: 4.5,
   price: 199000,
   description: 'FF BLAST PLUS + 힐 PureGEL 구조의 젤 님버스 28. 한국 기본형 남성 일반1011C127.102·2E1011C144.404, 여성 일반1012B899.403·D1012B917.251 정가199,000원. Platinum 등 변형은 가격 비교에서 제외.',
   oneliner: '278g 실험실 무게 · FF BLAST PLUS + 힐 PureGEL',
@@ -45,8 +44,6 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'standard',
-    winterCompatibility: 'excellent',
-    summerCompatibility: 'good',
     wideOptions: true,
   },
   targetUsers: {
@@ -67,7 +64,6 @@ export const shoe: Shoe = {
   ],
   priceAnalysis: {
     msrp: 199000,
-    valueRating: 7,
     priceTier: 'premium',
     alternatives: [
       'new-balance-1080-v14',

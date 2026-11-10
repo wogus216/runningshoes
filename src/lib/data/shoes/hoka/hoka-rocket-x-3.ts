@@ -14,7 +14,6 @@ export const shoe: Shoe = {
     '/images/shoes/hoka/rocketX3/outsole.webp',
   ],
   category: '레이싱',
-  rating: 5,
   price: 299000,
   description: "이중 PEBA · 날개형 전장 카본 구조의 로켓 X 3. 실험실 220g·힐/전족부 39.6/29.6mm. 한국 확인 정가 299,000원.",
   oneliner: '220g 실험실 무게 · 이중 PEBA · 날개형 전장 카본',
@@ -43,8 +42,6 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'narrow',
-    winterCompatibility: 'excellent',
-    summerCompatibility: 'fair',
   },
   targetUsers: {
     recommended: [
@@ -64,7 +61,6 @@ export const shoe: Shoe = {
   ],
   priceAnalysis: {
     msrp: 299000,
-    valueRating: 7,
     priceTier: 'premium',
     alternatives: [
       'nike-alphafly-3',

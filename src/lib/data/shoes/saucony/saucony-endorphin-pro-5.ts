@@ -15,7 +15,6 @@ export const shoe: Shoe = {
     '/images/shoes/saucony/endorphinpro5/back.webp',
   ],
   category: '레이싱',
-  rating: 5,
   price: 299000,
   description: 'PWRRUN HG 상층 · PWRRUN PB 하층 · 전족 슬롯형 전장 카본 구조의 엔돌핀 프로 5. 실험실 215g·힐/전족부 36.5/27.8mm. 한국 확인 정가299,000원.',
   oneliner: '215g 실험실 무게 · PWRRUN HG 상층 · PWRRUN PB 하층 · 전족 슬롯형 전장 카본',
@@ -45,8 +44,6 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'narrow',
-    winterCompatibility: 'fair',
-    summerCompatibility: 'good',
   },
   targetUsers: {
     recommended: [
@@ -66,7 +63,6 @@ export const shoe: Shoe = {
   ],
   priceAnalysis: {
     msrp: 299000,
-    valueRating: 6,
     priceTier: 'super-premium',
     alternatives: [
       'nike-vaporfly-4',

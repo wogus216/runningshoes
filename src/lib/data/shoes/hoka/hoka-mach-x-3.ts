@@ -14,7 +14,6 @@ export const shoe: Shoe = {
     '/images/shoes/hoka/machX3/outsole.webp',
   ],
   category: '쿠션화',
-  rating: 5,
   description: 'PEBA 상층 · EVA 하층 · Pebax 플레이트 구조의 마하 X 3. 실험실 264g·힐/전족부 42.9/33.4mm. 한국 현재 정가 미확인.',
   oneliner: '264g 실험실 무게 · PEBA 상층 · EVA 하층 · Pebax 플레이트',
   editorComment: "2026-11-09 원문 재확인. 호카 코리아 공식 링크트리 연결스토어의 여성마하 X3와이드 제목 1168872-NNRS 상품은 할인전 249,000원·표시판매 99,600원·품절이었습니다. 같은상세의상품정보에는 1162410-BCQ로 적혀 정확 SKU 일치가 미해결입니다. 따라서 일반모델정가·확정와이드 필드는 비워두고, 남성현재 상품·전색상재고도 미확인입니다. DOR 소개 남성 289g(US9)·여성 244g(US8),46/41mm·드롭 5mm. RR 브랜드메타는남 252g·여 215g 과 44/39·42/37mm 로 적고, RR 실측 264g·42.9/33.4mm·9.5mm 와 차이가 있어 출처조건을 구분합니다. RR 주폼 32.5AC·보조폼 41.6AC 는 다른 층입니다. 한국제목 SKU 와상품정보코드의충돌을 조용히 덮지 않으며, 표본의마모 0.8mm 를 400km수명으로 바꾸지 않습니다. 힐물집이모두해결됐다는보장·공통최적 페이스·질환보호 등급은 철회합니다. DOR David(남성 US9.5)는 길이가 맞고 힐이 약간 좁으며 발등 볼륨이 밀착됐다고 느꼈습니다. Bach은 길이·앞쪽 공간이 맞고 중족 밀착이 주행 후 완화됐다고 평가했습니다. David는 부드러운 느낌, Bach은 단단한 느낌을 적었고 급한 내리막의 높은 중립 플랫폼과 전방 전환을 한계로 지적했습니다. 한국상품제목은여성와이드지만같은페이지의모델코드가 달라 정확한 변형 일치를 확인하지 못했습니다. RR 내부 최광폭 91.6mm·엄지 70.8mm·높이 28.5mm 를 한국 와이드 치수로 쓰지 않습니다. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.",
@@ -42,8 +41,6 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'narrow',
-    winterCompatibility: 'good',
-    summerCompatibility: 'fair',
   },
   targetUsers: {
     recommended: [
@@ -62,7 +59,6 @@ export const shoe: Shoe = {
     "한국상품제목은여성와이드지만같은페이지의모델코드가 달라 정확한 변형 일치를 확인하지 못했습니다. RR 내부 최광폭 91.6mm·엄지 70.8mm·높이 28.5mm 를 한국 와이드 치수로 쓰지 않습니다.",
   ],
   priceAnalysis: {
-    valueRating: 8,
     priceTier: 'high',
     alternatives: [
       'nike-vomero-18',

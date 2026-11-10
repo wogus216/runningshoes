@@ -278,41 +278,7 @@ export function recommendShoes(shoes: CardShoe[], profile: UserProfile): Recomme
       reasons.push('선호 브랜드');
     }
 
-    // 12. 가성비 점수 반영
-    if (shoe.priceAnalysis?.valueRating) {
-      score += shoe.priceAnalysis.valueRating;
-    }
-
-    // 13. 계절 맞춤 추천
-    if (profile.season && profile.season !== 'all') {
-      if (profile.season === 'winter' && shoe.koreanFootFit?.winterCompatibility) {
-        const winterLevel = shoe.koreanFootFit.winterCompatibility;
-        if (winterLevel === 'excellent') {
-          score += 15;
-          reasons.push('겨울 러닝에 최적');
-        } else if (winterLevel === 'good') {
-          score += 10;
-          reasons.push('겨울 러닝에 적합');
-        } else if (winterLevel === 'poor') {
-          score -= 10;
-        }
-      }
-      if (profile.season === 'summer') {
-        // 여름 적합도 데이터가 있는 경우
-        if (shoe.koreanFootFit?.summerCompatibility) {
-          const summerLevel = shoe.koreanFootFit.summerCompatibility;
-          if (summerLevel === 'excellent') {
-            score += 15;
-            reasons.push('여름 러닝에 최적');
-          } else if (summerLevel === 'good') {
-            score += 10;
-            reasons.push('여름 러닝에 적합');
-          } else if (summerLevel === 'poor') {
-            score -= 10;
-          }
-        }
-      }
-    }
+    // 근거 미확인 별점·가성비·계절 등급은 추천 계산에 사용하지 않는다.
 
     // 14. 페이스 기반 추천 (강화: fast에 레이싱 특화)
     if (profile.targetPace) {
@@ -387,12 +353,6 @@ export function recommendShoes(shoes: CardShoe[], profile: UserProfile): Recomme
         score += 5;
         reasons.push('입문자에게 좋은 쿠셔닝');
       }
-    }
-
-    // 19. 평점 보너스 (4.5 이상)
-    if (shoe.rating >= 4.5) {
-      score += 3;
-      reasons.push('높은 에디터 평점');
     }
 
     // 21. 프리미엄 레이싱 보너스 (상급자 + 빠른 페이스 + 높은 예산)
@@ -520,11 +480,6 @@ function generateDetailedReason(
 
   if (specComparisons.length > 0) {
     parts.push(specComparisons.join('. ') + '.');
-  }
-
-  // 가성비 설명
-  if (shoe.priceAnalysis?.valueRating && shoe.priceAnalysis.valueRating >= 8) {
-    parts.push('가격 대비 성능이 뛰어나 가성비가 좋습니다.');
   }
 
   return parts.join(' ');

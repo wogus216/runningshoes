@@ -11,7 +11,6 @@ export const shoe: Shoe = {
     '/images/shoes/saucony/omnist23/side.jpg',
   ],
   category: '안정화',
-  rating: 4.4,
   description: 'PWRRUN PB · TPU 지지 프레임 · 폼 설명 상충 구조의 옴니 ST 23. DOR 소개 공시 · 독립 랩 미확인 286g·40/32mm. 한국 현재 정가 미확인.',
   oneliner: 'PWRRUN PB · TPU 지지 프레임 · 폼 설명 상충 · 286g (DOR 소개 공시 · 독립 랩 미확인)',
   editorComment: '2026-11-10 원문 재확인. 한국 공식 캐시: Men S21072-101 M(일반) 표시199,000원; Men S21073-103 W(와이드) 표시199,000원; Women S11073-100 W(와이드) 표시199,000원. 현재 가격·선택 재고·숫자 폭 규격은 미확인입니다. 일반 사이즈 환산표·공통2E/4E 내비게이션·장바구니 버튼을 정확 모델 재고나 폭 증거로 쓰지 않습니다. DOR 소개286g(남성US9)/252g(여성US8)·40/32mm·8mm와 실제테스터US10을 구분합니다. 정확 RR 랩은 미확인이고 소개를 한국 공식·독립 실측으로 쓰지 않습니다. 한국M/W와 DOR 미확인 폭 검체를 같은 규격으로 보지 않습니다. 과내전 최상급·첫 주 거리 감소 처방·500km·할인 없음·국내4종 전수라는 단정을 이번 표본으로 반복하지 않습니다. DOR Matt(남성US10)는 조금 넓지만 테이퍼·오버레이가 있는 정사이즈와 느슨한 힐 때문에 매번 끈을 다시 조였다고 적었습니다. 두꺼운 거싯 혀와 힐/중족TPU프레임·더 유연한 앞발의 부드러운 탄성을 이지·롱런·일부 업템포에서 즐겼습니다.70마일은 제품 수명이 아닙니다. 정확 모델의 독립 내부 치수는 미확인입니다. 실제 상품에서 앞코 높이·길이·발등과 힐 고정을 확인하세요. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
@@ -28,11 +27,8 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'standard',
-    winterCompatibility: 'good',
-    summerCompatibility: 'fair',
   },
   priceAnalysis: {
-    valueRating: 7,
     priceTier: 'premium',
     alternatives: [
       'saucony-guide-19',

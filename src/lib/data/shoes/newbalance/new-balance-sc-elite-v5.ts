@@ -15,7 +15,6 @@ export const shoe: Shoe = {
     '/images/shoes/newbalance/scelitev5/outsole.webp',
   ],
   category: '레이싱',
-  rating: 5,
   description: 'PEBA 기반 FuelCell 이중층 · Energy Arc 카본 구조의 SC Elite V5. 실험실 198g·힐/전족부 39.3/28.6mm. 한국 현재 정가 미확인.',
   oneliner: '198g 실험실 무게 · PEBA 기반 FuelCell 이중층 · Energy Arc 카본',
   editorComment: "2026-11-09 원문 재확인. 뉴발란스 실운영 한국 공식 검색에서 현재 V6만 9개 확인돼 V5의 현행정가·판매 SKU·성별·폭·재고는 미확인입니다. V6가격과 QA·개발호스트 캐시를 V5현재 상품 증거로 사용하지 않습니다. 미노출을 단종 확정으로 해석하지 않습니다. DOR 소개 남성 213g(US9.5)·여성 165g(US7),40/32mm·8mm. RR198g·39.3/28.6mm·10.7mm 와 성별·사이즈·공시조건을 구분합니다. RR 주폼 33.8AC·보조 31.7AC 와 DOR 의 단단한 전체 주행감은 다른 지표입니다. RR16.2N굽힘과 리뷰어의 무유연성 체감도 다릅니다. 제조사의 100%PEBA주장은 DOR 에 인용된 설명이며 다른 폼 450km연구를 이 모델 300km수명으로 옮기지 않습니다. DOR Matt(남성 US10)은 길이가 맞고 낮은 볼륨이지만 앞쪽은 넓으며 힐·중족 고정이 좋았다고 느꼈습니다. 긴 템포·크루즈에 선호했지만 좁은 뒤쪽과 뻣뻣한 앞쪽을 한계로 봤습니다. Andrea(여성 US9.5)는 앞쪽과 고정이 편했지만 완만한 로커·안쪽 전족 플레어 때문에 추진감이 적다고 느꼈습니다. 개인별 기록 비교를 통제된 성능 개선율로 인용하지 않습니다. 한국 현재 와이드 SKU 는 미확인입니다. RR 내부 최광폭 93.8mm·엄지 74.5mm·높이 26.4mm 를 근거로 레이스 후반 모든 넓은 발에 압박이 없다고 보장하지 않습니다. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.",
@@ -53,11 +52,8 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'standard',
-    winterCompatibility: 'good',
-    summerCompatibility: 'fair',
   },
   priceAnalysis: {
-    valueRating: 7,
     priceTier: 'super-premium',
     alternatives: [
       'nike-alphafly-3',

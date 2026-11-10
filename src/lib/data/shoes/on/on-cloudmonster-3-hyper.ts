@@ -15,7 +15,6 @@ export const shoe: Shoe = {
     '/images/shoes/on/cloudmonster3hyper/angle.webp',
   ],
   category: '쿠션화',
-  rating: 4.5,
   description: 'Helion HF(PEBA)위층 · Helion아래층 · CloudTec 구조의 클라우드몬스터 3 하이퍼. RunRepeat 실험실 검체 264g·43.4/34.2mm. 한국 현재 정가 미확인.',
   oneliner: 'Helion HF(PEBA)위층 · Helion아래층 · CloudTec · 264g (RunRepeat 실험실 검체)',
   editorComment: "2026-11-10 원문 재확인. 한국캐시남성 3MG10065262·여성 3WG10045262 Regular표시가격 259,000원, 공시남성 253g·여성 213.6g(기준 사이즈미공시)·6mm 입니다. 현재 가격·와이드·선택재고는미확인입니다. 캐시잔여수량을현재고로쓰지않습니다. DOR271g(남성 US9.5)·45/39mm·6mm, RR 브랜드 263/215g(사이즈미확인)·37/31mm·6mm, 실제 RR264g·43.4/34.2mm·9.2mm 입니다. 한국전체스택은미확인으로 DOR 소개를한국공식이라고쓰지않습니다. 주폼 37.2AC 이며미노출보조층·저온절대값을채우지않습니다. RR 구방식통기 2/5와 David의좋은통기체감은다른정보입니다.450km·km당 576원·겨울훈련손실감소·초대대비압도적성능·평발위험단정을철회합니다. DOR David(남성 US9.5)는여유있는전족볼륨·고정과단단한카운터를느꼈지만쓸림은없었고이지·롱런을선호했습니다. Matt(남성 US10)은약간넓고높은전족·끈조임·좋은힐 고정,조금유연한카운터를느끼며일상·롱런·프로그레션·템포를선호했습니다. 카운터·통기체감차이를그대로남깁니다. RR 내부 최광폭 95mm·엄지 72.8mm·높이 27.5mm 입니다. 정사이즈안내·글로벌 Normal은한국 와이드부재·모든발사이즈보장이아닙니다. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.",
@@ -43,11 +42,8 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'standard',
-    winterCompatibility: 'excellent',
-    summerCompatibility: 'good',
   },
   priceAnalysis: {
-    valueRating: 6,
     priceTier: 'premium',
     alternatives: [
       'asics-superblast-2',

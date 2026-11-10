@@ -15,7 +15,6 @@ export const shoe: Shoe = {
     '/images/shoes/mizuno/waveinspire21/outsole.webp',
   ],
   category: '안정화',
-  rating: 4,
   price: 159000,
   description: 'ENERZY 본체 · 힐 ENERZY NXT · Wave plate 구조의 웨이브 인스파이어 21. 실험실 286g·힐/전족부 38/25.1mm. 한국 확인 정가159,000원.',
   oneliner: '286g 실험실 무게 · ENERZY 본체 · 힐 ENERZY NXT · Wave plate',
@@ -42,8 +41,6 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'standard',
-    winterCompatibility: 'good',
-    summerCompatibility: 'good',
     wideOptions: true,
   },
   targetUsers: {
@@ -64,7 +61,6 @@ export const shoe: Shoe = {
   ],
   priceAnalysis: {
     msrp: 159000,
-    valueRating: 9,
     priceTier: 'mid',
     alternatives: [
       'asics-gel-kayano-32',

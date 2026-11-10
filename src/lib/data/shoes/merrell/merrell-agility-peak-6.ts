@@ -15,7 +15,6 @@ export const shoe: Shoe = {
     '/images/shoes/merrell/agility-peak-6/outsole.webp',
   ],
   category: '트레일',
-  rating: 4,
   description: 'FloatPro EVA · 전족 Rock Plate · FLEXconnect · Vibram 구조의 어질리티 피크 6. RunRepeat 실험실 검체 278g·36.1/24.6mm. 한국 공식 확인 정가 199,000원 (2026-11-10).',
   oneliner: 'FloatPro EVA · 전족 Rock Plate · FLEXconnect · Vibram · 278g (RunRepeat 실험실 검체)',
   editorComment: '2026-11-10 원문 재확인. 2026-11-10 09:41~09:44 KST 한국 공식 HTTP 원문 확인: M26A1-MLC300BLK (men·regular (separate from WIDE product)) 정가 199,000원·표시 판매/할인가 199,000원; M27A1-MLC301BLK (men·WIDE) 정가 199,000원·표시 판매/할인가 199,000원. 정가는 소비자가 필드 기준입니다. 옵션 선택·최종 결제·규격별 재고는 미확인입니다. 쿠폰을 임의 차감하지 않습니다. 이전 M26A1-MLC301BLK 경로 404와 현재 M27A1-MLC301BLK/J00003309W의 HTTP200을 구분합니다. 전년 경로의 404를 전체 와이드 단종으로 해석하지 않습니다. RR278g·36.1/24.6mm·11.5mm, RR 재전재 브랜드32/26mm·6mm와 RTR통계38/30mm·8mm·본문32/26mm·6mm가 다릅니다. 한국 확인 상품의 공시 전체 스택은 미확인입니다. RR 낮은 리턴41.9/47%와 RTR의 부드럽고 반응 좋은 체감은 다른 척도입니다. Traction Lug가 신기술이라는 설명은 RTR댓글에서 전작에도 있었다고 정정됐습니다.0.64 젖은 콘크리트로 바위·흙에서 안 미끄러짐·600km·힐 착지 전용을 보장하지 않습니다. 정확 DOR 리뷰는 미확인입니다. RTR Jeff(남성US10·298g)는 언덕의 힐 뜸을 추가 아일렛으로 해결하고 부드러운 유연성·반응을 좋아했습니다. Zack은 아치 밀착과 눈 위 유연성·영하의 부드러움을 느꼈으나 실제 사이즈는 미확인이고 젖은 진흙은 아직 모른다고 밝혔습니다. Colorado 겨울 노면을 한국 모든 산으로 일반화하지 않습니다. RR 내부 최광폭 94.3mm·엄지 70.5mm·높이 25.7mm입니다. 한국 여성·와이드의 치수로 직접 대입하지 말고 실제 길이·발가락 위 공간·힐 고정을 확인하세요. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
@@ -35,8 +34,6 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'narrow',
-    winterCompatibility: 'good',
-    summerCompatibility: 'fair',
   },
   targetUsers: {
     recommended: [
@@ -55,7 +52,6 @@ export const shoe: Shoe = {
     'RR 내부 최광폭 94.3mm·엄지 70.5mm·높이 25.7mm입니다. 한국 여성·와이드의 치수로 직접 대입하지 말고 실제 길이·발가락 위 공간·힐 고정을 확인하세요.',
   ],
   priceAnalysis: {
-    valueRating: 7,
     priceTier: 'mid',
     alternatives: [
       'saucony-peregrine-16',

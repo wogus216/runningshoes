@@ -103,7 +103,7 @@ export type SimilarShoeInfo = {
   slug: string;
   brand: string;
   name: string;
-  rating: number;
+  rating?: number;
   category: string;
   image?: string;
   price?: number;
@@ -113,7 +113,7 @@ export type SimilarShoeInfo = {
     stability: number;
   };
   priceAnalysis?: {
-    valueRating: number;
+    valueRating?: number;
   };
   koreanFootFit?: {
     toBoxWidth: string;

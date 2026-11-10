@@ -15,7 +15,6 @@ export const shoe: Shoe = {
     '/images/shoes/saucony/guide19/top.webp',
   ],
   category: '안정화',
-  rating: 4,
   description: 'PWRRUN EVA · TPU 인솔 · CenterPath 구조의 가이드 19. RunRepeat 실험실 검체 298g·37.4/31.4mm. 한국 현재 정가 미확인.',
   oneliner: 'PWRRUN EVA · TPU 인솔 · CenterPath · 298g (RunRepeat 실험실 검체)',
   editorComment: '2026-11-10 원문 재확인. 한국 공식 캐시: men S21058-101 M(일반) 정가179,000원·할인캐시152,150원; men S21059-104 W(와이드) 정가179,000원·할인캐시134,250원; women S11059-142 W(와이드) 정가179,000원·할인캐시152,150원. 현재 가격·폭별 선택 재고는 미확인입니다. 옵션 목록·장바구니·품절 문구를 현재 전체 재고로 해석하지 않습니다. 한국 무게·전체 스택 공시가 없는 제품은 해외 소개로 채우지 않습니다. DOR 소개 275g(남성 US9)/252g(여성 US8)·35/29mm·6mm와 RR298g·37.4/31.4mm·6mm는 같은 검체로 확인한 값이 아닙니다. 외부 전족 플랫폼120mm는 내부 발볼120mm가 아닙니다. Matt와 Bach의 부드러움·반응 체감은 하나로 합치지 않습니다. 한국 W/M을 2E/D로 바꾸거나 글로벌 X-Wide를 한국 판매 증거로 쓰지 않습니다. 교정 보장·드롭별 적응 기간·600km 수명을 제거했습니다. DOR 직접403 이후 검색에 노출된 원문 캐시를 확인했습니다. DOR Matt(남성 US10)는 초기 테이퍼가 완화되고 고정이 좋으며 부드럽지만 반응성과 가이던스 체감은 약하다고 적었습니다. Bach는 앞발 공간은 충분하나 중족 좌우 움직임이 오래 신으면 거슬렸고 본인 착지에서는 더 단단하고 반응이 고르게 느껴졌습니다. Bach 실제 착화 사이즈는 미확인입니다. RR 내부 최광폭 96.2mm·엄지 72.8mm·높이 26.8mm입니다. 전체 발 적합성이나 한국 와이드 규격으로 바꾸지 말고 실제 길이·높이·고정을 함께 확인하세요. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
@@ -33,11 +32,8 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'standard',
-    winterCompatibility: 'good',
-    summerCompatibility: 'good',
   },
   priceAnalysis: {
-    valueRating: 7,
     priceTier: 'mid',
     alternatives: [
       'saucony-guide-18',

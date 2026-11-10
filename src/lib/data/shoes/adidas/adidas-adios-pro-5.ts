@@ -11,7 +11,6 @@ export const shoe: Shoe = {
     '/images/shoes/adidas/adiospro5/side.webp',
   ],
   category: '레이싱',
-  rating: 0,
   noindex: true,
   description: 'Lightstrike Pro · 둘레형 카본 주입 ENERGYRIM 구조의 아디제로 아디오스 프로 5. RunRepeat 실험실 검체 176g·35.6/30mm. 한국 현재 정가 미확인.',
   oneliner: 'Lightstrike Pro · 둘레형 카본 주입 ENERGYRIM · 176g (RunRepeat 실험실 검체)',

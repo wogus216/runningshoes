@@ -15,7 +15,6 @@ export const shoe: Shoe = {
     '/images/shoes/asics/magicspeed4/5.webp',
   ],
   category: '레이싱',
-  rating: 4,
   price: 199000,
   description: '전장 FF BLAST PLUS · 전족 FF TURBO 부분삽입 · 전장 카본 구조의 매직스피드 4. 실험실 237g·힐/전족부 42.5/32.9mm. 한국 확인 정가199,000원.',
   oneliner: '237g 실험실 무게 · 전장 FF BLAST PLUS · 전족 FF TURBO 부분삽입 · 전장 카본',
@@ -45,8 +44,6 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'standard',
-    winterCompatibility: 'fair',
-    summerCompatibility: 'poor',
   },
   targetUsers: {
     recommended: [
@@ -66,7 +63,6 @@ export const shoe: Shoe = {
   ],
   priceAnalysis: {
     msrp: 199000,
-    valueRating: 8,
     priceTier: 'premium',
     alternatives: [
       'nike-zoom-fly-6',

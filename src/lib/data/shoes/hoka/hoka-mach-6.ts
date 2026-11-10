@@ -14,7 +14,6 @@ export const shoe: Shoe = {
     "/images/shoes/hoka/mach6/outsole.webp"
   ],
   "category": "데일리",
-  "rating": 4,
   "description": "Supercritical EVA 미드솔을 쓰는 마하 6. 한국 공식 연결 스토어에서 여성 와이드 1147834-PLDS 정가 185,000원 확인. 남성 정가·폭·재고는 미확인.",
   "oneliner": "232g 실험실 무게 · Supercritical EVA",
   "editorComment": "2026-11-09 원문 재확인. 한국 공식 연결 스토어에서 여성 와이드 1147834-PLDS 정가 185,000원 확인. 남성 정가·폭·재고는 미확인. DOR 소개 37/32mm · 5mm, RR이 인용한 제조사 드롭 5mm. 한국 공식 남성 사양 직접 확인은 못함. RunRepeat 실측은 232g, 힐/전족부 36/26.4mm, 드롭 9.6mm입니다. DOR은 쉬운 러닝부터 템포까지 활용한 가벼운 트레이너로 평가했지만, 리뷰어들은 전체적으로 꼭 맞고 앞쪽이 좁아지는 착화감을 지적했습니다. 한 리뷰어의 마모 경험을 공통 수명 km로 환산하지 않습니다. 한국 공식 연결 스토어의 여성 와이드 상품만 확인했습니다. 해외 남성 표준 검체의 치수를 여성 와이드에 적용할 수 없고, 한국 남성 폭은 미확인입니다. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.",
@@ -42,8 +41,6 @@ export const shoe: Shoe = {
   },
   "koreanFootFit": {
     "toBoxWidth": "narrow",
-    "winterCompatibility": "poor",
-    "summerCompatibility": "fair"
   },
   "targetUsers": {
     "recommended": [
@@ -62,7 +59,6 @@ export const shoe: Shoe = {
     "힐/전족부 에너지 리턴 65.4/67% (RunRepeat)"
   ],
   "priceAnalysis": {
-    "valueRating": 8,
     "priceTier": "mid",
     "alternatives": [
       "nike-pegasus-41",

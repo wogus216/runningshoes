@@ -14,7 +14,6 @@ export const shoe: Shoe = {
     '/images/shoes/nike/pegasus-plus/pair.webp',
   ],
   category: '데일리',
-  rating: 4.5,
   description: '초대 전장 ZoomX · Flyknit · Air·플레이트 없음 구조의 페가수스 플러스. RunRepeat 실험실 검체 244g·33/23.6mm. 한국 현재 정가 미확인.',
   oneliner: '초대 전장 ZoomX · Flyknit · Air·플레이트 없음 · 244g (RunRepeat 실험실 검체)',
   editorComment: "2026-11-09 원문 재확인. 한국 공식 남성 FQ7262-702 원문지난주캐시에 정가 219,000원·할인 153,300원이 표시됐지만 현재실시간가격·선택사이즈·재고는 미확인입니다. 한국 초대여성현재 상품·와이드 SKU 도 미확인입니다. 다른 Plus2검색결과로 채우지 않습니다. 한국 공시 245g(280mm)·10mm,DOR 소개 238g(남성 US9)·207g(여성 US8),34/24mm·10mm,RR244g·33/23.6mm·9.4mm 는 다른 조건입니다. RR 무게일반정책의 US9및드문 US8/8.5환산예외와 실제라벨미확인도 구분합니다. 33.9AC 와힐/전족리턴 64.4/70.8%,개인의부드러움체감은다른지표입니다. 젖은콘크리트계수 0.42와 Matt의젖은트랙슬립은다른노면조건입니다. 구방식비틀림 3/5·통기 3/5를 Nm·BR로변환하지않습니다.500km수명·템포 4:30~5:30전용·30km쿠션부족보장·무릎보호 등급은철회합니다. DOR Matt(남성 US10)은 초기낮은 볼륨·앞코테이퍼가 Flyknit사용후완화됐지만 중족이느슨해끈을조여야했다고적었습니다. Andrea(여성 US9.5)는길이는맞아도과도한중족볼륨때문에슬립·열감·쓸림이남았다고적었습니다. Matt의이지·제한적빠른주행활용과 Andrea의거친힐·단단한앞발·핏불편은 개인차로 남깁니다. RR 내부 최광폭 93.9mm·엄지 71.6mm·높이 29.3mm 와 중족 어퍼의 느슨함은 다른 위치의 정보입니다. 글로벌여성와이드메타를 한국 판매 증거로 쓰지 않습니다. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.",
@@ -42,8 +41,6 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'narrow',
-    winterCompatibility: 'good',
-    summerCompatibility: 'fair',
   },
   targetUsers: {
     recommended: [
@@ -62,7 +59,6 @@ export const shoe: Shoe = {
     "RR 내부 최광폭 93.9mm·엄지 71.6mm·높이 29.3mm 와 중족 어퍼의 느슨함은 다른 위치의 정보입니다. 글로벌여성와이드메타를 한국 판매 증거로 쓰지 않습니다.",
   ],
   priceAnalysis: {
-    valueRating: 8,
     priceTier: 'mid',
     alternatives: [
       'hoka-clifton-10',

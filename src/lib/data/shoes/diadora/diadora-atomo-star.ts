@@ -14,7 +14,6 @@ export const shoe: Shoe = {
     '/images/shoes/diadora/atomo-star/outsole.webp',
   ],
   category: '쿠션화',
-  rating: 4,
   description: 'ANIMA N2 질소 발포 EVA · DDATTIVO 인솔 구조의 아토모 스타. RunRepeat 실험실 검체 268g·39.9/32.1mm. 한국 현재 정가 미확인.',
   oneliner: 'ANIMA N2 질소 발포 EVA · DDATTIVO 인솔 · 268g (RunRepeat 실험실 검체)',
   editorComment: '2026-11-10 원문 재확인. 한국 공식 캐시: D5153RRN01RDS 성별 명시 미확인 정가299,000원·할인캐시199,000원; D5153RRN01BLK 성별 명시 미확인 정가299,000원·할인캐시284,050원; D6353RRN01BLS 성별 명시 미확인 정가299,000원·할인캐시284,050원; D6153RRN01BLK 성별 명시 미확인 정가299,000원·할인캐시209,300원. 현재 가격·폭·선택 재고는 미확인입니다. 공통SOLD OUT·장바구니·사이즈 목록을 현재 재고로 보지 않습니다. SKU숫자로 성별을 추정하지 않습니다. DOR 소개275g(남성US9)/210g(여성US8)·46/40mm·6mm, RR 재전재 브랜드40/34mm·6mm와 실제268g·39.9/32.1mm·7.8mm를 나눕니다. 14HA는 구방식이며AC는 미확인입니다. RR의 적응 불필요와 Matt의 적응 경험은 다릅니다.0.4mm 국소 마모를650km로 바꾸지 않으며2시간 이상 회복주 처방·한국 와이드 부재를 제거했습니다. DOR 직접403 뒤 원문 캐시에서 Matt는 낮고 좁은 앞발·강한 토가드의 초기 압박과 여유 있어 미끄러지는 힐, 레이스락 필요성을 적었습니다.25~30마일 뒤 앞쪽이 편해졌다는 것은 개인 관찰로 모두의 적응 규칙이 아닙니다. 실제 검체 사이즈는 미확인입니다. RR 내부 최광폭 89.4mm·엄지 70.8mm·높이 22.5mm입니다. 다른 위치인 외부 바닥 폭과 구분하고 실제 규격·양말에서 고정을 확인하세요. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
@@ -44,8 +43,6 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'narrow',
-    winterCompatibility: 'good',
-    summerCompatibility: 'fair',
   },
   targetUsers: {
     recommended: [
@@ -64,7 +61,6 @@ export const shoe: Shoe = {
     'RR 내부 최광폭 89.4mm·엄지 70.8mm·높이 22.5mm입니다. 다른 위치인 외부 바닥 폭과 구분하고 실제 규격·양말에서 고정을 확인하세요.',
   ],
   priceAnalysis: {
-    valueRating: 4,
     priceTier: 'premium',
     alternatives: [
       'asics-novablast-5',

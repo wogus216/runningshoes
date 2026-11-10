@@ -15,7 +15,6 @@ export const shoe: Shoe = {
     '/images/shoes/asics/metaspeedskyplus/top.webp',
   ],
   category: '레이싱',
-  rating: 5,
   description: 'FF BLAST TURBO · 상부 평판형 카본 (2022 Sky+) 구조의 메타스피드 스카이+. 실험실 205g·힐/전족부 33.5/30.8mm. 한국 현재 정가 미확인.',
   oneliner: '205g 실험실 무게 · FF BLAST TURBO · 상부 평판형 카본 (2022 Sky+)',
   editorComment: '2026-11-09 원문 재확인. 한국 공식 현재 검색결과는Tokyo만 확인돼2022 Sky+의 현재 정가·성별·폭·SKU·재고는 미확인입니다. Tokyo의 가격·폼·상품코드를 Sky+에 대입하지 않으며 미노출을 단종 확정으로 해석하지 않습니다. RR 실측205g·33.5/30.8mm·드롭2.7mm는 방법론2.0의2025-08-19 갱신 원문입니다. DOR의 인솔 포함 소개39/34mm·5mm,2022제조사 미드솔 최대두께33mm·드롭5mm는 정의와 조건이 달라 구분합니다. 원형2022세대는 FF BLAST TURBO이며 FF Turbo+나Tokyo의 이름과 혼용하지 않습니다. 주폼 경도·내부 젤 치수는 미확인입니다. RR방법론2.0의 기존 모든 지표가 현재 환경·방법으로 다시 측정됐다고 단정하지 않습니다. DOR의 Matt(남성US10)은 정사이즈와 약간 넓은 중족부, 끈 조임·얇은 혀 주름·거친 메쉬를 언급했고 힐·중족의 안쪽 벗어남을 느꼈습니다. David(남성US9.5)은 정사이즈와 좋은 고정·접지를 느꼈지만 자신에게Edge+의 굴림이 더 자연스럽다고 평가했습니다. 개인의 보폭·무릎·종아리 하중 느낌을 임상 효과나180케이던스 규칙으로 만들지 않습니다. RR92.2mm는 구방식 외부 어퍼 최광폭으로 내부 젤 최광폭·엄지 너비가 아닙니다. 현재 원문의 내부 너비·높이·AC·HA는 미확인이며 다른Sky세대로 채우지 않습니다. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
@@ -44,8 +43,6 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'standard',
-    winterCompatibility: 'fair',
-    summerCompatibility: 'poor',
   },
   targetUsers: {
     recommended: [
@@ -64,7 +61,6 @@ export const shoe: Shoe = {
     'RR92.2mm는 구방식 외부 어퍼 최광폭으로 내부 젤 최광폭·엄지 너비가 아닙니다. 현재 원문의 내부 너비·높이·AC·HA는 미확인이며 다른Sky세대로 채우지 않습니다.',
   ],
   priceAnalysis: {
-    valueRating: 7,
     priceTier: 'super-premium',
     alternatives: [
       'nike-alphafly-3',

@@ -15,7 +15,6 @@ export const shoe: Shoe = {
     '/images/shoes/on/cloudsurfer2/outsole.webp',
   ],
   category: '입문화',
-  rating: 4,
   price: 199000,
   description: 'Helion · CloudTec Phase · Speedboard 없음 구조의 클라우드서퍼 2. 실험실 254g·힐/전족부 37.5/27.1mm. 한국 확인 정가199,000원.',
   oneliner: '254g 실험실 무게 · Helion · CloudTec Phase · Speedboard 없음',
@@ -44,12 +43,9 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'standard',
-    winterCompatibility: 'good',
-    summerCompatibility: 'good',
   },
   priceAnalysis: {
     msrp: 199000,
-    valueRating: 6,
     priceTier: 'premium',
     alternatives: [
       'nike-pegasus-41',

@@ -14,7 +14,6 @@ export const shoe: Shoe = {
     '/images/shoes/hoka/bondi9/outsole.webp',
   ],
   category: '쿠션화',
-  rating: 5,
   description: 'Supercritical EVA 구조의 본디 9. 한국 공식 연결 스토어에서 본디9 신발 상품의 현재 정가·성별·폭·재고를 확인하지 못했습니다. 검색 부재를 단종·미출시로 해석하지 않습니다.',
   oneliner: '303g 실험실 무게 · Supercritical EVA',
   editorComment: '2026-11-09 원문 재확인. 한국 공식 연결 스토어에서 본디9 신발 상품의 현재 정가·성별·폭·재고를 확인하지 못했습니다. 검색 부재를 단종·미출시로 해석하지 않습니다. DOR 소개 남성297g(US9)·여성263g(US8),43/38mm·드롭5mm. 한국 공시 사양으로 바꾸지 않습니다. RunRepeat 실측 303g,힐/전족부 41.3/32.2mm·드롭9.1mm입니다.  DOR은 쉬운 러닝·걷기·서 있기에서의 구조적인 쿠션감을 평가하면서 부피와 빠른 러닝에서의 한계를 언급했습니다. Matt은 힐 카운터에 민감했으나 David은 자극을 느끼지 않아 착화 반응은 갈립니다. 한국 판매 폭은 이번에 확인하지 못했습니다. RR 내부 최광폭94.1mm와 엄지 부위72.5mm를 외부 플랫폼 폭과 구분하세요. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
@@ -41,8 +40,6 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'narrow',
-    winterCompatibility: 'excellent',
-    summerCompatibility: 'fair',
   },
   targetUsers: {
     recommended: [
@@ -61,7 +58,6 @@ export const shoe: Shoe = {
     '한국 판매 폭은 이번에 확인하지 못했습니다. RR 내부 최광폭94.1mm와 엄지 부위72.5mm를 외부 플랫폼 폭과 구분하세요.',
   ],
   priceAnalysis: {
-    valueRating: 7,
     priceTier: 'high',
     alternatives: [
       'asics-gel-nimbus-28',

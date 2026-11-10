@@ -88,7 +88,6 @@ export function RecommendContent({ totalCount }: RecommendContentProps) {
     weeklyDistance: { low: '20km 미만', medium: '20-40km', high: '40km 이상' },
     purpose: { training: '훈련', racing: '레이스', recovery: '회복', trail: '트레일', all: '다목적' },
     targetPace: { slow: '6분대 이상', medium: '5-6분대', fast: '5분 미만' },
-    season: { summer: '여름', winter: '겨울', all: '사계절' },
     footArch: { flat: '평발', normal: '정상', high: '높은 아치' },
     footWidth: { narrow: '좁음', standard: '표준', wide: '넓음' },
     // 설문 라벨과 같은 말을 써야 한다 — 상한 기준(questionnaire.tsx 의 budget 주석 참조)
@@ -176,7 +175,7 @@ export function RecommendContent({ totalCount }: RecommendContentProps) {
             <div className="rounded-[4px] border border-sky-100 bg-white/86 p-4">
               <Sparkles className="h-5 w-5 text-sky-700" />
               <p className="mt-4 text-sm font-semibold text-slate-950">발형 반영</p>
-              <p className="mt-1 text-xs leading-6 text-slate-600">러닝 용도, 발볼, 계절과 예산을 함께 비교합니다.</p>
+              <p className="mt-1 text-xs leading-6 text-slate-600">러닝 용도, 발볼과 예산을 함께 비교합니다.</p>
             </div>
             <div className="rounded-[4px] border border-sky-950/20 bg-[linear-gradient(160deg,rgba(8,18,38,0.98)_0%,rgba(12,74,110,0.96)_100%)] p-4 text-white">
               <ArrowUpRight className="h-5 w-5 text-white" />
@@ -210,9 +209,6 @@ export function RecommendContent({ totalCount }: RecommendContentProps) {
                 <ProfileBadge label="목적" value={profileLabels.purpose[profile.purpose]} />
                 {profile.targetPace && (
                   <ProfileBadge label="페이스" value={profileLabels.targetPace[profile.targetPace]} />
-                )}
-                {profile.season && (
-                  <ProfileBadge label="계절" value={profileLabels.season[profile.season]} />
                 )}
                 <ProfileBadge label="발볼" value={profileLabels.footWidth[profile.footWidth]} />
                 <ProfileBadge label="예산" value={profileLabels.budget[profile.budget]} />

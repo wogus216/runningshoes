@@ -244,10 +244,10 @@ export const ShoeCard = memo(function ShoeCard({ shoe, index = 0, onTagClick }: 
           <span className="font-mono text-base font-bold tabular-nums text-primary md:text-lg">
             {formatWon(shoe.price)}
           </span>
-          <span className="flex items-center gap-1 font-mono text-xs font-semibold tabular-nums text-secondary">
+          {shoe.rating !== undefined ? <span className="flex items-center gap-1 font-mono text-xs font-semibold tabular-nums text-secondary">
             <span aria-hidden="true" className="text-accent">★</span>
             {shoe.rating.toFixed(1)}
-          </span>
+          </span> : null}
         </div>
       </div>
     </article>

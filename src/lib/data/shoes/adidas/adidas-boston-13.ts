@@ -13,7 +13,6 @@ export const shoe: Shoe = {
     '/images/shoes/adidas/boston13/boston3.webp',
   ],
   category: '데일리',
-  rating: 5,
   price: 189000,
   description: 'Lightstrike Pro와 Lightstrike 이중폼에 유리섬유 ENERGYRODS 2.0을 결합한 템포 트레이너. 한국 KH9563 공식 정가 189,000원.',
   oneliner: '이중폼과 유리섬유 ENERGYRODS 2.0을 쓰는 보스턴 13',
@@ -43,8 +42,6 @@ export const shoe: Shoe = {
   koreanFootFit: {
     toBoxWidth: 'narrow',
     wideOptions: false,
-    winterCompatibility: 'fair',
-    summerCompatibility: 'good',
   },
   targetUsers: {
     recommended: [
@@ -65,7 +62,6 @@ export const shoe: Shoe = {
   ],
   priceAnalysis: {
     msrp: 189000,
-    valueRating: 9,
     priceTier: 'mid',
     alternatives: [
       'nike-zoom-fly-6',

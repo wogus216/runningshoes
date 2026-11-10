@@ -11,7 +11,6 @@ export const shoe: Shoe = {
     '/images/shoes/brooks/ghostmax4/side.webp',
   ],
   category: '쿠션화',
-  rating: 4.5,
   description: 'DNA Loft v3 · GlideRoll 로커 · 깊은 풋베드 구조의 고스트 맥스 4. RunRepeat 실험실 검체 286g·38.6/29.6mm. 한국 현재 정가 미확인.',
   oneliner: 'DNA Loft v3 · GlideRoll 로커 · 깊은 풋베드 · 286g (RunRepeat 실험실 검체)',
   editorComment: '2026-11-10 원문 재확인. 한국 공식 캐시: 정확 모델 상품 원문은 공식 홈502·타임아웃과 검색 미발견으로 확보하지 못함. 현재 가격·폭별 선택 재고는 미확인입니다. 공통 SOLD OUT 템플릿과 장바구니 버튼을 실제 재고로 보지 않으며 검색 미발견을 단종·미출시로 단정하지 않습니다. DOR 소개289g(남성 US9)/258g(여성 US8)·39/33mm·6mm와 RR286g·38.6/29.6mm·9mm, RR 재전재292/260g(기준 사이즈 미확인)·40/34mm·6mm를 나눕니다. RR 정사이즈 투표21명과 Matt의 반업은 다른 조건입니다. BR74와 개인 열감·로커 체감도 나눕니다. 국내 와이드 판매·700km·과내전 보호를 확인한 사실로 반복하지 않습니다. DOR Matt는 평소 타브랜드US10에서 이 모델US10이 짧아US10.5로 바꿨습니다. 늘어나지 않는 앞코 보강·밀착 중족, 두꺼운 메시 열감·가끔 미끄러지는 거싯 없는 혀를 적었습니다. 단단한 이지런·걷기 전환은 좋았지만 긴 러닝에서는 더 단단해져 선호하지 않았습니다.40마일 러닝·몇 달 서기/걷기는 수명 시험이 아닙니다. RR 내부 최광폭 93.4mm·엄지 71.3mm·높이 26.8mm입니다. 다른 위치인 외부 바닥 폭과 구분하고 실제 규격에서 길이·높이·고정을 확인하세요. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
@@ -24,8 +23,6 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'standard',
-    winterCompatibility: 'good',
-    summerCompatibility: 'excellent',
   },
   targetUsers: {
     recommended: [
@@ -44,7 +41,6 @@ export const shoe: Shoe = {
     'RR 내부 최광폭 93.4mm·엄지 71.3mm·높이 26.8mm입니다. 다른 위치인 외부 바닥 폭과 구분하고 실제 규격에서 길이·높이·고정을 확인하세요.',
   ],
   priceAnalysis: {
-    valueRating: 8,
     priceTier: 'mid',
     alternatives: [
       'hoka-bondi-9',

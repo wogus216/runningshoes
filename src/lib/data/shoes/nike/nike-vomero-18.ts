@@ -14,7 +14,6 @@ export const shoe: Shoe = {
     '/images/shoes/nike/vomero18/pair.webp',
   ],
   category: '쿠션화',
-  rating: 5,
   price: 189000,
   description: 'ZoomX 상부 + ReactX 하부 구조의 보메로 18. 한국 남성 일반HM6803-005·와이드IF0514-002, 여성 와이드IF0515-002 정가189,000원. 사이즈별 실시간 재고는 미확인.',
   oneliner: '298g 실험실 무게 · ZoomX 상부 + ReactX 하부',
@@ -43,8 +42,6 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'narrow',
-    winterCompatibility: 'good',
-    summerCompatibility: 'fair',
     wideOptions: true,
   },
   targetUsers: {
@@ -65,7 +62,6 @@ export const shoe: Shoe = {
   ],
   priceAnalysis: {
     msrp: 189000,
-    valueRating: 8,
     priceTier: 'premium',
     alternatives: [
       'asics-gel-nimbus-28',

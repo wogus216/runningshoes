@@ -15,7 +15,6 @@ export const shoe: Shoe = {
     '/images/shoes/on/cloudmonster3/angle.webp',
   ],
   category: '쿠션화',
-  rating: 4.5,
   price: 229000,
   description: 'Helion 이중 밀도 · 3층 CloudTec · 나일론 혼합 Speedboard 구조의 클라우드몬스터 3. 실험실 301g·힐/전족부 38.6/32.2mm. 한국 확인 정가229,000원.',
   oneliner: '301g 실험실 무게 · Helion 이중 밀도 · 3층 CloudTec · 나일론 혼합 Speedboard',
@@ -44,12 +43,9 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'standard',
-    winterCompatibility: 'excellent',
-    summerCompatibility: 'good',
   },
   priceAnalysis: {
     msrp: 229000,
-    valueRating: 6,
     priceTier: 'premium',
     alternatives: [
       'hoka-bondi-9',

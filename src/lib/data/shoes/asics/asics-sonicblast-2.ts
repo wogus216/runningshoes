@@ -7,7 +7,6 @@ export const shoe: Shoe = {
   brand: 'Asics',
   name: '소닉블라스트 2',
   category: '쿠션화',
-  rating: 4.5,
   image: '/images/shoes/asics/sonicblast2/side.webp',
   images: [
     '/images/shoes/asics/sonicblast2/side.webp',
@@ -46,8 +45,6 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'narrow',
-    winterCompatibility: 'excellent',
-    summerCompatibility: 'excellent',
   },
   targetUsers: {
     recommended: [
@@ -60,7 +57,6 @@ export const shoe: Shoe = {
     ],
   },
   priceAnalysis: {
-    valueRating: 7,
     priceTier: 'premium',
     alternatives: [
       'asics-sonicblast',

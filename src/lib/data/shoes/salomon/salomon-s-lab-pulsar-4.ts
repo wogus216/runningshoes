@@ -15,7 +15,6 @@ export const shoe: Shoe = {
     '/images/shoes/salomon/slab-pulsar-4/outsole.webp',
   ],
   category: '트레일',
-  rating: 4.2,
   description: 'S/LAB Pulsar4 · 두 층 Energy Foam · MATRYX·Quicklace 구조의 S/LAB 펄사 4. RunRepeat 실험실 검체 247g·32.6/25.5mm. 한국 현재 정가 미확인.',
   oneliner: 'S/LAB Pulsar4 · 두 층 Energy Foam · MATRYX·Quicklace · 247g (RunRepeat 실험실 검체)',
   editorComment: '2026-11-10 원문 재확인. 한국 L47770300 캐시는 단일 가격 340,000원·Standard·250g(기준 사이즈 미공시)·6mm를 표시했습니다. 명시적 MSRP·현재 가격·와이드는 미확인입니다. 225~295mm 목록은 재입고 알림창에 있어 현재 구매 가능 재고가 아닙니다. 뒷굽 높이 원문의 cm:34 단위 이상을 임의로 34mm나 340mm로 고치지 않습니다. RR 247g·32.6/25.5mm·7.1mm, DOR 소개 252g(남성 US9)·35/29mm·6mm, RR 재전재 브랜드 31/25mm·6mm는 서로 다른 자료입니다. 17.5HA는 구방식으로 AC는 미확인입니다. DOR의 반응성 체감과 RR 리턴 47.7/57.6%는 다른 종류의 근거입니다. DOR 4mm 러그와 RR 3mm도 구분합니다. 20~80km 처방·350km 수명·카본 트레일이라는 기존 설명을 철회합니다. DOR 2025 여름 다모델 정리에서 David는 아주 밀착되는 입구와 착화 후 보통~좁은 핏, 단단하지만 반응성 있고 민첩한 주행을 적었습니다. 긴 주행에서는 본인에게 덜 편했습니다. 실제 착화 사이즈는 미확인이며 개별 전체 리뷰가 아닌 요약 글입니다. RR 내부 최광폭 94.9mm·엄지 74mm·높이 31mm입니다. DOR의 밀착 체감과 합쳐 모든 넓은 발에 적합하다고 판정하지 않습니다. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
@@ -45,8 +44,6 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'standard',
-    winterCompatibility: 'good',
-    summerCompatibility: 'good',
   },
   targetUsers: {
     recommended: [
@@ -65,7 +62,6 @@ export const shoe: Shoe = {
     'RR 내부 최광폭 94.9mm·엄지 74mm·높이 31mm입니다. DOR의 밀착 체감과 합쳐 모든 넓은 발에 적합하다고 판정하지 않습니다.',
   ],
   priceAnalysis: {
-    valueRating: 6,
     priceTier: 'premium',
     alternatives: [
       'hoka-tecton-x-3',

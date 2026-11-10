@@ -15,7 +15,6 @@ export const shoe: Shoe = {
     '/images/shoes/asics/sonicblast/5.webp',
   ],
   category: '쿠션화',
-  rating: 4,
   price: 229000,
   description: 'FF TURBO SQUARED 상층 + FF BLAST MAX 하층 · Pebax ASTROPLATE 구조의 소닉블라스트. RunRepeat 실험실 검체 255g·45.4/36.4mm. 한국 확인 가격 229,000원.',
   oneliner: 'FF TURBO SQUARED 상층 + FF BLAST MAX 하층 · Pebax ASTROPLATE · 255g (RunRepeat 실험실 검체)',
@@ -46,8 +45,6 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'narrow',
-    winterCompatibility: 'fair',
-    summerCompatibility: 'excellent',
   },
   targetUsers: {
     recommended: [
@@ -67,7 +64,6 @@ export const shoe: Shoe = {
   ],
   priceAnalysis: {
     msrp: 229000,
-    valueRating: 7,
     priceTier: 'premium',
     alternatives: [
       'asics-superblast-3',

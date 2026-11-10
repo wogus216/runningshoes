@@ -14,7 +14,6 @@ export const shoe: Shoe = {
     '/images/shoes/hoka/clifton10/outsole.webp',
   ],
   category: '입문화',
-  rating: 5,
   description: 'CMEVA · 로커 구조의 클리프톤 10. 실험실 275g·힐/전족부 44.4/32mm. 한국 현재 정가 미확인.',
   oneliner: '275g 실험실 무게 · CMEVA · 로커',
   editorComment: '2026-11-09 원문 재확인. 호카 코리아 공식 연결 스토어의 정확검색에서 현재 클리프톤10 상품을 찾지 못했습니다. 현재 한국 정가·성별·폭·SKU·재고는 미확인이며 단종·국내 미출시로 해석하지 않습니다. DOR 표제 남성278g(US10으로표기)·여성227g(US8),드롭8mm·스택미공시. RR275g·44.4/32.0mm·드롭12.4mm와 구분. RR 힐 외부플랫폼 폭은 본문97.8mm·표94.5mm로 충돌해 해당 수치는 채택하지 않습니다. DOR의 Matt(US10)과 David(US9.5)은 길이는 맞지만 타이트하고 낮은볼륨이라 느꼈습니다. Matt은 패딩이 눌린 뒤 카운터를 더 의식했고 David은 힐 고정을 좋게 봤습니다. 약간 단단한 데일리 주행감·로커·사이드월을 설명하며, Matt의 초기 발목자극이나30마일 마모를 모델전체 부상효과·수명으로 바꾸지 않습니다. 한국 와이드 현재SKU는 미확인입니다. RR 내부최광폭97.2mm·엄지73.1mm·높이27.3mm는 DOR의 낮은볼륨 체감과 다른 종류의 정보입니다. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
@@ -42,8 +41,6 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'standard',
-    winterCompatibility: 'good',
-    summerCompatibility: 'fair',
   },
   targetUsers: {
     recommended: [
@@ -62,7 +59,6 @@ export const shoe: Shoe = {
     '한국 와이드 현재SKU는 미확인입니다. RR 내부최광폭97.2mm·엄지73.1mm·높이27.3mm는 DOR의 낮은볼륨 체감과 다른 종류의 정보입니다.',
   ],
   priceAnalysis: {
-    valueRating: 8,
     priceTier: 'mid',
     alternatives: [
       'nike-pegasus-41',

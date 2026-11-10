@@ -16,7 +16,6 @@ export const shoe: Shoe = {
     '/images/shoes/mizuno/neo-daichi-10/outsole.webp',
   ],
   category: '트레일',
-  rating: 4,
   description: 'Enerzy NXT · Smooth Speed Assist · 전족 Rock Plate · Vibram 구조. 해외 제조사 공시 · 기준 사이즈 미공시 290g·드롭 6mm, 독립 랩·스택·한국 현재 가격은 미확인입니다.',
   oneliner: 'Enerzy NXT · Smooth Speed Assist · 전족 Rock Plate · Vibram · 290g (해외 제조사 공시 · 기준 사이즈 미공시)',
   editorComment: '2026-11-10 원문 재확인. 한국 공식 캐시: J1GM268051 Men 폭 미확인 소비자가169,000원·판매캐시169,000원. 현재 가격·폭별 선택 재고는 미확인입니다. 공통 SOLD OUT 템플릿과 장바구니 버튼을 실제 재고로 보지 않으며 검색 미발견을 단종·미출시로 단정하지 않습니다. 해외 남성290g·여성245g은 기준 사이즈 미공시입니다. 싱가포르는 드롭6mm, 영국은 raw Stack(mm):6.0으로 표기해 전체 힐/전족 스택은 미확인입니다. 기존36.5/30.5mm·한국270mm 실측 확정을 철회합니다. 기본J1GM2680과 별도GTX Wide J1GM2683을 구분합니다. 한국 현재2E·GTX에서만3E·4mm러그·500km·전작대비3mm증가를 이번 정확 원문에서 재확인하지 못해 반복하지 않습니다. UK의Stack6을 힐6mm나 임의 힐/전족 쌍으로 바꾸지 않습니다. 정확10의 DOR 개별 착화 리뷰는 미확인입니다. 해외 제조사 공시만으로 본인의 착화 경험처럼 쓰거나 로드에서 트레일로 넘어갈 때 이질감이 작다고 보장하지 않습니다. 정확 모델 독립 랩 내부 치수는 미확인입니다. 한국 폭 규격·발가락 위 공간·중족·힐 고정을 실제 상품에서 확인하세요. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
@@ -35,11 +34,8 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'standard',
-    winterCompatibility: 'good',
-    summerCompatibility: 'good',
   },
   priceAnalysis: {
-    valueRating: 8,
     priceTier: 'mid',
     alternatives: [
       'saucony-peregrine-16',

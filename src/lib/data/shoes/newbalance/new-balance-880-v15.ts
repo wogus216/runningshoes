@@ -15,7 +15,6 @@ export const shoe: Shoe = {
     '/images/shoes/newbalance/880v15/outsole.webp',
   ],
   category: '입문화',
-  rating: 4,
   description: 'Fresh Foam X · 비플레이트 로커 구조의 880 V15. 실험실 286g·힐/전족부 39.7/35.4mm. 한국 현재 정가 미확인.',
   oneliner: '286g 실험실 무게 · Fresh Foam X · 비플레이트 로커',
   editorComment: '2026-11-09 원문 재확인. 한국 공식 검색에서880V15를 찾지 못했고 기존 후보 상품경로는 판매준비/오픈예정 안내로 돌아옵니다. 현재 한국 정가·성별·폭·재고는 미확인입니다. 검색캐시189,000원을 현재 정가로 채택하지 않습니다. DOR 소개 남성300g(US9)·40.5/34.5mm·드롭6mm. RR286g·39.7/35.4mm·4.3mm와 구분. RR 브랜드칸281g도 별도 조건입니다.  DOR의 Matt은 US10에서 대체로 길이가 맞고 약간 넓은보통볼륨이지만 앞코가 좁아지며, 초기 힐 들림·회전 시 옆 움직임을 느꼈습니다. 약간 단단하고 느린 반응의 쿠션·뻣뻣한 로커·안정적인 중립형으로 평가했으나 전통 안정화나 평발 치료 등급으로 바꾸지 않습니다. 한국 2E·여성D 후보는 원문 상품 확인에 실패해 현재 판매 폭으로 채택하지 않습니다. RR내부95.0/74.6/28.5mm를 개인핏과 구분하세요. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
@@ -53,11 +52,8 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'standard',
-    winterCompatibility: 'good',
-    summerCompatibility: 'fair',
   },
   priceAnalysis: {
-    valueRating: 8,
     priceTier: 'mid',
     alternatives: [
       'brooks-ghost-17',

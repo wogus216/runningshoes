@@ -15,7 +15,6 @@ export const shoe: Shoe = {
     "/images/shoes/nike/zoomfly6/5.webp"
   ],
   "category": "레이싱",
-  "rating": 4,
   "price": 209000,
   "description": "ZoomX + SR-02 (하부 명칭 DOR 기준) 미드솔을 쓰는 줌 플라이 6. 한국 남성 FN8454-006 정가 209,000원. 다른 SKU의 정가는 다를 수 있습니다.",
   "oneliner": "248g 실험실 무게 · ZoomX + SR-02 (하부 명칭 DOR 기준)",
@@ -45,8 +44,6 @@ export const shoe: Shoe = {
   },
   "koreanFootFit": {
     "toBoxWidth": "narrow",
-    "winterCompatibility": "good",
-    "summerCompatibility": "fair"
   },
   "targetUsers": {
     "recommended": [
@@ -66,7 +63,6 @@ export const shoe: Shoe = {
   ],
   "priceAnalysis": {
     "msrp": 209000,
-    "valueRating": 9,
     "priceTier": "premium",
     "alternatives": [
       "asics-magic-speed-4",

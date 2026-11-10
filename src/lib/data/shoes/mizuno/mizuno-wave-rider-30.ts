@@ -7,7 +7,6 @@ export const shoe: Shoe = {
   brand: 'Mizuno',
   name: '웨이브 라이더 30',
   category: '데일리',
-  rating: 4,
   price: 179000,
   image: '/images/shoes/mizuno/wave-rider-30/side.webp',
   description: '질소 주입 ENERZY NXT 이중폼 · 전장 Wave Plate 구조의 웨이브 라이더 30. RunRepeat 실험실 검체 266g·42.8/33.7mm. 한국 확인 가격 179,000원.',
@@ -37,8 +36,6 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'standard',
-    winterCompatibility: 'good',
-    summerCompatibility: 'fair',
     wideOptions: true,
   },
   targetUsers: {
@@ -59,7 +56,6 @@ export const shoe: Shoe = {
   ],
   priceAnalysis: {
     msrp: 179000,
-    valueRating: 8,
     priceTier: 'mid',
     alternatives: [
       'nike-pegasus-42',

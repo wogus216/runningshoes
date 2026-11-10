@@ -14,7 +14,6 @@ export const shoe: Shoe = {
     '/images/shoes/nike/streakfly2/pair.webp',
   ],
   category: '레이싱',
-  rating: 4,
   price: 239000,
   description: "ZoomX · 컷아웃 전장 카본 Flyplate 구조의 스트릭플라이 2. 실험실 128g·힐/전족부 27/23.3mm. 한국 확인 정가 239,000원.",
   oneliner: '128g 실험실 무게 · ZoomX · 컷아웃 전장 카본 Flyplate',
@@ -44,8 +43,6 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'narrow',
-    winterCompatibility: 'poor',
-    summerCompatibility: 'fair',
   },
   targetUsers: {
     recommended: [
@@ -65,7 +62,6 @@ export const shoe: Shoe = {
   ],
   priceAnalysis: {
     msrp: 239000,
-    valueRating: 8,
     priceTier: 'premium',
     alternatives: [
       'asics-metaspeed-edge-plus',
@@ -125,7 +121,7 @@ export const shoe: Shoe = {
         note: "한국 공식 남성 IO8268-100 정가 239,000원·확인 당시 판매가 179,200원(웹캐시 203,100원과구분),HF6416-601 정가 219,000원·판매 197,100원으로 SKU 별 차이가 있습니다. 대표가격은남성 IO8268-100정가입니다. 해당남성색 250~290mm 선택 가능,HF6416-601의명시성별·한국여성전용·와이드 SKU 는미확인입니다.",
       },
       {
-        label: '한국 공식 undefined · 폭미확인 · HF6416-601',
+        label: '한국 공식 · 성별·폭 미확인 · HF6416-601',
         url: 'https://www.nike.com/kr/t/스트릭플라이-2-로드-레이싱화-w32dkLBj/HF6416-601',
         note: "한국 공식 남성 IO8268-100 정가 239,000원·확인 당시 판매가 179,200원(웹캐시 203,100원과구분),HF6416-601 정가 219,000원·판매 197,100원으로 SKU 별 차이가 있습니다. 대표가격은남성 IO8268-100정가입니다. 해당남성색 250~290mm 선택 가능,HF6416-601의명시성별·한국여성전용·와이드 SKU 는미확인입니다.",
       },

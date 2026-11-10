@@ -63,16 +63,6 @@ const questions: Question[] = [
     ],
   },
   {
-    id: 'season',
-    title: '주로 뛰는 계절은 언제인가요?',
-    description: '계절에 맞는 신발을 추천드려요',
-    options: [
-      { value: 'summer', label: '여름', description: '통기성, 가벼운 무게 중시' },
-      { value: 'winter', label: '겨울', description: '보온성, 접지력 중시' },
-      { value: 'all', label: '사계절', description: '계절 무관하게 사용' },
-    ],
-  },
-  {
     id: 'footWidth',
     title: '발볼 너비는 어떤가요?',
     description: '발볼 너비를 선택해주세요',
@@ -103,7 +93,6 @@ export function Questionnaire({ onComplete, isLoading = false }: QuestionnairePr
     weeklyDistance: '',
     purpose: '',
     targetPace: '',
-    season: '',
     footArch: 'normal',
     footWidth: '',
     injuries: [],
@@ -154,7 +143,6 @@ export function Questionnaire({ onComplete, isLoading = false }: QuestionnairePr
         weeklyDistance: answers.weeklyDistance as UserProfile['weeklyDistance'],
         purpose: answers.purpose as UserProfile['purpose'],
         targetPace: answers.targetPace as UserProfile['targetPace'],
-        season: answers.season as UserProfile['season'],
         footArch: answers.footArch as UserProfile['footArch'],
         footWidth: answers.footWidth as UserProfile['footWidth'],
         injuries: ((answers.injuries as string[]) || []).filter(v => v !== 'none'),

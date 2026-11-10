@@ -14,7 +14,6 @@ export const shoe: Shoe = {
     '/images/shoes/hoka/gaviota6/outsole.webp',
   ],
   category: '안정화',
-  rating: 4,
   description: 'CMEVA · H-Frame 구조의 가비오타 6. 실험실 283g·힐/전족부 36/28.7mm. 한국 현재 정가 미확인.',
   oneliner: '283g 실험실 무게 · CMEVA · H-Frame',
   editorComment: '2026-11-09 원문 재확인. 한국 공식 연결 스토어의 정확 모델명 검색에서 상품을 찾지 못해 현재 정가·성별·폭·SKU는 미확인입니다. 검색 결과를 국내 전체 미판매·단종으로 해석하지 않습니다. DOR 소개 남성283g(US9)·여성252g(US8),39/33mm·드롭6mm. RR 실측7.3mm와 분리.  DOR의 Matt은 쉬운 러닝·롱런의 지지를 높게 평가했으나 Bach은 반응성과 가치에 덜 만족했습니다. 지지감도 Matt은 두드러지게, Bach은 덜 간섭적으로 느껴 의견이 갈립니다. 겨울 착화의 단단함은 통제된 계절 비교시험이 아닙니다. H-Frame은 전통 미디얼 포스트와 동일한 구조명으로 쓰지 않습니다. RR 내부 치수와 외부 바닥 폭은 다른 값입니다. 한국 와이드 상품의 현재SKU·재고는 이번에 확인하지 못했습니다. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
@@ -41,8 +40,6 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'wide',
-    winterCompatibility: 'good',
-    summerCompatibility: 'fair',
   },
   targetUsers: {
     recommended: [
@@ -61,7 +58,6 @@ export const shoe: Shoe = {
     'RR 내부 치수와 외부 바닥 폭은 다른 값입니다. 한국 와이드 상품의 현재SKU·재고는 이번에 확인하지 못했습니다.',
   ],
   priceAnalysis: {
-    valueRating: 7,
     priceTier: 'high',
     alternatives: [
       'asics-gel-kayano-32',

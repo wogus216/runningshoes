@@ -14,7 +14,6 @@ export const shoe: Shoe = {
     '/images/shoes/asics/gelventure10/outsole.webp',
   ],
   category: '트레일',
-  rating: 4,
   description: 'Amplifoam · 기본 비방수형 구조의 젤 벤처 10. RunRepeat 실험실 검체 322g·35.3/23.3mm. 한국 현재 정가 미확인.',
   oneliner: 'Amplifoam · 기본 비방수형 · 322g (RunRepeat 실험실 검체)',
   editorComment: '2026-11-09 원문 재확인. 한국 현재 공식 검색은 여성 WATERPROOF 1012B760.002만 확인돼 기본 비방수형의 현행 정가·SKU·성별·폭·재고는 미확인입니다. 방수형의 정가 109,000원·판매 87,200원·공시 325g을 기본형에 대입하지 않습니다. 검색 미노출을 전체 단종이나 한국 미출시 확정으로 해석하지 않습니다. RR 브랜드 메타의 33.5/23.5mm·10mm·남성323g/여성274g(기준 사이즈 미확인)과 RR 기본형 실측322g·35.3/23.3mm·12mm를 구분합니다. 한국 방수형 325g은 다른 상품입니다. 36.5AC는 중창 경도, 86.4HC는 아웃솔 경도이며 같은 단위가 아닙니다. 러그3.7mm·고무 경도는 젖은 바위 접지 계수가 아니며 현재 전족 접지 계수는 미확인입니다. 구방식 비틀림4/5·통기4/5를 Nm·BR로 변환하지 않고 저온 변화42%·마모0.6mm를 겨울 안전·500km 수명으로 해석하지 않습니다. 정확한 젤 벤처10 기본형의 DOR 개별 착화 리뷰는 확인하지 못했습니다. RR의 독자 사이즈 투표 ‘half size small’을 모든 발의 반업 처방으로 쓰지 않습니다. 한국 기본형 현재 가격을 확인하지 못해 89,000원 입문 최저가·km당 최저 비용 주장을 철회했습니다. RR 내부 최광폭 92.7mm·엄지 67.5mm·높이 30.6mm는 서로 다른 위치입니다. 한국 기본형의 현재 와이드 SKU와 문자 폭 코드는 미확인입니다. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
@@ -41,8 +40,6 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'narrow',
-    winterCompatibility: 'good',
-    summerCompatibility: 'fair',
   },
   targetUsers: {
     recommended: [
@@ -61,7 +58,6 @@ export const shoe: Shoe = {
     'RR 내부 최광폭 92.7mm·엄지 67.5mm·높이 30.6mm는 서로 다른 위치입니다. 한국 기본형의 현재 와이드 SKU와 문자 폭 코드는 미확인입니다.',
   ],
   priceAnalysis: {
-    valueRating: 9,
     priceTier: 'budget',
     alternatives: [
       'adidas-terrex-agravic-4',

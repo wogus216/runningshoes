@@ -15,7 +15,6 @@ export const shoe: Shoe = {
     '/images/shoes/brooks/ghost18/outsole.webp',
   ],
   category: '입문화',
-  rating: 4.5,
   description: 'DNA Loft v3 · 비플레이트 중립형 구조의 고스트 18. RunRepeat 실험실 검체 289g·37.3/25.1mm. 한국 현재 정가 미확인.',
   oneliner: 'DNA Loft v3 · 비플레이트 중립형 · 289g (RunRepeat 실험실 검체)',
   editorComment: '2026-11-09 원문 재확인. 한국 공식몰의 www·비www 모두 실시간 연결에 실패해 현재 정가·판매 SKU·폭·재고는 미확인입니다. 공식 원본의 과거 캐시에는 169,000원과 남성 D·2E·4E, 여성 B·D 상품이 남아 있지만 이를 현재 판매 확정으로 쓰지 않습니다. DOR 소개는 남성 US9 289g·여성 US8 260g, 36/26mm·10mm입니다. RunRepeat 실측 37.3/25.1mm·12.2mm와 구분합니다. 40.5AC 경도와 12.3N 굽힘은 다른 시험입니다. Dremel 마모 0.8mm를 800km 수명으로 옮기지 않습니다. 17과의 수치·가격 비교와 한국 현재 판매 조건을 이번 원문으로 모두 확정하지 않았습니다. DOR David(남성 US9.5)는 정사이즈이나 민감한 사람에게 길이가 약간 짧을 수 있고 앞발·중족 볼륨이 낮다고 느꼈습니다. 앞발 폭은 약간 넓게 느꼈으며 두꺼운 니트 혀의 조임은 사용 후 완화됐다고 적었습니다. 단단한 쿠션·유연한 앞발은 편했지만 빠른 동작의 활용성은 제한적으로 봤습니다. 본인에게 힐 마찰이 없었다는 경험을 아킬레스 보호 효과로 확대하지 않습니다. RR 내부 최광폭 96.0mm·엄지 부위 70.6mm·높이 25.8mm는 서로 다른 위치입니다. 현재 한국 와이드 SKU는 미확인입니다. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
@@ -43,11 +42,8 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'narrow',
-    winterCompatibility: 'fair',
-    summerCompatibility: 'fair',
   },
   priceAnalysis: {
-    valueRating: 8,
     priceTier: 'budget',
     alternatives: [
       'brooks-ghost-17',

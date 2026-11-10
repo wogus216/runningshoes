@@ -13,7 +13,6 @@ export const shoe: Shoe = {
     '/images/shoes/saucony/triumph23/outsole.webp',
   ],
   category: '쿠션화',
-  rating: 4,
   price: 199000,
   description: '전장 PWRRUN PB · Super Responsive Sockliner · 비플레이트 구조의 트라이엄프 23. 실험실 272g·힐/전족부 42.3/32.3mm. 한국 확인 정가199,000원.',
   oneliner: '272g 실험실 무게 · 전장 PWRRUN PB · Super Responsive Sockliner · 비플레이트',
@@ -43,8 +42,6 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'narrow',
-    winterCompatibility: 'good',
-    summerCompatibility: 'good',
     wideOptions: true,
   },
   targetUsers: {
@@ -65,7 +62,6 @@ export const shoe: Shoe = {
   ],
   priceAnalysis: {
     msrp: 199000,
-    valueRating: 7,
     priceTier: 'premium',
     alternatives: [
       'hoka-bondi-9',

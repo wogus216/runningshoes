@@ -7,7 +7,6 @@ export const shoe: Shoe = {
   brand: 'Asics',
   name: '젤 슬로우쿠시',
   category: '쿠션화',
-  rating: 4,
   image: '/images/shoes/asics/gelslowcush/side.webp',
   images: [
     '/images/shoes/asics/gelslowcush/side.webp',
@@ -37,8 +36,6 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'standard',
-    winterCompatibility: 'good',
-    summerCompatibility: 'fair',
   },
   targetUsers: {
     recommended: [
@@ -51,7 +48,6 @@ export const shoe: Shoe = {
     ],
   },
   priceAnalysis: {
-    valueRating: 5,
     priceTier: 'premium',
     alternatives: [
       'brooks-glycerin-max-2',

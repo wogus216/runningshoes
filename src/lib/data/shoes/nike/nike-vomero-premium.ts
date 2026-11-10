@@ -15,7 +15,6 @@ export const shoe: Shoe = {
     '/images/shoes/nike/vomeropremium/outsole.webp',
   ],
   category: '쿠션화',
-  rating: 4.8,
   price: 309000,
   description: 'ZoomX · 힐·전족부 Air Zoom · 비플레이트 구조의 보메로 프리미엄. 실험실 326g·힐/전족부 50.1/41.3mm. 한국 확인 정가309,000원.',
   oneliner: '326g 실험실 무게 · ZoomX · 힐·전족부 Air Zoom · 비플레이트',
@@ -43,8 +42,6 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'narrow',
-    winterCompatibility: 'good',
-    summerCompatibility: 'fair',
   },
   targetUsers: {
     recommended: [
@@ -64,7 +61,6 @@ export const shoe: Shoe = {
   ],
   priceAnalysis: {
     msrp: 309000,
-    valueRating: 5,
     priceTier: 'premium',
     alternatives: [
       'hoka-bondi-9',

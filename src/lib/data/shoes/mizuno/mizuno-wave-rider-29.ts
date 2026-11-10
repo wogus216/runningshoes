@@ -15,7 +15,6 @@ export const shoe: Shoe = {
     '/images/shoes/mizuno/waverider29/outsole.webp',
   ],
   category: '데일리',
-  rating: 4,
   description: 'Enerzy NXT · 힐/중족 Pebax계 Wave Plate 구조의 웨이브 라이더 29. RunRepeat 실험실 검체 258g·37.5/29.2mm. 한국 현재 정가 미확인.',
   oneliner: 'Enerzy NXT · 힐/중족 Pebax계 Wave Plate · 258g (RunRepeat 실험실 검체)',
   editorComment: '2026-11-10 원문 재확인. 한국 공식 캐시: J1GC250353 성별 표기 미확인 폭 미확인 소비자가169,000원·판매캐시135,200원. 현재 가격·폭별 선택 재고는 미확인입니다. 공통 SOLD OUT 템플릿과 장바구니 버튼을 실제 재고로 보지 않으며 검색 미발견을 단종·미출시로 단정하지 않습니다. DOR 소개258g(남성 US9)/218g(여성 US8)·38/28mm·10mm, RR258g·37.5/29.2mm·8.3mm, RR 재전재 브랜드265/226g(사이즈 미확인)·39/29mm·10mm를 구분합니다. 엄지76.7mm를 모든 넓은 한국 발의 최적 핏이나 한국4E 판매 보장으로 바꾸지 않습니다. RR의 중립 안정감과 Matt의 덜 안정적인 체감은 다른 근거입니다.800km·겨울34%경화·질환별 보호를 이번 원문으로 반복하지 않습니다. DOR Matt(남성 US10)는 늘어나는 넓은 앞발과 좋은 힐 고정을 느꼈지만80~90°F 조건에서는 두꺼운 어퍼가 더웠습니다. 부드럽고 반응성 있는 데일리 전환은 좋았으나 이전 라이더보다 중립적이고 본인에게 덜 안정적이었습니다. RR 내부 최광폭 94.6mm·엄지 76.7mm·높이 28.3mm입니다. 다른 위치인 외부 바닥 폭과 구분하고 실제 규격에서 길이·높이·고정을 확인하세요. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
@@ -43,8 +42,6 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'wide',
-    winterCompatibility: 'fair',
-    summerCompatibility: 'good',
   },
   targetUsers: {
     recommended: [
@@ -63,7 +60,6 @@ export const shoe: Shoe = {
     'RR 내부 최광폭 94.6mm·엄지 76.7mm·높이 28.3mm입니다. 다른 위치인 외부 바닥 폭과 구분하고 실제 규격에서 길이·높이·고정을 확인하세요.',
   ],
   priceAnalysis: {
-    valueRating: 8,
     priceTier: 'mid',
     alternatives: [
       'asics-gel-nimbus-28',

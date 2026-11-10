@@ -15,7 +15,6 @@ export const shoe: Shoe = {
     '/images/shoes/puma/deviatenitro3/outsole.webp',
   ],
   category: '쿠션화',
-  rating: 4,
   description: 'NITROFOAM 이중 밀도 · 카본 PWRPLATE 구조의 디비에이트 나이트로 3. 실험실 268g·힐/전족부 37.4/27.3mm. 한국 현재 정가 미확인.',
   oneliner: '268g 실험실 무게 · NITROFOAM 이중 밀도 · 카본 PWRPLATE',
   editorComment: '2026-11-09 원문 재확인. 한국 일반형309707_22 공식 원문캐시는219,000원 정가를 보였지만 현재live는 이용 불가여서 현행 일반형 정가·폭·재고는 미확인입니다. 남성 에키덴313422_01은 정가229,000원·판매114,500원·265~290mm 선택 가능을 확인했으며 이 가격을 일반형 정가로 대입하지 않습니다. 여성 에키덴 현재 정보·한국 폭코드는 미확인입니다. 한국 에키덴 공시265g(UK8)·39/29mm·10mm. DOR소개265g(남성US9)·39/29mm·10mm와 RR268g·37.4/27.3mm·10.1mm는 같은SKU·검체로 확인한 것이 아닙니다. RR은 상층NITROElite·하층NITRO라고 설명하고 DOR는 상층 정확 명칭을 확인하지 못했으며 한국 제조사 본문은NITRO명칭만 확인했습니다. 주폼37.7AC·보조37.1AC를 구분합니다. 개인의 적은 마모와 RR Dremel1.5mm를450km수명으로 환산하지 않습니다. DOR의 Matt(남성US10)은 길이가 맞지만 전반적으로 좁고 낮은 볼륨, 약간 신축성 있는 니트메쉬와 거싯혀 고정을 언급했습니다. 유연한 힐카운터는 편했지만 양말 없이 신을 때 내측 로고에 열점이 생겼고 중족 갭에 자갈이 끼었다고 적었습니다. 카본 강성에도 앞쪽 로커 전환은 매끄럽지만 빠른 변속은 둔했다고 느꼈습니다. 한국 와이드 SKU·문자 폭코드는 미확인입니다. RR 내부 최광폭91.5mm·엄지69.7mm·높이24.6mm 때문에 모든 한국 러너에게 반 사이즈 업을 권하지 않습니다. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
@@ -43,8 +42,6 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'narrow',
-    winterCompatibility: 'good',
-    summerCompatibility: 'excellent',
   },
   targetUsers: {
     recommended: [
@@ -63,7 +60,6 @@ export const shoe: Shoe = {
     '한국 와이드 SKU·문자 폭코드는 미확인입니다. RR 내부 최광폭91.5mm·엄지69.7mm·높이24.6mm 때문에 모든 한국 러너에게 반 사이즈 업을 권하지 않습니다.',
   ],
   priceAnalysis: {
-    valueRating: 7,
     priceTier: 'high',
     alternatives: [
       'nike-vomero-18',

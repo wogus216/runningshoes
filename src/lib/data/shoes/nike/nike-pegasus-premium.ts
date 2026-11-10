@@ -14,7 +14,6 @@ export const shoe: Shoe = {
     '/images/shoes/nike/pegasus-premium/pair.webp',
   ],
   category: '입문화',
-  rating: 4.5,
   price: 289000,
   description: '상부 ZoomX · 하부 ReactX · 성형 전장 Air Zoom 구조의 페가수스 프리미엄. 실험실 308g·힐/전족부 42.8/31mm. 한국 확인 정가289,000원.',
   oneliner: '308g 실험실 무게 · 상부 ZoomX · 하부 ReactX · 성형 전장 Air Zoom',
@@ -43,8 +42,6 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'narrow',
-    winterCompatibility: 'good',
-    summerCompatibility: 'fair',
   },
   targetUsers: {
     recommended: [
@@ -64,7 +61,6 @@ export const shoe: Shoe = {
   ],
   priceAnalysis: {
     msrp: 289000,
-    valueRating: 8,
     priceTier: 'mid',
     alternatives: [
       'new-balance-1080-v14',

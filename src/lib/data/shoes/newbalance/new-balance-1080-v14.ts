@@ -15,7 +15,6 @@ export const shoe: Shoe = {
     '/images/shoes/newbalance/1080v14/outsole.webp',
   ],
   category: '쿠션화',
-  rating: 5,
   description: 'Fresh Foam X · 비플레이트 로커 구조의 1080 V14. 실험실 285g·힐/전족부 37/32.8mm. 한국 현재 정가 미확인.',
   oneliner: '285g 실험실 무게 · Fresh Foam X · 비플레이트 로커',
   editorComment: '2026-11-09 원문 재확인. 한국 공식1080 V14 검색에서 상품을 확인하지 못해 현재 정가·성별·폭·SKU·재고는 미확인입니다. 과거 QA 호스트의199,000원·남성2E 자료를 현재 운영 상품 증거로 사용하지 않습니다. DOR 소개 남성300g(US9.5)·여성235g(US8),38/32mm·드롭6mm. RR285g·37.0/32.8mm·4.2mm와 성별·사이즈 조건을 구분합니다.  DOR의 David(남성US9.5)은 길이가 맞고 여유 있는 고정과 패딩된 카운터를 느꼈으며, Andrea(여성US9.5)는 길이가 맞지만 낮고 조이는 중족부 볼륨을 느꼈습니다. 두 리뷰어의 따뜻한 어퍼 의견과 RR의 통기 시험은 다른 조건입니다. 기본 Fresh Foam X 모델이며 V15 Infinion으로 혼동하지 않습니다. 한국 와이드 현재SKU는 미확인입니다. RR 내부 최광폭95.4mm·엄지69.8mm·높이27.0mm가 같은 폭이라는 뜻은 아닙니다. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
@@ -53,11 +52,8 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'narrow',
-    winterCompatibility: 'good',
-    summerCompatibility: 'fair',
   },
   priceAnalysis: {
-    valueRating: 8,
     priceTier: 'premium',
     alternatives: [
       'asics-gel-nimbus-28',

@@ -7,7 +7,6 @@ export const shoe: Shoe = {
   brand: 'Nike',
   name: '페가수스 플러스 2',
   category: '데일리',
-  rating: 4.5,
   image: '/images/shoes/nike/pegasus-plus-2/side.webp',
   description: '훈련용 ZoomX · 전족 전폭 Air Zoom1개 구조의 페가수스 플러스 2. RunRepeat 실험실 검체 247g·37.7/27.3mm. 한국 현재 정가 미확인.',
   oneliner: '훈련용 ZoomX · 전족 전폭 Air Zoom1개 · 247g (RunRepeat 실험실 검체)',
@@ -28,8 +27,6 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'standard',
-    winterCompatibility: 'excellent',
-    summerCompatibility: 'good',
   },
   targetUsers: {
     recommended: [
@@ -42,7 +39,6 @@ export const shoe: Shoe = {
     ],
   },
   priceAnalysis: {
-    valueRating: 7,
     priceTier: 'premium',
     alternatives: [
       'nike-pegasus-plus',

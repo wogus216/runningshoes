@@ -34,6 +34,7 @@ export function ValueAnalysis({ priceAnalysis, shoeName, brand, resolvedAlternat
 
   const getValueDescription = () => {
     const rating = priceAnalysis.valueRating;
+    if (rating === undefined) return '평가 근거 미확인';
     if (rating >= 9) return "최고의 가성비";
     if (rating >= 8) return "뛰어남";
     if (rating >= 7) return "양호";
@@ -62,7 +63,7 @@ export function ValueAnalysis({ priceAnalysis, shoeName, brand, resolvedAlternat
       <div className="rounded border border-border bg-white p-6 lg:p-8">
         <h3 className="mb-4 flex items-center gap-2 text-xl font-black text-sky-700">
           <BadgeDollarSign className="h-5 w-5" />
-          {priceAnalysis.msrp ? <>에디터 가성비 평가: <span className="font-mono tabular-nums">{priceAnalysis.valueRating}/10</span> ({getValueDescription()})</> : '가격 확인 필요'}
+          {priceAnalysis.valueRating !== undefined ? <>에디터 가성비 평가: <span className="font-mono tabular-nums">{priceAnalysis.valueRating}/10</span> ({getValueDescription()})</> : '가격과 구매 조건'}
         </h3>
         {/* 국내 정가가 없는 신발(병행·직구만 유통)은 가격대 평가를 하지 않는다 — 병행가를 정가처럼 쓰지 않는다 */}
         {!priceAnalysis.msrp ? (

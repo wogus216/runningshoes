@@ -11,7 +11,6 @@ export const shoe: Shoe = {
     '/images/shoes/hoka/cielox1/side.webp',
   ],
   category: '레이싱',
-  rating: 5,
   description: '초대 2024 X1 이중 밀도 PEBA · 날개형 카본 · 강한 로커 구조의 씨엘로 X1. 실험실 249g·힐/전족부 39.8/30.3mm. 한국 현재 정가 미확인.',
   oneliner: '249g 실험실 무게 · 초대 2024 X1 이중 밀도 PEBA · 날개형 카본 · 강한 로커',
   editorComment: '2026-11-09 원문 재확인. 호카 코리아 공식 연결스토어의 현재 씨엘로 X1검색은 후속 2.0 두 상품만 확인돼 초대 2024 X1의현재 정가·성별·폭·SKU·재고는미확인입니다. 2.0의 329,000원·할인가를원형에 대입하지 않고,미노출을 단종 확정으로 해석하지 않습니다. 원형 RR 실측 249g·39.8/30.3mm·9.5mm 입니다. DOR 소개 264g(남성 US10)·39/32mm 와 210g(여성 US8)·37/30mm,드롭 7mm 는조건을 구분합니다. 기존 2.0의 208g·38.8/28.1mm·10.7mm 를원형 상세에 썼던 오류를 정정합니다. 초대 RR 경도 15.5는 HA 구방식이며 AC 는미확인입니다. HA 를다른 두 모델의 AC 와비교·환산하지 않습니다. 원문 갱신일 2025-01-02이지만후속 추가 시험의 항목별 날짜는 미공시입니다. 기존 2.0수치 혼용·수명 300km·무릎보호·후반 페이스 보장을 제거했습니다. DOR Matt(남성 US10)은 길이가 맞지만 낮은 볼륨과 엄지·다섯째발가락 윗면 압박을느꼈습니다. David(남성 US9.5)는앞쪽에 약간 여유와 좋은 고정을 느꼈으나 경사진 길·가쪽 회전에서 컷아웃 방향으로 기우는 순간을 보고했습니다. Andrea(여성 US9.5)는앞쪽이 편했고 David와같은 불안정을 겪지 않았다고 적었습니다. 개인의 핏·굴림 차이를 모든 러너에게 일반화하지 않습니다. 한국 현재 와이드 SKU 는미확인입니다. 초대 RR 내부 최광폭 93.0mm·엄지 70.9mm·높이 27.9mm 를 2.0의 71.3mm 로 대체하지 않습니다. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
@@ -41,8 +40,6 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'narrow',
-    winterCompatibility: 'fair',
-    summerCompatibility: 'excellent',
   },
   targetUsers: {
     recommended: [
@@ -61,7 +58,6 @@ export const shoe: Shoe = {
     '한국 현재 와이드 SKU 는미확인입니다. 초대 RR 내부 최광폭 93.0mm·엄지 70.9mm·높이 27.9mm 를 2.0의 71.3mm 로 대체하지 않습니다.',
   ],
   priceAnalysis: {
-    valueRating: 6,
     priceTier: 'super-premium',
     alternatives: [
       'nike-vaporfly-4',
@@ -125,7 +121,7 @@ export const shoe: Shoe = {
         note: '이번 live에서 brand.naver.com/hoka연결을재확인했습니다.',
       },
       {
-        label: '한국 공식 null · undefined · undefined',
+        label: '한국 공식 연결 스토어 · 씨엘로 X1 검색',
         url: 'https://brand.naver.com/hoka/search?q=%EC%94%A8%EC%97%98%EB%A1%9C%20X1',
         note: '호카 코리아 공식 연결스토어의 현재 씨엘로 X1검색은 후속 2.0 두 상품만 확인돼 초대 2024 X1의현재 정가·성별·폭·SKU·재고는미확인입니다. 2.0의 329,000원·할인가를원형에 대입하지 않고,미노출을 단종 확정으로 해석하지 않습니다.',
       },

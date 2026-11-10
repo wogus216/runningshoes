@@ -7,7 +7,6 @@ export const shoe: Shoe = {
   brand: 'Mizuno',
   name: '네오 비스타 3',
   category: '데일리',
-  rating: 4,
   price: 219000,
   image: '/images/shoes/mizuno/neo-vista-3/side.webp',
   description: 'ENERZY NXT 이중폼 · 유리섬유 보강 Wave Plate 구조의 네오 비스타 3. RunRepeat 실험실 검체 266g·43.5/35mm. 한국 확인 가격 219,000원.',
@@ -39,8 +38,6 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'standard',
-    winterCompatibility: 'fair',
-    summerCompatibility: 'excellent',
   },
   targetUsers: {
     recommended: [
@@ -60,7 +57,6 @@ export const shoe: Shoe = {
   ],
   priceAnalysis: {
     msrp: 219000,
-    valueRating: 6,
     priceTier: 'premium',
     alternatives: [
       'asics-superblast-3',

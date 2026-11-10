@@ -15,7 +15,6 @@ export const shoe: Shoe = {
     '/images/shoes/puma/deviate-pure-nitro/outsole.webp',
   ],
   category: '데일리',
-  rating: 4.5,
   description: '100% PEBA NITROFOAM · 플레이트 없음 · PUMAGRIP 구조의 디비에이트 나이트로 퓨어. RunRepeat 실험실 검체 215g·37.2/27.6mm. 한국 현재 정가 미확인.',
   oneliner: '100% PEBA NITROFOAM · 플레이트 없음 · PUMAGRIP · 215g (RunRepeat 실험실 검체)',
   editorComment: '2026-11-10 원문 재확인. 한국 공식 캐시: Men 313904_22 폭 미확인 정가189,000원·판매캐시189,000원; Men 313904_23 폭 미확인 정가189,000원·판매캐시189,000원; Women 313905_02 폭 미확인 정가189,000원·판매캐시189,000원. 현재 가격·선택 재고는 미확인입니다. 판매캐시와 현재 결제가는 다를 수 있으며 글로벌 폭을 한국 판매 증거로 쓰지 않습니다. 한국220g(270mm)/180g(235mm)·38/30mm·8mm, DOR 소개213g(남성US9)/187g(여성US8)·37/29mm·표9mm와 RR215g·37.2/27.6mm·9.6mm를 나눕니다. DOR37-29는8이지만 표9·본문8의 차이를 임의 교정하지 않습니다. 74mm 엄지 너비와23.3mm 높이를 함께 봅니다. 저온 경도 변화2%를 겨울 성능 보장으로 바꾸지 않습니다. 한국 현재 와이드 부재·650km·km당291원·디비4보다 무조건 가성비 우위를 철회했습니다. DOR Matt(남성US10)는 낮고 테이퍼진 앞코와 늘어나는 메시·좋은 거싯 고정을 적었고 양말을 선호했습니다. 초기 뻣뻣함 뒤 전환은 매끄러워졌지만 매우 튀는 폼보다는 균형 있는 느낌이었고 데일리·훈련을 즐겼으나 레이스 선택은 아니었습니다.100마일은 개인 시험 거리입니다. RR 내부 최광폭 95.3mm·엄지 74mm·높이 23.3mm입니다. 너비 하나로 발등·길이·힐 고정이나 한국 와이드 적합을 보장하지 않습니다. 실제 규격·양말에서 접촉과 전환을 확인하세요. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
@@ -44,8 +43,6 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'standard',
-    winterCompatibility: 'excellent',
-    summerCompatibility: 'excellent',
   },
   targetUsers: {
     recommended: [
@@ -64,7 +61,6 @@ export const shoe: Shoe = {
     'RR 내부 최광폭 95.3mm·엄지 74mm·높이 23.3mm입니다. 너비 하나로 발등·길이·힐 고정이나 한국 와이드 적합을 보장하지 않습니다. 실제 규격·양말에서 접촉과 전환을 확인하세요.',
   ],
   priceAnalysis: {
-    valueRating: 9,
     priceTier: 'mid',
     alternatives: [
       'puma-velocity-nitro-4',

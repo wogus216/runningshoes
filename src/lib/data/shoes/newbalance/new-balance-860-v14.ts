@@ -15,7 +15,6 @@ export const shoe: Shoe = {
     '/images/shoes/newbalance/860v14/outsole.webp',
   ],
   category: '안정화',
-  rating: 4,
   description: '이중경도 Fresh Foam X와 내측 웨지·EVA 필름을 사용하는 안정화. 전통적인 메디얼 포스트 방식과 구분합니다.',
   oneliner: '860 v14: 이중폼·내측 웨지·EVA 필름 구조',
   editorComment: '2026-11-09 원문 재확인. 기존 메디얼 포스트 설명을 내측 웨지와 EVA 필름 구조로 수정했습니다. RunRepeat 무게295g, 힐/전족부36.8/27.5mm, 드롭9.3mm입니다. 경도는 현재26.5 AC이며 과거10.9/23.8 HA 수치의 원문을 재확인하지 못해 사용하지 않습니다. 한국몰에서는 여성D 연관상품의 정가179,000원만 확인했고, 해당 상품 링크는 판매 준비/오픈예정 응답이었습니다. 남성 한국 공식가와 현재 판매 폭, 모델 전체의 판매 종료 여부는 확인하지 못해 가격·폭을 확정하지 않습니다. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
@@ -55,11 +54,8 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'standard',
-    winterCompatibility: 'fair',
-    summerCompatibility: 'fair',
   },
   priceAnalysis: {
-    valueRating: 8,
     priceTier: 'mid',
     alternatives: [
       'asics-gel-kayano-32',

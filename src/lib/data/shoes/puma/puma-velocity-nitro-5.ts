@@ -14,7 +14,6 @@ export const shoe: Shoe = {
     '/images/shoes/puma/velocitynitro5/detail.webp',
   ],
   category: '입문화',
-  rating: 4,
   description: 'A-TPU NITROFOAM 두 층 · PUMAGRIP 구조의 벨로시티 나이트로 5. RunRepeat 실험실 검체 238g·31.3/26.1mm. 한국 현재 정가 미확인.',
   oneliner: 'A-TPU NITROFOAM 두 층 · PUMAGRIP · 238g (RunRepeat 실험실 검체)',
   editorComment: '2026-11-10 원문 재확인. 한국 공식 캐시: Men 312944_10 폭 미확인 정가179,000원·판매캐시114,560원; Men 313690_01 WIDE FIT [raw] 정가179,000원·판매캐시114,560원; Women 312945_05 폭 미확인 정가179,000원·판매캐시143,200원; Women 312945_09 폭 미확인 정가179,000원·판매캐시179,000원; Women 313691_01 WIDE FIT [raw] 정가179,000원·판매캐시143,200원. 현재 가격·선택 재고는 미확인입니다. 판매캐시와 현재 결제가는 다를 수 있으며 글로벌 폭을 한국 판매 증거로 쓰지 않습니다. 한국230g(UK8/270mm)·35/27mm·8mm, DOR 소개244g(남성US9)/210g(여성US8)·33/25mm·8mm와 RR238g·31.3/26.1mm·5.2mm를 나눕니다. 여성 한국PDP의230g/UK8 복제 문구를 여성US8 무게로 바꾸지 않습니다. 주층40.5AC·보조34.9AC와 David의 매우 부드러운 전체 체감은 다른 척도입니다. 남녀WIDE FIT상품은 확인했지만2E/4E와 현재 선택 재고는 미확인입니다. 권장수명800km는 시험조건 미공개 제조사 안내로 독립 수명이 아니며 기존500km·km당358원·와이드면 안전 보장을 제거했습니다. DOR David(남성US9.5)는 좁은 힐/중족과 보통 전족·충분한 볼륨, 패딩 어퍼·혀의 고정을 좋아했습니다. 매우 부드러운 전통 데일리·유연한 앞발과 적당한 탄성을 느꼈고 빠른 주행도 가능했으나 데일리를 선호했습니다. 주로 여름 도로로 험한 접지 조건 시험은 제한적입니다. RR 내부 최광폭 92.6mm·엄지 72.1mm·높이 26.3mm입니다. 너비 하나로 발등·길이·힐 고정이나 한국 와이드 적합을 보장하지 않습니다. 실제 규격·양말에서 접촉과 전환을 확인하세요. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
@@ -34,8 +33,6 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'narrow',
-    winterCompatibility: 'good',
-    summerCompatibility: 'good',
   },
   targetUsers: {
     recommended: [
@@ -48,7 +45,6 @@ export const shoe: Shoe = {
     ],
   },
   priceAnalysis: {
-    valueRating: 8,
     priceTier: 'mid',
     alternatives: [
       'puma-velocity-nitro-4',

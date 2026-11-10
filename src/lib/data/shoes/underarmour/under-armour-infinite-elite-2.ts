@@ -15,7 +15,6 @@ export const shoe: Shoe = {
     '/images/shoes/underarmour/infinite-elite-2/outsole.webp',
   ],
   category: '쿠션화',
-  rating: 4,
   description: 'HOVR+ · 엔지니어드 메시 · 고무 밑창 구조의 인피니트 엘리트 2. RunRepeat 실험실 검체 288g·40.1/33.1mm. 한국 현재 정가 미확인.',
   oneliner: 'HOVR+ · 엔지니어드 메시 · 고무 밑창 · 288g (RunRepeat 실험실 검체)',
   editorComment: '2026-11-10 원문 재확인. 한국 공식 캐시: 3028169 Men 레귤러 정가 199,000원·판매 139,300원; 3028178 Women 레귤러 정가 199,000원·판매 139,300원. 현재 가격과 선택 재고는 미확인입니다. 레귤러를 D/2E로 바꾸거나 정적 사이즈 목록을 재고로 사용하지 않습니다. RR 288g·40.1/33.1mm·7mm와 한국 남성 306g/여성 240.97g(각 기준 사이즈 미확인)·8mm, RR 재전재 브랜드 36/28mm·8mm를 구분합니다. RR 본문 72.6%의 위치를 확인하지 못해 힐 리턴은 미확인으로 두고 전족 74.8%만 표시했습니다. 구방식 연기 4/5는 BR이 아닙니다. 외부 힐 바닥 103.9mm는 내부 너비가 아니며 600km 수명·현재 와이드 부재를 보장하지 않습니다. 정확 Infinite Elite2의 DOR 개별 착화 리뷰는 이번 범위에서 확인하지 못했습니다. 다른 세대의 경험을 대신 쓰지 않습니다. RR 내부 최광폭 95mm·엄지 71.9mm·높이 27.9mm입니다. 실제 길이·발톱 위 높이·중족 압박·힐 고정을 확인하세요. 한국 다른 성별·폭의 치수로 직접 대입하지 않습니다. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
@@ -35,8 +34,6 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'narrow',
-    winterCompatibility: 'good',
-    summerCompatibility: 'good',
   },
   targetUsers: {
     recommended: [
@@ -54,7 +51,6 @@ export const shoe: Shoe = {
     'RR 내부 최광폭 95mm·엄지 71.9mm·높이 27.9mm입니다. 실제 길이·발톱 위 높이·중족 압박·힐 고정을 확인하세요. 한국 다른 성별·폭의 치수로 직접 대입하지 않습니다.',
   ],
   priceAnalysis: {
-    valueRating: 8,
     priceTier: 'premium',
     alternatives: [
       'asics-gel-nimbus-28',

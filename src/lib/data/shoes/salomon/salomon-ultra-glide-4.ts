@@ -15,7 +15,6 @@ export const shoe: Shoe = {
     '/images/shoes/salomon/ultraglide4/outsole.webp',
   ],
   category: '트레일',
-  rating: 4.3,
   description: 'Energy Foam · relieveSPHERE · Quicklace·Contagrip 구조의 울트라 글라이드 4. RunRepeat 실험실 검체 295g·38.6/31.1mm. 한국 현재 정가 미확인.',
   oneliner: 'Energy Foam · relieveSPHERE · Quicklace·Contagrip · 295g (RunRepeat 실험실 검체)',
   editorComment: '2026-11-10 원문 재확인. 한국 남성 L49141200·여성 L49149200·Wide L49216200 캐시는 단일 가격 230,000원을 표시했습니다. 남성/와이드 285g·여성 255g은 기준 사이즈 미공시이며 41/35mm·6mm 공시입니다. Wide 제목과 Standard 사양 행이 상충해 실제 폭 규격은 미확인입니다. 가격의 MSRP 레이블·현재 가격·선택 재고도 미확인이고 재입고 알림창 목록을 재고로 쓰지 않습니다. RR 295g·38.6/31.1mm·7.5mm, DOR 소개 280g(남성 US9)/252g(여성 US7)·41/35mm·6mm와 실제 테스터 남성 US9.5를 구분합니다. 젖은 콘크리트 0.68과 미끄러운 바위 체감은 다른 표면입니다. DOR 러그 4.5mm와 RR 3.9mm, 개인 통기 체감과 BR53·건조47%도 나눕니다. 50~100km 적합 보장·통증 보호·450km 수명을 철회합니다. DOR David(남성 US9.5)는 낮은 볼륨의 밀착 중족과 좀 더 여유 있는 전족, 편한 Quicklace 고정을 적었습니다. 자신의 주행에서 과열은 없고 긴 주행 로커는 좋았으나 가파른 오르막의 뻣뻣한 전족과 미끄러운 바위의 작은 슬립을 느꼈습니다. RR 내부 최광폭 94mm·엄지 71.4mm·높이 28.8mm입니다. Wide 상품 제목을 확인했지만 표준형 검체 치수로 와이드의 실제 너비를 계산하지 않습니다. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
@@ -44,8 +43,6 @@ export const shoe: Shoe = {
   },
   koreanFootFit: {
     toBoxWidth: 'narrow',
-    winterCompatibility: 'fair',
-    summerCompatibility: 'fair',
   },
   targetUsers: {
     recommended: [
@@ -64,7 +61,6 @@ export const shoe: Shoe = {
     'RR 내부 최광폭 94mm·엄지 71.4mm·높이 28.8mm입니다. Wide 상품 제목을 확인했지만 표준형 검체 치수로 와이드의 실제 너비를 계산하지 않습니다.',
   ],
   priceAnalysis: {
-    valueRating: 7,
     priceTier: 'premium',
     alternatives: [
       'hoka-speedgoat-6',
