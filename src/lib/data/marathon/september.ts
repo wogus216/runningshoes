@@ -2,40 +2,45 @@ import type { MarathonEvent } from '@/types/marathon';
 
 export const septemberEvents: MarathonEvent[] = [
   {
-    id: 'seoul-olympic-88run-2026',
-    name: '2026 서울올림픽기념 88RUN',
-    date: '2026-09-12',
-    month: '9월',
-    location: '하남 미사경정공원 (경기 하남시)',
-    region: '경기',
-    distances: ['10K', '5K'],
-    // 8/14 11시 접수 시작 → 공식 신청 페이지가 "선착순 1988명 조기 마감" alert 로 응답한다(2026-08-24 확인)
-    status: '대회종료',
+    id: "seoul-olympic-88run-2026",
+    name: "2026 서울올림픽기념 88RUN",
+    date: "2026-09-12",
+    month: "9월",
+    location: "하남 미사경정공원 (경기 하남시)",
+    region: "경기",
+    distances: [
+      "10K",
+      "5K"
+    ],
+    status: "대회종료",
     isMajor: false,
-    website: 'https://88run.kr/',
-    description:
-      '서울올림픽기념국민체육진흥공단 경륜경정총괄본부가 여는 러닝 페스티벌. 1988 서울올림픽 조정·카누 경기가 열린 미사리 조정경기장 자리에서 열리며, 정원도 1,988명으로 그해를 따왔습니다. 참가비가 전 종목 1만원이고 10km·5km 외에 가족런이 따로 있습니다. 8월 14일 오전 11시 접수를 시작해 정원이 조기 마감됐습니다. 5km는 기록칩이 제공되지 않으며, 14세 미만은 보호자와 단체 신청만 가능합니다.',
+    website: "https://88run.kr/",
+    description: "9월 12일 하남 미사경정공원 일정의88RUN. 공식은1인10,000원·계획1,988명과 10km·5km·가족런을 안내했다.5km는 기록칩·기록 미제공으로 10km기록 안내와 구분한다. 스탬프별 먹거리·경품 추첨권은 기본 참가품·실제 당첨과 다른 조건이었다.",
     courseInfo: {
-      terrain: '평지',
-      difficulty: '초보자',
-      courseDescription:
-        '미사경정공원 일원을 도는 10km·5km 코스. 공식 안내는 코스를 지도 이미지로만 공개해 경유지 지명은 밝히지 않았습니다.',
+      "courseDescription": "하남 미사경정공원 일대10km·5km·가족런 안내이며 세부 고도와 난이도는 이번 확인 범위 밖이다."
     },
     raceInfo: {
-      entryFees: [
-        { distance: '10K', fee: 10000 },
-        { distance: '5K', fee: 10000 },
+      "entryFees": [
+        {
+          "distance": "10K",
+          "fee": 10000
+        },
+        {
+          "distance": "5K",
+          "fee": 10000
+        }
       ],
-      expectedParticipants: 1988,
-      startTime: '08:30',
+      "expectedParticipants": 1988,
+      "startTime": "08:30"
     },
     raceKit: {
-      pending:
-        '참가 기념품 구성은 공식이 이미지로만 안내해 확인하지 못했습니다. 부스 참여 기념품(에너지젤·샤워타월·생수 등)과는 별개입니다.',
-      verifiedAt: '2026-08-24',
+      "pending": "참가 기념품 구성은 공식이 이미지로만 안내해 확인하지 못했습니다. 부스 참여 기념품(에너지젤·샤워타월·생수 등)과는 별개입니다.",
+      "verifiedAt": "2026-08-24"
     },
-    registrationStart: '2026-08-14',
-    lastVerified: '2026-08-24',
+    registrationStart: "2026-08-14",
+    lastVerified: "2026-11-10",
+    registrationNote: "지난 접수는 8월 14일11시부터 결제 완료자 순 모집 안내였다. 환불 신청 기한 8월 21일15시는 지났으며 현재 추가 참가권 재고·차기 모집은 확인하지 않았다.",
+    postRaceNote: "공식 FAQ는 5km계측·기록 미제공,10km기록은 행사 뒤 24시간 내SMS및홈페이지 확인을 계획했다. 전원 실제 수신 완료로 확정하지 않는다. 신청 종목·배번호와 본인 연락처를 대조해 문의할 사항이다. https://88run.kr/",
   },
   {
     id: 'ansan-marathon-2026',

@@ -729,49 +729,48 @@ export const novemberEvents: MarathonEvent[] = [
     },
   },
   {
-    id: 'go-free-run-2026',
-    name: '2026 아식스 서울신문 고프리런 (ASICS SEOUL SHINMUN GO FREE RUN)',
-    date: '2026-11-21',
-    month: '11월',
-    location: '여의도공원 문화의마당 (서울 영등포구)',
-    region: '서울',
-    distances: ['하프', '10K'],
-    status: '접수중',
+    id: "go-free-run-2026",
+    name: "2026 아식스 서울신문 고프리런 (ASICS SEOUL SHINMUN GO FREE RUN)",
+    date: "2026-11-21",
+    month: "11월",
+    location: "여의도공원 문화의마당 (서울 영등포구)",
+    region: "서울",
+    distances: [
+      "하프",
+      "10K"
+    ],
+    status: "접수중",
     isMajor: false,
-    website: 'http://gofree.seoul.co.kr/',
-    registrationStart: '2026-09-01',
-    registrationNote:
-      '9월 1일(화) 10시 접수 개시됨 — 마감일 없이 선착순. 공식 홈 참가신청 안내에는 일반접수 70,000원만 남아 있고 얼리버드 65,000원(서울신문 회원 선착순 3,000명) 문구가 사라져 소진된 것으로 추정됩니다. 환불 신청은 10월 21일(수) 17시에 끝났습니다 — 10월 22일 확인 시 공식 신청서는 하프·10K 모두 그대로 열려 있어 접수는 계속되지만, 지금 신청하면 취소·환불이 되지 않습니다(공식 환불규정: 기간 이후 참가 취소 및 환불 불가).',
-    lastVerified: '2026-10-22',
-    description:
-      '서울신문 주최 가을 러닝 대회. 2025년(11/9, 하프·10K·5K)에 이어 2026년은 11월 21일(토)에 열리며, 올해부터 아식스가 타이틀 스폰서로 붙어 대회명 자체가 "ASICS SEOUL SHINMUN GO FREE RUN"이 됐습니다. 8월 18일까지 "참가접수 미정"이던 공식 홈페이지 대회요강이 열리면서, 러닝 정보 계정 단독 소스였던 9월 1일 접수설이 공식 확정으로 바뀌었습니다 — 9월 1일(화) 10시부터 마감일 없이 선착순으로 받습니다. 참가비는 얼리버드가 하프·10K 65,000원(서울신문 회원 선착순 3,000명, 신청 시 서울신문 ID 입력 필수)이고 그 뒤로는 일반 70,000원입니다. 5,000원 차이지만 회원가입이 조건이라 접수 당일 아침에 가입하려 들면 늦습니다. 환불은 접수 마감일 17시까지만 가능하고 마감 후에는 불가하며, 환불금은 대회 종료 후 2주 안에 지급됩니다. 앞서 진행된 아식스 스페셜 패키지 래플(8월 19~24일 응모, 25일 발표)은 이미 종료됐습니다 — 하프는 슈퍼블라스트 3, 10K는 노바블라스트 6에 참가 티켓과 공식 티셔츠가 묶인 구성이었습니다.',
+    website: "http://gofree.seoul.co.kr/",
+    registrationStart: "2026-09-01",
+    registrationNote: "요강 접수 안내는 9월 1일10시부터 선착순이지만 신청 안내에는 3월 3일·5km얼리버드 등 불일치 문구가 남아 있다. 현재 잔여수량·실제 결제 가능 여부를 이번에 조회하지 않았다. 환불 기한 10월 21일/29일도 상충해 당시 적용안내·개인 처리 상태를 사무국에 확인해야 한다.",
+    lastVerified: "2026-11-10",
+    description: "11월 21일 여의도공원 문화의마당 하프·10km일정. 공식 요강과 홈은08:00출발·일반 각70,000원을 안내한다. 환불 기한은 요강 10월 29일17시와FAQ/신청안내 10월 21일17시가 달라 적용조건 확인 대상이다. 기념품 상세의 아식스20%쿠폰은 제3자 정보제공 동의자·일부상품 제외 조건이며 실제 지급 완료와 다르다.",
     raceKit: {
-      items: [
-        '기능성 티셔츠(XS~XL / 85~105, 총기장·가슴둘레·어깨넓이·소매길이 실측표 공개)',
-        '스포츠 장목 양말(남성 26cm·여성 24cm로 성별에 따라 발송)',
-        '헤어 밴드',
-        '쟈뎅 페이스메이트 버닝',
-        '뉴니스 수분·진정 마스크',
-        '샘트리 맛병아리콩',
+      "items": [
+        "티셔츠(가슴둘레 사이즈표)",
+        "샘트리 맛병아리콩",
+        "일동헬스케어 아로엑스 에너지젤",
+        "메달·간식"
       ],
-      // 공식 홈 요약에는 티셔츠·양말·헤어밴드가 FILA 로 적혀 있으나, 기념품안내 상세 페이지에는
-      // 브랜드 표기가 없다. 타이틀 스폰서가 아식스로 바뀐 해라 전년도 표기가 남았을 수 있어
-      // 브랜드명은 싣지 않는다.
-      pending: '티셔츠·양말·헤어밴드의 브랜드는 공식 홈 요약(FILA)과 기념품안내 상세(브랜드 미표기)가 어긋나 확정 표기하지 않았습니다. 세부 디자인도 공식이 "일부 변경될 수 있다"고 고지했습니다',
-      verifiedAt: '2026-08-31',
+      "pending": "현재 기념품 상세는 아식스20%쿠폰의 제3자 정보제공 동의·일부상품 제외 조건과 추가기념품 업데이트를 안내한다. 홈의 FILA요약과 차이가 있어 브랜드·최종 전원 지급은 미확정이며 실제 받은 품목과 대조해야 한다.",
+      "verifiedAt": "2026-11-10"
     },
     courseInfo: {
-      terrain: '평지',
-      difficulty: '초보자',
-      courseDescription:
-        '여의도공원 문화의마당에서 06시 30분 집결, 07시 30분 출발합니다. 하프와 10K 코스도, 교통통제 시간표가 공식에 올라와 있지만 모두 이미지로만 제공되고 "관계기관과의 협의 후 일부 수정될 수 있다"는 단서가 붙어 있어, 대회가 가까워지면 다시 확인하는 편이 좋습니다. 하프는 만 18세 이상만 신청할 수 있고 10K는 나이 제한이 없습니다.',
+      "courseDescription": "공식 현재 요강의 출발은08:00이다. 기존06:30집결·07:30출발을 최종 정보로 재사용하지 않는다. 공개 코스도·관계기관 협의 조건과 최종 현장 안내는 별도로 확인해야 하며 정확한 고도·난이도는 이번 범위 밖이다."
     },
     raceInfo: {
-      entryFees: [
-        { distance: '하프', fee: 70000 },
-        { distance: '10K', fee: 70000 },
+      "entryFees": [
+        {
+          "distance": "하프",
+          "fee": 70000
+        },
+        {
+          "distance": "10K",
+          "fee": 70000
+        }
       ],
-      startTime: '07:30',
+      "startTime": "08:00"
     },
   },
   {
@@ -894,48 +893,96 @@ export const novemberEvents: MarathonEvent[] = [
     },
   },
   {
-    id: 'gwacheon-marathon-2026',
-    name: '2026 과천마라톤',
-    date: '2026-11-08',
-    month: '11월',
-    location: '관문체육공원 (경기 과천시)',
-    region: '경기',
-    distances: ['하프', '10K', '5K'],
-    status: '대회종료',
+    id: "gwacheon-marathon-2026",
+    name: "2026 과천마라톤",
+    date: "2026-11-08",
+    month: "11월",
+    location: "관문체육공원 (경기 과천시)",
+    region: "경기",
+    distances: [
+      "하프",
+      "10K",
+      "5K"
+    ],
+    status: "대회종료",
     isMajor: false,
-    website: 'https://gcrun.co.kr/gcrun/',
-    registrationStart: '2026-07-20',
-    registrationNote: '접수 마감됨 — 선착순 3,000명 도달(공식 공지 2026-08-18, 취소분 추가 접수도 마감)',
+    website: "https://gcrun.co.kr/gcrun/",
+    registrationStart: "2026-07-20",
+    registrationNote: "공식 포스터는 7월 20일 14시 접수와 신청 뒤 결제 완료 조건을 안내한다. 접수처 gcrun.co.kr은 이번 접근에서 리디렉션이 반복돼 최신 후속 공지를 충분히 읽지 못했다. 지난 추가접수 기한을 현재 모집으로 안내하지 않는다.",
     raceKit: {
-      items: ['공식 기념품', '배번호', '기록칩(하프·10km만 — 5km는 기록칩 없음)', '완주메달', '모바일 기록증', '안내책자', '간식'],
-      byDistance: [
-        { distance: '하프', item: '디아도라 러닝베스트·배번호 그립' },
-        { distance: '10km', item: '디아도라 러닝베스트·스포츠 양말' },
-        { distance: '5km', item: '디아도라 경량 토트백' },
+      "items": [
+        "공식 기념품",
+        "배번호",
+        "기록칩(하프·10km만 — 5km는 기록칩 없음)",
+        "완주메달",
+        "모바일 기록증",
+        "안내책자",
+        "간식"
       ],
-      pending: '공식 고지: 기념품 디자인·항목은 변경될 수 있음',
-      images: [
-        { src: '/images/marathon/gwacheon-marathon-2026/kit-1.webp', alt: '2026 과천마라톤 공식 기념품 — 디아도라 러닝베스트' },
-        { src: '/images/marathon/gwacheon-marathon-2026/kit-2.webp', alt: '2026 과천마라톤 공식 기념품 안내' },
+      "byDistance": [
+        {
+          "distance": "하프",
+          "item": "디아도라 러닝베스트·배번호 그립"
+        },
+        {
+          "distance": "10km",
+          "item": "디아도라 러닝베스트·스포츠 양말"
+        },
+        {
+          "distance": "5km",
+          "item": "디아도라 경량 토트백"
+        }
       ],
-      verifiedAt: '2026-10-20',
+      "pending": "공식 고지: 기념품 디자인·항목은 변경될 수 있음",
+      "images": [
+        {
+          "src": "/images/marathon/gwacheon-marathon-2026/kit-1.webp",
+          "alt": "2026 과천마라톤 공식 기념품 — 디아도라 러닝베스트"
+        },
+        {
+          "src": "/images/marathon/gwacheon-marathon-2026/kit-2.webp",
+          "alt": "2026 과천마라톤 공식 기념품 안내"
+        }
+      ],
+      "verifiedAt": "2026-10-20"
     },
-    lastVerified: '2026-11-09',
-    description:
-      '과천시체육회 주최로 관문체육공원에서 출발하는 하프·10K·5K 대회(40주년). 7월 20일 14시 시작한 1차 선착순 접수(총 3,000명)는 정원이 차서 마감됐고, 미결제분 결제 마감(7/26 자정) 뒤 7월 27일 14시 취소분 추가접수까지 열린 끝에 8월 18일 공식 공지로 전 코스 종목 신청이 마감됐습니다(입금·환불 기한 8/17 자정). 07:00 집결·08:00 출발이며 제한시간은 하프 2시간 30분·10km 1시간 30분·5km 1시간입니다(5km는 기록칩이 없어 기록 측정 불가). 참가 자격은 하프 19세 이상·10km 14세 이상이며 5km는 제한이 없습니다. 과천시민 5km는 25,000원(한정 수량).',
+    lastVerified: "2026-11-10",
+    description: "11월 8일 관문체육공원 하프·10km·5km 일정은 지났다. 과천시체육회 7월 공지·포스터는 07:00 집결·08:00 출발 계획, 종목별 1,000명씩 총 3,000명 모집과 참가비를 안내했다. 시민 5km 특별 25,000원은 한정 수량·주소 조건이며 모든 종목의 할인이 아니다. 최종 참가 인원과 개인 결과는 이번에 조회하지 않았다.",
     raceInfo: {
-      entryFees: [
-        { distance: '하프', fee: 45000 },
-        { distance: '10K', fee: 40000 },
-        { distance: '5K', fee: 30000 },
+      "entryFees": [
+        {
+          "distance": "하프",
+          "fee": 45000
+        },
+        {
+          "distance": "10K",
+          "fee": 40000
+        },
+        {
+          "distance": "5K",
+          "fee": 30000
+        }
       ],
-      timeLimits: [
-        { distance: '하프', hours: 2, minutes: 30 },
-        { distance: '10K', hours: 1, minutes: 30 },
-        { distance: '5K', hours: 1, minutes: 0 },
+      "timeLimits": [
+        {
+          "distance": "하프",
+          "hours": 2,
+          "minutes": 30
+        },
+        {
+          "distance": "10K",
+          "hours": 1,
+          "minutes": 30
+        },
+        {
+          "distance": "5K",
+          "hours": 1,
+          "minutes": 0
+        }
       ],
-      startTime: '08:00',
+      "startTime": "08:00"
     },
+    postRaceNote: "최신 개인 기록·사진·전원 물품 수령은 미조회다. 금천 gcrun.kr과 과천 gcrun.co.kr은 다른 곳이므로 규정을 섞지 않는다. 주최 공식 공지 http://www.gcsports.or.kr/bbs/board.php?bo_table=s4_1&wr_id=312 및 http://www.gcsports.or.kr/bbs/board.php?bo_table=s4_1&wr_id=315",
   },
   {
     id: 'jeju-mandarin-marathon-2026',
