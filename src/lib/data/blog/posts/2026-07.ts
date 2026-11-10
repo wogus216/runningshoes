@@ -2853,98 +2853,35 @@ export const posts_2026_07: BlogPost[] = [
     updatedAt: "2026-11-09",
   },
   {
-    id: 'adrenaline-gts-25-vs-kayano-33-stability-2026',
-    slug: 'adrenaline-gts-25-vs-kayano-33-stability-2026',
-    title: '아드레날린 GTS 25 vs 카야노 33 | 브룩스 vs 아식스 안정화 대결 — 강한 교정·가성비 vs 부드러운 안정성',
-    description: '평발·과내전 러너의 영원한 고민, 브룩스 아드레날린 GTS 25와 아식스 젤 카야노 33을 정면 비교합니다. 아드레날린은 GuideRails로 강하게 잡아주고 800km 내구성·189,000원 가성비가 강점, 카야노 33은 30~32의 4D Guidance를 버리고 FLUIDSUPPORT+듀얼 폼으로 "부드러운 안정성"을 택했습니다(199,000원). 교정력·쿠션·드롭·가격·내구성을 기준으로 갈라, 과내전 정도와 예산에 맞는 선택을 정리했습니다.',
-    thumbnail: '/images/blog/adrenaline-gts-25-vs-kayano-33-stability-2026.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-07-08',
-    category: 'review' as const,
-    readingTime: 9,
-    tags: ['아드레날린 GTS 25', '카야노 33', '안정화 러닝화', '평발 러닝화', '과내전', '러닝화 비교', '브룩스 아식스'],
+    id: "adrenaline-gts-25-vs-kayano-33-stability-2026",
+    slug: "adrenaline-gts-25-vs-kayano-33-stability-2026",
+    title: "아드레날린 GTS25 vs 카야노33 — 지지 구조·카운터·아치 체감 비교",
+    description: "GuideRails와 FLUIDSUPPORT의 차이를 교정 강도나 치료 순위로 만들지 않습니다. RR 검체·한국 확인 폭·DOR의 갈린 착화를 정리했습니다.",
+    thumbnail: "/images/shoes/brooks/adrenalinegts25/side.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-07-08",
+    category: "review",
+    readingTime: 8,
+    tags: [
+      "아드레날린 GTS25",
+      "카야노33",
+      "핏",
+      "원문 대조"
+    ],
     content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>둘 다 평발·과내전 러너를 위한 대표 안정화</strong>지만 철학이 다릅니다 — <strong>아드레날린은 GuideRails로 "옆에서 강하게 잡아주고"</strong>, <strong>카야노 33은 FLUIDSUPPORT로 "부드러운 폼이 발 모양에 맞춰 자연스럽게 잡아줍니다"</strong></li>
-    <li><strong>강한 교정력·가성비·내구성</strong>(189,000원·800km)이면 <strong>아드레날린 GTS 25</strong>, <strong>부드러운 쿠션·낮은 드롭(아킬레스 부담↓)·프리미엄</strong>이면 <strong>카야노 33</strong>(199,000원)</li>
-    <li><strong>심한 과내전·평발 입문자는 아드레날린</strong>(검증된 강한 지지+저가), <strong>단단한 안정화가 싫고 쿠션을 원하는 중급자는 카야노 33</strong>. 카야노 33의 RunRepeat 실측은 출시 후 게시돼 아래 표에 반영했습니다(2026-10-23 기준)</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">🦶</span>
-  <div class="callout-body">
-    <p class="callout-title">한 줄 결론</p>
-    <p><strong>"얼마나 강하게 잡아줄까 vs 얼마나 부드러울까"의 대결입니다.</strong> 강한 교정과 가성비면 <a href="/shoes/brooks-adrenaline-gts-25">아드레날린 GTS 25</a>(189,000원), 부드러운 쿠션과 낮은 드롭이면 <a href="/shoes/asics-gel-kayano-33">카야노 33</a>(199,000원). 내 과내전이 심할수록 아드레날린, 안정화의 단단함이 싫었다면 카야노 33입니다.</p>
-  </div>
-</div>
-
-<h2>스펙 한눈 비교</h2>
-<div class="table-wrap">
-<table>
-  <thead><tr><th>항목</th><th>브룩스 아드레날린 GTS 25</th><th>아식스 젤 카야노 33</th></tr></thead>
-  <tbody>
-    <tr><td>안정화 방식</td><td><strong>GuideRails</strong>(측면 가드레일) + 미디얼 포스트</td><td><strong>FLUIDSUPPORT</strong>(부드러운 폼 지오메트리, 4D 폐지)</td></tr>
-    <tr><td>무게(US 9)</td><td>295g</td><td>298g</td></tr>
-    <tr><td>힐 / 전족 스택</td><td>36.1 / 25.9mm</td><td>36.8 / 28.3mm (공식 40 / 32mm)</td></tr>
-    <tr><td>드롭</td><td>10.2mm</td><td><strong>8.5mm</strong> (공식 8mm, 아킬레스 부담↓)</td></tr>
-    <tr><td>미드솔</td><td>DNA Loft v3(중간 경도, 랩 34.5 AC)</td><td><strong>FF BLAST MAX + PLUS 듀얼 폼</strong>(부드러움)</td></tr>
-    <tr><td>쿠션 성향</td><td>단단·탄탄</td><td><strong>푹신·부드러움</strong></td></tr>
-    <tr><td>내구성</td><td><strong>800km</strong>(안정화 최상위)</td><td>~650km(추정)</td></tr>
-    <tr><td>발볼 / 와이드</td><td>표준 / <strong>와이드 있음</strong>(힐 폭 95mm 넓음)</td><td>표준 / 와이드 있음</td></tr>
-    <tr><td>가격(한국)</td><td><strong>189,000원</strong>(km당 ~236원)</td><td>199,000원(km당 ~306원)</td></tr>
-  </tbody>
-</table>
-<p class="caption">※ 무게·스택·드롭은 두 신발 모두 RunRepeat 실측(남성 US 9) 기준이고, 카야노 33의 괄호는 아식스 공식 발표입니다. 카야노 33 실측은 출시(2026-06-01) 후 게시돼 2026-10-23에 반영했습니다(신발 DB 기준).</p>
-</div>
-
-<h2>가장 큰 차이 — 어떻게 "잡아주느냐"</h2>
-<p>두 신발의 핵심 차이는 <strong>과내전(오버프로네이션, 발이 안쪽으로 무너지는 것)을 잡는 방식</strong>입니다.</p>
-<p><strong>아드레날린 GTS 25</strong>는 <strong>GuideRails</strong>를 씁니다. 발 양옆에 가드레일 같은 구조를 둬서, <strong>발이 정상 범위를 벗어나 무너지려 할 때만 물리적으로 막아주는</strong> 방식이에요. 여기에 미디얼 포스트(안쪽 단단한 폼)까지 더해 안정성 점수가 9/10입니다. <strong>교정력이 확실하고 직관적</strong>이라, 과내전이 심하거나 안정화가 처음인 러너에게 믿음직합니다. 대신 DNA Loft v3는 랩 경도 34.5 AC로 랩 평균(35.4 AC)과 비슷한 <strong>중간 경도</strong>라 푹신함을 기대하면 아쉬울 수 있습니다.</p>
-<p><strong>카야노 33</strong>은 정반대 접근으로 갔습니다. 카야노 30부터 쓰던 <strong>4D Guidance System(단단한 폼으로 막는 방식)을 폐지하고</strong>, <strong>FLUIDSUPPORT</strong> — 부드러운 폼이 발 모양에 맞춰 변형되며 자연스럽게 감싸는 방식 — 으로 바꿨습니다. 게다가 카야노 최초로 <strong>FF BLAST MAX + PLUS 듀얼 폼</strong>을 얹어 "안정화라 쿠션이 단단하다"는 오랜 약점을 정조준했죠. 즉 <strong>부드럽고 쿠션 좋은 안정화</strong>입니다. 다만 강한 교정력에 익숙했던 심한 과내전 러너에겐 <strong>지지가 부족하게 느껴질 수 있고, 신기술이라 장기 검증 데이터가 아직 부족</strong>합니다.</p>
-
-<h2>쿠션·드롭·무게</h2>
-<p>쿠션은 <strong>생각보다 차이가 크지 않습니다</strong>. 카야노 33은 공식 스택이 40mm로 발표됐지만 RunRepeat 실측은 힐 36.8mm로, 아드레날린(36.1mm)과 사실상 같습니다. 쿠션 점수도 둘 다 8/10이죠. 다만 카야노는 FF BLAST MAX 덕에 <strong>착지 순간의 부드러움</strong>이, 아드레날린은 DNA Loft v3의 <strong>일관된 단단함</strong>이 특징이라 성격이 다릅니다.</p>
-<p><strong>드롭은 RunRepeat 실측으로 카야노가 8.5mm(공식 8mm), 아드레날린이 10.2mm</strong>입니다. 2mm가 채 안 되는 차이지만, 드롭이 낮은 카야노가 <strong>아킬레스건 부담이 약간 덜해</strong> 아킬레스 이력이 있는 러너에게 유리합니다(<a href="/blog/achilles-tendon-running-shoes-prevention-2026">아킬레스건염 가이드</a> 참고). 무게는 295g vs 298g으로 사실상 동일합니다.</p>
-
-<h2>내구성·가격 — 아드레날린의 영역</h2>
-<p>순수 가성비는 <strong>아드레날린이 앞섭니다.</strong> 가격이 <strong>189,000원으로 10,000원 저렴</strong>하고, 내구성이 <strong>800km로 안정화 카테고리 최상위</strong>라 km당 약 236원 — 매일 신어도 부담이 적습니다. 카야노 33은 199,000원에 내구 약 650km로 km당 약 306원입니다. 정가 차이는 1만원으로 크지 않지만, 내구성 차이 때문에 장기 비용에서 벌어집니다. <strong>"매일 신는 안정화 데일리 한 켤레"를 오래 쓰려면 아드레날린</strong>이 경제적입니다.</p>
-<div class="callout warning">
-  <span class="callout-icon">🆕</span>
-  <div class="callout-body">
-    <p class="callout-title">카야노 33은 신상 — 참고</p>
-    <p>카야노 33은 2026년 6월 1일 출시로, RunRepeat 정량 랩은 이후 게시됐지만(2026-10-23 기준 신발 DB) 장기 실사용 후기는 아직 부족합니다. FLUIDSUPPORT는 검증된 4D Guidance와 전혀 다른 신기술이라, <strong>심한 과내전 러너라면 매장 시착 후 결정</strong>을 권합니다. 반대로 익숙한 강한 교정을 원하면 세일 중인 <a href="/shoes/asics-gel-kayano-32">카야노 32</a>도 합리적 선택입니다.</p>
-  </div>
-</div>
-
-<h2>누가 뭘 골라야 하나</h2>
-<ul>
-  <li><strong>아드레날린 GTS 25</strong> — 과내전·평발이 <strong>심한 러너</strong>, 안정화가 처음이라 <strong>확실하고 강한 교정</strong>을 원하는 입문자, 예산을 아끼고 오래 신고 싶은 러너(189,000원·800km), 단단하고 탄탄한 착화감을 선호하는 러너</li>
-  <li><strong>카야노 33</strong> — 안정화의 <strong>단단함이 싫었던</strong> 중급 러너, 안정성과 <strong>푹신한 쿠션</strong>을 동시에 원하는 러너, 아킬레스 부담을 줄이려 <strong>낮은 드롭</strong>을 찾는 러너, 프리미엄·최신 기술을 선호하는 러너</li>
-  <li><strong>둘 다 애매하면</strong> — 내 과내전이 심할수록·예산이 빠듯할수록 아드레날린, 안정화의 단단함이 거슬렸을수록·쿠션을 원할수록 카야노입니다. 더 저렴한 안정화는 <a href="/shoes/new-balance-860-v15">860 v15</a>, 더 두툼한 맥스쿠션 안정화는 <a href="/shoes/hoka-gaviota-6">가비오타 6</a>도 후보예요</li>
-</ul>
-<p>과회내 제어는 <strong>후경골근건(아치 안쪽 힘줄)의 부하를 줄여</strong> 평발 러너의 흔한 힘줄 부상 예방에도 도움이 됩니다 — <a href="/blog/posterior-tibial-tendon-running-shoes-2026">후경골근건염 가이드</a>를 함께 보세요. 안정화를 처음 고른다면 <a href="/blog/stability-running-shoes-overpronation-flat-feet-2026">과내전·평발 안정화 종합 가이드</a>와 <a href="/best/stability">안정화 러닝화 추천</a>, 카야노만 더 깊이 보려면 <a href="/blog/asics-gel-kayano-33-review">카야노 33 심층 후기</a>가 있습니다.</p>
+<p><strong>2026-11-10 원문 대조 업데이트.</strong> 11월9~10일 확인한 정확 모델 자료를 바탕으로 공시·검체·개인 착화 의견을 나눴습니다. 자체 착화 후기는 아닙니다.</p><h2>선택에서 먼저 볼 차이</h2><p>두 모델의 지지 구조는 발을 얼마나 강하게 교정한다는 공통 척도로 비교할 수 없습니다. 실제 아치·중족 지지가 편한지, 힐 카운터가 닿는지를 먼저 볼 수 있습니다.</p><p>카야노 33도 리뷰어에 따라 지지 체감이 달랐습니다. GuideRails가 있거나 카야노라는 이름이라는 이유만으로 평발·부상 이력에 자동 배정하지 않습니다.</p><figure><img src="/images/shoes/brooks/adrenalinegts25/side.webp" alt="아드레날린 GTS25 제품 자료 이미지" loading="lazy"/><figcaption>아드레날린 GTS25 — 수치와 세대 조건은 본문 원문을 확인하세요.</figcaption></figure><div class="table-wrap"><table><thead><tr><th>모델</th><th>무게</th><th>힐/전족 스택 · 드롭</th><th>힐/전족 SA</th><th>힐/전족 리턴</th><th>내부 최광폭/엄지/높이</th></tr></thead><tbody><tr><td>아드레날린 GTS25</td><td>295g</td><td>36.1/25.9mm · 10.2mm</td><td>138/101</td><td>52.1/59.2%</td><td>96/72.8/26.6mm</td></tr><tr><td>카야노33</td><td>298g</td><td>36.8/28.3mm · 8.5mm</td><td>132/112</td><td>50/56.6%</td><td>95.9/72.4/28.6mm</td></tr></tbody></table></div><h2>숫자를 읽는 조건</h2><p>위 표는 RunRepeat의 정확 모델 검체 값입니다. 일반 정책은 남성 US9지만 개별 검체 라벨·폭·보정 여부는 미확인입니다. 제조사 공시와 리뷰어의 실제 착화 사이즈는 아래에서 구분합니다. 스택은 내부 길이 12%/75% 위치와 인솔을 포함하는 RR 방법에 따른 값입니다.</p><p>SA는 충격흡수 시험, 리턴은 시험에서 반환된 에너지 비율입니다. 폼이 더 부드럽다거나 무릎 통증·개인 기록이 개선된다는 뜻으로 바꾸지 않습니다. 최광폭·엄지·높이는 서로 다른 내부 치수로 한국 와이드 전체의 치수가 아닙니다. <a href="https://runrepeat.com/testing-methodology" target="_blank" rel="noopener noreferrer">RunRepeat 측정법</a></p><h2>한국 폭 표기를 확인하되 개인 핏으로 대체하지 않기</h2><p>아드레날린의 한국 남성 MEDIUM·2E·4E와 카야노 33의 남성 일반·2E·4E 등 확인 SKU를 구분했습니다. 해외 표준 검체의 내부 치수를 이 한국 와이드 상품에 그대로 대입하지 않습니다.</p><p>두 모델의 RR 엄지 부위는 72.8/72.4mm로 비슷해도 높이·중족·혀·카운터는 따로 봐야 합니다. 고정된 페이스·체중·아치 유형으로 하나를 지정하는 대신 실제 규격의 불편 위치를 기록해 비교하세요.</p><h2>아드레날린 GTS25의 구조·공시</h2><p>질소 주입 DNA LOFT v3 · GuideRails</p><p>판 구조나 지지 장치를 질환별 보호 등급으로 바꾸지 않습니다.</p><p>DOR 소개 남성 301g(US9)·여성 269g(US8),37/27mm·드롭 10mm. 실제 Matt 착화 US10과 표제 공시 조건을 구분.</p><h2>아드레날린 GTS25의 실제 착화에서 갈린 점</h2><p>DOR의 Matt은 US10에서 길이가 맞고 앞쪽이 좁아지는 보통 폭이라 평가했으며 따뜻한 어퍼·움직이는 혀·카운터 압박을 지적했습니다. 쉬운 러닝에 활용했으나 반응성은 낮게 느꼈습니다. GuideRails를 전통 미디얼 포스트로 확정하지 않습니다.</p><p>한국 남성 MEDIUM·2E·4E와 여성 MEDIUM 상품 확인. 여성 와이드의 정확SKU·재고는 미확인.</p><h2>아드레날린 GTS25의 한국 판매 확인 범위</h2><p>한국 공식 원문에서 남성 MEDIUM 1104541D033·WIDE 1104542E020·SUPER WIDE 1104544E020, 여성 MEDIUM 1204431B020 정가 189,000원 확인. 현재 할인·재고는 미확인.</p><h2>카야노33의 구조·공시</h2><p>FF BLAST MAX + FF BLAST PLUS 프레임 · FluidSupport · 힐 PureGEL</p><p>판 구조나 지지 장치를 질환별 보호 등급으로 바꾸지 않습니다.</p><p>DOR 소개 남성 298g(US9)·39/31mm·드롭 8mm. 한국 공식 측정 사이즈는 미확인.</p><h2>카야노33의 실제 착화에서 갈린 점</h2><p>DOR의 Matt은 US10에서 길이가 맞았으나 장거리의 아치 피로와 전작보다 적은 내측 중족부 지지를 지적했습니다. Bach은 새 프레임의 안정감을 더 높게 평가해 의견이 갈립니다. 개인 착화 의견이며 질환별 효과가 아닙니다.</p><p>한국 남성 2E·4E, 여성D 상품을 확인했습니다. 실험실 내부 치수를 이 폭의 치수로 대입하지 않습니다.</p><h2>카야노33의 한국 판매 확인 범위</h2><p>한국 남성 일반 1011C167.100·2E1011C227.001·4E1011C229.100, 여성D1012B992.001 정가 199,000원. 다른 색상·사이즈 재고는 별도 확인.</p><h2>매장에서 비교할 질문</h2><p>평소 양말·인솔로 앞쪽 길이와 발톱 위 높이, 끈을 조일 때 발등 압박, 걷고 돌 때 힐 고정과 칼라 마찰을 확인하세요. 앞볼이 넓다는 인상만으로 앞코 전체 높이나 중족 공간까지 맞는다고 가정하지 않습니다.</p><p>몇 분/km면 무조건 이 모델, 몇 km부터 통증이 줄어든다는 공통 경계는 이 자료에서 확인하지 못했습니다. 평발·부상 이력만으로 모델을 처방하거나 국소 마모를 공통 수명으로 환산하지 않았습니다.</p><h2>확인한 원문·상품 조건</h2><ul><li><a href="https://runrepeat.com/brooks-adrenaline-gts-25" target="_blank" rel="noopener noreferrer">아드레날린 GTS25 RR 정확 모델</a> — 실험실 검체·공시를 구분.</li><li><a href="https://www.doctorsofrunning.com/brooks-adrenaline-gts-25-review-2025/?m=0" target="_blank" rel="noopener noreferrer">아드레날린 GTS25 DOR 착화 원문</a> — 실제 리뷰어·규격의 개인 의견.</li><li><a href="https://brooksrunning.co.kr/product/detail.html?product_no=666" target="_blank" rel="noopener noreferrer">아드레날린 GTS25 한국 공식 확인 상품</a> — 본문 SKU·성별·확인 시점 조건. 현재 재고 보장 아님.</li><li><a href="https://brooksrunning.co.kr/product/%EB%82%A8%EC%84%B1-%EC%95%84%EB%93%9C%EB%A0%88%EB%82%A0%EB%A6%B0gts-25%EB%B8%94%EB%9E%99wide/669/" target="_blank" rel="noopener noreferrer">아드레날린 GTS25 한국 공식 확인 상품</a> — 본문 SKU·성별·확인 시점 조건. 현재 재고 보장 아님.</li><li><a href="https://brooksrunning.co.kr/product/%EB%82%A8%EC%84%B1-%EC%95%84%EB%93%9C%EB%A0%88%EB%82%A0%EB%A6%B0gts-25%EB%B8%94%EB%9E%99super-wide/672/category/130/display/1/" target="_blank" rel="noopener noreferrer">아드레날린 GTS25 한국 공식 확인 상품</a> — 본문 SKU·성별·확인 시점 조건. 현재 재고 보장 아님.</li><li><a href="https://brooksrunning.co.kr/product/detail.html?product_no=673" target="_blank" rel="noopener noreferrer">아드레날린 GTS25 한국 공식 확인 상품</a> — 본문 SKU·성별·확인 시점 조건. 현재 재고 보장 아님.</li><li><a href="https://www.brooksrunning.co.kr/product/black-friday-%EC%97%AC%EC%84%B1-%EC%95%84%EB%93%9C%EB%A0%88%EB%82%A0%EB%A6%B0gts-25%EA%B7%B8%EB%A6%AC%EB%93%9Cwide/685/" target="_blank" rel="noopener noreferrer">아드레날린 GTS25 한국 공식 확인 상품</a> — 본문 SKU·성별·확인 시점 조건. 현재 재고 보장 아님.</li><li><a href="https://runrepeat.com/asics-gel-kayano-33" target="_blank" rel="noopener noreferrer">카야노33 RR 정확 모델</a> — 실험실 검체·공시를 구분.</li><li><a href="https://www.doctorsofrunning.com/asics-gel-kayano-33-review-2026/" target="_blank" rel="noopener noreferrer">카야노33 DOR 착화 원문</a> — 실제 리뷰어·규격의 개인 의견.</li><li><a href="https://asics.co.kr/p/AKR_112630101-100" target="_blank" rel="noopener noreferrer">카야노33 한국 공식 확인 상품</a> — 본문 SKU·성별·확인 시점 조건. 현재 재고 보장 아님.</li><li><a href="https://asics.co.kr/p/AKR_112630102-001" target="_blank" rel="noopener noreferrer">카야노33 한국 공식 확인 상품</a> — 본문 SKU·성별·확인 시점 조건. 현재 재고 보장 아님.</li><li><a href="https://asics.co.kr/p/AKR_112630103-100" target="_blank" rel="noopener noreferrer">카야노33 한국 공식 확인 상품</a> — 본문 SKU·성별·확인 시점 조건. 현재 재고 보장 아님.</li><li><a href="https://asics.co.kr/p/AKR_112630105-001" target="_blank" rel="noopener noreferrer">카야노33 한국 공식 확인 상품</a> — 본문 SKU·성별·확인 시점 조건. 현재 재고 보장 아님.</li></ul>
 `,
     faqs: [
       {
-        question: '과내전(평발)이 심한데 아드레날린과 카야노 33 중 뭐가 나을까요?',
-        answer: '과내전이 심하다면 아드레날린 GTS 25가 더 안전합니다. GuideRails + 미디얼 포스트로 발이 무너지는 것을 물리적으로 강하게 막아주고, 아드레날린 GTS 자체가 20년 넘게 이어진 브룩스의 대표 안정화 라인입니다(Brooks 공식 블로그). 카야노 33은 강한 4D Guidance를 폐지하고 부드러운 FLUIDSUPPORT로 바꿔 "부드러운 안정성"을 택했는데, 심한 과내전에는 교정력이 부족하게 느껴질 수 있고 신기술이라 장기 검증 데이터도 아직 적습니다. 심한 과내전이라면 아드레날린을, 경도~중등도 과내전에 쿠션을 원하면 카야노를 권합니다.',
+        "question": "평발이면 어느 쪽인가요?",
+        "answer": "발 모양 하나로 지정할 임상 근거는 확인하지 못했습니다. 지지 구조가 실제로 편한지 비교할 수 있습니다."
       },
       {
-        question: '안정화인데 쿠션이 푹신한 걸 원해요. 뭐가 나을까요?',
-        answer: '착지 순간의 부드러움은 카야노 33이 앞섭니다. FF BLAST MAX 듀얼 폼이라 발을 딛는 느낌이 더 무르죠. 다만 랩 실측을 보면 격차가 크지 않습니다 — 힐 스택은 카야노 36.8mm 대 아드레날린 36.1mm로 사실상 동일하고, 쿠션 점수도 둘 다 8/10입니다. 카야노 33은 페이스를 올리면 미드솔이 빠르게 눌려 단단해지는 성향이라, 이지런·워킹 위주면 카야노 33, 일관된 지지감과 템포까지 아우르려면 아드레날린을 고르세요.',
-      },
-      {
-        question: '가격과 내구성만 보면 뭐가 이득인가요?',
-        answer: '아드레날린 GTS 25가 이득입니다. 189,000원으로 카야노 33(199,000원)보다 10,000원 저렴하고, 내구성이 800km로 안정화 카테고리 최상위입니다(카야노 약 650km). km당 비용으로 환산하면 아드레날린 약 236원, 카야노 약 306원 — 정가 차이보다 내구성 차이가 장기 비용을 가릅니다. 매일 신는 데일리 안정화를 오래 경제적으로 쓰려면 아드레날린이 유리합니다.',
-      },
-      {
-        question: '카야노 33이 신상인데 지금 사도 되나요, 카야노 32를 살까요?',
-        answer: '취향에 따라 다릅니다. 카야노 33은 FLUIDSUPPORT라는 완전히 새로운 안정화 방식이라 부드러운 쿠션·낮은 드롭(8mm)이 장점입니다. 다만 이후 게시된 RunRepeat 랩에서 에너지 리턴은 힐 50.0%·전족 56.6%로 안정화 평균 수준이었고(2026-10-23 기준), 장기 후기는 아직 부족합니다. 강하고 검증된 교정을 원한다면 4D Guidance를 쓰는 카야노 32가 출시 후 재고 세일(30~40%)로 저렴하게 나올 수 있어 합리적입니다. 부드러운 최신 안정화를 원하면 33, 검증된 강한 교정을 저렴하게 원하면 32 세일을 노리세요.',
-      },
+        "question": "GuideRails가 더 강한 교정인가요?",
+        "answer": "서로 다른 구조를 공통 교정 강도로 정량 비교한 자료를 확보하지 못했습니다."
+      }
     ],
+    updatedAt: "2026-11-10",
   },
   {
     id: 'hierro-v9-vs-speedgoat-6-trail-2026',
@@ -3689,95 +3626,35 @@ export const posts_2026_07: BlogPost[] = [
 `,
   },
   {
-    id: 'pegasus-42-vs-nimbus-28-daily-cushion-2026',
-    slug: 'pegasus-42-vs-nimbus-28-daily-cushion-2026',
-    title: '페가수스 42 vs 젤 님버스 28 | 16만 입문 가성비 vs 20만 맥스쿠션 — 데일리 뭘 살까',
-    description: '한국에서 가장 많이 찾는 데일리 러닝화 두 켤레를 정면 비교했습니다. 나이키 페가수스 42(16.9만·풀렝스 Air Zoom·입문 올라운더)와 아식스 젤 님버스 28(19.9만·힐 39.5mm 맥시멀 쿠션·무릎 보호 최강). 3만원 차이지만 입문 가성비냐, 맥스쿠션·장거리·무릎 보호냐로 갈립니다. 무릎·발볼·거리·체중별로 내게 맞는 한 켤레를 한국 러너 기준으로 골라드립니다.',
-    thumbnail: '/images/blog/pegasus-42-vs-nimbus-28-daily-cushion-2026.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-07-03',
-    category: 'review' as const,
+    id: "pegasus-42-vs-nimbus-28-daily-cushion-2026",
+    slug: "pegasus-42-vs-nimbus-28-daily-cushion-2026",
+    title: "페가수스42 vs 님버스28 — Air Zoom·고스택보다 먼저 볼 드롭·앞코 높이",
+    description: "페가수스42 RR14mm와 님버스28 결과표8.1mm를 공시와 구분합니다. 독립 시험·앞코 높이·한국 상품 조건으로 비교했습니다.",
+    thumbnail: "/images/shoes/nike/pegasus42/side.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-07-03",
+    category: "review",
     readingTime: 8,
-    tags: ['페가수스 42', '젤 님버스 28', '데일리 러닝화', '맥스쿠션', '입문 러닝화', '무릎 보호'],
+    tags: [
+      "페가수스42",
+      "젤 님버스28",
+      "핏",
+      "원문 대조"
+    ],
     content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>3만원 차이지만 성격이 다릅니다</strong> — 페가수스 42는 16만원대 입문 올라운더, 젤 님버스 28은 19만원대 맥시멀 쿠션(힐 39.5mm 고스택)입니다</li>
-    <li><strong>가성비·입문 첫 데일리 → 페가수스 42</strong>(Air Zoom 반발·5~13km), <strong>무릎 보호·장거리·리커버리 → 님버스 28</strong>(맥스쿠션·부상예방 전 항목 최상)</li>
-    <li>발볼 매우 넓음이면 둘 다 와이드가 있지만 <strong>님버스는 X-와이드까지</strong>, 무릎이 약하거나 체중이 있으면 님버스의 힐 39.5mm 쿠션이 유리합니다</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">👟</span>
-  <div class="callout-body">
-    <p class="callout-title">한 줄 결론</p>
-    <p>"첫 데일리, 무난하고 가성비 좋게"면 <strong>페가수스 42</strong>(16.9만·입문 올라운더), "무릎이 걱정되거나 장거리·리커버리를 푹신하게"면 <strong>젤 님버스 28</strong>(19.9만·힐 39.5mm 맥스쿠션)입니다. 페가42의 데이터 상세 평가는 <a href="/blog/nike-pegasus-42-review">페가수스 42 심층 후기</a>에, 노바블라스트와의 비교는 <a href="/blog/novablast-5-vs-pegasus-41-daily-cushion-2026">노바블라스트 5 vs 페가수스 41</a>에 정리했습니다.</p>
-  </div>
-</div>
-
-<h2>두 켤레 한눈에 보기</h2>
-<table>
-  <thead><tr><th>항목</th><th>페가수스 42</th><th>젤 님버스 28</th></tr></thead>
-  <tbody>
-    <tr><td>브랜드 / 카테고리</td><td>나이키 / 입문</td><td>아식스 / 맥스쿠션</td></tr>
-    <tr><td><strong>한국 가격</strong></td><td><strong>169,000원</strong></td><td>199,000원</td></tr>
-    <tr><td>무게(US 9)</td><td>286g</td><td>278g</td></tr>
-    <tr><td><strong>힐 스택</strong></td><td>37mm</td><td><strong>39.5mm(맥시멀)</strong></td></tr>
-    <tr><td>드롭</td><td>10mm</td><td>8mm</td></tr>
-    <tr><td>미드솔</td><td>ReactX + 풀렝스 Air Zoom</td><td>FF BLAST PLUS</td></tr>
-    <tr><td>쿠션 / 반발</td><td>중상 / Air Zoom 반발</td><td><strong>최상(10) / 둔함</strong></td></tr>
-    <tr><td><strong>무릎 보호</strong></td><td>양호</td><td><strong>최상(전 부상항목 excellent)</strong></td></tr>
-    <tr><td>발볼 옵션</td><td>표준 + 와이드</td><td><strong>표준 + 와이드 + X-와이드</strong></td></tr>
-    <tr><td>내구성 / km당</td><td>600km / 282원</td><td>650km / 306원</td></tr>
-    <tr><td>대표 용도</td><td>입문 데일리 5~13km</td><td>장거리·리커버리·무릎 보호</td></tr>
-  </tbody>
-</table>
-<p><small>※ 무게·스택은 RunRepeat 실측 및 공식 기준. 페가수스 42는 공식/실측 전족부 5mm 불일치가 있어 상세는 <a href="/blog/nike-pegasus-42-review">페가 42 후기</a> 참고.</small></p>
-
-<h2>페가수스 42 — 16만원대 입문 데일리 올라운더</h2>
-<p><a href="/shoes/nike-pegasus-42">나이키 페가수스 42</a>는 "첫 러닝화, 무난하게"에 가장 자주 추천되는 입문 데일리입니다. <strong>ReactX 폼 + 풀렝스 Air Zoom</strong>으로 41 대비 힐 쿠셔닝(+2.4mm)과 반발이 개선됐고, 169,000원에 <strong>한국 와이드 옵션이 정식 출시</strong>돼 발볼 넓은 러너도 대응됩니다. 5~13km 데일리에서 반발감 있는 라이드가 강점이죠.</p>
-<p>단, BITR이 "6~13km 스윗스팟의 원 트릭 포니"로 평했듯 <strong>하프 이상 롱런·페이스 훈련엔 286g 무게가 부담</strong>입니다. 무릎 보호는 '양호'로, 님버스만큼 두꺼운 쿠션은 아닙니다. "가성비 좋은 만능 데일리 한 켤레"를 원할 때 가장 실패 없는 선택입니다.</p>
-<p><strong>✅ 이런 분께</strong> — 첫 데일리·가성비 우선 / 5~13km 조깅~템포 / 반발감 있는 라이드 / 예산 16만원대</p>
-
-<h2>젤 님버스 28 — 힐 39.5mm 맥스쿠션, 무릎 보호 최강</h2>
-<p><a href="/shoes/asics-gel-nimbus-28">아식스 젤 님버스 28</a>은 "매주 많이 뛰는데 무릎이 아프다"는 러너에게 먼저 권하는 맥시멀 쿠션화입니다. <strong>힐 39.5mm(실측) 고스택 + FF BLAST PLUS 폼</strong>이 아스팔트 충격을 강하게 흡수해, <strong>부상 예방 등급이 무릎 포함 전 항목 최상(excellent)</strong>입니다. 전작보다 가벼워진 278g(실측)에 <strong>X-와이드까지</strong> 있어 발볼 넓은 러너 선택지도 가장 넓고, 650km 내구성으로 장거리·리커버리·워킹까지 폭넓게 씁니다.</p>
-<p>대신 <strong>반응성이 낮아(5) 빠른 페이스엔 둔하고</strong>, 20만원으로 페가42보다 3만원 비쌉니다. 안정화는 아니라 과내전이 심하면 <a href="/shoes/asics-gel-kayano-33">카야노 33</a>이 낫습니다. "속도보다 푹신함·무릎 보호·장거리"가 목적일 때 빛납니다.</p>
-<p><strong>✅ 이런 분께</strong> — 무릎이 약하거나 체중이 있는 러너 / 장거리 LSD·리커버리 / 맥스쿠션 선호 / 발볼 매우 넓음(X-와이드)</p>
-
-<h2>내게 맞는 건?</h2>
-<ul>
-  <li><strong>"첫 데일리, 가성비 좋게 한 켤레"</strong> → <a href="/shoes/nike-pegasus-42">페가수스 42</a>. 16.9만원에 만능, 반발감도 있습니다.</li>
-  <li><strong>"무릎이 약하다 / 체중이 있다"</strong> → <a href="/shoes/asics-gel-nimbus-28">님버스 28</a>. 힐 39.5mm 맥스쿠션 + 무릎 보호 최상이 안심입니다. 무릎 통증 관리는 <a href="/blog/knee-pain-running-shoes">러너 무릎 통증 가이드</a>도 참고하세요.</li>
-  <li><strong>"장거리 LSD·리커버리 위주"</strong> → 님버스 28. 페가42는 5~13km 스윗스팟이라 하프 이상엔 부담입니다.</li>
-  <li><strong>"발볼이 매우 넓다"</strong> → 둘 다 와이드가 있지만 님버스가 X-와이드까지 있어 폭이 넓습니다. <a href="/blog/wide-feet-running-shoes-korea">발볼 가이드</a> 참고.</li>
-  <li><strong>"반발감 있게 경쾌하게"</strong> → 페가수스 42(Air Zoom). 님버스는 푹신하지만 둔한 편입니다.</li>
-</ul>
-<p>러닝이 처음이라면 <a href="/blog/first-running-shoe-guide-2026">첫 러닝화 가이드</a>부터 보면 선택이 쉬워집니다.</p>
-
-<h2>자주 묻는 질문</h2>
-<div class="faq">
-  <div class="faq-item">
-    <p class="faq-q">Q. 무릎이 안 좋은데 둘 중 뭐가 나을까요?</p>
-    <p class="faq-a">A. <strong>님버스 28</strong>입니다. 힐 39.5mm 맥시멀 쿠션에 부상 예방 등급이 무릎 포함 전 항목 최상(excellent)이라 충격 흡수가 확실합니다. 페가42도 나쁘지 않지만(양호), 무릎이 걱정된다면 더 두꺼운 님버스가 안심입니다.</p>
-  </div>
-  <div class="faq-item">
-    <p class="faq-q">Q. 3만원 더 주고 님버스를 살 가치가 있나요?</p>
-    <p class="faq-a">A. <strong>용도에 따라 다릅니다.</strong> 5~13km 가벼운 데일리면 페가42로 충분하고, 무릎 보호·장거리·리커버리가 중요하면 님버스의 맥스쿠션이 3만원 값을 합니다. 반발감·경쾌함을 원하면 오히려 페가42가 낫고요.</p>
-  </div>
-  <div class="faq-item">
-    <p class="faq-q">Q. 발볼이 넓은데 둘 다 괜찮나요?</p>
-    <p class="faq-a">A. 둘 다 와이드가 있어 대응됩니다. 특히 <strong>님버스 28은 X-와이드까지</strong> 있어 발볼이 매우 넓은 러너에게 유리합니다. 페가42도 한국 와이드가 정식 출시돼 4E급까지 커버됩니다.</p>
-  </div>
-  <div class="faq-item">
-    <p class="faq-q">Q. 둘 다 하프마라톤 뛸 수 있나요?</p>
-    <p class="faq-a">A. 완주는 가능하지만, <strong>페가42는 5~13km 스윗스팟</strong>이라 하프 이상엔 무게가 부담됩니다. 님버스 28은 맥스쿠션이라 장거리 완주에는 더 유리하지만 둘 다 레이싱화는 아닙니다. PB가 목표면 카본 레이서를 따로 두세요.</p>
-  </div>
-</div>
-
-<p><small>출처: 페가수스 42·젤 님버스 28 상세 페이지 스펙 및 RunRepeat 실측·에디터 분석 종합 · 한국 공식가 기준 · 작성 2026년 7월 3일.</small></p>
+<p><strong>2026-11-10 원문 대조 업데이트.</strong> 11월9~10일 확인한 정확 모델 자료를 바탕으로 공시·검체·개인 착화 의견을 나눴습니다. 자체 착화 후기는 아닙니다.</p><h2>선택에서 먼저 볼 차이</h2><p>페가수스 42는 ReactX·전장 Air Zoom, 님버스 28은 FF BLAST PLUS·힐 PureGEL을 확인한 모델입니다. 에어·젤이라는 재료 이름만으로 더 편한 신발이나 무릎 보호 순위를 정하지 않습니다.</p><p>해당 검체에서 님버스의 앞코 높이는 22.7mm, 페가수스 42는 27.0mm였습니다. 쿠션 높이뿐 아니라 발톱 위 공간과 끈 압박도 구매 전에 볼 차이입니다.</p><figure><img src="/images/shoes/nike/pegasus42/side.webp" alt="페가수스42 제품 자료 이미지" loading="lazy"/><figcaption>페가수스42 — 수치와 세대 조건은 본문 원문을 확인하세요.</figcaption></figure><div class="table-wrap"><table><thead><tr><th>모델</th><th>무게</th><th>힐/전족 스택 · 드롭</th><th>힐/전족 SA</th><th>힐/전족 리턴</th><th>내부 최광폭/엄지/높이</th></tr></thead><tbody><tr><td>페가수스42</td><td>286g</td><td>36/22mm · 14mm</td><td>131/91</td><td>57.1/61.2%</td><td>96.5/72.3/27mm</td></tr><tr><td>젤 님버스28</td><td>278g</td><td>43/34.9mm · 8.1mm</td><td>137/133</td><td>44.2/45.9%</td><td>97.6/72.5/22.7mm</td></tr></tbody></table></div><h2>숫자를 읽는 조건</h2><p>위 표는 RunRepeat의 정확 모델 검체 값입니다. 일반 정책은 남성 US9지만 개별 검체 라벨·폭·보정 여부는 미확인입니다. 제조사 공시와 리뷰어의 실제 착화 사이즈는 아래에서 구분합니다. 스택은 내부 길이 12%/75% 위치와 인솔을 포함하는 RR 방법에 따른 값입니다.</p><p>SA는 충격흡수 시험, 리턴은 시험에서 반환된 에너지 비율입니다. 폼이 더 부드럽다거나 무릎 통증·개인 기록이 개선된다는 뜻으로 바꾸지 않습니다. 최광폭·엄지·높이는 서로 다른 내부 치수로 한국 와이드 전체의 치수가 아닙니다. <a href="https://runrepeat.com/testing-methodology" target="_blank" rel="noopener noreferrer">RunRepeat 측정법</a></p><h2>드롭 수치와 개인의 느끼는 드롭은 구분</h2><p>페가수스 42 RR14mm는 공시 10mm와 다르고, 님버스 28도 결과표 43.0/34.9mm와 전족 본문 34.3mm가 다릅니다. 출처별 수치를 함께 남겼으며 실제 주행 중 드롭이나 종아리 통증을 계산하지 않았습니다.</p><p>페가수스 42 DOR 정확 개별 착화 원문은 이번 범위에서 확인하지 못했습니다. Plus2 의견을 대입하지 않았습니다. 님버스의 Matt US10 의견도 모든 러너의 경험으로 일반화하지 않습니다.</p><h2>페가수스42의 구조·공시</h2><p>ReactX · 전장 곡선 Air Zoom · 비플레이트</p><p>플레이트 없음. 전장 Air Zoom을 카본 플레이트로 해석하지 않습니다.</p><p>한국 공시남성약 300g(280mm)·여성 243g(250mm),드롭 10mm입니다. RR브랜드 37/27mm·10mm·297/243g(기준사이즈미확인),RR286g·36/22mm·14mm를 구분합니다. 실제검체라벨·보정적용 여부는 미확인입니다.</p><h2>페가수스42의 실제 착화에서 갈린 점</h2><p>정확한 페가수스 42의 DOR 개별 착화 리뷰는 이번 검색에서 확인하지 못했습니다. Plus2의 비교문구를 42의 착화 경험으로 채우지 않았습니다. 기존 5~13km상한·하프이상비추천·주 100km금지와 임상보호등급은 확인한원문에서 공통기준으로 입증되지 않아 철회했습니다.</p><p>RR 내부최광폭 96.5mm·엄지 72.3mm·높이 27.0mm는 한국와이드 검체라고 확인되지 않았습니다. 과거와이드상품을 모든 4E발의 안전보장으로 쓰지 않습니다.</p><h2>페가수스42에서 함께 남긴 한계</h2><p>제조사의 41대비 에너지리턴최소 15%개선 주장은 비교시험조건 미확인입니다. RR힐 57.1/전족 61.2%와 측정조건이 다르므로 제조사주장이 입증·반박됐다고 단정하지 않습니다. SA를부드러움·무릎보호로,국소마모 0.8mm를 600km수명으로 바꾸지 않습니다. 일반US9무게정책에는 드문US8/8.5의US9환산예외가 있어 실제라벨 미확인을 남깁니다.</p><h2>페가수스42의 한국 판매 확인 범위</h2><p>한국 공식 캐시에는 남성IB1873-003·IM8332-100,여성IB1881-007,남성와이드IR1228-001·여성와이드IH1847-100 정가 169,000원이 표시됐습니다. 자료는지난주~지난달 캐시여서 현재가격·판매규격·재고는 미확인입니다. 와이드의 2E/4E문자와 실제폭증가는 미확인이고 둘레 6.35mm설명을 내부너비 증가로 옮기지 않습니다.</p><h2>젤 님버스28의 구조·공시</h2><p>FF BLAST PLUS + 힐 PureGEL</p><p>판 구조나 지지 장치를 질환별 보호 등급으로 바꾸지 않습니다.</p><p>한국 남성 상품표 281g(측정 사이즈 미공시). DOR 소개 남성 280g(US9)·43.5/35.5mm·드롭 8mm. RR 브랜드칸 283g과도 구분.</p><h2>젤 님버스28의 실제 착화에서 갈린 점</h2><p>DOR의 Matt은 US10에서 넓이 여유를 느꼈으나 얇은 혀의 끈 압박, 전작보다 단단하고 뻣뻣한 주행감을 지적했습니다. 체감 드롭과 종아리 불편은 개인 경험이며 실측 드롭이나 모델의 부상 효과로 쓰지 않습니다.</p><p>한국 남성 일반·2E, 여성 일반·D 상품을 확인했습니다. 4E는 공식 카테고리의 서로 다른 응답이 충돌해 현재SKU·재고 미확인입니다. RR 엄지 높이는 22.7mm로 발가락 위 압박도 확인하세요.</p><h2>젤 님버스28에서 함께 남긴 한계</h2><p>RunRepeat 결과표는 43.0/34.9mm·드롭 8.1mm이나 전족부 본문에는 34.3mm도 남아 있습니다. 표와 본문의 충돌을 공개하고 결과표 기준을 구분합니다.</p><h2>젤 님버스28의 한국 판매 확인 범위</h2><p>한국 기본형 남성 일반 1011C127.102·2E1011C144.404, 여성 일반 1012B899.403·D1012B917.251 정가 199,000원. Platinum 등 변형은 가격 비교에서 제외.</p><h2>매장에서 비교할 질문</h2><p>평소 양말·인솔로 앞쪽 길이와 발톱 위 높이, 끈을 조일 때 발등 압박, 걷고 돌 때 힐 고정과 칼라 마찰을 확인하세요. 앞볼이 넓다는 인상만으로 앞코 전체 높이나 중족 공간까지 맞는다고 가정하지 않습니다.</p><p>몇 분/km면 무조건 이 모델, 몇 km부터 통증이 줄어든다는 공통 경계는 이 자료에서 확인하지 못했습니다. 평발·부상 이력만으로 모델을 처방하거나 국소 마모를 공통 수명으로 환산하지 않았습니다.</p><h2>확인한 원문·상품 조건</h2><ul><li><a href="https://runrepeat.com/nike-pegasus-42" target="_blank" rel="noopener noreferrer">페가수스42 RR 정확 모델</a> — 실험실 검체·공시를 구분.</li><li><a href="https://www.nike.com/kr/t/%EB%82%98%EC%9D%B4%ED%82%A4-%ED%8E%98%EA%B0%80%EC%88%98%EC%8A%A4-42-%EB%82%A8%EC%84%B1-%EB%A1%9C%EB%93%9C-%EB%9F%AC%EB%8B%9D%ED%99%94-XuHjeH83" target="_blank" rel="noopener noreferrer">한국 공식 캐시 IB1873-003 · 남성</a> — 과거표시정가169,000원. 캐시목록은 현재옵션·재고보장 아님.</li><li><a href="https://www.nike.com/kr/t/%EB%82%98%EC%9D%B4%ED%82%A4-%ED%8E%98%EA%B0%80%EC%88%98%EC%8A%A4-42-%EB%82%A8%EC%84%B1-%EB%A1%9C%EB%93%9C-%EB%9F%AC%EB%8B%9D%ED%99%94-hzTwdMlw/IM8332-100" target="_blank" rel="noopener noreferrer">한국 공식 캐시 IM8332-100 · 남성</a> — 과거표시정가169,000원. 캐시목록은 현재옵션·재고보장 아님.</li><li><a href="https://www.nike.com/kr/t/%EB%82%98%EC%9D%B4%ED%82%A4-%ED%8E%98%EA%B0%80%EC%88%98%EC%8A%A4-42-%EC%97%AC%EC%84%B1-%EB%A1%9C%EB%93%9C-%EB%9F%AC%EB%8B%9D%ED%99%94-wsTF7yIV/IB1881-007" target="_blank" rel="noopener noreferrer">한국 공식 캐시 IB1881-007 · 여성</a> — 과거표시정가169,000원. 캐시목록은 현재옵션·재고보장 아님.</li><li><a href="https://www.nike.com/kr/t/%ED%8E%98%EA%B0%80%EC%88%98%EC%8A%A4-42-%EB%82%A8%EC%84%B1-%EB%A1%9C%EB%93%9C-%EB%9F%AC%EB%8B%9D%ED%99%94-hzTwdMlw/IR1228-001" target="_blank" rel="noopener noreferrer">한국 공식 캐시 IR1228-001 · 와이드</a> — 과거표시정가169,000원. 캐시목록은 현재옵션·재고보장 아님.</li><li><a href="https://www.nike.com/kr/t/%EB%82%98%EC%9D%B4%ED%82%A4-%ED%8E%98%EA%B0%80%EC%88%98%EC%8A%A4-42-%EC%97%AC%EC%84%B1-%EB%A1%9C%EB%93%9C-%EB%9F%AC%EB%8B%9D%ED%99%94%EC%99%80%EC%9D%B4%EB%93%9C-wsTF7yIV/IH1847-100" target="_blank" rel="noopener noreferrer">한국 공식 캐시 IH1847-100 · 와이드</a> — 과거표시정가169,000원. 캐시목록은 현재옵션·재고보장 아님.</li><li><a href="https://www.nike.com/kr/a/pegasus-42-release-date/" target="_blank" rel="noopener noreferrer">Nike 공식15% 개선 주장</a> — 제조사자체주장. 비교시험조건 미확인으로 RR절대리턴과 직접비교하지 않음.</li><li><a href="https://runrepeat.com/asics-gel-nimbus-28" target="_blank" rel="noopener noreferrer">젤 님버스28 RR 정확 모델</a> — 실험실 검체·공시를 구분.</li><li><a href="https://www.doctorsofrunning.com/asics-gel-nimbus-28-review-2026/" target="_blank" rel="noopener noreferrer">젤 님버스28 DOR 착화 원문</a> — 실제 리뷰어·규격의 개인 의견.</li><li><a href="https://www.asics.co.kr/p/AKR_112630225-102" target="_blank" rel="noopener noreferrer">젤 님버스28 한국 공식 확인 상품</a> — 본문 SKU·성별·확인 시점 조건. 현재 재고 보장 아님.</li><li><a href="https://www.asics.co.kr/p/AKR_112630226-404" target="_blank" rel="noopener noreferrer">젤 님버스28 한국 공식 확인 상품</a> — 본문 SKU·성별·확인 시점 조건. 현재 재고 보장 아님.</li><li><a href="https://www.asics.co.kr/p/AKR_112630228-403" target="_blank" rel="noopener noreferrer">젤 님버스28 한국 공식 확인 상품</a> — 본문 SKU·성별·확인 시점 조건. 현재 재고 보장 아님.</li><li><a href="https://www.asics.co.kr/p/AKR_112630229-251" target="_blank" rel="noopener noreferrer">젤 님버스28 한국 공식 확인 상품</a> — 본문 SKU·성별·확인 시점 조건. 현재 재고 보장 아님.</li><li><a href="https://www.asics.co.kr/c/gel_nimbus" target="_blank" rel="noopener noreferrer">젤 님버스28 한국 공식 확인 상품</a> — 본문 SKU·성별·확인 시점 조건. 현재 재고 보장 아님.</li></ul>
 `,
+    updatedAt: "2026-11-10",
+    faqs: [
+      {
+        "question": "님버스가 무릎에 더 좋은가요?",
+        "answer": "쿠션 수치나 PureGEL 이름만으로 모델별 임상 보호를 보장하지 않습니다."
+      },
+      {
+        "question": "페가수스42 드롭이14mm인가요?",
+        "answer": "RR 검체의 정적 차이입니다. 한국 공시10mm와 측정 조건을 구분합니다."
+      }
+    ],
   },
   {
     id: "novablast-5-vs-pegasus-41-daily-cushion-2026",

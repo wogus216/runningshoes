@@ -5326,240 +5326,35 @@ export const posts_2026_06: BlogPost[] = [
 `,
   },
   {
-    id: 'adidas-supernova-rise-2-vs-3-comparison',
-    slug: 'adidas-supernova-rise-2-vs-3-comparison',
-    title: '아디다스 슈퍼노바 라이즈 2 vs 슈퍼노바 라이즈 3 비교 | "입문화"가 "쿠션화"로 — 랩 실측 스택 +1.5mm·앞발 +3.2mm·토박스 3.2mm 좁아진 변화 총정리',
-    description: '슈퍼노바 라이즈 2(159,000원·입문화)와 라이즈 3(159,000원·쿠션화)의 차이를 데이터로 비교. 랩 실측 힐 스택 33.5→35.0mm, 앞발 24.0→27.2mm, 드롭 10→8mm, Dreamstrike+ 20% 업그레이드, 토박스 77.7→74.5mm까지. 발볼·평발·무릎·세일 타이밍별 한국 러너 구매 매트릭스.',
-    thumbnail: '/images/shoes/adidas/supernovarise3/main.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-06-10',
-    category: 'review' as const,
-    readingTime: 12,
-    tags: ['아디다스', '슈퍼노바 라이즈', '슈퍼노바 라이즈 2', '슈퍼노바 라이즈 3', '데일리 트레이너', '쿠션화', '입문화', 'Dreamstrike+', '세대 비교', '장거리 쿠션화'],
+    id: "adidas-supernova-rise-2-vs-3-comparison",
+    slug: "adidas-supernova-rise-2-vs-3-comparison",
+    title: "슈퍼노바 라이즈2 vs3 — 높이·앞코·고정, 세대 숫자보다 볼 차이",
+    description: "RR 검체의 무게·스택·내부 치수와 DOR의 낮은 볼륨·혀·전환 경험을 비교합니다. 젖은 콘크리트 접지를 모든 노면 안전으로 바꾸지 않았습니다.",
+    thumbnail: "/images/shoes/adidas/supernovarise2.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-06-10",
+    category: "review",
+    readingTime: 8,
+    tags: [
+      "슈퍼노바 라이즈2",
+      "슈퍼노바 라이즈3",
+      "핏",
+      "원문 대조"
+    ],
     content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>"입문화"가 "쿠션화"로 승급</strong> — 라이즈 3는 랩 실측 힐 스택 33.5→35.0mm, 포어풋 24.0→27.2mm로 키우고 Dreamstrike+ 폼을 20% 더 부드럽게 바꿔, 입문 데일리에서 본격 장거리 쿠션화로 성격이 바뀌었습니다.</li>
-    <li>핵심 트레이드오프: <strong>드롭 10→8mm·무게 257→264g(+7g)</strong>. 더 두툼해진 대신 힐스트라이커 입문자 친화도와 경쾌함은 살짝 양보했죠.</li>
-    <li>한국 러너에게 가장 큰 변수는 <strong>토박스</strong>. 랩 실측이 77.7mm에서 74.5mm로 3.2mm 좁아졌지만 같은 랩 평균(73.2mm)보다는 넓고, 라이즈 3도 한국 공식몰에서 와이드가 판매됩니다(2026-09-29 확인).</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">🧭</span>
-  <div class="callout-body">
-    <p class="callout-title">이 글은 "라이즈 2 살까, 3로 갈까"를 정리하는 데일리 트레이너 세대 비교입니다</p>
-    <p>"슈퍼노바 라이즈 3 후기", "라이즈 2 vs 3 차이"를 찾는 분이 많아 두 세대를 한 줄에 세웠습니다. 결론부터 말하면 <strong>같은 이름이지만 카테고리가 달라진 신발</strong>이에요. 라이즈 2는 토박스가 넓고 드롭이 높은 입문화, 라이즈 3는 스택을 키워 무릎 보호에 더 특화된 쿠션화입니다. 스택·드롭·무게·토박스는 RunRepeat 랩 실측, 가격은 한국 공식몰 정가 기준입니다. 이 글은 처음에 라이즈 3의 와이드가 폐지됐다고 썼지만 2026-09-29 아디다스 한국 공식몰에서 와이드 판매를 확인해 바로잡았습니다. 이 기준으로 비교하고, 발볼·평발·무릎·세일 타이밍별로 어느 세대가 맞는지 매트릭스로 정리했습니다.</p>
-  </div>
-</div>
-
-<h2>한눈에 비교</h2>
-
-<table>
-  <thead>
-    <tr><th>항목</th><th>슈퍼노바 라이즈 2</th><th>슈퍼노바 라이즈 3</th><th>차이</th></tr>
-  </thead>
-  <tbody>
-    <tr><td><strong>카테고리</strong></td><td>입문화</td><td><strong>쿠션화</strong></td><td>성격 변화 (입문 → 본격 쿠션)</td></tr>
-    <tr><td><strong>MSRP (한국)</strong></td><td>159,000원</td><td>159,000원</td><td>동일</td></tr>
-    <tr><td><strong>실구매가 (참고)</strong></td><td>약 135,000원</td><td>약 145,000원</td><td>세일 시 둘 다 더 내려감</td></tr>
-    <tr><td><strong>무게 (랩 실측)</strong></td><td>257g</td><td>264g</td><td>+7g (라이즈 3가 약간 묵직)</td></tr>
-    <tr><td><strong>힐 스택 (랩 실측)</strong></td><td>33.5mm</td><td><strong>35.0mm</strong></td><td>+1.5mm</td></tr>
-    <tr><td><strong>전족부 스택 (랩 실측)</strong></td><td>24.0mm</td><td><strong>27.2mm</strong></td><td>+3.2mm (장거리 후반 쿠션 ↑)</td></tr>
-    <tr><td><strong>충격흡수 (힐/앞발, SA)</strong></td><td>127 / 96</td><td><strong>140 / 112</strong></td><td>높을수록 많이 흡수 (같은 랩 평균 힐 131)</td></tr>
-    <tr><td><strong>뒤꿈치 에너지 리턴</strong></td><td><strong>69.5%</strong></td><td>58.8%</td><td>라이즈 3가 덜 튐 (같은 랩 평균 58.8%)</td></tr>
-    <tr><td><strong>드롭</strong></td><td>10mm</td><td><strong>8mm</strong></td><td>-2mm (미드풋 착지 유도)</td></tr>
-    <tr><td><strong>미드솔 폼</strong></td><td>Dreamstrike+</td><td><strong>Dreamstrike+ (20% softer/bouncier)</strong></td><td>20% 더 부드럽고 탄력 ↑</td></tr>
-    <tr><td><strong>쿠셔닝 점수</strong></td><td>9/10</td><td>9/10</td><td>동일 (체감 부드러움은 3 우위)</td></tr>
-    <tr><td><strong>반응성 점수</strong></td><td>7/10</td><td>7/10</td><td>동일</td></tr>
-    <tr><td><strong>안정성 점수</strong></td><td>8/10</td><td>7/10</td><td>-1 (가벼운 과내전은 라이즈 2 우위)</td></tr>
-    <tr><td><strong>내구성</strong></td><td>600km</td><td>650km</td><td>+50km</td></tr>
-    <tr><td><strong>km당 비용</strong></td><td>약 265원</td><td>약 260원</td><td>거의 동일</td></tr>
-    <tr><td><strong>아웃솔</strong></td><td>Adiwear 러버</td><td><strong>Adiwear 풀 커버리지</strong></td><td>커버리지 확대</td></tr>
-    <tr><td><strong>어퍼</strong></td><td>메쉬</td><td><strong>PRIMEWEAVE 소프트 메쉬 + 거셋 텅</strong></td><td>플러시·풋홀드 개선</td></tr>
-    <tr><td><strong>토박스 (랩 실측)</strong></td><td><strong>77.7mm</strong></td><td>74.5mm</td><td>-3.2mm (둘 다 랩 평균 73.2mm 이상)</td></tr>
-    <tr><td><strong>와이드 옵션</strong></td><td>있음 (표준/와이드)</td><td>있음 (한국 공식몰 159,000원, 2026-09-29 확인)</td><td>둘 다 와이드 선택 가능</td></tr>
-  </tbody>
-</table>
-
-<h2>핵심 변화 — "입문화"에서 "쿠션화"로</h2>
-
-<p>라이즈 2와 3의 가장 큰 차이는 단순 스펙이 아니라 <strong>신발의 정체성 자체가 바뀌었다</strong>는 점입니다. 라이즈 2는 10mm 드롭·와이드 옵션을 갖춘 힐스트라이커 친화 입문화였습니다. 라이즈 3는 스택을 위아래로 키우고 폼을 부드럽게 바꿔 본격 장거리 쿠션화 영역으로 올라갔죠.</p>
-
-<div class="callout warning">
-  <span class="callout-icon">🔄</span>
-  <div class="callout-body">
-    <p class="callout-title">입문 데일리 vs 장거리 쿠션 — 설계 철학 비교</p>
-    <table>
-      <thead>
-        <tr><th></th><th>라이즈 2 — 입문화 (구)</th><th>라이즈 3 — 쿠션화 (신)</th></tr>
-      </thead>
-      <tbody>
-        <tr><td><strong>겨냥 러너</strong></td><td>첫 하프 준비·쿠션 중시 입문자</td><td>장거리·무릎 보호·25km+ LSD 러너</td></tr>
-        <tr><td><strong>스택·드롭</strong></td><td>33.5/24.0mm, 10mm 드롭 (힐 착지 친화)</td><td>35.0/27.2mm, 8mm 드롭 (미드풋 유도)</td></tr>
-        <tr><td><strong>핏 전략</strong></td><td>넓은 토박스(77.7mm) + 와이드 옵션</td><td>토박스는 좁아졌지만(74.5mm) 와이드 유지 + PRIMEWEAVE 풋홀드 강화</td></tr>
-        <tr><td><strong>강점</strong></td><td>가볍고(257g) 입문자 안정성(8/10) ↑</td><td>장거리 후반 쿠션 유지·내구성(650km) ↑</td></tr>
-        <tr><td><strong>약점</strong></td><td>전족부 스택 24mm로 장거리 후반 얇음</td><td>뒤꿈치 에너지 리턴 하락(69.5→58.8%)·무게 +7g·안정성 -1</td></tr>
-      </tbody>
-    </table>
-  </div>
-</div>
-
-<p>즉 라이즈 3는 전작의 자리를 그대로 잇는 후속작이라기보다, <strong>호카 클리프톤·아식스 노바블라스트 같은 장거리 쿠션화와 직접 붙는 포지션</strong>으로 한 단계 올라선 신발입니다. 입문 데일리가 필요한 분에게는 오히려 라이즈 2가 더 맞을 수 있다는 뜻이기도 하죠.</p>
-
-<h2>5가지 핵심 변화 점검</h2>
-
-<h3>1. 카테고리 승급 — 입문화 → 쿠션화 ✅ 가장 큰 변화</h3>
-<p>랩 실측 스택을 힐 +1.5mm, 포어풋 +3.2mm 키운 게 결정적입니다. 라이즈 2의 전족부 24.0mm는 장거리 후반에 얇게 느껴질 수 있는데, 라이즈 3는 27.2mm로 키우고 앞발 충격흡수도 96에서 112 SA로 올려 <strong>25km 이후에도 쿠션이 살아있는 설계</strong>로 바뀌었어요.</p>
-
-<h3>2. Dreamstrike+ 20% 부드러움·탄력 ✅ 체감 쿠션 개선</h3>
-<p>쿠셔닝 점수는 둘 다 9/10이지만, 라이즈 3의 Dreamstrike+는 <strong>20% 더 부드럽고 탄력 있게(softer/bouncier)</strong> 재배합됐습니다. 점수가 같아도 실제 발에 닿는 부드러움은 라이즈 3가 한 수 위라는 의미죠. 다만 같은 랩 기준 뒤꿈치 에너지 리턴은 라이즈 2가 69.5%, 라이즈 3가 58.8%라 "통통 튀는" 반발은 오히려 라이즈 2가 앞섭니다. 라이즈 3의 장점은 튀는 느낌이 아니라 부드러움과 충격흡수(힐 127→140 SA)입니다.</p>
-
-<h3>3. 드롭 10mm → 8mm ⚠️ 착지 패턴 변화</h3>
-<p>2mm 줄어든 드롭은 양날의 검입니다. 8mm로 낮아지면서 <strong>미드풋 착지를 유도</strong>하고 아킬레스 부담은 약간 줄지만, 라이즈 2의 10mm에 익숙한 뒤꿈치 착지 입문자라면 종아리·아킬레스 적응 기간이 필요할 수 있어요. 힐스트라이커 입문자에게는 오히려 라이즈 2의 10mm가 더 편할 수 있습니다.</p>
-
-<h3>4. 무게 257g → 264g (+7g) ⚠️ 약간 묵직해짐</h3>
-<p>스택을 키운 대가로 7g 무거워졌습니다. 둘 다 빠른 페이스용은 아니지만(반응성 7/10), <strong>가벼움 우선이라면 라이즈 2</strong>가 유리합니다. 다만 264g도 쿠션화 카테고리에서는 표준 범위라 LSD·데일리에서는 무게가 크게 거슬리진 않습니다.</p>
-
-<h3>5. 토박스 3.2mm 좁아짐, 와이드는 유지 ⚠️ 발볼 넓은 한국 러너 확인 포인트</h3>
-<p>랩 실측 토박스는 라이즈 2 77.7mm에서 라이즈 3 74.5mm로 <strong>3.2mm 좁아졌습니다</strong>. 그래도 같은 랩 평균(73.2mm)보다는 넓고, 두 세대 모두 <strong>표준/와이드 2종</strong>이 있습니다. 아디다스 한국 공식몰에서 라이즈 3 와이드는 표준과 같은 159,000원에 판매됩니다(2026-09-29 확인). 발볼이 확실히 넓다면 라이즈 3 와이드나 토박스가 더 넓은 라이즈 2를 매장에서 먼저 신어 보세요. 사이즈는 RunRepeat 집계에서 "약간 작게"(82표)로 나오는 반면 아디다스 한국 안내는 "정사이즈"라 길이는 시착으로 확인하는 편이 안전합니다.</p>
-
-<h2>상황별 구매 결정 매트릭스</h2>
-
-<table>
-  <thead>
-    <tr><th>본인 상황</th><th>추천</th><th>이유</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>발볼 4E+ (와이드 필수)</td><td><strong>라이즈 2 또는 라이즈 3 와이드</strong></td><td>둘 다 와이드 판매, 토박스는 라이즈 2가 3.2mm 더 넓음</td></tr>
-    <tr><td>25km+ LSD·풀 준비 + 후반 쿠션 우선</td><td><strong>라이즈 3</strong></td><td>전족부 27.2mm(랩)·Dreamstrike+ 20% 업그레이드</td></tr>
-    <tr><td>첫 하프 준비 입문자 (힐 착지)</td><td><strong>라이즈 2</strong></td><td>10mm 드롭·가벼운 257g·입문 친화</td></tr>
-    <tr><td>무릎 통증·관절 보호 최우선</td><td><strong>라이즈 3</strong></td><td>힐 35.0mm(랩)·충격흡수 140 SA·excellent 등급</td></tr>
-    <tr><td>가벼운 과내전 (약한 안정성 필요)</td><td><strong>라이즈 2</strong></td><td>안정성 8/10 (3은 7/10·완전 중립용)</td></tr>
-    <tr><td>가성비 + 표준 발볼</td><td>라이즈 2 (세일 13만원대)</td><td>km당 비용 비슷, MSRP 동일(세일가로 판단)</td></tr>
-    <tr><td>부드러운 "통통 튀는" 데일리 우선</td><td><strong>라이즈 3</strong></td><td>Dreamstrike+ 20% softer/bouncier</td></tr>
-    <tr><td>라이즈 2 사용 중 + 500km 이내 멀쩡</td><td>라이즈 2 계속</td><td>업그레이드 가치는 후반 쿠션 차이 정도</td></tr>
-    <tr><td>완전 중립발 + 장거리 1켤레</td><td><strong>라이즈 3</strong></td><td>650km 내구성·표준 핏 풋홀드 ↑</td></tr>
-  </tbody>
-</table>
-
-<h2>가격·세일 시나리오 — 둘 다 가성비 영역</h2>
-
-<div class="callout success">
-  <span class="callout-icon">💰</span>
-  <div class="callout-body">
-    <p class="callout-title">라이즈 2/3 가격 판단 가이드</p>
-    <ul>
-      <li><strong>MSRP는 159,000원으로 같습니다.</strong> km당 비용도 265원 vs 260원으로 사실상 동일해, 가격만으로 한쪽이 압도적이지 않습니다.</li>
-      <li><strong>라이즈 2는 후속작 출시로 세일 진입.</strong> 네이버·공식몰에서 13만원대, 시즌 오프엔 더 내려가는 경우가 많아 입문·표준 발볼이라면 가성비 메리트가 큽니다.</li>
-      <li><strong>라이즈 3는 현행 모델.</strong> 정가~약 145,000원 실구매가 선에서 형성되며, 세일 폭은 라이즈 2보다 작습니다. 후반 쿠션·내구성을 산다는 관점이면 충분히 합리적.</li>
-      <li><strong>발볼이 넓다면 가격보다 착화가 우선입니다.</strong> 두 세대 모두 와이드가 있고, 후속작 출시로 라이즈 2 와이드 재고는 먼저 빠질 수 있으니 본인 사이즈를 먼저 확인하세요.</li>
-    </ul>
-  </div>
-</div>
-
-<p><strong>가장 합리적 액션</strong>은 본인 발볼·목적부터 가르는 겁니다. 발볼 넓음·입문·가성비라면 세일 들어간 라이즈 2 와이드, 장거리 후반 쿠션·무릎 보호·완전 중립발이라면 라이즈 3입니다.</p>
-
-<h2>한국 러너 부상별 권장</h2>
-
-<table>
-  <thead>
-    <tr><th>부상·체형</th><th>추천</th><th>근거</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>무릎 통증 (러너스 니·장경인대염)</td><td><strong>라이즈 3</strong></td><td>힐 35.0mm(랩)·kneeIssues excellent</td></tr>
-    <tr><td>아킬레스건염 이력</td><td><strong>라이즈 3</strong></td><td>드롭 10→8mm·achilles excellent</td></tr>
-    <tr><td>족저근막염</td><td>라이즈 2 = 3</td><td>둘 다 plantarFasciitis excellent</td></tr>
-    <tr><td>정강이 부목 (Shin Splints)</td><td>라이즈 2 = 3</td><td>둘 다 shinSplints excellent</td></tr>
-    <tr><td>가벼운 과내전</td><td><strong>라이즈 2</strong></td><td>안정성 8/10 (3은 7/10·중립 전용)</td></tr>
-    <tr><td>심한 과내전·평발 + 강한 지지 필요</td><td>둘 다 비권장</td><td>안정화 아님 — GT-2000 계열 권장</td></tr>
-    <tr><td>가벼운 평발 + 두꺼운 쿠션 선호</td><td>라이즈 2(와이드) 또는 3</td><td>flatFoot good·아치 지지보다 쿠션으로 흡수</td></tr>
-  </tbody>
-</table>
-
-<p>두 모델 모두 안정화가 아니라 중립~쿠션화입니다. 심한 과내전·평발이라면 안정화 카테고리를 봐야 해요. 본인 발 특성·부상 이력 기반 후보는 <a href="/recommend">1분 러닝화 추천</a>에서 받을 수 있고, 무릎 통증 종합 가이드는 <a href="/blog/knee-pain-running-shoes">무릎 통증 러너 신발 가이드 →</a>, 발볼 넓은 분은 <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너 추천 신발 →</a>를 참고하세요.</p>
-
-<h2>비슷한 쿠션화 대안</h2>
-
-<p>라이즈 2/3 외에 같은 장거리 쿠션 영역에서 검토할 만한 옵션입니다.</p>
-
-<ul>
-  <li><a href="/shoes/adidas-supernova-rise-3">아디다스 슈퍼노바 라이즈 3</a> — 랩 실측 힐 35mm·Dreamstrike+ 20% 업그레이드, 무릎 보호 쿠션화</li>
-  <li><a href="/shoes/adidas-supernova-rise-2">아디다스 슈퍼노바 라이즈 2</a> — 와이드 옵션·10mm 드롭, 발볼 넓은 입문자 1순위</li>
-  <li><a href="/shoes/hoka-clifton-10">호카 클리프톤 10</a> — 275g(남성 US 9) 맥시멀 쿠션. 라이즈 2·3(257g·264g)보다 무겁고 4만원 비쌈(199,000원)</li>
-  <li><a href="/shoes/asics-novablast-5">아식스 노바블라스트 5</a> — FF BLAST MAX·통통 튀는 쿠션, 데일리~템포 겸용</li>
-  <li><a href="/shoes/nike-pegasus-premium">나이키 페가수스 프리미엄</a> — 에어 줌 + 리액트X 결합 프리미엄 데일리</li>
-</ul>
-
-<h2>FAQ</h2>
-
-<h3>Q. 라이즈 2 → 라이즈 3 업그레이드 가치 있나요?</h3>
-<p>라이즈 2가 500km 이내로 멀쩡하다면 굳이 갈 필요 없습니다. 다만 <strong>30km 이후 발바닥이 뻐근했던 분</strong>이라면 라이즈 3의 전족부 +3.2mm(랩 실측)·앞발 충격흡수 96→112 SA가 후반 쿠션을 확실히 채워줘 체감 차이가 큽니다. 반대로 가벼움·10mm 드롭·와이드가 좋았다면 라이즈 2를 더 사두는 게 나을 수 있어요.</p>
-
-<h3>Q. 발볼이 넓은데 라이즈 3 표준으로 괜찮을까요?</h3>
-<p>라이즈 3 토박스는 랩 실측 74.5mm로 같은 랩 평균(73.2mm)보다 넓어 <strong>표준~약간 넓은 발은 커버</strong>됩니다. 확실히 넓다면 한국 공식몰에서 파는 와이드 버전(159,000원)을 고르세요. 라이즈 2(랩 77.7mm)가 3.2mm 더 넓긴 합니다. 매장 착화로 압박 부위를 꼭 확인하세요.</p>
-
-<h3>Q. 초보 입문자에게는 어느 쪽이 나을까요?</h3>
-<p>힐로 착지하는 입문자라면 <strong>10mm 드롭·257g의 라이즈 2</strong>가 더 친화적입니다. 안정성도 8/10으로 약간 높아 흔들림이 덜하죠. 라이즈 3는 8mm 드롭·미드풋 유도라 입문보다는 어느 정도 거리를 뛰는 데일리·장거리 러너에게 더 맞습니다.</p>
-
-<h3>Q. 둘 다 풀코스 가능한가요?</h3>
-<p>가능합니다. 다만 페이스에 따라 다릅니다. <strong>Sub-4~Sub-5 완주 + 무릎/쿠션 우선이라면 라이즈 3</strong>가 후반 쿠션에서 유리하고, 입문자가 첫 하프~풀을 무리 없이 완주하는 용도라면 라이즈 2도 충분합니다. Sub-3:30 이하 빠른 레이스는 둘 다 무게(257~264g)·반응성(7/10) 한계로 카본 슈즈 분리를 권합니다.</p>
-
-<h3>Q. 평발인데 둘 중 하나 신어도 되나요?</h3>
-<p>가벼운 평발이라면 둘 다 flatFootCompatibility good이라 두꺼운 쿠션으로 충격을 흡수해줍니다. 다만 <strong>아치 지지력 자체는 안정화(GT-2000 등)보다 약합니다</strong>. 과내전이 심하다면 라이즈가 아니라 안정화로 가야 해요. 본인 프로네이션이 헷갈리면 <a href="/blog/pronation-type-running-shoe-guide-2026">프로네이션 타입별 러닝화 가이드 →</a>를 먼저 확인하세요.</p>
-
-<h2>결론 — 내 추천</h2>
-
-<div class="callout success">
-  <span class="callout-icon">🎯</span>
-  <div class="callout-body">
-    <p class="callout-title">발볼과 목적이 갈림길입니다</p>
-    <p><strong>발볼 넓음·입문·가성비·가벼움 우선</strong>이라면 <a href="/shoes/adidas-supernova-rise-2">슈퍼노바 라이즈 2</a>입니다. 와이드 옵션·10mm 드롭·257g·안정성 8/10이 입문 한국 러너에게 더 안전하고, 후속작 출시로 세일가 13만원대 메리트까지 있죠. 단 와이드 재고는 먼저 빠지니 본인 사이즈를 일찍 확보하세요.</p>
-    <p><strong>완전 중립발·장거리/무릎 보호·후반 쿠션 우선</strong>이라면 <a href="/shoes/adidas-supernova-rise-3">슈퍼노바 라이즈 3</a>입니다. 랩 실측 힐 35.0mm·전족부 27.2mm·Dreamstrike+ 20% 업그레이드·650km(추정) 내구성으로 25km+ LSD와 무릎 보호 데일리에 강합니다. 발볼이 넓다면 와이드 버전을 고르면 됩니다.</p>
-    <p><strong>둘 다 처음</strong>이라면 매장에서 동시 착화가 정답입니다. 드롭(10 vs 8mm)과 중족부 핏 차이가 발에서 바로 갈리거든요. 본인 발이 어느 쪽에 편한지 5분만 걸어보면 답이 나옵니다.</p>
-  </div>
-</div>
-
-<div class="affiliate-cta">
-  <p class="affiliate-cta-label">상세 정보</p>
-  <div class="affiliate-cta-buttons">
-    <a href="/shoes/adidas-supernova-rise-3" class="affiliate-btn pending">
-      <span class="affiliate-btn-store">상세</span>
-      <span class="affiliate-btn-product">슈퍼노바 라이즈 3 상세 →</span>
-    </a>
-    <a href="/shoes/adidas-supernova-rise-2" class="affiliate-btn pending">
-      <span class="affiliate-btn-store">상세</span>
-      <span class="affiliate-btn-product">슈퍼노바 라이즈 2 상세 →</span>
-    </a>
-  </div>
-  <p class="affiliate-disclosure">광고 표기: 일부 링크는 제휴 수수료를 받을 수 있습니다.</p>
-</div>
-
-<h2>다른 세대 비교</h2>
-
-<p>슈퍼노바 라이즈가 데일리 쿠션 영역이라면, 페이스·거리에 따라 다른 카테고리 세대 비교도 함께 보면 라인업을 짜기 좋습니다.</p>
-
-<ul>
-  <li><a href="/blog/puma-deviate-nitro-3-vs-4-comparison">푸마 디비에이트 나이트로 3 vs 4 — 데일리 트레이너 세대 비교</a> (반발력 있는 데일리)</li>
-  <li><a href="/blog/brooks-glycerin-max-1-vs-2-comparison">브룩스 글리세린 맥스 vs 맥스 2 — 맥시멀 쿠션화 세대 비교</a> (두툼한 쿠션 우선)</li>
-  <li><a href="/blog/mizuno-wave-rebellion-flash-2-vs-3-comparison">미즈노 웨이브 리벨리온 플래시 2 vs 3 — 슈퍼트레이너 세대 비교</a> (페이스 훈련 분리용)</li>
-  <li><a href="/blog/nike-pegasus-41-vs-42-comparison">나이키 페가수스 41 vs 42 — 데일리 트레이너 세대 비교</a> (5~10km 데일리 기준점)</li>
-  <li><a href="/blog/new-balance-1080-v14-vs-v15-comparison">NB 1080 v14 vs v15 — 쿠션화 세대 비교</a> (장거리 부드러운 중립화)</li>
-</ul>
-
-<h2>관련 글</h2>
-
-<ul>
-  <li><a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너 추천 신발 — 토박스 실측 정리</a></li>
-  <li><a href="/blog/knee-pain-running-shoes">무릎 통증 러너 신발 가이드</a></li>
-  <li><a href="/blog/pronation-type-running-shoe-guide-2026">프로네이션 타입별 러닝화 가이드 2026</a></li>
-  <li><a href="/blog/first-running-shoe-guide-2026">첫 러닝화 고르는 법 2026 — 안정화 vs 중립화 선택</a></li>
-  <li><a href="/compare">러닝화 비교하기 — 슈퍼노바 라이즈 2·3 스펙 나란히 보기</a></li>
-</ul>
-
-<p><small>출처: 아디다스 공식 제품 정보 / allrunabout.com 신발 데이터베이스(기준일 2026-06-10) / 슈퍼노바 라이즈 2·3 스펙(스택·드롭·무게·Dreamstrike+ 폼·MSRP·내구성). 스택·토박스·충격흡수(SA)·에너지 리턴은 작성 후 데이터베이스에 반영된 RunRepeat 랩 실측이고(2026-10-23 기준), 실구매가·세일 폭 등 일부 수치는 공식 발표·전작 기준 추정입니다.</small></p>
+<p><strong>2026-11-10 원문 대조 업데이트.</strong> 11월9~10일 확인한 정확 모델 자료를 바탕으로 공시·검체·개인 착화 의견을 나눴습니다. 자체 착화 후기는 아닙니다.</p><h2>선택에서 먼저 볼 차이</h2><p>라이즈 3의 검체는 힐·전족부가 더 높고 엄지 부위는 더 좁게 측정됐습니다. 다만 두 측정값이 개인의 사이즈 변경이나 부상 예방 효과를 결정하지는 않습니다.</p><p>라이즈 2의 폼 Support Rods와 라이즈 3의 주행 구조, 실제 어퍼 고정·카운터 자극을 따로 비교할 수 있습니다. 카테고리 명칭이 입문화에서 쿠션화로 바뀌었다고 상위 등급이 되는 것은 아닙니다.</p><figure><img src="/images/shoes/adidas/supernovarise2.webp" alt="슈퍼노바 라이즈2 제품 자료 이미지" loading="lazy"/><figcaption>슈퍼노바 라이즈2 — 수치와 세대 조건은 본문 원문을 확인하세요.</figcaption></figure><div class="table-wrap"><table><thead><tr><th>모델</th><th>무게</th><th>힐/전족 스택 · 드롭</th><th>힐/전족 SA</th><th>힐/전족 리턴</th><th>내부 최광폭/엄지/높이</th></tr></thead><tbody><tr><td>슈퍼노바 라이즈2</td><td>257g</td><td>33.5/24mm · 9.5mm</td><td>127/96</td><td>69.5/68.1%</td><td>98.7/77.7/28.4mm</td></tr><tr><td>슈퍼노바 라이즈3</td><td>264g</td><td>35/27.2mm · 7.8mm</td><td>140/112</td><td>58.8/62.8%</td><td>97.6/74.5/29mm</td></tr></tbody></table></div><h2>숫자를 읽는 조건</h2><p>위 표는 RunRepeat의 정확 모델 검체 값입니다. 일반 정책은 남성 US9지만 개별 검체 라벨·폭·보정 여부는 미확인입니다. 제조사 공시와 리뷰어의 실제 착화 사이즈는 아래에서 구분합니다. 스택은 내부 길이 12%/75% 위치와 인솔을 포함하는 RR 방법에 따른 값입니다.</p><p>SA는 충격흡수 시험, 리턴은 시험에서 반환된 에너지 비율입니다. 폼이 더 부드럽다거나 무릎 통증·개인 기록이 개선된다는 뜻으로 바꾸지 않습니다. 최광폭·엄지·높이는 서로 다른 내부 치수로 한국 와이드 전체의 치수가 아닙니다. <a href="https://runrepeat.com/testing-methodology" target="_blank" rel="noopener noreferrer">RunRepeat 측정법</a></p><h2>라이즈2의 공간과 라이즈3의 쿠션을 하나의 승자로 합치지 않기</h2><p>라이즈 2는 검체 내부 엄지 부위 77.7mm, 라이즈 3는 74.5mm입니다. 이 차이는 해당 검체의 내부 위치 차이로 한국 다른 성별·폭의 치수 차이를 입증하지 않습니다.</p><p>라이즈 3의 SA가 높아도 더 편하게 느끼는지는 전체 구조와 발에 따라 다릅니다. DOR은 두 세대에서 낮은 볼륨·토가드·혀·힐 요소를 지적했습니다. 젖은 콘크리트의 CoF 0.38/0.94 차이와 개인 젖은 길 착화를 모든 노면 위험·안전 등급으로 만들지 않았습니다.</p><h2>슈퍼노바 라이즈2의 구조·공시</h2><p>Dreamstrike+ · 폼 Support Rods · 비카본</p><p>Support Rods는 폼 지지 구조이며 아디오스 프로 4의 카본 EnergyRods와 다릅니다. 한국 제조사 원문은 로드의 상세 배합을 공개하지 않았습니다.</p><p>한국 공시 275g(265mm)·36/26mm·드롭 10mm. DOR 소개 274g(남성US9)·228g(여성US8),36/26mm·10mm와 RR257g·33.5/24.0mm·9.5mm는 조건이 달라 평균내지 않습니다.</p><h2>슈퍼노바 라이즈2의 실제 착화에서 갈린 점</h2><p>DOR의 Matt(남성US10)은 길이는 맞지만 낮고 조이는 볼륨·혀 이동·단단한 카운터와 뒤꿈치 돌출을 느꼈습니다. Andrea(여성US9.5)는 약간 길고 낮은 볼륨, 발가락 관절과 로커 위치 불일치로 전환이 힘들었다고 느꼈으며 젖은 길의 미끄러짐도 언급했습니다. Matt의 젖은 길 체감과 달라 개인·노면 조건을 보존합니다.</p><p>한국 와이드 SKU는 미확인으로, 기존 와이드 제공 보장을 제거했습니다. RR 내부 최광폭 98.7mm·엄지 77.7mm·높이 28.4mm만으로 낮은 볼륨의 개인 착화를 보장하지 않습니다.</p><h2>슈퍼노바 라이즈2에서 함께 남긴 한계</h2><p>RR은 Dreamstrike+를 PEBA 계열, 하부를 REPETITOR 폼 Support Rods로 설명합니다. RR 주폼 32.3AC·보조폼 54.6AC를 구분하며, RR 전작과 동일 배합 설명과 DOR의 더 단단한 체감을 화학 변화 확인으로 해석하지 않습니다. RR 젖은 콘크리트 전족부 CoF0.38은 모든 노면의 안전 보증이나 위험 등급이 아닙니다.</p><h2>슈퍼노바 라이즈2의 한국 판매 확인 범위</h2><p>한국 공식 남성 레귤러 JQ7676·남성 JS0493 정가 159,000원. 표시할인가 127,200원은 확인 시점 조건이며 앱 추가할인 최종가는 계산하지 않았습니다. JQ7676은 245~300mm 선택 가능,305/310mm는 선택 불가였고 다른SKU·여성·와이드·실결제 재고는 미확인입니다.</p><h2>슈퍼노바 라이즈3의 구조·공시</h2><p>Dreamstrike+ · Primeweave · LIGHTTRAXION</p><p>카본 플레이트는 확인되지 않습니다. DOR이 support rods를 언급하지만 소재·정확한 한국 동세대 공식 구조는 미확인입니다.</p><p>DOR 남성US9 264g·36/28mm·8mm, RR 브랜드남성 264g/여성 238g(사이즈 미확인)·36/28mm·8mm, 실제 RR264g·35/27.2mm·7.8mm를 구분합니다. 한국 검색 요약의 230g·7mm는 열린 본문에서 재확인되지 않아 채택하지 않았습니다.</p><h2>슈퍼노바 라이즈3의 실제 착화에서 갈린 점</h2><p>DOR Matt(남성US10)은 정사이즈·넓은 듯한 전족이지만 토가드와 낮은 볼륨·짧은 끈을 지적했습니다. 패딩·거싯 고정과 이지·롱런을 선호했으나 빠른 템포에서는 반응이 느리고 젖은 도로 일부에서 미끄러졌다고 적었습니다. 이는 젖은 콘크리트 랩 계수 0.94와 조건이 다른 개인 경험입니다.</p><p>RR 내부 최광폭 97.6mm·엄지 74.5mm·높이 29mm입니다. RR 약간 작게라는 투표와 Matt의 정사이즈 경험은 다른 정보입니다. 현재 한국 와이드 SKU는 미확인입니다.</p><h2>슈퍼노바 라이즈3에서 함께 남긴 한계</h2><p>Dreamstrike+의 PEBA계 조성은 RR 설명으로 귀속하며 한국 공식의 화학 분석으로 제시하지 않습니다. 기존 Supercritical EVA·Adiwear 표기는 이번 RR의 PEBA계·LIGHTTRAXION과 달라 정정했습니다. DOR 요약의 Solution3 이름 오기는 다른 모델 정보를 옮길 근거가 아닙니다. 힐 패딩 1/5·국소마모 0.8mm는 650km 수명·부상복귀 보호를 입증하지 않습니다.</p><h2>슈퍼노바 라이즈3의 한국 판매 확인 범위</h2><p>한국 공식 캐시에서 남성KI3616 169,000원, 여성KK1203 159,000원·할인 111,300원을 확인했습니다. 현재 가격·선택 재고·폭은 미확인입니다. 기존JQ5953 와이드 판매·모두 159,000원 확정을 반복하지 않습니다. 앱 추가 혜택은 최종 적용가 미확인입니다.</p><h2>매장에서 비교할 질문</h2><p>평소 양말·인솔로 앞쪽 길이와 발톱 위 높이, 끈을 조일 때 발등 압박, 걷고 돌 때 힐 고정과 칼라 마찰을 확인하세요. 앞볼이 넓다는 인상만으로 앞코 전체 높이나 중족 공간까지 맞는다고 가정하지 않습니다.</p><p>몇 분/km면 무조건 이 모델, 몇 km부터 통증이 줄어든다는 공통 경계는 이 자료에서 확인하지 못했습니다. 평발·부상 이력만으로 모델을 처방하거나 국소 마모를 공통 수명으로 환산하지 않았습니다.</p><h2>확인한 원문·상품 조건</h2><ul><li><a href="https://runrepeat.com/adidas-supernova-rise-2" target="_blank" rel="noopener noreferrer">슈퍼노바 라이즈2 RR 정확 모델</a> — 실험실 검체·공시를 구분.</li><li><a href="https://www.doctorsofrunning.com/adidas-supernova-rise-2-review-2024/" target="_blank" rel="noopener noreferrer">슈퍼노바 라이즈2 DOR 착화 원문</a> — 실제 리뷰어·규격의 개인 의견.</li><li><a href="https://www.adidas.co.kr/%EC%8A%88%ED%8D%BC%EB%85%B8%EB%B0%94-%EB%9D%BC%EC%9D%B4%EC%A6%88-2/JQ7676.html" target="_blank" rel="noopener noreferrer">슈퍼노바 라이즈2 한국 공식 확인 상품</a> — 본문 SKU·성별·확인 시점 조건. 현재 재고 보장 아님.</li><li><a href="https://www.adidas.co.kr/%EC%8A%88%ED%8D%BC%EB%85%B8%EB%B0%94-%EB%9D%BC%EC%9D%B4%EC%A6%88-2/JS0493.html" target="_blank" rel="noopener noreferrer">슈퍼노바 라이즈2 한국 공식 확인 상품</a> — 본문 SKU·성별·확인 시점 조건. 현재 재고 보장 아님.</li><li><a href="https://runrepeat.com/adidas-supernova-rise-3" target="_blank" rel="noopener noreferrer">슈퍼노바 라이즈3 RR 정확 모델</a> — 실험실 검체·공시를 구분.</li><li><a href="https://www.doctorsofrunning.com/adidas-supernova-rise-3-review-2026/" target="_blank" rel="noopener noreferrer">슈퍼노바 라이즈3 DOR 착화 원문</a> — 실제 리뷰어·규격의 개인 의견.</li><li><a href="https://www.adidas.co.kr/%EC%8A%88%ED%8D%BC%EB%85%B8%EB%B0%94-%EB%9D%BC%EC%9D%B4%EC%A6%88-3/KI3616.html" target="_blank" rel="noopener noreferrer">한국 공식 캐시 KI3616 · 남성</a> — 표시 정가 169000원·표시 판매가 169000원. 도구 캐시 last week; 현재 가격·폭·선택 재고 미확인.</li><li><a href="https://www.adidas.co.kr/%EC%8A%88%ED%8D%BC%EB%85%B8%EB%B0%94-%EB%9D%BC%EC%9D%B4%EC%A6%88-3-w/KK1203.html" target="_blank" rel="noopener noreferrer">한국 공식 캐시 KK1203 · Women</a> — 표시 정가 159000원·표시 판매가 111300원. 도구 캐시 today; 현재 가격·폭·선택 재고 미확인.</li></ul>
 `,
+    updatedAt: "2026-11-10",
+    faqs: [
+      {
+        "question": "3가 모든 면에서 업그레이드인가요?",
+        "answer": "높이·측정 흡수·공간·고정이 서로 다른 방향으로 바뀌어 하나의 승자로 정하지 않습니다."
+      },
+      {
+        "question": "라이즈2는 발볼 넓으면 맞나요?",
+        "answer": "내부 엄지 수치와 전체 볼륨·토가드·힐 고정은 별개입니다. 실제 규격에서 확인하세요."
+      }
+    ],
   },
   {
     id: "puma-deviate-nitro-3-vs-4-comparison",
@@ -5601,266 +5396,35 @@ export const posts_2026_06: BlogPost[] = [
     ],
   },
   {
-    id: 'brooks-glycerin-max-1-vs-2-comparison',
-    slug: 'brooks-glycerin-max-1-vs-2-comparison',
-    title: '브룩스 글리세린 맥스 vs 글리세린 맥스 2 비교 | 랩 경도 그대로, 스택 +3mm인데 충격흡수 148→137 SA — 무릎·평발 한국 러너는 어느 세대?',
-    description: '글리세린 맥스(239,000원·305g)와 맥스 2(249,000원·318g) 맥시멀 쿠션화 세대 비교. RunRepeat 랩 기준 폼 경도는 31.9→30.9 AC로 거의 같고, 힐 스택은 3.1mm 높아졌지만 힐 충격흡수는 148→137 SA로 내려갔습니다. 토박스·와이드·평발·km당 비용까지 상황별 매트릭스로 정리.',
-    thumbnail: '/images/shoes/brooks/glycerinmax2/side.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-06-10',
-    updatedAt: '2026-10-23',
-    category: 'review' as const,
-    readingTime: 12,
-    tags: ['브룩스 글리세린 맥스', '글리세린 맥스', '글리세린 맥스 2', '맥시멀 쿠션화', 'DNA Tuned', '무릎 보호 러닝화', '리커버리화', '쿠션화 비교', '평발 러닝화', '브룩스'],
+    id: "brooks-glycerin-max-1-vs-2-comparison",
+    slug: "brooks-glycerin-max-1-vs-2-comparison",
+    title: "글리세린 맥스1 vs2 — 높은 스택보다 먼저 볼 발톱 위 공간·힐 고정",
+    description: "초대와2세대의 RR 검체·DNA Tuned·DOR 착화를 비교합니다.2세대 전족 리턴은 원문 충돌로 미확인, 무릎 보호·평발 순위를 제거했습니다.",
+    thumbnail: "/images/shoes/brooks/glycerinmax/side.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-06-10",
+    updatedAt: "2026-11-10",
+    category: "review",
+    readingTime: 8,
+    tags: [
+      "초대 글리세린 맥스",
+      "글리세린 맥스2",
+      "핏",
+      "원문 대조"
+    ],
     content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>폼 경도는 거의 그대로입니다</strong> — RunRepeat 랩 경도가 v1 31.9 AC, 맥스 2 30.9 AC로 1.0 AC 차이. "맥스 2는 폼이 단단해졌다"는 말은 수치로 확인되지 않습니다</li>
-    <li><strong>스택은 올랐는데 힐 충격흡수는 내려갔습니다</strong> — 랩 힐 스택 42.3→45.4mm(+3.1mm), 무게 305→318g(+13g), 힐 충격흡수 148→137 SA(−11). 높아졌다고 충격흡수 수치가 따라 오르지 않았습니다</li>
-    <li>가격 차 1만원(239,000 vs 249,000원). <strong>힐 충격흡수·가벼움·넓은 토박스·평발·가성비는 v1</strong>, <strong>강화된 로커 형상과 안정성 점수(7/10)를 원하면 맥스 2</strong>. 둘 다 리커버리·이지런 전용이고, 와이드(2E)는 두 세대 모두 한국 공식몰에서 살 수 없습니다</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">🛋️</span>
-  <div class="callout-body">
-    <p class="callout-title">이 글의 맥락 — "맥시멀 쿠션화 세대 차이"를 수치로 붙였습니다</p>
-    <p>글리세린 맥스 라인은 브룩스의 <strong>맥시멀 쿠션화</strong>입니다. v1과 맥스 2가 "뭐가 달라졌나"를 RunRepeat 랩 수치(남성 US 9)로 <strong>같은 기준끼리</strong> 붙였습니다. 결론부터 말하면 <strong>업그레이드가 곧 정답은 아닙니다</strong> — 스택과 무게는 늘었지만 폼 경도는 그대로이고, 힐 충격흡수 수치는 v1이 더 높습니다. 이 글의 초판(2026-06-10)은 "맥스 2의 폼이 단단해지고 충격흡수가 올라갔다"는 전제로 쓰였는데, 랩 수치와 맞지 않아 2026-10-23에 전제부터 다시 썼습니다.</p>
-  </div>
-</div>
-
-<h2>한눈에 비교</h2>
-
-<table>
-  <thead>
-    <tr><th>항목</th><th>글리세린 맥스 (v1)</th><th>글리세린 맥스 2</th><th>차이</th></tr>
-  </thead>
-  <tbody>
-    <tr><td><strong>카테고리</strong></td><td>쿠션화 (맥시멀)</td><td>쿠션화 (맥시멀)</td><td>동일</td></tr>
-    <tr><td><strong>MSRP (한국)</strong></td><td><strong>239,000원</strong></td><td>249,000원</td><td>+10,000원</td></tr>
-    <tr><td><strong>무게 (랩)</strong></td><td><strong>305g</strong></td><td>318g</td><td>+13g</td></tr>
-    <tr><td><strong>힐 스택 (랩)</strong></td><td>42.3mm</td><td><strong>45.4mm</strong></td><td>+3.1mm</td></tr>
-    <tr><td><strong>전족부 스택 (랩)</strong></td><td>35.7mm</td><td><strong>37.3mm</strong></td><td>+1.6mm</td></tr>
-    <tr><td><strong>드롭 (랩)</strong></td><td>6.6mm</td><td>8.1mm</td><td>+1.5mm</td></tr>
-    <tr><td><strong>브랜드 표기 스택·드롭</strong></td><td>확인 못 함</td><td>47/41mm · 6mm</td><td>기준이 달라 비교 안 함</td></tr>
-    <tr><td><strong>미드솔 폼</strong></td><td>DNA Tuned</td><td>DNA Tuned</td><td>동일 계열</td></tr>
-    <tr><td><strong>폼 경도 (랩, 낮을수록 부드러움)</strong></td><td>31.9 AC</td><td>30.9 AC</td><td>−1.0 AC (사실상 동일)</td></tr>
-    <tr><td><strong>힐 충격흡수 (랩)</strong></td><td><strong>148 SA</strong></td><td>137 SA</td><td>−11 SA ⚠️</td></tr>
-    <tr><td><strong>전족부 에너지 리턴 (랩, 평균 61.5%)</strong></td><td>52.0%</td><td>49.6%</td><td>−2.4%p</td></tr>
-    <tr><td><strong>지오메트리</strong></td><td>—</td><td><strong>강화된 로커</strong> (브랜드 표기)</td><td>맥스 2 변경점</td></tr>
-    <tr><td><strong>쿠션 점수</strong></td><td><strong>9/10</strong></td><td>8/10</td><td>−1</td></tr>
-    <tr><td><strong>반응성 점수</strong></td><td>6/10</td><td>6/10</td><td>동일</td></tr>
-    <tr><td><strong>안정성 점수</strong></td><td>6/10</td><td><strong>7/10</strong></td><td>+1</td></tr>
-    <tr><td><strong>예상 수명 (추정)</strong></td><td><strong>600~800km</strong></td><td>500~700km</td><td>범위가 100km 아래</td></tr>
-    <tr><td><strong>km당 비용 (추정)</strong></td><td><strong>약 300~400원</strong></td><td>약 360~500원</td><td>맥스 2가 높음</td></tr>
-    <tr><td><strong>아웃솔</strong></td><td>러버 아웃솔</td><td>러버 아웃솔</td><td>동일</td></tr>
-    <tr><td><strong>어퍼</strong></td><td>엔지니어드 메쉬</td><td>트리플 자카드 메쉬</td><td>소재 변경</td></tr>
-    <tr><td><strong>토박스 (랩, 평균 73.2mm)</strong></td><td>74.3mm (wide)</td><td>73.4mm (standard)</td><td>−0.9mm</td></tr>
-    <tr><td><strong>전체 폭 Width/Fit (랩)</strong></td><td>94.5mm</td><td><strong>96.5mm</strong></td><td>+2.0mm</td></tr>
-    <tr><td><strong>와이드 옵션 (한국 공식몰)</strong></td><td>모델 미등재 (2026-10-23 확인)</td><td>없음 (MEDIUM만, 2026-10-20 확인)</td><td>둘 다 국내 공식 와이드 없음</td></tr>
-    <tr><td><strong>평발 호환</strong></td><td><strong>excellent</strong></td><td>good</td><td>v1 우위</td></tr>
-  </tbody>
-</table>
-
-<p><small>(랩) 표시는 RunRepeat 랩 실측(남성 US 9)입니다. 점수(1~10)·평발 호환·예상 수명은 allrunabout이 랩 수치와 구조를 바탕으로 매긴 값이고, 예상 수명은 랩 마모 측정이 아닌 추정입니다.</small></p>
-
-<p><strong>한 줄 정리:</strong> 맥스 2는 "더 높은 스택 + 강화된 로커"를 얻는 대신 "힐 충격흡수 11 SA + 무게 13g + 토박스 0.9mm"를 내줬습니다. 폼은 같은 경도라 단순 상위호환이 아니라 <strong>형상이 다른 형제</strong>예요.</p>
-
-<h2>핵심 변화 — "같은 폼, 더 높은 스택" 그런데 힐 충격흡수는 v1이 위</h2>
-
-<p>v1과 맥스 2를 같은 기준(RunRepeat 랩)끼리 놓으면, 바뀐 것은 폼의 성질이 아니라 <strong>높이·무게·형상</strong>입니다.</p>
-
-<div class="callout warning">
-  <span class="callout-icon">🔄</span>
-  <div class="callout-body">
-    <p class="callout-title">랩 수치로 본 세대 차 — 폼은 그대로, 형상이 바뀌었다</p>
-    <table>
-      <thead>
-        <tr><th></th><th>v1</th><th>맥스 2</th></tr>
-      </thead>
-      <tbody>
-        <tr><td><strong>폼 경도</strong></td><td>31.9 AC</td><td>30.9 AC — 둘 다 부드러운 쪽, 차이 1.0 AC</td></tr>
-        <tr><td><strong>힐 충격흡수</strong></td><td>148 SA</td><td>137 SA — 스택이 높아졌는데 −11</td></tr>
-        <tr><td><strong>스택·드롭</strong></td><td>42.3/35.7mm · 6.6mm</td><td>45.4/37.3mm · 8.1mm — 뒤꿈치가 더 많이 높아져 드롭 +1.5mm</td></tr>
-        <tr><td><strong>무게</strong></td><td>305g</td><td>318g — +13g</td></tr>
-        <tr><td><strong>전족부 에너지 리턴</strong></td><td>52.0%</td><td>49.6% — 둘 다 랩 평균 61.5%보다 낮음</td></tr>
-        <tr><td><strong>형상</strong></td><td>—</td><td>강화된 로커 지오메트리 (브랜드 표기)</td></tr>
-      </tbody>
-    </table>
-  </div>
-</div>
-
-<p>스택이 높아지면 충격흡수도 오른다고 생각하기 쉽지만, 이 두 세대에서는 반대로 나왔습니다. 같은 RunRepeat 힐 기준으로 호카 본디 9는 146 SA라, 충격흡수 수치만 줄 세우면 <strong>v1(148) > 본디 9(146) > 맥스 2(137)</strong> 순입니다. 왜 이렇게 나왔는지(폼 배치·형상 등)는 랩 수치만으로 단정할 수 없으므로, 이 글은 측정된 결과만 기준으로 삼습니다.</p>
-
-<h2>5가지 핵심 변화 점검</h2>
-
-<h3>1. 힐 스택 42.3→45.4mm(랩) ⚠️ 높아졌지만 힐 충격흡수는 148→137 SA</h3>
-<p>브랜드 표기로 맥스 2는 힐 47mm·전족부 41mm·드롭 6mm입니다. v1의 브랜드 표기 스택은 이 글 기준으로 확인하지 못해, 세대 차는 <strong>랩 실측끼리만</strong> 계산했습니다. 랩 기준 힐 +3.1mm, 전족부 +1.6mm로 뒤꿈치가 더 많이 높아져 드롭이 6.6→8.1mm로 1.5mm 커졌습니다. 초판에 적었던 "+5mm"는 v1 랩 값과 맥스 2 브랜드 값을 섞어 뺀 수치였습니다. 그리고 높이가 늘었는데도 랩 힐 충격흡수는 148→137 SA로 11 내려갔습니다. "더 높으니 착지 충격을 더 받아 준다"는 기대로 맥스 2를 고른다면, 수치는 그 기대를 뒷받침하지 않습니다.</p>
-
-<h3>2. DNA Tuned 폼 경도 31.9→30.9 AC ✅ 사실상 같음 (쿠션 점수는 9→8)</h3>
-<p>두 세대 모두 DNA Tuned 미드솔이고, RunRepeat 랩 경도는 v1 31.9 AC, 맥스 2 30.9 AC입니다. AC 값은 낮을수록 부드러운 쪽이라 맥스 2가 1.0 AC 더 무르게 나왔지만, 이 정도면 같은 경도로 보는 게 맞습니다. <strong>"맥스 2는 폼이 단단해졌다"는 초판의 전제는 수치로 확인되지 않습니다.</strong> 쿠션 점수는 9→8로 한 칸 낮게 매겨져 있는데, 경도로는 설명되지 않는 차이이고 랩 수치 중 같은 방향으로 움직인 것은 힐 충격흡수(148→137 SA)입니다. 부드러운 폼 자체가 목적이라면 두 세대 중 어느 쪽을 골라도 차이가 없습니다.</p>
-
-<h3>3. 강화된 로커 + 안정성 점수 6→7 ✅ 대신 무게 +13g</h3>
-<p>브룩스는 맥스 2에 <strong>강화된 로커 지오메트리</strong>를 적용했다고 밝혔고, 안정성 점수도 6→7로 한 칸 높습니다. 다만 이 점수 차를 직접 뒷받침하는 랩 수치는 이 글이 기준으로 삼는 데이터에 아직 없어, 흔들림이 얼마나 줄었는지를 숫자로 말할 수는 없습니다. 반대로 수치로 확인되는 비용은 무게(305→318g, +13g)와 전족부 에너지 리턴(52.0→49.6%)입니다. 로커 형상이 목적이라면 의미 있는 변화이고, 그 밖의 이유로는 업그레이드 근거가 약합니다.</p>
-
-<h3>4. 토박스 74.3→73.4mm, 전체 폭 94.5→96.5mm ⚠️ 와이드는 두 세대 모두 국내 공식 경로 없음</h3>
-<p>토박스 등급은 v1 wide → 맥스 2 standard로 바뀌었지만 수치 차이는 작습니다. 랩 토박스는 0.9mm 줄었고(평균 73.2mm), 발 중간 쪽 전체 폭(Width/Fit)은 오히려 2.0mm 넓어졌습니다. v1이 wide로 분류된 건 RunRepeat가 "feels roomy thanks to the stretchy mesh and the broader midfoot area"라고 평가했기 때문이고, 맥스 2에는 "It’s not the roomiest design we’ve tested, but it should comfortably work for most runners"라고 적었습니다. 그래서 <strong>보통 발볼이라면 맥스 2도 정사이즈부터</strong> 보면 됩니다. 와이드 옵션은 두 세대 모두 한국 공식 경로가 없습니다. 맥스 2는 한국 공식몰에서 남녀 모두 MEDIUM만 판매하고(2026-10-20 확인), v1은 한국 공식몰에 모델 자체가 없습니다(2026-10-23 확인). 그래서 v1의 강점은 와이드 옵션이 아니라 <strong>넓은 토박스(랩 74.3mm)</strong>입니다. 와이드가 꼭 필요한 발이라면 한국 공식몰에 와이드가 있는 <a href="/shoes/new-balance-1080-v15">NB 1080 v15</a>(남성 2E, 209,000원)나 <a href="/shoes/brooks-ghost-18">브룩스 고스트 18</a>(WIDE, 169,000원)을 보는 편이 안전합니다. <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너 신발 가이드 →</a></p>
-
-<h3>5. 예상 수명 600~800km → 500~700km(추정) ⚠️ km당 비용 상승</h3>
-<p>예상 수명 범위가 v1 600~800km, 맥스 2 500~700km로 100km 아래에 잡혀 있습니다. 둘 다 랩 마모 측정이 아닌 추정이라 범위로만 봐야 하고, 실제 교체 시점은 아웃솔 마모·미드솔 주름·새로 생긴 통증으로 판단합니다(<a href="/blog/running-shoe-500km-replacement-myth-2026">500km 교체설 검증 →</a>). 정가를 이 범위로 나누면 km당 비용은 v1 약 300~400원, 맥스 2 약 360~500원입니다. 정가가 1만원 낮고 수명 추정도 높아, 가성비는 v1이 위입니다.</p>
-
-<h2>상황별 구매 결정 매트릭스</h2>
-
-<table>
-  <thead>
-    <tr><th>본인 상황</th><th>추천</th><th>이유</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>발볼이 넓은 편 (와이드까지는 아님)</td><td><strong>v1</strong></td><td>랩 토박스 74.3mm(wide 등급) vs 73.4mm</td></tr>
-    <tr><td>발볼이 아주 넓어 와이드가 필요</td><td>둘 다 국내 공식 경로 없음</td><td>v1은 한국 공식몰 미등재, 맥스 2는 MEDIUM만. 1080 v15(2E)·고스트 18(WIDE) 권장</td></tr>
-    <tr><td>평발 + 맥시멀 쿠션</td><td><strong>v1</strong></td><td>평발 호환 excellent (맥스 2는 good)</td></tr>
-    <tr><td>뒤꿈치 착지 충격흡수 수치 우선</td><td><strong>v1</strong></td><td>랩 힐 148 SA vs 137 SA</td></tr>
-    <tr><td>가성비 우선 (km당 비용)</td><td><strong>v1</strong></td><td>정가 1만원 낮음, 약 300~400원/km vs 360~500원/km(추정)</td></tr>
-    <tr><td>조금이라도 가벼운 쪽</td><td><strong>v1</strong></td><td>랩 305g vs 318g</td></tr>
-    <tr><td>강화된 로커 형상을 원함</td><td><strong>맥스 2</strong></td><td>브랜드가 밝힌 맥스 2 변경점</td></tr>
-    <tr><td>안정성 점수 우선</td><td><strong>맥스 2</strong></td><td>안정성 7/10 (v1 6/10)</td></tr>
-    <tr><td>발 중간 폭 여유</td><td><strong>맥스 2</strong></td><td>랩 Width/Fit 96.5mm vs 94.5mm</td></tr>
-    <tr><td>"부드러운 폼"이 최우선</td><td>둘 다 같음</td><td>랩 경도 31.9 AC vs 30.9 AC</td></tr>
-    <tr><td>무릎 부상 복귀 / 퇴행성 관절 초기</td><td>둘 다 excellent</td><td>kneeIssues 둘 다 최상, 랩 힐 충격흡수는 v1이 높음</td></tr>
-    <tr><td>v1 사용 중 + 아웃솔·미드솔 상태 멀쩡</td><td><strong>v1 계속</strong></td><td>폼 경도가 같아 업그레이드로 얻는 수치 이득이 작음</td></tr>
-    <tr><td>빠른 템포·인터벌 겸용</td><td>둘 다 비권장</td><td>305~318g, 전족부 에너지 리턴 52.0%·49.6%. 템포는 하이페리온 맥스</td></tr>
-  </tbody>
-</table>
-
-<h2>가격 시나리오 — 정가 차는 1만원, 할인가는 구매 시점에 확인</h2>
-
-<div class="callout success">
-  <span class="callout-icon">💰</span>
-  <div class="callout-body">
-    <p class="callout-title">정가와 추정 km당 비용</p>
-    <ul>
-      <li><strong>정가:</strong> v1 239,000원 / 맥스 2 249,000원 — 차이는 1만원뿐</li>
-      <li><strong>km당 비용(추정):</strong> v1 약 300~400원(600~800km) / 맥스 2 약 360~500원(500~700km)</li>
-      <li><strong>할인:</strong> 이 글 기준으로 확인한 할인가·할인 시점 정보는 없습니다. 정가 차가 작아서, v1이 할인 중이라면 가성비 격차는 더 벌어집니다</li>
-      <li><strong>재고:</strong> v1은 한국 공식몰에 모델이 없습니다(2026-10-23 확인). 다른 판매처에서 사이즈별 재고부터 확인하고, 해외에 있을 수 있는 와이드 폭도 판매처에서 확인하세요</li>
-    </ul>
-  </div>
-</div>
-
-<p><strong>가장 합리적 액션:</strong></p>
-<ul>
-  <li><strong>힐 충격흡수·넓은 토박스·평발·가성비 우선:</strong> v1을 찾아보세요. 랩 힐 148 SA·토박스 74.3mm·평발 호환 excellent에 정가도 1만원 낮습니다. 한국 공식몰에는 없으니 다른 판매처 재고를 확인하고, 원하는 사이즈가 없다면 아래 대안 목록에서 고르는 편이 낫습니다</li>
-  <li><strong>와이드(2E)가 꼭 필요:</strong> 두 세대 모두 한국 공식 경로가 없습니다. 1080 v15(남성 2E)나 고스트 18(WIDE)처럼 한국 공식몰에 와이드가 있는 모델로 가세요</li>
-  <li><strong>강화된 로커 형상·안정성 점수 우선:</strong> 맥스 2. 정가 차가 1만원이라 부담은 작지만, 힐 충격흡수 수치가 v1보다 낮다는 점은 알고 고르세요</li>
-  <li><strong>둘 다 처음 + 리커버리 1켤레:</strong> 같은 매장에서 두 세대를 함께 시착해 보세요. 폼 경도는 같으니, 비교할 것은 스택 3mm·무게 13g·드롭 1.5mm 차이와 로커 형상이 본인 발에 맞는지입니다</li>
-</ul>
-
-<h2>한국 러너 부상별 권장</h2>
-
-<table>
-  <thead>
-    <tr><th>부상·체형</th><th>추천</th><th>근거</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>무릎 통증 (러너스 니, 연골연화)</td><td>v1 = 맥스 2</td><td>kneeIssues 둘 다 excellent. 랩 힐 충격흡수는 v1 148 SA, 맥스 2 137 SA</td></tr>
-    <tr><td>족저근막염</td><td>v1 = 맥스 2</td><td>둘 다 excellent, 고스택 맥시멀</td></tr>
-    <tr><td>아킬레스건염</td><td>v1 = 맥스 2</td><td>둘 다 excellent. 랩 드롭 v1 6.6mm, 맥스 2 8.1mm(브랜드 표기 6mm)</td></tr>
-    <tr><td>정강이 부목 (Shin Splints)</td><td>v1 = 맥스 2</td><td>둘 다 excellent. "스택이 높은 맥스 2가 충격을 더 흡수한다"는 랩 수치와 반대(148 vs 137 SA)</td></tr>
-    <tr><td>평발 + 과내전 약함</td><td><strong>v1</strong></td><td>평발 호환 excellent (맥스 2는 good)</td></tr>
-    <tr><td>발볼 넓음 + 압박 싫음</td><td><strong>v1</strong></td><td>랩 토박스 74.3mm(wide 등급), 맥스 2는 73.4mm</td></tr>
-    <tr><td>와이드(2E)가 꼭 필요</td><td>둘 다 국내 공식 경로 없음</td><td>NB 1080 v15(남성 2E)·고스트 18(WIDE)</td></tr>
-    <tr><td>심한 과내전·발목 무너짐</td><td>둘 다 부적합</td><td>안정화 아님. <a href="/shoes/brooks-glycerin-gts-22">글리세린 GTS 22</a> 같은 안정화 권장</td></tr>
-  </tbody>
-</table>
-
-<p>주의: 글리세린 맥스 시리즈는 <strong>중립~경도 평발용 쿠션화</strong>지 안정화가 아닙니다. 발목이 안쪽으로 심하게 무너지는 과내전이라면 GuideRails가 들어간 안정화가 맞아요. 표의 excellent 등급은 신발 구조로 매긴 allrunabout 평가이고, 치료 효과를 뜻하지 않습니다. 통증이 반복된다면 신발보다 훈련량 조정과 전문의 판단이 먼저입니다. 본인 보행 타입이 헷갈리면 <a href="/blog/pronation-type-running-shoe-guide-2026">프로네이션 타입별 러닝화 가이드 →</a>를 먼저 확인하세요. 무릎 통증 종합 정리는 <a href="/blog/knee-pain-running-shoes">무릎 통증 러너 신발 가이드 →</a>.</p>
-
-<h2>비슷한 맥시멀 쿠션 대안</h2>
-
-<p>글리세린 맥스 외 맥시멀 쿠션화 옵션도 비교 가치가 있습니다:</p>
-
-<ul>
-  <li><a href="/shoes/brooks-glycerin-max">브룩스 글리세린 맥스 (v1)</a> — 넓은 토박스(랩 74.3mm) + 랩 힐 충격흡수 148 SA. 한국 공식몰엔 모델이 없어 판매처 재고 확인 필요</li>
-  <li><a href="/shoes/brooks-glycerin-max-2">브룩스 글리세린 맥스 2</a> — 랩 힐 스택 45.4mm(브랜드 47mm) + 강화 로커, 한국 공식몰은 와이드 없음</li>
-  <li><a href="/shoes/hoka-bondi-9">호카 본디 9</a> — 랩 힐 충격흡수 146 SA로 두 세대 사이. 토박스 72.5mm로 좁은 편이라 발볼이 넓으면 와이드 옵션을 고르세요(229,000원). 맞대결은 <a href="/blog/bondi-9-vs-glycerin-max-2-cushion-2026">본디 9 vs 글리세린 맥스 2 →</a></li>
-  <li><a href="/shoes/asics-gel-nimbus-28">아식스 님버스 28</a> — FF BLAST PLUS 미드솔, 랩 278g으로 글리세린 맥스보다 가벼운 쿠션화(199,000원)</li>
-  <li><a href="/shoes/new-balance-1080-v15">NB 1080 v15</a> — Infinion 미드솔, 랩 255g으로 훨씬 가볍고 한국 공식몰에 남성 2E가 있는 장거리 쿠션화(209,000원)</li>
-  <li><a href="/shoes/brooks-ghost-18">브룩스 고스트 18</a> — 맥시멀이 아닌 입문화지만 한국 공식몰에 WIDE가 있음(169,000원). 기본 폭 토박스는 랩 70.6mm로 좁은 편이라 발볼이 넓으면 WIDE를 고르세요</li>
-  <li><a href="/shoes/brooks-ghost-max-3">브룩스 고스트 맥스 3</a> — DNA Loft v3 미드솔의 브룩스 맥스 쿠션화, 179,000원으로 글리세린 맥스 라인보다 저렴</li>
-</ul>
-
-<p>본인 발 특성·부상 이력에 맞춘 후보는 <a href="/recommend">1분 러닝화 추천</a>에서 받을 수 있고, 두 신발 스펙을 직접 나란히 보려면 <a href="/compare">비교 도구</a>를 써보세요.</p>
-
-<h2>FAQ</h2>
-
-<h3>Q. v1 → 맥스 2 업그레이드 가치 있나요?</h3>
-<p>v1의 아웃솔·미드솔 상태가 멀쩡하다면 그냥 굴리세요. 폼 경도가 같아서(31.9 vs 30.9 AC) "더 부드러운 신발"로 바뀌는 게 아닙니다. 맥스 2로 얻는 것은 스택 +3.1mm(랩)·강화된 로커·안정성 점수 +1·전체 폭 +2.0mm이고, 내주는 것은 힐 충격흡수 −11 SA·무게 +13g·토박스 0.9mm·1만원입니다. <strong>로커 형상이 꼭 필요한 경우가 아니라면 갈아탈 이유가 약합니다.</strong></p>
-
-<h3>Q. 발볼 넓은데 맥스 2 괜찮나요?</h3>
-<p>보통 발볼이면 괜찮습니다. 랩 토박스 73.4mm는 평균(73.2mm) 수준이고 전체 폭 96.5mm는 v1(94.5mm)보다 넓으며, RunRepeat도 "it should comfortably work for most runners"라고 적었습니다. 정사이즈부터 시착하면 됩니다. 다만 <strong>와이드가 꼭 필요한 발이라면 맥스 2는 한국 공식몰에 MEDIUM만 있고</strong>(2026-10-20 확인), v1은 한국 공식몰에 모델 자체가 없습니다(2026-10-23 확인). 한국 공식몰에 와이드가 있는 <a href="/shoes/new-balance-1080-v15">NB 1080 v15</a>(남성 2E)나 <a href="/shoes/brooks-ghost-18">브룩스 고스트 18</a>(WIDE)을 보세요.</p>
-
-<h3>Q. 둘 다 빠르게 달릴 수 있나요?</h3>
-<p>아니요. 둘 다 <strong>리커버리·이지런 전용</strong>입니다. 랩 무게 v1 305g, 맥스 2 318g에 전족부 에너지 리턴이 52.0%·49.6%로 랩 평균(61.5%)보다 낮고, 반응성 점수도 둘 다 6입니다. 템포·인터벌을 겸하려면 <a href="/shoes/brooks-hyperion-max-3">하이페리온 맥스 3</a>처럼 PEBA 계열 DNA Gold 미드솔에 랩 283g으로 더 가벼운 신발을 따로 두는 게 맞습니다.</p>
-
-<h3>Q. 무릎이 안 좋은데 어느 쪽이 더 좋나요?</h3>
-<p>둘 다 무릎 보호 excellent 등급입니다. 다만 "스택이 높은 맥스 2가 충격을 더 흡수한다"는 생각은 랩 수치와 반대입니다 — 힐 충격흡수는 <strong>v1 148 SA, 맥스 2 137 SA</strong>로 v1이 높습니다. 뒤꿈치 착지 충격을 줄이는 게 최우선이라면 수치상 v1, 로커로 굴러가는 형상을 원하면 맥스 2입니다. 신발이 관절 질환을 치료하지는 않으니, 부상 복귀라면 전문의 판단과 매장 시착을 함께 거치세요.</p>
-
-<h3>Q. 본디 9 대신 글리세린 맥스를 사야 하나요?</h3>
-<p>같은 RunRepeat 힐 기준 충격흡수는 v1 148 SA, 본디 9 146 SA, 맥스 2 137 SA입니다. 토박스는 본디 9가 72.5mm로 가장 좁지만 와이드 옵션이 있습니다. 가격은 본디 9가 229,000원으로 v1보다 1만원, 맥스 2보다 2만원 낮습니다. <strong>충격흡수 수치와 넓은 토박스를 함께 보면 v1, 맥스 2를 고려 중이라면 같은 가격대에서 충격흡수 수치가 더 높은 본디 9</strong>도 함께 비교해 보세요. 자세한 맞대결은 <a href="/blog/bondi-9-vs-glycerin-max-2-cushion-2026">본디 9 vs 글리세린 맥스 2</a>에 정리했습니다.</p>
-
-<h2>결론 — 내 추천</h2>
-
-<div class="callout success">
-  <span class="callout-icon">🎯</span>
-  <div class="callout-body">
-    <p class="callout-title">같은 폼이라면, 수치로 앞서는 항목이 많은 쪽은 v1</p>
-    <p><strong>힐 충격흡수·넓은 토박스·평발·가성비 우선</strong>이라면 <a href="/shoes/brooks-glycerin-max">글리세린 맥스 v1</a>을 찾는 게 합리적입니다. 랩 힐 148 SA·토박스 74.3mm·평발 excellent·정가 239,000원에 예상 수명 600~800km(추정)까지, 폼 경도가 같은 두 세대 중 v1이 수치로 앞서는 항목이 더 많습니다. 다만 한국 공식몰엔 v1이 없어 판매처 재고부터 확인해야 합니다.</p>
-    <p><strong>강화된 로커 형상과 안정성 점수(7/10)</strong>가 목적이라면 <a href="/shoes/brooks-glycerin-max-2">글리세린 맥스 2</a>. 랩 힐 스택 45.4mm·전체 폭 96.5mm로 더 높고 발 중간이 여유 있지만, 힐 충격흡수는 137 SA로 v1보다 낮고 무게는 318g으로 13g 무겁습니다.</p>
-    <p><strong>와이드(2E)가 꼭 필요</strong>하다면 두 세대 모두 한국 공식 경로가 없습니다. 한국 공식몰에 와이드가 있는 <a href="/shoes/new-balance-1080-v15">NB 1080 v15</a>(남성 2E)나 <a href="/shoes/brooks-ghost-18">브룩스 고스트 18</a>(WIDE)이 현실적인 선택입니다.</p>
-    <p><strong>둘 다 처음 + 리커버리 1켤레</strong>라면 매장에서 동시 시착이 가장 정확합니다. 폼 경도가 같으니, 확인할 것은 높이·무게·로커 형상이 본인 발에 맞는지입니다.</p>
-  </div>
-</div>
-
-<div class="affiliate-cta">
-  <p class="affiliate-cta-label">바로 보기</p>
-  <div class="affiliate-cta-buttons">
-    <a href="/shoes/brooks-glycerin-max-2" class="affiliate-btn pending">
-      <span class="affiliate-btn-store">상세</span>
-      <span class="affiliate-btn-product">글리세린 맥스 2 상세 →</span>
-    </a>
-    <a href="/shoes/brooks-glycerin-max" class="affiliate-btn pending">
-      <span class="affiliate-btn-store">상세</span>
-      <span class="affiliate-btn-product">글리세린 맥스 상세 →</span>
-    </a>
-  </div>
-  <p class="affiliate-disclosure">광고 표기: 일부 링크는 제휴 수수료를 받을 수 있습니다.</p>
-</div>
-
-<h2>다른 세대 비교</h2>
-
-<p>글리세린 맥스가 "리커버리·맥시멀 쿠션"이라면, 데일리·장거리·레이스 카테고리는 다른 신발이 답입니다. 빠른 페이스 훈련은 맥시멀 쿠션화 대신 더 가벼운 데일리·슈퍼트레이너를 따로 두는 편이 맞습니다.</p>
-
-<ul>
-  <li><a href="/blog/adidas-supernova-rise-2-vs-3-comparison">아디다스 슈퍼노바 라이즈 2 vs 3 — 데일리 트레이너 세대 비교</a> (가성비 데일리 쿠션화)</li>
-  <li><a href="/blog/puma-deviate-nitro-3-vs-4-comparison">푸마 디비에이트 나이트로 3 vs 4 — 데일리/템포 플레이트화 비교</a> (반발력 겸용 데일리)</li>
-  <li><a href="/blog/mizuno-wave-rebellion-flash-2-vs-3-comparison">미즈노 웨이브 리벨리온 플래시 2 vs 3 — 슈퍼트레이너 비교</a> (페이스 훈련 분리용)</li>
-  <li><a href="/blog/new-balance-1080-v14-vs-v15-comparison">NB 1080 v14 vs v15 — 쿠션화 세대 비교</a> (장거리 + 부드러움 우선 중립화)</li>
-  <li><a href="/blog/asics-kayano-32-vs-33-comparison">카야노 32 vs 33 — 안정화 세대 비교</a> (평발·과내전 안정화)</li>
-</ul>
-
-<h2>관련 글</h2>
-
-<ul>
-  <li><a href="/blog/knee-pain-running-shoes">무릎 통증 러너 신발 가이드 — 충격흡수·스택 기준 정리</a></li>
-  <li><a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너 추천 신발 — 토박스 실측 정리</a></li>
-  <li><a href="/blog/pronation-type-running-shoe-guide-2026">프로네이션 타입별 러닝화 가이드 2026</a></li>
-  <li><a href="/blog/first-running-shoe-guide-2026">첫 러닝화 고르는 법 2026 — 쿠션화 vs 안정화 선택</a></li>
-  <li><a href="/blog/carbon-plate-running-shoes-lineup-tier-guide-2026">카본 플레이트 슈즈 비교 2026 — 레이스용 분리 가이드</a></li>
-</ul>
-
-<p><small>출처: RunRepeat 랩 테스트(글리세린 맥스 v1·v2, 남성 US 9 — 스택·드롭·무게·힐 충격흡수 SA·경도 AC·전족부 에너지 리턴·토박스·Width/Fit, 본문 인용 포함) / 브룩스 공식 표기(맥스 2 스택 47/41mm·드롭 6mm·강화된 로커 지오메트리) / 한국 공식몰 가격, 맥스 2 사이즈 폭(남녀 MEDIUM, 2026-10-20 확인), v1 한국 공식몰 미등재·고스트 18 WIDE(brooksrunning.co.kr)·1080 v15 남성 2E(nbkorea.com) 2026-10-23 확인 / allrunabout DB 기준일 2026-10-23. 예상 수명과 km당 비용은 랩 마모 측정이 아닌 추정입니다. 2026-10-23 정정: 초판(2026-06-10)의 "맥스 2는 폼이 단단해지고 충격흡수가 올라갔다", "스택 +5mm", "스너그 피팅으로 반 사이즈 업", "v1은 와이드 옵션 있음" 서술과 근거 없는 할인가 예측을 랩 수치와 확인된 정보에 맞춰 고쳤습니다.</small></p>
+<p><strong>2026-11-10 원문 대조 업데이트.</strong> 11월9~10일 확인한 정확 모델 자료를 바탕으로 공시·검체·개인 착화 의견을 나눴습니다. 자체 착화 후기는 아닙니다.</p><h2>선택에서 먼저 볼 차이</h2><p>검체 힐은 2세대가 더 높지만 앞코 높이는 28.8mm에서 24.0mm로 낮게 측정됐습니다. 높은 쿠션을 원하는 것과 발가락 위 공간이 맞는 것은 다른 질문입니다.</p><p>초대는 Matt에게 약간 짧고 앞쪽으로 밀렸으며 2세대에서는 테이퍼·낮은 볼륨이 지적됐습니다. 같은 DNA Tuned 이름으로 모든 발의 착화를 예상할 수 없습니다.</p><figure><img src="/images/shoes/brooks/glycerinmax/side.webp" alt="초대 글리세린 맥스 제품 자료 이미지" loading="lazy"/><figcaption>초대 글리세린 맥스 — 수치와 세대 조건은 본문 원문을 확인하세요.</figcaption></figure><div class="table-wrap"><table><thead><tr><th>모델</th><th>무게</th><th>힐/전족 스택 · 드롭</th><th>힐/전족 SA</th><th>힐/전족 리턴</th><th>내부 최광폭/엄지/높이</th></tr></thead><tbody><tr><td>초대 글리세린 맥스</td><td>305g</td><td>42.3/35.7mm · 6.6mm</td><td>148/138</td><td>52/52%</td><td>94.5/74.3/28.8mm</td></tr><tr><td>글리세린 맥스2</td><td>318g</td><td>45.4/37.3mm · 8.1mm</td><td>137/128</td><td>49.1/미확인%</td><td>96.5/73.4/24mm</td></tr></tbody></table></div><h2>숫자를 읽는 조건</h2><p>위 표는 RunRepeat의 정확 모델 검체 값입니다. 일반 정책은 남성 US9지만 개별 검체 라벨·폭·보정 여부는 미확인입니다. 제조사 공시와 리뷰어의 실제 착화 사이즈는 아래에서 구분합니다. 스택은 내부 길이 12%/75% 위치와 인솔을 포함하는 RR 방법에 따른 값입니다.</p><p>SA는 충격흡수 시험, 리턴은 시험에서 반환된 에너지 비율입니다. 폼이 더 부드럽다거나 무릎 통증·개인 기록이 개선된다는 뜻으로 바꾸지 않습니다. 최광폭·엄지·높이는 서로 다른 내부 치수로 한국 와이드 전체의 치수가 아닙니다. <a href="https://runrepeat.com/testing-methodology" target="_blank" rel="noopener noreferrer">RunRepeat 측정법</a></p><h2>경도·주행감·통증을 구분</h2><p>초대 주폼 31.9AC와 2세대 30.9AC만 보면 비슷해 보이지만 DOR의 Matt·David은 2세대가 더 단단하게 느껴졌다고 적었습니다. 국소 폼 경도와 전체 주행감은 같은 척도가 아닙니다.</p><p>2세대 전족 리턴은 본문 51.3%와 표 49.6%가 충돌해 비웠습니다. 힐은 49.1%로 구분합니다. 더 높은 스택이나 SA만으로 무릎 보호·평발 적합성·공통 주행 수명을 보장하지 않았습니다.</p><h2>초대 글리세린 맥스의 구조·공시</h2><p>초대 DNA TUNED · GlideRoll · 비플레이트</p><p>비플레이트 중립 구조. 강직한 로커를 카본 플레이트로 해석하지 않습니다.</p><p>DOR 소개 309g(남성US9)·264g(여성US8),47/41mm·6mm, RR브랜드 메타 309/269g(사이즈 미확인)와 RR305g·42.3/35.7mm·6.6mm를 구분합니다. DOR의 100마일업데이트 제목만으로 영상·미확인 텍스트의 수명 결과를 만들지 않습니다.</p><h2>초대 글리세린 맥스의 실제 착화에서 갈린 점</h2><p>DOR Matt(남성US10)은 약간 짧고 앞쪽으로 밀려 끈 고정이 필요했으며 테이퍼·카운터 압박을 느꼈습니다. Andrea(여성US9.5)는 높은 중족과 낮은 전족 볼륨, 끈을 조일 때 앞볼 압박·두꺼운 혀의 발등 압박과 더운 메시를 느꼈습니다. Matt의 부드러운 힐과 Andrea의 단단하고 무거운 주행감은 개인차로 남깁니다.</p><p>RR 내부 최광폭 94.5mm·엄지 74.3mm·높이 28.8mm로 개인의 앞발 여유·중족 고정을 함께 확인하세요. 한국 현재 와이드 SKU는 미확인입니다. 한 위치 너비로 모든 넓은 발의 정사이즈를 보장하지 않습니다.</p><h2>초대 글리세린 맥스에서 함께 남긴 한계</h2><p>RR 주폼 31.9AC는 전족·중족·힐 일부를 받치는 노란 영역이며 보조 31.3AC의 위치는 미확인입니다. 고무 69HC와 중창AC는 다른 단위입니다. 저온 17%·구방식통기 5/5·마모 1.2mm를 사계절 편안함·700km 수명으로 바꾸지 않습니다. 관절보호 1위·리커버리런전용·6분/km 경계는 철회했습니다.</p><h2>초대 글리세린 맥스의 한국 판매 확인 범위</h2><p>한국 공식 현재 접속 실패와 검색 한계로 초대의 현행 정가·상품SKU·성별·폭·재고는 미확인입니다. 후속맥스 2의 249,000원이나폭 옵션을 초대에 대입하지 않습니다. 미확인을 단종 확정으로 해석하지 않습니다.</p><h2>글리세린 맥스2의 구조·공시</h2><p>질소 주입 DNA Tuned · 로커</p><p>판 구조나 지지 장치를 질환별 보호 등급으로 바꾸지 않습니다.</p><p>DOR 소개 남성 312g(US9)·여성 283g(US8),47/41mm·드롭 6mm. RR 브랜드칸 45/39mm·6mm, 실측 45.4/37.3mm·8.1mm와 분리.</p><h2>글리세린 맥스2의 실제 착화에서 갈린 점</h2><p>DOR의 Matt과 David은 전작보다 단단한 주행감을 느꼈습니다. RR의 폼 경도·부드러움 설명과 전체 신발의 착화감은 같은 측정이 아닙니다. Matt은 US10에서 앞코 테이퍼와 낮은 볼륨·어퍼 열감·혀 움직임을 지적했습니다.</p><p>한국 남녀 MEDIUM 상품을 확인했지만 와이드 전체 미판매 여부는 미확인입니다. RR 엄지 높이 24.0mm와 DOR의 앞쪽 윗면 압박 의견을 시착 때 확인하세요.</p><h2>글리세린 맥스2에서 함께 남긴 한계</h2><p>RR 전족부 에너지 리턴은 본문 51.3%·결과표 49.6%가 충돌해 확정값을 비웁니다. 힐 49.1%는 본문 값입니다.</p><h2>글리세린 맥스2의 한국 판매 확인 범위</h2><p>한국 공식 원문 남성 MEDIUM 1104791D131, 여성 MEDIUM 1204681B131 정가 249,000원 확인. 현재 할인·재고·한국 와이드SKU는 미확인입니다.</p><h2>매장에서 비교할 질문</h2><p>평소 양말·인솔로 앞쪽 길이와 발톱 위 높이, 끈을 조일 때 발등 압박, 걷고 돌 때 힐 고정과 칼라 마찰을 확인하세요. 앞볼이 넓다는 인상만으로 앞코 전체 높이나 중족 공간까지 맞는다고 가정하지 않습니다.</p><p>몇 분/km면 무조건 이 모델, 몇 km부터 통증이 줄어든다는 공통 경계는 이 자료에서 확인하지 못했습니다. 평발·부상 이력만으로 모델을 처방하거나 국소 마모를 공통 수명으로 환산하지 않았습니다.</p><h2>확인한 원문·상품 조건</h2><ul><li><a href="https://runrepeat.com/brooks-glycerin-max" target="_blank" rel="noopener noreferrer">초대 글리세린 맥스 RR 정확 모델</a> — 실험실 검체·공시를 구분.</li><li><a href="https://www.doctorsofrunning.com/brooks-glycerin-max-review-2024/" target="_blank" rel="noopener noreferrer">초대 글리세린 맥스 DOR 착화 원문</a> — 실제 리뷰어·규격의 개인 의견.</li><li><a href="https://brooksrunning.co.kr/category/%EC%A0%84%EC%B2%B4%EB%B3%B4%EA%B8%B0/134/" target="_blank" rel="noopener noreferrer">한국 공식 검색·접근 확인 범위</a> — 현재 접속 실패. 초대 정확 상품 미확인, 맥스2 값 대입 안 함.</li><li><a href="https://runrepeat.com/brooks-glycerin-max-2" target="_blank" rel="noopener noreferrer">글리세린 맥스2 RR 정확 모델</a> — 실험실 검체·공시를 구분.</li><li><a href="https://www.doctorsofrunning.com/brooks-glycerin-max-2-review-2025/" target="_blank" rel="noopener noreferrer">글리세린 맥스2 DOR 착화 원문</a> — 실제 리뷰어·규격의 개인 의견.</li><li><a href="https://brooksrunning.co.kr/product/남성-글리세린-맥스-2화이트-medium/696/" target="_blank" rel="noopener noreferrer">글리세린 맥스2 한국 공식 확인 상품</a> — 본문 SKU·성별·확인 시점 조건. 현재 재고 보장 아님.</li><li><a href="https://brooksrunning.co.kr/product/여성-글리세린-맥스-2화이트-medium/702/" target="_blank" rel="noopener noreferrer">글리세린 맥스2 한국 공식 확인 상품</a> — 본문 SKU·성별·확인 시점 조건. 현재 재고 보장 아님.</li></ul>
 `,
+    faqs: [
+      {
+        "question": "2세대가 더 푹신한가요?",
+        "answer": "SA·폼 경도·전체 주행감은 다릅니다. DOR에서는 전작보다 단단하게 느꼈다는 의견이 있었습니다."
+      },
+      {
+        "question": "앞코가 더 넓어졌나요?",
+        "answer": "너비뿐 아니라 높이도 봐야 합니다. 해당 RR 검체의 앞코 높이는2세대24.0mm였습니다."
+      }
+    ],
   },
   {
     id: "mizuno-wave-rebellion-flash-2-vs-3-comparison",

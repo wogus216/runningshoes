@@ -4321,73 +4321,34 @@ export const posts_2026_09: BlogPost[] = [
     updatedAt: "2026-11-09",
   },
   {
-    id: 'hoka-cielo-x1-review',
-    slug: 'hoka-cielo-x1-review',
-    title: '호카 씨엘로 X1 후기 | 208g에 46mm PEBA 스택 — 호카의 맥시멀 DNA를 레이싱에',
-    description:
-      '씨엘로 X1은 호카의 아이코닉한 맥시멀 쿠셔닝을 레이싱화에 담은 모델입니다. 208g으로 전작보다 41g 감량했고, 브랜드 표기 46mm 힐 스택(RunRepeat 측정 38.8mm)의 듀얼 덴시티 PEBA 폼과 카본 플레이트가 풀 마라톤 후반에도 쿠셔닝을 유지합니다. 329,000원, 300km 내구성. 와이드 옵션이 없어 발볼 넓은 러너는 시착이 필수입니다.',
-    thumbnail: '/images/blog/hoka-cielo-x1-review.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-09-11',
-    category: 'review' as const,
-    readingTime: 7,
-    tags: ['호카 씨엘로X1', '카본 레이싱화', 'PEBA', '풀마라톤 슈퍼슈즈'],
+    id: "hoka-cielo-x1-review",
+    slug: "hoka-cielo-x1-review",
+    title: "초대 호카 씨엘로 X1 리뷰 —249g·날개형 카본·로커,2.0과 구분하기",
+    description: "2024 초대의 RR249g·39.8/30.3mm·9.5mm를 사용했습니다.2.0의208g을 대입하지 않고 DOR의 갈린 핏·측면 전환 경험을 정리했습니다.",
+    thumbnail: "/images/shoes/hoka/cielox1/side.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-09-11",
+    category: "review",
+    readingTime: 8,
+    tags: [
+      "초대 씨엘로 X1",
+      "핏",
+      "원문 대조"
+    ],
     content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>208g으로 전작(249g) 대비 41g 감량</strong> — 브랜드 표기 스택은 46mm 힐·39mm 전족부이고, RunRepeat 측정(2.0 기준)은 38.8mm·28.1mm(드롭 10.7mm)입니다</li>
-    <li><strong>듀얼 덴시티 PEBA + 카본 플레이트</strong>가 풀 마라톤 35km 이후에도 쿠셔닝을 유지합니다</li>
-    <li><strong>와이드 옵션이 없습니다.</strong> 발볼 넓은 한국 러너는 반드시 시착 후 구매하세요</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">👟</span>
-  <div class="callout-body">
-    <p class="callout-title">한 줄 결론</p>
-    <p><strong>베이퍼플라이의 불안정함이 싫고 풀 마라톤 후반 쿠셔닝을 우선하는 러너</strong>에게 맞습니다. 예산을 줄이려면 <a href="/shoes/hoka-rocket-x-3">로켓 X 3</a>를 함께 보세요.</p>
-  </div>
-</div>
-
-<h2>맥시멀 DNA를 레이싱에</h2>
-<p>씨엘로 X1은 호카의 아이코닉한 맥시멀 쿠셔닝을 레이싱화에 담은 모델입니다. 208g(2.0 기준)으로 전작 대비 41g 감량했고, 브랜드 표기 46mm 힐 스택(RunRepeat 측정 38.8mm)에 듀얼 덴시티 PEBA 폼과 카본 플레이트를 결합했습니다. 공격적인 전족부 로커가 빠른 전환을 돕고, <strong>46mm 맥시멀 스택이 무릎 충격을 효과적으로 분산시켜 후반부 페이스 드롭을 줄여줍니다.</strong></p>
-
-<h2>발볼·부상 — 한국 러너가 궁금해할 것들</h2>
-<ul>
-  <li><strong>"발볼 넓은데 괜찮나요?"</strong> — 토박스가 좁은 편(RunRepeat 2.0 기준 71.3mm, 평균 73.2mm)이고 와이드 옵션이 없습니다. 발볼이 넓다면 반드시 시착해보세요</li>
-  <li><strong>"무릎 괜찮나요?"</strong> — 부상 예방 등급이 족저근막염·아킬레스건·무릎 전부 good입니다. 신 스플린트는 caution입니다</li>
-  <li><strong>"평발인데 신어도 되나요?"</strong> — 평발 호환성이 fair로 다소 아쉽습니다. 안정성 점수도 5/10으로 낮은 편입니다</li>
-</ul>
-
-<h2>PEBA 폼의 수명 — 레이스 전용으로 아껴라</h2>
-<p>PEBA 계열 슈퍼폼은 450km 실도로 마모 실험에서 에너지 리턴을 4분의 1 가까이 잃었습니다(EVA의 손실은 10.5%에 그쳤습니다). 씨엘로의 수명 표기(300km)가 짧은 건 소재의 숙명이니, 레이스·자극 훈련 전용으로 아껴 신는 편이 이 가격의 본전을 뽑는 방법입니다.</p>
-
-<h2>가격 대비 가치</h2>
-<p>329,000원은 <a href="/shoes/hoka-rocket-x-3">로켓 X 3</a>(299,000원)보다 3만원 비싸고, 브랜드 표기 46mm 맥시멀 쿠셔닝을 내세우지만 RunRepeat 측정 힐 스택은 38.8mm(2.0 기준)입니다. 300km 기준 km당 약 1,097원입니다.</p>
-
-<h2>누구에게 맞을까</h2>
-<ul>
-  <li><strong>풀 마라톤 대회용, 서브3:30 마라토너</strong></li>
-  <li><strong>호카 로커를 선호하고 맥시멀 쿠셔닝+레이싱을 겸용하려는 러너</strong></li>
-  <li>반대로 <strong>10K 이하 짧은 거리라면</strong> 스택이 낮고 가벼운 레이서가 더 유리합니다</li>
-</ul>
-
-<h2>마무리</h2>
-<p>씨엘로 X1은 "맥시멀 쿠션은 무겁다"는 통념을 레이싱화에서도 깬 신발입니다. 41g 감량과 브랜드 표기 46mm 스택이라는 조합은 호카가 아니면 내놓기 어려운 조합이고, 후반 페이스 유지가 과제인 러너에게 확실한 답이 됩니다.</p>
+<p><strong>2026-11-10 원문 대조 업데이트.</strong> 11월9~10일 확인한 정확 모델 자료를 바탕으로 공시·검체·개인 착화 의견을 나눴습니다. 자체 착화 후기는 아닙니다.</p><h2>선택에서 먼저 볼 차이</h2><p>이 글의 대상은 2024 초대 씨엘로 X1입니다. 기존에 섞여 있던 2.0의 208g·후속 스택을 제거했습니다. 제품명이 비슷해도 정확 세대의 원문과 상품을 비교해야 합니다.</p><p>초대는 이중 밀도 PEBA와 날개형 카본·강한 로커를 확인한 모델입니다. 다만 낮은 볼륨·측면 전환에서 리뷰어 의견이 갈려 모든 러너의 후반 페이스 유지나 편안함을 보장하지 않습니다.</p><figure><img src="/images/shoes/hoka/cielox1/side.webp" alt="초대 씨엘로 X1 제품 자료 이미지" loading="lazy"/><figcaption>초대 씨엘로 X1 공식 사진 · 1147910-CSSL. 기존 연결 사진은3.0이어서 초대 제조사 사진으로 교체했습니다.</figcaption></figure><div class="table-wrap"><table><thead><tr><th>모델</th><th>무게</th><th>힐/전족 스택 · 드롭</th><th>힐/전족 SA</th><th>힐/전족 리턴</th><th>내부 최광폭/엄지/높이</th></tr></thead><tbody><tr><td>초대 씨엘로 X1</td><td>249g</td><td>39.8/30.3mm · 9.5mm</td><td>147/119</td><td>74.4/75.3%</td><td>93/70.9/27.9mm</td></tr></tbody></table></div><h2>숫자를 읽는 조건</h2><p>위 표는 RunRepeat의 정확 모델 검체 값입니다. 일반 정책은 남성 US9지만 개별 검체 라벨·폭·보정 여부는 미확인입니다. 제조사 공시와 리뷰어의 실제 착화 사이즈는 아래에서 구분합니다. 스택은 내부 길이 12%/75% 위치와 인솔을 포함하는 RR 방법에 따른 값입니다.</p><p>SA는 충격흡수 시험, 리턴은 시험에서 반환된 에너지 비율입니다. 폼이 더 부드럽다거나 무릎 통증·개인 기록이 개선된다는 뜻으로 바꾸지 않습니다. 최광폭·엄지·높이는 서로 다른 내부 치수로 한국 와이드 전체의 치수가 아닙니다. <a href="https://runrepeat.com/testing-methodology" target="_blank" rel="noopener noreferrer">RunRepeat 측정법</a></p><h2>정확 세대에서 확인한 차이</h2><p>RR 검체는 249g·39.8/30.3mm·9.5mm입니다. 경도 15.5HA는 구방식이며 AC와 환산하지 않았습니다. 제조사 공시와 RR 측정 위치·검체 조건도 구분합니다.</p><p>Matt은 발가락 윗면 압박, David은 가쪽 회전·경사에서 컷아웃 방향의 기울어짐을 적었고 Andrea는 같은 불안정을 겪지 않았습니다. 강한 로커나 카본의 존재만으로 한 사람의 착화를 예측할 수 없습니다. 현재 한국 초대 상품·정가는 미확인이며 2.0의 329,000원을 대입하지 않았습니다.</p><h2>초대 씨엘로 X1의 구조·공시</h2><p>초대 2024 X1 이중 밀도 PEBA · 날개형 카본 · 강한 로커</p><p>원형 2024 X1의 날개형 카본.2.0·3.0의무게·폼·스택을대입하지않습니다.</p><p>원형RR실측 249g·39.8/30.3mm·9.5mm입니다. DOR소개 264g(남성US10)·39/32mm와 210g(여성US8)·37/30mm,드롭 7mm는조건을구분합니다. 기존 2.0의 208g·38.8/28.1mm·10.7mm를원형상세에썼던오류를정정합니다.</p><h2>초대 씨엘로 X1의 실제 착화에서 갈린 점</h2><p>DOR Matt(남성US10)은 길이가맞지만낮은볼륨과엄지·다섯째발가락윗면압박을느꼈습니다. David(남성US9.5)는앞쪽에약간여유와좋은고정을느꼈으나경사진길·가쪽회전에서컷아웃방향으로기우는순간을보고했습니다. Andrea(여성US9.5)는앞쪽이편했고David와같은불안정을겪지않았다고적었습니다. 개인핏·굴림차이를모든러너에게일반화하지않습니다.</p><p>한국현재와이드SKU는미확인입니다. 초대RR내부최광폭 93.0mm·엄지 70.9mm·높이 27.9mm를 2.0의 71.3mm로대체하지않습니다.</p><h2>초대 씨엘로 X1에서 함께 남긴 한계</h2><p>초대RR경도 15.5는HA구방식이며AC는미확인입니다. HA를다른두모델의AC와비교·환산하지않습니다. 원문갱신일 2025-01-02이지만후속추가시험의항목별날짜는미공시입니다. 기존 2.0수치혼용·수명 300km·무릎보호·후반페이스보장을제거했습니다.</p><h2>초대 씨엘로 X1의 한국 판매 확인 범위</h2><p>호카 코리아 공식 연결스토어의 현재씨엘로X1검색은후속 2.0두상품만확인돼 초대 2024 X1의현재정가·성별·폭·SKU·재고는미확인입니다.2.0의 329,000원·할인가를원형에대입하지않고,미노출을단종확정으로해석하지않습니다.</p><h2>매장에서 비교할 질문</h2><p>평소 양말·인솔로 앞쪽 길이와 발톱 위 높이, 끈을 조일 때 발등 압박, 걷고 돌 때 힐 고정과 칼라 마찰을 확인하세요. 앞볼이 넓다는 인상만으로 앞코 전체 높이나 중족 공간까지 맞는다고 가정하지 않습니다.</p><p>몇 분/km면 무조건 이 모델, 몇 km부터 통증이 줄어든다는 공통 경계는 이 자료에서 확인하지 못했습니다. 평발·부상 이력만으로 모델을 처방하거나 국소 마모를 공통 수명으로 환산하지 않았습니다.</p><h2>제품 사진의 세대 확인</h2><p><a href="https://dms.deckers.com/hoka/image/upload/1147910-CSSL_1.png" target="_blank" rel="noopener noreferrer">초대 공식 사진 1147910-CSSL</a>을 사용했습니다. <a href="https://www.prnewswire.com/news-releases/hoka-announces-launch-of-the-cielo-x1-a-pinnacle-expression-of-pure-race-speed-302050483.html" target="_blank" rel="noopener noreferrer">HOKA의2024년 초대 발표</a>와 후속2.0·3.0을 구분합니다.</p><h2>확인한 원문·상품 조건</h2><ul><li><a href="https://runrepeat.com/hoka-cielo-x1" target="_blank" rel="noopener noreferrer">초대 씨엘로 X1 RR 정확 모델</a> — 실험실 검체·공시를 구분.</li><li><a href="https://www.doctorsofrunning.com/hoka-cielo-x1-review/" target="_blank" rel="noopener noreferrer">초대 씨엘로 X1 DOR 착화 원문</a> — 실제 리뷰어·규격의 개인 의견.</li></ul>
 `,
     faqs: [
       {
-        question: '로켓 X 3 대신 이걸 사야 할 이유가 있나요?',
-        answer:
-          '풀 마라톤 후반 쿠셔닝을 우선한다면 씨엘로 X1이 낫습니다. 스택은 브랜드 표기 46mm지만 RunRepeat 측정(2.0 기준 38.8mm)으로는 로켓 X 3(40mm)과 비슷합니다. 예산이 우선이거나 더 가벼운 반응성을 원한다면 로켓 X 3(220g)이 대안입니다.',
+        "question": "씨엘로 X1이208g 아닌가요?",
+        "answer": "이 글의 초대 RR 검체는249g입니다. 후속2.0의 수치를 혼용하지 않았습니다."
       },
       {
-        question: '이 신발을 훈련용으로 써도 되나요?',
-        answer:
-          '권장하지 않습니다. PEBA 폼은 450km 실도로 마모에서 에너지 리턴이 크게 떨어집니다. 300km 내구성 표기대로 레이스·자극 훈련 전용으로 아껴 쓰는 것이 경제적입니다.',
-      },
+        "question": "후반 페이스를 유지해 주나요?",
+        "answer": "판·로커 구조나 개인 리뷰만으로 모든 러너의 후반 기록을 보장하지 않습니다."
+      }
     ],
+    updatedAt: "2026-11-10",
   },
   {
     id: 'hoka-rocket-x-3-review',
@@ -4895,74 +4856,34 @@ export const posts_2026_09: BlogPost[] = [
     updatedAt: "2026-11-10",
   },
   {
-    id: 'mizuno-wave-inspire-21-review',
-    slug: 'mizuno-wave-inspire-21-review',
-    title: '미즈노 웨이브 인스파이어 21 후기 | km당 177원, 안정화 카테고리 가성비 1위',
-    description:
-      '웨이브 인스파이어 21은 159,000원에 900km 이상 내구성으로 km당 약 177원 — 안정화 카테고리 최고 가성비입니다. RunRepeat 실측(2025-06-05 게시)도 종합 82점(Great)으로 확인했습니다. Wave 플레이트로 과내전을 제어하고, 전체 폭이 넓은 편(98.4mm)에 와이드 옵션까지 갖춰 발볼 넓은 한국 러너에게 우호적입니다. 다만 토박스는 73.5mm로 RunRepeat 평균 수준입니다.',
-    thumbnail: '/images/blog/mizuno-wave-inspire-21-review.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-09-11',
-    category: 'review' as const,
-    readingTime: 7,
-    tags: ['미즈노 웨이브 인스파이어21', '안정화', '가성비 러닝화', '과내전 러닝화'],
+    id: "mizuno-wave-inspire-21-review",
+    slug: "mizuno-wave-inspire-21-review",
+    title: "웨이브 인스파이어21 리뷰 — 힐 Wave·앞쪽 공간·카운터, 수명 가성비 순위 없이 보기",
+    description: "286g·12.9mm RR 검체와 DOR Matt US10 착화를 구분합니다.26.6HA는 구방식, 한국 SW는 숫자 폭으로 변환하지 않았습니다.",
+    thumbnail: "/images/shoes/mizuno/waveinspire21/side.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-09-11",
+    category: "review",
+    readingTime: 8,
+    tags: [
+      "웨이브 인스파이어21",
+      "핏",
+      "원문 대조"
+    ],
     content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>159,000원·900km 내구성 — km당 약 177원.</strong> 안정화 카테고리 전체에서 가성비 1위입니다</li>
-    <li><strong>RunRepeat 실측 종합 82점(Great)</strong>을 받았습니다(286g, 드롭 12.9mm — 이 사이트 DB와 정확히 일치)</li>
-    <li><strong>전체 폭이 넓고 와이드 옵션도 있어</strong> 발볼 넓은 한국 러너에게 맞는 안정화입니다(토박스 자체는 73.5mm로 평균 수준)</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">👟</span>
-  <div class="callout-body">
-    <p class="callout-title">한 줄 결론</p>
-    <p><strong>과내전·평발로 안정화가 필요한데 가격 부담 없이 시작하고 싶은 러너</strong>에게 망설임 없이 추천할 수 있는 신발입니다.</p>
-  </div>
-</div>
-
-<h2>안정화 카테고리 가성비 1위</h2>
-<p>159,000원에 900km 이상 내구성은 km당 약 177원을 의미합니다. <a href="/shoes/asics-gel-kayano-32">카야노 32</a>(199,000원)의 80% 가격이면서 Wave Plate로 확실한 과내전 제어를 제공합니다. <strong>RunRepeat이 신발을 직접 실측해 매긴 종합 점수는 82점(Great)</strong>이고, 무게 286g·드롭 12.9mm는 이 사이트가 확보한 수치와 정확히 일치합니다 — 두 소스가 독립적으로 같은 값에 도달했다는 뜻입니다.</p>
-
-<h2>발볼·부상 — 한국 러너가 궁금해할 것들</h2>
-<ul>
-  <li><strong>"발볼 넓은데 괜찮나요?"</strong> — 전체 폭 98.4mm·높이 30.9mm로 넓고 높은 편이며(토박스는 73.5mm로 평균 수준), <strong>와이드 옵션까지 있어</strong> 발볼 110mm 이상도 수용합니다</li>
-  <li><strong>"무릎 괜찮나요?"</strong> — 부상 예방 등급이 족저근막염·무릎·신 스플린트 전부 excellent(최상위)입니다</li>
-  <li><strong>"평발인데 괜찮을까요?"</strong> — 평발 호환성이 excellent입니다. "평발인데 괜찮나요?"라는 질문에 자신 있게 추천할 수 있는 신발입니다</li>
-</ul>
-
-<h2>12.9mm 하이드롭 — 힐스트라이커 전용</h2>
-<p>12.9mm의 높은 드롭은 힐스트라이커에게 자연스러운 전환을 유도합니다. 반대로 <strong>53.3% 에너지 리턴은 반발력이 낮은 편</strong>이라, 5분30초~7분30초/km의 느린 페이스 전용입니다. 겨울 경화율이 19%로 낮아 사계절 무난하게 활용할 수 있다는 점은 한국 기후에 우호적입니다.</p>
-
-<h2>가격 대비 가치</h2>
-<p>900km 내구성 기준 km당 약 177원은 안정화 카테고리 최고 가성비입니다. <a href="/shoes/asics-gel-kayano-32">카야노 32</a>나 <a href="/shoes/brooks-adrenaline-gts-25">어드레날린 GTS 25</a>보다 저렴하게 시작하고 싶다면 망설일 이유가 없고, 더 높은 수준의 안정성이나 반발력이 필요하다면 그쪽으로 넘어가기 전 이 신발로 먼저 확인해보는 것도 방법입니다.</p>
-
-<h2>누구에게 맞을까</h2>
-<ul>
-  <li><strong>과내전·평발로 안정화가 필요한 입문~중급 러너</strong></li>
-  <li><strong>발볼이 넓고 높은 한국형 발을 가진 러너</strong></li>
-  <li><strong>가격 부담 없이 안정화를 시작하려는 러너</strong> — km당 177원</li>
-  <li>반대로 <strong>중족부·전족부 착지이거나 빠른 페이스를 원하는 러너</strong>는 맞지 않습니다</li>
-</ul>
-
-<h2>마무리</h2>
-<p>웨이브 인스파이어 21은 "안정화인데 저렴한 것"을 찾는 질문에 가장 정직한 답입니다. RunRepeat의 독립적인 실측이 이 사이트의 데이터와 정확히 일치했다는 점도 신뢰도를 더합니다. 화려하지 않지만, 발볼이 넓고 과내전을 가진 한국 러너에게는 와이드 옵션을 고를 수 있어 실용적인 선택입니다.</p>
+<p><strong>2026-11-10 원문 대조 업데이트.</strong> 11월9~10일 확인한 정확 모델 자료를 바탕으로 공시·검체·개인 착화 의견을 나눴습니다. 자체 착화 후기는 아닙니다.</p><h2>선택에서 먼저 볼 차이</h2><p>인스파이어 21을 km당 비용이나 안정화 가성비 1위로 부르려면 검증된 수명·비교 가격 조건이 필요합니다. 이번 자료에서는 그런 순위를 제거하고 실제 구조와 착화에서 갈린 점을 정리했습니다.</p><p>힐·중족 Wave와 앞쪽 유연성, 낮은 발등 볼륨·카운터 압박을 분리해 볼 수 있습니다. Wave 판의 정확 소재·카본 여부는 이번 자료에서 확인하지 못했습니다.</p><figure><img src="/images/shoes/mizuno/waveinspire21/side.webp" alt="웨이브 인스파이어21 제품 자료 이미지" loading="lazy"/><figcaption>웨이브 인스파이어21 — 수치와 세대 조건은 본문 원문을 확인하세요.</figcaption></figure><div class="table-wrap"><table><thead><tr><th>모델</th><th>무게</th><th>힐/전족 스택 · 드롭</th><th>힐/전족 SA</th><th>힐/전족 리턴</th><th>내부 최광폭/엄지/높이</th></tr></thead><tbody><tr><td>웨이브 인스파이어21</td><td>286g</td><td>38/25.1mm · 12.9mm</td><td>126/99</td><td>53.3/51.5%</td><td>98.4/73.5/30.9mm</td></tr></tbody></table></div><h2>숫자를 읽는 조건</h2><p>위 표는 RunRepeat의 정확 모델 검체 값입니다. 일반 정책은 남성 US9지만 개별 검체 라벨·폭·보정 여부는 미확인입니다. 제조사 공시와 리뷰어의 실제 착화 사이즈는 아래에서 구분합니다. 스택은 내부 길이 12%/75% 위치와 인솔을 포함하는 RR 방법에 따른 값입니다.</p><p>SA는 충격흡수 시험, 리턴은 시험에서 반환된 에너지 비율입니다. 폼이 더 부드럽다거나 무릎 통증·개인 기록이 개선된다는 뜻으로 바꾸지 않습니다. 최광폭·엄지·높이는 서로 다른 내부 치수로 한국 와이드 전체의 치수가 아닙니다. <a href="https://runrepeat.com/testing-methodology" target="_blank" rel="noopener noreferrer">RunRepeat 측정법</a></p><h2>힐과 앞쪽은 같은 느낌이 아닐 수 있습니다</h2><p>Matt은 힐이 단단하고 조금 튕기며 앞쪽은 더 부드럽고 유연하다고 적었습니다. 앞쪽 공간이 넓다는 인상과 낮은 발등 볼륨도 함께 기록했습니다. 전체 신발을 하나의 부드러움 숫자로 요약하지 않았습니다.</p><p>26.6HA는 구방식 ENERZY 경도로 AC와 직접 비교하지 않습니다. 한국 SW 상품 표기는 확인했지만 이를 2E·4E로 임의 매핑하거나 현재 전 사이즈 재고가 있다고 표시하지 않았습니다.</p><h2>웨이브 인스파이어21의 구조·공시</h2><p>ENERZY 본체 · 힐 ENERZY NXT · Wave plate</p><p>판 구조나 지지 장치를 질환별 보호 등급으로 바꾸지 않습니다.</p><p>DOR 소개 남성 292g(US9)·여성 249g(US8),38/26mm·드롭 12mm. RR286g·38/25.1mm·12.9mm와구분. RR브랜드칸 140g은다른원문과충돌해채택하지않습니다.</p><h2>웨이브 인스파이어21의 실제 착화에서 갈린 점</h2><p>DOR의 Matt은 US10에서 길이가 맞고 앞쪽 공간은 넓지만 발등 볼륨이 낮다고 느꼈으며 단단한 카운터 압박을 경험했습니다. 힐은 단단하고 약간 튕기며 앞쪽은 더 부드럽고 유연하다고 평가했습니다. 힐·중족부 Wave plate의 소재와 카본 여부는 이번에 확인하지 못했습니다.</p><p>한국 남성일반·남녀SW 상품을 확인했습니다. RR 내부 98.4/73.5/30.9mm는 해외검체의 다른위치 치수이며 한국SW나 발볼 110mm를 수용한다는 보증이 아닙니다.</p><h2>웨이브 인스파이어21에서 함께 남긴 한계</h2><p>RR 경도는 ENERZY 층 26.6HA 구방식이며 현재AC값·힐ENERZY NXT 경도는 미확인입니다. 다른 모델의AC와 직접 비교·환산하지 않습니다.</p><h2>웨이브 인스파이어21의 한국 판매 확인 범위</h2><p>현행 한국 공식몰kor.mizuno.com에서 남성일반J1GC254455·남성SW J1GC254503·여성SW J1GD254673 정가 159,000원 확인. 확인남성SKU는품절이었고 여성은구매버튼표시만확인해 사이즈별실재고는미확인입니다. SW를 2E·4E로매핑하지않습니다.</p><h2>매장에서 비교할 질문</h2><p>평소 양말·인솔로 앞쪽 길이와 발톱 위 높이, 끈을 조일 때 발등 압박, 걷고 돌 때 힐 고정과 칼라 마찰을 확인하세요. 앞볼이 넓다는 인상만으로 앞코 전체 높이나 중족 공간까지 맞는다고 가정하지 않습니다.</p><p>몇 분/km면 무조건 이 모델, 몇 km부터 통증이 줄어든다는 공통 경계는 이 자료에서 확인하지 못했습니다. 평발·부상 이력만으로 모델을 처방하거나 국소 마모를 공통 수명으로 환산하지 않았습니다.</p><h2>확인한 원문·상품 조건</h2><ul><li><a href="https://runrepeat.com/mizuno-wave-inspire-21" target="_blank" rel="noopener noreferrer">웨이브 인스파이어21 RR 정확 모델</a> — 실험실 검체·공시를 구분.</li><li><a href="https://www.doctorsofrunning.com/mizuno-wave-inspire-21-review-2025/" target="_blank" rel="noopener noreferrer">웨이브 인스파이어21 DOR 착화 원문</a> — 실제 리뷰어·규격의 개인 의견.</li><li><a href="https://kor.mizuno.com/product/detail.html?product_no=10618&amp;cate_no=803&amp;display_group=1&amp;mall=sports" target="_blank" rel="noopener noreferrer">한국 공식 men · SW · J1GC254503</a> — 정가159,000원,확인시점표시판매가111,300원. SKU별재고구분; SW폭코드매핑미확인.</li><li><a href="https://kor.mizuno.com/product/detail.html?product_no=10623&amp;cate_no=803&amp;display_group=1&amp;mall=sports" target="_blank" rel="noopener noreferrer">한국 공식 men · 일반(별도 SW 표기 없음) · J1GC254455</a> — 정가159,000원,확인시점표시판매가111,300원. SKU별재고구분; SW폭코드매핑미확인.</li><li><a href="https://kor.mizuno.com/product/detail.html?cate_no=821&amp;product_no=10072" target="_blank" rel="noopener noreferrer">한국 공식 women · SW (W) · J1GD254673</a> — 정가159,000원,확인시점표시판매가111,300원. SKU별재고구분; SW폭코드매핑미확인.</li></ul>
 `,
     faqs: [
       {
-        question: '카야노 32 대신 이걸 사도 될까요?',
-        answer:
-          '가격 우선이라면 충분합니다. 20% 저렴하면서 Wave Plate로 기본적인 과내전 제어를 제공합니다. 다만 카야노가 제공하는 단계적 지지나 최신 폼 기술까지는 아니므로, 안정성 요구 수준이 높다면 카야노 쪽이 낫습니다.',
+        "question": "km당177원인가요?",
+        "answer": "공통 수명이 검증되지 않아 그 계산과 가성비1위 표현을 제거했습니다."
       },
       {
-        question: '빠르게 뛸 수 있는 신발인가요?',
-        answer:
-          '아닙니다. 에너지 리턴이 53.3%로 낮은 편이라 5분30초~7분30초/km의 느린 페이스 전용입니다. 템포런이나 인터벌에는 맞지 않습니다.',
-      },
+        "question": "SW가4E인가요?",
+        "answer": "이번 정확 한국 상품에서 숫자 폭 대응을 확인하지 못해 SW 그대로 구분합니다."
+      }
     ],
+    updatedAt: "2026-11-10",
   },
   {
     id: "puma-deviate-nitro-elite-4-review",

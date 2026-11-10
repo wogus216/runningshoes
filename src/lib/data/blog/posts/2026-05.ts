@@ -2957,194 +2957,35 @@ export const posts_2026_05: BlogPost[] = [
 `,
   },
   {
-    id: 'on-cloudmonster-2-vs-3-comparison',
-    slug: 'on-cloudmonster-2-vs-3-comparison',
-    title: 'On 클라우드몬스터 2 vs 3 비교 | "푹신함" vs "굴러가는 느낌" — 토박스 넓은 2 살까, 록커 강해진 3 살까',
-    description: '클라우드몬스터 2(292g/219,000원)와 3(295g/229,000원)을 풀데이터로 직접 비교. 록커 강화 + 토박스 축소(RunRepeat 실측 74.5→71.0mm) + 힐 충격흡수(SA 137→123) 트레이드오프. On 맥스 쿠션 입문에 2와 3 중 누가 답인지 상황별 매트릭스로 정리.',
-    thumbnail: '/images/blog/on-cloudmonster-2-vs-3-comparison.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-05-25',
-    category: 'review' as const,
-    readingTime: 10,
-    tags: ['On 클라우드몬스터', '클라우드몬스터 2', '클라우드몬스터 3', '러닝화 비교', 'On 러닝', '맥스 쿠션', '무릎 보호', '러닝화 추천'],
+    id: "on-cloudmonster-2-vs-3-comparison",
+    slug: "on-cloudmonster-2-vs-3-comparison",
+    title: "클라우드몬스터2 vs3 — 일반 Helion·Speedboard·중족 공간·로커 비교",
+    description: "기본형2·3을 Hyper와 구분합니다. RR 검체와 DOR의 혀·중족 고정·카운터·로커 경험, 판 소재 설명 충돌을 정리했습니다.",
+    thumbnail: "/images/shoes/on/cloudmonster2.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-05-25",
+    category: "review",
+    readingTime: 8,
+    tags: [
+      "클라우드몬스터2",
+      "기본형 클라우드몬스터3",
+      "핏",
+      "원문 대조"
+    ],
     content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>핏 vs 쿠션감의 트레이드오프</strong> (2 ₩219,000 / 3 ₩229,000) — On 맥스 쿠션이 <strong>"표준 토박스(실측 74.5mm) + 푹신함"의 2</strong>에서 <strong>"더 좁아진 토박스(실측 71.0mm) + 강한 록커"의 3</strong>로 정체성 일부 전환</li>
-    <li>3의 진짜 변화 3가지: <strong>앞발 공간 축소 (토박스 실측 74.5→71.0mm)</strong> + <strong>강한 록커 굴러가는 느낌</strong> + <strong>힐 충격흡수 SA 137→123 약간 단단해진 착지</strong>(스택은 실측 37.9→38.6mm로 비슷)</li>
-    <li>가격 +10,000원에 km당 비용은 ₩438 → ₩458 살짝 악화. 무릎 보호·푹신함 우선이면 2 이월 매력적, 토박스 여유가 우선이면 실측상 더 넓은 2가 유리(3는 71.0mm로 평균 이하)</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">📊</span>
-  <div class="callout-body">
-    <p class="callout-title">이 글의 데이터 소스</p>
-    <p>On 한국 공식 가격(2026-05-25 기준) + 클라우드몬스터 2·3 신발 DB 풀데이터(RunRepeat 힐 SA 137 / 56.5% 에너지 리턴 등 Lab 측정치) + Doctors of Running·Believe in the Run 리뷰. 양 신발 단독 분석은 <a href="/shoes/on-cloudmonster-2">클라우드몬스터 2 상세</a> · <a href="/shoes/on-cloudmonster-3">클라우드몬스터 3 상세</a>에서 확인.</p>
-  </div>
-</div>
-
-<h2>한눈에 비교</h2>
-
-<table>
-  <thead>
-    <tr><th>항목</th><th>클라우드몬스터 2</th><th>클라우드몬스터 3</th><th>차이</th></tr>
-  </thead>
-  <tbody>
-    <tr><td><strong>출시</strong></td><td>2024년</td><td><strong>2026년</strong></td><td>2년차 vs 신상</td></tr>
-    <tr><td><strong>MSRP</strong></td><td>219,000원</td><td><strong>229,000원</strong></td><td>+10,000원</td></tr>
-    <tr><td><strong>이월/세일가</strong></td><td><strong>175,000~195,000원</strong></td><td>215,000~225,000원</td><td>실제 차이 ~3~4만원</td></tr>
-    <tr><td><strong>무게 (US M9)</strong></td><td>292g</td><td>295g</td><td>+3g (거의 동일)</td></tr>
-    <tr><td><strong>힐 스택 (RunRepeat 실측)</strong></td><td>37.9mm</td><td>38.6mm</td><td>+0.7mm (거의 동일)</td></tr>
-    <tr><td><strong>전족부 스택 (RunRepeat 실측)</strong></td><td>31.3mm</td><td>32.2mm</td><td>+0.9mm</td></tr>
-    <tr><td><strong>드롭 (RunRepeat 실측)</strong></td><td>6.6mm</td><td>6.4mm</td><td>-0.2mm (On 공식은 둘 다 6mm)</td></tr>
-    <tr><td><strong>미드솔</strong></td><td>Helion HF + CloudTec 더블 레이어</td><td>Helion HF + CloudTec</td><td>포뮬레이션 미세 조정</td></tr>
-    <tr><td><strong>록커</strong></td><td>보통</td><td><strong>강한 록커</strong></td><td>굴러가는 느낌 ↑</td></tr>
-    <tr><td><strong>앞발 핏</strong></td><td>토박스 74.5mm (실측)</td><td><strong>토박스 71.0mm (실측)</strong></td><td>-3.5mm 좁아짐</td></tr>
-    <tr><td><strong>힐 SA (충격 흡수)</strong></td><td>137 (RunRepeat)</td><td>123 (RunRepeat)</td><td>-14 SA</td></tr>
-    <tr><td><strong>에너지 리턴</strong></td><td>56.5%</td><td>58.7%</td><td>+2.2%p</td></tr>
-    <tr><td><strong>한국 와이드 SKU</strong></td><td>없음</td><td>없음</td><td>양쪽 모두 ❌</td></tr>
-    <tr><td><strong>내구성</strong></td><td>500km</td><td>500km</td><td>동일</td></tr>
-    <tr><td><strong>km당 비용</strong></td><td>약 ₩438</td><td>약 ₩458</td><td>+₩20 살짝 악화</td></tr>
-    <tr><td><strong>최적 페이스</strong></td><td>5:00~6:30/km</td><td>5:10~6:30/km</td><td>동일 (느린 조깅)</td></tr>
-  </tbody>
-</table>
-
-<h2>3의 진짜 변화 3가지</h2>
-
-<h3>1. 앞발 핏 — 넓어지지 않고 오히려 좁아졌다</h3>
-
-<p>클라우드몬스터 2에서 가장 자주 지적된 약점이 "<strong>토박스가 좁다</strong>"였습니다. 표준 폭(D)인데도 앞볼 여유가 부족하다는 지적이 해외 리뷰에서 반복됐고, 와이드 옵션도 없어 발볼 4E급은 선택 자체가 어려웠습니다.</p>
-
-<p>그런데 RunRepeat 실측 토박스는 2의 74.5mm에서 3는 <strong>71.0mm로 오히려 좁아졌습니다</strong>(랩 평균 73.2mm보다 2.2mm 좁음, 랩 평가 "below the average"). 한국 공식몰은 레귤러만 판매해 <strong>와이드 옵션도 없음</strong> — 2의 앞볼이 답답했다면 3로는 해결되지 않고, 발볼 4E급은 여전히 부적합.</p>
-
-<h3>2. 강한 록커 — "푹신함"에서 "굴러가는 느낌"으로</h3>
-
-<p>2의 더블 레이어 CloudTec은 Cloud pod가 개별 압축되면서 만들어내는 <strong>"푹신한 착지감"</strong>이 핵심 정체성이었습니다. 호불호 갈리지만 무릎 약한 러너에게는 큰 매력.</p>
-
-<p>3는 <strong>록커 지오메트리를 강화</strong>해 착지 후 자연스럽게 앞으로 밀어주는 라이드를 만들었습니다. 호카 클리프턴·본디 같은 강한 록커 신발의 사상에 더 가까워진 셈입니다.</p>
-
-<p><strong>성격 차이</strong>: 2는 무릎 보호 + 푹신함이 결정적, 3는 자연스러운 페이스 유지가 강점.</p>
-
-<h3>3. 힐 충격흡수 SA 137→123 — 약간 단단해진 착지</h3>
-
-<p>스택 높이는 거의 그대로입니다. RunRepeat 실측 힐 스택은 37.9mm → 38.6mm로 오히려 0.7mm 높아졌습니다(On 공식 35mm는 인솔 제외 기준이라 실측과 직접 비교하면 안 됩니다). 달라진 건 충격흡수입니다. 같은 랩의 힐 SA가 137 → 123으로 줄어, 2의 압도적 푹신함은 약간 누그러진 셈입니다. 절대 수치로는 여전히 맥스 쿠션 영역(33mm 이상이 일반적 max cushion 기준)입니다.</p>
-
-<p>대신 록커 강화와 결합돼 <strong>"부드럽지만 흐물거리지 않는"</strong> 라이드를 만듭니다. 빠른 페이스(5분/km 안팎)에서는 3가 약간 더 자연스럽고, 매우 느린 LSD 회복 페이스에서는 2의 푹신함이 그리울 수 있습니다.</p>
-
-<h2>가격 시나리오 — 2 이월 vs 3 신상</h2>
-
-<div class="callout success">
-  <span class="callout-icon">💰</span>
-  <div class="callout-body">
-    <p class="callout-title">2026 5~12월 클라우드몬스터 가격 전망</p>
-    <ul>
-      <li><strong>지금 (2026 5월):</strong> 2 18~20만원 (이월 풀림) / 3 22만 9천원 정가 → 가성비는 2 압승</li>
-      <li><strong>여름 시즌오프 (7~8월):</strong> 2 17~18만원 / 3 21~22만원 일부 할인 시작 → 2 가성비 정점, 인기 사이즈 빠짐 시작</li>
-      <li><strong>가을 시즌인 (9~10월):</strong> 2 18만원 (재고 빠르게 감소) / 3 22만원 안정 → 2 사이즈 빠짐 주의</li>
-      <li><strong>블랙프라이데이 (11월):</strong> 2 14~17만원 (특가) / 3 18~20만원 → 양쪽 매력적</li>
-      <li><strong>12월~2027년 1월:</strong> 2 사실상 단종 임박 / 3 18~20만원 안정 → 3 위주로 흐름 전환</li>
-    </ul>
-  </div>
-</div>
-
-<h2>상황별 구매 결정 매트릭스</h2>
-
-<table>
-  <thead>
-    <tr><th>상황</th><th>추천</th><th>이유</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>무릎 약함 + 푹신한 쿠션 우선</td><td><strong>2 이월 18~20만원</strong></td><td>137 SA 충격흡수 + 더블 CloudTec 푹신함</td></tr>
-    <tr><td>2 쓰다가 토박스 압박 불만</td><td><strong>3 비추</strong></td><td>3 토박스는 실측 71.0mm로 2(74.5mm)보다 좁음 — 와이드 옵션 있는 대안 검토</td></tr>
-    <tr><td>장거리 LSD (15~25km) 회복 페이스</td><td>2</td><td>힐 SA 137 충격흡수의 푹신함이 후반부 결정적</td></tr>
-    <tr><td>데일리 easy run (5~10km)</td><td>3</td><td>강한 록커가 자연스러운 페이스 유지</td></tr>
-    <tr><td>발볼 표준 + 가성비</td><td>2 블프 14~17만원</td><td>km당 ₩438 최저 가격대 진입</td></tr>
-    <tr><td>발볼 4E급</td><td>둘 다 비추</td><td>양쪽 모두 와이드 ❌ → <a href="/shoes/new-balance-1080-v15">NB 1080 v15</a>(4E 옵션) 또는 <a href="/shoes/hoka-clifton-10">호카 클리프턴 10</a></td></tr>
-    <tr><td>여름 한강·서울숲 러닝</td><td>둘 다 주의</td><td>통기성 약점 (2/5). <a href="/shoes/asics-gel-nimbus-28">님버스 28</a>·<a href="/shoes/new-balance-1080-v15">1080 v15</a> 같은 통기성 좋은 쿠션화 고려</td></tr>
-    <tr><td>심한 과내전·평발</td><td>둘 다 비추</td><td>중립화. <a href="/blog/asics-kayano-32-vs-33-comparison">카야노 32/33</a> 같은 안정화 권장</td></tr>
-  </tbody>
-</table>
-
-<h2>다른 맥스 쿠션 옵션과 비교</h2>
-
-<ul>
-  <li><strong><a href="/shoes/new-balance-1080-v15">NB 1080 v15</a> (255g, 209,000원)</strong> — 인피니온 폼 + 4E 와이드 옵션. 발볼 넓은 한국 러너 최우선 대안. 무게도 클라우드몬스터 2·3보다 37~46g 가벼움(RunRepeat 실측 255g vs 292·301g)</li>
-  <li><strong><a href="/shoes/asics-gel-nimbus-28">아식스 님버스 28</a> (278g, 199,000원)</strong> — FF Blast+ 풀스택 + 와이드 옵션. 통기성 우위. 무게는 클라우드몬스터 2(292g)보다 14g 가벼움(RunRepeat 실측 US M9)</li>
-  <li><strong><a href="/shoes/hoka-clifton-10">호카 클리프턴 10</a> (275g, 199,000원)</strong> — 맥스 쿠션 가성비 1위. 강한 록커 사상 + 19만원대. 클라우드몬스터 3와 직접 경쟁</li>
-  <li><strong><a href="/shoes/on-cloudmonster-hyper">On 클라우드몬스터 하이퍼</a> (258g, 259,000원)</strong> — 같은 라인업 Pebax 폼 + Speedboard. 템포런 겸용 슈퍼트레이너 사상. 4만원 추가 비용으로 페이스 욕심 가능</li>
-</ul>
-
-<h2>FAQ</h2>
-
-<h3>Q. 2 → 3 업그레이드 가치 있나요?</h3>
-<p>2가 500km 안 신었다면 그냥 2 굴리세요. 2의 푹신함에 만족했다면 3는 미묘하게 단단해진 라이드라 만족도가 약간 떨어질 수 있습니다. 반대로 <strong>"좀 더 굴러가는 느낌이 필요하다"</strong> 싶다면 3. 단 <strong>"2 토박스가 좁아서 발가락 압박 있었다"</strong>면 3는 답이 아닙니다 — 3의 토박스는 실측 71.0mm로 2(74.5mm)보다 좁습니다.</p>
-
-<h3>Q. On 클라우드몬스터가 처음인데 2와 3 중 뭐가 좋나요?</h3>
-<p>발볼 표준이면 <strong>2 이월 18~20만원</strong>이 가성비 최강. 137 SA 충격흡수와 푹신한 CloudTec 착지감은 On의 본질을 잘 보여주고, 4만원 절약. 발볼이 표준보다 약간 넓다면 토박스 실측이 더 넓은 <strong>2(74.5mm)</strong>가 3(71.0mm)보다 유리. 매장 착화로 양쪽 비교가 가장 정확합니다.</p>
-
-<h3>Q. 풀코스 가능한가요?</h3>
-<p>2는 무겁지만 137 SA 충격흡수가 풀코스 30~35km 이후 무릎 보호에 유리. 다만 <strong>292~295g 무게</strong>로 빠른 페이스(Sub-3:30 이하)는 부담. Sub-4 ~ Sub-5 완주 목표 + 무릎 안전 우선이라면 두 모델 모두 OK. 페이스 욕심 있다면 <a href="/shoes/on-cloudmonster-hyper">클라우드몬스터 하이퍼</a> 또는 <a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a> 분리.</p>
-
-<h3>Q. 한여름 한강 러닝에 적합한가요?</h3>
-<p><strong>둘 다 비추</strong>. RunRepeat 통기성 2/5로 7~8월 한강 러닝에는 발이 답답할 수 있습니다. 여름 전용으론 <a href="/shoes/asics-gel-nimbus-28">님버스 28</a>이나 <a href="/shoes/new-balance-1080-v15">1080 v15</a> 같은 통기성 좋은 모델 추천. 봄·가을·겨울이 클라우드몬스터 시즌입니다.</p>
-
-<h3>Q. 발볼 넓은데 클라우드몬스터 살 수 있나요?</h3>
-<p>실측 토박스는 오히려 3(71.0mm)가 2(74.5mm)보다 좁고 <strong>와이드 옵션은 양쪽 모두 없음</strong>. 발볼 standard~약간 넓음까지는 2가 그나마 낫고, 4E급이면 비추. 4E라면 <a href="/blog/new-balance-1080-v14-vs-v15-comparison">NB 1080 v15(4E 옵션)</a>가 사실상 유일한 맥스 쿠션 대안. <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 러너 가이드 →</a></p>
-
-<h2>결론 — 내 추천</h2>
-
-<div class="callout success">
-  <span class="callout-icon">🎯</span>
-  <div class="callout-body">
-    <p class="callout-title">푹신함·가성비 vs 록커 전환감 — 본인 우선순위로 명확히 갈리는 선택</p>
-    <p><strong>무릎 약함 + 푹신한 쿠션 + 가성비 우선</strong>이라면 <a href="/shoes/on-cloudmonster-2">클라우드몬스터 2</a> 이월 18~20만원. 137 SA 충격흡수와 더블 CloudTec 푹신함은 On 맥스 쿠션의 본질이고, 3보다 4만원 절약. 블프(11월)에 14~17만원까지 갈 가능성 있지만 인기 사이즈 빠짐 주의.</p>
-    <p><strong>굴러가는 페이스 유지</strong>가 우선이면 <a href="/shoes/on-cloudmonster-3">클라우드몬스터 3</a> 정가 22만 9천원. 토박스는 실측 71.0mm로 2(74.5mm)보다 좁아졌으니 발볼 여유는 기대하지 말고, 강한 록커가 자연스러운 페이스 유지를 도와줍니다. 데일리 easy run에 가장 자연스러운 라이드.</p>
-    <p><strong>발볼 4E급 또는 여름 전용 한국 러너</strong>는 둘 다 부적합. 4E는 <a href="/shoes/new-balance-1080-v15">NB 1080 v15</a>(4E 옵션), 여름은 <a href="/shoes/asics-gel-nimbus-28">님버스 28</a>이 더 적합한 선택입니다.</p>
-  </div>
-</div>
-
-<div class="affiliate-cta">
-  <p class="affiliate-cta-label">바로 구매</p>
-  <div class="affiliate-cta-buttons">
-    <a href="https://naver.me/FgTYWGaO" class="affiliate-btn naver" target="_blank" rel="nofollow sponsored noopener">
-      <span class="affiliate-btn-store">네이버</span>
-      <span class="affiliate-btn-product">클라우드몬스터 2 최저가 →</span>
-    </a>
-    <a href="/shoes/on-cloudmonster-3" class="affiliate-btn pending">
-      <span class="affiliate-btn-store">상세</span>
-      <span class="affiliate-btn-product">클라우드몬스터 3 정보 →</span>
-    </a>
-  </div>
-  <p class="affiliate-disclosure">광고 표기: 위 링크는 네이버 브랜드 커넥트 추적 코드가 포함되며, 일정 수수료를 받을 수 있습니다.</p>
-</div>
-
-<p>본인 발 특성·부상 이력에 맞춘 신발 후보는 <a href="/recommend">1분 러닝화 추천</a>에서 받을 수 있습니다.</p>
-
-<h2>다른 카테고리 세대 비교</h2>
-
-<p>클라우드몬스터가 "맥스 쿠션 데일리"라면, 본인 러닝 목적에 맞춰 다음 카테고리도 같이 보세요. 모두 동일 비교 포맷.</p>
-
-<ul>
-  <li><a href="/blog/new-balance-1080-v14-vs-v15-comparison">NB 1080 v14 vs v15 — 쿠션화 세대 비교</a> (4E 와이드 옵션 + 인피니온 폼)</li>
-  <li><a href="/blog/nike-pegasus-41-vs-42-comparison">페가수스 41 vs 42 — 데일리 트레이너</a> (가벼운 데일리 옵션)</li>
-  <li><a href="/blog/asics-kayano-32-vs-33-comparison">카야노 32 vs 33 — 안정화</a> (평발·과내전 + 무릎 보호)</li>
-  <li><a href="/blog/asics-magic-speed-4-vs-5-comparison">매직스피드 4 vs 5 — 가성비 카본 레이서</a> (페이스 훈련 분리용)</li>
-  <li><a href="/blog/asics-superblast-2-vs-3-comparison">슈퍼블라스트 2 vs 3 — 카본 없는 슈퍼트레이너</a> (장거리 페이스 훈련용)</li>
-</ul>
-
-<h2>관련 글</h2>
-
-<ul>
-  <li><a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너 추천 신발 — 토박스 실측 정리</a></li>
-  <li><a href="/blog/knee-pain-running-shoes">무릎 통증 러너 신발 가이드</a></li>
-  <li><a href="/blog/first-running-shoe-guide-2026">첫 러닝화 고르는 법 2026</a></li>
-  <li><a href="/blog/running-shoe-lifespan-replacement-guide">러닝화 수명·교체 가이드</a></li>
-</ul>
-
-<p><small>출처: On 한국 공식 가격(2026-05-25 기준) / 클라우드몬스터 2·3 신발 DB 풀데이터(RunRepeat 힐 SA 137 / 56.5% 에너지 리턴 등 Lab 측정치) / Doctors of Running·Believe in the Run 리뷰. 가격은 시즌·세일에 따라 변동되니 구매 시점 공식몰·이월 행사 확인 필수.</small></p>
+<p><strong>2026-11-10 원문 대조 업데이트.</strong> 11월9~10일 확인한 정확 모델 자료를 바탕으로 공시·검체·개인 착화 의견을 나눴습니다. 자체 착화 후기는 아닙니다.</p><h2>선택에서 먼저 볼 차이</h2><p>기본형 2·3은 일반 Helion입니다. 상위 Hyper의 Helion HF와 같은 모델로 설명하지 않았습니다.2세대의 여유 있는 앞쪽과 3세대의 중족 밀착·로커를 실제 규격에서 비교할 수 있습니다.</p><p>3세대의 엄지 부위는 해당 RR 검체에서 더 좁게 측정됐지만 한 사람의 발 전체 적합성을 결정하지는 않습니다. 혀 조임·거싯·카운터 자극도 따로 확인해야 합니다.</p><figure><img src="/images/shoes/on/cloudmonster2.webp" alt="클라우드몬스터2 제품 자료 이미지" loading="lazy"/><figcaption>클라우드몬스터2 — 수치와 세대 조건은 본문 원문을 확인하세요.</figcaption></figure><div class="table-wrap"><table><thead><tr><th>모델</th><th>무게</th><th>힐/전족 스택 · 드롭</th><th>힐/전족 SA</th><th>힐/전족 리턴</th><th>내부 최광폭/엄지/높이</th></tr></thead><tbody><tr><td>클라우드몬스터2</td><td>292g</td><td>37.9/31.3mm · 6.6mm</td><td>137/115</td><td>56.5/60.3%</td><td>98.5/74.5/25.3mm</td></tr><tr><td>기본형 클라우드몬스터3</td><td>301g</td><td>38.6/32.2mm · 6.4mm</td><td>123/119</td><td>58.7/56.8%</td><td>94.3/71/25.4mm</td></tr></tbody></table></div><h2>숫자를 읽는 조건</h2><p>위 표는 RunRepeat의 정확 모델 검체 값입니다. 일반 정책은 남성 US9지만 개별 검체 라벨·폭·보정 여부는 미확인입니다. 제조사 공시와 리뷰어의 실제 착화 사이즈는 아래에서 구분합니다. 스택은 내부 길이 12%/75% 위치와 인솔을 포함하는 RR 방법에 따른 값입니다.</p><p>SA는 충격흡수 시험, 리턴은 시험에서 반환된 에너지 비율입니다. 폼이 더 부드럽다거나 무릎 통증·개인 기록이 개선된다는 뜻으로 바꾸지 않습니다. 최광폭·엄지·높이는 서로 다른 내부 치수로 한국 와이드 전체의 치수가 아닙니다. <a href="https://runrepeat.com/testing-methodology" target="_blank" rel="noopener noreferrer">RunRepeat 측정법</a></p><h2>판 소재와 강한 로커를 한 가지로 묶지 않기</h2><p>3세대 Speedboard는 On 기본형 공식의 나일론 혼합과 RR의 TPU 표기가 충돌합니다. 어느 쪽을 카본 판으로 바꾸거나 소재 차이만으로 개인 기록 향상을 보장하지 않았습니다.</p><p>Matt의 3세대 아킬레스 자극과 David·Matt의 2세대 혀 압박 차이는 개인 경험입니다. 정적 음의 드롭이나 모든 러너의 아킬레스 질환 위험을 뜻하지 않습니다.</p><h2>클라우드몬스터2의 구조·공시</h2><p>이중 밀도 Helion · CloudTec · Speedboard</p><p>Speedboard가 있습니다. 미국 공식은 나일론 블렌드, RR은 TPU라고 설명해 소재 충돌을 남깁니다. 카본으로 해석하지 않습니다.</p><p>RR 브랜드 메타 35/29mm·6mm·남성 295g/여성 229g은 기준 사이즈 미확인입니다. 미국 공식 300g(사이즈 미확인)·6mm, DOR 남성US9 10.4oz/여성US8 8.1oz·6mm와 RR292g·37.9/31.3mm·6.6mm를 구분합니다.</p><h2>클라우드몬스터2의 실제 착화에서 갈린 점</h2><p>DOR Matt(남성US10)은 넓고 볼륨 있는 힐, 얇은 혀와 끈의 발등 압박·거싯 마찰을 느꼈습니다. David(남성US9.5)는 여유 있는 전족과 끈 조임이 필요했지만 혀가 압박을 막아 줬다고 적었습니다. 단단한 쿠션이라는 공통 인상에도 전족 유연성·통기 체감은 달랐습니다.</p><p>RR 내부 최광폭 98.5mm·엄지 74.5mm·높이 25.3mm는 한국 와이드 검체라고 확인한 값이 아닙니다. 넓은 부분의 너비와 낮은 발등·힐 고정을 함께 확인하세요.</p><h2>클라우드몬스터2에서 함께 남긴 한계</h2><p>일반 Helion을 Helion HF로 적었던 기존 표기를 정정했습니다. 주폼 49.6AC는 아래층이고 보조 61.1AC 위치는 미확인입니다. 구방식 통기 2/5와 David의 통기 체감은 다른 정보입니다. 500km 수명·6분 30초 경계·관절 보호 확정·평발 부하 분산은 입증되지 않아 제거했습니다.</p><h2>클라우드몬스터2의 한국 판매 확인 범위</h2><p>한국 남녀 상품 URL이 목록으로 연결되어 현재 정가·SKU·문자 폭·재고를 확인하지 못했습니다. 해외 Normal/Wide 메타로 한국 판매를 확정하거나 단종으로 단정하지 않습니다.</p><h2>기본형 클라우드몬스터3의 구조·공시</h2><p>Helion 이중 밀도 · 3층 CloudTec · 나일론 혼합 Speedboard</p><p>제조사 기본형 보도자료는 Nylon blend Speedboard로 명시합니다. RR의 TPU 표기와 소재가 충돌하며 카본으로 분류하지 않습니다.</p><p>On 기본형 공식 보도자료는 남성 295g(US8.5)·여성 240g(US7),35/29mm·드롭 6mm. DOR 소개는 같은 무게를 남성US9·여성US8로 적고 35/29mm는 인솔 제외로 명시합니다. RR301g·38.6/32.2mm·6.4mm와 같은 조건으로 빼거나 평균내지 않습니다.</p><h2>기본형 클라우드몬스터3의 실제 착화에서 갈린 점</h2><p>DOR 본문 리뷰어 Matt(남성US10)은 길이가 맞고 앞발·힐이 약간 넉넉하지만 중족부·발등이 낮게 밀착됐다고 느꼈습니다. 단단한 카운터 자극과 빠른 코너의 미끄러짐, 단단한 폼·강한 로커를 언급했습니다. 주행 중 드롭이 낮게 느껴져 본인 아킬레스가 자극된 경험은 정적 음의 드롭이나 모든 러너의 질환 위험을 뜻하지 않습니다. 머리말 byline과 본문 리뷰어가 달라 David의 별도 착화 경험을 만들지 않습니다.</p><p>한국 와이드 SKU는 미확인입니다. RR 내부 최광폭 94.3mm·엄지 71.0mm·높이 25.4mm를 개인 발 적합성에 직접 대입하지 않습니다.</p><h2>기본형 클라우드몬스터3에서 함께 남긴 한계</h2><p>기본형은 Helion이며 상위 Hyper의 Helion HF와 혼용하지 않습니다. Speedboard는 On 공식 나일론 혼합과 RR TPU 표기가 충돌합니다. RR49.9AC와 개인의 압축·로커 체감은 다른 지표입니다.</p><h2>기본형 클라우드몬스터3의 한국 판매 확인 범위</h2><p>한국 공식 남성 3MG10051430·여성 3WG10036028 레귤러 정가 229,000원. 여성 확인 색상은JP22.5~26 일부 선택 가능, 남성 개별 현재 가용 사이즈와 한국 와이드 SKU는 미확인입니다. 무게는 남성 295g·여성 240g으로 표시하나 한국 상품창에는 사이즈 조건이 없습니다.</p><h2>매장에서 비교할 질문</h2><p>평소 양말·인솔로 앞쪽 길이와 발톱 위 높이, 끈을 조일 때 발등 압박, 걷고 돌 때 힐 고정과 칼라 마찰을 확인하세요. 앞볼이 넓다는 인상만으로 앞코 전체 높이나 중족 공간까지 맞는다고 가정하지 않습니다.</p><p>몇 분/km면 무조건 이 모델, 몇 km부터 통증이 줄어든다는 공통 경계는 이 자료에서 확인하지 못했습니다. 평발·부상 이력만으로 모델을 처방하거나 국소 마모를 공통 수명으로 환산하지 않았습니다.</p><h2>확인한 원문·상품 조건</h2><ul><li><a href="https://runrepeat.com/on-cloudmonster-2" target="_blank" rel="noopener noreferrer">클라우드몬스터2 RR 정확 모델</a> — 실험실 검체·공시를 구분.</li><li><a href="https://www.doctorsofrunning.com/on-cloudmonster-2-review-2024/" target="_blank" rel="noopener noreferrer">클라우드몬스터2 DOR 착화 원문</a> — 실제 리뷰어·규격의 개인 의견.</li><li><a href="https://www.on.com/ko-kr/products/cloudmonster-2-m-3me1012" target="_blank" rel="noopener noreferrer">한국 남성 상품 접근 범위</a> — 상품 대신 목록 연결. 현재 판매정보 미확인.</li><li><a href="https://www.on.com/ko-kr/products/cloudmonster-2-w-3we1011" target="_blank" rel="noopener noreferrer">한국 여성 상품 접근 범위</a> — 상품 대신 목록 연결.</li><li><a href="https://www.on.com/en-us/products/cloudmonster-2-m-3me1012" target="_blank" rel="noopener noreferrer">미국 공식 구조·공시</a> — 300g·6mm·나일론 블렌드. 한국 가격 근거 아님.</li><li><a href="https://runrepeat.com/on-cloudmonster-3" target="_blank" rel="noopener noreferrer">기본형 클라우드몬스터3 RR 정확 모델</a> — 실험실 검체·공시를 구분.</li><li><a href="https://www.doctorsofrunning.com/on-cloudmonster-3-review-2026/" target="_blank" rel="noopener noreferrer">기본형 클라우드몬스터3 DOR 착화 원문</a> — 실제 리뷰어·규격의 개인 의견.</li><li><a href="https://www.on.com/ko-kr/products/cloudmonster-3-m-3mg1005/mens/black-ivory-shoes-3MG10051430" target="_blank" rel="noopener noreferrer">기본형 클라우드몬스터3 한국 공식 확인 상품</a> — 본문 SKU·성별·확인 시점 조건. 현재 재고 보장 아님.</li><li><a href="https://www.on.com/ko-kr/products/cloudmonster-3-w-3wg1003/womens/cassis-oyster-shoes-3WG10036028" target="_blank" rel="noopener noreferrer">기본형 클라우드몬스터3 한국 공식 확인 상품</a> — 본문 SKU·성별·확인 시점 조건. 현재 재고 보장 아님.</li></ul>
 `,
+    updatedAt: "2026-11-10",
+    faqs: [
+      {
+        "question": "3세대가 Helion HF인가요?",
+        "answer": "기본형은 일반 Helion이며 Hyper와 구분합니다."
+      },
+      {
+        "question": "2가 넓은 발에 무조건 더 낫나요?",
+        "answer": "검체 내부 치수·중족 볼륨·혀·힐 고정을 함께 확인해야 합니다."
+      }
+    ],
   },
   {
     id: 'asics-magic-speed-4-vs-5-comparison',
@@ -3791,227 +3632,35 @@ export const posts_2026_05: BlogPost[] = [
     ],
   },
   {
-    id: 'nike-pegasus-41-vs-42-comparison',
-    slug: 'nike-pegasus-41-vs-42-comparison',
-    title: '나이키 페가수스 41 vs 42 비교 | 1만원 차이로 갈리는 선택 — 41 할인 13만원 살까, 42 신상 16만 9천원 살까',
-    description: '페가수스 41(159,000원)과 42(169,000원)을 RunRepeat 실측·BITR·RTR 데이터로 직접 비교. 풀 렝스 Air Zoom 추가, 힐 스택 +2.4mm, 한국 와이드 정식 출시 등 5가지 핵심 변화 + 상황별 구매 결정 매트릭스 + 블프 시나리오까지 한 장 정리.',
-    thumbnail: '/images/blog/nike-pegasus-41-vs-42-comparison.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-05-17',
-    category: 'review' as const,
-    readingTime: 11,
-    tags: ['나이키 페가수스', '페가수스 41', '페가수스 42', '러닝화 비교', '나이키', '입문 데일리 트레이너', '와이드 러닝화', '러닝화 추천'],
+    id: "nike-pegasus-41-vs-42-comparison",
+    slug: "nike-pegasus-41-vs-42-comparison",
+    title: "페가수스41 vs42 — Air Zoom 구조·정적 드롭·핏, 할인 차액 없이 비교",
+    description: "41 RR281g·11.4mm와42 RR286g·14mm를 공시와 구분합니다.15% 리턴 주장의 시험 조건과 한국 현재 가격·재고 한계를 정리했습니다.",
+    thumbnail: "/images/shoes/nike/pegasus41/side.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-05-17",
+    category: "review",
+    readingTime: 8,
+    tags: [
+      "페가수스41",
+      "페가수스42",
+      "핏",
+      "원문 대조"
+    ],
     content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>가격 1만원 차이</strong> (41 159,000원 / 42 169,000원) — 단 41은 이미 이월 할인 12~13만원대 풀림, 실제 차이는 <strong>3~4만원</strong></li>
-    <li>42의 진짜 변화 3가지: <strong>풀 렝스 Air Zoom 추가</strong> + <strong>힐 스택 +2.4mm 실측 부드러움</strong> + <strong>한국 와이드 SKU 정식 출시</strong></li>
-    <li>나이키 "에너지 리턴 +15%" 주장 → 실측 +1.6%p (마케팅). 가성비만 보면 <strong>41 이월 할인</strong>이 답, 발볼 4E급·뒤꿈치 착지 부드러움 우선이면 <strong>42 신상</strong> 정답</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">📊</span>
-  <div class="callout-body">
-    <p class="callout-title">이 글의 데이터 소스</p>
-    <p>RunRepeat 랩 실측(2026-04-25 공개) + Believe in the Run B티어 평가 + Road Trail Run 8.79/10 + 한국 나이키 공식몰 가격(2026-05-17 기준). 양 신발 단독 리뷰는 <a href="/shoes/nike-pegasus-41">페가수스 41 상세</a> · <a href="/shoes/nike-pegasus-42">페가수스 42 상세</a>에서 확인.</p>
-  </div>
-</div>
-
-<h2>한눈에 비교</h2>
-
-<table>
-  <thead>
-    <tr><th>항목</th><th>페가수스 41</th><th>페가수스 42</th><th>차이</th></tr>
-  </thead>
-  <tbody>
-    <tr><td><strong>출시</strong></td><td>2024년</td><td><strong>2026-04-09</strong></td><td>2년차</td></tr>
-    <tr><td><strong>MSRP</strong></td><td>159,000원</td><td><strong>169,000원</strong></td><td>+10,000원</td></tr>
-    <tr><td><strong>이월/세일가</strong></td><td><strong>120,000~135,000원</strong></td><td>145,000원</td><td>실제 차이 ~3만원</td></tr>
-    <tr><td><strong>무게 (US M9 실측)</strong></td><td>281g</td><td>286g</td><td>+5g</td></tr>
-    <tr><td><strong>힐 스택 (실측)</strong></td><td>33.6mm</td><td><strong>36mm</strong></td><td>+2.4mm</td></tr>
-    <tr><td><strong>전족부 스택 (실측)</strong></td><td>22mm</td><td>22mm</td><td>동일 (공식 27mm와 불일치)</td></tr>
-    <tr><td><strong>드롭 (공식 / 실측)</strong></td><td>11mm</td><td>10mm / 14mm</td><td>공식·실측 5mm 불일치</td></tr>
-    <tr><td><strong>미드솔</strong></td><td>ReactX 폼</td><td><strong>ReactX + 풀 렝스 Air Zoom</strong></td><td>Air Zoom 풀 추가</td></tr>
-    <tr><td><strong>힐 SA (충격 흡수)</strong></td><td>125</td><td><strong>131</strong></td><td>+6 (부드러움)</td></tr>
-    <tr><td><strong>에너지 리턴 (힐 / 전족)</strong></td><td>55.5% / 61.4%</td><td>57.1% / 61.2%</td><td>+1.6%p / 0 (마케팅 +15%와 큰 격차)</td></tr>
-    <tr><td><strong>토박스 너비 (실측)</strong></td><td>72.9mm</td><td>72.3mm</td><td>거의 동일</td></tr>
-    <tr><td><strong>한국 와이드 SKU</strong></td><td>있음 (구색 부족)</td><td><strong>있음 (남·여 정식 출시 동일가)</strong></td><td>접근성 ↑</td></tr>
-    <tr><td><strong>내구성 (예상)</strong></td><td>550km</td><td>600km</td><td>+50km</td></tr>
-    <tr><td><strong>km당 비용</strong></td><td>약 280원</td><td>약 282원</td><td>거의 동일</td></tr>
-    <tr><td><strong>BITR 평가</strong></td><td>B티어</td><td>B티어 (Design A / Value A / Performance C)</td><td>동급</td></tr>
-  </tbody>
-</table>
-
-<h2>핵심 변화 5가지 — 마케팅 vs 실제</h2>
-
-<h3>1. 풀 렝스 Air Zoom 추가 ✅ 진짜 변화</h3>
-<p>41의 듀얼 포드(힐+전족부 분리 Zoom) → 42에서 풀 렝스 곡선형 Air Zoom으로 교체. 구조상 중족~전족부 착지까지 Air Zoom이 받치도록 바뀐 게 핵심입니다. 다만 RunRepeat 실측 전족부 에너지 리턴은 61.4→61.2%로 거의 같아, 반발 수치가 커졌다고 보긴 어렵습니다(아래 4번).</p>
-
-<h3>2. 힐 스택 +2.4mm 실측 부드러움 ✅ 진짜 변화</h3>
-<p>RunRepeat 실측: 힐 스택 33.6→36mm, 힐 SA(충격 흡수) 125→131(+6). 뒤꿈치 착지 충격을 더 받아 주는 쪽으로 측정됐으니 <strong>무릎이 약한 뒤꿈치 착지 러너라면 42가 더 유리할 가능성이 큽니다</strong>.</p>
-
-<h3>3. 한국 와이드 SKU 정식 출시 ✅ 한국 러너 핵심 변화</h3>
-<p>41까지는 한국 나이키 공식몰에서 와이드 SKU 찾기가 쉽지 않았고 가끔 풀려도 컬러·사이즈 선택지 제한적. <strong>42는 출시 시점부터 남성·여성 와이드 모두 169,000원 동일가</strong>로 정식 출시. 발볼 4E급 한국 러너에게는 이게 가장 의미 있는 업그레이드.</p>
-
-<div class="callout warning">
-  <span class="callout-icon">⚠️</span>
-  <div class="callout-body">
-    <p class="callout-title">4. "에너지 리턴 +15%" 마케팅 vs 실측 ❌ 과장</p>
-    <p>나이키 공식 발표 "전작 대비 에너지 리턴 +15%". RunRepeat 실측 결과: 힐 55.5→57.1% (+1.6%p), 전족부 61.4→61.2% (±0). <strong>실제 체감은 거의 없는 마케팅 수치</strong>. 반발력 우선이라면 페가수스 플러스(ZoomX 풀렝스) 또는 노바블라스트 5(FF Blast Max)가 답.</p>
-  </div>
-</div>
-
-<h3>5. 토박스 너비 ❌ 마케팅 vs 실측 불일치</h3>
-<p>나이키는 "42에서 토박스 확대" 주장. RunRepeat 실측 토박스: 41 72.9mm → 42 72.3mm로 <strong>오히려 미세하게 좁아짐</strong>. 다만 와이드 SKU 정식 출시로 발볼 4E급도 안전하게 갈 수 있게 됐으니, 표준 SKU 비교는 사실상 동급으로 봐도 됨.</p>
-
-<h2>상황별 구매 결정 매트릭스</h2>
-
-<table>
-  <thead>
-    <tr><th>본인 상황</th><th>추천</th><th>이유</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>가성비 최우선 + 표준 발볼</td><td><strong>41 이월 12~13만원</strong></td><td>실제 사용감 차이 미미, 3~4만원 절약</td></tr>
-    <tr><td>발볼 4E급 + 와이드 필수</td><td><strong>42 와이드</strong></td><td>한국 정식 출시 SKU 안정성</td></tr>
-    <tr><td>뒤꿈치 착지 + 무릎 약함</td><td><strong>42</strong></td><td>힐 스택 +2.4mm + SA +6 부드러움</td></tr>
-    <tr><td>전족 착지 위주 + 가벼운 반발</td><td>42 (Air Zoom 풀렝스)</td><td>전족부 반발감 개선</td></tr>
-    <tr><td>5km 이하 단거리 데일리</td><td>41 (가성비) 또는 42 (취향)</td><td>둘 다 충분, 가격으로 선택</td></tr>
-    <tr><td>10km 이상 데일리</td><td><strong>42</strong></td><td>5g 무게 부담보다 힐 안정감이 우선</td></tr>
-    <tr><td>월 100km+ 고볼륨</td><td>둘 다 비추</td><td>보메로 18 또는 슈퍼블라스트 3 고려</td></tr>
-    <tr><td>하프마라톤 이상 롱런</td><td>둘 다 비추</td><td>줌 플라이 6, 페가수스 플러스 분리</td></tr>
-    <tr><td>41 600km 이내 멀쩡함</td><td><strong>41 계속</strong></td><td>업그레이드 가치 미미</td></tr>
-    <tr><td>41 수명 다 됨 + 발볼 4E급</td><td><strong>42 와이드</strong></td><td>표준 가격 와이드 SKU 가치</td></tr>
-  </tbody>
-</table>
-
-<h2>가격 시나리오 — 언제 사는 게 가장 합리적인가</h2>
-
-<div class="callout success">
-  <span class="callout-icon">💰</span>
-  <div class="callout-body">
-    <p class="callout-title">시즌별 가격 변동 예측</p>
-    <ul>
-      <li><strong>지금(2026 5~6월):</strong> 41 이월 13만원대 / 42 신상 16만 9천원 — 3~4만원 차이</li>
-      <li><strong>여름 시즌오프 (7~8월):</strong> 41 12만원대 가능 / 42 15만원대 — 차이 더 벌어짐</li>
-      <li><strong>블프 (11월):</strong> 41 10만원대 가능 / 42 13~14만원 — 가성비 41 압승</li>
-      <li><strong>12월~1월:</strong> 41 재고 소진 시작 → 사이즈·컬러 선택지 줄어듦. 와이드는 더 빠르게 품절</li>
-      <li><strong>2027년 3월~ (42 이월 시작):</strong> 42 13만원대로 떨어지면서 43(추정) 출시 사이클</li>
-    </ul>
-  </div>
-</div>
-
-<p><strong>지금 사야 한다면:</strong> 41 이월 할인 + 본인 사이즈·컬러 잡히면 41이 가성비 최강. 단 발볼 4E급은 42 와이드 정가가 안전.</p>
-<p><strong>3개월 기다릴 수 있다면:</strong> 여름 시즌 오프~블프 노리고 41 10만원대 사냥. 발볼 표준이면 거의 무조건 이게 답.</p>
-
-<h2>한국 와이드 옵션 비교 — 발볼 4E급의 진짜 차이</h2>
-
-<table>
-  <thead>
-    <tr><th>항목</th><th>페가수스 41 와이드</th><th>페가수스 42 와이드</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>한국 정식 출시</td><td>있음 (구색 제한)</td><td><strong>있음 (남·여 정식 출시)</strong></td></tr>
-    <tr><td>가격</td><td>159,000원 (표준과 동일)</td><td>169,000원 (표준과 동일)</td></tr>
-    <tr><td>컬러 선택지</td><td>2~3종</td><td>5~6종</td></tr>
-    <tr><td>사이즈 재고</td><td>인기 사이즈 빠른 품절</td><td>출시 직후라 안정적</td></tr>
-    <tr><td>실제 토박스</td><td>72.9mm + 와이드 확장</td><td>72.3mm + 와이드 확장</td></tr>
-  </tbody>
-</table>
-
-<p>발볼 4E급이라면 둘 다 와이드 SKU로 가야 하고, <strong>컬러·사이즈 선택지가 풍부한 42 와이드가 유리</strong>. 단 본인 사이즈가 41 와이드로 잡힌다면 가격 메리트 살릴 수 있음.</p>
-
-<h2>부상·체형별 권장</h2>
-
-<ul>
-  <li><strong>평발:</strong> 둘 다 안정화는 아니지만 ReactX 폼이 잘 받쳐줌. 무릎까지 약하면 42 권장(힐 스택 +2.4mm). 과내전 심하면 <a href="/shoes/asics-gel-kayano-33">카야노 33</a> 같은 정식 안정화</li>
-  <li><strong>무릎 통증 이력:</strong> <strong>42</strong> (힐 SA 131, 36mm 스택). <a href="/blog/knee-pain-running-shoes">무릎 통증 러너 신발 가이드 →</a></li>
-  <li><strong>아킬레스건염:</strong> 11mm(41) 또는 10mm/14mm(42 공식/실측) 드롭 모두 OK</li>
-  <li><strong>족저근막염:</strong> 둘 다 excellent — 36mm 힐 스택(42)이 약간 유리</li>
-  <li><strong>정강이 부목:</strong> 둘 다 충분, 41이 무게(281g) 미세하게 유리</li>
-</ul>
-
-<h2>비슷한 가격대 대안</h2>
-
-<p>16만원대 입문 데일리 트레이너에서 페가수스가 정답은 아닐 수도. 같은 가격대 비교:</p>
-
-<ul>
-  <li><a href="/shoes/hoka-clifton-10">호카 클리프턴 10</a> — 맥시멀 쿠션 + 모자이드 락커, 페가수스보다 가볍고 부드러움</li>
-  <li><a href="/shoes/asics-gel-nimbus-28">아식스 젤 님버스 28</a> — 19만 9천원이지만 쿠셔닝 최상. 가성비는 페가수스가 우위</li>
-  <li><a href="/shoes/new-balance-1080-v15">NB 1080 v15</a> — 폼 부드러움 1위. 발볼 넓은 라스트, 발볼 4E급에 추천</li>
-  <li><a href="/shoes/nike-pegasus-plus">나이키 페가수스 플러스</a> — ZoomX 풀렝스, 페가수스 42보다 반발력 강함 (단 가격 +5만원대)</li>
-</ul>
-
-<h2>FAQ</h2>
-
-<h3>Q. 41 → 42 업그레이드 가치 있나요?</h3>
-<p>41이 600km 안 신었다면 그냥 41 굴리세요. 41이 수명 다 됐고 발볼 4E급이면 42 와이드(정식 출시)가 답. 표준 발볼이고 가성비만 본다면 41 블프 세일이 더 매력적.</p>
-
-<h3>Q. 42를 사면 41 대비 뭐가 가장 좋아지나요?</h3>
-<p>두 가지: ① <strong>뒤꿈치 착지 부드러움</strong>(힐 스택 +2.4mm, SA +6 실측), ② <strong>한국 와이드 SKU 안정 공급</strong>. 그 외 변화(에너지 리턴, 토박스 확대)는 마케팅과 실측이 다름.</p>
-
-<h3>Q. 둘 다 처음이라면 41 사도 되나요?</h3>
-<p>완전 OK. 41은 한국 입문화 부동의 1위였고, 42가 압도적 개선판은 아닙니다. 이월 13만원대로 살 수 있다면 가성비 최강. 단 발볼 4E급이라면 42 와이드 권장(41 와이드는 재고 빠르게 줄어드는 중).</p>
-
-<h3>Q. 카본 슈즈로 가야 할까요?</h3>
-<p>페가수스 41·42 모두 카본 슈즈가 아닌 데일리 트레이너입니다. 카본 슈즈는 풀코스/하프 레이스 + 페이스 훈련 전용. 데일리 훈련은 페가수스 같은 일반 트레이너가 정답. 카본 슈즈 비교는 <a href="/blog/carbon-plate-running-shoes-lineup-tier-guide-2026">카본 플레이트 슈즈 비교 →</a></p>
-
-<h3>Q. 10km 넘어가는 거리도 쓸 수 있나요?</h3>
-<p>둘 다 10~13km까지는 무난하지만 그 이상은 비추. BITR도 42를 "6-13km 스윗스팟의 원 트릭 포니"로 평가. 하프 이상은 <a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a>, <a href="/shoes/nike-pegasus-plus">페가수스 플러스</a>, 또는 줌 플라이 6 분리.</p>
-
-<h2>결론 — 내 추천</h2>
-
-<div class="callout success">
-  <span class="callout-icon">🎯</span>
-  <div class="callout-body">
-    <p class="callout-title">90% 한국 러너에게는 41 이월 + 가성비</p>
-    <p>표준 발볼 + 5~10km 데일리 + 가성비 우선이라면 <strong><a href="/shoes/nike-pegasus-41">41 이월 13만원대</a></strong>가 거의 무조건 답. 42의 실제 개선은 풀 렝스 Air Zoom + 힐 스택 +2.4mm 정도이고, 3~4만원 추가 지출 가치는 본인 발 조건에 따라 갈림.</p>
-    <p>단 <strong>발볼 4E급(와이드 필수)</strong>이거나 <strong>무릎 약한 뒤꿈치 착지 러너</strong>라면 망설이지 말고 <strong><a href="/shoes/nike-pegasus-42">42 와이드</a></strong>로 가세요. 한국 정식 SKU 안정성과 힐 부드러움이 3~4만원 가치를 만듭니다.</p>
-  </div>
-</div>
-
-<div class="affiliate-cta">
-  <p class="affiliate-cta-label">바로 구매</p>
-  <div class="affiliate-cta-buttons">
-    <a href="https://naver.me/5eDHQ0w3" class="affiliate-btn naver" target="_blank" rel="nofollow sponsored noopener">
-      <span class="affiliate-btn-store">네이버</span>
-      <span class="affiliate-btn-product">페가수스 41 최저가 →</span>
-    </a>
-    <a href="/shoes/nike-pegasus-42" class="affiliate-btn pending">
-      <span class="affiliate-btn-store">상세</span>
-      <span class="affiliate-btn-product">페가수스 42 정보 →</span>
-    </a>
-  </div>
-  <p class="affiliate-disclosure">광고 표기: 위 링크는 네이버 브랜드 커넥트 추적 코드가 포함되며, 일정 수수료를 받을 수 있습니다.</p>
-</div>
-
-<p>본인 발 특성·부상 이력에 맞춘 신발 후보는 <a href="/recommend">1분 러닝화 추천</a>에서 받을 수 있습니다.</p>
-
-<h2>다른 카테고리 세대 비교</h2>
-
-<p>페가수스가 "데일리 트레이너"라면, 본인 러닝 목적에 맞춰 다음 카테고리도 같이 보세요. 모두 RunRepeat 실측 + BITR + 한국 가격 + 와이드 SKU 동일 포맷.</p>
-
-<ul>
-  <li><a href="/blog/asics-kayano-32-vs-33-comparison">카야노 32 vs 33 — 안정화 세대 비교</a> (평발·과내전 + 무릎 보호 우선)</li>
-  <li><a href="/blog/new-balance-1080-v14-vs-v15-comparison">NB 1080 v14 vs v15 — 쿠션화 세대 비교</a> (장거리 데일리 + 부드러움 우선)</li>
-  <li><a href="/blog/asics-superblast-2-vs-3-comparison">슈퍼블라스트 2 vs 3 — 슈퍼트레이너 세대 비교</a> (10km 이상 + 페이스 훈련 분리용)</li>
-  <li><a href="/blog/saucony-endorphin-pro-4-vs-5-comparison">엔돌핀 프로 4 vs 5 — 가성비 카본 슈즈</a> (Sub-3:30 ~ Sub-4 레이스)</li>
-  <li><a href="/blog/nike-vaporfly-4-vs-alphafly-3-comparison">베이퍼플라이 4 vs 알파플라이 3 — 카본 슈퍼슈즈</a> (Sub-3 도전·풀코스 레이스)</li>
-</ul>
-
-<h2>관련 글</h2>
-
-<ul>
-  <li><a href="/blog/nike-pegasus-42-review">나이키 페가수스 42 솔직 리뷰 — 단독 평가</a></li>
-  <li><a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너 추천 신발 — 11개 신발 토박스 실측 정리</a></li>
-  <li><a href="/blog/knee-pain-running-shoes">무릎 통증 러너 신발 가이드</a></li>
-  <li><a href="/blog/first-running-shoe-guide-2026">첫 러닝화 고르는 법 2026</a></li>
-  <li><a href="/blog/running-shoe-trends-2026-eva-replacement">2026 러닝화 트렌드 — EVA 대체 폼</a></li>
-</ul>
-
-<p><small>출처: RunRepeat 랩 데이터(페가수스 41/42, 2026-04-25 게시) / Believe in the Run 페가수스 42 리뷰 / Road Trail Run 8.79/10 / 한국 나이키 공식몰 가격(2026-05-17 기준). 가격은 시즌·세일에 따라 변동되니 구매 시점 공식몰·이월 행사 확인 필수.</small></p>
+<p><strong>2026-11-10 원문 대조 업데이트.</strong> 11월9~10일 확인한 정확 모델 자료를 바탕으로 공시·검체·개인 착화 의견을 나눴습니다. 자체 착화 후기는 아닙니다.</p><h2>선택에서 먼저 볼 차이</h2><p>41의 힐·전족 Air Zoom 유닛과 42의 전장 Air Zoom 구조를 구분했습니다. 숫자 42나 제조사의 최소 15% 리턴 개선 주장이 모든 페이스에서 더 빠르다는 뜻은 아닙니다.</p><p>41 할인 13만원과 42 정가 16만 9천원이라는 고정 차액 대신 확인한 상품·시점의 가격과 현재 상태를 분리했습니다. 할인은 구매 시점의 정확 SKU에서 다시 확인해야 합니다.</p><figure><img src="/images/shoes/nike/pegasus41/side.webp" alt="페가수스41 제품 자료 이미지" loading="lazy"/><figcaption>페가수스41 — 수치와 세대 조건은 본문 원문을 확인하세요.</figcaption></figure><div class="table-wrap"><table><thead><tr><th>모델</th><th>무게</th><th>힐/전족 스택 · 드롭</th><th>힐/전족 SA</th><th>힐/전족 리턴</th><th>내부 최광폭/엄지/높이</th></tr></thead><tbody><tr><td>페가수스41</td><td>281g</td><td>33.6/22.2mm · 11.4mm</td><td>125/92</td><td>55.5/61.4%</td><td>94.6/72.9/26.4mm</td></tr><tr><td>페가수스42</td><td>286g</td><td>36/22mm · 14mm</td><td>131/91</td><td>57.1/61.2%</td><td>96.5/72.3/27mm</td></tr></tbody></table></div><h2>숫자를 읽는 조건</h2><p>위 표는 RunRepeat의 정확 모델 검체 값입니다. 일반 정책은 남성 US9지만 개별 검체 라벨·폭·보정 여부는 미확인입니다. 제조사 공시와 리뷰어의 실제 착화 사이즈는 아래에서 구분합니다. 스택은 내부 길이 12%/75% 위치와 인솔을 포함하는 RR 방법에 따른 값입니다.</p><p>SA는 충격흡수 시험, 리턴은 시험에서 반환된 에너지 비율입니다. 폼이 더 부드럽다거나 무릎 통증·개인 기록이 개선된다는 뜻으로 바꾸지 않습니다. 최광폭·엄지·높이는 서로 다른 내부 치수로 한국 와이드 전체의 치수가 아닙니다. <a href="https://runrepeat.com/testing-methodology" target="_blank" rel="noopener noreferrer">RunRepeat 측정법</a></p><h2>15% 주장과 RR 절대 리턴을 바로 대조하면 안 되는 이유</h2><p>RR 힐·전족 리턴은 41이 55.5/61.4%,42가 57.1/61.2%입니다. 두 절대값만 보고 제조사의 최소 15% 주장을 입증하거나 거짓이라고 결론내리지 않았습니다. 제조사 비교 시험 조건을 확보하지 못했기 때문입니다.</p><p>42의 검체 정적 드롭 14mm와 한국 공시 10mm는 구분합니다.41도RR11.4mm와 공시 10mm가 다릅니다. 이 숫자만으로 주법·종아리 통증·하프마라톤 거리 상한을 정하지 않습니다.</p><h2>페가수스41의 구조·공시</h2><p>ReactX · 힐/전족부 Air Zoom 유닛</p><p>판 구조나 지지 장치를 질환별 보호 등급으로 바꾸지 않습니다.</p><p>한국 남성 297g(280mm)·여성 251g(250mm),드롭 10mm. DOR 소개 남성 283g(US9)·37/27mm·10mm. RR281g·11.4mm와 조건이 다릅니다.</p><h2>페가수스41의 실제 착화에서 갈린 점</h2><p>DOR의 Matt은 US10에서 길이가 맞지만 낮은 앞쪽 볼륨과 테이퍼를 느꼈으며 맨발 착화의 마찰·속도를 올릴 때 힐 전환을 지적했습니다. David은 신축성 있는 어퍼가 급회전·느슨한 지면에서 고정을 떨어뜨릴 수 있다고 봤습니다. 접지 체감과 RR의 젖은 콘크리트 시험은 다른 조건입니다.</p><p>한국 와이드·X-Wide 상품의 현재SKU는 이번에 확인하지 못했습니다. RR 엄지 부위 72.9mm를 개인의 발볼이나 한국 와이드 폭과 대입하지 않습니다.</p><h2>페가수스41의 한국 판매 확인 범위</h2><p>한국 남성 FD2722-120, 여성 그래픽 에디션 IQ1153-109 원문 정가 159,000원 확인. 확인한 색상은 품절이었으며 다른 색상·한국 와이드SKU는 미확인입니다.</p><h2>페가수스42의 구조·공시</h2><p>ReactX · 전장 곡선 Air Zoom · 비플레이트</p><p>플레이트 없음. 전장 Air Zoom을 카본 플레이트로 해석하지 않습니다.</p><p>한국 공시남성약 300g(280mm)·여성 243g(250mm),드롭 10mm입니다. RR브랜드 37/27mm·10mm·297/243g(기준사이즈미확인),RR286g·36/22mm·14mm를 구분합니다. 실제검체라벨·보정적용 여부는 미확인입니다.</p><h2>페가수스42의 실제 착화에서 갈린 점</h2><p>정확한 페가수스 42의 DOR 개별 착화 리뷰는 이번 검색에서 확인하지 못했습니다. Plus2의 비교문구를 42의 착화 경험으로 채우지 않았습니다. 기존 5~13km상한·하프이상비추천·주 100km금지와 임상보호등급은 확인한원문에서 공통기준으로 입증되지 않아 철회했습니다.</p><p>RR 내부최광폭 96.5mm·엄지 72.3mm·높이 27.0mm는 한국와이드 검체라고 확인되지 않았습니다. 과거와이드상품을 모든 4E발의 안전보장으로 쓰지 않습니다.</p><h2>페가수스42에서 함께 남긴 한계</h2><p>제조사의 41대비 에너지리턴최소 15%개선 주장은 비교시험조건 미확인입니다. RR힐 57.1/전족 61.2%와 측정조건이 다르므로 제조사주장이 입증·반박됐다고 단정하지 않습니다. SA를부드러움·무릎보호로,국소마모 0.8mm를 600km수명으로 바꾸지 않습니다. 일반US9무게정책에는 드문US8/8.5의US9환산예외가 있어 실제라벨 미확인을 남깁니다.</p><h2>페가수스42의 한국 판매 확인 범위</h2><p>한국 공식 캐시에는 남성IB1873-003·IM8332-100,여성IB1881-007,남성와이드IR1228-001·여성와이드IH1847-100 정가 169,000원이 표시됐습니다. 자료는지난주~지난달 캐시여서 현재가격·판매규격·재고는 미확인입니다. 와이드의 2E/4E문자와 실제폭증가는 미확인이고 둘레 6.35mm설명을 내부너비 증가로 옮기지 않습니다.</p><h2>매장에서 비교할 질문</h2><p>평소 양말·인솔로 앞쪽 길이와 발톱 위 높이, 끈을 조일 때 발등 압박, 걷고 돌 때 힐 고정과 칼라 마찰을 확인하세요. 앞볼이 넓다는 인상만으로 앞코 전체 높이나 중족 공간까지 맞는다고 가정하지 않습니다.</p><p>몇 분/km면 무조건 이 모델, 몇 km부터 통증이 줄어든다는 공통 경계는 이 자료에서 확인하지 못했습니다. 평발·부상 이력만으로 모델을 처방하거나 국소 마모를 공통 수명으로 환산하지 않았습니다.</p><h2>확인한 원문·상품 조건</h2><ul><li><a href="https://runrepeat.com/nike-pegasus-41" target="_blank" rel="noopener noreferrer">페가수스41 RR 정확 모델</a> — 실험실 검체·공시를 구분.</li><li><a href="https://www.doctorsofrunning.com/nike-pegasus-41-review-2024/" target="_blank" rel="noopener noreferrer">페가수스41 DOR 착화 원문</a> — 실제 리뷰어·규격의 개인 의견.</li><li><a href="https://www.nike.com/kr/t/나이키-페가수스-41-남성-로드-러닝화-KJOKMFFd/FD2722-120" target="_blank" rel="noopener noreferrer">페가수스41 한국 공식 확인 상품</a> — 본문 SKU·성별·확인 시점 조건. 현재 재고 보장 아님.</li><li><a href="https://www.nike.com/kr/t/나이키-페가수스-41-여성-로드-러닝화-mzOQVnjR" target="_blank" rel="noopener noreferrer">페가수스41 한국 공식 확인 상품</a> — 본문 SKU·성별·확인 시점 조건. 현재 재고 보장 아님.</li><li><a href="https://runrepeat.com/nike-pegasus-42" target="_blank" rel="noopener noreferrer">페가수스42 RR 정확 모델</a> — 실험실 검체·공시를 구분.</li><li><a href="https://www.nike.com/kr/t/%EB%82%98%EC%9D%B4%ED%82%A4-%ED%8E%98%EA%B0%80%EC%88%98%EC%8A%A4-42-%EB%82%A8%EC%84%B1-%EB%A1%9C%EB%93%9C-%EB%9F%AC%EB%8B%9D%ED%99%94-XuHjeH83" target="_blank" rel="noopener noreferrer">한국 공식 캐시 IB1873-003 · 남성</a> — 과거표시정가169,000원. 캐시목록은 현재옵션·재고보장 아님.</li><li><a href="https://www.nike.com/kr/t/%EB%82%98%EC%9D%B4%ED%82%A4-%ED%8E%98%EA%B0%80%EC%88%98%EC%8A%A4-42-%EB%82%A8%EC%84%B1-%EB%A1%9C%EB%93%9C-%EB%9F%AC%EB%8B%9D%ED%99%94-hzTwdMlw/IM8332-100" target="_blank" rel="noopener noreferrer">한국 공식 캐시 IM8332-100 · 남성</a> — 과거표시정가169,000원. 캐시목록은 현재옵션·재고보장 아님.</li><li><a href="https://www.nike.com/kr/t/%EB%82%98%EC%9D%B4%ED%82%A4-%ED%8E%98%EA%B0%80%EC%88%98%EC%8A%A4-42-%EC%97%AC%EC%84%B1-%EB%A1%9C%EB%93%9C-%EB%9F%AC%EB%8B%9D%ED%99%94-wsTF7yIV/IB1881-007" target="_blank" rel="noopener noreferrer">한국 공식 캐시 IB1881-007 · 여성</a> — 과거표시정가169,000원. 캐시목록은 현재옵션·재고보장 아님.</li><li><a href="https://www.nike.com/kr/t/%ED%8E%98%EA%B0%80%EC%88%98%EC%8A%A4-42-%EB%82%A8%EC%84%B1-%EB%A1%9C%EB%93%9C-%EB%9F%AC%EB%8B%9D%ED%99%94-hzTwdMlw/IR1228-001" target="_blank" rel="noopener noreferrer">한국 공식 캐시 IR1228-001 · 와이드</a> — 과거표시정가169,000원. 캐시목록은 현재옵션·재고보장 아님.</li><li><a href="https://www.nike.com/kr/t/%EB%82%98%EC%9D%B4%ED%82%A4-%ED%8E%98%EA%B0%80%EC%88%98%EC%8A%A4-42-%EC%97%AC%EC%84%B1-%EB%A1%9C%EB%93%9C-%EB%9F%AC%EB%8B%9D%ED%99%94%EC%99%80%EC%9D%B4%EB%93%9C-wsTF7yIV/IH1847-100" target="_blank" rel="noopener noreferrer">한국 공식 캐시 IH1847-100 · 와이드</a> — 과거표시정가169,000원. 캐시목록은 현재옵션·재고보장 아님.</li><li><a href="https://www.nike.com/kr/a/pegasus-42-release-date/" target="_blank" rel="noopener noreferrer">Nike 공식15% 개선 주장</a> — 제조사자체주장. 비교시험조건 미확인으로 RR절대리턴과 직접비교하지 않음.</li></ul>
 `,
+    updatedAt: "2026-11-10",
+    faqs: [
+      {
+        "question": "42의15% 개선은 거짓인가요?",
+        "answer": "제조사 비교 시험과 RR 절대 측정의 조건이 같다는 근거가 없어 이 자료로 입증·반박하지 않습니다."
+      },
+      {
+        "question": "41이1만원 더 싼가요?",
+        "answer": "정확 SKU·시점의 정가·할인 조건이 달라 현재 고정 차액으로 안내하지 않습니다."
+      }
+    ],
   },
   {
     id: '2026-bogwangjung-suyuk-run',
