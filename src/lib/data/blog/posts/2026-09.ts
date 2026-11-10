@@ -416,214 +416,39 @@ export const posts_2026_09: BlogPost[] = [
     ],
   },
   {
-    id: 'running-shoes-tier-chart-2026',
-    slug: 'running-shoes-tier-chart-2026',
-    title:
-      '러닝화 계급도 2026 — 브랜드 11곳 등급표 한 장 | 나이키·아식스·뉴발란스·호카·브룩스·아디다스·온·푸마·미즈노·사코니·리닝',
-    description:
-      '러닝화(런닝화) 계급도 2026. 나이키·아식스·뉴발란스·호카·브룩스·아디다스·온·푸마·미즈노·사코니·리닝 11개 브랜드를 입문·데일리, 쿠션, 안정화, 슈퍼트레이너, 카본 레이싱 5칸으로 한 장에 정리했습니다. 칸별 현행 대표 모델과 한국 공식가, 브랜드마다 다른 등급 표시법, 가격대별 카본 비율, 브랜드별 발볼 분포까지 담았습니다.',
-    thumbnail: '/images/blog/running-shoes-tier-chart-2026.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-09-28',
-    category: 'guide' as const,
-    readingTime: 9,
+    id: "running-shoes-tier-chart-2026",
+    slug: "running-shoes-tier-chart-2026",
+    title: "러닝화 브랜드 11곳 비교 — 계급보다 폼·보강 구조·핏",
+    description: "11개 브랜드의 정확 모델 사례로 구조를 비교합니다. 전 제품 목록·브랜드 성능 서열·질환별 순위 대신 구매 전 확인할 질문을 정리했습니다.",
+    thumbnail: "/images/blog/verified-running-shoes-tier-chart-2026-20261110.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-09-28",
+    category: "guide",
+    readingTime: 6,
     tags: [
-      '러닝화 계급도',
-      '런닝화 계급도',
-      '러닝화 계급도 2026',
-      '러닝화 등급',
-      '러닝화 등급표',
-      '러닝화 라인업',
-      '러닝화 브랜드 비교',
-      '브랜드별 러닝화',
+      "러닝화 계급도",
+      "런닝화 계급도",
+      "러닝화 계급도 2026",
+      "러닝화 등급",
+      "러닝화 등급표",
+      "러닝화 라인업",
+      "러닝화 브랜드 비교",
+      "브랜드별 러닝화"
     ],
     faqs: [
       {
-        question: '러닝화 계급도가 뭔가요?',
-        answer:
-          '러닝화를 용도와 기술(미드솔 폼·카본 플레이트)에 따라 줄 세운 표입니다. 어느 브랜드든 입문·데일리, 쿠션, 안정화, 슈퍼트레이너, 카본 레이싱 다섯 칸으로 나뉘고, 브랜드마다 그 칸을 표시하는 이름 규칙만 다릅니다(뉴발란스는 번호, 나이키는 플러스·프리미엄 접미사, 사코니는 엔돌핀 같은 서브 라인). 위 칸이 모든 러너에게 더 좋은 신발이라는 뜻은 아닙니다. 칸이 다르면 용도가 다릅니다.',
+        "question": "브랜드 중 가장 좋은 것은 어디인가요?",
+        "answer": "이 자료는 브랜드 전체 성능을 시험한 순위가 아닙니다. 정확 모델·규격의 구조와 실제 핏을 비교해야 합니다."
       },
       {
-        question: '비싼 러닝화가 상위 등급인가요?',
-        answer:
-          '레이싱화에서만 대체로 맞습니다. 이 사이트 신발 DB에서 가격이 확인된 141종 가운데 25만원 이상은 40종이고, 그중 28종이 카본 플레이트를 넣은 모델입니다. 반대로 15만원 미만 6종에는 카본이 하나도 없습니다. 25만원 위의 가격은 대부분 대회용 기술값이라는 뜻입니다. 데일리 라인에도 30만원 가까운 "프리미엄" 모델이 있지만 폼을 겹쳐 무거워지고 토박스가 좁아지는 경우가 있어, 가격이 높다고 매일 신기에 더 좋은 신발은 아닙니다.',
-      },
-      {
-        question: '첫 러닝화는 어느 칸에서 골라야 하나요?',
-        answer:
-          '입문·데일리 칸에서 고르면 됩니다. 이 사이트 DB의 입문화 15종 가격 중앙값은 17.9만원이고, 브랜드마다 이 칸의 기준 모델이 하나씩 있습니다(페가수스 42·노바블라스트 6·880 V15·클리프톤 10·고스트 18 등). 다만 발이 안쪽으로 무너지는 과내전이 있으면 안정화 칸을, 발볼이 넓으면 와이드 옵션이 있는 모델을 먼저 보세요. km당 비용으로 입문화를 줄 세운 입문 러닝화 계급도도 함께 참고하면 좋습니다.',
-      },
-      {
-        question: '발볼이 넓으면 어느 브랜드부터 봐야 하나요?',
-        answer:
-          '이 사이트 DB의 토박스 분류로는 나이키가 16종 중 6종이 좁음으로, 모델이 9종 이상인 브랜드 가운데 좁은 모델 비율이 가장 높습니다(리닝은 3종 중 2종). 다만 브랜드보다 모델 차이가 더 큽니다. 같은 나이키라도 페가수스 42는 한국 와이드가 정식 출시됐고, 페가수스 프리미엄·보메로 프리미엄은 좁음으로 분류됩니다. 각 브랜드 계급도의 발볼 절에서 모델별 와이드 옵션을 확인하세요.',
-      },
-      {
-        question: '이 계급도는 언제 기준인가요?',
-        answer:
-          '2026년 9월 28일 기준 한국 공식가와 이 사이트 신발 DB에 등록된 모델 기준입니다. 브랜드별 계급도 11편도 같은 날 라인업·가격을 갱신했습니다. 후속 모델이 나오면 브랜드 계급도와 이 표를 함께 고칩니다.',
-      },
+        "question": "안정화면 무릎통증에 더 좋나요?",
+        "answer": "지지 구조가 있다는 사실만으로 개인의 부상 예방·치료 효과나 모델별 임상 순위를 확정할 수 없습니다."
+      }
     ],
     content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>러닝화 계급도는 "비싼 순서"가 아니라 "용도 순서"입니다</strong> — 어느 브랜드든 입문·데일리 → 쿠션·안정화 → 슈퍼트레이너 → 카본 레이싱 다섯 칸으로 나뉘고, 브랜드마다 칸을 표시하는 이름 규칙만 다릅니다.</li>
-    <li>브랜드 11곳의 칸별 <strong>현행 대표 모델과 한국 공식가</strong>를 한 장 표로 모았습니다. 행마다 그 브랜드의 전체 라인업 계급도로 이어집니다.</li>
-    <li><strong>가격은 등급이 아니라 기술값입니다</strong> — 이 사이트 DB 141종 중 25만원 이상 40종의 70%(28종)가 카본 레이싱화이고, 15만원 미만 6종에는 카본이 없습니다.</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">🗺️</span>
-  <div class="callout-body">
-    <p class="callout-title">이 글의 역할 — 브랜드별 계급도 11편의 지도</p>
-    <p>나이키·아식스·뉴발란스처럼 브랜드 하나를 깊게 판 계급도는 따로 있습니다. 이 글은 그 11편을 <strong>한 장에 겹쳐 놓고 브랜드끼리 가로로 비교</strong>하는 지도입니다. 가격은 한국 공식가(2026-09-28 기준), 모델 분류와 토박스는 이 사이트 신발 DB 기준이며, 이 사이트는 신발을 직접 시험하지 않습니다 — 스펙은 브랜드 공식 자료와 외부 실측(RunRepeat 등)을 따릅니다.</p>
-  </div>
-</div>
-
-<h2>1. 계급도는 다섯 칸 — 브랜드가 달라도 구조는 같다</h2>
-
-<p>브랜드마다 이름은 제각각이지만 라인업을 펼쳐 보면 거의 같은 다섯 칸으로 나뉩니다. 먼저 내가 어느 칸의 러너인지 정하면, 브랜드 선택은 그다음 문제입니다.</p>
-
-<table>
-  <thead>
-    <tr><th>칸</th><th>누구에게</th><th>DB 가격 중앙값</th></tr>
-  </thead>
-  <tbody>
-    <tr><td><strong>입문·데일리</strong></td><td>첫 러닝화, 주 2~4회 조깅·일상 훈련</td><td>입문화 17.9만 · 데일리 18.9만</td></tr>
-    <tr><td><strong>쿠션</strong></td><td>장거리·회복주, 착지 충격이 걱정될 때(프리미엄·맥스 쿠션)</td><td>21.9만</td></tr>
-    <tr><td><strong>안정화</strong></td><td>발이 안쪽으로 무너지는(과내전) 러너</td><td>19.9만</td></tr>
-    <tr><td><strong>슈퍼트레이너·템포</strong></td><td>인터벌·빌드업 같은 빠른 훈련</td><td>—</td></tr>
-    <tr><td><strong>카본 레이싱</strong></td><td>대회·기록 도전</td><td>31.4만</td></tr>
-  </tbody>
-</table>
-
-<p>※ 중앙값은 이 사이트 신발 DB의 분류 기준입니다(가격이 확인된 모델 기준 입문화 15종·데일리 21종·쿠션화 36종·안정화 20종·레이싱 34종, 2026년 10월 2일 기준). 슈퍼트레이너는 DB에 별도 분류가 없어 비웠습니다.</p>
-
-<h2>2. 러닝화 계급도 한 장 — 브랜드 11곳 × 5칸</h2>
-
-<p>각 칸에는 그 브랜드의 <strong>현행 기준 모델</strong> 하나(필요하면 둘)를 넣었습니다. 브랜드 이름을 누르면 전체 라인업 계급도로, 모델 이름을 누르면 상세 스펙으로 갑니다. "—"는 그 칸에 해당하는 라인이 DB에 없다는 뜻입니다.</p>
-
-<table style="word-break:keep-all">
-  <thead>
-    <tr><th>브랜드</th><th>입문·데일리</th><th>쿠션</th><th>안정화</th><th>슈퍼트레이너·템포</th><th>카본 레이싱</th></tr>
-  </thead>
-  <tbody>
-    <tr><td><a href="/blog/nike-running-shoes-lineup-tier-guide-2026"><strong>나이키</strong></a></td><td><a href="/shoes/nike-pegasus-42">페가수스 42</a> 16.9만</td><td><a href="/shoes/nike-vomero-18">보메로 18</a> 18.9만</td><td><a href="/shoes/nike-structure-26">스트럭처 26</a> 16.9만</td><td><a href="/shoes/nike-zoom-fly-6">줌 플라이 6</a> 20.9만</td><td><a href="/shoes/nike-vaporfly-4">베이퍼플라이 4</a> 30.9만</td></tr>
-    <tr><td><a href="/blog/asics-running-shoes-lineup-tier-guide-2026"><strong>아식스</strong></a></td><td><a href="/shoes/asics-novablast-6">노바블라스트 6</a> 17.9만</td><td><a href="/shoes/asics-gel-nimbus-28">젤 님버스 28</a> 19.9만</td><td><a href="/shoes/asics-gel-kayano-33">젤 카야노 33</a> 19.9만</td><td><a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a> 25.9만</td><td><a href="/shoes/asics-metaspeed-sky-plus">메타스피드 스카이+</a> 32.9만</td></tr>
-    <tr><td><a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026"><strong>뉴발란스</strong></a></td><td><a href="/shoes/new-balance-880-v15">880 V15</a> 18.9만</td><td><a href="/shoes/new-balance-1080-v15">1080 V15</a> 20.9만</td><td><a href="/shoes/new-balance-860-v15">860 V15</a> 18.9만</td><td><a href="/shoes/new-balance-sc-rebel">SC 레벨 V1</a> 25.9만</td><td><a href="/shoes/new-balance-sc-elite-v6">SC 엘리트 V6</a> 38.9만</td></tr>
-    <tr><td><a href="/blog/hoka-running-shoes-lineup-tier-guide-2026"><strong>호카</strong></a></td><td><a href="/shoes/hoka-clifton-10">클리프톤 10</a> 19.9만</td><td><a href="/shoes/hoka-bondi-9">본디 9</a> 22.9만</td><td><a href="/shoes/hoka-arahi-8">아라히 8</a> 19.9만</td><td><a href="/shoes/hoka-mach-x-3">마하 X 3</a> 24.9만</td><td><a href="/shoes/hoka-rocket-x-3">로켓 X 3</a> 29.9만</td></tr>
-    <tr><td><a href="/blog/brooks-running-shoes-lineup-tier-guide-2026"><strong>브룩스</strong></a></td><td><a href="/shoes/brooks-ghost-18">고스트 18</a> 16.9만</td><td><a href="/shoes/brooks-glycerin-22">글리세린 22</a> 20.9만</td><td><a href="/shoes/brooks-adrenaline-gts-25">아드레날린 GTS 25</a> 18.9만</td><td><a href="/shoes/brooks-hyperion-max-3">하이페리온 맥스 3</a> 21.9만</td><td><a href="/shoes/brooks-hyperion-elite-6">하이페리온 엘리트 6</a> 31.9만</td></tr>
-    <tr><td><a href="/blog/adidas-running-shoes-lineup-tier-guide-2026"><strong>아디다스</strong></a></td><td><a href="/shoes/adidas-supernova-rise-3">슈퍼노바 라이즈 3</a> 15.9만</td><td>—</td><td>—</td><td><a href="/shoes/adidas-boston-13">보스턴 13</a> 17.9만</td><td><a href="/shoes/adidas-adios-pro-4">아디오스 프로 4</a> 29.9만</td></tr>
-    <tr><td><a href="/blog/on-running-shoes-lineup-tier-guide-2026"><strong>온</strong></a></td><td><a href="/shoes/on-cloudrunner-2">클라우드러너 2</a> 18.9만</td><td><a href="/shoes/on-cloudmonster-3">클라우드몬스터 3</a> 22.9만</td><td><a href="/shoes/on-cloudrunner-3">클라우드러너 3</a> 19.9만</td><td><a href="/shoes/on-cloudmonster-3-hyper">클라우드몬스터 3 하이퍼</a> 25.9만</td><td><a href="/shoes/on-cloudboom-strike">클라우드붐 스트라이크</a> 32.9만</td></tr>
-    <tr><td><a href="/blog/puma-running-shoes-lineup-tier-guide-2026"><strong>푸마</strong></a></td><td><a href="/shoes/puma-velocity-nitro-5">벨로시티 나이트로 5</a> 17.9만</td><td><a href="/shoes/puma-magnify-nitro-3">매그니파이 나이트로 3</a> 19.9만</td><td>—</td><td><a href="/shoes/puma-deviate-nitro-4">디비에이트 나이트로 4</a> 21.9만</td><td><a href="/shoes/puma-deviate-nitro-elite-4">디비에이트 나이트로 엘리트 4</a> 28.9만</td></tr>
-    <tr><td><a href="/blog/mizuno-running-shoes-lineup-tier-guide-2026"><strong>미즈노</strong></a></td><td><a href="/shoes/mizuno-wave-rider-30">웨이브 라이더 30</a> 17.9만</td><td><a href="/shoes/mizuno-wave-sky-9">웨이브 스카이 9</a> 18.9만</td><td><a href="/shoes/mizuno-wave-inspire-22">웨이브 인스파이어 22</a> 16.9만</td><td><a href="/shoes/mizuno-wave-rebellion-flash-3">웨이브 리벨리온 플래시 3</a> 19.9만</td><td><a href="/shoes/mizuno-hyperwarp-elite">하이퍼워프 엘리트</a> 27.9만</td></tr>
-    <tr><td><a href="/blog/saucony-running-shoes-lineup-tier-guide-2026"><strong>사코니</strong></a></td><td><a href="/shoes/saucony-ride-19">라이드 19</a> 17.9만</td><td><a href="/shoes/saucony-triumph-24">트라이엄프 24</a> 20.9만</td><td><a href="/shoes/saucony-guide-19">가이드 19</a> 17.9만</td><td><a href="/shoes/saucony-endorphin-speed-5">엔돌핀 스피드 5</a> 21.9만</td><td><a href="/shoes/saucony-endorphin-pro-5">엔돌핀 프로 5</a> 29.9만</td></tr>
-    <tr><td><a href="/blog/li-ning-red-hare-9-lineup-2026"><strong>리닝</strong></a></td><td><a href="/shoes/li-ning-red-hare-9">레드헤어 9</a> 9.5만 · <a href="/shoes/li-ning-red-hare-9-pro">9 프로</a> 14만</td><td><a href="/shoes/li-ning-red-hare-9-ultra">레드헤어 9 울트라</a> 15만</td><td>—</td><td>—</td><td>—</td></tr>
-  </tbody>
-</table>
-
-<p>※ 가격은 한국 공식가(2026-09-28 기준)입니다. 같은 칸의 전작·상위 모델, 트레일 모델은 각 브랜드 계급도에 모두 있습니다. 표가 넓어 모바일에서는 옆으로 밀어서 보세요.</p>
-
-<p>※ 2026년 10월 2일 기준 한국 공식몰에 올라온 후속 세대 중 브룩스 하이페리온 엘리트 6, 푸마 벨로시티 나이트로 5, 미즈노 웨이브 인스파이어 22는 이 표에 반영했습니다. 브룩스 글리세린 GTS 23은 안정화 칸의 기준 모델(아드레날린 GTS 25)과 달라 브랜드 계급도에만 넣었고, 아디다스 아디오스 프로 5는 DB에 등록돼 있지만 검색 색인에서 제외한 상태라 이 표에는 아디오스 프로 4를 둡니다. 신세대 세 모델의 무게·스택은 출처마다 기준이 달라 각 상세 페이지에 기준을 병기했습니다.</p>
-
-<h2>3. 브랜드마다 "등급 표시법"이 다르다</h2>
-
-<p>같은 다섯 칸을 브랜드마다 다른 이름 규칙으로 표시합니다. 이 규칙만 알면 처음 보는 모델도 어느 칸인지 짐작할 수 있습니다.</p>
-
-<table>
-  <thead>
-    <tr><th>브랜드</th><th>등급을 읽는 신호</th><th>전체 라인업</th></tr>
-  </thead>
-  <tbody>
-    <tr><td><strong>뉴발란스</strong></td><td>번호 — 6x 안정화 · 8x 중립 데일리 · 10xx 프리미엄 쿠션. 스피드·레이싱은 번호 대신 이름(레벨·SC 레벨·SC Elite)</td><td><a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026">뉴발란스 계급도</a></td></tr>
-    <tr><td><strong>나이키</strong></td><td>라인 이름(페가수스·보메로·스트럭처) + 접미사 플러스·프리미엄, 이름에 Fly가 붙으면 카본 레이싱(라이벌 플라이는 예외)</td><td><a href="/blog/nike-running-shoes-lineup-tier-guide-2026">나이키 계급도</a></td></tr>
-    <tr><td><strong>아식스</strong></td><td>GEL 클래식(카야노·님버스) vs FF Blast 신세대, "blast"가 붙으면 반발 폼, 메타스피드는 카본</td><td><a href="/blog/asics-running-shoes-lineup-tier-guide-2026">아식스 계급도</a></td></tr>
-    <tr><td><strong>호카</strong></td><td>클리프톤·본디·마하 데일리 라인 + 이름의 "X"가 퍼포먼스 강화(로켓 X·마하 X)</td><td><a href="/blog/hoka-running-shoes-lineup-tier-guide-2026">호카 계급도</a></td></tr>
-    <tr><td><strong>브룩스</strong></td><td>"GTS"가 붙으면 안정화, "맥스"가 붙으면 맥시멀 스택, 하이페리온은 스피드 라인</td><td><a href="/blog/brooks-running-shoes-lineup-tier-guide-2026">브룩스 계급도</a></td></tr>
-    <tr><td><strong>아디다스</strong></td><td>슈퍼노바 = 데일리, 아디제로 = 스피드 서브브랜드(SL2 → 보스턴 → Evo SL → 아디오스 프로 사다리)</td><td><a href="/blog/adidas-running-shoes-lineup-tier-guide-2026">아디다스 계급도</a></td></tr>
-    <tr><td><strong>온</strong></td><td>모든 이름이 "클라우드~", 뒤에 붙는 하이퍼·맥스·라이트스프레이가 등급</td><td><a href="/blog/on-running-shoes-lineup-tier-guide-2026">온 계급도</a></td></tr>
-    <tr><td><strong>푸마</strong></td><td>모든 라인이 NITRO 폼, "엘리트"가 붙으면 카본 레이싱, "퓨어"는 무카본</td><td><a href="/blog/puma-running-shoes-lineup-tier-guide-2026">푸마 계급도</a></td></tr>
-    <tr><td><strong>미즈노</strong></td><td>전통 "웨이브"(Wave 플레이트) 라인 vs 신세대 "하이퍼워프" 카본 라인</td><td><a href="/blog/mizuno-running-shoes-lineup-tier-guide-2026">미즈노 계급도</a></td></tr>
-    <tr><td><strong>사코니</strong></td><td>전통 라인(라이드·가이드·트라이엄프) vs "엔돌핀" 스피드 서브 라인 — 엔돌핀이 붙으면 스피드·레이싱 계열</td><td><a href="/blog/saucony-running-shoes-lineup-tier-guide-2026">사코니 계급도</a></td></tr>
-    <tr><td><strong>리닝</strong></td><td>레드헤어 9(적토마) 삼형제 — 기본 · 프로 · 울트라</td><td><a href="/blog/li-ning-red-hare-9-lineup-2026">리닝 레드헤어 9 라인업</a></td></tr>
-  </tbody>
-</table>
-
-<h2>4. 비싼 게 상위 등급일까 — 가격대별로 보면</h2>
-
-<p>이 사이트 신발 DB에서 한국 공식가가 확인된 141종(2026년 10월 2일 기준)을 가격대로 나누면, 가격이 무엇을 반영하는지가 보입니다.</p>
-
-<table>
-  <thead>
-    <tr><th>가격대</th><th>모델 수</th><th>그중 카본</th><th>가장 많은 칸</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>15만원 미만</td><td>6종</td><td>0종</td><td>입문·데일리</td></tr>
-    <tr><td>15~20만원</td><td>52종</td><td>1종</td><td>안정화 15종 · 입문화 12종</td></tr>
-    <tr><td>20~25만원</td><td>43종</td><td>7종</td><td>쿠션화 19종</td></tr>
-    <tr><td>25만원 이상</td><td>40종</td><td><strong>28종</strong></td><td>레이싱 27종</td></tr>
-  </tbody>
-</table>
-
-<p>20만원 전후까지는 <strong>용도를 고르는 돈</strong>이고, 25만원 위부터는 대부분 <strong>대회용 기술(카본 플레이트·PEBA 계열 폼)의 값</strong>입니다. 그래서 "비싼 게 상위 등급"은 레이싱 칸에서만 대체로 맞습니다. 데일리 라인에도 30만원 가까운 프리미엄이 있지만(<a href="/shoes/nike-pegasus-premium">페가수스 프리미엄</a> 28.9만·<a href="/shoes/nike-vomero-premium">보메로 프리미엄</a> 29.9만), 폼을 겹쳐 무겁고 토박스가 좁은 편이라 매일 신기에 더 좋은 신발이라고 보긴 어렵습니다. 가격대별 추천은 <a href="/blog/running-shoes-recommend-by-price-2026">가격대별 러닝화 추천</a>에 따로 정리했습니다.</p>
-
-<h2>5. 발볼로 보면 — 브랜드별 토박스 분포</h2>
-
-<p>한국 러너가 브랜드를 고를 때 가장 먼저 걸리는 게 발볼입니다. 이 사이트 신발 DB의 토박스 분류를 브랜드별로 세면 이렇습니다.</p>
-
-<table>
-  <thead>
-    <tr><th>브랜드</th><th>좁음</th><th>표준</th><th>넓음</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>나이키</td><td><strong>6</strong></td><td>8</td><td>2</td></tr>
-    <tr><td>아식스</td><td>4</td><td>13</td><td>0</td></tr>
-    <tr><td>뉴발란스</td><td>2</td><td>10</td><td>0</td></tr>
-    <tr><td>호카</td><td>3</td><td>7</td><td>1</td></tr>
-    <tr><td>브룩스</td><td>1</td><td>11</td><td>1</td></tr>
-    <tr><td>아디다스</td><td>2</td><td>7</td><td>1</td></tr>
-    <tr><td>온</td><td>1</td><td>11</td><td>1</td></tr>
-    <tr><td>푸마</td><td>3</td><td>7</td><td>0</td></tr>
-    <tr><td>미즈노</td><td>3</td><td>7</td><td>2</td></tr>
-    <tr><td>사코니</td><td>4</td><td>16</td><td>1</td></tr>
-    <tr><td>리닝</td><td>2</td><td>1</td><td>0</td></tr>
-  </tbody>
-</table>
-
-<p>※ 2026년 10월 2일 기준, 토박스 등급이 입력된 모델만 셌습니다(나이키·아디다스는 각 1종이 미분류). 등급은 같은 랩(RunRepeat) 평균보다 3mm 이상 좁거나 넓은지, 또는 랩 본문이 좁음·넓음을 명시했는지로 매기며 그 외는 표준입니다. 평균은 RunRepeat 표본 기준이고 한국인 발 통계가 아닙니다. 모델마다 근거(실측·공식 핏 표기)가 다르니 구매 전 상세 페이지의 발볼 항목을 확인하세요.</p>
-
-<p>나이키는 16종 중 6종이 좁음으로, 모델이 9종 이상인 브랜드 가운데 좁은 모델 비율이 가장 높습니다(리닝은 3종뿐이라 비율 비교에서 뺐습니다). 다만 <strong>브랜드보다 모델 차이가 더 큽니다</strong> — 같은 브랜드 안에서도 와이드 옵션이 있는 모델과 없는 모델이 갈립니다. 모델별 와이드 옵션은 각 브랜드 계급도의 발볼 절에, 발볼 넓은 러너를 위한 실측 비교는 <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너를 위한 러닝화</a>에 있습니다.</p>
-
-<h2>6. 용도별로 브랜드를 가로질러 보려면</h2>
-
-<ul>
-  <li><strong>🟢 첫 러닝화</strong> → <a href="/blog/beginner-running-shoes-lineup-tier-guide-2026">입문 러닝화 계급도</a> — 가격표 대신 km당 비용으로 줄 세웠습니다.</li>
-  <li><strong>🏁 카본화</strong> → <a href="/blog/carbon-plate-running-shoes-lineup-tier-guide-2026">카본 러닝화 계급도</a> — 트레이너·레이서·서브2급을 한 장에 나눴습니다.</li>
-  <li><strong>⛰️ 트레일</strong> → <a href="/blog/trail-running-shoes-lineup-tier-guide-2026">트레일 러닝화 계급도</a> — 살로몬을 포함한 트레일 전용 라인업입니다.</li>
-  <li><strong>🦶 평발·과내전</strong> → <a href="/blog/stability-shoes-self-diagnosis-fit-guide-2026">안정화 자가진단 가이드</a> — 내가 안정화 칸의 러너인지부터 확인합니다.</li>
-  <li><strong>☁️ 무릎·장거리</strong> → <a href="/blog/max-cushion-running-shoes-knee-protection-2026">맥스 쿠션 러닝화 가이드</a></li>
-</ul>
-
-<h2>7. 브랜드별 계급도 11편</h2>
-
-<ul>
-  <li><a href="/blog/nike-running-shoes-lineup-tier-guide-2026"><strong>나이키 러닝화 계급도</strong></a> — 페가수스·보메로·스트럭처·Fly, 라인 이름과 접미사로 읽기</li>
-  <li><a href="/blog/asics-running-shoes-lineup-tier-guide-2026"><strong>아식스 러닝화 계급도</strong></a> — 카야노·님버스·노바블라스트·메타스피드, GEL과 FF Blast</li>
-  <li><a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026"><strong>뉴발란스 러닝화 계급도</strong></a> — 6x·8x·10xx 번호로 읽는 라인업</li>
-  <li><a href="/blog/hoka-running-shoes-lineup-tier-guide-2026"><strong>호카 러닝화 계급도</strong></a> — 클리프톤·본디·마하·아라히, 맥스 쿠션과 X</li>
-  <li><a href="/blog/brooks-running-shoes-lineup-tier-guide-2026"><strong>브룩스 러닝화 계급도</strong></a> — 고스트·글리세린·아드레날린, GTS와 맥스</li>
-  <li><a href="/blog/adidas-running-shoes-lineup-tier-guide-2026"><strong>아디다스 러닝화 계급도</strong></a> — 슈퍼노바와 아디제로 스피드 사다리</li>
-  <li><a href="/blog/on-running-shoes-lineup-tier-guide-2026"><strong>온 러닝화 계급도</strong></a> — 클라우드 이름 뒤 수식어로 읽기</li>
-  <li><a href="/blog/puma-running-shoes-lineup-tier-guide-2026"><strong>푸마 러닝화 계급도</strong></a> — 나이트로 폼과 엘리트·퓨어</li>
-  <li><a href="/blog/mizuno-running-shoes-lineup-tier-guide-2026"><strong>미즈노 러닝화 계급도</strong></a> — 웨이브 전통과 하이퍼워프 카본</li>
-  <li><a href="/blog/saucony-running-shoes-lineup-tier-guide-2026"><strong>사코니 러닝화 계급도</strong></a> — 전통 라인과 엔돌핀 스피드 라인</li>
-  <li><a href="/blog/li-ning-red-hare-9-lineup-2026"><strong>리닝 레드헤어 9 라인업</strong></a> — 기본·프로·울트라 삼형제</li>
-</ul>
-
-<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 2026-09-28 기준 한국 공식가와 이 사이트 신발 DB(브랜드 공식 자료·외부 실측 기반)를 토대로 작성했습니다. 라인업·가격·발볼 옵션은 시즌마다 바뀔 수 있으니 구매 전 각 모델 상세 페이지와 공식몰에서 최신 정보를 확인하세요.</p>
+<p><strong>2026-11-10 원문 대조 업데이트.</strong> 확인한 측정·연구 조건과 구매에 적용할 수 있는 범위를 함께 적었습니다.</p><h2>브랜드 계급보다 내가 비교할 구조를 먼저</h2><p>아래는 11개 브랜드의 정확 모델을 하나씩 골라 구조를 비교하는 지도입니다. 해당 브랜드의 모든 현재 제품, 한국 모든 재고, 브랜드별 최고 성능 순위가 아닙니다. 서로 다른 용도의 제품을 한 줄의 상하 등급으로 만들지 않았습니다.</p><p>처음 살 때는 자주 달릴 노면·원하는 고정·앞코와 발등 공간·예산·교환 조건부터 적어 보세요. 그다음 같은 목적의 후보를 좁히고, 모델명·세대·폭을 맞춰 보는 편이 유용합니다.</p><div class="table-wrap"><table><thead><tr><th scope="col">브랜드별 정확 예시</th><th scope="col">확인한 폼·보강 구조</th><th scope="col">추가로 확인할 것</th></tr></thead><tbody><tr><td><a href="/shoes/nike-structure-26">스트럭처 26</a></td><td>풀 렝스 ReactX · 중족부 지지 랩</td><td>정확 한국 규격·현재 가격·앞코/힐 고정</td></tr><tr><td><a href="/shoes/adidas-adizero-evo-sl">아디제로 Evo SL</a></td><td>전장 Lightstrike Pro · 중족 플라스틱 섕크</td><td>정확 한국 규격·현재 가격·앞코/힐 고정</td></tr><tr><td><a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a></td><td>FF LEAP + FF BLAST PLUS</td><td>정확 한국 규격·현재 가격·앞코/힐 고정</td></tr><tr><td><a href="/shoes/new-balance-860-v15">860 V15</a></td><td>Fresh Foam X 이중 폼 · 내측 wedge ·3/4 New EVA film(한국 공시)</td><td>정확 한국 규격·현재 가격·앞코/힐 고정</td></tr><tr><td><a href="/shoes/hoka-mach-6">마하 6</a></td><td>Supercritical EVA</td><td>정확 한국 규격·현재 가격·앞코/힐 고정</td></tr><tr><td><a href="/shoes/brooks-adrenaline-gts-25">아드레날린 GTS 25</a></td><td>질소 주입 DNA LOFT v3 · GuideRails</td><td>정확 한국 규격·현재 가격·앞코/힐 고정</td></tr><tr><td><a href="/shoes/on-cloudsurfer-2">클라우드서퍼 2</a></td><td>Helion · CloudTec Phase · Speedboard 없음</td><td>정확 한국 규격·현재 가격·앞코/힐 고정</td></tr><tr><td><a href="/shoes/puma-velocity-nitro-4">벨로시티 나이트로 4</a></td><td>전장 단일 NITROFOAM · PUMAGRIP</td><td>정확 한국 규격·현재 가격·앞코/힐 고정</td></tr><tr><td><a href="/shoes/mizuno-wave-rider-30">웨이브 라이더 30</a></td><td>질소 주입 ENERZY NXT 이중폼 · 전장 Wave Plate</td><td>정확 한국 규격·현재 가격·앞코/힐 고정</td></tr><tr><td><a href="/shoes/saucony-kinvara-16">킨바라 16</a></td><td>PWRRUN · 비플레이트 · 낮은 드롭</td><td>정확 한국 규격·현재 가격·앞코/힐 고정</td></tr><tr><td><a href="/shoes/li-ning-red-hare-9-ultra">레드헤어 9 울트라</a></td><td>3층 폼 · Super BOOM Capsule · 중족 비틀림 판</td><td>정확 한국 규격·현재 가격·앞코/힐 고정</td></tr></tbody></table></div><h2>안정화라는 이름으로 질환별 순위를 만들지 않기</h2><p>스트럭처 26의 중족 랩, 아드레날린 GTS 25의 GuideRails, 860 v15의 폼·EVA 필름은 서로 다른 지지 설계입니다. 한 명의 평발·무릎통증 이력만으로 이 가운데 하나를 치료용 1순위로 정할 수 없습니다.</p><p>외부 착화 의견도 고정이 좋았다는 평가와 카운터 압박·앞코 마찰이 함께 나올 수 있습니다. 구조 이름만으로 모든 발의 편안함을 보장하지 말고 실제 구매 규격에서 확인하세요.</p><h2>비싸거나 가벼운 모델이 항상 상위인가</h2><p>가격은 확인한 한국 정확 상품의 정가·할인가·시점으로 비교해야 합니다. 협업판·와이드·수입 상품을 다른 규격의 가격과 섞어 차액을 만들면 구매 판단이 흐려집니다.</p><p>무게도 성별·사이즈·검체 조건을 맞춰야 합니다. 가벼움 하나가 긴 거리의 편안함이나 모든 사람의 기록 향상을 뜻하지 않습니다. 공통 수명이 확인되지 않은 모델로 km당 비용을 계산해 등급을 매기지도 않습니다.</p><h2>이 표에서 내 후보를 고르는 순서</h2><p>이미 편하게 쓰는 신발이 있다면 무엇을 바꾸려는지부터 정하세요. 앞코 공간, 힐 고정, 굴림, 무게, 주행 노면 중 구체적인 질문을 하나 골라 두 후보를 같은 조건에서 비교하면 됩니다.</p><p>브랜드 한 곳을 더 보고 싶다면 각 모델 상세 페이지의 원문과 확인 한계를 읽어 보세요. 입문 선택은 <a href="/blog/first-running-shoe-guide-2026">첫 러닝화 비교 가이드</a>, 가격 조건은 <a href="/blog/running-shoes-recommend-by-price-2026">예산별 구매 조건 가이드</a>로 이어집니다.</p><h2>확인한 원문</h2><ul><li><a href="https://www.nike.com/kr/t/스트럭처-26-남성-로드-러닝화-7dh5Vy5s/IM8339-100" target="_blank" rel="noopener noreferrer">스트럭처 26 확인 원문</a> — 11/9~10 재대조한 정확 모델 자료. 다른 세대·한국 다른 규격의 성능으로 확대하지 않음.</li><li><a href="https://runrepeat.com/nike-structure-26" target="_blank" rel="noopener noreferrer">스트럭처 26 확인 원문</a> — 11/9~10 재대조한 정확 모델 자료. 다른 세대·한국 다른 규격의 성능으로 확대하지 않음.</li><li><a href="https://www.adidas.co.kr/아디제로-evo-sl/JP7149.html" target="_blank" rel="noopener noreferrer">아디제로 Evo SL 확인 원문</a> — 11/9~10 재대조한 정확 모델 자료. 다른 세대·한국 다른 규격의 성능으로 확대하지 않음.</li><li><a href="https://runrepeat.com/adidas-adizero-evo-sl" target="_blank" rel="noopener noreferrer">아디제로 Evo SL 확인 원문</a> — 11/9~10 재대조한 정확 모델 자료. 다른 세대·한국 다른 규격의 성능으로 확대하지 않음.</li><li><a href="https://runrepeat.com/asics-superblast-3" target="_blank" rel="noopener noreferrer">슈퍼블라스트 3 확인 원문</a> — 11/9~10 재대조한 정확 모델 자료. 다른 세대·한국 다른 규격의 성능으로 확대하지 않음.</li><li><a href="https://www.nbkorea.com/product/productDetail.action?styleCode=NBPFGF703L&amp;colCode=16&amp;cIdx=" target="_blank" rel="noopener noreferrer">860 V15 확인 원문</a> — 11/9~10 재대조한 정확 모델 자료. 다른 세대·한국 다른 규격의 성능으로 확대하지 않음.</li><li><a href="https://runrepeat.com/new-balance-fresh-foam-x-860-v-15" target="_blank" rel="noopener noreferrer">860 V15 확인 원문</a> — 11/9~10 재대조한 정확 모델 자료. 다른 세대·한국 다른 규격의 성능으로 확대하지 않음.</li><li><a href="https://runrepeat.com/hoka-mach-6" target="_blank" rel="noopener noreferrer">마하 6 확인 원문</a> — 11/9~10 재대조한 정확 모델 자료. 다른 세대·한국 다른 규격의 성능으로 확대하지 않음.</li><li><a href="https://brooksrunning.co.kr/product/detail.html?product_no=666" target="_blank" rel="noopener noreferrer">아드레날린 GTS 25 확인 원문</a> — 11/9~10 재대조한 정확 모델 자료. 다른 세대·한국 다른 규격의 성능으로 확대하지 않음.</li><li><a href="https://runrepeat.com/brooks-adrenaline-gts-25" target="_blank" rel="noopener noreferrer">아드레날린 GTS 25 확인 원문</a> — 11/9~10 재대조한 정확 모델 자료. 다른 세대·한국 다른 규격의 성능으로 확대하지 않음.</li><li><a href="https://www.on.com/ko-kr/products/cloudsurfer-2-3mf1012/mens/black-black-shoes-3MF10121043" target="_blank" rel="noopener noreferrer">클라우드서퍼 2 확인 원문</a> — 11/9~10 재대조한 정확 모델 자료. 다른 세대·한국 다른 규격의 성능으로 확대하지 않음.</li><li><a href="https://runrepeat.com/on-cloudsurfer-2" target="_blank" rel="noopener noreferrer">클라우드서퍼 2 확인 원문</a> — 11/9~10 재대조한 정확 모델 자료. 다른 세대·한국 다른 규격의 성능으로 확대하지 않음.</li><li><a href="https://kr.puma.com/kr/ko/pd/벨로시티-나이트로-4-ap-%3Cbr%3Evelocity-nitro-4-ap/312635.html?dwvar_312635_color=12" target="_blank" rel="noopener noreferrer">벨로시티 나이트로 4 확인 원문</a> — 11/9~10 재대조한 정확 모델 자료. 다른 세대·한국 다른 규격의 성능으로 확대하지 않음.</li><li><a href="https://runrepeat.com/puma-velocity-nitro-4" target="_blank" rel="noopener noreferrer">벨로시티 나이트로 4 확인 원문</a> — 11/9~10 재대조한 정확 모델 자료. 다른 세대·한국 다른 규격의 성능으로 확대하지 않음.</li><li><a href="https://kor.mizuno.com/product/detail.html?product_no=12025&amp;cate_no=803&amp;display_group=1" target="_blank" rel="noopener noreferrer">웨이브 라이더 30 확인 원문</a> — 11/9~10 재대조한 정확 모델 자료. 다른 세대·한국 다른 규격의 성능으로 확대하지 않음.</li><li><a href="https://runrepeat.com/mizuno-wave-rider-30" target="_blank" rel="noopener noreferrer">웨이브 라이더 30 확인 원문</a> — 11/9~10 재대조한 정확 모델 자료. 다른 세대·한국 다른 규격의 성능으로 확대하지 않음.</li><li><a href="https://saucony.co.kr/product/detail.html?product_no=354&amp;cate_no=122&amp;display_group=1" target="_blank" rel="noopener noreferrer">킨바라 16 확인 원문</a> — 11/9~10 재대조한 정확 모델 자료. 다른 세대·한국 다른 규격의 성능으로 확대하지 않음.</li><li><a href="https://runrepeat.com/saucony-kinvara-16" target="_blank" rel="noopener noreferrer">킨바라 16 확인 원문</a> — 11/9~10 재대조한 정확 모델 자료. 다른 세대·한국 다른 규격의 성능으로 확대하지 않음.</li><li><a href="https://ir.lining.com/en/company/chairman.php" target="_blank" rel="noopener noreferrer">레드헤어 9 울트라 확인 원문</a> — 11/9~10 재대조한 정확 모델 자료. 다른 세대·한국 다른 규격의 성능으로 확대하지 않음.</li></ul>
 `,
+    updatedAt: "2026-11-10",
   },
   {
     id: 'berlin-marathon-2026-results',

@@ -2,249 +2,40 @@ import { BlogPost } from '@/types/blog';
 
 export const posts_2026_02: BlogPost[] = [
   {
-    id: 'shoe-trends-2026',
-    slug: 'running-shoe-trends-2026-eva-replacement',
-    title: '2026년, 당신의 신발장에서 EVA가 사라지는 이유 (러닝화 3대 트렌드)',
-    description: '2026년 러닝화 시장의 3대 메가트렌드: 슈퍼 트레이너의 부상, 초임계 폼의 표준화, 규격 외 신발의 역설. EVA 시대의 종말과 한국 러닝 시장 1조 원 돌파.',
-    thumbnail: '/images/blog/running-shoe-trends-2026-eva-replacement.webp',
+    id: "shoe-trends-2026",
+    slug: "running-shoe-trends-2026-eva-replacement",
+    title: "2026 러닝화 폼·보강 구조 — EVA와 새 조합이 공존하는 사례",
+    description: "EVA 종말·시장 규모 단정을 걷어내고 정확 모델의 폼·공정·판 조합을 비교합니다. 특정 소재 연구를 시판 전 모델의 성능으로 확대하지 않습니다.",
+    thumbnail: "/images/blog/verified-running-shoe-trends-2026-eva-replacement-20261110.webp",
     content: `
-<figure class="my-10">
-  <img
-    src="/images/blog/shoe-trends-2026/Gemini_Generated_Image_ry9xisry9xisry9x.webp"
-    alt="2026 러닝화 트렌드: 슈퍼 트레이너, 초임계 폼, 규격 외 스택의 시대"
-    class="w-full rounded-xl border border-border"
-    loading="eager"
-    decoding="async"
-  />
-  <figcaption class="text-sm text-secondary mt-2">
-    2026 러닝화 3대 트렌드: 슈퍼 트레이너, 초임계 폼, 규격 외 스택
-  </figcaption>
-</figure>
-
-<p>
-  불과 2~3년 전만 해도 러닝화 미드솔의 표준이었던 EVA.
-  하지만 <strong>2026년 현재</strong>, 우리의 신발장은 거대한 기술적 변곡점을 맞이하고 있습니다.
-  엘리트 선수들만의 전유물이었던 기술이 어떻게 우리의 일상으로 스며들었는지,
-  2026년 러닝화 시장의 거시적 트렌드 3가지를 정리했습니다.
-</p>
-
-<h2>TREND 1. 기술의 민주화: '슈퍼 트레이너'의 부상</h2>
-
-<figure class="my-10">
-  <img
-    src="/images/blog/shoe-trends-2026/Gemini_Generated_Image_59n7u059n7u059n7.webp"
-    alt="카본 레이싱화(2024) vs 슈퍼 트레이너(2026) 비교: 딱딱한 추진력에서 부드럽고 안정적인 바운스로"
-    class="w-full rounded-xl border border-border"
-    loading="lazy"
-    decoding="async"
-  />
-  <figcaption class="text-sm text-secondary mt-2">
-    카본 레이싱화(2024)에서 슈퍼 트레이너(2026)로의 기술 이전 흐름
-  </figcaption>
-</figure>
-
-<p>
-  과거 엘리트 선수들의 기록 경신을 위해 존재했던 최첨단 기술들이
-  이제는 데일리 트레이너 영역으로 완전히 내려왔습니다.
-  그 중심에는 <strong>'슈퍼 트레이너(Super Trainer)'</strong>라는 새로운 카테고리가 있습니다.
-</p>
-
-<h3>하이브리드의 정점</h3>
-<p>
-  엘리트 레이싱화의 폭발적인 반발력을 유지하면서도,
-  아마추어 러너가 감당하기 힘든 카본 플레이트의 딱딱함과 불안정성을 제거했습니다.
-  매일 신을 수 있는 편안함과 레이스급 성능을 동시에 갖춘 것이 핵심입니다.
-</p>
-
-<h3>대표 모델</h3>
-<ul>
-  <li><strong>아디다스 아디제로 에보 SL (Adizero Evo SL):</strong> 세계 기록 모델인 '아디오스 프로 3'의 핵심인 <strong>라이트스트라이크 프로(Lightstrike Pro)</strong> 폼을 그대로 이식하되, 카본 로드를 빼서 안정성을 극대화했습니다.</li>
-  <li><strong>아식스 슈퍼블래스트(Superblast) 시리즈:</strong> 화요일 조깅에서도 일요일 대회와 같은 탄성을 느끼게 해주는 시장의 선두주자입니다.</li>
-  <li><strong>나이키 페가수스 프리미엄:</strong> ZoomX 폼을 탑재한 데일리 트레이너의 새로운 기준.</li>
-</ul>
-
-<h2>TREND 2. 소재 과학의 혁명: 초임계 폼의 표준화</h2>
-
-<figure class="my-10">
-  <img
-    src="/images/blog/shoe-trends-2026/Gemini_Generated_Image_pm4smjpm4smjpm4s.webp"
-    alt="전통 EVA 폼 vs 초임계 질소 폼(2026) 미세구조 비교: 불균일한 기포에서 균일하고 미세한 기포로"
-    class="w-full rounded-xl border border-border"
-    loading="lazy"
-    decoding="async"
-  />
-  <figcaption class="text-sm text-secondary mt-2">
-    전통 EVA 폼(좌)과 초임계 질소 폼(우)의 미세구조 차이
-  </figcaption>
-</figure>
-
-<p>
-  2026년은 전통적인 EVA(에틸렌 비닐 아세테이트) 폼이 구시대의 유물로 밀려난 해입니다.
-  <strong>질소 주입 및 초임계 발포(Supercritical)</strong> 공법이 새로운 표준이 되었습니다.
-</p>
-
-<h3>초임계 발포란?</h3>
-<p>
-  고온·고압 환경에서 이산화탄소나 질소를 폼 소재에 주입하는 기술입니다.
-  기존 화학 발포제 대비 기포가 균일하고 미세해져,
-  무게는 줄이면서 탄성과 내구성은 크게 향상됩니다.
-</p>
-
-<h3>브랜드별 차세대 폼</h3>
-<ul>
-  <li><strong>뉴발란스 인피니온(Infinion):</strong> 가스 주입 방식을 통해 무게는 획기적으로 줄이면서 복원력을 극대화했습니다. (<strong>1080 v15</strong> 적용)</li>
-  <li><strong>브룩스 DNA Tuned:</strong> 접착제 없이 미드솔 내부 기포 크기를 부위별로 조절해 뒤꿈치는 부드럽게, 앞발은 탄력 있게 설계했습니다. (<strong>Glycerin Max 2</strong> 적용)</li>
-  <li><strong>아식스 FF Blast Max:</strong> 기존 폼 대비 반발력을 <strong>8.5%</strong> 향상시켜 러닝 효율을 극대화했습니다.</li>
-  <li><strong>호카 PEBA 폼:</strong> 초경량 고반발 소재로 Rocket X 시리즈에 적용.</li>
-</ul>
-
-<h3>EVA vs 차세대 폼 비교</h3>
-<table class="w-full my-6 border-collapse border border-border">
-  <thead>
-    <tr class="bg-surface">
-      <th class="border border-border px-4 py-2 text-left">항목</th>
-      <th class="border border-border px-4 py-2 text-left">EVA</th>
-      <th class="border border-border px-4 py-2 text-left">초임계 폼</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td class="border border-border px-4 py-2">무게</td>
-      <td class="border border-border px-4 py-2">보통</td>
-      <td class="border border-border px-4 py-2">20~30% 경량</td>
-    </tr>
-    <tr>
-      <td class="border border-border px-4 py-2">에너지 리턴</td>
-      <td class="border border-border px-4 py-2">45~55%</td>
-      <td class="border border-border px-4 py-2">60~70%</td>
-    </tr>
-    <tr>
-      <td class="border border-border px-4 py-2">내구성</td>
-      <td class="border border-border px-4 py-2">500~600km</td>
-      <td class="border border-border px-4 py-2">700~1,000km</td>
-    </tr>
-    <tr>
-      <td class="border border-border px-4 py-2">복원력</td>
-      <td class="border border-border px-4 py-2">시간 경과 시 저하</td>
-      <td class="border border-border px-4 py-2">장기간 유지</td>
-    </tr>
-  </tbody>
-</table>
-
-<h2>TREND 3. 규제 밖의 괴물들: 'Illegal' 러닝화의 역설</h2>
-
-<figure class="my-10">
-  <img
-    src="/images/blog/shoe-trends-2026/Gemini_Generated_Image_85gsei85gsei85gs.webp"
-    alt="THE ILLEGAL STACK: 40mm 규정 vs 맥시멀리스트 트레이너(님버스 27) vs 푸마 Fast-RB 58mm 비교"
-    class="w-full rounded-xl border border-border"
-    loading="lazy"
-    decoding="async"
-  />
-  <figcaption class="text-sm text-secondary mt-2">
-    World Athletics 40mm 규정(점선) 대비 맥시멀리스트 트레이너의 스택 높이 비교
-  </figcaption>
-</figure>
-
-<p>
-  세계육상연맹(World Athletics)의 규정(미드솔 40mm 이하, 카본 1장)을 비웃는
-  <strong>'규격 외(Illegal)'</strong> 신발들이 아마추어 시장을 점령하고 있습니다.
-</p>
-
-<h3>왜 러너들은 '불법' 신발에 열광하는가?</h3>
-<p>
-  엘리트 대회의 규정은 어겼을지 몰라도,
-  아마추어의 <strong>관절 보호</strong>와 <strong>러닝의 즐거움</strong>은 완벽히 지켜냈기 때문입니다.
-  대회 기록보다 부상 없이 오래 달리는 것이 목표인 일반 러너에게,
-  두꺼운 쿠셔닝은 축복입니다.
-</p>
-
-<h3>규격 외 대표 모델</h3>
-<ul>
-  <li><strong>푸마 Fast-RB Nitro Elite:</strong> 힐 스택 높이 <strong>58mm</strong>, 카본 플레이트 <strong>3장</strong> 삽입. 규칙 파괴를 통해 압도적인 반발력을 선사합니다.</li>
-  <li><strong>뉴발란스 1080 v15:</strong> 스택 높이 41mm로 공식 대회에서는 사용 불가하지만, 궁극의 쿠셔닝을 제공합니다.</li>
-  <li><strong>아식스 젤-님버스 27:</strong> 40mm를 초과하는 스택으로 '구름 위를 걷는 듯한' 착화감.</li>
-  <li><strong>호카 본디 9:</strong> 맥시멀 쿠셔닝의 대명사. 일반 러너들의 관절을 지켜주는 수호자.</li>
-</ul>
-
-<h3>대회 규정 vs 실제 시장</h3>
-<table class="w-full my-6 border-collapse border border-border">
-  <thead>
-    <tr class="bg-surface">
-      <th class="border border-border px-4 py-2 text-left">항목</th>
-      <th class="border border-border px-4 py-2 text-left">World Athletics 규정</th>
-      <th class="border border-border px-4 py-2 text-left">시장 트렌드</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td class="border border-border px-4 py-2">미드솔 높이</td>
-      <td class="border border-border px-4 py-2">40mm 이하</td>
-      <td class="border border-border px-4 py-2">40~60mm</td>
-    </tr>
-    <tr>
-      <td class="border border-border px-4 py-2">플레이트</td>
-      <td class="border border-border px-4 py-2">1장 이하</td>
-      <td class="border border-border px-4 py-2">0~3장</td>
-    </tr>
-    <tr>
-      <td class="border border-border px-4 py-2">대상</td>
-      <td class="border border-border px-4 py-2">엘리트 선수</td>
-      <td class="border border-border px-4 py-2">일반 러너</td>
-    </tr>
-  </tbody>
-</table>
-
-<h2>K-러닝 인사이트: 1조 원 시장과 '계급도' 문화</h2>
-
-<p>
-  한국 시장은 이러한 흐름을 가장 뜨겁게 받아들이고 있습니다.
-  러닝 인구 1,000만 명 시대, 소비자들은 성능에 따라 등급을 나누는
-  <strong>'러닝화 계급도'</strong> 문화를 통해 자신에게 맞는 장비를 스마트하게 소비합니다.
-</p>
-
-<h3>한국 러닝화 시장 특징</h3>
-<ul>
-  <li><strong>시장 규모:</strong> 2026년 1조 원 돌파 예상</li>
-  <li><strong>주요 소비층:</strong> 30~40대 직장인 러너</li>
-  <li><strong>트렌드:</strong> 가성비보다 성능, 브랜드 충성도 높음</li>
-  <li><strong>신규 진입:</strong> 노스페이스, 살로몬 등 아웃도어 브랜드 가세</li>
-</ul>
-
-<h3>러닝화 계급도 문화</h3>
-<p>
-  한국 러너들 사이에서는 러닝화를 성능과 가격대에 따라 분류하는 '계급도'가 인기입니다.
-  입문 → 중급 → 고급 → 엘리트로 이어지는 업그레이드 경로를 통해
-  자신의 실력과 목표에 맞는 장비를 선택합니다.
-</p>
-
-<h2>마무리: 당신의 다음 선택은?</h2>
-
-<p>
-  기술은 이제 엘리트의 전유물이 아닙니다.
-  소재는 더 가벼워졌고, 규제는 대중의 즐거움을 막지 못합니다.
-</p>
-<p>
-  2026년의 러닝화는 당신의 한계를 규정짓는 것이 아니라,
-  당신의 달리기를 더 멀리, 더 안전하게 확장하고 있습니다.
-</p>
-<p>
-  <strong>EVA 시대는 끝났습니다.</strong>
-  이제 선택은 여러분의 몫입니다.
-  슈퍼 트레이너로 일상과 레이스를 넘나들 것인지,
-  맥시멀 쿠셔닝으로 관절을 지킬 것인지,
-  아니면 둘 다 갖출 것인지.
-</p>
-<p>
-  <strong>어떤 선택이든, 2026년의 기술이 당신을 뒷받침해 줄 것입니다.</strong>
-</p>
-    `,
-    author: '산초 에디터',
-    publishedAt: '2026-02-04',
-    category: 'news',
-    tags: ['러닝화', '트렌드', '2026', 'EVA', '슈퍼트레이너', '초임계폼', 'PEBA', '한국러닝'],
-    readingTime: 10,
+<p><strong>2026-11-10 원문 대조 업데이트.</strong> 확인한 측정·연구 조건과 구매에 적용할 수 있는 범위를 함께 적었습니다.</p><h2>EVA가 사라진다는 결론보다 실제 제품의 조합 보기</h2><p>확인한 모델들에는 다양한 폼과 보강 구조가 공존합니다. 마하 6는 Supercritical EVA를 쓰고, 일반 메시 EVO SL은 Lightstrike Pro와 중족 플라스틱 섕크를 사용합니다. 이 두 사례만으로도 초임계 공정과 비EVA 소재를 같은 뜻으로 쓸 수 없다는 점을 볼 수 있습니다.</p><p>이 글은 현재 시장 전체의 판매량·소재 점유율을 조사한 통계가 아닙니다. ‘EVA의 종말’, ‘초임계의 전면 표준화’, ‘한국 시장1조원’ 같은 문장을 확인되지 않은 시장 결론으로 유지하지 않습니다.</p><div class="table-wrap"><table><thead><tr><th scope="col">확인한 정확 모델</th><th scope="col">원문에서 확인한 조합</th><th scope="col">같다고 가정하면 안 되는 것</th></tr></thead><tbody><tr><td>마하 6</td><td>Supercritical EVA</td><td>상표·공정·판의 유무를 다른 모델의 성능으로 바꾸지 않기</td></tr><tr><td>아디제로 Evo SL</td><td>전장 Lightstrike Pro · 중족 플라스틱 섕크</td><td>상표·공정·판의 유무를 다른 모델의 성능으로 바꾸지 않기</td></tr><tr><td>보스턴 13</td><td>Lightstrike Pro + Lightstrike · 유리섬유 ENERGYRODS</td><td>상표·공정·판의 유무를 다른 모델의 성능으로 바꾸지 않기</td></tr><tr><td>슈퍼블라스트 3</td><td>FF LEAP + FF BLAST PLUS</td><td>상표·공정·판의 유무를 다른 모델의 성능으로 바꾸지 않기</td></tr><tr><td>소닉블라스트 2</td><td>FF Turbo2 위층 · FF Blast Max 아래층 · 포크형 Pebax ASTROPLATE</td><td>상표·공정·판의 유무를 다른 모델의 성능으로 바꾸지 않기</td></tr></tbody></table></div><h2>플레이트가 없어도 반응성을 이야기할 수 있습니다</h2><p>카본판이 없는 모델에도 폼·형상·보강 구조가 있고, 카본판이 있는 모델끼리도 주행감이 다릅니다. 판의 유무 하나를 가격·기록·모든 사람의 안정성 순위로 해석할 수 없습니다.</p><p>보스턴 13의 유리섬유 ENERGYRODS, 소닉블라스트 2의 Pebax ASTROPLATE, EVO SL의 중족 플라스틱 섕크는 서로 다른 구조입니다. 모두를 전장 카본판으로 묶으면 구매자가 기대할 착화와 용도를 오해할 수 있습니다.</p><h2>‘슈퍼트레이너’는 비교를 시작하는 말</h2><p>이 명칭을 가진 제품들이 하나의 의무 규격·수명·적정 페이스를 공유한다고 확인되지는 않았습니다. 정확 모델의 폼·높이·무게·굴림과 실제 발 고정을 따로 봐야 합니다.</p><p>매일 편한 신발을 찾는 사람과 대회 신발의 느낌을 연습할 사람은 비교할 조건이 다를 수 있습니다. 기술이 레이스화에서 훈련화로 옮겨 왔다는 서술만으로 내 훈련에 더 좋거나 부상 위험이 낮아졌다고 보장할 수는 없습니다.</p><h2>소재 연구도 시제품의 조건 안에서 해석</h2><p>2023년 공개 연구의 EVA·PEBA 비교는 특정 카본판 시제품과 훈련된 남성22명·13km/h 테스트를 사용했습니다. 새 PEBA의 이코노미 이점과 사용 뒤 변화가 관찰됐지만 시장의 모든 시판 재료를 순위 매기는 실험은 아닙니다.</p><p>제품을 고를 때는 상표만 보고 화학 소재를 추측하거나 기계 리턴을 개인 기록으로 바꾸지 마세요. 실제 구매 규격에서의 핏과 구매처 조건까지 이어서 확인해야 합니다.</p><h2>확인한 원문</h2><ul><li><a href="https://runrepeat.com/hoka-mach-6" target="_blank" rel="noopener noreferrer">마하 6 확인 원문</a> — 11/9~10 재대조한 정확 모델 자료. 다른 세대·한국 다른 규격의 성능으로 확대하지 않음.</li><li><a href="https://www.adidas.co.kr/아디제로-evo-sl/JP7149.html" target="_blank" rel="noopener noreferrer">아디제로 Evo SL 확인 원문</a> — 11/9~10 재대조한 정확 모델 자료. 다른 세대·한국 다른 규격의 성능으로 확대하지 않음.</li><li><a href="https://runrepeat.com/adidas-adizero-evo-sl" target="_blank" rel="noopener noreferrer">아디제로 Evo SL 확인 원문</a> — 11/9~10 재대조한 정확 모델 자료. 다른 세대·한국 다른 규격의 성능으로 확대하지 않음.</li><li><a href="https://www.adidas.co.kr/아디제로-보스턴-13/KH9563.html" target="_blank" rel="noopener noreferrer">보스턴 13 확인 원문</a> — 11/9~10 재대조한 정확 모델 자료. 다른 세대·한국 다른 규격의 성능으로 확대하지 않음.</li><li><a href="https://runrepeat.com/adidas-adizero-boston-13" target="_blank" rel="noopener noreferrer">보스턴 13 확인 원문</a> — 11/9~10 재대조한 정확 모델 자료. 다른 세대·한국 다른 규격의 성능으로 확대하지 않음.</li><li><a href="https://runrepeat.com/asics-superblast-3" target="_blank" rel="noopener noreferrer">슈퍼블라스트 3 확인 원문</a> — 11/9~10 재대조한 정확 모델 자료. 다른 세대·한국 다른 규격의 성능으로 확대하지 않음.</li><li><a href="https://www.asics.co.kr/p/AKR_112630206-400" target="_blank" rel="noopener noreferrer">소닉블라스트 2 확인 원문</a> — 11/9~10 재대조한 정확 모델 자료. 다른 세대·한국 다른 규격의 성능으로 확대하지 않음.</li><li><a href="https://www.runrepeat.com/uk/asics-sonicblast-2" target="_blank" rel="noopener noreferrer">소닉블라스트 2 확인 원문</a> — 11/9~10 재대조한 정확 모델 자료. 다른 세대·한국 다른 규격의 성능으로 확대하지 않음.</li><li><a href="https://onlinelibrary.wiley.com/doi/10.1111/sms.14526" target="_blank" rel="noopener noreferrer">EVA·PEBA AFT 비교 원문</a> — 특정 시제품·새것과450km·실험 대상 조건. 시장 전체 소재 서열 아님.</li></ul>
+`,
+    author: "산초 에디터",
+    publishedAt: "2026-02-04",
+    category: "news",
+    tags: [
+      "러닝화",
+      "트렌드",
+      "2026",
+      "EVA",
+      "슈퍼트레이너",
+      "초임계폼",
+      "PEBA",
+      "한국러닝"
+    ],
+    readingTime: 6,
     featured: true,
+    updatedAt: "2026-11-10",
+    faqs: [
+      {
+        "question": "EVA는 더 이상 안 쓰이나요?",
+        "answer": "확인한 마하6의 Supercritical EVA처럼 현재 제품에도 존재합니다. 시장 전체 점유율·소멸을 조사한 결과는 아닙니다."
+      },
+      {
+        "question": "카본판이 없으면 입문용인가요?",
+        "answer": "판 유무 하나로 등급을 정할 수 없습니다. 폼·형상·무게·핏과 실제 용도를 함께 봐야 합니다."
+      }
+    ],
   },
   {
     id: "pronation-guide",
@@ -291,264 +82,39 @@ export const posts_2026_02: BlogPost[] = [
     ],
   },
   {
-    id: 'first-running-shoe-2026',
-    slug: 'first-running-shoe-guide-2026',
-    title: '2026 초보 러너를 위한 인생 첫 러닝화 추천 TOP 8',
-    description: '예산과 발 타입에 맞춰 실패 없는 첫 러닝화를 선택하세요. 뉴트럴, 안정화, 슈퍼 트레이너까지 용도별 베스트 모델 완벽 정리.',
-    thumbnail: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=1600&q=80',
+    id: "first-running-shoe-2026",
+    slug: "first-running-shoe-guide-2026",
+    title: "첫 러닝화 선택 — 8개 모델의 구조와 시착 질문 비교",
+    description: "초보 TOP 순위 대신 여덟 모델의 구조·한국 폭 옵션·고정에서 비교할 질문을 정리했습니다. 임상 보호 효과·수명·일괄 사이즈 처방은 구분합니다.",
+    thumbnail: "/images/blog/verified-first-running-shoe-guide-2026-20261110.webp",
     content: `
-<figure class="my-8 -mx-4 sm:mx-0">
-  <img
-    src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=1600&q=80"
-    alt="러닝화 클로즈업 - 2026 초보 러너를 위한 첫 러닝화 가이드"
-    class="w-full rounded-2xl"
-    loading="lazy"
-  />
-  <figcaption class="text-sm text-gray-500 mt-2 text-center">
-    Photo by <a href="https://unsplash.com" class="underline hover:text-gray-700" target="_blank" rel="noopener">Unsplash</a>
-  </figcaption>
-</figure>
-
-<p>
-  러닝 입문을 결심했다면 가장 먼저 마주하는 난관이 바로 <strong>"어떤 신발을 사야 하는가?"</strong>입니다.
-  2026년 현재, 기술의 상향 평준화로 '나쁜 신발'은 없지만 <strong>'나에게 안 맞는 신발'</strong>은 여전히 존재합니다.
-</p>
-<p>
-  초보자의 부상 방지와 즐거움을 책임질 용도별 베스트 모델들을 심층 분석해 드립니다.
-</p>
-
-<h2>☁️ 1. 구름 위를 걷는 편안함: 뉴트럴 데일리 트레이너</h2>
-
-<p>
-  관절 보호가 최우선인 초보자, 혹은 발의 무너짐이 없는 '중립' 러너에게 권장되는 맥스 쿠셔닝 카테고리입니다.
-</p>
-
-<div class="overflow-x-auto my-6">
-  <table class="w-full border-collapse">
-    <thead>
-      <tr class="bg-stone-100 dark:bg-stone-800">
-        <th class="border border-border p-3 text-left font-bold">모델명</th>
-        <th class="border border-border p-3 text-left font-bold">핵심 기술</th>
-        <th class="border border-border p-3 text-left font-bold">특징</th>
-        <th class="border border-border p-3 text-left font-bold">추천 대상</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td class="border border-border p-3 font-semibold">뉴발란스 1080 v15</td>
-        <td class="border border-border p-3">Infinion 초임계 폼</td>
-        <td class="border border-border p-3">넓은 바닥면, 중립화 중 최고 안정성</td>
-        <td class="border border-border p-3">"발볼이 넓어 맞춤형 핏이 필요하다"</td>
-      </tr>
-      <tr class="bg-stone-50 dark:bg-stone-900">
-        <td class="border border-border p-3 font-semibold">호카 클리프톤 10</td>
-        <td class="border border-border p-3">8mm 힐 드롭 + 고스택</td>
-        <td class="border border-border p-3">아킬레스건 부담 감소, 278g 경량</td>
-        <td class="border border-border p-3">"무거운 신발은 싫지만 쿠션은 필요하다"</td>
-      </tr>
-      <tr>
-        <td class="border border-border p-3 font-semibold">브룩스 고스트 17</td>
-        <td class="border border-border p-3">DNA Loft v3 (질소 주입)</td>
-        <td class="border border-border p-3">12mm 드롭, 탄탄한 밸런스</td>
-        <td class="border border-border p-3">"무난하고 내구성 좋은 입문화를 원한다"</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-
-<h3>뉴발란스 1080 v15</h3>
-
-<figure class="my-8">
-  <img
-    src="/images/shoes/newbalance/1080v14/side.webp"
-    alt="뉴발란스 1080 v15 측면"
-    class="w-full max-w-md mx-auto rounded-xl border border-border"
-    loading="lazy"
-  />
-  <figcaption class="text-sm text-secondary mt-2 text-center">
-    뉴발란스 1080 v15 - 발볼 넓은 한국인에게 최적
-  </figcaption>
-</figure>
-
-<p>
-  Infinion 초임계 폼을 적용해 Fresh Foam X보다 더 부드럽고 반발력이 향상되었습니다.
-  넓은 바닥면이 안정성을 제공해 발볼이 넓은 한국인 러너에게 특히 추천합니다.
-  <a href="/shoes/new-balance-1080-v15" class="text-accent hover:underline">상세 스펙 보기 →</a>
-</p>
-
-<h3>호카 클리프톤 10</h3>
-
-<figure class="my-8">
-  <img
-    src="/images/shoes/hoka/clifton10/side.webp"
-    alt="호카 클리프톤 10"
-    class="w-full max-w-md mx-auto rounded-xl border border-border"
-    loading="lazy"
-  />
-  <figcaption class="text-sm text-secondary mt-2 text-center">
-    호카 클리프톤 10 - 278g의 가벼운 쿠셔닝
-  </figcaption>
-</figure>
-
-<p>
-  고스택의 쿠셔닝을 278g의 가벼운 무게에 담았습니다. 8mm의 낮은 드롭으로 자연스러운 주법을 유도하며,
-  아킬레스건에 부담을 주지 않습니다.
-  <a href="/shoes/hoka-clifton-10" class="text-accent hover:underline">상세 스펙 보기 →</a>
-</p>
-
-<h3>브룩스 고스트 17</h3>
-
-<figure class="my-8">
-  <img
-    src="/images/shoes/brooks/ghost17/side.webp"
-    alt="브룩스 고스트 17"
-    class="w-full max-w-md mx-auto rounded-xl border border-border"
-    loading="lazy"
-  />
-  <figcaption class="text-sm text-secondary mt-2 text-center">
-    브룩스 고스트 17 - 실패 없는 입문화의 정석
-  </figcaption>
-</figure>
-
-<p>
-  DNA Loft v3 질소 주입 폼으로 부드러우면서도 탄탄한 착지감을 제공합니다.
-  12mm의 높은 드롭은 뒤꿈치 착지 러너에게 안정감을 줍니다.
-  <a href="/shoes/brooks-ghost-17" class="text-accent hover:underline">상세 스펙 보기 →</a>
-</p>
-
-<h2>🛡️ 2. 발목을 지켜주는 든든함: 안정화 솔루션</h2>
-
-<p>
-  평발이거나 착지 시 발목이 안쪽으로 과하게 무너지는(과내전) 러너를 위한 과학적인 지지력 중심 모델입니다.
-</p>
-
-<h3>🥇 아식스 젤-카야노 32 (The Emperor)</h3>
-
-<figure class="my-8">
-  <img
-    src="/images/shoes/asics/kayano32/1.webp"
-    alt="아식스 젤-카야노 32"
-    class="w-full max-w-md mx-auto rounded-xl border border-border"
-    loading="lazy"
-  />
-  <figcaption class="text-sm text-secondary mt-2 text-center">
-    아식스 젤-카야노 32 - 안정화의 황제
-  </figcaption>
-</figure>
-
-<ul>
-  <li><strong>특징:</strong> '4D 가이던스 시스템'을 통해 인위적인 압박 없이 부드럽게 안정성을 확보합니다.</li>
-  <li><strong>강점:</strong> 안정화임에도 37mm의 풍부한 쿠셔닝으로 장거리 주행 시 발 피로도가 매우 낮습니다.</li>
-</ul>
-
-<p>
-  <a href="/shoes/asics-gel-kayano-32" class="text-accent hover:underline">상세 스펙 보기 →</a>
-</p>
-
-<h3>🥈 브룩스 아드레날린 GTS 25</h3>
-
-<figure class="my-8">
-  <img
-    src="/images/shoes/brooks/adrenalinegts25/side.webp"
-    alt="브룩스 아드레날린 GTS 25"
-    class="w-full max-w-md mx-auto rounded-xl border border-border"
-    loading="lazy"
-  />
-  <figcaption class="text-sm text-secondary mt-2 text-center">
-    브룩스 아드레날린 GTS 25 - 스마트한 안정성
-  </figcaption>
-</figure>
-
-<ul>
-  <li><strong>특징:</strong> '가이드레일(GuideRails)' 기술이 발의 과도한 움직임을 실시간으로 제어합니다.</li>
-  <li><strong>강점:</strong> 12mm의 높은 드롭이 아킬레스건이 타이트한 러너에게 최고의 안정감을 줍니다.</li>
-</ul>
-
-<p>
-  <a href="/shoes/brooks-adrenaline-gts-25" class="text-accent hover:underline">상세 스펙 보기 →</a>
-</p>
-
-<h3>🥉 호카 아라히 8</h3>
-
-<figure class="my-8">
-  <img
-    src="/images/shoes/hoka/arahi8/side.webp"
-    alt="호카 아라히 8"
-    class="w-full max-w-md mx-auto rounded-xl border border-border"
-    loading="lazy"
-  />
-  <figcaption class="text-sm text-secondary mt-2 text-center">
-    호카 아라히 8 - 가벼운 안정화의 새 기준
-  </figcaption>
-</figure>
-
-<p>
-  새로운 <strong>H-프레임</strong> 도입으로 날렵한 디자인과 강력한 지지력을 동시에 잡았습니다.
-  안정화임에도 가벼워 장거리 훈련에도 부담이 없습니다.
-  <a href="/shoes/hoka-arahi-8" class="text-accent hover:underline">상세 스펙 보기 →</a>
-</p>
-
-<h2>⚡ 3. 가성비와 속도를 동시에: 슈퍼 트레이너 입문기</h2>
-
-<p>
-  기록 단축을 꿈꾸거나, 합리적인 가격에 최상급 레이싱화의 탄성을 맛보고 싶은 스마트한 초보자를 위한 선택입니다.
-</p>
-
-<h3>푸마 벨로시티 나이트로 4</h3>
-
-<figure class="my-8">
-  <img
-    src="/images/shoes/puma/velocitynitro4/side.webp"
-    alt="푸마 벨로시티 나이트로 4"
-    class="w-full max-w-md mx-auto rounded-xl border border-border"
-    loading="lazy"
-  />
-  <figcaption class="text-sm text-secondary mt-2 text-center">
-    푸마 벨로시티 나이트로 4 - 접지력의 끝판왕
-  </figcaption>
-</figure>
-
-<p>
-  <strong>"접지력의 끝판왕"</strong>. 젖은 노면에서도 미끄러지지 않는 PUMAGRIP과 질소 주입 나이트로 폼의 조합으로
-  전천후 데일리 트레이너로 손색없습니다.
-  <a href="/shoes/puma-velocity-nitro-4" class="text-accent hover:underline">상세 스펙 보기 →</a>
-</p>
-
-<h2>💡 결론: 당신의 첫 번째 파트너는?</h2>
-
-<div class="p-6 bg-stone-100 dark:bg-stone-800 rounded-2xl my-8">
-  <h4 class="font-bold text-lg mb-4">🎯 상황별 추천 정리</h4>
-  <ul class="space-y-3">
-    <li class="flex items-start gap-3">
-      <span class="text-emerald-600 font-bold">관절 걱정:</span>
-      <span>뉴발란스 1080 v15 - 넓은 바닥면과 풍부한 쿠셔닝</span>
-    </li>
-    <li class="flex items-start gap-3">
-      <span class="text-amber-600 font-bold">발목 무너짐:</span>
-      <span>아식스 젤-카야노 32 - 4D 가이던스 시스템</span>
-    </li>
-    <li class="flex items-start gap-3">
-      <span class="text-stone-600 font-bold">무난한 입문:</span>
-      <span>브룩스 고스트 17 - 실패 없는 밸런스</span>
-    </li>
-    <li class="flex items-start gap-3">
-      <span class="text-rose-600 font-bold">속도 훈련:</span>
-      <span>푸마 벨로시티 나이트로 4 - 가성비 + 반발력</span>
-    </li>
-  </ul>
-</div>
-
-<p>
-  <strong>첫 러닝화 선택에서 가장 중요한 것</strong>은 화려한 기술보다 <strong>나의 발 타입과 러닝 목적</strong>에 맞는지입니다.
-  위 가이드를 참고해 자신에게 맞는 첫 파트너를 찾아보세요!
-</p>
-    `,
-    author: '산초 에디터',
-    publishedAt: '2026-02-04',
-    category: 'guide',
-    tags: ['초보러너', '첫러닝화', '입문화', '뉴트럴', '안정화', '2026추천', '러닝화선택'],
-    readingTime: 7,
+<p><strong>2026-11-10 원문 대조 업데이트.</strong> 확인한 측정·연구 조건과 구매에 적용할 수 있는 범위를 함께 적었습니다.</p><h2>첫 신발에서 답할 질문은 ‘최고가 무엇인가’보다 구체적입니다</h2><p>주로 달릴 노면, 편하게 걷고 뛰어 보고 싶은 시간, 발에서 자주 눌리는 위치, 평소 양말·인솔, 예산과 교환 조건을 적어 보세요. 첫 러닝화가 반드시 특정 무게·드롭·쿠션 점수를 만족해야 한다는 보편 기준은 여기서 확인하지 못했습니다.</p><p>아래 여덟 모델은 비교를 시작할 예시입니다. 동일 조건의 임상·성능 시험으로 뽑은 TOP 순위가 아니며, 초보 모두에게 맞는다는 뜻도 아닙니다. 자신의 실제 규격에서 불편이 생기면 순위보다 그 신호를 우선 볼 수 있습니다.</p><div class="table-wrap"><table><thead><tr><th scope="col">비교할 정확 모델</th><th scope="col">확인한 구조</th><th scope="col">시착에서 답할 질문</th></tr></thead><tbody><tr><td><a href="/shoes/asics-novablast-6">노바블라스트 6</a></td><td>FF BLAST MAX + 전족부 FF TURBO²</td><td>뒤꿈치와 앞발 전환이 모두 편한가?</td></tr><tr><td><a href="/shoes/nike-structure-26">스트럭처 26</a></td><td>풀 렝스 ReactX · 중족부 지지 랩</td><td>안쪽 어퍼·힐 카운터가 눌리지 않는가?</td></tr><tr><td><a href="/shoes/brooks-adrenaline-gts-25">아드레날린 GTS 25</a></td><td>질소 주입 DNA LOFT v3 · GuideRails</td><td>혀 고정과 힐 카운터 압박은 어떤가?</td></tr><tr><td><a href="/shoes/new-balance-860-v15">860 V15</a></td><td>Fresh Foam X 이중 폼 · 내측 wedge ·3/4 New EVA film(한국 공시)</td><td>앞코 윗공간·힐 고정과 무게는 괜찮은가?</td></tr><tr><td><a href="/shoes/hoka-mach-6">마하 6</a></td><td>Supercritical EVA</td><td>앞쪽 테이퍼와 길이·높이가 맞는가?</td></tr><tr><td><a href="/shoes/mizuno-wave-rider-30">웨이브 라이더 30</a></td><td>질소 주입 ENERZY NXT 이중폼 · 전장 Wave Plate</td><td>구매할2E·4E의 실제 공간은 충분한가?</td></tr><tr><td><a href="/shoes/on-cloudsurfer-2">클라우드서퍼 2</a></td><td>Helion · CloudTec Phase · Speedboard 없음</td><td>끈 주변이 발가락 위를 누르지 않는가?</td></tr><tr><td><a href="/shoes/puma-velocity-nitro-4">벨로시티 나이트로 4</a></td><td>전장 단일 NITROFOAM · PUMAGRIP</td><td>앞코·힐 패딩 때문에 발이 밀리지 않는가?</td></tr></tbody></table></div><h2>폭 이름보다 발의 어느 위치가 눌리는지</h2><p>노바블라스트 6는 한국 남성 일반·2E 상품을, 860 v15는 남성2E·4E와 여성D 상품을 확인했습니다. 웨이브 라이더 30도 한국 기본2E·남성SW4E 상품이 있습니다. 그러나 이 문자 폭이 다른 모델과 같은 내부 공간을 뜻하지는 않습니다.</p><p>앞볼·발가락 쪽·높이·발등·힐을 나눠 확인하세요. 해외 기본 검체의 내부 치수를 한국 여성·와이드의 치수로 옮기지 않습니다. 모든 한국 러너가 반 사이즈 크게 사야 한다는 규칙도 만들지 않습니다.</p><h2>DOR 착화에서 함께 관찰한 고정과 압박</h2><p>DOR의 스트럭처 26·아드레날린 GTS 25 착화에는 고정과 함께 안쪽 어퍼·카운터 압박 의견이 있습니다. 클라우드서퍼 2도 리뷰어에 따라 공간감과 발가락 위 압박 반응이 갈립니다. 한 명의 좋은 평가를 모든 발에 대한 보증으로 바꿀 수 없습니다.</p><p>평소 양말·인솔을 준비하고 끈을 실제처럼 조인 뒤 걸음·회전·가능한 범위의 짧은 시착을 비교해 보세요. 앞코 길이만 맞아도 발등이 눌리거나 힐이 밀릴 수 있습니다. 구매처의 반품 조건을 확인해야 집에서 비교할 수 있는 범위도 알 수 있습니다.</p><h2>쿠션·안정성으로 부상을 예방한다는 순위는 없습니다</h2><p>지지 구조와 높은 충격 흡수 시험값을 질환별 치료 등급으로 읽지 않습니다. 통증이 반복되는 상황에서는 신발만 바꿔 해결될 것이라고 단정하지 말고 훈련량·노면·몸 상태도 함께 살펴야 합니다.</p><p>입문이라는 이유만으로 카본·비카본을 일괄 허용·금지하는 대신 정확 구조·실제 핏·사용 목적을 확인할 수 있습니다. 특정 기록을 달성해야 신을 자격이 생긴다는 기준도 이 자료로 정하지 않습니다.</p><h2>마지막은 정확 상품의 구매 조건</h2><p>한국 상품의 성별·길이·폭과 정가/할인 표시를 맞춰 확인하세요. 색상·협업판이 다르면 가격과 소재가 달라질 수 있습니다. 현재 재고는 선택·결제 시점의 조건을 다시 확인해야 합니다.</p><p>예산을 정해 두 후보만 같은 양말·규격에서 비교하고, 앞코·발등·힐 가운데 불편이 남는 후보를 기록해 보세요. 새 신발에서 통증·저림을 반드시 참아야 한다는 적응 규칙은 제시하지 않습니다.</p><h2>확인한 원문</h2><ul><li><a href="https://runrepeat.com/asics-novablast-6" target="_blank" rel="noopener noreferrer">노바블라스트 6 확인 원문</a> — 11/9~10 재대조한 정확 모델 자료. 다른 세대·한국 다른 규격의 성능으로 확대하지 않음.</li><li><a href="https://www.nike.com/kr/t/스트럭처-26-남성-로드-러닝화-7dh5Vy5s/IM8339-100" target="_blank" rel="noopener noreferrer">스트럭처 26 확인 원문</a> — 11/9~10 재대조한 정확 모델 자료. 다른 세대·한국 다른 규격의 성능으로 확대하지 않음.</li><li><a href="https://runrepeat.com/nike-structure-26" target="_blank" rel="noopener noreferrer">스트럭처 26 확인 원문</a> — 11/9~10 재대조한 정확 모델 자료. 다른 세대·한국 다른 규격의 성능으로 확대하지 않음.</li><li><a href="https://brooksrunning.co.kr/product/detail.html?product_no=666" target="_blank" rel="noopener noreferrer">아드레날린 GTS 25 확인 원문</a> — 11/9~10 재대조한 정확 모델 자료. 다른 세대·한국 다른 규격의 성능으로 확대하지 않음.</li><li><a href="https://runrepeat.com/brooks-adrenaline-gts-25" target="_blank" rel="noopener noreferrer">아드레날린 GTS 25 확인 원문</a> — 11/9~10 재대조한 정확 모델 자료. 다른 세대·한국 다른 규격의 성능으로 확대하지 않음.</li><li><a href="https://www.nbkorea.com/product/productDetail.action?styleCode=NBPFGF703L&amp;colCode=16&amp;cIdx=" target="_blank" rel="noopener noreferrer">860 V15 확인 원문</a> — 11/9~10 재대조한 정확 모델 자료. 다른 세대·한국 다른 규격의 성능으로 확대하지 않음.</li><li><a href="https://runrepeat.com/new-balance-fresh-foam-x-860-v-15" target="_blank" rel="noopener noreferrer">860 V15 확인 원문</a> — 11/9~10 재대조한 정확 모델 자료. 다른 세대·한국 다른 규격의 성능으로 확대하지 않음.</li><li><a href="https://runrepeat.com/hoka-mach-6" target="_blank" rel="noopener noreferrer">마하 6 확인 원문</a> — 11/9~10 재대조한 정확 모델 자료. 다른 세대·한국 다른 규격의 성능으로 확대하지 않음.</li><li><a href="https://kor.mizuno.com/product/detail.html?product_no=12025&amp;cate_no=803&amp;display_group=1" target="_blank" rel="noopener noreferrer">웨이브 라이더 30 확인 원문</a> — 11/9~10 재대조한 정확 모델 자료. 다른 세대·한국 다른 규격의 성능으로 확대하지 않음.</li><li><a href="https://runrepeat.com/mizuno-wave-rider-30" target="_blank" rel="noopener noreferrer">웨이브 라이더 30 확인 원문</a> — 11/9~10 재대조한 정확 모델 자료. 다른 세대·한국 다른 규격의 성능으로 확대하지 않음.</li><li><a href="https://www.on.com/ko-kr/products/cloudsurfer-2-3mf1012/mens/black-black-shoes-3MF10121043" target="_blank" rel="noopener noreferrer">클라우드서퍼 2 확인 원문</a> — 11/9~10 재대조한 정확 모델 자료. 다른 세대·한국 다른 규격의 성능으로 확대하지 않음.</li><li><a href="https://runrepeat.com/on-cloudsurfer-2" target="_blank" rel="noopener noreferrer">클라우드서퍼 2 확인 원문</a> — 11/9~10 재대조한 정확 모델 자료. 다른 세대·한국 다른 규격의 성능으로 확대하지 않음.</li><li><a href="https://kr.puma.com/kr/ko/pd/벨로시티-나이트로-4-ap-%3Cbr%3Evelocity-nitro-4-ap/312635.html?dwvar_312635_color=12" target="_blank" rel="noopener noreferrer">벨로시티 나이트로 4 확인 원문</a> — 11/9~10 재대조한 정확 모델 자료. 다른 세대·한국 다른 규격의 성능으로 확대하지 않음.</li><li><a href="https://runrepeat.com/puma-velocity-nitro-4" target="_blank" rel="noopener noreferrer">벨로시티 나이트로 4 확인 원문</a> — 11/9~10 재대조한 정확 모델 자료. 다른 세대·한국 다른 규격의 성능으로 확대하지 않음.</li><li><a href="https://www.doctorsofrunning.com/nike-structure-26-review-2025/?m=0" target="_blank" rel="noopener noreferrer">DOR 스트럭처 26 착화</a> — Matt의 실제 규격·마찰·카운터 의견. 임상 순위 아님.</li><li><a href="https://www.doctorsofrunning.com/on-cloudsurfer-2-review-2025/" target="_blank" rel="noopener noreferrer">DOR 클라우드서퍼 2 착화</a> — 리뷰어별 핏 반응의 차이. 개별 착화 의견이며 공통 기준과 구분.</li></ul>
+`,
+    author: "산초 에디터",
+    publishedAt: "2026-02-04",
+    category: "guide",
+    tags: [
+      "초보러너",
+      "첫러닝화",
+      "입문화",
+      "뉴트럴",
+      "안정화",
+      "2026추천",
+      "러닝화선택"
+    ],
+    readingTime: 6,
     featured: true,
+    updatedAt: "2026-11-10",
+    faqs: [
+      {
+        "question": "초보는 어떤 신발이1위인가요?",
+        "answer": "이 자료는 임상·성능 순위가 아닙니다. 노면·실제 길이와폭·고정·예산·교환 조건에 맞춰 후보를 비교하도록 구성했습니다."
+      },
+      {
+        "question": "발볼이 넓으면 무조건 반업인가요?",
+        "answer": "길이와 폭·윗공간은 다른 조건입니다. 정확 모델의 폭 옵션과 실제 구매 규격에서 앞코·발등·힐을 비교해야 합니다."
+      }
+    ],
   },
   {
     id: 'seoul-running-guide-2026',

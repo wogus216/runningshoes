@@ -2,314 +2,42 @@ import { BlogPost } from '@/types/blog';
 
 export const posts_2025_02: BlogPost[] = [
   {
-    id: 'shoe-lifespan',
-    slug: 'running-shoe-lifespan-replacement-guide',
-    title: '러닝화 수명과 관리법: 언제 교체해야 할까? (2025 과학적 가이드)',
-    description: '러닝화 교체 시기(500~800km), 슈퍼슈즈 수명, 신발 로테이션의 과학적 효과(39% 부상 감소), 올바른 관리법까지. 학술 연구 기반 러닝화 관리 완벽 가이드.',
-    thumbnail: '/images/blog/running-shoe-lifespan-replacement-guide.webp',
+    id: "shoe-lifespan",
+    slug: "running-shoe-lifespan-replacement-guide",
+    title: "러닝화 수명·관리 — 누적 거리와 함께 볼 교체 신호",
+    description: "고정 교체 거리 대신 밑창·접착·고정·착화 변화를 점검합니다. 제조사 세척·자연 건조 안내와 수명 연구의 적용 범위를 나눴습니다.",
+    thumbnail: "/images/blog/verified-running-shoe-lifespan-replacement-guide-20261110.webp",
     content: `
-<figure class="my-10">
-  <img
-    src="https://images.unsplash.com/photo-1632211431184-0b7a60509930?auto=format&fit=crop&w=1600&q=80"
-    alt="함께 묶인 러닝화 한 켤레"
-    class="w-full rounded-xl border border-border"
-    loading="eager"
-    decoding="async"
-  />
-  <figcaption class="text-sm text-secondary mt-2">
-    이미지: <a href="https://unsplash.com/photos/rHrfD5I0mmU" target="_blank" rel="noopener noreferrer">Unsplash</a> / Hasan Almasi
-  </figcaption>
-</figure>
-
-<p>
-  "이 러닝화 아직 멀쩡한데 왜 바꿔야 해요?" 많은 러너들이 하는 질문입니다.
-  겉보기엔 괜찮아 보여도, 러닝화의 핵심 기능인 <strong>충격 흡수력</strong>은 눈에 보이지 않게 저하됩니다.
-  오래된 러닝화로 계속 달리면 무릎, 발목, 허리에 부담이 누적되어 부상으로 이어질 수 있습니다.
-</p>
-<p>
-  이 글에서는 과학적 연구와 전문가 의견을 바탕으로, 러닝화를 언제 교체해야 하는지,
-  어떻게 관리하면 수명을 늘릴 수 있는지 상세히 알려드립니다.
-</p>
-
-<h2>러닝화 교체 주기: 500~800km의 과학</h2>
-
-<figure class="my-10">
-  <img
-    src="/images/blog/shoe-lifespan/Gemini_Generated_Image_rxacq9rxacq9rxac.webp"
-    alt="러닝화 수명주기: 0km 새 신발에서 800km 마모까지의 변화 과정. 체중, 착지 유형, 노면이 수명에 영향을 미칩니다."
-    class="w-full rounded-xl border border-border"
-    loading="lazy"
-    decoding="async"
-  />
-  <figcaption class="text-sm text-secondary mt-2">
-    러닝화 수명에 영향을 미치는 요인: 체중, 착지 유형(뒤꿈치/중간발/앞발), 노면(아스팔트/흙길/콘크리트)
-  </figcaption>
-</figure>
-
-<p>
-  대부분의 러닝화 제조사와 스포츠 의학 전문가들은 <strong>500~800km</strong>를 러닝화 교체 주기로 권장합니다.
-  이 거리를 기준으로 삼는 데는 과학적 근거가 있습니다.
-</p>
-
-<div class="callout warning">
-  <p><strong>2026-07 갱신</strong> — 이 500~800km라는 숫자의 원출처는 1985년 기계 모사 실험이며, 최신 450km 실도로 마모 연구에서는 <strong>소재에 따라 결론이 갈립니다</strong>(PEBA는 효율 손실, EVA는 무변화). 숫자의 족보와 다시 계산한 기준은 <a href="/blog/running-shoe-500km-replacement-myth-2026">별도 검증 글</a>에 정리했습니다.</p>
-</div>
-<h3>왜 500~800km일까?</h3>
-<p>
-  미드솔(중창)에 사용되는 EVA나 폴리우레탄 폼은 반복적인 압축과 회복 과정을 거칩니다.
-  착지할 때 압축되고, 발이 떨어지면 원래 형태로 돌아오죠.
-  하지만 이 과정이 수천, 수만 번 반복되면 폼의 <strong>탄성이 저하</strong>됩니다.
-</p>
-<p>
-  2019년 British Journal of Sports Medicine에 발표된 연구에 따르면,
-  러닝화의 충격 흡수 능력은 <strong>500km 이후 유의미하게 감소</strong>하기 시작합니다.
-  600km 지점에서는 새 신발 대비 약 30~40%의 쿠셔닝 성능이 저하되었으며,
-  이는 <strong>하지 부상 위험 증가</strong>와 통계적으로 연관되었습니다.
-</p>
-
-<h3>주행 거리별 교체 시기 (주간 기준)</h3>
-<table class="w-full my-6 border-collapse border border-border">
-  <thead>
-    <tr class="bg-surface">
-      <th class="border border-border px-4 py-2 text-left">주간 거리</th>
-      <th class="border border-border px-4 py-2 text-left">500km 도달</th>
-      <th class="border border-border px-4 py-2 text-left">800km 도달</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td class="border border-border px-4 py-2">20km</td>
-      <td class="border border-border px-4 py-2">약 6개월</td>
-      <td class="border border-border px-4 py-2">약 10개월</td>
-    </tr>
-    <tr>
-      <td class="border border-border px-4 py-2">30km</td>
-      <td class="border border-border px-4 py-2">약 4개월</td>
-      <td class="border border-border px-4 py-2">약 6.5개월</td>
-    </tr>
-    <tr>
-      <td class="border border-border px-4 py-2">50km</td>
-      <td class="border border-border px-4 py-2">약 2.5개월</td>
-      <td class="border border-border px-4 py-2">약 4개월</td>
-    </tr>
-    <tr>
-      <td class="border border-border px-4 py-2">80km (마라토너)</td>
-      <td class="border border-border px-4 py-2">약 6주</td>
-      <td class="border border-border px-4 py-2">약 10주</td>
-    </tr>
-  </tbody>
-</table>
-
-<h3>교체 주기에 영향을 미치는 요인</h3>
-<ul>
-  <li><strong>체중:</strong> 체중이 무거울수록 미드솔 압축이 빨라집니다. 80kg 이상이면 500km 쪽으로 교체 권장.</li>
-  <li><strong>주로 노면:</strong> 아스팔트 > 트랙 > 트레일 순으로 마모가 빠릅니다.</li>
-  <li><strong>주법:</strong> 뒤꿈치 착지(힐스트라이크)는 힐 부분 마모가 빠르고, 앞발 착지는 전족부 마모가 빠릅니다.</li>
-  <li><strong>신발 품질:</strong> 프리미엄 폼(ZoomX, FF Blast 등)은 저가 EVA보다 내구성이 좋을 수 있습니다.</li>
-</ul>
-
-<h2>슈퍼슈즈(PEBA 폼) 수명: 450km의 한계</h2>
-
-<figure class="my-10">
-  <img
-    src="/images/blog/shoe-lifespan/Gemini_Generated_Image_slsaffslsaffslsa.webp"
-    alt="슈퍼슈즈의 딜레마: 성능 vs 내구성. 레이싱화는 수명이 짧고, 트레이닝화는 수명이 길다."
-    class="w-full rounded-xl border border-border"
-    loading="lazy"
-    decoding="async"
-  />
-  <figcaption class="text-sm text-secondary mt-2">
-    슈퍼슈즈(좌)는 고성능이지만 수명이 짧고, 일반 트레이닝화(우)는 내구성이 뛰어납니다.
-  </figcaption>
-</figure>
-
-<p>
-  Vaporfly, Alphafly, Metaspeed 같은 <strong>카본 플레이트 레이싱화</strong>는 일반 트레이닝화와 다릅니다.
-  고반발 PEBA 폼(ZoomX, FF Turbo 등)은 가볍고 탄성이 뛰어나지만, <strong>내구성은 상대적으로 낮습니다.</strong>
-</p>
-<p>
-  2022년 Footwear Science 학술지에 게재된 연구에 따르면,
-  PEBA 기반 슈퍼슈즈의 <strong>에너지 리턴 효과는 약 450km 지점에서 급격히 감소</strong>합니다.
-  겉으로 보기엔 멀쩡해도, 4%대 에너지 효율 이점이 사라지며 <strong>일반 러닝화 수준</strong>으로 떨어집니다.
-</p>
-<p>
-  따라서 슈퍼슈즈는 <strong>레이스 전용</strong>으로 사용하고, 일상 훈련은 일반 트레이닝화로 하는 것이 경제적입니다.
-  풀마라톤 기준 약 10회 정도 사용할 수 있습니다.
-</p>
-
-<h2>신발 로테이션: 부상 위험 39% 감소</h2>
-
-<figure class="my-10">
-  <img
-    src="/images/blog/shoe-lifespan/Gemini_Generated_Image_7u22d77u22d77u22.webp"
-    alt="러닝화 교체 착용에 따른 부상 위험 39% 감소. 한 켤레만 사용하면 높은 위험, 여러 켤레를 번갈아 신으면 낮은 위험."
-    class="w-full rounded-xl border border-border"
-    loading="lazy"
-    decoding="async"
-  />
-  <figcaption class="text-sm text-secondary mt-2">
-    연구 결과: 러닝화를 번갈아 신으면 부상 위험이 39% 감소합니다 (Malisoux et al., 2015)
-  </figcaption>
-</figure>
-
-<p>
-  여러 켤레의 러닝화를 번갈아 신는 <strong>신발 로테이션</strong>은 단순한 취향이 아닌, 과학적으로 입증된 부상 예방 전략입니다.
-</p>
-<p>
-  2015년 Scandinavian Journal of Medicine & Science in Sports에 발표된 연구(Malisoux et al.)에서는
-  264명의 러너를 22주간 추적 조사했습니다. 결과는 놀라웠습니다.
-  <strong>여러 켤레(2개 이상)의 러닝화를 로테이션한 그룹은 한 켤레만 사용한 그룹 대비 부상 위험이 39% 낮았습니다.</strong>
-</p>
-
-<h3>로테이션이 효과적인 이유</h3>
-<ul>
-  <li><strong>하중 분산:</strong> 신발마다 형태·강성이 달라 몸에 걸리는 부하 부위가 분산됩니다 — 이것이 로테이션 효과의 유력한 메커니즘입니다. 흔히 "폼이 쉬면서 회복된다"고 알려져 있지만, 실측 연구에서 22시간 휴식 후 폼 회복률은 1~10%에 그쳤고 9개월을 쉬어도 완전히 회복되지 않았습니다(2026-07 갱신).</li>
-  <li><strong>근육 균형:</strong> 드롭이나 쿠셔닝이 다른 신발을 교대로 신으면 발과 하지 근육이 <strong>다양한 자극</strong>을 받아 특정 부위에 스트레스가 집중되는 것을 방지합니다.</li>
-  <li><strong>아웃솔 건조:</strong> 러닝 후 땀과 습기로 젖은 신발이 마를 시간을 확보해 <strong>박테리아 번식과 냄새를 줄입니다.</strong></li>
-  <li><strong>수명 연장:</strong> 전체 주행 거리가 여러 신발에 분산되어 개별 신발 수명이 늘어납니다.</li>
-</ul>
-
-<h3>효과적인 로테이션 구성 예시</h3>
-<ul>
-  <li><strong>데일리 트레이너:</strong> Nike Pegasus, Asics Nimbus 등 – 대부분의 훈련에 사용</li>
-  <li><strong>쿠셔닝화:</strong> Hoka Bondi, Asics Gel-Kayano 등 – 장거리 회복런에 사용</li>
-  <li><strong>템포/스피드화:</strong> Saucony Kinvara, Adidas Boston 등 – 인터벌, 템포런에 사용</li>
-  <li><strong>레이싱화:</strong> Nike Vaporfly, Asics Metaspeed 등 – 레이스 전용</li>
-</ul>
-
-<h2>러닝화 교체 신호 5가지</h2>
-<p>
-  주행 거리를 기록하지 않더라도, 다음 신호가 보이면 교체를 고려하세요.
-</p>
-
-<h3>1. 미드솔 주름(Creasing)</h3>
-<p>
-  신발 옆면의 미드솔에 깊은 <strong>가로 주름</strong>이 보이면 폼이 과도하게 압축된 상태입니다.
-  손가락으로 미드솔을 눌렀을 때 탄성이 느껴지지 않으면 쿠셔닝이 거의 소진된 것입니다.
-</p>
-
-<h3>2. 아웃솔 마모</h3>
-<p>
-  밑창의 고무(아웃솔)가 닳아 <strong>미드솔 폼이 직접 노출</strong>되면 그립력과 내구성이 급격히 저하됩니다.
-  특히 힐이나 전족부가 한쪽으로 심하게 닳았다면 주법 점검도 필요합니다.
-</p>
-
-<h3>3. 통증 발생</h3>
-<p>
-  동일한 코스, 동일한 페이스로 달리는데 갑자기 <strong>무릎, 발목, 발바닥에 통증</strong>이 느껴진다면
-  신발 쿠셔닝 저하가 원인일 수 있습니다. 새 신발로 바꾸고 통증이 사라지면 원인이 확인됩니다.
-</p>
-
-<h3>4. 한 발 균형 테스트</h3>
-<p>
-  러닝화를 신고 한 발로 30초 서기를 해보세요.
-  균형 잡기가 이전보다 어렵거나 발목이 흔들리면 <strong>신발의 지지력이 저하</strong>된 신호입니다.
-</p>
-
-<h3>5. 새 신발과 비교</h3>
-<p>
-  같은 모델의 새 신발과 나란히 놓고 비교해보세요.
-  힐 카운터가 휘어지거나, 전체적으로 한쪽으로 기울어져 있다면 교체 시기입니다.
-</p>
-
-<h2>러닝화 관리법: 수명 늘리는 5가지 팁</h2>
-
-<figure class="my-10">
-  <img
-    src="/images/blog/shoe-lifespan/Gemini_Generated_Image_x73px2x73px2x73p.webp"
-    alt="러닝화 관리: 권장 사항(부드럽게 손세탁, 신문지 자연 건조, 신발 교체 착용)과 금지 사항(세탁기/건조기 사용, 뒤꿈치 꺾어 신기, 고온 방치)"
-    class="w-full rounded-xl border border-border"
-    loading="lazy"
-    decoding="async"
-  />
-  <figcaption class="text-sm text-secondary mt-2">
-    러닝화 관리의 핵심: 손세탁, 자연 건조, 로테이션 / 세탁기, 건조기, 고온 방치는 금지
-  </figcaption>
-</figure>
-
-<h3>1. 세탁기/건조기 사용 금지</h3>
-<p>
-  <strong>러닝화는 절대 세탁기에 돌리지 마세요.</strong>
-  강한 물살과 세제가 미드솔 폼의 구조를 손상시키고, 접착제를 약화시킵니다.
-  건조기 열은 폼을 수축시키고 갑피를 변형시킵니다.
-</p>
-
-<h3>2. 올바른 손세탁 방법</h3>
-<ul>
-  <li>미온수(30℃ 이하)에 중성 세제를 풀어 부드러운 솔로 가볍게 문지르세요.</li>
-  <li>인솔(깔창)과 끈은 분리해서 따로 세탁합니다.</li>
-  <li>흐르는 물에 세제를 완전히 헹궈내세요.</li>
-</ul>
-
-<h3>3. 신문지 건조법</h3>
-<p>
-  세탁 후 또는 비에 젖었을 때, <strong>신발 안에 신문지를 꾸깃꾸깃 채워 넣으세요.</strong>
-  신문지가 수분을 흡수하고, 신발 형태를 유지해줍니다.
-  직사광선, 히터, 드라이기는 폼을 손상시키므로 <strong>서늘하고 통풍 좋은 그늘</strong>에서 자연 건조하세요.
-</p>
-
-<h3>4. 러닝 전용으로만 사용</h3>
-<p>
-  러닝화를 일상 신발로 신으면 불필요한 마모가 발생합니다.
-  <strong>러닝할 때만 신고, 평소에는 일반 스니커즈</strong>를 신으세요.
-  러닝 후에는 신발을 벗어 통풍이 잘 되는 곳에 두세요.
-</p>
-
-<h3>5. 보관 시 주의사항</h3>
-<ul>
-  <li>장기간 보관 시 <strong>슈트리(신발 골)</strong>를 넣어 형태를 유지하세요.</li>
-  <li>습하거나 직사광선이 드는 곳은 피하세요.</li>
-  <li>신발 박스에 실리카겔(방습제)을 함께 넣어두면 습기를 방지할 수 있습니다.</li>
-</ul>
-
-<h2>새 러닝화 길들이기: 2~4주 적응 기간</h2>
-<p>
-  새 러닝화를 바로 장거리나 레이스에 투입하면 물집, 통증, 부상 위험이 있습니다.
-  <strong>2~4주간 점진적으로 적응 기간</strong>을 가지세요.
-</p>
-
-<h3>길들이기 스케줄 예시</h3>
-<ul>
-  <li><strong>1주차:</strong> 5km 미만의 짧은 조깅 2~3회. 착화감과 핏 확인.</li>
-  <li><strong>2주차:</strong> 10km 미만 러닝. 페이스를 다양하게 테스트.</li>
-  <li><strong>3주차:</strong> 평소 훈련 거리의 70% 수준으로 확대.</li>
-  <li><strong>4주차:</strong> 풀 훈련에 투입 가능. 필요 시 레이스 투입.</li>
-</ul>
-<p>
-  특히 드롭이나 쿠셔닝 레벨이 이전 신발과 크게 다르면 적응 기간을 더 길게 가지세요.
-  갑작스러운 변화는 종아리, 아킬레스건에 부담을 줄 수 있습니다.
-</p>
-
-<h2>마무리: 러닝화는 소모품, 부상은 예방품</h2>
-<p>
-  좋아하는 러닝화가 있어도 <strong>500~800km를 넘기면 과감히 교체</strong>하세요.
-  겉으로 멀쩡해 보여도 충격 흡수력은 이미 크게 저하되어 있습니다.
-</p>
-<p>
-  러닝화는 <strong>러너를 부상으로부터 지키는 보호 장비</strong>입니다.
-  10만 원대 신발 교체를 아끼다가 수십만 원 병원비와 몇 달간의 러닝 공백을 겪지 않으려면,
-  정기적인 교체와 로테이션을 습관화하세요.
-</p>
-<p>
-  <strong>좋은 신발로 오래오래 건강하게 달리세요!</strong>
-</p>
-
-<hr class="my-10" />
-
-<h3>참고 문헌</h3>
-<ul class="text-sm text-secondary">
-  <li>Malisoux, L., Ramesh, J., Mann, R., Seil, R., Urhausen, A., & Theisen, D. (2015). Can parallel use of different running shoes decrease running-related injury risk? <em>Scandinavian Journal of Medicine & Science in Sports</em>, 25(1), 110-115.</li>
-  <li>Hannigan, J. J., & Pollard, C. D. (2019). A 6-month simulated use evaluation of a commercial carbon fiber running shoe. <em>Footwear Science</em>, 11(sup1), S162-S163.</li>
-  <li>British Journal of Sports Medicine (2019). The effect of shoe age on running biomechanics. 53(7), 389-395.</li>
-</ul>
-    `,
-    author: '산초 에디터',
-    publishedAt: '2025-02-04',
-    updatedAt: '2026-07-28',
-    category: 'guide',
-    tags: ['러닝화', '수명', '교체주기', '관리법', '로테이션', '슈퍼슈즈', '부상예방', '500km', 'PEBA', '과학'],
-    readingTime: 12,
+<p><strong>2026-11-10 원문 대조 업데이트.</strong> 확인한 측정·연구 조건과 구매에 적용할 수 있는 범위를 함께 적었습니다.</p><h2>거리와 실제 상태를 함께 기록하세요</h2><p>러닝 앱의 누적 거리는 점검을 떠올리게 하는 기록으로 쓸 수 있습니다. 그러나 같은 거리라도 신발 모델·노면·주행 방식·사용 환경이 달라, 500km가 되는 날 모든 신발이 같은 상태가 되지는 않습니다. 이 글은 공통 수명 km나 남은 수명 계산을 제시하지 않습니다.</p><p>먼저 바닥 고무의 마모와 접착 상태, 좌우의 변형, 발을 고정하는 어퍼·끈 구멍·힐 안감, 최근 같은 조건에서의 착화 변화를 나눠 보세요. 미드솔 주름 하나만으로 성능 상실을 확정하거나, 겉이 깨끗하다는 이유로 내부 성능이 새것과 같다고 볼 수는 없습니다.</p><div class="table-wrap"><table><thead><tr><th scope="col">관찰할 것</th><th scope="col">확인 방법</th><th scope="col">다음 판단</th></tr></thead><tbody><tr><td>밑창·접착</td><td>고무 마모·벌어짐·노출된 폼·미끄러짐 변화를 확인</td><td>수선 가능 여부·사용 중단·교체를 구매처와 검토</td></tr><tr><td>좌우·플랫폼</td><td>평평한 곳의 눈에 띄는 변형과 실제 주행 중 변화를 함께 기록</td><td>육안만으로 부상 원인·남은 km를 확정하지 않기</td></tr><tr><td>어퍼·힐 고정</td><td>찢김·안감 손상·끈을 조여도 생기는 밀림 확인</td><td>길이·폭을 바꿔 해결되는 문제인지 구조 손상인지 구분</td></tr><tr><td>착화와 불편</td><td>노면·거리·강도·양말·불편 위치를 함께 적기</td><td>모든 통증을 신발 수명 하나로 설명하지 않기</td></tr></tbody></table></div><h2>세척은 제조사별 안내부터</h2><p>브룩스 공식 관리 안내는 안쪽 라이너를 빼고 부드러운 솔과 찬물로 오염을 제거하며, 신발을 물에 담그지 않도록 권합니다. 세탁기·건조기 사용도 피하도록 안내합니다. 다른 소재나 제품은 해당 제조사의 관리 표시를 먼저 확인하세요.</p><p>젖은 신발은 과도한 열·직사광선에서 말리지 않고 서늘한 공간에서 자연 건조하라는 것이 브룩스 안내입니다. 건조 시간은 젖은 정도에 따라 다르므로 몇 시간이면 폼이 완전히 복원된다는 규칙을 만들지 않습니다. 분리되지 않는 인솔은 억지로 떼지 마세요.</p><h2>로테이션의 실용성과 성능 복원률은 다른 주장</h2><p>두 켤레를 쓰면 젖은 신발을 말리거나 다른 노면·훈련 용도를 나눌 수 있습니다. 하지만 하루 쉬면 반발력이 몇 퍼센트 돌아오고 수명이 몇 배 늘어난다는 공통 수치는 이번 원문으로 확인하지 못했습니다.</p><p>관리로 오염과 습기를 줄이는 것, 손상된 고무·접착·폼의 성능을 새것처럼 되돌리는 것은 다른 문제입니다. 새 신발을 샀을 때도 같은 사이즈 숫자만으로 핏이 같다고 가정하지 말고 실제 규격을 다시 비교하세요.</p><h2>연구가 알려 주는 한계</h2><p>2012년 연구는 남성 8명이 미드솔 소재가 다른 신발로 500km를 사용했을 때의 충격 시험을 비교했습니다. 소재별 변화가 달랐으며 이를 오늘 판매되는 모든 모델의 교체 기한으로 쓸 수 없습니다.</p><p>2023년 공개 연구는 훈련된 남성 22명과 특정 EVA·PEBA 고급 신발의 새것/450km 사용 조건을 비교했습니다. 러닝 이코노미의 변화는 부상 발생률이나 모든 PEBA 제품의 수명이 아닙니다. 숫자의 역사와 연구별 차이는 <a href="/blog/running-shoe-500km-replacement-myth-2026">러닝화 교체 거리 연구 읽기</a>에서 따로 다룹니다.</p><h2>확인한 원문</h2><ul><li><a href="https://emea-support.brooksrunning.com/hc/en-us/articles/360042959472-How-do-I-clean-my-shoes" target="_blank" rel="noopener noreferrer">Brooks 공식 세척·건조 안내</a> — 해당 제조사의 관리 권고. 다른 제품 표시가 우선.</li><li><a href="https://pubmed.ncbi.nlm.nih.gov/22967232/" target="_blank" rel="noopener noreferrer">2012 EVA·PU 내구성 연구 초록</a> — 남성8명·500km·충격시험. 전 모델 수명·부상 임계값 아님.</li><li><a href="https://pubmed.ncbi.nlm.nih.gov/37858294/" target="_blank" rel="noopener noreferrer">2023 공개/2024 권호 AFT 마모 연구 초록</a> — 남성22명·13km/h·450km 사용 조건. 임상 교체 기준 아님.</li></ul>
+`,
+    author: "산초 에디터",
+    publishedAt: "2025-02-04",
+    updatedAt: "2026-11-10",
+    category: "guide",
+    tags: [
+      "러닝화",
+      "수명",
+      "교체주기",
+      "관리법",
+      "로테이션",
+      "슈퍼슈즈",
+      "부상예방",
+      "500km",
+      "PEBA",
+      "과학"
+    ],
+    readingTime: 6,
     featured: true,
+    faqs: [
+      {
+        "question": "500km가 넘으면 바로 바꿔야 하나요?",
+        "answer": "누적 거리는 점검 기록으로 쓰되 모든 모델의 공통 폐기 기준으로 확인되지는 않았습니다. 구조 손상·접지·고정·착화 변화를 함께 보세요."
+      },
+      {
+        "question": "하루 쉬면 폼이 새것처럼 돌아오나요?",
+        "answer": "공통 복원률·회복 시간·수명 배수는 이번 자료에서 확인하지 못했습니다. 젖은 신발을 말릴 여유와 새것의 성능 복원은 구분해야 합니다."
+      }
+    ],
   },
   {
     id: 'energy-gel-guide',

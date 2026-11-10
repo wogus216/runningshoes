@@ -2,157 +2,37 @@ import { BlogPost } from '@/types/blog';
 
 export const posts_2026_04: BlogPost[] = [
   {
-    id: 'running-shoe-terminology-guide',
-    slug: 'running-shoe-terminology-guide',
-    title: '러닝화 용어 총정리 | 미드솔·아웃솔·어퍼, 20만원짜리 신발 제대로 알고 신자',
-    description: '러닝화 각 부위 명칭과 역할을 한눈에 정리했습니다. 미드솔 소재(EVA·PU·PEBA)부터 아웃솔·어퍼·인솔·텅까지 — 이 정도는 알고 신어야 20~30만원이 아깝지 않습니다.',
-    thumbnail: '/images/blog/running-shoe-terminology-guide.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-04-29',
-    category: 'guide' as const,
+    id: "running-shoe-terminology-guide",
+    slug: "running-shoe-terminology-guide",
+    title: "러닝화 용어 — 폼·플레이트·드롭·발볼을 구분하는 법",
+    description: "미드솔과 아웃솔, 소재와 발포 공정, 전장 판과 섕크를 실제 모델로 구분합니다. 용어 하나를 개인 성능·보호 효과로 확대하지 않습니다.",
+    thumbnail: "/images/blog/verified-running-shoe-terminology-guide-20261110.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-04-29",
+    category: "guide",
     readingTime: 6,
-    tags: ['러닝화 가이드', '러닝화 용어', '미드솔', '아웃솔', '러닝화 구조', '입문 가이드'],
+    tags: [
+      "러닝화 가이드",
+      "러닝화 용어",
+      "미드솔",
+      "아웃솔",
+      "러닝화 구조",
+      "입문 가이드"
+    ],
     content: `
-<p>요즘 러닝화, 20~30만원을 훌쩍 넘는 제품이 참 많습니다. 그런데 신발을 살 때 "쿠션 좋다"는 느낌 하나만 믿고 사는 분이 의외로 많아요.</p>
-
-<p>비싼 장비를 단순한 '운동화'로만 신기에는 그 안에 담긴 기술력이 너무나 아깝습니다. <strong>30초만 투자해 각 부위의 역할을 파악해두면</strong>, 다음 번 신발을 살 때 훨씬 현명한 선택을 할 수 있습니다.</p>
-
-<h2>러닝화 해부도 — 어디가 뭔가</h2>
-
-<figure class="my-8">
-  <img
-    src="/images/blog/running-shoe-terminology-guide-diagram.webp"
-    alt="러닝화 용어 총정리 — 미드솔·아웃솔·어퍼·인솔 구조 설명"
-    class="w-full rounded-2xl"
-    loading="lazy"
-  />
-  <figcaption class="text-sm text-gray-500 mt-2 text-center">러닝화 주요 부위 4가지 — 각각의 역할이 다릅니다</figcaption>
-</figure>
-
-<h2>1. 미드솔 (Midsole) — 러닝화의 심장</h2>
-
-<p>인솔과 아웃솔 사이에 위치한 <strong>쿠션 층</strong>입니다. 러닝화에서 가장 중요한 부위라고 해도 과언이 아닙니다. 충격흡수, 반발력(에너지 리턴), 안정성이 모두 미드솔에서 결정됩니다.</p>
-
-<table>
-  <thead>
-    <tr><th>소재</th><th>특징</th><th>대표 제품</th></tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>EVA</strong><br><small>에틸렌 비닐 아세테이트</small></td>
-      <td>가볍고 저렴, 쿠션감 무난. 가장 널리 쓰이는 기본 소재</td>
-      <td>입문화 대부분</td>
-    </tr>
-    <tr>
-      <td><strong>PU</strong><br><small>폴리우레탄</small></td>
-      <td>EVA보다 무겁지만 내구성 뛰어남. 장시간 훈련용</td>
-      <td>안정화 계열</td>
-    </tr>
-    <tr>
-      <td><strong>PEBA</strong><br><small>폴리에테르 블록 아미드</small></td>
-      <td>초경량 + 높은 반발력. 카본화·슈퍼슈즈에 주로 사용</td>
-      <td>Vaporfly, Adizero Pro, 1080 v14</td>
-    </tr>
-    <tr>
-      <td><strong>AIR / GEL / 독자 폼</strong></td>
-      <td>브랜드별 독자 기술 (Nike Air, Asics Gel, Brooks DNA 등)</td>
-      <td>각 브랜드 플래그십</td>
-    </tr>
-  </tbody>
-</table>
-
-<div class="callout info">
-  <span class="callout-icon">ℹ️</span>
-  <div class="callout-body">
-    <p class="callout-title">PEBA가 왜 비싼가요?</p>
-    <p>PEBA 폼은 에너지 리턴율이 EVA 대비 15~25%p 높습니다. 35km 이후 발이 지칠 때도 탄성을 유지하기 때문에 레이스용 카본화에 필수로 쓰입니다. 소재 원가 자체가 높아서 20만원 이하 신발에서는 거의 보기 어렵습니다.</p>
-  </div>
-</div>
-
-<h2>2. 아웃솔 (Outsole) — 지면과 맞닿는 유일한 층</h2>
-
-<p>신발 바닥, 지면에 직접 닿는 부분입니다. 주요 역할은 세 가지입니다.</p>
-
-<ul>
-  <li><strong>접지력</strong> — 노면에 따라 패턴이 다름 (로드용 vs 트레일용)</li>
-  <li><strong>마찰력</strong> — 빗길·젖은 노면 미끄럼 방지</li>
-  <li><strong>미드솔 보호</strong> — 부드러운 미드솔 폼이 직접 마모되지 않도록 막음</li>
-</ul>
-
-<p>소재는 대부분 <strong>고무(Carbon Rubber)</strong>이며, 고성능 레이싱화에는 얇고 가벼운 블로운 러버를 씁니다. 아웃솔이 두꺼울수록 내구성이 높고, 얇을수록 가볍습니다.</p>
-
-<div class="callout tip">
-  <span class="callout-icon">💡</span>
-  <div class="callout-body">
-    <p class="callout-title">아웃솔이 닳으면 언제 교체?</p>
-    <p>일반적으로 러닝화 수명은 500~700km입니다. 아웃솔 고무가 파여 미드솔 폼이 보이기 시작하면 쿠션도 이미 망가진 상태입니다. <a href="/shoes">신발 상세 페이지</a>에서 각 모델의 예상 내구성을 확인할 수 있습니다.</p>
-  </div>
-</div>
-
-<h2>3. 어퍼 (Upper) — 발을 감싸는 모든 것</h2>
-
-<p>신발의 아웃솔 위, 발등과 발옆면 전체를 감싸는 부분입니다. 핏감과 통기성이 어퍼에서 결정됩니다.</p>
-
-<ul>
-  <li><strong>엔지니어드 메시</strong> — 가장 흔한 소재. 가볍고 통기성 우수. 여름 훈련에 적합</li>
-  <li><strong>플라이니트 / 니트</strong> — 발을 편하게 감싸는 느낌. 유연성 좋음</li>
-  <li><strong>합성 소재</strong> — 안정성과 지지력 강화. 안정화에 많이 사용</li>
-</ul>
-
-<p>한국인은 <strong>발볼이 넓은 경우가 많아</strong> 어퍼의 토박스(앞발가락 부분) 너비가 중요합니다. 68mm 미만이면 와이드 버전을 따로 찾아봐야 합니다. 각 신발의 토박스 너비는 상세 페이지에서 확인하세요.</p>
-
-<h2>4. 인솔 (Insole) — 발이 직접 닿는 층</h2>
-
-<p>신발 안쪽, 발바닥이 직접 닿는 깔창입니다. 대부분 분리·교체가 가능합니다.</p>
-
-<ul>
-  <li>기본 인솔은 얇고 단순한 경우가 많아 <strong>별도 기능성 깔창으로 교체</strong>하면 핏감과 안정성을 높일 수 있습니다</li>
-  <li>평발이거나 발 아치가 낮은 분은 아치 지지형 인솔을 추가하면 무릎·발목 부담이 줄어듭니다</li>
-</ul>
-
-<h2>5. 텅 (Tongue) — 발등 보호막</h2>
-
-<p>신발 끈 아래, 발등 전체를 덮는 부분입니다. 끈을 조일 때 발등에 압력이 집중되지 않도록 분산시키는 역할을 합니다. 최근에는 어퍼와 일체형으로 제작해 흘러내림을 방지하는 '슬리브 텅' 구조도 많습니다.</p>
-
-<h2>6. 힐카운터 (Heel Counter) — 뒤꿈치 안정성</h2>
-
-<p>뒤꿈치를 둘러싼 딱딱한 컵 구조입니다. 착지 시 발이 안쪽·바깥쪽으로 틀어지는 것을 막아줍니다. 안정화에서는 이 부분이 더 강화되어 있습니다.</p>
-
-<h2>부위별 내 발에 맞는 선택 기준</h2>
-
-<table>
-  <thead>
-    <tr><th>고민</th><th>확인할 부위</th><th>기준</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>무릎·발목이 자주 아프다</td><td>미드솔 + 힐카운터</td><td>SA 120 이상, 안정화 고려</td></tr>
-    <tr><td>발볼이 넓다</td><td>어퍼 토박스</td><td>73mm 이상, 와이드 옵션 확인</td></tr>
-    <tr><td>오래 신어도 쿠션 유지</td><td>미드솔 소재</td><td>PEBA 또는 PU 계열</td></tr>
-    <tr><td>레이스 기록 단축</td><td>미드솔 에너지 리턴</td><td>65%+ 반발력, 카본 플레이트</td></tr>
-    <tr><td>트레일 러닝</td><td>아웃솔 패턴</td><td>러그 패턴, 방수 소재 어퍼</td></tr>
-  </tbody>
-</table>
-
-<div class="callout success">
-  <span class="callout-icon">🏃</span>
-  <div class="callout-body">
-    <p class="callout-title">내 발에 맞는 신발, 1분 만에 찾기</p>
-    <p>발볼·아치 유형·주간 거리·목적을 입력하면 적합한 신발을 추천해드립니다. <a href="/recommend">1분 러닝화 추천</a>을 이용해보세요.</p>
-  </div>
-</div>
-
-<h2>용어 알고 나서 신발 보면 다르게 보입니다</h2>
-
-<p>브랜드 페이지에서 "FF Blast+", "FuelCell", "LightStrike Pro" 같은 이름을 보면 이제 감이 올 겁니다. 전부 미드솔 폼 소재의 브랜드별 이름입니다. 어퍼 소재, 아웃솔 두께, 힐카운터 강도를 체크하는 습관이 생기면 20만원 이상짜리 신발을 살 때 훨씬 후회가 줄어듭니다.</p>
-
-<ul>
-  <li>카본 플레이트 신발 궁금하다면 → <a href="/blog/carbon-plate-running-shoes-lineup-tier-guide-2026">카본화 비교 가이드</a></li>
-  <li>발볼 넓은 분 → <a href="/blog/wide-feet-running-shoes-korea">와이드 러닝화 가이드</a></li>
-  <li>내 발에 맞는 신발 찾기 → <a href="/recommend">1분 러닝화 추천</a></li>
-</ul>
-
-<p><small>출처: RIFE 러닝라이프 인스타그램 @runninglife_korea (2026.04.17) / 용어 설명은 RunRepeat·Doctors of Running 데이터를 바탕으로 재구성했습니다.</small></p>
+<p><strong>2026-11-10 원문 대조 업데이트.</strong> 확인한 측정·연구 조건과 구매에 적용할 수 있는 범위를 함께 적었습니다.</p><h2>미드솔·아웃솔·어퍼는 서로 다른 부분</h2><p>미드솔은 발 아래 중간 완충 구조, 아웃솔은 지면과 만나는 바닥 구조, 어퍼는 발을 감싸는 상부입니다. 한 제품에서 고무와 노출 폼이 섞이거나 어퍼의 여러 소재가 겹칠 수 있어 이름 하나가 전체 재료를 뜻하지는 않습니다.</p><p>플레이트는 별도 보강 구조를 가리키지만 모두 카본·전장·같은 강성은 아닙니다. 중족 섕크, 여러 로드, 포크형 판, 전장 판을 구분해 읽으면 서로 다른 신발을 같은 구조로 오해할 가능성이 줄어듭니다.</p><div class="table-wrap"><table><thead><tr><th scope="col">용어</th><th scope="col">읽는 방법</th><th scope="col">정확 모델의 예</th></tr></thead><tbody><tr><td>폼 상표</td><td>상표명과 화학 재료·발포 공정은 별도 확인</td><td>EVO SL의 Lightstrike Pro를 다른 브랜드 폼과 같은 소재로 단정하지 않기</td></tr><tr><td>로드·플레이트</td><td>재료·길이·형상·위치를 함께 보기</td><td>보스턴13의 유리섬유 ENERGYRODS와 소닉블라스트2의 Pebax ASTROPLATE 구분</td></tr><tr><td>중족 섕크</td><td>중간부 보강을 전장 레이스 판과 구분</td><td>일반 메시 EVO SL의 플라스틱 섕크</td></tr><tr><td>스택</td><td>해당 위치에서 잰 높이</td><td>제조사 공시와 독립 검체 높이는 조건을 함께 적기</td></tr><tr><td>드롭</td><td>힐 높이와 앞쪽 높이의 차이</td><td>정적 수치가 동작 중 압축을 전부 설명하지 않음</td></tr><tr><td>로커</td><td>바닥 곡선과 전환 형상</td><td>카본판 유무·경도와 같은 말이 아님</td></tr><tr><td>폭·볼륨</td><td>앞볼·발가락 쪽·높이·발등·힐을 나누기</td><td>문자 폭 하나로 실제 모든 위치의 여유를 보장하지 않음</td></tr></tbody></table></div><h2>‘초임계’와 ‘PEBA’는 같은 종류의 단어가 아닙니다</h2><p>초임계는 발포 공정을 설명할 때 쓰고, EVA·PEBA는 소재를 가리킵니다. 호카 마하 6의 Supercritical EVA처럼 두 표현이 함께 쓰일 수 있습니다. 초임계라는 말만으로 EVA가 아니거나 모든 PEBA보다 리턴이 높다고 정하지 않습니다.</p><p>같은 상표 안에서도 세대·위치에 따라 다른 폼이 쓰일 수 있습니다. 확인한 정확 모델의 원문이 화학 재료를 밝히지 않으면 상표 이름을 그대로 쓰고, 재료를 추측해 빈칸을 채우지 않는 편이 정확합니다.</p><h2>쿠션·안정성·반발력을 한 단어로 줄이지 않기</h2><p>경도계의 부드러움, 충격 시험의 흡수, 높은 스택, 리뷰어의 편안함은 서로 관련될 수 있어도 같은 측정이 아닙니다. 에너지 리턴 역시 전체 신발의 착화감이나 기록 향상을 그대로 뜻하지 않습니다.</p><p>안정화라는 분류와 지지 구조가 있다고 특정 질환을 예방·치료한다는 효과까지 확인되는 것은 아닙니다. 자신의 발에서 앞코 압박·발등 저림·힐 밀림이 생기는지 실제 규격으로 확인할 질문이 남습니다.</p><h2>상품 설명을 읽는 순서</h2><p>정확한 모델·세대·기본형/협업형을 확인한 뒤 폼·판·어퍼 구조를 보고, 성별·길이·폭을 맞춰 공시와 검체 수치를 비교하세요. 마지막으로 한국 정확 상품의 가격·옵션·교환 조건을 확인하면 됩니다.</p><p>더 자세한 측정 해석은 <a href="/blog/running-shoe-data-not-marketing-guide-2026">러닝화 데이터 읽는 법</a>에서 이어 볼 수 있습니다. 용어를 외우는 목적은 최고 등급을 고르는 것이 아니라 내 구매에서 확인할 조건을 줄이는 데 있습니다.</p><h2>확인한 원문</h2><ul><li><a href="https://runrepeat.com/testing-methodology" target="_blank" rel="noopener noreferrer">RunRepeat 측정 방법</a> — 스택·드롭·경도·내부 치수의 시험 조건.</li><li><a href="https://www.adidas.co.kr/아디제로-evo-sl/JP7149.html" target="_blank" rel="noopener noreferrer">아디제로 Evo SL 확인 원문</a> — 11/9~10 재대조한 정확 모델 자료. 다른 세대·한국 다른 규격의 성능으로 확대하지 않음.</li><li><a href="https://runrepeat.com/adidas-adizero-evo-sl" target="_blank" rel="noopener noreferrer">아디제로 Evo SL 확인 원문</a> — 11/9~10 재대조한 정확 모델 자료. 다른 세대·한국 다른 규격의 성능으로 확대하지 않음.</li><li><a href="https://www.adidas.co.kr/아디제로-보스턴-13/KH9563.html" target="_blank" rel="noopener noreferrer">보스턴 13 확인 원문</a> — 11/9~10 재대조한 정확 모델 자료. 다른 세대·한국 다른 규격의 성능으로 확대하지 않음.</li><li><a href="https://runrepeat.com/adidas-adizero-boston-13" target="_blank" rel="noopener noreferrer">보스턴 13 확인 원문</a> — 11/9~10 재대조한 정확 모델 자료. 다른 세대·한국 다른 규격의 성능으로 확대하지 않음.</li><li><a href="https://www.asics.co.kr/p/AKR_112630206-400" target="_blank" rel="noopener noreferrer">소닉블라스트 2 확인 원문</a> — 11/9~10 재대조한 정확 모델 자료. 다른 세대·한국 다른 규격의 성능으로 확대하지 않음.</li><li><a href="https://www.runrepeat.com/uk/asics-sonicblast-2" target="_blank" rel="noopener noreferrer">소닉블라스트 2 확인 원문</a> — 11/9~10 재대조한 정확 모델 자료. 다른 세대·한국 다른 규격의 성능으로 확대하지 않음.</li><li><a href="https://runrepeat.com/hoka-mach-6" target="_blank" rel="noopener noreferrer">마하 6 확인 원문</a> — 11/9~10 재대조한 정확 모델 자료. 다른 세대·한국 다른 규격의 성능으로 확대하지 않음.</li></ul>
 `,
+    updatedAt: "2026-11-10",
+    faqs: [
+      {
+        "question": "플레이트는 모두 카본인가요?",
+        "answer": "유리섬유·Pebax 등 재료와 형상·길이가 다릅니다. 전장 판·로드·중족 섕크도 구분해야 합니다."
+      },
+      {
+        "question": "초임계는PEBA인가요?",
+        "answer": "초임계는 공정,PEBA는 소재를 가리킵니다. Supercritical EVA처럼 함께 확인되는 조합도 있습니다."
+      }
+    ],
   },
   {
     id: '2026-mudo-run-coupang-play',
