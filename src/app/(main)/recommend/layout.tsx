@@ -5,7 +5,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "맞춤 러닝화 추천 | 용도·예산별 후보 비교",
   description:
-    "러닝 경험·주간 거리·용도·발볼과 예산으로 러닝화 후보를 비교하세요. 매칭 점수는 편집 기준의 상대 평가이며 부상 예방·치료 효과를 평가하지 않습니다.",
+    "용도·한국 와이드 옵션·예산으로 확인 가격이 있는 러닝화 후보를 비교하세요. 같은 용도 분류에서는 확인 가격이 낮은 순으로 보여드립니다.",
   keywords: [
     "러닝화 추천",
     "맞춤 러닝화",
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
       images: [DEFAULT_OG_IMAGE],
     title: "맞춤 러닝화 추천 - 러닝의 모든것",
     description:
-      "경험, 러닝 용도, 발볼과 예산을 비교하는 러닝화 후보 추천.",
+      "러닝 용도, 한국 와이드 옵션과 예산으로 후보를 비교하세요.",
     type: "website",
     locale: "ko_KR",
   },
@@ -32,13 +32,6 @@ export const metadata: Metadata = {
   },
 };
 
-// 화면의 추천 범위와 같은 설명만 구조화한다.
-const faqJsonLd = {
-  '@context': 'https://schema.org',
-  '@type': 'FAQPage',
-  mainEntity: [{ '@type': 'Question', name: '추천 점수는 무엇을 뜻하나요?', acceptedAnswer: { '@type': 'Answer', text: '선택한 러닝 용도·예산 등 조건 안에서 후보를 비교한 상대 점수입니다. 개별 신발의 치료나 부상 예방 효과를 뜻하지 않습니다.' } }],
-};
-
 const breadcrumbLd = breadcrumbJsonLd([{ name: '맞춤 러닝화 추천', path: '/recommend' }]);
 
 export default function RecommendLayout({
@@ -48,10 +41,6 @@ export default function RecommendLayout({
 }) {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
-      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }}

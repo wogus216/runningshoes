@@ -1,337 +1,127 @@
-import { describe, expect, it } from "vitest";
-import { recommendShoes, isUserProfile, type UserProfile } from "@/lib/recommendation";
-import { shoes } from "@/lib/data/shoes";
+import { describe, expect, it } from 'vitest';
+import { recommendShoes, isUserProfile, type UserProfile } from '@/lib/recommendation';
+import { shoes } from '@/lib/data/shoes';
 
-const baseProfile: UserProfile = {
-  experience: "beginner",
-  weeklyDistance: "low",
-  purpose: "training",
-  footArch: "normal",
-  footWidth: "standard",
-  injuries: [],
-  budget: "low",
-  preferredBrands: [],
+const profile: UserProfile = {
+  purpose: 'training', footWidth: 'standard', budget: 'low', preferredBrands: [],
 };
+const priceOf = (s: (typeof shoes)[number]) => s.price ?? s.priceAnalysis?.msrp ?? 0;
+const snapshot = (p: UserProfile) => recommendShoes(shoes, p).map(s => ({
+  slug: s.slug, priority: s.rawScore, reasons: s.matchReasons, detail: s.detailedReason,
+}));
 
-describe("recommendShoes", () => {
-  it("returns at least one recommendation for a typical beginner", () => {
-    const result = recommendShoes(shoes, baseProfile);
+describe('조건을 확인한 추천 후보', () => {
+  it('일반적인 예산 조건에서 실제 후보가 나온다', () => {
+    expect(recommendShoes(shoes, profile).length).toBeGreaterThan(0);
+  });
+
+  it.each([['low', 200000], ['mid', 300000], ['high', Infinity]] as const)('예산 %s는 상한으로 적용한다', (budget, ceiling) => {
+    for (const s of recommendShoes(shoes, { ...profile, budget })) {
+      expect(priceOf(s)).toBeGreaterThan(0);
+      expect(priceOf(s)).toBeLessThanOrEqual(ceiling);
+    }
+  });
+
+  it('가격 미확인·0·음수·비정상 값으로 예산 충족을 주장하지 않는다', () => {
+    const seed = shoes.find(s => s.specs)!;
+    for (const price of [undefined, null, 0, -1, NaN, Infinity]) {
+      expect(recommendShoes([{ ...seed, price, priceAnalysis: undefined }], profile)).toEqual([]);
+    }
+  });
+
+  it('싼 가격의 후보를 높은 예산의 하한으로 탈락시키지 않는다', () => {
+    const seed = { ...shoes.find(s => s.specs && s.category !== '트레일')!, price: 99000 };
+    expect(recommendShoes([seed], { ...profile, budget: 'high' })).toHaveLength(1);
+  });
+
+  it('트레일 목적에는 트레일 후보만 남고, 로드 목적에는 트레일이 섞이지 않는다', () => {
+    const trail = recommendShoes(shoes, { ...profile, purpose: 'trail', budget: 'high' });
+    expect(trail.length).toBeGreaterThan(0);
+    expect(trail.every(s => s.category === '트레일')).toBe(true);
+    for (const purpose of ['training', 'racing', 'recovery', 'all'] as const) {
+      expect(recommendShoes(shoes, { ...profile, purpose, budget: 'high' }).some(s => s.category === '트레일')).toBe(false);
+    }
+  });
+
+  it('가벼운 조깅 후보에 레이싱 분류를 섞지 않는다', () => {
+    const result = recommendShoes(shoes, { ...profile, purpose: 'recovery', budget: 'high' });
     expect(result.length).toBeGreaterThan(0);
+    expect(result.some(s => s.category === '레이싱')).toBe(false);
   });
 
-  it("respects budget upper bound (low <= 200000)", () => {
-    const result = recommendShoes(shoes, baseProfile);
-    for (const r of result) {
-      const price = r.price ?? r.priceAnalysis?.msrp ?? 0;
-      if (price > 0) expect(price).toBeLessThanOrEqual(200000);
-    }
-  });
-
-  it("results are sorted by matchScore descending", () => {
-    const result = recommendShoes(shoes, baseProfile);
-    for (let i = 1; i < result.length; i++) {
-      expect(result[i - 1].matchScore).toBeGreaterThanOrEqual(result[i].matchScore);
-    }
-  });
-
-  it("wide-foot profile prefers wide-fit shoes among top results", () => {
-    const wideProfile: UserProfile = { ...baseProfile, footWidth: "wide", budget: "mid" };
-    const result = recommendShoes(shoes, wideProfile);
+  it('한국 와이드 옵션을 확인한 모델만 와이드 조건에 넣는다', () => {
+    const result = recommendShoes(shoes, { ...profile, footWidth: 'wide', budget: 'high' });
     expect(result.length).toBeGreaterThan(0);
-    const top = result.slice(0, 5);
-    const hasWideFit = top.some(
-      (s) =>
-        s.koreanFootFit?.toBoxWidth === "wide" ||
-        s.koreanFootFit?.wideOptions === true,
-    );
-    expect(hasWideFit).toBe(true);
-  });
-
-  it("matchScore is a number between 0 and 100", () => {
-    const result = recommendShoes(shoes, baseProfile);
-    for (const r of result) {
-      expect(r.matchScore).toBeGreaterThanOrEqual(0);
-      expect(r.matchScore).toBeLessThanOrEqual(100);
-    }
-  });
-});
-
-/*
- * 아래 셋은 2026-08-31 점검에서 나온 결함의 회귀 방지다.
- * 셋 다 화면에서는 멀쩡해 보였고, 조합을 전수로 돌려 보고서야 드러났다.
- */
-describe("추천 결함 회귀 방지", () => {
-  const price = (s: { price?: number | null; priceAnalysis?: { msrp?: number } }) =>
-    s.price ?? s.priceAnalysis?.msrp ?? 0;
-
-  // ① 트레일화 15종이 어떤 조합에서도 추천되지 않던 문제
-  //    (recommendation.ts 에 '트레일' 문자열이 아예 없었다)
-  it("트레일 목적이면 트레일화가 결과를 채운다", () => {
-    const result = recommendShoes(shoes, { ...baseProfile, purpose: "trail", budget: "high" });
-    expect(result.length).toBeGreaterThan(0);
-    expect(result.every((s) => s.category === "트레일")).toBe(true);
-    expect(result.every((s) => price(s) > 0)).toBe(true);
-
-    // 실제 DB의 확인 가격 개수는 바뀔 수 있다. 충분한 후보가 있을 때의 추천 수는
-    // 고정된 테스트 입력으로 확인하고, 가격 미확인 신발로 결과를 채우지 않는다.
-    const seed = shoes.find((s) => s.category === "트레일" && s.specs && s.koreanFootFit)!;
-    const known = Array.from({ length: 7 }, (_, i) => ({
-      ...seed, id: `trail-fixture-${i}`, slug: `trail-fixture-${i}`, price: 199000,
-    }));
-    const unknown = {
-      ...seed, id: "trail-unknown-price", slug: "trail-unknown-price", price: undefined,
-      priceAnalysis: seed.priceAnalysis ? { ...seed.priceAnalysis, msrp: undefined } : undefined,
-    };
-    const fixtureResult = recommendShoes([...known, unknown], {
-      ...baseProfile, purpose: "trail", budget: "high",
-    });
-    expect(fixtureResult).toHaveLength(7);
-    expect(fixtureResult.every((s) => s.category === "트레일")).toBe(true);
-    expect(fixtureResult.some((s) => s.id === unknown.id)).toBe(false);
-  });
-
-  it("트레일이 아닌 목적에는 트레일화가 새어 나오지 않는다", () => {
-    for (const purpose of ["training", "racing", "recovery", "all"] as const) {
-      const result = recommendShoes(shoes, { ...baseProfile, purpose, budget: "high" });
-      expect(result.filter((s) => s.category === "트레일")).toHaveLength(0);
+    expect(result.every(s => s.koreanFootFit?.wideOptions === true)).toBe(true);
+    const seed = shoes.find(s => s.specs && priceOf(s) > 0 && s.category !== '트레일')!;
+    for (const wideOptions of [false, undefined]) {
+      expect(recommendShoes([{ ...seed, koreanFootFit: { ...seed.koreanFootFit, wideOptions } }], { ...profile, footWidth: 'wide', budget: 'high' })).toEqual([]);
     }
   });
 
-  // ② weeklyDistance 가 high 일 때만 쓰여 low↔medium 이 결과를 전혀 안 바꾸던 문제
-  it("주간 거리를 바꾸면 결과가 실제로 달라진다", () => {
-    const ids = (weeklyDistance: UserProfile["weeklyDistance"]) =>
-      recommendShoes(shoes, { ...baseProfile, weeklyDistance, budget: "mid" }).map((s) => s.id);
-    const low = ids("low");
-    const medium = ids("medium");
-    expect(low.filter((id) => !medium.includes(id)).length).toBeGreaterThan(0);
+  it('같은 용도·선호 조건에서는 확인 가격이 낮은 순서이고 입력 순서에 흔들리지 않는다', () => {
+    const seed = shoes.find(s => s.specs && s.category === '데일리')!;
+    const list = [199000, 99000, 159000].map((price, i) => ({ ...seed, id: `fixture-${i}`, slug: `fixture-${i}`, price }));
+    const result = recommendShoes(list, profile);
+    expect(result.map(priceOf)).toEqual([99000, 159000, 199000]);
+    expect(recommendShoes([...list].reverse(), profile).map(s => s.slug)).toEqual(result.map(s => s.slug));
   });
 
-  it("기존 세션의 아치·부상 선택이 추천 순위를 바꾸지 않는다", () => {
-    const snapshot = (profile: UserProfile) => recommendShoes(shoes, profile).map(s => ({ slug: s.slug, score: s.rawScore, reasons: s.matchReasons }));
-    for (const purpose of ['all', 'training', 'trail', 'recovery', 'racing'] as const) {
-      const profile = { ...baseProfile, purpose, budget: 'high' as const };
-      const expected = snapshot(profile);
-      expect(expected.length).toBeGreaterThan(0);
-      for (const footArch of ['flat', 'high'] as const) {
-        expect(snapshot({ ...profile, footArch, injuries: ['kneeIssues', 'plantarFasciitis', 'achillesTendinopathy', 'shinSplints'] })).toEqual(expected);
+  it('용도 분류를 가격·저장된 브랜드 선호보다 먼저 비교한다', () => {
+    const seed = shoes.find(s => s.specs)!;
+    const racer = { ...seed, id: 'racer', slug: 'racer', brand: 'Other', category: '레이싱', price: 300000 };
+    const daily = { ...seed, id: 'daily', slug: 'daily', brand: 'Favorite', category: '데일리', price: 100000 };
+    const result = recommendShoes([daily, racer], { ...profile, purpose: 'racing', budget: 'high', preferredBrands: ['Favorite'] });
+    expect(result[0].slug).toBe('racer');
+    expect(result[1].matchReasons).not.toContain('레이싱용으로 적합');
+  });
+
+  it('10개보다 후보가 적으면 다른 조건의 신발로 채우지 않는다', () => {
+    const seed = shoes.find(s => s.specs && s.category === '트레일')!;
+    const list = Array.from({ length: 4 }, (_, i) => ({ ...seed, id: `trail-${i}`, slug: `trail-${i}`, price: 100000 }));
+    expect(recommendShoes(list, { ...profile, purpose: 'trail' })).toHaveLength(4);
+  });
+
+  it.each(['training', 'racing', 'recovery', 'trail', 'all'] as const)('%s: 기존 경험·거리·페이스·건강 선택을 적합성 판단에 재사용하지 않는다', purpose => {
+    const p = { ...profile, purpose, budget: 'high' as const };
+    const expected = snapshot(p);
+    expect(expected.length).toBeGreaterThan(0);
+    for (const experience of ['beginner', 'intermediate', 'advanced'] as const) {
+      for (const weeklyDistance of ['low', 'medium', 'high'] as const) {
+        for (const targetPace of ['slow', 'medium', 'fast'] as const) {
+          expect(snapshot({ ...p, experience, weeklyDistance, targetPace, footArch: 'flat', injuries: ['kneeIssues'], season: 'winter' })).toEqual(expected);
+        }
       }
     }
   });
 
-  // ③ 예산 구간이 서로 겹치고 하한 때문에 값싼 좋은 신발이 빠지던 문제.
-  //    이제 예산은 상한만 뜻한다
-  it("예산은 상한으로만 동작한다", () => {
-    const ceilings = { low: 200000, mid: 300000 } as const;
-    for (const [budget, max] of Object.entries(ceilings)) {
-      const result = recommendShoes(shoes, {
-        ...baseProfile,
-        budget: budget as UserProfile["budget"],
-      });
-      for (const r of result) {
-        const p = price(r);
-        if (p > 0) expect(p).toBeLessThanOrEqual(max);
-      }
-    }
-    // 하한이 없으므로 상위 예산에서도 저가 신발이 후보에 남아야 한다
-    const high = recommendShoes(shoes, { ...baseProfile, budget: "high" });
-    const cheapest = Math.min(...high.map(price).filter((p) => p > 0));
-    expect(cheapest).toBeLessThan(200000);
-  });
-});
-
-// 2026-10-12 결과 화면 점검에서 확인한 조건 누출의 회귀 검증.
-describe("추천 조건과 결과의 일관성", () => {
-  it("평발·빠른 페이스를 함께 골라도 트레일 목적에는 트레일화만 나온다", () => {
-    const result = recommendShoes(shoes, {
-      ...baseProfile, purpose: "trail", footArch: "flat", targetPace: "fast",
-    });
-    expect(result.length).toBeGreaterThan(0);
-    expect(result.every(s => s.category === "트레일")).toBe(true);
-    expect(result.length).toBeLessThan(10); // 예산 내 후보가 적어도 로드화로 채우지 않는다.
-  });
-
-  it("상급자·빠른 페이스가 회복 용도를 뒤집지 않는다", () => {
-    const result = recommendShoes(shoes, {
-      ...baseProfile, purpose: "recovery", experience: "advanced", targetPace: "fast", budget: "high",
-    });
-    expect(result.length).toBeGreaterThan(0);
-    expect(result.some(s => s.category === "레이싱")).toBe(false);
-  });
-
-  it("넓은 발에 좁고 와이드 옵션도 없는 신발을 추천하지 않는다", () => {
-    const result = recommendShoes(shoes, {
-      ...baseProfile, footWidth: "wide", purpose: "racing", targetPace: "fast", budget: "high",
-    });
-    expect(result.some(s => s.koreanFootFit?.toBoxWidth === "narrow" && !s.koreanFootFit.wideOptions)).toBe(false);
-    const source = shoes.find(s => s.specs && s.price && s.price <= 200000 && s.koreanFootFit)!;
-    const narrow = { ...source, koreanFootFit: { ...source.koreanFootFit!, toBoxWidth: "narrow" as const, wideOptions: false } };
-    expect(recommendShoes([narrow], { ...baseProfile, footWidth: "wide" })).toHaveLength(0);
-  });
-
-  it("입문자 비추천이 명시된 제품을 입문자에게 추천하지 않는다", () => {
-    const source = shoes.find(s => s.specs && s.price)!;
-    const shoe = { ...source, targetUsers: { recommended: [], notRecommended: ["입문 러너"] } };
-    expect(recommendShoes([shoe], { ...baseProfile, budget: "high" })).toHaveLength(0);
-    expect(recommendShoes([shoe], { ...baseProfile, experience: "intermediate", budget: "high" })).toHaveLength(1);
-    // ‘입문화 중 무거움’은 입문자 비추천과 다르다.
-    expect(recommendShoes([{ ...shoe, targetUsers: { recommended: [], notRecommended: ["입문화 중 가벼운 축은 아님"] } }], { ...baseProfile, budget: "high" })).toHaveLength(1);
-  });
-
-  it("정가가 확인되지 않은 신발은 예산에 맞는 후보로 취급하지 않는다", () => {
-    const shoe = { ...shoes.find(s => s.specs)!, price: undefined, priceAnalysis: undefined };
-    expect(recommendShoes([shoe], baseProfile)).toHaveLength(0);
-  });
-
-  it("미검증 부상 등급을 바꾸거나 삭제해도 가감점·제외가 일어나지 않는다", () => {
-    const profile: UserProfile = { ...baseProfile, injuries: ['kneeIssues'], budget: 'high' };
-    // 실제 DB에서 미검증 부상 등급을 지워도 이 회귀 검증은 계속 필요하다.
-    // 현재 추천 가능한 후보에 테스트 전용 등급을 붙여 순위에 영향이 없는지 본다.
-    const source = {
-      ...recommendShoes(shoes, profile)[0],
-      injuryPrevention: {
-        plantarFasciitis: 'good' as const, achillesTendinopathy: 'good' as const,
-        kneeIssues: 'good' as const, shinSplints: 'good' as const,
-      },
-    };
-    const withoutGrade = { ...source, injuryPrevention: undefined };
-    const expected = recommendShoes([withoutGrade], profile)[0];
-    expect(expected).toBeDefined();
-    for (const level of ['excellent', 'good', 'caution', 'warning'] as const) {
-      const withGrade = { ...source, injuryPrevention: { ...source.injuryPrevention!, kneeIssues: level } };
-      const result = recommendShoes([withGrade], profile)[0];
-      expect(result.rawScore).toBe(expected.rawScore);
-      expect(result.matchWarnings).toEqual([]);
-      expect(result.detailedReason).not.toMatch(/무릎.*평가|보호|치료/);
+  it('무게 경계·카본·주관 추천 문구를 적합성 점수로 바꾸지 않는다', () => {
+    const seed = shoes.find(s => s.specs && priceOf(s) > 0 && s.category !== '트레일')!;
+    const base = recommendShoes([seed], { ...profile, budget: 'high' })[0];
+    for (const weight of [180, 200, 219, 220, 229, 230, 249, 250, 310, 311]) {
+      const result = recommendShoes([{ ...seed, specs: { ...seed.specs!, weight }, biomechanics: { ...seed.biomechanics!, carbonPlate: true }, targetUsers: { recommended: ['입문자 최고', '엘리트 레이싱', '무릎 보호'], notRecommended: ['느린 회복 러닝', '입문 러너'] } }], { ...profile, budget: 'high' })[0];
+      expect(result.rawScore).toBe(base.rawScore);
+      expect(result.matchReasons).toEqual(base.matchReasons);
+      expect(result.detailedReason).not.toMatch(/적정 무게|페이스에 적합|엘리트|평균보다|무릎 보호/);
     }
   });
 
-  it("한 후보이거나 동점인 후보도 상대 점수와 표시 범위를 지킨다", () => {
-    const source = shoes.find(s => s.specs && s.price && s.price <= 200000)!;
-    const single = recommendShoes([source], baseProfile);
-    expect(single[0].matchScore).toBe(100);
-    const repeated = Array.from({ length: 12 }, (_, i) => ({ ...source, id: `same-brand-${i}`, slug: `same-brand-${i}` }));
-    const result = recommendShoes(repeated, baseProfile);
-    expect(result.every(s => s.matchScore >= 0 && s.matchScore <= 100)).toBe(true);
-  });
-
-  it("평균 대비 차이는 화면에 나온 추천 신발끼리 비교한다", () => {
-    const result = recommendShoes(shoes, baseProfile);
-    const avg = result.reduce((sum, s) => sum + s.specs!.weight, 0) / result.length;
-    for (const s of result) expect(s.comparisonToAvg?.weight).toBe(Math.round(s.specs!.weight - avg));
+  it('후보 하나를 100점 적합으로 정규화하지 않는다', () => {
+    const seed = shoes.find(s => s.specs && priceOf(s) > 0 && s.category !== '트레일')!;
+    const result = recommendShoes([seed], { ...profile, budget: 'high' });
+    expect(result[0].matchScore).toBe(result[0].rawScore);
+    expect(result[0].matchScore).not.toBe(100);
+    expect(result[0]).not.toHaveProperty('comparisonToAvg');
   });
 });
 
-
-describe("추천 결과의 부상 후보와 세션 복원", () => {
-  it("유효한 기존 설문은 복원하고 손상된 선택지는 거절한다", () => {
-    expect(isUserProfile(baseProfile)).toBe(true);
-    expect(isUserProfile({ ...baseProfile, targetPace: "fast", season: "winter" })).toBe(true);
-    for (const value of [null, [], {}, { ...baseProfile, budget: "old-budget" }, { ...baseProfile, injuries: ["none"] }, { ...baseProfile, targetPace: "unknown" }, { ...baseProfile, preferredBrands: null }]) {
-      expect(isUserProfile(value)).toBe(false);
-    }
-  });
-});
-
-describe("쿠션 가점은 느린·회복 용도에 비추천인 신발에 주지 않는다 (규칙 22·25)", () => {
-  const recoverySlow: UserProfile = {
-    ...baseProfile,
-    experience: "intermediate",
-    weeklyDistance: "medium",
-    purpose: "recovery",
-    budget: "high",
-    targetPace: "slow",
-  };
-  const UNSUITED = /느린|천천|회복|조깅|이지|리커버리|LSD/;
-  const rawScoreOf = (shoe: (typeof shoes)[number]) => {
-    const found = recommendShoes([shoe], recoverySlow)[0];
-    return found?.rawScore;
-  };
-
-  it("느린 회복 비추천 문구는 편집 감점으로 반영하고 미검증 쿠션 가점은 주지 않는다", () => {
-    const base = shoes.find(
-      (s) => s.specs && s.price && s.category === "쿠션화" && !s.targetUsers?.notRecommended.some((t) => UNSUITED.test(t)),
-    );
-    expect(base).toBeDefined();
-    const flagged = { ...base!, targetUsers: { ...base!.targetUsers!, notRecommended: ["느린 회복 러닝"] } };
-    const withBonus = rawScoreOf(base!);
-    const withoutBonus = rawScoreOf(flagged);
-    expect(withBonus).toBeDefined();
-    expect(withoutBonus).toBeDefined();
-    expect(withBonus! - withoutBonus!).toBe(20);
+describe('새 조건 설문과 기존 세션 복원', () => {
+  it('새 3개 선택과 기존 세션을 모두 읽는다', () => {
+    expect(isUserProfile(profile)).toBe(true);
+    expect(isUserProfile({ ...profile, experience: 'beginner', weeklyDistance: 'low', targetPace: 'fast', footArch: 'normal', injuries: [], season: 'winter' })).toBe(true);
   });
 
-  it("레이싱 카테고리 신발은 느린 페이스여도 쿠션 가점을 받지 않는다", () => {
-    const source = shoes.find((s) => s.category === "레이싱" && s.specs);
-    expect(source).toBeDefined();
-    // 가격 필터와 독립적으로 쿠션 가점을 검사하는 테스트 입력값이다.
-    const racer = { ...source!, price: 300000 };
-    const profile: UserProfile = { ...recoverySlow, purpose: "racing" };
-    const slow = recommendShoes([racer], profile)[0];
-    const medium = recommendShoes([racer], { ...profile, targetPace: "medium" })[0];
-    expect(slow).toBeDefined();
-    expect(medium).toBeDefined();
-    // 느린 페이스에서만 붙던 +8(쿠션 9↑)·+10(쿠션 10)이 없으므로 느린 페이스 점수가 중간 페이스보다 8 이상 높지 않다
-    expect(slow.rawScore - medium.rawScore).toBeLessThan(8);
-  });
-});
-
-describe("회복 쿠션 가점은 느린·회복 용도에 비추천인 신발에 주지 않는다 (규칙 9)", () => {
-  const UNSUITED = /느린|천천|회복|조깅|이지|리커버리|LSD/;
-  const rawScoreOf = (shoe: (typeof shoes)[number], profile: UserProfile) => recommendShoes([shoe], profile)[0]?.rawScore;
-
-  it("회복 목적의 비추천 문구만 반영하고 미검증 쿠션 가점은 사용하지 않는다", () => {
-    const profile: UserProfile = { ...baseProfile, experience: "intermediate", weeklyDistance: "medium", purpose: "recovery", budget: "high", targetPace: "medium" };
-    const base = shoes.find(
-      (s) => s.specs && s.price && s.category !== "레이싱" && !s.targetUsers?.notRecommended.some((t) => UNSUITED.test(t)),
-    );
-    expect(base).toBeDefined();
-    const flagged = { ...base!, targetUsers: { ...base!.targetUsers!, notRecommended: ["느린 회복 러닝"] } };
-    const withBonus = rawScoreOf(base!, profile);
-    const withoutBonus = rawScoreOf(flagged, profile);
-    expect(withBonus).toBeDefined();
-    expect(withoutBonus).toBeDefined();
-    expect(withBonus! - withoutBonus!).toBe(20);
-  });
-});
-
-describe("느린 페이스에서 느린·회복 러닝 비추천 신발은 감점한다 (규칙 14-1)", () => {
-  const UNSUITED = /느린|천천|회복|조깅|이지|리커버리|LSD/;
-  const slowTraining: UserProfile = { ...baseProfile, experience: "intermediate", weeklyDistance: "medium", purpose: "training", budget: "high", targetPace: "slow" };
-  const rawScoreOf = (shoe: (typeof shoes)[number], profile: UserProfile) => recommendShoes([shoe], profile)[0]?.rawScore;
-  const pick = () =>
-    shoes.find(
-      (s) =>
-        s.category !== "레이싱" &&
-        s.category !== "트레일" &&
-        !s.targetUsers?.notRecommended.some((t) => UNSUITED.test(t)) &&
-        rawScoreOf(s, slowTraining) !== undefined,
-    );
-
-  it("훈련 목적·느린 페이스: '느린 회복 러닝 비추천'이 적히면 20점이 빠진다", () => {
-    const base = pick();
-    expect(base).toBeDefined();
-    const flagged = { ...base!, targetUsers: { ...base!.targetUsers!, notRecommended: ["느린 회복 러닝"] } };
-    expect(rawScoreOf(base!, slowTraining)! - rawScoreOf(flagged, slowTraining)!).toBe(20);
-  });
-
-  it("회복 목적이면 빠른 페이스를 골라도 같은 감점이 적용된다", () => {
-    const base = pick();
-    expect(base).toBeDefined();
-    const recoveryFast: UserProfile = { ...slowTraining, purpose: "recovery", targetPace: "fast" };
-    const flagged = { ...base!, targetUsers: { ...base!.targetUsers!, notRecommended: ["느린 회복 러닝"] } };
-    const withBonus = rawScoreOf(base!, recoveryFast);
-    const withoutBonus = rawScoreOf(flagged, recoveryFast);
-    expect(withBonus).toBeDefined();
-    expect(withoutBonus).toBeDefined();
-    // 규칙 9 가점(+10)과 규칙 14-1 감점(-20)이 함께 빠지고 더해진다
-    expect(withBonus! - withoutBonus!).toBe(20);
-  });
-
-  it("레이싱 목적이면 감점하지 않는다", () => {
-    const base = pick();
-    expect(base).toBeDefined();
-    const racing: UserProfile = { ...slowTraining, purpose: "racing" };
-    const flagged = { ...base!, targetUsers: { ...base!.targetUsers!, notRecommended: ["느린 회복 러닝"] } };
-    expect(rawScoreOf(base!, racing)! - rawScoreOf(flagged, racing)!).toBeLessThan(20);
+  it('손상된 선택지·배열·과거 값을 거절한다', () => {
+    for (const value of [null, [], {}, { ...profile, budget: 'old' }, { ...profile, purpose: 'unknown' }, { ...profile, preferredBrands: null }, { ...profile, injuries: ['none'] }, { ...profile, experience: 'unknown' }, { ...profile, targetPace: 'unknown' }]) expect(isUserProfile(value)).toBe(false);
   });
 });

@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import { RotateCcw, Sparkles, ArrowUpRight, Activity } from 'lucide-react';
 import { loadCardShoes } from '@/lib/shoes-card-client';
 import { recommendShoes, isUserProfile, type UserProfile, type RecommendedShoe } from '@/lib/recommendation';
-import { Questionnaire } from '@/components/recommend/questionnaire';
+import { Questionnaire, RECOMMEND_QUESTION_COUNT } from '@/components/recommend/questionnaire';
 import { ResultCard } from '@/components/recommend/result-card';
 import { InjuryAnalysis } from '@/components/recommend/injury-analysis';
 import { recordRecommend } from '@/lib/recent';
@@ -84,18 +84,14 @@ export function RecommendContent({ totalCount }: RecommendContentProps) {
   };
 
   const profileLabels = {
-    experience: { beginner: '입문', intermediate: '중급', advanced: '상급' },
-    weeklyDistance: { low: '20km 미만', medium: '20-40km', high: '40km 이상' },
-    purpose: { training: '훈련', racing: '레이스', recovery: '회복', trail: '트레일', all: '다목적' },
-    targetPace: { slow: '6분대 이상', medium: '5-6분대', fast: '5분 미만' },
-    footArch: { flat: '평발', normal: '정상', high: '높은 아치' },
-    footWidth: { narrow: '좁음', standard: '표준', wide: '넓음' },
+    purpose: { training: '훈련', racing: '레이스', recovery: '가벼운 조깅', trail: '트레일', all: '다목적' },
+    footWidth: { narrow: '전체 폭 옵션', standard: '전체 폭 옵션', wide: '한국 와이드 옵션 확인' },
     // 설문 라벨과 같은 말을 써야 한다 — 상한 기준(questionnaire.tsx 의 budget 주석 참조)
     budget: { low: '20만원까지', mid: '30만원까지', high: '상한 없음' },
   };
   const summaryStats = [
-    { label: '분석 대상', value: `${totalCount}+` },
-    { label: '질문 수', value: '9' },
+    { label: '분석 대상', value: `${totalCount}종` },
+    { label: '질문 수', value: String(RECOMMEND_QUESTION_COUNT) },
     { label: '결과', value: profile ? `${recommendations.length}개` : '개인화' },
   ];
 
@@ -147,10 +143,10 @@ export function RecommendContent({ totalCount }: RecommendContentProps) {
                 break-keep 은 한글을 띄어쓰기에서만 끊는다 — 없으면 음절 단위로 잘린다.
               */}
               <h1 className="text-balance break-keep text-[28px] font-black leading-[1.12] tracking-tight text-slate-950 md:text-5xl md:leading-[0.92]">
-                나한테 맞는 러닝화만 남기기.
+                조건으로 러닝화 후보 좁히기.
               </h1>
               <p className="max-w-2xl break-keep text-sm leading-7 text-slate-600 md:text-base">
-                경험, 주간 거리, 용도, 발볼과 예산을 묻고 결과를 바로 조합합니다. 검색보다 빠르게 시작점을 찾는 용도에 맞게 정리했습니다.
+                용도, 한국 와이드 옵션, 예산을 고르면 확인된 가격이 있는 후보를 모읍니다. 같은 용도 분류에서는 확인 가격이 낮은 순으로 비교할 수 있습니다.
               </p>
             </div>
 
@@ -170,17 +166,17 @@ export function RecommendContent({ totalCount }: RecommendContentProps) {
             <div className="rounded-[4px] border border-sky-100 bg-white/86 p-4">
               <Activity className="h-5 w-5 text-accent" />
               <p className="mt-4 text-sm font-semibold text-slate-950">러닝 맥락</p>
-              <p className="mt-1 text-xs leading-6 text-slate-600">훈련용인지, 레이스용인지, 회복용인지부터 먼저 갈립니다.</p>
+              <p className="mt-1 text-xs leading-6 text-slate-600">훈련·레이스·가벼운 조깅·트레일 용도 분류를 비교합니다.</p>
             </div>
             <div className="rounded-[4px] border border-sky-100 bg-white/86 p-4">
               <Sparkles className="h-5 w-5 text-sky-700" />
-              <p className="mt-4 text-sm font-semibold text-slate-950">발형 반영</p>
-              <p className="mt-1 text-xs leading-6 text-slate-600">러닝 용도, 발볼과 예산을 함께 비교합니다.</p>
+              <p className="mt-4 text-sm font-semibold text-slate-950">판매 옵션 확인</p>
+              <p className="mt-1 text-xs leading-6 text-slate-600">한국 판매 와이드 옵션을 확인한 모델을 따로 모을 수 있습니다.</p>
             </div>
             <div className="rounded-[4px] border border-sky-950/20 bg-[linear-gradient(160deg,rgba(8,18,38,0.98)_0%,rgba(12,74,110,0.96)_100%)] p-4 text-white">
               <ArrowUpRight className="h-5 w-5 text-white" />
               <p className="mt-4 text-sm font-semibold">결과 중심</p>
-              <p className="mt-1 text-xs leading-6 text-white/65">추천 이유와 평균 대비 차이까지 한 카드에서 읽을 수 있습니다.</p>
+              <p className="mt-1 text-xs leading-6 text-white/65">확인한 가격·용도 분류·판매 폭 옵션을 한 카드에서 비교할 수 있습니다.</p>
             </div>
           </div>
         </div>
@@ -204,23 +200,19 @@ export function RecommendContent({ totalCount }: RecommendContentProps) {
                 Profile Snapshot
               </p>
               <div className="flex flex-wrap gap-2">
-                <ProfileBadge label="경험" value={profileLabels.experience[profile.experience]} />
-                <ProfileBadge label="주간 거리" value={profileLabels.weeklyDistance[profile.weeklyDistance]} />
                 <ProfileBadge label="목적" value={profileLabels.purpose[profile.purpose]} />
-                {profile.targetPace && (
-                  <ProfileBadge label="페이스" value={profileLabels.targetPace[profile.targetPace]} />
-                )}
+
                 <ProfileBadge label="발볼" value={profileLabels.footWidth[profile.footWidth]} />
                 <ProfileBadge label="예산" value={profileLabels.budget[profile.budget]} />
-                {profile.injuries.length > 0 && (
-                  <ProfileBadge label="부상 이력" value={profile.injuries.length + '개'} warning />
+                {(profile.injuries?.length ?? 0) > 0 && (
+                  <ProfileBadge label="부상 이력" value={(profile.injuries?.length ?? 0) + '개'} warning />
                 )}
               </div>
             </section>
 
             {/* 부상별 분석 */}
-            {profile.injuries.length > 0 && (
-              <InjuryAnalysis injuries={profile.injuries} />
+            {(profile.injuries?.length ?? 0) > 0 && (
+              <InjuryAnalysis injuries={profile.injuries ?? []} />
             )}
 
 
@@ -230,7 +222,7 @@ export function RecommendContent({ totalCount }: RecommendContentProps) {
                 <div>
                   <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-sky-700">Recommendation Board</p>
                   <h2 className="mt-2 text-2xl font-black tracking-tight text-slate-950">추천 신발</h2>
-                  <p className="mt-2 text-sm text-secondary">매칭 점수는 선택 조건 안의 후보를 비교한 상대 점수예요. 부상·아치별 치료나 예방 효과는 점수에 반영하지 않아요. 예산 내 후보가 적으면 가능한 신발만 보여드려요.</p>
+                  <p className="mt-2 text-sm text-secondary">선택 용도와 사이트 분류가 일치하는 후보를 먼저 모으고, 같은 조건에서는 확인 가격이 낮은 순으로 보여드려요. 와이드 옵션의 판매 확인과 실제 착화감은 별도로 확인하세요.</p>
                 </div>
                 <div className="grid gap-4 md:grid-cols-2">
                   {recommendations.map((shoe, idx) => (

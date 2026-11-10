@@ -19,26 +19,8 @@ type Question = {
 };
 
 const questions: Question[] = [
-  {
-    id: 'experience',
-    title: '러닝 경험이 어느 정도인가요?',
-    description: '현재 러닝 수준을 선택해주세요',
-    options: [
-      { value: 'beginner', label: '입문', description: '러닝 시작한 지 6개월 미만' },
-      { value: 'intermediate', label: '중급', description: '6개월 ~ 2년, 10km 이상 가능' },
-      { value: 'advanced', label: '상급', description: '2년 이상, 하프/풀 마라톤 경험' },
-    ],
-  },
-  {
-    id: 'weeklyDistance',
-    title: '일주일에 얼마나 뛰시나요?',
-    description: '평균 주간 러닝 거리를 선택해주세요',
-    options: [
-      { value: 'low', label: '20km 미만', description: '주 2-3회, 5km 내외' },
-      { value: 'medium', label: '20-40km', description: '주 3-4회, 꾸준한 러닝' },
-      { value: 'high', label: '40km 이상', description: '주 5회 이상, 진지한 러너' },
-    ],
-  },
+
+
   {
     id: 'purpose',
     title: '주요 러닝 목적이 무엇인가요?',
@@ -46,22 +28,13 @@ const questions: Question[] = [
     options: [
       { value: 'training', label: '훈련', description: '체력 향상, 템포 러닝' },
       { value: 'racing', label: '레이스', description: '대회 참가, 기록 단축' },
-      { value: 'recovery', label: '회복', description: '가벼운 조깅, 회복 러닝' },
+      { value: 'recovery', label: '가벼운 조깅', description: '편하게 달릴 후보 비교' },
       // 이 항목이 없어서 트레일화 15종이 어떤 조합에서도 추천되지 않았다 (2026-08-31)
       { value: 'trail', label: '트레일', description: '산길, 임도 등 비포장 위주' },
       { value: 'all', label: '다목적', description: '훈련부터 대회까지 모두' },
     ],
   },
-  {
-    id: 'targetPace',
-    title: '목표 페이스는 어떻게 되나요?',
-    description: '주로 뛰는 페이스를 선택해주세요',
-    options: [
-      { value: 'slow', label: '6분대 이상', description: '편안한 조깅, 회복 러닝' },
-      { value: 'medium', label: '5-6분대', description: '중간 템포, 꾸준한 훈련' },
-      { value: 'fast', label: '5분 미만', description: '빠른 템포, 스피드 훈련' },
-    ],
-  },
+
   {
     id: 'footWidth',
     title: '와이드 옵션이 필요한가요?',
@@ -78,23 +51,20 @@ const questions: Question[] = [
     // 18만원짜리도 25만원짜리도 어느 걸 골라야 할지 알 수 없었다. 상한으로 통일한다
     description: '쓸 수 있는 최대 금액을 골라주세요',
     options: [
-      { value: 'low', label: '20만원까지', description: '입문~가성비 중심' },
-      { value: 'mid', label: '30만원까지', description: '프리미엄까지 포함' },
-      { value: 'high', label: '상한 없음', description: '카본·슈퍼슈즈까지 전부' },
+      { value: 'low', label: '20만원까지', description: '확인 가격 20만원 이하' },
+      { value: 'mid', label: '30만원까지', description: '확인 가격 30만원 이하' },
+      { value: 'high', label: '상한 없음', description: '가격이 확인된 전체 후보' },
     ],
   },
 ];
 
+export const RECOMMEND_QUESTION_COUNT = questions.length;
+
 export function Questionnaire({ onComplete, isLoading = false }: QuestionnaireProps) {
   const [currentStep, setCurrentStep] = useState(0);
   const [answers, setAnswers] = useState<Record<string, string | string[]>>({
-    experience: '',
-    weeklyDistance: '',
     purpose: '',
-    targetPace: '',
-    footArch: 'normal',
     footWidth: '',
-    injuries: [],
     budget: '',
     preferredBrands: [],
   });
@@ -138,13 +108,8 @@ export function Questionnaire({ onComplete, isLoading = false }: QuestionnairePr
       setCurrentStep(currentStep + 1);
     } else {
       const profile: UserProfile = {
-        experience: answers.experience as UserProfile['experience'],
-        weeklyDistance: answers.weeklyDistance as UserProfile['weeklyDistance'],
         purpose: answers.purpose as UserProfile['purpose'],
-        targetPace: answers.targetPace as UserProfile['targetPace'],
-        footArch: answers.footArch as UserProfile['footArch'],
         footWidth: answers.footWidth as UserProfile['footWidth'],
-        injuries: ((answers.injuries as string[]) || []).filter(v => v !== 'none'),
         budget: answers.budget as UserProfile['budget'],
         preferredBrands: [],
       };

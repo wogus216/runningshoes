@@ -3,7 +3,7 @@
 import { useState, memo } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { Star, Check, AlertTriangle, ArrowRight, ChevronDown, TrendingUp, TrendingDown, Minus } from 'lucide-react';
+import { Star, Check, AlertTriangle, ArrowRight, ChevronDown } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { AddToCompareButton } from '@/components/compare/add-to-compare-button';
 import { img } from '@/lib/image';
@@ -18,22 +18,6 @@ type ResultCardProps = {
 export const ResultCard = memo(function ResultCard({ shoe, rank }: ResultCardProps) {
   const isTopPick = rank === 1;
   const [showDetails, setShowDetails] = useState(isTopPick);
-
-  const getComparisonIcon = (value: number, inverted = false) => {
-    const isPositive = inverted ? value < 0 : value > 0;
-    const isNegative = inverted ? value > 0 : value < 0;
-
-    if (isPositive) return <TrendingUp className="h-3 w-3 text-sky-700" />;
-    if (isNegative) return <TrendingDown className="h-3 w-3 text-negative" />;
-    return <Minus className="h-3 w-3 text-tertiary" />;
-  };
-
-  const getComparisonText = (value: number, unit: string) => {
-    if (value === 0) return '평균';
-    const absValue = Math.abs(value);
-    const direction = value > 0 ? '+' : '-';
-    return `${direction}${absValue}${unit}`;
-  };
 
   return (
     <div
@@ -50,7 +34,7 @@ export const ResultCard = memo(function ResultCard({ shoe, rank }: ResultCardPro
           "flex h-8 w-8 items-center justify-center rounded-full text-sm font-bold",
           isTopPick ? "bg-[var(--navy)] text-white" : "border border-sky-100 bg-white text-primary"
         )}>{rank}</span>
-        {isTopPick && <span className="rounded-full bg-[var(--navy)] px-3 py-1 text-xs font-medium text-white">최고 추천</span>}
+        {isTopPick && <span className="rounded-full bg-[var(--navy)] px-3 py-1 text-xs font-medium text-white">먼저 비교할 후보</span>}
       </div>
 
       {/* 헤더 */}
@@ -94,25 +78,11 @@ export const ResultCard = memo(function ResultCard({ shoe, rank }: ResultCardPro
         </div>
       </div>
 
-      {/* 매칭 점수 */}
-      <div className="mb-4">
-        <div className="flex items-center justify-between mb-2">
-          <span className="text-sm font-medium text-secondary">매칭 점수</span>
-          <span className="text-sm font-bold text-sky-700">{shoe.matchScore}점</span>
-        </div>
-        <div className="h-2 overflow-hidden rounded-full bg-sky-100">
-          <div
-            className="h-full bg-sky-500 transition-all"
-            style={{ width: `${Math.min(shoe.matchScore, 100)}%` }}
-          />
-        </div>
-      </div>
-
       {/* 추천 이유 태그 */}
       {shoe.matchReasons.length > 0 && (
         <div className="mb-4">
           <p className="text-xs font-semibold text-tertiary uppercase tracking-wider mb-2">
-            추천 이유
+            확인한 조건
           </p>
           <div className="flex flex-wrap gap-2">
             {shoe.matchReasons.slice(0, 4).map((reason, idx) => (
@@ -146,7 +116,7 @@ export const ResultCard = memo(function ResultCard({ shoe, rank }: ResultCardPro
             className="flex items-center gap-2 text-sm font-medium text-sky-700 transition hover:opacity-80"
           >
             <ChevronDown className={cn("h-4 w-4 transition-transform", showDetails && "rotate-180")} />
-            {showDetails ? '간단히 보기' : '상세 분석 보기'}
+            {showDetails ? '간단히 보기' : '선정 기준 보기'}
           </button>
 
           {showDetails && (
@@ -155,27 +125,7 @@ export const ResultCard = memo(function ResultCard({ shoe, rank }: ResultCardPro
                 {shoe.detailedReason}
               </p>
 
-              {shoe.comparisonToAvg && (
-                <div className="mt-4 border-t border-sky-100 pt-3">
-                  <p className="text-xs font-semibold text-tertiary uppercase tracking-wider mb-2">
-                    추천 신발 평균 대비
-                  </p>
-                  <div className="grid gap-2 sm:grid-cols-3">
-                    <div className="flex items-center gap-1 text-xs">
-                      {getComparisonIcon(shoe.comparisonToAvg.weight, true)}
-                      <span className="text-secondary">무게</span>
-                      <span className={cn(
-                        "font-medium",
-                        shoe.comparisonToAvg.weight < 0 ? "text-sky-700" :
-                        shoe.comparisonToAvg.weight > 0 ? "text-negative" : "text-tertiary"
-                      )}>
-                        {getComparisonText(shoe.comparisonToAvg.weight, 'g')}
-                      </span>
-                    </div>
 
-                  </div>
-                </div>
-              )}
             </div>
           )}
         </div>
