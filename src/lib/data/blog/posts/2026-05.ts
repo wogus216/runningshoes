@@ -1160,130 +1160,54 @@ export const posts_2026_05: BlogPost[] = [
     ],
   },
   {
-    id: '2026-bogwangjung-suyuk-run',
-    slug: '2026-bogwangjung-suyuk-run',
-    title: '보광정 수육런 D-14 | 5월 30일 토 8AM 남산 북측순환로 — 기록 측정 없는 펀런, 수육·생수·기념 티셔츠 제공',
-    description: '보광정이 작년에 이어 2년째 5월 30일 토요일 보광정 수육런을 개최합니다. 국립극장 해오름극장 출발, 남산 북측순환로 코스, 8AM 시작. 순위·기록 측정 없는 펀런 이벤트로 가족·초보 러너 환영. 5월 15일 10시부터 구글폼 선착순 접수.',
-    thumbnail: '/images/blog/2026-bogwangjung-suyuk-run.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-05-16',
-    category: 'news' as const,
+    id: "2026-bogwangjung-suyuk-run",
+    slug: "2026-bogwangjung-suyuk-run",
+    title: "보광정 수육런 2026 종료 기록 — 약 6.5~7km·현장 티셔츠·참가비 확인",
+    description: "보광정 공식 모집 카드와 종료 보고를 대조했습니다. 5월 30일 08시는 워밍업 시작, 총 약 6.5~7km이며 티셔츠는 현장 수령입니다. 주최 측은 이번 행사 200명 참여로 보고했습니다.",
+    thumbnail: "/images/blog/verified-2026-bogwangjung-suyuk-run-20261110.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-05-16",
+    category: "news",
     readingTime: 5,
-    tags: ['보광정', '보광정 수육런', '남산 북측순환로', '국립극장', '펀런', '서울 마라톤 일정', '가족 러닝', '도심 러닝'],
+    tags: [
+      "보광정",
+      "보광정 수육런",
+      "남산 북측순환로",
+      "국립극장",
+      "펀런",
+      "서울 마라톤 일정",
+      "가족 러닝",
+      "도심 러닝"
+    ],
     content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>보광정 수육런</strong> 2년차 — <strong>5월 30일(토) 8AM</strong>, 국립극장 해오름극장 출발 + 남산 북측순환로</li>
-    <li><strong>순위·기록 측정 없는 펀런</strong> — 남녀노소 누구나, 기념 티셔츠·수육·생수 제공, 경품 추첨</li>
-    <li>접수: <strong>5월 15일 10시부터 선착순</strong> — 보광정 인스타그램 프로필 구글폼 링크 / 문의 010-8794-9272</li>
-  </ul>
-</div>
+<p><strong>2026년 11월 10일 공식 원문 대조.</strong> 당시 안내와 현재 상태를 구분했습니다. 직접 참가·방문한 후기는 아닙니다.</p>
 
-<div class="callout info">
-  <span class="callout-icon">🥩</span>
-  <div class="callout-body">
-    <p class="callout-title">"수육런"이 뭔가</p>
-    <p>국립극장 옆에 위치한 보광정(@bogwangjung_official) 음식점이 작년에 이어 개최하는 <strong>러닝 + 수육 제공</strong> 이벤트입니다. 작년에 큰 관심과 사랑을 받아 올해 2년차 — 5월의 마지막 날 5월 30일(토)에 열립니다. 가정의 달 마무리를 가족이나 러닝메이트와 도심 트레일에서 보내는 콘셉트.</p>
-  </div>
-</div>
-
-<h2>대회 정보</h2>
-
-<table>
-  <thead>
-    <tr><th>항목</th><th>내용</th></tr>
-  </thead>
-  <tbody>
-    <tr><td><strong>일시</strong></td><td>2026년 <strong>5월 30일(토) 8AM 시작</strong></td></tr>
-    <tr><td><strong>출발지</strong></td><td>국립극장 해오름극장</td></tr>
-    <tr><td><strong>코스</strong></td><td>남산 북측순환로 (도심 트레일)</td></tr>
-    <tr><td><strong>참가 자격</strong></td><td>신체 건강한 남녀노소 누구나</td></tr>
-    <tr><td><strong>기록·순위</strong></td><td>측정하지 않음 (이벤트 펀런)</td></tr>
-    <tr><td><strong>기념품</strong></td><td>참가자 전원 기념 티셔츠 (별도 택배 발송)</td></tr>
-    <tr><td><strong>현장 제공</strong></td><td>생수, 수육</td></tr>
-    <tr><td><strong>경품</strong></td><td>상품권 및 굿즈 추첨</td></tr>
-    <tr><td><strong>접수 시작</strong></td><td><strong>2026년 5월 15일 10:00</strong> — 선착순 마감</td></tr>
-    <tr><td><strong>접수 방법</strong></td><td>보광정 인스타그램(@bogwangjung_official) 프로필 하단 구글폼 링크</td></tr>
-    <tr><td><strong>문의</strong></td><td>010-8794-9272 (12:00~18:00)</td></tr>
-  </tbody>
-</table>
-
-<div class="callout warning">
-  <span class="callout-icon">📸</span>
-  <div class="callout-body">
-    <p class="callout-title">사진 마케팅 활용 동의 필수</p>
-    <p>행사에 촬영된 사진은 마케팅 목적으로 활용될 예정입니다. <strong>해당 내용에 동의하는 경우에만 행사 참여가 가능</strong>합니다. 사진 노출이 부담스럽다면 신청 전 약관 확인 필수.</p>
-  </div>
-</div>
-
-<h2>남산 북측순환로 — 어떤 코스인가</h2>
-
-<p>국립극장 해오름극장에서 출발해 <strong>남산 북측순환로</strong>를 도는 코스. 정확한 거리는 공식 공지에 명시되지 않았으나 보통 북측순환로 한 바퀴는 약 4~5km 수준. 펀런 성격이라 본인 페이스에 맞게 조절 가능합니다.</p>
-
-<ul>
-  <li><strong>지형:</strong> 남산 능선을 따라 완만한 경사 — 도심 트레일에 가까움</li>
-  <li><strong>풍경:</strong> 남산 숲길 + N서울타워 조망. 5월 말 신록 절정 시기</li>
-  <li><strong>교통:</strong> 동대입구역(3호선) 또는 충무로역(3·4호선)에서 도보 10~15분 + 셔틀버스</li>
-  <li><strong>주의:</strong> 다른 보행자·일반 산책객과 코스 공유 — 안전이 최우선, 추월 매너 필수 (공식 공지에서도 양해 요청)</li>
-</ul>
-
-<h2>이런 러너에게 추천</h2>
-
-<div class="callout success">
-  <span class="callout-icon">✅</span>
-  <div class="callout-body">
-    <p class="callout-title">보광정 수육런이 어울리는 사람</p>
-    <ol>
-      <li><strong>러닝 입문자·가족:</strong> 기록 부담 없는 첫 러닝 이벤트. 자녀와 함께도 가능</li>
-      <li><strong>도심 트레일 처음 도전:</strong> 평지 도로 러닝만 해본 사람의 첫 트레일 입문</li>
-      <li><strong>러닝 후 좋은 음식 마무리 좋아하는 사람:</strong> 수육 + 생수 = 카브 로딩과 단백질 보충 완벽 조합</li>
-      <li><strong>커뮤니티 분위기 좋아하는 사람:</strong> 240명 안팎 소규모 추정, 작년 후기 분위기 좋았다는 평</li>
-    </ol>
-  </div>
-</div>
-
-<h2>이런 러너에게는 비추</h2>
-
-<ul>
-  <li><strong>기록 목표가 있는 러너:</strong> 측정 없음 + 일반 보행자 공유 코스라 PR 도전엔 부적합</li>
-  <li><strong>5km 이상 진지한 훈련 필요한 시기:</strong> 풀코스/하프 빌드업 중이라면 본인 훈련 페이스를 우선</li>
-  <li><strong>이른 새벽 기상 어려운 사람:</strong> 8AM 시작 = 5~6AM 기상 + 7AM 도착이 표준</li>
-</ul>
-
-<h2>신발 추천</h2>
-
-<p>남산 북측순환로는 포장도로 + 일부 짧은 비포장 구간 — <strong>일반 데일리 러닝화로 충분</strong>합니다. 트레일화까지는 불필요. 펀런 성격이라 본인 가장 편한 데일리 트레이너 추천:</p>
-
-<ul>
-  <li><a href="/shoes/asics-gel-nimbus-28">Asics Gel-Nimbus 28</a> — 맥시멀 쿠셔닝, 무릎 부담 최소</li>
-  <li><a href="/shoes/hoka-clifton-10">Hoka Clifton 10</a> — 가볍고 부드러운 데일리</li>
-  <li><a href="/shoes/new-balance-1080-v15">NB 1080 v15</a> — Fresh Foam X, 폭이 넓어 발 편함</li>
-  <li><a href="/shoes/asics-superblast-3">Asics Superblast 3</a> — 페이스 살짝 올리고 싶은 러너용</li>
-</ul>
-
-<p>본인 발 특성에 맞는 신발 후보는 <a href="/recommend">1분 러닝화 추천</a>에서 받을 수 있습니다.</p>
-
-<h2>D-14 행동 가이드</h2>
-
-<ol>
-  <li><strong>D-14 (5/16):</strong> @bogwangjung_official 인스타그램 프로필 하단 구글폼 링크 통해 신청. 선착순이라 5/15 접수 시작 후 빠른 마감 가능성</li>
-  <li><strong>D-7 (5/23):</strong> 기념 티셔츠 사이즈 안내 확인 (택배 발송 일정)</li>
-  <li><strong>D-3 (5/27):</strong> 남산 북측순환로 1회 답사 — 코스 감각·경사 미리 체크</li>
-  <li><strong>D-1 (5/29):</strong> 8AM 시작이라 새벽 4~5시 기상 패턴 맞춰 일찍 취침</li>
-  <li><strong>D-Day (5/30):</strong> 6:30~7:00 국립극장 해오름극장 도착. 신분증·기념품 수령</li>
-</ol>
-
-<h2>관련 5~6월 도심 러닝 이벤트</h2>
-
-<ul>
-  <li><a href="/blog/2026-icebucket-run-seoul">2026 아이스버킷 런 서울</a> — 자선 펀런</li>
-  <li><a href="/blog/2026-seoul-race">2026 서울 레이스</a> — 가을 대회 접수 안내</li>
-  <li><a href="/blog/2027-seoul-marathon-domestic-registration-guide">2027 서울마라톤 국내 참가자 신청 D-2</a> — 본격 마라톤 시즌 준비</li>
-</ul>
-
-<p><small>출처: 러너스나우(@runners_now) 2026-05-11 게시물 + 보광정(@bogwangjung_official) 공식 공지. 일정·접수 방법은 변경될 수 있으니 신청 직전 @bogwangjung_official 최신 공지 + 문의 010-8794-9272(12:00~18:00) 확인 필수.</small></p>
+<h2>모집 카드와 종료 보고를 함께 읽었습니다</h2>
+<p><a href="https://www.instagram.com/p/DYVyWw8ExJ3/" target="_blank" rel="noopener noreferrer">보광정 5월 15일 공식 모집 게시물</a>과 <a href="https://www.instagram.com/p/DZOpz1wCbKz/" target="_blank" rel="noopener noreferrer">6월 6일 공식 종료 게시물</a>을 대조했습니다. 행사는 2026년 5월 30일 토요일에 진행된 제2회 수육런입니다. 11월 현재 신청할 수 있는 D-14 행사로 안내하지 않습니다.</p>
+<p>종료 게시물은 이번 200명, 지난해 100명이 참여했다고 설명합니다. 이는 주최 측 보고이며 독립적인 출석 집계는 아닙니다. 기존의 240명 추정이나 과거 인원을 이번 참가 인원처럼 쓰지 않았습니다.</p>
+<h2>08시는 출발이 아니라 워밍업 시작</h2>
+<table><thead><tr><th>항목</th><th>공식 카드 내용</th></tr></thead><tbody><tr><td>체크인</td><td>국립극장 해오름극장 앞</td></tr><tr><td>시작</td><td>08시 정각 워밍업, 약 10~20분 후 러닝 출발</td></tr><tr><td>코스</td><td>남산 북측순환로, 편도 약 3~3.5km</td></tr><tr><td>총 거리</td><td>약 6.5~7km</td></tr><tr><td>반환 확인</td><td>현장 스태프에게 도장</td></tr><tr><td>운영</td><td>순위·기록 측정 없는 행사</td></tr></tbody></table>
+<p>거리는 주최 측의 근사 안내입니다. 공인 실측 코스나 모든 참가자의 GPS 거리를 뜻하지 않습니다. 기존 4~5km 추정은 카드와 맞지 않아 수정했습니다. 남산이라는 이유만으로 비포장 트레일 대회라고 분류하거나 특정 신발이 무릎을 보호한다고 추천하지 않았습니다.</p>
+<h2>참가비와 수령 방식</h2>
+<p>당시 참가비는 30,000원이며, 생수·수육·음료와 기념 티셔츠를 안내했습니다. 티셔츠는 참가자 현장 수령입니다. 기존의 택배 발송 설명을 바로잡았습니다. 사진의 마케팅 활용 동의 조건도 모집 안내에 포함돼 있습니다. 제공 음식이 무제한이거나 현재 매장 방문만으로 같은 혜택을 받을 수 있다고 설명하지 않습니다.</p>
+<p>공식 계정의 5월 16일 댓글에는 모집이 모두 마감됐다고 표시됩니다. 모집 캡션의 접수 시작 연도에는 ‘2025년’이라는 오탈자가 있습니다. 게시일·마감 댓글·행사 카드와 구분해 기록하며, 그 문장만 보고 지난해 모집으로 돌리거나 시작 시각을 임의로 확정하지 않았습니다.</p>
+<h2>다음 수육런을 기다리는 러너에게</h2>
+<p>이 행사의 특징은 기록 경쟁보다 함께 달린 뒤 음식을 나누는 구성입니다. 다음 회차를 고를 때는 거리, 집결과 실제 출발의 차이, 음식 제공 조건, 사진 활용 동의·취소 규정을 확인하는 것이 편집 제안입니다. 다음 개최일·정원·참가비가 동일하다는 보장은 없습니다. 새 모집은 <a href="https://www.instagram.com/p/DYVyWw8ExJ3/" target="_blank" rel="noopener noreferrer">보광정 공식 계정</a>의 원문에서 확인해야 합니다.</p>
+<h2>자주 묻는 질문</h2>
+<h3>수육런 코스가 4~5km였나요?</h3><p>공식 카드는 편도 약 3~3.5km, 총 약 6.5~7km로 안내했습니다. 기존 4~5km 추정을 수정했으며 공인 실측 거리로 표현하지 않습니다.</p>
+<h3>기념 티셔츠는 택배로 받았나요?</h3><p>확인한 공식 모집 안내는 참가자 전원 현장 수령입니다. 기존 택배 발송 설명을 수정했습니다.</p>
 `,
+    updatedAt: "2026-11-10",
+    faqs: [
+      {
+        "question": "수육런 코스가 4~5km였나요?",
+        "answer": "공식 카드는 편도 약 3~3.5km, 총 약 6.5~7km로 안내했습니다. 기존 4~5km 추정을 수정했으며 공인 실측 거리로 표현하지 않습니다."
+      },
+      {
+        "question": "기념 티셔츠는 택배로 받았나요?",
+        "answer": "확인한 공식 모집 안내는 참가자 전원 현장 수령입니다. 기존 택배 발송 설명을 수정했습니다."
+      }
+    ],
   },
   {
     id: "2026-descente-awaken-ekiden-race",
@@ -1588,119 +1512,55 @@ export const posts_2026_05: BlogPost[] = [
     ],
   },
   {
-    id: 'nb-runhub-yeouido-2026-popup',
-    slug: 'nb-runhub-yeouido-2026-popup',
-    title: '여의도 NB 런허브(Grey Days) D-31 운영 중 | 5,000원에 최신 러닝화 빌려서 한강 한 바퀴 — 6/14까지 5주 한정',
-    description: '뉴발란스가 여의도 이크루즈 2F에 5주 한정 팝업 런허브를 운영합니다. 신상 러닝화 대여 5,000원, 의류 3,000원, 라커룸·라운지 무료. 2026.05.09~06.14, 평일 12~21시·주말 8~20시. 가방 들고 퇴근하다 빈손으로 들러 한강 러닝 후 커피 한 잔까지 가능.',
-    thumbnail: '/images/blog/nb-runhub-yeouido-2026-popup.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-05-14',
-    category: 'news' as const,
-    readingTime: 6,
-    tags: ['뉴발란스', 'New Balance', 'NB 런허브', 'RunHub', '여의도', 'Grey Days', '러닝화 시승', '한강 러닝', '러닝 팝업'],
+    id: "nb-runhub-yeouido-2026-popup",
+    slug: "nb-runhub-yeouido-2026-popup",
+    title: "여의도 NB 런허브 종료 예정 — 의류 11월 11일·신발 14일까지",
+    description: "11월 9일 공식 종료 공지를 반영했습니다. 여의도 이크루즈 2층 런허브는 의류 대여 11월 11일, 신발 대여와 매장 영업 14일까지로 안내하며 과거 개장·연장 공고의 요금과 시간을 구분합니다.",
+    thumbnail: "/images/blog/verified-nb-runhub-yeouido-2026-popup-20261110.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-05-14",
+    category: "news",
+    readingTime: 5,
+    tags: [
+      "뉴발란스",
+      "New Balance",
+      "NB 런허브",
+      "RunHub",
+      "여의도",
+      "Grey Days",
+      "러닝화 시승",
+      "한강 러닝",
+      "러닝 팝업"
+    ],
     content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>뉴발란스 런허브(Grey Days)</strong>가 여의도 이크루즈 2F에서 <strong>5월 9일~6월 14일 5주 한정</strong> 운영 중 — D-31</li>
-    <li>신상 러닝화 대여 <strong>5,000원</strong> + 의류 3,000원 + 라커룸·피팅룸·스트레칭 라운지 무료 — 빈손으로 가서 한강 한 바퀴</li>
-    <li>러닝 후 SNS 인증 시 젤라또·커피·웻티슈 기프트 — 노트북 가방 메고 퇴근하다 들르기 좋은 동선</li>
-  </ul>
-</div>
+<p><strong>2026년 11월 10일 공식 원문 대조.</strong> 당시 안내와 현재 상태를 구분했습니다. 직접 참가·방문한 후기는 아닙니다.</p>
 
-<div class="callout info">
-  <span class="callout-icon">📍</span>
-  <div class="callout-body">
-    <p class="callout-title">기본 정보</p>
-    <ul>
-      <li><strong>장소:</strong> 서울특별시 영등포구 여의동로 290, 이크루즈 2F</li>
-      <li><strong>운영 기간:</strong> 2026.05.09(토) ~ 2026.06.14(일) (5주 한정)</li>
-      <li><strong>운영 시간:</strong> 평일 12:00~21:00 / 주말·공휴일 08:00~20:00</li>
-      <li><strong>예약:</strong> 불필요 — 현장 접수</li>
-    </ul>
-  </div>
-</div>
-
-<h2>왜 이게 의미 있나 — "퇴근길 빈손 러닝"의 동선 해결</h2>
-
-<p>여의도·강남 직장인 러너의 가장 큰 마찰은 <strong>"러닝 짐"</strong>입니다. 정장·노트북·외투를 들고 한강 가서 갈아입고 뛰고 씻고 다시 옷 갈아입고 집까지. 사물함 하나 빌리려고 한강 쪽 헬스장이나 사우나를 회원권 끊는 경우도 흔합니다.</p>
-
-<p>NB 런허브는 <strong>이 동선 자체를 압축</strong>합니다:</p>
-
-<ol>
-  <li>퇴근 후 정장 차림으로 여의도 이크루즈 2F 도착</li>
-  <li>무거운 가방·외투 → 무료 라커룸에 보관</li>
-  <li>의류 대여(3,000원) + 러닝화 대여(5,000원)</li>
-  <li>피팅룸에서 환복 → 라운지에서 스트레칭</li>
-  <li>여의도 한강공원 한 바퀴 (이크루즈에서 도보 5분)</li>
-  <li>돌아와서 다시 환복 + 가방 회수 + 커피 한 잔(기프트)</li>
-</ol>
-
-<p>총 비용 <strong>8,000원으로 신상 NB 러닝화 시승 + 한강 러닝 + 시설 이용</strong>이 끝납니다. 신발 한 켤레 정가 20만 원대를 생각하면 사기 전 실제 페이스로 시승해볼 수 있는 가장 저렴한 방법입니다.</p>
-
-<h2>이용 가격 정리</h2>
-
-<table>
-  <thead>
-    <tr><th>항목</th><th>가격</th><th>비고</th></tr>
-  </thead>
-  <tbody>
-    <tr><td><strong>신상 러닝화 대여</strong></td><td>5,000원</td><td>NB 신상 러닝화 라인업 (구체 모델은 매장 현장 안내)</td></tr>
-    <tr><td><strong>의류 대여</strong></td><td>3,000원</td><td>상하의 별도 — 둘 다면 합산</td></tr>
-    <tr><td><strong>프라이빗 라커룸</strong></td><td>무료</td><td>가방·외투·정장 보관 가능</td></tr>
-    <tr><td><strong>피팅룸</strong></td><td>무료</td><td>환복용</td></tr>
-    <tr><td><strong>단독 라운지·스트레칭 존</strong></td><td>무료</td><td>러닝 전 스트레칭, 후 회복</td></tr>
-  </tbody>
-</table>
-
-<div class="callout success">
-  <span class="callout-icon">🎁</span>
-  <div class="callout-body">
-    <p class="callout-title">대여 반납자 기프트</p>
-    <ul>
-      <li><strong>쿼시 웻티슈</strong> — 땀 닦고 개운하게 귀가</li>
-      <li><strong>아이스 커피 1잔</strong> — 갈증 해소</li>
-      <li><strong>젤라또</strong> — SNS 인증 시 제공</li>
-    </ul>
-  </div>
-</div>
-
-<h2>"빌릴 만한" 후보 — 사이트에서 데이터 확인하고 가세요</h2>
-
-<p>NB 런허브는 신상 라인업을 시승용으로 비치합니다. 시승 전 <strong>본인 발에 맞는지 데이터로 거르고</strong> 매장에서 신어보는 게 효율적. 신어볼 만한 NB 신상 후보:</p>
-
-<ul>
-  <li><strong>데일리 트레이너 — <a href="/shoes/new-balance-1080-v15">NB 1080 v15</a>:</strong> 2026 출시 신상 쿠션화. 평발 적합성·발볼 표준·무릎 보호 우수. 토박스 73.2mm(실측, 랩 평균 수준)에 남성 2E·4E 와이드도 있어 한국 발에 친화적. 하루 5~10km 베이스런부터 하프 페이스 러닝까지 범용</li>
-  <li><strong>속도 트레이너 — <a href="/shoes/new-balance-rebel-v5">NB Rebel v5</a>:</strong> FuelCell + 카본 플레이트가 아닌 TPU 인서트로 부드러운 반응성. 10K~하프 페이스 러닝 / 인터벌</li>
-  <li><strong>레이싱 카본 — <a href="/shoes/new-balance-sc-elite-v5">NB SuperComp Elite v5</a>:</strong> 풀코스 PB용 카본 슈퍼슈즈. 시승만으로 본인 폼과 맞는지 판단 가능</li>
-</ul>
-
-<p>본인 발 특성·기록 목표가 어떤 NB 모델과 맞는지 데이터 매칭은 <a href="/recommend">1분 러닝화 추천</a> 또는 <a href="/brands/new-balance">뉴발란스 러닝화 전체 보기</a>에서 확인할 수 있습니다.</p>
-
-<h2>방문 동선 팁</h2>
-
-<ul>
-  <li><strong>여의도역(5호선·9호선) 2번 출구</strong>에서 도보 약 10~12분 (이크루즈 방면)</li>
-  <li><strong>여의나루역(5호선) 2번 출구</strong>에서 한강공원 가는 길에 이크루즈 위치 — 한강 러닝 직전 들르기 가장 자연스러운 동선</li>
-  <li>평일 오후 6~8시 직장인 러너 집중 시간대 — 빠른 회전 위해 사전 준비(러닝 양말·심박계 시계 등 본인 물품)는 미리 챙겨가기</li>
-  <li>주말 새벽 8시 오픈은 <strong>주말 LSD 러닝 직전</strong> 들르기 최적 — 6시 출발은 어려우니 8시 오픈 시간대 활용</li>
-</ul>
-
-<h2>한정 운영 — 시계가 빠르게 간다</h2>
-
-<p>5/9 운영 시작 후 <strong>약 5주만</strong> 운영됩니다(6/14 마감). 같은 기간 다른 러닝 이벤트는:</p>
-
-<ul>
-  <li><strong>5/20(화):</strong> 가민 <a href="/blog/2026-garmin-forerunner-70-170-korea">Forerunner 70·170</a> 한국 정식 출시</li>
-  <li><strong>5/27(수):</strong> 2026 서울레이스 본접수 (<a href="/blog/2026-seoul-race">5/27 접수 가이드</a>)</li>
-  <li><strong>6/1·6/2:</strong> 2027 서울마라톤 풀코스 본접수 (<a href="/blog/2027-seoul-marathon-group-criteria">A~I 그룹 가이드</a>)</li>
-  <li><strong>6/14(일):</strong> NB 런허브 마지막 운영일 — 마지막 주말 매우 혼잡 예상</li>
-</ul>
-
-<p>러닝화 구매를 고민 중이거나 NB 신발이 본인 발에 맞을지 확인하고 싶다면 <strong>5월 중 평일 저녁에 미리 다녀오는 것</strong>이 가장 여유롭습니다. 6월 들어가면 본접수·신상 출시 이벤트가 겹쳐 매장 회전이 빠를 가능성 큼.</p>
-
-<p><small>출처: @runninglife_korea 2026-05-11 게시물 / 뉴발란스 코리아 Grey Days 공식 이벤트 / 작성일 2026년 5월 14일 기준. 운영 시간·대여 모델 라인업은 매장 현장 변동 가능, 정확 정보는 NB 코리아 SNS 공지 확인.</small></p>
+<h2>최신 공지: 의류와 신발의 마지막 날이 다릅니다</h2>
+<p><a href="https://www.instagram.com/p/DfhFHTEv8fb/" target="_blank" rel="noopener noreferrer">런허브 여의도점 11월 9일 공식 종료 안내</a>는 의류 대여를 11월 11일 수요일까지, 신발 대여와 매장 영업을 11월 14일 토요일까지 운영한다고 발표했습니다. 11월 10일 확인 기준 아직 종료 예정입니다. 기존의 6월 14일까지 5주 한정이라는 제목을 현재 운영 안내로 쓰지 않도록 바꿨습니다.</p>
+<table><thead><tr><th>이용하려는 서비스</th><th>최신 공지의 종료일</th><th>방문 전 확인</th></tr></thead><tbody><tr><td>의류 대여</td><td>2026년 11월 11일</td><td>당일 대여 가능 품목·사이즈</td></tr><tr><td>신발 대여</td><td>2026년 11월 14일</td><td>모델·사이즈·마지막 접수와 반납 시각</td></tr><tr><td>매장 영업</td><td>2026년 11월 14일</td><td>마지막 날 운영 변동</td></tr></tbody></table>
+<h2>위치와 시간: 개장 안내보다 후속 공고를 먼저</h2>
+<p>공식 안내의 위치는 서울 영등포구 여의동로 290, 이크루즈 2층입니다. <a href="https://www.instagram.com/p/DZwNI8gkWJR/" target="_blank" rel="noopener noreferrer">6월 19일 운영 변경 공고</a>는 6월 22일부터 월~일 매일 08:00~22:00으로 연장한다고 설명했습니다. 이전 개장 공고의 평일·주말 시간을 섞어 현재 시간으로 쓰지 않았습니다. 다만 11월 종료 공지에 세부 마감 시각이 다시 적혀 있지는 않아 마지막 렌탈 접수·반납 시간은 방문 전에 확인해야 합니다.</p>
+<h2>대여 요금은 공식 카드에서, 재고는 별도</h2>
+<p><a href="https://www.instagram.com/p/DZi8GOuj-cY/" target="_blank" rel="noopener noreferrer">공식 개장 게시물의 서비스 카드</a>는 신발 대여 5,000원, 의류 상·하의 대여 3,000원, 락커 무료를 안내합니다. 이를 의류 한 벌의 각 구성별 요금이나 보증금·시간 초과 비용까지 모두 확인한 가격표로 확대하지 않습니다. 최신 종료 공지는 요금을 재명시하지 않아 당일 결제 조건은 확인이 필요합니다.</p>
+<p>개장 때는 Grey Days 한정 1080v15·Rebel v5 경험을 소개했고, 후속 공고는 더 다양한 제품과 렌탈 이용객 대상 WTD 러닝 고글 무료 대여를 설명했습니다. 계획된 카본화 입고를 실제 현재 재고로 확정하지 않습니다. 원하는 모델과 사이즈가 지금 대여 가능한지는 이번 공개 공지 확인만으로 알 수 없습니다.</p>
+<h2>커피·타월·무료 대여를 하나로 묶지 않기</h2>
+<p>개장 캡션에 있던 러닝 후 타월·커피 제공과 신발 유료 대여는 다른 항목입니다. 모든 서비스가 무료라고 설명하지 않았습니다. 종료를 앞둔 현재도 과거 제공품의 재고와 조건이 그대로인지 새로 확인하지 못했으므로 방문 목적을 사은품 수령에 맞추도록 권하지 않습니다.</p>
+<p>가볍게 방문하려면 원하는 서비스의 마지막 날짜, 실제 대여 가능 사이즈, 반납 마감부터 확인하세요. 여기의 영업·가격은 공식 공고를 읽은 결과이며 현장 확인이나 예약을 한 것은 아닙니다. 장소의 현재 문의 경로는 <a href="https://www.instagram.com/nb_runhub__yeoido/" target="_blank" rel="noopener noreferrer">공식 여의도점 계정</a>입니다.</p>
+<h2>자주 묻는 질문</h2>
+<h3>여의도 런허브는 이미 끝났나요?</h3><p>11월 10일 확인 기준 종료 예정입니다. 공식 최신 공지는 의류 대여 11월 11일, 신발 대여와 매장 영업 11월 14일까지로 안내합니다.</p>
+<h3>신발과 옷 대여는 모두 무료인가요?</h3><p>공식 서비스 카드에는 신발 5,000원·의류 3,000원·락커 무료로 표시됩니다. 개장 때의 무료 커피·타월 안내를 모든 대여 무료로 해석하지 않습니다. 당일 요금·조건은 방문 전에 확인하세요.</p>
 `,
+    updatedAt: "2026-11-10",
+    faqs: [
+      {
+        "question": "여의도 런허브는 이미 끝났나요?",
+        "answer": "11월 10일 확인 기준 종료 예정입니다. 공식 최신 공지는 의류 대여 11월 11일, 신발 대여와 매장 영업 11월 14일까지로 안내합니다."
+      },
+      {
+        "question": "신발과 옷 대여는 모두 무료인가요?",
+        "answer": "공식 서비스 카드에는 신발 5,000원·의류 3,000원·락커 무료로 표시됩니다. 개장 때의 무료 커피·타월 안내를 모든 대여 무료로 해석하지 않습니다. 당일 요금·조건은 방문 전에 확인하세요."
+      }
+    ],
   },
   {
     id: "lsd-training-beginner-guide-korea",
@@ -2027,132 +1887,54 @@ export const posts_2026_05: BlogPost[] = [
     ],
   },
   {
-    id: '2026-nb-1080v15-tryout-popup-d3',
-    slug: '2026-nb-1080v15-tryout-popup-d3',
-    title: 'NB 1080 v15 무료 트라이얼 POP-UP D-3 | 5/14 마감 — 경복궁·부산 OYM에서 신상 쿠션화 직접 신어보기',
-    description: '뉴발란스 1080 v15·Rebel v5 신상 컬러를 매장에서 무료 시착할 수 있는 ON YOUR MARK 팝업이 5월 14일(수)에 종료됩니다. 경복궁·부산 두 매장에서 진행, 트라이얼 시 무료 커피 쿠폰. NB의 플래그십 쿠션화(255g 실측, 인피니온 폼, 남성 2E·4E 와이드)를 사기 전에 신어볼 수 있는 거의 유일한 기회.',
-    thumbnail: '/images/blog/2026-nb-1080v15-tryout-popup-d3.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-05-11',
-    category: 'news' as const,
+    id: "2026-nb-1080v15-tryout-popup-d3",
+    slug: "2026-nb-1080v15-tryout-popup-d3",
+    title: "NB × OYM 2026 무료 트라이얼 종료 기록 — 경복궁·부산 일정과 혜택 구분",
+    description: "뉴발란스·온유어마크 공동 원문으로 5월 1~14일 경복궁, 2~14일 부산 팝업을 확인했습니다. 무료 트라이얼·커피 쿠폰·추첨·구매 선착순 혜택의 서로 다른 조건을 정리했습니다.",
+    thumbnail: "/images/blog/verified-2026-nb-1080v15-tryout-popup-d3-20261110.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-05-11",
+    category: "news",
     readingTime: 5,
-    tags: ['뉴발란스', 'New Balance', '1080 v15', 'Rebel v5', '온유어마크', 'OYM', '러닝화 시착', 'POP-UP'],
+    tags: [
+      "뉴발란스",
+      "New Balance",
+      "1080 v15",
+      "Rebel v5",
+      "온유어마크",
+      "OYM",
+      "러닝화 시착",
+      "POP-UP"
+    ],
     content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li>NB <strong>1080 v15 + Rebel v5 무료 트라이얼 팝업</strong>이 5월 14일(수)에 종료 — D-3</li>
-    <li>장소: <strong>ON YOUR MARK 경복궁점 / 부산점</strong> 2곳. 트라이얼 시 무료 커피 쿠폰 제공</li>
-    <li>1080 v15(255g 실측·인피니온 폼·2E·4E 와이드)와 Rebel v5(220g·FuelCell)를 사기 전 매장 시착 가능한 거의 유일한 기회</li>
-  </ul>
-</div>
+<p><strong>2026년 11월 10일 공식 원문 대조.</strong> 당시 안내와 현재 상태를 구분했습니다. 직접 참가·방문한 후기는 아닙니다.</p>
 
-<div class="callout warning">
-  <span class="callout-icon">⏰</span>
-  <div class="callout-body">
-    <p class="callout-title">D-3 — 5월 14일(수) 영업 종료까지</p>
-    <p>온유어마크 경복궁점은 <strong>5월 1일~14일</strong>, 부산점은 <strong>5월 2일~14일</strong>까지 진행. 평일 마지막 날이라 퇴근 후 방문이 어려울 수 있으니 토요일(5/10) 또는 이번 주 중반에 가는 게 안전합니다.</p>
-  </div>
-</div>
-
-<h2>이번 팝업이 왜 중요한가</h2>
-
-<p>NB 1080 v15는 2026년 발매된 뉴발란스 플래그십 쿠션화입니다. 전작 v14 대비 <strong>약 30g 경량화(RunRepeat 실측 285→255g)</strong> + 인피니온(질소 주입 슈퍼크리티컬 폼) 채택으로 거의 다른 신발이 됐죠. <a href="/shoes/new-balance-1080-v15">1080 v15</a>를 한국 러너에게 매력적으로 만드는 핵심 3가지:</p>
-
-<ul>
-  <li><strong>255g(실측) 경량 쿠션화</strong> — 힐 37mm(실측) 스택 맥스 쿠션 중 가벼운 편</li>
-  <li><strong>2E·4E 와이드 옵션 정식 출시</strong> — 발볼 넓은 한국 러너에게 거의 유일한 맥스 쿠션 선택지</li>
-  <li><strong>인피니온 폼</strong> — Fresh Foam X보다 통기성·반응성·에너지 리턴이 향상된 NB 최신 폼</li>
-</ul>
-
-<p>문제는 <strong>"신어보지 않고 209,000원짜리 신발을 사는 건 부담"</strong>이라는 점. 1080 v14의 narrow 토박스를 피했던 러너라도 v15는 폭이 어떻게 바뀌었는지 실제로 신어봐야 알 수 있습니다.</p>
-
-<h2>팝업 정보 정리</h2>
-
-<table>
-  <thead>
-    <tr><th>항목</th><th>내용</th></tr>
-  </thead>
-  <tbody>
-    <tr><td><strong>이벤트명</strong></td><td>New Balance × ON YOUR MARK 1080v15 & Rebel v5 Summer Run POP-UP</td></tr>
-    <tr><td><strong>경복궁점 기간</strong></td><td>5월 1일(목) ~ 5월 14일(수)</td></tr>
-    <tr><td><strong>부산점 기간</strong></td><td>5월 2일(금) ~ 5월 14일(수)</td></tr>
-    <tr><td><strong>혜택 ①</strong></td><td>1080 v15 + Rebel v5 <strong>무료 트라이얼</strong></td></tr>
-    <tr><td><strong>혜택 ②</strong></td><td>트라이얼 이용 시 <strong>무료 커피 쿠폰</strong></td></tr>
-    <tr><td><strong>주관</strong></td><td>NBRC Seoul · NB Run Hub · ON YOUR MARK</td></tr>
-  </tbody>
-</table>
-
-<h2>두 신발 중 어느 쪽을 신어봐야 하나</h2>
-
-<h3>① <a href="/shoes/new-balance-1080-v15">1080 v15</a> — 데일리 쿠션화의 정답 후보</h3>
-
-<p><strong>209,000원 · 255g(실측) · 힐 스택 37mm(실측) · 평점 4.9</strong></p>
-
-<p>맥스 쿠션 카테고리에서 v15의 위치는 분명합니다. <strong>"가장 가볍고 발에 맞는 옵션이 많은 맥스 쿠션"</strong>. <a href="/shoes/hoka-bondi-9">Bondi 9</a>(303g)·<a href="/shoes/asics-gel-nimbus-28">Nimbus 28</a>(278g)보다 23~48g 가볍습니다.</p>
-
-<p>매장에서 확인할 3가지:</p>
-<ol>
-  <li><strong>토박스 핏</strong> — v14 narrow에서 v15는 standard로 개선. 발볼 보통이면 무난, 넓으면 2E 또는 4E 시착</li>
-  <li><strong>힐 컵 핏</strong> — 경량화 과정에서 힐 카운터가 부드러워짐. 뒤꿈치가 헐거우면 사이즈 -0.5 시도</li>
-  <li><strong>인피니온 폼 반응</strong> — 매장 내 가볍게 점프하거나 빠르게 걸을 때 Fresh Foam X 대비 반응이 빠른 느낌 체크</li>
-</ol>
-
-<h3>② <a href="/shoes/new-balance-rebel-v5">Rebel v5</a> — 가벼운 페이스 트레이너</h3>
-
-<p><strong>219,000원 · 220g · 데일리/템포 · 평점 4.5</strong></p>
-
-<p>Rebel은 1080과 성격이 완전히 다릅니다. 데일리·템포 페이스(5:30/km 이하)에서 빠른 반응을 원하는 러너용 경량 트레이너. <strong>1080이 "푹신함"이라면 Rebel은 "통통 튕김"</strong>. FuelCell 폼 + 카본 플레이트 없는 가벼운 구조라 비-카본화 카테고리에서 빠른 페이스 좋아하는 러너에게 인기.</p>
-
-<p>매장에서는 1080 신은 후 Rebel을 신어 비교하면 차이가 즉시 느껴집니다. <strong>"나는 데일리 페이스 우선" → 1080 / "스피드도 챙기고 싶다" → Rebel</strong>.</p>
-
-<h2>매장 위치·운영 시간</h2>
-
-<table>
-  <thead>
-    <tr><th>매장</th><th>주소·이동</th><th>운영 시간</th></tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>OYM 경복궁점</strong></td>
-      <td>서울 종로구 청운효자동 / 3호선 경복궁역 도보 5분</td>
-      <td>평일 11:00~20:00 (변동 가능)</td>
-    </tr>
-    <tr>
-      <td><strong>OYM 부산점</strong></td>
-      <td>부산 / @onyourmark_running 인스타그램 DM 확인 권장</td>
-      <td>매장 공지 확인</td>
-    </tr>
-  </tbody>
-</table>
-
-<div class="callout info">
-  <span class="callout-icon">💡</span>
-  <div class="callout-body">
-    <p class="callout-title">시착 전 준비물</p>
-    <p>① <strong>러닝 양말</strong> — 평소 신는 양말 두께로 핏 확인 필수, ② <strong>발 측정 기록</strong> — 가능하면 본인 발 길이(mm) + 발볼 너비 미리 측정, ③ <strong>오후 4시 이후 방문</strong> — 하루 중 발이 가장 부어 있는 시간이라 실제 러닝 시 핏과 가깝습니다.</p>
-  </div>
-</div>
-
-<h2>같이 보면 좋은 NB 소식</h2>
-
-<ul>
-  <li><strong>NB Run Hub Yeouido</strong> — 2026년 5월 9일(토) 여의나루 이크루즈에 NB 러닝 성지 팝업 오픈. 러닝 슈즈·의류 무료 대여 + 짐 보관 + 커피·타월 제공</li>
-  <li><strong>Grey Days 한정판</strong> — 1080 v15 + Rebel v5 Grey Days 시즌 한정 컬러 출시. 팝업에서 시착·구매 가능 (재고 한정)</li>
-</ul>
-
-<h2>요약 — 액션 플랜</h2>
-
-<ol>
-  <li><strong>이번 주 중반(5/12~13):</strong> 평일 오후 경복궁/부산 OYM 방문 — 1080 v15·Rebel v5 시착 + 사이즈 결정</li>
-  <li><strong>5월 14일(수):</strong> 마지막 날 — 결정 못 했으면 평일 점심 시간 활용</li>
-  <li><strong>이후:</strong> 매장 또는 NB 공식 사이트(nbkorea.com)에서 결정한 사이즈·컬러 구매. Grey Days 한정 컬러 노린다면 빠른 결정 필요</li>
-</ol>
-
-<p>본인 발에 맞는 쿠션화 후보를 더 좁히고 싶다면 <a href="/recommend">맞춤 러닝화 추천</a>, 발볼 넓은 한국 러너 전용 가이드는 <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국인을 위한 러닝화 추천 TOP 10</a>도 함께 참고하세요.</p>
-
-<p><small>출처: @nbrc_seoul / @newbalance_runhub / @onyourmark_running 인스타그램 / 작성일 2026년 5월 11일 기준 / 팝업 일정·혜택은 매장 사정에 따라 변동될 수 있으니 방문 전 인스타그램 확인 권장.</small></p>
+<h2>5월 14일에 끝난 팝업입니다</h2>
+<p><a href="https://www.instagram.com/p/DXv9XDJEZN9/" target="_blank" rel="noopener noreferrer">NBRC Seoul × ON YOUR MARK 공식 게시물</a>은 2026년 4월 30일 게시된 1080v15 &amp; Rebel v5 Summer Run POP-UP 안내입니다. 일정은 OYM 경복궁 5월 1~14일, OYM 부산 5월 2~14일입니다. 2026년 5월 14일은 목요일이며 기존 글의 수요일 표기를 수정했습니다. 요일 오류만으로 실제 공식 게시물을 2025년 행사라고 바꾸지 않았습니다.</p>
+<p>11월 확인 시점 이미 지난 행사이므로 ‘D-3’, 지금 가면 무료로 빌릴 수 있다는 안내는 제외했습니다. 팝업 기간과 매장의 현재 상시 운영은 별개입니다.</p>
+<h2>무료 체험과 경품의 대상이 다릅니다</h2>
+<table><thead><tr><th>안내된 혜택</th><th>공식 캡션의 조건</th></tr></thead><tbody><tr><td>무료 트라이얼</td><td>1080v15 무료 체험 서비스 명시</td></tr><tr><td>커피 쿠폰</td><td>트라이얼 이용 시 제공</td></tr><tr><td>1080v15 증정</td><td>체험 후 포스팅·설문 참여자 추첨</td></tr><tr><td>키로미로 키링</td><td>구매 선착순, 소진 시 종료</td></tr></tbody></table>
+<p>제목과 본문은 1080v15·Rebel v5를 경험하는 팝업이라고 설명하지만, 무료 서비스 항목은 1080v15를 구체적으로 적습니다. 이를 두 모델의 모든 사이즈·전 기간 무제한 무료 대여로 확대하지 않았습니다. 당첨과 선착순 수령도 전원 제공 혜택이 아닙니다.</p>
+<h2>점포별 커피 연결도 나눠 보기</h2>
+<p>당시 안내는 경복궁 체험의 커피 쿠폰을 논도 서촌, 부산 체험은 베르크 로스터스로 연결했습니다. OYM 안에서 커피를 무조건 바로 제공하거나 다른 매장에서도 쓸 수 있다고 설명하지 않습니다. 쿠폰의 유효기간·재발급 조건·소진 여부는 이번 공개 캡션에서 새로 확정하지 못했습니다.</p>
+<h2>체험으로 확인할 수 있는 것과 없는 것</h2>
+<p>다음 체험 행사를 이용한다면 평소 양말과 함께 뒤꿈치 밀림·발등 눌림·앞코 여유를 확인하고 짧은 러닝에서 기존 신발과 느낌을 비교하는 방법을 제안합니다. 짧은 체험이나 제조사의 쿠셔닝 표현만으로 풀코스 적합성·무릎 보호·보장 수명을 확정하지 않습니다. 이번 글은 실제 착용 후기나 두 제품의 성능 순위가 아닙니다.</p>
+<p>다음 팝업을 찾을 때에는 <a href="https://www.instagram.com/onyourmark_running/" target="_blank" rel="noopener noreferrer">온유어마크 공식 계정</a>의 새 공고에서 일정·점포·체험 가능 모델·신분 확인·반납 조건을 확인하세요. 5월의 무료 혜택이 지금도 유지된다거나 같은 일정이 다음 해 반복된다고 추정하지 않았습니다.</p>
+<h2>자주 묻는 질문</h2>
+<h3>지금 OYM에서 이 무료 팝업을 이용할 수 있나요?</h3><p>이 공고의 운영 기간은 경복궁 2026년 5월 1~14일, 부산 5월 2~14일로 이미 지났습니다. 현재 행사는 별도의 새 공고를 확인해야 합니다.</p>
+<h3>체험하면 신발과 키링을 모두 받았나요?</h3><p>신발 증정은 포스팅·설문 참여자 추첨이며 키링은 구매 선착순·소진 종료 조건입니다. 무료 트라이얼이나 커피 쿠폰과 전원 제공 여부를 구분해야 합니다.</p>
 `,
+    updatedAt: "2026-11-10",
+    faqs: [
+      {
+        "question": "지금 OYM에서 이 무료 팝업을 이용할 수 있나요?",
+        "answer": "이 공고의 운영 기간은 경복궁 2026년 5월 1~14일, 부산 5월 2~14일로 이미 지났습니다. 현재 행사는 별도의 새 공고를 확인해야 합니다."
+      },
+      {
+        "question": "체험하면 신발과 키링을 모두 받았나요?",
+        "answer": "신발 증정은 포스팅·설문 참여자 추첨이며 키링은 구매 선착순·소진 종료 조건입니다. 무료 트라이얼이나 커피 쿠폰과 전원 제공 여부를 구분해야 합니다."
+      }
+    ],
   },
   {
     id: "2026-bape-adidas-evo-sl-release",

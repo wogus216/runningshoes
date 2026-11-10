@@ -1297,86 +1297,51 @@ export const posts_2026_07: BlogPost[] = [
     ],
   },
   {
-    id: 'new-balance-team-womens-2026-recruitment',
-    slug: 'new-balance-team-womens-2026-recruitment',
-    title: '뉴발란스 팀우먼스 2026 모집 마감 임박(오늘 7/9까지) — 런 유어 웨이 10K 공식 확정',
-    description:
-      '뉴발란스가 여성 러너 전용 12주 훈련 프로그램 "2026 NB Team Women\'s"를 모집합니다. 런린이반·PB반으로 나뉘며 2026 런 유어 웨이 10K 참가권과 뉴발란스 러닝 제품을 지원받습니다. 모집은 7월 9일(목) 오늘까지, 이 공지로 런 유어 웨이 10K 개최도 공식 확정됐습니다. 일정·신청 방법과 12주 훈련에 필요한 뉴발란스 러닝화까지 정리했습니다.',
-    thumbnail: '/images/blog/new-balance-team-womens-2026-recruitment.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-07-09',
-    category: 'news' as const,
-    readingTime: 6,
-    tags: ['뉴발란스 팀우먼스', 'NB Team Women\'s', '런 유어 웨이 10K', '뉴발란스 러닝클럽', '여성 러닝 크루'],
+    id: "new-balance-team-womens-2026-recruitment",
+    slug: "new-balance-team-womens-2026-recruitment",
+    title: "NB 팀우먼스 2026 모집 기록 — 20명 선발·훈련 장소·서류 조건 확인",
+    description: "7월 공식 카드에서 초보 10명·PB 도전 10명, 선발 일정과 월·목 저녁 훈련을 확인했습니다. 지난 모집을 현재 신청으로 안내하지 않고 12주 기간 등 미확인 설명을 제외했습니다.",
+    thumbnail: "/images/blog/verified-new-balance-team-womens-2026-recruitment-20261110.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-07-09",
+    category: "news",
+    readingTime: 5,
+    tags: [
+      "뉴발란스 팀우먼스",
+      "NB Team Women's",
+      "런 유어 웨이 10K",
+      "뉴발란스 러닝클럽",
+      "여성 러닝 크루"
+    ],
     content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>뉴발란스 "2026 NB Team Women's" 모집이 오늘(7/9, 목)까지</strong>입니다. 여성 러너 전용 12주 훈련 프로그램으로 런린이반·PB반 두 트랙으로 나뉩니다</li>
-    <li>합격하면 <strong>2026 런 유어 웨이 10K 참가권 + 뉴발란스 러닝 제품</strong>을 지원받습니다. 훈련은 7월 20일 시작</li>
-    <li>이 모집 공지로 <strong>런 유어 웨이 10K 2026 개최가 공식 확정</strong>됐습니다(정확한 날짜·장소는 추후 발표). 지원은 <a href="https://www.instagram.com/nbrc_seoul/" target="_blank" rel="noopener">@nbrc_seoul</a> 프로필 링크에서 가능합니다</li>
-  </ul>
-</div>
+<p><strong>2026년 11월 10일 공식 원문 대조.</strong> 당시 안내와 현재 상태를 구분했습니다. 직접 참가·방문한 후기는 아닙니다.</p>
 
-<div class="callout warning">
-  <span class="callout-icon">⏰</span>
-  <div class="callout-body">
-    <p class="callout-title">모집 마감 오늘(7/9) — 서두르세요</p>
-    <p>뉴발란스 러닝클럽 서울(<a href="https://www.instagram.com/nbrc_seoul/" target="_blank" rel="noopener">@nbrc_seoul</a>)이 2026년 여성 전용 훈련 프로그램 참가자를 모집 중입니다. <strong>모집 마감이 오늘(7월 9일 목요일)</strong>이라 지원을 고민 중이라면 지금 바로 프로필 링크를 확인해야 합니다. 참가비·정확한 신청 링크·자격 조건 등 세부사항은 <a href="https://www.instagram.com/nbrc_seoul/" target="_blank" rel="noopener">@nbrc_seoul</a> 공식 계정에서 최종 확인하세요.</p>
-  </div>
-</div>
-
-<h2>일정 한눈 정리</h2>
-<table>
-  <thead><tr><th>일정</th><th>내용</th></tr></thead>
-  <tbody>
-    <tr><td>모집 기간</td><td><strong>7/7(화) ~ 7/9(목) 오늘까지</strong></td></tr>
-    <tr><td>1차 합격자 발표</td><td>7/10(금), 개별 문자</td></tr>
-    <tr><td>1차 합격자 전화 인터뷰</td><td>7/13(월) ~ 7/14(화)</td></tr>
-    <tr><td>최종 합격자 발표</td><td>7/15(수), 개별 문자</td></tr>
-    <tr><td>훈련 시작</td><td>7월 20일</td></tr>
-    <tr><td>접수처</td><td><a href="https://www.instagram.com/nbrc_seoul/" target="_blank" rel="noopener">@nbrc_seoul</a> 프로필 링크</td></tr>
-  </tbody>
-</table>
-<p class="caption">※ 참가비·세부 자격 조건·정확한 신청 URL은 공식 게시물에 명시되지 않았습니다. 지원 전 반드시 @nbrc_seoul 계정에서 최종 확인하세요.</p>
-
-<h2>런린이반 vs PB반, 뭐가 다른가</h2>
-<p>2026 NB Team Women's는 두 트랙으로 구성됩니다. 세부 기준은 공지에 명시되지 않았지만, 이름 그대로 <strong>런린이반은 러닝을 처음 시작하는 초보 러너</strong>를 위한 트랙, <strong>PB반(Personal Best)은 기존 기록 단축을 목표로 하는 러너</strong>를 위한 트랙으로 나뉠 가능성이 큽니다. 12주 훈련 프로그램이라는 점에서 완주가 목표든 기록 단축이 목표든 체계적인 코칭을 받을 수 있는 구조로 보입니다.</p>
-
-<h2>런 유어 웨이 10K, 이번 공지로 공식 확정</h2>
-<p>이번 모집 공지에서 눈여겨볼 부분은 훈련 프로그램 자체보다 <strong>"이번 공지로 런 유어 웨이 10K 개최도 오피셜이 됐다"</strong>는 문구입니다. 뉴발란스의 자체 대회 시리즈 런 유어 웨이는 2026년 3월 <a href="/marathon">광화문광장 하프 레이스</a>가 이미 열렸고, 10K는 2025년 9월 여의도공원에서 진행된 바 있습니다. 2026년 10K의 정확한 날짜·장소는 아직 발표되지 않았지만, <strong>이번 Team Women's 모집으로 개최 자체는 확정</strong>된 셈입니다. 정확한 접수 일정이 나오면 이 글을 갱신하겠습니다.</p>
-
-<h2>12주 훈련, 어떤 신발이 필요할까</h2>
-<p>합격 여부와 관계없이 12주짜리 러닝 훈련 프로그램을 준비한다면 <strong>목적별로 신발을 나누는 게 부상 예방에 유리</strong>합니다. 뉴발란스 러닝 제품을 지원받는 프로그램이니만큼, 브랜드 내에서 용도별로 고를 수 있는 후보를 정리했습니다.</p>
-<ul>
-  <li><strong>런린이(입문) — 데일리 조깅화</strong>: <a href="/shoes/new-balance-1080-v15">1080 V15</a>는 부드러운 쿠셔닝으로 매일 거리 쌓기에 안전하고, 무릎 부담이 적어 러닝을 처음 시작하는 분에게 무난합니다.</li>
-  <li><strong>PB반(기록 단축) — 포인트 훈련화</strong>: 인터벌·템포런 비중이 늘어난다면 <a href="/shoes/new-balance-sc-trainer-v3">SC Trainer V3</a> 같은 카본 플레이트 슈퍼트레이너가 훈련에서 레이스 감각을 미리 잡는 데 도움이 됩니다.</li>
-  <li><strong>10K 레이스 당일 — 가벼운 반응형</strong>: <a href="/shoes/new-balance-rebel-v5">Rebel V5</a>는 가벼우면서 반발력이 좋아 10K처럼 짧고 빠른 레이스에 잘 맞습니다.</li>
-</ul>
-<p>뉴발란스 러닝화 라인업 전체를 등급별로 보고 싶다면 <a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026">뉴발란스 러닝화 계급도</a>를 참고하세요. 발볼이 넓은 편이라면 <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너 가이드</a>도 함께 보면 좋습니다.</p>
-
-<h2>FAQ</h2>
-<div class="faq">
-  <div class="faq-item">
-    <p class="faq-q">Q. 참가비는 얼마인가요?</p>
-    <p class="faq-a">A. 공식 모집 게시물에 참가비가 명시돼 있지 않습니다. <a href="https://www.instagram.com/nbrc_seoul/" target="_blank" rel="noopener">@nbrc_seoul</a> 계정 프로필 링크에서 신청 시 정확한 비용을 확인해야 합니다.</p>
-  </div>
-  <div class="faq-item">
-    <p class="faq-q">Q. 러닝 경력이 없어도 지원할 수 있나요?</p>
-    <p class="faq-a">A. 프로그램이 런린이반(입문)·PB반(기록 단축) 두 트랙으로 나뉘어 있어, 러닝이 처음인 분도 런린이반으로 지원할 수 있는 구조로 보입니다. 정확한 자격 조건은 신청 페이지에서 확인하세요.</p>
-  </div>
-  <div class="faq-item">
-    <p class="faq-q">Q. 남성도 지원할 수 있나요?</p>
-    <p class="faq-a">A. 아니요. 공지에 명시된 대로 <strong>여성 러너 전용</strong> 프로그램입니다.</p>
-  </div>
-  <div class="faq-item">
-    <p class="faq-q">Q. 오늘 마감을 놓치면 다음 기회가 없나요?</p>
-    <p class="faq-a">A. 이번 모집은 7/9까지로 공지돼 있습니다. 다음 기수 모집 여부는 아직 알려지지 않았으니, 관심 있다면 <a href="https://www.instagram.com/nbrc_seoul/" target="_blank" rel="noopener">@nbrc_seoul</a>을 팔로우해 다음 소식을 받아보는 것을 추천합니다.</p>
-  </div>
-</div>
-
-<p><small>출처: 뉴발란스 러닝클럽 서울(@nbrc_seoul) 공식 인스타그램 2026 NB Team Women's 모집 게시물. 작성 2026년 7월 9일(모집 마감 당일) 기준이며, 런 유어 웨이 10K 2026 정식 일정이 발표되면 갱신합니다.</small></p>
+<h2>7월 7~9일 진행한 지난 모집</h2>
+<p><a href="https://www.instagram.com/p/DaeCL3Bk2kK/" target="_blank" rel="noopener noreferrer">NBRC Seoul 7월 7일 공식 게시물</a>의 캡션과 모집 카드를 직접 대조했습니다. 2026 NB Team Women’s는 러닝 초보 10명과 PB 도전자 10명, 총 20명을 모집했습니다. 7월 9일까지였던 신청을 ‘오늘 마감’이라고 현재 날짜에 연결하지 않습니다.</p>
+<table><thead><tr><th>절차</th><th>당시 공식 일정</th></tr></thead><tbody><tr><td>모집</td><td>7월 7~9일</td></tr><tr><td>1차 발표</td><td>7월 10일 개별 문자</td></tr><tr><td>전화 인터뷰</td><td>7월 13~14일</td></tr><tr><td>최종 발표</td><td>7월 15일 개별 문자</td></tr><tr><td>훈련 시작</td><td>7월 20일 월요일</td></tr></tbody></table>
+<p>공고된 선발 절차이지, 20명이 실제로 모든 훈련을 이수했다는 결과 보고는 아닙니다. 참가자·합격자 정보를 열람하지 않았습니다.</p>
+<h2>두 트랙은 제출 서류를 나눠 보기</h2>
+<p>공식 카드는 프로필 링크 설문과 자유 형식 포트폴리오 제출을 안내하고, PB 도전자에게만 기록증을 요구합니다. 따라서 초보와 PB 도전자를 모호한 가능성으로 나눌 필요는 없지만, 모든 신청자가 이미 대회 기록을 갖고 있어야 한다고 설명해서도 안 됩니다. 이번에 확인하지 못한 기록 제한이나 통과 확률은 새로 만들지 않았습니다.</p>
+<h2>훈련 장소와 혜택</h2>
+<p>당시 훈련 안내는 매주 월요일 런콥 러닝랩, 매주 목요일 반포 종합운동장, 저녁 7시입니다. 유길오 코치의 전문 무료 훈련, 2026 Run Your Way 10K 참가권, 뉴발란스 러닝 제품 지원, 아미노바이탈 훈련 키트·WTD 고글·AHC 선케어를 혜택으로 제시합니다.</p>
+<p>이는 해당 프로그램의 공식 모집 혜택입니다. 모든 뉴발란스 클래스가 무료이거나 제품을 받는다는 뜻으로 확대하지 않습니다. 이번에 읽은 카드와 캡션에서는 전체 12주라는 기간·정확한 훈련 종료일을 확인하지 못해 제외했습니다. 현재도 월·목 같은 장소에서 누구나 합류할 수 있는 정기 오픈 클래스처럼 안내하지 않습니다.</p>
+<h2>다음 기수를 검토할 때 남길 기준</h2>
+<p>내가 초보 또는 기록 도전 중 어느 트랙인지, 정기 장소까지 이동할 수 있는지, 실제 참석 조건과 서류를 준비할 수 있는지부터 비교하세요. 이 공고와 3월의 다른 팀 프로그램·나고야 원정 프로그램을 섞어 새로운 일정을 만들지 않았습니다. 다음 모집의 정원·대회 참가권·훈련일은 새로운 <a href="https://www.instagram.com/nbrc_seoul/" target="_blank" rel="noopener noreferrer">공식 계정 안내</a>를 확인해야 합니다.</p>
+<h2>자주 묻는 질문</h2>
+<h3>2026 NB 팀우먼스는 몇 명을 뽑았나요?</h3><p>공식 모집 안내의 정원은 초보 10명과 PB 도전자 10명, 총 20명입니다. 이는 공고 정원이며 실제 최종 참여 인원까지 확인한 결과는 아닙니다.</p>
+<h3>초보 신청자도 기록증이 필요했나요?</h3><p>확인한 공식 카드는 PB 도전자에게만 기록증을 요구합니다. 설문·자유 형식 포트폴리오와 트랙별 제출 조건을 구분해야 합니다.</p>
 `,
+    updatedAt: "2026-11-10",
+    faqs: [
+      {
+        "question": "2026 NB 팀우먼스는 몇 명을 뽑았나요?",
+        "answer": "공식 모집 안내의 정원은 초보 10명과 PB 도전자 10명, 총 20명입니다. 이는 공고 정원이며 실제 최종 참여 인원까지 확인한 결과는 아닙니다."
+      },
+      {
+        "question": "초보 신청자도 기록증이 필요했나요?",
+        "answer": "확인한 공식 카드는 PB 도전자에게만 기록증을 요구합니다. 설문·자유 형식 포트폴리오와 트랙별 제출 조건을 구분해야 합니다."
+      }
+    ],
   },
   {
     id: "hoka-clifton-pro-preview-2026",
