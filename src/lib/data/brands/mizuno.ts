@@ -1,202 +1,534 @@
 import type { Brand } from '@/types/brand';
 
 export const mizunoBrand: Brand = {
-  id: 'mizuno',
-  name: 'Mizuno',
-  nameKo: '미즈노',
-  tagline: 'Reach Beyond',
-  description:
-    '1906년 오사카에서 시작된 일본의 스포츠 전문 브랜드. 자연에서 영감받은 MIZUNO WAVE 구조로 쿠셔닝과 안정성을 동시에 제공하며, ENERZY 폼 라인업과 Smooth Speed Assist 지오메트리로 러닝화 기술을 진화시키고 있습니다.',
-  founded: 1906,
-  headquarters: '일본 오사카',
-  website: 'https://www.mizuno.co.kr',
-  technologies: [
-    // ─── 미드솔 (Midsole) ───
+  "id": "mizuno",
+  "name": "Mizuno",
+  "nameKo": "미즈노",
+  "tagline": "Reach Beyond",
+  "description": "MIZUNO ENERZY 계열 폼, MIZUNO WAVE 구조와 Smooth Speed Assist 형상 설계를 사용하는 스포츠 브랜드입니다. WAVE에는 별도 판과 FOAM WAVE가 있고, NXT도 모델에 따라 원료·발포 공정·배치가 다릅니다. 세대별 공식 구성과 소재 비교 수치의 범위를 나누어 안내합니다.",
+  "founded": 1906,
+  "headquarters": "일본 오사카",
+  "website": "https://www.mizuno.co.kr",
+  "technologies": [
     {
-      id: 'enerzy-core',
-      name: 'MIZUNO ENERZY CORE',
-      nameKo: '에너지 코어',
-      category: 'midsole',
-      year: 2022,
-      description:
-        '미즈노 발표 기준 기존 소재 대비 293% 더 소프트하고 56% 더 높은 에너지 리턴을 제공하는 프리미엄 쿠셔닝 폼입니다.',
-      benefits: [
-        '미즈노 발표 기준 293% 더 부드러운 착지감',
-        '56% 향상된 에너지 리턴(미즈노 자사 비교 기준)',
-        '프리미엄 쿠셔닝 라인의 핵심 폼',
-        '장거리에서도 꺼지지 않는 일관된 쿠셔닝',
+      "id": "enerzy-core",
+      "name": "MIZUNO ENERZY CORE",
+      "nameKo": "에너지 코어",
+      "category": "midsole",
+      "description": "2020년 공식 발표에서 U4ic 소재와 비교한 ENERZY 계열 폼입니다. 라이더 29·스카이 9의 정확 원문에서는 CORE 적용을 확인하지 못했습니다.",
+      "benefits": [
+        "293%·56%는 U4ic 대비 제조사 소재 비교",
+        "반발 56% 향상과 절대 에너지 리턴 56%는 다름",
+        "현재 확인 여덟 모델에 미확인 CORE 연결 제거"
       ],
-      scienceExplanation:
-        'MIZUNO ENERZY CORE는 미즈노의 프리미엄 미드솔 폼으로, 기존 소재 대비 293% 더 소프트하고 56% 더 높은 에너지 리턴을 제공한다고 미즈노가 공식 발표했습니다. Wave Rider, Wave Sky 등 미즈노의 핵심 쿠셔닝 라인에 적용되어 부드러운 착지감과 반발력의 균형을 구현합니다.',
-      usedInShoes: ['mizuno-wave-rider-29', 'mizuno-wave-sky-9'],
+      "scienceExplanation": "2020년 미즈노 소재 발표는 CORE의 부드러움 약 293% 향상·반발 약 56% 향상을 U4ic 대비 제조사 비교로 설명합니다. 수직 압축을 이용한 소재 시험이며 완성화 설계·개인의 느낌은 다를 수 있다고 명시합니다. 실제 신발의 부상 예방·수명·장거리에서 꺼지지 않는 쿠션을 입증한 결과가 아닙니다. 라이더 29는 양쪽 NXT, 스카이 9는 NXT와 FOAM WAVE가 확인되지만 CORE라는 물리적 부품은 확인되지 않아 적용 연결을 제거했습니다. 미확인 연결의 제거가 모든 제품에서 CORE가 없다는 뜻은 아닙니다.",
+      "usedInShoes": [],
+      "verification": {
+        "checkedAt": "2026-11-10",
+        "scope": "정확 모델·세대 제조사 원문의 폼·구조·판·아웃솔 명칭 확인. 공통 기술 카드와 지역별 충돌, 미확인 원료·임상 효과는 구분했습니다.",
+        "sources": [
+          {
+            "title": "Mizuno 공식 — MIZUNO ENERZY original material launch",
+            "url": "https://corp.mizuno.com/jp/news-release/2020/20200701",
+            "scope": "Full original; Core/Lite/base distinction, U4ic comparator, vertical compression and materials-only footnotes."
+          },
+          {
+            "title": "Mizuno 공식 — WAVE RIDER 29 launch",
+            "url": "https://corp.mizuno.com/jp/news-release/2025/20250808",
+            "scope": "Japanese original full article; two-layer NXT, supercritical process, WAVE and comparison footnotes."
+          },
+          {
+            "title": "Mizuno 공식 — Men’s Wave Sky 9",
+            "url": "https://usa.mizuno.com/running-wave-sky-9-mens",
+            "scope": "Exact model style411533; description and Technical details: multi-material Foam Wave, nitrogen NXT EVA version, X10 and Smooth Stretch Woven."
+          },
+          {
+            "title": "Mizuno 공식 — WAVE SKY 9 J1GC250202",
+            "url": "https://emea.mizuno.com/eu/en-be/wave-sky-9/J1GC250202.html",
+            "scope": "Exact Description/Features: nitrogen NXT upper midsole, FOAM WAVE, Smooth Stretch Woven. Generic Technology block separated."
+          }
+        ]
+      }
     },
     {
-      id: 'enerzy-nxt',
-      name: 'MIZUNO ENERZY NXT',
-      nameKo: '에너지 NXT',
-      category: 'midsole',
-      year: 2023,
-      description:
-        '모델에 따라 질소 주입(Nitrogen Infused) 상부 레이어와 EVA 기반 하부 레이어를 조합하여 쿠셔닝과 안정성을 동시에 구현하는 차세대 폼입니다.',
-      benefits: [
-        '질소 주입 레이어로 부드러운 쿠셔닝과 에너지 출력',
-        'EVA 기반 레이어로 안정성 보강',
-        '2레이어 구조로 상반된 성능의 균형',
-        'Neo Zen, Neo Vista 등 최신 라인의 핵심 기술',
+      "id": "enerzy-nxt",
+      "name": "MIZUNO ENERZY NXT",
+      "nameKo": "에너지 NXT",
+      "category": "midsole",
+      "description": "같은 NXT 안에서도 모델별 원료·질소 주입 여부·배치가 다른 폼 계열입니다. 공통 기술 카드의 상·하층 설명을 모든 제품에 복사하지 않습니다.",
+      "benefits": [
+        "라이더 29: 양층 NXT, 일본 발표에 초임계 공정",
+        "라이더 30: 상층 질소 주입·하층 일반 NXT 구분",
+        "비스타 3: 호주 원문은 TPU 상층·EVA 하층 명시"
       ],
-      scienceExplanation:
-        'MIZUNO ENERZY NXT는 미즈노의 차세대 폼으로, 모델에 따라 구성이 달라집니다. 미즈노 유럽 공식 페이지에 따르면, 상부 미드솔에는 질소 주입(Nitrogen Infused) ENERZY NXT를 배치하여 부드러운 쿠셔닝과 에너지 출력을 담당하고, 하부 미드솔에는 EVA 기반 ENERZY NXT를 배치하여 안정성을 보강하는 2레이어 구조를 사용합니다.',
-      usedInShoes: ['mizuno-wave-rider-29', 'mizuno-wave-inspire-21', 'mizuno-wave-sky-9', 'mizuno-wave-rebellion-flash-3', 'mizuno-wave-horizon-8'],
+      "scienceExplanation": "라이더 29 일본 발표는 양층 NXT의 초임계 발포, 미국 정확 제품은 EVA 버전을 설명합니다. 라이더 30은 상층 질소 주입·초임계 NXT와 하층 비질소 NXT를 구분하므로 양층 질소 주입으로 쓰지 않았습니다. 인스파이어 21은 뒤꿈치 웨지에 NXT, 상층에는 일반 ENERZY를 배치합니다. 22의 재설계 구조에 21의 구성을 그대로 옮기지 않습니다. 비스타 3 호주 정확 제품 원문은 질소 주입 TPU 상층·EVA 하층을 명시하지만 이 배합은 NXT 전체의 정의가 아닙니다. 스카이 9는 상층 NXT와 FOAM WAVE, 플래시 3는 XP 상층·NXT 하층으로 구분했습니다. 발포 가스·공정과 원료 고분자는 서로 다른 정보입니다.",
+      "usedInShoes": [
+        "mizuno-wave-rider-29",
+        "mizuno-wave-rider-30",
+        "mizuno-wave-inspire-21",
+        "mizuno-wave-inspire-22",
+        "mizuno-neo-vista-3",
+        "mizuno-wave-sky-9",
+        "mizuno-wave-rebellion-flash-3"
+      ],
+      "verification": {
+        "checkedAt": "2026-11-10",
+        "scope": "정확 모델·세대 제조사 원문의 폼·구조·판·아웃솔 명칭 확인. 공통 기술 카드와 지역별 충돌, 미확인 원료·임상 효과는 구분했습니다.",
+        "sources": [
+          {
+            "title": "Mizuno 공식 — WAVE RIDER 29 launch",
+            "url": "https://corp.mizuno.com/jp/news-release/2025/20250808",
+            "scope": "Japanese original full article; two-layer NXT, supercritical process, WAVE and comparison footnotes."
+          },
+          {
+            "title": "Mizuno 공식 — Men’s Wave Rider 29",
+            "url": "https://usa.mizuno.com/running-wave-rider-29-mens",
+            "scope": "Style 411538 exact standard model; description and Technical details: nitrogen-infused EVA version, jacquard mesh, X10."
+          },
+          {
+            "title": "Mizuno 공식 — WAVE RIDER 30 launch",
+            "url": "https://corp.mizuno.com/jp/news-release/2026/20260610",
+            "scope": "Full Japanese original; supercritical top/ordinary bottom NXT, first full-length WAVE and changes."
+          },
+          {
+            "title": "Mizuno 공식 — WAVE RIDER 30 J1GU262381",
+            "url": "https://emea.mizuno.com/eu/en-gb/wave-rider-30/J1GU262381.html",
+            "scope": "Sole/Upper Description; exact Features; Technical Details; NXT nitrogen vs non-nitrogen distinction."
+          },
+          {
+            "title": "Mizuno 공식 — WAVE INSPIRE 21 J1GC254402",
+            "url": "https://emea.mizuno.com/eu/en/wave-inspire-21/J1GC254402.html",
+            "scope": "Exact Features: NXT heel wedge, ENERZY top midsole, support-type WAVE; AIRmesh/X10 icons and descriptions."
+          },
+          {
+            "title": "Mizuno 공식 — WAVE INSPIRE 22 J1GD264427",
+            "url": "https://emea.mizuno.com/eu/en-es/wave-inspire-22/J1GD264427.html",
+            "scope": "Description/Sole/Support Type WAVE/Upper; live Technical Details; X10; SmoothRide distinct from Speed Assist."
+          },
+          {
+            "title": "Mizuno 공식 — MIZUNO NEO VISTA 3 launch",
+            "url": "https://corp.mizuno.com/jp/news-release/2026/20260511",
+            "scope": "Full Japanese original: top SCF NXT volume +12%, two-layer midsole, glass-fibre nylon 3D plate, SSA protocol, rubber grooves."
+          },
+          {
+            "title": "Mizuno 공식 — MIZUNO NEO VISTA 3 (U) J1GU2610",
+            "url": "https://mizuno.com.au/products/mizuno-neo-vista-3-u",
+            "scope": "Exact DESCRIPTION: nitrogen-infused TPU top / EVA bottom; full-length 3D WAVE and knit upper."
+          },
+          {
+            "title": "Mizuno 공식 — Men’s Wave Sky 9",
+            "url": "https://usa.mizuno.com/running-wave-sky-9-mens",
+            "scope": "Exact model style411533; description and Technical details: multi-material Foam Wave, nitrogen NXT EVA version, X10 and Smooth Stretch Woven."
+          },
+          {
+            "title": "Mizuno 공식 — WAVE REBELLION FLASH 3 launch",
+            "url": "https://corp.mizuno.com/jp/news-release/2025/20250722",
+            "scope": "Full Japanese original: XP top/NXT bottom, full-length glass-fibre reinforced nylon plate, Rilsan trade-name, SSA footnotes."
+          }
+        ]
+      }
     },
     {
-      id: 'enerzy-xp',
-      name: 'MIZUNO ENERZY XP',
-      nameKo: '에너지 XP',
-      category: 'midsole',
-      year: 2024,
-      description:
-        'PEBA 버전을 포함한 레이싱/스피드 지향 고반발 폼으로, 카본 플레이트와 조합하여 폭발적인 추진력을 제공합니다.',
-      benefits: [
-        'PEBA 버전으로 최고 수준의 에너지 리턴',
-        '카본 플레이트와의 조합으로 폭발적 추진력',
-        '레이싱에 최적화된 초경량 설계',
-        '미즈노 스피드 라인의 최상위 폼',
+      "id": "enerzy-xp",
+      "name": "MIZUNO ENERZY XP",
+      "nameKo": "에너지 XP",
+      "category": "midsole",
+      "description": "플래시 3 상층과 하이퍼워프 퓨어 초대에서 확인한 폼 계열입니다. 퓨어의 PEBA 버전 원료를 플래시 3에 자동으로 적용하지 않습니다.",
+      "benefits": [
+        "플래시 3: XP 상층·NXT 하층",
+        "퓨어 초대: XP PEBA Version 명시",
+        "XP와 함께 쓰인 판의 재질도 모델별로 다름"
       ],
-      scienceExplanation:
-        'MIZUNO ENERZY XP는 미즈노의 레이싱 지향 고반발 폼입니다. Hyperwarp Pure에서는 "MIZUNO ENERZY XP PEBA VERSION"이라고 공식 명시되어 있으며, PEBA(폴리에테르 블록 아마이드) 소재로 최고 수준의 에너지 리턴을 구현합니다. Smooth Speed Plate(카본)와 조합하여 엘리트 레이싱에 필요한 폭발적 추진력을 제공합니다.',
-      usedInShoes: ['mizuno-wave-rebellion-flash-3'],
+      "scienceExplanation": "플래시 3의 일본 출시문은 XP 상층·NXT 하층과 유리섬유 보강 나일론 WAVE를 확인해 줍니다. 이 정확 XP의 고분자 원료는 읽은 원문에서 확정하지 못했습니다. 하이퍼워프 퓨어 초대의 유럽 제품은 XP PEBA Version과 3D 전장 카본 Smooth Speed Plate를 명시합니다. 같은 XP 상표에 모두 카본판이 필수라는 설명은 맞지 않으며, PEBA라는 재료명만으로 최고 에너지 리턴이나 개인 기록을 보장할 수 없습니다. 하이퍼워프의 다른 모델·후속 세대 배합도 초대 퓨어에 복사하지 않습니다.",
+      "usedInShoes": [
+        "mizuno-wave-rebellion-flash-3",
+        "mizuno-hyperwarp-pure"
+      ],
+      "verification": {
+        "checkedAt": "2026-11-10",
+        "scope": "정확 모델·세대 제조사 원문의 폼·구조·판·아웃솔 명칭 확인. 공통 기술 카드와 지역별 충돌, 미확인 원료·임상 효과는 구분했습니다.",
+        "sources": [
+          {
+            "title": "Mizuno 공식 — WAVE REBELLION FLASH 3 launch",
+            "url": "https://corp.mizuno.com/jp/news-release/2025/20250722",
+            "scope": "Full Japanese original: XP top/NXT bottom, full-length glass-fibre reinforced nylon plate, Rilsan trade-name, SSA footnotes."
+          },
+          {
+            "title": "Mizuno 공식 — Men’s Wave Rebellion Flash 3",
+            "url": "https://usa.mizuno.com/running-wave-rebellion-flash-3-mens/",
+            "scope": "Style411524 exact model; description and Technical details: glass-fibre nylon WAVE, SSA, engineered mesh, rubber outsole."
+          },
+          {
+            "title": "Mizuno 공식 — HYPERWARP first-generation launch",
+            "url": "https://corp.mizuno.com/jp/news-release/2025/20251202",
+            "scope": "Full article with model sections kept separate. Pure lightweight XP/full carbon SSP; Pro carbon-reinforced nylon/SSA excluded from Pure."
+          },
+          {
+            "title": "Mizuno 공식 — HYPERWARP PURE J1GC268799",
+            "url": "https://emea.mizuno.com/eu/en-gb/hyperwarp-pure/J1GC268799.html",
+            "scope": "Exact first-generation Description/Technical details: XP PEBA Version, 3D full carbon SSP, G3, monofilament woven."
+          }
+        ]
+      }
     },
     {
-      id: 'enerzy-lite',
-      name: 'MIZUNO ENERZY LITE',
-      nameKo: '에너지 라이트',
-      category: 'midsole',
-      year: 2022,
-      description:
-        '경량화에 초점을 맞춘 스피드 지향 폼으로, 가벼우면서도 충분한 반응성을 제공합니다.',
-      benefits: [
-        '극한의 경량화로 스피드 러닝 최적화',
-        '가벼우면서도 충분한 반발력 제공',
-        '레이싱과 스피드 트레이닝에 적합',
-        'ENERZY 계열 중 가장 가벼운 무게',
+      "id": "enerzy-lite",
+      "name": "MIZUNO ENERZY LITE",
+      "nameKo": "에너지 라이트",
+      "category": "midsole",
+      "description": "2020년 공식 발표에 포함된 경량 지향 소재 명칭입니다. 이번 여덟 정확 모델에서 확인한 적용 예시는 없습니다.",
+      "benefits": [
+        "2020년 발표의 LITE·CORE·기본 소재를 구분",
+        "현재 전 계열 최경량이라는 미확인 순위 제거",
+        "플래시 3의 XP·NXT를 LITE로 바꾸지 않기"
       ],
-      scienceExplanation:
-        'MIZUNO ENERZY LITE는 경량화에 초점을 맞춘 미즈노의 스피드 폼입니다. Wave Rebellion Pro 계열 등 레이싱 라인에 적용되며, ENERZY 계열 중 가장 가벼운 무게로 스피드 러닝에 최적화되어 있습니다. 무게를 최소화하면서도 착지 시 충분한 반응성을 유지하는 것이 특징입니다.',
-      usedInShoes: ['mizuno-wave-rebellion-flash-2'],
+      "scienceExplanation": "2020년 소재 발표에는 ENERZY LITE가 이미 포함되어 있으므로 근거 없는 2022년 최초 도입 표기를 제거했습니다. 현행 모든 ENERZY 중 가장 가볍다는 비교도 이번 원문이 입증하지 않습니다. 플래시 3의 일본·미국·유럽 정확 자료는 XP와 NXT를 설명하므로 다른 지역의 충돌하는 LITE 문구를 적용 근거로 채택하지 않았습니다. 이번에 재확인하지 않은 플래시 2 등 과거 세대의 연결도 보류했습니다. 아래 목록은 확인된 정확 예시에 한하며 기술이 사라졌거나 모든 다른 신발에 없다는 판정은 아닙니다.",
+      "usedInShoes": [],
+      "verification": {
+        "checkedAt": "2026-11-10",
+        "scope": "정확 모델·세대 제조사 원문의 폼·구조·판·아웃솔 명칭 확인. 공통 기술 카드와 지역별 충돌, 미확인 원료·임상 효과는 구분했습니다.",
+        "sources": [
+          {
+            "title": "Mizuno 공식 — MIZUNO ENERZY original material launch",
+            "url": "https://corp.mizuno.com/jp/news-release/2020/20200701",
+            "scope": "Full original; Core/Lite/base distinction, U4ic comparator, vertical compression and materials-only footnotes."
+          },
+          {
+            "title": "Mizuno 공식 — WAVE REBELLION FLASH 3 launch",
+            "url": "https://corp.mizuno.com/jp/news-release/2025/20250722",
+            "scope": "Full Japanese original: XP top/NXT bottom, full-length glass-fibre reinforced nylon plate, Rilsan trade-name, SSA footnotes."
+          },
+          {
+            "title": "Mizuno 공식 — Men’s Wave Rebellion Flash 3",
+            "url": "https://usa.mizuno.com/running-wave-rebellion-flash-3-mens/",
+            "scope": "Style411524 exact model; description and Technical details: glass-fibre nylon WAVE, SSA, engineered mesh, rubber outsole."
+          },
+          {
+            "title": "Mizuno 공식 — WAVE REBELLION FLASH 3 J1GC253501",
+            "url": "https://emea.mizuno.com/eu/en-gb/wave-rebellion-flash-3/J1GC253501.html",
+            "scope": "Description/Features: XP top, NXT bottom, WAVE extended to forefoot, SSA; shared NXT card conflict separated."
+          }
+        ]
+      }
     },
     {
-      id: 'enerzy',
-      name: 'MIZUNO ENERZY',
-      nameKo: '에너지',
-      category: 'midsole',
-      year: 2020,
-      description:
-        '부드러움, 반발(리바운드), 내구성을 함께 추구하는 미즈노의 기본 미드솔 폼으로, 폭넓은 라인업에 적용됩니다.',
-      benefits: [
-        '부드러움과 반발력의 균형',
-        '뛰어난 내구성으로 장기간 사용 가능',
-        '데일리 러닝에 최적화된 편안함',
-        '미즈노 전 라인업의 기반 기술',
+      "id": "enerzy",
+      "name": "MIZUNO ENERZY",
+      "nameKo": "에너지",
+      "category": "midsole",
+      "description": "인스파이어 21의 상부 미드솔에서 확인한 기본 ENERZY 명칭입니다. 계열 전체를 가리키는 이름과 별도 물리적 폼을 구분합니다.",
+      "benefits": [
+        "인스파이어 21: 상층 ENERZY·뒤꿈치 NXT",
+        "라이더 29의 양층 NXT를 일반 ENERZY로 부르지 않기",
+        "미확인 수명·전 라인업 적용 주장 제외"
       ],
-      scienceExplanation:
-        'MIZUNO ENERZY는 미즈노의 기본 미드솔 폼으로, 부드러움·반발(리바운드)·내구성을 함께 추구합니다. Neo Vista 2, Neo Zen 등 최신 모델부터 Wave Inspire, Wave Horizon 등 안정화 라인까지 폭넓게 적용되어 미즈노 러닝화의 기반 기술로 자리 잡았습니다.',
-      usedInShoes: ['mizuno-wave-rider-29', 'mizuno-wave-inspire-21', 'mizuno-wave-rebellion-flash-2', 'mizuno-wave-horizon-8'],
-    },
-
-    // ─── 플레이트/구조 (Plate) ───
-    {
-      id: 'mizuno-wave',
-      name: 'MIZUNO WAVE',
-      nameKo: '미즈노 웨이브',
-      category: 'plate',
-      year: 1997,
-      description:
-        '자연의 파도에서 영감받은 미드솔 내 웨이브 형태 플레이트로, 한 구조에서 쿠셔닝과 안정성을 동시에 제공하는 미즈노의 시그니처 기술입니다.',
-      benefits: [
-        '하나의 구조로 쿠셔닝과 안정성 동시 제공',
-        '전방 추진과 부드러운 체중 이동 지원',
-        '1997년부터 이어온 27년 역사의 검증된 기술',
-        '모델별로 Parallel/Fan-shaped 등 형태 변형 적용',
+      "scienceExplanation": "2020년 공식 소재 발표는 기본 ENERZY와 CORE·LITE를 나누어 소개합니다. 이번 정확 모델 가운데 인스파이어 21 유럽 원문은 ENERZY 상부 미드솔과 NXT 뒤꿈치 웨지를 구체적으로 구분합니다. 라이더 29는 양층 NXT가 확인되므로 일반 ENERZY 부품을 추가하지 않았습니다. 스카이 9의 일반 기술 아이콘만으로 두 번째 폼의 정확 상표·원료를 확정하지도 않았습니다. 장기간 꺼지지 않는다거나 데일리 러너 모두에게 적합하다는 결과를 이 소재 명칭만으로 보장하지 않습니다.",
+      "usedInShoes": [
+        "mizuno-wave-inspire-21"
       ],
-      scienceExplanation:
-        'MIZUNO WAVE는 1997년에 소개된 미즈노의 시그니처 기술로, 미드솔 내부에 파도(Wave) 형태의 플레이트를 배치합니다. 이 구조가 착지 충격을 분산시켜 쿠셔닝을 제공하면서, 동시에 좌우 흔들림을 억제하여 안정성도 확보합니다. 모델에 따라 Parallel(평행), Fan-shaped(부채꼴) 등 다양한 형태로 변형 적용되며, Wave Rider, Wave Inspire 등 미즈노 대부분의 러닝화에 적용됩니다.',
-      usedInShoes: ['mizuno-wave-rider-29', 'mizuno-wave-inspire-21', 'mizuno-wave-sky-9', 'mizuno-wave-rebellion-flash-2', 'mizuno-wave-horizon-8'],
-    },
-    {
-      id: 'smooth-speed-plate',
-      name: 'Smooth Speed Plate',
-      nameKo: '스무스 스피드 플레이트',
-      category: 'plate',
-      year: 2023,
-      description:
-        '모델에 따라 유리섬유 인퓨즈드 웨이브 플레이트(Neo Vista)부터 3D 풀 카본 플레이트(Hyperwarp)까지, 용도별로 최적화된 미즈노의 스피드 플레이트 플랫폼입니다.',
-      benefits: [
-        '모델별 최적화된 플레이트 소재 적용',
-        'Neo Vista: 유리섬유 웨이브 플레이트로 안정적 추진',
-        'Hyperwarp: 3D 풀 카본 플레이트로 폭발적 추진',
-        '효율적인 에너지 전환으로 스피드 극대화',
-      ],
-      scienceExplanation:
-        'Smooth Speed Plate(SSP)는 미즈노의 스피드 플레이트 플랫폼 명칭으로, 같은 이름이지만 모델에 따라 소재와 형상이 다릅니다. Neo Vista 2에서는 "유리섬유 인퓨즈드 웨이브 플레이트(glass-fibre infused wave plate)"로, Hyperwarp Pure에서는 "3D 풀 카본 플레이트"로 공식 표기됩니다. 공통적으로 착지 에너지를 효율적으로 전환하여 전방 추진력을 극대화하는 역할을 합니다.',
-      usedInShoes: ['mizuno-wave-rebellion-flash-2', 'mizuno-wave-rebellion-flash-3'],
-    },
-
-    // ─── 안정화 (Stability) ───
-    {
-      id: 'smooth-speed-assist',
-      name: 'Smooth Speed Assist',
-      nameKo: '스무스 스피드 어시스트',
-      category: 'stability',
-      year: 2023,
-      description:
-        '레이싱에서 가져온 효율적인 러닝 폼(자세/전이)을 돕는 지오메트리로, 훈련 시 부담을 줄이고 부드러운 전환을 유도합니다.',
-      benefits: [
-        '레이싱 기술에서 파생된 효율적인 보폭 유도',
-        '착지에서 이륙까지 부드러운 전환',
-        '훈련 시 다리 부담 감소',
-        'Neo Zen, Neo Vista 등 최신 라인에 적용',
-      ],
-      scienceExplanation:
-        'Smooth Speed Assist는 미즈노의 레이싱 기술에서 파생된 지오메트리 컨셉입니다. 미드솔의 형상과 구조를 최적화하여 착지에서 이륙까지의 전환(Transition)을 부드럽게 만들고, 러너가 효율적인 러닝 폼을 유지하도록 돕습니다. Neo Zen, Neo Vista 2 등 미즈노의 최신 라인에서 핵심 기술로 적용됩니다.',
-      usedInShoes: ['mizuno-wave-rebellion-flash-2', 'mizuno-wave-rebellion-flash-3'],
-    },
-
-    // ─── 아웃솔 (Outsole) ───
-    {
-      id: 'x10',
-      name: 'X10',
-      nameKo: 'X10',
-      category: 'outsole',
-      year: 2015,
-      description:
-        '고충격 구간에서 뛰어난 내구성을 발휘하는 카본 러버 아웃솔로, 힐 스트라이크에서 안정적인 접지력을 제공합니다.',
-      benefits: [
-        '카본 러버로 뛰어난 내구성',
-        '힐 스트라이크 구간에서 안정적 접지력',
-        '고충격 부위에 전략적 배치',
-        '데일리 러닝에 충분한 수명',
-      ],
-      scienceExplanation:
-        'X10은 미즈노의 표준 카본 러버 아웃솔입니다. 고충격 구간, 특히 힐 스트라이크 부위에서 뛰어난 내구성과 접지력을 제공합니다. Wave Rider, Neo Vista 2 등 미즈노의 로드 러닝 라인업에 폭넓게 적용되어 데일리 러닝에 충분한 수명을 보장합니다.',
-      usedInShoes: ['mizuno-wave-rider-29', 'mizuno-wave-inspire-21', 'mizuno-wave-sky-9', 'mizuno-wave-horizon-8'],
+      "verification": {
+        "checkedAt": "2026-11-10",
+        "scope": "정확 모델·세대 제조사 원문의 폼·구조·판·아웃솔 명칭 확인. 공통 기술 카드와 지역별 충돌, 미확인 원료·임상 효과는 구분했습니다.",
+        "sources": [
+          {
+            "title": "Mizuno 공식 — MIZUNO ENERZY original material launch",
+            "url": "https://corp.mizuno.com/jp/news-release/2020/20200701",
+            "scope": "Full original; Core/Lite/base distinction, U4ic comparator, vertical compression and materials-only footnotes."
+          },
+          {
+            "title": "Mizuno 공식 — WAVE INSPIRE 21 J1GC254402",
+            "url": "https://emea.mizuno.com/eu/en/wave-inspire-21/J1GC254402.html",
+            "scope": "Exact Features: NXT heel wedge, ENERZY top midsole, support-type WAVE; AIRmesh/X10 icons and descriptions."
+          },
+          {
+            "title": "Mizuno 공식 — WAVE RIDER 29 launch",
+            "url": "https://corp.mizuno.com/jp/news-release/2025/20250808",
+            "scope": "Japanese original full article; two-layer NXT, supercritical process, WAVE and comparison footnotes."
+          },
+          {
+            "title": "Mizuno 공식 — Men’s Wave Sky 9",
+            "url": "https://usa.mizuno.com/running-wave-sky-9-mens",
+            "scope": "Exact model style411533; description and Technical details: multi-material Foam Wave, nitrogen NXT EVA version, X10 and Smooth Stretch Woven."
+          },
+          {
+            "title": "Mizuno 공식 — WAVE SKY 9 J1GC250202",
+            "url": "https://emea.mizuno.com/eu/en-be/wave-sky-9/J1GC250202.html",
+            "scope": "Exact Description/Features: nitrogen NXT upper midsole, FOAM WAVE, Smooth Stretch Woven. Generic Technology block separated."
+          }
+        ]
+      }
     },
     {
-      id: 'g3-outsole',
-      name: 'G3 Outsole',
-      nameKo: 'G3 아웃솔',
-      category: 'outsole',
-      year: 2022,
-      description:
-        'PU 레진 기반의 경량 아웃솔로, 레이싱 시 뛰어난 그립력을 제공하면서도 무게를 최소화합니다.',
-      benefits: [
-        'PU 레진 소재로 극한의 경량화',
-        '레이싱에 최적화된 그립 성능',
-        '고속 주행에서 미끄러짐 방지',
-        '스피드 라인 전용 설계',
+      "id": "mizuno-wave",
+      "name": "MIZUNO WAVE",
+      "nameKo": "미즈노 웨이브",
+      "category": "plate",
+      "description": "WAVE에는 별도 판을 쓰는 구조와 여러 폼으로 만드는 FOAM WAVE가 있습니다. 모든 WAVE를 같은 수지·형상의 판으로 설명하지 않습니다.",
+      "benefits": [
+        "스카이 9: 별도 수지판 대신 FOAM WAVE",
+        "비스타 3·플래시 3: 유리섬유 보강 나일론 WAVE",
+        "라이더 30: 시리즈 첫 전장 WAVE라는 공식 설명"
       ],
-      scienceExplanation:
-        'G3 Outsole은 PU(폴리우레탄) 레진 기반의 미즈노 레이싱 전용 아웃솔입니다. 일반 러버보다 가벼우면서도 고속 주행에서 필요한 접지력을 확보합니다. Wave Rebellion Pro 2, Hyperwarp Pure 등 미즈노의 스피드/레이싱 라인에 적용되어 레이스 당일 최고의 퍼포먼스를 지원합니다.',
-      usedInShoes: ['mizuno-wave-rebellion-flash-2', 'mizuno-wave-rebellion-flash-3'],
+      "scienceExplanation": "라이더·인스파이어 계열에서 확인한 WAVE 판은 모델별 지지 형상과 범위가 다릅니다. 라이더 30 일본 발표는 라이더 시리즈의 첫 전장 WAVE를 명시합니다. 비스타 3는 3D 전장 유리섬유 보강 나일론 WAVE, 플래시 3도 유리섬유 보강 나일론 판입니다. 반면 스카이 9의 FOAM WAVE는 여러 폼 소재의 구조이므로 별도 수지판이 있다는 뜻으로 바꾸지 않았습니다. 과거의 공통 Pebax 설명을 모든 현행 판의 재질로 일반화하지 않습니다. 하이퍼워프 퓨어의 카본 SSP를 별도 WAVE라는 이름으로 중복 연결할 근거도 확인하지 못했습니다.",
+      "usedInShoes": [
+        "mizuno-wave-rider-29",
+        "mizuno-wave-rider-30",
+        "mizuno-wave-inspire-21",
+        "mizuno-wave-inspire-22",
+        "mizuno-neo-vista-3",
+        "mizuno-wave-sky-9",
+        "mizuno-wave-rebellion-flash-3"
+      ],
+      "verification": {
+        "checkedAt": "2026-11-10",
+        "scope": "정확 모델·세대 제조사 원문의 폼·구조·판·아웃솔 명칭 확인. 공통 기술 카드와 지역별 충돌, 미확인 원료·임상 효과는 구분했습니다.",
+        "sources": [
+          {
+            "title": "Mizuno 공식 — WAVE RIDER 29 launch",
+            "url": "https://corp.mizuno.com/jp/news-release/2025/20250808",
+            "scope": "Japanese original full article; two-layer NXT, supercritical process, WAVE and comparison footnotes."
+          },
+          {
+            "title": "Mizuno 공식 — WAVE RIDER 30 launch",
+            "url": "https://corp.mizuno.com/jp/news-release/2026/20260610",
+            "scope": "Full Japanese original; supercritical top/ordinary bottom NXT, first full-length WAVE and changes."
+          },
+          {
+            "title": "Mizuno 공식 — WAVE INSPIRE 21 J1GC254402",
+            "url": "https://emea.mizuno.com/eu/en/wave-inspire-21/J1GC254402.html",
+            "scope": "Exact Features: NXT heel wedge, ENERZY top midsole, support-type WAVE; AIRmesh/X10 icons and descriptions."
+          },
+          {
+            "title": "Mizuno 공식 — WAVE INSPIRE 22 J1GD264427",
+            "url": "https://emea.mizuno.com/eu/en-es/wave-inspire-22/J1GD264427.html",
+            "scope": "Description/Sole/Support Type WAVE/Upper; live Technical Details; X10; SmoothRide distinct from Speed Assist."
+          },
+          {
+            "title": "Mizuno 공식 — MIZUNO NEO VISTA 3 launch",
+            "url": "https://corp.mizuno.com/jp/news-release/2026/20260511",
+            "scope": "Full Japanese original: top SCF NXT volume +12%, two-layer midsole, glass-fibre nylon 3D plate, SSA protocol, rubber grooves."
+          },
+          {
+            "title": "Mizuno 공식 — Men’s Wave Sky 9",
+            "url": "https://usa.mizuno.com/running-wave-sky-9-mens",
+            "scope": "Exact model style411533; description and Technical details: multi-material Foam Wave, nitrogen NXT EVA version, X10 and Smooth Stretch Woven."
+          },
+          {
+            "title": "Mizuno 공식 — WAVE REBELLION FLASH 3 launch",
+            "url": "https://corp.mizuno.com/jp/news-release/2025/20250722",
+            "scope": "Full Japanese original: XP top/NXT bottom, full-length glass-fibre reinforced nylon plate, Rilsan trade-name, SSA footnotes."
+          },
+          {
+            "title": "Mizuno 공식 — Mizuno Technology",
+            "url": "https://emea.mizuno.com/eu/en-gb/technology.html",
+            "scope": "WAVE variants, G3, X10, AIRmesh, ENERZY terms. Generic old Pebax statement not extrapolated to all eight current models."
+          }
+        ]
+      }
     },
-  ],
+    {
+      "id": "smooth-speed-plate",
+      "name": "Smooth Speed Plate",
+      "nameKo": "스무스 스피드 플레이트",
+      "category": "plate",
+      "description": "하이퍼워프 퓨어 초대에서 정확 상표를 확인한 3D 전장 카본판입니다. 추진을 돕는 다른 WAVE 판을 모두 SSP라고 부르지 않습니다.",
+      "benefits": [
+        "퓨어 초대: 3D full carbon SSP",
+        "비스타 3·플래시 3의 유리섬유 WAVE와 구분",
+        "판 강성 비교를 에너지 리턴 비율로 바꾸지 않기"
+      ],
+      "scienceExplanation": "하이퍼워프 출시문은 퓨어의 전장 카본 Smooth Speed Plate와 다른 모델의 카본 보강 나일론 판을 구분합니다. 정확 유럽 제품도 퓨어의 3D full carbon 명칭을 확인해 줍니다. 비스타 3와 플래시 3에서 판의 존재·재질을 확인했다고 해서 SSP라는 상표까지 확인한 것은 아니므로 이 목록에서 제외했습니다. 제조사의 전작 대비 판 강성 비교를 달리기 효율이나 기록 향상률로 읽지 않습니다. 퓨어 후속 세대의 폼·어퍼 정보도 초대 설명에 이식하지 않았습니다.",
+      "usedInShoes": [
+        "mizuno-hyperwarp-pure"
+      ],
+      "verification": {
+        "checkedAt": "2026-11-10",
+        "scope": "정확 모델·세대 제조사 원문의 폼·구조·판·아웃솔 명칭 확인. 공통 기술 카드와 지역별 충돌, 미확인 원료·임상 효과는 구분했습니다.",
+        "sources": [
+          {
+            "title": "Mizuno 공식 — HYPERWARP first-generation launch",
+            "url": "https://corp.mizuno.com/jp/news-release/2025/20251202",
+            "scope": "Full article with model sections kept separate. Pure lightweight XP/full carbon SSP; Pro carbon-reinforced nylon/SSA excluded from Pure."
+          },
+          {
+            "title": "Mizuno 공식 — HYPERWARP PURE J1GC268799",
+            "url": "https://emea.mizuno.com/eu/en-gb/hyperwarp-pure/J1GC268799.html",
+            "scope": "Exact first-generation Description/Technical details: XP PEBA Version, 3D full carbon SSP, G3, monofilament woven."
+          },
+          {
+            "title": "Mizuno 공식 — MIZUNO NEO VISTA 3 launch",
+            "url": "https://corp.mizuno.com/jp/news-release/2026/20260511",
+            "scope": "Full Japanese original: top SCF NXT volume +12%, two-layer midsole, glass-fibre nylon 3D plate, SSA protocol, rubber grooves."
+          },
+          {
+            "title": "Mizuno 공식 — WAVE REBELLION FLASH 3 launch",
+            "url": "https://corp.mizuno.com/jp/news-release/2025/20250722",
+            "scope": "Full Japanese original: XP top/NXT bottom, full-length glass-fibre reinforced nylon plate, Rilsan trade-name, SSA footnotes."
+          }
+        ]
+      }
+    },
+    {
+      "id": "smooth-speed-assist",
+      "name": "Smooth Speed Assist",
+      "nameKo": "스무스 스피드 어시스트",
+      "category": "midsole",
+      "description": "비스타 3와 플래시 3에서 확인한 밑창 형상 설계 개념입니다. 판 재질이나 과회내 지지 기술과 구분합니다.",
+      "benefits": [
+        "비스타 3·플래시 3의 정확 적용 확인",
+        "SmoothRide·SSP와 각각 다른 명칭",
+        "제조사 근육·힘줄 부담 지표와 임상 부상 결과는 별개"
+      ],
+      "scienceExplanation": "공식 출시문은 Smooth Speed Assist를 착지에서 이륙으로 이어지는 전환을 목표로 한 형상 설계로 설명합니다. 근육·힘줄 부담 관련 제조사 시험은 시속 12km, 중족·전족 착지 참가자에서 자사 SSA·비SSA 신발의 발목 관련 역학 지표를 비교한 조건입니다. 이 조건을 모든 뒤꿈치 착지 러너의 부상 예방·회복 촉진이나 반드시 달려야 하는 페이스로 일반화하지 않았습니다. 인스파이어 22의 SmoothRide를 같은 이름으로 합치지 않으며, 출시문에서 다른 하이퍼워프 모델의 SSA 문장을 퓨어에 옮기지 않습니다.",
+      "usedInShoes": [
+        "mizuno-neo-vista-3",
+        "mizuno-wave-rebellion-flash-3"
+      ],
+      "verification": {
+        "checkedAt": "2026-11-10",
+        "scope": "정확 모델·세대 제조사 원문의 폼·구조·판·아웃솔 명칭 확인. 공통 기술 카드와 지역별 충돌, 미확인 원료·임상 효과는 구분했습니다.",
+        "sources": [
+          {
+            "title": "Mizuno 공식 — MIZUNO NEO VISTA 3 launch",
+            "url": "https://corp.mizuno.com/jp/news-release/2026/20260511",
+            "scope": "Full Japanese original: top SCF NXT volume +12%, two-layer midsole, glass-fibre nylon 3D plate, SSA protocol, rubber grooves."
+          },
+          {
+            "title": "Mizuno 공식 — WAVE REBELLION FLASH 3 launch",
+            "url": "https://corp.mizuno.com/jp/news-release/2025/20250722",
+            "scope": "Full Japanese original: XP top/NXT bottom, full-length glass-fibre reinforced nylon plate, Rilsan trade-name, SSA footnotes."
+          },
+          {
+            "title": "Mizuno 공식 — Men’s Wave Rebellion Flash 3",
+            "url": "https://usa.mizuno.com/running-wave-rebellion-flash-3-mens/",
+            "scope": "Style411524 exact model; description and Technical details: glass-fibre nylon WAVE, SSA, engineered mesh, rubber outsole."
+          },
+          {
+            "title": "Mizuno 공식 — WAVE INSPIRE 22 J1GD264427",
+            "url": "https://emea.mizuno.com/eu/en-es/wave-inspire-22/J1GD264427.html",
+            "scope": "Description/Sole/Support Type WAVE/Upper; live Technical Details; X10; SmoothRide distinct from Speed Assist."
+          },
+          {
+            "title": "Mizuno 공식 — HYPERWARP first-generation launch",
+            "url": "https://corp.mizuno.com/jp/news-release/2025/20251202",
+            "scope": "Full article with model sections kept separate. Pure lightweight XP/full carbon SSP; Pro carbon-reinforced nylon/SSA excluded from Pure."
+          }
+        ]
+      }
+    },
+    {
+      "id": "x10",
+      "name": "X10",
+      "nameKo": "X10",
+      "category": "outsole",
+      "description": "라이더 29·30, 인스파이어 21·22, 비스타 3, 스카이 9에서 확인한 고무 아웃솔 명칭입니다. 카본 고무는 카본 섬유 판과 다릅니다.",
+      "benefits": [
+        "정확 원문에서 X10 명칭을 확인한 여섯 모델",
+        "카본 러버와 카본 플레이트 구분",
+        "고정 수명·젖은 노면 미끄럼 방지 보장 제외"
+      ],
+      "scienceExplanation": "제조사 기술 안내는 X10을 마모가 큰 부위를 고려한 내구성 지향 카본 고무로 설명합니다. 정확 모델별 제품에서 이름을 확인한 여섯 예시만 연결했습니다. 스카이 9는 지역에 따라 carbon rubber 또는 blown rubber X10이라는 표현을 쓰므로 이를 단일 배합의 상세 공시로 바꾸지 않았습니다. 플래시 3 미국 원문은 고무 아웃솔을 명시하지만 X10 상표까지 확인한 것은 아니므로 추가하지 않습니다. 아웃솔 상표만으로 일정 거리의 수명이나 비·유분·매끈한 노면에서 미끄러지지 않는다는 보장은 할 수 없습니다.",
+      "usedInShoes": [
+        "mizuno-wave-rider-29",
+        "mizuno-wave-rider-30",
+        "mizuno-wave-inspire-21",
+        "mizuno-wave-inspire-22",
+        "mizuno-neo-vista-3",
+        "mizuno-wave-sky-9"
+      ],
+      "verification": {
+        "checkedAt": "2026-11-10",
+        "scope": "정확 모델·세대 제조사 원문의 폼·구조·판·아웃솔 명칭 확인. 공통 기술 카드와 지역별 충돌, 미확인 원료·임상 효과는 구분했습니다.",
+        "sources": [
+          {
+            "title": "Mizuno 공식 — Men’s Wave Rider 29",
+            "url": "https://usa.mizuno.com/running-wave-rider-29-mens",
+            "scope": "Style 411538 exact standard model; description and Technical details: nitrogen-infused EVA version, jacquard mesh, X10."
+          },
+          {
+            "title": "Mizuno 공식 — Men’s Wave Rider 30",
+            "url": "https://usa.mizuno.com/running-wave-rider-30-mens/",
+            "scope": "Style 411621; main description, full-length WAVE, nitrogen NXT EVA-version technical entry; jacquard mesh and X10."
+          },
+          {
+            "title": "Mizuno 공식 — WAVE INSPIRE 21 J1GC254402",
+            "url": "https://emea.mizuno.com/eu/en/wave-inspire-21/J1GC254402.html",
+            "scope": "Exact Features: NXT heel wedge, ENERZY top midsole, support-type WAVE; AIRmesh/X10 icons and descriptions."
+          },
+          {
+            "title": "Mizuno 공식 — WAVE INSPIRE 22 J1GD264427",
+            "url": "https://emea.mizuno.com/eu/en-es/wave-inspire-22/J1GD264427.html",
+            "scope": "Description/Sole/Support Type WAVE/Upper; live Technical Details; X10; SmoothRide distinct from Speed Assist."
+          },
+          {
+            "title": "Mizuno 공식 — MIZUNO NEO VISTA 3 J1GM261051",
+            "url": "https://emea.mizuno.com/eu/en-gb/mizuno-neo-vista-3/J1GM261051.html",
+            "scope": "Exact Description/Features/Technical Details; NXT top; full-length 3D WAVE; one-piece knit; SSA; X10."
+          },
+          {
+            "title": "Mizuno 공식 — Men’s Wave Sky 9",
+            "url": "https://usa.mizuno.com/running-wave-sky-9-mens",
+            "scope": "Exact model style411533; description and Technical details: multi-material Foam Wave, nitrogen NXT EVA version, X10 and Smooth Stretch Woven."
+          },
+          {
+            "title": "Mizuno 공식 — WAVE SKY 9 J1GC2502",
+            "url": "https://mizuno.com.au/products/wave-sky-9",
+            "scope": "Exact specification block: Foam Wave, NXT nitrogen-infused, blown rubber X10, Smooth Stretch Woven."
+          },
+          {
+            "title": "Mizuno 공식 — Mizuno Technology",
+            "url": "https://emea.mizuno.com/eu/en-gb/technology.html",
+            "scope": "WAVE variants, G3, X10, AIRmesh, ENERZY terms. Generic old Pebax statement not extrapolated to all eight current models."
+          }
+        ]
+      }
+    },
+    {
+      "id": "g3-outsole",
+      "name": "G3 Outsole",
+      "nameKo": "G3 아웃솔",
+      "category": "outsole",
+      "description": "하이퍼워프 퓨어 초대에서 확인한 경량 접지용 아웃솔 명칭입니다. 이번 정확 원문에서 원료 수지의 배합은 확인하지 못했습니다.",
+      "benefits": [
+        "퓨어 초대 G3 적용 확인",
+        "미확인 PU 레진·플래시 3 적용 제거",
+        "접지 설계와 모든 고속·젖은 노면의 안전 보장은 다름"
+      ],
+      "scienceExplanation": "퓨어 초대 유럽 제품과 미즈노 기술 안내에서 G3 명칭을 확인했습니다. 읽은 자료는 가벼움과 접지를 목표로 하지만 PU 수지의 정확 배합을 공시하지 않아 기존 폴리우레탄 단정은 제거했습니다. 플래시 3의 일본·미국·유럽 원문은 G3 적용을 확인해 주지 않으며 충돌하는 지역 문구는 근거로 채택하지 않았습니다. 이번에 재확인하지 않은 플래시 2의 연결도 보류했습니다. 레이싱용이라는 설명을 모든 고속 주행에서의 미끄럼 방지나 최고의 경기 결과로 보장하지 않습니다.",
+      "usedInShoes": [
+        "mizuno-hyperwarp-pure"
+      ],
+      "verification": {
+        "checkedAt": "2026-11-10",
+        "scope": "정확 모델·세대 제조사 원문의 폼·구조·판·아웃솔 명칭 확인. 공통 기술 카드와 지역별 충돌, 미확인 원료·임상 효과는 구분했습니다.",
+        "sources": [
+          {
+            "title": "Mizuno 공식 — HYPERWARP PURE J1GC268799",
+            "url": "https://emea.mizuno.com/eu/en-gb/hyperwarp-pure/J1GC268799.html",
+            "scope": "Exact first-generation Description/Technical details: XP PEBA Version, 3D full carbon SSP, G3, monofilament woven."
+          },
+          {
+            "title": "Mizuno 공식 — Mizuno Technology",
+            "url": "https://emea.mizuno.com/eu/en-gb/technology.html",
+            "scope": "WAVE variants, G3, X10, AIRmesh, ENERZY terms. Generic old Pebax statement not extrapolated to all eight current models."
+          },
+          {
+            "title": "Mizuno 공식 — WAVE REBELLION FLASH 3 launch",
+            "url": "https://corp.mizuno.com/jp/news-release/2025/20250722",
+            "scope": "Full Japanese original: XP top/NXT bottom, full-length glass-fibre reinforced nylon plate, Rilsan trade-name, SSA footnotes."
+          },
+          {
+            "title": "Mizuno 공식 — Men’s Wave Rebellion Flash 3",
+            "url": "https://usa.mizuno.com/running-wave-rebellion-flash-3-mens/",
+            "scope": "Style411524 exact model; description and Technical details: glass-fibre nylon WAVE, SSA, engineered mesh, rubber outsole."
+          },
+          {
+            "title": "Mizuno 공식 — WAVE REBELLION FLASH 3 J1GC253501",
+            "url": "https://emea.mizuno.com/eu/en-gb/wave-rebellion-flash-3/J1GC253501.html",
+            "scope": "Description/Features: XP top, NXT bottom, WAVE extended to forefoot, SSA; shared NXT card conflict separated."
+          }
+        ]
+      }
+    }
+  ]
 };

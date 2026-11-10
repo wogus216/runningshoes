@@ -1,58 +1,195 @@
 import type { Brand } from '@/types/brand';
 
 export const merrellBrand: Brand = {
-  id: 'merrell',
-  name: 'Merrell',
-  nameKo: '머렐',
-  tagline: 'The simple power of being outside',
-  description:
-    '1981년 로시뇰(Rossignol) 스키 회사 임원이던 클라크 마티스(Clark Matis)와 존 슈바이처(John Schweizer)가 하이킹 부츠 브랜드로 세운 머렐은, 1997년부터 울버린 월드와이드(Wolverine World Wide)의 자회사입니다. 모압(Moab) 하이킹화로 잘 알려진 아웃도어 신발 브랜드이며, 트레일러닝에서는 Vibram 아웃솔을 폭넓게 쓰는 어질리티 피크, 제로드롭 베어풋 라인인 트레일 글러브, 카본 플레이트 레이서 MTL 스피드아크 피크까지 라인업을 갖추고 있습니다.',
-  founded: 1981,
-  website: 'https://merrellkorea.co.kr',
-  technologies: [
+  "id": "merrell",
+  "name": "Merrell",
+  "nameKo": "머렐",
+  "tagline": "The simple power of being outside",
+  "description": "어질리티 피크, 트레일 글러브, MTL 스피드아크 피크 등 트레일러닝 제품을 만드는 아웃도어 브랜드입니다. FloatPro 폼, FlexPlate 판, FLEXconnect 홈 설계, Vibram 고무 변형은 서로 구분해야 합니다. 정확 세대에서 확인한 부품과 소재를 아래에 정리했습니다.",
+  "founded": 1981,
+  "website": "https://merrellkorea.co.kr",
+  "technologies": [
     {
-      id: 'merrell-floatpro',
-      name: 'FloatPro',
-      nameKo: '플로트프로',
-      category: 'midsole',
-      description: '머렐의 자체 경량 미드솔 폼으로, 트레일러닝 라인 전반에 쓰입니다.',
-      benefits: ['가벼운 무게', '긴 시간 유지되는 쿠셔닝(공식 설명)', '모델별로 다른 폼과 조합'],
-      scienceExplanation:
-        '머렐 공식 테크 페이지는 FloatPro를 "불필요한 무게 없이 오래가는 쿠셔닝·편안함·에너지 리턴을 주는 자체 경량 폼"으로 설명합니다. RunRepeat 랩은 이를 EVA 계열 폼으로 분류하며, 어질리티 피크 6에서 에너지 리턴 힐 41.9%·전족 47.0%, 트레일 글러브 8에서 51.6~51.7%로 트레일 평균(59.7%)보다 낮게 측정했습니다. MTL 스피드아크 피크는 FloatPro를 하층에 두고 PEBA 폼을 상층에 올려 에너지 리턴을 61.9~64.1%까지 끌어올렸습니다.',
-      usedInShoes: ['merrell-agility-peak-6', 'merrell-trail-glove-8', 'merrell-mtl-speedarc-peak'],
+      "id": "merrell-floatpro",
+      "name": "FloatPro",
+      "nameKo": "플로트프로",
+      "category": "midsole",
+      "description": "어질리티 피크 6·트레일 글러브 8·MTL 스피드아크 피크에서 확인한 경량 폼 명칭입니다. 제조사 원문에서 정확 고분자 배합은 확인하지 못했습니다.",
+      "benefits": [
+        "세 모델의 FloatPro 적용 확인",
+        "스피드아크 피크: 별도 PEBA 폼과 조합",
+        "PEBA·FloatPro 상하 배치는 미확인"
+      ],
+      "scienceExplanation": "머렐의 공식 기술 안내는 자체 경량 폼으로 설명하지만 이번 정확 제품의 원료를 EVA로 확정하지는 않습니다. 스피드아크 피크는 FloatPro와 PEBA 조합을 확인했으나 읽은 원문이 두 폼의 상하 위치를 명시하지 않아 기존 배치 단정은 제거했습니다. 이 제품의 TPEE는 풋베드 설명으로 미드솔 원료와 별개입니다. 트레일 글러브 8의 EVA 인솔이나 어질리티 6의 PU 풋베드도 FloatPro 원료 근거로 옮기지 않습니다. 동일 상표가 동일 두께·밀도·독립 에너지 리턴을 뜻하지 않습니다.",
+      "usedInShoes": [
+        "merrell-agility-peak-6",
+        "merrell-trail-glove-8",
+        "merrell-mtl-speedarc-peak"
+      ],
+      "verification": {
+        "checkedAt": "2026-11-10",
+        "scope": "정확 모델·세대의 제조사 명칭·재료·구성 확인. 미공개 원료, 비교 조건, 과거 원문과 현재 접속 상태를 구분했습니다.",
+        "sources": [
+          {
+            "title": "Merrell 공식 — agility6",
+            "url": "https://www.merrell.com/US/en/agility-peak-6/60949M.html",
+            "scope": "ExactregularAgilityPeak6 men60949M: FloatPro, full-lengthFLEXconnectdual-directional grooves, forefootrockplate/underfootshieldwithmaterialundisclosed, Megagrip+TractionLug, mesh/synthetic/TPUupper,5%recycledPUremovablefootbed. UpperTPUisnotplateTPU."
+          },
+          {
+            "title": "Merrell 공식 — glove8",
+            "url": "https://www.merrell.com/US/en/trail-glove-8/61055M.html",
+            "scope": "ExactTrailGlove8 men61055M: thinFloatPro, FlexConnect, MerrellBarefoot2, VibramTC5+, mesh/TPUupper,burritotongue, integratedEVAinsole30%recycled,0mmdrop. InsoleEVAdoesnotdiscloseFloatProchemistry."
+          },
+          {
+            "title": "Merrell 공식 — speedarc-no",
+            "url": "https://www.merrell.com/NO/en_NO/mtl-speedarc-peak/61332U.html",
+            "scope": "ExactMTLSpeedarcPeak61332U currentJ00005583: CarbonFlexPlate, dualdensityFloatProandPEBAfoam, MatryxKevlar/high-tenacitypolyamide singlelayer, TPEEfootbed, MegagripElite. Noofficiallayerposition,platefraction/length disclosed."
+          },
+          {
+            "title": "Merrell 공식 — speedarc-se",
+            "url": "https://www.merrell.com/SE/se_SE/mtl-speedarc-peak/61332U.html",
+            "scope": "Exact61332U SE webbody explicitlySpeedARCmidsoleSystemwithFloatPro+PEBA,CarbonFlexPlate,MatryxKevlar/polyamide,TPEE,Eliteoutsole. DirectHTMLlistsseparateFloatPro/PEBAbulletswithoutlayerpositions; preservelabelvariance."
+          },
+          {
+            "title": "Merrell 공식 — merrell-tech",
+            "url": "https://www.merrell.com/US/en/technologies/",
+            "scope": "Officialgenerictech: FloatProownlightweightfoam(noEVAformula), FlexPlateembeddedlightweightplate(nofixedmaterial), FlexConnectgroove-basedmidsole, rockplateprotectivelayer, MatryxKevlarreinforcement; VibramMegagrip/TC5+/TractionLug distinct. Morphexnotfound."
+          }
+        ]
+      }
     },
     {
-      id: 'merrell-flexplate',
-      name: 'FlexPlate',
-      nameKo: '플렉스플레이트',
-      category: 'plate',
-      description: '미드솔에 넣은 경량 플레이트로, 유연성을 유지하면서 안정성·보호·추진 효율을 높이는 머렐의 플레이트 기술입니다.',
-      benefits: ['불규칙한 노면에서 비틀림 억제(공식 설명)', '돌 보호', '카본 버전은 추진력 보조'],
-      scienceExplanation:
-        '머렐 공식 테크 페이지는 FlexPlate를 "유연성을 유지하면서 안정성과 보호를 높이고, 고르지 않은 지형에서 비틀림을 막아 움직임 효율을 높이는 경량 플레이트"로 설명합니다. MTL 스피드아크 피크에는 카본 버전이 들어가며, RunRepeat가 신발을 잘라 확인한 결과 3/4 길이에 전족부가 두 갈래로 갈라진 형태였습니다. 갈라진 앞부분이 바위 위에서 앞발이 노면에 맞춰 휘게 해, 통짜 카본보다 덜 딱딱하다는 것이 랩의 평가입니다(굽힘 16.7N, 비틀림 16.9Nm로 트레일 평균과 비슷).',
-      usedInShoes: ['merrell-mtl-speedarc-peak'],
+      "id": "merrell-flexplate",
+      "name": "FlexPlate",
+      "nameKo": "플렉스플레이트",
+      "category": "plate",
+      "description": "MTL 스피드아크 피크에서 Carbon FlexPlate라는 정확 명칭을 확인했습니다. FLEXconnect 홈 설계와 일반 보호판은 별개입니다.",
+      "benefits": [
+        "스피드아크 피크: Carbon FlexPlate",
+        "어질리티 6의 앞발 보호판은 정확 상표·재질 미확인",
+        "판 길이·갈래를 제조사 미공개 상태에서 단정하지 않기"
+      ],
+      "scienceExplanation": "일반 기술 안내는 FlexPlate를 지지·보호를 목표로 미드솔에 넣는 경량 판으로 설명합니다. 스피드아크 피크 정확 제품은 Carbon FlexPlate를 명시하지만 길이·갈래·수지 배합은 이번 제조사 원문에서 확인하지 못했습니다. 어질리티 피크 6의 앞발 rock plate는 확인했으나 FlexPlate 상표나 카본·TPU 재질의 확인으로 바꾸지 않았습니다. 어질리티 6와 트레일 글러브 8의 FLEXconnect는 홈을 이용한 미드솔 설계이므로 판과 구분합니다. 이전 랩 수치·절개 관찰을 이번 제조사 확인 결과로 섞지 않았습니다.",
+      "usedInShoes": [
+        "merrell-mtl-speedarc-peak"
+      ],
+      "verification": {
+        "checkedAt": "2026-11-10",
+        "scope": "정확 모델·세대의 제조사 명칭·재료·구성 확인. 미공개 원료, 비교 조건, 과거 원문과 현재 접속 상태를 구분했습니다.",
+        "sources": [
+          {
+            "title": "Merrell 공식 — speedarc-no",
+            "url": "https://www.merrell.com/NO/en_NO/mtl-speedarc-peak/61332U.html",
+            "scope": "ExactMTLSpeedarcPeak61332U currentJ00005583: CarbonFlexPlate, dualdensityFloatProandPEBAfoam, MatryxKevlar/high-tenacitypolyamide singlelayer, TPEEfootbed, MegagripElite. Noofficiallayerposition,platefraction/length disclosed."
+          },
+          {
+            "title": "Merrell 공식 — speedarc-se",
+            "url": "https://www.merrell.com/SE/se_SE/mtl-speedarc-peak/61332U.html",
+            "scope": "Exact61332U SE webbody explicitlySpeedARCmidsoleSystemwithFloatPro+PEBA,CarbonFlexPlate,MatryxKevlar/polyamide,TPEE,Eliteoutsole. DirectHTMLlistsseparateFloatPro/PEBAbulletswithoutlayerpositions; preservelabelvariance."
+          },
+          {
+            "title": "Merrell 공식 — agility6",
+            "url": "https://www.merrell.com/US/en/agility-peak-6/60949M.html",
+            "scope": "ExactregularAgilityPeak6 men60949M: FloatPro, full-lengthFLEXconnectdual-directional grooves, forefootrockplate/underfootshieldwithmaterialundisclosed, Megagrip+TractionLug, mesh/synthetic/TPUupper,5%recycledPUremovablefootbed. UpperTPUisnotplateTPU."
+          },
+          {
+            "title": "Merrell 공식 — glove8",
+            "url": "https://www.merrell.com/US/en/trail-glove-8/61055M.html",
+            "scope": "ExactTrailGlove8 men61055M: thinFloatPro, FlexConnect, MerrellBarefoot2, VibramTC5+, mesh/TPUupper,burritotongue, integratedEVAinsole30%recycled,0mmdrop. InsoleEVAdoesnotdiscloseFloatProchemistry."
+          },
+          {
+            "title": "Merrell 공식 — merrell-tech",
+            "url": "https://www.merrell.com/US/en/technologies/",
+            "scope": "Officialgenerictech: FloatProownlightweightfoam(noEVAformula), FlexPlateembeddedlightweightplate(nofixedmaterial), FlexConnectgroove-basedmidsole, rockplateprotectivelayer, MatryxKevlarreinforcement; VibramMegagrip/TC5+/TractionLug distinct. Morphexnotfound."
+          }
+        ]
+      }
     },
     {
-      id: 'merrell-vibram',
-      name: 'Vibram Outsole (Megagrip · TC5+ · Traction Lug)',
-      nameKo: '비브람 아웃솔',
-      category: 'outsole',
-      description: '머렐 트레일러닝화 대부분에 쓰이는 Vibram 고무 아웃솔로, 모델별로 Megagrip·Megagrip Elite·TC5+ 컴파운드와 Traction Lug 설계를 조합합니다.',
-      benefits: ['젖은 노면·마른 노면 접지력', '아웃솔 마모 저항', '러그 표면 돌기로 접지 면적 확대(Traction Lug)'],
-      scienceExplanation:
-        '머렐 공식 테크 페이지는 Vibram Traction Lug가 그립과 접지 면적을 늘리고 진흙·이물질을 털어내도록 설계됐으며, Megagrip과 TC5+가 젖은 노면과 마른 노면 모두에서 접지력을 준다고 설명합니다. RunRepeat 실측 접지력 계수는 어질리티 피크 6(Megagrip) 0.64, 트레일 글러브 8(TC5+) 0.69, MTL 스피드아크 피크(Megagrip Elite) 1.02였고(트레일 평균 0.68), 아웃솔 마모는 0.6~0.8mm로 모두 트레일 평균(0.9mm)보다 적었습니다.',
-      usedInShoes: ['merrell-agility-peak-6', 'merrell-trail-glove-8', 'merrell-mtl-speedarc-peak'],
+      "id": "merrell-vibram",
+      "name": "Vibram Outsole (Megagrip · TC5+ · Traction Lug)",
+      "nameKo": "비브람 아웃솔",
+      "category": "outsole",
+      "description": "모델에 따라 Megagrip·TC5+·Megagrip Elite를 구분해 쓰는 Vibram 고무 아웃솔입니다. 러그 설계도 정확 모델별로 확인합니다.",
+      "benefits": [
+        "어질리티 6: Megagrip·Traction Lug",
+        "트레일 글러브 8: TC5+",
+        "MTL 스피드아크 피크: Megagrip Elite"
+      ],
+      "scienceExplanation": "공식 어질리티 피크 6는 Megagrip과 Traction Lug, 트레일 글러브 8은 TC5+, MTL 스피드아크 피크는 Megagrip Elite를 명시합니다. 모든 Vibram 적용 제품에 Elite 컴파운드나 Traction Lug가 들어간다고 일반화하지 않습니다. 제조사 기술 안내가 설명하는 마찰·배출·접지 설계와 실제 젖은 바위·진흙에서의 안전은 구분해야 합니다. 다시 원문을 대조하지 않은 랩 마찰계수·마모 수치를 브랜드 공통 값으로 사용하지 않았습니다. 정확 고무 배합이나 동일 거리의 수명을 확인한 범위는 아닙니다.",
+      "usedInShoes": [
+        "merrell-agility-peak-6",
+        "merrell-trail-glove-8",
+        "merrell-mtl-speedarc-peak"
+      ],
+      "verification": {
+        "checkedAt": "2026-11-10",
+        "scope": "정확 모델·세대의 제조사 명칭·재료·구성 확인. 미공개 원료, 비교 조건, 과거 원문과 현재 접속 상태를 구분했습니다.",
+        "sources": [
+          {
+            "title": "Merrell 공식 — agility6",
+            "url": "https://www.merrell.com/US/en/agility-peak-6/60949M.html",
+            "scope": "ExactregularAgilityPeak6 men60949M: FloatPro, full-lengthFLEXconnectdual-directional grooves, forefootrockplate/underfootshieldwithmaterialundisclosed, Megagrip+TractionLug, mesh/synthetic/TPUupper,5%recycledPUremovablefootbed. UpperTPUisnotplateTPU."
+          },
+          {
+            "title": "Merrell 공식 — glove8",
+            "url": "https://www.merrell.com/US/en/trail-glove-8/61055M.html",
+            "scope": "ExactTrailGlove8 men61055M: thinFloatPro, FlexConnect, MerrellBarefoot2, VibramTC5+, mesh/TPUupper,burritotongue, integratedEVAinsole30%recycled,0mmdrop. InsoleEVAdoesnotdiscloseFloatProchemistry."
+          },
+          {
+            "title": "Merrell 공식 — speedarc-no",
+            "url": "https://www.merrell.com/NO/en_NO/mtl-speedarc-peak/61332U.html",
+            "scope": "ExactMTLSpeedarcPeak61332U currentJ00005583: CarbonFlexPlate, dualdensityFloatProandPEBAfoam, MatryxKevlar/high-tenacitypolyamide singlelayer, TPEEfootbed, MegagripElite. Noofficiallayerposition,platefraction/length disclosed."
+          },
+          {
+            "title": "Merrell 공식 — merrell-tech",
+            "url": "https://www.merrell.com/US/en/technologies/",
+            "scope": "Officialgenerictech: FloatProownlightweightfoam(noEVAformula), FlexPlateembeddedlightweightplate(nofixedmaterial), FlexConnectgroove-basedmidsole, rockplateprotectivelayer, MatryxKevlarreinforcement; VibramMegagrip/TC5+/TractionLug distinct. Morphexnotfound."
+          },
+          {
+            "title": "Merrell 공식 — agility6-press",
+            "url": "https://www.merrell.com/US/en/merrell-expands-skyrunner-world-series-partnership-with-us-national-series-launch-agility-peak-6/",
+            "scope": "Dated2026-02-06officialAgilityPeak6launch: updatedFloatPro/full-lengthFLEXconnect, Megagrip5mmlugs, engineeredmesh/reinforcedtoe/gussetedtongue. Standardversion, notGTX/BOAcollaboration."
+          }
+        ]
+      }
     },
     {
-      id: 'merrell-matryx',
-      name: 'Matryx',
-      nameKo: '매트릭스',
-      category: 'upper',
-      description: '케블라 섬유를 포함한 고강도 원사로 짠 단일층 어퍼 소재로, 내구성·통기성·경량성의 균형을 노립니다.',
-      benefits: ['찢김·마모 저항', '높은 통기성', '가벼운 단일층 구조'],
-      scienceExplanation:
-        '머렐 공식 테크 페이지는 Matryx를 "케블라 등 고강도 원사로 보강한 직조 어퍼"로 설명하고, MTL 스피드아크 피크 공식 제품 페이지는 케블라와 고강도 폴리아미드 멀티필라멘트를 한 겹으로 짰다고 밝힙니다. RunRepeat 랩에서 이 어퍼는 통기성 79 BR(트레일 평균 71 BR), 3시간 시험 후 건조율 65%(평균 51%)로 측정됐습니다.',
-      usedInShoes: ['merrell-mtl-speedarc-peak'],
-    },
-  ],
+      "id": "merrell-matryx",
+      "name": "Matryx",
+      "nameKo": "매트릭스",
+      "category": "upper",
+      "description": "MTL 스피드아크 피크에서 케블라와 고강도 폴리아미드로 짠 단일층 어퍼로 확인했습니다. 정확 섬유 비율은 공개하지 않습니다.",
+      "benefits": [
+        "정확 제품의 Kevlar·고강도 polyamide 명시",
+        "케블라 보강과 카본판은 별도 부품",
+        "통기·건조 성능을 다른 Matryx 모델에 복사하지 않기"
+      ],
+      "scienceExplanation": "스피드아크 피크의 노르웨이·스웨덴 공식 제품은 Kevlar와 고강도 polyamide 멀티필라멘트를 사용한 단일층 Matryx 어퍼를 설명합니다. 고강도 섬유로 보강한다는 제조사 설명과 모든 사용 조건에서의 찢김 방지·쾌적함 보장은 다릅니다. 같은 페이지의 일반 가죽 관리 문구를 실제 가죽 어퍼 구성으로 바꾸지 않았습니다. 원문이 공개하지 않은 섬유 비율이나 다른 세대의 통기·건조 실측치를 이 소재 전체의 속성으로 붙이지 않았습니다.",
+      "usedInShoes": [
+        "merrell-mtl-speedarc-peak"
+      ],
+      "verification": {
+        "checkedAt": "2026-11-10",
+        "scope": "정확 모델·세대의 제조사 명칭·재료·구성 확인. 미공개 원료, 비교 조건, 과거 원문과 현재 접속 상태를 구분했습니다.",
+        "sources": [
+          {
+            "title": "Merrell 공식 — speedarc-no",
+            "url": "https://www.merrell.com/NO/en_NO/mtl-speedarc-peak/61332U.html",
+            "scope": "ExactMTLSpeedarcPeak61332U currentJ00005583: CarbonFlexPlate, dualdensityFloatProandPEBAfoam, MatryxKevlar/high-tenacitypolyamide singlelayer, TPEEfootbed, MegagripElite. Noofficiallayerposition,platefraction/length disclosed."
+          },
+          {
+            "title": "Merrell 공식 — speedarc-se",
+            "url": "https://www.merrell.com/SE/se_SE/mtl-speedarc-peak/61332U.html",
+            "scope": "Exact61332U SE webbody explicitlySpeedARCmidsoleSystemwithFloatPro+PEBA,CarbonFlexPlate,MatryxKevlar/polyamide,TPEE,Eliteoutsole. DirectHTMLlistsseparateFloatPro/PEBAbulletswithoutlayerpositions; preservelabelvariance."
+          },
+          {
+            "title": "Merrell 공식 — merrell-tech",
+            "url": "https://www.merrell.com/US/en/technologies/",
+            "scope": "Officialgenerictech: FloatProownlightweightfoam(noEVAformula), FlexPlateembeddedlightweightplate(nofixedmaterial), FlexConnectgroove-basedmidsole, rockplateprotectivelayer, MatryxKevlarreinforcement; VibramMegagrip/TC5+/TractionLug distinct. Morphexnotfound."
+          }
+        ]
+      }
+    }
+  ]
 };

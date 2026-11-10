@@ -1,48 +1,105 @@
 import type { Brand } from '@/types/brand';
 
 export const underArmourBrand: Brand = {
-  id: 'under-armour',
-  name: 'Under Armour',
-  nameKo: '언더아머',
-  tagline: 'The Only Way Is Through',
-  description:
-    '1996년 케빈 플랭크가 할머니 집 지하실에서 땀을 빨리 말리는 기능성 티셔츠로 시작한 미국 스포츠 브랜드로, 1998년 메릴랜드주 볼티모어로 본사를 옮겼습니다. 러닝화에서는 2018년 선보인 UA HOVR 쿠셔닝과 고무 아웃솔 없이 폼이 바닥을 겸하는 UA Flow가 핵심 기술이며, 최신 라인은 HOVR+ 폼을 쓰는 인피니트(쿠션 데일리)와 카본 플레이트 레이싱 라인 벨로시티로 나뉩니다. 한국에서는 언더아머코리아가 공식 온라인스토어를 운영합니다.',
-  founded: 1996,
-  headquarters: '미국 메릴랜드주 볼티모어',
-  website: 'https://www.underarmour.co.kr',
-  technologies: [
+  "id": "under-armour",
+  "name": "Under Armour",
+  "nameKo": "언더아머",
+  "tagline": "The Only Way Is Through",
+  "description": "인피니트 엘리트 2의 HOVR+와 벨로시티 엘리트 2의 Flow·biopebax·카본판을 구분해 안내합니다. Flow는 별도 고무 아웃솔을 없앤 쿠셔닝·접지 구조이며 폼의 고분자나 정확 층 배치는 상표만으로 추정하지 않았습니다.",
+  "founded": 1996,
+  "headquarters": "미국 메릴랜드주 볼티모어",
+  "website": "https://www.underarmour.co.kr",
+  "technologies": [
     {
-      id: 'under-armour-hovr-plus',
-      name: 'UA HOVR+',
-      nameKo: 'HOVR+',
-      category: 'midsole',
-      description: '언더아머가 "가장 새롭고 탄력 있는 HOVR"라고 소개하는 HOVR 쿠셔닝의 최신 버전입니다.',
-      benefits: ['충격 흡수', '높은 에너지 리턴', '장거리 쿠션 유지'],
-      scienceExplanation:
-        '언더아머 공식 설명에 따르면 UA HOVR는 "부드럽거나 탄력 있거나 둘 중 하나인 기존 쿠션과 달리 둘 다를 갖춘" 쿠셔닝으로, 착지 때 에너지를 되돌려 앞으로 밀어 줍니다. HOVR+는 그 최신·고탄성 버전으로 인피니트 엘리트 2에 풀사이즈로 들어갔고, RunRepeat 실측 에너지 리턴은 힐 72.6%·전족부 74.8%입니다.',
-      usedInShoes: ['under-armour-infinite-elite-2'],
+      "id": "under-armour-hovr-plus",
+      "name": "UA HOVR+",
+      "nameKo": "HOVR+",
+      "category": "midsole",
+      "description": "인피니트 엘리트 2의 전장 쿠셔닝에서 확인한 폼 명칭입니다. 기본 HOVR나 Flow와 같은 원료라고 추정하지 않습니다.",
+      "benefits": [
+        "정확 인피니트 엘리트 2의 HOVR+ 확인",
+        "원료 고분자·발포 공정은 미공개",
+        "일반 HOVR 설명·다른 세대 실측을 합치지 않기"
+      ],
+      "scienceExplanation": "인피니트 엘리트 2 3028169 공식 제품은 전장 UA HOVR+ 쿠셔닝과 별도 경량 고무 아웃솔을 설명합니다. 읽은 정확 원문에서 원료 고분자와 공정을 확정하지 못해 PEBA·EVA·질소 주입을 임의로 지정하지 않았습니다. 일반 HOVR의 과거 소개와 HOVR+를 하나의 재료 검증으로 합치지 않습니다. 부드러움·반응성은 제조사 설계 목표이며 모든 러너의 장거리 쿠션 유지나 실제 에너지 리턴을 보장하지 않습니다. 기존 랩 숫자는 이번 원문 확인 범위와 분리해 제외했습니다.",
+      "usedInShoes": [
+        "under-armour-infinite-elite-2"
+      ],
+      "verification": {
+        "checkedAt": "2026-11-10",
+        "scope": "정확 제조사 모델·세대의 명칭과 구성에 한정합니다. 원료·구조 미공개, 자료 유형, 변형 모델의 차이를 구분했습니다.",
+        "sources": [
+          {
+            "title": "Under Armour — uaInfinite",
+            "url": "https://www.underarmour.com/en-us/p/ua_infinite_elite_2_mens_running_shoes/3028169.html?dwvar_3028169_color=101&dwvar_3028169_size=11",
+            "scope": "exact3028169 standardInfiniteElite2 own ProductDetails"
+          }
+        ]
+      }
     },
     {
-      id: 'under-armour-flow',
-      name: 'UA Flow',
-      nameKo: 'UA 플로우',
-      category: 'outsole',
-      description: '고무 아웃솔 없이 미드솔 폼이 그대로 지면에 닿도록 만든 언더아머의 쿠셔닝 겸 바닥 구조입니다.',
-      benefits: ['고무 아웃솔을 없앤 경량화', '노면 접지', '부드러운 착지감'],
-      scienceExplanation:
-        '언더아머는 UA Flow가 "부드러우면서도 매우 튼튼해 고무 아웃솔이 필요 없고, 더 가볍고 접지가 좋다"고 설명합니다. 벨로시티 엘리트 2에서는 전족부 Pebax 층 아래 바닥층으로 쓰였는데, RunRepeat 드레멜 테스트 마모가 6.2mm로 커 레이스 전용 내구성으로 보는 편이 맞습니다.',
-      usedInShoes: ['under-armour-velociti-elite-2'],
+      "id": "under-armour-flow",
+      "name": "UA Flow",
+      "nameKo": "UA 플로우",
+      "category": "outsole",
+      "description": "벨로시티 엘리트 2에서 별도 고무 아웃솔 없이 쿠셔닝과 지면 접촉을 맡는 구조로 확인했습니다. Flow의 정확 고분자는 미확인입니다.",
+      "benefits": [
+        "3027205: Flow·고무 없는 밑창 확인",
+        "영국 정확 제품: 별도 biopebax 폼 명시",
+        "두 폼의 상하 배치·고정 수명은 미확인"
+      ],
+      "scienceExplanation": "벨로시티 엘리트 2의 한국·영국 공식 원문은 Flow의 고무 없는 쿠셔닝·밑창을 명시합니다. 영국 기술 항목은 biopebax 폼과의 조합도 설명하지만 biopebax의 정확 생물유래 비율과 Flow 자체의 고분자, 두 폼의 정밀한 층 관계는 공시하지 않습니다. TPE는 인솔 설명으로 Flow 배합 근거가 아닙니다. 제조사 경량·접지 설명과 모든 노면의 안전 또는 일정 거리의 내구성은 별개입니다. 기존 랩 마모 수치만으로 레이스 전용 수명을 단정하는 문장도 이번 제조사 확인 범위에서 제외했습니다.",
+      "usedInShoes": [
+        "under-armour-velociti-elite-2"
+      ],
+      "verification": {
+        "checkedAt": "2026-11-10",
+        "scope": "정확 제조사 모델·세대의 명칭과 구성에 한정합니다. 원료·구조 미공개, 자료 유형, 변형 모델의 차이를 구분했습니다.",
+        "sources": [
+          {
+            "title": "Under Armour — uaVelocitiKr",
+            "url": "https://www.underarmour.co.kr/ko-kr/p/%EC%8B%A0%EB%B0%9C/ua_%EB%B2%A8%EB%A1%9C%EC%8B%9C%ED%8B%B0_%EC%97%98%EB%A6%AC%ED%8A%B8_2/3027205.html",
+            "scope": "exact3027205 KR DNA only;prices/inventory excluded"
+          },
+          {
+            "title": "Under Armour — uaVelocitiUk",
+            "url": "https://www.underarmour.co.uk/en-gb/p/ua-velociti-elite-2-unisex-running-shoes/3027205.html",
+            "scope": "exact3027205 UK own ProductDetails+technicaltiles;historic athletecopy excluded"
+          }
+        ]
+      }
     },
     {
-      id: 'under-armour-carbon-plate',
-      name: 'Carbon Fiber Plate',
-      nameKo: '카본 플레이트',
-      category: 'plate',
-      description: '벨로시티 엘리트 라인의 풀사이즈 탄소 섬유 플레이트입니다.',
-      benefits: ['추진력 보조', '전족부 강성'],
-      scienceExplanation:
-        '벨로시티 엘리트 2는 Pebax와 UA Flow 두 폼 층 사이에 풀사이즈 탄소 섬유 플레이트를 넣은 구조입니다(한국 공식 상세). RunRepeat는 플레이트가 "꽤 단단하다"고 적었습니다.',
-      usedInShoes: ['under-armour-velociti-elite-2'],
-    },
-  ],
+      "id": "under-armour-carbon-plate",
+      "name": "Carbon Fiber Plate",
+      "nameKo": "카본 플레이트",
+      "category": "plate",
+      "description": "벨로시티 엘리트 2 3027205에서 확인한 전장 탄소섬유 판입니다. 두 폼 사이의 정밀 배치는 이번 원문으로 확정하지 않았습니다.",
+      "benefits": [
+        "한국·영국 정확 제품의 full-length carbon-fibre 확인",
+        "Flow·biopebax와 각각 다른 부품",
+        "정확 곡률·홈·수지 비율은 미공개"
+      ],
+      "scienceExplanation": "한국과 영국의 벨로시티 엘리트 2 공식 제품은 full-length carbon-fibre plate를 명시합니다. Flow와 추가 biopebax 폼이 확인된 사실만으로 판이 모든 위치에서 두 층 사이에 놓인다는 상세 도면을 만들지 않았습니다. 이번 원문이 공개하지 않은 곡률·갈래·섬유와 수지의 비율도 확정하지 않습니다. 다른 벨로시티 세대나 인피니트 엘리트 2에 카본판 적용을 옮기지 않았습니다. 전장 카본이라는 재료 설명만으로 보폭·기록·부상 결과를 보장하지 않습니다.",
+      "usedInShoes": [
+        "under-armour-velociti-elite-2"
+      ],
+      "verification": {
+        "checkedAt": "2026-11-10",
+        "scope": "정확 제조사 모델·세대의 명칭과 구성에 한정합니다. 원료·구조 미공개, 자료 유형, 변형 모델의 차이를 구분했습니다.",
+        "sources": [
+          {
+            "title": "Under Armour — uaVelocitiKr",
+            "url": "https://www.underarmour.co.kr/ko-kr/p/%EC%8B%A0%EB%B0%9C/ua_%EB%B2%A8%EB%A1%9C%EC%8B%9C%ED%8B%B0_%EC%97%98%EB%A6%AC%ED%8A%B8_2/3027205.html",
+            "scope": "exact3027205 KR DNA only;prices/inventory excluded"
+          },
+          {
+            "title": "Under Armour — uaVelocitiUk",
+            "url": "https://www.underarmour.co.uk/en-gb/p/ua-velociti-elite-2-unisex-running-shoes/3027205.html",
+            "scope": "exact3027205 UK own ProductDetails+technicaltiles;historic athletecopy excluded"
+          }
+        ]
+      }
+    }
+  ]
 };
