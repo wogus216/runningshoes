@@ -121,7 +121,7 @@ export const mayEvents: MarathonEvent[] = [
   },
   {
     id: 'oxfam-trailwalker-2026',
-    name: '2026 옥스팜 트레일워커',
+    name: '2026 옥스팜 트레일워커 인제',
     date: '2026-05-16',
     month: '5월',
     location: '강원 인제',
@@ -129,7 +129,20 @@ export const mayEvents: MarathonEvent[] = [
     distances: ['울트라', '트레일'],
     status: '대회종료',
     isMajor: false,
-    description: '100K/50K/25K 트레일',
+    description: '2026년 5월 16일 강원 인제 개최분이다. 옥스팜이 1월 7일 소개한 인제 회차는 4인 1조로 100km·50km·25km를 함께 걷는 기부 프로젝트였으며, 주최사 성료 소식도 5월 16일 인제 개최를 확인한다. 10월 서울 20km 행사와 구분해야 한다.',
+    website: 'https://www.oxfamtrailwalker.or.kr/ko/news/story/27623',
+    courseInfo: {
+      courseDescription: '주최사의 2026년 1월 인제 코스 소개에는 소양강둘레길·박달고치·자작나무숲·원대임도길·내린천 등이 나온다. 100km·50km·25km의 전체 경로가 동일하다는 뜻은 아니다. 소개 글의 산 높이와 구간 표기를 누적 상승고도·독립 GPS 실측으로 바꾸지 않았다.',
+    },
+    factCheck: {
+      checkedAt: '2026-11-11',
+      sources: [
+        { title: '옥스팜 1월 7일 인제 4인팀·100/50/25km 코스 소개', url: 'https://www.oxfamtrailwalker.or.kr/ko/news/story/27623' },
+        { title: '옥스팜 TODAY 2026 · 5월 16일 인제 개최 결과', url: 'https://campaigns.oxfam.or.kr/oxfamtoday2026/story/4/' },
+      ],
+      note: '5월 인제 회차다. 현재 홈페이지의 일정·규정·교통 페이지에는 서울 20km의 접수/환불·서울 출발지와 인제 일부 문구가 함께 남아 있어 5월 요강으로 사용하지 않았다. 25·50·100km의 참가비·기부펀딩 조건·종목별 최종 출발/제한시간·정확한 집결 장소는 이번 두 원문만으로 확정하지 않는다. 주최사 발표 인원을 실제 종목별 완주 집계로 간주하지 않는다.',
+    },
+    lastVerified: '2026-11-11',
   },
   {
     id: 'jirisan-hwadae-2026',
