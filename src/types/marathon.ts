@@ -89,8 +89,9 @@ export interface CourseGpx {
 }
 
 export interface CourseInfo {
-  terrain: CourseTerrain;
-  difficulty: CourseDifficulty;
+  /** 근거가 없는 지형·난이도는 생략한다. 경로 설명만 확인한 코스도 허용한다. */
+  terrain?: CourseTerrain;
+  difficulty?: CourseDifficulty;
   elevationGain?: number;
   courseDescription?: string;
   certification?: CertificationType;

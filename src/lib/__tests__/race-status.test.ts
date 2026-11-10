@@ -1,6 +1,9 @@
 import { describe, it, expect } from 'vitest';
 import { deriveRaceStatus, parseKst } from '@/lib/blog/race-status';
 import type { RaceMeta } from '@/types/blog';
+import { createElement } from 'react';
+import { renderToStaticMarkup } from 'react-dom/server';
+import { RaceStatusBadge } from '@/components/blog/race/race-status-badge';
 
 const base: RaceMeta = {
   displayTitle: '부산브릿지마라톤',
@@ -21,6 +24,40 @@ describe('parseKst', () => {
 });
 
 describe('deriveRaceStatus', () => {
+  it('시작일이 없어도 공식 마감 확인이 예전 접수중 확인보다 우선한다', () => {
+    const meta = { ...base, registrationOpen: { verifiedAt: '2026-10-30' }, registrationClosed: { verifiedAt: '2026-11-10' } };
+    expect(deriveRaceStatus(meta, parseKst('2026-11-10'))).toMatchObject({ kind: 'closed', label: '접수 마감' });
+  });
+
+  it('시작일이 없어도 선착순 소진을 반영한다', () => {
+    const meta = { ...base, soldOut: { verifiedAt: '2026-11-02' } };
+    expect(deriveRaceStatus(meta, parseKst('2026-11-10')).kind).toBe('closed');
+  });
+
+  it('시작일을 몰라도 날짜로 공지된 마감일 끝에 닫힌다', () => {
+    const meta = { ...base, registrationOpen: { verifiedAt: '2026-10-30' }, registrationEnd: '2026-11-08' };
+    expect(deriveRaceStatus(meta, parseKst('2026-11-08T23:59')).kind).toBe('open');
+    expect(deriveRaceStatus(meta, parseKst('2026-11-09T00:00')).kind).toBe('closed');
+  });
+
+  it('시각을 공지한 마감은 다음 날이 아닌 해당 시각에 닫힌다', () => {
+    const meta = { ...base, registrationStart: '2026-10-01', registrationEnd: '2026-11-20T17:00' };
+    expect(deriveRaceStatus(meta, parseKst('2026-11-20T16:59')).kind).toBe('open');
+    expect(deriveRaceStatus(meta, parseKst('2026-11-20T17:00')).kind).toBe('closed');
+  });
+
+  it('공식 마감 확인이 있어도 대회가 지나면 종료다', () => {
+    const meta = { ...base, registrationClosed: { verifiedAt: '2026-11-10' } };
+    expect(deriveRaceStatus(meta, parseKst('2026-12-07')).kind).toBe('past');
+  });
+
+  it('JS 실행 전에도 확인된 마감 안내를 보여준다', () => {
+    const meta = { ...base, registrationOpen: { verifiedAt: '2026-10-30' }, registrationClosed: { verifiedAt: '2026-11-10' } };
+    const html = renderToStaticMarkup(createElement(RaceStatusBadge, { meta }));
+    expect(html).toContain('접수 마감');
+    expect(html).not.toContain('접수중');
+  });
+
   it('접수 시작이 미정이면 tbd', () => {
     const s = deriveRaceStatus(base, parseKst('2026-08-19'));
     expect(s.kind).toBe('tbd');

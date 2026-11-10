@@ -2,35 +2,55 @@ import type { MarathonEvent } from '@/types/marathon';
 
 export const decemberEvents: MarathonEvent[] = [
   {
-    id: 'hwangyoungjo-road-race-2026',
-    name: '2026 황영조 로드레이스',
-    date: '2026-12-06',
-    month: '12월',
-    location: '경인아라뱃길 여객터미널 아라타워 일원 (인천)',
-    region: '인천',
-    distances: ['하프', '10K', '5K'],
-    status: '접수중',
-    isMajor: false,
-    website: 'https://roadracing.co.kr',
-    registrationEnd: '2026-11-20',
-    registrationNote:
-      '접수 11월 20일(금) 17:00까지, 정원 5,000명 선착순입니다. 환불과 참가자 정보 변경도 같은 시각에 끝나고, 조기 마감하면 환불 마감이 앞당겨질 수 있다고 공식 요강에 적혀 있습니다. 개인 신청서가 열려 있으며 현재 접수 인원·마감 여부는 공식에서 확인되지 않습니다.',
-    lastVerified: '2026-10-30',
-    description:
-      '인천광역시 육상연맹이 주최하는 12월 6일 경인아라뱃길 대회로 하프·10km·5km를 오전 9시에 출발합니다. 참가비는 하프·10km 5만원, 5km 4만 5천원이고, 하프와 10km는 PB 기준 A·B 그룹으로 나뉘며 앞 그룹에서 출발하면 실격 처리됩니다. 제한시간은 하프 3시간·10km 2시간이고 셔틀버스를 탄 뒤 완주하면 실격입니다. 코스 지도와 거리 구성은 공식 페이지에 아직 공개되지 않았습니다.',
-    raceInfo: {
-      entryFees: [
-        { distance: '하프', fee: 50000 },
-        { distance: '10K', fee: 50000 },
-        { distance: '5K', fee: 45000 },
-      ],
-      timeLimits: [
-        { distance: '하프', hours: 3, minutes: 0 },
-        { distance: '10K', hours: 2, minutes: 0 },
-      ],
-      startTime: '09:00',
-    },
-  },
+  "id": "hwangyoungjo-road-race-2026",
+  "name": "2026 황영조 로드레이스",
+  "date": "2026-12-06",
+  "month": "12월",
+  "location": "경인아라뱃길 여객터미널 아라타워 일원 (인천)",
+  "region": "인천",
+  "distances": [
+    "하프",
+    "10K",
+    "5K"
+  ],
+  "status": "접수중",
+  "isMajor": false,
+  "website": "https://roadracing.co.kr",
+  "registrationEnd": "2026-11-20",
+  "registrationNote": "2026-11-10 공식 요강·유의사항과 개인 신청 동의 화면을 확인했습니다. 접수·환불·참가정보 변경은 11월 20일(금) 17:00까지이며 정원 5,000명 선착순입니다. 조기 마감 시 환불 기한도 앞당겨질 수 있습니다. 카드 승인 취소는 전액, 가상계좌는 이체 수수료 500원 공제 안내입니다. 잔여 정원·실제 결제 성공은 확인하지 않았습니다.",
+  "lastVerified": "2026-11-10",
+  "description": "인천광역시 육상연맹의 12월 6일 경인아라뱃길 대회입니다. 오전 8시 집결·9시 출발, 하프·10km 각 5만원·5km 4만 5천원입니다. 하프는 만 18세 이상이며 PB 1시간 30분 이내·10km 1시간 이내가 A그룹, 초과는 B그룹입니다. 지정 그룹보다 앞선 출발은 실격 기준입니다. 제한시간은 하프 3시간·10km 2시간이며 경기 중 회송버스 이용 후 결승선 통과가 실격 조항입니다. 행사장 이동 교통편 전부를 뜻하지 않습니다. 기록은 넷타임, 시상은 건타임 안내입니다.",
+  "raceInfo": {
+    "entryFees": [
+      {
+        "distance": "하프",
+        "fee": 50000
+      },
+      {
+        "distance": "10K",
+        "fee": 50000
+      },
+      {
+        "distance": "5K",
+        "fee": 45000
+      }
+    ],
+    "timeLimits": [
+      {
+        "distance": "하프",
+        "hours": 3,
+        "minutes": 0
+      },
+      {
+        "distance": "10K",
+        "hours": 2,
+        "minutes": 0
+      }
+    ],
+    "startTime": "09:00",
+    "expectedParticipants": 5000
+  }
+},
   {
     id: 'busan-international-marathon-2026',
     name: '부산브릿지마라톤 2026',

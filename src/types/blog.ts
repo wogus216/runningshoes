@@ -57,6 +57,8 @@ export interface RaceMeta {
   registrationEnd?: string;
   /** 시작일은 미공개지만 공식 접수 화면이 열린 것을 직접 확인한 경우 */
   registrationOpen?: { verifiedAt: string };
+  /** 공식 공지로 접수 종료를 확인한 경우. 확인일은 실제 접수 마감일과 다를 수 있다. */
+  registrationClosed?: { verifiedAt: string; note?: string };
   /**
    * 선착순 정원이 차서 **날짜와 무관하게** 닫힌 경우.
    * 상태 계산이 달력만 보기 때문에, 이게 없으면 조기 마감된 대회가 '접수중'으로 뜬다.

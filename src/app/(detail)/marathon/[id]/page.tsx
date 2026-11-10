@@ -273,7 +273,7 @@ export default async function MarathonDetailPage({ params }: MarathonDetailPageP
       answer: `${event.name} 제한시간은 ${timeSummary}입니다.`,
     });
   }
-  if (event.courseInfo) {
+  if (event.courseInfo?.difficulty && event.courseInfo.terrain) {
     faqItems.push({
       question: `${event.name} 코스 난이도는?`,
       answer: `${event.courseInfo.difficulty} 난이도의 ${event.courseInfo.terrain} 코스입니다.${event.courseInfo.elevationGain ? ` 총 고저차 ${event.courseInfo.elevationGain}m.` : ''}${event.courseInfo.certification && event.courseInfo.certification !== '없음' ? ` ${event.courseInfo.certification} 공인 코스.` : ''}`,
@@ -391,6 +391,9 @@ export default async function MarathonDetailPage({ params }: MarathonDetailPageP
                 {event.registrationEnd ? (
                   <span>
                     접수 <span className="font-medium text-primary">{formatDateKo(event.registrationEnd, { weekday: true })}</span> 마감
+                    {event.registrationNote && (
+                      <span className="mt-1 block text-sm leading-relaxed">{event.registrationNote.replace(/\*\*/g, '')}</span>
+                    )}
                   </span>
                 ) : event.registrationNote ? (
                   <span className="font-medium text-primary">{event.registrationNote}</span>
@@ -553,14 +556,18 @@ export default async function MarathonDetailPage({ params }: MarathonDetailPageP
               )}
 
               <div className="flex flex-wrap gap-2">
-                <span className={`inline-flex items-center gap-1 rounded-full px-3 py-1 text-sm font-medium ${difficultyStyles[event.courseInfo.difficulty]}`}>
-                  <CircleGauge className="h-3.5 w-3.5" />
-                  {event.courseInfo.difficulty}
-                </span>
-                <span className="inline-flex items-center gap-1 rounded-full bg-slate-100 px-3 py-1 text-sm font-medium text-slate-700">
-                  <Mountain className="h-3.5 w-3.5" />
-                  {event.courseInfo.terrain}
-                </span>
+                {event.courseInfo.difficulty && (
+                  <span className={`inline-flex items-center gap-1 rounded-full px-3 py-1 text-sm font-medium ${difficultyStyles[event.courseInfo.difficulty]}`}>
+                    <CircleGauge className="h-3.5 w-3.5" />
+                    {event.courseInfo.difficulty}
+                  </span>
+                )}
+                {event.courseInfo.terrain && (
+                  <span className="inline-flex items-center gap-1 rounded-full bg-slate-100 px-3 py-1 text-sm font-medium text-slate-700">
+                    <Mountain className="h-3.5 w-3.5" />
+                    {event.courseInfo.terrain}
+                  </span>
+                )}
                 {event.courseInfo.certification && event.courseInfo.certification !== '없음' && (
                   <span className="inline-flex items-center gap-1 rounded-full bg-sky-100 px-3 py-1 text-sm font-medium text-sky-700">
                     <Award className="h-3.5 w-3.5" />

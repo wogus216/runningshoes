@@ -39,6 +39,24 @@ export function deriveRaceStatus(meta: RaceMeta, now: Date): RaceStatus {
     return { kind: 'past', label: '종료', daysUntil: null };
   }
 
+  // 공식 마감 확인은 시작일의 공개 여부나 이전 접수중 확인보다 우선한다.
+  if (meta.registrationClosed) {
+    return { kind: 'closed', label: '접수 마감', daysUntil: null };
+  }
+
+  if (meta.soldOut) {
+    return { kind: 'closed', label: '선착순 마감', daysUntil: null };
+  }
+
+  if (meta.registrationEnd) {
+    const end = parseKst(meta.registrationEnd);
+    // 날짜만 있으면 그 날 끝까지, 시각이 있으면 공지된 시각까지 유효하다.
+    const closesAt = end.getTime() + (meta.registrationEnd.includes('T') ? 0 : DAY_MS);
+    if (now.getTime() >= closesAt) {
+      return { kind: 'closed', label: '접수 마감', daysUntil: null };
+    }
+  }
+
   if (!meta.registrationStart) {
     if (meta.registrationOpen) {
       return { kind: 'open', label: '접수중', daysUntil: null };
@@ -51,20 +69,6 @@ export function deriveRaceStatus(meta: RaceMeta, now: Date): RaceStatus {
   if (now.getTime() < start.getTime()) {
     const days = kstDayIndex(start) - kstDayIndex(now);
     return { kind: 'upcoming', label: `접수 D-${days}`, daysUntil: days };
-  }
-
-  // 선착순 소진은 달력에 없는 축이다. registrationEnd 보다 먼저 본다 —
-  // 마감일이 남아 있어도 정원이 찼으면 신청은 이미 불가능하다
-  if (meta.soldOut) {
-    return { kind: 'closed', label: '선착순 마감', daysUntil: null };
-  }
-
-  if (meta.registrationEnd) {
-    const end = parseKst(meta.registrationEnd);
-    // 마감일은 그 날 끝까지 유효하다
-    if (now.getTime() >= end.getTime() + DAY_MS) {
-      return { kind: 'closed', label: '접수 마감', daysUntil: null };
-    }
   }
 
   return { kind: 'open', label: '접수중', daysUntil: null };
