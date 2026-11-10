@@ -582,144 +582,64 @@ export const posts_2026_06: BlogPost[] = [
     updatedAt: "2026-11-10",
   },
   {
-    id: '2026-trans-jeju-utmb-registration',
-    slug: '2026-trans-jeju-utmb-registration',
-    title: '트랜스제주 by UTMB 2026 — 10월 2~4일 제주, 접수 7월 31일 마감 | 종목·참가비·UTMB Index 총정리',
-    description: 'UTMB 월드시리즈 아시아 공식 대회 트랜스제주 by UTMB 2026은 10월 2~4일 제주 일정이었고, 접수는 7월 31일 선착순으로 마감됐습니다. 20K·60K·100K·100M 4개 종목별 출발 시각·거리·참가비(USD)·UTMB Index 자격, 어떤 종목부터 시작할지, 필수 트레일 장비까지 한 번에 정리했습니다.',
-    thumbnail: '/images/blog/2026-trans-jeju-utmb-registration.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-06-25',
-    updatedAt: '2026-07-29',
-    category: 'news' as const,
-    readingTime: 8,
-    tags: ['트랜스제주', '트랜스제주 UTMB', 'UTMB', '제주 트레일', '트레일 러닝 대회', 'UTMB Index'],
+    id: "2026-trans-jeju-utmb-registration",
+    slug: "2026-trans-jeju-utmb-registration",
+    title: "트랜스제주 by UTMB 2026 정리 — 실제 거리·출발지·Index 자격과 장비 차이",
+    description: "2026 트랜스제주의 100M·100K·60K·20K 거리와 고도, 출발지, UTMB Index 참가 조건을 공식 종목 페이지로 다시 확인했습니다. 접수 예정 마감과 실제 매진 상태, 러닝스톤과 Index를 구분합니다.",
+    thumbnail: "/images/blog/verified-2026-trans-jeju-utmb-registration-20261110.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-06-25",
+    updatedAt: "2026-11-10",
+    category: "news",
+    readingTime: 6,
+    tags: [
+      "트랜스제주",
+      "트랜스제주 UTMB",
+      "UTMB",
+      "제주 트레일",
+      "트레일 러닝 대회",
+      "UTMB Index"
+    ],
     event: {
-      name: '트랜스제주 by UTMB 2026',
-      startDate: '2026-10-02',
-      endDate: '2026-10-04',
-      location: {
-        name: '제주 (제주월드컵경기장·가시리 한라마 파크 등)',
+      "name": "트랜스제주 by UTMB 2026",
+      "startDate": "2026-10-02",
+      "endDate": "2026-10-04",
+      "location": {
+        "name": "제주 (제주월드컵경기장·가시리 한라마 파크 등)"
       },
-      organizer: '서귀포시 (운영 에이플랜)',
-      url: 'https://transjeju.utmb.world/',
+      "organizer": "서귀포시 (운영 에이플랜)",
+      "url": "https://transjeju.utmb.world/"
     },
     content: `
-<div class="callout warning">
-  <span class="callout-icon">🏁</span>
-  <div class="callout-body">
-    <p class="callout-title">대회 종료 — 10월 2~4일 대회 기간이 지났습니다</p>
-    <p>2026 트랜스제주 by UTMB의 대회 기간(<strong>2026-10-02(금)~10-04(일)</strong>)이 지났습니다. 접수는 <strong>7월 31일(금)</strong>에 마감됐습니다. 아래 내용은 접수 기간(7월 29일 공식 사이트 확인 기준)에 쓴 기록입니다. 다음 회차 정보는 공식 <a href="https://transjeju.utmb.world/" rel="noopener noreferrer">transjeju.utmb.world</a>에서 확인하세요.</p>
-  </div>
-</div>
+<p><strong>2026년 11월 10일 원문 대조.</strong> 아래 2026년 대회 일정은 지났습니다. 다음 회차의 날짜·접수·혜택은 별도 발표를 확인해야 합니다.</p>
 
-<h2>트랜스제주가 뭔가요</h2>
-
-<p>트랜스제주 by UTMB는 프랑스 몽블랑에서 열리는 세계 최고 권위의 울트라 트레일 대회 <strong>UTMB</strong>의 <strong>아시아 공식 시리즈(UTMB World Series)</strong> 대회입니다. UTMB는 2023년 대회를 '공식 9회(ninth edition)'로 발표했고, UTMB 월드시리즈에 편입된 이후 매년 제주에서 개최되고 있습니다. 한라산 권역의 거친 화산 지형과 오름·곶자왈을 무대로 하는, 국내에서 가장 권위 있는 트레일 대회로 꼽힙니다.</p>
-
-<p>이 대회가 특별한 이유는 <strong>UTMB Index(완주 기록 적립)</strong>입니다. 트랜스제주를 완주하면 UTMB Index가 쌓여, 언젠가 본토 몽블랑 UTMB에 도전할 자격을 만들어 갈 수 있습니다. 스카이레이스·트레일 대회 전반의 개념과 시즌 흐름이 궁금하다면 <a href="/blog/korea-trail-skyrace-guide-2026">한국 트레일·스카이레이스 대회 가이드</a>를 먼저 보면 이해가 빠릅니다.</p>
-
-<h2>2026 종목과 일정</h2>
-
-<p>2026년은 <strong>20K·60K·100K·100M</strong> 4개 종목으로 구성됐습니다. 거리 구성은 매년 조금씩 바뀌는데, 2026년 기준 수치는 아래와 같습니다.</p>
-
-<table>
-  <thead>
-    <tr><th>종목</th><th>출발</th><th>출발지</th><th>성격</th></tr>
-  </thead>
-  <tbody>
-    <tr><td><strong>100M</strong> (약 148km)</td><td>2026-10-02(금) 21:00</td><td>—</td><td>최상급 야간 포함 울트라</td></tr>
-    <tr><td><strong>100K</strong></td><td>2026-10-03(토) 05:00</td><td>제주월드컵경기장</td><td>상급 울트라</td></tr>
-    <tr><td><strong>60K</strong></td><td>2026-10-03(토) 08:00</td><td>—</td><td>중상급 (2025년 70K에서 변경)</td></tr>
-    <tr><td><strong>20K</strong></td><td>2026-10-03(토) 10:00</td><td>가시리 한라마 파크</td><td>입문·UTMB 분위기 체험</td></tr>
-  </tbody>
-</table>
-
-<p class="caption">※ 거리·코스·출발지는 주최 측 공지 기준이며 변경될 수 있습니다. 신청 전 공식 페이지에서 최종 확인하세요. 제3자 대회 캘린더에는 다른 날짜가 떠도는 경우가 있으니 <strong>공식 사이트 날짜만 신뢰</strong>하세요.</p>
-
-<h2>참가비</h2>
-
-<p>국제 등록 포털 기준 참가비는 다음과 같습니다(USD 표기). 원화 결제 금액은 국내 등록 시 로그인 후 확인됩니다.</p>
-
-<table>
-  <thead>
-    <tr><th>종목</th><th>참가비 (USD)</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>100M</td><td>$280</td></tr>
-    <tr><td>100K</td><td>$220</td></tr>
-    <tr><td>60K</td><td>$160</td></tr>
-    <tr><td>20K</td><td>$90</td></tr>
-  </tbody>
-</table>
-
-<h2>UTMB Index·참가 자격</h2>
-
-<p>UTMB 월드시리즈 대회는 종목에 따라 <strong>UTMB Index(또는 러닝스톤·추첨 등)</strong> 자격 체계가 적용될 수 있습니다. 일반적으로 거리가 길수록(100K·100M) 사전 완주 실적이나 자격 요건이 요구되는 경향이 있습니다. <strong>정확한 자격·추첨 방식은 매년·종목별로 달라지므로 반드시 공식 등록 페이지에서 본인 종목 기준을 확인</strong>하세요. 트레일이 처음이라면 자격 부담이 적은 <strong>20K</strong>로 UTMB 대회 분위기를 먼저 경험하는 걸 권합니다.</p>
-
-<h2>어떤 종목부터 시작할까</h2>
-
-<ul>
-  <li><strong>트레일 입문 / 첫 UTMB</strong> — <strong>20K</strong>. 누적고도와 컷오프 부담이 가장 작아 로드 러너의 첫 트레일 대회로 적합합니다</li>
-  <li><strong>로드 풀코스 경험자 → 본격 트레일</strong> — <strong>60K</strong>. 거리·고도가 확 올라가므로 사전에 실제 산악 훈련이 필요합니다</li>
-  <li><strong>울트라 도전</strong> — <strong>100K·100M</strong>. 야간 구간·필수장비·자격 요건까지 갖춰야 하는 상급자 영역입니다</li>
-</ul>
-
-<div class="callout tip">
-  <span class="callout-icon">⛰️</span>
-  <div class="callout-body">
-    <p class="callout-title">같은 거리라도 '누적고도'가 난이도를 가른다</p>
-    <p>트레일은 거리보다 누적고도(D+)가 체감 난이도를 좌우합니다. 로드 20K를 뛸 수 있어도 화산 지형 20K는 1.5~2배 힘들 수 있습니다. 대회 전 북한산·관악산 등 실제 산에서 몇 번 달려보고 페이스를 가늠하세요. 트레일이 낯설다면 <a href="/blog/trail-running-appeal-beginner-guide-2026">트레일 러닝 입문 가이드</a>부터 보는 걸 권합니다.</p>
-  </div>
-</div>
-
-<h2>필수 트레일 장비</h2>
-
-<p>UTMB 대회는 안전을 위해 <strong>필수장비(mandatory gear) 규정</strong>이 엄격합니다. 미충족 시 출발이 제한되거나 페널티가 부과됩니다. 종목별 규정은 공식 페이지에 고지되며, 공통적으로 다음이 요구됩니다.</p>
-
-<ul>
-  <li><strong>트레일화</strong> — 러그(돌기) 아웃솔 필수. 로드화는 화산암 지형에서 위험합니다</li>
-  <li><strong>러닝 베스트</strong> — 물·보급·필수장비 수납용</li>
-  <li><strong>물 1L 이상 + 개인컵</strong> — 친환경 정책으로 1회용컵 미제공이 표준</li>
-  <li><strong>방풍·방수 자켓</strong>, <strong>서바이벌 블랭킷·호루라기·휴대폰</strong> — 급변 날씨·생존 대비</li>
-  <li><strong>헤드랜턴</strong> — 야간 구간이 있는 장거리 종목 필수</li>
-</ul>
-
-<div class="callout tip">
-  <span class="callout-icon">👟</span>
-  <div class="callout-body">
-    <p class="callout-title">코스 난이도별 트레일화</p>
-    <p>입문·가성비는 <a href="/shoes/asics-gel-venture-10">아식스 젤 벤처 10</a>, 접지력·안정성 균형은 <a href="/shoes/adidas-terrex-agravic-4">아디다스 테렉스 아그라빅 4</a>, 장거리 울트라는 <a href="/shoes/asics-metafuji-trail">아식스 메타후지 트레일</a>·<a href="/shoes/hoka-speedgoat-6">호카 스피드고트 6</a>, 카본 레이싱은 <a href="/shoes/hoka-tecton-x-3">호카 테크톤 X 3</a>가 대표적입니다. 코스별 자세한 비교는 <a href="/blog/2026-best-trail-running-shoes">2026 트레일 러닝화 TOP 7</a>에서 확인하세요.</p>
-  </div>
-</div>
-
-<h2>준비 — 제주 원정 체크</h2>
-
-<p>제주 대회는 사실상 '원정'입니다. 접수 성공 직후 <strong>항공권·숙소를 함께 예약</strong>하세요. 10월 초는 제주 성수기라 대회 참가자 수요까지 겹치면 숙소가 빠르게 찹니다. 대회 전날 도착해 1박 하며 컨디션을 잡는 게 안전합니다. 원정 대회 짐·준비물 체크는 <a href="/blog/overseas-marathon-travel-checklist-korea">원정 마라톤 준비물 체크리스트</a>가 트레일 원정에도 그대로 유용합니다. 가을 로드 대회와 일정을 함께 짜려면 <a href="/marathon">마라톤 캘린더</a>를 참고하세요.</p>
-
-<h2>FAQ</h2>
-
-<h3>Q. 6월 말에 접수해도 자리가 있었나요?</h3>
-<p>접수는 2026년 3월 18일 오픈돼 7월 31일 선착순으로 마감됐습니다. 6월 말 기준으로는 아직 접수 기간이었지만, 인기 종목은 마감 전 소진될 수 있는 구조였습니다. 다음 회차를 노린다면 접수 기간 중 공식 페이지에서 잔여 여부를 확인하세요.</p>
-
-<h3>Q. 트레일 경험이 전혀 없는데 도전할 수 있나요?</h3>
-<p>20K 종목이라면 가능합니다. 다만 로드와 달리 러그 아웃솔 트레일화·러닝 베스트 등 장비가 필요하고, 대회 전 실제 산에서 달려본 경험이 있어야 안전합니다. 60K 이상은 충분한 산악 훈련과 장비, 종목별 자격 확인이 선행돼야 합니다.</p>
-
-<h3>Q. UTMB Index가 꼭 있어야 참가할 수 있나요?</h3>
-<p>종목과 해마다 기준이 다릅니다. 입문 종목은 자격 부담이 적은 편이고, 장거리(100K·100M)일수록 사전 실적·자격이 요구되는 경향이 있습니다. 정확한 기준은 본인 종목의 공식 등록 페이지에서 반드시 확인하세요.</p>
+<h2>이름보다 실제 거리와 출발지를 먼저</h2>
+<p>제주 원정은 한 장소에 도착하면 준비가 끝나는 대회가 아닙니다. <a href="https://transjeju.utmb.world/" target="_blank" rel="noopener noreferrer">공식 홈페이지</a>는 10월 2~4일 일정과 네 종목을 안내하며, 현재 각 종목에 Full 표시가 있습니다. 다음 표는 운영사가 게시한 2026년 거리·누적 상승·출발 계획입니다. 현장 GPS 실측이나 개인 완주 결과를 뜻하지 않습니다.</p>
+<table><thead><tr><th>종목</th><th>거리 / 누적 상승</th><th>출발 계획</th><th>최대 허용시간</th></tr></thead><tbody><tr><td>100M</td><td>148km / 5,000m</td><td>10월 2일 21:00, 제주월드컵경기장</td><td>37시간</td></tr><tr><td>100K</td><td>104km / 4,000m</td><td>10월 3일 05:00, 제주월드컵경기장</td><td>29시간</td></tr><tr><td>60K</td><td>60km / 1,400m</td><td>10월 3일 08:00, 가시리</td><td>15시간</td></tr><tr><td>20K</td><td>20km / 508m</td><td>10월 3일 10:00, 가시리 조랑말체험공원</td><td>4시간</td></tr></tbody></table>
+<p>확인 원문: <a href="https://transjeju.utmb.world/races/Jeju100M" target="_blank" rel="noopener noreferrer">100M</a>, <a href="https://transjeju.utmb.world/races/Jeju100K" target="_blank" rel="noopener noreferrer">100K</a>, <a href="https://transjeju.utmb.world/races/Jeju70K" target="_blank" rel="noopener noreferrer">60K</a>, <a href="https://transjeju.utmb.world/races/Jeju20K" target="_blank" rel="noopener noreferrer">20K</a>. 60K의 URL에 Jeju70K가 남아 있어도 본문의 2026년 종목명과 실제 수치를 읽어야 합니다. 100M도 정확히 100마일을 달린다는 뜻으로 바꾸면 안 됩니다.</p>
+<h2>Index는 참가 자격, Running Stones는 다른 항목</h2>
+<p><a href="https://transjeju.utmb.world/races-runners/runners/Registration" target="_blank" rel="noopener noreferrer">공식 접수 안내</a>는 60K에 유효한 20K 이상 UTMB Index, 100K에 50K 이상, 100M에 100K 이상 Index를 요구합니다. 20K는 Index가 필요 없지만 UTMB World Series 계정은 필요하다고 적습니다. 이는 2026년 접수 조건입니다.</p>
+<p>종목 페이지의 Running Stones는 100M 4개·100K 3개·60K 2개·20K 1개로 표시됩니다. Index와 스톤을 하나의 점수처럼 더하거나, 한 번 완주하면 몽블랑 본대회 출전이 자동 보장된다고 설명하지 않습니다. 본대회 신청은 해당 연도·목표 레이스 규정을 따로 읽어야 합니다.</p>
+<h2>접수 마감은 예정과 실제 소진을 구분</h2>
+<p>접수 안내에는 3월 18일 17시(서울) 시작, 20K 일반 접수는 3월 20일 17시, 선착순 예정 마감은 7월 31일로 적혀 있습니다. 이 날짜만으로 모든 종목이 그날까지 판매됐거나 정확히 그날 매진됐다고 확정할 수는 없습니다. 국제 참가비 표시는 100M 280달러·100K 220달러·60K 160달러·20K 90달러이며 한국인 전용 원화 접수 경로가 별도로 있습니다. 달러를 환산해 한국 참가자의 실제 결제액으로 쓰지 않습니다.</p>
+<h2>20K에 100M 장비 목록을 그대로 붙이지 않기</h2>
+<p>100M·100K는 예비 배터리를 포함한 헤드램프 2개, 60K는 1개를 안내합니다. 20K 페이지의 필수장비에는 트레일화·최소 1L 물·휴대전화·호루라기·최소 200cal 비상식량·배번호·개인컵·서바이벌 블랭킷이 있습니다. 짧은 종목이라는 이유로 물과 비상장비가 면제되는 것은 아닙니다. 실제 포장은 본인 종목의 전체 목록과 최종 안내서를 대조해야 합니다.</p>
+<p>특히 종목별 페이지는 스틱 사용 금지를 적습니다. 일반 규정 페이지에는 예전 연도 표시와 일반적인 폴 휴대 설명이 섞여 있어, 그것만 읽고 이번 종목의 스틱 허용으로 해석하면 안 됩니다. 20K 배번 수령도 10월 1~2일만 가능하다고 안내돼, 경기 당일 비행기로 와서 현장에서 받는 계획과 맞지 않았습니다.</p>
+<h2>다음 제주 원정에 남길 체크</h2><ul><li>배번 수령 장소·시간과 실제 출발 장소를 따로 저장합니다.</li><li>로드 완주 경험만으로 60K 이상 적합성을 정하지 말고, 산악 활동시간·내리막 대응·야간 장비 경험을 점검합니다.</li><li>항공권을 결제하기 전 접수 확정·취소 조건·이동 여유를 함께 확인합니다. 다음 회차의 셔틀이나 숙박 조건을 올해 표로 보장하지 않습니다.</li></ul>
+<p>거리 선택을 더 생각해 보려면 <a href="/blog/trail-running-appeal-beginner-guide-2026">트레일 입문 가이드</a>를 함께 읽으세요.</p>
+<h2>자주 묻는 질문</h2>
+<h3>20K를 완주하면 몽블랑 본대회에 바로 나갈 수 있나요?</h3><p>그렇게 보장할 수 없습니다. 2026 트랜스제주 20K의 Index 참가 면제와 Running Stones 표시는 확인했지만, 목표 본대회의 신청 자격·추첨 규정은 별도로 충족해야 합니다.</p>
+<h3>7월 31일까지 모든 종목을 신청할 수 있었나요?</h3><p>공식 문구는 선착순 예정 마감일입니다. 실제 종목별 소진 시각을 확인하지 못했으며 현재 Full 표시는 과거 기간 전체의 판매 상태를 증명하지 않습니다.</p>
 `,
     faqs: [
       {
-        question: '트랜스제주 by UTMB 2026 대회 일정은 언제였나요?',
-        answer: '2026년 10월 2일(금)부터 10월 4일(일)까지 제주 일정이었습니다. 출발은 100M이 10월 2일 21시, 100K·60K·20K가 10월 3일로 공지됐습니다. 접수는 2026년 3월 18일 오픈돼 7월 31일 선착순으로 마감됐습니다.',
+        "question": "20K를 완주하면 몽블랑 본대회에 바로 나갈 수 있나요?",
+        "answer": "그렇게 보장할 수 없습니다. 2026 트랜스제주 20K의 Index 참가 면제와 Running Stones 표시는 확인했지만, 목표 본대회의 신청 자격·추첨 규정은 별도로 충족해야 합니다."
       },
       {
-        question: '트랜스제주 2026 종목과 참가비는 어떻게 구성됐나요?',
-        answer: '20K·60K·100K·100M 4개 종목으로 구성됐습니다. 국제 등록 포털 기준 참가비는 100M $280, 100K $220, 60K $160, 20K $90였습니다. 원화 결제 금액은 국내 등록 시 로그인 후 확인하는 방식이었습니다.',
-      },
-      {
-        question: '트레일 입문자는 어떤 종목에 나가야 하나요?',
-        answer: '20K 종목을 권장합니다. 누적고도와 컷오프 부담이 가장 작아 로드 러너의 첫 트레일 대회로 적합하며, UTMB 대회 분위기를 낮은 난이도로 경험할 수 있습니다. 다만 러그 아웃솔 트레일화와 러닝 베스트 등 필수 장비는 갖춰야 합니다.',
-      },
+        "question": "7월 31일까지 모든 종목을 신청할 수 있었나요?",
+        "answer": "공식 문구는 선착순 예정 마감일입니다. 실제 종목별 소진 시각을 확인하지 못했으며 현재 Full 표시는 과거 기간 전체의 판매 상태를 증명하지 않습니다."
+      }
     ],
   },
   {
@@ -1129,128 +1049,81 @@ export const posts_2026_06: BlogPost[] = [
 <h2>자주 묻는 질문</h2><h3>2차 접수나 환불이 아직 가능한가요?</h3><p>공식 최종 공지는 11월 4일 17:00 2차 접수 마감과 이후 2차 환불 불가를 안내합니다.</p><h3>2차 물품은 오늘 도착하나요?</h3><p>11월 10일부터 순차 발송 예정이라는 안내입니다. 전체 출고·개인 도착 완료를 확인한 것은 아닙니다.</p><h3>문산역 셔틀 시간은요?</h3><p>현재 공식 교통안내는 문산역→임진각 07:10~09:20, 임진각→문산역 12:30~15:30입니다. 현장 상황에 따라 변경될 수 있습니다.</p><h3>10km 제한시간은 1시간 30분인가요?</h3><p>공식 요강은 1시간 30분, 유의사항은 2시간으로 상충합니다. 사무국의 최종 안내로 확인해야 하며 이 글에서 임의 확정하지 않았습니다.</p>`,
   },
   {
-    id: 'danyang-moonlight-race-2026',
-    slug: 'danyang-moonlight-race-2026',
-    title: '달리고 나면 치킨에 맥주 — 2026 단양 달빛레이스 | 오후 7시 출발 야간 러닝, 남한강 달맞이길·도담삼봉 + 피니시 푸드 축제',
-    description:
-      '한여름 더위를 피해 오후 7시 출발하는 야간 러닝, 2026 단양 달빛레이스. 남한강 수변 달맞이길과 도담삼봉을 달빛 아래 달리고, 피니시 후엔 치킨·맥주·막걸리 푸드부스가 기다립니다. 8/29(토) 단양생태체육공원, 10K 5만·5K 3만, 6/10~7/17 선착순 5,000명. 코스·야간 준비물·접수까지 정리했습니다.',
-    thumbnail: '/images/blog/danyang-moonlight-race-2026.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-06-13',
-    category: 'news' as const,
+    id: "danyang-moonlight-race-2026",
+    slug: "danyang-moonlight-race-2026",
+    title: "단양 달빛레이스 2026 정리 — 19시 출발·두 종목 칩 사용·환불 기한 바로잡기",
+    description: "단양 달빛레이스 공식 요강은 8월 29일 19시, 5km·10km 모두 칩 사용을 안내합니다. 7월 17일은 환불 기한이며 접수 마감일로 바꾸지 않습니다. 이벤트 이미지의 연도와 제공 조건도 구분했습니다.",
+    thumbnail: "/images/blog/verified-danyang-moonlight-race-2026-20261110.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-06-13",
+    category: "news",
     readingTime: 6,
-    tags: ['단양 달빛레이스', '단양 마라톤', '야간 러닝', '야간 마라톤', '여름 마라톤', '단양 러닝', '치킨 마라톤', '충북 마라톤', '러닝 대회', '달빛레이스'],
+    tags: [
+      "단양 달빛레이스",
+      "단양 마라톤",
+      "야간 러닝",
+      "야간 마라톤",
+      "여름 마라톤",
+      "단양 러닝",
+      "치킨 마라톤",
+      "충북 마라톤",
+      "러닝 대회",
+      "달빛레이스"
+    ],
     event: {
-      name: '2026 단양 달빛레이스',
-      startDate: '2026-08-29T19:00:00+09:00',
-      location: {
-        name: '단양생태체육공원',
-        address: '충청북도 단양군',
+      "name": "2026 단양 달빛레이스",
+      "startDate": "2026-08-29T19:00:00+09:00",
+      "location": {
+        "name": "단양생태체육공원",
+        "address": "충청북도 단양군"
       },
-      organizer: '단양군육상연맹',
-      url: 'http://danyangmarathon.kr/',
-      offers: [
-        { name: '10km', priceKrw: 50000, availabilityEnds: '2026-07-17', url: 'http://danyangmarathon.kr/' },
-        { name: '5km', priceKrw: 30000, availabilityEnds: '2026-07-17', url: 'http://danyangmarathon.kr/' },
-      ],
+      "organizer": "단양군육상연맹",
+      "url": "http://danyangmarathon.kr/",
+      "offers": [
+        {
+          "name": "10km",
+          "priceKrw": 50000,
+          "availabilityEnds": "2026-07-17",
+          "url": "http://danyangmarathon.kr/"
+        },
+        {
+          "name": "5km",
+          "priceKrw": 30000,
+          "availabilityEnds": "2026-07-17",
+          "url": "http://danyangmarathon.kr/"
+        }
+      ]
     },
     faqs: [
-      { question: '단양 달빛레이스는 언제 열리나요?', answer: '2026년 8월 29일(토) 오후 7시에 출발하는 야간 대회입니다(개회식 18:30 예상). 한여름 낮 더위를 피해 저녁에 달리는 게 핵심 콘셉트로, 장소는 충북 단양의 단양생태체육공원입니다.' },
-      { question: '정말 치킨을 주나요?', answer: '피니시 후 행사장에 치킨·맥주·막걸리 등 푸드부스가 운영되어 "치킨 마라톤"으로 불립니다. 2024년에는 우리쌀 치킨 브랜드가 협찬사로 참여하기도 했습니다. 다만 완주자 전원 증정인지, 현장 부스에서 즐기는 방식인지는 회차마다 다를 수 있으니 정확한 기념품·먹거리 구성은 공식 요강에서 확인하세요.' },
-      { question: '야간 대회인데 뭘 준비해야 하나요?', answer: '어두운 수변 코스를 달리므로 헤드랜턴이나 암밴드 라이트, 야광·반사 소품을 챙기는 게 좋습니다. 8월 말 저녁이라 낮보다 시원하지만 습도가 높을 수 있어 수분 보충과 통기성 좋은 러닝화·복장을 권장합니다.' },
-      { question: '종목과 참가비는 어떻게 되나요?', answer: '10km(50,000원)와 5km(30,000원) 두 종목입니다. 5km는 입문자나 가족 단위 참가에도 부담이 적습니다.' },
-      { question: '접수는 언제, 어디서 하나요?', answer: '2026년 6월 10일부터 7월 17일까지 공식 홈페이지(danyangmarathon.kr)에서 선착순 5,000명 접수합니다. 참가 규모가 매년 빠르게 늘고 있어 조기 마감 가능성이 있으니 서두르는 게 안전합니다.' },
+      {
+        "question": "7월 17일이 참가 접수 마감일이었나요?",
+        "answer": "공식 요강의 7월 17일 17시는 환불 신청 기한입니다. 신청은 6월 10일 11시 시작·선착순 5,000명으로 안내하며 실제 최종 접수 마감 시각은 이번에 확인하지 못했습니다."
+      },
+      {
+        "question": "단양 달빛레이스 5km는 기록칩이 없나요?",
+        "answer": "2026 공식 요강은 5km와 10km 모두 칩 사용을 명시합니다. 개인 기록이나 모바일 기록증의 실제 발급 여부는 별도 확인 사항입니다."
+      }
     ],
     content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>2026 단양 달빛레이스 = 8월 29일(토) 오후 7시 출발 야간 러닝</strong> — 충북 단양생태체육공원에서 한여름 더위를 피해 저녁에 달립니다.</li>
-    <li>코스는 <strong>남한강 수변 달맞이길·도담삼봉</strong> 방향 평지(10K·5K). 달빛 아래 단양 야경을 달리는 게 매력입니다.</li>
-    <li>달리고 나면 <strong>치킨·맥주·막걸리 푸드부스</strong>가 열려 "치킨 마라톤"으로 불립니다. 10K 5만·5K 3만, <strong>6/10~7/17 선착순 5,000명</strong>.</li>
-  </ul>
-</div>
+<p><strong>2026년 11월 10일 원문 대조.</strong> 아래 2026년 대회 일정은 지났습니다. 다음 회차의 날짜·접수·혜택은 별도 발표를 확인해야 합니다.</p>
 
-<div class="callout info">
-  <span class="callout-icon">🌙</span>
-  <div class="callout-body">
-    <p class="callout-title">한여름엔 낮에 못 달린다 — 그래서 밤에 달린다</p>
-    <p>8월 한낮 러닝은 위험합니다. 단양 달빛레이스는 그 답을 <strong>야간 출발(19:00)</strong>로 풀었어요. 해가 진 뒤 시원해진 남한강변을 달리고, 끝나면 축제처럼 먹고 마시는 <strong>러닝+페스티벌</strong> 콘셉트입니다. 기록 경쟁보다 분위기를 즐기러 가는 대회죠.</p>
-  </div>
-</div>
-
-<h2>어떤 대회인가 — 야간 러닝 + 푸드 페스티벌</h2>
-
-<p>단양 달빛레이스는 충북 단양군육상연맹이 주최하는 <strong>야간 러닝 대회</strong>입니다. 가장 큰 특징은 오후 7시 출발 — 8월 말 한여름 더위를 피해 해가 진 뒤 달립니다. 낮보다 시원하고, 무엇보다 <strong>달빛과 단양 도심 야경</strong>을 배경으로 달리는 분위기가 이 대회의 정체성이에요.</p>
-
-<p>참가 규모도 빠르게 커지고 있습니다. 1회 약 2,000명에서 시작해 회차를 거듭하며 3,500명 규모로 성장했고, 2026년은 정원을 5,000명으로 늘렸습니다. 기록을 노리는 본격 마라톤이라기보다 <strong>여름밤을 즐기는 러닝 축제</strong>에 가깝습니다.</p>
-
-<h2>코스 — 남한강 달맞이길과 도담삼봉</h2>
-
-<p>출발·도착은 <strong>단양생태체육공원</strong>입니다. 코스는 남한강 수변을 따라가는 <strong>평지 위주</strong>라 야간에도 부담이 적습니다.</p>
-
-<ul>
-  <li><strong>10km</strong> — 생태체육공원에서 출발해 달맞이길·도담삼봉 방향 남한강 수변로를 달리는 코스. 단양팔경의 야경을 가장 길게 즐길 수 있습니다.</li>
-  <li><strong>5km</strong> — 수변 구간을 짧게 도는 코스. 입문자·가족 단위에 적합합니다.</li>
-</ul>
-
-<p>강변 수변로는 <strong>가로등이 충분치 않은 어두운 구간</strong>이 있을 수 있어, 야간 안전 장비가 중요합니다(아래 준비물 참고). 평지라 페이스 부담은 적지만 8월 말 저녁은 습도가 높을 수 있습니다.</p>
-
-<h2>종목·참가비</h2>
-
-<table>
-  <thead>
-    <tr><th>종목</th><th>참가비</th><th>추천 대상</th></tr>
-  </thead>
-  <tbody>
-    <tr><td><strong>10km</strong></td><td>50,000원</td><td>러닝에 익숙한 러너, 야경 길게 즐기기</td></tr>
-    <tr><td><strong>5km</strong></td><td>30,000원</td><td>입문자·가족·런데이트</td></tr>
-  </tbody>
-</table>
-
-<p>※ 정원 <strong>선착순 5,000명</strong>. 참가비에는 보통 기념품·기록측정·간식이 포함되며, 구체적 구성은 회차·공식 요강에 따릅니다.</p>
-
-<h2>야간 레이스, 이건 꼭 챙기자</h2>
-
-<ul>
-  <li><strong>라이트</strong> — 헤드랜턴 또는 암밴드 라이트. 어두운 수변 구간 안전 필수입니다.</li>
-  <li><strong>야광·반사 소품</strong> — 야광 팔찌·반사 조끼 등. 분위기도 살고 시인성도 좋아집니다.</li>
-  <li><strong>수분·전해질</strong> — 8월 말 저녁은 시원해도 습합니다. 탈수 주의.</li>
-  <li><strong>통기성 좋은 러닝화·복장</strong> — 여름밤 러닝엔 통풍이 핵심입니다. <a href="/blog/summer-breathable-running-shoes-2026">여름 통기성 러닝화 추천</a>과 <a href="/blog/hot-weather-summer-running-safety-guide-korea">여름 러닝 안전 가이드</a>를 함께 보세요.</li>
-</ul>
-
-<h2>달리고 나면 — 치킨·맥주가 기다린다</h2>
-
-<p>단양 달빛레이스가 러너들 사이에서 "치킨 마라톤"으로 불리는 이유가 여기 있습니다. 피니시 라인을 통과하면 행사장에 <strong>치킨·맥주·막걸리 등 푸드부스</strong>가 열려, 시원한 여름밤에 완주의 보람을 먹거리로 즐길 수 있어요. 2024년엔 우리쌀 치킨 브랜드가 협찬사로 참여하기도 했습니다.</p>
-
-<div class="callout info">
-  <span class="callout-icon">🍗</span>
-  <div class="callout-body">
-    <p class="callout-title">"완주하면 치킨 줘요?" — 정확히 짚으면</p>
-    <p>치킨은 이 대회의 상징이지만, <strong>완주자 전원에게 현물·쿠폰으로 증정하는지, 현장 푸드부스에서 즐기는 방식인지는 회차마다 다를 수 있습니다.</strong> 협찬·먹거리 부스 운영은 확인되지만 "완주 기념품=치킨"이라고 단정하긴 어려워요. 기념품·먹거리 구성을 꼭 챙기고 싶다면 접수 전 <a href="http://danyangmarathon.kr/" target="_blank" rel="noopener">공식 홈페이지</a>나 대회 안내(☎ 1600-3949)로 확인하세요.</p>
-  </div>
-</div>
-
-<h2>접수 안내</h2>
-
-<ul>
-  <li><strong>접수 기간</strong>: 2026년 6월 10일 ~ 7월 17일 (선착순 5,000명)</li>
-  <li><strong>접수처</strong>: 공식 홈페이지 <a href="http://danyangmarathon.kr/" target="_blank" rel="noopener">danyangmarathon.kr</a></li>
-  <li><strong>대회일</strong>: 2026년 8월 29일(토) 오후 7시 출발</li>
-  <li><strong>장소</strong>: 충북 단양 단양생태체육공원</li>
-</ul>
-
-<p>참가 인원이 매년 빠르게 늘고 있어 <strong>조기 마감 가능성</strong>이 있습니다. 여름밤 러닝 축제를 노린다면 접수 오픈 초반에 신청하는 편이 안전합니다.</p>
-
-<h2>한 걸음 더</h2>
-
-<ul>
-  <li>🗓️ 다른 대회 일정도 보고 싶다면 → <a href="/marathon">마라톤 캘린더</a></li>
-  <li>☀️ 여름 러닝 준비 → <a href="/blog/hot-weather-summer-running-safety-guide-korea">여름 러닝 안전 가이드</a> · <a href="/blog/summer-breathable-running-shoes-2026">여름 통기성 러닝화</a></li>
-</ul>
-
-<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 2026-06-13 기준 대회 공식 안내와 단양군·언론 보도, 러닝 커뮤니티 자료를 교차 정리한 내용입니다. 단양 달빛레이스는 매년 장소·종목·기념품 구성이 일부 바뀌어 왔고, 치킨 등 먹거리 제공 방식과 정확한 코스·일정은 공식 홈페이지(danyangmarathon.kr) 또는 대회 안내(☎ 1600-3949)에서 최종 확인하시기 바랍니다.</p>
+<h2>먼저 고친 정보: 7월 17일은 환불 기한</h2>
+<p><a href="http://danyangmarathon.kr/outline.html" target="_blank" rel="noopener noreferrer">2026 공식 요강</a>은 8월 29일 토요일 19시, 단양생태체육공원, 5km·10km를 안내합니다. 신청 시작은 6월 10일 11시, 입금·접수 계획은 선착순 5,000명입니다. <strong>7월 17일 17시는 환불 신청 기한</strong>으로 적혀 있습니다. 이를 6월 10일~7월 17일 접수 기간으로 옮겨 적은 기존 설명을 수정했습니다.</p>
+<p>홈의 신청 버튼이 남아 있다는 사실만으로 지금 신규 참가권을 살 수 있다고 안내하지 않습니다. 5,000명도 모집 계획으로, 실제 참가·완주 인원은 이번 공개 요강으로 확인되지 않았습니다.</p>
+<h2>5km도 칩을 쓰는 대회였습니다</h2>
+<table><thead><tr><th>종목</th><th>공식 참가비</th><th>공식 요강의 계측 안내</th></tr></thead><tbody><tr><td>5km</td><td>30,000원</td><td>칩 사용</td></tr><tr><td>10km</td><td>50,000원</td><td>칩 사용</td></tr></tbody></table>
+<p>두 종목 모두 칩 사용과 모바일 기록증을 적고 있습니다. 다른 대회에서 5km 계측이 없었다고 이 대회에 그대로 적용하면 안 됩니다. 반대로 칩이 있다는 사실이 WA 공인 거리·공인 기록을 뜻하는 것도 아닙니다.</p>
+<p><a href="http://danyangmarathon.kr/notice_participant.html" target="_blank" rel="noopener noreferrer">참가자 유의사항</a> 본문은 넷타임·일회용 칩·반납 불필요, 10km 2시간·5km 1시간 제한을 안내합니다. 다만 페이지 소개에 2025 표기가 남아 있어, 2026 날짜가 명시된 요강과 함께 읽는 보조 자료로 구분했습니다. 개인 기록·기록증 발급 완료를 조회한 것은 아닙니다.</p>
+<h2>행사 그림에서도 조건을 읽어야 합니다</h2>
+<p><a href="http://danyangmarathon.kr/event.html" target="_blank" rel="noopener noreferrer">공식 이벤트 페이지</a>의 2026 행사 이미지는 댄스 공연과 치킨·맥주·아이스크림, LED 머리띠를 소개합니다. LED 머리띠는 <strong>당일 이벤트 부스 선착순·색상 랜덤</strong> 조건이며, 내용 변경 가능성도 적혀 있습니다. 치킨·맥주를 무제한 무료 제공으로 확대하거나 막걸리까지 있는 행사로 소개하지 않습니다. 현장 실제 지급 내역도 확인하지 않았습니다.</p>
+<p><a href="http://danyangmarathon.kr/souvenir.html" target="_blank" rel="noopener noreferrer">기념품 페이지</a>에는 연도 표시가 서로 다른 자료가 섞여 있고 일부 이미지 링크는 열리지 않았습니다. 열리는 티셔츠 그림은 2025 인쇄가 보여 2026 지급품 근거로 쓰지 않았습니다. 특정 기념품의 올해 지급 조건은 연도가 확인되는 자료와 개인 안내를 따로 대조해야 합니다.</p>
+<h2>다음 야간 대회를 고르는 러너에게</h2><ul><li>19시 출발이라는 사실만으로 선선한 기온을 보장하지 않습니다. 실제 예보와 현장 안내를 확인합니다.</li><li>남한강 주변이라는 장소 설명만으로 전 구간 평지·초보자 적합·PB 코스라고 확정하지 않습니다. GPX와 고저도, 어두운 구간 정보를 따로 확인합니다.</li><li>도착 후 식음 행사와 귀가 교통을 일정에 넣되, 음주가 회복에 도움된다는 식으로 연결하지 않습니다.</li></ul>
+<p>다른 종료 대회와 접수 중 대회를 구분해 보려면 <a href="/marathon">마라톤 일정</a>을 참고하세요.</p>
+<h2>자주 묻는 질문</h2>
+<h3>7월 17일이 참가 접수 마감일이었나요?</h3><p>공식 요강의 7월 17일 17시는 환불 신청 기한입니다. 신청은 6월 10일 11시 시작·선착순 5,000명으로 안내하며 실제 최종 접수 마감 시각은 이번에 확인하지 못했습니다.</p>
+<h3>단양 달빛레이스 5km는 기록칩이 없나요?</h3><p>2026 공식 요강은 5km와 10km 모두 칩 사용을 명시합니다. 개인 기록이나 모바일 기록증의 실제 발급 여부는 별도 확인 사항입니다.</p>
 `,
+    updatedAt: "2026-11-10",
   },
   {
     id: "saucony-running-shoes-lineup-tier-guide-2026",
@@ -3240,170 +3113,107 @@ export const posts_2026_06: BlogPost[] = [
     ],
   },
   {
-    id: 'seoul-100k-2026-registration',
-    slug: 'seoul-100k-2026-registration',
-    title: '서울 한복판에서 울트라트레일을 — 2026 서울 100K 접수 시작 | 신규 20K로 입문도 가능, 100K·50K 종목·자격·코스 총정리',
-    description: '광화문광장에서 출발해 인왕산·북한산·수락산·청계천·한강을 잇는 도심 울트라트레일, 2026 서울 100K가 6월 2일 선착순 접수를 시작했습니다. 9월 19~20일 개최, 올해 신설된 20K(1,700명·자격 제한 없음)는 울트라트레일 입문에 딱이죠. 100K·50K·20K 거리·누적고도·참가비·자격 요건과 필수 장비, 도심 트레일만의 매력까지 정리했습니다.',
-    thumbnail: '/images/blog/seoul-100k-2026-registration.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-06-09',
-    category: 'news' as const,
-    readingTime: 8,
-    tags: ['서울 100K', '울트라트레일', '도심 트레일', '트레일러닝', '20K', '광화문', '대회', '트레일화'],
+    id: "seoul-100k-2026-registration",
+    slug: "seoul-100k-2026-registration",
+    title: "서울100K 2026 정리 — 20K도 22.7km·상승 1,236m, 북한산 상생구간까지",
+    description: "서울100K 공식 코스표와 참가 자격을 대조했습니다. 20K·50K·100K 명칭과 실제 게시 거리, 계획 모집 인원과 보도자료 수치, 걷기·저속 이동하는 북한산 상생구간을 구분합니다.",
+    thumbnail: "/images/blog/verified-seoul-100k-2026-registration-20261110.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-06-09",
+    category: "news",
+    readingTime: 6,
+    tags: [
+      "서울 100K",
+      "울트라트레일",
+      "도심 트레일",
+      "트레일러닝",
+      "20K",
+      "광화문",
+      "대회",
+      "트레일화"
+    ],
     content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>2026 서울 100K</strong>(서울 국제 울트라트레일러닝 대회)가 <strong>6월 2일 선착순 접수를 시작</strong>했습니다. 9월 19~20일 광화문광장 출발, 서울의 산·둘레길·한강·청계천을 잇는 <strong>도심 울트라트레일</strong>입니다</li>
-    <li>올해 <strong>20K 종목이 신설</strong>(정원 1,700명·07:30 출발·야간 없음·자격 제한 없음)돼, 울트라트레일 입문자도 도전할 수 있게 됐습니다</li>
-    <li>단 <strong>100K·50K는 ITRA 포인트 자격이 필요</strong>하고 트레일화·헤드램프 등 의무 장비가 있습니다 — 완전 초보라면 20K부터 시작하세요</li>
-  </ul>
-</div>
+<p><strong>2026년 11월 10일 원문 대조.</strong> 아래 2026년 대회 일정은 지났습니다. 다음 회차의 날짜·접수·혜택은 별도 발표를 확인해야 합니다.</p>
 
-<div class="callout info">
-  <span class="callout-icon">🌃</span>
-  <div class="callout-body">
-    <p class="callout-title">접수 시작 — 도심에서 즐기는 울트라트레일</p>
-    <p>2019년 시작된 서울시 주최 <strong>서울 100K</strong>가 올해도 돌아옵니다. 9월 19~20일 광화문광장에서 출발해 서울의 대표 산과 둘레길, 한강과 청계천을 한 번에 달리는 독특한 대회죠. UTMB 인덱스·ITRA에도 등재돼 있습니다. <strong>6월 2일 오전 10시부터 IntheTrail에서 선착순 접수</strong>가 시작됐고, 특히 올해는 입문자용 20K가 새로 생겼습니다.</p>
-  </div>
-</div>
-
-<h2>'도심' 울트라트레일이 뭐가 특별한가</h2>
-<p>일반적인 울트라트레일이나 <a href="/blog/untangodo-skyrace-10th-anniversary-2026">운탄고도 스카이레이스</a> 같은 산악 대회는 고산·오지에서 열립니다. 반면 서울 100K는 <strong>광화문 한복판에서 출발·도착</strong>하죠. 그래서 차이가 큽니다.</p>
-<ul>
-  <li><strong>접근성</strong> — 대중교통으로 출발선까지. 응원·관람도 쉬움</li>
-  <li><strong>도심 + 자연의 혼합</strong> — 인왕산·북악산·북한산·수락산·불암산·아차산 등 서울 외곽 산을 잇고, 청계천·한강 강변과 서울 성곽길·둘레길까지 통과</li>
-  <li><strong>야경 러닝</strong> — 100K는 새벽 5시 출발해 야간 구간을 지나며, 도심 야경을 보며 달리는 경험이 독특합니다</li>
-</ul>
-<p>트레일러닝 자체가 처음이라면 <a href="/blog/trail-running-appeal-beginner-guide-2026">트레일 러닝 입문 가이드</a>를, 국내 트레일·스카이레이스 시즌 전체가 궁금하면 <a href="/blog/korea-trail-skyrace-guide-2026">트레일·스카이레이스 대회 가이드</a>를 함께 보세요.</p>
-
-<h2>2026 종목 한눈에 보기</h2>
-<table>
-  <thead>
-    <tr><th>종목</th><th>거리(실측)</th><th>누적 고도</th><th>제한 시간</th><th>참가비</th><th>정원</th><th>자격</th></tr>
-  </thead>
-  <tbody>
-    <tr><td><strong>ULTRA 100K</strong></td><td>약 109km</td><td>약 4,700~5,200m</td><td>28시간 30분</td><td>280,000원</td><td>500</td><td>ITRA 2점</td></tr>
-    <tr><td><strong>SKY 50K</strong></td><td>약 54km</td><td>약 2,800~3,200m</td><td>14시간</td><td>200,000원</td><td>500</td><td>ITRA 1점</td></tr>
-    <tr><td><strong>20K</strong>(신규)</td><td>20km</td><td>약 1,100m</td><td>—</td><td>120,000원</td><td><strong>1,700</strong></td><td><strong>제한 없음</strong></td></tr>
-  </tbody>
-</table>
-<p>100K의 실제 거리는 약 109km, 누적 상승은 5,000m에 육박합니다(완주 시간 보통 18~26시간). 서울의 거의 모든 주요 산을 잇는 셈이라 이름만 '100K'지 난이도는 극한급이죠.</p>
-
-<div class="callout tip">
-  <span class="callout-icon">🟢</span>
-  <div class="callout-body">
-    <p class="callout-title">입문자라면 — 올해 신설된 20K</p>
-    <p>20K는 <strong>오전 7:30 출발(야간 구간 없음)·정원 1,700명·ITRA 자격 요건 없음</strong>으로, 셋 중 가장 접근하기 좋습니다. 기존 10K 종목을 두 배로 확장한 형태로 보이며, 도심 트레일을 가볍게 경험하기에 적당하죠. 다만 <strong>2026 코스 세부와 20K 컷오프·필수 장비는 아직 공식 점검 중</strong>이니, 확정 안내는 공식 채널(seoul100k.com)에서 확인하세요.</p>
-  </div>
-</div>
-
-<h2>준비물 — 트레일화·헤드램프는 필수</h2>
-<p>서울 100K는 도심에서 출발하지만 코스 대부분이 <strong>산악 트레일</strong>입니다. 인왕산 기차바위처럼 미끄러운 암릉 구간도 있어 로드화로는 위험하죠. 의무·권장 장비는 이렇습니다.</p>
-<ul>
-  <li><strong>트레일러닝화</strong>(필수) — 그립과 보호가 중요. <a href="/best/trail">트레일화 추천</a>에서 <a href="/shoes/hoka-speedgoat-6">호카 스피드고트 6</a> 같은 험로 대응 모델을 확인하세요</li>
-  <li><strong>헤드램프</strong> — 100K 야간 구간 필수(50K 새벽 출발도 권장)</li>
-  <li><strong>트레일 배낭 + 물통(1L↑)</strong> — 일회용 컵 미제공</li>
-  <li><strong>방수 재킷·비상식량·보조배터리·119 앱</strong> 등</li>
-</ul>
-
-<h2>접수 정보</h2>
-<ul>
-  <li><strong>접수 시작</strong> — 2026년 6월 2일(월) 오전 10시부터 <strong>선착순</strong></li>
-  <li><strong>접수처</strong> — IntheTrail (inthetrail.com)</li>
-  <li><strong>대회일</strong> — 2026년 9월 19~20일(토~일), 광화문광장</li>
-  <li><strong>참고</strong> — 100K·50K는 새벽 5시 출발이라 전날 인근 숙박 권장(노보텔 패키지 별도)</li>
-</ul>
-<p>선착순이라 인기 종목(특히 입문용 20K)은 조기 마감될 수 있으니, 도전을 마음먹었다면 서두르는 게 좋습니다.</p>
-
-<h2>마무리</h2>
-<p>서울 100K는 "도심 한복판에서 출발하는 울트라트레일"이라는, 세계적으로도 드문 포맷의 대회입니다. 100K·50K는 ITRA 포인트가 필요한 상급자용이지만, <strong>올해 신설된 20K 덕분에 트레일 입문자에게도 문이 열렸죠</strong>. 산악 스카이레이스인 <a href="/blog/untangodo-skyrace-10th-anniversary-2026">운탄고도</a>가 부담스러웠다면, 접근성 좋은 서울 100K의 20K로 첫 트레일을 경험해 보는 것도 좋은 선택입니다. 트레일화 한 켤레부터 준비해 보세요.</p>
-
-<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 서울100K 공식 사이트·서울시 보도자료·ITRA 등재 정보를 정리한 내용입니다. 2026 코스 세부와 20K 컷오프·필수 장비 등은 공식 점검·발표 전 단계라 변동될 수 있으니, 접수·코스 확정 정보는 공식 채널(seoul100k.com, IntheTrail)에서 확인하세요. (확인 시점: 2026-06-09)</p>
+<h2>20K라는 이름만 보고 로드 하프와 비교하지 않기</h2>
+<p><a href="https://seoul100k.com/course" target="_blank" rel="noopener noreferrer">공식 코스 안내</a>의 20K는 거리 22.7km·누적 상승 1,236m·제한시간 8시간입니다. 참가 자격 부담이 낮은 종목이라는 설명이 오르막 없는 20km나 누구나 준비 없이 완주하는 코스라는 뜻은 아닙니다.</p>
+<table><thead><tr><th>부문</th><th>공식 게시 거리 / 누적 상승</th><th>제한시간</th><th>출발 계획</th></tr></thead><tbody><tr><td>100K</td><td>102.3km / 4,535m</td><td>31시간</td><td>9월 19일 05:00</td></tr><tr><td>50K</td><td>49.07km / 3,019m</td><td>17시간</td><td>9월 19일 05:00</td></tr><tr><td>20K</td><td>22.7km / 1,236m</td><td>8시간</td><td>9월 19일 07:30</td></tr></tbody></table>
+<p>장소는 광화문광장 육조마당, 대회 기간은 9월 19~20일이었습니다. <a href="https://seoul100k.com/" target="_blank" rel="noopener noreferrer">대회 홈페이지</a>는 출발시각 변동 가능성과 코스 실측 후 세부 변경 가능성을 명시합니다. 표는 확인한 게시 계획이며 개인 GPS 거리나 실제 출발 시각을 인증하는 자료는 아닙니다.</p>
+<h2>북한산 상생구간은 기록 경쟁을 멈추는 구간</h2>
+<p><a href="https://www.seoul.go.kr/news/news_report.do?bbsNo=158&amp;nttNo=466504" target="_blank" rel="noopener noreferrer">서울시 9월 16일 발표</a>는 북한산 일부에 국립공원 상생구간을 두고 걷기 또는 저속 이동으로 탐방객을 우선 배려한다고 설명합니다. 해당 구간은 순위 산정에서 제외하되 전체 레이스 기록은 제공하는 운영 계획입니다. 순위 제외를 이유로 이 구간을 건너뛰거나, 일반 탐방로에서 전력으로 달려도 된다고 이해하면 안 됩니다.</p>
+<p>후속 대회를 비교할 때도 거리·고도뿐 아니라 국립공원 통과 방식, 보행 전환 구간과 순위 계산 조건까지 읽어야 합니다. 실제 통과 범위와 모든 참가자에게 적용된 시간 계산 내역은 이번에 조회하지 않았습니다.</p>
+<h2>참가 자격은 부문별로</h2>
+<p><a href="https://seoul100k.com/86" target="_blank" rel="noopener noreferrer">공식 대회개요</a>는 20K를 건강한 남녀 및 유의사항 동의 조건으로 안내합니다. 50K는 만 18세 이상, 기간 내 UTMB Index 20K 또는 ITRA 1포인트 이상, 100K는 만 18세 이상, UTMB 50K 이상 또는 ITRA 2포인트 이상을 안내합니다. 증명 대상 기간은 2024년 6월 2일~2026년 8월 7일이며 제출 기한도 8월 7일입니다. 20K 설명 다음에 이어지는 50K 조건을 20K 자격으로 잘못 붙이지 않도록 구분했습니다.</p>
+<h2>모집 정원과 실제 참가 인원도 구분</h2>
+<p>홈페이지 접수 계획은 100K 500명·50K 500명·20K 1,700명으로 합계 2,700명, 참가비는 각각 28만·20만·12만원입니다. 반면 9월 16일 서울시 발표는 출전 규모를 총 2,000명으로 안내합니다. 계획과 행사 직전 발표 수치를 같은 값으로 정리하거나, 2,700명 전원이 완주했다고 쓰지 않습니다.</p>
+<p>홈에는 6월 1일 사전 접수·6월 2일 일반 접수 계획이 남아 있지만 지금의 참가권 판매를 뜻하지 않습니다. 다음 회차 준비는 <a href="/blog/seoul-dulle-trail-156km-ultra-fkt-guide">서울둘레길 거리·활동시간 가이드</a>와 함께 산악 활동 경험부터 비교하세요.</p>
+<h2>자주 묻는 질문</h2>
+<h3>서울100K 20K는 정확히 20km인가요?</h3><p>공식 코스 페이지는 22.7km와 누적 상승 1,236m를 안내합니다. 이는 게시된 코스 수치이며 실제 개인 GPS 기록과는 다를 수 있습니다.</p>
+<h3>북한산 상생구간은 기록이 아예 없어지나요?</h3><p>서울시는 해당 구간을 순위 산정에서 제외하고 전체 레이스 기록은 제공하는 계획으로 설명했습니다. 전체 기록 삭제나 코스 생략 허용으로 해석하면 안 됩니다.</p>
 `,
+    updatedAt: "2026-11-10",
+    faqs: [
+      {
+        "question": "서울100K 20K는 정확히 20km인가요?",
+        "answer": "공식 코스 페이지는 22.7km와 누적 상승 1,236m를 안내합니다. 이는 게시된 코스 수치이며 실제 개인 GPS 기록과는 다를 수 있습니다."
+      },
+      {
+        "question": "북한산 상생구간은 기록이 아예 없어지나요?",
+        "answer": "서울시는 해당 구간을 순위 산정에서 제외하고 전체 레이스 기록은 제공하는 계획으로 설명했습니다. 전체 기록 삭제나 코스 생략 허용으로 해석하면 안 됩니다."
+      }
+    ],
   },
   {
-    id: 'untangodo-skyrace-10th-anniversary-2026',
-    slug: 'untangodo-skyrace-10th-anniversary-2026',
-    title: '이번 주말, 한국 최대 스카이레이스가 10살이 된다 — 운탄고도 스카이레이스 10주년 | 스카이레이스란? 종목·코스·난이도와 내년 도전 가이드',
-    description: '6월 13~14일 강원 정선 하이원리조트에서 운탄고도 스카이레이스가 10주년(10회)을 맞습니다. 옛 석탄 운반로를 달리는 한국 대표 스카이레이스로, 전날 6/12엔 10주년 스페셜 나이트 트레일(16km)도 열리죠. 스카이레이스가 일반 트레일·로드와 뭐가 다른지, SKY Run·Half·Marathon 종목과 코스 난이도, 트레일화 준비물, 그리고 내년 도전을 위한 접수 팁까지 정리했습니다.',
-    thumbnail: '/images/blog/untangodo-skyrace-10th-anniversary-2026.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-06-09',
-    category: 'news' as const,
-    readingTime: 8,
-    tags: ['운탄고도 스카이레이스', '스카이레이스', '트레일러닝', '하이원리조트', '정선', '10주년', '트레일화', '대회'],
+    id: "untangodo-skyrace-10th-anniversary-2026",
+    slug: "untangodo-skyrace-10th-anniversary-2026",
+    title: "운탄고도 스카이레이스 2026 — 10회 코스·그룹 출발·야간 세션 구분",
+    description: "운영사의 공개 레이스 데이터로 운탄고도 2026의 실제 거리·누적 상승·그룹별 출발을 확인했습니다. 스카이런 11.5km와 스카이하프 20.4km, 별도 ACG 야간 세션을 같은 참가권으로 묶지 않습니다.",
+    thumbnail: "/images/blog/verified-untangodo-skyrace-10th-anniversary-2026-20261110.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-06-09",
+    category: "news",
+    readingTime: 6,
+    tags: [
+      "운탄고도 스카이레이스",
+      "스카이레이스",
+      "트레일러닝",
+      "하이원리조트",
+      "정선",
+      "10주년",
+      "트레일화",
+      "대회"
+    ],
     content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>운탄고도 스카이레이스</strong>가 이번 주말(6/13~14, 정선 하이원리조트) <strong>10주년(2017년 1회 → 2026년 10회)</strong>을 맞습니다. 전날 6/12엔 10주년 스페셜 <strong>나이트 트레일(16km·+710m, 200명)</strong>도 열립니다</li>
-    <li>스카이레이스는 트레일러닝의 한 갈래로 <strong>누적 고도가 크고 산악 코스라 로드화로는 불가</strong> — 트레일화·배낭·방풍이 사실상 필수입니다</li>
-    <li>올해 본 대회는 이미 <strong>추첨 접수 마감</strong>(2월)이지만, 입문 종목 <strong>SKY Run 11.5km</strong>는 하프 완주자라면 내년 도전해볼 만합니다</li>
-  </ul>
-</div>
+<p><strong>2026년 11월 10일 원문 대조.</strong> 아래 2026년 대회 일정은 지났습니다. 다음 회차의 날짜·접수·혜택은 별도 발표를 확인해야 합니다.</p>
 
-<div class="callout info">
-  <span class="callout-icon">🏔️</span>
-  <div class="callout-body">
-    <p class="callout-title">이번 주말, 정선 고원에서</p>
-    <p>6월 13~14일 강원 정선 <strong>하이원리조트</strong>에서 <strong>운탄고도 스카이레이스</strong>가 열립니다. 2017년 시작해 올해로 <strong>10회·10주년</strong>, 세계 25개국 이상이 참가하고 UTMB 인덱스에도 등재된 한국 대표 스카이레이스죠. 호카(HOKA)가 5년 연속 메인 스폰서를 맡을 만큼 트레일 신(scene)의 간판 대회입니다. 10주년을 기념해 본 대회 전날(6/12)엔 야간 스페셜 세션까지 준비됐습니다.</p>
-  </div>
-</div>
-
-<h2>'운탄고도'가 뭔가요?</h2>
-<p>운탄고도(運炭高道)는 1960~70년대 강원도 탄광 지역에서 <strong>석탄을 나르던 옛 운반로</strong>를 뜻합니다. 영월·정선·태백 일대 해발 700~1,330m 고원 능선을 따라 이어진 <strong>총연장 173km</strong>의 길을, 하이원리조트가 '하늘길'로 정비해 대회 코스로 활용하죠. 이름의 '1330'은 최고점 만항재(1,330m)에서 왔습니다. 암벽·급경사보다 <strong>비교적 완만한 고원 숲길</strong>이 많고, 고지대라 6월에도 선선한 게 특징입니다.</p>
-
-<h2>스카이레이스 = 로드도, 일반 트레일도 아니다</h2>
-<p>스카이레이스(Skyrace)는 트레일러닝의 하위 장르로, <strong>누적 고도 상승이 크고 고지대 산악을 달리는</strong> 종목입니다. 로드 마라톤과 가장 큰 차이는 '속도'보다 <strong>오르막·내리막 기술과 등반력</strong>이 승부를 가른다는 점이에요.</p>
-<ul>
-  <li><strong>로드 러닝</strong> — 평지 포장도로, 페이스(속도) 중심</li>
-  <li><strong>일반 트레일러닝</strong> — 흙길·산길, 로드보다 기술 필요</li>
-  <li><strong>스카이레이스</strong> — 트레일 중에서도 <strong>고도 누적이 현저히 크고</strong>, 산악 코스라 로드화 사용 불가, 의무장비 규정이 더 엄격</li>
-</ul>
-<p>스카이레이스가 처음이라면 개념과 시즌 전체 흐름을 <a href="/blog/korea-trail-skyrace-guide-2026">한국 트레일·스카이레이스 대회 가이드</a>에서, 트레일러닝 자체가 낯설다면 <a href="/blog/trail-running-appeal-beginner-guide-2026">트레일 러닝 입문 가이드</a>에서 먼저 감을 잡는 걸 추천합니다.</p>
-
-<h2>2026 종목 한눈에 보기</h2>
-<table>
-  <thead>
-    <tr><th>종목</th><th>거리</th><th>누적 고도</th><th>제한 시간</th><th>참가비</th><th>난이도</th></tr>
-  </thead>
-  <tbody>
-    <tr><td><strong>SKY Run</strong></td><td>11.5km</td><td>610m</td><td>4시간</td><td>80,000원</td><td>입문 적합</td></tr>
-    <tr><td><strong>SKY Half</strong></td><td>20.4km</td><td>1,005m</td><td>5시간</td><td>110,000원</td><td>중급</td></tr>
-    <tr><td><strong>SKY Marathon</strong></td><td>42.2km</td><td>1,910m</td><td>8시간</td><td>150,000원</td><td>상급·엘리트</td></tr>
-    <tr><td><strong>나이트 트레일</strong>(10주년)</td><td>16km</td><td>710m</td><td>—</td><td>별도</td><td>경험자(야간)</td></tr>
-  </tbody>
-</table>
-
-<div class="callout tip">
-  <span class="callout-icon">🌙</span>
-  <div class="callout-body">
-    <p class="callout-title">10주년 스페셜 — 나이트 트레일 (6/12)</p>
-    <p>본 대회 전날인 <strong>6월 12일(금) 밤, 하이원리조트에서 16km·누적 710m</strong>의 나이트 트레일이 단 <strong>200명 한정</strong>으로 열립니다. 헤드램프를 켜고 고원을 달리는 특별 세션이죠. 사전등록(PRE-REGISTRATION) 방식으로 진행되며, <strong>참가비·출발 시각·의무장비 등 세부는 주최 측(@goodrunner_skyrace) 공지를 확인</strong>하세요(공식 페이지 정식 오픈 전 단계로 보입니다).</p>
-  </div>
-</div>
-
-<h2>입문자도 가능할까? — SKY Run 11.5km</h2>
-<p>네 종목 중 <strong>SKY Run(11.5km·누적 610m)</strong>이 가장 접근하기 좋습니다. 4시간 제한이라 여유도 있고요. 다만 <strong>로드 레이스와는 준비가 다릅니다</strong>. 하프마라톤 완주 체력이 있다면 거리 자체는 무리가 아니지만, 오르내림이 많아 무릎 부담이 크고 노면이 거칠어 <strong>트레일 특화 준비</strong>가 필요합니다. 나이트 트레일 16km는 야간+고도 조합이라 트레일 경험자에게 권합니다.</p>
-
-<h2>준비물 — 트레일화는 '선택'이 아니라 '필수'</h2>
-<p>하이원 하늘길은 돌길·흙길·뿌리 구간이 섞여 있어 <strong>로드화로는 미끄러지고 위험</strong>합니다. 실제로 2024년 참가자의 약 65%가 호카를 신었을 만큼 그립 좋은 트레일화가 표준이죠. 쿠셔닝과 접지력을 갖춘 <a href="/best/trail">트레일화</a>를 준비하세요 — 대표적으로 <a href="/shoes/hoka-speedgoat-6">호카 스피드고트 6</a> 같은 모델이 이런 고도·거친 노면에 강합니다. 그 외 배낭(수분·비상식량), 방풍 재킷(고산 돌풍·안개 대비)도 챙기는 게 안전합니다.</p>
-
-<h2>내년에 도전하려면 — 접수 팁</h2>
-<p>올해 본 대회는 이미 <strong>추첨 접수가 마감</strong>됐습니다(매년 2월 초 접수). 2025년엔 약 2,200명 정원에 <strong>1만 명 가까이 몰릴</strong> 만큼 경쟁이 치열하죠. 내년 도전을 노린다면 이렇게 준비하세요.</p>
-<ul>
-  <li><strong>2월 접수 기간을 놓치지 마세요</strong> — 굿러너컴퍼니(goodrunner.co.kr)에서 신청 후 추첨</li>
-  <li><strong>겨울 동안 트레일 적응 훈련</strong> — 등산·언덕 반복 주행으로 등반력·하산력을 미리 키워두기</li>
-  <li><strong>트레일화부터 장만</strong> — 한 켤레로 평소 산길 훈련까지 겸하면 일석이조</li>
-  <li><strong>숙박은 일찍</strong> — 대회 기간 하이원리조트·정선 일대 숙소가 빠르게 찹니다</li>
-</ul>
-
-<h2>마무리</h2>
-<p>운탄고도 스카이레이스 10주년은 단순한 레이스를 넘어 <strong>2박 3일 축제</strong>에 가깝습니다(요가·트레이닝 사전 프로그램, 먹거리 부스 등). 올해 출전권이 없더라도 한국 스카이레이스가 어디까지 왔는지 지켜볼 만한 주말이고, 트레일에 막 관심이 생겼다면 <strong>내년을 목표로 올여름부터 산을 타보는 것</strong>이 가장 좋은 출발입니다. 로드에서 트레일로 한 발 넓히고 싶은 러너에게 운탄고도는 더없이 좋은 목표가 되어줄 겁니다.</p>
-
-<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 굿러너컴퍼니·강원랜드 공식 자료와 ITRA·UTMB 등재 정보, 러닝 매체 보도를 정리한 내용입니다. 나이트 트레일 등 10주년 스페셜 세부(참가비·시각·의무장비)는 공식 발표 전 단계라 변동될 수 있으니 주최 측(@goodrunner_skyrace, goodrunner.co.kr) 공지를 확인하세요. (참고 글감: @goodrunner_co, 2026-06)</p>
+<h2>10회 대회, 종목 이름과 실제 거리는 다릅니다</h2>
+<p><a href="https://www.goodrunner.co.kr/race/race.html?id=97" target="_blank" rel="noopener noreferrer">굿러너 공식 대회 페이지</a>가 사용하는 공개 행사 데이터는 제10회 대회를 6월 13~14일 하이원리조트 일정으로 안내합니다. 별도의 <a href="https://www.goodrunner.co.kr/race/course.html?id=97" target="_blank" rel="noopener noreferrer">공식 코스 화면</a>에 표시되는 종목별 수치는 다음과 같습니다. 아래는 운영사 게시값이며 개인 GPS 파일을 재측정한 결과는 아닙니다.</p>
+<table><thead><tr><th>종목</th><th>거리 / 누적 상승</th><th>A·B그룹 출발 계획</th><th>제한시간</th></tr></thead><tbody><tr><td>Sky Run</td><td>11.5km / 610m</td><td>6월 13일 13:00 / 13:10</td><td>4시간</td></tr><tr><td>Sky Half</td><td>20.4km / 1,005m</td><td>6월 14일 09:00 / 09:10</td><td>5시간</td></tr><tr><td>Sky Marathon</td><td>42.2km / 1,910m</td><td>6월 14일 08:00 / 08:10</td><td>8시간</td></tr></tbody></table>
+<p>12K·20K라는 분류 표기를 실제 거리와 혼동하거나, Sky Half를 도로 하프 공인 거리와 같다고 쓰면 안 됩니다. 출발 장소는 하이원리조트 스키하우스로 안내합니다.</p>
+<h2>같은 거리라도 그룹과 관문 시간을 함께</h2>
+<p>코스 안내는 B그룹이 A그룹에서 출발하면 실격·시상 제외, 동반주를 원하면 B그룹에서 함께 출발할 것을 안내합니다. 시상 기준도 NET TIME으로 적혀 있습니다. 다른 로드 대회의 건타임 시상 규칙을 가져와 설명하지 않습니다.</p>
+<p>Marathon 게시 관문은 17.3km 하이원호텔 11:30, 24.3km 도롱이연못 12:50, 38.3km 도롱이연못 15:20이며 골인 마감은 16:00입니다. 단순히 총 8시간을 거리로 나눈 평균 페이스만 맞추면 된다는 계산은 중간 관문을 놓칠 수 있습니다. 그룹별 개인 적용과 현장 변경 여부는 해당 참가자 안내를 함께 읽어야 합니다.</p>
+<h2>금액·인원은 공개 안내의 시점을 남깁니다</h2>
+<p><a href="https://www.goodrunner.co.kr/race/info.html?id=97" target="_blank" rel="noopener noreferrer">공식 대회안내</a>의 참가비는 Run 8만원·Half 11만원·Marathon 15만원, 접수 계획은 2월 4일 12시~2월 9일 18시, 발표 2월 10일 14시입니다. 모집 인원은 요약과 코스별 데이터 사이에 차이가 남아 있어 하나의 확정 실제 참가자 수로 통합하지 않았습니다.</p>
+<p>사전 지급품은 Run 6월 13일 10시부터, Half·Marathon은 같은 날 14시부터 현장 본인 확인 후 수령, 대리 수령 불가로 안내합니다. 모든 지급품을 사전 택배나 모든 참가자에게 주는 완주 선물로 설명하지 않습니다.</p>
+<h2>6월 12일 ACG 야간 세션은 따로 보기</h2>
+<p><a href="https://goodrunner.co.kr/article/youtube/8/30006/" target="_blank" rel="noopener noreferrer">운영사 6월 1일 답사 영상 소개</a>는 6월 12일 ACG 나이트 트레일을 별도로 소개합니다. 이 설명만으로 본대회 참가권에 야간 세션이 포함되거나, 16km 야간 코스·추가 혜택이 모두 확정된다고 볼 수 없습니다. 기존 글의 구체적인 야간 거리·포함 혜택은 이번에 원문으로 확정하지 못해 제외했습니다.</p>
+<p>참가 브랜드 <a href="https://www.hyperice.co.kr/2026untangodo" target="_blank" rel="noopener noreferrer">하이퍼아이스의 행사 후기</a>는 6월 13~14일 현장 체험 부스 운영을 설명합니다. 부스가 있었다는 사실과 제품의 의학적 회복 효과는 구분합니다. 산악 대회 준비는 <a href="/blog/trail-running-appeal-beginner-guide-2026">트레일 입문 가이드</a>에서 이어 보세요.</p>
+<h2>자주 묻는 질문</h2>
+<h3>Sky Half는 로드 하프와 같은 거리인가요?</h3><p>2026 운영사 코스 데이터는 20.4km·누적 상승 1,005m로 안내합니다. 도로 하프 기록과 같은 거리·같은 조건의 성적으로 비교하지 않습니다.</p>
+<h3>본대회에 신청하면 ACG 야간 세션도 참여할 수 있었나요?</h3><p>자동 포함으로 확인하지 못했습니다. 운영사가 별도로 소개한 세션이며, 본대회 참가권과 같은 권리로 안내하지 않습니다.</p>
 `,
+    updatedAt: "2026-11-10",
+    faqs: [
+      {
+        "question": "Sky Half는 로드 하프와 같은 거리인가요?",
+        "answer": "2026 운영사 코스 데이터는 20.4km·누적 상승 1,005m로 안내합니다. 도로 하프 기록과 같은 거리·같은 조건의 성적으로 비교하지 않습니다."
+      },
+      {
+        "question": "본대회에 신청하면 ACG 야간 세션도 참여할 수 있었나요?",
+        "answer": "자동 포함으로 확인하지 못했습니다. 운영사가 별도로 소개한 세션이며, 본대회 참가권과 같은 권리로 안내하지 않습니다."
+      }
+    ],
   },
   {
     id: "race-distance-difficulty-guide-2026",
@@ -3477,89 +3287,56 @@ export const posts_2026_06: BlogPost[] = [
     ],
   },
   {
-    id: 'incheon-international-half-marathon',
-    slug: 'incheon-international-half-marathon',
-    title: '26년째 봄을 여는 인천 대표 하프 — 인천국제하프마라톤 | 송도 해안·\'통곡의 벽\'·WA 공인 코스 완전 정리',
-    description: '2001년 창설돼 26년째 이어지는 인천국제하프마라톤. 서울 동아마라톤 직후 봄 시즌 첫 하프로, 세계육상연맹(WA) 공인 코스를 문학경기장에서 달립니다. 송도국제도시 해안 바닷바람과 경기장 진입 오르막 \'통곡의 벽\', 트랙 피니시가 특징이죠. 코스·종목·참가비·기념품과 가을 인천마라톤(풀코스)과의 차이까지 정리했습니다.',
-    thumbnail: '/images/blog/incheon-international-half-marathon.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-06-08',
-    category: 'news' as const,
+    id: "incheon-international-half-marathon",
+    slug: "incheon-international-half-marathon",
+    title: "인천국제하프마라톤 2026 — 봄 대회·08:30 출발·5km 계측 제외 확인",
+    description: "제26회 인천국제하프마라톤은 3월 22일 문학경기장 일정이었습니다. 11월 인천마라톤과 구분하고, 5km 기록칩·온라인 기록증 제외, 넷타임 기록·건타임 시상 조건을 공식 요강으로 정리했습니다.",
+    thumbnail: "/images/blog/verified-incheon-international-half-marathon-20261110.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-06-08",
+    category: "news",
     readingTime: 6,
-    tags: ['인천국제하프마라톤', '인천 하프마라톤', '하프 마라톤', '문학경기장', '송도 러닝', '봄 마라톤', 'WA 공인 코스', '러닝 대회', '인천 러닝'],
+    tags: [
+      "인천국제하프마라톤",
+      "인천 하프마라톤",
+      "하프 마라톤",
+      "문학경기장",
+      "송도 러닝",
+      "봄 마라톤",
+      "WA 공인 코스",
+      "러닝 대회",
+      "인천 러닝"
+    ],
     content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>인천국제하프마라톤은 2001년 창설된 26년 역사의 봄 대표 하프</strong> — 인천일보 주최, 세계육상연맹(WA) 공인 코스를 문학경기장에서 달립니다(하프·10K·5K)</li>
-    <li>코스 특징은 <strong>송도국제도시 해안 바닷바람</strong>과 경기장 진입 직전의 긴 오르막 — 참가자들이 <strong>'통곡의 벽'</strong>이라 부르는 마지막 고비, 그리고 <strong>트랙 피니시</strong>입니다</li>
-    <li>매년 <strong>3월 마지막 주 일요일 전후, 선착순 1.5만 명</strong> 규모. <strong>가을에 열리는 \'인천마라톤\'(풀코스)과는 완전히 별개</strong> 대회이니 혼동하지 마세요</li>
-  </ul>
-</div>
+<p><strong>2026년 11월 10일 원문 대조.</strong> 아래 2026년 대회 일정은 지났습니다. 다음 회차의 날짜·접수·혜택은 별도 발표를 확인해야 합니다.</p>
 
-<div class="callout info">
-  <span class="callout-icon">🌸</span>
-  <div class="callout-body">
-    <p class="callout-title">'봄의 전령사' — 수도권 봄 시즌 첫 하프</p>
-    <p>인천국제하프마라톤은 <strong>서울 동아마라톤(3월 중순) 직후</strong>에 열려, 수도권 러너에게 <strong>봄 시즌 첫 대회</strong>로 자리 잡았습니다. 겨우내 쌓은 훈련을 점검하는 "스피드 테스트" 무대로 인기죠. 2026년 제26회는 3월 22일 인천문학경기장에서 이미 열렸고, 매년 비슷한 시기에 반복되는 전통 대회라 미리 알아두면 내년 봄 계획에 좋습니다.</p>
-  </div>
-</div>
-
-<h2>어떤 대회인가</h2>
-<ul>
-  <li><strong>역사</strong>: 2001년 제1회 창설, 2026년 <strong>제26회</strong>까지 이어진 인천 최대 규모 달리기 축제 (2021년 제21회는 코로나로 비대면 진행)</li>
-  <li><strong>주최/주관</strong>: 인천일보·대한육상연맹 주최, (사)인천마라톤조직위원회 주관</li>
-  <li><strong>베뉴</strong>: 2002 월드컵 개최지인 <strong>인천문학경기장</strong> (인천 미추홀구)</li>
-  <li><strong>성격</strong>: 엘리트와 시민 러너가 함께하는 <strong>시민 중심 국제 대회</strong>, 선착순 1.5만 명</li>
-</ul>
-
-<h2>코스 — 송도 해안과 '통곡의 벽'</h2>
-<p>WA(세계육상연맹) 공인 코스로, <strong>문학경기장 → 선학지하차도 → 동춘고가도로 → 송도1교 → 해안부대사거리(반환) → 다시 복귀 → 경기장 트랙 피니시</strong>의 왕복 반환 구조입니다.</p>
-<ul>
-  <li><strong>초반 스피드</strong> — 출발 직후 완만한 내리막이라 페이스 올리기 좋습니다</li>
-  <li><strong>송도 해안 바닷바람</strong> — 송도국제도시 해안 구간에서 바람이 강해, 기록 변수로 작용합니다</li>
-  <li><strong>'통곡의 벽'</strong> — 경기장 진입 직전의 긴 오르막이 마지막 고비. 막판 체력 안배가 관건입니다</li>
-  <li><strong>트랙 피니시</strong> — 경기장 관중석 앞 트랙에서 완주하는 짜릿한 마무리</li>
-</ul>
-<p>넓고 잘 통제된 도심 도로에 주차·화장실 등 편의시설이 좋아 대형 대회치고 운영이 안정적이라는 평이 많습니다.</p>
-
-<h2>종목·참가비·기념품</h2>
-<table>
-  <thead>
-    <tr><th>종목</th><th>제한시간</th><th>참가비(제26회 기준)</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>하프(21.0975km)</td><td>3시간</td><td>50,000원</td></tr>
-    <tr><td>10K</td><td>2시간</td><td>50,000원</td></tr>
-    <tr><td>5K</td><td>2시간</td><td>45,000원</td></tr>
-  </tbody>
-</table>
-<ul>
-  <li><strong>완주 기념품</strong>: 완주 메달 + 기념 티셔츠(사이즈 선택) + 배번·기록칩(하프·10K) + 온라인 기록증 + 완주 간식</li>
-  <li>접수는 통상 <strong>1~2월</strong>에 진행됩니다(제26회는 1/5~2/13)</li>
-</ul>
-
-<div class="callout warning">
-  <span class="callout-icon">⚠️</span>
-  <div class="callout-body">
-    <p class="callout-title">'인천마라톤'과 헷갈리지 마세요</p>
-    <p>이름이 비슷해 자주 혼동되는데, 둘은 <strong>완전히 다른 대회</strong>입니다.</p>
-    <ul>
-      <li><strong>인천국제하프마라톤(이 글)</strong> — 봄(3월), 문학경기장, <strong>하프·10K·5K</strong>, 2001년~, 인천일보 주최. 사이트 incheonmarathon.<strong>co.kr</strong></li>
-      <li><a href="/blog/2026-incheon-marathon">인천마라톤</a> — 가을(11월), <strong>풀코스</strong>, 2025년 신설, 인천시·대한육상연맹. 사이트 incheonmarathon.<strong>or.kr</strong></li>
-    </ul>
-    <p>풀코스를 원하면 가을 인천마라톤, 봄에 하프·단축 종목을 원하면 이 대회입니다.</p>
-  </div>
-</div>
-
-<h2>2027 제27회는?</h2>
-<p>2026-06 기준 <strong>제27회(2027) 일정은 아직 미발표</strong>입니다. 다만 매년 <strong>3월 마지막 주 일요일 전후</strong> 개최 패턴이 일정해, 2027년에도 3월 하순 개최가 유력합니다. 봄 첫 하프를 노린다면 <strong>연초(1~2월) 접수 오픈</strong>을 기다리면 됩니다. 일정이 공개되면 업데이트하겠습니다.</p>
-
-<h2>마무리</h2>
-<p>인천국제하프마라톤은 화려한 신상 대회는 아니지만, <strong>26년간 봄을 열어 온 수도권 대표 하프</strong>로서 안정적인 운영과 WA 공인 코스, '통곡의 벽'을 넘어 트랙에서 완주하는 특유의 경험을 제공합니다. 겨울 훈련 점검과 봄 시즌 워밍업에 딱 맞는 대회죠. 봄에 하프를 노린다면 매년 3월 하순을 기억해 두세요. 인천에서 평소 뛸 코스가 궁금하다면 <a href="/blog/incheon-unique-running-courses-7">인천 달리기 좋은 곳 7선</a>을, 가을 풀코스는 <a href="/blog/2026-incheon-marathon">인천마라톤</a>을 참고하세요. 다른 대회 일정은 <a href="/marathon">마라톤 캘린더</a>에서 확인할 수 있습니다. 🏃</p>
-
-<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 인천국제하프마라톤 공식·마라톤GO·KorMarathon 등록 정보와 역대 대회 자료를 종합한 내용입니다. 제26회(2026-03-22)는 종료됐고, 제27회(2027) 일정·참가비는 미발표 상태입니다. 참가비·기념품은 제26회 기준이며 회차별로 변동될 수 있으니, 참가 전 공식 홈페이지(incheonmarathon.co.kr)를 확인하세요.</p>
+<h2>인천이라는 이름이 같아도 대회를 구분</h2>
+<p><a href="https://www.incheonmarathon.co.kr/outline.php" target="_blank" rel="noopener noreferrer">제26회 공식 요강</a>의 날짜는 3월 22일 일요일, 장소는 인천문학경기장입니다. 출발은 08:30으로 적혀 있습니다. 이것은 봄 인천국제하프마라톤이며, 11월 인천마라톤의 참가권·접수·풀코스와 섞어 읽으면 안 됩니다.</p>
+<p>봄 대회의 공식 주소는 <strong>incheonmarathon.co.kr</strong>입니다. <a href="/blog/2026-incheon-marathon">가을 대회 안내</a>의 일정과 대조할 때도 이름뿐 아니라 날짜·주최·출발지를 함께 확인하세요. 기존 글의 2001년 창설부터 이어진 연수나 전 종목 WA 공인 주장은 이번 자료로 확정하지 못해 제외했습니다.</p>
+<h2>5km는 공식 기록 제공 대상이 아닙니다</h2>
+<table><thead><tr><th>부문</th><th>참가비</th><th>지급·기록 조건</th></tr></thead><tbody><tr><td>하프</td><td>50,000원</td><td>기록칩·온라인 기록증 안내</td></tr><tr><td>10km</td><td>50,000원</td><td>기록칩·온라인 기록증 안내</td></tr><tr><td>5km</td><td>45,000원</td><td>기록칩·온라인 기록증 제외</td></tr></tbody></table>
+<p><a href="https://www.incheonmarathon.co.kr/precaution.php" target="_blank" rel="noopener noreferrer">공식 참가자 유의사항</a>은 하프·10km 기록을 넷타임으로 측정하고 시상 순위는 건타임으로 발표한다고 설명합니다. 배번호 뒤 칩을 훼손하거나 지정 매트를 지나지 않은 경우, 다른 출발 그룹·대리 참가 등은 기록과 시상에 영향을 줄 수 있습니다. 개인 참가 기록은 조회하지 않았습니다.</p>
+<h2>집결시각은 공식 페이지 안에서도 차이가 있습니다</h2>
+<p>요강 상단은 07시까지 집결, 참가자 유의사항은 07:30까지 집결·08시까지 출발 지점 대기를 안내합니다. 출발 08:30과 집결시각은 같은 뜻이 아니며, 서로 다른 집결 문구를 하나의 확정 최종시각으로 합치지 않았습니다. 당시 개인 문자와 최종 현장 공지를 함께 대조할 항목입니다.</p>
+<p>유의사항은 하프·5km를 주경기장, 10km를 보조경기장 집결 예정으로 구분합니다. 같은 문학경기장이라도 일행이 무조건 같은 입구·같은 공간에서 준비했다고 가정하면 안 됩니다. 안내 제한시간은 하프 3시간·10km 2시간입니다.</p>
+<h2>종료 후 찾을 정보</h2>
+<p><a href="https://www.incheonmarathon.co.kr/notice.php" target="_blank" rel="noopener noreferrer">공식 공지 목록</a>에는 3월 18일 코스 중요지점, 3월 12일 행사장 배치도 등이 남아 있습니다. 기록 메뉴는 스마트칩으로 연결됩니다. 기록증 정정·사진 구매 가능 여부·분실물 보관 종료일은 이번 요강만으로 보장하지 않으므로 사무국 1866-1718에 문의할 사항을 정리해 확인하세요.</p>
+<p>공식 환불 규정은 1월 30일 17시까지 신청, 가상계좌 500원 차감·카드 전액 취소를 안내했습니다. 이미 지난 기한이며 지금 같은 조건의 환불이나 다음 회차의 규정으로 안내하지 않습니다. 계획 모집 15,000명도 실제 출전·완주 인원과 구분합니다.</p>
+<h2>자주 묻는 질문</h2>
+<h3>11월 인천마라톤과 같은 대회인가요?</h3><p>이 글은 2026년 3월 22일 문학경기장 일정의 제26회 인천국제하프마라톤을 다룹니다. 11월 대회의 참가권·출발지·종목 규정과 섞어 읽지 않아야 합니다.</p>
+<h3>5km도 온라인 기록증을 받을 수 있었나요?</h3><p>공식 요강은 5km를 기록칩과 온라인 기록증 지급에서 제외합니다. 참가 메달이 있다는 사실만으로 공식 계측 기록을 제공한다고 볼 수 없습니다.</p>
 `,
+    updatedAt: "2026-11-10",
+    faqs: [
+      {
+        "question": "11월 인천마라톤과 같은 대회인가요?",
+        "answer": "이 글은 2026년 3월 22일 문학경기장 일정의 제26회 인천국제하프마라톤을 다룹니다. 11월 대회의 참가권·출발지·종목 규정과 섞어 읽지 않아야 합니다."
+      },
+      {
+        "question": "5km도 온라인 기록증을 받을 수 있었나요?",
+        "answer": "공식 요강은 5km를 기록칩과 온라인 기록증 지급에서 제외합니다. 참가 메달이 있다는 사실만으로 공식 계측 기록을 제공한다고 볼 수 없습니다."
+      }
+    ],
   },
   {
     id: "2026-incheon-marathon",
@@ -3961,94 +3738,56 @@ export const posts_2026_06: BlogPost[] = [
     ],
   },
   {
-    id: 'mind-vs-im-bank-marathon-2026-seoul',
-    slug: 'mind-vs-im-bank-marathon-2026-seoul',
-    title: '내일 서울, 같은 시각 두 하프 — 마인드 마라톤 vs iM뱅크 코리아오픈마라톤 | 서울광장 기부런 vs 여의도 한강 코스 한눈 비교',
-    description: '6월 7일(일) 오전 7시 30분, 서울 한복판에서 두 마라톤이 동시에 출발합니다. 서울광장에서 출발하는 1만 명 규모의 기부런 "마인드 마라톤", 그리고 여의도공원 한강변을 달리는 "iM뱅크 코리아오픈마라톤". 두 대회의 출발지·코스·성격·완주 기념품을 한눈에 비교하고, 같은 날 겹치는 교통통제와 관전·당일 체크리스트까지 정리했습니다.',
-    thumbnail: '/images/blog/mind-vs-im-bank-marathon-2026-seoul.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-06-06',
-    category: 'news' as const,
+    id: "mind-vs-im-bank-marathon-2026-seoul",
+    slug: "mind-vs-im-bank-marathon-2026-seoul",
+    title: "마인드 vs iM뱅크 마라톤 2026 — 접수 변경·5km 칩·대회 후 사진 경로 비교",
+    description: "6월 7일 서울광장과 여의도에서 열린 두 대회의 공식 후속 공지를 비교했습니다. iM뱅크 2차 홈페이지 접수, 5km 칩 제외, 서로 다른 사진 서비스와 마인드 기부 발표의 범위를 구분합니다.",
+    thumbnail: "/images/blog/verified-mind-vs-im-bank-marathon-2026-seoul-20261110.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-06-06",
+    category: "news",
     readingTime: 6,
-    tags: ['마인드 마라톤', 'iM뱅크 코리아오픈마라톤', '서울 마라톤', '하프 마라톤', '여의도 마라톤', '서울광장', '6월 마라톤', '러닝 대회', '교통통제'],
+    tags: [
+      "마인드 마라톤",
+      "iM뱅크 코리아오픈마라톤",
+      "서울 마라톤",
+      "하프 마라톤",
+      "여의도 마라톤",
+      "서울광장",
+      "6월 마라톤",
+      "러닝 대회",
+      "교통통제"
+    ],
     content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>6/7(일) 오전 7:30, 서울에서 두 하프가 동시에 출발</strong>합니다 — 서울광장의 <strong>마인드 마라톤</strong> vs 여의도공원의 <strong>iM뱅크 코리아오픈마라톤</strong></li>
-    <li><strong>성격이 정반대</strong>입니다. 마인드는 참가비 전액을 기부하는 <strong>1만 명 규모 도심 기부런</strong>, iM뱅크는 한강변을 달리는 <strong>8천 명 규모 리버사이드 대회</strong>(프로스펙스 하네스 완주 기념품)</li>
-    <li>둘 다 접수는 마감됐고, <strong>같은 날 서울 도심·여의도 교통통제가 겹칩니다</strong> — 참가자도 관전객도 <strong>대중교통(지하철) 필수</strong>, 통제 구간은 당일 아침 TOPIS에서 확인하세요</li>
-  </ul>
-</div>
+<p><strong>2026년 11월 10일 원문 대조.</strong> 아래 2026년 대회 일정은 지났습니다. 다음 회차의 날짜·접수·혜택은 별도 발표를 확인해야 합니다.</p>
 
-<div class="callout info">
-  <span class="callout-icon">🏃</span>
-  <div class="callout-body">
-    <p class="callout-title">"이번 주 일요일, 어디로 가시나요?"</p>
-    <p>한 러닝 정보 채널(@runninglife_korea)이 던진 질문이 화제였습니다. <strong>같은 날, 같은 시각(7:30), 서울 도심에서 두 하프 대회</strong>가 동시에 열리거든요. 서울광장에서 출발하는 <strong>마인드 마라톤</strong>과 여의도공원에서 출발하는 <strong>iM뱅크 코리아오픈마라톤</strong>. 둘 다 HALF·10K·5K를 운영하지만, 성격은 꽤 다릅니다. 내일 달리는 분도, 응원하러 가는 분도 참고할 수 있게 한눈에 정리했습니다.</p>
-  </div>
-</div>
-
-<h2>한눈 비교</h2>
-<table>
-  <thead>
-    <tr><th></th><th>마인드 마라톤</th><th>iM뱅크 코리아오픈마라톤</th></tr>
-  </thead>
-  <tbody>
-    <tr><td><strong>출발</strong></td><td>서울광장 (시청)</td><td>여의도공원 문화의 마당</td></tr>
-    <tr><td><strong>시각</strong></td><td colspan="2" style="text-align:center">6/7(일) 오전 7:30 동시 출발</td></tr>
-    <tr><td><strong>종목</strong></td><td>HALF / 10K / 5K</td><td>HALF / 10K / 5K</td></tr>
-    <tr><td><strong>규모</strong></td><td>약 1만 명</td><td>약 8천 명</td></tr>
-    <tr><td><strong>코스</strong></td><td>도심 평탄·직선 위주</td><td>한강변 리버사이드</td></tr>
-    <tr><td><strong>성격</strong></td><td>참가비 전액 기부 (마음건강)</td><td>iM뱅크 앱 추첨 (은행 대회)</td></tr>
-    <tr><td><strong>완주 기념품</strong></td><td>메달 + 음료·비타민</td><td>메달 + 프로스펙스 하네스(각인)</td></tr>
-  </tbody>
-</table>
-
-<h2>① 마인드 마라톤 — 서울광장 한복판의 기부런</h2>
-<p>가장 큰 특징은 <strong>참가비 전액이 아동·청소년 마음건강 지원 NGO에 기부</strong>된다는 점입니다. 한국수력원자력과 매체 '더버터'가 함께 열고 보건복지부·서울시가 후원하는, <strong>"달리기로 기부한다"</strong>는 취지의 대회죠. 규모도 <strong>1만 명</strong>으로 두 대회 중 더 큽니다.</p>
-<ul>
-  <li><strong>출발</strong>: 서울광장(시청) — 세종대로 일대를 도는 <strong>평탄한 직선 위주 코스</strong>로 안내됩니다</li>
-  <li><strong>기록</strong>: 넷타임(칩 계측) 방식 / 제한시간 하프 3시간·10K 1시간 30분·5K 1시간</li>
-  <li><strong>완주 기념품</strong>: 메달 + 비타500 이온킥 등 음료·비타민</li>
-  <li><strong>5K는 패밀리런</strong>(최대 4인 팀)으로 가족 단위 참가에 맞춰져 있습니다</li>
-</ul>
-<p>도심 광장에서 출발해 접근성이 좋고, "기록보다 의미"를 챙기고 싶은 러너에게 어울립니다.</p>
-
-<h2>② iM뱅크 코리아오픈마라톤 — 여의도 한강 리버사이드</h2>
-<p>이쪽은 <strong>iM뱅크(옛 대구은행)가 시중은행 전환 2주년을 기념해 처음 단독 주최</strong>하는 대회입니다. 대회 운영은 런코리아가 맡았고, 지방은행에서 시중은행으로 발돋움한 <strong>수도권 인지도 확대</strong>의 성격이 깔려 있죠. "코리아오픈마라톤"이라는 이름은 이번 iM뱅크 대회의 브랜드로, 오래된 동명 대회와는 무관합니다.</p>
-<ul>
-  <li><strong>출발</strong>: 여의도공원 문화의 마당 — <strong>여의도공원~한강변~서강대교</strong>를 경유하는 리버사이드 코스</li>
-  <li><strong>접수</strong>: iM뱅크 앱을 통한 <strong>추첨제</strong>(만 19세 이상) — 은행 고객 중심 운영이라 진입장벽이 조금 있습니다</li>
-  <li><strong>완주 기념품</strong>: 메달 + <strong>프로스펙스 경량 러닝 하네스</strong>(약 8.9만 원 상당, 무료 각인) — 실용 기념품으로 화제</li>
-</ul>
-<p>한강 경관을 즐기며 달리고 싶은 러너, 그리고 고급 완주 기념품에 끌리는 러너에게 매력적입니다.</p>
-
-<h2>그래서 뭐가 다른가 — 한 줄 정리</h2>
-<p><strong>마인드 마라톤</strong>은 "<strong>도심 광장에서 의미를 달리는</strong>" 대규모 기부런, <strong>iM뱅크 코리아오픈마라톤</strong>은 "<strong>한강을 끼고 달리는</strong>" 은행 주최 리버사이드 대회입니다. 접근성·규모·기부 취지를 본다면 마인드, 경관·완주 기념품·러닝 환경을 본다면 iM뱅크 쪽이죠. 참고로 <strong>같은 6/7에는 상암에서 '제23회 새벽강변 국제마라톤'도 열려</strong>, 서울에만 하프 대회가 셋입니다. 전체 일정은 <a href="/marathon">마라톤 캘린더</a>에서 함께 확인할 수 있습니다.</p>
-
-<div class="callout warning">
-  <span class="callout-icon">🚧</span>
-  <div class="callout-body">
-    <p class="callout-title">내일 아침 필수 — 교통통제 & 당일 체크리스트</p>
-    <p>두 대회가 같은 시각 출발하면서 <strong>서울 도심(세종대로·시청)과 여의도 일대 교통통제가 동시에</strong> 걸립니다. 구체적인 통제 구간·시간은 대회 측이 텍스트로 공개하지 않았으니, <strong>당일 아침 직접 확인</strong>이 안전합니다.</p>
-    <ul>
-      <li><strong>대중교통 필수</strong> — 마인드: 1·2호선 시청역 / iM뱅크: 5호선 여의도역·9호선 국회의사당역. 대회장 인근 주차는 사실상 불가</li>
-      <li><strong>교통통제 확인</strong>: 서울시 <a href="https://topis.seoul.go.kr" target="_blank" rel="noopener">TOPIS</a> 또는 서울경찰청 <a href="https://www.spatic.go.kr" target="_blank" rel="noopener">교통정보센터</a>에서 전날 밤~당일 아침 최신 현황을</li>
-      <li><strong>참가자 막판 체크</strong>: 기록칩(배번) 부착 확인, 짐 보관소 위치, 완주 기념품 수령 창구 — 출발 전 미리 동선 파악</li>
-      <li>하프 선두는 출발 70~80분 뒤 <strong>오전 8:40~9:00경 결승</strong> — 응원 타이밍 참고</li>
-    </ul>
-  </div>
-</div>
-
-<h2>6월 러닝, 더위부터 챙기세요</h2>
-<p>6월 초라도 오전 7시 30분 출발이면 후반부엔 기온이 빠르게 오릅니다. 하프를 뛴다면 <strong>수분·페이스 관리</strong>가 기록보다 중요합니다. 여름 러닝 준비는 <a href="/blog/hot-weather-summer-running-safety-guide-korea">폭염 러닝 안전 가이드</a>를, 호흡이 가빠 옆구리가 결릴 땐 <a href="/blog/running-breathing-guide-korea">러닝 호흡법</a>을 참고하세요. 통기성 좋은 신발이 필요하다면 <a href="/blog/summer-breathable-running-shoes-2026">여름 통기성 러닝화 추천</a>도 있습니다.</p>
-
-<h2>마무리</h2>
-<p>같은 날, 같은 시각, 서울 한복판의 두 하프. <strong>마인드 마라톤</strong>이든 <strong>iM뱅크 코리아오픈마라톤</strong>이든, 내일 출발선에 서는 모든 러너의 안전한 완주를 응원합니다. 접수가 끝난 대회지만, "내년엔 어디로 갈까"를 고민한다면 두 대회의 성격 차이가 좋은 기준이 될 거예요. 다른 하프 대회 일정은 <a href="/blog/2026-garmin-run-korea-half-marathon">가민런 코리아</a>와 <a href="/marathon">마라톤 캘린더</a>에서 이어서 확인하세요. 🏅</p>
-
-<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 각 대회 공식 홈페이지(mindmarathon.kr, imrun.kr)와 보도자료, @runninglife_korea(2026-06-04)를 종합한 정보입니다. 코스 상세 경로와 교통통제 구간은 대회 측 미공개분이 있어 실제와 다를 수 있으니, 참가 전 공식 채널과 TOPIS를 반드시 확인하세요.</p>
+<h2>같은 날 07:30, 이후 확인할 내용은 다릅니다</h2>
+<p><a href="https://mindmarathon.kr/" target="_blank" rel="noopener noreferrer">마인드 공식 안내</a>와 <a href="https://www.imrun.kr/marathon/code/8046/" target="_blank" rel="noopener noreferrer">iM뱅크 공식 안내</a>는 6월 7일 07:30, 각각 서울광장과 여의도공원 문화의 마당을 안내합니다. 두 일정은 지났습니다. 기존의 ‘내일 출발’ 문구와 현재 교통통제처럼 보이는 설명을 종료 후 확인 정보로 바꿨습니다.</p>
+<table><thead><tr><th>확인 항목</th><th>마인드</th><th>iM뱅크 코리아오픈</th></tr></thead><tbody><tr><td>출발·집결 안내 장소</td><td>서울광장</td><td>여의도공원 문화의 마당</td></tr><tr><td>종목</td><td>하프·10K·5K</td><td>하프·10km·5km</td></tr><tr><td>참가비</td><td>7만·6만·5만원</td><td>6만5천·6만5천·5만5천원</td></tr><tr><td>모집 계획</td><td>10,000명</td><td>8,000명</td></tr><tr><td>5km 기록칩</td><td>하프·10K에 칩·넷타임 명시, 5K를 동일 계측으로 확정하지 않음</td><td>공식 홈에 기록칩 없음 명시</td></tr></tbody></table>
+<p>모집 인원을 실제 완주 인원으로 쓰지 않습니다. 장소가 도심 또는 한강변이라는 이유만으로 평탄도·혼잡도·PB 적합성을 단정하지도 않습니다.</p>
+<h2>iM뱅크는 앱 추첨만으로 끝나지 않았습니다</h2>
+<p>초기 안내는 앱 신청과 추첨이었지만 <a href="https://www.imrun.kr/bbs/board.php?bo_table=board01_8046&amp;wr_id=8" target="_blank" rel="noopener noreferrer">5월 11일 2차 모집 공지</a>는 홈페이지에서 참가신청과 결제를 모두 가능하게 변경했다고 설명합니다. 홈의 앱 전용 팝업만 읽으면 이 변경을 놓칩니다. <a href="https://www.imrun.kr/bbs/board.php?bo_table=board01_8046&amp;wr_id=12" target="_blank" rel="noopener noreferrer">5월 26일 후속 공지</a>는 참가 접수와 환불 접수의 마감을 안내합니다. 현재 참가 가능 안내가 아닙니다.</p>
+<p>마인드는 러너블 앱·웹 접수를 안내하고 5K 패밀리런을 1인 최대 4매 신청 가능으로 설명합니다. 이 문구를 반드시 4인 팀으로 뛰어야 한다는 뜻으로 바꾸지 않습니다. <a href="https://mindmarathon.kr/2026/1030/" target="_blank" rel="noopener noreferrer">참가 유의사항</a>의 하프·10K 칩 계측과 5K 참가 조건도 따로 읽어야 합니다.</p>
+<h2>사진은 다른 서비스를 찾습니다</h2>
+<ul><li><strong>마인드:</strong> <a href="https://mindmarathon.kr/2026/1336/" target="_blank" rel="noopener noreferrer">6월 11일 사진 공지</a>는 포토스포츠에서 배번호 또는 이름 검색을 안내합니다. 공식 갤러리는 당시 6월 중 공개 예정이라는 표현이어서, 모든 사진의 무료 공개가 완료됐다고 쓰지 않습니다.</li><li><strong>iM뱅크:</strong> <a href="https://www.imrun.kr/bbs/board.php?bo_table=board01_8046&amp;wr_id=14" target="_blank" rel="noopener noreferrer">6월 8일 사진 공지</a>는 샤라웃 배번호 검색과 필요 시 구매를 안내합니다. 사진이 있다는 사실은 원본 무료 제공이나 상업적 재사용 허락을 뜻하지 않습니다.</li><li><strong>iM뱅크 기록:</strong> <a href="https://www.imrun.kr/bbs/board.php?bo_table=board01_8046&amp;wr_id=15" target="_blank" rel="noopener noreferrer">기록 서비스 공지</a>가 스마트칩으로 연결됩니다. 기록칩이 없는 5km까지 같은 계측 기록을 보장하지 않습니다.</li></ul>
+<h2>기부도 ‘발표’와 ‘집행 완료’를 구분합니다</h2>
+<p><a href="https://mindmarathon.kr/2026/1333/" target="_blank" rel="noopener noreferrer">마인드 6월 10일 감사 공지</a>는 참가비 5억8천만원을 21개 배분기관에 전달해 마음건강 지원 사업에 활용할 예정이라고 설명합니다. 이는 운영사의 발표입니다. 개별 기관의 수령·전체 사업 집행·개인 기부금 영수증 발급을 독립 확인한 자료로 바꾸지 않습니다.</p>
+<p>다음 대회를 고를 때는 경품 가격보다 실제 계측 대상, 접수 방식 변경, 출발 장소, 취소 기한을 먼저 비교하세요. 두 2026 대회의 혜택이 다음 회차에도 유지된다는 뜻은 아닙니다.</p>
+<h2>자주 묻는 질문</h2>
+<h3>iM뱅크 대회는 은행 앱 추첨으로만 신청했나요?</h3><p>초기 안내는 앱 추첨이었지만 5월 11일 공식 공지는 2차부터 홈페이지에서 신청·결제를 모두 가능하게 변경했다고 설명합니다. 5월 26일에는 접수와 환불 마감이 공지됐습니다.</p>
+<h3>두 대회 사진은 모두 무료인가요?</h3><p>그렇게 확인되지 않았습니다. 마인드는 포토스포츠 검색과 갤러리 공개 계획을, iM뱅크는 샤라웃 검색과 필요 시 구매를 안내했습니다. 개인 사진 유무·가격·재사용 허락은 따로 확인해야 합니다.</p>
 `,
+    updatedAt: "2026-11-10",
+    faqs: [
+      {
+        "question": "iM뱅크 대회는 은행 앱 추첨으로만 신청했나요?",
+        "answer": "초기 안내는 앱 추첨이었지만 5월 11일 공식 공지는 2차부터 홈페이지에서 신청·결제를 모두 가능하게 변경했다고 설명합니다. 5월 26일에는 접수와 환불 마감이 공지됐습니다."
+      },
+      {
+        "question": "두 대회 사진은 모두 무료인가요?",
+        "answer": "그렇게 확인되지 않았습니다. 마인드는 포토스포츠 검색과 갤러리 공개 계획을, iM뱅크는 샤라웃 검색과 필요 시 구매를 안내했습니다. 개인 사진 유무·가격·재사용 허락은 따로 확인해야 합니다."
+      }
+    ],
   },
   {
     id: "side-stitch-running-causes-relief-korea",

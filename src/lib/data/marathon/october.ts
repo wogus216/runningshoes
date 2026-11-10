@@ -286,39 +286,56 @@ export const octoberEvents: MarathonEvent[] = [
     postRaceNote: "기록 문의는 010-5256-7034 문자만 가능하며 5km는 공식 기록 미제공이다. 사진 원본은 샤라웃에서 유료 구매 안내다. 메달 각인·배송은 개별 주소 확인과 실제 배송 내역을 구분해야 한다. https://www.shmarathon.kr/shmarathon/board/notice/?action=view&f_idx=43257&page=1 및 https://www.shmarathon.kr/shmarathon/board/notice/?action=view&f_idx=43260&page=1",
   },
   {
-    id: 'transjeju-utmb-2026',
-    name: '2026 트랜스제주 by UTMB',
-    date: '2026-10-02',
-    month: '10월',
-    location: '제주월드컵경기장·가시리 일대 (제주)',
-    region: '제주',
-    distances: ['울트라', '트레일'],
-    status: '대회종료',
+    id: "transjeju-utmb-2026",
+    name: "2026 트랜스제주 by UTMB",
+    date: "2026-10-02",
+    month: "10월",
+    location: "제주월드컵경기장·가시리 일대 (제주)",
+    region: "제주",
+    distances: [
+      "울트라",
+      "트레일"
+    ],
+    status: "대회종료",
     isMajor: true,
-    website: 'https://transjeju.utmb.world/',
-    registrationStart: '2026-03-18',
-    registrationEnd: '2026-07-31',
-    lastVerified: '2026-08-31',
-    registrationNote:
-      '접수 종료(7월 31일) — 배번은 대회 전 10월 1일·2일 10시~18시에 제주월드컵경기장에서 배부하는 일정이었습니다(엑스포 동시 진행). 100M·100K·60K 참가자 대상 레이스 브리핑은 10월 2일 19시 30분으로 공지됐습니다',
-    description:
-      'UTMB 월드시리즈 아시아 공식 대회. 10월 2~4일 제주 일정으로 100M(148km)·100K(104km)·60K·20K 4개 종목이 편성됐습니다. 접수 마감 7월 31일, 참가비는 USD 기준 100M $280·100K $220·60K $160·20K $90. 60K 이상은 UTMB Index 자격이 필요했지만 20K는 자격 제한 없이 참가할 수 있어 입문 종목으로 적합했습니다. 시상식은 10월 4일 10시에 60K·100K·100M을 묶어 제주월드컵경기장에서, 20K만 10월 3일 13시에 따로 하는 일정이었습니다.',
+    website: "https://transjeju.utmb.world/",
+    registrationStart: "2026-03-18",
+    registrationEnd: "2026-07-31",
+    lastVerified: "2026-11-10",
+    registrationNote: "공식 안내는 3월 18일 17시 접수 시작, 20K 일반 접수 3월 20일 17시, 선착순 예정 마감 7월 31일이다. 실제 종목별 매진 시각은 미확인이다. 10월 2일 배번·엑스포는 종목 페이지에서 10~20시로 안내하며 이전 18시 표기를 바로잡았다. 다음 회차 조건은 별도 확인한다.",
+    description: "10월 2~4일 제주 일정은 지났다. 공식 게시값은 100M 148km/상승 5,000m, 100K 104km/4,000m, 60K 60km/1,400m, 20K 20km/508m다. 참가 Index는 60K에 20K 이상·100K에 50K 이상·100M에 100K 이상을 요구하며 20K는 면제하되 계정이 필요하다. Running Stones와 본대회 출전 보장은 별개다.",
     courseInfo: {
-      terrain: '산악',
-      difficulty: '상급',
-      elevationGain: 5000,
-      courseDescription:
-        '제주 오름·중산간 트레일입니다. 100M 148km/누적 5,000m, 100K 104km/4,000m, 60K 60km/1,400m이고 장거리 두 종목은 한라산 정상을 밟습니다. 먼저 확인할 것은 종목마다 출발지가 다르다는 점입니다 — 100M과 100K는 제주월드컵경기장에서 출발하지만 60K와 20K는 서귀포 가시리(조랑말체험공원)에서 출발하므로 셔틀버스를 타야 합니다(60K는 05:30~06:00, 20K는 07:30~08:00 출발). 출발 시각과 제한시간도 제각각입니다. 100M은 10월 2일 21시에 출발해 37시간, 100K는 10월 3일 05시에 출발해 29시간, 60K는 같은 날 08시에 출발해 15시간, 20K는 10시에 출발해 4시간입니다. 골인은 20K를 뺀 세 종목 모두 제주월드컵경기장입니다. UTMB 월드시리즈라 종목별 필수 장비(트레일화·배낭·규정 수량의 물 등) 검사가 있습니다.',
+      "terrain": "산악",
+      "difficulty": "상급",
+      "elevationGain": 5000,
+      "courseDescription": "공식 게시 거리·누적 상승은 100M 148km/5,000m·100K 104km/4,000m·60K 60km/1,400m·20K 20km/508m다. 앞 두 종목은 제주월드컵경기장, 뒤 두 종목은 가시리 출발이다. 출발은 10월 2일 21시/3일 05시/08시/10시, 최대 허용시간은 37/29/15/4시간이다. 실제 개인 GPS나 현장 변경을 인증하는 값은 아니다. 각 종목 장비 목록은 별도로 확인한다."
     },
     raceInfo: {
-      timeLimits: [
-        { distance: '100M(148km)', hours: 37, minutes: 0 },
-        { distance: '100K(104km)', hours: 29, minutes: 0 },
-        { distance: '60K', hours: 15, minutes: 0 },
-        { distance: '20K', hours: 4, minutes: 0 },
+      "timeLimits": [
+        {
+          "distance": "100M(148km)",
+          "hours": 37,
+          "minutes": 0
+        },
+        {
+          "distance": "100K(104km)",
+          "hours": 29,
+          "minutes": 0
+        },
+        {
+          "distance": "60K",
+          "hours": 15,
+          "minutes": 0
+        },
+        {
+          "distance": "20K",
+          "hours": 4,
+          "minutes": 0
+        }
       ],
-      startTime: '21:00',
+      "startTime": "21:00"
     },
+    postRaceNote: "대회 종료 뒤 개인 완주 결과·Index·Running Stones 반영 완료는 미조회다. 일반 규정 페이지의 예전 연도·폴 설명보다 2026 종목별 페이지를 함께 읽어야 하며 해당 페이지는 스틱 사용 금지다. https://transjeju.utmb.world/races/Jeju100M 및 https://transjeju.utmb.world/races/Jeju20K",
   },
   {
     id: "andong-marathon-2026",
