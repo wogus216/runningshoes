@@ -117,224 +117,47 @@ export const posts_2026_02: BlogPost[] = [
     ],
   },
   {
-    id: 'seoul-running-guide-2026',
-    slug: 'seoul-running-course-shower-guide-2026',
-    title: '2026 서울 러닝 가이드: 남산 무료 샤워장 꿀팁부터 10대 핵심 코스까지',
-    description: '남산 북측순환로 상세 분석, 중부공원여가센터 무료 샤워장, 서울 베스트 러닝 코스 10곳 총정리. 서울 도심 러닝의 모든 것.',
-    thumbnail: '/images/blog/seoul-running-course-shower-guide-2026.webp',
-    content: `
-<figure class="my-10">
-  <img
-    src="https://flexible.img.hani.co.kr/flexible/normal/816/489/imgdb/child/2025/0706/53_17517602257869_20250702503848.jpg"
-    alt="서울 도심을 달리는 러너들"
-    class="w-full rounded-xl border border-border"
-    loading="eager"
-    decoding="async"
-  />
-  <figcaption class="text-sm text-secondary mt-2">
-    이미지 출처: <a href="https://www.hani.co.kr" target="_blank" rel="noopener noreferrer">한겨레</a>
-  </figcaption>
-</figure>
-
-<h2>서울, 거대한 러닝 트랙이 되다</h2>
-<p>
-  서울의 러닝 인구가 폭발적으로 늘어나며 도심은 거대한 러닝 트랙으로 변모했습니다.
-  특히 남산은 단순한 산책로를 넘어 체계적인 훈련과 힐링이 공존하는 <strong>러너들의 메카</strong>로 자리 잡았죠.
-  오늘 포스팅에서는 <strong>남산의 숨겨진 무료 샤워장 정보</strong>와 서울의 <strong>베스트 러닝 코스 10곳</strong>을 총정리해 드립니다.
-</p>
-
-<h2>러너의 마지막 고민 해결: 무료 샤워장 &amp; 짐 보관</h2>
-<p>
-  땀에 젖은 채 지하철을 타는 민망함은 이제 끝입니다. 남산 러너들을 위한 오아시스 같은 공간을 소개합니다.
-</p>
-
-<h3>[강력 추천] 중부공원여가센터 무료 샤워장</h3>
-<ul>
-  <li><strong>위치:</strong> 서울시 중구 삼일대로 231 (남산 예장공원 인근)</li>
-  <li><strong>특징:</strong> 남산 러닝 후 <strong>무료로 샤워</strong>를 할 수 있는 가장 매력적인 거점입니다.</li>
-  <li><strong>짐 보관:</strong> 샤워장 내 <strong>물품 보관함</strong>이 마련되어 있어, 러닝 복장으로 갈아입은 뒤 소지품을 안전하게 맡기고 가벼운 몸으로 남산을 달릴 수 있습니다.</li>
-  <li><strong>동선 팁:</strong> 충무로역이나 명동역에서 접근하기 좋으며, 샤워 후 바로 인근 카페나 식당으로 이동하기에 최적의 위치입니다.</li>
-</ul>
-
-<h3>지하철역 기반 러너지원공간 (2025.10 신설)</h3>
-<ul>
-  <li><strong>회현역 (4호선):</strong> 남산 코스의 시작점으로, <strong>탈의실·물품보관함·파우더룸</strong>을 갖춘 <strong>러너지원공간(Runner's Base)</strong>이 운영 중입니다. (샤워티슈 자판기 비치)</li>
-  <li><strong>여의나루역 (5호선):</strong> 여의도 안내센터 1층 <strong>무료 개방형 샤워장</strong> (06:30~22:00, 개인 세면도구 지참 필수).</li>
-  <li><strong>광화문역 &amp; 월드컵경기장역:</strong> 정비와 샤워가 가능한 베이스캠프 및 <strong>러닝용품 자동판매기</strong> (양말, 파스 등 구매 가능).</li>
-</ul>
-
-<h2>남산 집중 분석: 북측순환로 vs 순환로</h2>
-<p>
-  남산은 목적에 따라 크게 두 가지 코스로 나뉩니다. 훈련 강도와 선호에 따라 골라보세요.
-</p>
-
-<figure class="my-10">
-  <img
-    src="https://i.ytimg.com/vi/CMjnA1hUHoc/maxresdefault.jpg"
-    alt="남산 북측순환로 러닝 코스"
-    class="w-full rounded-xl border border-border"
-    loading="lazy"
-    decoding="async"
-  />
-  <figcaption class="text-sm text-secondary mt-2">
-    남산 북측순환로 - 보행자 전용 도로로 안전한 러닝이 가능합니다
-  </figcaption>
-</figure>
-
-<h3>남산 북측순환로 (훈련 &amp; 무릎 보호)</h3>
-<ul>
-  <li><strong>거리:</strong> 왕복 약 6.6km (편도 3.3km)</li>
-  <li><strong>특징:</strong> <strong>보행자 전용 도로</strong>로 차량과 자전거가 없어 안전합니다. <strong>포장 상태가 양호</strong>하여 무릎 충격이 적습니다.</li>
-  <li><strong>난이도:</strong> 중 (적당한 업힐 구간이 있어 심폐지구력과 하체 근력 훈련에 인기).</li>
-</ul>
-
-<h3>남산 순환로 (LSD &amp; 조망)</h3>
-<ul>
-  <li><strong>특징:</strong> 남산 전체를 크게 도는 코스로, <strong>신호등이 없어</strong> 장거리 지속주(LSD) 훈련에 최적입니다.</li>
-  <li><strong>뷰 포인트:</strong> 남산서울타워와 서울 시내 전경을 한눈에 담을 수 있어 관광 러닝의 재미도 쏠쏠합니다.</li>
-</ul>
-
-<figure class="my-10">
-  <img
-    src="https://storage.heypop.kr/assets/2025/09/11001137/20250910_151122-%EC%8D%B8%EB%84%A4%EC%9D%BC-scaled.jpg"
-    alt="한강 러닝 풍경"
-    class="w-full rounded-xl border border-border"
-    loading="lazy"
-    decoding="async"
-  />
-  <figcaption class="text-sm text-secondary mt-2">
-    이미지 출처: <a href="https://heypop.kr" target="_blank" rel="noopener noreferrer">헤이팝</a>
-  </figcaption>
-</figure>
-
-<h2>서울 10대 핵심 러닝 코스 분석</h2>
-<p>
-  지형적 특성과 인프라를 고려하여 선정된 서울의 대표 러닝 코스입니다.
-</p>
-
-<table>
-  <thead>
-    <tr>
-      <th>순위</th>
-      <th>코스 명칭</th>
-      <th>거리</th>
-      <th>특징 및 지면 상태</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>1</strong></td>
-      <td>남산 북측순환로</td>
-      <td>왕복 6.6km</td>
-      <td><strong>포장 양호</strong>, 차량 통제, 경사도 훈련 최적</td>
-    </tr>
-    <tr>
-      <td><strong>2</strong></td>
-      <td>반포-잠수교</td>
-      <td>5.5km</td>
-      <td>세빛섬 야경과 무지개 분수를 즐기는 <strong>야경 성지</strong></td>
-    </tr>
-    <tr>
-      <td><strong>3</strong></td>
-      <td>올림픽공원 (토성길)</td>
-      <td>2.2km</td>
-      <td>능선을 따르는 업힐 <strong>깔딱고개</strong>로 강도 높은 훈련 가능</td>
-    </tr>
-    <tr>
-      <td><strong>4</strong></td>
-      <td>석촌호수</td>
-      <td>2.5km</td>
-      <td><strong>100m 간격 거리 표기</strong>로 정밀 페이스 조절 가능</td>
-    </tr>
-    <tr>
-      <td><strong>5</strong></td>
-      <td>여의도공원 루프</td>
-      <td>2.5km</td>
-      <td>빌딩 숲 사이 평지 직선 구간으로 <strong>인터벌 훈련</strong> 용이</td>
-    </tr>
-    <tr>
-      <td><strong>6</strong></td>
-      <td>월드컵공원 (하늘공원)</td>
-      <td>6.0km</td>
-      <td><strong>291개 하늘계단</strong>과 억새밭 조망의 생태 복원 코스</td>
-    </tr>
-    <tr>
-      <td><strong>7</strong></td>
-      <td>서울숲 내부</td>
-      <td>3.0km</td>
-      <td>메타세콰이어 길과 거울연못을 지나는 <strong>힐링 코스</strong></td>
-    </tr>
-    <tr>
-      <td><strong>8</strong></td>
-      <td>청계천로</td>
-      <td>8.1km</td>
-      <td>전 구간 평지, 도심 어디서든 진출입 쉬운 접근성 최고 (왕복 시 16km)</td>
-    </tr>
-    <tr>
-      <td><strong>9</strong></td>
-      <td>경복궁 돌담길</td>
-      <td>2.6km</td>
-      <td>차도가 없어 안전하며 역사적 정취를 느끼는 <strong>시티런</strong></td>
-    </tr>
-    <tr>
-      <td><strong>10</strong></td>
-      <td>노들섬 둘레길</td>
-      <td>1.5km</td>
-      <td>한강 중앙 고립미, 500원 코인 라커 이용 가능</td>
-    </tr>
-  </tbody>
-</table>
-
-<h2>함께 달리고 싶다면? 7979 서울 러닝크루</h2>
-
-<figure class="my-10">
-  <img
-    src="https://hangang.seoul.go.kr/www/file/editorImage.do?fileNm=2ce1ad8562724b418bcd2d0e4d06f892.jpg&day=202404"
-    alt="7979 서울 러닝크루 단체 러닝"
-    class="w-full rounded-xl border border-border"
-    loading="lazy"
-    decoding="async"
-  />
-  <figcaption class="text-sm text-secondary mt-2">
-    이미지 출처: <a href="https://hangang.seoul.go.kr" target="_blank" rel="noopener noreferrer">한강사업본부</a>
-  </figcaption>
-</figure>
-
-<p>
-  의지가 부족하거나 제대로 된 주법을 배우고 싶다면 매주 목요일 저녁에 열리는 공공 프로그램을 추천합니다.
-</p>
-<ul>
-  <li><strong>운영 기간:</strong> 매년 4월 ~ 10월 말</li>
-  <li><strong>시간:</strong> 매주 목요일 오후 7시 ~ 9시</li>
-  <li><strong>참여 장소:</strong> 청계광장(초급), 반포한강공원(중급), 여의도공원(상급) 분리 운영</li>
-  <li><strong>특별 혜택:</strong> 육상 전문가 코치 지도, 완주 시 생수/에너지바 제공</li>
-</ul>
-
-<h2>코스별 추천 러닝화</h2>
-<p>
-  코스 특성에 맞는 러닝화를 선택하면 훈련 효과가 배가됩니다.
-</p>
-<ul>
-  <li><strong>남산 업힐 (북측순환로):</strong> 안정성과 쿠셔닝이 좋은 <a href="/shoes/asics-gel-kayano-33">아식스 카야노 31</a> 또는 <a href="/shoes/brooks-adrenaline-gts-25">브룩스 아드레날린 GTS 25</a></li>
-  <li><strong>한강 평지 (반포, 여의도):</strong> 가벼운 데일리화 <a href="/shoes/nike-pegasus-41">나이키 페가수스 41</a> 또는 <a href="/shoes/new-balance-1080-v14">뉴발란스 1080 v14</a></li>
-  <li><strong>인터벌 훈련 (석촌호수, 올림픽공원):</strong> 반응성 높은 <a href="/shoes/saucony-kinvara-16">사코니 킨바라 16</a> 또는 <a href="/shoes/adidas-boston-13">아디다스 보스턴 13</a></li>
-  <li><strong>장거리 LSD (청계천, 남산순환):</strong> 최고 쿠셔닝의 <a href="/shoes/hoka-bondi-9">호카 본디 9</a> 또는 <a href="/shoes/asics-gel-nimbus-28">아식스 님버스 27</a></li>
-</ul>
-
-<h2>마치며</h2>
-<p>
-  서울의 길을 달린다는 것은 이 도시의 역사와 자연, 활기찬 에너지를 온몸으로 흡수하는 과정입니다.
-  오늘 소개한 <strong>남산 무료 샤워장</strong>과 <strong>10대 코스</strong> 정보를 활용해 더욱 쾌적하고 즐거운 러닝 라이프를 시작해 보세요!
-</p>
-<p>
-  더 궁금한 코스 정보나 각 코스에 맞는 러닝화 추천이 필요하시면 <a href="/recommend">맞춤 추천</a> 페이지를 활용해 보세요.
-</p>
-    `,
-    author: '산초 에디터',
-    publishedAt: '2026-02-08',
-    category: 'guide',
-    tags: ['서울러닝', '남산러닝', '러닝코스', '무료샤워장', '북측순환로', '한강러닝', '러닝크루', '시티런'],
-    readingTime: 10,
+    id: "seoul-running-guide-2026",
+    slug: "seoul-running-course-shower-guide-2026",
+    title: "서울 러닝 후 샤워·짐 보관: 남산·여의도와 지하철 지원공간 구분",
+    description: "남산과 여의도 공원 샤워장의 위치·QR 인증·청소 시간을 확인했습니다. 지하철 러너지원공간은 기본 편의시설 무료와 락커 유료 안내가 있어 모든 곳을 무료 샤워장으로 묶지 않았습니다.",
+    thumbnail: "/images/blog/verified-seoul-running-course-shower-guide-2026-20261110.webp",
+    content: `<p><small>2026년 11월 10일 공개 원문 대조. 확인된 운영 안내와 개인 기록·실제 이용 가능 여부를 구분합니다.</small></p>
+<p>러닝 뒤 바로 출근하거나 약속에 가려면 코스만큼 샤워장 위치·출입·준비물이 중요하다. 공원 안내센터의 샤워장과 지하철 러너지원공간은 다른 시설이다. 무료라는 말만 보고 수건 없이 가거나 짐을 밤새 두는 계획을 세우지 말자.</p>
+<h2>남산: 지상 1층·수기 대장과 QR 인증</h2><p><a href="https://parks.seoul.go.kr/content.do?key=2604070012" target="_blank" rel="noopener noreferrer">서울의 공원 공식 FAQ</a>는 중부공원여가센터 지상 1층, 삼일대로 231의 러너샤워장을 무료·매일 06:30~22:00으로 안내한다. 수기 이용대장 작성 후 네이버 앱 QR 인증으로 출입하며 수건·샴푸 등은 개인 지참이다.</p><p>물품보관은 샤워와 별도로 가능하지만 운영시간이 같고 당일 회수가 원칙이다. 샤워 이용은 20분 내외를 권장한다. 과거 임시 시설의 지하 위치나 한시 개방 기간을 현재 시설과 혼동하지 않았다.</p>
+<h2>여의도: 한강공원 안내센터와 지하철역은 별도</h2><p><a href="https://news.seoul.go.kr/env/archives/566806" target="_blank" rel="noopener noreferrer">서울시 여의도 샤워장 운영 안내</a>의 시설은 한강공원 안내센터 1층이다. 매일 06:30~22:00이지만 16:00~17:00은 청소 시간이다. 여의나루역 러너스테이션의 프로그램과 연계한다는 설명이 역 안에 같은 샤워장이 있다는 뜻은 아니다.</p><p>스마트폰 네이버 QR 출입 인증과 개인 샤워용품 지참, 20분 이내 이용을 안내한다. 남녀 각 5개 샤워부스와 물품보관함이 있지만 시설 수를 현재 빈자리나 대기시간으로 바꾸어 보장하지 않는다.</p>
+<h2>러너지원공간: 기본 무료와 락커 유료를 구분</h2><p><a href="https://runbase.co.kr/" target="_blank" rel="noopener noreferrer">러너지원공간 운영 홈페이지</a>는 물품보관함·탈의실·파우더룸을 소개하고 기본 편의시설과 프로그램 이용은 무료라고 설명한다. 한편 짐 보관 FAQ에는 락커 이용을 유료로 안내한다. 기본 무료 문구만으로 락커까지 전부 무료라고 적지 않았다.</p><p>입장에는 휴대폰이 필요하며, 휴대폰을 락커에 넣고 나가면 다시 들어올 수 없다고 안내한다. 실제 이용 역의 공지와 락커 요금을 확인하자. 홈페이지에서 확인하지 못한 샤워 제공을 모든 지원공간의 공통 혜택으로 확장하지 않는다.</p>
+<h2>출발 전 준비는 다섯 가지</h2><ol><li>공원 안내센터인지 지하철 역사인지 정확한 시설 위치 저장</li><li>네이버 앱·휴대폰 인증 준비</li><li>수건·세면도구·갈아입을 옷 지참</li><li>청소·운영시간에 맞춰 복귀 계획</li><li>짐 보관 요금과 당일 회수 조건 확인</li></ol><p>이 글은 공개 운영 안내를 대조한 것으로 현장 대기·당일 고장·개인 출입을 확인한 후기는 아니다. 필요한 시설이 닫혔을 때 쓸 복귀 방법도 계획해 두자.</p>
+<h2>자주 묻는 질문</h2><h3>남산 샤워장은 무료인가요?</h3><p>공식 FAQ는 무료 이용과 수기 이용대장·네이버 앱 QR 인증을 안내합니다. 수건·샴푸 등은 개인이 준비해야 합니다.</p><h3>여의도 샤워장은 16시에도 이용할 수 있나요?</h3><p>확인한 운영 안내는 16~17시 청소 시간을 별도로 둡니다. 안내센터 위치와 운영 변동을 확인하고 복귀해야 합니다.</p><h3>지하철 러너지원공간 락커도 무료인가요?</h3><p>운영 홈페이지는 기본 편의시설 무료와 별개로 짐 보관 FAQ에서 락커 유료를 안내합니다. 이용할 역의 요금·조건을 따로 확인해야 합니다.</p>`,
+    author: "산초 에디터",
+    publishedAt: "2026-02-08",
+    category: "guide",
+    tags: [
+      "서울러닝",
+      "남산러닝",
+      "러닝코스",
+      "무료샤워장",
+      "북측순환로",
+      "한강러닝",
+      "러닝크루",
+      "시티런"
+    ],
+    readingTime: 4,
     featured: true,
+    updatedAt: "2026-11-10",
+    faqs: [
+      {
+        "question": "남산 샤워장은 무료인가요?",
+        "answer": "공식 FAQ는 무료 이용과 수기 이용대장·네이버 앱 QR 인증을 안내합니다. 수건·샴푸 등은 개인이 준비해야 합니다."
+      },
+      {
+        "question": "여의도 샤워장은 16시에도 이용할 수 있나요?",
+        "answer": "확인한 운영 안내는 16~17시 청소 시간을 별도로 둡니다. 안내센터 위치와 운영 변동을 확인하고 복귀해야 합니다."
+      },
+      {
+        "question": "지하철 러너지원공간 락커도 무료인가요?",
+        "answer": "운영 홈페이지는 기본 편의시설 무료와 별개로 짐 보관 FAQ에서 락커 유료를 안내합니다. 이용할 역의 요금·조건을 따로 확인해야 합니다."
+      }
+    ],
   },
 ];
