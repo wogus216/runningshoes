@@ -29,6 +29,39 @@ export function hasComparisonData(shoe: Shoe): boolean {
  * 페어 구성 로직을 손볼 때는 GSC `page` 차원으로 죽은 URL을 먼저 확인할 것.**
  */
 export const PINNED_PAIRS: readonly string[] = [
+  // 2026-11-10 리닝 정확 모델 사양을 비우면서 자동 후보에서 빠진 기존 URL을 유지.
+  'li-ning-red-hare-9-vs-puma-velocity-nitro-4',
+  'brooks-ghost-17-vs-li-ning-red-hare-9',
+  'hoka-clifton-10-vs-li-ning-red-hare-9',
+  'li-ning-red-hare-9-vs-nike-pegasus-41',
+  'brooks-ghost-18-vs-li-ning-red-hare-9',
+  'li-ning-red-hare-9-vs-nike-pegasus-premium',
+  'adidas-supernova-rise-2-vs-li-ning-red-hare-9',
+  'li-ning-red-hare-9-vs-new-balance-880-v15',
+  'li-ning-red-hare-9-vs-nike-pegasus-42',
+  'li-ning-red-hare-9-vs-saucony-ride-19',
+  'adidas-adizero-evo-sl-vs-li-ning-red-hare-9-pro',
+  'adidas-boston-13-vs-li-ning-red-hare-9-pro',
+  'asics-novablast-5-vs-li-ning-red-hare-9-pro',
+  'li-ning-red-hare-9-pro-vs-puma-deviate-pure-nitro',
+  'li-ning-red-hare-9-pro-vs-saucony-endorphin-speed-5',
+  'adidas-hyperboost-run-vs-li-ning-red-hare-9-pro',
+  'asics-novablast-6-vs-li-ning-red-hare-9-pro',
+  'li-ning-red-hare-9-pro-vs-nike-pegasus-plus',
+  'adidas-adizero-sl2-vs-li-ning-red-hare-9-pro',
+  'adidas-supernova-rise-3-vs-li-ning-red-hare-9-ultra',
+  'asics-megablast-vs-li-ning-red-hare-9-ultra',
+  'brooks-ghost-max-3-vs-li-ning-red-hare-9-ultra',
+  'hoka-mach-x-3-vs-li-ning-red-hare-9-ultra',
+  'li-ning-red-hare-9-ultra-vs-new-balance-1080-v14',
+  'li-ning-red-hare-9-ultra-vs-new-balance-sc-trainer-v3',
+  'li-ning-red-hare-9-ultra-vs-nike-vomero-18',
+  'li-ning-red-hare-9-ultra-vs-new-balance-1080-v15',
+  'brooks-ghost-max-4-vs-li-ning-red-hare-9-ultra',
+  'brooks-glycerin-22-vs-li-ning-red-hare-9-ultra',
+  'hoka-bondi-9-vs-li-ning-red-hare-9-ultra',
+  'li-ning-red-hare-9-ultra-vs-nike-vomero-plus',
+
   // 2026-09-18 네이버 "접근 불가한 페이지" 4건 — 소닉블라스트 2 등록(8/27)으로 1세대가 쿠션화
   // 상위 N에서 밀려나며 404가 된 페어. 네이버가 이미 수집한 URL이라 되살린다.
   'adidas-supernova-rise-3-vs-asics-sonicblast',

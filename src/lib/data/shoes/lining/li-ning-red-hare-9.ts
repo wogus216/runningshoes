@@ -1,5 +1,6 @@
 import type { Shoe } from '@/types/shoe';
 
+// 원문 재확인:2026-11-10. 확인 범위와 한계는 verification 참조.
 export const shoe: Shoe = {
   id: 'li-ning-red-hare-9',
   slug: 'li-ning-red-hare-9',
@@ -12,118 +13,98 @@ export const shoe: Shoe = {
   ],
   category: '입문화',
   rating: 4,
-  status: 'new',
-  // 국내 정가 없음(한국 미정식출시) — 병행가를 price·msrp 에 넣으면 '95,000원 러닝화'·구조화 데이터 가격으로 정가처럼 나간다.
-  // 실거래가는 priceAnalysis.streetPrice, 직구가 범위는 detailedSpecs.price 에 둔다(2026-10-23 점검).
-  description:
-    '흔히 "적토끼"로 불리는 적토마 9 라인 중 가장 저렴한 무플레이트 입문 트레이너입니다. 단층 폼의 소프트한 쿠션과 전족 와이드 설계가 강점입니다.',
-  oneliner: '10만 원 미만 입문 적토마 — 발볼 넓은 한국 러너를 위한 가성비 베이스',
-  tags: ['적토끼', '적토끼9', '적토마', '입문화', '입문', '가성비', '중국 러닝화', '와이드', '통근', '데일리', 'Li-Ning'],
-
-  specs: {
-    weight: 320,
-    cushioning: 6,
-    responsiveness: 5,
-    stability: 6,
-    drop: 9,
-    durability: 600,
-  },
-
-  biomechanics: {
-    stackHeight: {
-      heel: 32,
-      forefoot: 23,
-    },
-    drop: 9,
-    carbonPlate: false,
-    plateType: null,
-    midsoleType: 'LIGHT FOAM ULTRA (단층 EVA)',
-    optimalPace: '5:30-7:00 min/km',
-  },
-
-  injuryPrevention: {
-    plantarFasciitis: 'good',
-    achillesTendinopathy: 'good',
-    kneeIssues: 'good',
-    shinSplints: 'good',
-  },
-
-  koreanFootFit: {
-    toBoxWidth: 'standard',
-    flatFootCompatibility: 'fair',
-    wideOptions: false,
-    winterCompatibility: 'fair',
-    summerCompatibility: 'fair',
-  },
-
+  description: '정확 일반형 소재·사양 미확인. 정확 일반형의 무게·스택·드롭·독립 랩 수치는 미확인입니다.',
+  oneliner: '정확 일반형 소재·사양 미확인',
+  tags: [
+    '적토끼',
+    '적토끼9',
+    '적토마',
+    '입문화',
+    '입문',
+    '중국 러닝화',
+    '와이드',
+    '통근',
+    '데일리',
+    'Li-Ning',
+  ],
   targetUsers: {
     recommended: [
-      '러닝을 막 시작한 입문·학생 러너 (체력검정·통근 겸용)',
-      'km당 5:30~7:00 페이스의 가벼운 조깅 위주 러너',
-      '발볼이 넓어 9 Ultra·9 PRO(좁은 핏)가 부담스러운 한국 러너',
-      '10만 원 미만으로 푹신한 입문 트레이너를 찾는 가성비 러너',
+      '원문의 정확 모델·검체 조건과 실제 핏을 구분하려는 러너',
     ],
     notRecommended: [
-      '체중이 많이 나가는 러너 (BMI 24 초과 시 미드솔 지지 부족)',
-      '고강도 마라톤·템포 훈련 위주 러너 (단층 폼 반발 부족)',
-      '가벼운 레이싱화를 원하는 러너 (약 320g으로 무거운 편)',
-      '국내 AS·정식 유통이 중요한 러너 (직구·구매대행만 존재)',
+      '다른 버전의 수치나 미확인 국내 가격만으로 선택하는 경우',
     ],
   },
-
   features: [
-    'LIGHT FOAM ULTRA 단층 폼 — 마시멜로급 소프트 쿠션, 무릎 부담 낮음',
-    '전족 와이드 설계 — 적토마 9 라인 중 발볼 여유가 가장 큼',
-    'TUFF RB 아웃솔 — 500km+ 내구성',
-    '무플레이트 입문 트레이너 — 적토마 9 가족 중 가장 저렴(CNY 399)',
-    '체력검정·통근·가벼운 훈련 겸용 범용성',
+    '정확 일반형 소재·사양 미확인',
+    '정확 일반형의 판 유무·폼·아웃솔 원문 사양은 미확인입니다. Ultra·Pro 사양을 대입하지 않습니다.',
   ],
-
   priceAnalysis: {
-    streetPrice: 75000,
     valueRating: 9,
     priceTier: 'budget',
-    alternatives: ['hoka-clifton-10', 'brooks-ghost-17', 'saucony-ride-19'],
-    valueAdvantages: [
-      'CNY 399 정가 — 직구 시 10만 원 미만 (프로모션 시 더 저렴)',
-      '입문 메이저 브랜드(15만~18만)의 절반 값',
-      'TUFF RB 아웃솔 내구성으로 직구 실거래가 기준 km당 약 125~158원 수준',
+    alternatives: [
+      'hoka-clifton-10',
+      'brooks-ghost-17',
+      'saucony-ride-19',
     ],
   },
-
   detailedSpecs: {
-    weight: '약 320g (CN40/US7 실측, 识货 커뮤니티) · US M9 환산 약 335g (추정)',
-    stackHeight: '공식 미공개 — 힐 약 32mm / 전족 약 23mm 추정 (드롭 9mm 실측 기반)',
-    drop: '9mm (커뮤니티 실측, 공식 미공개)',
-    midsole: 'LIGHT FOAM ULTRA 단층 EVA계 폼 (제조사 리바운드 약 50% 표기)',
-    plate: '없음(무플레이트) — 9 Ultra 유리섬유·9 PRO TPU와 달리 베이스는 플레이트 미탑재',
-    outsole: 'TUFF RB 풀레스 러버 (500km+ 내구성, 전족 집중 마모 보고)',
-    upper: '이중 자카드 메시 + 열융착 — 통기성 보통(slight breathable)',
-    width: '전족 와이드 설계 표기(mm 미확인) — 적토마 9 라인 중 발볼 여유 가장 큼',
-    durability: '약 600km (TUFF RB 아웃솔)',
-    price: '직구 7만~10만 원대 (CNY 399 정가, 프로모션 CNY 140~200) · 한국 미정식출시',
-    costPerKm: '국내 정가 없음 — 직구 실거래가 기준 약 ₩125~158/km(600km 가정)',
-    footType: '중립~넓은 발. 입문·통근·체력검정 겸용',
-    landingPattern: '힐~미드풋. 이지 페이스 입문',
+    weight: '정확 일반형의 무게·스택·드롭·독립 랩 수치는 미확인입니다.',
+    stackHeight: '정확 일반형의 무게·스택·드롭·독립 랩 수치는 미확인입니다.',
+    drop: '정확 일반형의 무게·스택·드롭·독립 랩 수치는 미확인입니다.',
+    midsole: '정확 일반형 소재·사양 미확인. 기존 커뮤니티·리셀러의 무게·스택 추정과 다른 세대 수치를 검증된 일반형 사양으로 표시하지 않습니다.',
+    plate: '정확 일반형의 판 유무·폼·아웃솔 원문 사양은 미확인입니다. Ultra·Pro 사양을 대입하지 않습니다.',
+    width: '실제 신을 규격에서 앞쪽 길이·높이·거싯 압박·힐 고정을 확인하세요. 독립 랩 내부 너비·높이는 미확인이며 한 테스터의 좁은 체감을 한국인 전체 발볼 등급으로 바꾸지 않습니다.',
+    durability: '검증된 공통 수명 km 미확인. 국소 마모·짧은 착화 후기를 주행 수명으로 환산하지 않습니다.',
+    price: '한국 정확 모델의 정가·SKU·폭·현재 재고는 미확인입니다. 병행가·외화 환산을 한국 공식 정가로 입력하지 않습니다. 한국 미출시·AS 불가·와이드 없음으로 단정하지 않습니다.',
   },
-
   reviews: [
     {
-      userType: '산초 에디터 분석',
-      text:
-        '적토마 9 삼형제 중 막내이자 가장 저렴한 입문 모델입니다. 단층 LIGHT FOAM은 상위 Boom 폼만큼 튀지는 않지만 무릎 부담 적은 소프트 쿠션이 입문자에게 무난해요. 무엇보다 9 Ultra·9 PRO와 달리 전족이 넓게 설계돼, 발볼 넓어 적토마를 포기했던 한국 러너에게는 이 베이스가 오히려 맞을 수 있습니다. 약 320g으로 무거운 편이라 빠른 훈련용은 아닙니다.',
+      userType: '원문 기반 에디터 분석',
       source: 'editor',
-      sourceUrl: 'https://www.shopnings.com/li-ning-red-hare-9-men-s-running-shoes/',
+      sourceUrl: undefined,
+      text: '정확 일반형의 무게·스택·드롭·독립 랩 수치는 미확인입니다. 기존 커뮤니티·리셀러의 무게·스택 추정과 다른 세대 수치를 검증된 일반형 사양으로 표시하지 않습니다.',
     },
     {
-        userType: '구매 경로 주의 — 국내 정식 유통 없음',
-        text: '가격 대비 사양은 좋지만 구매 경로를 먼저 고려해야 합니다. 국내 정식 유통이 없어 구매대행이나 직구로만 접근 가능하고, 하자가 있어도 AS를 받을 곳이 없습니다. 사이즈 교환도 어려우므로 발볼·사이즈에 확신이 없다면 위험이 큽니다. 성능 자체는 320g으로 무거운 편이지만 단층 폼의 쿠션이 부드럽고, 9mm의 높은 드롭이라 뒤꿈치 착지에 무리가 없습니다. 전족부가 넓게 나와 발볼 넓은 러너에게 여유가 있습니다.',
-      },
+      userType: '원문 기반 확인 범위 · 착화 후기 미확인',
+      source: 'editor',
+      sourceUrl: undefined,
+      text: '정확 일반형의 제조사 상세 사양과 RTR·BITR·DOR 착화 원문을 이번 범위에서 확보하지 못했습니다.',
+    },
   ],
-
-  editorComment:
-    '2026년 1월 적토마 9 가족(Ultra·PRO·베이스) 동시 출시 중 베이스 모델입니다. 신상 + 비주류 브랜드라 RunRepeat 등 독립 랩 데이터가 없고, 무게(약 320g/CN40)·드롭(9mm)은 识货 커뮤니티 실측, 스택 수치는 공식 미공개라 드롭 기반 추정치입니다(detailedSpecs에 추정 표기). 9 Ultra(유리섬유 플레이트 맥스쿠션)·9 PRO(TPU 데일리)와 달리 베이스는 단층 폼 무플레이트 입문 트레이너이며, 전족 와이드 설계로 발볼 넓은 러너 적합성이 형제 모델보다 높습니다.\n\n사이즈·구매 가이드: 토박스가 표준 폭이고 전족 와이드 설계라 적토마 9 시리즈 중 발볼 넓은 러너에게 가장 잘 맞습니다. 병행가 95,000원에 예상 수명 500~700km(추정) 기준 km당 약 140~190원으로, 입문화 중 압도적 가성비입니다. 정식 유통·AS를 원하면 클리프턴 10이나 880 V15가 비슷한 입문 쿠션화 대안입니다.',
-
-  similarShoes: ['li-ning-red-hare-9-pro', 'hoka-clifton-10', 'new-balance-880-v15'],
-  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/xQJkGrY4' }, { store: '쿠팡', url: 'https://link.coupang.com/a/g5YHN5MIhg' }],
+  editorComment: '2026-11-10 원문 재확인. 한국 정확 모델의 정가·SKU·폭·현재 재고는 미확인입니다. 병행가·외화 환산을 한국 공식 정가로 입력하지 않습니다. 한국 미출시·AS 불가·와이드 없음으로 단정하지 않습니다. 정확 일반형의 무게·스택·드롭·독립 랩 수치는 미확인입니다. 기존 커뮤니티·리셀러의 무게·스택 추정과 다른 세대 수치를 검증된 일반형 사양으로 표시하지 않습니다. 정확 일반형의 제조사 상세 사양과 RTR·BITR·DOR 착화 원문을 이번 범위에서 확보하지 못했습니다. 실제 신을 규격에서 앞쪽 길이·높이·거싯 압박·힐 고정을 확인하세요. 독립 랩 내부 너비·높이는 미확인이며 한 테스터의 좁은 체감을 한국인 전체 발볼 등급으로 바꾸지 않습니다. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
+  similarShoes: [
+    'li-ning-red-hare-9-pro',
+    'hoka-clifton-10',
+    'new-balance-880-v15',
+  ],
+  purchaseLinks: [
+    {
+      store: '네이버',
+      url: 'https://naver.me/xQJkGrY4',
+    },
+    {
+      store: '쿠팡',
+      url: 'https://link.coupang.com/a/g5YHN5MIhg',
+    },
+  ],
+  verification: {
+    checkedAt: '2026-11-10',
+    scope: '한국 상품 조건, 해외 실험실·제조사 공시와 외부 착화 의견의 확인 범위를 구분했습니다. 제품 전체 검증 완료 표지가 아닙니다.',
+    sources: [
+      {
+        label: 'RunRepeat 측정법',
+        url: 'https://runrepeat.com/testing-methodology',
+        note: 'AC·HA·HC, SA·에너지 리턴, BR·구방식1~5와 내부/외부 폭을 구분합니다. 일반 정책은 개별 라벨 확인과 다릅니다.',
+      },
+    ],
+    limitations: [
+      '모델별 임상 예방·치료 등급, 공통 최적 페이스·주행 수명·km당 비용은 미확인으로 제거했습니다.',
+      '에디터 평점·1~10점·발볼 및 계절 분류·구매 링크는 모든 항목을 새로 검증한 수치나 임상 효과가 아닙니다.',
+      '판매 조건은 확인한 상품·시점에 한정합니다. 미확인을 미출시·단종·전국 재고 없음으로 해석하지 않습니다.',
+      '동세대 독립 실험실 자료 미확인. 제조사 공시와 DOR 소개를 독립 실측으로 표시하지 않음.',
+      '정확한 동세대 DOR 개별 착화 리뷰 미확인. 다른 세대로 대체하지 않음.',
+      '정확 모델 수치·핏 원문 미확인 항목은 다른 버전이나 리셀러 추정으로 채우지 않았습니다.',
+    ],
+  },
 };

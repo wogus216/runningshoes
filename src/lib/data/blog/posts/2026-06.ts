@@ -6668,95 +6668,40 @@ export const posts_2026_06: BlogPost[] = [
 `,
   },
   {
-    id: 'li-ning-red-hare-9-lineup-2026',
-    slug: 'li-ning-red-hare-9-lineup-2026',
-    title: '적토끼 9 삼형제 완전 비교 — 울트라 vs 프로 vs 베이스, 내게 맞는 건? | 리닝 적토마(레드헤어 9) 라인업 가이드',
-    description: '흔히 "적토끼"로 불리는 라이닝 적토마(레드헤어) 9는 한 세대에 울트라·프로·베이스 3종이 동시 출시됐습니다. 이름만 같지 미드솔 폼·플레이트·스택·발볼·가격이 전부 다른 별개의 신발이죠. 맥스쿠션 슈퍼트레이너(울트라), 가성비 데일리(프로), 발볼 넓은 입문(베이스) — 셋의 차이를 한눈에 비교하고, 내 발과 목적에 맞는 적토마를 고르는 법을 데이터로 정리했습니다. 인터랙티브 비교도 함께 제공합니다.',
-    thumbnail: '/images/blog/li-ning-red-hare-9-lineup-2026.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-06-09',
-    category: 'review' as const,
-    readingTime: 7,
-    tags: ['적토끼', '적토끼9', '적토끼 9 프로', '리닝 적토끼', '라이닝', '적토마', '레드헤어 9', 'Li-Ning', '중국 러닝화', '비교', '울트라', '프로', '베이스', '가성비 러닝화'],
+    id: "li-ning-red-hare-9-lineup-2026",
+    slug: "li-ning-red-hare-9-lineup-2026",
+    title: "적토끼9 울트라·프로·일반형 비교 — 확인된 구조와 아직 모르는 사양",
+    description: "울트라 RTR EU43/US9.5 검체와 프로 제조사 소재 공시를 구분합니다. 일반형에 다른 버전의 무게·스택·가격을 대입하지 않았습니다.",
+    thumbnail: "/images/shoes/lining/red-hare-9-ultra/side.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-06-09",
+    category: "review",
+    readingTime: 6,
+    tags: [
+      "리닝",
+      "레드헤어9",
+      "울트라",
+      "핏",
+      "원문 대조"
+    ],
     content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li>적토마 9는 한 세대에 <strong>울트라·프로·베이스 3종</strong>이 동시 출시 — 이름만 같지 <strong>폼·플레이트·스택·가격이 전부 다른 별개 신발</strong>입니다</li>
-    <li>셋 다 <strong>"카본"이 아닙니다</strong>: 울트라=유리섬유, 프로=TPU 지지편, 베이스=무플레이트. 진짜 풀카본 레이서는 적토마가 아니라 라이닝 <strong>비전(飞电)</strong> 라인입니다</li>
-    <li>한 줄 정리: <strong>발볼 넓으면 베이스</strong>(전족 와이드), <strong>푹신한 장거리면 울트라</strong>, <strong>다재다능 데일리면 프로</strong></li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">ℹ️</span>
-  <div class="callout-body">
-    <p class="callout-title">왜 헷갈릴까</p>
-    <p>2026년 1월 라이닝이 적토마 9 세대를 <strong>울트라·프로·베이스 3종 동시</strong>로 내놓으면서, "적토끼 9 울트라가 카본이라며?", "프로가 더 비싼데 더 좋은 거 아냐?" 같은 혼선이 많습니다. 결론부터 말하면 셋은 <strong>가격 순서대로 더 좋은 상위호환이 아니라, 용도가 다른 별개 모델</strong>입니다. 하나씩 뜯어보겠습니다.</p>
-  </div>
-</div>
-
-<h2>한눈에 보는 3종 비교</h2>
-<table>
-  <thead>
-    <tr><th>모델</th><th>카테고리</th><th>미드솔 / 플레이트</th><th>스택(힐/전족)·드롭</th><th>무게</th><th>발볼</th><th>직구가</th></tr>
-  </thead>
-  <tbody>
-    <tr><td><strong><a href="/shoes/li-ning-red-hare-9-ultra">9 울트라</a></strong></td><td>쿠션화</td><td>PEBA 3중 + Super Boom / <strong>유리섬유</strong></td><td>47/42mm · 5mm</td><td>246g</td><td>좁음</td><td>~15만</td></tr>
-    <tr><td><strong><a href="/shoes/li-ning-red-hare-9-pro">9 프로</a></strong></td><td>데일리</td><td>2중 Boom / <strong>TPU 지지편</strong></td><td>36/28mm · 8mm</td><td>222g</td><td>좁음</td><td>~14만</td></tr>
-    <tr><td><strong><a href="/shoes/li-ning-red-hare-9">9 베이스</a></strong></td><td>입문화</td><td>단층 LIGHT FOAM / <strong>없음</strong></td><td>~32/23mm(추정) · 9mm</td><td>~320g</td><td><strong>넓음</strong></td><td>~9.5만</td></tr>
-  </tbody>
-</table>
-<p>가격(울트라 &gt; 프로 &gt; 베이스)은 "성능 순위"가 아니라 <strong>미드솔 기술의 복잡도</strong> 순서입니다. 푹신함·스택은 울트라가 최고지만, 가벼움은 프로가, 발볼 여유는 베이스가 가장 낫습니다.</p>
-
-<h2>9 울트라 — 푹신한 장거리·회복런용 맥스쿠션</h2>
-<p><a href="/shoes/li-ning-red-hare-9-ultra">레드헤어 9 울트라</a>는 47mm 힐 스택에 PEBA 3중 미드솔을 얹은 <strong>맥스쿠션 슈퍼트레이너</strong>입니다. 셋 중 가장 푹신하고 바운시하지만 무게(246g)와 스택이 큰 만큼 빠른 인터벌에는 답답합니다. 경쟁 상대는 카본 레이서가 아니라 <a href="/shoes/asics-superblast-3">아식스 슈퍼블라스트</a>·<a href="/shoes/asics-megablast">메가블라스트</a> 같은 슈퍼트레이너죠. <strong>LSD·회복런·마라톤 훈련</strong> 위주이고 푹신함을 최우선한다면 울트라입니다. 자세한 분석은 <a href="/blog/li-ning-red-hare-9-ultra-truth-2026">"중국 카본화"의 진실 글</a>에서 다뤘습니다.</p>
-
-<h2>9 프로 — 다재다능한 가성비 데일리 트레이너</h2>
-<p><a href="/shoes/li-ning-red-hare-9-pro">레드헤어 9 프로</a>는 36/28mm의 낮은 스택에 2중 Boom 폼을 쓴 <strong>데일리 트레이너</strong>입니다. 셋 중 가장 가볍고(222g) 단단해 이지런부터 템포까지 두루 소화합니다. 흔히 "프로가 카본 버전"으로 알려졌지만, <strong>라이닝 공식 설명은 카본이 아닌 TPU 지지편</strong>입니다(마케팅의 T400 카본 주장은 독립 검증이 없습니다). 호카 마하·노바블라스트급 데일리를 더 싸게 원한다면 프로가 답입니다.</p>
-
-<h2>9 베이스 — 발볼 넓은 한국 러너를 위한 입문</h2>
-<p><a href="/shoes/li-ning-red-hare-9">레드헤어 9(베이스)</a>는 단층 LIGHT FOAM에 플레이트가 없는 <strong>입문 트레이너</strong>로, 셋 중 가장 저렴합니다(직구 10만 원 미만). 무게는 약 320g으로 무거운 편이라 빠른 훈련용은 아니지만, 결정적 차별점이 있습니다 — <strong>울트라·프로가 좁은 핏인 반면, 베이스만 전족이 넓게 설계</strong>됐습니다. 발볼이 넓어 적토마를 포기했던 한국 러너에게는 오히려 이 베이스가 맞습니다. 입문·통근·체력검정 겸용으로도 무난합니다.</p>
-
-<div class="callout tip">
-  <span class="callout-icon">⚖️</span>
-  <div class="callout-body">
-    <p class="callout-title">3종 나란히 비교해 보기</p>
-    <p>스펙을 직접 나란히 놓고 보고 싶다면 아래 비교 도구를 쓰세요. 세 모델이 미리 선택돼 있어 쿠셔닝·무게·안정성·가성비 점수를 한 화면에서 견줄 수 있습니다.<br><strong><a href="/compare?shoes=li-ning-red-hare-9-ultra,li-ning-red-hare-9-pro,li-ning-red-hare-9">→ 적토마 9 삼형제 한눈에 비교하기</a></strong></p>
-  </div>
-</div>
-
-<h2>"카본 아니야?" — 셋 다 카본이 아닙니다</h2>
-<p>적토마 9 라인업에서 가장 흔한 오해입니다. 정리하면 이렇습니다.</p>
-<ul>
-  <li><strong>9 울트라</strong> — 미드풋 <strong>유리섬유</strong> 윙 플레이트(비틀림 제어용, 추진용 아님)</li>
-  <li><strong>9 프로</strong> — <strong>TPU</strong> 윙 지지편(공식 표기). 일부 마케팅의 "T400 카본"은 독립 검증 없음</li>
-  <li><strong>9 베이스</strong> — <strong>플레이트 없음</strong></li>
-</ul>
-<p>즉 적토마 9에는 진짜 풀카본 레이서가 없습니다. 카본의 톡톡 튀는 추진력을 원한다면 라이닝의 레이싱 전용 <strong>비전(飞电)</strong> 라인을 봐야 합니다. 광고 문구와 실제 소재가 어떻게 다른지는 <a href="/blog/running-shoe-data-not-marketing-guide-2026">러닝화, 광고에 속지 말고 데이터로 고르세요</a>에서 더 다뤘습니다.</p>
-
-<h2>그래서 내게 맞는 적토마는?</h2>
-<div class="callout info">
-  <span class="callout-icon">🎯</span>
-  <div class="callout-body">
-    <p class="callout-title">목적별 선택 가이드</p>
-    <p><strong>· 푹신한 장거리·회복런</strong> → 9 울트라<br><strong>· 가볍고 다재다능한 일상 훈련</strong> → 9 프로<br><strong>· 발볼이 넓거나 입문·통근 겸용·최저가</strong> → 9 베이스</p>
-  </div>
-</div>
-<p>발볼이 넓은 한국 러너라면 울트라·프로(좁은 핏)는 사이즈를 여유 있게 보거나, 애초에 전족이 넓은 베이스를 고르는 편이 안전합니다. 내 발볼이 어느 정도인지 모른다면 <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국인을 위한 러닝화 가이드</a>를 먼저 보세요.</p>
-
-<h2>마무리</h2>
-<p>적토마 9 삼형제는 "비싼 게 좋은 것"이 아니라 <strong>용도가 다른 세 신발</strong>입니다. 푹신함의 울트라, 다재다능의 프로, 가성비·와이드의 베이스 — 본인 발과 훈련 목적에 맞춰 고르면 됩니다. 셋 다 한국 정식 유통이 없어 <strong>직구·구매대행</strong>으로만 살 수 있고, 사이즈 교환이 까다로우니 발볼을 특히 신중히 보세요. 같은 가격대의 정식 출시 슈퍼트레이너와 비교하려면 <a href="/best/max-cushion">쿠션화 추천</a>·<a href="/best/daily-trainer">데일리 트레이너 추천</a>도 함께 참고하시기 바랍니다.</p>
-
-<h2>다른 브랜드는 어떻게 읽을까 — 브랜드 계급도</h2>
-<p>라이닝처럼 브랜드마다 라인업을 읽는 고유한 규칙이 있습니다. 나이키는 라인 이름(페가수스·보메로), 뉴발란스는 숫자(6x·8x·10xx), 아식스는 GEL/FF 세대, 사코니는 엔돌핀 라인으로 갈리죠. 관심 있는 브랜드의 전체 라인업을 한 장에 정리한 계급도 시리즈입니다.</p>
-<ul>
-  <li>🟥 적토마와 비교 — 같은 10만원대 가성비 카본/슈퍼폼 → <a href="/blog/li-ning-red-hare-9-ultra-truth-2026">9 울트라의 진실(카본 아님)</a> · <a href="/blog/li-ning-red-hare-9-ultra-budget-supertrainer">10만원대 가성비 슈퍼트레이너</a></li>
-  <li>🟦 브랜드 계급도 → <a href="/blog/running-shoes-tier-chart-2026"><strong>11개 브랜드 한 장 보기</strong></a> · <a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026">뉴발란스</a> · <a href="/blog/nike-running-shoes-lineup-tier-guide-2026">나이키</a> · <a href="/blog/asics-running-shoes-lineup-tier-guide-2026">아식스</a> · <a href="/blog/hoka-running-shoes-lineup-tier-guide-2026">호카</a> · <a href="/blog/brooks-running-shoes-lineup-tier-guide-2026">브룩스</a> · <a href="/blog/adidas-running-shoes-lineup-tier-guide-2026">아디다스</a> · <a href="/blog/on-running-shoes-lineup-tier-guide-2026">온</a> · <a href="/blog/puma-running-shoes-lineup-tier-guide-2026">푸마</a> · <a href="/blog/mizuno-running-shoes-lineup-tier-guide-2026">미즈노</a> · <a href="/blog/saucony-running-shoes-lineup-tier-guide-2026">사코니</a></li>
-</ul>
-
-<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 라이닝 공식 자료와 Road Trail Run·WeeViews 등 해외 실측 리뷰, 중국 리테일/커뮤니티(识货) 자료를 교차 정리한 내용입니다. 적토마 9 라인업은 한국 정식 출시 전이며 독립 랩(RunRepeat 등) 측정치가 없어 일부 수치(특히 베이스 스택)는 실측·추정 기준입니다. 가격은 직구·구매대행 시세로 변동될 수 있습니다.</p>
+<p><strong>2026-11-10 원문 대조 업데이트.</strong> 정확 모델과 검체 조건을 확인해 정리한 자료이며 자체 착화 후기는 아닙니다.</p><h2>같은 숫자 9라도 사양을 공유하지 않습니다</h2><p>울트라는 RTR의 정확 모델 착화 원문을 확인했습니다. 프로는 제조사 소재 공시를 확인했지만 무게·스택 원문은 확보하지 못했습니다. 일반형은 정확 상세 사양을 확인하지 못해 수치를 비웠습니다.</p><p>세 모델을 입문·중급·상급이나 특정 페이스로 자동 배정할 근거도 부족합니다. 상품명 끝의 Ultra·Pro와 판매처의 정확 SKU를 먼저 대조하세요.</p><figure><img src="/images/shoes/lining/red-hare-9-ultra/side.webp" alt="레드헤어9 울트라 제품 이미지" loading="lazy"/><figcaption>레드헤어9 울트라. Pro·일반형과 이름을 구분하세요.</figcaption></figure><div class="table-wrap"><table><thead><tr><th>항목</th><th>울트라</th><th>프로</th><th>일반형</th></tr></thead><tbody><tr><td>확인한 원문</td><td>RTR Derek Li + 제조사 IR</td><td>제조사 HKEX 제출본 115쪽</td><td>정확 상세 사양 미확인</td></tr><tr><td>무게</td><td>246.2g · EU43/US9.5</td><td>미확인</td><td>미확인</td></tr><tr><td>스택</td><td>47/42mm · RTR measured</td><td>미확인</td><td>미확인</td></tr><tr><td>드롭</td><td>47−42=5mm · 차감값</td><td>미확인</td><td>미확인</td></tr><tr><td>폼·어퍼</td><td>3층 폼 · Capsule 적용; 화학 조성 미확인</td><td>BOOM 초임계 · BoomFiber; 폴리머 미확인</td><td>미확인</td></tr><tr><td>판</td><td>작은 중족 비틀림 판; 재료 미확인</td><td>유무·재료 미확인</td><td>유무·재료 미확인</td></tr><tr><td>한국 공식 정가·현재 재고</td><td>미확인</td><td>미확인</td><td>미확인</td></tr></tbody></table></div><h2>울트라에서 선택에 도움이 되는 관찰</h2><p>Derek은 본인에게 길고 전체적으로 좁은 핏과 사이드월·거싯의 압박을 느꼈습니다. 푹신하지만 고강도 인터벌에서 둔한 전환, 플레어·사이드월의 안정감은 한 테스터의 비교 의견입니다. 실제 시험 거리·성별·SKU는 미확인입니다.</p><p>246.2g을 남성 US9 무게로 환산하지 않았습니다. 47/42mm도 RTR이 measured라고 적은 값이며 측정 위치·인솔 포함 여부는 미확인입니다. RR 실험실의 12%/75% 측정과 그대로 비교하지 않습니다.</p><h2>프로의 60.55%는 반발력이 아닙니다</h2><p>제조사 제출본은 BoomFiber 어퍼, BOOM 초임계 소재와 GCR을 설명합니다. 60.55%는 해당 미드솔 재료의 전체 밑창 무게 비중입니다. 에너지 리턴·신발 전체 비중·PEBA 함량으로 읽으면 안 됩니다.</p><p>울트라의 검체 수치를 프로의 222g·36/28mm·8mm를 입증하는 자료로 쓸 수 없습니다. 일반형의 커뮤니티 추정 무게나 스택도 검증된 제조사 사양으로 승격하지 않았습니다.</p><h2>시착할 때는 이 순서로 확인하세요</h2><p>평소 양말과 인솔을 기준으로 앞쪽 길이와 발톱 위 높이를 확인하고 끈을 조여 보세요. 길이가 남아도 중족·거싯이 압박할 수 있습니다. 힐이 뜨는지도 함께 봅니다. 반 사이즈 업을 모든 발에 일괄 권하는 근거는 확인하지 못했습니다.</p><p>Derek의 좁은 체감은 실제 한 검체와 본인 발의 조합입니다. 이를 한국인 전체 발볼 등급이나 평발·부상 이력에 대한 적합성 판정으로 바꾸지 않았습니다. 불편한 압박·저림을 견디며 길들이라는 규칙도 만들지 않습니다.</p><h2>확인한 원문</h2><ul><li><a href="https://ir.lining.com/en/company/chairman.php" target="_blank" rel="noopener noreferrer">리닝 제조사 공시</a> — 정확 제품명·소재 공시 범위이며 랩 수치나 한국 판매 조건이 아닙니다.</li><li><a href="https://www.roadtrailrun.com/2026/03/2026-chinese-super-trainers-reviewed.html" target="_blank" rel="noopener noreferrer">RTR Derek Li 정확 Ultra 비교 착화</a> — EU43/US9.5 검체 246.2g·47/42mm. 측정 위치·인솔 포함 등 프로토콜 미확인.</li><li><a href="https://www.hkexnews.hk/listedco/listconews/sehk/2026/0422/2026042200804.pdf" target="_blank" rel="noopener noreferrer">리닝 제조사 공시 — HKEX 제출본 115쪽</a> — 정확 제품명·소재 공시 범위이며 랩 수치나 한국 판매 조건이 아닙니다.</li></ul>
 `,
+    updatedAt: "2026-11-10",
+    faqs: [
+      {
+        "question": "일반형이 입문자용인가요?",
+        "answer": "정확 사양과 착화 원문을 확보하지 못해 이름이나 가격만으로 단정하지 않습니다."
+      },
+      {
+        "question": "울트라는 246g인가요?",
+        "answer": "RTR의 EU43/US9.5 검체는 246.2g입니다. 다른 사이즈 무게로 보정하지 않았습니다."
+      },
+      {
+        "question": "프로의 리턴이 60.55%인가요?",
+        "answer": "아닙니다. 제조사 공시에서 전체 밑창 무게 중 소재의 비중을 말합니다."
+      }
+    ],
   },
   {
     id: 'incheon-international-half-marathon',
@@ -7566,133 +7511,38 @@ export const posts_2026_06: BlogPost[] = [
   {
     id: "li-ning-red-hare-9-ultra-truth-2026",
     slug: "li-ning-red-hare-9-ultra-truth-2026",
-    title: "적토끼 9 울트라는 카본이 아닙니다 — 화제의 \"중국 카본화\" 정체 | 리닝 적토마(레드헤어 9) 슈퍼트레이너의 진실",
-    description: "러닝 커뮤니티가 \"이 가격에 카본?\"으로 들썩이는 라이닝(Li-Ning) 레드헤어 9 울트라. 하지만 해외 실측 리뷰를 종합하면 이 신발은 카본 레이싱화가 아니라 유리섬유 플레이트를 단 맥스쿠션 슈퍼트레이너입니다. 슈퍼블라스트·메가블라스트 절반 가격이라는 가성비의 실체, \"적토끼\"가 아닌 \"적토마\"인 이유, 발볼 좁은 한국 러너가 사기 전 꼭 알아야 할 3가지를 데이터로 정리했습니다.",
-    thumbnail: "/images/blog/li-ning-red-hare-9-ultra-truth-2026.webp",
+    title: "적토끼9 울트라 판 구조 — 카본·유리섬유로 단정하기 전에 확인할 것",
+    description: "작은 중족 안티토션 판은 RTR 원문에서 확인했습니다. 판 소재·3층 폼 화학 조성·95% 리턴은 별도 확인이 필요합니다.",
+    thumbnail: "/images/shoes/lining/red-hare-9-ultra/side.webp",
     author: "산초 에디터",
     publishedAt: "2026-06-06",
     category: "review",
-    readingTime: 9,
+    readingTime: 6,
     tags: [
-      "적토끼",
-      "적토끼 9 울트라",
-      "적토끼9 울트라",
-      "리닝 적토끼",
-      "라이닝",
-      "레드헤어 9 울트라",
-      "적토마",
-      "Li-Ning",
-      "중국 러닝화",
-      "슈퍼트레이너",
-      "가성비 러닝화",
-      "PEBA",
-      "카본화",
-      "슈퍼블라스트"
+      "리닝",
+      "레드헤어9",
+      "울트라",
+      "핏",
+      "원문 대조"
     ],
     content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li>커뮤니티가 "이 가격에 카본?"으로 띄우지만, <strong>레드헤어 9 울트라는 카본 플레이트가 아니라 유리섬유(글라스파이버) 플레이트</strong>를 단 <strong>맥스쿠션 슈퍼트레이너</strong>입니다 — 레이싱화가 아닙니다</li>
-    <li>진짜 매력은 <strong>PEBA 3중 미드솔 + 46mm급 스택을 10만 원대</strong>에 담은 가성비 — 아식스 메가블라스트(30만)·슈퍼블라스트(26만)의 <strong>절반 가격</strong>입니다</li>
-    <li>단, <strong>발볼이 좁고(와이드 옵션 없음)</strong> 한국 정식 출시·랩 검증이 아직 없어, <strong>발볼 넓은 러너와 안정화가 필요한 러너에겐 비추천</strong>입니다</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">🔥</span>
-  <div class="callout-body">
-    <p class="callout-title">왜 이 신발이 화제일까</p>
-    <p>요즘 러닝 커뮤니티에서 가장 많이 언급되는 신발 중 하나가 중국 브랜드 <strong>라이닝(Li-Ning)의 레드헤어 9 울트라</strong>입니다. "PEBA 폼에 글라스파이버 플레이트, 46mm 스택을 갖추고도 <strong>10만 원대</strong>"라는 스펙표가 돌면서 "이 가격에 카본?", "가성비 슈퍼트레이너"라는 반응이 쏟아지고 있죠. 그런데 정작 <strong>이 신발의 정체가 잘못 알려진 부분</strong>이 있습니다. 해외 실측 리뷰(Road Trail Run·WeeViews 등)와 스펙을 교차 검증해 정리했습니다.</p>
-  </div>
-</div>
-
-<h2>먼저, 이름부터 — '적토끼'가 아니라 '적토마'</h2>
-<p>국내에선 흔히 <strong>"적토끼 9 울트라"</strong>로 불립니다. 하지만 "Red Hare(赤兔)"는 <strong>적토마</strong> — 삼국지 여포·관우가 탔던 그 명마를 뜻합니다. 라이닝은 이 적토마 라인을 데일리·트레이닝용으로, 별도의 <strong>비전(飞电, Feidian)</strong> 라인을 풀카본 레이싱 전용으로 운영합니다. 즉 <strong>이름 단계에서 이미 "이건 레이싱 카본화가 아니다"</strong>라는 신호가 들어 있는 셈입니다.</p>
-
-<h2>카본화? 아닙니다 — 플레이트의 정체</h2>
-<p>가장 큰 오해가 여기 있습니다. 레드헤어 9 울트라에 들어간 건 <strong>탄소섬유 풀카본 플레이트가 아니라 'Wing Fiber'라 부르는 유리섬유(글라스파이버) 미드풋 플레이트</strong>입니다. 역할도 다릅니다.</p>
-<ul>
-  <li><strong>카본 레이싱화의 플레이트</strong>(<a href="/shoes/nike-vaporfly-4">베이퍼플라이</a>·<a href="/shoes/asics-metaspeed-ray">메타스피드</a> 등): 발 전체를 가로지르며 <strong>추진력(롤링)</strong>을 만드는 게 목적</li>
-  <li><strong>레드헤어 9 울트라의 유리섬유 플레이트</strong>: 미드풋에만 들어가 <strong>비틀림(토션)을 잡아주는 안정 보조</strong>가 목적 — 해외 리뷰에선 "달릴 때 플레이트 반발이 거의 느껴지지 않는다"고 평가합니다</li>
-</ul>
-<p>일부 판매 페이지가 "CARBON-FIBER PLATE"로 표기하기도 하지만, 복수의 실측 해부 리뷰는 유리섬유로 일치합니다. <strong>카본화의 톡톡 튀는 추진감을 기대하고 사면 실망</strong>할 수 있다는 뜻입니다. 광고 문구와 실제 데이터가 어떻게 다른지는 <a href="/blog/running-shoe-data-not-marketing-guide-2026">러닝화, 광고에 속지 말고 데이터로 고르세요</a>에서 따로 정리해 두었습니다.</p>
-
-<div class="callout warning">
-  <span class="callout-icon">⚠️</span>
-  <div class="callout-body">
-    <p class="callout-title">"95% 에너지 리턴"도 제조사 주장입니다</p>
-    <p>라이닝은 미드솔의 Super Boom 캡슐이 "95% 에너지 리턴"을 낸다고 홍보합니다. 하지만 이는 <strong>제조사 자체 측정치</strong>로, RunRepeat 같은 독립 랩이 같은 기준으로 잰 수치가 아직 없습니다. 신상 + 비주류 브랜드라 <strong>객관 랩 데이터가 부재</strong>한 상태이니, 마케팅 수치는 참고만 하세요.</p>
-  </div>
-</div>
-
-<h2>그럼 정체는? 10만 원대 맥스쿠션 슈퍼트레이너</h2>
-<p>오해를 걷어내면 정체가 분명해집니다. 레드헤어 9 울트라는 <strong>PEBA 기반 3중 미드솔</strong>에 <strong>힐 47mm·전족 42mm 스택(Road Trail Run 실측, 드롭 5mm)</strong>을 얹은 <strong>맥스쿠션 슈퍼트레이너</strong>입니다. 무게도 246g(US 9.5)으로 두꺼운 스택 대비 무겁지 않죠. 데일리 조깅부터 LSD·마라톤 훈련까지 푹신하게 받쳐주는 성격으로, 경쟁 상대는 카본 레이싱화가 아니라 <strong>아식스 슈퍼블라스트·메가블라스트, 나이키 보메로 계열</strong>입니다(스펙 전체는 <a href="/shoes/li-ning-red-hare-9-ultra">레드헤어 9 울트라 상세 페이지</a>에 정리해 두었습니다). 그리고 바로 거기서 가성비가 빛납니다.</p>
-
-<table>
-  <thead>
-    <tr><th>모델</th><th>포지션</th><th>플레이트</th><th>한국 가격(정가/병행)</th></tr>
-  </thead>
-  <tbody>
-    <tr><td><strong><a href="/shoes/li-ning-red-hare-9-ultra">라이닝 레드헤어 9 울트라</a></strong></td><td>맥스쿠션 슈퍼트레이너</td><td>유리섬유(토션)</td><td><strong>13~17만 원대</strong> (병행·구매대행)</td></tr>
-    <tr><td><a href="/shoes/asics-superblast-3">아식스 슈퍼블라스트 3</a></td><td>슈퍼트레이너/레이싱</td><td>없음(트윈 폼)</td><td>259,000원</td></tr>
-    <tr><td><a href="/shoes/asics-megablast">아식스 메가블라스트</a></td><td>맥스쿠션 트레이너</td><td>없음</td><td>299,000원</td></tr>
-    <tr><td><a href="/shoes/nike-vomero-premium">나이키 보메로 프리미엄</a></td><td>맥스쿠션 데일리</td><td>없음</td><td>남성 II5258-100 정가309,000원 / 여성 HM5973-606·IQ8102-101 정가299,000원 (2026-11-09 확인SKU)</td></tr>
-  </tbody>
-</table>
-<p>같은 "푹신한 PEBA 맥스쿠션" 카테고리에서 <strong>국내 메이저 브랜드가 26~30만 원</strong>을 받는 자리에, 라이닝이 <strong>그 절반 값</strong>으로 비슷한 스펙표를 들고 들어온 게 화제의 본질입니다. 알리익스프레스 직구로는 10~13만 원까지도 내려갑니다.</p>
-
-<h2>한국 러너가 사기 전 꼭 알아야 할 3가지</h2>
-<p>가성비는 분명하지만, 한국 러너 관점에서 짚어야 할 단점도 또렷합니다.</p>
-<ol>
-  <li><strong>발볼이 좁습니다.</strong> 앞코만이 아니라 전 길이가 좁은 편이고, <strong>와이드 옵션도 없어</strong>, 발볼 넓은 한국 러너에겐 가장 큰 걸림돌입니다. (내 발볼이 어느 정도인지 모른다면 <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국인을 위한 러닝화 가이드</a>를 먼저 보세요.)</li>
-  <li><strong>측방 안정성이 약합니다.</strong> 높은 스택 + 부드러운 폼 조합이라 발이 안쪽/바깥쪽으로 흔들리기 쉽습니다. <strong>오버프로네이션이 있거나 안정화가 필요한 러너</strong>에겐 맞지 않습니다.</li>
-  <li><strong>국내 AS·정식 유통이 없습니다.</strong> KREAM·POIZON·알리익스프레스·타오바오 등 <strong>병행수입·구매대행</strong>에만 의존하고, 사이즈 교환이나 하자 대응이 까다롭습니다. 발볼이 좁은 만큼 <strong>사이즈는 평소보다 여유 있게</strong> 잡는 편이 안전합니다.</li>
-</ol>
-
-<h2>그래서 살까 말까 — 러너 타입별 정리</h2>
-<div class="callout info">
-  <span class="callout-icon">✅</span>
-  <div class="callout-body">
-    <p class="callout-title">사도 좋은 사람</p>
-    <ul>
-      <li>발볼이 <strong>보통~좁은 편</strong>이고, 푹신한 쿠션의 <strong>LSD·데일리 훈련화</strong>를 저렴하게 원하는 러너</li>
-      <li>이미 슈퍼블라스트·메가블라스트 같은 슈퍼트레이너를 써봤고 <strong>비슷한 감각을 절반 값</strong>에 추가하고 싶은 러너</li>
-      <li>중국 러닝 브랜드의 성장세를 직접 체험해보고 싶은 얼리어답터</li>
-    </ul>
-  </div>
-</div>
-<div class="callout warning">
-  <span class="callout-icon">🚫</span>
-  <div class="callout-body">
-    <p class="callout-title">사면 후회할 수 있는 사람</p>
-    <ul>
-      <li><strong>발볼 넓은 한국 러너</strong> — 와이드가 없습니다. <a href="/shoes/asics-megablast">메가블라스트</a>나 <a href="/shoes/nike-vomero-premium">보메로 프리미엄</a>처럼 정식 출시 + 폭 여유 있는 대안이 안전합니다</li>
-      <li><strong>카본화의 추진력</strong>을 기대하는 러너 — 이건 레이싱화가 아닙니다. 카본을 원하면 <a href="/best/racing">카본 레이싱화</a> 쪽을 보세요</li>
-      <li><strong>안정화가 필요한 오버프로네이터</strong>, 그리고 AS·교환 리스크를 감수하기 싫은 러너</li>
-    </ul>
-  </div>
-</div>
-
-<h2>자주 묻는 질문</h2>
-<h3>Q. 진짜 카본 플레이트가 들어 있나요?</h3>
-<p>아닙니다. 미드풋에 들어간 건 <strong>유리섬유(글라스파이버) 토션 플레이트</strong>로, 추진보다 비틀림을 잡는 안정 보조용입니다. 카본 레이싱화의 롤링 추진감과는 다릅니다.</p>
-
-<h3>Q. 마라톤 대회용으로 신어도 되나요?</h3>
-<p>레이스 기록용보다는 <strong>훈련·LSD용</strong>에 적합합니다. 대회에서 기록을 노린다면 <a href="/best/racing">카본 레이싱화</a>가 맞고, 풀코스를 "완주 목표로 편하게"라면 이 신발의 푹신함도 선택지가 됩니다.</p>
-
-<h3>Q. 발볼 넓은데 사이즈를 키우면 되나요?</h3>
-<p>한 치수 키우면 길이는 늘지만 <strong>발볼(폭)은 비례해서 넓어지지 않아</strong> 근본 해결이 안 됩니다. 발볼이 넓다면 처음부터 와이드 옵션이 있는 모델을 권합니다.</p>
-
-<h3>Q. 10만 원대인데 품질은 믿을 만한가요?</h3>
-<p>아웃솔은 WeeViews가 약 100km를 달린 뒤에도 마모가 없었다고 했고, Road Trail Run은 그립을 최고 등급(++++)으로 매겼습니다. 미드솔 반발은 제조사 발표(에너지 리턴 95%)만 있습니다. 다만 <strong>독립 랩 검증이 아직 없고</strong> 폼 통합도(반발이 부드러운 폼에 흡수돼 어색하다는 지적)에 대한 호불호가 있어, "메이저 브랜드만큼 검증된 신발"로 보긴 이릅니다.</p>
-
-<h2>마무리</h2>
-<p>레드헤어 9 울트라의 진짜 이야기는 "10만 원대 카본화"가 아니라 <strong>"10만 원대 PEBA 맥스쿠션 슈퍼트레이너"</strong>입니다. 카본화로 오해하고 사면 실망하지만, <strong>슈퍼블라스트·메가블라스트의 절반 값짜리 푹신한 훈련화</strong>로 보면 충분히 매력적입니다. 핵심은 둘뿐입니다 — <strong>내 발볼이 좁은 편인가</strong>, 그리고 <strong>병행수입·AS 리스크를 감수할 수 있는가</strong>. 두 가지에 "예"라면 올해 가장 재미있는 가성비 선택이 될 수 있습니다.</p>
-<p>정식 출시된 슈퍼트레이너로 안전하게 비교하고 싶다면 <a href="/blog/asics-superblast-2-vs-3-comparison">슈퍼블라스트 2 vs 3 비교</a>와 <a href="/best/max-cushion">쿠션화 추천</a>을 함께 보세요.</p>
-
-<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 라이닝 공식 자료와 Road Trail Run·WeeViews 등 해외 실측 리뷰를 교차 정리한 내용입니다. 라이닝 레드헤어 9 울트라는 한국 정식 출시 전이며 독립 랩(RunRepeat 등) 측정치가 아직 없어, 일부 수치는 해외 실측·제조사 발표 기준입니다. 가격은 병행수입·구매대행 시세로 변동될 수 있습니다.</p>
+<p><strong>2026-11-10 원문 대조 업데이트.</strong> 정확 모델과 검체 조건을 확인해 정리한 자료이며 자체 착화 후기는 아닙니다.</p><h2>판이 있다는 사실과 그 소재는 다른 정보입니다</h2><p>RTR은 레드헤어9 울트라에 작은 중족 안티토션 판이 있다고 설명합니다. 판 재료는 해당 원문에 명시되지 않았습니다. 따라서 카본화라고 부르거나 유리섬유여서 카본이 아니라고 확정하는 두 설명 모두 피해야 합니다.</p><p>기존 글에서 단정한 유리섬유 Wing Fiber와 3층 전체 PEBA, 95% 에너지 리턴은 이번에 확인한 원문으로 확정하지 못했습니다.</p><figure><img src="/images/shoes/lining/red-hare-9-ultra/side.webp" alt="레드헤어9 울트라 제품 이미지" loading="lazy"/><figcaption>레드헤어9 울트라. Pro·일반형과 이름을 구분하세요.</figcaption></figure><h2>세 층을 모두 PEBA라고 부를 수 있나요?</h2><p>Derek은 상층이 likely pelletized PEBA, 하층이 looks like firmer pelletized PEBA라고 추정합니다. 중간층의 화학 조성은 공개된 확정값이 아닙니다. 관찰과 저자의 추정을 제조사 전체 소재 명세로 바꾸지 않았습니다.</p><p>제조사 IR은 2025년 11월 Super BOOM Capsule을 소개하고 울트라를 적용 제품으로 명시합니다. 이 문장만으로 완성 신발의 95% 에너지 리턴이나 기록 향상을 확인할 수는 없습니다.</p><div class="table-wrap"><table><thead><tr><th>정보</th><th>확인 범위</th></tr></thead><tbody><tr><td>무게</td><td>RTR EU43/US9.5 · 246.2g</td></tr><tr><td>스택</td><td>RTR measured · 47/42mm; 프로토콜 미확인</td></tr><tr><td>드롭</td><td>두 스택의 차감값 5mm</td></tr><tr><td>판</td><td>작은 중족 비틀림 판; 재료 미확인</td></tr><tr><td>독립 랩 SA·리턴·AC/HA</td><td>미확인</td></tr><tr><td>폼 화학 조성</td><td>저자의 PEBA 추정과 제조사 Capsule 적용 공시를 분리</td></tr></tbody></table></div><h2>실제 착화에서는 무엇이 갈렸나요?</h2><p>Derek은 본인에게 길고 전체적으로 좁은 핏과 사이드월·거싯의 압박을 느꼈습니다. 푹신하지만 고강도 인터벌에서 둔한 전환, 플레어·사이드월의 안정감은 한 테스터의 비교 의견입니다. 실제 시험 거리·성별·SKU는 미확인입니다.</p><p>바닥 외부 폭 118/78/91mm는 발이 들어가는 내부 너비가 아닙니다. 바닥이 넓다는 숫자만으로 넓은 발에 맞거나 부상 이력에 유리하다고 판단할 수 없습니다. 앞코 길이와 중족 압박을 함께 확인하는 데 이 리뷰를 참고할 수 있습니다.</p><h2>시착할 때는 이 순서로 확인하세요</h2><p>평소 양말과 인솔을 기준으로 앞쪽 길이와 발톱 위 높이를 확인하고 끈을 조여 보세요. 길이가 남아도 중족·거싯이 압박할 수 있습니다. 힐이 뜨는지도 함께 봅니다. 반 사이즈 업을 모든 발에 일괄 권하는 근거는 확인하지 못했습니다.</p><p>Derek의 좁은 체감은 실제 한 검체와 본인 발의 조합입니다. 이를 한국인 전체 발볼 등급이나 평발·부상 이력에 대한 적합성 판정으로 바꾸지 않았습니다. 불편한 압박·저림을 견디며 길들이라는 규칙도 만들지 않습니다.</p><h2>확인한 원문</h2><ul><li><a href="https://ir.lining.com/en/company/chairman.php" target="_blank" rel="noopener noreferrer">리닝 제조사 공시</a> — 정확 제품명·소재 공시 범위이며 랩 수치나 한국 판매 조건이 아닙니다.</li><li><a href="https://www.roadtrailrun.com/2026/03/2026-chinese-super-trainers-reviewed.html" target="_blank" rel="noopener noreferrer">RTR Derek Li 정확 Ultra 비교 착화</a> — EU43/US9.5 검체 246.2g·47/42mm. 측정 위치·인솔 포함 등 프로토콜 미확인.</li><li><a href="https://www.hkexnews.hk/listedco/listconews/sehk/2026/0422/2026042200804.pdf" target="_blank" rel="noopener noreferrer">리닝 제조사 공시 — HKEX 제출본 115쪽</a> — 정확 제품명·소재 공시 범위이며 랩 수치나 한국 판매 조건이 아닙니다.</li></ul>
 `,
+    updatedAt: "2026-11-10",
+    faqs: [
+      {
+        "question": "카본이 없다는 뜻인가요?",
+        "answer": "정확한 판 소재가 미확인이므로 유무를 확정하지 않습니다. 작은 중족 판이 있다는 관찰만 확인했습니다."
+      },
+      {
+        "question": "95% 리턴은 검증됐나요?",
+        "answer": "이번에 확보한 정확 원문에서 독립 시험 수치로 확인하지 못했습니다."
+      },
+      {
+        "question": "3층이 전부 PEBA인가요?",
+        "answer": "RTR의 상·하층 설명은 저자의 추정이며 확정 화학 명세가 아닙니다."
+      }
+    ],
   },
   {
     id: '2026-disney-run-incheon-virtual-run',
@@ -9206,126 +9056,40 @@ export const posts_2026_06: BlogPost[] = [
 `,
   },
   {
-    id: 'li-ning-red-hare-9-ultra-budget-supertrainer',
-    slug: 'li-ning-red-hare-9-ultra-budget-supertrainer',
-    title: '리닝 적토끼 9 울트라 — "10만원대 카본급" 진짜일까? | 적토마(레드헤어 9) 슈퍼 트레이너 팩트체크',
-    description: '러닝 커뮤니티에서 흔히 "적토끼"로 불리는 리닝(Li-Ning) 적토마 9 울트라(Red Hare 9 Ultra). PEBA 3층 미드솔·47mm 스택을 10만원대에 담아 "가성비 카본화"로 불리지만, 실제론 카본이 아닌 유리섬유 플레이트 슈퍼 트레이너입니다. 스펙·가격·구매처(직구·타오바오)·사이즈·장단점과 발볼 넓은 한국 러너 주의점까지 팩트체크했습니다.',
-    thumbnail: '/images/blog/li-ning-red-hare-9-ultra-budget-supertrainer.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-06-01',
-    category: 'review' as const,
-    readingTime: 9,
-    tags: ['리닝 적토끼', '적토끼', '적토끼 9 울트라', '적토끼9 울트라', '리닝', '적토마 9 울트라', 'Li-Ning Red Hare', '레드헤어 9 울트라', '중국 러닝화', '슈퍼 트레이너', '가성비 러닝화', 'PEBA', '카본 플레이트', '직구 러닝화', '타오바오 러닝화'],
+    id: "li-ning-red-hare-9-ultra-budget-supertrainer",
+    slug: "li-ning-red-hare-9-ultra-budget-supertrainer",
+    title: "적토끼9 울트라 구매 전 확인 — 가격보다 먼저 볼 정확 모델·핏·반품",
+    description: "한국 공식 정가와 현재 판매 조건은 미확인입니다. 외화 환산·추정 수명으로 가성비를 만들지 않고 EU43/US9.5 착화 조건을 정리합니다.",
+    thumbnail: "/images/shoes/lining/red-hare-9-ultra/side.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-06-01",
+    category: "review",
+    readingTime: 6,
+    tags: [
+      "리닝",
+      "레드헤어9",
+      "울트라",
+      "핏",
+      "원문 대조"
+    ],
     content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong><a href="/shoes/li-ning-red-hare-9-ultra">리닝 적토마 9 울트라</a></strong>는 PEBA 3층 미드솔 + 47mm 맥스 스택을 <strong>10만원대(CNY 599)</strong>에 담아 "가성비 슈퍼 트레이너"로 화제</li>
-    <li>단, <strong>"카본화"는 오해</strong> — 이 모델은 카본이 아닌 <strong>유리섬유 플레이트</strong>입니다(같은 세대 <a href="/shoes/li-ning-red-hare-9-pro">9 PRO</a>도 공식상 카본이 아닌 TPU 지지편). 레이스용이 아니라 <strong>LSD·훈련용 트레이너</strong></li>
-    <li><strong>한국 공식 유통이 없어 직구</strong>(타오바오·알리·KREAM)해야 하고, <strong>미드풋 78mm로 좁아</strong> 발볼 넓은 한국 러너는 주의가 필요합니다</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">🔥</span>
-  <div class="callout-body">
-    <p class="callout-title">왜 갑자기 화제인가</p>
-    <p>2025년 말 출시 후 2026년 들어 해외 러닝 커뮤니티(Reddit r/RunningShoeGeeks)와 국내 러너들 사이에서 "<strong>이 가격에 PEBA?</strong>"라며 입소문을 탄 신발입니다. 중국 브랜드 리닝(Li-Ning)이 <strong>47mm 맥스 스택 + PEBA 기반 3층 미드솔</strong>을 11만원대에 내놓으면서, 25만원이 넘는 서구 카본 슈퍼슈즈와 자주 비교됩니다. 다만 마케팅과 실제 스펙 사이엔 짚어둘 차이가 있습니다.</p>
-  </div>
-</div>
-
-<div class="callout warning">
-  <span class="callout-icon">⚠️</span>
-  <div class="callout-body">
-    <p class="callout-title">팩트체크 ① — "카본화" 아닙니다</p>
-    <p>커뮤니티에서 "가성비 카본화"로 불리지만, <strong>적토마 9 울트라의 플레이트는 카본이 아니라 유리섬유(글라스 파이버)</strong>입니다. 리닝이 "슈퍼 카본" 류의 마케팅을 쓰지만 실제 소재는 유리섬유 지지 플레이트 + 캡슐 폼 조합이에요. 흔히 "카본은 같은 세대의 <a href="/shoes/li-ning-red-hare-9-pro">적토마 9 PRO</a>에 들어간다"고 알려졌지만, <strong>라이닝 공식 설명상 9 PRO 역시 카본이 아니라 TPU 지지편을 쓰는 낮은 스택의 데일리 트레이너</strong>입니다(일부 마케팅의 T400 카본 주장은 독립 검증이 없습니다). 즉 적토 9 라인업엔 진짜 풀카본 레이서가 없고, 카본 슈퍼슈즈의 추진력을 원한다면 라이닝의 레이싱 전용 비전(飞电) 라인을 봐야 합니다.</p>
-  </div>
-</div>
-
-<h2>스펙 한눈에 보기</h2>
-
-<table>
-  <thead>
-    <tr><th>항목</th><th>적토마 9 울트라</th><th>의미</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>무게</td><td>약 220~246g (US 9~9.5)</td><td>맥스 스택 치고 가벼운 편</td></tr>
-    <tr><td>스택 (힐/전족)</td><td>47 / 42mm (RTR 실측 · 제조사 공칭 43 / 35mm)</td><td>맥스 쿠션 — 충격 흡수 우수</td></tr>
-    <tr><td>드롭</td><td>5mm (RTR 실측 · 제조사 공칭 8mm)</td><td>공칭보다 3mm 낮게 측정됨</td></tr>
-    <tr><td>미드솔</td><td>PEBA 기반 3층 (캡슐 폼)</td><td>소프트 + 고반발 "트램펄린" 느낌</td></tr>
-    <tr><td>플레이트</td><td>유리섬유 (카본 ❌)</td><td>지지·안정용, 추진용 아님</td></tr>
-    <tr><td>미드풋 너비</td><td>약 78mm</td><td>좁은 편 — 발볼 넓으면 주의</td></tr>
-    <tr><td>아웃솔 내구</td><td>~640km+ 확인</td><td>고무 와플, 내구 양호</td></tr>
-  </tbody>
-</table>
-
-<p class="caption">출시 직후 신상이라 RunRepeat 등 독립 랩의 정식 측정치는 아직 미게시 상태입니다. 위 수치는 제조사 발표 + 해외 리뷰어(Road Trail Run·WeeViews 등) 실측을 종합한 값으로, 일부는 추정치입니다.</p>
-
-<h2>가격과 구매처 — 한국은 직구</h2>
-
-<p>중국 공식가 <strong>CNY 599(약 11만~13만원)</strong>, 글로벌 직구 시 $130~150 수준입니다. <strong>한국 공식 유통이 없어</strong> 직접 구매해야 합니다.</p>
-
-<ul>
-  <li><strong>중국 직구</strong>(가장 저렴): 타오바오·알리익스프레스 → 배대지 경유. 11만원대 + 배송비</li>
-  <li><strong>리셀/플랫폼</strong>: KREAM·POIZON(더우)·StockX — 편하지만 프리미엄 가격</li>
-  <li><strong>주의</strong>: 사이즈 교환·반품이 까다롭습니다. 아래 사이즈 팁을 꼭 확인하세요</li>
-</ul>
-
-<h2>장점과 단점</h2>
-
-<div class="pros-cons">
-  <div class="pros">
-    <h3>👍 장점</h3>
-    <ul>
-      <li>소프트하면서 반발 강한 "트램펄린" 라이드 — 쿠션화 중 최상위 바운스</li>
-      <li>47mm 맥스 스택인데 220~246g로 가벼운 편</li>
-      <li>아웃솔 내구 우수(640km+), 힐 홀드·핏 정확</li>
-      <li>$250급 트레이너(아식스 슈퍼블라스트 등) 반발을 11만원대에 경험</li>
-    </ul>
-  </div>
-  <div class="cons">
-    <h3>👎 단점</h3>
-    <ul>
-      <li><strong>안정성 부족</strong> — 흔들림이 있어 초보·안정화 필요자 부적합</li>
-      <li><strong>좁은 핏</strong>(미드풋 78mm) — 발볼 넓은 한국 러너 불편</li>
-      <li>실제 카본이 없어 <strong>레이스 페이스 이상 고강도에선 둔함</strong></li>
-      <li>한국 공식 유통 없음 — 사이즈·반품 리스크</li>
-    </ul>
-  </div>
-</div>
-
-<h2>누구에게 맞고, 누구에겐 아닌가</h2>
-
-<p><strong>추천</strong>: LSD·마라톤 페이스 훈련용 트레이너를 저렴하게 찾는 러너, 탄성 있는 쿠션을 부담 없이 경험하고 싶은 취미 러너, 슈퍼슈즈 입문 전 "플레이트 없는 맥스 쿠션" 감각을 익히고 싶은 분. <strong>좁은~표준 발볼</strong>이면 더 잘 맞습니다.</p>
-
-<p><strong>비추천</strong>: <strong>발볼 넓은 한국 러너</strong>(78mm 미드풋 + 와이드 옵션 미확인), 과내전으로 <strong>안정화가 필요한 러너</strong>, 트랙·인터벌 등 <strong>속도 훈련</strong> 중심 러너. 이런 경우 검증된 정규 라인업이 안전합니다.</p>
-
-<div class="callout tip">
-  <span class="callout-icon">📏</span>
-  <div class="callout-body">
-    <p class="callout-title">사이즈·발볼 팁</p>
-    <p>미드풋이 좁아 평소 사이즈가 빡빡할 수 있습니다. 발볼이 넓다면 <strong>0.5 사이즈 업</strong>을 고려하거나, 애초에 와이드 토박스 모델을 권합니다. 직구는 교환이 어려우니 본인 발 길이·발볼을 정확히 재고 사이즈 차트를 대조하세요. 발볼·아치별 신발 선택은 <a href="/blog/pronation-type-running-shoe-guide-2026">프로네이션 유형별 가이드</a>를 참고하세요.</p>
-  </div>
-</div>
-
-<h2>검증된 대안과 비교하고 싶다면</h2>
-
-<p>"가성비 슈퍼 트레이너"가 끌리지만 직구·안정성·발볼이 부담된다면, 한국에서 정식 유통되고 랩 데이터가 검증된 슈퍼 트레이너·고반발 데일리를 먼저 보세요. <a href="/shoes/saucony-endorphin-speed-5">사우코니 엔돌핀 스피드 5</a>(나일론 플레이트 슈퍼 트레이너), <a href="/shoes/nike-pegasus-premium">페가수스 프리미엄</a> 같은 고반발 데일리가 대표적입니다. 진짜 카본 레이싱이 목적이라면 <a href="/blog/carbon-plate-running-shoes-lineup-tier-guide-2026">카본 플레이트 러닝화 비교</a>를, 신발 용어가 헷갈리면 <a href="/blog/running-shoe-terminology-guide">러닝화 용어 사전</a>을 함께 보세요. 본인 조건에 맞는 후보는 <a href="/recommend">1분 러닝화 추천</a>으로 좁힐 수 있습니다.</p>
-
-<h2>FAQ</h2>
-
-<h3>Q. 정말 카본 슈퍼슈즈처럼 빠른가요?</h3>
-<p>아닙니다. <strong>유리섬유 플레이트 + 고반발 폼</strong>이라 "푹신하면서 통통 튀는" 느낌은 강하지만, 카본 특유의 단단한 추진(롤링)은 약합니다. 리뷰어들도 레이스 페이스 이상에선 둔하다고 평가합니다. <strong>훈련·LSD용 트레이너</strong>로 보는 게 정확합니다.</p>
-
-<h3>Q. 발볼 넓은데 신어도 될까요?</h3>
-<p>주의가 필요합니다. 미드풋 78mm로 좁은 편이고 와이드 옵션도 확인되지 않았습니다. 발볼이 넓다면 새끼발가락 압박·물집 위험이 있어, 0.5 사이즈 업을 고려하거나 토박스 넓은 다른 모델을 권합니다.</p>
-
-<h3>Q. 초보가 첫 신발로 사도 되나요?</h3>
-<p>권하지 않습니다. <strong>안정성이 부족</strong>해 흔들림이 있고, 직구라 사이즈 실패 리스크도 큽니다. 첫 러닝화는 검증된 데일리화가 안전합니다 — <a href="/blog/first-running-shoe-guide-2026">첫 러닝화 가이드</a>를 먼저 보세요.</p>
-
-<h3>Q. 마케팅 문구를 어디까지 믿어야 하나요?</h3>
-<p>"95% 에너지 리턴" 같은 제조사 주장은 <strong>독립 랩 검증 전까진 참고만</strong> 하세요. 신상이라 RunRepeat 등의 측정치가 아직 없습니다. 광고 카피가 아닌 데이터로 신발 고르는 법은 <a href="/blog/running-shoe-data-not-marketing-guide-2026">러닝화, 광고에 속지 말고 데이터로 고르세요</a>에서 정리했습니다.</p>
+<p><strong>2026-11-10 원문 대조 업데이트.</strong> 정확 모델과 검체 조건을 확인해 정리한 자료이며 자체 착화 후기는 아닙니다.</p><h2>10만원대라는 말만으로 가성비를 정하기 어렵습니다</h2><p>한국 정확 모델의 공식 정가·현재 선택 재고를 확인하지 못했습니다. 병행·구매대행 가격이나 해외 정가를 원화로 바꿔 한국 공식 가격처럼 넣지 않았습니다.</p><p>RTR이 전한 해외 정가는 현재 한국 결제 가격이 아닙니다. 다른 모델 대비 절반 값이라는 비교도 같은 시점·판매 조건의 가격을 확보해야 가능합니다.</p><figure><img src="/images/shoes/lining/red-hare-9-ultra/side.webp" alt="레드헤어9 울트라 제품 이미지" loading="lazy"/><figcaption>레드헤어9 울트라. Pro·일반형과 이름을 구분하세요.</figcaption></figure><h2>판매 페이지에서 먼저 확인할 네 가지</h2><p>상품명 끝이 정확 Ultra인지와 SKU·받는 규격을 확인하세요. 판매자의 사이즈표가 EU·US·중국 사이즈 중 무엇을 뜻하는지, 반품 시 배송비와 착화 후 반품 조건이 무엇인지도 확인할 수 있습니다.</p><p>병행 판매라는 이유만으로 AS가 모두 불가능하다고 단정하지 않습니다. 해당 판매자와 수입·유통 주체가 안내한 보증·교환 조건을 확인해야 합니다.</p><h2>조금 길면서 중족은 조일 수도 있습니다</h2><p>Derek은 본인에게 길고 전체적으로 좁은 핏과 사이드월·거싯의 압박을 느꼈습니다. 푹신하지만 고강도 인터벌에서 둔한 전환, 플레어·사이드월의 안정감은 한 테스터의 비교 의견입니다. 실제 시험 거리·성별·SKU는 미확인입니다.</p><p>RTR의 검체는 EU43/US9.5입니다. 이를 US9 약 241g으로 추정하거나 모든 넓은 발에 한 사이즈 업을 권하지 않았습니다. 길이가 여유로워도 거싯·사이드월 압박은 별개입니다.</p><div class="table-wrap"><table><thead><tr><th>구매 판단에 쓸 수 있는 것</th><th>이번 자료로 보장할 수 없는 것</th></tr></thead><tbody><tr><td>정확 Ultra RTR 검체 246.2g·47/42mm</td><td>모든 사이즈의 동일 무게·스택</td></tr><tr><td>한 테스터의 푹신함·전환·압박 관찰</td><td>모든 러너의 장거리 편안함·목표 페이스</td></tr><tr><td>판매자가 명시한 현재 교환·가격 조건을 별도 확인</td><td>한국 공식 최저가·모든 규격 재고</td></tr><tr><td>사용 중 실제 마모와 착화감 관찰</td><td>500~600km 수명·km당 비용</td></tr></tbody></table></div><h2>km당 비용을 뺀 이유</h2><p>국소 밑창 시험이나 짧은 개인 주행 관찰에서 공통 수명 550km를 만들 수 없습니다. 수명을 가정해 가격을 나누면 근거 없는 숫자가 더 정확해 보일 수 있어 이번 비교에서 제거했습니다.</p><p>이 신발을 고려한다면 저렴하다는 인상과 별개로 실제 규격의 고정·전환, 반품 가능 여부를 먼저 확인하세요. 판 소재와 전체 폼 조성도 확인되지 않은 항목으로 남겨 두었습니다.</p><h2>시착할 때는 이 순서로 확인하세요</h2><p>평소 양말과 인솔을 기준으로 앞쪽 길이와 발톱 위 높이를 확인하고 끈을 조여 보세요. 길이가 남아도 중족·거싯이 압박할 수 있습니다. 힐이 뜨는지도 함께 봅니다. 반 사이즈 업을 모든 발에 일괄 권하는 근거는 확인하지 못했습니다.</p><p>Derek의 좁은 체감은 실제 한 검체와 본인 발의 조합입니다. 이를 한국인 전체 발볼 등급이나 평발·부상 이력에 대한 적합성 판정으로 바꾸지 않았습니다. 불편한 압박·저림을 견디며 길들이라는 규칙도 만들지 않습니다.</p><h2>확인한 원문</h2><ul><li><a href="https://ir.lining.com/en/company/chairman.php" target="_blank" rel="noopener noreferrer">리닝 제조사 공시</a> — 정확 제품명·소재 공시 범위이며 랩 수치나 한국 판매 조건이 아닙니다.</li><li><a href="https://www.roadtrailrun.com/2026/03/2026-chinese-super-trainers-reviewed.html" target="_blank" rel="noopener noreferrer">RTR Derek Li 정확 Ultra 비교 착화</a> — EU43/US9.5 검체 246.2g·47/42mm. 측정 위치·인솔 포함 등 프로토콜 미확인.</li><li><a href="https://www.hkexnews.hk/listedco/listconews/sehk/2026/0422/2026042200804.pdf" target="_blank" rel="noopener noreferrer">리닝 제조사 공시 — HKEX 제출본 115쪽</a> — 정확 제품명·소재 공시 범위이며 랩 수치나 한국 판매 조건이 아닙니다.</li></ul>
 `,
+    updatedAt: "2026-11-10",
+    faqs: [
+      {
+        "question": "지금 13~17만원인가요?",
+        "answer": "이번 자료에서 한국 현재 판매 조건을 확인하지 못해 고정 가격 범위로 안내하지 않습니다."
+      },
+      {
+        "question": "500km를 쓰면 가성비가 좋지 않나요?",
+        "answer": "공통 수명 500km를 검증하지 못해 km당 비용을 계산하지 않았습니다."
+      },
+      {
+        "question": "직구는 무조건 AS가 안 되나요?",
+        "answer": "판매자·수입 주체의 보증 조건에 따라 달라질 수 있어 일괄 단정하지 않습니다."
+      }
+    ],
   },
   {
     id: 'running-shoe-data-not-marketing-guide-2026',

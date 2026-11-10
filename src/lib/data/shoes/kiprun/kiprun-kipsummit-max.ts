@@ -1,8 +1,6 @@
 import type { Shoe } from '@/types/shoe';
 
-// 2026-10-20 등록 — 출처: 데카트론 한국 공식몰 상품 8970093(남성) 상세, 킵런 공식 제품 페이지
-// (kiprun.com/en-GB/c/lp/kipsummit-max-maximum-comfort), RunRepeat 랩
-// https://runrepeat.com/kiprun-kipsummit-max (2026-04, 남성 US 9 측정, 트레일 평균 기준).
+// 원문 재확인:2026-11-10. 확인 범위와 한계는 verification 참조.
 export const shoe: Shoe = {
   id: 'kiprun-kipsummit-max',
   slug: 'kiprun-kipsummit-max',
@@ -18,114 +16,91 @@ export const shoe: Shoe = {
   ],
   category: '트레일',
   rating: 4,
-  price: 169000,
-  description:
-    '데카트론 러닝 브랜드 킵런의 쿠션 트레일화. SCF ATPU 기반 Fastech+ 미드솔과 Vibram 메가그립 아웃솔을 16.9만 원에 담았고, RunRepeat 실측 에너지 리턴이 힐 71.7%·전족부 73.8%로 트레일 평균(56.7%·59.7%)을 크게 넘습니다. 대신 토박스가 69.0mm로 좁습니다.',
-  oneliner: '16.9만 원 Vibram 트레일화 — 반발 73.8%, 앞코는 좁다',
-  editorComment:
-    '"20만 원 아래에서 Vibram 아웃솔에 쿠션 좋은 트레일화"를 찾는 러너에게 수치로 가장 설명이 잘 되는 신발입니다. 데카트론 한국 공식몰 정가 169,000원으로 우리 DB의 페레그린 16(179,000원)·스피드고트 7(219,000원)보다 낮고, RunRepeat 실측 에너지 리턴 힐 71.7%·전족부 73.8%는 랩이 "이보다 비싼 몇 안 되는 트레일화에서만 본 수치"라고 적은 값입니다. 충격흡수도 힐 137 SA(트레일 평균 122)로 넉넉하고, 무게는 275g(남성 US 9 실측)으로 트레일 평균 285g보다 가볍습니다. 힐 쪽 미드솔 폭 96.6mm(평균 90.4mm)로 바닥이 넓어 임도·완만한 산길에서 안정적인 구조입니다. 다만 랩은 "진짜 맥스 쿠션은 아니고 일부에겐 단단하게 느껴질 수 있다"고 봤고, 기술 지형 점수는 46으로 낮아 바위·급경사 위주 코스보다는 임도·혼합 노면용입니다.\n\n사이즈·구매 가이드: 발볼 넓은 한국 러너에게는 가장 큰 걸림돌이 폭입니다. 엄지 끝 지점 토박스가 69.0mm로 트레일 평균(74.4mm)보다 5.4mm 좁고, 발 가장 넓은 부위도 93.3mm(평균 95.7mm)로 좁으며, 랩은 "넓은 발에는 맞지 않는다(poor match for wide feet)"고 적었습니다. 한국 공식몰은 남성용 "보통 발볼" 한 가지만 팔고 와이드가 없습니다. 공식 드롭은 6mm지만 랩 실측은 8.1mm였습니다.',
-  tags: ['트레일', '비브람', '가성비 트레일', '울트라', '임도'],
-
+  description: 'ATPU Fastech+ · Vibram Megagrip · 판 없는 구조 구조의 킵서밋 맥스. RunRepeat 실험실 검체 275g·35.5/27.4mm. 한국 현재 정가 미확인.',
+  oneliner: 'ATPU Fastech+ · Vibram Megagrip · 판 없는 구조 · 275g (RunRepeat 실험실 검체)',
+  editorComment: '2026-11-10 원문 재확인. 한국 정확 모델의 상품·정가·폭·현재 재고는 미확인입니다. 미확인을 한국 미출시·단종으로 단정하지 않습니다. RR 275g·35.5/27.4mm·8.1mm, 영국 공시 268g(원문 size8, 체계 미확인)·드롭 6mm, DOR 소개 39/33mm·6mm를 구분합니다. DOR 남성 US9 무게는 10.1oz만 있고 g는 비어 있어 환산하지 않았습니다. 영국 반 사이즈 업 조언과 Matt·RR 이용자 투표의 정사이즈 의견은 조건이 다릅니다. DOR의 부드러운 체감은 RR 43.6AC와 같은 척도가 아닙니다. 500km 수명이나 기술 지형 안전 점수로 바꾸지 않습니다. DOR Quick Evaluation의 Matt Klein은 실제 남성 US10에서 정사이즈·낮은 볼륨과 테이퍼, 두꺼운 거싯의 발등 압박을 느꼈습니다. 부드럽고 탄성 있는 평탄한 흙길·내리막 체감과 기술적인 급오르막·진흙의 한계, 따뜻한 어퍼도 개인 의견입니다. 정식 다인 리뷰나 임상 평가로 확대하지 않습니다. RR 내부 최광폭 93.3mm·엄지 69mm·높이 24.2mm입니다. 실제 길이·발톱 위 높이·중족 압박·힐 고정을 확인하세요. 한국 다른 성별·폭의 치수로 직접 대입하지 않습니다. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
+  tags: [
+    '트레일',
+    '비브람',
+    '가성비 트레일',
+    '울트라',
+    '임도',
+  ],
   specs: {
     weight: 275,
     cushioning: 8,
     responsiveness: 9,
     stability: 8,
-    drop: 8,
-    durability: 500,
+    drop: 8.1,
   },
-
   biomechanics: {
-    stackHeight: { heel: 36, forefoot: 27 },
-    drop: 8,
+    stackHeight: {
+      heel: 35.5,
+      forefoot: 27.4,
+    },
+    drop: 8.1,
     carbonPlate: false,
     plateType: null,
-    midsoleType: 'Fastech+ (SCF 공정 100% ATPU)',
-    optimalPace: '5:30-8:00 min/km (임도·혼합 트레일 기준)',
+    midsoleType: 'ATPU Fastech+ · Vibram Megagrip · 판 없는 구조',
   },
-
-  injuryPrevention: {
-    plantarFasciitis: 'good',
-    achillesTendinopathy: 'good',
-    kneeIssues: 'good',
-    shinSplints: 'good',
-  },
-
   koreanFootFit: {
     toBoxWidth: 'narrow',
-    flatFootCompatibility: 'good',
-    wideOptions: false,
     winterCompatibility: 'excellent',
     summerCompatibility: 'good',
   },
-
   targetUsers: {
     recommended: [
-      '20만 원 아래에서 Vibram 아웃솔 쿠션 트레일화를 찾는 러너',
-      '로드에서 임도·근교 산길로 넘어가는 발볼 보통~좁은 러너',
-      '트레일 하프~울트라 완주형 장거리 훈련',
+      '실제 규격의 고정과 전환을 비교하려는 러너',
+      '개별 공시·검체 조건을 구분해 선택하려는 러너',
     ],
     notRecommended: [
-      '발볼이 넓은 러너 (토박스 69.0mm, 와이드 없음)',
-      '바위·급경사 위주의 기술 트레일 (랩 기술 지형 점수 46)',
-      '아주 푹신한 맥스 쿠션을 기대하는 러너',
+      '시착·주행에서 발등 압박·마찰·불편한 전환이 남는 경우',
     ],
   },
-
   features: [
-    'Fastech+ 미드솔 — SCF 공정 100% ATPU, 이전 킵서밋 대비 에너지 리턴 +21% (공식)',
-    'Vibram 메가그립 아웃솔 · 공식 4mm 러그(랩 실측 3.5mm)',
-    '에너지 리턴 힐 71.7%·전족부 73.8% (RunRepeat 실측, 트레일 평균 56.7%·59.7%)',
-    '275g (남성 US 9 실측) — 트레일 평균 285g보다 가벼움',
-    '169,000원 · 남성 255~300mm',
+    'ATPU Fastech+ · Vibram Megagrip · 판 없는 구조',
+    '275g · 35.5/27.4mm · 드롭 8.1mm (RunRepeat 실험실 검체)',
+    '영국 공시는 카본 없음, DOR은 판 없음으로 설명합니다. 비방수 모델이며 고무 두께 2mm에는 3.5mm 러그가 포함되지 않습니다.',
+    'RR 내부 최광폭 93.3mm·엄지 69mm·높이 24.2mm입니다. 실제 길이·발톱 위 높이·중족 압박·힐 고정을 확인하세요. 한국 다른 성별·폭의 치수로 직접 대입하지 않습니다.',
   ],
-
   priceAnalysis: {
-    msrp: 169000,
-    streetPrice: 169000,
-    costPerKm: 338,
     valueRating: 9,
     priceTier: 'mid',
-    alternatives: ['saucony-peregrine-16', 'mizuno-neo-daichi-10', 'hoka-speedgoat-7'],
-    valueAdvantages: [
-      '169,000원에 Vibram 메가그립 아웃솔 — 페레그린 16(179,000원)·스피드고트 7(219,000원)보다 낮은 정가',
-      '에너지 리턴 힐 71.7%·전족부 73.8%로 트레일 평균을 15%p 안팎 상회 (RunRepeat 실측)',
-      '토박스·힐 패딩 내구성 4/5 (RunRepeat, 평균 3.1)',
+    alternatives: [
+      'saucony-peregrine-16',
+      'mizuno-neo-daichi-10',
+      'hoka-speedgoat-7',
     ],
   },
-
   detailedSpecs: {
-    weight: '275g (RunRepeat 실측, 남성 US 9) · 데카트론 한국 공식 표기는 268g(특성표)과 "265mm 사이즈 기준 280g"(상세 설명)이 함께 적혀 있음',
-    stackHeight: '힐 35.5mm / 포어풋 27.4mm (RunRepeat 실측) · 킵런 공식 38.5/32.5mm',
-    drop: '8.1mm (RunRepeat 실측) / 6mm (공식)',
-    midsole: 'Fastech+ — 킵런 자체 SCF(초임계 발포) 공정 100% ATPU. 경도 43.6 AC(트레일 평균 38.3)로 단단한 편, 추위 경화 9%(평균 22%) (RunRepeat 실측)',
-    plate: '없음',
-    outsole: 'Vibram 메가그립 · 러그 3.5mm 실측(공식 4mm), 아웃솔 2.0mm, 드레멜 마모 0.8mm(트레일 평균 0.9mm) (RunRepeat 실측)',
-    upper: '메시 어퍼 + 세미 거싯 텅 (폴리에스터 71%·TPU 9%·열가소성 폴리에틸렌 20%, 공식)',
-    width: '토박스(엄지 끝 지점) 69.0mm — RunRepeat 남성 US 9 실측, 트레일 평균 74.4mm보다 5.4mm 좁음 → narrow. 랩 본문 "coming in at just 69.0 mm. In our view, this makes the shoe a poor match for wide feet". 발 최대폭 부위 93.3mm(평균 95.7mm). 한국 공식몰 남성 "보통 발볼"만 판매(와이드 없음)',
-    durability: '450~550km (추정 — km 단위 테스트 없음. 아웃솔 마모 0.8mm 실측은 트레일 평균 수준)',
-    price: '169,000원 (2026-10-20 데카트론 한국 공식몰 확인, 할인 없음)',
-    costPerKm: '약 ₩338/km (500km 기준)',
-    footType: '중립 발',
-    landingPattern: '힐·미드풋 착지 (힐 미드솔 폭 96.6mm, 평균 90.4mm)',
+    weight: '275g (RunRepeat 실험실 검체). RR 275g·35.5/27.4mm·8.1mm, 영국 공시 268g(원문 size8, 체계 미확인)·드롭 6mm, DOR 소개 39/33mm·6mm를 구분합니다. DOR 남성 US9 무게는 10.1oz만 있고 g는 비어 있어 환산하지 않았습니다.',
+    stackHeight: '35.5/27.4mm (RunRepeat 실험실 검체, 힐/전족부). 출처별 다른 공시는 무게 항목 참조.',
+    drop: '8.1mm (RunRepeat 실험실 검체). RR 275g·35.5/27.4mm·8.1mm, 영국 공시 268g(원문 size8, 체계 미확인)·드롭 6mm, DOR 소개 39/33mm·6mm를 구분합니다. DOR 남성 US9 무게는 10.1oz만 있고 g는 비어 있어 환산하지 않았습니다.',
+    midsole: 'ATPU Fastech+ · Vibram Megagrip · 판 없는 구조. 주폼 43.6AC, 힐/전족부 SA 137/113·에너지 리턴 71.7/73.8%. 영국 반 사이즈 업 조언과 Matt·RR 이용자 투표의 정사이즈 의견은 조건이 다릅니다. DOR의 부드러운 체감은 RR 43.6AC와 같은 척도가 아닙니다. 500km 수명이나 기술 지형 안전 점수로 바꾸지 않습니다.',
+    plate: '영국 공시는 카본 없음, DOR은 판 없음으로 설명합니다. 비방수 모델이며 고무 두께 2mm에는 3.5mm 러그가 포함되지 않습니다.',
+    width: 'RR 내부 최광폭 93.3mm·엄지 부위 69mm·높이 24.2mm. RR 내부 최광폭 93.3mm·엄지 69mm·높이 24.2mm입니다. 실제 길이·발톱 위 높이·중족 압박·힐 고정을 확인하세요. 한국 다른 성별·폭의 치수로 직접 대입하지 않습니다.',
+    durability: '검증된 공통 수명 km 미확인. 국소 마모·짧은 착화 후기를 주행 수명으로 환산하지 않습니다.',
+    price: '한국 정확 모델의 상품·정가·폭·현재 재고는 미확인입니다. 미확인을 한국 미출시·단종으로 단정하지 않습니다.',
   },
-
   reviews: [
     {
-      userType: '예상 적합 — 20만 원 아래 첫 Vibram 트레일화를 찾는 러너',
-      text: '로드 러닝을 하다 근교 산길·임도로 넘어가며 첫 본격 트레일화를 찾는다면 가격 대비 근거가 많은 후보입니다. 정가 169,000원에 Vibram 메가그립 아웃솔이 들어갔고, 에너지 리턴 힐 71.7%·전족부 73.8%는 트레일 평균(56.7%·59.7%)보다 크게 높습니다. 힐 쪽 미드솔 폭이 96.6mm로 넓어 착지 때 흔들림이 적은 구조입니다. 다만 앞코가 좁아 발볼 보통~좁은 러너에게 맞을 가능성이 큽니다.',
+      userType: '원문 기반 에디터 분석',
+      source: 'editor',
+      sourceUrl: 'https://runrepeat.com/kiprun-kipsummit-max',
+      text: 'RR 275g·35.5/27.4mm·8.1mm, 영국 공시 268g(원문 size8, 체계 미확인)·드롭 6mm, DOR 소개 39/33mm·6mm를 구분합니다. DOR 남성 US9 무게는 10.1oz만 있고 g는 비어 있어 환산하지 않았습니다. 영국 반 사이즈 업 조언과 Matt·RR 이용자 투표의 정사이즈 의견은 조건이 다릅니다. DOR의 부드러운 체감은 RR 43.6AC와 같은 척도가 아닙니다. 500km 수명이나 기술 지형 안전 점수로 바꾸지 않습니다.',
     },
     {
-      userType: '예상 적합 — 트레일 하프~울트라 완주가 목표인 러너',
-      text: '긴 거리를 꾸준한 페이스로 가는 트레일 대회 준비에는 맞는 성격입니다. 힐 충격흡수 137 SA(트레일 평균 122)로 쿠션 여유가 있고 275g으로 평균보다 가벼워, 후반 다리 부담을 줄이는 쪽입니다. 랩도 장거리에 편하다고 평가했습니다. 반면 미드솔 경도가 43.6 AC로 평균(38.3 AC)보다 단단하고 랩 기술 지형 점수가 46이라, 바위·급경사가 많은 국내 산악 코스보다는 임도·흙길 비중이 큰 코스에 용도가 맞습니다.',
-    },
-    {
-      userType: '예상 적합 — 발볼이 넓다면 비추천에 가깝다',
-      text: '발볼이 넓은 러너에게는 맞지 않을 가능성이 높습니다. 엄지 끝 지점 토박스 69.0mm는 트레일 평균(74.4mm)보다 5.4mm 좁고, 발 가장 넓은 부위도 93.3mm로 평균(95.7mm)보다 좁아 앞발 전체가 조이는 핏입니다. 랩도 넓은 발에는 맞지 않는다고 적었습니다. 한국 공식몰에는 와이드가 없으므로, 발볼이 넓다면 토박스가 표준 이상인 다른 트레일화를 먼저 비교하는 편이 낫습니다.',
+      userType: '외부 착화 의견 요약 · Doctors of Running',
+      source: 'editor',
+      sourceUrl: 'https://www.doctorsofrunning.com/kiprun-kipsummit-max-quick-evaluation/',
+      text: 'DOR Quick Evaluation의 Matt Klein은 실제 남성 US10에서 정사이즈·낮은 볼륨과 테이퍼, 두꺼운 거싯의 발등 압박을 느꼈습니다. 부드럽고 탄성 있는 평탄한 흙길·내리막 체감과 기술적인 급오르막·진흙의 한계, 따뜻한 어퍼도 개인 의견입니다. 정식 다인 리뷰나 임상 평가로 확대하지 않습니다.',
     },
   ],
-
-  similarShoes: ['saucony-peregrine-16', 'mizuno-neo-daichi-10', 'hoka-speedgoat-7'],
+  similarShoes: [
+    'saucony-peregrine-16',
+    'mizuno-neo-daichi-10',
+    'hoka-speedgoat-7',
+  ],
   purchaseLinks: [
     {
       store: '데카트론 공식몰',
@@ -134,4 +109,35 @@ export const shoe: Shoe = {
       isOfficial: true,
     },
   ],
+  verification: {
+    checkedAt: '2026-11-10',
+    scope: '한국 상품 조건, 해외 실험실·제조사 공시와 외부 착화 의견의 확인 범위를 구분했습니다. 제품 전체 검증 완료 표지가 아닙니다.',
+    sources: [
+      {
+        label: '해외 제조사 정확 모델 공시',
+        url: 'https://www.decathlon.co.uk/p/kiprun-kipsummit-max-men-s-trail-running-shoes-grey-black/362206/c208c382m8933583',
+        note: '해당 시장의 상품·체계. 한국 가격·재고로 환산하지 않습니다.',
+      },
+      {
+        label: 'RunRepeat 동세대 실험실 원문',
+        url: 'https://runrepeat.com/kiprun-kipsummit-max',
+        note: '공시 일반 검체 정책은 남성 US9. 실제 검체 라벨·폭 미확인. 275g·35.5/27.4mm·8.1mm. 영국 반 사이즈 업 조언과 Matt·RR 이용자 투표의 정사이즈 의견은 조건이 다릅니다. DOR의 부드러운 체감은 RR 43.6AC와 같은 척도가 아닙니다. 500km 수명이나 기술 지형 안전 점수로 바꾸지 않습니다.',
+      },
+      {
+        label: 'Doctors of Running 동세대 원문',
+        url: 'https://www.doctorsofrunning.com/kiprun-kipsummit-max-quick-evaluation/',
+        note: 'RR 275g·35.5/27.4mm·8.1mm, 영국 공시 268g(원문 size8, 체계 미확인)·드롭 6mm, DOR 소개 39/33mm·6mm를 구분합니다. DOR 남성 US9 무게는 10.1oz만 있고 g는 비어 있어 환산하지 않았습니다.',
+      },
+      {
+        label: 'RunRepeat 측정법',
+        url: 'https://runrepeat.com/testing-methodology',
+        note: 'AC·HA·HC, SA·에너지 리턴, BR·구방식1~5와 내부/외부 폭을 구분합니다. 일반 정책은 개별 라벨 확인과 다릅니다.',
+      },
+    ],
+    limitations: [
+      '모델별 임상 예방·치료 등급, 공통 최적 페이스·주행 수명·km당 비용은 미확인으로 제거했습니다.',
+      '에디터 평점·1~10점·발볼 및 계절 분류·구매 링크는 모든 항목을 새로 검증한 수치나 임상 효과가 아닙니다.',
+      '판매 조건은 확인한 상품·시점에 한정합니다. 미확인을 미출시·단종·전국 재고 없음으로 해석하지 않습니다.',
+    ],
+  },
 };

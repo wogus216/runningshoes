@@ -66,7 +66,13 @@ describe('toGridShoe', () => {
       const expected = s.targetUsers?.recommended?.some((t) => t.includes('초보') || t.includes('입문')) ?? false;
       expect(grid[i].beginnerFriendly, s.slug).toBe(expected);
     });
-    expect(grid.some((g) => g.beginnerFriendly)).toBe(true);
+    // DB의 독자 추천 문구 유무와 별개로 양쪽 매핑을 검증한다.
+    const seed = shoes[0];
+    for (const text of ['초보 러너', '입문 러너']) {
+      expect(toGridShoe({ ...seed, targetUsers: { recommended: [text], notRecommended: [] } }).beginnerFriendly).toBe(true);
+    }
+    expect(toGridShoe({ ...seed, targetUsers: { recommended: ['구조와 핏을 비교하는 러너'], notRecommended: [] } }).beginnerFriendly).toBe(false);
+    expect(toGridShoe({ ...seed, targetUsers: undefined }).beginnerFriendly).toBe(false);
   });
 
   it('식별·표시 필드는 원본과 같다', () => {

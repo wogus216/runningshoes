@@ -1,7 +1,6 @@
 import type { Shoe } from '@/types/shoe';
 
-// 2026-10-20 등록 — 출처: 데카트론 한국 공식몰 상품 8961380(남성)·8970785(여성) 상세,
-// RunRepeat 랩 https://runrepeat.com/kiprun-kipstorm-elite (2026-06, 남성 US 9 측정).
+// 원문 재확인:2026-11-10. 확인 범위와 한계는 verification 참조.
 export const shoe: Shoe = {
   id: 'kiprun-kipstorm-elite',
   slug: 'kiprun-kipstorm-elite',
@@ -16,114 +15,91 @@ export const shoe: Shoe = {
   ],
   category: '레이싱',
   rating: 4,
-  price: 269000,
-  description:
-    '데카트론 러닝 브랜드 킵런의 카본 레이싱화. SCF ATPU 컵솔에 SCF PEBA 인서트를 넣은 Fastech+ 미드솔과 카본 플레이트를 썼고, RunRepeat 실측 힐 SA 148·전족부 에너지 리턴 74.8%로 충격흡수와 반발 모두 평균을 크게 웃돕니다. 정가 269,000원.',
-  oneliner: '26.9만 원 데카트론 슈퍼슈즈 — 반발 74.8%, 대신 토박스 69.7mm로 좁다',
-  editorComment:
-    '"30만 원 넘는 슈퍼슈즈는 부담스러운데 카본화는 신어 보고 싶다"는 러너에게 들어온 새 선택지입니다. 이 모델의 기존 기록 정가는 269,000원입니다. 비교 대상 베이퍼플라이 4는 2026-11-09 확인한 남성 IM8203-001 정가 319,000원·여성 HF6412-102 정가 309,000원으로 상품 조건이 다릅니다. 다른 모델의 과거 가격과 섞어 공통 차액으로 비교하지 않습니다. 이 모델 자체의 현행 한국 상품 조건은 별도 재검증이 남아 있습니다. RunRepeat 실측으로 힐 충격흡수 148 SA(평균 131), 전족부 에너지 리턴 74.8%(평균 61.5%)라 쿠션과 반발은 슈퍼슈즈 기준에서도 충분하고, 아웃솔 드레멜 마모 0.4mm(평균 1.1mm)는 랩이 슈퍼슈즈 중 최상위권이라고 적은 수치입니다. 반대로 무게는 218g(남성 US 9 실측)으로 랩도 베이퍼플라이 4·메타스피드 스카이 도쿄 같은 최상위 레이서보다 "눈에 띄게 무겁다"고 평가했고, 반발도 최상위 슈퍼슈즈에는 조금 못 미친다고 봤습니다.\n\n사이즈·구매 가이드: 발볼 넓은 한국 러너가 가장 먼저 확인할 부분은 토박스입니다. 엄지 끝 지점 폭이 69.7mm로 랩 평균(73.2mm)보다 3.5mm 좁고, 랩 본문도 "noticeably tapered toebox"라고 적었습니다. 발 가장 넓은 부위(중족골)는 95.6mm로 평균(95.2mm) 수준이라, 앞발 끝이 눌리는지가 관건입니다. 한국 공식몰은 "보통 발볼" 한 가지 폭만 팔고 와이드가 없으니, 발볼이 넓다면 매장에서 마라톤 거리 기준으로 신어 보고 고르는 편이 안전합니다. 힐 쪽 미드솔 폭이 81.6mm(평균 91.1mm)로 좁고 힐 카운터도 2/5로 부드러워, 뒤꿈치로 크게 착지하는 러너는 후반 흔들림을 염두에 두세요.',
-  tags: ['레이싱', '카본 플레이트', '슈퍼슈즈', 'PEBA', '가성비 카본'],
-
+  description: 'Fastech+ 위층 PEBA · 아래층 ATPU · 카본 판 구조의 킵스톰 엘리트. RunRepeat 실험실 검체 218g·38.1/31.4mm. 한국 현재 정가 미확인.',
+  oneliner: 'Fastech+ 위층 PEBA · 아래층 ATPU · 카본 판 · 218g (RunRepeat 실험실 검체)',
+  editorComment: '2026-11-10 원문 재확인. 한국 정확 모델의 상품·정가·폭·현재 재고는 미확인입니다. 미확인을 한국 미출시·단종으로 단정하지 않습니다. RR 218g·38.1/31.4mm·6.7mm와 영국 공시 215g(사이즈 미확인)·39/34mm·5mm는 조건이 다릅니다. 34.5AC는 위층 PEBA의 경도입니다. 냉간 절대 경도·7% 변화율·350km 수명·기록 향상은 확인하지 못했습니다. 외부 힐 바닥 폭 81.6mm를 내부 공간으로 쓰지 않습니다. 정확 모델의 DOR 개별 착화 리뷰는 이번 범위에서 확인하지 못했습니다. RR 수치와 제조사 설명을 자체 착화 경험처럼 쓰지 않습니다. RR 내부 최광폭 95.6mm·엄지 69.7mm·높이 26.8mm입니다. 실제 길이·발톱 위 높이·중족 압박·힐 고정을 확인하세요. 한국 다른 성별·폭의 치수로 직접 대입하지 않습니다. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
+  tags: [
+    '레이싱',
+    '카본 플레이트',
+    '슈퍼슈즈',
+    'PEBA',
+    '가성비 카본',
+  ],
   specs: {
     weight: 218,
     cushioning: 9,
     responsiveness: 9,
     stability: 6,
-    drop: 7,
-    durability: 350,
+    drop: 6.7,
   },
-
   biomechanics: {
-    stackHeight: { heel: 38, forefoot: 31 },
-    drop: 7,
+    stackHeight: {
+      heel: 38.1,
+      forefoot: 31.4,
+    },
+    drop: 6.7,
     carbonPlate: true,
-    plateType: 'curved',
-    midsoleType: 'Fastech+ (SCF ATPU 컵솔 + SCF PEBA 인서트)',
-    optimalPace: '3:30-5:00 min/km (레이스·템포)',
+    plateType: 'Carbon plate; exact geometry unverified',
+    midsoleType: 'Fastech+ 위층 PEBA · 아래층 ATPU · 카본 판',
   },
-
-  injuryPrevention: {
-    plantarFasciitis: 'good',
-    achillesTendinopathy: 'caution',
-    kneeIssues: 'good',
-    shinSplints: 'good',
-  },
-
   koreanFootFit: {
     toBoxWidth: 'narrow',
-    flatFootCompatibility: 'poor',
-    wideOptions: false,
     winterCompatibility: 'excellent',
     summerCompatibility: 'fair',
   },
-
   targetUsers: {
     recommended: [
-      '30만 원 아래에서 첫 카본 레이싱화를 찾는 서브4~서브3:30 목표 러너',
-      '하프·풀코스 레이스와 템포 훈련을 한 켤레로 겸하려는 러너',
-      '레이싱화 아웃솔이 빨리 닳는 것이 부담스러운 러너',
+      '실제 규격의 고정과 전환을 비교하려는 러너',
+      '개별 공시·검체 조건을 구분해 선택하려는 러너',
     ],
     notRecommended: [
-      '발볼이 넓은 러너 (토박스 69.7mm, 와이드 없음)',
-      '200g 이하 최경량 레이서를 원하는 러너',
-      '뒤꿈치 착지가 강하고 후반 안정성이 필요한 러너',
+      '시착·주행에서 발등 압박·마찰·불편한 전환이 남는 경우',
     ],
   },
-
   features: [
-    'Fastech+ 미드솔 — SCF ATPU(밀도 0.11) 컵솔 + SCF PEBA(밀도 0.10) 인서트 (공식)',
-    '카본 플레이트 + 로커 지오메트리',
-    '전족부 에너지 리턴 74.8%·힐 SA 148 (RunRepeat 실측)',
-    '아웃솔 드레멜 마모 0.4mm — 랩 평균 1.1mm (RunRepeat 실측)',
-    '218g (남성 US 9 실측) · 269,000원',
+    'Fastech+ 위층 PEBA · 아래층 ATPU · 카본 판',
+    '218g · 38.1/31.4mm · 드롭 6.7mm (RunRepeat 실험실 검체)',
+    '카본 플레이트가 있는 구조입니다. 영국 문서의 아웃솔 전체 성분 비율을 미드솔 배합이나 카본 순도로 바꾸지 않습니다.',
+    'RR 내부 최광폭 95.6mm·엄지 69.7mm·높이 26.8mm입니다. 실제 길이·발톱 위 높이·중족 압박·힐 고정을 확인하세요. 한국 다른 성별·폭의 치수로 직접 대입하지 않습니다.',
   ],
-
   priceAnalysis: {
-    msrp: 269000,
-    streetPrice: 269000,
-    costPerKm: 769,
     valueRating: 8,
     priceTier: 'premium',
-    alternatives: ['saucony-endorphin-pro-4', 'mizuno-hyperwarp-pro', 'puma-deviate-nitro-elite-3'],
-    valueAdvantages: [
-      '기존 기록 정가 269,000원. 비교 모델의 성별·상품별 조건이 달라 공통 차액 비교는 철회 (이 모델 현행 상품 재검증 예정)',
-      '아웃솔 마모 0.4mm로 레이싱화치고 오래 쓰는 아웃솔 (RunRepeat 실측)',
-      '레이스와 템포 훈련 겸용 — RunRepeat 용도 점수 레이스 88·템포 83',
+    alternatives: [
+      'saucony-endorphin-pro-4',
+      'mizuno-hyperwarp-pro',
+      'puma-deviate-nitro-elite-3',
     ],
   },
-
   detailedSpecs: {
-    weight: '218g (RunRepeat 실측, 남성 US 9) · 데카트론 한국 공식 표기 남성 215g·여성 185g(사이즈 미표기)',
-    stackHeight: '힐 38.1mm / 포어풋 31.4mm (RunRepeat 실측) · 공식 39/34mm',
-    drop: '6.7mm (RunRepeat 실측) / 5mm (공식)',
-    midsole: 'Fastech+ — SCF ATPU(밀도 0.11) 컵솔 + SCF PEBA(밀도 0.10) 인서트. 경도 34.5 AC(평균 35.4), 추위 경화 7%(평균 22%) (RunRepeat 실측)',
-    plate: '카본 플레이트',
-    outsole: '합성고무 아웃솔 2.5mm(평균 3.1mm), 드레멜 마모 0.4mm(평균 1.1mm) (RunRepeat 실측)',
-    upper: '니트 어퍼 + 상단 고정 세미 거싯 텅 (TPU 39%·폴리에스터 61%, 공식)',
-    width: '토박스(엄지 끝 지점) 69.7mm — RunRepeat 남성 US 9 실측, 같은 랩 평균 73.2mm보다 3.5mm 좁음 → narrow. 랩 본문 "noticeably tapered toebox, coming in at just 69.7 mm". 발 최대폭 부위 95.6mm(평균 95.2mm). 한국 공식몰 발볼 "보통 발볼"만 판매(와이드 없음)',
-    durability: '300~400km (추정 — km 단위 테스트 없음. 아웃솔 마모 0.4mm 실측은 우수하나 PEBA 미드솔 수명은 별개)',
-    price: '269,000원 (2026-10-20 데카트론 한국 공식몰 확인, 할인 없음)',
-    costPerKm: '약 ₩769/km (350km 기준)',
-    footType: '중립 발',
-    landingPattern: '미드풋·포어풋 착지 유리 (힐 미드솔 폭 81.6mm, 평균 91.1mm)',
+    weight: '218g (RunRepeat 실험실 검체). RR 218g·38.1/31.4mm·6.7mm와 영국 공시 215g(사이즈 미확인)·39/34mm·5mm는 조건이 다릅니다.',
+    stackHeight: '38.1/31.4mm (RunRepeat 실험실 검체, 힐/전족부). 출처별 다른 공시는 무게 항목 참조.',
+    drop: '6.7mm (RunRepeat 실험실 검체). RR 218g·38.1/31.4mm·6.7mm와 영국 공시 215g(사이즈 미확인)·39/34mm·5mm는 조건이 다릅니다.',
+    midsole: 'Fastech+ 위층 PEBA · 아래층 ATPU · 카본 판. 주폼 34.5AC, 힐/전족부 SA 148/126·에너지 리턴 68.9/74.8%. 34.5AC는 위층 PEBA의 경도입니다. 냉간 절대 경도·7% 변화율·350km 수명·기록 향상은 확인하지 못했습니다. 외부 힐 바닥 폭 81.6mm를 내부 공간으로 쓰지 않습니다.',
+    plate: '카본 플레이트가 있는 구조입니다. 영국 문서의 아웃솔 전체 성분 비율을 미드솔 배합이나 카본 순도로 바꾸지 않습니다.',
+    width: 'RR 내부 최광폭 95.6mm·엄지 부위 69.7mm·높이 26.8mm. RR 내부 최광폭 95.6mm·엄지 69.7mm·높이 26.8mm입니다. 실제 길이·발톱 위 높이·중족 압박·힐 고정을 확인하세요. 한국 다른 성별·폭의 치수로 직접 대입하지 않습니다.',
+    durability: '검증된 공통 수명 km 미확인. 국소 마모·짧은 착화 후기를 주행 수명으로 환산하지 않습니다.',
+    price: '한국 정확 모델의 상품·정가·폭·현재 재고는 미확인입니다. 미확인을 한국 미출시·단종으로 단정하지 않습니다.',
   },
-
   reviews: [
     {
-      userType: '예상 적합 — 첫 카본화를 30만 원 아래에서 고르는 서브4 목표 러너',
-      text: '풀코스 서브4나 하프 1시간 50분 안쪽을 노리며 첫 카본화를 고민한다면 가격 대비 근거가 많은 후보입니다. 정가 269,000원으로 30만 원대 슈퍼슈즈보다 4만~6만 원 낮으면서, 전족부 에너지 리턴 74.8%(평균 61.5%)·힐 충격흡수 148 SA(평균 131)로 반발과 쿠션 실측치가 모두 평균을 크게 넘습니다. 다만 218g은 최상위 레이서보다 무거운 편이라, 기록 몇 초가 아쉬운 엘리트급보다는 첫 슈퍼슈즈 입문 쪽에 맞을 가능성이 큽니다.',
+      userType: '원문 기반 에디터 분석',
+      source: 'editor',
+      sourceUrl: 'https://runrepeat.com/kiprun-kipstorm-elite',
+      text: 'RR 218g·38.1/31.4mm·6.7mm와 영국 공시 215g(사이즈 미확인)·39/34mm·5mm는 조건이 다릅니다. 34.5AC는 위층 PEBA의 경도입니다. 냉간 절대 경도·7% 변화율·350km 수명·기록 향상은 확인하지 못했습니다. 외부 힐 바닥 폭 81.6mm를 내부 공간으로 쓰지 않습니다.',
     },
     {
-      userType: '예상 적합 — 레이스와 템포 훈련을 한 켤레로 겸하려는 러너',
-      text: '대회용 한 켤레를 훈련에도 섞어 쓰려는 경우 아웃솔 수치가 의미가 있습니다. RunRepeat 드레멜 마모가 0.4mm로 랩 평균(1.1mm)의 절반 아래라, 레이싱화 아웃솔이 금방 닳는 문제는 덜할 것으로 보입니다. 랩의 용도 점수도 레이스 88·템포 83으로 템포까지는 높게 봤습니다. 반면 데일리 점수는 47로 낮아 회복주·조깅용으로는 맞지 않습니다. 미드솔(PEBA) 수명은 아웃솔과 따로 줄어드니 수명은 300~400km 정도로 보수적으로 잡는 편이 안전합니다.',
-    },
-    {
-      userType: '예상 적합 — 발볼이 넓다면 신중히, 앞발 끝이 눌리는지부터',
-      text: '발볼이 넓은 러너에게는 조건부입니다. 엄지 끝 지점 토박스가 69.7mm로 랩 평균(73.2mm)보다 3.5mm 좁고, 랩도 마라톤에서는 이 좁은 앞코가 문제가 될 수 있다고 적었습니다. 발 가장 넓은 부위 폭은 95.6mm로 평균 수준이라, 중족골보다는 발가락 쪽이 붓는 후반 구간에서 압박이 생길 수 있습니다. 한국 공식몰에는 와이드가 없으므로, 풀코스용이라면 매장에서 신어 보고 앞발 끝 여유를 확인한 뒤 고르는 쪽이 현실적입니다.',
+      userType: '원문 기반 확인 범위 · 착화 후기 미확인',
+      source: 'editor',
+      sourceUrl: 'https://runrepeat.com/kiprun-kipstorm-elite',
+      text: '정확 모델의 DOR 개별 착화 리뷰는 이번 범위에서 확인하지 못했습니다. RR 수치와 제조사 설명을 자체 착화 경험처럼 쓰지 않습니다.',
     },
   ],
-
-  similarShoes: ['saucony-endorphin-pro-4', 'mizuno-hyperwarp-pro', 'puma-deviate-nitro-elite-3'],
+  similarShoes: [
+    'saucony-endorphin-pro-4',
+    'mizuno-hyperwarp-pro',
+    'puma-deviate-nitro-elite-3',
+  ],
   purchaseLinks: [
     {
       store: '데카트론 공식몰',
@@ -132,4 +108,31 @@ export const shoe: Shoe = {
       isOfficial: true,
     },
   ],
+  verification: {
+    checkedAt: '2026-11-10',
+    scope: '한국 상품 조건, 해외 실험실·제조사 공시와 외부 착화 의견의 확인 범위를 구분했습니다. 제품 전체 검증 완료 표지가 아닙니다.',
+    sources: [
+      {
+        label: '해외 제조사 정확 모델 공시',
+        url: 'https://www.decathlon.co.uk/p/kiprun-kipstorm-elite-men-s-running-shoes-with-carbon-plate-green-yellow/362113/c266c132m9001586',
+        note: '해당 시장의 상품·체계. 한국 가격·재고로 환산하지 않습니다.',
+      },
+      {
+        label: 'RunRepeat 동세대 실험실 원문',
+        url: 'https://runrepeat.com/kiprun-kipstorm-elite',
+        note: '공시 일반 검체 정책은 남성 US9. 실제 검체 라벨·폭 미확인. 218g·38.1/31.4mm·6.7mm. 34.5AC는 위층 PEBA의 경도입니다. 냉간 절대 경도·7% 변화율·350km 수명·기록 향상은 확인하지 못했습니다. 외부 힐 바닥 폭 81.6mm를 내부 공간으로 쓰지 않습니다.',
+      },
+      {
+        label: 'RunRepeat 측정법',
+        url: 'https://runrepeat.com/testing-methodology',
+        note: 'AC·HA·HC, SA·에너지 리턴, BR·구방식1~5와 내부/외부 폭을 구분합니다. 일반 정책은 개별 라벨 확인과 다릅니다.',
+      },
+    ],
+    limitations: [
+      '모델별 임상 예방·치료 등급, 공통 최적 페이스·주행 수명·km당 비용은 미확인으로 제거했습니다.',
+      '에디터 평점·1~10점·발볼 및 계절 분류·구매 링크는 모든 항목을 새로 검증한 수치나 임상 효과가 아닙니다.',
+      '판매 조건은 확인한 상품·시점에 한정합니다. 미확인을 미출시·단종·전국 재고 없음으로 해석하지 않습니다.',
+      '정확한 동세대 DOR 개별 착화 리뷰 미확인. 다른 세대로 대체하지 않음.',
+    ],
+  },
 };
