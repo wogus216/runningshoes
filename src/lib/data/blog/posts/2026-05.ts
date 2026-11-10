@@ -5780,199 +5780,40 @@ export const posts_2026_05: BlogPost[] = [
 `,
   },
   {
-    id: '2026-bape-adidas-evo-sl-release',
-    slug: '2026-bape-adidas-evo-sl-release',
-    title: 'BAPE × 아디다스 에보 SL | 6월 1일 발매 — 좌우 비대칭 카모, 한국 러너 구매 경로 총정리',
-    description: '6월 1일(월) 전 세계 동시 발매되는 BAPE × adidas Adizero Evo SL (KJ5751). 좌우 짝짝이 핑크/베이비블루 + ABC 카모 + Shooting Star 로고가 합쳐진 협업. 글로벌 $200 / 한국가 추정, 베이스 모델 가성비 슈퍼폼(RunRepeat 에너지 리턴 힐 74.3%·전족 73.5%) 그대로. 한국에서 살 수 있는 경로와 BAPE Store 서울·아디다스 앱 셋업까지.',
-    thumbnail: '/images/blog/2026-bape-adidas-evo-sl-release.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-05-11',
-    category: 'news' as const,
-    readingTime: 7,
-    tags: ['BAPE', '아디다스', '아디제로 에보 SL', '콜라보', '한정판', '러닝화 발매', '슈퍼폼'],
+    id: "2026-bape-adidas-evo-sl-release",
+    slug: "2026-bape-adidas-evo-sl-release",
+    title: "BAPE × 에보 SL Away — 지역별 발매·공식 사진·한국 확인 사항",
+    description: "제조사의 Home/Away 지역 구분과 일본 7/5·33,000엔 안내를 대조했습니다. 한국 정확 가격·일정·재고와 협업판 독립 실측은 미확인입니다.",
+    thumbnail: "/images/blog/verified-bape-adidas-evo-sl-away-20261110.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-05-11",
+    category: "news",
+    readingTime: 6,
+    tags: [
+      "BAPE",
+      "아디다스",
+      "EVO SL Away",
+      "협업판",
+      "지역별 발매"
+    ],
     content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li>BAPE × 아디다스 아디제로 에보 SL (KJ5751) — <strong>2026년 6월 1일(월) 전 세계 동시 발매</strong></li>
-    <li>좌우 비대칭 디자인(좌 베이비 블루 / 우 핑크) + ABC 카모(칼라·라이너·레이스) + 한 쪽 3-스트라이프 / 다른 쪽 Shooting Star</li>
-    <li>글로벌 정가 <strong>$200</strong> — 일반 에보 SL($150 / 한국 209,000원) 대비 약 33% 프리미엄. 한국 매장 BAPE 압구정·홍대 + 아디다스 앱 KR 가능성</li>
-  </ul>
-</div>
-
-<div class="callout warning">
-  <span class="callout-icon">⏰</span>
-  <div class="callout-body">
-    <p class="callout-title">6월 1일 발매 — 구매 전 셋업</p>
-    <p>한정판 협업은 발매 당일 결제까지 가는 게 진짜 게임입니다. ① <strong>아디다스 KR 앱</strong> 회원가입 + 본인인증 + 결제 카드 등록, ② <strong>BAPE Store</strong> 압구정·홍대 매장 입고 문의 (전화/인스타 DM), ③ adidas Confirmed 앱 다운로드(글로벌 한정 발매 진행 채널) — 이 3가지는 5월 안에 끝내두세요.</p>
-  </div>
-</div>
-
-<h2>일단 무슨 신발인가</h2>
-
-<p>이번 협업은 BAPE(A Bathing Ape)와 아디다스의 2026 시즌 4번째 공동 작업입니다. 2월의 BAPE × adidas 풋볼 컬렉티브(World Cup 컬렉션) 이후, 이번엔 <strong>아디다스에서 가장 잘 팔리는 데일리 트레이너</strong>인 <a href="/shoes/adidas-adizero-evo-sl">아디제로 에보 SL</a>을 베이스로 골랐습니다.</p>
-
-<p>왜 에보 SL을 골랐는지 잠깐 짚자면, 이 신발이 2025~2026 글로벌 슈퍼폼 트렌드의 가성비 정답이기 때문입니다. <strong>아디오스 프로 3와 동일한 100% Lightstrike Pro 미드솔</strong>을 데일리 트레이너 가격대(정가 20만 9천원)에 풀었고, RunRepeat 랩 에너지 리턴은 힐 74.3%·전족 73.5%(평균 61.5%)로 플레이트 없는 데일리 중 높은 축입니다. 223g 초경량 + 컨티넨탈 러버 아웃솔까지, 단가 대비 성능이 가장 균형 잡힌 모델입니다.</p>
-
-<h2>디자인 — 좌우 짝짝이가 핵심</h2>
-
-<div class="stat-grid">
-  <div class="stat-card accent">
-    <span class="stat-label">발매일</span>
-    <span class="stat-value">6/1 (월)</span>
-    <span class="stat-sub">전 세계 동시</span>
-  </div>
-  <div class="stat-card">
-    <span class="stat-label">스타일 코드</span>
-    <span class="stat-value">KJ5751</span>
-    <span class="stat-sub">남녀 공용</span>
-  </div>
-  <div class="stat-card">
-    <span class="stat-label">글로벌 가격</span>
-    <span class="stat-value">$200</span>
-    <span class="stat-sub">≒ 한국 28만원대 추정</span>
-  </div>
-  <div class="stat-card">
-    <span class="stat-label">베이스 모델</span>
-    <span class="stat-value">에보 SL</span>
-    <span class="stat-sub">100% Lightstrike Pro</span>
-  </div>
-</div>
-
-<p>실물 이미지를 보면 한 번에 알 수 있는 포인트가 5가지입니다.</p>
-
-<ul>
-  <li><strong>좌우 비대칭 컬러:</strong> 한쪽은 베이비 블루 + 핑크 토 캡, 반대쪽은 핑크 + 블루 토 캡. 신발 한 켤레가 좌·우가 다른 색입니다. 멀리서 봐도 콜라보임을 알 수 있는 시그니처.</li>
-  <li><strong>ABC 카모 패턴:</strong> BAPE 시그니처 ABC(에이프) 카모가 칼라·라이너·레이스에만 적용. 어퍼 본체는 깔끔한 단색으로 유지.</li>
-  <li><strong>로고 짝짝이:</strong> 한쪽 사이드는 아디다스 <strong>3-스트라이프</strong>, 다른 쪽 사이드는 BAPE <strong>Shooting Star</strong> 로고. 두 브랜드를 한 켤레에 동등하게 박은 디자인.</li>
-  <li><strong>골드 디테일:</strong> 힐 카운터와 텅 라벨에 골드 액센트. 프리미엄 협업 톤을 잡아주는 포인트.</li>
-  <li><strong>퍼포먼스는 그대로:</strong> 미드솔(100% Lightstrike Pro), 아웃솔(컨티넨탈 러버), 무게(223g), 스택(힐 36mm / 전족부 28mm) — 베이스 모델과 동일. <strong>러닝화 성능은 손대지 않았다</strong>는 게 중요합니다.</li>
-</ul>
-
-<div class="callout info">
-  <span class="callout-icon">💡</span>
-  <div class="callout-body">
-    <p class="callout-title">왜 좌우 비대칭인가</p>
-    <p>BAPE × adidas 2026 시즌의 공통 디자인 언어입니다. 2월 풋볼 컬렉션 운동화도 같은 비대칭 패턴이었어요. 두 브랜드의 정체성을 한쪽씩 나누는 방식인데, 실제로 신었을 때 좌우 색이 다르면 도드라지기 때문에 호불호가 갈립니다. 출근·일상화로 쓸 거면 한 번 더 고민할 디자인입니다.</p>
-  </div>
-</div>
-
-<h2>한국에서 어떻게 사나 — 채널별 현실성</h2>
-
-<table>
-  <thead>
-    <tr><th>경로</th><th>현실성</th><th>가격대</th></tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>① BAPE Store 서울(압구정·홍대)</strong></td>
-      <td>오프라인 발매 가능성 가장 높음. 줄서기 또는 응모 방식 예상</td>
-      <td>한국 정가 28~30만원대 추정</td>
-    </tr>
-    <tr>
-      <td><strong>② 아디다스 KR 앱·웹 (adidas.com/kr)</strong></td>
-      <td>2026년 BAPE 협업 풋볼 컬렉션이 한국 앱에서 동시 발매됐던 전례 있음</td>
-      <td>한국 정가</td>
-    </tr>
-    <tr>
-      <td><strong>③ adidas Confirmed 앱 (글로벌)</strong></td>
-      <td>아디다스 글로벌 한정 발매 공식 채널. 한국 IP에서 응모 가능하나 배송은 별도 확인</td>
-      <td>$200 + 배송비·관세</td>
-    </tr>
-    <tr>
-      <td><strong>④ BAPE.com 글로벌</strong></td>
-      <td>발매 직후 즉시 매진 패턴. 한국 직배송은 가능하나 관세 별도</td>
-      <td>$200 + 관·배송</td>
-    </tr>
-    <tr>
-      <td><strong>⑤ 리셀 (KREAM, StockX)</strong></td>
-      <td>발매 직후 프리미엄 30~50% 예상. 사이즈 빠른 매진 우려</td>
-      <td>35~45만원 추정</td>
-    </tr>
-  </tbody>
-</table>
-
-<div class="callout warning">
-  <span class="callout-icon">⚠️</span>
-  <div class="callout-body">
-    <p class="callout-title">한국 정식 발매 여부는 5월 마지막 주에 확정</p>
-    <p>발매 전까지 아디다스 코리아가 한국 발매를 공식 공지하지는 않았습니다. 통상 BAPE 협업은 발매 1~2주 전 인스타그램(@adidaskr / @bape_kr)에서 한국 발매 채널을 발표하니, 구매 채널은 공식 인스타에서 확인하세요.</p>
-  </div>
-</div>
-
-<h2>그래서 살 만한가 — 러너 관점 냉정한 평가</h2>
-
-<h3>✅ 사도 되는 사람</h3>
-
-<ul>
-  <li><strong>BAPE·스니커헤드 컬렉터</strong> — 운동화 패션 가치 우선. 좌우 비대칭 + 카모 + 골드는 BAPE 협업 중에서도 색감이 강한 편</li>
-  <li><strong>러닝 + 데일리 겸용 1켤레로 끝내고 싶은 러너</strong> — 베이스 모델 성능 그대로니까 5~10km 데일리 러닝과 출근까지 한 켤레로 커버 가능</li>
-  <li><strong>일반 에보 SL을 어차피 살 예정이었던 러너</strong> — 한국가 추정 28~30만원이면 정가 209,000원 대비 +7~9만원. 한정판 가치 더하면 본전 이상</li>
-</ul>
-
-<h3>❌ 안 사도 되는 사람</h3>
-
-<ul>
-  <li><strong>순수 퍼포먼스 목적 러너</strong> — 같은 미드솔의 일반 에보 SL이 15만원(세일가)에 살 수 있습니다. 좌우 짝짝이 색감이 거슬리면 본전 못 뽑음</li>
-  <li><strong>안정화·과내전 러너</strong> — 에보 SL은 안정성 6/10. 베이스 자체가 중립~빠른 페이스용이라 발 안정성 필요한 러너에게는 부적합. <a href="/shoes/asics-gel-kayano-32">카야노 32</a>나 <a href="/shoes/new-balance-860-v15">860 v15</a>가 정답</li>
-  <li><strong>발볼 넓은 한국 러너</strong> — BAPE 협업 버전은 표준 폭만 출시. 와이드 옵션 없음. 일반 에보 SL도 2026년 10월 한국 공식몰 기준 와이드가 없고, 표준폭 엄지 위치 토박스가 71.6mm(RunRepeat 평균 73.2mm)라 발볼이 넓다면 매장에서 먼저 신어 보세요</li>
-</ul>
-
-<h2>2026 아디다스 협업 흐름 정리</h2>
-
-<p>이번 BAPE × 에보 SL은 아디다스의 2026 협업 라인업 중에서도 러닝 성능과 패션이 균형 잡힌 모델입니다. 같은 시즌 다른 발매와 비교하면 위치가 분명해집니다.</p>
-
-<table>
-  <thead>
-    <tr><th>모델</th><th>발매</th><th>한국가</th><th>성격</th></tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>BAPE × 에보 SL</strong></td>
-      <td>2026.6.1</td>
-      <td>28~30만원 추정</td>
-      <td>러닝 + 패션 협업</td>
-    </tr>
-    <tr>
-      <td><a href="/blog/2026-adidas-adios-pro-evo-3-korea-release">아디오스 프로 에보 3</a></td>
-      <td>2026.11.2 한국 앱 발매</td>
-      <td>59만 9,000원</td>
-      <td>서브2 슈퍼슈즈, 100km 소모품</td>
-    </tr>
-    <tr>
-      <td><a href="/shoes/adidas-adizero-evo-sl">일반 에보 SL</a></td>
-      <td>상시</td>
-      <td>209,000원 (세일 15만원대)</td>
-      <td>가성비 슈퍼폼 데일리</td>
-    </tr>
-    <tr>
-      <td><a href="/shoes/adidas-adios-pro-4">아디오스 프로 4</a></td>
-      <td>상시</td>
-      <td>약 32만원</td>
-      <td>데일리 가능한 카본화</td>
-    </tr>
-  </tbody>
-</table>
-
-<h2>요약 — 구매 액션 플랜</h2>
-
-<ol>
-  <li><strong>지금 (5/11~):</strong> 아디다스 KR 앱 회원가입·본인인증·결제카드 등록 / BAPE 압구정·홍대 매장 입고 문의 (@bape_kr DM)</li>
-  <li><strong>5월 마지막 주:</strong> 아디다스 코리아·BAPE 코리아 인스타그램 한국 발매 채널 공지 확인</li>
-  <li><strong>발매 전날 (5/31):</strong> adidas Confirmed 앱 알림 설정, 사이즈 미리 결정(에보 SL은 보통 사이즈 그대로 또는 발볼 넓으면 +0.5)</li>
-  <li><strong>6월 1일(월) 발매 당일:</strong> 발매 시각(보통 한국 오전 10시 또는 자정) 직전 앱 로그인 유지, 결제 단계까지 한 번에</li>
-</ol>
-
-<div class="callout success">
-  <span class="callout-icon">🏃</span>
-  <div class="callout-body">
-    <p class="callout-title">러닝 우선이라면 일반 에보 SL이 정답</p>
-    <p>BAPE 협업이 끌리지 않거나 한정판 게임이 부담스럽다면, 일반 <a href="/shoes/adidas-adizero-evo-sl">아디제로 에보 SL</a>이 같은 성능을 15만원(세일가)에 제공합니다. 다만 일반판도 2026년 10월 한국 공식몰 기준 와이드는 없습니다. 발볼 넓은 러너는 <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국인을 위한 러닝화 추천 TOP 10</a>도 함께 참고하세요.</p>
-  </div>
-</div>
-
-<p><small>출처: Sneaker Bar Detroit / Sneaker News / Sole Retriever / WWD Footwear News / Modern Notoriety / Sneaker Freaker / Just Fresh Kicks / 작성일 2026년 5월 11일 기준 / 한국 정가·발매 채널은 아디다스 코리아·BAPE 코리아 공식 공지에 따라 변동될 수 있습니다.</small></p>
+<p><strong>2026-11-10 원문 대조 업데이트.</strong> 정확 모델과 지역별 상품·발매 조건을 구분했습니다. 자체 착화 후기는 아닙니다.</p><h2>좌우 배색이 다른 Away와 지역 한정 Home부터 구분</h2><p>BAPE와 adidas는 EVO SL 협업을 Home·Away 두 방향으로 소개합니다. Home의 블루/그린은 북미·중남미 한정, Away의 화이트/라이트블루/핑크/골드는 그 외 지역용이라는 제조사 안내입니다. 한 지역의 색상을 한국 판매 색상으로 자동 대응시키지 않습니다.</p><p>adidas의 6월 27일 컬렉션 안내와 BAPE 일본의 7월 5일 Away 발매 공지는 지역·채널이 다른 자료입니다. 기존의 ‘6월 1일 전 세계 동시 발매’는 이번 제조사 원문으로 확인하지 못해 유지하지 않았습니다.</p><figure><img src="/images/blog/verified-bape-adidas-evo-sl-away-20261110.webp" alt="BAPE × adidas EVO SL Away 화이트·라이트블루·핑크·골드" loading="lazy"/><figcaption>BAPE 일본 공식 Away 협업판 사진. 일반 EVO SL이나 블루/그린 Home과 구분합니다.</figcaption></figure><div class="table-wrap"><table><thead><tr><th scope="col">확인 항목</th><th scope="col">제조사에서 확인한 내용</th><th scope="col">한국 구매에 남은 질문</th></tr></thead><tbody><tr><td>일본 Away 상품</td><td>남성 BAPE 품번1M23-191-972·여성1M23-291-958</td><td>한국 공식 품번·성별·폭 미확인</td></tr><tr><td>일본 발매·가격</td><td>7월5일·세금 포함33,000엔 안내</td><td>한국 일정·원화 정가로 환산하지 않음</td></tr><tr><td>지역별 색상</td><td>Home 북미·중남미 / Away 그 외 지역</td><td>정확 한국 취급점·현재 재고 미확인</td></tr><tr><td>정확 협업판 실측</td><td>독립 랩·실제 착화 원문 미확인</td><td>일반형의 무게·리턴을 협업판에 대입하지 않음</td></tr></tbody></table></div><h2>한국 판매 여부는 현재 목록 범위 안에서</h2><p>11월 10일 확인한 BAPE 한국 x-adidas 컬렉션 목록에는 다른 협업 상품이 보였고 이 EVO SL은 확인하지 못했습니다. 이는 그 시점의 해당 목록에 대한 결과이며, 과거 한국 발매가 없었거나 전국에서 구할 수 없다는 확정 근거가 아닙니다.</p><p>한국 정확 상품의 정가·출시일·폭·선택 가능한 사이즈는 이번 조사에서 확보하지 못했습니다. 일본 가격을 원화로 바꾸거나 국내 리셀 가격을 한국 공식 정가로 적지 않았습니다. 구매처가 제시하는 정확 상품과 교환·배송 조건을 별도로 확인해야 합니다.</p><figure><img src="/images/blog/verified-bape-adidas-evo-sl-away-rear-20261110.webp" alt="BAPE EVO SL Away 공식 후면 사진" loading="lazy"/><figcaption>같은 제조사 공지의 후면. 디자인 확인 자료이며 내부 치수·성능 시험이 아닙니다.</figcaption></figure><h2>일반 EVO SL의 223g·리턴을 붙이지 않은 이유</h2><p>제조사 협업판 사진에는 LIGHTSTRIKE PRO 표기가 보입니다. 하지만 이번에 읽은 협업판 원문은 정확 무게·스택·드롭·폼 전체 조성·보강판 구조를 모두 밝히지는 않습니다. 일반 모델과 모든 성능이 같다는 확인으로 확대하지 않았습니다.</p><p>정확 협업판의 RunRepeat·DOR·RTR 랩·개별 착화를 확보하지 못해 일반 EVO SL의 223g이나 특정 에너지 리턴을 협업판 실측으로 옮기지 않습니다. 일반 메시형의 자료를 읽고 싶다면 <a href="/shoes/adidas-adizero-evo-sl">기본 EVO SL 상세</a>와 구분해서 볼 수 있습니다.</p><h2>일본 상품 안내와 한국 배송 가능 여부도 별도</h2><p>확인한 일본 영문 상품 페이지는 남성 Away 품절을 표시하고 해외 주문·해외 배송 불가를 안내합니다. 이 상태를 BAPE 한국 재고에 옮기거나 일본 사이트에서 한국으로 바로 배송된다고 안내하지 않았습니다.</p><p>일본 페이지 일부 사이즈 환산에는 앞뒤와 맞지 않는 표기가 있어 임의로 고치지 않았습니다. 실제 구매할 때는 해당 판매처의 정확 길이·규격과 배송 지역, 교환 조건을 확인하세요. 협업 디자인이 마음에 들어도 평소 양말에서 앞코·발등·힐 고정이 맞는지 남는 질문은 같습니다.</p><h2>확인한 원문</h2><ul><li><a href="https://news.adidas.com/home-of-innovation/originals/adidas-originals-and-bape--continue-to-lace-up-fans-for-fifa-world-cup-2026--with-their-latest-colle/s/fef87370-b7a7-4c6d-aff1-ae45dbb380d6" target="_blank" rel="noopener noreferrer">adidas 협업 발표</a> — 지역별 Home/Away 구성. 일본7/5·33,000엔을 한국 정보로 옮기지 않음.</li><li><a href="https://jp.bape.com/blogs/news/adidas-fwc26" target="_blank" rel="noopener noreferrer">BAPE 일본 자체 발매 공지</a> — 지역별 Home/Away 구성. 일본7/5·33,000엔을 한국 정보로 옮기지 않음.</li><li><a href="https://en.jp.bape.com/products/1M23-191-972" target="_blank" rel="noopener noreferrer">BAPE 일본 Away 남성 상품</a> — 현재 해당 일본 페이지의 품절·배송 조건. 한국 재고 근거 아님.</li><li><a href="https://kr.bape.com/collections/x-adidas" target="_blank" rel="noopener noreferrer">BAPE 한국 x-adidas 컬렉션</a> — 11/10 목록 확인 범위. 정확 EVO SL 한국 과거 발매·전국 판매를 확정하지 않음.</li></ul>
 `,
+    updatedAt: "2026-11-10",
+    faqs: [
+      {
+        "question": "한국에서6월1일 발매했나요?",
+        "answer": "확인한 adidas·BAPE 원문은 지역·채널별로6/27컬렉션 및 일본7/5를 안내합니다. 한국6/1확정 발매 근거는 이번에 확보하지 못했습니다."
+      },
+      {
+        "question": "일반 EVO SL 실측을 그대로 봐도 되나요?",
+        "answer": "협업판의 소재·구조·검체가 일반형과 모두 같다는 원문을 확보하지 못했습니다. 일반형 랩을 협업판 실측으로 옮기지 않았습니다."
+      },
+      {
+        "question": "일본 가격이 한국 정가인가요?",
+        "answer": "33,000엔은 일본 발매 안내입니다. 한국 공식 정가·현재 재고는 미확인이고 외화 환산으로 채우지 않습니다."
+      }
+    ],
   },
   {
     id: "2026-heavy-runner-running-shoes",

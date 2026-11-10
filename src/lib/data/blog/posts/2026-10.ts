@@ -2650,186 +2650,39 @@ export const posts_2026_10: BlogPost[] = [
     ],
   },
   {
-    id: 'nike-apex-announcement-super-shoe-baseline-2026',
-    slug: 'nike-apex-announcement-super-shoe-baseline-2026',
-    title:
-      '나이키 에이펙스 공개 | 가격·무게는 없고 "40%"만 있다 — 알파플라이 4·아디오스 프로 5와 기준점부터 맞춰 봤습니다',
-    description:
-      '나이키가 9월 30일 새 마라톤 레이싱화 에이펙스(Apex)를 공식 공개했습니다. 출시는 2027년 1월, 가격과 무게는 공개되지 않았고 "알파플라이 3 대비 에너지 리턴 최대 40%"만 있습니다. 같은 주 나온 아디오스 프로 5의 "+9%", 알파플라이 4의 "+10%"와 나란히 놓으면 각자 다른 기준점을 쓰고 있어 그대로 비교할 수 없습니다. 한국에서 지금 살 수 있는 것과 없는 것까지 1차 소스로 정리했습니다.',
-    thumbnail: '/images/blog/nike-apex-announcement-super-shoe-baseline-2026.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-10-01',
-    updatedAt: '2026-10-06',
-    category: 'news' as const,
-    readingTime: 9,
+    id: "nike-apex-announcement-super-shoe-baseline-2026",
+    slug: "nike-apex-announcement-super-shoe-baseline-2026",
+    title: "나이키 에이펙스 — 해외 가격·176g 공시·최대40% 주장의 기준",
+    description: "미국·일본 공식 상품의 가격과2027/1/7 예정 정보를 확인했습니다. 알파플라이3 대비 최대40% 제조사 주장과 한국 일정·독립 실측의 미확인을 구분합니다.",
+    thumbnail: "/images/blog/verified-nike-apex-official-20261110.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-10-01",
+    updatedAt: "2026-11-10",
+    category: "news",
+    readingTime: 6,
     tags: [
-      '나이키 에이펙스',
-      'Nike Apex',
-      '알파플라이 4',
-      '아디오스 프로 5',
-      '슈퍼슈즈',
-      '카본화',
-      '러닝화 발매',
+      "나이키",
+      "에이펙스",
+      "제조사 공시",
+      "해외 출시",
+      "한국 미확인"
     ],
     content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>나이키가 9월 30일 마라톤 레이싱화 "에이펙스"를 공개했고, 출시는 2027년 1월입니다.</strong> 에어 줌 유닛 4개를 2개씩 겹쳐 쌓고, 힐·전족부 스택 40mm에 드롭 0mm인 신발입니다. 가격과 무게는 공식 자료에 없습니다</li>
-    <li><strong>"알파플라이 3 대비 에너지 리턴 최대 40%"는 기준점이 알파플라이 3인 숫자입니다.</strong> 기준점이란 "무엇에 비해 몇 % 좋아졌다"고 할 때의 비교 대상입니다. 같은 주 아디다스는 아디오스 프로 4를, 나이키는 알파플라이 4에 대해 알파플라이 3을 기준점으로 잡아서, 세 숫자를 크기 순으로 줄 세우면 안 됩니다</li>
-    <li><strong>한국에서는 오늘 에이펙스도 알파플라이 4도 나이키 코리아에 없습니다.</strong> 지금 살 수 있는 쪽은 알파플라이 3(정가 339,000원)과 아디오스 프로 5(339,000원)입니다</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">👟</span>
-  <div class="callout-body">
-    <p class="callout-title">한 줄 결론</p>
-    <p><strong>에이펙스는 "2027년 봄 시즌을 겨냥한 예고"이지 이번 가을 구매 대상이 아닙니다.</strong> 가격도 무게도 없는 상태라 "알파플라이 4보다 얼마나 나은가"는 아직 계산할 수 없고, 계산해서도 안 됩니다. 이 글은 나이키가 공식 자료에서 실제로 말한 것만 골라 적고, 같은 주에 나온 아디오스 프로 5와 기준점을 맞춰 "무엇이 비교되고 무엇이 안 되는지"를 갈라 놓았습니다.</p>
-  </div>
-</div>
-
-<h2>먼저, 나이키가 공식적으로 말한 것</h2>
-
-<p>아래 표는 나이키 뉴스룸 보도자료(2026년 9월 30일)에서 그대로 옮긴 항목입니다. 해석이 섞이지 않은 값만 담았고, 보도자료에 없는 항목은 "미공개"로 적었습니다.</p>
-
-<table>
-  <thead>
-    <tr><th>항목</th><th>나이키 공식 표기</th></tr>
-  </thead>
-  <tbody>
-    <tr><td><strong>출시</strong></td><td>2027년 1월, nike.com과 일부 리테일 매장</td></tr>
-    <tr><td><strong>미드솔</strong></td><td>에어 줌 유닛 4개(2개씩 2단 적층) + 신규 폼 ZoomX LT</td></tr>
-    <tr><td><strong>플레이트</strong></td><td>재설계한 카본 파이버 플라이플레이트(역파형으로 솟은 형태)</td></tr>
-    <tr><td><strong>스택·드롭</strong></td><td>힐 40mm / 전족부 40mm, 드롭 0mm</td></tr>
-    <tr><td><strong>어퍼</strong></td><td>플라이니트 X, 라이너 없는 구조</td></tr>
-    <tr><td><strong>아웃솔</strong></td><td>GOATEK + Fast Shot, 더 넓은 아웃솔과 락커 지오메트리</td></tr>
-    <tr><td><strong>성능 주장</strong></td><td>알파플라이 3 대비 에너지 리턴 최대 40%, 10% 넘게 가벼움(남성 사이즈 10 기준)</td></tr>
-    <tr><td><strong>무게(g)</strong></td><td>미공개</td></tr>
-    <tr><td><strong>가격</strong></td><td>미공개</td></tr>
-    <tr><td><strong>한국 출시</strong></td><td>미공개</td></tr>
-  </tbody>
-</table>
-
-<p>나이키는 이번 발표에서 레이싱화를 <strong>"위계가 아니라 선택지로"</strong> 설계했다고 밝혔습니다(보도자료 원문 "Rather than organizing racing footwear as a hierarchy, Nike designed its race-day lineup as a choice"). 역할을 옮기면 <strong>스우시플라이(Swooshfly)는 "레이스 데이의 문을 여는" 신발, 알파플라이 4는 "속도와 반응성·편안함·안정성·효율의 균형"을 맞춘 신발, 에이펙스는 "마라톤 성능의 끝을 쫓는 러너"를 위한 신발</strong>입니다. 출시는 알파플라이 4가 10월, 에이펙스가 2027년 1월, 스우시플라이가 2027년 2월 중국 출시 뒤 봄에 글로벌입니다. 에이펙스의 에어 줌은 <a href="/blog/nike-alphafly-4-official-specs-2026">알파플라이 4에서 새로 도입한 것과 같은 기술</a>이고, 그걸 2단으로 쌓았다는 게 구조상 가장 큰 차이입니다.</p>
-
-<h2>"40%"는 어디에 대한 40%인가 — 세 숫자의 기준점</h2>
-
-<p>이번 주 공개된 슈퍼슈즈 세 켤레는 모두 "전작보다 좋아졌다"는 숫자를 들고 나왔습니다. 그런데 이 숫자들은 <strong>서로 다른 기준점을 재고 있어서</strong>, 나란히 놓는 순간 착시가 생깁니다. 수치를 꺼내기 전에 먼저 단서를 하나 답니다. 세 숫자는 모두 각 브랜드가 자사 실험실에서 잰 값이고, 외부 기관이 같은 조건으로 재현한 결과는 아직 없습니다.</p>
-
-<table>
-  <thead>
-    <tr><th>신발</th><th>공식 주장</th><th>기준점</th><th>무게 기준 사이즈</th></tr>
-  </thead>
-  <tbody>
-    <tr><td><strong>나이키 에이펙스</strong></td><td>에너지 리턴 최대 40%↑, 10% 넘게 가벼움</td><td><strong>알파플라이 3</strong>(2세대 전 모델)</td><td>남성 10</td></tr>
-    <tr><td><a href="/shoes/nike-alphafly-4"><strong>나이키 알파플라이 4</strong></a></td><td>에너지 리턴 10%↑, 5% 가벼움</td><td>알파플라이 3</td><td>에너지 리턴 쪽은 조건 미표기, 무게는 265mm</td></tr>
-    <tr><td><a href="/shoes/adidas-adios-pro-5"><strong>아디다스 아디오스 프로 5</strong></a></td><td>에너지 리턴 9%↑, 12% 가벼움(23g)</td><td><strong>아디오스 프로 4</strong>(직전 모델)</td><td>UK 8.5 평균 샘플</td></tr>
-  </tbody>
-</table>
-
-<p>여기서 읽을 수 있는 것은 두 가지입니다.</p>
-
-<ol>
-  <li><strong>에이펙스의 40%와 아디오스 프로 5의 9%는 비교 대상이 아닙니다.</strong> 하나는 2세대 전 나이키 모델 대비이고, 하나는 직전 아디다스 모델 대비입니다. 40이 9보다 크다고 해서 에이펙스가 네 배 낫다는 뜻이 아닙니다.</li>
-  <li><strong>에이펙스와 알파플라이 4의 차이도 숫자로 직접 계산할 수 없습니다.</strong> 둘 다 알파플라이 3을 기준점으로 삼았으니 1.40÷1.10(약 27%)처럼 나눠 보고 싶어지지만, 두 주장이 같은 조건·같은 사이즈에서 잰 값이라는 보장이 없습니다. 에이펙스는 "최대" 40%이고 알파플라이 4는 별도 조건에서의 10%라서, <strong>이 계산은 참고로만</strong> 두는 게 맞습니다.</li>
-</ol>
-
-<p>무게도 같은 방식으로 읽습니다. 에이펙스가 "알파플라이 3보다 10% 넘게 가볍다"고 했는데, 알파플라이 3의 나이키 공식 표기는 남성 US 10 기준 218g이므로 <strong>에이펙스는 같은 사이즈에서 약 196g 미만이라는 계산이 나옵니다(추정: 218g×0.9, 보도자료에 g 표기는 없음)</strong>. 이 값을 아디오스 프로 5의 177g(UK 8.5)과 곧바로 비교하면 안 됩니다. 사이즈 기준이 다르고, 슈퍼슈즈는 한 사이즈 차이만으로도 무게가 크게 달라지기 때문입니다. 같은 함정은 <a href="/blog/nike-alphafly-4-official-specs-2026">알파플라이 4 공식 발표 글</a>에서 188g과 218g이 "30g 차이"가 아니라 "10g 차이"였던 사례로 이미 한 번 짚었습니다.</p>
-
-<h2>같은 주, 아디다스는 이미 출시했다</h2>
-
-<p>아디다스는 나이키보다 8일 먼저 <strong>아디제로 아디오스 프로 5</strong>를 공개했고, 발표 당일(9월 22일) 전 세계 출시를 시작했습니다. 아래는 아디다스 보도자료(2026년 9월 22일)에서 옮긴 값입니다.</p>
-
-<table>
-  <thead>
-    <tr><th>항목</th><th>아디다스 공식 표기</th></tr>
-  </thead>
-  <tbody>
-    <tr><td><strong>무게</strong></td><td>평균 177g(UK 8.5 샘플), 아디오스 프로 4보다 약 23g(12%) 가벼움</td></tr>
-    <tr><td><strong>스택·드롭</strong></td><td>힐 39mm / 전족부 35mm, 드롭 4mm</td></tr>
-    <tr><td><strong>핵심 구조</strong></td><td>기존 에너지로드 대신 카본 혼입 구조 ENERGYRIM 첫 적용 + 최신 세대 라이트스트라이크 프로 폼</td></tr>
-    <tr><td><strong>성능 주장</strong></td><td>아디오스 프로 4 대비 에너지 리턴 +9%</td></tr>
-    <tr><td><strong>아웃솔·어퍼</strong></td><td>컨티넨탈 러버 아웃솔, 라이트락 2.0 어퍼</td></tr>
-    <tr><td><strong>글로벌 정가</strong></td><td>$275 / €275</td></tr>
-    <tr><td><strong>한국 정가</strong></td><td>339,000원(아디다스 코리아 공식몰 제품 페이지, 10월 1일 확인, 장바구니 담기 가능)</td></tr>
-  </tbody>
-</table>
-
-<p>아디다스는 이 신발을 "2시간 벽을 깬 아디오스 프로 에보 3의 기술을 가져와 프로 시리즈를 다시 만든 것"이라고 설명합니다. 이 서사는 아디다스의 주장이고, 공식 보도자료에서 마라톤 2시간 이내 기록을 세운 선수로 세바스찬 사웨를 들었다는 점까지만 확인했습니다. 에보 3 자체가 궁금하다면 <a href="/blog/2026-adidas-adios-pro-evo-3-korea-release">아디오스 프로 에보 3 한국 출시 글</a>, 프로 5의 구조 설명은 <a href="/blog/adidas-adizero-adios-pro-5-release-2026">아디오스 프로 5 공개 글</a>에 있습니다.</p>
-
-<h2>스택·드롭만 놓고 보면 세 켤레의 성격이 갈린다</h2>
-
-<p>기준점이 달라 성능 %는 비교가 안 되지만, 구조 수치는 브랜드 표기끼리 나란히 볼 수 있습니다. 다만 표기 경로가 제각각이라 출처 열을 같이 읽어야 합니다.</p>
-
-<table>
-  <thead>
-    <tr><th>신발</th><th>힐 / 전족부 스택</th><th>드롭</th><th>출처</th></tr>
-  </thead>
-  <tbody>
-    <tr><td><strong>나이키 에이펙스</strong></td><td>40mm / 40mm</td><td>0mm</td><td>나이키 보도자료</td></tr>
-    <tr><td><a href="/shoes/nike-alphafly-4">알파플라이 4</a></td><td>39mm / 31mm</td><td>8mm</td><td>미디어 브리핑 경로(제품 페이지 표기 아님)</td></tr>
-    <tr><td><a href="/shoes/adidas-adios-pro-5">아디오스 프로 5</a></td><td>39mm / 35mm</td><td>4mm</td><td>아디다스 보도자료 편집자 노트</td></tr>
-    <tr><td><a href="/shoes/adidas-adios-pro-4">아디오스 프로 4</a></td><td>37mm / 29mm</td><td>8mm</td><td>브랜드 공식(신발 DB)</td></tr>
-  </tbody>
-</table>
-
-<p>눈에 띄는 것은 <strong>에이펙스가 힐과 전족부를 모두 40mm로 맞춘 제로 드롭</strong>이라는 점입니다. 40mm는 <a href="/blog/nike-alphafly-4-official-specs-2026">알파플라이 4 글</a>에서 다룬 World Athletics의 스택 상한과 같은 숫자입니다. 나이키도 보도자료에서 "오늘의 레이싱 규정 안에서 가능한 것을 다시 그렸다"고 적었습니다. 전족부 스택만 보면 표기상 알파플라이 4(31mm)와 9mm, 아디오스 프로 5(35mm)와 5mm 차이가 나지만, 브랜드가 적은 스택은 실제로 잘라서 재면 대체로 더 낮게 나오기 때문에 <strong>세 신발의 절단 실측이 나오기 전에는 이 차이를 "9mm 더 높다"로 읽으면 안 됩니다.</strong> 제로 드롭이 실제 주행에서 어떻게 작용하는지도 에이펙스 자체의 주행 데이터가 공개된 것이 없어 지금은 알 수 없습니다.</p>
-
-<h2>한국 러너에게 오늘 확정된 것과 아닌 것</h2>
-
-<div class="callout warning">
-  <span class="callout-icon">⚠️</span>
-  <div class="callout-body">
-    <p class="callout-title">아직 확정되지 않은 것 (2026년 10월 1일 기준)</p>
-    <ul>
-      <li><strong>에이펙스 가격</strong> — 나이키 공식 자료에 없습니다. 인스타그램의 한 게시물은 "외부 보도 기준 350달러"라고 전했지만 나이키 공식 확인이 아니므로 이 글에서는 가격으로 쓰지 않습니다</li>
-      <li><strong>에이펙스 무게</strong> — 공식 g 표기 없음. 위의 196g 미만은 제가 계산한 <strong>(추정)</strong>입니다</li>
-      <li><strong>한국 출시일·정가</strong> — 나이키 코리아에 에이펙스 상품이 없고(검색 결과 0건), 출시일 공지도 없습니다. 글로벌 출시가 2027년 1월이라는 사실만 확정입니다</li>
-      <li><strong>알파플라이 4 한국 출시</strong> — 나이키 코리아 검색 결과에 여전히 올라오지 않습니다. 같은 검색에서 알파플라이 3은 정가 339,000원에 할인가로 판매 중이고 일부 품절 표시도 있습니다</li>
-      <li><strong>실측 랩 데이터</strong> — 에이펙스·알파플라이 4·아디오스 프로 5 모두 RunRepeat 등 독립 절단 실측이 공개되지 않았습니다</li>
-    </ul>
-  </div>
-</div>
-
-<p>그래서 구매 판단은 시기로 나뉩니다.</p>
-
-<table>
-  <thead>
-    <tr><th>대회 시점</th><th>지금 살 수 있는 선택지</th><th>근거</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>이번 가을(10~11월)</td><td><a href="/shoes/adidas-adios-pro-5">아디오스 프로 5</a>(339,000원) 또는 할인 중인 <a href="/shoes/nike-alphafly-3">알파플라이 3</a></td><td>한국에서 실제로 구매 가능한 것은 이 둘뿐입니다. 에이펙스는 이번 시즌에 해당이 없습니다</td></tr>
-    <tr><td>2027년 봄</td><td>에이펙스를 기다릴지 지금 결정할 필요 없음</td><td>출시가 1월인데 한국 출시일·가격이 없어, 기다려도 언제 어떤 값에 살 수 있을지 지금은 계산 불가입니다</td></tr>
-  </tbody>
-</table>
-
-<p>알파플라이 3과 베이퍼플라이 4 중 어느 쪽이 맞는지는 <a href="/blog/nike-vaporfly-4-vs-alphafly-3-comparison">베이퍼플라이 4 vs 알파플라이 3 비교 글</a>에 실측 기준으로 정리돼 있습니다.</p>
-
-<h2>다른 1티어 브랜드는 어땠나</h2>
-
-<p>이 글에서 공식 자료로 직접 확인한 브랜드는 <strong>나이키·아디다스·아식스</strong> 세 곳입니다. 아식스는 공식 홈페이지 보도자료 목록(2026년 6월~9월)에서 새 레이싱 플래그십 발표를 찾지 못했습니다. 8월 17일 <a href="/shoes/asics-sonicblast-2">소닉블라스트 2</a> 공개, 8월 26일 블룸스트라이드(여성용), 9월 17일 젤 슬로우쿠쉬가 올라와 있는데 모두 데일리·컴포트 계열입니다. <strong>호카·푸마·뉴발란스·써코니는 이번 글에서 공식 발표를 확인하지 못했습니다(불명).</strong> "나머지 브랜드에 새 레이싱화가 없다"는 뜻이 아니라 확인하지 않았다는 뜻입니다.</p>
-
-<div class="faq">
-  <h2>자주 묻는 질문</h2>
-
-  <h3>Q. 에이펙스는 알파플라이 4를 대체하나요?</h3>
-  <p>나이키는 대체가 아니라 선택지를 나눴습니다. 보도자료는 레이싱화를 "위계가 아니라 선택지로" 설계했다고 적고, 스우시플라이는 레이스에 처음 나서는 러너, 알파플라이 4는 거리 내내 균형을 원하는 러너, 에이펙스는 마라톤 성능의 끝을 쫓는 러너로 역할을 구분합니다. 세 신발이 동시에 카탈로그에 공존하는 구조이고, 베이퍼플라이는 이번 시스템 발표에 포함되지 않았습니다.</p>
-
-  <h3>Q. 에너지 리턴 40%면 기록이 40% 빨라지나요?</h3>
-  <p>아닙니다. 에너지 리턴은 폼이 압축된 뒤 되돌려주는 에너지의 비율을 잰 값이고, 기록 단축과 1 대 1로 연결되지 않습니다. 나이키는 "최대 40%"라고 했고 측정 조건도 자사 실험실입니다. 같은 이유로 아디다스의 9%도 기록 9% 단축이 아닙니다.</p>
-
-  <h3>Q. 에이펙스 가격은 얼마인가요?</h3>
-  <p>공식 가격은 공개되지 않았습니다. 일부 게시물이 $350 전후를 언급하지만 나이키 공식 확인이 아니라서 믿고 계산하지 마세요. 한국 가격은 미국 가격을 환산해서 나오지 않는다는 것이 알파플라이 3($295, 339,000원)에서 이미 확인됩니다.</p>
-
-  <h3>Q. 발볼이 넓은데 에이펙스는 괜찮을까요?</h3>
-  <p>지금은 답할 수 없습니다. 나이키는 "더 넓은 아웃솔"을 언급했지만 이는 지면 접촉면의 이야기이고 어퍼 폭이나 토박스 폭의 수치가 아닙니다. 폭 실측이 공개되기 전에는 판단을 미루는 게 맞습니다.</p>
-
-  <h3>Q. 지금 아디오스 프로 5를 사도 괜찮을까요?</h3>
-  <p>한국에서는 10월 1일 기준 아디다스 코리아 공식몰에서 339,000원에 구매할 수 있습니다. 다만 독립 실측이 아직 없고, 나이키 에이펙스는 2027년 1월 출시라 같은 시즌의 직접 경쟁 상대가 아닙니다. 이번 가을 대회에 쓸 계획이라면 고려할 수 있습니다.</p>
-</div>
-
-<p><small>출처: 나이키 뉴스룸 공식 보도자료 "Introducing Nike Apex: The Next Leap in Marathon Speed"(2026-09-30, about.nike.com) · 아디다스 뉴스룸 공식 보도자료 "adidas unveils the Adizero Adios Pro 5"(2026-09-22, news.adidas.com) · 아디다스 코리아 공식몰 아디오스 프로 5(스타일 KI8294, 339,000원, 2026-10-01 확인) · 나이키 코리아 검색 결과(알파플라이 4·에이펙스 상품 없음, 알파플라이 3 정가 339,000원, 2026-10-01 확인) · ASICS 공식 홈페이지 보도자료 목록(corp.asics.com/en/press, 2026-06~09) · 알파플라이 3 무게(나이키 공식 남성 US 10 218g)·알파플라이 4 수치는 이 사이트 <a href="/blog/nike-alphafly-4-official-specs-2026">알파플라이 4 공식 발표 글</a>의 1차 소스 대조 결과. 에이펙스 가격 언급은 2026-09-30 게시된 한 인스타그램 게시물에 따른 미확인 정보입니다. 이 글의 공개일 기준 정보이며 한국 출시 정보는 각 브랜드 공지로 다시 확인하세요.</small></p>
+<p><strong>2026-11-10 원문 대조 업데이트.</strong> 정확 모델과 지역별 상품·발매 조건을 구분했습니다. 자체 착화 후기는 아닙니다.</p><h2>새로 확인할 수 있는 것은 무게와 해외 상품, 한국 정보는 별도</h2><p>나이키 에이펙스는 ZoomX LT와 위아래로 쌓은 전족부 Air Zoom 4개, 카본 섬유 Flyplate를 사용하는 레이스 모델로 발표됐습니다. 글로벌 발표는 2027년1월 판매 예정을 안내하며, 현재 미국·일본 정확 상품에는 가격·일정·무게가 공개돼 있습니다.</p><p>한국 정확 러닝화 상품·원화 정가·국가별 출시일은 이번에 확인하지 못했습니다. 한국어 글로벌 발표를 한국 판매 확정으로 읽거나 미국·일본 가격을 원화로 환산하지 않습니다.</p><figure><img src="/images/blog/verified-nike-apex-official-20261110.webp" alt="Nike Apex 공식 발표 사진" loading="lazy"/><figcaption>Nike의 정확 Apex 발표 사진. 알파플라이4나 별도 개발 시제품의 사진으로 대체하지 않았습니다.</figcaption></figure><div class="table-wrap"><table><thead><tr><th scope="col">지역·상품</th><th scope="col">공식 표시가격</th><th scope="col">현재 공시된 예정 시각</th><th scope="col">조건</th></tr></thead><tbody><tr><td>미국 남성IU2397-001</td><td>360미국달러</td><td>2027/1/7 오전10시 미국 동부(EST)</td><td>출시 예정·접수 전. 한국 일정 아님</td></tr><tr><td>일본 남성IU2397-001·여성IU2396-001</td><td>55,000엔</td><td>2027/1/7 오전9시 일본(JST)</td><td>출시 예정. 성별 상품·규격을 구분</td></tr><tr><td>한국</td><td>미확인</td><td>미확인</td><td>글로벌1월 발표만으로 국가별 출시 확정 불가</td></tr></tbody></table></div><h2>최대40%는 알파플라이3 대비 제조사 비교</h2><p>나이키의 공식 주장은 남성 US10, 한국어 발표의280mm 조건에서 알파플라이3 대비 에너지 반환이 최대40% 높다는 것입니다. 절대 리턴이40%라는 뜻도,40퍼센트포인트 증가나 개인 기록40% 향상이라는 뜻도 아닙니다.</p><p>시험 장비·충격 위치·힘·반복 횟수·검체 수·온습도·변동 범위 등 자세한 조건은 이번 원문에서 확인하지 못했습니다. 알파플라이4의 별도10% 주장이나 RunRepeat 리턴 수치와 같은 시험으로 연결하지 않습니다. 확인되지 않은 기준값을 역산해 성능 순위를 만들지도 않습니다.</p><div class="table-wrap"><table><thead><tr><th scope="col">공시 항목</th><th scope="col">정확히 확인한 내용</th><th scope="col">구분할 조건</th></tr></thead><tbody><tr><td>무게</td><td>약176g·남성US8.5/여성US10 표기</td><td>40% 비교의 남성US10과 같은 기준 아님</td></tr><tr><td>힐/앞발·드롭</td><td>발표40/40mm·상품드롭0mm</td><td>독립 랩 절개 실측 아님</td></tr><tr><td>에어 구조</td><td>전족부2쌍을 위아래로 적층한 총4유닛</td><td>알파플라이4의2개 유닛과 구분</td></tr><tr><td>폼·판</td><td>ZoomX LT·역파형 카본Flyplate</td><td>정확 화학 재료·독립 강성 미확인</td></tr><tr><td>어퍼</td><td>Flyknit X·인솔을 뺀 구조</td><td>판매 폭 옵션·모든 발의 핏은 별도</td></tr></tbody></table></div><figure><img src="/images/blog/verified-nike-apex-iu2397-001-20261110.webp" alt="Nike Apex IU2397-001 공식 상품 이미지" loading="lazy"/><figcaption>미국 정확 품번에 연결된 공식 상품 이미지. 사진 검체의 실제 사이즈·폭은 미확인입니다.</figcaption></figure><h2>부드러움·안정감·수명은 아직 남은 질문</h2><p>정확 Apex의 RunRepeat 랩이나 DOR·RTR 독립 착화 원문은 이번 조사에서 확보하지 못했습니다. 제조사 선수 테스트 소감을 독립 소비자 리뷰로 바꾸거나 다른 나이키 모델의 수치를 대신 쓰지 않았습니다.</p><p>제조사의100km 이상 훈련·경기 사용을 염두에 둔 설계 설명도 독립적으로 확인된 공통 수명·교체 주기가 아닙니다. 공식 페이지의176g과 서로 다른 온스 표기는 같은 단위로 평균하지 않고176g의 공시 조건을 유지했습니다.</p><h2>출시 전 한국 러너가 확인할 것</h2><p>해외 정확 상품의 예정 시각은 변경될 수 있고 한국 구매 경로·배송·문자 폭을 보장하지 않습니다. 출시 예고 페이지의 사이즈 목록도 현재 결제 가능한 재고가 아닙니다.</p><p>한국 상품이 확인되면 정확 성별·품번·가격·길이·폭과 반품 조건부터 볼 필요가 있습니다. 넓은 바닥·로커 설계라는 제조사 설명만으로 넓은 발에 맞거나 특정 통증을 예방한다고 결론 내릴 수는 없습니다.</p><h2>확인한 원문</h2><ul><li><a href="https://about.nike.com/en/newsroom/releases/introducing-nike-apex-the-next-leap-in-marathon-speed" target="_blank" rel="noopener noreferrer">Nike Apex 공식 발표</a> — 글로벌2027년1월·구조·최대40%제조사 주장. 독립 시험과 구분.</li><li><a href="https://about.nike.com/ko/newsroom/releases/introducing-nike-apex-the-next-leap-in-marathon-speed" target="_blank" rel="noopener noreferrer">Nike Apex 공식 발표</a> — 글로벌2027년1월·구조·최대40%제조사 주장. 독립 시험과 구분.</li><li><a href="https://www.nike.com/t/apex-mens-road-racing-shoes-9r6ez2CL/IU2397-001" target="_blank" rel="noopener noreferrer">Nike US IU2397-001</a> — 정확 해외 상품의 가격·예정 시각·무게 조건. 한국 정보로 전용하지 않음.</li><li><a href="https://www.nike.com/jp/t/ナイキ-エイペックス-ロードレースシューズ-H4STMbUO/IU2397-001" target="_blank" rel="noopener noreferrer">Nike JP IU2397-001</a> — 정확 해외 상품의 가격·예정 시각·무게 조건. 한국 정보로 전용하지 않음.</li><li><a href="https://www.nike.com/jp/t/ナイキ-エイペックス-ウィメンズ-ロードレースシューズ-gZr0NPTZ/IU2396-001" target="_blank" rel="noopener noreferrer">Nike JP IU2396-001</a> — 정확 해외 상품의 가격·예정 시각·무게 조건. 한국 정보로 전용하지 않음.</li></ul>
 `,
+    faqs: [
+      {
+        "question": "한국 가격은 얼마인가요?",
+        "answer": "정확 한국 러닝화 상품의 원화 정가는 미확인입니다. 미국360달러·일본55,000엔을 환산해 한국 정가로 쓰지 않습니다."
+      },
+      {
+        "question": "40% 더 빨라지나요?",
+        "answer": "알파플라이3 대비 최대40%에너지 반환이라는 제조사 주장입니다. 시험 세부 조건은 미확인이며 개인 기록 향상률이 아닙니다."
+      },
+      {
+        "question": "실측176g인가요?",
+        "answer": "미국 공식 남성US8.5/여성US10 기준 공시입니다. 정확 독립 랩 실측과 구분하며 다른 사이즈로 보정하지 않습니다."
+      }
+    ],
   },
 ];
