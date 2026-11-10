@@ -1,236 +1,511 @@
 import type { Brand } from '@/types/brand';
 
 export const adidasBrand: Brand = {
-  id: 'adidas',
-  name: 'Adidas',
-  nameKo: '아디다스',
-  tagline: 'Impossible Is Nothing',
-  description:
-    '1949년 아디 다슬러가 설립한 독일의 글로벌 스포츠 브랜드. Lightstrike Pro, Energyrods 2.0, Continental 러버 등 소재와 구조를 정밀하게 조합하는 기술 전략이 특징이며, 같은 기술명이라도 소재(카본 vs 유리섬유)로 등급을 나누는 디테일한 라인업 운영이 강점입니다.',
-  founded: 1949,
-  headquarters: '독일 헤르초게나우라흐',
-  website: 'https://www.adidas.co.kr',
-  technologies: [
+  "id": "adidas",
+  "name": "Adidas",
+  "nameKo": "아디다스",
+  "tagline": "Impossible Is Nothing",
+  "description": "1949년 아디 다슬러가 독일 헤르초게나우라흐에서 등록한 스포츠 브랜드입니다. 러닝화에서는 폼, 로드, 어퍼, 아웃솔을 모델별로 다르게 조합합니다. Lightstrike Pro 같은 상표명만으로 고분자 원료나 성능을 확정할 수 없고, ENERGYRODS도 보스턴 13과 아디오스 프로 4의 재질을 구분해야 합니다.",
+  "founded": 1949,
+  "headquarters": "독일 헤르초게나우라흐",
+  "website": "https://www.adidas.co.kr",
+  "technologies": [
     {
-      id: 'lightstrike-pro',
-      name: 'Lightstrike Pro',
-      nameKo: '라이트스트라이크 프로',
-      category: 'midsole',
-      year: 2021,
-      description:
-        '아디다스 최고급 레이싱용 폼으로, 최고 수준의 에너지 리턴과 초경량을 동시에 제공하는 엘리트 미드솔입니다.',
-      benefits: [
-        '아디다스 폼 중 최고 수준의 에너지 리턴',
-        '극한의 경량화로 레이싱 최적화',
-        '부드러우면서도 폭발적인 반발력',
-        '장거리 레이스에서 피로 저감',
+      "id": "lightstrike-pro",
+      "name": "Lightstrike Pro",
+      "nameKo": "라이트스트라이크 프로",
+      "category": "midsole",
+      "description": "여러 아디제로·트레일 모델에 쓰이는 폼 명칭입니다. 전장 구성, 삽입 구조, 다른 폼과의 조합을 모델마다 구분합니다.",
+      "benefits": [
+        "EVO SL·프로 4와 보스턴 13·SL2의 구성 구분",
+        "보스턴 13의 13.8%는 폼 사용량 증가라는 제조사 설명",
+        "기술명만으로 PEBA·TPEE 같은 원료를 단정하지 않기"
       ],
-      scienceExplanation:
-        'Lightstrike Pro는 아디다스의 최상위 레이싱용 폼입니다. 기존 Boost의 뛰어난 에너지 리턴은 유지하면서 무게를 획기적으로 줄인 것이 핵심입니다. PEBA 계열의 슈퍼크리티컬 폼 기술을 적용하여 착지 시 에너지를 효율적으로 저장하고 이륙 시 되돌려줍니다. Adios Pro 4에 풀렝스로 적용되어 카본 로드 및 기하학적 구조와 함께 시스템으로 작동하며, 엘리트 마라토너의 기록 경신에 기여하고 있습니다.',
-      usedInShoes: ['adidas-adios-pro-4', 'adidas-adizero-evo-sl', 'adidas-boston-13', 'adidas-adizero-sl2'],
+      "scienceExplanation": "EVO SL 초대와 아디오스 프로 4 발표는 Lightstrike Pro 미드솔을 설명합니다. 보스턴 13은 Lightstrike와의 조합이고 SL2는 Lightstrike 바깥 폼 안에 전장 Pro 삽입층을 넣은 구성입니다. 아그라빅 스피드 울트라 초대에도 공식 발표상 같은 기술명이 있습니다. 같은 상표라도 배합·밀도·발포 공정·체감이 모두 동일하다는 뜻은 아닙니다. 보스턴 13 발표의 전작 대비 13.8%는 Pro 폼 양에 관한 제조사 주장으로, 에너지 리턴이 13.8% 증가했다는 뜻이 아닙니다.",
+      "usedInShoes": [
+        "adidas-adizero-evo-sl",
+        "adidas-adios-pro-4",
+        "adidas-boston-13",
+        "adidas-adizero-sl2",
+        "adidas-terrex-agravic-speed-ultra"
+      ],
+      "verification": {
+        "checkedAt": "2026-11-10",
+        "scope": "정확 세대의 제조사 기술명·부품·배치와 확인된 적용 예시. 미공개 원료는 추정하지 않으며 기록·부상 예방·교체 거리·빗길 안전을 보장하지 않습니다.",
+        "sources": [
+          {
+            "title": "adidas 공식 — Adios Pro 4 일반형 및 EVO SL 초대 발표 본문",
+            "url": "https://news.adidas.com/running/adizero-adios-pro-4-leads-the-way-as-adidas-introduces-new-race-and-training-silhouettes-to-its-awar/S/ecd0a1fe-e467-4f81-a767-0a64ab29d98f",
+            "scope": "Pro4는 전장 Lightstrike Pro, 60% 지점 rocker, 원웨이 스트레치 woven mesh LIGHTLOCK, 압력 지도 기반 LIGHTTRAXION. EVO SL은 전장 Lightstrike Pro와 engineered mesh이며 제조사가 stiffening elements를 넣지 않았다고 설명한다. 화학 고분자명은 없다. · 공개 원문 확인, 실시간 가격·재고 검증 아님"
+          },
+          {
+            "title": "adidas 공식 — KH8859 exact Boston 13 Product Description/Details",
+            "url": "https://www.adidas.com/bh/en/adizero-boston-13-shoes/KH8859.html",
+            "scope": "Lightstrike와 Lightstrike Pro 조합, glass fibre ENERGYRODS 2.0, 통기 mesh, LIGHTTRAXION 및 toe-off Continental. 폼 배합률·고분자명·rods 단면/개수는 미공개. · 공개 원문 확인, 실시간 가격·재고 검증 아님"
+          },
+          {
+            "title": "adidas 공식 — Boston 13 본문 및 predecessor 비교",
+            "url": "https://news.adidas.com/adizero-range/adidas-launches-new-adizero-boston-13---designed-for-fast-training-runs/s/0ca9243c-a53d-47a6-8e7c-31e4e2d77357",
+            "scope": "Boston 12보다 Lightstrike Pro 양이 13.8% 증가했다는 제조사 주장. ENERGYRODS 2.0, engineered mesh, padded tongue/collar 및 LIGHTTRAXION의 전략적 배치를 설명한다. · 공개 원문 확인, 실시간 가격·재고 검증 아님"
+          },
+          {
+            "title": "adidas 공식 — KK1056 정확 SL2 Description/Details",
+            "url": "https://www.adidas.com/qa/en/adizero-sl2-shoes/KK1056.html",
+            "scope": "전장 Lightstrike Pro drop-in을 Lightstrike carrier 안에 배치. soft engineered mesh upper, heel/tongue padding 및 rubber outsole. 이 본문은 carrier를 Lightstrike 2.0이라고 특정하지 않고 ADIWEAR/Continental도 명시하지 않는다. · 공개 원문 확인, 실시간 가격·재고 검증 아님"
+          },
+          {
+            "title": "adidas 공식 — 초대 Agravic Speed Ultra 발표; 2/Evo 제외",
+            "url": "https://news.adidas.com/sports-performance/adidas-terrex-unveils-agravic-speed-ultra--designed-for-fast-runs/s/446d869a-f1e6-4bd8-8923-18f88246ddad",
+            "scope": "Lightstrike Pro, integrated EnergyRods, dynamic forefoot rocker, gusseted tongue/seamless overlays 및 Continental Rubber를 명시. rods 재료/개수는 밝히지 않는다. · 공개 원문 확인, 실시간 가격·재고 검증 아님"
+          }
+        ]
+      }
     },
     {
-      id: 'lightstrike-2',
-      name: 'Lightstrike 2.0',
-      nameKo: '라이트스트라이크 2.0',
-      category: 'midsole',
-      year: 2023,
-      description:
-        '기존 EVA보다 가볍고 반응성이 개선된 트레이닝용 미드솔로, 아디제로 트레이닝 라인의 핵심 폼입니다.',
-      benefits: [
-        '기존 EVA 대비 가벼운 무게',
-        '트레이닝에 적합한 안정적 반발력',
-        '뛰어난 내구성으로 장기간 사용 가능',
-        '빠른 페이스 훈련에 최적화',
+      "id": "lightstrike-2",
+      "name": "Lightstrike 2.0",
+      "nameKo": "라이트스트라이크 2.0",
+      "category": "midsole",
+      "description": "2023년 보스턴 12·아디오스 8 발표에서 확인한 폼 버전명입니다. 최신 모델의 일반 Lightstrike 표기를 자동으로 2.0으로 바꾸지 않습니다.",
+      "benefits": [
+        "보스턴 12·아디오스 8에서 LIGHTSTRIKE 2.0 확인",
+        "보스턴 13·SL2의 확인 원문은 Lightstrike로 표기",
+        "Lightstrike+와 Lightstrike Pro는 별도 명칭"
       ],
-      scienceExplanation:
-        'Lightstrike 2.0은 기존 Lightstrike 폼을 업그레이드한 트레이닝용 미드솔입니다. 기존 EVA보다 가볍고 반응성이 개선되어 Boston 12/13의 핵심 폼으로 자리 잡았습니다. Lightstrike Pro보다 내구성이 뛰어나 매일 반복되는 훈련에도 성능이 오래 유지되며, 템포런이나 인터벌 같은 빠른 페이스 훈련에 적합한 균형 잡힌 성능을 제공합니다.',
-      usedInShoes: ['adidas-boston-13', 'adidas-adizero-sl2'],
+      "scienceExplanation": "2023년 제조사 발표는 보스턴 12와 아디오스 8에 Lightstrike Pro와 LIGHTSTRIKE 2.0을 조합했다고 명시합니다. 이번에 읽은 보스턴 13과 SL2의 정확 SKU 원문은 바깥/조합 폼을 Lightstrike라고 쓰므로, 2.0 적용을 확정한 목록에는 넣지 않았습니다. 두 과거 모델은 현재 사이트 등록 모델이 아니어서 아래 제품 연결은 비워두었습니다. 같은 계열이라는 이유로 Pro보다 내구성이 우수하다거나 일정 거리 동안 성능이 유지된다고 판단하지 않습니다.",
+      "usedInShoes": [],
+      "verification": {
+        "checkedAt": "2026-11-10",
+        "scope": "정확 세대의 제조사 기술명·부품·배치와 확인된 적용 예시. 미공개 원료는 추정하지 않으며 기록·부상 예방·교체 거리·빗길 안전을 보장하지 않습니다.",
+        "sources": [
+          {
+            "title": "adidas 보스턴 12·아디오스 8 발표 (2023-06-01)",
+            "url": "https://news.adidas.com/running/adidas-expands-its-fastest-franchise-with-the-launch-of-the-all-new-adizero-boston-12-and-adios-8/s/7f957284-5dd0-4b24-b846-8d4a14853886",
+            "scope": "LIGHTSTRIKE 2.0과 Lightstrike Pro 조합, 보스턴 12의 유리섬유 ENERGYRODS 2.0. 보스턴 13·SL2로 세부 버전명 자동 전용하지 않음"
+          },
+          {
+            "title": "adidas 공식 — KH8859 exact Boston 13 Product Description/Details",
+            "url": "https://www.adidas.com/bh/en/adizero-boston-13-shoes/KH8859.html",
+            "scope": "Lightstrike와 Lightstrike Pro 조합, glass fibre ENERGYRODS 2.0, 통기 mesh, LIGHTTRAXION 및 toe-off Continental. 폼 배합률·고분자명·rods 단면/개수는 미공개. · 공개 원문 확인, 실시간 가격·재고 검증 아님"
+          },
+          {
+            "title": "adidas 공식 — KK1056 정확 SL2 Description/Details",
+            "url": "https://www.adidas.com/qa/en/adizero-sl2-shoes/KK1056.html",
+            "scope": "전장 Lightstrike Pro drop-in을 Lightstrike carrier 안에 배치. soft engineered mesh upper, heel/tongue padding 및 rubber outsole. 이 본문은 carrier를 Lightstrike 2.0이라고 특정하지 않고 ADIWEAR/Continental도 명시하지 않는다. · 공개 원문 확인, 실시간 가격·재고 검증 아님"
+          }
+        ]
+      }
     },
     {
-      id: 'dreamstrike-plus',
-      name: 'Dreamstrike+',
-      nameKo: '드림스트라이크+',
-      category: 'midsole',
-      year: 2024,
-      description:
-        '슈퍼노바 라인의 핵심 폼으로, 매일 신어도 편안한 부드러운 쿠셔닝과 안정성을 동시에 제공합니다.',
-      benefits: [
-        '매일 신어도 부담 없는 부드러운 쿠셔닝',
-        '조깅부터 리커버리 런까지 다목적 활용',
-        '안정적인 라이드로 초보 러너에게 적합',
-        '우수한 내구성으로 장기간 성능 유지',
+      "id": "dreamstrike-plus",
+      "name": "Dreamstrike+",
+      "nameKo": "드림스트라이크+",
+      "category": "midsole",
+      "description": "슈퍼노바 라이즈 2·3에서 확인한 폼 이름입니다. 같은 이름을 유지해도 세대별 조정과 어퍼·밑창은 달라집니다.",
+      "benefits": [
+        "라이즈 2: Dreamstrike+·Support Rods·ADIWEAR",
+        "라이즈 3: Dreamstrike+·Primeweave·LIGHTTRAXION",
+        "라이즈 3의 부드러움 20%는 제조사 비교 주장"
       ],
-      scienceExplanation:
-        'Dreamstrike+는 기존 솔라글라이드(SolarGlide) 등을 대체하며 등장한 슈퍼노바(Supernova) 라인의 핵심 폼입니다. "매일 편안하게 신을 수 있는 쿠셔닝"을 목표로 개발되었으며, 부드러움과 안정성의 균형이 뛰어납니다. 레이싱 폼의 반발력보다는 착지 충격을 흡수하고 관절 부담을 줄이는 데 초점을 맞춰, 입문자부터 리커버리 목적의 상급자까지 폭넓게 사용됩니다.',
-      usedInShoes: ['adidas-supernova-rise-3', 'adidas-supernova-rise-2'],
+      "scienceExplanation": "라이즈 2와 라이즈 3의 정확 제품 안내에서 Dreamstrike+를 확인했습니다. 제조사는 라이즈 3 Adaptive 발표에서 표준 라이즈 3에도 적용한 개질 폼이 라이즈 2보다 20% 부드럽다고 설명하지만, 읽은 원문에는 시험법·검체 조건이 제시되지 않습니다. 이를 독립적인 경도·충격흡수 측정치로 바꾸지 않았습니다. Adaptive 전용 폭·뒤꿈치·끈 구조도 표준 라이즈 3에 복사하지 않습니다. 화학 원료는 확인한 원문에서 특정하지 못했습니다.",
+      "usedInShoes": [
+        "adidas-supernova-rise-2",
+        "adidas-supernova-rise-3"
+      ],
+      "verification": {
+        "checkedAt": "2026-11-10",
+        "scope": "정확 세대의 제조사 기술명·부품·배치와 확인된 적용 예시. 미공개 원료는 추정하지 않으며 기록·부상 예방·교체 거리·빗길 안전을 보장하지 않습니다.",
+        "sources": [
+          {
+            "title": "adidas 공식 — IH8662 정확 Rise2 Description/Details",
+            "url": "https://www.adidas.com/kw/en/supernova-rise-2-running-shoes/IH8662.html",
+            "scope": "Dreamstrike+ midsole, Support Rods, engineered sandwich mesh upper, premium heel construction, ADIWEAR outsole. 폼과 rods의 화학 재료를 특정하지 않는다. · 공개 원문 확인, 실시간 가격·재고 검증 아님"
+          },
+          {
+            "title": "adidas 공식 — KI9228 정확 Rise3 Description/Details",
+            "url": "https://www.adidas.com/kw/en/supernova-rise-3-running-shoes/KI9228.html",
+            "scope": "Dreamstrike+, laser-perforated Primeweave upper, LIGHTTRAXION. midsole 내부의 sculpted rods가 전환을 돕는다고 표현하나 별도 Support Rods insert인지, 형상/재료는 밝히지 않는다. · 공개 원문 확인, 실시간 가격·재고 검증 아님"
+          },
+          {
+            "title": "adidas 공식 — Adaptive 발표 중 표준 Rise3와 공유한다고 명시한 폼/밑창 항목만",
+            "url": "https://news.adidas.com/home-of-innovation/people/adidas-unveils-supernova-rise-3-adaptive--its-first-performance-running-shoe-designed-in-partnership/s/9de639ee-b6c2-4b0b-aa90-6a1e856c5605",
+            "scope": "개질 Dreamstrike+는 표준 Rise3에도 사용되며 Rise2 버전보다 20% 부드럽다는 제조사 주장. LIGHTTRAXION 역시 표준 Rise3에서 가져왔다고 명시. Adaptive 전용 wider fit/heel/lacing를 표준에 옮기지 않았다. · 공개 원문 확인, 실시간 가격·재고 검증 아님"
+          }
+        ]
+      }
     },
     {
-      id: 'light-boost',
-      name: 'Light Boost',
-      nameKo: '라이트 부스트',
-      category: 'midsole',
-      year: 2023,
-      description:
-        '아디다스의 상징적인 Boost 기술을 30% 경량화한 차세대 폼으로, 부드러운 쿠셔닝과 에너지 리턴의 전통을 잇습니다.',
-      benefits: [
-        '일반 Boost 대비 약 30% 경량화',
-        'Boost 특유의 부드러운 쿠셔닝 유지',
-        '뛰어난 에너지 리턴으로 장거리에 적합',
-        '추운 날씨에도 쿠셔닝 성능 유지',
+      "id": "light-boost",
+      "name": "Light Boost",
+      "nameKo": "라이트 부스트",
+      "category": "midsole",
+      "description": "울트라부스트 라이트 발표에서 확인한 Boost 소재 명칭입니다. Hyperboost Pro와 자동으로 같은 폼으로 취급하지 않습니다.",
+      "benefits": [
+        "2023년 울트라부스트 라이트에서 적용 확인",
+        "30% 경량화는 Boost 소재에 한정된 제조사 주장",
+        "Hyperboost Run의 부제·본문 불일치에 주의"
       ],
-      scienceExplanation:
-        'Light Boost는 아디다스의 대표 기술인 Boost(TPU 폼)를 경량화한 진화형입니다. 울트라부스트 라이트(Ultraboost Light)부터 적용되었으며, 일반 Boost 대비 약 30% 가벼워진 것을 공식적으로 강조하고 있습니다. Boost의 핵심 장점인 온도에 관계없는 일관된 쿠셔닝 성능, 뛰어난 에너지 리턴, 부드러운 착지감은 그대로 유지하면서 무게 부담을 줄였습니다.',
-      usedInShoes: [],
+      "scienceExplanation": "2023년 2월 23일 발표는 이전 울트라부스트 반복 버전과 비교해 BOOST 소재가 30% 가벼워졌다고 설명합니다. 이는 완성화 중량이 30% 줄었다거나 모든 온도에서 성능이 동일하다는 보증이 아닙니다. 울트라부스트 라이트는 현재 등록 모델이 아니므로 적용 제품 목록에는 넣지 않았습니다. Hyperboost Run의 정확 페이지는 부제에 LIGHT BOOST, 본문에는 Hyperboost Pro를 쓰고 공식 비교 카드도 Hyperboost Pro로 명시합니다. 이 불일치 때문에 Hyperboost Edge·Run을 Light Boost 적용 목록에 넣지 않았습니다.",
+      "usedInShoes": [],
+      "verification": {
+        "checkedAt": "2026-11-10",
+        "scope": "정확 세대의 제조사 기술명·부품·배치와 확인된 적용 예시. 미공개 원료는 추정하지 않으며 기록·부상 예방·교체 거리·빗길 안전을 보장하지 않습니다.",
+        "sources": [
+          {
+            "title": "adidas 울트라부스트 라이트 발표 (2023-02-23)",
+            "url": "https://news.adidas.com/running/the-lightest-ever-ultraboost---experience-epic-energy-and-lightness-in-every-stride-with-the-new-adi/s/0e9c21e8-2fa9-4b30-985b-0fbc5105aced?cat=sports%7Crunning",
+            "scope": "Light BOOST 소재의 30% 경량화 제조사 주장과 PRIMEKNIT+ 적용. 신발 전체 중량·모든 모델의 반발률 비교가 아님"
+          },
+          {
+            "title": "adidas 공식 — HQ7711 정확 Hyperboost Run Description/Details",
+            "url": "https://www.adidas.com/bh/en/hyperboost-run-running-shoes/HQ7711.html",
+            "scope": "부제에는 LIGHT BOOST가 있으나 본문은 두 번 Hyperboost Pro로 명시한다. Primeweave engineered woven upper, anatomically shaped heel의 3D printed elements, LIGHTTRAXION과 forefoot Continental을 설명한다. · 공개 원문 확인, 실시간 가격·재고 검증 아님"
+          },
+          {
+            "title": "adidas 공식 — FIND YOURS의 Edge/Run 개별 모델 카드와 하단 일반 문구를 구분",
+            "url": "https://www.adidas.com/us/hyperboost-running",
+            "scope": "개별 카드: Edge는 Hyperboost Pro/전장 LIGHTTRAXION, Run은 Hyperboost Pro/LIGHTTRAXION x Continental pods. 하단 Continental 일반 문구를 Edge의 정확 부품으로 확대하지 않는다. · 공개 원문 확인, 실시간 가격·재고 검증 아님"
+          }
+        ]
+      }
     },
     {
-      id: 'energyrods-carbon',
-      name: 'Energyrods 2.0 (Carbon)',
-      nameKo: '에너지로드 2.0 (카본)',
-      category: 'plate',
-      year: 2022,
-      description:
-        '발가락 뼈를 형상화한 5개의 카본 주입(Carbon-infused) 로드로, 극강의 탄성과 추진력을 제공하는 엘리트 레이싱용 추진 시스템입니다.',
-      benefits: [
-        '발가락 뼈 구조를 모방한 자연스러운 에너지 전달',
-        '카본 주입 소재로 극강의 탄성 제공',
-        '착지-이륙 전환 시 폭발적인 추진력',
-        '고속 주행 시 에너지 손실 최소화',
+      "id": "energyrods-carbon",
+      "name": "Energyrods 2.0 (Carbon)",
+      "nameKo": "에너지로드 2.0 (카본)",
+      "category": "plate",
+      "description": "아디오스 프로 4의 공식 표현은 carbon-infused ENERGYRODS 2.0입니다. 유리섬유 로드나 재질 미공개 EnergyRods와 구분합니다.",
+      "benefits": [
+        "프로 4: carbon-infused ENERGYRODS 2.0",
+        "보스턴 13의 glass fibre와 재질 구분",
+        "아그라빅 스피드 울트라 초대를 카본으로 자동 분류하지 않기"
       ],
-      scienceExplanation:
-        'Energyrods 2.0(카본 버전)은 아디다스의 독자적인 추진 기술입니다. 일반적인 풀렝스 카본 플레이트와 달리, 인간의 발가락 뼈(중족골) 구조를 형상화한 5개의 개별 로드로 구성됩니다. Adios Pro 4에서는 카본 주입(Carbon-infused) 소재를 사용하여 극강의 탄성을 제공하며, Lightstrike Pro 폼 사이에 배치되어 착지 시 에너지를 효율적으로 저장하고 이륙 시 폭발적인 추진력을 만들어냅니다.',
-      usedInShoes: ['adidas-adios-pro-4'],
+      "scienceExplanation": "아디오스 프로 4 일반형 JR6364 원문은 두 Lightstrike Pro 층과 carbon-infused ENERGYRODS 2.0을 명시합니다. 로드 구조를 단일 전장 카본판으로 바꿔 쓰지 않습니다. 이번에 연 정확 모델 원문에는 탄소섬유·수지 함량, 단면, 정확 로드 수량이 공시되지 않아 기존의 다섯 개 독립 로드라는 단정을 제외했습니다. 아그라빅 스피드 울트라 초대는 제조사 발표에서 EnergyRods 명칭까지만 확인되므로 같은 재료로 묶지 않습니다.",
+      "usedInShoes": [
+        "adidas-adios-pro-4"
+      ],
+      "verification": {
+        "checkedAt": "2026-11-10",
+        "scope": "정확 세대의 제조사 기술명·부품·배치와 확인된 적용 예시. 미공개 원료는 추정하지 않으며 기록·부상 예방·교체 거리·빗길 안전을 보장하지 않습니다.",
+        "sources": [
+          {
+            "title": "adidas 공식 — JR6364 일반 Adios Pro4 Description/Details",
+            "url": "https://www.adidas.com/kw/en/adizero-adios-pro-4-shoes/JR6364.html",
+            "scope": "carbon-infused ENERGYRODS 2.0, Lightstrike Pro 두 층, LIGHTTRAXION과 toe-off Continental을 함께 명시한다. 일반형이며 SATISFY/Y-3가 아니다. · 공개 원문 확인, 실시간 가격·재고 검증 아님"
+          },
+          {
+            "title": "adidas 공식 — 초대 Agravic Speed Ultra 발표; 2/Evo 제외",
+            "url": "https://news.adidas.com/sports-performance/adidas-terrex-unveils-agravic-speed-ultra--designed-for-fast-runs/s/446d869a-f1e6-4bd8-8923-18f88246ddad",
+            "scope": "Lightstrike Pro, integrated EnergyRods, dynamic forefoot rocker, gusseted tongue/seamless overlays 및 Continental Rubber를 명시. rods 재료/개수는 밝히지 않는다. · 공개 원문 확인, 실시간 가격·재고 검증 아님"
+          },
+          {
+            "title": "adidas 공식 — 초대 상용 출시 본문",
+            "url": "https://news.adidas.com/agravic-range/adidas-terrex-launches-trail-mentorship-program-to-celebrate-commercial-launch-of-agravic-speed-ultr/s/5c5ee9d4-5be3-40b6-8927-f644c110457d",
+            "scope": "초대의 Lightstrike Pro, Energy Rods, dynamic rocker 조합을 다시 명시한다. rods의 carbon/plastic/TPE/bio-based 재료는 이 원문에서 확인되지 않는다. · 공개 원문 확인, 실시간 가격·재고 검증 아님"
+          }
+        ]
+      }
     },
     {
-      id: 'energyrods-glass',
-      name: 'Energyrods 2.0 (Glass Fiber)',
-      nameKo: '에너지로드 2.0 (유리섬유)',
-      category: 'plate',
-      year: 2023,
-      description:
-        '동일한 발가락 뼈 형상 설계에 유리섬유(Glass fiber) 소재를 적용하여, 카본 버전보다 유연한 추진력을 제공하는 트레이닝용 로드입니다.',
-      benefits: [
-        '카본 버전보다 유연한 추진력으로 다목적 활용',
-        '빠른 훈련과 일상 러닝 모두 적합',
-        '부드러운 전환으로 관절 부담 감소',
-        '레이싱화 대비 넓은 페이스 범위에서 효과적',
+      "id": "energyrods-glass",
+      "name": "Energyrods 2.0 (Glass Fiber)",
+      "nameKo": "에너지로드 2.0 (유리섬유)",
+      "category": "plate",
+      "description": "보스턴 13에서 확인한 유리섬유 ENERGYRODS 2.0입니다. 카본판과의 가격·유연성 서열을 이름만으로 정하지 않습니다.",
+      "benefits": [
+        "보스턴 13의 정확 원문에서 glass fibre 확인",
+        "Pro 4의 carbon-infused와 구분",
+        "로드의 압박감·앞발 전환은 직접 시착해 비교"
       ],
-      scienceExplanation:
-        'Energyrods 2.0(유리섬유 버전)은 카본 버전과 동일한 발가락 뼈 형상 설계를 사용하지만, 소재를 유리섬유(Glass fiber)로 바꿔 상대적으로 유연한 추진력을 제공합니다. Boston 12/13에 적용되어 있으며, 카본 로드의 폭발적 추진력이 아닌 자연스러운 가이드와 효율적인 에너지 전달에 초점을 맞춥니다. 템포런, 인터벌, 장거리 훈련 등 다양한 페이스에서 효과적이어서 "만능 훈련화"의 핵심 요소입니다.',
-      usedInShoes: ['adidas-boston-13'],
+      "scienceExplanation": "보스턴 13 KH8859 제품 설명은 glass fibre ENERGYRODS 2.0과 Lightstrike·Lightstrike Pro 조합을 명시합니다. 과거 보스턴 12 발표에도 유리섬유 주입 ENERGYRODS 2.0이 나오지만, 이를 근거로 두 세대의 모든 부품 치수와 물성이 같다고 판단하지 않습니다. 소재 이름만으로 카본보다 항상 유연하다거나 관절 스트레스를 줄인다는 임상 결론을 내리지 않습니다.",
+      "usedInShoes": [
+        "adidas-boston-13"
+      ],
+      "verification": {
+        "checkedAt": "2026-11-10",
+        "scope": "정확 세대의 제조사 기술명·부품·배치와 확인된 적용 예시. 미공개 원료는 추정하지 않으며 기록·부상 예방·교체 거리·빗길 안전을 보장하지 않습니다.",
+        "sources": [
+          {
+            "title": "adidas 공식 — KH8859 exact Boston 13 Product Description/Details",
+            "url": "https://www.adidas.com/bh/en/adizero-boston-13-shoes/KH8859.html",
+            "scope": "Lightstrike와 Lightstrike Pro 조합, glass fibre ENERGYRODS 2.0, 통기 mesh, LIGHTTRAXION 및 toe-off Continental. 폼 배합률·고분자명·rods 단면/개수는 미공개. · 공개 원문 확인, 실시간 가격·재고 검증 아님"
+          },
+          {
+            "title": "adidas 공식 — Boston 13 본문 및 predecessor 비교",
+            "url": "https://news.adidas.com/adizero-range/adidas-launches-new-adizero-boston-13---designed-for-fast-training-runs/s/0ca9243c-a53d-47a6-8e7c-31e4e2d77357",
+            "scope": "Boston 12보다 Lightstrike Pro 양이 13.8% 증가했다는 제조사 주장. ENERGYRODS 2.0, engineered mesh, padded tongue/collar 및 LIGHTTRAXION의 전략적 배치를 설명한다. · 공개 원문 확인, 실시간 가격·재고 검증 아님"
+          },
+          {
+            "title": "adidas 보스턴 12·아디오스 8 발표 (2023-06-01)",
+            "url": "https://news.adidas.com/running/adidas-expands-its-fastest-franchise-with-the-launch-of-the-all-new-adizero-boston-12-and-adios-8/s/7f957284-5dd0-4b24-b846-8d4a14853886",
+            "scope": "LIGHTSTRIKE 2.0과 Lightstrike Pro 조합, 보스턴 12의 유리섬유 ENERGYRODS 2.0. 보스턴 13·SL2로 세부 버전명 자동 전용하지 않음"
+          }
+        ]
+      }
     },
     {
-      id: 'support-rods',
-      name: 'Support Rods',
-      nameKo: '서포트 로드',
-      category: 'stability',
-      year: 2024,
-      description:
-        '슈퍼노바 라인에서 과회내(오버프로네이션) 방지 및 주행 가이드를 위해 도입된 폼 기반 안정성 로드입니다.',
-      benefits: [
-        '과회내(오버프로네이션) 자연스럽게 교정',
-        '카본화가 부담스러운 러너에게 안정적 가이드',
-        '부드러운 교정으로 관절 스트레스 최소화',
-        '평발이나 발목 안정성이 필요한 러너에 적합',
+      "id": "support-rods",
+      "name": "Support Rods",
+      "nameKo": "서포트 로드",
+      "category": "stability",
+      "description": "라이즈 2에서 확인한 주행 안내 구조입니다. 라이즈 3의 sculpted rods 표현을 동일한 별도 삽입 부품으로 단정하지 않습니다.",
+      "benefits": [
+        "라이즈 2: Support Rods 명칭 확인",
+        "라이즈 3: sculpted rods 표현과 별도 부품 여부 구분",
+        "과회내 교정·평발 적합성을 자동 판정하지 않기"
       ],
-      scienceExplanation:
-        'Support Rods는 슈퍼노바 라인에서 안정성을 위해 도입된 폼 기반 로드 기술입니다. 카본이나 유리섬유가 아닌 고밀도 폼 소재를 사용하여, 착지 시 발의 과도한 내전(프로네이션)을 부드럽게 가이드합니다. 카본 플레이트의 폭발적 추진이 아니라 안정적인 보행 경로를 유지하는 것이 목적이며, 평발 비율이 높은 한국 러너에게 특히 유용한 기술입니다.',
-      usedInShoes: ['adidas-supernova-rise-3', 'adidas-supernova-rise-2'],
+      "scienceExplanation": "라이즈 2 IH8662는 Support Rods가 뒤꿈치에서 앞발로 이어지는 전환을 안내한다고 설명합니다. 확인한 원문에는 정확 수지·밀도나 카본·유리섬유 조성이 공시되지 않았으므로 재질을 채워 넣지 않았습니다. 라이즈 3 KI9228은 미드솔 내부의 sculpted rods를 언급하지만 별도 Support Rods 삽입 부품인지 형상화된 폼인지까지 확인되지 않습니다. 두 세대를 같은 삽입 부품으로 연결하던 목록을 보수적으로 수정했습니다.",
+      "usedInShoes": [
+        "adidas-supernova-rise-2"
+      ],
+      "verification": {
+        "checkedAt": "2026-11-10",
+        "scope": "정확 세대의 제조사 기술명·부품·배치와 확인된 적용 예시. 미공개 원료는 추정하지 않으며 기록·부상 예방·교체 거리·빗길 안전을 보장하지 않습니다.",
+        "sources": [
+          {
+            "title": "adidas 공식 — IH8662 정확 Rise2 Description/Details",
+            "url": "https://www.adidas.com/kw/en/supernova-rise-2-running-shoes/IH8662.html",
+            "scope": "Dreamstrike+ midsole, Support Rods, engineered sandwich mesh upper, premium heel construction, ADIWEAR outsole. 폼과 rods의 화학 재료를 특정하지 않는다. · 공개 원문 확인, 실시간 가격·재고 검증 아님"
+          },
+          {
+            "title": "adidas 공식 — KI9228 정확 Rise3 Description/Details",
+            "url": "https://www.adidas.com/kw/en/supernova-rise-3-running-shoes/KI9228.html",
+            "scope": "Dreamstrike+, laser-perforated Primeweave upper, LIGHTTRAXION. midsole 내부의 sculpted rods가 전환을 돕는다고 표현하나 별도 Support Rods insert인지, 형상/재료는 밝히지 않는다. · 공개 원문 확인, 실시간 가격·재고 검증 아님"
+          }
+        ]
+      }
     },
     {
-      id: 'lightlock-upper',
-      name: 'Lightlock Upper',
-      nameKo: '라이트록 어퍼',
-      category: 'upper',
-      year: 2023,
-      description:
-        '초박형 메쉬로 고속 주행 시 발이 밀리지 않게 잠금(Lock)하는 경량 레이싱 어퍼 기술입니다.',
-      benefits: [
-        '고속 주행 시 발이 미끄러지지 않는 잠금 효과',
-        '초박형 설계로 극한의 경량화',
-        '전략적 통기 구멍으로 쾌적함 유지',
-        '레이스 집중도를 높이는 안정적 핏',
+      "id": "lightlock-upper",
+      "name": "Lightlock Upper",
+      "nameKo": "라이트록 어퍼",
+      "category": "upper",
+      "description": "아디오스 프로 4 일반형 발표에서 확인한 한 방향 스트레치 직물 메쉬와 내부 잠금 밴드의 조합입니다.",
+      "benefits": [
+        "프로 4의 LIGHTLOCK과 내부 밴드 확인",
+        "EVO SL의 engineered mesh와 구분",
+        "신축성이 있어도 발볼·발등 압박은 직접 확인"
       ],
-      scienceExplanation:
-        'Lightlock Upper는 Adios Pro 3에서 4로 넘어오며 강조된 레이싱 전용 어퍼 기술입니다. 초박형 메쉬 소재를 사용하여 고속 주행 시 발이 신발 안에서 밀리지 않도록 "잠금(Lock)"하는 기능에 초점을 맞췄습니다. 무게를 극한까지 줄이면서도 전략적으로 배치된 지지 구조와 통기 구멍으로 레이스 내내 쾌적함과 안정감을 유지합니다.',
-      usedInShoes: ['adidas-adios-pro-4'],
+      "scienceExplanation": "2024년 제조사 발표는 아디오스 프로 4의 LIGHTLOCK을 한 방향으로 늘어나는 woven mesh와 내부 locking bands로 설명합니다. 이는 착화 중 발을 잡아주려는 설계 의도이며 누구에게나 발 밀림이나 물집이 없다는 보증이 아닙니다. 같은 발표의 EVO SL engineered mesh나 다른 모델의 Primeweave·PRIMEKNIT+를 같은 기술로 통합하지 않습니다.",
+      "usedInShoes": [
+        "adidas-adios-pro-4"
+      ],
+      "verification": {
+        "checkedAt": "2026-11-10",
+        "scope": "정확 세대의 제조사 기술명·부품·배치와 확인된 적용 예시. 미공개 원료는 추정하지 않으며 기록·부상 예방·교체 거리·빗길 안전을 보장하지 않습니다.",
+        "sources": [
+          {
+            "title": "adidas 공식 — Adios Pro 4 일반형 및 EVO SL 초대 발표 본문",
+            "url": "https://news.adidas.com/running/adizero-adios-pro-4-leads-the-way-as-adidas-introduces-new-race-and-training-silhouettes-to-its-awar/S/ecd0a1fe-e467-4f81-a767-0a64ab29d98f",
+            "scope": "Pro4는 전장 Lightstrike Pro, 60% 지점 rocker, 원웨이 스트레치 woven mesh LIGHTLOCK, 압력 지도 기반 LIGHTTRAXION. EVO SL은 전장 Lightstrike Pro와 engineered mesh이며 제조사가 stiffening elements를 넣지 않았다고 설명한다. 화학 고분자명은 없다. · 공개 원문 확인, 실시간 가격·재고 검증 아님"
+          }
+        ]
+      }
     },
     {
-      id: 'primeknit-plus',
-      name: 'Primeknit+',
-      nameKo: '프라임니트+',
-      category: 'upper',
-      year: 2020,
-      description:
-        '아디다스의 상징적인 니트 어퍼 기술로, 양말 같은 착화감과 부위별 맞춤 지지력을 제공합니다.',
-      benefits: [
-        '양말처럼 발을 감싸는 편안한 착화감',
-        '부위별 직조 밀도 조절로 맞춤 지지',
-        '뛰어난 통기성으로 장거리에서도 쾌적',
-        '이음새 최소화로 마찰 및 물집 방지',
+      "id": "primeknit-plus",
+      "name": "Primeknit+",
+      "nameKo": "프라임니트+",
+      "category": "upper",
+      "description": "울트라부스트 라이트 발표에서 적용을 확인한 경량 어퍼 명칭입니다. Primeweave와 동일한 구조라고 단정하지 않습니다.",
+      "benefits": [
+        "울트라부스트 라이트에서 PRIMEKNIT+ 명칭 확인",
+        "라이즈 3·Hyperboost의 Primeweave와 구분",
+        "원피스·무봉제·물집 예방은 별도 근거 없이 보장하지 않기"
       ],
-      scienceExplanation:
-        'Primeknit+는 아디다스의 상징적인 니트 어퍼 기술의 최신 버전입니다. 디지털 니팅으로 한 번에 짜여진 원피스 구조로 이음새가 거의 없어 마찰을 최소화합니다. 부위별로 직조 밀도를 다르게 설정하여 지지가 필요한 곳은 촘촘하게, 통기가 필요한 곳은 느슨하게 짜여집니다. 특히 데일리 러닝이나 장거리에서 양말 같은 편안함을 제공합니다.',
-      usedInShoes: [],
+      "scienceExplanation": "2023년 울트라부스트 라이트 발표는 PRIMEKNIT+ 어퍼가 통기성과 착화감을 목표로 한 경량 구조라고 설명합니다. 그 원문만으로 모든 제품이 이음새 없는 원피스이거나 같은 직조 밀도를 쓴다고 확장하지 않았습니다. 현재 등록 모델 중 이번에 확인한 정확 적용 예시는 없어 제품 목록은 비워두었습니다. 라이즈 3와 Hyperboost Edge·Run의 확인 명칭은 Primeweave이며 PRIMEKNIT+로 바꾸지 않습니다.",
+      "usedInShoes": [],
+      "verification": {
+        "checkedAt": "2026-11-10",
+        "scope": "정확 세대의 제조사 기술명·부품·배치와 확인된 적용 예시. 미공개 원료는 추정하지 않으며 기록·부상 예방·교체 거리·빗길 안전을 보장하지 않습니다.",
+        "sources": [
+          {
+            "title": "adidas 울트라부스트 라이트 발표 (2023-02-23)",
+            "url": "https://news.adidas.com/running/the-lightest-ever-ultraboost---experience-epic-energy-and-lightness-in-every-stride-with-the-new-adi/s/0e9c21e8-2fa9-4b30-985b-0fbc5105aced?cat=sports%7Crunning",
+            "scope": "Light BOOST 소재의 30% 경량화 제조사 주장과 PRIMEKNIT+ 적용. 신발 전체 중량·모든 모델의 반발률 비교가 아님"
+          },
+          {
+            "title": "adidas 공식 — KI9228 정확 Rise3 Description/Details",
+            "url": "https://www.adidas.com/kw/en/supernova-rise-3-running-shoes/KI9228.html",
+            "scope": "Dreamstrike+, laser-perforated Primeweave upper, LIGHTTRAXION. midsole 내부의 sculpted rods가 전환을 돕는다고 표현하나 별도 Support Rods insert인지, 형상/재료는 밝히지 않는다. · 공개 원문 확인, 실시간 가격·재고 검증 아님"
+          },
+          {
+            "title": "adidas 공식 — Hyperboost Edge exact launch article",
+            "url": "https://news.adidas.com/hyperboost-edge/adidas-reveal-the-hyperboost-edge--beginning-a-new-era-of-road-running/s/74c11526-ce60-405c-8c47-c1edae16c9e3",
+            "scope": "Hyperboost Pro, Primeweave woven upper/heel pods, 전장 LIGHTTRAXION, no plates or stiffening elements. 60명 연구에서 73%는 자신의 현재 신발보다 에너지 리턴을 선호했고 77%는 더 부드럽다고 응답했다. 실제 에너지 리턴 개선율이나 임상 결과가 아니다. · 공개 원문 확인, 실시간 가격·재고 검증 아님"
+          },
+          {
+            "title": "adidas 공식 — HQ7711 정확 Hyperboost Run Description/Details",
+            "url": "https://www.adidas.com/bh/en/hyperboost-run-running-shoes/HQ7711.html",
+            "scope": "부제에는 LIGHT BOOST가 있으나 본문은 두 번 Hyperboost Pro로 명시한다. Primeweave engineered woven upper, anatomically shaped heel의 3D printed elements, LIGHTTRAXION과 forefoot Continental을 설명한다. · 공개 원문 확인, 실시간 가격·재고 검증 아님"
+          }
+        ]
+      }
     },
     {
-      id: 'continental-rubber',
-      name: 'Continental™ Rubber',
-      nameKo: '콘티넨탈 러버',
-      category: 'outsole',
-      year: 2013,
-      description:
-        '자동차 타이어 브랜드 콘티넨탈과 협업한 아웃솔로, 젖은 노면에서도 완벽한 접지력을 제공합니다.',
-      benefits: [
-        '젖은 노면에서도 미끄러지지 않는 강력한 그립',
-        '자동차 타이어 기술 기반의 검증된 신뢰성',
-        '뛰어난 내구성으로 장기간 성능 유지',
-        '모델별 전면/부분 배치로 최적화',
+      "id": "continental-rubber",
+      "name": "Continental™ Rubber",
+      "nameKo": "콘티넨탈 러버",
+      "category": "outsole",
+      "description": "모델별 특정 구역에 배치되는 아웃솔 고무 명칭입니다. 일부 패치를 전장 적용으로 확대하거나 빗길 안전을 보장하지 않습니다.",
+      "benefits": [
+        "EVO SL: 전족 패치, 프로 4·보스턴 13: toe-off 구역",
+        "Hyperboost Run: 전족, 아그라빅 스피드 울트라 초대: 트레일 밑창",
+        "라이즈 2·3과 SL2의 미확인 연결 제거"
       ],
-      scienceExplanation:
-        'Continental Rubber는 독일 프리미엄 타이어 브랜드 콘티넨탈(Continental AG)과의 파트너십으로 개발된 아웃솔 고무입니다. 자동차 타이어에 사용되는 고무 배합 기술을 러닝화에 적용하여, 특히 젖은 노면에서 일반 러닝화 고무 대비 월등한 접지력을 제공합니다. 모델에 따라 Toe-off(이착지 전환) 구역에만 부분 적용하거나 전면에 배치하는 등 차별화되어 있으며, 아디다스 러닝화의 신뢰도를 지탱하는 핵심 파트너십입니다.',
-      usedInShoes: [
-        'adidas-supernova-rise-3',
-        'adidas-supernova-rise-2',
-        'adidas-boston-13',
-        'adidas-adizero-evo-sl',
+      "scienceExplanation": "EVO SL KI6917 공식 상세는 전족부 Continental Conti Winter와 후족부 CL Rubber를 구분합니다. 프로 4와 보스턴 13은 LIGHTTRAXION과 toe-off Continental을 함께 명시합니다. Hyperboost Run은 전족부, 아그라빅 스피드 울트라 초대 발표는 Continental 아웃솔을 확인했습니다. Edge 소개 페이지 하단의 일반 Continental 문구를 Edge 모델 고유 구성에 대입하지 않습니다. 같은 고무 브랜드라도 실제 배치·노면·마모 상태에 따라 접지가 달라지며, 미끄러지지 않는다고 표현하지 않습니다.",
+      "usedInShoes": [
+        "adidas-adizero-evo-sl",
+        "adidas-adios-pro-4",
+        "adidas-boston-13",
+        "adidas-hyperboost-run",
+        "adidas-terrex-agravic-speed-ultra"
       ],
+      "verification": {
+        "checkedAt": "2026-11-10",
+        "scope": "정확 세대의 제조사 기술명·부품·배치와 확인된 적용 예시. 미공개 원료는 추정하지 않으며 기록·부상 예방·교체 거리·빗길 안전을 보장하지 않습니다.",
+        "sources": [
+          {
+            "title": "adidas 공식 — KI6917 아랍어 정확 EVO SL 기본형 Product Details, lines88–99",
+            "url": "https://www.adidas.com/qa/ar/%D8%AD%D8%B0%D8%A7%D8%A1-adizero-evo-sl/KI6917.html",
+            "scope": "Lightstrike Pro midsole; synthetic/textile upper. 전족 패치는 Continental Conti Winter, 후족 패치는 CL(Clear) Rubber로 분리한다. 같은 SKU 영문 일부 페이지는 전족 항목이 누락되지만 아랍어 본문에는 존재한다. · 공개 원문 확인, 실시간 가격·재고 검증 아님"
+          },
+          {
+            "title": "adidas 공식 — JR6364 일반 Adios Pro4 Description/Details",
+            "url": "https://www.adidas.com/kw/en/adizero-adios-pro-4-shoes/JR6364.html",
+            "scope": "carbon-infused ENERGYRODS 2.0, Lightstrike Pro 두 층, LIGHTTRAXION과 toe-off Continental을 함께 명시한다. 일반형이며 SATISFY/Y-3가 아니다. · 공개 원문 확인, 실시간 가격·재고 검증 아님"
+          },
+          {
+            "title": "adidas 공식 — KH8859 exact Boston 13 Product Description/Details",
+            "url": "https://www.adidas.com/bh/en/adizero-boston-13-shoes/KH8859.html",
+            "scope": "Lightstrike와 Lightstrike Pro 조합, glass fibre ENERGYRODS 2.0, 통기 mesh, LIGHTTRAXION 및 toe-off Continental. 폼 배합률·고분자명·rods 단면/개수는 미공개. · 공개 원문 확인, 실시간 가격·재고 검증 아님"
+          },
+          {
+            "title": "adidas 공식 — HQ7711 정확 Hyperboost Run Description/Details",
+            "url": "https://www.adidas.com/bh/en/hyperboost-run-running-shoes/HQ7711.html",
+            "scope": "부제에는 LIGHT BOOST가 있으나 본문은 두 번 Hyperboost Pro로 명시한다. Primeweave engineered woven upper, anatomically shaped heel의 3D printed elements, LIGHTTRAXION과 forefoot Continental을 설명한다. · 공개 원문 확인, 실시간 가격·재고 검증 아님"
+          },
+          {
+            "title": "adidas 공식 — 초대 Agravic Speed Ultra 발표; 2/Evo 제외",
+            "url": "https://news.adidas.com/sports-performance/adidas-terrex-unveils-agravic-speed-ultra--designed-for-fast-runs/s/446d869a-f1e6-4bd8-8923-18f88246ddad",
+            "scope": "Lightstrike Pro, integrated EnergyRods, dynamic forefoot rocker, gusseted tongue/seamless overlays 및 Continental Rubber를 명시. rods 재료/개수는 밝히지 않는다. · 공개 원문 확인, 실시간 가격·재고 검증 아님"
+          },
+          {
+            "title": "adidas 공식 — FIND YOURS의 Edge/Run 개별 모델 카드와 하단 일반 문구를 구분",
+            "url": "https://www.adidas.com/us/hyperboost-running",
+            "scope": "개별 카드: Edge는 Hyperboost Pro/전장 LIGHTTRAXION, Run은 Hyperboost Pro/LIGHTTRAXION x Continental pods. 하단 Continental 일반 문구를 Edge의 정확 부품으로 확대하지 않는다. · 공개 원문 확인, 실시간 가격·재고 검증 아님"
+          }
+        ]
+      }
     },
     {
-      id: 'lighttraxion',
-      name: 'Lighttraxion',
-      nameKo: '라이트트랙션',
-      category: 'outsole',
-      year: 2024,
-      description:
-        '무게를 줄이기 위해 접지 패턴을 최적화한 경량 아웃솔로, 빠른 페이스의 트레이닝에 최적화되었습니다.',
-      benefits: [
-        '최적화된 패턴으로 경량화 달성',
-        '빠른 페이스에서도 충분한 접지력',
-        '유연한 구조로 자연스러운 발 움직임 지원',
-        '훈련용 러닝화의 무게 절감에 기여',
+      "id": "lighttraxion",
+      "name": "Lighttraxion",
+      "nameKo": "라이트트랙션",
+      "category": "outsole",
+      "description": "필요한 구역에 고무를 배치해 무게와 접지의 균형을 목표로 한 아웃솔 설계 명칭입니다. Continental 패치와 함께 쓰이는 모델도 있습니다.",
+      "benefits": [
+        "프로 4·보스턴 13: LIGHTTRAXION과 부분 Continental",
+        "라이즈 3·Hyperboost Edge·Run에서도 명칭 확인",
+        "SL2의 확인 원문에는 명칭이 없어 연결 보류"
       ],
-      scienceExplanation:
-        'Lighttraxion은 Boston 13 등 아디제로 트레이닝 라인에서 무게를 줄이기 위해 접지 패턴을 최적화한 새로운 아웃솔입니다. 전통적인 풀커버 고무 대신 착지와 이착지 시 실제로 지면에 닿는 영역을 분석하여 필요한 곳에만 고무를 배치했습니다. 이를 통해 접지력은 유지하면서 불필요한 무게를 줄여, 빠른 페이스의 훈련에서 가벼운 발놀림을 가능하게 합니다.',
-      usedInShoes: ['adidas-adios-pro-4', 'adidas-boston-13', 'adidas-adizero-sl2'],
+      "scienceExplanation": "프로 4 발표는 압력 분포를 바탕으로 고무를 배치한 LIGHTTRAXION을 설명하고, 보스턴 13 발표는 해당 구조가 보스턴 계열에 새로 도입됐다고 명시합니다. 라이즈 3와 Hyperboost Edge·Run에서도 확인했습니다. Edge의 전장 LIGHTTRAXION과 Run의 LIGHTTRAXION·Continental 조합을 구분해야 합니다. SL2의 정확 원문은 rubber outsole로만 표기하므로 해당 기술로 연결하지 않았습니다. 설계 의도와 실제 접지력 비교 실험은 다릅니다.",
+      "usedInShoes": [
+        "adidas-adios-pro-4",
+        "adidas-boston-13",
+        "adidas-supernova-rise-3",
+        "adidas-hyperboost-edge",
+        "adidas-hyperboost-run"
+      ],
+      "verification": {
+        "checkedAt": "2026-11-10",
+        "scope": "정확 세대의 제조사 기술명·부품·배치와 확인된 적용 예시. 미공개 원료는 추정하지 않으며 기록·부상 예방·교체 거리·빗길 안전을 보장하지 않습니다.",
+        "sources": [
+          {
+            "title": "adidas 공식 — Adios Pro 4 일반형 및 EVO SL 초대 발표 본문",
+            "url": "https://news.adidas.com/running/adizero-adios-pro-4-leads-the-way-as-adidas-introduces-new-race-and-training-silhouettes-to-its-awar/S/ecd0a1fe-e467-4f81-a767-0a64ab29d98f",
+            "scope": "Pro4는 전장 Lightstrike Pro, 60% 지점 rocker, 원웨이 스트레치 woven mesh LIGHTLOCK, 압력 지도 기반 LIGHTTRAXION. EVO SL은 전장 Lightstrike Pro와 engineered mesh이며 제조사가 stiffening elements를 넣지 않았다고 설명한다. 화학 고분자명은 없다. · 공개 원문 확인, 실시간 가격·재고 검증 아님"
+          },
+          {
+            "title": "adidas 공식 — Boston 13 본문 및 predecessor 비교",
+            "url": "https://news.adidas.com/adizero-range/adidas-launches-new-adizero-boston-13---designed-for-fast-training-runs/s/0ca9243c-a53d-47a6-8e7c-31e4e2d77357",
+            "scope": "Boston 12보다 Lightstrike Pro 양이 13.8% 증가했다는 제조사 주장. ENERGYRODS 2.0, engineered mesh, padded tongue/collar 및 LIGHTTRAXION의 전략적 배치를 설명한다. · 공개 원문 확인, 실시간 가격·재고 검증 아님"
+          },
+          {
+            "title": "adidas 공식 — KI9228 정확 Rise3 Description/Details",
+            "url": "https://www.adidas.com/kw/en/supernova-rise-3-running-shoes/KI9228.html",
+            "scope": "Dreamstrike+, laser-perforated Primeweave upper, LIGHTTRAXION. midsole 내부의 sculpted rods가 전환을 돕는다고 표현하나 별도 Support Rods insert인지, 형상/재료는 밝히지 않는다. · 공개 원문 확인, 실시간 가격·재고 검증 아님"
+          },
+          {
+            "title": "adidas 공식 — Hyperboost Edge exact launch article",
+            "url": "https://news.adidas.com/hyperboost-edge/adidas-reveal-the-hyperboost-edge--beginning-a-new-era-of-road-running/s/74c11526-ce60-405c-8c47-c1edae16c9e3",
+            "scope": "Hyperboost Pro, Primeweave woven upper/heel pods, 전장 LIGHTTRAXION, no plates or stiffening elements. 60명 연구에서 73%는 자신의 현재 신발보다 에너지 리턴을 선호했고 77%는 더 부드럽다고 응답했다. 실제 에너지 리턴 개선율이나 임상 결과가 아니다. · 공개 원문 확인, 실시간 가격·재고 검증 아님"
+          },
+          {
+            "title": "adidas 공식 — HQ7711 정확 Hyperboost Run Description/Details",
+            "url": "https://www.adidas.com/bh/en/hyperboost-run-running-shoes/HQ7711.html",
+            "scope": "부제에는 LIGHT BOOST가 있으나 본문은 두 번 Hyperboost Pro로 명시한다. Primeweave engineered woven upper, anatomically shaped heel의 3D printed elements, LIGHTTRAXION과 forefoot Continental을 설명한다. · 공개 원문 확인, 실시간 가격·재고 검증 아님"
+          },
+          {
+            "title": "adidas 공식 — KK1056 정확 SL2 Description/Details",
+            "url": "https://www.adidas.com/qa/en/adizero-sl2-shoes/KK1056.html",
+            "scope": "전장 Lightstrike Pro drop-in을 Lightstrike carrier 안에 배치. soft engineered mesh upper, heel/tongue padding 및 rubber outsole. 이 본문은 carrier를 Lightstrike 2.0이라고 특정하지 않고 ADIWEAR/Continental도 명시하지 않는다. · 공개 원문 확인, 실시간 가격·재고 검증 아님"
+          }
+        ]
+      }
     },
     {
-      id: 'adiwear',
-      name: 'Adiwear',
-      nameKo: '아디웨어',
-      category: 'outsole',
-      year: 2010,
-      description:
-        '높은 내마모성을 가진 아디다스의 표준 아웃솔 고무로, 입문자용 및 데일리 러닝화에 적용되어 뛰어난 내구성을 제공합니다.',
-      benefits: [
-        '쉽게 닳지 않는 강력한 내마모성',
-        '입문자부터 데일리 러너까지 경제적',
-        '안정적인 접지력',
-        '장기간 사용에도 성능 유지',
+      "id": "adiwear",
+      "name": "Adiwear",
+      "nameKo": "아디웨어",
+      "category": "outsole",
+      "description": "라이즈 2의 정확 제품 안내에서 확인한 아웃솔 명칭입니다. 라이즈 3·SL2로 명칭을 자동 전용하지 않습니다.",
+      "benefits": [
+        "라이즈 2: ADIWEAR 확인",
+        "라이즈 3: LIGHTTRAXION으로 구분",
+        "명칭으로 수명·km당 비용·Continental 대비 서열을 매기지 않기"
       ],
-      scienceExplanation:
-        'Adiwear는 아디다스가 엔트리급 및 데일리 러닝화에 적용하는 고내마모성 고무 소재입니다. 콘티넨탈 러버보다 접지력은 다소 낮지만, 내구성을 최우선으로 설계되어 마모가 가장 빨리 일어나는 뒤꿈치와 전족부에 집중 배치됩니다. 주간 주행거리가 높은 러너나 예산을 고려하는 입문자에게 km당 비용을 낮춰주는 경제적인 기술입니다.',
-      usedInShoes: ['adidas-supernova-rise-3', 'adidas-supernova-rise-2', 'adidas-adizero-sl2'],
-    },
+      "scienceExplanation": "라이즈 2 IH8662 원문은 ADIWEAR outsole을 명시합니다. 라이즈 3 KI9228은 LIGHTTRAXION이고, SL2 KK1056은 rubber outsole로만 확인되어 기존 적용 연결을 제거했습니다. 내마모성을 목표로 한 제조사 설명은 실제 교체 거리나 비용 계산의 근거가 아닙니다. 같은 조건의 독립 비교를 확인하지 못했으므로 Continental보다 접지력이 낮거나 수명이 길다고 단정하지 않습니다.",
+      "usedInShoes": [
+        "adidas-supernova-rise-2"
+      ],
+      "verification": {
+        "checkedAt": "2026-11-10",
+        "scope": "정확 세대의 제조사 기술명·부품·배치와 확인된 적용 예시. 미공개 원료는 추정하지 않으며 기록·부상 예방·교체 거리·빗길 안전을 보장하지 않습니다.",
+        "sources": [
+          {
+            "title": "adidas 공식 — IH8662 정확 Rise2 Description/Details",
+            "url": "https://www.adidas.com/kw/en/supernova-rise-2-running-shoes/IH8662.html",
+            "scope": "Dreamstrike+ midsole, Support Rods, engineered sandwich mesh upper, premium heel construction, ADIWEAR outsole. 폼과 rods의 화학 재료를 특정하지 않는다. · 공개 원문 확인, 실시간 가격·재고 검증 아님"
+          },
+          {
+            "title": "adidas 공식 — KI9228 정확 Rise3 Description/Details",
+            "url": "https://www.adidas.com/kw/en/supernova-rise-3-running-shoes/KI9228.html",
+            "scope": "Dreamstrike+, laser-perforated Primeweave upper, LIGHTTRAXION. midsole 내부의 sculpted rods가 전환을 돕는다고 표현하나 별도 Support Rods insert인지, 형상/재료는 밝히지 않는다. · 공개 원문 확인, 실시간 가격·재고 검증 아님"
+          },
+          {
+            "title": "adidas 공식 — KK1056 정확 SL2 Description/Details",
+            "url": "https://www.adidas.com/qa/en/adizero-sl2-shoes/KK1056.html",
+            "scope": "전장 Lightstrike Pro drop-in을 Lightstrike carrier 안에 배치. soft engineered mesh upper, heel/tongue padding 및 rubber outsole. 이 본문은 carrier를 Lightstrike 2.0이라고 특정하지 않고 ADIWEAR/Continental도 명시하지 않는다. · 공개 원문 확인, 실시간 가격·재고 검증 아님"
+          }
+        ]
+      }
+    }
   ],
+  "verification": {
+    "checkedAt": "2026-11-10",
+    "scope": "창업 연도·창업자·현재 본사와 아래 12개 기술 설명의 한정된 확인 범위. 적용 모델은 확인된 예시이며 전 제품 목록은 아닙니다.",
+    "sources": [
+      {
+        "title": "adidas 공식 연혁",
+        "url": "https://www.adidas-group.com/en/about/history",
+        "scope": "1949-08-18 아디 다슬러의 adidas 등록; 1924년 형제 회사의 전신과 구분"
+      },
+      {
+        "title": "adidas 공식 본사 안내",
+        "url": "https://www.adidas-group.com/en/about/headquarters",
+        "scope": "독일 헤르초게나우라흐 본사"
+      }
+    ]
+  }
 };
