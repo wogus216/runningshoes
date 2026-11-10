@@ -79,7 +79,7 @@ export default function FAQPage() {
         <div className="mb-8">
         <h1 className="text-3xl font-bold mb-3">자주 묻는 질문 (FAQ)</h1>
         <p className="text-secondary">
-          러닝화 선택, 구매, 관리, 부상 예방, 에너지 젤에 대한 자주 묻는 질문에 답변드립니다.
+          러닝화 선택·구매·관리와 건강상 확인할 점, 에너지 젤 보급 계획을 출처와 함께 안내합니다.
         </p>
       </div>
 
@@ -113,7 +113,7 @@ export default function FAQPage() {
         </a>
       </div>
 
-      <p className="text-sm text-tertiary mt-6">최종 수정일: 2026년 2월 4일</p>
+      <p className="text-sm text-tertiary mt-6">최종 수정일: 2026년 11월 11일</p>
       </div>
     </>
   );
