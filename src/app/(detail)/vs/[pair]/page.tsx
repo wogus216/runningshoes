@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import { ChevronRight } from 'lucide-react';
 import { getAllPairs, getPairBySlug, getPairsForCategory, getPairsForShoe } from '@/lib/pseo/pairs';
-import { formatManwon, formatManwonExact } from '@/lib/format';
+import { formatManwon } from '@/lib/format';
 import { SITE_URL, SITE_NAME, DEFAULT_OG_IMAGE } from '@/lib/constants';
 import { breadcrumbJsonLd } from '@/lib/seo/breadcrumb';
 import { img } from '@/lib/image';
@@ -24,46 +24,16 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   if (!found) return { title: '비교 페이지를 찾을 수 없습니다' };
   const { a, b } = found;
 
-  // 페어별 실측 차이 — description 과 title 접미사가 같은 값을 쓴다
-  const priceGap = a.price && b.price ? Math.abs(a.price - b.price) : null;
-  const weightGap = a.specs?.weight && b.specs?.weight ? Math.abs(a.specs.weight - b.specs.weight) : null;
-
-  // description 은 페어마다 실제 수치를 넣는다. 종전 문구는 항목 나열이라 334개 페이지가 전부 같았다
+  // 측정 사이즈·공시/실측 기준을 정규화하지 않은 수치로 차액·경량성 우열을 만들지 않는다.
   const facts: string[] = [];
-  if (a.price && b.price && priceGap !== null) {
-    facts.push(
-      priceGap >= 10000
-        ? `가격은 ${formatManwonExact(priceGap)} 차이(${a.name} ${a.price.toLocaleString()}원 / ${b.name} ${b.price.toLocaleString()}원)`
-        : `가격은 둘 다 ${Math.round(a.price / 10000)}만원대`,
-    );
+  if (a.price !== undefined && b.price !== undefined) {
+    facts.push(`확인 가격 ${a.name} ${a.price.toLocaleString('ko-KR')}원 / ${b.name} ${b.price.toLocaleString('ko-KR')}원`);
   }
-  if (a.specs?.weight && b.specs?.weight && weightGap !== null) {
-    facts.push(
-      weightGap >= 10
-        ? `무게는 ${weightGap}g 차이(${a.specs.weight}g / ${b.specs.weight}g)`
-        : `무게는 ${a.specs.weight}g 대 ${b.specs.weight}g로 비슷`,
-    );
+  if (a.specs?.weight !== undefined && b.specs?.weight !== undefined) {
+    facts.push(`표기 무게 ${a.specs.weight}g / ${b.specs.weight}g, 기준 사이즈·공시/실측 조건 확인 필요`);
   }
-
-  /**
-   * 제목에 "차이"를 넣는다 — 2026-08-07 GSC 실측에서 이 의도의 검색어 형태가 "비교"가 아니라
-   * **"차이"**였다(`페가수스 41 42 차이` CTR 13.8%, `젤카야노 32 33 차이` 17.9%).
-   * 종전 제목은 "비교 — 어떤 게 더 좋을까?"라 실제 검색어와 어긋나 있었다.
-   *
-   * 접미사는 페어별 실측 수치로 만든다 — 종전 `무게·스택·가격 비교`는 **334개 페이지가 전부
-   * 동일**해서 네이버 서치어드바이저가 "<title> 요소에 동일한 제목인 웹문서 다수 발견"으로
-   * 잡고 있었다(2026-08-21 확인). 앞부분("A vs B 차이")은 GSC 로 검증된 형태라 건드리지 않는다.
-   * 수치가 없는 페어는 종전 문구로 폴백한다.
-   */
-  const titleFacts: string[] = [];
-  if (priceGap !== null && priceGap >= 10000) titleFacts.push(`가격 ${formatManwonExact(priceGap)}`);
-  if (weightGap !== null && weightGap >= 5) titleFacts.push(`무게 ${weightGap}g`);
-  const titleSuffix = titleFacts.length ? titleFacts.join('·') : '무게·스택·가격 비교';
-  const title = `${a.brand} ${a.name} vs ${b.brand} ${b.name} 차이 — ${titleSuffix}`;
-  // 모델명이 숫자로 끝나면 과/와·은/는이 갈린다(33→과, 32→와). 조사를 쓰지 않고 vs 로 잇는다
-  const description = facts.length
-    ? `${a.brand} ${a.name} vs ${b.brand} ${b.name} — 무엇이 다른가. ${facts.join(', ')}. 스택·드롭·토박스 너비·내구성까지 항목별로 나란히 놓고 한국 러너 기준으로 정리했습니다.`
-    : `${a.brand} ${a.name} vs ${b.brand} ${b.name} — 무게, 스택, 드롭, 가격, 한국 러너 적합성을 데이터로 비교합니다.`;
+  const title = `${a.brand} ${a.name} vs ${b.brand} ${b.name} 차이 — 구조·확인 가격 비교`;
+  const description = `${a.brand} ${a.name} vs ${b.brand} ${b.name}. ${facts.length ? facts.join('. ') + '. ' : ''}제품별 출처·측정 조건·폭 옵션과 가격 확인 시점을 함께 비교하세요.`;
   return {
     title,
     description,
@@ -120,7 +90,7 @@ export default async function ComparePairPage({ params }: PageProps) {
       '@context': 'https://schema.org',
       '@type': 'Article',
       headline: `${a.brand} ${a.name} vs ${b.brand} ${b.name}`,
-      description: `${a.brand} ${withJosa(a.name, '과/와')} ${b.brand} ${b.name}의 무게·스택·드롭·가격·한국 러너 적합성을 데이터로 비교합니다.`,
+      description: `${a.brand} ${withJosa(a.name, '과/와')} ${b.brand} ${b.name}에서 확인한 구조·규격·가격과 출처·측정 조건을 비교합니다.`,
       url: `${SITE_URL}/vs/${pair}`,
       about: [
         { '@type': 'Thing', name: `${a.brand} ${a.name}`, url: `${SITE_URL}/shoes/${a.slug}` },
@@ -184,12 +154,12 @@ export default async function ComparePairPage({ params }: PageProps) {
         </p>
       </section>
 
-      <section className="space-y-3">
+      {verdicts.length > 0 && <section className="space-y-3">
         <h2 className="text-xl font-semibold text-primary">확인된 항목 비교</h2>
         <ul className="space-y-2">
           {verdicts.map((v, i) => {
             const winnerName = v.winnerSlug === 'a' ? `${a.brand} ${a.name}` : v.winnerSlug === 'b' ? `${b.brand} ${b.name}` : '동일';
-            const winnerColor = v.winnerSlug === 'tie' ? 'text-tertiary' : 'text-signal-dark';
+            const winnerColor = v.winnerSlug === 'tie' || v.winnerSlug === 'unranked' ? 'text-tertiary' : 'text-signal-dark';
             return (
               <li key={i} className="flex items-start justify-between gap-4 p-3 bg-white border border-border rounded-[4px]">
                 <div>
@@ -197,13 +167,13 @@ export default async function ComparePairPage({ params }: PageProps) {
                   <div className="text-xs text-tertiary mt-0.5">{v.reason}</div>
                 </div>
                 <div className={`text-sm font-bold whitespace-nowrap ${winnerColor}`}>
-                  {v.winnerSlug === 'tie' ? '무승부' : `→ ${winnerName}`}
+                  {v.winnerSlug === 'unranked' ? '조건 확인' : v.winnerSlug === 'tie' ? '무승부' : `→ ${winnerName}`}
                 </div>
               </li>
             );
           })}
         </ul>
-      </section>
+      </section>}
 
       <section className="space-y-3">
         <h2 className="text-xl font-semibold text-primary">스펙 전체 비교</h2>

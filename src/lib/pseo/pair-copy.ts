@@ -12,25 +12,19 @@ import { formatManwon } from '@/lib/format';
 
 export const WIDTH_RANK: Record<string, number> = { narrow: 0, standard: 1, wide: 2 };
 
-export type Verdict = { label: string; winnerSlug: 'a' | 'b' | 'tie'; reason: string };
+export type Verdict = { label: string; winnerSlug: 'a' | 'b' | 'tie' | 'unranked'; reason: string };
 
 export function buildVerdicts(a: Shoe, b: Shoe): Verdict[] {
   const out: Verdict[] = [];
 
-  // 가벼움
+  // 기준 사이즈·공시/실측 조건이 정규화되지 않은 무게는 승패로 판정하지 않는다.
   const wa = a.specs?.weight;
   const wb = b.specs?.weight;
-  if (wa !== undefined && wb !== undefined && Math.abs(wa - wb) >= 10) {
+  if (wa !== undefined && wb !== undefined) {
     out.push({
-      label: '가벼움',
-      winnerSlug: wa < wb ? 'a' : 'b',
-      reason: `${wa}g vs ${wb}g — ${Math.abs(wa - wb)}g 차이`,
-    });
-  } else if (wa !== undefined && wb !== undefined) {
-    out.push({
-      label: '가벼움',
-      winnerSlug: 'tie',
-      reason: `${wa}g vs ${wb}g — 거의 동일`,
+      label: '표기 무게',
+      winnerSlug: 'unranked',
+      reason: `${wa}g / ${wb}g · 기준 사이즈·공시/실측 조건은 각 모델의 출처를 확인하세요.`,
     });
   }
 
@@ -100,7 +94,7 @@ export function buildNarrative(a: Shoe, b: Shoe, category: string): string[] {
   const bn = `${b.brand} ${b.name}`;
   const paras: string[] = [];
 
-  let intro = `${withJosa(an, '과/와')} ${withJosa(bn, '은/는')} 모두 ${category} 카테고리로, 아래에서 입력된 무게·쿠셔닝·핏 정보를 비교합니다.`;
+  let intro = `${withJosa(an, '과/와')} ${withJosa(bn, '은/는')} 모두 ${category} 카테고리로, 아래에서 확인된 구조·무게·가격과 측정 조건을 비교합니다.`;
   if (a.description) intro += ` ${withJosa(an, '은/는')} ${a.description}`;
   if (b.description) intro += ` 반면 ${withJosa(bn, '은/는')} ${b.description}`;
   paras.push(intro);
@@ -108,13 +102,12 @@ export function buildNarrative(a: Shoe, b: Shoe, category: string): string[] {
   const diffs: string[] = [];
   const wa = a.specs?.weight, wb = b.specs?.weight;
   if (wa && wb) {
-    if (Math.abs(wa - wb) >= 10) diffs.push(`표기 무게는 ${withJosa(wa < wb ? an : bn, '이/가')} ${Math.abs(wa - wb)}g 낮습니다. 공시·실측·기준 사이즈는 각 상세 출처를 확인하세요`);
-    else diffs.push(`무게는 ${wa}g 대 ${wb}g로 거의 같습니다`);
+    diffs.push(`표기 무게는 ${an} ${wa}g, ${bn} ${wb}g입니다. 비교 전 기준 사이즈와 공시·실측 조건을 각 상세 출처에서 확인하세요`);
   }
   const ca = a.specs?.cushioning, cb = b.specs?.cushioning;
   if (ca && cb && Math.abs(ca - cb) >= 1) diffs.push(`쿠셔닝은 ${withJosa(ca > cb ? an : bn, '이/가')} 에디터 평가가 더 높습니다`);
   const pa = a.price, pb = b.price;
-  if (pa && pb && Math.abs(pa - pb) >= 10000) diffs.push(`가격은 ${withJosa(pa < pb ? an : bn, '이/가')} 약 ${formatManwon(Math.abs(pa - pb))} 저렴합니다`);
+  if (pa && pb) diffs.push(`확인 가격은 ${an} ${pa.toLocaleString('ko-KR')}원, ${bn} ${pb.toLocaleString('ko-KR')}원입니다. 확인일·상품·폭 옵션과 현재 판매 조건을 구분하세요`);
   if (diffs.length) paras.push(diffs.join('. ') + '.');
 
   const fit: string[] = [];
@@ -129,9 +122,9 @@ export function buildNarrative(a: Shoe, b: Shoe, category: string): string[] {
   const recs: string[] = [];
   const ra = fmtList(a.targetUsers?.recommended);
   const rb = fmtList(b.targetUsers?.recommended);
-  if (ra) recs.push(`${withJosa(an, '은/는')} ${ra} 같은 러너에게`);
-  if (rb) recs.push(`${withJosa(bn, '은/는')} ${rb} 같은 러너에게 잘 맞습니다`);
-  if (recs.length) paras.push(`종합하면 ${recs.join(', ')}. 본인 발 특성·목적이 애매하면 1분 러닝화 추천으로 후보를 좁혀보세요.`);
+  if (ra) recs.push(`${an}: ${ra}`);
+  if (rb) recs.push(`${bn}: ${rb}`);
+  if (recs.length) paras.push(`상세 페이지에 정리한 비교 관점: ${recs.join(' / ')}. 제품별 원문·미확인 항목을 함께 읽고, 러닝 목적·한국 와이드 옵션·예산으로 후보를 좁혀보세요.`);
 
   return paras;
 }
@@ -168,7 +161,7 @@ export function buildFaqs(a: Shoe, b: Shoe): { question: string; answer: string 
     faqs.push({ question: `가성비는 어느 쪽이 더 좋나요?`, answer: `에디터 가성비 점수는 ${withJosa(value, '이/가')} 우위입니다(${Math.max(va, vb)}/10, 가격 ${formatManwon(a.price)} vs ${formatManwon(b.price)}). 다만 가성비가 곧 본인에게 맞는 신발을 뜻하진 않으니 무게·쿠셔닝·발볼도 함께 보세요.` });
   }
 
-  faqs.push({ question: `러닝 입문자에게는 둘 중 무엇을 추천하나요?`, answer: '먼저 주로 뛸 노면과 용도, 예산으로 후보를 좁히고 양발의 착화감을 확인하세요. 에디터의 쿠셔닝·안정성 점수만으로 개인에게 맞는 신발이나 부상 예방 효과를 판정할 수 없습니다.' });
+  faqs.push({ question: `러닝 입문자에게는 둘 중 무엇을 추천하나요?`, answer: '먼저 주로 뛸 노면과 용도, 예산으로 후보를 좁히고 양발의 착화감을 확인하세요. 제품 분류나 표기 무게 하나로 개인 적합성·부상 예방 효과를 판정하지 않습니다. 무게는 기준 사이즈와 공시·실측 조건도 함께 확인하세요.' });
 
   return faqs;
 }

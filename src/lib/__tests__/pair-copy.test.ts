@@ -10,18 +10,22 @@ describe('buildVerdicts', () => {
   it('필요한 값이 확인된 항목만 판정한다 (동률 포함)', () => {
     for (const { a, b } of sample) {
       const labels = buildVerdicts(a, b).map((v) => v.label);
-      expect(labels).toContain('가벼움');
+      expect(labels).toContain('표기 무게');
       if (a.price !== undefined && b.price !== undefined && a.priceAnalysis?.valueRating !== undefined && b.priceAnalysis?.valueRating !== undefined) expect(labels).toContain('가성비');
       else expect(labels).not.toContain('가성비');
       expect(new Set(labels).size).toBe(labels.length);
     }
   });
 
-  it('무게 10g 미만 차이는 동률', () => {
+  it('같거나 다른 무게도 측정 조건 확인 없이 승패·동률을 만들지 않는다', () => {
     const { a, b } = pairs[0];
-    const same = { ...b, specs: { ...b.specs!, weight: a.specs!.weight + 5 } } as Shoe;
-    const light = buildVerdicts(a, same).find((v) => v.label.startsWith('가벼움'))!;
-    expect(light.winnerSlug).toBe('tie');
+    for (const gap of [0, 5, 50]) {
+      const other = { ...b, specs: { ...b.specs!, weight: a.specs!.weight + gap } } as Shoe;
+      const weight = buildVerdicts(a, other).find((v) => v.label === '표기 무게')!;
+      expect(weight.winnerSlug).toBe('unranked');
+      expect(weight.reason).toContain('기준 사이즈·공시/실측 조건');
+      expect(weight.reason).toContain(`${other.specs!.weight}g`);
+    }
   });
 
   it('가격은 만원 단위로 표기한다', () => {
@@ -41,10 +45,13 @@ describe('buildNarrative', () => {
     }
   });
 
-  it('가격이 1만원 이상 갈리면 "약 N만원 저렴" 문장이 붙는다', () => {
+  it('가격은 두 모델의 확인 금액·상품·시점 조건을 함께 표시한다', () => {
     const pair = pairs.find((p) => p.a.price && p.b.price && Math.abs(p.a.price - p.b.price) >= 10000)!;
     const text = buildNarrative(pair.a, pair.b, pair.category).join(' ');
-    expect(text).toMatch(/약 \d+만원 저렴/);
+    expect(text).toContain(`${pair.a.price!.toLocaleString('ko-KR')}원`);
+    expect(text).toContain(`${pair.b.price!.toLocaleString('ko-KR')}원`);
+    expect(text).toContain('확인일·상품·폭 옵션');
+    expect(text).not.toMatch(/약 \d+만원 저렴/);
   });
 });
 
@@ -99,7 +106,7 @@ describe('검증되지 않은 비교 주장 차단', () => {
     const { a, b } = pairs[0];
     const missing = { ...a, specs: undefined };
     const verdicts = buildVerdicts(missing, b);
-    expect(verdicts.some(v => /가벼움|쿠셔닝|안정성/.test(v.label))).toBe(false);
+    expect(verdicts.some(v => /표기 무게|쿠셔닝|안정성/.test(v.label))).toBe(false);
     expect(JSON.stringify(verdicts)).not.toContain('999g');
     const noPrice = { ...a, price: undefined };
     expect(buildFaqs(noPrice, b).some(f => f.question.includes('가성비'))).toBe(false);

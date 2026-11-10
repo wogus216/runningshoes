@@ -88,7 +88,7 @@ function MobileCompareCard({ shoe, onRemove }: { shoe: Shoe; onRemove?: (id: str
         <div className="grid grid-cols-4 gap-2 mt-4">
           <div className="rounded-[4px] bg-sky-50 p-2 text-center">
             <p className="text-[10px] text-slate-500">가격</p>
-            <p className="font-bold text-xs">{shoe.priceAnalysis?.msrp ? `${Math.round(shoe.priceAnalysis.msrp / 10000)}만` : '-'}</p>
+            <p className="font-bold text-xs">{(shoe.priceAnalysis?.msrp ?? shoe.price) === undefined ? '-' : `${(shoe.priceAnalysis?.msrp ?? shoe.price)!.toLocaleString('ko-KR')}원`}</p>
           </div>
           <div className="rounded-[4px] bg-sky-50 p-2 text-center">
             <p className="text-[10px] text-slate-500">평점</p>
@@ -140,7 +140,7 @@ function MobileCompareCard({ shoe, onRemove }: { shoe: Shoe; onRemove?: (id: str
               </div>
               <div className="rounded-[4px] border border-sky-100 bg-white p-2 text-center">
                 <p className="text-xs text-slate-500">드롭</p>
-                <p className="font-semibold text-sm">{shoe.biomechanics?.drop !== undefined ? `${shoe.biomechanics.drop}mm` : '-'}</p>
+                <p className="font-semibold text-sm">{(shoe.biomechanics?.drop ?? shoe.specs?.drop) === undefined ? '-' : `${shoe.biomechanics?.drop ?? shoe.specs?.drop}mm`}</p>
               </div>
               <div className="rounded-[4px] border border-sky-100 bg-white p-2 text-center">
                 <p className="text-xs text-slate-500">카본</p>
