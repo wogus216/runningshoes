@@ -17,7 +17,7 @@ import type { MarathonListEvent } from '@/types/marathon';
  */
 export function generateMetadata(): Metadata {
   const total = getMarathonEvents().length;
-  const description = `국내 마라톤 대회 ${total}개를 접수 시점 순으로 정리했습니다. 지금 접수 중인 대회가 맨 위, 그다음이 곧 열리는 대회입니다. 대회별 참가비·거리·제한시간·코스 난이도를 확인하고 권역·거리로 좁혀보세요.`;
+  const description = `국내·일본 마라톤 대회 ${total}개를 접수 상태와 일정 확인 여부로 정리했습니다. 대회별 확인한 참가 안내와 출처를 살펴보고 권역·거리로 좁혀보세요.`;
 
   return {
     // 사이트명은 app/layout.tsx 의 title.template(`%s | ${SITE_NAME}`)이 붙인다 — 여기서 또 붙이면 두 번 나온다
@@ -79,9 +79,9 @@ export default function MarathonPage() {
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'ItemList',
-    name: '2026 한국 마라톤 대회 일정',
-    description: '2026년 한국 마라톤 대회 일정 및 참가 정보',
-    numberOfItems: events.length,
+    name: '마라톤 주요 대회 일정',
+    description: '국내·일본 주요 마라톤 대회 일정 및 확인한 참가 정보',
+    numberOfItems: majorEvents.length,
     itemListElement: majorEvents.map((event, index) => ({
       '@type': 'ListItem',
       position: index + 1,
@@ -97,36 +97,22 @@ export default function MarathonPage() {
           name: event.location,
           address: {
             '@type': 'PostalAddress',
-            addressCountry: 'KR',
+            addressCountry: ['오사카', '교토', '도쿄'].includes(event.region) ? 'JP' : 'KR',
             addressRegion: event.region,
           },
         },
         sport: 'Marathon',
         ...(event.description && { description: event.description }),
         ...(event.website && { url: event.website }),
-        ...(event.raceInfo?.expectedParticipants && {
-          maximumAttendeeCapacity: event.raceInfo.expectedParticipants,
+        ...(event.raceInfo?.entryFees?.length && {
+          offers: event.raceInfo.entryFees.map((fee) => ({
+            '@type': 'Offer',
+            name: fee.distance,
+            price: fee.fee,
+            priceCurrency: 'KRW',
+            ...(event.website && { url: event.website }),
+          })),
         }),
-        offers: event.raceInfo?.entryFees && event.raceInfo.entryFees.length > 0
-          ? event.raceInfo.entryFees.map((fee) => ({
-              '@type': 'Offer',
-              name: fee.distance,
-              price: fee.fee,
-              priceCurrency: 'KRW',
-              availability: event.status === '접수중'
-                ? 'https://schema.org/InStock'
-                : 'https://schema.org/SoldOut',
-            }))
-          : {
-              '@type': 'Offer',
-              url: event.website || `${SITE_URL}/marathon/${event.id}`,
-              priceCurrency: 'KRW',
-              availability: event.status === '접수중'
-                ? 'https://schema.org/InStock'
-                : event.status === '마감'
-                  ? 'https://schema.org/SoldOut'
-                  : 'https://schema.org/PreOrder',
-            },
       },
     })),
   };
@@ -161,7 +147,7 @@ export default function MarathonPage() {
                   2026 마라톤 대회 일정
                 </h1>
                 <p className="max-w-2xl break-keep text-sm leading-7 text-slate-600 md:text-base">
-                  지금 접수 중인 대회부터 먼저 보여줍니다. 권역·거리로 좁히면 신청할 수 있는 대회만 남습니다.
+                  지금 접수 중인 대회부터 먼저 보여줍니다. 권역·거리로 관심 있는 대회를 좁혀보세요.
                 </p>
               </div>
             </div>
@@ -169,7 +155,7 @@ export default function MarathonPage() {
             <div className="grid gap-3 sm:grid-cols-2">
               <div className="rounded-[4px] border border-sky-100 bg-white/86 p-4">
                 <p className="text-sm font-semibold text-slate-950">시점 중심</p>
-                <p className="mt-2 text-xs leading-6 text-slate-600">접수중·곧 열림·마감·지난 대회로 나눠, 지금 참가할 수 있는 대회를 맨 위에 둡니다.</p>
+                <p className="mt-2 text-xs leading-6 text-slate-600">접수 상태와 일정 확인 여부로 나눠, 지금 접수 중인 대회를 맨 위에 둡니다.</p>
               </div>
               <div className="rounded-[4px] border border-border bg-[var(--navy)] p-4 text-white">
                 <p className="text-sm font-semibold">탐색 속도</p>
