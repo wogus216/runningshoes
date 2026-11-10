@@ -39,138 +39,61 @@ export const posts_2026_06: BlogPost[] = [
     ],
   },
   {
-    id: 'running-shoe-size-conversion-chart-korea-2026',
-    slug: 'running-shoe-size-conversion-chart-korea-2026',
-    title: '러닝화 사이즈 변환표 (US·cm·EU·UK) | "US 9는 몇 mm?" — 한국 러너가 정사이즈 고르는 법',
-    description: '나이키 US 9는 270mm, 아디다스 UK 8.5는? 헷갈리는 러닝화 사이즈를 US·cm(mm)·EU·UK로 한 번에 변환합니다. 핵심은 숫자 암기가 아니라 "내 발 길이(mm) + 러닝 여유 5~10mm"로 고르는 것. 발 길이 재는 법, 러닝화는 왜 크게 신는지, 브랜드별 핏 편차(나이키는 좁고 뉴발은 넉넉)까지 한국 러너 기준으로 정리합니다.',
-    thumbnail: '/images/blog/running-shoe-size-conversion-chart-korea-2026.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-06-30',
-    category: 'guide' as const,
-    readingTime: 8,
-    tags: ['러닝화 사이즈', '신발 사이즈 변환', 'US 사이즈', '발 길이 측정', '러닝화 핏', '사이즈 가이드'],
-    content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li>러닝화 사이즈는 <strong>US·EU·UK 숫자를 외울 필요 없이 "내 발 길이(mm)"</strong> 하나만 알면 됩니다. 한국 표기(mm)가 곧 발 실측 길이 기준이라 가장 직관적입니다</li>
-    <li><strong>러닝화는 평소 신발보다 5~10mm 크게</strong> 신는 게 정석입니다 — 장거리·내리막에서 발이 붓고 앞으로 쏠려, 엄지발가락 앞에 약 1cm 여유가 없으면 발톱이 멍들거나 빠집니다</li>
-    <li><strong>길이(사이즈)는 브랜드 간 큰 차이가 없지만 발볼·볼륨은 다릅니다</strong> — 나이키·아디다스는 좁은 편, 뉴발란스·미즈노는 넉넉, 아식스는 표준. 발볼이 고민이면 사이즈업보다 <strong>와이드</strong>가 정답입니다</li>
-  </ul>
-</div>
+    id: "running-shoe-size-conversion-chart-korea-2026",
+    slug: "running-shoe-size-conversion-chart-korea-2026",
+    title: "러닝화 사이즈 변환표: US·UK·EU와 실제 발 길이는 다르다",
+    description: "Nike·adidas 공식 표를 나란히 대조했습니다. 라벨 CM·JP를 발 실측과 구분하고 무조건 5~10mm 더하는 방식의 한계를 설명합니다.",
+    thumbnail: "/images/blog/verified-running-shoe-size-conversion-chart-korea-2026-20261110.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-06-30",
+    category: "guide",
+    readingTime: 6,
+    tags: [
+      "러닝화 사이즈",
+      "신발 사이즈 변환",
+      "US 사이즈",
+      "발 길이 측정",
+      "러닝화 핏",
+      "사이즈 가이드"
+    ],
+    content: `<p><small>2026년 11월 10일 공식 사이즈표 대조. 표는 남성 기준 일부 행이며, 시착 질문은 편집 제안입니다.</small></p>
 
-<div class="callout info">
-  <span class="callout-icon">📏</span>
-  <div class="callout-body">
-    <p class="callout-title">"US 9가 도대체 몇 mm야?"</p>
-    <p>해외 직구나 리뷰를 보다 보면 US·EU·UK 사이즈가 뒤섞여 헷갈리죠. 결론부터 말하면 — <strong>한국 mm 표기가 발 길이(mondopoint) 기준이라 가장 정확</strong>합니다. US 9 ≒ 270mm, US 10 ≒ 280mm처럼요. 아래 변환표로 한 번에 맞춰보고, 그다음 "내 발에 맞게 고르는 법"까지 정리하겠습니다.</p>
-  </div>
-</div>
+<p>발을 재서 270mm가 나왔으니 신발도 270을 고르면 될까? 같은 US 9라면 다른 브랜드의 UK·EU도 같을까? 공식 사이즈표를 보면 둘 다 단순하지 않다. <strong>발 실측, 상자·라벨의 사이즈, 실제 내부 공간</strong>을 같은 숫자로 취급하지 않아야 한다.</p>
+<h2>남성 US 8·9·10, 두 공식 표의 차이</h2>
+<table><thead><tr><th>공식 표</th><th>US 남성</th><th>UK</th><th>EU</th><th>표의 실제 발 길이</th><th>라벨 계열 표기</th></tr></thead><tbody>
+<tr><td>Nike</td><td>8</td><td>7</td><td>41</td><td>25.4cm</td><td>CM/JP 26</td></tr>
+<tr><td>Nike</td><td>9</td><td>8</td><td>42.5</td><td>26.2cm</td><td>CM/JP 27</td></tr>
+<tr><td>Nike</td><td>10</td><td>9</td><td>44</td><td>27.1cm</td><td>CM/JP 28</td></tr>
+<tr><td>adidas</td><td>8</td><td>7.5</td><td>41⅓</td><td>25.5cm</td><td>JP 260</td></tr>
+<tr><td>adidas</td><td>9</td><td>8.5</td><td>42⅔</td><td>26.3cm</td><td>JP 270</td></tr>
+<tr><td>adidas</td><td>10</td><td>9.5</td><td>44</td><td>27.1cm</td><td>JP 280</td></tr></tbody></table>
+<p>2026년 11월 10일 <a href="https://www.nike.com/size-fit/mens-footwear" target="_blank" rel="noopener noreferrer">Nike 공식 남성 신발 사이즈표</a>와 <a href="https://www.adidas.com/us/help/size_charts/men-shoes" target="_blank" rel="noopener noreferrer">adidas 공식 남성 신발 사이즈표</a>를 읽어 옮긴 일부 행이다. Nike의 Foot Length(cm), adidas의 Heel-toe(cm)를 사용했다. 표는 남성 US 기준이며 여성·아동·유니섹스 표와 섞지 않는다. Nike는 상자·라벨의 CM 표기가 실제 발 길이와 다르다고 직접 명시한다.</p>
+<h2>발 길이를 잰 뒤 다시 10mm를 더하면?</h2>
+<p>브랜드 표가 실측 발 길이를 사이즈에 대응시켰는데, 여기에 일률적으로 여유 길이를 더해 다시 표를 찾으면 다른 크기를 선택할 수 있다. 예를 들어 Nike의 US 9 행에서 발 길이 26.2cm와 CM/JP 27을 서로 바꿔 읽으면 기준부터 달라진다. 그렇다고 두 수치의 차이가 그 신발 내부 여유 길이를 정확히 증명하는 것도 아니다.</p>
+<p>따라서 ‘발 실측 + 5~10mm가 정답’, ‘평소 신발보다 항상 반 사이즈 크게’라는 공통 공식 대신, <strong>해당 브랜드의 발 길이 열과 모델별 핏 안내</strong>에서 후보를 찾고 실제 착화로 결정하자.</p>
+<h2>측정할 때는 양쪽 발을 확인</h2>
+<p>Nike의 측정 안내는 평평한 곳에서 체중을 균등하게 싣고, 뒤꿈치부터 가장 긴 발가락까지의 길이를 양쪽 모두 재며 긴 쪽을 참고하도록 설명한다. 선을 표시하는 펜을 비스듬히 기울여 길이를 늘리지 않도록 주의하자. 사이즈 경계에 걸리면 그 브랜드의 경계값 안내를 따르고, 제품 페이지의 별도 핏 설명도 함께 확인한다.</p>
+<h2>길이·폭·높이는 따로 질문하기</h2>
+<p>아래는 시착 비교를 위한 편집 제안이다. 특정 브랜드 전체를 좁거나 넓다고 분류한 측정 결과는 아니다.</p>
+<ul><li><strong>길이:</strong> 서 있을 때와 걸을 때 가장 긴 발가락이 앞쪽에 부딪히는지 확인한다.</li><li><strong>폭:</strong> 앞발 양옆이 눌리는지 살핀다. 길이만 늘리면 맞는다는 가정 대신 해당 모델의 폭 옵션과 비교한다.</li><li><strong>높이와 고정:</strong> 발등 압박, 중족부 고정, 뒤꿈치 들림을 별도로 확인한다.</li><li><strong>구매 조건:</strong> 실제 사용할 양말과 비교하고, 반품·교환 조건을 미리 확인한다.</li></ul>
+<p>와이드 코드도 남녀와 브랜드의 기준을 확인해야 한다. 동일한 ‘와이드’ 표시가 모든 모델에서 동일한 내부 공간을 뜻하지 않는다. <a href="/blog/wide-feet-running-shoes-korea">발볼과 모델별 폭을 확인하는 가이드</a>에서 비교를 이어갈 수 있다.</p>
 
-<h2>사이즈 변환표 (남성)</h2>
-<table>
-  <thead><tr><th>cm(mm)</th><th>US</th><th>EU</th><th>UK</th></tr></thead>
-  <tbody>
-    <tr><td>250mm</td><td>7</td><td>40</td><td>6</td></tr>
-    <tr><td>255mm</td><td>7.5</td><td>40.5</td><td>6.5</td></tr>
-    <tr><td>260mm</td><td>8</td><td>41</td><td>7</td></tr>
-    <tr><td>265mm</td><td>8.5</td><td>42</td><td>7.5</td></tr>
-    <tr><td><strong>270mm</strong></td><td><strong>9</strong></td><td><strong>42.5</strong></td><td><strong>8</strong></td></tr>
-    <tr><td>275mm</td><td>9.5</td><td>43</td><td>8.5</td></tr>
-    <tr><td>280mm</td><td>10</td><td>44</td><td>9</td></tr>
-    <tr><td>285mm</td><td>10.5</td><td>44.5</td><td>9.5</td></tr>
-    <tr><td>290mm</td><td>11</td><td>45</td><td>10</td></tr>
-    <tr><td>295mm</td><td>11.5</td><td>45.5</td><td>10.5</td></tr>
-    <tr><td>300mm</td><td>12</td><td>46</td><td>11</td></tr>
-  </tbody>
-</table>
-
-<h2>사이즈 변환표 (여성)</h2>
-<table>
-  <thead><tr><th>cm(mm)</th><th>US</th><th>EU</th><th>UK</th></tr></thead>
-  <tbody>
-    <tr><td>225mm</td><td>5.5</td><td>36</td><td>3.5</td></tr>
-    <tr><td>230mm</td><td>6</td><td>36.5</td><td>4</td></tr>
-    <tr><td>235mm</td><td>6.5</td><td>37.5</td><td>4.5</td></tr>
-    <tr><td>240mm</td><td>7</td><td>38</td><td>5</td></tr>
-    <tr><td>245mm</td><td>7.5</td><td>38.5</td><td>5.5</td></tr>
-    <tr><td>250mm</td><td>8</td><td>39</td><td>6</td></tr>
-    <tr><td>255mm</td><td>8.5</td><td>40</td><td>6.5</td></tr>
-    <tr><td>260mm</td><td>9</td><td>40.5</td><td>7</td></tr>
-    <tr><td>265mm</td><td>9.5</td><td>41</td><td>7.5</td></tr>
-    <tr><td>270mm</td><td>10</td><td>42</td><td>8</td></tr>
-  </tbody>
-</table>
-<p><small>※ 일반적인 변환 기준입니다. 브랜드·모델에 따라 EU·UK 표기가 ±0.5 정도 다를 수 있으니, mm(발 길이)를 기준으로 보는 게 가장 안전합니다.</small></p>
-
-<h2>내 발 길이부터 재자 (1분)</h2>
-<p>변환표를 제대로 쓰려면 <strong>내 발 길이(mm)</strong>를 정확히 알아야 합니다.</p>
-<ol>
-  <li>벽에 발뒤꿈치를 붙이고 <strong>종이 위에 선다</strong>(체중을 실어야 정확)</li>
-  <li>가장 긴 발가락 끝에 <strong>수직으로 선을 긋는다</strong></li>
-  <li>뒤꿈치~선까지 거리를 mm로 잰다 → 그게 <strong>내 발 길이</strong></li>
-  <li><strong>양발을 다 재서 더 큰 쪽</strong>을 기준으로(보통 좌우 차이가 있음)</li>
-  <li><strong>저녁에 측정</strong>한다 — 발은 오후·저녁에 붓기 때문</li>
-</ol>
-
-<div class="callout success">
-  <span class="callout-icon">👟</span>
-  <div class="callout-body">
-    <p class="callout-title">러닝화 = 발 길이 + 5~10mm</p>
-    <p>러닝화는 평소 구두·캐주얼화보다 <strong>5~10mm 크게</strong> 신습니다. 예를 들어 발 길이가 263mm라면, 러닝화는 <strong>270mm(US 9)</strong>가 보통 맞습니다. 이유는 — 달릴 때 발이 앞으로 쏠리고(특히 내리막), 장거리에서 발이 붓기 때문입니다. <strong>엄지발가락 끝과 신발 앞 사이에 약 1cm(엄지손가락 너비)</strong>의 여유가 기준이에요. 이 여유가 없으면 발톱이 검게 멍들거나 빠지는 "러너 발톱"이 생깁니다.</p>
-  </div>
-</div>
-
-<h2>브랜드별 핏 편차 — 길이는 같아도 발볼이 다르다</h2>
-<p>같은 270mm라도 브랜드마다 <strong>발볼(가로폭)과 볼륨</strong>이 달라 체감 핏이 다릅니다. 길이 자체는 표준에 가깝지만, 발볼 넓은 한국 러너는 이 차이가 중요합니다.</p>
-<table>
-  <thead><tr><th>브랜드</th><th>발볼·핏 경향</th></tr></thead>
-  <tbody>
-    <tr><td><strong>나이키</strong></td><td>좁은 편 — 발볼 넓으면 압박, 와이드 옵션도 적음</td></tr>
-    <tr><td><strong>아디다스</strong></td><td>좁은 편 (특히 아디제로 레이싱 라인)</td></tr>
-    <tr><td><strong>아식스</strong></td><td>표준~약간 넉넉, 와이드 옵션 다양</td></tr>
-    <tr><td><strong>뉴발란스</strong></td><td>넉넉 + 2E/4E 와이드가 가장 풍부</td></tr>
-    <tr><td><strong>호카</strong></td><td>토박스는 좁은 편이나 길이는 정사이즈, 와이드 있음</td></tr>
-    <tr><td><strong>미즈노·브룩스</strong></td><td>대체로 넉넉한 편</td></tr>
-    <tr><td><strong>온(On)</strong></td><td>좁은 편 + 와이드 옵션 거의 없음</td></tr>
-  </tbody>
-</table>
-<p>발볼이 넓다면 <strong>사이즈를 올리는 것보다 와이드(2E·4E)를 고르는 게 정답</strong>입니다. 사이즈업하면 발볼은 조금 넓어지지만 길이가 헐렁해져 발이 신발 안에서 놀고, 오히려 물집·발톱 문제가 생깁니다. 자세한 건 <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너 가이드</a>를 보세요.</p>
-
-<h2>사이즈 고를 때 체크 5</h2>
-<table>
-  <thead><tr><th>체크</th><th>이유</th></tr></thead>
-  <tbody>
-    <tr><td>발 길이 + 5~10mm</td><td>발가락 앞 1cm 여유 (발 쏠림·붓기)</td></tr>
-    <tr><td>저녁에 신어보기</td><td>오후·저녁에 발이 가장 큼</td></tr>
-    <tr><td>러닝 양말 신고 측정</td><td>두꺼운 양말이면 핏이 달라짐</td></tr>
-    <tr><td>발볼 넓으면 와이드 우선</td><td>사이즈업은 길이만 헐렁해짐</td></tr>
-    <tr><td>양발 큰 쪽 기준</td><td>좌우 발은 보통 다름</td></tr>
-  </tbody>
-</table>
-
-<h2>한국 러너 FAQ</h2>
-<div class="faq">
-  <p class="faq-q">Q. 평소 270mm 신는데 러닝화도 270mm 사면 되나요?</p>
-  <p class="faq-a">A. 평소 신발이 이미 여유 있게 270이면 맞을 수 있지만, 발 실측이 263mm 같은 식이라면 러닝화는 270~275를 권합니다. 핵심은 "내가 신던 사이즈"가 아니라 <strong>발 실측 + 5~10mm</strong>입니다. 모델·브랜드마다 다르니 가능하면 착화 후 결정하세요.</p>
-  <p class="faq-q">Q. US랑 mm 중 뭘 믿어야 하나요?</p>
-  <p class="faq-a">A. <strong>mm(발 길이)를 믿으세요.</strong> US·EU·UK는 브랜드마다 표기가 조금씩 달라 ±0.5 오차가 생깁니다. 반면 mm는 발 실측 기준이라 가장 일관적입니다. 직구할 때도 그 모델의 "mm 표기"를 찾아 맞추는 게 안전합니다.</p>
-  <p class="faq-q">Q. 발볼이 넓은데 반 사이즈 올리면 되나요?</p>
-  <p class="faq-a">A. 임시방편은 되지만 권하지 않습니다. 사이즈업은 길이가 같이 늘어 발이 신발 안에서 미끄러지고, 장거리에서 물집·발톱 문제를 키웁니다. <a href="/blog/wide-feet-running-shoes-korea">와이드(2E·4E) 옵션</a>이 있는 모델을 고르는 게 정답입니다.</p>
-  <p class="faq-q">Q. 발 길이 모르면 어떻게 시작하나요?</p>
-  <p class="faq-a">A. 위 "발 길이 재기" 1분 측정을 먼저 하세요. 그게 어렵다면, 발볼·아치·목적을 입력하면 후보를 추려주는 <a href="/recommend">맞춤 추천</a>으로 방향부터 잡아도 됩니다.</p>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">🔗</span>
-  <div class="callout-body">
-    <p class="callout-title">한 걸음 더</p>
-    <p>발볼이 고민이면 <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너 가이드</a>, 평발·과내전이면 <a href="/blog/stability-running-shoes-overpronation-flat-feet-2026">안정화 가이드</a>를 보세요. 발 조건·목적에 맞는 신발 후보는 <a href="/recommend">맞춤 추천</a>에서, 여러 모델을 핏·스펙으로 나란히 보려면 <a href="/compare">비교 도구</a>를 이용하세요.</p>
-  </div>
-</div>
-
-<p class="post-disclaimer"><small>※ 변환표는 일반적 기준이며 브랜드·모델에 따라 ±0.5 사이즈 차이가 날 수 있습니다. 가능하면 구매 전 착화를 권장하며, 직구 시 해당 모델의 mm(발 길이) 표기를 기준으로 맞추세요.</small></p>
-`,
+<h2>자주 묻는 질문</h2><h3>US 9는 무조건 270mm인가요?</h3><p>남녀 구분과 브랜드 표를 확인해야 합니다. 이 글의 Nike 남성 표에서 US 9는 CM/JP 27이지만 실제 발 길이 열은 26.2cm입니다. 라벨과 실측을 같게 읽으면 안 됩니다.</p><h3>발 길이에 10mm를 더해서 표를 찾나요?</h3><p>공통 공식으로 적용하지 않습니다. 먼저 해당 브랜드의 실제 발 길이 열에서 후보를 찾고, 모델별 핏 안내와 시착으로 확인해야 합니다.</p><h3>발볼이 넓으면 사이즈만 키우면 되나요?</h3><p>길이와 폭, 발등 높이와 고정감은 따로 확인해야 합니다. 해당 모델의 폭 옵션과 다른 사이즈를 비교하되 하나의 방식이 모두에게 맞는다고 단정하지 않습니다.</p>`,
+    updatedAt: "2026-11-10",
+    faqs: [
+      {
+        "question": "US 9는 무조건 270mm인가요?",
+        "answer": "남녀 구분과 브랜드 표를 확인해야 합니다. 이 글의 Nike 남성 표에서 US 9는 CM/JP 27이지만 실제 발 길이 열은 26.2cm입니다. 라벨과 실측을 같게 읽으면 안 됩니다."
+      },
+      {
+        "question": "발 길이에 10mm를 더해서 표를 찾나요?",
+        "answer": "공통 공식으로 적용하지 않습니다. 먼저 해당 브랜드의 실제 발 길이 열에서 후보를 찾고, 모델별 핏 안내와 시착으로 확인해야 합니다."
+      },
+      {
+        "question": "발볼이 넓으면 사이즈만 키우면 되나요?",
+        "answer": "길이와 폭, 발등 높이와 고정감은 따로 확인해야 합니다. 해당 모델의 폭 옵션과 다른 사이즈를 비교하되 하나의 방식이 모두에게 맞는다고 단정하지 않습니다."
+      }
+    ],
   },
   {
     id: "it-band-syndrome-running-shoes-2026",
@@ -839,145 +762,56 @@ export const posts_2026_06: BlogPost[] = [
     ],
   },
   {
-    id: 'wet-running-shoes-drying-care-guide-korea',
-    slug: 'wet-running-shoes-drying-care-guide-korea',
-    title: '장마철 젖은 러닝화 빠르게 살리는 법 | 건조·냄새·세탁 — 드라이어·세탁기가 신발을 망치는 이유',
-    description: '우중런 한 번에 흠뻑 젖은 러닝화, 어떻게 말려야 할까요? 신문지·선풍기·신발건조기 건조법부터 직사광선·드라이어·세탁기를 절대 쓰면 안 되는 이유(미드솔 폼 변형·접착제 분리)까지. 냄새·곰팡이 잡는 법, 2켤레 로테이션, 언제 교체할지 장마철 러닝화 관리를 한 번에 정리했습니다.',
-    thumbnail: '/images/blog/wet-running-shoes-drying-care-guide-korea.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-06-25',
-    category: 'guide' as const,
-    readingTime: 8,
-    tags: ['장마철 러닝', '러닝화 관리', '신발 건조', '러닝화 세탁', '러닝화 수명', '우중런'],
-    content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>젖은 러닝화는 '열'이 아니라 '바람'으로 말립니다.</strong> 안창·끈을 빼고 신문지로 속 수분을 뺀 뒤, 통풍 그늘에서 선풍기·서큘레이터 바람을 쐬는 게 정석입니다</li>
-    <li><strong>드라이어·직사광선·세탁기·라디에이터는 금지.</strong> 고열이 EVA·PEBA 미드솔 폼을 변형·경화시키고, 미드솔과 아웃솔을 붙인 접착제를 녹여 밑창이 떨어집니다</li>
-    <li><strong>장마철엔 2켤레 로테이션이 답.</strong> 폼이 다시 부풀고 신발이 완전히 마르는 데 하루 이상 걸리므로, 번갈아 신어야 수명도 반발력도 지킵니다</li>
-  </ul>
-</div>
+    id: "wet-running-shoes-drying-care-guide-korea",
+    slug: "wet-running-shoes-drying-care-guide-korea",
+    title: "비에 젖은 러닝화 말리는 법: 열보다 분리·흡수·자연 건조",
+    description: "Nike·ASICS·Brooks 관리 원문으로 세척과 건조를 구분했습니다. 전자레인지·드라이어·UV 기기 효과를 임의로 보장하지 않습니다.",
+    thumbnail: "/images/blog/verified-wet-running-shoes-drying-care-guide-korea-20261110.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-06-25",
+    category: "guide",
+    readingTime: 6,
+    tags: [
+      "장마철 러닝",
+      "러닝화 관리",
+      "신발 건조",
+      "러닝화 세탁",
+      "러닝화 수명",
+      "우중런"
+    ],
+    content: `<p><small>2026년 11월 10일 제조사 관리 원문 대조. 제품별 관리표를 우선하며, 특정 건조기의 성능 시험을 실시한 글은 아닙니다.</small></p>
 
-<div class="callout info">
-  <span class="callout-icon">🌧️</span>
-  <div class="callout-body">
-    <p class="callout-title">장마가 시작됐습니다</p>
-    <p>우중런 자체의 안전·페이스 요령은 <a href="/blog/rainy-season-running-guide-korea">장마철 우중런 가이드</a>에서 다뤘습니다. 이 글은 <strong>달리고 난 뒤 '젖은 신발을 어떻게 살리느냐'</strong>에만 집중합니다. 한 번 잘못 말리면 비싼 러닝화 수명이 몇 달씩 깎이거든요.</p>
-  </div>
-</div>
+<p>내일도 달릴 예정인데 신발이 흠뻑 젖었다면 열로 시간을 줄이고 싶어진다. 하지만 빠르게 마른 것처럼 보이는 상태와 제품에 맞게 건조한 상태는 다르다. 제조사 관리표를 우선 확인하고, 외부 오염 제거와 내부 건조를 나눠 진행하자.</p>
+<h2>세 브랜드가 공통으로 피하라고 하는 것</h2>
+<p><a href="https://www.nike.com/a/how-to-clean-shoes" target="_blank" rel="noopener noreferrer">Nike의 공식 신발 세척 안내</a>, <a href="https://www.asics.com/gb/en-gb/running-advice/running-shoe-cleaning-and-maintenance/" target="_blank" rel="noopener noreferrer">ASICS의 러닝화 관리 안내</a>, <a href="https://emea-support.brooksrunning.com/hc/en-us/articles/360042959472-How-do-I-clean-my-shoes" target="_blank" rel="noopener noreferrer">Brooks 고객지원의 세척·건조 안내</a>는 세탁기·건조기 사용을 권하지 않고 자연 건조를 안내한다. ASICS는 난방기와 건조기의 열이 접착부를 손상할 수 있다고 설명하며, Brooks는 강한 빛과 열을 피한 서늘한 실내 건조를 제안한다. 이는 각 브랜드의 관리 지침이며, 모든 폼의 열 변형 온도를 시험한 자료는 아니다.</p>
+<h2>집에 돌아오면 이 순서로</h2>
+<ol><li><strong>제품별 주의사항부터 확인한다.</strong> 가죽·스웨이드·방수 소재는 세정제와 관리 방식이 다를 수 있다. 분리가 어려운 안창을 억지로 떼지 않는다.</li><li><strong>분리 가능한 부품을 나눈다.</strong> 안창을 꺼내 따로 말리고, 끈을 풀거나 분리해 신발 안쪽을 열어 둔다.</li><li><strong>흙과 잔여물을 부드럽게 제거한다.</strong> 마른 흙은 부드러운 솔로 털고, 필요한 부분만 제품 안내에 맞춰 닦는다. ASICS는 갑피와 안창 전체를 물에 담가 두는 방식을 피하라고 안내한다.</li><li><strong>흡수성 종이로 내부 수분을 받는다.</strong> ASICS는 티슈·종이 타월로 수분을 흡수한 뒤 제거하고 자연 건조하도록 안내한다. 잉크 이염이 걱정되면 인쇄되지 않은 종이를 고르자.</li><li><strong>안과 밖을 충분히 말린다.</strong> Nike는 실온에서 완전히 말린 뒤 다시 신도록 안내한다. 안창도 마른 뒤에 넣는다.</li></ol>
+<h2>‘몇 시간이면 완성’보다 상태 확인</h2>
+<p>Nike는 많은 신발이 완전히 마르는 데 최소 8시간 정도 걸릴 수 있다고 설명하고, Brooks는 며칠이 걸릴 수도 있다고 안내한다. 서로 다른 조건의 일반 안내이므로 이를 고정 시간표로 만들지 않았다. 젖은 정도, 재료, 실내 습도와 공기 흐름에 따라 달라질 수 있다. 겉이 말랐다는 이유만으로 내부까지 건조됐다고 판단하지 말자.</p>
+<table><thead><tr><th>상황</th><th>선택</th></tr></thead><tbody>
+<tr><td>안창이나 발가락 쪽이 아직 축축하다</td><td>건조를 이어가고, 다음 활동은 마른 신발 사용이나 일정 조정 고려</td></tr>
+<tr><td>건조 후에도 냄새가 남는다</td><td>안창의 세척·건조 상태와 제품 관리표 확인</td></tr>
+<tr><td>접착이 벌어지거나 형태가 변했다</td><td>더 강한 열이나 세척으로 해결하려 하지 말고 제품 상태 확인</td></tr></tbody></table>
+<h2>신발 건조기와 UV 기능은 별도 검증이 필요하다</h2>
+<p>‘저온’이라는 광고 문구만으로 모든 러닝화에 안전하다고 말할 수는 없다. 사용하려는 기기의 온도·시간과 신발 제조사의 허용 조건을 함께 확인해야 한다. 이번에 읽은 관리 원문은 특정 UV 장치의 살균율·냄새 제거율이나 특정 건조기의 소재 적합성을 검증하지 않는다. 이를 이유로 기기 구매를 권하지 않았다.</p>
+<p>카본판이 있거나 PEBA 폼이라는 이유만으로 다른 신발보다 몇 도에서 더 빨리 손상된다는 설명도 넣지 않았다. 모델의 재료·접착·관리 지침을 확인하는 편이 정확하다. <a href="/blog/running-shoe-lifespan-replacement-guide">교체 여부는 거리 하나보다 실제 상태로 보는 안내</a>를 참고할 수 있다.</p>
 
-<h2>왜 '말리는 법'이 중요한가 — 폼은 물과 열에 약하다</h2>
-
-<p>러닝화의 핵심은 미드솔 <strong>폼</strong>입니다. EVA, 슈퍼크리티컬 EVA, PEBA, TPU 같은 폼이 충격을 흡수하고 반발력을 만들죠. 그런데 이 폼들은 두 가지에 약합니다 — <strong>장시간 머금은 물</strong>과 <strong>고열</strong>입니다.</p>
-
-<ul>
-  <li><strong>젖은 채 방치</strong> — 폼과 어퍼가 물을 머금으면 무거워지고, 마르기 전까지 반발이 둔해집니다. 더 큰 문제는 <strong>축축한 어둠 속에서 번식하는 세균·곰팡이</strong>로, 냄새의 진짜 원인입니다</li>
-  <li><strong>고열 건조</strong> — 드라이어·라디에이터·직사광선의 열은 EVA 폼을 수축·경화시켜 쿠션을 죽이고, <strong>미드솔과 아웃솔을 붙인 접착제를 약하게 만들어 밑창이 들뜨거나 떨어지게</strong> 합니다. 고무 아웃솔에 잔금이 가기도 하죠</li>
-</ul>
-
-<p>즉 "빨리 말리려고" 열을 가하는 순간, 그게 바로 신발을 망치는 길입니다. 핵심 원칙은 하나 — <strong>저온 + 통풍</strong>.</p>
-
-<h2>젖은 러닝화 건조 4단계</h2>
-
-<h3>① 안창(인솔)과 끈을 분리한다</h3>
-<p>가장 먼저, 그리고 가장 중요한 단계입니다. 안창은 빼서 따로 말려야 그 아래 갇힌 물기가 빠지고, 신발 내부도 공기가 통합니다. 끈도 풀어 텅(혀)을 활짝 젖혀두세요. 이것만 해도 건조 속도가 확 빨라집니다.</p>
-
-<h3>② 신문지·키친타올로 속 수분을 흡수한다</h3>
-<p>신발 안에 구겨 넣은 신문지가 물을 빨아들입니다. <strong>2~3시간마다 젖은 신문지를 새것으로 교체</strong>하는 게 포인트 — 한 번 넣고 방치하면 오히려 축축한 상태가 유지됩니다. 신문지 잉크가 밝은 색 어퍼에 묻는 게 걱정되면 키친타올이나 흰 종이타올을 쓰세요.</p>
-
-<h3>③ 통풍 그늘에서 바람을 쐬어준다</h3>
-<p>속 수분을 어느 정도 뺀 뒤엔 <strong>바람</strong>이 일을 합니다. 직사광선이 닿지 않는 통풍 잘 되는 곳에 두고 <strong>선풍기·서큘레이터를 신발 입구 쪽으로</strong> 틀어주세요. 신발코를 살짝 위로 기울여 세우면 안쪽 깊은 곳까지 공기가 통합니다. 가정에서 가장 빠르고 안전한 방법입니다.</p>
-
-<div class="callout tip">
-  <span class="callout-icon">🌀</span>
-  <div class="callout-body">
-    <p class="callout-title">신발건조기를 쓴다면 '저온 송풍' 모드만</p>
-    <p>신발건조기는 편하지만 <strong>열풍이 강한 모드는 금물</strong>입니다. 상온~미지근한 바람(대략 40℃ 이하)의 <strong>송풍·저온 모드</strong>로, 가능하면 타이머를 걸어 장시간 가열을 피하세요. UV 살균 기능이 있으면 냄새 관리에 도움이 됩니다.</p>
-  </div>
-</div>
-
-<h3>④ 완전히 마른 뒤 보관·재착용</h3>
-<p>겉만 말랐다고 끝이 아닙니다. 미드솔과 어퍼 안쪽까지 완전히 마르려면 보통 <strong>하루 안팎</strong>이 걸립니다. 덜 마른 신발을 신발장에 넣으면 그 안에서 곰팡이가 핍니다. 손을 넣었을 때 서늘한 습기가 느껴지지 않을 때까지 기다리세요.</p>
-
-<h2>하지 말아야 할 건조법 — 신발을 망치는 4가지</h2>
-
-<table>
-  <thead><tr><th>금지</th><th>왜 안 되나</th></tr></thead>
-  <tbody>
-    <tr><td><strong>헤어드라이어 / 온풍</strong></td><td>국소 고열이 EVA 폼을 변형·경화시키고 접착제를 녹임. 어퍼 소재도 수축</td></tr>
-    <tr><td><strong>직사광선(땡볕)</strong></td><td>자외선+열로 폼·고무가 삭고 변색. "햇볕에 바짝"이 가장 흔한 실수</td></tr>
-    <tr><td><strong>세탁기·건조기</strong></td><td>회전 충격으로 미드솔-아웃솔 접착 분리, 폼 구조 붕괴. 러닝화엔 사실상 사형선고</td></tr>
-    <tr><td><strong>라디에이터·보일러 위</strong></td><td>지속 고열로 밑창 들뜸·갈라짐. 겨울에도 같은 이유로 금지</td></tr>
-  </tbody>
-</table>
-
-<p>요약하면 <strong>'뜨거운 것 위·안·옆은 전부 금지'</strong>입니다. 손으로 만져 따뜻하면 신발에는 너무 뜨겁다고 보면 됩니다.</p>
-
-<h2>냄새와 곰팡이 잡기</h2>
-
-<p>장마철 러닝화 냄새의 범인은 땀이 아니라 <strong>축축한 환경에서 번식한 박테리아</strong>입니다. 그래서 1순위 해결책은 언제나 <strong>완전 건조</strong>입니다. 그 위에 더할 수 있는 관리:</p>
-
-<ul>
-  <li><strong>베이킹소다</strong> — 마른 신발 안에 한 스푼 뿌리거나 면주머니에 담아 하룻밤. 다음 날 털어내면 냄새·습기 흡수</li>
-  <li><strong>신발 탈취제·제습제</strong> — 신발장에 실리카겔이나 제습제를 함께 두면 장마 내내 도움</li>
-  <li><strong>안창 따로 세척</strong> — 냄새의 상당 부분은 안창에 뱁니다. 미지근한 물에 손빨래 후 그늘 건조</li>
-  <li><strong>두 켤레 번갈아 신기</strong> — 한 켤레가 완전히 마르고 통풍될 시간을 확보하는 게 냄새 예방의 근본</li>
-</ul>
-
-<h2>흙탕물·심하게 더러워졌을 때 — 손세탁 요령</h2>
-
-<p>트레일이나 침수 구간을 지나 진흙·오염이 심하면 헹궈야 합니다. 단 <strong>세탁기 대신 손세탁</strong>이 원칙입니다.</p>
-
-<ul>
-  <li>겉흙은 마른 뒤 솔로 털어냅니다(젖은 흙을 문지르면 섬유 속으로 더 박힘)</li>
-  <li>미지근한 물 + 중성세제를 부드러운 솔이나 천에 묻혀 부분 세척</li>
-  <li>세제가 남지 않게 헹군 뒤, 위의 4단계 건조법으로 말립니다</li>
-  <li>표백제·강알칼리 세제는 어퍼 변색·접착 손상을 일으키니 피하세요</li>
-</ul>
-
-<h2>근본 해결 — 2켤레 로테이션</h2>
-
-<p>미드솔 폼은 한 번 달리며 압축된 뒤 <strong>원래 두께와 반발력으로 회복하는 데 시간</strong>이 필요합니다. 매일 같은 신발을 신으면 폼이 회복할 틈 없이 눌린 채 다음 런을 맞고, 그만큼 빨리 주저앉습니다. 장마철엔 여기에 <strong>'마를 시간'</strong>까지 더해지죠.</p>
-
-<p>그래서 비 시즌일수록 <strong>최소 2켤레를 번갈아 신는 로테이션</strong>이 정답입니다. 한 켤레가 마르고 폼이 회복하는 동안 다른 켤레를 신는 식이죠. 데일리 트레이너 한 켤레를 더 들일 계획이라면 본인 발·예산에 맞는 후보를 <a href="/recommend">1분 러닝화 추천</a>으로 좁히거나, <a href="/best/daily-trainer">데일리 트레이너 추천</a>을 참고하세요. 통기성이 좋아 잘 마르는 여름용 신발이 궁금하면 <a href="/blog/summer-breathable-running-shoes-2026">여름 통기성 러닝화</a> 글도 도움이 됩니다.</p>
-
-<div class="callout warning">
-  <span class="callout-icon">📉</span>
-  <div class="callout-body">
-    <p class="callout-title">반복해서 젖고 잘못 말린 신발은 수명이 깎입니다</p>
-    <p>아무리 잘 관리해도 침수와 건조를 여러 번 반복한 신발은 폼 반발과 쿠션이 평소보다 빨리 떨어집니다. 쿠션이 꺼지고 발·무릎이 평소보다 피로하다면 교체 신호일 수 있습니다. 판단 기준은 <a href="/blog/running-shoe-lifespan-replacement-guide">러닝화 수명·교체 시기 가이드</a>에서 확인하세요.</p>
-  </div>
-</div>
-
-<h2>FAQ</h2>
-
-<h3>Q. 비 오는 날 신어도 되는 방수 러닝화가 따로 있나요?</h3>
-<p>고어텍스(GTX) 같은 방수 멤브레인을 적용한 러닝화가 있습니다. 빗물이 위에서 떨어지는 상황엔 도움이 되지만, <strong>물웅덩이를 밟아 발목 위로 물이 넘어오면 오히려 안에 물이 갇혀 더 안 마릅니다.</strong> 한여름 장마엔 방수보다 <strong>배수·통기가 잘 되는 메시 신발</strong>이 더 쾌적한 경우가 많습니다. 폭우 예보엔 어차피 젖는다고 보고, 잘 마르는 신발 + 빠른 건조 루틴이 현실적입니다.</p>
-
-<h3>Q. 신문지가 없으면 뭘 쓰나요?</h3>
-<p>키친타올·흰 종이타올·마른 수건 조각으로 대체할 수 있습니다. 핵심은 '흡수성 종이를 자주 갈아주는 것'이지 신문지 자체가 아닙니다. 제습용 실리카겔 팩을 함께 넣어도 좋습니다.</p>
-
-<h3>Q. 신발건조기를 사도 괜찮을까요?</h3>
-<p>저온·송풍 위주 제품이라면 장마철에 유용합니다. 다만 <strong>강한 열풍 모드의 장시간 사용은 피하세요.</strong> 미지근한 바람으로 충분히 말리고, UV 살균 기능이 있으면 냄새 관리에 보탬이 됩니다.</p>
-
-<h3>Q. 카본화(레이싱화)도 똑같이 관리하면 되나요?</h3>
-<p>네, 원칙은 같습니다. 오히려 PEBA 폼과 카본 플레이트를 쓴 고가 레이싱화일수록 <strong>고열은 더 치명적</strong>입니다. 비 오는 대회 후엔 즉시 안창·끈을 빼고 저온 통풍 건조하세요. 레이싱화는 평소에도 훈련용과 분리해 아껴 신는 게 수명에 좋습니다.</p>
-`,
+<h2>자주 묻는 질문</h2><h3>신발은 밤새 두면 다 마르나요?</h3><p>항상 그렇지는 않습니다. 제조사 안내도 최소 여러 시간부터 며칠까지 다르며, 내부와 안창이 완전히 말랐는지 확인해야 합니다.</p><h3>드라이어나 난방기로 빨리 말려도 되나요?</h3><p>읽은 제조사들은 열로 인한 형태·접착 손상을 경고하며 자연 건조를 안내합니다. 제품별 관리 지침을 따르는 것이 우선입니다.</p><h3>저온·UV 신발 건조기를 추천하나요?</h3><p>이번 확인 자료로 특정 기기의 안전성이나 살균 효과를 보장하지 않습니다. 기기 조건과 신발 제조사의 허용 조건을 별도로 확인해야 합니다.</p>`,
     faqs: [
       {
-        question: '젖은 러닝화를 드라이어로 말려도 되나요?',
-        answer: '안 됩니다. 드라이어·라디에이터·직사광선의 고열은 EVA·PEBA 미드솔 폼을 변형·경화시키고, 미드솔과 아웃솔을 붙인 접착제를 약하게 만들어 밑창이 떨어질 수 있습니다. 안창·끈을 빼고 신문지로 속 수분을 흡수한 뒤 통풍 그늘에서 선풍기 바람으로 말리는 게 정석입니다.',
+        "question": "신발은 밤새 두면 다 마르나요?",
+        "answer": "항상 그렇지는 않습니다. 제조사 안내도 최소 여러 시간부터 며칠까지 다르며, 내부와 안창이 완전히 말랐는지 확인해야 합니다."
       },
       {
-        question: '러닝화를 세탁기에 빨아도 되나요?',
-        answer: '권장하지 않습니다. 세탁기·건조기의 회전 충격은 미드솔과 아웃솔의 접착을 분리시키고 폼 구조를 망가뜨립니다. 오염이 심하면 미지근한 물과 중성세제로 부드러운 솔을 이용해 손세탁하고, 저온 통풍으로 말리세요.',
+        "question": "드라이어나 난방기로 빨리 말려도 되나요?",
+        "answer": "읽은 제조사들은 열로 인한 형태·접착 손상을 경고하며 자연 건조를 안내합니다. 제품별 관리 지침을 따르는 것이 우선입니다."
       },
       {
-        question: '장마철 러닝화 냄새는 어떻게 없애나요?',
-        answer: '냄새의 원인은 축축한 환경에서 번식한 박테리아이므로 완전 건조가 1순위입니다. 마른 신발에 베이킹소다를 뿌려 하룻밤 두거나, 안창을 따로 세척·건조하고, 신발장에 제습제를 두면 도움이 됩니다. 근본적으로는 2켤레를 번갈아 신어 마를 시간을 확보하는 것이 가장 효과적입니다.',
-      },
+        "question": "저온·UV 신발 건조기를 추천하나요?",
+        "answer": "이번 확인 자료로 특정 기기의 안전성이나 살균 효과를 보장하지 않습니다. 기기 조건과 신발 제조사의 허용 조건을 별도로 확인해야 합니다."
+      }
     ],
+    updatedAt: "2026-11-10",
   },
   {
     id: "asics-novablast-6-vs-hoka-clifton-pro-2026",
@@ -4446,79 +4280,59 @@ export const posts_2026_06: BlogPost[] = [
     ],
   },
   {
-    id: 'race-timing-chip-net-gross-time-guide-2026',
-    slug: 'race-timing-chip-net-gross-time-guide-2026',
-    title: '같이 뛰었는데 내 기록이 더 빠르다? — 기록칩과 넷타임·그로스타임 완벽 정리 | RFID 원리·스타트 위치·반납까지',
-    description: '마라톤 대회에서 친구와 나란히 골인했는데 기록이 다르게 나온 경험, 있으신가요? 비밀은 기록칩과 \'넷타임 vs 그로스타임\'에 있습니다. RFID 기록칩이 어떻게 시간을 재는지, 넷타임과 그로스타임이 왜 다른지, 출발선에서 어디에 서야 손해를 안 보는지, 칩 반납 주의사항까지 마라톤 입문자가 꼭 알아야 할 기록 측정의 모든 것을 정리했습니다.',
-    thumbnail: '/images/blog/race-timing-chip-net-gross-time-guide-2026.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-06-10',
-    category: 'guide' as const,
-    readingTime: 7,
-    tags: ['기록칩', '넷타임', '그로스타임', '마라톤 기록', 'RFID', '대회 입문', '러닝'],
-    content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>기록칩</strong>은 신발 끈이나 배번에 붙는 <strong>RFID 칩</strong>으로, 출발·중간·결승 지점의 매트를 밟을 때 시간을 자동 기록합니다</li>
-    <li><strong>넷타임</strong>은 '내가 출발선을 통과한 순간~결승선', <strong>그로스타임</strong>은 '출발 신호(총성)~결승선' — 뒤쪽에 서서 출발하면 둘의 차이가 커집니다</li>
-    <li>같이 골인해도 <strong>출발선 통과 시점이 다르면 넷타임이 다릅니다</strong>. 공정한 비교는 넷타임 기준이에요</li>
-  </ul>
-</div>
+    id: "race-timing-chip-net-gross-time-guide-2026",
+    slug: "race-timing-chip-net-gross-time-guide-2026",
+    title: "넷타임·그로스타임 읽는 법: 개인 기록과 공식 기준을 나눠 보자",
+    description: "같이 골인했는데 기록이 다른 이유를 숫자로 설명합니다. World Athletics 공식 시간, 보스턴 자격기록, 칩 종류별 착용·반납을 구분합니다.",
+    thumbnail: "/images/blog/verified-race-timing-chip-net-gross-time-guide-2026-20261110.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-06-10",
+    category: "guide",
+    readingTime: 6,
+    tags: [
+      "기록칩",
+      "넷타임",
+      "그로스타임",
+      "마라톤 기록",
+      "RFID",
+      "대회 입문",
+      "러닝"
+    ],
+    content: `<p><small>2026년 11월 10일 규정·계측사 안내 대조. 시간 계산은 가상 예시이며, 참가 대회의 요강을 별도로 확인해야 합니다.</small></p>
 
-<div class="callout info">
-  <span class="callout-icon">⏱️</span>
-  <div class="callout-body">
-    <p class="callout-title">"분명 같이 들어왔는데 기록이 왜 달라?"</p>
-    <p>대규모 마라톤에서 친구와 나란히 결승선을 통과했는데, 나중에 보니 기록이 1~2분씩 차이 나는 일이 흔합니다. 부정 출발도, 측정 오류도 아닙니다. <strong>'언제부터 시간을 쟀느냐'</strong>가 달랐을 뿐이죠. 이 차이를 이해하면 내 기록을 정확히 읽고, 다음 대회에서 더 좋은 기록을 노리는 법도 보입니다.</p>
-  </div>
-</div>
+<p>친구와 나란히 골인했는데 넷타임이 다를 수 있다. 출발선을 통과한 시점이 다르기 때문이다. 다만 ‘넷타임이 공정하니 모든 공식 기록도 넷타임’이라고 결론내릴 수는 없다. <strong>어느 시각부터 잰 값인지, 그 대회와 신청에서 어느 값을 쓰는지</strong>를 나눠 읽자.</p>
+<h2>세 시각으로 계산해보기</h2>
+<p>아래는 설명을 위한 가상 예시다. 같은 출발 신호가 09:00이고 두 사람이 모두 10:00에 골인했다고 가정한다.</p>
+<table><thead><tr><th>참가자</th><th>내 출발선 통과</th><th>결승선 통과</th><th>그로스타임</th><th>넷타임</th></tr></thead><tbody>
+<tr><td>A</td><td>09:01</td><td>10:00</td><td>1:00:00</td><td>0:59:00</td></tr>
+<tr><td>B</td><td>09:03</td><td>10:00</td><td>1:00:00</td><td>0:57:00</td></tr></tbody></table>
+<p>그로스·건타임은 해당 출발 신호부터 결승까지, 넷·칩타임은 개인의 출발선 통과부터 결승까지다. 여러 웨이브로 출발하는 대회는 어떤 출발 신호와 그룹을 기준으로 처리하는지도 요강에서 확인해야 한다.</p>
+<h2>공식 시간과 신청에 쓰는 시간은 구분</h2>
+<p><a href="https://worldathletics.org/about-iaaf/documents/book-of-rules" target="_blank" rel="noopener noreferrer">World Athletics 현행 경기·기술 규정 목록</a>에서 2026년 7월 1일 갱신된 C1.1·C2.1 원문을 대조했다. 트랜스폰더 계측의 기술 규정 19.25 주석은 출발 총성 또는 동기화된 신호부터 결승 도달까지를 공식 시간으로 설명한다. 출발선~결승선 시간은 참가자에게 제공할 수 있지만 그 규정의 공식 시간과는 구분한다.</p>
+<p>반면 <a href="https://www.baa.org/races/boston-marathon/qualify/" target="_blank" rel="noopener noreferrer">B.A.A.의 보스턴마라톤 자격기록 안내</a>는 자격기록을 공식 제출 넷타임, 즉 칩타임 기준으로 안내한다. 이는 자격 심사에서 어떤 결과를 받는지에 대한 별도 기준이다. 넷타임이 있거나 기준 기록을 달성했다는 이유만으로 참가가 확정되는 것도 아니다. 이 예시를 모든 국내 대회의 시상·연령대 순위·제한시간에 일괄 적용하지 말자.</p>
+<h2>칩은 GPS로 내 동선을 재는 장치인가?</h2>
+<p><a href="https://mylaps.com/active-sports/sports/running/" target="_blank" rel="noopener noreferrer">MYLAPS 러닝 계측 시스템 설명</a>는 참가자가 착용하는 태그와 출발·중간·결승 등의 감지 지점을 이용하는 RFID 계측을 설명한다. 감지 매트는 신호를 받는 안테나 역할을 한다. 따라서 매트를 세게 밟아야 작동한다는 뜻은 아니다. 지정된 코스를 통과하고 칩의 부착 위치와 착용 방법을 따르는 것이 중요하다.</p>
+<h2>반납 여부는 생김새만으로 판단하지 않기</h2>
+<p><a href="https://mylaps.com/qr/" target="_blank" rel="noopener noreferrer">MYLAPS 태그 착용·반납 안내</a>는 ThinTag 배번을 가슴에 보이게 착용하고 접거나 구기지 않으며, 칩을 핀으로 찌르거나 간격재를 제거하지 말도록 안내한다. 해당 태그는 회수하지 않아도 된다고 설명하지만, 같은 페이지의 발목용 MultiSports Tag는 반납하도록 안내한다. 이 차이를 모든 배번형·슈즈형 칩에 일반화할 수는 없다.</p>
+<ul><li><strong>출발 전:</strong> 내 배번과 칩의 일치, 부착 위치, 회수 여부를 대회 안내에서 확인한다.</li><li><strong>출발·반환·결승:</strong> 지정 코스를 통과하고 안내받은 위치에 칩을 유지한다. 기록을 찍겠다고 줄을 벗어나거나 다른 그룹으로 앞당겨 출발하지 않는다.</li><li><strong>기록 확인:</strong> 출발 기준·넷/그로스 구분·구간 기록을 확인한다. 누락이 있으면 대회가 안내한 이의신청 절차를 이용한다.</li></ul>
+<p>개인 워치의 자동 일시정지 시간은 대회의 공식 계측과 같다고 가정하지 말자. 다음 대회의 자격기록으로 제출한다면 기록증의 어떤 칸을 요구하는지까지 확인해야 한다.</p>
 
-<h2>기록칩이란? — 신발에 붙는 작은 RFID</h2>
-<p>기록칩은 <strong>RFID(무선 인식) 기술</strong>을 쓰는 작은 칩입니다. 출발선·반환점·결승선 등에 깔린 <strong>감지 매트(timing mat)</strong> 위를 지날 때마다, 칩이 고유 번호와 통과 시각을 자동으로 기록하죠. 형태는 크게 두 가지입니다.</p>
-<ul>
-  <li><strong>배번 일체형</strong> — 배번(빕) 뒷면에 칩이 내장. 별도 부착·반납 불필요(요즘 대부분)</li>
-  <li><strong>슈즈칩(반납형)</strong> — 신발 끈에 케이블타이로 묶는 칩. 완주 후 <strong>반납</strong>해야 하며, 미반납 시 보증금 차감·기록 누락이 생길 수 있습니다</li>
-</ul>
-<p>매트를 제대로 밟지 않거나 칩이 떨어지면 기록이 누락될 수 있으니, 슈즈칩은 출발 전 단단히 고정하세요.</p>
-
-<h2>넷타임 vs 그로스타임 — 핵심 차이</h2>
-<p>대회 기록에는 보통 두 가지 시간이 찍힙니다.</p>
-<table>
-  <thead>
-    <tr><th>구분</th><th>측정 시작</th><th>의미</th><th>누구에게 유리?</th></tr>
-  </thead>
-  <tbody>
-    <tr><td><strong>그로스타임</strong><br>(Gun Time)</td><td>출발 <strong>신호(총성)</strong> 순간</td><td>공식 출발~결승. 우승·시상 기준</td><td>맨 앞 출발자</td></tr>
-    <tr><td><strong>넷타임</strong><br>(Net/Chip Time)</td><td>내가 <strong>출발선 매트</strong>를 밟은 순간</td><td>실제 내가 달린 시간</td><td>모든 참가자(공정)</td></tr>
-  </tbody>
-</table>
-<p>수천 명이 출발하는 대회에선, 뒤쪽에 선 사람이 출발선을 통과하기까지 <strong>몇 분</strong>이 걸리기도 합니다. 그동안 그로스타임은 이미 흘러가죠. 그래서 <strong>일반 참가자끼리의 기록 비교·자기 기록(PR) 판단은 넷타임이 공정</strong>합니다. 다만 <strong>대회 공식 순위·시상은 보통 그로스타임</strong> 기준이라, 상위권을 노린다면 앞쪽 출발 그룹 배정이 중요합니다.</p>
-
-<div class="callout tip">
-  <span class="callout-icon">📍</span>
-  <div class="callout-body">
-    <p class="callout-title">스타트 위치 팁</p>
-    <p>기록이 목표라면 <strong>본인 예상 기록에 맞는 출발 그룹(웨이브)</strong>에 서세요. 너무 뒤에 서면 출발 정체로 초반 페이스가 흐트러지고 그로스타임 손해가 큽니다. 반대로 실력보다 앞에 서면 빠른 러너들에게 떠밀려 오버페이스하기 쉽습니다. 접수 시 기록 제출로 그룹이 배정되는 대회가 많으니 정직하게 입력하세요.</p>
-  </div>
-</div>
-
-<h2>내 기록은 어떻게 확인하나</h2>
-<p>대부분의 대회는 완주 후 <strong>문자(SMS)나 대회 홈페이지·기록 조회 사이트</strong>에서 배번/이름으로 기록을 확인할 수 있습니다. 넷타임과 그로스타임, 구간별 랩타임까지 제공되는 경우도 많죠. 구간 기록을 보면 어디서 페이스가 무너졌는지 복기할 수 있어, 다음 대회 전략에 큰 도움이 됩니다.</p>
-
-<h2>입문자가 자주 하는 실수</h2>
-<ul>
-  <li><strong>슈즈칩 반납 깜빡</strong> — 완주 직후 정신없을 때 놓치기 쉽습니다. 반납 부스 위치를 미리 확인하세요</li>
-  <li><strong>배번을 접거나 가림</strong> — 일체형 칩은 배번을 구기면 인식이 안 될 수 있습니다. 펴서 앞면에 잘 보이게 부착</li>
-  <li><strong>출발 매트 안 밟고 옆으로 출발</strong> — 넷타임 시작이 안 찍혀 기록이 그로스타임만 남거나 누락될 수 있습니다</li>
-  <li><strong>기록에 일희일비</strong> — 넷타임 기준으로 보고, 거리별로 난이도가 다르다는 점(<a href="/blog/race-distance-difficulty-guide-2026">거리별 체감 난이도</a>)도 함께 고려하세요</li>
-</ul>
-
-<h2>마무리</h2>
-<p>기록칩과 넷타임·그로스타임의 원리만 알아도 내 기록을 정확히 읽고, 출발 위치 전략까지 세울 수 있습니다. 기록 단축이 목표라면 측정 방식 이해에 더해 <a href="/blog/tempo-run-training-guide-korea">템포런</a> 같은 역치 훈련으로 실제 능력을 끌어올리는 게 핵심이고요. 다음 도전할 대회를 찾고 있다면 <a href="/marathon">마라톤 캘린더</a>에서 일정을 확인해 보세요. 정확히 알고 달리면, 숫자 너머의 내 성장도 더 잘 보입니다.</p>
-
-<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 일반적인 대회 기록 측정 정보로, 대회마다 칩 종류·공식 기록 기준(넷/그로스)·반납 규정이 다를 수 있습니다. 참가 대회의 공식 안내를 반드시 확인하세요. (참고 글감: @dongmaclub, 2026-06-06)</p>
-`,
+<h2>자주 묻는 질문</h2><h3>같이 골인했는데 왜 넷타임이 다르나요?</h3><p>개인이 출발선을 통과한 시점이 다르면 출발선부터 결승선까지 걸린 시간이 달라집니다. 본문의 가상 예시에서 이 차이를 계산했습니다.</p><h3>넷타임이 항상 공식 시상 기준인가요?</h3><p>아니요. World Athletics 기술 규정의 공식 시간과 보스턴 자격기록의 넷타임 기준도 구분됩니다. 대회·시상·자격 신청별 요강을 확인해야 합니다.</p><h3>배번에 붙은 칩은 무조건 반납하지 않아도 되나요?</h3><p>모든 칩에 일반화할 수 없습니다. 장비 종류와 대회 운영에 따라 회수 여부가 다르므로 해당 안내를 확인해야 합니다.</p>`,
+    updatedAt: "2026-11-10",
+    faqs: [
+      {
+        "question": "같이 골인했는데 왜 넷타임이 다르나요?",
+        "answer": "개인이 출발선을 통과한 시점이 다르면 출발선부터 결승선까지 걸린 시간이 달라집니다. 본문의 가상 예시에서 이 차이를 계산했습니다."
+      },
+      {
+        "question": "넷타임이 항상 공식 시상 기준인가요?",
+        "answer": "아니요. World Athletics 기술 규정의 공식 시간과 보스턴 자격기록의 넷타임 기준도 구분됩니다. 대회·시상·자격 신청별 요강을 확인해야 합니다."
+      },
+      {
+        "question": "배번에 붙은 칩은 무조건 반납하지 않아도 되나요?",
+        "answer": "모든 칩에 일반화할 수 없습니다. 장비 종류와 대회 운영에 따라 회수 여부가 다르므로 해당 안내를 확인해야 합니다."
+      }
+    ],
   },
   {
     id: 'seoul-100k-2026-registration',
@@ -5412,108 +5226,63 @@ export const posts_2026_06: BlogPost[] = [
 `,
   },
   {
-    id: 'side-stitch-running-causes-relief-korea',
-    slug: 'side-stitch-running-causes-relief-korea',
-    title: '러닝 중 옆구리가 찌릿 — 왜 아프고, 어떻게 멈출까 | 사이드 스티치 원인·즉시 대처 4단계·예방법',
-    description: '달리다 갑자기 옆구리가 찌릿했던 경험, 초보 러너라면 한 번쯤 겪습니다. 대부분은 부상이 아니라 호흡 리듬·횡격막 긴장에서 오는 사이드 스티치(ETAP, 운동유발 일과성 복통)입니다. 왜 생기는지, 통증이 왔을 때 즉시 멈추는 4단계 대처법, 다음 러닝부터 예방하는 체크리스트, 그리고 "이건 사이드 스티치가 아닐 수도 있다"는 위험 신호까지 정리했습니다.',
-    thumbnail: '/images/blog/side-stitch-running-causes-relief-korea.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-06-06',
-    category: 'tips' as const,
-    readingTime: 7,
-    tags: ['옆구리 통증', '사이드 스티치', '러닝 통증', '러닝 호흡법', '초보 러너', '복식호흡', 'ETAP', '러닝 팁', '횡격막', '러닝 부상'],
-    content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li>달리다 생기는 옆구리 통증은 대부분 부상이 아니라 <strong>사이드 스티치(ETAP·운동유발 일과성 복통)</strong> — 호흡 리듬, 횡격막 긴장, 식후 러닝이 주범입니다</li>
-    <li>통증이 오면 <strong>속도를 줄이고 → 깊게 내쉬고 → 통증 부위를 누르며 상체를 숙이고 → 호흡 리듬을 맞추는</strong> 4단계로 보통 1~2분 안에 가라앉습니다</li>
-    <li>예방의 핵심은 <strong>식사 2~3시간 전 마치기 + 워밍업 + 복식호흡 리듬 + 점진적 페이스</strong>. 초보일수록 자주 겪지만 달리기에 적응하면 빈도가 확 줄어듭니다</li>
-  </ul>
-</div>
+    id: "side-stitch-running-causes-relief-korea",
+    slug: "side-stitch-running-causes-relief-korea",
+    title: "러닝 중 옆구리 통증: 속도를 낮출 때와 진료가 필요할 때",
+    description: "옆구리 결림을 얕은 호흡 탓으로 확정하지 않습니다. ETAP 연구, 불편할 때의 대처, 식사·음료 기록과 다른 복통의 경고 신호를 정리합니다.",
+    thumbnail: "/images/blog/verified-side-stitch-running-causes-relief-korea-20261110.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-06-06",
+    category: "tips",
+    readingTime: 6,
+    tags: [
+      "옆구리 통증",
+      "사이드 스티치",
+      "러닝 통증",
+      "러닝 호흡법",
+      "초보 러너",
+      "복식호흡",
+      "ETAP",
+      "러닝 팁",
+      "횡격막",
+      "러닝 부상"
+    ],
+    content: `<p><small>2026년 11월 10일 원문 대조. 연구 결과는 해당 참가자·기간·시험 조건에 한정합니다. 아래 기록표와 비교 순서는 편집 제안입니다.</small></p>
 
-<div class="callout info">
-  <span class="callout-icon">🏃</span>
-  <div class="callout-body">
-    <p class="callout-title">먼저, 겁먹지 마세요 — 대부분 부상이 아닙니다</p>
-    <p>"달리다 옆구리가 찌릿"한 통증의 정식 명칭은 <strong>ETAP(Exercise-Related Transient Abdominal Pain), 운동유발 일과성 복통</strong>입니다. 흔히 <strong>사이드 스티치(side stitch)</strong>라 부르죠. 이름에 '일과성(transient)'이 들어간 데서 알 수 있듯, <strong>잠깐 왔다 사라지는 증상</strong>이지 근육 파열이나 장기 손상이 아닙니다. 러너의 약 70%가 한 번쯤 겪고, 특히 <strong>달리기를 막 시작한 초보에게 더 자주</strong> 나타납니다.</p>
-  </div>
-</div>
+<p>뛰는 중 갈비뼈 아래나 옆구리가 당기면 흔히 ‘사이드 스티치’라고 부른다. 운동 관련 일시적 복통, ETAP라는 이름도 쓴다. 그러나 달리는 중 생겼다는 이유만으로 모든 복통을 ETAP라고 자가진단해서는 안 된다. 오늘 할 일은 통증을 참고 목표 거리를 채우기보다 상황을 구분하는 것이다.</p>
+<h2>‘횡격막에 산소가 부족해서’로 확정할 수 없다</h2>
+<p><a href="https://pubmed.ncbi.nlm.nih.gov/10694128/" target="_blank" rel="noopener noreferrer">Morton·Callister의 운동 중 일시적 복통 설문 연구</a>는 6개 운동 종목의 정기 참가자 965명에게 증상을 물은 연구다. 러너 439명 중 지난 1년간 경험했다고 답한 비율은 69%였다. 이는 해당 표본의 회상 설문 결과이며, 모든 달리기 한 번당 발생 확률이 아니다. 연구는 횡격막·장기 지지 구조·복막 자극 등의 가능성을 논의하지만 원인을 하나로 확정하지 않았다.</p>
+<p>따라서 ‘얕은 호흡이 대부분의 원인’, ‘복식호흡만 익히면 예방’, ‘코어가 약하다는 증거’라고 쓰지 않았다. 아픈 위치와 느낌만으로 정확한 조직이나 병명을 판단할 수도 없다.</p>
+<h2>익숙한 결림이 시작되면 어떻게 할까</h2>
+<p><a href="https://www.uclahealth.org/news/article/avoid-side-stitches-try-staying-hydrated-and-stretching" target="_blank" rel="noopener noreferrer">UCLA Health의 2026년 10월 의사 안내</a>는 통증을 밀어붙이지 말고 운동 속도를 낮추며, 천천히 조절한 호흡을 시도하도록 안내한다. 일부는 해당 부위에 가벼운 압력을 주거나 몸을 숙이는 방법이 편하다고 보고하지만 모든 사람에게 확실한 해결법은 아니다. 다음처럼 대처할 수 있다.</p>
+<ol><li><strong>먼저 속도를 낮춘다.</strong> 필요하면 달리기를 멈추고, 안전한 곳에서 상태를 확인한다.</li><li><strong>편한 범위로 호흡을 고른다.</strong> 억지로 크게 들이마시거나 특정 발 착지에 날숨을 맞추는 것을 필수 치료처럼 수행하지 않는다.</li><li><strong>변화를 본다.</strong> 멈춰도 가라앉지 않거나 평소와 다르면 단순한 결림으로 넘기지 않는다.</li></ol>
+<h2>다음 러닝 전에 바꿀 것은 한 번에 하나</h2>
+<p>UCLA 안내는 운동 직전 배부른 상태를 피하고 식사·당이 많은 음료의 간격을 조절하는 접근을 제안한다. 약 두 시간이라는 제안도 모든 식사량과 모든 러너에게 효과가 검증된 경계선은 아니다. 예방을 위해 물을 무조건 끊거나 장거리의 필요한 보급까지 생략하는 근거로 읽지 말자.</p>
+<table><thead><tr><th>기록 항목</th><th>남겨 둘 내용</th></tr></thead><tbody>
+<tr><td>달리기 전</td><td>식사·간식·음료 종류와 양, 출발까지 간격</td></tr>
+<tr><td>통증 발생 당시</td><td>시작한 시간·거리, 속도 변화, 위치와 느낌</td></tr>
+<tr><td>멈춘 뒤</td><td>가라앉았는지, 얼마나 지속했는지, 운동 외 시간에도 생겼는지</td></tr></tbody></table>
+<p>이 기록은 원인을 확정하는 실험이 아니다. 반복될 때 의료진에게 설명하거나 다음 사용 조건을 비교하는 데 쓸 수 있다.</p>
+<h2>참고 뛰면 안 되는 신호</h2>
+<p>UCLA는 빈도가 늘거나 운동과 무관하게 생기거나 운동을 멈춘 뒤에도 완화되지 않으면 의료진의 평가를 권한다. <a href="https://www.nhs.uk/symptoms/stomach-ache/" target="_blank" rel="noopener noreferrer">NHS의 복통 진료 안내</a>도 계속되거나 반복되는 복통은 진료를 안내한다. 갑작스럽고 심한 통증, 피를 토함, 검고 끈적한 변이나 많은 출혈, 숨쉬기 어려움 등은 응급 평가가 필요한 신호다. 한국에서는 <strong>119</strong>에 도움을 요청하자.</p>
+<p><a href="/blog/running-breathing-guide-korea">호흡과 운동 강도를 구분하는 글</a>도 함께 읽을 수 있다. 통증이 생겼다는 사실을 ‘내가 호흡을 못했다’는 결론으로 바꾸지는 말자.</p>
 
-<h2>왜 옆구리가 찌릿할까 — 유력한 3가지 원인</h2>
-<p>의학적으로 단 하나의 원인이 확정된 건 아니지만, 연구에서 가장 유력하게 꼽히는 가설은 셋입니다.</p>
-<ol>
-  <li><strong>횡격막 긴장·피로</strong> — 호흡을 담당하는 횡격막이 달리기 중 과하게 쓰이며 일시적으로 산소가 부족해지고 경련하듯 뭉칩니다. 얕고 빠른 호흡일수록 잘 생깁니다.</li>
-  <li><strong>내장 인대가 당겨지는 자극</strong> — 위·간 같은 장기는 인대로 횡격막에 매달려 있습니다. 달릴 때 상하 진동이 이 인대를 잡아당겨 자극하는데, <strong>대부분 통증이 오른쪽 옆구리</strong>에 오는 이유(간이 오른쪽에 있음)로 설명됩니다.</li>
-  <li><strong>위가 차 있을 때</strong> — 식후 곧바로 달리거나 농도 높은 음료(고당분 이온음료 등)를 마신 직후엔 위가 무거워져 인대 자극과 통증이 커집니다.</li>
-</ol>
-
-<h2>왜 초보 러너에게 더 자주 올까</h2>
-<p>인스타 러닝 정보 카드에서도 "처음 달리기 시작한 러너라면 한 번쯤 겪는다"고 짚는데, 이유가 분명합니다.</p>
-<ul>
-  <li><strong>호흡이 아직 얕고 불규칙</strong>합니다 — 가슴으로만 빠르게 숨 쉬면 횡격막이 더 쉽게 지칩니다</li>
-  <li><strong>코어(몸통) 근력이 약해</strong> 진동을 덜 잡아주고, 그만큼 내장 인대에 충격이 더 갑니다</li>
-  <li><strong>페이스 조절이 서툴러</strong> 초반에 무리하게 빨라지기 쉽습니다</li>
-</ul>
-<p>바꿔 말하면 <strong>달리기에 몸이 적응하고 호흡·코어가 자리 잡으면 빈도가 급격히 줄어듭니다</strong>. 옆구리 통증은 대개 "초보 딱지"와 함께 사라집니다.</p>
-
-<h2>통증이 왔을 때 — 즉시 대처 4단계</h2>
-<p>무작정 참고 뛰는 게 가장 안 좋습니다. 다음 순서대로 하면 보통 <strong>1~2분 안에</strong> 가라앉습니다.</p>
-<div class="callout info">
-  <span class="callout-icon">🆘</span>
-  <div class="callout-body">
-    <p class="callout-title">사이드 스티치 응급 대처 4단계</p>
-    <ol>
-      <li><strong>속도를 확 낮춥니다</strong> — 멈추지 않아도 됩니다. 걷기 직전 수준까지 페이스를 떨어뜨리세요.</li>
-      <li><strong>깊게, 길게 내쉽니다</strong> — 들이쉬기보다 <strong>내쉬기에 집중</strong>. 입술을 오므려 "후—" 하고 길게 뱉으면 횡격막 긴장이 풀립니다.</li>
-      <li><strong>통증 부위를 손으로 누르며 상체를 살짝 숙입니다</strong> — 아픈 곳을 지그시 누르고 몸을 앞으로 굽히면 인대 장력이 줄어듭니다.</li>
-      <li><strong>호흡과 발 박자를 맞춥니다</strong> — <strong>통증 반대쪽 발</strong>이 땅에 닿는 순간에 숨을 내쉬세요. 오른쪽이 아프면 왼발 착지에 맞춰 "후".</li>
-    </ol>
-  </div>
-</div>
-<p>그래도 안 가라앉으면 잠깐 걸으면서 <strong>아픈 쪽 팔을 머리 위로 올려 옆구리를 늘려주는 스트레칭</strong>을 더하세요. 깊은 호흡과의 연결이 궁금하다면 <a href="/blog/running-breathing-guide-korea">러닝 호흡법 가이드</a>를 함께 보면 좋습니다.</p>
-
-<h2>다음 러닝부터 — 예방 체크리스트</h2>
-<ul>
-  <li><strong>식사는 러닝 2~3시간 전에 마치기</strong> — 위를 비우는 게 가장 효과 큰 예방입니다. 공복이 부담되면 바나나 반 개 정도만</li>
-  <li><strong>직전 고농도 음료 피하기</strong> — 진한 이온음료·주스보다 물 또는 묽은 음료를</li>
-  <li><strong>워밍업으로 천천히 시작</strong> — 처음 5분은 대화 가능한 페이스로. 갑자기 빨라지지 않기</li>
-  <li><strong>복식호흡 리듬 만들기</strong> — 2~3걸음에 들이쉬고 2걸음에 내쉬는 식으로 규칙적으로. 배가 부풀도록 깊게</li>
-  <li><strong>코어 강화</strong> — 플랭크 같은 몸통 운동이 진동을 잡아 장기적으로 빈도를 줄입니다</li>
-</ul>
-
-<div class="callout warning">
-  <span class="callout-icon">⚠️</span>
-  <div class="callout-body">
-    <p class="callout-title">이건 사이드 스티치가 아닐 수도 — 병원 신호</p>
-    <p>사이드 스티치는 <strong>달리기를 멈추면 사라지는</strong> 게 특징입니다. 아래라면 다른 문제일 수 있으니 무리하지 말고 진료를 받으세요.</p>
-    <ul>
-      <li>운동을 멈춰도 통증이 <strong>계속되거나 점점 심해질 때</strong></li>
-      <li>오른쪽 윗배(갈비뼈 아래)가 <strong>쥐어짜듯 심하게</strong> 아프거나 발열·구토를 동반할 때(담낭·간 문제 가능)</li>
-      <li>가슴 압박감, 식은땀, 어지럼을 동반할 때 — <strong>즉시 중단하고 응급 대응</strong></li>
-      <li>매번 같은 자리에 <strong>찌르는 통증이 반복</strong>될 때</li>
-    </ul>
-  </div>
-</div>
-
-<h2>자주 묻는 질문</h2>
-<h3>Q. 통증이 오면 멈춰야 하나요, 참고 뛰어야 하나요?</h3>
-<p>멈출 필요는 없지만 <strong>참고 그대로 뛰는 건 금물</strong>입니다. 속도를 낮추고 위의 4단계를 적용하면 달리면서도 가라앉는 경우가 많습니다.</p>
-
-<h3>Q. 왜 항상 오른쪽만 아플까요?</h3>
-<p>간이 오른쪽 윗배에 있어 그쪽 인대가 더 자극받기 때문이라는 설명이 유력합니다. 왼쪽에 오는 경우도 있으니 위치만으로 걱정할 필요는 없습니다.</p>
-
-<h3>Q. 신발이나 자세도 영향이 있나요?</h3>
-<p>상하 진동이 크면 인대 자극도 커지므로, <strong>쿠션이 받쳐주는 신발과 안정적인 상체 자세</strong>가 간접적으로 도움이 됩니다. 입문 단계라면 <a href="/blog/first-running-shoe-guide-2026">첫 러닝화 고르는 법</a>부터 점검해 보세요. 무릎 등 다른 통증이 함께 있다면 <a href="/blog/knee-pain-running-shoes">러닝 무릎 통증 가이드</a>도 참고하세요.</p>
-
-<h3>Q. 거리를 늘리면 더 자주 생기나요?</h3>
-<p>오히려 반대인 경우가 많습니다. <a href="/blog/lsd-training-beginner-guide-korea">LSD(천천히 길게) 훈련</a>처럼 편한 페이스로 꾸준히 달리면 호흡·코어가 적응해 통증 빈도가 줄어듭니다. 문제는 거리가 아니라 <strong>갑작스러운 페이스</strong>입니다.</p>
-
-<h2>마무리</h2>
-<p>러닝 중 옆구리 통증은 <strong>"내 몸이 아직 달리기에 적응 중"</strong>이라는 신호에 가깝습니다. 부상이 아니니 겁먹지 말고, 통증이 오면 <strong>속도↓ · 깊은 날숨 · 부위 압박 · 호흡 박자</strong> 4단계로 다스리세요. 그리고 식사 타이밍과 워밍업, 복식호흡만 챙겨도 다음 러닝부터 확연히 줄어듭니다. 달리는 횟수가 쌓일수록 옆구리는 점점 조용해집니다. 🏃</p>
-
-<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 일반적인 러닝 건강 정보로, 개인의 의학적 진단을 대체하지 않습니다. 운동과 무관하게 지속되거나 심한 복통은 반드시 의료진의 진료를 받으세요. (참고 글감: @runninglife_korea RIFEWIKI, 2026-06-05)</p>
-`,
+<h2>자주 묻는 질문</h2><h3>옆구리 통증은 무조건 횡격막 경련인가요?</h3><p>정확한 원인은 하나로 확정되지 않았습니다. 연구는 여러 가능성을 논의하며, 달리면서 생긴 모든 복통을 ETAP라고 진단할 수도 없습니다.</p><h3>반대쪽 발을 디딜 때 내쉬면 바로 낫나요?</h3><p>모든 사람에게 검증된 즉시 치료로 제시하지 않습니다. 먼저 속도를 낮추고 필요한 경우 멈춰 편한 호흡으로 상태를 살펴야 합니다.</p><h3>언제 진료를 받아야 하나요?</h3><p>반복되거나 운동과 무관하게 생기거나 멈춘 뒤에도 완화되지 않으면 평가가 필요합니다. 갑작스럽고 심한 통증이나 출혈, 호흡곤란 등은 응급 도움을 받아야 합니다.</p>`,
+    updatedAt: "2026-11-10",
+    faqs: [
+      {
+        "question": "옆구리 통증은 무조건 횡격막 경련인가요?",
+        "answer": "정확한 원인은 하나로 확정되지 않았습니다. 연구는 여러 가능성을 논의하며, 달리면서 생긴 모든 복통을 ETAP라고 진단할 수도 없습니다."
+      },
+      {
+        "question": "반대쪽 발을 디딜 때 내쉬면 바로 낫나요?",
+        "answer": "모든 사람에게 검증된 즉시 치료로 제시하지 않습니다. 먼저 속도를 낮추고 필요한 경우 멈춰 편한 호흡으로 상태를 살펴야 합니다."
+      },
+      {
+        "question": "언제 진료를 받아야 하나요?",
+        "answer": "반복되거나 운동과 무관하게 생기거나 멈춘 뒤에도 완화되지 않으면 평가가 필요합니다. 갑작스럽고 심한 통증이나 출혈, 호흡곤란 등은 응급 도움을 받아야 합니다."
+      }
+    ],
   },
   {
     id: "li-ning-red-hare-9-ultra-truth-2026",
