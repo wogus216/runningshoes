@@ -2988,489 +2988,67 @@ export const posts_2026_05: BlogPost[] = [
     ],
   },
   {
-    id: 'asics-magic-speed-4-vs-5-comparison',
-    slug: 'asics-magic-speed-4-vs-5-comparison',
-    title: '아식스 매직스피드 4 vs 5 비교 | 36g 차이의 의미 — 풀렝스 카본 4 살까, 201g 신상 5 살까',
-    description: '매직스피드 4(237g/199,000원)와 5(201g/209,000원)을 풀데이터로 직접 비교. 36g 경량화(실측) + 풀렝스 → 포크형 카본 전환 + FF Leap 듀얼 폼 + km당 비용 ₩569→₩523 개선. 가성비 카본 입문에 4와 5 중 누가 답인지 상황별 매트릭스로 정리.',
-    thumbnail: '/images/blog/asics-magic-speed-4-vs-5-comparison.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-05-25',
-    category: 'review' as const,
-    readingTime: 10,
-    tags: ['아식스 매직스피드', '매직스피드 4', '매직스피드 5', '러닝화 비교', '아식스', '가성비 카본', '카본 입문', '러닝화 추천'],
+    id: "asics-magic-speed-4-vs-5-comparison",
+    slug: "asics-magic-speed-4-vs-5-comparison",
+    title: "매직스피드4 vs5 —36g 차이·스택·앞코·카본 전환 비교",
+    description: "두 세대 전장 카본과 다른 스택·폼·검체를 구분합니다.5의201g을 공시196g과 섞지 않고 인솔·핏 한계도 정리했습니다.",
+    thumbnail: "/images/shoes/asics/magicspeed4/1.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-05-25",
+    category: "review",
+    readingTime: 8,
+    tags: [
+      "매직스피드4",
+      "매직스피드5",
+      "핏",
+      "원문 대조"
+    ],
     content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>36g 차이의 무게</strong> (4 237g / 5 201g, RunRepeat 실측) — 한국 가성비 카본 시장에서 <strong>"풀렝스 카본의 4" vs "초경량 포크형 5"</strong>로 명확히 갈림</li>
-    <li>5의 진짜 변화 3가지: <strong>포크형 카본 → 힐스트라이커도 자연스러운 전환</strong> + <strong>FF Leap + FF Blast+ 듀얼 폼 (에너지 리턴 64.6%)</strong> + <strong>400km 내구성으로 km당 ₩523</strong></li>
-    <li>대신 5는 힐 스택 -7.2mm (42.5 → 35.3mm, 실측) — 풀코스 후반 쿠션 욕심나면 4 이월 가격 더 매력적. 20만원 안팎 카본 입문에서 둘 다 합리적</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">📊</span>
-  <div class="callout-body">
-    <p class="callout-title">이 글의 데이터 소스</p>
-    <p>아식스 한국 공식몰 가격(2026-05-25 기준) + Believe in the Run·Road Trail Run 리뷰. 양 신발 단독 분석은 <a href="/shoes/asics-magic-speed-4">매직스피드 4 상세</a> · <a href="/shoes/asics-magic-speed-5">매직스피드 5 상세</a>에서 확인.</p>
-  </div>
-</div>
-
-<h2>한눈에 비교</h2>
-
-<table>
-  <thead>
-    <tr><th>항목</th><th>매직스피드 4</th><th>매직스피드 5</th><th>차이</th></tr>
-  </thead>
-  <tbody>
-    <tr><td><strong>출시</strong></td><td>2024년</td><td><strong>2026년</strong></td><td>2년차 vs 신상</td></tr>
-    <tr><td><strong>MSRP</strong></td><td>199,000원</td><td><strong>209,000원</strong></td><td>+10,000원</td></tr>
-    <tr><td><strong>이월/세일가</strong></td><td><strong>165,000~185,000원</strong></td><td>정가 209,000원 (신상)</td><td>실제 차이 ~2~4만원</td></tr>
-    <tr><td><strong>무게 (US M9)</strong></td><td>237g</td><td><strong>201g</strong></td><td><strong>-36g (-15%)</strong></td></tr>
-    <tr><td><strong>힐 스택</strong></td><td>42.5mm</td><td>35.3mm</td><td>-7.2mm</td></tr>
-    <tr><td><strong>전족부 스택</strong></td><td>32.9mm</td><td>26.6mm</td><td>-6.3mm</td></tr>
-    <tr><td><strong>드롭</strong></td><td>8mm</td><td>7mm</td><td>-1mm</td></tr>
-    <tr><td><strong>미드솔</strong></td><td>FF Blast+ + FF Turbo</td><td><strong>FF Leap + FF Blast+</strong></td><td>신소재 듀얼</td></tr>
-    <tr><td><strong>카본 플레이트</strong></td><td><strong>풀렝스</strong></td><td><strong>포크형 (3/4)</strong></td><td>유연성 ↑, 입문 친절</td></tr>
-    <tr><td><strong>에너지 리턴 (힐 / 전족)</strong></td><td>약 60% (참고치)</td><td>64.6% / 62.6%</td><td>+4~5%p</td></tr>
-    <tr><td><strong>토박스</strong></td><td>표준</td><td>표준</td><td>동일</td></tr>
-    <tr><td><strong>한국 와이드 SKU</strong></td><td>없음</td><td>2E 있음</td><td>5만 ✅</td></tr>
-    <tr><td><strong>내구성</strong></td><td>350km</td><td>400km</td><td>+50km</td></tr>
-    <tr><td><strong>km당 비용</strong></td><td>약 ₩569</td><td><strong>약 ₩523</strong></td><td><strong>-₩46 개선</strong></td></tr>
-    <tr><td><strong>최적 페이스</strong></td><td>3:30~5:00/km</td><td>3:30~5:00/km</td><td>동일</td></tr>
-  </tbody>
-</table>
-
-<h2>5의 진짜 변화 3가지</h2>
-
-<h3>1. 무게 -36g — 같은 라인업 중에서 가장 큰 폭의 경량화</h3>
-
-<p>237g → 201g(실측), <strong>-15% 경량화</strong>는 비교 시리즈에서 본 변화 중 압도적으로 큰 폭입니다. 페가수스 41 → 42가 +5g(쿠션 강화 트레이드오프), NB 1080 v14 → v15가 약 -30g(실측)이었는데 매직스피드는 카본 레이서치고는 큰 폭의 다이어트입니다.</p>
-
-<p><strong>무게 차이의 의미</strong>: 한 발 36g(-15%) 차이는 1km 반복 인터벌이나 하프 후반처럼 다리를 오래 반복해 들어 올리는 구간에서 누적될 가능성이 있습니다.</p>
-
-<h3>2. 포크형 카본 — 풀렝스 대비 자연스러운 전환</h3>
-
-<p>매직스피드 4의 풀렝스 카본은 강한 추진력을 주지만 <strong>전족부 착지가 안 되면 카본 효과가 반감</strong>되는 단점이 있었습니다. 힐스트라이커에게는 전환이 어색하게 느껴질 수 있습니다.</p>
-
-<p>5는 카본을 <strong>3/4 포크형으로 바꿔서 전족부에만 위치</strong>합니다. 메타스피드 레이의 3/4 카본과 같은 사상으로, 힐스트라이커가 자연스럽게 미드풋·포어풋 전환할 수 있도록 도와줍니다. <strong>카본 입문자에게 결정적 친절함</strong>입니다.</p>
-
-<h3>3. FF Leap + FF Blast+ 듀얼 폼 — 에너지 리턴 64.6%</h3>
-
-<p>전작의 FF Blast+ + FF Turbo 조합이 FF Leap(상층) + FF Blast+(하층) <strong>듀얼 구조</strong>로 바뀌었습니다. FF Leap는 메타스피드 레이에 들어간 ATPU 폼 — 가볍고 탄성이 높은 신소재입니다.</p>
-
-<p>그 결과 <strong>에너지 리턴 64.6%(힐) / 62.6%(전족부)</strong>의 명확한 수치 개선. 매직스피드 4 시절엔 정확한 에너지 리턴 수치 공개가 없었지만 5는 RunRepeat 실측 + 공식 데이터 모두 공개됐습니다.</p>
-
-<h2>가격 시나리오 — v4 이월 vs v5 신상</h2>
-
-<div class="callout success">
-  <span class="callout-icon">💰</span>
-  <div class="callout-body">
-    <p class="callout-title">2026 5~12월 매직스피드 가격 전망</p>
-    <ul>
-      <li><strong>지금 (2026 5월):</strong> 4 17~19만원 (이월 풀림) / 5 20만 9천원 정가 → 가성비는 4 압승, 신상은 5</li>
-      <li><strong>여름 시즌오프 (7~8월):</strong> 4 16~17만원 / 5 정가 20만 9천원에서 일부 할인 시작 → 4 가성비 정점</li>
-      <li><strong>가을 시즌인 (9~10월):</strong> 4 17~18만원 (재고 빠지기 시작) / 5 정가 20만 9천원 안정 → 4 사이즈 빠짐 주의</li>
-      <li><strong>블랙프라이데이 (11월):</strong> 4 13~15만원 (특가) / 5 18~20만원 → 양쪽 모두 매력적</li>
-      <li><strong>12월~2027년 1월:</strong> 4 사실상 단종 임박 / 5 18~20만원 안정 → 5 위주로 흐름 전환</li>
-    </ul>
-  </div>
-</div>
-
-<h2>상황별 구매 결정 매트릭스</h2>
-
-<table>
-  <thead>
-    <tr><th>상황</th><th>추천</th><th>이유</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>첫 카본 슈즈 + 힐스트라이커</td><td><strong>5 (정가 또는 세일)</strong></td><td>포크형 카본이 자연스러운 전환 도와줌</td></tr>
-    <tr><td>가성비 우선 + 풀렝스 카본 선호</td><td><strong>4 이월 17~19만원</strong></td><td>2~4만원 절약 + 풀렝스 추진력</td></tr>
-    <tr><td>인터벌·하프 PB 도전</td><td>5</td><td>-36g 경량이 후반부 결정적</td></tr>
-    <tr><td>풀코스 30~35km까지 카본 사용</td><td>4</td><td>42.5mm 힐 스택(실측)이 후반 쿠션 우위</td></tr>
-    <tr><td>대회 + 템포 훈련 병용</td><td>5</td><td>400km 내구성 + km당 ₩523 가성비</td></tr>
-    <tr><td>발볼 4E급</td><td>둘 다 비추</td><td>4는 와이드 ❌, 5는 2E까지 → <a href="/shoes/asics-metaspeed-sky-plus">메타스피드 스카이+ 와이드</a></td></tr>
-    <tr><td>예산 18만원 이하</td><td>4 블프 세일</td><td>13~15만원대 진입 가능, 카본 입문 끝장 가성비</td></tr>
-  </tbody>
-</table>
-
-<h2>다른 카본 레이서와 비교</h2>
-
-<ul>
-  <li><strong><a href="/shoes/saucony-endorphin-speed-5">사우코니 엔돌핀 스피드 5</a> (238g, 21.9만원)</strong> — 5와 비슷한 무게대. 카본이 아닌 나일론 플레이트라 부담 적음. 카본 vs 나일론 차이가 결정 포인트</li>
-  <li><strong><a href="/shoes/nike-zoom-fly-6">나이키 줌 플라이 6</a> (248g, 20.9만원)</strong> — 풀렝스 카본 + ZoomX 폼. 4의 직접 대안. 폼 차이로 더 부드러움</li>
-  <li><strong><a href="/shoes/asics-metaspeed-sky-plus">아식스 메타스피드 스카이+</a> (205g, 32.9만원)</strong> — 진짜 엘리트 카본. 매직스피드 5보다 가격 +12만원 + 250km 짧은 내구성. <strong>레이스 전용 비싸짐</strong></li>
-  <li><strong><a href="/shoes/saucony-endorphin-pro-5">엔돌핀 프로 5</a> (215g, 29.9만원)</strong> — 풀카본 + PWRTRAC. 평발 친절(토박스는 69.3mm로 좁은 편). 매직스피드보다 무게 ↑ 가격 ↑</li>
-</ul>
-
-<h2>FAQ</h2>
-
-<h3>Q. 첫 카본화로 4와 5 중에 뭐가 좋나요?</h3>
-<p><strong>힐스트라이커라면 5</strong> 권장. 포크형 카본이 강제 전족부 착지 부담 없이 자연스러운 전환을 만들어줍니다. <strong>이미 포어풋·미드풋 착지에 익숙</strong>하다면 4 이월이 가성비. 풀렝스 카본의 강한 추진력을 즐길 수 있습니다.</p>
-
-<h3>Q. 풀코스 카본화로 적합한가요?</h3>
-<p>둘 다 <strong>풀코스 권장은 아닙니다</strong>. 매직스피드는 본질적으로 "가성비 카본 입문 + 인터벌·하프 레이서"입니다. Sub-3:15 이하 풀코스 도전이면 <a href="/shoes/saucony-endorphin-pro-5">엔돌핀 프로 5</a>나 <a href="/shoes/nike-alphafly-3">알파플라이 3</a> 권장. Sub-3:30~Sub-4 풀코스 + 가성비 우선이면 4의 42.5mm(실측) 힐 스택이 약간 유리합니다.</p>
-
-<h3>Q. 발볼 넓은데 매직스피드 살 수 있나요?</h3>
-<p><strong>4는 와이드 옵션 없음, 5는 2E(와이드) 상품 있음</strong>. 토박스는 둘 다 표준이라 발볼 standard~약간 좁음 러너에게 맞습니다. 발볼 2E라면 매직스피드 5 2E, 그 이상이면 <a href="/shoes/asics-metaspeed-sky-plus">메타스피드 스카이+ 와이드</a> 권장. 또는 매장 착화로 확인하세요.</p>
-
-<h3>Q. 5가 힐 스택이 7.2mm(실측) 줄었는데 무릎 부담은?</h3>
-<p>힐 35.3mm(실측)도 여전히 데일리 트레이너 수준 쿠션입니다 (페가수스 42가 36mm). 다만 <strong>5는 인터벌·하프 페이스 전용</strong>이라 무릎 약한 러너가 풀코스에 쓰면 후반부 부담 가능. 무릎 이력 있다면 데일리는 페가수스 42·1080 v15 같은 데일리 트레이너로 분리하고, 매직스피드는 페이스 훈련 + 레이스 전용으로만 운용하세요. <a href="/blog/knee-pain-running-shoes">무릎 통증 러너 가이드 →</a></p>
-
-<h3>Q. 4 이월이 매력적인데 사이즈 빨리 빠지나요?</h3>
-<p>네, <strong>5월 말부터 가을까지 인기 사이즈(260~275mm) 빠르게 빠집니다</strong>. 본인 사이즈가 표준 영역이면 7~8월 시즌오프 16~17만원 시점에서 잡는 게 안전. 블프(11월) 13~15만원까지 기다리면 사이즈 못 잡을 위험.</p>
-
-<h2>결론 — 내 추천</h2>
-
-<div class="callout success">
-  <span class="callout-icon">🎯</span>
-  <div class="callout-body">
-    <p class="callout-title">무게·전환 부드러움 vs 풀렝스 추진력·가성비로 명확히 갈리는 선택</p>
-    <p><strong>첫 카본 슈즈 + 힐스트라이커</strong>라면 <a href="/shoes/asics-magic-speed-5">매직스피드 5</a> 정가 20만 9천원 또는 7~8월 할인 시. 포크형 카본 + 201g(실측) 경량 + FF Leap 듀얼 폼은 카본 입문에 가장 친절한 조합입니다.</p>
-    <p><strong>풀렝스 카본 추진력 + 가성비 우선</strong>이라면 <a href="/shoes/asics-magic-speed-4">매직스피드 4</a> 이월 17~19만원. 5보다 2~4만원 절약 + 42.5mm(실측) 힐 스택의 풀코스 후반 쿠션 + 풀렝스 카본의 직진성. 블프 13~15만원까지 갈 가능성 있지만 사이즈 빠짐 주의.</p>
-    <p><strong>발볼 4E급 한국 러너</strong>는 둘 다 적합하지 않습니다. 4는 와이드 옵션이 없고 5도 2E까지라 토박스 압박 가능. <a href="/shoes/asics-metaspeed-sky-plus">메타스피드 스카이+ 와이드</a>도 선택지입니다.</p>
-  </div>
-</div>
-
-<div class="affiliate-cta">
-  <p class="affiliate-cta-label">바로 구매</p>
-  <div class="affiliate-cta-buttons">
-    <a href="https://naver.me/xll2P3cx" class="affiliate-btn naver" target="_blank" rel="nofollow sponsored noopener">
-      <span class="affiliate-btn-store">네이버</span>
-      <span class="affiliate-btn-product">매직스피드 4 최저가 →</span>
-    </a>
-    <a href="https://naver.me/F05U5V3H" class="affiliate-btn naver" target="_blank" rel="nofollow sponsored noopener">
-      <span class="affiliate-btn-store">네이버</span>
-      <span class="affiliate-btn-product">매직스피드 5 최저가 →</span>
-    </a>
-  </div>
-  <p class="affiliate-disclosure">광고 표기: 위 링크는 네이버 브랜드 커넥트 추적 코드가 포함되며, 일정 수수료를 받을 수 있습니다.</p>
-</div>
-
-<p>본인 발 특성·부상 이력에 맞춘 신발 후보는 <a href="/recommend">1분 러닝화 추천</a>에서 받을 수 있습니다.</p>
-
-<h2>다른 카테고리 세대 비교</h2>
-
-<p>매직스피드가 "가성비 카본 레이서"라면, 본인 러닝 목적에 맞춰 다음 카테고리도 같이 보세요. 모두 동일 비교 포맷.</p>
-
-<ul>
-  <li><a href="/blog/saucony-endorphin-pro-4-vs-5-comparison">엔돌핀 프로 4 vs 5 — 풀카본 가성비 비교</a> (Sub-3:30 ~ Sub-4 풀코스 레이스)</li>
-  <li><a href="/blog/nike-vaporfly-4-vs-alphafly-3-comparison">베이퍼플라이 4 vs 알파플라이 3 — 카본 슈퍼슈즈</a> (Sub-3 도전·엘리트 레이스)</li>
-  <li><a href="/blog/asics-superblast-2-vs-3-comparison">슈퍼블라스트 2 vs 3 — 카본 없는 슈퍼트레이너</a> (장거리 페이스 훈련 분리용)</li>
-  <li><a href="/blog/nike-pegasus-41-vs-42-comparison">페가수스 41 vs 42 — 데일리 트레이너</a> (매직스피드와 데일리 분리할 때)</li>
-  <li><a href="/blog/asics-kayano-32-vs-33-comparison">카야노 32 vs 33 — 안정화</a> (평발·과내전 카본 부담될 때 데일리)</li>
-</ul>
-
-<h2>관련 글</h2>
-
-<ul>
-  <li><a href="/blog/carbon-plate-running-shoes-lineup-tier-guide-2026">카본 플레이트 슈즈 비교 — 한국 시장 전반</a></li>
-  <li><a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너 추천 신발 — 토박스 실측 정리</a></li>
-  <li><a href="/blog/knee-pain-running-shoes">무릎 통증 러너 신발 가이드</a></li>
-  <li><a href="/blog/marathon-pacing-mental-strategy-guide">마라톤 페이싱·멘탈 전략 가이드</a></li>
-</ul>
-
-<p><small>출처: 아식스 한국 공식몰 가격(2026-05-25 기준) / 매직스피드 4·5 신발 DB 풀데이터 / Believe in the Run·Road Trail Run 리뷰. 가격은 시즌·세일에 따라 변동되니 구매 시점 공식몰·이월 행사 확인 필수.</small></p>
+<p><strong>2026-11-10 원문 대조 업데이트.</strong> 11월9~10일 확인한 정확 모델 자료를 바탕으로 공시·검체·개인 착화 의견을 나눴습니다. 자체 착화 후기는 아닙니다.</p><h2>선택에서 먼저 볼 차이</h2><p>RR 검체에서 4는 237g,5는 201g입니다.36g 차이는 같은 한국 구매 규격의 차이나 개인 기록 개선량으로 환산하지 않습니다. 스택·전족 공간·폼도 함께 달라졌습니다.</p><p>두 모델 모두 전장 카본 구조를 확인했으며 5의 분기형 설계와 전장이라는 길이 설명은 모순이 아닙니다. 판 유무만으로 쉬운 훈련·레이싱 용도를 자동 배정하지 않습니다.</p><figure><img src="/images/shoes/asics/magicspeed4/1.webp" alt="매직스피드4 제품 자료 이미지" loading="lazy"/><figcaption>매직스피드4 — 수치와 세대 조건은 본문 원문을 확인하세요.</figcaption></figure><div class="table-wrap"><table><thead><tr><th>모델</th><th>무게·측정 조건</th><th>힐/전족 스택 · 드롭</th><th>힐/전족 SA</th><th>힐/전족 리턴</th><th>내부 최광폭/엄지/높이</th></tr></thead><tbody><tr><td>매직스피드4</td><td>237g · RR 검체</td><td>42.5/32.9mm · 9.6mm</td><td>144/122</td><td>55.5/61.8%</td><td>93.6/74.3/26.1mm</td></tr><tr><td>매직스피드5</td><td>201g · RR 검체</td><td>35.3/26.6mm · 8.7mm</td><td>149/112</td><td>64.6/62.6%</td><td>95.1/71.9/25.7mm</td></tr></tbody></table></div><h2>표를 읽는 범위</h2><p>RR 검체와 별도 표시한 DOR 소개 공시는 다른 자료입니다. DOR 소개를 독립 랩 실측으로 표시하지 않습니다. RR 일반 정책은 남성 US9지만 개별 라벨·폭·보정 여부는 미확인이고, 실제 검체 조건이 밝혀진 경우는 본문에 남겼습니다.</p><p>SA·리턴·정적 드롭은 개인의 통증·기록·동작 중 드롭을 입증하지 않습니다. 내부 너비·높이와 한국 다른 성별·와이드 치수도 다릅니다. 미확인은 0으로 채우지 않았습니다. <a href="https://runrepeat.com/testing-methodology" target="_blank" rel="noopener noreferrer">RR 측정법</a></p><h2>매직4의 인솔과 매직5의 공시를 확인하기</h2><p>4는 RR에서 인솔 제거 가능, DOR Matt 검체에서는 접착돼 제거 불가였다고 적었습니다. 이유를 제조 시기 차이로 단정하지 말고 개인 인솔을 쓰려면 구매 실물을 확인하세요.</p><p>5의 한국 196g은 기준 사이즈 미확인, 해외 공시 193g은 남성US9, RR은 201g입니다. 서로 다른 수치를 평균내지 않았습니다. 내부 엄지 부위·높이가 달라 새 규격에서도 앞코와 끈 압박을 다시 확인할 수 있습니다.</p><h2>매직스피드4의 구조·공시</h2><p>전장 FF BLAST PLUS · 전족 FF TURBO 부분삽입 · 전장 카본</p><p>전장 카본 플레이트. 제조사·DOR의 지오메트리 설명을 공인대회 사용가능 판정이나 임상 보호로 확대하지 않습니다.</p><p>DOR 소개 남성 242g(US9)·43.5/35.5mm,여성 207g(US8)·42.5/34.5mm,드롭 8mm. RR237g·42.5/32.9mm·9.6mm와 성별·사이즈를 구분합니다.</p><h2>매직스피드4의 실제 착화에서 갈린 점</h2><p>DOR의 Matt(남성US10)은 길이는 맞지만 앞코 테이퍼 때문에 약간 짧게 느끼고 뒤 패딩 마찰을 언급했습니다. David(남성US9.5)은 길이가 맞고 부드러운 어퍼를 느꼈지만 전환이 둔하고 높고 좁은 플랫폼 때문에U턴을 조심했다고 적었습니다. 개인 선호를 공통 3분 30초~5분페이스·하프 전용으로 정하지 않습니다.</p><p>한국 현재 와이드 SKU는 미확인입니다. RR 내부 최광폭 93.6mm·엄지 74.3mm·높이 26.1mm를 함께 보되 전체 폭·길이·개인 핏을 한 숫자로 판정하지 않습니다.</p><h2>매직스피드4에서 함께 남긴 한계</h2><p>RR은 인솔을 접착하지 않아 제거 가능하다고 설명하지만 DOR Matt검체는 접착돼 제거 불가였다고 합니다. 원인을 확정하지 않고 구매할 실물의 인솔을 확인하세요. 주폼 31.7AC·FFTurbo부분삽입 33.9AC와 두 리뷰어의 단단한 전체 주행감은 다른 지표입니다.</p><h2>매직스피드4의 한국 판매 확인 범위</h2><p>한국 공식 남성 1011B875.751(AKR_112511102-751) 정가 199,000원·확인 시 판매 159,200원,265/270/275/280/290mm 선택기 옵션을 확인했습니다.242g은 270mm 공시입니다. 현재 여성·와이드 한국SKU·최종주문재고는 미확인입니다.</p><h2>매직스피드5의 구조·공시</h2><p>FF LEAP 상층 + FF BLAST PLUS 하층 · 분기형 카본 보강</p><p>싱가포르 공식은 full-length carbon plate, 제조사 뉴질랜드 기고는 carbon-infused TPU, RR은 전족 분기형 카본으로 적었습니다. 첫 절단면의 70%처럼 보인다는 설명만으로 단판 길이를 확정하거나 100% 카본 섬유 조성을 보장하지 않습니다.</p><p>한국 기본 상품 공시 196g은 측정 사이즈 미표기입니다. 뉴질랜드 제조사 기고는 남성 US9 193g·37.5/30.5mm·7mm, 싱가포르 공식은 드롭 7mm입니다. RR 201g·35.3/26.6mm·8.7mm와 구분합니다.</p><h2>매직스피드5의 실제 착화에서 갈린 점</h2><p>정확한 매직스피드 5의 DOR 개별 착화 리뷰는 확인하지 못했습니다. 1~4세대 리뷰를 5의 후기처럼 옮기지 않았습니다. RR의 내부 치수·굽힘 13.1N과 전족 분기 형상을 확인했지만 입문자 누구나 적응하기 쉽거나 힐 착지에서 발목 부담이 적다는 보장은 아닙니다.</p><p>RR 내부 최광폭 95.1mm·엄지 71.9mm·높이 25.7mm는 한국 2E 검체라고 확인된 값이 아닙니다. 기본과 2E를 비교하되 모든 발에 반업을 처방하지 않습니다.</p><h2>매직스피드5에서 함께 남긴 한계</h2><p>27.0AC·보조 37.0AC와 13.1N 굽힘은 서로 다른 시험입니다. BR79·건조율 57%를 구방식 통기 1~5와 직접 비교하지 않습니다. 다른 카본화 대비 개인 기록 향상률·후반 탄성·400km 수명은 미확인으로 제거했습니다.</p><h2>매직스피드5의 한국 판매 확인 범위</h2><p>한국 남녀공용 기본 1013A183.101·2E 1013A184.400은 확인 표시 가격 209,000원입니다. 기본은 240/245/250/260~290mm, 확인 2E는 230~290mm가 선택 가능이었습니다. 기본의 정확한 문자 폭은 미확인입니다. 사이즈 UI는 결제 재고 보장이 아닙니다.</p><h2>매장에서 비교할 질문</h2><p>평소 양말·인솔로 앞쪽 길이와 발톱 위 높이, 끈을 조일 때 발등 압박, 걷고 돌 때 힐 고정과 칼라 마찰을 확인하세요. 앞볼이 넓다는 인상만으로 앞코 전체 높이나 중족 공간까지 맞는다고 가정하지 않습니다.</p><p>몇 분/km면 무조건 이 모델, 몇 km부터 통증이 줄어든다는 공통 경계는 이 자료에서 확인하지 못했습니다. 평발·부상 이력만으로 모델을 처방하거나 국소 마모를 공통 수명으로 환산하지 않았습니다.</p><h2>확인한 원문·상품 조건</h2><ul><li><a href="https://runrepeat.com/asics-magic-speed-4" target="_blank" rel="noopener noreferrer">매직스피드4 RR 정확 모델</a> — 실험실 검체·공시를 구분.</li><li><a href="https://www.doctorsofrunning.com/asics-magic-speed-4-review-2024/" target="_blank" rel="noopener noreferrer">매직스피드4 DOR 착화 원문</a> — 실제 리뷰어·규격의 개인 의견.</li><li><a href="https://www.asics.co.kr/p/AKR_112511102-751" target="_blank" rel="noopener noreferrer">ASICS 한국 남성1011B875.751</a> — 정가199000원·확인시할인가159200원. 한국공시242g은270mm조건.</li><li><a href="https://asics.co.kr/goods/search?search_text=%EB%A7%A4%EC%A7%81%20%EC%8A%A4%ED%94%BC%EB%93%9C%204" target="_blank" rel="noopener noreferrer">매직스피드4 한국 공식 확인 상품</a> — 본문 SKU·성별·확인 시점 조건. 현재 재고 보장 아님.</li><li><a href="https://runrepeat.com/asics-magic-speed-5" target="_blank" rel="noopener noreferrer">매직스피드5 RR 정확 모델</a> — 실험실 검체·공시를 구분.</li><li><a href="https://www.asics.co.kr/p/AKR_112631103-101" target="_blank" rel="noopener noreferrer">한국 1013A183.101 · 문자 폭 미확인</a> — 표시 가격 209,000원. 확인 사이즈 조건은 본문 참조.</li><li><a href="https://m.asics.co.kr/p/AKR_112611104-400" target="_blank" rel="noopener noreferrer">한국 1013A184.400 · 2E</a> — 표시 가격 209,000원. 확인 사이즈 조건은 본문 참조.</li><li><a href="https://www.asics.com/sg/en-sg/magic-speed-5/p/1013A183-400.html" target="_blank" rel="noopener noreferrer">ASICS 동세대 구조 원문 · 출처별 차이 보존</a> — ExactMagic Speed5 official: FF LEAP +FF BLAST PLUS,7mm, full-length carbon plate,ASICSGRIP; no KR price/stock inference.</li><li><a href="https://www.asics.com/nz/en-nz/medical/review/magic-speed-5-review" target="_blank" rel="noopener noreferrer">ASICS 동세대 구조 원문 · 출처별 차이 보존</a> — Technical wording only: Aaron Jackson calls plate full-length carbon-infused TPU;193g menUS9,37.5/30.5mm,7mm. No clinical/pace conclusion adopted.</li></ul>
 `,
+    updatedAt: "2026-11-10",
+    faqs: [
+      {
+        "question": "매직4만 전장 카본인가요?",
+        "answer": "5도 전장100%카본 섬유로 공시됐으며 분기형 형태와 전장 길이를 구분합니다."
+      },
+      {
+        "question": "5가36g 가벼우면 더 빠른가요?",
+        "answer": "검체 무게 차이와 개인의 기록·전환은 다른 결과입니다."
+      }
+    ],
   },
   {
-    id: 'asics-superblast-2-vs-3-comparison',
-    slug: 'asics-superblast-2-vs-3-comparison',
-    seoTitle: '아식스 슈퍼블라스트 2 vs 3 비교 — 쿠션·발볼·가격 차이',
-    title: '아식스 슈퍼블라스트 2 vs 3 비교 | FF Turbo+ "템포 무기" vs FF LEAP "롱런 부드러움" — 와이드 옵션 v2 vs 스택 +3.0mm v3, 카본 없는 슈퍼슈즈 가성비',
-    description: '슈퍼블라스트 2(252g/249,000원)와 3(235g/259,000원)을 RunRepeat 실측 + 외부 리뷰로 비교. -17g 경량화 + FF Turbo+ 단일 → FF LEAP+BLAST PLUS 듀얼 폼 교체 + 스택 +3.0mm(실측). v3가 와이드 옵션 제거된 함정과 v2 이월 가성비 시나리오, 첫 슈퍼트레이너 입문 매트릭스.',
-    thumbnail: '/images/blog/asics-superblast-2-vs-3-comparison.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-05-17',
-    category: 'review' as const,
-    readingTime: 12,
-    tags: ['아식스 슈퍼블라스트', '슈퍼블라스트 2', '슈퍼블라스트 3', 'Asics', '슈퍼트레이너', 'FF Turbo+', 'FF LEAP', '카본 없는 슈퍼슈즈', 'PEBA 폼', '템포런', '롱런'],
+    id: "asics-superblast-2-vs-3-comparison",
+    slug: "asics-superblast-2-vs-3-comparison",
+    seoTitle: "아식스 슈퍼블라스트 2 vs 3 비교 — 쿠션·발볼·가격 차이",
+    title: "슈퍼블라스트2 vs3 —두 폼·스택·앞코·전환, 상위 등급 없이 비교",
+    description: "2의FF TURBO+·FF BLAST PLUS ECO와3의FF LEAP·FF BLAST PLUS를 구분합니다. 한국 와이드·현재 가격·체감 차이를 단정하지 않습니다.",
+    thumbnail: "/images/shoes/asics/superblast2/1.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-05-17",
+    category: "review",
+    readingTime: 8,
+    tags: [
+      "슈퍼블라스트2",
+      "슈퍼블라스트3",
+      "핏",
+      "원문 대조"
+    ],
     content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li>가격 차이 1만원 (v2 249,000원 / v3 259,000원). 단 <strong>v2 이월 21~23만원 풀림</strong>, 실제 차이 3~5만원</li>
-    <li>방향 자체가 다름: <strong>v2 = FF Turbo+ 단일 PEBA "템포·인터벌 무기"</strong>, <strong>v3 = FF LEAP + FF BLAST PLUS 듀얼 "롱런·MP 부드러움"</strong></li>
-    <li>한국 러너 핵심 함정: <strong>v3는 와이드 옵션 제거</strong>. 발볼 넓으면 v2 와이드 잡아야 함. 표준 발볼 + 풀코스 페이스 훈련은 v3 권장</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">📊</span>
-  <div class="callout-body">
-    <p class="callout-title">이 글의 데이터 소스</p>
-    <p>RunRepeat 슈퍼블라스트 2·3 실측(전족 에너지 리턴 65.5%·67.5%) + Believe in the Run / Road Trail Run 리뷰 + 한국 아식스 공식몰 가격(2026-05-17 기준). 양 신발 단독: <a href="/shoes/asics-superblast-2">슈퍼블라스트 2 상세</a> · <a href="/shoes/asics-superblast-3">슈퍼블라스트 3 상세</a>.</p>
-  </div>
-</div>
-
-<h2>한눈에 비교</h2>
-
-<table>
-  <thead>
-    <tr><th>항목</th><th>슈퍼블라스트 2</th><th>슈퍼블라스트 3</th><th>차이</th></tr>
-  </thead>
-  <tbody>
-    <tr><td><strong>출시</strong></td><td>2024년</td><td><strong>2026년</strong></td><td>2년차 / 신상</td></tr>
-    <tr><td><strong>MSRP (한국)</strong></td><td>249,000원</td><td><strong>259,000원</strong></td><td>+10,000원</td></tr>
-    <tr><td><strong>현재 시장가</strong></td><td><strong>210,000~225,000원</strong> (이월 할인)</td><td>259,000원 (출시 풀가)</td><td>실제 차이 3~5만원</td></tr>
-    <tr><td><strong>무게 (US M9)</strong></td><td>252g</td><td><strong>235g</strong></td><td>-17g</td></tr>
-    <tr><td><strong>힐 스택 (RunRepeat 실측)</strong></td><td>42.8mm</td><td><strong>45.8mm</strong></td><td>+3.0mm (v3 공식 46.5mm)</td></tr>
-    <tr><td><strong>전족부 스택 (RunRepeat 실측)</strong></td><td>34.6mm</td><td>37.7mm</td><td>+3.1mm (v3 공식 38.5mm)</td></tr>
-    <tr><td><strong>드롭</strong></td><td>8mm</td><td>8mm</td><td>동일</td></tr>
-    <tr><td><strong>미드솔</strong></td><td><strong>FF Turbo+ (PEBA 단일)</strong></td><td><strong>FF LEAP + FF BLAST PLUS (듀얼)</strong></td><td>폼 카테고리 자체 교체</td></tr>
-    <tr><td><strong>카본 플레이트</strong></td><td>❌ 없음</td><td>❌ 없음</td><td>둘 다 플레이트리스</td></tr>
-    <tr><td><strong>에너지 리턴</strong></td><td>전족 65.5% (실측)</td><td><strong>전족 67.5% (실측)</strong></td><td>v3가 2%p 높음</td></tr>
-    <tr><td><strong>옵티멀 페이스</strong></td><td>3:30~5:30 min/km</td><td>4:00~5:30 min/km</td><td>v2 더 빠른 페이스, v3 롱런</td></tr>
-    <tr><td><strong>아웃솔</strong></td><td>ASICSGRIP</td><td>ASICSGRIP + AHAR Lo</td><td>v3 듀얼 컴파운드</td></tr>
-    <tr><td><strong>어퍼</strong></td><td>모노필라멘트 메쉬</td><td>엔지니어드 우븐</td><td>변경</td></tr>
-    <tr><td><strong>토박스</strong></td><td>standard (72.3mm)</td><td><strong>narrow (71.6mm)</strong></td><td>v3가 0.7mm 더 좁음 (RunRepeat 실측)</td></tr>
-    <tr><td><strong>와이드 옵션</strong></td><td><strong>✅ 있음</strong></td><td><strong>❌ 없음</strong></td><td>v3에서 제거 (한국 러너 단점)</td></tr>
-    <tr><td><strong>쿠셔닝</strong></td><td>9/10</td><td><strong>10/10</strong></td><td>+1 (최상위)</td></tr>
-    <tr><td><strong>반응성</strong></td><td>8/10</td><td>8/10</td><td>동일</td></tr>
-    <tr><td><strong>안정성</strong></td><td>7/10</td><td>6/10</td><td>-1 (스택 ↑ 대가)</td></tr>
-    <tr><td><strong>내구성</strong></td><td>500km</td><td>550km</td><td>+50km</td></tr>
-    <tr><td><strong>Cost/km (정가)</strong></td><td>약 520원</td><td>약 471원</td><td>-49원</td></tr>
-    <tr><td><strong>Cost/km (이월가)</strong></td><td><strong>약 420~450원</strong></td><td>약 471원</td><td>v2 가성비 우위</td></tr>
-  </tbody>
-</table>
-
-<h2>슈퍼블라스트가 도대체 뭔가</h2>
-
-<p>슈퍼블라스트는 <strong>"카본 플레이트 없이도 슈퍼슈즈급 성능을 내는 슈퍼트레이너"</strong> 카테고리의 대표 신발입니다. 베이퍼플라이·알파플라이 같은 카본 슈즈는 200~250km 수명 + 대회 전용 + 부상 위험이라는 제약이 있는데, 슈퍼블라스트는:</p>
-
-<ul>
-  <li><strong>PEBA 계열 슈퍼폼</strong>(v2 FF Turbo+, v3 FF LEAP+BLAST PLUS) → 카본 없이 65%+ 에너지 리턴(전족 실측)</li>
-  <li><strong>500~550km 내구성</strong> → 카본 슈즈(200~250km)의 2배 이상</li>
-  <li><strong>데일리 훈련 + 페이스 훈련 + 하프 레이스 + 풀코스 페이스 훈련</strong> 모두 한 켤레로 커버</li>
-  <li><strong>km당 비용 470~520원</strong> → 카본 슈즈(km당 1,000원+) 절반 이하</li>
-</ul>
-
-<p>한국 러너 사이에서 "카본 슈즈는 부담스러운데 그냥 데일리는 아쉽다"는 중급~상급 러너의 핵심 선택지로 자리잡은 신발. v2 → v3는 그 정체성을 더 진화시킨 업데이트.</p>
-
-<h2>5가지 핵심 변화 — 방향이 달라졌다</h2>
-
-<h3>1. 미드솔 폼 완전 교체 ✅ 가장 큰 변화</h3>
-<p>v2의 <strong>FF Turbo+ (PEBA 단일)</strong> → v3의 <strong>FF LEAP + FF BLAST PLUS (듀얼 폼)</strong>. 다른 신발 세대 변화 중 가장 큰 폼 카테고리 전환. v2는 PEBA 단일 폼이라 "직진성 + 강한 추진", v3는 듀얼 폼이라 "부드러운 라이드 + 자연스러운 전환".</p>
-
-<div class="callout warning">
-  <span class="callout-icon">🔬</span>
-  <div class="callout-body">
-    <p class="callout-title">FF Turbo+ vs FF LEAP — 폼이 어떻게 다른가</p>
-    <table>
-      <thead>
-        <tr><th></th><th>FF Turbo+ (v2)</th><th>FF LEAP + FF BLAST PLUS (v3)</th></tr>
-      </thead>
-      <tbody>
-        <tr><td><strong>구성</strong></td><td>PEBA 단일</td><td>FF LEAP(상층) + FF BLAST PLUS(하층) 듀얼</td></tr>
-        <tr><td><strong>강점 페이스</strong></td><td>3:30~5:00 (템포·인터벌·하프)</td><td>4:00~5:30 (롱런·MP·풀코스)</td></tr>
-        <tr><td><strong>전환</strong></td><td>강한 추진 (스냅)</td><td>부드러운 굴림 (롤링)</td></tr>
-        <tr><td><strong>에너지 리턴</strong></td><td>전족 65.5% (실측)</td><td>전족 67.5% (실측)</td></tr>
-      </tbody>
-    </table>
-  </div>
-</div>
-
-<h3>2. 스택 +3.0mm(실측) ✅ 더 부드럽고 바운시</h3>
-<p>42.8mm → 45.8mm 힐 스택(RunRepeat 실측). 카본 슈즈 알파플라이 3(실측 38.1mm)보다 훨씬 높음. <strong>풀코스 25km+ 후반 발 피로 시점 충격 흡수가 결정적으로 개선</strong>. 단 하이스택은 안정성 ↓ 비용이 따라옴.</p>
-
-<h3>3. 무게 -17g (252→235g, 실측) ✅ 경량화</h3>
-<p>슈퍼트레이너 카테고리에서 240g 아래로 떨어진 게 의미 큼. <strong>v3가 v2보다 17g 가벼우면서 스택은 +3.0mm(실측) 높음</strong> = 폼 효율이 본질적으로 개선됐다는 증거.</p>
-
-<h3>4. ❌ 와이드 옵션 제거 ⚠️ 한국 러너 핵심 함정</h3>
-<p>v2는 <strong>standard + wide</strong> 두 옵션. v3는 <strong>standard 단일</strong>로 후퇴. RunRepeat 실측 토박스도 v3(71.6mm)가 v2(72.3mm)보다 오히려 좁아 발볼 넓은 러너에게는 부족할 수 있음. <strong>v3가 1080 v15·페가수스 42처럼 와이드 옵션을 추가한 트렌드를 거꾸로 간 게 가장 큰 단점</strong>.</p>
-
-<h3>5. 옵티멀 페이스 방향 전환 ✅ 의도된 차별화</h3>
-<p>v2 = 3:30~5:30 min/km (템포·인터벌·하프 레이스 최적). v3 = 4:00~5:30 min/km (롱런·마라톤 페이스 최적). <strong>"v3로 v2 대체"가 아니라 "다른 목적의 신발"</strong>로 봐야 함. v2의 빠른 페이스 강점이 v3에서는 부드러운 라이드로 교체.</p>
-
-<h2>같은 가격대 슈퍼 트레이너 매트릭스</h2>
-
-<table>
-  <thead>
-    <tr><th>모델</th><th>가격</th><th>무게</th><th>스택</th><th>플레이트</th><th>특징</th></tr>
-  </thead>
-  <tbody>
-    <tr><td><a href="/shoes/asics-superblast-2">슈퍼블라스트 2</a></td><td>21~23만 (이월)</td><td>252g</td><td>42.8mm (실측)</td><td>없음</td><td>FF Turbo+, 와이드 옵션</td></tr>
-    <tr><td><a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a></td><td>25.9만</td><td>235g</td><td>45.8mm (실측)</td><td>없음</td><td>FF LEAP+BLAST PLUS, 롱런 강점</td></tr>
-    <tr><td><a href="/shoes/asics-magic-speed-5">매직 스피드 5</a></td><td>20만</td><td>201g</td><td>35.3mm</td><td>포크형 카본</td><td>카본 + 데일리 가능 가성비</td></tr>
-    <tr><td><a href="/shoes/saucony-endorphin-speed-5">엔돌핀 스피드 5</a></td><td>22만</td><td>240g</td><td>36mm</td><td>나일론</td><td>나일론 플레이트, 페이스 트레이닝</td></tr>
-    <tr><td><a href="/shoes/saucony-endorphin-azura">엔돌핀 아주라</a></td><td>19만</td><td>241g</td><td>40mm</td><td>없음</td><td>PWRRUN PB, 가성비 슈퍼폼</td></tr>
-  </tbody>
-</table>
-
-<h2>풀코스·페이스별 추천 매트릭스</h2>
-
-<table>
-  <thead>
-    <tr><th>목표·용도</th><th>추천</th><th>이유</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>인터벌 (400m × 12, 1km × 8)</td><td><strong>슈퍼블라스트 2</strong></td><td>FF Turbo+ 단일 PEBA 직진성</td></tr>
-    <tr><td>템포런 (10km Sub-4:00 페이스)</td><td><strong>슈퍼블라스트 2</strong></td><td>3:30~5:30 옵티멀, 빠른 페이스</td></tr>
-    <tr><td>하프마라톤 레이스 (Sub-1:30 ~ Sub-1:45)</td><td><strong>슈퍼블라스트 2</strong></td><td>3:30~5:30 옵티멀 + 안정성 7/10 (반응성은 v3와 같은 8/10)</td></tr>
-    <tr><td>롱런 25~35km (Z2~Z3)</td><td><strong>슈퍼블라스트 3</strong></td><td>45.8mm(실측) 스택 후반 보호</td></tr>
-    <tr><td>마라톤 페이스 훈련 (MP 30km)</td><td><strong>슈퍼블라스트 3</strong></td><td>FF LEAP 부드러운 라이드 + 듀얼 폼</td></tr>
-    <tr><td>풀코스 레이스 Sub-4 ~ Sub-3:30</td><td><strong>슈퍼블라스트 3</strong></td><td>경량 + 45.8mm(실측) 후반 보호 + 250km 이상 내구성</td></tr>
-    <tr><td>데일리 5~10km</td><td>둘 다 OK</td><td>오버스펙이지만 내구성 우위로 합리적</td></tr>
-    <tr><td>회복 조깅 (이지런)</td><td>둘 다 비추</td><td>오버스펙 → <a href="/shoes/nike-pegasus-42">페가수스 42</a> 권장</td></tr>
-    <tr><td>풀코스 첫 도전 + 완주 우선</td><td><strong>슈퍼블라스트 3</strong></td><td>카본 부담 없이 후반 보호 + 안전</td></tr>
-    <tr><td>슈퍼트레이너 입문</td><td>v2 (가성비) 또는 v3 (롱런)</td><td>본인 훈련 패턴으로 갈림</td></tr>
-  </tbody>
-</table>
-
-<h2>상황별 구매 결정 매트릭스</h2>
-
-<table>
-  <thead>
-    <tr><th>본인 상황</th><th>추천</th><th>이유</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>발볼 4E급 (와이드 필수)</td><td><strong>슈퍼블라스트 2 와이드</strong></td><td>v3 와이드 옵션 없음 — v2 잡거나 다른 신발</td></tr>
-    <tr><td>발볼 표준~약간 넓음</td><td>v2 standard 또는 v3 standard</td><td>실측상 v3 토박스가 0.7mm 더 좁음</td></tr>
-    <tr><td>가성비 최우선 + 인터벌·템포 위주</td><td><strong>슈퍼블라스트 2 이월 21~23만원</strong></td><td>3~5만원 절약 (전족 에너지 리턴은 65.5%로 v3 67.5%와 2%p 차)</td></tr>
-    <tr><td>풀코스 빌드업 사이클 (롱런·MP)</td><td><strong>슈퍼블라스트 3</strong></td><td>FF LEAP + 45.8mm(실측) 후반 보호</td></tr>
-    <tr><td>하프마라톤 PB 도전</td><td><strong>슈퍼블라스트 2</strong></td><td>v2의 직진성·빠른 옵티멀 페이스 (반응성은 둘 다 8/10)</td></tr>
-    <tr><td>첫 슈퍼트레이너 + 다양한 훈련</td><td><strong>슈퍼블라스트 3</strong></td><td>롱런·페이스 훈련 다재다능</td></tr>
-    <tr><td>카본 슈즈 들고 싶지만 부담</td><td>둘 다 OK</td><td>슈퍼블라스트가 카본 입문 전 단계 정답</td></tr>
-    <tr><td>주 70~100km 고볼륨 훈련</td><td><strong>슈퍼블라스트 3</strong></td><td>550km 내구성 + 부드러운 라이드 누적 피로 ↓</td></tr>
-    <tr><td>v2 사용 중 + 300km 이내 멀쩡</td><td><strong>v2 계속</strong></td><td>업그레이드 가치 미미, 방향 다른 신발</td></tr>
-    <tr><td>v2 사용 중 + 와이드로 신었음</td><td><strong>v2 와이드 계속 또는 1080 v15</strong></td><td>v3 와이드 없음 → 1080 v15 4E 대체 가능</td></tr>
-    <tr><td>풀코스 페이스 훈련 + 카본도 보유</td><td><strong>슈퍼블라스트 3</strong></td><td>카본은 대회 전용, 슈블 3는 페이스 훈련 전용</td></tr>
-    <tr><td>평발 + 가벼운 과내전</td><td>둘 다 주의 (안정성 6~7)</td><td>심하면 안정화로 → <a href="/shoes/asics-gel-kayano-32">카야노 32</a></td></tr>
-  </tbody>
-</table>
-
-<h2>가격 시나리오 — v2 이월 vs v3 신상</h2>
-
-<div class="callout success">
-  <span class="callout-icon">💰</span>
-  <div class="callout-body">
-    <p class="callout-title">2026 5~12월 슈퍼블라스트 가격 전망</p>
-    <ul>
-      <li><strong>지금 (2026 5월):</strong> v2 21~23만원 (이월) / v3 25만 9천원 풀가 → 가성비 v2 압승</li>
-      <li><strong>여름 시즌오프 (7~8월):</strong> v2 18~21만원 / v3 24만~25만 9천원 → v2 가성비 정점, v3 일부 할인</li>
-      <li><strong>가을 마라톤 시즌 (9~10월):</strong> 풀코스 빌드업 수요로 v3 가격 반등 가능. 9월 전 v2 구매 권장</li>
-      <li><strong>블프 (11월):</strong> v2 16~19만원 가능 (사이즈 빠름) / v3 22~24만원 → v2 와이드 옵션 빠르게 품절</li>
-      <li><strong>12월~2027년 1월:</strong> v2 재고 소진 가속. <strong>와이드 옵션은 가장 빠르게 사라짐</strong></li>
-      <li><strong>2027년 봄 (v4 출시 가능):</strong> v3 18~22만원대로 떨어짐 가능</li>
-    </ul>
-  </div>
-</div>
-
-<p><strong>가장 합리적 액션:</strong></p>
-<ul>
-  <li><strong>발볼 4E급 (와이드 필수):</strong> <strong>지금 v2 와이드 정가/세일가</strong> 무조건 잡기. 가을~블프엔 와이드 사라질 가능성 큼. v3는 옵션 없으니 v2가 사실상 유일</li>
-  <li><strong>발볼 표준 + 가성비:</strong> v2 이월 21~23만원 지금 또는 7~8월 시즌오프 19~21만원 사냥</li>
-  <li><strong>풀코스 빌드업 + 신상 우선:</strong> v3 25만 9천원 정가. 1년 풀가치 활용 가능한 사이클</li>
-  <li><strong>v2의 빠른 페이스 무기 우선:</strong> v2 이월 무조건. v3는 페이스 훈련엔 약간 부드러워서 v2 직진성이 그리울 수 있음</li>
-</ul>
-
-<h2>슈퍼블라스트 vs 카본 슈즈 — 풀코스 선택 가이드</h2>
-
-<div class="callout info">
-  <span class="callout-icon">🏃</span>
-  <div class="callout-body">
-    <p class="callout-title">"카본 슈즈 살까 슈퍼블라스트로 충분할까"</p>
-    <p>한국 러너의 가장 흔한 고민. 페이스별 정답:</p>
-    <ul>
-      <li><strong>Sub-3 도전:</strong> 카본 필수 → <a href="/blog/nike-vaporfly-4-vs-alphafly-3-comparison">베이퍼플라이 4 또는 알파플라이 3</a></li>
-      <li><strong>Sub-3:15 ~ Sub-3:30:</strong> 카본이 유리하지만 슈퍼블라스트 3도 가능. <a href="/blog/saucony-endorphin-pro-4-vs-5-comparison">엔돌핀 프로 5</a>가 가성비 정답</li>
-      <li><strong>Sub-3:30 ~ Sub-4:</strong> <strong>슈퍼블라스트 3가 가성비 정답</strong>. 카본 대비 5~10만원 절약 + 데일리 가능 + 부상 위험 ↓</li>
-      <li><strong>Sub-4 ~ 완주 목표:</strong> <strong>슈퍼블라스트 3 최적</strong>. 카본은 오히려 역효과</li>
-      <li><strong>풀코스 첫 도전:</strong> <strong>슈퍼블라스트 3 권장</strong>. 완주 우선 + 안전</li>
-    </ul>
-  </div>
-</div>
-
-<h2>한국 러너 부상별 권장</h2>
-
-<table>
-  <thead>
-    <tr><th>부상·체형</th><th>추천</th><th>근거</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>아킬레스건염 이력</td><td>둘 다 excellent</td><td>8mm 드롭 + 부드러운 폼</td></tr>
-    <tr><td>무릎 통증 + 풀코스 빌드업</td><td><strong>슈퍼블라스트 3</strong></td><td>45.8mm(실측) 스택 + 듀얼 폼 충격 흡수</td></tr>
-    <tr><td>무릎 통증 + 가성비</td><td>슈퍼블라스트 2 (이월)</td><td>43mm 스택도 충분, 절약</td></tr>
-    <tr><td>족저근막염</td><td>둘 다 good</td><td>고스택 + PEBA 계열 폼 친화</td></tr>
-    <tr><td>발볼 4E급</td><td><strong>슈퍼블라스트 2 와이드</strong></td><td>v3 와이드 없음 — 사실상 v2 유일 선택지</td></tr>
-    <tr><td>평발 + 가벼운 과내전</td><td>둘 다 주의 (안정성 6~7)</td><td>심하면 안정화 → <a href="/shoes/asics-gel-kayano-32">카야노 32</a></td></tr>
-    <tr><td>고볼륨 훈련 (주 80km+)</td><td><strong>슈퍼블라스트 3</strong></td><td>550km 내구성 + 부드러운 라이드</td></tr>
-    <tr><td>좌우 비대칭 (러닝 폼)</td><td><strong>슈퍼블라스트 3</strong></td><td>듀얼 폼 발 모양 적응</td></tr>
-  </tbody>
-</table>
-
-<p>본인 발 특성·부상 이력에 맞춘 신발 후보는 <a href="/recommend">1분 러닝화 추천</a>에서 받을 수 있습니다.</p>
-
-<h2>FAQ</h2>
-
-<h3>Q. v2 → v3 업그레이드 가치 있나요?</h3>
-<p>v2가 300km 이내 멀쩡하다면 그냥 v2 굴리세요. <strong>v2와 v3는 같은 라인이지만 사실상 다른 신발</strong>. v2의 빠른 페이스 강점이 좋았다면 v3는 약간 부드러워서 아쉬울 수 있음. v3는 "롱런·풀코스 페이스 신발"이라 본인 훈련 패턴이 그쪽이면 갈아탈 가치 있음.</p>
-
-<h3>Q. 발볼 넓은데 v3 standard 신을 만 한가요?</h3>
-<p>v3는 토박스 실측 71.6mm로 랩 평균(73.2mm)보다 좁아 발볼 2E 정도(EE)도 시착이 먼저. <strong>발볼 4E급(4E 이상)이면 v3 standard는 부족할 가능성 큼</strong>. v2 와이드 옵션이나 <a href="/shoes/new-balance-1080-v15">1080 v15 4E</a>로 가는 게 안전.</p>
-
-<h3>Q. 슈퍼블라스트로 풀코스 뛸 수 있나요?</h3>
-<p>OK. 특히 v3는 풀코스 페이스 훈련 + 레이스 둘 다 가능. <strong>Sub-3:30 ~ Sub-4 풀코스 완주 우선이면 슈퍼블라스트 3가 카본보다 안전</strong>. 단 Sub-3 도전이면 카본 슈즈(베이퍼/알파/엔돌핀 프로)가 유리.</p>
-
-<h3>Q. 매직 스피드 5와 비교하면?</h3>
-<p>매직 스피드 5는 <a href="/shoes/asics-magic-speed-5">카본 플레이트 + 데일리 가능 = 가성비 카본</a> 카테고리. 슈퍼블라스트는 <strong>카본 없는 슈퍼폼</strong>. <strong>카본 추진력 원하면 매직 스피드 5, 부드러운 라이드 + 내구성 원하면 슈퍼블라스트</strong>. 가격은 매직 5(20만 9천원)가 슈블 3(25만 9천원)보다 5만원 저렴.</p>
-
-<h3>Q. 데일리 5~10km에 슈퍼블라스트 오버스펙 아닌가요?</h3>
-<p>약간 오버스펙이지만 <strong>500~550km 내구성 + km당 470~520원 가성비</strong>로 합리적. 다만 회복 조깅·이지런만 한다면 <a href="/shoes/nike-pegasus-42">페가수스 42</a> 같은 일반 데일리 트레이너가 더 적합. 슈블은 페이스 살짝 올리는 훈련에서 진가.</p>
-
-<h3>Q. 다른 슈퍼트레이너 (엔돌핀 스피드 5·아주라)와 비교?</h3>
-<p>슈퍼블라스트가 <strong>한국 시장 점유율 1위 + 가성비 + 내구성 우위</strong>. 엔돌핀 스피드 5는 나일론 플레이트가 있어 약간 더 빠른 페이스 강점. 엔돌핀 아주라는 19만원 더 저렴 + 플레이트 없음. <strong>한 켤레로 모든 훈련 커버하려면 슈퍼블라스트가 정답</strong>.</p>
-
-<h2>비슷한 가격대 슈퍼트레이너 대안</h2>
-
-<ul>
-  <li><a href="/shoes/saucony-endorphin-speed-5">사우코니 엔돌핀 스피드 5</a> — 21만 9천원, 나일론 플레이트, 페이스 트레이닝 강점</li>
-  <li><a href="/shoes/saucony-endorphin-azura">사우코니 엔돌핀 아주라</a> — 18만 9천원, PWRRUN PB, 플레이트 없는 가성비</li>
-  <li><a href="/shoes/asics-magic-speed-5">아식스 매직 스피드 5</a> — 20만 9천원, 카본 + 데일리, 가성비 카본 트레이닝</li>
-  <li><a href="/shoes/nike-pegasus-plus">나이키 페가수스 플러스</a> — 21만 9천원, ZoomX 풀렝스</li>
-</ul>
-
-<h2>결론 — 내 추천</h2>
-
-<div class="callout success">
-  <span class="callout-icon">🎯</span>
-  <div class="callout-body">
-    <p class="callout-title">발볼 + 훈련 패턴으로 명확히 갈리는 선택</p>
-    <p><strong>발볼 4E급 + 와이드 필수</strong>라면 <a href="/shoes/asics-superblast-2">슈퍼블라스트 2 와이드</a>가 사실상 유일한 답. v3는 와이드 없음. v2 와이드 + 이월 가격 21~23만원으로 본인 사이즈 지금 잡으세요. 가을~블프엔 와이드부터 사라짐.</p>
-    <p><strong>풀코스 빌드업 + 롱런·MP 페이스 중심</strong>이면 <a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a> 정가 25만 9천원. FF LEAP + 45.8mm(실측) 스택의 부드러운 라이드가 30km+ 마라톤 페이스 훈련에서 가치를 발휘. Sub-3:30 ~ Sub-4 풀코스 가성비 정답.</p>
-    <p><strong>인터벌·템포·하프 레이스</strong>가 주 훈련이면 <a href="/shoes/asics-superblast-2">슈퍼블라스트 2 이월 21~23만원</a>. 반응성 점수는 v3와 같은 8/10이지만, FF Turbo+ 단일 PEBA의 직진성과 3:30~5:30 옵티멀 페이스, 한 칸 높은 안정성(7/10)이 빠른 페이스 훈련에 맞음. 5만원 절약하고 페이스 훈련 + 하프 PB 도전.</p>
-    <p><strong>첫 슈퍼트레이너 도전 + 풀코스 시즌</strong>이라면 v3 권장. 다재다능한 활용 + 부상 위험 ↓.</p>
-  </div>
-</div>
-
-<div class="affiliate-cta">
-  <p class="affiliate-cta-label">바로 구매</p>
-  <div class="affiliate-cta-buttons">
-    <a href="https://link.coupang.com/a/g5YxEs1B6q" class="affiliate-btn coupang" target="_blank" rel="nofollow sponsored noopener">
-      <span class="affiliate-btn-store">쿠팡</span>
-      <span class="affiliate-btn-product">슈퍼블라스트 2 보기 →</span>
-    </a>
-    <a href="/shoes/asics-superblast-3" class="affiliate-btn pending">
-      <span class="affiliate-btn-store">상세</span>
-      <span class="affiliate-btn-product">슈퍼블라스트 3 정보 →</span>
-    </a>
-  </div>
-  <p class="affiliate-disclosure">광고 표기: 이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</p>
-</div>
-
-<h2>관련 글</h2>
-
-<ul>
-  <li><a href="/blog/nike-vaporfly-4-vs-alphafly-3-comparison">베이퍼플라이 4 vs 알파플라이 3 — 카본 슈퍼슈즈 양강</a></li>
-  <li><a href="/blog/saucony-endorphin-pro-4-vs-5-comparison">엔돌핀 프로 4 vs 5 — 가성비 카본 슈즈 비교</a></li>
-  <li><a href="/blog/carbon-plate-running-shoes-lineup-tier-guide-2026">카본 플레이트 슈즈 비교 — 한국 시장 전반</a></li>
-  <li><a href="/blog/nike-pegasus-41-vs-42-comparison">페가수스 41 vs 42 — 데일리 트레이너 세대 비교</a></li>
-  <li><a href="/blog/asics-kayano-32-vs-33-comparison">카야노 32 vs 33 — 안정화 세대 비교</a></li>
-  <li><a href="/blog/new-balance-1080-v14-vs-v15-comparison">NB 1080 v14 vs v15 — 쿠션화 세대 비교</a></li>
-</ul>
-
-<p><small>출처: RunRepeat 슈퍼블라스트 2·3 랩 데이터(전족 에너지 리턴 65.5%·67.5%, v3 값은 2026-10-21 확인) + Believe in the Run / Road Trail Run 양 신발 리뷰 + 한국 아식스 공식몰 가격(2026-05-17 기준). 가격은 시즌·세일에 따라 변동되니 구매 시점 공식몰·이월 행사 확인 필수.</small></p>
+<p><strong>2026-11-10 원문 대조 업데이트.</strong> 11월9~10일 확인한 정확 모델 자료를 바탕으로 공시·검체·개인 착화 의견을 나눴습니다. 자체 착화 후기는 아닙니다.</p><h2>선택에서 먼저 볼 차이</h2><p>두 세대 모두 비플레이트 구조를 확인했습니다.2는 FF TURBO+·FF BLAST PLUS ECO,3은 FF LEAP·FF BLAST PLUS로 정확 폼 이름을 구분합니다.</p><p>3의 높고 부드러운 검체 수치가 모든 러너에게 더 안정적이거나 더 편한 롱런을 뜻하지는 않습니다.2의 단단한 전환·혀·카운터와 3의 고정·중립적인 체감을 실제 규격에서 비교할 수 있습니다.</p><figure><img src="/images/shoes/asics/superblast2/1.webp" alt="슈퍼블라스트2 제품 자료 이미지" loading="lazy"/><figcaption>슈퍼블라스트2 — 수치와 세대 조건은 본문 원문을 확인하세요.</figcaption></figure><div class="table-wrap"><table><thead><tr><th>모델</th><th>무게·측정 조건</th><th>힐/전족 스택 · 드롭</th><th>힐/전족 SA</th><th>힐/전족 리턴</th><th>내부 최광폭/엄지/높이</th></tr></thead><tbody><tr><td>슈퍼블라스트2</td><td>252g · RR 검체</td><td>42.8/34.6mm · 8.2mm</td><td>130/138</td><td>65.4/65.5%</td><td>94.7/72.3/27.7mm</td></tr><tr><td>슈퍼블라스트3</td><td>235g · RR 검체</td><td>45.8/37.7mm · 8.1mm</td><td>154/153</td><td>67.8/67.5%</td><td>95.7/71.6/미확인mm</td></tr></tbody></table></div><h2>표를 읽는 범위</h2><p>RR 검체와 별도 표시한 DOR 소개 공시는 다른 자료입니다. DOR 소개를 독립 랩 실측으로 표시하지 않습니다. RR 일반 정책은 남성 US9지만 개별 라벨·폭·보정 여부는 미확인이고, 실제 검체 조건이 밝혀진 경우는 본문에 남겼습니다.</p><p>SA·리턴·정적 드롭은 개인의 통증·기록·동작 중 드롭을 입증하지 않습니다. 내부 너비·높이와 한국 다른 성별·와이드 치수도 다릅니다. 미확인은 0으로 채우지 않았습니다. <a href="https://runrepeat.com/testing-methodology" target="_blank" rel="noopener noreferrer">RR 측정법</a></p><h2>한 리뷰의 안정감을 모든 발에 적용하지 않기</h2><p>3은 RR과 DOR에서 안정 체감이 달랐고 DOR 리뷰어 안에서도 의견이 갈렸습니다.2도 길들이기 후 고정이 나아졌다는 개인 관찰을 공통 적응 거리로 바꾸지 않았습니다.</p><p>2의 RR252g은 측정에 사용한 왼발 값으로 양발 무게가 달랐다고 보고됐습니다. 평균 양발로 제시하지 않고 공시 249g과 분리합니다.2의 한국 현재 와이드·가격과 3의 실시간 폭·선택 재고는 미확인입니다.</p><h2>슈퍼블라스트2의 구조·공시</h2><p>FF TURBO+ 상부 · FF BLAST PLUS ECO 하부 · 비플레이트</p><p>판 구조나 지지 장치를 질환별 보호 등급으로 바꾸지 않습니다.</p><p>DOR 소개 249g(남성US9/여성US10.5),45/37mm·드롭 8mm. RR252g은 측정에 사용한 왼발 값이며 오른발 8.55oz·왼발 8.90oz 차이가 보고돼 양발 평균으로 사용하지 않습니다.</p><h2>슈퍼블라스트2의 실제 착화에서 갈린 점</h2><p>DOR의 Matt(US10)은 길이가 대체로 맞지만 앞쪽 테이퍼·혀 접힘·카운터·거친 메쉬를 언급했고 David(US9.5)은 길들이기 후 고정이 나아졌다고 느꼈습니다. 두 리뷰어는 플레이트 없이 단단한 구조와 앞쪽 반응을 평가했습니다. RR의 PEBA 계열 화학 설명은 리뷰 출처의 설명이며 한국 제조사의 신규 확인으로 바꾸지 않습니다.</p><p>한국 와이드 현재SKU는 미확인입니다. RR 내부 최광폭 94.7mm·엄지 72.3mm·높이 27.7mm를 외부 바닥 폭과 구분하세요.</p><h2>슈퍼블라스트2에서 함께 남긴 한계</h2><p>RR 주폼 35.2AC·보조폼 41.0AC는 다른 측정입니다. 하부는FF BLAST PLUS ECO이며 원형 슈퍼블라스트의 폼 이름과 혼용하지 않습니다.</p><h2>슈퍼블라스트2의 한국 판매 확인 범위</h2><p>한국 공식 슈퍼블라스트 2 검색에서 상품을 찾지 못해 현재 정가·성별·폭·SKU·재고는 미확인입니다. 검색 부재를 단종·국내 미출시로 해석하지 않습니다.</p><h2>슈퍼블라스트3의 구조·공시</h2><p>FF LEAP + FF BLAST PLUS</p><p>전장 카본 플레이트 없음</p><p>46.5/38.5mm · 8mm (ASICS 글로벌 발표). DOR 소개 239g(남성 US9)은 한국 공식 무게가 아님.</p><h2>슈퍼블라스트3의 실제 착화에서 갈린 점</h2><p>RunRepeat는 넓은 바닥의 안정적인 느낌을 평가했지만, DOR은 이전 세대보다 중립적이고 안쪽으로 기우는 느낌을 지적했습니다. DOR 리뷰어끼리도 활용성 평가가 갈려 보편적인 안정성·보호 효과로 합치지 않습니다.</p><p>한국 공식 폭·와이드 여부와 실시간 재고는 미확인입니다. 일반 사이즈 안내표를 구매 가능한 재고로 해석하지 않습니다.</p><h2>슈퍼블라스트3의 한국 판매 확인 범위</h2><p>한국 유니섹스 1013A177.101 정가 259,000원. 로그인 전 폭·사이즈별 재고는 확인 못함.</p><h2>매장에서 비교할 질문</h2><p>평소 양말·인솔로 앞쪽 길이와 발톱 위 높이, 끈을 조일 때 발등 압박, 걷고 돌 때 힐 고정과 칼라 마찰을 확인하세요. 앞볼이 넓다는 인상만으로 앞코 전체 높이나 중족 공간까지 맞는다고 가정하지 않습니다.</p><p>몇 분/km면 무조건 이 모델, 몇 km부터 통증이 줄어든다는 공통 경계는 이 자료에서 확인하지 못했습니다. 평발·부상 이력만으로 모델을 처방하거나 국소 마모를 공통 수명으로 환산하지 않았습니다.</p><h2>확인한 원문·상품 조건</h2><ul><li><a href="https://runrepeat.com/asics-superblast-2" target="_blank" rel="noopener noreferrer">슈퍼블라스트2 RR 정확 모델</a> — 실험실 검체·공시를 구분.</li><li><a href="https://www.doctorsofrunning.com/asics-superblast-2-review-2024/" target="_blank" rel="noopener noreferrer">슈퍼블라스트2 DOR 착화 원문</a> — 실제 리뷰어·규격의 개인 의견.</li><li><a href="https://asics.co.kr/goods/search?keyword_log_flag=Y&amp;search_text=%EC%8A%88%ED%8D%BC%EB%B8%94%EB%9D%BC%EC%8A%A4%ED%8A%B8+2" target="_blank" rel="noopener noreferrer">아식스 한국 공식 검색 범위</a> — 현재 상품0건 확인. 전체 국내 미판매를 의미하지 않습니다.</li><li><a href="https://runrepeat.com/asics-superblast-3" target="_blank" rel="noopener noreferrer">슈퍼블라스트3 RR 정확 모델</a> — 실험실 검체·공시를 구분.</li><li><a href="https://www.doctorsofrunning.com/asics-superblast-3-review-2026/" target="_blank" rel="noopener noreferrer">슈퍼블라스트3 DOR 착화 원문</a> — 실제 리뷰어·규격의 개인 의견.</li></ul><ul><li><a href="https://m.asics.co.kr/p/AKR_112630203-101" target="_blank" rel="noopener noreferrer">슈퍼블라스트3 한국 공식 확인 상품</a> — 본문 SKU·가격 확인 시점과 현재 선택 재고를 구분.</li></ul>
 `,
+    updatedAt: "2026-11-10",
+    faqs: [
+      {
+        "question": "2에는 한국 와이드가 있나요?",
+        "answer": "이번 정확 원문 대조에서 현행 한국 와이드SKU를 확인하지 못해 존재·부재를 단정하지 않습니다."
+      },
+      {
+        "question": "3이 더 안정적인가요?",
+        "answer": "리뷰어·측정 방식에 따라 의견이 달라 임상 보호나 공통 안정 순위를 만들지 않습니다."
+      }
+    ],
   },
   {
     id: "saucony-endorphin-pro-4-vs-5-comparison",

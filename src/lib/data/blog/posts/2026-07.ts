@@ -983,95 +983,36 @@ export const posts_2026_07: BlogPost[] = [
     updatedAt: "2026-11-09",
   },
   {
-    id: 'nike-alphafly-3-vs-asics-metaspeed-sky-vs-nb-sc-elite-v5-carbon-racer-2026',
-    slug: 'nike-alphafly-3-vs-asics-metaspeed-sky-vs-nb-sc-elite-v5-carbon-racer-2026',
-    title: '알파플라이 3 vs 메타스피드 스카이+ vs SC 엘리트 v5 — 가을 마라톤 카본 최강전, 발볼이 가른다',
-    description:
-      '가을 마라톤 시즌, 3대 브랜드 최상위 카본 레이서를 정면 비교합니다. 나이키 알파플라이 3, 아식스 메타스피드 스카이+, 뉴발란스 SC 엘리트 v5 — 무게·반발은 최정상급으로 비슷하지만, 발볼·드롭·가격에서 갈립니다. 특히 발볼 넓은 한국 러너라면 선택이 분명해집니다.',
-    thumbnail: '/images/blog/nike-alphafly-3-vs-asics-metaspeed-sky-vs-nb-sc-elite-v5-carbon-racer-2026.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-07-26',
-    category: 'review' as const,
-    readingTime: 9,
-    tags: ['나이키 알파플라이 3', '아식스 메타스피드 스카이', '뉴발란스 SC 엘리트 v5', '카본 레이싱화', '마라톤 슈퍼슈즈', '러닝화 비교'],
+    id: "nike-alphafly-3-vs-asics-metaspeed-sky-vs-nb-sc-elite-v5-carbon-racer-2026",
+    slug: "nike-alphafly-3-vs-asics-metaspeed-sky-vs-nb-sc-elite-v5-carbon-racer-2026",
+    title: "알파플라이3 vs 스카이+ vs SC 엘리트v5 —세대·판·앞코·전환 비교",
+    description: "2022 스카이+를 Tokyo·Paris와 구분합니다. RR 검체와 리뷰어·공시 조건을 보존하고 발볼만으로 마라톤 승자를 정하지 않았습니다.",
+    thumbnail: "/images/shoes/nike/alphafly3/side.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-07-26",
+    category: "review",
+    readingTime: 8,
+    tags: [
+      "알파플라이3",
+      "2022 메타스피드 스카이+",
+      "SC 엘리트v5",
+      "핏",
+      "원문 대조"
+    ],
     content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>3대 브랜드 최상위 카본, 반발은 9·9·9로 셋 다 최정상급</strong> — <a href="/shoes/nike-alphafly-3">알파플라이 3</a>은 폭발적 에어포드, <a href="/shoes/asics-metaspeed-sky-plus">메타스피드 스카이+</a>는 보폭을 늘리는 스트라이드형, <a href="/shoes/new-balance-sc-elite-v5">SC 엘리트 v5</a>는 부드러운 100% PEBA</li>
-    <li><strong>가르는 건 발볼</strong> — 알파플라이 3은 토박스가 실측 75.3mm로 레이싱화 중 넓은 편이지만 와이드가 없습니다. 메타스피드와 SC 엘리트는 <strong>와이드(2E)</strong>가 있고, SC 엘리트 v5는 토박스 74.5mm에 와이드까지 갖췄습니다</li>
-    <li>가격은 SC 엘리트 v5가 가장 저렴(319,000원)하고 내구도 가장 길어, <strong>발볼 넓은 한국 러너에겐 가성비까지 답</strong>이 됩니다</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <p><strong>한 줄 결론.</strong> 풀코스 폭발력이면 <a href="/shoes/nike-alphafly-3">알파플라이 3</a>, 보폭 늘려 스피드를 내면 <a href="/shoes/asics-metaspeed-sky-plus">메타스피드 스카이+</a>, 발볼이 넓거나 부드러운 착지를 원하면 <a href="/shoes/new-balance-sc-elite-v5">SC 엘리트 v5</a>입니다. 카본화 입문 개념은 <a href="/blog/carbon-plate-running-shoes-lineup-tier-guide-2026">카본 플레이트 비교</a>, 나이키 내부 대결은 <a href="/blog/nike-vaporfly-4-vs-alphafly-3-comparison">베이퍼플라이 4 vs 알파플라이 3</a>을 참고하세요.</p>
-</div>
-
-<h2>세 켤레 한눈에 보기</h2>
-<table>
-  <thead><tr><th>항목</th><th>알파플라이 3</th><th>메타스피드 스카이+</th><th>SC 엘리트 v5</th></tr></thead>
-  <tbody>
-    <tr><td>가격(한국)</td><td>339,000원</td><td>329,000원</td><td><strong>319,000원</strong></td></tr>
-    <tr><td>무게</td><td>201g</td><td>205g</td><td><strong>198g</strong></td></tr>
-    <tr><td>스택(힐/전족)</td><td>38 / 30mm</td><td>33.5 / <strong>30.8mm</strong></td><td>39 / 29mm</td></tr>
-    <tr><td>드롭</td><td>8.5mm <em>(실측·공식 8)</em></td><td><strong>5mm</strong></td><td>11mm <em>(실측·공식 8)</em></td></tr>
-    <tr><td>미드솔</td><td>ZoomX + 에어 포드</td><td>FF Turbo+</td><td>FuelCell 100% PEBA</td></tr>
-    <tr><td>플레이트</td><td>카본</td><td>카본</td><td>카본</td></tr>
-    <tr><td>쿠션 / 반발</td><td>9 / 9</td><td>8 / 9</td><td>9 / 9</td></tr>
-    <tr><td>발볼 / 와이드</td><td>넓은 편(75.3mm) / <strong>없음</strong></td><td>표준 / <strong>2E 有</strong></td><td>넓은 편(74.5mm) / <strong>2E 有</strong></td></tr>
-    <tr><td>내구 / km당</td><td>약 200km</td><td>약 250km</td><td><strong>약 300km</strong></td></tr>
-    <tr><td>대표 성격</td><td>폭발적 반발·풀코스</td><td>보폭형 스트라이드</td><td>부드러움·발볼·가성비</td></tr>
-  </tbody>
-</table>
-<p><small>수치는 본 사이트 신발 DB(RunRepeat 랩 실측 및 한국 공식가 기준). 셋 다 레이스 전용이라 내구는 짧습니다.</small></p>
-
-<h2>나이키 알파플라이 3 — 폭발적 반발의 풀코스 끝판왕</h2>
-<p>알파플라이 3은 나이키 슈퍼슈즈의 정점입니다. ZoomX 폼에 전족부 <strong>에어 포드</strong>를 얹어, 착지에서 튕겨 나가는 반발(9/10, RunRepeat 전족부 에너지 리턴 73.9%)이 최정상급입니다. 특히 풀코스 후반 지친 다리를 계속 밀어주는 힘이 강해 마라톤에 최적화돼 있습니다. 201g의 경량에 검증된 레이스 실적까지, "기록에 진심"인 러너의 1순위죠.</p>
-<p>약점은 <strong>사이즈와 가격</strong>입니다. 토박스는 실측 75.3mm로 레이싱화 중 넓은 편이지만 와이드 옵션이 없고 사이즈 판정이 "Slightly small"이라, 발볼이 아주 넓다면 시착이 필요합니다. 339,000원으로 가장 비싸고, 내구도 약 200km로 가장 짧습니다.</p>
-<p><strong>✅ 이런 분께</strong> — 풀코스 기록을 노리는 분, 폭발적 반발을 선호하는 분, 발볼이 좁거나 표준인 러너.</p>
-
-<h2>아식스 메타스피드 스카이+ — 보폭을 늘리는 스트라이드형</h2>
-<p>메타스피드는 주법에 따라 라인이 갈리는데, <strong>스카이+</strong>는 <strong>보폭(스트라이드)을 늘려 뛰는 러너</strong>를 위한 모델입니다(피치를 올리는 러너용은 엣지). FF Turbo+ 폼과 카본 플레이트로 반발(9/10)을 내면서, 전족 스택이 30.8mm(실측)로 셋 중 가장 두꺼워 착지가 안정적입니다. 드롭도 5mm로 낮아 미드풋~포어풋 착지 러너에게 자연스럽습니다. <strong>와이드(2E)</strong>가 있어 발볼 대응도 됩니다.</p>
-<p>약점은 <strong>주법 의존성</strong>입니다. 보폭형이 아닌 피치형 러너에겐 스카이가 최적이 아닐 수 있어, 자신의 주법을 알고 골라야 합니다. 낮은 드롭이 힐 스트라이커에겐 이질적일 수도 있습니다.</p>
-<p><strong>✅ 이런 분께</strong> — 보폭을 늘려 스피드를 내는 러너, 전족 쿠션과 안정을 원하는 분, 낮은 드롭(5mm)을 선호하는 미드풋 착지 러너.</p>
-
-<h2>뉴발란스 SC 엘리트 v5 — 발볼 넓어도 신기 좋은 드문 슈퍼슈즈</h2>
-<p>SC 엘리트 v5의 최대 무기는 <strong>토박스 74.5mm</strong>입니다. 대부분의 슈퍼슈즈가 좁은 레이싱 라스트인 것과 달리, SC 엘리트 v5는 <strong>발볼 넓은 한국 러너가 레이스 중 발가락 눌림 걱정을 덜 수 있는 드문 카본화</strong>입니다. 와이드(2E)까지 있고요. FuelCell 100% PEBA 폼은 셋 중 가장 부드러운 착지를 주고, 198g로 가장 가볍습니다. 가격도 319,000원으로 제일 저렴하고 내구(약 300km)도 가장 길어, <strong>발볼 넓은 러너에겐 성능·가성비 양쪽 다 답</strong>입니다.</p>
-<p>약점은 <strong>높은 드롭</strong>입니다. 실측 드롭이 약 11mm로 셋 중 가장 높아, 낮은 드롭에 익숙한 러너에겐 힐이 높게 느껴질 수 있습니다. 폭발적 반발은 알파플라이보다 부드러운 편입니다.</p>
-<p><strong>✅ 이런 분께</strong> — <strong>발볼이 넓은 한국 러너</strong>, 부드럽고 편안한 카본 착지를 원하는 분, 가성비까지 챙기고 싶은 분.</p>
-
-<h2>내 레이스엔 뭘?</h2>
-<ul>
-  <li><strong>발볼이 넓다</strong> → 고민 없이 <a href="/shoes/new-balance-sc-elite-v5">SC 엘리트 v5</a>(74.5mm+와이드). 알파플라이 3도 토박스는 넓은 편(75.3mm)이지만 와이드가 없어 시착이 필요합니다</li>
-  <li><strong>풀코스 기록 · 폭발적 반발</strong> → <a href="/shoes/nike-alphafly-3">알파플라이 3</a></li>
-  <li><strong>보폭을 늘려 뛴다 · 낮은 드롭 선호</strong> → <a href="/shoes/asics-metaspeed-sky-plus">메타스피드 스카이+</a></li>
-  <li><strong>부드러운 착지 · 예산을 아낀다</strong> → <a href="/shoes/new-balance-sc-elite-v5">SC 엘리트 v5</a>(가장 저렴·내구 최고)</li>
-  <li><strong>카본화가 처음이다</strong> → 안정적이고 부드러운 SC 엘리트 v5가 진입 장벽이 가장 낮습니다</li>
-</ul>
-
-<div class="faq">
-  <h2>자주 묻는 질문</h2>
-  <div class="faq-item">
-    <p class="faq-q">Q. 발볼이 넓은데 알파플라이는 정말 안 되나요?</p>
-    <p class="faq-a">A. 안 되는 건 아닙니다. 알파플라이 3은 RunRepeat 실측 토박스 75.3mm로 레이싱화 중 넓은 편(랩 평가 "exceptionally broad for a racing shoe")이지만, 와이드 옵션이 없고 사이즈 판정이 "Slightly small"이라 시착이 필요합니다. 와이드 사이즈가 필요할 만큼 발볼이 넓다면 와이드가 있는 SC 엘리트 v5나 메타스피드 스카이+가 안전합니다.</p>
-  </div>
-  <div class="faq-item">
-    <p class="faq-q">Q. 메타스피드는 스카이와 엣지 중 뭘 골라야 하나요?</p>
-    <p class="faq-a">A. 주법으로 갈립니다. <strong>스카이+</strong>는 보폭(스트라이드)을 늘려 뛰는 러너, <strong>엣지</strong>는 회전수(피치·케이던스)를 올려 뛰는 러너에게 맞춰 설계됐습니다. 자신이 성큼성큼 뛰는 편이면 스카이, 총총 빠르게 구르는 편이면 엣지를 보세요. 이 글은 보폭형 스카이+ 기준입니다.</p>
-  </div>
-  <div class="faq-item">
-    <p class="faq-q">Q. 셋 다 내구가 짧던데 훈련에도 신어도 되나요?</p>
-    <p class="faq-a">A. 권하지 않습니다. 셋 다 200~300km의 레이스 전용이라, 훈련까지 신으면 금방 반발이 죽습니다. 레이스와 핵심 포인트 훈련 정도에만 아껴 신고, 일상 훈련은 슈퍼 트레이너나 데일리 트레이너를 따로 쓰는 것이 카본화 수명을 지키는 방법입니다.</p>
-  </div>
-  <div class="faq-item">
-    <p class="faq-q">Q. 초보인데 가을 첫 마라톤에 카본화 신어도 될까요?</p>
-    <p class="faq-a">A. 완주가 목표라면 굳이 필요 없지만, 카본화를 원한다면 가장 부드럽고 안정적인 SC 엘리트 v5가 진입 장벽이 낮습니다. 다만 카본화는 종아리·발바닥 부담이 커서, 레이스 전 반드시 몇 번 신어 적응한 뒤 대회에 나가세요. 검증되지 않은 신발로 첫 풀코스를 뛰는 건 위험합니다.</p>
-  </div>
-</div>
-
-<p><small>출처: 본 사이트 신발 DB(RunRepeat 랩 실측·나이키/아식스/뉴발란스 한국 공식가) 및 각 모델 상세 페이지 · 한국 공식가 기준 · 작성 2026년 7월 26일.</small></p>
+<p><strong>2026-11-10 원문 대조 업데이트.</strong> 11월9~10일 확인한 정확 모델 자료를 바탕으로 공시·검체·개인 착화 의견을 나눴습니다. 자체 착화 후기는 아닙니다.</p><h2>선택에서 먼저 볼 차이</h2><p>알파플라이 3의 Air Zoom·ZoomX,2022 스카이+의 FF BLAST TURBO·상부 평판형 카본, SC 엘리트v5의 Energy Arc를 같은 카본화라는 이름으로 합치지 않습니다.</p><p>발볼 하나가 가을 마라톤 승자를 결정하지 않습니다. 높이·중족 지지·힐 고정·전환이 개인에게 맞는지와 원문의 정확 세대를 먼저 볼 수 있습니다.</p><figure><img src="/images/shoes/nike/alphafly3/side.webp" alt="알파플라이3 제품 자료 이미지" loading="lazy"/><figcaption>알파플라이3 — 수치와 세대 조건은 본문 원문을 확인하세요.</figcaption></figure><div class="table-wrap"><table><thead><tr><th>모델</th><th>무게·측정 조건</th><th>힐/전족 스택 · 드롭</th><th>힐/전족 SA</th><th>힐/전족 리턴</th><th>내부 최광폭/엄지/높이</th></tr></thead><tbody><tr><td>알파플라이3</td><td>201g · RR 검체</td><td>38.1/29.6mm · 8.5mm</td><td>144/113</td><td>74.9/73.9%</td><td>93.3/75.3/33.7mm</td></tr><tr><td>2022 메타스피드 스카이+</td><td>205g · RR 검체</td><td>33.5/30.8mm · 2.7mm</td><td>130/102</td><td>70.1/74.4%</td><td>미확인/미확인/미확인mm</td></tr><tr><td>SC 엘리트v5</td><td>198g · RR 검체</td><td>39.3/28.6mm · 10.7mm</td><td>144/112</td><td>74.8/74.9%</td><td>93.8/74.5/26.4mm</td></tr></tbody></table></div><h2>표를 읽는 범위</h2><p>RR 검체와 별도 표시한 DOR 소개 공시는 다른 자료입니다. DOR 소개를 독립 랩 실측으로 표시하지 않습니다. RR 일반 정책은 남성 US9지만 개별 라벨·폭·보정 여부는 미확인이고, 실제 검체 조건이 밝혀진 경우는 본문에 남겼습니다.</p><p>SA·리턴·정적 드롭은 개인의 통증·기록·동작 중 드롭을 입증하지 않습니다. 내부 너비·높이와 한국 다른 성별·와이드 치수도 다릅니다. 미확인은 0으로 채우지 않았습니다. <a href="https://runrepeat.com/testing-methodology" target="_blank" rel="noopener noreferrer">RR 측정법</a></p><h2>스카이+의 미확인 내부 치수를 다른 세대로 채우지 않기</h2><p>2022 스카이+ RR의 내부 젤 너비·높이는 미확인입니다. 옛 외부 어퍼 폭을 내부 치수로 부르거나 Paris·Tokyo의 수치·가격을 2022모델에 대입하지 않았습니다.</p><p>알파플라이 3 RR은 Proto 검체이며 SC 엘리트v5 DOR 소개는 남성US9.5 등 다른 규격입니다. 서로 다른 무게·스택을 같은 한국 규격의 우열로 확정하지 않습니다. 모든 모델의 현재 한국 가격·재고도 별도 확인 대상입니다.</p><h2>알파플라이3의 구조·공시</h2><p>연속 ZoomX · 전장 카본 Flyplate · 전족 Air Zoom pods</p><p>전장 카본 Flyplate와 전족 Air Zoom pods. 원문에서 독립 확인하지 못한 Air유닛 개수는 확정하지 않습니다.</p><p>RR Proto검체 실측 201g·38.1/29.6mm·드롭 8.5mm. DOR소개 198g(남성US9)·174g(여성US8),40/32mm·8mm는 한국현재공시로 대입하지 않습니다. 일반US9정책과 실제검체SKU·폭 확인은 다릅니다.</p><h2>알파플라이3의 실제 착화에서 갈린 점</h2><p>DOR Matt(남성US10)은 약간 짧음과 초기 토가드 쓸림·끈 압박, Andrea(여성US9.5)는 짧은 길이·발톱 멍과 아치 측벽을 느꼈습니다. David(남성US9.5)는 약간 길게 느껴 사이징 의견이 갈렸습니다. Andrea는 젖은 길 접지가 문제없었지만 David는 고무 없는 중족부에서 미끄러짐을 보고했습니다. 개인 경험을 공통 반 사이즈 업·Sub3전용·느린페이스 역효과로 합치지 않습니다.</p><p>한국 와이드 현재SKU는 미확인입니다. RR 내부 최광폭 93.3mm·엄지 75.3mm·높이 33.7mm와 리뷰어가 느낀 낮은 볼륨은 다른 검체·측정·개인 조건입니다.</p><h2>알파플라이3에서 함께 남긴 한계</h2><p>RR 하부ZoomX34.5AC·상부 47.2AC는 서로 다른 층입니다. 다른신발의 450km연구를 이모델 200km수명으로 옮기지 않습니다. 원형Vaporfly4%절개연구도 이모델의 폼단독효과 증명이 아닙니다. 기록개선·무릎보호·공통최적페이스 보장을 철회합니다.</p><h2>알파플라이3의 한국 판매 확인 범위</h2><p>한국 남성FD8311-003·여성FD8315-105 후보URL은web404·Aside구매불가 안내로 현재 정가·성별별판매SKU·폭·재고는 미확인입니다. 해당URL실패를 모델전체 단종·미출시로 해석하지 않으며 다른SKU현재판매는 별도입니다.</p><h2>2022 메타스피드 스카이+의 구조·공시</h2><p>FF BLAST TURBO · 상부 평판형 카본 (2022 Sky+)</p><p>2022제조사 원문은 미드솔 상부의 평평한 카본 플레이트로 설명합니다. Edge+의V형 전방 하향 구조와 다릅니다.</p><p>RR 실측 205g·33.5/30.8mm·드롭 2.7mm는 방법론 2.0의 2025-08-19 갱신 원문입니다. DOR의 인솔 포함 소개 39/34mm·5mm,2022제조사 미드솔 최대두께 33mm·드롭 5mm는 정의와 조건이 달라 구분합니다.</p><h2>2022 메타스피드 스카이+의 실제 착화에서 갈린 점</h2><p>DOR의 Matt(남성US10)은 정사이즈와 약간 넓은 중족부, 끈 조임·얇은 혀 주름·거친 메쉬를 언급했고 힐·중족의 안쪽 벗어남을 느꼈습니다. David(남성US9.5)은 정사이즈와 좋은 고정·접지를 느꼈지만 자신에게Edge+의 굴림이 더 자연스럽다고 평가했습니다. 개인의 보폭·무릎·종아리 하중 느낌을 임상 효과나 180케이던스 규칙으로 만들지 않습니다.</p><p>RR92.2mm는 구방식 외부 어퍼 최광폭으로 내부 젤 최광폭·엄지 너비가 아닙니다. 현재 원문의 내부 너비·높이·AC·HA는 미확인이며 다른Sky세대로 채우지 않습니다.</p><h2>2022 메타스피드 스카이+에서 함께 남긴 한계</h2><p>원형 2022세대는 FF BLAST TURBO이며 FF Turbo+나Tokyo의 이름과 혼용하지 않습니다. 주폼 경도·내부 젤 치수는 미확인입니다. RR방법론 2.0의 기존 모든 지표가 현재 환경·방법으로 다시 측정됐다고 단정하지 않습니다.</p><h2>2022 메타스피드 스카이+의 한국 판매 확인 범위</h2><p>한국 공식 현재 검색결과는Tokyo만 확인돼 2022 Sky+의 현재 정가·성별·폭·SKU·재고는 미확인입니다. Tokyo의 가격·폼·상품코드를 Sky+에 대입하지 않으며 미노출을 단종 확정으로 해석하지 않습니다.</p><h2>SC 엘리트v5의 구조·공시</h2><p>PEBA 기반 FuelCell 이중층 · Energy Arc 카본</p><p>두 폼층 사이의 Energy Arc 카본 플레이트. FuelCell이라는 이름만으로 Rebel·Trainer와 같은 배합이라고 보지 않습니다.</p><p>DOR소개 남성 213g(US9.5)·여성 165g(US7),40/32mm·8mm. RR198g·39.3/28.6mm·10.7mm와 성별·사이즈·공시조건을 구분합니다.</p><h2>SC 엘리트v5의 실제 착화에서 갈린 점</h2><p>DOR Matt(남성US10)은 길이가 맞고 낮은볼륨이지만 앞쪽은 넓으며 힐·중족 고정이 좋았다고 느꼈습니다. 긴템포·크루즈에 선호했지만 좁은뒤쪽과 뻣뻣한앞쪽을 한계로 봤습니다. Andrea(여성US9.5)는 앞쪽과고정이 편했지만 완만한로커·안쪽전족플레어 때문에 추진감이 적다고 느꼈습니다. 개인별 기록비교를 통제된 성능개선율로 인용하지 않습니다.</p><p>한국현재와이드SKU는 미확인입니다. RR내부최광폭 93.8mm·엄지 74.5mm·높이 26.4mm를 근거로 레이스후반 모든 넓은 발에 압박이 없다고 보장하지 않습니다.</p><h2>SC 엘리트v5에서 함께 남긴 한계</h2><p>RR 주폼 33.8AC·보조 31.7AC와 DOR의 단단한 전체주행감은 다른 지표입니다. RR16.2N굽힘과 리뷰어의 무유연성 체감도 다릅니다. 제조사의 100%PEBA주장은 DOR에 인용된 설명이며 다른폼 450km연구를 이모델 300km수명으로 옮기지 않습니다.</p><h2>SC 엘리트v5의 한국 판매 확인 범위</h2><p>뉴발란스 실운영 한국 공식 검색에서 현재V6만 9개 확인돼 V5의 현행정가·판매SKU·성별·폭·재고는 미확인입니다. V6가격과 QA·개발호스트 캐시를 V5현재상품 증거로 사용하지 않습니다. 미노출을 단종 확정으로 해석하지 않습니다.</p><h2>매장에서 비교할 질문</h2><p>평소 양말·인솔로 앞쪽 길이와 발톱 위 높이, 끈을 조일 때 발등 압박, 걷고 돌 때 힐 고정과 칼라 마찰을 확인하세요. 앞볼이 넓다는 인상만으로 앞코 전체 높이나 중족 공간까지 맞는다고 가정하지 않습니다.</p><p>몇 분/km면 무조건 이 모델, 몇 km부터 통증이 줄어든다는 공통 경계는 이 자료에서 확인하지 못했습니다. 평발·부상 이력만으로 모델을 처방하거나 국소 마모를 공통 수명으로 환산하지 않았습니다.</p><h2>확인한 원문·상품 조건</h2><ul><li><a href="https://runrepeat.com/nike-alphafly-3" target="_blank" rel="noopener noreferrer">알파플라이3 RR 정확 모델</a> — 실험실 검체·공시를 구분.</li><li><a href="https://www.doctorsofrunning.com/nike-alphafly-3-review-2024/" target="_blank" rel="noopener noreferrer">알파플라이3 DOR 착화 원문</a> — 실제 리뷰어·규격의 개인 의견.</li><li><a href="https://www.nike.com/kr/t/알파플라이-3-남성-로드-레이싱화-8VsWjMgt/FD8311-003" target="_blank" rel="noopener noreferrer">알파플라이3 한국 공식 확인 상품</a> — 본문 SKU·성별·확인 시점 조건. 현재 재고 보장 아님.</li><li><a href="https://www.nike.com/kr/t/나이키-알파플라이-3-여성-로드-레이싱화-jFKRH2Kh/FD8315-105" target="_blank" rel="noopener noreferrer">알파플라이3 한국 공식 확인 상품</a> — 본문 SKU·성별·확인 시점 조건. 현재 재고 보장 아님.</li><li><a href="https://runrepeat.com/asics-metaspeed-sky-plus" target="_blank" rel="noopener noreferrer">2022 메타스피드 스카이+ RR 정확 모델</a> — 실험실 검체·공시를 구분.</li><li><a href="https://www.doctorsofrunning.com/asics-metaspeed-sky-review-2022/" target="_blank" rel="noopener noreferrer">2022 메타스피드 스카이+ DOR 착화 원문</a> — 실제 리뷰어·규격의 개인 의견.</li><li><a href="https://asics.co.kr/goods/search?search_text=%EB%A9%94%ED%83%80%EC%8A%A4%ED%94%BC%EB%93%9C%20%EC%8A%A4%EC%B9%B4%EC%9D%B4" target="_blank" rel="noopener noreferrer">ASICS 한국 현재 검색 범위</a> — 현재검색은Tokyo4개.2022Sky+의 현재상품정보 미확인.</li><li><a href="https://corp.asics.com/jp/press/article/2022-04-24" target="_blank" rel="noopener noreferrer">ASICS2022 Sky+/Edge+ 공식 구조 발표</a> — FF BLAST TURBO·상부 평판형Sky+카본. 일본코드1013A115는 현재한국SKU확인이 아님.</li><li><a href="https://runrepeat.com/new-balance-fuel-cell-super-comp-elite-v-5" target="_blank" rel="noopener noreferrer">SC 엘리트v5 RR 정확 모델</a> — 실험실 검체·공시를 구분.</li><li><a href="https://www.doctorsofrunning.com/new-balance-fuelcell-supercomp-elite-v5/" target="_blank" rel="noopener noreferrer">SC 엘리트v5 DOR 착화 원문</a> — 실제 리뷰어·규격의 개인 의견.</li><li><a href="https://www.nbkorea.com/product/searchResult.action?schWord=SC%20Elite%20V5" target="_blank" rel="noopener noreferrer">뉴발란스 한국 실운영 검색 범위</a> — V5검색에V6만9개. V5의 현재한국상품조건 미확인.</li></ul>
 `,
+    updatedAt: "2026-11-10",
+    faqs: [
+      {
+        "question": "케이던스·보폭으로 스카이를 고르면 되나요?",
+        "answer": "제조사 개념을 공통 페이스·케이던스 처방으로 바꾸지 않습니다."
+      },
+      {
+        "question": "RR 무게가 가벼우면 마라톤에서 제일 빠른가요?",
+        "answer": "검체 조건과 개인 전환·핏이 달라 무게 하나로 기록 순위를 정하지 않습니다."
+      }
+    ],
   },
   {
     id: "mizuno-wave-rider-29-vs-nike-pegasus-42-daily-2026",
@@ -1146,91 +1087,35 @@ export const posts_2026_07: BlogPost[] = [
     ],
   },
   {
-    id: 'nike-pegasus-42-vs-asics-novablast-6-daily-2026',
-    slug: 'nike-pegasus-42-vs-asics-novablast-6-daily-2026',
-    title: '나이키 페가수스 42 vs 아식스 노바블라스트 6 — 검증된 안정 vs 경쾌한 고스택',
-    description:
-      '데일리 트레이너 격전지의 나이키 페가수스 42와 아식스 노바블라스트 6을 비교합니다. 페가수스 42는 낮은 스택의 검증된 만능형, 노바블라스트 6은 40mm급 고스택의 통통 튀는 반발형입니다. 무게·스택 차이와 가격·발볼·평발 적합성을 한국 러너 관점에서 갈랐습니다. (2026-07-29 갱신: 노바블라스트 6 RunRepeat 랩 게시 — 종합 93/100 — 로 전 수치를 실측 교체했습니다.)',
-    thumbnail: '/images/blog/nike-pegasus-42-vs-asics-novablast-6-daily-2026.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-07-25',
-    category: 'review' as const,
+    id: "nike-pegasus-42-vs-asics-novablast-6-daily-2026",
+    slug: "nike-pegasus-42-vs-asics-novablast-6-daily-2026",
+    title: "페가수스42 vs 노바블라스트6 —에어·전족 폼·드롭·고정 비교",
+    description: "안정 검증·경쾌함을 모든 러너의 결과로 단정하지 않습니다. RR 검체와 제조사 공시, 정확 리뷰·가격·폭의 범위를 구분했습니다.",
+    thumbnail: "/images/shoes/nike/pegasus42/side.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-07-25",
+    category: "review",
     readingTime: 8,
-    updatedAt: '2026-07-29',
-    tags: ['나이키 페가수스 42', '아식스 노바블라스트 6', '데일리 트레이너', '러닝화 비교', '고스택', '입문 러닝화'],
+    updatedAt: "2026-11-10",
+    tags: [
+      "페가수스42",
+      "노바블라스트6",
+      "핏",
+      "원문 대조"
+    ],
     content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>같은 데일리 트레이너, 정반대 철학</strong> — <a href="/shoes/nike-pegasus-42">페가수스 42</a>는 낮은 스택(실측 37mm)의 안정적 만능형, <a href="/shoes/asics-novablast-6">노바블라스트 6</a>은 실측 39mm 고스택의 통통 튀는 반발형</li>
-    <li><strong>안정적이고 검증된 범용성이면 페가수스 42</strong>(발볼 넓어도 와이드 有). <strong>가볍고 경쾌한 고반발이면 노바블라스트 6</strong>(실측 249g, 전족 트램폴린 폼 추가)</li>
-    <li>가격은 페가수스가 1만원 저렴(169,000 vs 179,000). 단 노바블라스트 6은 <strong>평발·과내전엔 부적합</strong>합니다(와이드는 한국 유통 확인됨)</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <p><strong>한 줄 결론.</strong> "무난하고 안정적인 검증된 데일리"면 <a href="/shoes/nike-pegasus-42">페가수스 42</a>, "경쾌하게 튀는 고스택 데일리"면 <a href="/shoes/asics-novablast-6">노바블라스트 6</a>입니다. 세대 변화가 궁금하면 <a href="/blog/nike-pegasus-41-vs-42-comparison">페가수스 41 vs 42</a>·<a href="/blog/asics-novablast-5-vs-6-comparison-2026">노바블라스트 5 vs 6</a>을, 전 세대 맞대결은 <a href="/blog/novablast-5-vs-pegasus-41-daily-cushion-2026">노바5 vs 페가41</a>을 참고하세요.</p>
-</div>
-
-<h2>두 켤레 한눈에 보기</h2>
-<table>
-  <thead><tr><th>항목</th><th>나이키 페가수스 42</th><th>아식스 노바블라스트 6</th></tr></thead>
-  <tbody>
-    <tr><td>가격(한국)</td><td><strong>169,000원</strong></td><td>179,000원</td></tr>
-    <tr><td>무게</td><td>286g</td><td><strong>249g</strong> <em>(실측)</em></td></tr>
-    <tr><td>스택(힐/전족)</td><td>37 / 27mm <em>(실측)</em></td><td><strong>39.2 / 32.1mm</strong> <em>(실측)</em></td></tr>
-    <tr><td>드롭</td><td>10mm 공식 <em>(실측 14mm)</em></td><td>7.1mm <em>(실측)</em></td></tr>
-    <tr><td>미드솔</td><td>ReactX + 풀렝스 Air Zoom</td><td>FF Blast Max + 전족 FF Turbo Squared</td></tr>
-    <tr><td>쿠션 / 반발</td><td>8 / 7</td><td><strong>9</strong> / 7 <em>(실측 SA 143 · 리턴 55.4%)</em></td></tr>
-    <tr><td>안정성</td><td><strong>7</strong></td><td>6</td></tr>
-    <tr><td>발볼 / 와이드</td><td>좁음(72.3mm) / <strong>2E 있음</strong></td><td>좁은 편(71.0mm) / <strong>있음</strong></td></tr>
-    <tr><td>평발 적합</td><td>보통</td><td>부적합(아치 지지 약)</td></tr>
-    <tr><td>내구 / km당</td><td>600km / 약 282원</td><td>700km / 약 256원</td></tr>
-    <tr><td>대표 용도</td><td>안정적 범용 데일리</td><td>경쾌한 고반발 데일리</td></tr>
-  </tbody>
-</table>
-<p><small>두 모델 모두 RunRepeat 랩 실측 기준입니다. 노바블라스트 6 랩은 2026년 7월 말 게시(종합 93/100)됐고, 게시 즉시 본 글과 상세 페이지를 실측으로 갱신했습니다.</small></p>
-
-<h2>나이키 페가수스 42 — 흔들림 없는 만능형</h2>
-<p>페가수스는 10년 넘게 "고민되면 페가수스"라는 말이 있을 만큼 검증된 데일리 트레이너입니다. 42는 ReactX 폼과 풀렝스 에어 줌으로 <strong>안정성(7/10)</strong>과 범용성을 챙겼습니다. 스택이 실측 37mm로 낮은 편이라 지면 감각이 살아 있고, 발이 흔들리지 않아 초보부터 데일리 러너까지 두루 맞습니다. 무엇보다 <strong>한국에 와이드(2E) 옵션이 정식 출시</strong>돼 발볼 넓은 러너도 안심이고, 가격도 169,000원으로 노바보다 저렴합니다.</p>
-<p>약점은 <strong>무게(286g)</strong>와 반발입니다. 노바보다 33g 무겁고, 통통 튀는 재미는 덜합니다. 또 공식 드롭은 10mm지만 RunRepeat 실측은 14mm로 나와, 힐이 생각보다 높다는 점은 참고하세요.</p>
-<p><strong>✅ 이런 분께</strong> — 처음 러닝화를 사는 분, 발볼이 넓은 분(와이드 필수), 튀는 재미보다 안정적이고 무난한 한 켤레를 원하는 분.</p>
-
-<h2>아식스 노바블라스트 6 — 통통 튀는 고스택</h2>
-<p>노바블라스트는 아식스의 "재미있는" 데일리 라인입니다. 6세대의 핵심은 <strong>전족부에 FF Turbo Squared(트램폴린 폼)를 처음 얹은 것</strong>으로, 전작이 지적받던 "힐에서 전족 전환이 끊긴다"는 문제를 정조준해 앞발 반발을 살렸습니다. 실측 스택 39.2mm 고쿠션에 249g으로 가볍기까지 해, 경쾌하게 튀며 나가는 감각이 강점입니다. 전족 아웃솔이 AsicsGrip으로 바뀌어 빗길 접지도 좋아졌고, 랩 실측(종합 93/100)에서 SA 힐 143/전족 130의 최상급 쿠션과 아웃솔 마모 0.5mm의 내구까지 확인됐습니다.</p>
-<p>약점은 <strong>안정성과 평발 적합성</strong>입니다. 아치 지지가 약해 평발·과내전 러너에겐 부적합하고, 힐 폭이 전작보다 좁아진 데다 토박스 실측도 71.0mm로 여유가 크지 않습니다. 다만 와이드가 한국에도 유통되는 것이 확인됐으니 발볼 넓다면 와이드를 고르세요. 에너지 리턴 실측 55.4%는 최신 슈퍼폼 대비 평범한 수준이라, 반발의 성격은 "폭발"보다 "경쾌"에 가깝습니다.</p>
-<p><strong>✅ 이런 분께</strong> — 통통 튀는 반발이 좋은 분, 가벼운 고스택 데일리를 원하는 분, 중립 발이면서 경쾌함을 우선하는 분.</p>
-
-<h2>내게 맞는 건?</h2>
-<ul>
-  <li><strong>첫 러닝화 · 안정성 우선 · 발볼이 넓다</strong> → <a href="/shoes/nike-pegasus-42">페가수스 42</a>(와이드 有)</li>
-  <li><strong>경쾌한 반발이 좋다 · 가벼운 고스택을 원한다</strong> → <a href="/shoes/asics-novablast-6">노바블라스트 6</a></li>
-  <li><strong>평발·과내전이 있다</strong> → 노바는 부적합. 페가수스가 낫지만, 심하면 안정화 카테고리를 보세요</li>
-  <li><strong>예산을 아끼고 싶다</strong> → 페가수스 42가 1만원 저렴하고 km당 비용도 낮습니다</li>
-</ul>
-
-<div class="faq">
-  <h2>자주 묻는 질문</h2>
-  <div class="faq-item">
-    <p class="faq-q">Q. 노바블라스트 6 수치는 실측인가요?</p>
-    <p class="faq-a">A. 네. 발행 시점(7/25)엔 랩 미게시라 일부 추정이었지만, 7월 말 RunRepeat 랩이 게시돼(종합 93/100) 본 글과 상세 페이지의 수치를 전부 실측으로 교체했습니다. 실측 스택은 39.2/32.1mm·드롭 7.1mm로 공식 표기(41.5/33.5·8mm)보다 낮게 측정됐고, 무게도 실측 249g으로 공식보다 가볍습니다.</p>
-  </div>
-  <div class="faq-item">
-    <p class="faq-q">Q. 둘 다 무릎에 괜찮나요?</p>
-    <p class="faq-a">A. 둘 다 무릎 보호는 '좋음' 등급입니다. 다만 노바블라스트 6은 스택이 높아 충격 흡수는 유리하지만 안정성이 낮고, 페가수스 42는 스택이 낮은 대신 안정적입니다. 무릎이 특히 약하다면 더 두꺼운 쿠션화(님버스 28·1080 v15)도 고려해 보세요.</p>
-  </div>
-  <div class="faq-item">
-    <p class="faq-q">Q. 발볼이 넓은데 노바블라스트 6 신어도 되나요?</p>
-    <p class="faq-a">A. 표준 발볼이면 괜찮지만, 6세대는 힐 폭이 좁아졌고 토박스 실측도 71.0mm로 여유가 크지 않습니다. 다만 노바블라스트 6도 와이드가 한국에 유통되는 것이 확인됐으니, 발볼이 넓다면 두 모델 다 와이드로 고르면 됩니다. 애매하면 매장 시착이 가장 확실합니다.</p>
-  </div>
-  <div class="faq-item">
-    <p class="faq-q">Q. 페가수스 42 실측 드롭이 14mm면 너무 높지 않나요?</p>
-    <p class="faq-a">A. 공식은 10mm인데 RunRepeat 실측이 14mm로 나왔습니다(페가수스 41도 비슷한 패턴이었습니다). 드롭이 높으면 종아리·아킬레스 부담이 줄어 힐 스트라이커에게 유리하지만, 포어풋 착지 성향이면 다소 이질적일 수 있습니다. 낮은 드롭을 선호하면 노바블라스트 6(실측 7.1mm)이 맞습니다.</p>
-  </div>
-</div>
-
-<p><small>출처: 본 사이트 신발 DB(두 모델 모두 RunRepeat 랩 실측) 및 각 모델 상세 페이지 · 한국 공식가 기준 · 작성 2026년 7월 25일 · 갱신 2026년 7월 29일(노바블라스트 6 랩 실측 반영).</small></p>
+<p><strong>2026-11-10 원문 대조 업데이트.</strong> 11월9~10일 확인한 정확 모델 자료를 바탕으로 공시·검체·개인 착화 의견을 나눴습니다. 자체 착화 후기는 아닙니다.</p><h2>선택에서 먼저 볼 차이</h2><p>42의 ReactX·전장 Air Zoom과 노바 6의 FF BLAST MAX·전족 FF TURBO²는 다른 구조입니다. 공시 드롭·RR 정적 드롭과 힐/전족 리턴도 각각 구분해야 합니다.</p><p>42가 검증된 안정, 노바 6가 무조건 더 경쾌하다는 하나의 결론 대신 낮은 앞코·전족 반응·힐 전환·중족 고정을 실제 규격에서 비교할 수 있습니다.</p><figure><img src="/images/shoes/nike/pegasus42/side.webp" alt="페가수스42 제품 자료 이미지" loading="lazy"/><figcaption>페가수스42 — 수치와 세대 조건은 본문 원문을 확인하세요.</figcaption></figure><div class="table-wrap"><table><thead><tr><th>모델</th><th>무게·측정 조건</th><th>힐/전족 스택 · 드롭</th><th>힐/전족 SA</th><th>힐/전족 리턴</th><th>내부 최광폭/엄지/높이</th></tr></thead><tbody><tr><td>페가수스42</td><td>286g · RR 검체</td><td>36/22mm · 14mm</td><td>131/91</td><td>57.1/61.2%</td><td>96.5/72.3/27mm</td></tr><tr><td>노바블라스트6</td><td>249g · RR 검체</td><td>39.2/32.1mm · 7.1mm</td><td>143/130</td><td>55.4/69.1%</td><td>94.8/71/미확인mm</td></tr></tbody></table></div><h2>표를 읽는 범위</h2><p>RR 검체와 별도 표시한 DOR 소개 공시는 다른 자료입니다. DOR 소개를 독립 랩 실측으로 표시하지 않습니다. RR 일반 정책은 남성 US9지만 개별 라벨·폭·보정 여부는 미확인이고, 실제 검체 조건이 밝혀진 경우는 본문에 남겼습니다.</p><p>SA·리턴·정적 드롭은 개인의 통증·기록·동작 중 드롭을 입증하지 않습니다. 내부 너비·높이와 한국 다른 성별·와이드 치수도 다릅니다. 미확인은 0으로 채우지 않았습니다. <a href="https://runrepeat.com/testing-methodology" target="_blank" rel="noopener noreferrer">RR 측정법</a></p><h2>힐과 전족의 수치를 합쳐 개인 느낌을 정하지 않기</h2><p>42의 RR 힐/전족 리턴 57.1/61.2%와 노바 6의 55.4/69.1%는 위치별 시험입니다. 전족 수치가 높다는 사실만으로 힐 착지·기록·통증에 대한 공통 결론을 만들지 않습니다.</p><p>42의 DOR 정확 개별 착화 원문은 미확인입니다. 노바 6의 DOR·RTR 체감도 같은 범위의 개인 의견이며, 서로 다른 리뷰의 안정감을 모델별 임상 보호 점수로 합치지 않았습니다.</p><h2>페가수스42의 구조·공시</h2><p>ReactX · 전장 곡선 Air Zoom · 비플레이트</p><p>플레이트 없음. 전장 Air Zoom을 카본 플레이트로 해석하지 않습니다.</p><p>한국 공시남성약 300g(280mm)·여성 243g(250mm),드롭 10mm입니다. RR브랜드 37/27mm·10mm·297/243g(기준사이즈미확인),RR286g·36/22mm·14mm를 구분합니다. 실제검체라벨·보정적용 여부는 미확인입니다.</p><h2>페가수스42의 실제 착화에서 갈린 점</h2><p>정확한 페가수스 42의 DOR 개별 착화 리뷰는 이번 검색에서 확인하지 못했습니다. Plus2의 비교문구를 42의 착화 경험으로 채우지 않았습니다. 기존 5~13km상한·하프이상비추천·주 100km금지와 임상보호등급은 확인한원문에서 공통기준으로 입증되지 않아 철회했습니다.</p><p>RR 내부최광폭 96.5mm·엄지 72.3mm·높이 27.0mm는 한국와이드 검체라고 확인되지 않았습니다. 과거와이드상품을 모든 4E발의 안전보장으로 쓰지 않습니다.</p><h2>페가수스42에서 함께 남긴 한계</h2><p>제조사의 41대비 에너지리턴최소 15%개선 주장은 비교시험조건 미확인입니다. RR힐 57.1/전족 61.2%와 측정조건이 다르므로 제조사주장이 입증·반박됐다고 단정하지 않습니다. SA를부드러움·무릎보호로,국소마모 0.8mm를 600km수명으로 바꾸지 않습니다. 일반US9무게정책에는 드문US8/8.5의US9환산예외가 있어 실제라벨 미확인을 남깁니다.</p><h2>페가수스42의 한국 판매 확인 범위</h2><p>한국 공식 캐시에는 남성IB1873-003·IM8332-100,여성IB1881-007,남성와이드IR1228-001·여성와이드IH1847-100 정가 169,000원이 표시됐습니다. 자료는지난주~지난달 캐시여서 현재가격·판매규격·재고는 미확인입니다. 와이드의 2E/4E문자와 실제폭증가는 미확인이고 둘레 6.35mm설명을 내부너비 증가로 옮기지 않습니다.</p><h2>노바블라스트6의 구조·공시</h2><p>FF BLAST MAX + 전족부 FF TURBO²</p><p>전장 카본 플레이트 없음</p><p>41.5/33.5mm · 8mm (DOR·RTR의 남성 공시 사양 소개; RR 실측과 구분)</p><h2>노바블라스트6의 실제 착화에서 갈린 점</h2><p>전족부 FF TURBO²의 반응성과 뒤꿈치의 전환감은 다르게 평가됩니다. DOR은 뒤꿈치 반응과 전환을 아쉬워했고, RTR 리뷰어의 전체 승차감 의견도 갈립니다.</p><p>남성 일반·2E 상품을 확인했습니다. 여성 일반 상품도 확인했으나 여성 와이드는 미확인입니다.</p><h2>노바블라스트6의 한국 판매 확인 범위</h2><p>한국 공식 정가 179,000원. 남성 일반 1011C243.250 / 남성 2E 1011C242.002 / 여성 일반 1012C008.250.</p><h2>매장에서 비교할 질문</h2><p>평소 양말·인솔로 앞쪽 길이와 발톱 위 높이, 끈을 조일 때 발등 압박, 걷고 돌 때 힐 고정과 칼라 마찰을 확인하세요. 앞볼이 넓다는 인상만으로 앞코 전체 높이나 중족 공간까지 맞는다고 가정하지 않습니다.</p><p>몇 분/km면 무조건 이 모델, 몇 km부터 통증이 줄어든다는 공통 경계는 이 자료에서 확인하지 못했습니다. 평발·부상 이력만으로 모델을 처방하거나 국소 마모를 공통 수명으로 환산하지 않았습니다.</p><h2>확인한 원문·상품 조건</h2><ul><li><a href="https://runrepeat.com/nike-pegasus-42" target="_blank" rel="noopener noreferrer">페가수스42 RR 정확 모델</a> — 실험실 검체·공시를 구분.</li><li><a href="https://www.nike.com/kr/t/%EB%82%98%EC%9D%B4%ED%82%A4-%ED%8E%98%EA%B0%80%EC%88%98%EC%8A%A4-42-%EB%82%A8%EC%84%B1-%EB%A1%9C%EB%93%9C-%EB%9F%AC%EB%8B%9D%ED%99%94-XuHjeH83" target="_blank" rel="noopener noreferrer">한국 공식 캐시 IB1873-003 · 남성</a> — 과거표시정가169,000원. 캐시목록은 현재옵션·재고보장 아님.</li><li><a href="https://www.nike.com/kr/t/%EB%82%98%EC%9D%B4%ED%82%A4-%ED%8E%98%EA%B0%80%EC%88%98%EC%8A%A4-42-%EB%82%A8%EC%84%B1-%EB%A1%9C%EB%93%9C-%EB%9F%AC%EB%8B%9D%ED%99%94-hzTwdMlw/IM8332-100" target="_blank" rel="noopener noreferrer">한국 공식 캐시 IM8332-100 · 남성</a> — 과거표시정가169,000원. 캐시목록은 현재옵션·재고보장 아님.</li><li><a href="https://www.nike.com/kr/t/%EB%82%98%EC%9D%B4%ED%82%A4-%ED%8E%98%EA%B0%80%EC%88%98%EC%8A%A4-42-%EC%97%AC%EC%84%B1-%EB%A1%9C%EB%93%9C-%EB%9F%AC%EB%8B%9D%ED%99%94-wsTF7yIV/IB1881-007" target="_blank" rel="noopener noreferrer">한국 공식 캐시 IB1881-007 · 여성</a> — 과거표시정가169,000원. 캐시목록은 현재옵션·재고보장 아님.</li><li><a href="https://www.nike.com/kr/t/%ED%8E%98%EA%B0%80%EC%88%98%EC%8A%A4-42-%EB%82%A8%EC%84%B1-%EB%A1%9C%EB%93%9C-%EB%9F%AC%EB%8B%9D%ED%99%94-hzTwdMlw/IR1228-001" target="_blank" rel="noopener noreferrer">한국 공식 캐시 IR1228-001 · 와이드</a> — 과거표시정가169,000원. 캐시목록은 현재옵션·재고보장 아님.</li><li><a href="https://www.nike.com/kr/t/%EB%82%98%EC%9D%B4%ED%82%A4-%ED%8E%98%EA%B0%80%EC%88%98%EC%8A%A4-42-%EC%97%AC%EC%84%B1-%EB%A1%9C%EB%93%9C-%EB%9F%AC%EB%8B%9D%ED%99%94%EC%99%80%EC%9D%B4%EB%93%9C-wsTF7yIV/IH1847-100" target="_blank" rel="noopener noreferrer">한국 공식 캐시 IH1847-100 · 와이드</a> — 과거표시정가169,000원. 캐시목록은 현재옵션·재고보장 아님.</li><li><a href="https://www.nike.com/kr/a/pegasus-42-release-date/" target="_blank" rel="noopener noreferrer">Nike 공식15% 개선 주장</a> — 제조사자체주장. 비교시험조건 미확인으로 RR절대리턴과 직접비교하지 않음.</li><li><a href="https://runrepeat.com/asics-novablast-6" target="_blank" rel="noopener noreferrer">노바블라스트6 RR 정확 모델</a> — 실험실 검체·공시를 구분.</li><li><a href="https://www.doctorsofrunning.com/asics-novablast-6-review-2026/" target="_blank" rel="noopener noreferrer">노바블라스트6 DOR 착화 원문</a> — 실제 리뷰어·규격의 개인 의견.</li></ul><ul><li><a href="https://www.asics.co.kr/p/AKR_112630211-002" target="_blank" rel="noopener noreferrer">노바블라스트6 한국 공식 확인 상품</a> — 본문 SKU·가격 확인 시점과 현재 선택 재고를 구분.</li></ul>
 `,
+    faqs: [
+      {
+        "question": "페가수스가 더 안전한가요?",
+        "answer": "정해진 임상 비교 근거를 확보하지 못해 모델별 안전 순위를 만들지 않습니다."
+      },
+      {
+        "question": "노바6는 전족 착지 전용인가요?",
+        "answer": "전족 폼과 리턴 수치만으로 주법을 처방하지 않습니다."
+      }
+    ],
   },
   {
     id: 'new-balance-1080-v15-vs-asics-nimbus-28-premium-cushion-2026',
@@ -2446,82 +2331,34 @@ export const posts_2026_07: BlogPost[] = [
     ],
   },
   {
-    id: 'nike-pegasus-plus-2-leak-2026',
-    slug: 'nike-pegasus-plus-2-leak-2026',
-    title: '나이키 페가수스 플러스 2 리크 | 디자인 이미지 포착 — 미드솔 스펙은 소스마다 갈린다',
-    description:
-      '나이키 페가수스 플러스 후속작으로 보이는 디자인 리크 이미지가 SneakerNews를 통해 공개됐습니다. 어퍼가 Flyknit에서 엔지니어드 메시로 바뀌고 실루엣이 더 공격적으로 변했다는 점은 여러 소스가 일치하지만, 정작 핵심인 미드솔 소재는 소스마다 다르게 서술했습니다(ZoomX+줄에어 vs ReactX). 작성 시점(7/10)의 리크 단계 기록이며, 이후 8월 공식 발표로 미드솔은 ZoomX로 확인됐고 한국 정가는 219,000원입니다(2026-10-23 기준).',
-    thumbnail: '/images/blog/nike-pegasus-plus-2-leak-2026.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-07-10',
-    updatedAt: '2026-10-23',
-    category: 'review' as const,
-    readingTime: 6,
-    tags: ['나이키 페가수스 플러스 2', '페가수스 플러스', '나이키 러닝화', '러닝화 리크', '신상 러닝화'],
+    id: "nike-pegasus-plus-2-leak-2026",
+    slug: "nike-pegasus-plus-2-leak-2026",
+    title: "페가수스 플러스2 —리크 이후 확인된 ZoomX·실측·한국 상품의 범위",
+    description: "과거 디자인 추정과 현재 확인한 원문을 분리합니다.18% 주장·인솔·반사 설명·드롭 차이를 정확 출처 조건으로 정리했습니다.",
+    thumbnail: "/images/shoes/nike/pegasus-plus-2/side.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-07-10",
+    updatedAt: "2026-11-10",
+    category: "review",
+    readingTime: 8,
+    tags: [
+      "페가수스 플러스2",
+      "핏",
+      "원문 대조"
+    ],
     content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>나이키 페가수스 플러스 2로 추정되는 디자인 리크 이미지</strong>가 공개됐습니다. 어퍼가 Flyknit → 엔지니어드 메시로 바뀌고, 측면 케이지 컷아웃이 더해져 실루엣이 한층 공격적으로 변했다는 점은 여러 소스가 일치합니다</li>
-    <li><strong>미드솔 소재는 소스마다 다르게 말합니다</strong> — 한쪽은 "올ZoomX + 가시적 줌에어 포드"(프리미엄급), 다른 쪽은 "ReactX 폼"(보급형)이라고 서술했습니다. 작성 시점(7/10)엔 확정할 수 없었고, 8월 공식 발표로 ZoomX가 맞는 것으로 확인됐습니다</li>
-    <li>작성 시점엔 출시가 <strong>2026년 말~2027년 초</strong>, 가격대가 $150~200 선으로 거론됐습니다. 실제로는 8월 30일 글로벌 출시됐고 한국 정가는 219,000원입니다(2026-10-23 기준). 참고로 <a href="/shoes/nike-pegasus-plus">페가수스 플러스(1세대)</a>는 219,000원·244g·풀렝스 ZoomX입니다</li>
-  </ul>
-</div>
-
-<div class="callout warning">
-  <span class="callout-icon">✅</span>
-  <div class="callout-body">
-    <p class="callout-title">2026년 8월 25일 갱신 — 공식 발표가 나왔습니다</p>
-    <p>아래 본문은 <strong>2026년 7월 10일 리크 단계에서 작성된 기록</strong>입니다. 이후 나이키가 정식 발표를 했고, 여기서 "확정할 수 없다"고 적은 것들의 답이 나왔습니다. <strong>미드솔은 ZoomX가 맞았고</strong>(ReactX 다운그레이드설은 틀렸습니다), 전족부에 곡선형 Air Zoom 유닛이 노출되는 구조가 더해졌습니다. 또 아래에서 예상 출시를 "2026년 말~2027년 초"로 적었으나 <strong>실제 글로벌 출시는 8월 30일, 한국은 9월 초</strong>로 훨씬 빨랐습니다. 확정된 내용은 <a href="/blog/nike-pegasus-plus-2-release-2026">페가수스 플러스 2 공식 발표 정리</a>에서 보실 수 있습니다.</p>
-  </div>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">🔍</span>
-  <div class="callout-body">
-    <p class="callout-title">아직 '리크' 단계 — 공식 발표 아님 (2026년 7월 기준 기록)</p>
-    <p>이번 이미지는 나이키 공식 발표가 아니라 <strong>인스타그램 스니커 리크 계정(@the_secret_shoe)을 통해 처음 공개</strong>됐고, SneakerNews가 이를 기사화(2026-07-08)하면서 알려졌습니다. <a href="/shoes/nike-pegasus-plus">페가수스 플러스</a>가 나온 지 약 2년 만에 후속작 디자인이 유출된 셈이지만, <strong>정식 스펙·가격·출시일은 여전히 미확정</strong>입니다. 아래 내용은 확인된 것과 확인되지 않은 것을 구분해서 정리했습니다.</p>
-  </div>
-</div>
-
-<h2>확인된 것 — 어퍼·실루엣 변화</h2>
-<p>리크 이미지에서 가장 뚜렷한 변화는 <strong>어퍼 소재와 전체적인 형태</strong>입니다. 1세대의 Flyknit 니트 소재 대신 <strong>엔지니어드 메시</strong>를 쓰고, 측면에 <strong>구멍이 뚫린 케이지 구조</strong>가 추가됐습니다. 실루엣 자체도 최근 아이콘급 페가수스 모델들과 비슷하게 <strong>이전 세대보다 눈에 띄게 공격적인 형태</strong>로 바뀌었다고 전해집니다. 신발의 성격(통통 튀는 반응형 라이드)은 그대로 유지될 것으로 보이지만, 겉모습만 봐도 세대 교체를 의도했다는 인상이 강합니다.</p>
-
-<h2>확인 안 된 것 — 미드솔, 소스마다 다르다</h2>
-<p>정작 러너에게 가장 중요한 <strong>미드솔 소재는 소스 간 얘기가 갈립니다.</strong></p>
-<table>
-  <thead><tr><th>소스</th><th>미드솔 주장</th><th>의미</th></tr></thead>
-  <tbody>
-    <tr><td>SneakerNews (2026-07-08)</td><td>올 ZoomX + 가시적 줌에어 전족부 포드 추가</td><td>1세대와 같은 프리미엄 풀렝스 ZoomX 유지 + 상위 기능 추가</td></tr>
-    <tr><td>스펙 트래커 사이트</td><td>ReactX 폼</td><td><a href="/shoes/nike-pegasus-42">페가수스 42</a>급 보급형 폼으로 다운그레이드</td></tr>
-  </tbody>
-</table>
-<p class="caption">※ 두 주장은 서로 배치됩니다. ZoomX(PEBA 계열 프리미엄 폼)와 ReactX(EVA 계열 보급형 폼)는 성격이 완전히 다른 소재라, 어느 쪽이 맞는지에 따라 신발의 포지션 자체가 달라집니다. 무게(258g)·스택(37/29mm)·드롭(8mm) 등 구체적 수치도 도는 중이지만 출처가 불분명해 그대로 신뢰하기는 이릅니다.</p>
-
-<h2>왜 이렇게 신중하게 접근하나</h2>
-<p>이번 리크와 함께 다른 브랜드 신모델 루머 여러 건을 교차 검증해봤는데, 상당수가 실제로는 근거가 부실했습니다. 어떤 루머는 다른 소스에서 전혀 확인되지 않았고, 심지어 그 신발 라인의 알려진 설계 철학과 정면으로 모순되는 경우도 있었습니다. <strong>리크 시즌엔 신뢰도 낮은 정보도 함께 돌아다닙니다.</strong> 그래서 이번 페가수스 플러스 2도 여러 소스가 일치하는 부분(어퍼·실루엣)과 엇갈리는 부분(미드솔)을 구분해 전달하는 게 맞다고 판단했습니다.</p>
-
-<h2>1세대 페가수스 플러스와 비교하면</h2>
-<p>현재 판매 중인 <a href="/shoes/nike-pegasus-plus">페가수스 플러스</a>는 219,000원, 244g, 풀렝스 ZoomX 폼으로 <strong>가볍고 반응성 있는 스피드 데일리화</strong> 포지션입니다. 2세대가 정말 ZoomX를 유지한다면 이 성격이 그대로 이어지되 어퍼·핏이 다듬어지는 정도일 것이고, 만약 ReactX로 바뀐다면 <a href="/shoes/nike-pegasus-42">페가수스 42</a>와 포지션이 겹치면서 가격이 오히려 낮아지거나 라인 자체가 재편될 가능성도 있습니다. 나이키 라인업 전체 구조가 궁금하다면 <a href="/blog/nike-running-shoes-lineup-tier-guide-2026">나이키 러닝화 계급도</a>를 참고하세요.</p>
-
-<h2>FAQ</h2>
-<div class="faq">
-  <div class="faq-item">
-    <p class="faq-q">Q. 지금 페가수스 플러스를 사도 괜찮을까요, 아니면 2세대를 기다려야 하나요?</p>
-    <p class="faq-a">A. <strong>(2026-08-25 정정)</strong> 이 글을 쓴 7월에는 세대 교체가 "최소 반년 이상(2026년 말~2027년 초) 남았다"고 안내했으나, 실제로는 두 달이 채 안 걸려 8월 30일 글로벌 출시가 확정됐습니다. 다만 두 세대는 대체 관계라기보다 성격이 갈립니다 — <a href="/shoes/nike-pegasus-plus">1세대</a>는 풀렝스 ZoomX의 부드러운 스피드 데일리, 2세대는 전족부 에어를 얹은 템포 트레이너입니다. 자세한 비교는 <a href="/blog/nike-pegasus-plus-2-release-2026">공식 발표 정리</a>를 참고하세요.</p>
-  </div>
-  <div class="faq-item">
-    <p class="faq-q">Q. 한국 출시는 언제쯤 될까요?</p>
-    <p class="faq-a">A. <strong>(2026-08-25 확정)</strong> 글로벌 출시는 8월 30일, 한국은 9월 초로 안내됐습니다. 판매처는 나이키닷컴·나이키 앱·주요 나이키 매장입니다. <strong>(2026-10-23 갱신)</strong> 한국 정가는 219,000원으로, 나이키 코리아 공식몰에서 판매 중입니다(2026-10-02 확인).</p>
-  </div>
-  <div class="faq-item">
-    <p class="faq-q">Q. 미드솔이 ZoomX인지 ReactX인지는 언제 알 수 있나요?</p>
-    <p class="faq-a">A. <strong>(2026-08-25 확정)</strong> 나이키 공식 발표로 <strong>ZoomX</strong>임이 확인됐습니다. ReactX 다운그레이드설은 틀렸고, 여기에 전족부 곡선형 Air Zoom 유닛이 더해졌습니다. 나이키는 1세대 대비 에너지 리턴이 최소 18% 높아졌다고 밝혔습니다(제조사 기준). <strong>(2026-10-18 갱신)</strong> 10월 12일 게시된 RunRepeat 랩에서는 에너지 리턴이 전족부 69.0%·힐 65.5%로, 1세대와 비슷한 수준으로 측정됐습니다.</p>
-  </div>
-</div>
-
-<p><small>출처: SneakerNews.com(Andrew Rizzo, 2026-07-08), 리크 이미지 출처 @the_secret_shoe(인스타그램), 스펙 트래커 사이트(출처 불명, 참고용). 작성 2026년 7월 10일 기준이며, 정식 발표·정량 스펙이 확인되면 갱신합니다.</small></p>
+<p><strong>2026-11-10 원문 대조 업데이트.</strong> 11월9~10일 확인한 정확 모델 자료를 바탕으로 공시·검체·개인 착화 의견을 나눴습니다. 자체 착화 후기는 아닙니다.</p><h2>선택에서 먼저 볼 차이</h2><p>과거 유출 이미지를 최종 완성화 명세처럼 설명하지 않습니다. 이후 확인한 ZoomX와 정확 모델의 RR·DOR·한국 상품 정보를 정리했고, 미확인 판 유무·화학 조성을 다른 세대로 채우지 않았습니다.</p><p>전작 대비 제조사의 18% 개선 주장과 RR 절대 리턴은 같은 비교시험으로 확인하지 못했습니다. 개인 기록 향상률이나 모든 발의 핏 개선을 뜻하는 값으로 바꾸지 않습니다.</p><figure><img src="/images/shoes/nike/pegasus-plus-2/side.webp" alt="페가수스 플러스2 제품 자료 이미지" loading="lazy"/><figcaption>페가수스 플러스2 — 수치와 세대 조건은 본문 원문을 확인하세요.</figcaption></figure><div class="table-wrap"><table><thead><tr><th>모델</th><th>무게·측정 조건</th><th>힐/전족 스택 · 드롭</th><th>힐/전족 SA</th><th>힐/전족 리턴</th><th>내부 최광폭/엄지/높이</th></tr></thead><tbody><tr><td>페가수스 플러스2</td><td>247g · RR 검체</td><td>37.7/27.3mm · 10.4mm</td><td>147/122</td><td>65.5/69%</td><td>94/71.3/26.8mm</td></tr></tbody></table></div><h2>표를 읽는 범위</h2><p>RR 검체와 별도 표시한 DOR 소개 공시는 다른 자료입니다. DOR 소개를 독립 랩 실측으로 표시하지 않습니다. RR 일반 정책은 남성 US9지만 개별 라벨·폭·보정 여부는 미확인이고, 실제 검체 조건이 밝혀진 경우는 본문에 남겼습니다.</p><p>SA·리턴·정적 드롭은 개인의 통증·기록·동작 중 드롭을 입증하지 않습니다. 내부 너비·높이와 한국 다른 성별·와이드 치수도 다릅니다. 미확인은 0으로 채우지 않았습니다. <a href="https://runrepeat.com/testing-methodology" target="_blank" rel="noopener noreferrer">RR 측정법</a></p><h2>반사·무게·드롭도 확인한 출처를 함께 보기</h2><p>한국 공식 반사 디테일과 RR 검체 반사 없음이 다릅니다. DOR 소개 270g(남성 US10 공시)·RR247g과 공시 10mm·RR10.4mm도 조건을 나눕니다. 설명이 다른 이유를 미확인 제조 변경으로 채우지 않았습니다.</p><p>새 폼·높은 리턴을 아킬레스 보호나 평발 금지 기준으로 쓰지 않습니다.450km 수명과 모든 규격의 편안함도 이번 자료에서 보장하지 않았습니다.</p><h2>페가수스 플러스2의 구조·공시</h2><p>훈련용 ZoomX · 전족 전폭 Air Zoom1개</p><p>전족Air Zoom1개를 플레이트로 해석하지 않습니다. 검토한 정확원문에서 플레이트유무의 명시적근거를 재확인하지 못해 해당상태는 미확인으로 남깁니다.</p><p>DOR소개 270g(남성US10)/226g(여성US8)·38/28mm·10mm, RR브랜드 265/215g(사이즈미확인)·38/28mm·10mm, 실제 247g·37.7/27.3mm·10.4mm를 구분합니다.</p><h2>페가수스 플러스2의 실제 착화에서 갈린 점</h2><p>DOR Andrea(여성US9.5)는 정사이즈·높은전족볼륨과중간테이퍼, 끈을더조여야하는중족과좋은뒤쪽고정을느꼈습니다. 이지·업템포와본인의마라톤강도를선호했지만 역치강도에서는무게가더느껴지고작은베벨·높은드롭의힐전환이거칠었습니다. 개인경험을고정페이스·착지금지로바꾸지않습니다.</p><p>RR 내부최광폭 94mm·엄지 71.3mm·높이 26.8mm입니다. 개인의넉넉한앞코체감이나정사이즈안내가 모든한국발의적합·와이드여부를 보장하지 않습니다.</p><h2>페가수스 플러스2에서 함께 남긴 한계</h2><p>한국공식은반사디테일을명시하지만RR검체는없음으로상충합니다. 제조사 18%개선은DOR이재전한주장이며RR65.5/69%와비교시험조건이같다고확인하지못했습니다. RR젖은콘크리트 0.49와Andrea의좋은젖은도로체감은다릅니다.450km·아킬레스보호·평발금지·모든발핏개선보장은철회합니다.</p><h2>페가수스 플러스2의 한국 판매 확인 범위</h2><p>한국남성IM2541-600·여성IM2543-600 캐시에 219,000원이 표시됐지만 현재가격·선택재고·와이드는 미확인입니다. 남성 265g(280mm)·여성 215g(250mm)·10mm공시이며 기존 258g US9확정을 철회합니다. 캐시사이즈목록·장바구니를 현행판매확정으로 쓰지 않습니다.</p><h2>매장에서 비교할 질문</h2><p>평소 양말·인솔로 앞쪽 길이와 발톱 위 높이, 끈을 조일 때 발등 압박, 걷고 돌 때 힐 고정과 칼라 마찰을 확인하세요. 앞볼이 넓다는 인상만으로 앞코 전체 높이나 중족 공간까지 맞는다고 가정하지 않습니다.</p><p>몇 분/km면 무조건 이 모델, 몇 km부터 통증이 줄어든다는 공통 경계는 이 자료에서 확인하지 못했습니다. 평발·부상 이력만으로 모델을 처방하거나 국소 마모를 공통 수명으로 환산하지 않았습니다.</p><h2>확인한 원문·상품 조건</h2><ul><li><a href="https://runrepeat.com/nike-pegasus-plus-2" target="_blank" rel="noopener noreferrer">페가수스 플러스2 RR 정확 모델</a> — 실험실 검체·공시를 구분.</li><li><a href="https://www.doctorsofrunning.com/nike-pegasus-plus-2-review/" target="_blank" rel="noopener noreferrer">페가수스 플러스2 DOR 착화 원문</a> — 실제 리뷰어·규격의 개인 의견.</li><li><a href="https://www.nike.com/kr/t/%EB%82%98%EC%9D%B4%ED%82%A4-%ED%8E%98%EA%B0%80%EC%88%98%EC%8A%A4-%ED%94%8C%EB%9F%AC%EC%8A%A4-2-%EB%82%A8%EC%84%B1-%EB%A1%9C%EB%93%9C-%EB%9F%AC%EB%8B%9D%ED%99%94-k7TxLWJb/IM2541-600" target="_blank" rel="noopener noreferrer">한국 공식 캐시 IM2541-600 · men</a> — 표시 정가 219000원. 도구 캐시 last week; 현재 가격·선택 재고 미확인.</li><li><a href="https://www.nike.com/kr/t/%EB%82%98%EC%9D%B4%ED%82%A4-%ED%8E%98%EA%B0%80%EC%88%98%EC%8A%A4-%ED%94%8C%EB%9F%AC%EC%8A%A4-2-%EC%97%AC%EC%84%B1-%EB%A1%9C%EB%93%9C-%EB%9F%AC%EB%8B%9D%ED%99%94-k7TxLWJb/IM2543-600" target="_blank" rel="noopener noreferrer">한국 공식 캐시 IM2543-600 · women</a> — 표시 정가 219000원. 도구 캐시 4 days ago; 현재 가격·선택 재고 미확인.</li></ul>
 `,
+    faqs: [
+      {
+        "question": "18% 더 빨라진다는 뜻인가요?",
+        "answer": "제조사 에너지 리턴 주장과 개인 기록은 다른 결과이며 RR와 같은 비교 조건도 미확인입니다."
+      },
+      {
+        "question": "리크 사진이 최종 모델인가요?",
+        "answer": "리크와 이후 확인한 제조사·랩의 정확 제품 정보를 분리해 읽어야 합니다."
+      }
+    ],
   },
   {
     id: 'new-balance-team-womens-2026-recruitment',
@@ -2700,102 +2537,34 @@ export const posts_2026_07: BlogPost[] = [
 `,
   },
   {
-    id: 'asics-novablast-5-vs-6-comparison-2026',
-    slug: 'asics-novablast-5-vs-6-comparison-2026',
-    title: '노바블라스트 5 vs 6 | 세대 비교 — 전족 FF Turbo Squared로 뭐가 달라졌나, 갈아탈까 세일 5를 살까',
-    description: '아식스 노바블라스트 6이 2026년 7월 9일 한국 출시(179,000원)됩니다. 스택·드롭·무게는 5와 거의 같지만, 핵심은 전족부에 처음 들어간 FF Turbo Squared(ATPU 트램폴린 폼)로 전작의 약점이던 전족 반발·힐-전족 전환을 손봤다는 점입니다. 여기에 전족 AsicsGrip(빗길 접지↑)·엔지니어드 위브 어퍼가 더해졌고, 힐 폭은 90→85mm로 좁아졌습니다. 5를 잘 쓰고 있다면 갈아탈지, 세일 들어간 5를 살지 — 두 세대 모두 RunRepeat 실측 기준으로 정리했습니다(2026-07-29 노바6 랩 게시 반영).',
-    thumbnail: '/images/blog/asics-novablast-5-vs-6-comparison-2026.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-07-08',
-    updatedAt: '2026-07-29',
-    category: 'review' as const,
+    id: "asics-novablast-5-vs-6-comparison-2026",
+    slug: "asics-novablast-5-vs-6-comparison-2026",
+    title: "노바블라스트5 vs6 —전족 FF TURBO²·앞코·힐 전환의 변화",
+    description: "새 폼의 존재와 실제 주행감·핏을 분리합니다.5의 현재 세일·와이드와6의 한국SKU 조건, 정확 RR검체를 정리했습니다.",
+    thumbnail: "/images/shoes/asics/novablast5/1.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-07-08",
+    updatedAt: "2026-11-10",
+    category: "review",
     readingTime: 8,
-    tags: ['노바블라스트 6', '노바블라스트 5', '노바블라스트 세대비교', 'FF Turbo Squared', '데일리 트레이너', '아식스', '러닝화 비교'],
+    tags: [
+      "노바블라스트5",
+      "노바블라스트6",
+      "핏",
+      "원문 대조"
+    ],
     content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>스택·드롭·무게는 5와 6이 큰 틀에서 같습니다</strong>(6 실측 39.2/32.1mm·드롭 7.1mm·249g — 5보다 근소하게 낮고 가벼움). "같은 노바블라스트"예요</li>
-    <li><strong>핵심 변화는 전족부에 처음 들어간 FF Turbo Squared</strong>(ATPU 트램폴린 폼) — 전작 5의 약점이던 전족 반발·힐-전족 전환을 정조준했습니다. 전족 AsicsGrip으로 빗길 접지도 좋아졌죠</li>
-    <li><strong>새로 산다면 6</strong>(179,000원), <strong>이미 5를 잘 쓰고 600km 이내거나 세일가·넓은 발볼이면 5</strong>가 여전히 합리적입니다(힐 폭 90mm·와이드 확실)</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">👟</span>
-  <div class="callout-body">
-    <p class="callout-title">한 줄 결론</p>
-    <p><strong>지금 새로 산다면 개선판인 <a href="/shoes/asics-novablast-6">노바블라스트 6</a>(179,000원, 7/9 출시)</strong>가 낫습니다. 다만 <strong><a href="/shoes/asics-novablast-5">노바블라스트 5</a>를 잘 쓰고 있다면 급히 갈아탈 이유는 적고</strong>, 세일에 들어가면 5가 가성비로 여전히 매력적입니다. 발볼이 넓다면 힐 폭이 더 넓고 와이드가 확실한 5도 고려하세요.</p>
-  </div>
-</div>
-
-<h2>스펙 한눈 비교</h2>
-<div class="table-wrap">
-<table>
-  <thead><tr><th>항목</th><th>노바블라스트 5</th><th>노바블라스트 6</th><th>변화</th></tr></thead>
-  <tbody>
-    <tr><td>출시(한국)</td><td>기존</td><td><strong>2026-07-09</strong></td><td>신상</td></tr>
-    <tr><td>무게(US 9)</td><td>255g</td><td><strong>249g</strong> <em>(실측)</em></td><td>-6g 경량</td></tr>
-    <tr><td>힐 / 전족 스택</td><td>41 / 33mm</td><td>39.2 / 32.1mm <em>(실측)</em></td><td>실측 기준 약 -2mm</td></tr>
-    <tr><td>드롭</td><td>8mm</td><td>7.1mm <em>(실측)</em></td><td>비슷</td></tr>
-    <tr><td><strong>미드솔</strong></td><td>FF Blast Max 단일</td><td><strong>FF Blast Max + FF Turbo Squared(전족)</strong></td><td>전족 듀얼 폼 신규</td></tr>
-    <tr><td>전족 아웃솔</td><td>AHAR+ 러버</td><td><strong>AsicsGrip</strong></td><td>빗길 접지↑</td></tr>
-    <tr><td>어퍼</td><td>엔지니어드 메시</td><td>엔지니어드 위브(슈퍼블라스트 3 원단)</td><td>리뉴얼</td></tr>
-    <tr><td>힐 폭</td><td>90mm</td><td>85mm</td><td>-5mm(좁아짐)</td></tr>
-    <tr><td>와이드 옵션</td><td><strong>있음(2E)</strong></td><td><strong>있음</strong>(한국 유통 확인)</td><td>유지</td></tr>
-    <tr><td>가격(한국)</td><td>169,000원</td><td><strong>179,000원</strong></td><td>+1만원</td></tr>
-  </tbody>
-</table>
-<p class="caption">※ 두 세대 모두 RunRepeat 실측 기준입니다(노바6 랩 2026년 7월 말 게시 — 종합 93/100, 게시 즉시 반영).</p>
-</div>
-
-<h2>가장 큰 차이 — 전족 FF Turbo Squared</h2>
-<p>두 신발의 스택·드롭·무게는 거의 같습니다. 즉 발밑 높이나 무게에서 오는 느낌은 비슷해요. <strong>결정적 차이는 미드솔 구성</strong>입니다.</p>
-<p><strong>노바블라스트 5</strong>는 <strong>FF Blast Max 단일 폼</strong>이었습니다. 부드럽고 통통 튀는 라이드로 호평받았지만, 해외 리뷰(Doctors of Running)에서 <strong>"힐에서 전족으로 넘어가는 전환이 다소 끊긴다"</strong>는 지적이 있었죠.</p>
-<p><strong>노바블라스트 6</strong>은 힐/미드풋엔 기존 FF Blast Max를 유지하되, <strong>전족부에 FF Turbo Squared를 처음 얹었습니다.</strong> FF Turbo Squared는 아식스 상위 폼(<a href="/shoes/asics-megablast">메가블라스트</a> 계열에 쓰인 ATPU 기반)으로, <strong>전족에서 트램폴린 같은 반발</strong>을 더해줍니다. 즉 <strong>5의 약점이던 전족 반발과 전환 끊김을 정조준한 개선</strong>이에요. 같은 위브 어퍼를 쓰는 <a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a>와도 결이 이어집니다. 해외 선행 리뷰의 톤은 "극적인 변신이라기보다 약점을 메운 완성도 향상"에 가깝습니다.</p>
-
-<h2>빗길 접지·어퍼</h2>
-<p>노바6는 <strong>전족 아웃솔을 AsicsGrip으로 바꿔 젖은 노면 접지를 개선</strong>했습니다. 장마철·이른 아침 이슬 낀 노면에서 유리하죠. 어퍼도 <strong>슈퍼블라스트 3에 쓰인 엔지니어드 위브 원단</strong>으로 리뉴얼돼 감싸는 느낌과 통기가 다듬어졌습니다. 5의 여름 통기가 약점으로 꼽혔던 만큼 주목했던 부분인데, 실측 통기성 80점으로 준수하게 확인됐습니다.</p>
-
-<h2>발볼·핏 — 여기선 5가 유리할 수 있다</h2>
-<p>한국 러너가 주목할 지점은 <strong>힐 폭</strong>입니다. 노바6는 힐 폭이 <strong>90→85mm로 약간 좁아졌습니다.</strong> 발볼·발뒤꿈치가 넓은 편이라면 6이 조금 더 조일 수 있어요. 토박스 실측도 71.0mm로 여유가 크지 않아요. 다만 <strong>6의 와이드도 한국에 유통되는 것이 확인</strong>됐으니(무신사 등), 발볼이 넓다면 6는 와이드로 고르거나 힐 폭이 5mm 넓은 5를 고려하면 됩니다. 발볼 기준 후보는 <a href="/best/wide-toebox">발볼 넓은 러너 추천</a>도 참고하세요.</p>
-
-<h2>가격·가성비</h2>
-<p>노바6는 <strong>179,000원</strong>으로 5(169,000원)보다 <strong>1만원 올랐습니다</strong>(글로벌 $155 인상 반영). 성능 개선(전족 반발·빗길 접지)을 감안하면 인상폭은 합리적이에요. 다만 <strong>노바5가 세일에 들어가면 15만 원 안팎까지 내려가</strong>, 순수 가성비로는 5가 앞섭니다. "세일가의 낮은 가격"을 원하면 5, "실측으로도 검증된(93/100) 최신 개선판"을 원하면 6입니다.</p>
-
-<h2>누가 5, 누가 6</h2>
-<ul>
-  <li><strong>노바블라스트 6로 가야 할 사람</strong> — 새로 데일리화를 장만하는 러너, 5의 전족 반발·전환 끊김이 아쉬웠던 러너, 빗길·장마철 접지가 중요한 러너, 최신 개선판을 원하는 러너</li>
-  <li><strong>노바블라스트 5로 충분한 사람</strong> — 이미 5를 잘 쓰고 있고 아직 600km 이내인 러너, 세일가로 가성비를 노리는 러너, <strong>힐 폭 90mm의 여유가 필요한 러너</strong></li>
-  <li><strong>큰 틀은 "같은 신발, 전족만 살렸다"</strong> — 스택·무게가 같아 라이드 성격은 유지됩니다. 5를 잘 쓰고 있다면 급히 갈아탈 이유는 적어요</li>
-</ul>
-<p>출시 전 변경점을 더 자세히 본 <a href="/blog/asics-novablast-6-preview-2026">노바블라스트 6 미리보기</a>, 같은 시기 데일리 신상과의 대결 <a href="/blog/asics-novablast-6-vs-hoka-clifton-pro-2026">노바블라스트 6 vs 클리프톤 프로</a>, 그리고 <a href="/best/daily-trainer">데일리 트레이너 추천</a>도 함께 보세요. 페가수스와의 비교는 <a href="/shoes/nike-pegasus-41">페가수스 41</a> 상세에서 이어집니다.</p>
-
-<div class="callout info">
-  <span class="callout-icon">✅</span>
-  <div class="callout-body">
-    <p class="callout-title">노바블라스트 6 — 실측 랩 반영 완료 (2026-07-29 갱신)</p>
-    <p>RunRepeat 랩이 게시되어 추정값을 전부 실측으로 교체했습니다. 핵심 실측: <strong>종합 93/100(Superb)</strong>, 무게 249g, 스택 39.2/32.1mm·드롭 7.1mm(공식 표기보다 낮음), SA 힐 143/전족 130(최상급 쿠션), 에너지 리턴 55.4%, 토박스 71.0mm, 통기성 80점, <strong>저온 경화 +9%(겨울에 강함)</strong>, 아웃솔 마모 0.5mm(최상급 내구). 상세는 <a href="/shoes/asics-novablast-6">노바블라스트 6 상세 페이지</a>에서 확인하세요.</p>
-  </div>
-</div>
+<p><strong>2026-11-10 원문 대조 업데이트.</strong> 11월9~10일 확인한 정확 모델 자료를 바탕으로 공시·검체·개인 착화 의견을 나눴습니다. 자체 착화 후기는 아닙니다.</p><h2>선택에서 먼저 볼 차이</h2><p>6은 전족 FF TURBO²를 더한 구조를 확인했습니다. 다만 전족 변화가 힐의 느낌·고정·모든 거리의 편안함을 함께 결정하지는 않습니다.</p><p>5세대의 내부 공간과 6세대의 전족 반응·힐 전환을 나누어 볼 수 있습니다. 신형이면 상위 등급, 할인 5가 무조건 가성비라는 기준은 쓰지 않았습니다.</p><figure><img src="/images/shoes/asics/novablast5/1.webp" alt="노바블라스트5 제품 자료 이미지" loading="lazy"/><figcaption>노바블라스트5 — 수치와 세대 조건은 본문 원문을 확인하세요.</figcaption></figure><div class="table-wrap"><table><thead><tr><th>모델</th><th>무게·측정 조건</th><th>힐/전족 스택 · 드롭</th><th>힐/전족 SA</th><th>힐/전족 리턴</th><th>내부 최광폭/엄지/높이</th></tr></thead><tbody><tr><td>노바블라스트5</td><td>254g · RR 검체</td><td>40.9/33.5mm · 7.4mm</td><td>141/134</td><td>63.6/66.5%</td><td>97.5/74.4/27.2mm</td></tr><tr><td>노바블라스트6</td><td>249g · RR 검체</td><td>39.2/32.1mm · 7.1mm</td><td>143/130</td><td>55.4/69.1%</td><td>94.8/71/미확인mm</td></tr></tbody></table></div><h2>표를 읽는 범위</h2><p>RR 검체와 별도 표시한 DOR 소개 공시는 다른 자료입니다. DOR 소개를 독립 랩 실측으로 표시하지 않습니다. RR 일반 정책은 남성 US9지만 개별 라벨·폭·보정 여부는 미확인이고, 실제 검체 조건이 밝혀진 경우는 본문에 남겼습니다.</p><p>SA·리턴·정적 드롭은 개인의 통증·기록·동작 중 드롭을 입증하지 않습니다. 내부 너비·높이와 한국 다른 성별·와이드 치수도 다릅니다. 미확인은 0으로 채우지 않았습니다. <a href="https://runrepeat.com/testing-methodology" target="_blank" rel="noopener noreferrer">RR 측정법</a></p><h2>갈아탈 이유를 실제 불편과 연결하기</h2><p>현재 신발에서 불편한 위치가 앞코·발등·힐인지, 전환이 어떤지 적어 보세요. 새 전족 폼이 그 문제를 해결하는지와 별개로 실제 구매 규격에서 압박·마찰이 없는지 확인해야 합니다.</p><p>5의 한국 현재 상품·정가·와이드는 미확인이고 6은 확인한 남성 일반·2E와 여성 일반의 조건을 구분했습니다. 해외 표준 검체를 한국 와이드 치수로 전용하지 않습니다.</p><h2>노바블라스트5의 구조·공시</h2><p>FF BLAST MAX · 비플레이트</p><p>판 구조나 지지 장치를 질환별 보호 등급으로 바꾸지 않습니다.</p><p>DOR 소개 남성 255g(US9)·41.5/33.5mm, 여성 225g(US8)·40.5/32.5mm, 드롭 8mm. RR254g·40.9/33.5mm·7.4mm와 구분합니다.</p><h2>노바블라스트5의 실제 착화에서 갈린 점</h2><p>DOR의 Matt(남성US10)은 길이가 맞고 약간 넓지만 낮은 볼륨, 바깥쪽 앞코 테이퍼와 양말이 필요한 거친 메쉬를 언급했습니다. Andrea(여성US9.5)도 길이가 맞았으나 전작보다 단단하고 바운시하다고 느꼈고, Matt은 전작보다 부드럽다고 느껴 의견이 갈립니다. 개인의 주행감·접지 체감을 임상 등급으로 바꾸지 않습니다.</p><p>한국 와이드 현재SKU는 미확인입니다. RR 내부 최광폭 97.5mm·엄지 74.4mm·높이 27.2mm를 개인의 발볼과 대입하지 않습니다.</p><h2>노바블라스트5의 한국 판매 확인 범위</h2><p>한국 브랜드 검색에서 노바블라스트 5 상품을 확인하지 못했습니다. SSF 아식스코리아 기존 상품도 현재 판매중 아님으로 표시돼 현재 정가·성별·폭·SKU·재고는 미확인입니다. 검색캐시 169,000원을 현행 정가로 채택하지 않습니다.</p><h2>노바블라스트6의 구조·공시</h2><p>FF BLAST MAX + 전족부 FF TURBO²</p><p>전장 카본 플레이트 없음</p><p>41.5/33.5mm · 8mm (DOR·RTR의 남성 공시 사양 소개; RR 실측과 구분)</p><h2>노바블라스트6의 실제 착화에서 갈린 점</h2><p>전족부 FF TURBO²의 반응성과 뒤꿈치의 전환감은 다르게 평가됩니다. DOR은 뒤꿈치 반응과 전환을 아쉬워했고, RTR 리뷰어의 전체 승차감 의견도 갈립니다.</p><p>남성 일반·2E 상품을 확인했습니다. 여성 일반 상품도 확인했으나 여성 와이드는 미확인입니다.</p><h2>노바블라스트6의 한국 판매 확인 범위</h2><p>한국 공식 정가 179,000원. 남성 일반 1011C243.250 / 남성 2E 1011C242.002 / 여성 일반 1012C008.250.</p><h2>매장에서 비교할 질문</h2><p>평소 양말·인솔로 앞쪽 길이와 발톱 위 높이, 끈을 조일 때 발등 압박, 걷고 돌 때 힐 고정과 칼라 마찰을 확인하세요. 앞볼이 넓다는 인상만으로 앞코 전체 높이나 중족 공간까지 맞는다고 가정하지 않습니다.</p><p>몇 분/km면 무조건 이 모델, 몇 km부터 통증이 줄어든다는 공통 경계는 이 자료에서 확인하지 못했습니다. 평발·부상 이력만으로 모델을 처방하거나 국소 마모를 공통 수명으로 환산하지 않았습니다.</p><h2>확인한 원문·상품 조건</h2><ul><li><a href="https://runrepeat.com/asics-novablast-5" target="_blank" rel="noopener noreferrer">노바블라스트5 RR 정확 모델</a> — 실험실 검체·공시를 구분.</li><li><a href="https://www.doctorsofrunning.com/asics-novablast-5-review-2024/" target="_blank" rel="noopener noreferrer">노바블라스트5 DOR 착화 원문</a> — 실제 리뷰어·규격의 개인 의견.</li><li><a href="https://asics.co.kr/goods/search?keyword_log_flag=Y&amp;search_text=%EB%85%B8%EB%B0%94%EB%B8%94%EB%9D%BC%EC%8A%A4%ED%8A%B8+5" target="_blank" rel="noopener noreferrer">아식스 한국 공식 검색 범위</a> — 5 results, all visibly Novablast 6 LIGHTSHOW/GTX variants; none was Novablast 5. Version 6 prices/sizes excluded.</li><li><a href="https://m.ssfshop.com/ASICS-KOREA/GR3825081856274/good" target="_blank" rel="noopener noreferrer">SSF 아식스코리아 기존 상품 확인</a> — 현재 판매중 아님. 과거 검색캐시 가격을 현재 정가로 채택하지 않음.</li><li><a href="https://runrepeat.com/asics-novablast-6" target="_blank" rel="noopener noreferrer">노바블라스트6 RR 정확 모델</a> — 실험실 검체·공시를 구분.</li><li><a href="https://www.doctorsofrunning.com/asics-novablast-6-review-2026/" target="_blank" rel="noopener noreferrer">노바블라스트6 DOR 착화 원문</a> — 실제 리뷰어·규격의 개인 의견.</li></ul><ul><li><a href="https://www.asics.co.kr/p/AKR_112630211-002" target="_blank" rel="noopener noreferrer">노바블라스트6 한국 공식 확인 상품</a> — 본문 SKU·가격 확인 시점과 현재 선택 재고를 구분.</li></ul>
 `,
     faqs: [
       {
-        question: '노바블라스트 5를 쓰고 있는데 6으로 갈아탈 가치가 있나요?',
-        answer: '이미 5를 잘 쓰고 있고 아직 600km 이내라면 급히 갈아탈 이유는 적습니다. 스택·드롭·무게가 거의 같아 라이드 성격이 유지되기 때문입니다. 다만 5에서 "전족 반발이 아쉽다" "힐에서 전족으로 넘어가는 전환이 끊긴다"고 느꼈다면, 6의 전족 FF Turbo Squared가 바로 그 지점을 개선했으니 갈아탈 가치가 있습니다. 빗길 접지(전족 AsicsGrip)도 좋아졌습니다. 새로 사는 경우라면 개선판인 6을 권합니다.',
+        "question": "6이 무조건 더 푹신한가요?",
+        "answer": "SA·폼·전체 주행감은 달라 단일 승자로 정하지 않습니다."
       },
       {
-        question: '노바블라스트 6과 5, 가격 차이가 얼마나 나나요?',
-        answer: '노바블라스트 6의 한국 정가는 179,000원으로, 5(169,000원)보다 1만원 올랐습니다(글로벌 $155 인상 반영). 성능 개선을 감안하면 합리적인 인상폭입니다. 다만 노바블라스트 5가 세일에 들어가면 15만 원 안팎까지 내려가기 때문에, 순수 가성비로는 5가 앞섭니다. 최신 개선판을 원하면 6, 낮은 가격을 원하면 세일가의 5가 합리적입니다.',
-      },
-      {
-        question: '발볼이 넓은데 노바블라스트 6과 5 중 뭐가 나을까요?',
-        answer: '6은 힐 폭이 90→85mm로 약간 좁아졌고 토박스 실측도 71.0mm로 여유가 크지 않습니다. 다만 6의 와이드도 한국에 유통되는 것이 확인됐으니, 발볼이 넓다면 6는 와이드로 고르면 됩니다. 발뒤꿈치까지 넓은 편이면 힐 폭이 5mm 넓은 5가 여전히 편할 수 있으니, 애매하면 매장 시착이 가장 확실합니다.',
-      },
-      {
-        question: '노바블라스트 6의 FF Turbo Squared가 정확히 뭔가요?',
-        answer: '노바블라스트 6에서 전족부에 처음 적용된 반발 폼입니다. 아식스 상위 폼(메가블라스트 등에 쓰인 ATPU 기반)으로, 전족에서 트램폴린 같은 반발을 더해줍니다. 힐/미드풋은 기존 FF Blast Max를 그대로 두고 전족만 고반발 폼을 얹은 듀얼 폼 구조로, 전작 5의 약점이던 전족 반발과 힐-전족 전환 끊김을 개선하는 것이 목적입니다. 가벼운 템포·업템포에서 더 경쾌한 느낌을 기대할 수 있습니다.',
-      },
+        "question": "세일5가 더 가성비인가요?",
+        "answer": "현재 정확 상품의 가격·규격·반품 조건을 확인하지 못하면 고정 가치 비교를 할 수 없습니다."
+      }
     ],
   },
   {
@@ -2884,100 +2653,35 @@ export const posts_2026_07: BlogPost[] = [
     updatedAt: "2026-11-10",
   },
   {
-    id: 'hierro-v9-vs-speedgoat-6-trail-2026',
-    slug: 'hierro-v9-vs-speedgoat-6-trail-2026',
-    title: '히에로 v9 vs 스피드고트 6 | 뉴발 vs 호카 쿠션 트레일 대결 — 로드투트레일 올라운더 vs 만능 그립',
-    description: '뉴발란스 히에로 v9와 호카 스피드고트 6, 둘 다 비브람 메가그립을 단 쿠션 트레일화지만 성격이 갈립니다. 스피드고트는 젖은 바위·급경사까지 커버하는 "만능 그립"의 베스트셀러(러그 4.0mm·와이드+GTX), 히에로 v9는 자갈길·로드투트레일에 강한 "쿠션 올라운더"(러그 3.3mm·내구성·에너지 리턴 우위·16,000원 저렴)입니다. 지형·발볼·가격 기준으로 한국 트레일 러너가 뭘 골라야 하는지 실측 스펙으로 정리했습니다.',
-    thumbnail: '/images/blog/hierro-v9-vs-speedgoat-6-trail-2026.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-07-08',
-    category: 'review' as const,
-    readingTime: 9,
-    tags: ['히에로 v9', '스피드고트 6', '트레일 러닝화', '쿠션 트레일화', '비브람 메가그립', '러닝화 비교', '트레일화 추천'],
+    id: "hierro-v9-vs-speedgoat-6-trail-2026",
+    slug: "hierro-v9-vs-speedgoat-6-trail-2026",
+    title: "히에로v9 vs 스피드고트6 —러그 공시·앞코·하강 고정·노면 비교",
+    description: "로드투트레일·만능 그립으로 코스 전체를 보장하지 않습니다. RR 검체·제조사 러그 차이와 실제 착화·노면 조건을 정리했습니다.",
+    thumbnail: "/images/shoes/newbalance/hierrov9/side.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-07-08",
+    category: "review",
+    readingTime: 8,
+    tags: [
+      "히에로v9",
+      "스피드고트6",
+      "핏",
+      "원문 대조"
+    ],
     content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>둘 다 비브람 메가그립을 단 쿠션 트레일화</strong>지만 무대가 다릅니다 — <strong>스피드고트 6은 "만능 그립"</strong>(젖은 바위·급경사·기술 지형까지), <strong>히에로 v9는 "로드투트레일 쿠션 올라운더"</strong>(자갈길·임도·완만한 지형)</li>
-    <li><strong>험한 산·기술 코스</strong>라면 러그 4.0mm에 그립 최상위인 <strong>스피드고트 6</strong>, <strong>둘레길·자갈·도로 섞인 코스를 오래</strong>라면 러그 3.3mm에 내구성·에너지 리턴이 앞서고 16,000원 저렴한 <strong>히에로 v9</strong></li>
-    <li><strong>발볼 넓은 한국 러너는 스피드고트가 유리</strong> — 와이드가 공식 동일가로 확실히 나옵니다(히에로는 해외만 2E·4E 와이드, 한국 공식몰은 남성 D·여성 B로 와이드 없음)</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">🥾</span>
-  <div class="callout-body">
-    <p class="callout-title">한 줄 결론</p>
-    <p><strong>"어디를 뛰느냐"가 답을 정합니다.</strong> 젖은 바위·급경사·진흙 같은 진짜 산이면 <a href="/shoes/hoka-speedgoat-6">스피드고트 6</a>, 자갈길·둘레길·도로 접근이 섞인 코스를 푹신하게 오래라면 <a href="/shoes/new-balance-hierro-v9">히에로 v9</a>. 발볼이 넓다면 와이드가 확실한 스피드고트가 안전합니다.</p>
-  </div>
-</div>
-
-<h2>스펙 한눈 비교</h2>
-<div class="table-wrap">
-<table>
-  <thead><tr><th>항목</th><th>뉴발 히에로 v9</th><th>호카 스피드고트 6</th></tr></thead>
-  <tbody>
-    <tr><td>카테고리</td><td>쿠션 올라운드 트레일</td><td>만능 트레일(데일리·울트라)</td></tr>
-    <tr><td>무게(US 9)</td><td><strong>309g</strong></td><td><strong>278g</strong></td></tr>
-    <tr><td>힐 / 전족 스택</td><td>37.3 / 33.1mm</td><td>32 / 27mm (표기 40/35)</td></tr>
-    <tr><td>드롭</td><td>4.2mm</td><td>5mm</td></tr>
-    <tr><td>미드솔</td><td>Fresh Foam X 듀얼 밀도</td><td>CMEVA 맥스쿠션</td></tr>
-    <tr><td>아웃솔</td><td>Vibram Megagrip · <strong>러그 3.3mm</strong></td><td>Vibram Megagrip + Traction Lug · <strong>러그 4.0mm</strong></td></tr>
-    <tr><td>에너지 리턴 (힐)</td><td><strong>61.9%</strong></td><td>48.0%</td></tr>
-    <tr><td>내구성</td><td><strong>~600km</strong>(마모 0.9mm 우수)</td><td>400~500km(노출 미드솔 마모)</td></tr>
-    <tr><td>토박스 / 와이드</td><td>표준(73.4mm) / 해외 2E·4E, <strong>한국 없음</strong></td><td>좁은 편(73.0mm) / <strong>와이드 공식 동일가</strong> + GTX</td></tr>
-    <tr><td>가격(한국)</td><td><strong>189,000원</strong></td><td>205,000원</td></tr>
-  </tbody>
-</table>
-<p class="caption">※ 히에로 수치는 RunRepeat 실측(85점 Great), 스피드고트는 RunRepeat/전문 리뷰 기준. 무게는 US 9 통일.</p>
-</div>
-
-<h2>가장 큰 차이 — 지형(러그와 그립)</h2>
-<p>둘 다 <strong>Vibram Megagrip</strong>이라 그립의 "재질"은 같습니다. 갈리는 건 <strong>러그 깊이와 아웃솔 설계</strong>예요.</p>
-<p><strong>스피드고트 6</strong>은 러그가 <strong>4.0mm로 깊고</strong> 측면 마이크로 돌기(Traction Lug)까지 더해, 젖은 바위·급경사 오르막·진흙까지 물어냅니다. 트레일 전문 매체 Road Trail Run이 그립을 <strong>10/10</strong>으로 매길 만큼 "험지에서 안 미끄러지는" 게 핵심 강점이죠. 브랜드 표기 힐 40mm(RunRepeat 측정 32.1mm) 쿠션에도 내부 섀시(chassis)가 발을 잡아줘 고스택 특유의 흔들림이 적습니다.</p>
-<p><strong>히에로 v9</strong>은 러그가 <strong>3.3mm로 얕습니다.</strong> 이게 단점이 아니라 <strong>용도의 차이</strong>예요 — 깊은 러그는 딱딱한 도로에서 오히려 걸리적거리는데, 히에로의 얕은 러그는 <strong>자갈길·임도·둘레길처럼 완만한 지형 + 도로 접근 구간(로드투트레일)</strong>에서 훨씬 자연스럽습니다. 대신 RunRepeat Technical 점수가 58점으로, <strong>젖은 바위·급경사 기술 암반은 스피드고트에 밀립니다.</strong></p>
-<div class="callout info">
-  <span class="callout-icon">📍</span>
-  <div class="callout-body">
-    <p class="callout-title">지형으로 고르기</p>
-    <p><strong>북한산·관악산 바위·급경사, 비 온 뒤 젖은 트레일</strong> → 스피드고트 6. <strong>한강 자갈길, 둘레길, 임도, 도로가 섞인 근교 트레일</strong> → 히에로 v9.</p>
-  </div>
-</div>
-
-<h2>발밑 느낌 — 쿠션·반발·무게</h2>
-<p>스택은 브랜드 표기로는 스피드고트(40mm)가 히에로(37mm)보다 높지만, RunRepeat 측정 힐 스택은 스피드고트 32.1mm로 히에로(37.3mm)보다 <strong>오히려 낮습니다</strong>. 무게도 스피드고트가 <strong>278g으로 31g 가볍죠</strong>(맥스쿠션치고 경량). 장시간 산행 겸 러닝, 울트라 거리에서 다리 피로를 덜어줍니다.</p>
-<p>반면 <strong>에너지 리턴은 히에로(힐 61.9%)가 스피드고트(힐 48.0%)보다 확실히 높습니다.</strong> 트레일화 둘 다 "빠른 반발" 신발은 아니지만, 히에로가 조금 더 탄력 있게 굴러가는 편입니다. 또 <strong>내구성은 히에로가 우위</strong> — 아웃솔 마모가 0.9mm로 뛰어나고, 스피드고트는 노출 미드솔 구간이 200~300km 후 압축된다는 지적이 있어 히에로가 더 오래 갑니다(약 600km vs 400~500km).</p>
-
-<h2>발볼·가격 — 한국 러너의 결정 요소</h2>
-<p>한국 러너에게 중요한 <strong>와이드</strong>는 <strong>스피드고트가 명확히 유리</strong>합니다. 토박스가 둘 다 표준(73mm대)인데 스피드고트는 수치보다 좁게 느껴지는 쪽이지만, <strong>와이드가 공식 동일가(205,000원)</strong>로 나오고 GTX 방수 버전(229,000원)까지 있어 선택지가 넓습니다. 히에로는 해외엔 2E·4E 와이드가 있으나 <strong>한국 공식몰은 남성 D·여성 B뿐이라</strong>, 발볼이 매우 넓다면 스피드고트가 안전합니다. 발볼 기준 더 넓은 후보가 필요하면 <a href="/best/wide-toebox">발볼 넓은 러너 추천</a>도 보세요.</p>
-<p>가격은 <strong>히에로가 189,000원으로 16,000원 저렴</strong>합니다. 내구성까지 앞서(600km 기준 km당 약 315원) 순수 가성비는 히에로가 좋습니다.</p>
-
-<h2>누가 뭘 골라야 하나</h2>
-<ul>
-  <li><strong>스피드고트 6</strong> — 젖은 바위·급경사·기술 지형을 자주 가는 러너, 검증된 베스트셀러의 안정감을 원하는 트레일 입문자, <strong>발볼이 넓어 와이드가 꼭 필요한 러너</strong>, GTX 방수가 필요한 러너, 맥스쿠션·경량을 원하는 울트라 러너</li>
-  <li><strong>히에로 v9</strong> — 자갈길·둘레길·임도·<strong>로드투트레일</strong>을 오래 달리는 러너, 내구성·에너지 리턴·가성비를 중시하는 러너, 표준 발볼 러너</li>
-  <li><strong>둘 다 애매하면</strong> — "험한 산이냐(스피드고트) vs 완만한 자갈·도로 혼합이냐(히에로)"가 기준입니다. 더 푹신한 울트라 컴포트를 원하면 와이드까지 있는 <a href="/shoes/salomon-ultra-glide-4">살로몬 울트라 글라이드 4</a>도 후보이고, 순위로 보려면 <a href="/best/trail">트레일화 추천</a>을 참고하세요</li>
-</ul>
-<p>더 깊은 소개는 <a href="/blog/new-balance-hierro-v9-trail-review-2026">히에로 v9 단독 리뷰</a>, 스피드고트가 포함된 다른 트레일 비교는 <a href="/blog/speedgoat-6-vs-pulsar-vs-terrex-agravic-trail-2026">트레일화 3파전(스피드고트 vs 펄사 vs 아그라빅)</a>과 <a href="/blog/salomon-pulsar-vs-ultra-glide-vs-s-lab-trail-2026">살로몬 트레일 3종</a>에 있습니다. 트레일은 발목 부상이 잦으니 <a href="/blog/ankle-sprain-running-shoes-2026">발목 염좌 예방 가이드</a>도 함께 보면 좋습니다.</p>
+<p><strong>2026-11-10 원문 대조 업데이트.</strong> 11월9~10일 확인한 정확 모델 자료를 바탕으로 공시·검체·개인 착화 의견을 나눴습니다. 자체 착화 후기는 아닙니다.</p><h2>선택에서 먼저 볼 차이</h2><p>히에로v9의 Fresh Foam X와 스피드고트 6의 CMEVA, 각각의 로커·어퍼 고정을 다른 조건으로 볼 수 있습니다. 고무 이름 하나가 모든 바위·진흙의 접지를 결정하지 않습니다.</p><p>넓은 듯한 바닥·쿠션과 실제 앞코 높이·하강에서 발이 밀리는지는 별개입니다. 주요 코스의 노면과 젖은 구간을 확인한 뒤 실제 규격에서 고정·전환을 비교하세요.</p><figure><img src="/images/shoes/newbalance/hierrov9/side.webp" alt="히에로v9 제품 자료 이미지" loading="lazy"/><figcaption>히에로v9 — 수치와 세대 조건은 본문 원문을 확인하세요.</figcaption></figure><div class="table-wrap"><table><thead><tr><th>모델</th><th>무게·측정 조건</th><th>힐/전족 스택 · 드롭</th><th>힐/전족 SA</th><th>힐/전족 리턴</th><th>내부 최광폭/엄지/높이</th></tr></thead><tbody><tr><td>히에로v9</td><td>309g · RR 검체</td><td>37.3/33.1mm · 4.2mm</td><td>131/124</td><td>61.9/61.4%</td><td>94.7/73.4/26.7mm</td></tr><tr><td>스피드고트6</td><td>278g · RR 검체</td><td>32.1/27.2mm · 4.9mm</td><td>124/107</td><td>48/53.5%</td><td>95.6/73/26.1mm</td></tr></tbody></table></div><h2>표를 읽는 범위</h2><p>RR 검체와 별도 표시한 DOR 소개 공시는 다른 자료입니다. DOR 소개를 독립 랩 실측으로 표시하지 않습니다. RR 일반 정책은 남성 US9지만 개별 라벨·폭·보정 여부는 미확인이고, 실제 검체 조건이 밝혀진 경우는 본문에 남겼습니다.</p><p>SA·리턴·정적 드롭은 개인의 통증·기록·동작 중 드롭을 입증하지 않습니다. 내부 너비·높이와 한국 다른 성별·와이드 치수도 다릅니다. 미확인은 0으로 채우지 않았습니다. <a href="https://runrepeat.com/testing-methodology" target="_blank" rel="noopener noreferrer">RR 측정법</a></p><h2>러그 숫자도 출처마다 다릅니다</h2><p>히에로v9은 미국 공식 6mm·RR3.3mm·DOR 재인용 유통사 4.5mm가 다릅니다.4.5mm를 직접 실측으로 승격하지 않았습니다. 스피드고트 6의 4mm도 같은 방식의 모든 노면 안전 보장이 아닙니다.</p><p>젖은 콘크리트 접지와 개인의 산길 경험을 합쳐 만능 그립 순위를 만들지 않습니다. 국소 마모를 공통 수명km나 거리별 통증 감소로 바꾸지 않았습니다.</p><h2>히에로v9의 구조·공시</h2><p>Fresh Foam X 이중 밀도 · Vibram Megagrip · Toe Protect</p><p>DOR roundup은 록 플레이트가 없는 구조로 설명합니다. 쿠션·Toe Protect를 모든 돌·암반의 보호 보장으로 읽지 않습니다.</p><p>미국 공식 남성 310g/여성 253g(사이즈 미확인)·드롭약 4mm, RR 브랜드 33/29mm·4mm·297/234g(사이즈 미확인), RR실측 309g·37.3/33.1mm·4.2mm를 구분합니다. 기존 공식 42/38mm 확정은 철회합니다.</p><h2>히에로v9의 실제 착화에서 갈린 점</h2><p>DOR 봄 트레일 roundup의 정확v9 문단에서 David는 여유 있는 전족·볼륨과 니트 고정, 부드러운 로커·이중 밀도 쿠션을 선호했고 무게·평범한 반발을 지적했습니다. 검체 사이즈는 미공시이며 독립 전체 리뷰로 표시하지 않습니다. 도로 접근 혼합·하이킹 활용 의견을 개인 경험으로 남깁니다.</p><p>RR 내부 최광폭 94.7mm·엄지 73.4mm·높이 26.7mm입니다. 미국 남성D/2E/4E·여성B/D/2E 표시는 한국 현재 폭 판매가 아닙니다. 미국정사이즈안내·RR반사이즈작게 투표·David의 여유 체감은 조건이 다릅니다.</p><h2>히에로v9에서 함께 남긴 한계</h2><p>미국 공식 6mm 러그와 RR실측 3.3mm, DOR이 재인용한 유통사 4.5mm는 다릅니다.4.5mm를 직접 재확인한 실측으로 승격하지 않습니다. 현행RR29.7AC는 기존 14.6HA와 직접 비교하지 않습니다.0.9mm 마모·힐패딩 5/5는 600km 수명이 아닙니다. 저드롭으로 힐 착지 러너의 아킬레스 위험·평발 보호를 확정하지 않습니다.</p><h2>히에로v9의 한국 판매 확인 범위</h2><p>뉴발란스 한국 실운영 상품 페이지가 403·캐시 미스로 열리지 않아 현재 정가·SKU·성별·폭·재고를 미확인으로 남깁니다. 검색 후보나 QA서버값을 공식 판매 사실로 채택하지 않았습니다. 기존 189,000원·한국D/B만 판매·7/9 신컬러 확정은 이번 원문으로 재확인하지 못했습니다.</p><h2>스피드고트6의 구조·공시</h2><p>CMEVA · 내부 섀시 · Vibram Megagrip Traction Lug</p><p>전장 카본 플레이트 없음. 단단한 폼·내부 섀시의 고정력을 임상 교정 효과로 바꾸지 않습니다.</p><p>HOKA 뉴질랜드 남성 278g(사이즈 미확인)·5mm, DOR 소개 283g(남성US9)/244g(여성US8)·37/32mm·5mm, RR 브랜드남성 40/35mm·여성 38/33mm·5mm·277/232g(사이즈 미확인)과 실제 278g·32.1/27.2mm·4.9mm를 구분합니다.</p><h2>스피드고트6의 실제 착화에서 갈린 점</h2><p>DOR David(남성US9.5)는 정사이즈·보통 힐과 중족, 약간 여유 있는 전족을 느꼈습니다. 낮아진 볼륨과 내부 섀시의 고정, 완만한 로커·기술 지형에서 접지를 선호했지만 짧고 얕은 혀 때문에 끈 조절이 필요했습니다. RR 약간 작게라는 투표와 개인 정사이즈 경험은 구분합니다.</p><p>RR 내부 최광폭 95.6mm·엄지 73mm·높이 26.1mm입니다. 해외Normal/Wide/X-Wide 메타가 한국 현재 옵션을 보장하지 않습니다.</p><h2>스피드고트6에서 함께 남긴 한계</h2><p>RR 주폼 40.6AC·구방식 비틀림 5/5·통기 2/5는 다른 시험 단위입니다. 러그 4mm·국소마모 1.4mm를 모든 젖은 바위·진흙·급경사의 안전이나 500km 수명으로 환산하지 않습니다. DOR 개인 고정력 평가는 임상A등급이 아닙니다. 무릎 보호·평발 부하 분산·장거리 피로 감소 보장을 철회했습니다.</p><h2>스피드고트6의 한국 판매 확인 범위</h2><p>한국 공식 연결 스토어에서 정확 상품 본문을 확보하지 못해 현행 정가·SKU·성별·폭·선택 재고는 미확인입니다. 해외 와이드나 유통가를 한국 공식 정보로 대입하지 않으며 검색 실패를 단종·전국 품절로 해석하지 않습니다. 기존 205,000원·GTX229,000원·와이드 동일가 확정을 철회합니다. 일반 비방수 6의 값을 GTX에 대입하지 않습니다.</p><h2>매장에서 비교할 질문</h2><p>평소 양말·인솔로 앞쪽 길이와 발톱 위 높이, 끈을 조일 때 발등 압박, 걷고 돌 때 힐 고정과 칼라 마찰을 확인하세요. 앞볼이 넓다는 인상만으로 앞코 전체 높이나 중족 공간까지 맞는다고 가정하지 않습니다.</p><p>몇 분/km면 무조건 이 모델, 몇 km부터 통증이 줄어든다는 공통 경계는 이 자료에서 확인하지 못했습니다. 평발·부상 이력만으로 모델을 처방하거나 국소 마모를 공통 수명으로 환산하지 않았습니다.</p><h2>확인한 원문·상품 조건</h2><ul><li><a href="https://runrepeat.com/new-balance-fresh-foam-x-hierro-v9" target="_blank" rel="noopener noreferrer">히에로v9 RR 정확 모델</a> — 실험실 검체·공시를 구분.</li><li><a href="https://www.doctorsofrunning.com/monday-shakeout-spring-2025-trail-shoe/" target="_blank" rel="noopener noreferrer">히에로v9 DOR 착화 원문</a> — 실제 리뷰어·규격의 개인 의견.</li><li><a href="https://www.nbkorea.com/" target="_blank" rel="noopener noreferrer">뉴발란스 한국 공식 접근 범위</a> — 실운영 www/pay 원문 접근 실패. 검색 후보SKU·QA서버값 미채택.</li><li><a href="https://www.newbalance.com/pd/fresh-foam-x-hierro-v9/MTHIERV9-50176.html?dwvar_MTHIERV9-50176_style=MHIER51M" target="_blank" rel="noopener noreferrer">미국 공식 남성</a> — 310g·약4mm·러그6mm 주장·해외 폭. 한국 가격 근거 아님.</li><li><a href="https://www.newbalance.com/pd/fresh-foam-x-hierro-v9/WTHIERV9-50177.html?dwvar_WTHIERV9-50177_style=WHIER2RF" target="_blank" rel="noopener noreferrer">미국 공식 여성</a> — 253g·약4mm·해외 폭. 한국 판매 미확인.</li><li><a href="https://runrepeat.com/hoka-speedgoat-6" target="_blank" rel="noopener noreferrer">스피드고트6 RR 정확 모델</a> — 실험실 검체·공시를 구분.</li><li><a href="https://www.doctorsofrunning.com/hoka-speedgoat-6-review-2024/" target="_blank" rel="noopener noreferrer">스피드고트6 DOR 착화 원문</a> — 실제 리뷰어·규격의 개인 의견.</li><li><a href="https://linktr.ee/hoka_korea" target="_blank" rel="noopener noreferrer">HOKA 한국 공식 연결 범위</a> — 공식 트레일 스토어로 연결됐으나 상품은 robots 차단. 한국 가격·폭 미확인.</li><li><a href="https://nz.hoka.com/products/m-speedgoat-6-1147791-bblc-bblc" target="_blank" rel="noopener noreferrer">HOKA 해외 공식 동세대</a> — 해외 공시이며 한국 가격·재고 근거 아님.</li></ul>
 `,
     faqs: [
       {
-        question: '트레일 입문인데 히에로 v9와 스피드고트 6 중 뭐가 나을까요?',
-        answer: '입문이라면 스피드고트 6가 더 무난합니다. 트레일 데일리의 베스트셀러로 검증됐고, 그립이 최상위라 다양한 지형에서 실수가 적습니다. 다만 주로 뛰는 곳이 험한 산이 아니라 한강 자갈길·둘레길·임도처럼 완만하고 도로가 섞인 코스라면, 러그가 얕고 더 저렴한(189,000원) 히에로 v9가 오히려 자연스럽고 가성비도 좋습니다. "어디를 뛸지"를 먼저 정하세요.',
+        "question": "스피드고트가 모든 산에서 더 안전한가요?",
+        "answer": "시험 표면과 실제 바위·뿌리·진흙이 달라 전체 코스 안전을 보장하지 않습니다."
       },
       {
-        question: '발볼이 넓은데 둘 중 뭐가 편한가요?',
-        answer: '스피드고트 6가 안전합니다. 두 신발 모두 토박스는 표준(73mm대)이라 넓은 편은 아니지만, 스피드고트는 와이드가 공식 동일가(205,000원)로 확실히 나옵니다. 히에로 v9는 해외엔 2E·4E 와이드가 있으나 한국 공식몰은 남성 D·여성 B뿐이라, 발볼이 매우 넓다면 와이드가 확실한 스피드고트나 울트라 글라이드 4 와이드를 고르는 게 안전합니다.',
-      },
-      {
-        question: '도로에서도 뛰는데 둘 다 괜찮나요?',
-        answer: '히에로 v9가 도로 혼합에 더 유리합니다. 러그가 3.3mm로 얕아 아스팔트·포장 접근 구간에서 덜 걸리적거리고 마모도 느립니다. 스피드고트 6는 러그가 4.0mm로 깊어 그립은 좋지만 도로에서는 마모가 빠르고 발밑이 딱딱하게 느껴질 수 있습니다. 트레일과 도로가 섞인 로드투트레일 코스라면 히에로, 트레일 비중이 절대적이라면 스피드고트를 권합니다.',
-      },
-      {
-        question: '둘 다 비브람인데 그립 차이가 실제로 있나요?',
-        answer: '재질(Vibram Megagrip)은 같지만 러그 깊이와 설계가 달라 험지에서 체감 차이가 있습니다. 스피드고트 6는 러그 4.0mm에 측면 트랙션 러그까지 더해 젖은 바위·급경사·진흙에서 그립이 최상위(Road Trail Run 10/10)입니다. 히에로 v9는 러그 3.3mm로 자갈·마른 흙길엔 충분하지만 젖은 암반·급경사 기술 코스에서는 스피드고트에 밀립니다. 마른 완만한 지형이면 차이가 작고, 험하고 젖은 지형일수록 스피드고트가 앞섭니다.',
-      },
+        "question": "히에로 러그는 몇mm인가요?",
+        "answer": "공식6mm·RR3.3mm·유통사 재인용4.5mm를 출처별로 구분합니다."
+      }
     ],
+    updatedAt: "2026-11-10",
   },
   {
     id: "ankle-sprain-running-shoes-2026",
