@@ -2,1096 +2,286 @@ import { BlogPost } from '@/types/blog';
 
 export const posts_2026_05: BlogPost[] = [
   {
-    id: 'gangneung-unique-running-courses-7',
-    slug: 'gangneung-unique-running-courses-7',
-    title: '강릉 달리기 좋은 곳 7선 | 강릉 러닝 코스 — 경포호수 벚꽃부터 정동진 일출까지',
-    description: '경포호수 둘레 러닝부터 안목 커피거리 해변, 정동진 일출, 강릉 바우길 트레일까지 강릉에서 달리기 좋은 러닝 코스 7곳을 거리·난이도·시간대·러닝화 추천까지 정리. 경포호·경포해변·정동진·바우길·송정 솔숲·남대천·안반데기 각 코스별 출발지·노면·주의점 가이드. 러닝 여행자 필독.',
-    thumbnail: '/images/blog/gangneung-unique-running-courses-7.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-05-29',
-    updatedAt: '2026-08-19',
-    category: 'guide' as const,
-    readingTime: 11,
-    tags: ['강릉 달리기', '강릉 러닝코스', '강릉 러닝 코스', '이색 러닝', '경포호수', '안목 커피거리', '정동진 일출', '강릉 바우길', '송정 솔숲', '남대천', '안반데기', '강릉 마라톤'],
-    content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>강릉은 호수·동해·솔숲·고지대를 결합한 강원권 러닝 여행지</strong> — 경포호 벚꽃, 안목 커피거리 해변, 정동진 일출, 바우길 트레일 등 관광과 러닝을 묶기 좋은 풍경</li>
-    <li>강릉의 시그니처는 <strong>경포호수 둘레 + 경포해변</strong> — 호수와 동해를 한 코스에서 오가는 평지 러닝</li>
-    <li>각 코스별 <strong>출발지·거리·노면·시간대·주의점 + 어울리는 러닝화 카테고리</strong>까지 한 번에 정리</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">☕</span>
-  <div class="callout-body">
-    <p class="callout-title">강릉 러닝만의 매력</p>
-    <p>강릉은 <strong>호수(경포호)·동해 바다(경포·안목·정동진)·솔숲(송정·경포)·둘레 트레일(바우길)·고지대(안반데기·대관령)</strong>가 어우러진 강원권 러닝 여행지입니다. 경포호 둘레를 돌다 바로 경포해변으로 이어지고, <strong>안목 커피거리</strong>에서 커피 한잔으로 마무리하는 러닝은 강릉만의 낭만. 정동진 일출, 바우길 둘레 트레일, 솔향 가득한 송림까지 관광과 러닝을 함께 즐기기 좋습니다. 본인 발 특성·부상 이력에 맞는 러닝화 후보는 <a href="/recommend">1분 러닝화 추천</a>에서 받을 수 있습니다.</p>
-  </div>
-</div>
-
-<h2>한눈에 비교</h2>
-
-<table>
-  <thead>
-    <tr><th>#</th><th>코스</th><th>거리</th><th>난이도</th><th>특이점</th><th>추천 시간대</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>1</td><td><strong>경포호수 둘레</strong></td><td>약 4~6km 둘레</td><td>하 (평지)</td><td>경포대 + 벚꽃 + 호수 — 시그니처</td><td>봄 새벽·저녁</td></tr>
-    <tr><td>2</td><td><strong>경포해변 ~ 안목 커피거리</strong></td><td>5~8km</td><td>하 (평지)</td><td>동해 해변 + 커피거리</td><td>새벽·해질녘</td></tr>
-    <tr><td>3</td><td><strong>정동진 해안</strong></td><td>5~8km</td><td>하</td><td>한반도 일출 명소 + 모래시계공원</td><td>일출</td></tr>
-    <tr><td>4</td><td><strong>강릉 바우길 (바다호숫길)</strong></td><td>약 8~14km</td><td>중</td><td>호수·바다·솔숲 둘레 트레일</td><td>맑은 날 오전</td></tr>
-    <tr><td>5</td><td><strong>송정해변 솔숲</strong></td><td>약 4~6km</td><td>하</td><td>해변 + 소나무 숲길</td><td>오전·해질녘</td></tr>
-    <tr><td>6</td><td><strong>남대천 둔치</strong></td><td>5~10km</td><td>하 (평지)</td><td>도심 관통 하천 LSD</td><td>새벽·야간</td></tr>
-    <tr><td>7</td><td><strong>안반데기</strong></td><td>약 4~6km</td><td>중상</td><td>고지대 운해·일출 + 배추밭</td><td>새벽·일출</td></tr>
-  </tbody>
-</table>
-
-<h2>1. 경포호수 둘레 — 호수와 벚꽃, 강릉의 시그니처</h2>
-
-<p><strong>출발지</strong>: 경포대·경포호 (버스·차량)<br>
-<strong>거리</strong>: 약 4~6km 둘레<br>
-<strong>노면</strong>: 우레탄 산책로 + 데크<br>
-<strong>추천 시간대</strong>: 봄 새벽·저녁</p>
-
-<p>경포호수는 강릉을 대표하는 호수로, <strong>경포대와 벚꽃길</strong>이 어우러진 둘레 산책로가 평탄하게 이어집니다. 봄철 경포호 벚꽃은 전국적 명소이며, 호수를 돌다 바로 경포해변으로 이어져 호수+바다를 한 번에 즐길 수 있습니다.</p>
-
-<p><strong>이 코스의 매력</strong>: 신호 없는 호수 둘레 + 봄 벚꽃 + 바다 연계. 평지라 누구나 즐길 수 있고, 거리를 늘리려면 경포해변·가시연습지로 확장 가능합니다. 강릉 러닝 여행의 베이스 코스.</p>
-
-<p><strong>어울리는 러닝화</strong>: 평지 + 통기성. <a href="/shoes/saucony-ride-19">사우코니 라이드 19</a>·<a href="/shoes/nike-pegasus-41">페가수스 41</a> 같은 통기성 좋은 데일리화.</p>
-
-<h2>2. 경포해변 ~ 안목 커피거리 — 동해 해변과 커피</h2>
-
-<p><strong>출발지</strong>: 경포해변 (안목해변 방면)<br>
-<strong>거리</strong>: 5~8km (경포~안목 해안)<br>
-<strong>노면</strong>: 해변 산책로 + 데크 + 일부 모래<br>
-<strong>추천 시간대</strong>: 새벽·해질녘</p>
-
-<p>경포해변에서 안목해변(커피거리)까지 이어지는 <strong>동해 해변 코스</strong>입니다. 넓은 백사장과 솔숲을 끼고 달리다, <strong>안목 커피거리</strong>에서 바다를 보며 커피로 마무리하는 강릉만의 러닝 루틴이 매력적입니다.</p>
-
-<p><strong>이 코스의 매력</strong>: 동해 해변 + 커피거리 마무리라는 강릉 특유의 낭만. 평탄한 해변 산책로라 부담이 적고, 일출·노을 시간이 아름답습니다. 모래 구간은 발이 빠지니 단단한 산책로 위주로.</p>
-
-<p><strong>어울리는 러닝화</strong>: 평지 해변 + 통기성. <a href="/shoes/nike-pegasus-41">페가수스 41</a>·<a href="/shoes/hoka-clifton-10">호카 클리프턴 10</a> 같은 데일리화.</p>
-
-<h2>3. 정동진 해안 — 한반도 일출 명소</h2>
-
-<p><strong>출발지</strong>: 정동진역·모래시계공원 (차량·기차)<br>
-<strong>거리</strong>: 5~8km (해안 산책로·해안도로)<br>
-<strong>노면</strong>: 해안 산책로 + 데크 + 아스팔트<br>
-<strong>추천 시간대</strong>: 일출</p>
-
-<p>정동진은 <strong>바다와 가장 가까운 기차역이자 일출 명소</strong>로, 모래시계공원과 해안 산책로를 따라 일출을 보며 달리는 경험이 특별합니다. 새해·기념일 일출 러닝지로 인기입니다.</p>
-
-<p><strong>이 코스의 매력</strong>: 한반도 대표 일출 + 평탄한 해안 러닝. 정동진~썬크루즈 방면으로 거리를 늘릴 수 있습니다. 바람이 강한 날이 많으니 윈드재킷을 챙기고, 일출 시간을 미리 확인하세요.</p>
-
-<p><strong>어울리는 러닝화</strong>: 평지 해안 데일리. <a href="/shoes/saucony-ride-19">사우코니 라이드 19</a>·<a href="/shoes/nike-pegasus-42">페가수스 42</a> 같은 데일리화.</p>
-
-<h2>4. 강릉 바우길 (바다호숫길) — 호수·바다·솔숲 둘레 트레일</h2>
-
-<p><strong>출발지</strong>: 바우길 구간별 입구 (경포·사천 일대)<br>
-<strong>거리</strong>: 약 8~14km (구간 선택)<br>
-<strong>노면</strong>: 흙길 + 솔숲 + 해안 데크 + 일부 임도<br>
-<strong>추천 시간대</strong>: 맑은 날 오전</p>
-
-<p>바우길은 강릉을 한 바퀴 잇는 둘레길로, 특히 <strong>바다호숫길(5구간)</strong>은 경포호·경포해변·솔숲을 두루 지나는 인기 코스입니다. 호수·바다·숲을 한 코스에서 만나는 강릉 트레일의 정수입니다.</p>
-
-<p><strong>이 코스의 매력</strong>: 호수+바다+솔숲을 잇는 다채로운 둘레 트레일. 다만 <strong>흙길·임도·완만한 오르막</strong>이 섞여 일반 데일리화로는 한계가 있고, 구간이 길어 거리·체력에 맞게 끊어 뛰세요.</p>
-
-<p><strong>어울리는 러닝화</strong>: 트레일 + 안정성. <a href="/shoes/asics-gel-venture-10">젤 벤처 10</a>(가성비)·<a href="/shoes/adidas-terrex-agravic-4">테렉스 아그라빅 4</a>(접지력). 신발 선택은 <a href="/blog/2026-best-trail-running-shoes">2026 트레일 러닝화 베스트</a> 참고.</p>
-
-<h2>5. 송정해변 솔숲 — 해변과 소나무 숲길</h2>
-
-<p><strong>출발지</strong>: 송정해변 (강릉 시내 인근)<br>
-<strong>거리</strong>: 약 4~6km (해변 + 솔숲)<br>
-<strong>노면</strong>: 솔숲 흙길 + 해변 산책로<br>
-<strong>추천 시간대</strong>: 오전·해질녘</p>
-
-<p>송정해변은 <strong>울창한 소나무 숲과 백사장이 어우러진 해변</strong>으로, "솔향 강릉"을 대표하는 솔숲 러닝이 가능합니다. 해변과 솔숲을 오가며 달리는 코스로, 한적하고 그늘이 많아 여름에도 좋습니다.</p>
-
-<p><strong>이 코스의 매력</strong>: 소나무 숲 그늘 + 해변의 조합. 솔숲 흙길이 발 충격을 덜어주고 피톤치드가 가득합니다. 경포·안목 방면으로 연결해 거리를 늘릴 수 있습니다.</p>
-
-<p><strong>어울리는 러닝화</strong>: 솔숲 흙길 + 약간의 쿠션. <a href="/shoes/hoka-clifton-10">호카 클리프턴 10</a>·<a href="/shoes/on-cloudmonster-3">클라우드몬스터 3</a> 같은 쿠션 데일리.</p>
-
-<h2>6. 남대천 둔치 — 도심 관통 하천 LSD</h2>
-
-<p><strong>출발지</strong>: 남대천 도심 다리마다 진입<br>
-<strong>거리</strong>: 5~10km<br>
-<strong>노면</strong>: 우레탄 산책로 + 자전거도로<br>
-<strong>추천 시간대</strong>: 새벽·야간</p>
-
-<p>남대천은 강릉 도심을 관통해 동해로 흐르는 하천으로, <strong>둔치 산책로를 따라 평지 LSD</strong>가 가능합니다. 대관령에서 발원해 바다로 이어지는 물길을 따라 거리 조절이 자유롭습니다.</p>
-
-<p><strong>이 코스의 매력</strong>: 신호 없는 도심 하천 평지 + 거리 무제한. 강릉 시내 거주 러너의 데일리 코스로, 단오제가 열리는 남대천 일대의 정취도 느낄 수 있습니다. 여름엔 새벽·야간을 권합니다.</p>
-
-<p><strong>어울리는 러닝화</strong>: 평지 장거리·데일리. <a href="/shoes/new-balance-1080-v15">NB 1080 v15</a>·<a href="/shoes/asics-gel-nimbus-28">님버스 28</a> 같은 맥스 쿠션.</p>
-
-<h2>7. 안반데기 — 고지대 운해와 일출</h2>
-
-<p><strong>출발지</strong>: 안반데기 (왕산면, 차량)<br>
-<strong>거리</strong>: 약 4~6km (전망·둘레 코스)<br>
-<strong>노면</strong>: 흙길 + 임도 + 가파른 오르막<br>
-<strong>추천 시간대</strong>: 새벽·일출</p>
-
-<p>안반데기는 해발 1,100m 고지대의 <strong>고랭지 배추밭과 운해·일출 명소</strong>입니다. 능선을 따라 펼쳐진 배추밭과 풍력발전기, 새벽 운해가 어우러진 풍경이 압권으로, 고지대 트레일·일출 러닝의 특별한 코스입니다.</p>
-
-<p><strong>이 코스의 매력</strong>: 고지대 운해·일출이라는 드라마틱한 풍경. 다만 <strong>가파른 오르막·흙길·고도</strong>가 있어 일반 데일리화로는 한계가 있고, 새벽엔 추우니 보온에 유의하세요. 차량 접근 후 가볍게 뛰는 코스에 가깝습니다.</p>
-
-<p><strong>어울리는 러닝화</strong>: 접지력 좋은 트레일화. <a href="/shoes/adidas-terrex-agravic-4">테렉스 아그라빅 4</a>·<a href="/shoes/asics-gel-venture-10">젤 벤처 10</a>. <a href="/blog/2026-best-trail-running-shoes">트레일 러닝화 베스트</a>에서 코스별 선택을 확인하세요.</p>
-
-<h2>본인 강릉 거주지·목적별 추천 코스</h2>
-
-<ul>
-  <li><strong>경포·강문 일대 거주·여행자</strong>: <strong>경포호수 둘레 + 경포해변~안목 커피거리</strong> — 호수·바다 한 번에</li>
-  <li><strong>강릉 시내 거주</strong>: <strong>남대천 둔치</strong>(도심 하천 LSD) · <strong>송정 솔숲</strong></li>
-  <li><strong>정동진·옥계 방면</strong>: <strong>정동진 해안</strong>(일출)</li>
-  <li><strong>둘레·트레일</strong>: <strong>강릉 바우길</strong>(바다호숫길) → <strong>안반데기</strong>(고지대 일출)</li>
-  <li><strong>커피+러닝 낭만</strong>: <strong>경포해변~안목 커피거리</strong> — 러닝 후 바다 커피</li>
-</ul>
-
-<h2>이런 코스 뛸 때 필요한 러닝화 카테고리</h2>
-
-<ul>
-  <li><strong>평지 호수·해변·하천 (경포호·경포해변·남대천)</strong>: 가성비 데일리 + 통기성. <a href="/blog/saucony-ride-18-vs-19-comparison">사우코니 라이드 18 vs 19 비교</a> · <a href="/blog/nike-pegasus-41-vs-42-comparison">페가수스 41 vs 42 비교</a></li>
-  <li><strong>해변·하천 LSD (남대천·정동진)</strong>: 맥스 쿠션. <a href="/blog/new-balance-1080-v14-vs-v15-comparison">NB 1080 v14 vs v15 비교</a></li>
-  <li><strong>바우길·안반데기 트레일</strong>: 접지력·안정성 트레일화. <a href="/blog/2026-best-trail-running-shoes">2026 트레일 러닝화 베스트 7</a> — 코스 난이도별 선택 가이드</li>
-  <li><strong>솔숲 힐링런 (송정)</strong>: 쿠션 데일리 또는 가벼운 트레일. <a href="/blog/on-cloudmonster-2-vs-3-comparison">클라우드몬스터 2 vs 3 비교</a></li>
-</ul>
-
-<h2>강릉 러닝 — 커피와 바다, 러닝 여행</h2>
-
-<div class="callout tip">
-  <span class="callout-icon">🌊</span>
-  <div class="callout-body">
-    <p class="callout-title">커피의 도시에서 달리다 — 강릉 러닝 여행</p>
-    <p>강릉은 <strong>바다·호수·커피를 한 번에 즐기는</strong> 러닝 여행지입니다. ① 도착 첫날은 <strong>경포호수 둘레 + 경포해변</strong>, ② 커피 러닝은 <strong>안목 커피거리</strong>(러닝 후 바다 커피), ③ 일출은 <strong>정동진·안반데기</strong>, ④ 본격 트레일은 <strong>바우길</strong>로 묶으면 좋습니다. KTX로 서울에서 약 1시간 50분, 러닝 후 강릉 커피·초당두부까지 더하면 완벽한 미식 러닝 여행. 다른 지역 코스가 궁금하다면 <a href="/blog/seoul-unique-running-courses-7">서울</a>·<a href="/blog/busan-unique-running-courses-7">부산</a>·<a href="/blog/incheon-unique-running-courses-7">인천</a>·<a href="/blog/daegu-unique-running-courses-7">대구</a>·<a href="/blog/jeju-unique-running-courses-7">제주</a>·<a href="/blog/daejeon-unique-running-courses-7">대전</a>·<a href="/blog/gwangju-unique-running-courses-7">광주</a>·<a href="/blog/ulsan-unique-running-courses-7">울산</a>·<a href="/blog/suwon-unique-running-courses-7">수원</a>·<a href="/blog/jeonju-unique-running-courses-7">전주</a>·<a href="/blog/gyeongju-unique-running-courses-7">경주 달리기 좋은 곳 7선</a>도 함께 보세요.</p>
-  </div>
-</div>
-
-<h2>FAQ</h2>
-
-<h3>Q. 강릉 러닝 여행, 어디부터 뛰면 좋나요?</h3>
-<p><strong>경포호수 둘레 + 경포해변</strong>이 1순위입니다. 호수와 동해를 한 코스에서 오가는 평지라 부담이 없고, <strong>안목 커피거리</strong>에서 커피로 마무리하면 강릉다운 러닝이 완성됩니다. 일출을 원하면 정동진, 트레일은 바우길을 추가하세요.</p>
-
-<h3>Q. 강릉에서 일출 러닝하기 좋은 곳은?</h3>
-<p><strong>정동진</strong>이 대표 일출 명소입니다. 해안 산책로를 따라 일출을 보며 달릴 수 있습니다. 고지대 운해·일출을 원하면 <strong>안반데기</strong>(해발 1,100m)가 특별하지만 차량 접근이 필요하고 새벽엔 추우니 보온에 유의하세요. 경포해변도 동해 일출이 아름답습니다.</p>
-
-<h3>Q. 바우길·안반데기 트레일은 어떤 신발이 필요한가요?</h3>
-<p>흙길·임도·오르막이 섞여 일반 도로화로는 미끄럽습니다. <strong>접지력 좋은 트레일화</strong>가 필요하고, 입문은 <a href="/shoes/asics-gel-venture-10">젤 벤처 10</a>, 본격 코스는 <a href="/shoes/adidas-terrex-agravic-4">아그라빅 4</a>를 권합니다. 자세한 선택은 <a href="/blog/2026-best-trail-running-shoes">트레일 러닝화 베스트</a>를 참고하세요.</p>
-
-<h3>Q. 강릉 마라톤 대회는 어떤 게 있나요?</h3>
-<p>경포·동해안·남대천 일대를 활용한 해안·도심 마라톤들이 열립니다. 바닷바람이 변수지만 경관이 빼어나고 대부분 평지라 기록 도전에도 좋습니다. 일정은 매년 변동되니 공식 접수 채널에서 확인하세요. 본인 목적(완주·기록)에 맞는 러닝화는 <a href="/recommend">1분 러닝화 추천</a>으로 후보를 좁힐 수 있습니다.</p>
-`,
+    id: "gangneung-unique-running-courses-7",
+    slug: "gangneung-unique-running-courses-7",
+    title: "강릉 러닝 코스 고르기: 경포호와 안목해변, 거리·복귀 동선 확인",
+    description: "경포호의 호수 둘레 설명을 GPS 러닝 거리로 확정하지 않고, 호수형 동선과 안목해변 왕복 계획을 비교합니다. 관광지 개방과 야간 조명·샤워장 운영도 구분해 준비할 수 있습니다.",
+    thumbnail: "/images/blog/verified-gangneung-unique-running-courses-7-20261110.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-05-29",
+    updatedAt: "2026-11-10",
+    category: "guide",
+    readingTime: 4,
+    tags: [
+      "강릉 달리기",
+      "강릉 러닝코스",
+      "강릉 러닝 코스",
+      "이색 러닝",
+      "경포호수",
+      "안목 커피거리",
+      "정동진 일출",
+      "강릉 바우길",
+      "송정 솔숲",
+      "남대천",
+      "안반데기",
+      "강릉 마라톤"
+    ],
+    content: `<p><small>2026년 11월 10일 공개 원문 대조. 아래 동선 제안은 편집자의 계획 예시이며 실제 답사·측량 결과가 아닙니다.</small></p>
+<p>강릉에서 한 번 달릴 시간이 있다면 먼저 호수를 돌아올지, 바다를 보며 갔다가 되돌아올지 고르자. 경포호와 안목해변은 풍경도 복귀 계획도 다르다. 장소를 이어 붙인 총거리보다 출발점과 돌아올 방법이 먼저다.</p>
+<h2>경포호: 호수 둘레와 내가 달리는 거리를 구분</h2><p><a href="https://access.visitkorea.or.kr/ms/detail.do?cotId=8f82f247-b041-4223-8d0b-ab9deaa81ce6" target="_blank" rel="noopener noreferrer">한국관광공사 경포호 안내</a>는 호수의 현재 주위를 약 4km로 설명하고 상시 개방을 안내한다. 이 숫자는 주차장 진입·우회·경포대 방문까지 포함한 개인 러닝 코스의 실측값은 아니다. 기존에 단일 루프 거리를 소수점까지 확정한 설명은 제외했다.</p><p>처음 방문한다면 출발한 광장이나 진입 지점을 지도에 저장하고, 현장 안내판으로 호수 주변 보행 동선을 확인한 뒤 범위를 정하자. 경포대 언덕이나 해변 연결을 추가하면 같은 ‘경포호 런’이어도 거리와 높낮이가 달라진다.</p>
+<h2>안목해변: 커피거리 방문과 연속 주행을 분리</h2><p><a href="https://korean.visitkorea.or.kr/detail/ms_detail.do?cotid=f9d3fd78-55bd-4d5c-90fe-25af7ffa76a0" target="_blank" rel="noopener noreferrer">한국관광공사 안목해변 안내</a>는 해변과 커피거리를 주요 방문 요소로 소개한다. 바닷가를 달린 뒤 커피를 마시고 싶다면 안목 권역 안에서 출발·복귀하는 계획부터 잡는 편이 단순하다. 이는 편집 제안이며 특정 카페나 전 구간의 주행 허가를 확인한 것은 아니다.</p><p>경포에서 안목까지 길게 이어 달리려면 이동편·복귀편을 따로 정하자. 해안이 이어진다는 사실만으로 전 구간이 러너 전용이거나 횡단·차량 진입 없이 연결된다고 볼 수 없다. 모래사장과 보행로, 차도도 구분해야 한다.</p>
+<h2>목적에 따라 이렇게 계획하기</h2><table><thead><tr><th>목적</th><th>계획 예시</th><th>출발 전에 정할 것</th></tr></thead><tbody><tr><td>같은 지점으로 돌아오기</td><td>경포호 주변 보행 동선 확인 후 범위 선택</td><td>진입 광장·우회 구간·실제 목표 거리</td></tr><tr><td>바다와 커피거리 함께 보기</td><td>안목 권역에서 짧게 왕복 후 관광</td><td>반환 지점·보행자 혼잡·귀가편</td></tr><tr><td>호수와 바다 모두 연결</td><td>지도에서 연결부를 확인한 뒤 별도 계획</td><td>횡단 구간·복귀 거리·중간 종료 지점</td></tr></tbody></table>
+<h2>상시 개방과 부대시설은 다른 조건</h2><p>경포호 안내에는 광장별 화장실과 접근 정보가 있다. 그러나 화장실이 있다고 샤워장·탈의실·물품보관까지 사용할 수 있다는 뜻은 아니다. 해변 편의시설도 계절별 운영 여부를 따로 확인해야 한다.</p><p>상시 개방을 야간 전 구간 조명·무인 안전 보장으로 해석하지 말자. 당일 통제와 현장 표지가 우선이다. 기존의 ‘전 구간 평지’, 누구나 가능한 페이스, 확정된 샤워장 안내는 이번 자료로 뒷받침하지 못해 남기지 않았다.</p>
+<h2>자주 묻는 질문</h2><h3>경포호 한 바퀴가 정확히 4km인가요?</h3><p>관광공사는 호수 주위를 약 4km로 설명합니다. 진입·우회·선택한 보행 경로가 포함된 개인 러닝 거리와는 달라 지도와 현장 동선을 확인해야 합니다.</p><h3>경포에서 안목까지 계속 달려도 되나요?</h3><p>이 글은 전 구간의 연결·통제·주행 허가를 확인한 답사 자료가 아닙니다. 연결부와 반환·복귀 방법을 별도로 정해야 합니다.</p><h3>상시 개방이면 샤워장도 열리나요?</h3><p>관광지 개방과 샤워·탈의·보관 시설의 운영은 별개입니다. 해당 시설의 현재 운영 조건을 따로 확인해야 합니다.</p>`,
+    faqs: [
+      {
+        "question": "경포호 한 바퀴가 정확히 4km인가요?",
+        "answer": "관광공사는 호수 주위를 약 4km로 설명합니다. 진입·우회·선택한 보행 경로가 포함된 개인 러닝 거리와는 달라 지도와 현장 동선을 확인해야 합니다."
+      },
+      {
+        "question": "경포에서 안목까지 계속 달려도 되나요?",
+        "answer": "이 글은 전 구간의 연결·통제·주행 허가를 확인한 답사 자료가 아닙니다. 연결부와 반환·복귀 방법을 별도로 정해야 합니다."
+      },
+      {
+        "question": "상시 개방이면 샤워장도 열리나요?",
+        "answer": "관광지 개방과 샤워·탈의·보관 시설의 운영은 별개입니다. 해당 시설의 현재 운영 조건을 따로 확인해야 합니다."
+      }
+    ],
   },
   {
-    id: 'gyeongju-unique-running-courses-7',
-    slug: 'gyeongju-unique-running-courses-7',
-    title: '경주 달리기 좋은 곳 7선 | 경주 러닝 코스 — 첨성대 야경부터 남산 노천 박물관까지',
-    description: '대릉원·첨성대·동궁과월지 신라 유적 야경 러닝부터 보문호수, 남산 노천 박물관 트레일까지 경주에서 달리기 좋은 러닝 코스 7곳을 거리·난이도·시간대·러닝화 추천까지 정리. 대릉원·보문호·남산·황룡사지·토함산·형산강·양동마을 각 코스별 출발지·노면·주의점 가이드.',
-    thumbnail: '/images/blog/gyeongju-unique-running-courses-7.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-05-29',
-    updatedAt: '2026-08-19',
-    category: 'guide' as const,
-    readingTime: 11,
-    tags: ['경주 달리기', '경주 러닝코스', '경주 러닝 코스', '이색 러닝', '대릉원 첨성대', '보문호수', '경주 남산', '황룡사지 월성', '토함산 불국사', '형산강', '양동마을', '경주 마라톤'],
-    content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>경주는 신라 천년 유적·호수·산을 한 도시에 결합한 역사 러닝의 끝판왕</strong> — 첨성대·대릉원·동궁과월지 야경, 보문호 벚꽃, 남산 노천 박물관 등 도시 전체가 박물관</li>
-    <li>경주의 시그니처는 <strong>대릉원·첨성대·동궁과월지 야간 러닝</strong> — 조명 켜진 신라 유적 사이를 달리는 경험은 경주에서만 가능</li>
-    <li>각 코스별 <strong>출발지·거리·노면·시간대·주의점 + 어울리는 러닝화 카테고리</strong>까지 한 번에 정리</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">🏛️</span>
-  <div class="callout-body">
-    <p class="callout-title">경주 러닝만의 매력</p>
-    <p>경주는 도시 전체가 유네스코 세계유산인 <strong>신라 천년 고도</strong>로, <strong>유적 도심(대릉원·첨성대·동궁과월지)·호수(보문호)·산(남산·토함산)·왕경 평지(황룡사지·월성)·강(형산강)·전통마을(양동)</strong>이 어우러져 있습니다. 무엇보다 <strong>조명 켜진 신라 유적 사이를 달리는 야간 러닝</strong>은 경주만의 독보적 경험. 봄 보문호 벚꽃, 노천 박물관이라 불리는 남산의 마애불·석탑 트레일까지, 역사와 자연을 함께 달릴 수 있습니다. 본인 발 특성·부상 이력에 맞는 러닝화 후보는 <a href="/recommend">1분 러닝화 추천</a>에서 받을 수 있습니다.</p>
-  </div>
-</div>
-
-<h2>한눈에 비교</h2>
-
-<table>
-  <thead>
-    <tr><th>#</th><th>코스</th><th>거리</th><th>난이도</th><th>특이점</th><th>추천 시간대</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>1</td><td><strong>대릉원·첨성대·동궁과월지</strong></td><td>5~8km</td><td>하 (평지)</td><td>신라 유적 + 야경 — 시그니처</td><td>해질녘·야간(조명)</td></tr>
-    <tr><td>2</td><td><strong>보문호수 둘레</strong></td><td>약 8~10km</td><td>하 (평지)</td><td>관광단지 호수 + 벚꽃</td><td>봄 새벽·저녁</td></tr>
-    <tr><td>3</td><td><strong>경주 남산</strong></td><td>약 6~10km</td><td>중상</td><td>노천 박물관 — 마애불·석탑 트레일</td><td>맑은 날 오전</td></tr>
-    <tr><td>4</td><td><strong>황룡사지·월성·계림</strong></td><td>5~9km</td><td>하 (평지)</td><td>신라 왕경 드넓은 들판</td><td>새벽·해질녘</td></tr>
-    <tr><td>5</td><td><strong>토함산·불국사</strong></td><td>약 6~10km</td><td>중상</td><td>본격 산악 트레일 + 석굴암</td><td>맑은 날 오전</td></tr>
-    <tr><td>6</td><td><strong>형산강 자전거길</strong></td><td>5~15km</td><td>하 (평지)</td><td>강변 LSD + 자전거도로</td><td>새벽·저녁 노을</td></tr>
-    <tr><td>7</td><td><strong>양동마을</strong></td><td>4~6km</td><td>하~중</td><td>유네스코 전통마을 + 둘레</td><td>이른 새벽·오전</td></tr>
-  </tbody>
-</table>
-
-<h2>1. 대릉원·첨성대·동궁과월지 — 신라 유적을 달리는 야경 러닝</h2>
-
-<p><strong>출발지</strong>: 대릉원·첨성대 일대 (시내 중심)<br>
-<strong>거리</strong>: 5~8km (대릉원·첨성대·동궁과월지·월정교 연계)<br>
-<strong>노면</strong>: 흙길 + 우레탄 산책로 + 보도<br>
-<strong>추천 시간대</strong>: 해질녘·야간 (조명)</p>
-
-<p>경주의 시그니처 코스. <strong>대릉원(천마총)·첨성대·동궁과월지(안압지)·월정교</strong>를 잇는 도심 유적 러닝으로, 특히 <strong>밤이면 조명을 받은 신라 유적</strong>이 환상적입니다. 평탄해 부담이 적고, 도시 전체가 박물관인 경주의 정수를 한 번에 느낄 수 있습니다.</p>
-
-<p><strong>이 코스의 매력</strong>: 조명 켜진 신라 유적 야간 러닝이라는 독보적 경험. 첨성대·동궁과월지 야경은 인생샷 명소. 평지라 누구나 즐길 수 있지만, 관광객이 많은 구간은 페이스보다 풍경을 즐기는 러닝으로.</p>
-
-<p><strong>어울리는 러닝화</strong>: 평지 + 통기성 + 야간 시인성. <a href="/shoes/saucony-ride-19">사우코니 라이드 19</a>·<a href="/shoes/nike-pegasus-41">페가수스 41</a> 같은 통기성 좋은 데일리화.</p>
-
-<h2>2. 보문호수 둘레 — 관광단지 호수와 벚꽃</h2>
-
-<p><strong>출발지</strong>: 보문관광단지 (보문호, 버스·차량)<br>
-<strong>거리</strong>: 약 8~10km (호수 일주)<br>
-<strong>노면</strong>: 우레탄 산책로 + 데크<br>
-<strong>추천 시간대</strong>: 봄 새벽·저녁</p>
-
-<p>보문호수는 경주 관광단지의 중심 호수로, <strong>둘레를 따라 약 8~10km 평탄한 산책로</strong>가 이어집니다. 봄철 보문호 벚꽃은 전국적 명소로, 호수를 끼고 달리는 벚꽃 러닝이 백미입니다.</p>
-
-<p><strong>이 코스의 매력</strong>: 신호 없는 호수 일주 + 봄 벚꽃 + 매끄러운 노면. 거리가 충분해 LSD·페이스 훈련에 좋고, 호반 리조트·카페가 많아 러닝 여행 베이스로 적합합니다.</p>
-
-<p><strong>어울리는 러닝화</strong>: 평지 장거리·페이스. <a href="/shoes/new-balance-1080-v15">NB 1080 v15</a>(맥스 쿠션)·<a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a>(슈퍼트레이너).</p>
-
-<h2>3. 경주 남산 — 노천 박물관 트레일</h2>
-
-<p><strong>출발지</strong>: 삼릉·서남산 주차장 등 (남산 입구)<br>
-<strong>거리</strong>: 약 6~10km (코스별)<br>
-<strong>노면</strong>: 흙길 + 돌길 + 바위 + 오르막<br>
-<strong>추천 시간대</strong>: 맑은 날 오전</p>
-
-<p>경주 남산은 <strong>마애불·석탑·절터가 산 전체에 흩어진 "노천 박물관"</strong>으로 불리는 명산입니다. 삼릉 가는 길·금오봉 코스를 따라 트레일을 달리며 신라 불교 유적을 만나는 경험은 경주에서만 가능합니다.</p>
-
-<p><strong>이 코스의 매력</strong>: 산 곳곳의 마애불·석탑이라는 독특한 트레일 풍경. 다만 <strong>돌길·바위·오르막</strong>이 많아 일반 데일리화·카본화는 비추, 유적 보호 구역이라 정해진 탐방로를 지켜야 합니다. 입문자는 삼릉~상선암 구간 위주로.</p>
-
-<p><strong>어울리는 러닝화</strong>: 접지력·안정성 좋은 트레일화. <a href="/shoes/adidas-terrex-agravic-4">테렉스 아그라빅 4</a>·<a href="/shoes/hoka-tecton-x-3">테크톤 X 3</a>. 입문은 <a href="/shoes/asics-gel-venture-10">젤 벤처 10</a>. 신발 선택은 <a href="/blog/2026-best-trail-running-shoes">2026 트레일 러닝화 베스트</a> 참고.</p>
-
-<h2>4. 황룡사지·월성·계림 — 신라 왕경 드넓은 들판</h2>
-
-<p><strong>출발지</strong>: 황룡사지·월성 일대 (대릉원 인근)<br>
-<strong>거리</strong>: 5~9km<br>
-<strong>노면</strong>: 흙길 + 잔디 + 우레탄 산책로<br>
-<strong>추천 시간대</strong>: 새벽·해질녘</p>
-
-<p>황룡사지·월성(반월성)·계림 일대는 <strong>신라 왕경이 펼쳐졌던 드넓은 평지 유적</strong>입니다. 옛 황룡사 터의 광활한 들판과 첨성대·계림을 잇는 코스로, 시원하게 트인 평지에서 신라의 스케일을 느끼며 달릴 수 있습니다.</p>
-
-<p><strong>이 코스의 매력</strong>: 드넓은 왕경 들판 + 첨성대·계림 연계의 평지 러닝. 해질녘·새벽 빛이 유적과 어우러져 아름답습니다. 1번 유적 코스와 묶으면 경주 도심 역사 러닝이 완성됩니다.</p>
-
-<p><strong>어울리는 러닝화</strong>: 평지 + 약간의 흙길·잔디. <a href="/shoes/nike-pegasus-42">페가수스 42</a>·<a href="/shoes/asics-gel-kayano-32">카야노 32</a> 같은 데일리·안정화.</p>
-
-<h2>5. 토함산·불국사 — 본격 산악 트레일과 석굴암</h2>
-
-<p><strong>출발지</strong>: 불국사 주차장 (토함산 입구, 버스·차량)<br>
-<strong>거리</strong>: 약 6~10km (불국사~석굴암~토함산)<br>
-<strong>노면</strong>: 흙길 + 돌길 + 임도 + 오르막<br>
-<strong>추천 시간대</strong>: 맑은 날 오전 (일출 명소)</p>
-
-<p>토함산은 <strong>불국사와 석굴암을 품은 경주의 명산</strong>으로, 본격 산악 트레일입니다. 토함산 일출은 경주 대표 명소이며, 불국사에서 석굴암으로 이어지는 길은 역사와 산을 함께 즐기는 코스입니다.</p>
-
-<p><strong>이 코스의 매력</strong>: 세계유산 불국사·석굴암 + 토함산 일출. 다만 <strong>돌길·임도·고도차</strong>가 커서 일반 데일리화로는 위험하고, 날씨·일몰에 대비해야 합니다. 입문자는 불국사 둘레·완만 구간 위주로.</p>
-
-<p><strong>어울리는 러닝화</strong>: 본격 트레일화. <a href="/shoes/adidas-terrex-agravic-4">테렉스 아그라빅 4</a>·<a href="/shoes/hoka-tecton-x-3">테크톤 X 3</a>. <a href="/blog/2026-best-trail-running-shoes">트레일 러닝화 베스트</a>에서 코스별 선택을 확인하세요.</p>
-
-<h2>6. 형산강 자전거길 — 강변 장거리 LSD</h2>
-
-<p><strong>출발지</strong>: 형산강 자전거길 진입점 (시내·강변)<br>
-<strong>거리</strong>: 5~15km (거리 자유)<br>
-<strong>노면</strong>: 자전거도로 + 강변 산책로<br>
-<strong>추천 시간대</strong>: 새벽·저녁 노을</p>
-
-<p>형산강은 경주를 지나 포항으로 흐르는 강으로, <strong>강변 자전거길이 길게 이어져 평지 LSD</strong>에 좋습니다. 신호 없이 장거리를 소화할 수 있고, 강변 풍경과 노을이 아름답습니다.</p>
-
-<p><strong>이 코스의 매력</strong>: 신호 없는 강변 장거리 평지 + 노을. 마라톤 LSD 훈련에 최적이고, 자전거길이라 노면이 매끄럽습니다. 그늘이 적으니 여름엔 새벽·저녁, 야간 단독은 주의하세요.</p>
-
-<p><strong>어울리는 러닝화</strong>: 평지 장거리 LSD. <a href="/shoes/new-balance-1080-v15">NB 1080 v15</a>·<a href="/shoes/asics-gel-nimbus-28">님버스 28</a> 같은 부드러운 맥스 쿠션.</p>
-
-<h2>7. 양동마을 — 유네스코 전통마을 둘레</h2>
-
-<p><strong>출발지</strong>: 양동마을 (경주 북부 안강, 차량)<br>
-<strong>거리</strong>: 4~6km (마을 + 둘레 구릉)<br>
-<strong>노면</strong>: 흙길 + 마을 길 + 완만한 구릉<br>
-<strong>추천 시간대</strong>: 이른 새벽·오전</p>
-
-<p>양동마을은 <strong>유네스코 세계유산으로 등재된 조선시대 전통 양반 마을</strong>입니다. 기와집·초가가 구릉을 따라 자리한 마을과 주변 둘레길을 달리며 전통 정취를 느낄 수 있습니다.</p>
-
-<p><strong>이 코스의 매력</strong>: 살아있는 전통 마을이라는 독특한 풍경. 다만 주민이 거주하는 마을이라 <strong>이른 새벽·조용한 러닝</strong>이 예의이고, 마을 안은 가볍게, 주변 구릉·들판에서 거리를 늘리세요. 신라 유적 도심과는 또 다른 조선 전통의 정취입니다.</p>
-
-<p><strong>어울리는 러닝화</strong>: 흙길·마을길 + 완만 구릉. <a href="/shoes/hoka-clifton-10">호카 클리프턴 10</a>·<a href="/shoes/asics-gel-kayano-32">카야노 32</a> 같은 안정성 있는 신발.</p>
-
-<h2>본인 경주 거주지·목적별 추천 코스</h2>
-
-<ul>
-  <li><strong>시내(중심) 거주·여행자</strong>: <strong>대릉원·첨성대·동궁과월지(야경)</strong> + <strong>황룡사지·월성</strong> — 역사 도심 러닝</li>
-  <li><strong>보문단지 일대·여행 숙박</strong>: <strong>보문호수 둘레</strong>(벚꽃·LSD)</li>
-  <li><strong>외동·불국사 방면</strong>: <strong>토함산·불국사</strong>(산악 트레일)</li>
-  <li><strong>트레일·유적 동시</strong>: <strong>경주 남산</strong>(노천 박물관, 트레일화 필수)</li>
-  <li><strong>강변 LSD / 전통마을</strong>: <strong>형산강 자전거길</strong> · <strong>양동마을</strong>(새벽)</li>
-</ul>
-
-<h2>이런 코스 뛸 때 필요한 러닝화 카테고리</h2>
-
-<ul>
-  <li><strong>평지 유적·호수·강 (대릉원·황룡사지·보문호·형산강)</strong>: 가성비 데일리 + 통기성. <a href="/blog/saucony-ride-18-vs-19-comparison">사우코니 라이드 18 vs 19 비교</a> · <a href="/blog/nike-pegasus-41-vs-42-comparison">페가수스 41 vs 42 비교</a></li>
-  <li><strong>호수·강 LSD (보문호·형산강)</strong>: 맥스 쿠션. <a href="/blog/new-balance-1080-v14-vs-v15-comparison">NB 1080 v14 vs v15 비교</a></li>
-  <li><strong>남산·토함산 트레일</strong>: 접지력·안정성 트레일화. <a href="/blog/2026-best-trail-running-shoes">2026 트레일 러닝화 베스트 7</a> — 코스 난이도별 선택 가이드</li>
-  <li><strong>인터벌·페이스 (보문호 코스)</strong>: 슈퍼트레이너. <a href="/blog/asics-superblast-2-vs-3-comparison">슈퍼블라스트 2 vs 3 비교</a></li>
-</ul>
-
-<h2>경주 러닝 — 신라 유적 야경런과 역사 러닝 여행</h2>
-
-<div class="callout tip">
-  <span class="callout-icon">🌙</span>
-  <div class="callout-body">
-    <p class="callout-title">천년 고도를 달리다 — 경주 러닝 여행</p>
-    <p>경주는 <strong>도시 전체가 박물관인 역사 러닝의 끝판왕</strong>입니다. ① 야경 러닝은 <strong>대릉원·첨성대·동궁과월지</strong>(조명 켜진 신라 유적), ② 봄엔 <strong>보문호 벚꽃 LSD</strong>, ③ 유적 트레일은 <strong>남산</strong>(노천 박물관)·<strong>토함산</strong>(불국사·석굴암), ④ 전통은 <strong>양동마을</strong>로 묶으면 좋습니다. KTX로 서울에서 약 2시간, 러닝 후 신라 유적 관광까지 더하면 완벽한 역사 러닝 여행. 다른 지역 코스가 궁금하다면 <a href="/blog/seoul-unique-running-courses-7">서울</a>·<a href="/blog/busan-unique-running-courses-7">부산</a>·<a href="/blog/incheon-unique-running-courses-7">인천</a>·<a href="/blog/daegu-unique-running-courses-7">대구</a>·<a href="/blog/jeju-unique-running-courses-7">제주</a>·<a href="/blog/daejeon-unique-running-courses-7">대전</a>·<a href="/blog/gwangju-unique-running-courses-7">광주</a>·<a href="/blog/ulsan-unique-running-courses-7">울산</a>·<a href="/blog/suwon-unique-running-courses-7">수원</a>·<a href="/blog/jeonju-unique-running-courses-7">전주 달리기 좋은 곳 7선</a>도 함께 보세요.</p>
-  </div>
-</div>
-
-<h2>FAQ</h2>
-
-<h3>Q. 경주에서 야간 러닝하기 좋은 곳은?</h3>
-<p><strong>대릉원·첨성대·동궁과월지</strong>가 1순위입니다. 조명을 받은 신라 유적 사이를 달리는 경험은 경주에서만 가능하고, 평지라 안전합니다. <strong>보문호수</strong>도 조명·산책로가 잘 돼 있어 야간 러닝에 좋습니다. 반면 남산·토함산은 야간에 어둡고 위험하니 낮·오전에 뛰세요.</p>
-
-<h3>Q. 경주 남산·토함산 트레일은 어떤 신발이 필요한가요?</h3>
-<p>돌길·바위·오르막이 많아 일반 도로화로는 위험합니다. <strong>접지력 좋은 트레일화</strong>가 필요하고, <a href="/shoes/adidas-terrex-agravic-4">아그라빅 4</a>·<a href="/shoes/hoka-tecton-x-3">테크톤 X 3</a> 같은 본격 트레일화를 권합니다. 입문은 <a href="/shoes/asics-gel-venture-10">젤 벤처 10</a>으로 시작해도 됩니다. 남산은 유적 보호 구역이니 정해진 탐방로를 지키세요.</p>
-
-<h3>Q. 경주 유적지에서 러닝해도 되나요?</h3>
-<p>대릉원·첨성대·동궁과월지 주변 산책로·평지는 러닝이 가능하지만, <strong>유적 보호 구역과 잔디·고분 위는 들어가면 안 됩니다.</strong> 정해진 탐방로·산책로를 이용하고, 관광객이 많은 시간엔 페이스보다 풍경을 즐기는 러닝을 권합니다. 양동마을은 주민 거주지라 새벽 조용한 러닝이 예의입니다.</p>
-
-<h3>Q. 경주 마라톤 대회는 어떤 게 있나요?</h3>
-<p>경주국제마라톤을 비롯해 신라 유적·보문호 일대를 활용한 대회들이 열립니다. 유적을 지나는 코스라 분위기가 특별하고 대부분 평지·완만이라 기록 도전에도 좋습니다. 대회 상세는 <a href="/blog/2026-gyeongju-international-marathon">2026 경주국제마라톤 안내</a>를 참고하고, 본인 목적에 맞는 러닝화는 <a href="/recommend">1분 러닝화 추천</a>으로 좁힐 수 있습니다.</p>
-`,
+    id: "gyeongju-unique-running-courses-7",
+    slug: "gyeongju-unique-running-courses-7",
+    title: "경주 러닝 여행 동선: 황리단길·첨성대·월성, 관람 구간과 나누기",
+    description: "경주시 공식 지도는 황리단길 주변을 도보 여행권으로 설명합니다. 유적지 사이 이동과 관람 공간을 구분해 동선을 계획하고, 관광 안내를 전 구역 러닝 허가로 바꾸지 않았습니다.",
+    thumbnail: "/images/blog/verified-gyeongju-unique-running-courses-7-20261110.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-05-29",
+    updatedAt: "2026-11-10",
+    category: "guide",
+    readingTime: 4,
+    tags: [
+      "경주 달리기",
+      "경주 러닝코스",
+      "경주 러닝 코스",
+      "이색 러닝",
+      "대릉원 첨성대",
+      "보문호수",
+      "경주 남산",
+      "황룡사지 월성",
+      "토함산 불국사",
+      "형산강",
+      "양동마을",
+      "경주 마라톤"
+    ],
+    content: `<p><small>2026년 11월 10일 공개 원문 대조. 아래 동선 제안은 편집자의 계획 예시이며 실제 답사·측량 결과가 아닙니다.</small></p>
+<p>경주 여행에서 달리고 싶다면 모든 명소를 한 번에 잇기보다 ‘달릴 구간’과 ‘걸으며 볼 구간’을 먼저 나누자. 황리단길·첨성대·월성 주변의 관광 동선이 가까워 보여도 관람객, 관람시간, 출입 조건까지 같지는 않다.</p>
+<h2>공식 지도는 도보 여행과 더 먼 이동을 구분한다</h2><p><a href="https://www.gyeongju.go.kr/hwangridan/images/gj_map_kor.pdf" target="_blank" rel="noopener noreferrer">경주시 황리단길 공식 안내지도 PDF</a>는 황리단길을 중심으로 1km 안팎의 도보 이동이 가능한 시내 여행지와 버스·자동차로 갈 여행지를 나누어 소개한다. 동궁과 월지 등은 자전거 여행 설명에도 등장한다. ‘1km 안팎’은 각 장소를 모두 잇는 러닝 총거리가 아니다.</p><p>먼저 지도에서 숙소·출발점·다시 돌아올 지점을 표시하자. 보문·불국사·양동마을까지 같은 시내 조깅 동선으로 가정하면 이동 규모가 달라진다. 이 글은 지도에 나온 관광 권역을 바탕으로 계획을 돕는 안내다.</p>
+<h2>첨성대·월성·계림은 관람 동선과 겹친다</h2><p>공식 지도는 첨성대 남쪽의 월성과 주변 계림·동부사적지대를 함께 설명한다. 풍경을 보려는 날에는 이동 가능한 길과 멈춰 관람할 지점을 따로 정하는 계획을 제안한다. 잔디·유구·발굴 구역으로 들어가 지름길을 만드는 동선은 제시하지 않는다.</p><p>관광 안내에 산책이 소개돼 있다고 문화유산 주변 모든 공간에서 달릴 수 있다는 뜻은 아니다. 현장 출입 표지와 관리자의 안내를 확인하고, 관람객과 동선이 겹치면 걸어서 이동하자. 구역별 러닝 허용 여부를 이번 지도만으로 인증하지 않았다.</p>
+<h2>황리단길은 운동 뒤 관광 동선으로도 분리</h2><p><a href="https://www.gyeongju.go.kr/hwangridan/index.nm" target="_blank" rel="noopener noreferrer">경주시 황리단길 공식 포털</a>에는 그림지도·상점 정보·교통정보 연결이 있다. 이 자료는 출발점과 관광 마무리 장소를 고를 때 활용할 수 있다. 식당·상점 앞길을 일정 페이스의 훈련 구간으로 보장하는 자료는 아니다.</p><p>예를 들어 숙소에서 출발해 현장에서 확인한 보행 구간만 왕복하고, 황리단길 방문은 운동 뒤 도보로 분리할 수 있다. 편집자의 계획 예시이며 실제 거리·혼잡도·영업시간을 측정한 코스는 아니다.</p>
+<h2>야경을 볼 수 있는 시간과 러닝 가능 시간은 별도</h2><p>공식 지도는 여행지별 관람시간을 따로 적는다. 야경 사진이나 어느 장소의 늦은 관람시간을 근거로 모든 유적지를 새벽부터 밤까지 통과할 수 있다고 안내하지 않는다. 방문할 시설의 최신 관람 공지와 출입구를 확인해야 한다.</p><p>기존 7곳의 거리·난도·야간 개방을 한꺼번에 확정했던 설명은 이 범위의 검증된 안내로 대체했다. 러닝 뒤 씻을 곳은 숙소나 실제 이용할 시설에 별도 확인하자. 지도에 화장실이 있다고 샤워를 제공한다는 뜻은 아니다.</p>
+<h2>자주 묻는 질문</h2><h3>황리단길 주변 1km가 완성된 러닝 코스인가요?</h3><p>공식 지도의 1km 안팎 설명은 주변 도보 여행권에 관한 것입니다. 명소 전체를 잇는 개인 러닝 총거리나 공인 코스가 아닙니다.</p><h3>유적지 내부에서도 모두 달릴 수 있나요?</h3><p>관광 지도만으로 구역별 러닝 허용을 확정하지 않았습니다. 현장 출입 표지·관람 규정과 보행자 상황을 따라야 합니다.</p><h3>야경 명소면 밤에도 계속 개방되나요?</h3><p>장소별 관람시간과 야외 연결길의 접근 조건은 다릅니다. 방문할 시설의 최신 관람 공지를 따로 확인해야 합니다.</p>`,
+    faqs: [
+      {
+        "question": "황리단길 주변 1km가 완성된 러닝 코스인가요?",
+        "answer": "공식 지도의 1km 안팎 설명은 주변 도보 여행권에 관한 것입니다. 명소 전체를 잇는 개인 러닝 총거리나 공인 코스가 아닙니다."
+      },
+      {
+        "question": "유적지 내부에서도 모두 달릴 수 있나요?",
+        "answer": "관광 지도만으로 구역별 러닝 허용을 확정하지 않았습니다. 현장 출입 표지·관람 규정과 보행자 상황을 따라야 합니다."
+      },
+      {
+        "question": "야경 명소면 밤에도 계속 개방되나요?",
+        "answer": "장소별 관람시간과 야외 연결길의 접근 조건은 다릅니다. 방문할 시설의 최신 관람 공지를 따로 확인해야 합니다."
+      }
+    ],
   },
   {
-    id: 'jeonju-unique-running-courses-7',
-    slug: 'jeonju-unique-running-courses-7',
-    title: '전주 달리기 좋은 곳 7선 | 전주 러닝 코스 — 한옥마을 새벽런부터 완산칠봉 꽃동산까지',
-    description: '전주한옥마을 새벽 러닝부터 전주천 한벽당, 덕진공원 연꽃, 완산칠봉 꽃동산까지 전주에서 달리기 좋은 러닝 코스 7곳을 거리·난이도·시간대·러닝화 추천까지 정리. 한옥마을·전주천·덕진공원·완산칠봉·건지산 편백·삼천·전주수목원 각 코스별 출발지·노면·주의점 가이드.',
-    thumbnail: '/images/blog/jeonju-unique-running-courses-7.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-05-29',
-    updatedAt: '2026-08-19',
-    category: 'guide' as const,
-    readingTime: 11,
-    tags: ['전주 달리기', '전주 러닝코스', '전주 러닝 코스', '이색 러닝', '전주한옥마을', '전주천 한벽당', '덕진공원 연꽃', '완산칠봉', '건지산 편백숲', '삼천 자전거길', '전주수목원', '전주 마라톤'],
-    content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>전주는 한옥·도심 하천·연꽃호수·꽃동산을 결합한 전통의 러닝 도시</strong> — 한옥마을 새벽런, 전주천 한벽당, 덕진공원 연꽃, 완산칠봉 봄 꽃동산 등 정취 가득한 풍경</li>
-    <li>전주의 시그니처는 <strong>한옥마을 새벽 러닝</strong> — 관광객이 몰리기 전 이른 새벽, 600여 채 한옥과 오목대를 달리는 경험은 전주만의 것</li>
-    <li>각 코스별 <strong>출발지·거리·노면·시간대·주의점 + 어울리는 러닝화 카테고리</strong>까지 한 번에 정리</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">🏘️</span>
-  <div class="callout-body">
-    <p class="callout-title">전주 러닝만의 매력</p>
-    <p>전주는 <strong>한옥마을·도심 하천(전주천)·연꽃호수(덕진공원)·꽃동산(완산칠봉)·편백숲(건지산)·강변(삼천)</strong>이 어우러진 전통과 슬로시티의 도시입니다. 600여 채 한옥이 모인 <strong>전주한옥마을</strong>은 관광객이 몰리기 전 새벽에 달리면 고즈넉한 정취가 일품. 도심을 흐르는 전주천은 한벽당·청연루 같은 명소를 끼고 있고, 덕진공원 연꽃과 완산칠봉 봄꽃은 계절 러닝의 백미입니다. 본인 발 특성·부상 이력에 맞는 러닝화 후보는 <a href="/recommend">1분 러닝화 추천</a>에서 받을 수 있습니다.</p>
-  </div>
-</div>
-
-<h2>한눈에 비교</h2>
-
-<table>
-  <thead>
-    <tr><th>#</th><th>코스</th><th>거리</th><th>난이도</th><th>특이점</th><th>추천 시간대</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>1</td><td><strong>전주한옥마을 + 오목대</strong></td><td>3~5km</td><td>하~중</td><td>600채 한옥 + 전망 — 시그니처</td><td>이른 새벽(인파 전)</td></tr>
-    <tr><td>2</td><td><strong>전주천 (한벽당~남천교)</strong></td><td>5~10km</td><td>하 (평지)</td><td>도심 관통 하천 + 한벽당</td><td>새벽·야간</td></tr>
-    <tr><td>3</td><td><strong>덕진공원</strong></td><td>약 2~3km 둘레</td><td>하 (평지)</td><td>연꽃 호수 + 연화교</td><td>여름 새벽(연꽃)</td></tr>
-    <tr><td>4</td><td><strong>완산칠봉 (완산공원)</strong></td><td>약 3~5km</td><td>중 (오르막)</td><td>도심 산 + 봄 꽃동산</td><td>맑은 날 오전·봄</td></tr>
-    <tr><td>5</td><td><strong>건지산 편백숲 + 오송제</strong></td><td>약 4~6km</td><td>하~중</td><td>편백숲 + 저수지 산책</td><td>오전·한낮(숲 그늘)</td></tr>
-    <tr><td>6</td><td><strong>삼천 자전거길</strong></td><td>5~12km</td><td>하 (평지)</td><td>강변 LSD + 자전거도로</td><td>새벽·저녁 노을</td></tr>
-    <tr><td>7</td><td><strong>전주수목원 (한국도로공사)</strong></td><td>약 3~4km</td><td>하 (평지)</td><td>도심 수목원 숲길 (무료)</td><td>오전·한낮(그늘)</td></tr>
-  </tbody>
-</table>
-
-<h2>1. 전주한옥마을 + 오목대 — 한옥을 달리는 새벽 러닝</h2>
-
-<p><strong>출발지</strong>: 한옥마을 입구·경기전 일대<br>
-<strong>거리</strong>: 3~5km (한옥마을 + 오목대·이목대 + 전주천 연계)<br>
-<strong>노면</strong>: 돌·보도블록 + 오목대 계단<br>
-<strong>추천 시간대</strong>: 이른 새벽 (인파 전)</p>
-
-<p>전주한옥마을은 <strong>600여 채 한옥이 모인 전주의 시그니처</strong>입니다. 낮엔 관광객으로 붐비지만, <strong>이른 새벽엔 고즈넉한 한옥 골목을 달리는 특별한 경험</strong>이 가능합니다. 오목대·이목대에 오르면 한옥마을 전경이 한눈에 들어옵니다.</p>
-
-<p><strong>이 코스의 매력</strong>: 전통 한옥을 달리는 독보적 정취 + 오목대 전망. 다만 <strong>골목이 좁고 돌·보도블록</strong>이라 빠른 페이스보다 가벼운 조깅·산책런에 적합하고, 관광 시간엔 러닝이 어렵습니다. 전주천과 연계하면 거리를 늘릴 수 있습니다.</p>
-
-<p><strong>어울리는 러닝화</strong>: 보도블록 + 계단 + 회복 조깅. <a href="/shoes/hoka-clifton-10">호카 클리프턴 10</a>·<a href="/shoes/saucony-ride-19">사우코니 라이드 19</a> 같은 쿠션 데일리.</p>
-
-<h2>2. 전주천 (한벽당~남천교) — 도심 관통 하천</h2>
-
-<p><strong>출발지</strong>: 한벽당·남천교 등 전주천 다리마다 진입<br>
-<strong>거리</strong>: 5~10km (도심 종주)<br>
-<strong>노면</strong>: 우레탄 산책로 + 자전거도로<br>
-<strong>추천 시간대</strong>: 새벽·야간</p>
-
-<p>전주천은 전주 도심을 관통하는 하천으로, <strong>한벽당·청연루</strong> 같은 전통 명소를 끼고 흐릅니다. 둔치를 따라 산책로·자전거도로가 이어져 거리 조절이 자유롭고, 한옥마을과 가까워 역사 코스와 연계하기 좋습니다.</p>
-
-<p><strong>이 코스의 매력</strong>: 도심 하천 평지 + 한벽당 전통 풍경 + 거리 무제한. 신호 없는 평지라 데일리·LSD에 적합하고, 맑은 물에서 다슬기·물고기를 볼 수 있을 만큼 수질이 좋습니다. 여름엔 그늘이 적으니 새벽·야간을 권합니다.</p>
-
-<p><strong>어울리는 러닝화</strong>: 평지 장거리·데일리. <a href="/shoes/new-balance-1080-v15">NB 1080 v15</a>·<a href="/shoes/asics-gel-nimbus-28">님버스 28</a> 같은 맥스 쿠션, 또는 <a href="/shoes/nike-pegasus-41">페가수스 41</a>.</p>
-
-<h2>3. 덕진공원 — 연꽃 가득한 호수공원</h2>
-
-<p><strong>출발지</strong>: 덕진공원 (덕진구, 버스·차량)<br>
-<strong>거리</strong>: 약 2~3km 둘레 (인근 확장)<br>
-<strong>노면</strong>: 우레탄 산책로 + 연화교 데크<br>
-<strong>추천 시간대</strong>: 여름 새벽 (연꽃 개화)</p>
-
-<p>덕진공원은 <strong>연꽃으로 유명한 호수공원</strong>으로, 여름이면 호수를 가득 메운 연꽃과 연화교(현수교)가 장관을 이룹니다. 평탄한 둘레 산책로를 따라 가볍게 달리며 계절 정취를 즐기기 좋습니다.</p>
-
-<p><strong>이 코스의 매력</strong>: 연꽃 호수라는 계절 명소 + 평지 둘레. 여름 새벽 연꽃이 필 때가 백미. 둘레가 짧아 여러 바퀴 돌거나 전북대·건지산 방향으로 확장 가능합니다.</p>
-
-<p><strong>어울리는 러닝화</strong>: 평지 데일리. <a href="/shoes/saucony-ride-19">사우코니 라이드 19</a>·<a href="/shoes/nike-pegasus-42">페가수스 42</a> 같은 데일리화.</p>
-
-<h2>4. 완산칠봉 (완산공원) — 도심 속 봄 꽃동산</h2>
-
-<p><strong>출발지</strong>: 완산공원 입구 (완산구, 버스)<br>
-<strong>거리</strong>: 약 3~5km (둘레·전망 코스)<br>
-<strong>노면</strong>: 흙길 + 돌계단 + 임도<br>
-<strong>추천 시간대</strong>: 맑은 날 오전 (봄 꽃철 인기)</p>
-
-<p>완산칠봉은 전주 도심 남쪽의 일곱 봉우리 산으로, <strong>봄이면 철쭉·겹벚꽃이 가득한 꽃동산</strong>으로 유명합니다. 도심에서 가까운 산 트레일로, 전망대에서 전주 시가지가 한눈에 들어옵니다.</p>
-
-<p><strong>이 코스의 매력</strong>: 도심 근접 산 + 봄 꽃동산 풍경. 다만 <strong>흙길·돌계단·오르막</strong>이 섞여 일반 데일리화로는 한계가 있고, 우천 후엔 미끄럽습니다. 입문자는 둘레·전망 코스 위주로.</p>
-
-<p><strong>어울리는 러닝화</strong>: 트레일 입문 또는 접지력 데일리. <a href="/shoes/asics-gel-venture-10">젤 벤처 10</a>(가성비 트레일)·<a href="/shoes/asics-gel-kayano-32">카야노 32</a>(안정 데일리). 본격 트레일은 <a href="/blog/2026-best-trail-running-shoes">트레일 러닝화 베스트</a> 참고.</p>
-
-<h2>5. 건지산 편백숲 + 오송제 — 편백 향 가득한 숲길</h2>
-
-<p><strong>출발지</strong>: 전북대 후문·건지산 입구 (덕진구)<br>
-<strong>거리</strong>: 약 4~6km (편백숲 + 오송제 둘레)<br>
-<strong>노면</strong>: 흙길 + 임도 + 저수지 데크<br>
-<strong>추천 시간대</strong>: 오전·한낮 (숲 그늘)</p>
-
-<p>건지산은 전북대 인근의 도심 산으로, <strong>편백숲과 오송제 저수지</strong>가 어우러진 완만한 숲길이 매력적입니다. 편백 향 가득한 숲을 달리는 힐링 러닝이 가능하고, 비교적 완만해 입문자도 부담 없습니다.</p>
-
-<p><strong>이 코스의 매력</strong>: 편백숲 피톤치드 + 저수지 + 완만한 흙길. 숲 그늘 덕에 한낮에도 시원하고, 전북대 캠퍼스와 연계해 거리를 늘릴 수 있습니다. 데크·흙길은 미끄럼에 주의.</p>
-
-<p><strong>어울리는 러닝화</strong>: 완만 숲길 + 약간의 흙길. <a href="/shoes/hoka-clifton-10">호카 클리프턴 10</a>·<a href="/shoes/on-cloudmonster-3">클라우드몬스터 3</a> 같은 쿠션 데일리.</p>
-
-<h2>6. 삼천 자전거길 — 강변 장거리 LSD</h2>
-
-<p><strong>출발지</strong>: 삼천 자전거길 진입점 (효자동·삼천동 일대)<br>
-<strong>거리</strong>: 5~12km (거리 자유)<br>
-<strong>노면</strong>: 자전거도로 + 강변 산책로<br>
-<strong>추천 시간대</strong>: 새벽·저녁 노을</p>
-
-<p>삼천은 전주 서남부를 흐르는 하천으로, <strong>전주천과 합류하며 길게 이어지는 자전거길</strong>이 평지 LSD에 좋습니다. 신호 없이 장거리를 소화할 수 있고, 강변 풍경과 노을이 아름답습니다.</p>
-
-<p><strong>이 코스의 매력</strong>: 신호 없는 강변 장거리 평지 + 노을. 마라톤 LSD 훈련에 최적이고, 자전거길이라 노면이 매끄럽습니다. 그늘이 적으니 여름엔 새벽·저녁, 야간 단독은 주의하세요.</p>
-
-<p><strong>어울리는 러닝화</strong>: 평지 장거리 LSD. <a href="/shoes/new-balance-1080-v15">NB 1080 v15</a>·<a href="/shoes/asics-gel-nimbus-28">님버스 28</a> 같은 부드러운 맥스 쿠션.</p>
-
-<h2>7. 전주수목원 (한국도로공사) — 무료 도심 수목원</h2>
-
-<p><strong>출발지</strong>: 한국도로공사 전주수목원 (덕진구, 버스·차량)<br>
-<strong>거리</strong>: 약 3~4km (수목원 산책로)<br>
-<strong>노면</strong>: 흙길 + 데크 + 산책로<br>
-<strong>추천 시간대</strong>: 오전·한낮 (숲 그늘)</p>
-
-<p>전주수목원은 한국도로공사가 조성한 <strong>무료 개방 도심 수목원</strong>으로, 다양한 수목과 연못, 숲길이 어우러져 있습니다. 도심에서 가까우면서도 숲의 정취를 즐길 수 있어 힐링 러닝에 좋습니다.</p>
-
-<p><strong>이 코스의 매력</strong>: 무료 도심 수목원 + 풍부한 그늘 + 사계절 풍경. 평탄·완만해 부담이 적고, 가족 단위 방문이 많아 새벽·평일이 한적합니다. 운영 시간을 확인하고 이용하세요.</p>
-
-<p><strong>어울리는 러닝화</strong>: 완만 숲길 데일리. <a href="/shoes/nike-pegasus-42">페가수스 42</a>·<a href="/shoes/asics-gel-nimbus-28">님버스 28</a> 같은 쿠션 데일리.</p>
-
-<h2>본인 전주 거주지·목적별 추천 코스</h2>
-
-<ul>
-  <li><strong>완산구·한옥마을 일대 거주</strong>: <strong>전주한옥마을(새벽)</strong> + <strong>전주천</strong>(한벽당) + <strong>완산칠봉</strong></li>
-  <li><strong>덕진구·전북대 일대 거주</strong>: <strong>덕진공원</strong>(연꽃) · <strong>건지산 편백숲</strong> · <strong>전주수목원</strong></li>
-  <li><strong>효자동·서부 거주</strong>: <strong>삼천 자전거길</strong>(강변 LSD)</li>
-  <li><strong>역사·정취 러닝</strong>: <strong>한옥마을 + 전주천 한벽당</strong> — 전주의 정수</li>
-  <li><strong>트레일·산</strong>: <strong>완산칠봉</strong>(봄 꽃동산) → <strong>건지산</strong>(편백숲)</li>
-</ul>
-
-<h2>이런 코스 뛸 때 필요한 러닝화 카테고리</h2>
-
-<ul>
-  <li><strong>평지 하천·연꽃호수·수목원 (전주천·덕진·삼천)</strong>: 가성비 데일리 + 통기성. <a href="/blog/saucony-ride-18-vs-19-comparison">사우코니 라이드 18 vs 19 비교</a> · <a href="/blog/nike-pegasus-41-vs-42-comparison">페가수스 41 vs 42 비교</a></li>
-  <li><strong>강변 LSD·맥스 쿠션 (삼천)</strong>: <a href="/blog/new-balance-1080-v14-vs-v15-comparison">NB 1080 v14 vs v15 비교</a></li>
-  <li><strong>완산칠봉·건지산 트레일</strong>: 접지력·안정성 트레일화. <a href="/blog/2026-best-trail-running-shoes">2026 트레일 러닝화 베스트 7</a> — 코스 난이도별 선택 가이드</li>
-  <li><strong>한옥마을 새벽 조깅 (보도블록)</strong>: 쿠션·안정성. <a href="/blog/on-cloudmonster-2-vs-3-comparison">클라우드몬스터 2 vs 3 비교</a></li>
-</ul>
-
-<h2>전주 러닝 — 한옥 새벽런과 슬로시티 러닝 여행</h2>
-
-<div class="callout tip">
-  <span class="callout-icon">🌸</span>
-  <div class="callout-body">
-    <p class="callout-title">전통과 정취를 달리다 — 전주 러닝 여행</p>
-    <p>전주는 <strong>전통과 슬로시티의 정취를 달릴 수 있는</strong> 도시입니다. ① 정취 러닝은 <strong>이른 새벽 한옥마을 + 전주천 한벽당</strong>, ② 계절 명소는 <strong>덕진공원 연꽃(여름)·완산칠봉 꽃동산(봄)</strong>, ③ 힐링은 <strong>건지산 편백숲·전주수목원</strong>, ④ 강변 LSD는 <strong>삼천</strong>으로 묶으면 좋습니다. KTX·SRT로 서울에서 약 1시간 30분, 러닝 후 전주 비빔밥·콩나물국밥까지 즐기는 미식 러닝 여행으로 제격. 다른 지역 코스가 궁금하다면 <a href="/blog/seoul-unique-running-courses-7">서울</a>·<a href="/blog/busan-unique-running-courses-7">부산</a>·<a href="/blog/incheon-unique-running-courses-7">인천</a>·<a href="/blog/daegu-unique-running-courses-7">대구</a>·<a href="/blog/jeju-unique-running-courses-7">제주</a>·<a href="/blog/daejeon-unique-running-courses-7">대전</a>·<a href="/blog/gwangju-unique-running-courses-7">광주</a>·<a href="/blog/ulsan-unique-running-courses-7">울산</a>·<a href="/blog/suwon-unique-running-courses-7">수원 달리기 좋은 곳 7선</a>도 함께 보세요.</p>
-  </div>
-</div>
-
-<h2>FAQ</h2>
-
-<h3>Q. 전주한옥마을에서 러닝해도 되나요?</h3>
-<p>가능하지만 <strong>이른 새벽이 정답</strong>입니다. 낮엔 관광객이 많아 빠른 러닝이 어렵고 민폐가 될 수 있습니다. 새벽엔 고즈넉한 한옥 골목을 즐길 수 있지만, 골목이 좁고 돌·보도블록이라 가벼운 조깅·산책런에 적합합니다. 전주천과 연계해 거리를 늘리는 걸 권합니다.</p>
-
-<h3>Q. 전주에서 야간 러닝하기 좋은 곳은?</h3>
-<p><strong>전주천 둔치</strong>가 1순위입니다. 도심 구간은 조명이 있어 야간 LSD에 좋고 한벽당·청연루 야경도 아름답습니다. <strong>덕진공원</strong>도 조명이 있어 평지 야간 러닝에 적합합니다. 반면 완산칠봉·건지산은 야간에 어둡고 위험하니 낮·오전에 뛰세요.</p>
-
-<h3>Q. 완산칠봉·건지산 트레일은 어떤 신발이 필요한가요?</h3>
-<p>흙길·돌계단·오르막이 섞여 일반 도로화로는 미끄럽습니다. <strong>접지력 좋은 트레일화나 안정성 데일리</strong>가 좋고, 입문은 <a href="/shoes/asics-gel-venture-10">젤 벤처 10</a>, 본격은 <a href="/shoes/adidas-terrex-agravic-4">아그라빅 4</a>를 권합니다. 자세한 선택은 <a href="/blog/2026-best-trail-running-shoes">트레일 러닝화 베스트</a>를 참고하세요.</p>
-
-<h3>Q. 전주 마라톤 대회는 어떤 게 있나요?</h3>
-<p>전주천·삼천 일대를 활용한 도심·강변 마라톤들이 열립니다. 대부분 평지라 기록 도전에 유리하며, 일정은 매년 변동되니 공식 접수 채널에서 확인하세요. 본인 목적(완주·기록)에 맞는 러닝화는 <a href="/recommend">1분 러닝화 추천</a>으로 후보를 좁힐 수 있습니다.</p>
-`,
+    id: "jeonju-unique-running-courses-7",
+    slug: "jeonju-unique-running-courses-7",
+    title: "전주 러닝 장소 고르기: 덕진공원·아중호수, 데크와 개방 조건 확인",
+    description: "덕진공원과 아중호수의 공식 관광 정보를 바탕으로 출발 지점·복귀 동선·시설 이용을 비교합니다. 공원 상시 개방을 도서관·샤워장 운영이나 러닝 전용로 보장으로 확대하지 않았습니다.",
+    thumbnail: "/images/blog/verified-jeonju-unique-running-courses-7-20261110.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-05-29",
+    updatedAt: "2026-11-10",
+    category: "guide",
+    readingTime: 4,
+    tags: [
+      "전주 달리기",
+      "전주 러닝코스",
+      "전주 러닝 코스",
+      "이색 러닝",
+      "전주한옥마을",
+      "전주천 한벽당",
+      "덕진공원 연꽃",
+      "완산칠봉",
+      "건지산 편백숲",
+      "삼천 자전거길",
+      "전주수목원",
+      "전주 마라톤"
+    ],
+    content: `<p><small>2026년 11월 10일 공개 원문 대조. 아래 동선 제안은 편집자의 계획 예시이며 실제 답사·측량 결과가 아닙니다.</small></p>
+<p>전주에서 짧게 몸을 움직일 장소를 찾는다면 덕진공원과 아중호수를 같은 호수 코스로 묶기 전에 동선부터 비교하자. 어느 입구에서 출발하는지, 데크와 다리를 지나야 하는지에 따라 달릴 수 있는 범위가 달라진다.</p>
+<h2>덕진공원: 입구와 관람 동선 먼저 보기</h2><p><a href="https://access.visitkorea.or.kr/ms/detail_print.do?cotId=0ad53d20-cbd5-47bf-a3c8-85a1d825f369" target="_blank" rel="noopener noreferrer">한국관광공사 덕진공원 안내</a>는 권삼득로 390의 호수공원과 상시 개방을 안내한다. 출입구 접근과 화장실 등 편의 정보도 있다. 이것만으로 공원 전체가 달리기 전용이거나 어느 방향으로든 같은 거리의 루프가 된다고 확정할 수는 없다.</p><p>처음에는 들어온 입구를 저장하고, 현장 지도로 보행 동선과 호수 주변 통과 가능 구간을 확인하자. 사진을 찍거나 관람하는 구간과 운동 구간이 겹치면 걷기로 전환할 수 있도록 계획하는 편이 낫다. 이는 이용 상황을 고려한 편집 제안이다.</p>
+<h2>아중호수: 목재데크를 거리 채우기 구간으로 단정하지 않기</h2><p><a href="https://english.visitkorea.or.kr/svc/whereToGo/locIntrdn/rgnContentsView.do?vcontsId=195019" target="_blank" rel="noopener noreferrer">관광공사 아중호수 안내</a>는 농업용 저수지에서 주민 휴식공간으로 활용되는 호수와 목재데크 산책로, 야간 조명을 소개한다. 주소는 아중호수길 131이며 주차장·휴식공간·화장실도 안내한다.</p><p>데크라는 노면 특성을 고려해 현장에서 폭·보행자·표면 상태를 확인하자. 전체 데크를 빠르게 반복 주행하는 계획보다, 통행 가능한 범위를 확인해 짧게 왕복하고 경관 관람은 걸어서 분리하는 방식을 제안한다. 공인 거리나 실제 답사 기록은 아니다.</p>
+<h2>두 장소 중 어디를 고를까</h2><table><thead><tr><th>고민</th><th>확인할 자료</th><th>계획할 것</th></tr></thead><tbody><tr><td>공원에서 시작해 같은 입구로 복귀</td><td>덕진공원 현장 안내도</td><td>입구·관람 구역·돌아올 동선</td></tr><tr><td>수변 데크 풍경을 함께 보기</td><td>아중호수 안내와 현장 표지</td><td>데크 보행 구간·혼잡 때 단축 지점</td></tr><tr><td>운동 뒤 바로 다른 일정</td><td>숙소·이용 시설의 운영 안내</td><td>씻기·갈아입기·짐 보관 장소</td></tr></tbody></table>
+<h2>상시 개방과 실내 시설 운영은 구분</h2><p>두 관광 안내에 상시 개방이 있어도 연화정도서관 등 실내 시설, 매점, 보관 공간의 운영이 같은 것은 아니다. 아중호수의 야간 조명 설명도 모든 시간·모든 구간의 점등 보장은 아니다. 당일 표지와 관리 공지를 먼저 확인하자.</p><p>화장실과 샤워장도 별개다. 확인하지 못한 무료 샤워·보관 혜택이나 특정 거리·난도를 덧붙이지 않았다. 한옥마을·수목원 등 다른 장소의 통행 규정을 이 두 호수의 안내로 대신할 수도 없다.</p>
+<h2>자주 묻는 질문</h2><h3>덕진공원은 몇 km를 뛰는 코스인가요?</h3><p>이번 공식 안내로 단일 러닝 루프 거리를 확정하지 않았습니다. 진입 입구와 선택한 보행 동선을 확인한 뒤 실제 목표 거리를 정해야 합니다.</p><h3>아중호수 데크는 러닝 전용인가요?</h3><p>관광공사는 목재데크 산책로로 소개합니다. 러닝 전용로를 확인한 자료가 아니므로 현장 이용 규정과 보행자 상황을 살펴야 합니다.</p><h3>공원이 상시 개방이면 실내 시설도 열리나요?</h3><p>공원 개방과 도서관·매점·샤워·보관 시설 운영은 별개입니다. 실제 이용할 시설의 현재 안내를 확인해야 합니다.</p>`,
+    faqs: [
+      {
+        "question": "덕진공원은 몇 km를 뛰는 코스인가요?",
+        "answer": "이번 공식 안내로 단일 러닝 루프 거리를 확정하지 않았습니다. 진입 입구와 선택한 보행 동선을 확인한 뒤 실제 목표 거리를 정해야 합니다."
+      },
+      {
+        "question": "아중호수 데크는 러닝 전용인가요?",
+        "answer": "관광공사는 목재데크 산책로로 소개합니다. 러닝 전용로를 확인한 자료가 아니므로 현장 이용 규정과 보행자 상황을 살펴야 합니다."
+      },
+      {
+        "question": "공원이 상시 개방이면 실내 시설도 열리나요?",
+        "answer": "공원 개방과 도서관·매점·샤워·보관 시설 운영은 별개입니다. 실제 이용할 시설의 현재 안내를 확인해야 합니다."
+      }
+    ],
   },
   {
-    id: 'suwon-unique-running-courses-7',
-    slug: 'suwon-unique-running-courses-7',
-    title: '수원 달리기 좋은 곳 7선 | 수원 러닝 코스 — 수원화성 성곽길부터 광교호수까지',
-    description: '유네스코 세계유산 수원화성 성곽길 러닝부터 광교호수공원, 광교산 트레일, 정조의 서호까지 수원에서 달리기 좋은 러닝 코스 7곳을 거리·난이도·시간대·러닝화 추천까지 정리. 수원화성·광교호수·광교산·서호·만석공원·수원천·영흥수목원 각 코스별 출발지·노면·주의점 가이드.',
-    thumbnail: '/images/blog/suwon-unique-running-courses-7.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-05-29',
-    updatedAt: '2026-08-19',
-    category: 'guide' as const,
-    readingTime: 11,
-    tags: ['수원 달리기', '수원 러닝코스', '수원 러닝 코스', '이색 러닝', '수원화성 성곽길', '광교호수공원', '광교산', '서호공원 축만제', '만석공원', '수원천', '영흥수목원', '수원 마라톤'],
-    content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>수원은 세계유산 성곽·신도시 호수·명산을 한 도시에 결합한 경기권 러닝 거점</strong> — 유네스코 수원화성 성곽길, 광교호수공원, 광교산 등 역사와 현대가 공존하는 풍경</li>
-    <li>수원의 시그니처는 <strong>수원화성 성곽길</strong>(약 5.7km 성곽 한 바퀴) — 세계유산을 달리는 국내에서 손꼽히는 이색 러닝</li>
-    <li>각 코스별 <strong>출발지·거리·노면·시간대·주의점 + 어울리는 러닝화 카테고리</strong>까지 한 번에 정리</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">🏯</span>
-  <div class="callout-body">
-    <p class="callout-title">수원 러닝만의 매력</p>
-    <p><strong>수원에서 달리기 좋은 곳</strong>을 찾는다면 선택지는 생각보다 넓습니다. 수원은 인구 120만의 국내 최대 기초자치단체로, <strong>유네스코 세계유산 수원화성·신도시 호수(광교)·명산(광교산)·정조 시대 저수지(서호·만석거)·도심 하천(수원천)</strong>이 어우러져 있습니다. 무엇보다 <strong>수원화성 성곽길</strong>은 약 5.7km 성곽을 따라 달리며 세계유산을 온몸으로 느끼는 국내 유일급 코스. 광교 신도시의 대형 호수공원과 광교산 트레일까지, 역사와 현대를 짧은 이동으로 오갈 수 있는 점이 매력입니다. 본인 발 특성·부상 이력에 맞는 러닝화 후보는 <a href="/recommend">1분 러닝화 추천</a>에서 받을 수 있습니다.</p>
-  </div>
-</div>
-
-<h2>한눈에 비교</h2>
-
-<table>
-  <thead>
-    <tr><th>#</th><th>코스</th><th>거리</th><th>난이도</th><th>특이점</th><th>추천 시간대</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>1</td><td><strong>수원화성 성곽길</strong></td><td>약 5.7km (성곽 일주)</td><td>중 (계단·완만 오르막)</td><td>유네스코 세계유산 성곽 — 시그니처</td><td>새벽·야간(조명)</td></tr>
-    <tr><td>2</td><td><strong>광교호수공원</strong></td><td>약 5~7km</td><td>하 (평지)</td><td>신도시 대형 호수 + 데크</td><td>저녁·야간</td></tr>
-    <tr><td>3</td><td><strong>광교산</strong></td><td>약 6~10km</td><td>중상</td><td>수원 명산 + 전망 트레일</td><td>맑은 날 오전</td></tr>
-    <tr><td>4</td><td><strong>서호공원 (축만제)</strong></td><td>약 2~4km 둘레</td><td>하 (평지)</td><td>정조 시대 저수지 + 노을</td><td>해질녘·평일 새벽</td></tr>
-    <tr><td>5</td><td><strong>만석공원</strong></td><td>약 1.5~3km 둘레</td><td>하 (평지)</td><td>도심 호수공원 루프</td><td>평일 새벽·저녁</td></tr>
-    <tr><td>6</td><td><strong>수원천</strong></td><td>5~8km</td><td>하 (평지)</td><td>화성 관통 도심 하천</td><td>새벽·야간</td></tr>
-    <tr><td>7</td><td><strong>영흥수목원</strong></td><td>약 3~5km</td><td>하~중</td><td>도심 수목원 숲길</td><td>오전·한낮(그늘)</td></tr>
-  </tbody>
-</table>
-
-<h2>1. 수원화성 성곽길 — 세계유산을 달리다</h2>
-
-<p><strong>출발지</strong>: 화성행궁·장안문·팔달문 등 성곽 진입점<br>
-<strong>거리</strong>: 약 5.7km (성곽 한 바퀴)<br>
-<strong>노면</strong>: 성곽 보행로 + 흙길 + 계단 + 완만한 오르막<br>
-<strong>추천 시간대</strong>: 새벽·야간(조명)</p>
-
-<p>수원화성은 정조가 축조한 <strong>유네스코 세계유산</strong>으로, 약 5.7km 성곽을 따라 한 바퀴 달리는 코스가 수원의 시그니처입니다. 장안문·화서문·팔달문·창룡문과 서장대·동장대를 거치며 성곽과 도심 풍경을 함께 즐기는 경험은 다른 도시엔 없습니다.</p>
-
-<p><strong>이 코스의 매력</strong>: 세계유산을 달리는 독보적 경험 + 야간 성곽 조명. 다만 <strong>계단·완만한 오르막(팔달산 구간)</strong>이 있어 평지 LSD와는 다르고, 관광객이 많아 이른 새벽·야간이 쾌적합니다. 흙길·돌 구간은 미끄럼에 주의.</p>
-
-<p><strong>어울리는 러닝화</strong>: 계단·완만 오르막 + 약간의 흙길. <a href="/shoes/hoka-clifton-10">호카 클리프턴 10</a>·<a href="/shoes/on-cloudmonster-3">클라우드몬스터 3</a> 같은 강한 록커·안정성. 인파 구간은 페이스보다 풍경을 즐기는 회복 조깅으로.</p>
-
-<h2>2. 광교호수공원 — 신도시 대형 호수 루프</h2>
-
-<p><strong>출발지</strong>: 신분당선 광교중앙역·광교호수공원 (도보 5분)<br>
-<strong>거리</strong>: 약 5~7km (원천호수·신대호수 연결)<br>
-<strong>노면</strong>: 우레탄 산책로 + 데크<br>
-<strong>추천 시간대</strong>: 저녁·야간</p>
-
-<p>광교호수공원은 <strong>원천호수와 신대호수를 품은 신도시 대형 호수공원</strong>으로, 평탄한 데크와 산책로가 호수를 따라 길게 이어집니다. 잘 정비된 신도시 코스라 페이스 유지가 쉽고, 야간 조명과 마천루 야경이 운치를 더합니다.</p>
-
-<p><strong>이 코스의 매력</strong>: 신호 없는 호수 평지 + 신도시 야경 + 매끄러운 노면. 인터벌·템포 훈련에도 좋고 무릎 부담이 적습니다. 광교 신도시 거주 러너의 홈 코스.</p>
-
-<p><strong>어울리는 러닝화</strong>: 평지 + 페이스 훈련. <a href="/shoes/saucony-endorphin-speed-5">엔돌핀 스피드 5</a>·<a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a> 같은 슈퍼트레이너, 또는 <a href="/shoes/saucony-ride-19">라이드 19</a> 데일리.</p>
-
-<h2>3. 광교산 — 수원 명산 트레일</h2>
-
-<p><strong>출발지</strong>: 광교산 입구(상광교·반딧불이화장실 등, 버스·차량)<br>
-<strong>거리</strong>: 약 6~10km (형제봉·시루봉 코스)<br>
-<strong>노면</strong>: 흙길 + 돌길 + 오르막<br>
-<strong>추천 시간대</strong>: 맑은 날 오전</p>
-
-<p>광교산은 수원·용인에 걸친 명산으로, <strong>형제봉·시루봉 능선</strong>을 따라 트레일 러닝이 가능합니다. 수원 시민이 가장 즐겨 찾는 산으로, 능선에서 보는 광교 신도시와 수원 시가지 조망이 좋습니다.</p>
-
-<p><strong>이 코스의 매력</strong>: 도심 근접 산 트레일 + 시가지 전망. 다만 <strong>흙길·돌길·오르막</strong>이 섞여 일반 데일리화로는 한계가 있고, 우천 후엔 미끄럽습니다. 입문자는 형제봉까지만 가볍게.</p>
-
-<p><strong>어울리는 러닝화</strong>: 트레일 입문~중급. <a href="/shoes/asics-gel-venture-10">젤 벤처 10</a>(가성비)·<a href="/shoes/adidas-terrex-agravic-4">테렉스 아그라빅 4</a>(접지력). 신발 선택은 <a href="/blog/2026-best-trail-running-shoes">2026 트레일 러닝화 베스트</a> 참고.</p>
-
-<h2>4. 서호공원 (축만제) — 정조 시대 저수지의 노을</h2>
-
-<p><strong>출발지</strong>: 1호선 화서역 → 서호공원 (도보 10분)<br>
-<strong>거리</strong>: 약 2~4km 둘레<br>
-<strong>노면</strong>: 흙길 + 우레탄 산책로<br>
-<strong>추천 시간대</strong>: 해질녘·평일 새벽</p>
-
-<p>서호(축만제)는 <strong>정조가 수원화성을 지으며 만든 농업용 저수지</strong>로, 역사적 의미가 깊은 호수입니다. 둘레를 따라 달리며 보는 서호 노을이 수원 8경 중 하나로 꼽힐 만큼 아름답습니다.</p>
-
-<p><strong>이 코스의 매력</strong>: 역사 + 노을 명소 + 평탄한 호수 둘레. 거리가 짧아 여러 바퀴 돌거나 인근 농촌진흥청 부지·여기산으로 확장 가능. 한적해서 차분한 러닝에 좋습니다.</p>
-
-<p><strong>어울리는 러닝화</strong>: 평지 + 약간의 흙길. <a href="/shoes/nike-pegasus-41">페가수스 41</a>·<a href="/shoes/saucony-ride-19">사우코니 라이드 19</a> 같은 데일리화.</p>
-
-<h2>5. 만석공원 — 도심 호수공원 루프</h2>
-
-<p><strong>출발지</strong>: 만석공원 (장안구, 버스)<br>
-<strong>거리</strong>: 약 1.5~3km 둘레<br>
-<strong>노면</strong>: 우레탄 산책로<br>
-<strong>추천 시간대</strong>: 평일 새벽·저녁</p>
-
-<p>만석공원은 정조 시대 저수지 <strong>만석거</strong>를 기반으로 한 도심 호수공원으로, 평탄한 둘레 루프가 잘 정비돼 있습니다. 거리가 짧아 랩 카운트·인터벌 훈련에 좋고, 도심 접근성이 뛰어납니다.</p>
-
-<p><strong>이 코스의 매력</strong>: 신호 없는 호수 루프 + 도심 접근성. 노면이 부드러워 무릎 부담이 적고, 운동시설·트랙도 함께 있어 다목적입니다. 가족 단위가 많아 새벽·평일이 한적합니다.</p>
-
-<p><strong>어울리는 러닝화</strong>: 평지 루프 + 페이스. <a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a> 같은 슈퍼트레이너, 또는 <a href="/shoes/nike-pegasus-42">페가수스 42</a> 데일리.</p>
-
-<h2>6. 수원천 — 화성을 관통하는 도심 하천</h2>
-
-<p><strong>출발지</strong>: 수원천 도심 다리마다 진입 (화성 일대)<br>
-<strong>거리</strong>: 5~8km<br>
-<strong>노면</strong>: 우레탄 산책로 + 자전거도로<br>
-<strong>추천 시간대</strong>: 새벽·야간</p>
-
-<p>수원천은 <strong>수원화성을 관통해 흐르는 도심 하천</strong>으로, 화홍문·방화수류정 등 화성 명소를 끼고 달릴 수 있습니다. 둔치 산책로를 따라 평지 러닝이 가능하고, 성곽길과 연계하면 역사 코스를 길게 만들 수 있습니다.</p>
-
-<p><strong>이 코스의 매력</strong>: 도심 하천 평지 + 화성 명소 조망. 화홍문·방화수류정 구간은 야간 조명이 아름답습니다. 신호 없는 평지라 데일리 러닝에 적합합니다.</p>
-
-<p><strong>어울리는 러닝화</strong>: 평지 데일리. <a href="/shoes/saucony-ride-19">사우코니 라이드 19</a>·<a href="/shoes/nike-pegasus-41">페가수스 41</a> 같은 통기성 좋은 데일리화.</p>
-
-<h2>7. 영흥수목원 — 도심 속 수목원 숲길</h2>
-
-<p><strong>출발지</strong>: 영흥수목원 (영통구, 버스·차량)<br>
-<strong>거리</strong>: 약 3~5km (수목원 + 인근 공원)<br>
-<strong>노면</strong>: 데크 + 흙길 + 산책로<br>
-<strong>추천 시간대</strong>: 오전·한낮(숲 그늘)</p>
-
-<p>영흥수목원은 영통구에 조성된 <strong>도심 수목원</strong>으로, 다양한 수목과 숲길이 어우러져 힐링 러닝에 좋습니다. 광교호수공원·신도시 코스와는 다른 숲의 정취를 도심에서 즐길 수 있습니다.</p>
-
-<p><strong>이 코스의 매력</strong>: 도심 속 숲 러닝 + 풍부한 그늘. 데크·흙길이 섞여 부드럽고, 여름에도 그늘 덕에 시원합니다. 비교적 신설이라 한적하고 정비 상태가 좋습니다.</p>
-
-<p><strong>어울리는 러닝화</strong>: 완만 숲길 + 약간의 데크. <a href="/shoes/hoka-clifton-10">호카 클리프턴 10</a>·<a href="/shoes/asics-gel-nimbus-28">님버스 28</a> 같은 쿠션 데일리.</p>
-
-<h2>본인 수원 거주지·목적별 추천 코스</h2>
-
-<ul>
-  <li><strong>팔달구·장안구(원도심) 거주</strong>: <strong>수원화성 성곽길</strong>(세계유산) + <strong>수원천</strong>(화성 하천) + <strong>만석공원</strong></li>
-  <li><strong>영통구·광교 거주</strong>: <strong>광교호수공원</strong>(신도시 호수) · <strong>영흥수목원</strong>(숲)</li>
-  <li><strong>권선구·서둔동 거주</strong>: <strong>서호공원 축만제</strong>(정조 저수지 노을)</li>
-  <li><strong>트레일·산악</strong>: <strong>광교산</strong>(형제봉·시루봉, 트레일화 권장)</li>
-  <li><strong>역사·관광 러닝</strong>: <strong>수원화성 성곽길 + 수원천</strong> — 세계유산 한 바퀴</li>
-</ul>
-
-<h2>이런 코스 뛸 때 필요한 러닝화 카테고리</h2>
-
-<ul>
-  <li><strong>평지 호수·하천 (광교호수·수원천·만석)</strong>: 가성비 데일리 + 통기성. <a href="/blog/saucony-ride-18-vs-19-comparison">사우코니 라이드 18 vs 19 비교</a> · <a href="/blog/nike-pegasus-41-vs-42-comparison">페가수스 41 vs 42 비교</a></li>
-  <li><strong>성곽길 계단·완만 오르막 (수원화성)</strong>: 안정성·록커. <a href="/blog/on-cloudmonster-2-vs-3-comparison">클라우드몬스터 2 vs 3 비교</a></li>
-  <li><strong>광교산 트레일</strong>: 접지력·안정성 트레일화. <a href="/blog/2026-best-trail-running-shoes">2026 트레일 러닝화 베스트 7</a> — 코스 난이도별 선택 가이드</li>
-  <li><strong>인터벌·페이스 (광교호수·만석 루프)</strong>: 슈퍼트레이너. <a href="/blog/asics-superblast-2-vs-3-comparison">슈퍼블라스트 2 vs 3 비교</a> · <a href="/blog/asics-magic-speed-4-vs-5-comparison">매직스피드 4 vs 5 비교</a></li>
-</ul>
-
-<h2>수원 러닝 — 세계유산 성곽런과 신도시 호수런</h2>
-
-<div class="callout tip">
-  <span class="callout-icon">🏯</span>
-  <div class="callout-body">
-    <p class="callout-title">역사와 현대를 한 도시에서 — 수원 러닝 가이드</p>
-    <p>수원은 <strong>세계유산과 신도시를 함께 달릴 수 있는</strong> 보기 드문 도시입니다. ① 역사 러닝은 <strong>수원화성 성곽길 + 수원천</strong>(화홍문·방화수류정), ② 현대 러닝은 <strong>광교호수공원</strong>(신도시 야경), ③ 힐링은 <strong>서호 노을·영흥수목원</strong>, ④ 트레일은 <strong>광교산</strong>으로 묶으면 좋습니다. 수도권이라 지하철·신분당선으로 접근이 쉬워 주말 러닝 나들이에도 제격. 다른 지역 코스가 궁금하다면 <a href="/blog/seoul-unique-running-courses-7">서울</a>·<a href="/blog/busan-unique-running-courses-7">부산</a>·<a href="/blog/incheon-unique-running-courses-7">인천</a>·<a href="/blog/daegu-unique-running-courses-7">대구</a>·<a href="/blog/jeju-unique-running-courses-7">제주</a>·<a href="/blog/daejeon-unique-running-courses-7">대전</a>·<a href="/blog/gwangju-unique-running-courses-7">광주</a>·<a href="/blog/ulsan-unique-running-courses-7">울산 달리기 좋은 곳 7선</a>도 함께 보세요.</p>
-  </div>
-</div>
-
-<h2>FAQ</h2>
-
-<h3>Q. 수원화성 성곽길은 러닝하기 괜찮나요?</h3>
-<p>약 5.7km 성곽 일주는 세계유산을 달리는 특별한 경험이지만, <strong>계단과 팔달산 구간의 완만한 오르막</strong>이 있어 평지 LSD와는 다릅니다. 관광객이 많은 낮보다 <strong>이른 새벽·야간(조명)</strong>이 쾌적하고, 흙·돌 구간은 미끄럼에 주의하세요. 페이스보다 풍경을 즐기는 코스에 가깝습니다.</p>
-
-<h3>Q. 수원에서 야간 러닝하기 좋은 곳은?</h3>
-<p><strong>광교호수공원</strong>이 1순위입니다. 신도시 조명과 야경, 평탄한 데크로 야간 러닝에 최적입니다. <strong>수원화성 성곽길·수원천</strong>도 야간 조명이 아름답고, <strong>만석공원</strong>도 조명이 있어 평지 야간 러닝에 좋습니다. 광교산은 야간에 위험하니 낮에 뛰세요.</p>
-
-<h3>Q. 광교산 트레일은 어떤 신발이 필요한가요?</h3>
-<p>흙길·돌길·오르막이 섞여 일반 도로화로는 미끄럽습니다. <strong>접지력 좋은 트레일화</strong>가 필요하고, 입문은 <a href="/shoes/asics-gel-venture-10">젤 벤처 10</a>, 본격 코스는 <a href="/shoes/adidas-terrex-agravic-4">아그라빅 4</a>를 권합니다. 자세한 선택은 <a href="/blog/2026-best-trail-running-shoes">트레일 러닝화 베스트</a>를 참고하세요.</p>
-
-<h3>Q. 수원 마라톤 대회는 어떤 게 있나요?</h3>
-<p>수원화성·광교호수·수원천 일대를 활용한 도심 마라톤들이 열립니다. 화성 코스는 역사적 분위기가, 호수·하천 코스는 평지 기록 도전이 매력입니다. 일정은 매년 변동되니 공식 접수 채널에서 확인하세요. 본인 목적(완주·기록)에 맞는 러닝화는 <a href="/recommend">1분 러닝화 추천</a>으로 후보를 좁힐 수 있습니다.</p>
-`,
+    id: "suwon-unique-running-courses-7",
+    slug: "suwon-unique-running-courses-7",
+    title: "수원 러닝 동선 고르기: 광교호수·만석공원·화성 성곽길의 거리 기준",
+    description: "광교호수의 6.5km 순환보행로와 만석공원 1.2km, 화성 약 5.7km는 공식 산책 안내의 범위입니다. 선택 동선과 수목원 입장·시설 개방을 구분해 거리 계획에 활용합니다.",
+    thumbnail: "/images/blog/verified-suwon-unique-running-courses-7-20261110.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-05-29",
+    updatedAt: "2026-11-10",
+    category: "guide",
+    readingTime: 4,
+    tags: [
+      "수원 달리기",
+      "수원 러닝코스",
+      "수원 러닝 코스",
+      "이색 러닝",
+      "수원화성 성곽길",
+      "광교호수공원",
+      "광교산",
+      "서호공원 축만제",
+      "만석공원",
+      "수원천",
+      "영흥수목원",
+      "수원 마라톤"
+    ],
+    content: `<p><small>2026년 11월 10일 공개 원문 대조. 아래 동선 제안은 편집자의 계획 예시이며 실제 답사·측량 결과가 아닙니다.</small></p>
+<p>수원의 호수와 성곽길을 고를 때는 ‘몇 km인가’보다 그 숫자가 어떤 길을 가리키는지 확인하자. <a href="https://www.suwon.go.kr/sw-www/sw-suwonpark/sw-suwonpark-05/sw-suwonpark-05-05.jsp" target="_blank" rel="noopener noreferrer">수원시 산책하기 좋은 공원 안내</a>는 공원별 산책 동선을 소개한다. 아래 내용은 그 정보를 러닝 계획에 활용하는 방법이며 러닝 대회 코스나 현장 답사 결과는 아니다.</p>
+<h2>광교호수: 원천·신대를 어떻게 이을지 결정</h2><p><a href="https://www.suwon.go.kr/sw-www/sw-suwonpark/sw-suwonpark-04/sw-suwonpark-04-03.jsp" target="_blank" rel="noopener noreferrer">수원시 광교호수공원 안내</a>는 원천·신대 두 호수와 총 6.5km 순환보행로를 설명한다. 그중 어반레비는 1.6km 수변공간으로 소개된다. 서로 다른 범위의 숫자이므로 같은 ‘한 바퀴’로 바꿔 쓰면 안 된다.</p><p>원천만 볼지 신대까지 이을지, 어느 진입로로 들어갈지 먼저 정하자. 공식은 목재데크·보행로·자전거 및 보차 혼용 동선 등 여러 포장을 구분한다. 전 구간을 동일한 노면의 러닝 전용 트랙으로 보장할 수는 없다.</p>
+<h2>만석공원과 화성: 짧은 둘레와 성곽 동선의 차이</h2><p>시 산책 안내는 만석공원의 저수지 둘레를 1.2km, 수원화성 성곽길을 약 5.7km로 소개한다. 만석은 짧은 범위를 반복할 계획, 화성은 문화유산을 보며 이동할 계획을 비교할 때 참고할 수 있다. 이 용도 구분은 편집자의 제안이다.</p><p>화성의 성곽 길이를 그대로 내 GPS 총거리로 잡지 말자. 진입·계단·우회·관람을 어떻게 선택하는지에 따라 실제 이동이 달라진다. 현장 출입 규정과 보행자 통행을 확인하고 걸을 구간을 미리 포함하자.</p>
+<h2>숲공원과 유료 수목원은 다른 이용 구역</h2><p>시의 산책 안내는 일월호수공원과 일월수목원, 영흥숲공원 외곽과 수목원 내부를 구분하고 수목원 관람에 입장료가 발생한다고 적는다. 공원과 연결돼 있다는 이유로 수목원까지 무료 러닝 구간에 넣지 않는다.</p><p>운동 뒤 수목원을 관람하고 싶다면 입장·운영·관람 규정을 별도로 확인하자. 특정 시설의 개방시간을 공원 전체나 반대쪽 호수의 출입시간으로 적용하지 않는 것도 중요하다.</p>
+<h2>처음 가는 날의 계획 순서</h2><p>출발 입구를 저장하고 선택할 호수나 성곽 구간, 반환 지점, 복귀 방법을 정하자. 공식 거리에서 출발점 이동을 더하거나 제외해야 하는지 확인하면 목표 거리와 실제 동선의 차이를 줄일 수 있다.</p><p>샤워장·무료 보관·전 구간 야간 조명은 이번 두 자료만으로 확인하지 않았다. 정확한 시설이 필요하면 운영처에 확인한 뒤 계획에 넣어야 한다. 관광 산책 소요시간을 내 러닝 완주시간으로 환산하지도 않는다.</p>
+<h2>자주 묻는 질문</h2><h3>광교호수 한 바퀴는 무조건 6.5km인가요?</h3><p>수원시는 총 6.5km 순환보행로를 소개합니다. 원천·신대 선택과 진입 동선에 따라 개인이 달린 거리는 달라질 수 있습니다.</p><h3>화성 5.7km가 내 러닝 거리와 같은가요?</h3><p>시의 약 5.7km는 성곽길 안내입니다. 진입·우회·관람 동선까지 포함한 개인 GPS 총거리와 구분해야 합니다.</p><h3>영흥숲공원과 수목원은 모두 무료인가요?</h3><p>시 안내는 공원 외곽과 입장료가 발생하는 수목원 내부를 구분합니다. 연결돼 있어도 입장·관람 조건을 따로 확인해야 합니다.</p>`,
+    faqs: [
+      {
+        "question": "광교호수 한 바퀴는 무조건 6.5km인가요?",
+        "answer": "수원시는 총 6.5km 순환보행로를 소개합니다. 원천·신대 선택과 진입 동선에 따라 개인이 달린 거리는 달라질 수 있습니다."
+      },
+      {
+        "question": "화성 5.7km가 내 러닝 거리와 같은가요?",
+        "answer": "시의 약 5.7km는 성곽길 안내입니다. 진입·우회·관람 동선까지 포함한 개인 GPS 총거리와 구분해야 합니다."
+      },
+      {
+        "question": "영흥숲공원과 수목원은 모두 무료인가요?",
+        "answer": "시 안내는 공원 외곽과 입장료가 발생하는 수목원 내부를 구분합니다. 연결돼 있어도 입장·관람 조건을 따로 확인해야 합니다."
+      }
+    ],
   },
   {
-    id: 'ulsan-unique-running-courses-7',
-    slug: 'ulsan-unique-running-courses-7',
-    title: '울산 달리기 좋은 곳 7선 | 울산 러닝 코스 — 태화강 십리대숲부터 영남알프스 억새까지',
-    description: '태화강 국가정원 십리대숲 러닝부터 대왕암 해안 절벽, 영남알프스 간월재 억새, 간절곶 일출까지 울산에서 달리기 좋은 러닝 코스 7곳을 거리·난이도·시간대·러닝화 추천까지 정리. 태화강·대왕암·영남알프스·울산대공원·간절곶·진하해변·슬도 각 코스별 출발지·노면·주의점 가이드.',
-    thumbnail: '/images/blog/ulsan-unique-running-courses-7.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-05-29',
-    updatedAt: '2026-08-19',
-    category: 'guide' as const,
-    readingTime: 11,
-    tags: ['울산 달리기', '울산 러닝코스', '울산 러닝 코스', '이색 러닝', '태화강 국가정원', '십리대숲', '대왕암공원', '영남알프스 간월재', '간절곶 일출', '울산대공원', '진하해변', '울산 마라톤'],
-    content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>울산은 강·바다·억새산을 한 도시에 결합한 동남권 러닝 도시</strong> — 태화강 십리대숲, 대왕암 해안 절벽, 영남알프스 억새, 간절곶 일출 등 산업도시 이미지와 전혀 다른 풍경</li>
-    <li>울산의 시그니처는 <strong>태화강 국가정원과 십리대숲</strong>(국내 2호 국가정원) — 산업도시에서 생태도시로 거듭난 상징적 러닝 코스</li>
-    <li>각 코스별 <strong>출발지·거리·노면·시간대·주의점 + 어울리는 러닝화 카테고리</strong>까지 한 번에 정리</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">🎋</span>
-  <div class="callout-body">
-    <p class="callout-title">울산 러닝만의 매력</p>
-    <p><strong>울산에서 달리기 좋은 곳</strong>을 찾는다면 강·바다·산을 모두 오갈 수 있습니다. 울산은 <strong>강(태화강)·바다(대왕암·간절곶·진하)·억새산(영남알프스)·도심 공원(울산대공원)</strong>이 어우러진 동남권 도시입니다. 공업도시로 알려졌지만, 도심을 흐르는 <strong>태화강과 십리대숲</strong>은 국내 2호 국가정원으로 지정될 만큼 생태가 회복됐고, 동쪽으론 대왕암·간절곶 해안이, 서쪽으론 <strong>영남알프스</strong>의 국내 최대 억새 능선이 펼쳐집니다. 강·바다·산을 짧은 이동으로 오갈 수 있는 점이 매력. 본인 발 특성·부상 이력에 맞는 러닝화 후보는 <a href="/recommend">1분 러닝화 추천</a>에서 받을 수 있습니다.</p>
-  </div>
-</div>
-
-<h2>한눈에 비교</h2>
-
-<table>
-  <thead>
-    <tr><th>#</th><th>코스</th><th>거리</th><th>난이도</th><th>특이점</th><th>추천 시간대</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>1</td><td><strong>태화강 국가정원 + 십리대숲</strong></td><td>5~12km</td><td>하 (평지)</td><td>대나무숲 + 강변 — 울산 시그니처</td><td>새벽·저녁</td></tr>
-    <tr><td>2</td><td><strong>대왕암공원</strong></td><td>약 4~6km</td><td>하~중</td><td>해안 절벽 + 송림 + 출렁다리</td><td>새벽·해질녘</td></tr>
-    <tr><td>3</td><td><strong>영남알프스 간월재</strong></td><td>약 8~12km</td><td>중상</td><td>국내 최대 억새 능선 트레일</td><td>맑은 날 오전</td></tr>
-    <tr><td>4</td><td><strong>울산대공원</strong></td><td>약 4~5km 루프</td><td>하 (평지)</td><td>도심 대형공원 + 장미원</td><td>평일 새벽·저녁</td></tr>
-    <tr><td>5</td><td><strong>간절곶</strong></td><td>5~8km</td><td>하 (평지)</td><td>한반도 첫 일출 + 해안 산책로</td><td>일출·해안 산책</td></tr>
-    <tr><td>6</td><td><strong>진하해변 + 명선도</strong></td><td>5~7km</td><td>하</td><td>해변 + 서핑 + 명선도 뷰</td><td>새벽·해질녘</td></tr>
-    <tr><td>7</td><td><strong>슬도 소리길 (방어진)</strong></td><td>4~6km</td><td>하</td><td>해안 산책로 + 바람·파도 소리</td><td>새벽·해질녘</td></tr>
-  </tbody>
-</table>
-
-<h2>1. 태화강 국가정원 + 십리대숲 — 대나무숲을 달리는 울산 시그니처</h2>
-
-<p><strong>출발지</strong>: 태화강 국가정원 (중구·남구, 버스·차량)<br>
-<strong>거리</strong>: 5~12km (강변 + 대숲 + 둔치 연결)<br>
-<strong>노면</strong>: 우레탄 산책로 + 대숲 흙길 + 자전거도로<br>
-<strong>추천 시간대</strong>: 새벽·저녁</p>
-
-<p>태화강 국가정원은 <strong>국내 2호 국가정원</strong>으로, 강변을 따라 약 10리(4km)에 걸친 <strong>십리대숲</strong>이 핵심입니다. 빽빽한 대나무 터널을 달리는 경험은 다른 도시엔 없는 울산만의 것. 강변 둔치와 연결해 거리를 자유롭게 늘릴 수 있습니다.</p>
-
-<p><strong>이 코스의 매력</strong>: 대나무숲 터널 + 강변 평지 + 신호 없는 거리 무제한. 산업도시가 생태도시로 거듭난 상징적 코스로, 여름 대숲은 그늘과 시원함을 줍니다. 데일리부터 LSD까지 폭넓게 소화하는 울산 러닝의 중심입니다.</p>
-
-<p><strong>어울리는 러닝화</strong>: 평지 + 통기성 + 약간의 흙길. <a href="/shoes/saucony-ride-19">사우코니 라이드 19</a>·<a href="/shoes/nike-pegasus-41">페가수스 41</a> 같은 데일리화, 장거리엔 <a href="/shoes/new-balance-1080-v15">NB 1080 v15</a>.</p>
-
-<h2>2. 대왕암공원 — 해안 절벽과 송림 트레일</h2>
-
-<p><strong>출발지</strong>: 대왕암공원 (동구, 버스·차량)<br>
-<strong>거리</strong>: 약 4~6km (공원 + 해안 산책로)<br>
-<strong>노면</strong>: 송림 흙길 + 해안 데크 + 일부 계단<br>
-<strong>추천 시간대</strong>: 새벽·해질녘</p>
-
-<p>대왕암공원은 <strong>기암괴석 해안 절벽과 100년 송림, 출렁다리</strong>가 어우러진 동해안 명소. 울창한 소나무 숲을 지나 해안 절벽을 끼고 달리는 풍경이 일품이고, 대왕암 출렁다리에서 보는 바다가 압권입니다.</p>
-
-<p><strong>이 코스의 매력</strong>: 해안 절벽 + 송림 + 출렁다리의 드라마틱한 조합. 다만 <strong>흙길·데크·계단</strong>이 섞여 미끄럼에 주의하고, 관광객이 많아 이른 새벽이 한적합니다. 평지 러닝보다 풍경을 즐기는 코스에 가깝습니다.</p>
-
-<p><strong>어울리는 러닝화</strong>: 흙길·데크 + 접지력. <a href="/shoes/asics-gel-kayano-32">카야노 32</a>·<a href="/shoes/on-cloudmonster-3">클라우드몬스터 3</a> 같은 안정성 있는 신발. 카본 슈즈는 비추.</p>
-
-<h2>3. 영남알프스 간월재 — 국내 최대 억새 능선</h2>
-
-<p><strong>출발지</strong>: 간월산휴양림·배내고개 (울주군, 차량)<br>
-<strong>거리</strong>: 약 8~12km (간월재 왕복·능선)<br>
-<strong>노면</strong>: 흙길 + 돌길 + 임도 + 가파른 오르막<br>
-<strong>추천 시간대</strong>: 맑은 날 오전</p>
-
-<p>영남알프스는 <strong>국내 최대 규모의 억새 산군</strong>으로, 간월재·신불산 일대의 황금빛 억새 능선이 가을이면 장관을 이룹니다. 본격 산악 트레일로, 광활한 억새밭과 능선 조망이 트레일 러너의 버킷리스트로 꼽힙니다.</p>
-
-<p><strong>이 코스의 매력</strong>: 끝없이 펼쳐진 억새 능선 + 영남알프스 조망. 다만 <strong>가파른 오르막·돌길·고도차</strong>가 커서 일반 데일리화로는 위험하고, 날씨 변화·일몰에 대비해야 합니다. 충분한 물·행동식 필수, 초보는 간월재까지만.</p>
-
-<p><strong>어울리는 러닝화</strong>: 접지력·안정성 좋은 트레일화. <a href="/shoes/adidas-terrex-agravic-4">테렉스 아그라빅 4</a>·<a href="/shoes/hoka-tecton-x-3">테크톤 X 3</a> 같은 본격 트레일화. <a href="/blog/2026-best-trail-running-shoes">2026 트레일 러닝화 베스트</a>에서 코스별 선택을 확인하세요.</p>
-
-<h2>4. 울산대공원 — 도심 대형공원 루프</h2>
-
-<p><strong>출발지</strong>: 울산대공원 (남구, 버스·차량)<br>
-<strong>거리</strong>: 약 4~5km 루프<br>
-<strong>노면</strong>: 우레탄 + 아스팔트 산책로<br>
-<strong>추천 시간대</strong>: 평일 새벽·저녁</p>
-
-<p>울산대공원은 <strong>대규모 도심 공원</strong>으로, SK가 조성해 기부한 것으로도 유명합니다. 장미원·호수·숲이 어우러진 평탄한 산책로 루프가 잘 정비돼 있어 도심 러닝의 중심입니다.</p>
-
-<p><strong>이 코스의 매력</strong>: 신호 없는 도심 공원 평지 + 풍부한 그늘 + 장미원 등 사계절 풍경. 무릎 부담이 적고 접근성이 좋아 입문·회복 러닝에 적합. 거리가 딱 떨어져 페이스 훈련에도 좋습니다.</p>
-
-<p><strong>어울리는 러닝화</strong>: 다목적 데일리. <a href="/shoes/nike-pegasus-42">페가수스 42</a>·<a href="/shoes/saucony-ride-19">라이드 19</a>. 인터벌을 섞는다면 <a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a>.</p>
-
-<h2>5. 간절곶 — 한반도에서 가장 먼저 해가 뜨는 곳</h2>
-
-<p><strong>출발지</strong>: 간절곶 (울주군, 차량)<br>
-<strong>거리</strong>: 5~8km (해안 산책로·해안도로)<br>
-<strong>노면</strong>: 해안 산책로 + 데크 + 아스팔트<br>
-<strong>추천 시간대</strong>: 일출 + 해안 산책</p>
-
-<p>간절곶은 <strong>한반도 육지에서 가장 먼저 일출을 볼 수 있는 곳</strong>으로, 등대와 소망우체통이 명물입니다. 해안 산책로를 따라 일출을 보며 달리는 경험은 새해·기념일에 특히 의미가 깊습니다.</p>
-
-<p><strong>이 코스의 매력</strong>: 한반도 첫 일출이라는 상징성 + 평탄한 해안 러닝. 일출 러닝 명소로, 해안도로를 따라 거리를 늘릴 수 있습니다. 다만 바람이 강한 날이 많으니 윈드재킷을 챙기세요.</p>
-
-<p><strong>어울리는 러닝화</strong>: 평지 해안 데일리. <a href="/shoes/nike-pegasus-41">페가수스 41</a>·<a href="/shoes/hoka-clifton-10">호카 클리프턴 10</a> 같은 데일리화.</p>
-
-<h2>6. 진하해변 + 명선도 — 해변과 서핑 풍경</h2>
-
-<p><strong>출발지</strong>: 진하해수욕장 (울주군, 버스·차량)<br>
-<strong>거리</strong>: 5~7km (해변 + 해안 산책로)<br>
-<strong>노면</strong>: 해변 산책로 + 일부 모래·아스팔트<br>
-<strong>추천 시간대</strong>: 새벽·해질녘</p>
-
-<p>진하해변은 <strong>서핑 명소이자 명선도를 배경으로 한 해변</strong>으로, 잔잔한 해변 풍경과 서핑하는 사람들이 어우러집니다. 평탄한 해변 산책로를 따라 가볍게 달리기 좋습니다.</p>
-
-<p><strong>이 코스의 매력</strong>: 서핑 풍경 + 명선도 + 평지 해변. 새벽·노을 시간대가 특히 아름답습니다. 모래 구간은 발이 빠지니 단단한 산책로 위주로, 바람이 강한 날은 체감이 떨어집니다.</p>
-
-<p><strong>어울리는 러닝화</strong>: 평지 + 통기성. <a href="/shoes/saucony-ride-19">사우코니 라이드 19</a>·<a href="/shoes/nike-pegasus-41">페가수스 41</a> 같은 가벼운 데일리화.</p>
-
-<h2>7. 슬도 소리길 (방어진) — 바람과 파도 소리의 해안길</h2>
-
-<p><strong>출발지</strong>: 방어진항·슬도 (동구, 버스·차량)<br>
-<strong>거리</strong>: 4~6km (해안 산책로)<br>
-<strong>노면</strong>: 해안 데크 + 산책로<br>
-<strong>추천 시간대</strong>: 새벽·해질녘</p>
-
-<p>슬도는 방어진 끝의 작은 섬으로, <strong>구멍 뚫린 바위에 파도가 부딪혀 나는 소리</strong>에서 "소리섬"이라는 이름이 붙었습니다. 슬도 소리길을 따라 대왕암공원 방향으로 이어지는 해안 산책로가 차분한 러닝에 좋습니다.</p>
-
-<p><strong>이 코스의 매력</strong>: 바람·파도 소리의 독특한 해안 분위기 + 등대. 평탄한 해안 데크라 부담이 적고, 대왕암공원과 연계하면 거리를 늘릴 수 있습니다. 한적해서 사색하며 달리기 좋습니다.</p>
-
-<p><strong>어울리는 러닝화</strong>: 평지 + 데크. <a href="/shoes/hoka-clifton-10">호카 클리프턴 10</a>·<a href="/shoes/on-cloudmonster-3">클라우드몬스터 3</a> 같은 쿠션 데일리.</p>
-
-<h2>본인 울산 거주지·목적별 추천 코스</h2>
-
-<ul>
-  <li><strong>중구·남구(도심) 거주</strong>: <strong>태화강 국가정원</strong>(대숲 강변 LSD) + <strong>울산대공원</strong>(평지 루프)</li>
-  <li><strong>동구 거주</strong>: <strong>대왕암공원</strong>(해안 절벽) · <strong>슬도 소리길</strong>(해안 산책)</li>
-  <li><strong>울주군 거주</strong>: <strong>간절곶</strong>(일출 해안) · <strong>진하해변</strong>(서핑 해변)</li>
-  <li><strong>트레일·산악</strong>: <strong>영남알프스 간월재</strong>(억새 능선, 트레일화 필수)</li>
-  <li><strong>일출 러닝</strong>: <strong>간절곶</strong> — 한반도 첫 일출</li>
-</ul>
-
-<h2>이런 코스 뛸 때 필요한 러닝화 카테고리</h2>
-
-<ul>
-  <li><strong>평지 강변·해변·공원 (태화강·간절곶·울산대공원)</strong>: 가성비 데일리 + 통기성. <a href="/blog/saucony-ride-18-vs-19-comparison">사우코니 라이드 18 vs 19 비교</a> · <a href="/blog/nike-pegasus-41-vs-42-comparison">페가수스 41 vs 42 비교</a></li>
-  <li><strong>강변 LSD·맥스 쿠션 (태화강 장거리)</strong>: <a href="/blog/new-balance-1080-v14-vs-v15-comparison">NB 1080 v14 vs v15 비교</a></li>
-  <li><strong>영남알프스·대왕암 트레일</strong>: 접지력·안정성 트레일화. <a href="/blog/2026-best-trail-running-shoes">2026 트레일 러닝화 베스트 7</a> — 코스 난이도별 선택 가이드</li>
-  <li><strong>인터벌·페이스 (울산대공원 루프)</strong>: 슈퍼트레이너. <a href="/blog/asics-superblast-2-vs-3-comparison">슈퍼블라스트 2 vs 3 비교</a></li>
-</ul>
-
-<h2>울산 러닝 — 십리대숲과 억새, 러닝 여행</h2>
-
-<div class="callout tip">
-  <span class="callout-icon">🌅</span>
-  <div class="callout-body">
-    <p class="callout-title">강·바다·억새를 하루에 — 울산 러닝 여행</p>
-    <p>울산은 <strong>강·바다·억새산을 짧은 이동으로 오갈 수 있는</strong> 도시입니다. ① 도심 가볍게는 <strong>태화강 십리대숲·울산대공원</strong>, ② 해안은 <strong>대왕암·간절곶·진하해변</strong>, ③ 본격 트레일은 <strong>영남알프스 간월재</strong>(억새)로 묶으면 좋습니다. 특히 새해엔 <strong>간절곶 일출 러닝</strong>이 특별. KTX로 서울에서 약 2시간 10분이라 주말 러닝 여행도 가능 — 태화강 대숲 + 영남알프스 억새를 묶어보세요. 다른 지역 코스가 궁금하다면 <a href="/blog/seoul-unique-running-courses-7">서울</a>·<a href="/blog/busan-unique-running-courses-7">부산</a>·<a href="/blog/incheon-unique-running-courses-7">인천</a>·<a href="/blog/daegu-unique-running-courses-7">대구</a>·<a href="/blog/jeju-unique-running-courses-7">제주</a>·<a href="/blog/daejeon-unique-running-courses-7">대전</a>·<a href="/blog/gwangju-unique-running-courses-7">광주 달리기 좋은 곳 7선</a>도 함께 보세요.</p>
-  </div>
-</div>
-
-<h2>FAQ</h2>
-
-<h3>Q. 울산 러닝과 다른 도시의 차이는?</h3>
-<p>울산은 공업도시 이미지와 달리, <strong>태화강 십리대숲</strong>(국가정원)이라는 독특한 대나무숲 강변 코스를 중심으로 대왕암·간절곶 해안과 영남알프스 억새 산을 모두 갖췄습니다. 강·바다·산을 짧은 이동으로 오갈 수 있어, 하루에 여러 풍경을 묶어 달릴 수 있는 게 매력입니다.</p>
-
-<h3>Q. 울산에서 야간 러닝하기 좋은 곳은?</h3>
-<p><strong>태화강 국가정원·울산대공원</strong>이 1순위입니다. 조명이 있는 평지라 야간 LSD·루프에 좋습니다. 반면 영남알프스·대왕암·간절곶·해변은 야간에 어둡고 위험하니 낮·새벽(일출)에 뛰세요. 십리대숲은 야간 조명 구간을 확인하고 이용하세요.</p>
-
-<h3>Q. 영남알프스 간월재 트레일은 어떤 신발이 필요한가요?</h3>
-<p>가파른 오르막·돌길·고도차가 커서 일반 도로화로는 위험합니다. <strong>접지력 좋은 트레일화</strong>가 필요하고, <a href="/shoes/adidas-terrex-agravic-4">아그라빅 4</a>·<a href="/shoes/hoka-tecton-x-3">테크톤 X 3</a> 같은 본격 트레일화를 권합니다. 입문은 <a href="/shoes/asics-gel-venture-10">젤 벤처 10</a>으로 시작해도 됩니다. 자세한 선택은 <a href="/blog/2026-best-trail-running-shoes">트레일 러닝화 베스트</a>를 참고하세요.</p>
-
-<h3>Q. 울산 마라톤 대회는 어떤 게 있나요?</h3>
-<p>태화강 일대를 활용한 도심·강변 마라톤들이 열립니다. 대부분 평지라 기록 도전에 유리하며, 일정은 매년 변동되니 공식 접수 채널에서 확인하세요. 본인 목적(완주·기록)에 맞는 러닝화는 <a href="/recommend">1분 러닝화 추천</a>으로 후보를 좁힐 수 있습니다.</p>
-`,
+    id: "ulsan-unique-running-courses-7",
+    slug: "ulsan-unique-running-courses-7",
+    title: "울산 태화강 러닝 계획: 국가정원 짧은 동선과 48km 비순환길 구분",
+    description: "국가정원과 태화강 100리길은 같은 러닝 루프가 아닙니다. 정원의 태화·삼호 지구, 100리길의 구간별 거리와 복귀 계획, 일부 시설의 별도 개방 조건을 확인합니다.",
+    thumbnail: "/images/blog/verified-ulsan-unique-running-courses-7-20261110.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-05-29",
+    updatedAt: "2026-11-10",
+    category: "guide",
+    readingTime: 4,
+    tags: [
+      "울산 달리기",
+      "울산 러닝코스",
+      "울산 러닝 코스",
+      "이색 러닝",
+      "태화강 국가정원",
+      "십리대숲",
+      "대왕암공원",
+      "영남알프스 간월재",
+      "간절곶 일출",
+      "울산대공원",
+      "진하해변",
+      "울산 마라톤"
+    ],
+    content: `<p><small>2026년 11월 10일 공개 원문 대조. 아래 동선 제안은 편집자의 계획 예시이며 실제 답사·측량 결과가 아닙니다.</small></p>
+<p>울산에서 태화강을 달린다는 말에는 국가정원 주변의 짧은 이동부터 발원지로 향하는 장거리 도보길까지 서로 다른 규모가 들어간다. 처음이라면 정원 안팎의 범위를 먼저 정하고, 장거리 연결은 별도 계획으로 나누자.</p>
+<h2>국가정원: 태화지구와 삼호지구를 구분</h2><p><a href="https://www.ulsan.go.kr/s/garden/contents.ulsan?mId=001001001000000000" target="_blank" rel="noopener noreferrer">울산시 국가정원 개요</a>는 중구 태화지구와 남구 삼호지구를 구분하고 상시 개방·무료 입장에 ‘일부 시설 제외’ 조건을 붙인다. 대나무정원과 십리대숲도 국가정원 전체와 같은 범위는 아니다.</p><p>짧게 움직이고 싶다면 선택한 지구의 안내도에서 출발점과 돌아올 지점을 정하자. 대숲 관람과 강변 이동을 어떻게 연결할지는 현장 통행 구역을 확인한 뒤 결정할 사항이다. 숲 안의 모든 길을 빠른 주행 구간으로 제안하지 않는다.</p>
+<h2>100리길은 48km의 비순환 도보 여행길</h2><p><a href="https://tour.ulsan.go.kr/tour/kor/contents.ulsan?mId=001001009001010000" target="_blank" rel="noopener noreferrer">울산관광 태화강 100리길 안내</a>는 전체를 네 구간 48km의 비순환형 길로 설명한다. 1구간은 명촌교에서 태화교·십리대숲 등을 지나 망성교로 향하는 15km다. ‘국가정원 한 바퀴’와 바꿔 읽으면 복귀 계획이 어긋난다.</p><p>2구간 15km, 3구간 7km, 4구간 11km라는 공식 구분도 있다. 각 구간을 연결한 숫자는 도보 여행 안내이며 개인의 진입·이탈 거리나 러닝 기록을 측정한 값은 아니다.</p>
+<h2>장거리라면 거리보다 이탈·복귀 수단 먼저</h2><p>같은 공식 안내는 3구간의 가파른 오르막·계단과 4구간의 산길·오솔길·농로·마을길을 설명한다. 전 구간을 평탄한 하천 포장길로 보고 동일한 페이스를 계획하지 말자.</p><p>왕복할 구간인지, 끝에서 교통수단으로 돌아올지, 중간에 종료할 지점을 정하는 계획을 제안한다. 관광 안내의 총 17시간은 도보 소요 설명으로 모든 러너의 완주시간이나 안전한 활동시간이 아니다.</p>
+<h2>개방된 정원과 이용 가능한 시설은 별개</h2><p>정원 상시 개방이 안내센터·매점·보관·조명 시설의 24시간 운영을 뜻하지는 않는다. 당일 행사·정비·기상 관련 통제와 이용할 시설의 운영 공지를 확인하자. 화장실이 있다고 샤워를 제공하는 것도 아니다.</p><p>기존처럼 십리대숲과 영남알프스를 같은 난도표에서 단정하거나 음이온의 회복 효과를 보장하지 않았다. 이 글은 국가정원과 100리길의 범위를 구분한 계획 안내이며 다른 산악 코스의 현재 개방을 검증한 자료는 아니다.</p>
+<h2>자주 묻는 질문</h2><h3>십리대숲을 달리면 100리길 한 바퀴인가요?</h3><p>아닙니다. 공식은 100리길을 네 구간 48km의 비순환 도보길로 설명합니다. 국가정원이나 십리대숲 주변의 짧은 이동과 범위가 다릅니다.</p><h3>100리길은 전부 평지 포장길인가요?</h3><p>울산관광은 3구간의 가파른 오르막·계단과 4구간의 산길·농로 등을 설명합니다. 전 구간을 같은 노면으로 가정하면 안 됩니다.</p><h3>국가정원은 모든 시설이 항상 열리나요?</h3><p>공식 상시 개방에는 일부 시설 제외 조건이 있습니다. 실제 이용할 시설과 당일 통제는 별도 확인해야 합니다.</p>`,
+    faqs: [
+      {
+        "question": "십리대숲을 달리면 100리길 한 바퀴인가요?",
+        "answer": "아닙니다. 공식은 100리길을 네 구간 48km의 비순환 도보길로 설명합니다. 국가정원이나 십리대숲 주변의 짧은 이동과 범위가 다릅니다."
+      },
+      {
+        "question": "100리길은 전부 평지 포장길인가요?",
+        "answer": "울산관광은 3구간의 가파른 오르막·계단과 4구간의 산길·농로 등을 설명합니다. 전 구간을 같은 노면으로 가정하면 안 됩니다."
+      },
+      {
+        "question": "국가정원은 모든 시설이 항상 열리나요?",
+        "answer": "공식 상시 개방에는 일부 시설 제외 조건이 있습니다. 실제 이용할 시설과 당일 통제는 별도 확인해야 합니다."
+      }
+    ],
   },
   {
-    id: 'gwangju-unique-running-courses-7',
-    slug: 'gwangju-unique-running-courses-7',
-    title: '광주 달리기 좋은 곳 7선 | 광주 러닝 코스 — 무등산 주상절리부터 푸른길 폐철도까지',
-    description: '무등산 트레일부터 광주천 도심 하천, 폐철도를 재생한 푸른길공원, 광주호 메타세쿼이아길까지 광주에서 달리기 좋은 러닝 코스 7곳을 거리·난이도·시간대·러닝화 추천까지 정리. 무등산·광주천·푸른길공원·광주호·5·18기념공원·풍암호수·영산강 각 코스별 출발지·노면·주의점 가이드.',
-    thumbnail: '/images/blog/gwangju-unique-running-courses-7.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-05-29',
-    updatedAt: '2026-08-19',
-    category: 'guide' as const,
-    readingTime: 11,
-    tags: ['광주 달리기', '광주 러닝코스', '광주 러닝 코스', '이색 러닝', '무등산', '광주천', '푸른길공원', '광주호 메타세쿼이아', '5·18기념공원', '풍암호수공원', '영산강', '광주 마라톤'],
-    content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>광주는 산·하천·폐철도·호수를 결합한 호남권 러닝 거점</strong> — 무등산 주상절리, 폐철도를 재생한 푸른길공원, 광주호 메타세쿼이아길 등 다른 도시엔 없는 풍경</li>
-    <li>도심을 관통하는 <strong>광주천</strong>과 광주의 상징 <strong>무등산</strong>이 러닝의 양대 축, 여기에 폐철도 그린웨이 "푸른길"이라는 이색 코스가 더해집니다</li>
-    <li>각 코스별 <strong>출발지·거리·노면·시간대·주의점 + 어울리는 러닝화 카테고리</strong>까지 한 번에 정리</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">🌳</span>
-  <div class="callout-body">
-    <p class="callout-title">광주 러닝만의 매력</p>
-    <p><strong>광주에서 달리기 좋은 곳</strong>을 찾는다면 산·하천·폐철도까지 선택지가 다양합니다. 광주는 <strong>산(무등산)·도심 하천(광주천)·폐철도 선형공원(푸른길)·호수(광주호·풍암)·강(영산강·황룡강)</strong>이 어우러진 호남권 도시입니다. 광주의 상징 <strong>무등산</strong>은 주상절리(입석대·서석대)로 유명한 트레일 명소이고, 폐철도를 녹지로 되살린 <strong>푸른길공원</strong>은 도심을 가로지르는 광주만의 이색 그린웨이. 도심엔 광주천이 흐르고, 5·18 민주화의 역사가 곳곳에 새겨져 있습니다. 본인 발 특성·부상 이력에 맞는 러닝화 후보는 <a href="/recommend">1분 러닝화 추천</a>에서 받을 수 있습니다.</p>
-  </div>
-</div>
-
-<h2>한눈에 비교</h2>
-
-<table>
-  <thead>
-    <tr><th>#</th><th>코스</th><th>거리</th><th>난이도</th><th>특이점</th><th>추천 시간대</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>1</td><td><strong>무등산 (중머리재 등)</strong></td><td>약 6~10km</td><td>중상</td><td>주상절리 + 본격 산악 트레일</td><td>맑은 날 오전</td></tr>
-    <tr><td>2</td><td><strong>광주천 둔치</strong></td><td>5~12km (도심 종주)</td><td>하 (평지)</td><td>도심 관통 하천 — 광주의 한강</td><td>새벽·야간</td></tr>
-    <tr><td>3</td><td><strong>푸른길공원</strong></td><td>약 8km (선형)</td><td>하 (평지)</td><td>폐철도 재생 그린웨이 — 이색</td><td>평일 새벽·저녁</td></tr>
-    <tr><td>4</td><td><strong>광주호 호수생태원 + 메타세쿼이아길</strong></td><td>5~8km</td><td>하~중</td><td>호수 + 메타세쿼이아 숲</td><td>오전·해질녘</td></tr>
-    <tr><td>5</td><td><strong>5·18기념공원 + 상무시민공원</strong></td><td>약 3~4km</td><td>하 (평지)</td><td>역사 + 도심 공원</td><td>평일 새벽·저녁</td></tr>
-    <tr><td>6</td><td><strong>풍암호수공원</strong></td><td>약 2~3km 둘레</td><td>하 (평지)</td><td>도심 호수 루프</td><td>평일 새벽·저녁</td></tr>
-    <tr><td>7</td><td><strong>영산강·황룡강 자전거길</strong></td><td>5~15km</td><td>하 (평지)</td><td>강변 LSD + 자전거도로</td><td>새벽·저녁 노을</td></tr>
-  </tbody>
-</table>
-
-<h2>1. 무등산 — 주상절리를 품은 광주의 상징</h2>
-
-<p><strong>출발지</strong>: 증심사 입구 (동구, 버스·차량)<br>
-<strong>거리</strong>: 약 6~10km (중머리재·장불재 코스)<br>
-<strong>노면</strong>: 흙길 + 돌길 + 돌계단<br>
-<strong>추천 시간대</strong>: 맑은 날 오전</p>
-
-<p>무등산은 광주를 대표하는 명산으로, <strong>입석대·서석대 주상절리</strong>로 유명합니다. 증심사에서 중머리재·장불재로 이어지는 트레일은 광주 산악 러닝의 핵심 코스. 정상부 주상절리와 광주 시가지 조망이 압권입니다.</p>
-
-<p><strong>이 코스의 매력</strong>: 주상절리라는 독특한 지질 풍경 + 본격 산악 트레일. 다만 <strong>돌길·돌계단·고도차</strong>가 커서 일반 데일리화·카본화는 절대 비추. 충분한 물·행동식과 일몰 시간을 확인하고, 입문자는 중머리재까지만 가볍게.</p>
-
-<p><strong>어울리는 러닝화</strong>: 접지력·안정성 좋은 트레일화. <a href="/shoes/adidas-terrex-agravic-4">테렉스 아그라빅 4</a>(Continental 그립)·<a href="/shoes/hoka-tecton-x-3">테크톤 X 3</a>. 신발 선택은 <a href="/blog/2026-best-trail-running-shoes">2026 트레일 러닝화 베스트</a> 참고.</p>
-
-<h2>2. 광주천 둔치 — 광주의 한강, 도심 관통 하천</h2>
-
-<p><strong>출발지</strong>: 광주천 도심 다리마다 진입 (양동·금남로 일대)<br>
-<strong>거리</strong>: 5~12km (도심 종주, 거리 자유)<br>
-<strong>노면</strong>: 우레탄 산책로 + 자전거도로<br>
-<strong>추천 시간대</strong>: 새벽·야간</p>
-
-<p>광주천은 광주 도심을 관통하는 하천으로, <strong>광주 러너의 홈 그라운드</strong>입니다. 둔치를 따라 산책로·자전거도로가 이어져 거리 조절이 자유롭고, 신호 없이 5km부터 12km LSD까지 소화할 수 있습니다.</p>
-
-<p><strong>이 코스의 매력</strong>: 접근성 최고 + 거리 무제한 + 신호 없는 평지. 도심 어디서든 가까운 다리로 진입 가능해 데일리 러닝의 중심입니다. 여름엔 그늘이 적으니 새벽·야간을 권합니다.</p>
-
-<p><strong>어울리는 러닝화</strong>: 평지 장거리 LSD·데일리. <a href="/shoes/new-balance-1080-v15">NB 1080 v15</a>·<a href="/shoes/asics-gel-nimbus-28">님버스 28</a> 같은 맥스 쿠션, 또는 <a href="/shoes/saucony-ride-19">라이드 19</a>.</p>
-
-<h2>3. 푸른길공원 — 폐철도를 되살린 도심 그린웨이</h2>
-
-<p><strong>출발지</strong>: 푸른길공원 구간별 진입 (동구·남구 도심)<br>
-<strong>거리</strong>: 약 8km (선형, 구간 조절)<br>
-<strong>노면</strong>: 우레탄·블록 산책로<br>
-<strong>추천 시간대</strong>: 평일 새벽·저녁</p>
-
-<p>푸른길공원은 <strong>도심을 지나던 폐철도를 녹지로 재생한 선형공원</strong>으로, 광주만의 이색 코스입니다. 옛 철길을 따라 도심을 가로지르며 달리는 경험이 독특하고, 나무가 우거져 도심 속 그린 터널을 이룹니다.</p>
-
-<p><strong>이 코스의 매력</strong>: 폐철도 재생이라는 스토리 + 도심 한복판 그린웨이. 평탄하고 신호 구간이 정비돼 있어 가벼운 러닝·출퇴근 런에 좋습니다. 단 도심 횡단 구간은 보행자·교차로에 주의하세요.</p>
-
-<p><strong>어울리는 러닝화</strong>: 평지 데일리 + 통기성. <a href="/shoes/nike-pegasus-41">페가수스 41</a>·<a href="/shoes/saucony-ride-19">사우코니 라이드 19</a> 같은 통기성 좋은 데일리화.</p>
-
-<h2>4. 광주호 호수생태원 + 메타세쿼이아길 — 호수와 숲</h2>
-
-<p><strong>출발지</strong>: 광주호 호수생태원 (북구, 담양 경계, 차량)<br>
-<strong>거리</strong>: 5~8km (생태원 + 메타세쿼이아길 연결)<br>
-<strong>노면</strong>: 데크 + 흙길 + 가로수길 아스팔트<br>
-<strong>추천 시간대</strong>: 오전·해질녘</p>
-
-<p>광주호 호수생태원은 <strong>호수와 습지, 생태 숲</strong>을 갖춘 명소로, 인근 담양 <strong>메타세쿼이아 가로수길</strong>과 연결해 호수+숲 러닝을 즐길 수 있습니다. 도심을 벗어난 자연 속 코스로 힐링 러닝에 좋습니다.</p>
-
-<p><strong>이 코스의 매력</strong>: 호수 + 메타세쿼이아 숲이라는 이국적 풍경. 평탄·완만해 부담이 적고, 가을 단풍·메타세쿼이아 낙엽철이 특히 아름답습니다. 데크·흙길이 섞여 미끄럼에 주의하세요.</p>
-
-<p><strong>어울리는 러닝화</strong>: 평지 + 약간의 흙길·데크. <a href="/shoes/hoka-clifton-10">호카 클리프턴 10</a>·<a href="/shoes/on-cloudmonster-3">클라우드몬스터 3</a> 같은 쿠션 데일리.</p>
-
-<h2>5. 5·18기념공원 + 상무시민공원 — 역사와 도심 공원</h2>
-
-<p><strong>출발지</strong>: 광주 지하철 1호선 운천역·상무역 (도보)<br>
-<strong>거리</strong>: 약 3~4km (공원 루프)<br>
-<strong>노면</strong>: 우레탄 + 아스팔트 산책로<br>
-<strong>추천 시간대</strong>: 평일 새벽·저녁</p>
-
-<p>상무지구의 5·18기념공원과 상무시민공원을 잇는 도심 공원 코스. <strong>5·18 민주화운동의 역사</strong>가 새겨진 공간을 달리며, 평탄한 산책로와 녹지가 잘 정비돼 있어 도심 러닝에 적합합니다.</p>
-
-<p><strong>이 코스의 매력</strong>: 역사적 의미 + 신호 없는 도심 공원 평지. 나무가 많아 그늘이 풍부하고 접근성이 좋아 입문·회복 러닝에 좋습니다. 운천저수지와 연계하면 거리를 늘릴 수 있습니다.</p>
-
-<p><strong>어울리는 러닝화</strong>: 다목적 데일리. <a href="/shoes/nike-pegasus-42">페가수스 42</a>·<a href="/shoes/saucony-ride-19">라이드 19</a>. 인터벌을 섞는다면 <a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a>.</p>
-
-<h2>6. 풍암호수공원 — 도심 호수 루프</h2>
-
-<p><strong>출발지</strong>: 풍암호수공원 (남구, 버스·차량)<br>
-<strong>거리</strong>: 약 2~3km 둘레<br>
-<strong>노면</strong>: 우레탄 산책로 + 데크<br>
-<strong>추천 시간대</strong>: 평일 새벽·저녁</p>
-
-<p>풍암호수공원은 남구의 도심 호수공원으로, <strong>평탄한 호수 둘레 루프</strong>가 잘 정비돼 있습니다. 거리가 딱 떨어져 랩 카운트·페이스 훈련에 좋고, 야간 조명과 분수가 운치를 더합니다.</p>
-
-<p><strong>이 코스의 매력</strong>: 신호 없는 호수 루프라 인터벌·템포 훈련에 최적. 노면이 부드러워 무릎 부담이 적고, 가족 단위 방문객이 많아 한적함을 원하면 새벽·평일을 권합니다.</p>
-
-<p><strong>어울리는 러닝화</strong>: 평지 루프 + 페이스 훈련. <a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a> 같은 슈퍼트레이너, 또는 <a href="/shoes/saucony-ride-19">라이드 19</a> 데일리.</p>
-
-<h2>7. 영산강·황룡강 자전거길 — 강변 장거리 LSD</h2>
-
-<p><strong>출발지</strong>: 영산강·황룡강 자전거길 진입점 (광산구 등, 차량·버스)<br>
-<strong>거리</strong>: 5~15km (거리 자유)<br>
-<strong>노면</strong>: 자전거도로 + 강변 산책로<br>
-<strong>추천 시간대</strong>: 새벽·저녁 노을</p>
-
-<p>영산강·황룡강 자전거길은 광주 서부를 흐르는 강을 따라 길게 이어지는 <strong>평지 강변 코스</strong>입니다. 신호 없이 장거리 LSD를 소화하기 좋고, 강변 풍경과 노을이 아름답습니다.</p>
-
-<p><strong>이 코스의 매력</strong>: 신호 없는 강변 장거리 평지 + 노을. 마라톤 LSD 훈련에 최적이고, 자전거길이라 노면이 매끄럽습니다. 다만 그늘이 적고 일부 구간은 한적하니 여름엔 새벽·저녁, 야간 단독은 주의하세요.</p>
-
-<p><strong>어울리는 러닝화</strong>: 평지 장거리 LSD. <a href="/shoes/new-balance-1080-v15">NB 1080 v15</a>·<a href="/shoes/asics-gel-nimbus-28">님버스 28</a> 같은 부드러운 맥스 쿠션.</p>
-
-<h2>본인 광주 거주지·목적별 추천 코스</h2>
-
-<ul>
-  <li><strong>동구·남구(도심) 거주</strong>: <strong>광주천</strong>(도심 하천 LSD) + <strong>푸른길공원</strong>(폐철도 그린웨이)</li>
-  <li><strong>서구·상무지구 거주</strong>: <strong>5·18기념공원</strong>(도심 공원) 또는 <strong>풍암호수공원</strong>(호수 루프)</li>
-  <li><strong>북구·담양 방면 거주</strong>: <strong>광주호 호수생태원 + 메타세쿼이아길</strong>(호수·숲)</li>
-  <li><strong>광산구 거주</strong>: <strong>영산강·황룡강 자전거길</strong>(강변 LSD)</li>
-  <li><strong>트레일·산악</strong>: <strong>무등산</strong>(주상절리 트레일, 트레일화 필수)</li>
-</ul>
-
-<h2>이런 코스 뛸 때 필요한 러닝화 카테고리</h2>
-
-<ul>
-  <li><strong>평지 하천·폐철도·공원 (광주천·푸른길·5·18)</strong>: 가성비 데일리 + 통기성. <a href="/blog/saucony-ride-18-vs-19-comparison">사우코니 라이드 18 vs 19 비교</a> · <a href="/blog/nike-pegasus-41-vs-42-comparison">페가수스 41 vs 42 비교</a></li>
-  <li><strong>강변·호수 LSD (영산강·풍암)</strong>: 맥스 쿠션. <a href="/blog/new-balance-1080-v14-vs-v15-comparison">NB 1080 v14 vs v15 비교</a></li>
-  <li><strong>무등산 트레일</strong>: 접지력·안정성 트레일화. <a href="/blog/2026-best-trail-running-shoes">2026 트레일 러닝화 베스트 7</a> — 코스 난이도별 선택 가이드</li>
-  <li><strong>인터벌·페이스 (풍암호수 루프)</strong>: 슈퍼트레이너. <a href="/blog/asics-superblast-2-vs-3-comparison">슈퍼블라스트 2 vs 3 비교</a></li>
-</ul>
-
-<h2>광주 러닝 — 무등산과 푸른길, 러닝 여행</h2>
-
-<div class="callout tip">
-  <span class="callout-icon">🚂</span>
-  <div class="callout-body">
-    <p class="callout-title">광주에서 뛰는 법 — 폐철도 그린웨이와 명산</p>
-    <p>광주는 <strong>도심 그린웨이와 명산을 함께 즐길 수 있는</strong> 도시입니다. ① 도심 가볍게는 <strong>광주천·푸른길공원</strong>, ② 본 러닝은 <strong>무등산 트레일</strong>(주상절리), ③ 힐링은 <strong>광주호 메타세쿼이아길</strong>, ④ 강변 LSD는 <strong>영산강</strong>으로 묶으면 좋습니다. KTX·SRT로 서울에서 약 1시간 30~50분이라 주말 러닝 여행도 가능 — 푸른길 도심런 + 무등산 트레일을 묶어보세요. 다른 지역 코스가 궁금하다면 <a href="/blog/seoul-unique-running-courses-7">서울</a>·<a href="/blog/busan-unique-running-courses-7">부산</a>·<a href="/blog/incheon-unique-running-courses-7">인천</a>·<a href="/blog/daegu-unique-running-courses-7">대구</a>·<a href="/blog/jeju-unique-running-courses-7">제주</a>·<a href="/blog/daejeon-unique-running-courses-7">대전 달리기 좋은 곳 7선</a>도 함께 보세요.</p>
-  </div>
-</div>
-
-<h2>FAQ</h2>
-
-<h3>Q. 광주 러닝과 다른 도시의 차이는?</h3>
-<p>광주는 도심 하천(광주천)·명산(무등산)이라는 기본 축에 <strong>폐철도를 재생한 푸른길공원</strong>이라는 독특한 그린웨이가 더해집니다. 무등산 주상절리 트레일과 광주호 메타세쿼이아 숲 등 자연 코스도 풍부해, 도심과 자연을 짧은 이동으로 오갈 수 있는 점이 매력입니다.</p>
-
-<h3>Q. 광주에서 야간 러닝하기 좋은 곳은?</h3>
-<p><strong>광주천 둔치</strong>가 1순위입니다. 도심 구간은 조명이 있어 야간 LSD에 좋고 거리 조절이 자유롭습니다. <strong>풍암호수공원·5·18기념공원</strong>도 조명이 있어 평지 야간 러닝에 적합합니다. 반면 무등산·광주호·영산강 일부 구간은 야간에 어둡고 위험하니 낮·오전에 뛰세요.</p>
-
-<h3>Q. 무등산 트레일은 어떤 신발이 필요한가요?</h3>
-<p>돌길·돌계단·고도차가 커서 일반 도로화로는 위험합니다. <strong>접지력 좋은 트레일화</strong>가 필요하고, <a href="/shoes/adidas-terrex-agravic-4">아그라빅 4</a>·<a href="/shoes/hoka-tecton-x-3">테크톤 X 3</a> 같은 본격 트레일화를 권합니다. 입문은 <a href="/shoes/asics-gel-venture-10">젤 벤처 10</a>로 시작해도 됩니다. 자세한 선택은 <a href="/blog/2026-best-trail-running-shoes">트레일 러닝화 베스트</a>를 참고하세요.</p>
-
-<h3>Q. 광주 마라톤 대회는 어떤 게 있나요?</h3>
-<p>광주천·영산강 일대를 활용한 도심·강변 마라톤들이 열립니다. 대부분 평지라 기록 도전에 유리하며, 일정은 매년 변동되니 공식 접수 채널에서 확인하세요. 본인 목적(완주·기록)에 맞는 러닝화는 <a href="/recommend">1분 러닝화 추천</a>으로 후보를 좁힐 수 있습니다.</p>
-`,
+    id: "gwangju-unique-running-courses-7",
+    slug: "gwangju-unique-running-courses-7",
+    title: "광주 러닝 장소 비교: 푸른길과 호수생태원, 24시간·09~18시 구분",
+    description: "푸른길과 광주호 호수생태원은 위치도 개방 안내도 다릅니다. 폐철도 이설 구간을 현재 러닝 거리로 쓰지 않고, 도심 이동과 생태 관람 동선을 구분해 준비합니다.",
+    thumbnail: "/images/blog/verified-gwangju-unique-running-courses-7-20261110.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-05-29",
+    updatedAt: "2026-11-10",
+    category: "guide",
+    readingTime: 4,
+    tags: [
+      "광주 달리기",
+      "광주 러닝코스",
+      "광주 러닝 코스",
+      "이색 러닝",
+      "무등산",
+      "광주천",
+      "푸른길공원",
+      "광주호 메타세쿼이아",
+      "5·18기념공원",
+      "풍암호수공원",
+      "영산강",
+      "광주 마라톤"
+    ],
+    content: `<p><small>2026년 11월 10일 공개 원문 대조. 아래 동선 제안은 편집자의 계획 예시이며 실제 답사·측량 결과가 아닙니다.</small></p>
+<p>광주에서 초행 러닝 장소를 고를 때 푸른길공원과 광주호 호수생태원을 같은 도심 루프로 묶지 말자. 두 곳은 주소와 운영 안내가 다르다. 이동할 동선과 걸으며 관람할 구간을 나누어 계획할 수 있다.</p>
+<h2>푸른길: 옛 철도의 길이와 현재 주행 거리 구분</h2><p><a href="https://tour.gwangju.go.kr/home/tour/info/park/003.cs?act=view&amp;infoId=277" target="_blank" rel="noopener noreferrer">공식 관광 안내의 푸른길공원</a>은 폐선부지를 활용한 녹지와 광장·쉼터·산책 공간을 설명한다. 소개에 나오는 10.8km는 2000년에 외곽으로 이설한 철도 구간의 길이다. 현재 내가 연속해서 뛸 수 있는 무교차 러닝 코스의 실측값이 아니다.</p><p>출발할 지점을 정하고 현장 지도에서 보행로 연결과 도로 횡단, 공원별 이용 구역을 확인하자. 전체를 한 번에 달리기보다 통행 가능한 범위에서 반환점을 정하는 방식을 제안한다. 특정 구간의 러닝 허용을 인증한 답사 자료는 아니다.</p>
+<h2>광주호 호수생태원은 관람시간을 먼저 확인</h2><p><a href="https://tour.gwangju.go.kr/home/tour/info/nature.cs?act=view&amp;infoId=2" target="_blank" rel="noopener noreferrer">공식 호수생태원 안내</a>는 북구 충효샘길 7, 이용시간 09:00~18:00·이용요금 없음으로 적는다. 버들길·풀피리길 등 생태 관찰용 산책길이 소개돼 있다. 푸른길의 24시간 안내를 이곳에 적용하지 않는다.</p><p>새벽 운동을 마친 뒤 내부를 통과하거나 야간 러닝을 하겠다는 계획에는 이 운영시간이 맞지 않는다. 관람시간 중 방문하더라도 현장 표지와 관람객 통행을 확인해야 하며, 생태 관찰 구간을 속도 훈련 코스로 단정하지 않는다.</p>
+<h2>선택은 오늘의 목적과 이동편에 맞추기</h2><table><thead><tr><th>고민</th><th>자료에서 확인한 것</th><th>내가 정할 것</th></tr></thead><tbody><tr><td>도심에서 짧게 이동</td><td>푸른길의 녹지·쉼터와 24시간 안내</td><td>출발·반환 지점과 횡단 구간</td></tr><tr><td>호수 생태 관람 함께 하기</td><td>호수생태원 09~18시 관람 안내</td><td>허용된 동선·관람과 운동 구분</td></tr><tr><td>두 장소를 모두 방문</td><td>주소가 다른 별도 장소</td><td>교통편과 각 장소의 이용시간</td></tr></tbody></table>
+<h2>오래된 소개와 오늘의 통제를 구분</h2><p>관광 페이지에는 시설의 역사·조성 계획과 이용 정보가 함께 있다. 조성 계획을 모두 완료된 현재 상태로 옮기거나, 상시 개방을 야간 전 구간 조명·안전 보장으로 해석하지 않았다. 출발 전 관리 공지와 현장 표지가 우선이다.</p><p>화장실·주차 정보가 샤워·탈의·보관 서비스를 뜻하지는 않는다. 필요하다면 실제 운영 시설을 확인해 별도 계획하자. 이번 자료로 확인하지 못한 무등산의 고도·난도·탐방 통제까지 함께 인증하지 않았다.</p>
+<h2>자주 묻는 질문</h2><h3>푸른길이 정확히 10.8km 러닝 코스인가요?</h3><p>공식 소개의 10.8km는 옛 철도 이설 구간 설명입니다. 현재 보행로 연결과 개인 러닝 실측 거리는 따로 확인해야 합니다.</p><h3>호수생태원도 새벽과 밤에 열리나요?</h3><p>확인한 관광 안내는 09시~18시로 적습니다. 푸른길의 24시간 안내를 호수생태원에 적용하지 않았습니다.</p><h3>무료 개방이면 러닝 전용인가요?</h3><p>무료 이용과 러닝 허용·전용로 여부는 다른 조건입니다. 현장 관람·통행 규정을 확인해야 합니다.</p>`,
+    faqs: [
+      {
+        "question": "푸른길이 정확히 10.8km 러닝 코스인가요?",
+        "answer": "공식 소개의 10.8km는 옛 철도 이설 구간 설명입니다. 현재 보행로 연결과 개인 러닝 실측 거리는 따로 확인해야 합니다."
+      },
+      {
+        "question": "호수생태원도 새벽과 밤에 열리나요?",
+        "answer": "확인한 관광 안내는 09시~18시로 적습니다. 푸른길의 24시간 안내를 호수생태원에 적용하지 않았습니다."
+      },
+      {
+        "question": "무료 개방이면 러닝 전용인가요?",
+        "answer": "무료 이용과 러닝 허용·전용로 여부는 다른 조건입니다. 현장 관람·통행 규정을 확인해야 합니다."
+      }
+    ],
   },
   {
     id: 'daejeon-unique-running-courses-7',
