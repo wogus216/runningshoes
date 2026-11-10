@@ -28,14 +28,7 @@ export const mizunoBrand: Brand = {
       ],
       scienceExplanation:
         'MIZUNO ENERZY CORE는 미즈노의 프리미엄 미드솔 폼으로, 기존 소재 대비 293% 더 소프트하고 56% 더 높은 에너지 리턴을 제공한다고 미즈노가 공식 발표했습니다. Wave Rider, Wave Sky 등 미즈노의 핵심 쿠셔닝 라인에 적용되어 부드러운 착지감과 반발력의 균형을 구현합니다.',
-      performanceRating: 9,
       usedInShoes: ['mizuno-wave-rider-29', 'mizuno-wave-sky-9'],
-      characteristics: {
-        cushioning: 10,
-        responsiveness: 8,
-        durability: 8,
-        weight: 7,
-      },
     },
     {
       id: 'enerzy-nxt',
@@ -53,14 +46,7 @@ export const mizunoBrand: Brand = {
       ],
       scienceExplanation:
         'MIZUNO ENERZY NXT는 미즈노의 차세대 폼으로, 모델에 따라 구성이 달라집니다. 미즈노 유럽 공식 페이지에 따르면, 상부 미드솔에는 질소 주입(Nitrogen Infused) ENERZY NXT를 배치하여 부드러운 쿠셔닝과 에너지 출력을 담당하고, 하부 미드솔에는 EVA 기반 ENERZY NXT를 배치하여 안정성을 보강하는 2레이어 구조를 사용합니다.',
-      performanceRating: 9,
       usedInShoes: ['mizuno-wave-rider-29', 'mizuno-wave-inspire-21', 'mizuno-wave-sky-9', 'mizuno-wave-rebellion-flash-3', 'mizuno-wave-horizon-8'],
-      characteristics: {
-        cushioning: 9,
-        responsiveness: 8,
-        durability: 8,
-        weight: 8,
-      },
     },
     {
       id: 'enerzy-xp',
@@ -78,14 +64,7 @@ export const mizunoBrand: Brand = {
       ],
       scienceExplanation:
         'MIZUNO ENERZY XP는 미즈노의 레이싱 지향 고반발 폼입니다. Hyperwarp Pure에서는 "MIZUNO ENERZY XP PEBA VERSION"이라고 공식 명시되어 있으며, PEBA(폴리에테르 블록 아마이드) 소재로 최고 수준의 에너지 리턴을 구현합니다. Smooth Speed Plate(카본)와 조합하여 엘리트 레이싱에 필요한 폭발적 추진력을 제공합니다.',
-      performanceRating: 10,
       usedInShoes: ['mizuno-wave-rebellion-flash-3'],
-      characteristics: {
-        cushioning: 7,
-        responsiveness: 10,
-        durability: 6,
-        weight: 10,
-      },
     },
     {
       id: 'enerzy-lite',
@@ -103,14 +82,7 @@ export const mizunoBrand: Brand = {
       ],
       scienceExplanation:
         'MIZUNO ENERZY LITE는 경량화에 초점을 맞춘 미즈노의 스피드 폼입니다. Wave Rebellion Pro 계열 등 레이싱 라인에 적용되며, ENERZY 계열 중 가장 가벼운 무게로 스피드 러닝에 최적화되어 있습니다. 무게를 최소화하면서도 착지 시 충분한 반응성을 유지하는 것이 특징입니다.',
-      performanceRating: 8,
       usedInShoes: ['mizuno-wave-rebellion-flash-2'],
-      characteristics: {
-        cushioning: 6,
-        responsiveness: 9,
-        durability: 7,
-        weight: 10,
-      },
     },
     {
       id: 'enerzy',
@@ -128,14 +100,7 @@ export const mizunoBrand: Brand = {
       ],
       scienceExplanation:
         'MIZUNO ENERZY는 미즈노의 기본 미드솔 폼으로, 부드러움·반발(리바운드)·내구성을 함께 추구합니다. Neo Vista 2, Neo Zen 등 최신 모델부터 Wave Inspire, Wave Horizon 등 안정화 라인까지 폭넓게 적용되어 미즈노 러닝화의 기반 기술로 자리 잡았습니다.',
-      performanceRating: 7,
       usedInShoes: ['mizuno-wave-rider-29', 'mizuno-wave-inspire-21', 'mizuno-wave-rebellion-flash-2', 'mizuno-wave-horizon-8'],
-      characteristics: {
-        cushioning: 8,
-        responsiveness: 7,
-        durability: 9,
-        weight: 7,
-      },
     },
 
     // ─── 플레이트/구조 (Plate) ───
@@ -155,14 +120,7 @@ export const mizunoBrand: Brand = {
       ],
       scienceExplanation:
         'MIZUNO WAVE는 1997년에 소개된 미즈노의 시그니처 기술로, 미드솔 내부에 파도(Wave) 형태의 플레이트를 배치합니다. 이 구조가 착지 충격을 분산시켜 쿠셔닝을 제공하면서, 동시에 좌우 흔들림을 억제하여 안정성도 확보합니다. 모델에 따라 Parallel(평행), Fan-shaped(부채꼴) 등 다양한 형태로 변형 적용되며, Wave Rider, Wave Inspire 등 미즈노 대부분의 러닝화에 적용됩니다.',
-      performanceRating: 9,
       usedInShoes: ['mizuno-wave-rider-29', 'mizuno-wave-inspire-21', 'mizuno-wave-sky-9', 'mizuno-wave-rebellion-flash-2', 'mizuno-wave-horizon-8'],
-      characteristics: {
-        cushioning: 8,
-        responsiveness: 7,
-        durability: 10,
-        weight: 7,
-      },
     },
     {
       id: 'smooth-speed-plate',
@@ -180,14 +138,7 @@ export const mizunoBrand: Brand = {
       ],
       scienceExplanation:
         'Smooth Speed Plate(SSP)는 미즈노의 스피드 플레이트 플랫폼 명칭으로, 같은 이름이지만 모델에 따라 소재와 형상이 다릅니다. Neo Vista 2에서는 "유리섬유 인퓨즈드 웨이브 플레이트(glass-fibre infused wave plate)"로, Hyperwarp Pure에서는 "3D 풀 카본 플레이트"로 공식 표기됩니다. 공통적으로 착지 에너지를 효율적으로 전환하여 전방 추진력을 극대화하는 역할을 합니다.',
-      performanceRating: 9,
       usedInShoes: ['mizuno-wave-rebellion-flash-2', 'mizuno-wave-rebellion-flash-3'],
-      characteristics: {
-        cushioning: 5,
-        responsiveness: 10,
-        durability: 7,
-        weight: 9,
-      },
     },
 
     // ─── 안정화 (Stability) ───
@@ -207,14 +158,7 @@ export const mizunoBrand: Brand = {
       ],
       scienceExplanation:
         'Smooth Speed Assist는 미즈노의 레이싱 기술에서 파생된 지오메트리 컨셉입니다. 미드솔의 형상과 구조를 최적화하여 착지에서 이륙까지의 전환(Transition)을 부드럽게 만들고, 러너가 효율적인 러닝 폼을 유지하도록 돕습니다. Neo Zen, Neo Vista 2 등 미즈노의 최신 라인에서 핵심 기술로 적용됩니다.',
-      performanceRating: 8,
       usedInShoes: ['mizuno-wave-rebellion-flash-2', 'mizuno-wave-rebellion-flash-3'],
-      characteristics: {
-        cushioning: 6,
-        responsiveness: 8,
-        durability: 8,
-        weight: 8,
-      },
     },
 
     // ─── 아웃솔 (Outsole) ───
@@ -234,14 +178,7 @@ export const mizunoBrand: Brand = {
       ],
       scienceExplanation:
         'X10은 미즈노의 표준 카본 러버 아웃솔입니다. 고충격 구간, 특히 힐 스트라이크 부위에서 뛰어난 내구성과 접지력을 제공합니다. Wave Rider, Neo Vista 2 등 미즈노의 로드 러닝 라인업에 폭넓게 적용되어 데일리 러닝에 충분한 수명을 보장합니다.',
-      performanceRating: 7,
       usedInShoes: ['mizuno-wave-rider-29', 'mizuno-wave-inspire-21', 'mizuno-wave-sky-9', 'mizuno-wave-horizon-8'],
-      characteristics: {
-        cushioning: 4,
-        responsiveness: 5,
-        durability: 9,
-        weight: 7,
-      },
     },
     {
       id: 'g3-outsole',
@@ -259,14 +196,7 @@ export const mizunoBrand: Brand = {
       ],
       scienceExplanation:
         'G3 Outsole은 PU(폴리우레탄) 레진 기반의 미즈노 레이싱 전용 아웃솔입니다. 일반 러버보다 가벼우면서도 고속 주행에서 필요한 접지력을 확보합니다. Wave Rebellion Pro 2, Hyperwarp Pure 등 미즈노의 스피드/레이싱 라인에 적용되어 레이스 당일 최고의 퍼포먼스를 지원합니다.',
-      performanceRating: 8,
       usedInShoes: ['mizuno-wave-rebellion-flash-2', 'mizuno-wave-rebellion-flash-3'],
-      characteristics: {
-        cushioning: 3,
-        responsiveness: 7,
-        durability: 6,
-        weight: 9,
-      },
     },
   ],
 };

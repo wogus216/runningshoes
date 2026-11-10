@@ -19,7 +19,6 @@ export const kiprunBrand: Brand = {
       benefits: ['높은 에너지 리턴', '경량', '추운 날 경화가 적음(RunRepeat 실측)'],
       scienceExplanation:
         '킵런 공식 설명에 따르면 Fastech는 VFOAM 기술의 고성능 진화형이고, Fastech+는 "더 가볍고 템포에 맞게" 설계한 단계입니다. 킵서밋 맥스의 Fastech+는 초임계 유체(SCF) 공정으로 100% ATPU를 자체 발포해 이전 킵서밋 대비 에너지 리턴을 21% 높였다고 밝혔고, 킵스톰 엘리트는 SCF ATPU 컵솔 안에 SCF PEBA 인서트를 넣은 구성입니다. RunRepeat 실측 에너지 리턴은 킵서밋 맥스 힐 71.7%·전족부 73.8%, 킵스톰 엘리트 힐 68.9%·전족부 74.8%입니다.',
-      performanceRating: 8,
       usedInShoes: ['kiprun-kipstorm-elite', 'kiprun-kipsummit-max'],
     },
     {
@@ -31,7 +30,6 @@ export const kiprunBrand: Brand = {
       benefits: ['추진력 보조', '전족부 안정성', '로커 지오메트리와 결합한 구름'],
       scienceExplanation:
         '킵런은 공식 기술 페이지에서 카본 플레이트의 대중화를 목표로 내걸고, 가장 저렴한 킵스톰 챌린저부터 최상위 킵스톰 라인까지 카본 플레이트를 넣고 있습니다. 킵스톰 엘리트는 카본 플레이트와 로커 형상을 결합했고, RunRepeat 30도 굽힘 강성 21.4N(평균 15.5N)으로 평균보다 단단합니다.',
-      performanceRating: 7,
       usedInShoes: ['kiprun-kipstorm-elite'],
     },
   ],

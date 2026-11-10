@@ -28,14 +28,7 @@ export const newBalanceBrand: Brand = {
       ],
       scienceExplanation:
         'Infinion은 2025년 1080v15에서 데뷔한 뉴발란스의 최신 프리미엄 쿠셔닝 폼입니다. 뉴발란스가 "첫 러닝의 설렘을 유지한다"고 표현하는 이 기술의 핵심은 내구성(Durability)과 일관된 반발력입니다. 수백 km를 달려도 처음과 같은 쿠셔닝 경험을 제공하도록 설계되었으며, Fresh Foam X보다 향상된 에너지 리턴으로 프리미엄 데일리 러닝화의 새로운 기준을 제시합니다.',
-      performanceRating: 9,
       usedInShoes: ['new-balance-1080-v15'],
-      characteristics: {
-        cushioning: 10,
-        responsiveness: 8,
-        durability: 9,
-        weight: 8,
-      },
     },
     {
       id: 'fuelcell',
@@ -53,14 +46,7 @@ export const newBalanceBrand: Brand = {
       ],
       scienceExplanation:
         'FuelCell은 뉴발란스의 스피드 라인을 관통하는 고성능 폼 플랫폼입니다. SC Elite v5처럼 100% PEBA를 사용하는 모델은 오직 기록에만 집중하며, Rebel v5처럼 PEBA와 EVA를 섞은 블렌드 모델은 가성비와 트레이닝 내구성을 모두 잡는 전략입니다. 같은 FuelCell이라도 소재 구성에 따라 성능 등급이 명확히 나뉘는 것이 특징입니다.',
-      performanceRating: 9,
       usedInShoes: ['new-balance-rebel-v5', 'new-balance-sc-elite-v5', 'new-balance-sc-trainer-v3'],
-      characteristics: {
-        cushioning: 7,
-        responsiveness: 9,
-        durability: 7,
-        weight: 9,
-      },
     },
     {
       id: 'fresh-foam-x',
@@ -78,14 +64,7 @@ export const newBalanceBrand: Brand = {
       ],
       scienceExplanation:
         'Fresh Foam X는 뉴발란스의 데일리 및 입문자용 핵심 폼입니다. "가장 부드러운 착화감"을 목표로 설계되어, 880v15와 More v5 등 편안함을 최우선으로 하는 라인업에 적용됩니다. 착지 충격을 부드럽게 흡수하여 관절 부담을 줄이며, 러닝을 처음 시작하는 입문자부터 리커버리 목적의 상급자까지 폭넓게 사용됩니다.',
-      performanceRating: 7,
       usedInShoes: ['new-balance-880-v15', 'new-balance-1080-v14', 'new-balance-860-v14'],
-      characteristics: {
-        cushioning: 9,
-        responsiveness: 6,
-        durability: 8,
-        weight: 7,
-      },
     },
 
     // ─── 플레이트/구조 (Plate) ───
@@ -105,14 +84,7 @@ export const newBalanceBrand: Brand = {
       ],
       scienceExplanation:
         'Energy Arc는 단순히 카본 플레이트를 넣은 것이 아니라, 미드솔 중앙을 비워둔 "Void(빈 공간)" 구조가 핵심입니다. 착지 시 카본 플레이트가 휘어지며 빈 공간으로 들어갔다가, 이륙 시 튕겨 나오는 "에너지 저장 및 방출" 원리로 작동합니다. SC Elite v5와 SC Trainer v3에 적용되어 뉴발란스 레이싱 라인의 핵심 추진 시스템으로 자리 잡았습니다.',
-      performanceRating: 10,
       usedInShoes: ['new-balance-sc-elite-v5', 'new-balance-sc-trainer-v3'],
-      characteristics: {
-        cushioning: 5,
-        responsiveness: 10,
-        durability: 8,
-        weight: 9,
-      },
     },
 
     // ─── 안정화 (Stability) ───
@@ -132,14 +104,7 @@ export const newBalanceBrand: Brand = {
       ],
       scienceExplanation:
         'Stability Plane은 과거의 딱딱한 미디얼 포스트(Medial Post) 방식에서 벗어난 현대적 안정화 기술입니다. 하단 플랫폼을 넓게 설계하여 자연스럽게 발의 회내(프로네이션)를 억제합니다. 기계적 제어보다는 "안정적인 플랫폼 지오메트리"로 동작하여, 쿠셔닝을 희생하지 않으면서 안정성을 제공하는 것이 특징입니다. 860v14에 적용되어 있습니다.',
-      performanceRating: 7,
       usedInShoes: ['new-balance-860-v14'],
-      characteristics: {
-        cushioning: 6,
-        responsiveness: 5,
-        durability: 9,
-        weight: 7,
-      },
     },
 
     // ─── 어퍼 (Upper) ───
@@ -159,14 +124,7 @@ export const newBalanceBrand: Brand = {
       ],
       scienceExplanation:
         'Ultra Heel은 발목을 부드럽게 감싸는 인체공학적 힐 구조입니다. 아킬레스건에 가해지는 압박을 줄이도록 설계되어, 장거리 러닝에서도 힐 슬립(발꿈치 빠짐)이나 마찰 없이 쾌적한 착화감을 유지합니다. 1080v15, 880v15 등 뉴발란스의 데일리 러닝 라인업에 폭넓게 적용됩니다.',
-      performanceRating: 7,
       usedInShoes: ['new-balance-1080-v15', 'new-balance-880-v15'],
-      characteristics: {
-        cushioning: 6,
-        responsiveness: 5,
-        durability: 8,
-        weight: 7,
-      },
     },
 
     // ─── 아웃솔 (Outsole) ───
@@ -186,14 +144,7 @@ export const newBalanceBrand: Brand = {
       ],
       scienceExplanation:
         'HydroHesion은 수막현상을 방지하는 특수 화합물을 사용한 아웃솔 기술입니다. 880v15 등 고어텍스 모델에 주로 적용되며, 비가 오거나 젖은 노면에서도 일반 고무 대비 월등한 접지력을 유지합니다. 한국처럼 장마철이 있는 환경에서 사계절 러닝을 하는 러너에게 특히 유용한 기술입니다.',
-      performanceRating: 8,
       usedInShoes: ['new-balance-880-v15'],
-      characteristics: {
-        cushioning: 4,
-        responsiveness: 5,
-        durability: 9,
-        weight: 7,
-      },
     },
     {
       id: 'at-tread',
@@ -211,14 +162,7 @@ export const newBalanceBrand: Brand = {
       ],
       scienceExplanation:
         'AT Tread는 "All Terrain"의 약자로, 로드용 와플 패턴과 트레일용 러그의 중간 형태를 띠는 다목적 아웃솔입니다. 도심 아스팔트에서 충분한 접지력을 제공하면서도 공원이나 가벼운 흙길에서도 미끄러지지 않도록 설계되었습니다. 하나의 신발로 다양한 노면을 달리는 한국 도심 러너에게 실용적인 기술입니다.',
-      performanceRating: 7,
       usedInShoes: [],
-      characteristics: {
-        cushioning: 4,
-        responsiveness: 5,
-        durability: 8,
-        weight: 7,
-      },
     },
   ],
 };

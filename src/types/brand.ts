@@ -9,7 +9,12 @@ export interface BrandTechnology {
   description: string; // 한줄 요약
   benefits: string[]; // 장점 목록
   scienceExplanation: string; // 기술 원리 상세 설명
-  performanceRating: number; // 성능 점수 (1-10)
+  performanceRating?: number; // 성능 점수 (1-10)
+  verification?: {
+    checkedAt: string;
+    scope: string;
+    sources: { title: string; url: string; scope: string }[];
+  };
   usedInShoes: string[]; // 적용 신발 slug 목록
   image?: string; // 기술 이미지 URL
   characteristics?: {
@@ -31,6 +36,7 @@ export interface Brand {
   founded?: number; // 설립 연도
   headquarters?: string; // 본사 위치
   website?: string; // 공식 웹사이트
+  verification?: BrandTechnology['verification'];
 }
 
 // 카테고리 라벨 및 색상

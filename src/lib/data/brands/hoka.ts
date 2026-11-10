@@ -28,14 +28,7 @@ export const hokaBrand: Brand = {
       ],
       scienceExplanation:
         'MetaRocker™는 호카의 창립 철학이 담긴 핵심 지오메트리입니다. 미드솔의 앞뒤를 흔들의자(Rocker)처럼 둥글게 깎아 착지 시 자연스럽게 앞으로 굴러가는 전환을 유도합니다. 두꺼운 미드솔에도 불구하고 무겁지 않은 느낌을 주는 비결이며, 착지-중족부-이륙의 전환 과정에서 에너지 손실을 최소화하여 효율적인 보폭을 만들어냅니다.',
-      performanceRating: 9,
       usedInShoes: ['hoka-clifton-10', 'hoka-bondi-9', 'hoka-mach-6', 'hoka-arahi-8', 'hoka-gaviota-6', 'hoka-mach-x-3', 'hoka-rocket-x-3'],
-      characteristics: {
-        cushioning: 8,
-        responsiveness: 7,
-        durability: 9,
-        weight: 8,
-      },
     },
     {
       id: 'active-foot-frame',
@@ -53,14 +46,7 @@ export const hokaBrand: Brand = {
       ],
       scienceExplanation:
         'Active Foot Frame™은 호카의 두꺼운 미드솔에서 안정성을 확보하는 핵심 구조입니다. 미드솔의 양쪽 벽을 높여 발이 플랫폼 "안으로" 깊게 안착되는 컵(Cup) 형태를 만듭니다. 이 구조 덕분에 40mm 이상의 높은 스택에서도 좌우 흔들림이 적고, 별도의 딱딱한 안정화 장치 없이도 자연스러운 지지력을 제공합니다.',
-      performanceRating: 8,
       usedInShoes: ['hoka-clifton-10', 'hoka-bondi-9', 'hoka-arahi-8', 'hoka-gaviota-6'],
-      characteristics: {
-        cushioning: 7,
-        responsiveness: 5,
-        durability: 9,
-        weight: 7,
-      },
     },
 
     // ─── 미드솔/추진 (Midsole & Propulsion) ───
@@ -80,14 +66,7 @@ export const hokaBrand: Brand = {
       ],
       scienceExplanation:
         'Supercritical EVA는 초임계(Supercritical) 발포 공법을 적용한 호카의 차세대 폼입니다. 기존 EVA보다 기포를 더 균일하고 미세하게 만들어 무게는 줄이면서 반발력은 높였습니다. Bondi 9에서 처음 적용되어 호카의 대표 쿠셔닝 라인을 한 단계 업그레이드했으며, 수백 km를 달려도 꺼지지 않는 내구성이 특징입니다.',
-      performanceRating: 8,
       usedInShoes: ['hoka-bondi-9', 'hoka-mach-6', 'hoka-mach-x-3'],
-      characteristics: {
-        cushioning: 10,
-        responsiveness: 7,
-        durability: 9,
-        weight: 8,
-      },
     },
     {
       id: 'profly',
@@ -105,14 +84,7 @@ export const hokaBrand: Brand = {
       ],
       scienceExplanation:
         'PROFLY™는 호카의 듀얼 밀도 미드솔 기술입니다. 상층에는 부드러운 폼을 배치하여 착지 충격을 흡수하고, 하층에는 반응성이 높은 폼을 배치하여 이륙 시 추진력을 생성합니다. 이 이중 구조 덕분에 하나의 미드솔에서 쿠셔닝과 반응성이라는 상반된 성능을 동시에 얻을 수 있으며, Mach 시리즈와 Carbon X 라인에 적용됩니다.',
-      performanceRating: 8,
       usedInShoes: ['hoka-mach-6', 'hoka-mach-x-3'],
-      characteristics: {
-        cushioning: 8,
-        responsiveness: 8,
-        durability: 7,
-        weight: 8,
-      },
     },
     {
       id: 'proflyx',
@@ -130,14 +102,7 @@ export const hokaBrand: Brand = {
       ],
       scienceExplanation:
         'PROFLY X는 호카의 레이싱 철학이 담긴 통합 추진 시스템입니다. 단일 소재가 아니라 "추진력을 위한 패키지(Plate + Foam)"로, 모델에 따라 가장 탄력적인 PEBA 폼이 되기도 하고 이를 보조하는 플레이트 기술을 통칭하기도 합니다. 공통적으로는 "공격적인 추진감"을 목표로 하며, Rocket X 3와 Carbon X 시리즈에 적용됩니다.',
-      performanceRating: 10,
       usedInShoes: ['hoka-rocket-x-3'],
-      characteristics: {
-        cushioning: 6,
-        responsiveness: 10,
-        durability: 7,
-        weight: 9,
-      },
     },
 
     // ─── 안정화 (Stability) ───
@@ -157,14 +122,7 @@ export const hokaBrand: Brand = {
       ],
       scienceExplanation:
         'J-Frame™은 호카의 안정화 기술로, 미드솔 내측에 J자 형태의 고밀도 폼을 배치합니다. 과회내(오버프로네이션) 경향이 있는 러너의 발이 안쪽으로 무너지는 것을 방지하면서도, 딱딱한 플라스틱 포스트 대신 폼 소재를 사용하여 쿠셔닝을 유지합니다. Arahi 시리즈에 적용되어 "편안한 안정화"를 대표하는 기술입니다.',
-      performanceRating: 8,
       usedInShoes: ['hoka-arahi-8', 'hoka-gaviota-6'],
-      characteristics: {
-        cushioning: 7,
-        responsiveness: 5,
-        durability: 9,
-        weight: 7,
-      },
     },
     {
       id: 'hubble-heel',
@@ -182,14 +140,7 @@ export const hokaBrand: Brand = {
       ],
       scienceExplanation:
         'Hubble® Heel은 뒤꿈치 부분을 뒤쪽으로 확장한 힐 디자인입니다. 착지 시 접촉 면적을 넓혀 충격을 분산시키고, MetaRocker™ 지오메트리와 결합하여 뒤꿈치부터 앞발까지 자연스러운 롤링 전환을 유도합니다. Bondi 시리즈에서 특히 두드러지며, 뒤꿈치 착지(힐 스트라이크) 러너에게 안정감과 쿠셔닝을 동시에 제공합니다.',
-      performanceRating: 7,
       usedInShoes: ['hoka-bondi-9'],
-      characteristics: {
-        cushioning: 9,
-        responsiveness: 5,
-        durability: 8,
-        weight: 6,
-      },
     },
 
     // ─── 아웃솔 (Outsole) ───
@@ -209,14 +160,7 @@ export const hokaBrand: Brand = {
       ],
       scienceExplanation:
         'Durabrasion Rubber는 호카의 표준 아웃솔 고무입니다. 마찰이 가장 빨리 일어나는 뒤꿈치와 전족부에 전략적으로 배치되어 미드솔 폼이 직접 닳는 것을 방지합니다. 호카는 전체 무게를 줄이기 위해 아웃솔 면적을 최소화하는 경향이 있는데, Durabrasion은 그 적은 면적에서도 충분한 내구성을 제공하도록 설계되었습니다.',
-      performanceRating: 7,
       usedInShoes: ['hoka-clifton-10', 'hoka-bondi-9', 'hoka-mach-6'],
-      characteristics: {
-        cushioning: 4,
-        responsiveness: 5,
-        durability: 8,
-        weight: 8,
-      },
     },
     {
       id: 'sticky-rubber',
@@ -234,14 +178,7 @@ export const hokaBrand: Brand = {
       ],
       scienceExplanation:
         'Sticky Rubber는 호카의 레이싱 모델에 적용되는 고접착 아웃솔 고무입니다. 일반 Durabrasion보다 접지력을 우선시하여, 고속 주행 시 코너링이나 이륙 순간 미끄러짐을 최소화합니다. 내구성보다 레이스 당일 퍼포먼스에 집중한 설계로, Rocket X 3 등 레이싱 모델에 적용됩니다.',
-      performanceRating: 9,
       usedInShoes: ['hoka-rocket-x-3'],
-      characteristics: {
-        cushioning: 3,
-        responsiveness: 7,
-        durability: 6,
-        weight: 8,
-      },
     },
   ],
 };

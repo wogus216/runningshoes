@@ -27,14 +27,7 @@ export const adidasBrand: Brand = {
       ],
       scienceExplanation:
         'Lightstrike Pro는 아디다스의 최상위 레이싱용 폼입니다. 기존 Boost의 뛰어난 에너지 리턴은 유지하면서 무게를 획기적으로 줄인 것이 핵심입니다. PEBA 계열의 슈퍼크리티컬 폼 기술을 적용하여 착지 시 에너지를 효율적으로 저장하고 이륙 시 되돌려줍니다. Adios Pro 4에 풀렝스로 적용되어 카본 로드 및 기하학적 구조와 함께 시스템으로 작동하며, 엘리트 마라토너의 기록 경신에 기여하고 있습니다.',
-      performanceRating: 10,
       usedInShoes: ['adidas-adios-pro-4', 'adidas-adizero-evo-sl', 'adidas-boston-13', 'adidas-adizero-sl2'],
-      characteristics: {
-        cushioning: 9,
-        responsiveness: 10,
-        durability: 6,
-        weight: 10,
-      },
     },
     {
       id: 'lightstrike-2',
@@ -52,14 +45,7 @@ export const adidasBrand: Brand = {
       ],
       scienceExplanation:
         'Lightstrike 2.0은 기존 Lightstrike 폼을 업그레이드한 트레이닝용 미드솔입니다. 기존 EVA보다 가볍고 반응성이 개선되어 Boston 12/13의 핵심 폼으로 자리 잡았습니다. Lightstrike Pro보다 내구성이 뛰어나 매일 반복되는 훈련에도 성능이 오래 유지되며, 템포런이나 인터벌 같은 빠른 페이스 훈련에 적합한 균형 잡힌 성능을 제공합니다.',
-      performanceRating: 8,
       usedInShoes: ['adidas-boston-13', 'adidas-adizero-sl2'],
-      characteristics: {
-        cushioning: 7,
-        responsiveness: 8,
-        durability: 9,
-        weight: 8,
-      },
     },
     {
       id: 'dreamstrike-plus',
@@ -77,14 +63,7 @@ export const adidasBrand: Brand = {
       ],
       scienceExplanation:
         'Dreamstrike+는 기존 솔라글라이드(SolarGlide) 등을 대체하며 등장한 슈퍼노바(Supernova) 라인의 핵심 폼입니다. "매일 편안하게 신을 수 있는 쿠셔닝"을 목표로 개발되었으며, 부드러움과 안정성의 균형이 뛰어납니다. 레이싱 폼의 반발력보다는 착지 충격을 흡수하고 관절 부담을 줄이는 데 초점을 맞춰, 입문자부터 리커버리 목적의 상급자까지 폭넓게 사용됩니다.',
-      performanceRating: 7,
       usedInShoes: ['adidas-supernova-rise-3', 'adidas-supernova-rise-2'],
-      characteristics: {
-        cushioning: 9,
-        responsiveness: 6,
-        durability: 9,
-        weight: 7,
-      },
     },
     {
       id: 'light-boost',
@@ -102,14 +81,7 @@ export const adidasBrand: Brand = {
       ],
       scienceExplanation:
         'Light Boost는 아디다스의 대표 기술인 Boost(TPU 폼)를 경량화한 진화형입니다. 울트라부스트 라이트(Ultraboost Light)부터 적용되었으며, 일반 Boost 대비 약 30% 가벼워진 것을 공식적으로 강조하고 있습니다. Boost의 핵심 장점인 온도에 관계없는 일관된 쿠셔닝 성능, 뛰어난 에너지 리턴, 부드러운 착지감은 그대로 유지하면서 무게 부담을 줄였습니다.',
-      performanceRating: 8,
       usedInShoes: [],
-      characteristics: {
-        cushioning: 9,
-        responsiveness: 7,
-        durability: 8,
-        weight: 8,
-      },
     },
     {
       id: 'energyrods-carbon',
@@ -127,14 +99,7 @@ export const adidasBrand: Brand = {
       ],
       scienceExplanation:
         'Energyrods 2.0(카본 버전)은 아디다스의 독자적인 추진 기술입니다. 일반적인 풀렝스 카본 플레이트와 달리, 인간의 발가락 뼈(중족골) 구조를 형상화한 5개의 개별 로드로 구성됩니다. Adios Pro 4에서는 카본 주입(Carbon-infused) 소재를 사용하여 극강의 탄성을 제공하며, Lightstrike Pro 폼 사이에 배치되어 착지 시 에너지를 효율적으로 저장하고 이륙 시 폭발적인 추진력을 만들어냅니다.',
-      performanceRating: 10,
       usedInShoes: ['adidas-adios-pro-4'],
-      characteristics: {
-        cushioning: 5,
-        responsiveness: 10,
-        durability: 8,
-        weight: 9,
-      },
     },
     {
       id: 'energyrods-glass',
@@ -152,14 +117,7 @@ export const adidasBrand: Brand = {
       ],
       scienceExplanation:
         'Energyrods 2.0(유리섬유 버전)은 카본 버전과 동일한 발가락 뼈 형상 설계를 사용하지만, 소재를 유리섬유(Glass fiber)로 바꿔 상대적으로 유연한 추진력을 제공합니다. Boston 12/13에 적용되어 있으며, 카본 로드의 폭발적 추진력이 아닌 자연스러운 가이드와 효율적인 에너지 전달에 초점을 맞춥니다. 템포런, 인터벌, 장거리 훈련 등 다양한 페이스에서 효과적이어서 "만능 훈련화"의 핵심 요소입니다.',
-      performanceRating: 8,
       usedInShoes: ['adidas-boston-13'],
-      characteristics: {
-        cushioning: 5,
-        responsiveness: 8,
-        durability: 9,
-        weight: 8,
-      },
     },
     {
       id: 'support-rods',
@@ -177,14 +135,7 @@ export const adidasBrand: Brand = {
       ],
       scienceExplanation:
         'Support Rods는 슈퍼노바 라인에서 안정성을 위해 도입된 폼 기반 로드 기술입니다. 카본이나 유리섬유가 아닌 고밀도 폼 소재를 사용하여, 착지 시 발의 과도한 내전(프로네이션)을 부드럽게 가이드합니다. 카본 플레이트의 폭발적 추진이 아니라 안정적인 보행 경로를 유지하는 것이 목적이며, 평발 비율이 높은 한국 러너에게 특히 유용한 기술입니다.',
-      performanceRating: 7,
       usedInShoes: ['adidas-supernova-rise-3', 'adidas-supernova-rise-2'],
-      characteristics: {
-        cushioning: 6,
-        responsiveness: 5,
-        durability: 9,
-        weight: 7,
-      },
     },
     {
       id: 'lightlock-upper',
@@ -202,14 +153,7 @@ export const adidasBrand: Brand = {
       ],
       scienceExplanation:
         'Lightlock Upper는 Adios Pro 3에서 4로 넘어오며 강조된 레이싱 전용 어퍼 기술입니다. 초박형 메쉬 소재를 사용하여 고속 주행 시 발이 신발 안에서 밀리지 않도록 "잠금(Lock)"하는 기능에 초점을 맞췄습니다. 무게를 극한까지 줄이면서도 전략적으로 배치된 지지 구조와 통기 구멍으로 레이스 내내 쾌적함과 안정감을 유지합니다.',
-      performanceRating: 9,
       usedInShoes: ['adidas-adios-pro-4'],
-      characteristics: {
-        cushioning: 4,
-        responsiveness: 6,
-        durability: 7,
-        weight: 10,
-      },
     },
     {
       id: 'primeknit-plus',
@@ -227,14 +171,7 @@ export const adidasBrand: Brand = {
       ],
       scienceExplanation:
         'Primeknit+는 아디다스의 상징적인 니트 어퍼 기술의 최신 버전입니다. 디지털 니팅으로 한 번에 짜여진 원피스 구조로 이음새가 거의 없어 마찰을 최소화합니다. 부위별로 직조 밀도를 다르게 설정하여 지지가 필요한 곳은 촘촘하게, 통기가 필요한 곳은 느슨하게 짜여집니다. 특히 데일리 러닝이나 장거리에서 양말 같은 편안함을 제공합니다.',
-      performanceRating: 8,
       usedInShoes: [],
-      characteristics: {
-        cushioning: 6,
-        responsiveness: 5,
-        durability: 8,
-        weight: 8,
-      },
     },
     {
       id: 'continental-rubber',
@@ -252,19 +189,12 @@ export const adidasBrand: Brand = {
       ],
       scienceExplanation:
         'Continental Rubber는 독일 프리미엄 타이어 브랜드 콘티넨탈(Continental AG)과의 파트너십으로 개발된 아웃솔 고무입니다. 자동차 타이어에 사용되는 고무 배합 기술을 러닝화에 적용하여, 특히 젖은 노면에서 일반 러닝화 고무 대비 월등한 접지력을 제공합니다. 모델에 따라 Toe-off(이착지 전환) 구역에만 부분 적용하거나 전면에 배치하는 등 차별화되어 있으며, 아디다스 러닝화의 신뢰도를 지탱하는 핵심 파트너십입니다.',
-      performanceRating: 9,
       usedInShoes: [
         'adidas-supernova-rise-3',
         'adidas-supernova-rise-2',
         'adidas-boston-13',
         'adidas-adizero-evo-sl',
       ],
-      characteristics: {
-        cushioning: 5,
-        responsiveness: 6,
-        durability: 10,
-        weight: 6,
-      },
     },
     {
       id: 'lighttraxion',
@@ -282,14 +212,7 @@ export const adidasBrand: Brand = {
       ],
       scienceExplanation:
         'Lighttraxion은 Boston 13 등 아디제로 트레이닝 라인에서 무게를 줄이기 위해 접지 패턴을 최적화한 새로운 아웃솔입니다. 전통적인 풀커버 고무 대신 착지와 이착지 시 실제로 지면에 닿는 영역을 분석하여 필요한 곳에만 고무를 배치했습니다. 이를 통해 접지력은 유지하면서 불필요한 무게를 줄여, 빠른 페이스의 훈련에서 가벼운 발놀림을 가능하게 합니다.',
-      performanceRating: 7,
       usedInShoes: ['adidas-adios-pro-4', 'adidas-boston-13', 'adidas-adizero-sl2'],
-      characteristics: {
-        cushioning: 4,
-        responsiveness: 7,
-        durability: 7,
-        weight: 9,
-      },
     },
     {
       id: 'adiwear',
@@ -307,14 +230,7 @@ export const adidasBrand: Brand = {
       ],
       scienceExplanation:
         'Adiwear는 아디다스가 엔트리급 및 데일리 러닝화에 적용하는 고내마모성 고무 소재입니다. 콘티넨탈 러버보다 접지력은 다소 낮지만, 내구성을 최우선으로 설계되어 마모가 가장 빨리 일어나는 뒤꿈치와 전족부에 집중 배치됩니다. 주간 주행거리가 높은 러너나 예산을 고려하는 입문자에게 km당 비용을 낮춰주는 경제적인 기술입니다.',
-      performanceRating: 6,
       usedInShoes: ['adidas-supernova-rise-3', 'adidas-supernova-rise-2', 'adidas-adizero-sl2'],
-      characteristics: {
-        cushioning: 4,
-        responsiveness: 5,
-        durability: 10,
-        weight: 6,
-      },
     },
   ],
 };

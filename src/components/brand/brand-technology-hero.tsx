@@ -39,6 +39,14 @@ export function BrandTechnologyHero({ brand, techCount }: BrandTechnologyHeroPro
       {/* 브랜드 설명 */}
       <p className="text-secondary leading-relaxed mb-6">{brand.description}</p>
 
+      {brand.verification && <div className="mb-6 space-y-2 text-xs text-secondary">
+        <p>{brand.verification.checkedAt} 확인 · {brand.verification.scope}</p>
+        {brand.verification.sources.map((source) => <p key={source.url}>
+          <a href={source.url} target="_blank" rel="noopener noreferrer" className="underline">{source.title}</a>
+          {' · '}{source.scope}
+        </p>)}
+      </div>}
+
       {/* 브랜드 정보 */}
       <div className="flex flex-wrap gap-4 mb-6 text-sm">
         {brand.founded && (

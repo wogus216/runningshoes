@@ -25,7 +25,6 @@ export const liningBrand: Brand = {
       ],
       scienceExplanation:
         'PEBA(폴리에테르 블록 아마이드)를 초임계 발포해 펠릿 형태로 성형한 폼입니다. 나일론·EVA 기반 폼보다 밀도 대비 에너지 반환이 높고 가벼워, 슈퍼트레이너·레이싱화 미드솔에 사용됩니다.',
-      performanceRating: 8,
       usedInShoes: ['li-ning-red-hare-9-ultra', 'li-ning-red-hare-9-pro'],
     },
     {
@@ -42,7 +41,6 @@ export const liningBrand: Brand = {
       ],
       scienceExplanation:
         '나이키 줌에어가 공기 주머니로 에너지를 저장·반환하는 것과 유사하게, Super Boom은 공기 대신 고체 고반발 폼 슬래브를 미드솔에 내장해 압축 시 저장한 에너지를 복원합니다. 다만 95% 에너지 리턴은 제조사 자체 측정치로, 독립 랩 검증은 아직 없습니다.',
-      performanceRating: 7,
       usedInShoes: ['li-ning-red-hare-9-ultra'],
     },
     {
@@ -59,7 +57,6 @@ export const liningBrand: Brand = {
       ],
       scienceExplanation:
         '풀카본 추진 플레이트와 달리 미드풋에만 들어가는 유리섬유 플레이트로, 발 전체를 굴려주는 롤링 추진이 아니라 미드솔의 비틀림을 잡아 안정성을 보조합니다. 해외 실측 리뷰는 "주행 중 플레이트 반발이 거의 감지되지 않는다"고 평가합니다.',
-      performanceRating: 6,
       usedInShoes: ['li-ning-red-hare-9-ultra'],
     },
   ],

@@ -28,14 +28,7 @@ export const pumaBrand: Brand = {
       ],
       scienceExplanation:
         'NITROFOAM Elite는 푸마의 레이싱 라인을 위한 최상위 폼입니다. 프리미엄 원료에 질소 주입(nitrogen-injected) 공정을 적용하여 최대 에너지 리턴을 구현합니다. Fast-R NITRO Elite 3, Deviate NITRO Elite Trail 등 엘리트 레이싱 모델에 적용되어 PWRPLATE 카본 플레이트와 조합하여 폭발적 추진력을 제공합니다.',
-      performanceRating: 10,
       usedInShoes: ['puma-fast-r-nitro-elite-3', 'puma-deviate-nitro-elite-3'],
-      characteristics: {
-        cushioning: 8,
-        responsiveness: 10,
-        durability: 7,
-        weight: 10,
-      },
     },
     {
       id: 'nitrofoam',
@@ -53,14 +46,7 @@ export const pumaBrand: Brand = {
       ],
       scienceExplanation:
         'NITROFOAM은 푸마의 핵심 미드솔 폼으로, 질소 주입(nitrogen-injected)과 초임계(supercritical) 발포 공정을 사용합니다. 이 공정은 폼 내부에 균일한 미세 기포를 생성하여 무게는 줄이고 반발력과 응답성을 높입니다. Velocity NITRO 4, Deviate NITRO 4 등 푸마 NITRO 러닝 라인업 전체에 적용되는 기반 기술입니다.',
-      performanceRating: 8,
       usedInShoes: ['puma-velocity-nitro-4', 'puma-magmax-nitro-2', 'puma-magnify-nitro-3', 'puma-deviate-nitro-4', 'puma-deviate-nitro-3'],
-      characteristics: {
-        cushioning: 8,
-        responsiveness: 8,
-        durability: 8,
-        weight: 8,
-      },
     },
     {
       id: 'profoam',
@@ -78,14 +64,7 @@ export const pumaBrand: Brand = {
       ],
       scienceExplanation:
         'PROFOAM은 푸마의 고성능 EVA 기반 미드솔 폼으로, 착지 쿠셔닝과 다음 스텝 추진을 동시에 제공합니다. PROFOAMLITE 버전은 33% 더 가볍다고 푸마가 공식 발표했습니다. NITRO 라인보다 상대적으로 입문자와 다목적 트레이닝에 적합한 포지셔닝입니다.',
-      performanceRating: 7,
       usedInShoes: [],
-      characteristics: {
-        cushioning: 7,
-        responsiveness: 6,
-        durability: 8,
-        weight: 7,
-      },
     },
 
     // ─── 플레이트 (Plate) ───
@@ -105,14 +84,7 @@ export const pumaBrand: Brand = {
       ],
       scienceExplanation:
         'PWRPLATE는 푸마의 카본 플레이트 기술로, 기존 INNOPLATE의 진화 버전입니다. 미드솔 안정화와 에너지 전달(transfer) 극대화를 목표로 설계되었으며, 모델에 따라 연장형(extended), 카본 합성(composite) 등 사양이 달라집니다. Fast-R NITRO Elite 3, Deviate NITRO 4 등 스피드/레이싱 라인에 적용됩니다.',
-      performanceRating: 9,
       usedInShoes: ['puma-magmax-nitro-2', 'puma-deviate-nitro-4', 'puma-deviate-nitro-3', 'puma-deviate-nitro-elite-3', 'puma-fast-r-nitro-elite-3'],
-      characteristics: {
-        cushioning: 5,
-        responsiveness: 10,
-        durability: 8,
-        weight: 9,
-      },
     },
 
     // ─── 안정화 (Stability) ───
@@ -132,14 +104,7 @@ export const pumaBrand: Brand = {
       ],
       scienceExplanation:
         'RUNGUIDE는 푸마의 안정화 기술로, 미드솔 주변에 단단한 밀도의 림(Firm Density Rim)을 배치하여 발을 중앙에 정렬(alignment)합니다. 과도한 회내(프로네이션)를 억제하면서도 쿠셔닝을 유지하는 것이 특징이며, ForeverRun NITRO 2 등 안정화 라인에서 핵심 역할을 합니다.',
-      performanceRating: 8,
       usedInShoes: [],
-      characteristics: {
-        cushioning: 7,
-        responsiveness: 6,
-        durability: 9,
-        weight: 7,
-      },
     },
 
     // ─── 어퍼 (Upper) ───
@@ -159,14 +124,7 @@ export const pumaBrand: Brand = {
       ],
       scienceExplanation:
         'ULTRAWEAVE는 푸마의 엘리트 퍼포먼스용 초경량 어퍼 패브릭입니다. 고정밀 직조와 4-way 스트레치를 결합하여 무게와 마찰을 최소화하면서도 발을 안정적으로 감쌉니다. Fast-R NITRO Elite 3, Deviate NITRO Elite Trail 등 레이싱 라인에 적용됩니다.',
-      performanceRating: 9,
       usedInShoes: ['puma-fast-r-nitro-elite-3', 'puma-deviate-nitro-elite-3'],
-      characteristics: {
-        cushioning: 5,
-        responsiveness: 6,
-        durability: 7,
-        weight: 10,
-      },
     },
 
     // ─── 아웃솔 (Outsole) ───
@@ -186,14 +144,7 @@ export const pumaBrand: Brand = {
       ],
       scienceExplanation:
         'PUMAGRIP은 푸마의 퍼포먼스 러버 컴파운드 아웃솔입니다. 내구성(경도)과 그립(연성)의 균형을 강조하며, 특히 젖은 지면(wet grounds)에 최적화되었다고 푸마 공식 글로서리에 명시되어 있습니다. LT(경량) 버전은 레이싱용, ATR 버전은 트레일용으로 세분화됩니다.',
-      performanceRating: 7,
       usedInShoes: ['puma-velocity-nitro-4', 'puma-magmax-nitro-2', 'puma-magnify-nitro-3', 'puma-deviate-nitro-4', 'puma-deviate-nitro-3', 'puma-deviate-nitro-elite-3', 'puma-fast-r-nitro-elite-3'],
-      characteristics: {
-        cushioning: 4,
-        responsiveness: 5,
-        durability: 8,
-        weight: 7,
-      },
     },
   ],
 };

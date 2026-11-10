@@ -28,14 +28,7 @@ export const onBrand: Brand = {
       ],
       scienceExplanation:
         'CloudTec®는 On의 시그니처 쿠셔닝 시스템으로, 미드솔에 배치된 Cloud 요소(빈 공간이 있는 관 형태의 구조)가 착지 시 개별적으로 압축되며 충격을 흡수합니다. 같은 CloudTec이라도 내부에 채워지는 폼(Helion, Zero-Gravity 등)에 따라 착지감이 달라지며, On 전 러닝 라인업에 적용되는 핵심 구조입니다.',
-      performanceRating: 9,
       usedInShoes: ['on-cloudsurfer-2', 'on-cloudrunner-2', 'on-cloudmonster-2', 'on-cloudmonster-hyper', 'on-cloudflow-5'],
-      characteristics: {
-        cushioning: 9,
-        responsiveness: 7,
-        durability: 8,
-        weight: 8,
-      },
     },
     {
       id: 'cloudtec-phase',
@@ -53,14 +46,7 @@ export const onBrand: Brand = {
       ],
       scienceExplanation:
         'CloudTec Phase™는 FEA(유한요소해석)로 설계된 차세대 CloudTec 시스템입니다. On 공식 설명에 따르면, 미드솔이 "순차적으로 압축(Sequentially Collapsing)"되어 힐에서 토까지의 전환을 더 부드럽게 만듭니다. Cloudeclipse에서 이중 구조 CloudTec Phase가 적용되어 착지 시 순차적으로 압축되며 자연스러운 롤스루를 유도합니다.',
-      performanceRating: 9,
       usedInShoes: ['on-cloudsurfer-2'],
-      characteristics: {
-        cushioning: 10,
-        responsiveness: 8,
-        durability: 8,
-        weight: 7,
-      },
     },
     {
       id: 'helion',
@@ -78,14 +64,7 @@ export const onBrand: Brand = {
       ],
       scienceExplanation:
         'Helion™은 On이 "스위스 엔지니어링 슈퍼폼(Swiss-engineered superfoam)"으로 부르는 자체 개발 미드솔 소재입니다. CloudTec 구조 내부에 채워져 착지 시 부드러운 쿠셔닝을 제공하면서도 이륙 시 에너지를 효율적으로 반환합니다. Cloudsurfer, Cloudrunner, Cloudmonster 등 On의 주요 러닝 모델에 폭넓게 적용됩니다.',
-      performanceRating: 8,
       usedInShoes: ['on-cloudsurfer-2', 'on-cloudrunner-2', 'on-cloudmonster-2', 'on-cloudmonster-hyper', 'on-cloudflow-5'],
-      characteristics: {
-        cushioning: 8,
-        responsiveness: 8,
-        durability: 8,
-        weight: 8,
-      },
     },
     {
       id: 'helion-hf',
@@ -103,14 +82,7 @@ export const onBrand: Brand = {
       ],
       scienceExplanation:
         'Helion™ HF(Hyper Foam)는 On의 Cloudboom 레이싱 라인을 위해 개발된 고성능 폼입니다. 기존 Helion 대비 에너지 리턴과 착지 부드러움이 대폭 강화되었으며, Cloudboom Strike LS에서는 Helion HF 2레이어 + 카본 Speedboard 조합으로 적용되어 엘리트 레이싱에 필요한 폭발적 추진력을 제공합니다.',
-      performanceRating: 10,
       usedInShoes: ['on-cloudsurfer-2', 'on-cloudmonster-2', 'on-cloudmonster-hyper', 'on-cloudflow-5', 'on-cloudboom-strike'],
-      characteristics: {
-        cushioning: 8,
-        responsiveness: 10,
-        durability: 6,
-        weight: 10,
-      },
     },
 
     // ─── 플레이트/추진 (Plate) ───
@@ -130,14 +102,7 @@ export const onBrand: Brand = {
       ],
       scienceExplanation:
         'Speedboard®는 On의 추진 보드 플랫폼으로, 착지 시 저장된 운동 에너지를 이륙 시 속도로 변환합니다. On이 공식적으로 "소재, 형상, 두께, 곡률이 모델별로 달라진다"고 명시하며, Cloudboom Strike에서는 "스푼 형태의 100% 카본 Speedboard"가 적용되어 레이싱에 최적화된 추진력을 제공합니다.',
-      performanceRating: 9,
       usedInShoes: ['on-cloudsurfer-2', 'on-cloudrunner-2', 'on-cloudmonster-2', 'on-cloudmonster-hyper', 'on-cloudflow-5', 'on-cloudboom-strike'],
-      characteristics: {
-        cushioning: 5,
-        responsiveness: 9,
-        durability: 9,
-        weight: 8,
-      },
     },
 
     // ─── 어퍼 (Upper) ───
@@ -157,14 +122,7 @@ export const onBrand: Brand = {
       ],
       scienceExplanation:
         'LightSpray™는 On의 혁신적 어퍼 제조 방식으로, "가장 가벼운 어퍼(약 30g)"를 구현합니다. 전통적인 재봉이나 접착 대신 특수 소재를 스프레이하여 형성하는 방식으로, 끈 없는 구조와 두 번째 피부 같은 핏을 제공합니다. Cloudboom Strike LS에 적용되어 Helion HF + 카본 Speedboard와 조합됩니다.',
-      performanceRating: 9,
       usedInShoes: [],
-      characteristics: {
-        cushioning: 5,
-        responsiveness: 6,
-        durability: 7,
-        weight: 10,
-      },
     },
 
     // ─── 아웃솔 (Outsole) ───
@@ -184,14 +142,7 @@ export const onBrand: Brand = {
       ],
       scienceExplanation:
         'Missiongrip™은 스위스 알프스에서 개발·테스트된 On의 트레일 전용 아웃솔입니다. 특수 그립 러버 컴파운드와 향상된 트랙션 패턴으로 젖은 바위, 진흙, 뿌리 등 다양한 오프로드 조건에서 뛰어난 접지력과 컨트롤을 제공합니다. Zero-Gravity 폼과 조합하여 On의 트레일 라인업을 구성합니다.',
-      performanceRating: 8,
       usedInShoes: [],
-      characteristics: {
-        cushioning: 3,
-        responsiveness: 6,
-        durability: 8,
-        weight: 7,
-      },
     },
   ],
 };

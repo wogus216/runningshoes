@@ -20,7 +20,6 @@ export const underArmourBrand: Brand = {
       benefits: ['충격 흡수', '높은 에너지 리턴', '장거리 쿠션 유지'],
       scienceExplanation:
         '언더아머 공식 설명에 따르면 UA HOVR는 "부드럽거나 탄력 있거나 둘 중 하나인 기존 쿠션과 달리 둘 다를 갖춘" 쿠셔닝으로, 착지 때 에너지를 되돌려 앞으로 밀어 줍니다. HOVR+는 그 최신·고탄성 버전으로 인피니트 엘리트 2에 풀사이즈로 들어갔고, RunRepeat 실측 에너지 리턴은 힐 72.6%·전족부 74.8%입니다.',
-      performanceRating: 8,
       usedInShoes: ['under-armour-infinite-elite-2'],
     },
     {
@@ -32,7 +31,6 @@ export const underArmourBrand: Brand = {
       benefits: ['고무 아웃솔을 없앤 경량화', '노면 접지', '부드러운 착지감'],
       scienceExplanation:
         '언더아머는 UA Flow가 "부드러우면서도 매우 튼튼해 고무 아웃솔이 필요 없고, 더 가볍고 접지가 좋다"고 설명합니다. 벨로시티 엘리트 2에서는 전족부 Pebax 층 아래 바닥층으로 쓰였는데, RunRepeat 드레멜 테스트 마모가 6.2mm로 커 레이스 전용 내구성으로 보는 편이 맞습니다.',
-      performanceRating: 6,
       usedInShoes: ['under-armour-velociti-elite-2'],
     },
     {
@@ -44,7 +42,6 @@ export const underArmourBrand: Brand = {
       benefits: ['추진력 보조', '전족부 강성'],
       scienceExplanation:
         '벨로시티 엘리트 2는 Pebax와 UA Flow 두 폼 층 사이에 풀사이즈 탄소 섬유 플레이트를 넣은 구조입니다(한국 공식 상세). RunRepeat는 플레이트가 "꽤 단단하다"고 적었습니다.',
-      performanceRating: 7,
       usedInShoes: ['under-armour-velociti-elite-2'],
     },
   ],

@@ -28,14 +28,7 @@ export const sauconyBrand: Brand = {
       ],
       scienceExplanation:
         'PWRRUN HG는 써코니의 최상급 미드솔 폼으로, 최대 에너지 리턴과 경량화를 동시에 달성합니다. 레이싱 라인에서 핵심 기술로 사용되며, SPEEDROLL 지오메트리 및 카본 플레이트와 조합하여 엘리트 레이서에게 폭발적인 추진력을 제공합니다.',
-      performanceRating: 10,
       usedInShoes: ['saucony-endorphin-elite-2'],
-      characteristics: {
-        cushioning: 8,
-        responsiveness: 10,
-        durability: 7,
-        weight: 10,
-      },
     },
     {
       id: 'pwrrun-pb',
@@ -53,14 +46,7 @@ export const sauconyBrand: Brand = {
       ],
       scienceExplanation:
         'PWRRUN PB는 PEBA(폴리에테르 블록 아마이드) 폴리머 블렌드를 비디드(구슬형)으로 발포한 써코니의 고성능 폼입니다. 써코니 공식 기술 용어집에 따르면 EVA 대비 절반 무게에 88% 에너지 리턴을 달성합니다. Endorphin Pro, Endorphin Speed 등 Endorphin 라인의 핵심 폼으로 사용됩니다.',
-      performanceRating: 9,
       usedInShoes: ['saucony-triumph-23', 'saucony-endorphin-pro-4', 'saucony-endorphin-speed-5'],
-      characteristics: {
-        cushioning: 8,
-        responsiveness: 9,
-        durability: 7,
-        weight: 9,
-      },
     },
     {
       id: 'pwrrun-plus',
@@ -78,14 +64,7 @@ export const sauconyBrand: Brand = {
       ],
       scienceExplanation:
         'PWRRUN+는 PU(폴리우레탄) 기반의 저밀도 쿠셔닝 폼입니다. 써코니 공식 용어집에서 "더 부드럽고 가볍게" 설계되었다고 설명하며, 충격흡수·반응성·내구성·무게 등 6가지 요소의 밸런스를 강조합니다. Triumph 23 등 프리미엄 쿠셔닝 라인에 적용됩니다.',
-      performanceRating: 8,
       usedInShoes: ['saucony-ride-18', 'saucony-triumph-23'],
-      characteristics: {
-        cushioning: 9,
-        responsiveness: 7,
-        durability: 9,
-        weight: 7,
-      },
     },
     {
       id: 'pwrrun',
@@ -103,14 +82,7 @@ export const sauconyBrand: Brand = {
       ],
       scienceExplanation:
         'PWRRUN은 써코니의 데일리 러닝 표준 미드솔 폼으로, 최신 EVA 기반으로 이전 세대 대비 반발력과 내구성이 향상되었습니다. Ride 18, Guide 18, Kinvara 16 등 써코니의 핵심 데일리·안정화 모델에 폭넓게 적용되어 편안하고 안정적인 라이드를 제공합니다.',
-      performanceRating: 7,
       usedInShoes: ['saucony-ride-18', 'saucony-guide-18', 'saucony-kinvara-16', 'saucony-hurricane-25'],
-      characteristics: {
-        cushioning: 8,
-        responsiveness: 7,
-        durability: 8,
-        weight: 7,
-      },
     },
 
     // ─── 플레이트/추진 (Plate) ───
@@ -130,14 +102,7 @@ export const sauconyBrand: Brand = {
       ],
       scienceExplanation:
         'SPEEDROLL은 써코니가 "연속 모멘텀 느낌으로 앞으로 굴려주는 기술"로 정의한 로커 지오메트리입니다. 핵심 변수로 (1) 높아진 쿠셔닝과 (2) 단단한(스티프) 전족부를 명시하며, 이 두 요소가 착지 에너지를 전방으로 자연스럽게 전환합니다. 카본/나일론 플레이트와 조합하여 Endorphin 라인 전체의 추진 시스템을 구성합니다.',
-      performanceRating: 9,
       usedInShoes: ['saucony-endorphin-pro-4', 'saucony-endorphin-elite-2', 'saucony-endorphin-speed-5'],
-      characteristics: {
-        cushioning: 6,
-        responsiveness: 9,
-        durability: 8,
-        weight: 8,
-      },
     },
     {
       id: 'carbon-plate',
@@ -155,14 +120,7 @@ export const sauconyBrand: Brand = {
       ],
       scienceExplanation:
         '써코니의 카본 플레이트 시스템은 모델에 따라 사양이 다릅니다. Endorphin Elite에는 슬로티드(슬롯) 카본 플레이트가 적용되어 에너지 리턴과 적응적 라이드를 제공하고, Endorphin Pro에는 풀랭스 카본 플레이트가 SPEEDROLL과 조합됩니다. Endorphin Trainer에는 3/4 길이의 카본 플레이트가 훈련용으로 튜닝되어 적용됩니다.',
-      performanceRating: 10,
       usedInShoes: ['saucony-endorphin-pro-4', 'saucony-endorphin-elite-2'],
-      characteristics: {
-        cushioning: 5,
-        responsiveness: 10,
-        durability: 7,
-        weight: 9,
-      },
     },
     {
       id: 'winged-nylon-plate',
@@ -180,14 +138,7 @@ export const sauconyBrand: Brand = {
       ],
       scienceExplanation:
         'Winged Nylon Plate는 Endorphin Speed 계열에 적용되는 유연한 플레이트입니다. 나일론 소재로 카본보다 부드러운 굴곡성을 제공하면서도, 윙(날개) 형태의 설계로 전방 추진력을 더합니다. PWRRUN PB 폼 + SPEEDROLL과 조합하여 데일리 스피드 트레이닝에 최적화된 라이드를 제공합니다.',
-      performanceRating: 8,
       usedInShoes: ['saucony-endorphin-speed-5'],
-      characteristics: {
-        cushioning: 5,
-        responsiveness: 8,
-        durability: 8,
-        weight: 8,
-      },
     },
 
     // ─── 안정화 (Stability) ───
@@ -207,14 +158,7 @@ export const sauconyBrand: Brand = {
       ],
       scienceExplanation:
         'CenterPath Technology는 써코니의 안정화 라인 핵심 기술입니다. Guide 18, Hurricane 25 등에서 코어 기술로 적용되며, 쿠셔닝이 풍부한 미드솔에서 발이 좌우로 흔들리는 것을 방지하고 중심 경로를 유지하도록 가이딩합니다. 과도한 교정 없이 자연스러운 안정성을 제공하는 것이 특징입니다.',
-      performanceRating: 8,
       usedInShoes: ['saucony-guide-18', 'saucony-hurricane-25'],
-      characteristics: {
-        cushioning: 7,
-        responsiveness: 6,
-        durability: 9,
-        weight: 7,
-      },
     },
     {
       id: 'formfit',
@@ -232,14 +176,7 @@ export const sauconyBrand: Brand = {
       ],
       scienceExplanation:
         'FORMFIT은 써코니 공식 용어집에서 "언더풋 크래들 + 형태에 맞게 변형되는 쿠셔닝 + 늘고 보호하는 어퍼 소재"를 결합한 3D 핏 접근으로 정의됩니다. 미드솔, 인솔, 어퍼를 통합적으로 설계하여 발 형태에 맞춰 개인화된 착화감을 제공하며, 써코니의 데일리·안정화 라인에 폭넓게 적용됩니다.',
-      performanceRating: 7,
       usedInShoes: ['saucony-ride-18', 'saucony-triumph-23', 'saucony-guide-18', 'saucony-hurricane-25'],
-      characteristics: {
-        cushioning: 7,
-        responsiveness: 5,
-        durability: 8,
-        weight: 7,
-      },
     },
 
     // ─── 아웃솔 (Outsole) ───
@@ -259,14 +196,7 @@ export const sauconyBrand: Brand = {
       ],
       scienceExplanation:
         'PWRTRAC은 써코니 공식 용어집에서 "점착·내구 러버, 접지·내마모 탁월, COF(마찰계수)가 일반 카본 러버의 3배"라고 정의된 고성능 아웃솔 고무입니다. 뛰어난 점착성으로 젖은 노면에서도 안정적인 그립을 제공하며, 내마모성도 우수하여 써코니의 로드 러닝 라인업 전반에 적용됩니다.',
-      performanceRating: 8,
       usedInShoes: ['saucony-ride-18', 'saucony-triumph-23', 'saucony-guide-18', 'saucony-kinvara-16', 'saucony-hurricane-25', 'saucony-endorphin-pro-4', 'saucony-endorphin-elite-2', 'saucony-endorphin-speed-5'],
-      characteristics: {
-        cushioning: 4,
-        responsiveness: 6,
-        durability: 9,
-        weight: 7,
-      },
     },
     {
       id: 'xt-900',
@@ -284,14 +214,7 @@ export const sauconyBrand: Brand = {
       ],
       scienceExplanation:
         'XT-900은 써코니의 프리미엄 카본 러버 아웃솔입니다. 써코니 공식 용어집에서 "카본 러버 아웃솔 소재(마모·접지 특성)"로 정의되며, XT-600보다 상위의 내구성을 제공합니다. 마모가 집중되는 뒤꿈치와 전족부에 전략적으로 배치되어 신발 수명을 연장합니다.',
-      performanceRating: 7,
       usedInShoes: ['saucony-ride-18', 'saucony-guide-18', 'saucony-hurricane-25'],
-      characteristics: {
-        cushioning: 4,
-        responsiveness: 5,
-        durability: 10,
-        weight: 6,
-      },
     },
   ],
 };

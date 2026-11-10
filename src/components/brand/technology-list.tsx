@@ -138,7 +138,7 @@ function TechnologySection({ technology, shoes }: { technology: BrandTechnology;
           <div>
             <h3 className="flex items-center gap-2 text-sm font-bold text-primary mb-3">
               <Sparkles className="w-4 h-4 text-sky-700" />
-              주요 장점
+              {technology.verification ? '선택할 때 확인할 점' : '주요 장점'}
             </h3>
             <ul className="space-y-2">
               {technology.benefits.map((benefit, index) => (
@@ -150,6 +150,20 @@ function TechnologySection({ technology, shoes }: { technology: BrandTechnology;
             </ul>
           </div>
         </div>
+
+        {technology.verification && (
+          <div className="space-y-2 text-xs text-secondary">
+            <p>{technology.verification.checkedAt} 확인 · {technology.verification.scope}</p>
+            <ul className="space-y-2">
+              {technology.verification.sources.map((source) => (
+                <li key={source.url}>
+                  <a href={source.url} target="_blank" rel="noopener noreferrer" className="underline">{source.title}</a>
+                  <p>{source.scope}</p>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
 
         {/* 적용 신발 */}
         {appliedShoes.length > 0 && (
@@ -215,8 +229,10 @@ function TechnologySection({ technology, shoes }: { technology: BrandTechnology;
 }
 
 export function TechnologyList({ brand, shoes }: TechnologyListProps) {
+  // Previously omitted outsole bodies are exposed after their sources have been checked.
+  const visibleTechnologies = brand.technologies.filter((tech) => tech.category !== 'outsole' || tech.verification);
   // 카테고리별로 기술 그룹화
-  const groupedTechnologies = brand.technologies.reduce(
+  const groupedTechnologies = visibleTechnologies.reduce(
     (acc, tech) => {
       if (!acc[tech.category]) {
         acc[tech.category] = [];
@@ -227,7 +243,7 @@ export function TechnologyList({ brand, shoes }: TechnologyListProps) {
     {} as Record<string, BrandTechnology[]>
   );
 
-  const categoryOrder = ['midsole', 'plate', 'cushioning', 'stability', 'upper'];
+  const categoryOrder = ['midsole', 'plate', 'cushioning', 'stability', 'upper', 'outsole'];
   const sortedCategories = categoryOrder.filter((cat) => groupedTechnologies[cat]?.length > 0);
 
   return (
@@ -236,7 +252,7 @@ export function TechnologyList({ brand, shoes }: TechnologyListProps) {
       <nav className="section-card border border-[var(--accent-line)] bg-white/84 p-4">
         <p className="text-xs text-tertiary mb-2">빠른 이동</p>
         <div className="flex flex-wrap gap-2">
-          {brand.technologies.map((tech) => {
+          {visibleTechnologies.map((tech) => {
             const colorClasses = categoryColorClasses[tech.category];
             return (
               <a

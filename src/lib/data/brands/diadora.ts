@@ -23,9 +23,7 @@ export const diadoraBrand: Brand = {
       benefits: ['미드솔 경량화(공식: 무게 40% 감소)', '부드러운 착지감', '높은 충격흡수'],
       scienceExplanation:
         '디아도라 공식 설명에 따르면 ANIMA N2는 미드솔의 반응성을 40% 높이면서 무게를 40% 줄인 컴파운드입니다. RunRepeat 랩에서 아토모 스타는 경도 14.0 HA·힐 충격흡수 149 SA, 프리퀀자 2는 11.8 HA·힐 161 SA로 측정돼 매우 부드럽고 충격흡수가 큰 폼으로 확인됐습니다. 반면 반발은 아토모 스타 53.9~57.4%, 프리퀀자 2 59.4~62.7%로, PEBA 계열 슈퍼폼에는 못 미칩니다.',
-      performanceRating: 6,
       usedInShoes: ['diadora-atomo-star', 'diadora-frequenza-2'],
-      characteristics: { cushioning: 9, responsiveness: 6, weight: 7 },
     },
     {
       id: 'diadora-anima',
@@ -36,9 +34,7 @@ export const diadoraBrand: Brand = {
       benefits: ['EVA 라이트 대비 경량화(공식: 20%)', '안정적인 착지감', '가격대가 낮은 라인에 적용'],
       scienceExplanation:
         '디아도라 공식 설명은 ANIMA가 EVA 라이트 컴파운드 대비 반응성을 30% 높이고 미드솔 무게를 20% 줄였으며, 반응성 수준이 60% 안팎이라고 밝힙니다. 다만 RunRepeat 랩 실측 반발은 누클레오 2 힐 47.8%·전족부 52.2%, 미토스 블루실드 볼로 5 힐 42.8%·전족부 47.4%로 공식 수치보다 낮게 나왔습니다. 경도는 17.9~20.0 HA로 ANIMA N2보다 단단합니다.',
-      performanceRating: 5,
       usedInShoes: ['diadora-nucleo-2', 'diadora-mythos-blushield-volo-5'],
-      characteristics: { cushioning: 7, responsiveness: 4, weight: 6 },
     },
     {
       id: 'diadora-anima-pbx',
@@ -49,7 +45,6 @@ export const diadoraBrand: Brand = {
       benefits: ['초임계 발포 경량 폼', '높은 반응성(공식: 55% 향상)', '카본 플레이트와 결합'],
       scienceExplanation:
         '디아도라 공식 설명에 따르면 ANIMA PBX는 초임계 발포로 만들어 미드솔 반응성을 55% 높이고 무게를 40% 줄였습니다. 카본 플레이트와 함께 쓰여 에너지 리턴 80%를 낸다는 것이 디아도라의 주장입니다. 현재 이 사이트에는 ANIMA PBX를 쓴 모델이 등록돼 있지 않습니다.',
-      performanceRating: 8,
       usedInShoes: [],
     },
     {
@@ -61,7 +56,6 @@ export const diadoraBrand: Brand = {
       benefits: ['좌우 비대칭 움직임 감소(공식)', '거슬리지 않는 지지감', '착지 충격 완화'],
       scienceExplanation:
         '디아도라 공식 설명에 따르면 Blushield는 발의 해부학적 형태를 따라 깎은 모르포 베이스(morpho base)와 그 사이에서 충격을 중재하는 코어(nucleo)를 결합해, 착지 때 발의 비대칭 움직임을 줄입니다. RunRepeat는 미토스 블루실드 볼로 5에서 이 구조가 거슬리지 않는 지지를 준다고 평가했고, 전족부 스택의 일부가 Blushield 구조 높이라 그 부위 충격흡수는 평범하다고 덧붙였습니다.',
-      performanceRating: 7,
       usedInShoes: ['diadora-mythos-blushield-volo-5'],
     },
     {
@@ -73,9 +67,7 @@ export const diadoraBrand: Brand = {
       benefits: ['높은 마모 저항(공식)', '힐 마모 방지', '접지력'],
       scienceExplanation:
         '디아도라 공식 설명은 Duratech 5000을 표준 고무보다 마모 저항이 훨씬 높은 특수 컴파운드로 소개합니다. RunRepeat 드레멜 마모 테스트에서 아토모 스타 0.4mm, 누클레오 2·프리퀀자 2 0.7mm, 미토스 블루실드 볼로 5 0.8mm로 측정돼, 이 사이트에 등록한 디아도라 4종 모두 마모가 적은 편이었습니다.',
-      performanceRating: 8,
       usedInShoes: ['diadora-atomo-star', 'diadora-frequenza-2', 'diadora-nucleo-2', 'diadora-mythos-blushield-volo-5'],
-      characteristics: { durability: 9 },
     },
     {
       id: 'diadora-ddattivo',
@@ -86,7 +78,6 @@ export const diadoraBrand: Brand = {
       benefits: ['고밀도 폼 쿠션(공식)', '통기·흡습', '항균 성분으로 냄새 억제(공식)'],
       scienceExplanation:
         '디아도라 공식 설명에 따르면 DDATTIVO는 흡수·방출 능력이 높은 고밀도 폼에 통기 구멍을 낸 인솔로, 항균 성분을 넣었습니다. RunRepeat는 아토모 스타에서 힐 두께 7.5mm, 미토스 블루실드 볼로 5에서 최대 7.9mm를 측정했고, 힐 쪽에 쿠션 블록을 따로 둔 구조라고 설명했습니다.',
-      performanceRating: 6,
       usedInShoes: ['diadora-atomo-star', 'diadora-mythos-blushield-volo-5'],
     },
   ],

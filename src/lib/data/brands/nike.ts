@@ -1,265 +1,358 @@
 import type { Brand } from '@/types/brand';
 
 export const nikeBrand: Brand = {
-  id: 'nike',
-  name: 'Nike',
-  nameKo: '나이키',
-  tagline: 'Just Do It',
-  description:
-    '1964년 필 나이트와 빌 바우어만이 설립한 세계 최대의 스포츠 브랜드. 혁신적인 러닝화 기술로 마라톤 세계 신기록 수립에 기여했으며, ZoomX, ReactX, Air Zoom, 카본 플레이트 등 다양한 기술을 시스템으로 결합해 러닝 이코노미를 극대화하는 것이 특징입니다.',
-  founded: 1964,
-  headquarters: '미국 오리건주 비버튼',
-  website: 'https://www.nike.com/kr',
-  technologies: [
+  "id": "nike",
+  "name": "Nike",
+  "nameKo": "나이키",
+  "tagline": "Just Do It",
+  "description": "1964년 Phil Knight와 Bill Bowerman의 Blue Ribbon Sports에서 출발한 스포츠 브랜드입니다. 러닝화의 폼·Air 유닛·플레이트·어퍼는 제품별 조합이 다르므로 기술명과 해당 모델의 구성·근거를 함께 확인해야 합니다.",
+  "founded": 1964,
+  "headquarters": "미국 오리건주 비버튼",
+  "website": "https://www.nike.com/kr",
+  "technologies": [
     {
-      id: 'zoomx',
-      name: 'ZoomX',
-      nameKo: '줌엑스',
-      category: 'midsole',
-      year: 2017,
-      description:
-        '나이키에서 가장 가볍고 에너지를 가장 많이 돌려주는 최상급 폼. 압도적인 반응성의 상징입니다.',
-      benefits: [
-        '업계 최고 수준의 에너지 리턴 (약 85%)',
-        '나이키 폼 중 가장 가벼운 무게',
-        '부드러우면서도 폭발적인 반발력',
-        '장거리 레이스에 최적화된 피로 저감',
+      "id": "zoomx",
+      "name": "ZoomX",
+      "nameKo": "줌엑스",
+      "category": "midsole",
+      "description": "ZoomX는 나이키의 미드솔 폼 제품군입니다. 같은 이름에서도 모델과 세대에 따라 설계·실측 결과를 나눠 봐야 합니다.",
+      "benefits": [
+        "폼·완성화·측정 조건을 구분",
+        "ZoomX와 ZoomX LT 등 변형을 구분"
       ],
-      scienceExplanation:
-        'ZoomX는 고성능 폴리머인 PEBA(Pebax) 계열의 슈퍼크리티컬 폼입니다. 기존 EVA나 TPU 폼보다 훨씬 가볍고 탄성이 뛰어나며, 약 85%의 에너지 리턴율을 제공합니다. 2017년 Breaking2 프로젝트에서 처음 선보였으며, Hoogkamer 등의 연구에 따르면 나이키 레이싱화의 "러닝 이코노미 4% 향상" 효과는 ZoomX 단독이 아닌 [ZoomX + 카본 플레이트 + 기하학적 구조]가 하나의 시스템으로 작동한 결과입니다. Vaporfly 4, Alphafly 3 등 나이키 최상위 레이싱화에 사용됩니다.',
-      performanceRating: 10,
-      usedInShoes: ['nike-vaporfly-4', 'nike-alphafly-3', 'nike-pegasus-premium', 'nike-pegasus-plus', 'nike-vomero-18', 'nike-vomero-plus', 'nike-vomero-premium', 'nike-zoom-fly-6', 'nike-streakfly-2'],
-      characteristics: {
-        cushioning: 9,
-        responsiveness: 10,
-        durability: 6,
-        weight: 10,
+      "scienceExplanation": "Nike의 일반 ZoomX 페이지는 중창 에너지 리턴85%를 안내하지만,2026-10-16 설명은 최초 Alphafly의 폼·플레이트·Air 조합에서85%를 설명합니다. 두 표현은 제조사 자료이며,모든 ZoomX 신발의 동일한 독립 실측값으로 사용하지 않습니다. 제품의 실제 폼 구성과 별도 랩 측정 조건을 함께 확인하세요.",
+      "usedInShoes": [
+        "nike-vaporfly-4",
+        "nike-alphafly-3",
+        "nike-pegasus-plus"
+      ],
+      "verification": {
+        "checkedAt": "2026-11-10",
+        "scope": "표기와 적용 예시를 확인한 범위입니다. 소재 전체의 독립 성능 순위·수명·부상 예방 검증이 아닙니다.",
+        "sources": [
+          {
+            "title": "Nike ZoomX 공식 안내",
+            "url": "https://www.nike.com/zoomx",
+            "scope": "브랜드 중창85% 표기; 모든 제품 동일 실측 아님"
+          },
+          {
+            "title": "Nike2026 폼 설명",
+            "url": "https://about.nike.com/en/newsroom/collections/explainer-how-nike-s-innovative-foams-deliver-performance-and-comfort",
+            "scope": "초기 Alphafly 조합·ZoomX 변형·2017년 도입"
+          },
+          {
+            "title": "Pegasus Plus 한국 공식",
+            "url": "https://www.nike.com/kr/t/페가수스-플러스-남성-로드-러닝화-R2UnfgKC/FQ7262-702",
+            "scope": "전장ZoomX"
+          },
+          {
+            "title": "Vaporfly4 공식",
+            "url": "https://www.nike.com/t/vaporfly-4-mens-road-racing-shoes-HK05JWOf",
+            "scope": "전장ZoomX"
+          }
+        ]
       },
+      "year": 2017
     },
     {
-      id: 'reactx',
-      name: 'ReactX',
-      nameKo: '리액트엑스',
-      category: 'midsole',
-      year: 2023,
-      description:
-        '기존 React 폼의 부드러움을 유지하면서 성능과 지속가능성을 모두 잡은 차세대 데일리 러닝용 미드솔입니다.',
-      benefits: [
-        '기존 React 대비 에너지 리턴 13% 향상',
-        '제조 공정상 탄소 발자국 43% 절감',
-        '부드러우면서 안정적인 라이드',
-        '뛰어난 내구성으로 데일리 트레이닝에 최적',
+      "id": "reactx",
+      "name": "ReactX",
+      "nameKo": "리액트엑스",
+      "category": "midsole",
+      "description": "ReactX는 React와 비교한 제조사 성능·제조 영향 안내가 있는 미드솔 폼입니다. 비율의 비교 대상과 평가 범위를 함께 읽어야 합니다.",
+      "benefits": [
+        "React 대비 제조사 주장임을 구분",
+        "폼 평가 범위와 완성 신발 전체를 구분"
       ],
-      scienceExplanation:
-        'ReactX는 기존 React 폼을 업그레이드한 차세대 미드솔입니다. 나이키 공식 발표 기준 기존 React 대비 에너지 리턴 +13% 향상, 제조 공정상 탄소 발자국 -43% 절감을 달성했습니다. EVA와 합성 고무의 조합으로 만들어져 PEBA 기반 ZoomX보다 내구성이 뛰어나 매일 훈련하는 러너에게 적합합니다. Pegasus 41, Vomero 18 등 데일리 트레이닝 라인에 적용됩니다.',
-      performanceRating: 8,
-      usedInShoes: ['nike-pegasus-41', 'nike-pegasus-premium', 'nike-vomero-18', 'nike-structure-26'],
-      characteristics: {
-        cushioning: 8,
-        responsiveness: 7,
-        durability: 9,
-        weight: 7,
+      "scienceExplanation": "2023년 공식 발표는 기존 React 대비 에너지 리턴13% 증가와 한 쌍의 중창에 관한 탄소 발자국 최소43% 감소를 설명합니다. Pegasus41 한국 공식 각주는 에어백·플레이트·다른 폼 등 중창의 다른 구성요소를 제외한다고 밝힙니다. 이를 완성 신발 전체나 Nike 전체의 탄소 배출43% 감소로 확대하지 않습니다.",
+      "usedInShoes": [
+        "nike-pegasus-41",
+        "nike-vomero-18"
+      ],
+      "verification": {
+        "checkedAt": "2026-11-10",
+        "scope": "표기와 적용 예시를 확인한 범위입니다. 소재 전체의 독립 성능 순위·수명·부상 예방 검증이 아닙니다.",
+        "sources": [
+          {
+            "title": "Nike ReactX2023 발표",
+            "url": "https://about.nike.com/en/newsroom/releases/nike-reactx-foam-infinity-rn-4-official-images",
+            "scope": "React 비교·13%·한쌍 중창 최소43%"
+          },
+          {
+            "title": "Pegasus41 한국 공식 각주",
+            "url": "https://www.nike.com/kr/t/나이키-페가수스-41-남성-로드-러닝화-KJOKMFFd/FD2722-120",
+            "scope": "다른 중창 구성요소 제외·제품 적용"
+          },
+          {
+            "title": "Nike2026 폼 설명",
+            "url": "https://about.nike.com/en/newsroom/collections/explainer-how-nike-s-innovative-foams-deliver-performance-and-comfort",
+            "scope": "Vomero18 ReactX 적용"
+          }
+        ]
       },
+      "year": 2023
     },
     {
-      id: 'air-zoom',
-      name: 'Air Zoom Units',
-      nameKo: '에어 줌 유닛',
-      category: 'cushioning',
-      year: 1995,
-      description:
-        '미드솔 내부에 압축 공기와 고탄성 파이버를 넣어 지면을 찰 때 강력한 반발력을 제공하는 물리적 스프링 기술입니다.',
-      benefits: [
-        '착지 시 에너지를 저장, 도약 시 그대로 반환하는 물리적 스프링 효과',
-        '폼 소재와 달리 수천 km에도 성능 저하 없음',
-        '가볍고 즉각적인 반발력',
-        '빠른 페이스에서 효과 극대화',
+      "id": "air-zoom",
+      "name": "Air Zoom Units",
+      "nameKo": "에어 줌 유닛",
+      "category": "cushioning",
+      "description": "Air Zoom은 공기 유닛을 활용하는 구성요소입니다. 위치·개수·다른 폼과의 조합은 제품별로 확인해야 합니다.",
+      "benefits": [
+        "유닛의 개수와 위치 확인",
+        "폼·플레이트와 함께 제품 구성을 비교"
       ],
-      scienceExplanation:
-        'Air Zoom은 고압 공기가 주입된 TPU 캡슐 내부에 고탄성 파이버가 배열된 구조입니다. 착지 시 압축되었다가 빠르게 원상복귀하면서 에너지를 반환합니다. Alphafly 3의 경우 전족부에 2개의 줌 에어 팟(Pods)이 노출 배치되어, 착지 시 에너지를 저장했다가 도약 시 그대로 돌려주는 물리적 스프링 역할을 수행합니다. 폼 소재와 달리 공기 기반이라 장기간 사용해도 성능이 유지되는 것이 큰 장점입니다.',
-      performanceRating: 8,
-      usedInShoes: ['nike-alphafly-3', 'nike-pegasus-premium', 'nike-vomero-premium'],
-      characteristics: {
-        cushioning: 7,
-        responsiveness: 9,
-        durability: 10,
-        weight: 8,
-      },
+      "scienceExplanation": "Alphafly3 공식 발표는 앞꿈치의 두 Air Zoom 유닛을, Pegasus41 한국 공식은 앞꿈치와 뒤꿈치에 하나씩 배치한 두 유닛을 설명합니다. 같은 두 개라도 배치가 다릅니다. 유닛이 있다는 사실로 개인의 충격·기록·장기 내구성이 같은 수준이라고 판단할 수는 없습니다.",
+      "usedInShoes": [
+        "nike-alphafly-3",
+        "nike-pegasus-41"
+      ],
+      "verification": {
+        "checkedAt": "2026-11-10",
+        "scope": "표기와 적용 예시를 확인한 범위입니다. 소재 전체의 독립 성능 순위·수명·부상 예방 검증이 아닙니다.",
+        "sources": [
+          {
+            "title": "Alphafly3 공식 발표",
+            "url": "https://about.nike.com/en/newsroom/releases/nike-alphafly-3-official-images-release-date",
+            "scope": "전족부두유닛"
+          },
+          {
+            "title": "Pegasus41 한국 공식",
+            "url": "https://www.nike.com/kr/t/나이키-페가수스-41-남성-로드-러닝화-KJOKMFFd/FD2722-120",
+            "scope": "앞뒤각1개유닛"
+          }
+        ]
+      }
     },
     {
-      id: 'carbon-plate',
-      name: 'Carbon-fiber Flyplate',
-      nameKo: '카본 파이버 플라이플레이트',
-      category: 'plate',
-      year: 2017,
-      description:
-        '미드솔 사이에 삽입된 풀렝스 카본 플레이트로, 단순한 딱딱한 판이 아닌 ZoomX 폼의 압축과 복원을 최적화하는 레버(Lever) 역할을 합니다.',
-      benefits: [
-        'ZoomX 폼의 압축-복원을 최적화하는 레버 메커니즘',
-        '착지에서 이륙까지 에너지 전달 극대화',
-        '발목 관절 굴곡 제한으로 에너지 손실 최소화',
-        '6분/km 이하 빠른 페이스에서 효과 극대화',
+      "id": "carbon-plate",
+      "name": "Carbon-fiber Flyplate",
+      "nameKo": "카본 파이버 플라이플레이트",
+      "category": "plate",
+      "description": "카본 Flyplate는 신발 내부의 구조 요소입니다. 플레이트 하나의 효과와 완성 신발 전체의 실험 결과를 구분하세요.",
+      "benefits": [
+        "완성화 실험과 부품 효과를 구분",
+        "제품별 플레이트와 폼 조합을 확인"
       ],
-      scienceExplanation:
-        'Nike의 카본 파이버 플라이플레이트는 탄소섬유 강화 폴리머로 제작된 스푼 형태의 풀렝스 플레이트입니다. 2017년 Vaporfly 4%에서 처음 도입되었으며, 콜로라도 대학 Hoogkamer 연구팀의 실험에서 러닝 이코노미를 약 4% 개선하는 것으로 확인되었습니다. 핵심은 단순히 딱딱한 판이 아니라 ZoomX 폼의 압축과 복원을 최적화하는 레버(Lever) 역할을 한다는 점입니다. 발이 지면을 밀어낼 때 저장된 에너지를 효율적으로 전달하여 강력한 추진감을 만들어냅니다.',
-      performanceRating: 10,
-      usedInShoes: ['nike-vaporfly-4', 'nike-alphafly-3', 'nike-zoom-fly-6', 'nike-streakfly-2'],
-      characteristics: {
-        cushioning: 5,
-        responsiveness: 10,
-        durability: 8,
-        weight: 9,
-      },
+      "scienceExplanation": "2017년 온라인 발표·2018년 학술지 연구는18명의 선수에게 신발 무게를 맞춘 세 조건을14·16·18km/h에서 비교했습니다. 프로토타입 완성화의 평균 에너지 비용 감소가 약4%였으며,플레이트만 분리해4%를 확인한 시험이 아닙니다. Vaporfly4 공식은 전장 카본 Flyplate를 명시합니다. 이 자료로 모든 카본화의 개인 기록 개선율이나 분/km 효과 경계를 정하지 않습니다.",
+      "usedInShoes": [
+        "nike-vaporfly-4",
+        "nike-alphafly-3"
+      ],
+      "verification": {
+        "checkedAt": "2026-11-10",
+        "scope": "표기와 적용 예시를 확인한 범위입니다. 소재 전체의 독립 성능 순위·수명·부상 예방 검증이 아닙니다.",
+        "sources": [
+          {
+            "title": "Hoogkamer 등 원 연구",
+            "url": "https://link.springer.com/article/10.1007/s40279-017-0811-2",
+            "scope": "18선수·신발 무게 통일·3속도·전체신발 비교"
+          },
+          {
+            "title": "Vaporfly4 공식",
+            "url": "https://www.nike.com/t/vaporfly-4-mens-road-racing-shoes-HK05JWOf",
+            "scope": "전장 카본 Flyplate"
+          },
+          {
+            "title": "Alphafly3 공식 발표",
+            "url": "https://about.nike.com/en/newsroom/releases/nike-alphafly-3-official-images-release-date",
+            "scope": "전장 카본 Flyplate"
+          }
+        ]
+      }
     },
     {
-      id: 'atomknit',
-      name: 'Atomknit 3.0',
-      nameKo: '아톰니트 3.0',
-      category: 'upper',
-      year: 2023,
-      description:
-        'Flyknit을 열처리하여 레이싱에 최적화한 소재로, 통기성과 경량성을 극대화한 "제2의 피부" 어퍼 기술입니다.',
-      benefits: [
-        '수분을 거의 흡수하지 않아 땀/비에도 무게 증가 방지',
-        '고속 주행 시에도 발을 견고하게 잡아주는 안정감(Containment)',
-        '극한의 경량화로 레이싱 성능 극대화',
-        '장시간 레이스에서 발 부기에 대응하는 여유 설계',
+      "id": "atomknit",
+      "name": "Atomknit 3.0",
+      "nameKo": "아톰니트 3.0",
+      "category": "upper",
+      "description": "Atomknit3.0은 Alphafly3 공식 발표에 명시된 어퍼입니다. Flyknit 전체나 다른 세대의 원단 특성을 그대로 대신하지 않습니다.",
+      "benefits": [
+        "Alphafly3와 Atomknit세대 확인",
+        "제조사 설계 설명과 개인 핏을 구분"
       ],
-      scienceExplanation:
-        'Atomknit 3.0은 Flyknit 기술을 열처리(Heat Treatment)하여 늘린 소재로, 레이싱화에 최적화된 어퍼입니다. 더 촘촘한 직조로 고속 주행 시에도 발이 미끄러지지 않도록 설계되었으며, 메쉬 영역을 전략적으로 배치해 통기성을 확보합니다. 가장 큰 장점은 수분을 거의 흡수하지 않아 땀이나 비에 신발이 무거워지는 것을 방지한다는 점입니다. Alphafly 3에서는 발등 부분에 여유를 주어 장시간 레이스에서 발이 부어오를 때도 압박감을 줄여줍니다.',
-      performanceRating: 9,
-      usedInShoes: ['nike-alphafly-3'],
-      characteristics: {
-        cushioning: 5,
-        responsiveness: 6,
-        durability: 8,
-        weight: 9,
+      "scienceExplanation": "2023년11월29일 발표는 Alphafly3의 Atomknit3.0과 중족부 고정·통기성 설계를 설명하고, Prototype의 판매 시작을2024년1월4일로 안내합니다. 흡수 수분량·발 부기 대응·마찰 예방의 독립 정량 시험은 이 자료에서 확인하지 않았습니다. 같은 브랜드의 니트라도 실제 모델의 압박과 핏은 따로 확인해야 합니다.",
+      "usedInShoes": [
+        "nike-alphafly-3"
+      ],
+      "verification": {
+        "checkedAt": "2026-11-10",
+        "scope": "표기와 적용 예시를 확인한 범위입니다. 소재 전체의 독립 성능 순위·수명·부상 예방 검증이 아닙니다.",
+        "sources": [
+          {
+            "title": "Alphafly3 공식 발표",
+            "url": "https://about.nike.com/en/newsroom/releases/nike-alphafly-3-official-images-release-date",
+            "scope": "Atomknit3.0·2024-01-04공식판매시작"
+          }
+        ]
       },
+      "year": 2024
     },
     {
-      id: 'flyknit',
-      name: 'Flyknit',
-      nameKo: '플라이니트',
-      category: 'upper',
-      year: 2012,
-      description:
-        '한 올의 실로 짜여진 니트 어퍼 기술로, 이음새 없는 가벼운 착화감과 부위별 맞춤 지지력을 제공합니다.',
-      benefits: [
-        '발을 감싸는 듯한 양말 같은 착화감',
-        '뛰어난 통기성',
-        '부위별 직조 밀도 조절로 맞춤 지지력',
-        '기존 어퍼 대비 약 20g 무게 절감',
+      "id": "flyknit",
+      "name": "Flyknit",
+      "nameKo": "플라이니트",
+      "category": "upper",
+      "description": "Flyknit은 디지털 편직으로 어퍼를 만드는 기술입니다. 적용 여부는 신발의 정확한 세대에서 확인해야 합니다.",
+      "benefits": [
+        "Pegasus Plus 초대의 Flyknit 확인",
+        "Vaporfly4와4%Flyknit의 모델명 구분"
       ],
-      scienceExplanation:
-        'Flyknit은 고강도 폴리에스터 실을 디지털 니팅 기술로 짜서 만든 어퍼입니다. 기존의 여러 조각을 이어붙이는 방식과 달리 하나의 연속된 직물로 어퍼를 구성하여 이음새가 거의 없습니다. 부위별로 직조 밀도를 조절해 필요한 곳에 지지력을, 다른 곳에 통기성을 제공합니다. 2012년 런던 올림픽에서 처음 선보였으며, 재단 낭비를 최소화해 친환경적인 장점도 있습니다. Vaporfly 4에 적용되어 있습니다.',
-      performanceRating: 9,
-      usedInShoes: ['nike-vaporfly-4', 'nike-pegasus-plus'],
-      characteristics: {
-        cushioning: 5,
-        responsiveness: 6,
-        durability: 7,
-        weight: 10,
+      "scienceExplanation": "Nike의2018년 설명은 Flyknit을2012년 선보인 편직 기술로 안내합니다. 한국 Pegasus Plus 공식은 Flyknit 갑피를 명시하지만 Vaporfly4 공식은 Engineered Mesh를 명시합니다. Vaporfly4를 예전 Vaporfly4% Flyknit과 같은 제품으로 읽지 마세요. 모든 Flyknit 어퍼가 같은 무게·내구성·핏을 갖는 것은 아닙니다.",
+      "usedInShoes": [
+        "nike-pegasus-plus"
+      ],
+      "verification": {
+        "checkedAt": "2026-11-10",
+        "scope": "표기와 적용 예시를 확인한 범위입니다. 소재 전체의 독립 성능 순위·수명·부상 예방 검증이 아닙니다.",
+        "sources": [
+          {
+            "title": "Nike2018 Flyknit 설명",
+            "url": "https://about.nike.com/en/newsroom/releases/next-generation-flyknit-footwear-official-images",
+            "scope": "디지털 편직·2012도입"
+          },
+          {
+            "title": "Pegasus Plus 한국 공식",
+            "url": "https://www.nike.com/kr/t/페가수스-플러스-남성-로드-러닝화-R2UnfgKC/FQ7262-702",
+            "scope": "Flyknit갑피"
+          },
+          {
+            "title": "Vaporfly4 공식",
+            "url": "https://www.nike.com/t/vaporfly-4-mens-road-racing-shoes-HK05JWOf",
+            "scope": "Engineered Mesh로 구분"
+          }
+        ]
       },
+      "year": 2012
     },
     {
-      id: 'engineered-mesh',
-      name: 'Engineered Mesh',
-      nameKo: '엔지니어드 메쉬',
-      category: 'upper',
-      year: 2020,
-      description:
-        '부위별로 직조 방식을 다르게 설계하여 통기성과 지지력을 동시에 잡은 정밀 메쉬 소재입니다.',
-      benefits: [
-        '발등은 큰 구멍으로 통기성 극대화',
-        '측면과 앞코는 촘촘하게 짜서 발 흔들림 방지',
-        'Atomknit보다 부드럽고 내구성이 뛰어남',
-        '매일 신는 훈련화에 최적화된 편안함',
+      "id": "engineered-mesh",
+      "name": "Engineered Mesh",
+      "nameKo": "엔지니어드 메쉬",
+      "category": "upper",
+      "description": "Engineered Mesh는 제품별로 설계된 메쉬 어퍼를 설명하는 명칭입니다. 특정 소재 점수나 단일한 출시연도로 읽지 않습니다.",
+      "benefits": [
+        "정확한 모델의 메쉬 표기 확인",
+        "니트와 메쉬의 이름만으로 우열 판정하지 않기"
       ],
-      scienceExplanation:
-        'Engineered Mesh는 부위별로 직조 방식을 다르게 설계한 정밀 메쉬 소재입니다. 열이 많이 발생하는 발등 부분은 구멍을 크게 내어 공기 흐름을 극대화하고, 측면과 앞코 등 힘이 실리는 곳은 촘촘하게 짜서 발의 흔들림을 방지합니다. 레이싱 전용 Atomknit보다 훨씬 부드럽고 내구성이 뛰어나 매일 신는 데일리 훈련화에 최적화된 소재입니다.',
-      performanceRating: 7,
-      usedInShoes: ['nike-pegasus-41', 'nike-vomero-18', 'nike-vomero-plus', 'nike-vomero-premium', 'nike-structure-26', 'nike-zoom-fly-6', 'nike-streakfly-2'],
-      characteristics: {
-        cushioning: 6,
-        responsiveness: 5,
-        durability: 9,
-        weight: 7,
-      },
+      "scienceExplanation": "Pegasus41 한국 공식과 Vaporfly4 공식에서 Engineered Mesh 표기를 확인했습니다. 같은 표현만으로 두 제품의 통기성·내구성·발볼·원사 구성이 동일하다고 결론 내릴 수는 없습니다. 원단 이름과 실제 신발의 핏,독립 통기성 측정값을 나눠 보세요.",
+      "usedInShoes": [
+        "nike-pegasus-41",
+        "nike-vaporfly-4"
+      ],
+      "verification": {
+        "checkedAt": "2026-11-10",
+        "scope": "표기와 적용 예시를 확인한 범위입니다. 소재 전체의 독립 성능 순위·수명·부상 예방 검증이 아닙니다.",
+        "sources": [
+          {
+            "title": "Pegasus41 한국 공식",
+            "url": "https://www.nike.com/kr/t/나이키-페가수스-41-남성-로드-러닝화-KJOKMFFd/FD2722-120",
+            "scope": "Engineered Mesh"
+          },
+          {
+            "title": "Vaporfly4 공식",
+            "url": "https://www.nike.com/t/vaporfly-4-mens-road-racing-shoes-HK05JWOf",
+            "scope": "Engineered Mesh"
+          }
+        ]
+      }
     },
     {
-      id: 'waffle-outsole',
-      name: 'Waffle Outsole',
-      nameKo: '와플 아웃솔',
-      category: 'outsole',
-      year: 1974,
-      description:
-        '나이키 창립 초기 와플 기계에서 영감받아 개발된 50년 역사의 상징적인 전천후 아웃솔 패턴입니다.',
-      benefits: [
-        '아스팔트, 트랙, 흙길 등 다목적 접지력',
-        '패턴 사이 홈으로 발의 자연스러운 움직임 보장',
-        '검증된 안정성과 신뢰성',
-        '다양한 지면 조건에서 균일한 그립력',
+      "id": "waffle-outsole",
+      "name": "Waffle Outsole",
+      "nameKo": "와플 아웃솔",
+      "category": "outsole",
+      "description": "와플 밑창은 패턴을 설명하는 명칭입니다. 어떤 지면에서도 같은 접지력을 보장하는 등급은 아닙니다.",
+      "benefits": [
+        "패턴과 실제 고무·접지 시험을 구분",
+        "젖음·노면 조건별 접지 정보를 별도 확인"
       ],
-      scienceExplanation:
-        'Waffle Outsole은 나이키 공동 창립자 빌 바우어만이 와플 기계에서 영감받아 개발한 패턴으로, 50년 이상의 역사를 가진 상징적인 아웃솔 기술입니다. 돌출된 고무 돌기들이 아스팔트, 우레탄 트랙, 가벼운 흙길 등 어떤 지면에서도 안정적인 그립력을 제공합니다. 패턴 사이사이에 홈이 있어 발의 자연스러운 굴곡 움직임을 방해하지 않는 것이 특징입니다.',
-      performanceRating: 7,
-      usedInShoes: ['nike-pegasus-41', 'nike-vomero-premium'],
-      characteristics: {
-        cushioning: 5,
-        responsiveness: 6,
-        durability: 8,
-        weight: 7,
-      },
+      "scienceExplanation": "Pegasus41 한국 공식은 와플 스타일의 고무 밑창을 명시합니다. 해당 제품 표기는 패턴의 적용을 확인하는 근거입니다. 젖은 노면·흙길·트랙의 접지 시험을 모두 수행한 자료나 특정 내구 주행거리를 보장하는 자료로 쓰지 않습니다.",
+      "usedInShoes": [
+        "nike-pegasus-41"
+      ],
+      "verification": {
+        "checkedAt": "2026-11-10",
+        "scope": "표기와 적용 예시를 확인한 범위입니다. 소재 전체의 독립 성능 순위·수명·부상 예방 검증이 아닙니다.",
+        "sources": [
+          {
+            "title": "Pegasus41 한국 공식",
+            "url": "https://www.nike.com/kr/t/나이키-페가수스-41-남성-로드-러닝화-KJOKMFFd/FD2722-120",
+            "scope": "와플 스타일 고무 밑창"
+          }
+        ]
+      }
     },
     {
-      id: 'high-abrasion-rubber',
-      name: 'High-Abrasion Rubber',
-      nameKo: '고내마모성 고무',
-      category: 'outsole',
-      year: 2018,
-      description:
-        '마찰에 매우 강한 특수 고무 화합물을 마모가 집중되는 부위에 전략 배치하여 신발 수명을 늘리는 기술입니다.',
-      benefits: [
-        '뒤꿈치와 앞꿈치에 전략적 배치로 수명 연장',
-        '고가의 미드솔 폼이 깎여 나가는 것을 방지',
-        '높은 마일리지 러너에게 경제적',
-        '접지력과 내구성의 균형',
+      "id": "high-abrasion-rubber",
+      "name": "High-Abrasion Rubber",
+      "nameKo": "고내마모성 고무",
+      "category": "outsole",
+      "description": "내마모성 고무는 밑창 재료의 특성을 설명하는 표현입니다. 하나의 독립 성능 점수로 모든 제품을 묶을 수는 없습니다.",
+      "benefits": [
+        "제조사 재료 설명과 독립 마모시험을 구분",
+        "사용 거리·비용의 보증으로 확대하지 않기"
       ],
-      scienceExplanation:
-        'High-Abrasion Rubber는 마찰에 매우 강한 특수 고무 화합물입니다. 신발 바닥 전체가 아닌, 마모가 가장 빨리 일어나는 뒤꿈치(Heel)와 앞꿈치(Toe) 부분에 집중 배치됩니다. 고가의 미드솔 폼(ReactX, ZoomX 등)이 직접 지면에 닿아 깎여 나가는 것을 방지하여 신발을 더 오래 신을 수 있게 합니다. 특히 주간 주행거리가 높은 러너에게 km당 비용을 낮춰주는 경제적인 기술입니다.',
-      performanceRating: 7,
-      usedInShoes: ['nike-pegasus-41', 'nike-vomero-18', 'nike-structure-26'],
-      characteristics: {
-        cushioning: 4,
-        responsiveness: 5,
-        durability: 10,
-        weight: 6,
-      },
+      "scienceExplanation": "한국 Pegasus Plus 공식은 내마모성이 우수한 고무 밑창으로 설명합니다. 이는 제조사 제품 안내이며, 모든 Nike 고무의 수명·마찰계수·km당 비용을 측정한 결과는 아닙니다. 같은 표현을 쓰는 제품도 적용 면적·두께·배합을 별도로 확인해야 합니다.",
+      "usedInShoes": [
+        "nike-pegasus-plus"
+      ],
+      "verification": {
+        "checkedAt": "2026-11-10",
+        "scope": "표기와 적용 예시를 확인한 범위입니다. 소재 전체의 독립 성능 순위·수명·부상 예방 검증이 아닙니다.",
+        "sources": [
+          {
+            "title": "Pegasus Plus 한국 공식",
+            "url": "https://www.nike.com/kr/t/페가수스-플러스-남성-로드-러닝화-R2UnfgKC/FQ7262-702",
+            "scope": "내마모성 고무 밑창이라는 제품 설명"
+          }
+        ]
+      }
     },
     {
-      id: 'thin-web-rubber',
-      name: 'Thin Web Rubber',
-      nameKo: '씬 웹 러버',
-      category: 'outsole',
-      year: 2017,
-      description:
-        '엘리트 러너의 주행 데이터를 기반으로 설계된, 1g의 무게까지 줄인 레이싱 전용 초경량 밑창입니다.',
-      benefits: [
-        '러너 데이터 기반으로 필요한 곳에만 최소한의 고무 배치',
-        '카본화 전체 무게 절감에 결정적 역할',
-        '고속 주행에 최적화된 접지력',
-        '경량화와 그립력의 극한 밸런스',
+      "id": "thin-web-rubber",
+      "name": "Thin Web Rubber",
+      "nameKo": "씬 웹 러버",
+      "category": "outsole",
+      "description": "Thin Web Rubber라는 명칭의 정확한 공식 기술·적용 모델은 이번 대조 범위에서 확인하지 못했습니다.",
+      "benefits": [
+        "정확한 공식 밑창 명칭을 먼저 확인",
+        "경량화 설명만으로 같은 기술로 묶지 않기"
       ],
-      scienceExplanation:
-        'Thin Web Rubber는 엘리트 레이서의 주행 데이터를 기반으로 설계된 레이싱 전용 초경량 밑창입니다. 러너가 지면을 밀어낼 때 힘이 실리는 지점을 분석하여, 필요한 곳에만 최소한의 두께로 고무를 배치했습니다. 고무의 무게를 획기적으로 줄여 카본화의 전체 무게를 줄이는 데 결정적인 역할을 하며, 내구성보다 레이스 당일 최고의 퍼포먼스에 집중한 설계입니다.',
-      performanceRating: 9,
-      usedInShoes: ['nike-vaporfly-4', 'nike-alphafly-3'],
-      characteristics: {
-        cushioning: 3,
-        responsiveness: 8,
-        durability: 4,
-        weight: 10,
-      },
-    },
+      "scienceExplanation": "Vaporfly4 공식은 전작 대비 밑창 경량화를 설명하지만 Thin Web Rubber라는 명칭을 확인할 수 없었습니다. Alphafly3 발표는 Fast Shot outsole이라는 다른 명칭을 사용합니다. 밑창이 가볍다는 설명만으로 같은 기술로 묶지 않고, 적용 신발 목록과 임의의 출시연도·내구성 점수를 비워 두었습니다.",
+      "usedInShoes": [],
+      "verification": {
+        "checkedAt": "2026-11-10",
+        "scope": "표기와 적용 예시를 확인한 범위입니다. 소재 전체의 독립 성능 순위·수명·부상 예방 검증이 아닙니다.",
+        "sources": [
+          {
+            "title": "Vaporfly4 공식",
+            "url": "https://www.nike.com/t/vaporfly-4-mens-road-racing-shoes-HK05JWOf",
+            "scope": "밑창 경량화; Thin Web 명칭 미확인"
+          },
+          {
+            "title": "Alphafly3 공식 발표",
+            "url": "https://about.nike.com/en/newsroom/releases/nike-alphafly-3-official-images-release-date",
+            "scope": "Fast Shot outsole로 표기"
+          }
+        ]
+      }
+    }
   ],
+  "verification": {
+    "checkedAt": "2026-11-10",
+    "scope": "Blue Ribbon Sports의 시작과 글로벌 캠퍼스 위치를 공식 자료로 확인했습니다. 모든 기술 본문·사진·제품 효과의 일괄 인증은 아닙니다.",
+    "sources": [
+      {
+        "title": "Nike Archives: Blue Ribbon Sports의 시작",
+        "url": "https://about.nike.com/en-GB/magazine/the-handshake-that-started-it-all",
+        "scope": "1964년 Phil Knight·Bill Bowerman의 파트너십"
+      },
+      {
+        "title": "Nike World Campus 공식 역사",
+        "url": "https://about.nike.com/en/magazine/how-nike-built-its-world-headquarters",
+        "scope": "미국 오리건주 Beaverton 캠퍼스"
+      }
+    ]
+  }
 };
