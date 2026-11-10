@@ -6,10 +6,11 @@ export const shoe: Shoe = {
     slug: "asics-gel-kayano-32",
     brand: "Asics",
     name: "젤 카야노 32",
+  imageCaption: "젤 카야노 32 사진은 ASICS 공식 TOKYO 상품 1011C140-500(CREAM/EDO PURPLE)과 대조했습니다. TOKYO 색상 사진을 일반 상품의 별도 사양 증거로 읽지 마세요.",
+  imageSource: {"title":"ASICS 공식 상품 갤러리","url":"https://www.asics.com/ph/en-ph/gel-kayano-32-tokyo/p/1011C140-500.html"},
     image: "/images/shoes/asics/kayano32/1.webp",
     images: [
       "/images/shoes/asics/kayano32/1.webp",
-      "/images/shoes/asics/kayano32/2.webp",
       "/images/shoes/asics/kayano32/3.webp",
       "/images/shoes/asics/kayano32/4.webp",
       "/images/shoes/asics/kayano32/5.webp"

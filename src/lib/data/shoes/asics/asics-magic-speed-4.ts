@@ -6,11 +6,12 @@ export const shoe: Shoe = {
     slug: "asics-magic-speed-4",
     brand: "Asics",
     name: "매직스피드 4",
+  imageCaption: "매직스피드 4 사진(1011B875-600 · FLASH RED/WHITE)은 ASICS 공식 상품 사진과 모델·색상·구도를 대조했습니다. 사진 품번을 한국 판매 규격·가격으로 읽지 마세요.",
+  imageSource: {"title":"ASICS 공식 상품 갤러리","url":"https://outlet.asics.com/gb/en-gb/magic-speed-4/p/1011B875-600.html"},
     image: "/images/shoes/asics/magicspeed4/1.webp",
     images: [
       "/images/shoes/asics/magicspeed4/1.webp",
       "/images/shoes/asics/magicspeed4/2.webp",
-      "/images/shoes/asics/magicspeed4/3.webp",
       "/images/shoes/asics/magicspeed4/4.webp",
       "/images/shoes/asics/magicspeed4/5.webp"
     ],

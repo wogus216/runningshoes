@@ -6,6 +6,8 @@ export const shoe: Shoe = {
   slug: 'asics-metaspeed-ray',
   brand: 'Asics',
   name: '메타스피드 레이',
+  imageCaption: "메타스피드 레이 사진(1013A176-100 · WHITE/FLASH RED)은 ASICS 공식 상품 사진과 모델·색상·구도를 대조했습니다. 사진 품번을 한국 판매 규격·가격으로 읽지 마세요.",
+  imageSource: {"title":"ASICS 공식 상품 갤러리","url":"https://www.asics.com/ph/en-ph/metaspeed-ray/p/1013A176-100.html"},
   image: '/images/shoes/asics/metaspeedray/side.webp',
   images: [
     '/images/shoes/asics/metaspeedray/side.webp',

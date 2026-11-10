@@ -514,3 +514,26 @@ Horizon8의 기존 BOA 다이얼 신발 사진 5장은 공식 WAVE HORIZON 8과 
 | adidas-terrex-agravic-4 | KJ8872 | [공식 상품 갤러리](https://www.adidas.at/terrex-agravic-4-trail-running-schuh/KJ8872.html) |
 
 하이퍼부스트 엣지의 [공식 보도자료 사선 사진](https://news.adidas.com/global/hyperboost-edge/s/cd59c81c-33ce-4c88-93aa-a5b7ef89ae74)은 별도 원본입니다. EVO SL의 JH6208은 여성 사진 품번입니다. 해외 사진 품번을 한국 판매 옵션·가격·재고 근거로 쓰지 않습니다. 촬영자·이용 허가와 제품 전체 스펙은 사진 대조 범위 밖입니다.
+
+## 2026-11-11 ASICS 14종 사진 출처 대조
+
+기존 12종 60장 가운데 공식 상품 사진과 대응하는 모델·색상·구도를 확인했습니다. 내용이 중복된 갤러리 컷 6장은 참조를 줄였고 기존 파일은 보존했습니다. METASPEED EDGE+·SKY+의 기존 10장은 원본과 세대가 불명확해 공식 해당 Plus 상품의 사진 10장으로 교체했습니다. 새 WebP는 원본을 800px·품질82로 최적화한 파생 파일이며 원본 URL·해시를 비공개 검수 기록에 남겼습니다.
+
+| 모델 | 사진 품번·색상 | 공식 출처 |
+|---|---|---|
+| asics-magic-speed-4 | 1011B875-600 · FLASH RED/WHITE | [원문](https://outlet.asics.com/gb/en-gb/magic-speed-4/p/1011B875-600.html) |
+| asics-novablast-5 | 1011C139-500 · BLUE FADE/EDO PURPLE | [원문](https://www.asics.com/ph/en-ph/novablast-5-tokyo/p/1011C139-500.html) |
+| asics-magic-speed-5 | 1013A183-100 · WHITE/BLACK | [원문](https://www.asics.com/sg/en-sg/magic-speed-5/p/1013A183-100.html) |
+| asics-gel-kayano-32 | 1011C140-500 · CREAM/EDO PURPLE | [원문](https://www.asics.com/ph/en-ph/gel-kayano-32-tokyo/p/1011C140-500.html) |
+| asics-sonicblast-2 | 1011C244-100 · WHITE/STADIUM ORANGE | [원문](https://www.asics.com/sg/en-sg/sonicblast-2/p/1011C244-100.html) |
+| asics-superblast-2 | 1013A142-401 · BLUE FADE/EDO PURPLE | [원문](https://www.asics.com/ph/en-ph/superblast-2/p/1013A142-401.html) |
+| asics-gel-slowcush | 1013A187-800 · ORANGE GLOW/CHERRY TOMATO | [원문](https://www.asics.com/sg/en-sg/gel-slowcush/p/1013A187-800.html) |
+| asics-sonicblast | 1011C083-100 · CREAM/BLUE FADE | [원문](https://www.asics.com/ph/en-ph/sonicblast/p/1011C083-100.html) |
+| asics-metaspeed-ray | 1013A176-100 · WHITE/FLASH RED | [원문](https://www.asics.com/ph/en-ph/metaspeed-ray/p/1013A176-100.html) |
+| asics-gel-venture-10 | 1012B759-700 · unknown (visually pale pink / grey) | [원문](https://outlet.asics.com/on/demandware.static/-/Library-Sites-shared-eu-library/default/dw2e6c34cf/ASICS/Fiche%20produit%20relative%20aux%20qualit%C3%A9s%20et%20caract%C3%A9ristiques%20environnementales%20Chaussures%20-%202025.pdf) |
+| asics-metaspeed-edge-plus | 1013A116-100 · WHITE/BLACK | [원문](https://www.asics.com/ph/en-ph/metaspeed-edge%2B/p/1013A116-100.html) |
+| asics-metafuji-trail | 1013A141-400 · unknown (visually blue / purple / yellow) | [원문](https://www.asics.co.kr/p/AKR_112610307-400) |
+| asics-metaspeed-sky-plus | 1013A115-100 · WHITE/BLACK | [원문](https://www.asics.com/jp/ja-jp/metaspeed-sky%2B/p/1013A115-100.html) |
+| asics-megablast | 1013A170-500 · EDO PURPLE/BLACK | [원문](https://www.asics.com/ph/en-ph/megablast/p/1013A170-500.html) |
+
+노바블라스트 5·카야노 32의 사진은 TOKYO 색상 상품입니다. GEL-VENTURE 10은 공식 색상명 미확인입니다. 사진 식별은 현재 한국 판매·가격·제품 전체 사양·촬영권리의 인증이 아닙니다.

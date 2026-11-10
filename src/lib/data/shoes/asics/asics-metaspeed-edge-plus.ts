@@ -6,13 +6,15 @@ export const shoe: Shoe = {
     slug: "asics-metaspeed-edge-plus",
     brand: "Asics",
     name: "메타스피드 엣지+",
-    image: "/images/shoes/asics/metaspeedge/1.webp",
+  imageCaption: "메타스피드 엣지+ 사진은 ASICS 공식 EDGE+ 상품 1013A116-100(WHITE/BLACK) 갤러리에서 가져와 크기를 최적화했습니다. 기존 원본을 확인하지 못한 사진 5장은 교체했습니다. 해외 사진 품번을 한국 판매 조건으로 읽지 마세요.",
+  imageSource: {"title":"ASICS 공식 상품 갤러리","url":"https://www.asics.com/ph/en-ph/metaspeed-edge%2B/p/1013A116-100.html"},
+    image: "/images/shoes/asics/metaspeedge/official-1013A116-100-1.webp",
     images: [
-      "/images/shoes/asics/metaspeedge/1.webp",
-      "/images/shoes/asics/metaspeedge/2.webp",
-      "/images/shoes/asics/metaspeedge/3.webp",
-      "/images/shoes/asics/metaspeedge/4.webp",
-      "/images/shoes/asics/metaspeedge/5.webp"
+      "/images/shoes/asics/metaspeedge/official-1013A116-100-1.webp",
+      "/images/shoes/asics/metaspeedge/official-1013A116-100-2.webp",
+      "/images/shoes/asics/metaspeedge/official-1013A116-100-3.webp",
+      "/images/shoes/asics/metaspeedge/official-1013A116-100-4.webp",
+      "/images/shoes/asics/metaspeedge/official-1013A116-100-5.webp"
     ],
     category: "레이싱",
     description: "2022 Edge+의 FF BLAST TURBO·V형 카본 구조. DOR 소개39/31mm·드롭8mm이며 독립 랩 실측과 한국 현재 정가는 미확인입니다.",

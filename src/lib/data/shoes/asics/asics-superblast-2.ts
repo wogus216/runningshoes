@@ -6,10 +6,11 @@ export const shoe: Shoe = {
     slug: "asics-superblast-2",
     brand: "Asics",
     name: "슈퍼블라스트 2",
+  imageCaption: "슈퍼블라스트 2 사진(1013A142-401 · BLUE FADE/EDO PURPLE)은 ASICS 공식 상품 사진과 모델·색상·구도를 대조했습니다. 사진 품번을 한국 판매 규격·가격으로 읽지 마세요.",
+  imageSource: {"title":"ASICS 공식 상품 갤러리","url":"https://www.asics.com/ph/en-ph/superblast-2/p/1013A142-401.html"},
     image: "/images/shoes/asics/superblast2/1.webp",
     images: [
       "/images/shoes/asics/superblast2/1.webp",
-      "/images/shoes/asics/superblast2/2.webp",
       "/images/shoes/asics/superblast2/3.webp",
       "/images/shoes/asics/superblast2/4.webp",
       "/images/shoes/asics/superblast2/5.webp"

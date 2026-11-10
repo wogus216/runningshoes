@@ -6,6 +6,8 @@ export const shoe: Shoe = {
     slug: "asics-magic-speed-5",
     brand: "Asics",
     name: "매직스피드 5",
+  imageCaption: "매직스피드 5 사진(1013A183-100 · WHITE/BLACK)은 ASICS 공식 상품 사진과 모델·색상·구도를 대조했습니다. 사진 품번을 한국 판매 규격·가격으로 읽지 마세요.",
+  imageSource: {"title":"ASICS 공식 상품 갤러리","url":"https://www.asics.com/sg/en-sg/magic-speed-5/p/1013A183-100.html"},
     image: "/images/shoes/asics/magicspeed5/side.webp",
     images: [
       "/images/shoes/asics/magicspeed5/side.webp",

@@ -6,6 +6,8 @@ export const shoe: Shoe = {
   slug: 'asics-gel-venture-10',
   brand: 'Asics',
   name: '젤 벤처 10',
+  imageCaption: "젤 벤처 10 사진은 ASICS 공식 이미지 서버의 1012B759-700 제품 사진과 대조했습니다. 공식 색상명과 한국 현재 판매 옵션은 확인되지 않았습니다.",
+  imageSource: {"title":"ASICS 공식 제품 자료","url":"https://outlet.asics.com/on/demandware.static/-/Library-Sites-shared-eu-library/default/dw2e6c34cf/ASICS/Fiche%20produit%20relative%20aux%20qualit%C3%A9s%20et%20caract%C3%A9ristiques%20environnementales%20Chaussures%20-%202025.pdf"},
   image: '/images/shoes/asics/gelventure10/side.webp',
   images: [
     '/images/shoes/asics/gelventure10/side.webp',

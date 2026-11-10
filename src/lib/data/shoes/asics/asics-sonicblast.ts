@@ -6,10 +6,11 @@ export const shoe: Shoe = {
     slug: "asics-sonicblast",
     brand: "Asics",
     name: "소닉블라스트",
+  imageCaption: "소닉블라스트 사진(1011C083-100 · CREAM/BLUE FADE)은 ASICS 공식 상품 사진과 모델·색상·구도를 대조했습니다. 사진 품번을 한국 판매 규격·가격으로 읽지 마세요.",
+  imageSource: {"title":"ASICS 공식 상품 갤러리","url":"https://www.asics.com/ph/en-ph/sonicblast/p/1011C083-100.html"},
     image: "/images/shoes/asics/sonicblast/1.webp",
     images: [
       "/images/shoes/asics/sonicblast/1.webp",
-      "/images/shoes/asics/sonicblast/2.webp",
       "/images/shoes/asics/sonicblast/3.webp",
       "/images/shoes/asics/sonicblast/4.webp",
       "/images/shoes/asics/sonicblast/5.webp"

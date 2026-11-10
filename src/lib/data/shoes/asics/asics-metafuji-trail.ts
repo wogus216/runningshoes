@@ -6,6 +6,8 @@ export const shoe: Shoe = {
   slug: 'asics-metafuji-trail',
   brand: 'Asics',
   name: '메타후지 트레일',
+  imageCaption: "메타후지 트레일 사진(1013A141-400 · unknown (visually blue / purple / yellow))은 ASICS 공식 상품 사진과 모델·색상·구도를 대조했습니다. 사진 품번을 한국 판매 규격·가격으로 읽지 마세요.",
+  imageSource: {"title":"ASICS 공식 상품 갤러리","url":"https://www.asics.co.kr/p/AKR_112610307-400"},
   image: '/images/shoes/asics/metafujitrail/side.webp',
   images: [
     '/images/shoes/asics/metafujitrail/side.webp',

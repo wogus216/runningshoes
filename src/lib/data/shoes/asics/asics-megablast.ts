@@ -6,10 +6,11 @@ export const shoe: Shoe = {
   slug: 'asics-megablast',
   brand: 'Asics',
   name: '메가블라스트',
+  imageCaption: "메가블라스트 사진(1013A170-500 · EDO PURPLE/BLACK)은 ASICS 공식 상품 사진과 모델·색상·구도를 대조했습니다. 사진 품번을 한국 판매 규격·가격으로 읽지 마세요.",
+  imageSource: {"title":"ASICS 공식 상품 갤러리","url":"https://www.asics.com/ph/en-ph/megablast/p/1013A170-500.html"},
   image: '/images/shoes/asics/megablast/1.webp',
   images: [
     '/images/shoes/asics/megablast/1.webp',
-    '/images/shoes/asics/megablast/2.webp',
     '/images/shoes/asics/megablast/3.webp',
     '/images/shoes/asics/megablast/4.webp',
     '/images/shoes/asics/megablast/5.webp',

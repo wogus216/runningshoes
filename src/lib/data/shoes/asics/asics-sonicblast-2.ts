@@ -7,6 +7,8 @@ export const shoe: Shoe = {
     brand: "Asics",
     name: "소닉블라스트 2",
     category: "쿠션화",
+  imageCaption: "소닉블라스트 2 사진(1011C244-100 · WHITE/STADIUM ORANGE)은 ASICS 공식 상품 사진과 모델·색상·구도를 대조했습니다. 사진 품번을 한국 판매 규격·가격으로 읽지 마세요.",
+  imageSource: {"title":"ASICS 공식 상품 갤러리","url":"https://www.asics.com/sg/en-sg/sonicblast-2/p/1011C244-100.html"},
     image: "/images/shoes/asics/sonicblast2/side.webp",
     images: [
       "/images/shoes/asics/sonicblast2/side.webp",

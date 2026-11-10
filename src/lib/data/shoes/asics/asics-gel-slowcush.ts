@@ -7,6 +7,8 @@ export const shoe: Shoe = {
   brand: 'Asics',
   name: '젤 슬로우쿠시',
   category: '쿠션화',
+  imageCaption: "젤 슬로우쿠시 사진(1013A187-800 · ORANGE GLOW/CHERRY TOMATO)은 ASICS 공식 상품 사진과 모델·색상·구도를 대조했습니다. 사진 품번을 한국 판매 규격·가격으로 읽지 마세요.",
+  imageSource: {"title":"ASICS 공식 상품 갤러리","url":"https://www.asics.com/sg/en-sg/gel-slowcush/p/1013A187-800.html"},
   image: '/images/shoes/asics/gelslowcush/side.webp',
   images: [
     '/images/shoes/asics/gelslowcush/side.webp',
