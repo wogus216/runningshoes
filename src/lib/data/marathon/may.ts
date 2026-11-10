@@ -6,11 +6,47 @@ export const mayEvents: MarathonEvent[] = [
     name: '제26회 여성마라톤',
     date: '2026-05-02',
     month: '5월',
-    location: '서울 상암 월드컵공원',
+    location: '서울 상암 월드컵공원 평화광장',
     region: '서울',
     distances: ['10K', '5K'],
     status: '대회종료',
     isMajor: false,
+    website: 'https://www.womenmarathon.co.kr/dorun/info.php',
+    description: '2026년 5월 2일 상암 월드컵공원 평화광장의 제26회 대회다. 이름과 달리 남녀노소 참여할 수 있었으며, 주최사는 07:00 집결·07:30 출발을 명시했다. 10km·5km 달리기 외에 3km 걷기·랜선스포츠가 별도로 있었고 당시 기본 참가비는 각각 4만5천원·4만원·3만원·2만원이었다.',
+    raceInfo: {
+      startTime: '07:30 · 주최사 명시 출발 시각',
+      entryFees: [
+        { distance: '10K', fee: 45000 },
+        { distance: '5K', fee: 40000 },
+        { distance: '3km 걷기', fee: 30000 },
+        { distance: '랜선스포츠', fee: 20000 },
+      ],
+    },
+    registrationNote: '주최사 3월 25일 환불 공지와 3월 27일 집결 안내는 취소·환불 기한을 3월 30일 18시로 안내했다. 접수 종료와 별도 환불 기한을 구분하며 실제 개별 환불 결과는 확인하지 않았다.',
+    logistics: { bagStorage: true },
+    postRaceNote: '5월 8일 사무국은 기록 데이터 검수를 마치고 조회 서비스를 열었다고 공지했다. 유의사항상 기록칩은 10km·5km에 제공되며 3km 걷기·랜선 종목과 구분한다. 현재 개인별 기록 조회·정정 처리까지 확인한 것은 아니다.',
+    factCheck: {
+      checkedAt: '2026-11-11',
+      sources: [
+        { title: '2026 공식 요강·참가대상·종목별 기본 참가비', url: 'https://www.womenmarathon.co.kr/dorun/info.php' },
+        {
+          title: '3월 27일 집결 07시·출발 07:30 명시 안내',
+          url: 'https://www.womenmarathon.co.kr/dorun/community_notice.php?ptype=view&idx=6335&page=&code=notice2025',
+        },
+        { title: '10km·5km 기록칩·제한시간 기준 유의사항', url: 'https://www.womenmarathon.co.kr/dorun/info_care.php' },
+        {
+          title: '3월 30일 18시 취소·환불 기한 공지',
+          url: 'https://www.womenmarathon.co.kr/dorun/community_notice.php?ptype=view&idx=6286&page=&code=notice2025',
+        },
+        {
+          title: '5월 8일 기록 조회 개방 공지',
+          url: 'https://www.womenmarathon.co.kr/dorun/community_notice.php?ptype=view&idx=6748',
+        },
+        { title: '서울시 2026 개최·07:20부터 도로 통제 안내', url: 'https://mediahub.seoul.go.kr/archives/2017978' },
+      ],
+      note: '2026년 제26회 자료다. 서울시의 07:20 개최·교통통제 안내와 주최사가 명시한 07:00 집결·07:30 출발을 구분했다. 유의사항의 제한시간은 “집결시간 기준”이라고 적혀 있어 10km 1시간30분·5km 1시간을 출발 후 개인 제한시간으로 옮기지 않았다. “동행달리기 1+1”의 표시 합계는 기본 참가비 두 명분이므로 동반 1인 무료로 해석하지 않는다. 환불 공지의 실제 지급·현재 재고·개인 기록 결과는 미확인이다.',
+    },
+    lastVerified: '2026-11-11',
   },
   {
     id: 'boseong-greentea-2026',
