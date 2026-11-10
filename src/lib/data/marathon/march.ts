@@ -97,18 +97,42 @@ export const marchEvents: MarathonEvent[] = [
     distances: ['울트라'],
     status: '대회종료',
     isMajor: false,
-    description: '50km 울트라마라톤',
+    description: '외부 일정표에는 2026년 3월 7일 다대포해수욕장 일대의 제21회 대회로 소개돼 있다. 공식 요강을 직접 대조하지 못해 날짜·장소는 참고값으로 제공하며 실제 개최 결과는 미확인이다. 종목 안내는 50km와 50·100km로 서로 달라 100km를 확정 종목으로 추가하지 않았다.',
+    scheduleUnverified: true,
+    factCheck: {
+      checkedAt: '2026-11-11',
+      sources: [
+        {
+          title: '마라톤GO 50km 일정 소개 · 2차 자료',
+          url: 'https://marathongo.co.kr/raceDetail/domestic/21st-busan-beach-ultra-marathon-2026',
+        },
+        { title: '레이스포켓 50·100km 소개 · 2차 자료·종목 차이', url: 'https://race-pocket.web.app/races/roadrun-41258/' },
+      ],
+      note: '공식 원문과 최종 일정 대조가 끝나지 않았다. 외부 소개의 “17:00 집결”을 출발 시각으로 옮기지 않고 50km·100km 표기 차이도 확정하지 않는다. 요금·접수 기한·공인·완주 집계·실제 개최 여부를 추가하지 않았으며 날짜가 지났다는 이유만으로 대회 종료로 표시하지 않는다.',
+    },
+    lastVerified: '2026-11-11',
   },
   {
     id: 'yeouido-cherry-blossom-2026',
     name: '제16회 여의도 벚꽃 마라톤',
     date: '2026-03-08',
     month: '3월',
-    location: '서울 여의도',
+    location: '서울 여의도 한강공원 일원 · 물빛무대 앞 광장 안내',
     region: '서울',
-    distances: ['하프', '10K', '5K'],
+    distances: ['10K', '5K'],
     status: '대회종료',
     isMajor: false,
+    website: 'https://www.xn--vk1by6xrzecngs4l6obxj.com/post/1260',
+    description: '대회에 참여한 대한생활체육회가 3월 10일 재게시한 개최 보도는 2026년 3월 8일 여의도 한강변에서 제16회 대회가 열렸다고 전한다. 보도에서 10km·5km는 확인되지만 하프와 10km 명칭이 혼재하므로 기존 하프 표시는 공식 요강 대조 전까지 보류했다. 하프가 열리지 않았다고 확정한 것은 아니며 참가비·종목별 출발·제한시간은 미확인이다.',
+    postRaceNote: '대한생활체육회가 재게시한 보도로 해당 회차의 실제 개최를 대조했다. 보도의 약 6천 명은 참가 규모 표현이며 정확한 전체 완주 집계로 쓰지 않는다. 개인 기록·현재 사진 다운로드·의료 사고 집계는 확인하지 않았다.',
+    factCheck: {
+      checkedAt: '2026-11-11',
+      sources: [
+        { title: '참여 단체 대한생활체육회 3월 10일 개최 보도 재게시', url: 'https://www.xn--vk1by6xrzecngs4l6obxj.com/post/1260' },
+      ],
+      note: '2026년 제16회 개최 날짜를 참여 단체의 게시물 본문과 대조했다. 이는 접수 사이트의 최종 요강 전체를 검증한 것이 아니다. 보도는 10km·5km를 설명하면서 하프·10km 표기를 혼용해 하프를 확정 종목으로 추가하지 않았으며 미개최를 단정하지도 않는다. 원문의 09:00 개최 표현을 전 종목 공통 출발 시각으로 바꾸지 않았다. 외부 일정표의 서로 다른 접수 마감일·참가비·칩 조건은 채택하지 않았다.',
+    },
+    lastVerified: '2026-11-11',
   },
   {
     id: 'goyang-half-2026',
@@ -535,11 +559,21 @@ export const marchEvents: MarathonEvent[] = [
     name: '제2회 한강 벚꽃 마라톤',
     date: '2026-03-29',
     month: '3월',
-    location: '서울 월드컵공원',
+    location: '서울 상암 월드컵공원 평화광장 · 외부 공고 기준',
     region: '서울',
     distances: ['하프', '10K', '5K'],
     status: '대회종료',
     isMajor: false,
+    scheduleUnverified: true,
+    description: '외부에 재게시된 모집 공고는 2026년 3월 29일 상암 월드컵공원 평화광장의 제2회 한강 벚꽃마라톤을 소개한다. 공식 요강·최종 변경·실제 개최 결과를 직접 대조하지 못해 참고 일정으로 구분했다. 한강변이나 공원의 벚꽃이 실제로 만개했다는 보장으로 대회명을 해석하지 않는다.',
+    factCheck: {
+      checkedAt: '2026-11-11',
+      sources: [
+        { title: 'G콘테스트 모집 공고 재게시 · 공식 직접 확인 아님', url: 'https://gcontest.co.kr/front/m/comp/view/32013' },
+      ],
+      note: '주최사 최종 공지 확인을 완료한 대회가 아니다. 재게시 공고의 3월 29일·평화광장·3월 22일 신청 기한을 현재 접수나 실제 개최 확인으로 쓰지 않는다. 09:00 행사 표기에서 종목별 출발 시각을 만들지 않았고 외부 소개에 있는 참가비·기록칩·정확한 코스 경로도 추가하지 않았다. 기존 하프·10km·5km 분류는 참고 종목이며 최종 운영 종목은 공식 확인이 필요하다.',
+    },
+    lastVerified: '2026-11-11',
   },
   // --- 2027 시즌 (해외) ---
   // 참가료를 entryFees에 넣지 않는 이유는 february.ts 주석 참고(JSON-LD가 KRW 하드코딩).

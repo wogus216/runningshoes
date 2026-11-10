@@ -6,12 +6,25 @@ export const juneEvents: MarathonEvent[] = [
     name: '2026 낙동강 200km울트라마라톤',
     date: '2026-06-05',
     month: '6월',
-    location: '부산 을숙도',
+    location: '부산 을숙도 일대 · 외부 일정 소개 기준',
     region: '부산',
     distances: ['울트라'],
     status: '대회종료',
     isMajor: false,
-    description: '200K/100K 울트라마라톤',
+    description: '외부 일정표에는 2026년 6월 5일 시작의 물사랑 낙동강 200km·100km 대회로 소개돼 있다. 일부 글의 “6월 6일 금요일”은 2026년 달력과 맞지 않으며 접수 기간·요금도 다른 자료와 차이가 있다. 주최사 최종 요강을 직접 대조하지 못해 6월 5일은 참고 날짜로만 표시한다.',
+    scheduleUnverified: true,
+    factCheck: {
+      checkedAt: '2026-11-11',
+      sources: [
+        {
+          title: '고러닝 6월 5일·200/100km 소개 · 2차 자료',
+          url: 'https://gorunning.kr/races/973/2026-love-nakdonggang-200km-ultra-marathon/',
+        },
+        { title: 'MyNB 6월 6일 금요일 소개 · 2차 자료·달력 불일치', url: 'https://mynb.kr/ndru-2026/' },
+      ],
+      note: '공식 원문과 최종 일정·운영 결과 확인이 끝나지 않았다. 서로 다른 접수 기한·참가비·장소 명칭을 한 가지 확정 요강으로 합치지 않는다. 참고 날짜는 6월 5일로 두되 “6월 6일 금요일”이라는 외부 글로 임의 변경하지 않았고 출발·37/17시간 컷오프·환불 기한·공인·실제 완주 기록을 확정값으로 추가하지 않았다.',
+    },
+    lastVerified: '2026-11-11',
   },
   {
     id: "mind-marathon-2026",
@@ -57,12 +70,28 @@ export const juneEvents: MarathonEvent[] = [
     name: '제23회 빛고을 울트라마라톤',
     date: '2026-06-13',
     month: '6월',
-    location: '광주 시청',
+    location: '광주광역시청 야외광장 · 외부 일정 소개 기준',
     region: '광주',
     distances: ['울트라'],
     status: '대회종료',
     isMajor: false,
-    description: '100K/50K 울트라마라톤',
+    description: '외부 일정표에는 2026년 6월 13일 광주광역시청 야외광장의 제23회 빛고을 울트라로 소개돼 있다. 공식 요강을 직접 대조하지 못해 100km·50km 안내도 참고 정보로 구분하며 실제 개최 결과는 미확인이다. 외부 자료의 서로 다른 접수 기한·집결과 출발 표기를 합쳐 확정 일정으로 제공하지 않는다.',
+    scheduleUnverified: true,
+    factCheck: {
+      checkedAt: '2026-11-11',
+      sources: [
+        {
+          title: '러닝위키 100·50km·접수 기한 소개 · 2차 자료',
+          url: 'https://runningwikii.com/entry/23rd-bitgoeul-ultramarathon-2026/',
+        },
+        {
+          title: '마라톤GO 17시 집결·5월 12일 마감 소개 · 2차 자료',
+          url: 'https://marathongo.co.kr/raceDetail/domestic/2026-23rd-bitgoeul-ultramarathon',
+        },
+      ],
+      note: '주최사 최종 원문 대조가 미완료다. 외부 글의 접수 마감 5월 12일/13일과 17시 집결/출발 표기를 구분하며, 참가비·개인 컷오프·사우나 쿠폰·실제 완주 집계를 추가하지 않았다. 다음 해 제24회 소개와 2026 제23회 정보를 섞지 않으며 날짜 경과를 실제 개최 확인으로 사용하지 않는다.',
+    },
+    lastVerified: '2026-11-11',
   },
   {
     id: 'ulleungdo-marathon-2026',

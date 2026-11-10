@@ -227,7 +227,19 @@ export const mayEvents: MarathonEvent[] = [
     distances: ['울트라', '트레일'],
     status: '대회종료',
     isMajor: false,
-    description: '48K/40K/34K/21K 종주',
+    description: '외부 일정에는 2026년 5월 24일 화엄사주차장 일대의 제37회 지리산 화대종주로 소개돼 있다. 공식 요강을 직접 대조하지 못해 기존 48·40·34·21km 전체를 확정 운영 종목으로 소개하던 문구를 철회했다. 날짜·장소는 참고값이고 종목별 실제 출발지·거리·참가비·국제 포인트·개최 결과는 미확인이다.',
+    scheduleUnverified: true,
+    factCheck: {
+      checkedAt: '2026-11-11',
+      sources: [
+        {
+          title: '마라톤GO 제37회 48·40km 일정 소개 · 2차 자료',
+          url: 'https://marathongo.co.kr/raceDetail/domestic/37th-jirisan-hwadae-traverse-2026',
+        },
+      ],
+      note: '한국산악마라톤연맹의 해당 회차 공식 원문 대조가 미완료다. 외부 일정이 안내하는 48·40km를 최종 GPX 실측값으로 확정하지 않으며 기존 34·21km 포함 안내도 확정값으로 유지하지 않는다. 03:00 집결을 전 종목 공통 출발로 바꾸거나 “UTMB”라는 외부 제목만으로 국제 공인을 부여하지 않았다. 8월 제38회와 5월 제37회 자료를 섞지 않는다.',
+    },
+    lastVerified: '2026-11-11',
   },
   {
     id: 'geoje-100k-2026',
