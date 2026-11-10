@@ -13,6 +13,7 @@ export const shoe: Shoe = {
   imageCaption: '알파플라이 4 남성 상용 모델 IU4686-002의 측면 사진입니다. 한국 판매 색상·사이즈·품번은 별도로 확인하세요.',
   imageSource: { title: 'Nike 공식 상품 갤러리', url: 'https://www.nike.com/t/alphafly-4-mens-road-racing-shoes-EC33rkiZ' },
   category: '레이싱',
+  specs: { weight: 190, drop: 6.2 },
   price: 349000,
   noindex: true,
   description: 'ZoomX LT + ZoomX · 카본 Flyplate · 전족 Air Zoom2개 구조의 알파플라이 4. RunRepeat 실험실 검체 190g·39/32.8mm. 한국 확인 정가 349,000원.',
