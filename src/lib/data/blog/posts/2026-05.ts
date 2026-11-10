@@ -5048,197 +5048,63 @@ export const posts_2026_05: BlogPost[] = [
 `,
   },
   {
-    id: '2026-asics-kayano-33-launch',
-    slug: '2026-asics-kayano-33-launch',
-    title: 'ASICS GEL-KAYANO 33 | 6/1 출시 — 4D 가이던스 버린 FLUIDSUPPORT, 32와 무엇이 달라졌나',
-    description: '아식스 안정화 플래그십 카야노 33은 2026년 6월 1일 글로벌 출시로 발표된 모델입니다. 글로벌 $170, 한국 정가 199,000원(아식스 코리아 공식몰). 핵심 변화는 카야노 30~32의 4D Guidance System 폐지 + FLUIDSUPPORT 신기술 + 카야노 시리즈 최초 FF BLAST MAX 듀얼 폼. 32와 비교 + 한국 러너가 33을 사야 하나 32를 사야 하나 답까지.',
-    thumbnail: '/images/blog/2026-asics-kayano-33-launch.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-05-11',
-    category: 'news' as const,
-    readingTime: 8,
-    tags: ['아식스', 'Asics', 'GEL-KAYANO 33', '카야노', '안정화', 'FLUIDSUPPORT', 'FF BLAST MAX', '러닝화 발매'],
-    content: `
-<div class="callout info">
-  <span class="callout-icon">📌</span>
-  <div class="callout-body">
-    <p class="callout-title">출시 이후 정리</p>
-    <p>카야노 33은 출시됐고 한국 정가는 <strong>199,000원</strong>(아식스 코리아 공식몰, 32와 같은 값)입니다. 32와의 실제 차이, 호불호가 갈리는 이유, 평발·발볼 넓은 러너의 선택법은 <a href="/blog/asics-gel-kayano-33-review">카야노 33 리뷰</a>에 정리했습니다. 아래는 출시 전(5월) 기준으로 쓴 기록입니다.</p>
-  </div>
-</div>
+    id: "2026-asics-kayano-33-launch",
+    slug: "2026-asics-kayano-33-launch",
+    title: "카야노 33 출시 발표 다시 읽기: 이중 폼과 FLUIDSUPPORT, 32와의 차이",
+    description: "일본 출시 일정과 미국 소개 글을 구분했습니다. MAX·PLUS 이중 폼, 4D GUIDANCE와의 관계, 한국 구매 전 확인할 항목을 정리합니다.",
+    thumbnail: "/images/blog/verified-2026-asics-kayano-33-launch-20261110.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-05-11",
+    category: "news",
+    readingTime: 6,
+    tags: [
+      "아식스",
+      "Asics",
+      "GEL-KAYANO 33",
+      "카야노",
+      "안정화",
+      "FLUIDSUPPORT",
+      "FF BLAST MAX",
+      "러닝화 발매"
+    ],
+    content: `<p><small>2026년 11월 10일 원문 대조. 제품 설명은 해당 모델·지역·발표 시점에 한정하며, 편집 제안은 직접 착용 시험 결과가 아닙니다.</small></p>
 
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li>ASICS GEL-KAYANO 33 — <strong>2026년 6월 1일 글로벌 동시 출시</strong>. 글로벌 $170, 한국 정가 199,000원</li>
-    <li>카야노 30~32에 쓰인 <strong>4D Guidance System 폐지 → FLUIDSUPPORT 신기술</strong>로 안정성 메커니즘 전환. 카야노 시리즈 최초 <strong>FF BLAST MAX(탑) + FF BLAST PLUS(하단) 듀얼 폼</strong></li>
-    <li>스택 40mm·드롭 8mm·무게 298g — 32와 거의 동일한 외형이지만 <strong>착화감은 완전히 다른 방향</strong>으로 진화. 32 재고 세일이 33 발매 직후 시작될 것</li>
-  </ul>
-</div>
+<p>GEL-KAYANO 33의 변화는 ‘4D를 버리고 전혀 다른 신발이 됐다’는 한 문장보다 구체적으로 읽어야 한다. 공식 발표는 기존 지지 설계의 생각을 이어받았다고 설명하면서, 새로운 이름의 지지 구조와 상·하층 폼을 제시한다.</p>
+<h2>6월 1일을 한국 출시일로 읽으면 안 된다</h2>
+<p><a href="https://www.asics.com/us/en-us/blog/whats-new-in-the-gel-kayano-shoe/" target="_blank" rel="noopener noreferrer">ASICS 미국의 2026년 6월 1일 소개 글</a>의 게시 날짜는 2026년 6월 1일이다. 반면 <a href="https://corp.asics.com/jp/press/article/2026-06-04_gel-kayano_33" target="_blank" rel="noopener noreferrer">ASICS Japan의 카야노 33 발표</a>의 6월 4일 발표는 일본 온라인 선판매 6월 11일, 일반 판매 6월 18일을 안내한다. 미국 소개 글의 날짜나 일본 판매 일정을 한국 출시일로 옮기지 않았다. 일본 엔화 가격을 환산해 한국 정가로 쓰지도 않았다.</p>
+<h2>중창 전체가 FF BLAST MAX는 아니다</h2>
+<p>일본 발표가 설명하는 33의 구성은 <strong>위쪽 FF BLAST MAX, 아래쪽은 상대적으로 단단한 FF BLAST PLUS</strong>다. 뒤꿈치에는 PureGEL을 배치한다. 갑피는 엔지니어드 메시, 바닥은 ASICSGRIP과 AHARPLUS를 배치한 HYBRID ASICSGRIP이다. 이 소재 이름만으로 반발력이 몇 퍼센트 좋아졌거나 수명이 얼마나 늘었다고 계산할 수는 없다.</p>
+<h2>32와 비교할 때 이어지는 것과 바뀐 것</h2>
+<table><thead><tr><th>확인 항목</th><th>KAYANO 32</th><th>KAYANO 33</th></tr></thead><tbody>
+<tr><td>공식 폼 표기</td><td>FF BLAST PLUS</td><td>MAX 상층·PLUS 하층</td></tr>
+<tr><td>지지 기술 표기</td><td>4D GUIDANCE SYSTEM</td><td>FLUIDSUPPORT, 기존 개념 계승 설명</td></tr>
+<tr><td>함께 확인되는 요소</td><td>PureGEL·메시·HYBRID ASICSGRIP</td><td>PureGEL·메시·HYBRID ASICSGRIP</td></tr></tbody></table>
+<p>32의 구성은 <a href="https://www.asics.com/sg/en-sg/gel-kayano-32/p/1011C052-401.html" target="_blank" rel="noopener noreferrer">ASICS의 GEL-KAYANO 32 제품 설명</a>와 대조했다. 같은 기술명이 이어진다고 모든 형상과 배합이 같다는 뜻은 아니다. 반대로 33에서 처음으로 딱딱한 내측 기둥을 없앴다고 단정할 근거로도 쓰지 않았다.</p>
+<h2>32를 잘 신고 있다면 무엇을 비교할까</h2>
+<p>새 소재명이 생겼다는 이유만으로 교체할 필요를 만들지는 말자. 다음은 업그레이드를 고민할 때 사용할 편집부의 비교 제안이다.</p>
+<ul><li><strong>지금 신발의 불편을 먼저 적기:</strong> 발등 압박, 앞발 공간, 뒤꿈치 고정, 중족부 받침 중 무엇을 바꾸고 싶은지 정한다.</li><li><strong>33을 같은 조건으로 시착하기:</strong> 평소 양말을 쓰고 모델마다 맞는 사이즈를 찾는다. 상층 폼의 이름보다 발이 실제로 놓이는 느낌을 비교한다.</li><li><strong>가격은 국내 판매 페이지끼리:</strong> 정가, 할인 조건, 반품 가능 여부와 폭 옵션을 확인한다. 다음 세일의 할인율을 예측해 결론내리지 않는다.</li></ul>
+<p>33의 설계 변경은 확인되지만 이 글에서 두 모델을 직접 착용 시험하거나 동일 조건의 성능 수치를 확보한 것은 아니다. <a href="/blog/kayano-33-vs-glycerin-gts-22-vs-860-v15-2026">다른 안정화와 구성·착화 질문을 비교하는 글</a>에서 구매 선택을 이어갈 수 있다.</p>
 
-<div class="callout info">
-  <span class="callout-icon">📅</span>
-  <div class="callout-body">
-    <p class="callout-title">6/1 출시 — 핵심 셋업</p>
-    <p>아디다스 코리아 공식 발표 기준 33은 <strong>6월 1일 ASICS 공식 사이트(asics.co.kr) + 직영 매장 + 주요 멀티숍 동시 출시</strong> 예정. 사이즈 빠른 매진 우려는 적지만 <strong>한국 인기 컬러(블랙/네이비/화이트)</strong>는 발매 첫 주가 안전합니다.</p>
-  </div>
-</div>
-
-<h2>왜 이번 33이 중요한가</h2>
-
-<p>카야노 시리즈는 1993년 1세대 출시 이후 33세대까지 이어진 ASICS의 <strong>안정화 플래그십</strong>입니다. 한국 러너 사이에서도 "평발이면 카야노", "발목 안쪽으로 무너지면 카야노"가 거의 공식처럼 굳어진 모델이죠. <a href="/blog/2026-heavy-runner-running-shoes">과체중 러너 러닝화 TOP 10</a>에서도 카야노 32를 안정화 1순위로 추천한 이유입니다.</p>
-
-<p>그런데 이번 33은 단순한 마이너 업데이트가 아닙니다. <strong>카야노 30(2023)부터 세 세대 이어진 4D Guidance System을 통째로 폐지</strong>하고 새 안정성 시스템(FLUIDSUPPORT)을 도입했습니다. 카야노의 정체성이라 할 미디얼 포스트(안쪽 단단한 폼)·트러스틱(Trusstic) 구조가 사라지는 첫 세대라는 뜻입니다.</p>
-
-<h2>한 눈에 보는 카야노 33</h2>
-
-<table>
-  <thead>
-    <tr><th>항목</th><th>내용</th></tr>
-  </thead>
-  <tbody>
-    <tr><td><strong>공식명</strong></td><td>ASICS GEL-KAYANO 33</td></tr>
-    <tr><td><strong>글로벌 출시</strong></td><td>2026년 6월 1일</td></tr>
-    <tr><td><strong>글로벌 정가</strong></td><td>$170</td></tr>
-    <tr><td><strong>한국 정가</strong></td><td>199,000원 (32와 동일)</td></tr>
-    <tr><td><strong>무게</strong></td><td>298g (남성 US 9) / 259g (여성 US 8)</td></tr>
-    <tr><td><strong>스택</strong></td><td>힐 40mm / 전족부 32mm</td></tr>
-    <tr><td><strong>드롭</strong></td><td>8mm</td></tr>
-    <tr><td><strong>안정성 시스템</strong></td><td><strong>FLUIDSUPPORT</strong> (듀얼 폼 + 지오메트리 기반)</td></tr>
-    <tr><td><strong>미드솔</strong></td><td>FF BLAST MAX (탑) + FF BLAST PLUS (하단)</td></tr>
-    <tr><td><strong>어퍼</strong></td><td>재설계된 엔지니어드 메쉬</td></tr>
-    <tr><td><strong>아웃솔</strong></td><td>AHARPLUS 러버</td></tr>
-  </tbody>
-</table>
-
-<h2>핵심 변화 ① — 4D Guidance System 폐지, FLUIDSUPPORT 도입</h2>
-
-<p>전작 카야노 32까지의 안정성 메커니즘은 <strong>"단단한 폼으로 발 무너짐을 막는다"</strong>는 발상이었습니다. 미디얼 포스트가 안쪽에 박혀 있고, 4D Guidance System이 발이 안쪽으로 회전하는 걸 단계적으로 잡아주는 구조였죠.</p>
-
-<p>33의 FLUIDSUPPORT는 정반대 접근입니다. <strong>"부드러운 폼이 발 모양에 맞춰 변형되며 자연스럽게 잡아준다"</strong>는 발상. 단단한 부품을 박는 게 아니라 폼 자체의 지오메트리(외측 더 두껍게 / 내측 더 단단하게)와 듀얼 레이어 구성으로 안정성을 만듭니다.</p>
-
-<div class="callout warning">
-  <span class="callout-icon">⚠️</span>
-  <div class="callout-body">
-    <p class="callout-title">기존 카야노 팬이 주의할 점</p>
-    <p>"카야노 = 든든한 안정감"의 정체성이 바뀌었습니다. 32까지의 그 단단하고 살짝 묵직한 안쪽 지지감을 좋아했다면, 33은 <strong>"더 부드럽고 자연스러운 안정성"</strong>으로 느껴질 수 있습니다. 호불호 갈릴 수 있는 변화입니다.</p>
-  </div>
-</div>
-
-<h2>핵심 변화 ② — FF BLAST MAX 듀얼 폼</h2>
-
-<p>카야노 시리즈에 처음으로 <strong>FF BLAST MAX</strong>가 들어갑니다. 이 폼은 <a href="/shoes/asics-gel-nimbus-28">Nimbus 28</a>·<a href="/shoes/asics-novablast-5">Novablast 5</a>에서 검증된 ASICS 최상위 슈퍼크리티컬 폼으로, FF BLAST PLUS 대비 <strong>에너지 리턴 ~10%, 경량성 ~15% 향상</strong>됩니다.</p>
-
-<p>33의 미드솔 구조는 듀얼 레이어:</p>
-<ul>
-  <li><strong>탑 레이어 (발 닿는 쪽):</strong> FF BLAST MAX — 부드러운 착화감 + 높은 반발</li>
-  <li><strong>바텀 레이어 (지면 쪽):</strong> FF BLAST PLUS — 안정성 + 내구성</li>
-</ul>
-
-<p>지금까지 카야노는 "안정화라 쿠션은 좀 단단했음"이라는 평이 많았는데, 33부터는 <strong>Nimbus급 쿠션 + 안정성</strong>을 동시에 노립니다.</p>
-
-<h2>32와 33 직접 비교</h2>
-
-<table>
-  <thead>
-    <tr><th>항목</th><th>카야노 32</th><th>카야노 33</th><th>변화</th></tr>
-  </thead>
-  <tbody>
-    <tr><td><strong>무게</strong></td><td>295g</td><td>298g</td><td>거의 동일</td></tr>
-    <tr><td><strong>힐 스택</strong></td><td>40mm</td><td>40mm</td><td>동일</td></tr>
-    <tr><td><strong>드롭</strong></td><td>8mm (공식)</td><td>8mm (공식)</td><td>동일 (RunRepeat 실측 9.3 → 8.5mm)</td></tr>
-    <tr><td><strong>안정성 시스템</strong></td><td>4D Guidance System</td><td><strong>FLUIDSUPPORT</strong></td><td>구조 완전 교체</td></tr>
-    <tr><td><strong>미드솔</strong></td><td>FF Blast Plus Eco (싱글)</td><td><strong>FF BLAST MAX + PLUS (듀얼)</strong></td><td>최상위 폼 채택</td></tr>
-    <tr><td><strong>한국 정가</strong></td><td>199,000원</td><td>199,000원</td><td>동일</td></tr>
-    <tr><td><strong>와이드 옵션</strong></td><td>2E (정식 출시)</td><td>2E 예상 (미발표)</td><td>유지 예상</td></tr>
-  </tbody>
-</table>
-
-<h2>한국 러너 관점 — 33을 사야 하나, 32를 사야 하나</h2>
-
-<h3>✅ 33을 사야 하는 사람</h3>
-
-<ul>
-  <li><strong>카야노 32까지 "안정성은 좋은데 쿠션이 좀 단단했다"는 사람</strong> — FF BLAST MAX 도입으로 정확히 그 불만이 해소됩니다</li>
-  <li><strong>처음 안정화를 사는 평발·과내전 러너</strong> — 어차피 처음이면 32의 단단한 느낌도 어색할 수 있으니, 더 부드러운 33으로 시작하는 게 적응 빠름</li>
-  <li><strong>주간 50km+ 장거리 러너</strong> — 듀얼 폼 + 새 메쉬 어퍼로 장시간 착용 편의성 향상 기대</li>
-</ul>
-
-<h3>❌ 32 재고 세일을 노려야 하는 사람</h3>
-
-<ul>
-  <li><strong>이미 카야노 31·32를 좋아하던 러너</strong> — 33의 FLUIDSUPPORT가 어떻게 느껴질지 검증 안 됨. 익숙한 32를 세일가에 한 켤레 더 확보가 안전</li>
-  <li><strong>예산 16만원 이하</strong> — 33 발매 직후 32 재고가 30~40% 할인 들어갈 가능성 큼 (199,000원 → 13~14만원대)</li>
-  <li><strong>"카야노 = 단단한 지지감" 정체성 좋아하는 러너</strong> — 33이 더 부드러워진 게 본인에게 맞을지 매장 시착 전엔 알 수 없음</li>
-</ul>
-
-<div class="callout info">
-  <span class="callout-icon">💡</span>
-  <div class="callout-body">
-    <p class="callout-title">진짜 똑똑한 선택 — 7월 매장 시착 후 결정</p>
-    <p>33은 ASICS 직영(강남·잠실)에서 시착 가능합니다. <strong>7월 중순쯤이면 32 재고 세일도 본격화</strong>되므로, 33을 한 번 신어보고 마음에 들면 33, 32의 단단함이 더 좋으면 32 세일가 구매가 합리적입니다. 굳이 서두를 필요 없이 시착 후 결정하세요.</p>
-  </div>
-</div>
-
-<h2>다른 안정화와 비교</h2>
-
-<table>
-  <thead>
-    <tr><th>모델</th><th>한국가</th><th>무게</th><th>특징</th></tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><a href="/shoes/asics-gel-kayano-33"><strong>Kayano 33</strong></a></td>
-      <td>199,000원</td>
-      <td>298g</td>
-      <td>FLUIDSUPPORT + 듀얼 폼, 부드러운 안정성</td>
-    </tr>
-    <tr>
-      <td><a href="/shoes/asics-gel-kayano-32">Kayano 32</a></td>
-      <td>199,000원</td>
-      <td>295g</td>
-      <td>4D Guidance, 단단한 안정성, 세 세대 검증</td>
-    </tr>
-    <tr>
-      <td><a href="/shoes/brooks-glycerin-gts-22">Brooks Glycerin GTS 22</a></td>
-      <td>209,000원</td>
-      <td>293g</td>
-      <td>GuideRails 측면 가이드, 자연스러운 안정성</td>
-    </tr>
-    <tr>
-      <td><a href="/shoes/new-balance-860-v15">NB 860 v15</a></td>
-      <td>189,000원</td>
-      <td>330g</td>
-      <td>Stability Plane, 가성비 + 4E 와이드</td>
-    </tr>
-    <tr>
-      <td>Saucony Tempus 2</td>
-      <td>219,000원</td>
-      <td>278g</td>
-      <td>PWRRUN PB 슈퍼크리티컬 + 외측 가이드 프레임</td>
-    </tr>
-  </tbody>
-</table>
-
-<h2>요약 — 구매 액션 플랜</h2>
-
-<ol>
-  <li><strong>지금 (5/11~):</strong> 32에 만족하면 매장에서 사이즈 미리 확인, 33 시착할 때 비교 위해</li>
-  <li><strong>6월 1일 (출시일):</strong> 강남·잠실 ASICS 직영점에서 33 시착 가능. 1~2km 매장 내 트레드밀 시승 권장</li>
-  <li><strong>7월 중순:</strong> 32 재고 세일 본격화 예상. 33에 확신 없으면 32 세일가 잡기</li>
-  <li><strong>가을 마라톤 시즌 전(8~9월):</strong> 본인 메인 러닝화 결정 — 33 or 32 or 다른 안정화</li>
-</ol>
-
-<div class="callout success">
-  <span class="callout-icon">🏃</span>
-  <div class="callout-body">
-    <p class="callout-title">발볼·체중·페이스로 후보 좁히기</p>
-    <p>본인 발볼·평발 여부·체중·러닝 페이스에 맞는 안정화 후보를 1분 진단으로 좁히고 싶다면 <a href="/recommend">맞춤 러닝화 추천</a>을 활용하세요. 발볼 넓은 한국 러너는 <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국인을 위한 러닝화 추천 TOP 10</a>, 과체중 + 안정성 둘 다 필요하면 <a href="/blog/2026-heavy-runner-running-shoes">과체중 러너 러닝화 TOP 10</a>도 참고.</p>
-  </div>
-</div>
-
-<p><small>출처: ASICS US 공식 / WWD Footwear News / Canadian Running Magazine / T3 / Gear Patrol / KicksOnFire / Sundried Reviews / 작성일 2026년 5월 11일 기준 / 한국 정가·출시 일정은 ASICS 코리아 공식 발표에 따라 변동될 수 있습니다.</small></p>
+<h2>자주 묻는 질문</h2>
+<h3>카야노 33은 중창 전체가 FF BLAST MAX인가요?</h3><p>아니요. 공식 발표는 상층 FF BLAST MAX와 하층 FF BLAST PLUS의 이중 구성을 설명합니다.</p>
+<h3>한국에서도 6월 1일에 출시됐나요?</h3><p>이번에 읽은 6월 1일 자료는 미국 소개 글입니다. 일본의 별도 출시 일정도 확인했지만 이를 한국 출시일로 옮기지 않았습니다.</p>
+<h3>32에서 33으로 바꾸면 성능이 몇 퍼센트 좋아지나요?</h3><p>이 글에서 확인한 공식 구성만으로 동일 조건의 성능 향상률을 제시할 수 없습니다. 현재 신발의 불편과 실제 착화 차이를 비교하는 편이 유용합니다.</p>
 `,
+    updatedAt: "2026-11-10",
+    faqs: [
+      {
+        "question": "카야노 33은 중창 전체가 FF BLAST MAX인가요?",
+        "answer": "아니요. 공식 발표는 상층 FF BLAST MAX와 하층 FF BLAST PLUS의 이중 구성을 설명합니다."
+      },
+      {
+        "question": "한국에서도 6월 1일에 출시됐나요?",
+        "answer": "이번에 읽은 6월 1일 자료는 미국 소개 글입니다. 일본의 별도 출시 일정도 확인했지만 이를 한국 출시일로 옮기지 않았습니다."
+      },
+      {
+        "question": "32에서 33으로 바꾸면 성능이 몇 퍼센트 좋아지나요?",
+        "answer": "이 글에서 확인한 공식 구성만으로 동일 조건의 성능 향상률을 제시할 수 없습니다. 현재 신발의 불편과 실제 착화 차이를 비교하는 편이 유용합니다."
+      }
+    ],
   },
   {
     id: '2026-nb-1080v15-tryout-popup-d3',

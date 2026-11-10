@@ -233,86 +233,58 @@ export const posts_2026_07: BlogPost[] = [
     ],
   },
   {
-    id: 'bio-based-running-shoe-foam-sugarcane-castor-2026',
-    slug: 'bio-based-running-shoe-foam-sugarcane-castor-2026',
-    title: '러닝화 폼의 다음 원료는 밭에서 자랍니다 — 사탕수수와 피마자',
-    description:
-      '아식스 특허에서 발견한 "파르네센"은 사탕수수를 발효해 만드는 소재입니다. On의 레이싱 폼은 46%가 피마자에서 오고, 미즈노 웨이브 플레이트는 피마자 기반 Pebax로 만들어진 적이 있습니다. 석유가 지배하던 러닝화 미드솔에 농작물이 들어오는 흐름을 특허·공식 발표로 추적하고, "바이오 기반 %"를 제대로 읽는 법과 그린워싱 구별법까지 정리했습니다.',
-    thumbnail: '/images/blog/bio-based-running-shoe-foam-sugarcane-castor-2026.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-07-28',
-    category: 'guide' as const,
-    readingTime: 10,
-    tags: ['바이오 폼', '지속가능 러닝화', '파르네센', '사탕수수', '피마자', 'FF 블라스트', 'Pebax Rnew'],
-    content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>러닝화 폼에 농작물이 들어오고 있습니다</strong> — 아식스 특허의 핵심 성분 "파르네센"은 <strong>사탕수수 발효</strong>로 만들고, On의 레이싱 폼 헬리온 HF는 <strong>46%가 피마자</strong> 유래입니다</li>
-    <li><strong>"바이오 기반"과 "생분해"는 완전히 다른 말입니다</strong> — 원료의 출발점이 식물이라는 뜻이지, 흙에서 썩는다는 뜻이 아닙니다</li>
-    <li><strong>성능 희생도 아닙니다</strong> — 46% 피마자 폼을 쓴 <a href="/shoes/on-cloudboom-strike">클라우드붐 스트라이크</a>는 에너지 리턴 힐 72.1%로 상위권이고, 겨울 경화율 6%로 우리 DB 실측 1위입니다</li>
-  </ul>
-</div>
+    id: "bio-based-running-shoe-foam-sugarcane-castor-2026",
+    slug: "bio-based-running-shoe-foam-sugarcane-castor-2026",
+    title: "바이오 기반 러닝화 소재, 사탕수수·피마자보다 먼저 볼 것은 적용 부위",
+    description: "식물 원료라는 설명을 읽는 법. Cloudboom Echo 3의 폼, Wave Rider 24의 플레이트, 특허와 실제 제품을 구분합니다.",
+    thumbnail: "/images/blog/verified-bio-based-running-shoe-foam-sugarcane-castor-2026-20261110.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-07-28",
+    category: "guide",
+    readingTime: 6,
+    tags: [
+      "바이오 폼",
+      "지속가능 러닝화",
+      "파르네센",
+      "사탕수수",
+      "피마자",
+      "FF 블라스트",
+      "Pebax Rnew"
+    ],
+    content: `<p><small>2026년 11월 10일 원문 대조. 제품 설명은 해당 모델·지역·발표 시점에 한정하며, 편집 제안은 직접 착용 시험 결과가 아닙니다.</small></p>
 
-<div class="callout info">
-  <p><a href="/blog/running-shoe-midsole-foam-guide-2026">소재 해설 1편</a>에서 폼의 화학을 추적하다 보니, 특허와 공식 발표 곳곳에서 <strong>석유가 아닌 원료</strong>가 자꾸 나왔습니다. 사탕수수, 피마자, 폐타이어까지. 이 글은 그 조각들을 모은 번외편입니다 — <strong>모든 사실은 특허 원문과 제조사 공식 발표 기준</strong>입니다.</p>
-</div>
+<p>‘피마자에서 만든 러닝화’라는 말을 보면 신발 전체가 식물 원료인 것처럼 느껴진다. 하지만 원료 회사의 수지, 신발의 중창, 중창 안의 판, 완제품은 서로 다른 대상이다. 같은 바이오 소재 소식도 <strong>어느 부품에, 어떤 기준으로, 몇 퍼센트 썼는지</strong>를 나눠 읽어야 구매에 쓸 수 있다.</p>
+<h2>먼저, 서로 다른 세 가지 사례</h2>
+<table><thead><tr><th>공개 사례</th><th>확인된 대상</th><th>확대해서 읽으면 안 되는 범위</th></tr></thead><tbody>
+<tr><td>On Cloudboom Echo 3, 2023년 발표</td><td>피마자 유래 Helion HF 폼, 바이오 기반 소재 46%라는 제조사 설명</td><td>모든 Helion HF와 Cloudboom Strike에 같은 비율 적용</td></tr>
+<tr><td>Mizuno Wave Rider 24, 2020년 사례</td><td>피마자 유래 Pebax Rnew를 사용한 WAVE 플레이트</td><td>중창 폼 전체, Rider 29·30의 구성까지 소급 적용</td></tr>
+<tr><td>Kuraray SEPTON BIO 제품군</td><td>사탕수수 당을 발효해 얻는 파르네센 기반의 수소첨가 스티렌계 블록 공중합체</td><td>특정 러닝화 브랜드에 공급하거나 특정 폼에 들어간다는 단정</td></tr></tbody></table>
+<p>각각 <a href="https://press.on-running.com/the-wait-is-over-on-announces-highly-anticipated-new-drop-for-its-fastest-ever-shoes-the-athlete-developed-cloudboom-echo-3-and-cloudspikes" target="_blank" rel="noopener noreferrer">On의 2023년 Cloudboom Echo 3 발표</a>, <a href="https://www.arkema.com/canada/en/newslist/news/global/innovation/2020/20200930-our-bio-based-peb/" target="_blank" rel="noopener noreferrer">Arkema의 2020년 Wave Rider 24 적용 사례</a>, <a href="https://elastomer.kuraray.com/in-en/products/septon-bio-series/" target="_blank" rel="noopener noreferrer">Kuraray SEPTON BIO 원료 설명</a>에서 확인한 범위다. 원료를 공급하는 회사의 제품 설명만으로 러닝화의 실제 배합을 알아낼 수는 없다.</p>
+<h2>‘46%’를 읽을 때 빠지기 쉬운 질문</h2>
+<p>On의 수치는 해당 발표에 등장하는 Echo 3 폼에 관한 설명이다. 이를 완제품 무게의 46%로 바꾸거나, 나머지 54%의 원료를 임의로 분류해서는 안 된다. 함량 표기가 마음에 든다면 제품 페이지에서 <strong>폼·수지·탄소 중 무엇을 분모로 삼았는지</strong>, 측정·인증 방식과 해당 모델 이름이 함께 적혔는지 확인하자. 기준이 없는 백분율 두 개를 비교해 더 친환경적인 신발을 정할 수는 없다.</p>
+<h2>특허는 배합 가능성을 보여준다</h2>
+<p><a href="https://patents.google.com/patent/US11779076B2/en" target="_blank" rel="noopener noreferrer">ASICS 명의 특허 US11779076B2</a>에는 파르네센 기반 고분자를 다른 고분자와 조합하는 쿠션 구조가 담겨 있다. 그러나 문서에 있는 조합이 현재 판매되는 FF BLAST의 실제 조성인지, Kuraray가 그 제품의 공급사인지까지 입증하지 않는다. 특허의 출원인과 소재가 연결된다는 사실만으로 상용 제품의 제조법을 완성하면 추측이 된다.</p>
+<h2>식물 유래와 생분해는 다른 표시다</h2>
+<p><a href="https://environment.ec.europa.eu/topics/plastics/bio-based-biodegradable-and-compostable-plastics_en" target="_blank" rel="noopener noreferrer">유럽연합 집행위원회의 용어 설명</a>는 바이오 기반 플라스틱이 전부 또는 일부 생물 자원에서 유래할 수 있지만 반드시 생분해·퇴비화되는 것은 아니라고 설명한다. 온실가스 영향을 판단할 때도 생산과 토지 이용 등을 포함한 생애주기 검토가 필요하다. 따라서 바이오 원료 표시 하나로 폐기 방법이나 탄소 감축량을 만들어낼 수 없다.</p>
+<h2>러너가 매장에서 쓸 비교 순서</h2>
+<ol><li><strong>정확한 모델과 부위를 적는다.</strong> 같은 소재명이 붙은 다음 세대에도 배합이 같다고 가정하지 않는다.</li><li><strong>환경 주장은 같은 기준끼리 비교한다.</strong> 중창 함량과 갑피 재활용 함량은 한 줄 순위에 놓지 않는다.</li><li><strong>착용 선택은 따로 한다.</strong> 원료 소개에 없는 겨울 경도 변화나 반발력을 보충해서 말하지 않는다. 실제 사이즈·고정감·용도 비교가 필요하다.</li><li><strong>관리·수거 조건을 확인한다.</strong> 원료의 생물학적 출처가 완제품 재활용 경로를 대신하지 않는다.</li></ol>
+<p>이 글에서 확인한 자료는 제품·원료 설명과 특허다. 동일한 실험 조건의 완제품 성능 비교나 전 과정 환경영향 순위는 제공하지 않는다.</p>
 
-<h2>1. 사탕수수 경로 — 아식스 특허의 "파르네센"</h2>
-<p>아식스가 2020년 출원한 미드솔 특허(US11779076B2)의 핵심 성분은 EVA도 PEBA도 아닌 낯선 이름입니다 — <strong>"파르네센(farnesene) 기반 폴리머"</strong>. 구체적으로는 수소화 스티렌-파르네센-스티렌 블록 공중합체로, 전체 조성의 1~60%까지 들어가고 밀도 0.5g/cm³ 이하의 발포체를 만듭니다.</p>
-<p>파르네센이 뭐냐면 — <strong>사탕수수 당분을 미생물로 발효시켜 얻는 물질</strong>입니다. 이 계열 원료를 실제로 파는 일본 Kuraray의 공식 설명은 이렇습니다.</p>
-<div class="callout info">
-  <p>"SEPTON™ BIO 시리즈는 <strong>사탕수수에서 유래한 베타-파르네센</strong>으로 만들어지며, <strong>최대 80%의 천연 재생 원료</strong>를 함유한다. 밑창, 폼 패드, 합성피혁 갑피에 쓸 수 있다." — Kuraray 공식 제품 페이지</p>
-</div>
-<p>아식스가 Kuraray 원료를 쓴다고 확인된 건 아닙니다(특허의 화학과 정합적일 뿐). 다만 아식스 공식 발표에서 확인되는 건 있습니다 — <strong>슈퍼블라스트 2의 FF 블라스트+ ECO 폼이 "약 24% 바이오 기반 소재"</strong>라는 것. 특허의 사탕수수 화학이 실제 제품 라인으로 이어지고 있는 그림입니다. <a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a>·<a href="/shoes/asics-novablast-6">노바블라스트 6</a>로 이어지는 FF 블라스트 계열의 족보에 이런 배경이 있는 셈이죠.</p>
-
-<h2>2. 피마자 경로 — On과 미즈노가 먼저 갔습니다</h2>
-<p>사탕수수보다 먼저 자리 잡은 건 <strong>피마자(캐스터빈)</strong>입니다. 피마자유에서 뽑은 원료로 나일론 계열(PA11)과 PEBA를 만들 수 있는데, 이게 두 갈래로 러닝화에 들어와 있습니다.</p>
-<ul>
-  <li><strong>On 헬리온 HF</strong> — On 공식 보도자료 기준 <strong>"46% 바이오 기반 소재, 피마자에서 유래"</strong>. 클라우드붐 시리즈의 레이싱 폼입니다</li>
-  <li><strong>Arkema Pebax Rnew</strong> — 피마자유 기반 그레이드로, 재생 탄소 함량이 그레이드에 따라 <strong>20~95%</strong>(ASTM D6866 기준). Arkema 공식 사이트가 <strong>미즈노 웨이브 라이더 24의 웨이브 플레이트</strong>가 이 소재로 만들어졌다고 명시합니다 — <a href="/shoes/mizuno-wave-rider-29">현행 라이더 29</a>로 이어지는 그 플레이트의 조상입니다</li>
-</ul>
-<p>이 밖에도 지방족 eTPU를 <strong>최대 38% 바이오 기반</strong>으로 만드는 회사(Covestro), <strong>폐타이어에서 원료 절반</strong>을 가져오는 PEBA(Evonik VESTAMID eCO)까지 — 폼 원료사들의 카탈로그가 조용히 밭과 폐기물 쪽으로 이동하고 있습니다.</p>
-
-<h2>3. "바이오 기반 24%"를 제대로 읽는 법</h2>
-<p>여기서 소비자가 헷갈리기 쉬운 지점을 정리합니다.</p>
-<ul>
-  <li><strong>바이오 기반 ≠ 생분해.</strong> "사탕수수로 만들었다"는 원료의 출발점 얘기지, 신은 뒤 흙에서 썩는다는 뜻이 전혀 아닙니다. 최종 물질은 똑같은 플라스틱(엘라스토머)이고, 수명이 다하면 똑같이 폐기물이 됩니다</li>
-  <li><strong>%는 "전체가 아니라 일부"라는 고백입니다.</strong> FF 블라스트+ ECO의 24%, 헬리온 HF의 46%는 각각 나머지 76%·54%가 여전히 석유 유래라는 뜻이기도 합니다. 숫자를 밝히는 브랜드가 오히려 정직한 편입니다</li>
-  <li><strong>측정 기준이 있습니다</strong> — 바이오 탄소 함량은 ASTM D6866 같은 표준으로 측정합니다. "친환경 소재"라고만 쓰고 %도 기준도 없는 제품은 걸러 읽으세요</li>
-  <li><strong>탄소발자국은 별도 문제입니다.</strong> 원료가 식물이어도 발포 공정과 운송은 그대로라, "바이오 %"가 곧 탄소 감축량은 아닙니다</li>
-</ul>
-
-<h2>4. 성능은 희생되고 있나 — 실측으로 보면</h2>
-<p>"친환경 소재 = 성능 타협"이라는 인식이 있는데, 실측이 반박합니다.</p>
-<table>
-  <thead><tr><th>신발</th><th>바이오 관련</th><th>실측 성능</th></tr></thead>
-  <tbody>
-    <tr><td><a href="/shoes/on-cloudboom-strike">On 클라우드붐 스트라이크</a></td><td>헬리온 HF — 피마자 46%</td><td>에너지 리턴 <strong>힐 72.1%</strong>(상위권) · 겨울 경화율 <strong>6%</strong>(DB 실측 1위)</td></tr>
-    <tr><td>미즈노 웨이브 라이더 24 (당시)</td><td>웨이브 플레이트 — Pebax Rnew</td><td>플레이트 기능 그대로, 소재만 피마자 기반으로 교체</td></tr>
-    <tr><td>아식스 슈퍼블라스트 2 (발표 기준)</td><td>FF 블라스트+ ECO — 24% 바이오</td><td>플래그십 슈퍼트레이너 라인에 그대로 투입</td></tr>
-  </tbody>
-</table>
-<p>피마자 기반 PEBA는 애초에 일반 PEBA와 같은 고분자 계열이라, 잘 만들면 물성 차이가 크지 않습니다. 오히려 <strong>브랜드들이 최상위 레이싱 라인에 먼저 넣고 있다</strong>는 게 흐름을 말해줍니다 — 성능이 부족하면 절대 그렇게 못 하니까요.</p>
-
-<div class="faq">
-  <h2>자주 묻는 질문</h2>
-  <div class="faq-item">
-    <p class="faq-q">Q. 바이오 폼 신발은 땅에 묻으면 분해되나요?</p>
-    <p class="faq-a">A. 아니요. <strong>바이오 "기반"은 원료 출처 얘기지 생분해성이 아닙니다.</strong> 사탕수수로 만든 폼도 화학적으로는 일반 엘라스토머와 같아서 자연 분해되지 않습니다. 다 신은 신발의 처리 문제는 여전히 숙제로 남아 있습니다.</p>
-  </div>
-  <div class="faq-item">
-    <p class="faq-q">Q. 왜 브랜드들은 100% 바이오로 안 만드나요?</p>
-    <p class="faq-a">A. 물성·가격·공급량의 3중 제약 때문입니다. 발포 폼은 배합 성분마다 역할이 달라 전부를 바이오 원료로 바꾸면 반발·내구의 균형을 다시 잡아야 하고, 바이오 원료는 아직 비싸고 공급이 제한적입니다. 그래서 24%, 38%, 46%처럼 <strong>부분 전환 + 정직한 % 표기</strong>가 현재의 정답에 가깝습니다.</p>
-  </div>
-  <div class="faq-item">
-    <p class="faq-q">Q. 바이오 폼이라서 더 비싼가요?</p>
-    <p class="faq-a">A. 원료 단가는 높지만, 현재까지는 바이오 함량을 이유로 소비자 가격을 올렸다고 명시한 사례를 찾기 어렵습니다. 프리미엄 라인에 먼저 적용되다 보니 "비싼 신발에 들어 있는" 경우가 많을 뿐입니다.</p>
-  </div>
-</div>
-
-<p><small>출처: 아식스 특허 US11779076B2 원문(파르네센 기반 폴리머·조성·물성), Kuraray SEPTON BIO 공식 제품 페이지(사탕수수 β-파르네센·최대 80% 재생 원료), 아식스 공식 프레스(슈퍼블라스트 2 — FF 블라스트+ ECO 약 24% 바이오), On 공식 보도자료(헬리온 HF 46% 바이오·피마자 유래), Arkema 공식 자료(Pebax Rnew 20~95%·미즈노 웨이브 라이더 24 적용), Covestro·Evonik 공식 제품 자료. 아식스-Kuraray 공급 관계는 확인된 바 없으며 화학적 정합성만 서술했습니다. 에너지 리턴·경화율은 우리 신발 DB의 실측 수치입니다. · 작성 2026년 7월 28일. (소재 해설 시리즈 번외 — 바이오 폼)</small></p>
+<h2>자주 묻는 질문</h2>
+<h3>바이오 기반 함량이 높으면 더 잘 달리나요?</h3><p>그 비율은 원료의 출처에 관한 설명입니다. 동일 조건의 완제품 성능 시험 없이 반발력이나 기록 향상을 추론할 수 없습니다.</p>
+<h3>Echo 3의 46%를 다른 On 신발에도 적용해도 되나요?</h3><p>아니요. 2023년 Cloudboom Echo 3 발표에 한정한 설명입니다. 다른 모델은 별도 자료를 확인해야 합니다.</p>
 `,
+    updatedAt: "2026-11-10",
+    faqs: [
+      {
+        "question": "바이오 기반 함량이 높으면 더 잘 달리나요?",
+        "answer": "그 비율은 원료의 출처에 관한 설명입니다. 동일 조건의 완제품 성능 시험 없이 반발력이나 기록 향상을 추론할 수 없습니다."
+      },
+      {
+        "question": "Echo 3의 46%를 다른 On 신발에도 적용해도 되나요?",
+        "answer": "아니요. 2023년 Cloudboom Echo 3 발표에 한정한 설명입니다. 다른 모델은 별도 자료를 확인해야 합니다."
+      }
+    ],
   },
   {
     id: "running-shoe-500km-replacement-myth-2026",
@@ -348,96 +320,58 @@ export const posts_2026_07: BlogPost[] = [
     ],
   },
   {
-    id: 'zotefoams-nike-foam-busan-innovation-center-2026',
-    slug: 'zotefoams-nike-foam-busan-innovation-center-2026',
-    title: '나이키 슈퍼폼 만드는 회사가 부산에 왔다 — 조테폼스 신발 이노베이션 센터',
-    description:
-      '나이키 ZoomX 폼의 독점 파트너인 영국 조테폼스(Zotefoams)가 첫 해외 이노베이션 센터를 부산에 세웠습니다. 국내에 보도된 적 없는 이 소식을 런던 증시 공시·연차보고서·실적발표 원문으로 추적했습니다. 나이키와의 2029년까지 독점 계약, 그룹 매출 45%가 나이키, 한국 신발기업 서흥과의 베트남 합작까지 — 슈퍼슈즈 공급망의 무게중심이 한국 곁으로 오고 있습니다.',
-    thumbnail: '/images/blog/zotefoams-nike-foam-busan-innovation-center-2026.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-07-28',
-    category: 'news' as const,
-    readingTime: 9,
-    tags: ['조테폼스', 'Zotefoams', 'ZoomX', '부산', '나이키', '슈퍼슈즈 공급망', '창신INC'],
-    content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>나이키 ZoomX 폼을 만드는 영국 조테폼스가 첫 해외 이노베이션 센터를 부산에 설립했습니다</strong> — 2026년 3월 실적발표에서 "한국 이노베이션 센터 설립 완료, 2026년 성장·투자 계획"이라고 공식 확인</li>
-    <li>이 회사에게 나이키는 <strong>그룹 매출의 45%를 차지하는 단일 최대 고객</strong>이고, 독점 계약은 <strong>2029년 말까지</strong>입니다. 신발이 이 회사의 최대 사업입니다</li>
-    <li>베트남 신발 폼 공장은 <strong>한국 기업 서흥(나이키 OEM 창신INC 계열)이 지분 17.5%를 투자한 합작</strong>으로 짓고 있습니다 — 슈퍼슈즈 공급망에 한국이 깊숙이 들어와 있습니다</li>
-  </ul>
-</div>
+    id: "zotefoams-nike-foam-busan-innovation-center-2026",
+    slug: "zotefoams-nike-foam-busan-innovation-center-2026",
+    title: "조테폼스 부산 신발 혁신센터, 계획에서 운영까지 확인된 내용",
+    description: "부산 거점의 발표와 한국 센터 운영 확인을 시간순으로 대조했습니다. 베트남 공장 계획, 완제품 성능, 공급 독점의 해석을 구분합니다.",
+    thumbnail: "/images/blog/verified-zotefoams-nike-foam-busan-innovation-center-2026-20261110.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-07-28",
+    category: "news",
+    readingTime: 6,
+    tags: [
+      "조테폼스",
+      "Zotefoams",
+      "ZoomX",
+      "부산",
+      "나이키",
+      "슈퍼슈즈 공급망",
+      "창신INC"
+    ],
+    content: `<p><small>2026년 11월 10일 원문 대조. 제품 설명은 해당 모델·지역·발표 시점에 한정하며, 편집 제안은 직접 착용 시험 결과가 아닙니다.</small></p>
 
-<div class="callout info">
-  <p>이 소식, <strong>국내 언론에서 찾아볼 수 없었습니다.</strong> 네이버 뉴스에서 "조테폼스"를 검색하면 포장재 관련 칼럼 1건이 전부입니다(2026-07-28 기준). 이 글은 <a href="/blog/running-shoe-midsole-foam-guide-2026">소재 해설 1편</a>을 쓰며 나이키 폼 공급망을 추적하다가 발견한 내용으로, <strong>런던 증시 규제공시(RNS)·연차보고서·실적발표 원문</strong>만으로 구성했습니다.</p>
-</div>
+<p>러닝화 소재 회사의 한국 거점이 생겼다는 소식에서 러너에게 의미 있는 질문은 두 가지다. 실제 운영 중인가, 그리고 내가 신는 제품과 무엇이 연결되는가. 공개 문서로 첫 번째는 확인할 수 있다. 두 번째는 개별 모델의 제조·개발 자료가 더 필요하다.</p>
+<h2>부산 발표와 운영 확인은 서로 다른 시점의 근거다</h2>
+<table><thead><tr><th>자료</th><th>확인한 내용</th><th>읽는 범위</th></tr></thead><tbody>
+<tr><td>혁신 역량 확대 발표</td><td>부산을 신발 혁신센터의 예정 거점으로 명시</td><td>당시 계획</td></tr>
+<tr><td>2025년 연차보고서</td><td>한국 Footwear Innovation Centre 임대 계약 체결</td><td>공간 확보 단계의 보고</td></tr>
+<tr><td>2026년 상반기 실적 공식 요약</td><td>한국 센터 운영 및 고객 방문 확인</td><td>운영 단계의 보고</td></tr></tbody></table>
+<p>출처는 <a href="https://www.zotefoams.com/zotefoams-accelerates-innovation-capabilities-with-new-announcements/" target="_blank" rel="noopener noreferrer">Zotefoams의 혁신 거점 발표</a>, <a href="https://www.zotefoams.com/annual-reports/2025/AR2025/reports/group-ceos-review-17528.html" target="_blank" rel="noopener noreferrer">2025년 연차보고서 CEO 리뷰</a>, <a href="https://www.zotefoams.com/investors/financial-updates/" target="_blank" rel="noopener noreferrer">2026년 상반기 실적 공식 요약</a>다. 앞의 부산 계획과 뒤의 한국 센터 운영 보고를 연결해 정리했다. ‘한국에 올 예정이다’라고만 쓰면 최신 운영 상태를 놓친다. 반대로 최신 문서에 없는 모든 설비의 설치 완료나 공개 체험 운영까지 보태면 과장이다.</p>
+<h2>베트남 생산 시설과 한국 혁신센터를 구분하자</h2>
+<p><a href="https://www.zotefoams.com/zotefoams-enters-joint-venture-with-seoheung-co-ltd/" target="_blank" rel="noopener noreferrer">2025년 8월 Seoheung 합작 발표</a>는 베트남 시설의 건설·시운전을 지원하기 위한 Seoheung과의 합작을 설명한다. 조테폼스는 전통적인 폼 시트 공급에서 신발용 3차원 프리폼 생산으로 확장하는 방향을 제시했다. 이는 한국 혁신센터와 구분되는 생산 투자다.</p>
+<p>2026년 상반기 실적 요약에는 베트남의 <strong>10월 시험 생산 예정</strong>이 담겨 있다. 예정 시점이 지났다는 이유만으로 11월 현재 실제 시험 생산이나 상업 가동을 완료했다고 바꾸지는 않았다. 이번 확인 범위에서는 그 후속 완료 공시를 확보하지 못했다.</p>
+<h2>러닝화 구매에 연결할 수 있는 것과 더 필요한 것</h2>
+<p>이 소식은 개발 거점과 생산망이 아시아의 고객·파트너 가까이 옮겨가는 사례로 읽을 수 있다. 다만 센터 운영 사실만으로 특정 ZoomX 제품이 부산에서 개발됐거나, 한국에서 폼을 양산하거나, 다음 신발의 반발력이 얼마나 높아진다고 결론낼 수는 없다.</p>
+<p>공급 계약을 읽을 때도 방향을 확인해야 한다. 특정 공급사가 경쟁 브랜드에 팔지 않는다는 약속과 구매사가 모든 물량을 한 공급사에서 사야 한다는 약속은 다르다. 계약 범위의 원문을 확보하지 않은 상태에서 ‘나이키 슈퍼폼 전량 독점 생산’이라고 확대하지 않았다.</p>
+<h2>다음 제품 발표에서 확인할 세 가지</h2>
+<ul><li><strong>정확한 모델 이름과 적용 부위:</strong> 원료 수지, 발포 시트, 성형된 중창 중 어디까지 공급하는지.</li><li><strong>실제 달성한 단계:</strong> 계약·설치·시험 생산·상업 가동을 나눠 읽기.</li><li><strong>완제품 시험 조건:</strong> 공정 변경이 신발의 무게나 성능에 연결됐다면 비교 모델과 측정 방법까지 확인하기.</li></ul>
+<p>현재 구매할 신발을 고른다면 이 산업 소식을 성능 순위로 바꾸기보다, 해당 모델의 공식 구성과 착용 조건을 따로 비교하는 편이 유용하다. 이 센터가 일반 소비자를 위한 방문 시설이라는 안내도 이번 자료에서는 확인되지 않았다.</p>
 
-<h2>1. 조테폼스가 누구인가 — ZoomX의 뿌리</h2>
-<p>영국 조테폼스(Zotefoams plc)는 런던 증시 상장사로, 질소 고압 발포라는 독자 공정으로 고성능 폼을 만드는 소재 기업입니다. 러너에게 중요한 이유는 하나입니다 — <strong>나이키 ZoomX가 이 회사 손을 거칩니다.</strong></p>
-<ul>
-  <li><strong>2017년</strong> — "나이키와 신발 기술 개발·소재 공급을 위한 전략적 파트너십"을 증시에 공시</li>
-  <li><strong>2023년</strong> — 나이키와의 <strong>독점 계약을 2029년 12월 31일까지 연장</strong></li>
-  <li>같은 해 공시에서 <strong>나이키 울트라플라이</strong>에 고성능 폼을 공급한다고 제품명까지 명시 — 이 프로그램은 로드 레이싱화·트랙 스파이크에서 시작해 <a href="/shoes/nike-acg-zegama-trail">제가마</a>(2022)로 확장됐다고 밝혔습니다</li>
-</ul>
-<p>ZoomX의 소재가 무엇인지는 나이키 자체 특허가 말합니다 — <strong>"Pebax® 열가소성 엘라스토머 폼, 나이키가 ZoomX라는 상표명으로 판매"</strong>(나이키 특허 명세서 원문). 그 Pebax를 발포해 나이키에 대는 핵심 파트너가 조테폼스입니다. <a href="/shoes/nike-alphafly-3">알파플라이 3</a>·<a href="/shoes/nike-vaporfly-4">베이퍼플라이 4</a>·<a href="/shoes/nike-ultrafly">울트라플라이</a>의 심장이 여기서 나오는 셈이죠. 자세한 추적 과정은 <a href="/blog/running-shoe-midsole-foam-guide-2026">소재 해설 1편</a>에 있습니다.</p>
-
-<h2>2. 숫자로 보는 나이키 의존도</h2>
-<table>
-  <thead><tr><th>항목</th><th>수치</th><th>출처</th></tr></thead>
-  <tbody>
-    <tr><td>신발 부문 매출 (2024)</td><td><strong>£66.1m (약 1,200억 원)</strong>, 전년 대비 +46%</td><td>연차보고서</td></tr>
-    <tr><td>그룹 매출 중 신발 비중</td><td>36% → <strong>45%</strong></td><td>연차보고서</td></tr>
-    <tr><td>단일 최대 고객 비중</td><td>그룹 매출의 <strong>약 45%</strong> (재무제표엔 익명 기재)</td><td>감사 재무제표</td></tr>
-    <tr><td>독점 계약 기간</td><td><strong>2029년 12월 31일까지</strong></td><td>증시 공시(RNS)</td></tr>
-  </tbody>
-</table>
-<p>연차보고서는 나이키를 25차례 언급하며 스스로를 <strong>"나이키의 핵심 고가 폼 기술 파트너"</strong>라 부르고, 리스크 항목에서는 "보잉과 나이키처럼 우리보다 훨씬 큰 고객"이라고 씁니다. 신발은 이제 이 회사의 최대 사업이고, 그 대부분이 나이키 한 곳에서 나옵니다. 2024~2025년 신발 수요가 "이례적으로 높은 수준"이었다는 서술도 있습니다 — 슈퍼슈즈 호황이 소재사 실적으로 그대로 찍힌 겁니다.</p>
-
-<h2>3. 그리고 부산에 왔습니다</h2>
-<p>2024 연차보고서에서 이 회사는 <strong>"우리의 첫 시장 맞춤형 이노베이션 센터 — 대한민국 부산의 신발 이노베이션 센터"</strong> 계획을 밝혔습니다. 원문의 표현은 이렇습니다.</p>
-<div class="callout info">
-  <p>"핵심 고객과 그들의 <strong>1차 협력사(Tier 1) 근처</strong>에 위치해, 새로운 개발을 <strong>특정 신발 모델에 직접 적용</strong>할 수 있게 한다."</p>
-</div>
-<p>그리고 2026년 3월 실적발표에서 진행 상황이 확인됐습니다 — <strong>"한국에 이노베이션 센터 설립 완료(established), 2026년 성장과 투자 계획."</strong> 부산 센터는 기술 쇼케이스와 아시아 주요 고객·파트너와의 기술 협업, 그리고 아시아 제조 전략의 램프업을 지원하는 거점으로 명시돼 있습니다.</p>
-<p>왜 부산일까요. 부산은 한국 신발 산업의 본거지이고, <strong>나이키 신발을 실제로 만드는 1차 협력사(OEM)들의 뿌리가 있는 도시</strong>입니다. "고객과 그 협력사 곁으로 간다"는 문장에서 고객이 누구인지는 어렵지 않게 읽힙니다.</p>
-
-<h2>4. 베트남 공장 — 한국 기업 서흥이 파트너입니다</h2>
-<p>부산 센터와 짝을 이루는 것이 <strong>베트남 신발 폼 공장</strong>입니다. 실적발표 원문 기준:</p>
-<ul>
-  <li>운동화용 <strong>폼 프리폼(preform) 생산</strong> 시설 — 이 회사의 첫 아시아 대규모 생산기지</li>
-  <li>총 사업비 약 <strong>3,200만 달러</strong>, 완공·시운전은 <strong>2026년 말~2027년 초</strong>, 초기 생산은 late 2026~2027</li>
-  <li>실행 파트너는 <strong>서흥(Seoheung Co. Ltd.)</strong> — "신발 공급망의 오랜 전문기업"으로 소개되며, <strong>지분 17.5%에 1,000만 달러를 투자</strong>했습니다</li>
-</ul>
-<p>서흥은 한국 신발업계에서 낯선 이름이 아닙니다. <strong>나이키 대형 OEM인 창신INC의 최대주주(모회사 격)로 알려진 신발 자재 전문기업</strong>입니다. 즉 이 그림은 "영국 폼 기술 × 한국 신발 공급망 × 베트남 생산"의 삼각 구조이고, <strong>나이키 슈퍼슈즈의 미래 공급망에 한국 자본과 노하우가 깊숙이 박혀 있다</strong>는 뜻입니다.</p>
-
-<h2>5. 한국 러너에게 무슨 의미인가</h2>
-<p>과장 없이 정리하면 이렇습니다.</p>
-<ul>
-  <li><strong>당장 신발 가격이 내려가거나 한국 출시가 빨라진다는 근거는 없습니다.</strong> 그런 얘기는 어디에도 없습니다</li>
-  <li>다만 <strong>차세대 나이키 폼의 개발·적용 실험이 부산에서 이뤄질 가능성</strong>이 생겼습니다 — "새로운 개발을 특정 신발 모델에 직접 적용"하는 거점이라고 회사가 직접 밝혔으니까요</li>
-  <li>유럽에서 만들어 아시아로 보내던 폼 물량 일부가 <strong>2027년부터 베트남 생산으로 전환</strong>됩니다. 슈퍼슈즈 공급망의 무게중심이 소비지이자 생산지인 아시아로 이동하는 흐름이고, 부산이 그 혁신 허브 자리를 잡았습니다</li>
-</ul>
-<p>러닝화 폼이 어떻게 만들어지고 왜 비싼지 궁금하다면 <a href="/blog/running-shoe-midsole-foam-guide-2026">미드솔 폼 완전 해설</a>을, 그 폼과 짝을 이루는 카본 플레이트의 정체는 <a href="/blog/running-shoe-plate-guide-2026">플레이트 완전 해설</a>을 보세요.</p>
-
-<div class="faq">
-  <h2>자주 묻는 질문</h2>
-  <div class="faq-item">
-    <p class="faq-q">Q. 조테폼스가 ZoomX를 "만든다"는 게 정확히 무슨 뜻인가요?</p>
-    <p class="faq-a">A. 원료 수지(Pebax)는 프랑스 Arkema가 만들고, 조테폼스는 그걸 <strong>발포(폼으로 가공)</strong>하는 단계의 독점 파트너입니다. 완성된 신발은 나이키의 OEM 협력사들이 조립하죠. "수지 → 발포 → 조립"의 공급망에서 가운데를 맡는 회사입니다. 중국 소재사 신셀(Shincell)도 ZoomX 관련 공급을 주장하고 있어 세부 분담은 외부에서 단정하기 어렵습니다 — 두 회사는 2024년 얼라이언스를 맺은 사이기도 합니다.</p>
-  </div>
-  <div class="faq-item">
-    <p class="faq-q">Q. 부산 센터에서 신발을 생산하나요?</p>
-    <p class="faq-a">A. 아닙니다. 부산은 <strong>이노베이션 센터(R&amp;D·기술 협업 거점)</strong>이고, 생산은 베트남 공장이 맡습니다. 다만 "새 기술을 특정 신발 모델에 직접 적용하는" 개발 거점이라 신제품의 탄생 과정에 관여하게 됩니다.</p>
-  </div>
-  <div class="faq-item">
-    <p class="faq-q">Q. 이 정보는 어디까지 믿을 수 있나요?</p>
-    <p class="faq-a">A. 이 글의 모든 사실은 <strong>런던 증시 규제공시(RNS), 감사받은 연차보고서, 공식 실적발표문</strong>에서 나왔습니다. 상장사가 시장에 허위 공시를 하면 법적 책임을 지기 때문에, 브랜드 마케팅보다 신뢰도가 높은 1차 자료입니다. 서흥-창신INC 관계는 국내 언론 보도(감사보고서 인용)를 참조했습니다.</p>
-  </div>
-</div>
-
-<p><small>출처: Zotefoams plc 런던증시 규제공시(RNS — 2017 나이키 파트너십, 2023 독점계약 연장·울트라플라이 공급), 2024 연차보고서(부산 센터·매출 세그먼트·고객 집중도), FY2025 예비실적 발표문(2026-03 — 한국 센터 설립 완료·서흥 합작·베트남 일정), 나이키 특허 US20230120495A1·WO2021206812A1(ZoomX=Pebax®), 국내 언론의 창신INC 감사보고서 인용 보도. 원화 환산은 대략치입니다. · 작성 2026년 7월 28일. (소재 해설 시리즈 번외 — 공급망 추적)</small></p>
+<h2>자주 묻는 질문</h2>
+<h3>부산 센터는 아직 계획인가요?</h3><p>초기 발표는 계획이었지만 2026년 상반기 실적의 공식 요약에서는 한국 신발 혁신센터가 운영 중이고 고객을 맞고 있다고 보고했습니다.</p>
+<h3>베트남 공장도 가동을 완료했나요?</h3><p>확인한 상반기 실적 요약에는 10월 시험 생산 예정이라고 나옵니다. 후속 완료 공시를 확보하지 않아 실제 가동 완료로 쓰지 않았습니다.</p>
 `,
+    updatedAt: "2026-11-10",
+    faqs: [
+      {
+        "question": "부산 센터는 아직 계획인가요?",
+        "answer": "초기 발표는 계획이었지만 2026년 상반기 실적의 공식 요약에서는 한국 신발 혁신센터가 운영 중이고 고객을 맞고 있다고 보고했습니다."
+      },
+      {
+        "question": "베트남 공장도 가동을 완료했나요?",
+        "answer": "확인한 상반기 실적 요약에는 10월 시험 생산 예정이라고 나옵니다. 후속 완료 공시를 확보하지 않아 실제 가동 완료로 쓰지 않았습니다."
+      }
+    ],
   },
   {
     id: "running-shoe-plate-guide-2026",
@@ -501,222 +435,57 @@ export const posts_2026_07: BlogPost[] = [
     ],
   },
   {
-    id: 'running-shoe-midsole-foam-guide-2026',
-    slug: 'running-shoe-midsole-foam-guide-2026',
-    title: '러닝화 미드솔 폼 완전 해설 — ZoomX·부스트가 결국 뭐고, 누가 만드나',
-    description:
-      '러닝화의 반발과 쿠션을 결정하는 미드솔 폼을 쉽게 풀었습니다. EVA·TPU·PEBA·슈퍼크리티컬의 차이, 나이키가 광고에선 안 밝히는 ZoomX의 정체를 나이키 자체 특허에서 찾아낸 과정, 그 폼을 만드는 회사가 부산에 연구소를 세운다는 사실, 겨울 경화율 6배 차이, 450km 뒤 슈퍼폼이 죽는 이유까지 1차 자료로 정리한 소재 해설 1편입니다.',
-    thumbnail: '/images/blog/running-shoe-midsole-foam-guide-2026.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-07-27',
-    updatedAt: '2026-07-27',
-    category: 'guide' as const,
-    readingTime: 19,
-    tags: ['미드솔 폼', '러닝화 소재', 'PEBA', 'ZoomX', '부스트', '슈퍼크리티컬'],
-    content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>미드솔 폼이 러닝화의 심장</strong> — 반발·쿠션·무게를 좌우합니다. 크게 <strong>EVA(기본) → TPU(부스트) → PEBA(슈퍼폼)</strong> 순으로 반발이 좋아지고 값이 오릅니다</li>
-    <li><strong>그런데 브랜드는 마케팅에서 소재를 거의 안 밝힙니다</strong> — "ZoomX = PEBA"조차 나이키 광고·제품 페이지엔 없습니다. 이 글에서 그 근거를 끝까지 추적했더니, <strong>나이키 자체 특허 문서</strong>와 <strong>공급사의 주주 공시</strong>라는 뜻밖의 곳에서 답이 나왔습니다</li>
-    <li><strong>"슈퍼크리티컬"은 소재가 아니라 공정</strong> — 폼에 질소·CO2를 주입해 가볍고 반발 좋게 만드는 기술이라, EVA든 PEBA든 여기에 적용됩니다</li>
-  </ul>
-</div>
+    id: "running-shoe-midsole-foam-guide-2026",
+    slug: "running-shoe-midsole-foam-guide-2026",
+    title: "러닝화 미드솔 폼 읽는 법: 재료·발포 공정·상품명을 구분하자",
+    description: "FuelCell이라고 모두 같은 폼은 아닙니다. 모델별 공식 예시로 EVA·PEBA·초임계 발포의 차이와 구매 비교 순서를 정리합니다.",
+    thumbnail: "/images/blog/verified-running-shoe-midsole-foam-guide-2026-20261110.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-07-27",
+    updatedAt: "2026-11-10",
+    category: "guide",
+    readingTime: 6,
+    tags: [
+      "미드솔 폼",
+      "러닝화 소재",
+      "PEBA",
+      "ZoomX",
+      "부스트",
+      "슈퍼크리티컬"
+    ],
+    content: `<p><small>2026년 11월 10일 원문 대조. 제품 설명은 해당 모델·지역·발표 시점에 한정하며, 편집 제안은 직접 착용 시험 결과가 아닙니다.</small></p>
 
-<div class="callout info">
-  <p>러닝화 광고를 보면 "ZoomX, 부스트, FF 블라스트, 퓨얼셀…" 브랜드마다 폼 이름이 다 다릅니다. 그런데 이 이름들을 벗겨보면 <strong>결국 몇 가지 소재(EVA·TPU·PEBA)와, 그걸 만드는 소수의 화학회사</strong>로 정리됩니다. 이 글 하나로 폼의 정체가 잡힙니다.</p>
-</div>
+<p>‘초임계 폼이면 PEBA인가요?’, ‘FuelCell이면 엘리트 레이서와 같은 소재인가요?’ 두 질문 모두 이름 하나로 답하기 어렵다. 러닝화 설명에는 <strong>무엇으로 만들었는지, 어떻게 발포했는지, 어떤 이름으로 파는지</strong>가 섞여 있기 때문이다. 세 칸으로 나눠 적으면 과장된 비교를 걸러내기 쉽다.</p>
+<h2>폼 설명을 세 칸으로 쪼개기</h2>
+<table><thead><tr><th>구분</th><th>예시</th><th>이것만으로 알 수 없는 것</th></tr></thead><tbody>
+<tr><td>원료·고분자</td><td>EVA, TPU, PEBA, 이들의 혼합</td><td>완제품의 실제 반발력·경도·수명</td></tr>
+<tr><td>발포 공정</td><td>초임계 발포, 질소 주입 등 제조사 설명</td><td>원료가 반드시 PEBA인지 여부</td></tr>
+<tr><td>브랜드 상품명</td><td>FuelCell, PWRRUN PB 등</td><td>이름이 같은 모든 모델·세대의 동일 배합</td></tr></tbody></table>
+<h2>공식 설명으로 확인되는 모델별 차이</h2>
+<ul><li><strong>FuelCell Rebel v5:</strong> 제조사는 PEBA·EVA 혼합을 명시한다. 배합 비율까지 공개한 것은 아니다. <a href="https://www.newbalance.com/pd/fuelcell-rebel-v5/MFCX3B5-D-14.html" target="_blank" rel="noopener noreferrer">New Balance Rebel v5 공식 제품 설명</a>.</li><li><strong>FuelCell SuperComp Elite v5:</strong> 제조사는 중창 폼을 100% PEBA로 설명한다. 신발 전체가 PEBA이거나 에너지 반환율이 100%라는 뜻은 아니다. <a href="https://www.newbalance.com/pd/fuelcell-supercomp-elite-v5/MRCELV5-50683-PR.html?dwvar_MRCELV5-50683-PR_style=MRCELLR5" target="_blank" rel="noopener noreferrer">New Balance SC Elite v5 공식 제품 설명</a>.</li><li><strong>HOKA Bondi 9와 Mach 6:</strong> 공식 설명은 초임계 발포 EVA를 명시한다. 초임계라는 공정명과 EVA라는 재료명이 함께 성립하는 예다. <a href="https://au.hoka.com/blog/introducing-the-bondi-9" target="_blank" rel="noopener noreferrer">HOKA Bondi 9·Mach 6 공정 설명</a>.</li><li><strong>Saucony PWRRUN PB:</strong> 브랜드는 PEBA 비드 기반 폼으로 설명한다. 같은 브랜드의 PWRRUN·PWRRUN+와 구분해 읽어야 한다. <a href="https://www.saucony.com/en/foam-technologies/" target="_blank" rel="noopener noreferrer">Saucony 폼 기술 설명</a>.</li></ul>
+<p>이 예시들은 원료·공정 표현을 해독하는 데 쓰는 자료다. 서로 같은 조건에서 실험한 성능 순위는 아니다. 다른 제품의 정확한 고분자가 공식 자료에 없으면 ‘비공개·미확인’으로 두어야 한다. 상표명이나 손으로 누른 느낌으로 화학 조성을 완성할 수 없다.</p>
+<h2>에너지 반환율이 높으면 내 기록도 그만큼 줄까?</h2>
+<p>폼이나 신발을 눌렀다 되돌릴 때 측정하는 기계적 에너지 반환율과 사람이 달릴 때의 대사 비용은 측정 대상이 다르다. 완제품 달리기 연구를 읽을 때는 비교 신발, 참가자, 속도, 무게 보정까지 봐야 한다. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5856879/" target="_blank" rel="noopener noreferrer">Hoogkamer 등의 완제품 연구</a>도 특정 시제품과 비교화의 실험이지 PEBA라는 재료 전체의 우열을 매긴 실험은 아니다.</p>
+<p>따라서 랩의 반환율을 그대로 개인 기록 단축률로 옮기거나 ‘EVA는 일정 거리 이후 죽고 PEBA는 더 짧게 간다’는 공통 수명을 붙이지 않았다. 자료마다 다른 시험 온도와 압축 조건의 값을 한 줄에 놓아 겨울 성능 순위를 만들지도 않았다.</p>
+<h2>실제 선택은 같은 용도의 신발끼리</h2>
+<p>비교표를 만들 때는 ‘소재 등급’ 대신 다음 네 항목을 적어보자. 아래는 편집부의 구매 비교 제안이며, 직접 착용 결과는 아니다.</p>
+<ol><li><strong>용도:</strong> 편하게 달릴 신발인지, 빠른 훈련과 대회를 위한 신발인지 먼저 정한다.</li><li><strong>완제품 구조:</strong> 단층·복층 폼, 판의 유무와 재질, 밑창 곡선과 접지 면적을 함께 본다.</li><li><strong>착화:</strong> 발가락 공간·뒤꿈치 고정·중족부 압박을 현재 쓰는 양말과 비교한다. 비싼 원료가 맞지 않는 라스트를 해결해주지는 않는다.</li><li><strong>실제 비용:</strong> 국내 공식 정가와 구매 조건을 확인한다. 검증하지 않은 수명으로 km당 가격을 계산하지 않는다.</li></ol>
+<p>처음 보는 폼 이름을 만나면 ‘좋은가?’에 앞서 ‘어느 모델에서 무엇을 뜻하는가?’라고 물어보자. <a href="/blog/carbon-plate-shoes-guide-2026">카본판이 들어간 완제품을 고르는 기준</a>도 함께 읽을 수 있다.</p>
 
-<h2>1. 폼 3대 계열 — 쉽게 정리</h2>
-<p>복잡해 보이지만 핵심은 세 가지입니다. 뒤로 갈수록 반발이 좋아지고, 대신 비싸지거나 내구가 짧아집니다.</p>
-<table>
-  <thead><tr><th>폼</th><th>특징</th><th>에너지 리턴</th><th>내구</th><th>쓰는 곳</th></tr></thead>
-  <tbody>
-    <tr><td><strong>EVA</strong></td><td>가장 기본. 싸고 오래감. 겨울에 딱딱해짐</td><td>40~65%</td><td>길다(1000km+)</td><td>입문화·데일리</td></tr>
-    <tr><td><strong>TPU (eTPU)</strong></td><td>EVA보다 반발↑, 겨울에도 안정. 대신 무겁다</td><td>중상</td><td>길다</td><td>아디다스 부스트</td></tr>
-    <tr><td><strong>PEBA</strong></td><td>가장 가볍고 반발 최고. 대신 비싸고 빨리 죽는다</td><td><strong>70%+</strong></td><td>짧다(150~300km)</td><td>카본 레이서·슈퍼폼</td></tr>
-  </tbody>
-</table>
-<p>요즘 프리미엄 신발은 여기에 두 가지가 더 붙습니다 — <strong>A-TPU</strong>(PEBA만큼 반발 좋으면서 내구·겨울 강함, 푸마 나이트로 엘리트 계열)와 <strong>TPEE</strong>(내구 좋은 프리미엄, 아디다스 라이트스트라이크 프로). 하지만 큰 그림은 위 세 줄로 충분합니다.</p>
-
-<h2>2. 브랜드 폼의 정체 — 사실은 대부분 "안 밝힙니다"</h2>
-<p>여기가 이 글의 핵심입니다. 이 글을 쓰면서 <strong>브랜드 11곳의 공식 기술 페이지와 보도자료를 직접 열어봤는데, 결과가 뜻밖이었습니다.</strong></p>
-<p><strong>러닝화 브랜드는 자기 폼이 무슨 소재인지 거의 밝히지 않습니다.</strong> 대부분 "가볍고 반발이 좋은 혁신적 폼" 같은 성능 표현만 쓰고, 화학 소재명은 한 번도 꺼내지 않습니다. 그래서 아래 표는 <strong>"브랜드가 직접 밝혔는가"를 기준으로 나눴습니다.</strong></p>
-
-<h3>브랜드가 직접 밝힌 것 (드뭅니다)</h3>
-<table>
-  <thead><tr><th>브랜드 폼</th><th>소재</th><th>근거</th></tr></thead>
-  <tbody>
-    <tr><td>써코니 <strong>PWRRUN PB</strong></td><td><strong>PEBA</strong> (비드 발포)</td><td>써코니 공식 폼 기술 페이지에 "특별한 종류의 PEBA 폼"이라 명시</td></tr>
-    <tr><td>써코니 <strong>PWRRUN+</strong></td><td><strong>TPU</strong> (스팀 융착)</td><td>동일 페이지, PWRRUN 대비 28% 경량</td></tr>
-    <tr><td>써코니 <strong>IncrediRUN</strong></td><td><strong>TPEE</strong> 배합</td><td>동일 페이지</td></tr>
-    <tr><td>아디다스 <strong>부스트</strong></td><td><strong>eTPU</strong> (Infinergy)</td><td><strong>아디다스·BASF 양쪽이</strong> 공식 확인</td></tr>
-    <tr><td>리닝 <strong>Boom</strong> 상위</td><td><strong>Pebax</strong> / 하위는 A-TPU</td><td>R&amp;D 매니저 <strong>실명 인용</strong>으로 등급별 구분 설명</td></tr>
-    <tr><td>뉴발란스 <strong>FuelCell</strong> (레이싱)</td><td><strong>100% PEBA</strong></td><td>공식 제품 페이지에 "made with 100% PEBA foam" 명시</td></tr>
-    <tr><td>나이키 <strong>ZoomX</strong></td><td><strong>Pebax®</strong> (PEBA)</td><td>마케팅 아닌 <strong>나이키 자체 특허 명세서</strong>에 명시 — 아래 상세</td></tr>
-  </tbody>
-</table>
-<p><strong>써코니가 유일하게 폼마다 소재를 이름으로 적어둔 브랜드</strong>입니다. 그리고 놀랍게도 <strong>중국 브랜드 리닝이 나이키·아식스보다 투명합니다</strong> — 자사 연구원 실명으로 "엘리트 등급은 raw Pebax, 훈련 등급은 A-TPU"라고 구분해 설명합니다.</p>
-
-<h3>ZoomX의 자백은 특허에 있었습니다</h3>
-<p>나이키 광고·제품 페이지·뉴스룸 어디에도 ZoomX의 소재는 없습니다. 리뷰 사이트들도 "PEBA로 추정된다"고만 씁니다. 그런데 <strong>나이키가 특허청에 낸 문서</strong>를 뒤지면 이런 문장이 나옵니다.</p>
-<div class="callout info">
-  <p>"폼 코어는 <strong>Pebax® 열가소성 엘라스토머 폼</strong>일 수 있으며, <strong>나이키가 ZoomX라는 상표명으로 판매</strong>할 수 있다"<br>
-  <small>— 나이키 특허 US20230120495A1·WO2021206812A1 명세서, 두 건에서 동일 문구</small></p>
-</div>
-<p>Pebax®는 프랑스 Arkema의 등록상표입니다. 즉 <strong>마케팅에서는 끝까지 침묵했지만, 법률 문서에서는 나이키 스스로 "ZoomX = Arkema의 Pebax 폼"이라고 적어둔 셈</strong>입니다. 광고는 선택이지만 특허는 정확해야 하니까요.</p>
-<p>흥미로운 건 <strong>이 수법이 나이키에서만 통한다</strong>는 점입니다. 같은 방식으로 아디다스 특허에서 "Lightstrike", 아식스 특허에서 "FF Blast", On 특허에서 "Helion", 뉴발란스 특허에서 "FuelCell"을 찾으면 <strong>전부 0건</strong>입니다. 다른 브랜드는 특허에서조차 제품명을 소재와 연결하지 않습니다.</p>
-
-<h3>업계에선 정설이지만, 브랜드는 확인한 적 없는 것</h3>
-<ul>
-  <li><strong>아식스 FF 블라스트 = EVA+OBC</strong> — 아식스 공식 폼 기술 페이지와 슈퍼블라스트 보도자료 어디에도 화학 조성이 없습니다</li>
-  <li><strong>아디다스 라이트스트라이크 프로 = TPEE</strong> — 출처를 추적하니 한 매체 기자의 업계 지식 서술이었고, 아디다스 발표가 아니었습니다</li>
-  <li><strong>푸마 나이트로 엘리트 = A-TPU</strong> — 푸마 공식은 "질소를 주입한 열가소성 폼"까지만 말합니다</li>
-</ul>
-<div class="callout warning">
-  <p><strong>왜 이 구분이 중요한가</strong> — 소재 판별의 근거로 가장 널리 쓰이는 랩 테스트(신발을 반으로 잘라 분석하는 시리즈)는 <strong>경도계와 에너지 리턴을 재는 물리 측정이지 화학 분석(분광법)이 아닙니다.</strong> 즉 "이건 PEBA다"는 측정 결과가 아니라 <strong>정보에 근거한 추론</strong>입니다. 대체로 맞겠지만, 확인된 사실과는 급이 다릅니다.</p>
-</div>
-<p>참고로 <strong>Arkema가 공식으로 인정한 러닝화</strong>는 따로 있습니다 — <a href="/blog/running-shoes-recommend-by-price-2026">가성비 브랜드</a>인 <strong>데카트론 킵런 KD900X</strong>(Arkema 보도자료, 임원 인용문 포함)와, 미즈노 <strong>웨이브 라이더 24의 웨이브 플레이트</strong>가 바이오 기반 Pebax Rnew로 만들어졌다는 것입니다. 최상위 카본화가 아니라 엉뚱한 곳에서 공식 확인이 나오는 셈입니다.</p>
-
-<h3>브랜드가 침묵해도, 공급사는 말해야 합니다</h3>
-<p>소재가 Pebax라는 건 특허로 알아냈습니다. 그럼 <strong>그 Pebax를 누가 발포해서 나이키에 대는 걸까요.</strong> 여기서도 브랜드는 침묵하지만, 답이 나오는 곳이 따로 있습니다 — <strong>주식시장에 상장된 공급사는 주주에게 사업을 보고할 의무가 있습니다.</strong></p>
-<p>영국 상장사 <strong>Zotefoams</strong>의 공시를 따라가 보면 이렇습니다.</p>
-<ul>
-  <li><strong>2017년</strong> — "나이키와 신발 기술 개발 및 소재 공급을 위한 전략적 파트너십을 체결했다"고 <strong>실명으로</strong> 공시</li>
-  <li><strong>2023년</strong> — 그 <strong>독점 계약을 2029년 12월 31일까지 연장</strong></li>
-  <li><strong>2023년</strong> — "최근 출시된 <strong>나이키 울트라플라이</strong>에 고성능 폼을 공급한다"고 제품명까지 공시</li>
-  <li><strong>2024 회계연도</strong> — 신발 부문 매출이 46% 성장해 <strong>6,610만 파운드(약 1,200억 원)</strong> 규모. 그리고 감사 재무제표에 <strong>"한 고객이 그룹 매출의 약 45%"</strong>라고 익명 기재</li>
-</ul>
-<p>여기에 <strong>같은 회사의 특허</strong>가 마지막 조각을 놓습니다. Zotefoams의 발포 기술 특허 실시예에는 이렇게 적혀 있습니다 — <strong>"폴리에테르 블록 아마이드(PEBA) 폴리머, 즉 Arkema의 Pebax 5533을…"</strong> 그리고 그 응용처로 <strong>러닝화 미드솔</strong>이 명시돼 있습니다.</p>
-<p>여기에 Arkema가 2015년 보도자료에서 Pebax 사용 브랜드로 <strong>"아디다스, 나이키, 푸마, 노스페이스"</strong>를 실명으로 나열한 것까지 겹치면, 그림이 얼추 맞춰집니다.</p>
-<div class="callout warning">
-  <p>정리하면 — <strong>소재가 Pebax라는 건 나이키 자체 특허로 확정</strong>됐고(위 2장), 이 공시·특허·보도자료들은 <strong>그 Pebax를 누가 발포해 나이키에 대는가</strong>라는 다음 질문의 답을 채웁니다. 다만 Zotefoams 특허·공시에 "ZoomX"라는 단어 자체는 없으므로, 공급망의 세부는 여전히 <strong>여러 1차 문서를 겹쳐 읽어낸 그림</strong>입니다.</p>
-  <p>흥미로운 건 <strong>중국 소재사 Shincell도 "나이키 ZoomX 미드솔 소재의 독점 공급사"라고 자사 사이트에 적어뒀다</strong>는 점입니다. 두 회사가 2024년 글로벌 얼라이언스를 맺은 사이라 <strong>서로 다른 제품 라인·공정을 나눠 맡았을 가능성</strong>이 있어 보이지만, 어느 쪽의 "독점" 표현도 나이키가 직접 확인해 준 적은 없습니다.</p>
-</div>
-<p>재미있는 건 나이키의 <strong>폼 "조성" 특허</strong>(배합비를 다루는 특허)들엔 오히려 PEBA가 없다는 점입니다 — EVA·올레핀 블록 코폴리머 배합이거나, 초임계 발포를 다루면서도 TPU·EVA만 언급합니다(리액트 계열로 보이는 내용). ZoomX=Pebax 문구가 나온 건 <strong>신발 구조·재활용 특허</strong>였습니다. <strong>레시피는 끝까지 감추고, 재료 이름은 다른 서류에서 흘린 셈</strong>입니다.</p>
-<p>그래도 특허를 뒤지면 마케팅에 없는 게 보이긴 합니다.</p>
-<ul>
-  <li><strong>아식스 — 사탕수수에서 폼을 만듭니다.</strong> 2020년 출원한 특허가 <strong>"파르네센(farnesene) 기반 폴리머"</strong>를 핵심 성분으로 지목합니다. 파르네센은 <strong>사탕수수 발효로 얻는 바이오 소재</strong>고, 실제로 이 계열 원료를 파는 회사(Kuraray)는 "사탕수수 유래, 최대 80% 재생 원료"라고 설명합니다. 아식스가 FF Blast+ ECO를 "약 24% 바이오 기반"이라 발표한 것과 맞물리죠. <strong>"EVA에 뭘 섞었다"보다 훨씬 구체적인 그림</strong>입니다</li>
-  <li><strong>아디다스 — 발포 폴리아미드 비드 특허를 갖고 있습니다.</strong> 폴리아미드 5종을 나열한 뒤 <strong>PA12와 PEBA를 "특히 잘 맞는다"고 콕 집습니다.</strong> 부스트(팽창 TPU)와는 다른 계열이고, 라이트스트라이크 프로가 PEBA 비드 폼이라는 업계 서술과 방향이 맞습니다</li>
-  <li><strong>On은 소재를 안 씁니다.</strong> 미드솔 특허가 3D 격자 <strong>구조</strong>에 관한 것이고, 소재는 "TPU·폴리올레핀·고무·폴리아미드·PEBA·폴리에스터 또는 그 혼합물"이라는 전형적인 나열뿐입니다. Helion의 정체는 여전히 미궁입니다</li>
-</ul>
-<p>다만 이 특허들 어디에도 <strong>"FF Blast", "라이트스트라이크"라는 제품명은 등장하지 않습니다.</strong> 기술과 제품을 잇는 마지막 한 칸은 여전히 비어 있습니다.</p>
-
-<h3>그 회사가 부산에 옵니다</h3>
-<p>여기서 한국 러너에게 직접 와닿는 대목이 나옵니다. 같은 연차보고서에 이렇게 적혀 있습니다.</p>
-<div class="callout info">
-  <p>"우리의 첫 시장 맞춤형 이노베이션 센터 — <strong>대한민국 부산의 신발 이노베이션 센터</strong> — 를 최종 고객 가까이에 둔다."<br>
-  "<strong>핵심 고객과 그들의 1차 협력사 근처</strong>에 위치해, 새로운 개발을 <strong>특정 신발 모델에 직접 적용</strong>할 수 있게 한다."</p>
-</div>
-<p>부산은 한국 신발 산업의 본거지이고, 나이키의 1차 제조 협력사들이 모여 있는 곳입니다. <strong>나이키 슈퍼폼을 만드는 회사가 세우는 첫 해외 이노베이션 센터가 부산이라는 얘기입니다.</strong></p>
-<p>이 회사에게 신발이 어떤 사업인지 보면 이유가 보입니다.</p>
-<table>
-  <thead><tr><th></th><th>2023</th><th>2024</th><th>증가</th></tr></thead>
-  <tbody>
-    <tr><td>신발 부문 매출</td><td>£45.3m</td><td><strong>£66.1m</strong></td><td>+46%</td></tr>
-    <tr><td>그룹 매출 중 비중</td><td>36%</td><td><strong>45%</strong></td><td>—</td></tr>
-  </tbody>
-</table>
-<p><strong>신발이 이 회사의 최대 사업</strong>이 됐고, 그 대부분이 한 고객에게서 나옵니다. 베트남 호치민에도 신발 생산 투자를 진행 중이죠. 우리가 신는 신발의 폼이 어디서 어떻게 오는지, 브랜드 광고보다 <strong>공급사의 사업보고서가 더 많은 걸 말해줍니다.</strong></p>
-<div class="callout info">
-  <p><strong>그럼 학계는 확인했을까요? 아닙니다.</strong> 찾아본 결과 <strong>특정 상용 슈퍼슈즈의 미드솔을 분광 분석해 소재를 확정한 논문이 존재하지 않습니다.</strong> 가장 근접한 연구는 상용 러닝화 5종의 폼을 3D 촬영으로 분석했는데, 소재 이름(EVA·TPU·PEBA)은 <strong>주어진 사실로 적었을 뿐 화학 분석을 하지 않았고</strong>, 신발 브랜드도 전부 익명 처리했습니다(저자 두 명이 신발 회사 소속이었습니다).</p>
-  <p>그 연구를 수행한 연구자의 <strong>박사학위 논문</strong>까지 찾아봤지만, 그마저 전문이 비공개라 브랜드는 끝내 확인할 수 없었습니다. 다만 그 초록에 이런 대목은 있습니다 — 미드솔은 <strong>"약 1,000km까지 반복 압축을 받으며 점진적으로 손상되고, 되돌릴 수 없는 붕괴가 일어난다"</strong>.</p>
-  <p>즉 <strong>"이 신발 미드솔이 무슨 소재인가"를 독립적으로 검증한 주체가 아직 아무도 없습니다.</strong> 우리가 아는 건 전부 브랜드 발표 아니면 추론입니다.</p>
-</div>
-
-<h2>3. "슈퍼크리티컬"은 소재가 아니라 공정입니다</h2>
-<p>가장 많이 오해하는 부분입니다. <strong>슈퍼크리티컬(초임계)은 폼 종류가 아니라 "만드는 방법"</strong>입니다. 폼을 굳힐 때 <strong>질소나 CO2를 초임계 상태</strong>(액체도 기체도 아닌 상태)로 주입하면, 기포가 더 균일하고 커져서 <strong>더 가볍고 반발이 좋아집니다.</strong></p>
-<p>그래서 "슈퍼크리티컬 EVA"는 그냥 EVA에 이 공정을 입힌 것이고, PEBA에도 적용됩니다.</p>
-<p>이 기술이 업계 전체로 퍼진 경로도 흥미롭습니다. <strong>초임계 발포의 원천 특허는 1992년 MIT가 등록했고 2011년에 만료</strong>돼 이미 공개 기술이 됐습니다. 이걸 상용 장비로 만든 회사(Trexel)의 설비는 <strong>로열티 없이 판매</strong>되고요. 그래서 지금은 어느 브랜드든 장비만 갖추면 쓸 수 있고, <strong>차별화는 "어떤 가스를 얼마나, 어떤 셀 구조로"에서 갈립니다.</strong></p>
-<div class="callout warning">
-  <p><strong>흔한 오해 정정</strong> — "스케쳐스가 CO2 발포를 특허로 독점해서 다른 브랜드가 라이선스료를 낸다"는 이야기가 널리 퍼져 있습니다. 확인해 보니 <strong>근거를 찾을 수 없었습니다.</strong> 원천 특허는 위처럼 이미 만료됐고, 스케쳐스가 실제로 보유한 특허는 CO2 전용이 아니라 <strong>발포 전에 미세 구멍을 내 셀을 균일화하는 제조법</strong>에 관한 것이며 명세서에 질소 등 여러 기체를 함께 나열합니다. 게다가 나이키 ZoomX(2017)는 그 특허 우선권일보다 앞섭니다.</p>
-</div>
-<p>가스 선택은 라이선스가 아니라 <strong>물성 때문</strong>입니다.</p>
-<ul>
-  <li><strong>CO2</strong>(임계점 31.1℃·7.38MPa)는 폴리머에 녹는 양이 질소보다 <strong>3~5배</strong> 많아 두꺼운 부위를 발포하기 좋지만, 가스가 빠져나가는 속도도 2배 이상 빠릅니다</li>
-  <li><strong>질소</strong>(임계점 −147℃·3.39MPa)는 확산이 빨라 더 격렬하게 발포돼 <strong>셀이 작고 촘촘하며 셀벽이 얇아집니다</strong></li>
-</ul>
-<p>실제로 <strong>브룩스는 질소를 쓴다고 공식적으로 밝히고 있고</strong>(DNA 플래시), 그 이유도 "라이선스 회피"가 아니라 <strong>작고 촘촘한 셀 구조로 반응성을 높이기 위해서</strong>라고 설명합니다. 같은 회사의 DNA 로프트 v3는 반대로 큰 셀 발포로 쿠셔닝을 노립니다. 아식스 FF 블라스트 터보도 초임계 공정임을 공식 발표했습니다.</p>
-<p>다만 <strong>나이키가 ZoomX에 초임계 공정을 쓴다고 직접 말한 자료는 찾지 못했습니다</strong> — 업계 해설에서 나온 서술입니다.</p>
-<p>정리하면 <strong>"슈퍼크리티컬"이라고 적혀 있으면 = 소재가 뭐든 그 폼을 더 가볍고 통통 튀게 만든 버전</strong>이라고 보면 됩니다.</p>
-
-<h2>4. 한국 겨울 — 폼에 따라 6배까지 갈립니다</h2>
-<p>"겨울에 신발이 딱딱해진다"는 체감은 <strong>실측으로 확인되고, 폼에 따라 차이가 큽니다.</strong> 우리 신발 DB에 저온 경화율(추운 환경에서 경도가 몇 % 올라가는가) 실측이 있는 모델을 모아봤습니다.</p>
-<table>
-  <thead><tr><th>경화율</th><th>신발</th><th>폼</th></tr></thead>
-  <tbody>
-    <tr><td><strong>6%</strong></td><td><a href="/shoes/on-cloudboom-strike">클라우드붐 스트라이크</a></td><td>Helion HF</td></tr>
-    <tr><td><strong>8%</strong></td><td><a href="/shoes/brooks-hyperion-elite-5">하이페리온 엘리트 5</a></td><td>DNA Gold (PEBA)</td></tr>
-    <tr><td><strong>9%</strong></td><td><a href="/shoes/adidas-hyperboost-edge">하이퍼부스트 엣지</a></td><td>Hyperboost Pro</td></tr>
-    <tr><td>17%</td><td><a href="/shoes/brooks-glycerin-max">글리세린 맥스</a> · <a href="/shoes/brooks-hyperion-max-3">하이페리온 맥스 3</a> · <a href="/shoes/on-cloudrunner-2">클라우드러너 2</a></td><td>DNA Tuned / Helion</td></tr>
-    <tr><td>19%</td><td><a href="/shoes/mizuno-wave-inspire-21">웨이브 인스파이어 21</a></td><td>Enerzy 계열</td></tr>
-    <tr><td><strong>34%</strong></td><td><a href="/shoes/mizuno-wave-rider-29">웨이브 라이더 29</a></td><td>Enerzy NXT</td></tr>
-    <tr><td><strong>39%</strong></td><td><a href="/shoes/brooks-ghost-17">고스트 17</a></td><td>DNA Loft v3 (EVA 계열)</td></tr>
-  </tbody>
-</table>
-<p><strong>최대 6배 넘게 차이 납니다.</strong> 독립 랩의 냉동고 테스트에서도 방향이 같습니다 — EVA 계열은 경도가 <strong>41~97%</strong> 치솟는 반면 PEBA는 28%, TPU 계열은 10% 안팎에 그쳤습니다.</p>
-<p>그런데 <strong>흔히 말하는 이유는 틀렸습니다.</strong> "유리전이온도를 지나서 딱딱해진다"고들 하는데, EVA의 유리전이온도는 <strong>−25~−35℃</strong>로 한국 겨울 기온보다 훨씬 낮습니다. 실제 이유는 <strong>EVA가 결정 구조를 가진 소재라, 온도가 내려갈수록 그 결정 영역이 계속 단단해지기</strong> 때문입니다. 반면 PEBA의 연질 부분은 유리전이온도가 −51~−60℃, TPU는 −40~−48℃로 더 낮아 겨울에도 성질이 덜 변합니다.</p>
-<div class="callout warning">
-  <p>다만 <strong>"PEBA면 무조건 겨울에 강하다"고 단정하면 안 됩니다.</strong> 위 표의 <a href="/shoes/mizuno-wave-rebellion-flash-2">웨이브 리벨리온 플래시 2</a>는 PEBA 계열인데도 경화율이 36%로 높습니다. 소재 계열만큼이나 <strong>배합과 발포 방식</strong>이 결과를 좌우합니다.</p>
-</div>
-
-<h2>5. 슈퍼폼은 왜 빨리 죽나 — 450km의 진실</h2>
-<p>"PEBA는 금방 죽는다"는 말도 실험으로 확인됐습니다. 2024년 연구가 정확히 이 질문을 다뤘는데, 방법이 흥미롭습니다 — <strong>연구자 한 명이 아스팔트에서 450km를 직접 달려</strong> 신발을 닳게 한 뒤, 새 신발과 비교했습니다. 미드솔만 EVA와 PEBA로 다르고 <strong>플레이트·형태는 동일한 시제품</strong>을 써서 폼 효과만 분리했습니다.</p>
-<table>
-  <thead><tr><th></th><th>EVA</th><th>PEBA</th></tr></thead>
-  <tbody>
-    <tr><td>450km 후 러닝 이코노미</td><td><strong>변화 없음</strong></td><td><strong>2.28% 악화</strong></td></tr>
-    <tr><td>굽힘 에너지 리턴 손실</td><td>−10.5%</td><td><strong>−24.6%</strong></td></tr>
-    <tr><td>에너지 손실률(히스테리시스)</td><td>26 → 39.5%</td><td>24.7 → <strong>42.4%</strong></td></tr>
-  </tbody>
-</table>
-<p>새것일 땐 PEBA가 EVA보다 약 1.9% 좋은데, <strong>450km를 지나면 그 우위가 사라집니다.</strong> 논문 저자들은 아예 <strong>"훈련용은 EVA, 레이스용은 PEBA로 나눠 만들라"</strong>고 제안합니다.</p>
-<p>왜 그럴까요. 폼이 죽는 건 공기가 새서가 아니라 <strong>기포의 벽이 반복해서 눌리다 주름지고 결국 갈라지기</strong> 때문입니다(750km 신은 미드솔을 전자현미경으로 본 연구에서 확인됐습니다). 그리고 <strong>밀도가 낮을수록 이 붕괴가 빠릅니다</strong> — 같은 횟수를 때렸을 때 저밀도 폼은 충격 전달이 51% 늘었지만 고밀도 폼은 7%에 그쳤습니다. PEBA는 가벼운 대신 기포 벽이 성기니, 같은 이유로 먼저 무너집니다.</p>
-<div class="callout info">
-  <p><strong>정작 발은 그걸 못 느낍니다.</strong> 640km 신은 신발을 측정한 연구에서 충격 흡수 지표는 20~28% 떨어지고 경도는 17% 올랐는데, <strong>정작 러너 본인은 쿠션이 2.7%밖에 안 줄었다고 느꼈습니다.</strong> "아직 푹신한데?"가 신발이 살아있다는 증거가 못 되는 이유입니다.</p>
-</div>
-
-<h2>6. 그래서 내 신발은 무슨 폼일까</h2>
-<p>우리 사이트 신발 DB에서 폼별 대표 모델을 정리하면:</p>
-<ul>
-  <li><strong>PEBA(ZoomX·최고 반발)</strong> — <a href="/shoes/nike-alphafly-3">알파플라이 3</a>·<a href="/shoes/nike-vaporfly-4">베이퍼플라이 4</a>·<a href="/shoes/new-balance-sc-elite-v5">SC 엘리트 v5</a>·<a href="/shoes/saucony-endorphin-elite-3">엔돌핀 엘리트 3</a></li>
-  <li><strong>A-TPU(반발+내구)</strong> — <a href="/shoes/puma-fast-r-nitro-elite-3">푸마 패스트-R 나이트로 엘리트 3</a>·<a href="/shoes/puma-deviate-nitro-elite-4">디비에이트 나이트로 엘리트 4</a></li>
-  <li><strong>TPEE(프리미엄 내구)</strong> — <a href="/shoes/adidas-adios-pro-4">아디제로 아디오스 프로 4</a></li>
-  <li><strong>슈퍼크리티컬 폼(가벼운 데일리·슈퍼트레이너)</strong> — <a href="/shoes/asics-novablast-6">노바블라스트 6</a>·<a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a>·<a href="/shoes/adidas-hyperboost-edge">하이퍼부스트 엣지</a></li>
-  <li><strong>EVA(가성비 입문)</strong> — <a href="/shoes/asics-gel-venture-10">젤 벤처 10</a> 등 입문화</li>
-</ul>
-<p>폼 위·아래에 들어가는 <strong>플레이트</strong>가 궁금하다면 <a href="/blog/running-shoe-plate-guide-2026">시리즈 2편 — 플레이트 완전 해설</a>로 이어집니다(카본·유리섬유·나일론의 차이와 만드는 회사). 실제 카본화 비교는 <a href="/blog/carbon-plate-running-shoes-lineup-tier-guide-2026">카본 플레이트 비교</a>, 브랜드별 자체 기술 명칭은 각 <a href="/brands">브랜드 페이지</a>의 기술 탭에서 확인할 수 있습니다.</p>
-
-<div class="faq">
-  <h2>자주 묻는 질문</h2>
-  <div class="faq-item">
-    <p class="faq-q">Q. PEBA가 제일 좋은 폼인가요?</p>
-    <p class="faq-a">A. 새것일 때 반발과 무게만 보면 그렇습니다. 다만 <strong>450km쯤 지나면 EVA와 성능이 같아진다</strong>는 실험 결과가 있습니다(위 5장). 비싸기도 하고요. 그래서 레이스·포인트 훈련용이지 매일 신는 데일리용은 아닙니다. 매일 신을 신발은 EVA나 슈퍼크리티컬 폼이 오히려 경제적이고 오래갑니다.</p>
-  </div>
-  <div class="faq-item">
-    <p class="faq-q">Q. 신발은 500~800km에서 바꾸라던데 맞나요?</p>
-    <p class="faq-a">A. 이 숫자의 출처는 <strong>1985년 연구</strong>입니다. 1980년대 EVA를 <strong>기계로 반복해 때린</strong> 실험이었고, 흥미롭게도 바로 그 논문이 "사람이 실제로 신은 경우엔 덜 닳더라"고 밝혔습니다. 요즘 슈퍼폼에는 재검증된 적이 없고, 실제로 위 450km 연구에서 EVA는 그 거리에서도 성능이 유지됐습니다. <strong>소재에 따라 다르다</strong>고 보는 게 정확합니다 — 레이스용 PEBA는 400km대부터 의심하고, 데일리 EVA는 더 오래 씁니다.</p>
-  </div>
-  <div class="faq-item">
-    <p class="faq-q">Q. 신발을 번갈아 신으면 폼이 회복되나요?</p>
-    <p class="faq-a">A. 회복은 되지만 <strong>기대보다 훨씬 적습니다.</strong> 22시간을 쉬게 한 실험에서 회복률은 폼에 따라 1~10% 수준이었고, <strong>9개월을 쉬어도 원래 상태로 돌아오지 않았습니다.</strong> 로테이션이 부상을 줄인다는 보고는 있지만, 그 이유는 "폼이 쉬어서"보다 <strong>신발마다 형태가 달라 몸에 걸리는 부하가 분산되기 때문</strong>이라는 설명이 더 설득력 있습니다.</p>
-  </div>
-  <div class="faq-item">
-    <p class="faq-q">Q. 브랜드 폼 이름이 다 다른데 결국 같은 건가요?</p>
-    <p class="faq-a">A. 완전히 같진 않지만 뿌리는 겹칩니다. 최상위 슈퍼폼은 대체로 PEBA 계열이고, 차이는 배합·발포 공정·플레이트 조합에서 생깁니다. 다만 <strong>"어느 브랜드 폼이 정확히 무슨 원료인지"는 대부분 공개되지 않았다</strong>는 점을 기억하세요(위 2장). 우리가 아는 대응 관계 상당수가 브랜드 확인이 아니라 업계 추정입니다.</p>
-  </div>
-  <div class="faq-item">
-    <p class="faq-q">Q. 슈퍼크리티컬 폼이면 무조건 좋은 건가요?</p>
-    <p class="faq-a">A. 대체로 더 가볍고 반발이 좋지만, "슈퍼크리티컬"은 공정일 뿐이라 바탕 소재가 무엇이냐가 더 중요합니다. 슈퍼크리티컬 EVA와 슈퍼크리티컬 PEBA는 성격이 다릅니다. 라벨보다 실제 착화감·랩 수치(에너지 리턴)를 보는 게 정확합니다.</p>
-  </div>
-  <div class="faq-item">
-    <p class="faq-q">Q. 겨울에 딱딱해지는 신발이 있던데 폼 때문인가요?</p>
-    <p class="faq-a">A. 네, 그리고 <strong>폼에 따라 6배 넘게 차이 납니다</strong>(위 4장 실측 표). EVA 계열이 가장 크게 굳고 PEBA·TPU는 덜 변합니다. 한국 겨울에 자주 뛴다면 이 점도 폼 선택의 기준이 됩니다. 단 같은 PEBA라도 배합에 따라 결과가 달라지니 모델별 실측을 보는 게 확실합니다.</p>
-  </div>
-</div>
-
-<p><small>출처: 브랜드 공식 기술 페이지·보도자료 직접 확인(써코니·아디다스·BASF·아식스·On·푸마·미즈노·리닝·브룩스·나이키·뉴발란스), <strong>나이키 특허 US20230120495A1·WO2021206812A1 명세서(ZoomX=Pebax® 명시)</strong>, <strong>Zotefoams 규제시장 공시(RNS 2017·2023)·2024 연차보고서·발포 특허 US10675792B2</strong>, Arkema 공식 자료(2015 보도자료·Pebax 제품 페이지), 아식스(US11779076B2 파르네센)·아디다스(EP3041892B1)·써코니 명의 특허 원문, Rodrigo-Carranza et al.(2024, Scand J Med Sci Sports) 450km 마모 연구, Verdejo(2004) 폼 내구성 연구, Cornwall &amp; McPoil(2017) 640km 측정, 초임계 발포 특허(MIT US5158986A·Skechers US2020/0281314) 원문, RunRepeat 랩 데이터. 저온 경화율은 우리 신발 DB의 모델별 실측입니다. <strong>브랜드가 공식 확인한 것과 업계 추정을 본문에서 구분해 표기했습니다.</strong> · 작성 2026년 7월 27일 · 1차 원문 재검증 반영 2026년 7월 27일. (러닝화 소재 해설 시리즈 1편 — 미드솔 폼)</small></p>
+<h2>자주 묻는 질문</h2>
+<h3>초임계 폼은 모두 PEBA인가요?</h3><p>아니요. 초임계는 발포 공정에 관한 표현입니다. HOKA는 Bondi 9와 Mach 6에 초임계 발포 EVA를 명시합니다.</p>
+<h3>FuelCell이라는 이름이면 같은 배합인가요?</h3><p>아니요. 공식 설명상 Rebel v5는 PEBA·EVA 혼합, SC Elite v5의 중창 폼은 100% PEBA입니다. 정확한 모델과 세대를 확인해야 합니다.</p>
 `,
+    faqs: [
+      {
+        "question": "초임계 폼은 모두 PEBA인가요?",
+        "answer": "아니요. 초임계는 발포 공정에 관한 표현입니다. HOKA는 Bondi 9와 Mach 6에 초임계 발포 EVA를 명시합니다."
+      },
+      {
+        "question": "FuelCell이라는 이름이면 같은 배합인가요?",
+        "answer": "아니요. 공식 설명상 Rebel v5는 PEBA·EVA 혼합, SC Elite v5의 중창 폼은 100% PEBA입니다. 정확한 모델과 세대를 확인해야 합니다."
+      }
+    ],
   },
   {
     id: "fall-marathon-race-day-checklist-2026",

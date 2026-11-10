@@ -4291,79 +4291,62 @@ export const posts_2026_06: BlogPost[] = [
     updatedAt: '2026-11-09',
   },
   {
-    id: 'kayano-33-vs-glycerin-gts-22-vs-860-v15-2026',
-    slug: 'kayano-33-vs-glycerin-gts-22-vs-860-v15-2026',
-    title: '안정화 3강 비교 — 카야노 33 vs 글리세린 GTS 22 vs 860 v15 | FLUIDSUPPORT·GuideRails·Fresh Foam, 평발 한국러너의 선택',
-    description: '안정화 러닝화 대표 3종을 정면 비교합니다. 아식스 카야노 33(부드러워진 FLUIDSUPPORT), 브룩스 글리세린 GTS 22(푹신한 GuideRails), 뉴발란스 860 v15(가성비 정공법). 스택·드롭·무게·지지 방식·가격을 한눈에 비교하고, 평발·과내전 한국 러너가 셋 중 무엇을 골라야 하는지 목적별로 정리했습니다.',
-    thumbnail: '/images/blog/kayano-33-vs-glycerin-gts-22-vs-860-v15-2026.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-06-10',
-    category: 'review' as const,
-    readingTime: 8,
-    tags: ['카야노 33', '글리세린 GTS 22', '860 v15', '안정화 비교', '평발', '과내전', '러닝화 비교'],
-    content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong><a href="/shoes/asics-gel-kayano-33">카야노 33</a></strong> — 실측 스택 36.8mm에 반발은 평범(에너지 리턴 힐 50%). 느린 페이스에서 부드럽고 안정적인 대신 속도를 올리면 단단해지는 "차분한 지지형"</li>
-    <li><strong><a href="/shoes/brooks-glycerin-gts-22">글리세린 GTS 22</a></strong> — 드롭 10mm·내구 800km로 가장 푹신하고 오래가는 프리미엄. 종아리·아킬레스 편한 쪽</li>
-    <li><strong><a href="/shoes/new-balance-860-v15">860 v15</a></strong> — 가장 저렴(18만원대)하고 드롭 7.6mm(실측, 브랜드 표기 6mm)의 정공법 안정화. 묵직하지만 든든</li>
-  </ul>
-</div>
+    id: "kayano-33-vs-glycerin-gts-22-vs-860-v15-2026",
+    slug: "kayano-33-vs-glycerin-gts-22-vs-860-v15-2026",
+    title: "카야노 33·글리세린 GTS 22·860 v15: 안정화 구성과 매장 비교법",
+    description: "상·하층 폼, GuideRails, Stability Plane을 정확한 모델 기준으로 비교합니다. 평발 순위와 부상 예방 등급 대신 착화 확인 질문을 담았습니다.",
+    thumbnail: "/images/blog/verified-kayano-33-vs-glycerin-gts-22-vs-860-v15-2026-20261110.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-06-10",
+    category: "review",
+    readingTime: 6,
+    tags: [
+      "카야노 33",
+      "글리세린 GTS 22",
+      "860 v15",
+      "안정화 비교",
+      "평발",
+      "과내전",
+      "러닝화 비교"
+    ],
+    content: `<p><small>2026년 11월 10일 원문 대조. 제품 설명은 해당 모델·지역·발표 시점에 한정하며, 편집 제안은 직접 착용 시험 결과가 아닙니다.</small></p>
 
-<div class="callout info">
-  <span class="callout-icon">⚖️</span>
-  <div class="callout-body">
-    <p class="callout-title">안정화 '빅3'를 한자리에</p>
-    <p>과내전·평발 러너가 가장 많이 고민하는 세 신발입니다. 셋 다 <strong>평발 적합도 최상·와이드 옵션 보유</strong>로 기본기는 비슷하지만, <strong>지지 방식과 라이드 성격이 확연히 다릅니다</strong>. 우리 사이트에서도 카야노 33이 가장 많이 조회되는 신발이죠. 무엇이 내 발에 맞는지 데이터로 갈라보겠습니다.</p>
-  </div>
-</div>
+<p>이 세 신발을 ‘평발이면 1위’, ‘무릎 보호 1위’로 줄 세우면 실제 선택에 필요한 차이가 가려진다. 공식 자료가 설명하는 구조부터 확인한 뒤, 내 발에서 느끼는 지지감과 압박을 비교하는 편이 낫다. 이 글은 세 제품을 직접 신어 실시한 비교 시험이 아니다.</p>
+<h2>정확한 세대에서 확인한 구성</h2>
+<table><thead><tr><th>모델</th><th>쿠션 구성</th><th>지지 구조 설명</th><th>원문 범위를 넘지 않기</th></tr></thead><tbody>
+<tr><td>GEL-KAYANO 33</td><td>상층 FF BLAST MAX·하층 FF BLAST PLUS, 뒤꿈치 PureGEL</td><td>FLUIDSUPPORT</td><td>중창 전체가 MAX인 것은 아님</td></tr>
+<tr><td>Glycerin GTS 22</td><td>질소 주입 DNA TUNED, 뒤꿈치와 전족부의 서로 다른 셀 크기</td><td>GuideRails</td><td>DNA LOFT v3가 아님. 셀 크기 차이를 두 층의 폼으로 바꾸지 않기</td></tr>
+<tr><td>Fresh Foam X 860v15</td><td>Fresh Foam X</td><td>Stability Plane·로커 설명</td><td>v15 판의 고분자·단면 배합까지 확인한 것은 아님</td></tr></tbody></table>
+<p>출처: <a href="https://corp.asics.com/jp/press/article/2026-06-04_gel-kayano_33" target="_blank" rel="noopener noreferrer">ASICS Japan의 카야노 33 발표</a>, <a href="https://www.brooksrunning.com/en_us/mens/shoes/road-running-shoes/glycerin-gts-22/110446.html" target="_blank" rel="noopener noreferrer">Brooks 글리세린 GTS 22 공식 설명</a>, <a href="https://www.newbalance.com/pd/fresh-foam-x-860v15/M860V15_RU-FTW-802888.html" target="_blank" rel="noopener noreferrer">New Balance 860v15 공식 설명</a>. 브랜드가 설명하는 설계 목적과 특정 사람에게 확인된 효과는 다르다. 이 표로 통증 완화나 부상 예방 순위를 정하지 않았다.</p>
+<h2>860 v14의 설명을 v15에 그대로 옮기지 않았다</h2>
+<p><a href="https://company.newbalance.jp/press/2024/p-66931" target="_blank" rel="noopener noreferrer">New Balance Japan의 2024년 v14 발표</a>는 두 Fresh Foam 층 사이의 EVA 보드를 설명한다. 그러나 그 자료만으로 v15에도 동일 재질·단면이 유지됐다고 쓰면 세대가 섞인다. v15에서는 공식 제품 페이지가 명시한 Fresh Foam X와 Stability Plane, 로커까지만 확정했다.</p>
+<h2>매장에서는 이 순서로 비교해보자</h2>
+<p>다음은 착화 비교를 위한 편집 제안이다. 같은 양말을 신고 각 모델에서 맞는 사이즈를 찾은 다음 비교하자. 브랜드가 다르면 같은 표기 사이즈가 같은 내부 공간이라는 보장은 없다.</p>
+<ol><li><strong>발가락과 발등 공간:</strong> 서 있을 때와 걸을 때 앞발이 눌리는지, 발등을 조이지 않고 고정할 수 있는지 확인한다.</li><li><strong>지지가 닿는 위치:</strong> 발 안쪽이나 중족부에 받침이 느껴진다면 그 위치와 압박감을 적는다. 강한 압박을 좋은 지지와 동일하게 평가하지 않는다.</li><li><strong>뒤꿈치 고정:</strong> 끈을 과하게 조이지 않아도 뒤꿈치가 들리지 않는지 살핀다.</li><li><strong>전환 감각:</strong> 시착 공간에서 허용되는 범위로 걷거나 달리며 앞쪽으로 넘어가는 느낌을 비교한다. 서서 눌렀을 때의 부드러움만으로 고르지 않는다.</li></ol>
+<h2>와이드와 가격은 국내의 정확한 판매 옵션으로</h2>
+<p>해외 발표에 와이드가 있다고 해서 국내에 같은 색상·폭·사이즈가 판매된다는 뜻은 아니다. 매장에 문의할 때 ‘발볼 넓은 모델 있나요?’보다 제품명과 남녀 구분, 폭 코드, 원하는 사이즈를 함께 확인하자. 이번 재검증에서는 세 제품의 현재 국내 정가·재고·할인을 같은 시점에 확인하지 못해 가격 순위를 두지 않았다.</p>
+<p>평발이라는 모양 정보만으로 셋 중 하나를 처방하지도 않았다. <a href="/blog/stability-shoes-self-diagnosis-fit-guide-2026">안정화 선택과 자가진단의 한계를 다룬 안내</a>를 함께 읽고, 현재 신발에서 불편한 위치와 사용할 훈련 목적을 먼저 정리하면 비교 질문이 구체적이 된다.</p>
 
-<h2>스펙 한눈에 비교</h2>
-<table>
-  <thead>
-    <tr><th>항목</th><th>카야노 33</th><th>글리세린 GTS 22</th><th>860 v15</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>지지 방식</td><td>FLUIDSUPPORT</td><td>GuideRails</td><td>듀얼 폼+EVA 플레이트</td></tr>
-    <tr><td>스택(힐/전족)</td><td>36.8 / 28.3mm<br><small>(공식 40 / 32mm)</small></td><td>37.8 / 27.7mm</td><td><strong>39.7 / 32.1mm</strong><br><small>(공식 40 / 34mm)</small></td></tr>
-    <tr><td>드롭</td><td>8.5mm<br><small>(공식 8mm)</small></td><td><strong>10.1mm</strong></td><td>7.6mm<br><small>(공식 6mm)</small></td></tr>
-    <tr><td>무게</td><td><strong>298g</strong></td><td>305g</td><td>332g</td></tr>
-    <tr><td>쿠션 / 반발</td><td>8 / <strong>7</strong></td><td><strong>9</strong> / 6</td><td>8 / 6</td></tr>
-    <tr><td>내구성</td><td>650km</td><td><strong>800km</strong></td><td>600km</td></tr>
-    <tr><td>가격</td><td>199,000</td><td>209,000</td><td><strong>189,000</strong></td></tr>
-  </tbody>
-</table>
-<p><small>※ 스택·드롭·무게는 세 신발 모두 RunRepeat 랩 실측(남성 US 9), 괄호는 브랜드 공식 표기입니다(2026-10-23 정정 — 처음엔 카야노 33만 공식값이었습니다).</small></p>
-
-<h2>지지 방식이 다르다 — 핵심 차이</h2>
-<ul>
-  <li><strong>카야노 33 · FLUIDSUPPORT</strong> — 30~32의 4D Guidance 대신 미드솔 형상으로 안정을 잡는 방식. FF BLAST MAX 듀얼 폼으로 착지는 부드러워졌지만, 랩 실측에서는 에너지 리턴이 힐 50.0%로 셋 중 특별히 앞서지 않았습니다. 비틀림 강성 20.1Nm으로 지지 하드웨어는 셋 중 가장 탄탄한 편. 자세한 변천은 <a href="/blog/asics-gel-kayano-33-review">카야노 33 리뷰</a>·<a href="/blog/asics-kayano-32-vs-33-comparison">32 vs 33 비교</a> 참고</li>
-  <li><strong>글리세린 GTS 22 · GuideRails</strong> — 발이 과하게 꺾일 때만 양옆 레일이 막아주는 방식(평소엔 중립처럼 부드러움). 드롭 10mm로 가장 높아 아킬레스·종아리 부담이 적고, 800km 내구성으로 오래 갑니다. 대신 반발은 7/10으로 카야노 33과 같고 860 v15(8/10)보다 낮아 푹신함 위주</li>
-  <li><strong>860 v15 · 듀얼 폼+플레이트</strong> — 이중 밀도 Fresh Foam X 안쪽을 단단하게 해 무너짐을 잡는 정공법. 드롭 7.6mm(실측, 브랜드 표기 6mm)에 332g으로 묵직하지만, 18만원대로 가장 저렴. <a href="/blog/new-balance-860-v14-vs-v15-comparison">v14와의 차이</a>(와이드 옵션)도 확인하세요</li>
-</ul>
-
-<div class="callout tip">
-  <span class="callout-icon">🖥️</span>
-  <div class="callout-body">
-    <p class="callout-title">3종 나란히 비교 도구</p>
-    <p>스펙 점수를 직접 견줘보세요 — 쿠셔닝·반발·안정성·가성비가 한 화면에 뜹니다.<br><strong><a href="/compare?shoes=asics-gel-kayano-33,brooks-glycerin-gts-22,new-balance-860-v15">→ 카야노 33 · 글리세린 GTS 22 · 860 v15 비교하기</a></strong></p>
-  </div>
-</div>
-
-<h2>그래서 누가 뭘 사야 할까</h2>
-<ul>
-  <li><strong>안정화인데 너무 둔하지 않길 원한다</strong> → <strong>카야노 33</strong>. 데일리부터 가벼운 템포까지 만능</li>
-  <li><strong>푹신함·내구성 최우선, 아킬레스가 약하다</strong> → <strong>글리세린 GTS 22</strong>(드롭 10mm가 종아리에 편함)</li>
-  <li><strong>예산을 아끼고 든든한 지지를 원한다</strong> → <strong>860 v15</strong>(18만원대, 정공법 안정)</li>
-</ul>
-<p>셋 다 부담된다면 더 저렴한 대안(사코니 가이드 18·미즈노 인스파이어 21 등)까지 포함한 <a href="/blog/stability-running-shoes-overpronation-flat-feet-2026">안정화 러닝화 추천 전체 가이드</a>나 <a href="/best/stability">안정화 베스트</a>를 함께 보세요.</p>
-
-<h2>마무리</h2>
-<p>세 신발 모두 평발·과내전 러너에게 검증된 선택입니다. 차이는 결국 <strong>"탄탄한 지지(카야노) vs 푹신함·내구(글리세린) vs 가성비(860)"</strong>로 갈립니다. 셋 다 반발은 6~7/10 수준이라 속도 훈련용으로는 어느 쪽도 적합하지 않습니다. 발볼이 넓다면 셋 다 와이드 옵션이 있으니 매장에서 2E 이상을 함께 신어보고, 아킬레스가 약하다면 드롭이 높은 글리세린을 우선 고려하세요.</p>
-
-<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 스펙은 제조사·실측 자료 기준이며 가격은 변동될 수 있습니다. 과내전·평발이라고 모두 안정화가 정답은 아니므로(중립화가 맞는 경우도 있음), 통증이 있다면 보행 분석을 권합니다.</p>
+<h2>자주 묻는 질문</h2>
+<h3>글리세린 GTS 22의 폼은 DNA LOFT v3인가요?</h3><p>공식 제품 설명은 DNA TUNED입니다. 뒤꿈치와 전족부의 셀 크기 차이를 설명하며, GTS 모델에는 GuideRails가 적용됩니다.</p>
+<h3>860 v15의 판은 EVA라고 확정할 수 있나요?</h3><p>확인한 v15 공식 제품 설명만으로 판의 재질과 단면을 확정하지 않았습니다. v14의 EVA 보드 설명을 v15에 그대로 옮기지 않았습니다.</p>
+<h3>평발이면 셋 중 무엇이 가장 좋나요?</h3><p>발 모양만으로 우열을 정할 근거는 제시하지 않습니다. 발 고정감, 압박 위치, 맞는 폭과 사이즈, 실제 사용 목적을 비교해야 합니다.</p>
 `,
+    updatedAt: "2026-11-10",
+    faqs: [
+      {
+        "question": "글리세린 GTS 22의 폼은 DNA LOFT v3인가요?",
+        "answer": "공식 제품 설명은 DNA TUNED입니다. 뒤꿈치와 전족부의 셀 크기 차이를 설명하며, GTS 모델에는 GuideRails가 적용됩니다."
+      },
+      {
+        "question": "860 v15의 판은 EVA라고 확정할 수 있나요?",
+        "answer": "확인한 v15 공식 제품 설명만으로 판의 재질과 단면을 확정하지 않았습니다. v14의 EVA 보드 설명을 v15에 그대로 옮기지 않았습니다."
+      },
+      {
+        "question": "평발이면 셋 중 무엇이 가장 좋나요?",
+        "answer": "발 모양만으로 우열을 정할 근거는 제시하지 않습니다. 발 고정감, 압박 위치, 맞는 폭과 사이즈, 실제 사용 목적을 비교해야 합니다."
+      }
+    ],
   },
   {
     id: "stability-running-shoes-overpronation-flat-feet-2026",
