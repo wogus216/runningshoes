@@ -181,98 +181,60 @@ export const posts_2026_06: BlogPost[] = [
     ],
   },
   {
-    id: 'marathon-club-runners-pick-running-shoes-2026',
-    slug: 'marathon-club-runners-pick-running-shoes-2026',
-    title: '마라톤 클럽 러너들이 직접 뽑은 러닝화 | 첫 러닝화 TOP3 & 인생 러닝화 TOP5 — 초보의 선택 vs 고수의 정착',
-    description: '국내 최대 러닝 커뮤니티 동마클럽 러너들이 설문으로 직접 뽑은 러닝화 순위. 초보가 처음 고른 "첫 러닝화 TOP3"(페가수스·리액트 인피니티·노바블라스트)와 고수가 정착한 "인생 러닝화 TOP5"(노바블라스트·아디오스 프로·메타스피드·베이퍼플라이·슈퍼블라스트)를 우리 사이트 실측 데이터로 해설합니다. 초보는 왜 데일리화를 고르고, 고수는 왜 카본으로 갔다가 다시 데일리로 돌아오는지 — 한국 러너의 신발 여정이 보입니다.',
-    thumbnail: '/images/blog/marathon-club-runners-pick-running-shoes-2026.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-06-29',
-    category: 'guide' as const,
-    readingTime: 9,
-    tags: ['러너 추천 러닝화', '첫 러닝화', '인생 러닝화', '마라톤 클럽', '러닝화 추천', '러닝화 순위'],
-    content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li>국내 최대 러닝 커뮤니티 <strong>동마클럽 러너들의 설문 집계</strong>입니다. <strong>첫 러닝화 TOP3</strong>는 <a href="/shoes/nike-pegasus-41">나이키 페가수스</a>·나이키 리액트 인피니티 런·<a href="/shoes/asics-novablast-5">아식스 노바블라스트</a>로 <strong>전부 쿠션·안정 데일리화</strong> — 초보는 "편하고 안 다치는" 신발을 고릅니다</li>
-    <li><strong>인생 러닝화 TOP5</strong>는 <a href="/shoes/asics-novablast-5">노바블라스트</a>·<a href="/shoes/adidas-adios-pro-4">아디오스 프로</a>·<a href="/shoes/asics-metaspeed-sky-plus">메타스피드</a>·<a href="/shoes/nike-vaporfly-4">베이퍼플라이</a>·<a href="/shoes/asics-superblast-3">슈퍼블라스트</a>. 2~4위는 <strong>카본 레이싱화</strong>지만 <strong>1·5위는 데일리·슈퍼트레이너</strong>입니다</li>
-    <li>핵심 인사이트: 고수도 <strong>매일 신는 신발은 결국 편한 데일리</strong>(레이싱화는 대회용). 그리고 인생 러닝화 5개 중 <strong>3개가 아식스</strong> — 한국 러너의 아식스 신뢰가 드러납니다</li>
-  </ul>
-</div>
+    id: "marathon-club-runners-pick-running-shoes-2026",
+    slug: "marathon-club-runners-pick-running-shoes-2026",
+    title: "러너가 뽑은 러닝화 순위, 구매 전에 확인할 다섯 가지",
+    description: "커뮤니티 투표를 성능·안전 순위로 읽지 않는 법. 표본·질문·집계·세대·착화 조건을 확인하고 원문 미확인 순위와 점수는 보류했습니다.",
+    thumbnail: "/images/blog/verified-marathon-club-runners-pick-running-shoes-2026-20261110.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-06-29",
+    category: "guide",
+    readingTime: 6,
+    tags: [
+      "러너 추천 러닝화",
+      "첫 러닝화",
+      "인생 러닝화",
+      "마라톤 클럽",
+      "러닝화 추천",
+      "러닝화 순위"
+    ],
+    content: `<p><small>2026년 11월 10일 원문 대조. 공식 발표·제품 설명·시험 결과의 확인 범위를 나눠 정리했습니다.</small></p>
 
-<div class="callout info">
-  <span class="callout-icon">👟</span>
-  <div class="callout-body">
-    <p class="callout-title">이 순위는 어디서 나왔나</p>
-    <p>국내 최대 마라톤 커뮤니티 중 하나인 <strong>동마클럽</strong>이 러너들에게 "첫 러닝화"와 "인생 러닝화"를 물었고, 댓글·스토리로 쏟아진 수많은 모델을 집계해 순위를 냈습니다. 즉 <strong>전문가 랩 테스트가 아니라 실제로 달리는 사람들이 직접 뽑은 결과</strong>죠. 이 글은 그 순위를 가져와, 각 신발이 <strong>왜 뽑혔는지</strong>를 우리 사이트의 실측 스펙·한국 러너 관점으로 풀어드립니다. 점수(데일리/안정성/템포/레이스)는 동마클럽이 매긴 항목별 평가입니다.</p>
-  </div>
-</div>
+<p>러너들이 오래 신은 신발 이야기는 좋은 후보를 찾는 계기가 될 수 있다. 그러나 인기 투표 결과와 내 발에 맞는 선택은 같지 않다. 순위표를 저장하기 전에 어떤 질문에 누가 답했는지, 정확히 어느 세대를 말하는지 확인해보자.</p>
+<p><strong>정정·확인 범위:</strong> 기존 글에 동마클럽 집계로 소개한 순위와 데일리·안정성 등의 숫자 점수가 있었다. 이번 재검증에서 해당 수치와 집계 방법을 지지하는 원문을 확보하지 못해 순위·점수를 그대로 제공하지 않는다. 원문 미확인을 투표가 없었다는 단정으로 바꾸지도 않는다. 이 글은 특정 투표의 재집계가 아닌 구매 판단 안내다.</p>
+<h2>1. 참여한 사람과 전체 러너를 구분</h2>
+<p><a href="https://aapor.org/standards-and-ethics/best-practices/" target="_blank" rel="noopener noreferrer">AAPOR의 설문 조사 모범 지침</a>는 소셜미디어·자발적 참여 등을 이용한 비확률 표본의 결과를 분석하고 보고할 때 방법을 투명하게 공개해야 한다고 설명한다. 댓글이 많다는 사실만으로 한국 러너 전체를 대표한다고 결론낼 수는 없다. 조사 인원과 모집 경로가 있는지, 실제 착용 경험을 어떻게 확인했는지 보자.</p>
+<h2>2. ‘첫 러닝화’는 ‘초보에게 가장 좋은 신발’과 다른 질문</h2>
+<p>어떤 신발을 처음 샀는지 묻는 질문은 구매 이력에 관한 것이다. 가장 자주 신는 신발, 가장 좋아하는 신발, 대회에 쓰는 신발도 각각 다른 질문이다. ‘인생 러닝화’라는 응답만으로 그 사람이 고수인지, 그 모델이 가장 안전한지, 사용 시간이 가장 긴지 알아낼 수 없다.</p>
+<h2>3. 순위를 만든 집계 방법 확인</h2>
+<p><a href="https://aapor.org/standards-and-ethics/transparency-initiative/" target="_blank" rel="noopener noreferrer">AAPOR의 조사 공개·투명성 기준</a>는 조사 질문·수집 시기·표본 모집·응답 수·가중치·자료 처리 등의 공개를 다룬다. 러닝화 투표에서도 다음 정보를 확인하면 해석이 구체적이 된다. 아래 표는 편집부의 확인 질문이다.</p>
+<table><thead><tr><th>확인 질문</th><th>왜 필요한가</th></tr></thead><tbody>
+<tr><td>한 사람당 한 모델인가, 복수 응답인가</td><td>표 수와 사람 수가 다를 수 있음</td></tr>
+<tr><td>댓글·스토리 중복을 어떻게 처리했나</td><td>같은 응답을 두 번 세었는지 확인</td></tr>
+<tr><td>1·2위의 실제 표 수는 몇 개인가</td><td>순위만으로 차이의 크기를 알 수 없음</td></tr>
+<tr><td>시리즈 이름과 세대를 어떻게 합쳤나</td><td>서로 다른 제품을 같은 신발로 묶었는지 확인</td></tr></tbody></table>
+<h2>4. 시리즈 인기에서 현재 모델의 사양으로 건너뛰지 않기</h2>
+<p>‘페가수스’, ‘노바블라스트’, ‘메타스피드’처럼 시리즈 이름만 나온 응답을 최신 모델의 정확한 무게·폭·폼 평가로 바꾸면 원문에 없는 정보를 보태게 된다. 세대·남녀·폭과 시험 사이즈까지 맞춰 별도의 제품 근거를 확인해야 한다. 같은 브랜드의 다른 모델도 모두 넓거나 좁다고 분류하지 말자.</p>
+<h2>5. 후보를 고른 뒤 내 사용 조건으로 비교</h2>
+<ol><li><strong>쓸 훈련을 먼저 정한다.</strong> 편한 일상 러닝, 빠른 세션, 대회 중 자신의 사용 목적을 적는다.</li><li><strong>현재 신발의 불편을 적는다.</strong> 발등 압박·뒤꿈치 들림·앞발 공간처럼 바꾸려는 문제를 구체화한다.</li><li><strong>정확한 모델끼리 시착한다.</strong> 양말과 맞는 사이즈·폭을 확인하고 인기 순위를 착화 결과 대신 쓰지 않는다.</li><li><strong>근거의 종류를 남긴다.</strong> 투표는 투표, 제조사 사양은 제조사 사양, 외부 실측은 외부 실측으로 구분한다.</li></ol>
+<p><a href="/blog/first-running-shoe-guide-2026">첫 러닝화 선택 안내</a>, <a href="/blog/running-shoe-size-conversion-chart-korea-2026">사이즈표 확인법</a>, <a href="/blog/carbon-plate-shoes-guide-2026">카본화의 근거와 규정</a>에서 비교를 이어갈 수 있다. 커뮤니티의 이야기는 후보를 넓히는 재료로 쓰되, 검증되지 않은 수명·부상 예방 등급·인기 점수로 구매를 확정하지 말자.</p>
 
-<h2>첫 러닝화 TOP3 — 초보가 처음 고른 신발</h2>
-<table>
-  <thead><tr><th>순위</th><th>모델</th><th>동마클럽 평가</th><th>성격</th></tr></thead>
-  <tbody>
-    <tr><td><strong>1위</strong></td><td><a href="/shoes/nike-pegasus-41">나이키 페가수스</a></td><td>데일리 90 · 안정성 84</td><td>가장 무난한 입문 데일리</td></tr>
-    <tr><td><strong>2위</strong></td><td>나이키 리액트 인피니티 런</td><td>데일리 86 · 안정성 88</td><td>부상 방지 특화(안정성 최고)</td></tr>
-    <tr><td><strong>3위</strong></td><td><a href="/shoes/asics-novablast-5">아식스 노바블라스트</a></td><td>데일리 92 · 안정성 86</td><td>통통 튀는 올라운드 데일리</td></tr>
-  </tbody>
-</table>
-<p><strong>첫 러닝화는 셋 다 데일리·안정화 계열</strong>입니다. 흥미롭게도 카본화나 빠른 신발은 한 켤레도 없죠. 초보에게 가장 중요한 건 속도가 아니라 <strong>"편하게, 다치지 않고, 오래"</strong>라는 걸 러너들의 선택이 그대로 보여줍니다. 1위 <a href="/shoes/nike-pegasus-41">페가수스</a>는 "첫 러닝화 추천"에서 거의 항상 1순위로 꼽히는 가장 안전한 데일리고, 2위 리액트 인피니티 런은 넓은 베이스로 발이 흔들리지 않게 잡아주는 부상 방지 특화 모델입니다(현재는 단종돼 중고·재고로만 만날 수 있어, 비슷한 안정 데일리를 찾는다면 <a href="/blog/first-running-shoe-guide-2026">첫 러닝화 가이드</a>를 참고하세요). 3위 <a href="/shoes/asics-novablast-5">노바블라스트</a>는 초보도 재미를 느낄 만큼 반발이 살아있는 올라운더라, 첫 신발이자 한동안 쓰는 데일리로 인기가 높습니다.</p>
-
-<h2>인생 러닝화 TOP5 — 고수가 정착한 신발</h2>
-<table>
-  <thead><tr><th>순위</th><th>모델</th><th>동마클럽 평가</th><th>성격</th></tr></thead>
-  <tbody>
-    <tr><td><strong>1위</strong></td><td><a href="/shoes/asics-novablast-5">아식스 노바블라스트</a></td><td>데일리 92 · 안정성 86</td><td>매일 신는 만능 데일리</td></tr>
-    <tr><td><strong>2위</strong></td><td><a href="/shoes/adidas-adios-pro-4">아디다스 아디제로 아디오스(프로)</a></td><td>템포 89 · 레이스 94</td><td>카본 마라톤 레이싱</td></tr>
-    <tr><td><strong>3위</strong></td><td><a href="/shoes/asics-metaspeed-sky-plus">아식스 메타스피드</a></td><td>템포 92 · 레이스 95</td><td>아식스 최상위 카본 레이서</td></tr>
-    <tr><td><strong>4위</strong></td><td><a href="/shoes/nike-vaporfly-4">나이키 베이퍼플라이</a></td><td>템포 91 · 레이스 94</td><td>카본화의 원조·기준점</td></tr>
-    <tr><td><strong>5위</strong></td><td><a href="/shoes/asics-superblast-3">아식스 슈퍼블라스트</a></td><td>데일리 93 · 안정성 93</td><td>카본 없는 고스택 슈퍼트레이너</td></tr>
-  </tbody>
-</table>
-<p>여기서 풍경이 바뀝니다. <strong>2·3·4위가 모두 카본 레이싱화</strong>(<a href="/shoes/adidas-adios-pro-4">아디오스 프로</a>·<a href="/shoes/asics-metaspeed-sky-plus">메타스피드</a>·<a href="/shoes/nike-vaporfly-4">베이퍼플라이</a>)예요. 달리기에 빠지고 기록 욕심이 생기면 결국 <strong>"속도를 만들어주는 신발"</strong>로 손이 간다는 뜻입니다. 특히 베이퍼플라이는 카본화 시대를 연 기준점이고, 메타스피드와 아디오스 프로는 그 대항마로 한국 마라토너들이 가장 많이 신는 슈퍼슈즈죠. 카본화가 처음이라면 <a href="/blog/carbon-plate-running-shoes-lineup-tier-guide-2026">카본 플레이트화 비교 가이드</a>를 먼저 보는 걸 권합니다.</p>
-
-<h2>이 순위가 말해주는 3가지</h2>
-<h3>① 고수도 매일 신는 건 결국 "편한 데일리"다</h3>
-<p>인생 러닝화 <strong>1위가 카본화가 아니라 데일리화 <a href="/shoes/asics-novablast-5">노바블라스트</a></strong>이고, 5위도 카본 없는 슈퍼트레이너 <a href="/shoes/asics-superblast-3">슈퍼블라스트</a>라는 점이 핵심입니다. 카본 레이싱화는 <strong>대회·포인트 훈련 전용</strong>이고, 훈련의 대부분을 차지하는 일상 러닝은 결국 편하고 내구성 좋은 데일리·슈퍼트레이너로 굴린다는 현실이죠. "인생 러닝화 = 가장 빠른 신발"이 아니라 <strong>"가장 오래, 가장 자주 함께한 신발"</strong>이라는 겁니다.</p>
-
-<h3>② 첫 신발 → 인생 신발, 한국 러너의 여정이 보인다</h3>
-<p>첫 러닝화는 <strong>100% 데일리·안정화</strong>, 인생 러닝화는 <strong>카본 레이싱이 절반</strong>. 두 순위를 나란히 놓으면 한 러너의 성장 곡선이 그려집니다 — <strong>"편하게 시작 → 기록 욕심 → 레이싱화 입문 → 결국 데일리로 회귀"</strong>. 지금 막 시작했다면 첫 러닝화 TOP3에서, 대회·기록에 욕심이 생겼다면 인생 러닝화 2~4위에서 다음 신발을 찾으면 됩니다.</p>
-
-<h3>③ 인생 러닝화 5개 중 3개가 아식스</h3>
-<p><a href="/shoes/asics-novablast-5">노바블라스트</a>(1위)·<a href="/shoes/asics-metaspeed-sky-plus">메타스피드</a>(3위)·<a href="/shoes/asics-superblast-3">슈퍼블라스트</a>(5위) — <strong>인생 러닝화 절반 이상이 아식스</strong>이고, 첫 러닝화 3위도 노바블라스트입니다. 데일리(노바블라스트)부터 카본 레이싱(메타스피드), 슈퍼트레이너(슈퍼블라스트)까지 카테고리별로 고르게 신뢰받는다는 뜻이죠. 토박스가 넉넉해 발볼 넓은 한국 러너와 궁합이 좋은 것도 한몫합니다. 슈퍼블라스트가 궁금하다면 <a href="/blog/superblast-3-vs-evo-sl-vs-mach-6-super-trainer-2026">슈퍼트레이너 3파전 비교</a>에서 더 깊게 다뤘습니다.</p>
-
-<div class="callout success">
-  <span class="callout-icon">🎯</span>
-  <div class="callout-body">
-    <p class="callout-title">그래서 나는 뭘 사야 하나</p>
-    <p><strong>이제 막 달리기를 시작했다면</strong> → 첫 러닝화 TOP3, 그중 <a href="/shoes/nike-pegasus-41">페가수스</a>나 <a href="/shoes/asics-novablast-5">노바블라스트</a>가 가장 무난합니다. <strong>데일리는 있고 기록에 욕심이 생겼다면</strong> → 인생 러닝화 2~4위 카본화. <strong>대회용 따로, 훈련용 따로 두고 싶다면</strong> → 카본 레이싱화 한 켤레 + <a href="/shoes/asics-superblast-3">슈퍼블라스트</a> 같은 슈퍼트레이너 한 켤레 조합이 정석입니다. 내 발·목표에 맞는 추천은 <a href="/recommend">맞춤 추천</a>에서 받아보세요.</p>
-  </div>
-</div>
-
-<h2>한국 러너 관점 FAQ</h2>
-<div class="faq">
-  <p class="faq-q">Q. 첫 러닝화로 카본화 사면 안 되나요?</p>
-  <p class="faq-a">A. 권하지 않습니다. 러너들의 첫 러닝화 TOP3가 전부 데일리·안정화인 데는 이유가 있어요. 카본화는 발·종아리에 부담이 크고 딱딱해서, 근력이 덜 갖춰진 초보가 매일 신으면 부상 위험이 큽니다. 먼저 데일리화로 기초 체력과 폼을 만든 뒤 카본화로 넘어가는 게 안전합니다.</p>
-  <p class="faq-q">Q. 인생 러닝화 1위가 왜 카본화가 아니라 노바블라스트인가요?</p>
-  <p class="faq-a">A. "인생 러닝화"는 가장 빠른 신발이 아니라 <strong>가장 자주·오래 함께한 신발</strong>이기 때문입니다. 대회는 1년에 몇 번뿐이고, 훈련의 90%는 일상 러닝이죠. 그래서 매일 편하게 신는 데일리(<a href="/shoes/asics-novablast-5">노바블라스트</a>)나 슈퍼트레이너(<a href="/shoes/asics-superblast-3">슈퍼블라스트</a>)가 카본화보다 더 깊은 애착을 받습니다.</p>
-  <p class="faq-q">Q. 발볼이 넓은데 이 순위 신발들 신어도 되나요?</p>
-  <p class="faq-a">A. 아식스 3종(노바블라스트·메타스피드·슈퍼블라스트)은 토박스가 비교적 넉넉해 발볼 넓은 러너에게 유리합니다. 반면 나이키(페가수스·베이퍼플라이)는 좁은 편이라 매장 착화를 권합니다. 자세한 건 <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너 가이드</a>를 보세요.</p>
-  <p class="faq-q">Q. 다른 러너들의 신발 선택도 궁금해요.</p>
-  <p class="faq-a">A. 유명 러너·셀럽들이 어떤 신발을 신는지는 <a href="/blog/celebrity-runners-shoe-choices-guide">셀럽 러너 신발 선택 가이드</a>에서 다뤘습니다. 함께 보면 한국 러너의 신발 트렌드가 더 선명해집니다.</p>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">🔗</span>
-  <div class="callout-body">
-    <p class="callout-title">한 걸음 더</p>
-    <p>순위에 오른 신발들의 전체 스펙·실측·구매 링크는 각 상세에서 확인하세요 — <a href="/shoes/nike-pegasus-41">페가수스 41</a> · <a href="/shoes/asics-novablast-5">노바블라스트 5</a> · <a href="/shoes/adidas-adios-pro-4">아디오스 프로 4</a> · <a href="/shoes/asics-metaspeed-sky-plus">메타스피드 스카이+</a> · <a href="/shoes/nike-vaporfly-4">베이퍼플라이 4</a> · <a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a>. 첫 러닝화를 고르는 중이라면 <a href="/blog/first-running-shoe-guide-2026">첫 러닝화 가이드</a>, 여러 신발을 나란히 비교하려면 <a href="/compare">비교 도구</a>를 이용하세요.</p>
-  </div>
-</div>
-
-<p class="post-disclaimer"><small>※ 순위·항목별 점수는 동마클럽이 러너 설문(댓글·스토리 언급)을 집계해 발표한 결과를 인용한 것이며, 각 신발의 스펙·해설은 본 사이트의 실측·브랜드 공식 기준입니다. 모델명은 러너들이 언급한 시리즈명 기준으로, 세부 버전은 사이트 상세 페이지를 참고하세요.</small></p>
-`,
+<h2>자주 묻는 질문</h2><h3>기존에 소개한 동마클럽 순위는 확인됐나요?</h3><p>이번 재검증에서 해당 수치와 집계 방법을 지지하는 원문을 확보하지 못했습니다. 그래서 순위·항목별 점수 제공을 보류했으며, 투표 자체가 없었다고 단정하지도 않습니다.</p><h3>인기 1위면 초보에게 가장 안전한가요?</h3><p>인기 응답으로 부상 예방이나 개인에게 맞는 착화를 입증할 수 없습니다. 질문과 표본, 정확한 모델과 실제 사용 목적을 따로 확인해야 합니다.</p><h3>시리즈명이 같으면 최신 모델 리뷰로 읽어도 되나요?</h3><p>아니요. 정확한 세대·남녀·폭과 제품 근거를 확인해야 합니다. 시리즈 투표를 최신 모델의 측정 결과로 옮기면 원문 범위를 넘습니다.</p>`,
+    updatedAt: "2026-11-10",
+    faqs: [
+      {
+        "question": "기존에 소개한 동마클럽 순위는 확인됐나요?",
+        "answer": "이번 재검증에서 해당 수치와 집계 방법을 지지하는 원문을 확보하지 못했습니다. 그래서 순위·항목별 점수 제공을 보류했으며, 투표 자체가 없었다고 단정하지도 않습니다."
+      },
+      {
+        "question": "인기 1위면 초보에게 가장 안전한가요?",
+        "answer": "인기 응답으로 부상 예방이나 개인에게 맞는 착화를 입증할 수 없습니다. 질문과 표본, 정확한 모델과 실제 사용 목적을 따로 확인해야 합니다."
+      },
+      {
+        "question": "시리즈명이 같으면 최신 모델 리뷰로 읽어도 되나요?",
+        "answer": "아니요. 정확한 세대·남녀·폭과 제품 근거를 확인해야 합니다. 시리즈 투표를 최신 모델의 측정 결과로 옮기면 원문 범위를 넘습니다."
+      }
+    ],
   },
   {
     id: 'superblast-3-vs-evo-sl-vs-mach-6-super-trainer-2026',
@@ -1402,192 +1364,61 @@ export const posts_2026_06: BlogPost[] = [
 `,
   },
   {
-    id: 'saucony-running-shoes-lineup-tier-guide-2026',
-    slug: 'saucony-running-shoes-lineup-tier-guide-2026',
-    title: '사코니 러닝화 계급도 2026 — 엔돌핀·라이드·가이드, PWRRUN 폼과 엔돌핀 라인으로 읽는 전체 라인업 | 입문부터 카본 슈퍼슈즈까지 한 장 정리',
-    description:
-      '사코니 러닝화 21종(현행 14종 + 전작 6종 + 출시 예정 1종)을 전통 라인(라이드 데일리·트라이엄프/파라마운트 쿠션·가이드/허리케인/옴니 안정화·킨바라 경량·페레그린/엑소더스 트레일)과 엔돌핀 스피드 라인으로 한 장에. 킨바라 15.9만부터 엔돌핀 엘리트 3 36.9만까지 가격·무게·폼 비교표 + 엔돌핀 패밀리 차이 + 엔돌핀 스피드가 갓신발인 이유 + PWRRUN·incrediLUX·IncrediRUN 폼 등급 + 전작 정리까지 담았습니다.',
-    thumbnail: '/images/blog/saucony-lineup-tier-2026.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-06-13',
-    updatedAt: '2026-09-28',
-    category: 'guide' as const,
-    readingTime: 14,
-    tags: ['사코니 러닝화', '소커니 러닝화', '사코니 계급도', '러닝화 라인업', '러닝화 등급', '엔돌핀 스피드', '엔돌핀 프로', '라이드', '가이드', 'PWRRUN'],
-    faqs: [
-      { question: '사코니 "엔돌핀(Endorphin)"이 뭔가요?', answer: '사코니의 스피드·레이싱 서브브랜드입니다. 이름에 엔돌핀이 붙으면 빠르게 달리기 위한 신발이에요. SPEEDROLL이라는 록커 지오메트리로 자연스럽게 굴러가게 하고, PWRRUN PB(PEBA) 슈퍼폼을 씁니다. 스피드·프로·엘리트·트레이너·아주라까지 변형이 많아 사코니 라인업의 핵심을 이룹니다.' },
-      { question: '엔돌핀 스피드·프로·엘리트는 뭐가 다른가요?', answer: '플레이트와 등급으로 갈립니다. 스피드는 나일론 플레이트(카본 아님)로 카본값 없이 빠른 슈퍼트레이너, 프로는 카본 플레이트 레이싱화, 엘리트는 IncrediRUN 폼에 카본을 넣은 최상위입니다(전작 엘리트 2가 RunRepeat 실측 에너지 리턴 80.6%. 신형 엘리트 3도 같은 IncrediRUN 계열로 실측 에너지 리턴 힐 80.6%·전족부 81.0%). 현행 세대는 스피드 5(21.9만)·프로 5(29.9만)·엘리트 3(36.9만)입니다. 가성비 훈련이면 스피드, 대회면 프로, 기록 끝장이면 엘리트입니다.' },
-      { question: '엔돌핀 스피드가 왜 "갓신발"이라고 불리나요?', answer: '카본 플레이트 대신 나일론 플레이트를 쓰면서도 에너지 리턴 힐 73.2%·전족부 78.2%(엔돌핀 스피드 5, RunRepeat 실측)를 21.9만원에 내기 때문입니다. 카본만큼 빳빳하지 않아 데일리·템포·롱런까지 폭넓게 쓸 수 있어, 한 켤레로 여러 용도를 커버하려는 러너에게 가격 대비 선택지가 넓습니다. 6세대는 글로벌 출시(10/15) 예정이지만 한국 정가·출시일은 아직 발표되지 않았습니다.' },
-      { question: '사코니 안정화는 가이드·허리케인·옴니 중 뭘 사야 하나요?', answer: '가이드 19(17.9만)는 전족부 플랫폼 실측 120mm의 초광폭 코어 안정화로 카야노 33(19.9만)보다 2만원 낮습니다. 허리케인 26(20.9만)은 IncrediLux 폼을 PWRRUN 크래들에 얹은 맥스쿠션 안정화, 옴니 ST 23(19.9만)은 PWRRUN PB와 PWRRUN 사이에 TPU 스태빌리티 프레임을 끼운 써코니 최상급 안정화입니다. 가성비 지지면 가이드, 쿠션까지 챙기려면 허리케인, 미드풋을 단단히 받치는 구조를 원하면 옴니입니다.' },
-      { question: '사코니는 발볼 넓은 한국 러너에게 맞나요?', answer: '라이드·가이드·허리케인·옴니는 표준 토박스에 와이드 옵션까지 있어 무난하고, 엔돌핀 스피드 5도 와이드가 있습니다. 트라이엄프 23·24는 표준 폭이 실측 71.4mm로 좁은 편이지만 와이드가 있습니다. 가이드 19는 전족부 플랫폼이 실측 120mm로 넓어 안정감도 좋아요. 반면 엔돌핀 프로 5·엘리트 2·엘리트 3·트레이너와 킨바라 16은 토박스가 좁고 와이드가 없으니 발볼이 많이 넓으면 반 치수 크게 신으세요. 파라마운트 맥스(실측 70.4mm)·엑소더스 울트라 4(실측 71.6mm)도 토박스가 좁고 국내 와이드 옵션이 없습니다.' },
+    id: "saucony-running-shoes-lineup-tier-guide-2026",
+    slug: "saucony-running-shoes-lineup-tier-guide-2026",
+    title: "사코니 러닝화 라인업 읽기: 폼·판·지지 구조로 비교하는 모델 지도",
+    description: "폼을 성능 계급으로 줄 세우지 않습니다. 정확한 세대의 공식 구성 8개 예시와 사이트 등록 모델을 구분하고 국내 가격·폭은 따로 확인합니다.",
+    thumbnail: "/images/blog/verified-saucony-running-shoes-lineup-tier-guide-2026-20261110.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-06-13",
+    updatedAt: "2026-11-10",
+    category: "guide",
+    readingTime: 6,
+    tags: [
+      "사코니 러닝화",
+      "소커니 러닝화",
+      "사코니 계급도",
+      "러닝화 라인업",
+      "러닝화 등급",
+      "엔돌핀 스피드",
+      "엔돌핀 프로",
+      "라이드",
+      "가이드",
+      "PWRRUN"
     ],
-    content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>사코니는 두 갈래</strong> — 전통 라인(라이드·가이드·트라이엄프·허리케인·옴니·파라마운트·킨바라)과 스피드 서브브랜드 <strong>엔돌핀</strong>. 2026년에 가이드 19·허리케인 26·트라이엄프 24·엔돌핀 엘리트 3로 세대가 바뀌었습니다.</li>
-    <li><strong>엔돌핀이 핵심</strong> — SPEEDROLL 록커 + PWRRUN PB 슈퍼폼. 스피드·프로·엘리트·트레이너·아주라로 변형이 가장 많습니다.</li>
-    <li><strong>엔돌핀 스피드 = 갓신발</strong> — 나일론 플레이트로 카본값 없이 73% 에너지, 20만원대 가성비 슈퍼트레이너입니다.</li>
-  </ul>
-</div>
+    faqs: [
+      {
+        "question": "PWRRUN PB가 들어가면 모두 같은 성능인가요?",
+        "answer": "아니요. 정확한 모델의 배합·구조·판·형상과 시험 조건을 따로 봐야 합니다. 폼 상품명만으로 반환율이나 기록 향상을 같게 볼 수 없습니다."
+      },
+      {
+        "question": "엔돌핀 스피드 5도 카본화인가요?",
+        "answer": "공식 설명은 PWRRUN PB와 나일론 플레이트입니다. 카본섬유 판과 구분해야 합니다."
+      },
+      {
+        "question": "등록된 21종은 모두 국내 현행 판매 모델인가요?",
+        "answer": "사이트 등록 목록일 뿐 현재 국내 판매·재고를 보장하는 목록은 아닙니다. 정확한 모델의 국내 옵션과 판매 상태를 별도로 확인해야 합니다."
+      }
+    ],
+    content: `<p><small>2026년 11월 10일 원문 대조. 공식 발표·제품 설명·시험 결과의 확인 범위를 나눠 정리했습니다.</small></p>
 
-<div class="callout info">
-  <span class="callout-icon">🟧</span>
-  <div class="callout-body">
-    <p class="callout-title">이 글의 역할 — 사코니 계급도 한 장</p>
-    <p>"엔돌핀에 스피드, 프로, 엘리트, 트레이너… 사코니는 엔돌핀이 너무 많아 헷갈린다"는 분을 위한 지도입니다. 추천 순위가 아니라 <strong>라인과 폼으로 전체 라인업을 한 번에 이해</strong>시키는 글이에요. 가격은 한국 공식가, 무게는 신발 DB의 공개 수치(측정 기준은 모델마다 다름)이며 각 모델은 상세 페이지로 연결됩니다. <a href="/blog/mizuno-running-shoes-lineup-tier-guide-2026">미즈노</a>·<a href="/blog/puma-running-shoes-lineup-tier-guide-2026">푸마</a>·<a href="/blog/brooks-running-shoes-lineup-tier-guide-2026">브룩스</a> 등 다른 브랜드 계급도와 함께 보면 비교가 쉽습니다.</p>
-  </div>
-</div>
+<p>같은 PWRRUN 이름이 붙어도 재료와 들어간 부위가 다르고, 같은 Endorphin 이름이어도 판의 종류가 다르다. 모델을 가격순 계급으로 줄 세우기보다 <strong>폼, 판, 지지 구조, 실제 착화 조건</strong>으로 나눠보자. 아래는 브랜드 전체의 모든 판매 모델 목록이 아니라, 정확한 세대의 원문을 대조한 구성 예시다.</p>
+<h2>PWRRUN은 한 가지 재료의 등급표가 아니다</h2>
+<p><a href="https://www.saucony.com/en/foam-technologies/" target="_blank" rel="noopener noreferrer">Saucony 공식 폼 기술 안내</a>는 PWRRUN을 EVA 혼합 계열, PWRRUN+를 TPU 계열, PB·HG를 PEBA 계열로 설명한다. 그러나 기술군 정의만으로 특정 모델의 전체 배합이나 완제품 성능 순위를 알 수는 없다. ‘더 비싼 폼이니 무조건 상위’, ‘PB이면 모든 모델의 반환율이 같다’는 해석은 피하자.</p>
+<h2>원문에서 확인한 구성 예시 8개</h2>
+<table><thead><tr><th>정확한 모델</th><th>확인한 구성</th><th>출처</th></tr></thead><tbody><tr><td><a href="/shoes/saucony-ride-18">Ride 18</a></td><td>PWRRUN+ 미드솔</td><td><a href="https://www.saucony.com/FR/fr_FR/ride-18/59943M.html" target="_blank" rel="noopener noreferrer">공식 원문</a></td></tr><tr><td><a href="/shoes/saucony-ride-19">Ride 19</a></td><td>PWRRUN+ 미드솔; 여성 US 본문 SCF 표기</td><td><a href="https://www.saucony.com/en/ride-19/60827W.html" target="_blank" rel="noopener noreferrer">공식 원문</a></td></tr><tr><td><a href="/shoes/saucony-guide-18">Guide 18</a></td><td>PWRRUN 미드솔·PWRRUN+ 인솔·CENTERPATH</td><td><a href="https://saucony.jp/products/mens-guide-18-n02" target="_blank" rel="noopener noreferrer">공식 원문</a></td></tr><tr><td><a href="/shoes/saucony-hurricane-25">Hurricane 25</a></td><td>PB 상층·PWRRUN 하부/주변 프레임·CENTERPATH</td><td><a href="https://www.saucony.com/en/hurricane-25/60323M.html?dwvar_60323M_color=S21026-205" target="_blank" rel="noopener noreferrer">공식 원문</a></td></tr><tr><td><a href="/shoes/saucony-triumph-23">Triumph 23</a></td><td>PWRRUN PB</td><td><a href="https://saucony.jp/products/mens-triumph-23-n02" target="_blank" rel="noopener noreferrer">공식 원문</a></td></tr><tr><td><a href="/shoes/saucony-endorphin-speed-5">Endorphin Speed 5</a></td><td>PWRRUN PB·나일론 플레이트·SPEEDROLL</td><td><a href="https://saucony.jp/products/mens-endorphin-speed-5" target="_blank" rel="noopener noreferrer">공식 원문</a></td></tr><tr><td><a href="/shoes/saucony-endorphin-pro-5">Endorphin Pro 5</a></td><td>PB·Super Critical HG·슬롯형 카본판</td><td><a href="https://www.saucony.com/en/endorphin-pro-5/60803M.html?dwvar_60803M_color=S21064-172" target="_blank" rel="noopener noreferrer">공식 원문</a></td></tr><tr><td><a href="/shoes/saucony-endorphin-elite-2">Endorphin Elite 2</a></td><td>IncrediRUN·전장 슬롯형 카본판</td><td><a href="https://www.saucony.com/en/endorphin-elite-2/59824U.html?dwvar_59824U_color=S30994-98" target="_blank" rel="noopener noreferrer">공식 원문</a></td></tr></tbody></table>
+<p>Guide 18의 PWRRUN+는 인솔이고 미드솔은 PWRRUN이다. Speed 5는 나일론 판이어서 카본판 모델과 구분해야 한다. Elite 2와 Pro 5도 각각 IncrediRUN, PB·HG 조합으로 다르게 읽는다. 원료명과 판의 종류가 같아도 개인의 착화나 레이스 효과가 같다는 뜻은 아니다.</p>
+<h2>공식 페이지끼리 다른 표기가 보일 때</h2>
+<p><a href="https://saucony.jp/products/mens-ride-19" target="_blank" rel="noopener noreferrer">일본 Ride 19 페이지</a>의 탑재 기능에는 PB 아이콘이 보이지만, 이번에 대조한 미국의 정확한 Ride 19 본문과 공식 폼 안내는 PWRRUN+를 명시한다. 이 충돌을 조용히 합치거나 PB로 바꾸지 않았다. Triumph 23도 정확한 제품 페이지의 PB 표기를 기준으로 했으며, 일반 폼 가이드의 다른 연결만으로 해당 모델의 소재를 덮어쓰지 않았다.</p>
+<h2>사이트에 등록된 다른 모델을 찾는다면</h2>
+<p>이번 원문 구성표의 8개 외에도 다음 모델 페이지가 있다. 합계 21종의 사이트 등록 목록이며, 모든 모델이 현재 한국에서 판매 중이거나 동일 수준으로 검증됐다는 뜻은 아니다.</p>
+<p><a href="/shoes/saucony-kinvara-16">킨바라 16</a> · <a href="/shoes/saucony-endorphin-pro-4">엔돌핀 프로 4</a> · <a href="/shoes/saucony-endorphin-elite-3">엔돌핀 엘리트 3</a> · <a href="/shoes/saucony-endorphin-speed-6">엔돌핀 스피드 6</a> · <a href="/shoes/saucony-endorphin-trainer">엔돌핀 트레이너</a> · <a href="/shoes/saucony-endorphin-azura">엔돌핀 아주라</a> · <a href="/shoes/saucony-guide-19">가이드 19</a> · <a href="/shoes/saucony-hurricane-26">허리케인 26</a> · <a href="/shoes/saucony-omni-st-23">옴니 ST 23</a> · <a href="/shoes/saucony-triumph-24">트라이엄프 24</a> · <a href="/shoes/saucony-paramount-max">파라마운트 맥스</a> · <a href="/shoes/saucony-peregrine-16">페레그린 16</a> · <a href="/shoes/saucony-xodus-ultra-4">엑소더스 울트라 4</a></p>
+<p>특히 다음 세대의 해외 리뷰와 국내 공식 출시·정가 확인은 다른 일이다. 예정 날짜가 지났다는 이유만으로 판매를 시작했다고 가정하거나, 전작 가격을 신제품의 한국 정가로 채우지 않는다.</p>
+<h2>내가 비교할 모델을 좁히는 순서</h2>
+<ol><li><strong>현재 필요한 사용 목적을 적는다.</strong> 편한 러닝, 빠른 훈련, 대회, 트레일 중 실제로 쓸 장면부터 정한다.</li><li><strong>정확한 세대의 구조를 확인한다.</strong> 미드솔과 인솔, 판과 아웃솔 고무의 이름을 구분한다. 카본 러버가 카본섬유 판을 뜻하는 것은 아니다.</li><li><strong>국내 옵션을 확인한다.</strong> 남녀·폭·사이즈·색상과 실제 표시가격을 본다. 해외 와이드나 과거 재고를 현재 국내 판매로 옮기지 않는다.</li><li><strong>같은 조건으로 시착한다.</strong> 발 길이·폭·발등 높이·뒤꿈치 고정을 각각 살핀다. 발볼이 눌리면 항상 반 치수 크게 신으라는 공통 처방은 하지 않는다.</li></ol>
+<p>이 글은 직접 착용 후 만든 성능·부상 예방 순위가 아니다. <a href="/blog/running-shoe-midsole-foam-guide-2026">폼 이름을 읽는 법</a>과 <a href="/blog/running-shoe-size-conversion-chart-korea-2026">사이즈표를 사용하는 법</a>을 함께 보면 같은 기준으로 후보를 비교하기 쉽다.</p>
 
-<h2>1. 사코니 읽는 법 — 전통 PWRRUN vs 엔돌핀 스피드</h2>
-
-<p>사코니 라인업은 크게 두 갈래입니다. 매일 신는 <strong>전통 라인</strong>과, 빠르게 달리기 위한 스피드 서브브랜드 <strong>엔돌핀(Endorphin)</strong>이에요. 엔돌핀이 붙으면 SPEEDROLL 록커로 굴러가는 스피드 라인이라고 보면 됩니다.</p>
-
-<table>
-  <thead>
-    <tr><th>라인</th><th>용도</th><th>한 줄</th></tr>
-  </thead>
-  <tbody>
-    <tr><td><strong>라이드 Ride</strong></td><td>데일리 만능</td><td>"처음이면 라이드" — 부드러운 기준점</td></tr>
-    <tr><td><strong>트라이엄프 / 파라마운트</strong></td><td>맥스 쿠션</td><td>트라이엄프=프리미엄 중립 쿠션 / 파라마운트 맥스=브랜드 최대 쿠션</td></tr>
-    <tr><td><strong>가이드 / 허리케인 / 옴니</strong></td><td>안정화</td><td>가이드=가성비 / 허리케인=맥스쿠션 안정화 / 옴니=TPU 프레임 최상급</td></tr>
-    <tr><td><strong>킨바라 Kinvara</strong></td><td>경량 미니멀</td><td>207g, 지면을 느끼는 데일리</td></tr>
-    <tr><td><strong>엔돌핀 Endorphin</strong></td><td>스피드·레이싱</td><td>스피드·프로·엘리트 — 사코니의 핵심</td></tr>
-    <tr><td><strong>페레그린 / 엑소더스</strong></td><td>트레일</td><td>페레그린=민첩한 트레일 표준 / 엑소더스 울트라=장거리 맥스쿠션</td></tr>
-  </tbody>
-</table>
-
-<h2>2. PWRRUN 폼이 등급을 만든다</h2>
-
-<p>사코니 폼은 "PWRRUN(파워런)" 패밀리입니다. 데일리는 PWRRUN, 레이싱은 PWRRUN PB(PEBA)와 신형 IncrediRUN으로 올라갑니다. 2026년에는 트라이엄프 24·허리케인 26에 <strong>incrediLUX(A-TPU)</strong>라는 새 쿠션 폼이 들어왔습니다.</p>
-
-<table>
-  <thead>
-    <tr><th>폼</th><th>성격</th><th>들어가는 모델</th></tr>
-  </thead>
-  <tbody>
-    <tr><td><strong>PWRRUN / PWRRUN+</strong></td><td>부드러운 데일리·안정화</td><td>라이드 · 가이드 · 킨바라 · 페레그린</td></tr>
-    <tr><td><strong>PWRRUN PB (PEBA)</strong></td><td>슈퍼폼 — 반발·경량</td><td>엔돌핀 스피드·아주라·프로 · 옴니 ST 23(상단) · 엑소더스 울트라 4 · 전작 트라이엄프 23·허리케인 25</td></tr>
-    <tr><td><strong>incrediLUX (A-TPU)</strong></td><td>2026 신형 쿠션 폼</td><td>트라이엄프 24 · 허리케인 26</td></tr>
-    <tr><td><strong>IncrediRUN</strong></td><td>최상위 신형 폼(반발 최상단)</td><td>엔돌핀 엘리트 · 트레이너 · 파라마운트 맥스(데일리 튜닝)</td></tr>
-    <tr><td><strong>+ 카본 플레이트</strong></td><td>레이싱 추진</td><td>엔돌핀 프로 · 엘리트 · 트레이너</td></tr>
-  </tbody>
-</table>
-
-<p>요약하면 <strong>PWRRUN PB가 슈퍼폼, IncrediRUN이 최상위</strong>입니다. 특히 엔돌핀 스피드는 이 PWRRUN PB에 <strong>카본 대신 나일론 플레이트</strong>를 넣어 가성비 슈퍼트레이너로 유명해졌어요(아래 5번).</p>
-
-<h2>3. 사코니 러닝화 계급도 — 현행 14종 한눈에</h2>
-
-<p>라인 × 폼으로 2026년 9월 현재 세대의 사코니 러닝화 14종(로드 12 + 트레일 2)을 가격순으로 줄 세우면 이렇게 됩니다. 한 세대 앞 모델 6종은 바로 아래 표에 따로 모았습니다.</p>
-
-<table>
-  <thead>
-    <tr><th>모델</th><th>라인·용도</th><th>폼</th><th>가격</th><th>무게</th><th>한 줄 성격</th></tr>
-  </thead>
-  <tbody>
-    <tr><td><a href="/shoes/saucony-kinvara-16"><strong>킨바라 16</strong></a></td><td>경량 미니멀</td><td>PWRRUN</td><td>15.9만</td><td>207g</td><td>207g·4mm, 지면 감각</td></tr>
-    <tr><td><a href="/shoes/saucony-ride-19"><strong>라이드 19</strong></a></td><td>입문 데일리</td><td>SCF PWRRUN+</td><td>17.9만</td><td>278g</td><td>더 부드럽고 플랫폼이 넓어진 트레이너</td></tr>
-    <tr><td><a href="/shoes/saucony-guide-19"><strong>가이드 19</strong></a></td><td>가성비 안정화</td><td>PWRRUN</td><td>17.9만</td><td>298g</td><td>전족부 플랫폼 실측 120mm 초광폭</td></tr>
-    <tr><td><a href="/shoes/saucony-peregrine-16"><strong>페레그린 16</strong></a></td><td>트레일 표준</td><td>PWRRUN + 록플레이트</td><td>17.9만</td><td>278g</td><td>Vibram Megagrip, 드롭 4mm</td></tr>
-    <tr><td><a href="/shoes/saucony-endorphin-azura"><strong>엔돌핀 아주라</strong></a></td><td>엔돌핀 데일리</td><td>PWRRUN PB</td><td>18.9만</td><td>241g</td><td>무플레이트 데일리 스피드</td></tr>
-    <tr><td><a href="/shoes/saucony-omni-st-23"><strong>옴니 ST 23</strong></a></td><td>최상급 안정화</td><td>PWRRUN PB + PWRRUN + TPU 프레임</td><td>19.9만</td><td>286g</td><td>TPU 스태빌리티 프레임으로 미드풋 지지</td></tr>
-    <tr><td><a href="/shoes/saucony-triumph-24"><strong>트라이엄프 24</strong></a></td><td>맥스 쿠션</td><td>incrediLUX (A-TPU)</td><td>20.9만</td><td>258g</td><td>신폼으로 스택↑ 무게↓</td></tr>
-    <tr><td><a href="/shoes/saucony-hurricane-26"><strong>허리케인 26</strong></a></td><td>맥스쿠션 안정화</td><td>IncrediLux + PWRRUN 크래들</td><td>20.9만</td><td>272g</td><td>높은 스택에 가벼워진 안정화</td></tr>
-    <tr><td><a href="/shoes/saucony-endorphin-speed-5"><strong>엔돌핀 스피드 5</strong></a></td><td>무카본 슈퍼트레이너</td><td>PWRRUN PB + 나일론</td><td>21.9만</td><td>238g</td><td>73% 리턴 20만대, 갓신발</td></tr>
-    <tr><td><a href="/shoes/saucony-endorphin-trainer"><strong>엔돌핀 트레이너</strong></a></td><td>카본 슈퍼트레이너</td><td>IncrediRUN + PWRRUN</td><td>21.9만</td><td>285g</td><td>IncrediRUN 매일 훈련에</td></tr>
-    <tr><td><a href="/shoes/saucony-xodus-ultra-4"><strong>엑소더스 울트라 4</strong></a></td><td>울트라 트레일</td><td>PWRRUN PB + PWRRUN 프레임</td><td>21.9만</td><td>309g</td><td>장거리 맥스쿠션 트레일</td></tr>
-    <tr><td><a href="/shoes/saucony-paramount-max"><strong>파라마운트 맥스</strong></a></td><td>브랜드 최대 쿠션</td><td>incrediRUN 풀렝스</td><td>25.9만</td><td>272g</td><td>엘리트 계열 폼을 데일리용으로</td></tr>
-    <tr><td><a href="/shoes/saucony-endorphin-pro-5"><strong>엔돌핀 프로 5</strong></a></td><td>카본 레이싱</td><td>PWRRUN HG + PB · 카본</td><td>29.9만</td><td>215g</td><td>슬롯 카본, 검증된 장거리</td></tr>
-    <tr><td><a href="/shoes/saucony-endorphin-elite-3"><strong>엔돌핀 엘리트 3</strong></a></td><td>최상위 레이싱</td><td>IncrediRUN TPEE · 카본</td><td>36.9만</td><td>210g</td><td>안정성을 손본 엘리트 신형(토박스는 좁음)</td></tr>
-  </tbody>
-</table>
-
-<p>※ 가격은 한국 공식가(2026-09-28 확인 기준), 무게는 신발 DB의 공개 수치입니다. 무게는 모델마다 측정 사이즈(US 9·US 10·280mm 등)가 달라 10g 안팎 차이는 비교 근거로 삼지 마세요. 기준 사이즈·스택·발볼 상세는 각 모델 상세 페이지에 있습니다.</p>
-
-<h3>전작 6종 — 재고가 있으면 가성비</h3>
-
-<p>후속이 나왔다고 전작이 나빠진 건 아닙니다. 아래는 한 세대 앞 모델이며, 사코니 한국 공식몰 판매 여부는 2026-09-28 기준입니다.</p>
-
-<table>
-  <thead>
-    <tr><th>전작</th><th>후속</th><th>정가</th><th>무게</th><th>공식몰</th></tr>
-  </thead>
-  <tbody>
-    <tr><td><a href="/shoes/saucony-ride-18">라이드 18</a></td><td>라이드 19</td><td>15.9만</td><td>255g</td><td>검색 미확인 — 재고처 확인</td></tr>
-    <tr><td><a href="/shoes/saucony-guide-18">가이드 18</a></td><td>가이드 19</td><td>15.9만</td><td>272g</td><td>검색 미확인 — 재고처 확인</td></tr>
-    <tr><td><a href="/shoes/saucony-triumph-23">트라이엄프 23</a></td><td>트라이엄프 24</td><td>19.9만</td><td>272g</td><td>판매 중</td></tr>
-    <tr><td><a href="/shoes/saucony-hurricane-25">허리케인 25</a></td><td>허리케인 26</td><td>19.9만</td><td>286g</td><td>판매 중</td></tr>
-    <tr><td><a href="/shoes/saucony-endorphin-pro-4">엔돌핀 프로 4</a></td><td>엔돌핀 프로 5</td><td>26.9만</td><td>220g</td><td>판매 중(여성)</td></tr>
-    <tr><td><a href="/shoes/saucony-endorphin-elite-2">엔돌핀 엘리트 2</a></td><td>엔돌핀 엘리트 3</td><td>33.9만</td><td>197g</td><td>판매 중</td></tr>
-  </tbody>
-</table>
-
-<div class="callout info">
-  <span class="callout-icon">🆕</span>
-  <div class="callout-body">
-    <p class="callout-title">출시 예정 — 엔돌핀 스피드 6</p>
-    <p><a href="/shoes/saucony-endorphin-speed-6">엔돌핀 스피드 6</a>는 폼을 PWRRUN PB에서 PWRRUN PBX로 바꾸고 나일론 플레이트의 바깥쪽 날개를 걷어낸 6세대입니다. 글로벌 출시는 2026년 10월 15일 예정이고 <strong>한국 정가·출시일은 아직 발표되지 않았습니다</strong>(무게도 소스마다 달라 확정 전). 그때까지 한국에서 살 수 있는 현행은 스피드 5입니다.</p>
-  </div>
-</div>
-
-<h2>4. 목적별로 — 나는 뭘 사야 할까</h2>
-
-<ul>
-  <li><strong>🟢 첫 사코니·만능 데일리</strong> → <a href="/shoes/saucony-ride-19">라이드 19</a>(17.9만). 재고가 있으면 전작 <a href="/shoes/saucony-ride-18">라이드 18</a>(15.9만)도 가성비. 둘의 차이는 <a href="/blog/saucony-ride-18-vs-19-comparison">라이드 18 vs 19</a>에.</li>
-  <li><strong>🦶 평발·안정</strong> → 가성비 <a href="/shoes/saucony-guide-19">가이드 19</a>(17.9만, 카야노 33보다 2만원 낮음), 쿠션까지 챙기면 <a href="/shoes/saucony-hurricane-26">허리케인 26</a>(20.9만), 미드풋을 단단히 받치는 구조는 <a href="/shoes/saucony-omni-st-23">옴니 ST 23</a>(19.9만). 상세는 <a href="/blog/saucony-guide-19-review">가이드 19</a>·<a href="/blog/saucony-hurricane-26-review">허리케인 26</a>·<a href="/blog/saucony-omni-st-23-review">옴니 ST 23</a> 리뷰에, 다른 브랜드 안정화 비교는 <a href="/blog/stability-shoes-self-diagnosis-fit-guide-2026">안정화 자가진단 가이드</a>에.</li>
-  <li><strong>☁️ 푹신한 맥스 쿠션</strong> → <a href="/shoes/saucony-triumph-24">트라이엄프 24</a>(20.9만, 258g). 쿠션을 끝까지 올리려면 <a href="/shoes/saucony-paramount-max">파라마운트 맥스</a>(25.9만, 대신 272g — RunRepeat 실측, 브랜드 공식 302g). 공식몰에 남은 전작 <a href="/shoes/saucony-triumph-23">트라이엄프 23</a>(19.9만)은 PEBA 계열 PWRRUN PB 쿠션. 상세는 <a href="/blog/saucony-triumph-24-review">트라이엄프 24 리뷰</a>·<a href="/blog/saucony-paramount-max-review">파라마운트 맥스 리뷰</a>에.</li>
-  <li><strong>⚡ 카본 없이 빠른 만능</strong> → <a href="/shoes/saucony-endorphin-speed-5">엔돌핀 스피드 5</a>. 데일리부터 템포·롱런까지 한 켤레로(아래 5번). 6세대는 한국 정가 미발표.</li>
-  <li><strong>🏃 카본 훈련+대회</strong> → <a href="/shoes/saucony-endorphin-trainer">엔돌핀 트레이너</a>(IncrediRUN 슈퍼트레이너).</li>
-  <li><strong>🏅 풀마라톤 레이스</strong> → <a href="/shoes/saucony-endorphin-pro-5">엔돌핀 프로 5</a>(검증된 장거리). 전작과의 세대 차이는 <a href="/blog/saucony-endorphin-pro-4-vs-5-comparison">프로 4 vs 5</a>에. 기록 끝장이면 <a href="/shoes/saucony-endorphin-elite-3">엔돌핀 엘리트 3</a>(36.9만) — 전작 <a href="/shoes/saucony-endorphin-elite-2">엘리트 2</a>(33.9만, RunRepeat 실측 에너지 리턴 80.6%)의 IncrediRUN을 잇고 안정성을 손봤습니다(토박스는 실측 71.8mm로 여전히 좁음, <a href="/blog/saucony-endorphin-elite-3-preview-2026">엘리트 3 프리뷰</a>).</li>
-  <li><strong>⛰️ 트레일</strong> → 근교 산길은 <a href="/shoes/saucony-peregrine-16">페레그린 16</a>(17.9만, Vibram Megagrip), 장거리·울트라는 <a href="/shoes/saucony-xodus-ultra-4">엑소더스 울트라 4</a>(21.9만). 다른 브랜드 트레일화와의 비교는 <a href="/blog/trail-running-shoes-lineup-tier-guide-2026">트레일 러닝화 계급도</a>에.</li>
-</ul>
-
-<h2>5. 엔돌핀 5형제 — 사코니의 스피드 서브브랜드</h2>
-
-<p>사코니가 헷갈리는 이유는 <strong>엔돌핀 변형이 가장 많아서</strong>입니다. 같은 엔돌핀인데 플레이트와 폼으로 다섯 라인으로 갈리고, 프로·엘리트는 전작까지 함께 팔려 모델 수가 더 많아 보입니다.</p>
-
-<table>
-  <thead>
-    <tr><th>모델</th><th>성격</th><th>플레이트</th><th>가격</th></tr>
-  </thead>
-  <tbody>
-    <tr><td><a href="/shoes/saucony-endorphin-azura">엔돌핀 아주라</a></td><td>데일리 스피드</td><td>없음</td><td>18.9만</td></tr>
-    <tr><td><a href="/shoes/saucony-endorphin-speed-5">엔돌핀 스피드 5</a></td><td>무카본 슈퍼트레이너 (6세대 한국 미발표)</td><td>나일론</td><td>21.9만</td></tr>
-    <tr><td><a href="/shoes/saucony-endorphin-trainer">엔돌핀 트레이너</a></td><td>카본 슈퍼트레이너</td><td>카본</td><td>21.9만</td></tr>
-    <tr><td><a href="/shoes/saucony-endorphin-pro-5">엔돌핀 프로 5</a></td><td>카본 레이싱 (전작 <a href="/shoes/saucony-endorphin-pro-4">프로 4</a> 26.9만)</td><td>슬롯 카본</td><td>29.9만</td></tr>
-    <tr><td><a href="/shoes/saucony-endorphin-elite-3">엔돌핀 엘리트 3</a></td><td>최상위 IncrediRUN (전작 <a href="/shoes/saucony-endorphin-elite-2">엘리트 2</a> 33.9만)</td><td>슬롯형 카본</td><td>36.9만</td></tr>
-  </tbody>
-</table>
-
-<p>정리하면 — <strong>데일리면 아주라, 카본 없이 만능이면 스피드, 훈련+대회 카본이면 트레이너, 대회 전용이면 프로, 기록 끝장이면 엘리트</strong>입니다. 특히 <strong>엔돌핀 스피드 5</strong>는 나일론 플레이트로 카본값 없이 에너지 리턴 힐 73.2%·전족부 78.2%를 21.9만원에 냅니다 — "갓신발"이라는 별명이 붙은 이유입니다. 엔돌핀만 더 깊게 보려면 <a href="/blog/saucony-endorphin-lineup-2026-guide">엔돌핀 라인업 가이드</a>를 보세요.</p>
-
-<h2>6. 발볼 — 사코니는 대체로 무난</h2>
-
-<p>사코니는 데일리·안정화 라인 대부분이 <strong>표준 토박스에 와이드 옵션</strong>까지 있어 발볼 넓은 한국 러너에게도 무난한 편입니다. 다만 레이싱·경량·트레일 일부는 실측 토박스가 좁습니다. 특히 가이드 19는 전족부 플랫폼이 실측 120mm로 넓어 안정감까지 좋아요.</p>
-
-<table>
-  <thead>
-    <tr><th>발볼</th><th>모델</th></tr>
-  </thead>
-  <tbody>
-    <tr><td><strong>와이드 옵션 있음</strong></td><td>라이드 18·19 · 가이드 18·19 · 트라이엄프 23·24(표준 폭은 실측 71.4mm로 좁은 편) · 허리케인 25·26 · 옴니 ST 23 · 페레그린 16(표준 폭 실측 70.3mm) · 엔돌핀 스피드 5</td></tr>
-    <tr><td><strong>표준 (무난)</strong></td><td>엔돌핀 아주라(실측 72.2mm) · 엔돌핀 프로 4(실측 72.5mm)</td></tr>
-    <tr><td><strong>좁음 (주의)</strong></td><td>엔돌핀 프로 5(실측 69.3mm) · 엔돌핀 트레이너(실측 70.1mm) · 엔돌핀 엘리트 2(전작 레이싱) · 엔돌핀 엘리트 3(실측 71.8mm) · 킨바라 16(실측 70.8mm) · 파라마운트 맥스(실측 70.4mm, 국내 와이드 없음) · 엑소더스 울트라 4(실측 71.6mm, 국내 와이드 없음)</td></tr>
-  </tbody>
-</table>
-
-<p>데일리·안정화는 와이드까지 있어 발볼 걱정이 적고, 와이드 없이 좁은 모델(엔돌핀 프로 5·엘리트 2·엘리트 3·트레이너, 킨바라 16, 파라마운트 맥스, 엑소더스 울트라 4)은 발볼 넓으면 반 치수 크게 신으세요. 발볼별 선택은 <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너를 위한 러닝화</a>에 정리돼 있습니다.</p>
-
-<h2>한 걸음 더</h2>
-
-<ul>
-  <li>🟧 사코니 브랜드 전체 신발 보기 → <a href="/brands/saucony">사코니 브랜드 페이지</a></li>
-  <li>🦶 안정화 베스트 → <a href="/best/stability">안정화 러닝화 추천</a> · 레이싱 → <a href="/best/racing">레이싱 러닝화 추천</a></li>
-  <li>🟦 다른 브랜드 계급도 → <a href="/blog/running-shoes-tier-chart-2026"><strong>11개 브랜드 한 장 보기</strong></a> · <a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026">뉴발란스</a> · <a href="/blog/nike-running-shoes-lineup-tier-guide-2026">나이키</a> · <a href="/blog/asics-running-shoes-lineup-tier-guide-2026">아식스</a> · <a href="/blog/hoka-running-shoes-lineup-tier-guide-2026">호카</a> · <a href="/blog/brooks-running-shoes-lineup-tier-guide-2026">브룩스</a> · <a href="/blog/adidas-running-shoes-lineup-tier-guide-2026">아디다스</a> · <a href="/blog/on-running-shoes-lineup-tier-guide-2026">온</a> · <a href="/blog/puma-running-shoes-lineup-tier-guide-2026">푸마</a> · <a href="/blog/mizuno-running-shoes-lineup-tier-guide-2026">미즈노</a> · <a href="/blog/li-ning-red-hare-9-lineup-2026">라이닝</a></li>
-</ul>
-
-<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 2026-06-13 발행, 2026-09-28 라인업·가격 갱신 기준 한국 공식 판매 모델과 RunRepeat 실측·사코니 공식 자료를 토대로 작성했습니다. 라인업·가격·발볼 옵션은 시즌마다 바뀔 수 있으니 구매 전 각 모델 상세 페이지와 공식몰에서 최신 정보를 확인하세요.</p>
-`,
+<h2>자주 묻는 질문</h2><h3>PWRRUN PB가 들어가면 모두 같은 성능인가요?</h3><p>아니요. 정확한 모델의 배합·구조·판·형상과 시험 조건을 따로 봐야 합니다. 폼 상품명만으로 반환율이나 기록 향상을 같게 볼 수 없습니다.</p><h3>엔돌핀 스피드 5도 카본화인가요?</h3><p>공식 설명은 PWRRUN PB와 나일론 플레이트입니다. 카본섬유 판과 구분해야 합니다.</p><h3>등록된 21종은 모두 국내 현행 판매 모델인가요?</h3><p>사이트 등록 목록일 뿐 현재 국내 판매·재고를 보장하는 목록은 아닙니다. 정확한 모델의 국내 옵션과 판매 상태를 별도로 확인해야 합니다.</p>`,
   },
   {
     id: "mizuno-running-shoes-lineup-tier-guide-2026",
