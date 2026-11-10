@@ -752,109 +752,63 @@ export const posts_2026_10: BlogPost[] = [
 <h2>자주 묻는 질문</h2><h3>지금 일반 접수 중인가요?</h3><p>공식 일정의 접수 마감은 11월 2일 23:59로 이미 지났습니다. 신청 링크가 남아 있다는 이유로 접수 중이라고 안내하지 않습니다.</p><h3>취소·환불은 언제까지였나요?</h3><p>현재 공식 안내는 11월 9일 23:59까지입니다. 이전 글의 10월 30일을 갱신했으며 11월 10일 현재는 공지된 환불 기한이 지났습니다.</p><h3>대회 시간과 제한시간은요?</h3><p>11월 22일 오전 6시 30분 집결, 7시 30분 그룹별 출발입니다. 잠실종합운동장 동문에서 출발하는 10K이며 제한시간은 90분입니다.</p><h3>기념품을 못 받으면 어떻게 하나요?</h3><p>공식은 11월 19일까지 수령하지 못하면 사무국에 문의하라고 안내합니다. 배번호 뒤에 기록칩이 붙어 있으므로 수령 후 구성과 훼손 여부를 확인하세요.</p>`,
   },
   {
-    id: 'korea-running-expo-2026-guide',
-    slug: 'korea-running-expo-2026-guide',
-    title: '코리아러닝엑스포 2026 부스 배치도 | 제마 레이스팩 수령·운영시간·방문 동선',
-    description: '10월 29~31일 SETEC에서 열리는 코리아러닝엑스포 2026은 일반 관람객도 무료 입장할 수 있습니다. 제마 배번호·레이스팩은 1관에서 받고, 토요일 전시 부스는 20시, 수령은 23시까지 운영됩니다. 1~3관 부스 배치와 방문 동선을 공식 안내로 정리했습니다.',
-    thumbnail: '/images/blog/korea-running-expo-2026-guide.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-10-21',
-    updatedAt: '2026-10-30',
-    category: 'news' as const,
+    id: "korea-running-expo-2026-guide",
+    slug: "korea-running-expo-2026-guide",
+    title: "2026 코리아러닝엑스포 운영 기록: 전시·제마 레이스팩 수령과 종료 후 확인",
+    description: "10월 29~31일 SETEC 1~3전시실 운영 안내 기록입니다. 전시 종료와 레이스팩 수령 시간을 구분하고, 예상 방문객을 실제 실적으로 바꾸지 않았습니다. 지금은 제마 기록·물품 문의 경로를 확인할 시점입니다.",
+    thumbnail: "/images/blog/verified-korea-running-expo-2026-guide-20261110.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-10-21",
+    updatedAt: "2026-11-10",
+    category: "news",
     readingTime: 5,
-    tags: ['코리아러닝엑스포', '코리아러닝엑스포 2026', 'JTBC 서울마라톤', '제마 배번호 수령', '제마 레이스팩', '러닝 엑스포', 'SETEC', '러닝화'],
+    tags: [
+      "코리아러닝엑스포",
+      "러닝엑스포 2026",
+      "SETEC",
+      "JTBC 서울마라톤",
+      "레이스팩",
+      "전시 운영 기록"
+    ],
     event: {
-      name: '코리아러닝엑스포 2026',
-      startDate: '2026-10-29T12:00:00+09:00',
-      endDate: '2026-10-31T20:00:00+09:00',
-      location: { name: 'SETEC 1~3전시실', address: '서울 강남구 남부순환로 3104' },
-      organizer: '러너블',
-      url: 'https://korearunningexpo.co.kr/',
+      "name": "2026 코리아러닝엑스포",
+      "startDate": "2026-10-29",
+      "endDate": "2026-10-31",
+      "location": {
+        "name": "SETEC 1~3전시실",
+        "address": "서울 강남구 남부순환로 3104"
+      },
+      "organizer": "러너블",
+      "url": "https://www.setec.or.kr/front/schedule/view.do?sIdx=2259"
     },
     faqs: [
-      { question: '제마 배번호와 레이스팩은 어디서 받나요?', answer: '10월 29~31일 코리아러닝엑스포가 열리는 SETEC 1관에서 받습니다. 택배 발송은 없으며 목·금요일 12:00~20:00, 토요일 10:00~23:00에 수령할 수 있습니다.' },
-      { question: '토요일 밤 10시에 가면 브랜드 부스도 볼 수 있나요?', answer: '공식 계정의 10월 20일 안내 기준으로 전시 부스는 토요일 20:00에 끝납니다. 레이스팩 수령만 23:00까지이므로 브랜드 부스 관람을 원하면 더 일찍 방문하세요.' },
-      { question: '다른 사람이 제 레이스팩을 대신 받아도 되나요?', answer: '대회 공식 공지는 개인별 QR코드를 통한 대리 수령이 가능하다고 안내합니다. 자세한 방법은 추후 공지 예정이라고만 적혀 있고, 10월 30일까지 세부 공지는 찾지 못했습니다. QR 외에 필요한 준비물이 있는지 사무국에 먼저 확인하세요.' },
-      { question: 'SETEC에 차를 가져가도 되나요?', answer: 'JTBC 서울마라톤의 레이스팩 수령 공지는 SETEC 주차장을 이용할 수 없다고 안내합니다. 3호선 학여울역 1번 출구로 오는 대중교통 동선을 권장합니다.' },
+      {
+        "question": "지금 엑스포에 갈 수 있나요?",
+        "answer": "이 글은 2026년 10월 29~31일 지난 행사 안내 기록입니다. 현재 방문 가능한 일정으로 안내하지 않습니다."
+      },
+      {
+        "question": "토요일에는 모든 관이 23시까지였나요?",
+        "answer": "SETEC 안내는 10:00~20:00이며 1전시실만 23:00까지 운영 예정이라고 적었습니다. 모든 전시실 연장으로 확대하지 않습니다."
+      },
+      {
+        "question": "5만 명이 실제 방문했나요?",
+        "answer": "SETEC의 5만 명 이상은 동반객을 포함한 예상 규모입니다. 실제 방문 실적 집계로 확인하지 않았습니다."
+      },
+      {
+        "question": "전시 입장만으로 마라톤 참가권이 생기나요?",
+        "answer": "무료 전시 관람과 등록 참가자의 레이스팩 수령은 다른 절차입니다. 입장 자체가 마라톤 출전권이나 현재 미수령 물품 수령을 보장하지 않습니다."
+      }
     ],
-    content: `
-<div class="tldr"><span class="tldr-label">3줄 요약</span><ul>
-<li><strong>10월 29~31일 SETEC 1~3관에서 열리며 일반 관람객도 무료입니다.</strong> 제마 배번호·레이스팩은 택배 없이 1관에서 받습니다. 수령 구역 입장에는 참가자 QR코드가 필요합니다.</li>
-<li><strong>토요일 전시 부스는 20시, 레이스팩 수령은 23시까지입니다.</strong> 같은 건물 안에서도 마감 시간이 다릅니다.</li>
-<li><strong>1관 수령 → 2관 공식 스폰서 → 3관 참여 브랜드</strong> 순서로 동선을 잡아보세요. 공식 배치도에는 나이키·미즈노·가민 등의 부스 번호까지 나와 있습니다.</li>
-</ul></div>
-
-<p><strong>제마 배번호를 받으러 가는 날, 러닝 브랜드 부스도 함께 둘러볼 계획인가요?</strong> 10월 20일 코리아러닝엑스포 공식 계정이 전시실별 부스 배치도를 공개했습니다. 2026 JTBC 서울마라톤 참가자의 레이스팩 수령 구역과 브랜드 전시가 SETEC 1~3관에 나뉘어 들어갑니다.</p>
-<p><strong>대회에 참가하지 않아도 엑스포는 무료로 관람할 수 있습니다.</strong> 다만 1관의 레이스팩 수령 구역은 참가자 QR코드로 입장합니다. 일반 관람과 레이스팩 수령을 구분해 동선을 잡으세요. <a href="https://www.setec.or.kr/front/schedule/view.do?sIdx=2259" target="_blank" rel="noopener noreferrer">SETEC 공식 행사 일정</a>과 <a href="https://www.instagram.com/korearunningexpo/p/Deyxz-OCVHY/" target="_blank" rel="noopener noreferrer">엑스포 공식 안내</a>를 10월 27일 확인했습니다.</p>
-<p>방문 전에는 <strong>전시 관람 시간과 레이스팩 수령 시간을 따로</strong> 확인하세요. 특히 토요일 늦게 배번호를 받으러 가면, 브랜드 부스는 이미 운영을 마쳤을 수 있습니다.</p>
-
-<h2>언제 가야 하나요? 토요일은 두 마감 시간을 기억하세요</h2>
-<table>
-<thead><tr><th>날짜</th><th>전시 부스 운영</th><th>레이스팩 수령 · 1관</th></tr></thead>
-<tbody>
-<tr><td>10월 29일(목)</td><td>12:00~20:00</td><td>12:00~20:00</td></tr>
-<tr><td>10월 30일(금)</td><td>12:00~20:00</td><td>12:00~20:00</td></tr>
-<tr><td>10월 31일(토)</td><td><strong>10:00~20:00</strong></td><td><strong>10:00~23:00</strong></td></tr>
-</tbody>
-</table>
-<p>전시 시간은 <a href="https://www.instagram.com/korearunningexpo/p/DetaGKjCRu3/" target="_blank" rel="noopener noreferrer">공식 계정의 10월 20일 안내</a>, 수령 시간은 <a href="https://marathon.jtbc.com/17/?bmode=view&amp;idx=173732896" target="_blank" rel="noopener noreferrer">대회 공식 레이스팩 공지</a>와 대조했습니다. 일부 소개 글에는 토요일 전시 종료가 22시로 적혀 있지만, 공식 계정은 20시로 안내합니다. 부스 관람까지 하려면 20시 전에 둘러볼 시간을 확보하세요.</p>
-<p>장소는 <strong>SETEC, 서울 강남구 남부순환로 3104</strong>입니다. 3호선 학여울역 1번 출구와 연결되는 동선입니다. 대회 사무국은 <strong>SETEC 주차장 이용 불가</strong>를 공지했으니, 차로 짐을 싣고 갈 계획부터 세우지 않는 편이 좋습니다.</p>
-
-<h2>1관: 먼저 배번호와 레이스팩을 받으세요</h2>
-<p>1관은 <strong>RACE PACK &amp; DESCENTE ZONE</strong>입니다. 10월 20일 공개된 공식 지도에는 수령 창구 외에 키오스크와 별도 안내데스크가 표시돼 있습니다.</p>
-<table>
-<thead><tr><th>지도 표시</th><th>찾을 곳</th></tr></thead>
-<tbody>
-<tr><td>A</td><td>배번호·레이스팩 수령</td></tr>
-<tr><td>B</td><td>키오스크존</td></tr>
-<tr><td>F</td><td>외국인·QR 미소지자 안내데스크</td></tr>
-<tr><td>G</td><td>잠스트 픽업</td></tr>
-<tr><td>S101</td><td>데상트 부스</td></tr>
-</tbody>
-</table>
-<p>QR을 준비하지 못했다면 지도의 <strong>F 안내데스크</strong> 위치를 먼저 확인하세요. 지도에 창구가 표시돼 있다는 사실이 QR 없이 즉시 수령할 수 있다는 뜻은 아닙니다. 개인별 수령 안내와 필요한 준비물을 확인한 뒤 방문하세요.</p>
-<p><img src="/images/blog/korea-running-expo-2026/hall-1.webp" alt="코리아러닝엑스포 2026 공식 1관 배치도. 배번호와 레이스팩 수령 A, 키오스크 B, 외국인·QR 미소지자 안내 F, 잠스트 픽업 G, 데상트 S101" width="1440" height="1800" loading="lazy" /></p>
-<p><small>자료: 코리아러닝엑스포 공식 계정, 2026년 10월 20일 공개한 HALL 1 배치도. 현장 배치는 바뀔 수 있습니다.</small></p>
-<p><strong>대리 수령은 개인별 QR코드로 가능</strong>하다는 것이 현재 대회 공지입니다. 다만 세부 방법은 10월 30일까지도 추후 안내로 남아 있습니다. 가족이나 지인에게 부탁할 때는 QR만 전달하고 끝내기보다, 최신 수령 공지에 추가 서류나 절차가 붙었는지 확인하세요.</p>
-
-<h2>2관: 공식 스폰서와 제마 굿즈를 한곳에서</h2>
-<p>2관은 <strong>JTBC SEOUL MARATHON OFFICIAL ZONE</strong>입니다. 지도에는 스폰서 11개와 공식 굿즈 구역 1개가 들어 있습니다. 1관의 데상트까지 포함한 전체 공식 안내는 스폰서 12개입니다.</p>
-<p>잠스트는 <strong>S204</strong>, 샥즈는 <strong>S209</strong>, 카스라이트는 <strong>S210</strong>입니다. 대회 공식 굿즈는 <strong>B207</strong>, 아치 포토월은 <strong>D</strong>로 표시돼 있습니다.</p>
-<p><img src="/images/blog/korea-running-expo-2026/hall-2.webp" alt="코리아러닝엑스포 2026 공식 2관 배치도. 스폰서 부스와 공식 굿즈 B207, 아치 포토월 D" width="1440" height="1800" loading="lazy" /></p>
-<p><small>자료: 코리아러닝엑스포 공식 계정, HALL 2 배치도.</small></p>
-<p>1관 지도에 있는 <strong>잠스트 픽업 G</strong>와 2관의 <strong>잠스트 부스 S204</strong>는 위치가 다릅니다. 증정 행사나 별도 신청 프로그램에 참여했다면, 해당 행사에서 지정한 수령 장소로 가세요.</p>
-
-<h2>3관: 나이키·미즈노·가민, 부스 번호로 찾아가세요</h2>
-<p>3관은 참여 브랜드 <strong>39개</strong>를 만나는 RUNNING EXPO ZONE입니다. 관심 브랜드를 몇 곳 골라 번호를 저장해 두면 현장에서 같은 구역을 반복해서 오가는 일을 줄일 수 있습니다.</p>
-<table>
-<thead><tr><th>브랜드</th><th>공식 배치도 부스 번호</th></tr></thead>
-<tbody>
-<tr><td>나이키</td><td>S337</td></tr>
-<tr><td>미즈노</td><td>S320</td></tr>
-<tr><td>가민</td><td>S338</td></tr>
-<tr><td>NESCL</td><td>S336</td></tr>
-<tr><td>보스</td><td>B305</td></tr>
-<tr><td>인바디</td><td>B304</td></tr>
-</tbody>
-</table>
-<p>코스 포토월은 <strong>C</strong>, 네임 포토월은 <strong>E</strong>입니다. 공식 스폰서를 찾는다면 2관, 위 브랜드들을 찾는다면 3관으로 구분하면 됩니다.</p>
-<p><img src="/images/blog/korea-running-expo-2026/hall-3.webp" alt="코리아러닝엑스포 2026 공식 3관 배치도. 참여 브랜드 39개와 나이키 S337, 미즈노 S320, 가민 S338 위치" width="1440" height="1800" loading="lazy" /></p>
-<p><small>자료: 코리아러닝엑스포 공식 계정, HALL 3 배치도.</small></p>
-<p>공식 계정이 확인해 준 판매 혜택은 데상트 이벤트 부스의 <strong>전 제품 30% 할인</strong>입니다. 10월 29~31일 코리아러닝엑스포 방문객이면 누구나 대상입니다. <a href="https://www.instagram.com/korearunningexpo/p/DfD75tFCRUz/" target="_blank" rel="noopener noreferrer">공식 안내</a></p>
-<p>부스가 있다는 것만으로 <strong>특정 신제품의 판매·시착이나 무료 증정</strong>이 확정되는 것은 아닙니다. 구매하거나 체험하고 싶은 제품이 있다면 방문 전에 그 브랜드의 엑스포 공지를 따로 확인하세요.</p>
-
-<h2>배번호만 받을 날과 엑스포를 즐길 날을 나눠 잡으세요</h2>
-<p><strong>수령이 우선이라면 1관부터</strong> 가는 동선이 간단합니다. 필요한 레이스팩을 받은 뒤 남은 시간에 2관 공식 스폰서, 3관 관심 브랜드를 둘러보세요. 토요일 20시 이후에 도착할 예정이라면 이번 방문은 레이스팩 수령 중심으로 계획해야 합니다.</p>
-<p><strong>부스 체험과 사진이 목적이라면 더 이른 도착</strong>이 필요합니다. 3관에서 보고 싶은 브랜드 번호와 2관 굿즈·포토월 위치를 미리 정해 두세요. 대기 시간과 프로그램별 종료 시각은 배치도에서 알 수 없으므로, 일반 운영 종료 직전에 여러 체험을 몰아 잡지 않는 편이 좋습니다.</p>
-<p>배번호를 받은 뒤에는 출발 그룹과 레이스 계획도 다시 확인하세요. 풀코스·10K의 그룹별 목표 기록은 <a href="/blog/jtbc-seoul-marathon-pacemaker-2026">2026 제마 공식 페이스메이커 표</a>에, 종목별 출발 정보는 <a href="/marathon/jtbc-seoul-marathon-2026">JTBC 서울마라톤 대회 페이지</a>에 정리했습니다.</p>
-
-<h2>자주 묻는 질문</h2>
-<div class="faq"><p class="faq-q">Q. 참가자가 아니어도 들어갈 수 있나요? 입장료가 있나요?</p><p class="faq-a">A. 일반 관람객도 무료로 입장할 수 있습니다. 다만 1관의 레이스팩 수령 구역은 참가자 QR코드가 있어야 들어갈 수 있습니다. <a href="https://www.setec.or.kr/front/schedule/view.do?sIdx=2259" target="_blank" rel="noopener noreferrer">SETEC 행사 일정</a>과 엑스포 공식 안내를 10월 27일 대조했습니다.</p></div>
-<div class="faq"><p class="faq-q">Q. 레이스팩을 택배로 받을 수 있나요?</p><p class="faq-a">A. 대회 공식 공지는 별도 택배 발송 없이 SETEC 1관 현장 수령만 진행한다고 안내합니다. 수령 일정은 10월 29~31일입니다.</p></div>
-<div class="faq"><p class="faq-q">Q. 토요일 23시까지 모든 부스가 열려 있나요?</p><p class="faq-a">A. 23시는 레이스팩 수령 마감입니다. 공식 계정의 10월 20일 안내상 토요일 전시 부스는 20시에 운영을 마칩니다.</p></div>
-
-<p><small>운영 시간은 공식 계정의 <a href="https://www.instagram.com/korearunningexpo/p/DfD4ggztofe/" target="_blank" rel="noopener noreferrer">10월 28일 레이스 팩 현장 수령 안내</a>에서 변경이 없음을 2026년 10월 30일 다시 확인했습니다. 일반 관람 무료 입장은 <a href="https://www.setec.or.kr/front/schedule/view.do?sIdx=2259" target="_blank" rel="noopener noreferrer">SETEC 공식 행사 일정</a>에서 2026년 10월 27일 확인했습니다. 출처: 코리아러닝엑스포 공식 계정의 <a href="https://www.instagram.com/korearunningexpo/p/DetaGKjCRu3/" target="_blank" rel="noopener noreferrer">10월 20일 운영·레이스팩 안내</a>, 같은 날 공개된 <a href="https://www.instagram.com/korearunningexpo/p/DetPpZDCSbB/" target="_blank" rel="noopener noreferrer">1관</a>·<a href="https://www.instagram.com/korearunningexpo/p/DetPoVIibsX/" target="_blank" rel="noopener noreferrer">2관</a>·<a href="https://www.instagram.com/korearunningexpo/p/DetPnW_CfgV/" target="_blank" rel="noopener noreferrer">3관 부스 배치도</a>, <a href="https://marathon.jtbc.com/17/?bmode=view&amp;idx=173732896" target="_blank" rel="noopener noreferrer">JTBC 서울마라톤 공식 레이스팩 수령 공지</a>. 2026년 10월 21일 본문과 배치도 이미지를 확인했습니다. 운영·부스 배치는 주최 측 사정에 따라 바뀔 수 있습니다.</small></p>
-`,
+    content: `<p><small>2026년 11월 10일 공식 원문 대조. 운영 계획과 실제 참가·발송·최종 기록을 구분합니다.</small></p>
+<p>코리아러닝엑스포 2026은 10월 29~31일 일정의 지난 행사다. <a href="https://www.setec.or.kr/front/schedule/view.do?sIdx=2259" target="_blank" rel="noopener noreferrer">SETEC 공식 전시 일정</a>과 <a href="https://marathon.jtbc.com/17/?bmode=view&amp;idx=173732896" target="_blank" rel="noopener noreferrer">JTBC 레이스팩 공지</a>를 구분해 운영 계획을 보관한다. 지금 현장 방문이나 부스 혜택을 받을 수 있다는 권유는 종료 시제로 갱신했다.</p>
+<h2>당시 전시 시간</h2><table><thead><tr><th>2026 날짜</th><th>SETEC 안내</th></tr></thead><tbody><tr><td>10월 29·30일</td><td>12:00~20:00</td></tr><tr><td>10월 31일</td><td>10:00~20:00, 1전시실은 23:00까지 운영 예정</td></tr></tbody></table><p>장소는 1~3전시실, 주최는 러너블이다. 일반 관람객과 JTBC 서울마라톤 참가자 모두 무료 입장으로 안내했다. 토요일 1전시실 연장 문구가 있어 전 공간이 같은 시간에 닫는다고 요약하지 않았다.</p>
+<h2>전시 관람과 레이스팩 수령은 다르다</h2><p>전시장은 브랜드·제품을 보는 공간이고 대회 레이스팩은 등록 참가자의 배번호 등을 수령하는 절차다. 전시 무료 입장권이 마라톤 참가권이 되는 것은 아니다. 당시 수령 대상·본인 확인·대리 수령 조건은 레이스팩 공지로 확인해야 했다.</p>
+<p>현재 남아 있는 전시장 일정이나 배치도가 미수령 물품을 계속 받을 수 있다는 뜻도 아니다. 기념품·배번호 문의가 남았다면 주최의 공식 문의 경로에서 참가 종목·배번호와 미수령 항목을 구분해 확인해야 한다. 개인 물품 지급·환불을 대신 처리한 글은 아니다.</p>
+<h2>예상 규모를 실제 방문객으로 바꾸지 않았다</h2><p>SETEC 소개의 마라톤 참가자 약 4만 명·동반객 포함 5만 명 이상은 사전 예상 규모다. 실제 입장·고유 방문자 집계나 구매 실적으로 확인한 숫자가 아니다. 종료 후 성과를 쓸 때는 주최의 별도 실적 발표가 필요하다.</p>
+<h2>부스 행사 문구는 재사용 전에</h2><p>과거 시착·뽑기·기념품·선착순 혜택은 날짜·물량·제품 옵션이 붙은 개별 행사였다. 같은 브랜드의 이름이 다음 엑스포에 보여도 같은 혜택을 준다고 볼 수 없다. 기존 부스 지도를 최신 행사 지도처럼 재사용하지 말고 해당 연도 원문을 읽어야 한다.</p>
+<h2>지금 제마 참가자가 확인할 후속</h2><p><a href="https://marathon.jtbc.com/17/?bmode=view&amp;idx=175403224" target="_blank" rel="noopener noreferrer">11월 3일 제마 기록 공지</a>는 기록 문의를 11월 20일까지, 최종 순위를 11월 27일 발표 예정으로 안내한다. 엑스포 방문 계획을 다시 세우기보다 본인 기록·물품 문의처럼 남은 절차를 확인할 때다. <a href="/blog/jtbc-seoul-marathon-pacemaker-2026">페이서·완주 후 기록 안내</a>에서 정리한 기한을 함께 볼 수 있다.</p>
+<p>2027 엑스포 장소·부스·운영 시간을 이번 대조에서 확인한 것은 아니다. 2026 일정과 예상 규모를 다음 해 행사 공고로 자동 이월하지 않는다.</p>
+<h2>자주 묻는 질문</h2><h3>지금 엑스포에 갈 수 있나요?</h3><p>이 글은 2026년 10월 29~31일 지난 행사 안내 기록입니다. 현재 방문 가능한 일정으로 안내하지 않습니다.</p><h3>토요일에는 모든 관이 23시까지였나요?</h3><p>SETEC 안내는 10:00~20:00이며 1전시실만 23:00까지 운영 예정이라고 적었습니다. 모든 전시실 연장으로 확대하지 않습니다.</p><h3>5만 명이 실제 방문했나요?</h3><p>SETEC의 5만 명 이상은 동반객을 포함한 예상 규모입니다. 실제 방문 실적 집계로 확인하지 않았습니다.</p><h3>전시 입장만으로 마라톤 참가권이 생기나요?</h3><p>무료 전시 관람과 등록 참가자의 레이스팩 수령은 다른 절차입니다. 입장 자체가 마라톤 출전권이나 현재 미수령 물품 수령을 보장하지 않습니다.</p>`,
   },
   {
     id: "busan-runfesta-postponed-bukangi-2026",
@@ -1376,85 +1330,61 @@ export const posts_2026_10: BlogPost[] = [
 <h2>자주 묻는 질문</h2><h3>서울·공주·경주를 뛰기만 하면 모두 런저니 대상인가요?</h3><p>공식은 2026 서울을 완주한 런저니 레이스 참가자가 공주·경주의 10km 이상 코스를 모두 완주하는 조건으로 안내합니다. 별도 참가 자격과 완주 인정을 구분해야 합니다.</p><h3>경주 런저니존 입장 기준은 무엇이었나요?</h3><p>10월 13일 공식 공지는 배번호 하단 2026 RUN JOURNEY 표시를 확인한다고 안내했습니다. 당시 현장 서비스 기록이며 현재 운영 안내가 아닙니다.</p><h3>지금 미수령 메달을 배송받을 수 있나요?</h3><p>이번에 읽은 공식 원문에서 행사 종료 뒤 추가 배송·재각인 조건을 확정하지 못했습니다. 본인의 신청·완주·수령 자료로 사무국에 가능한 조치를 확인해야 합니다.</p><h3>2027년에도 같은 조건인가요?</h3><p>2026 프로그램의 규정을 다음 시즌 확정 조건으로 옮기지 않았습니다. 부문·거리·메달과 서비스는 2027 공식 공지를 별도로 확인해야 합니다.</p>`,
   },
   {
-    id: 'jtbc-seoul-marathon-pacemaker-2026',
-    slug: 'jtbc-seoul-marathon-pacemaker-2026',
-    title: '2026 JTBC 서울마라톤 페이스메이커 | 풀코스 65명·10K 7명, 그룹별 목표 기록표',
-    description: '2026 JTBC 서울마라톤 공식 페이스메이커가 공개됐습니다. 풀코스 A~H 8개 그룹의 목표 완주 기록과 배치 인원, 10K 35·40·50·60분 페이서를 정리했습니다. 풀코스 광화문·10K 상암 분리 출발과 대회 직전 바뀐 최종 코스 구간도 함께 확인하세요.',
-    thumbnail: '/images/blog/jtbc-seoul-marathon-pacemaker-2026.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-10-16',
-    updatedAt: '2026-10-30',
-    category: 'news' as const,
+    id: "jtbc-seoul-marathon-pacemaker-2026",
+    slug: "jtbc-seoul-marathon-pacemaker-2026",
+    title: "2026 JTBC 서울마라톤 페이스메이커 기록과 완주 후 문의: 11월 20일·27일",
+    description: "공식 페이서 발표는 풀 A~H 65명·10K 7명이었습니다. 현재 공개 기록은 참고용이며 기록 문의는 11월 20일까지, 최종 순위는 11월 27일 예정입니다. 배정 그룹과 실제 출발도 확인하세요.",
+    thumbnail: "/images/blog/verified-jtbc-seoul-marathon-pacemaker-2026-20261110.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-10-16",
+    updatedAt: "2026-11-10",
+    category: "news",
     readingTime: 5,
-    tags: ['JTBC 서울마라톤', '제마 페이스메이커', '페이스메이커', '출발그룹', '10K 페이서', '코리아러닝엑스포'],
-    faqs: [
-      { question: '2026 JTBC 서울마라톤 페이스메이커는 몇 명인가요?', answer: '공식 공개 기준 풀코스 A~H 8개 출발그룹에 총 65명, 10K에 7명입니다.' },
-      { question: 'JTBC 서브4 페이서는 어느 그룹에 있나요?', answer: '목표 완주 기록 4시간 페이서는 D그룹 5명과 E그룹 2명으로 안내됐습니다. D그룹 스페셜 페이서는 디어입니다. 페이서 배치표는 본인의 출발그룹을 바꾸는 안내가 아니므로 배정된 그룹 안에서 확인하세요.' },
-      { question: '10K 50분 페이스메이커는 어느 그룹에 있나요?', answer: 'B그룹 허인화, C그룹 홍성훈이 50분 목표 페이서로 공개됐습니다. 본인의 배정 그룹과 목표 시간을 함께 확인하세요.' },
-      { question: '풀코스 코스가 또 바뀌었나요?', answer: '네. 사무국이 대회 직전 공지로 청계천 반환 지점(고산자교 → 비우당교)과 피니시 직전 둔촌사거리 반환 왕복 구간을 변경했습니다. 출발·도착 지점과 총 거리 42.195km는 같습니다. 엑스포에서 받는 인쇄 책자의 코스·도착지 동선은 변경 전 기준이므로 공식 공지의 PDF와 GPX로 확인해야 합니다.' },
-      { question: '풀코스와 10K의 출발 장소가 같은가요?', answer: '다릅니다. 10월 12일 공식 코스 안내 기준 풀코스는 광화문광장 출발·올림픽공원 도착, 10K는 상암월드컵공원 출발·여의도공원 도착입니다. 두 종목 모두 집결 06:30, 출발 07:30으로 안내됐습니다.' },
+    tags: [
+      "JTBC 서울마라톤",
+      "제마 2026",
+      "페이스메이커",
+      "기록 문의",
+      "공식 기록",
+      "완주 후 안내"
     ],
-    content: `
-<div class="tldr"><span class="tldr-label">3줄 요약</span><ul>
-<li><strong>풀코스 페이스메이커는 총 65명입니다.</strong> A~H 8개 그룹에서 목표 완주 기록별로 배치됩니다.</li>
-<li><strong>같은 목표 기록도 출발그룹이 다릅니다.</strong> 예를 들어 4시간 페이서는 D·E그룹에 있으니 본인의 배정 그룹부터 확인하세요.</li>
-<li><strong>10K는 7명, 출발지는 상암입니다.</strong> 풀코스는 광화문광장에서 출발하므로 두 종목의 집결 장소를 구분해야 합니다.</li>
-</ul></div>
-
-<p><strong>2026 JTBC 서울마라톤 공식 페이스메이커가 공개됐습니다.</strong> 11월 1일 대회에서 풀코스는 A~H 8개 출발그룹에 65명, 10K는 7명이 배치됩니다.</p>
-<p>목표 완주 기록만 찾기 전에 배번호·참가자 안내에서 자신의 출발그룹을 먼저 확인하세요. 같은 3시간 또는 4시간 페이서가 여러 그룹에 나뉘어 있습니다. 아래 시간은 km당 페이스가 아니라 <strong>각 페이서의 목표 완주 기록</strong>입니다.</p>
-
-<h2>풀코스: 내 그룹에 어떤 목표 기록이 있나요?</h2>
-<table><thead><tr><th>출발그룹</th><th>목표 완주 기록 · 배치 인원</th><th>합계</th></tr></thead><tbody>
-<tr><td>A</td><td>2:49 · 2명</td><td>2명</td></tr>
-<tr><td>B</td><td>3:00 · 2명 / 3:10 · 2명 / 3:20 · 2명</td><td>6명</td></tr>
-<tr><td>C</td><td>3:00 · 1명 / 3:10 · 1명 / 3:20 · 2명 / 3:30 · 5명 / 3:40 · 2명</td><td>11명</td></tr>
-<tr><td>D</td><td>3:40 · 4명 / 3:50 · 4명 / 4:00 · 5명</td><td>13명</td></tr>
-<tr><td>E</td><td>3:50 · 2명 / 4:00 · 2명 / 4:10 · 3명 / 4:20 · 2명 / 4:30 · 2명</td><td>11명</td></tr>
-<tr><td>F</td><td>4:10 · 2명 / 4:30 · 2명 / 4:50 · 2명</td><td>6명</td></tr>
-<tr><td>G</td><td>4:10 · 2명 / 4:40 · 2명 / 4:50 · 2명</td><td>6명</td></tr>
-<tr><td>H</td><td>4:20 · 2명 / 4:30 · 2명 / 4:40 · 2명 / 5:00 · 4명</td><td>10명</td></tr>
-</tbody></table>
-<p><small>시간은 시:분. 공식 배치표를 옮겼으며 그룹별 합계는 표의 인원을 더한 값입니다. 전체 합계는 65명입니다.</small></p>
-<p>스페셜 페이서는 <strong>C그룹 3시간 30분 최혜인</strong>, <strong>D그룹 4시간 디어</strong>입니다. 위 배치 인원 안에 포함된 안내이며 별도로 더해 67명으로 세지 않습니다.</p>
-<p>서브4를 준비한다면 D·E그룹의 4시간 배치를, 4시간 30분을 목표로 한다면 E·F·H그룹의 배치를 확인할 수 있습니다. 다만 <strong>페이서 표는 출발그룹 변경 안내가 아닙니다.</strong> 본인 그룹 안에서 목표 시간과 맞는 배치를 찾으세요.</p>
-
-<h2>10K: 35·40·50·60분 페이서 7명</h2>
-<table><thead><tr><th>출발그룹</th><th>목표 완주 기록</th><th>페이스메이커</th></tr></thead><tbody>
-<tr><td>A</td><td>35분</td><td>김태권</td></tr>
-<tr><td>A</td><td>40분</td><td>이은석</td></tr>
-<tr><td>B</td><td>40분</td><td>김현한</td></tr>
-<tr><td>B</td><td>50분</td><td>허인화</td></tr>
-<tr><td>C</td><td>50분</td><td>홍성훈</td></tr>
-<tr><td>C</td><td>60분</td><td>최은석</td></tr>
-<tr><td>D</td><td>60분</td><td>신재현</td></tr>
-</tbody></table>
-<p>10K 공식 페이서는 골드러시 10K에서 선발됐습니다. 50분 목표는 B·C그룹에, 60분 목표는 C·D그룹에 나뉘어 있습니다. 페이서 이름과 본인 그룹을 함께 저장해 두면 대회 전 다시 찾기 편합니다.</p>
-<p><small>풀코스·10K 배치 출처: <a href="https://www.instagram.com/jtbc_seoul_marathon/p/DeiWEtln-ZS/" target="_blank" rel="noopener noreferrer">JTBC 서울마라톤 공식 페이스메이커 공개</a>. 캡션과 두 장의 공식 배치 이미지를 2026년 10월 16일 대조했습니다.</small></p>
-
-<h2>페이서를 찾기 전에 집결 장소부터</h2>
-<p>올해는 풀코스 출발지가 바뀌어 두 종목을 분리 운영합니다. 예전의 ‘전 종목 상암 출발’ 안내를 저장해 두었다면 이동 계획을 고쳐야 합니다.</p>
-<div class="callout warning"><span class="callout-icon">⚠️</span><div class="callout-body"><p class="callout-title">풀코스 최종 코스가 다시 바뀌었습니다</p><p>사무국이 대회 직전 공지로 <strong>청계천 반환 지점(고산자교 → 비우당교)</strong>과 <strong>피니시 직전 둔촌사거리 반환 왕복 구간</strong>을 변경했습니다. 출발·도착 지점과 총 거리 42.195km는 같습니다. <strong>엑스포에서 받는 인쇄 책자의 코스·도착지 동선은 변경 전 기준</strong>이니 <a href="https://marathon.jtbc.com/17/?bmode=view&idx=175312670" target="_blank" rel="noopener noreferrer">최종 코스 공지의 PDF</a>와 <a href="https://marathon.jtbc.com/17/?bmode=view&idx=175326651" target="_blank" rel="noopener noreferrer">공식 GPX</a>로 확인하세요. 같은 공지는 기록 측정 매트를 5km마다와 하프 지점에 두고, 풀코스 간식을 25K·30K·35K에 준다고 안내합니다.</p></div></div>
-<table><thead><tr><th>종목</th><th>출발·집결</th><th>도착</th></tr></thead><tbody>
-<tr><td>풀코스</td><td>광화문광장</td><td>올림픽공원</td></tr>
-<tr><td>10K</td><td>상암월드컵공원</td><td>여의도공원</td></tr>
-</tbody></table>
-<p>공식 코스 안내의 집결 시각은 <strong>06:30</strong>, 출발은 <strong>07:30</strong>으로 두 종목이 같습니다. 페이서 배치와 별개로 물품보관·출발구역 진입 등 최종 참가자 안내도 확인하세요.</p>
-<p><small>출처: 10월 12일 게시된 <a href="https://marathon.jtbc.com/17/?bmode=view&idx=175063425" target="_blank" rel="noopener noreferrer">JTBC 서울마라톤 공식 코스 안내</a>. 최신 대회 정보는 <a href="/marathon/jtbc-seoul-marathon-2026">JTBC 서울마라톤 대회 페이지</a>에서도 확인할 수 있습니다.</small></p>
-
-<h2>레이스팩 수령 때 함께 확인할 엑스포 소식</h2>
-<p>레이스팩은 택배 없이 <strong>SETEC 1관 현장</strong>에서 받습니다. 공식 수령 공지는 <strong>10월 29~30일 12:00~20:00, 31일 10:00~23:00</strong>으로 안내합니다. SETEC 주차장은 이용할 수 없으며, 개인 QR코드를 통한 대리 수령이 가능합니다. <a href="https://marathon.jtbc.com/17/?bmode=view&idx=173732896" target="_blank" rel="noopener noreferrer">공식 레이스팩 수령 공지</a></p>
-<p>잠스트 무릎보호대 증정은 <strong>10월 29일·30일 각각 선착순 5,000개</strong>로 안내된 행사였고, 10월 30일 20시로 기간이 끝났습니다.</p>
-<p>레이스팩 기본 구성품이 아니므로, 10월 31일에 레이스팩을 받으러 간다면 보호대는 기대하지 마세요. <a href="https://www.instagram.com/jtbc_seoul_marathon/p/DeiSER4H_iK/" target="_blank" rel="noopener noreferrer">공식 증정 행사 안내</a></p>
-
-<h2>대회 전 저장할 세 가지</h2>
-<ul>
-<li><strong>내 종목과 출발그룹:</strong> 풀코스·10K를 구분하고 배정된 그룹을 확인합니다.</li>
-<li><strong>내 그룹의 목표 기록과 페이서:</strong> 완주 목표에 맞는 배치를 표에서 찾습니다.</li>
-<li><strong>대회 당일 이동 경로:</strong> 풀코스는 광화문, 10K는 상암으로 이동하도록 준비합니다.</li>
-</ul>
-<p><small>페이스메이커 배치는 2026년 10월 16일 공식 공개 기준입니다. 이후 변동이나 현장 운영은 사무국의 최종 안내를 따르세요.</small></p>
-`,
+    faqs: [
+      {
+        "question": "65명·7명은 실제 완주 인원인가요?",
+        "answer": "10월 16일 발표한 페이스메이커 계획입니다. 풀 8개 그룹 65명, 10K 7명이며 실제 전원 출발·완주를 별도로 확인한 수치는 아닙니다."
+      },
+      {
+        "question": "지금 조회 기록이 최종인가요?",
+        "answer": "11월 3일 공식 공지는 현재 기록을 참고용으로 안내합니다. 문의는 11월 20일까지, 최종 순위 발표는 11월 27일 예정입니다."
+      },
+      {
+        "question": "40분 페이서를 따라 앞 그룹에 가도 되나요?",
+        "answer": "발표에 같은 목표의 페이서가 여러 그룹에 있었습니다. 배정 그룹보다 앞서 출발한 참가자는 기록을 제공하지 않는다는 사무국 안내를 확인해야 합니다."
+      },
+      {
+        "question": "기록 오류 문의에 무엇을 적나요?",
+        "answer": "주최는 성명·배번호·참가 종목·문의 내용을 함께 적고 GPS 등 참고 자료를 첨부할 수 있다고 안내합니다. 공식 러너블 QnA 경로로 직접 접수해야 합니다."
+      }
+    ],
+    content: `<p><small>2026년 11월 10일 공식 원문 대조. 운영 계획과 실제 참가·발송·최종 기록을 구분합니다.</small></p>
+<p>11월 1일 대회 전 페이스메이커 안내를, 완주 후 기록을 확인할 때 함께 읽는 자료로 갱신했다. <a href="https://marathon.jtbc.com/17/?bmode=view&amp;idx=175125736" target="_blank" rel="noopener noreferrer">10월 16일 공식 페이서 발표</a>는 풀 A~H 8개 그룹 65명, 10K 7명을 안내했다. 이 숫자는 발표한 운영 계획이며 실제 모든 페이서의 출발·완주를 이 글에서 확인한 수치는 아니다.</p>
+<h2>현재 공개 기록은 아직 참고용</h2><p><a href="https://marathon.jtbc.com/17/?bmode=view&amp;idx=175403224" target="_blank" rel="noopener noreferrer">11월 3일 사무국 공지</a>는 <a href="https://myresult.co.kr/177" target="_blank" rel="noopener noreferrer">2026 기록 조회 페이지</a>에 공개된 기록을 참고용으로 설명하며, <strong>기록 문의는 11월 20일까지, 최종 순위 발표는 11월 27일</strong>이라고 안내한다. 11월 10일 현재 다음 후속 절차를 확인할 수 있는 시점이다.</p>
+<p>배정 그룹보다 앞서 출발한 참가자는 기록이 제공되지 않는다고 명시한다. 출발·구간 기록이 없거나 이름·배번호·종목이 다르면 성명, 배번호, 참가 종목, 문의 내용을 정리해 공식 러너블 QnA로 접수하도록 안내한다. 개인 GPS 기록도 참고 자료로 첨부할 수 있다.</p>
+<h2>같은 40분 페이서도 그룹이 달랐다</h2><table><thead><tr><th>10K 발표 그룹</th><th>목표·페이서</th></tr></thead><tbody><tr><td>A</td><td>35분 김태권·40분 이은석</td></tr><tr><td>B</td><td>40분 김현한·50분 허인화</td></tr><tr><td>C</td><td>50분 홍성훈·60분 최은석</td></tr><tr><td>D</td><td>60분 신재현</td></tr></tbody></table><p>목표가 같아도 출발 그룹은 다르다. 페이서 이름과 목표 시간만 보고 앞 그룹으로 이동해도 된다는 뜻이 아니다. 공식 풀 스페셜 페이서는 C 3:30 최혜인, D 4:00 디어로 발표했다.</p>
+<h2>목표 시간과 본인 계측 기록은 별도</h2><p>페이서의 목표 완주 시간은 본인의 최종 계측 결과가 아니다. 출발 지연, 그룹, 중간 구간, 화장실·급수 정지 등을 확인하며 자신의 기록을 읽어야 한다. 사진이나 GPS만으로 기록 오류·실격 원인을 확정하기보다 해당 자료와 함께 사무국 판독을 요청하자.</p>
+<h2>기록을 복기할 때는 최종 코스를</h2><p><a href="https://marathon.jtbc.com/17/?bmode=view&amp;idx=175312670" target="_blank" rel="noopener noreferrer">10월 28일 최종 코스 공지</a>와 이어 공개한 공식 GPX가 있다. 인쇄 책자·이전 저장본과 최신 공지를 구분해 당시 경로를 확인해야 한다. 옛 경로와 개인 GPS를 비교해 측정 오류라고 바로 결론 내리지 말자.</p>
+<p>11월 20일 뒤 접수는 최종 순위에 반영되지 않을 수 있고 11월 27일 발표 뒤 변경이 어렵다는 안내도 있다. 이 두 날짜를 각각 기록해 두자. 개별 문의를 대신 제출하거나 독자의 결과를 확정한 글은 아니다.</p>
+<h2>자주 묻는 질문</h2><h3>65명·7명은 실제 완주 인원인가요?</h3><p>10월 16일 발표한 페이스메이커 계획입니다. 풀 8개 그룹 65명, 10K 7명이며 실제 전원 출발·완주를 별도로 확인한 수치는 아닙니다.</p><h3>지금 조회 기록이 최종인가요?</h3><p>11월 3일 공식 공지는 현재 기록을 참고용으로 안내합니다. 문의는 11월 20일까지, 최종 순위 발표는 11월 27일 예정입니다.</p><h3>40분 페이서를 따라 앞 그룹에 가도 되나요?</h3><p>발표에 같은 목표의 페이서가 여러 그룹에 있었습니다. 배정 그룹보다 앞서 출발한 참가자는 기록을 제공하지 않는다는 사무국 안내를 확인해야 합니다.</p><h3>기록 오류 문의에 무엇을 적나요?</h3><p>주최는 성명·배번호·참가 종목·문의 내용을 함께 적고 GPS 등 참고 자료를 첨부할 수 있다고 안내합니다. 공식 러너블 QnA 경로로 직접 접수해야 합니다.</p>`,
+    event: {
+      "name": "2026 JTBC 서울마라톤",
+      "startDate": "2026-11-01",
+      "location": {
+        "name": "서울",
+        "address": "서울특별시"
+      },
+      "organizer": "JTBC 서울마라톤 사무국",
+      "url": "https://marathon.jtbc.com/"
+    },
   },
   {
     id: "backyard-ultra-world-team-championship-2026",
