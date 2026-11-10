@@ -4523,91 +4523,44 @@ export const posts_2026_06: BlogPost[] = [
     ],
   },
   {
-    id: '2026-disney-run-incheon-virtual-run',
-    slug: '2026-disney-run-incheon-virtual-run',
-    title: '디즈니런 2026 인천 + 디즈니 버추얼런 최초 공개 | 6/11 티켓 오픈 — 토이스토리·모아나·주토피아 3색 버추얼런부터 10/24 인천까지',
-    description: '디즈니 버추얼런 2차(모아나) 티켓이 7월 9일(목) 오전 10시, 공식 홈페이지 대기열 방식으로 오픈됩니다 — 5km·4만원·선착순 5,000명, 완주 7/15~31, 메달 7/13부터 배송. 2025 여의도 1.5만 명을 모은 디즈니런은 10/24 인천으로 돌아오고, 버추얼런은 토이스토리·모아나·주토피아 3색으로 진행됩니다. 티켓 일정·참가비·완주 인증법까지 한 번에 정리했습니다.',
-    thumbnail: '/images/blog/2026-disney-run-incheon-virtual-run.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-06-05',
-    updatedAt: '2026-07-03',
-    event: {
-      name: '디즈니런 2026 인천',
-      startDate: '2026-10-24',
-      location: { name: '인천', address: '인천광역시' },
-      organizer: '디즈니런 코리아',
-      url: 'https://disneyrunincheon2026.com/',
-    },
-    category: 'news' as const,
-    readingTime: 6,
-    tags: ['디즈니런', '디즈니런 2026', '디즈니 버추얼런', '디즈니런 인천', '버추얼런', '러닝 이벤트', '토이스토리', '인천 마라톤'],
-    content: `
-<div class="deadline-strip">🎟️ <strong>2차(모아나)는 판매·완주 기간이 모두 끝났습니다</strong> — 티켓은 7월 9일(목) 오전 10시에 선착순 5,000명으로 풀렸고 완주 기간도 7월 31일로 종료됐습니다. 다음 회차를 노린다면 판매 방식이 <strong>대기열(큐)</strong>이라는 점, 1차(토이스토리)·2차 모두 오픈 직후 경쟁이 몰렸다는 점을 기억해두세요.</div>
-
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li>2025 여의도에서 1.5만 명을 모았던 <strong>디즈니런이 2026년 인천(상상플랫폼)으로</strong> 돌아옵니다 — 본 대회는 <strong>10월 24일(토)</strong></li>
-    <li>올해 처음으로 <strong>디즈니 버추얼런</strong>이 도입돼, <strong>토이스토리·모아나·주토피아 3색 테마</strong>로 어디서나 달릴 수 있습니다</li>
-    <li>버추얼런 1차(토이스토리)는 <strong>6/11(목) 티켓 오픈</strong>으로 시작됐습니다(공식 홈페이지 6/5·상세 6/9 공개). 이후 차수는 순차 진행</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">🏰</span>
-  <div class="callout-body">
-    <p class="callout-title">"Fun, Together!" — 디즈니런이 인천으로</p>
-    <p>2025년 여의도공원에서 약 1.5만 명이 참가하며 화제가 된 <strong>국내 첫 디즈니 테마 러닝</strong>이, 2026년에는 <strong>인천 상상플랫폼</strong>으로 무대를 옮겨 돌아옵니다. 여기에 올해는 시간과 장소에 구애받지 않고 즐기는 <strong>'디즈니 버추얼런'이 최초로 도입</strong>돼, 본 대회 전부터 디즈니 캐릭터와 함께 달릴 수 있게 됐습니다.</p>
-  </div>
-</div>
-
-<h2>① 디즈니 버추얼런 — 어디서나, 3색 테마 (최초 도입)</h2>
-<p>버추얼런은 <strong>정해진 기간 안에 원하는 장소에서 달리고 기록을 인증</strong>하는 방식입니다. 1차부터 3차까지 각기 다른 디즈니 캐릭터 테마로 진행됩니다.</p>
-<table>
-  <thead>
-    <tr><th>차수</th><th>테마</th><th>러닝 기간</th><th>티켓 오픈</th></tr>
-  </thead>
-  <tbody>
-    <tr><td><strong>1차</strong></td><td>토이 스토리</td><td>6/24(수) ~ 7/10(금)</td><td><strong>6/11(목)</strong></td></tr>
-    <tr><td><strong>2차</strong></td><td>모아나</td><td>7/15(수) ~ 7/31(금)</td><td>7/9(목)</td></tr>
-    <tr><td><strong>3차</strong></td><td>주토피아</td><td>8/12(수) ~ 8/24(월)</td><td>8/6(목)</td></tr>
-  </tbody>
-</table>
-<p>각 회차 <strong>거리는 5km 단일 종목, 참가비 4만원, 선착순 5,000명</strong>입니다. 완주 인증은 <strong>나이키 런 클럽·런데이 같은 러닝 앱에서 날짜·거리·기록이 나온 화면을 캡처해 공식 홈페이지에 업로드</strong>하는 방식이고, 인증하면 테마별 한정 메달·굿즈가 배송됩니다(2차 모아나는 <strong>7월 13일(월)부터 순차 배송</strong>). 장소는 <strong>"어디에서나!"</strong> — 한강이든 동네 공원이든 본인 코스에서 달리면 됩니다. 여름 더위를 감안하면 새벽·야간 러닝이 좋겠죠 → <a href="/blog/hot-weather-summer-running-safety-guide-korea">폭염 러닝 안전 가이드</a></p>
-<p><strong>2차(모아나) 티켓은 7월 9일(목) 오전 10시</strong>, 공식 홈페이지에서 <strong>대기열(큐) 방식</strong>으로 열립니다. 1차 토이스토리도 순식간에 경쟁이 몰렸던 만큼, 오픈 시각에 미리 접속해 대기하는 게 안전합니다. 결제 수단과 개인정보를 미리 준비해두면 대기열 통과 후 빠르게 신청할 수 있어요. 참고로 버추얼런 참가비는 <strong>4만원</strong>이며, 일부 블로그에 보이는 6.5만/8만원은 <strong>10월 인천 본 대회(5km·10km) 가격</strong>이니 혼동하지 마세요.</p>
-
-<h2>② 디즈니런 2026 인천 — 본 대회 (종목·참가비 공개)</h2>
-<ul>
-  <li><strong>장소</strong>: 인천 <strong>상상플랫폼</strong> (인천 중구 월미로, 내항 일대)</li>
-  <li><strong>일정</strong>: <strong>10월 24일(토)</strong></li>
-  <li><strong>종목</strong>: <strong>5km(곰돌이 푸·가족 친화)</strong> · <strong>10km(미키와 친구들·러닝 애호가)</strong></li>
-  <li><strong>참가비</strong>: 5km <strong>65,000원</strong> · 10km <strong>80,000원</strong> — 유니클로 한정판 티셔츠 + 완주 메달 포함</li>
-  <li><strong>티켓 오픈</strong>: <strong>8/31(월) 오전 10시, 선착순 1.5만 명</strong></li>
-</ul>
-<p>주최는 디즈니코리아·스포츠서울·블렌트이고, <strong>유니클로</strong>가 공식 머천다이즈 파트너로 한정 티셔츠를 제작합니다. 인천 러닝 코스가 궁금하다면 → <a href="/blog/incheon-unique-running-courses-7">인천 달리기 좋은 곳 7선</a>을 참고하고, 대회 일정은 <a href="/marathon/disney-run-incheon-2026">디즈니런 캘린더 페이지</a>에서도 확인할 수 있습니다.</p>
-
-<div class="callout warning">
-  <span class="callout-icon">🎟️</span>
-  <div class="callout-body">
-    <p class="callout-title">일정 한눈에 + 놓치면 안 될 날짜</p>
-    <ul>
-      <li><strong>6/5(금)</strong> — 공식 홈페이지 오픈(disneyrunincheon2026.com)</li>
-      <li><strong>6/9</strong> — 상세 정보 공개</li>
-      <li><strong>6/11(목)</strong> — 버추얼런 1차(토이스토리) 티켓 오픈</li>
-      <li><strong>8/31(월)</strong> — 디즈니런 2026 인천 본 대회 티켓 오픈</li>
-    </ul>
-    <p>2025 디즈니런이 인기로 빠르게 마감됐던 만큼, 원하는 차수·종목은 <strong>티켓 오픈일을 미리 알림 설정</strong>해두는 게 안전합니다.</p>
-  </div>
-</div>
-
-<h2>버추얼런, 처음이라면</h2>
-<p>버추얼런은 대회장에 가지 않고도 <strong>기간 내 정해진 거리를 달리고 앱·기록으로 인증</strong>하면 완주로 인정되는 형식입니다. 보통 <strong>참가 키트(메달·티셔츠·캐릭터 굿즈)</strong>가 제공돼, 기록보다 <strong>테마를 즐기고 굿즈를 모으는 재미</strong>가 큽니다. 가족·친구와 함께, 아이와 함께 부담 없이 즐기기 좋아 디즈니 테마와 잘 어울립니다.</p>
-
-<h2>마무리</h2>
-<p>2025년의 인기를 잇는 디즈니런이 <strong>버추얼런(여름) → 인천 본 대회(가을)</strong>로 한 해를 길게 채웁니다. 우선 6/11 토이스토리 버추얼런부터 챙기고, 10/24 인천 본 대회는 8/31 티켓 오픈을 기다리면 됩니다. 다른 가을 러닝 이벤트와 일정을 함께 짜려면 <a href="/marathon">마라톤 캘린더</a>를 참고하세요.</p>
-
-<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 대회 종목·참가비(5km 6.5만·10km 8만, 유니클로 티셔츠 포함)는 2026-06 공개분 기준입니다. 본 대회 코스 세부 경로·티켓은 8/31 오픈 시 확정되며, 버추얼런 잔여 좌석은 실시간으로 바뀝니다. 신청 전 공식 홈페이지(disneyrunincheon2026.com)와 디즈니코리아(@disneykorea)를 한 번 더 확인하세요. (2026-07-03 업데이트 — 버추얼런 2차 모아나 티켓 7/9 오픈·5km·완주 인증법 반영)</p>
-`,
+    id: "2026-disney-run-incheon-virtual-run",
+    slug: "2026-disney-run-incheon-virtual-run",
+    title: "디즈니 버추얼런 2026 인증 기록: 1~3차 기간·완주증과 경품 이벤트 구분",
+    description: "토이스토리·모아나·주토피아 3차 인증 기간은 모두 지났습니다. 앱 기록 제출·디지털 완주증과 SNS 경품 응모는 별개이며, 3차 러닝 인증 경품과 GPS 챌린지의 기간도 달랐습니다.",
+    thumbnail: "/images/blog/verified-2026-disney-run-incheon-virtual-run-20261110.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-06-05",
+    updatedAt: "2026-11-10",
+    category: "news",
+    readingTime: 4,
+    tags: [
+      "디즈니 버추얼런",
+      "러닝 인증",
+      "디지털 완주증",
+      "GPS 챌린지",
+      "경품 조건"
+    ],
+    content: `<p><small>2026년 11월 10일 공개 자료 대조. 공식 공지·FAQ와 주최 발표 또는 기업 답변을 담은 원보도를 구분해 읽었습니다. 지난 행사 안내입니다.</small></p>
+<p>디즈니 버추얼런은 현장 대회와 다른 절차다. <a href="https://www.disneyrunincheon2026.com/apply/info-renewal.php" target="_blank" rel="noopener noreferrer">공식 회차별 안내</a>의 2026년 1~3차 기간은 모두 지났으므로, 지금 새 티켓이나 인증 기회를 안내하지 않는다. 이미 참가한 러너가 자신의 회차·완주증·별도 경품 응모를 확인할 수 있도록 정리했다.</p>
+<h2>회차별 기본 인증 마감은 모두 18시</h2><table><thead><tr><th>2026 테마</th><th>러닝·기본 인증 기간</th><th>공지 참가비</th></tr></thead><tbody><tr><td>1차 토이스토리</td><td>6월 24일~7월 10일 18:00까지</td><td>40,000원</td></tr><tr><td>2차 모아나</td><td>7월 15일~7월 31일 18:00까지</td><td>40,000원</td></tr><tr><td>3차 주토피아</td><td>8월 12일~8월 24일 18:00까지</td><td>40,000원</td></tr></tbody></table><p>회차별 5,000명은 모집 계획이며 실제 인증 완료 인원으로 확인한 수치는 아니다. 패키지 발송 계획도 각각 6월 22일·7월 13일·8월 10일 이후 순차로 안내됐다. 예정 날짜만으로 개인 배송 완료를 단정하지 않는다.</p>
+<h2>패키지를 받는 것과 완주 인증은 다르다</h2><p><a href="https://www.disneyrunincheon2026.com/" target="_blank" rel="noopener noreferrer">공식 진행 FAQ</a>는 신청·패키지 수령 뒤 러닝 앱으로 대회 기간 내 5K를 달리고, 날짜·거리·기록이 보이는 캡처를 홈페이지 인증 화면에 제출하도록 설명한다. 조건을 충족하면 회차 콘셉트의 디지털 완주증을 다운로드하는 구조다. 굿즈를 받았거나 SNS에 러닝 사진을 올린 것만으로 홈페이지 인증이 끝나는 것은 아니다.</p><p>기간 외 기록은 인정하지 않는다고 적혀 있다. 현재 늦은 제출을 허용하는 별도 공지를 이번에 확인하지 못해 소급 인증·완주증 재발급을 약속하지 않는다. 기존 참가자는 자신의 신청·인증 화면과 실제 내려받은 파일을 대조해야 한다.</p>
+<h2>3차 기본 완주 인증과 경품 이벤트의 마감도 달랐다</h2><p><a href="https://www.disneyrunincheon2026.com/community/index01.php?abmode=view&amp;code=B5&amp;group=basic&amp;no=8142" target="_blank" rel="noopener noreferrer">3차 러닝 인증 경품 이벤트</a>는 8월12~19일, 공개 인스타그램 러닝 게시물·계정 팔로우·필수 해시태그 등 별도 조건을 안내했다. 기본 인증 마감인 8월 24일과 다르다. 전원 굿즈 제공이 아니라 추첨 이벤트였으며 실제 당첨·지급은 개인별 확인 대상이다.</p><p><a href="https://www.disneyrunincheon2026.com/community/index01.php?abmode=view&amp;code=B5&amp;group=basic&amp;no=8143" target="_blank" rel="noopener noreferrer">3차 GPS 챌린지</a>는 8월12~24일, GPS 아트 경로·거리·시간이 보이는 공개 게시물과 네이버폼 제출을 요구했다. 일반 완주증 인증이나 앞선 경품 게시물 하나로 세 절차가 모두 끝난다고 해석하면 안 된다. 이 글은 폼을 제출하거나 독자의 계정·당첨을 조회한 결과가 아니다.</p>
+<h2>현장 10K 계측과도 구분</h2><p>10월 24일 본 대회의 10K는 배번호 기록칩으로 넷타임을 재지만, 버추얼은 개인 앱 기록을 제출하는 방식이다. 동일한 공식 기록증·칩 계측 대회처럼 경력 증빙에 사용 가능한지는 제출받는 기관·대회의 조건을 별도로 확인해야 한다.</p><p>운영 문의는 <strong>070-4705-2009, 월~금 10:00~18:00</strong>, 점심 12:30~13:30이다. 회차·신청 내역·인증 화면을 정리해 문의하고, 과거 이벤트 링크를 다음 회차 진행의 근거로 삼지 말자.</p>
+<h2>자주 묻는 질문</h2><h3>3차 인증은 8월 19일까지였나요?</h3><p>기본 러닝·완주 인증은 8월 24일 18:00까지였고, 별도 러닝 인증 경품 이벤트는 8월 19일까지였습니다. GPS 챌린지도 별도 조건으로 운영됐습니다.</p><h3>SNS에 올리면 완주증도 자동 발급되나요?</h3><p>공식 FAQ는 홈페이지 인증 화면에 날짜·거리·기록이 보이는 앱 캡처를 제출하고 조건을 충족해야 디지털 완주증을 발급한다고 안내합니다. SNS 경품 응모와 구분해야 합니다.</p><h3>지금 늦게 제출할 수 있나요?</h3><p>2026년 1~3차 공지 인증 기간은 모두 지났습니다. 소급 인증을 허용한다는 최신 공지를 확인하지 못해 현재 처리나 재발급을 보장하지 않습니다.</p>`,
+    faqs: [
+      {
+        "question": "3차 인증은 8월 19일까지였나요?",
+        "answer": "기본 러닝·완주 인증은 8월 24일 18:00까지였고, 별도 러닝 인증 경품 이벤트는 8월 19일까지였습니다. GPS 챌린지도 별도 조건으로 운영됐습니다."
+      },
+      {
+        "question": "SNS에 올리면 완주증도 자동 발급되나요?",
+        "answer": "공식 FAQ는 홈페이지 인증 화면에 날짜·거리·기록이 보이는 앱 캡처를 제출하고 조건을 충족해야 디지털 완주증을 발급한다고 안내합니다. SNS 경품 응모와 구분해야 합니다."
+      },
+      {
+        "question": "지금 늦게 제출할 수 있나요?",
+        "answer": "2026년 1~3차 공지 인증 기간은 모두 지났습니다. 소급 인증을 허용한다는 최신 공지를 확인하지 못해 현재 처리나 재발급을 보장하지 않습니다."
+      }
+    ],
   },
   {
     id: "asics-gel-kayano-33-review",
