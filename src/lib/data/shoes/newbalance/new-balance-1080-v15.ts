@@ -15,6 +15,8 @@ export const shoe: Shoe = {
     '/images/shoes/newbalance/1080v15/top.webp',
     '/images/shoes/newbalance/1080v15/outsole.webp',
   ],
+  imageCaption: '1080v15 참고 사진입니다. 사진 속 제품의 정확한 품번·성별·폭은 미확인이므로 구매할 옵션과 구분하세요.',
+  imageSource: { title: '세대 확인: New Balance 공식 자료', url: 'https://www.newbalance.com/pd/1080v15/M10808E0-D-11.html' },
   category: '쿠션화',
   price: 209000,
   description: 'Infinion 슈퍼크리티컬 폼 구조의 1080 V15. 한국 남성2E NBPFGF701Y·4E NBPFGF701J, 여성D NBPFGF702O 정가209,000원. 확인한 대표SKU 기준.',

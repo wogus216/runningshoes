@@ -10,6 +10,8 @@ export const shoe: Shoe = {
   images: [
     '/images/shoes/nike/alphafly4/side.webp',
   ],
+  imageCaption: '알파플라이 4 남성 상용 모델 IU4686-002의 측면 사진입니다. 한국 판매 색상·사이즈·품번은 별도로 확인하세요.',
+  imageSource: { title: 'Nike 공식 상품 갤러리', url: 'https://www.nike.com/t/alphafly-4-mens-road-racing-shoes-EC33rkiZ' },
   category: '레이싱',
   price: 349000,
   noindex: true,

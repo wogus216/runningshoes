@@ -13,6 +13,8 @@ export const shoe: Shoe = {
       "/images/shoes/hoka/rocketX3/top.webp",
       "/images/shoes/hoka/rocketX3/outsole.webp"
     ],
+    imageCaption: "로켓 X 3 사진(1168724-WBLC)입니다. 다른 세대·품번·색상 사진과 구분하세요.",
+    imageSource: { title: "디자인 대조: HOKA 공식 상품", url: "https://vn.hoka.com/en/products/giay-chay-bo-unisex-hoka-rocket-x-3-1168724-wblc-white-bl" },
     category: "레이싱",
     price: 299000,
     description: "이중 PEBA · 날개형 전장 카본 구조의 로켓 X 3. 실험실 220g·힐/전족부 39.6/29.6mm. 한국 확인 정가 299,000원.",

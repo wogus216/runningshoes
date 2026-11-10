@@ -14,6 +14,8 @@ export const shoe: Shoe = {
       "/images/shoes/newbalance/scelitev6/angle.webp",
       "/images/shoes/newbalance/scelitev6/outsole.webp"
     ],
+    imageCaption: "SuperComp Elite v6 참고 사진입니다. 사진 속 제품의 정확한 품번·성별·폭은 미확인이므로 구매할 옵션과 구분하세요.",
+    imageSource: { title: "세대 확인: New Balance 공식 자료", url: "https://store.newbalance.co.jp/press/2026/p-73276" },
     category: "레이싱",
     description: "Infinion · Energy Arc 카본 · FANTOMFIT 구조의 SC Elite V6. RunRepeat 실험실 검체 190g·38.5/24.6mm. 한국 현재 정가 미확인.",
     oneliner: "Infinion · Energy Arc 카본 · FANTOMFIT · 190g (RunRepeat 실험실 검체)",

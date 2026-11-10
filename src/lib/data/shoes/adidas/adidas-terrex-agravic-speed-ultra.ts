@@ -7,6 +7,8 @@ export const shoe: Shoe = {
   brand: 'Adidas',
   name: '테렉스 아그라빅 스피드 울트라 2',
   image: '/images/shoes/adidas/agravicspeedultra/side.webp',
+  imageCaption: '테렉스 아그라빅 스피드 울트라 2 사진(HQ5066)입니다. 세대·품번을 구매할 옵션과 구분하세요.',
+  imageSource: { title: '디자인 대조: adidas 공식 상품', url: 'https://www.adidas.com/us/terrex-agravic-speed-ultra-2-trail-running-shoes/HQ5066.html' },
   category: '트레일',
   description: '2세대 Lightstrike Pro · X자 EnergyRods · Continental 구조의 테렉스 아그라빅 스피드 울트라 2. RunRepeat 실험실 검체 269g·30.7/30.6mm. 한국 현재 정가 미확인.',
   oneliner: '2세대 Lightstrike Pro · X자 EnergyRods · Continental · 269g (RunRepeat 실험실 검체)',

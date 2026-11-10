@@ -10,6 +10,8 @@ export const shoe: Shoe = {
     images: [
       "/images/shoes/hoka/cielox1/side.webp"
     ],
+    imageCaption: "2024년 출시된 씨엘로 X1 사진(1147910-CSSL)입니다. 구매할 제품의 세대·품번과 구분하세요.",
+    imageSource: { title: "HOKA 공식 원본 사진 · 1147910-CSSL", url: "https://dms.deckers.com/hoka/image/upload/1147910-CSSL_1.png" },
     category: "레이싱",
     description: "초대 2024 X1 이중 밀도 PEBA · 날개형 카본 · 강한 로커 구조의 씨엘로 X1. 실험실 249g·힐/전족부 39.8/30.3mm. 한국 현재 정가 미확인.",
     oneliner: "249g 실험실 무게 · 초대 2024 X1 이중 밀도 PEBA · 날개형 카본 · 강한 로커",

@@ -14,6 +14,8 @@ export const shoe: Shoe = {
       "/images/shoes/newbalance/1080v14/top.webp",
       "/images/shoes/newbalance/1080v14/outsole.webp"
     ],
+    imageCaption: "1080v14 참고 사진입니다. 사진 속 제품의 정확한 품번·성별·폭은 미확인이므로 구매할 옵션과 구분하세요.",
+    imageSource: { title: "세대 확인: New Balance 공식 자료", url: "https://store.newbalance.co.jp/press/2024/p-67892" },
     category: "쿠션화",
     description: "Fresh Foam X · 비플레이트 로커 구조의 1080 V14. 실험실 285g·힐/전족부 37/32.8mm. 한국 현재 정가 미확인.",
     oneliner: "285g 실험실 무게 · Fresh Foam X · 비플레이트 로커",
