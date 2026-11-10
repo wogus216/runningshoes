@@ -90,13 +90,9 @@ export const marchEvents: MarathonEvent[] = [
     status: '대회종료',
     isMajor: false,
     website: 'https://www.goyangmarathon.com',
-    description:
-      '고양시체육회·중앙일보·JTBC가 공동 주최하는 봄 하프마라톤(주관 러너블). 고양종합운동장을 출발해 일산신도시 일대(경의로·호수로)를 도는 평지 코스로 약 1.5만 명 규모입니다. 2026년 대회는 3/8(일) 종료. JTBC 서울마라톤(가을)과 함께 데상트가 후원하는 JTBC 러닝 시리즈로, 봄에 한 번만 열립니다.',
+    description: '고양시체육회·중앙일보·JTBC가 공동 주최하고 러너블이 주관한 2026년 봄 대회입니다. 하프·10K·5K가 고양종합운동장 일대에서 열렸으며, 하프는 경의로·섬말다리·호수로 등을 지났습니다.',
     courseInfo: {
-      terrain: '평지',
-      difficulty: '초보자',
-      courseDescription:
-        '고양종합운동장 출발·도착, 일산신도시 경의로·섬말다리·호수로를 잇는 평지 코스. 하프·10K·5K로 가족 참가에도 적합합니다.',
+      courseDescription: '주최 측 코스 공지상 고양종합운동장 사거리 출발, 고양종합운동장 도착입니다. 고양시 보도자료는 하프의 경의로·섬말다리·호수로, 10K의 호수로·고봉로·일산경찰서 사거리, 5K의 법곳IC 교차로 반환점을 안내합니다.',
     },
     raceInfo: {
       entryFees: [
@@ -104,9 +100,29 @@ export const marchEvents: MarathonEvent[] = [
         { distance: '10K', fee: 60000 },
         { distance: '5K', fee: 40000 },
       ],
-      expectedParticipants: 15000,
+      timeLimits: [
+        { distance: '하프', hours: 2, minutes: 30 },
+        { distance: '10K', hours: 1, minutes: 20 },
+        { distance: '5K', hours: 1, minutes: 0 },
+      ],
       startTime: '08:00',
     },
+    logistics: { publicTransport: '공식 당일 안내: 지하철 3호선 대화역 3번 출구에서 약 200m. 물품보관백과 배번호를 지참하도록 안내했습니다.' },
+    postRaceNote: '고양시의 2026년 3월 보도자료는 약 1만 5천 명 참가를 알렸습니다. 종목별 실제 출발·완주자 집계와는 구분합니다.',
+    factCheck: {
+      checkedAt: '2026-11-11',
+      sources: [
+        { title: '2026 공식 코스 공지', url: 'https://www.goyangmarathon.com/44/?bmode=view&idx=170284529' },
+        { title: '공식 접수처 참가비·종목별 컷오프', url: 'https://runable.me/product/3299?comp=2955' },
+        {
+          title: '고양시 2026 개최 결과·종목별 경유지',
+          url: 'https://www.goyang.go.kr/news/user/bbs/BD_selectBbs.do?q_bbsCode=1090&q_bbscttSn=20260309153116016&q_estnColumn1=All',
+        },
+        { title: '2026 당일 교통·준비물 공지', url: 'https://www.goyangmarathon.com/44/?bmode=view&idx=170284743' },
+      ],
+      note: '2026년 3월 개최분입니다. 공식 코스 공지·접수처·시 보도자료의 08:00 출발을 기준으로 정리했습니다. 난이도 등급과 전 구간 평지 판정은 근거가 없어 표시하지 않습니다.',
+    },
+    lastVerified: '2026-11-11',
   },
   {
     id: 'mbn-bluerace-geoje-2026',
@@ -124,40 +140,40 @@ export const marchEvents: MarathonEvent[] = [
     name: '2026 서울마라톤',
     date: '2026-03-15',
     month: '3월',
-    location: '서울 광화문광장',
+    location: '풀: 서울 광화문광장 · 10K: 잠실종합운동장',
     region: '서울',
     distances: ['풀코스', '10K'],
     status: '대회종료',
     isMajor: true,
     website: 'https://seoul-marathon.com',
-    description: '국내 최대 규모 마라톤 대회. 동아일보·서울시 주최.',
+    description: '서울특별시·동아일보·대한육상연맹이 공동 주최한 2026년 대회입니다. 풀코스는 광화문광장에서 잠실종합운동장으로, 10K는 잠실종합운동장 일대에서 진행됐습니다. 2026년 대회는 세계육상연맹 플래티넘 라벨 대회로 안내됐습니다.',
     courseInfo: {
-      terrain: '평지',
-      difficulty: '중급',
-      elevationGain: 60,
-      courseDescription: '광화문광장 출발 → 세종대로 → 한강변 → 잠실종합운동장 피니시',
-      certification: 'IAAF',
-      isLoopCourse: false,
+      courseDescription: '서울시 2026 교통통제 안내 기준, 풀코스는 광화문에서 도심·서울숲·잠실대교를 거쳐 잠실종합운동장 동문으로 향합니다. 10K는 광화문이 아닌 잠실종합운동장 일대에서 출발·도착합니다. 종목별 출발지가 다릅니다.',
     },
     raceInfo: {
       entryFees: [
-        { distance: '풀코스', fee: 100000 },
+        { distance: '풀코스 일반 패키지', fee: 100000 },
         { distance: '10K', fee: 80000 },
       ],
       timeLimits: [
         { distance: '풀코스', hours: 5, minutes: 0 },
         { distance: '10K', hours: 1, minutes: 30 },
       ],
-      aidStations: 8,
-      aidInterval: '약 5km마다',
-      expectedParticipants: 30000,
-      startTime: '08:00',
+      aidInterval: '2026년 3월 14일 공지: 풀은 매 5km 총 8개소, 10K는 5km 지점',
+      expectedParticipants: 40000,
+      startTime: '07:30',
     },
-    logistics: {
-      parking: '대회 당일 광화문 일대 교통통제, 대중교통 이용 권장',
-      publicTransport: '지하철 5호선 광화문역 2번 출구',
-      bagStorage: true,
+    factCheck: {
+      checkedAt: '2026-11-11',
+      sources: [
+        { title: '서울시 2026 출발 시각·장소·예정 규모', url: 'https://mediahub.seoul.go.kr/archives/2017411' },
+        { title: '주최사 2026 일반·골드 패키지 참가비', url: 'https://www.donga.com/news/Sports/article/all/20250519/131630640/2' },
+        { title: '서울시 2026 종목·제한시간', url: 'https://hangang.seoul.go.kr/www/eventMng/detail.do?evntSn=365&mid=538' },
+        { title: '2026 공식 종목별 급수대 공지', url: 'https://seoul-marathon.com/94/?bmode=view&idx=170393902' },
+      ],
+      note: '2026년 개최분입니다. 풀 10만원은 일반 패키지이며 주최사 접수 공고의 골드 패키지는 40만원이었습니다. 예상 규모 4만 명은 안내 인원으로 실제 완주자 수가 아닙니다. 누적 상승고도 60m·난이도 등급은 확인하지 못해 표시하지 않습니다. 공식 홈페이지의 현재 2027년 안내를 2026년 근거로 사용하지 않았습니다.',
     },
+    lastVerified: '2026-11-11',
   },
   {
     id: 'naepo-marathon-2026',
