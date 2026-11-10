@@ -164,88 +164,39 @@ export const posts_2026_07: BlogPost[] = [
 `,
   },
   {
-    id: 'mizuno-wave-rider-29-vs-30-comparison-2026',
-    slug: 'mizuno-wave-rider-29-vs-30-comparison-2026',
-    title: '미즈노 웨이브 라이더 29 vs 30 비교 | 30세대 대개편 — 그래도 29를 사야 하는 사람',
-    description:
-      '미즈노 웨이브 라이더 30이 한국 공식몰에 179,000원으로 올라왔습니다. 스택 +4~6mm, 질소 주입 슈퍼크리티컬 듀얼레이어 ENERZY NXT, 풀렝스 메시 Wave 플레이트 — 30세대 만에 가장 큰 개편입니다. 해외 평가는 BITR 전 항목 A Tier·RTR 9점대로 이례적으로 좋습니다. 그런데 토박스 실측 76.7mm가 검증된 29가 169,000원에 그대로 팔리고 있습니다. 누가 갈아타야 하고, 누가 29를 사야 하는지 정리했습니다.',
-    thumbnail: '/images/blog/mizuno-wave-rider-29-vs-30-comparison-2026.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-07-29',
-    category: 'review' as const,
-    readingTime: 10,
-    tags: ['웨이브 라이더 30', '웨이브 라이더 29', '미즈노', '데일리 러닝화', '세대 비교', 'ENERZY NXT'],
+    id: "mizuno-wave-rider-29-vs-30-comparison-2026",
+    slug: "mizuno-wave-rider-29-vs-30-comparison-2026",
+    title: "웨이브 라이더29 vs30 — 넓은 엄지 공간과 바뀐 로커·메시 Wave 비교",
+    description: "258/266g 검체와 앞코·바닥을 비교합니다. 29의 후족 Pebax계/30의 전장 폴리프로필렌 메시 구조, 한국 SKU 캐시와 개인핏을 나눕니다.",
+    thumbnail: "/images/shoes/mizuno/waverider29/side.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-07-29",
+    category: "review",
+    readingTime: 8,
+    tags: [
+      "라이더29",
+      "라이더30",
+      "원문 대조",
+      "핏"
+    ],
     content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>라이더 30은 시리즈 역대급 개편</strong>입니다 — 스택 42.5/34.5mm(힐 +4mm·전족 +6mm), 질소 주입 슈퍼크리티컬 층을 얹은 <strong>듀얼레이어 ENERZY NXT</strong>, 뒷굽에만 있던 플레이트를 <strong>풀렝스 메시 Wave 플레이트</strong>로 교체. 그런데 무게는 +8g(랩 실측 266g, 29는 258g)에 그쳤습니다</li>
-    <li>해외 평가는 이례적입니다 — <strong>Believe in the Run이 Design·Value·Performance 전 항목 A Tier</strong>, Road Trail Run 테스터 5인이 9.04~9.70점. 한국 정가는 <strong>179,000원</strong>(29보다 +1만원)입니다</li>
-    <li>다만 <strong>핏 평가가 리뷰어마다 정반대</strong>(BITR "좁다" vs RTR "하이볼륨")였고, 이후 게시된 RunRepeat 랩 토박스는 <strong>73.3mm</strong>로 평균 수준입니다(2026-10-23 기준). 토박스 <strong>76.7mm 실측이 검증된 29</strong>가 169,000원에 그대로 팔리는 지금, 발볼 넓은 러너의 답은 아직 29일 수 있습니다</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <p>웨이브 라이더는 미즈노가 30세대까지 끌고 온 대표 데일리 라인입니다. 29까지는 "검증된 착화감, 폼은 한 세대 뒤"라는 평가가 따라다녔는데, 30에서 그 약점을 정면으로 손봤습니다. 미즈노 라인 전체 지도는 <a href="/blog/mizuno-running-shoes-lineup-tier-guide-2026">미즈노 러닝화 계급도</a>에서, 슈퍼트레이너 쪽 신형은 <a href="/blog/mizuno-neo-vista-3-review-2026">네오 비스타 3 후기</a>에서 다뤘습니다.</p>
-</div>
-
-<h2>스펙 비교 — 표기 기준부터 다릅니다</h2>
-<table>
-  <thead><tr><th>항목</th><th>라이더 29 <em>(실측)</em></th><th>라이더 30 <em>(실측, 괄호는 공식)</em></th></tr></thead>
-  <tbody>
-    <tr><td>무게</td><td>258g</td><td><strong>266g</strong> (+8g · 공식 267g)</td></tr>
-    <tr><td>스택 (힐/전족)</td><td>37.5 / 29.2mm</td><td><strong>42.8 / 33.7mm</strong> (공식 42.5 / 34.5mm)</td></tr>
-    <tr><td>드롭</td><td>8.3mm</td><td>9.1mm (공식 표기는 29가 10mm → 30이 8mm)</td></tr>
-    <tr><td>미드솔</td><td>ENERZY NXT 단층</td><td><strong>듀얼레이어</strong> — 질소 주입 슈퍼크리티컬 NXT + EVA 베이스</td></tr>
-    <tr><td>플레이트</td><td>리어 플라스틱 Wave Plate</td><td><strong>풀렝스 폴리프로필렌 메시</strong> Wave Plate</td></tr>
-    <tr><td>어퍼</td><td>AIRmesh (통기 3/5)</td><td>엔지니어드 니트 (통기성 부족 지적 — BITR)</td></tr>
-    <tr><td>에너지 리턴</td><td>53.3% (힐 실측)</td><td>포어풋 50.6% (실측 · 29와 측정 부위 다름)</td></tr>
-    <tr><td>토박스</td><td><strong>76.7mm 실측</strong> (와이드급)</td><td>73.3mm 실측 (평균 73.2mm 수준)</td></tr>
-    <tr><td>가격</td><td>169,000원</td><td>179,000원</td></tr>
-  </tbody>
-</table>
-<p><small>※ 두 신발 모두 RunRepeat 랩 실측(남성 US 9) 기준이고, 30의 괄호 안은 미즈노 공식 발표 수치입니다(30 랩 수치는 2026-10-23 반영). 본문의 "스택 +4~6mm"는 공식 표기끼리 비교한 값으로, 29의 공식 스택 표기는 38.5/28.5mm였습니다.</small></p>
-
-<h2>무엇이 바뀌었나 — 사실상 다른 신발</h2>
-<p>세대 교체라기보다 재설계에 가깝습니다. 핵심은 세 가지입니다.</p>
-<p><strong>① 폼이 두 층이 됐습니다.</strong> 발에 닿는 위층은 질소를 주입한 슈퍼크리티컬 공정의 ENERZY NXT, 아래층은 더 단단한 ENERZY EVA 베이스입니다. 부드러움은 위에서, 플랫폼 안정은 아래에서 나눠 맡는 구조죠. 29의 단층 NXT는 에너지 리턴 실측 53.3%로 최신 폼 대비 약점이 뚜렷했는데, 30은 여기를 정조준했습니다. 슈퍼크리티컬 공정이 왜 중요한지는 <a href="/blog/running-shoe-midsole-foam-guide-2026">미드솔 폼 해설</a>에서 자세히 다뤘습니다.</p>
-<p><strong>② 플레이트가 풀렝스가 됐습니다.</strong> 29까지의 Wave 플레이트는 뒷굽에만 있는 플라스틱 조각이었습니다. 30은 앞까지 이어지는 폴리프로필렌 <strong>메시(그물망)</strong> 플레이트입니다. RTR 테스터의 표현이 정확합니다 — <em>"메시 기반 플레이트가 승자다: 지지, 유연성, 추진을 다 주면서 거칠지 않다."</em> 카본처럼 튕기는 게 아니라 발밑을 잡아주면서 굴려주는 쪽입니다. 플레이트 소재·형태별 차이는 <a href="/blog/running-shoe-plate-guide-2026">플레이트 해설</a> 참고.</p>
-<p><strong>③ 플랫폼이 넓고 높아졌습니다.</strong> 스택 +4~6mm에 더해 바닥 폭이 힐 +5mm, 미드풋 +15mm, 전족 +5mm 넓어졌습니다. 미드풋 +15mm는 체감이 큰 수치로, 착지 순간의 흔들림을 잡는 쪽으로 작용합니다. Doctors of Running이 안정성에 B+를 주며 "뉴트럴치고 마일드한 안정성 니즈까지 커버"라고 평가한 배경입니다.</p>
-
-<h2>평가 — 점수는 만장일치, 핏은 정반대</h2>
-<p>주행 평가는 드물게 일치합니다. BITR <strong>전 항목 A Tier</strong>("힐부터 토오프까지 버터처럼 매끄럽다"), RTR 5인 <strong>9.04~9.70점</strong>("탄력 있고, 반응하고, 앞으로 구르고 싶어 한다"), DOR "데일리로 페이스업까지 소화". $150(한국 179,000원)라는 가격까지 감안하면 가치 평가도 후합니다.</p>
-<p>문제는 핏입니다. 같은 신발을 두고 <strong>정반대 서술</strong>이 나왔습니다.</p>
-<ul>
-  <li><strong>BITR</strong> — "토박스가 좁고 로우볼륨, 앞으로 갈수록 테이퍼" → 반 사이즈 업 권장</li>
-  <li><strong>DOR</strong> — "전족·미드풋 볼륨 넉넉, 정사이즈"</li>
-  <li><strong>RTR</strong> — 오히려 "미드풋 하이볼륨이라 볼 좁고 낮은 발엔 홀드가 약하다", 약간 길게 나온다는 지적</li>
-</ul>
-<p>리뷰어 발 모양에 따라 갈린 것으로 보입니다. 이후 게시된 RunRepeat 랩 실측(2026-10-23 기준)은 토박스 <strong>73.3mm</strong>로 평균(73.2mm) 수준이고, 랩 본문도 "average fit"이라고 적었습니다. <strong>29의 76.7mm 실측보다는 3.4mm 좁습니다.</strong></p>
-
-<h2>누가 30으로 가고, 누가 29를 사야 하나</h2>
-<p><strong>30이 맞는 사람</strong>: 라이더의 착화감은 좋은데 폼이 아쉬웠던 기존 팬, 20km+ 롱런에서 전족 쿠션이 더 필요했던 러너, 이지런부터 프로그레션까지 한 켤레로 해결하고 싶은 중급 러너. 사실상 슈퍼트레이너급 스택을 데일리 가격에 얻는 셈입니다.</p>
-<p><strong>29가 여전히 답인 사람</strong>: <strong>발볼 넓은 러너</strong>(76.7mm 실측 + 4E 와이드 옵션 검증 — 30은 랩 토박스 73.3mm로 29보다 3.4mm 좁고, 와이드는 한국 공식몰에 SW(4E)가 있습니다. 2026-10-23 기준 신발 DB), 그리고 1만원이라도 아끼고 싶은 가성비파. 29는 800km+ 내구 실측으로 km당 211원이라는 계산이 이미 끝난 신발입니다. 29의 상대 비교는 <a href="/blog/mizuno-wave-rider-29-vs-nike-pegasus-42-daily-2026">페가수스 42와의 같은 값 대결</a>에서 다뤘습니다.</p>
-<p>참고로 한국 공식몰의 30은 7월 말 현재 확인된 컬러가 <strong>품절(재입고 알림 신청)</strong> 상태였습니다. 초기 물량이 빠르게 소진되는 분위기라, 급하지 않다면 재입고를 기다리는 것도 방법입니다.</p>
-<p>두 신발의 상세 스펙은 <a href="/shoes/mizuno-wave-rider-29">라이더 29</a>·<a href="/shoes/mizuno-wave-rider-30">라이더 30</a> 페이지에서, 같은 가격대 대안은 <a href="/shoes/nike-pegasus-42">페가수스 42</a>·<a href="/shoes/asics-novablast-6">노바블라스트 6</a>과 비교해 보세요.</p>
-
-<div class="callout warning">
-  <p><strong>확정되지 않은 것들</strong> — ① 라이더 30의 <strong>RunRepeat 랩 데이터는 이후 게시됐습니다</strong>(2026-10-23 기준 신발 DB): 무게 266g·스택 42.8/33.7mm·드롭 9.1mm·토박스 73.3mm·포어풋 에너지 리턴 50.6%. 내구성은 아직 추정치입니다 ② <strong>한국 와이드</strong>: 한국 공식몰에 SW(4E, 179,000원)가 있습니다(신발 DB 기준) ③ 핏 평가는 세 매체의 주관 착화 평가로 서로 상충합니다.</p>
-</div>
-
-<div class="faq">
-  <h2>자주 묻는 질문</h2>
-  <h3>발볼이 넓은데 30 사도 되나요?</h3>
-  <p>온라인 선구매는 권하지 않습니다. RunRepeat 랩 토박스는 73.3mm로 평균(73.2mm) 수준이지만 29(76.7mm)보다 3.4mm 좁습니다(2026-10-23 기준). 한국 공식몰의 SW(4E)나 반 사이즈 업까지 시착해 보시고, 시착이 어렵다면 76.7mm 실측과 4E 와이드가 검증된 29가 안전한 선택입니다.</p>
-  <h3>29는 이제 단종되나요?</h3>
-  <p>한국 공식몰에 29가 169,000원 현행 판매 중입니다. 통상 세대 교체 후에도 전 세대는 재고 소진까지 병행 판매되고, 할인이 붙으면 가성비가 더 좋아집니다. 급하지 않다면 29 할인을 노리는 것도 전략입니다.</p>
-  <h3>무릎이 약한데 어느 쪽이 낫나요?</h3>
-  <p>이론상으로는 스택이 4~6mm 높고 플랫폼이 넓어진 30이 착지 충격 분산에 유리합니다. RunRepeat 랩 충격흡수도 30이 힐 152 SA로 29(142 SA)보다 높습니다(2026-10-23 기준). 둘 다 무릎 부상 예방 등급은 '좋음'입니다.</p>
-  <h3>여름에 신어도 되나요?</h3>
-  <p>30의 니트 어퍼는 통기성 부족 지적(BITR)이 있습니다. 한여름 데일리가 주 용도라면 통기 실측이 확인된 다른 선택지를 권하고, 30은 봄가을·겨울 중심으로 쓰는 편이 낫습니다.</p>
-</div>
-
-<p><small>※ 라이더 30 스펙은 RunRepeat 랩 실측(2026-10-23 반영)과 미즈노 공식 발표(괄호), 평가는 Believe in the Run(A Tier)·Road Trail Run 멀티 테스터 5인(2026-06)·Doctors of Running 리뷰를 종합했습니다. 라이더 29 수치는 RunRepeat 랩 실측 기준입니다. 한국 정가 179,000원은 미즈노코리아 공식몰(kor.mizuno.com) 확인(2026-07-29), 확인 컬러는 품절·재입고 알림 상태였습니다. (작성 2026-07-29 · 랩 수치 갱신 2026-10-23)</small></p>
+<p><strong>2026-11-10 원문 대조 업데이트.</strong> 제조사 공시·실험실 검체·개인 착화 의견과 한국 상품 캐시를 구분합니다. 자체 착화 후기가 아닌 원문 기반 분석입니다.</p><h2>먼저 볼 차이</h2><p>29의 엄지76.7mm와30의73.3mm는 실제 표준 검체의 차이입니다. 이것만으로 모든 넓은 발에는29가 정답이라고 할 수는 없고 높이·길이·고정을 함께 확인해야 합니다.</p><p>Wave 구조도 달라집니다.29는 힐·중족 Pebax계,30은 전장 폴리프로필렌 메시 구조입니다. 둘을 모두 카본 추진판이라고 부르지 않습니다.</p><figure><img src="/images/shoes/mizuno/waverider29/side.webp" alt="라이더29 —30과 엄지 공간·로커·Wave 구조를 비교" loading="lazy"/><figcaption>라이더29 —30과 엄지 공간·로커·Wave 구조를 비교</figcaption></figure><div class="table-wrap"><table><thead><tr><th>모델</th><th>무게 · 공시 출처 별도 표기</th><th>스택·드롭 · 공시 출처 별도 표기</th><th>힐/전족 SA</th><th>힐/전족 리턴</th></tr></thead><tbody><tr><td>mizuno-wave-rider-29</td><td>258g</td><td>37.5/29.2mm · 8.3mm</td><td>142/116</td><td>53.3/55.8%</td></tr><tr><td>mizuno-wave-rider-30</td><td>266g</td><td>42.8/33.7mm · 9.1mm</td><td>152/127</td><td>49.4/50.6%</td></tr></tbody></table></div><p>표의 값은 RunRepeat 검체 또는 별도 표시한 DOR 소개 공시입니다. DOR 소개는 독립 실측이 아닙니다. 일반 정책은 남성 US9지만 개별 라벨·폭·보정 여부는 미확인입니다. 공시와 동일한 검체로 단정하지 않습니다. SA는 충격흡수, 리턴은 시험에서 반환된 에너지 비율이며 부드러움·개인 기록·임상 보호를 뜻하지 않습니다. HA는 구방식, AC는 별도 경도 척도여서 환산하지 않습니다. <a href="https://runrepeat.com/testing-methodology" target="_blank" rel="noopener noreferrer">RunRepeat 측정법</a></p><h2>신형의 숫자 다음에 볼 어퍼와 전환</h2><p>29 DOR Matt는 넓은 앞발·좋은 고정을 느꼈지만 더운 환경에서 두꺼운 어퍼가 더웠습니다.30에서도 개인의 앞코 높이·끈 조임·뒤쪽 고정이 맞는지 살펴볼 수 있습니다. 매체의 넓다·좁다라는 말을 하나의 평균 핏으로 합치지 않습니다.</p><p>29가 지금169,000원에 전사이즈 판매되고30보다1만원 저렴하다는 동시점 확정,800km 수명·한국4E 보장, 재확인하지 못한 매체 점수 만점 주장을 선택 근거로 반복하지 않습니다.</p><h2>라이더29 — 핏과 주행에서 갈리는 지점</h2><p>힐·중족의 Pebax계 Wave Plate는 카본 레이싱 플레이트가 아닙니다.</p><p>RR 내부 최광폭 94.6mm·엄지 76.7mm·높이 28.3mm입니다. 다른 위치인 외부 바닥 폭과 구분하고 실제 규격에서 길이·높이·고정을 확인하세요.</p><p>DOR Matt(남성 US10)는 늘어나는 넓은 앞발과 좋은 힐 고정을 느꼈지만80~90°F 조건에서는 두꺼운 어퍼가 더웠습니다. 부드럽고 반응성 있는 데일리 전환은 좋았으나 이전 라이더보다 중립적이고 본인에게 덜 안정적이었습니다.</p><h2>라이더29 — 공시·한국 판매 확인 범위</h2><p>DOR 소개258g(남성 US9)/218g(여성 US8)·38/28mm·10mm, RR258g·37.5/29.2mm·8.3mm, RR 재전재 브랜드265/226g(사이즈 미확인)·39/29mm·10mm를 구분합니다.</p><p>한국 공식 캐시: J1GC250353 성별 표기 미확인 폭 미확인 소비자가169,000원·판매캐시135,200원. 현재 가격·폭별 선택 재고는 미확인입니다. 공통 SOLD OUT 템플릿과 장바구니 버튼을 실제 재고로 보지 않으며 검색 미발견을 단종·미출시로 단정하지 않습니다.</p><p>엄지76.7mm를 모든 넓은 한국 발의 최적 핏이나 한국4E 판매 보장으로 바꾸지 않습니다. RR의 중립 안정감과 Matt의 덜 안정적인 체감은 다른 근거입니다.800km·겨울34%경화·질환별 보호를 이번 원문으로 반복하지 않습니다.</p><h2>라이더30 — 핏과 주행에서 갈리는 지점</h2><p>전장 Wave Plate. 이번 확인한 공식 상세에서 정확한 판재 소재는 미확인으로, 기존 폴리프로필렌 확정 표현을 철회합니다. 카본으로 단정하지 않습니다.</p><p>RR 내부 최광폭 95.3mm·엄지 73.3mm·높이 25.0mm는 한국 4E 검체의 치수가 아닙니다. 2E·4E 상품명만으로 모든 넓은 발에 맞는다고 보장하지 않습니다.</p><p>DOR David(남성 US9.5)는 정사이즈, 힐·중족·전족에 약간 여유와 앞쪽 볼륨을 느꼈습니다. 자카드 메시·패딩 많은 혀와 힐의 고정을 좋아했고 부드럽고 튀는 느낌, 중족 전환의 약한 slap 감각을 적었습니다. RR의 낮은 기계 에너지 리턴과 개인의 탄력 체감을 같은 지표로 합치지 않습니다.</p><h2>라이더30 — 공시·한국 판매 확인 범위</h2><p>한국 공시 한쪽 약 265g(남성 27cm)·230g(여성 24.5cm), 42.5/34.5mm·8mm입니다. DOR 남성 US9 소개는 9.4oz이며 그램 칸은 비어 있어 임의 보정하지 않습니다. RR 266g·42.8/33.7mm·9.1mm와 조건을 구분합니다.</p><p>한국 남성 J1GM262051·여성 J1GW262071은 보통(2E), 남성 SW J1GM262151은 넓음(4E)이며 확인 상품 정가는 모두 179,000원입니다. 남성 기본은 250~295mm·310mm, 여성은 235/245/250/255mm, 남성 SW는 250~270mm·310mm가 선택 가능이었습니다. 다른 색상·여성 4E 재고는 별도 미확인입니다.</p><p>33.7AC·보조 31.0AC의 정확한 층 위치는 미확인입니다. 1.6mm 국소 마모와 토박스 1/5 시험을 700km 수명으로 환산하지 않습니다. 제조년월은 출시일이 아닙니다.</p><h2>구매 전에 실제로 확인할 것</h2><p>평소 양말·인솔로 앞쪽 길이와 발톱 위 공간, 끈을 조였을 때 발등 압박, 힐 고정과 칼라 마찰을 확인하세요. 발볼 너비 하나로 전체 핏을 결정하지 않습니다. 교환·반품 조건도 먼저 확인할 수 있습니다.</p><p>트레일에서는 자신의 주요 노면과 오르막·내리막·방향 전환에서 고정과 전환을 살펴야 합니다. 젖은 콘크리트 시험 하나가 바위·진흙 접지를 보장하지 않습니다. 통증·저림을 견뎌야 한다는 규칙이나 모델별 질환 예방 효과는 이번 자료로 확인하지 못했습니다.</p><h2>확인한 원문과 접근 범위</h2><ul><li><a href="https://kor.mizuno.com/product/wave-rider-29/11351/" target="_blank" rel="noopener noreferrer">한국 공식 J1GC250353</a> — 캐시 today; No explicit product sold-out image verified; template SOLD OUT not stock proof; 현재 가격·선택 재고 미확인.</li><li><a href="https://runrepeat.com/mizuno-wave-rider-29" target="_blank" rel="noopener noreferrer">라이더29 RR 원문</a> — 정확 모델 검체. 제조사 공시와 분리.</li><li><a href="https://www.doctorsofrunning.com/mizuno-wave-rider-29-review-2025/" target="_blank" rel="noopener noreferrer">라이더29 DOR 원문</a> — 소개 공시·실제 착화 사이즈·개인의견 구분.</li><li><a href="https://kor.mizuno.com/product/detail.html?product_no=12025&amp;cate_no=803&amp;display_group=1" target="_blank" rel="noopener noreferrer">한국 J1GM262051 · 보통(2E)</a> — 확인 상품 정가 179,000원. 사이즈별 상태는 본문 참조.</li><li><a href="https://kor.mizuno.com/web/product/26aw_detail_page/J1GM262051-D.jpg" target="_blank" rel="noopener noreferrer">J1GM262051 공식 상세 이미지</a> — 폭·한쪽 무게의 기준 사이즈와 높이 확인. 제조년월은 출시일 아님.</li><li><a href="https://kor.mizuno.com/product/detail.html?product_no=12072&amp;cate_no=821&amp;display_group=1" target="_blank" rel="noopener noreferrer">한국 J1GW262071 · 보통(2E)</a> — 확인 상품 정가 179,000원. 사이즈별 상태는 본문 참조.</li><li><a href="https://kor.mizuno.com/web/product/26aw_detail_page/J1GW262071-D.jpg" target="_blank" rel="noopener noreferrer">J1GW262071 공식 상세 이미지</a> — 폭·한쪽 무게의 기준 사이즈와 높이 확인. 제조년월은 출시일 아님.</li><li><a href="https://kor.mizuno.com/product/detail.html?product_no=12034&amp;cate_no=803&amp;display_group=1" target="_blank" rel="noopener noreferrer">한국 J1GM262151 · 넓음(4E)</a> — 확인 상품 정가 179,000원. 사이즈별 상태는 본문 참조.</li><li><a href="https://kor.mizuno.com/web/product/26aw_detail_page/J1GM262151-D.jpg" target="_blank" rel="noopener noreferrer">J1GM262151 공식 상세 이미지</a> — 폭·한쪽 무게의 기준 사이즈와 높이 확인. 제조년월은 출시일 아님.</li><li><a href="https://runrepeat.com/mizuno-wave-rider-30" target="_blank" rel="noopener noreferrer">라이더30 RR 원문</a> — 정확 모델 검체. 제조사 공시와 분리.</li><li><a href="https://www.doctorsofrunning.com/mizuno-wave-rider-30-review/" target="_blank" rel="noopener noreferrer">라이더30 DOR 원문</a> — 소개 공시·실제 착화 사이즈·개인의견 구분.</li></ul>
 `,
+    updatedAt: "2026-11-10",
+    faqs: [
+      {
+        "question": "넓은 발이면29가 무조건 낫나요?",
+        "answer": "엄지 부위 수치 외 길이·높이·중족 고정이 다릅니다. 개인 적합성을 하나의 너비로 정하지 않습니다."
+      },
+      {
+        "question": "Wave는 카본인가요?",
+        "answer": "29는Pebax계 후족/중족,30은 폴리프로필렌 메시 구조로 확인했습니다. 카본 레이싱판과 구분합니다."
+      },
+      {
+        "question": "현재1만원 차이인가요?",
+        "answer": "29의 현재 한국 구매가는 미확인이고30도 확인한SKU·시점 조건이 있습니다. 동시점 차이로 고정하지 않습니다."
+      }
+    ],
   },
   {
     id: 'salomon-genesis-2-preview-2026',
@@ -1123,89 +1074,39 @@ export const posts_2026_07: BlogPost[] = [
 `,
   },
   {
-    id: 'mizuno-wave-rider-29-vs-nike-pegasus-42-daily-2026',
-    slug: 'mizuno-wave-rider-29-vs-nike-pegasus-42-daily-2026',
-    title: '미즈노 웨이브 라이더 29 vs 나이키 페가수스 42 — 같은 값 17만원, 내구냐 반발이냐',
-    description:
-      '똑같이 169,000원인 데일리 트레이너, 미즈노 웨이브 라이더 29와 나이키 페가수스 42를 정면 비교합니다. 라이더 29는 800km 내구·258g 경량의 가성비 끝판왕, 페가수스 42는 검증된 반발·범용성의 만능형입니다. 같은 값에서 무엇을 얻는지 한국 러너 관점으로 갈랐습니다.',
-    thumbnail: '/images/blog/mizuno-wave-rider-29-vs-nike-pegasus-42-daily-2026.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-07-25',
-    category: 'review' as const,
+    id: "mizuno-wave-rider-29-vs-nike-pegasus-42-daily-2026",
+    slug: "mizuno-wave-rider-29-vs-nike-pegasus-42-daily-2026",
+    title: "라이더29 vs 페가수스42 — 같은값·수명 경쟁 대신 앞코·드롭·Air 전환 비교",
+    description: "RR258/286g·드롭8.3/14mm를 비교합니다. 라이더 엄지 공간·Wave와 페가수스 ReactX·Air, 한국 와이드 표기 조건을 나눕니다.",
+    thumbnail: "/images/shoes/mizuno/waverider29/side.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-07-25",
+    category: "review",
     readingTime: 8,
-    tags: ['미즈노 웨이브 라이더 29', '나이키 페가수스 42', '데일리 트레이너', '가성비 러닝화', '러닝화 비교', '내구성'],
+    tags: [
+      "라이더29",
+      "페가수스42",
+      "원문 대조",
+      "핏"
+    ],
     content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>가격이 똑같이 169,000원</strong> — <a href="/shoes/mizuno-wave-rider-29">웨이브 라이더 29</a>와 <a href="/shoes/nike-pegasus-42">페가수스 42</a>는 같은 값 데일리 트레이너지만, 라이더는 800km 내구·258g 경량, 페가수스는 반발·범용성이 강점</li>
-    <li><strong>오래 신는 가성비면 라이더 29</strong>(km당 211원, 내구 최상위). <strong>검증된 반발과 무난함이면 페가수스 42</strong>(쿠션 8·반발 7)</li>
-    <li>둘 다 <strong>와이드(2E)</strong>가 있어 발볼 넓은 한국 러너도 안심이고, 안정성·무릎 보호는 동급입니다</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <p><strong>한 줄 결론.</strong> "한 켤레를 최대한 오래, 저렴하게"면 <a href="/shoes/mizuno-wave-rider-29">웨이브 라이더 29</a>, "반발 좋고 검증된 무난함"이면 <a href="/shoes/nike-pegasus-42">페가수스 42</a>입니다. 페가수스 세대 변화는 <a href="/blog/nike-pegasus-41-vs-42-comparison">페가수스 41 vs 42</a>, 예산별 전체 그림은 <a href="/blog/running-shoes-recommend-by-price-2026">가격대별 추천</a>을 참고하세요.</p>
-</div>
-
-<h2>두 켤레 한눈에 보기</h2>
-<table>
-  <thead><tr><th>항목</th><th>미즈노 웨이브 라이더 29</th><th>나이키 페가수스 42</th></tr></thead>
-  <tbody>
-    <tr><td>가격(한국)</td><td>169,000원</td><td>169,000원</td></tr>
-    <tr><td>무게</td><td><strong>258g</strong></td><td>286g</td></tr>
-    <tr><td>스택(힐/전족)</td><td>37.5 / 29.2mm</td><td>37 / 27mm</td></tr>
-    <tr><td>드롭</td><td>8.3mm</td><td>10mm 공식 <em>(실측 14mm)</em></td></tr>
-    <tr><td>미드솔</td><td>Enerzy NXT</td><td>ReactX + 풀렝스 Air Zoom</td></tr>
-    <tr><td>쿠션 / 반발</td><td>7 / 6</td><td><strong>8 / 7</strong></td></tr>
-    <tr><td>안정성</td><td>7</td><td>7</td></tr>
-    <tr><td>발볼 / 와이드</td><td><strong>넓음 (랩 76.7mm)</strong> / <strong>2E 있음</strong></td><td>좁음 (랩 72.3mm) / <strong>2E 있음</strong></td></tr>
-    <tr><td>내구 / km당</td><td><strong>800km / 약 211원</strong></td><td>600km / 약 282원</td></tr>
-    <tr><td>대표 용도</td><td>내구·가성비 데일리</td><td>반발·범용 데일리</td></tr>
-  </tbody>
-</table>
-<p><small>수치는 본 사이트 신발 DB(RunRepeat 랩 실측 및 한국 공식가 기준)입니다.</small></p>
-
-<h2>미즈노 웨이브 라이더 29 — 오래 신는 가성비 끝판왕</h2>
-<p>웨이브 라이더의 정체성은 <strong>내구성</strong>입니다. 미즈노 특유의 견고한 아웃솔로 800km 이상을 버텨, km당 비용이 211원까지 내려갑니다 — 이 글의 네 신발 중 가장 경제적입니다. Enerzy NXT 폼은 화려하게 튀기보다 <strong>탄탄하고 안정적인 착지</strong>를 주고, 258g로 페가수스보다 28g 가벼워 발놀림도 산뜻합니다. "한 켤레를 사서 최대한 오래, 매일 신는" 실용 러너에게 최적입니다.</p>
-<p>약점은 <strong>반발(6/10)</strong>입니다. 폼이 다소 단단해 통통 튀는 재미는 덜하고, 쿠션의 부드러움도 페가수스보다 한 수 아래입니다. 화려한 주행감을 원한다면 아쉬울 수 있습니다.</p>
-<p><strong>✅ 이런 분께</strong> — 신발을 오래 신어 가성비를 극대화하고 싶은 분, 탄탄하고 안정적인 착지를 선호하는 분, 매일 꾸준히 뛰는 데일리 러너.</p>
-
-<h2>나이키 페가수스 42 — 검증된 반발과 범용성</h2>
-<p>페가수스 42는 "고민되면 페가수스"의 그 만능형입니다. ReactX 폼과 풀렝스 에어 줌으로 <strong>반발(7/10)과 쿠션(8/10)</strong>이 라이더보다 앞서, 조깅부터 가벼운 스피드까지 두루 소화합니다. 발볼 넓은 러너를 위한 와이드(2E)도 정식 출시돼 있어 접근성이 좋습니다.</p>
-<p>약점은 <strong>무게(286g)</strong>와 <strong>내구(600km)</strong>입니다. 라이더보다 28g 무겁고 200km 덜 버텨, 같은 값이라도 오래 쓰는 측면에선 불리합니다. 실측 드롭이 14mm로 높다는 점도 참고하세요.</p>
-<p><strong>✅ 이런 분께</strong> — 반발과 쿠션의 균형을 원하는 분, 검증된 브랜드의 무난함을 선호하는 분, 조깅과 가벼운 스피드 훈련을 겸하는 분.</p>
-
-<h2>내게 맞는 건?</h2>
-<ul>
-  <li><strong>오래 신어 가성비를 뽑고 싶다 · 탄탄한 착지를 선호</strong> → <a href="/shoes/mizuno-wave-rider-29">웨이브 라이더 29</a>(800km)</li>
-  <li><strong>반발·쿠션의 균형 · 검증된 무난함</strong> → <a href="/shoes/nike-pegasus-42">페가수스 42</a></li>
-  <li><strong>발볼이 넓다</strong> → 둘 다 2E 와이드가 있어 안심입니다</li>
-  <li><strong>처음 러닝화를 산다</strong> → 둘 다 무난하지만, 안정적 착지의 라이더가 부담이 적을 수 있습니다. <a href="/blog/first-running-shoe-guide-2026">첫 러닝화 가이드</a>도 참고하세요</li>
-</ul>
-
-<div class="faq">
-  <h2>자주 묻는 질문</h2>
-  <div class="faq-item">
-    <p class="faq-q">Q. 같은 값이면 그냥 더 유명한 페가수스가 낫지 않나요?</p>
-    <p class="faq-a">A. 브랜드 인지도는 페가수스가 높지만, 라이더 29는 내구성에서 확실히 앞섭니다. 800km vs 600km 차이는 1년 이상 꾸준히 뛰는 러너에게는 신발 한 켤레 값에 맞먹는 격차입니다. "무난함과 반발"이면 페가수스, "오래 쓰는 실용성"이면 라이더로 갈리는 문제입니다.</p>
-  </div>
-  <div class="faq-item">
-    <p class="faq-q">Q. 쿠션이 더 부드러운 건 어느 쪽인가요?</p>
-    <p class="faq-a">A. 페가수스 42입니다(쿠션 8 vs 7). 라이더의 Enerzy NXT는 탄탄한 편이라 안정감은 좋지만 말랑한 느낌은 덜합니다. 푹신함을 최우선으로 친다면 이 둘보다 프리미엄 쿠션화(님버스 28·1080 v15)가 확실합니다.</p>
-  </div>
-  <div class="faq-item">
-    <p class="faq-q">Q. 무릎이 안 좋은데 둘 중 뭐가 나을까요?</p>
-    <p class="faq-a">A. 무릎 보호는 둘 다 '좋음' 등급으로 비슷합니다. 다만 쿠션이 조금 더 부드러운 페가수스 42가 충격 흡수에서 근소 우위입니다. 무릎이 특히 약하다면 스택이 더 두꺼운 쿠션화를 별도로 고려하는 편이 좋습니다.</p>
-  </div>
-  <div class="faq-item">
-    <p class="faq-q">Q. 마라톤 연습용으로 괜찮나요?</p>
-    <p class="faq-a">A. 둘 다 데일리 트레이닝용으로 훌륭합니다. 장거리 훈련을 많이 소화한다면 내구성이 높은 라이더 29가 경제적이고, 훈련 중 가벼운 스피드도 섞는다면 반발이 좋은 페가수스 42가 유리합니다. 레이스 당일용 카본화는 별도로 준비하는 것을 권합니다.</p>
-  </div>
-</div>
-
-<p><small>출처: 본 사이트 신발 DB(RunRepeat 랩 실측·미즈노/나이키 한국 공식가) 및 각 모델 상세 페이지 · 한국 공식가 기준 · 작성 2026년 7월 25일.</small></p>
+<p><strong>2026-11-10 원문 대조 업데이트.</strong> 제조사 공시·실험실 검체·개인 착화 의견과 한국 상품 캐시를 구분합니다. 자체 착화 후기가 아닌 원문 기반 분석입니다.</p><h2>먼저 볼 차이</h2><p>두 모델을 같은17만원·라이더800km 대페가수스550km로 비교하던 기준을 정정했습니다. 현재 동시점 한국 가격과 공통 수명은 미확인입니다.</p><p>확인할 차이는 라이더29의 힐/중족 Wave·엄지 공간, 페가수스42의 ReactX·Air Zoom과 실제 앞발 높이·전환입니다. RR 드롭8.3/14mm는 절단 위치의 값이며 한국 공시와 구분합니다.</p><figure><img src="/images/shoes/mizuno/waverider29/side.webp" alt="라이더29 — 페가수스42와 구조·앞코·전환을 비교" loading="lazy"/><figcaption>라이더29 — 페가수스42와 구조·앞코·전환을 비교</figcaption></figure><div class="table-wrap"><table><thead><tr><th>모델</th><th>무게 · 공시 출처 별도 표기</th><th>스택·드롭 · 공시 출처 별도 표기</th><th>힐/전족 SA</th><th>힐/전족 리턴</th></tr></thead><tbody><tr><td>mizuno-wave-rider-29</td><td>258g</td><td>37.5/29.2mm · 8.3mm</td><td>142/116</td><td>53.3/55.8%</td></tr><tr><td>nike-pegasus-42</td><td>286g</td><td>36/22mm · 14mm</td><td>131/91</td><td>57.1/61.2%</td></tr></tbody></table></div><p>표의 값은 RunRepeat 검체 또는 별도 표시한 DOR 소개 공시입니다. DOR 소개는 독립 실측이 아닙니다. 일반 정책은 남성 US9지만 개별 라벨·폭·보정 여부는 미확인입니다. 공시와 동일한 검체로 단정하지 않습니다. SA는 충격흡수, 리턴은 시험에서 반환된 에너지 비율이며 부드러움·개인 기록·임상 보호를 뜻하지 않습니다. HA는 구방식, AC는 별도 경도 척도여서 환산하지 않습니다. <a href="https://runrepeat.com/testing-methodology" target="_blank" rel="noopener noreferrer">RunRepeat 측정법</a></p><h2>28g 검체 차이가 모든 사이즈의 차이는 아닙니다</h2><p>RR 검체는258/286g으로28g 차이입니다. 공시 사이즈가 다른 값이나 모든 개인 사이즈의 차이로 확대하지 않습니다. 더 가볍다는 사실이 본인 장거리 피로·무릎 보호 우위를 보장하지 않습니다.</p><p>라이더 한국4E, 페가수스 한국 와이드의2E/4E 문자를 이번 원문으로 확정하지 못했습니다. 두 모델 모두 와이드라 안심·무릎 보호 동급이라는 표현을 제거하고 실제 앞코 길이·발톱 위 공간·힐 고정을 확인하도록 바꿨습니다.</p><h2>라이더29 — 핏과 주행에서 갈리는 지점</h2><p>힐·중족의 Pebax계 Wave Plate는 카본 레이싱 플레이트가 아닙니다.</p><p>RR 내부 최광폭 94.6mm·엄지 76.7mm·높이 28.3mm입니다. 다른 위치인 외부 바닥 폭과 구분하고 실제 규격에서 길이·높이·고정을 확인하세요.</p><p>DOR Matt(남성 US10)는 늘어나는 넓은 앞발과 좋은 힐 고정을 느꼈지만80~90°F 조건에서는 두꺼운 어퍼가 더웠습니다. 부드럽고 반응성 있는 데일리 전환은 좋았으나 이전 라이더보다 중립적이고 본인에게 덜 안정적이었습니다.</p><h2>라이더29 — 공시·한국 판매 확인 범위</h2><p>DOR 소개258g(남성 US9)/218g(여성 US8)·38/28mm·10mm, RR258g·37.5/29.2mm·8.3mm, RR 재전재 브랜드265/226g(사이즈 미확인)·39/29mm·10mm를 구분합니다.</p><p>한국 공식 캐시: J1GC250353 성별 표기 미확인 폭 미확인 소비자가169,000원·판매캐시135,200원. 현재 가격·폭별 선택 재고는 미확인입니다. 공통 SOLD OUT 템플릿과 장바구니 버튼을 실제 재고로 보지 않으며 검색 미발견을 단종·미출시로 단정하지 않습니다.</p><p>엄지76.7mm를 모든 넓은 한국 발의 최적 핏이나 한국4E 판매 보장으로 바꾸지 않습니다. RR의 중립 안정감과 Matt의 덜 안정적인 체감은 다른 근거입니다.800km·겨울34%경화·질환별 보호를 이번 원문으로 반복하지 않습니다.</p><h2>페가수스42 — 핏과 주행에서 갈리는 지점</h2><p>플레이트 없음. 전장 Air Zoom을 카본 플레이트로 해석하지 않습니다.</p><p>RR 내부최광폭96.5mm·엄지72.3mm·높이27.0mm는 한국와이드 검체라고 확인되지 않았습니다. 과거와이드상품을 모든4E발의 안전보장으로 쓰지 않습니다.</p><p>정확한 페가수스42의 DOR 개별 착화 리뷰는 이번 검색에서 확인하지 못했습니다. Plus2의 비교문구를42의 착화 경험으로 채우지 않았습니다. 기존5~13km상한·하프이상비추천·주100km금지와 임상보호등급은 확인한원문에서 공통기준으로 입증되지 않아 철회했습니다.</p><h2>페가수스42 — 공시·한국 판매 확인 범위</h2><p>한국 공시남성약300g(280mm)·여성243g(250mm),드롭10mm입니다. RR브랜드37/27mm·10mm·297/243g(기준사이즈미확인),RR286g·36/22mm·14mm를 구분합니다. 실제검체라벨·보정적용 여부는 미확인입니다.</p><p>한국 공식 캐시에는 남성IB1873-003·IM8332-100,여성IB1881-007,남성와이드IR1228-001·여성와이드IH1847-100 정가169,000원이 표시됐습니다. 자료는지난주~지난달 캐시여서 현재가격·판매규격·재고는 미확인입니다. 와이드의2E/4E문자와 실제폭증가는 미확인이고 둘레6.35mm설명을 내부너비 증가로 옮기지 않습니다.</p><p>제조사의41대비 에너지리턴최소15%개선 주장은 비교시험조건 미확인입니다. RR힐57.1/전족61.2%와 측정조건이 다르므로 제조사주장이 입증·반박됐다고 단정하지 않습니다. SA를부드러움·무릎보호로,국소마모0.8mm를600km수명으로 바꾸지 않습니다. 일반US9무게정책에는 드문US8/8.5의US9환산예외가 있어 실제라벨 미확인을 남깁니다.</p><h2>구매 전에 실제로 확인할 것</h2><p>평소 양말·인솔로 앞쪽 길이와 발톱 위 공간, 끈을 조였을 때 발등 압박, 힐 고정과 칼라 마찰을 확인하세요. 발볼 너비 하나로 전체 핏을 결정하지 않습니다. 교환·반품 조건도 먼저 확인할 수 있습니다.</p><p>트레일에서는 자신의 주요 노면과 오르막·내리막·방향 전환에서 고정과 전환을 살펴야 합니다. 젖은 콘크리트 시험 하나가 바위·진흙 접지를 보장하지 않습니다. 통증·저림을 견뎌야 한다는 규칙이나 모델별 질환 예방 효과는 이번 자료로 확인하지 못했습니다.</p><h2>확인한 원문과 접근 범위</h2><ul><li><a href="https://kor.mizuno.com/product/wave-rider-29/11351/" target="_blank" rel="noopener noreferrer">한국 공식 J1GC250353</a> — 캐시 today; No explicit product sold-out image verified; template SOLD OUT not stock proof; 현재 가격·선택 재고 미확인.</li><li><a href="https://runrepeat.com/mizuno-wave-rider-29" target="_blank" rel="noopener noreferrer">라이더29 RR 원문</a> — 정확 모델 검체. 제조사 공시와 분리.</li><li><a href="https://www.doctorsofrunning.com/mizuno-wave-rider-29-review-2025/" target="_blank" rel="noopener noreferrer">라이더29 DOR 원문</a> — 소개 공시·실제 착화 사이즈·개인의견 구분.</li><li><a href="https://www.nike.com/kr/t/%EB%82%98%EC%9D%B4%ED%82%A4-%ED%8E%98%EA%B0%80%EC%88%98%EC%8A%A4-42-%EB%82%A8%EC%84%B1-%EB%A1%9C%EB%93%9C-%EB%9F%AC%EB%8B%9D%ED%99%94-XuHjeH83" target="_blank" rel="noopener noreferrer">한국 공식 캐시 IB1873-003 · 남성</a> — 과거표시정가169,000원. 캐시목록은 현재옵션·재고보장 아님.</li><li><a href="https://www.nike.com/kr/t/%EB%82%98%EC%9D%B4%ED%82%A4-%ED%8E%98%EA%B0%80%EC%88%98%EC%8A%A4-42-%EB%82%A8%EC%84%B1-%EB%A1%9C%EB%93%9C-%EB%9F%AC%EB%8B%9D%ED%99%94-hzTwdMlw/IM8332-100" target="_blank" rel="noopener noreferrer">한국 공식 캐시 IM8332-100 · 남성</a> — 과거표시정가169,000원. 캐시목록은 현재옵션·재고보장 아님.</li><li><a href="https://www.nike.com/kr/t/%EB%82%98%EC%9D%B4%ED%82%A4-%ED%8E%98%EA%B0%80%EC%88%98%EC%8A%A4-42-%EC%97%AC%EC%84%B1-%EB%A1%9C%EB%93%9C-%EB%9F%AC%EB%8B%9D%ED%99%94-wsTF7yIV/IB1881-007" target="_blank" rel="noopener noreferrer">한국 공식 캐시 IB1881-007 · 여성</a> — 과거표시정가169,000원. 캐시목록은 현재옵션·재고보장 아님.</li><li><a href="https://www.nike.com/kr/t/%ED%8E%98%EA%B0%80%EC%88%98%EC%8A%A4-42-%EB%82%A8%EC%84%B1-%EB%A1%9C%EB%93%9C-%EB%9F%AC%EB%8B%9D%ED%99%94-hzTwdMlw/IR1228-001" target="_blank" rel="noopener noreferrer">한국 공식 캐시 IR1228-001 · 와이드</a> — 과거표시정가169,000원. 캐시목록은 현재옵션·재고보장 아님.</li><li><a href="https://www.nike.com/kr/t/%EB%82%98%EC%9D%B4%ED%82%A4-%ED%8E%98%EA%B0%80%EC%88%98%EC%8A%A4-42-%EC%97%AC%EC%84%B1-%EB%A1%9C%EB%93%9C-%EB%9F%AC%EB%8B%9D%ED%99%94%EC%99%80%EC%9D%B4%EB%93%9C-wsTF7yIV/IH1847-100" target="_blank" rel="noopener noreferrer">한국 공식 캐시 IH1847-100 · 와이드</a> — 과거표시정가169,000원. 캐시목록은 현재옵션·재고보장 아님.</li><li><a href="https://www.nike.com/kr/a/pegasus-42-release-date/" target="_blank" rel="noopener noreferrer">Nike 공식15% 개선 주장</a> — 제조사자체주장. 비교시험조건 미확인으로 RR절대리턴과 직접비교하지 않음.</li><li><a href="https://runrepeat.com/nike-pegasus-42" target="_blank" rel="noopener noreferrer">페가수스42 RR 원문</a> — 정확 모델 검체. 제조사 공시와 분리.</li></ul>
 `,
+    updatedAt: "2026-11-10",
+    faqs: [
+      {
+        "question": "오래 신으려면 라이더인가요?",
+        "answer": "모델별 공통 수명을 입증하지 못해800km·km당 비용으로 승자를 정하지 않습니다."
+      },
+      {
+        "question": "페가수스42 드롭이14mm인가요?",
+        "answer": "RR 검체는14mm이고 한국10mm 공시와 별도로 읽습니다. 개인의 주행 중 체감이14mm로 고정되는 것은 아닙니다."
+      },
+      {
+        "question": "둘다2E가 있나요?",
+        "answer": "한국 폭 표기의 확인 수준이 다르고2E/4E 문자는 미확인입니다. 실제규격을 확인해야 합니다."
+      }
+    ],
   },
   {
     id: "adidas-hyperboost-edge-vs-asics-superblast-3-super-trainer-2026",
@@ -2418,108 +2319,38 @@ export const posts_2026_07: BlogPost[] = [
     ],
   },
   {
-    id: 'brooks-ghost-max-4-hyperion-elite-6-preview-2026',
-    slug: 'brooks-ghost-max-4-hyperion-elite-6-preview-2026',
-    title: '브룩스 8월 신제품 프리뷰 | 고스트 맥스 4 & 하이페리온 엘리트 6 — "브룩스 첫 진짜 레이싱화"라는 평가',
-    description:
-      '브룩스가 8월 1일 미국에서 고스트 맥스 4($165)와 하이페리온 엘리트 6($275)을 동시 출시합니다. 고스트 맥스 4는 스택·드롭·폼이 전작과 거의 같은 미세 조정에 가깝지만, 하이페리온 엘리트 6은 브랜드 표기 드롭을 7mm로 낮추고(RunRepeat 실측은 5세대 11.2mm → 6세대 10.6mm) 플레이트를 재설계해 Believe in the Run으로부터 "브룩스가 실제로 추천할 만한 첫 레이싱화"라는 평가를 받았습니다. 한국에는 이후 고스트 맥스 4가 189,000원, 하이페리온 엘리트 6이 319,000원으로 출시됐습니다(2026-10-23 기준).',
-    thumbnail: '/images/blog/brooks-ghost-max-4-hyperion-elite-6-preview-2026.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-07-14',
-    updatedAt: '2026-10-23',
-    category: 'review' as const,
-    readingTime: 7,
-    tags: ['브룩스 고스트 맥스 4', '브룩스 하이페리온 엘리트 6', '신상 러닝화', '레이싱화', '맥스쿠션', '브룩스'],
+    id: "brooks-ghost-max-4-hyperion-elite-6-preview-2026",
+    slug: "brooks-ghost-max-4-hyperion-elite-6-preview-2026",
+    title: "고스트 맥스4·하이페리온 엘리트6 업데이트 — 실측과 앞코·혀·칼라 확인점",
+    description: "두 정확 RR 랩과 Matt의 실제 US10.5 착화를 정리합니다. 한국 현재가·와이드는 미확인, 소개 드롭6/7mm와 실측9/10.6mm를 구분합니다.",
+    thumbnail: "/images/shoes/brooks/hyperionelite6/side.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-07-14",
+    updatedAt: "2026-11-10",
+    category: "review",
+    readingTime: 8,
+    tags: [
+      "고스트 맥스4",
+      "하이페리온 엘리트6",
+      "원문 대조",
+      "핏"
+    ],
     content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>브룩스가 8월 1일 미국에서 고스트 맥스 4($165)와 하이페리온 엘리트 6($275)을 동시 출시</strong>합니다</li>
-    <li><strong>고스트 맥스 4는 스택(40/34mm)·드롭(6mm)·폼(DNA Loft v3)이 전작과 거의 동일</strong>한 미세 조정형 업데이트 — 무게만 약 14g 가벼워졌습니다(RunRepeat 실측끼리는 303→286g, 17g)</li>
-    <li><strong>하이페리온 엘리트 6은 브랜드 표기 드롭을 7mm로 낮추고 플레이트를 재설계</strong>(RunRepeat 실측 드롭은 11.2→10.6mm) — Believe in the Run이 "브룩스가 실제로 추천할 만한 첫 레이싱화"라 평했습니다. 한국에는 이후 두 모델 모두 출시됐습니다(2026-10-23 기준)</li>
-  </ul>
-</div>
-
-<div class="callout success">
-  <span class="callout-icon">🔔</span>
-  <div class="callout-body">
-    <p class="callout-title">[업데이트 9/27·10/23] 국내 출시 — 고스트 맥스 4 189,000원 · 하이페리온 엘리트 6 319,000원</p>
-    <p>브룩스코리아 공식몰에 고스트 맥스 4가 <strong>189,000원</strong>(전작 179,000원보다 1만 원 인상)으로 올라와 있고, 남녀 모두 <strong>와이드(WIDE)</strong>를 함께 판매합니다(2026년 9월 27일 확인). RunRepeat 랩 실측도 게시됐는데, 공식 6mm 드롭이 실측으로는 <strong>9.0mm</strong>였습니다. 실측 전체는 <a href="/shoes/brooks-ghost-max-4">고스트 맥스 4 상세</a>에 정리했습니다. 하이페리온 엘리트 6도 브룩스코리아 공식몰에 <strong>319,000원</strong>(전작 299,000원보다 2만 원 인상, 남녀공용 MEDIUM만 확인)으로 올라와 있습니다(2026년 10월 2일 확인). RunRepeat 실측은 무게 193g, 드롭 10.6mm(브랜드 7mm), 토박스 70.3mm로, 전체는 <a href="/shoes/brooks-hyperion-elite-6">하이페리온 엘리트 6 상세</a>에 있습니다. 아래 본문은 미국 출시 전(7월 14일) 작성한 내용이라, 두 모델의 한국 출시·가격 서술은 이 안내가 우선합니다.</p>
-  </div>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">👀</span>
-  <div class="callout-body">
-    <p class="callout-title">확인된 사실 — 8월 1일 미국 동시 출시</p>
-    <p>브룩스가 <strong>2026년 8월 1일 미국에서 고스트 맥스 4와 하이페리온 엘리트 6을 동시 출시</strong>합니다. 두 모델 모두 Believe in the Run·Road Trail Run의 선행 리뷰가 이미 게시돼 점수·장단점이 확인됐지만, 작성 시점(7/14)엔 <strong>RunRepeat 정량 랩 데이터가 게시되지 않았고(양쪽 다 404)</strong>, <strong>한국 공식 사이트(brooksrunning.co.kr)에도 등재되지 않았습니다</strong>. 이후 상황은 위 업데이트를 보세요.</p>
-  </div>
-</div>
-
-<h2>고스트 맥스 4 — 미세 조정에 가까운 업데이트</h2>
-<p>전작 <a href="/shoes/brooks-ghost-max-3">고스트 맥스 3</a>와 비교하면, 4세대는 <strong>스택(힐 40mm/전족 34mm)·드롭(6mm)·미드솔 폼(DNA Loft v3)이 사실상 그대로</strong>입니다. Believe in the Run도 "전작 대비 혁신은 없다"고 짚었을 정도죠. 바뀐 건 <strong>무게가 약 14g 가벼워졌고, 안정성 기하구조가 손질됐으며, 라스트가 선형화돼 폭 수용성이 늘어난 점</strong>입니다. Road Trail Run 테스터들은 8.8~9/10의 무난한 점수를 줬지만 "특별히 뛰어나진 않다"는 평도 함께 나왔습니다.</p>
-<div class="table-wrap">
-<table>
-  <thead><tr><th>항목</th><th>고스트 맥스 3</th><th>고스트 맥스 4</th></tr></thead>
-  <tbody>
-    <tr><td>가격</td><td>$160</td><td>$165</td></tr>
-    <tr><td>무게</td><td>303g(RunRepeat 실측)</td><td>286g(RunRepeat 실측) · 남 292g / 여 261g(BITR·RTR)</td></tr>
-    <tr><td>힐/전족 스택</td><td>38.5 / 31.2mm(RunRepeat)</td><td>38.6 / 29.6mm(RunRepeat) · 40 / 34mm(BITR·RTR)</td></tr>
-    <tr><td>미드솔</td><td>DNA Loft v3</td><td>DNA Loft v3 (동일 유지)</td></tr>
-    <tr><td>BITR 등급</td><td>-</td><td>B Tier (Performance A)</td></tr>
-  </tbody>
-</table>
-<p class="caption">※ 세대 비교는 RunRepeat 실측끼리 하세요(4세대 실측은 2026-10-23 반영, 신발 DB 기준). BITR·RTR 수치는 측정 방법론이 달라 참고용입니다.</p>
-</div>
-<p>넓은 발볼에는 여전히 좋은 선택이지만, <strong>좁은 발엔 부적합하다는 평가는 3세대와 동일</strong>합니다. "왜 안 바꿨나"에 가까운 업데이트라, 3을 잘 신고 있다면 급히 갈아탈 이유는 적어 보입니다.</p>
-
-<h2>하이페리온 엘리트 6 — "브룩스 첫 진짜 레이싱화"</h2>
-<p>훨씬 화제성이 큰 쪽은 하이페리온 엘리트입니다. 전작 <a href="/shoes/brooks-hyperion-elite-5">하이페리온 엘리트 5</a>는 드롭이 실측 11.2mm로 다소 높았는데, 6세대는 브랜드 표기를 <strong>7mm로 낮추고 SpeedVault+ 플레이트 각도를 더 가파르게 재설계</strong>했습니다(다만 이후 나온 RunRepeat 실측 드롭은 10.6mm로, 실측끼리는 0.6mm 낮아지는 데 그쳤습니다). 미드풋 플랫폼도 55mm→60mm로 넓어져 안정성을 보강했고, DNA Gold(PEBA) 폼의 밀도 구성을 다중화해 전족부 "팝" 반응이 좋아졌다는 평입니다. Believe in the Run은 <strong>A Tier</strong>를 매기며 <strong>"이것은 내가 실제로 지갑을 열고 싶은 첫 브룩스 레이스화"</strong>라고 평했고, Road Trail Run 4인 테스터는 평균 9.0~9.56/10이라는 높은 점수를 줬습니다.</p>
-<div class="table-wrap">
-<table>
-  <thead><tr><th>항목</th><th>하이페리온 엘리트 5</th><th>하이페리온 엘리트 6</th></tr></thead>
-  <tbody>
-    <tr><td>가격</td><td>$275</td><td>$275 (동일)</td></tr>
-    <tr><td>무게(US 9)</td><td>204g</td><td>193g (BITR 표기 198g)</td></tr>
-    <tr><td>드롭</td><td>11.2mm</td><td>10.6mm (브랜드 표기 <strong>7mm</strong>)</td></tr>
-    <tr><td>미드풋 플랫폼 폭</td><td>55mm</td><td><strong>60mm</strong></td></tr>
-    <tr><td>플레이트</td><td>SpeedVault 카본</td><td>SpeedVault+ 재설계(각도↑)</td></tr>
-    <tr><td>BITR 등급</td><td>-</td><td><strong>A Tier</strong>(Performance A)</td></tr>
-  </tbody>
-</table>
-<p class="caption">※ 무게·드롭은 두 세대 모두 RunRepeat 실측(남성 US 9)이고, 괄호는 BITR·브랜드 표기입니다(6세대 실측은 2026-10-23 반영, 신발 DB 기준). 미드풋 플랫폼 폭은 BITR·RTR 리뷰 기준입니다.</p>
-</div>
-<p>단점으로는 <strong>$275라는 가격이 경쟁 모델 대비 다소 높다</strong>는 지적(BITR은 $225~250이 적정선이라 평)과, 얇은 힐칼라가 일부 테스터에게 아킬레스 자극을 준다는 점이 꼽혔습니다. 그럼에도 "안정적이면서 반응성 있는 라이드"라는 호평이 다수라, 카본 레이싱화를 찾는 러너라면 주목할 만한 모델입니다. 국내에서 비슷한 체급의 레이싱화를 지금 비교하고 싶다면 <a href="/best/racing">레이싱화 추천</a>을 참고하세요.</p>
-
-<h2>한국 출시는?</h2>
-<p>이 글 작성 시점(7/14)엔 <strong>brooksrunning.co.kr에 두 모델 모두 등재되지 않았습니다.</strong> 이후 고스트 맥스 4가 <strong>189,000원</strong>(2026-09-27 확인), 하이페리온 엘리트 6이 <strong>319,000원</strong>(2026-10-02 확인)으로 올라왔습니다. 전작 한국 정가는 고스트 맥스 3가 179,000원, 하이페리온 엘리트 5가 299,000원이었습니다.</p>
-
-<div class="callout warning">
-  <span class="callout-icon">⚠️</span>
-  <div class="callout-body">
-    <p class="callout-title">정보성 프리뷰 — 작성 시점(7/14)엔 한국 미출시</p>
-    <p>고스트 맥스 4·하이페리온 엘리트 6 모두 이 글 작성 시점엔 <strong>한국 공식 출시가 확인되지 않았고</strong>, RunRepeat 정량 랩 데이터도 미게시였습니다(BITR·RTR 자체 실측·평가만 반영). 2026-10-23 기준으로는 두 모델 모두 한국 공식몰 정가와 RunRepeat 실측이 신발 데이터베이스에 반영돼 있습니다.</p>
-  </div>
-</div>
-
-<h2>마무리</h2>
-<p>같은 날 나오는 두 신발이지만 성격은 다릅니다. 고스트 맥스 4는 "검증된 걸 다듬은" 안전한 선택이고, 하이페리온 엘리트 6은 "브룩스가 레이싱화에 진심이 됐다"는 걸 보여주는 모델입니다. 두 모델의 실측 전체는 <a href="/shoes/brooks-ghost-max-4">고스트 맥스 4</a>·<a href="/shoes/brooks-hyperion-elite-6">하이페리온 엘리트 6</a> 상세에 정리했습니다.</p>
-
-<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 브룩스 공식 발표와 Believe in the Run·Road Trail Run 선행 리뷰를 바탕으로 한 정보성 프리뷰입니다. 한국 정가와 RunRepeat 실측은 이후 확인돼 2026-09-27·2026-10-23에 반영했습니다(신발 DB 기준). (작성 2026-07-14)</p>
+<p><strong>2026-11-10 원문 대조 업데이트.</strong> 제조사 공시·실험실 검체·개인 착화 의견과 한국 상품 캐시를 구분합니다. 자체 착화 후기가 아닌 원문 기반 분석입니다.</p><h2>먼저 볼 차이</h2><p>고스트 맥스4의 단단한 구름과 엘리트6의 카본 전환은 서로 다른 후보입니다. 소개 드롭은6/7mm, RR 절단 실측은9/10.6mm로 출처를 나눠야 합니다.</p><p>두 모델 모두 Matt의 실제 착화에서 사이즈·앞코·혀 고정과 마찰이 중요했습니다. 한국 현재 가격·와이드 SKU는 공식 접근 실패로 미확인입니다. 미확인은 미출시·단종을 뜻하지 않습니다.</p><figure><img src="/images/shoes/brooks/hyperionelite6/side.webp" alt="하이페리온 엘리트6 — 카본 전환과 앞코·혀·칼라를 함께 확인" loading="lazy"/><figcaption>하이페리온 엘리트6 — 카본 전환과 앞코·혀·칼라를 함께 확인</figcaption></figure><div class="table-wrap"><table><thead><tr><th>모델</th><th>무게 · 공시 출처 별도 표기</th><th>스택·드롭 · 공시 출처 별도 표기</th><th>힐/전족 SA</th><th>힐/전족 리턴</th></tr></thead><tbody><tr><td>brooks-ghost-max-4</td><td>286g</td><td>38.6/29.6mm · 9mm</td><td>145/116</td><td>51.9/55.5%</td></tr><tr><td>brooks-hyperion-elite-6</td><td>193g</td><td>39.9/29.3mm · 10.6mm</td><td>159/123</td><td>65.4/75.2%</td></tr></tbody></table></div><p>표의 값은 RunRepeat 검체 또는 별도 표시한 DOR 소개 공시입니다. DOR 소개는 독립 실측이 아닙니다. 일반 정책은 남성 US9지만 개별 라벨·폭·보정 여부는 미확인입니다. 공시와 동일한 검체로 단정하지 않습니다. SA는 충격흡수, 리턴은 시험에서 반환된 에너지 비율이며 부드러움·개인 기록·임상 보호를 뜻하지 않습니다. HA는 구방식, AC는 별도 경도 척도여서 환산하지 않습니다. <a href="https://runrepeat.com/testing-methodology" target="_blank" rel="noopener noreferrer">RunRepeat 측정법</a></p><h2>출시 전 프리뷰를 현재 확인 범위로 갱신했습니다</h2><p>기존 미국8월1일 예정·한국 출시 완료·189,000/319,000원·남녀와이드 전면 판매라는 문구를 이번 확인의 현재 사실처럼 반복하지 않습니다. 두 모델의 정확 랩과 DOR 원문은 확보했으므로 ‘랩 미게시’ 과거 안내도 갱신했습니다.</p><p>Matt의 고스트 반업과 엘리트의 브룩스US10.5는 다른 브랜드 보통US10과 구분합니다. 엘리트6의 인솔·거싯 설명은 매체·원문 표 사이에서 달라 실제 구매 규격에서 확인할 항목입니다. 미확인 BITR A티어·가치C·브룩스 첫 진짜 레이싱화라는 평가도 이번 검증의 결론에 넣지 않습니다.</p><h2>고스트 맥스4 — 핏과 주행에서 갈리는 지점</h2><p>폼·로커·사이드월은 확인했지만 정확 원문의 플레이트 유무 명시를 이번 범위에서 확보하지 못해 해당 판정을 비웁니다.</p><p>RR 내부 최광폭 93.4mm·엄지 71.3mm·높이 26.8mm입니다. 다른 위치인 외부 바닥 폭과 구분하고 실제 규격에서 길이·높이·고정을 확인하세요.</p><p>DOR Matt는 평소 타브랜드US10에서 이 모델US10이 짧아US10.5로 바꿨습니다. 늘어나지 않는 앞코 보강·밀착 중족, 두꺼운 메시 열감·가끔 미끄러지는 거싯 없는 혀를 적었습니다. 단단한 이지런·걷기 전환은 좋았지만 긴 러닝에서는 더 단단해져 선호하지 않았습니다.40마일 러닝·몇 달 서기/걷기는 수명 시험이 아닙니다.</p><h2>고스트 맥스4 — 공시·한국 판매 확인 범위</h2><p>DOR 소개289g(남성 US9)/258g(여성 US8)·39/33mm·6mm와 RR286g·38.6/29.6mm·9mm, RR 재전재292/260g(기준 사이즈 미확인)·40/34mm·6mm를 나눕니다.</p><p>한국 공식 캐시: 정확 모델 상품 원문은 공식 홈502·타임아웃과 검색 미발견으로 확보하지 못함. 현재 가격·폭별 선택 재고는 미확인입니다. 공통 SOLD OUT 템플릿과 장바구니 버튼을 실제 재고로 보지 않으며 검색 미발견을 단종·미출시로 단정하지 않습니다.</p><p>RR 정사이즈 투표21명과 Matt의 반업은 다른 조건입니다. BR74와 개인 열감·로커 체감도 나눕니다. 국내 와이드 판매·700km·과내전 보호를 확인한 사실로 반복하지 않습니다.</p><h2>하이페리온 엘리트6 — 핏과 주행에서 갈리는 지점</h2><p>정확6의 전장 SpeedVault+ 카본은 전작 Arris 구조를 그대로 대입한 것이 아닙니다. 재설계 곡률과 폼을 구분합니다.</p><p>RR 내부 최광폭 93.3mm·엄지 70.3mm·높이 27.7mm입니다. 다른 위치인 외부 바닥 폭과 구분하고 실제 규격에서 길이·높이·고정을 확인하세요.</p><p>DOR Matt는 자신의 브룩스 남성US10.5(타브랜드 보통10)를 신었습니다. 앞코 테이퍼 뒤 공간은 여유 있으나 끈 조임·얇은 혀 압박·칼라 마찰이 있어 양말을 선호했습니다. 부드러운 폼과 매우 뻣뻣한 카본·로커의 지속주행은 좋았으나 짧은 빠른 세션은 너무 단단했고 자갈에서 노출 폼 손상을 적었습니다.40마일은 개인 시험 거리입니다.</p><h2>하이페리온 엘리트6 — 공시·한국 판매 확인 범위</h2><p>DOR 소개192g(남성 US9)/172g(여성 US8)·40/33mm·7mm와 RR193g·39.9/29.3mm·10.6mm를 구분합니다. 테스터 실제US10.5를 소개US9와 섞지 않습니다.</p><p>한국 공식 캐시: 정확 모델 상품 원문은 공식 홈502·타임아웃과 검색 미발견으로 확보하지 못함. 현재 가격·폭별 선택 재고는 미확인입니다. 공통 SOLD OUT 템플릿과 장바구니 버튼을 실제 재고로 보지 않으며 검색 미발견을 단종·미출시로 단정하지 않습니다.</p><p>DOR 인솔 비분리와 RR 분리 가능은 상충합니다. 거싯도 RR표 양측부분·본문안쪽만·DOR없음이 다릅니다. 저온 변화4%를 겨울 레이스 성능 보장으로 해석하지 않으며300km·한국319,000원 현재가·미확인 매체 점수를 반복하지 않습니다.</p><h2>구매 전에 실제로 확인할 것</h2><p>평소 양말·인솔로 앞쪽 길이와 발톱 위 공간, 끈을 조였을 때 발등 압박, 힐 고정과 칼라 마찰을 확인하세요. 발볼 너비 하나로 전체 핏을 결정하지 않습니다. 교환·반품 조건도 먼저 확인할 수 있습니다.</p><p>트레일에서는 자신의 주요 노면과 오르막·내리막·방향 전환에서 고정과 전환을 살펴야 합니다. 젖은 콘크리트 시험 하나가 바위·진흙 접지를 보장하지 않습니다. 통증·저림을 견뎌야 한다는 규칙이나 모델별 질환 예방 효과는 이번 자료로 확인하지 못했습니다.</p><h2>확인한 원문과 접근 범위</h2><ul><li><a href="https://www.brooksrunning.co.kr/" target="_blank" rel="noopener noreferrer">한국 공식 확인 실패 범위</a> — 502·타임아웃. 정확 모델 현재 상품·가격·재고 미확인.</li><li><a href="https://runrepeat.com/brooks-ghost-max-4" target="_blank" rel="noopener noreferrer">고스트 맥스4 RR 원문</a> — 정확 모델 검체. 제조사 공시와 분리.</li><li><a href="https://www.doctorsofrunning.com/brooks-ghost-max-4-review/" target="_blank" rel="noopener noreferrer">고스트 맥스4 DOR 원문</a> — 소개 공시·실제 착화 사이즈·개인의견 구분.</li><li><a href="https://runrepeat.com/brooks-hyperion-elite-6" target="_blank" rel="noopener noreferrer">하이페리온 엘리트6 RR 원문</a> — 정확 모델 검체. 제조사 공시와 분리.</li><li><a href="https://www.doctorsofrunning.com/brooks-hyperion-elite-6-review/" target="_blank" rel="noopener noreferrer">하이페리온 엘리트6 DOR 원문</a> — 소개 공시·실제 착화 사이즈·개인의견 구분.</li></ul>
 `,
     faqs: [
       {
-        question: '고스트 맥스 4가 3세대보다 확실히 나은가요?',
-        answer: '스택·드롭·미드솔 폼이 전작과 사실상 동일해 "혁신적인 변화"는 아닙니다. 무게가 약 14g 가벼워지고(RunRepeat 실측끼리는 303→286g, 17g) 안정성 기하구조·라스트가 다듬어진 정도입니다. Believe in the Run도 전작 대비 혁신 부재를 지적했습니다. 3세대를 잘 신고 있다면 급히 갈아탈 이유는 적습니다.',
+        "question": "두 모델 한국 출시됐나요?",
+        "answer": "정확 현재 상품 원문을 확보하지 못했습니다. 과거 한국 판매 안내를 현재 가격·재고 확정으로 반복하지 않습니다."
       },
       {
-        question: '하이페리온 엘리트 6이 정말 브룩스 레이싱화 중 최고인가요?',
-        answer: 'Believe in the Run이 A Tier를 매기며 "실제로 지갑을 열고 싶은 첫 브룩스 레이스화"라고 평했고, Road Trail Run 4인 테스터도 평균 9점대의 높은 점수를 줬습니다. 브랜드 표기 드롭을 7mm로 낮추고(RunRepeat 실측은 11.2mm→10.6mm) 플레이트를 재설계해 반응성이 개선됐다는 평가가 많습니다. 다만 $275라는 가격이 다소 높다는 지적도 있습니다.',
+        "question": "엘리트6 인솔이 분리되나요?",
+        "answer": "DOR 비분리와RR 분리 가능이 상충합니다. 실제 구매 규격에서 확인할 부분입니다."
       },
       {
-        question: '고스트 맥스 4와 하이페리온 엘리트 6, 한국에서 언제 살 수 있나요?',
-        answer: '지금 살 수 있습니다. 이 글 작성 시점(7/14)엔 brooksrunning.co.kr에 두 모델 모두 등재되지 않았지만, 이후 브룩스코리아 공식몰에 고스트 맥스 4가 189,000원(2026-09-27 확인, 남녀 와이드 포함), 하이페리온 엘리트 6이 319,000원(2026-10-02 확인)으로 올라왔습니다. 미국 출시는 2026년 8월 1일이었습니다.',
-      },
+        "question": "겨울에도 같은 성능인가요?",
+        "answer": "RR 저온 경도 변화4%를 겨울 개인 기록·그립·편안함 보장으로 확대하지 않습니다."
+      }
     ],
   },
   {

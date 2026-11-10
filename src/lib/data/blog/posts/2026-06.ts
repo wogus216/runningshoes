@@ -5863,243 +5863,39 @@ export const posts_2026_06: BlogPost[] = [
 `,
   },
   {
-    id: 'mizuno-wave-rebellion-flash-2-vs-3-comparison',
-    slug: 'mizuno-wave-rebellion-flash-2-vs-3-comparison',
-    title: '미즈노 웨이브 리벨리온 플래시 2 vs 플래시 3 비교 | PEBA→TPEE 듀얼폼 전환·드롭 그대로, 미드풋 템포 트레이너 세대 차이 총정리',
-    description: '미즈노 웨이브 리벨리온 플래시 2(189,000원)와 플래시 3(199,000원) 세대 비교. 상단 폼 PEBA→ENERZY XP(TPEE) 교체, 힐 스택 35.2→40.0mm, 반응성 6→8 개선이 핵심. 랩 드롭은 2.9→7.5mm로 높아진 미드풋 템포 트레이너, 부상별·세일별 구매 매트릭스.',
-    thumbnail: '/images/shoes/mizuno/waverebellionflash3/side.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-06-10',
-    category: 'review' as const,
-    readingTime: 12,
-    tags: ['미즈노', '웨이브 리벨리온 플래시 2', '웨이브 리벨리온 플래시 3', '슈퍼트레이너 비교', '템포 트레이너', 'ENERZY XP', '미드풋 착지', '저드롭', '레이싱', '세대 비교'],
+    id: "mizuno-wave-rebellion-flash-2-vs-3-comparison",
+    slug: "mizuno-wave-rebellion-flash-2-vs-3-comparison",
+    title: "리벨리온 플래시2 vs3 — 유리섬유 판·로커·앞코, 착지법으로 금지하지 않고 비교",
+    description: "239/244g·드롭2.9/7.5mm 실측과 공시0.5/3mm를 나눕니다. 리뷰어 반업·칼라 물집·접지 차이, 판 길이 원문 상충을 남겼습니다.",
+    thumbnail: "/images/shoes/mizuno/waverebellionflash3/side.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-06-10",
+    category: "review",
+    readingTime: 8,
+    tags: [
+      "플래시2",
+      "플래시3",
+      "원문 대조",
+      "핏"
+    ],
     content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>핵심 변화는 상단 폼</strong> — 2의 Enerzy Lite+(PEBA) 단일 감성에서, 3은 <strong>ENERZY XP(TPEE) 상단 + ENERZY NXT(EVA) 하단</strong> 듀얼 구조로 바뀌어 착지는 더 부드럽고 푸시오프는 더 탄력 있게 재설계됐습니다.</li>
-    <li>힐 스택 35.2→40.0mm, 반응성 점수 6→8로 상승. 랩 드롭은 <strong>2.9→7.5mm로 높아져 3은 저드롭에서 벗어났지만</strong>, 둘 다 힐스트라이커·과내전 입문자에겐 비추입니다.</li>
-    <li>MSRP는 189,000원 → 199,000원(+1만원). 두 신발 모두 와이드 옵션이 없어 발볼 넓은 한국 러너는 반 사이즈 업 또는 매장 시착이 필수입니다.</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">🏃</span>
-  <div class="callout-body">
-    <p class="callout-title">왜 이 비교가 필요한가 — 미즈노 템포 라인의 애매한 포지션</p>
-    <p>웨이브 리벨리온 플래시는 미즈노의 "슈퍼트레이너/템포 트레이너" 계보입니다. 카본 슈즈만큼 비싸지도, 데일리만큼 무르지도 않은 <strong>'레이스데이 겸 템포런' 중간 영역</strong>이죠. 플래시 2를 잘 쓰던 러너가 "3으로 넘어갈 가치가 있나?", 플래시 3 신상을 보고 온 러너가 "굳이 신상 풀가를 줄까 아니면 2 세일을 노릴까?" — 이 두 질문에 데이터로 답하는 글입니다. 두 모델 다 미즈노 특유의 <strong>극단적 힐 베벨 로커 + Wave 지오메트리</strong>를 공유하므로, 변화의 폭과 방향만 정확히 짚으면 결정이 쉬워집니다.</p>
-  </div>
-</div>
-
-<h2>한눈에 비교</h2>
-
-<table>
-  <thead>
-    <tr><th>항목</th><th>웨이브 리벨리온 플래시 2</th><th>웨이브 리벨리온 플래시 3</th><th>차이</th></tr>
-  </thead>
-  <tbody>
-    <tr><td><strong>카테고리</strong></td><td>레이싱 / 템포 트레이너</td><td>레이싱 / 템포 트레이너</td><td>동일 (슈퍼트레이너)</td></tr>
-    <tr><td><strong>상태</strong></td><td>이전 세대 (세일 진입권)</td><td><strong>신상</strong></td><td>세대 교체</td></tr>
-    <tr><td><strong>MSRP (한국)</strong></td><td>189,000원</td><td><strong>199,000원</strong></td><td>+10,000원</td></tr>
-    <tr><td><strong>무게 (Lab)</strong></td><td>239g</td><td>244g</td><td>+5g (사실상 동일)</td></tr>
-    <tr><td><strong>힐 스택</strong></td><td>35.2mm</td><td><strong>40.0mm</strong></td><td>+4.8mm (쿠션 ↑)</td></tr>
-    <tr><td><strong>전족부 스택</strong></td><td>32.3mm</td><td><strong>32.5mm</strong></td><td>+0.2mm</td></tr>
-    <tr><td><strong>드롭</strong></td><td>2.9mm (Lab)</td><td>7.5mm (Lab)</td><td>+4.6mm (저드롭 → 중간 드롭)</td></tr>
-    <tr><td><strong>미드솔 폼</strong></td><td>Enerzy Lite+ (PEBA) + Enerzy 듀얼</td><td><strong>ENERZY XP (TPEE) 상단 + ENERZY NXT (EVA) 하단</strong></td><td>상단 폼 소재 교체</td></tr>
-    <tr><td><strong>플레이트</strong></td><td>Wave 플레이트 (유리섬유, 곡선형)</td><td>유리섬유 강화 나일론 플레이트 (평판형)</td><td>형상·구성 변경</td></tr>
-    <tr><td><strong>반응성 점수</strong></td><td>6/10</td><td><strong>8/10</strong></td><td>+2 (TPEE 탄성)</td></tr>
-    <tr><td><strong>쿠션 점수</strong></td><td>7/10</td><td><strong>10/10</strong></td><td>+3 (스택 ↑)</td></tr>
-    <tr><td><strong>안정성 점수</strong></td><td>5/10</td><td>6/10</td><td>+1</td></tr>
-    <tr><td><strong>내구성</strong></td><td>600km</td><td>500km</td><td>-100km</td></tr>
-    <tr><td><strong>아웃솔</strong></td><td>G3 러버</td><td>전체 러버 (젖은 노면 그립 강조)</td><td>커버리지 확대</td></tr>
-    <tr><td><strong>어퍼</strong></td><td>엔지니어드 메쉬</td><td>엔지니어드 메쉬 (90%+ 재활용)</td><td>지속가능 소재</td></tr>
-    <tr><td><strong>최적 페이스</strong></td><td>4:00–5:30 /km</td><td>4:00–5:00 /km</td><td>3이 살짝 더 빠른 영역</td></tr>
-    <tr><td><strong>토박스 / 와이드</strong></td><td>표준 (토박스 73.3mm) / 와이드 없음</td><td>표준 / 와이드 없음</td><td>둘 다 와이드 미제공</td></tr>
-  </tbody>
-</table>
-
-<h2>핵심 변화 — PEBA 단일 감성 vs TPEE 듀얼 폼</h2>
-
-<p>플래시 2와 3의 가장 본질적인 차이는 <strong>상단 폼 소재를 바꿔 라이드의 '캐릭터'를 다시 잡았다</strong>는 점입니다. 무게·로커 지오메트리 같은 골격은 거의 그대로 두고, 발이 닿는 첫 감촉과 튕겨나가는 마무리를 손봤습니다.</p>
-
-<div class="callout warning">
-  <span class="callout-icon">🔄</span>
-  <div class="callout-body">
-    <p class="callout-title">'PEBA의 통통 튐' vs 'TPEE 부드러움 + EVA 받침'</p>
-    <table>
-      <thead>
-        <tr><th></th><th>플래시 2 — Enerzy Lite+ (PEBA) 기반</th><th>플래시 3 — ENERZY XP(TPEE) + NXT(EVA)</th></tr>
-      </thead>
-      <tbody>
-        <tr><td><strong>상단 폼</strong></td><td>Enerzy Lite+ (PEBA)</td><td>ENERZY XP (TPEE)</td></tr>
-        <tr><td><strong>착지 첫 감촉</strong></td><td>탄탄하게 바닥을 치는 직접적 느낌</td><td>한 번 살짝 빠졌다가 받쳐주는 부드러운 터치</td></tr>
-        <tr><td><strong>푸시오프</strong></td><td>PEBA 특유의 빠른 반발</td><td>TPEE 탄성 + EVA 받침의 이중 푸시 (반응성 점수 +2)</td></tr>
-        <tr><td><strong>플레이트</strong></td><td>유리섬유 Wave(곡선형) — 롤링감 강조</td><td>유리섬유 강화 나일론(평판형) — 안정적 추진</td></tr>
-        <tr><td><strong>성격</strong></td><td>장난기 있는 '재미형' 템포 트레이너</td><td>레이스데이까지 노린 '진중한' 템포 트레이너</td></tr>
-      </tbody>
-    </table>
-  </div>
-</div>
-
-<p>요약하면 <strong>2는 "재미있게 굴러가는 미드풋 장난감"에 가깝고, 3은 "서브 3:30 레이스에도 신을 수 있는 진중한 트레이너"</strong> 쪽으로 무게중심을 옮겼습니다. 스택을 2mm 이상 올리면서도 무게를 5g만 늘린 건, 상단 폼을 더 가벼운 TPEE 계열로 바꿔 쿠션과 경량을 동시에 가져간 설계입니다.</p>
-
-<h2>5가지 핵심 변화 점검</h2>
-
-<h3>1. 상단 폼 PEBA → ENERZY XP(TPEE) ✅ 가장 큰 변화</h3>
-<p>플래시 2의 Enerzy Lite+(PEBA)가 직접적이고 탄탄한 반발이었다면, 3의 ENERZY XP는 <strong>착지 시 한 박자 부드럽게 받아준 뒤 튕겨내는 이중 구조</strong>입니다. "2는 딱딱하게 바닥을 친다"고 느꼈던 러너에게는 환영할 변화이고, 반대로 "PEBA의 즉각적인 반발이 좋았다"는 러너에게는 다소 무뎌졌다고 느껴질 수 있습니다. 취향이 갈리는 지점이니 가능하면 두 폼을 직접 밟아보고 결정하세요.</p>
-
-<h3>2. 힐 스택 35.2→40.0mm ✅ 쿠션 여유 ↑, 장거리 부담 ↓</h3>
-<p>힐은 4.8mm 두꺼워졌고 전족부는 거의 같습니다(32.3→32.5mm). 쿠션 점수도 7/10에서 10/10으로 올라, <strong>하프~템포 후반부의 다리 보호 여유가 늘었습니다.</strong> 3의 최적 페이스가 4:00–5:00으로 2(4:00–5:30)보다 살짝 빠른 영역에 잡힌 것도, 늘어난 스택과 TPEE 탄성 덕에 레이스데이 쪽으로 성격이 이동했음을 보여줍니다.</p>
-
-<h3>3. 드롭 2.9→7.5mm ⚠️ 3은 저드롭에서 벗어남</h3>
-<p>RunRepeat 랩 실측 드롭은 2가 2.9mm, 3이 7.5mm로 <strong>3은 저드롭이 아닙니다</strong>. 극단적 저드롭은 2에만 해당해, 힐스트라이커가 2를 신으면 초반 2주는 아킬레스·종아리에 부담이 옵니다. 단, 3은 무릎 부담 등급이 <strong>caution</strong>으로 잡혀 있어(2는 knee good) 미드풋 착지 자체에 더 공격적인 세팅이라는 점은 유념하세요.</p>
-
-<h3>4. 무게 +5g (239→244g) ↔ 사실상 동일</h3>
-<p>스택을 2mm 이상 올리고도 무게 증가가 5g에 그칩니다. 체감상 차이가 거의 없는 수준이고, 둘 다 240g 안팎의 경량 템포 영역에 머뭅니다.</p>
-
-<h3>5. 내구성 600→500km ⚠️ 3이 100km 짧다</h3>
-<p>3의 내구성이 500km로 2(600km)보다 짧게 잡혔습니다. km당 비용으로 보면 2가 332원, 3이 458원입니다. <strong>템포·레이스 전용으로만 굴리는 운용</strong>을 전제로 한 수치이니, 데일리까지 겸하려 했다면 두 신발 모두 권장 운용 범위를 벗어납니다. 데일리는 따로 두세요.</p>
-
-<h2>상황별 구매 결정 매트릭스</h2>
-
-<table>
-  <thead>
-    <tr><th>본인 상황</th><th>추천</th><th>이유</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>"2가 좀 딱딱했다" + 부드러운 착지 선호</td><td><strong>3</strong></td><td>ENERZY XP(TPEE)로 첫 터치 부드러움 ↑</td></tr>
-    <tr><td>PEBA의 즉각 반발·롤링 장난기가 좋다</td><td><strong>2 (세일)</strong></td><td>곡선형 Wave 플레이트 + PEBA 직접 반발</td></tr>
-    <tr><td>서브 3:30 레이스데이 겸용</td><td><strong>3</strong></td><td>스택 ↑·4:00–5:00 최적 페이스로 레이스 영역</td></tr>
-    <tr><td>가성비 + 템포런 위주</td><td><strong>2 (세일 13~15만원)</strong></td><td>3 출시로 2 가격 인하, 600km 내구성</td></tr>
-    <tr><td>하프 후반 다리 보호 여유 필요</td><td><strong>3</strong></td><td>힐 40.0mm 스택으로 후반 쿠션 여유</td></tr>
-    <tr><td>2 사용 중 + 400km 이내 멀쩡</td><td><strong>2 계속</strong></td><td>업그레이드 가치 제한적</td></tr>
-    <tr><td>힐스트라이커 / 과내전 입문</td><td>둘 다 비추</td><td>2는 2.9mm 저드롭, 둘 다 낮은 안정성 — 안정화로 분리</td></tr>
-    <tr><td>발볼 4E 이상 넓은 발</td><td>둘 다 시착 필수</td><td>와이드 옵션 미제공, 표준 토박스</td></tr>
-    <tr><td>친환경 소재 선호</td><td><strong>3</strong></td><td>어퍼 90%+ 재활용 소재</td></tr>
-  </tbody>
-</table>
-
-<h2>가격 시나리오 — 2 세일 타이밍이 결정적</h2>
-
-<div class="callout success">
-  <span class="callout-icon">💰</span>
-  <div class="callout-body">
-    <p class="callout-title">플래시 2 vs 3 가격 운용 전략</p>
-    <ul>
-      <li><strong>지금 (3 출시 직후):</strong> 3 정가 199,000원 / 2는 189,000원에서 인하 진입 → 2를 13~15만원대로 잡으면 km당 비용이 3보다 확실히 유리</li>
-      <li><strong>시즌 오프 (여름~가을):</strong> 2 재고 정리로 12~14만원대 가능. 단 사이즈·컬러 선택폭이 빠르게 줄어듦 (와이드가 없어 본인 사이즈가 핵심)</li>
-      <li><strong>레이스 시즌 직전 (가을 마라톤 전):</strong> 3 신상 수요 ↑로 풀가 유지 경향. 레이스데이 확정이면 일찍 확보가 안전</li>
-      <li><strong>겨울:</strong> 두 모델 모두 폼 경화 이슈(2는 겨울 경화율 36%, winterCompatibility=fair). 한겨울 본격 활용보다 봄~가을 시즌 신발로 보는 게 현실적</li>
-    </ul>
-  </div>
-</div>
-
-<p><strong>가장 합리적 액션:</strong></p>
-<ul>
-  <li><strong>템포런 위주 + 가성비:</strong> 3 출시로 가격이 빠진 2를 본인 사이즈로 빠르게 확보 (와이드가 없어 사이즈 품절이 곧 기회 종료)</li>
-  <li><strong>레이스데이 + 후반 쿠션 여유 우선:</strong> 3 정가를 감수. 힐 스택 +4.8mm(랩 실측)와 TPEE 부드러움이 하프 이상에서 값을 함</li>
-  <li><strong>"폼 감촉을 직접 비교하고 싶다":</strong> 매장에서 2·3 동시 시착. PEBA의 직접 반발과 TPEE의 부드러운 터치는 5분만 걸어봐도 갈림</li>
-</ul>
-
-<h2>한국 러너 부상별 권장</h2>
-
-<table>
-  <thead>
-    <tr><th>부상·체형</th><th>추천</th><th>근거</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>아킬레스건염 이력</td><td><strong>3</strong></td><td>스택 ↑로 착지 충격 분산 여유 (achilles: 2=caution → 3=good)</td></tr>
-    <tr><td>족저근막염</td><td>2 = 3</td><td>둘 다 good — 단 2는 저드롭이라 적응기 필요</td></tr>
-    <tr><td>무릎 통증 (러너스 니)</td><td><strong>2</strong></td><td>knee: 2=good vs 3=caution, 3이 더 공격적 세팅</td></tr>
-    <tr><td>정강이 부목 (Shin Splints)</td><td>2 = 3</td><td>둘 다 good</td></tr>
-    <tr><td>평발 + 과내전</td><td>둘 다 비추</td><td>flatFoot fair·안정성 5~6/10, 안정화로 분리 권장</td></tr>
-    <tr><td>힐스트라이크 습관</td><td>둘 다 주의</td><td>2는 2.9mm 저드롭, 최소 2주 적응기 필수</td></tr>
-  </tbody>
-</table>
-
-<p>본인 발 특성·부상 이력에 맞춘 후보는 <a href="/recommend">1분 러닝화 추천</a>에서 받을 수 있습니다. 무릎이 걱정된다면 <a href="/blog/knee-pain-running-shoes">무릎 통증 러너 신발 가이드 →</a>, 본인이 과내전인지부터 확인하려면 <a href="/blog/pronation-type-running-shoe-guide-2026">프로네이션 타입별 러닝화 가이드 →</a>를 먼저 보세요.</p>
-
-<h2>비슷한 대안 — 템포 트레이너 / 슈퍼트레이너</h2>
-
-<p>미즈노 외에도 같은 '템포 + 레이스데이 겸용' 영역의 신발이 있습니다:</p>
-
-<ul>
-  <li><a href="/shoes/mizuno-wave-rebellion-flash-2">웨이브 리벨리온 플래시 2</a> — PEBA 직접 반발·롤링 장난기, 세일 진입 가성비</li>
-  <li><a href="/shoes/mizuno-wave-rebellion-flash-3">웨이브 리벨리온 플래시 3</a> — TPEE 듀얼 폼·스택 ↑, 레이스데이 겸용</li>
-  <li><a href="/shoes/saucony-endorphin-speed-5">사코니 엔돌핀 스피드 5</a> — 나일론 플레이트 슈퍼트레이너의 기준점, 폭넓은 활용</li>
-  <li><a href="/shoes/adidas-adizero-evo-sl">아디다스 아디제로 EVO SL</a> — 플레이트 없는 라이트스트라이크 프로, 가볍고 다용도</li>
-  <li><a href="/shoes/nike-zoom-fly-6">나이키 줌플라이 6</a> — 카본 플레이트 트레이너, 묵직하지만 단단한 추진 (플래시 2 대안)</li>
-  <li><a href="/shoes/new-balance-rebel-v5">뉴발란스 리벨 v5</a> — 플레이트 없는 경량 데일리/템포, 부드러운 미드풋 라이드 (플래시 3 대안)</li>
-</ul>
-
-<h2>FAQ</h2>
-
-<h3>Q. 2 → 3 업그레이드 가치 있나요?</h3>
-<p>플래시 2가 400km 이내로 멀쩡하다면 그냥 굴리세요. <strong>2의 직접적인 PEBA 반발에 만족했다면 굳이 3으로 갈 이유는 약합니다.</strong> 반대로 "착지가 좀 딱딱했다", "하프 후반 다리가 빨리 갔다"면 3의 TPEE 부드러움과 힐 +4.8mm 스택(랩 실측 35.2→40.0mm)이 체감되는 업그레이드입니다.</p>
-
-<h3>Q. 둘 다 풀코스 레이스에 신을 수 있나요?</h3>
-<p>가능은 하지만 목적이 다릅니다. 두 신발 모두 카본 슈퍼슈즈가 아니라 <strong>유리섬유 계열 플레이트의 템포 트레이너</strong>입니다. 3이 스택과 TPEE 덕에 하프~풀 후반 버티기에 조금 더 유리하지만, 본격적인 PB 도전 풀코스라면 카본 레이서를 따로 두는 게 정석입니다. 플래시 라인은 '레이스데이 겸 템포런'의 중간 무기로 보세요.</p>
-
-<h3>Q. 발볼이 넓은데 둘 중 뭐가 나은가요?</h3>
-<p>아쉽게도 <strong>두 모델 다 와이드 옵션이 없습니다.</strong> 토박스는 표준(2 기준 랩 73.3mm)이라 발볼 넓은 한국 러너에게는 약간 빡빡할 수 있어요. 반 사이즈 업 또는 매장 시착이 필수이고, 발볼 106mm 이상이라면 다른 모델을 검토하는 게 안전합니다. 발볼 이슈는 <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너 신발 가이드 →</a>를 참고하세요.</p>
-
-<h3>Q. 힐로 착지하는데 신어도 되나요?</h3>
-<p>권하지 않습니다. 2(랩 드롭 2.9mm)는 <strong>극단적 저드롭 + 힐 베벨 로커</strong> 설계라 힐스트라이크 습관이 있으면 초반에 아킬레스건이 당깁니다. 3은 랩 드롭이 7.5mm로 높아졌지만 무릎 부담 등급이 caution이라 힐스트라이커에게는 여전히 권하지 않습니다. 굳이 미드풋 전환을 목표로 한다면 최소 2주 적응기를 두고 거리를 천천히 늘리세요. 착지 교정 의도 없이 그냥 편한 데일리를 찾는다면 이 라인은 맞지 않습니다.</p>
-
-<h3>Q. 미즈노 처음인데 입문용으로 괜찮나요?</h3>
-<p>입문용은 아닙니다. 두 신발 모두 <strong>미드풋/포어풋 착지가 어느 정도 잡힌 중급 이상</strong>을 전제로 합니다. 미즈노 첫 신발이라면 데일리 라인(웨이브 라이더)이나 안정화(웨이브 인스파이어)로 시작한 뒤, 템포런의 재미를 알게 됐을 때 플래시로 넘어오는 순서를 권합니다. <a href="/blog/first-running-shoe-guide-2026">첫 러닝화 고르는 법 →</a>도 함께 보세요.</p>
-
-<h2>결론 — 내 추천</h2>
-
-<div class="callout success">
-  <span class="callout-icon">🎯</span>
-  <div class="callout-body">
-    <p class="callout-title">'직접 반발의 2' vs '진중해진 3' — 취향과 용도로 갈립니다</p>
-    <p><strong>템포런 위주 + 가성비 우선 + PEBA의 직접적인 롤링이 좋다</strong>면 <a href="/shoes/mizuno-wave-rebellion-flash-2">플래시 2</a>를 세일 진입 시점(13~15만원대)에 본인 사이즈로 잡는 게 합리적입니다. 600km 내구성과 곡선형 Wave 플레이트의 장난기가 매력이죠. 단 와이드가 없으니 사이즈 품절 전에 움직이세요.</p>
-    <p><strong>레이스데이 겸용 + 착지 부드러움 + 하프 후반 다리 보호 여유</strong>가 우선이라면 <a href="/shoes/mizuno-wave-rebellion-flash-3">플래시 3</a> 정가(199,000원)를 감수할 가치가 있습니다. ENERZY XP(TPEE) 듀얼 폼과 힐 +4.8mm 스택(랩 실측), 두 단계 오른 반응성 점수가 4:00–5:00 페이스 영역에서 값을 합니다.</p>
-    <p><strong>둘 다 처음이라 감을 못 잡겠다</strong>면 매장에서 2·3을 동시에 5분씩 밟아보세요. PEBA의 직접 반발과 TPEE의 부드러운 터치는 짧게 걸어봐도 명확히 갈립니다. 단, 어느 쪽이든 힐스트라이커·과내전 입문자에게는 권하지 않습니다.</p>
-  </div>
-</div>
-
-<div class="affiliate-cta">
-  <p class="affiliate-cta-label">상세 정보 보기</p>
-  <div class="affiliate-cta-buttons">
-    <a href="/shoes/mizuno-wave-rebellion-flash-3" class="affiliate-btn pending">
-      <span class="affiliate-btn-store">상세</span>
-      <span class="affiliate-btn-product">웨이브 리벨리온 플래시 3 상세 →</span>
-    </a>
-    <a href="/shoes/mizuno-wave-rebellion-flash-2" class="affiliate-btn pending">
-      <span class="affiliate-btn-store">상세</span>
-      <span class="affiliate-btn-product">웨이브 리벨리온 플래시 2 상세 →</span>
-    </a>
-  </div>
-  <p class="affiliate-disclosure">광고 표기: 일부 링크는 제휴 수수료를 받을 수 있습니다.</p>
-</div>
-
-<h2>다른 세대 비교</h2>
-
-<p>플래시가 "미드풋 템포 트레이너"라면, 데일리·쿠션·카본 영역은 다른 신발이 답입니다. 다른 브랜드의 최신 세대 교체도 같은 관점으로 정리해 두었습니다:</p>
-
-<ul>
-  <li><a href="/blog/adidas-supernova-rise-2-vs-3-comparison">아디다스 슈퍼노바 라이즈 2 vs 3 — 데일리 쿠션 세대 비교</a></li>
-  <li><a href="/blog/puma-deviate-nitro-3-vs-4-comparison">푸마 디비에이트 나이트로 3 vs 4 — 플레이트 데일리 세대 비교</a></li>
-  <li><a href="/blog/brooks-glycerin-max-1-vs-2-comparison">브룩스 글리세린 맥스 vs 맥스 2 — 맥시멀 쿠션 세대 비교</a></li>
-  <li><a href="/blog/asics-superblast-2-vs-3-comparison">아식스 슈퍼블라스트 2 vs 3 — 슈퍼트레이너 세대 비교</a> (플래시와 같은 영역)</li>
-  <li><a href="/blog/saucony-endorphin-pro-4-vs-5-comparison">사코니 엔돌핀 프로 4 vs 5 — 가성비 카본 레이서 세대 비교</a></li>
-</ul>
-
-<h2>관련 글</h2>
-
-<ul>
-  <li><a href="/blog/carbon-plate-running-shoes-lineup-tier-guide-2026">카본 플레이트 러닝화 비교 — 플레이트 슈즈가 처음이라면</a></li>
-  <li><a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너 추천 신발 — 토박스 실측 정리</a></li>
-  <li><a href="/blog/pronation-type-running-shoe-guide-2026">프로네이션 타입별 러닝화 가이드 2026</a></li>
-  <li><a href="/blog/knee-pain-running-shoes">무릎 통증 러너 신발 가이드</a></li>
-  <li><a href="/blog/first-running-shoe-guide-2026">첫 러닝화 고르는 법 2026</a></li>
-</ul>
-
-<p><small>출처: 미즈노 공식 제품 정보(웨이브 리벨리온 플래시 2·3) / allrunabout.com 신발 DB(2026-06-10 기준 specs·스택·드롭·가격·부상 등급). 본 비교는 DB의 확정 수치(무게·스택·드롭·가격·1–10 점수)와 미드솔 구성 변경점 중심으로 작성했으며, RunRepeat SA/HA/에너지 리턴% 같은 랩 정밀 수치는 detailedSpecs에 명시된 항목만 인용했습니다. 일부 수치는 공식 발표·전작 기준 추정이 포함될 수 있으며, 신상(플래시 3) 장기 사용 데이터가 쌓이면 업데이트 예정입니다.</small></p>
+<p><strong>2026-11-10 원문 대조 업데이트.</strong> 제조사 공시·실험실 검체·개인 착화 의견과 한국 상품 캐시를 구분합니다. 자체 착화 후기가 아닌 원문 기반 분석입니다.</p><h2>먼저 볼 차이</h2><p>두 모델 모두 카본이 아닌 유리섬유 계열 Wave 구조입니다.3의 판은 DOR 안에서 전장·전장 아님 설명이 상충해 길이를 확정하지 않습니다.</p><p>큰 힐 베벨·토스프링과 절단 실측 드롭은 별개로 읽어야 합니다. 힐 착지 러너는 금지·아킬레스에 무리가 온다는 모델별 임상 처방을 제거했습니다.</p><figure><img src="/images/shoes/mizuno/waverebellionflash3/side.webp" alt="플래시3 — 판 소재뿐 아니라 낮은 앞코·칼라 접촉을 확인" loading="lazy"/><figcaption>플래시3 — 판 소재뿐 아니라 낮은 앞코·칼라 접촉을 확인</figcaption></figure><div class="table-wrap"><table><thead><tr><th>모델</th><th>무게 · 공시 출처 별도 표기</th><th>스택·드롭 · 공시 출처 별도 표기</th><th>힐/전족 SA</th><th>힐/전족 리턴</th></tr></thead><tbody><tr><td>mizuno-wave-rebellion-flash-2</td><td>239g</td><td>35.2/32.3mm · 2.9mm</td><td>148/117</td><td>54.9/59.6%</td></tr><tr><td>mizuno-wave-rebellion-flash-3</td><td>244g</td><td>40/32.5mm · 7.5mm</td><td>170/122</td><td>68.1/65.6%</td></tr></tbody></table></div><p>표의 값은 RunRepeat 검체 또는 별도 표시한 DOR 소개 공시입니다. DOR 소개는 독립 실측이 아닙니다. 일반 정책은 남성 US9지만 개별 라벨·폭·보정 여부는 미확인입니다. 공시와 동일한 검체로 단정하지 않습니다. SA는 충격흡수, 리턴은 시험에서 반환된 에너지 비율이며 부드러움·개인 기록·임상 보호를 뜻하지 않습니다. HA는 구방식, AC는 별도 경도 척도여서 환산하지 않습니다. <a href="https://runrepeat.com/testing-methodology" target="_blank" rel="noopener noreferrer">RunRepeat 측정법</a></p><h2>폼 변화보다 앞코 길이·칼라 접촉이 먼저일 수도 있습니다</h2><p>Andrea는2에서 반업으로 길이·폭을 해결했지만3에서는 칼라 물집 때문에 시험을 이어가지 못했습니다. Matt도3에서10.5가 평소10처럼 맞았다고 적었습니다. 이런 경험은 개인의 시착 질문을 구체화하지만 전체 러너의 반업 규칙이나 부상 발생률은 아닙니다.</p><p>3의 젖은 접지에서도 Matt는 보통, Andrea는 좋게 느꼈습니다. RR 콘크리트 계수 하나로 이 차이를 지우지 않습니다. 와이드 부재·500/600km 수명·정확 현재1만원 차이와2주 적응 처방은 확인한 사실로 반복하지 않습니다.</p><h2>플래시2 — 핏과 주행에서 갈리는 지점</h2><p>RR 유리섬유 Wave, DOR 유리섬유 주입 나일론으로 설명합니다. 카본이라고 부르지 않습니다. 강한 힐 베벨·토스프링은 공시 드롭·전체 최대 두께와 별개입니다.</p><p>RR 내부 최광폭 94.8mm·엄지 73.3mm·높이 27.4mm입니다. 다른 위치인 외부 바닥 폭과 구분하고 실제 규격에서 길이·높이·고정을 확인하세요.</p><p>DOR Matt(남성 US10)는 짧고 낮아지는 앞코와 얇은 혀 때문에 끈 조절이 필요했고 앞쪽 착지의 전환을 선호했습니다. David는 밀착 고정과 리듬을 좋아했지만 회전·흙길은 덜 편했고 실제 사이즈는 미확인입니다. Andrea는 여성US9.5를 반품하고US10으로 길이·폭을 해결했으며 이지·업템포 롱런은 좋았으나 더 빠른 강도의 반응은 덜했습니다.</p><h2>플래시2 — 공시·한국 판매 확인 범위</h2><p>DOR 소개243g(남성 US9)·35/34.5mm·0.5mm와 RR239g·35.2/32.3mm·2.9mm를 구분합니다. 강한 베벨 때문에 지정 힐 위치와 중족 최대 높이를 섞지 않습니다.</p><p>한국 공식 캐시: J1GC243501 성별 표기 미확인 폭 미확인 소비자가189,000원·판매캐시151,200원. 현재 가격·폭별 선택 재고는 미확인입니다. 공통 SOLD OUT 템플릿과 장바구니 버튼을 실제 재고로 보지 않으며 검색 미발견을 단종·미출시로 단정하지 않습니다.</p><p>14.8HA는 구방식이며 AC 미확인입니다. 54.9/59.6% 리턴과 바운시한 개인 체감은 다른 정보입니다. 5.5cm 토스프링을 전족 스택으로 쓰지 않습니다. 힐 착지 금지·아킬레스 손상 보장·2주 적응 처방·600km 수명을 제거했습니다.</p><h2>플래시3 — 핏과 주행에서 갈리는 지점</h2><p>비카본 유리섬유 주입 나일론입니다. DOR 같은 문단의 전장·전장 아님 설명이 상충하여 정확 플레이트 길이는 미확인입니다.</p><p>RR 내부 최광폭 92.3mm·엄지 70.2mm·높이 25.6mm입니다. 다른 위치인 외부 바닥 폭과 구분하고 실제 규격에서 길이·높이·고정을 확인하세요.</p><p>DOR Matt는 남성US10/10.5 중10.5가 평소10처럼 맞았고 짧은 테이퍼·얇은 혀의 끈 압박을 적었습니다. 이지·템포의 바운스는 좋았으나 외측 플레어가 안쪽으로 밀었고 젖은 접지는 보통이었습니다. Andrea는 여성US9.5/10을 신었지만 기울어진 칼라의 아킬레스 부위 물집으로5마일+8마일 주행 뒤 시험을 중단했습니다. 바운스와 젖은 접지는 좋게 느꼈습니다.</p><h2>플래시3 — 공시·한국 판매 확인 범위</h2><p>DOR 소개 남성8.6oz(US9)/여성7.1oz(US8)·37.5/34.5mm·3mm, RR244g·40/32.5mm·7.5mm를 구분합니다. DOR의 비어 있는g값을 oz환산으로 채우지 않습니다.</p><p>한국 공식 캐시: J1GC251701 성별 표기 미확인 폭 미확인 소비자가199,000원·판매캐시159,200원. 현재 가격·폭별 선택 재고는 미확인입니다. 공통 SOLD OUT 템플릿과 장바구니 버튼을 실제 재고로 보지 않으며 검색 미발견을 단종·미출시로 단정하지 않습니다.</p><p>11.5HA는 구방식이며 AC 미확인입니다. RR 전족 본문32.6mm·표32.5mm, 브랜드8.6g 이상값을 구분합니다. Matt·Andrea의 젖은 접지 체감과 콘크리트0.61을 합쳐 만능 접지를 보장하지 않습니다. 물집은 개인 관찰로 유병률·질환 등급이 아니며500km·힐 착지 금지를 제거했습니다.</p><h2>구매 전에 실제로 확인할 것</h2><p>평소 양말·인솔로 앞쪽 길이와 발톱 위 공간, 끈을 조였을 때 발등 압박, 힐 고정과 칼라 마찰을 확인하세요. 발볼 너비 하나로 전체 핏을 결정하지 않습니다. 교환·반품 조건도 먼저 확인할 수 있습니다.</p><p>트레일에서는 자신의 주요 노면과 오르막·내리막·방향 전환에서 고정과 전환을 살펴야 합니다. 젖은 콘크리트 시험 하나가 바위·진흙 접지를 보장하지 않습니다. 통증·저림을 견뎌야 한다는 규칙이나 모델별 질환 예방 효과는 이번 자료로 확인하지 못했습니다.</p><h2>확인한 원문과 접근 범위</h2><ul><li><a href="https://kor.mizuno.com/product/wave-rebellion-flash-2/9775/" target="_blank" rel="noopener noreferrer">한국 공식 J1GC243501</a> — 캐시 2 months ago; Explicit product image 품절 in cached original; 현재 가격·선택 재고 미확인.</li><li><a href="https://runrepeat.com/mizuno-wave-rebellion-flash-2" target="_blank" rel="noopener noreferrer">플래시2 RR 원문</a> — 정확 모델 검체. 제조사 공시와 분리.</li><li><a href="https://www.doctorsofrunning.com/mizuno-wave-rebellion-flash-2-review/" target="_blank" rel="noopener noreferrer">플래시2 DOR 원문</a> — 소개 공시·실제 착화 사이즈·개인의견 구분.</li><li><a href="https://kor.mizuno.com/product/wave-rebellion-flash-3/10795/" target="_blank" rel="noopener noreferrer">한국 공식 J1GC251701</a> — 캐시 2 weeks ago; Template cart/buy/reservation/SOLD OUT present; actual SKU option availability unresolved; 현재 가격·선택 재고 미확인.</li><li><a href="https://runrepeat.com/mizuno-wave-rebellion-flash-3" target="_blank" rel="noopener noreferrer">플래시3 RR 원문</a> — 정확 모델 검체. 제조사 공시와 분리.</li><li><a href="https://www.doctorsofrunning.com/mizuno-wave-rebellion-flash-3-review/" target="_blank" rel="noopener noreferrer">플래시3 DOR 원문</a> — 소개 공시·실제 착화 사이즈·개인의견 구분.</li></ul>
 `,
+    updatedAt: "2026-11-10",
+    faqs: [
+      {
+        "question": "둘다 힐 착지는 피해야 하나요?",
+        "answer": "베벨·개인 전환 선호가 힐 착지의 임상 금지 근거는 아닙니다. 실제 착화에서 자연스러운지 확인하세요."
+      },
+      {
+        "question": "3은 전장 유리섬유 판인가요?",
+        "answer": "유리섬유 주입 나일론은 확인했지만 DOR의 판 길이 설명이 상충해 전장 여부는 미확인입니다."
+      },
+      {
+        "question": "3이 젖은 길에서 더 좋나요?",
+        "answer": "Matt·Andrea의 체감이 다르고 콘크리트 시험과 실제 노면도 다릅니다. 모든 표면 우위로 정하지 않습니다."
+      }
+    ],
   },
   {
     id: 'achilles-tendon-running-shoes-prevention-2026',

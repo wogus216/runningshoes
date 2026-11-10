@@ -5011,73 +5011,38 @@ export const posts_2026_09: BlogPost[] = [
     ],
   },
   {
-    id: 'mizuno-wave-horizon-8-review',
-    slug: 'mizuno-wave-horizon-8-review',
-    title: '미즈노 웨이브 호라이즌 8 후기 | 미디얼 러버월 삼중 구조 — 시장 최강 수준의 과내전 제어',
-    description:
-      '웨이브 호라이즌 8은 미디얼 포스트·미디얼 플레어·미디얼 러버월까지 삼중 안정 구조를 갖춘 미즈노의 프리미엄 안정화입니다. 179,000원으로 카야노 32보다 2만원 저렴하면서 42mm 스택의 듀얼 폼으로 쿠셔닝까지 챙겼습니다. 다만 323g으로 무거워 느린 페이스 조깅·워킹 전용입니다.',
-    thumbnail: '/images/blog/mizuno-wave-horizon-8-review.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-09-11',
-    category: 'review' as const,
-    readingTime: 7,
-    tags: ['미즈노 웨이브 호라이즌8', '안정화', '과내전', '미디얼 러버월'],
+    id: "mizuno-wave-horizon-8-review",
+    slug: "mizuno-wave-horizon-8-review",
+    title: "호라이즌8 리뷰 — 내측 고무월·폼 Wave, SW 규격과 실제 고정부터 확인",
+    description: "DOR 소개323g·42/34mm를 실측과 구분합니다. Matt·Bach의 다른 용도 선호, 한국 SW 캐시와 임상 교정·900km 단정 정정을 정리합니다.",
+    thumbnail: "/images/shoes/mizuno/wavehorizon8/side.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-09-11",
+    category: "review",
+    readingTime: 8,
+    tags: [
+      "호라이즌8",
+      "원문 대조",
+      "핏"
+    ],
     content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>미디얼 포스트 + 미디얼 플레어 + 미디얼 러버월 삼중 구조</strong> — 심한 과내전을 겨냥한 안정화 중에서도 개입이 강한 축입니다</li>
-    <li><strong>179,000원으로 <a href="/shoes/asics-gel-kayano-32">카야노 32</a>(199,000원)보다 2만원 저렴</strong>하면서 42mm 스택 듀얼 폼으로 쿠셔닝도 갖췄습니다</li>
-    <li><strong>323g으로 무겁습니다.</strong> 6~8분대 조깅·워킹 전용이지 빠른 페이스에는 맞지 않습니다</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">👟</span>
-  <div class="callout-body">
-    <p class="callout-title">한 줄 결론</p>
-    <p><strong>발이 안쪽으로 심하게 꺾이는 강한 과내전·평발 러너</strong>에게 가장 강력하게 추천할 수 있는 신발입니다. 빠른 페이스까지 소화하려 한다면 더 가벼운 안정화를 함께 보세요.</p>
-  </div>
-</div>
-
-<h2>삼중 안정 구조 — 카야노보다 개입이 직접적</h2>
-<p>미디얼 포스트와 미디얼 러버월을 겹친 구조는 발 안쪽을 벽처럼 막는 방식입니다. <a href="/shoes/asics-gel-kayano-33">카야노</a> 계열의 단계적 가이드나 브룩스의 GuideRails보다 <strong>개입이 훨씬 직접적</strong>입니다. 내전 각도를 물리적으로 제한하는 성격이라 과내전이 강한 경우에는 확실히 유효하지만, 지지가 과하게 느껴질 수도 있어 성향에 따라 호불호가 갈립니다. 42mm 스택의 ENERZY NXT+ENERZY 듀얼 폼이 이 지지 구조 위에서 쿠셔닝을 함께 담당합니다.</p>
-
-<h2>발볼·부상 — 한국 러너가 궁금해할 것들</h2>
-<ul>
-  <li><strong>"발볼 넓은데 괜찮나요?"</strong> — 토박스가 넓은(wide) 편이고 <strong>한국 공식몰은 발볼 표기 '넓음(4E)'인 SW 모델만 판매해</strong> 발볼 넓은 한국 러너에게 최적입니다</li>
-  <li><strong>"무릎 괜찮나요?"</strong> — 부상 예방 등급이 족저근막염·무릎 excellent(최상위), 아킬레스건·신 스플린트 good입니다</li>
-  <li><strong>"평발인데 괜찮을까요?"</strong> — 평발 호환성이 excellent입니다. 이 사이트가 다룬 안정화 중 가장 강한 지지력을 제공합니다</li>
-</ul>
-
-<h2>323g — 조깅·워킹 겸용, 속도는 부적합</h2>
-<p>323g이라는 무게는 러닝화보다 워킹·올데이 슈즈에 가까운 수준입니다. 6분~8분/km의 느린 조깅에서는 42mm 스택이 편안하게 받쳐주지만, <strong>페이스를 5분대로 올리면 무게가 그대로 부담이 됩니다.</strong> 조깅과 워킹을 겸하는 용도에서는 최상급이고, 속도 훈련이 목적이라면 다른 모델을 봐야 합니다.</p>
-
-<h2>가격 대비 가치</h2>
-<p>179,000원은 카야노 32(199,000원)보다 2만원 저렴합니다. 900km 내구성 기준 km당 약 199원으로 안정화 카테고리에서 운용 비용이 가장 낮은 축입니다. 더 가벼운 안정화를 원한다면 <a href="/shoes/brooks-adrenaline-gts-25">어드레날린 GTS 25</a>나 카야노 32와 비교해보세요.</p>
-
-<h2>누구에게 맞을까</h2>
-<ul>
-  <li><strong>심한 과내전·평발로 발목 불안정성이 큰 러너</strong> — 삼중 구조의 정확한 대상</li>
-  <li><strong>느린 페이스 조깅과 일상 워킹을 겸하려는 러너</strong></li>
-  <li>반대로 <strong>빠른 페이스 훈련까지 소화하려 하거나 가벼운 신발을 원한다면</strong> 다른 안정화 모델이 맞습니다</li>
-</ul>
-
-<h2>마무리</h2>
-<p>웨이브 호라이즌 8은 "지지를 최우선으로"라는 질문에 타협 없이 답한 신발입니다. 323g이라는 무게가 확실한 대가지만, 심한 과내전이나 평발로 다른 안정화로는 부족했던 러너에게는 이 정도의 개입이 필요한 경우가 실제로 있습니다.</p>
+<p><strong>2026-11-10 원문 대조 업데이트.</strong> 제조사 공시·실험실 검체·개인 착화 의견과 한국 상품 캐시를 구분합니다. 자체 착화 후기가 아닌 원문 기반 분석입니다.</p><h2>먼저 볼 차이</h2><p>호라이즌8은 내측 고무월과 폼 Wave 형상을 확인한 모델입니다. 이것이 ‘시장 최강 과내전 교정’이나 다른 안정화보다 강한 임상 효과를 뜻하지 않습니다.</p><p>한국 캐시는SW, DOR 착화 검체의 폭은 미확인입니다. 해외 리뷰의 넉넉한 앞발 체감을 한국SW 모든 사이즈의 핏으로 옮기지 않습니다. 실제 힐 고정과 회전 때 움직임을 확인할 수 있습니다.</p><figure><img src="/images/shoes/mizuno/wavehorizon8/side.webp" alt="호라이즌8 — 한국SW 상품과 리뷰어 검체 폭을 구분" loading="lazy"/><figcaption>호라이즌8 — 한국SW 상품과 리뷰어 검체 폭을 구분</figcaption></figure><div class="table-wrap"><table><thead><tr><th>모델</th><th>무게 · 공시 출처 별도 표기</th><th>스택·드롭 · 공시 출처 별도 표기</th><th>힐/전족 SA</th><th>힐/전족 리턴</th></tr></thead><tbody><tr><td>mizuno-wave-horizon-8</td><td>323g (DOR 소개)</td><td>42/34mm · 8mm (DOR 소개)</td><td>미확인/미확인</td><td>미확인/미확인%</td></tr></tbody></table></div><p>표의 값은 RunRepeat 검체 또는 별도 표시한 DOR 소개 공시입니다. DOR 소개는 독립 실측이 아닙니다. 일반 정책은 남성 US9지만 개별 라벨·폭·보정 여부는 미확인입니다. 공시와 동일한 검체로 단정하지 않습니다. SA는 충격흡수, 리턴은 시험에서 반환된 에너지 비율이며 부드러움·개인 기록·임상 보호를 뜻하지 않습니다. HA는 구방식, AC는 별도 경도 척도여서 환산하지 않습니다. <a href="https://runrepeat.com/testing-methodology" target="_blank" rel="noopener noreferrer">RunRepeat 측정법</a></p><h2>조깅 전용이라는 페이스 처방은 거뒀습니다</h2><p>Matt는 무게와 조금 거친 힐 전환 때문에 이지·롱런을 선호했지만 Bach는 스트라이드도 즐겼습니다. 이를6~8분/km에만 사용하라는 규칙으로 좁힐 근거는 없습니다. 실제 사용 목적에서 본인의 전환을 확인할 재료입니다.</p><p>323g·42/34mm는 DOR 소개 공시입니다. 정확8의 RR 독립 랩은 미확인입니다. 다른 EVA 신발의450km 실험을 이 모델900km 수명으로 연결한 설명과 km당199원, 카야노보다2만원 저렴하다는 현재가 비교도 제거했습니다.</p><h2>호라이즌8 — 핏과 주행에서 갈리는 지점</h2><p>내측 고무월과 폼 Wave 형상은 별도 카본 판의 존재 증거가 아닙니다. 정확 플레이트 유무·소재는 이번 범위에서 미확인입니다.</p><p>정확 모델 독립 랩 내부 치수는 미확인입니다. 한국 폭 규격·발가락 위 공간·중족·힐 고정을 실제 상품에서 확인하세요.</p><p>DOR Matt(남성 US10)는 넓고 높은 앞발·테이퍼, 빠른 회전의 약간 움직임과 단단한 둥근 카운터를 적었습니다. 부드럽지만 무겁고 힐이 조금 거칠어 이지·롱런을 선호했습니다. Bach(남성 US9.5)는 힐록으로 고정이 좋아지고 데일리·롱런·스트라이드를 즐겼습니다. 한국SW상품과 이들의 미확인 폭 검체를 같은 규격으로 보지 않습니다.</p><h2>호라이즌8 — 공시·한국 판매 확인 범위</h2><p>323g(남성 US9)/275g(여성 US8)·42/34mm·8mm는 DOR 소개 공시입니다. 정확8 RR 독립 랩은 미확인으로 전작 수치나 소개를 랩 실측으로 바꾸지 않습니다.</p><p>한국 공식 캐시: J1GC253102 성별 표기 미확인 SW (raw variant only) 소비자가179,000원·판매캐시179,000원; J1GC253154 성별 표기 미확인 SW (raw variant only) 소비자가179,000원·판매캐시179,000원. 현재 가격·폭별 선택 재고는 미확인입니다. 공통 SOLD OUT 템플릿과 장바구니 버튼을 실제 재고로 보지 않으며 검색 미발견을 단종·미출시로 단정하지 않습니다.</p><p>한국 SW를 임의로2E/4E로 변환하지 않습니다. EVA450km 실험의 다른 신발 결과로 이 모델900km를 보장한 설명과 심한 과내전 해법·6~8분/km 처방·교정 등급을 제거했습니다.</p><h2>구매 전에 실제로 확인할 것</h2><p>평소 양말·인솔로 앞쪽 길이와 발톱 위 공간, 끈을 조였을 때 발등 압박, 힐 고정과 칼라 마찰을 확인하세요. 발볼 너비 하나로 전체 핏을 결정하지 않습니다. 교환·반품 조건도 먼저 확인할 수 있습니다.</p><p>트레일에서는 자신의 주요 노면과 오르막·내리막·방향 전환에서 고정과 전환을 살펴야 합니다. 젖은 콘크리트 시험 하나가 바위·진흙 접지를 보장하지 않습니다. 통증·저림을 견뎌야 한다는 규칙이나 모델별 질환 예방 효과는 이번 자료로 확인하지 못했습니다.</p><h2>확인한 원문과 접근 범위</h2><ul><li><a href="https://kor.mizuno.com/product/wave-horizon-8-sw/10178" target="_blank" rel="noopener noreferrer">한국 공식 J1GC253102</a> — 캐시 2 weeks ago; Unselected template includes cart/reservation/SOLD OUT; no explicit item sold-out image verified.; 현재 가격·선택 재고 미확인.</li><li><a href="https://kor.mizuno.com/product/wave-horizon-8-sw/10179/" target="_blank" rel="noopener noreferrer">한국 공식 J1GC253154</a> — 캐시 2 weeks ago; Unselected template includes cart/reservation/SOLD OUT; no explicit item sold-out image verified.; 현재 가격·선택 재고 미확인.</li><li><a href="https://www.doctorsofrunning.com/mizuno-wave-horizon-8-review-2025/" target="_blank" rel="noopener noreferrer">호라이즌8 DOR 원문</a> — 소개 공시·실제 착화 사이즈·개인의견 구분.</li></ul>
 `,
     faqs: [
       {
-        question: '카야노 32 대신 이걸 사야 할 이유가 있나요?',
-        answer:
-          '과내전이 특히 심하다면 미디얼 러버월까지 더해진 삼중 구조가 카야노보다 강한 지지를 제공합니다. 가격도 2만원 저렴합니다. 다만 무게가 323g으로 카야노보다 무거워, 지지의 강도와 무게를 맞바꾸는 선택입니다.',
+        "question": "심한 과내전에 가장 좋나요?",
+        "answer": "모델별 임상 교정 우위를 확인하지 못해 해당 순위·등급을 제거했습니다."
       },
       {
-        question: '이 신발로 빠르게 뛸 수 있나요?',
-        answer:
-          '권장하지 않습니다. 323g으로 무거워 5분대 이상 페이스에서는 부담이 됩니다. 6분~8분/km의 조깅이나 워킹 겸용으로 쓰는 것이 맞습니다.',
+        "question": "한국SW는4E인가요?",
+        "answer": "이번 정확 원문에서는SW 표기를 확인했지만 숫자 폭 규격은 미확인입니다. 임의로2E/4E로 바꾸지 않습니다."
       },
+      {
+        "question": "323g은 랩 무게인가요?",
+        "answer": "DOR 소개 남성US9 공시이며 정확8 RR 실측이 아닙니다."
+      }
     ],
+    updatedAt: "2026-11-10",
   },
   {
     id: 'mizuno-wave-inspire-21-review',

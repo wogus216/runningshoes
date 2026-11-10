@@ -69,8 +69,25 @@ describe("추천 결함 회귀 방지", () => {
   it("트레일 목적이면 트레일화가 결과를 채운다", () => {
     const result = recommendShoes(shoes, { ...baseProfile, purpose: "trail", budget: "high" });
     expect(result.length).toBeGreaterThan(0);
-    const trail = result.filter((s) => s.category === "트레일");
-    expect(trail.length).toBeGreaterThanOrEqual(7);
+    expect(result.every((s) => s.category === "트레일")).toBe(true);
+    expect(result.every((s) => price(s) > 0)).toBe(true);
+
+    // 실제 DB의 확인 가격 개수는 바뀔 수 있다. 충분한 후보가 있을 때의 추천 수는
+    // 고정된 테스트 입력으로 확인하고, 가격 미확인 신발로 결과를 채우지 않는다.
+    const seed = shoes.find((s) => s.category === "트레일" && s.specs && s.koreanFootFit)!;
+    const known = Array.from({ length: 7 }, (_, i) => ({
+      ...seed, id: `trail-fixture-${i}`, slug: `trail-fixture-${i}`, price: 199000,
+    }));
+    const unknown = {
+      ...seed, id: "trail-unknown-price", slug: "trail-unknown-price", price: undefined,
+      priceAnalysis: seed.priceAnalysis ? { ...seed.priceAnalysis, msrp: undefined } : undefined,
+    };
+    const fixtureResult = recommendShoes([...known, unknown], {
+      ...baseProfile, purpose: "trail", budget: "high",
+    });
+    expect(fixtureResult).toHaveLength(7);
+    expect(fixtureResult.every((s) => s.category === "트레일")).toBe(true);
+    expect(fixtureResult.some((s) => s.id === unknown.id)).toBe(false);
   });
 
   it("트레일이 아닌 목적에는 트레일화가 새어 나오지 않는다", () => {
