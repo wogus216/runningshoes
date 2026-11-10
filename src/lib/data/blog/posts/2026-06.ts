@@ -1824,116 +1824,59 @@ export const posts_2026_06: BlogPost[] = [
     updatedAt: '2026-11-09',
   },
   {
-    id: 'world-marathon-majors-guide-2026',
-    slug: 'world-marathon-majors-guide-2026',
-    title: '세계 6대 마라톤(애벗 메이저) 완전정복 — 한국 러너의 도전 지도 | 신청법·난이도·비용·식스스타, 어디부터 갈까',
-    description: '도쿄·보스턴·런던·베를린·시카고·뉴욕 6대 메이저(+시드니 7번째)를 한 장에. 대회별 개최월·진입방식(추첨/자선/BQ)·코스 난이도·한국 접근성 비교표 + 나에게 맞는 첫 메이저 의사결정 트리 + 식스스타 메달까지. 각 대회 상세 가이드로 바로 연결되는 시리즈 관문입니다.',
-    thumbnail: '/images/blog/world-marathon-majors-guide-2026.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-06-13',
-    category: 'guide' as const,
-    readingTime: 10,
-    tags: ['세계 6대 마라톤', '애벗 월드 마라톤 메이저', '메이저 마라톤', '마라톤 메이저', '식스스타', '해외 마라톤', '마라톤 버킷리스트', '도쿄마라톤', '보스턴마라톤', '러닝 가이드'],
-    faqs: [
-      { question: '세계 6대 마라톤이 뭔가요? 시드니 합류로 7대인가요?', answer: '애벗 월드 마라톤 메이저 6대는 도쿄·보스턴·런던·베를린·시카고·뉴욕입니다. 2025년 시드니가 7번째 메이저로 합류했지만, 식스스타 메달은 여전히 6개 완주 기준입니다. 향후 케이프타운·상하이까지 9대로 확대되며 나인스타 메달이 도입될 예정입니다.' },
-      { question: '한국 러너에게 가장 쉬운 메이저는 어디인가요?', answer: '도쿄마라톤입니다. 인천에서 약 2시간·시차 0인 데다 코스도 평지 고속이고, 추첨·자선·One Tokyo Global 등 진입 경로가 다양해 첫 메이저로 가장 무난합니다.' },
-      { question: '가장 어려운 메이저는 어디인가요?', answer: '보스턴마라톤입니다. 6대 중 유일하게 추첨이 없어 BQ 자격기록 또는 거액 자선으로만 출전할 수 있습니다. 다만 BQ 기록은 미국까지 갈 필요 없이 서울·경주·춘천 같은 국내 공인 대회에서 만들어 제출할 수 있습니다.' },
-      { question: '추첨과 자선은 무엇이 다른가요?', answer: '추첨(발롯)은 무료로 응모해 운에 맡기는 방식이고, 자선은 단체별 최소 모금액을 약정하고 보장 출전권을 받는 방식입니다. 추첨이 마감된 뒤에는 자선이나 공식 투어 패키지가 현실적인 잔여 경로가 됩니다.' },
-      { question: '6대 메이저를 다 돌면 비용과 기간은 얼마나 드나요?', answer: '보통 여러 해에 걸쳐 한 대회씩 모읍니다. 대회마다 항공·숙박·참가비로 회당 수백만 원이 들고, 자선 경로면 모금액이 추가됩니다. 6대를 모두 완주하면 애벗 앱에 완주 기록을 등록해 식스스타 메달을 받습니다.' },
+    id: "world-marathon-majors-guide-2026",
+    slug: "world-marathon-majors-guide-2026",
+    title: "세계 메이저 마라톤 현황: 케이프타운 8번째 편입과 식스스타·신청 방식",
+    description: "공식은 케이프타운을 8번째 메이저로 소개합니다. 기존 6개 식스스타, 시드니·케이프타운의 인정 시기, 대회별 추첨·기록·모금 경로를 구분해 계획하는 방법입니다.",
+    thumbnail: "/images/blog/verified-world-marathon-majors-guide-2026-20261110.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-06-13",
+    category: "guide",
+    readingTime: 6,
+    tags: [
+      "세계 메이저 마라톤",
+      "8대 메이저",
+      "애벗 월드 마라톤 메이저",
+      "식스스타",
+      "케이프타운 마라톤",
+      "시드니마라톤",
+      "해외 마라톤"
     ],
-    content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>세계 6대 마라톤(애벗 월드 마라톤 메이저)</strong> = 도쿄·보스턴·런던·베를린·시카고·뉴욕. 2025년 <strong>시드니가 7번째 메이저</strong>로 합류했지만, 식스스타 메달은 아직 6개 기준입니다.</li>
-    <li><strong>진입 방식이 대회마다 다릅니다</strong> — 무료 추첨, 거액 자선, 그리고 보스턴만의 BQ(자격기록). 어디는 운, 어디는 돈, 어디는 실력이 필요하죠.</li>
-    <li><strong>한국 러너의 첫 메이저 1순위는 도쿄</strong>(인천 2시간·시차 0·평지). 이 글은 6대 메이저를 한 장에 비교하고, 당신에게 맞는 대회로 바로 연결하는 <strong>시리즈 관문</strong>입니다.</li>
-  </ul>
-</div>
+    faqs: [
+      {
+        "question": "지금도 메이저가 여섯 개인가요?",
+        "answer": "공식은 시드니와 케이프타운을 포함한 여덟 멤버를 소개합니다. 케이프타운의 첫 메이저 개최는 2027년 5월 23일이며 편입 시기와 첫 개최를 구분해야 합니다."
+      },
+      {
+        "question": "여덟 곳 중 아무 여섯 곳을 완주하면 식스스타인가요?",
+        "answer": "식스스타는 기존 도쿄·보스턴·런던·베를린·시카고·뉴욕 여섯 대회가 대상입니다. 시리즈 확대와 메달 조건은 다릅니다."
+      },
+      {
+        "question": "상하이도 확정됐나요?",
+        "answer": "이번 공식 안내는 남은 평가 통과를 조건으로 설명합니다. 정식 편입과 나인스타 실제 지급을 이미 완료한 사실로 쓰지 않았습니다."
+      },
+      {
+        "question": "한국 러너는 어느 대회부터 가는 게 가장 쉬운가요?",
+        "answer": "보편적인 난이도 순위를 만들지 않았습니다. 신청 경로·기록·모금 의무·휴가·실제 여행 비용을 자신의 조건으로 비교해야 합니다."
+      }
+    ],
+    content: `<p><small>2026년 11월 10일 대회·시리즈 공식 원문 대조. 신청 연도·선발 방식·비용·현재 진행 단계를 구분했습니다.</small></p>
 
-<div class="callout info">
-  <span class="callout-icon">🗺️</span>
-  <div class="callout-body">
-    <p class="callout-title">이 글의 역할 — 6대 메이저 도전 지도</p>
-    <p>아래 비교표 하나로 6대 메이저(+시드니)의 개최월·진입방식·코스 난이도·한국 접근성을 훑은 뒤, "나에게 맞는 첫 메이저"를 의사결정 트리로 고르세요. 각 대회의 신청법·자선·코스·비용 디테일은 <strong>개별 상세 가이드</strong>에 있고, 표와 트리에서 바로 연결됩니다. 모든 정보는 <strong>인천 출발·한국 여권</strong> 기준입니다.</p>
-  </div>
-</div>
+<p>‘세계 6대’라는 익숙한 표현만으로 현재 메이저 전체를 설명할 수 없다. <a href="https://www.worldmarathonmajors.com/six-star/majors" target="_blank" rel="noopener noreferrer">AbbottWMM 공식 메이저 목록</a>와 <a href="https://www.worldmarathonmajors.com/six-star/how-it-works" target="_blank" rel="noopener noreferrer">공식 식스스타·스타 인정 안내</a>는 케이프타운을 8번째 멤버로 소개한다. 다만 <strong>현재 시리즈의 구성과 식스스타 메달의 대상</strong>은 다르다. 도전할 대회를 고를 때 이 구분부터 하자.</p>
+<h2>기존 여섯 대회, 추가된 두 대회</h2>
+<table><thead><tr><th>구분</th><th>대회</th><th>기록할 차이</th></tr></thead><tbody><tr><td>식스스타의 기존 6개</td><td>도쿄·보스턴·런던·베를린·시카고·뉴욕</td><td>이 여섯 대회 완주가 식스스타 대상</td></tr><tr><td>시드니</td><td>2024년 11월 편입, 첫 메이저 대회 2025년</td><td>편입 발표와 첫 개최 연도를 구분</td></tr><tr><td>케이프타운</td><td>2026년 6월 8번째 편입, 첫 메이저 개최 2027년 5월 23일</td><td>2026 잠정 스타의 정식 전환은 별도 예외</td></tr></tbody></table>
+<p><a href="https://www.worldmarathonmajors.com/cape-town-major" target="_blank" rel="noopener noreferrer">케이프타운 편입·나인스타 조건 안내</a>는 상하이의 남은 평가 통과를 나인스타 도입 조건으로 설명한다. 상하이의 정식 편입·나인스타 실제 지급을 이미 완료된 사실로 쓰지 않았다. 여덟 도시 중 아무 여섯 곳을 고르면 식스스타라는 뜻도 아니다.</p>
+<h2>어디가 가장 쉬운가보다 내가 가능한 경로는 무엇인가</h2>
+<table><thead><tr><th>확인할 질문</th><th>계획에 미치는 영향</th></tr></thead><tbody><tr><td>신청 방식과 현재 단계</td><td>추첨 접수·결과 대기·당첨자 결제·다른 경로를 구분</td></tr><tr><td>기록 자격이 필요한가</td><td>기준 달성과 실제 승인, 기록 유효기간은 별도 확인</td></tr><tr><td>모금·여행 조건이 붙는가</td><td>참가비 외 의무와 미달·취소 조건 확인</td></tr><tr><td>내 휴가·이동 계획에 맞는가</td><td>확정 전 예약의 변경·취소 조건과 실제 총액 비교</td></tr></tbody></table>
+<p>이 표는 편집상 계획 도구이며 도시별 난이도 순위가 아니다. 모든 한국 러너의 첫 메이저를 특정 도시로 고정 추천하거나, 항공·호텔비를 하나의 고정 예산으로 제시하지 않았다.</p>
+<h2>2027 안내에서 이미 달라진 예시</h2>
+<p><a href="https://www.baa.org/races/boston-marathon/qualify/" target="_blank" rel="noopener noreferrer">B.A.A. 현행 자격·선발 안내</a>에는 BQ 기준 외 추가 추첨 요소가 있다. ‘보스턴은 추첨이 없다’는 단정은 현행 제도를 설명하지 못한다. <a href="https://www.generali-berlin-marathon.com/en/registration/run" target="_blank" rel="noopener noreferrer">베를린 2027 공식 참가 안내</a>은 11월 12일까지 추첨 신청 안내, <a href="https://www.chicagomarathon.com/apply/" target="_blank" rel="noopener noreferrer">시카고 2027 공식 신청 안내</a>는 일반 신청 종료와 12월 결과·결제를 안내한다. 같은 ‘2027 참가’를 준비하더라도 지금 해야 할 일이 다르다.</p>
+<p>각 예시는 해당 대회의 현재 안내다. 일반 추첨 확률, 한국 참가자의 당첨 가능성, 특정 훈련 기록으로 출전이 보장된다는 수치를 만들지 않았다. 관심 대회별로 신청 상태와 그 근거 URL·확인일을 한 줄씩 적어두자.</p>
+<h2>메달 목표가 있으면 결과 관리도 계획에 넣자</h2>
+<p>완주 뒤 공식 결과와 포털 반영 여부를 확인하고, 이름 표기가 다르거나 결과가 누락됐으면 주최 측·시리즈의 공식 경로를 이용하자. <a href="/blog/six-star-medal-challenge-korea-guide">식스스타 결과 등록과 여섯 번째 대회 준비</a>에서 그 절차를 다룬다. 참가권 확보와 스타 인정은 같은 확인 단계가 아니다.</p>
 
-<h2>6대 메이저 한눈에 비교</h2>
-
-<table>
-  <thead>
-    <tr><th>대회</th><th>개최월</th><th>진입 방식</th><th>코스·난이도</th><th>한국 접근성</th></tr>
-  </thead>
-  <tbody>
-    <tr><td><a href="/blog/tokyo-marathon-2027-registration-guide"><strong>도쿄</strong></a></td><td>3월</td><td>추첨·자선·OTG</td><td>평지 고속</td><td>★★★ 인천 2h·시차 0</td></tr>
-    <tr><td><a href="/blog/boston-marathon-2027-bq-guide"><strong>보스턴</strong></a></td><td>4월</td><td><strong>BQ 기록</strong> 또는 자선</td><td>내리막→뉴턴힐 난코스</td><td>★ ESTA·14h·시차 큼</td></tr>
-    <tr><td><a href="/blog/london-marathon-2027-registration-guide"><strong>런던</strong></a></td><td>4월</td><td>추첨(최다 경쟁)·자선</td><td>평지 빠름</td><td>★★ 영국 ETA·14h</td></tr>
-    <tr><td><a href="/blog/berlin-marathon-2026-guide"><strong>베를린</strong></a></td><td>9월</td><td>추첨·자선/투어</td><td><strong>완전 평지(세계기록)</strong></td><td>★★ 솅겐·경유</td></tr>
-    <tr><td><a href="/blog/chicago-marathon-2026-registration-guide"><strong>시카고</strong></a></td><td>10월</td><td>추첨·자선·투어</td><td>평지 PB</td><td>★★ ESTA·직항 13.5h</td></tr>
-    <tr><td><a href="/blog/new-york-marathon-2026-registration-guide"><strong>뉴욕</strong></a></td><td>11월</td><td>추첨·자선·9+1·타임퀄</td><td>5개 자치구 난코스</td><td>★★ ESTA·14h</td></tr>
-    <tr><td><a href="/blog/sydney-marathon-2026-registration-guide"><strong>시드니</strong>(7번째)</td><td>8월</td><td>추첨·자선/투어</td><td>비평지 경관(+313m)</td><td>★★ 호주 ETA·10h·시차 +1h</td></tr>
-  </tbody>
-</table>
-
-<p>※ 진입 방식의 정확한 일정·금액은 시즌마다 바뀝니다. 각 대회 셀의 링크에서 최신 상세를 확인하세요.</p>
-
-<h2>당신에게 맞는 첫 메이저는? — 의사결정 트리</h2>
-
-<ul>
-  <li><strong>🗼 첫 메이저·부담 최소</strong> → <a href="/blog/tokyo-marathon-2027-registration-guide">도쿄</a>. 인천 2시간·시차 0·평지 코스에 추첨/자선/OTG까지 경로가 다양해 데뷔전으로 가장 무난합니다.</li>
-  <li><strong>🏅 PB·자기기록 갱신</strong> → <a href="/blog/berlin-marathon-2026-guide">베를린</a>(세계 최속 평지) 또는 <a href="/blog/chicago-marathon-2026-registration-guide">시카고</a>(평지 PB). 기록은 평탄한 코스에서 나옵니다.</li>
-  <li><strong>🦄 실력으로 증명하고 싶다</strong> → <a href="/blog/boston-marathon-2027-bq-guide">보스턴</a>. 추첨이 없고 BQ 자격기록이 필요한데, 그 기록은 <a href="/blog/boston-marathon-2027-bq-guide">서울·경주·춘천 국내 공인 대회</a>에서 만들 수 있습니다.</li>
-  <li><strong>🗽 대도시 축제·경험</strong> → <a href="/blog/new-york-marathon-2026-registration-guide">뉴욕</a>. 5개 자치구 200만 관중, 기록보다 경험의 대회입니다.</li>
-  <li><strong>🌉 경관·식스스타 한 칸</strong> → <a href="/blog/sydney-marathon-2026-registration-guide">시드니</a>. PB 코스는 아니지만 하버브리지·오페라하우스 경관이 압권입니다.</li>
-  <li><strong>🎲 추첨 운에 맡기는 클래식</strong> → <a href="/blog/london-marathon-2027-registration-guide">런던</a>. 세계 최다 경쟁 발롯이지만, 당첨되면 평지 빠른 코스가 기다립니다.</li>
-</ul>
-
-<h2>진입 난이도순 — 쉬움에서 어려움까지</h2>
-
-<p>한국 러너 기준으로 "배번 확보"의 현실 난이도를 줄 세우면 대략 이렇습니다.</p>
-
-<table>
-  <thead>
-    <tr><th>난이도</th><th>대회</th><th>핵심 이유</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>가장 쉬움</td><td><a href="/blog/tokyo-marathon-2027-registration-guide">도쿄</a></td><td>추첨·자선·OTG 다중 경로 + 가장 가까움</td></tr>
-    <tr><td>중간</td><td>시카고·베를린·런던·시드니</td><td>추첨 마감 시 자선/투어가 잔여 경로(거액)</td></tr>
-    <tr><td>어려움</td><td><a href="/blog/new-york-marathon-2026-registration-guide">뉴욕</a></td><td>추첨 경쟁 + 자선 최소 모금 높음($3,000~)</td></tr>
-    <tr><td>가장 어려움</td><td><a href="/blog/boston-marathon-2027-bq-guide">보스턴</a></td><td>추첨 없음 — BQ 자격기록 또는 거액 자선($5,000~)만</td></tr>
-  </tbody>
-</table>
-
-<h2>6대 다 모으기 — 식스스타와 원정 준비</h2>
-
-<p>6대 메이저를 모두 완주하면 애벗 <strong>식스스타 메달</strong>을 받습니다. 보통 여러 해에 걸쳐 한 대회씩 모으죠. 수집 전략·비용·메달 등록법은 <a href="/blog/six-star-medal-challenge-korea-guide">식스스타 완주 로드맵</a>에 정리했습니다. 그리고 어느 메이저를 가든 공통으로 챙겨야 할 항공·입국허가(ESTA·ETA·ETIAS)·결제·보험·짐은 <a href="/blog/overseas-marathon-travel-checklist-korea">해외 원정 매뉴얼</a> 한 편에 묶여 있습니다.</p>
-
-<p>풀코스 자체가 처음이라면 배번부터 잡기 전에 <a href="/blog/race-distance-difficulty-guide-2026">거리별 난이도 가이드</a>로 내 수준을 점검하고, 국내 대회로 몸을 만들고 싶다면 <a href="/marathon">마라톤 캘린더</a>에서 일정을 짜보세요.</p>
-
-<div class="major-next">
-  <p class="mn-title">🏁 지금 바로 한 걸음 — 어디부터?</p>
-  <div class="mn-grid">
-    <a class="mn-card" href="/blog/tokyo-marathon-2027-registration-guide">
-      <span class="mn-emoji">🗼</span>
-      <div class="mn-label">도쿄마라톤 2027</div>
-      <div class="mn-desc">첫 메이저 1순위 — 지금 신청 가능</div>
-    </a>
-    <a class="mn-card" href="/blog/six-star-medal-challenge-korea-guide">
-      <span class="mn-emoji">⭐</span>
-      <div class="mn-label">식스스타 완주 로드맵</div>
-      <div class="mn-desc">6대 다 모으는 시간·돈·전략</div>
-    </a>
-    <a class="mn-card" href="/blog/overseas-marathon-travel-checklist-korea">
-      <span class="mn-emoji">✈️</span>
-      <div class="mn-label">해외 원정 매뉴얼</div>
-      <div class="mn-desc">입국허가·항공·결제·보험 한 번에</div>
-    </a>
-  </div>
-</div>
-
-<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 2026-06-13 기준 각 대회 공식 발표를 토대로 작성한 개요입니다. 대회별 접수 일정·금액·입국 규정은 시즌마다 바뀌므로, 신청 전 각 상세 가이드와 공식 사이트에서 최신 정보를 확인하세요.</p>
-`,
+<h2>자주 묻는 질문</h2><h3>지금도 메이저가 여섯 개인가요?</h3><p>공식은 시드니와 케이프타운을 포함한 여덟 멤버를 소개합니다. 케이프타운의 첫 메이저 개최는 2027년 5월 23일이며 편입 시기와 첫 개최를 구분해야 합니다.</p><h3>여덟 곳 중 아무 여섯 곳을 완주하면 식스스타인가요?</h3><p>식스스타는 기존 도쿄·보스턴·런던·베를린·시카고·뉴욕 여섯 대회가 대상입니다. 시리즈 확대와 메달 조건은 다릅니다.</p><h3>상하이도 확정됐나요?</h3><p>이번 공식 안내는 남은 평가 통과를 조건으로 설명합니다. 정식 편입과 나인스타 실제 지급을 이미 완료한 사실로 쓰지 않았습니다.</p><h3>한국 러너는 어느 대회부터 가는 게 가장 쉬운가요?</h3><p>보편적인 난이도 순위를 만들지 않았습니다. 신청 경로·기록·모금 의무·휴가·실제 여행 비용을 자신의 조건으로 비교해야 합니다.</p>`,
+    updatedAt: "2026-11-10",
   },
   {
     id: 'london-marathon-2027-registration-guide',
@@ -2076,98 +2019,61 @@ export const posts_2026_06: BlogPost[] = [
 `,
   },
   {
-    id: 'berlin-marathon-2026-guide',
-    slug: 'berlin-marathon-2026-guide',
-    title: '베를린마라톤 2027 접수 중 | 2~3명 팀 추첨 신청 방법·참가비·결과 발표',
-    description: '2027 베를린마라톤 추첨 접수는 2026년 11월 12일까지, 결과는 12월 3일 발표됩니다. 참가비 215유로, 2~3명 팀 코드 신청 순서와 당첨 후 결제·기록 우선 조건을 공식 안내로 정리했습니다.',
-    thumbnail: '/images/blog/berlin-marathon-2026-guide.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-06-13',
-    updatedAt: '2026-10-27',
-    category: 'guide' as const,
-    readingTime: 8,
-    tags: ['베를린마라톤', '베를린마라톤 2026', '세계 6대 마라톤', '메이저 마라톤', '마라톤 세계기록', 'PB 마라톤', '평지 코스', '솅겐', '식스스타', '마라톤 해외원정'],
-    content: `
-<div class="tldr"><span class="tldr-label">3줄 요약</span><ul>
-<li><strong>2027 베를린마라톤은 9월 26일.</strong> 추첨 신청은 2026년 11월 12일까지, 결과는 12월 3일 이메일로 발표됩니다.</li>
-<li><strong>혼자 또는 2~3명 팀으로 신청합니다.</strong> 팀이 당첨되면 전원이 출전권을 받지만 각자 계정과 개별 신청이 필요합니다.</li>
-<li><strong>참가비는 215유로.</strong> 당첨자 결제는 12월 4일부터 처리됩니다. 의류 보관을 선택하면 5유로가 추가됩니다.</li>
-</ul></div>
-<p>친구와 해외 마라톤을 함께 달리고 싶다면, 베를린의 <strong>팀 추첨</strong>을 살펴보세요. 대표 한 명만 신청하는 방식이 아닙니다. 첫 신청자의 팀 코드를 받아 나머지 팀원도 각자 신청을 마쳐야 합니다. <a href="https://www.generali-berlin-marathon.com/en/registration/run" target="_blank" rel="noopener noreferrer">대회 공식 접수 안내</a>를 10월 27일 확인했습니다.</p>
-<h2>친구와 함께 신청하는 순서</h2>
-<ol><li><strong>각자 SCC EVENTS 개인 계정을 만듭니다.</strong> 팀은 2~3명입니다.</li><li><strong>첫 번째 사람이 팀 등록을 선택</strong>하고 팀 이름을 정해 신청을 완료합니다. 확인 메일에 팀 코드가 나옵니다.</li><li><strong>나머지 팀원은 기존 팀 참가를 선택</strong>해 코드를 입력합니다. 신청 완료 후에는 코드를 추가할 수 없습니다.</li><li><strong>각자 결제 정보를 입력하고 확인 메일을 받습니다.</strong> 신청 완료는 출전권 확정이 아닙니다.</li></ol>
-<p>팀이 추첨되면 전원이 출전권을 받습니다. 각자 따로 달리고 기록도 개인별로 집계됩니다. 당첨 뒤 한 명이 참가하지 못해도 다른 팀원의 출전권에는 영향이 없지만 대체 팀원을 추가할 수는 없습니다. 개인·팀·기록 경로는 신청 완료 후 바꿀 수 없으니 제출 전 확인하세요.</p>
-<h2>접수 일정과 비용</h2>
-<table><thead><tr><th>항목</th><th>공식 안내</th></tr></thead><tbody><tr><td>추첨 신청</td><td>2026년 10월 1일~11월 12일</td></tr><tr><td>결과 발표</td><td>2026년 12월 3일 이메일</td></tr><tr><td>당첨자 결제</td><td>12월 4일부터 처리 · 215유로</td></tr><tr><td>대회일</td><td>2027년 9월 26일</td></tr></tbody></table>
-<p>참가비에는 베를린 ABC 구역 4일 대중교통권과 완주 후 판초가 포함됩니다. 판초 대신 의류 보관을 선택하면 5유로가 추가되며 신청할 때 선택해야 합니다. 추첨 마감의 정확한 시각은 공식 페이지에서 확인되지 않아 날짜만 표기했습니다. 현지 마감일보다 여유 있게 신청하세요.</p>
-<h2>1. 베를린마라톤이 "PB 성지"인 진짜 이유</h2>
-<p>여섯 개 메이저 대회 중에서 한국 러너가 "기록을 위해" 베를린을 1순위로 꼽는 데는 분명한 이유가 있습니다. 베를린 코스는 흔히 <strong>"세계에서 가장 빠른 코스(world's fastest course)"</strong>로 불립니다. 마케팅 수사가 아니라, 실제 기록이 그렇게 말합니다.</p>
-<p>역대 마라톤 <strong>세계기록이 가장 많이 수립된 코스</strong>가 바로 베를린입니다. 남자부 세계기록이 이곳에서 여러 차례 작성됐고, 엘리우드 킵초게(Eliud Kipchoge)가 2022년 세운 2시간 1분 09초의 남자 세계기록도 베를린에서 나왔습니다. 여자부에서도 티그스트 아세파(Tigst Assefa)가 베를린에서 세계기록을 갈아치운 바 있습니다. 한 코스에서 이만큼 기록이 쏟아진 곳은 지구상에 드뭅니다.</p>
-<p>비결은 단순합니다. <strong>거의 완전한 평지</strong>입니다. 의미 있는 오르막이 없고, 발목을 잡는 급격한 회전 구간이 적으며, 노면은 처음부터 끝까지 매끈한 아스팔트입니다. 9월 말 베를린의 선선한 날씨까지 더해지면, 기록을 끌어내기에 이보다 좋은 조합을 찾기 어렵습니다. "이번 시즌에 PB를 깨고 싶다"는 러너에게 베를린이 가장 먼저 떠오르는 건 이 때문입니다.</p>
+    id: "berlin-marathon-2026-guide",
+    slug: "berlin-marathon-2026-guide",
+    title: "베를린마라톤 2027 추첨: 11월 12일 기한·2~3명 팀·215유로와 보관 선택",
+    description: "Generali 공식 안내를 재확인했습니다. 추첨 결과는 12월 3일, 당첨자 결제는 4일부터입니다. 팀은 각자 등록해야 하며 의류 보관 €5와 판초 선택을 구분합니다.",
+    thumbnail: "/images/blog/verified-berlin-marathon-2026-guide-20261110.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-06-13",
+    updatedAt: "2026-11-10",
+    category: "guide",
+    readingTime: 6,
+    tags: [
+      "베를린마라톤",
+      "베를린마라톤 2027",
+      "Generali Berlin Marathon",
+      "메이저 마라톤",
+      "팀 추첨",
+      "의류 보관",
+      "식스스타",
+      "마라톤 해외원정"
+    ],
+    content: `<p><small>2026년 11월 10일 대회·시리즈 공식 원문 대조. 신청 연도·선발 방식·비용·현재 진행 단계를 구분했습니다.</small></p>
 
-<h2>2. 2027 출전권은 네 경로로 준비합니다</h2>
-<p>베를린마라톤은 다른 메이저 대회들과 마찬가지로 <strong>추첨(lottery) 방식</strong>으로 출전권을 배분합니다. 개인 응모 외에 2~3명이 함께 당락을 받는 팀 응모, 공식 기준 기록을 증명하는 빠른 러너 경로, 자선과 공식 투어가 있습니다. 아래는 2027 공식 접수 안내를 기준으로 정리한 경로입니다.</p>
-<table>
-<thead><tr><th>경로</th><th>내용</th><th>한국 러너 체크포인트</th></tr></thead>
-<tbody>
-<tr><td>개인·팀 발롯</td><td>개인은 단독 응모. 팀은 2~3명이 코드를 공유해 함께 당첨·탈락</td><td>팀원 모두 개인 계정이 필요하고, 제출 뒤 개인↔팀 변경 불가</td></tr>
-<tr><td>빠른 러너</td><td>연령·성별 기준 기록과 공인 결과 증빙을 업로드</td><td>가상런·다른 거리는 불인정. 공식 등록 페이지(10/2 확인) 기준 가장 빠른 구간은 남자 2:45·여자 3:10, 기록 증빙은 2025·2026년 기록만(2년 이내). 연령 구간별 전체 기준은 공식 페이지에서 확인</td></tr>
-<tr><td>자선</td><td>공식 파트너 단체의 모금 조건을 채우는 출전권</td><td>단체별 모금액·신청 시기·해외 거주자 수락 여부가 다름</td></tr>
-<tr><td>공식 투어</td><td>출전권과 숙박 등을 묶은 공식 여행사 패키지</td><td>출전권 포함 여부와 환불 규정 확인. 발롯보다 비용이 큼</td></tr>
-</tbody>
-</table>
-<p>2027 참가비는 공식 등록 페이지(10월 27일 확인)에서 <strong>215유로</strong>입니다. 직전 2026 사이클의 205유로보다 10유로 올랐습니다. 자선·투어 경로는 참가비 외에 모금액 또는 패키지 비용이 추가됩니다.</p>
+<p>2027 베를린의 공식 이름은 GENERALI BERLIN-MARATHON이다. <a href="https://www.generali-berlin-marathon.com/en/registration/run" target="_blank" rel="noopener noreferrer">베를린 2027 공식 참가 안내</a>의 대회일은 9월 26일, 추첨 신청 기간은 2026년 10월 1일~11월 12일이다. 현재 신청 안내를 읽었으며 계정 생성·신청·결제는 진행하지 않았다.</p>
+<h2>친구와 2~3명 팀: 대표 한 명의 신청으로 끝나지 않는다</h2>
+<ol><li>첫 신청자가 팀 등록을 선택해 이름을 정하고 팀 코드를 받는다.</li><li>다른 구성원도 본인 계정으로 신청하면서 기존 팀 참여·코드를 입력한다.</li><li>각자 결제 정보를 입력하고 신청 확인 이메일을 확인한다.</li></ol>
+<p>공식은 신청 완료 후 팀 코드를 추가할 수 없다고 안내한다. 팀 당첨이면 구성원 모두 출전권을 받지만 각자 개인 기록으로 뛰며 팀 순위는 없다. 한 명 불참이 다른 구성원에게 영향을 주지는 않지만 대체 팀원을 추가할 수 없다는 조건도 있다.</p>
+<h2>추첨·발표·결제는 세 단계</h2>
+<table><thead><tr><th>공식 일정</th><th>할 일</th></tr></thead><tbody><tr><td>11월 12일까지 신청</td><td>개인·팀 구분과 정보 확인, 접수 완료 확인</td></tr><tr><td>12월 3일 결과 이메일</td><td>본인 결과 확인</td></tr><tr><td>12월 4일부터 당첨자 결제 처리</td><td>결제수단·실제 승인 결과 확인</td></tr></tbody></table>
+<p>신청 기간 안내에 적힌 날짜와, 별도 바우처 코드 사용의 23:59 CET 조건을 혼합하지 않았다. 일반 추첨의 한국시간 마감 시각을 임의로 만들어 마지막 순간 신청을 권하지 않는다. 은행에 따라 결제 처리에 최대 일주일이 걸릴 수 있다는 설명은 결과 확인을 미뤄도 된다는 뜻이 아니다.</p>
+<h2>€215, 판초와 €5 의류 보관의 차이</h2>
+<p>참가비는 €215이며 자리 배정 후 결제한다고 안내한다. 기본 안내에는 골인 판초가 있고 의류 보관을 고르면 €5 추가다. 보관 옵션은 신청 중에만 예약할 수 있고 나중에 추가할 수 없다고 적혀 있다.</p>
+<p>판초를 받는 선택은 출발 구역에 갈아입을 옷·짐을 가져갈 수 없다는 규정과 연결된다. 보관 가방 선택도 지정 투명 가방 사용 조건이 있다. 가격만 비교하지 말고 출발 전에 무엇을 맡기고 완주 뒤 무엇을 입을지 자신의 동선을 생각하자.</p>
+<h2>빠른 기록 제출이 곧 승인 보장은 아니다</h2>
+<p>공식은 Fast Runner의 연령·기록 증빙을 검토하고 결과를 통지하며, 유효하지 않은 증빙은 일반 추첨에 포함한다고 안내한다. 기록 제출만으로 무조건 출전이 확정된다고 설명하지 않았다. 해당 기준과 증빙은 본인 신청 화면에서 정확히 대조해야 한다.</p>
+<p><a href="https://www.generali-berlin-marathon.com/en/preparation/faq" target="_blank" rel="noopener noreferrer">공식 FAQ</a>와 최종 안내도 확인하자. 비자·입국허가 시행 시기나 원화 환산 예산은 이번 대회 원문 확인 범위로 확정하지 않았다. 이전 연도 코스 기록으로 개인 PB를 보장하지도 않는다.</p>
 
-<div class="callout warning">
-<p><strong>주의</strong> — 2027 추첨 접수는 10월 1일에 시작해 11월 12일까지입니다(공식 등록 페이지, 10월 2일 확인). 일정·금액은 바뀔 수 있으니 신청 전 공식 등록 페이지의 최신 안내를 다시 확인하세요.</p>
-</div>
-
-<h2>3. 신청 전에 준비할 것</h2>
-<ul><li>개인 계정과 해외 결제 가능한 카드를 준비합니다. 팀원도 각각 필요합니다.</li><li>빠른 러너로 신청한다면 2025·2026년의 공인 풀코스 기록을 준비합니다. 기록 기준을 충족해도 출전권은 증빙 심사 후 확정됩니다.</li><li>여권 영문명과 생년월일을 확인하고 신청 내용을 제출 전에 점검하세요. 신청 완료 후 경로를 변경할 수 없습니다.</li></ul>
-<p>메이저 대회를 비교하려면 <a href="/blog/world-marathon-majors-guide-2026">세계 메이저 마라톤 가이드</a>도 참고하세요.</p>
-
-<h2>4. 규모·분위기 — 5.6만 러너의 베를린</h2>
-<p>베를린마라톤은 세계에서 가장 큰 마라톤 중 하나로, 2026년에는 <strong>162개국 5만 6천 명 넘는 러너</strong>가 등록했습니다. 브란덴부르크 문(Brandenburger Tor)을 통과해 들어오는 마지막 직선 구간은 메이저 대회 중에서도 손꼽히는 피니시 장면입니다. 같은 주말에는 인라인 스케이팅 레이스도 함께 열려, 도시 전체가 러닝 축제 분위기로 채워집니다.</p>
-<p>대규모 출발 웨이브 속에서도 평지 코스라 페이스를 일정하게 가져가기 좋습니다. "큰 무대에서, 빠른 코스로, 기록을 노린다" — 이 세 박자가 맞물리는 게 베를린의 정체성입니다.</p>
-
-<h2>5. 한국 러너를 위한 출국 체크리스트</h2>
-<p>인천에서 베를린으로 가는 여정과 현지 준비를, 한국 여권·한국 카드 기준으로 정리했습니다.</p>
-<table>
-<thead><tr><th>항목</th><th>내용</th></tr></thead>
-<tbody>
-<tr><td>직항 여부</td><td>인천(ICN)→베를린(BER) <strong>직항 없음</strong>. 프랑크푸르트(FRA) 또는 뮌헨 경유가 일반적이며, 프랑크푸르트 경유가 더 빠른 편</td></tr>
-<tr><td>비행시간</td><td>인천→프랑크푸르트 약 13시간 50분 + 환승 후 베를린까지 단거리 국내선 연결. 총 소요는 환승 대기 포함 16시간 40분 이상</td></tr>
-<tr><td>시차</td><td>대회 시기 베를린은 중앙유럽 서머타임(CEST). 한국보다 <strong>7시간 느림(KST −7h)</strong>. 도착 후 시차 적응에 며칠 여유 두기</td></tr>
-<tr><td>비자</td><td>독일은 솅겐 협정국. 한국 여권 소지자는 <strong>90일 무비자</strong> 단기 입국 가능</td></tr>
-<tr><td>ETIAS</td><td>유럽 입국 전자여행허가(ETIAS)는 <strong>2026년 10월 27일 현재 운영 전</strong>. 2027년 대회 시점의 적용 여부는 확정해 말할 수 없으므로 출국 전 EU 공식 안내 확인</td></tr>
-</tbody>
-</table>
-<p>장거리 비행, 시차, 결제·짐 패킹까지 한 번에 점검하려면 <a href="/blog/overseas-marathon-travel-checklist-korea">해외 마라톤 원정 준비 매뉴얼</a>을 그대로 따라가는 걸 추천합니다. 인천 출발·한국 카드 결제·시차 적응 같은 한국 러너 특화 항목이 정리돼 있습니다.</p>
-<p>신발은 어떨까요. 평지·빠른 코스에서 PB를 노린다면, 레이싱 전용 카본화의 가벼움과 추진력이 베를린 같은 무대에서 특히 빛납니다. 한 켤레만 고른다면 초경량 레이싱 카본화인 <a href="/shoes/asics-metaspeed-ray">아식스 메타스피드 레이</a>가 대표적인 선택지입니다. 다만 카본화는 발과 종아리에 부하가 크니, 대회 전 충분히 적응 주행을 거친 뒤 투입하세요.</p>
-
-<h2>6. 베를린이 맞는 러너 vs 다른 메이저가 나은 러너</h2>
-<p>베를린은 모든 러너의 정답은 아닙니다. 성향에 따라 더 잘 맞는 메이저가 따로 있습니다.</p>
-<ul>
-<li><strong>베를린이 1순위</strong> — 이번 시즌 PB가 목표인 기록형 러너. 평지·빠른 코스에서 자기 한계를 시험하고 싶은 사람</li>
-<li><strong>가을 메이저를 비교 중이라면</strong> — 응원 열기와 도시 분위기를 더 본다면 <a href="/blog/chicago-marathon-2026-registration-guide">시카고</a>·<a href="/blog/new-york-marathon-2026-registration-guide">뉴욕</a>도 같은 가을 시즌 선택지입니다</li>
-<li><strong>봄 메이저를 원한다면</strong> — <a href="/blog/london-marathon-2027-registration-guide">런던</a>·<a href="/blog/tokyo-marathon-2027-registration-guide">도쿄</a>가 일정상 대안이 됩니다. 런던은 영국이라 ETA(전자여행허가)가 별도로 필요한 점만 미리 챙기세요</li>
-<li><strong>기록보다 도전 그 자체라면</strong> — 기록 인증 자체를 목표로 한 <a href="/blog/boston-marathon-2027-bq-guide">보스턴 BQ</a> 도전이나, <a href="/blog/sydney-marathon-2026-registration-guide">시드니</a> 같은 신규 메이저도 고려해볼 만합니다</li>
-</ul>
-
-<div class="major-next">
-<p><strong>다음 한 걸음</strong></p>
-<ul>
-<li><strong>봄 메이저로 눈을 돌린다면</strong> → 같은 날 함께 정리한 <a href="/blog/london-marathon-2027-registration-guide">런던마라톤 2027 접수 가이드</a>로 일정·자격 조건을 비교해 보세요.</li>
-<li><strong>가을 메이저를 더 보고 싶다면</strong> → <a href="/blog/chicago-marathon-2026-registration-guide">시카고마라톤 2026 가이드</a>가 베를린과 같은 시즌의 또 다른 선택지입니다.</li>
-<li><strong>원정 준비를 시작한다면</strong> → <a href="/blog/overseas-marathon-travel-checklist-korea">해외 원정 매뉴얼</a>로 항공·시차·결제부터 점검하세요.</li>
-</ul>
-</div>
-
-<p>🗺️ 6대 메이저 전체 비교와 "어디부터 갈까"가 궁금하다면 <a href="/blog/world-marathon-majors-guide-2026">세계 6대 마라톤 완전정복</a>에서 한눈에 보세요.</p>
-
-<p>신청과 비용은 <a href="https://www.generali-berlin-marathon.com/en/registration/run" target="_blank" rel="noopener noreferrer">2027 베를린 공식 접수 안내</a>, ETIAS 상태는 <a href="https://travel-europe.europa.eu/etias/faq" target="_blank" rel="noopener noreferrer">EU 공식 FAQ</a>를 2026년 10월 27일 대조했습니다.</p>
-<p class="disclaimer">본 글은 2026년 6월 13일 최초 작성, <strong>2026년 9월 28일 베를린마라톤 공식 결과·등록·미디어 안내를 재확인해 2027 준비 글로 전환</strong>했습니다. 2026 대회 종료, 2026 발롯 실제 일정(2025-09-25 오픈 / 11-06 마감 / 11월 말 결과 통보), 10월 1일 ‘2027 전망’ 공식 행사, 개인·팀·빠른 러너·자선·투어 경로를 반영했습니다. <strong>2027 발롯의 접수 기간(10월 1일~11월 12일)·결과 발표(12월 3일)·참가비(215유로)는 2026년 10월 2일 공식 등록 페이지에서 확인했습니다</strong>. 언론 행사를 접수 공지로 단정하지 않습니다. 항공편·비자/ETIAS 정책은 변동될 수 있으므로 신청·출국 전 공식 사이트와 항공사·대사관 안내로 최신 정보를 재확인하세요. — 산초 에디터</p>
-`,
+<h2>자주 묻는 질문</h2><h3>팀 대표만 신청하면 모두 등록되나요?</h3><p>아닙니다. 2~3명 모두 개인 계정으로 신청해야 하며 첫 신청자의 팀 코드를 다른 구성원이 등록 과정에서 입력해야 합니다. 완료 후 코드를 추가할 수 없다고 안내합니다.</p><h3>참가비는 언제 빠져나가나요?</h3><p>공식은 당첨자에게 €215를 결제하며 12월 3일 결과 이메일, 12월 4일부터 결제 처리로 안내합니다. 실제 승인 상태는 각자 확인해야 합니다.</p><h3>물품보관은 나중에 추가할 수 있나요?</h3><p>공식은 의류 보관 €5 옵션을 신청 중에만 예약할 수 있고 나중에 추가할 수 없다고 안내합니다. 기본 판초와 출발 구역 짐 반입 조건을 구분해야 합니다.</p><h3>빠른 기록을 내면 출전이 보장되나요?</h3><p>공식은 증빙 검토 뒤 승인·거절을 통지하며 기록 제출만으로 보장하지 않는다고 안내합니다. 유효하지 않은 증빙은 일반 추첨에 포함될 수 있습니다.</p>`,
+    faqs: [
+      {
+        "question": "팀 대표만 신청하면 모두 등록되나요?",
+        "answer": "아닙니다. 2~3명 모두 개인 계정으로 신청해야 하며 첫 신청자의 팀 코드를 다른 구성원이 등록 과정에서 입력해야 합니다. 완료 후 코드를 추가할 수 없다고 안내합니다."
+      },
+      {
+        "question": "참가비는 언제 빠져나가나요?",
+        "answer": "공식은 당첨자에게 €215를 결제하며 12월 3일 결과 이메일, 12월 4일부터 결제 처리로 안내합니다. 실제 승인 상태는 각자 확인해야 합니다."
+      },
+      {
+        "question": "물품보관은 나중에 추가할 수 있나요?",
+        "answer": "공식은 의류 보관 €5 옵션을 신청 중에만 예약할 수 있고 나중에 추가할 수 없다고 안내합니다. 기본 판초와 출발 구역 짐 반입 조건을 구분해야 합니다."
+      },
+      {
+        "question": "빠른 기록을 내면 출전이 보장되나요?",
+        "answer": "공식은 증빙 검토 뒤 승인·거절을 통지하며 기록 제출만으로 보장하지 않는다고 안내합니다. 유효하지 않은 증빙은 일반 추첨에 포함될 수 있습니다."
+      }
+    ],
   },
   {
     id: 'new-york-marathon-2026-registration-guide',
@@ -2334,290 +2240,133 @@ export const posts_2026_06: BlogPost[] = [
 `,
   },
   {
-    id: 'six-star-medal-challenge-korea-guide',
-    slug: 'six-star-medal-challenge-korea-guide',
-    title: '애벗 식스스타 메달 — 6대 메이저 다 모으는 시간·돈·전략 | 세븐스타? 나인스타? 한국 러너 난이도순 완주 로드맵',
-    description: '6대 메이저(도쿄·보스턴·런던·베를린·시카고·뉴욕)를 모두 완주하면 받는 애벗 식스스타 메달. 시드니 합류로 세븐스타가 됐을까?(정답: 아직 6개 고정·나인스타 도입 예정) 한국 러너 기준 가장 쉬운 도쿄부터 가장 어려운 보스턴 BQ까지 난이도순 수집 전략, 비용·기간, 메달 등록법까지 총정리했습니다.',
-    thumbnail: '/images/blog/six-star-medal-challenge-korea-guide.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-06-13',
-    category: 'guide' as const,
-    readingTime: 9,
-    tags: ['식스스타', '식스스타 메달', '애벗 월드 마라톤 메이저', '세븐스타', '세계 6대 마라톤', '메이저 마라톤', '식스스타 도전', '러닝 버킷리스트', '마라톤 완주', '나인스타'],
-    content: `
-<div class="callout info">
-<p><strong>식스스타 메달이란? — 그리고 "세븐스타"의 진실</strong></p>
-<p>애벗 월드 마라톤 메이저스(Abbott World Marathon Majors, AbbottWMM)의 <strong>기존 6개 대회를 모두 완주</strong>하면 받는 기념 메달입니다. 연도나 순서는 상관없습니다. 살면서 6개를 다 채우기만 하면 됩니다.</p>
-<p>2025년 8월 시드니 마라톤이 <strong>7번째 메이저</strong>로 합류했지만, 메달 명칭과 구성은 바뀌지 않았습니다. 공식 페이지(worldmarathonmajors.com)는 식스스타 메달이 <strong>"원래의 6개 대회(도쿄·보스턴·런던·베를린·시카고·뉴욕)" 완주자에게만 수여</strong>되며, 시드니는 식스스타 대상에 포함되지 않는다고 명시합니다. 즉 <strong>"세븐스타 메달"이라는 공식 메달은 없습니다.</strong> 7번째 별을 모은 러너는 있지만, 애벗은 7스타·8스타용 정식 메달을 따로 만들지 않고 <strong>메이저가 9개로 완성되는 시점에 곧장 나인스타 메달을 신설</strong>할 계획입니다. 그때도 식스스타 메달은 그대로 병존 수여됩니다.</p>
-</div>
+    id: "six-star-medal-challenge-korea-guide",
+    slug: "six-star-medal-challenge-korea-guide",
+    title: "애벗 식스스타 메달: 기존 6개 조건·결과 누락·여섯 번째 대회 준비",
+    description: "메이저가 여덟 멤버로 확대돼도 식스스타는 기존 여섯 대회 기준입니다. 공식 결과·포털 등록·중복 완주·시드니와 케이프타운 예외를 대조했습니다.",
+    thumbnail: "/images/blog/verified-six-star-medal-challenge-korea-guide-20261110.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-06-13",
+    category: "guide",
+    readingTime: 6,
+    tags: [
+      "식스스타",
+      "식스스타 메달",
+      "애벗 월드 마라톤 메이저",
+      "세븐스타",
+      "세계 6대 마라톤",
+      "메이저 마라톤",
+      "식스스타 도전",
+      "러닝 버킷리스트",
+      "마라톤 완주",
+      "나인스타"
+    ],
+    content: `<p><small>2026년 11월 10일 대회·시리즈 공식 원문 대조. 신청 연도·선발 방식·비용·현재 진행 단계를 구분했습니다.</small></p>
 
-<h2>6대 메이저 한눈에 — 개최월·진입 난이도·시리즈 가이드</h2>
+<p>메이저가 늘었다고 지금 모으던 식스스타가 자동으로 세븐·에이트스타 메달로 바뀌는 것은 아니다. <a href="https://www.worldmarathonmajors.com/six-star/how-it-works" target="_blank" rel="noopener noreferrer">공식 식스스타·스타 인정 안내</a>의 조건은 기존 여섯 대회다. 이 글은 여행 비용 순위를 만드는 대신 <strong>내 결과가 제대로 인정돼 있는지</strong> 확인하는 순서로 정리했다.</p>
+<h2>내가 완주한 여섯 종류를 구분하자</h2>
+<p>대상은 도쿄·보스턴·런던·베를린·시카고·뉴욕이다. 같은 대회를 여러 번 완주해도 다른 도시의 스타가 추가되지는 않는다. 일반 버추얼 메이저 완주도 현재 식스스타 스타로 세지 않는다. 공식 안내는 여섯 대회 달성의 별도 전체 제한기간을 두지 않는다.</p>
+<p>내 계획표에 ‘메이저 완주 횟수’와 ‘서로 다른 기존 여섯 대회의 인정 결과’를 따로 적어보자. 시드니를 달린 경험이 소중하더라도 아직 없는 뉴욕 스타를 대신하는 것은 아니다.</p>
+<h2>공식 결과와 Runner Portal을 나란히 확인</h2>
+<ol><li><strong>결과 확인:</strong> 대회의 공식 이름·연도·성명·완주 결과를 정리한다.</li><li><strong>포털 대조:</strong> 내 프로필과 결과가 연결됐는지 확인한다.</li><li><strong>누락 처리:</strong> 다른 이름 표기나 오래된 결과라면 공식 Claim Stars·포털 절차를 확인한다.</li><li><strong>반영 결과 확인:</strong> 요청만 보낸 상태와 실제 인정 완료를 구분한다.</li></ol>
+<p><a href="https://www.worldmarathonmajors.com/six-star/how-it-works" target="_blank" rel="noopener noreferrer">공식 FAQ</a>는 이름 차이 등으로 매칭이 안 될 수 있으며, 오래된 기록은 완주 증빙과 본인 확인 자료를 제출해 검토받는 경로를 안내한다. 이 글에서 신분 자료를 받거나 대신 제출하지 않았다.</p>
+<h2>데이터 보관 시작 연도와 인정 불가를 혼동하지 말자</h2>
+<p>공식은 보스턴·런던·베를린·시카고·뉴욕의 2006년 이후, 도쿄의 2013년 이후 결과 보관을 설명하면서 이전 기록의 증빙 제출도 안내한다. 포털에 자동으로 안 뜬다고 곧바로 인정 불가라고 판단하지 않는 이유다. 반대로 내 워치에 기록이 있다는 사실만으로 공식 스타가 자동 인정되는 것도 아니다.</p>
+<h2>여섯 번째 대회가 확정되면</h2>
+<p>공식 FAQ는 포털의 <strong>Set For No.6</strong> 기능으로 여섯 번째 대회 참가 확정을 알리도록 안내한다. 스타 누락이 없는지, 본인 정보가 맞는지 미리 확인하자. 언제까지 처리하면 무조건 현장 메달을 받는다는 임의의 마감이나 개인별 지급 보장을 만들지는 않았다.</p>
+<h2>시드니·케이프타운과 나인스타의 위치</h2>
+<p><a href="https://www.worldmarathonmajors.com/cape-town-major" target="_blank" rel="noopener noreferrer">케이프타운 편입·나인스타 조건 안내</a>는 케이프타운의 8번째 편입과 2026 잠정 스타의 정식 전환을 설명한다. 시드니의 첫 메이저는 2025년이며 2024년 연령별 세계선수권 참가자 결과는 별도 보관 예외다. 이전 모든 대회 완주를 소급 인정하는 뜻은 아니다.</p>
+<p>상하이 평가와 나인스타 계획, 기념 코인·디스플레이는 식스스타와 구분하자. 코인을 구매한 사실이나 Eight Star Hall of Fame 표기를 새로운 공식 완주 메달 수령과 동일하게 소개하지 않았다.</p>
 
-<p>먼저 큰 그림부터 봅시다. 식스스타 대상 6개 대회는 봄(도쿄·보스턴·런던)과 가을(베를린·시카고·뉴욕)에 흩어져 있고, 지역도 아시아 1개·미국 3개·유럽 2개로 퍼져 있습니다. 아래 표에 7번째 메이저인 시드니까지 넣되, 식스스타 포함 여부를 명확히 표기했습니다. 각 대회 상세는 산초 에디터가 따로 정리한 시리즈 가이드를 연결해 두었습니다.</p>
-
-<table>
-<thead>
-<tr><th>메이저</th><th>2026 개최일</th><th>개최월</th><th>식스스타 포함</th><th>주 진입 경로</th><th>한국 러너 체감 난이도</th><th>시리즈 가이드</th></tr>
-</thead>
-<tbody>
-<tr><td>도쿄</td><td>3/1</td><td>3월</td><td>포함</td><td>추첨 + 자선</td><td>쉬움(자선)</td><td><a href="/blog/tokyo-marathon-2027-registration-guide">도쿄 마라톤 접수 가이드</a></td></tr>
-<tr><td>보스턴</td><td>4/20</td><td>4월</td><td>포함</td><td>BQ 기록 자격</td><td>가장 어려움</td><td><a href="/blog/boston-marathon-2027-bq-guide">보스턴 BQ 가이드</a></td></tr>
-<tr><td>런던</td><td>4/26</td><td>4월</td><td>포함</td><td>추첨 + 자선</td><td>추첨 매우 어려움</td><td>—</td></tr>
-<tr><td>시드니</td><td>8/30</td><td>8월</td><td><strong>미포함</strong>(7번째 메이저)</td><td>추첨</td><td>중간</td><td><a href="/blog/sydney-marathon-2026-registration-guide">시드니 마라톤 접수 가이드</a></td></tr>
-<tr><td>베를린</td><td>9/27</td><td>9월</td><td>포함</td><td>추첨 / 패키지</td><td>비교적 쉬움</td><td>—</td></tr>
-<tr><td>시카고</td><td>10/11</td><td>10월</td><td>포함</td><td>추첨 / 자선</td><td>중간</td><td><a href="/blog/chicago-marathon-2026-registration-guide">시카고 마라톤 접수 가이드</a></td></tr>
-<tr><td>뉴욕</td><td>11/1</td><td>11월</td><td>포함</td><td>추첨 / 자선</td><td>추첨 어려움</td><td>—</td></tr>
-</tbody>
-</table>
-
-<p>표에서 보듯 시드니는 일정상 메이저 캘린더에 들어가지만, <strong>식스스타 메달 카운트에는 잡히지 않습니다.</strong> 호주 원정을 계획한다면 "7번째 별"이라는 기념 의미로 접근하는 것이지, 식스스타 진척과는 별개로 두는 게 맞습니다.</p>
-
-<div class="callout info">
-<p><strong>미래 확장 (참고 — 아직 예정/조건부)</strong></p>
-<p>케이프타운 마라톤(남아공)이 2027년 8번째 메이저로 합류할 예정이고, 상하이 마라톤은 후보 1단계를 통과해 2026년 12월 대회에서 2년 연속 기준을 충족하면 9번째 후보가 됩니다. 두 대회가 모두 통과하면 9개 체제가 완성되며 <strong>나인스타 메달이 신설될 예정</strong>입니다. 다만 둘 다 아직 "예정·조건부" 단계이므로 확정된 일정으로 보지는 마세요.</p>
-</div>
-
-<h2>한국 러너 난이도순 수집 전략 — 쉬운 별부터, 보스턴은 별도 프로젝트</h2>
-
-<p>6개를 한 해에 다 끝내려는 건 비현실적입니다. 대회마다 추첨 시점·기록 통과 시점이 제각각이라, 보통 <strong>여러 시즌에 걸쳐 분산</strong>해서 모읍니다. 핵심은 "통제 가능한 별부터 빨리 쌓아 추진력을 만들고, 통제 불가능한 별은 매년 병행 도전한다"는 것입니다.</p>
-
-<h3>1단계 — 진입 쉬운 별로 출발 (도쿄·베를린)</h3>
-<p><strong>도쿄</strong>는 식스스타에서 가장 진입하기 쉬운 대회입니다. 일반 추첨은 경쟁이 크지만, <strong>자선 기부(charity bid)</strong> 경로로 사실상 출전을 확보할 수 있습니다. 최소 기부 단위가 10만 엔(약 100만 원대) 수준이고 최근 성공 입찰은 그보다 높게 형성되지만, "당첨 운"에 기대지 않고 출전을 확정할 수 있다는 점이 큽니다. 항공도 인천에서 가장 가깝습니다. <strong>베를린</strong> 역시 해외 투어 패키지로 배정을 확보하는 경로가 많아 비교적 진입이 수월합니다. 이 둘로 "이미 2개 모았다"는 동력을 먼저 만드세요. 자세한 도쿄 접수 절차는 <a href="/blog/tokyo-marathon-2027-registration-guide">도쿄 마라톤 접수 가이드</a>를 참고하세요.</p>
-
-<h3>2단계 — 추첨형 3개는 매년 병행 응모 (런던·시카고·뉴욕)</h3>
-<p>런던·시카고·뉴욕은 추첨 당첨 시점을 본인이 통제할 수 없습니다. 그래서 <strong>일찍부터 매년 동시에 응모</strong>해 두는 게 정석입니다. 떨어지면 자선 경로나 해외 투어 패키지로 백업할 수 있습니다. 런던은 세계 최대 경쟁이라 추첨만 믿기 어렵고, 뉴욕도 경쟁이 큽니다. 시카고는 셋 중 당첨 가능성이 비교적 양호한 편이라 가을 일정으로 노려볼 만합니다. 시카고 접수 흐름은 <a href="/blog/chicago-marathon-2026-registration-guide">시카고 마라톤 접수 가이드</a>에 정리해 두었습니다.</p>
-
-<h3>3단계 — 보스턴(BQ)은 별도 장기 프로젝트</h3>
-<p>보스턴은 식스스타의 사실상 최종 관문입니다. 다른 대회와 달리 <strong>BQ(보스턴 퀄리파잉) 기록 통과가 거의 유일한 진입 경로</strong>이기 때문입니다. 연령·성별별 기준 기록을 직접 달성해야 하므로, 돈이나 운이 아니라 <strong>기록 향상 훈련이라는 장기 프로젝트</strong>로 따로 두는 게 맞습니다. 다른 5개 별을 모으는 동안 평행하게 기록 향상에 투자하다가, 마지막 또는 후반에 도전하는 흐름이 현실적입니다. BQ 기준 기록과 전략은 <a href="/blog/boston-marathon-2027-bq-guide">보스턴 2027 BQ 가이드</a>에서 자세히 다뤘습니다.</p>
-
-<p>레이스 페이스를 끌어올려야 하는 BQ·기록 도전 구간에서는 카본 레이싱화의 도움이 큽니다. 한국에서 접근 가능한 대표 모델로는 <a href="/shoes/nike-vaporfly-4">나이키 베이퍼플라이 4</a>, <a href="/shoes/nike-alphafly-3">나이키 알파플라이 3</a>, <a href="/shoes/saucony-endorphin-elite-2">사코니 엔돌핀 엘리트 2</a>, <a href="/shoes/asics-metaspeed-sky-plus">아식스 메타스피드 스카이 플러스</a> 등이 있습니다.</p>
-
-<h2>비용·기간 감 — 근사 범위로만</h2>
-
-<p>식스스타는 성격상 정확한 총비용을 못 박기 어렵습니다. 추첨·기부·기록 통과 시점이 다 다르기 때문입니다. 그래서 아래 수치는 모두 <strong>대략적인 범위·근사치</strong>로만 받아들이세요. 환율도 시점에 따라 변동하므로 "약 ~원대"로만 표기합니다.</p>
-
-<ul>
-<li><strong>수집 기간:</strong> 보통 <strong>여러 해(몇 시즌)에 걸쳐</strong> 모읍니다. 추첨·BQ 통과 시점이 통제 불가라 한 해에 6개를 다 끝내기는 현실적으로 어렵습니다.</li>
-<li><strong>대회별 참가비:</strong> 대회마다 다르며 대략 1개당 수십만 원대 범위(미화 200~400달러대 수준). 도쿄 자선 경로처럼 기부가 얹히면 더 올라갑니다.</li>
-<li><strong>항공(인천 출발):</strong> 도쿄를 빼면 미주 3개·유럽 2개로 모두 장거리입니다. 미주·유럽 왕복은 시즌과 예약 시점에 따라 편차가 커서 회당 수십만~수백만 원대까지 벌어질 수 있습니다.</li>
-<li><strong>숙박:</strong> 대회 주간은 성수기라 평소보다 비쌉니다. 도심 접근성을 따지면 더 올라갑니다.</li>
-</ul>
-
-<p>요약하면, <strong>1개 대회당 참가비 + 인천발 왕복 항공 + 대회 주간 숙박을 합치면 회당 수백만 원대</strong>, 6개를 누적하면 상당한 규모입니다. 한 번에 부담하기보다 <strong>몇 년에 걸쳐 분산</strong>하는 것이 비용·체력 양쪽에서 현실적입니다. 항공·숙박·환전·짐 싸기 같은 원정 실무는 <a href="/blog/overseas-marathon-travel-checklist-korea">해외 마라톤 원정 체크리스트</a>에 한국 여권·한국 카드 기준으로 정리해 두었으니 함께 보세요.</p>
-
-<h2>메달 등록·인증·수령법</h2>
-
-<p>별을 다 모았어도 자동으로 메달이 오는 건 아닙니다. <strong>본인 기록을 공식 시스템에 등록·인증</strong>하는 절차가 있습니다.</p>
-
-<ul>
-<li><strong>자격:</strong> 식스스타 6개 대회(도쿄·보스턴·런던·베를린·시카고·뉴욕)를 연도·순서 무관하게 모두 완주.</li>
-<li><strong>인증 — 러너 포털(Runner Portal):</strong> AbbottWMM 공식 사이트에서 계정을 만들면 공식 완주 기록이 자동으로 매칭됩니다. 오래되어 자동 매칭이 안 되는 과거 기록은 <strong>피니셔 인증서 + 신분증</strong>을 제출해 수동으로 "별 청구(claim)"할 수 있습니다. 첫 별을 모을 때부터 포털 계정을 만들어 기록을 쌓아 두면 마지막에 한꺼번에 확인하기 편합니다.</li>
-<li><strong>수령:</strong> 마지막 6번째 메이저를 완주하면 <strong>그 대회 현장(피니시 라인 인근 메달 부스)에서 식스스타 메달을 받습니다.</strong> 공식 결과가 며칠 내 AbbottWMM에 전달·처리되면 포털에 반영되고 확인 이메일이 발송됩니다.</li>
-</ul>
-
-<p>참고로 시드니 등 추가 메이저 완주는 정식 메달 대신 <strong>컬렉터블 코인/디스플레이</strong>(예: "Seven Star Sydney" 골드 코인)로 기념할 수 있습니다. 이는 기념품이지 식스스타·나인스타 같은 정식 메달이 아니라는 점을 기억하세요.</p>
-
-<div class="major-next">
-<p><strong>다음은 어디로?</strong></p>
-<p>6대 메이저는 봄·가을에 흩어져 있어, "올해 어느 별부터 노릴지"는 본인의 추첨 결과·기록·휴가 일정에 따라 달라집니다. 진입 쉬운 도쿄·베를린으로 동력을 만들고, 추첨 3개를 매년 병행 응모하며, 보스턴 BQ는 별도 장기 목표로 두는 흐름을 추천합니다.</p>
-<ul>
-<li>가장 먼저 도전하기 좋은 별 → <a href="/blog/tokyo-marathon-2027-registration-guide">도쿄 마라톤 접수 가이드</a></li>
-<li>가을 추첨 노린다면 → <a href="/blog/chicago-marathon-2026-registration-guide">시카고 마라톤 접수 가이드</a></li>
-<li>최종 관문 BQ 준비 → <a href="/blog/boston-marathon-2027-bq-guide">보스턴 2027 BQ 가이드</a></li>
-<li>7번째 별·호주 원정 → <a href="/blog/sydney-marathon-2026-registration-guide">시드니 마라톤 접수 가이드</a></li>
-<li>원정 실무 총정리 → <a href="/blog/overseas-marathon-travel-checklist-korea">해외 마라톤 원정 체크리스트</a></li>
-</ul>
-<p>대회별 거리·난이도가 헷갈린다면 <a href="/blog/race-distance-difficulty-guide-2026">레이스 거리·난이도 가이드</a>로 감을 잡고, 전체 일정은 <a href="/marathon">마라톤 일정 페이지</a>에서 확인하세요.</p>
-</div>
-
-<div class="callout warning">
-<p><strong>면책</strong></p>
-<p>이 글은 2026년 6월 13일 기준 worldmarathonmajors.com·abbott.com 공식 정보를 바탕으로 작성했습니다. 개최일·참가비·진입 경로·메달 정책은 변경될 수 있으며, 추첨 당첨 여부나 미래 메이저 합류(케이프타운·상하이)는 확정된 결과가 아닙니다. 비용·환율은 근사 범위이며, 실제 신청 전 각 대회 공식 사이트와 AbbottWMM 러너 포털에서 최신 정보를 반드시 직접 확인하세요. 산초 에디터는 비용·당첨·미래 일정을 보장하지 않습니다.</p>
-<p>🗺️ 6대 메이저 전체 비교와 "어디부터 갈까"가 궁금하다면 <a href="/blog/world-marathon-majors-guide-2026">세계 6대 마라톤 완전정복</a>에서 한눈에 보세요.</p>
-`,
+<h2>자주 묻는 질문</h2><h3>시드니나 케이프타운이 기존 여섯 곳을 대신하나요?</h3><p>아닙니다. 식스스타는 도쿄·보스턴·런던·베를린·시카고·뉴욕의 기존 여섯 대회 기준입니다.</p><h3>같은 대회를 두 번 뛰면 스타가 두 개 늘어나나요?</h3><p>같은 메이저의 반복 완주로 다른 대회 스타가 추가되지는 않습니다. 포털에는 반복 완주 결과를 보관할 수 있습니다.</p><h3>오래된 완주 결과가 포털에 없으면 인정받을 수 없나요?</h3><p>공식은 자동 보관 범위 이전 결과의 증빙·본인 확인 제출 경로를 안내합니다. 실제 인정 여부와 처리 결과는 공식 검토로 확인해야 합니다.</p><h3>여섯 번째 대회가 확정되면 무엇을 하나요?</h3><p>공식 FAQ는 Runner Portal의 Set For No.6 기능으로 알리도록 안내합니다. 결과 누락과 본인 정보도 확인해야 하며 개인별 현장 지급을 이 글에서 보장하지 않습니다.</p>`,
+    updatedAt: "2026-11-10",
+    faqs: [
+      {
+        "question": "시드니나 케이프타운이 기존 여섯 곳을 대신하나요?",
+        "answer": "아닙니다. 식스스타는 도쿄·보스턴·런던·베를린·시카고·뉴욕의 기존 여섯 대회 기준입니다."
+      },
+      {
+        "question": "같은 대회를 두 번 뛰면 스타가 두 개 늘어나나요?",
+        "answer": "같은 메이저의 반복 완주로 다른 대회 스타가 추가되지는 않습니다. 포털에는 반복 완주 결과를 보관할 수 있습니다."
+      },
+      {
+        "question": "오래된 완주 결과가 포털에 없으면 인정받을 수 없나요?",
+        "answer": "공식은 자동 보관 범위 이전 결과의 증빙·본인 확인 제출 경로를 안내합니다. 실제 인정 여부와 처리 결과는 공식 검토로 확인해야 합니다."
+      },
+      {
+        "question": "여섯 번째 대회가 확정되면 무엇을 하나요?",
+        "answer": "공식 FAQ는 Runner Portal의 Set For No.6 기능으로 알리도록 안내합니다. 결과 누락과 본인 정보도 확인해야 하며 개인별 현장 지급을 이 글에서 보장하지 않습니다."
+      }
+    ],
   },
   {
-    id: 'boston-marathon-2027-bq-guide',
-    slug: 'boston-marathon-2027-bq-guide',
-    title: '보스턴마라톤, 추첨이 없다 — 한국에서 BQ(자격기록) 만드는 현실 가이드 | 연령별 기준표·컷오프·국내 WA공인 대회로 자격 따기',
-    description: '보스턴은 6대 메이저 중 유일하게 추첨이 없습니다. BQ 기록 또는 자선뿐 — 그런데 BQ는 미국까지 갈 필요 없이 서울·경주·춘천 같은 국내 WA/AIMS 공인 대회 기록으로 제출할 수 있습니다. 연령·성별 기준표, 기준만으론 부족한 컷오프 현실, 2027 내리막 페널티 신설, 등록주간까지 한국 러너 기준으로 정리했습니다.',
-    thumbnail: '/images/blog/boston-marathon-2027-bq-guide.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-06-13',
-    updatedAt: '2026-10-12',
+    id: "boston-marathon-2027-bq-guide",
+    slug: "boston-marathon-2027-bq-guide",
+    title: "2027 보스턴마라톤 BQ·컷오프 5분 17초·추가 선발과 2028 준비",
+    description: "2027 BQ 선발에 약 1,000명 대상 추가 추첨 요소가 도입됐습니다. 자격기록·실제 승인·내리막 보정과 2028 기록 유효기간을 공식 자료로 구분했습니다.",
+    thumbnail: "/images/blog/verified-boston-marathon-2027-bq-guide-20261110.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-06-13",
+    updatedAt: "2026-11-10",
     event: {
-      name: '보스턴마라톤 2027',
-      startDate: '2027-04-19',
-      location: { name: '보스턴 (홉킨턴 출발)', address: '미국 보스턴' },
-      organizer: 'Boston Athletic Association',
-      url: 'https://www.baa.org/',
+      "name": "보스턴마라톤 2027",
+      "startDate": "2027-04-19",
+      "location": {
+        "name": "보스턴 (홉킨턴 출발)",
+        "address": "미국 보스턴"
+      },
+      "organizer": "Boston Athletic Association",
+      "url": "https://www.baa.org/"
     },
-    category: 'guide' as const,
-    readingTime: 9,
-    tags: ['보스턴마라톤', '보스턴마라톤 2027', 'BQ', '보스턴 퀄리파잉', '세계 6대 마라톤', '메이저 마라톤', '마라톤 자격기록', '서울마라톤', '식스스타', '마라톤 기록 단축'],
-    content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>보스턴은 6대 메이저 중 유일하게 일반 추첨이 없습니다.</strong> 길은 딱 둘 — <strong>BQ(Boston Qualifying) 기록</strong>으로 출전하거나, <strong>공식 자선 단체</strong>를 통해 모금 조건으로 배번을 받는 것뿐입니다.</li>
-    <li><strong>BQ 기록은 미국까지 가서 만들 필요가 없습니다.</strong> 보스턴은 "자국 육상 관할단체(한국=대한육상연맹)가 공인한 풀코스"면 인정하므로, <strong>서울·경주·춘천 같은 국내 공인 대회에서 낸 기록을 그대로 제출</strong>할 수 있습니다.</li>
-    <li><strong>기준 통과 = 출전 확정이 아닙니다.</strong> 지원자가 정원을 넘으면 "기준보다 더 빠른 사람"만 합격하는 컷오프가 적용돼, 기준보다 <strong>최소 5분, 안전하게는 7~8분</strong> 여유를 두는 게 현실적입니다.</li>
-  </ul>
-</div>
+    category: "guide",
+    readingTime: 6,
+    tags: [
+      "보스턴마라톤",
+      "보스턴마라톤 2027",
+      "보스턴마라톤 2028",
+      "BQ",
+      "보스턴 퀄리파잉",
+      "Boston Qualifier Selection",
+      "마라톤 자격기록",
+      "식스스타"
+    ],
+    content: `<p><small>2026년 11월 10일 대회·시리즈 공식 원문 대조. 신청 연도·선발 방식·비용·현재 진행 단계를 구분했습니다.</small></p>
 
-<div class="callout info">
-  <span class="callout-icon">🦄</span>
-  <div class="callout-body">
-    <p class="callout-title">보스턴이 특별한 이유 — "운이 아니라 실력으로"</p>
-    <p>도쿄·런던·시카고·뉴욕·시드니는 모두 <strong>추첨(ballot)</strong>이 있어 빠르지 않아도 운만 좋으면 갈 수 있습니다. 하지만 <strong>보스턴 마라톤(2027년 4월 19일 개최)에는 일반 추첨이 없습니다.</strong> 정해진 연령·성별별 기준 기록(BQ)을 통과하거나, 공식 자선 단체를 통해 거액을 모금하는 것 외에 출전 경로가 없죠. 그래서 보스턴 완주는 메이저 중에서도 "자격을 증명한 러너"의 상징처럼 여겨집니다. 이 글은 한국 러너가 <strong>국내 대회만으로 BQ를 만드는 현실 경로</strong>에 초점을 둡니다.</p>
-  </div>
-</div>
+<p>기존 ‘보스턴에는 추첨이 없다’는 제목을 바로잡았다. <a href="https://www.baa.org/news/record-field-of-qualifiers-accepted-into-the-131st-boston-marathon-presented-by-bank-of-america/" target="_blank" rel="noopener noreferrer">2026년 9월 29일 B.A.A. 선발 발표</a>는 2027 일반 기록 선발 컷오프 <strong>5분 17초</strong>와, 컷오프 밖 BQ 지원자 일부를 위한 <strong>Boston Qualifier Selection</strong> 추가 추첨 요소를 안내했다. 기록이 없는 누구나 참여하는 일반 추첨과는 다른 제도다.</p>
+<h2>2027 접수는 끝났고, 개인 결과는 공식 계정으로 확인</h2>
+<p><a href="https://www.baa.org/races/boston-marathon/qualify/" target="_blank" rel="noopener noreferrer">B.A.A. 현행 자격·선발 안내</a>는 2027 BQ 접수가 9월 14~18일 종료됐으며 선착순이 아니었다고 설명한다. 9월 29일 발표는 1,000명 추가 선발 진행을 안내한 당시 자료다. 지금도 그 추첨을 새로 신청할 수 있다는 뜻으로 쓰지 않았고, 개인별 최종 승인 결과를 조회하지 않았다.</p>
+<p>컷오프 5분 17초는 해당 연도의 선발 결과다. BQ 기준 자체나 모든 해의 안전 여유 시간, 2028 합격 보장 값으로 바꾸지 말자.</p>
+<h2>2027·2028 공식 BQ 표</h2>
+<table><thead><tr><th>대회 당일 연령</th><th>남성</th><th>여성</th><th>논바이너리</th></tr></thead><tbody><tr><td>18–34</td><td>2:55:00</td><td>3:25:00</td><td>3:25:00</td></tr><tr><td>35–39</td><td>3:00:00</td><td>3:30:00</td><td>3:30:00</td></tr><tr><td>40–44</td><td>3:05:00</td><td>3:35:00</td><td>3:35:00</td></tr><tr><td>45–49</td><td>3:15:00</td><td>3:45:00</td><td>3:45:00</td></tr><tr><td>50–54</td><td>3:20:00</td><td>3:50:00</td><td>3:50:00</td></tr><tr><td>55–59</td><td>3:30:00</td><td>4:00:00</td><td>4:00:00</td></tr><tr><td>60–64</td><td>3:50:00</td><td>4:20:00</td><td>4:20:00</td></tr><tr><td>65–69</td><td>4:05:00</td><td>4:35:00</td><td>4:35:00</td></tr><tr><td>70–74</td><td>4:20:00</td><td>4:50:00</td><td>4:50:00</td></tr><tr><td>75–79</td><td>4:35:00</td><td>5:05:00</td><td>5:05:00</td></tr><tr><td>80세 이상</td><td>4:50:00</td><td>5:20:00</td><td>5:20:00</td></tr></tbody></table>
+<p>출처: <a href="https://www.baa.org/races/boston-marathon/qualify/" target="_blank" rel="noopener noreferrer">B.A.A. 2027·2028 자격기록 표</a>. 제출하는 공식 넷타임 기준이며 연령은 기록을 낸 날이 아니라 지원하는 보스턴 대회 당일 기준이다. 표를 충족하면 신청 자격을 갖추는 것이지 모든 지원자가 참가 확정되는 것은 아니다.</p>
+<h2>국내 기록도 대회 이름만 보고 자동 인정하지 말자</h2>
+<p>B.A.A.는 인증된 풀코스와 기록 검토를 요구하며 USATF·AIMS 또는 개최국의 관할 단체 인증을 안내한다. 실내·버추얼·풀보다 짧은 거리는 인정하지 않는다. 국내 유명 대회라는 이유만으로 모든 연도·변경 코스의 결과가 자동 인정된다고 단정하지 않았다.</p>
+<p>기록을 만들 대회의 정확한 부문·연도·코스 인증과 결과 증빙을 확인하자. 변경 코스라면 재측정·인증 조건도 확인해야 한다. 특정 한국 대회 세 곳을 일괄 ‘보스턴 확정 인정’ 목록으로 반복하지 않았다.</p>
+<h2>순하강 보정: 누적 하강고도와 다르다</h2>
+<p>현행 표는 출발·도착 고도 차이인 순하강을 기준으로 1,500~2,999피트는 +5분, 3,000~5,999피트는 +10분, 6,000피트 이상은 자격 불인정으로 안내한다. GPS의 누적 내리막 합계와 같은 수치가 아니다. 개인 코스의 고도값이나 보정 적용 결과를 이 글에서 판정하지 않았다.</p>
+<h2>지금 기록을 준비한다면 2028 기간을 확인</h2>
+<p>공식은 2028 기록 유효기간이 <strong>2026년 9월 19일 시작</strong>됐다고 안내한다. 2027의 기간·접수표와 섞지 말자. 정확한 다음 접수 기한·최종 조건은 새 안내를 확인해야 하며 예상 컷오프를 확정값으로 제시하지 않는다.</p>
+<p><a href="https://www.baa.org/races/boston-marathon/info-for-athletes/" target="_blank" rel="noopener noreferrer">B.A.A. 참가자 안내</a>는 사전 기록 검증이나 카드 사전승인이 실제 참가 승인을 뜻하지 않는다고 설명한다. 합격 안내와 실제 결제·참가 확정 상태를 나눠 확인하자.</p>
 
-<h2>BQ 자격 기준표 — 연령·성별 정확히</h2>
-
-<p>BQ 기준은 <strong>대회 당일(2027년 4월 19일) 기준 만 나이</strong>로 판정합니다. 2026년 대회부터 전 연령대가 5분씩 강화됐고, <strong>2027년에도 이 강화된 기준이 그대로 유지</strong>됩니다. 아래는 보스턴육상협회(BAA) 공식 기준표입니다.</p>
-
-<table>
-  <thead>
-    <tr><th>연령대(대회 당일)</th><th>남자</th><th>여자 / 논바이너리</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>18–34</td><td><strong>2:55:00</strong></td><td>3:25:00</td></tr>
-    <tr><td>35–39</td><td>3:00:00</td><td>3:30:00</td></tr>
-    <tr><td>40–44</td><td>3:05:00</td><td>3:35:00</td></tr>
-    <tr><td>45–49</td><td>3:15:00</td><td>3:45:00</td></tr>
-    <tr><td>50–54</td><td>3:20:00</td><td>3:50:00</td></tr>
-    <tr><td>55–59</td><td>3:30:00</td><td>4:00:00</td></tr>
-    <tr><td>60–64</td><td>3:50:00</td><td>4:20:00</td></tr>
-    <tr><td>65–69</td><td>4:05:00</td><td>4:35:00</td></tr>
-    <tr><td>70–74</td><td>4:20:00</td><td>4:50:00</td></tr>
-    <tr><td>75–79</td><td>4:35:00</td><td>5:05:00</td></tr>
-    <tr><td>80+</td><td>4:50:00</td><td>5:20:00</td></tr>
-  </tbody>
-</table>
-
-<p>예를 들어 대회 당일 기준 만 38세 남성이라면 35–39 구간이 적용돼 <strong>3시간 00분 00초</strong> 이내여야 합니다. 나이 계산 기준이 "신청 시점"이 아니라 "대회 당일"이라는 점을 꼭 기억하세요 — 1월생 러너가 본인 나이를 한 살 낮춰 잡았다가 더 빡센 기준에 걸리는 일이 종종 있습니다.</p>
-
-<h2>컷오프 현실 — 기준만으론 부족합니다</h2>
-
-<p>여기서 한국 러너가 가장 많이 오해하는 부분입니다. <strong>BQ 기준을 통과했다고 해서 출전이 확정되는 게 아닙니다.</strong> 보스턴 정원은 약 3만 명인데, 기준 통과자가 정원을 넘으면 "기준보다 더 빠른 순서대로" 합격자를 자릅니다. 이걸 <strong>컷오프(cutoff)</strong>라고 부릅니다.</p>
-
-<div class="callout warning">
-  <span class="callout-icon">⏱️</span>
-  <div class="callout-body">
-    <p class="callout-title">"선착순"이 아닙니다 — 등록주간에 일괄 접수 후 빠른 순으로 합격</p>
-    <p>보스턴 등록은 먼저 신청한 사람이 유리한 선착순이 아닙니다. <strong>등록주간(약 5일) 동안 일괄 접수</strong>를 받은 뒤, 기준 대비 여유 시간이 큰 순서대로 합격을 결정합니다. 그러니 등록주간 첫날에 서두를 필요는 없지만, <strong>기록 자체가 기준보다 충분히 빨라야</strong> 합니다.</p>
-  </div>
-</div>
-
-<p>과거 실제 합격선(기준보다 얼마나 더 빨라야 했는지)을 보면 감이 잡힙니다.</p>
-
-<table>
-  <thead>
-    <tr><th>대회 연도</th><th>컷오프(기준 대비 추가로 빨라야 했던 시간)</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>2023</td><td>컷오프 없음(기준 통과자 전원 합격)</td></tr>
-    <tr><td>2024</td><td>5분 29초</td></tr>
-    <tr><td>2025</td><td>6분 51초</td></tr>
-    <tr><td>2026</td><td>4분 34초</td></tr>
-    <tr><td>2027</td><td>5분 17초</td></tr>
-  </tbody>
-</table>
-
-<p>2026년에 기준을 5분 강화한 덕에 컷오프가 6분 51초(2025)에서 4분 34초(2026)로 완화됐습니다. <strong>2027년 컷오프는 9월 29일 B.A.A. 공식 공지로 5분 17초로 확정됐습니다</strong>(등록주간은 2026년 9월 14~18일). B.A.A.의 <a href="https://www.baa.org/news/record-field-of-qualifiers-accepted-into-the-131st-boston-marathon-presented-by-bank-of-america/" target="_blank" rel="noopener noreferrer">9월 29일 공식 발표</a>는 지원자 33,649명, 기록 선발 24,630명과 무작위 선발 1,000명을 합한 25,630명을 합격 또는 검증 중인 예비 집계로 안내했습니다. 8,019명은 합격하지 못한 것으로 집계됐습니다. 통보는 9월 29일 시작됐고 예고된 10월 초 기간은 지났습니다. 아직 결과를 확인하지 못했다면 이메일과 Athletes’ Village 계정을 확인하세요. 10월 12일 재확인 시 별도의 무작위 선발 최종 집계 공지는 찾지 못했으므로 예비 집계를 최종 확정 인원으로 표시하지 않습니다. 과거 패턴으로 보면 <strong>기준보다 최소 5분, 안전하게는 7~8분 여유</strong>를 목표로 잡는 게 현실적인 전략입니다. "기준 딱 맞춰 통과"는 거의 매년 탈락 위험이 있다고 보면 됩니다.</p>
-
-<h2>★국내에서 BQ 만들기 — 미국 원정은 필요 없습니다</h2>
-
-<p>이 글의 핵심입니다. 많은 러너가 "BQ는 미국 대회에서 뛰어야 인정되는 것 아닌가?"라고 오해하는데, <strong>전혀 그렇지 않습니다.</strong> BAA 공식 규정은 다음과 같습니다.</p>
-
-<div class="callout info">
-  <span class="callout-icon">📋</span>
-  <div class="callout-body">
-    <p class="callout-title">BAA 코스 인증 요건</p>
-    <ul>
-      <li>기록은 <strong>풀코스(42.195km)</strong> 완주 기록이어야 합니다(하프 환산·트레드밀·가상·실내·타임트라이얼 모두 불인정).</li>
-      <li>코스가 <strong>World Athletics / AIMS / USATF / 해당국 육상 관할단체</strong>에 의해 공인되어야 합니다. <strong>한국은 대한육상연맹(KAAF)</strong>이 관할단체입니다.</li>
-      <li><strong>트랜스폰더(칩) 계측 필수</strong>, 공식 참가자 최소 3명 이상.</li>
-    </ul>
-    <p>즉, <strong>"자국 관할단체가 공인한 코스면 어느 나라 대회든 인정"</strong>된다는 뜻입니다. 한국에서 KAAF/AIMS/WA 공인 코스로 뛴 기록을 그대로 보스턴에 제출할 수 있습니다.</p>
-  </div>
-</div>
-
-<p>여기서 꼭 구분해야 할 개념이 있습니다. <strong>"라벨(대회 등급)"과 "코스 공인(거리 측정 인증)"은 다른 것</strong>입니다. World Athletics 플래티넘·골드·엘리트 라벨은 대회의 운영·엘리트 필드 수준을 나타내는 등급이고, 보스턴이 요구하는 건 <strong>거리가 정확히 측정·인증된 공인 코스</strong>입니다. 라벨이 없어도 코스가 공인됐으면 BQ로 쓸 수 있고, 반대로 라벨이 있으면 코스 공인은 당연히 충족합니다.</p>
-
-<table>
-  <thead>
-    <tr><th>국내 대회</th><th>공인 현황</th><th>BQ 인정</th></tr>
-  </thead>
-  <tbody>
-    <tr><td><strong>서울마라톤(동아)</strong></td><td>World Athletics <strong>플래티넘 라벨</strong> — 국내 유일, 보스턴·도쿄·뉴욕과 동급 최상위</td><td>✅ 가장 안전(코스·기록 신뢰 최상)</td></tr>
-    <tr><td><strong>경주국제마라톤</strong></td><td>World Athletics <strong>엘리트 라벨</strong> 공인 코스</td><td>✅ 인정</td></tr>
-    <tr><td><strong>춘천마라톤</strong></td><td><strong>AIMS 국제 공인 코스</strong> + 대한육상연맹 공인</td><td>✅ 인정</td></tr>
-    <tr><td>JTBC 서울마라톤</td><td>WA 라벨 없음(코스 공인 여부는 별개)</td><td>⚠️ 코스 공인 여부 개별 확인 권장</td></tr>
-  </tbody>
-</table>
-
-<p>실전 관점에서 보면, <strong>서울·경주·춘천 모두 하반기(가을~겨울) 단풍철에 열리는 평탄한 PB 코스</strong>라 BQ를 노리기에 최적입니다. 특히 동아 서울마라톤은 국내 유일 WA 플래티넘 대회라 기록 신뢰도와 코스 공인 모두 가장 확실합니다. 대회별 일정·코스 정보는 <a href="/marathon/seoul-marathon-2026">서울마라톤</a>, <a href="/marathon/gyeongju-international-marathon-2026">경주국제마라톤</a>, <a href="/marathon/chuncheon-marathon-2026">춘천마라톤</a> 페이지에서 확인하고, 전체 일정은 <a href="/marathon">마라톤 캘린더</a>에서 살펴보세요.</p>
-
-<div class="callout info">
-  <span class="callout-icon">🚫</span>
-  <div class="callout-body">
-    <p class="callout-title">2027년 신설 룰 — 내리막 특화 코스에 시간 페널티</p>
-    <p>2027년 등록부터 <strong>순고도 하강(net-downhill)이 큰 코스</strong>에 시간 페널티가 신설됩니다(향후 최소 2년 유지).</p>
-    <ul>
-      <li>순하강 1,500~2,999피트: 제출 기록에 <strong>+5분</strong> 가산</li>
-      <li>순하강 3,000~5,999피트: <strong>+10분</strong> 가산</li>
-      <li>순하강 6,000피트 이상: <strong>자격 인정 불가</strong></li>
-    </ul>
-    <p>한국 대회는 평탄하거나 고저차가 작아 이 페널티의 영향권 밖입니다. 오히려 미국의 "내리막 특화 BQ 사냥 대회"가 막힌 셈이라, <strong>정직한 평탄 코스인 국내 공인 대회의 가치가 더 올라갔습니다.</strong></p>
-  </div>
-</div>
-
-<h2>등록주간·자선 대안</h2>
-
-<p><strong>자격 윈도</strong>(인정 기록을 낼 수 있는 기간)는 <strong>2025년 9월 13일 이후 완주 기록</strong>부터입니다. 이 날짜 이후 국내 공인 대회에서 BQ 기록을 만들면 2027 보스턴 자격으로 제출할 수 있습니다. <strong>등록주간은 2026년 9월</strong>에 열릴 예정이지만, 정확한 날짜는 아직 공식 발표 전입니다(참고로 2026 대회 등록주간은 2025년 9월 8~12일이었습니다). 등록주간 일정은 BAA가 통상 봄~여름에 공지하므로, 기록을 만든 뒤 baa.org 공지를 확인하세요.</p>
-
-<div class="callout warning">
-  <span class="callout-icon">💸</span>
-  <div class="callout-body">
-    <p class="callout-title">자선(charity) 경로 — 한국 러너에겐 현실적 차선책</p>
-    <p>BQ 기록 없이 출전하는 유일한 공식 길은 <strong>Bank of America 보스턴 마라톤 공식 자선 프로그램</strong>입니다. BAA가 비영리단체에 초청 배번을 배정하고, 러너는 모금 서약을 합니다.</p>
-    <ul>
-      <li><strong>BAA 최소 모금 기준: 배번당 $5,000</strong>(하한선). 실제 대부분 단체는 <strong>$8,500~$10,000</strong>를 요구하며, 일부는 $15,000까지 올라갑니다.</li>
-      <li>별도로 <strong>신청비 약 $375</strong>(모금액에 포함되지 않음)가 듭니다.</li>
-      <li>자선 경로는 미국 비영리단체 모금이라 <strong>한국에서 모금 동력을 확보하기가 현실적으로 어렵습니다.</strong> 한국 러너의 1순위는 어디까지나 <strong>국내 공인 대회 BQ</strong>로 잡는 게 합리적입니다.</li>
-    </ul>
-  </div>
-</div>
-
-<h2>보스턴 코스 — 뉴턴 힐과 내리막 함정, 그리고 신발</h2>
-
-<p>보스턴 코스는 기록을 노리기에 결코 쉽지 않은 "함정 코스"입니다. 홉킨턴에서 출발한 뒤 <strong>초반이 길게 내리막</strong>이라 페이스가 잘 나오지만, 이때 대퇴사두근(허벅지 앞쪽)에 미세 손상이 누적됩니다. 그리고 <strong>32km 지점(뉴턴) 일대의 연속 언덕</strong>, 그 정점인 <strong>하트브레이크 힐</strong>이 이미 지친 다리를 강타하죠. "내리막으로 다리를 망가뜨린 뒤 오르막으로 끝장낸다"는 구조라, BQ 기록보다 더 빠른 실력이 필요한 이유이기도 합니다.</p>
-
-<p>그래서 보스턴 준비에는 <strong>내리막 근지구력 훈련</strong>(편심성 수축 대비)과 <strong>완충·반발이 좋은 카본 슈퍼슈즈</strong>가 중요합니다. 초반 내리막에서 다리 손상을 줄여주고 후반 언덕에서 에너지 리턴을 받쳐줄 신발이 유리하죠.</p>
-
-<ul>
-  <li><a href="/shoes/asics-metaspeed-edge-plus">아식스 메타스피드 엣지+</a> — 보폭을 늘리는 스트라이드형 러너에게 맞는 카본화로, 언덕 구간에서 추진력을 살리기 좋습니다.</li>
-  <li><a href="/shoes/nike-vaporfly-4">나이키 베이퍼플라이 4</a> — 가볍고 반발이 강해 PB용 슈퍼슈즈의 기준점입니다.</li>
-  <li><a href="/shoes/adidas-adios-pro-4">아디다스 아디오스 프로 4</a> — 로드러너 막대 구조로 안정감과 반발을 함께 잡은 균형형 카본화입니다.</li>
-</ul>
-
-<p>풀코스 BQ 자체가 처음이라면, 배번부터 잡기 전에 <a href="/blog/race-distance-difficulty-guide-2026">거리별 난이도 가이드</a>로 내 수준과 목표 페이스를 먼저 점검하길 권합니다.</p>
-
-<div class="major-next">
-  <p class="mn-title">🏁 보스턴 다음 한 걸음 — 당신의 방향은?</p>
-  <div class="mn-grid">
-    <a class="mn-card" href="/blog/tokyo-marathon-2027-registration-guide"><span class="mn-emoji">🗼</span><div class="mn-label">도쿄마라톤 2027</div><div class="mn-desc">추첨이 있어 BQ 없이도 도전 가능. 인천 2시간·시차 0의 첫 메이저</div></a>
-    <a class="mn-card" href="/blog/chicago-marathon-2026-registration-guide"><span class="mn-emoji">🌆</span><div class="mn-label">시카고마라톤 2026</div><div class="mn-desc">세계 최속 평지 PB 성지 — BQ 기록 만들기에도 유리한 코스</div></a>
-    <a class="mn-card" href="/blog/overseas-marathon-travel-checklist-korea"><span class="mn-emoji">🧳</span><div class="mn-label">해외 원정 준비 매뉴얼</div><div class="mn-desc">인천 출발·한국 여권 기준 공통 체크리스트. 어느 메이저든 챙길 것</div></a>
-  </div>
-</div>
-
-<p>🗺️ 6대 메이저 전체 비교와 "어디부터 갈까"가 궁금하다면 <a href="/blog/world-marathon-majors-guide-2026">세계 6대 마라톤 완전정복</a>에서 한눈에 보세요.</p>
-
-<p class="disclaimer">※ BQ 자격 기준·자격 윈도·자선 모금 하한선은 baa.org 공식 발표(2026-06 확인) 기준입니다. <strong>2027 컷오프(5분 17초)는 2026-09-29 B.A.A. 공지(2026-10-01 확인) 기준</strong>이며, 컷오프는 매년 지원자 수에 따라 달라지므로 본문의 과거 수치(2024~2027)는 다음 회차 결과를 보장하지 않습니다. 신청 전 반드시 baa.org와 각 국내 대회 공식 페이지에서 최신 정보를 확인하세요.</p>
-`,
+<h2>자주 묻는 질문</h2><h3>보스턴에는 추첨이 전혀 없나요?</h3><p>2027에는 BQ 지원자 중 컷오프 밖 일부를 위한 Boston Qualifier Selection 추가 추첨 요소가 도입됐습니다. 기록 없는 일반인의 공개 추첨과는 다릅니다.</p><h3>2027 컷오프 5분 17초가 2028 기준인가요?</h3><p>아닙니다. 2027의 선발 결과이며 BQ 표와도 다른 값입니다. 다음 해 합격 여유 시간을 보장하지 않습니다.</p><h3>BQ의 나이는 언제 기준인가요?</h3><p>지원하는 보스턴마라톤 대회 당일 나이를 기준으로 해당 연령·성별의 공식 넷타임 기준을 확인해야 합니다.</p><h3>지금 새 기록을 만들면 어느 기간에 해당하나요?</h3><p>공식 안내의 2028 기록 유효기간은 2026년 9월 19일 시작입니다. 다음 접수 일정과 최종 규정은 새 공지를 확인해야 합니다.</p>`,
+    faqs: [
+      {
+        "question": "보스턴에는 추첨이 전혀 없나요?",
+        "answer": "2027에는 BQ 지원자 중 컷오프 밖 일부를 위한 Boston Qualifier Selection 추가 추첨 요소가 도입됐습니다. 기록 없는 일반인의 공개 추첨과는 다릅니다."
+      },
+      {
+        "question": "2027 컷오프 5분 17초가 2028 기준인가요?",
+        "answer": "아닙니다. 2027의 선발 결과이며 BQ 표와도 다른 값입니다. 다음 해 합격 여유 시간을 보장하지 않습니다."
+      },
+      {
+        "question": "BQ의 나이는 언제 기준인가요?",
+        "answer": "지원하는 보스턴마라톤 대회 당일 나이를 기준으로 해당 연령·성별의 공식 넷타임 기준을 확인해야 합니다."
+      },
+      {
+        "question": "지금 새 기록을 만들면 어느 기간에 해당하나요?",
+        "answer": "공식 안내의 2028 기록 유효기간은 2026년 9월 19일 시작입니다. 다음 접수 일정과 최종 규정은 새 공지를 확인해야 합니다."
+      }
+    ],
   },
   {
     id: 'overseas-marathon-travel-checklist-korea',
