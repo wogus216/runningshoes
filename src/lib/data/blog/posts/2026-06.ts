@@ -4704,89 +4704,39 @@ export const posts_2026_06: BlogPost[] = [
 `,
   },
   {
-    id: 'race-distance-difficulty-guide-2026',
-    slug: 'race-distance-difficulty-guide-2026',
-    title: '풀코스 완주자도 10K·하프에서 무너지는 이유 — 거리별 \'체감 난이도\'의 과학 | 에너지 시스템·페이스 배분·거리별 훈련 처방',
-    description: '"풀코스를 여러 번 완주했는데 왜 10K·하프가 더 힘들까?" 거리가 짧다고 쉬운 게 아닙니다. 거리마다 동원하는 에너지 시스템과 요구 강도가 다르기 때문이죠. 5K·10K·하프·풀코스가 각각 어떤 괴로움을 주는지, 풀 완주자가 짧은 거리에서 무너지는 진짜 이유(훈련 특이성)와 거리별 페이스 배분·훈련 처방까지 데이터로 정리했습니다.',
-    thumbnail: '/images/blog/race-distance-difficulty-guide-2026.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-06-09',
-    category: 'guide' as const,
-    readingTime: 8,
-    tags: ['거리별 훈련', '페이스 배분', '에너지 시스템', '10K', '하프마라톤', '풀코스', '젖산역치', '러닝 훈련'],
+    id: "race-distance-difficulty-guide-2026",
+    slug: "race-distance-difficulty-guide-2026",
+    title: "5km·10km·하프·풀 — 거리별 난이도보다 목적·강도·시간부터",
+    description: "거리별 난이도 배수와 고정 에너지 비율·훈련 처방 대신, 최근 주행 경험과 목표 강도·지속시간을 비교하는 질문을 정리했습니다.",
+    thumbnail: "/images/blog/verified-race-distance-difficulty-guide-2026-20261110.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-06-09",
+    category: "guide",
+    readingTime: 6,
+    tags: [
+      "거리별 훈련",
+      "페이스 배분",
+      "에너지 시스템",
+      "10K",
+      "하프마라톤",
+      "풀코스",
+      "젖산역치",
+      "러닝 훈련"
+    ],
     content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li>거리가 짧다고 쉬운 게 아닙니다 — <strong>거리마다 동원하는 에너지 시스템과 요구 강도가 다르기</strong> 때문이죠. 10K·하프는 풀코스보다 <strong>훨씬 높은 강도</strong>를 오래 버텨야 합니다</li>
-    <li>풀코스를 완주해도 10K가 힘든 건 <strong>훈련 특이성</strong> 때문 — LSD 위주로만 달리면 젖산역치 근처의 <strong>고강도 지속 능력</strong>이 길러지지 않습니다</li>
-    <li>해법은 거리별로 다른 처방: 풀=<strong>지구력(LSD)</strong>, 하프·10K=<strong>젖산역치·템포</strong>, 5K=<strong>VO2max 인터벌</strong>. 페이스 배분 실수만 줄여도 체감 난이도가 확 떨어집니다</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">ℹ️</span>
-  <div class="callout-body">
-    <p class="callout-title">"풀 뛴 내가 왜 10K에서 헉헉대지?"</p>
-    <p>러닝 커뮤니티에서 자주 나오는 고민입니다. 42.195km를 완주한 사람이 정작 10K 레이스나 하프에서 더 고통스러워하죠. 직관과 반대 같지만, 운동생리학적으로는 <strong>아주 당연한 현상</strong>입니다. 거리와 난이도는 비례하지 않거든요. 핵심은 '얼마나 멀리'가 아니라 '<strong>얼마나 강하게 오래</strong>'입니다.</p>
-  </div>
-</div>
-
-<h2>거리는 짧은데 왜 더 괴로울까 — '강도'의 문제</h2>
-<p>러닝의 괴로움은 거리(km)가 아니라 <strong>강도(페이스)</strong>가 결정합니다. 풀코스는 길지만 상대적으로 낮은 강도로 달립니다. 반면 10K는 거리가 1/4이지만, 젖산이 쌓이기 시작하는 <strong>젖산역치(LT) 근처</strong>를 40~60분간 버텨야 하죠. 즉 짧은 거리일수록 <strong>'더 아픈 구간'에서 더 오래 머무는</strong> 셈입니다.</p>
-<p>몸이 에너지를 만드는 방식(에너지 시스템)도 거리마다 다릅니다. 짧고 빠를수록 무산소·VO2max 영역을, 길고 느릴수록 유산소 지구력을 씁니다. 같은 '러닝'이라도 거리별로 거의 다른 운동인 셈이죠.</p>
-
-<table>
-  <thead>
-    <tr><th>거리</th><th>주 에너지 시스템</th><th>강도(젖산역치 기준)</th><th>주된 괴로움</th></tr>
-  </thead>
-  <tbody>
-    <tr><td><strong>5K</strong></td><td>무산소 + VO2max</td><td>역치 초과 (매우 높음)</td><td>짧고 강렬한 산소 빚 — 폐가 터질 듯</td></tr>
-    <tr><td><strong>10K</strong></td><td>젖산역치 근처</td><td>역치 줄타기 (높음)</td><td>'아픈데 멈출 수 없는' 40~50분</td></tr>
-    <tr><td><strong>하프(21.1K)</strong></td><td>역치~마라톤 페이스</td><td>중상 (지속 가능 상한)</td><td>후반 누적 피로 + 페이스 유지 압박</td></tr>
-    <tr><td><strong>풀(42.2K)</strong></td><td>유산소 지구력</td><td>중 (대화 가능 수준)</td><td>글리코겐 고갈·'마의 35km 벽'</td></tr>
-  </tbody>
-</table>
-
-<h2>풀코스 완주자가 10K에서 무너지는 진짜 이유</h2>
-<p>핵심은 <strong>훈련 특이성(specificity)</strong>입니다. 몸은 훈련한 방식대로 적응하거든요.</p>
-<ul>
-  <li><strong>마라톤 준비 = LSD 위주</strong>: 풀코스를 목표로 하면 대부분 느린 장거리(<a href="/blog/lsd-training-beginner-guide-korea">LSD</a>) 위주로 훈련합니다. 이건 유산소 지구력은 키우지만, <strong>젖산역치 근처의 고강도를 버티는 능력</strong>은 거의 길러주지 않습니다</li>
-    <li><strong>10K·하프 = 역치 능력 싸움</strong>: 정작 짧은 레이스는 그 '고강도 지속' 능력을 요구합니다. LSD만 해온 몸엔 가장 약한 부분이죠</li>
-  <li><strong>페이스 감각 부재</strong>: 마라톤 페이스에 익숙한 몸이 10K 페이스(훨씬 빠름)로 나가면, 초반에 역치를 넘겨버려 중반에 무너집니다</li>
-</ul>
-<p>즉 "풀도 뛰었는데 10K쯤이야"라며 같은 훈련으로 임하면 오히려 고전합니다. 거리가 짧아질수록 <strong>전용 고강도 훈련</strong>이 필요합니다.</p>
-
-<div class="callout warning">
-  <span class="callout-icon">⚠️</span>
-  <div class="callout-body">
-    <p class="callout-title">가장 흔한 실수 — 초반 오버페이스</p>
-    <p>짧은 레이스일수록 초반 흥분으로 목표보다 빠르게 나가기 쉽습니다. 10K에서 첫 2km를 목표 페이스보다 10초/km만 빠르게 가도, 5km 지점에서 젖산이 폭발해 후반이 지옥이 됩니다. <strong>거리가 짧을수록 초반 페이스 절제가 더 중요</strong>합니다.</p>
-  </div>
-</div>
-
-<h2>거리별 훈련 처방</h2>
-<p>"체감 난이도"를 낮추는 길은 그 거리가 요구하는 능력을 콕 집어 훈련하는 것입니다.</p>
-<ul>
-  <li><strong>5K</strong> — VO2max 인터벌(400m~1km 반복). 짧고 강한 자극으로 최대산소섭취량을 끌어올립니다</li>
-  <li><strong>10K·하프</strong> — <a href="/blog/tempo-run-training-guide-korea">템포런</a>과 젖산역치 훈련이 핵심. 역치 페이스를 20~40분 지속하는 능력을 키웁니다. 볼륨과 강도를 균형 있게 쌓는 <a href="/blog/nsm-norwegian-singles-method-training">노르웨이식(NSM) 더블 트레숄드</a>도 효과적입니다</li>
-  <li><strong>풀코스</strong> — <a href="/blog/lsd-training-beginner-guide-korea">LSD</a>로 유산소 베이스와 글리코겐 효율을 키우되, 마라톤 페이스 구간 주행을 섞습니다</li>
-</ul>
-<p>고강도 구간에서 숨이 일찍 차는 게 고민이라면, 페이스 문제뿐 아니라 호흡 효율도 점검하세요 — <a href="/blog/running-breathing-guide-korea">러닝 호흡법 가이드</a>에 2:2 리듬과 코·입 호흡을 정리해 두었습니다.</p>
-
-<h2>거리별로 신발도 다르게</h2>
-<p>요구 강도가 다른 만큼, 거리·페이스에 맞는 신발이 체감 난이도를 줄여줍니다.</p>
-<ul>
-  <li><strong>10K·하프 레이스(고강도)</strong> — 반발과 추진을 주는 <a href="/best/racing">카본 레이싱화</a>가 역치 페이스 유지에 유리합니다(단, 입문자는 근력부터)</li>
-  <li><strong>데일리·템포 훈련</strong> — 다재다능한 <a href="/best/daily-trainer">데일리 트레이너</a>가 역치·템포 주행을 두루 받쳐줍니다</li>
-  <li><strong>풀코스·LSD·회복</strong> — 누적 피로를 줄이는 <a href="/best/max-cushion">맥스쿠션 슈즈</a>가 장거리 부담을 덜어줍니다</li>
-</ul>
-
-<h2>마무리</h2>
-<p>거리와 난이도는 비례하지 않습니다. 풀코스는 '오래'의 싸움이고, 10K·하프는 '강하게 오래'의 싸움이에요. 풀을 완주했다고 짧은 레이스가 거저 되는 게 아니라, <strong>각 거리가 요구하는 능력을 따로 훈련</strong>해야 그 거리의 체감 난이도가 떨어집니다. 다음 목표 거리가 정해졌다면, 그 거리에 맞는 강도 훈련과 페이스 배분부터 점검해 보세요. 그것만으로도 레이스 당일의 괴로움이 확연히 줄어듭니다.</p>
-
-<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 일반적인 러닝 훈련·운동생리 정보로, 개인의 의학적 진단을 대체하지 않습니다. 새로운 고강도 훈련을 시작할 때는 점진적으로 강도를 올리고, 통증이 지속되면 전문가의 진료를 받으세요. (참고 글감: @dongmaclub, 2026-06-08)</p>
+<p><strong>2026-11-10 근거 재확인.</strong> 제품 표시·연구 조건·실제 행동에 필요한 정보를 구분했습니다.</p><h2>짧은 거리가 늘 쉬운 것은 아니지만 난이도 배수도 정할 수 없습니다</h2><p>어려웠던 이유를 보려면 거리 외에 어느 강도로 얼마나 오래 달렸는지 확인해야 합니다. 풀코스를 완주했더라도 더 짧은 거리에서 평소와 다른 속도로 뛰면 다른 부담을 느낄 수 있습니다.</p><p>이 글은 10km가 5km의 몇 배 어렵다거나, 거리별 유산소·무산소 비율을 모든 러너에게 같은 수치로 배정하지 않습니다. 자신의 목표와 최근 기록을 기준으로 비교할 질문을 정리합니다.</p><div class="table-wrap"><table><thead><tr><th scope="col">거리</th><th scope="col">목표 전에 확인할 질문</th><th scope="col">마친 뒤 남길 기록</th></tr></thead><tbody><tr><td>5km</td><td>완주·걷기 포함·기록 도전 중 무엇이 목표인가?</td><td>출발 강도와 중간에 느낀 호흡·불편</td></tr><tr><td>10km</td><td>거리를 늘리는 도전과 속도를 높이는 도전을 겹쳤는가?</td><td>후반 구간 변화·노면·날씨</td></tr><tr><td>하프</td><td>해당 시간의 주행 경험과 보급 기회가 있는가?</td><td>긴 주행에서의 피로·위장 반응</td></tr><tr><td>풀코스</td><td>최근 긴 주행·총량과 당일 운영 조건이 맞는가?</td><td>구간 기록·보급·다음날 회복 부담</td></tr></tbody></table></div><h2>같은 숫자의 심박 구간도 먼저 설정을 확인하세요</h2><p>CDC는 같은 활동이라도 체력에 따라 상대적 강도가 다르다고 설명합니다. 대화·노력감을 관찰하는 방식은 도움이 될 수 있지만 그 값만으로 정확한 젖산역치나 시계의 특정 구간을 직접 측정한 것은 아닙니다.</p><p>거리별 목표를 정하면서 ‘10km는 누구나 이 심박 비율’이라는 표를 적용하지 말고 기기의 구간 설정과 자신의 반응을 확인하세요. 완주 경험과 최대한 빠르게 달린 경험도 서로 다른 조건입니다.</p><h2>하프·풀 기록 연구가 직접 보여 준 범위</h2><p>2023년 빈 대회 연구는 하프·풀 완주 기록을 비교한 관찰 연구입니다. 두 거리와 기록 수준에 따라 속도 변화 패턴이 달랐지만, 누가 어느 훈련을 해야 하는지 무작위로 시험한 자료는 아닙니다.</p><p>그러므로 해당 자료로 5km·10km까지 같은 난이도 순위를 만들거나 거리별 고정 주간 훈련 횟수를 처방하지 않았습니다. 완주자 자료라는 점도 중요합니다. 중도 포기자의 경험까지 같은 결과로 확인한 것은 아닙니다.</p><h2>다른 거리로 옮길 때 먼저 비교할 세 가지</h2><p>첫째는 총 지속시간입니다. 예상 시간이 늘면 이동·급수·보급 기회를 함께 볼 필요가 있습니다. 둘째는 목표 강도입니다. 짧아졌다는 이유만으로 평소 경험하지 않은 속도를 바로 유지할 수 있다고 보기는 어렵습니다.</p><p>셋째는 준비와 회복의 여지입니다. 이번 도전이 평소 주간 일정에서 차지할 부담과 다음 훈련까지의 반응을 확인하세요. 다른 거리 기록에 고정 배수·고정 몇 분을 더한 값은 개인의 확정 목표가 아닙니다.</p><h2>내 기록으로 다음 선택을 정리하기</h2><p>최근 주행에서 거리·시간·코스·날씨·노력감과 후반 반응을 함께 적어 보세요. 비교할 조건이 다르면 이전보다 느렸다는 사실 하나로 체력이 떨어졌다고 단정하기 어렵습니다.</p><p>다음 목표를 정할 때는 거리와 속도를 모두 한 번에 올리는지부터 확인할 수 있습니다. 구간표와 평균 페이스를 만드는 방법은 <a href="/blog/marathon-pacing-mental-strategy-guide">페이스 전략 가이드</a>, 길이를 늘릴 때의 질문은 <a href="/blog/lsd-training-beginner-guide-korea">LSD 계획 가이드</a>에서 확인하세요.</p><h2>확인한 원문</h2><ul><li><a href="https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2023.1273451/full" target="_blank" rel="noopener noreferrer">2023 하프·풀 페이스 관찰 연구</a> — 거리·기록 수준에 따른 관찰값. 5km·10km 난이도 공식의 시험 아님.</li><li><a href="https://www.cdc.gov/physical-activity-basics/measuring/index.html" target="_blank" rel="noopener noreferrer">CDC 상대적 운동강도 안내</a> — 개인의 체력에 따른 강도 차이. 특정 거리의 고정 심박 처방 아님.</li></ul>
 `,
+    updatedAt: "2026-11-10",
+    faqs: [
+      {
+        "question": "풀코스를 완주하면 10km도 쉽게 달리나요?",
+        "answer": "목표 강도와 지속시간이 달라 같은 경험으로 보장할 수는 없습니다. 완주와 기록 도전을 나누고 최근 실제 주행을 기준으로 계획하세요."
+      },
+      {
+        "question": "하프·풀 관찰 연구로 모든 거리의 최적 훈련을 정할 수 있나요?",
+        "answer": "해당 연구는 완주 기록의 속도 패턴을 분석했습니다. 모든 거리의 난이도나 개인 훈련법을 직접 시험한 자료는 아닙니다."
+      }
+    ],
   },
   {
     id: "li-ning-red-hare-9-lineup-2026",
@@ -6171,96 +6121,39 @@ export const posts_2026_06: BlogPost[] = [
 `,
   },
   {
-    id: 'hot-weather-summer-running-safety-guide-korea',
-    slug: 'hot-weather-summer-running-safety-guide-korea',
-    title: '폭염 러닝 안전 가이드 | "몇 도부터 뛰면 위험할까" — 심부체온·WBGT·수분 전략과 열사병 막는 법 (한국 여름 기준)',
-    description: '한국 여름은 고온다습에 열대야까지 겹쳐 러닝 중 열질환 위험이 큽니다. 기온이 아니라 습도·복사열을 합친 WBGT로 판단해야 하는 이유, 심부체온이 40°C를 넘으면 벌어지는 일, 시간당 수분·전해질 보충량, 새벽런 vs 야간런, 그리고 열탈진·열사병·저나트륨혈증을 구분하고 대처하는 법까지 — 무더위에 안전하게 달리는 실전 가이드입니다.',
-    thumbnail: '/images/blog/hot-weather-summer-running-safety-guide-korea.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-06-04',
-    category: 'guide' as const,
-    readingTime: 11,
-    tags: ['폭염 러닝', '여름 러닝', '열사병 예방', '러닝 수분 보충', '전해질', 'WBGT', '새벽 러닝', '열질환'],
+    id: "hot-weather-summer-running-safety-guide-korea",
+    slug: "hot-weather-summer-running-safety-guide-korea",
+    title: "폭염 러닝 — 땀 유무보다 의식 변화·중단·냉각을 먼저",
+    description: "열사병은 땀이 나도 발생할 수 있습니다. 기온·WBGT의 차이, 당일 계획 조정, 과다 음수 위험과 국내 119 응급 대응을 정리했습니다.",
+    thumbnail: "/images/blog/verified-hot-weather-summer-running-safety-guide-korea-20261110.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-06-04",
+    category: "guide",
+    readingTime: 6,
+    tags: [
+      "폭염 러닝",
+      "여름 러닝",
+      "열사병 예방",
+      "러닝 수분 보충",
+      "전해질",
+      "WBGT",
+      "새벽 러닝",
+      "열질환"
+    ],
     content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li>여름 러닝의 위험은 <strong>기온이 아니라 습도</strong>에서 옵니다. 땀이 증발해야 체온이 떨어지는데, 습하면 증발이 막혀 <strong>심부체온이 급상승</strong> — 그래서 기온·습도·복사열을 합친 <strong>WBGT(폭염 지수)</strong>로 판단해야 합니다</li>
-    <li>심부체온이 <strong>40°C</strong>를 넘으면 <strong>열사병</strong>(생명 위협)입니다. 그 전 단계인 <strong>열탈진</strong>(어지럼·메스꺼움·식은땀) 신호가 오면 <strong>즉시 멈추고 식혀야</strong> 합니다</li>
-    <li>핵심 대비는 <strong>① 시간대 회피(새벽·야간) ② 강도 낮추기 ③ 시간당 0.5~1L 수분 + 전해질 ④ 통기성 복장</strong>. 단, 물만 과음하면 <strong>저나트륨혈증</strong>이라는 또 다른 위험이 있습니다</li>
-  </ul>
-</div>
-
-<div class="callout warning">
-  <span class="callout-icon">🌡️</span>
-  <div class="callout-body">
-    <p class="callout-title">한국 여름은 "더운" 게 아니라 "습해서" 위험합니다</p>
-    <p>유럽·미국 서부의 35°C와 한국의 31°C는 몸이 받는 부담이 다릅니다. 한국 여름은 <strong>습도가 높아</strong> 땀이 증발하지 못하고 흐르기만 하죠. 땀은 <strong>증발할 때</strong> 체온을 떨어뜨리는데, 습하면 이 냉각 시스템이 고장 납니다. 결과적으로 같은 기온이라도 <strong>한국에서 심부체온이 더 빨리, 더 높이</strong> 오릅니다. "어제는 괜찮았는데 오늘 갑자기 힘들다"면 기온이 아니라 <strong>습도가 올랐을 가능성</strong>이 큽니다.</p>
-  </div>
-</div>
-
-<h2>몇 도부터 위험할까 — 기온 말고 WBGT</h2>
-<p>날씨 앱의 기온만 보면 안 됩니다. 운동 안전의 국제 표준은 <strong>WBGT(Wet Bulb Globe Temperature, 습구흑구온도)</strong>입니다. 기온 + <strong>습도</strong> + <strong>직사광선(복사열)</strong>을 모두 반영한 "체감 열 스트레스" 지수죠. 한국 기상청도 여름철 <strong>WBGT 기반 더위 단계와 운동 지침</strong>을 제공합니다.</p>
-<ul>
-  <li><strong>관심·주의 단계</strong>: 평소대로 뛰되 수분을 의식적으로 챙깁니다.</li>
-  <li><strong>경고 단계</strong>: 강도를 낮추고 거리를 줄이며, 그늘·시간대를 적극 활용합니다.</li>
-  <li><strong>위험 단계(통상 WBGT 31°C 이상)</strong>: <strong>야외 러닝을 피하는 것</strong>이 원칙입니다. 실내 트레드밀이나 휴식으로 전환하세요.</li>
-</ul>
-<p>WBGT는 기상청·날씨 앱의 "더위체감지수/온열질환 지수"로 확인할 수 있습니다. 같은 30°C라도 <strong>습도 80%와 50%는 완전히 다른 날</strong>이라는 점만 기억하면 됩니다.</p>
-
-<h2>심부체온이 40°C를 넘으면 — 열질환 3단계</h2>
-<p>여름 러닝 사고는 대부분 <strong>심부체온(몸 속 온도) 상승</strong>에서 시작됩니다. 단계별 신호를 알아야 제때 멈춥니다.</p>
-<table>
-  <thead>
-    <tr><th>단계</th><th>심부체온 기준</th><th>주요 신호</th><th>대처</th></tr>
-  </thead>
-  <tbody>
-    <tr><td><strong>열경련</strong></td><td>정상~약간 상승</td><td>종아리·허벅지 근육 경련, 다량 발한</td><td>멈추고 전해질·수분 보충, 스트레칭</td></tr>
-    <tr><td><strong>열탈진</strong></td><td>38°C 초과~40°C 미만</td><td>어지럼·두통·메스꺼움, 빠른 맥박, <strong>차갑고 끈끈한 식은땀</strong>, 무력감</td><td><strong>즉시 중단</strong>, 그늘·시원한 곳, 눕고 다리 올리기, 수분</td></tr>
-    <tr><td><strong>열사병 🚨</strong></td><td><strong>40°C 초과</strong></td><td>혼란·헛소리, 의식 저하, <strong>땀이 멈추고 피부가 뜨겁고 건조</strong>, 경련</td><td><strong>119 즉시 신고</strong>, 몸을 적극 냉각하며 구조 대기</td></tr>
-  </tbody>
-</table>
-<div class="callout info">
-  <span class="callout-icon">❗</span>
-  <div class="callout-body">
-    <p class="callout-title">가장 중요한 경고 신호: "땀이 멈췄다"</p>
-    <p>열탈진까지는 땀을 흘리지만, <strong>열사병으로 넘어가면 땀이 멈추고 피부가 건조·뜨거워집니다</strong>. 이건 몸의 냉각 시스템이 붕괴했다는 응급 신호입니다. 또 <strong>오한(춥다는 느낌)·소름</strong>이 더운 날 달리는 중에 온다면 위험 신호이니 즉시 멈추세요.</p>
-  </div>
-</div>
-
-<h2>수분·전해질 — 많이 마신다고 좋은 게 아니다</h2>
-<p>탈수도 위험하지만, <strong>물만 과하게</strong> 마시는 것도 위험합니다. 둘 다 피하는 균형이 핵심입니다.</p>
-<ul>
-  <li><strong>얼마나</strong>: 더운 날 러닝 중 <strong>시간당 약 0.5~1L</strong>가 일반적 기준입니다. 다만 발한량은 개인차가 커서, <strong>운동 전후 체중을 재서 빠진 만큼</strong> 채우는 게 가장 정확합니다(빠진 1kg ≈ 물 1L 손실).</li>
-  <li><strong>전해질</strong>: <strong>60~90분을 넘는 러닝</strong>이나 땀을 많이 흘리는 날은 물에 <strong>나트륨 등 전해질</strong>을 더하세요. 땀으로 나트륨이 빠지는데 맹물만 보충하면 농도가 더 희석됩니다.</li>
-  <li><strong>저나트륨혈증 주의</strong>: <strong>시간당 1.4L를 초과</strong>하는 과도한 물 섭취는 혈중 나트륨을 위험하게 떨어뜨려 <strong>메스꺼움·혼란·경련</strong>을 일으킬 수 있습니다(물 중독). "무조건 많이"가 아니라 <strong>땀 흘린 만큼 + 전해질</strong>이 정답입니다.</li>
-  <li><strong>소변 색 체크</strong>: <strong>옅은 노란색</strong>이 이상적입니다. 진한 노랑이면 부족, 완전 무색이면 과음 신호입니다.</li>
-</ul>
-<p>장거리에서 젤·전해질을 함께 쓴다면 → <a href="/blog/energy-gel-science-guide">에너지젤 성분 완벽 분석</a>을 참고하세요.</p>
-
-<h2>실전 — 여름에 안전하게 달리는 6가지</h2>
-<ul>
-  <li><strong>① 시간대를 옮긴다</strong>: 가장 강력한 대비책. <strong>일출 직후(새벽)</strong>가 기온·복사열이 가장 낮습니다. 야간런은 시원하지만 <strong>열대야로 습도가 높고</strong> 낮 동안 달궈진 아스팔트 복사열이 남아있어 새벽보다 불리할 수 있습니다.</li>
-  <li><strong>② 강도를 낮춘다</strong>: 같은 페이스도 더위에선 심박이 더 오릅니다. 여름엔 기록 욕심을 내려놓고 <strong>대화 가능한 저강도(Zone 2)</strong> 위주로 → <a href="/blog/running-fat-loss-zone2-guide">Zone 2 가이드</a>. 더위 적응에는 2주 정도 걸립니다.</li>
-  <li><strong>③ 통기성 복장·신발</strong>: 땀 배출이 생명입니다. 밝은색·<a href="/fabrics/wicking-ommc">흡습속건 옷</a>, 통기성 좋은 메쉬 러닝화로 → <a href="/blog/summer-breathable-running-shoes-2026">여름 통기성 러닝화 TOP 10</a></li>
-  <li><strong>④ 머리·목을 식힌다</strong>: 챙모자·선글라스로 직사광선을 막고, 얼음·쿨토시로 목덜미·손목(굵은 혈관)을 식히면 체감 온도가 크게 낮아집니다.</li>
-  <li><strong>⑤ 코스를 바꾼다</strong>: 그늘·강변·숲길 위주로. 아스팔트·복사열 강한 도심 직선 코스는 피하세요.</li>
-  <li><strong>⑥ 무리하지 않는다</strong>: 컨디션 난조·전날 음주·수면 부족이면 <strong>쉬는 게 훈련</strong>입니다. 여름 며칠 빠진다고 실력이 사라지지 않습니다.</li>
-</ul>
-
-<div class="callout info">
-  <span class="callout-icon">🌧️</span>
-  <div class="callout-body">
-    <p class="callout-title">장마철이라면 — 비는 오히려 기회일 수도</p>
-    <p>기온이 떨어진 비 오는 날은 폭염보다 달리기 좋을 수 있습니다. 다만 미끄럼·젖은 발 관리가 관건이죠. 우중런 준비물과 비 맞은 러닝화 관리는 → <a href="/blog/rainy-season-running-guide-korea">장마철 러닝 완전 가이드</a>에서 따로 다룹니다.</p>
-  </div>
-</div>
-
-<h2>한 줄 결론</h2>
-<p>여름 러닝의 원칙은 단순합니다. <strong>기온이 아니라 WBGT로 판단하고, 시간대를 옮기고, 강도를 낮추고, 땀 흘린 만큼 전해질과 함께 보충하라.</strong> 그리고 어지럼·메스꺼움·오한·땀 멈춤 같은 신호가 오면 <strong>기록이고 뭐고 즉시 멈추세요</strong>. 무더위는 매년 돌아오지만, 몸은 하나뿐입니다.</p>
-
-<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 Mayo Clinic, OSHA, ACSM 등의 일반 열질환·운동 안전 지침을 종합한 것으로, 개인의 건강 상태에 따른 의학적 처방을 대체하지 않습니다. 심혈관 질환·고령·기저질환이 있다면 무더위 운동 전 전문의와 상의하세요.</p>
+<p><strong>2026-11-10 근거 재확인.</strong> 제품 표시·연구 조건·실제 행동에 필요한 정보를 구분했습니다.</p><h2>땀을 흘리고 있어도 열사병을 배제하지 마세요</h2><p>더운 날 달리던 사람이 혼란스러워하거나 말이 어눌해지고, 의식을 잃거나 경련을 보이면 즉시 119에 도움을 요청하세요. 가능한 안전한 시원한 장소에서 옷을 느슨하게 하고 피부를 물로 적시거나 시원한 물수건·바람으로 몸을 식히며 구조를 기다립니다. 혼자 두지 마세요.</p><p>CDC는 열사병에서 피부가 건조할 수도, 땀을 많이 흘릴 수도 있다고 안내합니다. 땀이 멈출 때나 체온계가 특정 수치를 보일 때까지 기다려서는 안 됩니다. 의식이 없거나 뚜렷하지 않은 사람에게 억지로 음료를 먹이지 마세요.</p><div class="table-wrap"><table><thead><tr><th scope="col">달리는 중 보이는 변화</th><th scope="col">우선 행동</th></tr></thead><tbody><tr><td>심한 어지럼·무력감·메스꺼움</td><td>주행 중단·서늘한 곳으로 이동·주변 도움 요청</td></tr><tr><td>혼돈·말이 어눌함·의식 변화·경련</td><td>119 요청과 몸 식히기를 즉시 시작</td></tr><tr><td>증상이 심해지거나 호전되지 않음</td><td>의료 도움 요청; 목표 거리 채우기 중단</td></tr><tr><td>의식이 없는 사람</td><td>음료를 먹이지 않기·119 지시에 따르기</td></tr></tbody></table></div><h2>몇 도 이하면 안전하다는 기준으로 보지 않기</h2><p>날씨 앱의 기온 하나로 개인의 열 부담을 확정할 수는 없습니다. NWS는 WBGT가 기온·습도·바람·일사 관련 조건을 함께 반영하는 지표이며 일반 열지수와 다르다고 설명합니다. 날씨 앱의 체감온도를 그대로 WBGT로 읽지 마세요.</p><p>미국 지역·학교의 색상표를 한국 러너 모두에게 같은 중단선으로 옮기지는 않았습니다. 현지 폭염특보와 주최 측 운영 지침, 실제 코스의 그늘·급수·도중 중단 가능성을 함께 확인해야 합니다.</p><h2>계획에서 바꿀 수 있는 것은 시간·강도·동선입니다</h2><p>CDC는 더운 날 야외 활동을 제한하고 비교적 시원한 시간대로 옮기며, 활동을 천천히 시작하고 서로 상태를 살피도록 안내합니다. 평소 훈련표를 그대로 채우는 일보다 당일 조건에 맞게 줄이거나 실내로 옮길 선택을 남겨 두세요.</p><p>그늘이 없는 긴 편도 코스보다 중간에 마치거나 냉방 공간으로 돌아올 수 있는 동선을 계획하면 조정하기 쉽습니다. 기록이 늦어져도 원래 목표 페이스를 따라잡으려고 강도를 더 높이는 계획은 다시 판단할 필요가 있습니다.</p><h2>수분은 무조건 많이 마시면 해결된다는 뜻이 아닙니다</h2><p>평소 더위 건강수칙과 장시간 운동의 보급 계획은 적용 상황이 다릅니다. WMS의 운동 관련 저나트륨혈증 지침은 지속적 과다 수분 섭취를 주요 위험으로 설명하며 모두에게 같은 시간당 용량을 처방하지 않습니다.</p><p>이 글은 더운 날 모든 러너에게 시간당 0.5~1L를 반드시 채우라고 권하지 않습니다. 예상 조건과 개인 섭취 계획을 확인하고, 두통·구토·의식 변화가 생겼을 때 탈수라고 자가진단해 물을 계속 들이붓지 마세요. 운동 관련 저나트륨혈증과 온열질환은 증상이 겹칠 수 있어 의료진 평가가 필요합니다.</p><h2>응급 안내의 범위</h2><p>국내 응급 도움 요청 번호는 119입니다. 질병관리청은 심한 증상·의식 소실 때 즉시 신고하고 구급대 도착 전까지 몸을 식히며, 의식 없는 사람에게 수분을 먹이지 않도록 안내합니다.</p><p>이 글은 현장에서 열사병·저나트륨혈증을 독자가 진단하거나 치료약을 정하도록 만드는 지침이 아닙니다. 위험 신호를 알아채고 운동 중단·도움 요청·냉각을 지체하지 않도록 작성했습니다.</p><h2>확인한 원문</h2><ul><li><a href="https://www.cdc.gov/niosh/heat-stress/about/illnesses.html" target="_blank" rel="noopener noreferrer">CDC 온열질환 증상·응급조치</a> — 노동 환경 안내에서 증상·빠른 냉각을 확인. 땀 유무로 열사병 배제 불가.</li><li><a href="https://health.kdca.go.kr/healthinfo/biz/health/ntcnInfo/healthSourc/thtimtCntnts/thtimtCntntsView.do?thtimt_cntnts_sn=122" target="_blank" rel="noopener noreferrer">질병관리청 온열질환 대처 안내</a> — 119·냉각·의식 없는 사람의 음료 금지. 도표·사진은 재사용하지 않음.</li><li><a href="https://www.cdc.gov/heat-health/risk-factors/heat-and-athletes.html" target="_blank" rel="noopener noreferrer">CDC 더운 날 운동 안내</a> — 시간·강도·동료 상태 관찰.</li><li><a href="https://www.weather.gov/ict/wbgt" target="_blank" rel="noopener noreferrer">NWS WBGT 설명</a> — 지표 구성과 열지수 차이. 미국의 지역 기준을 한국의 공통 기준으로 전환하지 않음.</li><li><a href="https://journals.sagepub.com/doi/full/10.1016/j.wem.2019.11.003" target="_blank" rel="noopener noreferrer">WMS 2019 갱신 지침·2020 출판</a> — 운동 관련 저나트륨혈증·과다 음수·유사 증상의 감별 필요.</li></ul>
 `,
+    updatedAt: "2026-11-10",
+    faqs: [
+      {
+        "question": "땀이 나면 열사병이 아닌가요?",
+        "answer": "아닙니다. CDC는 열사병 증상에 많은 땀도 포함합니다. 혼돈·의식 변화·경련 등 위험 신호가 있으면 즉시 도움을 요청하고 몸을 식혀야 합니다."
+      },
+      {
+        "question": "더울 때 누구나 같은 양의 물을 마셔야 하나요?",
+        "answer": "개인과 조건에 따라 달라지며 과다 음수도 위험합니다. 증상을 탈수로 자가진단하고 물을 계속 먹이는 안내는 하지 않습니다."
+      }
+    ],
   },
   {
     id: 'joyce-hubner-367-consecutive-marathons-world-record',

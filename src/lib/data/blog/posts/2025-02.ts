@@ -40,519 +40,71 @@ export const posts_2025_02: BlogPost[] = [
     ],
   },
   {
-    id: 'energy-gel-guide',
-    slug: 'energy-gel-science-guide',
-    title: '에너지젤 성분 완벽 분석: 말토덱스트린부터 하이드로젤까지',
-    description: '에너지젤의 핵심 성분을 과학적으로 분석합니다. 탄수화물 종류, 위장 안정성, 카페인까지 알아야 할 모든 것.',
-    thumbnail: '/images/blog/energy-gel-science-guide.webp',
+    id: "energy-gel-guide",
+    slug: "energy-gel-science-guide",
+    title: "에너지젤 고르는 법 — 탄수화물 g·시간·위장 반응으로 보급 계획하기",
+    description: "풀코스 고정 젤 개수와 하이드로젤 무조건 우수 주장을 걷어냈습니다. 제품 표시를 읽는 법과 상반된 소규모 비교 시험의 조건을 정리했습니다.",
+    thumbnail: "/images/blog/verified-energy-gel-science-guide-20261110.webp",
     content: `
-<figure class="my-10">
-  <img
-    src="https://images.pexels.com/photos/33417694/pexels-photo-33417694.jpeg?cs=srgb&dl=pexels-wesleydavi-33417694.jpg&fm=jpg"
-    alt="러닝 트랙에서 에너지젤을 들고 있는 러너"
-    class="w-full rounded-xl border border-border"
-    loading="eager"
-    decoding="async"
-  />
-  <figcaption class="text-sm text-secondary mt-2">
-    이미지: <a href="https://www.pexels.com/photo/athlete-holding-energy-gel-on-running-track-33417694/" target="_blank" rel="noopener noreferrer">Pexels</a> / Wesley Davi
-  </figcaption>
-</figure>
-
-<h2>에너지젤, 왜 먹어야 할까?</h2>
-<p>
-  마라톤을 뛰다 보면 30km 즈음에서 갑자기 힘이 빠지는 경험을 합니다.
-  이것이 바로 <strong>"벽에 부딪힌다(Hitting the Wall)"</strong>는 표현의 유래입니다.
-  우리 몸에 저장된 글리코겐(탄수화물)이 고갈되면서 발생하는 현상이죠.
-</p>
-
-<h3>첫 풀코스에서 가장 흔한 실패 패턴</h3>
-<p>
-  초보 러너의 첫 풀코스에서 반복되는 시나리오가 있습니다. 30km 부근까지는 목표 페이스가
-  유지되다가, 갑자기 다리가 무거워지면서 페이스가 무너지고 마지막 10km를 걷다시피 하는 것입니다.
-  의지의 문제로 오해하기 쉽지만 <strong>대부분은 보급 설계의 문제</strong>입니다.
-</p>
-<p>
-  가장 흔한 원인이 <strong>보급을 아예 하지 않는 것</strong>입니다. "42km 정도는 안 먹고도
-  뛸 수 있지 않을까" 하는 판단인데, 30km 벽은 의지가 아니라 대사의 문제라 훈련량과 무관하게
-  글리코겐이 바닥나면 누구에게나 옵니다.
-</p>
-<p>
-  반대로 보급을 설계하면 결과가 달라집니다. 출발 전 1개, 이후 45분 간격으로 섭취해
-  풀코스에서 4~5개를 쓰는 것이 표준적인 접근입니다. 고갈이 오기 전에 미리 채우는 방식이라
-  30km 이후에도 페이스를 유지할 여지가 생깁니다.
-</p>
-
-<p>
-  인체는 약 <strong>2,000kcal</strong>의 글리코겐을 저장할 수 있습니다.
-  마라톤 풀코스를 완주하려면 약 2,500~3,000kcal가 필요하니,
-  외부에서 에너지를 보충하지 않으면 후반부에 급격한 페이스 저하가 불가피합니다.
-</p>
-<p>
-  에너지젤은 빠르게 흡수되는 탄수화물을 농축한 형태로,
-  러닝 중에도 쉽게 섭취할 수 있도록 설계되었습니다.
-  풀코스처럼 2시간을 훌쩍 넘기는 종목에서는 선택이 아니라 <strong>사실상 필수</strong>입니다.
-</p>
-
-<h2>탄수화물의 종류와 흡수 속도</h2>
-
-<figure class="my-10">
-  <img
-    src="https://upload.wikimedia.org/wikipedia/commons/d/df/Clif_Energy_Gels.jpg"
-    alt="여러 종류의 에너지젤 패키지"
-    class="w-full rounded-xl border border-border"
-    loading="lazy"
-    decoding="async"
-  />
-  <figcaption class="text-sm text-secondary mt-2">
-    이미지: <a href="https://commons.wikimedia.org/wiki/File:Clif_Energy_Gels.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons</a> / Richard Masoner (Cyclelicious), <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>
-  </figcaption>
-</figure>
-
-<h3>1. 말토덱스트린 (Maltodextrin)</h3>
-<p>
-  가장 흔히 사용되는 탄수화물입니다.
-  포도당 분자가 여러 개 연결된 <strong>복합 탄수화물</strong>이지만,
-  분해가 빨라 혈당을 빠르게 올립니다.
-</p>
-<ul>
-  <li><strong>GI 지수:</strong> 85~105 (매우 높음)</li>
-  <li><strong>장점:</strong> 빠른 흡수, 저렴한 가격, 맛이 덜 달음</li>
-  <li><strong>단점:</strong> 고농도 시 위장 장애 가능</li>
-  <li><strong>사용 제품:</strong> GU, SiS, 대부분의 에너지젤</li>
-</ul>
-
-<h3>2. 과당 (Fructose)</h3>
-<p>
-  과일에 많이 들어있는 단당류입니다.
-  포도당과 <strong>다른 경로(GLUT5)</strong>로 흡수되어,
-  포도당과 함께 섭취하면 총 탄수화물 흡수량을 높일 수 있습니다.
-</p>
-<ul>
-  <li><strong>GI 지수:</strong> 19 (낮음)</li>
-  <li><strong>장점:</strong> 포도당과 병용 시 흡수 극대화</li>
-  <li><strong>단점:</strong> 과다 섭취 시 위장 장애, 단독 사용 시 효과 떨어짐</li>
-  <li><strong>최적 비율:</strong> 포도당:과당 = 2:1 또는 1:0.8</li>
-</ul>
-
-<h3>3. 포도당 (Glucose/Dextrose)</h3>
-<p>
-  가장 기본적인 단당류로, 체내에서 바로 에너지로 사용됩니다.
-  <strong>SGLT1</strong> 수송체를 통해 흡수되며, 분당 약 60g까지 흡수 가능합니다.
-</p>
-<ul>
-  <li><strong>GI 지수:</strong> 100 (기준)</li>
-  <li><strong>장점:</strong> 가장 빠른 에너지 전환</li>
-  <li><strong>단점:</strong> 매우 달고 끈적임</li>
-</ul>
-
-<h3>4. 클러스터 덱스트린 (Cluster Dextrin / HBCD)</h3>
-<p>
-  고분자 탄수화물로, <strong>위 배출 속도가 빠르고</strong> 삼투압이 낮습니다.
-  위장 문제가 적어 장거리 러너들에게 인기가 높습니다.
-</p>
-<ul>
-  <li><strong>장점:</strong> 위장 안정성 우수, 지속적인 에너지 공급</li>
-  <li><strong>단점:</strong> 가격이 비쌈</li>
-  <li><strong>사용 제품:</strong> Maurten (일부), 226ERS</li>
-</ul>
-
-<h2>하이드로젤 기술: Maurten의 혁신</h2>
-<p>
-  <strong>Maurten</strong>이 개발한 하이드로젤 기술은 에너지젤 시장에 혁명을 가져왔습니다.
-  일반 젤은 위에서 소화 과정을 거치지만, 하이드로젤은 위의 산성 환경에서
-  <strong>젤 형태로 캡슐화</strong>되어 소장까지 빠르게 이동합니다.
-</p>
-
-<h3>하이드로젤의 원리</h3>
-<ol>
-  <li>알긴산(해초 추출물)과 펙틴(과일 추출물)을 탄수화물에 첨가</li>
-  <li>위의 낮은 pH에서 젤 형태로 굳음</li>
-  <li>위를 빠르게 통과해 소장에서 흡수</li>
-  <li>결과: 위장 장애 최소화 + 고농도 탄수화물 섭취 가능</li>
-</ol>
-
-<h3>하이드로젤 제품</h3>
-<ul>
-  <li><strong>Maurten Gel 100:</strong> 25g 탄수화물, 무카페인, 맛 없음</li>
-  <li><strong>Maurten Gel 160:</strong> 40g 탄수화물, 고농도 버전</li>
-  <li><strong>SiS Beta Fuel:</strong> Maurten 방식 채용, 40g 탄수화물</li>
-</ul>
-
-<figure class="my-10">
-  <img
-    src="https://upload.wikimedia.org/wikipedia/commons/3/3e/PXL_20211208_195048218%286970%29.jpg"
-    alt="GU와 Maurten 에너지젤 제품"
-    class="w-full rounded-xl border border-border"
-    loading="lazy"
-    decoding="async"
-  />
-  <figcaption class="text-sm text-secondary mt-2">
-    이미지: <a href="https://commons.wikimedia.org/wiki/File:PXL_20211208_195048218(6970).jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons</a> / Usesope, <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>
-  </figcaption>
-</figure>
-
-<h3>주의사항</h3>
-<p>
-  하이드로젤도 <strong>훈련에서 먼저 테스트</strong>해야 합니다.
-  개인에 따라 효과가 다르고, 가격이 비싸므로 레이스용으로만 사용하는 것도 방법입니다.
-</p>
-
-<h2>위장 안정성: GI 트러블 줄이기</h2>
-<p>
-  마라톤 중 위장 문제는 매우 흔합니다. 연구에 따르면 러너의 30~50%가
-  경기 중 위장 장애를 경험합니다. 에너지젤 선택 시 위장 안정성은 핵심 고려사항입니다.
-</p>
-
-<h3>위장 문제의 원인</h3>
-<ul>
-  <li><strong>고삼투압:</strong> 농축된 탄수화물이 장에서 물을 끌어당김</li>
-  <li><strong>과당 과다:</strong> 과당은 흡수 한계가 있어 장에 남으면 발효됨</li>
-  <li><strong>섬유질/지방:</strong> 소화가 느려 러닝 중 불편함 유발</li>
-  <li><strong>카페인:</strong> 장운동 촉진으로 설사 유발 가능</li>
-</ul>
-
-<h3>위장 친화적인 제품</h3>
-<table>
-  <tr><th>제품</th><th>위장 안정성</th><th>특징</th></tr>
-  <tr><td>Maurten Gel 100</td><td>★★★★★</td><td>하이드로젤, 무향</td></tr>
-  <tr><td>SiS GO Isotonic</td><td>★★★★☆</td><td>등장성, 물 불필요</td></tr>
-  <tr><td>Spring Energy</td><td>★★★★☆</td><td>천연 재료, 실제 음식 기반</td></tr>
-  <tr><td>GU Roctane</td><td>★★★☆☆</td><td>아미노산 첨가, 일부 민감</td></tr>
-  <tr><td>양갱</td><td>★★★★☆</td><td>고형, 씹어 먹어 위장 부담 적음</td></tr>
-</table>
-
-<h2>카페인: 언제, 얼마나?</h2>
-<p>
-  카페인은 <strong>지구력 운동 성능을 3~5% 향상</strong>시킬 수 있습니다.
-  중추신경계를 자극해 피로감을 줄이고, 지방 산화를 촉진합니다.
-</p>
-
-<h3>적정 섭취량</h3>
-<ul>
-  <li><strong>권장량:</strong> 체중 1kg당 3~6mg (70kg 기준 210~420mg)</li>
-  <li><strong>마라톤 분배:</strong> 30km 이후에 카페인 젤 집중 배치</li>
-  <li><strong>과다 섭취 주의:</strong> 심박수 증가, 불안, 위장 문제 가능</li>
-</ul>
-
-<h3>카페인 함량 비교</h3>
-<table>
-  <tr><th>제품</th><th>카페인</th><th>비고</th></tr>
-  <tr><td>GU Roctane (카페인)</td><td>70mg</td><td>고카페인</td></tr>
-  <tr><td>SiS GO + Caffeine</td><td>75mg</td><td>고카페인</td></tr>
-  <tr><td>Maurten Caf 100</td><td>100mg</td><td>매우 높음</td></tr>
-  <tr><td>GU Original</td><td>20~40mg</td><td>저~중카페인</td></tr>
-  <tr><td>커피 한 잔</td><td>80~100mg</td><td>참고용</td></tr>
-</table>
-
-<h3>카페인 전략</h3>
-<ol>
-  <li><strong>전반부:</strong> 무카페인 젤로 에너지 보충</li>
-  <li><strong>25~30km:</strong> 저카페인 젤 (20~40mg)</li>
-  <li><strong>35km 이후:</strong> 고카페인 젤 (70~100mg)</li>
-</ol>
-
-<h2>전해질과 아미노산</h2>
-
-<h3>나트륨 (Sodium)</h3>
-<p>
-  땀으로 손실되는 가장 중요한 전해질입니다.
-  에너지젤에 50~100mg 정도 포함된 경우가 많지만,
-  <strong>별도의 전해질 보충</strong>이 필요할 수 있습니다.
-</p>
-
-<h3>BCAA/아미노산</h3>
-<p>
-  일부 프리미엄 젤(GU Roctane 등)에는 분지사슬아미노산(BCAA)이 포함됩니다.
-  근육 손상 감소와 피로 지연에 도움될 수 있지만,
-  <strong>즉각적인 에너지 효과는 제한적</strong>입니다.
-</p>
-
-<h2>한국 러너를 위한 선택 가이드</h2>
-
-<h3>입문자 (하프 마라톤 이하)</h3>
-<ul>
-  <li>저렴하고 검증된 제품: GU Original, 양갱</li>
-  <li>30분~45분마다 1개씩</li>
-  <li>물과 함께 섭취</li>
-</ul>
-
-<h3>중급자 (풀마라톤)</h3>
-<ul>
-  <li>위장 안정성 좋은 제품: SiS Isotonic, Maurten</li>
-  <li>20~30분마다 1개씩 (시간당 60~90g 탄수화물)</li>
-  <li>후반부 카페인 젤 배치</li>
-</ul>
-
-<h3>기록 목표 러너</h3>
-<ul>
-  <li>하이드로젤 제품: Maurten, SiS Beta Fuel</li>
-  <li>시간당 90~120g 탄수화물 목표</li>
-  <li>레이스 전 훈련에서 충분히 테스트</li>
-</ul>
-
-<h2>용도별로 갈리는 젤 선택</h2>
-<p>
-  <strong><a href="/gels/maurten-gel-100">Maurten Gel 100</a></strong>은 하이드로젤 방식이라
-  끈적임이 적고 물 없이도 넘길 수 있는 것이 특징입니다. 맛을 거의 넣지 않아 호불호가 갈리지만,
-  풀코스에서 달달한 젤을 4~5개 연달아 먹을 때 오는 미각 피로를 피할 수 있다는 점은 장점으로 작용합니다.
-  개당 4,000원대로 가격은 높은 편입니다.
-</p>
-<p>
-  가성비 쪽에서는 <strong><a href="/gels/k-yanggang">양갱</a></strong>이 한국 러너들 사이에서
-  "국민 에너지젤"로 통합니다. 개당 500원 안팎으로 저렴하고 어디서나 구할 수 있으며 위장 부담도 적은 편입니다.
-  다만 씹어 먹어야 해서 호흡이 흐트러지고 휴대가 불편하다는 단점이 따라옵니다.
-</p>
-<p>
-  후반부 각성이 목적이라면 <strong><a href="/gels/gu-roctane-energy-gel">GU Roctane</a></strong>
-  카페인 버전이 선택지입니다. 카페인 70mg이 들어 있어 30km 이후 배치하는 용도로 쓰이는데,
-  카페인에 민감하거나 위장이 예민하다면 훈련에서 먼저 확인해야 합니다.
-</p>
-<p>
-  제품별 성분·용량·가격 비교는 <a href="/gels">에너지젤 전체 목록</a>에 정리돼 있습니다.
-</p>
-
-<h2>마무리: 과학과 경험의 조합</h2>
-<p>
-  에너지젤은 과학입니다. 하지만 <strong>가장 좋은 젤은 "내 위장이 받아들이는 젤"</strong>입니다.
-  아무리 좋은 성분이어도 내 몸에 안 맞으면 소용없습니다.
-</p>
-<p>
-  훈련에서 여러 제품을 테스트하고, 레이스와 동일한 페이스에서
-  실험해 보세요. 그리고 레이스 당일에는 <strong>검증된 젤만</strong> 사용하세요.
-  새로운 시도는 훈련에서 하는 것입니다!
-</p>
-<p>
-  이 가이드가 여러분의 에너지젤 선택에 도움이 되길 바랍니다.
-  올바른 보급 전략으로 30km 벽을 넘어 완주의 기쁨을 누리시길 응원합니다!
-</p>
-    `,
-    author: '산초 에디터',
-    publishedAt: '2025-02-02',
-    category: 'guide',
-    tags: ['에너지젤', '마라톤', '탄수화물', '하이드로젤', 'Maurten'],
-    readingTime: 12,
+<p><strong>2026-11-10 근거 재확인.</strong> 제품 표시·연구 조건·실제 행동에 필요한 정보를 구분했습니다.</p><h2>젤을 고를 때는 성분 이름보다 1포의 탄수화물량부터</h2><p>에너지젤은 달리면서 탄수화물을 휴대·섭취하는 방법 중 하나입니다. 마라톤에서 사용할 연료를 젤로만 공급해야 하는 것은 아닙니다. 음료·음식까지 포함한 전체 보급을 계획해야 합니다.</p><p>먼저 포장에 적힌 1회 섭취량과 탄수화물 g, 카페인 mg, 나트륨 mg, 물과 함께 먹으라는 지시를 확인하세요. 같은 브랜드에서도 용량·맛·카페인 유무가 다르면 다른 제품입니다.</p><div class="table-wrap"><table><thead><tr><th scope="col">표시에서 볼 것</th><th scope="col">계획에 쓰는 방법</th></tr></thead><tbody><tr><td>탄수화물 g/포</td><td>음료·음식에 든 양까지 시간당 합산</td></tr><tr><td>카페인 mg/포</td><td>젤 외 커피·음료와 겹치는 양 확인</td></tr><tr><td>나트륨 mg/포</td><td>탄수화물 양이나 수분 섭취량과 별도로 기록</td></tr><tr><td>섭취 지시</td><td>물 동반·제품별 사용 조건을 포장에서 확인</td></tr></tbody></table></div><h2>개수 대신 시간당 양으로 계산하기</h2><p>AIS의 일반 지침은 1~2.5시간 운동에서 탄수화물 30~60g/시간, 2.5~3시간을 넘는 장시간 운동에서 최대 90g/시간을 제시합니다. 고섭취량에서는 포도당·과당처럼 서로 다른 수송 경로를 사용하는 혼합 탄수화물을 설명합니다. 이는 모든 초보자가 처음부터 상한을 채우라는 뜻이 아닙니다.</p><p>계산 예시로 탄수화물 25g인 젤 2포와 음료의 탄수화물 10g을 한 시간에 섭취하면 합계 60g입니다. 이는 계산 방식이며 개인 권장량이나 특정 제품 처방이 아닙니다. 달리는 시간과 실제 섭취 가능성·속의 반응을 훈련에서 확인해야 합니다.</p><h2>말토덱스트린·과당·하이드로젤을 읽는 법</h2><p>AIS는 포도당 계열과 과당을 함께 쓰는 제품을 고섭취량에서 활용하는 이유를 설명합니다. 성분 이름 하나로 모든 상황의 흡수 속도나 복통 여부를 순위로 매기지는 않습니다. 특정 비율만이 모든 러너에게 최적이라고 단정하지 않았습니다.</p><p>하이드로젤이라는 이름도 위장 불편이 없다는 보증은 아닙니다. 제품이 젤인지 음료인지, 비교군의 탄수화물량이 같은지, 어떤 강도로 얼마나 달렸는지를 함께 봐야 연구를 제품 선택에 적용할 수 있습니다.</p><h2>하이드로젤 비교 연구의 결과는 같지 않았습니다</h2><p>2020년 학술지에 실린 연구는 훈련된 남성 러너 9명이 3시간 달린 뒤 탈진 검사를 하는 교차 시험이었습니다. 성분·농도를 맞춘 일반 탄수화물 음료와 비교해 위장 증상·수행능력 등의 우월한 결과를 확인하지 못했습니다.</p><p>반면 2022년 학술지에 실린 연구는 남성 러너 11명이 2시간 달린 뒤 5km 기록을 비교했고, 하이드로젤 음료에서 일반 탄수화물 음료보다 나은 기록·일부 지표를 보고했습니다. 두 연구 모두 특정 조건의 음료 시험으로, 모든 시판 젤·모든 러너의 효과를 보장하지 않습니다. 온라인 선게재는 각각 2019년·2021년입니다.</p><h2>대회 전에는 실제 사용할 조합을 시험하세요</h2><p>연습할 때 제품·섭취량·음료·위장 반응을 같이 적으면 대회용 계획을 정하는 데 도움이 됩니다. 먹는 양을 늘렸는데 불편이 생겼다면 새 성분이 반드시 더 좋다고 믿고 계속 늘리기보다 조합과 양을 다시 봐야 합니다.</p><p>풀코스 4~5포가 모두의 표준이라는 규칙이나 30km에서 누구나 같은 벽을 맞는다는 설명은 쓰지 않았습니다. 보급을 준비해도 후반 기록은 페이스·환경·훈련 상태 등과 함께 달라질 수 있습니다. 보급 준비는 <a href="/blog/fall-marathon-race-day-checklist-2026">대회 준비물 점검표</a>와 연결해 보세요.</p><h2>확인한 원문</h2><ul><li><a href="https://www.ausport.gov.au/ais/nutrition/supplements/group_a/sports-foods2/sports-gels" target="_blank" rel="noopener noreferrer">AIS 스포츠젤 안내</a> — 시간당 탄수화물 지침·제품 표시·훈련 중 적응. 모든 러너의 고정 개수 처방 아님.</li><li><a href="https://pubmed.ncbi.nlm.nih.gov/31629348/" target="_blank" rel="noopener noreferrer">2020 하이드로젤 비교 시험 초록</a> — 남성 9명·3시간 주행 뒤 탈진 검사. NCBI 공개 XML 대조.</li><li><a href="https://pubmed.ncbi.nlm.nih.gov/34334720/" target="_blank" rel="noopener noreferrer">2022 하이드로젤 비교 시험 초록</a> — 남성 11명·2시간 주행 뒤 5km 검사. NCBI 공개 XML 대조.</li></ul>
+`,
+    author: "산초 에디터",
+    publishedAt: "2025-02-02",
+    category: "guide",
+    tags: [
+      "에너지젤",
+      "마라톤",
+      "탄수화물",
+      "하이드로젤",
+      "Maurten"
+    ],
+    readingTime: 6,
     featured: true,
+    updatedAt: "2026-11-10",
+    faqs: [
+      {
+        "question": "풀코스에는 젤 몇 개가 필요한가요?",
+        "answer": "제품의 탄수화물 g, 예상 시간, 음료·음식까지 합산해야 합니다. 개인이 훈련에서 견딘 조합 없이 고정 개수로 처방하지 않습니다."
+      },
+      {
+        "question": "하이드로젤이면 속이 무조건 편한가요?",
+        "answer": "확인한 음료 비교 시험들의 결과는 일치하지 않았습니다. 모든 젤 제품·러너의 위장 편안함을 보장하지 않습니다."
+      }
+    ],
   },
   {
-    id: 'marathon-pacing-strategy',
-    slug: 'marathon-pacing-mental-strategy-guide',
-    title: '마라톤 전략: 5km부터 풀코스까지, 거리별 페이스 & 멘탈 완벽 가이드',
-    description: '5km, 10km, 하프마라톤, 풀마라톤까지 거리별 페이스 전략과 레이스 중 멘탈 관리법. 사점(Dead Point) 극복까지.',
-    thumbnail: '/images/blog/marathon-pacing-mental-strategy-guide.webp',
+    id: "marathon-pacing-strategy",
+    slug: "marathon-pacing-mental-strategy-guide",
+    title: "마라톤 페이스 전략 — 목표 평균·구간 계획·당일 조정을 나누기",
+    description: "거리별 고정 가속 공식과 정신력 보증을 제거했습니다. 평균 페이스 계산과 관찰 연구의 한계를 구분하고 코스·몸 상태에 맞게 계획을 조정하는 방법을 정리했습니다.",
+    thumbnail: "/images/blog/verified-marathon-pacing-mental-strategy-guide-20261110.webp",
     content: `
-<figure class="my-10">
-  <img
-    src="https://images.unsplash.com/photo-1452626038306-9aae5e071dd3?auto=format&fit=crop&w=1600&q=80"
-    alt="마라톤 대회에서 달리는 러너들"
-    class="w-full rounded-xl border border-border"
-    loading="eager"
-    decoding="async"
-  />
-  <figcaption class="text-sm text-secondary mt-2">
-    이미지: <a href="https://unsplash.com/photos/NPFu4GfFZ7E" target="_blank" rel="noopener noreferrer">Unsplash</a> / Mārtiņš Zemlickis
-  </figcaption>
-</figure>
-
-<h2>들어가며: 왜 '페이스 전략'이 필요한가?</h2>
-<p>
-  마라톤 기록을 결정짓는 건 단순한 체력이 아닙니다.
-  <strong>언제, 얼마나 힘을 쓰고, 어떻게 분배하느냐</strong>—바로 '페이스 전략'입니다.
-</p>
-<p>
-  첫 대회에서 가장 흔한 실수가 여기서 나옵니다. 출발 신호와 함께 분위기에 휩쓸려
-  앞사람들을 따라가면 10km도 되기 전에 호흡이 무너지고, 30km부터는 걷다 뛰다를 반복하게 됩니다.
-  초반 2~3km에서 계획보다 빠른 페이스로 나가는 것이 후반 붕괴의 가장 큰 원인입니다.
-</p>
-<p>
-  이 글에서는 5km부터 풀코스까지, 거리별 맞춤 페이스 전략과 레이스 중 멘탈 관리법을
-  구체적으로 알려드리겠습니다.
-</p>
-
-<h2>5km: "숨 안 차게 출발, 마지막 1km에 전력"</h2>
-<p>
-  5km는 러닝 입문자가 가장 먼저 도전하는 거리입니다.
-  짧은 거리라고 무작정 달리면 중반에 지쳐버리기 쉽습니다.
-</p>
-
-<h3>페이스 전략</h3>
-<ul>
-  <li><strong>첫 1km:</strong> 목표 페이스보다 5~10초 느리게 시작. 워밍업 구간으로 생각하세요.</li>
-  <li><strong>2~4km:</strong> 일정한 페이스 유지. 호흡이 약간 가빠지지만 대화 가능한 정도.</li>
-  <li><strong>마지막 1km:</strong> 남은 힘을 모두 쏟아붓는 구간. "이제 끝이다!" 마인드로 스퍼트.</li>
-</ul>
-
-<h3>멘탈 전략</h3>
-<ul>
-  <li><strong>"3km만 버티자"</strong>라는 목표 설정. 절반이 지나면 심리적으로 훨씬 편해집니다.</li>
-  <li>주변 러너와 경쟁하지 말고 <strong>자기 페이스</strong>에만 집중.</li>
-  <li>힘들 때는 호흡에 집중. 들숨 2번, 날숨 2번 리듬 유지.</li>
-</ul>
-
-<p>
-  초보자는 5km를 30분 안에 완주하는 것을 첫 목표로 삼아보세요.
-  이 목표를 달성하면 자신감이 생기고, 10km 도전의 발판이 됩니다.
-</p>
-
-<h2>10km: "전반 참기, 후반 치고 나가기"</h2>
-
-<figure class="my-10">
-  <img
-    src="https://images.unsplash.com/photo-1581889470536-467bdbe30cd0?auto=format&fit=crop&w=1600&q=80"
-    alt="도로를 달리는 러너"
-    class="w-full rounded-xl border border-border"
-    loading="lazy"
-    decoding="async"
-  />
-  <figcaption class="text-sm text-secondary mt-2">
-    이미지: <a href="https://unsplash.com/photos/7DCZgKyp8vw" target="_blank" rel="noopener noreferrer">Unsplash</a> / Isaac Wendland
-  </figcaption>
-</figure>
-
-<p>
-  10km는 5km의 두 배이지만, 체감 난이도는 세 배입니다.
-  <strong>지구력</strong>이 본격적으로 요구되는 거리이기 때문입니다.
-</p>
-
-<h3>페이스 전략</h3>
-<ul>
-  <li><strong>1~3km:</strong> 여유 있게 시작. 목표 페이스의 95%로 달리세요.</li>
-  <li><strong>4~7km:</strong> 목표 페이스 유지. "이 페이스가 내 속도"라고 믿으세요.</li>
-  <li><strong>8~10km:</strong> 에너지가 남아있다면 페이스업. 마지막 500m는 전력 질주.</li>
-</ul>
-
-<h3>멘탈 전략</h3>
-<ul>
-  <li><strong>"5km가 절반"</strong>이라는 중간 목표. 5km 지점을 통과하면 "이제 왔던 길만 돌아가면 된다"고 생각.</li>
-  <li>7~8km 구간이 가장 힘듭니다. <strong>"여기만 넘기면 끝이 보인다"</strong>는 마인드셋이 핵심.</li>
-  <li>음악이나 주변 응원에 집중해 고통에서 주의를 분산.</li>
-</ul>
-
-<p>
-  10km 목표 기록을 세울 때는 5km 기록 × 2 + 3~5분을 기준으로 삼으세요.
-  예를 들어 5km를 25분에 달린다면, 10km 목표는 53~55분이 현실적입니다.
-</p>
-
-<h2>하프마라톤(21.0975km): "네거티브 스플릿을 목표로"</h2>
-<p>
-  하프마라톤부터는 <strong>'전략 없이는 완주도 힘든'</strong> 거리입니다.
-  처음 하프에 도전한다면 "완주"가 첫 번째 목표, 두 번째 이후부터 기록을 노려야 합니다.
-</p>
-
-<h3>페이스 전략: 네거티브 스플릿</h3>
-<p>
-  <strong>네거티브 스플릿</strong>은 전반부보다 후반부를 더 빨리 달리는 전략입니다.
-  에너지 관리 측면에서 가장 효율적인 방법으로, 세계 기록 대부분이 이 전략으로 세워졌습니다.
-</p>
-<ul>
-  <li><strong>1~5km:</strong> 목표 페이스보다 10~15초 느리게. 몸을 깨우는 구간.</li>
-  <li><strong>6~15km:</strong> 목표 페이스 정확히 유지. 일정한 리듬이 핵심.</li>
-  <li><strong>16~21km:</strong> 여력이 있다면 페이스를 5~10초 올려 피니시.</li>
-</ul>
-
-<h3>멘탈 전략</h3>
-<ul>
-  <li><strong>5km 단위</strong>로 쪼개서 생각. "일단 5km만", "이제 10km 지났어", "15km까지만 버티자".</li>
-  <li>15km 이후 오는 피로감은 정상입니다. <strong>"이건 모든 러너가 느끼는 거야"</strong>라고 자기 암시.</li>
-  <li>마지막 5km는 <strong>카운트다운 멘탈</strong>로 전환. "4km 남았어, 3km 남았어..."</li>
-</ul>
-
-<p>
-  하프마라톤에서 2시간 벽을 깨는 것은 많은 러너들의 목표입니다.
-  이를 위해서는 5:40/km 평균 페이스가 필요합니다.
-  목표를 달성하려면 최소 3개월간 주 3~4회, 주간 30~40km 훈련이 권장됩니다.
-</p>
-
-<h2>풀마라톤(42.195km): "30km의 벽을 어떻게 넘을 것인가"</h2>
-<p>
-  풀마라톤은 <strong>"30km까지는 몸으로, 그 이후는 정신력으로"</strong> 달리는 레이스입니다.
-  30km 벽은 글리코겐이 고갈되며 찾아오는 생리적 현상으로, 누구나 경험합니다.
-</p>
-
-<h3>페이스 전략</h3>
-<ul>
-  <li><strong>0~10km:</strong> <strong>절대 오버페이스 금지</strong>. 목표 페이스보다 10~15초 느리게 시작. 주변이 빠르게 가도 무시.</li>
-  <li><strong>11~20km:</strong> 목표 페이스 정착. 이 구간에서 리듬을 만들어야 합니다.</li>
-  <li><strong>21~30km:</strong> 페이스 유지에 집중. 슬슬 힘들어지지만 <strong>"아직 저축 중"</strong>이라 생각.</li>
-  <li><strong>31~35km:</strong> <strong>30km의 벽 구간</strong>. 페이스가 떨어지는 건 정상. 무너지지만 않으면 됩니다.</li>
-  <li><strong>36~42.195km:</strong> 남은 힘을 모두 쏟는 구간. <strong>"이제 진짜 끝"</strong>이라는 마인드로 피니시.</li>
-</ul>
-
-<h3>30km 벽 극복법</h3>
-<ul>
-  <li><strong>에너지젤 보급:</strong> 25~30km 구간에서 반드시 섭취. 미리 타이밍을 정해두세요.</li>
-  <li><strong>작은 목표 설정:</strong> "다음 급수대까지만", "저 이정표까지만"으로 거리를 쪼개세요.</li>
-  <li><strong>주법 점검:</strong> 팔 스윙을 작게, 보폭을 짧게 유지해 에너지 소모를 줄이세요.</li>
-</ul>
-
-<h3>멘탈 전략</h3>
-<ul>
-  <li><strong>"30km까지는 준비운동"</strong>이라는 마인드. 진짜 마라톤은 30km 이후입니다.</li>
-  <li>힘들 때 <strong>연습에서 뛴 거리</strong>를 떠올리세요. "30km 훈련을 했잖아, 12km만 더 가면 돼."</li>
-  <li>마지막 10km는 <strong>1km씩 카운트다운</strong>. 절대 남은 전체 거리를 생각하지 마세요.</li>
-</ul>
-
-<h2>사점(Dead Point): 멘탈이 무너지는 순간을 극복하는 법</h2>
-
-<figure class="my-10">
-  <img
-    src="https://images.unsplash.com/photo-1552674605-db6ffd4facb5?auto=format&fit=crop&w=1600&q=80"
-    alt="일몰 속 도로를 달리는 러너들의 실루엣"
-    class="w-full rounded-xl border border-border"
-    loading="lazy"
-    decoding="async"
-  />
-  <figcaption class="text-sm text-secondary mt-2">
-    이미지: <a href="https://unsplash.com/photos/oGv9xIl7DkY" target="_blank" rel="noopener noreferrer">Unsplash</a> / Fitsum Admasu
-  </figcaption>
-</figure>
-
-<p>
-  <strong>사점(Dead Point)</strong>은 러닝 중 갑자기 모든 에너지가 빠져나가고,
-  "더 이상 못 달리겠다"는 생각이 드는 순간입니다.
-  이건 <strong>정신적 현상</strong>이자 <strong>신체적 반응</strong>입니다.
-</p>
-<p>
-  풀코스에서는 대개 30~35km 구간에서 찾아옵니다. 다리가 납덩이처럼 무거워지고
-  "여기서 멈춰도 아무도 모른다"는 생각이 파고드는 지점입니다. 몸이 실제로 한계에 닿았다기보다
-  <strong>고갈과 피로가 겹치며 판단이 흔들리는 국면</strong>에 가깝습니다.
-</p>
-
-<h3>사점 극복 전략</h3>
-<ul>
-  <li><strong>"무조건 1km만 더"</strong> 법칙. 사점은 보통 1~2km만 버티면 지나갑니다.</li>
-  <li><strong>걷기로 전환</strong>해도 괜찮습니다. 완전히 멈추지 않는 게 핵심. 걸으면서 에너지젤 섭취.</li>
-  <li><strong>주변 관중이나 응원</strong>에 집중. "Fighting!" 소리에 힘을 얻으세요.</li>
-  <li><strong>완주 후 자신</strong>을 상상하세요. 결승선을 넘는 순간의 뿌듯함을.</li>
-</ul>
-
-<h3>사점 예방법</h3>
-<ul>
-  <li><strong>초반 오버페이스 금지:</strong> 사점의 80%는 초반 오버페이스가 원인입니다.</li>
-  <li><strong>정기적인 보급:</strong> 30분마다 수분, 45분마다 에너지젤 섭취.</li>
-  <li><strong>훈련에서 사점 경험:</strong> 장거리 훈련(LSD)에서 일부러 지친 상태를 만들어 극복 연습.</li>
-</ul>
-
-<h2>마무리: 페이스는 과학, 멘탈은 예술</h2>
-<p>
-  마라톤에서 페이스 전략은 <strong>과학</strong>입니다.
-  데이터에 기반한 계획을 세우고, 훈련에서 검증해야 합니다.
-</p>
-<p>
-  하지만 레이스 중 찾아오는 고비를 넘기는 건 <strong>멘탈의 영역</strong>입니다.
-  "1km만 더", "저 급수대까지만"이라는 작은 목표 설정,
-  그리고 "나는 이미 충분히 훈련했다"는 자기 확신이 결승선까지 이끌어 줍니다.
-</p>
-<p>
-  여러분의 다음 레이스에서 이 전략들이 도움이 되길 바랍니다.
-  <strong>좋은 페이스, 강한 멘탈로 개인 최고 기록을 세우시길 응원합니다!</strong>
-</p>
-    `,
-    author: '산초 에디터',
-    publishedAt: '2025-02-04',
-    category: 'guide',
-    tags: ['마라톤', '페이스', '멘탈', '하프마라톤', '5km', '10km', '사점'],
-    readingTime: 15,
+<p><strong>2026-11-10 근거 재확인.</strong> 제품 표시·연구 조건·실제 행동에 필요한 정보를 구분했습니다.</p><h2>목표 기록을 구간 계획으로 바꾸되 당일 조건을 남겨 두세요</h2><p>먼저 목표가 완주인지 기록인지, 최근 비슷한 조건에서 실제로 달린 기록이 있는지 적어 보세요. 출발 때 주변의 빠르기에 맞추는 것보다 내가 세운 계획을 어떤 조건에서 바꿀지 정해 두는 데 쓸 수 있습니다.</p><p>목표 기록을 거리로 나누면 평균 페이스를 계산할 수 있습니다. 이 평균은 산술 기준이며, 모든 구간을 같은 숫자로 달리라는 처방은 아닙니다. 경사·혼잡·날씨·몸의 반응을 따로 확인해야 합니다.</p><div class="table-wrap"><table><thead><tr><th scope="col">단순 계산 예시</th><th scope="col">평균 페이스</th><th scope="col">주의할 해석</th></tr></thead><tbody><tr><td>10km 60분</td><td>6분00초/km</td><td>목표 설정 예시이며 입문자의 필수 기준 아님</td></tr><tr><td>하프 2시간</td><td>약5분41초/km</td><td>동일 속도로 더 짧은 거리만 달린 경험과 구분</td></tr><tr><td>풀코스 4시간</td><td>약5분41초/km</td><td>같은 평균 속도라도 지속시간과 준비는 다름</td></tr></tbody></table></div><h2>네거티브 스플릿과 일정 페이스는 결과를 읽는 용어이기도 합니다</h2><p>일정 페이스는 구간 속도의 변화가 작은 상태, 네거티브 스플릿은 후반을 전반보다 빠르게 마치는 패턴을 뜻합니다. 후반이 느려지는 패턴은 포지티브 스플릿이라고 합니다.</p><p>2023년 빈 대회 연구는 2006~2018년 하프·풀 완주 기록 208,760건을 관찰했습니다. 더 빠른 기록 집단에서 구간 속도 변화가 작았지만, 이는 전략을 무작위로 배정한 시험이 아닙니다. 특정 패턴이 누구에게나 최고기록을 만든다는 인과관계로 바꾸지 않았습니다.</p><h2>거리별로 다른 질문을 준비하기</h2><p>5km·10km에서는 짧다는 이유로 시작부터 평소 경험보다 빠른 속도를 따라가지는 않는지 보세요. 이 글은 마지막 1km나 500m를 누구나 전력 질주해야 한다는 규칙을 두지 않습니다.</p><p>하프·풀에서는 평균 페이스 외에 주행 시간이 길어질 때의 반응, 급수·보급 기회, 코스의 어려운 구간을 함께 계획해야 합니다. 다른 거리의 기록에 고정 배수를 곱해 개인 목표를 확정하지 말고 최근 장거리 경험과 해당 코스 조건을 확인하세요.</p><h2>구간표에는 숫자와 조정할 이유를 같이 적기</h2><p>예시 메모는 ‘출발 직후 혼잡하면 안전하게 흐름을 따르고, 공간이 생겼을 때 현재 노력감을 다시 확인’처럼 만들 수 있습니다. 밀린 초를 한꺼번에 되찾으려는 급가속이 필요한 계획인지도 미리 점검하세요.</p><p>공식 코스의 오르막·반환·급수·통제 시각을 표시하면 시계 화면만 볼 때보다 계획의 근거가 분명해집니다. 제한시간이 출발 신호 기준인지 개인 기록 기준인지는 대회마다 공식 안내로 확인할 항목입니다.</p><h2>멘탈 메모는 몸의 신호를 덮는 구호가 아니어야 합니다</h2><p>남은 전체 거리보다 다음 확인 지점에 집중하거나, 정한 구간에서 계획과 실제 반응을 점검하는 짧은 메모를 쓸 수 있습니다. 이것은 실용적인 집중 방법의 예시이며 검증된 기록 향상률을 붙이지 않았습니다.</p><p>심한 어지럼·의식 변화·호흡 곤란 등 문제가 생겼는데 ‘정신력으로 버티기’로 해석하지 마세요. 주행을 멈추고 주변 운영요원·의료진의 도움을 요청해야 합니다. 일반 페이스표는 개인의 이상 증상을 판단하는 도구가 아닙니다.</p><h2>레이스 뒤에는 목표와 실제 구간을 비교하세요</h2><p>구간별 시간뿐 아니라 경사·혼잡·보급·날씨·불편이 있었던 위치를 남겨 보세요. 후반이 느려졌다는 사실만으로 보급이나 정신력 중 하나가 원인이라고 단정하기는 어렵습니다.</p><p>다음 대회에는 어디서 계획과 달라졌는지 확인하고 한 번에 무엇을 바꿀지 정할 수 있습니다. 거리별 준비 질문은 <a href="/blog/race-distance-difficulty-guide-2026">5km부터 풀코스까지 비교</a>에서 이어집니다.</p><h2>확인한 원문</h2><ul><li><a href="https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2023.1273451/full" target="_blank" rel="noopener noreferrer">2023 빈 하프·풀 페이스 관찰 연구</a> — 완주 기록 분석. 관찰된 연관성을 개인별 최고 전략으로 확정하지 않음.</li></ul>
+`,
+    author: "산초 에디터",
+    publishedAt: "2025-02-04",
+    category: "guide",
+    tags: [
+      "마라톤",
+      "페이스",
+      "멘탈",
+      "하프마라톤",
+      "5km",
+      "10km",
+      "사점"
+    ],
+    readingTime: 6,
     featured: true,
+    updatedAt: "2026-11-10",
+    faqs: [
+      {
+        "question": "네거티브 스플릿이 모두에게 가장 좋은가요?",
+        "answer": "관찰 자료에서 본 패턴을 개인의 최적 전략으로 확정할 수는 없습니다. 코스·최근 훈련·목표·당일 반응에 맞춘 계획이 필요합니다."
+      },
+      {
+        "question": "5km 기록만으로 풀코스 목표를 확정해도 되나요?",
+        "answer": "고정 환산식만으로 개인 목표를 확정하지 않습니다. 긴 주행의 경험과 조건, 실제로 견딘 강도·보급도 함께 확인해야 합니다."
+      }
+    ],
   },
 ];

@@ -719,112 +719,37 @@ export const posts_2026_07: BlogPost[] = [
 `,
   },
   {
-    id: 'fall-marathon-race-day-checklist-2026',
-    slug: 'fall-marathon-race-day-checklist-2026',
-    title: '가을 마라톤 완주 준비물 체크리스트 — 신발·젤·양말부터 대회 당일까지',
-    description:
-      '과천·춘천·JTBC 등 가을 마라톤 접수 시즌, 완주를 위한 준비물을 신발·보급(젤)·의류·장비·대회 당일 5범주로 정리했습니다. 거리와 목표에 맞는 신발 선택부터 젤 개수 공식, 물집 방지 양말, 대회 당일 아침 루틴까지 — 처음 도전하는 러너도 빠짐없이 챙길 수 있는 체크리스트입니다.',
-    thumbnail: '/images/blog/fall-marathon-race-day-checklist-2026.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-07-26',
-    category: 'guide' as const,
-    readingTime: 9,
-    tags: ['마라톤 준비물', '완주 체크리스트', '가을 마라톤', '마라톤 젤', '러닝 양말', '대회 당일'],
+    id: "fall-marathon-race-day-checklist-2026",
+    slug: "fall-marathon-race-day-checklist-2026",
+    title: "마라톤 준비물 점검표 — 장비·보급·공식 안내를 한 장에",
+    description: "고정 젤 개수와 신발·양말의 예방 보증 대신, 실제 사용한 조합·탄수화물 합계·출발과 귀가 동선을 직접 채우는 점검표로 바꿨습니다.",
+    thumbnail: "/images/blog/verified-fall-marathon-race-day-checklist-2026-20261110.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-07-26",
+    category: "guide",
+    readingTime: 6,
+    tags: [
+      "마라톤 준비물",
+      "완주 체크리스트",
+      "가을 마라톤",
+      "마라톤 젤",
+      "러닝 양말",
+      "대회 당일"
+    ],
     content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>완주 준비물은 3범주</strong> — ① 거리·목표에 맞는 <strong>신발</strong>, ② 젤·수분 <strong>보급</strong>, ③ 물집 방지 양말·날씨별 <strong>의류</strong>. 여기에 장비와 대회 당일 루틴까지</li>
-    <li><strong>새 장비는 반드시 미리 적응</strong> — 신발·양말·젤은 대회 전 훈련에서 최소 몇 번 써보고, 검증 안 된 걸로 대회 당일 처음 신거나 먹지 마세요</li>
-    <li><strong>거리별로 다릅니다</strong> — 풀코스는 젤 3~5개+쿠션 신발, 10K는 젤 없이 가벼운 신발. 아래에서 거리·목표별로 정리했습니다</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <p><strong>지금이 가을 마라톤 접수 시즌입니다.</strong> <a href="/blog/2026-gwacheon-marathon-registration">과천마라톤</a>·<a href="/blog/2026-chuncheon-marathon-registration-guide">춘천마라톤</a> 등 9~11월 대회가 한창 접수 중이죠. 접수를 마쳤다면 이제 준비물 차례입니다. 아래 순서대로 챙기면 빠뜨릴 게 없습니다.</p>
-</div>
-
-<h2>① 신발 — 거리와 목표로 고른다</h2>
-<p>가장 중요한 준비물입니다. "완주가 목표냐, 기록이 목표냐"와 "거리"에 따라 선택이 갈립니다.</p>
-<table>
-  <thead><tr><th>거리</th><th>완주·편안함 우선</th><th>기록·스피드 우선</th></tr></thead>
-  <tbody>
-    <tr><td>풀코스</td><td><a href="/shoes/asics-gel-nimbus-28">님버스 28</a> · <a href="/shoes/new-balance-1080-v15">1080 v15</a> (최대 쿠션)</td><td><a href="/shoes/new-balance-sc-elite-v5">SC 엘리트 v5</a> · <a href="/shoes/nike-alphafly-3">알파플라이 3</a> (카본)</td></tr>
-    <tr><td>하프</td><td><a href="/shoes/asics-novablast-6">노바블라스트 6</a> (고쿠션 데일리)</td><td><a href="/shoes/saucony-endorphin-speed-5">엔돌핀 스피드 5</a> (나일론 플레이트)</td></tr>
-    <tr><td>10K</td><td><a href="/shoes/nike-pegasus-42">페가수스 42</a> · <a href="/shoes/mizuno-wave-rider-29">라이더 29</a></td><td><a href="/shoes/asics-magic-speed-5">매직스피드 5</a> (입문 카본)</td></tr>
-  </tbody>
-</table>
-<p><strong>한국 러너라면 발볼을 꼭 보세요.</strong> 발볼이 넓다면 풀코스 카본화 중 <a href="/shoes/new-balance-sc-elite-v5">SC 엘리트 v5</a>(토박스 74.5mm)가 드물게 여유 있는 편이고, 쿠션 완주라면 <a href="/shoes/asics-gel-nimbus-28">님버스 28</a>이 넉넉합니다. 내 발형·목표에 맞는 신발을 한 번에 찾으려면 <a href="/recommend">맞춤 추천</a>을, 거리별 전체 순위는 <a href="/best/marathon">마라톤 베스트</a>에서 볼 수 있습니다.</p>
-<div class="callout warning"><p><strong>새 신발은 대회 당일 처음 신지 마세요.</strong> 카본화든 쿠션화든 발에 적응하는 데 시간이 걸립니다. 대회 전 최소 2~3회, 30분 이상 신어보고 물집·통증이 없는지 확인하세요.</p></div>
-
-<h2>② 보급 — 젤 몇 개를, 언제</h2>
-<p>하프 이상이라면 <strong>에너지 젤</strong>이 완주를 가릅니다. 몸에 저장된 글리코겐은 약 90분이면 바닥나기 때문에, 그 전부터 규칙적으로 보충해야 "벽(Wall)"을 피할 수 있습니다.</p>
-<table>
-  <thead><tr><th>거리</th><th>젤 개수(권장)</th><th>타이밍</th></tr></thead>
-  <tbody>
-    <tr><td>풀코스</td><td><strong>3~5개</strong></td><td>출발 40~45분 후부터 30~40분 간격</td></tr>
-    <tr><td>하프</td><td>1~2개</td><td>10km 전후 1개, 필요 시 1개 더</td></tr>
-    <tr><td>10K</td><td>0~1개</td><td>대부분 불필요(1시간 이내면 생략 가능)</td></tr>
-  </tbody>
-</table>
-<p>젤은 종류에 따라 성격이 다릅니다 — <a href="/gels/maurten-gel-100">마우르텐 100</a>은 속이 편한 하이드로겔, <a href="/gels/sis-beta-fuel">SIS 베타 퓨얼</a>은 대용량 탄수화물, <a href="/gels/226ers-high-energy">226ERS</a>는 아미노산 포함형입니다. <strong>카페인 젤은 후반부 1~2개</strong>로 아껴 쓰고, 젤을 먹은 뒤엔 물을 함께 마셔야 흡수가 잘 됩니다. 이 역시 <strong>대회 전 훈련에서 미리 먹어보고</strong> 속에 맞는지 확인하세요.</p>
-
-<h2>③ 양말·의류·소품 — 물집과 쓸림을 막는다</h2>
-<p>완주를 망치는 건 의외로 사소한 것들입니다. 물집, 젖꼭지 쓸림, 사타구니 쓸림 — 전부 미리 막을 수 있습니다.</p>
-<ul>
-  <li><strong>흡습·속건 러닝 양말</strong> — 면양말은 땀을 머금어 물집의 주범입니다. 발 관리 상세는 <a href="/blog/running-foot-care-blisters-toenails-2026">물집·발톱멍 예방 가이드</a>, 소재별로 고르는 법은 <a href="/blog/running-socks-guide-fiber-composition-2026">러닝 양말 혼용률 지도</a> 참고. 신발을 브랜드 공식몰에서 살 때 <strong>같은 스토어의 러닝 양말도 함께</strong> 담으면 준비가 한 번에 끝납니다</li>
-  <li><strong>니플밴드 / 바세린</strong> — 남성은 젖꼭지 쓸림, 모두에게 사타구니·겨드랑이 쓸림 방지 필수(특히 풀코스)</li>
-  <li><strong>날씨별 상의</strong> — 가을 아침은 쌀쌀하니 출발 전 버리는 옷(우비·헌 옷) 준비, 뛰면 더워지므로 얇게. 러닝 재킷을 새로 산다면 <a href="/fabrics/kca-running-jacket-2025">한국소비자원 러닝 재킷 8종 시험</a>에서 체온유지성·<a href="/fabrics/air-permeability-iso-9237">공기투과도</a>를 먼저 비교해 보세요</li>
-  <li><strong>선크림·립밤</strong> — 몇 시간 야외 노출, 특히 풀코스</li>
-</ul>
-
-<h2>④ 장비 — 있으면 편한 것들</h2>
-<ul>
-  <li><strong>GPS 러닝 워치</strong> — 페이스 관리의 핵심. 목표 페이스 유지가 완주·기록을 좌우합니다(<a href="/blog/marathon-pacing-mental-strategy-guide">페이싱 전략</a> 참고)</li>
-  <li><strong>러닝 벨트 / 암밴드</strong> — 젤·휴대폰·소금을 수납. 풀코스는 젤 여러 개라 필수에 가깝습니다</li>
-  <li><strong>모자 / 선글라스</strong> — 햇빛·땀 관리</li>
-</ul>
-
-<h2>⑤ 대회 당일 체크리스트</h2>
-<p><strong>전날 밤</strong></p>
-<ul>
-  <li>배번(비브)·안전핀·기록칩 확인, 옷에 미리 부착</li>
-  <li>신발·양말·젤·벨트를 한 가방에 미리 세팅</li>
-  <li>탄수화물 위주 저녁(카보로딩), 과식·새로운 음식 금지, 일찍 취침</li>
-</ul>
-<p><strong>당일 아침</strong></p>
-<ul>
-  <li>출발 <strong>2~3시간 전 기상</strong>, 소화되는 식사(빵·바나나·죽 등)</li>
-  <li>출발 전 화장실은 미리(줄이 깁니다), 가벼운 웜업·스트레칭</li>
-  <li>젤 위치·개수 최종 확인, 목표 페이스 되새기기</li>
-</ul>
-
-<div class="callout warning">
-  <p><strong>가장 중요한 원칙 — "대회 당일 새것 금지".</strong> 신발·양말·젤·의류 무엇이든, 대회에서 처음 쓰는 건 도박입니다. 물집·복통·쓸림은 대부분 "검증 안 된 새 장비"에서 나옵니다. 준비물은 <strong>훈련에서 미리 다 써보고</strong> 대회에 나가세요.</p>
-</div>
-
-<div class="faq">
-  <h2>자주 묻는 질문</h2>
-  <div class="faq-item">
-    <p class="faq-q">Q. 첫 마라톤인데 최소한 뭘 챙겨야 하나요?</p>
-    <p class="faq-a">A. 검증된 신발·양말·젤(거리에 맞게)·배번·GPS 워치가 최소 세트입니다. 여기에 쓸림 방지(니플밴드·바세린)와 날씨별 옷만 더하면 충분합니다. 나머지는 있으면 편한 것들입니다.</p>
-  </div>
-  <div class="faq-item">
-    <p class="faq-q">Q. 젤은 정확히 몇 개 가져가야 하나요?</p>
-    <p class="faq-a">A. 풀코스 3~5개, 하프 1~2개가 기준입니다. 자신의 완주 시간을 40분으로 나눈 개수 + 여유분 1개로 계산하면 됩니다. 카페인 젤은 후반부용으로 1~2개만 섞으세요.</p>
-  </div>
-  <div class="faq-item">
-    <p class="faq-q">Q. 대회에 새 카본화를 신어도 되나요?</p>
-    <p class="faq-a">A. 권하지 않습니다. 카본화는 종아리·발바닥 부담이 커서 적응이 필요합니다. 최소 2~3회, 가능하면 대회 페이스로 미리 신어보고 문제없을 때만 대회에 신으세요. 검증 안 된 신발로 첫 풀코스를 뛰는 건 완주를 거는 도박입니다.</p>
-  </div>
-  <div class="faq-item">
-    <p class="faq-q">Q. 양말도 그렇게 중요한가요?</p>
-    <p class="faq-a">A. 네. 풀코스 완주를 망치는 흔한 원인이 물집인데, 대부분 면양말이나 안 맞는 양말 때문입니다. 흡습·속건 러닝 양말 하나가 완주 후반 3~4시간의 편안함을 좌우합니다. 신발 살 때 같은 스토어에서 함께 챙기는 걸 추천합니다.</p>
-  </div>
-</div>
-
-<p><small>출처: 본 사이트 신발·에너지 젤 DB 및 각 상세 페이지, 일반적인 마라톤 보급·완주 가이드라인 종합 · 작성 2026년 7월 26일.</small></p>
+<p><strong>2026-11-10 근거 재확인.</strong> 제품 표시·연구 조건·실제 행동에 필요한 정보를 구분했습니다.</p><h2>대회 가방은 공식 안내와 실제 써 본 조합으로 채우세요</h2><p>이 점검표는 특정 대회의 최신 운영 공지를 대신하지 않습니다. 먼저 참가하는 회차·종목의 출발 구역, 집결과 출발 시간, 기록칩·배번호, 물품 보관, 코스 급수, 중도 포기·의료 안내를 공식 사이트에서 확인해 저장하세요.</p><p>신발·양말·의류·보급은 따로 좋은 제품을 모으기보다 실제 함께 사용한 조합을 적는 편이 유용합니다. 새 신발이 반드시 몇 회·몇 분 뒤에 적응된다는 숫자를 보증으로 삼기보다, 눌림·미끄러짐·쓸림·속의 반응을 확인한 경험을 남겨 두세요.</p><div class="table-wrap"><table><thead><tr><th scope="col">준비 묶음</th><th scope="col">출발 전에 남겨 둘 메모</th></tr></thead><tbody><tr><td>공식 안내</td><td>회차·종목·출발 구역·마감 시각·보관 위치</td></tr><tr><td>신발·양말·의류</td><td>실제 함께 써 본 조합과 불편 부위</td></tr><tr><td>보급</td><td>제품별 탄수화물 g·카페인 mg·음료 포함 합계</td></tr><tr><td>날씨·이동</td><td>집결 전 대기·주행 중·골인 후 갈아입을 준비</td></tr><tr><td>연락·귀가</td><td>동행과 만날 위치·연락 방법·마친 뒤 이동</td></tr></tbody></table></div><h2>젤 몇 개보다 시간당 합계를 적어 보세요</h2><p>AIS는 스포츠젤을 탄수화물 공급 방법 중 하나로 안내하며, 대회에서 쓸 보급을 훈련에서 시험하도록 권합니다. 제품에 따라 1포의 탄수화물량이 다르고 스포츠음료·음식도 같은 합계에 들어갑니다.</p><p>보급 메모에는 제품 이름만 쓰지 말고 1포의 탄수화물 g, 먹을 기회, 함께 마실 물·음료, 실제 훈련에서의 위장 반응을 적으세요. 급수대의 제공 품목·위치가 내가 시험한 계획과 맞는지는 그 대회의 공식 안내로 다시 확인해야 합니다. 계산 방식과 연구 조건은 <a href="/blog/energy-gel-science-guide">에너지젤 가이드</a>에 정리했습니다.</p><h2>발의 마찰과 압박은 출발 전에 확인하기</h2><p>NHS 물집 안내는 잘 맞는 신발, 새 신발의 짧은 사용, 젖은 양말 교체 등을 설명합니다. 이를 특정 소재나 브랜드의 완전한 물집 예방 보증으로 읽지는 마세요.</p><p>가방을 챙기면서 양말의 접힘, 발가락 끝 압박, 뒤꿈치 미끄러짐을 실제 조합에서 확인할 수 있습니다. 반복해서 쓸렸던 부위를 숨기고 같은 조합으로 장거리를 강행하기보다 장비·계획을 다시 점검하세요. 이미 생긴 물집 대처는 <a href="/blog/running-foot-care-blisters-toenails-2026">발 관리 가이드</a>에서 확인할 수 있습니다.</p><h2>날씨 준비는 달리는 시간 전체로 보기</h2><p>출발 전 기다리는 때와 주행 중, 마친 뒤 이동할 때 필요한 옷은 다를 수 있습니다. 당일 예보와 대기·보관 동선을 보고 입고 갈 옷, 맡길 옷, 마른 옷을 나눠 챙겨 보세요. 버릴 옷·포장재의 수거 방식도 주최 측 안내를 따릅니다.</p><p>더운 날에는 원래 목표를 그대로 채우는 것보다 시간·거리·강도를 조정할 여지를 남겨야 합니다. CDC는 어지럽거나 힘이 빠지면 활동을 멈추고 시원한 곳으로 이동하도록 안내합니다. <a href="/blog/hot-weather-summer-running-safety-guide-korea">폭염 대응 안내</a>도 함께 확인하세요.</p><h2>전날 마지막으로 확인할 네 가지</h2><p>첫째, 참가 회차와 종목을 잘못 읽지 않았는지 확인합니다. 둘째, 배번호·칩·보관 물품을 실제로 받았는지 확인합니다. 셋째, 익숙한 장비와 보급을 담았는지 봅니다. 넷째, 당일 공지·기상 변화가 계획을 바꾸지는 않는지 확인합니다.</p><p>이 점검표의 빈칸은 구매 목록이 아니라 개인의 참가 조건을 적는 자리입니다. 신발을 새로 사거나 젤을 더 많이 챙기는 것으로 모든 준비가 끝나지는 않습니다. 출발·완주·귀가까지 자신이 실제로 할 행동을 적어 두세요.</p><h2>확인한 원문</h2><ul><li><a href="https://www.ausport.gov.au/ais/nutrition/supplements/group_a/sports-foods2/sports-gels" target="_blank" rel="noopener noreferrer">AIS 스포츠젤 안내</a> — 대회용 보급의 훈련 중 확인과 제품별 표시.</li><li><a href="https://www.nhs.uk/conditions/blisters/" target="_blank" rel="noopener noreferrer">NHS 물집 안내</a> — 신발·양말 조합과 물집 관리.</li><li><a href="https://www.cdc.gov/heat-health/risk-factors/heat-and-athletes.html" target="_blank" rel="noopener noreferrer">CDC 더운 날 운동 안내</a> — 날씨에 따른 활동 조절. 특정 대회 운영 공지는 별도 확인.</li></ul>
 `,
+    updatedAt: "2026-11-10",
+    faqs: [
+      {
+        "question": "풀코스라면 정해진 개수의 젤만 챙기면 되나요?",
+        "answer": "제품별 탄수화물량과 예상 시간, 음료·음식·급수 기회까지 함께 봐야 합니다. 훈련에서 확인한 조합으로 개인 계획을 준비하세요."
+      },
+      {
+        "question": "이 점검표가 특정 대회의 최신 안내인가요?",
+        "answer": "아닙니다. 실제 회차·종목의 공식 참가자 안내에서 집결·출발·보관·급수·의료 안내를 확인해야 합니다."
+      }
+    ],
   },
   {
     id: "mizuno-neo-vista-3-review-2026",
@@ -3083,104 +3008,37 @@ export const posts_2026_07: BlogPost[] = [
     ],
   },
   {
-    id: 'running-foot-care-blisters-toenails-2026',
-    slug: 'running-foot-care-blisters-toenails-2026',
-    title: '러너의 여름 발 트러블 완전 가이드 | 물집·발톱 멍·무좀 — 왜 생기고 어떻게 막을까',
-    description: '고온다습한 한국 여름은 러너의 발에 물집·발톱 멍·무좀이 폭증하는 계절입니다. 땀과 습기, 마찰, 안 맞는 사이즈가 겹치기 때문이죠. 세 가지 대표 발 트러블의 원인과 예방법(양말·사이즈·끈 묶기·발 관리), 그리고 이미 생겼을 때의 올바른 처치까지 정리했습니다. 신발은 "보조"일 뿐, 진짜 해법은 발과 습기 관리에 있습니다.',
-    thumbnail: '/images/blog/running-foot-care-blisters-toenails-2026.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-07-02',
-    category: 'guide' as const,
-    readingTime: 9,
-    tags: ['발 물집', '발톱 멍', '무좀', '여름 러닝', '발 관리', '러닝 부상 예방'],
+    id: "running-foot-care-blisters-toenails-2026",
+    slug: "running-foot-care-blisters-toenails-2026",
+    title: "러너 발 관리 — 물집·검은 발톱·무좀을 구분해서 대처하기",
+    description: "자가 바늘 처치와 무조건 면양말 금지·발톱 방치 주장을 제거했습니다. 피부 보호, 신발·양말 점검, 진료가 필요한 변화를 정리합니다.",
+    thumbnail: "/images/blog/verified-running-foot-care-blisters-toenails-2026-20261110.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-07-02",
+    category: "guide",
+    readingTime: 6,
+    tags: [
+      "발 물집",
+      "발톱 멍",
+      "무좀",
+      "여름 러닝",
+      "발 관리",
+      "러닝 부상 예방"
+    ],
     content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>여름 발 트러블의 공통 범인은 "습기 + 마찰 + 안 맞는 사이즈"</strong> — 땀이 많은 여름엔 물집·무좀이, 발톱은 내리막·짧은 신발에서 멍이 듭니다</li>
-    <li><strong>예방 3대 축: ①흡습속건 양말(면 금지) ②정사이즈·와이드 ③발톱 짧게 + 힐락 레이싱</strong> — 신발보다 이 세 가지가 훨씬 효과적입니다</li>
-    <li>이미 생겼다면 <strong>물집은 함부로 안 터뜨리고, 발톱 멍은 대부분 방치해도 재생</strong>, 무좀은 완전 건조 + 항진균이 기본입니다</li>
-  </ul>
-</div>
-
-<div class="callout warning">
-  <span class="callout-icon">🦶</span>
-  <div class="callout-body">
-    <p class="callout-title">여름에 발 트러블이 급증하는 이유</p>
-    <p>발은 운동 중 컵 하나 분량(약 200ml)의 땀을 흘립니다. 여름엔 여기에 <strong>고온다습 + 장마 우중런</strong>이 겹쳐 발이 항상 젖은 상태가 되죠. 젖은 피부는 마찰에 약해져 <strong>물집</strong>이 잘 생기고, 습한 신발 속은 곰팡이가 번식하는 <strong>무좀</strong>의 온상이 됩니다. 즉 여름 발 관리의 핵심은 <strong>"얼마나 빨리 건조시키느냐"</strong>입니다. 통기성 좋은 신발이 궁금하다면 <a href="/blog/summer-breathable-running-shoes-2026">여름 통기성 러닝화 TOP 10</a>을, 폭염 안전 수칙은 <a href="/blog/hot-weather-summer-running-safety-guide-korea">여름 러닝 안전 가이드</a>를 함께 보세요.</p>
-  </div>
-</div>
-
-<h2>1. 물집 — 가장 흔하고, 가장 막기 쉬운 트러블</h2>
-<p>물집은 <strong>반복 마찰 + 열 + 습기</strong>로 피부 층이 분리되며 그 사이에 진물이 차는 현상입니다. 여름엔 땀으로 발이 젖어 마찰 저항이 커지면서 특히 잘 생기죠. 주로 새끼발가락 옆, 발뒤꿈치, 발가락 끝, 발바닥 앞쪽에 생깁니다.</p>
-<h3>예방법 (효과 순서대로)</h3>
-<ul>
-  <li><strong>양말이 절반이다</strong> — 면양말은 땀을 머금어 최악입니다. <strong><a href="/fabrics/coolmax">쿨맥스</a>·<a href="/fabrics/merino-wool">메리노</a> 같은 <a href="/fabrics/wicking-ommc">흡습속건 소재</a></strong>로만 바꿔도 물집이 크게 줄어요. 어떤 양말이 어떤 소재인지는 <a href="/blog/running-socks-guide-fiber-composition-2026">러닝 양말 22종 혼용률 지도</a>에 정리했습니다. 물집이 잦다면 <strong>이중(더블레이어) 양말</strong>이 마찰을 양말끼리 흡수해 확실히 효과적입니다.</li>
-  <li><strong>사이즈·발볼</strong> — 헐렁하면 발이 신발 안에서 놀아 마찰이 늘고, 꽉 끼면 압박으로 생깁니다. 새끼발가락 물집이 잦다면 발볼이 좁은 것이니 <a href="/blog/wide-feet-running-shoes-korea">와이드(2E·4E)</a>를 고려하세요. 정사이즈 기준은 <a href="/blog/running-shoe-size-conversion-chart-korea-2026">사이즈 변환표</a>를 참고하고요.</li>
-  <li><strong>마찰 줄이기</strong> — 물집 잘 생기는 부위에 <strong>바세린·전용 안티챗 밤</strong>을 바르거나, 파우더로 건조 상태를 유지합니다. 장거리·대회 전엔 미리 발라두세요.</li>
-  <li><strong>끈 묶기(힐락 레이싱)</strong> — 발뒤꿈치가 들리며 쓸리는 물집엔, 맨 위 구멍을 이용한 <strong>힐락(heel-lock) 묶기</strong>로 발을 뒤에서 잡아주면 효과가 큽니다.</li>
-  <li><strong>젖으면 갈아신기</strong> — 우중런·땀이 많은 날은 여벌 양말을 챙겨 중간에 갈아 신는 것만으로도 예방됩니다.</li>
-</ul>
-<h3>이미 생겼다면</h3>
-<p><strong>작은 물집은 터뜨리지 않는 게 원칙</strong>입니다. 덮인 피부가 천연 밴드 역할을 하거든요. 크고 아파서 꼭 빼야 한다면, 소독한 바늘로 <strong>가장자리만 살짝 뚫어 진물만 빼고 덮인 피부는 남깁니다</strong>. 이후 <strong>하이드로콜로이드(습윤) 밴드</strong>를 붙이면 통증이 줄고 아뭄이 빠릅니다. 붉게 번지거나 고름·열감이 있으면 감염이니 병원에 가세요.</p>
-
-<h2>2. 발톱 멍·빠짐 — 내리막과 짧은 신발이 범인</h2>
-<p>검게 멍든 발톱(black toenail)은 <strong>발톱이 신발 앞쪽에 반복적으로 부딪혀</strong> 발톱 밑에 피가 고이는 것입니다. 러너에게 흔해 "러너의 훈장"이라 부르기도 하지만, 대부분은 예방할 수 있습니다.</p>
-<h3>예방법</h3>
-<ul>
-  <li><strong>발톱을 짧게, 일자로</strong> — 긴 발톱이 가장 큰 원인입니다. 러닝 전 <strong>일자로(둥글게 X) 짧게</strong> 깎으세요. 둥글게 깎으면 파고들 수 있습니다.</li>
-  <li><strong>사이즈 여유</strong> — 가장 긴 발가락 앞에 <strong>엄지손톱 하나(약 1cm)</strong> 여유가 필요합니다. 특히 <strong>내리막·장거리에서 발이 붓기</strong> 때문에 딱 맞는 신발은 발톱을 때립니다. 여름엔 더위로 발이 더 붓는 것도 감안하세요.</li>
-  <li><strong>힐락 레이싱</strong> — 발이 앞으로 밀리지 않게 뒤에서 잡아주면 발톱 충격이 줄어듭니다.</li>
-  <li><strong>내리막 자세</strong> — 보폭을 줄이고 케이던스를 높여, 브레이크 걸듯 쿵쿵 딛지 않는 것도 도움이 됩니다.</li>
-</ul>
-<h3>이미 멍들었다면</h3>
-<p>통증이 없다면 <strong>대부분 방치해도 새 발톱이 밀고 올라오며 자연스럽게 교체</strong>됩니다(수개월 소요). 억지로 뜯지 마세요. 다만 <strong>욱신거리는 압통이 심하면</strong> 피가 고여 압력이 높은 상태라 병원에서 빼야 하고, 발톱 주변이 붓고 고름이 잡히면 감염이니 진료가 필요합니다.</p>
-
-<h2>3. 무좀·발냄새 — 여름의 진짜 복병</h2>
-<p>무좀(athlete's foot)은 <strong>곰팡이(백선균) 감염</strong>으로, 고온다습한 여름 + 젖은 신발이 완벽한 번식 환경을 만듭니다. 발가락 사이가 하얗게 짓무르고 가렵거나, 물집·각질로 나타나죠. 러너는 땀과 젖은 신발에 노출이 많아 특히 취약합니다.</p>
-<h3>예방법</h3>
-<ul>
-  <li><strong>신발 로테이션 + 완전 건조</strong> — 같은 신발을 매일 신으면 습기가 마를 틈이 없습니다. <strong>2켤레 이상 번갈아 신고</strong>, 신은 신발은 통풍이 되게 말리세요. 젖은 신발 말리는 법은 <a href="/blog/wet-running-shoes-drying-care-guide-korea">젖은 러닝화 관리 가이드</a>에 정리했습니다.</li>
-  <li><strong>발가락 사이까지 말리기</strong> — 샤워 후 발가락 사이의 물기를 꼼꼼히 닦는 게 핵심입니다. 여기가 늘 젖어 있으면 무좀이 시작돼요.</li>
-  <li><strong>흡습속건 양말 + 즉시 탈의</strong> — 러닝 후 젖은 양말을 오래 신고 있지 마세요. 바로 갈아신고 발을 건조하게.</li>
-  <li><strong>땀 많으면 파우더·항진균 파우더</strong> — 발한이 심한 러너는 예방적으로 파우더를 쓰면 좋습니다.</li>
-</ul>
-<h3>이미 생겼다면</h3>
-<p><strong>약국 항진균 연고(OTC)를 증상이 사라진 뒤에도 1~2주 더</strong> 발라 재발을 막습니다. 증상이 심하거나 발톱까지 번졌다면(발톱무좀) 먹는 약이 필요할 수 있으니 <strong>피부과 진료</strong>를 받으세요. 무좀은 전염되므로 수건·양말을 따로 쓰는 것도 중요합니다.</p>
-
-<h2>공통 원칙 — "신발은 보조, 진짜 해법은 발과 습기 관리"</h2>
-<p>발 트러블을 줄이는 가장 큰 지렛대는 값비싼 신발이 아니라 <strong>양말·사이즈·건조 습관</strong>입니다. 정리하면:</p>
-<ul>
-  <li><strong>양말</strong>: 면 금지, 흡습속건(쿨맥스·메리노), 물집 잦으면 더블레이어</li>
-  <li><strong>사이즈</strong>: 가장 긴 발가락 앞 약 1cm 여유 + 발볼 넓으면 와이드</li>
-  <li><strong>발톱</strong>: 러닝 전 일자로 짧게</li>
-  <li><strong>건조</strong>: 신발 2켤레 로테이션, 발가락 사이까지 말리기</li>
-  <li><strong>마찰</strong>: 취약 부위에 밤·바세린, 힐락 레이싱</li>
-</ul>
-<p>그래도 발볼·통기성 때문에 신발 자체가 문제라면, <a href="/blog/summer-breathable-running-shoes-2026">여름 통기성 러닝화</a>를 고르거나 발 너비·통기 조건으로 <a href="/recommend">1분 추천</a>을 받아보세요. 발바닥·아치 통증까지 있다면 단순 트러블이 아닐 수 있으니 <a href="/blog/plantar-fasciitis-running-shoes-2026">족저근막염 가이드</a>도 확인하세요.</p>
-
-<h2>자주 묻는 질문</h2>
-<div class="faq">
-  <div class="faq-item">
-    <p class="faq-q">Q. 물집이 터졌는데 계속 뛰어도 되나요?</p>
-    <p class="faq-a">A. 통증이 심하지 않고 감염 징후(붉게 번짐·고름·열감)가 없다면 <strong>하이드로콜로이드 밴드로 덮고</strong> 조심스럽게 가능합니다. 다만 벗겨진 부위가 크거나 아프면 아물 때까지 쉬는 게 회복이 빠릅니다. 무리하면 상처가 커지고 감염 위험이 올라갑니다.</p>
-  </div>
-  <div class="faq-item">
-    <p class="faq-q">Q. 발톱이 검게 멍들면 꼭 빼야 하나요?</p>
-    <p class="faq-a">A. 아닙니다. <strong>통증이 없으면 대부분 방치해도 새 발톱으로 자연 교체</strong>됩니다. 억지로 뜯으면 감염 위험만 커져요. 단, 욱신거리는 압통이 심하거나 붓고 고름이 잡히면 병원에서 처치가 필요합니다.</p>
-  </div>
-  <div class="faq-item">
-    <p class="faq-q">Q. 여름에 무좀을 막는 가장 확실한 방법은?</p>
-    <p class="faq-a">A. <strong>신발 로테이션(2켤레 이상) + 발가락 사이까지 완전 건조</strong>입니다. 곰팡이는 젖은 환경에서만 번식하므로, 발과 신발을 늘 마르게 유지하는 게 핵심입니다. 흡습속건 양말로 바꾸고 러닝 직후 젖은 양말을 벗는 습관도 크게 도움이 됩니다.</p>
-  </div>
-  <div class="faq-item">
-    <p class="faq-q">Q. 양말만 바꿔도 정말 물집이 줄어드나요?</p>
-    <p class="faq-a">A. 네, 체감이 가장 큰 변화 중 하나입니다. 면양말을 <strong>흡습속건 소재</strong>로만 바꿔도 발이 훨씬 마른 상태로 유지돼 마찰 물집이 줄어요. 물집이 고질적이라면 마찰을 양말끼리 흡수하는 <strong>더블레이어 양말</strong>을 추천합니다.</p>
-  </div>
-</div>
-
-<p><small>※ 이 글은 일반적인 발 관리 정보로, 의학적 진단·치료를 대체하지 않습니다. 감염 징후(붉게 번짐·고름·열감·심한 통증)가 있거나 증상이 호전되지 않으면 피부과·정형외과 진료를 받으세요. 작성 2026년 7월 2일.</small></p>
+<p><strong>2026-11-10 근거 재확인.</strong> 제품 표시·연구 조건·실제 행동에 필요한 정보를 구분했습니다.</p><h2>물집·발톱 변화·무좀을 같은 문제로 보지 마세요</h2><p>새 신발을 신은 뒤 쓸린 부위와 발가락 사이 가려움, 이유를 모르는 발톱 색 변화는 확인할 점이 다릅니다. 이 글은 발이 젖었다는 이유 하나로 모든 증상을 무좀이나 마찰로 진단하지 않습니다.</p><p>러닝을 계속하려고 바늘로 물집을 터뜨리거나 발톱에 구멍을 내는 자가 처치 방법은 권하지 않습니다. 통증을 덮고 목표 거리를 마치는 것보다 원인을 확인하고 자극을 줄이는 선택이 먼저입니다.</p><div class="table-wrap"><table><thead><tr><th scope="col">관찰한 문제</th><th scope="col">확인할 점</th></tr></thead><tbody><tr><td>같은 부위가 반복해서 쓸림</td><td>신발 압박·미끄러짐·양말 접힘·젖은 상태</td></tr><tr><td>물집 주변 열감·고름·심한 통증</td><td>감염 가능성과 진료 필요 여부</td></tr><tr><td>발톱 색·모양 변화가 원인 불명</td><td>러닝 탓으로 단정하지 않고 진료</td></tr><tr><td>발가락 사이 가려움·각질</td><td>무좀 외 원인도 가능; 약사·의료진에게 확인</td></tr></tbody></table></div><h2>물집이 생겼다면 피부를 보호하세요</h2><p>NHS는 스스로 물집을 터뜨리지 말고 깨끗이 씻어 말린 뒤 부드러운 드레싱으로 덮도록 안내합니다. 이미 터졌어도 덮인 피부를 뜯지 말고, 원인이 된 신발·장비의 자극을 피하세요.</p><p>심한 통증이나 반복되는 물집, 열감·고름 등 감염이 의심되는 변화는 의료진에게 확인할 이유입니다. 큰 물집을 의료진이 처치하는 일과 러너가 직접 바늘로 뚫는 안내를 같은 것으로 쓰지 않았습니다.</p><h2>예방은 내 신발과 양말 조합에서 확인하기</h2><p>편하게 맞는 신발을 고르고 새 신발은 짧은 사용부터 확인할 수 있습니다. 젖은 양말을 바꾸고 발이 움직이는 위치·쓸리는 위치를 적으면 같은 문제를 반복하는 조합을 피하는 데 도움이 됩니다.</p><p>이 글은 특정 섬유·브랜드·와이드 규격이 물집을 반드시 막는다는 순위를 만들지 않았습니다. 발볼이 눌리는지와 발이 신발 안에서 미끄러지는지는 다른 문제이므로 무조건 한 사이즈 올리는 답도 피했습니다.</p><h2>발톱이 검거나 빠졌다고 모두 괜찮다는 뜻은 아닙니다</h2><p>NHS는 외상 뒤 발톱이 변색·탈락할 수 있다고 설명하지만, 이유를 모르는 색·모양 변화나 주변의 붉음·붓기·통증은 진료를 권합니다. 러닝 뒤 발견했다는 사실만으로 멍이라고 확정할 수는 없습니다.</p><p>발톱은 일자로 다듬고 가장자리를 깊이 파서 자르거나 뾰족한 도구로 밑을 청소하지 마세요. 운동할 때 발가락을 조이는 신발도 확인할 대상입니다. 재생 기간을 개인에게 확정하거나 통증을 참으며 계속 달리라고 안내하지 않습니다.</p><h2>무좀은 말리기만 하면 치료가 끝나는 문제가 아닙니다</h2><p>NHS는 무좀을 진균 감염으로 설명하며 발을 깨끗하고 건조하게 유지하는 관리와 항진균제 사용을 안내합니다. 약은 제품별 대상·용법이 달라 포장과 약사 안내를 따라야 하며, 모든 러너에게 같은 기간·횟수를 쓰지 않았습니다.</p><p>치료해도 좋아지지 않거나 열감·붓기·심한 통증이 있으면 진료를 받으세요. 당뇨나 면역 저하가 있는 사람의 발 문제는 더 주의가 필요합니다. 수건·신발을 공유하지 않고 공용 샤워실에서 맨발을 피하는 관리도 확인할 수 있습니다.</p><h2>확인한 원문</h2><ul><li><a href="https://www.nhs.uk/conditions/blisters/" target="_blank" rel="noopener noreferrer">NHS 물집 관리</a> — 자가 천자 금지·피부 보호·진료 신호.</li><li><a href="https://www.nhs.uk/symptoms/nail-problems/" target="_blank" rel="noopener noreferrer">NHS 발톱 문제</a> — 원인 불명 변화·감염 신호·손질과 신발 압박.</li><li><a href="https://www.nhs.uk/conditions/athletes-foot/" target="_blank" rel="noopener noreferrer">NHS 무좀</a> — 진균 감염·약물과 관리·진료 대상. 물집과 같은 원인으로 단정하지 않음.</li></ul>
 `,
+    updatedAt: "2026-11-10",
+    faqs: [
+      {
+        "question": "큰 물집은 직접 바늘로 터뜨려도 되나요?",
+        "answer": "NHS는 스스로 터뜨리지 않도록 안내합니다. 크거나 아픈 물집은 의료진이 평가할 문제이며, 이 글은 자가 천자법을 제공하지 않습니다."
+      },
+      {
+        "question": "검은 발톱은 러닝 멍이니 놔둬도 되나요?",
+        "answer": "색 변화의 원인을 모르거나 통증·붓기·주변 염증이 있으면 진료가 필요합니다. 러닝 뒤 발견했다고 모두 같은 멍으로 판단하지 않습니다."
+      }
+    ],
   },
   {
     id: "speedgoat-6-vs-pulsar-vs-terrex-agravic-trail-2026",
