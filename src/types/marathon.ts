@@ -182,6 +182,12 @@ export interface MarathonEvent {
   postRaceNote?: string;
   /** status를 마지막으로 확인한 날 'YYYY-MM-DD'. 대회 상세에만 노출한다 */
   lastVerified?: string;
+  /** 대회 정보 중 원문과 대조한 범위. status 확인일과 구분한다. */
+  factCheck?: {
+    checkedAt: string;
+    sources: { title: string; url: string }[];
+    note?: string;
+  };
   /**
    * 공식이 일정 연기를 알렸고 새 날짜가 아직 없을 때만 true. `date`는 원래 일정 그대로 둔다.
    * 날짜가 지나도 '지난 대회'로 보내지 않고, validate·due-check 는 에러 대신 매번 경고로 띄운다.

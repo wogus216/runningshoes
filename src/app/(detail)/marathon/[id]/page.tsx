@@ -451,6 +451,21 @@ export default async function MarathonDetailPage({ params }: MarathonDetailPageP
               공식 사이트 바로가기
             </a>
           )}
+          {event.factCheck && (
+            <div className="mt-4 space-y-2 text-sm leading-relaxed text-secondary">
+              <p className="font-medium text-primary">정보 확인 · {formatDateKo(event.factCheck.checkedAt)}</p>
+              {event.factCheck.note && <p>{event.factCheck.note}</p>}
+              <ul className="space-y-1">
+                {event.factCheck.sources.map((source) => (
+                  <li key={source.url}>
+                    <a href={source.url} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">
+                      {source.title}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
         </div>
 
         {/* 참가 종목 */}
@@ -586,7 +601,7 @@ export default async function MarathonDetailPage({ params }: MarathonDetailPageP
             </h2>
             <div className="space-y-5">
               {/* 출발 시간 & 참가 규모 */}
-              {(event.raceInfo.startTime || event.raceInfo.expectedParticipants) && (
+              {(event.raceInfo.startTime || event.raceInfo.expectedParticipants || event.raceInfo.aidStations || event.raceInfo.aidInterval) && (
                 <div className="flex flex-wrap gap-4">
                   {event.raceInfo.startTime && (
                     <div className="flex items-center gap-2 rounded-[4px] bg-surface px-4 py-2.5">
@@ -606,12 +621,15 @@ export default async function MarathonDetailPage({ params }: MarathonDetailPageP
                       </div>
                     </div>
                   )}
-                  {event.raceInfo.aidStations && (
+                  {(event.raceInfo.aidStations || event.raceInfo.aidInterval) && (
                     <div className="flex items-center gap-2 rounded-[4px] bg-surface px-4 py-2.5">
                       <Droplets className="h-4 w-4 text-sky-700" />
                       <div>
                         <span className="text-xs text-secondary">에이드 스테이션</span>
-                        <p className="font-bold text-primary">{event.raceInfo.aidStations}개소 {event.raceInfo.aidInterval && <span className="text-sm font-normal text-secondary">({event.raceInfo.aidInterval})</span>}</p>
+                        <p className="font-bold text-primary">
+                          {event.raceInfo.aidStations && `${event.raceInfo.aidStations}개소 `}
+                          {event.raceInfo.aidInterval && <span className="text-sm font-normal text-secondary">{event.raceInfo.aidInterval}</span>}
+                        </p>
                       </div>
                     </div>
                   )}
