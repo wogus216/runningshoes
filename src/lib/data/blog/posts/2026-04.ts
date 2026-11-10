@@ -140,180 +140,58 @@ export const posts_2026_04: BlogPost[] = [
 `,
   },
   {
-    id: '2027-seoul-marathon-registration-schedule',
-    slug: '2027-seoul-marathon-registration-schedule',
-    title: '2027 서울마라톤 접수 일정 완전 정리 | 풀코스 그룹별·10K·우선접수 총정리',
-    description: '동마클럽이 공개한 2027 서울마라톤(3/21)과 26/27 시즌 4개 대회 접수 일정을 정리했습니다. 풀코스 그룹별(A~H) 본접수, 10K 선착순, 우선접수·골드패키지 일정까지 한 눈에.',
-    thumbnail: '/images/blog/2026-2027-dongma-schedule.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-04-22',
-    category: 'news' as const,
-    readingTime: 6,
-    tags: ['서울마라톤', '동아마라톤', '대회 일정', '2027 서울마라톤', '마라톤 접수', '서울레이스'],
-    content: `
-<div class="callout warning">
-  <span class="callout-icon">⚠️</span>
-  <div class="callout-body">
-    <p class="callout-title">2027 서울마라톤 기록 제출 임박 — 4월 28일(화) 10시 오픈</p>
-    <p>풀코스 그룹 배정을 받으려면 유효기간(2024.1.1.~2026.5.10.) 내 공인 기록을 <strong>런카이브</strong>에서 5월 11일(월) 15시까지 제출해야 합니다. 기록 미제출 시 가장 후순위 그룹(H)부터 본접수가 가능합니다.</p>
-  </div>
-</div>
+    id: "2027-seoul-marathon-registration-schedule",
+    slug: "2027-seoul-marathon-registration-schedule",
+    title: "2027 서울마라톤 접수 일정 기록과 현재 마감: 11월 30일 14시 확인",
+    description: "공식 4월 기록 제출·5월 우선접수·6월 본접수는 지난 일정입니다. 접수 창을 기다리는 안내를 고치고 기록 제출·신청·배송지 변경 기한을 구분해 정리했습니다.",
+    thumbnail: "/images/blog/verified-2027-seoul-marathon-registration-schedule-20261110.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-04-22",
+    category: "news",
+    readingTime: 5,
+    tags: [
+      "서울마라톤",
+      "동아마라톤",
+      "대회 일정",
+      "2027 서울마라톤",
+      "마라톤 접수",
+      "서울레이스"
+    ],
+    content: `<p><small>2026년 11월 10일 공식 홈페이지·공지 원문 대조. 지난 접수 일정과 현재 처리할 기한을 구분했습니다.</small></p>
 
-<h2>한 눈에 보는 26/27 동마 대회 4개</h2>
+<p>2027 서울마라톤의 ‘2027’은 대회 연도다. 접수를 2027년 5~6월에 한다는 뜻이 아니다. <a href="https://seoul-marathon.com/90" target="_blank" rel="noopener noreferrer">공식 접수 일정</a>의 기록 제출·우선접수·본접수는 2026년에 진행한 일정이며 지금은 <a href="https://seoul-marathon.com/94/?bmode=view&amp;idx=171627770" target="_blank" rel="noopener noreferrer">6월 4일 국내 본접수 마감 공지</a>의 국내 참가권 매진 안내가 있다.</p>
+<h2>지난 접수 일정을 한 줄씩 구분</h2>
+<table><thead><tr><th>단계</th><th>공식 안내 일정</th><th>무엇을 위한 단계였나</th></tr></thead><tbody><tr><td>풀코스 기록 제출</td><td>4월 28일 10시~5월 11일 15시</td><td>참가 자격·기록 확인, 결제와 별도</td></tr><tr><td>우선접수</td><td>5월 18일 10시~22일 15시</td><td>대상자 신청 기간</td></tr><tr><td>풀코스 본접수</td><td>6월 1일 A~D, 2일 E~H</td><td>19·20·21·22시 그룹별 시작</td></tr><tr><td>10K 본접수</td><td>6월 3일 19시</td><td>10K 신청 시작</td></tr></tbody></table>
+<p>이 표는 접수 이력을 이해하기 위한 기록이며 현재 신청 가능 창이 아니다. 앞 단계에 참여했다고 다음 단계까지 자동 완료되는 구조로 설명하지 않았다. 늦게 이 글을 본 사람에게 ‘지금 광클 준비’라고 권하던 문구를 바꿨다.</p>
+<h2>11월 현재 캘린더에 적을 것은 두 요청의 마감</h2>
+<p><a href="https://seoul-marathon.com/95" target="_blank" rel="noopener noreferrer">현행 참가자 유의사항</a>는 취소·환불을, <a href="https://seoul-marathon.com/94/?bmode=view&amp;idx=171942151" target="_blank" rel="noopener noreferrer">배송지 변경 방법·기한 공지</a>는 배송지 변경을 각각 11월 30일 14시까지로 안내한다. 주소 변경은 동마클럽 문의하기를 통해야 하고, 마이페이지 회원 주소 수정만으로 반영되지 않는다는 점이 핵심이다.</p>
+<p>일정표에 ‘11/30’만 적지 말고 <strong>14:00와 요청 경로</strong>를 함께 적어두자. 바뀐 주소를 전달한 뒤 반영 답변을 확인하고, 취소라면 처리 결과와 카드사 환급을 구분해 확인하는 것을 권한다. 공식 문의 운영 시간과 처리 마감도 같은 시각이 아니다.</p>
+<h2>대회일·집결과 신청 일정을 분리하자</h2>
+<p><a href="https://seoul-marathon.com/96" target="_blank" rel="noopener noreferrer">2027 서울마라톤 공식 대회개요</a>의 대회일은 2027년 3월 21일이다. 풀 광화문광장·10K 잠실종합운동장 집결 예정이며 현재 유의사항은 06:30 집결 예정으로 안내한다. 본접수의 19~22시나 우선접수의 10시를 대회 당일 시각과 섞지 말자.</p>
+<p>반면 최종 출발 간격, 개인 배정, 물품 배송·수령 완료는 이번 공개 원문만으로 확인할 수 없다. 자신의 신청 상태와 최종 참가자 안내를 기준으로 다시 준비해야 한다.</p>
+<h2>다른 동마 대회 일정을 그대로 반복하지 않았다</h2>
+<p>이 글에 있던 2026 하반기 서울레이스·공주·경주의 접수 시작을 지금 남은 신청 기회처럼 함께 소개하지 않았다. 서로 다른 대회·연도·접수 시기를 한 표에 섞으면 이미 끝난 날짜가 계획으로 읽힐 수 있기 때문이다. 런저니는 별도의 <a href="/blog/dongma-run-journey-medal-2026">2026 완주 조건과 수령 공지 기록</a>으로 확인하자.</p>
 
-<p>동마클럽(@dongmaclub)이 <strong>26/27 시즌 4개 대회 접수 일정</strong>을 공식 공개했습니다. 2027 서울마라톤을 포함해 2026 하반기 3개 대회(서울레이스·공주백제·경주국제)까지, 한 장에 정리하면 다음과 같습니다.</p>
-
-<table>
-  <thead>
-    <tr>
-      <th>대회</th>
-      <th>대회 일자</th>
-      <th>본접수 오픈</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>2027 서울마라톤</strong> (풀·10K)</td>
-      <td>2027년 3월 21일(일)</td>
-      <td>6월 1~3일 (그룹별)</td>
-    </tr>
-    <tr>
-      <td>2026 공주백제마라톤</td>
-      <td>2026년 9월 20일(일)</td>
-      <td>5월 21일(목) 19시</td>
-    </tr>
-    <tr>
-      <td>2026 경주국제마라톤</td>
-      <td>2026년 10월 17일(토)</td>
-      <td>5월 26일(화) 19시</td>
-    </tr>
-    <tr>
-      <td>2026 서울레이스 (하프·10K)</td>
-      <td>2026년 10월 11일(일)</td>
-      <td>5월 27일(수) 19시 / 21시</td>
-    </tr>
-  </tbody>
-</table>
-
-<p>2026 하반기 3개 대회의 상세 일정·우선접수 대상·러닝화 추천은 <a href="/blog/2026-dongma-halfyear-marathon-schedule">2026 하반기 동마 대회 접수 일정 총정리</a>에서 자세히 다뤘습니다. 이 글에서는 <strong>2027 서울마라톤</strong>에 집중합니다.</p>
-
-<h2>2027 서울마라톤 접수 5단계 타임라인</h2>
-
-<figure class="my-8">
-  <img
-    src="/images/blog/2026-2027-dongma-schedule-photo.webp"
-    alt="2027 서울마라톤 접수 일정 타임라인 - 풀코스 기록 제출부터 10K 본접수까지"
-    class="w-full rounded-2xl"
-    loading="lazy"
-  />
-  <figcaption class="text-sm text-gray-500 mt-2 text-center">2027 서울마라톤 접수 5단계 일정 (출처: 동마클럽 인스타그램 @dongmaclub)</figcaption>
-</figure>
-
-<h3>1단계 — 풀코스 기록 제출 (4/28 ~ 5/11)</h3>
-
-<ul>
-  <li><strong>기간:</strong> 4월 28일(화) 10시 ~ 5월 11일(월) 15시</li>
-  <li><strong>제출처:</strong> 런카이브 홈페이지</li>
-  <li><strong>기록 유효기간:</strong> 2024년 1월 1일 ~ 2026년 5월 10일</li>
-</ul>
-
-<p>2026 서울마라톤 완주자 기록 분포에 따라 S·A~H 그룹 기준 기록이 설정됩니다. 명예의 전당 헌액자 중 <strong>2024~25 서울·공주·경주마라톤 또는 2026 서울마라톤에서 sub3</strong>를 달성한 러너는 S그룹으로 배정되며, 그 외 헌액자는 풀코스 기록에 따라 그룹별 신청이 가능합니다.</p>
-
-<h3>2단계 — 우선 접수 (5/18 ~ 5/22)</h3>
-
-<ul>
-  <li><strong>기간:</strong> 5월 18일(월) 10시 ~ 5월 22일(금) 15시</li>
-  <li><strong>접수처:</strong> 동마클럽 홈페이지(dongma.club)</li>
-</ul>
-
-<p>우선 접수는 아래 5개 조건 중 하나라도 해당하면 신청할 수 있습니다.</p>
-
-<ul>
-  <li>2026 동아마라톤 멤버십 가입자</li>
-  <li>2026 서울마라톤 동마크루</li>
-  <li>2026 서울마라톤 번호표 반납자</li>
-  <li>2026 서울마라톤 대비 공식 클래스 수료자</li>
-  <li>명예의 전당 헌액자 중 2024~25 서울/공주/경주마라톤, 2026 서울마라톤 sub3 달성자</li>
-</ul>
-
-<h3>3단계 — 골드패키지 (5/18 ~ 마감 시)</h3>
-
-<p>5월 18일(월) 10시부터 마감 시까지 상시 접수입니다. VIP 레이스 키트와 전용 편의를 원하는 러너를 위한 옵션이에요. 정원이 차면 조기 마감되므로 필요한 분은 오픈 초반에 신청하세요.</p>
-
-<h3>4단계 — 풀코스 본접수 (6/1 ~ 6/2, 그룹별)</h3>
-
-<div class="callout info">
-  <span class="callout-icon">ℹ️</span>
-  <div class="callout-body">
-    <p class="callout-title">그룹별 접수 시스템이란?</p>
-    <p>풀코스 본접수는 제출한 공인 기록을 바탕으로 배정된 그룹(A~H)에 따라 지정 시각에만 접수할 수 있습니다. 빠른 그룹일수록 먼저 접수 창이 열리며, 기록이 좋을수록 선착순 경쟁에서 유리한 구조입니다.</p>
-  </div>
-</div>
-
-<table>
-  <thead>
-    <tr><th>날짜</th><th>그룹</th><th>접수 시각</th></tr>
-  </thead>
-  <tbody>
-    <tr><td rowspan="4">6월 1일(월)</td><td>A그룹</td><td>19시</td></tr>
-    <tr><td>B그룹</td><td>20시</td></tr>
-    <tr><td>C그룹</td><td>21시</td></tr>
-    <tr><td>D그룹</td><td>22시</td></tr>
-    <tr><td rowspan="4">6월 2일(화)</td><td>E그룹</td><td>19시</td></tr>
-    <tr><td>F그룹</td><td>20시</td></tr>
-    <tr><td>G그룹</td><td>21시</td></tr>
-    <tr><td>H그룹</td><td>22시</td></tr>
-  </tbody>
-</table>
-
-<h3>5단계 — 10K 본접수 (6/3 선착순)</h3>
-
-<p>10K 코스는 그룹 배정 없이 <strong>6월 3일(수) 19시 동마클럽 홈페이지 선착순 접수</strong>입니다. 서울마라톤 10K는 매년 접수 오픈 후 수분 내 마감되는 초경쟁 종목이라 시간 관리가 필수입니다.</p>
-
-<h2>선착순 접수 실전 체크리스트</h2>
-
-<div class="callout tip">
-  <span class="callout-icon">💡</span>
-  <div class="callout-body">
-    <p class="callout-title">접수 D-Day 전날까지 해야 할 준비</p>
-    <p>① 동마클럽 홈페이지 회원가입·로그인 확인 ② 결제 수단(카드·간편결제) 미리 등록 ③ 달력·알람에 접수 시각 저장 ④ 유선랜 연결 PC 준비(모바일보다 안정적) ⑤ 브라우저 자동 입력 저장으로 입력 시간 단축</p>
-  </div>
-</div>
-
-<p>특히 10K는 <strong>시계 동기화</strong>가 중요합니다. 휴대폰 시계 오차가 1~2초만 있어도 마감 차이가 납니다. 접수 직전 <code>time.navyism.com</code> 같은 국가표준 시각 사이트로 초 단위를 맞춰두세요.</p>
-
-<h2>대회까지 준비할 것들</h2>
-
-<p>접수 성공이 첫 단계라면, 이후 훈련·장비·컨디션 준비가 본 게임입니다. 2027 서울마라톤은 3월 21일(일)이므로 접수 완료 후에도 <strong>9~10개월</strong>의 준비 기간이 있습니다.</p>
-
-<ul>
-  <li><strong>훈련 계획:</strong> 대회 16~20주 전부터 본격 빌드업. 2026년 11~12월 시작이 표준</li>
-  <li><strong>러닝화 선택:</strong> 레이스용은 대회 6~8주 전 구입해 40~60km 길들이기 권장. <a href="/blog/carbon-plate-running-shoes-lineup-tier-guide-2026">카본 플레이트 신발 비교</a>에서 종류별 특성을 확인하세요</li>
-  <li><strong>에너지 전략:</strong> 풀코스는 20km 이후 탄수화물 보충이 필수 — <a href="/gels">에너지젤 가이드</a></li>
-  <li><strong>맞춤 추천:</strong> 본인의 발볼·체중·주간 거리에 맞는 러닝화가 궁금하다면 <a href="/recommend">1분 러닝화 추천</a>을 이용하세요</li>
-</ul>
-
-<h2>놓치지 말아야 할 공식 공지 채널</h2>
-
-<p>대회별 상세 요강과 해외 참가자 접수 공지는 각 대회 인스타그램·홈페이지에서 별도 공지됩니다.</p>
-
-<ul>
-  <li>서울마라톤 — <a href="https://www.instagram.com/seoul_marathon/" rel="noopener noreferrer">@seoul_marathon</a> · seoul-marathon.com</li>
-  <li>서울레이스 — <a href="https://www.instagram.com/seoulrace/" rel="noopener noreferrer">@seoulrace</a> · seoul-race.co.kr</li>
-  <li>공주백제마라톤 — <a href="https://www.instagram.com/gongju_marathon/" rel="noopener noreferrer">@gongju_marathon</a> · gongjumarathon.com</li>
-  <li>경주국제마라톤 — <a href="https://www.instagram.com/gyeongju__marathon/" rel="noopener noreferrer">@gyeongju__marathon</a> · gyeongjumarathon.com</li>
-</ul>
-
-<div class="callout success">
-  <span class="callout-icon">🏃</span>
-  <div class="callout-body">
-    <p class="callout-title">다른 가을 대회도 검토해보세요</p>
-    <p>서울마라톤이 목표라도, 가을 대회를 페이스메이커 삼아 출전하면 실전 감각과 PB 기회를 모두 잡을 수 있습니다. <a href="/marathon">2026 마라톤 캘린더</a>에서 국내 43개 대회를 월별로 확인할 수 있어요.</p>
-  </div>
-</div>
-
-<p><small>출처: 동마클럽 공식 인스타그램 <a href="https://www.instagram.com/dongmaclub/" rel="noopener noreferrer">@dongmaclub</a> · 2026년 4월 18~20일 게시물 / 상세 요강은 각 대회 공식 홈페이지·인스타그램에서 추후 공지됩니다.</small></p>
-`,
+<h2>자주 묻는 질문</h2><h3>2027 대회면 접수도 2027년인가요?</h3><p>공식 안내의 4~6월 접수는 2026년 일정입니다. 대회일 2027년 3월 21일과 구분해야 하며 현재 국내 본접수 매진 공지가 있습니다.</p><h3>기록 제출과 결제는 같은 단계인가요?</h3><p>아닙니다. 기록 제출·승인, 대상자 접수, 결제와 실제 참가 확정을 구분해야 합니다.</p><h3>지금 캘린더에 적어야 할 기한은요?</h3><p>기존 신청자의 취소·환불과 배송지 변경은 2026년 11월 30일 14시까지라는 공식 안내입니다. 요청 방법과 반영 결과도 확인해야 합니다.</p><h3>마이페이지 주소를 바꿨는데 다시 문의해야 하나요?</h3><p>공식 배송지 공지는 마이페이지 수정만으로 반영되지 않으며 동마클럽 문의하기로 수령 주소를 전달하라고 안내합니다.</p>`,
+    updatedAt: "2026-11-10",
+    faqs: [
+      {
+        "question": "2027 대회면 접수도 2027년인가요?",
+        "answer": "공식 안내의 4~6월 접수는 2026년 일정입니다. 대회일 2027년 3월 21일과 구분해야 하며 현재 국내 본접수 매진 공지가 있습니다."
+      },
+      {
+        "question": "기록 제출과 결제는 같은 단계인가요?",
+        "answer": "아닙니다. 기록 제출·승인, 대상자 접수, 결제와 실제 참가 확정을 구분해야 합니다."
+      },
+      {
+        "question": "지금 캘린더에 적어야 할 기한은요?",
+        "answer": "기존 신청자의 취소·환불과 배송지 변경은 2026년 11월 30일 14시까지라는 공식 안내입니다. 요청 방법과 반영 결과도 확인해야 합니다."
+      },
+      {
+        "question": "마이페이지 주소를 바꿨는데 다시 문의해야 하나요?",
+        "answer": "공식 배송지 공지는 마이페이지 수정만으로 반영되지 않으며 동마클럽 문의하기로 수령 주소를 전달하라고 안내합니다."
+      }
+    ],
   },
   {
     id: '2026-icebucket-run-seoul',
