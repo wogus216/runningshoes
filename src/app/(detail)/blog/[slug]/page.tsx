@@ -164,7 +164,6 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         name: offer.name,
         price: offer.priceKrw,
         priceCurrency: 'KRW',
-        availability: 'https://schema.org/InStock',
         ...(offer.availabilityEnds && { validThrough: offer.availabilityEnds }),
         ...(offer.url && { url: offer.url }),
       })),
