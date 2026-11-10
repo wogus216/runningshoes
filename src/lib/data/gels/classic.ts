@@ -65,7 +65,7 @@ export const classicGels: Gel[] = [
       {
         "store": "쿠팡",
         "url": "https://link.coupang.com/a/g7f4AqtLWK",
-        "note": "현재 연결 상품의 변형·용량·선택 옵션과 판매 상태는 미확인입니다. 판매처의 제품 표시를 확인하세요."
+        "note": "2026-11-11 판매처 제목은 씨쏠트 초콜릿24개입, 선택 속성은32g×1개로 표시됩니다. 실제 묶음 구성을 확인하세요. 콜드브루와는 다른 맛입니다. 현재 판매 상태·쿠폰 조건·최종 가격은 판매처에서 확인하세요."
       }
     ],
     verification: {
@@ -159,7 +159,7 @@ export const classicGels: Gel[] = [
       {
         "store": "쿠팡",
         "url": "https://link.coupang.com/a/g7f2uERGAS",
-        "note": "현재 연결 상품의 변형·용량·선택 옵션과 판매 상태는 미확인입니다. 판매처의 제품 표시를 확인하세요."
+        "note": "2026-11-11 판매처 제목 기준 청포도40g×12포·480g 구성입니다. 공식 NEW 포장과 현재 판매 포장의 동일성을 확인하세요. 현재 판매 상태·쿠폰 조건·최종 가격은 판매처에서 확인하세요."
       }
     ],
     verification: {
@@ -328,7 +328,7 @@ export const classicGels: Gel[] = [
       {
         "store": "쿠팡",
         "url": "https://link.coupang.com/a/hb4vIaurwi",
-        "note": "현재 연결 상품의 변형·용량·선택 옵션과 판매 상태는 미확인입니다. 판매처의 제품 표시를 확인하세요."
+        "note": "2026-11-11 판매처 제목 기준 기본형40g·20개 구성입니다. 카페인110 제품과 구분하세요. 현재 판매 상태·쿠폰 조건·최종 가격은 판매처에서 확인하세요."
       }
     ],
     verification: {
@@ -527,7 +527,7 @@ export const classicGels: Gel[] = [
       {
         "store": "쿠팡",
         "url": "https://link.coupang.com/a/hb2IBC4jF6",
-        "note": "현재 연결 상품의 변형·용량·선택 옵션과 판매 상태는 미확인입니다. 판매처의 제품 표시를 확인하세요."
+        "note": "2026-11-11 판매처 제목 기준 기본 에너지젤 청포도45g×8포·360g 구성입니다. 프로 제품과 구분하세요. 현재 판매 상태·쿠폰 조건·최종 가격은 판매처에서 확인하세요."
       }
     ],
     verification: {
