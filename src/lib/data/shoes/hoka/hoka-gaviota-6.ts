@@ -96,6 +96,7 @@ export const shoe: Shoe = {
     {
       store: '네이버',
       url: 'https://brand.naver.com/hoka/products/12839097291',
+      note: '네이버 브랜드스토어 상품 주소입니다. 현재 판매 SKU·성별·색상·폭·사이즈·가격·재고는 확인하지 못했습니다.',
     },
   ],
   verification: {

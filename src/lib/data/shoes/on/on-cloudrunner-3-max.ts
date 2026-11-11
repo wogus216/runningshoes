@@ -82,6 +82,7 @@ export const shoe: Shoe = {
     {
       store: '네이버',
       url: 'https://search.shopping.naver.com/search/all?query=온러닝+클라우드러너+3+맥스',
+      note: '네이버 쇼핑 검색 결과로 이동합니다. 특정 판매 상품·색상·폭·사이즈·가격·재고를 확인한 링크는 아닙니다.',
     },
   ],
   verification: {
