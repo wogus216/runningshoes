@@ -77,10 +77,10 @@ export const posts_2025_01: BlogPost[] = [
 <h2>확인한 원문과 적용 범위</h2>
 <ul>
 <li><a href="https://www.nhs.uk/symptoms/knee-pain/" target="_blank" rel="noopener noreferrer">NHS 무릎 통증</a> — 원인 감별과 신속한 진료가 필요한 증상. 영국 서비스 연락처를 국내 응급 연락처로 옮기지 않았습니다.</li>
-<li><a href="https://bjsm.bmj.com/content/58/24/1486" target="_blank" rel="noopener noreferrer">BJSM 2024 슬개대퇴통증 실무 가이드</a> — 운동치료와 교육·개인별 보조 중재. 슬개대퇴통증 대상이며 모든 무릎 질환이나 특정 신발에 일반화하지 않습니다. RCT 검색은2022년5월까지.</li>
+<li><a href="https://bjsm.bmj.com/content/58/24/1486" target="_blank" rel="noopener noreferrer">BJSM 2024 슬개대퇴통증 실무 가이드</a> (<a href="https://repository.essex.ac.uk/39411/1/bjsports-2024-108110.full.pdf" target="_blank" rel="noopener noreferrer">저자 소속 대학 공개 원문</a>) — 운동치료와 교육·개인별 보조 중재. 슬개대퇴통증 대상이며 모든 무릎 질환이나 특정 신발에 일반화하지 않습니다. RCT 검색은2022년5월까지.</li>
 <li><a href="https://www.cochrane.org/evidence/CD013368_running-shoes-preventing-lower-limb-running-injuries-adults" target="_blank" rel="noopener noreferrer">Cochrane 2022: 러닝화와 하지 부상 예방</a> — 연구 검색2021년6월, 성인 러너·군인 대상. 제품별 치료 효과를 시험한 자료가 아닙니다.</li>
 </ul>
-<p><small>2026-11-09 원문 재확인. 이 글은 증상 기록·상담·착화 준비를 위한 정보이며 개인 진단이나 복귀 처방을 제공하지 않습니다.</small></p>
+<p><small>2026-11-11 원문 재확인. 이 글은 증상 기록·상담·착화 준비를 위한 정보이며 개인 진단이나 복귀 처방을 제공하지 않습니다.</small></p>
 `,
     author: '산초 에디터',
     publishedAt: '2025-01-25',
