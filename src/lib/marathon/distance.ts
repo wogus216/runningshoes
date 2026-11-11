@@ -3,7 +3,7 @@ import { EVENT_DISTANCES, type EventDistance } from '@/types/marathon';
 /**
  * 거리 필터용 정규화.
  *
- * 데이터에 `11K`·`6K`·`12K`가 섞여 있는데 EVENT_DISTANCES에 없는 값이라 필터에 안 잡혔다.
+ * 데이터에 `11K`·`6K`·`12K`·`4.4K`가 섞여 있는데 EVENT_DISTANCES에 없는 값이라 필터에 안 잡혔다.
  * 칩을 늘리는 대신(각 1건이라 변별력이 없다) 근접 표준으로 매핑한다.
  * "10K 대회 보여줘" 했을 때 11K 대회가 빠지는 게 더 이상하다.
  *
@@ -14,6 +14,7 @@ const NEAR: Record<string, EventDistance> = {
   '12K': '10K',
   '15K': '10K',
   '6K': '5K',
+  '4.4K': '5K',
 };
 
 export function normalizeDistance(raw: string): EventDistance | null {

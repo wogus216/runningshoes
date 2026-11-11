@@ -44,7 +44,7 @@ export type EventRegion =
   | '교토'
   | '도쿄';
 
-export type EventDistance = '풀코스' | '하프' | '15K' | '12K' | '11K' | '10.5K' | '10K' | '6K' | '5K' | '4K' | '울트라' | '트레일';
+export type EventDistance = '풀코스' | '하프' | '15K' | '12K' | '11K' | '10.5K' | '10K' | '6K' | '5K' | '4.4K' | '4K' | '울트라' | '트레일';
 
 export type EventStatus = '접수예정' | '접수중' | '마감' | '대회종료';
 
