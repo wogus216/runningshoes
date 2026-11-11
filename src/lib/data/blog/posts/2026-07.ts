@@ -1765,7 +1765,7 @@ export const posts_2026_07: BlogPost[] = [
 <h2>뼈의 스트레스 손상은 어떻게 나타나나요?</h2>
 <p>반복 부하가 뼈의 회복을 앞서면 골 스트레스 반응부터 스트레스 골절까지 다양한 손상이 생길 수 있습니다. 초기에는 뼈의 특정 부위가 운동 끝 무렵이나 직후에만 불편하고, 진행되면 운동 중·걷기·밤에 누워 있을 때도 아프거나 붓고 절뚝거릴 수 있습니다. 의심되면 통증을 유발하는 활동을 쉬고 가능한 빨리 평가받으세요. <a href="https://www.orthoinfo.org/diseases--conditions/sports-injuries/stress-fractures/" target="_blank" rel="noopener noreferrer">AAOS 골 스트레스 손상 안내</a></p>
 <h2>‘한 점 대 넓은 통증’으로 확진하지 마세요</h2>
-<p>통증 범위는 진료에 설명할 정보입니다. 넓게 아프다는 이유로 골절을 배제하거나, 한 점이 아프다는 이유로 확진하는 검사는 아닙니다. 아픈 다리로 반복해서 뛰거나 세게 눌러 증상을 만들어볼 필요도 없습니다. 신 스플린트 등 다른 정강이 통증도 진찰과 필요시 검사를 통해 구분합니다. <a href="https://www.orthoinfo.org/diseases--conditions/shin-splints/" target="_blank" rel="noopener noreferrer">AAOS 정강이 통증의 감별</a></p>
+<p>통증 범위는 진료에 설명할 정보입니다. 넓게 아프다는 이유로 골절을 배제하거나, 한 점이 아프다는 이유로 확진하는 검사는 아닙니다. 아픈 다리로 반복해서 뛰거나 세게 눌러 증상을 만들어볼 필요도 없습니다. 신 스플린트 등 다른 정강이 통증도 진찰과 필요시 검사를 통해 구분합니다. <a href="https://www.orthoinfo.org/bodypart/kneelower-leg/shin-splints/" target="_blank" rel="noopener noreferrer">AAOS 정강이 통증의 감별</a></p>
 <h2>초기 X-ray가 정상이어도 끝난 검사가 아닐 수 있습니다</h2>
 <p>AAOS는 초기 골 스트레스 손상에서는 X-ray가 정상처럼 보일 수 있다고 설명합니다. 증상과 진찰에 따라 MRI 등 추가 검사나 경과 관찰을 결정합니다. 모든 사람에게 MRI가 필수라는 뜻은 아니며, 검사 종류와 시점은 의료진과 정하세요.</p>
 <h2>진료에 가져갈 정보</h2>
@@ -1782,7 +1782,7 @@ export const posts_2026_07: BlogPost[] = [
 <ol><li>내 손상 부위와 정도는 무엇이며, 체중을 어느 정도 실어도 되나요?</li><li>걷기·자전거·수영 등 어떤 활동을 허용받았나요?</li><li>추적 검사나 재평가는 언제 하며, 어떤 증상 변화에 연락해야 하나요?</li><li>러닝 시작 조건과 거리·속도·빈도를 조절할 계획은 무엇인가요?</li><li>영양·골건강·과거 손상에 대한 추가 평가가 필요한가요?</li></ol>
 <h2>쿠션화 쇼핑을 복귀 허가로 바꾸지 마세요</h2>
 <p>새 신발의 착화감과 의료진이 정한 보호·복귀 계획은 따로 확인해야 합니다. 진료 때 실제 사용하는 신발과 인솔을 보여주고, 새 제품으로 바꿀 예정이라면 그 조건도 설명하세요. 특정 쿠션 모델이나 교체 주행거리를 치료 결과의 보증처럼 제시하지 않습니다.</p>
-<h2>원문과 확인 범위</h2><ul><li><a href="https://www.orthoinfo.org/diseases--conditions/sports-injuries/stress-fractures/" target="_blank" rel="noopener noreferrer">AAOS: Stress Fractures</a> — 골 스트레스 반응·증상·검사·치료·점진적 복귀</li><li><a href="https://www.orthoinfo.org/diseases--conditions/shin-splints/" target="_blank" rel="noopener noreferrer">AAOS: Shin Splints</a> — 정강이 통증의 다른 원인 감별</li></ul><p><small>2026-11-09 원문 대조. 일반 정보와 상담 준비용 기록이며 개인의 진단·치료·달리기 복귀 허가를 대신하지 않습니다.</small></p>`,
+<h2>원문과 확인 범위</h2><ul><li><a href="https://www.orthoinfo.org/diseases--conditions/sports-injuries/stress-fractures/" target="_blank" rel="noopener noreferrer">AAOS: Stress Fractures</a> — 골 스트레스 반응·증상·검사·치료·점진적 복귀</li><li><a href="https://www.orthoinfo.org/bodypart/kneelower-leg/shin-splints/" target="_blank" rel="noopener noreferrer">AAOS: Shin Splints</a> — 정강이 통증의 다른 원인 감별</li></ul><p><small>2026-11-11 원문 대조. 일반 정보와 상담 준비용 기록이며 개인의 진단·치료·달리기 복귀 허가를 대신하지 않습니다.</small></p>`,
     updatedAt: "2026-11-11",
     faqs: [
       {
