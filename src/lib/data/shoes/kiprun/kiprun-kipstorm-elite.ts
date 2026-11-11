@@ -23,8 +23,7 @@ export const shoe: Shoe = {
       "레이싱",
       "카본 플레이트",
       "슈퍼슈즈",
-      "PEBA",
-      "가성비 카본"
+      "PEBA"
     ],
     specs: {
       "weight": 218,
