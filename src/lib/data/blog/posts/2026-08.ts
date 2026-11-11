@@ -1315,7 +1315,7 @@ export const posts_2026_08: BlogPost[] = [
     slug: "asics-magic-speed-5-vs-nike-zoom-fly-6-carbon-trainer-2026",
     title: "매직스피드 5 vs 줌 플라이 6 — 47g 차이와 앞코 높이, 질환표 없이 비교",
     description: "같은 랩의201/248g·드롭8.7/9.6mm를 비교합니다. 한국 실제 상품별209,000원 조건과 카본 구조 설명을 나누고, 무릎·아킬레스가 정반대로 다친다는 주장과400km 수명을 철회했습니다.",
-    thumbnail: "/images/blog/asics-magic-speed-5-vs-nike-zoom-fly-6-carbon-trainer-2026.webp",
+    thumbnail: "/images/shoes/asics/magicspeed5/side.webp",
     author: "산초 에디터",
     publishedAt: "2026-08-10",
     category: "review",
@@ -1348,16 +1348,16 @@ export const posts_2026_08: BlogPost[] = [
 <h2>한국209,000원은 확인한 상품의 조건</h2><p>매직스피드5의 한국 기본1013A183.101·2E1013A184.400은209,000원입니다. 확인 기본은240/245/250/260~290mm, 2E는230~290mm가 선택 가능했습니다. 기본의 문자 폭은 미확인이고 RR 검체가 한국2E라고 확인된 것도 아닙니다.</p><p><a href="https://www.nike.com/kr/t/줌-플라이-6-남성-로드-레이싱화-r5abpTB8/FN8454-006" target="_blank" rel="noopener noreferrer">줌 플라이6 남성 FN8454-006</a>은 정가209,000원·확인시 판매167,200원이었습니다. 연관 상품에는229,000원인 다른 SKU도 노출돼 모든 색상의 단일 정가로 쓰지 않습니다. 나이키 한국 여성 현재 가격·와이드·개별 사이즈 재고는 이번 범위에서 미확인입니다.</p>
 <h2>무릎 이력·아킬레스 이력으로 신발을 배정하지 않습니다</h2><p>기존 글은 매직스피드는 아킬레스·족저근막·정강이 주의, 줌 플라이는 무릎 주의라며 ‘다치는 곳이 정반대’라고 설명했습니다. 이번에 확인한 실측·제조사·개별 리뷰는 그런 임상 결론을 뒷받침하지 못해 표와 추천을 철회했습니다.400km 수명·km당522원·공통3:30~5:00/km도 확인되지 않았습니다.</p><p>지금 신발에서 해결하려는 압박·힐 들림·전환 문제를 적고, 실제 구매 규격에서 바뀌는지 확인하세요. 현재 통증이 있다면 새 카본화 구매와 별도로 증상을 평가받는 것이 도움이 됩니다.</p><p>평소 신는 양말과 인솔을 준비해 엄지 위 높이, 앞쪽 길이, 중족부 압박, 뒤꿈치 들림을 따로 확인하세요. 끈을 조여 압박을 견뎌야만 고정되는지도 확인할 항목입니다. 직접 착화한 상품의 교환·반품 조건을 먼저 읽으세요. 통증·저림이 생기면 적응 과정이라고 참고 계속 달리기보다 사용을 멈추고 필요한 평가를 받으세요.</p><h2>확인한 원문과 남은 한계</h2><ul><li><a href="https://runrepeat.com/asics-magic-speed-5" target="_blank" rel="noopener noreferrer">RunRepeat 검체 실측</a></li><li><a href="https://www.doctorsofrunning.com/nike-zoom-fly-6-review-2024-release/" target="_blank" rel="noopener noreferrer">Doctors of Running 리뷰어별 착화 기록</a></li></ul><p>시험 한 켤레와 소수 리뷰어의 경험으로 개인별 최적 페이스, 보편적인 교체 거리, 부상 예방 순위를 정할 수 없습니다. 한국에서 확인되지 않은 상품 조건은 해외 가격 환산이나 이전 세대 수치로 채우지 않았습니다.</p><p><a href="https://runrepeat.com/nike-zoom-fly-6" target="_blank" rel="noopener noreferrer">줌 플라이6 실험실 원문</a> · <a href="https://www.asics.com/sg/en-sg/magic-speed-5/p/1013A183-400.html" target="_blank" rel="noopener noreferrer">매직스피드5 공식 구조</a> · <a href="https://www.asics.com/nz/en-nz/medical/review/magic-speed-5-review" target="_blank" rel="noopener noreferrer">뉴질랜드 제조사 기고의 다른 소재 표현</a></p>
 `,
-    updatedAt: "2026-11-09",
+    updatedAt: "2026-11-11",
   },
   {
     id: 'adidas-adizero-evo-sl-vs-boston-13-daily-2026',
     slug: 'adidas-adizero-evo-sl-vs-boston-13-daily-2026',
     title: '아디제로 Evo SL vs 보스턴13 — 2만원·31g 차이와 폼·로드 구조',
     description: '한국 공식SKU 정가와 RunRepeat 실측을2026-11-09 다시 대조했습니다. Evo SL 기본형과 우븐을 구분하고, 보스턴13 이중폼·유리섬유 로드, 미확인 수명·최적 페이스의 한계를 정리합니다.',
-    thumbnail: '/images/blog/adidas-adizero-evo-sl-vs-boston-13-daily-2026.webp',
+    thumbnail: '/images/shoes/adidas/evosl/side.webp',
     author: '산초 에디터',
-    updatedAt: '2026-11-09',
+    updatedAt: '2026-11-11',
     publishedAt: '2026-08-10',
     category: 'review' as const,
     readingTime: 8,

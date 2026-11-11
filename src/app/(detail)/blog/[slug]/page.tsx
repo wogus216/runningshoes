@@ -228,17 +228,24 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
 
         {/* 히어로 이미지 */}
         {post.thumbnail && (
-          <div className="relative -mx-4 mb-10 aspect-[1200/630] overflow-hidden rounded-[4px] sm:-mx-0">
-            <Image
-              src={img(post.thumbnail)}
-              alt={post.title}
-              fill
-              priority
-              sizes="(max-width: 640px) calc(100vw - 2rem), 768px"
-              className="object-cover"
-              style={{ borderRadius: '28px', boxShadow: 'none' }}
-            />
-          </div>
+          <figure className="-mx-4 mb-10 sm:mx-0">
+            <div className="relative aspect-[1200/630] overflow-hidden rounded-[4px]">
+              <Image
+                src={img(post.thumbnail)}
+                alt={post.thumbnailSource?.alt || post.title}
+                fill
+                priority
+                sizes="(max-width: 640px) calc(100vw - 2rem), 768px"
+                className="object-cover"
+                style={{ borderRadius: '28px', boxShadow: 'none' }}
+              />
+            </div>
+            {post.thumbnailSource && (
+              <figcaption className="mt-2 px-4 text-right text-xs text-gray-500 sm:px-0">
+                사진: <a href={post.thumbnailSource.url} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">{post.thumbnailSource.name}</a>
+              </figcaption>
+            )}
+          </figure>
         )}
 
         {/* 본문 - 카드 래퍼 없음, 깔끔한 타이포그래피.

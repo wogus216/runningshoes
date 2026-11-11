@@ -1842,7 +1842,7 @@ export const posts_2026_09: BlogPost[] = [
     slug: "nike-streakfly-2-review",
     title: "스트릭플라이 2 리뷰 — 128g보다 먼저 확인할 앞코 높이와 한국 상품 가격",
     description: "RunRepeat 128g 검체와 DOR 리뷰어별 사이즈 경험을 비교합니다. 낮은 앞코·중족 고정, 상품별 한국 가격을 구분하고 200km 수명·발 착지 처방을 철회했습니다.",
-    thumbnail: "/images/blog/nike-streakfly-2-review.webp",
+    thumbnail: "/images/shoes/nike/streakfly2/side.webp",
     author: "산초 에디터",
     publishedAt: "2026-09-11",
     category: "review",
@@ -1875,7 +1875,7 @@ export const posts_2026_09: BlogPost[] = [
         "answer": "개인의 발등·발가락 모양과 힐 고정에 따라 다릅니다. 리뷰어도 서로 다른 사이즈를 선택했습니다."
       }
     ],
-    updatedAt: "2026-11-09",
+    updatedAt: "2026-11-11",
   },
   {
     id: "asics-metaspeed-edge-plus-review",
@@ -2218,7 +2218,7 @@ export const posts_2026_09: BlogPost[] = [
     slug: "saucony-endorphin-trainer-review",
     title: "엔돌핀 트레이너 리뷰 — 같은 신발의 빠른 훈련·이지런 평가가 갈렸습니다",
     description: "IncrediRUN·PWRRUN과3/4 카본,285g 실측을 구분합니다. 한국 남성 상품·사이즈와 출처별 스택 차이를 확인하고5분대 장거리 전용·600km 수명을 철회했습니다.",
-    thumbnail: "/images/blog/saucony-endorphin-trainer-review.webp",
+    thumbnail: "/images/shoes/saucony/endorphin_Trainer.webp",
     author: "산초 에디터",
     publishedAt: "2026-09-11",
     category: "review",
@@ -2251,14 +2251,14 @@ export const posts_2026_09: BlogPost[] = [
         "answer": "검증된 공통600km 수명은 확인하지 못했습니다. 국소 마모와25마일 관찰을 수명으로 환산하지 않습니다."
       }
     ],
-    updatedAt: "2026-11-09",
+    updatedAt: "2026-11-11",
   },
   {
     id: "saucony-kinvara-16-review",
     slug: "saucony-kinvara-16-review",
     title: "써코니 킨바라16 리뷰 —207g·낮은 드롭,15km 상한은 근거가 없습니다",
     description: "28.0/23.5mm·4.5mm 실측과27.5HA 구방식을 구분합니다. 한국 남성 일반 상품·할인·사이즈를 확인하고 근력 등급·입문자 금지·500km 수명을 철회했습니다.",
-    thumbnail: "/images/blog/saucony-kinvara-16-review.webp",
+    thumbnail: "/images/shoes/saucony/kinvara16/side.webp",
     author: "산초 에디터",
     publishedAt: "2026-09-11",
     category: "review",
@@ -2290,7 +2290,7 @@ export const posts_2026_09: BlogPost[] = [
         "answer": "현재 원문은27.5HA로 표시합니다. AC는 미확인이고 다른 신발 AC와 환산·직접 비교하지 않습니다."
       }
     ],
-    updatedAt: "2026-11-09",
+    updatedAt: "2026-11-11",
   },
   {
     id: "saucony-peregrine-16-review",
@@ -2365,10 +2365,10 @@ export const posts_2026_09: BlogPost[] = [
     slug: "mizuno-hyperwarp-elite-review",
     title: "하이퍼워프 엘리트 리뷰 — 한국170g 공시와 로커·앞코, 직접 비교할 지점",
     description: "한국270mm 한쪽170g·38/34.5mm 공시를 DOR164g과 나눠 표시합니다.2E 현재 상품·사이즈와 리뷰어별 전환 차이를 정리하고 Sub3 처방·300km 수명은 철회했습니다.",
-    thumbnail: "/images/blog/mizuno-hyperwarp-elite-review.webp",
+    thumbnail: "/images/shoes/mizuno/hyperwarpelit/side.webp",
     author: "산초 에디터",
     publishedAt: "2026-09-11",
-    updatedAt: "2026-11-09",
+    updatedAt: "2026-11-11",
     category: "review",
     readingTime: 7,
     tags: [
@@ -2404,10 +2404,10 @@ export const posts_2026_09: BlogPost[] = [
     slug: "mizuno-hyperwarp-pro-review",
     title: "하이퍼워프 프로 리뷰 — 카본 혼합 나일론과 플레어, 편안함이 갈린 이유",
     description: "270mm 한쪽200g 제조사 공시와 DOR201g을 나눠 표시합니다. 한국2E 현재 상품·사이즈와 리뷰어별 반대 체감을 정리하고 발목 불안정 추천·400km 수명을 철회했습니다.",
-    thumbnail: "/images/blog/mizuno-hyperwarp-pro-review.webp",
+    thumbnail: "/images/shoes/mizuno/hyperwarppro/side.webp",
     author: "산초 에디터",
     publishedAt: "2026-09-11",
-    updatedAt: "2026-11-09",
+    updatedAt: "2026-11-11",
     category: "review",
     readingTime: 7,
     tags: [
@@ -2443,10 +2443,10 @@ export const posts_2026_09: BlogPost[] = [
     slug: "mizuno-hyperwarp-pure-review",
     title: "하이퍼워프 퓨어 리뷰 — 한국137g·3mm 공시,139g과 다른 조건입니다",
     description: "한국270mm 한쪽137g·34.5/31.5mm·3mm와 DOR139g·3.5mm를 구분합니다. 현재2E 상품·사이즈, 앞코와 로커를 비교하고200km 수명·10km 상한·질환 등급을 철회했습니다.",
-    thumbnail: "/images/blog/mizuno-hyperwarp-pure-review.webp",
+    thumbnail: "/images/shoes/mizuno/hyperwarppure/side.webp",
     author: "산초 에디터",
     publishedAt: "2026-09-11",
-    updatedAt: "2026-11-09",
+    updatedAt: "2026-11-11",
     category: "review",
     readingTime: 7,
     tags: [
@@ -2585,7 +2585,7 @@ export const posts_2026_09: BlogPost[] = [
     slug: "brooks-ghost-18-review",
     title: "브룩스 고스트 18 리뷰 — 12.2mm 실측 드롭과 낮은 앞코, 시착할 지점",
     description: "289g·DNA Loft v3의 실측과 DOR David의 착화 경험을 구분합니다. 한국 현재 가격·와이드는 접속 실패로 미확인이고, 800km 수명·질환별 예방 등급은 철회했습니다.",
-    thumbnail: "/images/blog/brooks-ghost-18-review.webp",
+    thumbnail: "/images/shoes/brooks/ghost18/side.webp",
     author: "산초 에디터",
     publishedAt: "2026-09-11",
     category: "review",
@@ -2618,7 +2618,7 @@ export const posts_2026_09: BlogPost[] = [
         "answer": "세대 이름만으로 교체할 이유를 정하지 마세요. 실제 규격의 앞코·발등·힐 고정이 해결하려는 문제에 맞는지 확인할 수 있습니다."
       }
     ],
-    updatedAt: "2026-11-09",
+    updatedAt: "2026-11-11",
   },
   {
     id: "saucony-paramount-max-review",
@@ -3165,7 +3165,7 @@ export const posts_2026_09: BlogPost[] = [
     slug: "asics-magic-speed-5-vs-superblast-3-carbon-vs-plateless-2026",
     title: "매직스피드 5 vs 슈퍼블라스트 3 — 카본 유무보다 먼저 볼 앞코·높이·전환",
     description: "201/235g 실측과 앞코 높이·폼 구조를 비교합니다. 한국 확인 상품 가격·와이드 미확인, 출처별 플레이트 설명을 구분하고 아킬레스 등급·400/550km 수명표를 철회했습니다.",
-    thumbnail: "/images/blog/asics-magic-speed-5-vs-superblast-3-carbon-vs-plateless-2026.webp",
+    thumbnail: "/images/shoes/asics/superblast3/side.webp",
     author: "산초 에디터",
     publishedAt: "2026-09-03",
     category: "review",
@@ -3198,7 +3198,7 @@ export const posts_2026_09: BlogPost[] = [
 <h2>한국에서 확인한 상품 범위</h2><p>매직스피드5의 한국 기본1013A183.101·2E1013A184.400은209,000원입니다. 확인 기본은240/245/250/260~290mm, 2E는230~290mm가 선택 가능했습니다. 기본의 문자 폭은 미확인이고 RR 검체가 한국2E라고 확인된 것도 아닙니다.</p><p><a href="https://m.asics.co.kr/p/AKR_112630203-101" target="_blank" rel="noopener noreferrer">슈퍼블라스트3 남녀공용1013A177.101</a>은259,000원이며 로그인 전에는 사용 가능한 사이즈·폭·재고가 노출되지 않았습니다. 와이드가 절대 없다고 확정하지 않습니다. 확인 상품 표시가격 차이50,000원은 수명이나 개인 성능 차액이 아닙니다. 실제 구매할 색상·규격과 교환 조건을 비교하세요.</p>
 <h2>한 켤레를 고를 때 남길 질문</h2><ul><li>지금 신발에서 앞코 위 압박이 문제인가, 힐 고정이나 전환이 문제인가?</li><li>주로 사용할 주행에서 낮은 쪽과 높은 쪽의 굴림 중 어느 쪽이 자연스러운가?</li><li>구매하려는 실제 규격을 시착하고 판매 조건을 확인할 수 있는가?</li></ul><p>‘매직스피드는 대회에만 아껴 쓰고 슈퍼블라스트는 모든 훈련’이라는 공통 배정,400/550km 수명·km당 비용·고정 페이스 구간은 제거했습니다. 두 켤레를 추가해야 한다는 구매 결론도 내리지 않습니다.</p><p>평소 신는 양말과 인솔을 준비해 엄지 위 높이, 앞쪽 길이, 중족부 압박, 뒤꿈치 들림을 따로 확인하세요. 끈을 조여 압박을 견뎌야만 고정되는지도 확인할 항목입니다. 직접 착화한 상품의 교환·반품 조건을 먼저 읽으세요. 통증·저림이 생기면 적응 과정이라고 참고 계속 달리기보다 사용을 멈추고 필요한 평가를 받으세요.</p><h2>확인한 원문과 남은 한계</h2><ul><li><a href="https://runrepeat.com/asics-magic-speed-5" target="_blank" rel="noopener noreferrer">RunRepeat 검체 실측</a></li><li><a href="https://www.doctorsofrunning.com/asics-superblast-3-review-2026/" target="_blank" rel="noopener noreferrer">Doctors of Running 리뷰어별 착화 기록</a></li></ul><p>시험 한 켤레와 소수 리뷰어의 경험으로 개인별 최적 페이스, 보편적인 교체 거리, 부상 예방 순위를 정할 수 없습니다. 한국에서 확인되지 않은 상품 조건은 해외 가격 환산이나 이전 세대 수치로 채우지 않았습니다.</p><p><a href="https://runrepeat.com/asics-superblast-3" target="_blank" rel="noopener noreferrer">슈퍼블라스트3 실험실 원문</a> · <a href="https://assets.asics.com/system/media_libraries/25473/file.pdf" target="_blank" rel="noopener noreferrer">ASICS 슈퍼블라스트3 제조사 발표</a> · <a href="https://www.asics.com/sg/en-sg/magic-speed-5/p/1013A183-400.html" target="_blank" rel="noopener noreferrer">ASICS 매직스피드5 공식 구조</a></p>
 `,
-    updatedAt: "2026-11-09",
+    updatedAt: "2026-11-11",
   },
   {
     id: "heart-run",

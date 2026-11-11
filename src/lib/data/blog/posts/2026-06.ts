@@ -100,6 +100,7 @@ export const posts_2026_06: BlogPost[] = [
     title: "러닝 중 무릎 바깥쪽 통증 — IT밴드 증후군 상담과 복귀 준비",
     description: "장경인대 증후군이 의심될 때 기록할 통증·훈련 조건과 진료 신호를 정리합니다. 둔근 약화·케이던스를 단일 원인으로 단정하지 않고 활동 조절과 상담 질문을 안내합니다.",
     thumbnail: "https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?auto=format&fit=crop&w=1600&q=80",
+    thumbnailSource: { name: "Bruno Nascimento / Unsplash", url: "https://unsplash.com/photos/person-wearing-orange-and-gray-nike-shoes-walking-on-gray-concrete-stairs-PHIgYUGQPvU", alt: "주황색·회색 러닝화를 신고 콘크리트 계단을 오르는 사람" },
     author: "산초 에디터",
     publishedAt: "2026-06-30",
     category: "guide",
@@ -132,7 +133,7 @@ export const posts_2026_06: BlogPost[] = [
 <h2>신발을 확인할 때 빠뜨리지 말 것</h2>
 <p>기존 신발과 양말·인솔을 가져가서 압박·마모·뒤꿈치 고정의 변화를 설명하세요. 시착에서는 편안함과 판매 성별·폭·사이즈를 확인할 수 있지만, 그 결과로 IT밴드 통증의 원인을 확진하거나 특정 안정화의 치료 효과를 정하지 않습니다. <a href="/blog/stability-shoes-self-diagnosis-fit-guide-2026">안정화 선택과 자가진단의 한계</a>를 함께 볼 수 있습니다.</p>
 <h2>원문과 확인 범위</h2><ul><li><a href="https://medlineplus.gov/ency/patientinstructions/000683.htm" target="_blank" rel="noopener noreferrer">MedlinePlus: IT band syndrome aftercare</a> — 증상·활동 조절·재활 상담</li><li><a href="https://www.nhs.uk/symptoms/knee-pain/" target="_blank" rel="noopener noreferrer">NHS: Knee pain</a> — 빠른 평가가 필요한 증상</li></ul><p><small>2026-11-09 원문 대조. 일반 정보와 상담 준비용 기록이며 개인의 진단·치료·달리기 복귀 허가를 대신하지 않습니다.</small></p>`,
-    updatedAt: "2026-11-09",
+    updatedAt: "2026-11-11",
     faqs: [
       {
         "question": "무릎 바깥쪽이 아프면 장경인대 증후군인가요?",
@@ -441,7 +442,7 @@ export const posts_2026_06: BlogPost[] = [
     slug: "new-balance-sc-elite-v5-review",
     title: "뉴발란스 SC 엘리트 v5 리뷰 — 앞발 여유와 낮은 볼륨을 함께 봐야 합니다",
     description: "198g 실측과 Energy Arc 구조, DOR 리뷰어별 착화 경험을 정리합니다. 한국 V5 현재 가격·와이드 상품은 확인되지 않아 V6 검색 결과와 구분했습니다.",
-    thumbnail: "/images/blog/new-balance-sc-elite-v5-review.webp",
+    thumbnail: "/images/shoes/newbalance/scelitev5/standard-side.webp",
     author: "산초 에디터",
     publishedAt: "2026-06-26",
     category: "review",
@@ -475,7 +476,7 @@ export const posts_2026_06: BlogPost[] = [
         "answer": "너비 수치만으로 보장할 수 없습니다. 앞코 높이·발등·힐 고정을 함께 확인하세요."
       }
     ],
-    updatedAt: "2026-11-09",
+    updatedAt: "2026-11-11",
   },
   {
     id: "hoka-bondi-9-review",
@@ -837,6 +838,7 @@ export const posts_2026_06: BlogPost[] = [
     title: "러닝 중 정강이 통증 — 신 스플린트와 진료 전 확인할 것",
     description: "정강이 통증을 신 스플린트로 단정하지 않고 통증 위치·활동 반응·훈련 변화를 기록하는 방법을 안내합니다. 피로골절 감별과 신발 쿠션 수치의 해석 범위도 확인하세요.",
     thumbnail: "https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?auto=format&fit=crop&w=1600&q=80",
+    thumbnailSource: { name: "Bruno Nascimento / Unsplash", url: "https://unsplash.com/photos/person-wearing-orange-and-gray-nike-shoes-walking-on-gray-concrete-stairs-PHIgYUGQPvU", alt: "주황색·회색 러닝화를 신고 콘크리트 계단을 오르는 사람" },
     author: "산초 에디터",
     publishedAt: "2026-06-23",
     category: "guide",
@@ -869,7 +871,7 @@ export const posts_2026_06: BlogPost[] = [
 <p>AAOS는 증상이 가라앉은 뒤 이전보다 낮은 빈도·시간·강도로 돌아가고 천천히 늘리도록 안내합니다. 정강이 통증의 원인과 회복 상태를 먼저 확인한 뒤, 어떤 활동을 허용하고 어떤 변화가 생기면 중단할지 상담하세요. 특정 주간 증가율이 모든 러너의 부상 방지를 보장하지는 않습니다.</p>
 <p>한 점에 집중되는 통증이 걱정된다면 <a href="/blog/stress-fracture-running-shoes-2026">피로골절 의심 시 상담 준비</a>도 확인하세요.</p>
 <h2>원문과 확인 범위</h2><ul><li><a href="https://www.orthoinfo.org/diseases--conditions/shin-splints/" target="_blank" rel="noopener noreferrer">AAOS: Shin Splints</a> — 증상·감별·운동 조절</li><li><a href="https://www.orthoinfo.org/diseases--conditions/sports-injuries/stress-fractures/" target="_blank" rel="noopener noreferrer">AAOS: Stress Fractures</a> — 골 스트레스 손상의 증상과 진료</li><li><a href="https://www.cochrane.org/evidence/CD013368_running-shoes-preventing-lower-limb-running-injuries-adults" target="_blank" rel="noopener noreferrer">Cochrane 2022</a> — 신발 유형과 부상 예방. 특정 질환 치료·개별 모델 시험 아님</li></ul><p><small>2026-11-09 원문 대조. 일반 정보와 상담 준비용 기록이며 개인의 진단·치료·달리기 복귀 허가를 대신하지 않습니다.</small></p>`,
-    updatedAt: "2026-11-09",
+    updatedAt: "2026-11-11",
     faqs: [
       {
         "question": "정강이 통증에는 드롭 8mm 이상이 필요한가요?",
@@ -887,6 +889,7 @@ export const posts_2026_06: BlogPost[] = [
     title: '러닝 후 뒤꿈치·아치 통증 — 족저근막염 증상 기록과 착화 기준',
     description: '아침 첫발 통증의 패턴, 진료가 필요한 상황과 신발·인솔의 확인 항목을 정리합니다. 족저근막염 제품 순위와 드롭8mm 일괄 처방을 제거하고2023년 진료지침의 범위를 밝힙니다.',
     thumbnail: 'https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?auto=format&fit=crop&w=1600&q=80',
+    thumbnailSource: { name: "Bruno Nascimento / Unsplash", url: "https://unsplash.com/photos/person-wearing-orange-and-gray-nike-shoes-walking-on-gray-concrete-stairs-PHIgYUGQPvU", alt: "주황색·회색 러닝화를 신고 콘크리트 계단을 오르는 사람" },
     author: '산초 에디터',
     publishedAt: '2026-06-22',
     category: 'guide',
@@ -946,7 +949,7 @@ export const posts_2026_06: BlogPost[] = [
         answer: '흔히 안내되는 증상 패턴이지만 그것만으로 확진하지 않습니다. 증상 위치·생활 영향·감각 변화 등을 기록해 평가받으세요.',
       },
     ],
-    updatedAt: '2026-11-09',
+    updatedAt: '2026-11-11',
   },
   {
     id: "ytn-seoul-tour-marathon-2026",
@@ -1514,6 +1517,7 @@ export const posts_2026_06: BlogPost[] = [
     title: '안정화 러닝화 선택 — 자가진단의 한계·지지 구조·판매 폭',
     description: '밑창·통증·아치로 안정화 필요성을 판정하던 표를 제거했습니다. 확인한860 두 세대의 구조·한국 판매 조건과 시착 질문을 구분해 안정화 선택을 준비합니다.',
     thumbnail: 'https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?auto=format&fit=crop&w=1600&q=80',
+    thumbnailSource: { name: "Bruno Nascimento / Unsplash", url: "https://unsplash.com/photos/person-wearing-orange-and-gray-nike-shoes-walking-on-gray-concrete-stairs-PHIgYUGQPvU", alt: "주황색·회색 러닝화를 신고 콘크리트 계단을 오르는 사람" },
     author: '산초 에디터',
     publishedAt: '2026-06-13',
     category: 'guide',
@@ -1584,7 +1588,7 @@ export const posts_2026_06: BlogPost[] = [
 </ul>
 <p><small>2026-11-09 원문 재확인. 이 글은 증상 기록·상담·착화 준비를 위한 정보이며 개인 진단이나 복귀 처방을 제공하지 않습니다.</small></p>
 `,
-    updatedAt: '2026-11-09',
+    updatedAt: '2026-11-11',
   },
   {
     id: "world-marathon-majors-guide-2026",
@@ -2524,6 +2528,7 @@ export const posts_2026_06: BlogPost[] = [
     title: '러너의 아킬레스 통증 — 중간부 지침과 드롭·운동의 적용 범위',
     description: '아킬레스 중간부 건병증2024 지침을 바탕으로 증상 기록, 부하 운동·활동과 힐리프트의 범위를 구분합니다. 제품별 치료 순위와 드롭8~12mm·계단 운동 일괄 처방을 제거했습니다.',
     thumbnail: 'https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?auto=format&fit=crop&w=1600&q=80',
+    thumbnailSource: { name: "Bruno Nascimento / Unsplash", url: "https://unsplash.com/photos/person-wearing-orange-and-gray-nike-shoes-walking-on-gray-concrete-stairs-PHIgYUGQPvU", alt: "주황색·회색 러닝화를 신고 콘크리트 계단을 오르는 사람" },
     author: '산초 에디터',
     publishedAt: '2026-06-10',
     category: 'guide',
@@ -2584,7 +2589,7 @@ export const posts_2026_06: BlogPost[] = [
         answer: '중간부 건병증 지침은 평가에 맞춘 부하 운동·교육과 허용 범위의 활동을 다룹니다. 이 권고는 급성 손상이나 모든 뒤꿈치 통증에서 원래 훈련을 계속하라는 뜻이 아닙니다.',
       },
     ],
-    updatedAt: '2026-11-09',
+    updatedAt: '2026-11-11',
   },
   {
     id: 'adidas-adizero-evo-sl-value-supershoe-2026',
@@ -2651,6 +2656,7 @@ export const posts_2026_06: BlogPost[] = [
     title: '맥스쿠션 러닝화 선택 — 충격흡수·스택·핏·가격 확인법',
     description: '스택mm·충격흡수SA·경도와 실제 착화를 구분해 맥스쿠션을 고르는 기준을 정리합니다. 근거 없는 무릎 보호TOP과 검증되지 않은 수명에 따른 비용 순위를 제거했습니다.',
     thumbnail: 'https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?auto=format&fit=crop&w=1600&q=80',
+    thumbnailSource: { name: "Bruno Nascimento / Unsplash", url: "https://unsplash.com/photos/person-wearing-orange-and-gray-nike-shoes-walking-on-gray-concrete-stairs-PHIgYUGQPvU", alt: "주황색·회색 러닝화를 신고 콘크리트 계단을 오르는 사람" },
     author: '산초 에디터',
     publishedAt: '2026-06-10',
     category: 'guide',
@@ -2720,7 +2726,7 @@ export const posts_2026_06: BlogPost[] = [
         answer: '외부 플랫폼 폭과 신발 내부 공간은 다릅니다. 한국 판매 성별·사이즈·폭과 양발의 실제 압박을 확인하세요.',
       },
     ],
-    updatedAt: '2026-11-09',
+    updatedAt: '2026-11-11',
   },
   {
     id: "kayano-33-vs-glycerin-gts-22-vs-860-v15-2026",

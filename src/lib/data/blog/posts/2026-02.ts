@@ -43,6 +43,7 @@ export const posts_2026_02: BlogPost[] = [
     title: "내전·평발과 러닝화 선택 — 발 모양·움직임·통증을 구분하기",
     description: "젖은 발자국과 밑창 마모로 부상 원인·필요 러닝화를 확진하지 않습니다. 내전 용어의 의미, 평발에서 상담할 증상, 보행 분석과 시착 때 물어볼 질문을 정리합니다.",
     thumbnail: "https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?auto=format&fit=crop&w=1600&q=80",
+    thumbnailSource: { name: "Bruno Nascimento / Unsplash", url: "https://unsplash.com/photos/person-wearing-orange-and-gray-nike-shoes-walking-on-gray-concrete-stairs-PHIgYUGQPvU", alt: "주황색·회색 러닝화를 신고 콘크리트 계단을 오르는 사람" },
     content: `
 <div class="tldr"><span class="tldr-label">내전 유형을 보기 전에</span><ul><li>서 있을 때의 발 모양, 걷고 달릴 때의 움직임, 통증의 진단은 서로 다른 정보입니다.</li><li>평발이 모두 치료나 안정화 구매를 필요로 하는 것은 아닙니다. 새 통증·기능 변화는 따로 평가하세요.</li><li>발자국·밑창·영상 하나를 ‘이 부상은 이 신발’이라는 구매 공식으로 사용하지 않습니다.</li></ul></div>
 <h2>내전이라는 말은 무엇을 뜻하나요?</h2><p>Pronation은 걸을 때 발이 움직이며 체중을 옮기는 과정에서 쓰이는 용어입니다. 과내전은 발이 안쪽으로 평소보다 더 기우는 움직임을 설명합니다. Cleveland Clinic은 진찰과 보행 평가로 상태를 확인하며, 관련 증상이 언제나 과내전 때문에 생기는 것은 아니라고 설명합니다. 모든 사람에게15°를 이상적인 자가 측정값으로 제시하지 않습니다. <a href="https://my.clevelandclinic.org/health/diseases/22474-overpronation" target="_blank" rel="noopener noreferrer">Cleveland Clinic 원문</a></p>
@@ -65,7 +66,7 @@ export const posts_2026_02: BlogPost[] = [
     ],
     readingTime: 5,
     featured: true,
-    updatedAt: "2026-11-09",
+    updatedAt: "2026-11-11",
     faqs: [
       {
         "question": "젖은 발자국으로 안정화가 필요한지 알 수 있나요?",

@@ -821,9 +821,9 @@ export const posts_2026_05: BlogPost[] = [
     slug: 'new-balance-860-v14-vs-v15-comparison',
     title: '뉴발란스 860 v14 vs v15 — 37g 증가와 국내 폭 옵션, 원문으로 다시 비교',
     description: '860v14·v15의 구조와 실측, 한국 판매 폭을2026-11-09 원문으로 재확인. v14 메디얼 포스트 설명을 바로잡고, 미확인 남성 가격·수명·미래 할인 전망을 걷어냈습니다.',
-    thumbnail: '/images/blog/new-balance-860-v14-vs-v15-comparison.webp',
+    thumbnail: '/images/shoes/newbalance/860v15/angle.webp',
     author: '산초 에디터',
-    updatedAt: '2026-11-09',
+    updatedAt: '2026-11-11',
     publishedAt: '2026-05-25',
     category: 'review' as const,
     readingTime: 8,
@@ -1015,7 +1015,7 @@ export const posts_2026_05: BlogPost[] = [
     slug: "nike-vaporfly-4-vs-alphafly-3-comparison",
     title: "베이퍼플라이 4 vs 알파플라이 3 — 기록표 대신 무게·앞코·전환을 비교",
     description: "같은 실험실의 무게·스택·에너지 리턴과 리뷰어별 착화를 비교합니다. 기록별 추천표와 임의 수명을 제거하고 나이키 한국 상품별 가격 확인 범위를 표시했습니다.",
-    thumbnail: "/images/blog/nike-vaporfly-4-vs-alphafly-3-comparison.webp",
+    thumbnail: "/images/shoes/nike/vaporfly4/side.webp",
     author: "산초 에디터",
     publishedAt: "2026-05-17",
     category: "review",
@@ -1049,7 +1049,7 @@ export const posts_2026_05: BlogPost[] = [
         "answer": "베이퍼플라이 확인 SKU는 남성 319,000원·여성 309,000원이며 알파플라이 3의 현행 한국 가격은 미확인이라 공통 차액을 계산하지 않습니다."
       }
     ],
-    updatedAt: "2026-11-09",
+    updatedAt: "2026-11-11",
   },
   {
     id: "new-balance-1080-v14-vs-v15-comparison",

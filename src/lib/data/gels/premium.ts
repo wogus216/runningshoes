@@ -252,7 +252,7 @@ export const premiumGels: Gel[] = [
       }
     ],
     features: [
-      "76g 제품군의 공통 용량·열량·탄수화물 기준입니다. 모든 맛을 같은 카페인·나트륨으로 표시하지 않습니다.",
+      "사진 속 레몬 76g의 공식 영양표가 200kcal·탄수화물 50g입니다. 솔티드 스페쿨루스는 201kcal로 표시돼 열량을 모든 맛의 공통값으로 읽지 마세요.",
       "공식 레몬 76g 페이지에는 소금 0.1g이 표기됩니다. 소금 g을 나트륨 mg으로 그대로 복사하지 않습니다."
     ],
     reviews: [],
@@ -262,10 +262,10 @@ export const premiumGels: Gel[] = [
       "gu-roctane-energy-gel"
     ],
     verification: {
-      "checkedAt": "2026-11-10",
+      "checkedAt": "2026-11-11",
       "scope": "성분 표시의 기존 부분 재확인과 사진 변형 대조. 사진 출처가 미확인인 항목·현재 국내 포장·선택 옵션·판매 상태와 제품 전체 효과의 검증 완료 표지가 아닙니다.",
       "notes": [
-        "76g 제품군의 공통 용량·열량·탄수화물 기준입니다. 모든 맛을 같은 카페인·나트륨으로 표시하지 않습니다.",
+        "사진 속 레몬 76g의 공식 영양표가 200kcal·탄수화물 50g입니다. 솔티드 스페쿨루스는 201kcal로 표시돼 열량을 모든 맛의 공통값으로 읽지 마세요.",
         "공식 레몬 76g 페이지에는 소금 0.1g이 표기됩니다. 소금 g을 나트륨 mg으로 그대로 복사하지 않습니다.",
         "공식 사용 안내는 물과 함께 섭취하도록 합니다. 1:1 복합·단순 탄수화물 표현을 포도당:과당 비율로 사용하지 않습니다.",
         "2026-11-11 사진 대조: 공식 HIGH ENERGY GEL 76g 레몬 포장 예시. 카페인·SALTY 변형은 성분이 다릅니다."
@@ -273,12 +273,12 @@ export const premiumGels: Gel[] = [
       "sources": [
         {
           "title": "226ERS HIGH ENERGY 공식 제품",
-          "url": "https://www.226ers.com/en/products/high-energy-gel-76g-62291",
-          "scope": "76g 공통50g·레몬표200kcal·변형별 차이·물 안내"
+          "url": "https://www.226ers.com/en/products/high-energy-gel-76g-62291?variant=51248826614106",
+          "scope": "레몬 76g·200kcal·탄수화물50g·소금0.1g, 변형별 차이·물 안내"
         },
         {
           "title": "제조사 공식 이미지",
-          "url": "https://www.226ers.com/en/products/high-energy-gel-76g-62291",
+          "url": "https://www.226ers.com/en/products/high-energy-gel-76g-62291?variant=51248826614106",
           "scope": "사진 속 제품 변형 대조. 현재 모든 맛·국내 포장·재고 인증 아님"
         }
       ]
@@ -286,7 +286,7 @@ export const premiumGels: Gel[] = [
     imageCaption: "공식 HIGH ENERGY GEL 76g 레몬 포장 예시. 카페인·SALTY 변형은 성분이 다릅니다.",
     imageSource: {
       "title": "제조사 공식 이미지",
-      "url": "https://www.226ers.com/en/products/high-energy-gel-76g-62291"
+      "url": "https://www.226ers.com/en/products/high-energy-gel-76g-62291?variant=51248826614106"
     },
   },
 ];

@@ -95,6 +95,7 @@ export interface BlogPost {
   readingTime: number;
   featured?: boolean;
   thumbnail?: string;
+  thumbnailSource?: { name: string; url: string; alt: string };
   faqs?: BlogFaq[];
   event?: BlogEvent;
   raceMeta?: RaceMeta;
