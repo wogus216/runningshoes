@@ -4039,11 +4039,11 @@ export const posts_2026_06: BlogPost[] = [
     id: "joyce-hubner-367-consecutive-marathons-world-record",
     slug: "joyce-hubner-367-consecutive-marathons-world-record",
     title: "조이스 휘브너의 459일 연속 마라톤 — 프로젝트 발표와 공식 기록 인증 구분",
-    description: "휘브너 프로젝트의 부상 중단·재개 계획을 직접 발표와 인터뷰로 대조했습니다. 367일·459일 도전과 기네스 공식 페이지의 366일 기록, 향후 495회 완주 목표를 구분합니다.",
+    description: "휘브너는 부상 중단 뒤 다시 달려 11월 10일 469번째 마라톤을 마쳤다고 발표했습니다. 본인 진행 보고와 기네스 공식 인증, 495회 완주 목표를 구분합니다.",
     thumbnail: "/images/blog/verified-joyce-hubner-367-consecutive-marathons-world-record-20261110.webp",
     author: "산초 에디터",
     publishedAt: "2026-06-04",
-    updatedAt: "2026-11-10",
+    updatedAt: "2026-11-11",
     category: "news",
     readingTime: 6,
     tags: [
@@ -4057,7 +4057,7 @@ export const posts_2026_06: BlogPost[] = [
       "러너 스토리"
     ],
     content: `
-<p><strong>2026년 11월 10일 원문 대조.</strong> 확인된 발표·현재 상태·아직 확인되지 않은 내용을 구분했습니다.</p>
+<p><strong>2026년 11월 11일 원문 대조.</strong> 확인된 발표·현재 상태·아직 확인되지 않은 내용을 구분했습니다.</p>
 
 <h2>프로젝트가 직접 공개한 현재 설명</h2>
 <p><a href="https://joyce-huebner.com/staedtetrip" target="_blank" rel="noopener noreferrer">휘브너의 공식 프로젝트 페이지</a>는 2026년 10월 22일 갱신 기준으로, 2025년 6월 1일 헬름슈테트에서 시작해 459일 연속 마라톤을 달린 뒤 2026년 9월 2일부터 부상으로 쉬었다고 설명합니다. 기존 글이 처음 주목했던 367일보다 도전은 더 진행됐지만, 495일을 중단 없이 마쳤다고 쓰면 안 됩니다.</p>
@@ -4065,14 +4065,14 @@ export const posts_2026_06: BlogPost[] = [
 <h2>367일·459일과 ‘공식 세계기록’은 다른 확인</h2>
 <p>프로젝트는 367일째에 기존 기록을 넘었다고 주장하고 459일 연속 달리기를 발표합니다. 반면 이번에 확인한 <a href="https://www.guinnessworldrecords.com/world-records/446733-most-consecutive-days-to-run-a-marathon-distance-female" target="_blank" rel="noopener noreferrer">Guinness World Records 여성 연속 마라톤 거리 기록 페이지</a>는 힐더 도소너의 366일, 2024년 1월 1일~12월 31일 기록을 게재하고 있습니다.</p>
 <p>이 차이는 프로젝트의 도전 발표와 기록 기관의 해당 카테고리 페이지를 나눠 설명해야 한다는 뜻입니다. 휘브너의 인증 완료 여부를 입증하는 공식 등록을 이번에 확인하지 못했습니다. 따라서 ‘기네스 공식 인증 보유자’로 단정하지 않습니다. 도전 자체가 없었다고 판정하거나 별도의 트레드밀·야외 혼합 카테고리 기록으로 대체하지도 않습니다.</p>
-<h2>11월 재개는 확인한 발표와 실제 진행을 구분</h2>
-<p>공식 페이지와 <a href="https://www.sportschau.de/regional/rbb/rbb-extremlaeuferin-huebner-das-sollte-man-keinesfalls-nachmachen-100.html" target="_blank" rel="noopener noreferrer">10월 23일 본인 인터뷰</a>는 11월 1일 재출발, 남은 36회와 12월 6일 베를린 피날레를 계획으로 설명합니다. 확인 시점은 이미 11월이지만, 달력 날짜만 더해 실제 몇 회를 새로 마쳤다고 계산하지 않았습니다. 일별 완료 로그와 최종 행사 운영을 별도로 확인해야 합니다.</p>
+<h2>11월에 다시 달렸다 — 469회는 본인의 진행 보고</h2>
+<p>공식 페이지와 <a href="https://www.sportschau.de/regional/rbb/rbb-extremlaeuferin-huebner-das-sollte-man-keinesfalls-nachmachen-100.html" target="_blank" rel="noopener noreferrer">10월 23일 본인 인터뷰</a>는 11월 재출발, 남은 36회와 12월 6일 베를린 피날레를 계획으로 설명했습니다. 이후 <a href="https://www.instagram.com/p/DfkLJV6iKkZ/" target="_blank" rel="noopener noreferrer">본인의 11월 10일 인스타 게시물</a>은 Seelow에서 Kersdorf까지 달려 <strong>469번째 마라톤을 마쳤다</strong>고 적습니다. 중단 당시 발표한 459회보다 10회 많고, 495회 목표까지는 26회가 남습니다. 이는 본인의 일별 진행 보고이며 독립적인 거리 검증이나 기네스 인증을 뜻하지 않습니다.</p>
 <p>중간에 중단했으므로 향후 총 495회를 마치더라도 ‘495일 연속 완주’와는 다릅니다. 공식 페이지에는 동반 러닝일과 피날레 계획이 있지만 출발 전 실제 참가 조건·장소 확정을 다시 확인해야 합니다. 프로젝트 참가 신청이나 개인 기록 조회는 이번 검증에 포함하지 않았습니다.</p>
 <h2>본인이 전한 부상 경험을 훈련 처방으로 바꾸지 않기</h2>
 <p>인터뷰에서 휘브너는 골막염 때문에 쉬었다고 설명하며, 아픈 신호를 무시하고 달린 행동을 따라 하지 말라고 말합니다. 이는 본인의 경험 설명이며 독립적인 진료 기록을 확인한 의학적 진단은 아닙니다. 특정 노면이나 페이스가 부상의 단일 원인이라고 확정하지 않았습니다.</p>
 <p>이 사례로 일반 러너의 회복 기간·매일 달릴 수 있는 거리·안전한 페이스를 계산할 수 없습니다. 기존 글의 생리 수치와 특정 회복 일수는 근거를 재확정하지 못해 제외했습니다. 일상 훈련에 적용할 만한 편집 제안은 연속 출석 숫자보다 통증·중단 이유·회복 상태를 함께 기록하는 것입니다. 아픈 상태에서 기록을 유지하는 것을 도전의 필수 덕목으로 소개하지 않습니다.</p>
 <h2>자주 묻는 질문</h2>
-<h3>휘브너가 495일 연속 마라톤을 마쳤나요?</h3><p>공식 프로젝트는 459일 연속 이후 부상으로 중단하고 남은 36회를 다시 달리는 계획을 설명합니다. 향후 총 495회를 마치더라도 중단 없는 495일과는 구분해야 합니다.</p>
+<h3>휘브너가 495일 연속 마라톤을 마쳤나요?</h3><p>아닙니다. 459일 연속 이후 부상으로 중단했고, 본인은 2026년 11월 10일 469번째 마라톤을 마쳤다고 보고했습니다. 총 495회를 채우더라도 중단 없는 495일과는 구분해야 합니다.</p>
 <h3>459일이 기네스에 공식 인증됐나요?</h3><p>이번에 읽은 해당 기네스 카테고리 페이지는 힐더 도소너의 366일 기록을 게재합니다. 휘브너의 프로젝트 발표와 공식 인증 완료를 같은 사실로 단정하지 않습니다.</p>
 `,
     faqs: [
