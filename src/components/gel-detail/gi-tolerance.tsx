@@ -109,8 +109,16 @@ export function GITolerance({ gel }: GIToleranceProps) {
             <h3 className="text-sm font-bold text-sky-700">훈련 중 반응 확인</h3>
           </div>
           <p className="text-sm text-secondary">
-            레이스 전 훈련 중 반복 섭취로 적응이 필요합니다. 처음 사용 시 소량부터 시작하세요.
+            대회에서 사용할 제품·섭취량·음료 조합을 훈련 중 먼저 확인하고, 개인의 위장 반응에 맞춰 계획을 조정하세요.
           </p>
+          <a
+            href="https://www.ausport.gov.au/ais/nutrition/supplements/group_a/sports-foods2/sports-gels"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-2 inline-block text-xs text-sky-700 underline underline-offset-2"
+          >
+            AIS 젤 섭취 안내
+          </a>
         </div>
       )}
 
