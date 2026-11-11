@@ -1447,7 +1447,7 @@ export const posts_2026_07: BlogPost[] = [
 <p>상담에서는 ‘이 장비의 목적’, ‘실제 신발과 함께 사용할 방법’, ‘착용 중 압박이나 증상 변화가 생겼을 때 조정 방법’, ‘다음 평가 시점’을 확인하세요. 모든 러너에게 계단 편심성 운동이나 까치발 50회를 복귀 조건으로 처방하지 않습니다.</p>
 <h2>안정화 신발을 구매하기 전에</h2>
 <p>일반 러닝화의 지지 구조, 실제 신발 안의 공간, 의료진이 정한 인솔·보조기 계획을 각각 확인하세요. 아치가 강하게 받쳐지는 느낌을 치료 효과로 해석하지 않습니다. 신발을 새로 고른다면 기존 장비와 양말을 가져가 피팅하고, 정확한 판매 폭·사이즈와 교환 조건을 확인하세요. <a href="/blog/stability-shoes-self-diagnosis-fit-guide-2026">안정화 선택의 확인 질문</a>도 참고할 수 있습니다.</p>
-<h2>원문과 확인 범위</h2><ul><li><a href="https://www.orthoinfo.org/bodypart/foot-ankle/posterior-tibial-tendon-dysfunction/" target="_blank" rel="noopener noreferrer">AAOS: Progressive Collapsing Foot Deformity</a> — 복합 원인·진찰·비수술 및 수술 치료의 적용 범위</li><li><a href="https://www.nhs.uk/conditions/sprains-and-strains/" target="_blank" rel="noopener noreferrer">NHS: Sprains and strains</a> — 급성 손상 후 신속·응급 평가 신호</li></ul><p><small>2026-11-09 원문 대조. 일반 정보와 상담 준비용 기록이며 개인의 진단·치료·달리기 복귀 허가를 대신하지 않습니다.</small></p>`,
+<h2>원문과 확인 범위</h2><ul><li><a href="https://www.orthoinfo.org/bodypart/foot-ankle/posterior-tibial-tendon-dysfunction/" target="_blank" rel="noopener noreferrer">AAOS: Progressive Collapsing Foot Deformity</a> — 복합 원인·진찰·비수술 및 수술 치료의 적용 범위</li><li><a href="https://www.nhs.uk/conditions/sprains-and-strains/" target="_blank" rel="noopener noreferrer">NHS: Sprains and strains</a> — 급성 손상 후 신속·응급 평가 신호</li></ul><p><small>2026-11-11 원문 대조. 일반 정보와 상담 준비용 기록이며 개인의 진단·치료·달리기 복귀 허가를 대신하지 않습니다.</small></p>`,
     faqs: [
       {
         "question": "평발이면 후경골건 기능부전인가요?",
@@ -1566,7 +1566,7 @@ export const posts_2026_07: BlogPost[] = [
 <p>진료·재활 상담 후에는 허용받은 노면·활동·시간, 중단하거나 연락할 증상, 보조기 사용 조건, 다음 평가 날짜를 한 장에 적어두면 좋습니다. 로드 복귀와 울퉁불퉁한 트레일·방향 전환 훈련을 한 단계로 묶지 말고, 목표 활동을 구체적으로 설명하세요.</p>
 <h2>새 신발은 무엇을 확인하나요?</h2>
 <p>실제 사용하는 노면에서의 밑창 상태·접지, 양말·인솔·처방받은 장비를 포함한 압박과 고정을 확인할 항목으로 적어두세요. 안정화 표기·칼라 높이·넓은 밑창 하나를 재발 방지 보증으로 바꾸지 않습니다. 남은 불안정이나 반복 접질림은 신발 구매와 별도로 평가받으세요.</p>
-<h2>원문과 확인 범위</h2><ul><li><a href="https://www.nhs.uk/conditions/sprains-and-strains/" target="_blank" rel="noopener noreferrer">NHS: Sprains and strains</a> — 급성 손상 후 진료 신호와 보호</li><li><a href="https://www.orthoinfo.org/bodypart/foot-ankle/sprained-ankle/" target="_blank" rel="noopener noreferrer">AAOS: Sprained Ankle</a> — 중증도에 따른 보호·재활·반복 불안정</li><li><a href="https://bjsm.bmj.com/content/early/2021/06/22/bjsports-2021-104087" target="_blank" rel="noopener noreferrer">BJSM 2021: PAASS</a> — 급성 외측 염좌 후 복귀 평가 영역의 전문가 합의. 단일 합격선 아님</li></ul><p><small>2026-11-09 원문 대조. 일반 정보와 상담 준비용 기록이며 개인의 진단·치료·달리기 복귀 허가를 대신하지 않습니다.</small></p>`,
+<h2>원문과 확인 범위</h2><ul><li><a href="https://www.nhs.uk/conditions/sprains-and-strains/" target="_blank" rel="noopener noreferrer">NHS: Sprains and strains</a> — 급성 손상 후 진료 신호와 보호</li><li><a href="https://www.orthoinfo.org/bodypart/foot-ankle/sprained-ankle/" target="_blank" rel="noopener noreferrer">AAOS: Sprained Ankle</a> — 중증도에 따른 보호·재활·반복 불안정</li><li><a href="https://bjsm.bmj.com/content/early/2021/06/22/bjsports-2021-104087" target="_blank" rel="noopener noreferrer">BJSM 2021: PAASS</a> · <a href="https://pubmed.ncbi.nlm.nih.gov/34158354/" target="_blank" rel="noopener noreferrer">PubMed 초록</a> — 급성 외측 염좌 후 복귀 평가 영역의 전문가 합의. 단일 합격선 아님</li></ul><p><small>2026-11-11 원문 대조. BJSM 본문 직접 접속은 제한되어 출판사 검색 색인과 PubMed 초록으로 세부 영역을 대조했습니다. 일반 정보와 상담 준비용 기록이며 개인의 진단·치료·달리기 복귀 허가를 대신하지 않습니다.</small></p>`,
     faqs: [
       {
         "question": "통증이 없으면 바로 달려도 되나요?",
