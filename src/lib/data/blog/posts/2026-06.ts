@@ -929,11 +929,11 @@ export const posts_2026_06: BlogPost[] = [
 <p>기존 글의 제품별 족저근막염 추천표, 보편적인500~700km 교체 기준,10% 훈련 증가 처방은 제거했습니다. 신발 교체만으로 예방·치료 결과를 보장하지 않습니다. <a href="/best/plantar-fasciitis">족저근막 통증과 신발 선택의 근거 안내</a>도 함께 볼 수 있습니다.</p>
 <h2>확인한 원문과 적용 범위</h2>
 <ul>
-<li><a href="https://www.orthopt.org/uploads/content_files/files/koc_et_al_2023_heel_pain_plantar_fasciitis_revision_2023.pdf" target="_blank" rel="noopener noreferrer">JOSPT 족저근막염 진료지침2023</a> — CPG2 권고 요약·CPG7 진단/위험요인. 스트레칭·저항운동·인솔의 적용 범위를 구분했습니다.</li>
+<li><a href="https://www.orthopt.org/uploads/content_files/files/koc_et_al_2023_heel_pain_plantar_fasciitis_revision_2023%281%29.pdf" target="_blank" rel="noopener noreferrer">JOSPT 족저근막염 진료지침2023 PDF</a> (<a href="https://www.ptmovesme.org/patient-care/evidence-based-practice-resources/cpgs/heel-pain-plantar-fasciitis" target="_blank" rel="noopener noreferrer">APTA 발행 안내</a>) — CPG2 권고 요약·CPG7 진단/위험요인. 스트레칭·저항운동·인솔의 적용 범위를 구분했습니다.</li>
 <li><a href="https://www.nhs.uk/conditions/plantar-fasciitis/" target="_blank" rel="noopener noreferrer">NHS 족저근막염</a> — 증상·자기관리·진료가 필요한 상황.2025년2월 검토 자료.</li>
 <li><a href="https://www.cochrane.org/evidence/CD013368_running-shoes-preventing-lower-limb-running-injuries-adults" target="_blank" rel="noopener noreferrer">Cochrane 2022: 러닝화와 하지 부상 예방</a> — 연구 검색2021년6월, 성인 러너·군인 대상. 제품별 치료 효과를 시험한 자료가 아닙니다.</li>
 </ul>
-<p><small>2026-11-09 원문 재확인. 이 글은 증상 기록·상담·착화 준비를 위한 정보이며 개인 진단이나 복귀 처방을 제공하지 않습니다.</small></p>
+<p><small>2026-11-11 원문 재확인. 이 글은 증상 기록·상담·착화 준비를 위한 정보이며 개인 진단이나 복귀 처방을 제공하지 않습니다.</small></p>
 `,
     faqs: [
       {
