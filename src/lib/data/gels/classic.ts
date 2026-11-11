@@ -442,7 +442,8 @@ export const classicGels: Gel[] = [
       {
         "store": "네이버 스마트스토어",
         "url": "https://smartstore.naver.com/onyourmarknutri",
-        "isOfficial": true
+        "isOfficial": true,
+        "note": "브랜드 스토어 첫 화면입니다. 상세의 40g·10포 에너지젤과 현재 옵션·가격은 상품 페이지에서 다시 확인하세요."
       }
     ],
     verification: {

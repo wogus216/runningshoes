@@ -328,7 +328,8 @@ export const koreanGels: Gel[] = [
     purchaseLinks: [
       {
         "store": "네이버 쇼핑",
-        "url": "https://smartstore.naver.com/riyoo/products/13716053649"
+        "url": "https://smartstore.naver.com/riyoo/products/13716053649",
+        "note": "현재 상품의 정확한 맛·41g 포장·묶음 수량은 확인하지 못했습니다. Mag-on 에나지젤과 별도 주레 제품을 구분하세요."
       },
       {
         "store": "쿠팡",

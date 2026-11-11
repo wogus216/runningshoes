@@ -58,7 +58,8 @@ export const premiumGels: Gel[] = [
     purchaseLinks: [
       {
         "store": "네이버 쇼핑",
-        "url": "https://smartstore.naver.com/energear/products/12182873112"
+        "url": "https://smartstore.naver.com/energear/products/12182873112",
+        "note": "현재 판매 옵션·묶음 수량과 Gel 100 40g 포장의 동일성은 확인하지 못했습니다. 구매 전 상품명과 영양표를 대조하세요."
       }
     ],
     features: [
@@ -155,7 +156,8 @@ export const premiumGels: Gel[] = [
     purchaseLinks: [
       {
         "store": "네이버 쇼핑",
-        "url": "https://smartstore.naver.com/energear/products/12846699102"
+        "url": "https://smartstore.naver.com/energear/products/12846699102",
+        "note": "현재 판매 옵션·맛·묶음 수량은 확인하지 못했습니다. Beta Fuel 정확 변형과 포당 탄수화물 표시를 구매 전 대조하세요."
       },
       {
         "store": "쿠팡",
@@ -248,7 +250,8 @@ export const premiumGels: Gel[] = [
     purchaseLinks: [
       {
         "store": "롯데온",
-        "url": "https://www.lotteon.com/p/product/LO2768021531"
+        "url": "https://www.lotteon.com/p/product/LO2768021531",
+        "note": "현재 판매 옵션의 정확한 맛·76g 포장·묶음 수량은 확인하지 못했습니다. 표시한 200kcal은 공식 레몬 변형 기준입니다."
       }
     ],
     features: [
