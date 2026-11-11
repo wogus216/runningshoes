@@ -98,7 +98,6 @@ export const shoe: Shoe = {
     tags: [
       "쿠션화",
       "맥시멀",
-      "관절 보호",
       "프리미엄"
     ],
     verification: {

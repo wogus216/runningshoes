@@ -45,7 +45,7 @@ export const posts_2025_01: BlogPost[] = [
     description: '무릎 통증에서 확인할 진료 신호, 상담용 기록표와 착화 조건을 정리합니다. 특정 러닝화의 무릎 보호 순위나 통증별 드롭·보속 일괄 처방을 제거하고 근거의 적용 범위를 밝힙니다.',
     thumbnail: 'https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?auto=format&fit=crop&w=1600&q=80',
     thumbnailSource: { name: "Bruno Nascimento / Unsplash", url: "https://unsplash.com/photos/person-wearing-orange-and-gray-nike-shoes-walking-on-gray-concrete-stairs-PHIgYUGQPvU", alt: "주황색·회색 러닝화를 신고 콘크리트 계단을 오르는 사람" },
-    content: `<figure><img src="https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" alt="야외에서 달리는 러너" loading="lazy" /><figcaption>러닝 자료 사진 · Unsplash. 특정 질환이나 치료 효과를 보여주는 사진이 아닙니다.</figcaption></figure>
+    content: `<figure><img src="https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" alt="주황색·회색 러닝화를 신고 콘크리트 계단을 오르는 사람" loading="lazy" /><figcaption>러닝 자료 사진 · <a href="https://unsplash.com/photos/person-wearing-orange-and-gray-nike-shoes-walking-on-gray-concrete-stairs-PHIgYUGQPvU" target="_blank" rel="noopener noreferrer">Bruno Nascimento / Unsplash</a>. 특정 질환이나 치료 효과를 보여주는 사진이 아닙니다.</figcaption></figure>
 <div class="tldr"><span class="tldr-label">통증이 생겼을 때 확인할 순서</span><ul>
 <li><strong>체중을 싣기 어렵거나 심하게 붓고 잠기는 무릎은 진료가 우선입니다.</strong> 새 신발로 시험 주행하며 확인할 상황으로 분류하지 않습니다.</li>
 <li><strong>통증 위치·시작 시점·최근 바뀐 훈련을 기록하세요.</strong> 무릎 통증을 모두 러너스니로 자가진단하지 않습니다.</li>
