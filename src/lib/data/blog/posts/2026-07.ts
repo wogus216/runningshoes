@@ -1687,7 +1687,7 @@ export const posts_2026_07: BlogPost[] = [
 <h2>신발과 진료에서 확인할 질문을 구분하세요</h2><p>매장에서는 실제 양말·인솔을 포함한 압박·뒤꿈치 고정과 판매 규격을 확인하세요. ‘이 신발의 SA가 높다’는 정보로 앞무릎 통증의 원인을 확진하거나 모델별 보호 효과를 순위로 정하지 않습니다. 특정 모델명보다 현재의 불편과 활동 목표를 먼저 설명하는 편이 상담에 도움이 됩니다.</p>
 <p><a href="/blog/it-band-syndrome-running-shoes-2026">무릎 바깥쪽 통증 기록</a> · <a href="/blog/knee-pain-running-shoes">무릎 통증 진료 신호</a>. 통증 부위가 다르다는 관찰만으로 두 질환을 자가 감별하는 용도로 쓰지 마세요.</p>
 <h2>확인한 원문</h2><ul><li><a href="https://www.orthoinfo.org/bodypart/kneelower-leg/patellofemoral-pain-syndrome/" target="_blank" rel="noopener noreferrer">AAOS Patellofemoral Pain Syndrome</a> — 증상·임상 평가·활동 조절·개별 운동치료</li><li><a href="https://www.nhs.uk/symptoms/knee-pain/" target="_blank" rel="noopener noreferrer">NHS Knee pain</a> — 신속한 평가가 필요한 증상</li></ul>
-<p><small>2026-11-09 원문 대조. 일반 정보와 상담 준비용 기록이며 개인의 진단·치료·러닝 복귀 허가를 대신하지 않습니다.</small></p>`,
+<p><small>2026-11-11 원문 대조. 일반 정보와 상담 준비용 기록이며 개인의 진단·치료·러닝 복귀 허가를 대신하지 않습니다.</small></p>`,
     updatedAt: "2026-11-11",
     faqs: [
       {
