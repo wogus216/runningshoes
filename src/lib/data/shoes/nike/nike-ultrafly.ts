@@ -1,18 +1,18 @@
 import type { Shoe } from '@/types/shoe';
 
-// 원문 재확인:2026-11-10. 확인 범위와 한계는 verification 참조.
+// 원문 추가 대조:2026-11-11. 확인 범위와 한계는 verification 참조.
 export const shoe: Shoe = {
     id: "nike-ultrafly",
     slug: "nike-ultrafly",
     brand: "Nike",
     name: "울트라플라이",
-  imageCaption: "ultrafly 사진(IR7317-001 · Black/Vegas Gold/Dark Smoke Grey)은 Nike 공식 상품 갤러리와 모델·색상·구도를 대조했습니다. 사진 품번을 한국 판매 규격·가격으로 읽지 마세요.",
-  imageSource: {"title":"Nike 공식 상품 갤러리","url":"https://www.nike.com/jp/en/t/acg-ultrafly-trail-trail-racing-shoes-Rnkddhm5/IR7317-001"},
+  imageCaption: "2023 초대 Ultrafly 사진(DX1978-100 · White/Total Orange/Pale Ivory/Black)을 Nike 공개 상품 데이터와 대조했습니다. 후속 ACG Ultrafly 사진과 구분했으며 한국 현재 판매 규격·가격의 근거는 아닙니다.",
+  imageSource: {"title":"Nike 공식 공개 상품 데이터 · 초대 DX1978","url":"https://api.nike.com/product_feed/threads/v3/?filter=marketplace%28US%29&filter=language%28en%29&filter=channelId%28d9a5bc42-4b9c-4976-858a-f159cf99c647%29&filter=productInfo.merchProduct.styleCode%28DX1978%29&count=100"},
     image: "/images/shoes/nike/ultrafly/side.webp",
     category: "트레일",
     description: "2023초대 전장 ZoomX · 중족 분기 카본 · Vibram Litebase 구조의 울트라플라이. RunRepeat 실험실 검체 299g·36.6/24.8mm. 한국 현재 정가 미확인.",
     oneliner: "2023초대 전장 ZoomX · 중족 분기 카본 · Vibram Litebase · 299g (RunRepeat 실험실 검체)",
-    editorComment: "2026-11-10 원문 재확인. 초대 DX1978계열의한국현행상품을확보하지못해현재 가격·SKU·폭·재고는미확인입니다. 후속 ACG Ultrafly HF5668은다른모델이어서대입하지않습니다. 기존 299,000원발매가를현재공식가로쓰지않습니다. DOR 소개 300g(남성 US10)/249g(여성 US8)·38.5/30mm·8.5mm, RR 브랜드 286/249g(사이즈미확인)·38/29.5mm·8.5mm, 실제 299g·36.6/24.8mm·11.8mm 입니다. 현행 RR9.8HA 는구방식이며 AC 미확인입니다.3mm 러그·국소마모 0.7mm·45마일개인경험을 450km수명으로환산하지 않습니다.20km이후앞발피로·한국산악일괄 금지·넓은발적합·첫 ZoomX트레일이라는단정을철회합니다. 접지계수는미확인입니다. DOR Matt(남성 US10)은정사이즈·넓지만낮은전족,보통~밀착중족·힐과끈으로해결된초기힐 슬립을적었습니다. 도로·정비된길·중간난도트레일의전환은좋았지만빠른지속주에서무게와느슨한연한노면의러그한계를느꼈습니다. 현지건조조건으로진흙은시험하지않았습니다. RR 내부 최광폭 95.8mm·엄지 76.7mm·높이 24.5mm 입니다. 넓은엄지부위와낮은 볼륨을함께확인하세요. RR 글로벌여성 Wide메타와비교표 Normal표기가달라한국 와이드보장으로쓰지않습니다. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.",
+    editorComment: "2026-11-11 원문 추가 대조. 한국 상품 검색은 2026-11-10 확인 범위입니다. 2026-11-10 초대 DX1978 계열의 한국 현행 상품을 확인하지 못했습니다. 현재 가격·판매 SKU·폭·재고는 미확인입니다. 후속 ACG Ultrafly는 다른 모델이므로 해당 판매 조건을 초대에 적용하지 않습니다. DOR 소개 300g(남성 US10)/249g(여성 US8)·38.5/30mm·8.5mm, RR 브랜드 286/249g(사이즈미확인)·38/29.5mm·8.5mm, 실제 299g·36.6/24.8mm·11.8mm 입니다. RunRepeat는 구방식 경도 9.8HA·러그 3.0mm·국소 밑창 마모 0.7mm를 보고했습니다. AC 경도와 접지계수는 미확인입니다. 국소 마모나 짧은 착화 후기로 개인의 주행 수명을 계산할 수 없습니다. DOR Matt(남성 US10)은정사이즈·넓지만낮은전족,보통~밀착중족·힐과끈으로해결된초기힐 슬립을적었습니다. 도로·정비된길·중간난도트레일의전환은좋았지만빠른지속주에서무게와느슨한연한노면의러그한계를느꼈습니다. 현지건조조건으로진흙은시험하지않았습니다. RR 내부 최광폭 95.8mm·엄지 76.7mm·높이 24.5mm 입니다. 넓은엄지부위와낮은 볼륨을함께확인하세요. RR 글로벌여성 Wide메타와비교표 Normal표기가달라한국 와이드보장으로쓰지않습니다. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.",
     tags: [
       "트레일",
       "레이싱",
@@ -61,18 +61,18 @@ export const shoe: Shoe = {
       "weight": "299g (RunRepeat 실험실 검체). DOR 소개 300g(남성 US10)/249g(여성 US8)·38.5/30mm·8.5mm, RR 브랜드 286/249g(사이즈미확인)·38/29.5mm·8.5mm, 실제 299g·36.6/24.8mm·11.8mm 입니다.",
       "stackHeight": "36.6/24.8mm (RunRepeat 실험실 검체, 힐/전족부). 출처별 다른 공시는 무게 항목 참조.",
       "drop": "11.8mm (RunRepeat 실험실 검체). DOR 소개 300g(남성 US10)/249g(여성 US8)·38.5/30mm·8.5mm, RR 브랜드 286/249g(사이즈미확인)·38/29.5mm·8.5mm, 실제 299g·36.6/24.8mm·11.8mm 입니다.",
-      "midsole": "2023초대 전장 ZoomX · 중족 분기 카본 · Vibram Litebase. 폼 경도 9.8 HA (구방식), AC 미확인. 힐/전족부 SA 134/91·에너지 리턴 66.2/68.5%. 현행 RR9.8HA 는구방식이며 AC 미확인입니다.3mm 러그·국소마모 0.7mm·45마일개인경험을 450km수명으로환산하지 않습니다.20km이후앞발피로·한국산악일괄 금지·넓은발적합·첫 ZoomX트레일이라는단정을철회합니다. 접지계수는미확인입니다.",
+      "midsole": "2023초대 전장 ZoomX · 중족 분기 카본 · Vibram Litebase. 폼 경도 9.8 HA (구방식), AC 미확인. 힐/전족부 SA 134/91·에너지 리턴 66.2/68.5%. RunRepeat는 구방식 경도 9.8HA·러그 3.0mm·국소 밑창 마모 0.7mm를 보고했습니다. AC 경도와 접지계수는 미확인입니다. 국소 마모나 짧은 착화 후기로 개인의 주행 수명을 계산할 수 없습니다.",
       "plate": "RR 은 중족의분기형카본이며 전장이아니라고명시합니다. 전장 ZoomX폼이 전장카본을뜻하지않습니다. DOR 카본 Flyplate명칭과구분합니다.",
       "width": "RR 내부 최광폭 95.8mm·엄지 부위 76.7mm·높이 24.5mm. RR 내부 최광폭 95.8mm·엄지 76.7mm·높이 24.5mm 입니다. 넓은엄지부위와낮은 볼륨을함께확인하세요. RR 글로벌여성 Wide메타와비교표 Normal표기가달라한국 와이드보장으로쓰지않습니다.",
       "durability": "검증된 공통 수명 km 미확인. 국소 마모·짧은 착화 후기를 주행 수명으로 환산하지 않습니다.",
-      "price": "초대 DX1978계열의한국현행상품을확보하지못해현재 가격·SKU·폭·재고는미확인입니다. 후속 ACG Ultrafly HF5668은다른모델이어서대입하지않습니다. 기존 299,000원발매가를현재공식가로쓰지않습니다."
+      "price": "2026-11-10 초대 DX1978 계열의 한국 현행 상품을 확인하지 못했습니다. 현재 가격·판매 SKU·폭·재고는 미확인입니다. 후속 ACG Ultrafly는 다른 모델이므로 해당 판매 조건을 초대에 적용하지 않습니다."
     },
     reviews: [
       {
         "userType": "원문 기반 에디터 분석",
         "source": "editor",
         "sourceUrl": "https://runrepeat.com/nike-ultrafly",
-        "text": "DOR 소개 300g(남성 US10)/249g(여성 US8)·38.5/30mm·8.5mm, RR 브랜드 286/249g(사이즈미확인)·38/29.5mm·8.5mm, 실제 299g·36.6/24.8mm·11.8mm 입니다. 현행 RR9.8HA 는구방식이며 AC 미확인입니다.3mm 러그·국소마모 0.7mm·45마일개인경험을 450km수명으로환산하지 않습니다.20km이후앞발피로·한국산악일괄 금지·넓은발적합·첫 ZoomX트레일이라는단정을철회합니다. 접지계수는미확인입니다."
+        "text": "DOR 소개 300g(남성 US10)/249g(여성 US8)·38.5/30mm·8.5mm, RR 브랜드 286/249g(사이즈미확인)·38/29.5mm·8.5mm, 실제 299g·36.6/24.8mm·11.8mm 입니다. RunRepeat는 구방식 경도 9.8HA·러그 3.0mm·국소 밑창 마모 0.7mm를 보고했습니다. AC 경도와 접지계수는 미확인입니다. 국소 마모나 짧은 착화 후기로 개인의 주행 수명을 계산할 수 없습니다."
       },
       {
         "userType": "외부 착화 의견 요약 · Doctors of Running",
@@ -101,7 +101,7 @@ export const shoe: Shoe = {
     ],
     purchaseLinks: [],
     verification: {
-      "checkedAt": "2026-11-10",
+      "checkedAt": "2026-11-11",
       "scope": "한국 상품 조건, 해외 실험실·제조사 공시와 외부 착화 의견의 확인 범위를 구분했습니다. 제품 전체 검증 완료 표지가 아닙니다.",
       "sources": [
         {
@@ -112,7 +112,7 @@ export const shoe: Shoe = {
         {
           "label": "RunRepeat 동세대 실험실 원문",
           "url": "https://runrepeat.com/nike-ultrafly",
-          "note": "공시 일반 검체 정책은 남성 US9. 실제 검체 라벨·폭 미확인. 299g·36.6/24.8mm·11.8mm. 현행 RR9.8HA 는구방식이며 AC 미확인입니다.3mm 러그·국소마모 0.7mm·45마일개인경험을 450km수명으로환산하지 않습니다.20km이후앞발피로·한국산악일괄 금지·넓은발적합·첫 ZoomX트레일이라는단정을철회합니다. 접지계수는미확인입니다."
+          "note": "공시 일반 검체 정책은 남성 US9. 실제 검체 라벨·폭 미확인. 299g·36.6/24.8mm·11.8mm. RunRepeat는 구방식 경도 9.8HA·러그 3.0mm·국소 밑창 마모 0.7mm를 보고했습니다. AC 경도와 접지계수는 미확인입니다. 국소 마모나 짧은 착화 후기로 개인의 주행 수명을 계산할 수 없습니다."
         },
         {
           "label": "Doctors of Running 동세대 원문",

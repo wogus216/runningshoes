@@ -7,13 +7,14 @@ export const premiumGels: Gel[] = [
     brand: "Maurten",
     name: "Gel 100",
     category: "젤 제품",
-    description: "글로벌 Gel 100은 40g 한 포에 탄수화물 25g을 담은 제품입니다. Gel 100 Caf 100과 구분해 확인하세요.",
+    description: "미국 공식 Gel 100은 40g 한 포에 탄수화물 25g을 안내합니다. Gel 100 Caf 100과 구분해 확인하세요.",
     tags: [
       "제품 표시 확인"
     ],
     image: "/images/gels/maurten-gel-100/official-20261111.webp",
     nutritionFacts: {
       "calories": 100,
+      "sodium": 20,
       "totalCarbs": 25,
       "carbSource": "포도당 + 과당",
       "glucoseFructoseRatio": "1:0.8",
@@ -63,7 +64,7 @@ export const premiumGels: Gel[] = [
       }
     ],
     features: [
-      "제조사 글로벌 일반 Gel 100 기준입니다. 국내 판매 포장의 나트륨은 별도 대조가 필요합니다.",
+      "미국 공식 일반 Gel 100 영양표 기준: 40g·100kcal·탄수화물 25g·나트륨 20mg. 해당 영양표에는 상자당 48회분, 상품 페이지에는 12개입이 표시돼 묶음 수량은 판매 옵션과 구분해야 합니다. 국내 판매 포장과 동일한지는 미확인입니다.",
       "제조사는 이미 하이드로젤 형태로 제조되며 시럽보다 단단한 구조라고 설명합니다. 말토덱스트린·펙틴이 든 제품으로 설명하지 않습니다."
     ],
     reviews: [],
@@ -73,19 +74,24 @@ export const premiumGels: Gel[] = [
       "gu-roctane-energy-gel"
     ],
     verification: {
-      "checkedAt": "2026-11-10",
-      "scope": "성분 표시의 기존 부분 재확인과 사진 변형 대조. 사진 출처가 미확인인 항목·현재 국내 포장·선택 옵션·판매 상태와 제품 전체 효과의 검증 완료 표지가 아닙니다.",
+      "checkedAt": "2026-11-11",
+      "scope": "미국 공식 일반 Gel 100 제품 안내·40g 영양표와 대표 사진 변형을 대조했습니다. 국내 판매 포장·최종 선택 옵션·판매 상태와 제품 전체 효과의 검증 완료 표지는 아닙니다.",
       "notes": [
-        "제조사 글로벌 일반 Gel 100 기준입니다. 국내 판매 포장의 나트륨은 별도 대조가 필요합니다.",
+        "미국 공식 일반 Gel 100 영양표 기준: 40g·100kcal·탄수화물 25g·나트륨 20mg. 해당 영양표에는 상자당 48회분, 상품 페이지에는 12개입이 표시돼 묶음 수량은 판매 옵션과 구분해야 합니다. 국내 판매 포장과 동일한지는 미확인입니다.",
         "제조사는 이미 하이드로젤 형태로 제조되며 시럽보다 단단한 구조라고 설명합니다. 말토덱스트린·펙틴이 든 제품으로 설명하지 않습니다.",
         "제조사는 삼킬 때 물이 필수는 아니라고 안내하지만, 운동 중 수분 계획은 별개입니다.",
-        "2026-11-11 사진 대조: 제조사 글로벌 일반 Gel 100 제품 이미지. Caf 100 제품이 아닙니다."
+        "2026-11-11 사진 대조: 제조사 미국 공식 일반 Gel 100 제품 이미지. Caf 100 제품이 아닙니다."
       ],
       "sources": [
         {
+          "title": "Maurten 미국 Gel 100 공식 영양표 이미지",
+          "url": "https://maurten.imgix.net/branding/Nutrition-facts/GEL100_US.jpg?fit=max&q=85&s=4b3bdf18f4c612de0d5426bd061fe392&w=1000",
+          "scope": "1포 40g·100kcal·탄수화물 25g·나트륨 20mg. 이미지의 상자당 48회분과 상품 페이지의 12개입은 구분하며 국내 포장 동일성은 미확인."
+        },
+        {
           "title": "Maurten Gel 100 공식 제품",
           "url": "https://www.maurten.com/products/us/gel-100-box-us",
-          "scope": "일반형·40g·탄수화물·원료·CAF 구분·삼킬 때 물 안내"
+          "scope": "미국 일반형·40g·탄수화물·원료·CAF 구분·삼킬 때 물 안내"
         },
         {
           "title": "제조사 공식 이미지",
@@ -94,7 +100,7 @@ export const premiumGels: Gel[] = [
         }
       ]
     },
-    imageCaption: "제조사 글로벌 일반 Gel 100 제품 이미지. Caf 100 제품이 아닙니다.",
+    imageCaption: "제조사 미국 공식 일반 Gel 100 제품 이미지. Caf 100 제품이 아닙니다.",
     imageSource: {
       "title": "제조사 공식 이미지",
       "url": "https://www.maurten.com/products/us/gel-100-box-us"
@@ -106,13 +112,15 @@ export const premiumGels: Gel[] = [
     brand: "SiS",
     name: "Beta Fuel",
     category: "젤 제품",
-    description: "SiS BETA Fuel은 한 포 탄수화물 40g과 말토덱스트린:과당 1:0.8을 안내하는 제품군입니다. 전해질·카페인 변형의 표시를 별도로 확인하세요.",
+    description: "SiS 영국 공식 일반 BETA Fuel은 60ml 한 포에 탄수화물 40g과 말토덱스트린:과당 1:0.8을 안내합니다. 전해질·카페인 변형의 표시를 별도로 확인하세요.",
     tags: [
       "제품 표시 확인"
     ],
     image: "/images/gels/sis-beta-fuel/official-20261111.webp",
     nutritionFacts: {
       "totalCarbs": 40,
+      "servingSize": 60,
+      "servingUnit": "ml",
       "carbSource": "말토덱스트린 + 과당",
       "glucoseFructoseRatio": "1:0.8"
     },
@@ -132,7 +140,7 @@ export const premiumGels: Gel[] = [
       "gutTrainingNeeded": true
     },
     flavorProfile: {
-      "flavors": [],
+      "flavors": ["Neutral", "Orange", "Strawberry and Lime"],
       "texture": "독립 실사용 평가 미확인",
       "aftertaste": "독립 실사용 평가 미확인",
       "tasteFatigueRisk": "미확인"
@@ -149,7 +157,7 @@ export const premiumGels: Gel[] = [
       "intakeStrategy": "거리별 고정 개수보다 실제 제품의 탄수화물 g·예상 시간·급수 기회를 함께 계획하세요. 대회에서 사용할 조합은 훈련 중 반응을 확인하세요."
     },
     features: [
-      "현재 공식 페이지의 공통 탄수화물·배합 비율만 반영했습니다. 정확한 맛별 제공량·열량·카페인·나트륨은 미확인입니다.",
+      "영국 공식 영양표의 60ml 1포 기준: Neutral 163kcal·탄수화물 40g·소금 0.04g, Orange와 Strawberry and Lime은 각각 158kcal·탄수화물 40g·소금 0.03g입니다. 소금과 나트륨은 다른 표시 항목이며 국내 판매 포장과 동일한지는 미확인입니다.",
       "GO Isotonic 또는 별도 Electrolyte·Nootropics 제품의 수치를 일반 BETA Fuel에 합치지 않습니다."
     ],
     reviews: [],
@@ -171,10 +179,10 @@ export const premiumGels: Gel[] = [
       "gu-roctane-energy-gel"
     ],
     verification: {
-      "checkedAt": "2026-11-10",
-      "scope": "성분 표시의 기존 부분 재확인과 사진 변형 대조. 사진 출처가 미확인인 항목·현재 국내 포장·선택 옵션·판매 상태와 제품 전체 효과의 검증 완료 표지가 아닙니다.",
+      "checkedAt": "2026-11-11",
+      "scope": "영국 공식 일반 BETA Fuel의 맛별 영양표(Neutral·Orange·Strawberry and Lime)와 대표 사진을 대조했습니다. 국내 판매 포장·최종 선택 옵션·판매 상태와 제품 전체 효과의 검증 완료 표지는 아닙니다.",
       "notes": [
-        "현재 공식 페이지의 공통 탄수화물·배합 비율만 반영했습니다. 정확한 맛별 제공량·열량·카페인·나트륨은 미확인입니다.",
+        "영국 공식 영양표의 60ml 1포 기준: Neutral 163kcal·탄수화물 40g·소금 0.04g, Orange와 Strawberry and Lime은 각각 158kcal·탄수화물 40g·소금 0.03g입니다. 소금과 나트륨은 다른 표시 항목이며 국내 판매 포장과 동일한지는 미확인입니다.",
         "GO Isotonic 또는 별도 Electrolyte·Nootropics 제품의 수치를 일반 BETA Fuel에 합치지 않습니다.",
         "제조사의 80~120g/시간 섭취 안내는 제품 소개이며 제품별 실측 산화율이나 모든 러너의 처방이 아닙니다.",
         "2026-11-11 사진 대조: 공식 BETA Fuel Neutral 포장 예시. Electrolyte·Nootropics 변형과 구분하세요."
@@ -183,7 +191,7 @@ export const premiumGels: Gel[] = [
         {
           "title": "SiS BETA Fuel 공식 제품",
           "url": "https://www.scienceinsport.com/shop-sis/all-products/beta-fuel-gel-pack",
-          "scope": "공통 40g·1:0.8 표기; 맛별 영양표는 미확인"
+          "scope": "영국 일반형 60ml·탄수화물 40g·1:0.8 및 Nutritional Information의 세 가지 맛별 열량·소금 표시"
         },
         {
           "title": "제조사 공식 이미지",
