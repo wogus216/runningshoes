@@ -14,7 +14,7 @@ import type { MarathonListEvent } from '@/types/marathon';
  * 클라이언트(진짜 오늘) 양쪽에서 같은 함수를 쓸 수 있게 한다.
  */
 
-export type BandId = 'open' | 'upcoming' | 'closed' | 'checking' | 'past';
+export type BandId = 'open' | 'upcoming' | 'closed' | 'entry-checking' | 'checking' | 'past';
 
 export type Band = {
   id: BandId;
@@ -26,6 +26,7 @@ const BAND_ORDER: { id: BandId; label: string }[] = [
   { id: 'open', label: '지금 접수중' },
   { id: 'upcoming', label: '곧 열림' },
   { id: 'closed', label: '접수 마감 · 대회는 열림' },
+  { id: 'entry-checking', label: '접수 확인 필요' },
   { id: 'checking', label: '일정 확인 필요' },
   { id: 'past', label: '지난 대회' },
 ];
@@ -56,7 +57,10 @@ export function isPast(event: Pick<MarathonListEvent, 'date' | 'postponed' | 'sc
 export function displayStatusOf(event: MarathonListEvent, today: string): string {
   if (event.scheduleUnverified) return '일정 확인 필요';
   if (event.postponed) return '일정 연기';
-  if (bandOf(event, today) === 'closed' && (event.status === '접수중' || event.status === '접수예정')) return '마감';
+  const band = bandOf(event, today);
+  if (band === 'entry-checking') return '접수 확인 필요';
+  if (band === 'past' && event.registrationStatusUnverified) return '대회종료';
+  if (band === 'closed' && (event.status === '접수중' || event.status === '접수예정')) return '마감';
   return event.status;
 }
 
@@ -64,6 +68,7 @@ export function displayStatusOf(event: MarathonListEvent, today: string): string
 export function rowStateLabel(event: MarathonListEvent, today: string): { text: string; dday: boolean } {
   if (event.scheduleUnverified) return { text: '일정 확인 필요', dday: false };
   if (event.postponed) return { text: '일정 연기', dday: false };
+  if (bandOf(event, today) === 'entry-checking') return { text: '접수 확인 필요', dday: false };
   if (event.registrationEnd) {
     const left = daysUntil(event.registrationEnd, today);
     if (left >= 0) return { text: `D-${left} 마감`, dday: true };
@@ -86,6 +91,7 @@ export function bandOf(event: MarathonListEvent, today: string): BandId {
   // 1. 지난 대회 — 날짜만 본다. 유일하게 100% 자동 판정되는 밴드다.
   //    단 연기(새 날짜 미정)는 원래 날짜가 지나도 past가 아니다 — 접수 기간·status로 내려간다.
   if (isPast(event, today)) return 'past';
+  if (event.registrationStatusUnverified) return 'entry-checking';
 
   // 2. 접수 기간이 있으면 그걸 믿는다(수동 status보다 최신).
   if (event.registrationEnd && event.registrationEnd < today) return 'closed';
@@ -109,7 +115,7 @@ export function bandOf(event: MarathonListEvent, today: string): BandId {
 /** 기존 4개 밴드와, 대상이 있을 때만 확인 필요 밴드를 반환한다. */
 export function groupIntoBands(events: readonly MarathonListEvent[], today: string): Band[] {
   const buckets: Record<BandId, MarathonListEvent[]> = {
-    open: [], upcoming: [], closed: [], checking: [], past: [],
+    open: [], upcoming: [], closed: [], 'entry-checking': [], checking: [], past: [],
   };
   for (const e of events) buckets[bandOf(e, today)].push(e);
 
@@ -118,6 +124,6 @@ export function groupIntoBands(events: readonly MarathonListEvent[], today: stri
   }
 
   return BAND_ORDER
-    .filter(({ id }) => id !== 'checking' || buckets.checking.length > 0)
+    .filter(({ id }) => (id !== 'checking' && id !== 'entry-checking') || buckets[id].length > 0)
     .map(({ id, label }) => ({ id, label, events: buckets[id] }));
 }

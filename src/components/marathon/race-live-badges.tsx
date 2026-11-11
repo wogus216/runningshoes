@@ -22,6 +22,7 @@ const STATUS_STYLES: Record<string, string> = {
   '대회종료': 'bg-slate-200 text-slate-600',
   '일정 연기': 'bg-amber-100 text-amber-700',
   '일정 확인 필요': 'bg-amber-100 text-amber-700',
+  '접수 확인 필요': 'bg-amber-100 text-amber-700',
 };
 
 const DAY_STYLES = {

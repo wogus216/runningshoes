@@ -147,3 +147,25 @@ describe('공식 일정 대조 미완료', () => {
     expect(bands.flatMap(b => b.events).map(e => e.id).sort()).toEqual(['unverified', 'verified']);
   });
 });
+
+describe('현재 접수 상태 대조 미완료', () => {
+  it('공식 선착순 기간만 확인한 대회는 접수중 숫자와 D-day에서 제외한다', () => {
+    const pending = ev({
+      id: 'entry-unverified',
+      registrationStart: '2026-07-01',
+      registrationStatusUnverified: true,
+      status: '접수중',
+    });
+    expect(displayStatusOf(pending, TODAY)).toBe('접수 확인 필요');
+    expect(rowStateLabel(pending, TODAY)).toEqual({ text: '접수 확인 필요', dday: false });
+    const bands = groupIntoBands([pending, ev({ id: 'confirmed' })], TODAY);
+    expect(bands.find((b) => b.id === 'entry-checking')?.events.map((e) => e.id)).toEqual(['entry-unverified']);
+    expect(bands.find((b) => b.id === 'open')?.events.map((e) => e.id)).toEqual(['confirmed']);
+  });
+
+  it('대회일이 지나면 오래된 접수 확인 필요 상태 대신 종료로 표시한다', () => {
+    const pending = ev({ date: '2026-07-31', registrationStatusUnverified: true });
+    expect(bandOf(pending, TODAY)).toBe('past');
+    expect(displayStatusOf(pending, TODAY)).toBe('대회종료');
+  });
+});

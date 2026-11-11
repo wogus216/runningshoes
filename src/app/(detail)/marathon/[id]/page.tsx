@@ -62,8 +62,8 @@ export async function generateMetadata({ params }: MarathonDetailPageProps): Pro
   const shortPlace = event.location.replace(/\s*\([^)]*\)\s*$/, '');
   // 연기(새 날짜 미정)면 원래 날짜를 제목에 걸지 않는다 — 그날 열리는 대회처럼 읽힌다
   const dateOnly = event.scheduleUnverified ? '일정 확인 필요' : event.postponed ? '일정 연기' : shortDate.replace(/\s*\([일월화수목금토]\)/, '');
-  const acceptsEntry = event.status === '접수중' || event.status === '접수예정';
-  const intentKeywords = event.scheduleUnverified ? '일정·자료 확인 현황' : acceptsEntry ? '접수·참가비·코스' : '코스·참가비·기념품';
+  const acceptsEntry = !event.registrationStatusUnverified && (event.status === '접수중' || event.status === '접수예정');
+  const intentKeywords = event.scheduleUnverified ? '일정·자료 확인 현황' : event.registrationStatusUnverified ? '참가비·코스·접수 확인' : acceptsEntry ? '접수·참가비·코스' : '코스·참가비·기념품';
   // 사이트명은 app/layout.tsx 의 title.template(`%s | ${SITE_NAME}`)이 붙인다 — 여기서 또 붙이면 두 번 나온다.
   // 그 9자(" | 러닝의 모든것")까지 합쳐 60자 안에 들어가야 SERP 에서 안 잘린다.
   const titleHead = `${shortName} ${intentKeywords}`;
@@ -80,7 +80,9 @@ export async function generateMetadata({ params }: MarathonDetailPageProps): Pro
     : event.postponed
     ? [`일정 연기 — 새 날짜 미정(원래 ${shortDate}). ${event.location}. ${event.distances.join('·')}.`]
     : [`${shortDate} ${event.location}. ${event.distances.join('·')}.`];
-  if (!event.scheduleUnverified && event.status === '접수중') {
+  if (event.registrationStatusUnverified) {
+    descParts.push('현재 접수 가능 여부 미확인. 신청 전 공식 페이지를 확인하세요.');
+  } else if (!event.scheduleUnverified && event.status === '접수중') {
     descParts.push(
       event.registrationEnd
         ? `접수중 (${formatDateKo(event.registrationEnd, { weekday: true })} 마감).`
@@ -177,6 +179,7 @@ export default async function MarathonDetailPage({ params }: MarathonDetailPageP
     status: event.status,
     postponed: event.postponed,
     scheduleUnverified: event.scheduleUnverified,
+    registrationStatusUnverified: event.registrationStatusUnverified,
     registrationStart: event.registrationStart,
     registrationEnd: event.registrationEnd,
   };
@@ -189,6 +192,7 @@ export default async function MarathonDetailPage({ params }: MarathonDetailPageP
   // 빌드 시점 날짜라 배포 사이에는 낡을 수 있다. 상태·D-day 배지는 race-live-badges.tsx 가 마운트 후 다시 계산한다
   // (배지의 상태 판정은 bands.ts displayStatusOf — 마감일이 지났는데 접수중·접수예정이면 '마감', 연기는 먼저 알린다).
   const registrationClosed = bandOf(event, buildDate) === 'closed';
+  const registrationNeedsCheck = bandOf(event, buildDate) === 'entry-checking';
 
   // JSON-LD: SportsEvent (enriched)
   const jsonLd: Record<string, unknown> = {
@@ -337,7 +341,7 @@ export default async function MarathonDetailPage({ params }: MarathonDetailPageP
               </div>
             )}
             {/* 마감된 대회에서 '시작'만 단독으로 남으면 접수 예정처럼 읽힌다 — 마감이면 아래 '접수 마감' 줄로 대신한다 */}
-            {!event.scheduleUnverified && event.registrationStart && !registrationClosed && (
+            {!event.scheduleUnverified && event.registrationStart && !registrationClosed && !registrationNeedsCheck && (
               <div className="flex items-center gap-2">
                 <FileText className="h-5 w-5 shrink-0 text-sky-700" />
                 <span>
@@ -359,7 +363,7 @@ export default async function MarathonDetailPage({ params }: MarathonDetailPageP
               registrationNote 에 공식 표기를 그대로 담아 '미확인' 대신 보여준다.
               확인했는데 날짜가 없는 것과 확인 안 한 것은 다른 상태다.
             */}
-            {!event.scheduleUnverified && !registrationClosed && (event.status === '접수중' || event.status === '접수예정') && (
+            {!event.scheduleUnverified && !registrationClosed && !registrationNeedsCheck && (event.status === '접수중' || event.status === '접수예정') && (
               <div className="flex items-start gap-2">
                 <Timer className="mt-0.5 h-5 w-5 shrink-0 text-sky-700" />
                 {event.registrationEnd ? (
@@ -377,6 +381,15 @@ export default async function MarathonDetailPage({ params }: MarathonDetailPageP
                     {event.website ? ' — 공식 홈에서 확인하세요' : ''}
                   </span>
                 )}
+              </div>
+            )}
+            {registrationNeedsCheck && (
+              <div className="flex items-start gap-2 sm:col-span-2">
+                <Timer className="mt-0.5 h-5 w-5 shrink-0 text-sky-700" />
+                <div>
+                  <span className="font-medium text-primary">현재 접수 가능 여부 미확인</span>
+                  {event.registrationNote && <p className="mt-1 text-sm leading-relaxed">{event.registrationNote}</p>}
+                </div>
               </div>
             )}
             {/*
@@ -414,9 +427,11 @@ export default async function MarathonDetailPage({ params }: MarathonDetailPageP
             현재 lastVerified 는 111개 중 18개(16%)에만 있어 없는 경우가 더 많다 —
             그 사실도 감추지 않는다.
           */}
-          {(registrationClosed || event.status === '접수중' || event.status === '접수예정') && (
+          {(registrationClosed || registrationNeedsCheck || event.status === '접수중' || event.status === '접수예정') && (
             <p className="mt-3 font-mono text-[11px] text-tertiary">
-              {event.lastVerified
+              {registrationNeedsCheck
+                ? '현재 신청·결제 가능 여부 미확인 — 공식 접수처에서 확인하세요'
+                : event.lastVerified
                 ? `접수 상태 ${formatDateKo(event.lastVerified, { weekday: true })} 확인 기준`
                 : registrationClosed
                   ? '접수 상태 확인일 미기록 — 공식 공지를 확인하세요'

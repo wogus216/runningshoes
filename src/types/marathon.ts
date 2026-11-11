@@ -196,12 +196,14 @@ export interface MarathonEvent {
   postponed?: true;
   /** 공식 원문·결과와 일정 대조 미완료. 참고 날짜이며 개최·접수를 확정 표시하지 않는다. */
   scheduleUnverified?: true;
+  /** 공식 접수 기간은 알지만 현재 잔여석·결제 가능 여부를 확인하지 못한 경우. */
+  registrationStatusUnverified?: true;
 }
 
 /** 목록 화면에 실제로 필요한 필드만 서버에서 클라이언트로 전달한다. */
 export type MarathonListEvent = Pick<MarathonEvent,
   'id' | 'name' | 'date' | 'location' | 'region' | 'distances' | 'status' | 'isMajor' |
-  'description' | 'registrationStart' | 'registrationEnd' | 'postponed' | 'scheduleUnverified'
+  'description' | 'registrationStart' | 'registrationEnd' | 'postponed' | 'scheduleUnverified' | 'registrationStatusUnverified'
 >;
 
 export const EVENT_MONTHS: EventMonth[] = [

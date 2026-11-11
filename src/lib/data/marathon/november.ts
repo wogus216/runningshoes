@@ -734,11 +734,11 @@ export const novemberEvents: MarathonEvent[] = [
       "10K"
     ],
     status: "접수중",
+    registrationStatusUnverified: true,
     isMajor: false,
     website: "https://gofree.seoul.co.kr/",
     registrationStart: "2026-09-01",
     registrationNote: "요강 접수 안내는 9월 1일10시부터 선착순이지만 신청 안내에는 3월 3일·5km얼리버드 등 불일치 문구가 남아 있다. 현재 잔여수량·실제 결제 가능 여부는 확인하지 못했다. 공식 FAQ·참가자 유의사항의 환불 신청 기한은 10월 21일17시로 이미 지났다. 과거 인용된 10월 29일의 원문은 이번에 재확인하지 못해 적용 기한으로 안내하지 않는다.",
-    lastVerified: "2026-11-11",
     description: "11월 21일 여의도공원 문화의마당 하프·10km일정. 공식 요강과 홈은08:00출발·일반 각70,000원을 안내한다. 공식 FAQ·참가자 유의사항은 환불 신청 기한을 10월 21일17시로 안내한다. 참가자 유의사항 안의 10km 제한시간은 1시간15분과 1시간30분이 서로 달라 최종 운영 기준을 사무국에 확인해야 한다. 기념품 상세의 아식스20%쿠폰은 제3자 정보제공 동의자·일부상품 제외 조건이며 실제 지급 완료와 다르다.",
     raceKit: {
       "items": [

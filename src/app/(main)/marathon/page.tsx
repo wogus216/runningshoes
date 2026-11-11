@@ -73,6 +73,7 @@ export default function MarathonPage() {
     registrationEnd: event.registrationEnd,
     postponed: event.postponed,
     scheduleUnverified: event.scheduleUnverified,
+    registrationStatusUnverified: event.registrationStatusUnverified,
   }));
 
   // JSON-LD: 메이저 대회 SportsEvent + Offers
