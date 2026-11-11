@@ -1835,7 +1835,7 @@ export const posts_2026_07: BlogPost[] = [
 <h2>패드를 붙이기 전에 물어볼 것</h2>
 <p>NHS는 부드러운 인솔·패드와 약사·전문가 상담을 안내합니다. 어느 제품을 어느 위치에 사용할지, 기존 깔창과 어떻게 조합할지, 조정 후 어떤 반응에 재상담할지 확인하세요. 모든 발에 동일하게 ‘아픈 곳에서 1~2cm 뒤’, ‘100보 후 이동’, ‘말굽형이 최선’이라는 공통 피팅 처방을 적용하지 않습니다.</p>
 <p>패드의 모양·두께·부착 위치와 실제 신발 안의 공간을 함께 보여주면 상담하기 편합니다. 처음부터 접착·변형을 확정하기 전에 제품의 조정·교환 가능 여부도 확인해두세요. <a href="/blog/plantar-fasciitis-insoles-guide-2026">인솔의 피팅·비용 상담 질문</a>은 다른 질환의 지침을 모튼신경종 치료 근거로 옮기지 않는 범위에서 구매 준비에 참고할 수 있습니다.</p>
-<h2>원문과 확인 범위</h2><ul><li><a href="https://www.nhs.uk/conditions/mortons-neuroma/" target="_blank" rel="noopener noreferrer">NHS: Morton’s neuroma</a> — 증상·진료 기준·활동 조절·신발과 패드 상담. 검토일 2025-06-12</li></ul><p><small>2026-11-09 원문 대조. 일반 정보와 상담 준비용 기록이며 개인의 진단·치료·달리기 복귀 허가를 대신하지 않습니다.</small></p>`,
+<h2>원문과 확인 범위</h2><ul><li><a href="https://www.nhs.uk/conditions/mortons-neuroma/" target="_blank" rel="noopener noreferrer">NHS: Morton’s neuroma</a> — 증상·진료 기준·활동 조절·신발과 패드 상담. 검토일 2025-06-12</li></ul><p><small>2026-11-11 원문 대조. 일반 정보와 상담 준비용 기록이며 개인의 진단·치료·달리기 복귀 허가를 대신하지 않습니다.</small></p>`,
     updatedAt: "2026-11-11",
     faqs: [
       {

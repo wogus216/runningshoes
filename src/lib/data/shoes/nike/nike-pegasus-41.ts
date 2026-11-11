@@ -112,7 +112,8 @@ export const shoe: Shoe = {
     purchaseLinks: [
       {
         "store": "네이버",
-        "url": "https://naver.me/5eDHQ0w3"
+        "url": "https://naver.me/5eDHQ0w3",
+        "note": "단축 링크의 현재 판매 상품·성별·색상·폭·사이즈 옵션을 확인하지 못했습니다. 표시된 159,000원은 나이키 코리아에서 확인한 별도 SKU의 정가이며 이 판매처의 결제가는 아닙니다."
       }
     ],
     verification: {
