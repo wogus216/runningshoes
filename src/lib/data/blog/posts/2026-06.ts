@@ -132,7 +132,7 @@ export const posts_2026_06: BlogPost[] = [
 <p>상담 때는 ‘지금 가능한 활동’, ‘운동 중·이후 어떤 반응을 기준으로 조절할지’, ‘다음 평가 시점’을 적어두세요. 기존 케이던스 기록이 있다면 보여주되, 숫자를 맞추는 것을 자가 치료의 합격 조건으로 삼지 마세요. 통증이 악화되거나 수주 동안 좋아지지 않으면 다시 평가받으세요.</p>
 <h2>신발을 확인할 때 빠뜨리지 말 것</h2>
 <p>기존 신발과 양말·인솔을 가져가서 압박·마모·뒤꿈치 고정의 변화를 설명하세요. 시착에서는 편안함과 판매 성별·폭·사이즈를 확인할 수 있지만, 그 결과로 IT밴드 통증의 원인을 확진하거나 특정 안정화의 치료 효과를 정하지 않습니다. <a href="/blog/stability-shoes-self-diagnosis-fit-guide-2026">안정화 선택과 자가진단의 한계</a>를 함께 볼 수 있습니다.</p>
-<h2>원문과 확인 범위</h2><ul><li><a href="https://medlineplus.gov/ency/patientinstructions/000683.htm" target="_blank" rel="noopener noreferrer">MedlinePlus: IT band syndrome aftercare</a> — 증상·활동 조절·재활 상담</li><li><a href="https://www.nhs.uk/symptoms/knee-pain/" target="_blank" rel="noopener noreferrer">NHS: Knee pain</a> — 빠른 평가가 필요한 증상</li></ul><p><small>2026-11-09 원문 대조. 일반 정보와 상담 준비용 기록이며 개인의 진단·치료·달리기 복귀 허가를 대신하지 않습니다.</small></p>`,
+<h2>원문과 확인 범위</h2><ul><li><a href="https://medlineplus.gov/ency/patientinstructions/000683.htm" target="_blank" rel="noopener noreferrer">MedlinePlus: IT band syndrome aftercare</a> — 증상·활동 조절·재활 상담</li><li><a href="https://www.nhs.uk/symptoms/knee-pain/" target="_blank" rel="noopener noreferrer">NHS: Knee pain</a> — 빠른 평가가 필요한 증상</li></ul><p><small>2026-11-11 원문 대조. 일반 정보와 상담 준비용 기록이며 개인의 진단·치료·달리기 복귀 허가를 대신하지 않습니다.</small></p>`,
     updatedAt: "2026-11-11",
     faqs: [
       {
