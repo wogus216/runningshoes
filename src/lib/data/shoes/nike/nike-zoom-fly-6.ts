@@ -20,7 +20,7 @@ export const shoe: Shoe = {
     price: 209000,
     description: "ZoomX + SR-02 (하부 명칭 DOR 기준) 미드솔을 쓰는 줌 플라이 6. 한국 남성 FN8454-006 정가 209,000원. 다른 SKU의 정가는 다를 수 있습니다.",
     oneliner: "248g 실험실 무게 · ZoomX + SR-02 (하부 명칭 DOR 기준)",
-    editorComment: "2026-11-09 원문 재확인. 한국 남성 FN8454-006 정가 209,000원. 다른 SKU의 정가는 다를 수 있습니다. 한국 공식 265g (280mm) · 드롭 8mm. DOR 소개 40/32mm · 8mm. RR 248g과 사이즈 조건이 다름. RunRepeat 실측은 248g, 힐/전족부 39.7/30.1mm, 드롭 9.6mm입니다. DOR은 낮은 토박스 용적과 부드럽고 높은 플랫폼의 흔들림, 젖은 노면의 접지를 주의점으로 들었습니다. 하부 폼은 DOR의 SR-02 명칭을 사용하며 RR 본문의 ReactX 표기와 충돌해 정확한 배합은 단정하지 않습니다. 확인한 한국 SKU에 폭 선택 UI는 없었습니다. 이것만으로 한국 전체 와이드 미출시라고 단정하지 않습니다. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.",
+    editorComment: "2026-11-11 공개 원문 대조. 한국 남성 FN8454-006 정가 209,000원. 다른 SKU의 정가는 다를 수 있습니다. 한국 공식 265g (280mm) · 드롭 8mm. DOR 소개 40/32mm · 8mm. RR 248g과 사이즈 조건이 다름. RunRepeat 실측은 248g, 힐/전족부 39.7/30.1mm, 드롭 9.6mm입니다. DOR의 Matt은 낮은 토박스 용적을 지적했습니다. David은 부드럽고 높은 플랫폼의 흔들림과 미끄러운 도로 접지를 주의점으로 들었지만, Matt은 젖은 도로·트랙의 전족 접지를 양호하게 평가했습니다. 하부 폼은 DOR의 SR-02 명칭을 사용하며 RR 본문의 ReactX 표기와 충돌해 정확한 배합은 단정하지 않습니다. 2026-11-09 확인한 한국 FN8454-006에서 폭 선택 UI는 보이지 않았습니다. 이것만으로 한국 전체 와이드 미출시라고 단정하지 않습니다. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.",
     tags: [
       "레이싱",
       "템포",
@@ -71,9 +71,9 @@ export const shoe: Shoe = {
       "weight": "248g (RunRepeat 남성 US9 공시 기준). 한국 공식 265g (280mm) · 드롭 8mm. DOR 소개 40/32mm · 8mm. RR 248g과 사이즈 조건이 다름.",
       "stackHeight": "39.7/30.1mm (RunRepeat 힐/전족부)",
       "drop": "9.6mm (RunRepeat 실측). 공시 사양과 측정법·검체 조건이 다릅니다.",
-      "midsole": "ZoomX + SR-02 (하부 명칭 DOR 기준) · 경도 36.5 AC · SA 144/111 · 에너지 리턴 61/67% (힐/전족부, RunRepeat)",
+      "midsole": "ZoomX + SR-02 (하부 명칭 DOR 기준) · 상부 ZoomX 경도 36.5 AC(Asker C, RunRepeat) · SA 144/111 · 에너지 리턴 61/67% (힐/전족부, RunRepeat)",
       "plate": "전장 카본 파이버 Flyplate (한국 공식)",
-      "width": "RunRepeat 내부 최광폭 90.9mm / 엄지 부위 72.6mm. 확인한 한국 SKU에 폭 선택 UI는 없었습니다. 이것만으로 한국 전체 와이드 미출시라고 단정하지 않습니다.",
+      "width": "RunRepeat 내부 최광폭 90.9mm / 엄지 부위 72.6mm. 2026-11-09 확인한 한국 FN8454-006에서 폭 선택 UI는 보이지 않았습니다. 이것만으로 한국 전체 와이드 미출시라고 단정하지 않습니다.",
       "durability": "검증된 수명 km 미확인. 실험실 마모 깊이를 수명 km로 환산하지 않습니다.",
       "price": "한국 남성 FN8454-006 정가 209,000원. 다른 SKU의 정가는 다를 수 있습니다."
     },
@@ -82,13 +82,13 @@ export const shoe: Shoe = {
         "userType": "원문 기반 에디터 분석",
         "source": "editor",
         "sourceUrl": "https://runrepeat.com/nike-zoom-fly-6",
-        "text": "248g과 SA 144/111·에너지 리턴 61/67%는 해외 실험실 검체의 값입니다. 착지 방식별 실제 체감이나 기록 향상률·임상 효과를 뜻하지 않습니다. 확인한 한국 SKU에 폭 선택 UI는 없었습니다. 이것만으로 한국 전체 와이드 미출시라고 단정하지 않습니다."
+        "text": "248g과 SA 144/111·에너지 리턴 61/67%는 해외 실험실 검체의 값입니다. 착지 방식별 실제 체감이나 기록 향상률·임상 효과를 뜻하지 않습니다. 2026-11-09 확인한 한국 FN8454-006에서 폭 선택 UI는 보이지 않았습니다. 이것만으로 한국 전체 와이드 미출시라고 단정하지 않습니다."
       },
       {
         "userType": "외부 착화 의견 요약 · Doctors of Running",
         "source": "editor",
         "sourceUrl": "https://www.doctorsofrunning.com/nike-zoom-fly-6-review-2024-release/",
-        "text": "DOR은 낮은 토박스 용적과 부드럽고 높은 플랫폼의 흔들림, 젖은 노면의 접지를 주의점으로 들었습니다. 하부 폼은 DOR의 SR-02 명칭을 사용하며 RR 본문의 ReactX 표기와 충돌해 정확한 배합은 단정하지 않습니다."
+        "text": "DOR의 Matt은 낮은 토박스 용적을 지적했습니다. David은 부드럽고 높은 플랫폼의 흔들림과 미끄러운 도로 접지를 주의점으로 들었지만, Matt은 젖은 도로·트랙의 전족 접지를 양호하게 평가했습니다. 하부 폼은 DOR의 SR-02 명칭을 사용하며 RR 본문의 ReactX 표기와 충돌해 정확한 배합은 단정하지 않습니다."
       }
     ],
     similarShoes: [
@@ -127,7 +127,7 @@ export const shoe: Shoe = {
       }
     ],
     verification: {
-      "checkedAt": "2026-11-09",
+      "checkedAt": "2026-11-11",
       "scope": "한국 확인 SKU의 정가·폭과 해외 실험실 수치·구조·외부 착화 의견을 재확인했습니다.",
       "sources": [
         {
@@ -138,7 +138,7 @@ export const shoe: Shoe = {
         {
           "label": "RunRepeat 줌 플라이 6",
           "url": "https://runrepeat.com/nike-zoom-fly-6",
-          "note": "남성 US9 공시 기준. 248g · 39.7/30.1mm · 드롭 9.6mm. SA 144/111 · ER 61/67% · 36.5 AC."
+          "note": "남성 US9 공시 기준. 248g · 39.7/30.1mm · 드롭 9.6mm. SA 144/111 · ER 61/67% · 상부 ZoomX 경도 36.5 AC(Asker C, RunRepeat)."
         },
         {
           "label": "Doctors of Running 착화 리뷰",
