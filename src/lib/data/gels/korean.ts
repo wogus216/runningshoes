@@ -49,6 +49,11 @@ export const koreanGels: Gel[] = [
     },
     purchaseLinks: [
       {
+        "store": "UP 공식몰",
+        "url": "https://ultimatepotential.co.kr/product/detail.html?product_no=70",
+        "note": "프리 40g·6포 제품 페이지입니다. 카페인형과 구분하고 현재 가격·재고·결제 조건은 구매 전 확인하세요."
+      },
+      {
         "store": "쿠팡",
         "url": "https://link.coupang.com/a/haUiB6NJwy",
         "note": "2026-11-11 판매처 제목 기준 프리40g·6개 구성입니다. 카페인 제품과 구분하세요. 현재 판매 상태·쿠폰 조건·최종 가격은 판매처에서 확인하세요."
@@ -65,15 +70,21 @@ export const koreanGels: Gel[] = [
       "kolon-perfect-power-gel"
     ],
     verification: {
-      "checkedAt": "2026-11-10",
+      "checkedAt": "2026-11-11",
       "scope": "성분 표시의 기존 부분 재확인과 사진 변형 대조. 사진 출처가 미확인인 항목·현재 국내 포장·선택 옵션·판매 상태와 제품 전체 효과의 검증 완료 표지가 아닙니다.",
       "notes": [
         "공식 카테고리에서 카페인형 60mg과 별도 프리형을 확인했습니다. 이 제품군 전체를 무카페인으로 표시할 수 없습니다.",
         "현재 항목의 맛·변형을 특정하지 못해 탄수화물·열량·카페인·나트륨을 통합 수치로 싣지 않았습니다.",
         "공식 표시 용량은 40g입니다. 액체 제형이라는 이유로 40ml로 바꾸거나 물이 불필요하다고 결론 내리지 않습니다.",
-        "2026-11-11 사진 대조: 공식 러닝에너지젤 프리 40g 제품 예시. 카페인 제품과 구분하세요."
+        "2026-11-11 사진 대조: 공식 러닝에너지젤 프리 40g 제품 예시. 카페인 제품과 구분하세요.",
+        "2026-11-11 공식몰 제품번호 70에서 프리 40g·6포 변형을 확인했습니다. 판매·결제 가능 여부까지 확인한 것은 아닙니다."
       ],
       "sources": [
+        {
+          "title": "UP 공식 러닝에너지젤 프리 40g·6포 제품",
+          "url": "https://ultimatepotential.co.kr/product/detail.html?product_no=70",
+          "scope": "프리 변형·40g·6포 제품 식별. 구매 가능 여부와 상세 영양표 전체는 미확인"
+        },
         {
           "title": "UP 공식 제품 분류",
           "url": "https://ultimatepotential.co.kr/category/%EA%B4%80%EC%8B%AC%EB%B3%84-%EC%B6%94%EC%B2%9C/25/",
