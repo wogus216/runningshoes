@@ -852,7 +852,7 @@ export const posts_2026_06: BlogPost[] = [
     content: `<div class="tldr"><span class="tldr-label">먼저 확인할 것</span><ul><li>정강이가 아프다고 모두 신 스플린트는 아닙니다. 통증이 반복되거나 심해지면 다른 원인도 평가해야 합니다.</li><li>한 지점의 통증·걷기 불편·야간 통증이 있다면 달리기를 멈추고 진료받으세요.</li><li>드롭 8mm 이상이나 쿠션 점수를 정강이 통증의 치료 기준으로 사용하지 않습니다.</li></ul></div>
 
 <h2>신 스플린트는 어떤 통증인가요?</h2>
-<p>신 스플린트는 보통 정강이뼈 안쪽 가장자리를 따라 나타나는 운동 관련 통증을 말합니다. 달리기 빈도·시간·강도의 갑작스러운 변화와 관련될 수 있습니다. 다만 정강이 통증에는 피로골절·힘줄 문제·운동성 구획증후군 등 다른 원인도 있어, 위치만 보고 확진할 수 없습니다. <a href="https://www.orthoinfo.org/diseases--conditions/shin-splints/" target="_blank" rel="noopener noreferrer">AAOS 신 스플린트 안내</a></p>
+<p>신 스플린트는 보통 정강이뼈 안쪽 가장자리를 따라 나타나는 운동 관련 통증을 말합니다. 달리기 빈도·시간·강도의 갑작스러운 변화와 관련될 수 있습니다. 다만 정강이 통증에는 피로골절·힘줄 문제·운동성 구획증후군 등 다른 원인도 있어, 위치만 보고 확진할 수 없습니다. <a href="https://www.orthoinfo.org/bodypart/kneelower-leg/shin-splints/" target="_blank" rel="noopener noreferrer">AAOS 신 스플린트 안내</a></p>
 <h2>신발을 바꾸며 기다리지 말아야 할 때</h2>
 <p>뼈의 특정 지점이 계속 아프거나 걷기에도 통증이 생기고, 쉬거나 밤에 누워 있을 때까지 아프다면 골 스트레스 손상 평가가 필요할 수 있습니다. 초기에는 휴식으로 통증이 줄어드는 경우도 있어 ‘쉬면 괜찮다’는 이유로 배제하지 마세요. 의심되는 통증을 유발하는 활동은 중단하고 의료기관에 문의하세요. <a href="https://www.orthoinfo.org/diseases--conditions/sports-injuries/stress-fractures/" target="_blank" rel="noopener noreferrer">AAOS 골 스트레스 손상 안내</a></p>
 <h2>진료에 가져갈 정강이 통증 기록</h2>
@@ -870,7 +870,7 @@ export const posts_2026_06: BlogPost[] = [
 <h2>다시 달리기 전에 물어볼 질문</h2>
 <p>AAOS는 증상이 가라앉은 뒤 이전보다 낮은 빈도·시간·강도로 돌아가고 천천히 늘리도록 안내합니다. 정강이 통증의 원인과 회복 상태를 먼저 확인한 뒤, 어떤 활동을 허용하고 어떤 변화가 생기면 중단할지 상담하세요. 특정 주간 증가율이 모든 러너의 부상 방지를 보장하지는 않습니다.</p>
 <p>한 점에 집중되는 통증이 걱정된다면 <a href="/blog/stress-fracture-running-shoes-2026">피로골절 의심 시 상담 준비</a>도 확인하세요.</p>
-<h2>원문과 확인 범위</h2><ul><li><a href="https://www.orthoinfo.org/diseases--conditions/shin-splints/" target="_blank" rel="noopener noreferrer">AAOS: Shin Splints</a> — 증상·감별·운동 조절</li><li><a href="https://www.orthoinfo.org/diseases--conditions/sports-injuries/stress-fractures/" target="_blank" rel="noopener noreferrer">AAOS: Stress Fractures</a> — 골 스트레스 손상의 증상과 진료</li><li><a href="https://www.cochrane.org/evidence/CD013368_running-shoes-preventing-lower-limb-running-injuries-adults" target="_blank" rel="noopener noreferrer">Cochrane 2022</a> — 신발 유형과 부상 예방. 특정 질환 치료·개별 모델 시험 아님</li></ul><p><small>2026-11-09 원문 대조. 일반 정보와 상담 준비용 기록이며 개인의 진단·치료·달리기 복귀 허가를 대신하지 않습니다.</small></p>`,
+<h2>원문과 확인 범위</h2><ul><li><a href="https://www.orthoinfo.org/bodypart/kneelower-leg/shin-splints/" target="_blank" rel="noopener noreferrer">AAOS: Shin Splints</a> — 증상·감별·운동 조절</li><li><a href="https://www.orthoinfo.org/diseases--conditions/sports-injuries/stress-fractures/" target="_blank" rel="noopener noreferrer">AAOS: Stress Fractures</a> — 골 스트레스 손상의 증상과 진료</li><li><a href="https://www.cochrane.org/evidence/CD013368_running-shoes-preventing-lower-limb-running-injuries-adults" target="_blank" rel="noopener noreferrer">Cochrane 2022</a> — 신발 유형과 부상 예방. 특정 질환 치료·개별 모델 시험 아님</li></ul><p><small>2026-11-11 원문 대조. 일반 정보와 상담 준비용 기록이며 개인의 진단·치료·달리기 복귀 허가를 대신하지 않습니다.</small></p>`,
     updatedAt: "2026-11-11",
     faqs: [
       {
@@ -2570,10 +2570,10 @@ export const posts_2026_06: BlogPost[] = [
 <p>통증을 줄일 모델TOP3, 일괄 주간10% 증가 기준, 신발에 따른 예방률은 제공하지 않습니다. <a href="/best/achilles">아킬레스 통증과 신발 선택의 근거 안내</a>에서 구매 전 질문을 함께 정리할 수 있습니다.</p>
 <h2>확인한 원문과 적용 범위</h2>
 <ul>
-<li><a href="https://orthopt.org/uploads/content_files/files/chimenti_et_al_2024_achilles_pain_stiffness_and_muscle_power_deficits_midportion_achilles_tendinopathy_revision_2024.pdf" target="_blank" rel="noopener noreferrer">JOSPT 아킬레스 중간부 건병증 진료지침2024</a> — CPG2 권고 요약·CPG8 진단/감별. 부착부 통증·급성 파열에 같은 운동을 적용하는 지침이 아닙니다.</li>
+<li><a href="https://orthopt.org/uploads/content_files/files/chimenti_et_al_2024_achilles_pain_stiffness_and_muscle_power_deficits_midportion_achilles_tendinopathy_revision_2024.pdf" target="_blank" rel="noopener noreferrer">JOSPT 아킬레스 중간부 건병증 진료지침2024 PDF</a> (<a href="https://www.apta.org/patient-care/evidence-based-practice-resources/cpgs/achilles-pain-stiffness-and-muscle-power-deficits-midportion-achilles-tendinopathy-revision-2024-cpg" target="_blank" rel="noopener noreferrer">APTA 발행 안내</a>) — CPG2 권고 요약·CPG8 진단/감별. 부착부 통증·급성 파열에 같은 운동을 적용하는 지침이 아닙니다.</li>
 <li><a href="https://www.cochrane.org/evidence/CD013368_running-shoes-preventing-lower-limb-running-injuries-adults" target="_blank" rel="noopener noreferrer">Cochrane 2022: 러닝화와 하지 부상 예방</a> — 연구 검색2021년6월, 성인 러너·군인 대상. 제품별 치료 효과를 시험한 자료가 아닙니다.</li>
 </ul>
-<p><small>2026-11-09 원문 재확인. 이 글은 증상 기록·상담·착화 준비를 위한 정보이며 개인 진단이나 복귀 처방을 제공하지 않습니다.</small></p>
+<p><small>2026-11-11 원문 재확인. 이 글은 증상 기록·상담·착화 준비를 위한 정보이며 개인 진단이나 복귀 처방을 제공하지 않습니다.</small></p>
 `,
     faqs: [
       {
