@@ -735,11 +735,11 @@ export const novemberEvents: MarathonEvent[] = [
     ],
     status: "접수중",
     isMajor: false,
-    website: "http://gofree.seoul.co.kr/",
+    website: "https://gofree.seoul.co.kr/",
     registrationStart: "2026-09-01",
-    registrationNote: "요강 접수 안내는 9월 1일10시부터 선착순이지만 신청 안내에는 3월 3일·5km얼리버드 등 불일치 문구가 남아 있다. 현재 잔여수량·실제 결제 가능 여부를 이번에 조회하지 않았다. 환불 기한 10월 21일/29일도 상충해 당시 적용안내·개인 처리 상태를 사무국에 확인해야 한다.",
-    lastVerified: "2026-11-10",
-    description: "11월 21일 여의도공원 문화의마당 하프·10km일정. 공식 요강과 홈은08:00출발·일반 각70,000원을 안내한다. 환불 기한은 요강 10월 29일17시와FAQ/신청안내 10월 21일17시가 달라 적용조건 확인 대상이다. 기념품 상세의 아식스20%쿠폰은 제3자 정보제공 동의자·일부상품 제외 조건이며 실제 지급 완료와 다르다.",
+    registrationNote: "요강 접수 안내는 9월 1일10시부터 선착순이지만 신청 안내에는 3월 3일·5km얼리버드 등 불일치 문구가 남아 있다. 현재 잔여수량·실제 결제 가능 여부는 확인하지 못했다. 공식 FAQ·참가자 유의사항의 환불 신청 기한은 10월 21일17시로 이미 지났다. 과거 인용된 10월 29일의 원문은 이번에 재확인하지 못해 적용 기한으로 안내하지 않는다.",
+    lastVerified: "2026-11-11",
+    description: "11월 21일 여의도공원 문화의마당 하프·10km일정. 공식 요강과 홈은08:00출발·일반 각70,000원을 안내한다. 공식 FAQ·참가자 유의사항은 환불 신청 기한을 10월 21일17시로 안내한다. 참가자 유의사항 안의 10km 제한시간은 1시간15분과 1시간30분이 서로 달라 최종 운영 기준을 사무국에 확인해야 한다. 기념품 상세의 아식스20%쿠폰은 제3자 정보제공 동의자·일부상품 제외 조건이며 실제 지급 완료와 다르다.",
     raceKit: {
       "items": [
         "티셔츠(가슴둘레 사이즈표)",
@@ -765,6 +765,15 @@ export const novemberEvents: MarathonEvent[] = [
         }
       ],
       "startTime": "08:00"
+    },
+    factCheck: {
+      checkedAt: "2026-11-11",
+      sources: [
+        { title: "공식 대회요강 · 날짜·종목·출발·참가비", url: "https://gofree.seoul.co.kr/guide/mainpoints?gubun=mainpoints" },
+        { title: "공식 FAQ · 환불 신청 기한", url: "https://gofree.seoul.co.kr/multiboard/skin/fnq/board_list?boardid=GFR_fnq&gubun=GFR&roundid=1" },
+        { title: "공식 참가자 유의사항 · 환불·제한시간 상충", url: "https://gofree.seoul.co.kr/receive_asics/info/notice_GFR?gubun=GFR" },
+      ],
+      note: "10월 29일 환불 기한의 원문을 재확인하지 못해 확정 주장으로 쓰지 않는다. 10km 제한시간은 같은 공식 페이지 안에서도 1시간15분·1시간30분으로 충돌한다. 신청 버튼의 현재 잔여·결제 가능 상태는 확인하지 못했다.",
     },
   },
   {
