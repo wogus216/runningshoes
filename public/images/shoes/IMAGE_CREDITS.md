@@ -559,3 +559,13 @@ Horizon8의 기존 BOA 다이얼 신발 사진 5장은 공식 WAVE HORIZON 8과 
 ## 2026-11-11 브룩스 글리세린 맥스 사진 교체
 
 초대 글리세린 맥스에 잘못 들어간 2세대 사진 5장을 [브룩스 일본 공식 초대 상품](https://brooksrunning.co.jp/products/brm4473-gry)의 110447-158 동일 색상 사진으로 교체했습니다. 측면·사선·뒤·위·밑창 원본 URL과 해시는 비공개 감사 장부에 보관했습니다. 글리세린 맥스 2의 상단 사진에 들어간 양말 이미지는 [브룩스 공식 110479-091 상단 사진](https://www.brooksrunning.com/en_us/mens/shoes/road-running-shoes/glycerin-max-2/110479.html?dwvar_110479_color=091)으로 교체했습니다. 기존 2세대 측면 사진의 원래 다운로드 경로와 개별 사진 사용 권리는 확인되지 않았습니다. 해외 사진 품번은 한국 현재 판매 조건의 근거가 아닙니다.
+
+## 2026-11-11 리닝 레드헤어 9 사진 대조
+
+기존 12장은 아래 **독립 판매처**의 같은 색상·구도 사진과 대조했습니다. 최초 촬영자, 사진 사용 권리, 현 파일의 최초 다운로드 기록은 확인되지 않았습니다. 판매처를 제조사 공식 출처로 표시하지 않습니다.
+
+| 모델 | 사진 품번·색상 | 판매 사진 대조 |
+|---|---|---|
+| 레드헤어 9 | ARPW003-8 · Milk White | [VJsneaker](https://vjsneaker.com/products/li-ning-red-hare-9-milk-white-arpw003-8-running-shoe-unisex-white) |
+| 레드헤어 9 프로 | ARPW001-39 · Clear Blue | [VJsneaker](https://vjsneaker.com/products/li-ning-red-hare-9-pro-cushioning-slip-resistant-abrasion-resistant-breathable-lightweight-rebound-low-top-casual-8) |
+| 레드헤어 9 울트라 | ARPW007-2 · Champagne White | [VJsneaker](https://vjsneaker.com/en-en/products/li-ning-red-hare-9-ultra-cushioning-slip-resistant-abrasion-resistant-breathable-lightweight-rebound-low-top) |
