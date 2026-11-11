@@ -296,6 +296,7 @@ export const koreanGels: Gel[] = [
     nutritionFacts: {
       "calories": 120,
       "totalCarbs": 30,
+      "carbSource": "말토덱스트린 + 과당",
       "magnesium": 50,
       "servingSize": 41,
       "servingUnit": "g"
@@ -305,6 +306,7 @@ export const koreanGels: Gel[] = [
       "estimatedOxidationRate": "이 제품의 독립 실측 산화율 미확인. 섭취량 계산과 체내 산화율은 다릅니다.",
       "osmolalityType": "standard",
       "osmolalityBasis": "unknown",
+      "dualSource": true,
       "scienceVerdict": "제조사 표시 성분은 제품 선택의 자료입니다. 위장 안정성·흡수 우월성·근육경련 예방이나 목표 기록을 보장하는 비교 등급으로 쓰지 않습니다."
     },
     giTolerance: {
@@ -315,7 +317,7 @@ export const koreanGels: Gel[] = [
       "gutTrainingNeeded": true
     },
     flavorProfile: {
-      "flavors": [],
+      "flavors": ["매실", "청귤", "핑크자몽", "레몬", "사과", "자몽"],
       "texture": "독립 실사용 평가 미확인",
       "aftertaste": "독립 실사용 평가 미확인",
       "tasteFatigueRisk": "미확인"
@@ -333,18 +335,13 @@ export const koreanGels: Gel[] = [
     },
     purchaseLinks: [
       {
-        "store": "네이버 쇼핑",
-        "url": "https://smartstore.naver.com/riyoo/products/13716053649",
-        "note": "현재 상품의 정확한 맛·41g 포장·묶음 수량은 확인하지 못했습니다. Mag-on 에너지젤과 별도 주레 제품을 구분하세요."
-      },
-      {
         "store": "쿠팡",
         "url": "https://link.coupang.com/a/haUcCGGfXo",
         "note": "2026-11-11 판매처 제목은 매실맛12개입 TW210251인데 중량 속성은1g으로 표시됩니다. 정확 포당 중량·묶음 구성을 확인하세요. 현재 판매 상태·쿠폰 조건·최종 가격은 판매처에서 확인하세요."
       }
     ],
     features: [
-      "제조사 에너지젤 공통 표시를 사용했습니다. 별도 주레 제품군과 구분합니다.",
+      "일본 제조사 에너지젤 6종의 공통 영양표와 말토덱스트린·과당 원료를 확인했습니다. 배합 비율과 국내 판매 맛은 미확인입니다. 복숭아·바나나 주레는 별도 제품입니다.",
       "레몬·핑크자몽·청귤에는 카페인25mg을 표시하지만 모든 맛이 같은 것은 아닙니다. 매실은 소금상당량0.5g, 사과는0.14g으로 다릅니다."
     ],
     reviews: [],
@@ -354,10 +351,10 @@ export const koreanGels: Gel[] = [
       "gu-roctane-energy-gel"
     ],
     verification: {
-      "checkedAt": "2026-11-10",
+      "checkedAt": "2026-11-11",
       "scope": "성분 표시의 기존 부분 재확인과 사진 변형 대조. 사진 출처가 미확인인 항목·현재 국내 포장·선택 옵션·판매 상태와 제품 전체 효과의 검증 완료 표지가 아닙니다.",
       "notes": [
-        "제조사 에너지젤 공통 표시를 사용했습니다. 별도 주레 제품군과 구분합니다.",
+        "일본 제조사 에너지젤 6종의 공통 영양표와 말토덱스트린·과당 원료를 확인했습니다. 배합 비율과 국내 판매 맛은 미확인입니다. 복숭아·바나나 주레는 별도 제품입니다.",
         "레몬·핑크자몽·청귤에는 카페인25mg을 표시하지만 모든 맛이 같은 것은 아닙니다. 매실은 소금상당량0.5g, 사과는0.14g으로 다릅니다.",
         "마그네슘 함유를 근육경련 예방 효과나 개인별 위장 안정성의 증명으로 사용하지 않습니다.",
         "2026-11-11 사진 대조: 일본 공식 에너지젤 레몬 제품 예시. 맛별 카페인·표시를 따로 확인하세요."
@@ -366,7 +363,7 @@ export const koreanGels: Gel[] = [
         {
           "title": "Mag-on 공식 제품·성분표",
           "url": "https://mag-on.net/products.html",
-          "scope": "에너지젤41g 공통 영양과 맛별 카페인·소금 차이"
+          "scope": "일본 에너지젤6종의41g·120kcal·탄수화물30g·마그네슘50mg, 말토덱스트린·과당 원료와 맛별 카페인·소금 차이"
         },
         {
           "title": "제조사 공식 이미지",

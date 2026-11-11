@@ -59,7 +59,7 @@ export const premiumGels: Gel[] = [
       {
         "store": "네이버 쇼핑",
         "url": "https://smartstore.naver.com/energear/products/12182873112",
-        "note": "현재 판매 옵션·묶음 수량과 Gel 100 40g 포장의 동일성은 확인하지 못했습니다. 구매 전 상품명과 영양표를 대조하세요."
+        "note": "2026-11-11 판매처 제목과 필수 옵션에서 일반 GEL100 12개입·해외직배송 구성을 확인했습니다. 판매처 실물 포장의 영양표와 최종 결제 가능 여부는 확인하지 못했습니다."
       }
     ],
     features: [
@@ -157,7 +157,7 @@ export const premiumGels: Gel[] = [
       {
         "store": "네이버 쇼핑",
         "url": "https://smartstore.naver.com/energear/products/12846699102",
-        "note": "현재 판매 옵션·맛·묶음 수량은 확인하지 못했습니다. Beta Fuel 정확 변형과 포당 탄수화물 표시를 구매 전 대조하세요."
+        "note": "2026-11-11 판매처에 해외직배송 30개입과 무맛·딸기·오렌지 필수 옵션 목록이 표시됐습니다. 맛별 포장·영양표와 최종 결제 가능 여부는 별도 확인하세요."
       },
       {
         "store": "쿠팡",
@@ -251,7 +251,7 @@ export const premiumGels: Gel[] = [
       {
         "store": "롯데온",
         "url": "https://www.lotteon.com/p/product/LO2768021531",
-        "note": "현재 판매 옵션의 정확한 맛·76g 포장·묶음 수량은 확인하지 못했습니다. 표시한 200kcal은 공식 레몬 변형 기준입니다."
+        "note": "2026-11-11 판매처 제목은 피넛 허니 76g·24개입이며 옵션은 땅콩과 꿀·24개(1팩)로 표시됐습니다. 이 맛의 영양표는 미확인이므로 본문의 공식 레몬 200kcal을 그대로 적용하지 마세요. 최종 결제 가능 여부는 미확인입니다."
       }
     ],
     features: [

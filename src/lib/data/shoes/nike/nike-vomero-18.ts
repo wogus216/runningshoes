@@ -71,7 +71,7 @@ export const shoe: Shoe = {
       "weight": "298g (RunRepeat 남성US9 공시 기준). 한국 남성 약325g(280mm)·여성 약263g(250mm), 드롭10mm. 여성와이드 상품 소개 스택46/36mm. DOR 소개44/34mm·10mm. RR 실측과 분리.",
       "stackHeight": "42.5/28.6mm (RunRepeat 힐/전족부). ",
       "drop": "13.9mm (RunRepeat 실측). 공시 조건은 무게 항목에 구분.",
-      "midsole": "ZoomX 상부 + ReactX 하부 · 30.5 AC · 힐/전족부 SA 147/116 · 에너지 리턴 56.9/58.9% (RunRepeat)",
+      "midsole": "ZoomX 상부 + ReactX 하부 · 상부 ZoomX 경도30.5 AC(Asker C, RunRepeat) · 힐/전족부 SA 147/116 · 에너지 리턴 56.9/58.9% (RunRepeat)",
       "plate": "확인한 원문 설명에 전장 카본 플레이트는 보고되지 않음",
       "width": "RunRepeat 내부 최광폭 95.6mm / 엄지 부위 69.6mm / 엄지 높이 26.2mm. 한국 남녀Wide 상품 확인. 제조사 안내의 약6.35mm 증가는 토박스 둘레이며 내부 직선 너비 증가가 아닙니다. X-Wide 전체 미판매 여부는 이번에 확인하지 못했습니다.",
       "durability": "검증된 공통 수명km 미확인. 짧은 착화·마모 깊이를 수명km로 환산하지 않습니다.",
@@ -113,12 +113,13 @@ export const shoe: Shoe = {
     purchaseLinks: [
       {
         "store": "네이버",
-        "url": "https://naver.me/xll2Pioq"
+        "url": "https://naver.me/xll2Pioq",
+        "note": "2026-11-11 연결 판매처의 보메로18 상품과 일반·엑스트라와이드 옵션 목록을 확인했습니다. 폭 이름은 판매처 표기이며 제조사 폭코드·세부 품번과의 일치 및 사이즈별 결제 가능 여부는 확인하지 못했습니다."
       }
     ],
     verification: {
-      "checkedAt": "2026-11-09",
-      "scope": "한국 확인SKU의 정가·폭, 해외 실험실 수치·구조·외부 착화 의견을 재확인했습니다. 제품 전체 검증 완료 표지가 아닙니다.",
+      "checkedAt": "2026-11-11",
+      "scope": "2026-11-09 한국 공식 페이지 관찰 기록과2026-11-11 공개된 제조사·실험실·외부 착화 원문을 대조했습니다. 연결 판매처의 모델·옵션 이름도 확인했으나 현재 사이즈별 결제 가능 여부와 제품 전체 검증 완료 표지는 아닙니다.",
       "sources": [
         {
           "label": "보메로18 남성 로드러닝화",
@@ -138,7 +139,7 @@ export const shoe: Shoe = {
         {
           "label": "RunRepeat 보메로 18",
           "url": "https://runrepeat.com/nike-vomero-18",
-          "note": "남성US9 공시 기준. 298g · 42.5/28.6mm · 드롭13.9mm. 힐/전족부 SA 147/116 · ER 56.9/58.9%. "
+          "note": "남성US9 공시 기준. 298g · 42.5/28.6mm · 드롭13.9mm. 힐/전족부 SA 147/116 · ER 56.9/58.9%. 경도30.5 AC는 상부 ZoomX의 측정값입니다."
         },
         {
           "label": "Doctors of Running 착화 리뷰",
