@@ -584,7 +584,16 @@ export const octoberEvents: MarathonEvent[] = [
         }
       ]
     },
-    postRaceNote: "자신이 결제한 러너블·더현대Hi 주문의 취소 표시·실제 환급을 각각 확인한다. 취소 게시물 원문 재접근 실패로 구매처별 자동취소·별도 신청 필요 여부를 새로 확정하지 않았다. 확인된 기업 답변 보도는 티켓 환불 범위이며 교통·숙박비·추가 상품 비용 전액 보상 약속을 확인한 것은 아니다. https://www.economytalk.kr/news/articleView.html?idxno=424784",
+    postRaceNote: "자신이 결제한 러너블·더현대Hi 주문의 취소 표시·실제 환급을 각각 확인한다. 취소 게시물 원문 재접근 실패로 구매처별 자동취소·별도 신청 필요 여부를 새로 확정하지 않았다. 확인된 기업 답변 보도는 티켓 환불 범위이며 교통·숙박비·추가 상품 비용 전액 보상 약속을 확인한 것은 아니다. 별도 상품인 글로벌 버추얼런 패키지는 10/29~11/13 판매 안내·29,000원, 참여기간 11/16~12/13이며 기존 서울 참가권 자동 전환 근거는 확인되지 않았다. https://www.economytalk.kr/news/articleView.html?idxno=424784",
+    factCheck: {
+      checkedAt: '2026-11-11',
+      sources: [
+        { title: '쿠키런 그랜드 페스티벌 공식 버추얼런 안내', url: 'https://www.cookierungrandfestival.com/ko' },
+        { title: '쿠키런 공식 인스타그램 판매 공지', url: 'https://www.instagram.com/p/DfD4nmgiWke/' },
+        { title: '쿠키런 공식 스토어 별도 패키지', url: 'https://brand.naver.com/cookierun/products/13834664429' },
+      ],
+      note: '서울 오프라인 대회 취소·환불과 별개인 유료 글로벌 버추얼런 정보입니다. 옵션별 재고·실결제·전체 패키지 구성·개인 환급 완료는 미인증.',
+    },
   },
   {
     id: "busan-sea-marathon-2026",
