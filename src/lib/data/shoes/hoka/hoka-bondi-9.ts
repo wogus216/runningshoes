@@ -80,7 +80,7 @@ export const shoe: Shoe = {
       "stackHeight": "41.3/32.2mm (RunRepeat 힐/전족부). ",
       "drop": "9.1mm (RunRepeat 실측). 공시 조건은 무게 항목에 구분.",
       "midsole": "Supercritical EVA · 43 AC · 힐/전족부 SA 146/133 · 에너지 리턴 60.2/60.3% (RunRepeat)",
-      "plate": "확인한 원문 설명에 전장 카본 플레이트는 보고되지 않음",
+      "plate": "플레이트 없음(RTINGS 본디 9 직접 시험 원문: Plate None).",
       "width": "RunRepeat 내부 최광폭 94.1mm / 엄지 부위 72.5mm / 엄지 높이 29.6mm. 한국 판매 폭은 이번에 확인하지 못했습니다. RR 내부 최광폭94.1mm와 엄지 부위72.5mm를 외부 플랫폼 폭과 구분하세요.",
       "durability": "검증된 공통 수명km 미확인. 짧은 착화·마모 깊이를 수명km로 환산하지 않습니다.",
       "price": "한국 공식 연결 스토어에서 본디9 신발 상품의 현재 정가·성별·폭·재고를 확인하지 못했습니다. 검색 부재를 단종·미출시로 해석하지 않습니다."
@@ -111,6 +111,11 @@ export const shoe: Shoe = {
       "checkedAt": "2026-11-11",
       "scope": "한국 공식 연결 스토어의 검색 결과와 해외 실험실 수치·구조·외부 착화 의견을 대조했습니다. 한국 현재 정가·판매 폭·재고는 확인하지 못했습니다. 한국 스토어 검색은 2026-11-09 관찰 범위이며 제품 전체 검증 완료 표지가 아닙니다.",
       "sources": [
+        {
+          "label": "RTINGS 본디 9 직접 시험 · 플레이트 확인",
+          "url": "https://www.rtings.com/running-shoes/reviews/hoka/bondi-9",
+          "note": "남성 US9 Drizzle/Downpour 검체의 Other Features에서 Plate None을 명시합니다. RunRepeat 수치와 검체 조건을 혼합하지 않습니다."
+        },
         {
           "label": "한국 공식 연결 스토어 확인 범위",
           "url": "https://linktr.ee/hoka_korea",
