@@ -6,7 +6,8 @@ export const shoe: Shoe = {
     slug: "saucony-ride-18",
     brand: "Saucony",
     name: "라이드 18",
-  imageCaption: "라이드 18 사진의 현 파일 원본 경로와 색상 품번은 아직 확인되지 않았습니다. 사진만으로 판매 규격·재고를 판단하지 마세요.",
+  imageCaption: "2026-11-11 써코니 공식 남성 라이드 18 S21000-163 사진입니다. 한국 여성 와이드 판매 상품과는 성별·폭·색상 조건이 다릅니다.",
+  imageSource: { title: "써코니 공식 남성 라이드 18 갤러리", url: "https://www.saucony.com/UK/en_GB/ride-18/59943M.html" },
     image: "/images/shoes/saucony/ride18.webp",
     images: [
       "/images/shoes/saucony/ride18/side.webp",

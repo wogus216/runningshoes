@@ -6,7 +6,8 @@ export const shoe: Shoe = {
     slug: "saucony-endorphin-trainer",
     brand: "Saucony",
     name: "엔돌핀 트레이너",
-  imageCaption: "엔돌핀 트레이너 사진의 현 파일 원본 경로와 색상 품번은 아직 확인되지 않았습니다. 사진만으로 판매 규격·재고를 판단하지 마세요.",
+  imageCaption: "엔돌핀 트레이너 한국 공식 갤러리의 S20996-110(WHITE/NAVY) 사진입니다. 사진 품번은 현재 선택 가능한 사이즈·재고를 뜻하지 않습니다.",
+  imageSource: { title: "써코니 코리아 공식 상품 갤러리", url: "https://www.saucony.co.kr/product/detail.html?product_no=214" },
     image: "/images/shoes/saucony/endorphin_Trainer.webp",
     images: [
       "/images/shoes/saucony/endorphintrainer/main.webp",
@@ -114,13 +115,18 @@ export const shoe: Shoe = {
       }
     ],
     verification: {
-      "checkedAt": "2026-11-09",
+      "checkedAt": "2026-11-11",
       "scope": "한국 상품 조건, 해외 실험실·제조사 공시와 외부 착화 의견의 확인 범위를 구분했습니다. 제품 전체 검증 완료 표지가 아닙니다.",
       "sources": [
         {
           "label": "한국 MEN · S20996-110 · M(일반)",
           "url": "https://saucony.co.kr/product/detail.html?cate_no=177&display_group=1&product_no=214",
           "note": "확인 상품의 정가·당시 할인·사이즈별 상태만 적용. 결제재고 보장 아님."
+        },
+        {
+          "label": "한국 공식 갤러리 · S20996-110 · WHITE/NAVY",
+          "url": "https://www.saucony.co.kr/product/detail.html?product_no=214",
+          "note": "대표·상단·뒤·양측·밑창 사진을 이 상품의 공식 갤러리 원본으로 교체했습니다. 사진만으로 현재 판매 상태를 확인하지 않습니다."
         },
         {
           "label": "RunRepeat 동세대 실험실 원문",

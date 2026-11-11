@@ -6,7 +6,8 @@ export const shoe: Shoe = {
     slug: "saucony-endorphin-azura",
     brand: "Saucony",
     name: "엔돌핀 아주라",
-  imageCaption: "엔돌핀 아주라 사진의 현 파일 원본 경로와 색상 품번은 아직 확인되지 않았습니다. 사진만으로 판매 규격·재고를 판단하지 마세요.",
+  imageCaption: "2026-11-11 써코니 코리아 공식 갤러리의 엔돌핀 아주라 S101329-1005 사진입니다. 사진 품번은 현재 선택 가능한 사이즈·재고를 뜻하지 않습니다.",
+  imageSource: { title: "써코니 코리아 공식 상품 갤러리", url: "https://www.saucony.co.kr/product/detail.html?product_no=521" },
     image: "/images/shoes/saucony/endorphinazura/side.webp",
     images: [
       "/images/shoes/saucony/endorphinazura/side.webp",
