@@ -193,7 +193,7 @@ export const classicGels: Gel[] = [
   {
     id: "k-yanggang",
     slug: "k-yanggang",
-    brand: "K-양갱",
+    brand: "식품군",
     name: "양갱 (팥/밤)",
     category: "식품군",
     description: "양갱은 제조사·팥/밤·중량에 따라 표시가 다른 식품입니다. 특정 제품이 정해지지 않은 이 항목에 대표 영양 수치를 적용하지 않습니다.",
@@ -254,6 +254,11 @@ export const classicGels: Gel[] = [
         "2026-11-11 크라운 공식 밤양갱 사진으로 예시를 바꿨습니다. 이 특정 제품의 표시를 양갱 식품군 전체의 영양·중량·알레르기 기준으로 적용하지 않습니다."
       ],
       "sources": [
+        {
+          "title": "크라운 공식 밤양갱 제품",
+          "url": "https://www.crown.co.kr/product/view?idx=114",
+          "scope": "사진 속 특정 제품의 제조사·50g·밀 알레르기 표시 확인. 양갱 식품군 전체 기준 아님"
+        },
         {
           "title": "AIS 일반 보급·제품 표시 안내",
           "url": "https://www.ausport.gov.au/ais/nutrition/supplements/group_a/sports-foods2/sports-gels",
