@@ -54,7 +54,7 @@ export const posts_2026_02: BlogPost[] = [
 <h2>보행 분석을 받는다면 물어볼 질문</h2><ol><li>서 있는 발 모양과 실제 움직임 중 무엇을 측정했나요?</li><li>어떤 속도·노면·신발 조건에서 관찰했나요?</li><li>측정 결과가 내 증상과 관련된다는 판단의 근거는 무엇인가요?</li><li>이 결과로 알 수 없는 부분과 진료가 필요한 부분은 무엇인가요?</li><li>신발·인솔을 바꾼다면 목적과 재평가 방법은 무엇인가요?</li></ol>
 <h2>신발의 구조 이름을 치료 등급으로 바꾸지 마세요</h2><p>GuideRails·H-Frame·Stability Plane처럼 이름이 다른 구조는 모델과 세대를 확인해 비교할 내용입니다. 이름만 보고 교정 강도·부상 예방 순위를 정하지 않습니다. 실제 양말·인솔을 포함한 시착에서는 앞발·아치 압박과 뒤꿈치 고정을 기록하고, 정확한 판매 폭·사이즈와 교환 조건을 확인하세요. <a href="/blog/stability-shoes-self-diagnosis-fit-guide-2026">안정화 선택과 세대별 확인 질문</a>에서 이어 볼 수 있습니다.</p>
 <h2>확인한 원문</h2><ul><li><a href="https://my.clevelandclinic.org/health/diseases/22474-overpronation" target="_blank" rel="noopener noreferrer">Cleveland Clinic Overpronation</a> — 용어·진찰·보행 평가·증상 상담</li><li><a href="https://www.nhs.uk/conditions/flat-feet/" target="_blank" rel="noopener noreferrer">NHS Flat feet</a> — 무증상과 평가가 필요한 증상의 구분</li><li><a href="https://www.cochrane.org/evidence/CD013368_running-shoes-preventing-lower-limb-running-injuries-adults" target="_blank" rel="noopener noreferrer">Cochrane2022</a> — 신발 지정과 부상 예방 연구의 범위</li></ul>
-<p><small>2026-11-09 원문 대조. 일반 정보와 상담 준비용 기록이며 개인의 진단·치료·러닝 복귀 허가를 대신하지 않습니다.</small></p>`,
+<p><small>2026-11-11 원문 대조. 일반 정보와 상담 준비용 기록이며 개인의 진단·치료·러닝 복귀 허가를 대신하지 않습니다.</small></p>`,
     author: "산초 에디터",
     publishedAt: "2026-02-04",
     category: "guide",
