@@ -6,6 +6,8 @@ export const shoe: Shoe = {
     slug: "brooks-ghost-18",
     brand: "Brooks",
     name: "고스트 18",
+  imageCaption: "고스트 18 사진은 브룩스 한국 공식 갤러리 수집 기록을 확인한 여성용 White Medium 색상입니다. 사진 품번은 현재 재고를 뜻하지 않습니다.",
+  imageSource: {"title":"Brooks 한국 공식 상품 갤러리","url":"https://brooksrunning.co.kr/product/0617-wed-1100-%EC%97%AC%EC%84%B1-%EA%B3%A0%EC%8A%A4%ED%8A%B8-18-%ED%99%94%EC%9D%B4%ED%8A%B8-medium/864/"},
     image: "/images/shoes/brooks/ghost18/side.webp",
     images: [
       "/images/shoes/brooks/ghost18/side.webp",

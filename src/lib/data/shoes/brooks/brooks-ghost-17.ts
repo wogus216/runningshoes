@@ -6,6 +6,8 @@ export const shoe: Shoe = {
     slug: "brooks-ghost-17",
     brand: "Brooks",
     name: "고스트 17",
+  imageCaption: "고스트 17 사진은 Brooks 110442-048 Oyster Mushroom/Orange/Ebony의 공식 상품 정보와 모델·색상 외관을 대조했습니다. 현 파일의 원본 다운로드 경로는 미확인입니다. 사진 품번은 한국 현재 판매 조건을 뜻하지 않습니다.",
+  imageSource: {"title":"Brooks 공식 모델·색상 대조","url":"https://www.brooksrunning.com/en_us/mens/shoes/road-running-shoes/ghost-17/1104422E041.110.html"},
     image: "/images/shoes/brooks/ghost17/side.webp",
     images: [
       "/images/shoes/brooks/ghost17/side.webp",

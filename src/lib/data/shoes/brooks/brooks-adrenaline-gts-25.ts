@@ -6,6 +6,8 @@ export const shoe: Shoe = {
     slug: "brooks-adrenaline-gts-25",
     brand: "Brooks",
     name: "아드레날린 GTS 25",
+  imageCaption: "아드레날린 GTS 25 사진은 Brooks 110454-1D-123 White/Spellbound/Orange의 공식 상품 정보와 모델·색상 외관을 대조했습니다. 현 파일의 원본 다운로드 경로는 미확인입니다. 사진 품번은 한국 현재 판매 조건을 뜻하지 않습니다.",
+  imageSource: {"title":"Brooks 공식 모델·색상 대조","url":"https://www.brooksrunning.com/en_us/mens/shoes/road-running-shoes/adrenaline-gts-25/1104541D123.070.html"},
     image: "/images/shoes/brooks/adrenalinegts25/side.webp",
     images: [
       "/images/shoes/brooks/adrenalinegts25/side.webp",

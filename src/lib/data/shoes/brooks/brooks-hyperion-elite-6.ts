@@ -6,6 +6,8 @@ export const shoe: Shoe = {
   slug: 'brooks-hyperion-elite-6',
   brand: 'Brooks',
   name: '하이페리온 엘리트 6',
+  imageCaption: "하이페리온 엘리트 6 사진은 브룩스 한국 공식 갤러리 수집 기록을 확인한 남녀공용 Tigerlily Medium 색상입니다. 사진 품번은 현재 재고를 뜻하지 않습니다.",
+  imageSource: {"title":"Brooks 한국 공식 상품 갤러리","url":"https://brooksrunning.co.kr/product/%EB%82%A8%EB%85%80%EA%B3%B5%EC%9A%A9-%ED%95%98%EC%9D%B4%ED%8E%98%EB%A6%AC%EC%98%A8-%EC%97%98%EB%A6%AC%ED%8A%B8-6%ED%83%80%EC%9D%B4%EA%B1%B0%EB%A6%B4%EB%A6%ACmedium/913/category/137/display/1/"},
   image: '/images/shoes/brooks/hyperionelite6/side.webp',
   images: [
     '/images/shoes/brooks/hyperionelite6/side.webp',

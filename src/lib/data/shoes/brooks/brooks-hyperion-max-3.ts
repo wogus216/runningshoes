@@ -6,6 +6,8 @@ export const shoe: Shoe = {
     slug: "brooks-hyperion-max-3",
     brand: "Brooks",
     name: "하이페리온 맥스 3",
+  imageCaption: "하이페리온 맥스 3 사진은 Brooks 110467-164 White/Gray Mist/Green의 공식 상품 정보와 모델·색상 외관을 대조했습니다. 현 파일의 원본 다운로드 경로는 미확인입니다. 사진 품번은 한국 현재 판매 조건을 뜻하지 않습니다.",
+  imageSource: {"title":"Brooks 공식 모델·색상 대조","url":"https://www.brooksrunning.com/en_gb/mens/road-running-shoes/hyperion-max-3/110467.html?dwvar_110467_color=164"},
     image: "/images/shoes/brooks/hyperionmax3/side.webp",
     images: [
       "/images/shoes/brooks/hyperionmax3/side.webp",

@@ -6,6 +6,8 @@ export const shoe: Shoe = {
     slug: "brooks-glycerin-22",
     brand: "Brooks",
     name: "글리세린 22",
+  imageCaption: "글리세린 22 사진은 Brooks 110445-023 Black/Orange의 공식 상품 정보와 모델·색상 외관을 대조했습니다. 현 파일의 원본 다운로드 경로는 미확인입니다. 사진 품번은 한국 현재 판매 조건을 뜻하지 않습니다.",
+  imageSource: {"title":"Brooks 공식 모델·색상 대조","url":"https://www.brooksrunning.com/en_us/mens/shoes/road-running-shoes/glycerin-22/110445.html"},
     image: "/images/shoes/brooks/glycerin22/side.webp",
     images: [
       "/images/shoes/brooks/glycerin22/side.webp",

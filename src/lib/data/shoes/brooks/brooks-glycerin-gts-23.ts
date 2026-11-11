@@ -6,6 +6,8 @@ export const shoe: Shoe = {
   slug: 'brooks-glycerin-gts-23',
   brand: 'Brooks',
   name: '글리세린 GTS 23',
+  imageCaption: "글리세린 GTS 23 사진은 브룩스 한국 공식 갤러리 수집 기록을 확인한 남성용 Black Medium 색상입니다. 사진 품번은 현재 재고를 뜻하지 않습니다.",
+  imageSource: {"title":"Brooks 한국 공식 상품 갤러리","url":"https://brooksrunning.co.kr/product/detail.html?product_no=776"},
   image: '/images/shoes/brooks/glyceringts23/side.webp',
   images: [
     '/images/shoes/brooks/glyceringts23/side.webp',

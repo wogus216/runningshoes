@@ -6,6 +6,8 @@ export const shoe: Shoe = {
   slug: 'brooks-hyperion-elite-5',
   brand: 'Brooks',
   name: '하이페리온 엘리트 5',
+  imageCaption: "하이페리온 엘리트 5 사진은 Brooks 100049-681 Pink Clay/Atomizer Blue의 공식 상품 정보와 모델·색상 외관을 대조했습니다. 현 파일의 원본 다운로드 경로는 미확인입니다. 사진 품번은 한국 현재 판매 조건을 뜻하지 않습니다.",
+  imageSource: {"title":"Brooks 공식 모델·색상 대조","url":"https://www.brooksrunning.com/en_us/featured/unisex-running-shoes/hyperion-elite-5/100049.html"},
   image: '/images/shoes/brooks/hyperionelite5/side.webp',
   images: [
     '/images/shoes/brooks/hyperionelite5/side.webp',

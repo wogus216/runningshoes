@@ -6,6 +6,8 @@ export const shoe: Shoe = {
     slug: "brooks-ghost-max-4",
     brand: "Brooks",
     name: "고스트 맥스 4",
+  imageCaption: "고스트 맥스 4 사진은 브룩스 한국 공식 갤러리 수집 기록을 확인한 여성용 Rose Wide 색상입니다. 사진 품번은 현재 재고를 뜻하지 않습니다.",
+  imageSource: {"title":"Brooks 한국 공식 상품 갤러리","url":"https://brooksrunning.co.kr/product/0923%EC%88%98-1100am-launch%EC%97%AC%EC%84%B1-%EA%B3%A0%EC%8A%A4%ED%8A%B8-%EB%A7%A5%EC%8A%A4-4%EB%A1%9C%EC%A6%88-wide/971/category/24/display/1/"},
     image: "/images/shoes/brooks/ghostmax4/side.webp",
     images: [
       "/images/shoes/brooks/ghostmax4/side.webp"

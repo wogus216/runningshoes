@@ -6,6 +6,8 @@ export const shoe: Shoe = {
     slug: "brooks-glycerin-max",
     brand: "Brooks",
     name: "글리세린 맥스",
+  imageCaption: "초대 글리세린 맥스 사진은 브룩스 일본 공식 상품 110447-158의 측면·사선·뒤·위·밑창입니다. 이전에 섞였던 맥스 2 사진을 교체했습니다. 이 품번은 한국 현행 판매 조건을 뜻하지 않습니다.",
+  imageSource: {"title":"Brooks 일본 공식 상품 갤러리","url":"https://brooksrunning.co.jp/products/brm4473-gry"},
     image: "/images/shoes/brooks/glycerinmax/side.webp",
     images: [
       "/images/shoes/brooks/glycerinmax/side.webp",

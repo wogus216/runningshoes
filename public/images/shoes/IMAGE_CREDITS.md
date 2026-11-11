@@ -555,3 +555,7 @@ Horizon8의 기존 BOA 다이얼 신발 사진 5장은 공식 WAVE HORIZON 8과 
 | on-cloudmonster-3-hyper | 3MG10064906 · Lily  | [원문](https://www.on.com/en-kr/products/cloudmonster-3-hyper-3mg1006/mens/lily-limelight-shoes-3MG10064906) |
 
 기존 front/back/top/outsole 파일명과 실제 촬영 구도가 다른 컷이 있습니다. 화면에서는 사진 번호만 사용합니다. 해외 상품 사진은 한국 판매·가격·폭·재고·촬영권리의 근거가 아닙니다.
+
+## 2026-11-11 브룩스 글리세린 맥스 사진 교체
+
+초대 글리세린 맥스에 잘못 들어간 2세대 사진 5장을 [브룩스 일본 공식 초대 상품](https://brooksrunning.co.jp/products/brm4473-gry)의 110447-158 동일 색상 사진으로 교체했습니다. 측면·사선·뒤·위·밑창 원본 URL과 해시는 비공개 감사 장부에 보관했습니다. 글리세린 맥스 2의 상단 사진에 들어간 양말 이미지는 [브룩스 공식 110479-091 상단 사진](https://www.brooksrunning.com/en_us/mens/shoes/road-running-shoes/glycerin-max-2/110479.html?dwvar_110479_color=091)으로 교체했습니다. 기존 2세대 측면 사진의 원래 다운로드 경로와 개별 사진 사용 권리는 확인되지 않았습니다. 해외 사진 품번은 한국 현재 판매 조건의 근거가 아닙니다.

@@ -6,6 +6,8 @@ export const shoe: Shoe = {
     slug: "brooks-glycerin-max-2",
     brand: "Brooks",
     name: "글리세린 맥스 2",
+  imageCaption: "글리세린 맥스 2 사진은 110479-091(Phantom/White/Green Gecko)과 외관을 대조했습니다. 상단 사진은 브룩스 공식 원본으로 교체했고 측면 파일의 원래 다운로드 경로는 미확인입니다.",
+  imageSource: {"title":"Brooks 공식 상품 갤러리","url":"https://www.brooksrunning.com/en_us/mens/shoes/road-running-shoes/glycerin-max-2/110479.html?dwvar_110479_color=091"},
     image: "/images/shoes/brooks/glycerinmax2/side.webp",
     images: [
       "/images/shoes/brooks/glycerinmax2/side.webp",
