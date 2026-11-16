@@ -41,7 +41,7 @@ export const shoe: Shoe = {
       "midsoleType": "100% Lightstrike Pro"
     },
     koreanFootFit: {
-      "wideOptions": false
+
     },
     targetUsers: {
       "recommended": [
@@ -101,23 +101,23 @@ export const shoe: Shoe = {
     relatedPosts: [
       {
         "slug": "adidas-adizero-evo-sl-vs-asics-novablast-6-daily-2026",
-        "title": "Evo SL vs 노바블라스트6 — 무게·가격·한국 와이드"
+        "title": "Evo SL vs 노바블라스트6 — 26g·3만원 차이와 남성 와이드 선택"
       },
       {
         "slug": "adidas-adizero-evo-sl-vs-boston-13-daily-2026",
-        "title": "Evo SL vs 보스턴13 — 가격·구조·실측 조건"
+        "title": "아디제로 Evo SL vs 보스턴13 — 2만원·31g 차이와 폼·로드 구조"
       },
       {
         "slug": "superblast-3-vs-evo-sl-vs-mach-6-super-trainer-2026",
-        "title": "슈퍼블라스트3 vs 에보SL vs 마하6 — 슈퍼트레이너 3파전"
+        "title": "슈퍼블라스트3 vs Evo SL vs 마하6 — 스택·가벼움·핏을 조건별로"
       },
       {
         "slug": "adidas-running-shoes-lineup-tier-guide-2026",
-        "title": "아디다스 러닝화 라인업 — 용도와 구조 비교"
+        "title": "아디다스 러닝화 라인업 — 메시·변형·로드·림으로 비교하기"
       },
       {
         "slug": "running-shoe-midsole-foam-guide-2026",
-        "title": "미드솔 폼 완전 해설 — EVA·TPU·PEBA"
+        "title": "러닝화 미드솔 폼 읽는 법: 재료·발포 공정·상품명을 구분하자"
       }
     ],
     purchaseLinks: [],

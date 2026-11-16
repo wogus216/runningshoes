@@ -96,13 +96,14 @@ export const shoe: Shoe = {
     relatedPosts: [
       {
         "slug": "on-cloudmonster-hyper-vs-3-hyper-comparison-2026",
-        "title": "하이퍼 vs 3 하이퍼 — 상위 라인은 뭐가 다른가"
+        "title": "초대 클라우드몬스터 하이퍼 vs3 하이퍼 — 리턴·앞코·카운터를 분리해서 비교"
       }
     ],
     purchaseLinks: [
       {
         "store": "네이버",
-        "url": "https://naver.me/FwGUGiSl"
+        "url": "https://naver.me/FwGUGiSl",
+        "note": "2026-11-13 판매 페이지 확인: 남성 클라우드몬스터3 3MG10056015 구매대행 상품입니다. 선택 사이즈·최종 가격·현재 재고와 결제 가능 여부는 판매처에서 확인하세요."
       }
     ],
     verification: {

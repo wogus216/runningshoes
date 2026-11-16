@@ -15,8 +15,11 @@ export const shoe: Shoe = {
     '/images/shoes/newbalance/1080v15/top.webp',
     '/images/shoes/newbalance/1080v15/outsole.webp',
   ],
-  imageCaption: '1080v15 참고 사진입니다. 사진 속 제품의 정확한 품번·성별·폭은 미확인이므로 구매할 옵션과 구분하세요.',
-  imageSource: { title: '세대 확인: New Balance 공식 자료', url: 'https://www.newbalance.com/pd/1080v15/M10808E0-D-11.html' },
+  imageCaption: '대표 side2 사진은 미국 공식 여성1080v15 W10801L7 SEA SALT with BLUE OYSTER의 안쪽 측면 사진과 일치합니다. 촬영 실물의 사이즈·폭과 한국 판매 SKU는 미확인입니다.',
+  imageSource: {
+    "title": "대표 사진 대조: New Balance 미국 여성 W10801L7 공식 갤러리",
+    "url": "https://www.newbalance.com/pd/1080v15/W10801L7-B-07.html"
+  },
   category: '쿠션화',
   price: 209000,
   description: 'Infinion 슈퍼크리티컬 폼 구조의 1080 V15. 한국 남성2E NBPFGF701Y·4E NBPFGF701J, 여성D NBPFGF702O 정가209,000원. 확인한 대표SKU 기준.',
@@ -103,49 +106,55 @@ export const shoe: Shoe = {
   relatedPosts: [
     {
       slug: 'new-balance-1080-v15-vs-asics-nimbus-28-premium-cushion-2026',
-      title: '1080 v15 vs 님버스 28 — 프리미엄 쿠션 대결',
+      title: '1080 V15 vs 님버스28 — 23g·스택·발가락 공간과 한국 폭',
     },
   ],
   purchaseLinks: [
     {
-      store: '네이버',
-      url: 'https://naver.me/GB3rCpYe',
-    },
+      "store": "네이버",
+      "url": "https://naver.me/GB3rCpYe",
+      "note": "2026-11-13 판매 페이지 확인: 일반 색상이 아닌 남성 TCS 런던 마라톤 1080v15 M10802XQ 특별판입니다. 선택 사이즈·최종 가격·현재 재고와 결제 가능 여부는 판매처에서 확인하세요."
+    }
   ],
   verification: {
     checkedAt: '2026-11-09',
     scope: '한국 확인SKU의 정가·폭, 해외 실험실 수치·구조·외부 착화 의견을 재확인했습니다. 제품 전체 검증 완료 표지가 아닙니다.',
     sources: [
       {
-        label: '한국 공식 남성 · 2E · NBPFGF701Y',
-        url: 'https://www.nbkorea.com/product/productDetail.action?styleCode=NBPFGF701Y&colCode=30&cIdx=',
-        note: '한국 남성2E NBPFGF701Y·4E NBPFGF701J, 여성D NBPFGF702O 정가209,000원. 확인한 대표SKU 기준.',
+        "label": "한국 공식 남성 · 2E · NBPFGF701Y",
+        "url": "https://www.nbkorea.com/product/productDetail.action?styleCode=NBPFGF701Y&colCode=30&cIdx=",
+        "note": "한국 남성2E NBPFGF701Y·4E NBPFGF701J, 여성D NBPFGF702O 정가209,000원. 확인한 대표SKU 기준."
       },
       {
-        label: '한국 공식 남성 · 4E · NBPFGF701J',
-        url: 'https://www.nbkorea.com/product/productDetail.action?styleCode=NBPFGF701J&colCode=19&cIdx=',
-        note: '한국 남성2E NBPFGF701Y·4E NBPFGF701J, 여성D NBPFGF702O 정가209,000원. 확인한 대표SKU 기준.',
+        "label": "한국 공식 남성 · 4E · NBPFGF701J",
+        "url": "https://www.nbkorea.com/product/productDetail.action?styleCode=NBPFGF701J&colCode=19&cIdx=",
+        "note": "한국 남성2E NBPFGF701Y·4E NBPFGF701J, 여성D NBPFGF702O 정가209,000원. 확인한 대표SKU 기준."
       },
       {
-        label: '한국 공식 여성 · D · NBPFGF702O',
-        url: 'https://www.nbkorea.com/product/productDetail.action?styleCode=NBPFGF702O&colCode=80&cIdx=',
-        note: '한국 남성2E NBPFGF701Y·4E NBPFGF701J, 여성D NBPFGF702O 정가209,000원. 확인한 대표SKU 기준.',
+        "label": "한국 공식 여성 · D · NBPFGF702O",
+        "url": "https://www.nbkorea.com/product/productDetail.action?styleCode=NBPFGF702O&colCode=80&cIdx=",
+        "note": "한국 남성2E NBPFGF701Y·4E NBPFGF701J, 여성D NBPFGF702O 정가209,000원. 확인한 대표SKU 기준."
       },
       {
-        label: 'RunRepeat 1080 V15',
-        url: 'https://runrepeat.com/new-balance-1080-v-15',
-        note: '남성US9 공시 기준. 255g · 37/30.6mm · 드롭6.4mm. 힐/전족부 SA 147/126 · ER 65.9/69.1%. ',
+        "label": "RunRepeat 1080 V15",
+        "url": "https://runrepeat.com/new-balance-1080-v-15",
+        "note": "남성US9 공시 기준. 255g · 37/30.6mm · 드롭6.4mm. 힐/전족부 SA 147/126 · ER 65.9/69.1%. "
       },
       {
-        label: 'Doctors of Running 착화 리뷰',
-        url: 'https://www.doctorsofrunning.com/new-balance-1080-v15-review-2026/',
-        note: '한국 공식 남성261g·여성208g(각 측정 사이즈 미공시), 드롭6mm. 실험실255g·6.4mm와 조건을 구분.',
+        "label": "Doctors of Running 착화 리뷰",
+        "url": "https://www.doctorsofrunning.com/new-balance-1080-v15-review-2026/",
+        "note": "한국 공식 남성261g·여성208g(각 측정 사이즈 미공시), 드롭6mm. 실험실255g·6.4mm와 조건을 구분."
       },
       {
-        label: 'RunRepeat 측정법',
-        url: 'https://runrepeat.com/testing-methodology',
-        note: '검체·측정 위치·버전에 따라 조건이 다릅니다. 내부 최광폭·엄지 너비·외부 플랫폼 폭은 다른 값이고, AC와HA는 직접 비교하지 않습니다.',
+        "label": "RunRepeat 측정법",
+        "url": "https://runrepeat.com/testing-methodology",
+        "note": "검체·측정 위치·버전에 따라 조건이 다릅니다. 내부 최광폭·엄지 너비·외부 플랫폼 폭은 다른 값이고, AC와HA는 직접 비교하지 않습니다."
       },
+      {
+        "label": "대표 side2 사진 · 미국 공식 여성 W10801L7",
+        "url": "https://www.newbalance.com/pd/1080v15/W10801L7-B-07.html",
+        "note": "11/12 여성 SEA SALT with BLUE OYSTER 문서와 nb_03_i 원본을 실제 대조했습니다. B·US7 선택 문서는 촬영 실물 규격의 증거가 아니며, 한국 판매 상품·나머지 갤러리 전체의 새 사진 검증을 뜻하지 않습니다."
+      }
     ],
     limitations: [
       '모델별 질환 예방·치료 효과, 공통 최적 페이스와 수명km를 확인하지 못했습니다. 해당 등급·수명값·km당 비용은 비웁니다.',

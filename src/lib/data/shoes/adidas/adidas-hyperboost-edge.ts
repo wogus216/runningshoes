@@ -14,7 +14,8 @@ export const shoe: Shoe = {
       "/images/shoes/adidas/hyperboost-edge/official-press-713906-angle.jpg",
     ],
     category: "데일리",
-    description: "Hyperboost Pro · Primeweave · LIGHTTRAXION 구조의 하이퍼부스트 엣지. RunRepeat 실험실 검체 247g·44.6/38.1mm. 한국 현재 정가 미확인.",
+    price: 249000,
+    description: "Hyperboost Pro · Primeweave · LIGHTTRAXION 구조의 하이퍼부스트 엣지. RunRepeat 실험실 검체 247g·44.6/38.1mm. 한국 공식 남성 KI1913 확인 정가 249,000원(11/14).",
     oneliner: "Hyperboost Pro · Primeweave · LIGHTTRAXION · 247g (RunRepeat 실험실 검체)",
     editorComment: "2026-11-09 원문 재확인. 한국 공식 캐시에서 남성KI1913·여성LA2185 249,000원, 남성KH5376·여성KH5379 259,000원이 표시됐습니다. 캐시시점은당일~2주이며 현재 정가·선택 규격·폭·재고는 미확인입니다. 단일249,000원과 와이드 없음으로 일반화하지 않습니다. 글로벌 공식255g은 남성8.5(사이즈 체계 미명시), 힐45mm·드롭6mm입니다. DOR255g(남성8.5체계미명시)/268g(남성10실측)·45/39mm·6mm, RR247g·44.6/38.1mm·6.5mm는 다른 조건입니다. 2026-03-05 발표·글로벌03-17 출시이며 한국03-23 출시는 이번 범위에서 미확인입니다. 공식73%는60명 선호 조사 중 리턴을 선호한 비율,77%는 더 부드럽다고 느낀 비율이며 RR힐73.6% 리턴과 다른 통계입니다. 제조사 Q&A는 LightstrikePro 배합·Boost 공정을 언급하지만 정확 고분자는 미공개이고 RR의 PEBA계 설명과 구분합니다. RR BR62·건조47%와 David의 통기 체감, 반거싯 표와 Matt의 전장 거싯 설명도 다릅니다. 700km·겨울최고·힐착지 일괄금지·검증완료 확정은 철회합니다. DOR Matt(남성US10)은 낮은 볼륨·단단한 어퍼, 편한 뒤쪽 갑피에도 거친 힐 전환·개인 정강이 불편과 늦은 전족 로커를 느끼며 업템포를 선호했습니다. David(남성US9.5)는 타이트한 중족·여유 있는 전족과 높은 칼라의 발목 쓸림, 이른 전족 로커를 느끼며 일상·롱런을 선호했습니다. 모두 같은 불편을 겪었다고 합치지 않습니다. RR 내부 최광폭97.4mm·엄지71.4mm·높이24.8mm입니다. 앞쪽 테이퍼와 낮은 볼륨, 실제 칼라 접촉을 따로 확인하세요. 한국 현재 와이드·D 단일 확정은 미확인입니다. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.",
     tags: [
@@ -71,7 +72,7 @@ export const shoe: Shoe = {
       "plate": "공식 발표는 플레이트와 보강 부품을 사용하지 않는다고 명시합니다. LIGHTTRAXION을 Continental로 바꾸지 않습니다.",
       "width": "RR 내부 최광폭 97.4mm·엄지 부위 71.4mm·높이 24.8mm. RR 내부 최광폭97.4mm·엄지71.4mm·높이24.8mm입니다. 앞쪽 테이퍼와 낮은 볼륨, 실제 칼라 접촉을 따로 확인하세요. 한국 현재 와이드·D 단일 확정은 미확인입니다.",
       "durability": "검증된 공통 수명 km 미확인. 국소 마모·짧은 착화 후기를 주행 수명으로 환산하지 않습니다.",
-      "price": "한국 공식 캐시에서 남성KI1913·여성LA2185 249,000원, 남성KH5376·여성KH5379 259,000원이 표시됐습니다. 캐시시점은당일~2주이며 현재 정가·선택 규격·폭·재고는 미확인입니다. 단일249,000원과 와이드 없음으로 일반화하지 않습니다."
+      "price": "2026-11-14 한국 공식 남성 KI1913의 할인 전 기준 가격과 현재 표시 판매가는 모두 249,000원으로 확인했습니다. 대표 가격은 이 선택 품번 기준입니다. 최초 출시가·다른 색상/성별/폭의 가격·쿠폰 적용 금액과 실제 결제 재고는 미확인입니다."
     },
     reviews: [
       {
@@ -96,39 +97,40 @@ export const shoe: Shoe = {
     relatedPosts: [
       {
         "slug": "adidas-hyperboost-edge-vs-run-comparison-2026",
-        "title": "하이퍼부스트 엣지 vs 런 — 같은 폼, 3만원 차이"
+        "title": "하이퍼부스트 엣지 vs 런 — 같은 247g, 다른 앞코·스택·힐 고정"
       },
       {
         "slug": "adidas-hyperboost-edge-vs-asics-superblast-3-super-trainer-2026",
-        "title": "하이퍼부스트 엣지 vs 슈퍼블라스트 3 — 슈퍼트레이너"
+        "title": "하이퍼부스트 엣지 vs 슈퍼블라스트3 — 수명 경쟁 대신, 앞발 스택·핏·전환 비교"
       },
       {
         "slug": "superblast-3-vs-evo-sl-vs-mach-6-super-trainer-2026",
-        "title": "슈퍼블라스트3 vs 에보SL vs 마하6 — 슈퍼트레이너 비교"
+        "title": "슈퍼블라스트3 vs Evo SL vs 마하6 — 스택·가벼움·핏을 조건별로"
       },
       {
         "slug": "adidas-running-shoes-lineup-tier-guide-2026",
-        "title": "아디다스 러닝화 라인업 — 용도와 구조 비교"
+        "title": "아디다스 러닝화 라인업 — 메시·변형·로드·림으로 비교하기"
       },
       {
         "slug": "running-shoe-midsole-foam-guide-2026",
-        "title": "미드솔 폼 완전 해설 — EVA·TPU·PEBA"
+        "title": "러닝화 미드솔 폼 읽는 법: 재료·발포 공정·상품명을 구분하자"
       }
     ],
     purchaseLinks: [
       {
         "store": "네이버",
-        "url": "https://naver.me/5T0hdO6i"
+        "url": "https://naver.me/5T0hdO6i",
+        "note": "2026-11-13 판매 페이지 확인: 하이퍼부스트 엣지 상품입니다. 판매처의 카본화 분류와 달리 제조사에서 확인한 모델은 무플레이트입니다. 선택 사이즈·최종 가격·현재 재고와 결제 가능 여부는 판매처에서 확인하세요."
       }
     ],
     verification: {
-      "checkedAt": "2026-11-09",
+      "checkedAt": "2026-11-14",
       "scope": "한국 상품 조건, 해외 실험실·제조사 공시와 외부 착화 의견의 확인 범위를 구분했습니다. 제품 전체 검증 완료 표지가 아닙니다.",
       "sources": [
         {
-          "label": "한국 공식 캐시 KI1913 · 남성",
+          "label": "한국 공식 KI1913 — 2026-11-14 정가/판매가 구분",
           "url": "https://www.adidas.co.kr/%ED%95%98%EC%9D%B4%ED%8D%BC%EB%B6%80%EC%8A%A4%ED%8A%B8-%EC%97%A3%EC%A7%80-%EB%9F%AC%EB%8B%9D%ED%99%94/KI1913.html",
-          "note": "표시 정가 249000원·표시 판매가 249000원. 도구 캐시 last week; 현재 가격·폭·선택 재고 미확인."
+          "note": "2026-11-14 한국 공식 남성 KI1913의 할인 전 기준 가격과 현재 표시 판매가는 모두 249,000원으로 확인했습니다. 대표 가격은 이 선택 품번 기준입니다. 최초 출시가·다른 색상/성별/폭의 가격·쿠폰 적용 금액과 실제 결제 재고는 미확인입니다."
         },
         {
           "label": "한국 공식 캐시 LA2185 · Women",

@@ -88,15 +88,15 @@ export const shoe: Shoe = {
     relatedPosts: [
       {
         "slug": "tecton-x-3-vs-ultrafly-vs-s-lab-pulsar-carbon-trail-2026",
-        "title": "카본 트레일 레이서 3파전 — 테크톤 X 3 vs 울트라플라이 vs S/LAB 펄사 4"
+        "title": "테크톤X3 vs 초대 울트라플라이 vs S/LAB 펄사4 — 카본 구조·앞코 높이·고정 비교"
       },
       {
         "slug": "2026-best-trail-running-shoes",
-        "title": "2026 트레일 러닝화 TOP 7"
+        "title": "트레일 러닝화7종 비교 —한국 산에서 확인할 노면·앞코·카본 전환"
       },
       {
         "slug": "running-shoe-plate-guide-2026",
-        "title": "플레이트 완전 해설 — 카본·유리섬유·나일론"
+        "title": "러닝화 플레이트 읽는 법 — 판·로드·소재·최신 대회 규정"
       }
     ],
     purchaseLinks: [],

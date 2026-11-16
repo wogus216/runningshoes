@@ -17,9 +17,10 @@ export const shoe: Shoe = {
       "/images/shoes/brooks/hyperionmax3/outsole.webp"
     ],
     category: "쿠션화",
-    description: "DNA GOLD(PEBA) + DNA FLASH v2 · SpeedVault 구조의 하이페리온 맥스 3. RunRepeat 실험실 검체 283g·45.6/35mm. 한국 현재 정가 미확인.",
+    price: 219000,
+    description: "DNA GOLD(PEBA) + DNA FLASH v2 · SpeedVault 구조의 하이페리온 맥스 3. RunRepeat 실험실 검체 283g·45.6/35mm. 한국 공식 과거 원문 기준 1104671D670 정가 참고 219,000원. 현재 판매·재고 미확인.",
     oneliner: "DNA GOLD(PEBA) + DNA FLASH v2 · SpeedVault · 283g (RunRepeat 실험실 검체)",
-    editorComment: "2026-11-09 원문 재확인. 한국 공식몰 실시간 연결 실패로 현재 정가·판매 SKU·폭·재고는 미확인입니다. 과거 원본 캐시에는 219,000원과 남성 아웃렛 175,200원이 표시됐지만 현재 가격으로 확정하지 않습니다. 여성 캐시는 5개월 전 자료입니다. 영국 제조사는 6mm·280.7g(사이즈 미표기), RR 브랜드 메타는 46/40mm·6mm, DOR 소개는 45/37mm·8mm·280g(남성 US9/여성 US10.5)입니다. RR 실측 45.6/35.0mm·10.6mm와 구분합니다. 25.7AC 주폼과 40.1AC 보조폼은 층별 수치입니다. 제조사의 100% PEBA는 DNA GOLD를 꾸미는 설명으로 전체 중창이 모두 PEBA라는 뜻은 아닙니다. 저온 변화 17%를 한국 사계절 동일한 주행감으로, 마모 0.9mm를 700km 수명으로 해석하지 않습니다. DOR Matt(남성 US10)은 정사이즈·밀착되는 낮은 볼륨과 좋은 고정, 약간의 앞발 신축성을 느꼈습니다. 반면 Andrea(여성 US9.5)는 힐 패딩이 발을 앞으로 밀고 앞코가 낮으며 메시가 뻣뻣하고 혀가 접혀 자극됐다고 적었습니다. Matt의 여러 훈련 활용과 Andrea의 무게·핏 불편을 하나의 공통 용도로 합치지 않습니다. Matt의 후경골근 부담 경험도 임상 등급이 아닙니다. 한국 현재 와이드 SKU는 미확인입니다. RR 내부 최광폭 94.9mm·엄지 72.6mm·높이 25.0mm를 모든 발의 장거리 무압박 보장으로 쓰지 않습니다. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.",
+    editorComment: "2026-11-12 소재 원문 보완. 한국 판매 조건은11/9 확인분입니다. 한국 공식몰 실시간 연결 실패로 현재 정가·판매 SKU·폭·재고는 미확인입니다. 과거 원본 캐시에는 219,000원과 남성 아웃렛 175,200원이 표시됐지만 현재 가격으로 확정하지 않습니다. 여성 캐시는 5개월 전 자료입니다. 영국 제조사는 6mm·280.7g(사이즈 미표기), RR 브랜드 메타는 46/40mm·6mm, DOR 소개는 45/37mm·8mm·280g(남성 US9/여성 US10.5)입니다. RR 실측 45.6/35.0mm·10.6mm와 구분합니다. 25.7AC 주폼과 40.1AC 보조폼은 층별 수치입니다. 제조사의 100% PEBA는 DNA GOLD를 꾸미는 설명으로 전체 중창이 모두 PEBA라는 뜻은 아닙니다. 저온 변화 17%를 한국 사계절 동일한 주행감으로, 마모 0.9mm를 700km 수명으로 해석하지 않습니다. DOR Matt(남성 US10)은 정사이즈·밀착되는 낮은 볼륨과 좋은 고정, 약간의 앞발 신축성을 느꼈습니다. 반면 Andrea(여성 US9.5)는 힐 패딩이 발을 앞으로 밀고 앞코가 낮으며 메시가 뻣뻣하고 혀가 접혀 자극됐다고 적었습니다. Matt의 여러 훈련 활용과 Andrea의 무게·핏 불편을 하나의 공통 용도로 합치지 않습니다. Matt의 후경골근 부담 경험도 임상 등급이 아닙니다. 한국 현재 와이드 SKU는 미확인입니다. RR 내부 최광폭 94.9mm·엄지 72.6mm·높이 25.0mm를 모든 발의 장거리 무압박 보장으로 쓰지 않습니다. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.",
     specs: {
       "weight": 283,
       "drop": 10.6
@@ -31,7 +32,7 @@ export const shoe: Shoe = {
       },
       "drop": 10.6,
       "carbonPlate": false,
-      "plateType": "nylon SpeedVault; DOR PEBAX wording conflict retained",
+      "plateType": "nylon SpeedVault (manufacturer product); AU official: 80% PEBAX / 20% fibreglass",
       "midsoleType": "DNA GOLD(PEBA) + DNA FLASH v2 · SpeedVault"
     },
     koreanFootFit: {},
@@ -48,7 +49,7 @@ export const shoe: Shoe = {
     features: [
       "DNA GOLD(PEBA) + DNA FLASH v2 · SpeedVault",
       "283g · 45.6/35mm · 드롭 10.6mm (RunRepeat 실험실 검체)",
-      "영국 제조사·RR은 nylon SpeedVault, DOR는 PEBAX라고 적어 출처 차이를 보존합니다. 카본 플레이트로 표시하지 않습니다.",
+      "Brooks 제품은 nylon SpeedVault로, AU 공식 기고는 80% PEBAX·20% fibreglass로 설명하며 DOR도 PEBAX라고 적습니다. 제조사 자료 사이의 설명 깊이·범위를 보존하고, 한국 SKU의 정확 조성·순수 나일론·카본 함량이나 독립 화학 분석 결과로 확정하지 않습니다.",
       "한국 현재 와이드 SKU는 미확인입니다. RR 내부 최광폭 94.9mm·엄지 72.6mm·높이 25.0mm를 모든 발의 장거리 무압박 보장으로 쓰지 않습니다."
     ],
     priceAnalysis: {
@@ -78,10 +79,10 @@ export const shoe: Shoe = {
       "stackHeight": "45.6/35mm (RunRepeat 실험실 검체, 힐/전족부). 출처별 다른 공시는 무게 항목 참조.",
       "drop": "10.6mm (RunRepeat 실험실 검체). 영국 제조사는 6mm·280.7g(사이즈 미표기), RR 브랜드 메타는 46/40mm·6mm, DOR 소개는 45/37mm·8mm·280g(남성 US9/여성 US10.5)입니다. RR 실측 45.6/35.0mm·10.6mm와 구분합니다.",
       "midsole": "DNA GOLD(PEBA) + DNA FLASH v2 · SpeedVault. 주폼 25.7AC·보조 40.1AC, 힐/전족부 SA 151/133·에너지 리턴 63.9/66.2%. 25.7AC 주폼과 40.1AC 보조폼은 층별 수치입니다. 제조사의 100% PEBA는 DNA GOLD를 꾸미는 설명으로 전체 중창이 모두 PEBA라는 뜻은 아닙니다. 저온 변화 17%를 한국 사계절 동일한 주행감으로, 마모 0.9mm를 700km 수명으로 해석하지 않습니다.",
-      "plate": "영국 제조사·RR은 nylon SpeedVault, DOR는 PEBAX라고 적어 출처 차이를 보존합니다. 카본 플레이트로 표시하지 않습니다.",
+      "plate": "Brooks 제품은 nylon SpeedVault로, AU 공식 기고는 80% PEBAX·20% fibreglass로 설명하며 DOR도 PEBAX라고 적습니다. 제조사 자료 사이의 설명 깊이·범위를 보존하고, 한국 SKU의 정확 조성·순수 나일론·카본 함량이나 독립 화학 분석 결과로 확정하지 않습니다.",
       "width": "RR 내부 최광폭 94.9mm·엄지 부위 72.6mm·높이 25mm. 한국 현재 와이드 SKU는 미확인입니다. RR 내부 최광폭 94.9mm·엄지 72.6mm·높이 25.0mm를 모든 발의 장거리 무압박 보장으로 쓰지 않습니다.",
       "durability": "검증된 공통 수명 km 미확인. 국소 마모·짧은 착화 후기를 주행 수명으로 환산하지 않습니다.",
-      "price": "한국 공식몰 실시간 연결 실패로 현재 정가·판매 SKU·폭·재고는 미확인입니다. 과거 원본 캐시에는 219,000원과 남성 아웃렛 175,200원이 표시됐지만 현재 가격으로 확정하지 않습니다. 여성 캐시는 5개월 전 자료입니다."
+      "price": "2026-11-14 한국 공식몰의 과거 원문 캐시에서 남성 MEDIUM 코랄 1104671D670의 할인 전 기준 가격 219,000원과 당시 할인 표시 175,200원을 구분했습니다. 대표 가격은 이 선택 품번의 공식 정가 참고값입니다. 도구의 캐시 시점 표시는 3 weeks ago이며 정확 수집·게시 시각은 미확인입니다. 공식 사이트 실시간 연결은 실패해 현재 판매가·판매 여부·규격별 재고·결제 가능 여부는 미확인입니다. 과거 옵션·SOLD OUT 문구를 오늘의 재고로 해석하지 않으며 최초 출시가·다른 성별/폭/색상의 동일 가격을 보장하지 않습니다."
     },
     similarShoes: [
       "asics-superblast-2",
@@ -91,7 +92,7 @@ export const shoe: Shoe = {
     relatedPosts: [
       {
         "slug": "running-shoe-midsole-foam-guide-2026",
-        "title": "미드솔 폼 완전 해설 — EVA·TPU·PEBA"
+        "title": "러닝화 미드솔 폼 읽는 법: 재료·발포 공정·상품명을 구분하자"
       }
     ],
     purchaseLinks: [],
@@ -102,13 +103,13 @@ export const shoe: Shoe = {
       "장거리"
     ],
     verification: {
-      "checkedAt": "2026-11-09",
-      "scope": "한국 상품 조건, 해외 실험실·제조사 공시와 외부 착화 의견의 확인 범위를 구분했습니다. 제품 전체 검증 완료 표지가 아닙니다.",
+      "checkedAt": "2026-11-14",
+      "scope": "한국 상품 조건, 해외 실험실·제조사 공시와 외부 착화 의견의 확인 범위를 구분했습니다. 제품 전체 검증 완료 표지가 아닙니다. 2026-11-14 추가 확인은 선택 품번의 과거 한국 공식 정가 참고값과 현재 접근 상태에 한정합니다. 현재 판매가·재고 확인이나 다른 기술·임상 항목의 재검증을 뜻하지 않습니다.",
       "sources": [
         {
-          "label": "한국 공식 아웃렛 과거 캐시 확인 범위",
+          "label": "한국 공식 1104671D670 — 과거 원문 정가 참고 / 현재 구매 미확인",
           "url": "https://brooksrunning.co.kr/product/detail.html?product_no=585",
-          "note": "정가 219,000원·아웃렛 175,200원은 과거 관찰, 현재 가격·재고 미확인."
+          "note": "2026-11-14 한국 공식몰의 과거 원문 캐시에서 남성 MEDIUM 코랄 1104671D670의 할인 전 기준 가격 219,000원과 당시 할인 표시 175,200원을 구분했습니다. 대표 가격은 이 선택 품번의 공식 정가 참고값입니다. 도구의 캐시 시점 표시는 3 weeks ago이며 정확 수집·게시 시각은 미확인입니다. 공식 사이트 실시간 연결은 실패해 현재 판매가·판매 여부·규격별 재고·결제 가능 여부는 미확인입니다. 과거 옵션·SOLD OUT 문구를 오늘의 재고로 해석하지 않으며 최초 출시가·다른 성별/폭/색상의 동일 가격을 보장하지 않습니다."
         },
         {
           "label": "Brooks 영국 현재 구조 공시",
@@ -129,6 +130,16 @@ export const shoe: Shoe = {
           "label": "RunRepeat 측정법",
           "url": "https://runrepeat.com/testing-methodology",
           "note": "AC·HA·HC, SA·에너지 리턴, BR·구방식1~5와 내부/외부 폭을 구분합니다. 일반 정책은 개별 라벨 확인과 다릅니다."
+        },
+        {
+          "label": "Brooks AU 공식 기고 · Hyperion Max3",
+          "url": "https://blog.brooksrunning.com.au/diving-into-the-new-hyperion-range/",
+          "note": "11/12 본문 재확인. Brooks 제품은 nylon SpeedVault로, AU 공식 기고는 80% PEBAX·20% fibreglass로 설명하며 DOR도 PEBAX라고 적습니다. 제조사 자료 사이의 설명 깊이·범위를 보존하고, 한국 SKU의 정확 조성·순수 나일론·카본 함량이나 독립 화학 분석 결과로 확정하지 않습니다."
+        },
+        {
+          "label": "Brooks 정확 Hyperion Max3 상품",
+          "url": "https://www.brooksrunning.com/en_dk/mens/road-running-shoes/hyperion-max-3/110467.html",
+          "note": "11/12 본문 재확인. Brooks 제품은 nylon SpeedVault로, AU 공식 기고는 80% PEBAX·20% fibreglass로 설명하며 DOR도 PEBAX라고 적습니다. 제조사 자료 사이의 설명 깊이·범위를 보존하고, 한국 SKU의 정확 조성·순수 나일론·카본 함량이나 독립 화학 분석 결과로 확정하지 않습니다."
         }
       ],
       "limitations": [

@@ -36,6 +36,14 @@ describe('buildVerdicts', () => {
 });
 
 describe('buildNarrative', () => {
+  it('분류가 다른 기존 비교는 각 모델의 현재 분류를 설명한다', () => {
+    const { a, b } = pairs[0];
+    const [intro] = buildNarrative({ ...a, category: '입문화' }, { ...b, category: '쿠션화' }, '입문화');
+    expect(intro).toContain('입문화');
+    expect(intro).toContain('쿠션화');
+    expect(intro).not.toContain('모두 입문화');
+  });
+
   it('첫 단락에 두 신발 이름과 카테고리가 들어간다', () => {
     for (const { a, b, category } of sample) {
       const [intro] = buildNarrative(a, b, category);

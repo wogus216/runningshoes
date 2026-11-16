@@ -71,7 +71,7 @@ export const shoe: Shoe = {
       "weight": "248g (RunRepeat 남성 US9 공시 기준). 한국 공식 265g (280mm) · 드롭 8mm. DOR 소개 40/32mm · 8mm. RR 248g과 사이즈 조건이 다름.",
       "stackHeight": "39.7/30.1mm (RunRepeat 힐/전족부)",
       "drop": "9.6mm (RunRepeat 실측). 공시 사양과 측정법·검체 조건이 다릅니다.",
-      "midsole": "ZoomX + SR-02 (하부 명칭 DOR 기준) · 상부 ZoomX 경도 36.5 AC(Asker C, RunRepeat) · SA 144/111 · 에너지 리턴 61/67% (힐/전족부, RunRepeat)",
+      "midsole": "ZoomX + SR-02 (하부 명칭 DOR 기준) · 상부 ZoomX 경도36.5AC·보조폼33.6AC(Asker C, RunRepeat 제품별 시험 데이터) · SA 144/111 · 에너지 리턴 61/67% (힐/전족부, RunRepeat)",
       "plate": "전장 카본 파이버 Flyplate (한국 공식)",
       "width": "RunRepeat 내부 최광폭 90.9mm / 엄지 부위 72.6mm. 2026-11-09 확인한 한국 FN8454-006에서 폭 선택 UI는 보이지 않았습니다. 이것만으로 한국 전체 와이드 미출시라고 단정하지 않습니다.",
       "durability": "검증된 수명 km 미확인. 실험실 마모 깊이를 수명 km로 환산하지 않습니다.",
@@ -100,25 +100,26 @@ export const shoe: Shoe = {
     relatedPosts: [
       {
         "slug": "asics-magic-speed-5-vs-nike-zoom-fly-6-carbon-trainer-2026",
-        "title": "매직스피드 5 vs 줌 플라이 6 — 같은 20.9만원, 47g이 갈린다"
+        "title": "매직스피드 5 vs 줌 플라이 6 — 47g 차이와 앞코 높이, 질환표 없이 비교"
       },
       {
         "slug": "boston-13-vs-zoom-fly-6-vs-endorphin-speed-5-tempo-trainer-2026",
-        "title": "템포 트레이너 3파전 — 보스턴 13 vs 줌 플라이 6 vs 엔돌핀 스피드 5"
+        "title": "보스턴13 vs 줌플라이6 vs 스피드5 — 로드·카본·나일론과 한국 와이드"
       },
       {
         "slug": "superblast-3-vs-evo-sl-vs-mach-6-super-trainer-2026",
-        "title": "슈퍼트레이너 3파전 — 슈퍼블라스트 3 vs 에보 SL vs 마하 6"
+        "title": "슈퍼블라스트3 vs Evo SL vs 마하6 — 스택·가벼움·핏을 조건별로"
       },
       {
         "slug": "running-shoe-plate-guide-2026",
-        "title": "플레이트 완전 해설 — 카본·유리섬유·나일론"
+        "title": "러닝화 플레이트 읽는 법 — 판·로드·소재·최신 대회 규정"
       }
     ],
     purchaseLinks: [
       {
         "store": "네이버",
-        "url": "https://naver.me/IgM5xo0f"
+        "url": "https://naver.me/IgM5xo0f",
+        "note": "2026-11-13 판매 페이지 확인: 제목과 상세 옵션은 줌 플라이6입니다. 상품 속성의 베이퍼플라이 명칭과 혼동하지 말고 성별·색상별 옵션을 확인하세요. 선택 사이즈·최종 가격·현재 재고와 결제 가능 여부는 판매처에서 확인하세요."
       },
       {
         "store": "쿠팡",
@@ -127,7 +128,7 @@ export const shoe: Shoe = {
       }
     ],
     verification: {
-      "checkedAt": "2026-11-11",
+      "checkedAt": "2026-11-12",
       "scope": "한국 확인 SKU의 정가·폭과 해외 실험실 수치·구조·외부 착화 의견을 재확인했습니다.",
       "sources": [
         {
@@ -138,7 +139,7 @@ export const shoe: Shoe = {
         {
           "label": "RunRepeat 줌 플라이 6",
           "url": "https://runrepeat.com/nike-zoom-fly-6",
-          "note": "남성 US9 공시 기준. 248g · 39.7/30.1mm · 드롭 9.6mm. SA 144/111 · ER 61/67% · 상부 ZoomX 경도 36.5 AC(Asker C, RunRepeat)."
+          "note": "남성 US9 공시 기준. 248g · 39.7/30.1mm · 드롭 9.6mm. SA 144/111 · ER 61/67% · 상부 ZoomX 경도 36.5 AC(Asker C, RunRepeat). 11/12 제품ID40613의 보조폼 시험72(AC)값33.6을 제품별 상세 데이터에서 확인했습니다. 하부 폼 명칭·배합 충돌을 해소한 증거는 아닙니다."
         },
         {
           "label": "Doctors of Running 착화 리뷰",

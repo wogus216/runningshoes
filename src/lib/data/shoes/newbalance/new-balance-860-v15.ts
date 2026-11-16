@@ -109,18 +109,18 @@ export const shoe: Shoe = {
     relatedPosts: [
       {
         "slug": "new-balance-860-v14-vs-v15-comparison",
-        "title": "860 v14 vs v15 — 세대 비교"
+        "title": "뉴발란스 860 v14 vs v15 — 37g 증가와 국내 폭 옵션, 원문으로 다시 비교"
       },
       {
         "slug": "kayano-33-vs-glycerin-gts-22-vs-860-v15-2026",
-        "title": "카야노33 vs 글리세린GTS22 vs 860 v15 — 안정화 3강"
+        "title": "카야노 33·글리세린 GTS 22·860 v15: 안정화 구성과 매장 비교법"
       }
     ],
     purchaseLinks: [
       {
         "store": "네이버",
         "url": "https://naver.me/GowyA70j",
-        "note": "상품명에 860 V14·V15가 함께 표기돼 있습니다. 구매할 버전의 옵션·품번을 확인하세요."
+        "note": "2026-11-13 판매 페이지 확인: 860v14·v15와 남성·여성이 함께 있는 판매 페이지입니다. 상품 속성 M860W14만으로 모든 옵션을 v14로 판단하지 말고 버전·성별·폭별 품번을 확인하세요. 선택 사이즈·최종 가격·현재 재고와 결제 가능 여부는 판매처에서 확인하세요."
       }
     ],
     verification: {

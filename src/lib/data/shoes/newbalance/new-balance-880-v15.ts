@@ -19,7 +19,7 @@ export const shoe: Shoe = {
     category: "입문화",
     description: "Fresh Foam X · 비플레이트 로커 구조의 880 V15. 실험실 286g·힐/전족부 39.7/35.4mm. 한국 현재 정가 미확인.",
     oneliner: "286g 실험실 무게 · Fresh Foam X · 비플레이트 로커",
-    editorComment: "2026-11-09 원문 재확인. 한국 공식 검색에서880V15를 찾지 못했고 기존 후보 상품경로는 판매준비/오픈예정 안내로 돌아옵니다. 현재 한국 정가·성별·폭·재고는 미확인입니다. 검색캐시189,000원을 현재 정가로 채택하지 않습니다. DOR 소개 남성300g(US9)·40.5/34.5mm·드롭6mm. RR286g·39.7/35.4mm·4.3mm와 구분. RR 브랜드칸281g도 별도 조건입니다.  DOR의 Matt은 US10에서 대체로 길이가 맞고 약간 넓은보통볼륨이지만 앞코가 좁아지며, 초기 힐 들림·회전 시 옆 움직임을 느꼈습니다. 약간 단단하고 느린 반응의 쿠션·뻣뻣한 로커·안정적인 중립형으로 평가했으나 전통 안정화나 평발 치료 등급으로 바꾸지 않습니다. 한국 2E·여성D 후보는 원문 상품 확인에 실패해 현재 판매 폭으로 채택하지 않습니다. RR내부95.0/74.6/28.5mm를 개인핏과 구분하세요. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.",
+    editorComment: "2026-11-09 원문 재확인. 2026-11-16 갤러리아타임월드 뉴발란스의 남성2E Black NBPFGS107T_19 상품 본문에서 제품출시가 189,000원을 확인했습니다. 제조사 한국 공식 매장찾기와 상품의 점포·공개 연락처가 일치합니다. 해당 상품의 직접 응답은 판매종료를 표시했습니다. 이는 이 SKU의 매장 표시 출시가이며 모델 전체의 현행 제조사 MSRP·다른 성별/폭 가격·전국 재고를 확인한 값이 아닙니다. 실제 사이즈별 구매·결제는 확인하지 않았습니다. 대표 MSRP 필드는 미확인으로 유지합니다. DOR 소개 남성300g(US9)·40.5/34.5mm·드롭6mm. RR286g·39.7/35.4mm·4.3mm와 구분. RR 브랜드칸281g도 별도 조건입니다.  DOR의 Matt은 US10에서 대체로 길이가 맞고 약간 넓은보통볼륨이지만 앞코가 좁아지며, 초기 힐 들림·회전 시 옆 움직임을 느꼈습니다. 약간 단단하고 느린 반응의 쿠션·뻣뻣한 로커·안정적인 중립형으로 평가했으나 전통 안정화나 평발 치료 등급으로 바꾸지 않습니다. 한국 2E·여성D 후보는 원문 상품 확인에 실패해 현재 판매 폭으로 채택하지 않습니다. RR내부95.0/74.6/28.5mm를 개인핏과 구분하세요. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.",
     tags: [
       "입문화",
       "데일리 러닝",
@@ -47,7 +47,7 @@ export const shoe: Shoe = {
       "plate": "확인한 원문 설명에 전장 카본 플레이트는 보고되지 않음",
       "width": "RunRepeat 내부 최광폭 95mm / 엄지 부위 74.6mm / 엄지 높이 28.5mm. 한국 2E·여성D 후보는 원문 상품 확인에 실패해 현재 판매 폭으로 채택하지 않습니다. RR내부95.0/74.6/28.5mm를 개인핏과 구분하세요.",
       "durability": "검증된 공통 수명km 미확인. 짧은 착화·마모 깊이를 수명km로 환산하지 않습니다.",
-      "price": "한국 공식 검색에서880V15를 찾지 못했고 기존 후보 상품경로는 판매준비/오픈예정 안내로 돌아옵니다. 현재 한국 정가·성별·폭·재고는 미확인입니다. 검색캐시189,000원을 현재 정가로 채택하지 않습니다."
+      "price": "2026-11-16 갤러리아타임월드 뉴발란스의 남성2E Black NBPFGS107T_19 상품 본문에서 제품출시가 189,000원을 확인했습니다. 제조사 한국 공식 매장찾기와 상품의 점포·공개 연락처가 일치합니다. 해당 상품의 직접 응답은 판매종료를 표시했습니다. 이는 이 SKU의 매장 표시 출시가이며 모델 전체의 현행 제조사 MSRP·다른 성별/폭 가격·전국 재고를 확인한 값이 아닙니다. 실제 사이즈별 구매·결제는 확인하지 않았습니다. 대표 MSRP 필드는 미확인으로 유지합니다."
     },
     koreanFootFit: {},
     priceAnalysis: {
@@ -101,40 +101,9 @@ export const shoe: Shoe = {
       }
     ],
     verification: {
-      "checkedAt": "2026-11-09",
-      "scope": "한국 확인SKU의 정가·폭, 해외 실험실 수치·구조·외부 착화 의견을 재확인했습니다. 제품 전체 검증 완료 표지가 아닙니다.",
-      "sources": [
-        {
-          "label": "뉴발란스 한국 공식 접근 확인 범위",
-          "url": "https://www.nbkorea.com/product/searchResult.action?schWord=880",
-          "note": "10 results contained lifestyle/walking880 variants; no880V15 entry. This search result alone does not prove discontinuation/non-release."
-        },
-        {
-          "label": "뉴발란스 한국 공식 접근 확인 범위",
-          "url": "https://www.nbkorea.com/product/productDetail.action?colCode=19&styleCode=NBPFGS107T",
-          "note": "Alert: 해당 상품은 현재 판매 준비중이거나 오픈예정인 상품입니다; history.back(). Intended product details and prices not available."
-        },
-        {
-          "label": "뉴발란스 한국 공식 접근 확인 범위",
-          "url": "https://www.nbkorea.com/product/productDetail.action?colCode=19&styleCode=NBPFGS108T",
-          "note": "Same 판매 준비중/오픈예정 alert and history.back(); no current product price/stock verified."
-        },
-        {
-          "label": "RunRepeat 880 V15",
-          "url": "https://runrepeat.com/new-balance-fresh-foam-x-880-v-15",
-          "note": "공시 검체 정책: 남성US9. 개별 검체SKU·폭은 미확인. 286g · 39.7/35.4mm · 드롭4.3mm. SA 128/114 · ER 56.4/60.1%. "
-        },
-        {
-          "label": "Doctors of Running 착화 리뷰",
-          "url": "https://www.doctorsofrunning.com/new-balance-fresh-foam-x-880-v15-review/",
-          "note": "DOR 소개 남성300g(US9)·40.5/34.5mm·드롭6mm. RR286g·39.7/35.4mm·4.3mm와 구분. RR 브랜드칸281g도 별도 조건입니다."
-        },
-        {
-          "label": "RunRepeat 측정법",
-          "url": "https://runrepeat.com/testing-methodology",
-          "note": "내부 최광폭·엄지 너비·외부 플랫폼 폭은 다른 값입니다. AC와HA는 직접 비교하지 않습니다. 시점·측정법 버전의 차이를 구분하세요."
-        }
-      ],
+      "checkedAt": "2026-11-16",
+      "scope": "한국 확인SKU의 정가·폭, 해외 실험실 수치·구조·외부 착화 의견을 재확인했습니다. 제품 전체 검증 완료 표지가 아닙니다. 2026-11-16 추가 확인은 아래 한국 판매 경로·표시 가격의 범위이며 실험실 수치를 새로 측정하거나 모든 옵션의 재고를 확인한 것은 아닙니다.",
+      "sources": [{"label":"뉴발란스 한국 공식 접근 확인 범위","url":"https://www.nbkorea.com/product/searchResult.action?schWord=880","note":"10 results contained lifestyle/walking880 variants; no880V15 entry. This search result alone does not prove discontinuation/non-release."},{"label":"뉴발란스 한국 공식 접근 확인 범위","url":"https://www.nbkorea.com/product/productDetail.action?colCode=19&styleCode=NBPFGS107T","note":"Alert: 해당 상품은 현재 판매 준비중이거나 오픈예정인 상품입니다; history.back(). Intended product details and prices not available."},{"label":"뉴발란스 한국 공식 접근 확인 범위","url":"https://www.nbkorea.com/product/productDetail.action?colCode=19&styleCode=NBPFGS108T","note":"Same 판매 준비중/오픈예정 alert and history.back(); no current product price/stock verified."},{"label":"RunRepeat 880 V15","url":"https://runrepeat.com/new-balance-fresh-foam-x-880-v-15","note":"공시 검체 정책: 남성US9. 개별 검체SKU·폭은 미확인. 286g · 39.7/35.4mm · 드롭4.3mm. SA 128/114 · ER 56.4/60.1%. "},{"label":"Doctors of Running 착화 리뷰","url":"https://www.doctorsofrunning.com/new-balance-fresh-foam-x-880-v15-review/","note":"DOR 소개 남성300g(US9)·40.5/34.5mm·드롭6mm. RR286g·39.7/35.4mm·4.3mm와 구분. RR 브랜드칸281g도 별도 조건입니다."},{"label":"RunRepeat 측정법","url":"https://runrepeat.com/testing-methodology","note":"내부 최광폭·엄지 너비·외부 플랫폼 폭은 다른 값입니다. AC와HA는 직접 비교하지 않습니다. 시점·측정법 버전의 차이를 구분하세요."},{"label":"공식 등록 갤러리아타임월드 뉴발란스 — 확인 SKU 제품출시가","url":"https://www.galleria.co.kr/goods/initDetailGoods.action?goods_no=2605326958","note":"남성2E Black NBPFGS107T_19 제품출시가 189,000원. 해당 페이지 판매종료 표시. 다른 폭·현재 모델 전체 MSRP로 옮기지 않습니다."},{"label":"뉴발란스 한국 공식 매장찾기","url":"https://www.nbkorea.com/support/searchShopList.action","note":"공개 매장검색의 타임월드8층 뉴발란스와 상품 A/S 매장 신원이 일치했습니다. Kids5층 매장은 구분했습니다."}],
       "limitations": [
         "질환 예방·치료 효과, 공통 최적 페이스와 수명km는 확인하지 못해 관련 등급·수명·km당 비용을 비웁니다.",
         "에디터 평점·1~10점·발볼 및 계절 적합성 분류는 실험실 단위나 임상 효과가 아닙니다.",

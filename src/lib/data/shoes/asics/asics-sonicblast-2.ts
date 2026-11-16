@@ -7,6 +7,7 @@ export const shoe: Shoe = {
     brand: "Asics",
     name: "소닉블라스트 2",
     category: "쿠션화",
+    price: 229000,
   imageCaption: "소닉블라스트 2 사진(1011C244-100 · WHITE/STADIUM ORANGE)은 ASICS 공식 상품 사진과 모델·색상·구도를 대조했습니다. 사진 품번을 한국 판매 규격·가격으로 읽지 마세요.",
   imageSource: {"title":"ASICS 공식 상품 갤러리","url":"https://www.asics.com/sg/en-sg/sonicblast-2/p/1011C244-100.html"},
     image: "/images/shoes/asics/sonicblast2/side.webp",
@@ -18,7 +19,7 @@ export const shoe: Shoe = {
       "/images/shoes/asics/sonicblast2/top.webp",
       "/images/shoes/asics/sonicblast2/outsole.webp"
     ],
-    description: "FF Turbo2 위층 · FF Blast Max 아래층 · 포크형 Pebax ASTROPLATE 구조의 소닉블라스트 2. RunRepeat 실험실 검체 230g·43.7/36.2mm. 한국 현재 정가 미확인.",
+    description: "FF Turbo2 위층 · FF Blast Max 아래층 · 포크형 Pebax ASTROPLATE 구조의 소닉블라스트 2. RunRepeat 실험실 검체 230g·43.7/36.2mm. 한국 공식 남성 1011C244.400 확인 정가 229,000원(11/14).",
     oneliner: "FF Turbo2 위층 · FF Blast Max 아래층 · 포크형 Pebax ASTROPLATE · 230g (RunRepeat 실험실 검체)",
     editorComment: "2026-11-10 원문 재확인. 한국 공식 캐시: Men 1011C244.400 폭 미확인 표시229,000원. 현재 가격·선택 재고·숫자 폭 규격은 미확인입니다. 일반 사이즈 환산표·공통2E/4E 내비게이션·장바구니 버튼을 정확 모델 재고나 폭 증거로 쓰지 않습니다. 한국 남성242g은 기준 사이즈 미공시입니다. DOR 소개242g(남성US9)/212g(여성US8)·남46/38mm·여45/37mm·8mm와 RR230g·43.7/36.2mm·7.5mm를 나눕니다. 소개를 DOR 실측이라고 잘못 부르지 않습니다. David와 Andrea의 이지 편안함·가이던스 차이를 모두의 최소 페이스로 합치지 않습니다. 리턴60.3/68.7%로 제조사 포드 주장을 입증·반박하지 않으며 한국 전체 와이드 없음·500km·모두의 감량 보장을 제거했습니다. DOR David(남성US9.5)는 높아진 앞발 볼륨·정사이즈·끈 조임과 일시 발등 압박, 좋아진 힐에도 이지강도에서 중족이 철퍽거린다고 적었습니다. Andrea(여성US9.5)는 이지·본인의 마라톤 강도가 편했지만 역치에서는 무겁고 잔디·불규칙 보도에서 포드가 불안정했습니다.20마일은 개인 관찰입니다. RR 내부 최광폭 97.4mm·엄지 71.3mm·높이 26.8mm입니다. 다른 위치인 외부 바닥 폭과 구분하고 실제 규격·양말에서 고정을 확인하세요. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.",
     tags: [
@@ -75,7 +76,7 @@ export const shoe: Shoe = {
       "plate": "정확2의 ASTROPLATE는 DOR Pebax·RR 비카본 설명입니다. 초대3/4 길이를2세대 길이로 대입하지 않습니다. 전족 폼 포드와 판을 구분합니다.",
       "width": "RR 내부 최광폭 97.4mm·엄지 부위 71.3mm·높이 26.8mm. RR 내부 최광폭 97.4mm·엄지 71.3mm·높이 26.8mm입니다. 다른 위치인 외부 바닥 폭과 구분하고 실제 규격·양말에서 고정을 확인하세요.",
       "durability": "검증된 공통 수명 km 미확인. 국소 마모·짧은 착화 후기를 주행 수명으로 환산하지 않습니다.",
-      "price": "한국 공식 캐시: Men 1011C244.400 폭 미확인 표시229,000원. 현재 가격·선택 재고·숫자 폭 규격은 미확인입니다. 일반 사이즈 환산표·공통2E/4E 내비게이션·장바구니 버튼을 정확 모델 재고나 폭 증거로 쓰지 않습니다."
+      "price": "2026-11-14 한국 공식 남성 1011C244.400의 할인 전 기준 가격과 현재 표시 판매가는 모두 229,000원으로 확인했습니다. 대표 가격은 이 선택 품번 기준입니다. 최초 출시가·다른 색상/성별/폭의 가격·쿠폰 적용 금액과 실제 결제 재고는 미확인입니다."
     },
     reviews: [
       {
@@ -101,7 +102,8 @@ export const shoe: Shoe = {
     purchaseLinks: [
       {
         "store": "네이버",
-        "url": "https://naver.me/IGsHD4kO"
+        "url": "https://naver.me/IGsHD4kO",
+        "note": "2026-11-13 판매 페이지 확인: 남성·여성 소닉블라스트2 구매대행 상품이며 여러 품번·색상이 함께 안내됩니다. 선택 사이즈·최종 가격·현재 재고와 결제 가능 여부는 판매처에서 확인하세요."
       },
       {
         "store": "쿠팡",
@@ -110,13 +112,13 @@ export const shoe: Shoe = {
       }
     ],
     verification: {
-      "checkedAt": "2026-11-10",
+      "checkedAt": "2026-11-14",
       "scope": "한국 상품 조건, 해외 실험실·제조사 공시와 외부 착화 의견의 확인 범위를 구분했습니다. 제품 전체 검증 완료 표지가 아닙니다.",
       "sources": [
         {
-          "label": "한국 공식 1011C244.400",
+          "label": "한국 공식 1011C244.400 — 2026-11-14 정가/판매가 구분",
           "url": "https://www.asics.co.kr/p/AKR_112630206-400",
-          "note": "캐시 today; Single price229000/total229000; no separateMSRP label in read original"
+          "note": "2026-11-14 한국 공식 남성 1011C244.400의 할인 전 기준 가격과 현재 표시 판매가는 모두 229,000원으로 확인했습니다. 대표 가격은 이 선택 품번 기준입니다. 최초 출시가·다른 색상/성별/폭의 가격·쿠폰 적용 금액과 실제 결제 재고는 미확인입니다."
         },
         {
           "label": "RunRepeat 동세대 실험실 원문",

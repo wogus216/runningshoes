@@ -17,11 +17,11 @@ export const shoe: Shoe = {
       "/images/shoes/asics/superblast3/outsole.webp",
       "/images/shoes/asics/superblast3/top.webp"
     ],
-    category: "레이싱",
+    category: "데일리",
     price: 259000,
     description: "FF LEAP + FF BLAST PLUS 미드솔을 쓰는 슈퍼블라스트 3. 한국 유니섹스 1013A177.101 정가 259,000원. 로그인 전 폭·사이즈별 재고는 확인 못함.",
     oneliner: "235g 실험실 무게 · FF LEAP + FF BLAST PLUS",
-    editorComment: "2026-11-09 원문 재확인. 한국 유니섹스 1013A177.101 정가 259,000원. 로그인 전 폭·사이즈별 재고는 확인 못함. 46.5/38.5mm · 8mm (ASICS 글로벌 발표). DOR 소개 239g(남성 US9)은 한국 공식 무게가 아님. RunRepeat 실측은 235g, 힐/전족부 45.8/37.7mm, 드롭 8.1mm입니다. RunRepeat는 넓은 바닥의 안정적인 느낌을 평가했지만, DOR은 이전 세대보다 중립적이고 안쪽으로 기우는 느낌을 지적했습니다. DOR 리뷰어끼리도 활용성 평가가 갈려 보편적인 안정성·보호 효과로 합치지 않습니다. 한국 공식 폭·와이드 여부와 실시간 재고는 미확인입니다. 일반 사이즈 안내표를 구매 가능한 재고로 해석하지 않습니다. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.",
+    editorComment: "2026-11-09 원문 재확인. 한국 유니섹스 1013A177.101 정가 259,000원. 로그인 전 폭·사이즈별 재고는 확인 못함. 46.5/38.5mm · 8mm (ASICS 글로벌 발표). DOR 소개 239g(남성 US9)은 한국 공식 무게가 아님. RunRepeat 실측은 235g, 힐/전족부 45.8/37.7mm, 드롭 8.1mm입니다. RunRepeat는 넓은 바닥의 안정적인 느낌을 평가했지만, DOR은 이전 세대보다 중립적이고 안쪽으로 기우는 느낌을 지적했습니다. DOR 리뷰어끼리도 활용성 평가가 갈려 보편적인 안정성·보호 효과로 합치지 않습니다. 한국 공식 폭·와이드 여부와 실시간 재고는 미확인입니다. 일반 사이즈 안내표를 구매 가능한 재고로 해석하지 않습니다. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다. 2026-11-16 ASICS 2026년2월13일 공식 발표가 super trainer와 everyday training 용도를 명시한 점을 바탕으로 사이트 편집 분류를 데일리로 정리했습니다. 공식 경기용 승인이나 모든 러너의 적합성 판정은 아닙니다.",
     tags: [
       "슈퍼트레이너",
       "고반발",
@@ -74,7 +74,7 @@ export const shoe: Shoe = {
       "drop": "8.1mm (RunRepeat 실측). 공시 사양과 측정법·검체 조건이 다릅니다.",
       "midsole": "FF LEAP + FF BLAST PLUS · 경도 22.8 AC · SA 154/153 · 에너지 리턴 67.8/67.5% (힐/전족부, RunRepeat)",
       "plate": "전장 카본 플레이트 없음",
-      "width": "RunRepeat 내부 최광폭 95.7mm / 엄지 부위 71.6mm. 한국 공식 폭·와이드 여부와 실시간 재고는 미확인입니다. 일반 사이즈 안내표를 구매 가능한 재고로 해석하지 않습니다.",
+      "width": "RunRepeat 내부 최광폭 95.7mm / 엄지 부위 71.6mm / 엄지 높이25.1mm. 한국 공식 폭·와이드 여부와 실시간 재고는 미확인입니다. 일반 사이즈 안내표를 구매 가능한 재고로 해석하지 않습니다.",
       "durability": "검증된 수명 km 미확인. 실험실 마모 깊이를 수명 km로 환산하지 않습니다.",
       "price": "한국 유니섹스 1013A177.101 정가 259,000원. 로그인 전 폭·사이즈별 재고는 확인 못함."
     },
@@ -100,33 +100,34 @@ export const shoe: Shoe = {
     relatedPosts: [
       {
         "slug": "asics-magic-speed-5-vs-superblast-3-carbon-vs-plateless-2026",
-        "title": "매직스피드 5 vs 슈퍼블라스트 3 — 플레이트 없는 쪽이 더 돌려준다"
+        "title": "매직스피드 5 vs 슈퍼블라스트 3 — 카본 유무보다 먼저 볼 앞코·높이·전환"
       },
       {
         "slug": "new-balance-sc-rebel-vs-asics-superblast-3-super-trainer-2026",
-        "title": "SC 레벨 vs 슈퍼블라스트 3 — 같은 값, 정반대 해법"
+        "title": "SC 레벨 vs 슈퍼블라스트3 — 지면 쪽 판과 고스택 폼, 실제 고정·전환 비교"
       },
       {
         "slug": "adidas-hyperboost-edge-vs-asics-superblast-3-super-trainer-2026",
-        "title": "하이퍼부스트 엣지 vs 슈퍼블라스트 3 — 슈퍼트레이너"
+        "title": "하이퍼부스트 엣지 vs 슈퍼블라스트3 — 수명 경쟁 대신, 앞발 스택·핏·전환 비교"
       },
       {
         "slug": "superblast-3-vs-evo-sl-vs-mach-6-super-trainer-2026",
-        "title": "슈퍼블라스트 3 vs 에보 SL vs 마하 6 — 슈퍼트레이너 3파전"
+        "title": "슈퍼블라스트3 vs Evo SL vs 마하6 — 스택·가벼움·핏을 조건별로"
       },
       {
         "slug": "asics-superblast-2-vs-3-comparison",
-        "title": "슈퍼블라스트 2 vs 3 — 세대 비교"
+        "title": "슈퍼블라스트2 vs3 —두 폼·스택·앞코·전환, 상위 등급 없이 비교"
       },
       {
         "slug": "running-shoe-midsole-foam-guide-2026",
-        "title": "미드솔 폼 완전 해설 — EVA·TPU·PEBA"
+        "title": "러닝화 미드솔 폼 읽는 법: 재료·발포 공정·상품명을 구분하자"
       }
     ],
     purchaseLinks: [
       {
         "store": "네이버",
-        "url": "https://naver.me/5PWBjalA"
+        "url": "https://naver.me/5PWBjalA",
+        "note": "2026-11-13 판매 페이지 확인: 슈퍼블라스트3 1013A177.400 구매대행 상품입니다. 선택 사이즈·최종 가격·현재 재고와 결제 가능 여부는 판매처에서 확인하세요."
       }
     ],
     verification: {

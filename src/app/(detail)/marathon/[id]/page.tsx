@@ -208,11 +208,13 @@ export default async function MarathonDetailPage({ params }: MarathonDetailPageP
     location: {
       '@type': 'Place',
       name: event.location,
-      address: {
-        '@type': 'PostalAddress',
-        addressCountry: ['오사카', '교토', '도쿄'].includes(event.region) ? 'JP' : 'KR',
-        addressRegion: event.region,
-      },
+      ...(event.region !== '미정' && {
+        address: {
+          '@type': 'PostalAddress',
+          addressCountry: ['오사카', '교토', '도쿄'].includes(event.region) ? 'JP' : 'KR',
+          addressRegion: event.region,
+        },
+      }),
     },
     ...(event.website && { url: event.website }),
   };

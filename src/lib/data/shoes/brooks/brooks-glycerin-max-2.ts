@@ -6,11 +6,14 @@ export const shoe: Shoe = {
     slug: "brooks-glycerin-max-2",
     brand: "Brooks",
     name: "글리세린 맥스 2",
-  imageCaption: "글리세린 맥스 2 사진은 110479-091(Phantom/White/Green Gecko)과 외관을 대조했습니다. 상단 사진은 브룩스 공식 원본으로 교체했고 측면 파일의 원래 다운로드 경로는 미확인입니다.",
-  imageSource: {"title":"Brooks 공식 상품 갤러리","url":"https://www.brooksrunning.com/en_us/mens/shoes/road-running-shoes/glycerin-max-2/110479.html?dwvar_110479_color=091"},
-    image: "/images/shoes/brooks/glycerinmax2/side.webp",
+  imageCaption: "Brooks Glycerin Max 2 대표 측면은 Brooks 일본 공식 BRM4793-W/BLU(110479-186)의 ホワイト/ブルー 원본입니다. 나머지 갤러리의 다른 색상 및 한국 판매 SKU·실험실 검체와 구분하며, 사진 실물의 사이즈·폭은 미확인입니다.",
+  imageSource: {
+    "title": "Brooks 일본 공식 대표 측면 원본",
+    "url": "https://brooksrunning.co.jp/cdn/shop/files/110479_186_L_Glycerin_Max_2.jpg?v=1761717307&width=1000"
+  },
+    image: "/images/shoes/brooks/glycerinmax2/official-110479-186-side.jpg",
     images: [
-      "/images/shoes/brooks/glycerinmax2/side.webp",
+      "/images/shoes/brooks/glycerinmax2/official-110479-186-side.jpg",
       "/images/shoes/brooks/glycerinmax2/top.webp"
     ],
     category: "쿠션화",
@@ -97,14 +100,14 @@ export const shoe: Shoe = {
     relatedPosts: [
       {
         "slug": "bondi-9-vs-glycerin-max-2-cushion-2026",
-        "title": "본디 9 vs 글리세린 맥스 2 — 맥스쿠션 대결"
+        "title": "본디 9 vs 글리세린 맥스 2 — 실측 스택·발가락 높이·가격 확인"
       }
     ],
     purchaseLinks: [
       {
         "store": "네이버",
         "url": "https://naver.me/xllLKeHG",
-        "note": "2026-11-10 등록상품명에서 글리세린 맥스 2 표기를 확인했습니다. 성별·폭·사이즈·판매 조건은 해당 상품에서 확인하세요."
+        "note": "2026-11-13 판매 페이지 확인: 남성 글리세린 맥스2 BRM4793 B/GRN 구매대행 상품입니다. 선택 사이즈·최종 가격·현재 재고와 결제 가능 여부는 판매처에서 확인하세요."
       }
     ],
     verification: {

@@ -106,7 +106,7 @@ export const shoe: Shoe = {
     },
     {
       slug: 'asics-megablast-review-2026',
-      title: '아식스 메가블라스트 후기 — 힐 45.1mm에 218g',
+      title: '아식스 메가블라스트 분석 — 218g 실측·한국 정가·낮은 앞쪽 높이',
     },
   ],
   verification: {

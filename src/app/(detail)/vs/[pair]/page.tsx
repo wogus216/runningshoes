@@ -129,7 +129,7 @@ export default async function ComparePairPage({ params }: PageProps) {
           {a.brand} {a.name} vs {b.brand} {b.name}
         </h1>
         <p className="text-secondary leading-relaxed">
-          같은 {category} 카테고리의 두 모델에서 확인한 공시·실험실 수치와 외부 착화 의견을 비교합니다. 미확인 항목은 비워 두었습니다.
+          {a.category === b.category ? `같은 ${a.category} 카테고리의 두 모델` : `${a.category}·${b.category}로 분류한 두 모델`}에서 확인한 공시·실험실 수치와 외부 착화 의견을 비교합니다. 미확인 항목은 비워 두었습니다.
           표기·실측 무게, 스택, 드롭과 확인 가격은 기준 사이즈·상품·확인 시점이 다를 수 있으므로 같은 조건인지 함께 읽으세요.
         </p>
       </header>

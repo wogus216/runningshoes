@@ -94,7 +94,9 @@ export function buildNarrative(a: Shoe, b: Shoe, category: string): string[] {
   const bn = `${b.brand} ${b.name}`;
   const paras: string[] = [];
 
-  let intro = `${withJosa(an, '과/와')} ${withJosa(bn, '은/는')} 모두 ${category} 카테고리로, 아래에서 확인된 구조·무게·가격과 측정 조건을 비교합니다.`;
+  let intro = a.category === b.category
+    ? `${withJosa(an, '과/와')} ${withJosa(bn, '은/는')} 모두 ${category} 카테고리로, 아래에서 확인된 구조·무게·가격과 측정 조건을 비교합니다.`
+    : `${withJosa(an, '은/는')} ${a.category}, ${withJosa(bn, '은/는')} ${b.category}로 분류합니다. 아래에서 확인된 구조·무게·가격과 측정 조건을 비교합니다.`;
   if (a.description) intro += ` ${withJosa(an, '은/는')} ${a.description}`;
   if (b.description) intro += ` 반면 ${withJosa(bn, '은/는')} ${b.description}`;
   paras.push(intro);

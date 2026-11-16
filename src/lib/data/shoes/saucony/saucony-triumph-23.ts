@@ -100,7 +100,8 @@ export const shoe: Shoe = {
     purchaseLinks: [
       {
         "store": "네이버",
-        "url": "https://naver.me/xqb7bLT9"
+        "url": "https://naver.me/xqb7bLT9",
+        "note": "2026-11-13 판매 페이지 확인: 남성 트라이엄프23 S21023-505 구매대행 상품입니다. 제목에 붙는 사이즈와 실제 선택 옵션을 구분하세요. 선택 사이즈·최종 가격·현재 재고와 결제 가능 여부는 판매처에서 확인하세요."
       }
     ],
     verification: {

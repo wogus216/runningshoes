@@ -94,13 +94,14 @@ export const shoe: Shoe = {
     relatedPosts: [
       {
         "slug": "mizuno-neo-vista-3-review-2026",
-        "title": "네오 비스타 3 심층 후기"
+        "title": "미즈노 네오 비스타 3 리뷰 — 높은 쿠션보다 힐 패딩·코너 고정을 먼저 확인"
       }
     ],
     purchaseLinks: [
       {
         "store": "네이버",
-        "url": "https://naver.me/xRg8g5ta"
+        "url": "https://naver.me/xRg8g5ta",
+        "note": "2026-11-13 판매 페이지 확인: 남성 네오 비스타3 J1GM261051 구매대행 상품입니다. 선택 사이즈·최종 가격·현재 재고와 결제 가능 여부는 판매처에서 확인하세요."
       }
     ],
     verification: {

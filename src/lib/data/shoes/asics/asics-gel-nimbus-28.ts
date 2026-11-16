@@ -6,15 +6,18 @@ export const shoe: Shoe = {
   slug: 'asics-gel-nimbus-28',
   brand: 'Asics',
   name: '젤 님버스 28',
-  imageCaption: "젤 님버스 28 공식 제품 사진(1011C127-100)입니다. 사진의 품번·색상과 구매할 성별·폭·옵션을 구분하세요.",
-  imageSource: {"title":"ASICS 공식 원본 사진","url":"https://images.asics.com/is/image/asics/1011C127_100_SR_RT_GLB?wid=1040&hei=1040&fmt=png-alpha"},
-  image: '/images/shoes/asics/nimbus28/side.webp',
+  imageCaption: "대표 측면 사진은 ASICS 공식1011C127-100 SR_RT 원본을 그대로 사용했습니다. 기존 왼쪽 방향 사진의 정확한 원본 대응은 미확인으로 남깁니다. 촬영 실물의 사이즈·폭과 한국 판매 규격·가격을 구분하세요.",
+  imageSource: {
+    "title": "ASICS 공식 대표 측면 원본",
+    "url": "https://images.asics.com/is/image/asics/1011C127_100_SR_RT_GLB?wid=1040&hei=1040&fmt=png-alpha"
+  },
+  image: '/images/shoes/asics/nimbus28/official-1011c127-100-sr-rt.png',
   images: [
-    '/images/shoes/asics/nimbus28/side.webp',
-    '/images/shoes/asics/nimbus28/front.webp',
-    '/images/shoes/asics/nimbus28/back.webp',
-    '/images/shoes/asics/nimbus28/angle.webp',
-    '/images/shoes/asics/nimbus28/outsole.webp',
+    "/images/shoes/asics/nimbus28/official-1011c127-100-sr-rt.png",
+    "/images/shoes/asics/nimbus28/front.webp",
+    "/images/shoes/asics/nimbus28/back.webp",
+    "/images/shoes/asics/nimbus28/angle.webp",
+    "/images/shoes/asics/nimbus28/outsole.webp"
   ],
   category: '쿠션화',
   price: 199000,
@@ -101,22 +104,23 @@ export const shoe: Shoe = {
   relatedPosts: [
     {
       slug: 'new-balance-1080-v15-vs-asics-nimbus-28-premium-cushion-2026',
-      title: '1080 v15 vs 님버스 28 — 프리미엄 쿠션 대결',
+      title: '1080 V15 vs 님버스28 — 23g·스택·발가락 공간과 한국 폭',
     },
     {
       slug: 'pegasus-42-vs-nimbus-28-daily-cushion-2026',
-      title: '페가수스 42 vs 젤 님버스 28 — 데일리 대결',
+      title: '페가수스42 vs 님버스28 — Air Zoom·고스택보다 먼저 볼 드롭·앞코 높이',
     },
     {
       slug: 'asics-running-shoes-lineup-tier-guide-2026',
-      title: '아식스 러닝화 계급도',
+      title: '아식스 러닝화 라인업 — 세대·폼·판·핏으로 비교하기',
     },
   ],
   purchaseLinks: [
     {
-      store: '네이버',
-      url: 'https://naver.me/551GfvQ6',
-    },
+      "store": "네이버",
+      "url": "https://naver.me/551GfvQ6",
+      "note": "2026-11-13 판매 페이지 확인: 남성 젤 님버스28 1011C127 상품이며 구매대행 표시가 있습니다. 선택 사이즈·최종 가격·현재 재고와 결제 가능 여부는 판매처에서 확인하세요."
+    }
   ],
   verification: {
     checkedAt: '2026-11-09',

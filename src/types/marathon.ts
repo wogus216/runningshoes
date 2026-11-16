@@ -42,7 +42,8 @@ export type EventRegion =
   | '제주'
   | '오사카'
   | '교토'
-  | '도쿄';
+  | '도쿄'
+  | '미정';
 
 export type EventDistance = '풀코스' | '하프' | '15K' | '12K' | '11K' | '10.5K' | '10K' | '6K' | '5K' | '4.4K' | '4K' | '울트라' | '트레일';
 
@@ -228,6 +229,7 @@ export const EVENT_REGIONS: EventRegion[] = [
   '경북', '경남', '대구', '울산', '부산',
   '제주',
   '오사카', '교토', '도쿄',
+  '미정',
 ];
 
 export const EVENT_DISTANCES: EventDistance[] = ['풀코스', '하프', '10K', '5K', '울트라', '트레일'];

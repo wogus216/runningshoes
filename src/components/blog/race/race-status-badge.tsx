@@ -23,7 +23,7 @@ export function RaceStatusBadge({ meta }: { meta: RaceMeta }) {
     setLabel(s.label);
   }, [meta]);
 
-  // hydration 전 — 날짜 텍스트로 대체한다
+  // hydration 전 — 접수중 확인 기록은 낡을 수 있으므로 대회 날짜를 보여준다
   if (kind === null) {
     const confirmedClosed = Boolean(meta.registrationClosed || meta.soldOut);
     const fallback = meta.registrationClosed
@@ -31,7 +31,7 @@ export function RaceStatusBadge({ meta }: { meta: RaceMeta }) {
       : meta.soldOut
         ? '선착순 마감'
         : meta.registrationOpen
-          ? '접수중'
+          ? `대회 ${meta.raceDate}`
           : meta.registrationStart
             ? `접수 ${meta.registrationStart.slice(5, 10).replace('-', '월 ')}일`
             : '접수 미정';

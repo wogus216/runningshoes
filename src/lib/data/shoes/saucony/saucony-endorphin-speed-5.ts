@@ -98,11 +98,11 @@ export const shoe: Shoe = {
     relatedPosts: [
       {
         "slug": "boston-13-vs-zoom-fly-6-vs-endorphin-speed-5-tempo-trainer-2026",
-        "title": "템포 트레이너 3파전 — 보스턴 13 vs 줌 플라이 6 vs 엔돌핀 스피드 5"
+        "title": "보스턴13 vs 줌플라이6 vs 스피드5 — 로드·카본·나일론과 한국 와이드"
       },
       {
         "slug": "superblast-3-vs-evo-sl-vs-mach-6-super-trainer-2026",
-        "title": "슈퍼트레이너 3파전 — 슈퍼블라스트 3 vs 에보 SL vs 마하 6"
+        "title": "슈퍼블라스트3 vs Evo SL vs 마하6 — 스택·가벼움·핏을 조건별로"
       }
     ],
     purchaseLinks: [],

@@ -6,8 +6,8 @@ export const shoe: Shoe = {
   slug: 'asics-gel-kayano-33',
   brand: 'Asics',
   name: '젤 카야노 33',
-  imageCaption: "젤 카야노 33 공식 제품 사진(1011C167-100)입니다. 사진의 품번·색상과 구매할 성별·폭·옵션을 구분하세요.",
-  imageSource: {"title":"ASICS 공식 원본 사진","url":"https://images.asics.com/is/image/asics/1011C167_100_SR_RT_GLB?wid=1040&hei=1040&fmt=png-alpha"},
+  imageCaption: "젤 카야노33 공식1011C167-100의 FluidSupport가 보이는 안쪽 측면(SR_LT) 사진과 대조했습니다. 사진의 품번·색상과 구매할 성별·폭·옵션을 구분하세요.",
+  imageSource: {"title":"ASICS 공식 원본 사진","url":"https://images.asics.com/is/image/asics/1011C167_100_SR_LT_GLB?wid=1040&hei=1040&fmt=png-alpha"},
   image: '/images/shoes/asics/kayano33/side.webp',
   images: [
     '/images/shoes/asics/kayano33/side.webp',
@@ -101,26 +101,27 @@ export const shoe: Shoe = {
   ],
   purchaseLinks: [
     {
-      store: '네이버',
-      url: 'https://naver.me/5kP1X6Dc',
-    },
+      "store": "네이버",
+      "url": "https://naver.me/5kP1X6Dc",
+      "note": "2026-11-13 판매 페이지 확인: 일반·4E 와이드가 함께 안내된 젤 카야노33 구매대행 상품입니다. 선택할 품번·폭을 구분하세요. 선택 사이즈·최종 가격·현재 재고와 결제 가능 여부는 판매처에서 확인하세요."
+    }
   ],
   relatedPosts: [
     {
       slug: 'asics-gel-kayano-33-review',
-      title: '아식스 젤 카야노 33 심층 후기',
+      title: '아식스 카야노 33 분석 — FluidSupport·한국4E·리뷰어 지지감 차이',
     },
     {
       slug: 'kayano-33-vs-glycerin-gts-22-vs-860-v15-2026',
-      title: '카야노 33 vs 글리세린 GTS 22 vs 860 v15 — 안정화 3강 비교',
+      title: '카야노 33·글리세린 GTS 22·860 v15: 안정화 구성과 매장 비교법',
     },
     {
       slug: 'asics-kayano-32-vs-33-comparison',
-      title: '카야노 32 vs 33 — 세대 비교',
+      title: '카야노 32 vs 33 — 지지 구조·실측·한국 판매 폭 비교',
     },
     {
       slug: 'running-shoe-midsole-foam-guide-2026',
-      title: '미드솔 폼 완전 해설 — EVA·TPU·PEBA',
+      title: '러닝화 미드솔 폼 읽는 법: 재료·발포 공정·상품명을 구분하자',
     },
   ],
   verification: {

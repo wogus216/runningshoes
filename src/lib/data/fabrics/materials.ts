@@ -148,11 +148,11 @@ export const materialFabrics: Fabric[] = [
       "sourceUrl": "https://www.cirfs.org/man-made-fibers/Fibre-range/elastane"
     },
     {
-      "text": "언더아머는2026년4월 HeatGear Elite에 NEOLAST를 사용하며 엘라스테인의 대안이라고 발표했습니다. 따라서 신축성 의류는 모두 스판덱스라는 설명은 맞지 않습니다.",
+      "text": "언더아머는2026년4월 HeatGear Elite에 NEOLAST를 적용해2026년부터 출시할 계획이며 엘라스테인의 대안이라고 발표했습니다. 신축성 의류가 모두 스판덱스를 쓴다는 설명과는 구분해야 합니다.",
       "grade": "B",
       "source": "Under Armour 공식 HeatGear Elite·NEOLAST 발표2026-04-20",
       "sourceUrl": "https://about.underarmour.com/en/stories/2026/04/the-future-of-stretch.html",
-      "caveat": "내구성·환경상 이점은 제조사의 설명입니다. 모든 제품의 실제 수명이나 재활용 완료를 검증한 것은 아닙니다."
+      "caveat": "내구성·환경상 이점은 제조사의 설명입니다. 발표문만으로 국내 실제 출시·판매나 모든 제품의 수명·재활용 완료를 확인한 것은 아닙니다."
     }
   ],
   "unknowns": [
@@ -167,7 +167,7 @@ export const materialFabrics: Fabric[] = [
   "relatedPosts": [
     "running-socks-guide-fiber-composition-2026"
   ],
-  "updatedAt": "2026-11-10",
+  "updatedAt": "2026-11-13",
   "keywords": [
     "엘라스테인",
     "스판덱스",
@@ -192,21 +192,21 @@ export const materialFabrics: Fabric[] = [
   "name": "메리노 울",
   "nameEn": "Merino Wool",
   "summary": "흡습발열 연구는 있지만 시험 조건·울 종류·지원 관계를 함께 읽어야 합니다.",
-  "intro": "울의 수분 흡수에 따른 발열과 실제 러닝 중 보온은 구분해서 봅니다.2023년 연구의 울 업계 지원을 표시하고,2026년 새 원단 시험의 외부 지원 없음도 별도로 기록했습니다. 연구 몇 편을 울 논문 전체의 성격으로 일반화하지 않습니다.",
+  "intro": "울의 수분 흡수에 따른 발열과 실제 러닝 중 보온은 구분해서 봅니다.2023년 연구는 울 업계의 연구비·게재료 지원을,2026년 연구는 외부 연구비 없음을 공시했습니다. 두 연구 모두 Australian Wool Innovation이 실험 원단을 제공했다고 명시하므로 연구비와 시료 제공을 따로 봐야 합니다.",
   "claims": [
     {
       "text": "2023년 연구는 습도 변화에 따른 원단의 열 변화를 비교했습니다. 울·비스코스의 열 방출이 더 컸지만 폴리에스터에서도 작은 변화가 관찰돼 폴리에스터에는 발열이 전혀 없다는 기존 단정은 수정했습니다.",
       "grade": "A",
       "source": "Abedin & DenHartog, Fibers2023,11(5):47 — 본문·지원 명세",
       "sourceUrl": "https://www.mdpi.com/2079-6439/11/5/47",
-      "caveat": "Australian Wool Innovation의 연구비·게재료 지원을 명시합니다. 열판 결과를 사람 피부온도 변화와 동일시하지 않습니다."
+      "caveat": "Australian Wool Innovation의 연구비·게재료 지원과 실험 원단 제공을 명시합니다. 저자들은 지원기관이 연구 설계·분석·원고 작성·발행 결정에 관여하지 않았다고 공시했습니다. 열판 결과를 사람 피부온도 변화와 동일시하지 않습니다."
     },
     {
       "text": "2026년 연구는23℃ 등온 미세열량계에서 메리노 울·면·비스코스·폴리에스터 원단을 비교했습니다. 울의 습윤열이 가장 컸고 폴리에스터의 반응은 미미했습니다.",
       "grade": "A",
       "source": "Abedin & DenHartog, Fibers2026,14(1):15 — 본문·지원 명세",
       "sourceUrl": "https://www.mdpi.com/2079-6439/14/1/15",
-      "caveat": "외부 연구비 없음·이해충돌 없음으로 공시한 별도 연구입니다. 원단 실험이며 모든 겨울 러닝복의 체감·기록 시험은 아닙니다."
+      "caveat": "외부 연구비 없음·이해충돌 없음으로 공시했지만 실험 원단은 Australian Wool Innovation이 제공했다고 명시합니다. 원단 실험이며 모든 겨울 러닝복의 체감·기록 시험은 아닙니다."
     },
     {
       "text": "ZQ 공식 문서는 동물복지·환경·사회적 책임 등 생산 관리 기준을 설명합니다. 인증 이름만으로 특정 셔츠의 보온·건조속도나 냄새 성능을 정할 수 없습니다.",
@@ -227,7 +227,7 @@ export const materialFabrics: Fabric[] = [
     "running-foot-care-blisters-toenails-2026",
     "running-socks-guide-fiber-composition-2026"
   ],
-  "updatedAt": "2026-11-10",
+  "updatedAt": "2026-11-13",
   "keywords": [
     "메리노 울",
     "겨울 러닝복",

@@ -97,7 +97,7 @@ export const shoe: Shoe = {
   relatedPosts: [
     {
       slug: 'running-shoe-midsole-foam-guide-2026',
-      title: '미드솔 폼 완전 해설 — EVA·TPU·PEBA',
+      title: '러닝화 미드솔 폼 읽는 법: 재료·발포 공정·상품명을 구분하자',
     },
   ],
   verification: {

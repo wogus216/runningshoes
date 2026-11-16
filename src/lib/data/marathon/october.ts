@@ -299,12 +299,12 @@ export const octoberEvents: MarathonEvent[] = [
     website: "https://transjeju.utmb.world/",
     registrationStart: "2026-03-18",
     registrationEnd: "2026-07-31",
-    lastVerified: "2026-11-10",
+    lastVerified: "2026-11-16",
     registrationNote: "공식 안내는 3월 18일 17시 접수 시작, 20K 일반 접수 3월 20일 17시, 선착순 예정 마감 7월 31일이다. 실제 종목별 매진 시각은 미확인이다. 10월 2일 배번·엑스포는 종목 페이지에서 10~20시로 안내하며 이전 18시 표기를 바로잡았다. 다음 회차 조건은 별도 확인한다.",
-    description: "10월 2~4일 제주 일정은 지났다. 공식 게시값은 100M 148km/상승 5,000m, 100K 104km/4,000m, 60K 60km/1,400m, 20K 20km/508m다. 참가 Index는 60K에 20K 이상·100K에 50K 이상·100M에 100K 이상을 요구하며 20K는 면제하되 계정이 필요하다. Running Stones와 본대회 출전 보장은 별개다.",
+    description: "10월 2~4일 제주 일정은 지났다. 공식 종목 페이지 상단 안내값은 100M 148km/상승 5,000m, 100K 104km/4,000m, 60K 60km/1,400m, 20K는 웹 상단20km/508m다. 다만20K의 웹 하단420m·2026 공식 가이드19.2km/468m와 차이가 있어 확정 고도·거리는 미확인이다. 참가 Index는 60K에 20K 이상·100K에 50K 이상·100M에 100K 이상을 요구하며 20K는 면제하되 계정이 필요하다. Running Stones와 본대회 출전 보장은 별개다.",
     courseInfo: {
       terrain: '산악',
-      courseDescription: '공식 게시 거리·누적 상승은 100M 148km/5,000m·100K 104km/4,000m·60K 60km/1,400m·20K 20km/508m다. 앞 두 종목은 제주월드컵경기장, 뒤 두 종목은 가시리 출발이다. 출발은 10월 2일 21시/3일 05시/08시/10시, 최대 허용시간은 37/29/15/4시간이다. 실제 개인 GPS나 현장 변경을 인증하는 값은 아니다. 각 종목 장비 목록은 별도로 확인한다.',
+      courseDescription: '공식 게시 거리·누적 상승은 100M 148km/5,000m·100K 104km/4,000m·60K 60km/1,400m·20K 20km/508m다. 앞 두 종목은 제주월드컵경기장, 뒤 두 종목은 가시리 출발이다. 출발은 10월 2일 21시/3일 05시/08시/10시, 최대 허용시간은 37/29/15/4시간이다. 실제 개인 GPS나 현장 변경을 인증하는 값은 아니다. 각 종목 장비 목록은 별도로 확인한다. 20K는 같은 공식 페이지 상단의 누적 상승 508m와 하단 소개의 420m가 다릅니다. 여기의 508m는 상단 표시값이며 실제 확정 코스 고도를 별도로 확인한 것은 아닙니다. 공식 2026 Race Guide PDF20쪽(책자19쪽)의20K 코스표는 거리19.2km·누적 상승468m로 표시해 웹의20km/508m·하단420m와도 다릅니다. 웹 상단값을 가이드의 확정 최종값이나 실측값으로 합치지 않습니다. 2026-11-16 추가로 읽은 공식 UTMB Index의 2026 Jeju20K 기록 페이지도 20km·누적 상승 508m를 표시합니다. 같은 UTMB 발행사 자료의 교차 대조이며 독립 실측으로 세지 않습니다. 공식 종목 페이지에 연결된 GPX도 확보했지만 파일 좌표의 자체 계산은 보정 방식에 따라 달라 공식 고도 정정의 근거로 채택하지 않았습니다. 따라서 가이드의 19.2km/468m·웹 하단 420m와의 차이는 여전히 남아 있습니다.',
     },
     raceInfo: {
       "timeLimits": [
@@ -331,16 +331,11 @@ export const octoberEvents: MarathonEvent[] = [
       ],
       "startTime": "21:00"
     },
-    postRaceNote: "대회 종료 뒤 개인 완주 결과·Index·Running Stones 반영 완료는 미조회다. 일반 규정 페이지의 예전 연도·폴 설명보다 2026 종목별 페이지를 함께 읽어야 하며 해당 페이지는 스틱 사용 금지다. https://transjeju.utmb.world/races/Jeju100M 및 https://transjeju.utmb.world/races/Jeju20K",
+    postRaceNote: "개인 완주 결과·Index·Running Stones 반영 완료는 미조회다. 공식 2026 Race Guide PDF23쪽(책자22쪽)의 영문 추천 장비 설명은 20K에만 트레킹 폴을 허용하며 사용 시 출발부터 도착까지 휴대하고 코스 도중 전달받지 않도록 안내한다. PDF24쪽(책자23쪽) 페널티 표도 100K·100M·60K의 스틱 사용 실격과 20K의 대시 표기를 구분한다. 따라서 2026년20K 허용 조건을 확인했으며 다른 종목이나 다음 회차로 확대하지 않는다. https://docs.google.com/presentation/d/1bZTV94N7V-Dm8i55V86ePnd1otwWoZo8pE8t92TogcY/edit 2026-11-16 다시 내려받은 공식 가이드 PDF가 이전 확인 파일과 동일한 SHA-256임을 대조하고 PDF20·23·24쪽을 다시 읽었습니다. 가이드의19.2km/468m와 한국어·영어 웹 상단20km/508m·하단420m 차이를 해소하는 정정 자료는 확보하지 못했습니다. 어느 값을 최종 실측으로 확정하지 않습니다. 공개 UTMB Index 기록 페이지의 표기(20km/508m)와 종목 페이지에 연결된 GPX 파일을 새로 확인했습니다. 개인별 결과·Index·Running Stones 지급 완료는 조회하지 않았습니다.",
     factCheck: {
-      checkedAt: '2026-11-11',
-      sources: [
-        { title: '공식 2026 Trans100M 종목', url: 'https://transjeju.utmb.world/races/Jeju100M' },
-        { title: '공식 2026 Trans100K 종목', url: 'https://transjeju.utmb.world/races/Jeju100K' },
-        { title: '공식 2026 Trans60K 종목', url: 'https://transjeju.utmb.world/races/Jeju70K' },
-        { title: '공식 2026 Trans20K 종목', url: 'https://transjeju.utmb.world/races/Jeju20K' },
-      ],
-      note: '11월 10일 확보한 공식 2026 종목 원문과 다시 대조했습니다. 5,000m 상승은 100M(148km)의 안내값이며 전 종목 공통 고도가 아닙니다. 종목별 수치는 코스 설명에 구분해 남기고, 출처 없는 상급 등급과 공통 5,000m 표시는 철회했습니다.',
+      "checkedAt": "2026-11-16",
+      "sources": [{"title":"공식 2026 Trans100M 장비 안내","url":"https://transjeju.utmb.world/ko/races/Jeju100M"},{"title":"공식 2026 Trans100K 장비 안내","url":"https://transjeju.utmb.world/ko/races/Jeju100K"},{"title":"공식 2026 Trans60K 장비 안내","url":"https://transjeju.utmb.world/ko/races/Jeju70K"},{"title":"공식 2026 Trans20K 한국어 안내","url":"https://transjeju.utmb.world/ko/races/jeju20k"},{"title":"공식 2026 Trans20K 영어 안내","url":"https://transjeju.utmb.world/races/Jeju20K"},{"title":"공식 일반 대회 규정 — 종목별 안내와 구분","url":"https://transjeju.utmb.world/races-runners/other-information/regulation"},{"title":"공식 연결 2026 TransJeju Race Guide — PDF20·23·24쪽 직접 대조","url":"https://docs.google.com/presentation/d/1bZTV94N7V-Dm8i55V86ePnd1otwWoZo8pE8t92TogcY/edit"},{"title":"공식 UTMB Index — 2026 Jeju20K 공개 기록 페이지의 대회 메타데이터","url":"https://utmb.world/utmb-index/races/36778.transjejubyutmbjeju20k.2026"},{"title":"공식 종목 페이지에 연결된 2026 Jeju20K GPX — 공식 정정으로 해석하지 않음","url":"https://pdf.utmb.world/raw/upload/v1790513519/transjeju/Races/2026_Trans_Jeju_20_K_260927_7379320e49.gpx"}],
+      "note": "2026-11-14 공식 사이트가 연결한47쪽 Race Guide를 공개 PDF로 내려받았습니다. OCR은47쪽에 실행했고 실제 이미지는 PDF20·23·24쪽을 읽었습니다. 20K 폴 허용·전 구간 휴대·중간 수령 금지 조건과 종목별 페널티 표를 확인해 이전의 허용 여부 미확인을 보완했습니다. 한국어 스틱 금지 문장은100K/100M·60K 목록에 붙어 있으며20K 전체 금지로 확대하지 않습니다. 20K 고도는 웹 상단508m·하단420m와 가이드 코스표468m(19.2km)가 달라 원문별 표기를 유지합니다. 가이드 게시·수정 시각과 현장 최종 변경·개인 GPS는 미확인입니다. 다른 종목·다음 회차 규정을 새로 확정하지 않습니다. 2026-11-16 추가로 읽은 공식 UTMB Index의 2026 Jeju20K 기록 페이지도 20km·누적 상승 508m를 표시합니다. 같은 UTMB 발행사 자료의 교차 대조이며 독립 실측으로 세지 않습니다. 공식 종목 페이지에 연결된 GPX도 확보했지만 파일 좌표의 자체 계산은 보정 방식에 따라 달라 공식 고도 정정의 근거로 채택하지 않았습니다. 따라서 가이드의 19.2km/468m·웹 하단 420m와의 차이는 여전히 남아 있습니다."
     },
   },
   {
@@ -468,9 +463,9 @@ export const octoberEvents: MarathonEvent[] = [
   "postponed": true,
   "isMajor": false,
   "website": "https://seoulopen.or.kr/",
-  "description": "10월5일 예정 대회는 공식 일정 변경 안내 상태입니다. 11/10 공개 공지 목록에서 새 개최일 확정 원문은 확보하지 못했습니다. 새 환불 지연 공지는10/23이전 신청 우선·이후 신청 순차 처리와 늦어도11/20완료를 약속하며 계좌 미입력으로 보류된 대상자는11/12까지 정보 접수를 요청합니다. 카드취소 처리 안내와 실제 카드 반영·계좌 환급은 구분하며 개인 거래 완료를 확인한 것은 아닙니다.",
-  "registrationNote": "일정 변경·새 개최일 확정 미확인. 11/10 공식 최신56·57번 공지는 환불 지연과 늦어도11/20처리 완료 약속,계좌 정보 미입력 대상자의11/12입력 요청을 안내합니다. 사무국의 약속과 실제 개인별 취소·입금 완료는 다릅니다. 본인 대상 여부와 신청 내역은 공식 홈페이지·문의 경로에서 확인하세요.",
-  "lastVerified": "2026-11-10",
+  "description": "10월5일 예정 대회는 공식 일정 변경 안내 상태입니다. 2026-11-13 공개 공지 목록과56·57번 본문을 다시 읽었지만 새 개최일 확정 안내는 확보하지 못했습니다. 사무국은10/23이전 신청 우선·이후 신청 순차 처리와 늦어도11/20환불 완료를 약속했습니다. 계좌 미입력 대상자의 정보 접수 요청 기한11/12는 지났습니다. 카드취소 안내·사무국 약속과 실제 개인별 카드 반영·계좌 환급은 구분합니다.",
+  "registrationNote": "새 개최일 확정 미확인(2026-11-13 공식 공지 재확인). 환불 계좌 미입력 대상자의11/12접수 요청 기한은 지났으며 사무국은 늦어도11/20환불 완료를 약속했습니다. 실제 개인별 취소·입금 완료는 확인하지 않았습니다. 본인 대상 여부와 후속 안내는 공식 홈페이지에서 확인하세요.",
+  "lastVerified": "2026-11-13",
   "raceInfo": {
     "entryFees": [
       {

@@ -98,13 +98,14 @@ export const shoe: Shoe = {
     relatedPosts: [
       {
         "slug": "running-shoe-plate-guide-2026",
-        "title": "플레이트 완전 해설 — 카본·유리섬유·나일론"
+        "title": "러닝화 플레이트 읽는 법 — 판·로드·소재·최신 대회 규정"
       }
     ],
     purchaseLinks: [
       {
         "store": "네이버",
-        "url": "https://naver.me/x0OoxmwE"
+        "url": "https://naver.me/x0OoxmwE",
+        "note": "2026-11-13 판매 페이지 확인: 엔돌핀 프로4 S20939-68 상품입니다. 사이트의 사진 색상·성별과 판매 상품은 다를 수 있습니다. 선택 사이즈·최종 가격·현재 재고와 결제 가능 여부는 판매처에서 확인하세요."
       },
       {
         "store": "쿠팡",

@@ -77,7 +77,7 @@ export const shoe: Shoe = {
       "drop": "7.1mm (RunRepeat 실측). 공시 사양과 측정법·검체 조건이 다릅니다.",
       "midsole": "FF BLAST MAX + 전족부 FF TURBO² · 경도 35.1 AC · SA 143/130 · 에너지 리턴 55.4/69.1% (힐/전족부, RunRepeat)",
       "plate": "전장 카본 플레이트 없음",
-      "width": "RunRepeat 내부 최광폭 94.8mm / 엄지 부위 71mm. 남성 일반·2E 상품을 확인했습니다. 여성 일반 상품도 확인했으나 여성 와이드는 미확인입니다.",
+      "width": "RunRepeat 내부 최광폭 94.8mm / 엄지 부위71mm / 앞코 높이27.9mm. 남성 일반·2E 상품을 확인했습니다. 여성 일반 상품도 확인했으나 여성 와이드는 미확인입니다.",
       "durability": "검증된 수명 km 미확인. 실험실 마모 깊이를 수명 km로 환산하지 않습니다.",
       "price": "한국 공식 정가 179,000원. 남성 일반 1011C243.250 / 남성 2E 1011C242.002 / 여성 일반 1012C008.250."
     },
@@ -103,41 +103,42 @@ export const shoe: Shoe = {
     relatedPosts: [
       {
         "slug": "adidas-adizero-evo-sl-vs-asics-novablast-6-daily-2026",
-        "title": "Evo SL vs 노바블라스트6 — 무게·가격·한국 와이드"
+        "title": "Evo SL vs 노바블라스트6 — 26g·3만원 차이와 남성 와이드 선택"
       },
       {
         "slug": "asics-novablast-6-vs-adidas-boston-13-daily-2026",
-        "title": "노바블라스트6 vs 보스턴13 — 구조와 핏"
+        "title": "노바블라스트6 vs 보스턴13 — 1만원·5g보다 먼저 볼 구조와 핏"
       },
       {
         "slug": "nike-pegasus-42-vs-asics-novablast-6-daily-2026",
-        "title": "노바블라스트 6 vs 페가수스 42 — 데일리 대결"
+        "title": "페가수스42 vs 노바블라스트6 —에어·전족 폼·드롭·고정 비교"
       },
       {
         "slug": "asics-novablast-5-vs-6-comparison-2026",
-        "title": "노바블라스트 5 vs 6 — 세대 비교"
+        "title": "노바블라스트5 vs6 —전족 FF TURBO²·앞코·힐 전환의 변화"
       },
       {
         "slug": "asics-novablast-6-preview-2026",
-        "title": "노바블라스트 6 미리보기 — 5와 뭐가 다른가"
+        "title": "노바블라스트6 확인 자료 —전족 FF TURBO²·실측·한국SKU·주행 의견"
       },
       {
         "slug": "asics-novablast-6-vs-hoka-clifton-pro-2026",
-        "title": "노바블라스트 6 vs 클리프톤 프로"
+        "title": "노바블라스트6 vs 클리프톤 PRO — 전족 반응·로커·앞코·고정을 비교"
       },
       {
         "slug": "asics-running-shoes-lineup-tier-guide-2026",
-        "title": "아식스 러닝화 계급도"
+        "title": "아식스 러닝화 라인업 — 세대·폼·판·핏으로 비교하기"
       },
       {
         "slug": "running-shoe-midsole-foam-guide-2026",
-        "title": "미드솔 폼 완전 해설 — EVA·TPU·PEBA"
+        "title": "러닝화 미드솔 폼 읽는 법: 재료·발포 공정·상품명을 구분하자"
       }
     ],
     purchaseLinks: [
       {
         "store": "네이버",
-        "url": "https://naver.me/5suWuF0P"
+        "url": "https://naver.me/5suWuF0P",
+        "note": "2026-11-13 판매 페이지 확인: 남성·여성과 2E 와이드가 함께 안내된 노바블라스트6 구매대행 상품입니다. 선택할 품번·폭을 구분하세요. 선택 사이즈·최종 가격·현재 재고와 결제 가능 여부는 판매처에서 확인하세요."
       },
       {
         "store": "쿠팡",
@@ -146,7 +147,7 @@ export const shoe: Shoe = {
       }
     ],
     verification: {
-      "checkedAt": "2026-11-09",
+      "checkedAt": "2026-11-12",
       "scope": "한국 확인 SKU의 정가·폭과 해외 실험실 수치·구조·외부 착화 의견을 재확인했습니다.",
       "sources": [
         {
@@ -157,7 +158,7 @@ export const shoe: Shoe = {
         {
           "label": "RunRepeat 노바블라스트 6",
           "url": "https://runrepeat.com/asics-novablast-6",
-          "note": "남성 US9 공시 기준. 249g · 39.2/32.1mm · 드롭 7.1mm. SA 143/130 · ER 55.4/69.1% · 35.1 AC."
+          "note": "남성 US9 공시 기준. 249g · 39.2/32.1mm · 드롭 7.1mm. SA 143/130 · ER 55.4/69.1% · 35.1 AC. 11/12 원문에서 내부 앞코 높이27.9mm를 추가 확인했습니다. 다른 폭·성별 상품의 치수로 확대하지 않습니다."
         },
         {
           "label": "Doctors of Running 착화 리뷰",

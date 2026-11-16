@@ -39,7 +39,7 @@ export const shoe: Shoe = {
     midsoleType: 'Lightstrike Pro + Lightstrike 2.0',
   },
   koreanFootFit: {
-    wideOptions: false,
+
   },
   targetUsers: {
     recommended: [
@@ -99,30 +99,31 @@ export const shoe: Shoe = {
   relatedPosts: [
     {
       slug: 'asics-novablast-6-vs-adidas-boston-13-daily-2026',
-      title: '노바블라스트6 vs 보스턴13 — 구조와 핏',
+      title: '노바블라스트6 vs 보스턴13 — 1만원·5g보다 먼저 볼 구조와 핏',
     },
     {
       slug: 'adidas-adizero-evo-sl-vs-boston-13-daily-2026',
-      title: 'Evo SL vs 보스턴13 — 가격·구조·실측 조건',
+      title: '아디제로 Evo SL vs 보스턴13 — 2만원·31g 차이와 폼·로드 구조',
     },
     {
       slug: 'boston-13-vs-zoom-fly-6-vs-endorphin-speed-5-tempo-trainer-2026',
-      title: '템포 트레이너 3파전 — 보스턴 13 vs 줌 플라이 6 vs 엔돌핀 스피드 5',
+      title: '보스턴13 vs 줌플라이6 vs 스피드5 — 로드·카본·나일론과 한국 와이드',
     },
     {
       slug: 'superblast-3-vs-evo-sl-vs-mach-6-super-trainer-2026',
-      title: '슈퍼블라스트3 vs 에보SL vs 마하6 — 슈퍼트레이너',
+      title: '슈퍼블라스트3 vs Evo SL vs 마하6 — 스택·가벼움·핏을 조건별로',
     },
     {
       slug: 'adidas-running-shoes-lineup-tier-guide-2026',
-      title: '아디다스 러닝화 라인업 — 용도와 구조 비교',
+      title: '아디다스 러닝화 라인업 — 메시·변형·로드·림으로 비교하기',
     },
   ],
   purchaseLinks: [
     {
-      store: '네이버',
-      url: 'https://naver.me/x6JSFDuz',
-    },
+      "store": "네이버",
+      "url": "https://naver.me/x6JSFDuz",
+      "note": "2026-11-13 판매 페이지 확인: 아디다스 공식 스토어의 보스턴13 KK4992 상품입니다. 선택 사이즈·최종 가격·현재 재고와 결제 가능 여부는 판매처에서 확인하세요."
+    }
   ],
   verification: {
     checkedAt: '2026-11-09',

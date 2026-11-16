@@ -20,6 +20,15 @@
         ],
         "createdAt": "2026-11-10T01:35:33.743Z",
         "reason": "Agent triage under user hook scope policy: git blame attributes the unchanged summary-card accent at line58 to e19209a6 (2026-05-12); current work audits factual content, and the user hook explicitly prohibits treating pre-existing findings as regressions or broadening scope. Preserve this existing summary accent; waiver limited to side-tab in this file."
+      },
+      {
+        "rule": "side-tab",
+        "value": "*",
+        "files": [
+          "src/app/(main)/vs/page.tsx"
+        ],
+        "createdAt": "2026-11-16T08:17:38.720Z",
+        "reason": "Agent: line76 is an incumbent H2 category-section heading, not a card side-tab; exact classes match the saved pre-W79 file. Preserve existing visual identity during factual category correction; no user confirmation of this style is claimed."
       }
     ]
   }

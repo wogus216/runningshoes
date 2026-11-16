@@ -20,7 +20,7 @@ import { gels } from '../src/lib/data/gels';
 import { marathonEvents } from '../src/lib/data/marathon';
 import { isPast } from '../src/lib/marathon/bands';
 import { getAllPosts } from '../src/lib/data/blog';
-import { PINNED_PAIRS } from '../src/lib/pseo/pairs';
+import { PINNED_PAIRS, getPairBySlug } from '../src/lib/pseo/pairs';
 import { checkRaceMeta, checkDeadlineStrips, STRIP_WITHOUT_ANCHOR_BASELINE } from '../src/lib/blog/race-meta-rules';
 import type { Shoe } from '../src/types/shoe';
 import { collectCrossrefHits } from './lib/crossref-collect';
@@ -519,7 +519,7 @@ console.log('\n━━━ 8. 대회 글 구성 표준 ━━━');
 // ===========================================
 // `/vs` 페어는 카테고리별 상위 N 조합이라 **신발을 추가하기만 해도 기존 URL 이 조용히 404 가 된다**
 // (2026-08-10 39개, 08-21 9개). PINNED_PAIRS 가 그 재발을 막는 장치인데, 핀에 적힌 신발이 사라지거나
-// 카테고리가 바뀌면 pairs.ts 는 `continue` 로 건너뛰어 핀조차 조용히 무효가 된다. 그 침묵을 여기서 깬다.
+// 비교 그룹에서 빠지면 핀조차 조용히 무효가 된다. 실제 생성 결과로 그 침묵을 여기서 깬다.
 console.log('\n━━━ 9. pSEO 고정 페어 검증 ━━━');
 {
   const categoryBySlug = new Map(shoes.map((s) => [s.slug, s.category] as const));
@@ -531,7 +531,7 @@ console.log('\n━━━ 9. pSEO 고정 페어 검증 ━━━');
     const ca = categoryBySlug.get(a);
     const cb = categoryBySlug.get(b);
     if (!ca || !cb) { error(`[pseo] 고정 페어 /vs/${slug} 가 생성되지 않습니다 — ${!ca ? a : b} 신발이 없습니다 (색인된 URL 이 404 가 됩니다)`); dead++; }
-    else if (ca !== cb) { error(`[pseo] 고정 페어 /vs/${slug} 가 생성되지 않습니다 — 카테고리 불일치(${a}=${ca} / ${b}=${cb})`); dead++; }
+    else if (!getPairBySlug(slug)) { error(`[pseo] 고정 페어 /vs/${slug} 가 생성되지 않습니다 — 비교 그룹·생성 조건을 확인하세요(${a}=${ca} / ${b}=${cb})`); dead++; }
   }
   if (dead === 0) ok(`고정 페어 ${PINNED_PAIRS.length}개 전부 생성 가능`);
 }

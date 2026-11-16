@@ -102,15 +102,15 @@ export const shoe: Shoe = {
     relatedPosts: [
       {
         "slug": "saucony-ride-18-vs-19-comparison",
-        "title": "라이드 18 vs 19 — 세대 비교"
+        "title": "라이드18 vs19 — 새 폼·로커·앞코를 비교하고, 미확인 리턴은 비워 두기"
       },
       {
         "slug": "saucony-running-shoes-lineup-tier-guide-2026",
-        "title": "써코니 러닝화 계급도"
+        "title": "사코니 러닝화 라인업 읽기: 폼·판·지지 구조로 비교하는 모델 지도"
       },
       {
         "slug": "running-shoe-500km-replacement-myth-2026",
-        "title": "\"500km 교체설\"의 진실 — 소재별 수명"
+        "title": "러닝화 500km 교체설 — 연구가 측정한 것과 말하지 않은 것"
       }
     ],
     purchaseLinks: [

@@ -32,8 +32,8 @@ describe('purchase evidence rendering', () => {
   it('shows the mixed-generation selection condition at the purchase link', () => {
     const shoe = shoes.find(s => s.slug === 'new-balance-860-v15')!;
     const output = renderToStaticMarkup(React.createElement(PurchaseLinks, { purchaseLinks: shoe.purchaseLinks!, shoeName: shoe.name, brand: shoe.brand }));
-    expect(output).toContain('860 V14·V15');
-    expect(output).toContain('버전의 옵션·품번');
+    expect(output).toMatch(/860\s*v14\s*·\s*v15/i);
+    expect(output).toMatch(/버전[^<]*품번/);
   });
 
   it('does not silently retain an unchecked price in the shoe catalog', () => {

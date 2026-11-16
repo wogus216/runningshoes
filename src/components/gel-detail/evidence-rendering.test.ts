@@ -34,7 +34,8 @@ describe('gel evidence rendering', () => {
   });
 
   it('distinguishes a verified zero from missing nutrition fields', () => {
-    const output = renderToStaticMarkup(React.createElement(NutritionSpecs, { gel: product }));
+    const gel: Gel = { ...product, nutritionFacts: { ...product.nutritionFacts, caffeine: 0, sodium: undefined } };
+    const output = renderToStaticMarkup(React.createElement(NutritionSpecs, { gel }));
     expect(output).toContain('0 mg');
     expect(output).toContain('나트륨 미확인');
     expect(output).not.toContain('undefined');

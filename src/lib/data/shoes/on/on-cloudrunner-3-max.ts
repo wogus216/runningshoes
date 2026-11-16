@@ -11,7 +11,8 @@ export const shoe: Shoe = {
   imageSource: { title: 'On 공식 상품 갤러리', url: 'https://www.on.com/ko-kr/products/cloudrunner-3-max-m-3mg3020/mens/white-verdite-shoes-3MG30205363' },
   images: ['/images/shoes/on/cloudrunner3max/official-3mg30205363-side.webp', '/images/shoes/on/cloudrunner3max/official-3mg30205363-top.webp', '/images/shoes/on/cloudrunner3max/official-3mg30205363-outsole.webp'],
   category: '안정화',
-  description: "Helion HF위층 · Helion아래층 · CloudTec·힐클립 구조. 한국공식남성공시, 기준 사이즈미공시 330g·드롭 8mm, 독립 랩·스택·한국 현재 가격은 미확인입니다.",
+  price: 219000,
+  description: "Helion HF위층 · Helion아래층 · CloudTec·힐클립 구조. 한국공식남성공시, 기준 사이즈미공시 330g·드롭 8mm, 독립 랩·스택은 미확인입니다. 한국 공식 남성 3MG30205363 확인 정가 219,000원(11/14).",
   oneliner: "Helion HF위층 · Helion아래층 · CloudTec·힐클립 · 330g (한국공식남성공시, 기준 사이즈미공시)",
   editorComment: "2026-11-10 원문 재확인. 한국캐시남성 3MG30205363·여성 3WG30165363 Regular표시가격 219,000원, 공시남성 330g/여성 275g(사이즈미공시)·8mm 입니다. 현재 가격·와이드·선택재고는미확인입니다. 정확 Runner3Max의독립 랩·스택·내부치수·SA·리턴·경도는미확인입니다. 기존 38/30mm 제 3자실측·600km수명·해외 306g 기준을검증된현재수치로반복하지않습니다. 남성 330g·여성 275g 과다른모델랩무게를동일사이즈라고계산하지않습니다. 기존 600km·km당 365원·체중부담/평발/과내전보호·중립러너금지를철회합니다. Helion HF이름만으로정확배합·기본형과완전히같은지지효과를확정하지 않습니다. 정확 Max의 DOR 개별리뷰는미확인입니다. 기본 Runner3의 David주행·핏을 Max의체감으로옮기지않습니다. ‘쿠션등급높음’이임상보호·장거리완주효과를증명하지않습니다. 한국캐시 Regular·정사이즈는제조사안내이며현재 와이드부재·개인의발적합 보장이아닙니다. 실제규격에서힐클립압박·앞코·발등고정을확인하세요. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.",
   tags: [
@@ -71,7 +72,7 @@ export const shoe: Shoe = {
     plate: "힐클립·높은사이드월은공식에서확인했지만플레이트유무·소재는미확인입니다. 기본 Runner3와다른 폼 을구분합니다.",
     width: "동세대 독립 랩 내부 치수 미확인. 한국캐시 Regular·정사이즈는제조사안내이며현재 와이드부재·개인의발적합 보장이아닙니다. 실제규격에서힐클립압박·앞코·발등고정을확인하세요.",
     durability: '검증된 공통 수명 km 미확인. 국소 마모·짧은 착화 후기를 주행 수명으로 환산하지 않습니다.',
-    price: "한국캐시남성 3MG30205363·여성 3WG30165363 Regular표시가격 219,000원, 공시남성 330g/여성 275g(사이즈미공시)·8mm 입니다. 현재 가격·와이드·선택재고는미확인입니다.",
+    price: "2026-11-14 한국 공식 남성 3MG30205363의 할인 전 기준 가격과 현재 표시 판매가는 모두 219,000원으로 확인했습니다. 대표 가격은 이 선택 품번 기준입니다. 최초 출시가·다른 색상/성별/폭의 가격·쿠폰 적용 금액과 실제 결제 재고는 미확인입니다.",
   },
   similarShoes: [
     'on-cloudrunner-3',
@@ -86,31 +87,31 @@ export const shoe: Shoe = {
     },
   ],
   verification: {
-    checkedAt: '2026-11-10',
-    scope: '한국 상품 조건, 해외 실험실·제조사 공시와 외부 착화 의견의 확인 범위를 구분했습니다. 제품 전체 검증 완료 표지가 아닙니다.',
-    sources: [
+    "checkedAt": "2026-11-14",
+    "scope": "한국 상품 조건, 해외 실험실·제조사 공시와 외부 착화 의견의 확인 범위를 구분했습니다. 제품 전체 검증 완료 표지가 아닙니다.",
+    "sources": [
       {
-        label: '한국 공식 캐시 3MG30205363 · men',
-        url: 'https://www.on.com/ko-kr/products/cloudrunner-3-max-m-3mg3020/mens/white-verdite-shoes-3MG30205363',
-        note: '표시 정가 219000원. 도구 캐시 yesterday; 현재 가격·선택 재고 미확인.',
+        "label": "한국 공식 3MG30205363 — 2026-11-14 정가/판매가 구분",
+        "url": "https://www.on.com/ko-kr/products/cloudrunner-3-max-m-3mg3020/mens/white-verdite-shoes-3MG30205363",
+        "note": "2026-11-14 한국 공식 남성 3MG30205363의 할인 전 기준 가격과 현재 표시 판매가는 모두 219,000원으로 확인했습니다. 대표 가격은 이 선택 품번 기준입니다. 최초 출시가·다른 색상/성별/폭의 가격·쿠폰 적용 금액과 실제 결제 재고는 미확인입니다."
       },
       {
-        label: '한국 공식 캐시 3WG30165363 · women',
-        url: 'https://www.on.com/ko-kr/products/cloudrunner-3-max-w-3wg3016/womens/white-verdite-shoes-3WG30165363',
-        note: '표시 정가 219000원. 도구 캐시 today; 현재 가격·선택 재고 미확인.',
+        "label": "한국 공식 캐시 3WG30165363 · women",
+        "url": "https://www.on.com/ko-kr/products/cloudrunner-3-max-w-3wg3016/womens/white-verdite-shoes-3WG30165363",
+        "note": "표시 정가 219000원. 도구 캐시 today; 현재 가격·선택 재고 미확인."
       },
       {
-        label: 'RunRepeat 측정법',
-        url: 'https://runrepeat.com/testing-methodology',
-        note: "AC·HA·HC, SA·에너지 리턴, BR·구방식 1~5와 내부/외부 폭을 구분합니다. 일반 정책은 개별 라벨 확인과 다릅니다.",
-      },
+        "label": "RunRepeat 측정법",
+        "url": "https://runrepeat.com/testing-methodology",
+        "note": "AC·HA·HC, SA·에너지 리턴, BR·구방식 1~5와 내부/외부 폭을 구분합니다. 일반 정책은 개별 라벨 확인과 다릅니다."
+      }
     ],
-    limitations: [
-      '모델별 임상 예방·치료 등급, 공통 최적 페이스·주행 수명·km당 비용은 미확인으로 제거했습니다.',
-      '에디터 평점·1~10점·발볼 및 계절 분류·구매 링크는 모든 항목을 새로 검증한 수치나 임상 효과가 아닙니다.',
-      '판매 조건은 확인한 상품·시점에 한정합니다. 미확인을 미출시·단종·전국 재고 없음으로 해석하지 않습니다.',
-      '동세대 독립 실험실 자료 미확인. 제조사 공시와 DOR 소개를 독립 실측으로 표시하지 않음.',
-      '정확한 동세대 DOR 개별 착화 리뷰 미확인. 다른 세대로 대체하지 않음.',
-    ],
+    "limitations": [
+      "모델별 임상 예방·치료 등급, 공통 최적 페이스·주행 수명·km당 비용은 미확인으로 제거했습니다.",
+      "에디터 평점·1~10점·발볼 및 계절 분류·구매 링크는 모든 항목을 새로 검증한 수치나 임상 효과가 아닙니다.",
+      "판매 조건은 확인한 상품·시점에 한정합니다. 미확인을 미출시·단종·전국 재고 없음으로 해석하지 않습니다.",
+      "동세대 독립 실험실 자료 미확인. 제조사 공시와 DOR 소개를 독립 실측으로 표시하지 않음.",
+      "정확한 동세대 DOR 개별 착화 리뷰 미확인. 다른 세대로 대체하지 않음."
+    ]
   },
 };

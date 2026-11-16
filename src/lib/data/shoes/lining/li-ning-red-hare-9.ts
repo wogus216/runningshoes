@@ -23,7 +23,6 @@ export const shoe: Shoe = {
       "입문화",
       "입문",
       "중국 러닝화",
-      "와이드",
       "통근",
       "데일리",
       "Li-Ning"

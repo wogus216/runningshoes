@@ -13,9 +13,10 @@ export const shoe: Shoe = {
     '/images/shoes/saucony/triumph24/side.jpg',
   ],
   category: '쿠션화',
-  description: 'IncrediLUX ATPU · 넓은 바닥과 완만한 로커 구조의 트라이엄프 24. RunRepeat 실험실 검체 258g·41.6/33.6mm. 한국 현재 정가 미확인.',
+  price: 209000,
+  description: 'IncrediLUX ATPU · 넓은 바닥과 완만한 로커 구조의 트라이엄프 24. RunRepeat 실험실 검체 258g·41.6/33.6mm. 한국 공식 S100997-1017 정가 209,000원(11/13 선택 상품).',
   oneliner: 'IncrediLUX ATPU · 넓은 바닥과 완만한 로커 · 258g (RunRepeat 실험실 검체)',
-  editorComment: '2026-11-10 원문 재확인. 한국 공식 캐시: men S100997-1017 M(일반) 정가209,000원·할인캐시188,100원; men S101894-1003 W(와이드) 정가209,000원; women S100994-1002 W(와이드) 정가209,000원. 현재 가격·폭별 선택 재고는 미확인입니다. 옵션 목록·장바구니·품절 문구를 현재 전체 재고로 해석하지 않습니다. 한국 무게·전체 스택 공시가 없는 제품은 해외 소개로 채우지 않습니다. DOR 소개250g(남성 US9)/216g(여성 US8)·43/33mm·10mm와 RR258g·41.6/33.6mm·8mm를 구분합니다. David의 여유 있는 앞발·아주 부드러운 체감과 RR 내부93.4/71.4mm·37.5AC는 다른 조건입니다. 저온 경도 변화7%를 겨울 보호 보장으로 해석하지 않습니다. 11%폼 증량·모든 사이즈 감량·650km·질환별 우위 단정을 이번 원문으로 갱신하지 않습니다. DOR 직접403 이후 검색에 노출된 원문 캐시를 확인했습니다. DOR David(남성 US9.5)는 정사이즈·보통 힐/중족과 조금 넓은 앞발·좋은 고정을 적었습니다. 아주 부드럽지만 로커와 넓은 바닥 덕분에 본인 달리기에는 불안정 문제가 없었고 걷기·서기는 부드러움 선호에 따라 갈릴 수 있다고 했습니다. RR 내부 최광폭 93.4mm·엄지 71.4mm·높이 26.1mm입니다. 전체 발 적합성이나 한국 와이드 규격으로 바꾸지 말고 실제 길이·높이·고정을 함께 확인하세요. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
+  editorComment: '2026-11-10 원문 재확인. 2026-11-13 한국 공식 남성 M(일반) S100997-1017의 정가 209,000원, 표시 판매가 188,100원을 본문에서 확인했습니다. 해당 품번의 정가와 할인 가격을 구분하며 다른 성별·색상·폭·특별판의 동일 가격이나 실제 재고·결제 가능 여부를 뜻하지 않습니다. DOR 소개250g(남성 US9)/216g(여성 US8)·43/33mm·10mm와 RR258g·41.6/33.6mm·8mm를 구분합니다. David의 여유 있는 앞발·아주 부드러운 체감과 RR 내부93.4/71.4mm·37.5AC는 다른 조건입니다. 저온 경도 변화7%를 겨울 보호 보장으로 해석하지 않습니다. 11%폼 증량·모든 사이즈 감량·650km·질환별 우위 단정을 이번 원문으로 갱신하지 않습니다. DOR 직접403 이후 검색에 노출된 원문 캐시를 확인했습니다. DOR David(남성 US9.5)는 정사이즈·보통 힐/중족과 조금 넓은 앞발·좋은 고정을 적었습니다. 아주 부드럽지만 로커와 넓은 바닥 덕분에 본인 달리기에는 불안정 문제가 없었고 걷기·서기는 부드러움 선호에 따라 갈릴 수 있다고 했습니다. RR 내부 최광폭 93.4mm·엄지 71.4mm·높이 26.1mm입니다. 전체 발 적합성이나 한국 와이드 규격으로 바꾸지 말고 실제 길이·높이·고정을 함께 확인하세요. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
   tags: [
     '쿠션화',
     '중립',
@@ -74,7 +75,7 @@ export const shoe: Shoe = {
     plate: '한국 공식의 carbon rubber는 밑창 고무 설명으로 카본 플레이트 증거가 아닙니다. 정확 원문의 별도 플레이트 존재·재료는 미확인입니다.',
     width: 'RR 내부 최광폭 93.4mm·엄지 부위 71.4mm·높이 26.1mm. RR 내부 최광폭 93.4mm·엄지 71.4mm·높이 26.1mm입니다. 전체 발 적합성이나 한국 와이드 규격으로 바꾸지 말고 실제 길이·높이·고정을 함께 확인하세요.',
     durability: '검증된 공통 수명 km 미확인. 국소 마모·짧은 착화 후기를 주행 수명으로 환산하지 않습니다.',
-    price: '한국 공식 캐시: men S100997-1017 M(일반) 정가209,000원·할인캐시188,100원; men S101894-1003 W(와이드) 정가209,000원; women S100994-1002 W(와이드) 정가209,000원. 현재 가격·폭별 선택 재고는 미확인입니다. 옵션 목록·장바구니·품절 문구를 현재 전체 재고로 해석하지 않습니다. 한국 무게·전체 스택 공시가 없는 제품은 해외 소개로 채우지 않습니다.',
+    price: '2026-11-13 한국 공식 남성 M(일반) S100997-1017의 정가 209,000원, 표시 판매가 188,100원을 본문에서 확인했습니다. 해당 품번의 정가와 할인 가격을 구분하며 다른 성별·색상·폭·특별판의 동일 가격이나 실제 재고·결제 가능 여부를 뜻하지 않습니다.',
   },
   similarShoes: [
     'saucony-triumph-23',
@@ -84,11 +85,11 @@ export const shoe: Shoe = {
   relatedPosts: [
     {
       slug: 'hoka-bondi-9-vs-saucony-triumph-24-max-cushion-2026',
-      title: '본디 9 vs 트라이엄프 24 — 같은 41mm 맥스쿠션 대결',
+      title: '본디9 vs 트라이엄프24 — 같은41mm대여도 앞코 높이·로커·폼은 다르다',
     },
     {
       slug: 'saucony-triumph-24-review',
-      title: '트라이엄프 24 리뷰 — 스택 +6mm인데 -22g',
+      title: '트라이엄프24 리뷰 — 부드러운 체감과37.5AC, 앞코·걷기에서 확인할 차이',
     },
   ],
   purchaseLinks: [
@@ -99,39 +100,44 @@ export const shoe: Shoe = {
     },
   ],
   verification: {
-    checkedAt: '2026-11-10',
-    scope: '한국 상품 조건, 해외 실험실·제조사 공시와 외부 착화 의견의 확인 범위를 구분했습니다. 제품 전체 검증 완료 표지가 아닙니다.',
+    checkedAt: '2026-11-13',
+    scope: '한국 상품 조건, 해외 실험실·제조사 공시와 외부 착화 의견의 확인 범위를 구분했습니다. 제품 전체 검증 완료 표지가 아닙니다. / 2026-11-13 후속: 정확 한국 품번의 정가·표시 판매가만 재확인. 기존 랩·리뷰·타 색상·성별·폭의 새 검증 아님.',
     sources: [
       {
-        label: 'kr-triumph24-m',
-        url: 'https://saucony.co.kr/product/detail.html?cate_no=129&display_group=1&product_no=418',
-        note: 'original_opened_cached_web; 남성 S100997-1017 TRIPLE BLACK M(일반),209000/할인188100,250–300.',
+        "url": "https://saucony.co.kr/product/detail.html?cate_no=129&display_group=1&product_no=418",
+        "note": "2026-11-13 한국 공식 남성 M(일반) S100997-1017의 정가 209,000원, 표시 판매가 188,100원을 본문에서 확인했습니다. 해당 품번의 정가와 할인 가격을 구분하며 다른 성별·색상·폭·특별판의 동일 가격이나 실제 재고·결제 가능 여부를 뜻하지 않습니다. 가격 후속 대조이며 기존 측정·실착 원문 확인일은 별도입니다.",
+        "label": "한국 공식 선택 품번 정가·할인가 재확인 · 2026-11-13"
       },
       {
-        label: 'kr-triumph24-mw',
-        url: 'https://saucony.co.kr/product/detail.html?cate_no=129&display_group=1&product_no=502',
-        note: 'original_opened_cached_web; 남성 S101894-1003 TRIPLE BLACK W(와이드),209000,250–300.',
+        "label": "kr-triumph24-m",
+        "url": "https://saucony.co.kr/product/detail.html?cate_no=129&display_group=1&product_no=418",
+        "note": "original_opened_cached_web; 남성 S100997-1017 TRIPLE BLACK M(일반),209000/할인188100,250–300."
       },
       {
-        label: 'kr-triumph24-ww',
-        url: 'https://saucony.co.kr/product/detail.html?cate_no=45&display_group=1&product_no=407',
-        note: 'original_opened_cached_web; 여성 S100994-1002 FOG/ICE MELT W(와이드),209000,220–255. carbon rubber는 아웃솔 고무 설명.',
+        "label": "kr-triumph24-mw",
+        "url": "https://saucony.co.kr/product/detail.html?cate_no=129&display_group=1&product_no=502",
+        "note": "original_opened_cached_web; 남성 S101894-1003 TRIPLE BLACK W(와이드),209000,250–300."
       },
       {
-        label: 'RunRepeat 동세대 실험실 원문',
-        url: 'https://runrepeat.com/saucony-triumph-24',
-        note: '공시 일반 검체 정책은 남성 US9. 실제 검체 라벨·폭 미확인. 258g·41.6/33.6mm·8mm. David의 여유 있는 앞발·아주 부드러운 체감과 RR 내부93.4/71.4mm·37.5AC는 다른 조건입니다. 저온 경도 변화7%를 겨울 보호 보장으로 해석하지 않습니다. 11%폼 증량·모든 사이즈 감량·650km·질환별 우위 단정을 이번 원문으로 갱신하지 않습니다.',
+        "label": "kr-triumph24-ww",
+        "url": "https://saucony.co.kr/product/detail.html?cate_no=45&display_group=1&product_no=407",
+        "note": "original_opened_cached_web; 여성 S100994-1002 FOG/ICE MELT W(와이드),209000,220–255. carbon rubber는 아웃솔 고무 설명."
       },
       {
-        label: 'Doctors of Running 동세대 원문',
-        url: 'https://www.doctorsofrunning.com/saucony-triumph-24-review-2026/',
-        note: 'DOR 소개250g(남성 US9)/216g(여성 US8)·43/33mm·10mm와 RR258g·41.6/33.6mm·8mm를 구분합니다.',
+        "label": "RunRepeat 동세대 실험실 원문",
+        "url": "https://runrepeat.com/saucony-triumph-24",
+        "note": "공시 일반 검체 정책은 남성 US9. 실제 검체 라벨·폭 미확인. 258g·41.6/33.6mm·8mm. David의 여유 있는 앞발·아주 부드러운 체감과 RR 내부93.4/71.4mm·37.5AC는 다른 조건입니다. 저온 경도 변화7%를 겨울 보호 보장으로 해석하지 않습니다. 11%폼 증량·모든 사이즈 감량·650km·질환별 우위 단정을 이번 원문으로 갱신하지 않습니다."
       },
       {
-        label: 'RunRepeat 측정법',
-        url: 'https://runrepeat.com/testing-methodology',
-        note: 'AC·HA·HC, SA·에너지 리턴, BR·구방식1~5와 내부/외부 폭을 구분합니다. 일반 정책은 개별 라벨 확인과 다릅니다.',
+        "label": "Doctors of Running 동세대 원문",
+        "url": "https://www.doctorsofrunning.com/saucony-triumph-24-review-2026/",
+        "note": "DOR 소개250g(남성 US9)/216g(여성 US8)·43/33mm·10mm와 RR258g·41.6/33.6mm·8mm를 구분합니다."
       },
+      {
+        "label": "RunRepeat 측정법",
+        "url": "https://runrepeat.com/testing-methodology",
+        "note": "AC·HA·HC, SA·에너지 리턴, BR·구방식1~5와 내부/외부 폭을 구분합니다. 일반 정책은 개별 라벨 확인과 다릅니다."
+      }
     ],
     limitations: [
       '모델별 임상 예방·치료 등급, 공통 최적 페이스·주행 수명·km당 비용은 미확인으로 제거했습니다.',

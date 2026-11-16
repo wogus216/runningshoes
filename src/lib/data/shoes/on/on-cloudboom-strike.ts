@@ -17,7 +17,8 @@ export const shoe: Shoe = {
       "/images/shoes/on/cloudboomstrike/outsole.webp"
     ],
     category: "레이싱",
-    description: "초대 Helion HF · Bounceboard 드롭인 폼 · 카본 Speedboard 구조의 클라우드붐 스트라이크. RunRepeat 실험실 검체 201g·38.1/34.9mm. 한국 현재 정가 미확인.",
+    price: 329000,
+    description: "초대 Helion HF · Bounceboard 드롭인 폼 · 카본 Speedboard 구조의 클라우드붐 스트라이크. RunRepeat 실험실 검체 201g·38.1/34.9mm. 한국 공식 남성 3ME30483331 확인 정가 329,000원(11/14).",
     oneliner: "초대 Helion HF · Bounceboard 드롭인 폼 · 카본 Speedboard · 201g (RunRepeat 실험실 검체)",
     editorComment: "2026-11-10 원문 재확인. 한국 공식 캐시: men 3ME3048 Regular / 레귤러 표시329,000원; women 3WE30474836 Regular / 레귤러 표시329,000원. 현재 가격·폭·선택 재고는 미확인입니다. 캐시 수량·알림·장바구니 버튼을 현재 재고로 쓰지 않습니다. 한국 남성210g·여성194g(기준 사이즈 미공시)·4mm, DOR 소개215g(남성US9)/187g(여성US8)·39.5/35.5mm·4mm와 RR201g·38.1/34.9mm·3.2mm를 나눕니다. 34.2AC는 카본 위 Pebax 드롭인 폼이며 하층 경도는 미확인입니다. 힐 인솔두께6.6mm를 전족 동일 두께로 보지 않습니다. 겨울 경화율 최저·성능 저하 없음·힐 착지 아킬레스 손상·300km와 다른 PEBA 실험의 수명 전용을 제거했습니다. DOR 직접403 뒤 원문 캐시를 확인했습니다. David(남성US9.5)는 낮고 밀착되는 앞발/중족에 비해 힐이 여유 있어 회전·경사에서 움직였고 앞발 탄성은 좋아도 후족 안정감은 부족했습니다. Nathan은 바운스와 좁은 힐/중족의 흔들림, Andrea는 불편한 어퍼·접히는 혀와 좋은 전족 바운스를 적었습니다. Nathan·Andrea 실제 사이즈는 미확인입니다. RR 내부 최광폭 95.6mm·엄지 73.4mm·높이 27.2mm입니다. 너비 하나로 발등·길이·힐 고정이나 한국 와이드 적합을 보장하지 않습니다. 실제 규격·양말에서 접촉과 전환을 확인하세요. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.",
     tags: [
@@ -36,7 +37,7 @@ export const shoe: Shoe = {
       },
       "drop": 3.2,
       "carbonPlate": true,
-      "plateType": "Carbon Speedboard/PWRPLATE/EnergyArc",
+      "plateType": "Spoon-shaped full-length carbon Speedboard",
       "midsoleType": "초대 Helion HF · Bounceboard 드롭인 폼 · 카본 Speedboard"
     },
     koreanFootFit: {},
@@ -86,7 +87,7 @@ export const shoe: Shoe = {
       "plate": "한국 원문은 스푼형100% 카본 Speedboard를 설명합니다. 구조적 쿠션 부품인 Bounceboard를 일반 인솔로 교체해도 같은 착화감이 유지된다고 가정하지 않습니다.",
       "width": "RR 내부 최광폭 95.6mm·엄지 부위 73.4mm·높이 27.2mm. RR 내부 최광폭 95.6mm·엄지 73.4mm·높이 27.2mm입니다. 너비 하나로 발등·길이·힐 고정이나 한국 와이드 적합을 보장하지 않습니다. 실제 규격·양말에서 접촉과 전환을 확인하세요.",
       "durability": "검증된 공통 수명 km 미확인. 국소 마모·짧은 착화 후기를 주행 수명으로 환산하지 않습니다.",
-      "price": "한국 공식 캐시: men 3ME3048 Regular / 레귤러 표시329,000원; women 3WE30474836 Regular / 레귤러 표시329,000원. 현재 가격·폭·선택 재고는 미확인입니다. 캐시 수량·알림·장바구니 버튼을 현재 재고로 쓰지 않습니다."
+      "price": "2026-11-14 한국 공식 남성 3ME30483331의 할인 전 기준 가격과 현재 표시 판매가는 모두 329,000원으로 확인했습니다. 대표 가격은 이 선택 품번 기준입니다. 최초 출시가·다른 색상/성별/폭의 가격·쿠폰 적용 금액과 실제 결제 재고는 미확인입니다."
     },
     similarShoes: [
       "nike-alphafly-3",
@@ -96,22 +97,22 @@ export const shoe: Shoe = {
     relatedPosts: [
       {
         "slug": "running-shoe-plate-guide-2026",
-        "title": "플레이트 완전 해설 — 카본·유리섬유·나일론"
+        "title": "러닝화 플레이트 읽는 법 — 판·로드·소재·최신 대회 규정"
       },
       {
         "slug": "bio-based-running-shoe-foam-sugarcane-castor-2026",
-        "title": "사탕수수·피마자 폼 — 바이오 러닝화 추적"
+        "title": "바이오 기반 러닝화 소재, 사탕수수·피마자보다 먼저 볼 것은 적용 부위"
       }
     ],
     purchaseLinks: [],
     verification: {
-      "checkedAt": "2026-11-10",
+      "checkedAt": "2026-11-14",
       "scope": "한국 상품 조건, 해외 실험실·제조사 공시와 외부 착화 의견의 확인 범위를 구분했습니다. 제품 전체 검증 완료 표지가 아닙니다.",
       "sources": [
         {
-          "label": "한국 공식 3ME3048",
+          "label": "한국 공식 3ME30483331 — 2026-11-14 정가/판매가 구분",
           "url": "https://www.on.com/ko-kr/products/cloudboom-strike-3me3048/mens",
-          "note": "original_opened_cached_web; 현재가격·선택재고 미확인."
+          "note": "2026-11-14 한국 공식 남성 3ME30483331의 할인 전 기준 가격과 현재 표시 판매가는 모두 329,000원으로 확인했습니다. 대표 가격은 이 선택 품번 기준입니다. 최초 출시가·다른 색상/성별/폭의 가격·쿠폰 적용 금액과 실제 결제 재고는 미확인입니다."
         },
         {
           "label": "한국 공식 3WE30474836",

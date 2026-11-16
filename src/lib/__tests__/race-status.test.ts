@@ -58,6 +58,19 @@ describe('deriveRaceStatus', () => {
     expect(html).not.toContain('접수중');
   });
 
+  it('지난 대회의 오래된 접수중 확인은 초기 HTML에 대회 날짜로 표시한다', () => {
+    const meta = {
+      ...base,
+      raceDate: '2026-11-14',
+      registrationEnd: '2026-11-13',
+      registrationOpen: { verifiedAt: '2026-11-10' },
+    };
+    expect(deriveRaceStatus(meta, parseKst('2026-11-15')).kind).toBe('past');
+    const html = renderToStaticMarkup(createElement(RaceStatusBadge, { meta }));
+    expect(html).toContain('대회 2026-11-14');
+    expect(html).not.toContain('접수중');
+  });
+
   it('접수 시작이 미정이면 tbd', () => {
     const s = deriveRaceStatus(base, parseKst('2026-08-19'));
     expect(s.kind).toBe('tbd');

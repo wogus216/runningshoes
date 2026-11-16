@@ -6,11 +6,14 @@ export const shoe: Shoe = {
     slug: "brooks-adrenaline-gts-25",
     brand: "Brooks",
     name: "아드레날린 GTS 25",
-  imageCaption: "아드레날린 GTS 25 사진은 Brooks 110454-1D-123 White/Spellbound/Orange의 공식 상품 정보와 모델·색상 외관을 대조했습니다. 현 파일의 원본 다운로드 경로는 미확인입니다. 사진 품번은 한국 현재 판매 조건을 뜻하지 않습니다.",
-  imageSource: {"title":"Brooks 공식 모델·색상 대조","url":"https://www.brooksrunning.com/en_us/mens/shoes/road-running-shoes/adrenaline-gts-25/1104541D123.070.html"},
-    image: "/images/shoes/brooks/adrenalinegts25/side.webp",
+  imageCaption: "대표 측면은 Brooks 일본 공식 BRM4543-GRY(110454-033)의 그레이 원본 사진입니다. 기존 다른 색상 자료와 한국 판매 상품의 성별·폭·가격을 구분하세요.",
+  imageSource: {
+    "title": "Brooks 일본 공식 대표 측면 원본",
+    "url": "https://brooksrunning.co.jp/cdn/shop/files/110454_033_L_Adrenaline_GTS_25.jpg?v=1756359341&width=1000"
+  },
+    image: "/images/shoes/brooks/adrenalinegts25/official-110454-033-side.jpg",
     images: [
-      "/images/shoes/brooks/adrenalinegts25/side.webp",
+      "/images/shoes/brooks/adrenalinegts25/official-110454-033-side.jpg",
       "/images/shoes/brooks/adrenalinegts25/front.webp",
       "/images/shoes/brooks/adrenalinegts25/back.webp",
       "/images/shoes/brooks/adrenalinegts25/top.webp",
@@ -94,7 +97,7 @@ export const shoe: Shoe = {
     relatedPosts: [
       {
         "slug": "running-shoe-500km-replacement-myth-2026",
-        "title": "\"500km 교체설\"의 진실 — 소재별 수명"
+        "title": "러닝화 500km 교체설 — 연구가 측정한 것과 말하지 않은 것"
       }
     ],
     purchaseLinks: [

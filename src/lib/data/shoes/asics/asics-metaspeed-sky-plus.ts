@@ -98,11 +98,11 @@ export const shoe: Shoe = {
   relatedPosts: [
     {
       slug: 'nike-alphafly-3-vs-asics-metaspeed-sky-vs-nb-sc-elite-v5-carbon-racer-2026',
-      title: '카본 3파전 — 알파플라이 3 vs 메타스카이+ vs SC 엘리트 v5',
+      title: '알파플라이3 vs 스카이+ vs SC 엘리트v5 —세대·판·앞코·전환 비교',
     },
     {
       slug: 'running-shoe-plate-guide-2026',
-      title: '플레이트 완전 해설 — 카본·유리섬유·나일론',
+      title: '러닝화 플레이트 읽는 법 — 판·로드·소재·최신 대회 규정',
     },
   ],
   purchaseLinks: [

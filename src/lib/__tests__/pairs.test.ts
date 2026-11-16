@@ -22,6 +22,19 @@ describe('pseo pairs', () => {
     }
   });
 
+  it('분류를 정정한 두 모델의 기존 비교 URL 20개를 유지한다', () => {
+    const peers: Record<string, string[]> = {
+      'nike-pegasus-premium': ['puma-velocity-nitro-4', 'brooks-ghost-17', 'hoka-clifton-10', 'nike-pegasus-41', 'brooks-ghost-18', 'adidas-supernova-rise-2', 'new-balance-880-v15', 'nike-pegasus-42', 'puma-velocity-nitro-5', 'saucony-ride-19', 'li-ning-red-hare-9'],
+      'asics-superblast-3': ['asics-superblast-2', 'new-balance-sc-rebel', 'nike-zoom-fly-6', 'puma-deviate-nitro-elite-3', 'puma-deviate-nitro-elite-4', 'asics-magic-speed-5', 'adidas-adios-pro-4', 'asics-magic-speed-4', 'asics-metaspeed-edge-plus'],
+    };
+    for (const [shoe, others] of Object.entries(peers)) {
+      for (const other of others) {
+        const slug = [shoe, other].sort((a, b) => a.localeCompare(b)).join('-vs-');
+        expect(getPairBySlug(slug), slug).toBeDefined();
+      }
+    }
+  });
+
   it('slug 는 a<b 알파벳 순이고 중복이 없다', () => {
     expect(slugs.size).toBe(pairs.length);
     for (const p of pairs) {
@@ -30,10 +43,15 @@ describe('pseo pairs', () => {
     }
   });
 
-  it('같은 카테고리끼리 묶고 신규 조합은 비교 데이터를 요구한다', () => {
+  it('현재 신발 분류를 보존하고 신규 조합은 비교 데이터를 요구한다', () => {
     for (const p of pairs) {
-      expect(p.a.category).toBe(p.category);
-      expect(p.b.category).toBe(p.category);
+      expect(p.a.category).toBe(shoes.find((s) => s.slug === p.a.slug)!.category);
+      expect(p.b.category).toBe(shoes.find((s) => s.slug === p.b.slug)!.category);
+      if (p.a.category === p.b.category) {
+        expect(p.category).toBe(p.a.category);
+      } else {
+        expect([p.a.slug, p.b.slug].some((slug) => ['nike-pegasus-premium', 'asics-superblast-3'].includes(slug))).toBe(true);
+      }
       if (!PINNED_PAIRS.includes(p.slug)) {
         expect(hasComparisonData(p.a)).toBe(true);
         expect(hasComparisonData(p.b)).toBe(true);

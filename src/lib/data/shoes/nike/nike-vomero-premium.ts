@@ -95,9 +95,10 @@ export const shoe: Shoe = {
   ],
   purchaseLinks: [
     {
-      store: '네이버',
-      url: 'https://naver.me/5ajbW7Mw',
-    },
+      "store": "네이버",
+      "url": "https://naver.me/5ajbW7Mw",
+      "note": "2026-11-13 판매 페이지 확인: 남성 보메로 프리미엄 HQ2050-702 상품이며 구매대행 판매처입니다. 선택 사이즈·최종 가격·현재 재고와 결제 가능 여부는 판매처에서 확인하세요."
+    }
   ],
   verification: {
     checkedAt: '2026-11-11',

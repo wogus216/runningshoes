@@ -7,7 +7,7 @@ export const mizunoBrand: Brand = {
   "tagline": "Reach Beyond",
   "description": "MIZUNO ENERZY 계열 폼, MIZUNO WAVE 구조와 Smooth Speed Assist 형상 설계를 사용하는 스포츠 브랜드입니다. WAVE에는 별도 판과 FOAM WAVE가 있고, NXT도 모델에 따라 원료·발포 공정·배치가 다릅니다. 세대별 공식 구성과 소재 비교 수치의 범위를 나누어 안내합니다.",
   "founded": 1906,
-  "headquarters": "일본 오사카",
+  "headquarters": "일본 오사카·도쿄",
   "website": "https://www.mizuno.co.kr",
   "technologies": [
     {

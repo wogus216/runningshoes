@@ -96,11 +96,13 @@ export default function MarathonPage() {
         location: {
           '@type': 'Place',
           name: event.location,
-          address: {
-            '@type': 'PostalAddress',
-            addressCountry: ['오사카', '교토', '도쿄'].includes(event.region) ? 'JP' : 'KR',
-            addressRegion: event.region,
-          },
+          ...(event.region !== '미정' && {
+            address: {
+              '@type': 'PostalAddress',
+              addressCountry: ['오사카', '교토', '도쿄'].includes(event.region) ? 'JP' : 'KR',
+              addressRegion: event.region,
+            },
+          }),
         },
         sport: 'Marathon',
         ...(event.description && { description: event.description }),

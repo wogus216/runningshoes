@@ -18,7 +18,8 @@ export const shoe: Shoe = {
       "/images/shoes/adidas/hyperboost-run/detail.webp"
     ],
     category: "데일리",
-    description: "Hyperboost Pro · Continental 전족 패치 + LIGHTTRAXION 구조의 하이퍼부스트 런. RunRepeat 실험실 검체 247g·38.6/31.8mm. 한국 현재 정가 미확인.",
+    price: 219000,
+    description: "Hyperboost Pro · Continental 전족 패치 + LIGHTTRAXION 구조의 하이퍼부스트 런. RunRepeat 실험실 검체 247g·38.6/31.8mm. 한국 공식 남성 IH9467 확인 정가 219,000원(11/14).",
     oneliner: "Hyperboost Pro · Continental 전족 패치 + LIGHTTRAXION · 247g (RunRepeat 실험실 검체)",
     editorComment: "2026-11-10 원문 재확인. 한국 남성 IH9467·여성 HQ7711 공식 캐시는 219,000원을 표시했습니다. 별도 MSRP 레이블과 현재 가격·폭·선택 재고는 미확인입니다. 사이즈 AAA 표시나 장바구니 버튼을 재고 증거로 쓰지 않습니다. RR 실측 247g·38.6/31.8mm·6.8mm, RR에 재전재된 브랜드 공시 248/222g(기준 사이즈 미확인)·38/32mm·6mm를 구분합니다. 힐/전족 SA 147/133과 리턴 71.6/72.8%는 검체 시험입니다. BR54·건조38%는 겨울 전천후 보장이 아니며, 젖은 콘크리트 접지계수 0.68은 젖은 바위 시험이 아닙니다. 전족 Continental 패치와 LIGHTTRAXION GCPU를 전체 고무 밑창으로 뭉뚱그리지 않습니다. 500km 수명·평발 금지·Edge의 어퍼 문제를 해결했다는 단정을 철회합니다. 정확한 Hyperboost Run의 DOR 착화 리뷰를 이번 범위에서 찾지 못했습니다. Hyperboost Edge의 착화 의견을 대입하지 않습니다. RR 내부 최광폭 96.9mm·엄지 부위 73.6mm·높이 23.7mm입니다. 발볼 수치만 보지 말고 발가락 위 높이와 중족 고정을 함께 확인하세요. 한국 현재 와이드는 미확인입니다. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.",
     tags: [
@@ -74,7 +75,7 @@ export const shoe: Shoe = {
       "plate": "RR은 플레이트가 없다고 명시합니다. 폼의 ePEBA 표기는 RR의 소재 설명이며 독립 화학 분석 결과가 아닙니다.",
       "width": "RR 내부 최광폭 96.9mm·엄지 부위 73.6mm·높이 23.7mm. RR 내부 최광폭 96.9mm·엄지 부위 73.6mm·높이 23.7mm입니다. 발볼 수치만 보지 말고 발가락 위 높이와 중족 고정을 함께 확인하세요. 한국 현재 와이드는 미확인입니다.",
       "durability": "검증된 공통 수명 km 미확인. 국소 마모·짧은 착화 후기를 주행 수명으로 환산하지 않습니다.",
-      "price": "한국 남성 IH9467·여성 HQ7711 공식 캐시는 219,000원을 표시했습니다. 별도 MSRP 레이블과 현재 가격·폭·선택 재고는 미확인입니다. 사이즈 AAA 표시나 장바구니 버튼을 재고 증거로 쓰지 않습니다."
+      "price": "2026-11-14 한국 공식 남성 IH9467의 할인 전 기준 가격과 현재 표시 판매가는 모두 219,000원으로 확인했습니다. 대표 가격은 이 선택 품번 기준입니다. 최초 출시가·다른 색상/성별/폭의 가격·쿠폰 적용 금액과 실제 결제 재고는 미확인입니다."
     },
     reviews: [
       {
@@ -99,19 +100,19 @@ export const shoe: Shoe = {
     relatedPosts: [
       {
         "slug": "adidas-hyperboost-edge-vs-run-comparison-2026",
-        "title": "하이퍼부스트 엣지 vs 런 — 같은 폼, 3만원 차이"
+        "title": "하이퍼부스트 엣지 vs 런 — 같은 247g, 다른 앞코·스택·힐 고정"
       },
       {
         "slug": "adidas-running-shoes-lineup-tier-guide-2026",
-        "title": "아디다스 러닝화 라인업 — 용도와 구조 비교"
+        "title": "아디다스 러닝화 라인업 — 메시·변형·로드·림으로 비교하기"
       },
       {
         "slug": "superblast-3-vs-evo-sl-vs-mach-6-super-trainer-2026",
-        "title": "슈퍼블라스트3 vs 에보SL vs 마하6 — 슈퍼트레이너 비교"
+        "title": "슈퍼블라스트3 vs Evo SL vs 마하6 — 스택·가벼움·핏을 조건별로"
       },
       {
         "slug": "running-shoe-midsole-foam-guide-2026",
-        "title": "미드솔 폼 완전 해설 — EVA·TPU·PEBA"
+        "title": "러닝화 미드솔 폼 읽는 법: 재료·발포 공정·상품명을 구분하자"
       }
     ],
     purchaseLinks: [
@@ -122,13 +123,13 @@ export const shoe: Shoe = {
       }
     ],
     verification: {
-      "checkedAt": "2026-11-10",
+      "checkedAt": "2026-11-14",
       "scope": "한국 상품 조건, 해외 실험실·제조사 공시와 외부 착화 의견의 확인 범위를 구분했습니다. 제품 전체 검증 완료 표지가 아닙니다.",
       "sources": [
         {
-          "label": "kr_hyper_m",
+          "label": "한국 공식 IH9467 — 2026-11-14 정가/판매가 구분",
           "url": "https://www.adidas.co.kr/%ED%95%98%EC%9D%B4%ED%8D%BC%EB%B6%80%EC%8A%A4%ED%8A%B8-%EB%9F%B0/IH9467.html",
-          "note": "web official original cache opened; 정확SKU별성별·표시가격·쿠폰조건.사이즈AAA로재고미확인."
+          "note": "2026-11-14 한국 공식 남성 IH9467의 할인 전 기준 가격과 현재 표시 판매가는 모두 219,000원으로 확인했습니다. 대표 가격은 이 선택 품번 기준입니다. 최초 출시가·다른 색상/성별/폭의 가격·쿠폰 적용 금액과 실제 결제 재고는 미확인입니다."
         },
         {
           "label": "kr_hyper_w",

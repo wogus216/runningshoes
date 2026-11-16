@@ -99,22 +99,22 @@ export const shoe: Shoe = {
     relatedPosts: [
       {
         "slug": "adidas-supernova-rise-3-vs-nike-vomero-18-cushion-2026",
-        "title": "보메로 18 vs 슈퍼노바 라이즈 3 — 3만원·34g 차이, 쿠션 실측은 147 대 140 SA"
+        "title": "슈퍼노바 라이즈3 vs 보메로18 — 앞코 너비와 힐 높이, 공시·실측 나눠 비교"
       },
       {
         "slug": "nike-vomero-18-vs-vomero-plus-max-cushion-2026",
-        "title": "보메로 18 vs 보메로 플러스 — 뒤꿈치는 같고 앞발이 다르다"
+        "title": "보메로 18 vs 플러스 — 실측 앞쪽 스택·한국 와이드·SKU별 가격"
       },
       {
         "slug": "asics-megablast-vs-nike-vomero-18-max-cushion-2026",
-        "title": "보메로 18 vs 메가블라스트 — 쿠션 9 대 10, 80g 차"
+        "title": "메가블라스트 vs 보메로 18 — 실측80g 차이·가격·한국 와이드"
       }
     ],
     purchaseLinks: [
       {
         "store": "네이버",
         "url": "https://naver.me/xll2Pioq",
-        "note": "2026-11-11 연결 판매처의 보메로18 상품과 일반·엑스트라와이드 옵션 목록을 확인했습니다. 폭 이름은 판매처 표기이며 제조사 폭코드·세부 품번과의 일치 및 사이즈별 결제 가능 여부는 확인하지 못했습니다."
+        "note": "2026-11-13 판매 페이지 확인: HM6803 표기와 일반·엑스트라와이드 및 남성·여성 색상 안내가 함께 있습니다. 원하는 성별·폭의 정확한 품번을 확인하세요. 선택 사이즈·최종 가격·현재 재고와 결제 가능 여부는 판매처에서 확인하세요."
       }
     ],
     verification: {

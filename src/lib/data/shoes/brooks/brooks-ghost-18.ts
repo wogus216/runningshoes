@@ -6,11 +6,14 @@ export const shoe: Shoe = {
     slug: "brooks-ghost-18",
     brand: "Brooks",
     name: "고스트 18",
-  imageCaption: "고스트 18 사진은 브룩스 한국 공식 갤러리 수집 기록을 확인한 여성용 White Medium 색상입니다. 사진 품번은 현재 재고를 뜻하지 않습니다.",
-  imageSource: {"title":"Brooks 한국 공식 상품 갤러리","url":"https://brooksrunning.co.kr/product/0617-wed-1100-%EC%97%AC%EC%84%B1-%EA%B3%A0%EC%8A%A4%ED%8A%B8-18-%ED%99%94%EC%9D%B4%ED%8A%B8-medium/864/"},
-    image: "/images/shoes/brooks/ghost18/side.webp",
+  imageCaption: "Brooks Ghost 18 대표 측면은 Brooks 일본 공식 BRW4822-GRY(120482-047)의 グレー 원본입니다. 나머지 갤러리의 다른 색상 및 한국 판매 SKU·실험실 검체와 구분하며, 사진 실물의 사이즈·폭은 미확인입니다.",
+  imageSource: {
+    "title": "Brooks 일본 공식 대표 측면 원본",
+    "url": "https://brooksrunning.co.jp/cdn/shop/files/120482_047_L_Ghost_18.jpg?v=1780627174&width=1000"
+  },
+    image: "/images/shoes/brooks/ghost18/official-120482-047-side.jpg",
     images: [
-      "/images/shoes/brooks/ghost18/side.webp",
+      "/images/shoes/brooks/ghost18/official-120482-047-side.jpg",
       "/images/shoes/brooks/ghost18/angle.webp",
       "/images/shoes/brooks/ghost18/back.webp",
       "/images/shoes/brooks/ghost18/top.webp",
@@ -86,7 +89,7 @@ export const shoe: Shoe = {
       "plate": "플레이트 없음. 힐 카운터·바닥 플레어와 카본 구조를 구분합니다.",
       "width": "RR 내부 최광폭 96mm·엄지 부위 70.6mm·높이 25.8mm. RR 내부 최광폭 96.0mm·엄지 부위 70.6mm·높이 25.8mm는 서로 다른 위치입니다. 현재 한국 와이드 SKU는 미확인입니다.",
       "durability": "검증된 공통 수명 km 미확인. 국소 마모·짧은 착화 후기를 주행 수명으로 환산하지 않습니다.",
-      "price": "한국 공식몰의 www·비www 모두 실시간 연결에 실패해 현재 정가·판매 SKU·폭·재고는 미확인입니다. 공식 원본의 과거 캐시에는 169,000원과 남성 D·2E·4E, 여성 B·D 상품이 남아 있지만 이를 현재 판매 확정으로 쓰지 않습니다."
+      "price": "2026-11-14 공식 과거 상품 원문 캐시에서 남성 MEDIUM 우드애쉬1104931D216과 표시 판매가169,000원을 읽었습니다. 같은 영역의0원은 정가나 무료 판매의 증거로 쓰지 않습니다. 단일 표시 가격의 명시적 정가 근거는 부족해 대표 정가 필드는 비워둡니다. 도구의 캐시 표시는last month이며 정확 수집·게시 시각은 미확인입니다. 공식몰 실시간 연결 실패로 현재 판매가·규격별 재고·구매 여부는 미확인입니다."
     },
     similarShoes: [
       "brooks-ghost-17",
@@ -96,7 +99,7 @@ export const shoe: Shoe = {
     relatedPosts: [
       {
         "slug": "brooks-ghost-18-review",
-        "title": "고스트 18 후기 — 17세대와 무엇이 달라졌나"
+        "title": "브룩스 고스트 18 리뷰 — 12.2mm 실측 드롭과 낮은 앞코, 시착할 지점"
       }
     ],
     purchaseLinks: [
@@ -107,9 +110,14 @@ export const shoe: Shoe = {
       }
     ],
     verification: {
-      "checkedAt": "2026-11-09",
-      "scope": "한국 상품 조건, 해외 실험실·제조사 공시와 외부 착화 의견의 확인 범위를 구분했습니다. 제품 전체 검증 완료 표지가 아닙니다.",
+      "checkedAt": "2026-11-14",
+      "scope": "한국 상품 조건, 해외 실험실·제조사 공시와 외부 착화 의견의 확인 범위를 구분했습니다. 제품 전체 검증 완료 표지가 아닙니다. 2026-11-14 추가 확인은 한국 상품 가격 원문의 접근 깊이에 한정하며 대표 정가·현재 판매와 재고는 미확인입니다.",
       "sources": [
+        {
+          "label": "한국 공식 선택 품번·가격 확인 범위 — 2026-11-14",
+          "url": "https://brooksrunning.co.kr/product/남성-고스트-18-우드애쉬-medium/856/category/154/display/1/",
+          "note": "2026-11-14 공식 과거 상품 원문 캐시에서 남성 MEDIUM 우드애쉬1104931D216과 표시 판매가169,000원을 읽었습니다. 같은 영역의0원은 정가나 무료 판매의 증거로 쓰지 않습니다. 단일 표시 가격의 명시적 정가 근거는 부족해 대표 정가 필드는 비워둡니다. 도구의 캐시 표시는last month이며 정확 수집·게시 시각은 미확인입니다. 공식몰 실시간 연결 실패로 현재 판매가·규격별 재고·구매 여부는 미확인입니다."
+        },
         {
           "label": "한국 공식 Ghost18 과거 캐시 확인 범위",
           "url": "https://brooksrunning.co.kr/category/collection/154",

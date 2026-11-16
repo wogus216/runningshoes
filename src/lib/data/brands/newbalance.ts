@@ -5,7 +5,7 @@ export const newBalanceBrand: Brand = {
   "name": "New Balance",
   "nameKo": "뉴발란스",
   "tagline": "Fearlessly Independent Since 1906",
-  "description": "1906년 보스턴에서 시작한 미국의 러닝 전통 브랜드. 기술의 화학적 조성보다 \"러너가 느끼는 경험(Feel)\"을 강조하며, Infinion·FuelCell·Fresh Foam X 등 용도별 폼 라인업과 2E/4E 와이드 옵션이 풍부한 것이 특징입니다.",
+  "description": "1906년에 시작한 미국 스포츠 브랜드입니다. 1080v15의 Infinion, 레벨 v5의 FuelCell, 1080v14의 Fresh Foam X처럼 모델·세대별 폼을 구분해 안내합니다. 같은 폼 계열명이 동일한 원료 배합을 뜻하지 않으며, 와이드 규격과 판매 여부는 정확 제품별로 확인해야 합니다.",
   "founded": 1906,
   "headquarters": "미국 보스턴",
   "website": "https://www.nbkorea.com",

@@ -98,7 +98,8 @@ export const shoe: Shoe = {
     purchaseLinks: [
       {
         "store": "네이버",
-        "url": "https://naver.me/xy7L7Ihl"
+        "url": "https://naver.me/xy7L7Ihl",
+        "note": "2026-11-13 판매 페이지 확인: 남성 킨바라16 시카고 마라톤 S21020-23 특별판 구매대행 상품입니다. 선택 사이즈·최종 가격·현재 재고와 결제 가능 여부는 판매처에서 확인하세요."
       },
       {
         "store": "쿠팡",

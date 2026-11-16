@@ -99,21 +99,22 @@ export const shoe: Shoe = {
     relatedPosts: [
       {
         "slug": "nike-pegasus-premium-vs-puma-velocity-nitro-4-2026",
-        "title": "벨로시티 4 vs 페가수스 프리미엄"
+        "title": "페가수스 프리미엄 vs 벨로시티 4 — 실측84g·앞코 높이·SKU별 가격"
       },
       {
         "slug": "puma-deviate-nitro-3-vs-4-comparison",
-        "title": "디비에이트 나이트로 3 vs 4"
+        "title": "디비에이트 나이트로3 vs4 —800km·와이드 보장 대신, 전족 전환·핏 비교"
       },
       {
         "slug": "puma-running-shoes-lineup-tier-guide-2026",
-        "title": "푸마 러닝화 계급도"
+        "title": "푸마 러닝화 라인업 — 세대·폼·판·핏으로 비교하기"
       }
     ],
     purchaseLinks: [
       {
         "store": "네이버",
-        "url": "https://naver.me/G6R1Anvw"
+        "url": "https://naver.me/G6R1Anvw",
+        "note": "2026-11-13 판매 페이지 확인: 남성 벨로시티 나이트로4 AP 312635-09 구매대행 상품입니다. 일반판과 색상·세부 사양을 구분하세요. 선택 사이즈·최종 가격·현재 재고와 결제 가능 여부는 판매처에서 확인하세요."
       },
       {
         "store": "쿠팡",

@@ -5,7 +5,7 @@ export type ShoePair = {
   slug: string; // 'nike-pegasus-41-vs-asics-gt-2000-14'
   a: Shoe;
   b: Shoe;
-  category: string;
+  category: string; // 비교 목록의 그룹. 각 신발의 현재 분류는 a.category·b.category를 사용한다.
 };
 
 // 기존 비교 URL의 대상 풀을 고정한다. 선정은 성능 순위·추천 점수를 뜻하지 않는다.
@@ -89,6 +89,16 @@ const COMPARISON_POOL: Record<string, readonly string[]> = {
   ]
 };
 
+// 분류를 정정해도 기존 비교 URL의 조합·목록 위치는 유지한다.
+const LEGACY_COMPARISON_CATEGORIES: Record<string, string> = {
+  'nike-pegasus-premium': '입문화',
+  'asics-superblast-3': '레이싱',
+};
+
+function comparisonCategory(shoe: Shoe): string {
+  return LEGACY_COMPARISON_CATEGORIES[shoe.slug] ?? shoe.category;
+}
+
 /** 미확인 스택을 비워도 기존 비교 URL은 유지한다. 표는 생체역학 미확인 값을 처리한다. */
 export function hasComparisonData(shoe: Shoe): boolean {
   return !!(shoe.specs && shoe.koreanFootFit && shoe.targetUsers &&
@@ -103,7 +113,7 @@ export function hasComparisonData(shoe: Shoe): boolean {
  * 실제로 **39개 URL이 404**였고, 90일 동안 808노출·36클릭을 받던 페이지들이었다
  * (`nike-pegasus-41-vs-nike-pegasus-42` 115노출처럼 우리 최상위 쿼리와 직결된 것도 포함).
  *
- * 아래 목록은 그때 살아 있던 URL을 고정한 것이다. 두 신발이 모두 남아 있고 같은 카테고리면
+ * 아래 목록은 그때 살아 있던 URL을 고정한 것이다. 두 신발이 모두 남아 있고 같은 비교 그룹이면
  * 상위 N에서 밀려나도 계속 생성한다. **새 페어가 색인된 뒤 목록에서 빠지면 같은 사고가 반복되므로,
  * 페어 구성 로직을 손볼 때는 GSC `page` 차원으로 죽은 URL을 먼저 확인할 것.**
  */
@@ -225,8 +235,9 @@ function topShoesByCategory(): Map<string, Shoe[]> {
   const m = new Map<string, Shoe[]>();
   for (const s of allShoes) {
     if (!hasComparisonData(s)) continue;
-    if (!m.has(s.category)) m.set(s.category, []);
-    m.get(s.category)!.push(s);
+    const category = comparisonCategory(s);
+    if (!m.has(category)) m.set(category, []);
+    m.get(category)!.push(s);
   }
   m.forEach((list, category) => {
     const pool = new Set(COMPARISON_POOL[category] ?? []);
@@ -254,8 +265,8 @@ function restorePinnedPairs(): ShoePair[] {
     if (parts.length !== 2) continue;
     const a = bySlug.get(parts[0]);
     const b = bySlug.get(parts[1]);
-    if (!a || !b || a.category !== b.category) continue;
-    out.push(makePair(a, b, a.category));
+    if (!a || !b || comparisonCategory(a) !== comparisonCategory(b)) continue;
+    out.push(makePair(a, b, comparisonCategory(a)));
   }
   return out;
 }

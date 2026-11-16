@@ -17,9 +17,10 @@ export const shoe: Shoe = {
       "/images/shoes/on/cloudmonster3hyperls/angle.webp"
     ],
     category: "쿠션화",
-    description: "LightSpray끈없는어퍼 · Helion HF위층·Helion아래층 구조. 한국공식공시, 기준 사이즈미공시 205g·드롭 6mm, 독립 랩·스택·한국 현재 가격은 미확인입니다.",
+    price: 319000,
+    description: "LightSpray끈없는어퍼 · Helion HF위층·Helion아래층 구조. 한국공식공시, 기준 사이즈미공시 205g·드롭 6mm, 글로벌 공식 스택45/39mm이며 독립 랩은 미확인입니다. 한국 공식 남녀공용 3UG10014837 확인 정가 319,000원(11/14).",
     oneliner: "LightSpray끈없는어퍼 · Helion HF위층·Helion아래층 · 205g (한국공식공시, 기준 사이즈미공시)",
-    editorComment: "2026-11-10 원문 재확인. 한국공식캐시유니섹스 3UG10014837 Regular표시가격 319,000원·한짝 205g(사이즈미공시)·6mm 입니다. 전용 Elite Run Sock High Hyper동봉표시를확인했지만임상보호효과·양말필수규칙은아닙니다. 현재 가격·선택재고·한국 와이드는미확인입니다. 정확 LS모델의독립 랩·스택·내부치수·SA·리턴·경도는미확인입니다. 기존 45/39mm·실측 210g·US8.5기준·기본형과동일성능확정은철회했습니다. 경량공시 205g 을기본형공시 253g·일반 Cloudmonster3와비교해개인감량·동일성능을보장하지않습니다.480~640km·최상위통기/안정·30km피로보장·족저근막금지·아킬레스보호필수를철회합니다. 정확 LS개별 DOR 리뷰는미확인입니다. 기본 3Hyper리뷰의 LS언급을별도 LS착화검증으로승격하지않았습니다. 한국캐시 Regular·정사이즈는제조사안내입니다. 끈없는어퍼의압박·길이·힐 고정을실제규격에서확인하세요. 기본형내부폭으로 LS핏을계산하지않습니다. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.",
+    editorComment: "2026-11-10 원문 재확인. 한국공식캐시유니섹스 3UG10014837 Regular표시가격 319,000원·한짝 205g(사이즈미공시)·6mm 입니다. 전용 Elite Run Sock High Hyper동봉표시를확인했지만임상보호효과·양말필수규칙은아닙니다. 현재 가격·선택재고·한국 와이드는미확인입니다. 글로벌2월26일 공식은 정확LS를205g(남성US8.5)·45/39mm·6mm로 공시합니다. 정확LS 독립 랩·내부치수·SA·리턴·경도는 미확인입니다. 제조사 공시를 독립 실측210g·기본형과 동일 성능으로 해석하지 않습니다. 경량공시 205g 을기본형공시 253g·일반 Cloudmonster3와비교해개인감량·동일성능을보장하지않습니다.480~640km·최상위통기/안정·30km피로보장·족저근막금지·아킬레스보호필수를철회합니다. 정확 LS개별 DOR 리뷰는미확인입니다. 기본 3Hyper리뷰의 LS언급을별도 LS착화검증으로승격하지않았습니다. 한국캐시 Regular·정사이즈는제조사안내입니다. 끈없는어퍼의압박·길이·힐 고정을실제규격에서확인하세요. 기본형내부폭으로 LS핏을계산하지않습니다. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.",
     tags: [
       "쿠션화",
       "슈퍼트레이너",
@@ -51,7 +52,7 @@ export const shoe: Shoe = {
     },
     features: [
       "LightSpray끈없는어퍼 · Helion HF위층·Helion아래층",
-      "205g · 드롭 6mm (한국공식공시, 기준 사이즈미공시), 스택 미확인",
+      "205g · 드롭 6mm (한국공식공시, 기준 사이즈미공시), 글로벌 공식 스택45/39mm",
       "정확 LightSpray Cloudmonster3Hyper는공식이플레이트없음을명시합니다. 기본 3Hyper랩·핏을 LS로대입하지않습니다.",
       "한국캐시 Regular·정사이즈는제조사안내입니다. 끈없는어퍼의압박·길이·힐 고정을실제규격에서확인하세요. 기본형내부폭으로 LS핏을계산하지않습니다."
     ],
@@ -60,7 +61,7 @@ export const shoe: Shoe = {
         "userType": "원문 기반 에디터 분석",
         "source": "editor",
         "sourceUrl": "https://www.on.com/ko-kr/products/cloudmonster-3-hyper-ls-u-3ug1001/unisex/limelight-bloom-shoes-3UG10014837",
-        "text": "정확 LS모델의독립 랩·스택·내부치수·SA·리턴·경도는미확인입니다. 기존 45/39mm·실측 210g·US8.5기준·기본형과동일성능확정은철회했습니다. 경량공시 205g 을기본형공시 253g·일반 Cloudmonster3와비교해개인감량·동일성능을보장하지않습니다.480~640km·최상위통기/안정·30km피로보장·족저근막금지·아킬레스보호필수를철회합니다."
+        "text": "글로벌2월26일 공식은 정확LS를205g(남성US8.5)·45/39mm·6mm로 공시합니다. 정확LS 독립 랩·내부치수·SA·리턴·경도는 미확인입니다. 제조사 공시를 독립 실측210g·기본형과 동일 성능으로 해석하지 않습니다. 경량공시 205g 을기본형공시 253g·일반 Cloudmonster3와비교해개인감량·동일성능을보장하지않습니다.480~640km·최상위통기/안정·30km피로보장·족저근막금지·아킬레스보호필수를철회합니다."
       },
       {
         "userType": "원문 기반 확인 범위 · 착화 후기 미확인",
@@ -70,14 +71,14 @@ export const shoe: Shoe = {
       }
     ],
     detailedSpecs: {
-      "weight": "205g (한국공식공시, 기준 사이즈미공시). 정확 LS모델의독립 랩·스택·내부치수·SA·리턴·경도는미확인입니다. 기존 45/39mm·실측 210g·US8.5기준·기본형과동일성능확정은철회했습니다.",
-      "stackHeight": "정확 모델의 독립 랩·제조사 전체 스택 공시는 미확인입니다. 일반형 수치를 전용하지 않습니다.",
-      "drop": "6mm (한국공식공시, 기준 사이즈미공시). 정확 LS모델의독립 랩·스택·내부치수·SA·리턴·경도는미확인입니다. 기존 45/39mm·실측 210g·US8.5기준·기본형과동일성능확정은철회했습니다.",
+      "weight": "205g (한국공식공시, 기준 사이즈미공시). 글로벌2월26일 공식은 정확LS를205g(남성US8.5)·45/39mm·6mm로 공시합니다. 정확LS 독립 랩·내부치수·SA·리턴·경도는 미확인입니다. 제조사 공시를 독립 실측210g·기본형과 동일 성능으로 해석하지 않습니다.",
+      "stackHeight": "45/39mm(2월26일 글로벌 공식 공시)·6mm. 정확LS의 독립 스택 실측은 미확인입니다. 일반형 자료를 전용하지 않습니다.",
+      "drop": "6mm (한국공식공시, 기준 사이즈미공시). 글로벌2월26일 공식은 정확LS를205g(남성US8.5)·45/39mm·6mm로 공시합니다. 정확LS 독립 랩·내부치수·SA·리턴·경도는 미확인입니다. 제조사 공시를 독립 실측210g·기본형과 동일 성능으로 해석하지 않습니다.",
       "midsole": "LightSpray끈없는어퍼 · Helion HF위층·Helion아래층. 독립 랩 SA·에너지 리턴·AC/HA 미확인. 경량공시 205g 을기본형공시 253g·일반 Cloudmonster3와비교해개인감량·동일성능을보장하지않습니다.480~640km·최상위통기/안정·30km피로보장·족저근막금지·아킬레스보호필수를철회합니다.",
       "plate": "정확 LightSpray Cloudmonster3Hyper는공식이플레이트없음을명시합니다. 기본 3Hyper랩·핏을 LS로대입하지않습니다.",
       "width": "동세대 독립 랩 내부 치수 미확인. 한국캐시 Regular·정사이즈는제조사안내입니다. 끈없는어퍼의압박·길이·힐 고정을실제규격에서확인하세요. 기본형내부폭으로 LS핏을계산하지않습니다.",
       "durability": "검증된 공통 수명 km 미확인. 국소 마모·짧은 착화 후기를 주행 수명으로 환산하지 않습니다.",
-      "price": "2026-11-10 한국 공식 LightSpray Cloudmonster 3 Hyper, 3UG10014670 표시 판매가 319,000원 확인. 다른 색상·성별·폭·할인 조건 및 실제 결제 금액과 재고는 별도 확인 대상입니다. 이 판매가를 별도 근거 없이 MSRP로 대입하지 않습니다."
+      "price": "2026-11-14 한국 공식 남녀공용 3UG10014837의 할인 전 기준 가격과 현재 표시 판매가는 모두 319,000원으로 확인했습니다. 대표 가격은 이 선택 품번 기준입니다. 최초 출시가·다른 색상/성별/폭의 가격·쿠폰 적용 금액과 실제 결제 재고는 미확인입니다."
     },
     similarShoes: [
       "on-cloudmonster-3-hyper",
@@ -86,7 +87,7 @@ export const shoe: Shoe = {
     relatedPosts: [
       {
         "slug": "on-cloudmonster-hyper-vs-3-hyper-comparison-2026",
-        "title": "하이퍼 vs 3 하이퍼 — 6만원 아래 선택지 비교"
+        "title": "초대 클라우드몬스터 하이퍼 vs3 하이퍼 — 리턴·앞코·카운터를 분리해서 비교"
       }
     ],
     purchaseLinks: [
@@ -100,17 +101,18 @@ export const shoe: Shoe = {
       },
       {
         "store": "네이버",
-        "url": "https://naver.me/GNJlJ6pr"
+        "url": "https://naver.me/GNJlJ6pr",
+        "note": "2026-11-13 판매 페이지 확인: LightSpray 클라우드몬스터3 하이퍼 3UG10015162 구매대행 상품입니다. 판매 제목의 카본화 표현과 달리 제조사는 이 모델에 플레이트가 없다고 안내합니다. 선택 사이즈·최종 가격·현재 재고와 결제 가능 여부는 판매처에서 확인하세요."
       }
     ],
     verification: {
-      "checkedAt": "2026-11-10",
+      "checkedAt": "2026-11-14",
       "scope": "한국 상품 조건, 해외 실험실·제조사 공시와 외부 착화 의견의 확인 범위를 구분했습니다. 제품 전체 검증 완료 표지가 아닙니다.",
       "sources": [
         {
-          "label": "한국 공식 캐시 3UG10014837 · unisex",
+          "label": "한국 공식 3UG10014837 — 2026-11-14 정가/판매가 구분",
           "url": "https://www.on.com/ko-kr/products/cloudmonster-3-hyper-ls-u-3ug1001/unisex/limelight-bloom-shoes-3UG10014837",
-          "note": "표시 정가 319000원. 도구 캐시 yesterday; 현재 가격·선택 재고 미확인."
+          "note": "2026-11-14 한국 공식 남녀공용 3UG10014837의 할인 전 기준 가격과 현재 표시 판매가는 모두 319,000원으로 확인했습니다. 대표 가격은 이 선택 품번 기준입니다. 최초 출시가·다른 색상/성별/폭의 가격·쿠폰 적용 금액과 실제 결제 재고는 미확인입니다."
         },
         {
           "label": "RunRepeat 측정법",
@@ -121,6 +123,11 @@ export const shoe: Shoe = {
           "label": "한국 공식 구매 페이지 · 2026-11-10",
           "url": "https://www.on.com/ko-kr/products/cloudmonster-3-hyper-ls-u-3ug1001/unisex/black-apollo-shoes-3UG10014670",
           "note": "LightSpray Cloudmonster 3 Hyper, 3UG10014670의 본문·상품 데이터에서 표시 가격 319,000원을 다시 읽었습니다. 공통 SOLD OUT·정적 사이즈 목록·JSON-LD 재고만으로 선택 사이즈의 실제 재고를 판정하지 않았습니다."
+        },
+        {
+          "label": "On 글로벌 공식 발표 ·2026-02-26",
+          "url": "https://press.on-running.com/on-unveils-the-next-generation-of-the-cloudmonster-collection-with-the-cloudmonster-3-cloudmonster-3-hyper-and-lightspray-cloudmonster-3-hyper",
+          "note": "2026-11-12 본문 확인. 일반Hyper274g(MUS8.5)/216g(WUS7)·39.5/33.5mm, LS205g(MUS8.5)·45/39mm, 각각6mm. DOR 소개·RR 실측·한국 가격 확인 시점과 구분합니다."
         }
       ],
       "limitations": [

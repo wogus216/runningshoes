@@ -97,22 +97,22 @@ export const shoe: Shoe = {
     relatedPosts: [
       {
         "slug": "novablast-5-vs-pegasus-41-daily-cushion-2026",
-        "title": "노바블라스트 5 vs 페가수스 41 — 데일리 쿠션 대결"
+        "title": "노바블라스트 5 vs 페가수스 41 — 실측 스택·앞쪽 공간·판매 조건"
       },
       {
         "slug": "nike-pegasus-41-vs-42-comparison",
-        "title": "페가수스 41 vs 42 — 세대 비교"
+        "title": "페가수스41 vs42 — Air Zoom 구조·정적 드롭·핏, 할인 차액 없이 비교"
       },
       {
         "slug": "first-running-shoe-guide-2026",
-        "title": "첫 러닝화 완벽 가이드"
+        "title": "첫 러닝화 선택 — 8개 모델의 구조와 시착 질문 비교"
       }
     ],
     purchaseLinks: [
       {
         "store": "네이버",
         "url": "https://naver.me/5eDHQ0w3",
-        "note": "단축 링크의 현재 판매 상품·성별·색상·폭·사이즈 옵션을 확인하지 못했습니다. 표시된 159,000원은 나이키 코리아에서 확인한 별도 SKU의 정가이며 이 판매처의 결제가는 아닙니다."
+        "note": "2026-11-13 판매 페이지 확인: 남성 페가수스41이며 필수 모델 목록에도 페가수스41이 표시됩니다. 컬러·사이즈별 품번은 별도 확인하세요. 이 판매자의 가격과 별도 한국 공식 정가는 다릅니다. 선택 사이즈·최종 가격·현재 재고와 결제 가능 여부는 판매처에서 확인하세요."
       }
     ],
     verification: {

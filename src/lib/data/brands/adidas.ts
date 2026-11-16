@@ -21,7 +21,7 @@ export const adidasBrand: Brand = {
         "보스턴 13의 13.8%는 폼 사용량 증가라는 제조사 설명",
         "기술명만으로 PEBA·TPEE 같은 원료를 단정하지 않기"
       ],
-      "scienceExplanation": "EVO SL 초대와 아디오스 프로 4 발표는 Lightstrike Pro 미드솔을 설명합니다. 보스턴 13은 Lightstrike와의 조합이고 SL2는 Lightstrike 바깥 폼 안에 전장 Pro 삽입층을 넣은 구성입니다. 아그라빅 스피드 울트라 초대에도 공식 발표상 같은 기술명이 있습니다. 같은 상표라도 배합·밀도·발포 공정·체감이 모두 동일하다는 뜻은 아닙니다. 보스턴 13 발표의 전작 대비 13.8%는 Pro 폼 양에 관한 제조사 주장으로, 에너지 리턴이 13.8% 증가했다는 뜻이 아닙니다.",
+      "scienceExplanation": "EVO SL 초대와 아디오스 프로 4 발표는 Lightstrike Pro 미드솔을 설명합니다. 보스턴 13은 Lightstrike와의 조합이고 SL2는 Lightstrike 바깥 폼 안에 전장 Pro 삽입층을 넣은 구성입니다. 아그라빅 스피드 울트라 초대와 현재 연결된2세대는 각각의 공식 발표에서 Lightstrike Pro를 확인했습니다. 2025년11월19일의2세대 발표는 더 부드러운 폼을 설명하지만 이를 같은 조건의 독립 반발률 측정으로 바꾸지 않습니다. 같은 상표라도 배합·밀도·발포 공정·체감이 모두 동일하다는 뜻은 아닙니다. 보스턴 13 발표의 전작 대비 13.8%는 Pro 폼 양에 관한 제조사 주장으로, 에너지 리턴이 13.8% 증가했다는 뜻이 아닙니다.",
       "usedInShoes": [
         "adidas-adizero-evo-sl",
         "adidas-adios-pro-4",
@@ -30,9 +30,14 @@ export const adidasBrand: Brand = {
         "adidas-terrex-agravic-speed-ultra"
       ],
       "verification": {
-        "checkedAt": "2026-11-10",
-        "scope": "정확 세대의 제조사 기술명·부품·배치와 확인된 적용 예시. 미공개 원료는 추정하지 않으며 기록·부상 예방·교체 거리·빗길 안전을 보장하지 않습니다.",
+        "checkedAt": "2026-11-13",
+        "scope": "정확 세대의 제조사 기술명·부품·배치와 확인된 적용 예시. 미공개 원료는 추정하지 않으며 기록·부상 예방·교체 거리·빗길 안전을 보장하지 않습니다. / 11월13일 후속은 현재 연결된 아그라빅 스피드 울트라2의 별도 공식 발표를 대조한 범위입니다. 다른 기존 원문·기술의 독립 성능을 모두 새로 검증한 표지가 아닙니다.",
         "sources": [
+          {
+            "title": "adidas 공식 아그라빅 스피드 울트라2 발표 · 2025-11-19",
+            "url": "https://news.adidas.com/outdoor/adidas-terrex-s-agravic-speed-ultra-2-fronts-refreshed-line-up-built-for-the-varying-needs-of-trail-/s/f87aab36-eb50-408b-af33-91b91c76dd09",
+            "scope": "정확2세대의 Lightstrike Pro·EnergyRods·Continental을 명시. 부드러움·반발·접지 개선은 제조사 주장으로 구분하며 초대 발표로2세대를 대체하지 않음. 글로벌 판매시작 안내는2025-12-02, 한국 출시일로 전용하지 않음."
+          },
           {
             "title": "adidas 공식 — Adios Pro 4 일반형 및 EVO SL 초대 발표 본문",
             "url": "https://news.adidas.com/running/adizero-adios-pro-4-leads-the-way-as-adidas-introduces-new-race-and-training-silhouettes-to-its-awar/S/ecd0a1fe-e467-4f81-a767-0a64ab29d98f",
@@ -353,7 +358,7 @@ export const adidasBrand: Brand = {
         "Hyperboost Run: 전족, 아그라빅 스피드 울트라 초대: 트레일 밑창",
         "라이즈 2·3과 SL2의 미확인 연결 제거"
       ],
-      "scienceExplanation": "EVO SL KI6917 공식 상세는 전족부 Continental Conti Winter와 후족부 CL Rubber를 구분합니다. 프로 4와 보스턴 13은 LIGHTTRAXION과 toe-off Continental을 함께 명시합니다. Hyperboost Run은 전족부, 아그라빅 스피드 울트라 초대 발표는 Continental 아웃솔을 확인했습니다. Edge 소개 페이지 하단의 일반 Continental 문구를 Edge 모델 고유 구성에 대입하지 않습니다. 같은 고무 브랜드라도 실제 배치·노면·마모 상태에 따라 접지가 달라지며, 미끄러지지 않는다고 표현하지 않습니다.",
+      "scienceExplanation": "EVO SL KI6917 공식 상세는 전족부 Continental Conti Winter와 후족부 CL Rubber를 구분합니다. 프로 4와 보스턴 13은 LIGHTTRAXION과 toe-off Continental을 함께 명시합니다. Hyperboost Run은 전족부 Continental을 명시합니다. 아그라빅 스피드 울트라 초대와 현재 연결된2세대는 각자의 공식 발표에서 Continental 아웃솔을 확인했습니다. 2세대의 접지 개선 표현은 제조사 주장입니다. Edge 소개 페이지 하단의 일반 Continental 문구를 Edge 모델 고유 구성에 대입하지 않습니다. 같은 고무 브랜드라도 실제 배치·노면·마모 상태에 따라 접지가 달라지며, 미끄러지지 않는다고 표현하지 않습니다.",
       "usedInShoes": [
         "adidas-adizero-evo-sl",
         "adidas-adios-pro-4",
@@ -362,9 +367,14 @@ export const adidasBrand: Brand = {
         "adidas-terrex-agravic-speed-ultra"
       ],
       "verification": {
-        "checkedAt": "2026-11-10",
-        "scope": "정확 세대의 제조사 기술명·부품·배치와 확인된 적용 예시. 미공개 원료는 추정하지 않으며 기록·부상 예방·교체 거리·빗길 안전을 보장하지 않습니다.",
+        "checkedAt": "2026-11-13",
+        "scope": "정확 세대의 제조사 기술명·부품·배치와 확인된 적용 예시. 미공개 원료는 추정하지 않으며 기록·부상 예방·교체 거리·빗길 안전을 보장하지 않습니다. / 11월13일 후속은 현재 연결된 아그라빅 스피드 울트라2의 별도 공식 발표를 대조한 범위입니다. 다른 기존 원문·기술의 독립 성능을 모두 새로 검증한 표지가 아닙니다.",
         "sources": [
+          {
+            "title": "adidas 공식 아그라빅 스피드 울트라2 발표 · 2025-11-19",
+            "url": "https://news.adidas.com/outdoor/adidas-terrex-s-agravic-speed-ultra-2-fronts-refreshed-line-up-built-for-the-varying-needs-of-trail-/s/f87aab36-eb50-408b-af33-91b91c76dd09",
+            "scope": "정확2세대의 Lightstrike Pro·EnergyRods·Continental을 명시. 부드러움·반발·접지 개선은 제조사 주장으로 구분하며 초대 발표로2세대를 대체하지 않음. 글로벌 판매시작 안내는2025-12-02, 한국 출시일로 전용하지 않음."
+          },
           {
             "title": "adidas 공식 — KI6917 아랍어 정확 EVO SL 기본형 Product Details, lines88–99",
             "url": "https://www.adidas.com/qa/ar/%D8%AD%D8%B0%D8%A7%D8%A1-adizero-evo-sl/KI6917.html",

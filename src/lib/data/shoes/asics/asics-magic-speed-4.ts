@@ -17,12 +17,12 @@ export const shoe: Shoe = {
     ],
     category: "레이싱",
     price: 199000,
-    description: "전장 FF BLAST PLUS · 전족 FF TURBO 부분삽입 · 전장 카본 구조의 매직스피드 4. 실험실 237g·힐/전족부 42.5/32.9mm. 한국 확인 정가199,000원.",
+    description: "전장 FF BLAST PLUS · 전족 FF TURBO 부분삽입 · 전장 카본 보강 TPU 판(NZ 기술지) 구조의 매직스피드 4. 실험실 237g·힐/전족부 42.5/32.9mm. 한국 확인 정가199,000원.",
     oneliner: "237g 실험실 무게 · 전장 FF BLAST PLUS · 전족 FF TURBO 부분삽입 · 전장 카본",
-    editorComment: "2026-11-09 원문 재확인. 한국 공식 남성1011B875.751(AKR_112511102-751) 정가199,000원·확인 시 판매159,200원,265/270/275/280/290mm 선택기 옵션을 확인했습니다.242g은270mm 공시입니다. 현재 여성·와이드 한국SKU·최종주문재고는 미확인입니다. DOR 소개 남성242g(US9)·43.5/35.5mm,여성207g(US8)·42.5/34.5mm,드롭8mm. RR237g·42.5/32.9mm·9.6mm와 성별·사이즈를 구분합니다. RR은 인솔을 접착하지 않아 제거 가능하다고 설명하지만 DOR Matt검체는 접착돼 제거 불가였다고 합니다. 원인을 확정하지 않고 구매할 실물의 인솔을 확인하세요. 주폼31.7AC·FFTurbo부분삽입33.9AC와 두 리뷰어의 단단한 전체 주행감은 다른 지표입니다. DOR의 Matt(남성US10)은 길이는 맞지만 앞코 테이퍼 때문에 약간 짧게 느끼고 뒤 패딩 마찰을 언급했습니다. David(남성US9.5)은 길이가 맞고 부드러운 어퍼를 느꼈지만 전환이 둔하고 높고 좁은 플랫폼 때문에U턴을 조심했다고 적었습니다. 개인 선호를 공통3분30초~5분페이스·하프 전용으로 정하지 않습니다. 한국 현재 와이드 SKU는 미확인입니다. RR 내부 최광폭93.6mm·엄지74.3mm·높이26.1mm를 함께 보되 전체 폭·길이·개인 핏을 한 숫자로 판정하지 않습니다. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.",
+    editorComment: "2026-11-09 원문 재확인. 한국 공식 남성1011B875.751(AKR_112511102-751) 정가199,000원·확인 시 판매159,200원,265/270/275/280/290mm 선택기 옵션을 확인했습니다.242g은270mm 공시입니다. 현재 여성·와이드 한국SKU·최종주문재고는 미확인입니다. DOR 소개 남성242g(US9)·43.5/35.5mm,여성207g(US8)·42.5/34.5mm,드롭8mm. RR237g·42.5/32.9mm·9.6mm와 성별·사이즈를 구분합니다. RR은 인솔을 접착하지 않아 제거 가능하다고 설명하지만 DOR Matt검체는 접착돼 제거 불가였다고 합니다. 원인을 확정하지 않고 구매할 실물의 인솔을 확인하세요. 주폼31.7AC·FFTurbo부분삽입33.9AC와 두 리뷰어의 단단한 전체 주행감은 다른 지표입니다. DOR의 Matt(남성US10)은 길이는 맞지만 앞코 테이퍼 때문에 약간 짧게 느끼고 뒤 패딩 마찰을 언급했습니다. David(남성US9.5)은 길이가 맞고 부드러운 어퍼를 느꼈지만 전환이 둔하고 높고 좁은 플랫폼 때문에U턴을 조심했다고 적었습니다. 개인 선호를 공통3분30초~5분페이스·하프 전용으로 정하지 않습니다. 한국 현재 와이드 SKU는 미확인입니다. RR 내부 최광폭93.6mm·엄지74.3mm·높이26.1mm를 함께 보되 전체 폭·길이·개인 핏을 한 숫자로 판정하지 않습니다. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다. 2026-11-12 판 소재 보완: 전장 판 구조. ASICS NZ AW25 기술지12쪽은 1.5mm carbon-infused TPU, UK 1011B875-600 상품은 sculpted carbon plate로 표기합니다. 출처별 상세도를 구분하며 연속 탄소섬유 적층판이나 한국 SKU의 정확 조성을 이 문구만으로 확정하지 않습니다.",
     tags: [
       "레이싱",
-      "카본플레이트",
+      "카본 보강 TPU(NZ)",
       "템포",
       "가성비"
     ],
@@ -37,7 +37,7 @@ export const shoe: Shoe = {
       },
       "drop": 9.6,
       "carbonPlate": true,
-      "plateType": "full-length carbon plate",
+      "plateType": "full-length carbon-infused TPU (NZ AW25: 1.5mm); UK: sculpted carbon plate",
       "midsoleType": "전장 FF BLAST PLUS · 전족 FF TURBO 부분삽입 · 전장 카본"
     },
     koreanFootFit: {},
@@ -70,8 +70,8 @@ export const shoe: Shoe = {
       "weight": "237g (RunRepeat 공시 검체 정책:남성US9). DOR 소개 남성242g(US9)·43.5/35.5mm,여성207g(US8)·42.5/34.5mm,드롭8mm. RR237g·42.5/32.9mm·9.6mm와 성별·사이즈를 구분합니다.",
       "stackHeight": "42.5/32.9mm (RunRepeat 힐/전족부 실측)",
       "drop": "9.6mm (RunRepeat 실측). 출처별 공시 조건은 무게 항목에 구분.",
-      "midsole": "전장 FF BLAST PLUS · 전족 FF TURBO 부분삽입 · 전장 카본 · 31.7 AC(Asker C) · 힐/전족부 SA 144/122 · 에너지 리턴 55.5/61.8%. RR은 인솔을 접착하지 않아 제거 가능하다고 설명하지만 DOR Matt검체는 접착돼 제거 불가였다고 합니다. 원인을 확정하지 않고 구매할 실물의 인솔을 확인하세요. 주폼31.7AC·FFTurbo부분삽입33.9AC와 두 리뷰어의 단단한 전체 주행감은 다른 지표입니다.",
-      "plate": "전장 카본 플레이트. 제조사·DOR의 지오메트리 설명을 공인대회 사용가능 판정이나 임상 보호로 확대하지 않습니다.",
+      "midsole": "전장 FF BLAST PLUS · 전족 FF TURBO 부분삽입 · 전장 카본 보강 TPU 판(NZ 기술지) · 31.7 AC(Asker C) · 힐/전족부 SA 144/122 · 에너지 리턴 55.5/61.8%. RR은 인솔을 접착하지 않아 제거 가능하다고 설명하지만 DOR Matt검체는 접착돼 제거 불가였다고 합니다. 원인을 확정하지 않고 구매할 실물의 인솔을 확인하세요. 주폼31.7AC·FFTurbo부분삽입33.9AC와 두 리뷰어의 단단한 전체 주행감은 다른 지표입니다.",
+      "plate": "전장 판 구조. ASICS NZ AW25 기술지12쪽은 1.5mm carbon-infused TPU, UK 1011B875-600 상품은 sculpted carbon plate로 표기합니다. 출처별 상세도를 구분하며 연속 탄소섬유 적층판이나 한국 SKU의 정확 조성을 이 문구만으로 확정하지 않습니다.",
       "width": "RunRepeat 내부 최광폭 93.6mm / 엄지 부위 74.3mm / 엄지 높이 26.1mm. 한국 현재 와이드 SKU는 미확인입니다. RR 내부 최광폭93.6mm·엄지74.3mm·높이26.1mm를 함께 보되 전체 폭·길이·개인 핏을 한 숫자로 판정하지 않습니다.",
       "durability": "검증된 공통 수명km 미확인. 짧은 착화·마모 깊이를 수명km로 환산하지 않습니다.",
       "price": "한국 공식 남성1011B875.751(AKR_112511102-751) 정가199,000원·확인 시 판매159,200원,265/270/275/280/290mm 선택기 옵션을 확인했습니다.242g은270mm 공시입니다. 현재 여성·와이드 한국SKU·최종주문재고는 미확인입니다."
@@ -98,17 +98,18 @@ export const shoe: Shoe = {
     relatedPosts: [
       {
         "slug": "running-shoe-plate-guide-2026",
-        "title": "플레이트 완전 해설 — 카본·유리섬유·나일론"
+        "title": "러닝화 플레이트 읽는 법 — 판·로드·소재·최신 대회 규정"
       }
     ],
     purchaseLinks: [
       {
         "store": "네이버",
-        "url": "https://naver.me/xll2P3cx"
+        "url": "https://naver.me/xll2P3cx",
+        "note": "2026-11-13 판매 페이지 확인: 남성 와이드 매직스피드4 1011B873.600 구매대행 상품입니다. 제목에 붙는 사이즈와 실제 선택 옵션을 구분하세요. 선택 사이즈·최종 가격·현재 재고와 결제 가능 여부는 판매처에서 확인하세요."
       }
     ],
     verification: {
-      "checkedAt": "2026-11-09",
+      "checkedAt": "2026-11-12",
       "scope": "한국 확인SKU의 정가·폭, 해외 실험실 수치·구조·외부 착화 의견을 재확인했습니다. 제품 전체 검증 완료 표지가 아닙니다.",
       "sources": [
         {
@@ -130,6 +131,16 @@ export const shoe: Shoe = {
           "label": "RunRepeat 측정법",
           "url": "https://runrepeat.com/testing-methodology",
           "note": "내부 최광폭·엄지 너비·외부 플랫폼 폭은 다른 값입니다. AC와HA는 직접 비교하지 않습니다. 시점·측정법 버전의 차이를 구분하세요."
+        },
+        {
+          "label": "ASICS NZ AW25 공식 기술지 · 매직스피드4 · 12쪽",
+          "url": "https://www.asics.com/nz/en-nz/media/wysiwyg/pdf/AS-0539_Medical_TechBrochure_AW25_NZ_2.pdf",
+          "note": "11/10 보존 원문을11/12 재독: 인쇄12쪽=PDF12번째. Full-Length Carbon infused TPU Plate (1.5mm thickness). 뉴질랜드 기술지이며 한국SKU 조성·지역별 변경을 확정하지 않음."
+        },
+        {
+          "label": "ASICS UK 정확 매직스피드4 상품",
+          "url": "https://outlet.asics.com/gb/en-gb/magic-speed-4/p/1011B875-600.html",
+          "note": "11/12 본문 재확인: sculpted carbon plate. NZ 기술지보다 일반적인 명칭이며 순수 연속 탄소섬유 조성의 증거로 쓰지 않음."
         }
       ],
       "limitations": [

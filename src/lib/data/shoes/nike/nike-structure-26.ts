@@ -98,7 +98,8 @@ export const shoe: Shoe = {
     purchaseLinks: [
       {
         "store": "네이버",
-        "url": "https://naver.me/5Z1qpE6Z"
+        "url": "https://naver.me/5Z1qpE6Z",
+        "note": "2026-11-13 판매 페이지 확인: 남성 스트럭처26 HJ1102-800 상품이며 구매대행 판매처입니다. 선택 사이즈·최종 가격·현재 재고와 결제 가능 여부는 판매처에서 확인하세요."
       },
       {
         "store": "쿠팡",

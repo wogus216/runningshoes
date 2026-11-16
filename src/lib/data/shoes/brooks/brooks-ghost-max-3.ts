@@ -94,7 +94,7 @@ export const shoe: Shoe = {
   relatedPosts: [
     {
       slug: 'running-shoe-500km-replacement-myth-2026',
-      title: '"500km 교체설"의 진실 — 소재별 수명',
+      title: '러닝화 500km 교체설 — 연구가 측정한 것과 말하지 않은 것',
     },
   ],
   purchaseLinks: [

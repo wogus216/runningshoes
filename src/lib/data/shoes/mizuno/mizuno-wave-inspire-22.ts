@@ -97,7 +97,7 @@ export const shoe: Shoe = {
   relatedPosts: [
     {
       slug: 'mizuno-running-shoes-lineup-tier-guide-2026',
-      title: '미즈노 러닝화 계급도',
+      title: '미즈노 러닝화 라인업 — 세대·폼·판·핏으로 비교하기',
     },
   ],
   verification: {

@@ -17,9 +17,10 @@ export const shoe: Shoe = {
     imageCaption: "SuperComp Elite v6 참고 사진입니다. 사진 속 제품의 정확한 품번·성별·폭은 미확인이므로 구매할 옵션과 구분하세요.",
     imageSource: { title: "세대 확인: New Balance 공식 자료", url: "https://store.newbalance.co.jp/press/2026/p-73276" },
     category: "레이싱",
-    description: "Infinion · Energy Arc 카본 · FANTOMFIT 구조의 SC Elite V6. RunRepeat 실험실 검체 190g·38.5/24.6mm. 한국 현재 정가 미확인.",
+    price: 389000,
+    description: "Infinion · Energy Arc 카본 · FANTOMFIT 구조의 SC Elite V6. RunRepeat 실험실 검체 190g·38.5/24.6mm. 한국 공식 남성 NBPFGF718M / color45 / D 확인 정가 389,000원(11/14).",
     oneliner: "Infinion · Energy Arc 카본 · FANTOMFIT · 190g (RunRepeat 실험실 검체)",
-    editorComment: "2026-11-10 원문 재확인. 한국 공식 캐시: 공식403·정확 상품 원문 미확인. 현재 가격·폭·선택 재고는 미확인입니다. 캐시 수량·알림·장바구니 버튼을 현재 재고로 쓰지 않습니다. DOR 소개190g(남성US9.5)/155g(여성US7)·40/32mm·8mm와 RR190g·38.5/24.6mm·13.9mm를 나눕니다. 같은190g을 동일 실제 사이즈로 보지 않습니다. RR은 공시32mm가 중족에 가까운 위치이고 지정 전족75% 위치는24.6mm라고 설명합니다. 한국 공식403·정확 상품 미확보로389,000원·국내2E 현재 판매를 확정하지 않습니다. RR 좁은 검체·투표와 Andrea의 편한 앞코는 조건이 다릅니다.13.9mm 정적 드롭을 주행 중 체감으로 고정하지 않고300km 수명·v5대비 모든 개인의 기록 향상 보장을 제거했습니다. DOR 직접403 뒤 원문 캐시를 확인했습니다. Andrea(여성US9.5)는 정사이즈의 편한 앞코·유연한 메시와 고정을 좋아했으나 혀 접힘에 주의했습니다. Matt(남성US10)는 낮고 밀착된 외측 테이퍼가 조금 짧게 느껴졌고 좁은 힐/중족에 더 많은 안정감이 필요했습니다. 두 사람의 반응성 선호가 모든 발의 적합을 뜻하지 않습니다. RR 내부 최광폭 90.7mm·엄지 71.4mm·높이 26.8mm입니다. 너비 하나로 발등·길이·힐 고정이나 한국 와이드 적합을 보장하지 않습니다. 실제 규격·양말에서 접촉과 전환을 확인하세요. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.",
+    editorComment: "2026-11-10 원문 재확인. 한국 공식 캐시: 공식403·정확 상품 원문 미확인. 현재 가격·폭·선택 재고는 미확인입니다. 캐시 수량·알림·장바구니 버튼을 현재 재고로 쓰지 않습니다. DOR 소개190g(남성US9.5)/155g(여성US7)·40/32mm·8mm와 RR190g·38.5/24.6mm·13.9mm를 나눕니다. 같은190g을 동일 실제 사이즈로 보지 않습니다. RR은 공시32mm가 중족에 가까운 위치이고 지정 전족75% 위치는24.6mm라고 설명합니다. 11/10 한국 공식 남성D NBPFGF718M 상품의 표시 판매가389,000원은 확인했습니다. 별도 MSRP·현재 결제 가격·재고와 한국2E 판매는 미확인입니다. RR 좁은 검체·투표와 Andrea의 편한 앞코는 조건이 다릅니다.13.9mm 정적 드롭을 주행 중 체감으로 고정하지 않고300km 수명·v5대비 모든 개인의 기록 향상 보장을 제거했습니다. DOR 직접403 뒤 원문 캐시를 확인했습니다. Andrea(여성US9.5)는 정사이즈의 편한 앞코·유연한 메시와 고정을 좋아했으나 혀 접힘에 주의했습니다. Matt(남성US10)는 낮고 밀착된 외측 테이퍼가 조금 짧게 느껴졌고 좁은 힐/중족에 더 많은 안정감이 필요했습니다. 두 사람의 반응성 선호가 모든 발의 적합을 뜻하지 않습니다. RR 내부 최광폭 90.7mm·엄지 71.4mm·높이 26.8mm입니다. 너비 하나로 발등·길이·힐 고정이나 한국 와이드 적합을 보장하지 않습니다. 실제 규격·양말에서 접촉과 전환을 확인하세요. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다. RR Width/Fit 본문은 이 검체를 US9·Regular D로 명시합니다. 개별 라벨·SKU·무게 보정 여부와 한국 판매 상품과의 동일성은 미확인입니다.",
     specs: {
       "weight": 190,
       "drop": 13.9
@@ -31,7 +32,7 @@ export const shoe: Shoe = {
       },
       "drop": 13.9,
       "carbonPlate": true,
-      "plateType": "Carbon Speedboard/PWRPLATE/EnergyArc",
+      "plateType": "Full-length carbon-fibre Energy Arc plate (NB Japan official)",
       "midsoleType": "Infinion · Energy Arc 카본 · FANTOMFIT"
     },
     koreanFootFit: {},
@@ -77,11 +78,11 @@ export const shoe: Shoe = {
       "weight": "190g (RunRepeat 실험실 검체). DOR 소개190g(남성US9.5)/155g(여성US7)·40/32mm·8mm와 RR190g·38.5/24.6mm·13.9mm를 나눕니다. 같은190g을 동일 실제 사이즈로 보지 않습니다. RR은 공시32mm가 중족에 가까운 위치이고 지정 전족75% 위치는24.6mm라고 설명합니다.",
       "stackHeight": "38.5/24.6mm (RunRepeat 실험실 검체, 힐/전족부). 출처별 다른 공시는 무게 항목 참조.",
       "drop": "13.9mm (RunRepeat 실험실 검체). DOR 소개190g(남성US9.5)/155g(여성US7)·40/32mm·8mm와 RR190g·38.5/24.6mm·13.9mm를 나눕니다. 같은190g을 동일 실제 사이즈로 보지 않습니다. RR은 공시32mm가 중족에 가까운 위치이고 지정 전족75% 위치는24.6mm라고 설명합니다.",
-      "midsole": "Infinion · Energy Arc 카본 · FANTOMFIT. 주폼 30.5AC, 힐/전족부 SA 148/101·에너지 리턴 75.3/79.4%. 한국 공식403·정확 상품 미확보로389,000원·국내2E 현재 판매를 확정하지 않습니다. RR 좁은 검체·투표와 Andrea의 편한 앞코는 조건이 다릅니다.13.9mm 정적 드롭을 주행 중 체감으로 고정하지 않고300km 수명·v5대비 모든 개인의 기록 향상 보장을 제거했습니다.",
+      "midsole": "Infinion · Energy Arc 카본 · FANTOMFIT. 주폼 30.5AC, 힐/전족부 SA 148/101·에너지 리턴 75.3/79.4%. 11/10 한국 공식 남성D NBPFGF718M 상품의 표시 판매가389,000원은 확인했습니다. 별도 MSRP·현재 결제 가격·재고와 한국2E 판매는 미확인입니다. RR 좁은 검체·투표와 Andrea의 편한 앞코는 조건이 다릅니다.13.9mm 정적 드롭을 주행 중 체감으로 고정하지 않고300km 수명·v5대비 모든 개인의 기록 향상 보장을 제거했습니다.",
       "plate": "카본과 Infinion은 확인했지만 폴리머는 RR A-TPU·DOR TPEE가 상충해 확정하지 않습니다. 다른 Infinion 제품의 조성을 그대로 대입하지 않습니다.",
       "width": "RR 내부 최광폭 90.7mm·엄지 부위 71.4mm·높이 26.8mm. RR 내부 최광폭 90.7mm·엄지 71.4mm·높이 26.8mm입니다. 너비 하나로 발등·길이·힐 고정이나 한국 와이드 적합을 보장하지 않습니다. 실제 규격·양말에서 접촉과 전환을 확인하세요.",
       "durability": "검증된 공통 수명 km 미확인. 국소 마모·짧은 착화 후기를 주행 수명으로 환산하지 않습니다.",
-      "price": "2026-11-10 한국 공식 SC Elite V6 남성 D, NBPFGF718M 표시 판매가 389,000원 확인. 다른 색상·성별·폭·할인 조건 및 실제 결제 금액과 재고는 별도 확인 대상입니다. 이 판매가를 별도 근거 없이 MSRP로 대입하지 않습니다."
+      "price": "2026-11-14 한국 공식 남성 NBPFGF718M / color45 / D의 할인 전 기준 가격과 현재 표시 판매가는 모두 389,000원으로 확인했습니다. 대표 가격은 이 선택 품번 기준입니다. 최초 출시가·다른 색상/성별/폭의 가격·쿠폰 적용 금액과 실제 결제 재고는 미확인입니다."
     },
     similarShoes: [
       "new-balance-sc-elite-v5",
@@ -92,7 +93,7 @@ export const shoe: Shoe = {
     relatedPosts: [
       {
         "slug": "new-balance-sc-elite-v6-preview-2026",
-        "title": "SC 엘리트 v6 미리보기"
+        "title": "SC 엘리트v6 업데이트 —190g·측정 위치, Infinion 소재와 앞코 의견의 차이"
       }
     ],
     purchaseLinks: [
@@ -113,18 +114,23 @@ export const shoe: Shoe = {
       "신상"
     ],
     verification: {
-      "checkedAt": "2026-11-10",
+      "checkedAt": "2026-11-14",
       "scope": "한국 상품 조건, 해외 실험실·제조사 공시와 외부 착화 의견의 확인 범위를 구분했습니다. 제품 전체 검증 완료 표지가 아닙니다.",
       "sources": [
         {
-          "label": "한국 공식 확인 실패 범위",
+          "label": "한국 공식 NBPFGF718M / color45 / D — 2026-11-14 정가/판매가 구분",
+          "url": "https://www.nbkorea.com/product/productDetail.action?colCode=45&styleCode=NBPFGF718M",
+          "note": "2026-11-14 한국 공식 남성 NBPFGF718M / color45 / D의 할인 전 기준 가격과 현재 표시 판매가는 모두 389,000원으로 확인했습니다. 대표 가격은 이 선택 품번 기준입니다. 최초 출시가·다른 색상/성별/폭의 가격·쿠폰 적용 금액과 실제 결제 재고는 미확인입니다."
+        },
+        {
+          "label": "한국 다른 규격·현재 구매 조건의 확인 한계",
           "url": "https://www.nbkorea.com/",
-          "note": "403. 정확한국가격·SKU·와이드·선택재고 미확인."
+          "note": "이전 홈페이지403 확인 기록입니다.11/10 남성D NBPFGF718M 정확 상품 표시 판매가389,000원은 아래 별도 공식 상품 근거에 기록합니다. 다른 규격·현재 결제 재고는 미확인입니다."
         },
         {
           "label": "RunRepeat 동세대 실험실 원문",
           "url": "https://runrepeat.com/new-balance-super-comp-elite-v-6",
-          "note": "공시 일반 검체 정책은 남성 US9. 실제 검체 라벨·폭 미확인. 190g·38.5/24.6mm·13.9mm. 한국 공식403·정확 상품 미확보로389,000원·국내2E 현재 판매를 확정하지 않습니다. RR 좁은 검체·투표와 Andrea의 편한 앞코는 조건이 다릅니다.13.9mm 정적 드롭을 주행 중 체감으로 고정하지 않고300km 수명·v5대비 모든 개인의 기록 향상 보장을 제거했습니다."
+          "note": "11/12 RR Width/Fit 본문은 US9·Regular D 검체를 명시합니다. 개별 라벨·SKU·무게 보정 여부는 미확인. 190g·38.5/24.6mm·13.9mm. 11/10 한국 공식 남성D NBPFGF718M 상품의 표시 판매가389,000원은 확인했습니다. 별도 MSRP·현재 결제 가격·재고와 한국2E 판매는 미확인입니다. RR 좁은 검체·투표와 Andrea의 편한 앞코는 조건이 다릅니다.13.9mm 정적 드롭을 주행 중 체감으로 고정하지 않고300km 수명·v5대비 모든 개인의 기록 향상 보장을 제거했습니다."
         },
         {
           "label": "Doctors of Running 동세대 원문",
@@ -135,11 +141,6 @@ export const shoe: Shoe = {
           "label": "RunRepeat 측정법",
           "url": "https://runrepeat.com/testing-methodology",
           "note": "AC·HA·HC, SA·에너지 리턴, BR·구방식1~5와 내부/외부 폭을 구분합니다. 일반 정책은 개별 라벨 확인과 다릅니다."
-        },
-        {
-          "label": "한국 공식 구매 페이지 · 2026-11-10",
-          "url": "https://www.nbkorea.com/product/productDetail.action?colCode=45&styleCode=NBPFGF718M",
-          "note": "SC Elite V6 남성 D, NBPFGF718M의 본문·상품 데이터에서 표시 가격 389,000원을 다시 읽었습니다. 공통 SOLD OUT·정적 사이즈 목록·JSON-LD 재고만으로 선택 사이즈의 실제 재고를 판정하지 않았습니다."
         }
       ],
       "limitations": [
