@@ -1,5 +1,9 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
+import { execFileSync } from 'node:child_process';
+import { mkdtempSync, rmSync } from 'node:fs';
+import { tmpdir } from 'node:os';
+import { join } from 'node:path';
 import { changedDataRoutes, changedRoutes, gitText } from '../indexnow.mjs';
 
 test('월별 글 하나를 고치면 해당 글만 통지한다', () => {
@@ -27,8 +31,14 @@ test('공유 신발 설명 변경은 색인 가능한 신발 URL만 대상으로
   assert.deepEqual(changedRoutes([{file: 'src/lib/seo/shoe-description.ts'}], ['https://allrunabout.com/shoes/one', 'https://allrunabout.com/blog/one']), ['https://allrunabout.com/shoes/one']);
 });
 
-test('큰 월별 원본도 기본 1MB 버퍼 제한에 잘리지 않는다', () => {
-  const source = gitText('show', 'HEAD:src/lib/data/blog/posts/2026-06.ts');
+test('큰 월별 원본도 기본 1MB 버퍼 제한에 잘리지 않는다', (t) => {
+  const repo = mkdtempSync(join(tmpdir(), 'indexnow-git-buffer-'));
+  t.after(() => rmSync(repo, { recursive: true, force: true }));
+  execFileSync('git', ['init', '--bare', '--quiet', repo]);
+  const source = `const posts = [\n//${'가'.repeat(512 * 1024)}\n];\n`;
   assert.ok(Buffer.byteLength(source) > 1024 * 1024);
-  assert.ok(source.trimEnd().endsWith('];'));
+  const blob = execFileSync('git', ['-C', repo, 'hash-object', '-w', '--stdin'], {
+    encoding: 'utf8', input: source,
+  }).trim();
+  assert.equal(gitText('-C', repo, 'cat-file', 'blob', blob), source.trim());
 });

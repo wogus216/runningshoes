@@ -35,6 +35,20 @@ describe('matchesDistanceFilter', () => {
     expect(matchesDistanceFilter(['6K'], ['5K'])).toBe(true);
   });
 
+  it('하프·10.5K 대회가 10K 필터에 잡히고 원래 거리를 유지한다', () => {
+    const distances = ['하프', '10.5K'];
+    expect(matchesDistanceFilter(distances, ['10K'])).toBe(true);
+    expect(matchesDistanceFilter(distances, ['5K'])).toBe(false);
+    expect(distances).toEqual(['하프', '10.5K']);
+  });
+
+  it('4K 종목이 5K 필터에 잡히고 원래 거리를 유지한다', () => {
+    const distances = ['4K'];
+    expect(matchesDistanceFilter(distances, ['5K'])).toBe(true);
+    expect(matchesDistanceFilter(distances, ['10K'])).toBe(false);
+    expect(distances).toEqual(['4K']);
+  });
+
   it('여러 거리 중 하나만 맞아도 통과', () => {
     expect(matchesDistanceFilter(['하프', '10K'], ['풀코스', '하프'])).toBe(true);
   });
