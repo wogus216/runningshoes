@@ -3,8 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "predev": "tsx scripts/shoe-thumbnails.ts",
-    "prebuild": "tsx scripts/shoe-thumbnails.ts",
+    "images:thumbnails": "tsx scripts/shoe-thumbnails.ts",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",

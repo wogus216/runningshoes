@@ -1,15 +1,16 @@
-import { mkdir } from 'node:fs/promises';
+import { mkdir, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import sharp from 'sharp';
 import { shoes } from '../src/lib/data/shoes';
-import { shoeThumbnail } from '../src/lib/shoe-thumbnail';
+import { thumbnailPath } from '../src/lib/shoe-thumbnail-path';
 
 async function generate() {
   const sources = Array.from(new Set(shoes.map(shoe => shoe.image)));
+  const thumbnails: string[] = [];
   for (const source of sources) {
     if (!source?.startsWith('/images/shoes/')) continue;
     const input = path.join('public', source);
-    const output = path.join('public', shoeThumbnail(source));
+    const output = path.join('public', thumbnailPath(source));
     await mkdir(path.dirname(output), { recursive: true });
 
     // Flatten invisible RGB before measuring margins. Keep photographs with
@@ -52,7 +53,9 @@ async function generate() {
     }
     await sharp(trimmed).resize(480, 270, { fit: 'contain', background: '#fff' })
       .extend({ top: 12, bottom: 12, left: 16, right: 16, background: '#fff' }).webp({ quality: 84 }).toFile(output);
+    thumbnails.push(source);
   }
+  await writeFile('src/lib/data/shoe-thumbnails.json', JSON.stringify(thumbnails.sort(), null, 2) + '\n');
 }
 
 generate().catch(error => { console.error(error); process.exitCode = 1; });

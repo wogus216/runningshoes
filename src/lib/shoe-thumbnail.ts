@@ -1,8 +1,10 @@
 import { img } from './image';
+import sources from './data/shoe-thumbnails.json';
+import { thumbnailPath } from './shoe-thumbnail-path';
 
-/** Representative photos only. Gallery views retain their original framing. */
+const available = new Set(sources);
+
+/** A new model uses its original until its centered thumbnail is generated. */
 export function shoeThumbnail(source: string): string {
-  return source.startsWith('/images/shoes/')
-    ? source.replace('/images/shoes/', '/shoe-thumbs/') + '.webp'
-    : img(source);
+  return available.has(source) ? thumbnailPath(source) : img(source);
 }
