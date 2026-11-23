@@ -11,7 +11,7 @@ export const novemberEvents: MarathonEvent[] = [
   "distances": [
     "10K"
   ],
-  "status": "마감",
+  "status": "대회종료",
   "isMajor": false,
   "website": "https://lgtwinslastrungoodbyejamsil.com/",
   "registrationStart": "2026-10-22",
@@ -101,7 +101,7 @@ export const novemberEvents: MarathonEvent[] = [
     "10K",
     "5K"
   ],
-  "status": "마감",
+  "status": "대회종료",
   "isMajor": false,
   "website": "https://zeiss-smilerace.kr/marathon/code/8050/",
   "registrationEnd": "2026-11-08",
@@ -757,7 +757,7 @@ export const novemberEvents: MarathonEvent[] = [
       "하프",
       "10K"
     ],
-    status: "접수중",
+    status: "대회종료",
     registrationStatusUnverified: true,
     isMajor: false,
     website: "https://gofree.seoul.co.kr/",
@@ -812,7 +812,7 @@ export const novemberEvents: MarathonEvent[] = [
     "10K",
     "5K"
   ],
-  "status": "접수중",
+  "status": "대회종료",
   "registrationStatusUnverified": true,
   "isMajor": true,
   "website": "http://www.incheonmarathon.or.kr/",
