@@ -4,6 +4,7 @@ import { useState, useEffect, useMemo, useRef, useCallback } from 'react';
 import { createPortal } from 'react-dom';
 import { useRouter } from 'next/navigation';
 import { Search, X, CornerDownLeft } from 'lucide-react';
+import { compactSearch } from '@/lib/shoe-search';
 import type { SearchItem } from '@/lib/search-index';
 import { shouldFullReload } from '@/components/ads/full-reload-nav';
 
@@ -17,6 +18,10 @@ function scoreMatch(query: string, item: SearchItem): number {
   if (!q) return 0;
   const title = item.title.toLowerCase();
   const kw = item.keywords;
+
+  const compact = compactSearch(q);
+  if (item.names?.includes(compact)) return item.type === 'brand' ? 1200 : 1100;
+  if (item.names?.some(name => name.includes(compact))) return 300;
 
   // exact title match
   if (title === q) return 1000;
@@ -37,6 +42,8 @@ export function SearchPalette() {
   const [query, setQuery] = useState('');
   const [cursor, setCursor] = useState(0);
   const [items, setItems] = useState<SearchItem[]>(cachedIndex ?? []);
+  const [indexState, setIndexState] = useState<'loading' | 'ready' | 'error'>(cachedIndex ? 'ready' : 'loading');
+  const [attempt, setAttempt] = useState(0);
   const inputRef = useRef<HTMLInputElement>(null);
   const dialogRef = useRef<HTMLDivElement>(null);
   const returnFocusRef = useRef<HTMLElement | null>(null);
@@ -46,8 +53,10 @@ export function SearchPalette() {
     if (!open) return;
     if (cachedIndex) {
       setItems(cachedIndex);
+      setIndexState('ready');
       return;
     }
+    setIndexState('loading');
     let cancelled = false;
     if (!cachedRequest) {
       cachedRequest = fetch('/search-index.json').then((res) => {
@@ -63,13 +72,13 @@ export function SearchPalette() {
     }
     cachedRequest
       .then((data) => {
-        if (!cancelled) setItems(data);
+        if (!cancelled) { setItems(data); setIndexState('ready'); }
       })
-      .catch(() => {});
+      .catch(() => { if (!cancelled) setIndexState('error'); });
     return () => {
       cancelled = true;
     };
-  }, [open]);
+  }, [open, attempt]);
 
   // Cmd+K / Ctrl+K 단축키
   useEffect(() => {
@@ -130,7 +139,7 @@ export function SearchPalette() {
   }
 
   const results = useMemo(() => {
-    if (!query.trim()) return items.slice(0, 10);
+    if (!query.trim()) return [];
     return items
       .map((item) => ({ item, score: scoreMatch(query, item) }))
       .filter((r) => r.score > 0)
@@ -227,7 +236,8 @@ export function SearchPalette() {
             <div className="max-h-[60vh] overflow-y-auto overscroll-contain">
               {results.length === 0 ? (
                 <div className="p-8 text-center text-sm text-tertiary" role="status">
-                  검색 결과가 없습니다. 다른 키워드로 시도해보세요.
+                  {!query.trim() ? '모델명이나 브랜드를 입력하세요. 예: 고스트 17, 브룩스' : indexState === 'loading' ? '검색 목록을 불러오는 중…' : indexState === 'error' ? '검색 목록을 불러오지 못했습니다.' : '검색 결과가 없습니다. 모델명이나 브랜드를 다시 확인하세요.'}
+                  {indexState === 'error' && <button type="button" className="ml-2 underline" onClick={() => setAttempt(n => n + 1)}>다시 불러오기</button>}
                 </div>
               ) : (
                 <ul className="py-2">
@@ -257,7 +267,7 @@ export function SearchPalette() {
             </div>
 
             <div className="flex items-center justify-between border-t border-border bg-[var(--surface-veil-50)] px-4 py-2 text-[10px] text-tertiary">
-              <div className="flex items-center gap-3">
+              <div className="hidden items-center gap-3 md:flex">
                 <span><kbd className="px-1 rounded bg-white border border-border">↑↓</kbd> 이동</span>
                 <span><kbd className="px-1 rounded bg-white border border-border">Enter</kbd> 선택</span>
                 <span><kbd className="px-1 rounded bg-white border border-border">Esc</kbd> 닫기</span>

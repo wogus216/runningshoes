@@ -1,11 +1,14 @@
 import { shoes } from '@/lib/data/shoes';
+import { brands } from '@/lib/data/brands';
+import { shoeSearchNames } from '@/lib/shoe-search';
 import { formatManwon } from '@/lib/format';
 
 export type SearchItem = {
-  type: 'shoe' | 'best' | 'vs' | 'tool';
+  type: 'shoe' | 'best' | 'vs' | 'tool' | 'brand';
   title: string;
   subtitle?: string;
   href: string;
+  names?: string[];
   keywords: string; // pre-joined lowercase searchable text
 };
 
@@ -23,6 +26,14 @@ export function getSearchIndex(): SearchItem[] {
     keywords: '러닝카드 러닝 카드 러너 유형 테스트 메달 기록 공유 올런바웃 running card',
   }];
 
+  for (const brand of brands) {
+    items.push({
+      type: 'brand', title: brand.nameKo || brand.name, subtitle: '브랜드별 러닝화',
+      href: `/brands/${brand.id}`, names: shoeSearchNames(brand.name, ''),
+      keywords: brand.name.toLowerCase(),
+    });
+  }
+
   // 신발 (상위 항목)
   for (const shoe of shoes) {
     if (!shoe.slug) continue;
@@ -39,6 +50,7 @@ export function getSearchIndex(): SearchItem[] {
       .toLowerCase();
     items.push({
       type: 'shoe',
+      names: shoeSearchNames(shoe.brand, shoe.name),
       title: `${shoe.brand} ${shoe.name}`,
       subtitle: `${shoe.category}${shoe.price ? ` · ${formatManwon(shoe.price)}` : ''}`,
       href: `/shoes/${shoe.slug}`,

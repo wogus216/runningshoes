@@ -16,6 +16,8 @@ export type CompareItem = {
 
 type CompareContextType = {
   compareList: CompareItem[];
+  restored: boolean;
+  replaceCompare: (items: CompareItem[]) => void;
   addToCompare: (shoe: CompareItem) => void;
   removeFromCompare: (shoeId: string) => void;
   clearCompare: () => void;
@@ -40,6 +42,10 @@ export function CompareProvider({ children }: { children: ReactNode }) {
     if (!restored) return;
     try { window.sessionStorage.setItem(COMPARE_STORAGE_KEY, JSON.stringify(compareList)); } catch { /* 저장소 차단 */ }
   }, [compareList, restored]);
+
+  const replaceCompare = useCallback((items: CompareItem[]) => {
+    setCompareList(items.slice(0, MAX_COMPARE_ITEMS).map(({ slug, brand, name, id }) => ({ slug, brand, name, id })));
+  }, []);
 
   const addToCompare = useCallback((shoe: CompareItem) => {
     setCompareList(prev => {
@@ -66,7 +72,7 @@ export function CompareProvider({ children }: { children: ReactNode }) {
   return (
     <CompareContext.Provider
       value={{
-        compareList,
+        compareList, restored, replaceCompare,
         addToCompare,
         removeFromCompare,
         clearCompare,

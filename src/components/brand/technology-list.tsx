@@ -7,7 +7,7 @@ import type { Shoe } from '@/types/shoe';
 import { categoryLabels, categoryColorClasses } from '@/types/brand';
 import { useRef } from 'react';
 import { Sparkles, FlaskConical, ChevronRight, ChevronLeft } from 'lucide-react';
-import { img } from '@/lib/image';
+import { shoeThumbnail } from '@/lib/shoe-thumbnail';
 
 type TechnologyListProps = {
   brand: Brand;
@@ -182,7 +182,7 @@ function TechnologySection({ technology, shoes }: { technology: BrandTechnology;
                     <div className="relative mb-2 aspect-square overflow-hidden rounded-[4px] bg-[linear-gradient(180deg,rgba(255,255,255,0.96),rgba(247,244,237,0.88))]">
                       {shoe.image ? (
                         <Image
-                          src={img(shoe.image)}
+                          src={shoeThumbnail(shoe.image)}
                           alt={`${shoe.brand} ${shoe.name}`}
                           fill
                           className="object-contain p-2 group-hover:scale-105 transition-transform"

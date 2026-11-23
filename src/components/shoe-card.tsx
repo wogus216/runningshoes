@@ -8,7 +8,7 @@ import { cn } from "@/lib/utils";
 import type { GridShoe } from "@/lib/data/shoes";
 import { AddToCompareButton } from "@/components/compare/add-to-compare-button";
 import { SaveButton } from "@/components/saved/save-button";
-import { img } from "@/lib/image";
+import { shoeThumbnail } from "@/lib/shoe-thumbnail";
 import { formatWon } from '@/lib/format';
 
 type ShoeCardProps = {
@@ -93,7 +93,7 @@ export const ShoeCard = memo(function ShoeCard({ shoe, index = 0, onTagClick }: 
       )}
       style={{ animationDelay: `${Math.min(index, 12) * 60}ms` }}
     >
-      <div className="relative aspect-[4/3] overflow-hidden border-b border-border bg-[var(--bg-warm-alt)] px-2 pb-1 pt-9 md:aspect-square md:flex md:items-center md:justify-center md:p-4">
+      <div className="relative aspect-[4/3] overflow-hidden border-b border-border bg-[var(--bg-warm-alt)] flex items-center justify-center px-2 py-4 md:aspect-square md:flex md:items-center md:justify-center md:p-4">
         <div className="absolute inset-x-2.5 top-2.5 z-20 flex items-start justify-between gap-2 md:inset-x-4 md:top-4">
           <span className="border border-accent bg-[var(--veil-95)] px-2 py-0.5 font-mono text-[9px] font-bold uppercase tracking-[0.14em] text-signal-dark backdrop-blur md:px-2.5 md:py-1 md:text-[10px] md:tracking-[0.18em]">
             {shoe.category}
@@ -106,7 +106,7 @@ export const ShoeCard = memo(function ShoeCard({ shoe, index = 0, onTagClick }: 
 
         {shoe.image ? (
           <Image
-            src={img(shoe.image)}
+            src={shoeThumbnail(shoe.image)}
             alt={`${shoe.brand} ${shoe.name}`}
             width={300}
             height={300}

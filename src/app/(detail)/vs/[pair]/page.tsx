@@ -7,7 +7,7 @@ import { getAllPairs, getPairBySlug, getPairsForCategory, getPairsForShoe } from
 import { formatManwon } from '@/lib/format';
 import { SITE_URL, SITE_NAME, DEFAULT_OG_IMAGE } from '@/lib/constants';
 import { breadcrumbJsonLd } from '@/lib/seo/breadcrumb';
-import { img } from '@/lib/image';
+import { shoeThumbnail } from '@/lib/shoe-thumbnail';
 import type { Shoe } from '@/types/shoe';
 import { withJosa } from '@/lib/korean';
 import { buildVerdicts, buildNarrative, buildFaqs, specRows } from '@/lib/pseo/pair-copy';
@@ -57,7 +57,7 @@ function ShoeColumn({ shoe, label }: { shoe: Shoe; label: string }) {
       <div className="text-xs font-semibold text-signal-dark uppercase tracking-wide">{label}</div>
       {shoe.image && (
         <Link href={`/shoes/${shoe.slug}`} className="block relative w-full aspect-square max-w-[200px] mx-auto bg-surface rounded-[4px]">
-          <Image src={img(shoe.image)} alt={`${shoe.brand} ${shoe.name}`} fill sizes="200px" className="object-contain p-2" />
+          <Image src={shoeThumbnail(shoe.image)} alt={`${shoe.brand} ${shoe.name}`} fill sizes="200px" className="object-contain p-2" />
         </Link>
       )}
       <div>

@@ -31,7 +31,7 @@ export function MarathonChips({
   return (
     <div className={styles.chips}>
       <div className={styles.chipRow}>
-        <span className={styles.chipLabel}>REGION</span>
+        <span className={styles.chipLabel}>지역</span>
         {REGION_GROUPS.map((g) => (
           <button
             key={g.id}
@@ -46,7 +46,7 @@ export function MarathonChips({
       </div>
 
       <div className={styles.chipRow}>
-        <span className={styles.chipLabel}>DISTANCE</span>
+        <span className={styles.chipLabel}>거리</span>
         {EVENT_DISTANCES.map((d) => (
           <button
             key={d}

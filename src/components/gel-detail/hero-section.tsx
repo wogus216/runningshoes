@@ -1,7 +1,7 @@
 'use client';
 
 import type { Gel } from "@/types/gel";
-import { Star, Zap, Droplets, Coffee, ExternalLink } from "lucide-react";
+import { Star, Zap, ExternalLink } from "lucide-react";
 import Image from "next/image";
 import { AffiliateDisclosure } from '@/components/detail/affiliate-disclosure';
 import { img } from '@/lib/image';
@@ -12,27 +12,6 @@ type HeroSectionProps = {
 
 export function HeroSection({ gel }: HeroSectionProps) {
   const nutrition = gel.nutritionFacts;
-
-  // GI 편안함 등급에 따른 색상
-  const getGIColor = () => {
-    switch (gel.giTolerance.overall) {
-      case 'excellent': return 'text-sky-700';
-      case 'good': return 'text-sky-700';
-      case 'moderate': return 'text-amber-700';
-      case 'poor': return 'text-rose-600';
-      default: return 'text-primary';
-    }
-  };
-
-  const getGILabel = () => {
-    switch (gel.giTolerance.overall) {
-      case 'excellent': return '매우 좋음';
-      case 'good': return '좋음';
-      case 'moderate': return '보통';
-      case 'poor': return '주의';
-      default: return '미확인';
-    }
-  };
 
   // 별점 렌더링
   const renderStars = (rating: number) => {
@@ -56,7 +35,7 @@ export function HeroSection({ gel }: HeroSectionProps) {
     <section className="section-card border border-[var(--accent-line)] bg-white/88 p-4 md:p-6 lg:p-8">
       <div className="grid md:grid-cols-2 gap-4 md:gap-6 lg:gap-10">
         {/* 이미지 */}
-        <figure className="flex flex-col items-center justify-center rounded-[4px] bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.98),rgba(226,240,252,0.92))] p-6 md:p-8">
+        <figure className="order-2 md:order-none flex flex-col items-center justify-center rounded-[4px] bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.98),rgba(226,240,252,0.92))] p-6 md:p-8">
           {gel.image ? (
             <Image
               src={img(gel.image)}
@@ -64,7 +43,7 @@ export function HeroSection({ gel }: HeroSectionProps) {
               width={400}
               height={400}
               sizes="(max-width: 768px) 100vw, 50vw"
-              className="w-full h-auto object-contain max-h-[400px]"
+              className="w-full h-auto object-contain max-h-36 md:max-h-[400px]"
             />
           ) : (
             <div className="w-full h-[300px] md:h-[400px] flex items-center justify-center text-tertiary">
@@ -94,6 +73,21 @@ export function HeroSection({ gel }: HeroSectionProps) {
 
           {/* 이름 */}
           <h1 className="text-3xl md:text-4xl font-bold mb-4 text-primary">{gel.name}</h1>
+
+          <div className="mb-4 rounded border border-border p-3">
+            <p className="text-sm text-secondary">{nutrition.servingSize != null ? `1회분 ${nutrition.servingSize}${nutrition.servingUnit ?? 'g'} 기준` : '제품별 영양 표시'}</p>
+            <dl className="mt-2 grid grid-cols-2 gap-3">
+              {([
+                ['탄수화물', nutrition.totalCarbs, 'g'],
+                ['열량', nutrition.calories, 'kcal'],
+                ['카페인', nutrition.caffeine, 'mg'],
+                ['나트륨', nutrition.sodium, 'mg'],
+              ] as const).map(([label, value, unit]) => <div key={label}>
+                <dt className="text-xs text-secondary">{label}</dt>
+                <dd className="text-lg font-bold">{value == null ? '미확인' : `${value}${unit}`}</dd>
+              </div>)}
+            </dl>
+          </div>
 
           {/* 별점 */}
           <div className="mb-5">
@@ -158,38 +152,7 @@ export function HeroSection({ gel }: HeroSectionProps) {
             </div>
           )}
 
-          {/* 빠른 스탯 */}
-          <div className="grid grid-cols-5 gap-2">
-            <div className="rounded-[4px] border border-sky-100 bg-sky-50 p-2 text-center">
-              <Zap className="w-4 h-4 mx-auto mb-1 text-tertiary" />
-              <p className="text-sm font-bold text-primary">{nutrition.calories ?? '미확인'}</p>
-              <p className="text-[10px] text-tertiary">kcal</p>
-            </div>
-            <div className="rounded-[4px] border border-sky-100 bg-sky-50 p-2 text-center">
-              <Droplets className="w-4 h-4 mx-auto mb-1 text-tertiary" />
-              <p className="text-sm font-bold text-primary">{nutrition.totalCarbs === undefined ? '미확인' : `${nutrition.totalCarbs}g`}</p>
-              <p className="text-[10px] text-tertiary">탄수화물</p>
-            </div>
-            <div className="rounded-[4px] border border-sky-100 bg-sky-50 p-2 text-center">
-              <Coffee className="w-4 h-4 mx-auto mb-1 text-tertiary" />
-              <p className="text-sm font-bold text-primary">{nutrition.caffeine ?? '미확인'}</p>
-              <p className="text-[10px] text-tertiary">mg</p>
-            </div>
-            <div className="rounded-[4px] border border-sky-100 bg-sky-50 p-2 text-center">
-              <div className="w-4 h-4 mx-auto mb-1 text-tertiary flex items-center justify-center">
-                <span className="text-xs">🧂</span>
-              </div>
-              <p className="text-sm font-bold text-primary">{nutrition.sodium ?? '미확인'}</p>
-              <p className="text-[10px] text-tertiary">mg</p>
-            </div>
-            <div className="rounded-[4px] border border-sky-100 bg-sky-50 p-2 text-center">
-              <div className="w-4 h-4 mx-auto mb-1 text-tertiary flex items-center justify-center">
-                <span className="text-xs">🫃</span>
-              </div>
-              <p className={`text-sm font-bold ${getGIColor()}`}>{getGILabel()}</p>
-              <p className="text-[10px] text-tertiary">위장</p>
-            </div>
-          </div>
+
         </div>
       </div>
     </section>

@@ -5,6 +5,7 @@ import { getCardShoes, type CardShoe } from '@/lib/data/shoes';
 import { getGels } from '@/lib/data/gels';
 import type { Gel } from '@/types/gel';
 import { img } from '@/lib/image';
+import { shoeThumbnail } from '@/lib/shoe-thumbnail';
 
 type ShoeBridgeProps = {
   distances: string[];
@@ -192,7 +193,7 @@ export function MarathonShoeBridge({ distances, eventName, excludeSlugs = [] }: 
             >
               <div className="relative h-16 w-16 shrink-0 overflow-hidden rounded-[4px] bg-white">
                 <Image
-                  src={img(s.image as string)}
+                  src={shoeThumbnail(s.image as string)}
                   alt={`${s.brand} ${s.name}`}
                   fill
                   sizes="64px"

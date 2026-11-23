@@ -28,7 +28,7 @@ export function MarathonRow({
       <span className={styles.region}>{event.region}</span>
       {/* 거리는 원문 그대로 — 11K를 10K로 바꿔 적지 않는다(필터만 매핑한다) */}
       <span className={styles.dist}>{event.distances.join(' · ')}</span>
-      <span className={`${styles.state} ${state.dday ? styles.dday : ''}`}>{state.text}</span>
+      <span className={`${styles.state} ${state.dday ? styles.dday : ''}`}>{state.dday && event.registrationEnd ? `접수 마감 ${event.registrationEnd.slice(5).replace('-', '.')}` : state.text}</span>
     </Link>
   );
 }

@@ -13,7 +13,7 @@ import { getAllPairs } from '@/lib/pseo/pairs';
 import { formatManwon } from '@/lib/format';
 import { getShoes } from '@/lib/data/shoes';
 import { SITE_URL, SITE_NAME, DEFAULT_OG_IMAGE } from '@/lib/constants';
-import { img } from '@/lib/image';
+import { shoeThumbnail } from '@/lib/shoe-thumbnail';
 
 const SHOE_COUNT = getShoes().length;
 
@@ -164,7 +164,7 @@ export default async function BestPage({ params }: PageProps) {
                   className="flex-shrink-0 w-24 h-24 relative bg-surface rounded"
                 >
                   <Image
-                    src={img(shoe.image)}
+                    src={shoeThumbnail(shoe.image)}
                     alt={`${shoe.brand} ${shoe.name}`}
                     fill
                     sizes="96px"

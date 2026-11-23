@@ -6,7 +6,7 @@ import Image from 'next/image';
 import { Star, Check, AlertTriangle, ArrowRight, ChevronDown } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { AddToCompareButton } from '@/components/compare/add-to-compare-button';
-import { img } from '@/lib/image';
+import { shoeThumbnail } from '@/lib/shoe-thumbnail';
 import type { RecommendedShoe } from '@/lib/recommendation';
 import { getShoeDurability } from '@/lib/durability';
 
@@ -17,12 +17,12 @@ type ResultCardProps = {
 
 export const ResultCard = memo(function ResultCard({ shoe, rank }: ResultCardProps) {
   const isTopPick = rank === 1;
-  const [showDetails, setShowDetails] = useState(isTopPick);
+  const [showDetails, setShowDetails] = useState(false);
 
   return (
     <div
       className={cn(
-        "relative overflow-hidden rounded-[4px] border p-6",
+        "relative overflow-hidden rounded-[4px] border p-4",
         isTopPick
           ? "border-sky-200 bg-[linear-gradient(135deg,rgba(255,255,255,0.98),rgba(247,244,237,0.96))] ring-2 ring-sky-200"
           : "border-[var(--accent-line)] bg-[linear-gradient(180deg,rgba(255,255,255,0.98),rgba(247,244,237,0.94))]"
@@ -42,7 +42,7 @@ export const ResultCard = memo(function ResultCard({ shoe, rank }: ResultCardPro
         {/* 이미지 */}
         <div className="row-span-2 flex h-16 w-16 items-center justify-center overflow-hidden rounded-[4px] bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.98),rgba(226,240,252,0.92))] sm:row-span-1">
           {shoe.image ? (
-            <Image src={img(shoe.image)} alt={shoe.name} width={64} height={64} className="object-contain" />
+            <Image src={shoeThumbnail(shoe.image)} alt={shoe.name} width={64} height={64} className="object-contain" />
           ) : (
             <span className="text-2xl">👟</span>
           )}
@@ -79,7 +79,7 @@ export const ResultCard = memo(function ResultCard({ shoe, rank }: ResultCardPro
       </div>
 
       {/* 추천 이유 태그 */}
-      {shoe.matchReasons.length > 0 && (
+      {showDetails && shoe.matchReasons.length > 0 && (
         <div className="mb-4">
           <p className="text-xs font-semibold text-tertiary uppercase tracking-wider mb-2">
             확인한 조건

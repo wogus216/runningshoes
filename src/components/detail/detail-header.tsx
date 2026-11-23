@@ -69,7 +69,7 @@ export function DetailHeader() {
               href="/compare"
               className="inline-flex min-h-[40px] items-center gap-1.5 rounded-[4px] bg-primary px-3 py-2 text-sm font-semibold text-background transition hover:bg-accent"
             >
-              + 비교함
+              신발 비교함
               <ArrowUpRight className="hidden h-4 w-4 sm:block" />
             </Link>
           </div>

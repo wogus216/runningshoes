@@ -8,6 +8,9 @@ import type { UserProfile } from '@/lib/recommendation';
 type QuestionnaireProps = {
   onComplete: (profile: UserProfile) => void;
   isLoading?: boolean;
+  initialProfile?: UserProfile | null;
+  initialStep?: number;
+  onCancel?: () => void;
 };
 
 type Question = {
@@ -60,12 +63,12 @@ const questions: Question[] = [
 
 export const RECOMMEND_QUESTION_COUNT = questions.length;
 
-export function Questionnaire({ onComplete, isLoading = false }: QuestionnaireProps) {
-  const [currentStep, setCurrentStep] = useState(0);
+export function Questionnaire({ onComplete, isLoading = false, initialProfile, initialStep = 0, onCancel }: QuestionnaireProps) {
+  const [currentStep, setCurrentStep] = useState(initialStep);
   const [answers, setAnswers] = useState<Record<string, string | string[]>>({
-    purpose: '',
-    footWidth: '',
-    budget: '',
+    purpose: initialProfile?.purpose ?? '',
+    footWidth: initialProfile?.footWidth === 'narrow' ? 'standard' : initialProfile?.footWidth ?? '',
+    budget: initialProfile?.budget ?? '',
     preferredBrands: [],
   });
 
@@ -104,14 +107,15 @@ export function Questionnaire({ onComplete, isLoading = false }: QuestionnairePr
     : currentAnswer && currentAnswer.length > 0;
 
   const handleNext = () => {
-    if (currentStep < questions.length - 1) {
+    if (!initialProfile && currentStep < questions.length - 1) {
       setCurrentStep(currentStep + 1);
     } else {
       const profile: UserProfile = {
+        ...initialProfile,
         purpose: answers.purpose as UserProfile['purpose'],
         footWidth: answers.footWidth as UserProfile['footWidth'],
         budget: answers.budget as UserProfile['budget'],
-        preferredBrands: [],
+        preferredBrands: initialProfile?.preferredBrands ?? [],
       };
       onComplete(profile);
     }
@@ -123,47 +127,17 @@ export function Questionnaire({ onComplete, isLoading = false }: QuestionnairePr
     }
   };
 
-  const progress = ((currentStep + 1) / questions.length) * 100;
-
   return (
-    <div className="max-w-2xl mx-auto">
-      <div className="mb-6 rounded-[4px] border border-stone-900/10 bg-white/82 p-6 backdrop-blur">
-        <div className="flex items-center justify-between mb-3">
-          <span className="text-sm font-medium text-primary">
-            {currentStep + 1} / {questions.length}
-          </span>
-          <span className="text-sm text-tertiary">
-            {Math.round(progress)}% 완료
-          </span>
-        </div>
-
-        {/* 단계 표시 */}
-        <div className="flex gap-1.5">
-          {questions.map((_, idx) => (
-            <div
-              key={idx}
-              className={cn(
-                "h-1.5 flex-1 rounded-full transition-colors",
-                idx < currentStep
-                  ? "bg-sky-500"
-                  : idx === currentStep
-                  ? "bg-sky-500"
-                  : "bg-border"
-              )}
-            />
-          ))}
-        </div>
-      </div>
-
-      <div className="mb-6 rounded-[4px] border border-stone-900/10 bg-[linear-gradient(135deg,rgba(255,255,255,0.94),rgba(247,244,237,0.88))] p-6">
-        <p className="mb-3 text-[11px] font-semibold uppercase tracking-[0.3em] text-slate-500">Question {currentStep + 1}</p>
+    <div className="mx-auto max-w-2xl">
+      <div className="mb-4">
+        <p className="mb-1 text-sm text-secondary">{initialProfile ? '선택 조건 변경' : `질문 ${currentStep + 1}/${questions.length}`}</p>
         <h2 className="mb-2 text-2xl font-black tracking-tight text-primary">
           {currentQuestion.title}
         </h2>
-        <p className="text-secondary text-sm leading-7">{currentQuestion.description}</p>
+        <p className="text-secondary text-sm leading-7">{currentStep === 1 ? currentQuestion.description : ''}</p>
       </div>
 
-      <div className="space-y-3 mb-6">
+      <div className="space-y-2 mb-4">
         {currentQuestion.options.map(option => {
           const isSelected = isMultiple
             ? (currentAnswer as string[])?.includes(option.value)
@@ -176,7 +150,7 @@ export function Questionnaire({ onComplete, isLoading = false }: QuestionnairePr
               disabled={isLoading}
               aria-pressed={isSelected}
               className={cn(
-                "w-full rounded-[4px] border p-4 text-left transition-all",
+                "w-full rounded-[4px] border px-4 py-2.5 text-left transition-all",
                 isSelected
                   ? "border-sky-300 bg-sky-50/70"
                   : "border-stone-900/10 bg-white hover:-translate-y-0.5 hover:border-sky-200"
@@ -208,7 +182,7 @@ export function Questionnaire({ onComplete, isLoading = false }: QuestionnairePr
       </div>
 
       {/* 이전 선택 요약 */}
-      {currentStep > 0 && (
+      {!initialProfile && currentStep > 0 && (
         <div className="mb-6 rounded-[4px] border border-stone-900/10 bg-white/70 p-4">
           <p className="mb-2 text-xs font-semibold uppercase tracking-wider text-tertiary">이전 선택</p>
           <div className="flex flex-wrap gap-2">
@@ -237,17 +211,17 @@ export function Questionnaire({ onComplete, isLoading = false }: QuestionnairePr
       {/* 네비게이션 */}
       <div className="flex items-center justify-between gap-4">
         <button
-          onClick={handleBack}
-          disabled={currentStep === 0 || isLoading}
+          onClick={onCancel ?? handleBack}
+          disabled={(!onCancel && currentStep === 0) || isLoading}
           className={cn(
             "flex items-center gap-2 px-5 py-3 rounded-full text-sm font-medium transition",
-            currentStep === 0
+            !onCancel && currentStep === 0
               ? "text-tertiary cursor-not-allowed"
               : "text-primary border border-stone-900/10 bg-white/75 hover:bg-white"
           )}
         >
           <ChevronLeft className="h-4 w-4" />
-          이전
+          {onCancel ? '취소' : '이전'}
         </button>
 
         <button
@@ -260,7 +234,7 @@ export function Questionnaire({ onComplete, isLoading = false }: QuestionnairePr
               : "bg-border text-tertiary cursor-not-allowed"
           )}
         >
-          {isLoading ? '추천 준비 중…' : currentStep === questions.length - 1 ? '결과 보기' : '다음'}
+          {isLoading ? '추천 준비 중…' : initialProfile || currentStep === questions.length - 1 ? '결과 보기' : '다음'}
           <ChevronRight className="h-4 w-4" />
         </button>
       </div>

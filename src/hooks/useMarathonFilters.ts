@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useMemo, useCallback } from 'react';
+import { useState, useEffect, useMemo, useCallback } from 'react';
 import type { MarathonListEvent, EventRegion, EventDistance } from '@/types/marathon';
 import { EVENT_DISTANCES } from '@/types/marathon';
 import { matchesDistanceFilter } from '@/lib/marathon/distance';
@@ -58,6 +58,32 @@ function matchesSearch(event: MarathonListEvent, query: string): boolean {
 
 export function useMarathonFilters(events: MarathonListEvent[]) {
   const [filters, setFilters] = useState<MarathonFilterState>(initialFilters);
+  const [urlReady, setUrlReady] = useState(false);
+  useEffect(() => {
+    const read = () => {
+      const params = new URLSearchParams(window.location.search);
+      setFilters({
+        regionGroups: REGION_GROUPS.filter(g => params.getAll('region').includes(g.id)).map(g => g.id),
+        distances: EVENT_DISTANCES.filter(d => params.getAll('distance').includes(d)),
+        majorOnly: params.get('major') === '1',
+        searchQuery: params.get('q') ?? '',
+      });
+    };
+    read();
+    setUrlReady(true);
+    window.addEventListener('popstate', read);
+    return () => window.removeEventListener('popstate', read);
+  }, []);
+  useEffect(() => {
+    if (!urlReady) return;
+    const url = new URL(window.location.href);
+    for (const key of ['region', 'distance', 'major', 'q']) url.searchParams.delete(key);
+    filters.regionGroups.forEach(v => url.searchParams.append('region', v));
+    filters.distances.forEach(v => url.searchParams.append('distance', v));
+    if (filters.majorOnly) url.searchParams.set('major', '1');
+    if (filters.searchQuery) url.searchParams.set('q', filters.searchQuery);
+    if (url.href !== window.location.href) window.history.replaceState(window.history.state, '', url);
+  }, [filters, urlReady]);
   const debouncedSearchQuery = useDebounce(filters.searchQuery, 300);
 
   const filteredEvents = useMemo(() => {

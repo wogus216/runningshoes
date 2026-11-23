@@ -4,6 +4,7 @@ import { useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { ArrowUpRight, Scale, Sparkles, FlaskConical, Beaker, BookOpen, Trophy, Award, ChevronDown, Shirt, Menu } from 'lucide-react';
+import { useCompare } from '@/contexts/compare-context';
 import { SearchPalette } from '@/components/search/search-palette';
 
 /**
@@ -27,6 +28,7 @@ const browseLinks = [
 export function Header({ brandLinks }: { brandLinks: HeaderBrandLink[] }) {
   // 헤더는 라우트가 바뀌어도 다시 마운트되지 않아 details 의 open 이 다음 페이지로 따라간다.
   // 경로 변경·바깥 클릭·Esc 에서 닫는다(메뉴 안 링크는 같은 경로 재클릭도 있어 onClick 으로 따로 닫는다).
+  const { compareList } = useCompare();
   const menuRef = useRef<HTMLDetailsElement>(null);
   const pathname = usePathname();
 
@@ -189,10 +191,11 @@ export function Header({ brandLinks }: { brandLinks: HeaderBrandLink[] }) {
           <Link
             href="/compare"
             className="inline-flex min-h-[44px] min-w-[44px] shrink-0 items-center justify-center gap-2 whitespace-nowrap rounded-[4px] border border-border bg-[var(--veil-90)] px-3 py-2 text-sm font-semibold text-primary transition-colors duration-200 hover:border-primary hover:bg-[var(--accent-soft)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
-            aria-label="신발 비교"
+            aria-label={compareList.length ? `담은 신발 비교하기 (${compareList.length})` : '신발 비교'}
           >
             <Scale className="h-4 w-4" />
             <span className="hidden sm:inline">비교</span>
+            {compareList.length > 0 && <span>{compareList.length}</span>}
           </Link>
           <Link
             href="/recommend"

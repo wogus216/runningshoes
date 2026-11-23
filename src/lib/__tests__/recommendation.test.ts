@@ -24,7 +24,9 @@ describe('조건을 확인한 추천 후보', () => {
 
   it('가격 미확인·0·음수·비정상 값으로 예산 충족을 주장하지 않는다', () => {
     const seed = shoes.find(s => s.specs)!;
-    for (const price of [undefined, null, 0, -1, NaN, Infinity]) {
+    // @ts-expect-error A legacy JSON price can be null at runtime.
+    expect(recommendShoes([{ ...seed, price: null, priceAnalysis: undefined }], profile)).toEqual([]);
+    for (const price of [undefined, 0, -1, NaN, Infinity]) {
       expect(recommendShoes([{ ...seed, price, priceAnalysis: undefined }], profile)).toEqual([]);
     }
   });

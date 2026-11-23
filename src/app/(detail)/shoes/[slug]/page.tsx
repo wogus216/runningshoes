@@ -1,3 +1,4 @@
+import { brandLabelMap } from '@/lib/shoe-search';
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import { getShoeBySlug, getShoes, getSimilarShoesData } from '@/lib/data/shoes';
@@ -53,16 +54,6 @@ export async function generateMetadata({ params }: ShoeDetailPageProps): Promise
   // 브랜드도 한글로 검색하므로(예: "온러닝 클라우드몬스터") 제목을 한글 브랜드명으로 시작한다.
   // 영문 브랜드명("On")은 한글 검색어("온러닝")와 SERP 볼드 매칭이 안 돼 CTR 손실 — 특히 순위 낮은 On·호카에서 컸음.
   // 새 브랜드 추가 시 이 맵에도 등록 (미등록 시 영문 brand로 폴백).
-  const brandLabelMap: Record<string, string> = {
-    'Nike': '나이키', 'Adidas': '아디다스', 'Asics': '아식스', 'Hoka': '호카',
-    'Brooks': '브룩스', 'Saucony': '써코니', 'Mizuno': '미즈노', 'New Balance': '뉴발란스',
-    'On': '온러닝', 'Puma': '푸마', 'Li-Ning': '라이닝', 'Salomon': '살로몬',
-    'Diadora': '디아도라',
-    'Merrell': '머렐',
-    'Kiprun': '킵런',
-    'Under Armour': '언더아머',
-    'Prospecs': '프로스펙스',
-  };
   const brandLabel = brandLabelMap[shoe.brand] || shoe.brand;
   // 카테고리를 제목 앞쪽 끌개로 — "안정화/쿠션화 러닝화" 류 카테고리 검색 매칭 + SERP 볼드/차별화 (GSC 2026-06-22: 신발상세 CTR이 블로그 리뷰의 1/3이라 끌개 보강)
   //

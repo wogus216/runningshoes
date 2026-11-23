@@ -12,7 +12,7 @@ import { formatManwon } from '@/lib/format';
 import { categoryOrder } from '@/lib/data/shoes';
 import { SITE_NAME, SITE_URL, DEFAULT_OG_IMAGE } from '@/lib/constants';
 import { breadcrumbJsonLd } from '@/lib/seo/breadcrumb';
-import { img } from '@/lib/image';
+import { shoeThumbnail } from '@/lib/shoe-thumbnail';
 import type { Shoe } from '@/types/shoe';
 
 type PageProps = {
@@ -125,55 +125,14 @@ export default async function BrandDetailPage({ params }: PageProps) {
         <h1 className="text-3xl md:text-4xl font-bold text-primary leading-tight">
           {brand.name} 러닝화 — {brandShoes.length}개 모델 비교
         </h1>
-        <p className="text-secondary leading-relaxed">{brand.description}</p>
-        <div className="flex flex-wrap gap-2">
-          {hasTechnologyPage && (
-            <Link
-              href={`/brands/${brand.id}/technology`}
-              className="inline-block px-4 py-2 bg-white border border-border text-sm text-primary rounded hover:border-accent transition"
-            >
-              {brand.name} 기술 가이드 →
-            </Link>
-          )}
-          {brand.website && (
-            <a
-              href={brand.website}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block px-4 py-2 bg-white border border-border text-sm text-primary rounded hover:border-accent transition"
-            >
-              공식 사이트 ↗
-            </a>
-          )}
-        </div>
+        <nav aria-label="용도별 러닝화" className="flex flex-wrap gap-2">
+          {grouped.map(({ category }) => <a key={category} href={`#category-${category}`} className="rounded border border-border px-3 py-2 text-sm">{category}</a>)}
+        </nav>
       </header>
 
-      {topTechnologies.length > 0 && (
-        <section className="space-y-3">
-          <h2 className="text-xl font-semibold text-primary">핵심 기술</h2>
-          <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-            {topTechnologies.map((t) => (
-              <li
-                key={t.id}
-                className="p-4 bg-white border border-border rounded-[4px]"
-              >
-                <div className="font-semibold text-primary">
-                  {t.name}
-                  {t.nameKo && (
-                    <span className="text-tertiary text-sm ml-1">{t.nameKo}</span>
-                  )}
-                </div>
-                <p className="text-sm text-secondary mt-1 line-clamp-2">
-                  {t.description}
-                </p>
-              </li>
-            ))}
-          </ul>
-        </section>
-      )}
 
       {grouped.map(({ category, shoes }) => (
-        <section key={category} className="space-y-4">
+        <section key={category} id={`category-${category}`} className="scroll-mt-20 space-y-4">
           <h2 className="text-xl font-semibold text-primary border-l-4 border-accent pl-3">
             {category} ({shoes.length})
           </h2>
@@ -192,7 +151,7 @@ export default async function BrandDetailPage({ params }: PageProps) {
                     className="flex-shrink-0 w-20 h-20 relative bg-surface rounded"
                   >
                     <Image
-                      src={img(shoe.image)}
+                      src={shoeThumbnail(shoe.image)}
                       alt={`${shoe.brand} ${shoe.name}`}
                       fill
                       sizes="80px"
@@ -238,6 +197,55 @@ export default async function BrandDetailPage({ params }: PageProps) {
           </ol>
         </section>
       ))}
+
+      <details className="space-y-4">
+        <summary className="cursor-pointer py-3 font-semibold">브랜드 소개와 핵심 기술</summary>
+        <p className="text-secondary leading-relaxed">{brand.description}</p>
+        <div className="flex flex-wrap gap-2">
+          {hasTechnologyPage && (
+            <Link
+              href={`/brands/${brand.id}/technology`}
+              className="inline-block px-4 py-2 bg-white border border-border text-sm text-primary rounded hover:border-accent transition"
+            >
+              {brand.name} 기술 가이드 →
+            </Link>
+          )}
+          {brand.website && (
+            <a
+              href={brand.website}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block px-4 py-2 bg-white border border-border text-sm text-primary rounded hover:border-accent transition"
+            >
+              공식 사이트 ↗
+            </a>
+          )}
+        </div>
+      {topTechnologies.length > 0 && (
+        <section className="space-y-3">
+          <h2 className="text-xl font-semibold text-primary">핵심 기술</h2>
+          <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            {topTechnologies.map((t) => (
+              <li
+                key={t.id}
+                className="p-4 bg-white border border-border rounded-[4px]"
+              >
+                <div className="font-semibold text-primary">
+                  {t.name}
+                  {t.nameKo && (
+                    <span className="text-tertiary text-sm ml-1">{t.nameKo}</span>
+                  )}
+                </div>
+                <p className="text-sm text-secondary mt-1 line-clamp-2">
+                  {t.description}
+                </p>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
+      </details>
 
       <section className="bg-surface rounded-[4px] p-6">
         <h2 className="text-base font-semibold text-primary mb-2">

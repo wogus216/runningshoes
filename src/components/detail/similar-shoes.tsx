@@ -9,7 +9,7 @@ import { formatManwon, formatWon } from '@/lib/format';
 import type { Shoe } from '@/types/shoe';
 import type { Route } from 'next';
 import { cn } from '@/lib/utils';
-import { img } from '@/lib/image';
+import { shoeThumbnail } from '@/lib/shoe-thumbnail';
 
 type SimilarShoesProps = {
   currentShoe: Shoe;
@@ -127,7 +127,7 @@ export const SimilarShoes = memo(function SimilarShoes({ currentShoe, similarSho
           <div className="w-14 h-14 bg-white rounded-[4px] flex items-center justify-center flex-shrink-0 overflow-hidden">
             {currentShoe.image ? (
               <Image
-                src={img(currentShoe.image)}
+                src={shoeThumbnail(currentShoe.image)}
                 alt={currentShoe.name}
                 width={56}
                 height={56}
@@ -169,7 +169,7 @@ export const SimilarShoes = memo(function SimilarShoes({ currentShoe, similarSho
               <div className="w-14 h-14 bg-white rounded-[4px] flex items-center justify-center flex-shrink-0 overflow-hidden">
                 {shoe.image ? (
                   <Image
-                    src={img(shoe.image)}
+                    src={shoeThumbnail(shoe.image)}
                     alt={shoe.name}
                     width={56}
                     height={56}
