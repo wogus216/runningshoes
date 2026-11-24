@@ -16,6 +16,7 @@ import { AtAGlance } from '@/components/detail/at-a-glance';
 import { EditorComment } from '@/components/detail/editor-comment';
 import { CoreBoxes } from '@/components/detail/core-boxes';
 import { ShoeDetailTabs } from '@/components/detail/shoe-detail-tabs';
+import { ShoePriceEvidence } from '@/components/detail/shoe-price-evidence';
 import { MobileQuickActions } from '@/components/detail/mobile-quick-actions';
 import { PurchaseLinks } from '@/components/detail/purchase-links';
 import { ShoeCrossLinks } from '@/components/pseo/shoe-cross-links';
@@ -143,8 +144,10 @@ export async function generateMetadata({ params }: ShoeDetailPageProps): Promise
     other: {
       'article:author': SITE_NAME,
       'article:section': shoe.category,
-      'product:price:amount': shoe.price?.toString() || '',
-      'product:price:currency': 'KRW',
+      ...(shoe.price && {
+        'product:price:amount': shoe.price.toString(),
+        'product:price:currency': 'KRW',
+      }),
       'product:brand': shoe.brand,
     },
   };
@@ -325,6 +328,7 @@ export default async function ShoeDetailPage({ params }: ShoeDetailPageProps) {
             <p className="text-secondary">이 신발의 상세 정보는 곧 업데이트될 예정입니다.</p>
           </div>
         )}
+        {!hasCompleteData && shoe.priceCheck && <ShoePriceEvidence check={shoe.priceCheck} />}
 
         {/*
           구매처/최저가 + 제휴 고지.

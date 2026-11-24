@@ -9,6 +9,7 @@ import { ValueAnalysis, type ResolvedAlternative } from '@/components/detail/val
 import { PurchaseLinks } from '@/components/detail/purchase-links';
 import { ReviewsSection } from '@/components/detail/reviews-section';
 import { SimilarShoes } from '@/components/detail/similar-shoes';
+import { ShoePriceEvidence } from '@/components/detail/shoe-price-evidence';
 import { cn } from '@/lib/utils';
 import type { Shoe } from '@/types/shoe';
 import type { SimilarShoeInfo } from '@/lib/data/shoes';
@@ -100,19 +101,7 @@ export function ShoeDetailTabs({ shoe, similarShoesData, resolvedAlternatives }:
         </div>
 
         <div className={activeTab === 'price' ? '' : 'hidden'}>
-          {shoe.priceCheck && (
-            <div className="border border-border bg-white p-5 text-sm leading-relaxed text-secondary md:p-6">
-              {shoe.priceCheck.amount !== undefined && (
-                <p className="mb-2 font-semibold text-primary">
-                  {shoe.priceCheck.kind === 'official-listing' ? '공식몰 표시가' : shoe.priceCheck.kind === 'retailer' ? '판매점 기준가' : '과거 확인 금액'} {shoe.priceCheck.amount.toLocaleString('ko-KR')}원
-                </p>
-              )}
-              <p>{shoe.priceCheck.note}</p>
-              <a href={shoe.priceCheck.url} target="_blank" rel="noopener noreferrer" className="mt-2 inline-block underline underline-offset-4">
-                가격 확인 근거 · {shoe.priceCheck.checkedAt}
-              </a>
-            </div>
-          )}
+          {shoe.priceCheck && <ShoePriceEvidence check={shoe.priceCheck} />}
           {shoe.priceAnalysis && (shoe.price || shoe.priceAnalysis.msrp || shoe.priceAnalysis.streetPrice || shoe.priceAnalysis.valueAdvantages?.length || resolvedAlternatives?.some(alternative => alternative.slug)) && (
             <div className="border border-border bg-white p-5 md:p-6">
               <ValueAnalysis
