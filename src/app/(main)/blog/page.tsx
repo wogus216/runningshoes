@@ -14,63 +14,16 @@ export const metadata: Metadata = {
 export default function BlogPage() {
   const allPosts = getPostsCardMeta();
   const archivePosts = allPosts.slice(BLOG_PAGE_SIZE);
-  const featuredCount = allPosts.filter((post) => post.featured).length;
-  const blogStats = [
-    { label: '전체 글', value: `${allPosts.length}+` },
-    { label: '추천 글', value: `${featuredCount}` },
-    { label: '주제', value: '가이드' },
-  ];
-
   return (
-    <div className="space-y-8">
-      <section className="relative overflow-hidden rounded-[4px] border border-[var(--accent-line)] bg-white px-5 py-6 md:px-8 md:py-8">
-        <div className="pointer-events-none absolute inset-0">
-        </div>
-
-        <div className="relative grid gap-6 lg:grid-cols-[1.15fr_0.85fr] lg:items-end">
-          <div className="space-y-5">
-            <div className="flex flex-wrap gap-2">
-              {blogStats.map((item) => (
-                <span
-                  key={item.label}
-                  className="inline-flex items-center gap-2 rounded-full border border-stone-900/10 bg-white/70 px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.22em] text-slate-600 backdrop-blur"
-                >
-                  <span className="text-slate-950">{item.value}</span>
-                  {item.label}
-                </span>
-              ))}
-            </div>
-            <div className="space-y-3">
-              <p className="text-[11px] font-semibold uppercase tracking-[0.32em] text-sky-700">Editorial Notes</p>
-              <h1 className="break-keep text-balance text-4xl font-black leading-[0.92] tracking-tight text-slate-950 md:text-5xl">
-                러닝을 오래 가게 만드는 정보만.
-              </h1>
-              <p className="max-w-2xl break-keep text-sm leading-7 text-slate-600 md:text-base">
-                러닝화 선택, 부상 예방, 훈련 팁, 신제품 흐름까지 읽기 좋게 정리한 편집형 가이드 섹션입니다.
-              </p>
-            </div>
-          </div>
-
-          <div className="grid gap-3 sm:grid-cols-2">
-            <div className="rounded-[4px] border border-sky-100 bg-white/86 p-4">
-              <p className="text-sm font-semibold text-slate-950">선택 가이드</p>
-              <p className="mt-2 text-xs leading-6 text-slate-600">입문자부터 서브3까지, 지금 필요한 내용부터 빠르게 읽게 구성했습니다.</p>
-            </div>
-            <div className="relative overflow-hidden rounded-[4px] border border-border bg-[var(--navy)] p-4 text-white before:absolute before:inset-x-0 before:top-0 before:h-1.5 before:bg-[repeating-linear-gradient(90deg,var(--accent)_0px,var(--accent)_18px,transparent_18px,transparent_26px)] before:content-['']">
-              <p className="text-sm font-semibold">읽기 중심</p>
-              <p className="mt-2 text-xs leading-6 text-white/65">카드도 더 가볍고 빠르게 훑을 수 있게 밀도를 다시 잡았습니다.</p>
-            </div>
-          </div>
-        </div>
-      </section>
+    <div className="space-y-5">
+      <h1 className="text-3xl font-black tracking-tight text-primary md:text-4xl">러닝 블로그</h1>
 
       <BlogList initialPosts={allPosts.slice(0, BLOG_PAGE_SIZE)} totalCount={allPosts.length} />
 
       {/* 전체 글 아카이브 — 크롤러/탐색용 경량 링크 목록 (카드로 렌더하지 않아 HTML 비용 최소) */}
       {archivePosts.length > 0 && (
-        <section className="rounded-[4px] border border-[var(--accent-line)] bg-white/82 p-6">
-          <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-sky-700">Archive</p>
-          <h2 className="mt-2 text-lg font-bold text-slate-950">전체 글 목록</h2>
+        <details className="rounded border border-border bg-white p-4">
+          <summary className="cursor-pointer font-bold">이전 글 목록 ({archivePosts.length})</summary>
           <ul className="mt-4 grid gap-x-8 gap-y-2 sm:grid-cols-2">
             {archivePosts.map((post) => (
               <li key={post.id} className="flex items-baseline gap-2 text-sm leading-6">
@@ -81,7 +34,7 @@ export default function BlogPage() {
               </li>
             ))}
           </ul>
-        </section>
+        </details>
       )}
     </div>
   );

@@ -176,46 +176,19 @@ export default async function GelDetailPage({ params }: GelDetailPageProps) {
         {/* Hero Section */}
         <HeroSection gel={gel} />
 
-        {/* 핵심 특징 박스 */}
-        <div className="grid md:grid-cols-3 gap-3">
-          {/* 추천 대상 */}
-          <div className="section-card border border-sky-200 bg-sky-50/70 p-4">
-            <h3 className="mb-2 text-sm font-bold text-sky-700">계획할 때 확인</h3>
-            <ul className="space-y-1.5">
-              {gel.usageGuide.bestFor.slice(0, 4).map((item, i) => (
-                <li key={i} className="text-sm text-secondary flex items-start gap-1.5">
-                  <span className="mt-0.5 text-sky-700">✓</span>
-                  {item}
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* 비추천 대상 */}
-          <div className="section-card border border-rose-200 bg-rose-50/80 p-4">
-            <h3 className="mb-2 text-sm font-bold text-rose-600">개별 확인이 필요한 경우</h3>
-            <ul className="space-y-1.5">
-              {gel.usageGuide.avoidIf.slice(0, 4).map((item, i) => (
-                <li key={i} className="text-sm text-secondary flex items-start gap-1.5">
-                  <span className="mt-0.5 text-rose-600">✕</span>
-                  {item}
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* 핵심 특징 */}
-          <div className="section-card border border-[var(--accent-line)] bg-white/84 p-4">
-            <h3 className="mb-2 text-sm font-bold text-sky-700">핵심 특징</h3>
-            <ul className="space-y-1.5">
-              {gel.features.slice(0, 4).map((feature, i) => (
-                <li key={i} className="text-sm text-secondary flex items-start gap-1.5">
-                  <span className="mt-0.5 text-sky-700">→</span>
-                  {feature}
-                </li>
-              ))}
-            </ul>
-          </div>
+        <div className="divide-y divide-border rounded border border-border bg-white px-4">
+          {[
+            { title: '개별 확인이 필요한 경우', items: gel.usageGuide.avoidIf },
+            { title: '계획할 때 확인', items: gel.usageGuide.bestFor },
+            { title: '핵심 특징', items: gel.features },
+          ].filter(group => group.items.length > 0).map(group => (
+            <details key={group.title}>
+              <summary className="cursor-pointer py-3 text-sm font-semibold text-primary">{group.title}</summary>
+              <ul className="list-disc space-y-2 pb-4 pl-5 text-sm leading-relaxed text-secondary">
+                {group.items.map((item, i) => <li key={i}>{item}</li>)}
+              </ul>
+            </details>
+          ))}
         </div>
 
         {/* 탭 기반 상세 정보 */}

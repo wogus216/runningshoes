@@ -56,16 +56,15 @@ export function GelDetailTabs({ gel, similarGelsData }: GelDetailTabsProps) {
     <div className="space-y-4">
       {/* 탭 네비게이션 */}
       <div className="sticky top-14 z-40 overflow-hidden rounded-[4px] border border-sky-950/20 bg-[rgba(8,18,38,0.92)] backdrop-blur-xl">
-        <div className="mb-2 px-4 pt-3">
-          <p className="text-[11px] font-semibold uppercase tracking-[0.28em] text-sky-100/45">Gel Panel</p>
-        </div>
-        <div className="flex overflow-x-auto scrollbar-hide">
+        <div role="group" aria-label="젤 상세 항목" className="flex overflow-x-auto">
           {tabs.filter((tab) => tab.id !== 'price' || gel.priceAnalysis).map((tab) => (
             <button
               key={tab.id}
+              aria-label={tab.label}
+              aria-pressed={activeTab === tab.id}
               onClick={() => setActiveTab(tab.id)}
               className={cn(
-                "whitespace-nowrap rounded-full px-3 py-2.5 text-xs font-medium transition md:px-5 md:py-3 md:text-sm",
+                "min-h-11 whitespace-nowrap rounded-full px-3 py-2.5 text-xs font-medium transition md:px-5 md:py-3 md:text-sm",
                 activeTab === tab.id
                   ? "bg-white text-slate-950"
                   : "text-white/60 hover:bg-white/8 hover:text-white"
@@ -263,7 +262,7 @@ export function GelDetailTabs({ gel, similarGelsData }: GelDetailTabsProps) {
               >
                 {/* 이미지 */}
                 {similarGel.image ? (
-                  <div className="mb-3 flex aspect-square items-center justify-center overflow-hidden rounded-[4px] bg-[linear-gradient(180deg,rgba(255,255,255,0.96),rgba(247,244,237,0.88))]">
+                  <div className="mb-3 flex h-24 sm:h-auto sm:aspect-square items-center justify-center overflow-hidden rounded-[4px] bg-[linear-gradient(180deg,rgba(255,255,255,0.96),rgba(247,244,237,0.88))]">
                     <Image
                       src={img(similarGel.image)}
                       alt={`${similarGel.brand} ${similarGel.name}`}
@@ -273,7 +272,7 @@ export function GelDetailTabs({ gel, similarGelsData }: GelDetailTabsProps) {
                     />
                   </div>
                 ) : (
-                  <div className="mb-3 flex aspect-square items-center justify-center rounded-[4px] bg-[linear-gradient(180deg,rgba(255,255,255,0.96),rgba(247,244,237,0.88))]">
+                  <div className="mb-3 flex h-24 sm:h-auto sm:aspect-square items-center justify-center rounded-[4px] bg-[linear-gradient(180deg,rgba(255,255,255,0.96),rgba(247,244,237,0.88))]">
                     <span className="text-4xl opacity-20">⚡</span>
                   </div>
                 )}

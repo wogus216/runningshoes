@@ -193,6 +193,8 @@ export default async function MarathonDetailPage({ params }: MarathonDetailPageP
   // (배지의 상태 판정은 bands.ts displayStatusOf — 마감일이 지났는데 접수중·접수예정이면 '마감', 연기는 먼저 알린다).
   const registrationClosed = bandOf(event, buildDate) === 'closed';
   const registrationNeedsCheck = bandOf(event, buildDate) === 'entry-checking';
+  const showsRegistrationWindow = !event.scheduleUnverified && !registrationClosed && !registrationNeedsCheck
+    && (event.status === '접수중' || event.status === '접수예정');
 
   // JSON-LD: SportsEvent (enriched)
   const jsonLd: Record<string, unknown> = {
@@ -300,7 +302,7 @@ export default async function MarathonDetailPage({ params }: MarathonDetailPageP
         </nav>
 
         {/* 히어로 섹션 */}
-        <div className={`section-card border border-[var(--accent-line)] bg-white/88 p-6 ${event.isMajor ? 'ring-2 ring-sky-200' : ''}`}>
+        <div className={`section-card border border-[var(--accent-line)] bg-white/88 p-4 sm:p-6 ${event.isMajor ? 'ring-2 ring-sky-200' : ''}`}>
           <div className="flex flex-wrap items-center gap-2 mb-4">
             {event.isMajor && (
               <span className="inline-flex items-center gap-1 rounded bg-[var(--navy)] px-2 py-1 text-xs font-bold text-white">
@@ -321,7 +323,7 @@ export default async function MarathonDetailPage({ params }: MarathonDetailPageP
             방문자는 대회 정보를 확인하러 오지 대회 소개를 읽으러 오지 않는다 —
             같은 날 실측에서 마라톤 진입 세션의 88.8%가 이 페이지 하나만 보고 나갔다.
           */}
-          <dl className="grid gap-2.5 text-secondary sm:grid-cols-2">
+          <div className="grid gap-2.5 text-secondary sm:grid-cols-2">
             <div className="flex items-center gap-2">
               <Calendar className="h-5 w-5 shrink-0 text-sky-700" />
               <span className="font-medium text-primary">{event.scheduleUnverified && '참고 일정 · '}{formatDateKo(event.date, { weekday: true })}{event.postponed && ' → 일정 연기(새 날짜 미정)'}</span>
@@ -330,6 +332,19 @@ export default async function MarathonDetailPage({ params }: MarathonDetailPageP
               <MapPin className="h-5 w-5 shrink-0 text-sky-700" />
               <span>{event.location}</span>
             </div>
+          </div>
+          {event.website && (
+            <a
+              href={event.website}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="my-3 inline-flex min-h-11 items-center gap-1.5 rounded-full bg-[var(--navy)] px-4 py-2 text-sm font-medium text-white transition hover:bg-[var(--navy-soft)]"
+            >
+              <ExternalLink className="h-4 w-4" />
+              대회 공식 사이트
+            </a>
+          )}
+          <div className="grid gap-2 text-sm text-secondary sm:grid-cols-2">
             {event.distances.length > 0 && (
               <div className="flex items-center gap-2">
                 <Route className="h-5 w-5 shrink-0 text-sky-700" />
@@ -365,15 +380,12 @@ export default async function MarathonDetailPage({ params }: MarathonDetailPageP
               registrationNote 에 공식 표기를 그대로 담아 '미확인' 대신 보여준다.
               확인했는데 날짜가 없는 것과 확인 안 한 것은 다른 상태다.
             */}
-            {!event.scheduleUnverified && !registrationClosed && !registrationNeedsCheck && (event.status === '접수중' || event.status === '접수예정') && (
+            {showsRegistrationWindow && (
               <div className="flex items-start gap-2">
                 <Timer className="mt-0.5 h-5 w-5 shrink-0 text-sky-700" />
                 {event.registrationEnd ? (
                   <span>
                     접수 <span className="font-medium text-primary">{formatDateKo(event.registrationEnd, { weekday: true })}</span> 마감
-                    {event.registrationNote && (
-                      <span className="mt-1 block text-sm leading-relaxed">{event.registrationNote.replace(/\*\*/g, '')}</span>
-                    )}
                   </span>
                 ) : event.registrationNote ? (
                   <span className="font-medium text-primary">{event.registrationNote}</span>
@@ -390,7 +402,6 @@ export default async function MarathonDetailPage({ params }: MarathonDetailPageP
                 <Timer className="mt-0.5 h-5 w-5 shrink-0 text-sky-700" />
                 <div>
                   <span className="font-medium text-primary">현재 접수 가능 여부 미확인</span>
-                  {event.registrationNote && <p className="mt-1 text-sm leading-relaxed">{event.registrationNote}</p>}
                 </div>
               </div>
             )}
@@ -407,13 +418,16 @@ export default async function MarathonDetailPage({ params }: MarathonDetailPageP
                   {event.registrationEnd && (
                     <span> · {formatDateKo(event.registrationEnd, { weekday: true })}까지</span>
                   )}
-                  {event.registrationNote && (
-                    <p className="mt-1 text-sm leading-relaxed">{event.registrationNote.replace(/\*\*/g, '')}</p>
-                  )}
                 </div>
               </div>
             )}
-          </dl>
+          </div>
+          {event.registrationNote && (registrationClosed || registrationNeedsCheck || (showsRegistrationWindow && event.registrationEnd)) && (
+            <details className="mt-2 border-t border-border text-sm">
+              <summary className="cursor-pointer py-3 font-medium text-primary">접수 조건과 유의사항</summary>
+              <p className="leading-relaxed text-secondary">{event.registrationNote.replace(/\*\*/g, '')}</p>
+            </details>
+          )}
           {event.postRaceNote && (
             <div className="mt-4 space-y-1 text-sm leading-relaxed">
               <p className="font-medium text-primary">대회 후 안내</p>
@@ -441,38 +455,15 @@ export default async function MarathonDetailPage({ params }: MarathonDetailPageP
             </p>
           )}
 
-          {/* 설명은 핵심 정보 아래로. 앞 2문장만 펼쳐 두고 나머지는 접는다 */}
           {sentences.length > 0 && (
-            <div className="mt-4 space-y-2 text-sm leading-relaxed text-secondary">
-              {sentences.slice(0, 2).map((s, i) => (
-                <p key={i}>{s}</p>
-              ))}
-              {sentences.length > 2 && (
-                <details>
-                  <summary className="cursor-pointer font-medium text-sky-700 hover:underline">
-                    접수·일정 자세히 ({sentences.length - 2}문장 더)
-                  </summary>
-                  <div className="mt-2 space-y-2">
-                    {sentences.slice(2).map((s, i) => (
-                      <p key={i}>{s}</p>
-                    ))}
-                  </div>
-                </details>
-              )}
-            </div>
+            <details className="mt-3 border-t border-border text-sm">
+              <summary className="cursor-pointer py-3 font-medium text-primary">대회 소개와 일정 안내</summary>
+              <div className="space-y-2 leading-relaxed text-secondary">
+                {sentences.map((sentence, i) => <p key={i}>{sentence}</p>)}
+              </div>
+            </details>
           )}
 
-          {event.website && (
-            <a
-              href={event.website}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-4 inline-flex items-center gap-1.5 rounded-full bg-[var(--navy)] px-4 py-2 text-sm font-medium text-white transition hover:bg-[var(--navy-soft)]"
-            >
-              <ExternalLink className="h-4 w-4" />
-              공식 사이트 바로가기
-            </a>
-          )}
           {event.factCheck && (
             <div className="mt-4 space-y-2 text-sm leading-relaxed text-secondary">
               <p className="font-medium text-primary">{event.scheduleUnverified ? '자료 점검' : '정보 확인'} · {formatDateKo(event.factCheck.checkedAt)}</p>

@@ -21,9 +21,9 @@ export function generateMetadata(): Metadata {
   };
 }
 
-const categoryDescriptions: Record<string, { emoji: string; desc: string }> = {
-  '젤 제품': { emoji: '🧴', desc: '제품별 성분 표시·맛·용량·카페인 변형을 구분하세요.' },
-  '식품군': { emoji: '🍽️', desc: '특정 제조사·제품이 정해지지 않은 안내입니다. 실제 구매한 제품의 표시를 확인하세요.' },
+const categoryDescriptions: Record<string, string> = {
+  '젤 제품': '같은 제품도 맛과 용량에 따라 성분이 달라집니다.',
+  '식품군': '제품별 성분은 구매한 포장 표시를 확인하세요.',
 };
 
 export default function GelsPage() {
@@ -52,13 +52,12 @@ export default function GelsPage() {
       />
 
       {/* 헤더 */}
-      <div className="text-center py-8">
-        <h1 className="text-3xl md:text-4xl font-bold text-primary mb-3">
+      <div className="py-2">
+        <h1 className="text-3xl font-bold text-primary">
           에너지 젤·보급식 정보
         </h1>
-        <p className="text-secondary max-w-2xl mx-auto">
-          젤 제품 {allGels.filter((gel) => !gel.isProductCategory).length}종과 식품군 안내를 구분했습니다.
-          제품별 성분·사진의 출처와 변형, 확인하지 못한 항목은 상세 페이지에서 확인하세요.
+        <p className="mt-2 text-sm text-secondary">
+          젤 제품 {allGels.filter((gel) => !gel.isProductCategory).length}종 · 식품군 안내 {allGels.filter((gel) => gel.isProductCategory).length}개
         </p>
       </div>
 
@@ -71,10 +70,9 @@ export default function GelsPage() {
         return (
           <section key={category} className="space-y-4">
             <div className="flex items-center gap-2">
-              <span className="text-2xl">{info?.emoji}</span>
               <div>
                 <h2 className="text-xl font-bold text-primary">{category}</h2>
-                <p className="text-sm text-secondary">{info?.desc}</p>
+                <p className="text-sm text-secondary">{info}</p>
               </div>
             </div>
 
@@ -83,10 +81,10 @@ export default function GelsPage() {
                 <Link
                   key={gel.slug}
                   href={`/gels/${gel.slug}`}
-                  className="section-card p-4 transition group"
+                  className="section-card group grid grid-cols-[5rem_minmax(0,1fr)] items-center gap-x-3 p-3 sm:block sm:p-4"
                 >
                   {/* 이미지 */}
-                  <div className="aspect-square bg-surface rounded-[4px] mb-3 flex items-center justify-center overflow-hidden">
+                  <div className="row-span-4 aspect-square bg-surface rounded-[4px] sm:mb-3 flex items-center justify-center overflow-hidden">
                     {gel.image ? (
                       <Image
                         src={img(gel.image)}

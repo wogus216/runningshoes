@@ -13,6 +13,12 @@ import { cn } from '@/lib/utils';
 import { shoeThumbnail } from '@/lib/shoe-thumbnail';
 import { recordCompare } from '@/lib/recent';
 
+const comparisonRows = [
+  { label: '정가', value: (s: CardShoe) => { const price = s.priceAnalysis?.msrp ?? s.price; return price ? price.toLocaleString('ko-KR') + '원' : '미확인'; } },
+  { label: '와이드', value: (s: CardShoe) => s.koreanFootFit?.wideOptions ? '옵션 확인' : '확인 필요' },
+  { label: '무게', value: (s: CardShoe) => s.specs?.weight ? s.specs.weight + 'g' : '미확인' },
+];
+
 // Suspense 래퍼를 두지 않는다. useSearchParams()를 쓰던 시절엔 정적 export에서
 // 페이지가 클라이언트 렌더로 이탈해 스켈레톤만 프리렌더됐다(본문 609자).
 // URL은 window.location으로 직접 읽어 셸이 정적 HTML로 남게 한다.
@@ -129,6 +135,12 @@ function ComparePageContent() {
     updateSelection(newShoes);
   };
 
+  const startReplacement = (slug: string) => {
+    setReplaceSlug(slug);
+    setShowSearch(true);
+    requestAnimationFrame(() => document.getElementById('compare-query')?.focus());
+  };
+
   const clearAll = () => {
     updateSelection([]);
   };
@@ -201,7 +213,31 @@ function ComparePageContent() {
           </div>
         </div>
 
-        <div className="max-w-full overflow-x-auto">
+        {selectedShoes.length > 2 && (
+          <ul aria-label="선택한 러닝화" className="grid grid-cols-2 gap-2 sm:hidden">
+            {selectedShoes.map(shoe => (
+              <li key={shoe.slug} className="relative flex min-w-0 flex-col items-center rounded border border-border px-2 pb-2 pt-9 text-center">
+                <button type="button" className="absolute right-0 top-0 grid h-11 w-11 place-items-center" onClick={() => removeShoe(shoe.id || shoe.slug)} aria-label={`${shoe.name} 비교에서 삭제`}>
+                  <X size={16} />
+                </button>
+                <div className="relative h-16 w-full">
+                  {shoe.image && <Image src={shoeThumbnail(shoe.image)} alt={shoe.name} fill sizes="(max-width: 639px) 42vw, 192px" className="object-contain object-center" />}
+                </div>
+                <span className="mt-2 text-xs text-secondary">{shoe.brand}</span>
+                <strong className="break-keep text-sm">{shoe.name}</strong>
+                <dl className="mt-auto w-full pt-3 text-xs">
+                  {comparisonRows.map(row => (
+                    <div key={row.label} className="flex flex-wrap justify-between gap-x-1 border-t border-border py-1">
+                      <dt className="text-secondary">{row.label}</dt><dd>{row.value(shoe)}</dd>
+                    </div>
+                  ))}
+                </dl>
+                {selectedShoes.length === 4 && <button type="button" className="min-h-11 w-full text-xs underline" onClick={() => startReplacement(shoe.slug)} aria-label={`${shoe.name} 교체`}>교체</button>}
+              </li>
+            ))}
+          </ul>
+        )}
+        <div className={cn('max-w-full overflow-x-auto', selectedShoes.length > 2 && 'hidden sm:block')}>
           <table className="w-full table-fixed text-center text-sm" style={{ minWidth: selectedShoes.length > 2 ? selectedShoes.length * 114 + 62 : undefined }}>
             <caption className="sr-only">선택한 모델의 정가, 와이드 옵션, 무게</caption>
             <thead><tr>
@@ -217,16 +253,12 @@ function ComparePageContent() {
                 </th>
               ))}
             </tr></thead>
-            <tbody>{[
-              { label: '정가', value: (s: CardShoe) => { const price = s.priceAnalysis?.msrp ?? s.price; return price ? price.toLocaleString('ko-KR') + '원' : '미확인'; } },
-              { label: '와이드', value: (s: CardShoe) => s.koreanFootFit?.wideOptions ? '옵션 확인' : '확인 필요' },
-              { label: '무게', value: (s: CardShoe) => s.specs?.weight ? s.specs.weight + 'g' : '미확인' },
-            ].map(row => <tr key={row.label} className="border-b border-border">
+            <tbody>{comparisonRows.map(row => <tr key={row.label} className="border-b border-border">
               <th scope="row" className="sticky left-0 bg-white py-3 text-left text-xs">{row.label}</th>
               {selectedShoes.map(shoe => <td key={shoe.slug}>{row.value(shoe)}</td>)}
             </tr>)}
             {selectedShoes.length === 4 && <tr><td />{selectedShoes.map(shoe => <td key={shoe.slug}>
-              <button type="button" className="min-h-11 underline" aria-label={`${shoe.name} 교체`} onClick={() => { setReplaceSlug(shoe.slug); setShowSearch(true); requestAnimationFrame(() => document.getElementById('compare-query')?.focus()); }}>교체</button>
+              <button type="button" className="min-h-11 underline" aria-label={`${shoe.name} 교체`} onClick={() => startReplacement(shoe.slug)}>교체</button>
             </td>)}</tr>}
             </tbody>
           </table>

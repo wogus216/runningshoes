@@ -50,13 +50,11 @@ export function BlogList({ initialPosts, totalCount }: BlogListProps) {
   return (
     <div className="space-y-6">
       <div className="rounded-[4px] border border-[var(--accent-line)] bg-white/82 p-3 backdrop-blur">
-        <div className="mb-3 px-2">
-          <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-sky-700">Category Filter</p>
-        </div>
-        <div className="flex items-center gap-1 overflow-x-auto scrollbar-hide">
+        <div role="group" aria-label="글 주제" className="flex items-center gap-1 overflow-x-auto">
         <button
+          aria-pressed={selectedCategory === 'all'}
           onClick={() => selectCategory('all')}
-          className={`rounded-[4px] px-4 py-2.5 text-sm font-semibold transition-colors relative ${
+          className={`shrink-0 rounded-[4px] px-3 py-3 text-sm font-semibold transition-colors relative ${
             selectedCategory === 'all'
               ? 'bg-[var(--navy)] text-background'
               : 'border border-border text-secondary hover:bg-[var(--accent-soft)] hover:text-primary'
@@ -67,8 +65,9 @@ export function BlogList({ initialPosts, totalCount }: BlogListProps) {
         {categoryOrder.map((category) => (
           <button
             key={category}
+            aria-pressed={selectedCategory === category}
             onClick={() => selectCategory(category)}
-            className={`rounded-[4px] px-4 py-2.5 text-sm font-semibold transition-colors relative ${
+            className={`shrink-0 rounded-[4px] px-3 py-3 text-sm font-semibold transition-colors relative ${
               selectedCategory === category
                 ? 'bg-[var(--navy)] text-background'
                 : 'border border-border text-secondary hover:bg-[var(--accent-soft)] hover:text-primary'
@@ -81,7 +80,7 @@ export function BlogList({ initialPosts, totalCount }: BlogListProps) {
       </div>
 
       {visiblePosts.length > 0 ? (
-        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 xl:grid-cols-3">
+        <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 xl:grid-cols-3">
           {visiblePosts.map((post) => (
             <BlogCard key={post.id} post={post} />
           ))}

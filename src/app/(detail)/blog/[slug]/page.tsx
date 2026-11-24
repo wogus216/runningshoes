@@ -182,53 +182,26 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         {/* 뒤로가기 */}
         <Link
           href="/blog"
-          className="inline-flex items-center gap-1.5 text-sm text-secondary hover:text-primary transition-colors mb-8"
+          className="inline-flex items-center gap-1.5 text-sm text-secondary hover:text-primary transition-colors mb-3"
         >
           <ChevronLeft className="w-4 h-4" />
           목록으로
         </Link>
 
-        {/* Velog 스타일 헤더 - 카드 래퍼 없음 */}
-        <header className="mb-8">
-          {/* 제목 */}
-          <div className="mb-6">
-            <h1 className="text-4xl lg:text-[2.75rem] font-extrabold text-gray-900 leading-tight">
-              {post.raceMeta?.displayTitle ?? post.title}
-            </h1>
-            {post.raceMeta?.displaySubtitle && (
-              <p className="race-subtitle">{post.raceMeta.displaySubtitle}</p>
-            )}
-          </div>
-
-          {/* 작성자 · 날짜 */}
-          <div className="flex items-center gap-2 text-base text-gray-500 mb-4">
-            <span className="font-semibold text-gray-900">{post.author}</span>
-            <span className="text-gray-300">&middot;</span>
-            <span>{publishDate}</span>
-          </div>
-
-          {/* 태그 - Velog 스타일 teal pill */}
-          <div className="flex flex-wrap gap-2">
-            <span className="px-3 py-1.5 text-sm font-medium rounded-full bg-[var(--positive-soft)] text-positive">
-              {categoryLabels[post.category]}
-            </span>
-            {post.tags.map((tag) => (
-              <span
-                key={tag}
-                className="px-3 py-1.5 text-sm rounded-full bg-gray-100 text-gray-600"
-              >
-                {tag}
-              </span>
-            ))}
-          </div>
+        <header className="mb-5 space-y-3">
+          <p className="text-xs font-medium text-secondary">{categoryLabels[post.category]} · {publishDate} · {post.author}</p>
+          <h1 className="break-keep text-[1.65rem] font-extrabold leading-tight text-primary sm:text-4xl">
+            {post.raceMeta?.displayTitle ?? post.title}
+          </h1>
+          {post.raceMeta?.displaySubtitle && <p className="race-subtitle">{post.raceMeta.displaySubtitle}</p>}
+          {post.description && post.description !== post.raceMeta?.displaySubtitle && (
+            <p className="border-l-2 border-accent pl-3 text-base leading-relaxed text-secondary">{post.description}</p>
+          )}
         </header>
-
-        {/* 구분선 */}
-        <hr className="border-gray-200 mb-10" />
 
         {/* 히어로 이미지 */}
         {post.thumbnail && (
-          <figure className="-mx-4 mb-10 sm:mx-0">
+          <figure className="mb-5 sm:mb-8">
             <div className="relative aspect-[1200/630] overflow-hidden rounded-[4px]">
               <Image
                 src={img(post.thumbnail)}
@@ -237,7 +210,6 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                 priority
                 sizes="(max-width: 640px) calc(100vw - 2rem), 768px"
                 className="object-cover"
-                style={{ borderRadius: '28px', boxShadow: 'none' }}
               />
             </div>
             {post.thumbnailSource && (
@@ -319,6 +291,8 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
             </div>
           );
         })()}
+
+        {post.tags.length > 0 && <p className="my-5 text-sm leading-relaxed text-secondary">{post.tags.map(tag => `#${tag}`).join('  ')}</p>}
 
         {/* FAQ 섹션 (faqs 데이터 있을 때만) */}
         {post.faqs && post.faqs.length > 0 && <FaqSection faqs={post.faqs} />}
