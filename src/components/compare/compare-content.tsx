@@ -243,7 +243,7 @@ function ComparePageContent() {
             <thead><tr>
               <td className="w-14" />
               {selectedShoes.map(shoe => (
-                <th key={shoe.slug} scope="col" className="px-1 align-bottom">
+                <th key={shoe.slug} scope="col" className="px-1 align-top">
                   <div className="flex h-11 justify-end">
                     <button className="flex h-11 w-11 items-center justify-center" onClick={() => removeShoe(shoe.id || shoe.slug)} aria-label={`${shoe.name} 비교에서 삭제`}><X size={16} /></button>
                   </div>

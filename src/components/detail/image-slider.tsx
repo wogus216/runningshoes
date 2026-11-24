@@ -5,12 +5,26 @@ import Image from 'next/image';
 import { ChevronLeft, ChevronRight, ShoppingBag } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { img } from '@/lib/image';
+import { shoeThumbnail } from '@/lib/shoe-thumbnail';
 
 type ImageSliderProps = {
   images?: string[];
   alt: string;
   autoPlayInterval?: number;
 };
+
+function GalleryPhoto({ image, alt, first }: { image: string; alt: string; first: boolean }) {
+  const original = img(image);
+  const mobile = first ? shoeThumbnail(image) : original;
+  return (
+    <picture>
+      {mobile !== original && <source media="(max-width: 639px)" srcSet={mobile} />}
+      <Image src={original} alt={alt} fill sizes="(max-width: 768px) 100vw, 50vw"
+        className="object-contain p-6 md:p-8" loading={first ? 'eager' : 'lazy'}
+        fetchPriority={first ? 'high' : undefined} />
+    </picture>
+  );
+}
 
 export function ImageSlider({ images, alt, autoPlayInterval = 3000 }: ImageSliderProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -106,14 +120,7 @@ export function ImageSlider({ images, alt, autoPlayInterval = 3000 }: ImageSlide
   if (images.length === 1) {
     return (
       <div className="relative aspect-square overflow-hidden rounded-[2px] bg-[var(--surface-strong)]">
-        <Image
-          src={img(images[0])}
-          alt={alt}
-          fill
-          sizes="(max-width: 768px) 100vw, 50vw"
-          className="object-contain p-6 md:p-8"
-          priority
-        />
+        <GalleryPhoto image={images[0]} alt={alt} first />
       </div>
     );
   }
@@ -135,14 +142,7 @@ export function ImageSlider({ images, alt, autoPlayInterval = 3000 }: ImageSlide
       >
         {images.map((image, index) => (
           <div key={index} className="min-w-full h-full relative">
-            <Image
-              src={img(image)}
-              alt={`${alt} - ${index + 1}`}
-              fill
-              sizes="(max-width: 768px) 100vw, 50vw"
-              className="object-contain p-6 md:p-8"
-              priority={index === 0}
-            />
+            <GalleryPhoto image={image} alt={`${alt} - ${index + 1}`} first={index === 0} />
           </div>
         ))}
       </div>

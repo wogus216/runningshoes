@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { shoeThumbnail } from '@/lib/shoe-thumbnail';
 import { track } from '@/lib/analytics';
 import { readResume, clearResume, type ResumeData } from '@/lib/recent';
 import sectionStyles from './home-section.module.css';
@@ -90,7 +91,7 @@ export function ResumeSection({ validSlugs, questionCount }: ResumeSectionProps)
             >
               <span className={styles.thumb}>
                 {shoe.image && (
-                  <Image src={shoe.image} alt="" width={56} height={40} aria-hidden="true" />
+                  <Image src={shoeThumbnail(shoe.image)} alt="" width={56} height={40} aria-hidden="true" />
                 )}
               </span>
               <span>
@@ -114,7 +115,7 @@ export function ResumeSection({ validSlugs, questionCount }: ResumeSectionProps)
                   .slice(0, 2)
                   .map((s) =>
                     s.image ? (
-                      <Image key={s.slug} src={s.image} alt="" width={40} height={30} aria-hidden="true" />
+                      <Image key={s.slug} src={shoeThumbnail(s.image)} alt="" width={40} height={30} aria-hidden="true" />
                     ) : null,
                   )}
               </span>

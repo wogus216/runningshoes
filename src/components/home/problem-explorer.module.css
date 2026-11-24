@@ -137,8 +137,9 @@
 }
 
 .thumbs {
-  display: flex;
-  align-items: flex-end;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: start;
   gap: 26px;
   margin-top: auto;
   padding-top: 20px;
@@ -155,11 +156,12 @@
   gap: 8px;
 }
 .thumb img {
-  max-height: 100px;
-  width: auto;
+  width: min(100%, 120px);
+  height: 70px;
+  object-fit: contain;
   transition: transform 0.2s;
 }
-.thumb:hover img { transform: translateX(3px) rotate(-2deg); }
+.thumb:hover img { transform: scale(1.03); }
 /* 신발 이름은 한글이 섞이므로 본문 서체를 쓴다(스펙 §3 — mono 는 수치·라벨 전용) */
 .thumb span {
   font-size: 11px;
@@ -275,5 +277,5 @@
   .mid2 .c { min-height: 0; }
   /* 썸네일은 좁은 화면에서 간격을 줄인다 — 3개가 한 줄에 남아야 한다 */
   .thumbs { gap: 14px; min-height: 104px; }
-  .thumb img { max-height: 78px; }
+  .thumb img { height: 52px; }
 }

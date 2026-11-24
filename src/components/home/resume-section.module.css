@@ -97,9 +97,9 @@
   max-height: 40px;
   width: auto;
 }
-/* 비교 카드 — 두 켤레를 겹쳐 보여준다 */
+/* 두 장이 썸네일 칸을 벗어나지 않도록 같은 폭으로 나눈다. */
 .thumb.dbl { gap: 2px; }
-.thumb.dbl img { max-height: 30px; }
+.thumb.dbl img { width: calc((100% - 2px) / 2); height: 30px; object-fit: contain; }
 
 /* 추천 카드 — 이미지가 없으므로 문항 수를 수치로 세운다 */
 .badge {

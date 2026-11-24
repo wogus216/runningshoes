@@ -3,6 +3,7 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { shoeThumbnail } from '@/lib/shoe-thumbnail';
 import { track } from '@/lib/analytics';
 import { balancedByCategory } from '@/lib/home/index-sort';
 import type { GridShoe } from '@/lib/data/shoes';
@@ -74,7 +75,7 @@ function Row({
     >
       <span className={styles.rowTh}>
         {shoe.image ? (
-          <Image src={shoe.image} alt="" width={62} height={40} aria-hidden="true" />
+          <Image src={shoeThumbnail(shoe.image)} alt="" width={62} height={40} aria-hidden="true" />
         ) : (
           <span className={styles.rowMark} aria-hidden="true" />
         )}

@@ -1,4 +1,5 @@
 import { getMatrixBySlug, getMatrixShoes, BEST_PAGE_SHOE_LIMIT } from '@/lib/pseo/matrices';
+import { shoeThumbnail } from '@/lib/shoe-thumbnail';
 import { PROBLEMS } from './problems';
 
 /**
@@ -57,10 +58,7 @@ export function getProblemData(): ProblemData {
         .slice(0, LEAD_THUMB_COUNT)
         .map((s) => {
           const image = s.image as string;
-          const thumb = image.endsWith('/side.webp')
-            ? image.replace(/\/side\.webp$/, '/thumb.webp')
-            : image.replace(/\.webp$/, '-thumb.webp');
-          return { slug: s.slug, brand: s.brand, name: s.name, image, thumb };
+          return { slug: s.slug, brand: s.brand, name: s.name, image, thumb: shoeThumbnail(image) };
         });
     }
   }
