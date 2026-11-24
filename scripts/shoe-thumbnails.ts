@@ -1,96 +1,107 @@
-import { mkdir, writeFile } from 'node:fs/promises';
+import { mkdir, readFile, readdir, writeFile } from 'node:fs/promises';
+import { createHash } from 'node:crypto';
 import path from 'node:path';
 import sharp from 'sharp';
+import { removeBackground } from '@imgly/background-removal-node';
 import { shoes } from '../src/lib/data/shoes';
-import { thumbnailPath } from '../src/lib/shoe-thumbnail-path';
+import { thumbnailPath, cutoutPath } from '../src/lib/shoe-thumbnail-path';
 
-// A high collar can center the bounding box while leaving most of the shoe below it.
-// Fill the silhouette between its upper and sole so white mesh counts as part of the shoe.
-async function studioOffset(trimmed: Buffer) {
-  const { data, info } = await sharp(trimmed)
-    .resize(120, 68, { fit: 'contain', background: '#fff' }).removeAlpha().raw().toBuffer({ resolveWithObject: true });
-  let area = 0;
-  let sumX = 0;
-  let sumY = 0;
-  for (let x = 0; x < info.width; x++) {
-    let top = info.height;
-    let bottom = -1;
-    for (let y = 0; y < info.height; y++) {
-      const i = (y * info.width + x) * info.channels;
-      if (Math.min(data[i], data[i + 1], data[i + 2]) >= 232) continue;
+const transparent = { r: 0, g: 0, b: 0, alpha: 0 };
+
+async function trimSilhouette(pixels: Buffer) {
+  const { data, info } = await sharp(pixels).extractChannel('alpha').raw().toBuffer({ resolveWithObject: true });
+  let left = info.width;
+  let right = -1;
+  let top = info.height;
+  let bottom = -1;
+  for (let y = 0; y < info.height; y++) {
+    for (let x = 0; x < info.width; x++) {
+      if (data[y * info.width + x] < 16) continue;
+      left = Math.min(left, x);
+      right = Math.max(right, x);
       top = Math.min(top, y);
       bottom = y;
     }
-    const height = bottom - top + 1;
-    if (height < 2) continue;
-    area += height;
-    sumX += x * height;
-    sumY += (top + bottom) / 2 * height;
+  }
+  if (right < left) throw new Error('Empty shoe silhouette');
+  // Keep a narrow antialiased fringe outside the measured silhouette.
+  left = Math.max(0, left - 2);
+  top = Math.max(0, top - 2);
+  right = Math.min(info.width - 1, right + 2);
+  bottom = Math.min(info.height - 1, bottom + 2);
+  return sharp(pixels).extract({ left, top, width: right - left + 1, height: bottom - top + 1 }).png().toBuffer();
+}
+
+async function studioOffset(trimmed: Buffer) {
+  const { data, info } = await sharp(trimmed).resize(120, 68, { fit: 'contain', background: transparent })
+    .extractChannel('alpha').raw().toBuffer({ resolveWithObject: true });
+  let area = 0;
+  let sumX = 0;
+  let sumY = 0;
+  for (let y = 0; y < info.height; y++) {
+    for (let x = 0; x < info.width; x++) {
+      const alpha = data[y * info.width + x];
+      area += alpha;
+      sumX += x * alpha;
+      sumY += y * alpha;
+    }
   }
   if (!area) return { x: 0, y: 0 };
   const dx = (info.width - 1) / 2 - sumX / area;
   const dy = (info.height - 1) / 2 - sumY / area;
-  // Only adjust a visible imbalance. Keep at least four pixels of the outer padding on every edge.
   return {
     x: Math.abs(dx) > info.width * 0.06 ? Math.max(-12, Math.min(12, Math.round(dx * 2))) : 0,
     y: Math.abs(dy) > info.height * 0.11 ? Math.max(-8, Math.min(8, Math.round(dy * 2))) : 0,
   };
 }
 
-async function generate() {
-  // Some galleries open with a different view from the catalog thumbnail.
-  const sources = Array.from(new Set(shoes.flatMap(shoe => [shoe.image, shoe.images?.[0]])));
-  const thumbnails: string[] = [];
-  for (const source of sources) {
-    if (!source?.startsWith('/images/shoes/')) continue;
-    const input = path.join('public', source);
-    const output = path.join('public', thumbnailPath(source));
-    await mkdir(path.dirname(output), { recursive: true });
+async function saveFramed(pixels: Buffer, offset: { x: number; y: number }, source: string, scale: number) {
+  const output = path.join('public', source);
+  await mkdir(path.dirname(output), { recursive: true });
+  await sharp(pixels).resize(480 * scale, 270 * scale, { fit: 'contain', background: transparent })
+    .extend({
+      top: (12 + offset.y) * scale, bottom: (12 - offset.y) * scale,
+      left: (16 + offset.x) * scale, right: (16 - offset.x) * scale, background: transparent,
+    }).webp({ quality: 87, alphaQuality: 100 }).toFile(output);
+}
 
-    // Flatten invisible RGB before measuring margins. Keep photographs with
-    // textured corners intact, since their background is part of the frame.
-    const pixels = await sharp(input).rotate().flatten({ background: '#fff' }).removeAlpha().toColourspace('srgb').png().toBuffer();
-    const { data, info } = await sharp(pixels).resize({ width: 48, height: 48, fit: 'inside' }).raw().toBuffer({ resolveWithObject: true });
-    const cornerOffsets = [0, info.width - 1, info.width * (info.height - 1), info.width * info.height - 1];
-    const uniform = cornerOffsets.every(offset => [0, 1, 2].every(c => Math.abs(data[offset * info.channels + c] - data[c]) < 12));
-    const crop = sharp(pixels);
-    if (uniform) crop.trim({ threshold: 8, background: { r: data[0], g: data[1], b: data[2] } });
-    // Some studio shots have a horizontal gradient behind the shoe. A
-    // single background colour can leave a large strip above the upper.
-    const sidesMatch = Array.from({ length: info.height }, (_, row) => {
-      const left = row * info.width * info.channels;
-      const right = left + (info.width - 1) * info.channels;
-      return [0, 1, 2].every(c => data[left + c] > 190 && Math.abs(data[left + c] - data[right + c]) < 8);
-    }).every(Boolean);
-    let trimmed = await crop.png().toBuffer();
-    if (sidesMatch) {
-      const visibleRows = [];
-      for (let y = 0; y < info.height; y++) {
-        const left = y * info.width * info.channels;
-        for (let x = 1; x < info.width - 1; x++) {
-          const pixel = left + x * info.channels;
-          if ([0, 1, 2].some(c => Math.abs(data[pixel + c] - data[left + c]) > 10)) {
-            visibleRows.push(y);
-            break;
-          }
-        }
-      }
-      if (visibleRows.length && visibleRows.length < info.height * 0.8) {
-        const { width, height } = await sharp(pixels).metadata();
-        if (width && height) {
-          const top = Math.max(0, Math.floor((visibleRows[0] - 2) * height / info.height));
-          const bottom = Math.min(height, Math.ceil((visibleRows[visibleRows.length - 1] + 3) * height / info.height));
-          const strip = await sharp(pixels).extract({ left: 0, top, width, height: bottom - top }).png().toBuffer();
-          trimmed = await sharp(strip).trim({ threshold: 8 }).png().toBuffer();
-        }
-      }
-    }
-    const offset = uniform || sidesMatch ? await studioOffset(trimmed) : { x: 0, y: 0 };
-    await sharp(trimmed).resize(480, 270, { fit: 'contain', background: '#fff' })
-      .extend({ top: 12 + offset.y, bottom: 12 - offset.y, left: 16 + offset.x, right: 16 - offset.x, background: '#fff' }).webp({ quality: 84 }).toFile(output);
+// Reviewed masks protect white foam and fine edges that automatic segmentation missed.
+// A replacement photograph gets a different hash and goes through segmentation again.
+async function cutOutOpaque(source: string, original: Buffer, png: Buffer, masks: Set<string>) {
+  const hash = createHash('sha256').update(original).digest('hex').slice(0, 16);
+  const filename = path.basename(path.dirname(source)) + '-' + hash + '.png';
+  if (masks.has(filename)) {
+    const alpha = await sharp(path.join('scripts/shoe-masks', filename)).greyscale().raw().toBuffer({ resolveWithObject: true });
+    const rgb = await sharp(png).removeAlpha().png().toBuffer();
+    return sharp(rgb).joinChannel(alpha.data, { raw: { width: alpha.info.width, height: alpha.info.height, channels: 1 } }).png().toBuffer();
+  }
+  const image = new Blob([new Uint8Array(png)], { type: 'image/png' });
+  const cutout = await removeBackground(image, { model: 'medium', output: { format: 'image/png' } });
+  return Buffer.from(await cutout.arrayBuffer());
+}
+
+async function generate() {
+  const sources = new Set(shoes.flatMap(shoe => [shoe.image, shoe.images?.[0]]));
+  const masks = new Set(await readdir('scripts/shoe-masks'));
+  const thumbnails: string[] = [];
+  const cutouts: string[] = [];
+  for (const source of Array.from(sources)) {
+    if (!source?.startsWith('/images/shoes/')) continue;
+    const original = await readFile(path.join('public', source));
+    let pixels = await sharp(original).rotate().toColourspace('srgb').ensureAlpha().png().toBuffer();
+    const { isOpaque } = await sharp(pixels).stats();
+    if (isOpaque) pixels = await cutOutOpaque(source, original, pixels, masks);
+    const trimmed = await trimSilhouette(pixels);
+    const offset = await studioOffset(trimmed);
+    await saveFramed(trimmed, offset, thumbnailPath(source), 1);
     thumbnails.push(source);
+    if (isOpaque) {
+      await saveFramed(trimmed, offset, cutoutPath(source), 2);
+      cutouts.push(source);
+    }
   }
   await writeFile('src/lib/data/shoe-thumbnails.json', JSON.stringify(thumbnails.sort(), null, 2) + '\n');
+  await writeFile('src/lib/data/shoe-cutouts.json', JSON.stringify(cutouts.sort(), null, 2) + '\n');
 }
 
 generate().catch(error => { console.error(error); process.exitCode = 1; });

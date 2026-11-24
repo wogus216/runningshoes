@@ -4,8 +4,7 @@ import { useState, useEffect, useCallback, useRef, TouchEvent } from 'react';
 import Image from 'next/image';
 import { ChevronLeft, ChevronRight, ShoppingBag } from 'lucide-react';
 import { cn } from '@/lib/utils';
-import { img } from '@/lib/image';
-import { shoeThumbnail } from '@/lib/shoe-thumbnail';
+import { shoeGalleryImage, shoeThumbnail } from '@/lib/shoe-thumbnail';
 
 type ImageSliderProps = {
   images?: string[];
@@ -14,12 +13,12 @@ type ImageSliderProps = {
 };
 
 function GalleryPhoto({ image, alt, first }: { image: string; alt: string; first: boolean }) {
-  const original = img(image);
-  const mobile = first ? shoeThumbnail(image) : original;
+  const gallery = shoeGalleryImage(image);
+  const mobile = first ? shoeThumbnail(image) : gallery;
   return (
     <picture>
-      {mobile !== original && <source media="(max-width: 639px)" srcSet={mobile} />}
-      <Image src={original} alt={alt} fill sizes="(max-width: 768px) 100vw, 50vw"
+      {mobile !== gallery && <source media="(max-width: 639px)" srcSet={mobile} />}
+      <Image src={gallery} alt={alt} fill sizes="(max-width: 768px) 100vw, 50vw"
         className="object-contain p-6 md:p-8" loading={first ? 'eager' : 'lazy'}
         fetchPriority={first ? 'high' : undefined} />
     </picture>
