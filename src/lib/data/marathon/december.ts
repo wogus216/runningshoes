@@ -180,6 +180,10 @@ export const decemberEvents: MarathonEvent[] = [
     registrationNote: '2027년5월15~16일 일정 안내·장소와 참가비 미정. 현재 접수 개시·종목별 신청 조건은 확인 필요.2026년 접수·환불 기한을 새 회차에 적용하지 않음.',
     lastVerified: '2026-11-14',
     raceInfo: {
+      entryFeesPending: {
+        checkedAt: '2026-11-24',
+        url: 'https://mara1080.com/event/ccf77de8-1b14-4170-afcb-c2eeaee1a78d/guide/overview',
+      },
       expectedParticipants: 24000,
       startTime: '10:00',
     },

@@ -576,7 +576,6 @@ export const marchEvents: MarathonEvent[] = [
     lastVerified: '2026-11-11',
   },
   // --- 2027 시즌 (해외) ---
-  // 참가료를 entryFees에 넣지 않는 이유는 february.ts 주석 참고(JSON-LD가 KRW 하드코딩).
   {
     id: "tokyo-marathon-2027",
     name: "도쿄 마라톤 2027",
@@ -597,6 +596,8 @@ export const marchEvents: MarathonEvent[] = [
       "courseDescription": "도쿄도청 출발, 스이도바시·우에노히로코지·칸다·니혼바시·아사쿠사·료고쿠·몬젠나카초·긴자·다마치·히비야를 거쳐 도쿄역 앞 교코도리 도착. 공식 요강은 일본육상경기연맹·AIMS·세계육상연맹 공인 코스로 안내한다."
     },
     raceInfo: {
+      entryFees: [{ distance: "해외 풀코스", fee: 230, currency: "USD" }],
+      entryFeeNote: "참가비·사무수수료·세금 포함. 신청 시 선택한 짐 보관은 US$12 별도입니다.",
       "timeLimits": [
         {
           "distance": "풀코스",

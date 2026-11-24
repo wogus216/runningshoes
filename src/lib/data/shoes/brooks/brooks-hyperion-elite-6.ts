@@ -4,6 +4,13 @@ import type { Shoe } from '@/types/shoe';
 export const shoe: Shoe = {
   id: 'brooks-hyperion-elite-6',
   slug: 'brooks-hyperion-elite-6',
+  priceCheck: {
+    "kind": "historical",
+    "checkedAt": "2026-11-24",
+    "url": "https://brooksrunning.co.kr/product/남녀공용-하이페리온-엘리트-6타이거릴리medium/913/category/137/display/1/",
+    "note": "한국 공식몰 캐시의 공용 MEDIUM 1000541D699 표시 가격입니다. 현재 상세 연결과 명시 정가는 확인되지 않았습니다.",
+    "amount": 319000
+  },
   brand: 'Brooks',
   name: '하이페리온 엘리트 6',
   imageCaption: "Brooks Hyperion Elite 6 대표 측면은 Brooks 일본 공식 BRU0540-GRY(100054-088)의 グレー 원본입니다. 나머지 갤러리의 다른 색상 및 한국 판매 SKU·실험실 검체와 구분하며, 사진 실물의 사이즈·폭은 미확인입니다.",

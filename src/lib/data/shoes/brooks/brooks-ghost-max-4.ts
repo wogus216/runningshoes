@@ -4,6 +4,13 @@ import type { Shoe } from '@/types/shoe';
 export const shoe: Shoe = {
     id: "brooks-ghost-max-4",
     slug: "brooks-ghost-max-4",
+    priceCheck: {
+      "kind": "retailer",
+      "checkedAt": "2026-11-24",
+      "url": "https://fleetrunner.co.kr/goods/goods_view.php?goodsNo=11769",
+      "note": "플릿러너 남성 D 1104961D020 상품의 판매점 기준가입니다.",
+      "amount": 189000
+    },
     brand: "Brooks",
     name: "고스트 맥스 4",
   imageCaption: "고스트 맥스 4 사진은 브룩스 한국 공식 갤러리 수집 기록을 확인한 여성용 Rose Wide 색상입니다. 사진 품번은 현재 재고를 뜻하지 않습니다.",

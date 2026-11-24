@@ -461,6 +461,10 @@ export const octoberEvents: MarathonEvent[] = [
   ],
   "status": "마감",
   "postponed": true,
+  "postponementNotice": {
+    "checkedAt": "2026-11-24",
+    "url": "https://seoulopen.or.kr/bbs/board.php?bo_table=id_noticeNew2026"
+  },
   "isMajor": false,
   "website": "https://seoulopen.or.kr/",
   "description": "10월 5일 예정 대회는 연기 상태이며, 2026-11-24 공식 공지 목록에서 새 개최일을 확인하지 못했습니다. 사무국은 정상 환불 신청 건의 11월 20일 입금을 완료했다고 안내했습니다. 참가자명과 예금주가 다르거나 계좌번호가 잘못돼 보류된 건은 11월 24일부터 순차 처리하며 대상자에게 문자를 보냅니다.",

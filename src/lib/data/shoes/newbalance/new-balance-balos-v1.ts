@@ -4,6 +4,12 @@ import type { Shoe } from '@/types/shoe';
 export const shoe: Shoe = {
     id: "new-balance-balos-v1",
     slug: "new-balance-balos-v1",
+    priceCheck: {
+      "kind": "unconfirmed",
+      "checkedAt": "2026-11-24",
+      "url": "https://www.nbkorea.com/",
+      "note": "한국 공식 운영몰에서 정확 모델의 판매 상세와 정가를 확보하지 못했습니다."
+    },
     brand: "New Balance",
     name: "발로스 V1",
   imageCaption: "발로스 V1 사진은 뉴발란스 MBAL7K8(Afterglow / Dry Lime / Wakame) 공식 이미지와 모델·색상·구도를 대조했습니다. 원본 파일 경로는 미확인입니다. 사진 품번은 한국 현재 판매 조건을 뜻하지 않습니다.",

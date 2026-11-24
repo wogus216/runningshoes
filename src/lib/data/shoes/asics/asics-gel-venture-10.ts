@@ -4,6 +4,12 @@ import type { Shoe } from '@/types/shoe';
 export const shoe: Shoe = {
   id: 'asics-gel-venture-10',
   slug: 'asics-gel-venture-10',
+  priceCheck: {
+    "kind": "unconfirmed",
+    "checkedAt": "2026-11-24",
+    "url": "https://asics.co.kr/goods/search?search_text=%EC%A0%A4%20%EB%B2%A4%EC%B3%90%2010",
+    "note": "한국 공식 검색에서 확인한 여성 방수형의 가격은 일반형과 구분했습니다."
+  },
   brand: 'Asics',
   name: '젤 벤처 10',
   imageCaption: "젤 벤처 10 사진은 ASICS 공식 이미지 서버의 1012B759-700 제품 사진과 대조했습니다. 공식 색상명과 한국 현재 판매 옵션은 확인되지 않았습니다.",

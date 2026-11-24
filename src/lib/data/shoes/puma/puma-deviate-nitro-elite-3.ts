@@ -4,6 +4,13 @@ import type { Shoe } from '@/types/shoe';
 export const shoe: Shoe = {
     id: "puma-deviate-nitro-elite-3",
     slug: "puma-deviate-nitro-elite-3",
+    priceCheck: {
+      "kind": "historical",
+      "checkedAt": "2026-11-24",
+      "url": "https://kr.puma.com/kr/ko/pd/%EB%94%94%EB%B9%84%EC%97%90%EC%9D%B4%ED%8A%B8-%EB%82%98%EC%9D%B4%ED%8A%B8%EB%A1%9C-%EC%97%98%EB%A6%AC%ED%8A%B8-3-%3Cbr%3Edeviate-nitro-elite-3/309809.html",
+      "note": "한국 공식몰 과거 일반형 309809_10 할인 전 표시 금액입니다. 현재 해당 원문은 404입니다.",
+      "amount": 289000
+    },
     brand: "Puma",
     name: "디비에이트 나이트로 엘리트 3",
     imageCaption: "디비에이트 나이트로 엘리트 3 사진(309809-04 · Pure Magenta-Yellow Alert)입니다. 공식 상품 사진과 대조했으며 구매할 성별·폭·색상 옵션과 구분하세요.",

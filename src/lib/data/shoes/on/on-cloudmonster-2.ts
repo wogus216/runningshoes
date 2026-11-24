@@ -4,6 +4,13 @@ import type { Shoe } from '@/types/shoe';
 export const shoe: Shoe = {
     id: "on-cloudmonster-2",
     slug: "on-cloudmonster-2",
+    priceCheck: {
+      "kind": "retailer",
+      "checkedAt": "2026-11-24",
+      "url": "https://m.fleetrunner.co.kr/goods/goods_view.php?goodsNo=10619",
+      "note": "플릿러너 남성 3ME10122906 상품의 판매점 기준가입니다.",
+      "amount": 219000
+    },
     brand: "On",
     name: "클라우드몬스터 2",
   imageCaption: "클라우드몬스터 2 사진은 On 공식 상품 갤러리 3ME10121043(Black )의 모델·색상·구도와 대조했습니다. 사진 품번을 한국 현재 판매 규격·가격으로 읽지 마세요.",

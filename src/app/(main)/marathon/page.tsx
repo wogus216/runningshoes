@@ -89,12 +89,12 @@ export default function MarathonPage() {
         sport: 'Marathon',
         ...(event.description && { description: event.description }),
         ...(event.website && { url: event.website }),
-        ...(event.raceInfo?.entryFees?.length && {
-          offers: event.raceInfo.entryFees.map((fee) => ({
+        ...(!event.postponed && !event.scheduleUnverified && Boolean(event.raceInfo?.entryFees?.length) && {
+          offers: event.raceInfo?.entryFees?.map(fee => ({
             '@type': 'Offer',
             name: fee.distance,
             price: fee.fee,
-            priceCurrency: 'KRW',
+            priceCurrency: fee.currency ?? 'KRW',
             ...(event.website && { url: event.website }),
           })),
         }),

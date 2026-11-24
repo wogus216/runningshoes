@@ -4,6 +4,13 @@ import type { Shoe } from '@/types/shoe';
 export const shoe: Shoe = {
   id: 'saucony-guide-18',
   slug: 'saucony-guide-18',
+  priceCheck: {
+    "kind": "retailer",
+    "checkedAt": "2026-11-24",
+    "url": "https://goodrunner.co.kr/product/%EC%8D%A8%EC%BD%94%EB%8B%88-%EB%82%A8%EC%84%B1-%EA%B0%80%EC%9D%B4%EB%93%9C-18-%EC%97%91%EC%8A%A4%ED%8A%B8%EB%9D%BC-%EC%99%80%EC%9D%B4%EB%93%9C-triple-black/6230/",
+    "note": "굿러너 남성 엑스트라와이드 S21009-101 상품의 판매점 기준가입니다.",
+    "amount": 159000
+  },
   brand: 'Saucony',
   name: '가이드 18',
   imageCaption: "가이드 18 대표 사진은 써코니 공식 Ivory 색상 S20998-102입니다. 남은 갤러리 사진은 밝은 색상과 외관을 대조했으나 원본 URL은 미확인입니다. 사진 품번은 한국 현재 판매 조건을 뜻하지 않습니다.",

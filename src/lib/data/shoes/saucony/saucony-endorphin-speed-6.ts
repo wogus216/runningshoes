@@ -4,6 +4,12 @@ import type { Shoe } from '@/types/shoe';
 export const shoe: Shoe = {
   id: 'saucony-endorphin-speed-6',
   slug: 'saucony-endorphin-speed-6',
+  priceCheck: {
+    "kind": "unconfirmed",
+    "checkedAt": "2026-11-24",
+    "url": "https://saucony.co.kr/",
+    "note": "한국 공식몰의 스피드 5 판매와 스피드 6을 구분했습니다."
+  },
   brand: 'Saucony',
   name: '엔돌핀 스피드 6',
   imageCaption: "엔돌핀 스피드 6 사진은 미국 써코니 공식 White/Citron S101825-1006 상품 사진입니다. 한국 출시·가격·재고의 근거는 아닙니다.",

@@ -4,6 +4,12 @@ import type { Shoe } from '@/types/shoe';
 export const shoe: Shoe = {
     id: "hoka-clifton-10",
     slug: "hoka-clifton-10",
+    priceCheck: {
+      "kind": "store-closed",
+      "checkedAt": "2026-11-24",
+      "url": "https://brand.naver.com/hoka/shoppingstory/detail?id=5003127878",
+      "note": "종전 호카코리아 공식 온라인몰의 판매 종료를 확인했습니다. 현행 한국 정가를 확인할 해당 모델 상품 원문은 확보하지 못했습니다."
+    },
     brand: "Hoka",
     name: "클리프톤 10",
   imageCaption: "clifton 10 사진(1162030-SCCV · Stucco / Virtual Blue)은 HOKA 공식 상품 갤러리와 모델·색상·구도를 대조했습니다. 사진 품번을 한국 판매 규격·가격으로 읽지 마세요.",

@@ -118,6 +118,11 @@ export function HeroSection({ shoe, brandTechnologyUrl }: HeroSectionProps) {
                 <span className="font-mono text-3xl font-bold tabular-nums text-primary md:text-4xl">
                   {formatWon(shoe.price)}
                 </span>
+                {!shoe.price && shoe.priceCheck?.kind === 'official-listing' && shoe.priceCheck.amount !== undefined && (
+                  <a href={shoe.priceCheck.url} target="_blank" rel="noopener noreferrer" className="text-sm text-secondary underline underline-offset-4">
+                    공식몰 확인 당시 표시가 {shoe.priceCheck.amount.toLocaleString('ko-KR')}원
+                  </a>
+                )}
                 {/* 국내 정가가 없는 신발(병행·직구만 유통)은 실거래가를 정가와 구분해 따로 적는다 */}
                 {!shoe.price && shoe.priceAnalysis?.streetPrice && (
                   <span className="font-mono text-sm text-tertiary">

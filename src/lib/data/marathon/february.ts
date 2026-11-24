@@ -6,10 +6,6 @@ import type { MarathonEvent } from '@/types/marathon';
  * 두 대회 모두 한국 거주자는 일본 국내 러너와 신청 창구·요금·선발 방식이 다르다.
  * 신청은 런넷(RUNNET)이 아니라 JTB스포츠스테이션이고, 여기 적힌 접수 기간도
  * 해외 러너 기준이다(일본 국내 마감은 이보다 이르거나 다르다).
- *
- * `raceInfo.entryFees`를 비워둔 이유: 상세 페이지의 JSON-LD가 `priceCurrency: 'KRW'`를
- * 하드코딩해서, 엔화·달러 참가비를 넣으면 구조화 데이터가 원화로 잘못 나간다.
- * 참가비는 description에 통화 단위와 함께 적는다.
  */
 export const februaryEvents: MarathonEvent[] = [
   {
@@ -31,6 +27,7 @@ export const februaryEvents: MarathonEvent[] = [
       "courseDescription": "타케비시 스타디움 교토에서 헤이안진구 앞까지 세계문화유산 7곳을 지나는 코스. 공식 요강은 비포장 강변이 포함돼 비가 오면 달리기 어려울 수 있다고 안내한다."
     },
     raceInfo: {
+      entryFees: [{ distance: "해외 풀코스", fee: 35000, currency: "JPY" }],
       "timeLimits": [
         {
           "distance": "풀코스",
@@ -76,6 +73,11 @@ export const februaryEvents: MarathonEvent[] = [
       "courseDescription": "오사카부청 앞에서 출발해 오사카성 공원에서 끝나는 풀마라톤 코스. 본인 웨이브와 관문은 최종 참가자 안내에서 확인한다."
     },
     raceInfo: {
+      entryFees: [
+        { distance: "해외 개인", fee: 172.05, currency: "USD" },
+        { distance: "해외 그룹 1인", fee: 177.6, currency: "USD" },
+      ],
+      entryFeeNote: "필수 비용을 합산한 최소 금액입니다. 개인 US$145 또는 그룹 1인 US$150에 최소 기부 US$10을 더하고 11% 사무수수료를 적용했습니다. 선택 상품·추가 기부·카드 수수료는 별도입니다.",
       "timeLimits": [
         {
           "distance": "풀코스",

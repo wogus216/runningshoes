@@ -4,6 +4,12 @@ import type { Shoe } from '@/types/shoe';
 export const shoe: Shoe = {
     id: "asics-metaspeed-edge-plus",
     slug: "asics-metaspeed-edge-plus",
+    priceCheck: {
+      "kind": "unconfirmed",
+      "checkedAt": "2026-11-24",
+      "url": "https://asics.co.kr/goods/search?search_text=%EB%A9%94%ED%83%80%EC%8A%A4%ED%94%BC%EB%93%9C%20%EC%97%A3%EC%A7%80",
+      "note": "한국 공식 검색의 도쿄 제품과 2022년 엣지 플러스를 구분했습니다."
+    },
     brand: "Asics",
     name: "메타스피드 엣지+",
   imageCaption: "메타스피드 엣지+ 사진은 ASICS 공식 EDGE+ 상품 1013A116-100(WHITE/BLACK) 갤러리에서 가져와 크기를 최적화했습니다. 기존 원본을 확인하지 못한 사진 5장은 교체했습니다. 해외 사진 품번을 한국 판매 조건으로 읽지 마세요.",

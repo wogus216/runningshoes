@@ -4,6 +4,13 @@ import type { Shoe } from '@/types/shoe';
 export const shoe: Shoe = {
     id: "brooks-glycerin-max",
     slug: "brooks-glycerin-max",
+    priceCheck: {
+      "kind": "retailer",
+      "checkedAt": "2026-11-24",
+      "url": "https://www.fleetrunner.co.kr/goods/goods_view.php?goodsNo=10882",
+      "note": "플릿러너 남성 D 1104471D158 상품의 판매점 기준가입니다.",
+      "amount": 239000
+    },
     brand: "Brooks",
     name: "글리세린 맥스",
   imageCaption: "초대 글리세린 맥스 사진은 브룩스 일본 공식 상품 110447-158의 측면·사선·뒤·위·밑창입니다. 이전에 섞였던 맥스 2 사진을 교체했습니다. 이 품번은 한국 현행 판매 조건을 뜻하지 않습니다.",

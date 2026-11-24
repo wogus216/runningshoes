@@ -4,6 +4,12 @@ import type { Shoe } from '@/types/shoe';
 export const shoe: Shoe = {
     id: "hoka-speedgoat-6",
     slug: "hoka-speedgoat-6",
+    priceCheck: {
+      "kind": "store-closed",
+      "checkedAt": "2026-11-24",
+      "url": "https://brand.naver.com/hoka/shoppingstory/detail?id=5003127878",
+      "note": "종전 호카코리아 공식 온라인몰의 판매 종료를 확인했습니다. 현행 한국 정가를 확인할 해당 모델 상품 원문은 확보하지 못했습니다."
+    },
     brand: "Hoka",
     name: "스피드고트 6",
   imageCaption: "스피드고트 6 사진은 Believe in the Run 착화 리뷰의 현장 사진입니다. 정확한 사진 품번·공식 색상명은 확인되지 않았습니다.",

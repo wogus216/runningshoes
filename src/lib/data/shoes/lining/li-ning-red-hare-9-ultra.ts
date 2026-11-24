@@ -4,6 +4,12 @@ import type { Shoe } from '@/types/shoe';
 export const shoe: Shoe = {
     id: "li-ning-red-hare-9-ultra",
     slug: "li-ning-red-hare-9-ultra",
+    priceCheck: {
+      "kind": "unconfirmed",
+      "checkedAt": "2026-11-24",
+      "url": "https://ir.lining.com/tc/ir/presentations/pre260319.pdf",
+      "note": "제조사 공개 자료에서 한국 정가를 확인하지 못했습니다."
+    },
     brand: "Li-Ning",
     name: "레드헤어 9 울트라",
   imageCaption: "레드헤어 9 울트라 사진은 독립 판매처 VJsneaker의 ARPW007-2(Champagne White) 상품 사진과 구도·색상을 대조했습니다. 최초 촬영자와 현 파일의 최초 수집 경로는 미확인입니다. 사진 품번은 한국 판매 조건을 뜻하지 않습니다.",

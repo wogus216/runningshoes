@@ -4,6 +4,12 @@ import type { Shoe } from '@/types/shoe';
 export const shoe: Shoe = {
   id: 'hoka-tecton-x-3',
   slug: 'hoka-tecton-x-3',
+  priceCheck: {
+    "kind": "store-closed",
+    "checkedAt": "2026-11-24",
+    "url": "https://brand.naver.com/hoka/shoppingstory/detail?id=5003127878",
+    "note": "종전 호카코리아 공식 온라인몰의 판매 종료를 확인했습니다. 현행 한국 정가를 확인할 해당 모델 상품 원문은 확보하지 못했습니다."
+  },
   brand: 'Hoka',
   name: '테크톤 X 3',
   imageCaption: "테크톤 X 3 공식 제품 사진(1155112-BHKB)입니다. 사진의 품번·색상과 구매할 성별·폭·옵션을 구분하세요.",

@@ -4,6 +4,12 @@ import type { Shoe } from '@/types/shoe';
 export const shoe: Shoe = {
   id: 'hoka-mach-x-3',
   slug: 'hoka-mach-x-3',
+  priceCheck: {
+    "kind": "store-closed",
+    "checkedAt": "2026-11-24",
+    "url": "https://brand.naver.com/hoka/shoppingstory/detail?id=5003127878",
+    "note": "종전 호카코리아 공식 온라인몰의 판매 종료를 확인했습니다. 현행 한국 정가를 확인할 해당 모델 상품 원문은 확보하지 못했습니다."
+  },
   brand: 'Hoka',
   name: '마하 X 3',
   imageCaption: "마하 X 3 사진은 공식 여성 상품 1168721-WNL(White / Neon Lime)과 대조했습니다. 사진을 남성 상품의 규격·색상 증거로 읽지 마세요.",

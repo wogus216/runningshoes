@@ -56,6 +56,14 @@ describe('feeSummary', () => {
     expect(feeSummary([{ distance: '풀', fee: 65000 }, { distance: '10K', fee: 50000 }])).toBe('풀 6.5만원 · 10K 5만원');
   });
 
+  it('원화와 외화가 섞여도 각 참가비 통화와 금액을 유지한다', () => {
+    expect(feeSummary([
+      { distance: '국내', fee: 50000 },
+      { distance: '해외 A', fee: 35000, currency: 'JPY' },
+      { distance: '해외 B', fee: 177.6, currency: 'USD' },
+    ])).toBe('국내 50,000원 · 해외 A 35,000엔 · 해외 B US$177.60');
+  });
+
   it('없으면 null', () => {
     expect(feeSummary(undefined)).toBeNull();
     expect(feeSummary([])).toBeNull();

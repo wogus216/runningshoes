@@ -4,6 +4,12 @@ import type { Shoe } from '@/types/shoe';
 export const shoe: Shoe = {
   id: 'hoka-gaviota-6',
   slug: 'hoka-gaviota-6',
+  priceCheck: {
+    "kind": "store-closed",
+    "checkedAt": "2026-11-24",
+    "url": "https://brand.naver.com/hoka/shoppingstory/detail?id=5003127878",
+    "note": "종전 호카코리아 공식 온라인몰의 판매 종료를 확인했습니다. 현행 한국 정가를 확인할 해당 모델 상품 원문은 확보하지 못했습니다."
+  },
   brand: 'Hoka',
   name: '가비오타 6',
   imageCaption: "가비오타 6 사진은 Black/Black 제품 사진입니다. 측면·사선·밑창은 1171932-BBLC, 상단 사진은 공식 와이드 상품 1171934-BBLC와 대조했습니다. 사진만으로 실물 폭이나 한국 판매 옵션을 확정할 수 없습니다.",

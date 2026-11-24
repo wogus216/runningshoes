@@ -4,6 +4,13 @@ import type { Shoe } from '@/types/shoe';
 export const shoe: Shoe = {
     id: "saucony-ride-18",
     slug: "saucony-ride-18",
+    priceCheck: {
+      "kind": "retailer",
+      "checkedAt": "2026-11-24",
+      "url": "https://www.fleetrunner.co.kr/goods/goods_view.php?goodsNo=10485",
+      "note": "플릿러너 남성 D S21000-164 상품의 판매점 기준가입니다.",
+      "amount": 159000
+    },
     brand: "Saucony",
     name: "라이드 18",
   imageCaption: "2026-11-11 써코니 공식 남성 라이드 18 S21000-163 사진입니다. 한국 여성 와이드 판매 상품과는 성별·폭·색상 조건이 다릅니다.",

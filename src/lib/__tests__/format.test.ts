@@ -62,7 +62,7 @@ describe('formatManwonExact', () => {
         expect(formatManwonExact(gap)).toBe(legacyVsManwon(gap));
       }
     }
-    const fees = getMarathonEvents().flatMap((e) => (e.raceInfo?.entryFees ?? []).map((f) => f.fee));
+    const fees = getMarathonEvents().flatMap((e) => (e.raceInfo?.entryFees ?? []).filter(fee => !fee.currency || fee.currency === 'KRW').map(fee => fee.fee));
     expect(fees.length).toBeGreaterThan(50);
     for (const fee of fees) expect(formatManwonExact(fee)).toBe(legacyFeeWon(fee));
   });

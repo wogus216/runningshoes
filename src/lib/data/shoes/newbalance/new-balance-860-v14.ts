@@ -4,6 +4,13 @@ import type { Shoe } from '@/types/shoe';
 export const shoe: Shoe = {
     id: "new-balance-860-v14",
     slug: "new-balance-860-v14",
+    priceCheck: {
+      "kind": "historical",
+      "checkedAt": "2026-11-24",
+      "url": "https://www.galleria.co.kr/goods/initDetailGoods.action?goods_no=2511781261",
+      "note": "갤러리아타임월드 남성 2E NBPFFF717W 제품출시가이며 판매종료 표시입니다.",
+      "amount": 179000
+    },
     brand: "New Balance",
     name: "860 V14",
   imageCaption: "860 V14 사진은 뉴발란스 M860N14(Black / Phantom / Magnet) 공식 이미지와 모델·색상·구도를 대조했습니다. 원본 파일 경로는 미확인입니다. 사진 품번은 한국 현재 판매 조건을 뜻하지 않습니다.",

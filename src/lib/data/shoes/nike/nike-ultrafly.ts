@@ -4,6 +4,12 @@ import type { Shoe } from '@/types/shoe';
 export const shoe: Shoe = {
     id: "nike-ultrafly",
     slug: "nike-ultrafly",
+    priceCheck: {
+      "kind": "unconfirmed",
+      "checkedAt": "2026-11-24",
+      "url": "https://www.nike.com/kr/w/trail-running-shoes-1m67gz75jcnzy7ok",
+      "note": "한국 공식 목록의 후속 ACG 상품과 초대 DX1978을 구분했습니다."
+    },
     brand: "Nike",
     name: "울트라플라이",
   imageCaption: "2023 초대 Ultrafly 사진(DX1978-100 · White/Total Orange/Pale Ivory/Black)을 Nike 공개 상품 데이터와 대조했습니다. 후속 ACG Ultrafly 사진과 구분했으며 한국 현재 판매 규격·가격의 근거는 아닙니다.",

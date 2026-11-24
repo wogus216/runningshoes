@@ -4,6 +4,12 @@ import type { Shoe } from '@/types/shoe';
 export const shoe: Shoe = {
     id: "li-ning-red-hare-9",
     slug: "li-ning-red-hare-9",
+    priceCheck: {
+      "kind": "unconfirmed",
+      "checkedAt": "2026-11-24",
+      "url": "https://vjsneaker.com/products/li-ning-red-hare-9-milk-white-arpw003-8-running-shoe-unisex-white",
+      "note": "독립 판매점의 일반형 ARPW003-8 상품은 확인했으나 한국 공식 정가는 확인하지 못했습니다."
+    },
     brand: "Li-Ning",
     name: "레드헤어 9",
   imageCaption: "레드헤어 9 사진은 독립 판매처 VJsneaker의 ARPW003-8(Milk White) 상품 사진과 구도·색상을 대조했습니다. 최초 촬영자와 현 파일의 최초 수집 경로는 미확인입니다. 사진 품번은 한국 판매 조건을 뜻하지 않습니다.",

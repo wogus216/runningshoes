@@ -4,6 +4,13 @@ import type { Shoe } from '@/types/shoe';
 export const shoe: Shoe = {
     id: "new-balance-1080-v14",
     slug: "new-balance-1080-v14",
+    priceCheck: {
+      "kind": "historical",
+      "checkedAt": "2026-11-24",
+      "url": "https://www.galleria.co.kr/goods/initDetailGoods.action?goods_no=2410485898",
+      "note": "갤러리아타임월드 남성 4E NBPFFS102E 제품출시가이며 판매종료 표시입니다.",
+      "amount": 199000
+    },
     brand: "New Balance",
     name: "1080 V14",
     image: "/images/shoes/newbalance/1080v14/side.webp",

@@ -101,9 +101,18 @@ export interface CourseInfo {
 }
 
 // 참가 안내
+export const entryFeeCurrencies = ['KRW', 'JPY', 'USD'] as const;
+export type EntryFeeCurrency = typeof entryFeeCurrencies[number];
+
+export interface OfficialRaceConfirmation {
+  checkedAt: string;
+  url: string;
+}
+
 export interface EntryFee {
   distance: string;
   fee: number;
+  currency?: EntryFeeCurrency;
 }
 
 export interface TimeLimit {
@@ -114,6 +123,8 @@ export interface TimeLimit {
 
 export interface RaceInfo {
   entryFees?: EntryFee[];
+  entryFeeNote?: string;
+  entryFeesPending?: OfficialRaceConfirmation;
   timeLimits?: TimeLimit[];
   aidStations?: number;
   aidInterval?: string;
@@ -191,10 +202,11 @@ export interface MarathonEvent {
   };
   /**
    * 공식이 일정 연기를 알렸고 새 날짜가 아직 없을 때만 true. `date`는 원래 일정 그대로 둔다.
-   * 날짜가 지나도 '지난 대회'로 보내지 않고, validate·due-check 는 에러 대신 매번 경고로 띄운다.
+   * 날짜가 지나도 지난 대회로 보내지 않고, 새 일정은 후속 점검한다.
    * 새 날짜가 나오면 이 플래그를 지우고 date 를 고친다.
    */
   postponed?: true;
+  postponementNotice?: OfficialRaceConfirmation;
   /** 공식 원문·결과와 일정 대조 미완료. 참고 날짜이며 개최·접수를 확정 표시하지 않는다. */
   scheduleUnverified?: true;
   /** 공식 접수 기간은 알지만 현재 잔여석·결제 가능 여부를 확인하지 못한 경우. */

@@ -19,6 +19,8 @@ import { shoes } from '../src/lib/data/shoes';
 import { gels } from '../src/lib/data/gels';
 import { marathonEvents } from '../src/lib/data/marathon';
 import { isPast } from '../src/lib/marathon/bands';
+import { entryFeeCurrencies } from '../src/types/marathon';
+import { formatFee } from '../src/lib/marathon/format';
 import { getAllPosts } from '../src/lib/data/blog';
 import { PINNED_PAIRS, getPairBySlug } from '../src/lib/pseo/pairs';
 import { checkRaceMeta, checkDeadlineStrips, STRIP_WITHOUT_ANCHOR_BASELINE } from '../src/lib/blog/race-meta-rules';
@@ -34,6 +36,16 @@ let warnings = 0;
 const error = (msg: string) => { errors++; console.error(`  ❌ ${msg}`); };
 const warn = (msg: string) => { warnings++; console.warn(`  ⚠️  ${msg}`); };
 const ok = (msg: string) => console.log(`  ✅ ${msg}`);
+const info = (msg: string) => console.log(`  ℹ️  ${msg}`);
+
+// 운영 날짜는 한국 시간 기준이다.
+const today = new Date(Date.now() + 9 * 60 * 60 * 1000).toISOString().slice(0, 10);
+
+function validSourceCheck(check: { checkedAt: string; url: string }): boolean {
+  const date = new Date(check.checkedAt + 'T00:00:00Z');
+  if (!Number.isFinite(date.getTime()) || date.toISOString().slice(0, 10) !== check.checkedAt || check.checkedAt > today) return false;
+  return URL.canParse(check.url) && new URL(check.url).protocol === 'https:';
+}
 
 // ===========================================
 // 1. 데이터 수집 — 파일 ↔ slug 대응표
@@ -117,12 +129,44 @@ console.log('');
 // 5. 가격 데이터 검증
 // ===========================================
 console.log('━━━ 4. 가격 데이터 검증 ━━━');
-let priceOk = true;
-for (const s of shoes) {
-  if (s.price == null) { warn(`${label(s)} ${s.id}: 가격 없음 (null)`); priceOk = false; continue; }
-  if (s.price < 50000 || s.price > 500000) { warn(`${label(s)} ${s.id}: 가격 범위 의심 → ₩${s.price.toLocaleString()}`); priceOk = false; }
+const priceCheckLabels = {
+  unconfirmed: '한국 정가 미확인',
+  'store-closed': '종전 공식몰 판매 종료',
+  historical: '과거 가격만 확인',
+  retailer: '판매점 기준가만 확인',
+  'official-listing': '공식몰 표시가만 확인',
+} as const;
+const priceChecks = new Map<string, number>();
+let pricesConfirmed = 0;
+for (const shoe of shoes) {
+  const tag = `${label(shoe)} ${shoe.id}`;
+  if (shoe.price != null) {
+    if (!Number.isInteger(shoe.price) || shoe.price < 50000 || shoe.price > 500000) {
+      warn(`${tag}: 가격 범위 의심 → ₩${shoe.price.toLocaleString()}`);
+      continue;
+    }
+    if (shoe.priceCheck) warn(`${tag}: 정가와 미확인 가격 기록이 함께 있습니다`);
+    pricesConfirmed++;
+    continue;
+  }
+
+  const check = shoe.priceCheck;
+  if (!check || !validSourceCheck(check) || !Object.hasOwn(priceCheckLabels, check.kind) || !check.note.trim()) {
+    warn(`${tag}: 정가와 확인 근거(상태·확인일·출처·설명) 없음`);
+    continue;
+  }
+  const hasAmount = check.kind !== 'unconfirmed' && check.kind !== 'store-closed';
+  if (hasAmount ? !Number.isInteger(check.amount) || check.amount! <= 0 : check.amount !== undefined) {
+    warn(`${tag}: 정가 확인 기록의 상태와 금액이 일치하지 않습니다`);
+    continue;
+  }
+  const status = priceCheckLabels[check.kind];
+  priceChecks.set(status, (priceChecks.get(status) ?? 0) + 1);
+  const amount = check.amount !== undefined ? ` ${formatFee(check.amount)}` : '';
+  info(`${tag}: ${status}${amount} · ${check.checkedAt} · ${check.note} ${check.url}`);
 }
-if (priceOk) ok('모든 가격 데이터 정상');
+ok(`확인 정가 ${pricesConfirmed}종`);
+priceChecks.forEach((count, status) => info(`${status} ${count}종`));
 console.log('');
 
 // ===========================================
@@ -159,8 +203,6 @@ console.log('');
 // 독자가 끝난 대회에 신청하려 든다(2026-07 실제 10건). 사람의 기억에 의존하지 않도록 기계적으로 막는다.
 console.log('━━━ 6. 마라톤 대회 데이터 검증 ━━━');
 const VALID_STATUS = ['접수예정', '접수중', '마감', '대회종료'];
-// '오늘'은 한국 날짜다. toISOString 은 UTC 라 KST 0~9시에 하루 전으로 계산된다(2026-10-07 수정).
-const today = new Date(Date.now() + 9 * 60 * 60 * 1000).toISOString().slice(0, 10);
 let marathonOk = true;
 const noRegEndOpen: string[] = []; // [C] 마감일 없는 접수중·접수예정 — 마감을 감지할 방법이 없는 구멍
 {
@@ -177,8 +219,16 @@ const noRegEndOpen: string[] = []; // [C] 마감일 없는 접수중·접수예�
     if (isPast(e, today) && e.status !== '대회종료') {
       error(`[marathon] ${name}: 개최일(${e.date})이 지났는데 status가 '${e.status}' → '대회종료'로 변경 필요`); marathonOk = false;
     }
-    // 연기는 에러가 아니지만 조용히 묻히면 안 된다 — 새 날짜가 나올 때까지 매 실행 경고
-    if (e.postponed) warn(`[marathon] ${name}: 연기 — 새 날짜 미정, 공식 재확인 (date ${e.date}는 원래 일정)`);
+    if (e.postponed) {
+      const notice = e.postponementNotice;
+      if (notice && validSourceCheck(notice)) {
+        info(`[marathon] ${name}: 연기 후 새 날짜 미정 · ${notice.checkedAt} 공식 확인 · ${notice.url}`);
+      } else {
+        warn(`[marathon] ${name}: 연기 공지의 출처·확인일 필요 (date ${e.date}는 원래 일정)`);
+      }
+    } else if (e.postponementNotice) {
+      warn(`[marathon] ${name}: 연기 상태가 해제됐지만 연기 확인이 남아 있습니다`);
+    }
     // month 가 date 와 어긋남 (필터링이 깨짐)
     const monthFromDate = `${parseInt(e.date.slice(5, 7), 10)}월`;
     if (e.month !== monthFromDate) { error(`[marathon] ${name}: month('${e.month}')가 date(${e.date} → ${monthFromDate})와 불일치`); marathonOk = false; }
@@ -230,9 +280,25 @@ const noRegEndOpen: string[] = []; // [C] 마감일 없는 접수중·접수예�
       }
     }
 
-    // 완성도 (경고): 종료된 대회는 제외
+    const fees = e.raceInfo?.entryFees;
+    const pending = e.raceInfo?.entryFeesPending;
+    for (const fee of fees ?? []) {
+      if (!Number.isFinite(fee.fee) || fee.fee < 0 || !entryFeeCurrencies.includes(fee.currency ?? 'KRW')) {
+        error(`[marathon] ${name}: 잘못된 참가비 또는 통화 (${fee.distance})`);
+        marathonOk = false;
+      }
+    }
+    if (fees?.length && pending) warn(`[marathon] ${name}: 참가비와 미정 상태가 함께 있습니다`);
     if (e.status !== '대회종료') {
-      if (!e.raceInfo?.entryFees) warn(`[marathon] ${name}: 참가비(entryFees) 없음`);
+      if (!fees?.length) {
+        if (pending && validSourceCheck(pending)) {
+          info(`[marathon] ${name}: 주최 측 참가비 미정 · ${pending.checkedAt} · ${pending.url}`);
+        } else {
+          warn(`[marathon] ${name}: 참가비 또는 공식 미정 근거 없음`);
+        }
+      } else if (fees.some(fee => fee.currency && fee.currency !== 'KRW')) {
+        info(`[marathon] ${name}: ${fees.map(fee => formatFee(fee.fee, fee.currency)).join(' / ')}`);
+      }
       if (!e.website) warn(`[marathon] ${name}: 공식 website 없음`);
     }
   }

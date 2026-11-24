@@ -3,6 +3,7 @@
  * 화면과 무관한 문자열 계산만 있어 테스트는 `src/lib/__tests__/marathon-format.test.ts` 에서 한다.
  */
 import { formatManwonExact } from '@/lib/format';
+import type { EntryFee, EntryFeeCurrency } from '@/types/marathon';
 
 /** 검색 스니펫이 잘리는 지점. 한글은 대략 이 길이에서 끊긴다 */
 export const META_DESC_MAX = 155;
@@ -19,8 +20,13 @@ export function truncateAtWord(text: string, max: number): string {
   return (space > max * 0.5 ? cut.slice(0, space) : cut) + '…';
 }
 
-export function formatFee(fee: number): string {
-  return fee.toLocaleString('ko-KR') + '원';
+export function formatFee(fee: number, currency: EntryFeeCurrency = 'KRW'): string {
+  const amount = fee.toLocaleString('ko-KR', {
+    minimumFractionDigits: currency === 'USD' && !Number.isInteger(fee) ? 2 : 0,
+    maximumFractionDigits: 2,
+  });
+  if (currency === 'USD') return `US$${amount}`;
+  return amount + (currency === 'JPY' ? '엔' : '원');
 }
 
 export function formatTimeLimit(hours: number, minutes: number): string {
@@ -29,8 +35,11 @@ export function formatTimeLimit(hours: number, minutes: number): string {
 }
 
 /** 참가비 요약 — 전 종목 같으면 "각 N만원", 다르면 종목별로 */
-export function feeSummary(fees?: { distance: string; fee: number }[]): string | null {
+export function feeSummary(fees?: EntryFee[]): string | null {
   if (!fees?.length) return null;
+  if (fees.some(fee => fee.currency && fee.currency !== 'KRW')) {
+    return fees.map(fee => `${fee.distance} ${formatFee(fee.fee, fee.currency)}`).join(' · ');
+  }
   const uniq = new Set(fees.map((f) => f.fee));
   return uniq.size === 1
     ? `참가비 각 ${formatManwonExact(fees[0].fee)}`

@@ -4,6 +4,12 @@ import type { Shoe } from '@/types/shoe';
 export const shoe: Shoe = {
     id: "salomon-pulsar",
     slug: "salomon-pulsar",
+    priceCheck: {
+      "kind": "unconfirmed",
+      "checkedAt": "2026-11-24",
+      "url": "https://salomon.co.kr/collections/sal_men_ftw_trailrunning",
+      "note": "일반 펄사의 한국 상세 본문과 정가를 확보하지 못했습니다. S/LAB 펄사 4는 별도입니다."
+    },
     brand: "Salomon",
     name: "펄사",
     imageCaption: "펄사 사진(L49230100 · Fiery Red / Vanilla Ice / Black)입니다. 공식 상품 사진과 대조했으며 구매할 성별·폭·색상 옵션과 구분하세요.",

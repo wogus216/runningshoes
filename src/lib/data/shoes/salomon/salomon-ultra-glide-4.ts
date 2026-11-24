@@ -4,6 +4,13 @@ import type { Shoe } from '@/types/shoe';
 export const shoe: Shoe = {
     id: "salomon-ultra-glide-4",
     slug: "salomon-ultra-glide-4",
+    priceCheck: {
+      "kind": "official-listing",
+      "checkedAt": "2026-11-24",
+      "url": "https://salomon.co.kr/products/l49141200",
+      "note": "살로몬 남성 L49141200 공식몰 표시가입니다. 별도 정가 표기는 확인되지 않았습니다.",
+      "amount": 230000
+    },
     brand: "Salomon",
     name: "울트라 글라이드 4",
     imageCaption: "울트라 글라이드 4 사진(L49221300 · Fiery Red / Vanilla Ice / Black)입니다. 공식 상품 사진과 대조했으며 구매할 성별·폭·색상 옵션과 구분하세요.",

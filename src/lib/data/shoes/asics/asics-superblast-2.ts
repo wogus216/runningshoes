@@ -4,6 +4,12 @@ import type { Shoe } from '@/types/shoe';
 export const shoe: Shoe = {
     id: "asics-superblast-2",
     slug: "asics-superblast-2",
+    priceCheck: {
+      "kind": "unconfirmed",
+      "checkedAt": "2026-11-24",
+      "url": "https://asics.co.kr/goods/search?keyword_log_flag=Y&search_text=%EC%8A%88%ED%8D%BC%EB%B8%94%EB%9D%BC%EC%8A%A4%ED%8A%B8+2",
+      "note": "슈퍼블라스트 2의 공식 상품 설명은 확인했으나 가격이 포함된 판매 본문을 확보하지 못했습니다."
+    },
     brand: "Asics",
     name: "슈퍼블라스트 2",
   imageCaption: "슈퍼블라스트 2 사진(1013A142-401 · BLUE FADE/EDO PURPLE)은 ASICS 공식 상품 사진과 모델·색상·구도를 대조했습니다. 사진 품번을 한국 판매 규격·가격으로 읽지 마세요.",

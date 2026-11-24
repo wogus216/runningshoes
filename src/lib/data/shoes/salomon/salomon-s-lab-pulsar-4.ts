@@ -4,6 +4,13 @@ import type { Shoe } from '@/types/shoe';
 export const shoe: Shoe = {
   id: 'salomon-s-lab-pulsar-4',
   slug: 'salomon-s-lab-pulsar-4',
+  priceCheck: {
+    "kind": "official-listing",
+    "checkedAt": "2026-11-24",
+    "url": "https://salomon.co.kr/products/l47770300",
+    "note": "살로몬 공용 L47770300 공식몰 표시가입니다. 별도 정가 표기는 확인되지 않았습니다.",
+    "amount": 340000
+  },
   brand: 'Salomon',
   name: 'S/LAB 펄사 4',
   imageCaption: "S/LAB 펄사 4 사진(L47770300 · Fiery Red / Vanilla Ice / Andorra (파이어리 레드 / 바닐라 아이스 / 안도라))입니다. 공식 상품 사진과 대조했으며 구매할 성별·폭·색상 옵션과 구분하세요.",

@@ -220,14 +220,14 @@ export default async function ShoeDetailPage({ params }: ShoeDetailPageProps) {
       'name': shoe.brand,
     },
     'category': '러닝화',
-    'offers': {
-      '@type': 'Offer',
-      'priceCurrency': 'KRW',
-      'url': `${SITE_URL}/shoes/${slug}`,
-      ...(productPrice && {
+    ...(productPrice && {
+      'offers': {
+        '@type': 'Offer',
+        'priceCurrency': 'KRW',
+        'url': `${SITE_URL}/shoes/${slug}`,
         'price': productPrice,
-      }),
-    },
+      },
+    }),
   };
 
   // FAQ JSON-LD — 신발 데이터로 동적 생성 (한국 러너 관점 5문항)

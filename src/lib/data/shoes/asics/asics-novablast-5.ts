@@ -4,6 +4,12 @@ import type { Shoe } from '@/types/shoe';
 export const shoe: Shoe = {
     id: "asics-novablast-5",
     slug: "asics-novablast-5",
+    priceCheck: {
+      "kind": "unconfirmed",
+      "checkedAt": "2026-11-24",
+      "url": "https://asics.co.kr/goods/search?keyword_log_flag=Y&search_text=%EB%85%B8%EB%B0%94%EB%B8%94%EB%9D%BC%EC%8A%A4%ED%8A%B8+5",
+      "note": "한국 공식 검색 결과에서 정확한 5세대의 정가를 확인하지 못했습니다."
+    },
     brand: "Asics",
     name: "노바블라스트 5",
   imageCaption: "노바블라스트 5 사진은 ASICS 공식 TOKYO 상품 1011C139-500(BLUE FADE/EDO PURPLE)과 대조했습니다. TOKYO 색상 사진을 일반 상품의 별도 사양 증거로 읽지 마세요.",

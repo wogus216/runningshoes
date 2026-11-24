@@ -96,9 +96,11 @@ export async function generateMetadata({ params }: MarathonDetailPageProps): Pro
     descParts.push('접수 마감.');
   }
   // "~"는 "부터"로 읽히므로 배열 첫 항목(대개 풀코스=최고가)이 아니라 최저가를 쓴다
-  const fees = event.scheduleUnverified ? undefined : event.raceInfo?.entryFees;
-  if (fees?.length) {
-    descParts.push(`참가비 ${formatFee(Math.min(...fees.map((f) => f.fee)))}~.`);
+  const fees = event.scheduleUnverified || event.postponed ? undefined : event.raceInfo?.entryFees;
+  if (fees?.length && fees.every(fee => !fee.currency || fee.currency === 'KRW')) {
+    descParts.push(`참가비 ${formatFee(Math.min(...fees.map(fee => fee.fee)))}~.`);
+  } else if (fees?.length) {
+    descParts.push(`참가비 ${feeSummary(fees)}.`);
   }
   // 여기까지가 "언제·어디서·얼마"다. 남는 자리에만 대회 고유 설명을 채운다 —
   // 예전엔 event.description(300~700자)을 통째로 붙여 스니펫이 3~5배 초과했고,
@@ -183,7 +185,9 @@ export default async function MarathonDetailPage({ params }: MarathonDetailPageP
     registrationStart: event.registrationStart,
     registrationEnd: event.registrationEnd,
   };
-  const feeText = event.scheduleUnverified ? '' : feeSummary(event.raceInfo?.entryFees);
+  const entryFees = event.scheduleUnverified || event.postponed ? undefined : event.raceInfo?.entryFees;
+  const feePending = event.raceInfo?.entryFeesPending;
+  const feeText = feeSummary(entryFees) ?? (feePending ? '참가비 미정' : null);
   const sentences = splitSentences(event.description);
 
   // 접수 마감 판정은 목록 밴드(bands.ts)와 같은 규칙 — **날짜가 수동 status를 이긴다.**
@@ -222,12 +226,12 @@ export default async function MarathonDetailPage({ params }: MarathonDetailPageP
   };
 
   // Offers (entry fees) for structured data
-  if (event.raceInfo?.entryFees && event.raceInfo.entryFees.length > 0) {
-    jsonLd.offers = event.raceInfo.entryFees.map((fee) => ({
+  if (entryFees?.length) {
+    jsonLd.offers = entryFees.map(fee => ({
       '@type': 'Offer',
       name: `${event.name} ${fee.distance}`,
       price: fee.fee,
-      priceCurrency: 'KRW',
+      priceCurrency: fee.currency ?? 'KRW',
       ...(event.website && { url: event.website }),
     }));
   }
@@ -239,11 +243,11 @@ export default async function MarathonDetailPage({ params }: MarathonDetailPageP
 
   // FAQ schema for events with practical data
   const faqItems: { question: string; answer: string }[] = [];
-  if (event.raceInfo?.entryFees && event.raceInfo.entryFees.length > 0) {
-    const feeSummary = event.raceInfo.entryFees.map(f => `${f.distance} ${formatFee(f.fee)}`).join(', ');
+  if (entryFees?.length) {
+    const amounts = entryFees.map(fee => `${fee.distance} ${formatFee(fee.fee, fee.currency)}`).join(', ');
     faqItems.push({
       question: `${event.name} 참가비는 얼마인가요?`,
-      answer: `${event.name} 참가비는 ${feeSummary}입니다.`,
+      answer: [`${event.name} 참가비는 ${amounts}입니다.`, event.raceInfo?.entryFeeNote].filter(Boolean).join(' '),
     });
   }
   if (event.raceInfo?.timeLimits && event.raceInfo.timeLimits.length > 0) {
@@ -657,7 +661,7 @@ export default async function MarathonDetailPage({ params }: MarathonDetailPageP
               )}
 
               {/* 참가비 */}
-              {event.raceInfo.entryFees && event.raceInfo.entryFees.length > 0 && (
+              {entryFees && entryFees.length > 0 && (
                 <div>
                   <h3 className="text-sm font-semibold text-secondary mb-2">참가비</h3>
                   <div className="overflow-hidden rounded-[4px] border border-border">
@@ -669,16 +673,24 @@ export default async function MarathonDetailPage({ params }: MarathonDetailPageP
                         </tr>
                       </thead>
                       <tbody>
-                        {event.raceInfo.entryFees.map((fee) => (
+                        {entryFees.map(fee => (
                           <tr key={fee.distance} className="border-t border-border">
                             <td className="px-4 py-2 font-medium text-primary">{fee.distance}</td>
-                            <td className="px-4 py-2 text-right text-primary">{formatFee(fee.fee)}</td>
+                            <td className="px-4 py-2 text-right text-primary">{formatFee(fee.fee, fee.currency)}</td>
                           </tr>
                         ))}
                       </tbody>
                     </table>
                   </div>
+                  {event.raceInfo.entryFeeNote && (
+                    <p className="mt-2 text-sm text-secondary">{event.raceInfo.entryFeeNote}</p>
+                  )}
                 </div>
+              )}
+              {feePending && (
+                <p className="text-sm text-secondary">
+                  참가비 미정 · <a href={feePending.url} className="underline" target="_blank" rel="noopener noreferrer">주최 측 요강</a>
+                </p>
               )}
 
               {/* 제한 시간 */}

@@ -4,6 +4,13 @@ import type { Shoe } from '@/types/shoe';
 export const shoe: Shoe = {
     id: "on-cloudflow-5",
     slug: "on-cloudflow-5",
+    priceCheck: {
+      "kind": "official-listing",
+      "checkedAt": "2026-11-24",
+      "url": "https://www.on.com/ko-kr/products/cloudflow-5-w-3wf1009/womens/white-lime-shoes-3WF10092929",
+      "note": "On 여성 3WF10092929 공식몰 표시가입니다. 별도 정가 표기는 확인되지 않았습니다.",
+      "amount": 219000
+    },
     brand: "On",
     name: "클라우드플로우 5",
   imageCaption: "클라우드플로우 5 사진은 On 공식 여성 상품 3WF10092929(White ) 갤러리와 대조했습니다. 이 사진을 남성 상품의 폭·규격 근거로 읽지 마세요.",

@@ -4,6 +4,13 @@ import type { Shoe } from '@/types/shoe';
 export const shoe: Shoe = {
   id: 'on-cloudmonster-hyper',
   slug: 'on-cloudmonster-hyper',
+  priceCheck: {
+    "kind": "retailer",
+    "checkedAt": "2026-11-24",
+    "url": "https://m.fleetrunner.co.kr/goods/goods_view.php?goodsNo=10318",
+    "note": "플릿러너 남성 3ME10132535 상품의 판매점 기준가입니다.",
+    "amount": 259000
+  },
   brand: 'On',
   name: '클라우드몬스터 하이퍼',
   imageCaption: "클라우드몬스터 하이퍼 사진은 On 공식 상품 갤러리 3ME10134323(Fade )의 모델·색상·구도와 대조했습니다. 사진 품번을 한국 현재 판매 규격·가격으로 읽지 마세요.",

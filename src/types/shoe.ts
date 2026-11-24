@@ -20,6 +20,15 @@ export interface KoreanFootFit {
   wideOptions?: boolean;
 }
 
+export type ShoePriceCheck = {
+  kind: 'unconfirmed' | 'store-closed' | 'historical' | 'retailer' | 'official-listing';
+  checkedAt: string;
+  url: string;
+  note: string;
+  /** 확인한 품번의 원화 금액. 제품의 한국 정가는 Shoe.price에만 기록한다. */
+  amount?: number;
+};
+
 export interface PriceAnalysis {
   /**
    * 한국 공식 정가. 한국 미정식출시(병행·직구만 있는) 신발은 비운다 — 병행가를 정가 칸에 넣으면
@@ -94,6 +103,7 @@ export interface Shoe {
   // 검색 수요 0인 초니치 변종이 동일 시리즈 상위 모델의 검색을 갉아먹는 카니발라이제이션 방지용.
   noindex?: boolean;
   price?: number;
+  priceCheck?: ShoePriceCheck;
 
   // 기본 스펙
   specs?: ShoeSpecs;
