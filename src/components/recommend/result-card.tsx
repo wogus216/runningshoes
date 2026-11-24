@@ -3,12 +3,11 @@
 import { useState, memo } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { Star, Check, AlertTriangle, ArrowRight, ChevronDown } from 'lucide-react';
+import { Check, ArrowRight, ChevronDown } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { AddToCompareButton } from '@/components/compare/add-to-compare-button';
 import { shoeThumbnail } from '@/lib/shoe-thumbnail';
 import type { RecommendedShoe } from '@/lib/recommendation';
-import { getShoeDurability } from '@/lib/durability';
 
 type ResultCardProps = {
   shoe: RecommendedShoe;
@@ -57,19 +56,6 @@ export const ResultCard = memo(function ResultCard({ shoe, rank }: ResultCardPro
         </div>
 
         <div className="min-w-0 text-left sm:text-right">
-          {shoe.rating !== undefined ? <div className="flex items-center gap-0.5">
-            {Array.from({ length: 5 }).map((_, i) => (
-              <Star
-                key={i}
-                className={cn(
-                  "h-3.5 w-3.5",
-                  i < Math.round(shoe.rating!)
-                    ? "fill-warning stroke-warning"
-                    : "stroke-border"
-                )}
-              />
-            ))}
-          </div> : null}
           {shoe.price && (
             <p className="mt-1 whitespace-nowrap text-lg font-bold text-primary">
               ₩{shoe.price.toLocaleString()}
@@ -98,15 +84,6 @@ export const ResultCard = memo(function ResultCard({ shoe, rank }: ResultCardPro
         </div>
       )}
 
-      {shoe.matchWarnings.length > 0 && (
-        <div className="mb-4 rounded-[4px] border border-amber-200 bg-amber-50 p-3">
-          <p className="mb-2 flex items-center gap-2 text-xs font-semibold text-amber-900"><AlertTriangle className="h-4 w-4" />선택 조건에서 확인할 점</p>
-          <ul className="space-y-1 text-sm text-amber-900">
-            {shoe.matchWarnings.map(warning => <li key={warning}>{warning}</li>)}
-          </ul>
-        </div>
-      )}
-
       {/* 상세 추천 이유 */}
       {shoe.detailedReason && (
         <div className="mb-4">
@@ -132,7 +109,7 @@ export const ResultCard = memo(function ResultCard({ shoe, rank }: ResultCardPro
       )}
 
       {/* 주요 스펙 */}
-      <div className="mb-4 grid grid-cols-3 gap-1 rounded-[4px] bg-sky-50 p-3 sm:gap-3">
+      <div className="mb-4 grid grid-cols-2 gap-1 rounded-[4px] bg-sky-50 p-3 sm:gap-3">
         <div className="text-center">
           <p className="text-xs text-tertiary">무게</p>
           <p className="break-words text-sm font-bold text-primary sm:text-base">{shoe.specs?.weight}g</p>
@@ -140,10 +117,6 @@ export const ResultCard = memo(function ResultCard({ shoe, rank }: ResultCardPro
         <div className="text-center">
           <p className="text-xs text-tertiary">드롭</p>
           <p className="break-words text-sm font-bold text-primary sm:text-base">{shoe.specs?.drop}mm</p>
-        </div>
-        <div className="text-center">
-          <p className="text-xs text-tertiary">내구성 (추정)</p>
-          <p className="break-words text-sm font-bold text-primary sm:text-base">{getShoeDurability(shoe)?.rangeLabel ?? '-'}</p>
         </div>
       </div>
 

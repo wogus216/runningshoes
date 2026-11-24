@@ -121,15 +121,11 @@ export default function GelsPage() {
                     )}
                   </div>
 
-                  {/* 가격 & 평점 */}
+                  {/* 가격 */}
                   <div className="flex items-center justify-between">
                     <span className="text-sm font-semibold text-primary">
                       {gel.price === undefined ? '현재 가격 미확인' : `${gel.price.toLocaleString()}원`}
                     </span>
-                    {gel.rating !== undefined && <div className="flex items-center gap-1">
-                      <span className="text-yellow-500 text-sm">★</span>
-                      <span className="text-sm font-medium text-primary">{gel.rating}</span>
-                    </div>}
                   </div>
                 </Link>
               ))}

@@ -1,11 +1,9 @@
-import type { Shoe } from '@/types/shoe';
-
 // 2026-10-20 등록 — 출처: 프로스펙스 공식몰 상품 PR0UR26S201(WHITE)·PR0UR26S202 상세의 Product Spec·사이즈 가이드 표·
 // Features·상품 상세 정보(제조국 대한민국, 제조연월 2026-02). 2025 하반기 제조분(PR0UR25F301~303)도 같은 이름·가격으로 판매 중.
 // RunRepeat 미게시(runrepeat.com/prospecs-duplex-gf 404, 대조군 nike-pegasus-41 200).
 // 점수는 신상 추정 프로토콜 — 우리 DB의 15.9만~17.9만 원 안정화 5종(웨이브 인스파이어 21·22·가이드 18·스트럭처 26·
 // 860 v14) 중앙값에서 쿠션·반발 1점 하향.
-export const shoe: Shoe = {
+export const shoe = {
   id: 'prospecs-duplex-gf',
   slug: 'prospecs-duplex-gf',
   brand: 'Prospecs',

@@ -80,7 +80,7 @@ export default async function ComparePairPage({ params }: PageProps) {
   const verdicts = buildVerdicts(a, b);
   const rows = specRows(a, b);
   const narrative = buildNarrative(a, b, category);
-  const faqs = buildFaqs(a, b);
+  const faqs = buildFaqs();
   const relatedPairs = getPairsForCategory(category, 8).filter((p) => p.slug !== pair).slice(0, 4);
   const otherForA = getPairsForShoe(a.slug).filter((p) => p.slug !== pair).slice(0, 3);
   const otherForB = getPairsForShoe(b.slug).filter((p) => p.slug !== pair).slice(0, 3);

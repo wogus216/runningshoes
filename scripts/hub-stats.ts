@@ -9,7 +9,7 @@
  *  - 가격 통계 모집단: price > 0 인 모델. 가격대 경계는 15·20·25만원(하한 포함)
  *  - 카본: biomechanics.carbonPlate === true
  *  - 중앙값: 카테고리별 가격 확인 모델의 단순 중앙값(짝수면 가운데 두 값 평균)
- *  - 토박스: koreanFootFit.toBoxWidth 가 있는 모델만 브랜드별로 센다(미분류는 따로 표시)
+ *  - 토박스: koreanFootFit.wideOptions === true 인 모델을 브랜드별로 센다
  *  - 데이터 시점: 실행 시점의 DB (커밋 기준)
  * 허브 문장·표에 쓰는 숫자는 이 출력으로만 갱신한다.
  */
@@ -42,9 +42,10 @@ const cats: Record<string, number[]> = {};
 for (const s of priced) (cats[s.category] ??= []).push(s.price as number);
 for (const [c, v] of Object.entries(cats)) console.log(`${c}: ${v.length}종 · 중앙값 ${(median(v) / 10000).toFixed(2)}만`);
 
-const br: Record<string, Record<string, number>> = {};
-for (const s of shoes) {
-  const t = s.koreanFootFit?.toBoxWidth ?? '미분류';
-  (br[s.brand] ??= {})[t] = (br[s.brand][t] ?? 0) + 1;
+const wideCounts: Record<string, number> = {};
+for (const shoe of shoes) {
+  if (shoe.koreanFootFit?.wideOptions === true) {
+    wideCounts[shoe.brand] = (wideCounts[shoe.brand] ?? 0) + 1;
+  }
 }
-for (const [b, v] of Object.entries(br)) console.log(`${b}: 좁음 ${v.narrow ?? 0} · 표준 ${v.standard ?? 0} · 넓음 ${v.wide ?? 0}${v['미분류'] ? ` · 미분류 ${v['미분류']}` : ''}`);
+for (const [brand, count] of Object.entries(wideCounts)) console.log(`${brand}: 와이드 옵션 확인 ${count}종`);

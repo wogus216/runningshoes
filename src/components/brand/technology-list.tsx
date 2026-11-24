@@ -67,73 +67,8 @@ function TechnologySection({ technology, shoes }: { technology: BrandTechnology;
           </p>
         </div>
 
-        {/* 성능 지표 & 장점 */}
-        <div className="grid md:grid-cols-2 gap-6">
-          {/* 성능 지표 */}
-          {technology.characteristics && (
-            <div>
-              <h3 className="text-sm font-bold text-primary mb-3">성능 지표</h3>
-              <div className="space-y-3">
-                {technology.characteristics.cushioning !== undefined && (
-                  <div>
-                    <div className="flex justify-between text-sm mb-1">
-                      <span className="text-secondary">쿠셔닝</span>
-                      <span className={`font-bold ${colorClasses.text}`}>{technology.characteristics.cushioning}/10</span>
-                    </div>
-                    <div className="spec-bar">
-                      <div
-                        className={`spec-bar-fill ${colorClasses.bg.replace('/10', '')}`}
-                        style={{ width: `${technology.characteristics.cushioning * 10}%` }}
-                      />
-                    </div>
-                  </div>
-                )}
-                {technology.characteristics.responsiveness !== undefined && (
-                  <div>
-                    <div className="flex justify-between text-sm mb-1">
-                      <span className="text-secondary">반발력</span>
-                      <span className={`font-bold ${colorClasses.text}`}>{technology.characteristics.responsiveness}/10</span>
-                    </div>
-                    <div className="spec-bar">
-                      <div
-                        className={`spec-bar-fill ${colorClasses.bg.replace('/10', '')}`}
-                        style={{ width: `${technology.characteristics.responsiveness * 10}%` }}
-                      />
-                    </div>
-                  </div>
-                )}
-                {technology.characteristics.durability !== undefined && (
-                  <div>
-                    <div className="flex justify-between text-sm mb-1">
-                      <span className="text-secondary">내구성</span>
-                      <span className={`font-bold ${colorClasses.text}`}>{technology.characteristics.durability}/10</span>
-                    </div>
-                    <div className="spec-bar">
-                      <div
-                        className={`spec-bar-fill ${colorClasses.bg.replace('/10', '')}`}
-                        style={{ width: `${technology.characteristics.durability * 10}%` }}
-                      />
-                    </div>
-                  </div>
-                )}
-                {technology.characteristics.weight !== undefined && (
-                  <div>
-                    <div className="flex justify-between text-sm mb-1">
-                      <span className="text-secondary">경량성</span>
-                      <span className={`font-bold ${colorClasses.text}`}>{technology.characteristics.weight}/10</span>
-                    </div>
-                    <div className="spec-bar">
-                      <div
-                        className={`spec-bar-fill ${colorClasses.bg.replace('/10', '')}`}
-                        style={{ width: `${technology.characteristics.weight * 10}%` }}
-                      />
-                    </div>
-                  </div>
-                )}
-              </div>
-            </div>
-          )}
-
+        {/* 주요 장점 */}
+        <div className="grid gap-6">
           {/* 주요 장점 */}
           <div>
             <h3 className="flex items-center gap-2 text-sm font-bold text-primary mb-3">

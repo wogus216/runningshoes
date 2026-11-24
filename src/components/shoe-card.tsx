@@ -3,7 +3,7 @@
 import { memo, useMemo } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { TrendingUp, Snowflake, Zap, Check, AlertTriangle } from "lucide-react";
+import { Zap, Check } from "lucide-react";
 import { cn } from "@/lib/utils";
 import type { GridShoe } from "@/lib/data/shoes";
 import { AddToCompareButton } from "@/components/compare/add-to-compare-button";
@@ -20,48 +20,10 @@ type ShoeCardProps = {
 export const ShoeCard = memo(function ShoeCard({ shoe, index = 0, onTagClick }: ShoeCardProps) {
   const href = shoe.slug ? `/shoes/${shoe.slug}` : "#";
 
-  // 배지 계산 (최대 2개만 표시)
-  const badges = useMemo(() => {
-    const result: { icon: 'value' | 'winter' | 'carbon'; text: string; color: string }[] = [];
-
-    // 가성비 배지 (valueRating 8 이상)
-    if (shoe.priceAnalysis?.valueRating && shoe.priceAnalysis.valueRating >= 8) {
-      result.push({ icon: 'value', text: '가성비', color: 'positive' });
-    }
-    // 카본 플레이트 배지
-    if (shoe.biomechanics?.carbonPlate) {
-      result.push({ icon: 'carbon', text: '카본', color: 'warning' });
-    }
-    // 겨울 호환 배지
-    if (shoe.koreanFootFit?.winterCompatibility &&
-        ['excellent', 'good'].includes(shoe.koreanFootFit.winterCompatibility)) {
-      result.push({ icon: 'winter', text: '겨울', color: 'accent' });
-    }
-
-    return result.slice(0, 2); // 최대 2개
-  }, [shoe.priceAnalysis?.valueRating, shoe.biomechanics?.carbonPlate, shoe.koreanFootFit?.winterCompatibility]);
-
-  // 추천 태그 (최대 2개)
-  const recommendTags = useMemo(() => {
-    const tags: { text: string; type: 'positive' | 'warning' }[] = [];
-
-    // 발볼 넓음
-    if (shoe.koreanFootFit?.toBoxWidth === 'wide') {
-      tags.push({ text: '발볼넓음', type: 'positive' });
-    }
-
-    // 초보 추천
-    if (shoe.beginnerFriendly) {
-      tags.push({ text: '초보추천', type: 'positive' });
-    }
-
-    // 토박스 좁음 경고
-    if (shoe.koreanFootFit?.toBoxWidth === 'narrow') {
-      tags.push({ text: '발볼좁음', type: 'warning' });
-    }
-
-    return tags.slice(0, 2); // 최대 2개
-  }, [shoe.koreanFootFit, shoe.beginnerFriendly]);
+  const badges = shoe.biomechanics?.carbonPlate ? [{ text: '카본' }] : [];
+  const recommendTags = shoe.beginnerFriendly
+    ? [{ text: '초보추천' }]
+    : [];
 
   const statChips = useMemo(() => {
     const chips: string[] = [];
@@ -72,12 +34,9 @@ export const ShoeCard = memo(function ShoeCard({ shoe, index = 0, onTagClick }: 
     if (shoe.biomechanics?.drop !== undefined) {
       chips.push(`드롭 ${shoe.biomechanics.drop}mm`);
     }
-    if (shoe.priceAnalysis?.valueRating) {
-      chips.push(`가치 ${shoe.priceAnalysis.valueRating.toFixed(1)}`);
-    }
 
     return chips.slice(0, 2);
-  }, [shoe.specs?.weight, shoe.biomechanics?.drop, shoe.priceAnalysis?.valueRating]);
+  }, [shoe.specs?.weight, shoe.biomechanics?.drop]);
 
   const mobileBadge = badges[0];
   const mobileTag = recommendTags[0];
@@ -140,16 +99,9 @@ export const ShoeCard = memo(function ShoeCard({ shoe, index = 0, onTagClick }: 
         <div className="mb-2 flex flex-wrap items-center gap-1.5 md:hidden">
           {mobileBadge && (
             <span
-              className={cn(
-                "inline-flex items-center gap-1 rounded-[3px] px-2 py-1 text-[10px] font-semibold",
-                mobileBadge.color === 'positive' && "bg-[var(--positive-soft)] text-positive",
-                mobileBadge.color === 'warning' && "bg-orange-50 text-orange-700",
-                mobileBadge.color === 'accent' && "bg-sky-50 text-sky-700"
-              )}
+              className="inline-flex items-center gap-1 rounded-[3px] bg-orange-50 px-2 py-1 text-[10px] font-semibold text-orange-700"
             >
-              {mobileBadge.icon === 'value' && <TrendingUp className="w-3 h-3" aria-hidden="true" />}
-              {mobileBadge.icon === 'carbon' && <Zap className="w-3 h-3" aria-hidden="true" />}
-              {mobileBadge.icon === 'winter' && <Snowflake className="w-3 h-3" aria-hidden="true" />}
+              <Zap className="w-3 h-3" aria-hidden="true" />
               {mobileBadge.text}
             </span>
           )}
@@ -161,14 +113,10 @@ export const ShoeCard = memo(function ShoeCard({ shoe, index = 0, onTagClick }: 
               key={idx}
               className={cn(
                 "inline-flex items-center gap-1 rounded-[3px] px-2 py-1 text-[11px] font-semibold",
-                badge.color === 'positive' && "bg-[var(--positive-soft)] text-positive",
-                badge.color === 'warning' && "bg-orange-50 text-orange-700",
-                badge.color === 'accent' && "bg-sky-50 text-sky-700"
+                "bg-orange-50 text-orange-700",
               )}
             >
-              {badge.icon === 'value' && <TrendingUp className="w-3 h-3" aria-hidden="true" />}
-              {badge.icon === 'carbon' && <Zap className="w-3 h-3" aria-hidden="true" />}
-              {badge.icon === 'winter' && <Snowflake className="w-3 h-3" aria-hidden="true" />}
+              <Zap className="w-3 h-3" aria-hidden="true" />
               {badge.text}
             </span>
           ))}
@@ -192,14 +140,10 @@ export const ShoeCard = memo(function ShoeCard({ shoe, index = 0, onTagClick }: 
             <span
               className={cn(
                 "inline-flex items-center gap-1 text-[10px] font-semibold",
-                mobileTag.type === 'positive' ? "text-positive" : "text-orange-700"
+                "text-positive"
               )}
             >
-              {mobileTag.type === 'positive' ? (
-                <Check className="w-3 h-3" aria-hidden="true" />
-              ) : (
-                <AlertTriangle className="w-3 h-3" aria-hidden="true" />
-              )}
+              <Check className="w-3 h-3" aria-hidden="true" />
               {mobileTag.text}
             </span>
           )}
@@ -211,14 +155,10 @@ export const ShoeCard = memo(function ShoeCard({ shoe, index = 0, onTagClick }: 
               key={idx}
               className={cn(
                 "inline-flex items-center gap-1 text-[11px] font-semibold flex-shrink-0",
-                tag.type === 'positive' ? "text-positive" : "text-orange-700"
+                "text-positive"
               )}
             >
-              {tag.type === 'positive' ? (
-                <Check className="w-3 h-3" aria-hidden="true" />
-              ) : (
-                <AlertTriangle className="w-3 h-3" aria-hidden="true" />
-              )}
+              <Check className="w-3 h-3" aria-hidden="true" />
               {tag.text}
             </span>
           ))}
@@ -244,10 +184,6 @@ export const ShoeCard = memo(function ShoeCard({ shoe, index = 0, onTagClick }: 
           <span className="font-mono text-base font-bold tabular-nums text-primary md:text-lg">
             {formatWon(shoe.price)}
           </span>
-          {shoe.rating !== undefined ? <span className="flex items-center gap-1 font-mono text-xs font-semibold tabular-nums text-secondary">
-            <span aria-hidden="true" className="text-accent">★</span>
-            {shoe.rating.toFixed(1)}
-          </span> : null}
         </div>
       </div>
     </article>

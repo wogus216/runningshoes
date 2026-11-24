@@ -1,7 +1,6 @@
 import type { Shoe, KoreanFootFit } from '@/types/shoe';
 import { isCompleteShoe } from '@/types/shoe';
 import { categoryOrder as sharedCategoryOrder } from '@/types/shoe';
-import { resolveDurabilityRange } from '@/lib/durability';
 import { nikeShoes } from './nike';
 import { adidasShoes } from './adidas';
 import { asicsShoes } from './asics';
@@ -103,20 +102,11 @@ export type SimilarShoeInfo = {
   slug: string;
   brand: string;
   name: string;
-  rating?: number;
   category: string;
   image?: string;
   price?: number;
   specs?: {
-    cushioning?: number;
     weight: number;
-    stability?: number;
-  };
-  priceAnalysis?: {
-    valueRating?: number;
-  };
-  koreanFootFit?: {
-    toBoxWidth?: string;
   };
 };
 
@@ -130,20 +120,11 @@ export function getSimilarShoesData(slugs: string[]): SimilarShoeInfo[] {
         slug: shoe.slug,
         brand: shoe.brand,
         name: shoe.name,
-        rating: shoe.rating,
         category: shoe.category,
         image: shoe.image,
         price: shoe.price,
         specs: shoe.specs ? {
-          cushioning: shoe.specs.cushioning,
           weight: shoe.specs.weight,
-          stability: shoe.specs.stability,
-        } : undefined,
-        priceAnalysis: shoe.priceAnalysis ? {
-          valueRating: shoe.priceAnalysis.valueRating,
-        } : undefined,
-        koreanFootFit: shoe.koreanFootFit ? {
-          toBoxWidth: shoe.koreanFootFit.toBoxWidth,
         } : undefined,
       });
     }
@@ -158,31 +139,22 @@ export function getSimilarShoesData(slugs: string[]): SimilarShoeInfo[] {
  * 클라이언트 번들 ~50% 절감 목표 (461KB → ~200KB).
  */
 export type CardShoe = Pick<Shoe,
-  | 'id' | 'slug' | 'brand' | 'name' | 'category' | 'rating'
+  | 'id' | 'slug' | 'brand' | 'name' | 'category'
   | 'image' | 'price' | 'tags' | 'oneliner'
   | 'specs' | 'biomechanics' | 'koreanFootFit'
   | 'targetUsers' | 'priceAnalysis' | 'features'
-> & {
-  /**
-   * 내구성 표시용 범위 [min, max]. detailedSpecs를 뺀 경량 타입이라
-   * 상세 페이지와 같은 범위를 쓰도록 빌드 시점에 미리 계산해 넣는다.
-   */
-  durabilityRange?: [number, number];
-};
+>;
 
 export function toCardShoe(shoe: Shoe): CardShoe {
   // 제외 필드 (클라이언트 번들 절감):
   // reviews, detailedSpecs, editorComment, purchaseLinks, similarShoes, images,
   // description, status (2026-07 소비처 전수 조사에서 사용 0회 확인)
-  const durability = resolveDurabilityRange(shoe.specs?.durability, shoe.detailedSpecs?.durability);
   return {
-    durabilityRange: durability ? [durability.min, durability.max] : undefined,
     id: shoe.id,
     slug: shoe.slug,
     brand: shoe.brand,
     name: shoe.name,
     category: shoe.category,
-    rating: shoe.rating,
     image: shoe.image,
     price: shoe.price,
     tags: shoe.tags,
@@ -207,13 +179,13 @@ export function getCardShoes(): CardShoe[] {
  * 전체 데이터가 필요한 비교/추천은 CardShoe를 그대로 쓴다.
  */
 export type GridShoe = Pick<Shoe,
-  | 'id' | 'slug' | 'brand' | 'name' | 'category' | 'rating'
+  | 'id' | 'slug' | 'brand' | 'name' | 'category'
   | 'image' | 'price' | 'tags' | 'oneliner'
 > & {
   specs?: { weight?: number };
   biomechanics?: { drop?: number; carbonPlate?: boolean };
-  koreanFootFit?: Pick<KoreanFootFit, 'toBoxWidth' | 'winterCompatibility' | 'wideOptions'>;
-  priceAnalysis?: { valueRating?: number; msrp?: number };
+  koreanFootFit?: Pick<KoreanFootFit, 'wideOptions'>;
+  priceAnalysis?: { msrp?: number };
   /** targetUsers.recommended에 초보/입문 포함 여부 사전계산 (카드 뱃지용) */
   beginnerFriendly?: boolean;
 };
@@ -225,7 +197,6 @@ export function toGridShoe(shoe: Shoe): GridShoe {
     brand: shoe.brand,
     name: shoe.name,
     category: shoe.category,
-    rating: shoe.rating,
     image: shoe.image,
     price: shoe.price,
     tags: shoe.tags,
@@ -236,14 +207,12 @@ export function toGridShoe(shoe: Shoe): GridShoe {
       : undefined,
     koreanFootFit: shoe.koreanFootFit
       ? {
-          toBoxWidth: shoe.koreanFootFit.toBoxWidth,
-          winterCompatibility: shoe.koreanFootFit.winterCompatibility,
           // 홈 인덱스의 "와이드 출시" 필터가 쓴다. boolean 하나라 페이로드 영향은 없다
           wideOptions: shoe.koreanFootFit.wideOptions,
         }
       : undefined,
     priceAnalysis: shoe.priceAnalysis
-      ? { valueRating: shoe.priceAnalysis.valueRating, msrp: shoe.priceAnalysis.msrp }
+      ? { msrp: shoe.priceAnalysis.msrp }
       : undefined,
     beginnerFriendly:
       shoe.targetUsers?.recommended?.some((t) => t.includes('초보') || t.includes('입문')) ?? false,

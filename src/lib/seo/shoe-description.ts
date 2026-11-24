@@ -3,11 +3,9 @@ import type { Shoe } from '@/types/shoe';
 type DescriptionShoe = Pick<Shoe, 'name' | 'description' | 'price' | 'specs' | 'category' | 'koreanFootFit'>;
 
 export function shoeDescription(shoe: DescriptionShoe, brandLabel: string): string {
-  const footWidth = { narrow: '발볼 좁음', standard: '발볼 표준', wide: '발볼 넓음' };
   const parts = [
     `${brandLabel} ${shoe.name}`,
     shoe.specs?.weight ? `무게 ${shoe.specs.weight}g` : null,
-    shoe.koreanFootFit?.toBoxWidth ? footWidth[shoe.koreanFootFit.toBoxWidth] : null,
     shoe.price ? `확인 가격 ${shoe.price.toLocaleString('ko-KR')}원` : null,
     shoe.category ? `${shoe.category} 러닝화` : null,
   ].filter(Boolean);

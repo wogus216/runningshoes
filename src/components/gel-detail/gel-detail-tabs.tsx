@@ -9,7 +9,6 @@ import { CarbScience } from './carb-science';
 import { GITolerance } from './gi-tolerance';
 import { FlavorTexture } from './flavor-texture';
 import { UsageGuide } from './usage-guide';
-import { DollarSign, Star, TrendingDown } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { img } from '@/lib/image';
@@ -22,10 +21,9 @@ type GelDetailTabsProps = {
 const tabs = [
   { id: 'nutrition', label: '영양성분', mobileLabel: '영양' },
   { id: 'carb', label: '탄수화물 과학', mobileLabel: '과학' },
-  { id: 'gi', label: '위장 안정성', mobileLabel: '위장' },
-  { id: 'flavor', label: '맛/식감', mobileLabel: '맛' },
+  { id: 'gi', label: '섭취 시 확인', mobileLabel: '섭취' },
+  { id: 'flavor', label: '맛 옵션', mobileLabel: '맛' },
   { id: 'usage', label: '섭취 가이드', mobileLabel: '가이드' },
-  { id: 'price', label: '가격', mobileLabel: '가격' },
   { id: 'reviews', label: '적합성 분석', mobileLabel: '적합성' },
 ] as const;
 
@@ -33,31 +31,21 @@ type TabId = typeof tabs[number]['id'];
 
 export function GelDetailTabs({ gel, similarGelsData }: GelDetailTabsProps) {
   const [activeTab, setActiveTab] = useState<TabId>('nutrition');
-
-  // 별점 렌더링
-  const renderStars = (rating: number) => {
-    return (
-      <div className="flex items-center gap-0.5">
-        {[1, 2, 3, 4, 5].map((star) => (
-          <Star
-            key={star}
-            className={`w-3 h-3 ${
-              star <= rating
-                ? 'fill-sky-500 text-sky-500'
-                : 'text-border'
-            }`}
-          />
-        ))}
-      </div>
+  const availableTabs = tabs
+    .filter(tab => tab.id !== 'reviews' || gel.reviews.length > 0)
+    .filter(tab =>
+      tab.id !== 'flavor'
+      || gel.flavorProfile.flavors.length > 0
+      || gel.flavorProfile.texture
+      || gel.flavorProfile.aftertaste
     );
-  };
 
   return (
     <div className="space-y-4">
       {/* 탭 네비게이션 */}
       <div className="sticky top-14 z-40 overflow-hidden rounded-[4px] border border-sky-950/20 bg-[rgba(8,18,38,0.92)] backdrop-blur-xl">
         <div role="group" aria-label="젤 상세 항목" className="flex overflow-x-auto">
-          {tabs.filter((tab) => tab.id !== 'price' || gel.priceAnalysis).map((tab) => (
+          {availableTabs.map((tab) => (
             <button
               key={tab.id}
               aria-label={tab.label}
@@ -111,112 +99,6 @@ export function GelDetailTabs({ gel, similarGelsData }: GelDetailTabsProps) {
         {activeTab === 'usage' && (
           <div className="section-card border border-[var(--accent-line)] bg-white/88 p-6">
             <UsageGuide gel={gel} />
-          </div>
-        )}
-
-        {/* 가격 탭 */}
-        {activeTab === 'price' && gel.priceAnalysis && (
-          <div className="section-card border border-[var(--accent-line)] bg-white/88 p-6">
-            <h2 className="font-bold mb-4 md:mb-5 text-primary">가격 분석</h2>
-
-            {/* 가격 정보 */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-5">
-              <div className="rounded-[4px] bg-sky-50 p-4">
-                <div className="flex items-center gap-2 mb-2">
-                  <DollarSign className="w-4 h-4 text-sky-700" />
-                  <h3 className="text-sm font-bold text-primary">개당 가격</h3>
-                </div>
-                <p className="text-2xl font-bold text-primary">
-                  ₩{gel.priceAnalysis.msrp.toLocaleString()}
-                </p>
-              </div>
-
-              {gel.priceAnalysis.bulkPrice && (
-                <div className="rounded-[4px] bg-sky-50 p-4">
-                  <div className="flex items-center gap-2 mb-2">
-                    <TrendingDown className="w-4 h-4 text-sky-700" />
-                    <h3 className="text-sm font-bold text-primary">묶음 구매</h3>
-                  </div>
-                  <p className="text-2xl font-bold text-sky-700">
-                    ₩{gel.priceAnalysis.bulkPrice.toLocaleString()}
-                  </p>
-                  <p className="text-xs text-tertiary mt-1">
-                    개당 ₩{(gel.priceAnalysis.msrp - gel.priceAnalysis.bulkPrice).toLocaleString()} 절약
-                  </p>
-                </div>
-              )}
-
-              <div className="rounded-[4px] bg-sky-50 p-4">
-                <h3 className="text-sm font-bold text-primary mb-2">풀마라톤 1회 비용</h3>
-                <p className="text-xl font-bold text-primary">
-                  ₩{gel.priceAnalysis.marathonCost.toLocaleString()}
-                </p>
-              </div>
-
-              <div className="rounded-[4px] bg-sky-50 p-4">
-                <h3 className="text-sm font-bold text-primary mb-2">가격대</h3>
-                <p className="text-sm text-secondary capitalize">
-                  {gel.priceAnalysis.priceTier === 'budget' && '예산형'}
-                  {gel.priceAnalysis.priceTier === 'entry' && '입문형'}
-                  {gel.priceAnalysis.priceTier === 'mid' && '중가형'}
-                  {gel.priceAnalysis.priceTier === 'premium' && '프리미엄'}
-                  {gel.priceAnalysis.priceTier === 'super-premium' && '슈퍼 프리미엄'}
-                </p>
-              </div>
-            </div>
-
-            {/* 양갱 비교 */}
-            <div className="mb-5 rounded-[4px] border border-sky-200 bg-sky-50 p-4">
-              <h3 className="mb-2 text-sm font-bold text-sky-700">양갱 대비 가성비</h3>
-              <p className="text-sm text-secondary leading-relaxed">
-                {gel.priceAnalysis.yangGangComparison}
-              </p>
-            </div>
-
-            {/* 가치 평가 바 */}
-            <div className="mb-5">
-              <div className="flex justify-between text-sm mb-2">
-                <span className="text-primary font-bold">가치 평가</span>
-                <span className="font-medium text-primary">
-                  {gel.priceAnalysis.valueRating}/10
-                </span>
-              </div>
-              <div className="h-3 overflow-hidden rounded-full bg-sky-100">
-                <div
-                  className={cn(
-                    "h-full rounded-full transition-all",
-                    gel.priceAnalysis.valueRating >= 8 ? "bg-sky-600" :
-                    gel.priceAnalysis.valueRating >= 6 ? "bg-sky-500" :
-                    "bg-sky-400"
-                  )}
-                  style={{ width: `${gel.priceAnalysis.valueRating * 10}%` }}
-                />
-              </div>
-            </div>
-
-            {/* 가격 정보 출처 */}
-            <div className="text-xs text-tertiary">
-              <p>가격 확인일: {gel.priceAnalysis.priceCheckedAt}</p>
-              <p>출처: {gel.priceAnalysis.priceSource}</p>
-            </div>
-
-            {/* 비슷한 가격대 대안 */}
-            {gel.priceAnalysis.alternatives.length > 0 && (
-              <div className="mt-6">
-                <h3 className="text-sm font-bold text-primary mb-3">비슷한 가격대 대안</h3>
-                <div className="flex flex-wrap gap-2">
-                  {gel.priceAnalysis.alternatives.map((alt, index) => (
-                    <Link
-                      key={index}
-                      href={`/gels/${alt}` as Route}
-                      className="rounded-[4px] border border-sky-100 bg-sky-50 px-3 py-1.5 text-sm text-secondary transition hover:border-sky-200 hover:bg-sky-100 hover:text-sky-700"
-                    >
-                      {alt}
-                    </Link>
-                  ))}
-                </div>
-              </div>
-            )}
           </div>
         )}
 
@@ -284,8 +166,6 @@ export function GelDetailTabs({ gel, similarGelsData }: GelDetailTabsProps) {
                     {similarGel.name}
                   </h3>
                   <div className="flex items-center gap-2">
-                    {similarGel.rating !== undefined && renderStars(similarGel.rating)}
-                    <span className="text-xs text-tertiary">{similarGel.rating !== undefined ? `(${similarGel.rating})` : '평가 미확인'}</span>
                   </div>
                   {similarGel.price && (
                     <p className="text-sm font-bold text-primary">

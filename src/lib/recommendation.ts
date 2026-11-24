@@ -38,10 +38,8 @@ export function isUserProfile(value: unknown): value is UserProfile {
 }
 
 export type RecommendedShoe = CardShoe & {
-  matchScore: number;       // 후보 정렬용 우선순위. 성능 점수·개인 적합 확률이 아니다.
   rawScore: number;
   matchReasons: string[];
-  matchWarnings: string[];
   detailedReason?: string;
 };
 
@@ -90,10 +88,8 @@ export function recommendShoes(shoes: CardShoe[], profile: UserProfile): Recomme
 
     recommendations.push({
       ...shoe,
-      matchScore: priority,
       rawScore: priority,
       matchReasons: reasons,
-      matchWarnings: [],
       detailedReason: `${withJosa(`${shoe.brand} ${shoe.name}`, '은/는')} ${shoe.category} 분류이며 확인한 한국 정가는 ${price.toLocaleString('ko-KR')}원입니다. 용도 분류가 일치하는 후보를 먼저 모으고, 저장된 브랜드 선호와 확인 가격 순서로 비교합니다. 모델별 측정 조건과 착화 관련 원문은 상세 페이지에서 확인하세요.`,
     });
   }

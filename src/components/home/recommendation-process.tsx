@@ -51,7 +51,7 @@ export function RecommendationProcess({ questionCount, minutes }: Recommendation
         </div>
 
         <div className={styles.fits}>
-          <p className={styles.fitsH}>추천 점수는 후보 사이의 상대 비교입니다.</p>
+          <p className={styles.fitsH}>용도·예산·와이드 옵션으로 후보를 정렬합니다.</p>
           <p className={styles.roleD}>개인의 착화감이나 치료·부상 예방 효과를 보장하지 않습니다. 표시한 이유와 실제 착화를 함께 확인하세요.</p>
         </div>
       </div>

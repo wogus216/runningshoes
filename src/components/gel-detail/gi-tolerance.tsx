@@ -1,6 +1,5 @@
 import type { Gel } from "@/types/gel";
 import { Heart, AlertTriangle, Droplets, Trophy } from "lucide-react";
-import { cn } from "@/lib/utils";
 
 type GIToleranceProps = {
   gel: Gel;
@@ -9,70 +8,9 @@ type GIToleranceProps = {
 export function GITolerance({ gel }: GIToleranceProps) {
   const gi = gel.giTolerance;
 
-  // GI 등급에 따른 색상 및 아이콘
-  const getGILevel = () => {
-    switch (gi.overall) {
-      case 'excellent':
-        return {
-          color: 'text-sky-700',
-          bg: 'bg-sky-50',
-          border: 'border-sky-200',
-          label: '매우 안정적',
-          emoji: '🩵'
-        };
-      case 'good':
-        return {
-          color: 'text-sky-700',
-          bg: 'bg-sky-50',
-          border: 'border-sky-200',
-          label: '안정적',
-          emoji: '💙'
-        };
-      case 'moderate':
-        return {
-          color: 'text-amber-700',
-          bg: 'bg-amber-50',
-          border: 'border-amber-200',
-          label: '보통',
-          emoji: '💛'
-        };
-      case 'poor':
-        return {
-          color: 'text-rose-600',
-          bg: 'bg-rose-50',
-          border: 'border-rose-200',
-          label: '주의 필요',
-          emoji: '❤️'
-        };
-      default:
-        return {
-          color: 'text-primary',
-          bg: 'bg-surface',
-          border: 'border-border',
-          label: '미확인',
-          emoji: '🤍'
-        };
-    }
-  };
-
-  const level = getGILevel();
-
   return (
     <div>
-      <h2 className="font-bold mb-4 md:mb-5 text-primary">위장 안정성</h2>
-
-      {/* GI 등급 표시 */}
-      {gi.overall !== 'unknown' && <div className={cn("rounded-[4px] p-5 mb-5 border", level.bg, level.border)}>
-        <div className="flex items-center gap-3 mb-2">
-          <span className="text-3xl">{level.emoji}</span>
-          <div>
-            <h3 className="text-sm font-bold text-primary">전체 평가</h3>
-            <p className={cn("text-lg font-bold", level.color)}>{level.label}</p>
-          </div>
-        </div>
-      </div>}
-
-      {gi.overall === 'unknown' && <p className="mb-5 text-sm text-secondary">제품별 위장 안정성의 독립 비교평가 미확인. 개인의 섭취 반응은 훈련 중 확인하세요.</p>}
+      <h2 className="font-bold mb-4 md:mb-5 text-primary">섭취 시 확인</h2>
 
       {/* 물 섭취 요구사항 */}
       <div className="mb-4 rounded-[4px] border border-sky-100 bg-white/82 p-4">

@@ -19,7 +19,7 @@ describe('gel evidence rendering', () => {
 
   it('does not turn an unconfirmed GI assessment into a normal or good grade', () => {
     const output = renderToStaticMarkup(React.createElement(GITolerance, { gel: product }));
-    expect(output).toContain('독립 비교평가 미확인');
+    expect(output).toContain('훈련 중 반응 확인');
     expect(output).not.toContain('전체 평가');
     expect(output).not.toContain('매우 안정적');
   });

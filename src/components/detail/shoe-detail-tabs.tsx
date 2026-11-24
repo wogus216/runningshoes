@@ -3,18 +3,15 @@
 import { useState } from 'react';
 import { DetailedSpecs } from '@/components/detail/detailed-specs';
 import { BiomechanicsAnalysis } from '@/components/detail/biomechanics-analysis';
-import { InjuryPrevention } from '@/components/detail/injury-prevention';
 import { KoreanFootFit } from '@/components/detail/korean-foot-fit';
 import { FitHelper } from '@/components/detail/fit-helper';
 import { ValueAnalysis, type ResolvedAlternative } from '@/components/detail/value-analysis';
 import { PurchaseLinks } from '@/components/detail/purchase-links';
-import { ReplacementCalculator } from '@/components/detail/replacement-calculator';
 import { ReviewsSection } from '@/components/detail/reviews-section';
 import { SimilarShoes } from '@/components/detail/similar-shoes';
 import { cn } from '@/lib/utils';
 import type { Shoe } from '@/types/shoe';
 import type { SimilarShoeInfo } from '@/lib/data/shoes';
-import { getShoeDurability } from '@/lib/durability';
 
 type ShoeDetailTabsProps = {
   shoe: Shoe;
@@ -22,33 +19,18 @@ type ShoeDetailTabsProps = {
   resolvedAlternatives?: ResolvedAlternative[];
 };
 
-/**
- * 모바일 라벨은 데스크톱을 줄인 축약어가 아니라 **러너가 실제로 쓰는 말**이어야 한다.
- *
- * 2026-08-25 모바일 페르소나 평가에서 '발형'이 걸렸다 — 발볼이 넓어 와이드를 찾는
- * 러너가 "내 발볼 맞나?"를 알고 싶을 때, '발볼'도 '사이즈'도 '핏'도 아닌 '발형'을
- * 누를 이유가 없다. 정작 그 탭 안에 이 사이트의 최대 강점인 발볼 매칭 도구가 있다.
- * 데스크톱은 '한국인 발'로 뜻이 통하는데 모바일만 의미가 깎여 있었고,
- * 트래픽 대부분이 모바일이라 손해가 큰 쪽이 축약을 받고 있었다.
- *
- * 탭바는 overflow-x-auto 라 가로 여유가 있지만, 6개가 한 화면에 다 보여야
- * "탭이 더 있다"는 걸 알 수 있어 3글자를 상한으로 잡았다.
- */
 const tabs = [
   { id: 'specs', label: '스펙', mobileLabel: '스펙' },
   { id: 'biomechanics', label: '생체역학', mobileLabel: '주행감' },
-  { id: 'injury', label: '건강 정보', mobileLabel: '건강' },
-  { id: 'koreanfoot', label: '한국인 발', mobileLabel: '발볼' },
+  { id: 'koreanfoot', label: '핏·폭 옵션', mobileLabel: '발볼' },
   { id: 'price', label: '가격', mobileLabel: '가격' },
-  { id: 'reviews', label: '분석', mobileLabel: '유형별' },
+  { id: 'reviews', label: '분석', mobileLabel: '분석' },
 ] as const;
 
 type TabId = typeof tabs[number]['id'];
 
 export function ShoeDetailTabs({ shoe, similarShoesData, resolvedAlternatives }: ShoeDetailTabsProps) {
   const [activeTab, setActiveTab] = useState<TabId>('specs');
-  // 내구성 범위·근거 등급은 한 번만 계산해 스펙/가격 탭이 같은 값을 쓰게 한다
-  const durability = getShoeDurability(shoe);
 
 
   return (
@@ -93,14 +75,8 @@ export function ShoeDetailTabs({ shoe, similarShoesData, resolvedAlternatives }:
           )}
         </div>
 
-        <div className={activeTab === 'injury' ? '' : 'hidden'}>
-          <div className="border border-border bg-white p-5 md:p-6">
-            <InjuryPrevention />
-          </div>
-        </div>
-
         <div className={activeTab === 'koreanfoot' ? '' : 'hidden'}>
-          {shoe.koreanFootFit && (
+          {shoe.koreanFootFit?.wideOptions === true && (
             <div className="border border-border bg-white p-5 md:p-6">
               <KoreanFootFit
                 koreanFootFit={shoe.koreanFootFit}
@@ -124,23 +100,14 @@ export function ShoeDetailTabs({ shoe, similarShoesData, resolvedAlternatives }:
         </div>
 
         <div className={activeTab === 'price' ? '' : 'hidden'}>
-          {shoe.priceAnalysis && (
+          {shoe.priceAnalysis && (shoe.price || shoe.priceAnalysis.msrp || shoe.priceAnalysis.streetPrice || shoe.priceAnalysis.valueAdvantages?.length || resolvedAlternatives?.some(alternative => alternative.slug)) && (
             <div className="border border-border bg-white p-5 md:p-6">
               <ValueAnalysis
                 resolvedAlternatives={resolvedAlternatives}
                 priceAnalysis={shoe.priceAnalysis}
                 shoeName={shoe.name}
                 brand={shoe.brand}
-                category={shoe.category}
-                durability={durability}
-              />
-            </div>
-          )}
-          {shoe.specs && (
-            <div className="border border-border bg-white p-5 md:p-6">
-              <ReplacementCalculator
-                durability={durability}
-                shoeName={shoe.name}
+                price={shoe.price}
               />
             </div>
           )}

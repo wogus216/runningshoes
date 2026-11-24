@@ -13,7 +13,6 @@ import { categoryOrder } from '@/lib/data/shoes';
 import { SITE_NAME, SITE_URL, DEFAULT_OG_IMAGE } from '@/lib/constants';
 import { breadcrumbJsonLd } from '@/lib/seo/breadcrumb';
 import { shoeThumbnail } from '@/lib/shoe-thumbnail';
-import type { Shoe } from '@/types/shoe';
 
 type PageProps = {
   params: Promise<{ brand: string }>;
@@ -54,19 +53,12 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   };
 }
 
-function sortByValue(a: Shoe, b: Shoe): number {
-  const av = a.priceAnalysis?.valueRating ?? 0;
-  const bv = b.priceAnalysis?.valueRating ?? 0;
-  if (bv !== av) return bv - av;
-  return (b.rating ?? 0) - (a.rating ?? 0);
-}
-
 export default async function BrandDetailPage({ params }: PageProps) {
   const { brand: brandSlug } = await params;
   const brand = getBrandBySlug(brandSlug);
   if (!brand) notFound();
 
-  const brandShoes = getCompleteShoesByBrand(brand.name).sort(sortByValue);
+  const brandShoes = getCompleteShoesByBrand(brand.name);
 
   const grouped = categoryOrder
     .map((cat) => ({
@@ -176,19 +168,6 @@ export default async function BrandDetailPage({ params }: PageProps) {
                     {shoe.specs?.weight && <span>무게 {shoe.specs.weight}g</span>}
                     {shoe.biomechanics?.drop !== undefined && (
                       <span>드롭 {shoe.biomechanics.drop}mm</span>
-                    )}
-                    {shoe.priceAnalysis?.valueRating !== undefined && (
-                      <span>가성비 {shoe.priceAnalysis.valueRating}/10</span>
-                    )}
-                    {shoe.koreanFootFit?.toBoxWidth && (
-                      <span>
-                        토박스{' '}
-                        {shoe.koreanFootFit.toBoxWidth === 'wide'
-                          ? '넓음'
-                          : shoe.koreanFootFit.toBoxWidth === 'standard'
-                            ? '표준'
-                            : '좁음'}
-                      </span>
                     )}
                   </div>
                 </div>

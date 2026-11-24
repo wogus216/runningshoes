@@ -4,9 +4,7 @@
 
 export type GelCategory = '젤 제품' | '식품군';
 export type GelType = 'hydrogel' | 'isotonic' | 'standard' | 'natural' | 'solid' | 'unknown';
-export type GILevel = 'excellent' | 'good' | 'moderate' | 'poor' | 'unknown';
 export type OsmolalityBasis = 'measured' | 'estimated' | 'brand_claim' | 'unknown';
-export type GelPriceTier = 'budget' | 'entry' | 'mid' | 'premium' | 'super-premium';
 
 export interface NutritionFacts {
   calories?: number;           // kcal
@@ -37,7 +35,6 @@ export interface CarbScience {
 }
 
 export interface GITolerance {
-  overall: GILevel;
   waterPairing: string;         // "필수", "불필요", "권장"
   riskFactors: string[];        // ["고삼투압", "카페인"] 등
   /** 섭취 메모 — 제품 표기 사실·실명 판매처 수치만. 후기·커뮤니티 평판 금지(validate 7번이 검사). 빈 문자열이면 상자를 숨긴다 */
@@ -47,10 +44,8 @@ export interface GITolerance {
 
 export interface FlavorProfile {
   flavors: string[];            // ["오렌지", "레몬", "살구"] 등
-  texture: string;              // "묽은 리퀴드", "걸쭉한 젤", "고체" 등
-  viscosity?: number;            // 1-10 (1=물, 10=양갱)
-  aftertaste: string;           // "깔끔", "텁텁함", "달달함 남음" 등
-  tasteFatigueRisk: string;     // "낮음", "보통", "높음"
+  texture?: string;              // "묽은 리퀴드", "걸쭉한 젤", "고체" 등
+  aftertaste?: string;           // "깔끔", "텁텁함", "달달함 남음" 등
 }
 
 export interface UsageGuide {
@@ -61,36 +56,9 @@ export interface UsageGuide {
   caffeineStrategy?: string;    // 카페인 젤일 경우
 }
 
-export interface GelPriceAnalysis {
-  msrp: number;                 // 개당 가격 (원)
-  bulkPrice?: number;           // 묶음 구매 시 개당 가격
-  marathonCost: number;         // 풀마라톤 1회 총 비용 (원)
-  yangGangComparison: string;   // 양갱 대비 가성비 설명
-  valueRating: number;          // 1-10
-  priceTier: GelPriceTier;
-  priceCheckedAt: string;       // "2026-02-01"
-  priceSource: string;          // "쿠팡 최저가"
-  alternatives: string[];       // 비슷한 가격대 대안 slug
-}
-
 export interface GelReview {
   userType: string;
-  /** 출처 있는 분석에만 부여. 데이터 기반 적합성 분석에는 별점을 매기지 않는다. */
-  rating?: number;
   text: string;
-}
-
-export interface GelRatings {
-  energyKick: number;         // 1-10
-  giComfort: number;          // 1-10
-  texture: number;            // 1-10
-  taste: number;              // 1-10
-  caffeine: number;           // 1-10 (카페인 없으면 N/A → 5)
-  electrolytes: number;       // 1-10
-  portability: number;        // 1-10
-  value: number;              // 1-10
-  transparency: number;       // 1-10
-  overall: number;            // 1-10
 }
 
 export interface PurchaseLink {
@@ -108,7 +76,6 @@ export interface Gel {
   brand: string;
   name: string;
   category: GelCategory;
-  rating?: number;             // 1-5
   image?: string;
   images?: string[];
   imageCaption?: string;
@@ -142,12 +109,6 @@ export interface Gel {
   // 사용 가이드
   usageGuide: UsageGuide;
 
-  // 점수
-  ratings?: GelRatings;
-
-  // 가격 분석
-  priceAnalysis?: GelPriceAnalysis;
-
   // 리뷰
   reviews: GelReview[];
 
@@ -171,7 +132,6 @@ export type BasicGel = Pick<Gel,
   | 'brand'
   | 'name'
   | 'category'
-  | 'rating'
   | 'image'
   | 'price'
   | 'tags'
@@ -182,7 +142,6 @@ export type SimilarGelInfo = {
   slug: string;
   brand: string;
   name: string;
-  rating?: number;
   category: GelCategory;
   image?: string;
   price?: number;
@@ -190,10 +149,6 @@ export type SimilarGelInfo = {
     totalCarbs?: number;
     caffeine?: number;
     calories?: number;
-  };
-  ratings?: {
-    overall: number;
-    giComfort: number;
   };
 };
 

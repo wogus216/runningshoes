@@ -111,8 +111,8 @@ describe('조건을 확인한 추천 후보', () => {
   it('후보 하나를 100점 적합으로 정규화하지 않는다', () => {
     const seed = shoes.find(s => s.specs && priceOf(s) > 0 && s.category !== '트레일')!;
     const result = recommendShoes([seed], { ...profile, budget: 'high' });
-    expect(result[0].matchScore).toBe(result[0].rawScore);
-    expect(result[0].matchScore).not.toBe(100);
+    expect(result[0]).not.toHaveProperty('matchScore');
+    expect(result[0].rawScore).not.toBe(100);
     expect(result[0]).not.toHaveProperty('comparisonToAvg');
   });
 });

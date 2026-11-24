@@ -19,7 +19,7 @@ describe('getHomeStats', () => {
     );
     // 질문 객체의 `id: '...'` 만 매칭 (Question 타입 선언의 `id: keyof UserProfile...`는 따옴표가 없어 제외됨,
     // 옵션들은 `value:`를 쓰지 `id:`를 쓰지 않아 제외됨)
-    const questionIdMatches = source.match(/\bid:\s*'[^']+'/g) ?? [];
+    const questionIdMatches = source.match(/^\s+id:\s*'[^']+',\s*$/gm) ?? [];
     expect(getHomeStats().questionCount).toBe(questionIdMatches.length);
   });
   it('예상 소요 시간은 1분 이상이다', () => {
@@ -86,10 +86,10 @@ describe('balancedByCategory', () => {
     expect(r.length).toBe(14);
   });
 
-  it('카테고리 안에서는 rating 내림차순, 동률이면 가격 오름차순이다', () => {
+  it('카테고리 안에서는 가격 오름차순이다', () => {
     const daily = balancedByCategory(pool).filter(s => s.category === '데일리');
     for (let i = 1; i < daily.length; i++) {
-      expect(daily[i - 1].rating).toBeGreaterThanOrEqual(daily[i].rating);
+      expect(daily[i - 1].price).toBeLessThanOrEqual(daily[i].price);
     }
   });
 
@@ -97,7 +97,7 @@ describe('balancedByCategory', () => {
     expect(Object.values(DEFAULT_QUOTA).reduce((a, b) => a + b, 0)).toBe(16);
   });
 
-  it('price가 없는 항목(GridShoe.price?)도 컴파일되고, 같은 rating 안에서 뒤로 밀린다', () => {
+  it('price가 없는 항목(GridShoe.price?)도 컴파일되고, 가격 확인 모델 뒤로 밀린다', () => {
     // GridShoe.price는 옵셔널이라 이 타입 그대로 넘길 수 있어야 한다 (tsc --noEmit 대상)
     const withPrice = Array.from({ length: 3 }, (_, i) => ({
       category: '데일리', rating: 5, price: 200000 - i * 1000, id: `p${i}`,

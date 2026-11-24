@@ -1,8 +1,5 @@
 export type ShoeStatus = "new" | "updated" | "featured" | "great";
 
-export type InjuryPreventionLevel = 'excellent' | 'good' | 'caution' | 'warning';
-export type ToBoxWidth = 'narrow' | 'standard' | 'wide';
-export type CompatibilityLevel = 'excellent' | 'good' | 'fair' | 'poor';
 export type PriceTier = 'budget' | 'mid' | 'premium' | 'super-premium' | 'high';
 export type PlateType = 'curved' | 'flat' | string | null;
 
@@ -19,20 +16,8 @@ export interface BiomechanicsData {
   optimalPace?: string; // "5:00-7:00 min/km"
 }
 
-export interface InjuryPreventionData {
-  plantarFasciitis: InjuryPreventionLevel;
-  achillesTendinopathy: InjuryPreventionLevel;
-  kneeIssues: InjuryPreventionLevel;
-  shinSplints: InjuryPreventionLevel;
-}
-
 export interface KoreanFootFit {
-  toBoxWidth?: ToBoxWidth;
-  /** @deprecated 모델별 임상 근거 없음. 표시·추천 점수에 사용하지 않는다. */
-  flatFootCompatibility?: CompatibilityLevel;
   wideOptions?: boolean;
-  winterCompatibility?: CompatibilityLevel;
-  summerCompatibility?: CompatibilityLevel;
 }
 
 export interface PriceAnalysis {
@@ -43,9 +28,6 @@ export interface PriceAnalysis {
   msrp?: number;
   /** 실거래가(세일·병행·직구 포함). 정가가 없을 때 화면은 이 값을 "실거래가"로만 보여 준다 */
   streetPrice?: number;
-  /** ₩/km — 정가÷specs.durability. 정가가 없으면 비운다 */
-  costPerKm?: number;
-  valueRating?: number;   // 산정 근거·조건이 있는 편집 평가만
   priceTier: PriceTier;
   alternatives: string[]; // similar price alternatives
   valueAdvantages?: string[]; // 가격 대비 장점 (브랜드별 맞춤)
@@ -53,12 +35,6 @@ export interface PriceAnalysis {
 
 export interface Review {
   userType: string;
-  /**
-   * 0~100 점수. 출처 있는 분석(에디터 분석·외부 리뷰 인용)에만 부여한다.
-   * 데이터 기반 적합성 분석에는 별점을 매기지 않는다 — 실사용 경험이 없는 항목에
-   * 별점을 붙이면 실제 구매 후기로 오인된다.
-   */
-  rating?: number;
   text: string;
   source?: string;  // 'editor' | 'community'
   sourceUrl?: string;  // 출처 URL (에디터 분석 시 참조 링크)
@@ -80,11 +56,7 @@ export interface RelatedPost {
 
 export interface ShoeSpecs {
   weight: number;       // g
-  cushioning?: number;   // 1-10
-  responsiveness?: number; // 1-10
-  stability?: number;    // 1-10
   drop: number;         // mm
-  durability?: number;  // 출처 있는 예상 km만; 미확인은 비운다
 }
 
 export interface TargetUsers {
@@ -103,7 +75,6 @@ export interface DetailedSpecs {
   width?: string;
   durability?: string;
   price?: string;
-  costPerKm?: string;
   footType?: string;
   landingPattern?: string;
 }
@@ -114,7 +85,6 @@ export interface Shoe {
   brand: string;
   name: string;
   category: string;
-  rating?: number; // 산정 근거·조건이 있는 편집 평가만
   image?: string;
   images?: string[];  // 여러 이미지 (슬라이더용)
   imageCaption?: string;
@@ -130,9 +100,6 @@ export interface Shoe {
 
   // 생체역학 데이터
   biomechanics?: BiomechanicsData;
-
-  // 부상 예방
-  injuryPrevention?: InjuryPreventionData;
 
   // 한국인 발 특성
   koreanFootFit?: KoreanFootFit;

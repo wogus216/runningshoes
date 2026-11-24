@@ -30,7 +30,6 @@ export const koreanGels: Gel[] = [
       "scienceVerdict": "제조사 표시 성분은 제품 선택의 자료입니다. 위장 안정성·흡수 우월성·근육경련 예방이나 목표 기록을 보장하는 비교 등급으로 쓰지 않습니다."
     },
     giTolerance: {
-      "overall": "unknown",
       "waterPairing": "카페인형·프리형을 확인한 뒤 실제 포장의 섭취 지시를 따르세요.",
       "riskFactors": [],
       "communityFeedback": "실제 제품의 맛·변형·용량과 포장 지시를 확인하세요. 삼키기 위한 물과 운동 중 수분 보충 계획은 구분해야 합니다.",
@@ -38,9 +37,6 @@ export const koreanGels: Gel[] = [
     },
     flavorProfile: {
       "flavors": [],
-      "texture": "독립 실사용 평가 미확인",
-      "aftertaste": "독립 실사용 평가 미확인",
-      "tasteFatigueRisk": "미확인"
     },
     usageGuide: {
       "bestFor": [
@@ -134,7 +130,6 @@ export const koreanGels: Gel[] = [
       "scienceVerdict": "제조사 표시 성분은 제품 선택의 자료입니다. 위장 안정성·흡수 우월성·근육경련 예방이나 목표 기록을 보장하는 비교 등급으로 쓰지 않습니다."
     },
     giTolerance: {
-      "overall": "unknown",
       "waterPairing": "43g·45g과 국내 포장명을 구분해 해당 제품의 섭취 안내를 확인하세요.",
       "riskFactors": [],
       "communityFeedback": "실제 제품의 맛·변형·용량과 포장 지시를 확인하세요. 삼키기 위한 물과 운동 중 수분 보충 계획은 구분해야 합니다.",
@@ -142,9 +137,6 @@ export const koreanGels: Gel[] = [
     },
     flavorProfile: {
       "flavors": [],
-      "texture": "독립 실사용 평가 미확인",
-      "aftertaste": "독립 실사용 평가 미확인",
-      "tasteFatigueRisk": "미확인"
     },
     usageGuide: {
       "bestFor": [
@@ -229,7 +221,6 @@ export const koreanGels: Gel[] = [
       "scienceVerdict": "제조사 표시 성분은 제품 선택의 자료입니다. 위장 안정성·흡수 우월성·근육경련 예방이나 목표 기록을 보장하는 비교 등급으로 쓰지 않습니다."
     },
     giTolerance: {
-      "overall": "unknown",
       "waterPairing": "정확한 맛·카페인 변형·최신 포장의 물 동반 지시를 확인하세요.",
       "riskFactors": [],
       "communityFeedback": "실제 제품의 맛·변형·용량과 포장 지시를 확인하세요. 삼키기 위한 물과 운동 중 수분 보충 계획은 구분해야 합니다.",
@@ -237,9 +228,6 @@ export const koreanGels: Gel[] = [
     },
     flavorProfile: {
       "flavors": [],
-      "texture": "독립 실사용 평가 미확인",
-      "aftertaste": "독립 실사용 평가 미확인",
-      "tasteFatigueRisk": "미확인"
     },
     usageGuide: {
       "bestFor": [
@@ -359,7 +347,6 @@ export const koreanGels: Gel[] = [
       "scienceVerdict": "제조사 표시 성분은 제품 선택의 자료입니다. 위장 안정성·흡수 우월성·근육경련 예방이나 목표 기록을 보장하는 비교 등급으로 쓰지 않습니다."
     },
     giTolerance: {
-      "overall": "unknown",
       "waterPairing": "에너지젤·주레와 맛을 구분해 해당 포장의 섭취 지시를 확인하세요.",
       "riskFactors": [],
       "communityFeedback": "실제 제품의 맛·변형·용량과 포장 지시를 확인하세요. 삼키기 위한 물과 운동 중 수분 보충 계획은 구분해야 합니다.",
@@ -367,9 +354,6 @@ export const koreanGels: Gel[] = [
     },
     flavorProfile: {
       "flavors": ["매실", "청귤", "핑크자몽", "레몬", "사과", "자몽"],
-      "texture": "독립 실사용 평가 미확인",
-      "aftertaste": "독립 실사용 평가 미확인",
-      "tasteFatigueRisk": "미확인"
     },
     usageGuide: {
       "bestFor": [

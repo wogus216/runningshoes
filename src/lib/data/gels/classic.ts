@@ -23,7 +23,6 @@ export const classicGels: Gel[] = [
       "scienceVerdict": "제조사 표시 성분은 제품 선택의 자료입니다. 위장 안정성·흡수 우월성·근육경련 예방이나 목표 기록을 보장하는 비교 등급으로 쓰지 않습니다."
     },
     giTolerance: {
-      "overall": "unknown",
       "waterPairing": "선택한 맛의 포장에 적힌 물 동반 지시를 확인하세요.",
       "riskFactors": [],
       "communityFeedback": "실제 제품의 맛·변형·용량과 포장 지시를 확인하세요. 삼키기 위한 물과 운동 중 수분 보충 계획은 구분해야 합니다.",
@@ -31,9 +30,6 @@ export const classicGels: Gel[] = [
     },
     flavorProfile: {
       "flavors": [],
-      "texture": "독립 실사용 평가 미확인",
-      "aftertaste": "독립 실사용 평가 미확인",
-      "tasteFatigueRisk": "미확인"
     },
     usageGuide: {
       "bestFor": [
@@ -122,7 +118,6 @@ export const classicGels: Gel[] = [
       "scienceVerdict": "제조사 표시 성분은 제품 선택의 자료입니다. 위장 안정성·흡수 우월성·근육경련 예방이나 목표 기록을 보장하는 비교 등급으로 쓰지 않습니다."
     },
     giTolerance: {
-      "overall": "unknown",
       "waterPairing": "청포도·꿀홍삼·아이스블루를 구분하고 포장 지시를 확인하세요.",
       "riskFactors": [],
       "communityFeedback": "실제 제품의 맛·변형·용량과 포장 지시를 확인하세요. 삼키기 위한 물과 운동 중 수분 보충 계획은 구분해야 합니다.",
@@ -130,9 +125,6 @@ export const classicGels: Gel[] = [
     },
     flavorProfile: {
       "flavors": [],
-      "texture": "독립 실사용 평가 미확인",
-      "aftertaste": "독립 실사용 평가 미확인",
-      "tasteFatigueRisk": "미확인"
     },
     usageGuide: {
       "bestFor": [
@@ -210,7 +202,6 @@ export const classicGels: Gel[] = [
       "scienceVerdict": "제조사 표시 성분은 제품 선택의 자료입니다. 위장 안정성·흡수 우월성·근육경련 예방이나 목표 기록을 보장하는 비교 등급으로 쓰지 않습니다."
     },
     giTolerance: {
-      "overall": "unknown",
       "waterPairing": "씹어 먹는 식품의 실제 제품 표시와 개인 수분 계획을 확인하세요.",
       "riskFactors": [],
       "communityFeedback": "실제 제품의 맛·변형·용량과 포장 지시를 확인하세요. 삼키기 위한 물과 운동 중 수분 보충 계획은 구분해야 합니다.",
@@ -218,9 +209,6 @@ export const classicGels: Gel[] = [
     },
     flavorProfile: {
       "flavors": [],
-      "texture": "독립 실사용 평가 미확인",
-      "aftertaste": "독립 실사용 평가 미확인",
-      "tasteFatigueRisk": "미확인"
     },
     usageGuide: {
       "bestFor": [
@@ -299,7 +287,6 @@ export const classicGels: Gel[] = [
       "scienceVerdict": "제조사 표시 성분은 제품 선택의 자료입니다. 위장 안정성·흡수 우월성·근육경련 예방이나 목표 기록을 보장하는 비교 등급으로 쓰지 않습니다."
     },
     giTolerance: {
-      "overall": "unknown",
       "waterPairing": "기본형·카페인110을 구분하고 실제 포장의 섭취 지시를 확인하세요.",
       "riskFactors": [],
       "communityFeedback": "실제 제품의 맛·변형·용량과 포장 지시를 확인하세요. 삼키기 위한 물과 운동 중 수분 보충 계획은 구분해야 합니다.",
@@ -307,9 +294,6 @@ export const classicGels: Gel[] = [
     },
     flavorProfile: {
       "flavors": [],
-      "texture": "독립 실사용 평가 미확인",
-      "aftertaste": "독립 실사용 평가 미확인",
-      "tasteFatigueRisk": "미확인"
     },
     usageGuide: {
       "bestFor": [
@@ -415,7 +399,6 @@ export const classicGels: Gel[] = [
       "scienceVerdict": "제조사 표시 성분은 제품 선택의 자료입니다. 위장 안정성·흡수 우월성·근육경련 예방이나 목표 기록을 보장하는 비교 등급으로 쓰지 않습니다."
     },
     giTolerance: {
-      "overall": "unknown",
       "waterPairing": "제품 포장과 공식 안내의 물 동반 섭취 지시를 확인하세요.",
       "riskFactors": [],
       "communityFeedback": "실제 제품의 맛·변형·용량과 포장 지시를 확인하세요. 삼키기 위한 물과 운동 중 수분 보충 계획은 구분해야 합니다.",
@@ -423,9 +406,6 @@ export const classicGels: Gel[] = [
     },
     flavorProfile: {
       "flavors": [],
-      "texture": "독립 실사용 평가 미확인",
-      "aftertaste": "독립 실사용 평가 미확인",
-      "tasteFatigueRisk": "미확인"
     },
     usageGuide: {
       "bestFor": [
@@ -524,7 +504,6 @@ export const classicGels: Gel[] = [
       "scienceVerdict": "제조사 표시 성분은 제품 선택의 자료입니다. 위장 안정성·흡수 우월성·근육경련 예방이나 목표 기록을 보장하는 비교 등급으로 쓰지 않습니다."
     },
     giTolerance: {
-      "overall": "unknown",
       "waterPairing": "카페인 함유·맛·기본형/프로를 확인하고 실제 포장의 섭취 안내를 따르세요.",
       "riskFactors": [],
       "communityFeedback": "실제 제품의 맛·변형·용량과 포장 지시를 확인하세요. 삼키기 위한 물과 운동 중 수분 보충 계획은 구분해야 합니다.",
@@ -532,9 +511,6 @@ export const classicGels: Gel[] = [
     },
     flavorProfile: {
       "flavors": [],
-      "texture": "독립 실사용 평가 미확인",
-      "aftertaste": "독립 실사용 평가 미확인",
-      "tasteFatigueRisk": "미확인"
     },
     usageGuide: {
       "bestFor": [

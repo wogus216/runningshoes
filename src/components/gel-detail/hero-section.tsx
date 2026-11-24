@@ -1,7 +1,7 @@
 'use client';
 
 import type { Gel } from "@/types/gel";
-import { Star, Zap, ExternalLink } from "lucide-react";
+import { Zap, ExternalLink } from "lucide-react";
 import Image from "next/image";
 import { AffiliateDisclosure } from '@/components/detail/affiliate-disclosure';
 import { img } from '@/lib/image';
@@ -12,24 +12,6 @@ type HeroSectionProps = {
 
 export function HeroSection({ gel }: HeroSectionProps) {
   const nutrition = gel.nutritionFacts;
-
-  // 별점 렌더링
-  const renderStars = (rating: number) => {
-    return (
-      <div className="flex items-center gap-1">
-        {[1, 2, 3, 4, 5].map((star) => (
-          <Star
-            key={star}
-            className={`w-4 h-4 ${
-              star <= rating
-                ? 'fill-sky-500 text-sky-500'
-                : 'text-border'
-            }`}
-          />
-        ))}
-      </div>
-    );
-  };
 
   return (
     <section className="section-card border border-[var(--accent-line)] bg-white/88 p-4 md:p-6 lg:p-8">
@@ -91,7 +73,6 @@ export function HeroSection({ gel }: HeroSectionProps) {
 
           {/* 별점 */}
           <div className="mb-5">
-            {gel.rating !== undefined && renderStars(gel.rating)}
           </div>
 
           {/* 태그 */}

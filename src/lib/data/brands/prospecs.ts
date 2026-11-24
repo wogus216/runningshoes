@@ -1,9 +1,7 @@
-import type { Brand } from '@/types/brand';
-
 // 2026-10-20 등록 — 연혁은 운영사 LS네트웍스 공식 연혁(lsnetworks.co.kr/html/info/history.asp),
 // 운영사·본사 주소는 프로스펙스 공식몰 하단 사업자 정보, 기술 설명은 프로스펙스 공식몰 각 상품 상세의 Features 문구만 옮겼다.
 // 폼 성분·경도·플레이트 형상 등 공식이 밝히지 않은 값은 적지 않는다. performanceRating 은 실측이 아닌 보수적 추정.
-export const prospecsBrand: Brand = {
+export const prospecsBrand = {
   id: 'prospecs',
   name: 'Prospecs',
   nameKo: '프로스펙스',

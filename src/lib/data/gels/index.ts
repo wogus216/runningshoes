@@ -53,7 +53,6 @@ export function getSimilarGelsData(slugs: string[]): SimilarGelInfo[] {
         slug: gel.slug,
         brand: gel.brand,
         name: gel.name,
-        rating: gel.rating,
         category: gel.category,
         image: gel.image,
         price: gel.price,
@@ -62,10 +61,6 @@ export function getSimilarGelsData(slugs: string[]): SimilarGelInfo[] {
           caffeine: gel.nutritionFacts.caffeine,
           calories: gel.nutritionFacts.calories,
         },
-        ratings: gel.ratings ? {
-          overall: gel.ratings.overall,
-          giComfort: gel.ratings.giComfort,
-        } : undefined,
       });
     }
   }

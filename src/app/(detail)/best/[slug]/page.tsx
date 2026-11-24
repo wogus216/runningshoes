@@ -191,12 +191,6 @@ export default async function BestPage({ params }: PageProps) {
                   {shoe.biomechanics?.drop !== undefined && (
                     <span>드롭 {shoe.biomechanics.drop}mm</span>
                   )}
-                  {shoe.priceAnalysis?.valueRating !== undefined && (
-                    <span>가성비 {shoe.priceAnalysis.valueRating}/10</span>
-                  )}
-                  {shoe.koreanFootFit?.toBoxWidth && (
-                    <span>토박스 {shoe.koreanFootFit.toBoxWidth}</span>
-                  )}
                 </div>
               </div>
             </li>
@@ -216,8 +210,6 @@ export default async function BestPage({ params }: PageProps) {
                 <th className="text-right p-3 font-medium whitespace-nowrap">무게</th>
                 <th className="text-right p-3 font-medium whitespace-nowrap">힐/포어</th>
                 <th className="text-right p-3 font-medium whitespace-nowrap">드롭</th>
-                <th className="text-right p-3 font-medium whitespace-nowrap">가성비</th>
-                <th className="text-center p-3 font-medium whitespace-nowrap">토박스</th>
                 <th className="text-center p-3 font-medium whitespace-nowrap">카본</th>
               </tr>
             </thead>
@@ -241,20 +233,6 @@ export default async function BestPage({ params }: PageProps) {
                   </td>
                   <td className="p-3 text-right whitespace-nowrap">
                     {s.biomechanics?.drop !== undefined ? `${s.biomechanics.drop}mm` : '-'}
-                  </td>
-                  <td className="p-3 text-right whitespace-nowrap">
-                    {s.priceAnalysis?.valueRating !== undefined
-                      ? `${s.priceAnalysis.valueRating}/10`
-                      : '-'}
-                  </td>
-                  <td className="p-3 text-center whitespace-nowrap text-xs">
-                    {s.koreanFootFit?.toBoxWidth === 'wide'
-                      ? '넓음'
-                      : s.koreanFootFit?.toBoxWidth === 'standard'
-                        ? '표준'
-                        : s.koreanFootFit?.toBoxWidth === 'narrow'
-                          ? '좁음'
-                          : '-'}
                   </td>
                   <td className="p-3 text-center whitespace-nowrap">
                     {s.biomechanics?.carbonPlate ? '✓' : '–'}

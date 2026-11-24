@@ -1,6 +1,5 @@
 import { describe, it, expect } from 'vitest';
 import { shoes, toCardShoe, toGridShoe } from '@/lib/data/shoes';
-import { getShoeDurability } from '@/lib/durability';
 
 /**
  * 카드·그리드 타입은 클라이언트 번들 절감용으로 필드를 골라 담는다.
@@ -31,17 +30,6 @@ describe('toCardShoe', () => {
     });
   });
 
-  it('durabilityRange 는 상세 페이지의 getShoeDurability 와 같은 범위다 (규칙 3)', () => {
-    shoes.forEach((s, i) => {
-      const profile = getShoeDurability(s);
-      const range = cards[i].durabilityRange;
-      if (!profile) {
-        expect(range, s.slug).toBeUndefined();
-      } else {
-        expect(range, s.slug).toEqual([profile.min, profile.max]);
-      }
-    });
-  });
 });
 
 describe('toGridShoe', () => {
@@ -52,10 +40,10 @@ describe('toGridShoe', () => {
       const g = grid[i];
       if (s.specs) expect(Object.keys(g.specs ?? {})).toEqual(['weight']);
       if (s.biomechanics) expect(Object.keys(g.biomechanics ?? {}).sort()).toEqual(['carbonPlate', 'drop']);
-      if (s.priceAnalysis) expect(Object.keys(g.priceAnalysis ?? {}).sort()).toEqual(['msrp', 'valueRating']);
+      if (s.priceAnalysis) expect(Object.keys(g.priceAnalysis ?? {}).sort()).toEqual(['msrp']);
       if (s.koreanFootFit) {
         expect(Object.keys(g.koreanFootFit ?? {}).sort()).toEqual(
-          ['toBoxWidth', 'wideOptions', 'winterCompatibility'],
+          ['wideOptions'],
         );
       }
     });

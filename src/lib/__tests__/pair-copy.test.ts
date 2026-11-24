@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { buildVerdicts, buildNarrative, buildFaqs, specRows, WIDTH_RANK } from '@/lib/pseo/pair-copy';
+import { buildVerdicts, buildNarrative, buildFaqs, specRows } from '@/lib/pseo/pair-copy';
 import { getAllPairs } from '@/lib/pseo/pairs';
 import type { Shoe } from '@/types/shoe';
 
@@ -11,8 +11,7 @@ describe('buildVerdicts', () => {
     for (const { a, b } of sample) {
       const labels = buildVerdicts(a, b).map((v) => v.label);
       expect(labels).toContain('표기 무게');
-      if (a.price !== undefined && b.price !== undefined && a.priceAnalysis?.valueRating !== undefined && b.priceAnalysis?.valueRating !== undefined) expect(labels).toContain('가성비');
-      else expect(labels).not.toContain('가성비');
+      expect(labels).not.toContain('가성비');
       expect(new Set(labels).size).toBe(labels.length);
     }
   });
@@ -28,11 +27,6 @@ describe('buildVerdicts', () => {
     }
   });
 
-  it('가격은 만원 단위로 표기한다', () => {
-    const { a, b } = pairs.find((p) => p.a.price && p.b.price)!;
-    const value = buildVerdicts({ ...a, priceAnalysis: { ...a.priceAnalysis!, valueRating: 9 } }, { ...b, priceAnalysis: { ...b.priceAnalysis!, valueRating: 7 } }).find((v) => v.label === '가성비')!;
-    expect(value.reason).toMatch(/\d+만원 vs \d+만원/);
-  });
 });
 
 describe('buildNarrative', () => {
@@ -65,8 +59,9 @@ describe('buildNarrative', () => {
 
 describe('buildFaqs', () => {
   it('입문자 질문은 항상 마지막에 있고, 질문은 중복되지 않는다', () => {
-    for (const { a, b } of sample) {
-      const faqs = buildFaqs(a, b);
+    for (const pair of sample) {
+      expect(pair.slug).toBeTruthy();
+      const faqs = buildFaqs();
       expect(faqs.length).toBeGreaterThanOrEqual(1);
       expect(faqs[faqs.length - 1].question).toBe('러닝 입문자에게는 둘 중 무엇을 추천하나요?');
       expect(new Set(faqs.map((f) => f.question)).size).toBe(faqs.length);
@@ -76,27 +71,24 @@ describe('buildFaqs', () => {
 });
 
 describe('specRows', () => {
-  it('14행이며 라벨 순서가 고정돼 있다 (표 헤더와 짝)', () => {
-    const rows = specRows(pairs[0].a, pairs[0].b);
-    expect(rows.map((r) => r.label)).toEqual([
-      '카테고리', '가격', '무게', '힐 스택', '전족부 스택', '드롭', '미드솔', '카본 보강 구조',
-      '쿠셔닝', '안정성', '가성비', '토박스', '와이드 옵션', '내구성 (아웃솔 기준 범위)',
-    ]);
-  });
-
-  it('내구성 행은 단일 숫자가 아니라 범위+등급이다 (규칙 3)', () => {
-    for (const { a, b } of sample) {
-      for (const cell of [specRows(a, b)[13].a, specRows(a, b)[13].b]) {
-        expect(cell === '-' || /\d+(~\d+)?km \(.+\)/.test(cell), cell).toBe(true);
-      }
+  it('공통 미확인 행은 숨기고 한쪽의 확인된 수치는 유지한다', () => {
+    const { a, b } = pairs[0];
+    const unknown = { ...a, biomechanics: undefined };
+    const bothUnknown = specRows(unknown, { ...b, biomechanics: undefined });
+    expect(bothUnknown.some(row => row.label === '힐 스택')).toBe(false);
+    const rows = specRows(unknown, b);
+    expect(rows.find(row => row.label === '힐 스택')?.a).toBe('-');
+    expect(rows.find(row => row.label === '힐 스택')?.b).toBe(`${b.biomechanics!.stackHeight.heel}mm`);
+    for (const label of ['쿠셔닝', '안정성', '가성비', '토박스', '내구성 (아웃솔 기준 범위)']) {
+      expect(rows.map(row => row.label)).not.toContain(label);
     }
   });
-});
 
-describe('rank tables', () => {
-  it('넓을수록·좋을수록 큰 값', () => {
-    expect(WIDTH_RANK.narrow).toBeLessThan(WIDTH_RANK.standard);
-    expect(WIDTH_RANK.standard).toBeLessThan(WIDTH_RANK.wide);
+  it('와이드 정보가 있는 조합에서 옵션을 비교한다', () => {
+    const { a, b } = pairs[0];
+    expect(specRows({ ...a, koreanFootFit: {} }, { ...b, koreanFootFit: {} }).some(row => row.label === '와이드 옵션')).toBe(false);
+    const wide = { ...a, koreanFootFit: { wideOptions: true } };
+    expect(specRows(wide, { ...b, koreanFootFit: {} }).find(row => row.label === '와이드 옵션')?.a).toBe('있음');
   });
 });
 
@@ -107,7 +99,7 @@ describe('검증되지 않은 비교 주장 차단', () => {
     const lower = { ...a, injuryPrevention: { plantarFasciitis: 'warning', achillesTendinopathy: 'warning', kneeIssues: 'warning', shinSplints: 'warning' } } as Shoe;
     const higher = { ...b, injuryPrevention: { plantarFasciitis: 'excellent', achillesTendinopathy: 'excellent', kneeIssues: 'excellent', shinSplints: 'excellent' } } as Shoe;
     expect(buildVerdicts(lower, higher).map(v => v.label).join(' ')).not.toMatch(/예방|무릎|평발/);
-    expect(buildFaqs(lower, higher).map(f => f.answer).join(' ')).not.toMatch(/예방 측면|평발.*우선 고려/);
+    expect(buildFaqs().map(f => f.answer).join(' ')).not.toMatch(/예방 측면|평발.*우선 고려/);
     expect(specRows(lower, higher).some(r => r.label === '평발 적합성')).toBe(false);
   });
   it('무게나 쿠셔닝이 없으면 임의 수치로 우열을 만들지 않는다', () => {
@@ -116,8 +108,7 @@ describe('검증되지 않은 비교 주장 차단', () => {
     const verdicts = buildVerdicts(missing, b);
     expect(verdicts.some(v => /표기 무게|쿠셔닝|안정성/.test(v.label))).toBe(false);
     expect(JSON.stringify(verdicts)).not.toContain('999g');
-    const noPrice = { ...a, price: undefined };
-    expect(buildFaqs(noPrice, b).some(f => f.question.includes('가성비'))).toBe(false);
+    expect(buildFaqs().some(f => f.question.includes('가성비'))).toBe(false);
     const noBiomechanics = { ...a, biomechanics: undefined };
     const unknownRows = specRows(noBiomechanics, b);
     for (const label of ['힐 스택', '전족부 스택', '카본 보강 구조']) {

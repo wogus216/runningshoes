@@ -17,46 +17,12 @@ type SimilarShoesProps = {
   currentCategory?: string;
 };
 
-/**
- * 이 신발 대비 무엇이 다른지 한 줄로. 카드에 무게 배지만 있어서
- * "39g 가볍다" 같은 차이만 읽히던 것을 보완한다 (2026-08-25 페르소나 평가).
- *
- * 부상 이력 러너에게 필요한 축은 무게가 아니라 **지지력**이었다 —
- * "이 신발보다 미드풋 지지가 강한 대안"을 묻는데 답할 축이 카드에 없었다.
- * 그래서 안정성·쿠션을 무게·가격보다 앞에 놓고, 차이가 뚜렷한 것만 최대 2개 고른다.
- *
- * 데이터를 새로 만들지 않는다 — 전부 기존 specs 에서 계산한다.
- * 임계값(2점·20g·2만원)은 "말할 가치가 있는 차이"의 하한선이고,
- * 그 아래는 오차 범위로 보고 아무 말도 하지 않는다.
- */
 function describeDifference(base: Shoe, other: SimilarShoeInfo): string[] {
   const notes: { text: string; weight: number }[] = [];
 
   const bs = base.specs;
   const os = other.specs;
 
-  // 안정성만 임계값이 1이다. similarShoes 는 성격이 비슷한 신발을 고르므로 같은
-  // 안정화끼리는 차이가 0~1에 몰린다(카야노 33의 유사 4종은 전부 0~1이었다).
-  // 그런데 부상 이력 러너에게는 이 1점이 유일하게 의미 있는 축이라, 2점을 기다리면
-  // 정작 필요한 사람에게 아무 말도 못 하게 된다.
-  if (bs?.stability != null && os?.stability != null) {
-    const d = os.stability - bs.stability;
-    if (Math.abs(d) >= 1) {
-      const much = Math.abs(d) >= 2;
-      notes.push({
-        text: d > 0
-          ? `지지력 ${much ? '더' : '조금 더'} 강함 +${d}`
-          : `지지력 ${much ? '더' : '조금 더'} 약함 ${d}`,
-        weight: Math.abs(d) * 3,
-      });
-    }
-  }
-  if (bs?.cushioning != null && os?.cushioning != null) {
-    const d = os.cushioning - bs.cushioning;
-    if (Math.abs(d) >= 2) {
-      notes.push({ text: d > 0 ? `쿠션 더 두꺼움 +${d}` : `쿠션 더 얇음 ${d}`, weight: Math.abs(d) * 2 });
-    }
-  }
   if (bs?.weight != null && os?.weight != null) {
     const d = os.weight - bs.weight;
     if (Math.abs(d) >= 20) {
@@ -265,39 +231,6 @@ export const SimilarShoes = memo(function SimilarShoes({ currentShoe, similarSho
                     </td>
                   ))}
                 </tr>
-                <tr className="border-b border-[color:var(--border-soft)]">
-                  <td className="py-2.5 pr-4 text-tertiary">쿠셔닝</td>
-                  <td className="text-center py-2.5 px-3">
-                    {currentShoe.specs?.cushioning !== undefined ? <SpecBar value={currentShoe.specs.cushioning * 10} /> : <span className="text-tertiary">미평가</span>}
-                  </td>
-                  {selectedShoes.map((shoe) => (
-                    <td key={shoe.slug} className="text-center py-2.5 px-3">
-                      {shoe.specs?.cushioning !== undefined ? <SpecBar value={shoe.specs.cushioning * 10} /> : <span className="text-tertiary">미평가</span>}
-                    </td>
-                  ))}
-                </tr>
-                <tr className="border-b border-[color:var(--border-soft)]">
-                  <td className="py-2.5 pr-4 text-tertiary">안정성</td>
-                  <td className="text-center py-2.5 px-3">
-                    {currentShoe.specs?.stability !== undefined ? <SpecBar value={currentShoe.specs.stability * 10} color="green" /> : <span className="text-tertiary">미평가</span>}
-                  </td>
-                  {selectedShoes.map((shoe) => (
-                    <td key={shoe.slug} className="text-center py-2.5 px-3">
-                      {shoe.specs?.stability !== undefined ? <SpecBar value={shoe.specs.stability * 10} color="green" /> : <span className="text-tertiary">미평가</span>}
-                    </td>
-                  ))}
-                </tr>
-                <tr>
-                  <td className="py-2.5 pr-4 text-tertiary">토박스</td>
-                  <td className="text-center py-2.5 px-3">
-                    <ToeboxBadge width={currentShoe.koreanFootFit?.toBoxWidth} />
-                  </td>
-                  {selectedShoes.map((shoe) => (
-                    <td key={shoe.slug} className="text-center py-2.5 px-3">
-                      <ToeboxBadge width={shoe.koreanFootFit?.toBoxWidth} />
-                    </td>
-                  ))}
-                </tr>
               </tbody>
             </table>
           </div>
@@ -314,28 +247,3 @@ export const SimilarShoes = memo(function SimilarShoes({ currentShoe, similarSho
     </section>
   );
 });
-
-function SpecBar({ value, color = 'blue' }: { value: number; color?: 'blue' | 'green' }) {
-  return (
-    <span className="inline-block h-1.5 w-16 overflow-hidden rounded-[3px] bg-sky-100">
-      <span
-        className={cn(
-          "block h-full rounded-[3px]",
-          color === 'green' ? "bg-slate-700" : "bg-sky-600"
-        )}
-        style={{ width: `${value}%` }}
-      />
-    </span>
-  );
-}
-
-function ToeboxBadge({ width }: { width?: string }) {
-  const labels: Record<string, { text: string; color: string }> = {
-    narrow: { text: '좁음', color: 'text-amber-700' },
-    standard: { text: '표준', color: 'text-primary' },
-    wide: { text: '넓음', color: 'text-sky-700' },
-  };
-  const info = width ? labels[width] : undefined;
-  if (!info) return <span className="text-tertiary">미확인</span>;
-  return <span className={info.color}>{info.text}</span>;
-}

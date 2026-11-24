@@ -33,7 +33,6 @@ export const premiumGels: Gel[] = [
       "keyTechnology": "제조사 Hydrogel Technology 표기. 제품의 임상적 위장 우월성을 확정한 등급이 아닙니다."
     },
     giTolerance: {
-      "overall": "unknown",
       "waterPairing": "제조사: 젤을 삼키기 위한 물은 필수 아님. 수분 보충 계획은 별도.",
       "riskFactors": [],
       "communityFeedback": "실제 제품의 맛·변형·용량과 포장 지시를 확인하세요. 삼키기 위한 물과 운동 중 수분 보충 계획은 구분해야 합니다.",
@@ -41,9 +40,6 @@ export const premiumGels: Gel[] = [
     },
     flavorProfile: {
       "flavors": [],
-      "texture": "독립 실사용 평가 미확인",
-      "aftertaste": "독립 실사용 평가 미확인",
-      "tasteFatigueRisk": "미확인"
     },
     usageGuide: {
       "bestFor": [
@@ -133,7 +129,6 @@ export const premiumGels: Gel[] = [
       "dualSource": true
     },
     giTolerance: {
-      "overall": "unknown",
       "waterPairing": "정확한 제품 포장의 물 동반 섭취 지시와 별도 수분 계획을 확인하세요.",
       "riskFactors": [],
       "communityFeedback": "실제 제품의 맛·변형·용량과 포장 지시를 확인하세요. 삼키기 위한 물과 운동 중 수분 보충 계획은 구분해야 합니다.",
@@ -141,9 +136,6 @@ export const premiumGels: Gel[] = [
     },
     flavorProfile: {
       "flavors": ["Neutral", "Orange", "Strawberry and Lime"],
-      "texture": "독립 실사용 평가 미확인",
-      "aftertaste": "독립 실사용 평가 미확인",
-      "tasteFatigueRisk": "미확인"
     },
     usageGuide: {
       "bestFor": [
@@ -232,7 +224,6 @@ export const premiumGels: Gel[] = [
       "waterRequired": true
     },
     giTolerance: {
-      "overall": "unknown",
       "waterPairing": "제조사: 물과 함께 섭취. 구체적인 양은 해당 맛의 포장 안내 확인.",
       "riskFactors": [],
       "communityFeedback": "실제 제품의 맛·변형·용량과 포장 지시를 확인하세요. 삼키기 위한 물과 운동 중 수분 보충 계획은 구분해야 합니다.",
@@ -240,9 +231,6 @@ export const premiumGels: Gel[] = [
     },
     flavorProfile: {
       "flavors": [],
-      "texture": "독립 실사용 평가 미확인",
-      "aftertaste": "독립 실사용 평가 미확인",
-      "tasteFatigueRisk": "미확인"
     },
     usageGuide: {
       "bestFor": [

@@ -33,14 +33,13 @@ const UNDER = 200_000;
 
 /**
  * 상위 16개는 카테고리 균형, 나머지는 평가·가격 순으로 뒤에 잇는다.
- * rating 단순 정렬은 상위가 전부 30만원대 레이싱 슈퍼슈즈라 홈 기본값으로 대표성이 없다.
  */
 function orderForIndex(shoes: readonly GridShoe[]): GridShoe[] {
   const head = balancedByCategory(shoes);
   const headSet = new Set(head.map((s) => s.slug));
   const tail = shoes
     .filter((s) => !headSet.has(s.slug))
-    .sort((a, b) => (b.rating ?? 0) - (a.rating ?? 0) || (a.price ?? Infinity) - (b.price ?? Infinity));
+    .sort((a, b) => (a.price ?? Infinity) - (b.price ?? Infinity));
   return [...head, ...tail];
 }
 

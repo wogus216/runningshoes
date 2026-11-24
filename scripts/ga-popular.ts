@@ -222,7 +222,7 @@ export const popular: PopularData = {
   const missing = categoryOrder.filter((c) => !byCategory[c]);
   if (missing.length) {
     console.log(`\n⚠️  조회 데이터가 없어 비는 카테고리: ${missing.join(', ')}`);
-    console.log('   화면에서는 이 카테고리를 렌더하지 않거나 rating 상위로 대체하세요.');
+    console.log('   화면에서는 이 카테고리를 렌더하지 않거나 가격·용도별 목록을 확인하세요.');
   }
   console.log(`\n✅ ${OUT_PATH.replace(process.cwd() + '/', '')} 기록 완료\n`);
 }

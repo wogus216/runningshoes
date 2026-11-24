@@ -5,7 +5,6 @@ import { X, ChevronDown, ChevronUp } from 'lucide-react';
 import Link from 'next/link';
 import { cn } from '@/lib/utils';
 import type { Shoe } from '@/types/shoe';
-import { getShoeDurability } from '@/lib/durability';
 
 type EnhancedCompareTableProps = {
   shoes: Shoe[];
@@ -19,12 +18,8 @@ type CompareRowProps = {
   format?: (value: string | number | React.ReactNode) => string | number | React.ReactNode;
 };
 
-// 내구성은 단일 숫자가 아니라 추정 범위로 표기한다 (@/lib/durability)
-function durabilityLabel(shoe: Shoe): string {
-  return getShoeDurability(shoe)?.rangeLabel ?? '-';
-}
-
 function CompareRow({ label, values, highlight = 'none', format }: CompareRowProps) {
+  if (values.every(value => value === undefined || value === null || value === '-')) return null;
   const numericValues = values.map(v => (typeof v === 'number' ? v : parseFloat(String(v)) || 0));
   const minVal = Math.min(...numericValues.filter(v => v > 0));
   const maxVal = Math.max(...numericValues);
@@ -60,7 +55,7 @@ function CompareRow({ label, values, highlight = 'none', format }: CompareRowPro
 // 모바일용 아코디언 카드 컴포넌트
 function MobileCompareCard({ shoe, onRemove }: { shoe: Shoe; onRemove?: (id: string) => void }) {
   const [isExpanded, setIsExpanded] = useState(false);
-  const widthLabels: Record<string, string> = { narrow: '좁음', standard: '표준', wide: '넓음' };
+
 
   return (
     <div className="overflow-hidden rounded-[4px] border border-[var(--accent-line)] bg-[linear-gradient(180deg,rgba(255,255,255,0.98),rgba(247,244,237,0.95))]">
@@ -85,27 +80,20 @@ function MobileCompareCard({ shoe, onRemove }: { shoe: Shoe; onRemove?: (id: str
           )}
         </div>
 
-        <div className="grid grid-cols-4 gap-2 mt-4">
+        <div className="grid grid-cols-2 gap-2 mt-4">
           <div className="rounded-[4px] bg-sky-50 p-2 text-center">
             <p className="text-[10px] text-slate-500">가격</p>
             <p className="font-bold text-xs">{(shoe.priceAnalysis?.msrp ?? shoe.price) === undefined ? '-' : `${(shoe.priceAnalysis?.msrp ?? shoe.price)!.toLocaleString('ko-KR')}원`}</p>
           </div>
           <div className="rounded-[4px] bg-sky-50 p-2 text-center">
-            <p className="text-[10px] text-slate-500">평점</p>
-            <p className="font-bold text-xs">{shoe.rating}</p>
-          </div>
-          <div className="rounded-[4px] bg-sky-50 p-2 text-center">
             <p className="text-[10px] text-slate-500">무게</p>
             <p className="font-bold text-xs">{shoe.specs?.weight ? `${shoe.specs.weight}g` : '-'}</p>
-          </div>
-          <div className="rounded-[4px] bg-sky-50 p-2 text-center">
-            <p className="text-[10px] text-slate-500">쿠션</p>
-            <p className="font-bold text-xs">{shoe.specs?.cushioning || '-'}</p>
           </div>
         </div>
 
         <button
           onClick={() => setIsExpanded(!isExpanded)}
+          aria-expanded={isExpanded}
           className="mt-4 flex min-h-[44px] w-full items-center justify-center gap-2 rounded-[4px] bg-sky-50 py-3 text-sm font-medium text-sky-800 transition-colors hover:bg-sky-100"
         >
           {isExpanded ? (
@@ -125,19 +113,7 @@ function MobileCompareCard({ shoe, onRemove }: { shoe: Shoe; onRemove?: (id: str
         <div className="animate-fade-in-up space-y-4 border-t border-sky-100 bg-sky-50/40 p-4">
           <div>
             <p className="mb-2 text-xs font-semibold uppercase tracking-[0.22em] text-sky-700">전체 스펙</p>
-            <div className="grid grid-cols-3 gap-2">
-              <div className="rounded-[4px] border border-sky-100 bg-white p-2 text-center">
-                <p className="text-xs text-slate-500">반응성</p>
-                <p className="font-semibold text-sm">{shoe.specs?.responsiveness ? `${shoe.specs.responsiveness}/10` : '-'}</p>
-              </div>
-              <div className="rounded-[4px] border border-sky-100 bg-white p-2 text-center">
-                <p className="text-xs text-slate-500">안정성</p>
-                <p className="font-semibold text-sm">{shoe.specs?.stability ? `${shoe.specs.stability}/10` : '-'}</p>
-              </div>
-              <div className="rounded-[4px] border border-sky-100 bg-white p-2 text-center">
-                <p className="text-xs text-slate-500">내구성 (추정)</p>
-                <p className="font-semibold text-sm">{durabilityLabel(shoe)}</p>
-              </div>
+            <div className="grid grid-cols-2 gap-2">
               <div className="rounded-[4px] border border-sky-100 bg-white p-2 text-center">
                 <p className="text-xs text-slate-500">드롭</p>
                 <p className="font-semibold text-sm">{(shoe.biomechanics?.drop ?? shoe.specs?.drop) === undefined ? '-' : `${shoe.biomechanics?.drop ?? shoe.specs?.drop}mm`}</p>
@@ -146,30 +122,27 @@ function MobileCompareCard({ shoe, onRemove }: { shoe: Shoe; onRemove?: (id: str
                 <p className="text-xs text-slate-500">카본</p>
                 <p className="font-semibold text-sm">{shoe.biomechanics?.carbonPlate === undefined ? '미확인' : shoe.biomechanics.carbonPlate ? '있음' : '없음'}</p>
               </div>
-              <div className="rounded-[4px] border border-sky-100 bg-white p-2 text-center">
-                <p className="text-xs text-slate-500">가성비</p>
-                <p className="font-semibold text-sm">{shoe.priceAnalysis?.valueRating ? `${shoe.priceAnalysis.valueRating}/10` : '-'}</p>
-              </div>
+              {shoe.biomechanics?.stackHeight && (
+                <>
+                  <div className="rounded-[4px] border border-sky-100 bg-white p-2 text-center">
+                    <p className="text-xs text-slate-500">힐 스택</p>
+                    <p className="font-semibold text-sm">{shoe.biomechanics.stackHeight.heel}mm</p>
+                  </div>
+                  <div className="rounded-[4px] border border-sky-100 bg-white p-2 text-center">
+                    <p className="text-xs text-slate-500">포어풋 스택</p>
+                    <p className="font-semibold text-sm">{shoe.biomechanics.stackHeight.forefoot}mm</p>
+                  </div>
+                </>
+              )}
             </div>
+            {shoe.biomechanics?.midsoleType && (
+              <p className="mt-3 text-sm text-secondary">{shoe.biomechanics.midsoleType}</p>
+            )}
           </div>
 
-          <div>
-            <p className="mb-2 text-xs font-semibold uppercase tracking-[0.22em] text-sky-700">한국인 발 적합도</p>
-            <div className="grid grid-cols-2 gap-2">
-              <div className="flex items-center justify-between rounded-[4px] border border-sky-100 bg-white p-2">
-                <span className="text-xs text-slate-500">발볼</span>
-                <span className="text-sm font-medium">{shoe.koreanFootFit?.toBoxWidth ? widthLabels[shoe.koreanFootFit.toBoxWidth] : '-'}</span>
-              </div>
-              <div className="flex items-center justify-between rounded-[4px] border border-sky-100 bg-white p-2">
-                <span className="text-xs text-slate-500">와이드 옵션</span>
-                <span className="text-sm font-medium">{shoe.koreanFootFit?.wideOptions ? '있음' : '확인 필요'}</span>
-              </div>
-              <div className="flex items-center justify-between rounded-[4px] border border-sky-100 bg-white p-2">
-                <span className="text-xs text-slate-500">km당 비용</span>
-                <span className="text-sm font-medium">{shoe.priceAnalysis?.costPerKm ? `₩${shoe.priceAnalysis.costPerKm}` : '-'}</span>
-              </div>
-            </div>
-          </div>
+          {shoe.koreanFootFit?.wideOptions === true && (
+            <p className="text-sm text-secondary">와이드 옵션 있음 · 판매 성별·사이즈·폭 확인</p>
+          )}
 
           <Link
             href={`/shoes/${shoe.slug}`}
@@ -218,6 +191,7 @@ export function EnhancedCompareTable({ shoes, onRemove }: EnhancedCompareTablePr
                     {onRemove && (
                       <button
                         onClick={() => onRemove(shoe.id || shoe.slug || '')}
+                        aria-label={`${shoe.name} 비교에서 제거`}
                         className="absolute -top-1 -right-1 p-2 min-w-[32px] min-h-[32px] flex items-center justify-center rounded-full bg-sky-50 text-sky-800 hover:bg-red-100 hover:text-red-500"
                       >
                         <X className="h-4 w-4" />
@@ -251,12 +225,6 @@ export function EnhancedCompareTable({ shoes, onRemove }: EnhancedCompareTablePr
               highlight="min"
               format={v => (typeof v === 'number' ? `₩${v.toLocaleString()}` : v)}
             />
-            <CompareRow
-              label="평점"
-              values={shoes.map(s => s.rating ?? '미평가')}
-              highlight="max"
-              format={v => typeof v === 'number' ? `${v} / 5` : v}
-            />
 
             {/* 스펙 */}
             <tr className="bg-slate-800">
@@ -269,28 +237,6 @@ export function EnhancedCompareTable({ shoes, onRemove }: EnhancedCompareTablePr
               values={shoes.map(s => s.specs?.weight || '-')}
               highlight="min"
               format={v => (typeof v === 'number' ? `${v}g` : v)}
-            />
-            <CompareRow
-              label="쿠셔닝"
-              values={shoes.map(s => s.specs?.cushioning || '-')}
-              highlight="max"
-              format={v => (typeof v === 'number' ? `${v}/10` : v)}
-            />
-            <CompareRow
-              label="반응성"
-              values={shoes.map(s => s.specs?.responsiveness || '-')}
-              highlight="max"
-              format={v => (typeof v === 'number' ? `${v}/10` : v)}
-            />
-            <CompareRow
-              label="안정성"
-              values={shoes.map(s => s.specs?.stability || '-')}
-              highlight="max"
-              format={v => (typeof v === 'number' ? `${v}/10` : v)}
-            />
-            <CompareRow
-              label="내구성 (추정 범위)"
-              values={shoes.map(durabilityLabel)}
             />
 
             {/* 생체역학 */}
@@ -329,62 +275,17 @@ export function EnhancedCompareTable({ shoes, onRemove }: EnhancedCompareTablePr
               values={shoes.map(s => s.biomechanics?.midsoleType || '-')}
             />
 
-            {/* 한국인 발 적합도 */}
-            <tr className="bg-slate-800">
-              <td colSpan={shoes.length + 1} className="py-2 px-4 text-xs font-bold text-white uppercase tracking-wider">
-                한국인 발 적합도
-              </td>
-            </tr>
-            <CompareRow
-              label="발볼"
-              values={shoes.map(s => {
-                const width = s.koreanFootFit?.toBoxWidth;
-                const labels: Record<string, string> = { narrow: '좁음', standard: '표준', wide: '넓음' };
-                return width ? labels[width] || width : '-';
-              })}
-            />
-            <CompareRow
+            {shoes.some(shoe => shoe.koreanFootFit?.wideOptions === true) && <CompareRow
               label="와이드 옵션"
               values={shoes.map(s =>
                 s.koreanFootFit?.wideOptions === undefined
                   ? '-'
                   : s.koreanFootFit.wideOptions
                   ? '있음'
-                  : '확인 필요'
+                  : '미확인'
               )}
-            />
+            />}
 
-            {/* 가격 분석 */}
-            <tr className="bg-slate-800">
-              <td colSpan={shoes.length + 1} className="py-2 px-4 text-xs font-bold text-white uppercase tracking-wider">
-                가격 분석
-              </td>
-            </tr>
-            <CompareRow
-              label="km당 비용"
-              values={shoes.map(s => s.priceAnalysis?.costPerKm || '-')}
-              highlight="min"
-              format={v => (typeof v === 'number' ? `₩${v}` : v)}
-            />
-            <CompareRow
-              label="가성비"
-              values={shoes.map(s => s.priceAnalysis?.valueRating || '-')}
-              highlight="max"
-              format={v => (typeof v === 'number' ? `${v}/10` : v)}
-            />
-            <CompareRow
-              label="가격대"
-              values={shoes.map(s => {
-                const tier = s.priceAnalysis?.priceTier;
-                const labels: Record<string, string> = {
-                  budget: '저가',
-                  mid: '중가',
-                  premium: '프리미엄',
-                  'super-premium': '슈퍼 프리미엄',
-                };
-                return tier ? labels[tier] || tier : '-';
-              })}
-            />
           </tbody>
         </table>
       </div>

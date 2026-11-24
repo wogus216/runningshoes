@@ -8,7 +8,6 @@ import { Search, X, Check, Link2, GripVertical } from 'lucide-react';
 import type { CardShoe } from '@/lib/data/shoes';
 import { loadCardShoes } from '@/lib/shoes-card-client';
 import { EnhancedCompareTable } from '@/components/compare/enhanced-compare-table';
-import { CompareRadarChart } from '@/components/compare/compare-radar-chart';
 import { cn } from '@/lib/utils';
 import { shoeThumbnail } from '@/lib/shoe-thumbnail';
 import { recordCompare } from '@/lib/recent';
@@ -39,6 +38,9 @@ function ComparePageContent() {
   const allShoes = useMemo(() => allShoesProp.filter(s => s.specs), [allShoesProp]);
   const selectedShoes = useMemo(() => compareList.flatMap(item =>
     allShoes.find(shoe => shoe.slug === item.slug) ?? []), [allShoes, compareList]);
+  const visibleRows = comparisonRows.filter(row =>
+    row.label !== '와이드' || selectedShoes.some(shoe => shoe.koreanFootFit?.wideOptions === true)
+  );
   const [searchQuery, setSearchQuery] = useState('');
   const [searchExpanded, setShowSearch] = useState<boolean | null>(null);
   const [replaceSlug, setReplaceSlug] = useState<string | null>(null);
@@ -226,7 +228,7 @@ function ComparePageContent() {
                 <span className="mt-2 text-xs text-secondary">{shoe.brand}</span>
                 <strong className="break-keep text-sm">{shoe.name}</strong>
                 <dl className="mt-auto w-full pt-3 text-xs">
-                  {comparisonRows.map(row => (
+                  {visibleRows.map(row => (
                     <div key={row.label} className="flex flex-wrap justify-between gap-x-1 border-t border-border py-1">
                       <dt className="text-secondary">{row.label}</dt><dd>{row.value(shoe)}</dd>
                     </div>
@@ -253,7 +255,7 @@ function ComparePageContent() {
                 </th>
               ))}
             </tr></thead>
-            <tbody>{comparisonRows.map(row => <tr key={row.label} className="border-b border-border">
+            <tbody>{visibleRows.map(row => <tr key={row.label} className="border-b border-border">
               <th scope="row" className="sticky left-0 bg-white py-3 text-left text-xs">{row.label}</th>
               {selectedShoes.map(shoe => <td key={shoe.slug}>{row.value(shoe)}</td>)}
             </tr>)}
@@ -411,15 +413,6 @@ function ComparePageContent() {
       {/* 비교 결과 */}
       {selectedShoes.length >= 2 && (
         <>
-          {selectedShoes.every(shoe => shoe.specs?.cushioning !== undefined && shoe.specs.responsiveness !== undefined && shoe.specs.stability !== undefined) ? (
-          <section className="rounded-[4px] border border-[var(--accent-line)] bg-white/84 p-5 backdrop-blur md:p-6">
-            <div className="mb-6">
-              <h2 className="mt-2 text-2xl font-black tracking-tight text-slate-950">스펙 비교 차트</h2>
-            </div>
-            <CompareRadarChart shoes={selectedShoes} />
-          </section>
-          ) : null}
-
           <section className="rounded-[4px] border border-[var(--accent-line)] bg-white/84 p-5 backdrop-blur md:p-6">
             <div className="mb-6">
               <h2 className="mt-2 text-2xl font-black tracking-tight text-slate-950">상세 비교</h2>

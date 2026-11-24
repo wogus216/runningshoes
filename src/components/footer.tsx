@@ -24,7 +24,7 @@ export function Footer() {
               <h4 className="font-medium text-sm mb-3 text-primary">에너지 젤</h4>
               <ul className="space-y-2 text-sm text-secondary">
                 <li><Link href="/gels" className="hover:text-primary transition">전체 보기</Link></li>
-                <li><Link href="/gels/maurten-gel-100" className="hover:text-primary transition">프리미엄</Link></li>
+                <li><Link href="/gels/maurten-gel-100" className="hover:text-primary transition">Maurten Gel 100</Link></li>
                 <li><Link href="/gels/k-yanggang" className="hover:text-primary transition">양갱</Link></li>
               </ul>
             </div>

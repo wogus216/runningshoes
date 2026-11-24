@@ -1,10 +1,8 @@
-import type { Shoe } from '@/types/shoe';
-
 // 2026-10-20 등록 — 출처: 프로스펙스 공식몰 상품 PR0UR26S111(BLACK) 상세의 Product Spec·사이즈 가이드 표·Features·
 // 상품 상세 정보(제조연월 2026-05). RunRepeat 는 이 모델·전작 모두 미게시(runrepeat.com/prospecs-speed-rush-3 404,
 // 대조군 nike-pegasus-41 200). 점수는 신상 추정 프로토콜 — 우리 DB의 같은 값대 경량 트레이너 4종
 // (아디제로 SL2·라이벌 플라이 4·벨로시티 나이트로 5·라이드 18) 중앙값에서 쿠션·반발 1점 하향.
-export const shoe: Shoe = {
+export const shoe = {
   id: 'prospecs-speed-rush-3',
   slug: 'prospecs-speed-rush-3',
   brand: 'Prospecs',

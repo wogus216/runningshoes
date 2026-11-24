@@ -20,7 +20,6 @@ export default function SavedPage() {
       category: s.category,
       image: s.image,
       price: s.price,
-      rating: s.rating,
       description: s.description,
     }));
 

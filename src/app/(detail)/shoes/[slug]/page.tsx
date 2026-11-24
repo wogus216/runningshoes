@@ -85,7 +85,6 @@ export async function generateMetadata({ params }: ShoeDetailPageProps): Promise
     shoe.category,
     `${shoe.category} 추천`,
     ...(shoe.tags || []),
-    shoe.koreanFootFit?.toBoxWidth === 'wide' ? '발볼 넓은 러닝화' : null,
     shoe.biomechanics?.carbonPlate ? '카본 플레이트 러닝화' : null,
   ]
     .filter(Boolean)
@@ -234,20 +233,6 @@ export default async function ShoeDetailPage({ params }: ShoeDetailPageProps) {
   // FAQ JSON-LD — 신발 데이터로 동적 생성 (한국 러너 관점 5문항)
   // 실제 데이터가 있을 때만 해당 Q&A 포함 → 부정확한 답변 방지
   const faqItems: Array<{ q: string; a: string }> = [];
-
-  const widthMap: Record<string, string> = {
-    narrow: '좁음',
-    standard: '표준',
-    wide: '넓음',
-  };
-  if (shoe.koreanFootFit?.toBoxWidth) {
-    const widthLabel = widthMap[shoe.koreanFootFit.toBoxWidth] || shoe.koreanFootFit.toBoxWidth;
-    const wideOpt = shoe.koreanFootFit.wideOptions ? ' 와이드 옵션이 있어 발볼 넓은 한국 러너도 선택지가 있습니다(와이드 폭·판매 성별은 모델마다 달라 상세 스펙에서 확인하세요).' : ' 확인된 와이드 옵션 정보가 없습니다. 반 사이즈 업으로 해결된다고 가정하지 말고 해당 판매처의 폭 옵션과 착화를 확인하세요.';
-    faqItems.push({
-      q: `${shoe.brand} ${shoe.name}이 발볼 넓은 한국 러너에게 맞나요?`,
-      a: `토박스 너비가 ${widthLabel} 등급으로 분류됩니다.${wideOpt}`,
-    });
-  }
 
   // 모델별 임상 근거 또는 페이스-성능 실험이 없는 등급을 FAQ로 확정하지 않는다.
   faqItems.push({

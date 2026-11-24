@@ -7,8 +7,6 @@ import { AddToCompareButton } from "@/components/compare/add-to-compare-button";
 import { SaveButton } from "@/components/saved/save-button";
 import { AffiliateDisclosureInline } from "./affiliate-disclosure";
 import { FlaskConical, ArrowUpRight } from "lucide-react";
-import { getShoeDurability } from "@/lib/durability";
-import { cn } from "@/lib/utils";
 import { formatWon } from '@/lib/format';
 
 type HeroSectionProps = {
@@ -18,7 +16,6 @@ type HeroSectionProps = {
 
 export function HeroSection({ shoe, brandTechnologyUrl }: HeroSectionProps) {
   const specs = shoe.specs;
-  const koreanFootFit = shoe.koreanFootFit;
   // 이미지 배열 준비 (images가 있으면 사용, 없으면 image를 배열로)
   const images = shoe.images?.length ? shoe.images : (shoe.image ? [shoe.image] : []);
   // 공식몰 우선 정렬. 네이버·쿠팡처럼 판매처가 2곳 이상이면 하나만 골라 놓치지 않도록
@@ -28,18 +25,6 @@ export function HeroSection({ shoe, brandTechnologyUrl }: HeroSectionProps) {
     if (!a.isOfficial && b.isOfficial) return 1;
     return 0;
   });
-
-  // 내구성은 단일 숫자가 아니라 근거 등급이 붙은 범위로 표기한다 (@/lib/durability)
-  const durability = getShoeDurability(shoe);
-
-  const fitTone =
-    koreanFootFit?.toBoxWidth === 'wide'
-      ? { label: '발볼 여유', value: '넓음' }
-      : koreanFootFit?.toBoxWidth === 'narrow'
-      ? { label: '발볼 주의', value: '좁음' }
-      : koreanFootFit?.toBoxWidth === 'standard'
-      ? { label: '기본 핏', value: '표준' }
-      : { label: '폭 옵션', value: koreanFootFit?.wideOptions === true ? '와이드 확인' : '시착 확인' };
 
   const summaryCards: { label: string; value: string; unit: string }[] = [
     {
@@ -58,11 +43,6 @@ export function HeroSection({ shoe, brandTechnologyUrl }: HeroSectionProps) {
       label: '드롭',
       value: specs ? `${specs.drop}` : '-',
       unit: specs ? 'mm' : '',
-    },
-    {
-      label: '수명 (기존 추정)',
-      value: durability?.rangeLabel ?? '-',
-      unit: '',
     },
   ];
 
@@ -150,14 +130,6 @@ export function HeroSection({ shoe, brandTechnologyUrl }: HeroSectionProps) {
                   </span>
                 )}
               </div>
-              <div className="mt-2 flex flex-wrap gap-x-4 gap-y-1 font-mono text-xs text-tertiary">
-                {shoe.priceAnalysis && (
-                  <span>{durability?.rangeLabel ?? '-'}{shoe.priceAnalysis.costPerKm ? ` · 약 ₩${shoe.priceAnalysis.costPerKm}/km` : ''}</span>
-                )}
-                {shoe.priceAnalysis?.valueRating && (
-                  <span className="text-signal-dark">가치 점수 {shoe.priceAnalysis.valueRating.toFixed(1)}</span>
-                )}
-              </div>
             </div>
 
             <div className="flex flex-col gap-2">
@@ -221,9 +193,9 @@ export function HeroSection({ shoe, brandTechnologyUrl }: HeroSectionProps) {
                   globals.css 의 사전 계산 토큰(--dim-on-dark-*)을 쓴다 — 오파시티 유틸은
                   CSS 로 생성되지 않아 h 태그가 base 레이어 색으로 떨어지는 사고가 있었다(be6663e). */}
               <h2 className="relative mt-3 font-mono text-[11px] uppercase tracking-[0.22em] text-background">
-                제품 스펙 · 에디터 평가
+                제품 스펙
               </h2>
-              <div className="relative mt-6 grid grid-cols-2 gap-x-5 gap-y-6">
+              <div className="relative mt-6 grid grid-cols-3 gap-x-5 gap-y-6">
                 {summaryCards.map((item) => (
                   <div key={item.label} className="min-w-0">
                     <p className="truncate font-mono text-[22px] font-semibold leading-none tabular-nums tracking-tight text-background md:text-[26px]">
@@ -241,31 +213,6 @@ export function HeroSection({ shoe, brandTechnologyUrl }: HeroSectionProps) {
             </p>
           )}
 
-          {shoe.rating ? (
-            <div className="relative mt-7 flex items-baseline gap-3 border-t border-[color:var(--line-on-dark-15)] pt-6">
-              <span className="font-mono text-[40px] font-bold leading-none tabular-nums text-accent">{shoe.rating}</span>
-              <span className="text-[13px] text-[color:var(--dim-on-dark-55)]">/ 5 · 에디터 평점</span>
-            </div>
-          ) : null}
-
-          <div className="relative mt-6 border-t border-[color:var(--line-on-dark-15)] pt-6">
-            <p className="font-mono text-[11px] uppercase tracking-[0.22em] text-[color:var(--dim-on-dark-55)]">Fit Signal</p>
-            <p className="mt-2 text-2xl font-bold tracking-tight text-background">{fitTone.value}</p>
-            <p className="mt-1 text-[13px] leading-relaxed text-[color:var(--dim-on-dark-60)]">
-              {fitTone.label} · 개인 착화 확인 필요
-            </p>
-            {/* true는 폭 옵션 정보가 있다는 뜻이다. false/누락을 모든 한국SKU의 미판매로 해석하지 않는다. */}
-            {koreanFootFit ? (
-              <p className={cn(
-                'mt-2 inline-block border px-2 py-1 font-mono text-[11px] tracking-wide',
-                koreanFootFit.wideOptions
-                  ? 'border-[color:var(--accent-line-strong)] text-accent'
-                  : 'border-[color:var(--line-on-dark-25)] text-[color:var(--dim-on-dark-50)]'
-              )}>
-                {koreanFootFit.wideOptions ? '와이드 옵션 있음' : '와이드 정보 확인 필요'}
-              </p>
-            ) : null}
-          </div>
         </div>
       </div>
     </section>

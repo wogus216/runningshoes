@@ -4,12 +4,6 @@ type AtAGlanceProps = {
   shoe: Shoe;
 };
 
-const widthLabel: Record<string, string> = {
-  narrow: '좁음',
-  standard: '표준',
-  wide: '넓음',
-};
-
 export function AtAGlance({ shoe }: AtAGlanceProps) {
   const { brand, name, category, specs, biomechanics, priceAnalysis, price, koreanFootFit, targetUsers } = shoe;
   const msrp = priceAnalysis?.msrp ?? price;
@@ -20,7 +14,6 @@ export function AtAGlance({ shoe }: AtAGlanceProps) {
   const midsole = biomechanics?.midsoleType;
   const carbon = biomechanics?.carbonPlate;
   const recommended = targetUsers?.recommended?.[0];
-  const width = koreanFootFit?.toBoxWidth;
   const wideOpt = koreanFootFit?.wideOptions;
 
   const sentences: string[] = [];
@@ -43,13 +36,7 @@ export function AtAGlance({ shoe }: AtAGlanceProps) {
   }
 
   if (recommended) {
-    const widthPart =
-      width && width !== 'standard'
-        ? ` 토박스는 ${widthLabel[width]} 등급으로, 발볼 넓은 러너는 판매 폭과 실제 착화를 함께 확인하세요. 반 사이즈 업으로 해결된다고 가정하지 마세요.`
-        : wideOpt
-          ? ' 와이드 옵션 정보가 있으니 구매하려는 성별·사이즈·폭을 확인하세요.'
-          : '';
-    sentences.push(`편집상 비교 후보: ${recommended}.${widthPart}`);
+    sentences.push(`편집상 비교 후보: ${recommended}.${wideOpt ? ' 와이드 옵션은 구매할 성별·사이즈·폭을 확인하세요.' : ''}`);
   }
 
   if (sentences.length === 0) return null;

@@ -14,11 +14,10 @@ type QuestionnaireProps = {
 };
 
 type Question = {
-  id: keyof UserProfile | 'injuries';
+  id: 'purpose' | 'footWidth' | 'budget';
   title: string;
   description: string;
   options: { value: string; label: string; description?: string }[];
-  multiple?: boolean;
 };
 
 const questions: Question[] = [
@@ -65,46 +64,20 @@ export const RECOMMEND_QUESTION_COUNT = questions.length;
 
 export function Questionnaire({ onComplete, isLoading = false, initialProfile, initialStep = 0, onCancel }: QuestionnaireProps) {
   const [currentStep, setCurrentStep] = useState(initialStep);
-  const [answers, setAnswers] = useState<Record<string, string | string[]>>({
+  const [answers, setAnswers] = useState<Record<Question['id'], string>>({
     purpose: initialProfile?.purpose ?? '',
     footWidth: initialProfile?.footWidth === 'narrow' ? 'standard' : initialProfile?.footWidth ?? '',
     budget: initialProfile?.budget ?? '',
-    preferredBrands: [],
   });
 
   const currentQuestion = questions[currentStep];
-  const isMultiple = currentQuestion.multiple;
   const currentAnswer = answers[currentQuestion.id];
 
   const handleSelect = (value: string) => {
-    if (isMultiple) {
-      const current = (currentAnswer as string[]) || [];
-      let updated: string[];
-      if (currentQuestion.id === 'injuries') {
-        if (value === 'none') {
-          // '없음' 선택 시 다른 부상 모두 해제
-          updated = current.includes('none') ? [] : ['none'];
-        } else {
-          // 부상 선택 시 '없음' 해제
-          const withoutNone = current.filter(v => v !== 'none');
-          updated = withoutNone.includes(value)
-            ? withoutNone.filter(v => v !== value)
-            : [...withoutNone, value];
-        }
-      } else {
-        updated = current.includes(value)
-          ? current.filter(v => v !== value)
-          : [...current, value];
-      }
-      setAnswers({ ...answers, [currentQuestion.id]: updated });
-    } else {
-      setAnswers({ ...answers, [currentQuestion.id]: value });
-    }
+    setAnswers({ ...answers, [currentQuestion.id]: value });
   };
 
-  const canProceed = isMultiple
-    ? true
-    : currentAnswer && currentAnswer.length > 0;
+  const canProceed = currentAnswer.length > 0;
 
   const handleNext = () => {
     if (!initialProfile && currentStep < questions.length - 1) {
@@ -139,9 +112,7 @@ export function Questionnaire({ onComplete, isLoading = false, initialProfile, i
 
       <div className="space-y-2 mb-4">
         {currentQuestion.options.map(option => {
-          const isSelected = isMultiple
-            ? (currentAnswer as string[])?.includes(option.value)
-            : currentAnswer === option.value;
+          const isSelected = currentAnswer === option.value;
 
           return (
             <button
@@ -188,11 +159,8 @@ export function Questionnaire({ onComplete, isLoading = false, initialProfile, i
           <div className="flex flex-wrap gap-2">
             {questions.slice(0, currentStep).map((q, idx) => {
               const answer = answers[q.id];
-              if (!answer || (Array.isArray(answer) && answer.length === 0)) return null;
-
-              const label = Array.isArray(answer)
-                ? answer.map(a => q.options.find(o => o.value === a)?.label).join(', ')
-                : q.options.find(o => o.value === answer)?.label;
+              if (!answer) return null;
+              const label = q.options.find(option => option.value === answer)?.label;
 
               return (
                 <span

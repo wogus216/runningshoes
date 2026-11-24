@@ -1,5 +1,3 @@
-import type { Shoe } from '@/types/shoe';
-
 // 2026-10-20 등록 — 출처: 프로스펙스 공식몰 상품 PR0UR26F101(BLUE) 상세의 Product Spec·사이즈 가이드 표·Features·
 // 상품 상세 정보(제조연월 2026-10, 상세 이미지 2026-10-12 게시). 전작 인피니트 러시(PR0UR26S701, 259,000원)도 판매 중.
 // ⚠️ 공식 사이즈 가이드의 뒤꿈치 굽높이가 240mm 35mm·270mm 33mm로 거꾸로 적혀 있다(다른 모델은 모두 240<270).
@@ -7,7 +5,7 @@ import type { Shoe } from '@/types/shoe';
 // RunRepeat 미게시(prospecs-infinite-rush-rev·prospecs-infinite-rush 404, 대조군 nike-pegasus-41 200).
 // 점수는 신상 추정 프로토콜 — 우리 DB의 29.9만 원대 카본 레이서 5종(아디오스 프로 4·엔돌핀 프로 5·로켓 X 3·
 // 하이페리온 엘리트 5·디비에이트 나이트로 엘리트 4) 중앙값에서 쿠션·반발 1점 하향.
-export const shoe: Shoe = {
+export const shoe = {
   id: 'prospecs-infinite-rush-rev',
   slug: 'prospecs-infinite-rush-rev',
   brand: 'Prospecs',

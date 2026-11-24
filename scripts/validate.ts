@@ -126,7 +126,7 @@ if (priceOk) ok('모든 가격 데이터 정상');
 console.log('');
 
 // ===========================================
-// 6. 데이터 일관성 (price/costPerKm/drop/경화율)
+// 6. 데이터 일관성 (price/drop)
 // ===========================================
 console.log('━━━ 5. 데이터 일관성 검증 ━━━');
 let consistOk = true;
@@ -143,80 +143,13 @@ for (const s of shoes) {
     }
   }
 
-  // costPerKm vs price÷durability(정가 기준)
-  if (s.specs?.durability && s.priceAnalysis?.costPerKm != null) {
-    const calc = Math.round(s.price / s.specs.durability);
-    if (Math.abs(s.priceAnalysis.costPerKm - calc) > 1) {
-      warn(`${tag}: costPerKm(${s.priceAnalysis.costPerKm}) ≠ price÷durability(${calc})`); consistOk = false;
-    }
-  }
-
   // specs.drop vs biomechanics.drop
   if (s.specs?.drop != null && s.biomechanics?.drop != null && Math.abs(s.specs.drop - s.biomechanics.drop) > 1.5) {
     warn(`${tag}: specs.drop(${s.specs.drop}) ≠ biomechanics.drop(${s.biomechanics.drop})`); consistOk = false;
   }
 
-  // 저온 경화율(본문 실측 언급) vs winterCompatibility 필드
-  // 기준: ≤10% excellent / 11~25% good / 26~40% fair / >40% poor (2026-07-29 정합 감사에서 정립)
-  const prose = JSON.stringify(s);
-  const hardM = prose.match(/경화율?[이가은는의]?\s?(\d+)%/) || prose.match(/(\d+)%(?:만|나)?\s?(?:더 )?(?:단단|딱딱)해/);
-  const winter = s.koreanFootFit?.winterCompatibility;
-  if (hardM && winter) {
-    const h = parseInt(hardM[1], 10);
-    const expected = h <= 10 ? 'excellent' : h <= 25 ? 'good' : h <= 40 ? 'fair' : 'poor';
-    if (winter !== expected) { warn(`${tag}: 경화율 ${h}% → winterCompatibility '${expected}' 기대, 실제 '${winter}'`); consistOk = false; }
-  }
 }
-if (consistOk) ok('price/costPerKm/drop 일관성 통과');
-console.log('');
-
-// 신발 쿠션 점수 vs 매핑표(2026-10-20 개정, 힐 SA 기준). 본문에 "힐 N SA" 형태로 적힌 신발만 검사한다.
-// 형식이 제각각이라 전체를 덮지 못하므로 경고로 두고, 검사한 신발 수를 함께 보여 준다.
-const HEEL_SA = /힐\s*(?:충격흡수\s*)?(\d{2,3})\s*SA/;
-const cushionRule = (sa: number) => (sa >= 150 ? 10 : sa >= 140 ? 9 : sa >= 120 ? 8 : sa >= 100 ? 7 : null);
-let mappingChecked = 0;
-for (const s of shoes) {
-  const m = JSON.stringify(s).match(HEEL_SA);
-  if (!m || s.specs?.cushioning == null) continue;
-  mappingChecked++;
-  const expected = cushionRule(parseInt(m[1], 10));
-  if (expected !== null && expected !== s.specs.cushioning) {
-    warn(`${label(s)} ${s.slug}: 힐 SA ${m[1]} → 쿠션 ${expected} 기대, 실제 ${s.specs.cushioning} (매핑표 2026-10-20)`);
-  }
-}
-ok(`신발 쿠션 매핑표 점검 ${mappingChecked}/${shoes.length}종 (힐 SA가 본문에 있는 신발만)`);
-
-// 반응성 점수 vs 매핑표(2026-10-20 개정, 전족부 에너지 리턴 기준). 2026-10-22 추가 — 개정 전에 들어온
-// 신규 5종(킵서밋 맥스·킵스톰 엘리트·UA 2종·어질리티 피크 6)과 마하 X 3이 이 검사가 없어 옛 점수로 남아 있었다.
-// 어순이 셋이다: "에너지 리턴 (힐 N%·)전족부 N%" / "전족부 에너지 리턴 N%" / "전족부 N% 에너지 리턴". 부위 표기 없는 값은 검사하지 않는다.
-const FF = '(?:전족부?|앞발|포어풋)';
-const PCT = '(\\d{2}(?:\\.\\d+)?)\\s*%';
-const FF_ER_PATTERNS = [
-  new RegExp(`에너지\\s*리턴[^%]{0,20}?(?:\\d{2}(?:\\.\\d+)?\\s*%[^%]{0,6}?)?${FF}\\s*${PCT}`, 'g'),
-  new RegExp(`${FF}\\s*(?:부\\s*)?에너지\\s*리턴[^%\\d]{0,6}${PCT}`, 'g'),
-  new RegExp(`${FF}\\s*${PCT}\\s*(?:의\\s*)?에너지\\s*리턴`, 'g'),
-];
-// 본문 수치가 전작 것인 신발 — 전작 수치의 근거 인정 여부가 미정(매핑표 문서 "미정" 항목)이라 건너뛴다
-const RESP_SKIP: Record<string, string> = {
-  'saucony-endorphin-speed-6': '본문 에너지 리턴은 5세대 기준선 수치',
-};
-const respRule = (er: number) => (er >= 75 ? 10 : er >= 70 ? 9 : er >= 65 ? 8 : er >= 55 ? 7 : er >= 45 ? 6 : null);
-let respChecked = 0;
-const respSkipped: string[] = [];
-for (const s of shoes) {
-  if (s.specs?.responsiveness == null) continue;
-  const text = JSON.stringify(s);
-  const m = FF_ER_PATTERNS.flatMap((re) => Array.from(text.matchAll(re))).sort((a, b) => a.index! - b.index!)[0];
-  if (!m) continue;
-  if (RESP_SKIP[s.slug]) { respSkipped.push(`${s.slug}(${RESP_SKIP[s.slug]})`); continue; }
-  respChecked++;
-  const expected = respRule(parseFloat(m[1]));
-  if (expected !== null && expected !== s.specs.responsiveness) {
-    warn(`${label(s)} ${s.slug}: 전족부 에너지 리턴 ${m[1]}% → 반응성 ${expected} 기대, 실제 ${s.specs.responsiveness} (매핑표 2026-10-20)`);
-  }
-}
-ok(`신발 반응성 매핑표 점검 ${respChecked}/${shoes.length}종 (전족부 에너지 리턴이 본문에 있는 신발만)`);
-if (respSkipped.length) console.log(`  ℹ️  반응성 점검 제외 ${respSkipped.length}종: ${respSkipped.join(' · ')}`);
+if (consistOk) ok('price/drop 일관성 통과');
 console.log('');
 
 // ===========================================
@@ -373,11 +306,11 @@ const BLOG_WEAR_CLAIM = [
   /\d+\s*km\s*(돌|뛸|달릴)\s*때[^.<\n]{0,30}(느낌|체감)/,
   /1차\s*(사용\s*)?후기/,
 ];
-// 출처가 명시된 항목만 rating 을 허용한다. 새 외부 매체를 인용하면 여기 추가할 것(컴포넌트 isSourced 정규식과 동일 유지).
+// 분석의 출처와 실제 경험 여부를 확인한다. 숫자 리뷰 점수는 제공하지 않는다.
+
 const SOURCED = /에디터|분석|리뷰어|Believe|Shihuo|WeeViews|RunRepeat|Doctors|Road Trail/i;
 // 출처 표기(SOURCED)가 있어도 검사를 건너뛰지 않는다(2026-10-21). 종전엔 userType에 '리뷰어'·'Believe'만 넣으면
-// 1인칭·가짜 출처·별점 검사를 통째로 통과했다. rating 은 화면이 '에디터 평가 N/100'으로 보여 주는 '에디터' 항목만
-// 허용한다(reviews-section.tsx 와 같은 기준). 외부 리뷰 점수를 rating 으로 환산해 두는 것은 막는다.
+// 1인칭·가짜 출처·별점 검사를 통째로 통과했던 문제를 방지한다.
 // 2026-10-23 패턴·필드 확장으로 그동안 통과하던 24건이 드러났고(블로그 18·젤 커뮤니티 상자 6) 같은 날 전부 고쳤다.
 // 0 이상이면 새 허구 후기 = 커밋 차단.
 const FICTION_MIGRATION_REMAINING = 0;
@@ -412,7 +345,7 @@ for (const { label: src, reviews } of reviewSources) {
     if (pr.length) fictionHits.push(`[${src}] "${r.userType}" 실재 고유명사: ${pr.join(', ')}`);
     else if (fs2.length) fictionHits.push(`[${src}] "${r.userType}" 가짜 출처 인용: ${fs2.join(', ')}`);
     else if (fp.length >= 1) fictionHits.push(`[${src}] "${r.userType}" 1인칭 경험 서술: ${fp.slice(0, 2).join(', ')}`);
-    else if (r.rating !== undefined && !/에디터/.test(r.userType))
+    else if (r.rating !== undefined)
       fictionHits.push(`[${src}] "${r.userType}" ${sourced ? '외부 리뷰 점수 환산' : '무출처 별점'}(rating: ${r.rating})`);
   }
 }
