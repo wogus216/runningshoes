@@ -38,7 +38,8 @@ async function studioOffset(trimmed: Buffer) {
 }
 
 async function generate() {
-  const sources = Array.from(new Set(shoes.map(shoe => shoe.image)));
+  // Some galleries open with a different view from the catalog thumbnail.
+  const sources = Array.from(new Set(shoes.flatMap(shoe => [shoe.image, shoe.images?.[0]])));
   const thumbnails: string[] = [];
   for (const source of sources) {
     if (!source?.startsWith('/images/shoes/')) continue;
