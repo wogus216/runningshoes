@@ -2,6 +2,131 @@ import type { BlogPost } from '@/types/blog';
 
 export const posts_2026_11: BlogPost[] = [
   {
+    id: "chuncheon-soyanggang-marathon",
+    slug: "chuncheon-soyanggang-marathon",
+    title: "2027 춘천 소양강마라톤 접수 12월 2일로 변경｜11월 24일 신청은 유효",
+    description: "춘천 소양강마라톤 정식 접수는 12월 2일 오전 8시입니다. 기존 신청 유효 여부, 5km·10km 참가비, 춘천역 셔틀을 정리했습니다.",
+    thumbnail: "/images/blog/chuncheon-soyanggang-marathon.webp",
+    thumbnailSource: {
+      name: "Jjw · Wikimedia Commons · CC BY-SA 3.0",
+      url: "https://commons.wikimedia.org/wiki/File:SoyangDam.JPG",
+      alt: "춘천 소양강댐의 과거 풍경",
+    },
+    author: "산초 에디터",
+    publishedAt: "2026-11-25",
+    category: "news",
+    readingTime: 4,
+    tags: ["춘천 소양강마라톤", "입춘대길 마라톤", "2027 마라톤", "마라톤 접수", "춘천 10km"],
+    event: {
+      name: "제2회 입춘대길 춘천 소양강마라톤대회",
+      startDate: "2027-03-27T09:00:00+09:00",
+      location: { name: "소양강댐 하류 주차장", address: "강원특별자치도 춘천시 신북읍 신샘밭로 860", country: "KR" },
+      organizer: "강원도민일보",
+      url: "https://ccpmarathon.kr/spring/",
+    },
+    raceMeta: {
+      displayTitle: "2027 춘천 소양강마라톤",
+      displaySubtitle: "12월 2일 정식 접수 · 기존 신청 유효",
+      raceDate: "2027-03-27T09:00",
+      registrationStart: "2026-12-02T08:00",
+      registrationEnd: "2027-02-12T18:00",
+      registrationVia: "대회 공식 홈페이지 · 선착순",
+      action: { what: "공식 참가신청 안내 보기", how: "기존 신청자는 중복 접수 없이 사무국 안내를 확인하세요." },
+      facts: [
+        { label: "대회일", value: "3월 27일", sub: "토 · 오전 9시" },
+        { label: "장소", value: "소양강댐 하류 주차장" },
+        { label: "종목", value: "5km · 10km" },
+        { label: "참가비", value: "두 종목 모두 5만 원" },
+        { label: "정식 접수", value: "12월 2일 오전 8시", sub: "2027년 2월 12일 18시까지 · 조기 마감 가능" },
+      ],
+      highlights: [
+        { badge: "기존 신청", title: "11월 24일부터 들어간 신청은 유효", desc: "홈페이지 점검 중에는 조회·수정이 제한됩니다. 확인이 필요하면 사무국에 문의하세요." },
+        { badge: "이동", title: "춘천역에서 무료 셔틀", desc: "공식 요강은 주차장이 일찍 찰 수 있어 춘천역 셔틀 이용을 권합니다." },
+      ],
+    },
+    faqs: [
+      { question: "11월 24일에 신청했는데 다시 접수해야 하나요?", answer: "사무국은 11월 24일부터 접수된 신청이 그대로 유효하다고 공지했습니다. 점검 중 접수 내역 확인이 필요하면 사무국 033-260-9351로 문의하세요." },
+      { question: "새 신청은 언제 할 수 있나요?", answer: "2026년 12월 2일 오전 8시부터입니다. 예정 마감은 2027년 2월 12일 오후 6시이며 선착순으로 일찍 닫힐 수 있습니다." },
+      { question: "5km와 10km 참가비가 같은가요?", answer: "두 종목 모두 50,000원입니다. 제한시간은 5km 1시간, 10km 2시간입니다." },
+    ],
+    content: `<p><strong>춘천 소양강마라톤 정식 참가 접수가 12월 2일(수) 오전 8시로 변경됐습니다.</strong> 사무국은 11월 25일 홈페이지 점검을 이유로 정식 오픈을 미뤘습니다. 11월 24일부터 이미 접수된 신청은 그대로 유효합니다. <a href="https://ccpmarathon.kr/spring/news-4.html">11월 25일 공식 변경 공지</a></p>
+
+<h2>이미 신청했다면 사무국에 확인</h2>
+<p>접수된 신청은 다시 넣을 필요가 없습니다. 사무국은 신청·결제 정보를 보관하고 있지만 점검 중 홈페이지에서 내역을 조회하거나 수정할 수 없다고 안내했습니다. 접수됐는지 불분명하면 평일 09:00~18:00에 <a href="tel:0332609351">033-260-9351</a>로 확인하세요.</p>
+
+<h2>새로 신청한다면 12월 2일 오전 8시</h2>
+<p>접수는 2027년 2월 12일(금) 오후 6시까지 예정입니다. 선착순이라 일찍 마감될 수 있습니다. 개인은 참가비 결제까지 완료해야 접수가 끝나고, 단체는 대표자가 일괄 신청한 뒤 7일 안에 결제하는 방식입니다. 공식 안내상 접수 마감 후에는 취소·환불이 불가능합니다. <a href="https://ccpmarathon.kr/spring/apply.html">공식 신청 안내</a></p>
+
+<h2>5km·10km 같은 참가비, 다른 반환점</h2>
+<p>3월 27일(토) 오전 9시, 소양강댐 하류 주차장에서 출발합니다. 두 종목 모두 5만 원입니다. <strong>5km</strong>는 워나리교 하단에서 돌아오며 제한시간은 1시간입니다. <strong>10km</strong>는 동면 솔밭과 신북사거리 쪽까지 이어지고 제한시간은 2시간입니다.</p>
+
+<h2>차를 가져갈지 고민이라면 춘천역 셔틀</h2>
+<p>대회는 춘천역에서 행사장까지 무료 셔틀을 안내합니다. 소양강댐 제1~3 공영주차장은 공식 안내 기준 합계 약 300대로 일찍 찰 수 있습니다. 공식 시간표상 춘천역 출발은 07:00~08:25에 5회, 행사장 귀가편은 10:00~11:25에 5회입니다. 춘천역에서는 역 건너편 버스정류장에서 탑니다. <a href="https://ccpmarathon.kr/spring/info.html#shuttle">공식 셔틀·주차 안내</a></p>
+<p><small>2026년 11월 25일 공식 홈페이지·변경 공지 기준. 썸네일은 소양강댐의 과거 풍경입니다. <a href="https://commons.wikimedia.org/wiki/File:SoyangDam.JPG">Jjw / Wikimedia Commons</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>, 크롭·크기 조정.</small></p>`,
+  },
+  {
+    id: "gold-coast-marathon-ballot-guide",
+    slug: "gold-coast-marathon-ballot-guide",
+    title: "2027 골드코스트마라톤 추첨 전환｜기록 우선 신청·일반 추첨 한국 시간",
+    description: "풀·하프·63.3km가 추첨제로 바뀝니다. 기록 우선 11월 26일 마감, 일반 추첨 12월 8일 시작, 당첨 후 72시간 등록을 한국 시간으로 정리했습니다.",
+    thumbnail: "/images/blog/gold-coast-marathon-ballot-guide.webp",
+    thumbnailSource: {
+      name: "City of Gold Coast · Unsplash",
+      url: "https://unsplash.com/photos/city-skyline-on-the-coast-at-sunrise-with-ocean-waves-YiaGblobOGI",
+      alt: "호주 골드코스트 해안과 도시 스카이라인",
+    },
+    author: "산초 에디터",
+    publishedAt: "2026-11-25",
+    category: "news",
+    readingTime: 5,
+    tags: ["골드코스트마라톤", "골드코스트마라톤 추첨", "호주 마라톤", "해외 마라톤 접수", "2027 마라톤"],
+    event: {
+      name: "2027 ASICS Gold Coast Marathon",
+      startDate: "2027-07-03",
+      endDate: "2027-07-04",
+      location: { name: "호주 퀸즐랜드 골드코스트", country: "AU" },
+      organizer: "Events Management Queensland",
+      url: "https://goldcoastmarathon.com.au/ballot/",
+    },
+    raceMeta: {
+      displayTitle: "2027 골드코스트마라톤",
+      displaySubtitle: "풀·하프·63.3km 일반 추첨 안내",
+      raceDate: "2027-07-03",
+      registrationStart: "2026-12-08T11:00",
+      registrationEnd: "2027-01-08T22:59",
+      registrationVia: "공식 일반 추첨 · 한국 시간",
+      action: { what: "골드코스트 공식 추첨 안내 보기", how: "기록 우선 신청과 일반 추첨은 접수 화면과 마감이 다릅니다." },
+      facts: [
+        { label: "대회일", value: "7월 3~4일", sub: "2027년 · 호주 골드코스트" },
+        { label: "추첨 종목", value: "풀 · 하프 · 63.3km" },
+        { label: "기록 우선 마감", value: "11월 26일 22:59", sub: "2026년 · 한국 시간" },
+        { label: "일반 추첨", value: "12월 8일~1월 8일", sub: "11:00 시작 · 22:59 마감 · 한국 시간" },
+        { label: "결과 안내", value: "1월 19~28일", sub: "당첨 링크 수신 후 72시간 내 등록·결제" },
+      ],
+      highlights: [
+        { badge: "기록 우선", title: "기준 기록 충족 후 별도 신청", desc: "풀·하프 대상입니다. 정원을 넘으면 연령·성별 그룹별 기록순으로 선발합니다." },
+        { badge: "무작위 추첨", title: "접수 첫날에 서두를 필요 없음", desc: "신청 기간 내 접수 순서에 따른 당첨 확률 차이가 없습니다." },
+      ],
+    },
+    faqs: [
+      { question: "풀·하프·63.3km를 첫날 신청하면 유리한가요?", answer: "주최 측은 일반 추첨 기간 안에 접수한 신청의 추첨 확률이 접수 순서에 따라 달라지지 않는다고 안내합니다." },
+      { question: "기록 우선 기준을 충족하면 참가가 확정되나요?", answer: "기준을 충족하면 풀·하프 기록 우선 신청 자격이 생깁니다. 신청자가 정원을 넘으면 연령·성별 그룹별 기록순으로 뽑습니다." },
+      { question: "당첨되면 자동으로 결제되나요?", answer: "일반 추첨을 신청할 때는 결제 정보를 받지 않습니다. 당첨 안내 메일의 개인 링크로 72시간 안에 등록하고 결제해야 참가권이 확정됩니다." },
+    ],
+    content: `<p>2027 ASICS 골드코스트마라톤은 <strong>풀코스·하프·더블 63.3km 참가권을 무작위 추첨</strong>으로 배정합니다. 대회는 2027년 7월 3~4일로, 토요일에 하프, 일요일에 풀코스가 열립니다. 더블은 두 종목을 이틀에 걸쳐 달립니다. <a href="https://goldcoastmarathon.com.au/ballot/">공식 추첨 안내</a></p>
+
+<h2>기록 우선 신청은 11월 26일 22:59까지</h2>
+<p>Good for Age는 풀코스·하프 신청자가 연령·성별 기준 기록으로 지원하는 별도 경로입니다. 기한은 호주 퀸즐랜드 기준 11월 26일 23:59, <strong>한국 기준 같은 날 22:59</strong>입니다. 본인의 종목에 필요한 공인 기록 조건은 주최 측 기준표에서 확인하세요.</p>
+<p>기준을 충족한 사람이 배정 인원보다 많으면 해당 연령·성별 그룹에서 기록이 빠른 순서로 배정합니다. 주최 측은 선정자에게 12월 1일 개인 등록 링크를 보낼 예정입니다. <a href="https://goldcoastmarathon.com.au/good-for-age-qualifying-program/">공식 Good for Age 기준표</a></p>
+
+<h2>일반 추첨은 12월 8일 11:00부터 1월 8일 22:59까지</h2>
+<p>한국 시간으로 2026년 12월 8일 오전 11시부터 2027년 1월 8일 오후 10시 59분까지입니다. 접수 시작일 신청에 우선권은 없습니다. 신청 방식은 풀만, 하프만, 더블 63.3km, 그리고 <strong>풀 우선·미당첨 시 하프를 차선으로 선택</strong>하는 방식이 있습니다. 공식 안내상 10km·5km·주니어·휠체어 종목 접수는 별도로 2027년 2월 2일 한국 시간 오전 11시에 열립니다.</p>
+
+<h2>1월 19~28일 메일 확인, 당첨자는 72시간 안에 결제</h2>
+<p>일반 추첨은 신청 때 결제 정보를 받지 않습니다. 결과는 2027년 1월 19~28일 메일로 순차 안내됩니다. 당첨됐다면 개인 링크에 표시된 기한 안에 등록과 결제를 마쳐야 합니다. 공식 안내상 링크는 수신 후 72시간 동안 유효합니다. 참가비는 결제 화면의 해당 종목 금액을 확인하세요.</p>
+<p><small>2026년 11월 25일 확인. 시간은 주최 측 퀸즐랜드 표준시(AEST)를 한국 시간으로 환산했습니다. <a href="https://goldcoastmarathon.com.au/frequently-asked-questions/">공식 FAQ</a> · 지역 참고 사진 <a href="https://unsplash.com/photos/city-skyline-on-the-coast-at-sunrise-with-ocean-waves-YiaGblobOGI">City of Gold Coast / Unsplash</a>.</small></p>`,
+  },
+  {
     id: "kspo-free-running-class",
     slug: "kspo-free-running-class",
     title: "국민체육진흥공단 무료 러닝 클래스: 신청 링크 참여 불가 표시·이번 주 일정",
