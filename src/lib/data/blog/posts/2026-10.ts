@@ -159,36 +159,90 @@ export const posts_2026_10: BlogPost[] = [
   {
     id: "saucony-endorphin-speed-6-first-review",
     slug: "saucony-endorphin-speed-6-first-review",
-    title: "엔돌핀 스피드6 DOR·BITR 착화 비교 — 핏·장거리 피로와 공시 조건",
-    description: "DOR과 BITR의 동세대 착화 의견을 비교했습니다. 리뷰어별 핏·장거리 느낌과 소개 사양의 성별·사이즈 조건을 구분합니다. 독립 랩·한국 정가는 미확인입니다.",
+    title: "써코니 엔돌핀 스피드 6 실측 — 5보다 두꺼워진 앞발 쿠션, 좁아진 엄지 공간",
+    description: "RunRepeat의 스피드 5·6 절단 실측을 비교했습니다. 전족부 충격 흡수 108→128 SA, 에너지 리턴 78.2→74.6%. 드롭·앞코 핏과 한국 출시 확인 범위까지 정리했습니다.",
     thumbnail: "/images/shoes/saucony/endorphinspeed6/side.webp",
     author: "산초 에디터",
     publishedAt: "2026-10-30",
-    category: "news",
-    readingTime: 8,
-    tags: [
-      "스피드6",
-      "원문 대조",
-      "핏"
-    ],
+    updatedAt: "2026-11-26",
+    category: "review",
+    readingTime: 5,
+    tags: ["써코니", "엔돌핀 스피드 6", "엔돌핀 스피드 5", "템포화", "RunRepeat", "러닝화 실측"],
     faqs: [
       {
-        "question": "232g은 실측인가요?",
-        "answer": "DOR 소개 공시이며 측정 여부는 미확인입니다. 정확6 독립 랩으로 표시하지 않습니다."
+        question: "엔돌핀 스피드 6의 무게와 드롭은 얼마인가요?",
+        answer: "RunRepeat 검체는 238g, 실측 드롭은 5.9mm입니다. 미국 남성 모델 표기는 233g과 8mm이며, DOR·BITR 소개표는 남성 US9를 232g으로 적었습니다.",
       },
       {
-        "question": "바깥 날개가 없어졌나요?",
-        "answer": "정확6 DOR은 안쪽·바깥쪽 나일론 날개를 설명합니다. 제거됐다는 소매 설명을 새 변화로 확정하지 않습니다."
+        question: "발볼이 넓어도 엔돌핀 스피드 6을 신을 수 있나요?",
+        answer: "RunRepeat 검체의 내부 최광폭은 94.7mm였지만 엄지 쪽은 70.2mm로 5세대보다 2.7mm 좁았습니다. 발가락이 옆으로 퍼지면 평소 러닝 양말로 앞코를 확인하세요. 미국 공식몰은 남녀 Wide를 등재했고 한국 판매는 미확인입니다.",
       },
       {
-        "question": "한국에 아직 안 나왔나요?",
-        "answer": "정확 한국 상품 원문을 확보하지 못했습니다. 한국 미출시·단종을 확정하지 않습니다."
-      }
+        question: "초보 러너도 스피드 6을 신을 수 있나요?",
+        answer: "템포와 평소 훈련에 함께 쓸 신발이 필요하다면 시착해 볼 수 있습니다. 가벼운 조깅이 대부분이라면 굽힘이 더 편한 신발을 함께 신어 보세요. 스피드 6은 테스트에서 5세대보다 굽히는 데 더 큰 힘이 필요했습니다.",
+      },
+      {
+        question: "충격 흡수가 높아지면 무릎에도 더 편한가요?",
+        answer: "RunRepeat의 충격 흡수 수치는 기계 시험 결과입니다. 이 모델의 무릎 통증이나 부상 예방 효과를 직접 비교한 근거는 확인되지 않았습니다.",
+      },
+      {
+        question: "한국 출시일과 가격은 언제 확인되나요?",
+        answer: "2026년 11월 26일 써코니코리아 엔돌핀 목록과 모델명 검색에서 스피드 6의 공식 상품·출시일·정가를 확인하지 못했습니다. 미국 공식 판매는 10월 15일 시작됐습니다.",
+      },
     ],
     content: `
-<p><strong>2026-11-12 개별 원문 대조 업데이트.</strong> DOR에 이어 BITR의 동세대 3인 착화 리뷰와 미국 제조사 상품 페이지를 대조했습니다. 제조사 공시·실험실 검체·개인 착화 의견과 한국 상품 정보를 구분합니다. 자체 착화 후기가 아닌 원문 기반 분석입니다.</p><h2>먼저 볼 차이</h2><p>현재 확인한 것은 DOR·BITR의 정확6 착화 의견과 해외 소개 공시입니다. 232g·38/30mm·8mm를 절단 실측이라고 부르지 않습니다. 폼은 PWRRUN PBX 비즈 PEBA, 플레이트는 나일론 날개 구조로 설명됩니다.</p><p>초기 밀착감·강성을 느낀 Matt와 편한 트레이너 핏·구름을 좋아한 Bach의 의견은 다릅니다. 모두가 더 단단하고 빠르게 느꼈다고 묶기보다 실제 앞코·힐 고정을 확인하는 재료로 읽을 수 있습니다.</p><figure><img src="/images/shoes/saucony/endorphinspeed6/side.webp" alt="미국 써코니 공식 엔돌핀 스피드 6 White/Citron S101825-1006 옆면 사진" loading="lazy"/><figcaption><a href="https://www.saucony.com/en/endorphin-speed-6/61331M.html?dwvar_61331M_color=S101825-1006" target="_blank" rel="noopener noreferrer">써코니 공식 제품 사진</a> · White/Citron S101825-1006. 한국 판매·재고의 근거는 아닙니다.</figcaption></figure><div class="table-wrap"><table><thead><tr><th>모델</th><th>무게 · 공시 출처 별도 표기</th><th>스택·드롭 · 공시 출처 별도 표기</th><th>힐/전족 SA</th><th>힐/전족 리턴</th></tr></thead><tbody><tr><td>saucony-endorphin-speed-6</td><td>232g (DOR 소개)</td><td>38/30mm · 8mm (DOR 소개)</td><td>미확인</td><td>미확인</td></tr></tbody></table></div><p>표의 값은 RunRepeat 검체 또는 별도 표시한 DOR 소개 공시입니다. DOR 소개는 독립 실측이 아닙니다. 일반 정책은 남성 US9지만 개별 라벨·폭·보정 여부는 미확인입니다. 공시와 동일한 검체로 단정하지 않습니다. SA는 충격흡수, 리턴은 시험에서 반환된 에너지 비율이며 부드러움·개인 기록·임상 보호를 뜻하지 않습니다. HA는 구방식, AC는 별도 경도 척도여서 환산하지 않습니다. <a href="https://runrepeat.com/testing-methodology" target="_blank" rel="noopener noreferrer">RunRepeat 측정법</a></p><h2>BITR 3인의 평가도 한 가지로 묶이지 않습니다</h2><p><a href="https://believeintherun.com/shoe-reviews/saucony-endorphin-speed-6-review/" target="_blank" rel="noopener noreferrer">BITR 동세대 리뷰</a>에서 Meg은 자신의 넓은 발에도 앞코 공간이 충분했고 일상 훈련과 빠른 주행 모두 편했다고 했습니다. Thomas는 남성 US10.5 정사이즈에서 핏과 이지런·빠른 페이스의 전환을 좋게 평가했습니다. Tina는 중족부가 가끔 조였고 14마일을 달리는 도중 발 피로를 느꼈습니다. 서로 다른 발·거리의 개인 경험이므로 모든 러너에게 발볼이 넉넉하거나 장거리에 부적합하다는 결론은 아닙니다.</p><h2>35마일에서 보인 마모는 파손 확정이 아닙니다</h2><p>Matt는35마일 시점에 마모를 보고 힐 고무를 걱정했지만 실제 떨어졌다고 확인한 것은 아닙니다. Bach는20마일에서 유의한 마모를 보지 못했습니다. 다른 사용자·거리·노면이어서 이를450~550km 수명으로 계산하지 않습니다.</p><p>미국 소매 링크의10월15일 공급 안내로 한국 출시일·가격을 정하지 않습니다. 한국 정확 상품을 찾지 못한 상태는 미출시 확정과 다릅니다. 5세대 저온값을6세대 시험처럼 쓰지도 않습니다.</p><h2>스피드6 — 핏과 주행에서 갈리는 지점</h2><p>정확6의 DOR은 안쪽·바깥쪽 날개가 있는 나일론 플레이트를 설명합니다. 바깥 날개 제거가 새 변화라는 기존 소매 설명은 이번 원문으로 확정하지 않습니다.</p><p>정확6 독립 랩 내부 치수는 미확인입니다. 실제 규격에서 앞코 테이퍼·높이·힐 고정을 확인하세요.</p><p>DOR 직접403 이후 검색에 노출된 원문 캐시를 확인했습니다. DOR Matt(남성 US10/EU44/JP28)는 초기 앞코 테이퍼·토가드가 밀착되고 뻣뻣했으나 주행 뒤 정사이즈에 가까워졌으며 빠른 움직임의 반응을 좋아했습니다.35마일에서 마모를 보았지만 힐 고무 파손은 예상 우려입니다. Bach는 편한 트레이너 핏과 구름을 좋아했지만 급내리막에서 조금 흔들렸고20마일에서 큰 마모는 없었습니다. Bach 실제 사이즈는 미확인입니다.</p><h2>스피드6 — 공시·한국 판매 확인 범위</h2><p>DOR·BITR 소개표의 남성 US9 무게는232g입니다. 여성203g은 DOR에서는US8, BITR에서는US7.5 소개값이고, Meg의 실제US7.5 검체는197g입니다. 소개 사양과 개인 계량 조건을 섞지 않습니다. 미국 제조사 상품의 별도 무게·스택 공시는 이번 확인에서 확보하지 못했습니다. 38/30mm·8mm는 해외 소개값이며 정확6의 RunRepeat 독립 실험실 페이지는 11/11에도 확인되지 않았습니다. 5세대 값을 대입하지 않습니다.</p><p>한국 공식 캐시: 정확6의 한국 상품 원문 미확인. 현재 가격·폭별 선택 재고는 미확인입니다. 옵션 목록·장바구니·품절 문구를 현재 전체 재고로 해석하지 않습니다. 한국 무게·전체 스택 공시가 없는 제품은 해외 소개로 채우지 않습니다.</p><p>미국 소매 링크의2026-10-15 공급 안내는 한국 출시일이 아닙니다. DOR의 개인 마모 차이를500km 수명으로 환산하지 않습니다. 새 폼의 저온 랩이 미확인이므로 겨울 개선·악화와 임상 등급을 추정하지 않습니다.</p><h2>구매 전에 실제로 확인할 것</h2><p>평소 양말·인솔로 앞쪽 길이와 발톱 위 공간, 끈을 조였을 때 발등 압박, 힐 고정과 칼라 마찰을 확인하세요. 발볼 너비 하나로 전체 핏을 결정하지 않습니다. 교환·반품 조건도 먼저 확인할 수 있습니다.</p><p>로드에서 빠른 훈련과 이지런을 모두 할 생각이라면 자신의 평소 페이스뿐 아니라 착화 중 중족부 압박과 장거리 후반 발 피로를 확인하세요. 개인 리뷰만으로 공통 최적 거리·부상 예방 효과를 정하지 않습니다.</p><h2>확인한 원문과 접근 범위</h2><ul><li><a href="https://www.doctorsofrunning.com/saucony-endorphin-speed-6-review/" target="_blank" rel="noopener noreferrer">스피드6 DOR 원문</a> — 소개 공시·실제 착화 사이즈·개인의견 구분.</li><li><a href="https://believeintherun.com/shoe-reviews/saucony-endorphin-speed-6-review/" target="_blank" rel="noopener noreferrer">BITR 스피드6 착화 리뷰</a> — 3인 핏·주행·장거리 피로 의견 및 소개값.</li><li><a href="https://www.saucony.com/en/endorphin-speed-6/61331M.html?dwvar_61331M_color=S101825-1005" target="_blank" rel="noopener noreferrer">미국 써코니 공식 상품</a> — PBX 폼·재설계 나일론 플레이트·상품 정체 확인. 별도 무게·스택 공시와 한국 가격의 근거로 사용하지 않음.</li></ul>
-`,
-    updatedAt: "2026-11-12",
+    <p><strong>11월 26일 실측 업데이트.</strong> 스피드 5의 앞쪽 쿠션이 아쉬웠다면 6세대에서 달라진 부분이 있습니다. RunRepeat가 11월 25일 공개한 테스트에서 앞발 아래 스택은 5.4mm 높아졌고, 충격 흡수도 높아졌습니다. 앞코를 고를 때는 엄지 쪽 공간이 줄었다는 점을 함께 보세요.</p>
+
+    <div class="tldr">
+      <span class="tldr-label">3줄 요약</span>
+      <ul>
+        <li>전족부 스택 26.8→32.2mm. 앞발 충격 흡수는 늘고, 기계로 잰 에너지 리턴은 소폭 내려갔습니다.</li>
+        <li>실측 238g·드롭 5.9mm. 5세대보다 굽힘에 힘이 더 들고, 엄지 쪽이 2.7mm 좁습니다.</li>
+        <li>미국 공식몰에 남녀 Wide가 있습니다. 11월 26일 기준 한국 공식 상품·정가·출시일은 미확인입니다.</li>
+      </ul>
+    </div>
+
+    <figure>
+      <img src="/images/shoes/saucony/endorphinspeed6/side.webp" alt="써코니 엔돌핀 스피드 6 White/Citron 모델 옆면" loading="lazy" />
+      <figcaption>미국 써코니 공식 상품 사진. White/Citron S101825-1006.</figcaption>
+    </figure>
+
+    <h2>스피드 5와 6, 같은 실험실에서 재보니</h2>
+    <p>RunRepeat의 두 리뷰 모두 방법론 2.3을 표시합니다. 충격 흡수(SA)는 정해진 충격을 얼마나 흡수하는지, 에너지 리턴은 눌린 뒤 돌려준 에너지의 비율을 나타냅니다. 경도(AC)는 폼의 단단함을 재는 값이며 숫자가 낮을수록 부드럽습니다.</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th scope="col">RunRepeat 실측</th><th scope="col">스피드 5</th><th scope="col">스피드 6</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">무게</th><td>241g</td><td>238g</td></tr>
+          <tr><th scope="row">스택 (힐/전족부)</th><td>37.4/26.8mm</td><td>38.0/32.2mm</td></tr>
+          <tr><th scope="row">드롭</th><td>10.6mm</td><td>5.9mm</td></tr>
+          <tr><th scope="row">충격 흡수 (힐/전족부)</th><td>132/108 SA</td><td>140/128 SA</td></tr>
+          <tr><th scope="row">에너지 리턴 (힐/전족부)</th><td>73.2/78.2%</td><td>72.2/74.6%</td></tr>
+          <tr><th scope="row">상온 폼 경도</th><td>44.5 AC</td><td>33.5 AC</td></tr>
+          <tr><th scope="row">신발을 굽히는 데 필요한 힘</th><td>12.9N</td><td>16.3N</td></tr>
+          <tr><th scope="row">내부 최광폭 / 엄지 부위</th><td>93.8 / 72.9mm</td><td>94.7 / 70.2mm</td></tr>
+          <tr><th scope="row">젖은 콘크리트 접지</th><td>0.52</td><td>0.63</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p><small>표는 RunRepeat 원문 표기입니다. 일반 무게 측정 기준은 남성 US9이며 개별 검체의 폭·라벨은 확인하지 못했습니다. 미국 남성 모델 표기는 233g·38/30mm·8mm, DOR·BITR 소개표는 남성 US9 232g입니다. <a href="https://runrepeat.com/saucony-endorphin-speed-5" target="_blank" rel="noopener noreferrer">스피드 5 원문</a> · <a href="https://runrepeat.com/saucony-endorphin-speed-6" target="_blank" rel="noopener noreferrer">스피드 6 원문</a> · <a href="https://runrepeat.com/testing-methodology" target="_blank" rel="noopener noreferrer">측정법</a></small></p>
+
+    <h2>앞발 쿠션은 늘었고 신발 전체는 덜 굽혀집니다</h2>
+    <p>6세대는 비즈형 PEBA 폼을 PWRRUN PBX로 바꿨습니다. 전족부 스택은 5.4mm, 뒤꿈치는 0.6mm 높아졌습니다. 같은 시험에서 앞발 충격 흡수는 약 19% 늘었고, 에너지 리턴은 3.6%p 내려갔습니다. 이 비율은 달리는 사람의 산소 소비나 기록을 측정한 값과 쓰임이 다릅니다.</p>
+    <p>폼 경도는 낮아졌지만 완성된 신발을 굽히는 데 필요한 힘은 약 26% 늘었습니다. 제조사는 나일론 플레이트를 다시 설계했고, RunRepeat 절개 사진에서는 날개와 갈라진 앞쪽이 보입니다. DOR도 안쪽·바깥쪽 날개를 설명했습니다. 5세대가 천천히 달릴 때도 쉽게 접히는 느낌을 좋아했다면, 6세대에서 그 차이부터 느껴보세요.</p>
+    <p>젖은 콘크리트 시험에서 접지값은 0.52→0.63으로 올랐습니다. RunRepeat가 6세대 폼을 냉동고에 20분 둔 뒤 잰 경도는 상온보다 5% 높았습니다. 두 시험 모두 시험 조건에 한정됩니다. 고무의 국소 마모 0.9mm는 시험 지점의 값입니다. 공통 교체 거리를 확인할 장거리 데이터는 없습니다.</p>
+
+    <h2>넓어 보이는 밑창과 엄지 쪽 공간을 따로 보세요</h2>
+    <p>6세대 안쪽에서 가장 넓은 곳은 94.7mm로 5세대보다 0.9mm 넓었습니다. 엄지 부위는 오히려 70.2mm로 줄었고, RunRepeat 표본 평균 73.2mm보다 3.0mm 좁았습니다. 앞코 높이는 28.7mm입니다. 발가락이 옆으로 퍼지는 러너라면 가장 넓은 부분이 편해도 엄지 옆과 끝에 압박이 있는지 한 번 더 확인할 만합니다.</p>
+    <p>실착 의견에는 이 차이가 드러납니다. DOR의 Matt는 남성 US10에서 처음에 앞코가 짧고 밀착된다고 느꼈고, 약 10마일 뒤 길이가 평소처럼 느껴졌다고 했습니다. Bach는 초반 단단한 느낌이 주행하며 풀렸다고 했습니다. BITR의 Meg는 발볼이 넓은 자신의 발에도 공간이 충분했지만, Tina는 발등 주변에 조임이 있었고 14마일 주행 도중 발 피로를 느꼈습니다. Thomas는 남성 US10.5의 핏과 빠른 페이스로 전환하는 느낌을 좋게 봤습니다.</p>
+
+    <h2>스피드 5 사용자라면 언제 바꿔볼 만할까</h2>
+    <p>지금 5세대에서 템포와 롱런을 편하게 소화한다면, 새 폼 하나만 보고 바꿀 이유는 크지 않습니다. 5세대의 앞발 쿠션이 얇게 느껴졌다면 6세대가 비교할 후보입니다. 5세대가 쉽게 굽혀지는 느낌을 좋아하거나 엄지 쪽 공간이 꼭 필요한 경우에는 기존 신발과 나란히 신어 보는 편이 판단하기 쉽습니다.</p>
+    <p>미국 써코니는 2026년 10월 15일 판매를 시작했고 공식몰에 남녀 Wide가 등재돼 있습니다. 11월 26일 한국 공식 엔돌핀 목록·모델명 검색에는 스피드 5가 보였으며 6세대의 한국 품번·정가·출시일은 확인되지 않았습니다.</p>
+    <p><a href="/shoes/saucony-endorphin-speed-6">엔돌핀 스피드 6 상세 스펙</a> · <a href="/shoes/saucony-endorphin-speed-5">엔돌핀 스피드 5 상세 스펙</a></p>
+
+    <p><small>출처 · <a href="https://www.saucony.com/en/endorphin-speed-6/61331M.html" target="_blank" rel="noopener noreferrer">써코니 미국 남성 상품</a> · <a href="https://www.saucony.com/en/blog-newsroom-endorphin-speed-6/" target="_blank" rel="noopener noreferrer">미국 출시 발표</a> · <a href="https://www.saucony.com/en/endorphin-speed-6/" target="_blank" rel="noopener noreferrer">미국 너비 옵션</a> · <a href="https://saucony.co.kr/product/list.html?cate_no=65" target="_blank" rel="noopener noreferrer">써코니코리아 엔돌핀 목록</a> · <a href="https://www.doctorsofrunning.com/saucony-endorphin-speed-6-review/" target="_blank" rel="noopener noreferrer">Doctors of Running 실착</a> · <a href="https://believeintherun.com/shoe-reviews/saucony-endorphin-speed-6-review/" target="_blank" rel="noopener noreferrer">Believe in the Run 실착</a>. DOR은 리뷰용 신발 무상 제공을, BITR과 <a href="https://runrepeat.com/about" target="_blank" rel="noopener noreferrer">RunRepeat</a>는 소매 제휴 수익을 공개합니다.</small></p>
+    `,
   },
   {
     id: "puma-foreverrun-nitro-3-review-korea-price",

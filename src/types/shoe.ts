@@ -37,7 +37,8 @@ export interface PriceAnalysis {
   msrp?: number;
   /** 실거래가(세일·병행·직구 포함). 정가가 없을 때 화면은 이 값을 "실거래가"로만 보여 준다 */
   streetPrice?: number;
-  priceTier: PriceTier;
+  /** 한국 가격대를 확인한 경우에만 기록합니다. */
+  priceTier?: PriceTier;
   alternatives: string[]; // similar price alternatives
   valueAdvantages?: string[]; // 가격 대비 장점 (브랜드별 맞춤)
 }
